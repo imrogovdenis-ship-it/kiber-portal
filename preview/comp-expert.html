@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Expert quote & FAQ" subtitle="Кибер Гоша, price accordion" viewport="700x420" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Expert & FAQ</title>
+<link rel="stylesheet" href="_card.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  .card { background: var(--kp-blue-tint); }
+  details { border-bottom: 1px solid var(--kp-border); }
+  summary { list-style: none; cursor: pointer; padding: 14px 0; display: flex; justify-content: space-between; gap: 16px; font-size: 17px; font-weight: 700; color: var(--kp-ink-800); }
+  summary::-webkit-details-marker { display: none; }
+  .pl { color: var(--kp-blue); font-size: 20px; }
+  .spec { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; color: var(--kp-gray); }
+</style></head><body>
+<div class="card">
+  <div class="label-eyebrow">Expert quote — голос бренда от первого лица</div>
+  <div style="display:flex;gap:20px;align-items:flex-start">
+    <img src="../assets/kiber-gosha.png" alt="Кибер Гоша" style="width:96px;flex:0 0 96px">
+    <div>
+      <p class="kp-body" style="font-size:14px;margin-bottom:14px">Для мероприятий я обычно рекомендую своего коллегу BellaBot — робота с фирменной кошачьей мордочкой на экране. Он везёт сразу четыре подноса и оказывается в кадре у гостей чаще, чем поданные блюда.</p>
+      <p style="font-size:14px;line-height:1.2;font-weight:600;color:var(--kp-gray);margin:0">Кибер Гоша</p>
+      <p style="font-size:12px;line-height:1.2;font-weight:600;color:var(--kp-gray-light);margin:4px 0 0">Ваш цифровой помощник</p>
+    </div>
+  </div>
+  <div class="spec">аватар 120px, текст 16/1.6, имя 14/1.2/600 серым, роль 12/1.2/600 светло-серым — всегда на тинте</div>
+  <hr class="hr">
+  <div class="label-eyebrow">FAQ — последний блок перед подвалом</div>
+  <div style="border-top:1px solid var(--kp-border)">
+    <details open><summary>Сколько стоит аренда робота-официанта?<span class="pl">+</span></summary><p class="kp-body" style="font-size:14px;padding-bottom:14px">Смена до 4 часов — от 45 000 руб. с оператором и доставкой по Москве.</p></details>
+    <details><summary>Нужен ли оператор на площадке?<span class="pl">+</span></summary></details>
+    <details><summary>За сколько дней бронировать?<span class="pl">+</span></summary></details>
+  </div>
+</div></body></html>

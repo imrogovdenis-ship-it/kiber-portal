@@ -1,0 +1,21 @@
+<!doctype html>
+<!-- @dsCard group="Spacing" name="Radii" subtitle="5 / 12 / 16 / 18 / 24 / 50" viewport="700x240" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Radii</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .rr { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; text-align: center; }
+  .box { height: 72px; background: var(--kp-blue-tint); border: 1px solid var(--kp-blue); }
+  .lab { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11px; color: var(--kp-gray); margin-top: 7px; display: block; }
+  .use { font-size: 10px; color: var(--kp-ink-800); font-weight: 600; }
+</style></head><body>
+<div class="card">
+  <div class="rr">
+    <div><div class="box" style="border-radius:5px"></div><span class="lab">5px</span><span class="use">input</span></div>
+    <div><div class="box" style="border-radius:12px"></div><span class="lab">12px</span><span class="use">inline img</span></div>
+    <div><div class="box" style="border-radius:16px"></div><span class="lab">16px</span><span class="use">modal</span></div>
+    <div><div class="box" style="border-radius:18px;border-width:2px"></div><span class="lab">18px</span><span class="use">card — базовый</span></div>
+    <div><div class="box" style="border-radius:24px"></div><span class="lab">24px</span><span class="use">button</span></div>
+    <div><div class="box" style="border-radius:50px"></div><span class="lab">50px</span><span class="use">tag</span></div>
+  </div>
+  <p class="muted" style="font-size:12px;margin:0">18px — подпись бренда. Все карточки, фото и медиа-блоки используют её; отклонение сразу читается как чужой блок. Тени в системе нет: глубину даёт заливка <code>#F4F8FF</code> или граница <code>#E7E7E7</code>.</p>
+</div></body></html>

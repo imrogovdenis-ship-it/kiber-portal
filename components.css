@@ -1,0 +1,127 @@
+/* ==========================================================================
+   КИБЕР ПОРТАЛ — Component layer
+   Depends on colors_and_type.css. Class names are framework-agnostic.
+   ========================================================================== */
+@import url('colors_and_type.css');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: 500;
+  color: var(--kp-gray);
+  background: var(--kp-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.kp-container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* ---- Typography ------------------------------------------------------- */
+.kp-display { font-size: var(--fs-display); line-height: var(--lh-display); font-weight: 700; color: var(--kp-ink-800); margin: 0; }
+.kp-h2      { font-size: var(--fs-h2);      line-height: var(--lh-h2);      font-weight: 700; color: var(--kp-ink-800); margin: 0; }
+.kp-h3      { font-size: var(--fs-h3);      line-height: var(--lh-h3);      font-weight: 700; color: var(--kp-ink-800); margin: 0; }
+.kp-lead    { font-size: var(--fs-lead);    line-height: var(--lh-lead);    font-weight: 500; color: var(--kp-gray); margin: 0; }
+.kp-body    { font-size: var(--fs-body);    line-height: var(--lh-body);    font-weight: 500; color: var(--kp-gray); margin: 0; }
+.kp-caption { font-size: var(--fs-caption); line-height: var(--lh-caption); font-weight: 600; color: var(--kp-gray-light); margin: 0; }
+.kp-stat    { font-size: var(--fs-stat);    line-height: var(--lh-stat);    font-weight: 700; color: var(--kp-blue); margin: 0; }
+
+/* On dark sections invert, don't recolour. */
+.kp-on-dark .kp-display,
+.kp-on-dark .kp-h2,
+.kp-on-dark .kp-h3      { color: var(--kp-white); }
+.kp-on-dark .kp-body,
+.kp-on-dark .kp-lead    { color: var(--kp-blue-tint); }
+.kp-on-dark .kp-caption { color: var(--kp-gray-light); }
+
+@media (max-width: 960px) {
+  :root { --fs-display: 42px; --fs-h2: 32px; --fs-h3: 20px; --fs-lead: 18px; }
+}
+@media (max-width: 640px) {
+  :root { --fs-display: 32px; --fs-h2: 26px; --fs-body: 15px; }
+}
+
+/* ---- Buttons ---------------------------------------------------------- */
+.kp-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 1ch;
+  font-family: var(--font-sans); font-weight: 600; line-height: 1.4;
+  border: 0; border-radius: var(--r-btn);
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+/* Sizes mirror the live site exactly. */
+.kp-btn--xs  { height: 35px; font-size: 13px; padding: 0 15px; }
+.kp-btn--sm  { height: 45px; font-size: 14px; padding: 0 25px; }
+.kp-btn--smd { height: 50px; font-size: 15px; padding: 0 30px; }
+.kp-btn--md  { height: 60px; font-size: 16px; padding: 0 45px; }
+.kp-btn--lg  { height: 60px; font-size: 22px; padding: 0 70px; }
+
+.kp-btn--primary          { background: var(--kp-blue); color: var(--kp-white); }
+.kp-btn--primary:hover,
+.kp-btn--primary:focus-visible { background: var(--kp-blue-deep); color: var(--kp-white); }
+
+.kp-btn--secondary        { background: var(--kp-white); color: var(--kp-blue); box-shadow: inset 0 0 0 1px var(--kp-border); }
+.kp-btn--secondary:hover,
+.kp-btn--secondary:focus-visible { background: var(--kp-blue-tint); color: var(--kp-blue); }
+
+.kp-btn--ghost            { background: transparent; color: var(--kp-white); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4); }
+.kp-btn--ghost:hover      { background: var(--kp-white); color: var(--kp-ink-800); }
+
+.kp-btn__icon { width: 16px; height: 16px; flex: 0 0 auto; }
+
+/* ---- Surfaces --------------------------------------------------------- */
+.kp-card {
+  background: var(--kp-white);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+.kp-card--tint    { background: var(--kp-blue-tint); }
+.kp-card--outline { box-shadow: inset 0 0 0 1px var(--kp-border); }
+.kp-card--dark    { background: var(--kp-ink-900); }
+.kp-card__media   { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.kp-card__body    { padding: var(--s-5); display: flex; flex-direction: column; gap: var(--s-2); }
+
+.kp-section        { padding: var(--s-8) 0; background: var(--kp-white); }
+.kp-section--tint  { background: var(--kp-blue-tint); }
+.kp-section--dark  { background: var(--kp-ink-900); }
+
+/* ---- Tags / badges ---------------------------------------------------- */
+.kp-tag {
+  display: inline-flex; align-items: center;
+  height: 32px; padding: 0 var(--s-3);
+  border-radius: var(--r-pill);
+  background: var(--kp-blue-tint); color: var(--kp-blue);
+  font-size: var(--fs-caption); font-weight: 600; line-height: 1;
+}
+.kp-tag--solid { background: var(--kp-blue);  color: var(--kp-white); }
+.kp-tag--amber { background: var(--kp-amber); color: var(--kp-white); }
+
+/* ---- Forms ------------------------------------------------------------ */
+.kp-input {
+  width: 100%; height: 60px; padding: 0 var(--s-4);
+  font-family: var(--font-sans); font-size: var(--fs-body); font-weight: 500;
+  color: var(--kp-black); background: var(--kp-white);
+  border: 1px solid var(--kp-border-input); border-radius: var(--r-input);
+  outline: none;
+  transition: border-color var(--dur) var(--ease);
+}
+.kp-input::placeholder { color: var(--kp-gray-light); }
+.kp-input:focus        { border-color: var(--kp-blue); }
+.kp-input--sm          { height: 50px; }
+textarea.kp-input      { height: auto; min-height: 120px; padding: 17px var(--s-4); resize: vertical; }
+
+/* ---- Hero scrim ------------------------------------------------------- */
+.kp-cover           { position: relative; min-height: 50vh; background: var(--kp-ink-900); overflow: hidden; }
+.kp-cover__img      { position: absolute; inset: 0; background-size: cover; background-position: center; }
+.kp-cover__scrim    { position: absolute; inset: 0; background: var(--kp-scrim-hero); }
+.kp-cover__content  { position: relative; }
+
+/* ---- Icon bullet ------------------------------------------------------ */
+.kp-bullet { display: flex; gap: var(--s-3); align-items: flex-start; }
+.kp-bullet__mark {
+  flex: 0 0 auto; width: 24px; height: 24px; border-radius: var(--r-pill);
+  background: var(--kp-blue-tint); color: var(--kp-blue);
+  display: grid; place-items: center; font-size: 13px; font-weight: 700;
+}

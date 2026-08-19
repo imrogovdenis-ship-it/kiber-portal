@@ -1,0 +1,31 @@
+/* Shared base for design-system preview cards.
+   Cards target ~700px wide, variable height, light surface — the brand is light-first. */
+@import url('../colors_and_type.css');
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0; width: 100%;
+  background: var(--kp-white);
+  color: var(--kp-ink-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+.card {
+  width: 700px;
+  padding: 28px 32px;
+  background: var(--kp-white);
+  display: flex; flex-direction: column; gap: 18px;
+}
+.card--tint { background: var(--kp-blue-tint); }
+.card--dark { background: var(--kp-ink-900); color: var(--kp-white); }
+
+.row  { display: flex; align-items: center; gap: 16px; }
+.col  { display: flex; flex-direction: column; }
+.grid { display: grid; gap: 12px; }
+.muted { color: var(--kp-gray); }
+.mono  { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+.label-eyebrow {
+  font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--kp-blue);
+}
+.hr { height: 1px; background: var(--kp-border); border: 0; }

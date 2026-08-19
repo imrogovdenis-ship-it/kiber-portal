@@ -1,0 +1,40 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Buttons" subtitle="Primary / secondary / ghost, 5 sizes" viewport="700x400" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="_card.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  .set { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .dark { background: var(--kp-ink-900); border-radius: var(--r-card); padding: 20px 24px; }
+  .spec { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; color: var(--kp-gray); }
+</style></head><body>
+<div class="card">
+  <div class="label-eyebrow">Primary — один на экран</div>
+  <div class="set">
+    <button class="kp-btn kp-btn--primary kp-btn--xs">Узнать цену</button>
+    <button class="kp-btn kp-btn--primary kp-btn--sm">Узнать цену</button>
+    <button class="kp-btn kp-btn--primary kp-btn--smd">Узнать цену</button>
+    <button class="kp-btn kp-btn--primary kp-btn--md">Оставить заявку</button>
+  </div>
+  <div class="spec">35 · 13px / 45 · 14px / 50 · 15px / 60 · 16px — radius 24px, weight 600, hover #005EFF</div>
+
+  <hr class="hr">
+
+  <div class="label-eyebrow">Secondary — рядом с primary, для второго действия</div>
+  <div class="set">
+    <button class="kp-btn kp-btn--secondary kp-btn--sm">Перейти на страницу</button>
+    <button class="kp-btn kp-btn--secondary kp-btn--md">Смотреть каталог</button>
+  </div>
+  <div class="spec">белая заливка, текст #0088FF, hover — заливка #F4F8FF</div>
+
+  <hr class="hr">
+
+  <div class="label-eyebrow">Ghost — только на тёмной обложке</div>
+  <div class="dark">
+    <div class="set">
+      <button class="kp-btn kp-btn--ghost kp-btn--md">Рассчитать стоимость</button>
+      <button class="kp-btn kp-btn--primary kp-btn--md">Оставить заявку</button>
+    </div>
+  </div>
+  <div class="spec">lg 60 · 22px оставлен для одиночного CTA на весь экран</div>
+</div></body></html>

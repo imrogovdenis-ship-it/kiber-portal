@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Faq</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  .kp-faq summary { list-style: none; cursor: pointer; padding: var(--s-5) 0; display: flex; align-items: center; justify-content: space-between; gap: var(--s-4); font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: 700; color: var(--kp-ink-800); }
+  .kp-faq summary::-webkit-details-marker { display: none; }
+  .kp-faq details { border-bottom: 1px solid var(--kp-border); }
+  .kp-faq summary .pl { color: var(--kp-blue); font-size: 24px; flex: 0 0 auto; }
+  .kp-faq details[open] summary .pl { transform: rotate(45deg); }
+</style>
+</head><body>
+<section class="kp-section kp-section--tint">
+  <div class="kp-container">
+    <h2 class="kp-h2" style="margin-bottom:var(--s-9)">Вопросы и ответы</h2>
+    <div class="kp-faq" style="border-top:1px solid var(--kp-border)">
+      <details open>
+        <summary>Сколько стоит аренда робота-официанта?<span class="pl">+</span></summary>
+        <p class="kp-body" style="padding-bottom:var(--s-5);max-width:760px">Смена до 4 часов — от 45 000 руб. с оператором и доставкой по Москве. Точную цену считаем по площадке: этажность, ширина проходов и длительность программы влияют сильнее всего.</p>
+      </details>
+      <details>
+        <summary>Нужен ли оператор на площадке?<span class="pl">+</span></summary>
+        <p class="kp-body" style="padding-bottom:var(--s-5);max-width:760px">Да, инженер приезжает вместе с роботом и ведёт его весь день. Это входит в стоимость и не оплачивается отдельно.</p>
+      </details>
+      <details>
+        <summary>За сколько дней бронировать?<span class="pl">+</span></summary>
+        <p class="kp-body" style="padding-bottom:var(--s-5);max-width:760px">В сезон — за 2–3 недели. В будни вне сезона обычно находим свободного робота за пару дней.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</body></html>

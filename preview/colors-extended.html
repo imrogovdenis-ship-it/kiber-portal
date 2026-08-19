@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- @dsCard group="Colors" name="Support & rules" subtitle="Borders, accent, overlays, usage split" viewport="700x360" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Support colours</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw { border-radius: 8px; overflow: hidden; border: 1px solid var(--kp-border); }
+  .sw .chip { height: 60px; }
+  .sw .meta { padding: 8px 10px; background: #fff; }
+  .sw .name { font-size: 11px; font-weight: 600; display: block; }
+  .sw .hex { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; color: var(--kp-gray); }
+  .ratio { display: flex; height: 34px; border-radius: 6px; overflow: hidden; font-size: 10px; font-weight: 700; color: #fff; }
+  .ratio > div { display: grid; place-items: center; }
+  .note { font-size: 12px; color: var(--kp-gray); line-height: 1.5; }
+</style></head><body>
+<div class="card">
+  <div class="label-eyebrow">Support</div>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#E7E7E7"></div><div class="meta"><span class="name">Border</span><span class="hex">#E7E7E7</span></div></div>
+    <div class="sw"><div class="chip" style="background:#C9C9C9"></div><div class="meta"><span class="name">Input border</span><span class="hex">#C9C9C9</span></div></div>
+    <div class="sw"><div class="chip" style="background:#FF991D"></div><div class="meta"><span class="name">Amber · accent</span><span class="hex">#FF991D</span></div></div>
+    <div class="sw"><div class="chip" style="background:#000000"></div><div class="meta"><span class="name">Black · input text</span><span class="hex">#000000</span></div></div>
+  </div>
+  <div class="label-eyebrow">Overlays</div>
+  <div class="swatches" style="grid-template-columns:repeat(3,1fr)">
+    <div class="sw"><div class="chip" style="background:linear-gradient(to bottom,rgba(37,34,43,0.20),rgba(37,34,43,0.80)),url('../assets/hero-cover.jpg');background-size:cover"></div><div class="meta"><span class="name">Hero scrim</span><span class="hex">ink 20% → 80%</span></div></div>
+    <div class="sw"><div class="chip" style="background:linear-gradient(to bottom,rgba(0,94,255,0.20),rgba(0,94,255,0.80)),url('../assets/robot-humanoid.jpg');background-size:cover"></div><div class="meta"><span class="name">Blue scrim</span><span class="hex">blue 20% → 80%</span></div></div>
+    <div class="sw"><div class="chip" style="background:rgba(37,34,43,0.60)"></div><div class="meta"><span class="name">Popup scrim</span><span class="hex">rgba(37,34,43,.6)</span></div></div>
+  </div>
+  <div class="label-eyebrow">Usage split</div>
+  <div class="ratio">
+    <div style="flex:60;background:#FFFFFF;color:#797A91;box-shadow:inset 0 0 0 1px #E7E7E7">White 60</div>
+    <div style="flex:22;background:#F4F8FF;color:#0088FF">Tint 22</div>
+    <div style="flex:10;background:#25222B">Ink 10</div>
+    <div style="flex:8;background:#0088FF">Blue 8</div>
+  </div>
+  <p class="note">Blue is the scarcest colour on the page and it always means <em>do something</em> — a button, a link, an icon, the logo. If a blue element is not clickable, it is wrong. Amber appears at most once per screen.</p>
+</div></body></html>

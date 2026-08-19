@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="Logo" subtitle="Wordmark, clear space, backgrounds" viewport="700x280" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Logo</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .g3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .plate { height: 110px; display: grid; place-items: center; border-radius: var(--r-card); }
+  .plate img { width: 130px; }
+  .cap { font-size: 11px; font-weight: 600; color: var(--kp-gray); margin-top: 8px; display: block; text-align: center; }
+  .no { position: relative; }
+  .no::after { content: ''; position: absolute; inset: 0; border-radius: var(--r-card); box-shadow: inset 0 0 0 2px #E03131; }
+</style></head><body>
+<div class="card">
+  <div class="g3">
+    <div>
+      <div class="plate" style="background:var(--kp-white);box-shadow:inset 0 0 0 1px var(--kp-border)"><img src="../assets/logo.svg" alt="Кибер Портал"></div>
+      <span class="cap">На белом — основной</span>
+    </div>
+    <div>
+      <div class="plate" style="background:var(--kp-blue-tint)"><img src="../assets/logo.svg" alt=""></div>
+      <span class="cap">На тинте — допустимо</span>
+    </div>
+    <div>
+      <div class="plate" style="background:var(--kp-ink-900)"><img src="../assets/logo.svg" alt="" style="filter:brightness(0) invert(1)"></div>
+      <span class="cap">На тёмном — выворотка в белый</span>
+    </div>
+  </div>
+  <p class="muted" style="font-size:12px;margin:0">Знак — только начертание. Свободное поле вокруг — высота буквы «К». Минимальная ширина 100px в шапке, 130px в футере. Синий знак на фото не ставится: либо белая выворотка, либо белая подложка со скруглением 18px.</p>
+</div></body></html>

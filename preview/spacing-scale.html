@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- @dsCard group="Spacing" name="Spacing & layout" subtitle="5px base, 1200px container" viewport="700x330" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Spacing</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .bar { display: flex; align-items: center; gap: 12px; padding: 5px 0; }
+  .bar .fill { height: 14px; background: var(--kp-blue); border-radius: 3px; }
+  .bar .lab { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11px; color: var(--kp-gray); width: 130px; flex: 0 0 130px; }
+  .lay { display: flex; gap: 4px; align-items: stretch; height: 46px; }
+  .lay .g { flex: 1; background: var(--kp-blue-tint); border-radius: 4px; }
+  .lay .m { flex: 0 0 26px; background: repeating-linear-gradient(45deg,#E7E7E7,#E7E7E7 4px,transparent 4px,transparent 8px); border-radius: 4px; }
+</style></head><body>
+<div class="card">
+  <div class="label-eyebrow">Scale — базовая единица 5px</div>
+  <div>
+    <div class="bar"><span class="lab">--s-2 · 10px</span><span class="fill" style="width:10px"></span></div>
+    <div class="bar"><span class="lab">--s-4 · 20px</span><span class="fill" style="width:20px"></span></div>
+    <div class="bar"><span class="lab">--s-5 · 30px</span><span class="fill" style="width:30px"></span></div>
+    <div class="bar"><span class="lab">--s-6 · 45px</span><span class="fill" style="width:45px"></span></div>
+    <div class="bar"><span class="lab">--s-7 · 60px</span><span class="fill" style="width:60px"></span></div>
+    <div class="bar"><span class="lab">--s-8 · 75px</span><span class="fill" style="width:75px"></span></div>
+    <div class="bar"><span class="lab">--s-10 · 120px</span><span class="fill" style="width:120px"></span></div>
+  </div>
+  <div class="label-eyebrow">Layout — 12 колонок, контейнер 1200px, gutter 20px</div>
+  <div class="lay"><span class="m"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="g"></span><span class="m"></span></div>
+  <p class="muted" style="font-size:12px;margin:0">Вертикальный ритм секции — 75px сверху и снизу (60px на планшете, 45px на мобиле). Между блоками внутри секции — 30px. Брейкпоинты: 1200 / 960 / 640 / 480.</p>
+</div></body></html>

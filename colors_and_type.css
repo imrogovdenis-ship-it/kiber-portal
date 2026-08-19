@@ -1,0 +1,81 @@
+/* ==========================================================================
+   КИБЕР ПОРТАЛ — Design tokens
+   Extracted from the production Tilda build (repair-responsive-albite).
+   Single source of truth for colour + type. Import this, never re-declare.
+   ========================================================================== */
+
+@font-face { font-family: 'Gilroy'; font-weight: 300; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild3136-3761-4266-b862-373034613634/Gilroy-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Gilroy'; font-weight: 400; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild3334-3839-4464-b731-666264376338/Gilroy-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Gilroy'; font-weight: 500; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild6362-3931-4530-a230-656462373232/Gilroy-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Gilroy'; font-weight: 600; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild3535-3662-4230-a566-346165333931/Gilroy-Semibold.woff2') format('woff2'); }
+@font-face { font-family: 'Gilroy'; font-weight: 700; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild3834-3165-4531-b231-653963663939/Gilroy-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'Gilroy'; font-weight: 800; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild3632-3337-4233-b530-383432633962/Gilroy-Extrabold.woff2') format('woff2'); }
+@font-face { font-family: 'Gilroy'; font-weight: 900; font-style: normal; font-display: swap;
+  src: url('https://static.tildacdn.com/tild3465-3435-4631-b637-333235623966/Gilroy-Black.woff2') format('woff2'); }
+
+:root {
+  /* ---- Brand blue — the only colour that means "action" ---- */
+  --kp-blue:        #0088FF;  /* primary. Buttons, links, icons, logo         */
+  --kp-blue-deep:   #005EFF;  /* hover / pressed. Never a resting fill        */
+  --kp-blue-tint:   #F4F8FF;  /* section + card surface. The site's "grey"    */
+
+  /* ---- Ink — dark surfaces and text ---- */
+  --kp-ink-900:     #25222B;  /* dark sections, hero base, popup scrim        */
+  --kp-ink-800:     #36323E;  /* headings and strong body copy on light       */
+  --kp-black:       #000000;  /* form input text only                         */
+
+  /* ---- Neutrals ---- */
+  --kp-gray:        #797A91;  /* body copy, descriptions                      */
+  --kp-gray-light:  #A1A2B8;  /* captions, meta, text on dark                 */
+  --kp-border:      #E7E7E7;  /* dividers, card outlines                      */
+  --kp-border-input:#C9C9C9;  /* form field border                            */
+  --kp-white:       #FFFFFF;
+
+  /* ---- Accent — use sparingly, never as a second brand colour ---- */
+  --kp-amber:       #FF991D;  /* ratings, "hot" badges, urgency               */
+
+  /* ---- Overlays ---- */
+  --kp-scrim-hero:  linear-gradient(to bottom, rgba(37,34,43,0.20), rgba(37,34,43,0.80));
+  --kp-scrim-blue:  linear-gradient(to bottom, rgba(0,94,255,0.20), rgba(0,94,255,0.80));
+  --kp-scrim-popup: rgba(37,34,43,0.60);
+
+  /* ---- Type ---- */
+  --font-sans: 'Gilroy', 'Montserrat', Arial, sans-serif;
+  --font-alt:  'Montserrat', Arial, sans-serif;  /* legacy blocks only        */
+
+  /* Scale — desktop. Headings are always 700, body always 500. */
+  --fs-display: 64px; --lh-display: 1.0;   /* H1 / hero                       */
+  --fs-h2:      44px; --lh-h2:      1.0;   /* section title                   */
+  --fs-stat:    34px; --lh-stat:    1.0;   /* big number                      */
+  --fs-h3:      22px; --lh-h3:      1.4;   /* card title                      */
+  --fs-lead:    20px; --lh-lead:    1.55;
+  --fs-body:    16px; --lh-body:    1.6;   /* the workhorse                   */
+  --fs-caption: 14px; --lh-caption: 1.2;   /* weight 600                      */
+  --fs-micro:   12px; --lh-micro:   1.45;
+
+  /* ---- Radii ---- */
+  --r-input:  5px;
+  --r-image: 12px;
+  --r-modal: 16px;
+  --r-card:  18px;   /* the signature radius — cards, photos, media          */
+  --r-btn:   24px;
+  --r-pill:  50px;
+
+  /* ---- Spacing — 5px base, section rhythm in 15px steps ---- */
+  --s-1:  5px;  --s-2: 10px; --s-3: 15px; --s-4: 20px; --s-5: 30px;
+  --s-6: 45px;  --s-7: 60px; --s-8: 75px; --s-9: 90px; --s-10: 120px;
+
+  /* ---- Layout ---- */
+  --container: 1200px;
+  --gutter:    20px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur:  0.3s;
+}

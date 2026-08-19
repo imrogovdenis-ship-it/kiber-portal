@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Header & footer" subtitle="White fixed nav, dark footer" viewport="700x300" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Header & footer</title>
+<link rel="stylesheet" href="_card.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  .card { padding: 0; gap: 0; }
+  .nav { display: flex; align-items: center; gap: 24px; padding: 0 24px; height: 80px; background: var(--kp-white); border-bottom: 1px solid var(--kp-border); }
+  .nav img { width: 96px; }
+  .nav a { color: var(--kp-ink-800); text-decoration: none; font-size: 13px; font-weight: 600; }
+  .nav a:hover { color: var(--kp-blue); }
+  .nav .sp { margin-left: auto; }
+  .foot { background: var(--kp-ink-900); padding: 26px 24px; display: flex; gap: 24px; align-items: flex-start; }
+  .foot img { width: 96px; filter: brightness(0) invert(1); opacity: .9; }
+  .foot a { color: var(--kp-gray-light); text-decoration: none; font-size: 12px; font-weight: 500; display: block; margin-bottom: 6px; }
+  .foot a:hover { color: var(--kp-white); }
+  .spec { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; color: var(--kp-gray); padding: 10px 24px; }
+</style></head><body>
+<div class="card">
+  <div class="nav">
+    <img src="../assets/logo.svg" alt="Кибер Портал">
+    <a href="#">Роботы</a>
+    <a href="#">Аренда</a>
+    <a href="#">Кейсы</a>
+    <a href="#">Контакты</a>
+    <span class="sp"></span>
+    <button class="kp-btn kp-btn--primary kp-btn--sm">Написать нам</button>
+  </div>
+  <div class="spec">высота 80px (64px на мобиле), фон белый, position fixed, лого 100px, единственная кнопка — primary sm</div>
+  <div class="foot">
+    <div style="flex:0 0 140px"><img src="../assets/logo.svg" alt=""></div>
+    <div><a href="#">Гуманоиды</a><a href="#">Робо-собаки</a><a href="#">Официанты</a></div>
+    <div><a href="#">О компании</a><a href="#">Доставка</a><a href="#">Договор</a></div>
+    <div style="margin-left:auto"><p class="kp-caption" style="color:var(--kp-gray-light);margin-bottom:8px">+7 (495) 000-00-00</p><button class="kp-btn kp-btn--primary kp-btn--xs">Заказать звонок</button></div>
+  </div>
+</div></body></html>

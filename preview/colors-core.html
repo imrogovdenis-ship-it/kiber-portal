@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- @dsCard group="Colors" name="Core palette" subtitle="Brand blue, ink, tint" viewport="700x300" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Core palette</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw { border-radius: 8px; overflow: hidden; border: 1px solid var(--kp-border); }
+  .sw .chip { height: 78px; }
+  .sw .meta { padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; background: #fff; }
+  .sw .name { font-size: 12px; font-weight: 600; color: var(--kp-ink-800); }
+  .sw .hex  { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11px; color: var(--kp-gray); }
+</style></head><body>
+<div class="card">
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#0088FF"></div><div class="meta"><span class="name">Brand Blue</span><span class="hex">#0088FF</span></div></div>
+    <div class="sw"><div class="chip" style="background:#005EFF"></div><div class="meta"><span class="name">Blue Deep · hover</span><span class="hex">#005EFF</span></div></div>
+    <div class="sw"><div class="chip" style="background:#F4F8FF;border-bottom:1px solid var(--kp-border)"></div><div class="meta"><span class="name">Blue Tint · surface</span><span class="hex">#F4F8FF</span></div></div>
+    <div class="sw"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid var(--kp-border)"></div><div class="meta"><span class="name">White</span><span class="hex">#FFFFFF</span></div></div>
+    <div class="sw"><div class="chip" style="background:#25222B"></div><div class="meta"><span class="name">Ink 900 · dark section</span><span class="hex">#25222B</span></div></div>
+    <div class="sw"><div class="chip" style="background:#36323E"></div><div class="meta"><span class="name">Ink 800 · headings</span><span class="hex">#36323E</span></div></div>
+    <div class="sw"><div class="chip" style="background:#797A91"></div><div class="meta"><span class="name">Gray · body copy</span><span class="hex">#797A91</span></div></div>
+    <div class="sw"><div class="chip" style="background:#A1A2B8"></div><div class="meta"><span class="name">Gray Light · captions</span><span class="hex">#A1A2B8</span></div></div>
+  </div>
+</div></body></html>

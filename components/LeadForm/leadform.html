@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>LeadForm</title>
+<link rel="stylesheet" href="../../styles.css">
+</head><body>
+<section class="kp-section kp-section--tint">
+  <div class="kp-container" style="max-width:720px">
+    <div style="margin-bottom:var(--s-5)">
+      <h2 class="kp-h2" style="margin-bottom:var(--s-2)">Оставьте заявку</h2>
+      <p class="kp-body">Наши менеджеры свяжутся с вами в ближайшее время</p>
+    </div>
+    <form style="display:grid;gap:var(--s-2)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2)">
+        <input class="kp-input" name="name" placeholder="Имя" required>
+        <input class="kp-input" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+      </div>
+      <input class="kp-input" name="email" type="email" placeholder="E-mail">
+      <textarea class="kp-input" name="comment" placeholder="Расскажите о мероприятии"></textarea>
+      <div style="display:flex;align-items:center;gap:var(--s-4);flex-wrap:wrap;margin-top:var(--s-2)">
+        <button type="submit" class="kp-btn kp-btn--primary kp-btn--md">Отправить</button>
+        <p style="font-size:12px;color:var(--kp-gray-light);margin:0;max-width:360px">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+      </div>
+    </form>
+  </div>
+</section>
+</body></html>

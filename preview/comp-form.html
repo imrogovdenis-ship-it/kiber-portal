@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Form fields" subtitle="Input 60px, radius 5px, focus blue" viewport="700x400" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Form fields</title>
+<link rel="stylesheet" href="_card.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .focus { border-color: var(--kp-blue) !important; }
+  .err { border-color: #E03131 !important; }
+  .errmsg { color: #E03131; font-size: 12px; font-weight: 600; margin: 6px 0 0; }
+  .spec { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; color: var(--kp-gray); }
+</style></head><body>
+<div class="card">
+  <div class="label-eyebrow">Default · focus</div>
+  <div class="g2">
+    <input class="kp-input" placeholder="Имя">
+    <input class="kp-input focus" value="+7 (999) 000-00-00">
+  </div>
+  <div class="label-eyebrow">Error · filled</div>
+  <div class="g2">
+    <div><input class="kp-input err" placeholder="E-mail"><p class="errmsg">Укажите корректный e-mail</p></div>
+    <input class="kp-input" value="Свадьба, 200 гостей">
+  </div>
+  <textarea class="kp-input" placeholder="Расскажите о мероприятии"></textarea>
+  <div class="row" style="justify-content:space-between">
+    <p class="muted" style="font-size:11px;margin:0;max-width:380px">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+    <button class="kp-btn kp-btn--primary kp-btn--md">Отправить</button>
+  </div>
+  <div class="spec">height 60px (50px в компактных формах) · radius 5px · border #C9C9C9 · focus #0088FF · текст #000000</div>
+</div></body></html>

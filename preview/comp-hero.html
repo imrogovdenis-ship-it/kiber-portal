@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- @dsCard group="Components" name="Hero cover" subtitle="50vh, ink scrim 20→80%, H1 64/1.0" viewport="700x360" -->
+<html lang="ru"><head><meta charset="utf-8"><title>Hero cover</title>
+<link rel="stylesheet" href="_card.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  .card { padding: 0; gap: 0; }
+  .cover { position: relative; height: 300px; overflow: hidden; }
+  .cover__img { position: absolute; inset: 0; background: url('../assets/hero-cover.jpg') center/cover; }
+  .cover__scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(37,34,43,0.20), rgba(37,34,43,0.80)); }
+  .cover__in { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding: 32px; gap: 14px; max-width: 560px; }
+  .spec { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; color: var(--kp-gray); padding: 12px 32px; }
+</style></head><body>
+<div class="card">
+  <div class="cover kp-on-dark">
+    <div class="cover__img"></div>
+    <div class="cover__scrim"></div>
+    <div class="cover__in">
+      <span class="kp-caption">МОСКВА — ВЫЕЗД ПО ВСЕЙ РОССИИ</span>
+      <h1 class="kp-display" style="font-size:44px">Аренда робота-официанта</h1>
+      <p class="kp-body" style="font-size:15px">Разносит напитки, работает по вашему сценарию, собирает очередь из гостей.</p>
+      <div class="row" style="gap:10px">
+        <button class="kp-btn kp-btn--primary kp-btn--smd">Рассчитать стоимость</button>
+        <button class="kp-btn kp-btn--ghost kp-btn--smd">Смотреть роботов</button>
+      </div>
+    </div>
+  </div>
+  <div class="spec">height 50vh · scrim rgba(37,34,43,.20) → rgba(37,34,43,.80) · заголовок и текст всегда через .kp-on-dark, не перекрашиваются вручную</div>
+</div></body></html>

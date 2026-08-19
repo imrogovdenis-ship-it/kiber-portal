@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>Nav</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  .kp-nav { position: sticky; top: 0; z-index: 990; height: 80px; background: var(--kp-white); border-bottom: 1px solid var(--kp-border); }
+  .kp-nav__in { height: 100%; display: flex; align-items: center; gap: 28px; }
+  .kp-nav a.link { color: var(--kp-ink-800); text-decoration: none; font-size: 14px; font-weight: 600; }
+  .kp-nav a.link:hover { color: var(--kp-blue); }
+  @media (max-width: 960px) { .kp-nav { height: 64px; } .kp-nav nav { display: none; } }
+</style>
+</head><body>
+<header class="kp-nav">
+  <div class="kp-nav__in kp-container">
+    <a href="/"><img src="../../assets/logo.svg" alt="Кибер Портал" style="width:100px;display:block"></a>
+    <nav style="display:flex;gap:24px">
+      <a class="link" href="#robots">Роботы</a>
+      <a class="link" href="#rent">Аренда</a>
+      <a class="link" href="#cases">Кейсы</a>
+      <a class="link" href="#contacts">Контакты</a>
+    </nav>
+    <a href="#form" class="kp-btn kp-btn--primary kp-btn--sm" style="margin-left:auto">Написать нам</a>
+  </div>
+</header>
+</body></html>
