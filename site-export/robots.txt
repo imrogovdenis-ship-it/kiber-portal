@@ -1,0 +1,26 @@
+User-Agent: *
+Disallow: /page201178909.html
+Disallow: /privacy-policy
+Disallow: /page135839206.html
+Disallow: /page135843636.html
+Disallow: /page187850109.html
+Disallow: /page201197109.html
+Disallow: /consent
+Disallow: /page201204909.html
+Disallow: /cookie-policy
+Disallow: /page201210809.html
+Disallow: /terms
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow:
+
+
+Sitemap: https://www.kiber-portal.ru/sitemap.xml
+Sitemap: https://www.kiber-portal.ru/sitemap-store.xml
+Sitemap: https://www.kiber-portal.ru/sitemap-feeds.xml
