@@ -1,0 +1,19 @@
+---
+import type { RobotRecord } from '../../lib/robots';
+import CtaLink from '../site/CtaLink.astro';
+interface Props { robot: RobotRecord }
+const { robot } = Astro.props;
+const tiers = Object.entries(robot.pricing.tariffs ?? {}).filter(([, value]) => value.publicVisible && value.display);
+const dayTariff = tiers.find(([key]) => key === 'eight_hours')?.[1]?.display;
+const priceText = dayTariff || robot.pricing.display || 'цена по запросу';
+---
+<section class="robot-live-cta-strip" id="lead">
+  <div class="container robot-live-cta-strip__inner">
+    <h2>Прокат {robot.name} для мероприятий и выставок</h2>
+    <div class="robot-live-cta-strip__actions">
+      <p>{priceText}</p>
+      <CtaLink href="#social" event="cta_click_quote" source="robot_pricing" pageType="robot" robotSlug={robot.slug} robotName={robot.name} placement="pricing">Написать нам</CtaLink>
+      <CtaLink class="btn btn-secondary" href="#contact" event="cta_click_form" source="robot_pricing" pageType="robot" robotSlug={robot.slug} robotName={robot.name} placement="pricing">Заполнить заявку</CtaLink>
+    </div>
+  </div>
+</section>

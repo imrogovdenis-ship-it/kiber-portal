@@ -1,0 +1,67 @@
+---
+import type { RobotRecord } from '../../lib/robots';
+interface Props { robot: RobotRecord }
+const { robot } = Astro.props;
+const facts = (robot.contentFacts ?? {}) as {
+  capabilities?: Array<{ title: string; description?: string }>;
+  scenarios?: Array<{ title: string; description?: string }>;
+  venueRequirements?: Array<{ text: string }>;
+};
+const capabilities = facts.capabilities?.length
+  ? facts.capabilities
+  : (robot.capabilities ?? []).map((title) => ({ title }));
+const scenarios = facts.scenarios?.length
+  ? facts.scenarios
+  : (robot.scenarios ?? []).map((title) => ({ title }));
+const introParagraphs = facts.venueRequirements?.length
+  ? facts.venueRequirements.slice(0, 2).map((item) => item.text)
+  : (robot.venueRequirements ?? []).slice(0, 2);
+const modelName = robot.modelName || robot.name;
+const displayName = robot.modelName ? `робот ${robot.modelName}` : robot.name;
+---
+<section class="section robot-live-intro">
+  <div class="container robot-live-text">
+    <h2>{modelName}</h2>
+    {introParagraphs.map((text) => <p>{text}</p>)}
+  </div>
+</section>
+
+{capabilities.length > 0 && (
+  <section class="section robot-live-section robot-live-section--capabilities">
+    <div class="container">
+      <div class="robot-live-heading">
+        <span>01 — КЛЮЧЕВЫЕ ВОЗМОЖНОСТИ</span>
+        <h2>Что умеет {displayName}</h2>
+        <p>Если коротко, {modelName} умеет уверенно работать как вау-точка мероприятия. Подробнее — в карточках ниже.</p>
+      </div>
+      <div class="robot-live-card-grid robot-live-card-grid--features">
+        {capabilities.slice(0, 6).map((item) => (
+          <article class="robot-live-card robot-live-card--feature">
+            <h3>{item.title}</h3>
+            {item.description && <p>{item.description}</p>}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+{scenarios.length > 0 && (
+  <section class="section robot-live-section robot-live-section--scenarios">
+    <div class="container">
+      <div class="robot-live-heading">
+        <span>02 — СЦЕНАРИИ ИСПОЛЬЗОВАНИЯ</span>
+        <h2>Где {displayName} произведёт «вау-эффект»?</h2>
+        <p>Каждый сценарий адаптируем под задачу заказчика — от короткого приветствия гостей до программы с несколькими выходами робота в течение дня.</p>
+      </div>
+      <div class="robot-live-card-grid robot-live-card-grid--scenarios">
+        {scenarios.slice(0, 6).map((item) => (
+          <article class="robot-live-card robot-live-card--scenario">
+            <h3>{item.title}</h3>
+            {item.description && <p>{item.description}</p>}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `style_baseline_applied_needs_next_block_pass`
+Статус: `robot_block_family_pass_applied_needs_faq_footer_pass`
 
 ## Цель прохода
 
@@ -32,6 +32,8 @@ data/design/parity-screenshots/astro-home-desktop-1280.png
 data/design/parity-screenshots/astro-home-mobile-390.png
 data/design/parity-screenshots/astro-unitree-g1-desktop-1280.png
 data/design/parity-screenshots/astro-unitree-g1-mobile-390.png
+data/design/parity-screenshots/astro-unitree-g1-blocks-desktop-1280.png
+data/design/parity-screenshots/astro-unitree-g1-blocks-mobile-390.png
 ```
 
 ## Applied changes in this pass
@@ -74,6 +76,35 @@ Robot detail hero now uses live-style product image cover:
 - centered white H1;
 - buttons: `Оставить заявку` and `Задать вопрос`;
 - removed visible breadcrumbs above the hero for the visual baseline.
+
+### Robot page block-family pass
+
+The generic source-of-truth panels below `/arenda-unitree-g1` hero were replaced with live-style robot page blocks:
+
+- long-form intro text on the blue-tint canvas;
+- numbered section eyebrow: `01 — КЛЮЧЕВЫЕ ВОЗМОЖНОСТИ`;
+- transparent 3-column feature cards instead of bordered panels;
+- numbered scenario section: `02 — СЦЕНАРИИ ИСПОЛЬЗОВАНИЯ`;
+- horizontal live-style media rail with 8 meaningful Unitree G1 images;
+- dark CTA strip for pricing/contact;
+- Kiber Gosha helper bubble near the lower conversion path.
+
+Browser DOM proof after the pass:
+
+```json
+{
+  "robotLiveIntro": 1,
+  "liveSections": 2,
+  "galleryItems": 8,
+  "ctaStrip": 1,
+  "gosha": 1,
+  "h2": [
+    "Что умеет робот Unitree G1",
+    "Где робот Unitree G1 произведёт «вау-эффект»?"
+  ],
+  "imageResourceErrors": 0
+}
+```
 
 ## Computed-style proof — Astro home after correction
 
@@ -136,13 +167,15 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Gosha bubble | close | needs spacing polish | partial |
 | Compilation cards | close | not fully reviewed | partial |
 | Robot hero | close in structure | captured, needs crop review | partial |
-| Robot content below hero | not live-parity yet | not live-parity yet | needs next pass |
-| FAQ / CTA strips / footer | not in this pass | not in this pass | pending |
+| Robot content below hero | live-style intro/features/scenarios applied | mobile readable, captured | pass for block-family baseline |
+| Robot gallery | horizontal media rail with 8 meaningful images | scroll rail captured | pass for baseline |
+| Robot CTA strip | dark live-style strip applied | stacked mobile actions | pass for baseline |
+| FAQ / footer | existing blocks still generic | existing blocks still generic | pending |
 
 ## Remaining known differences
 
-1. **Robot page below hero**  
-   Current Astro still uses source-of-truth panels (`Что умеет робот`, `Где использовать`) rather than the live long-form text + gallery + feature-card sequence. This should be the next block-family pass.
+1. **FAQ / footer still need a separate parity pass**
+   Robot page FAQ and lower related/footer blocks are still mostly existing generic components. They should be handled after confirming the new robot page block-family baseline.
 
 2. **Prices differ intentionally**  
    Live catalog shows package-style values such as `от 50 000 ₽`; Astro uses structured tariff/hourly values such as `от 12 500 ₽ / час`. Do not overwrite pricing from live without business approval.
@@ -171,9 +204,9 @@ curl -sI http://127.0.0.1:4321/
 
 ## Recommended next step
 
-Proceed to the **robot page block-family pass** for `/arenda-unitree-g1`:
+Proceed to the **FAQ / conversion / footer parity pass**:
 
-1. replace generic fact panels with live-style intro text, gallery rhythm, numbered section headers and feature/scenario cards;
-2. keep source-of-truth data, but render it through live-style blocks;
-3. re-capture desktop/mobile screenshots;
-4. only then propagate the corrected robot template to all 24 robot pages.
+1. bring FAQ accordions, Gosha/helper CTA and related robots block closer to live visual rhythm;
+2. keep source-of-truth data and pricing boundaries intact;
+3. capture desktop/mobile screenshots again;
+4. after approval, propagate the corrected robot template to all 24 robot pages.
