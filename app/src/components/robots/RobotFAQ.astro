@@ -1,0 +1,28 @@
+---
+import type { RobotRecord } from '../../lib/robots';
+interface Props { robot: RobotRecord }
+const { robot } = Astro.props;
+const items = robot.faq ?? [];
+---
+{items.length > 0 && (
+  <section class="section robot-live-faq" id="faq">
+    <div class="container robot-live-faq__inner">
+      <div class="robot-live-heading robot-live-faq__heading">
+        <span>03 — ВОПРОСЫ И ОТВЕТЫ</span>
+        <h2>Вопросы об аренде</h2>
+        <p>Собрали ответы на главные вопросы по площадке, оператору, времени работы и стоимости. Если нужен точный расчёт под дату — напишите менеджеру.</p>
+      </div>
+      <div class="robot-live-faq__list">
+        {items.slice(0, 8).map((item) => (
+          <details class="robot-live-faq__item">
+            <summary>
+              <span>{item.question}</span>
+              <i aria-hidden="true"></i>
+            </summary>
+            <p>{item.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

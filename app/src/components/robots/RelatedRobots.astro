@@ -1,0 +1,20 @@
+---
+import type { RobotRecord } from '../../lib/robots';
+import RobotCard from './RobotCard.astro';
+interface Props { robots: RobotRecord[] }
+const { robots } = Astro.props;
+---
+{robots.length > 0 && (
+  <section class="section related-robots robot-live-related">
+    <div class="container">
+      <div class="robot-live-heading robot-live-related__heading">
+        <span>04 — ПОХОЖИЕ РОБОТЫ</span>
+        <h2>Что ещё посмотреть</h2>
+        <p>Если сценарий мероприятия изменится, можно быстро сравнить похожие модели и перейти к другой карточке без потери контекста.</p>
+      </div>
+      <div class="grid robot-card-grid robot-live-related__grid">
+        {robots.slice(0, 4).map((robot) => <RobotCard robot={robot} />)}
+      </div>
+    </div>
+  </section>
+)}

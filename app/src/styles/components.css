@@ -918,10 +918,158 @@ nav a, .site-footer a {
   align-self: center;
   white-space: nowrap;
 }
+.robot-live-faq {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background: var(--kp-sky);
+}
+.robot-live-faq__inner {
+  display: grid;
+  grid-template-columns: minmax(280px, 430px) minmax(0, 1fr);
+  gap: 70px;
+  align-items: start;
+}
+.robot-live-faq__heading { margin-bottom: 0; }
+.robot-live-faq__list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid rgba(54,50,62,.18);
+}
+.robot-live-faq__item {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(54,50,62,.18);
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+.robot-live-faq__item summary {
+  list-style: none;
+  min-height: 86px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px;
+  gap: 24px;
+  align-items: center;
+  cursor: pointer;
+  color: var(--kp-ink);
+  font-family: var(--kp-font-display);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.robot-live-faq__item summary::-webkit-details-marker { display: none; }
+.robot-live-faq__item summary i {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--kp-blue);
+}
+.robot-live-faq__item summary i::before,
+.robot-live-faq__item summary i::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 16px;
+  height: 2px;
+  background: var(--kp-white);
+}
+.robot-live-faq__item summary i::after {
+  transform: rotate(90deg);
+}
+.robot-live-faq__item[open] summary i::after { transform: rotate(0deg); }
+.robot-live-faq__item p {
+  max-width: 760px;
+  margin: -6px 58px 30px 0;
+  color: var(--kp-muted);
+  font-family: var(--kp-font-display);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+.robot-live-related {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+.robot-live-related__heading {
+  margin-bottom: 54px;
+}
+.site-footer--live {
+  padding: 0;
+  background: var(--kp-ink-dark);
+  color: var(--kp-white);
+}
+.site-footer__inner {
+  max-width: var(--kp-content);
+  margin: 0 auto;
+  padding: 64px 40px 44px;
+  display: grid;
+  grid-template-columns: minmax(280px, 460px) minmax(0, 1fr) auto;
+  gap: 46px;
+  align-items: start;
+}
+.site-footer__brand img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 24px;
+  filter: brightness(0) invert(1);
+}
+.site-footer__brand p,
+.site-footer__meta,
+.site-footer__contact {
+  color: #d8e7ff;
+}
+.site-footer__brand p {
+  margin: 0;
+  max-width: 460px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.site-footer__nav {
+  display: grid;
+  gap: 14px;
+  align-items: start;
+}
+.site-footer--live a,
+.site-footer--live .site-footer__nav a {
+  color: var(--kp-white);
+  text-decoration: none;
+  font-family: var(--kp-font-display);
+  font-size: 16px;
+  font-weight: 500;
+}
+.site-footer--live a:hover { color: #8fd0ff; }
+.site-footer__contact {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+}
+.site-footer__phone {
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.site-footer__meta {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 34px;
+  border-top: 1px solid rgba(255,255,255,.16);
+  font-size: 14px;
+}
 @media screen and (max-width: 960px) {
   .robot-live-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .robot-live-gosha__bubble { grid-template-columns: 100px minmax(0, 1fr); }
   .robot-live-gosha__cta { grid-column: 2; justify-self: start; }
+  .robot-live-faq__inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .site-footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .site-footer__contact { grid-column: 1 / -1; }
 }
 @media screen and (max-width: 820px) {
   .site-header {
@@ -1025,6 +1173,38 @@ nav a, .site-footer a {
   }
   .robot-live-gosha__cta {
     grid-column: 1 / -1;
+  }
+  .robot-live-faq {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  .robot-live-faq__item summary {
+    min-height: 74px;
+    font-size: 18px;
+    line-height: 1.22;
+    gap: 16px;
+  }
+  .robot-live-faq__item p {
+    margin: -2px 0 26px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .robot-live-related {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+  .robot-live-related__grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .site-footer__inner {
+    grid-template-columns: 1fr;
+    padding: 52px 20px 34px;
+    gap: 30px;
+  }
+  .site-footer__meta {
+    display: grid;
+    gap: 8px;
   }
 }
 

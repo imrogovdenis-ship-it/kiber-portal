@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `robot_block_family_pass_applied_needs_faq_footer_pass`
+Статус: `robot_template_baseline_applied_needs_propagation_pass`
 
 ## Цель прохода
 
@@ -34,6 +34,8 @@ data/design/parity-screenshots/astro-unitree-g1-desktop-1280.png
 data/design/parity-screenshots/astro-unitree-g1-mobile-390.png
 data/design/parity-screenshots/astro-unitree-g1-blocks-desktop-1280.png
 data/design/parity-screenshots/astro-unitree-g1-blocks-mobile-390.png
+data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-desktop-1280.png
+data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-mobile-390.png
 ```
 
 ## Applied changes in this pass
@@ -88,6 +90,37 @@ The generic source-of-truth panels below `/arenda-unitree-g1` hero were replaced
 - horizontal live-style media rail with 8 meaningful Unitree G1 images;
 - dark CTA strip for pricing/contact;
 - Kiber Gosha helper bubble near the lower conversion path.
+
+### FAQ / conversion / footer parity pass
+
+The lower robot template was brought into the same live-style rhythm:
+
+- FAQ rebuilt as a numbered `03 — ВОПРОСЫ И ОТВЕТЫ` section with transparent accordion rows and blue plus controls;
+- Kiber Gosha helper CTA kept as the human/robot conversion bridge before related recommendations;
+- related robots section rebuilt as `04 — ПОХОЖИЕ РОБОТЫ` with catalog-style product tiles and mobile single-column layout;
+- footer replaced with a live-style dark footer: white logo, navigation, phone, CTA and compact meta row;
+- mobile related robots were corrected from a cramped multi-column grid to readable stacked cards.
+
+Browser DOM proof after the FAQ/footer pass:
+
+```json
+{
+  "robotLiveFaq": 1,
+  "faqItems": 5,
+  "robotLiveRelated": 1,
+  "siteFooterLive": 1,
+  "footerLinks": [
+    "Главная",
+    "Каталог",
+    "Подборки",
+    "Блог Кибер Гоши",
+    "Новости",
+    "Контакты",
+    "+7 977 479 07 49",
+    "Написать нам"
+  ]
+}
+```
 
 Browser DOM proof after the pass:
 
@@ -170,12 +203,12 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Robot content below hero | live-style intro/features/scenarios applied | mobile readable, captured | pass for block-family baseline |
 | Robot gallery | horizontal media rail with 8 meaningful images | scroll rail captured | pass for baseline |
 | Robot CTA strip | dark live-style strip applied | stacked mobile actions | pass for baseline |
-| FAQ / footer | existing blocks still generic | existing blocks still generic | pending |
+| FAQ / footer | FAQ, Gosha CTA, related robots and footer live-style baseline applied | mobile related cards stacked/readable | pass for robot-template baseline |
 
 ## Remaining known differences
 
-1. **FAQ / footer still need a separate parity pass**
-   Robot page FAQ and lower related/footer blocks are still mostly existing generic components. They should be handled after confirming the new robot page block-family baseline.
+1. **Related robot screenshots need image-load proof in final QA**
+   Related robot product images resolve in the browser and use catalog cards, but full-page screenshot captures can show white product panels before distant images are visibly painted. Keep this as a QA watch item when doing the propagation pass.
 
 2. **Prices differ intentionally**  
    Live catalog shows package-style values such as `от 50 000 ₽`; Astro uses structured tariff/hourly values such as `от 12 500 ₽ / час`. Do not overwrite pricing from live without business approval.
@@ -204,9 +237,9 @@ curl -sI http://127.0.0.1:4321/
 
 ## Recommended next step
 
-Proceed to the **FAQ / conversion / footer parity pass**:
+Proceed to the **robot template propagation pass**:
 
-1. bring FAQ accordions, Gosha/helper CTA and related robots block closer to live visual rhythm;
-2. keep source-of-truth data and pricing boundaries intact;
-3. capture desktop/mobile screenshots again;
-4. after approval, propagate the corrected robot template to all 24 robot pages.
+1. apply the now-corrected robot page template to the remaining robot pages;
+2. spot-check desktop/mobile for 4–6 representative robot cards, including humanoid and non-humanoid robots;
+3. keep source-of-truth data and pricing boundaries intact;
+4. then move to structured FAQ JSON-LD and related-content/internal-linking validation.
