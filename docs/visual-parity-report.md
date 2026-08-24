@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `whole_site_static_validation_passed_needs_launch_inputs`
+Статус: `rendered_image_alt_audit_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -52,6 +52,8 @@ docs/route-inventory.md
 docs/production-launch-checklist.md
 data/seo/redirects.scaffold.json
 data/design/parity-screenshots/launch-prep/*.png
+data/seo/rendered-image-alt-audit.json
+docs/rendered-image-alt-audit.md
 ```
 
 ## Applied changes in this pass
@@ -266,6 +268,25 @@ docs/route-inventory.md
 docs/production-launch-checklist.md
 data/seo/redirects.scaffold.json
 data/design/parity-screenshots/launch-prep/*.png
+data/seo/rendered-image-alt-audit.json
+docs/rendered-image-alt-audit.md
+```
+
+### Rendered image alt audit pass
+
+Rendered public pages now have a media SEO regression gate:
+
+- added `scripts/audit_rendered_image_alt.py`;
+- public/indexable pages only are checked; preview/noindex routes are excluded;
+- meaningful rendered images must not lose `alt` during template rendering;
+- very long alts and missing even-position commercial coverage are reported as warnings;
+- latest validation result: `publicPagesChecked=38`, `meaningfulImages=435`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/seo/rendered-image-alt-audit.json
+docs/rendered-image-alt-audit.md
 ```
 
 Browser DOM proof after the pass:
@@ -354,6 +375,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Content index pages | live-style heroes and cards for `Блог Кибер Гоши`, `Подборки`, `Новости` | mobile heroes/cards readable | pass for `/articles`, `/compilations`, `/news` |
 | Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
 | Whole-site static validation | 46 generated pages checked, including 38 public routes | no visual change | errors=0, warnings=0 |
+| Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -395,6 +417,9 @@ python3 scripts/validate_content_detail_pages.py --root . --json
 
 python3 scripts/validate_whole_site_static.py --root . --json
 → htmlPages=46, publicPages=38, previewPages=8, checkedPages=46, errors=0, warnings=0
+
+python3 scripts/audit_rendered_image_alt.py --root . --json
+→ publicPagesChecked=38, meaningfulImages=435, errors=0, warnings=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK

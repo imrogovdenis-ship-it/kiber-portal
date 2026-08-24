@@ -1,0 +1,498 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": "rendered public indexable pages only; preview/noindex routes excluded",
+  "checks": [
+    "missing alt on meaningful rendered images",
+    "overlong alt warnings",
+    "basic every-second commercial alt coverage warning for pages with 4+ meaningful images"
+  ],
+  "summary": {
+    "publicPagesChecked": 38,
+    "errors": 0,
+    "warnings": 0,
+    "meaningfulImages": 435
+  },
+  "errors": [],
+  "warnings": [],
+  "checked": [
+    {
+      "route": "/arenda-agibot-x2",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "route": "/arenda-bellabot",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "route": "/arenda-glambot",
+      "images": 18,
+      "meaningfulImages": 13,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "route": "/arenda-inchbot-l1-w-edu",
+      "images": 18,
+      "meaningfulImages": 13,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        11
+      ]
+    },
+    {
+      "route": "/arenda-kettybot",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "route": "/arenda-klipmeiker",
+      "images": 16,
+      "meaningfulImages": 11,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "route": "/arenda-mini-robo-kofeyni",
+      "images": 17,
+      "meaningfulImages": 12,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "route": "/arenda-noetix-bumi",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        11,
+        13
+      ]
+    },
+    {
+      "route": "/arenda-promobot-v4",
+      "images": 21,
+      "meaningfulImages": 16,
+      "commercialAltPositions": [
+        1,
+        4,
+        6,
+        8,
+        10,
+        12,
+        15
+      ]
+    },
+    {
+      "route": "/arenda-robo-kofeyni",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "route": "/arenda-roboshashki",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        11,
+        13
+      ]
+    },
+    {
+      "route": "/arenda-robot-barmen",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "route": "/arenda-robota-ardi",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "route": "/arenda-robota-hudozhnika-a4",
+      "images": 18,
+      "meaningfulImages": 13,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        12
+      ]
+    },
+    {
+      "route": "/arenda-robota-sofiya",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "route": "/arenda-robota-tron",
+      "images": 21,
+      "meaningfulImages": 16,
+      "commercialAltPositions": [
+        1,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "route": "/arenda-robotov-na-meropriyatie",
+      "images": 30,
+      "meaningfulImages": 25,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "route": "/arenda-senserobot",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        2,
+        4,
+        6,
+        8,
+        11,
+        12
+      ]
+    },
+    {
+      "route": "/arenda-sketchbot",
+      "images": 21,
+      "meaningfulImages": 16,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "route": "/arenda-unitree-g1",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        13
+      ]
+    },
+    {
+      "route": "/arenda-unitree-go2",
+      "images": 20,
+      "meaningfulImages": 15,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        12,
+        14
+      ]
+    },
+    {
+      "route": "/arenda-unitree-h2",
+      "images": 17,
+      "meaningfulImages": 12,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "route": "/arenda-unitree-r1",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "route": "/arenda-uv-box",
+      "images": 18,
+      "meaningfulImages": 13,
+      "commercialAltPositions": [
+        1,
+        3,
+        4,
+        6,
+        9,
+        10,
+        12
+      ]
+    },
+    {
+      "route": "/arenda-xiaomi-cyberdog-2",
+      "images": 19,
+      "meaningfulImages": 14,
+      "commercialAltPositions": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "route": "/articles",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/compilations",
+      "images": 21,
+      "meaningfulImages": 16,
+      "commercialAltPositions": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "route": "/contacts",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/",
+      "images": 42,
+      "meaningfulImages": 37,
+      "commercialAltPositions": [
+        2,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "route": "/neobychnyi-podarok-direktoru-robot",
+      "images": 7,
+      "meaningfulImages": 2,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/news",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/pozdravlenie-robotom-na-svadbe",
+      "images": 7,
+      "meaningfulImages": 2,
+      "commercialAltPositions": [
+        1
+      ]
+    },
+    {
+      "route": "/robot-ofitsiant-na-meropriyatii",
+      "images": 7,
+      "meaningfulImages": 2,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/roboty-gumanoidy",
+      "images": 11,
+      "meaningfulImages": 6,
+      "commercialAltPositions": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "route": "/sravnenie-unitree-g1-r1-h2",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/unitree-g1-ili-agibot-x2",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/velkom-zona-na-svadbe-robot",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    }
+  ]
+}

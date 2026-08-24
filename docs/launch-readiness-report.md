@@ -45,6 +45,8 @@ data/seo/route-inventory.json
 docs/route-inventory.md
 docs/production-launch-checklist.md
 data/seo/redirects.scaffold.json
+data/seo/rendered-image-alt-audit.json
+docs/rendered-image-alt-audit.md
 ```
 
 ## Что уже готово технически
@@ -58,6 +60,7 @@ data/seo/redirects.scaffold.json
 - Route inventory generated for 46 routes: 38 public indexable and 8 preview/noindex.
 - Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
 - Production launch checklist and redirect scaffold are prepared but not activated.
+- Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
 
 ## Production blockers / inputs needed before launch
 
