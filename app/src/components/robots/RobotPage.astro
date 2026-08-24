@@ -1,0 +1,36 @@
+---
+import type { RobotRecord } from '../../lib/robots';
+import { buildRobotJsonLd, getRelatedRobots } from '../../lib/robots';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RobotHero from './RobotHero.astro';
+import RobotFacts from './RobotFacts.astro';
+import RobotMediaGallery from './RobotMediaGallery.astro';
+import RobotPricing from './RobotPricing.astro';
+import RobotFAQ from './RobotFAQ.astro';
+import RelatedRobots from './RelatedRobots.astro';
+import DownloadProposalCta from './DownloadProposalCta.astro';
+
+interface Props { robot: RobotRecord }
+const { robot } = Astro.props;
+const relatedRobots = getRelatedRobots(robot);
+const jsonLd = buildRobotJsonLd(robot);
+---
+<BaseLayout
+  title={robot.seo.seoTitle}
+  description={robot.seo.metaDescription}
+  sourceUrl={robot.page.url}
+  ogTitle={robot.seo.ogTitle || robot.seo.seoTitle}
+  ogDescription={robot.seo.ogDescription || robot.seo.metaDescription}
+  ogImage={robot.seo.ogImage}
+  jsonLd={jsonLd}
+>
+  <main>
+    <RobotHero robot={robot} />
+    <RobotFacts robot={robot} />
+    <RobotMediaGallery robot={robot} />
+    <RobotPricing robot={robot} />
+    <RobotFAQ robot={robot} />
+    <DownloadProposalCta robot={robot} />
+    <RelatedRobots robots={relatedRobots} />
+  </main>
+</BaseLayout>
