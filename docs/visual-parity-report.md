@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `collection_template_pass_applied_needs_articles_news_template_pass`
+Статус: `content_index_template_pass_applied_needs_detail_article_news_pass`
 
 ## Цель прохода
 
@@ -41,6 +41,8 @@ data/design/robot-template-propagation-check.json
 data/seo/robot-schema-internal-linking-check.json
 data/design/parity-screenshots/collection-template/*.png
 data/seo/collection-template-check.json
+data/design/parity-screenshots/content-index/*.png
+data/seo/content-index-template-check.json
 ```
 
 ## Applied changes in this pass
@@ -187,6 +189,23 @@ data/design/parity-screenshots/collection-template/*.png
 data/seo/collection-template-check.json
 ```
 
+### Content index template pass
+
+Top-level content sections now have a shared live-style index baseline:
+
+- `/articles` is renamed in UI to `Блог Кибер Гоши`, with photo/scrim hero, article cards and `Blog` + `BreadcrumbList` JSON-LD;
+- `/compilations` uses scenario-based live-style groups with robot cards and `CollectionPage` + `BreadcrumbList` JSON-LD;
+- `/news` uses the same visual language and a clear preview/empty state until editor-approved news are published;
+- added `scripts/validate_content_index_pages.py` to validate canonical, `og:url`, absolute `og:image`, robots meta, sitemap inclusion, internal links, fragment CTAs and content template markers;
+- latest validation result: `contentIndexPages=3`, `checkedPages=3`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/design/parity-screenshots/content-index/*.png
+data/seo/content-index-template-check.json
+```
+
 Browser DOM proof after the pass:
 
 ```json
@@ -270,6 +289,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Robot CTA strip | dark live-style strip applied | stacked mobile actions | pass for baseline |
 | FAQ / footer | FAQ, Gosha CTA, related robots and footer live-style baseline applied on shared robot template | mobile related cards stacked/readable | propagated across all 24 robot pages |
 | Collection pages | photo/scrim hero, numbered intro, robot source-of-truth catalog, CTA strip | mobile hero/cards readable | pass for `/arenda-robotov-na-meropriyatie` and `/roboty-gumanoidy` |
+| Content index pages | live-style heroes and cards for `Блог Кибер Гоши`, `Подборки`, `Новости` | mobile heroes/cards readable | pass for `/articles`, `/compilations`, `/news` |
 
 ## Remaining known differences
 
@@ -303,15 +323,17 @@ python3 scripts/validate_robot_seo_links.py --root . --json
 python3 scripts/validate_collection_pages.py --root . --json
 → collectionPages=2, checkedPages=2, errors=0, warnings=0
 
+python3 scripts/validate_content_index_pages.py --root . --json
+→ contentIndexPages=3, checkedPages=3, errors=0, warnings=0
+
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
 ```
 
 ## Recommended next step
 
-Proceed to the **articles / compilations / news template passes**:
+Proceed to the **content detail pages and whole-site validation pass**:
 
-1. bring `Блог Кибер Гоши` article listing and article detail pages to live-style baseline;
-2. bring `Подборки` listing/details to source-of-truth cards and schema;
-3. bring `Новости` listing/details to SEO/news-card structure;
-4. then run a whole-site SEO/link/media validation gate before production launch planning.
+1. bring article detail pages rendered by `[...slug].astro` to the same live-style article template;
+2. bring news detail pages to a `NewsArticle` detail template when editor-approved items exist;
+3. run a whole-site SEO/link/media validation gate before production launch planning.

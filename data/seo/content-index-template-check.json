@@ -1,0 +1,57 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": "content index pages: /articles, /compilations, /news",
+  "checks": [
+    "Blog/CollectionPage JSON-LD",
+    "BreadcrumbList JSON-LD",
+    "canonical",
+    "og:url",
+    "absolute og:image",
+    "robots meta",
+    "sitemap inclusion",
+    "internal links",
+    "local fragment CTA targets",
+    "live-style content template markers"
+  ],
+  "summary": {
+    "contentIndexPages": 3,
+    "checkedPages": 3,
+    "errors": 0,
+    "warnings": 0
+  },
+  "checked": [
+    {
+      "slug": "articles",
+      "canonical": "https://www.kiber-portal.ru/articles",
+      "jsonLdTypes": [
+        "Blog",
+        "BreadcrumbList"
+      ],
+      "internalLinks": 26,
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg"
+    },
+    {
+      "slug": "compilations",
+      "canonical": "https://www.kiber-portal.ru/compilations",
+      "jsonLdTypes": [
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "internalLinks": 59,
+      "ogImage": "https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg"
+    },
+    {
+      "slug": "news",
+      "canonical": "https://www.kiber-portal.ru/news",
+      "jsonLdTypes": [
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "internalLinks": 10,
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}
