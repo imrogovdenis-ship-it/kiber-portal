@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `content_detail_template_pass_applied_needs_whole_site_validation`
+Статус: `whole_site_static_validation_passed_needs_launch_inputs`
 
 ## Цель прохода
 
@@ -45,6 +45,8 @@ data/design/parity-screenshots/content-index/*.png
 data/seo/content-index-template-check.json
 data/design/parity-screenshots/content-detail/*.png
 data/seo/content-detail-template-check.json
+data/seo/whole-site-static-check.json
+docs/launch-readiness-report.md
 ```
 
 ## Applied changes in this pass
@@ -224,6 +226,23 @@ data/design/parity-screenshots/content-detail/*.png
 data/seo/content-detail-template-check.json
 ```
 
+### Whole-site static validation pass
+
+A whole-site static validation gate now checks every generated Astro `index.html` file and treats preview/noindex routes separately from public launch blockers:
+
+- added `scripts/validate_whole_site_static.py`;
+- validates title, description, canonical, robots meta, sitemap inclusion, JSON-LD presence for public pages, local image assets, local internal routes and fragment CTA targets;
+- latest validation result: `htmlPages=46`, `publicPages=38`, `previewPages=8`, `checkedPages=46`, `errors=0`, `warnings=0`;
+- added `Organization`/`WebSite` schema to home and `ContactPage`/`Organization` schema to contacts;
+- recorded production blockers and safe next steps in `docs/launch-readiness-report.md`.
+
+Evidence:
+
+```text
+data/seo/whole-site-static-check.json
+docs/launch-readiness-report.md
+```
+
 Browser DOM proof after the pass:
 
 ```json
@@ -309,6 +328,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Collection pages | photo/scrim hero, numbered intro, robot source-of-truth catalog, CTA strip | mobile hero/cards readable | pass for `/arenda-robotov-na-meropriyatie` and `/roboty-gumanoidy` |
 | Content index pages | live-style heroes and cards for `Блог Кибер Гоши`, `Подборки`, `Новости` | mobile heroes/cards readable | pass for `/articles`, `/compilations`, `/news` |
 | Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
+| Whole-site static validation | 46 generated pages checked, including 38 public routes | no visual change | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -348,14 +368,17 @@ python3 scripts/validate_content_index_pages.py --root . --json
 python3 scripts/validate_content_detail_pages.py --root . --json
 → detailPages=7, checkedPages=7, errors=0, warnings=0
 
+python3 scripts/validate_whole_site_static.py --root . --json
+→ htmlPages=46, publicPages=38, previewPages=8, checkedPages=46, errors=0, warnings=0
+
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
 ```
 
 ## Recommended next step
 
-Proceed to the **whole-site validation and launch-readiness pass**:
+Proceed to **safe launch-readiness preparation without touching production**:
 
-1. run a route-level crawl for all 46 generated pages: statuses, canonicals, OG, schema, local links and image asset existence;
-2. document remaining production blockers: forms/messengers, analytics, redirects, fonts and business-approved pricing;
-3. after blockers are explicit, prepare the deployment/production launch checklist.
+1. generate a route inventory report with page type, schema types, image/link counts and public/noindex status;
+2. improve Contacts visual parity while keeping factual placeholders explicit;
+3. prepare `docs/production-launch-checklist.md` and redirect scaffolding, but do not activate production deployment/DNS/redirects until business inputs are approved.

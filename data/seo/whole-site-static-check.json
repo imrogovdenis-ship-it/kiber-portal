@@ -1,0 +1,488 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": "whole-site static output: all generated Astro index.html files, with production blockers focused on public indexable routes",
+  "checks": [
+    "title",
+    "meta description",
+    "canonical",
+    "robots meta",
+    "sitemap inclusion for indexable pages",
+    "JSON-LD presence for public pages",
+    "local image asset existence",
+    "internal route existence",
+    "fragment CTA targets"
+  ],
+  "summary": {
+    "htmlPages": 46,
+    "publicPages": 38,
+    "previewPages": 8,
+    "checkedPages": 46,
+    "errors": 0,
+    "warnings": 0
+  },
+  "errors": [],
+  "warnings": [],
+  "checked": [
+    {
+      "route": "/arenda-agibot-x2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-agibot-x2",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/arenda-bellabot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-bellabot",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-glambot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-glambot",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 18,
+      "links": 38
+    },
+    {
+      "route": "/arenda-inchbot-l1-w-edu",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 18,
+      "links": 32
+    },
+    {
+      "route": "/arenda-kettybot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-kettybot",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-klipmeiker",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-klipmeiker",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 16,
+      "links": 38
+    },
+    {
+      "route": "/arenda-mini-robo-kofeyni",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 17,
+      "links": 38
+    },
+    {
+      "route": "/arenda-noetix-bumi",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-noetix-bumi",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/arenda-promobot-v4",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-promobot-v4",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 21,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robo-kofeyni",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-roboshashki",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-roboshashki",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robot-barmen",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robot-barmen",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robota-ardi",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-ardi",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robota-hudozhnika-a4",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 18,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robota-sofiya",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-sofiya",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robota-tron",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-tron",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 21,
+      "links": 38
+    },
+    {
+      "route": "/arenda-robotov-na-meropriyatie",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 30,
+      "links": 96
+    },
+    {
+      "route": "/arenda-senserobot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-senserobot",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-sketchbot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-sketchbot",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 21,
+      "links": 38
+    },
+    {
+      "route": "/arenda-unitree-g1",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/arenda-unitree-go2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-go2",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 20,
+      "links": 38
+    },
+    {
+      "route": "/arenda-unitree-h2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-h2",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 17,
+      "links": 38
+    },
+    {
+      "route": "/arenda-unitree-r1",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-r1",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/arenda-uv-box",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-uv-box",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 18,
+      "links": 38
+    },
+    {
+      "route": "/arenda-xiaomi-cyberdog-2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+      "robots": "index,follow",
+      "schemaCount": 3,
+      "images": 19,
+      "links": 38
+    },
+    {
+      "route": "/articles",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/articles",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 39
+    },
+    {
+      "route": "/compilations",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/compilations",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 21,
+      "links": 72
+    },
+    {
+      "route": "/contacts",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/contacts",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 22
+    },
+    {
+      "route": "/design-review",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/design-review",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 9,
+      "links": 32
+    },
+    {
+      "route": "/",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 42,
+      "links": 118
+    },
+    {
+      "route": "/neobychnyi-podarok-direktoru-robot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 7,
+      "links": 27
+    },
+    {
+      "route": "/news",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/news",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 23
+    },
+    {
+      "route": "/news-v2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/news-v2",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 9,
+      "links": 35
+    },
+    {
+      "route": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 27
+    },
+    {
+      "route": "/parity/arenda-robotov-na-meropriyatie",
+      "title": true,
+      "description": true,
+      "canonical": "arenda-robotov-na-meropriyatie",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 8,
+      "links": 62
+    },
+    {
+      "route": "/parity/arenda-unitree-g1",
+      "title": true,
+      "description": true,
+      "canonical": "arenda-unitree-g1",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 20,
+      "links": 41
+    },
+    {
+      "route": "/parity/articles",
+      "title": true,
+      "description": false,
+      "canonical": "https://www.kiber-portal.ru/articles",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 7,
+      "links": 37
+    },
+    {
+      "route": "/parity/home",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 8,
+      "links": 69
+    },
+    {
+      "route": "/parity/news",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/news",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 0,
+      "links": 20
+    },
+    {
+      "route": "/parity/roboty-gumanoidy",
+      "title": true,
+      "description": true,
+      "canonical": "roboty-gumanoidy",
+      "robots": "noindex,nofollow",
+      "schemaCount": 0,
+      "images": 19,
+      "links": 44
+    },
+    {
+      "route": "/pozdravlenie-robotom-na-svadbe",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 7,
+      "links": 27
+    },
+    {
+      "route": "/robot-ofitsiant-na-meropriyatii",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 7,
+      "links": 27
+    },
+    {
+      "route": "/roboty-gumanoidy",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 11,
+      "links": 39
+    },
+    {
+      "route": "/sravnenie-unitree-g1-r1-h2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 27
+    },
+    {
+      "route": "/unitree-g1-ili-agibot-x2",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 27
+    },
+    {
+      "route": "/velkom-zona-na-svadbe-robot",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 27
+    }
+  ]
+}

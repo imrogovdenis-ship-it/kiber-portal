@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RobotCard from '../components/robots/RobotCard.astro';
+import HomeGoshaBlock from '../components/site/HomeGoshaBlock.astro';
+import HomeCompilationsBlock from '../components/site/HomeCompilationsBlock.astro';
+import HomeArticlesBlock from '../components/site/HomeArticlesBlock.astro';
+import { getRobots } from '../lib/robots';
+
+const pages = await getCollection('pages');
+const home = pages.find((entry) => entry.data.sourceUrl === '/');
+if (!home) throw new Error('Home page not found in content-verified/pages');
+const robots = getRobots();
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'КИБЕР ПОРТАЛ',
+    url: 'https://www.kiber-portal.ru/',
+    telephone: '+7 977 479 07 49',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'КИБЕР ПОРТАЛ',
+    url: 'https://www.kiber-portal.ru/',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://www.kiber-portal.ru/?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  },
+];
+---
+<BaseLayout title={home.data.title} description={home.data.description} sourceUrl="/" jsonLd={jsonLd}>
+  <main>
+    <section class="hero hero--home-live">
+      <div class="container hero--home-live__inner">
+        <div class="hero--home-live__copy">
+          <h1>{home.data.h1}</h1>
+          <p>Взять робота в аренду «под ключ»: с доставкой, настройкой сценария и оператором на площадке — в Москве и по всей России. Подходит для выставки, корпоратива, свадьбы, детского праздника или промо-акции в торговом центре — привозим, настраиваем и сопровождаем робота до конца мероприятия.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#catalog">Каталог</a>
+            <a class="btn btn-secondary hero-consultation" href="#social">Консультация</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <HomeGoshaBlock />
+    <HomeCompilationsBlock />
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-heading section-heading--left home-catalog-heading">
+          <h2>Каталог аренды роботов</h2>
+          <p>Роботов из этого каталога чаще всего заказывают для выставок, корпоративов, промо-акций, свадеб и детских праздников — от эффектных гуманоидов до роборук-художников. Все модели — из собственного парка КИБЕР ПОРТАЛ, с доставкой и настройкой под ваш сценарий.</p>
+        </div>
+        <div class="grid robot-card-grid">
+          {robots.map((robot) => <RobotCard robot={robot} />)}
+        </div>
+      </div>
+    </section>
+    <HomeArticlesBlock />
+  </main>
+</BaseLayout>

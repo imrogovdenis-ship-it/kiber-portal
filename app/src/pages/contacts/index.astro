@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Контакты КИБЕР ПОРТАЛ',
+    url: 'https://www.kiber-portal.ru/contacts',
+    description: 'Контактная страница КИБЕР ПОРТАЛА для заявок на аренду роботов.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'КИБЕР ПОРТАЛ',
+    url: 'https://www.kiber-portal.ru/',
+    telephone: '+7 977 479 07 49',
+  },
+];
+---
+<BaseLayout title="Контакты | КИБЕР ПОРТАЛ" description="Контакты КИБЕР ПОРТАЛА. Страница готовится к наполнению точными реквизитами компании." sourceUrl="/contacts" jsonLd={jsonLd}>
+  <main class="article">
+    <p><a href="/">← На главную</a></p>
+    <h1>Контакты</h1>
+    <p>Эта страница создана как parity-заготовка. Финальные реквизиты, адрес и юридические данные нужно заполнить только после получения точных данных от Александра/Дениса.</p>
+    <section class="section" id="contact-details">
+      <h2>Что будет на странице</h2>
+      <ul>
+        <li>Информация о компании</li>
+        <li>Телефон и email</li>
+        <li>Адрес</li>
+        <li>Реквизиты</li>
+        <li>Форма обратной связи</li>
+      </ul>
+    </section>
+  </main>
+</BaseLayout>
