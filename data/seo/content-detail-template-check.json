@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": "content detail pages: 7 blog articles; news details when editor-approved items exist",
+  "checks": [
+    "BlogPosting/NewsArticle JSON-LD",
+    "BreadcrumbList JSON-LD",
+    "canonical",
+    "og:url",
+    "robots meta",
+    "sitemap inclusion",
+    "fragment CTA targets",
+    "live-style detail template markers"
+  ],
+  "summary": {
+    "detailPages": 7,
+    "checkedPages": 7,
+    "errors": 0,
+    "warnings": 0
+  },
+  "checked": [
+    {
+      "url": "/neobychnyi-podarok-direktoru-robot",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot"
+    },
+    {
+      "url": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy"
+    },
+    {
+      "url": "/pozdravlenie-robotom-na-svadbe",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe"
+    },
+    {
+      "url": "/robot-ofitsiant-na-meropriyatii",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii"
+    },
+    {
+      "url": "/sravnenie-unitree-g1-r1-h2",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2"
+    },
+    {
+      "url": "/unitree-g1-ili-agibot-x2",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2"
+    },
+    {
+      "url": "/velkom-zona-na-svadbe-robot",
+      "kind": "blog",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "canonical": "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

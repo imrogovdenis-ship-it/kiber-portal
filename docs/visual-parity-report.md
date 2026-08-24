@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `content_index_template_pass_applied_needs_detail_article_news_pass`
+Статус: `content_detail_template_pass_applied_needs_whole_site_validation`
 
 ## Цель прохода
 
@@ -43,6 +43,8 @@ data/design/parity-screenshots/collection-template/*.png
 data/seo/collection-template-check.json
 data/design/parity-screenshots/content-index/*.png
 data/seo/content-index-template-check.json
+data/design/parity-screenshots/content-detail/*.png
+data/seo/content-detail-template-check.json
 ```
 
 ## Applied changes in this pass
@@ -206,6 +208,22 @@ data/design/parity-screenshots/content-index/*.png
 data/seo/content-index-template-check.json
 ```
 
+### Content detail template pass
+
+Blog/article detail pages now use a live-style reading template:
+
+- `[...slug].astro` keeps robot detail routing intact and applies a photo/scrim article hero, readable article body and sticky next-step aside to non-robot content;
+- news detail pages use the same live-style structure with `NewsArticle` JSON-LD when editor-approved news are generated;
+- added `scripts/validate_content_detail_pages.py` for `BlogPosting`/`NewsArticle`, `BreadcrumbList`, canonical, `og:url`, robots meta, sitemap inclusion, fragment CTAs and live-style detail markers;
+- latest validation result: `detailPages=7`, `checkedPages=7`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/design/parity-screenshots/content-detail/*.png
+data/seo/content-detail-template-check.json
+```
+
 Browser DOM proof after the pass:
 
 ```json
@@ -290,6 +308,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | FAQ / footer | FAQ, Gosha CTA, related robots and footer live-style baseline applied on shared robot template | mobile related cards stacked/readable | propagated across all 24 robot pages |
 | Collection pages | photo/scrim hero, numbered intro, robot source-of-truth catalog, CTA strip | mobile hero/cards readable | pass for `/arenda-robotov-na-meropriyatie` and `/roboty-gumanoidy` |
 | Content index pages | live-style heroes and cards for `Блог Кибер Гоши`, `Подборки`, `Новости` | mobile heroes/cards readable | pass for `/articles`, `/compilations`, `/news` |
+| Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
 
 ## Remaining known differences
 
@@ -326,14 +345,17 @@ python3 scripts/validate_collection_pages.py --root . --json
 python3 scripts/validate_content_index_pages.py --root . --json
 → contentIndexPages=3, checkedPages=3, errors=0, warnings=0
 
+python3 scripts/validate_content_detail_pages.py --root . --json
+→ detailPages=7, checkedPages=7, errors=0, warnings=0
+
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
 ```
 
 ## Recommended next step
 
-Proceed to the **content detail pages and whole-site validation pass**:
+Proceed to the **whole-site validation and launch-readiness pass**:
 
-1. bring article detail pages rendered by `[...slug].astro` to the same live-style article template;
-2. bring news detail pages to a `NewsArticle` detail template when editor-approved items exist;
-3. run a whole-site SEO/link/media validation gate before production launch planning.
+1. run a route-level crawl for all 46 generated pages: statuses, canonicals, OG, schema, local links and image asset existence;
+2. document remaining production blockers: forms/messengers, analytics, redirects, fonts and business-approved pricing;
+3. after blockers are explicit, prepare the deployment/production launch checklist.

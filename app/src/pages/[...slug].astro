@@ -1,0 +1,105 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import RobotPage from '../components/robots/RobotPage.astro';
+import CtaLink from '../components/site/CtaLink.astro';
+import { getRobotByUrl } from '../lib/robots';
+
+type Entry = Awaited<ReturnType<typeof getCollection>>[number];
+
+export async function getStaticPaths() {
+  function pathFromSourceUrl(sourceUrl: string) {
+    if (sourceUrl === '/') return undefined;
+    return sourceUrl.replace(/^\//, '').replace(/\/$/, '');
+  }
+
+  const staticRouteOverrides = new Set(['/roboty-gumanoidy', '/arenda-robotov-na-meropriyatie']);
+  const collections = [
+    ...(await getCollection('robots')).filter((entry) => !staticRouteOverrides.has(entry.data.sourceUrl)),
+    ...(await getCollection('blog')).filter((entry) => !staticRouteOverrides.has(entry.data.sourceUrl)),
+    ...(await getCollection('pages')).filter((entry) => entry.data.sourceUrl !== '/' && !staticRouteOverrides.has(entry.data.sourceUrl)),
+  ];
+
+  return collections
+    .map((entry) => {
+      const path = pathFromSourceUrl(entry.data.sourceUrl);
+      if (!path) return null;
+      return { params: { slug: path }, props: { entry } };
+    })
+    .filter(Boolean);
+}
+
+const { entry } = Astro.props as { entry: Entry };
+const kind = entry.collection;
+const robot = kind === 'robots' ? getRobotByUrl(entry.data.sourceUrl) : undefined;
+
+if (kind === 'robots' && !robot) {
+  throw new Error(`Robot source-of-truth record not found for ${entry.data.sourceUrl}`);
+}
+
+const renderMarkdown = kind !== 'robots';
+const { Content } = renderMarkdown ? await render(entry) : { Content: undefined };
+const title = entry.data.title;
+const description = entry.data.description;
+const h1 = entry.data.h1 || title;
+const images = entry.data.images || [];
+const mainImage = images.find((img) => img.alt && /jpg|jpeg|png|webp|svg/i.test(img.src));
+const heroImage = mainImage?.src?.startsWith('/') ? mainImage.src : mainImage?.src ? `/${mainImage.src}` : '/images/kiber-gosha-yoga-red-ushanka.jpg';
+const pageLabel = kind === 'blog' ? 'Блог Кибер Гоши' : 'Материал';
+const jsonLd = robot ? undefined : [
+  {
+    '@context': 'https://schema.org',
+    '@type': kind === 'blog' ? 'BlogPosting' : 'Article',
+    headline: h1,
+    description,
+    url: entry.data.sourceUrl,
+    image: heroImage,
+    author: { '@type': 'Organization', name: 'КИБЕР ПОРТАЛ' },
+    publisher: { '@type': 'Organization', name: 'КИБЕР ПОРТАЛ' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Главная', item: '/' },
+      { '@type': 'ListItem', position: 2, name: kind === 'blog' ? 'Блог Кибер Гоши' : 'Страницы', item: kind === 'blog' ? '/articles' : '/' },
+      { '@type': 'ListItem', position: 3, name: h1, item: entry.data.sourceUrl },
+    ],
+  },
+];
+---
+{robot ? (
+  <RobotPage robot={robot} />
+) : (
+  <BaseLayout title={title} description={description} sourceUrl={entry.data.sourceUrl} ogImage={heroImage} jsonLd={jsonLd}>
+    <main>
+      <section class="article-live-hero" style={`--article-hero-image:url('${heroImage}')`}>
+        <div class="container article-live-hero__inner">
+          <span>{pageLabel}</span>
+          <h1>{h1}</h1>
+          {description && <p>{description}</p>}
+          <div class="hero-actions">
+            <CtaLink href="#article-body" event="article_read_click" source="article_hero" pageType="article" placement="hero">Читать материал</CtaLink>
+            <CtaLink class="btn btn-secondary" href="#social" event="article_question_click" source="article_hero" pageType="article" placement="hero">Задать вопрос</CtaLink>
+          </div>
+        </div>
+      </section>
+      <section class="section article-live" id="article-body">
+        <div class="container article-live__layout">
+          <article class="article-live__body">
+            {mainImage && <img src={heroImage} alt={mainImage.alt} loading="eager" />}
+            {Content && <Content />}
+          </article>
+          <aside class="article-live__aside">
+            <strong>Следующий шаг</strong>
+            <a href="/articles">Блог Кибер Гоши</a>
+            <a href="/compilations">Подборки</a>
+            <a href="/roboty-gumanoidy">Гуманоиды</a>
+            <a href="#social">Обсудить задачу</a>
+            <p>Материал связан с данными сайта в GitHub и коммерческими страницами КИБЕР ПОРТАЛА.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </BaseLayout>
+)}

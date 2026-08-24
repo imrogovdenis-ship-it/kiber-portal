@@ -1208,6 +1208,148 @@ nav a, .site-footer a {
   }
 }
 
+.article-live-hero {
+  margin: 20px 40px 0;
+  border-radius: var(--kp-radius-card);
+  overflow: hidden;
+  color: var(--kp-white);
+  background:
+    linear-gradient(90deg, rgba(37,34,43,.88), rgba(37,34,43,.66) 55%, rgba(37,34,43,.26)),
+    var(--article-hero-image, url('/images/kiber-gosha-yoga-red-ushanka.jpg')) center / cover no-repeat,
+    var(--kp-ink-dark);
+}
+.article-live-hero--news {
+  background:
+    linear-gradient(90deg, rgba(37,34,43,.88), rgba(37,34,43,.64) 58%, rgba(37,34,43,.30)),
+    url('/images/tild6563-3439-4536-b265-393066346365__07.jpg') center / cover no-repeat,
+    var(--kp-ink-dark);
+}
+.article-live-hero__inner {
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 78px 40px;
+}
+.article-live-hero span,
+.article-live__note strong {
+  color: var(--kp-blue);
+  font-family: var(--kp-font-secondary);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.article-live-hero h1 {
+  max-width: 980px;
+  margin: 22px 0 28px;
+  color: var(--kp-white);
+  font-size: clamp(44px, 5.6vw, 70px);
+  line-height: .98;
+  letter-spacing: 1px;
+}
+.article-live-hero p {
+  max-width: 780px;
+  margin: 0 0 34px;
+  color: var(--kp-white);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.article-live {
+  padding-top: 76px;
+}
+.article-live__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 760px) 320px;
+  gap: 70px;
+  align-items: start;
+}
+.article-live__body {
+  padding: 42px;
+  border-radius: var(--kp-radius-card);
+  background: var(--kp-white);
+  color: var(--kp-ink);
+  font-size: 20px;
+  line-height: 1.65;
+}
+.article-live__body img {
+  width: 100%;
+  margin-bottom: 32px;
+  border-radius: var(--kp-radius-card);
+}
+.article-live__body h2,
+.article-live__body h3 {
+  margin: 42px 0 18px;
+  color: var(--kp-ink);
+  line-height: 1.1;
+}
+.article-live__body p,
+.article-live__body li {
+  color: var(--kp-ink);
+}
+.article-live__body a {
+  color: var(--kp-blue);
+  font-weight: 800;
+}
+.article-live__aside {
+  position: sticky;
+  top: 104px;
+  display: grid;
+  gap: 14px;
+  padding: 28px;
+  border-radius: var(--kp-radius-card);
+  background: var(--kp-white);
+}
+.article-live__aside strong {
+  color: var(--kp-ink);
+  font-size: 24px;
+}
+.article-live__aside a {
+  color: var(--kp-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+.article-live__aside p,
+.article-live__note {
+  margin: 10px 0 0;
+  color: var(--kp-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.article-live__note {
+  margin-top: 36px;
+  padding-top: 26px;
+  border-top: 1px solid var(--kp-line);
+}
+@media screen and (max-width: 960px) {
+  .article-live__layout {
+    grid-template-columns: 1fr;
+  }
+  .article-live__aside {
+    position: static;
+  }
+}
+@media screen and (max-width: 820px) {
+  .article-live-hero {
+    margin: 12px 18px 0;
+  }
+  .article-live-hero__inner {
+    min-height: 520px;
+    padding: 64px 22px;
+  }
+  .article-live-hero h1 {
+    font-size: 40px;
+  }
+  .article-live-hero p {
+    font-size: 18px;
+  }
+  .article-live__body {
+    padding: 24px;
+    font-size: 18px;
+  }
+}
+
 .content-live-hero {
   margin: 20px 40px 0;
   border-radius: var(--kp-radius-card);
