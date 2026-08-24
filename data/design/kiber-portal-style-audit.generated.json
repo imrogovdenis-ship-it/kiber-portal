@@ -1,0 +1,193 @@
+{
+  "version": "0.2.0",
+  "status": "verified_from_live_site",
+  "auditDate": "2026-08-24",
+  "sourceSite": "https://www.kiber-portal.ru/",
+  "sourcePages": [
+    {
+      "url": "https://www.kiber-portal.ru/",
+      "pageClass": "home",
+      "title": "Аренда роботов для мероприятий в Москве — от 20 000 ₽ | КИБЕР ПОРТАЛ"
+    },
+    {
+      "url": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "pageClass": "robot",
+      "title": "Аренда робота-гуманоида Unitree G1 в Москве | КИБЕР ПОРТАЛ"
+    }
+  ],
+  "evidence": {
+    "desktopScreenshots": [
+      "data/design/live-screenshots/home-desktop-1280.png",
+      "data/design/live-screenshots/unitree-g1-desktop-1280.png"
+    ],
+    "mobileScreenshots": [
+      "data/design/live-screenshots/home-mobile-390.png"
+    ],
+    "method": "Browser computed-style audit on live DOM plus Playwright screenshots. Values below are live computed values, not guessed from old GitHub export."
+  },
+  "colors": {
+    "dominant": [
+      [
+        "#F4F8FF",
+        "main section background / site canvas"
+      ],
+      [
+        "#FFFFFF",
+        "header/buttons/cards/image surfaces"
+      ],
+      [
+        "#0088FF",
+        "primary action blue: header CTA, hero CTA, arrows, links, logo accent"
+      ],
+      [
+        "#36323E",
+        "main ink/headings and dark news/CTA sections"
+      ],
+      [
+        "#797A91",
+        "muted body/meta text"
+      ],
+      [
+        "#A1A2B8",
+        "secondary muted/captions"
+      ],
+      [
+        "#25222B",
+        "dark overlay/hero scrim"
+      ],
+      [
+        "#E7E7E7",
+        "FAQ/divider line"
+      ],
+      [
+        "#FF991D",
+        "rare badge accent"
+      ]
+    ],
+    "notPrimary": [
+      "#005EFF is present mainly inside blue radial/gradient CTA strips; it is not the resting button color on the live pages audited.",
+      "#134EEF/#2B72DD appear as legacy/export residues and should not drive new UI without a fresh live use case.",
+      "#FA876B is not a live primary accent on audited pages."
+    ]
+  },
+  "typography": {
+    "primaryDisplay": "Gillroy, Arial, sans-serif",
+    "secondary": "Montserrat, Arial, sans-serif used for footer, prices/meta and some Gosha blocks",
+    "bodyDefaultCaveat": "body element falls back to Times New Roman, but meaningful visible text is styled per block; do not use Times as a token.",
+    "desktopScale": [
+      {
+        "role": "h1 hero",
+        "size": "64px",
+        "lineHeight": "64px",
+        "weight": "700",
+        "letterSpacing": "1px",
+        "color": "#FFFFFF"
+      },
+      {
+        "role": "h2 section",
+        "size": "44px",
+        "lineHeight": "44px",
+        "weight": "700",
+        "letterSpacing": "normal",
+        "color": "#36323E"
+      },
+      {
+        "role": "feature/card title",
+        "size": "28px or 34px",
+        "lineHeight": "28px/34px",
+        "weight": "700",
+        "color": "#36323E"
+      },
+      {
+        "role": "body/description",
+        "size": "16px",
+        "lineHeight": "25.6px",
+        "weight": "500",
+        "color": "#797A91 or #36323E"
+      },
+      {
+        "role": "button",
+        "size": "14px",
+        "lineHeight": "19.6px",
+        "weight": "700"
+      }
+    ]
+  },
+  "layout": {
+    "containers": [
+      "1200px t-container",
+      "1160px section content inside 1200px container",
+      "960px text/narrow blocks",
+      "760px FAQ/title narrow blocks"
+    ],
+    "sectionBackground": "#F4F8FF light-first canvas; dark sections are exceptions (news/footer/CTA strips).",
+    "sectionRhythm": [
+      "60px/30px/90px Tilda section paddings are common",
+      "desktop gutters about 40px; content x often 53px at 1280 viewport",
+      "mobile is stacked and keeps the same light canvas"
+    ]
+  },
+  "radiiAndDepth": {
+    "radiiFrequency": [
+      "18px most common for image/card surfaces",
+      "24px buttons",
+      "30px product-page panels/feature cards",
+      "50px/100px pills and slider arrows",
+      "10px small icon tiles"
+    ],
+    "shadows": "Almost none on live core UI; one Gosha bubble uses 0 0 15px rgba(0,0,0,.1). Do not make heavy card shadows a default."
+  },
+  "components": {
+    "header": {
+      "height": "80px",
+      "background": "rgba(255,255,255,.90)",
+      "logoWidth": "100px",
+      "nav": "Gillroy 16px 400 #222222, gap about 30px",
+      "phone": "Gillroy 16px 500 #36323E, letter-spacing 1px",
+      "cta": "#0088FF background, #FFFFFF text, 48px height, 24px radius, 14px/700, padding 14px 32px"
+    },
+    "homeHero": {
+      "surface": "rounded 18px image cover block on #F4F8FF, about 40px side gutters",
+      "overlay": "dark graphite overlay/scrim over real photo, not abstract blue-glow gradient",
+      "h1": "64/64 700 white, +1px tracking",
+      "body": "white text over image, large commercial intro",
+      "buttons": "primary #0088FF; secondary white background with #0088FF text"
+    },
+    "robotHero": {
+      "surface": "image-based dark hero on light canvas",
+      "h1": "64px white Gillroy 700",
+      "buttons": "primary #0088FF, secondary white #36323E"
+    },
+    "catalogCards": {
+      "model": "Tilda t786 product grid: transparent card wrapper, square robot PNG/image on white, no border/shadow, text underneath",
+      "title": "22px Gillroy 700 #36323E line-height 30.8px",
+      "price": "14px Montserrat 600 #36323E",
+      "description": "16px Gillroy 500 #797A91",
+      "grid": "4 columns desktop, about 20px column gap"
+    },
+    "compilationCards": {
+      "surface": "image card 18px radius with dark bottom overlay",
+      "title": "28px Gillroy 700 white line-height 28px",
+      "cta": "white pill with #0088FF text"
+    },
+    "ctaStrip": {
+      "background": "radial-gradient(circle,#0088FF 0%,#005EFF 100%)",
+      "height": "260px desktop",
+      "title": "44px Gillroy 700 white",
+      "buttons": "white pill, #36323E text"
+    },
+    "faq": {
+      "question": "22px Gillroy 700 #36323E line-height 30.8px",
+      "dividers": "#E7E7E7",
+      "background": "#F4F8FF"
+    }
+  },
+  "tokenCorrections": [
+    "Use #0088FF as resting primary CTA, not #005EFF.",
+    "Default cards should not have heavy shadows.",
+    "Default card/image radius is 18px; 30px is for selected product panels, not global card default.",
+    "Use normal/+1px heading tracking from live, not negative SaaS-style tracking.",
+    "Treat #F4F8FF as the global canvas; white is surfaces/buttons/images.",
+    "Catalog cards are not rounded/shadowed SaaS cards; they are transparent product tiles with square images."
+  ]
+}

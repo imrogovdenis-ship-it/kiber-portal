@@ -1,0 +1,138 @@
+{
+  "version": "0.2.0",
+  "status": "verified_from_live_site",
+  "source": {
+    "basis": "live computed-style audit of https://www.kiber-portal.ru/ and /arenda-unitree-g1 on 2026-08-24",
+    "auditFile": "data/design/kiber-portal-style-audit.generated.json",
+    "notes": "This replaces the earlier GitHub/export-only audit. Prefer these live-site tokens for new Astro components."
+  },
+  "colors": {
+    "brandBlue": "#0088ff",
+    "brandBlueDeep": "#005eff",
+    "brandSky": "#f4f8ff",
+    "brandSkySoft": "#eaf4ff",
+    "ink": "#36323e",
+    "inkDark": "#25222b",
+    "navInk": "#222222",
+    "muted": "#797a91",
+    "mutedSoft": "#a1a2b8",
+    "line": "#e7e7e7",
+    "surface": "#ffffff",
+    "surfaceWarm": "#f7f9fe",
+    "accentOrange": "#ff991d",
+    "white": "#ffffff",
+    "black": "#000000"
+  },
+  "typography": {
+    "fontDisplay": "Gillroy, Arial, sans-serif",
+    "fontText": "Gillroy, Arial, sans-serif",
+    "fontSecondary": "Montserrat, Arial, sans-serif",
+    "fontFallback": "Arial, sans-serif",
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "scale": {
+      "button": "14px",
+      "meta": "14px",
+      "body": "16px",
+      "lead": "22px",
+      "cardTitle": "22px",
+      "featureTitle": "28px",
+      "scenarioTitle": "34px",
+      "h2": "44px",
+      "h1": "64px"
+    },
+    "lineHeights": {
+      "button": "1.4",
+      "body": "1.6",
+      "h1": "1",
+      "h2": "1",
+      "cardTitle": "1.4",
+      "featureTitle": "1"
+    },
+    "letterSpacing": {
+      "hero": "1px",
+      "heading": "0",
+      "body": "0"
+    }
+  },
+  "layout": {
+    "containerMax": "1200px",
+    "contentMax": "1160px",
+    "textMax": "960px",
+    "narrowMax": "760px",
+    "sectionPaddingDesktop": "60px 40px",
+    "sectionPaddingMobile": "60px 18px",
+    "gridGap": "20px",
+    "breakpoints": {
+      "mobile": "640px",
+      "tablet": "960px",
+      "desktop": "1200px"
+    }
+  },
+  "radii": {
+    "button": "24px",
+    "pill": "100px",
+    "card": "18px",
+    "panel": "30px",
+    "media": "18px",
+    "small": "10px",
+    "round": "50%"
+  },
+  "shadows": {
+    "card": "none",
+    "cardHover": "none",
+    "media": "none",
+    "header": "none",
+    "goshaBubble": "0 0 15px rgba(0,0,0,.1)"
+  },
+  "components": {
+    "button": {
+      "primaryBackground": "brandBlue",
+      "primaryText": "white",
+      "primaryHoverBackground": "brandBlueDeep",
+      "secondaryBackground": "white",
+      "secondaryText": "brandBlue",
+      "darkStripButtonText": "ink",
+      "radius": "button",
+      "height": "48px",
+      "padding": "14px 32px"
+    },
+    "card": {
+      "background": "surface",
+      "border": "none",
+      "radius": "card",
+      "shadow": "card"
+    },
+    "catalogCard": {
+      "background": "transparent",
+      "imageBackground": "surface",
+      "imageRadius": "0",
+      "titleSize": "cardTitle",
+      "priceFont": "fontSecondary",
+      "shadow": "none"
+    },
+    "hero": {
+      "background": "photo-with-graphite-scrim",
+      "text": "white",
+      "mutedText": "white",
+      "radius": "card"
+    },
+    "ctaStrip": {
+      "background": "radial-gradient(circle, #0088ff 0%, #005eff 100%)",
+      "text": "white",
+      "buttonBackground": "white"
+    }
+  },
+  "pageThemes": {
+    "commercial": "Light #F4F8FF canvas, photo hero with graphite overlay, blue/white pills, transparent catalog tiles.",
+    "robot": "Product detail on light canvas; dark photo hero and blue radial CTA strips; feature/scenario grids with Gillroy headings.",
+    "collection": "SEO landing should reuse light canvas, 44px section headings, image cards with 18px radius/overlay.",
+    "article": "Editorial cards/images should stay close to live: white surfaces, 18px radius, minimal shadow.",
+    "news": "Dark #36323E section treatment is valid for news/freshness blocks.",
+    "contact": "Blue radial CTA strips and dark footer/contact surfaces."
+  }
+}

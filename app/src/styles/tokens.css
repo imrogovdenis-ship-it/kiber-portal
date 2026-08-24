@@ -1,18 +1,3 @@
-/* ==========================================================================
-   КИБЕР ПОРТАЛ — live-verified design tokens
-   Source of truth: computed-style audit of https://www.kiber-portal.ru/
-   and /arenda-unitree-g1 on 2026-08-24.
-   ========================================================================== */
-
-@font-face { font-family: 'Gillroy'; font-weight: 400; font-style: normal; font-display: swap;
-  src: url('https://static.tildacdn.com/tild3334-3839-4464-b731-666264376338/Gilroy-Regular.woff2') format('woff2'); }
-@font-face { font-family: 'Gillroy'; font-weight: 500; font-style: normal; font-display: swap;
-  src: url('https://static.tildacdn.com/tild6362-3931-4530-a230-656462373232/Gilroy-Medium.woff2') format('woff2'); }
-@font-face { font-family: 'Gillroy'; font-weight: 600; font-style: normal; font-display: swap;
-  src: url('https://static.tildacdn.com/tild3535-3662-4230-a566-346165333931/Gilroy-Semibold.woff2') format('woff2'); }
-@font-face { font-family: 'Gillroy'; font-weight: 700; font-style: normal; font-display: swap;
-  src: url('https://static.tildacdn.com/tild3834-3165-4531-b231-653963663939/Gilroy-Bold.woff2') format('woff2'); }
-
 :root {
   --kp-blue: #0088ff;
   --kp-blue-deep: #005eff;
