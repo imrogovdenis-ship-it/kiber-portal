@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CtaLink from '../../components/site/CtaLink.astro';
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -16,21 +17,50 @@ const jsonLd = [
     telephone: '+7 977 479 07 49',
   },
 ];
+const placeholders = [
+  ['Телефон', '+7 977 479 07 49', 'Публичный номер уже используется в шапке сайта.'],
+  ['Мессенджеры', 'Ожидают финального подключения', 'Нужны утверждённые Telegram/WhatsApp/Max ссылки.'],
+  ['Реквизиты', 'Требуют подтверждения', 'Юридические данные не добавляем без бизнес-аппрува.'],
+];
 ---
-<BaseLayout title="Контакты | КИБЕР ПОРТАЛ" description="Контакты КИБЕР ПОРТАЛА. Страница готовится к наполнению точными реквизитами компании." sourceUrl="/contacts" jsonLd={jsonLd}>
-  <main class="article">
-    <p><a href="/">← На главную</a></p>
-    <h1>Контакты</h1>
-    <p>Эта страница создана как parity-заготовка. Финальные реквизиты, адрес и юридические данные нужно заполнить только после получения точных данных от Александра/Дениса.</p>
-    <section class="section" id="contact-details">
-      <h2>Что будет на странице</h2>
-      <ul>
-        <li>Информация о компании</li>
-        <li>Телефон и email</li>
-        <li>Адрес</li>
-        <li>Реквизиты</li>
-        <li>Форма обратной связи</li>
-      </ul>
+<BaseLayout title="Контакты | КИБЕР ПОРТАЛ" description="Контакты КИБЕР ПОРТАЛА. Страница готовится к наполнению точными реквизитами компании." sourceUrl="/contacts" ogImage="/images/kiber-gosha-yoga-red-ushanka.jpg" jsonLd={jsonLd}>
+  <main>
+    <section class="content-live-hero contacts-live-hero">
+      <div class="container content-live-hero__inner">
+        <span>КОНТАКТЫ</span>
+        <h1>Связаться с КИБЕР ПОРТАЛОМ</h1>
+        <p>Подберём робота под мероприятие, проверим сценарий и подготовим предложение. Фактические реквизиты и каналы связи добавим только после подтверждения.</p>
+        <div class="hero-actions">
+          <CtaLink href="#social" event="contacts_write_click" source="contacts_hero" pageType="contacts" placement="hero">Написать нам</CtaLink>
+          <CtaLink class="btn btn-secondary" href="tel:+79774790749" event="contacts_call_click" source="contacts_hero" pageType="contacts" placement="hero">Позвонить</CtaLink>
+        </div>
+      </div>
+    </section>
+    <section class="section content-live-section" id="contact-details">
+      <div class="container">
+        <span class="content-live-eyebrow">01 — ДАННЫЕ ДЛЯ ЗАПУСКА</span>
+        <h2>Что уже можно показать и что требует подтверждения</h2>
+        <p class="content-live-lead">Страница сделана как безопасная production-ready заготовка: визуально она уже в стиле сайта, но спорные бизнес-факты не выдумываются.</p>
+        <div class="content-live-grid contacts-live-grid">
+          {placeholders.map(([label, value, note]) => (
+            <article class="content-live-card">
+              <span>{label}</span>
+              <h3>{value}</h3>
+              <p>{note}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="section content-live-section contacts-live-next">
+      <div class="container content-live-cta">
+        <div>
+          <span class="content-live-eyebrow">02 — ПЕРЕД ПУБЛИКАЦИЕЙ</span>
+          <h2>Нужны финальные реквизиты и каналы связи</h2>
+          <p>После подтверждения можно будет заменить placeholders на точные контакты, добавить форму и включить аналитику событий.</p>
+        </div>
+        <CtaLink href="#social" event="contacts_confirm_click" source="contacts_next" pageType="contacts" placement="body">Передать данные</CtaLink>
+      </div>
     </section>
   </main>
 </BaseLayout>

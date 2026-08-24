@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-24",
+  "status": "scaffold_only_not_active",
+  "notes": [
+    "This file documents redirect scaffolding only; it is not wired into Astro/Coolify/Traefik.",
+    "Do not activate redirects until final old URL mapping is approved.",
+    "Current canonical public routes are preserved where known."
+  ],
+  "requiredBeforeActivation": [
+    "final live URL crawl immediately before cutover",
+    "approval of old-to-new route mapping",
+    "decision on slash/no-slash normalization",
+    "decision on constructor/parity/preview URLs",
+    "post-deploy curl verification"
+  ],
+  "redirects": []
+}

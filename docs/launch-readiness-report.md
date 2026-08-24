@@ -41,6 +41,10 @@ data/seo/collection-template-check.json
 data/seo/content-index-template-check.json
 data/seo/content-detail-template-check.json
 data/seo/whole-site-static-check.json
+data/seo/route-inventory.json
+docs/route-inventory.md
+docs/production-launch-checklist.md
+data/seo/redirects.scaffold.json
 ```
 
 ## Что уже готово технически
@@ -51,6 +55,9 @@ data/seo/whole-site-static-check.json
 - Collection/content pages have dedicated schema and validation gates.
 - Static validation covers all 46 generated pages, including 38 public indexable pages and 8 preview/noindex pages.
 - Public local images, local links, canonical URLs, robots meta, sitemap inclusion and fragment anchors pass automated checks.
+- Route inventory generated for 46 routes: 38 public indexable and 8 preview/noindex.
+- Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
+- Production launch checklist and redirect scaffold are prepared but not activated.
 
 ## Production blockers / inputs needed before launch
 

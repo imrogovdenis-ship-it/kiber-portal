@@ -47,6 +47,11 @@ data/design/parity-screenshots/content-detail/*.png
 data/seo/content-detail-template-check.json
 data/seo/whole-site-static-check.json
 docs/launch-readiness-report.md
+data/seo/route-inventory.json
+docs/route-inventory.md
+docs/production-launch-checklist.md
+data/seo/redirects.scaffold.json
+data/design/parity-screenshots/launch-prep/*.png
 ```
 
 ## Applied changes in this pass
@@ -241,6 +246,26 @@ Evidence:
 ```text
 data/seo/whole-site-static-check.json
 docs/launch-readiness-report.md
+```
+
+### Launch-prep documentation pass
+
+Safe launch-prep artifacts were generated without touching production infrastructure:
+
+- route inventory report: `docs/route-inventory.md` and `data/seo/route-inventory.json`;
+- live-style Contacts placeholder page with explicit factual blockers and ContactPage/Organization schema;
+- production launch checklist: `docs/production-launch-checklist.md`;
+- redirect scaffold: `data/seo/redirects.scaffold.json`, not wired into deployment;
+- contacts visual evidence: `data/design/parity-screenshots/launch-prep/*.png`.
+
+Evidence:
+
+```text
+data/seo/route-inventory.json
+docs/route-inventory.md
+docs/production-launch-checklist.md
+data/seo/redirects.scaffold.json
+data/design/parity-screenshots/launch-prep/*.png
 ```
 
 Browser DOM proof after the pass:
