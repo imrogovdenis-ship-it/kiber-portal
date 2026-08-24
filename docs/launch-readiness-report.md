@@ -47,6 +47,8 @@ docs/production-launch-checklist.md
 data/seo/redirects.scaffold.json
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
+data/seo/rendered-heading-audit.json
+docs/rendered-heading-audit.md
 ```
 
 ## Что уже готово технически
@@ -61,6 +63,7 @@ docs/rendered-image-alt-audit.md
 - Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
 - Production launch checklist and redirect scaffold are prepared but not activated.
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
+- Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
 
 ## Production blockers / inputs needed before launch
 

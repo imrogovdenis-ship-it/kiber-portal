@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `rendered_image_alt_audit_passed_needs_business_launch_inputs`
+Статус: `rendered_heading_audit_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -54,6 +54,8 @@ data/seo/redirects.scaffold.json
 data/design/parity-screenshots/launch-prep/*.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
+data/seo/rendered-heading-audit.json
+docs/rendered-heading-audit.md
 ```
 
 ## Applied changes in this pass
@@ -270,6 +272,8 @@ data/seo/redirects.scaffold.json
 data/design/parity-screenshots/launch-prep/*.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
+data/seo/rendered-heading-audit.json
+docs/rendered-heading-audit.md
 ```
 
 ### Rendered image alt audit pass
@@ -287,6 +291,25 @@ Evidence:
 ```text
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
+data/seo/rendered-heading-audit.json
+docs/rendered-heading-audit.md
+```
+
+### Rendered heading hierarchy audit pass
+
+Rendered public pages now have a heading SEO regression gate:
+
+- added `scripts/audit_rendered_headings.py`;
+- public/indexable pages only are checked; preview/noindex routes are excluded;
+- every public page must have exactly one non-empty H1;
+- empty headings and skipped heading-level jumps are reported as warnings;
+- latest validation result: `publicPagesChecked=38`, `headings=729`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/seo/rendered-heading-audit.json
+docs/rendered-heading-audit.md
 ```
 
 Browser DOM proof after the pass:
@@ -376,6 +399,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
 | Whole-site static validation | 46 generated pages checked, including 38 public routes | no visual change | errors=0, warnings=0 |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
+| Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -420,6 +444,9 @@ python3 scripts/validate_whole_site_static.py --root . --json
 
 python3 scripts/audit_rendered_image_alt.py --root . --json
 → publicPagesChecked=38, meaningfulImages=435, errors=0, warnings=0
+
+python3 scripts/audit_rendered_headings.py --root . --json
+→ publicPagesChecked=38, headings=729, errors=0, warnings=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
