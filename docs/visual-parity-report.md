@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `robot_template_propagated_needs_schema_internal_linking_pass`
+Статус: `robot_schema_internal_linking_pass_applied_needs_collection_template_pass`
 
 ## Цель прохода
 
@@ -38,6 +38,7 @@ data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-desktop-1280.png
 data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-mobile-390.png
 data/design/parity-screenshots/robot-propagation/*.png
 data/design/robot-template-propagation-check.json
+data/seo/robot-schema-internal-linking-check.json
 ```
 
 ## Applied changes in this pass
@@ -151,6 +152,22 @@ Machine-readable proof:
 data/design/robot-template-propagation-check.json
 ```
 
+### Robot schema / internal-linking validation pass
+
+Robot pages now have a dedicated SEO/schema validation gate:
+
+- added `FAQPage` JSON-LD for each robot page with FAQ answers from source-of-truth;
+- kept existing `Service` and `BreadcrumbList` JSON-LD per robot page;
+- added `scripts/validate_robot_seo_links.py` to validate all 24 built robot pages;
+- validator checks canonical URL, `og:url`, absolute `og:image`, robots meta, sitemap inclusion, rendered related robot links, local fragment CTA targets and required live-style template markers;
+- latest validation result: `robotPages=24`, `checkedPages=24`, `errors=0`, `warnings=0`.
+
+Machine-readable proof:
+
+```text
+data/seo/robot-schema-internal-linking-check.json
+```
+
 Browser DOM proof after the pass:
 
 ```json
@@ -260,15 +277,17 @@ python3 scripts/validate_public_pages.py --root . --json
 npm --prefix app run build
 → 46 page(s) built, exit 0
 
+python3 scripts/validate_robot_seo_links.py --root . --json
+→ robotPages=24, checkedPages=24, errors=0, warnings=0
+
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
 ```
 
 ## Recommended next step
 
-Proceed to the **schema and internal-linking validation pass**:
+Proceed to the **collection/article/news template passes**:
 
-1. add/verify FAQPage JSON-LD for robot pages using source-of-truth FAQ;
-2. validate related robots and next-step links across all robot pages;
-3. check sitemap/canonical/OG image behavior for the 24 robot detail pages;
-4. then start the collection/article/news template passes.
+1. bring `/roboty-gumanoidy` and `/arenda-robotov-na-meropriyatie` collection pages to the same live-style component quality;
+2. validate their canonical/OG/schema/internal links;
+3. then handle `Блог Кибер Гоши`, `Подборки` and `Новости` templates with source-of-truth content and SEO rules.

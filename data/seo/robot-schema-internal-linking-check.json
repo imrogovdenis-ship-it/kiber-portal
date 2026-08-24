@@ -1,0 +1,106 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": "24 robot detail pages",
+  "checks": [
+    "FAQPage JSON-LD",
+    "Service JSON-LD",
+    "BreadcrumbList JSON-LD",
+    "canonical",
+    "og:url",
+    "og:image",
+    "robots meta",
+    "sitemap inclusion",
+    "rendered related robot links",
+    "local fragment CTA targets",
+    "live-style template markers"
+  ],
+  "summary": {
+    "robotPages": 24,
+    "checkedPages": 24,
+    "errors": 0,
+    "warnings": 0
+  },
+  "samplePages": [
+    {
+      "slug": "arenda-bellabot",
+      "url": "/arenda-bellabot",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faqItems": 5,
+      "relatedRobots": 5,
+      "canonical": "https://www.kiber-portal.ru/arenda-bellabot",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3730-3164-4238-a530-353561376234__noroot.png"
+    },
+    {
+      "slug": "arenda-glambot",
+      "url": "/arenda-glambot",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faqItems": 5,
+      "relatedRobots": 4,
+      "canonical": "https://www.kiber-portal.ru/arenda-glambot",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6563-3439-4536-b265-393066346365__07.jpg"
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "url": "/arenda-mini-robo-kofeyni",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faqItems": 5,
+      "relatedRobots": 5,
+      "canonical": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6265-3763-4265-b135-653138386261__06.jpg"
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "url": "/arenda-sketchbot",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faqItems": 5,
+      "relatedRobots": 5,
+      "canonical": "https://www.kiber-portal.ru/arenda-sketchbot",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3739-6331-4234-b635-633262663663__010.jpg"
+    },
+    {
+      "slug": "arenda-unitree-g1",
+      "url": "/arenda-unitree-g1",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faqItems": 5,
+      "relatedRobots": 5,
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6333-3137-4465-b265-323436646539__06.jpg"
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "url": "/arenda-unitree-go2",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faqItems": 5,
+      "relatedRobots": 5,
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-go2",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6666-3666-4662-a431-636535616562__6.jpg"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}
