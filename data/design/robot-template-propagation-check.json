@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": {
+    "robotPagesChecked": 24,
+    "representativeScreenshots": [
+      "arenda-unitree-g1",
+      "arenda-bellabot",
+      "arenda-glambot",
+      "arenda-unitree-go2",
+      "arenda-mini-robo-kofeyni",
+      "arenda-sketchbot"
+    ]
+  },
+  "requiredTemplateMarkers": [
+    "robot-hero--live",
+    "robot-live-intro",
+    "robot-live-gallery",
+    "robot-live-cta-strip",
+    "robot-live-faq",
+    "robot-live-gosha",
+    "robot-live-related",
+    "site-footer--live"
+  ],
+  "result": {
+    "missingPages": 0,
+    "missingRequiredMarkers": 0,
+    "buildPages": 46,
+    "validatorErrors": 0,
+    "validatorWarnings": 0
+  },
+  "notes": [
+    "All 24 robot detail pages are rendered through the shared RobotPage.astro composition.",
+    "Class-marker smoke checks confirmed the live-style robot template blocks on every robot page.",
+    "Business pricing data was not changed during this pass."
+  ]
+}

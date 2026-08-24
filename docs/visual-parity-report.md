@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `robot_template_baseline_applied_needs_propagation_pass`
+Статус: `robot_template_propagated_needs_schema_internal_linking_pass`
 
 ## Цель прохода
 
@@ -36,6 +36,8 @@ data/design/parity-screenshots/astro-unitree-g1-blocks-desktop-1280.png
 data/design/parity-screenshots/astro-unitree-g1-blocks-mobile-390.png
 data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-desktop-1280.png
 data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-mobile-390.png
+data/design/parity-screenshots/robot-propagation/*.png
+data/design/robot-template-propagation-check.json
 ```
 
 ## Applied changes in this pass
@@ -122,6 +124,33 @@ Browser DOM proof after the FAQ/footer pass:
 }
 ```
 
+### Robot template propagation pass
+
+The corrected robot template is now verified across all 24 robot detail pages:
+
+- every robot page builds through the shared live-style `RobotPage.astro` composition;
+- all 24 built pages include the required template markers: hero, intro, gallery, CTA strip, FAQ, Gosha helper, related robots and live footer;
+- representative desktop/mobile screenshots were captured for humanoid, service, media, dog, coffee and drawing robots;
+- Russian generated headings were normalized from genitive source labels like `робота-официанта BellaBot` to nominative page copy like `Робот-официант BellaBot` / `Что умеет робот-официант BellaBot`;
+- pricing and business facts stayed untouched.
+
+Representative pages checked:
+
+```text
+arenda-unitree-g1
+arenda-bellabot
+arenda-glambot
+arenda-unitree-go2
+arenda-mini-robo-kofeyni
+arenda-sketchbot
+```
+
+Machine-readable proof:
+
+```text
+data/design/robot-template-propagation-check.json
+```
+
 Browser DOM proof after the pass:
 
 ```json
@@ -203,7 +232,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Robot content below hero | live-style intro/features/scenarios applied | mobile readable, captured | pass for block-family baseline |
 | Robot gallery | horizontal media rail with 8 meaningful images | scroll rail captured | pass for baseline |
 | Robot CTA strip | dark live-style strip applied | stacked mobile actions | pass for baseline |
-| FAQ / footer | FAQ, Gosha CTA, related robots and footer live-style baseline applied | mobile related cards stacked/readable | pass for robot-template baseline |
+| FAQ / footer | FAQ, Gosha CTA, related robots and footer live-style baseline applied on shared robot template | mobile related cards stacked/readable | propagated across all 24 robot pages |
 
 ## Remaining known differences
 
@@ -237,9 +266,9 @@ curl -sI http://127.0.0.1:4321/
 
 ## Recommended next step
 
-Proceed to the **robot template propagation pass**:
+Proceed to the **schema and internal-linking validation pass**:
 
-1. apply the now-corrected robot page template to the remaining robot pages;
-2. spot-check desktop/mobile for 4–6 representative robot cards, including humanoid and non-humanoid robots;
-3. keep source-of-truth data and pricing boundaries intact;
-4. then move to structured FAQ JSON-LD and related-content/internal-linking validation.
+1. add/verify FAQPage JSON-LD for robot pages using source-of-truth FAQ;
+2. validate related robots and next-step links across all robot pages;
+3. check sitemap/canonical/OG image behavior for the 24 robot detail pages;
+4. then start the collection/article/news template passes.

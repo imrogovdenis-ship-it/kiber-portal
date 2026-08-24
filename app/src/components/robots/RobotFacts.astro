@@ -16,8 +16,26 @@ const scenarios = facts.scenarios?.length
 const introParagraphs = facts.venueRequirements?.length
   ? facts.venueRequirements.slice(0, 2).map((item) => item.text)
   : (robot.venueRequirements ?? []).slice(0, 2);
-const modelName = robot.modelName || robot.name;
-const displayName = robot.modelName ? `робот ${robot.modelName}` : robot.name;
+const normalizeProductName = (value: string) => value
+  .trim()
+  .replace(/^Аренда\s+/i, '')
+  .replace(/^робота-гуманоида/i, 'робот-гуманоид')
+  .replace(/^робота-официанта/i, 'робот-официант')
+  .replace(/^робота-собаки/i, 'робот-собака')
+  .replace(/^робота-художника/i, 'робот-художник')
+  .replace(/^робота-шахматиста/i, 'робот-шахматист')
+  .replace(/^робота-бармена/i, 'робот-бармен')
+  .replace(/^робота-кофейни/i, 'робо-кофейня')
+  .replace(/^робота/i, 'робот')
+  .replace(/^модульного робота/i, 'модульный робот')
+  .replace(/^интерактивной витрины/i, 'интерактивная витрина')
+  .replace(/^мини робо-кофейни/i, 'мини робо-кофейня');
+const capitalizeFirst = (value: string) => value ? value[0].toUpperCase() + value.slice(1) : value;
+const lowerFirst = (value: string) => value ? value[0].toLowerCase() + value.slice(1) : value;
+const pageProductName = capitalizeFirst(normalizeProductName(robot.page.h1));
+const hasPlainModelName = robot.modelName && !/^(робота|мини\s|модульного\s|интерактивной\s|большого\s)/i.test(robot.modelName);
+const modelName = hasPlainModelName ? robot.modelName : pageProductName;
+const displayName = lowerFirst(pageProductName);
 ---
 <section class="section robot-live-intro">
   <div class="container robot-live-text">
