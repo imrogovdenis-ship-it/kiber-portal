@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-24",
+  "status": "passed",
+  "scope": "collection pages: /arenda-robotov-na-meropriyatie, /roboty-gumanoidy",
+  "checks": [
+    "CollectionPage JSON-LD",
+    "BreadcrumbList JSON-LD",
+    "canonical",
+    "og:url",
+    "absolute og:image",
+    "robots meta",
+    "sitemap inclusion",
+    "robot card links",
+    "local fragment CTA targets",
+    "live-style collection template markers"
+  ],
+  "summary": {
+    "collectionPages": 2,
+    "checkedPages": 2,
+    "errors": 0,
+    "warnings": 0
+  },
+  "checked": [
+    {
+      "slug": "arenda-robotov-na-meropriyatie",
+      "canonical": "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "robotLinks": 24,
+      "ogImage": "https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg"
+    },
+    {
+      "slug": "roboty-gumanoidy",
+      "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "robotLinks": 5,
+      "ogImage": "https://www.kiber-portal.ru/images/tild6333-3137-4465-b265-323436646539__06.jpg"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

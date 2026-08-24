@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `robot_schema_internal_linking_pass_applied_needs_collection_template_pass`
+Статус: `collection_template_pass_applied_needs_articles_news_template_pass`
 
 ## Цель прохода
 
@@ -39,6 +39,8 @@ data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-mobile-390.png
 data/design/parity-screenshots/robot-propagation/*.png
 data/design/robot-template-propagation-check.json
 data/seo/robot-schema-internal-linking-check.json
+data/design/parity-screenshots/collection-template/*.png
+data/seo/collection-template-check.json
 ```
 
 ## Applied changes in this pass
@@ -168,6 +170,23 @@ Machine-readable proof:
 data/seo/robot-schema-internal-linking-check.json
 ```
 
+### Collection template pass
+
+Collection routes now share a live-style template baseline:
+
+- `/arenda-robotov-na-meropriyatie` renders a photo/scrim hero, numbered intro block, source-of-truth robot catalog and conversion CTA;
+- `/roboty-gumanoidy` uses the same template with filtered humanoid robot data;
+- collection schema now uses `CollectionPage` with `ItemList`/`ListItem` service entries plus `BreadcrumbList`;
+- added `scripts/validate_collection_pages.py` to validate canonical, `og:url`, absolute `og:image`, robots meta, sitemap inclusion, robot links, fragment CTAs and live-style collection markers;
+- latest validation result: `collectionPages=2`, `checkedPages=2`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/design/parity-screenshots/collection-template/*.png
+data/seo/collection-template-check.json
+```
+
 Browser DOM proof after the pass:
 
 ```json
@@ -250,6 +269,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Robot gallery | horizontal media rail with 8 meaningful images | scroll rail captured | pass for baseline |
 | Robot CTA strip | dark live-style strip applied | stacked mobile actions | pass for baseline |
 | FAQ / footer | FAQ, Gosha CTA, related robots and footer live-style baseline applied on shared robot template | mobile related cards stacked/readable | propagated across all 24 robot pages |
+| Collection pages | photo/scrim hero, numbered intro, robot source-of-truth catalog, CTA strip | mobile hero/cards readable | pass for `/arenda-robotov-na-meropriyatie` and `/roboty-gumanoidy` |
 
 ## Remaining known differences
 
@@ -280,14 +300,18 @@ npm --prefix app run build
 python3 scripts/validate_robot_seo_links.py --root . --json
 → robotPages=24, checkedPages=24, errors=0, warnings=0
 
+python3 scripts/validate_collection_pages.py --root . --json
+→ collectionPages=2, checkedPages=2, errors=0, warnings=0
+
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
 ```
 
 ## Recommended next step
 
-Proceed to the **collection/article/news template passes**:
+Proceed to the **articles / compilations / news template passes**:
 
-1. bring `/roboty-gumanoidy` and `/arenda-robotov-na-meropriyatie` collection pages to the same live-style component quality;
-2. validate their canonical/OG/schema/internal links;
-3. then handle `Блог Кибер Гоши`, `Подборки` and `Новости` templates with source-of-truth content and SEO rules.
+1. bring `Блог Кибер Гоши` article listing and article detail pages to live-style baseline;
+2. bring `Подборки` listing/details to source-of-truth cards and schema;
+3. bring `Новости` listing/details to SEO/news-card structure;
+4. then run a whole-site SEO/link/media validation gate before production launch planning.
