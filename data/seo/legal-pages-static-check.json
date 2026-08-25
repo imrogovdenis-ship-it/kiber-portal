@@ -1,0 +1,72 @@
+{
+  "date": "2026-08-25T06:46:06Z",
+  "status": "passed",
+  "sourceDocuments": [
+    "content-source/pages/privacy-policy.md",
+    "content-source/pages/consent.md",
+    "content-source/pages/cookie-policy.md",
+    "content-source/pages/terms.md"
+  ],
+  "generatedRoutes": [
+    "/consent",
+    "/cookie-policy",
+    "/privacy-policy",
+    "/terms"
+  ],
+  "checks": [
+    "generated route exists",
+    "title",
+    "meta description",
+    "canonical",
+    "robots index/follow",
+    "WebPage/Breadcrumb JSON-LD via rendered schema count",
+    "footer/sidebar internal links via whole-site static validation"
+  ],
+  "summary": {
+    "legalPages": 4,
+    "errors": 0,
+    "warnings": 0
+  },
+  "checked": [
+    {
+      "route": "/consent",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/consent",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 35
+    },
+    {
+      "route": "/cookie-policy",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/cookie-policy",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 33
+    },
+    {
+      "route": "/privacy-policy",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/privacy-policy",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 35
+    },
+    {
+      "route": "/terms",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/terms",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 33
+    }
+  ]
+}

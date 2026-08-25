@@ -1,9 +1,9 @@
 # Visual Parity Report — КИБЕР ПОРТАЛ
 
-Дата обновления: 2026-08-24  
-Источник: `https://www.kiber-portal.ru/`  
-Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `lead_flow_inputs_applied_deferred_integrations_need_ids`
+Дата обновления: 2026-08-25
+Источник: `https://www.kiber-portal.ru/`
+Astro local preview: `http://127.0.0.1:4321/`
+Статус: `legal_pages_added_static_validation_passed_deferred_integrations_need_ids`
 
 ## Цель прохода
 
@@ -46,6 +46,7 @@ data/seo/content-index-template-check.json
 data/design/parity-screenshots/content-detail/*.png
 data/seo/content-detail-template-check.json
 data/seo/whole-site-static-check.json
+data/seo/legal-pages-static-check.json
 docs/launch-readiness-report.md
 data/seo/route-inventory.json
 docs/route-inventory.md
@@ -254,14 +255,16 @@ A whole-site static validation gate now checks every generated Astro `index.html
 
 - added `scripts/validate_whole_site_static.py`;
 - validates title, description, canonical, robots meta, sitemap inclusion, JSON-LD presence for public pages, local image assets, local internal routes and fragment CTA targets;
-- latest validation result: `htmlPages=46`, `publicPages=38`, `previewPages=8`, `checkedPages=46`, `errors=0`, `warnings=0`;
+- latest validation result: `htmlPages=51`, `publicPages=42`, `previewPages=9`, `checkedPages=51`, `errors=0`, `warnings=0`;
 - added `Organization`/`WebSite` schema to home and `ContactPage`/`Organization` schema to contacts;
+- added public legal routes `/privacy-policy`, `/consent`, `/cookie-policy` and `/terms` from existing legal source documents, with WebPage/Breadcrumb JSON-LD and footer/sidebar internal links;
 - recorded production blockers and safe next steps in `docs/launch-readiness-report.md`.
 
 Evidence:
 
 ```text
 data/seo/whole-site-static-check.json
+data/seo/legal-pages-static-check.json
 docs/launch-readiness-report.md
 ```
 
@@ -596,7 +599,8 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Collection pages | photo/scrim hero, numbered intro, robot source-of-truth catalog, CTA strip | mobile hero/cards readable | pass for `/arenda-robotov-na-meropriyatie` and `/roboty-gumanoidy` |
 | Content index pages | live-style heroes and cards for `Блог Кибер Гоши`, `Подборки`, `Новости` | mobile heroes/cards readable | pass for `/articles`, `/compilations`, `/news` |
 | Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
-| Whole-site static validation | 47 generated HTML files checked, including 38 public routes and static 404 | no visual change | errors=0, warnings=0 |
+| Whole-site static validation | 51 generated HTML files checked, including 42 public routes, 9 preview routes and static 404 | no visual change | errors=0, warnings=0 |
+| Legal pages | `/privacy-policy`, `/consent`, `/cookie-policy`, `/terms` generated from existing source documents | mobile article layout stacks through shared template | pass via whole-site validation |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Unified launch QA bundle | 14 local static gates run in one command | no visual change | passed=14, failed=0 |
@@ -625,10 +629,10 @@ python3 scripts/validate_design_tokens.py --root . --json
 → ok=True, errors=0, warnings=0
 
 python3 scripts/validate_public_pages.py --root . --json
-→ ok=True, htmlPages=46, errors=0, warnings=0
+→ ok=True, htmlPages=51, errors=0, warnings=0
 
 npm --prefix app run build
-→ 46 page(s) built, exit 0
+→ 51 page(s) built, exit 0
 
 python3 scripts/validate_robot_seo_links.py --root . --json
 → robotPages=24, checkedPages=24, errors=0, warnings=0
@@ -643,7 +647,7 @@ python3 scripts/validate_content_detail_pages.py --root . --json
 → detailPages=7, checkedPages=7, errors=0, warnings=0
 
 python3 scripts/validate_whole_site_static.py --root . --json
-→ htmlPages=47, publicPages=38, previewPages=9, checkedPages=47, errors=0, warnings=0
+→ htmlPages=51, publicPages=42, previewPages=9, checkedPages=51, errors=0, warnings=0
 
 python3 scripts/audit_rendered_image_alt.py --root . --json
 → publicPagesChecked=38, meaningfulImages=435, errors=0, warnings=0
@@ -669,8 +673,8 @@ curl -sI http://127.0.0.1:4321/
 
 ## Recommended next step
 
-Proceed to **safe launch-readiness preparation without touching production**:
+Proceed to the next safe site-building pass without touching production:
 
-1. generate a route inventory report with page type, schema types, image/link counts and public/noindex status;
-2. improve Contacts visual parity while keeping factual placeholders explicit;
-3. prepare `docs/production-launch-checklist.md` and redirect scaffolding, but do not activate production deployment/DNS/redirects until business inputs are approved.
+1. improve home lower-block parity (`Кибер Гоша`, FAQ/news/footer spacing) against live desktop/mobile evidence;
+2. refresh rendered image/heading/schema/social/CTA audits now that public route count increased to 42;
+3. continue integration prep only after Telegram/form/analytics IDs and approvals are provided.

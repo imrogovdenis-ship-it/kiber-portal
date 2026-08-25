@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T02:32:56.000433+00:00",
+  "date": "2026-08-25T06:46:06Z",
   "status": "passed",
   "scope": "whole-site static output: all generated Astro HTML files, with production blockers focused on public indexable routes",
   "checks": [
@@ -13,11 +13,12 @@
     "internal route existence",
     "fragment CTA targets"
   ],
+  "ok": true,
   "summary": {
-    "htmlPages": 47,
-    "publicPages": 38,
+    "htmlPages": 51,
+    "publicPages": 42,
     "previewPages": 9,
-    "checkedPages": 47,
+    "checkedPages": 51,
     "errors": 0,
     "warnings": 0
   },
@@ -32,7 +33,7 @@
       "robots": "noindex,nofollow",
       "schemaCount": 1,
       "images": 6,
-      "links": 24
+      "links": 28
     },
     {
       "route": "/arenda-agibot-x2",
@@ -42,7 +43,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-bellabot",
@@ -52,7 +53,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-glambot",
@@ -62,7 +63,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 18,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-inchbot-l1-w-edu",
@@ -72,7 +73,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 18,
-      "links": 32
+      "links": 36
     },
     {
       "route": "/arenda-kettybot",
@@ -82,7 +83,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-klipmeiker",
@@ -92,7 +93,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 16,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-mini-robo-kofeyni",
@@ -102,7 +103,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 17,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-noetix-bumi",
@@ -112,7 +113,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-promobot-v4",
@@ -122,7 +123,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 21,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robo-kofeyni",
@@ -132,7 +133,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-roboshashki",
@@ -142,7 +143,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robot-barmen",
@@ -152,7 +153,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robota-ardi",
@@ -162,7 +163,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robota-hudozhnika-a4",
@@ -172,7 +173,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 18,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robota-sofiya",
@@ -182,7 +183,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robota-tron",
@@ -192,7 +193,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 21,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-robotov-na-meropriyatie",
@@ -202,7 +203,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 30,
-      "links": 96
+      "links": 100
     },
     {
       "route": "/arenda-senserobot",
@@ -212,7 +213,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-sketchbot",
@@ -222,7 +223,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 21,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-unitree-g1",
@@ -232,7 +233,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-unitree-go2",
@@ -242,7 +243,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 20,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-unitree-h2",
@@ -252,7 +253,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 17,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-unitree-r1",
@@ -262,7 +263,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-uv-box",
@@ -272,7 +273,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 18,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/arenda-xiaomi-cyberdog-2",
@@ -282,7 +283,7 @@
       "robots": "index,follow",
       "schemaCount": 3,
       "images": 19,
-      "links": 38
+      "links": 42
     },
     {
       "route": "/articles",
@@ -292,7 +293,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 39
+      "links": 43
     },
     {
       "route": "/compilations",
@@ -302,7 +303,17 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 21,
-      "links": 72
+      "links": 76
+    },
+    {
+      "route": "/consent",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/consent",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 35
     },
     {
       "route": "/contacts",
@@ -312,7 +323,17 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 24
+      "links": 28
+    },
+    {
+      "route": "/cookie-policy",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/cookie-policy",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 33
     },
     {
       "route": "/design-review",
@@ -322,7 +343,7 @@
       "robots": "noindex,nofollow",
       "schemaCount": 0,
       "images": 9,
-      "links": 32
+      "links": 36
     },
     {
       "route": "/",
@@ -332,7 +353,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 42,
-      "links": 118
+      "links": 122
     },
     {
       "route": "/neobychnyi-podarok-direktoru-robot",
@@ -342,7 +363,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 7,
-      "links": 27
+      "links": 31
     },
     {
       "route": "/news",
@@ -352,7 +373,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 23
+      "links": 27
     },
     {
       "route": "/news-v2",
@@ -362,7 +383,7 @@
       "robots": "noindex,nofollow",
       "schemaCount": 0,
       "images": 9,
-      "links": 35
+      "links": 39
     },
     {
       "route": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
@@ -372,7 +393,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 27
+      "links": 31
     },
     {
       "route": "/parity/arenda-robotov-na-meropriyatie",
@@ -442,7 +463,17 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 7,
-      "links": 27
+      "links": 31
+    },
+    {
+      "route": "/privacy-policy",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/privacy-policy",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 35
     },
     {
       "route": "/robot-ofitsiant-na-meropriyatii",
@@ -452,7 +483,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 7,
-      "links": 27
+      "links": 31
     },
     {
       "route": "/roboty-gumanoidy",
@@ -462,7 +493,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 11,
-      "links": 39
+      "links": 43
     },
     {
       "route": "/sravnenie-unitree-g1-r1-h2",
@@ -472,7 +503,17 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 27
+      "links": 31
+    },
+    {
+      "route": "/terms",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/terms",
+      "robots": "index,follow",
+      "schemaCount": 2,
+      "images": 6,
+      "links": 33
     },
     {
       "route": "/unitree-g1-ili-agibot-x2",
@@ -482,7 +523,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 27
+      "links": 31
     },
     {
       "route": "/velkom-zona-na-svadbe-robot",
@@ -492,7 +533,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 27
+      "links": 31
     }
   ]
 }

@@ -1,7 +1,7 @@
 # KIBER PORTAL — launch-readiness report
 
-Дата: 2026-08-24  
-Статус: `static_validation_passed_needs_business_launch_inputs`
+Дата: 2026-08-25
+Статус: `legal_pages_added_static_validation_passed_needs_business_launch_inputs`
 
 ## Проверено автоматически
 
@@ -12,10 +12,10 @@ python3 scripts/validate_design_tokens.py --root . --json
 → errors=0, warnings=0
 
 python3 scripts/validate_public_pages.py --root . --json
-→ htmlPages=46, errors=0, warnings=0
+→ htmlPages=51, errors=0, warnings=0
 
 npm --prefix app run build
-→ 46 page(s) built
+→ 51 page(s) built
 
 python3 scripts/validate_robot_seo_links.py --root . --json
 → robotPages=24, checkedPages=24, errors=0, warnings=0
@@ -30,7 +30,7 @@ python3 scripts/validate_content_detail_pages.py --root . --json
 → detailPages=7, checkedPages=7, errors=0, warnings=0
 
 python3 scripts/validate_whole_site_static.py --root . --json
-→ htmlPages=47, publicPages=38, previewPages=9, checkedPages=47, errors=0, warnings=0
+→ htmlPages=51, publicPages=42, previewPages=9, checkedPages=51, errors=0, warnings=0
 ```
 
 Machine-readable artifacts:
@@ -41,6 +41,7 @@ data/seo/collection-template-check.json
 data/seo/content-index-template-check.json
 data/seo/content-detail-template-check.json
 data/seo/whole-site-static-check.json
+data/seo/legal-pages-static-check.json
 data/seo/route-inventory.json
 docs/route-inventory.md
 docs/production-launch-checklist.md
@@ -70,9 +71,10 @@ docs/lead-flow-integration-plan.md
 - Home, robot cards, robot detail pages, collection pages, content index pages and article detail pages have live-style baselines.
 - 24 robot pages have `Service`, `BreadcrumbList` and `FAQPage` JSON-LD where FAQ exists.
 - Collection/content pages have dedicated schema and validation gates.
-- Static validation covers all 47 generated HTML pages, including 38 public indexable pages and 9 preview/noindex pages.
+- Static validation covers all 51 generated HTML pages, including 42 public indexable pages and 9 preview/noindex pages.
 - Public local images, local links, canonical URLs, robots meta, sitemap inclusion and fragment anchors pass automated checks.
-- Route inventory generated for 47 routes: 38 public indexable and 9 preview/noindex, including the static 404 page.
+- Legal pages `/privacy-policy`, `/consent`, `/cookie-policy` and `/terms` are generated from existing `content-source/pages/*.md` legal documents, with cleaned navigation/footer extraction noise, WebPage/Breadcrumb JSON-LD and internal links from footer/legal sidebar.
+- Route inventory generated for 51 routes: 42 public indexable and 9 preview/noindex, including the static 404 page and 4 legal routes.
 - Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
 - Production launch checklist and redirect scaffold are prepared but not activated.
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.

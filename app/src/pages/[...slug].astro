@@ -45,12 +45,32 @@ const h1 = entry.data.h1 || title;
 const images = entry.data.images || [];
 const mainImage = images.find((img) => img.alt && /jpg|jpeg|png|webp|svg/i.test(img.src));
 const heroImage = mainImage?.src?.startsWith('/') ? mainImage.src : mainImage?.src ? `/${mainImage.src}` : '/images/kiber-gosha-yoga-red-ushanka.jpg';
-const pageLabel = kind === 'blog' ? 'Блог Кибер Гоши' : 'Материал';
+const pageType = entry.data.pageType || '';
+const isLegalPage = pageType === 'legal';
+const pageLabel = kind === 'blog' ? 'Блог Кибер Гоши' : isLegalPage ? 'Юридическая информация' : 'Материал';
+const schemaType = kind === 'blog' ? 'BlogPosting' : isLegalPage ? 'WebPage' : 'Article';
+const breadcrumbSectionName = kind === 'blog' ? 'Блог Кибер Гоши' : isLegalPage ? 'Юридические документы' : 'Страницы';
+const breadcrumbSectionUrl = kind === 'blog' ? '/articles' : '/';
+const asideLinks = isLegalPage
+  ? [
+      ['Политика персональных данных', '/privacy-policy'],
+      ['Согласие на обработку данных', '/consent'],
+      ['Политика cookie', '/cookie-policy'],
+      ['Пользовательское соглашение', '/terms'],
+      ['Контакты', '/contacts'],
+    ]
+  : [
+      ['Блог Кибер Гоши', '/articles'],
+      ['Подборки', '/compilations'],
+      ['Гуманоиды', '/roboty-gumanoidy'],
+      ['Обсудить задачу', '#social'],
+    ];
 const jsonLd = robot ? undefined : [
   {
     '@context': 'https://schema.org',
-    '@type': kind === 'blog' ? 'BlogPosting' : 'Article',
+    '@type': schemaType,
     headline: h1,
+    name: h1,
     description,
     url: entry.data.sourceUrl,
     image: heroImage,
@@ -62,7 +82,7 @@ const jsonLd = robot ? undefined : [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Главная', item: '/' },
-      { '@type': 'ListItem', position: 2, name: kind === 'blog' ? 'Блог Кибер Гоши' : 'Страницы', item: kind === 'blog' ? '/articles' : '/' },
+      { '@type': 'ListItem', position: 2, name: breadcrumbSectionName, item: breadcrumbSectionUrl },
       { '@type': 'ListItem', position: 3, name: h1, item: entry.data.sourceUrl },
     ],
   },
@@ -91,12 +111,9 @@ const jsonLd = robot ? undefined : [
             {Content && <Content />}
           </article>
           <aside class="article-live__aside">
-            <strong>Следующий шаг</strong>
-            <a href="/articles">Блог Кибер Гоши</a>
-            <a href="/compilations">Подборки</a>
-            <a href="/roboty-gumanoidy">Гуманоиды</a>
-            <a href="#social">Обсудить задачу</a>
-            <p>Материал связан с данными сайта в GitHub и коммерческими страницами КИБЕР ПОРТАЛА.</p>
+            <strong>{isLegalPage ? 'Юридические документы' : 'Следующий шаг'}</strong>
+            {asideLinks.map(([label, href]) => <a href={href}>{label}</a>)}
+            <p>{isLegalPage ? 'Текст перенесён из юридических страниц в данных сайта в GitHub. Перед production-публикацией реквизиты и контакты можно финально подтвердить.' : 'Материал связан с данными сайта в GitHub и коммерческими страницами КИБЕР ПОРТАЛА.'}</p>
           </aside>
         </div>
       </section>
