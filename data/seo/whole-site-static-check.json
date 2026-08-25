@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T08:02:14.392983+00:00",
+  "date": "2026-08-25T08:20:15.340577+00:00",
   "status": "passed",
   "scope": "whole-site static output: all generated Astro HTML files, with production blockers focused on public indexable routes",
   "checks": [
@@ -322,7 +322,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 28
+      "links": 31
     },
     {
       "route": "/cookie-policy",

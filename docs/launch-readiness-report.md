@@ -75,13 +75,13 @@ docs/lead-flow-integration-plan.md
 - Public local images, local links, canonical URLs, robots meta, sitemap inclusion and fragment anchors pass automated checks.
 - Legal pages `/privacy-policy`, `/consent`, `/cookie-policy` and `/terms` are generated from existing `content-source/pages/*.md` legal documents, with cleaned navigation/footer extraction noise, WebPage/Breadcrumb JSON-LD and internal links from footer/legal sidebar.
 - Route inventory generated for 51 routes: 42 public indexable and 9 preview/noindex, including the static 404 page and 4 legal routes.
-- Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
+- Contacts page has a live-style quick-contact hero, legal fact cards and explicit business-fact/integration blockers.
 - Production launch checklist and redirect scaffold are prepared but not activated.
 - Rendered image alt audit covers 42 public pages and 440 meaningful images with errors=0, warnings=0.
 - Rendered heading hierarchy audit covers 42 public pages and 779 headings with errors=0, warnings=0.
 - Rendered schema audit covers 42 public pages with errors=0, warnings=0 and validates JSON-LD type coverage, including homepage `FAQPage` and 4 legal `WebPage` routes.
 - Rendered social metadata audit covers 42 public pages with errors=0, warnings=0 and validates OG/Twitter coverage.
-- Rendered CTA/lead-flow audit covers 42 public pages and 724 CTA links with errors=0, warnings=0.
+- Rendered CTA/lead-flow audit covers 42 public pages and 726 CTA links with errors=0, warnings=0.
 - Header/footer/contact phone links use `tel:+79774790749`; contact popup includes messenger buttons and a deferred lead form with name, phone and optional email.
 - Lead-flow/Yandex/amoCRM integration plan is prepared in `docs/lead-flow-integration-plan.md`; real IDs/accesses are deferred.
 - Unified launch QA bundle runs 14 gates and currently passes 14/14 with failed=0.
@@ -123,5 +123,5 @@ These are not code blockers for the static build, but they should be resolved be
 If no new business inputs are available, continue with safe technical work:
 
 1. Continue improving home/catalog visual parity by fixing missing catalog card imagery and spacing against live desktop/mobile screenshots.
-2. Improve Contacts page visual parity while keeping factual placeholders clearly marked.
+2. Continue visual QA on mobile screenshots for home/catalog/contacts and fix only visible template issues.
 3. Add only business-approved lead/analytics IDs when Alexander provides them; do not touch production infrastructure without approval.

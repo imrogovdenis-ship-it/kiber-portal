@@ -516,7 +516,7 @@ Rendered public pages now have a CTA/link-flow gate:
 - legal contact facts were applied to `/contacts` from `content-source/pages/privacy-policy.md` and `content-source/pages/terms.md`;
 - header/footer/contact phone links now use real `tel:+79774790749` href;
 - contact popup now includes name/phone/email fields with disabled submit until Telegram/amoCRM destinations are provided;
-- latest validation result: `publicPagesChecked=42`, `ctaLinks=724`, `errors=0`, `warnings=0`.
+- latest validation result: `publicPagesChecked=42`, `ctaLinks=726`, `errors=0`, `warnings=0`.
 
 Evidence:
 
@@ -618,7 +618,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Unified launch QA bundle | 14 local static gates run in one command | no visual change | passed=14, failed=0 |
 | Rendered schema audit | JSON-LD coverage on 42 public pages, including home FAQPage and legal WebPage routes | no visual change | errors=0, warnings=0 |
 | Rendered social metadata audit | OG/Twitter coverage on 42 public pages | homepage social image remains explicit | errors=0, warnings=0 |
-| Rendered CTA flow audit | 724 CTA/link-flow entries across 42 public pages | masked messenger href filtered | errors=0, warnings=0 |
+| Rendered CTA flow audit | 726 CTA/link-flow entries across 42 public pages | masked messenger href filtered | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -674,7 +674,7 @@ python3 scripts/audit_rendered_social_metadata.py --root . --json
 → publicPagesChecked=42, errors=0, warnings=0
 
 python3 scripts/audit_rendered_cta_flow.py --root . --json
-→ publicPagesChecked=42, ctaLinks=724, errors=0, warnings=0
+→ publicPagesChecked=42, ctaLinks=726, errors=0, warnings=0
 
 python3 scripts/run_launch_qa.py
 → status=passed, steps=14, passed=14, failed=0

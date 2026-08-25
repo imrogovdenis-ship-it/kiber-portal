@@ -33,7 +33,7 @@
 | `/velkom-zona-na-svadbe-robot` | article/detail | `index,follow` | 2 | 6 | 31 |
 | `/arenda-robotov-na-meropriyatie` | collection | `index,follow` | 2 | 30 | 100 |
 | `/roboty-gumanoidy` | collection | `index,follow` | 2 | 11 | 43 |
-| `/contacts` | contacts | `index,follow` | 2 | 6 | 28 |
+| `/contacts` | contacts | `index,follow` | 2 | 6 | 31 |
 | `/articles` | content index | `index,follow` | 2 | 6 | 43 |
 | `/compilations` | content index | `index,follow` | 2 | 21 | 76 |
 | `/news` | content index | `index,follow` | 2 | 6 | 27 |

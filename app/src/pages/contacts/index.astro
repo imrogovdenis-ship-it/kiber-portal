@@ -14,6 +14,11 @@ const integrationPlan = [
   ['Форма заявки', 'Поля: имя, телефон, email необязательно.', 'Отправка в Telegram-чат и дубль в amoCRM спроектированы, но не активированы без доступов.'],
   ['Аналитика', 'Планируются Яндекс.Метрика, Яндекс.Вебмастер и цели по CTA/формам.', 'Конкретные ID и доступы будут добавлены позже.'],
 ];
+const contactChannels = [
+  ['Телефон', '+7 977 479 07 49', 'tel:+79774790749', 'Позвонить'],
+  ['Заявка', 'Подбор робота под дату и формат', '#social', 'Написать нам'],
+  ['Каталог', '24 робота с доставкой и оператором', '/#catalog', 'Смотреть каталог'],
+];
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -37,22 +42,33 @@ const jsonLd = [
 ---
 <BaseLayout title="Контакты | КИБЕР ПОРТАЛ" description="Контакты КИБЕР ПОРТАЛА: телефон, реквизиты оператора и каналы для заявки на аренду роботов." sourceUrl="/contacts" ogImage="/images/kiber-gosha-yoga-red-ushanka.jpg" jsonLd={jsonLd}>
   <main>
-    <section class="content-live-hero contacts-live-hero">
-      <div class="container content-live-hero__inner">
-        <span>КОНТАКТЫ</span>
-        <h1>Связаться с КИБЕР ПОРТАЛОМ</h1>
-        <p>Подберём робота под мероприятие, проверим сценарий и подготовим предложение. В шапке и в блоках связи показываем телефон, а в попапе — мессенджеры и форму заявки.</p>
-        <div class="hero-actions">
-          <CtaLink href="#social" event="contacts_write_click" source="contacts_hero" pageType="contacts" placement="hero">Написать нам</CtaLink>
-          <CtaLink class="btn btn-secondary" href="tel:+79774790749" event="contacts_call_click" source="contacts_hero" pageType="contacts" placement="hero">Позвонить</CtaLink>
+    <section class="content-live-hero contacts-live-hero contacts-live-hero--dark">
+      <div class="container content-live-hero__inner contacts-live-hero__inner">
+        <div class="contacts-live-hero__copy">
+          <span>КОНТАКТЫ</span>
+          <h1>Связаться с КИБЕР ПОРТАЛОМ</h1>
+          <p>Подберём робота под мероприятие, проверим сценарий, рассчитаем доставку и подготовим предложение. Быстрее всего — написать в мессенджер или позвонить.</p>
+          <div class="hero-actions">
+            <CtaLink href="#social" event="contacts_write_click" source="contacts_hero" pageType="contacts" placement="hero">Написать нам</CtaLink>
+            <CtaLink class="btn btn-secondary" href="tel:+79774790749" event="contacts_call_click" source="contacts_hero" pageType="contacts" placement="hero">Позвонить</CtaLink>
+          </div>
         </div>
+        <aside class="contacts-live-quick" aria-label="Быстрые способы связи">
+          {contactChannels.map(([label, value, href, action]) => (
+            <a class="contacts-live-quick__item" href={href}>
+              <span>{label}</span>
+              <strong>{value}</strong>
+              <em>{action}</em>
+            </a>
+          ))}
+        </aside>
       </div>
     </section>
     <section class="section content-live-section" id="contact-details">
       <div class="container">
         <span class="content-live-eyebrow">01 — РЕКВИЗИТЫ И КОНТАКТЫ</span>
         <h2>Данные из юридических документов сайта</h2>
-        <p class="content-live-lead">Реквизиты взяты из raw extraction юридических страниц: `content-source/pages/privacy-policy.md` и `content-source/pages/terms.md`. Спорные или устаревшие значения отдельно отмечены как требующие финального подтверждения.</p>
+        <p class="content-live-lead">Реквизиты взяты из опубликованных юридических страниц и показываются как справочный блок перед production. Спорные или устаревшие значения отдельно отмечены как требующие финального подтверждения.</p>
         <div class="content-live-grid contacts-live-grid">
           {legalFacts.map(([label, value, note]) => (
             <article class="content-live-card">

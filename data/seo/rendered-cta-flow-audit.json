@@ -2,10 +2,10 @@
   "ok": true,
   "summary": {
     "publicPagesChecked": 42,
-    "ctaLinks": 724,
+    "ctaLinks": 726,
     "hrefTypes": {
-      "internal": 346,
-      "same-page-anchor": 251,
+      "internal": 347,
+      "same-page-anchor": 252,
       "approved-external": 127
     },
     "errors": 0,
@@ -382,7 +382,7 @@
         "contact-modal-title",
         "social"
       ],
-      "ctaCount": 12,
+      "ctaCount": 14,
       "analyticsCtaCount": 7
     },
     {
@@ -5318,6 +5318,18 @@
       "dataAnalyticsSource": "contacts_hero",
       "dataPageType": "contacts",
       "dataPlacement": "hero"
+    },
+    {
+      "route": "/contacts",
+      "label": "ЗаявкаПодбор робота под дату и форматНаписать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor"
+    },
+    {
+      "route": "/contacts",
+      "label": "Каталог24 робота с доставкой и операторомСмотреть каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
     },
     {
       "route": "/contacts",

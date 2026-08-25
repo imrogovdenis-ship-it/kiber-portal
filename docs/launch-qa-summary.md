@@ -1,6 +1,6 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T08:02:17.303562+00:00
+Дата: 2026-08-25T08:20:18.675664+00:00
 Статус: `passed`
 
 ## Summary
@@ -25,7 +25,7 @@
 | `rendered_headings` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0, "headings": 779}` |
 | `rendered_schema` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0, "schemaTypes": {"BreadcrumbList": 40, "FAQPage": 25, "Service": 24, "CollectionPage": 4, "Blog": 1, "WebPage": 4, "ContactPage": 1, "Organization": 2, "WebSite": 1, "BlogPosting": 7}, "pageTypes": {"robot detail": 24, "collection/content index": 5, "public other": 4, "contacts": 1, "home": 1, "article/detail": 7}}` |
 | `rendered_social_metadata` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0}` |
-| `rendered_cta_flow` | pass | `{"publicPagesChecked": 42, "ctaLinks": 724, "hrefTypes": {"internal": 346, "same-page-anchor": 251, "approved-external": 127}, "errors": 0, "warnings": 0}` |
+| `rendered_cta_flow` | pass | `{"publicPagesChecked": 42, "ctaLinks": 726, "hrefTypes": {"internal": 347, "same-page-anchor": 252, "approved-external": 127}, "errors": 0, "warnings": 0}` |
 | `route_inventory` | pass | `{"routes": 51, "publicRoutes": 42, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "legal": 4, "contacts": 1, "home": 1, "article/detail": 7}}` |
 
 ## Artifact

@@ -17,7 +17,7 @@ python3 scripts/audit_rendered_cta_flow.py --root . --json
 
 ```text
 publicPagesChecked=42
-ctaLinks=724
+ctaLinks=726
 errors=0
 warnings=0
 ```
@@ -25,8 +25,8 @@ warnings=0
 CTA href types:
 
 ```text
-internal=346
-same-page-anchor=251
+internal=347
+same-page-anchor=252
 approved-external=127
 ```
 
