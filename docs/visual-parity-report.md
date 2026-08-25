@@ -53,6 +53,9 @@ docs/route-inventory.md
 docs/production-launch-checklist.md
 data/seo/redirects.scaffold.json
 data/design/parity-screenshots/launch-prep/*.png
+data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390-after-grid-fix.png
+data/design/parity-screenshots/mobile-qa-2026-08-25/contacts-mobile-390-after-grid-fix.png
+data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
@@ -298,6 +301,9 @@ docs/route-inventory.md
 docs/production-launch-checklist.md
 data/seo/redirects.scaffold.json
 data/design/parity-screenshots/launch-prep/*.png
+data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390-after-grid-fix.png
+data/design/parity-screenshots/mobile-qa-2026-08-25/contacts-mobile-390-after-grid-fix.png
+data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
@@ -683,10 +689,22 @@ curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
 ```
 
+
+### Mobile home/catalog QA pass
+
+A focused 390px mobile QA pass caught a real regression in the shared `.robot-card-grid`: a later live-style desktop override forced four catalog columns after the earlier mobile rules, making home catalog cards unreadable on small screens. The override is now corrected inside the later `max-width: 820px` block:
+
+- home catalog cards stack as single-column mobile cards;
+- card titles/prices/descriptions use readable mobile sizes;
+- Contacts mobile hero and quick-contact cards were rechecked after the shared CSS change;
+- screenshots are stored under `data/design/parity-screenshots/mobile-qa-2026-08-25/`.
+
+Note: full-page CLI screenshots can show below-fold lazy images as pale placeholders until the browser scrolls them into view; this was treated separately from the real grid layout issue.
+
 ## Recommended next step
 
 Proceed to the next safe site-building pass without touching production:
 
-1. run a focused catalog-card image asset pass for the home catalog blank image wells;
-2. improve Contacts page visual parity while keeping placeholders factual;
+1. continue mobile/detail-page visual QA on representative robot and content routes;
+2. review lazy-loaded below-fold media behaviour separately from real missing assets;
 3. continue integration prep only after Telegram/form/analytics IDs and approvals are provided.

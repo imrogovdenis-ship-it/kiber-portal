@@ -1242,6 +1242,23 @@ nav a, .site-footer a {
     min-width: 134px;
     padding: 14px 20px;
   }
+  .robot-card-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+  .robot-card__title,
+  .robot-card h3 {
+    font-size: 24px;
+    line-height: 1.12;
+  }
+  .robot-card__price {
+    font-size: 15px;
+  }
+  .robot-card__description,
+  .robot-card p {
+    font-size: 16px;
+    line-height: 1.45;
+  }
   .robot-hero--live {
     min-height: 590px;
     padding: 74px 18px 64px;
