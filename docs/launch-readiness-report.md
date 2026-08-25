@@ -90,6 +90,7 @@ docs/lead-flow-integration-plan.md
 - Production readiness decision matrix is prepared in `data/seo/production-readiness-matrix.json` and `docs/production-readiness-matrix.md`.
 - Content-index UI labels are now covered by the `content_index_pages` QA gate so raw slugs/file paths/extraction labels cannot reappear in public card chrome.
 - Production-readiness matrix is now validated inside the launch QA bundle; it must stay conservative and evidence-backed before any production discussion.
+- Production dry-run/checklist docs are now validated inside the launch QA bundle so stale QA counts or unsafe deployment wording are caught before launch discussion.
 
 ## Production blockers / inputs needed before launch
 

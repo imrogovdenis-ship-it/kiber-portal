@@ -88,6 +88,11 @@ STEPS = [
         "command": ["python3", "scripts/validate_production_readiness_matrix.py", "--root", ".", "--json"],
         "json": True,
     },
+    {
+        "id": "production_dry_run_docs",
+        "command": ["python3", "scripts/validate_production_dry_run_docs.py", "--root", ".", "--json"],
+        "json": True,
+    },
 ]
 
 

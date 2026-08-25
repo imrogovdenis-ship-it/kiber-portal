@@ -90,12 +90,12 @@ Required result:
 
 ```text
 status=passed
-steps=11
-passed=11
+steps=16
+passed=16
 failed=0
 ```
 
-The gate writes:
+The gate includes the production-readiness matrix guard and writes:
 
 ```text
 data/seo/launch-qa-summary.json
@@ -119,8 +119,8 @@ Expected output directory:
 The latest local QA currently expects:
 
 ```text
-47 generated HTML files
-38 public indexable routes
+51 generated HTML files
+42 public indexable routes
 9 preview/noindex/system routes
 ```
 
