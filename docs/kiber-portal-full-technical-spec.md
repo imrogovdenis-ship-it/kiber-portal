@@ -530,18 +530,7 @@ PDF может быть закрыт от индексации или генер
 
 ### 7.2. Базовые визуальные принципы
 
-Зафиксированные ориентиры:
-
-- CTA resting color: `#0088FF`;
-- deep/hover/gradient: `#005EFF`;
-- основной canvas: `#F4F8FF`;
-- hero: фото + graphite scrim, не generic SaaS gradient;
-- live font direction: Gillroy/Arial sans-serif;
-- secondary font: Montserrat для meta/footer/prices;
-- base radius карточек/медиа: 18px;
-- product panels могут иметь больший radius;
-- не использовать тяжёлые generic shadows;
-- catalog robot tiles — отдельные square product images, не hero/gallery photos по умолчанию.
+Нужно сделать анализ уже существующего сайта, что бы сформировать базовые визуальные принципы.
 
 ### 7.3. Responsive
 
