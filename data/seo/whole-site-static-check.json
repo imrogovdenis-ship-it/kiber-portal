@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T06:46:06Z",
+  "date": "2026-08-25T08:02:14.392983+00:00",
   "status": "passed",
   "scope": "whole-site static output: all generated Astro HTML files, with production blockers focused on public indexable routes",
   "checks": [
@@ -13,7 +13,6 @@
     "internal route existence",
     "fragment CTA targets"
   ],
-  "ok": true,
   "summary": {
     "htmlPages": 51,
     "publicPages": 42,
@@ -351,9 +350,9 @@
       "description": true,
       "canonical": "https://www.kiber-portal.ru",
       "robots": "index,follow",
-      "schemaCount": 2,
-      "images": 42,
-      "links": 122
+      "schemaCount": 3,
+      "images": 43,
+      "links": 124
     },
     {
       "route": "/neobychnyi-podarok-direktoru-robot",

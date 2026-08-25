@@ -1,30 +1,12 @@
 {
-  "date": "2026-08-25",
-  "status": "passed",
-  "scope": "rendered public/indexable Astro HTML pages only; preview/noindex/system routes excluded",
-  "checks": [
-    "CTA visible labels",
-    "no placeholder CTA hrefs",
-    "no masked/broken hrefs",
-    "same-page anchor targets exist",
-    "internal route targets exist",
-    "internal fragments exist",
-    "review unapproved external links",
-    "target=_blank uses noopener",
-    "each public page has analytics CTA coverage"
-  ],
-  "safeFixesApplied": [
-    "Header/footer/contact phone hrefs use tel:+79774790749.",
-    "Messenger buttons with masked href values render as disabled pending buttons until real destination is approved.",
-    "Contact popup form fields are rendered while actual Telegram/amoCRM submission remains disabled until credentials/destinations are provided."
-  ],
+  "ok": true,
   "summary": {
-    "publicPagesChecked": 38,
-    "ctaLinks": 678,
+    "publicPagesChecked": 42,
+    "ctaLinks": 724,
     "hrefTypes": {
-      "internal": 330,
-      "same-page-anchor": 233,
-      "approved-external": 115
+      "internal": 346,
+      "same-page-anchor": 251,
+      "approved-external": 127
     },
     "errors": 0,
     "warnings": 0
@@ -382,6 +364,17 @@
       "analyticsCtaCount": 21
     },
     {
+      "route": "/consent",
+      "ids": [
+        "article-body",
+        "contact",
+        "contact-modal-title",
+        "social"
+      ],
+      "ctaCount": 11,
+      "analyticsCtaCount": 6
+    },
+    {
       "route": "/contacts",
       "ids": [
         "contact",
@@ -393,15 +386,32 @@
       "analyticsCtaCount": 7
     },
     {
+      "route": "/cookie-policy",
+      "ids": [
+        "1-общие-положения",
+        "2-какие-cookie-использует-сайт",
+        "3-согласие-на-использование-cookie",
+        "4-как-отключить-cookie-в-браузере",
+        "5-изменения-политики",
+        "article-body",
+        "contact",
+        "contact-modal-title",
+        "social"
+      ],
+      "ctaCount": 11,
+      "analyticsCtaCount": 6
+    },
+    {
       "route": "/",
       "ids": [
         "catalog",
         "contact",
         "contact-modal-title",
+        "faq",
         "social"
       ],
-      "ctaCount": 36,
-      "analyticsCtaCount": 28
+      "ctaCount": 38,
+      "analyticsCtaCount": 30
     },
     {
       "route": "/neobychnyi-podarok-direktoru-robot",
@@ -448,6 +458,35 @@
       "analyticsCtaCount": 6
     },
     {
+      "route": "/privacy-policy",
+      "ids": [
+        "1-общие-положения",
+        "10-использование-файлов-cookie",
+        "11-заключительные-положения",
+        "111-настоящая-политика-действует-бессрочно-до-замены-её-новой-редакцией",
+        "112-оператор-вправе-вносить-изменения-в-политику-без-предварительного-уведомления-пользователей-путём-размещения-новой-редакции-на-сайте",
+        "113-контроль-за-исполнением-требований-настоящей-политики-осуществляется-оператором",
+        "2-термины-и-определения",
+        "21-персональные-данные--любая-информация-относящаяся-прямо-или-косвенно-к-определённому-или-определяемому-физическому-лицу-субъекту-персональных-данных",
+        "24-пользователь--физическое-лицо-посещающее-сайт-и-или-оставляющее-свои-данные-через-формы-сайта",
+        "3-правовые-основания-обработки-персональных-данных",
+        "4-категории-субъектов-и-перечень-обрабатываемых-персональных-данных",
+        "41-через-формы-сайта-заявка-на-аренду-обратный-звонок-оператор-собирает-имя-номер-телефона-адрес-электронной-почты",
+        "44-оператор-не-осуществляет-обработку-персональных-данных-в-целях-рекламных-и-информационных-рассылок--рассылки-оператором-не-производятся",
+        "5-цели-обработки-персональных-данных",
+        "6-порядок-и-условия-обработки-персональных-данных",
+        "7-меры-по-обеспечению-безопасности-персональных-данных",
+        "8-сроки-обработки-и-хранения-персональных-данных",
+        "9-права-субъекта-персональных-данных",
+        "article-body",
+        "contact",
+        "contact-modal-title",
+        "social"
+      ],
+      "ctaCount": 11,
+      "analyticsCtaCount": 6
+    },
+    {
       "route": "/robot-ofitsiant-na-meropriyatii",
       "ids": [
         "article-body",
@@ -478,6 +517,27 @@
         "social"
       ],
       "ctaCount": 13,
+      "analyticsCtaCount": 6
+    },
+    {
+      "route": "/terms",
+      "ids": [
+        "1-общие-положения",
+        "12-начиная-использовать-сайт-пользователь-считается-принявшим-условия-настоящего-соглашения-в-полном-объёме-без-каких-либо-оговорок-и-исключений",
+        "2-предмет-соглашения",
+        "3-права-и-обязанности-сторон",
+        "33-администрация-сайта-вправе-изменять-содержание-дизайн-и-функциональность-сайта-без-предварительного-уведомления-пользователя",
+        "4-интеллектуальная-собственность",
+        "5-ограничение-ответственности",
+        "6-разрешение-споров",
+        "7-заключительные-положения",
+        "72-настоящее-соглашение-регулируется-и-толкуется-в-соответствии-с-законодательством-российской-федерации",
+        "article-body",
+        "contact",
+        "contact-modal-title",
+        "social"
+      ],
+      "ctaCount": 11,
       "analyticsCtaCount": 6
     },
     {
@@ -5134,6 +5194,90 @@
       "hrefType": "same-page-anchor"
     },
     {
+      "route": "/consent",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/consent",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/consent",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "header_contact_click",
+      "dataAnalyticsSource": "site_header",
+      "dataPageType": "global",
+      "dataPlacement": "header"
+    },
+    {
+      "route": "/consent",
+      "label": "Читать материал",
+      "href": "#article-body",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_read_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/consent",
+      "label": "Задать вопрос",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_question_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/consent",
+      "label": "Max",
+      "href": "https://max.ru/u/f9LHodD0cOLv3Q0FQ05MEZnWRMMmFJMlsETCRdtFj5jzou9gJMKMsavyqoE",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/consent",
+      "label": "WhatsApp",
+      "href": "https://wa.me/79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20kiber-portal.ru",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/consent",
+      "label": "Telegram",
+      "href": "https://t.me/+79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%22%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%20%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB%22",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/consent",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/consent",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/consent",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor"
+    },
+    {
       "route": "/contacts",
       "label": "Каталог",
       "href": "/#catalog",
@@ -5223,6 +5367,90 @@
     },
     {
       "route": "/contacts",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "header_contact_click",
+      "dataAnalyticsSource": "site_header",
+      "dataPageType": "global",
+      "dataPlacement": "header"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Читать материал",
+      "href": "#article-body",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_read_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Задать вопрос",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_question_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Max",
+      "href": "https://max.ru/u/f9LHodD0cOLv3Q0FQ05MEZnWRMMmFJMlsETCRdtFj5jzou9gJMKMsavyqoE",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "WhatsApp",
+      "href": "https://wa.me/79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20kiber-portal.ru",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Telegram",
+      "href": "https://t.me/+79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%22%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%20%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB%22",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/cookie-policy",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/cookie-policy",
       "label": "Написать нам",
       "href": "#social",
       "hrefType": "same-page-anchor"
@@ -5530,6 +5758,26 @@
       "dataPageType": "collection",
       "dataPlacement": "card",
       "dataRobotSlug": "arenda-uv-box"
+    },
+    {
+      "route": "/",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "home_final_cta_click",
+      "dataAnalyticsSource": "home_final_cta",
+      "dataPageType": "home",
+      "dataPlacement": "home_faq"
+    },
+    {
+      "route": "/",
+      "label": "К каталогу роботов",
+      "href": "#catalog",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "home_final_catalog_click",
+      "dataAnalyticsSource": "home_final_cta",
+      "dataPageType": "home",
+      "dataPlacement": "home_faq"
     },
     {
       "route": "/",
@@ -5946,6 +6194,90 @@
       "hrefType": "same-page-anchor"
     },
     {
+      "route": "/privacy-policy",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "header_contact_click",
+      "dataAnalyticsSource": "site_header",
+      "dataPageType": "global",
+      "dataPlacement": "header"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Читать материал",
+      "href": "#article-body",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_read_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Задать вопрос",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_question_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Max",
+      "href": "https://max.ru/u/f9LHodD0cOLv3Q0FQ05MEZnWRMMmFJMlsETCRdtFj5jzou9gJMKMsavyqoE",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "WhatsApp",
+      "href": "https://wa.me/79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20kiber-portal.ru",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Telegram",
+      "href": "https://t.me/+79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%22%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%20%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB%22",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/privacy-policy",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor"
+    },
+    {
       "route": "/robot-ofitsiant-na-meropriyatii",
       "label": "Каталог",
       "href": "/#catalog",
@@ -6282,6 +6614,90 @@
     },
     {
       "route": "/sravnenie-unitree-g1-r1-h2",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor"
+    },
+    {
+      "route": "/terms",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/terms",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/terms",
+      "label": "Написать нам",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "header_contact_click",
+      "dataAnalyticsSource": "site_header",
+      "dataPageType": "global",
+      "dataPlacement": "header"
+    },
+    {
+      "route": "/terms",
+      "label": "Читать материал",
+      "href": "#article-body",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_read_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/terms",
+      "label": "Задать вопрос",
+      "href": "#social",
+      "hrefType": "same-page-anchor",
+      "dataAnalyticsEvent": "article_question_click",
+      "dataAnalyticsSource": "article_hero",
+      "dataPageType": "article",
+      "dataPlacement": "hero"
+    },
+    {
+      "route": "/terms",
+      "label": "Max",
+      "href": "https://max.ru/u/f9LHodD0cOLv3Q0FQ05MEZnWRMMmFJMlsETCRdtFj5jzou9gJMKMsavyqoE",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/terms",
+      "label": "WhatsApp",
+      "href": "https://wa.me/79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20kiber-portal.ru",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/terms",
+      "label": "Telegram",
+      "href": "https://t.me/+79774790749?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%22%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%20%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB%22",
+      "hrefType": "approved-external",
+      "dataAnalyticsEvent": "messenger_click",
+      "dataAnalyticsSource": "contact_messenger_modal"
+    },
+    {
+      "route": "/terms",
+      "label": "Каталог",
+      "href": "/#catalog",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/terms",
+      "label": "Подборки",
+      "href": "/compilations",
+      "hrefType": "internal"
+    },
+    {
+      "route": "/terms",
       "label": "Написать нам",
       "href": "#social",
       "hrefType": "same-page-anchor"

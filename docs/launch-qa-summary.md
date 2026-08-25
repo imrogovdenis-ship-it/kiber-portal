@@ -1,6 +1,6 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T02:32:58.286398+00:00
+Дата: 2026-08-25T08:02:17.303562+00:00
 Статус: `passed`
 
 ## Summary
@@ -14,19 +14,19 @@
 | Gate | Status | Summary |
 |---|---:|---|
 | `design_tokens` | pass | `{"errors": 0, "warnings": 0, "cssFiles": 4, "colorTokens": 15}` |
-| `public_pages` | pass | `{"htmlPages": 47, "errors": 0, "warnings": 0}` |
-| `astro_build` | pass | `{"built": true, "pages": 47}` |
+| `public_pages` | pass | `{"htmlPages": 51, "errors": 0, "warnings": 0}` |
+| `astro_build` | pass | `{"built": true, "pages": 51}` |
 | `robot_seo_links` | pass | `{"robotPages": 24, "checkedPages": 24, "errors": 0, "warnings": 0}` |
 | `collection_pages` | pass | `{"collectionPages": 2, "checkedPages": 2, "errors": 0, "warnings": 0}` |
 | `content_index_pages` | pass | `{"contentIndexPages": 3, "checkedPages": 3, "errors": 0, "warnings": 0}` |
 | `content_detail_pages` | pass | `{"detailPages": 7, "checkedPages": 7, "errors": 0, "warnings": 0}` |
-| `whole_site_static` | pass | `{"htmlPages": 47, "publicPages": 38, "previewPages": 9, "checkedPages": 47, "errors": 0, "warnings": 0}` |
-| `rendered_image_alt` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "meaningfulImages": 435}` |
-| `rendered_headings` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "headings": 736}` |
-| `rendered_schema` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "schemaTypes": {"BreadcrumbList": 36, "FAQPage": 24, "Service": 24, "CollectionPage": 4, "Blog": 1, "ContactPage": 1, "Organization": 2, "WebSite": 1, "BlogPosting": 7}, "pageTypes": {"robot detail": 24, "collection/content index": 5, "contacts": 1, "home": 1, "article/detail": 7}}` |
-| `rendered_social_metadata` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0}` |
-| `rendered_cta_flow` | pass | `{"publicPagesChecked": 38, "ctaLinks": 678, "hrefTypes": {"internal": 330, "same-page-anchor": 233, "approved-external": 115}, "errors": 0, "warnings": 0}` |
-| `route_inventory` | pass | `{"routes": 47, "publicRoutes": 38, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "contacts": 1, "home": 1, "article/detail": 7}}` |
+| `whole_site_static` | pass | `{"htmlPages": 51, "publicPages": 42, "previewPages": 9, "checkedPages": 51, "errors": 0, "warnings": 0}` |
+| `rendered_image_alt` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0, "meaningfulImages": 440}` |
+| `rendered_headings` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0, "headings": 779}` |
+| `rendered_schema` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0, "schemaTypes": {"BreadcrumbList": 40, "FAQPage": 25, "Service": 24, "CollectionPage": 4, "Blog": 1, "WebPage": 4, "ContactPage": 1, "Organization": 2, "WebSite": 1, "BlogPosting": 7}, "pageTypes": {"robot detail": 24, "collection/content index": 5, "public other": 4, "contacts": 1, "home": 1, "article/detail": 7}}` |
+| `rendered_social_metadata` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0}` |
+| `rendered_cta_flow` | pass | `{"publicPagesChecked": 42, "ctaLinks": 724, "hrefTypes": {"internal": 346, "same-page-anchor": 251, "approved-external": 127}, "errors": 0, "warnings": 0}` |
+| `route_inventory` | pass | `{"routes": 51, "publicRoutes": 42, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "legal": 4, "contacts": 1, "home": 1, "article/detail": 7}}` |
 
 ## Artifact
 

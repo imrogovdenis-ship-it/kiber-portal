@@ -1,6 +1,6 @@
 # KIBER PORTAL — rendered image alt audit
 
-Дата: 2026-08-24  
+Дата: 2026-08-25
 Статус: `passed`
 
 ## Scope
@@ -16,8 +16,8 @@ python3 scripts/audit_rendered_image_alt.py --root . --json
 ## Latest result
 
 ```text
-publicPagesChecked=38
-meaningfulImages=435
+publicPagesChecked=42
+meaningfulImages=440
 errors=0
 warnings=0
 ```

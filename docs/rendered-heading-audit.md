@@ -1,6 +1,6 @@
 # KIBER PORTAL — rendered heading hierarchy audit
 
-Дата: 2026-08-24  
+Дата: 2026-08-25
 Статус: `passed`
 
 ## Scope
@@ -16,8 +16,8 @@ python3 scripts/audit_rendered_headings.py --root . --json
 ## Latest result
 
 ```text
-publicPagesChecked=38
-headings=729
+publicPagesChecked=42
+headings=779
 errors=0
 warnings=0
 ```

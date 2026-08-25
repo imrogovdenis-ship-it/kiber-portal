@@ -16,7 +16,7 @@ python3 scripts/audit_rendered_social_metadata.py --root . --json
 ## Latest result
 
 ```text
-publicPagesChecked=38
+publicPagesChecked=42
 errors=0
 warnings=0
 ```

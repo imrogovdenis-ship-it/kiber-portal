@@ -68,7 +68,7 @@ docs/lead-flow-integration-plan.md
 ## Что уже готово технически
 
 - Live-verified design tokens and visual language are used in Astro templates.
-- Home, robot cards, robot detail pages, collection pages, content index pages and article detail pages have live-style baselines.
+- Home, including the lower FAQ/final conversion block, robot cards, robot detail pages, collection pages, content index pages and article detail pages have live-style baselines.
 - 24 robot pages have `Service`, `BreadcrumbList` and `FAQPage` JSON-LD where FAQ exists.
 - Collection/content pages have dedicated schema and validation gates.
 - Static validation covers all 51 generated HTML pages, including 42 public indexable pages and 9 preview/noindex pages.
@@ -77,11 +77,11 @@ docs/lead-flow-integration-plan.md
 - Route inventory generated for 51 routes: 42 public indexable and 9 preview/noindex, including the static 404 page and 4 legal routes.
 - Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
 - Production launch checklist and redirect scaffold are prepared but not activated.
-- Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
-- Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
-- Rendered schema audit covers 38 public pages with errors=0, warnings=0 and validates JSON-LD type coverage.
-- Rendered social metadata audit covers 38 public pages with errors=0, warnings=0 and validates OG/Twitter coverage.
-- Rendered CTA/lead-flow audit covers 38 public pages and 678 CTA links with errors=0, warnings=0.
+- Rendered image alt audit covers 42 public pages and 440 meaningful images with errors=0, warnings=0.
+- Rendered heading hierarchy audit covers 42 public pages and 779 headings with errors=0, warnings=0.
+- Rendered schema audit covers 42 public pages with errors=0, warnings=0 and validates JSON-LD type coverage, including homepage `FAQPage` and 4 legal `WebPage` routes.
+- Rendered social metadata audit covers 42 public pages with errors=0, warnings=0 and validates OG/Twitter coverage.
+- Rendered CTA/lead-flow audit covers 42 public pages and 724 CTA links with errors=0, warnings=0.
 - Header/footer/contact phone links use `tel:+79774790749`; contact popup includes messenger buttons and a deferred lead form with name, phone and optional email.
 - Lead-flow/Yandex/amoCRM integration plan is prepared in `docs/lead-flow-integration-plan.md`; real IDs/accesses are deferred.
 - Unified launch QA bundle runs 14 gates and currently passes 14/14 with failed=0.
@@ -122,7 +122,6 @@ These are not code blockers for the static build, but they should be resolved be
 
 If no new business inputs are available, continue with safe technical work:
 
-1. Generate a route inventory report from `app/dist` with page type, schema types, image/link counts and public/noindex status.
+1. Continue improving home/catalog visual parity by fixing missing catalog card imagery and spacing against live desktop/mobile screenshots.
 2. Improve Contacts page visual parity while keeping factual placeholders clearly marked.
-3. Add a reusable launch checklist in `docs/production-launch-checklist.md` without touching production infrastructure.
-4. Prepare redirect scaffolding/data model, but do not activate production redirects until old URL mapping is confirmed.
+3. Add only business-approved lead/analytics IDs when Alexander provides them; do not touch production infrastructure without approval.

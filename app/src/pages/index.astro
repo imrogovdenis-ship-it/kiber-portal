@@ -5,6 +5,8 @@ import RobotCard from '../components/robots/RobotCard.astro';
 import HomeGoshaBlock from '../components/site/HomeGoshaBlock.astro';
 import HomeCompilationsBlock from '../components/site/HomeCompilationsBlock.astro';
 import HomeArticlesBlock from '../components/site/HomeArticlesBlock.astro';
+import HomeFaqBlock from '../components/site/HomeFaqBlock.astro';
+import homeBlocks from '../../../data/design/home-live-blocks.json';
 import { getRobots } from '../lib/robots';
 
 const pages = await getCollection('pages');
@@ -29,6 +31,18 @@ const jsonLd = [
       target: 'https://www.kiber-portal.ru/?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: homeBlocks.faq.items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
   },
 ];
 ---
@@ -60,5 +74,6 @@ const jsonLd = [
       </div>
     </section>
     <HomeArticlesBlock />
+    <HomeFaqBlock />
   </main>
 </BaseLayout>

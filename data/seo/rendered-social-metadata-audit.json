@@ -1,15 +1,7 @@
 {
-  "date": "2026-08-25",
-  "status": "passed",
-  "scope": "rendered public/indexable Astro HTML pages only; preview/noindex/system routes excluded",
-  "checks": [
-    "Open Graph title/description/url/image/site_name/type",
-    "Twitter card/title/description/image",
-    "og:url equals canonical",
-    "absolute live-domain og:url and og:image"
-  ],
+  "ok": true,
   "summary": {
-    "publicPagesChecked": 38,
+    "publicPagesChecked": 42,
     "errors": 0,
     "warnings": 0
   },
@@ -206,9 +198,23 @@
       "twitterCard": "summary_large_image"
     },
     {
+      "route": "/consent",
+      "canonical": "https://www.kiber-portal.ru/consent",
+      "ogTitle": "Согласие на обработку персональных данных",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
       "route": "/contacts",
       "canonical": "https://www.kiber-portal.ru/contacts",
       "ogTitle": "Контакты | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/cookie-policy",
+      "canonical": "https://www.kiber-portal.ru/cookie-policy",
+      "ogTitle": "Политика использования файлов cookie",
       "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
       "twitterCard": "summary_large_image"
     },
@@ -248,6 +254,13 @@
       "twitterCard": "summary_large_image"
     },
     {
+      "route": "/privacy-policy",
+      "canonical": "https://www.kiber-portal.ru/privacy-policy",
+      "ogTitle": "Политика обработки персональных данных",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
       "route": "/robot-ofitsiant-na-meropriyatii",
       "canonical": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
       "ogTitle": "Робот-официант на мероприятие — аренда | КИБЕР ПОРТАЛ",
@@ -265,6 +278,13 @@
       "route": "/sravnenie-unitree-g1-r1-h2",
       "canonical": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
       "ogTitle": "Unitree G1, R1, H2: сравнение гуманоидов | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/terms",
+      "canonical": "https://www.kiber-portal.ru/terms",
+      "ogTitle": "Пользовательское соглашение",
       "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
       "twitterCard": "summary_large_image"
     },

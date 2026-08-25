@@ -1,25 +1,16 @@
 {
-  "date": "2026-08-25",
-  "status": "passed",
-  "scope": "rendered public/indexable Astro HTML pages only; preview/noindex/system routes excluded",
-  "checks": [
-    "valid JSON-LD scripts",
-    "at least one schema type per public page",
-    "home Organization+WebSite",
-    "contacts ContactPage",
-    "robot Service+BreadcrumbList",
-    "article/detail BreadcrumbList warnings"
-  ],
+  "ok": true,
   "summary": {
-    "publicPagesChecked": 38,
+    "publicPagesChecked": 42,
     "errors": 0,
     "warnings": 0,
     "schemaTypes": {
-      "BreadcrumbList": 36,
-      "FAQPage": 24,
+      "BreadcrumbList": 40,
+      "FAQPage": 25,
       "Service": 24,
       "CollectionPage": 4,
       "Blog": 1,
+      "WebPage": 4,
       "ContactPage": 1,
       "Organization": 2,
       "WebSite": 1,
@@ -28,6 +19,7 @@
     "pageTypes": {
       "robot detail": 24,
       "collection/content index": 5,
+      "public other": 4,
       "contacts": 1,
       "home": 1,
       "article/detail": 7
@@ -304,6 +296,15 @@
       ]
     },
     {
+      "route": "/consent",
+      "pageType": "public other",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ]
+    },
+    {
       "route": "/contacts",
       "pageType": "contacts",
       "schemaScripts": 2,
@@ -313,10 +314,20 @@
       ]
     },
     {
-      "route": "/",
-      "pageType": "home",
+      "route": "/cookie-policy",
+      "pageType": "public other",
       "schemaScripts": 2,
       "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ]
+    },
+    {
+      "route": "/",
+      "pageType": "home",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "FAQPage",
         "Organization",
         "WebSite"
       ]
@@ -358,6 +369,15 @@
       ]
     },
     {
+      "route": "/privacy-policy",
+      "pageType": "public other",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ]
+    },
+    {
       "route": "/robot-ofitsiant-na-meropriyatii",
       "pageType": "article/detail",
       "schemaScripts": 2,
@@ -382,6 +402,15 @@
       "schemaTypes": [
         "BlogPosting",
         "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/terms",
+      "pageType": "public other",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
       ]
     },
     {

@@ -127,6 +127,18 @@ The generic source-of-truth panels below `/arenda-unitree-g1` hero were replaced
 
 ### FAQ / conversion / footer parity pass
 
+### Home lower FAQ / final CTA parity pass
+
+The home page now carries a live-style lower conversion block before the footer:
+
+- added `HomeFaqBlock.astro` after the articles grid;
+- restored six source-of-truth FAQ questions from `content-source/pages/home.md` into `data/design/home-live-blocks.json`;
+- rendered FAQ as numbered transparent accordion rows on the pale blue canvas;
+- added a dark final CTA card with Kiber Gosha avatar, messenger CTA and catalog CTA;
+- added homepage `FAQPage` JSON-LD from the same data source.
+
+Browser proof: local preview at `http://127.0.0.1:4321/` showed the FAQ rows, final dark CTA and footer in the lower home flow.
+
 The lower robot template was brought into the same live-style rhythm:
 
 - FAQ rebuilt as a numbered `03 — ВОПРОСЫ И ОТВЕТЫ` section with transparent accordion rows and blue plus controls;
@@ -313,7 +325,7 @@ Rendered public pages now have a media SEO regression gate:
 - public/indexable pages only are checked; preview/noindex routes are excluded;
 - meaningful rendered images must not lose `alt` during template rendering;
 - very long alts and missing even-position commercial coverage are reported as warnings;
-- latest validation result: `publicPagesChecked=38`, `meaningfulImages=435`, `errors=0`, `warnings=0`.
+- latest validation result: `publicPagesChecked=42`, `meaningfulImages=440`, `errors=0`, `warnings=0`.
 
 Evidence:
 
@@ -345,7 +357,7 @@ Rendered public pages now have a heading SEO regression gate:
 - public/indexable pages only are checked; preview/noindex routes are excluded;
 - every public page must have exactly one non-empty H1;
 - empty headings and skipped heading-level jumps are reported as warnings;
-- latest validation result: `publicPagesChecked=38`, `headings=729`, `errors=0`, `warnings=0`.
+- latest validation result: `publicPagesChecked=42`, `headings=779`, `errors=0`, `warnings=0`.
 
 Evidence:
 
@@ -455,7 +467,7 @@ Rendered public pages now have a JSON-LD schema inventory/audit gate:
 - homepage requires `Organization` + `WebSite`;
 - contacts requires `ContactPage`;
 - robot pages require `Service` + `BreadcrumbList`;
-- latest validation result: `publicPagesChecked=38`, `errors=0`, `warnings=0`.
+- latest validation result: `publicPagesChecked=42`, `errors=0`, `warnings=0`.
 
 Evidence:
 
@@ -479,7 +491,7 @@ Rendered public pages now have an Open Graph/Twitter metadata gate:
 - `og:url` must match canonical;
 - social image URLs must be absolute live-domain URLs;
 - homepage now has explicit social image via `app/src/pages/index.astro`;
-- latest validation result: `publicPagesChecked=38`, `errors=0`, `warnings=0`.
+- latest validation result: `publicPagesChecked=42`, `errors=0`, `warnings=0`.
 
 Evidence:
 
@@ -504,7 +516,7 @@ Rendered public pages now have a CTA/link-flow gate:
 - legal contact facts were applied to `/contacts` from `content-source/pages/privacy-policy.md` and `content-source/pages/terms.md`;
 - header/footer/contact phone links now use real `tel:+79774790749` href;
 - contact popup now includes name/phone/email fields with disabled submit until Telegram/amoCRM destinations are provided;
-- latest validation result: `publicPagesChecked=38`, `ctaLinks=678`, `errors=0`, `warnings=0`.
+- latest validation result: `publicPagesChecked=42`, `ctaLinks=724`, `errors=0`, `warnings=0`.
 
 Evidence:
 
@@ -601,12 +613,12 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
 | Whole-site static validation | 51 generated HTML files checked, including 42 public routes, 9 preview routes and static 404 | no visual change | errors=0, warnings=0 |
 | Legal pages | `/privacy-policy`, `/consent`, `/cookie-policy`, `/terms` generated from existing source documents | mobile article layout stacks through shared template | pass via whole-site validation |
-| Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
-| Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
+| Rendered image alt audit | 440 meaningful images on 42 public pages checked | no visual change | errors=0, warnings=0 |
+| Rendered heading audit | 779 rendered headings on 42 public pages checked | no visual change | errors=0, warnings=0 |
 | Unified launch QA bundle | 14 local static gates run in one command | no visual change | passed=14, failed=0 |
-| Rendered schema audit | JSON-LD coverage on 38 public pages | no visual change | errors=0, warnings=0 |
-| Rendered social metadata audit | OG/Twitter coverage on 38 public pages | homepage social image added | errors=0, warnings=0 |
-| Rendered CTA flow audit | 678 CTA/link-flow entries across 38 public pages | masked messenger href filtered | errors=0, warnings=0 |
+| Rendered schema audit | JSON-LD coverage on 42 public pages, including home FAQPage and legal WebPage routes | no visual change | errors=0, warnings=0 |
+| Rendered social metadata audit | OG/Twitter coverage on 42 public pages | homepage social image remains explicit | errors=0, warnings=0 |
+| Rendered CTA flow audit | 724 CTA/link-flow entries across 42 public pages | masked messenger href filtered | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -616,8 +628,8 @@ Measured in browser on `http://127.0.0.1:4321/`:
 2. **Prices differ intentionally**  
    Live catalog shows package-style values such as `от 50 000 ₽`; Astro uses structured tariff/hourly values such as `от 12 500 ₽ / час`. Do not overwrite pricing from live without business approval.
 
-3. **Home lower blocks still need separate parity**  
-   Gosha, подборки, articles, FAQ, news and footer are visually closer now, but this pass only gated first-screen and catalog baseline.
+3. **Home catalog imagery still needs a focused asset pass**
+   The lower home flow now includes live-style FAQ and final CTA, but multiple catalog cards still show blank image wells because some source images are missing or not yet mapped to public assets.
 
 4. **Fonts need final operational decision**  
    Live computed styles use `Gillroy`; font files are named `Gilroy`. Current token follows live CSS family name. A later production pass should self-host and normalize if needed.
@@ -650,19 +662,19 @@ python3 scripts/validate_whole_site_static.py --root . --json
 → htmlPages=51, publicPages=42, previewPages=9, checkedPages=51, errors=0, warnings=0
 
 python3 scripts/audit_rendered_image_alt.py --root . --json
-→ publicPagesChecked=38, meaningfulImages=435, errors=0, warnings=0
+→ publicPagesChecked=42, meaningfulImages=440, errors=0, warnings=0
 
 python3 scripts/audit_rendered_headings.py --root . --json
-→ publicPagesChecked=38, headings=729, errors=0, warnings=0
+→ publicPagesChecked=42, headings=779, errors=0, warnings=0
 
 python3 scripts/audit_rendered_schema.py --root . --json
-→ publicPagesChecked=38, errors=0, warnings=0
+→ publicPagesChecked=42, errors=0, warnings=0
 
 python3 scripts/audit_rendered_social_metadata.py --root . --json
-→ publicPagesChecked=38, errors=0, warnings=0
+→ publicPagesChecked=42, errors=0, warnings=0
 
 python3 scripts/audit_rendered_cta_flow.py --root . --json
-→ publicPagesChecked=38, ctaLinks=678, errors=0, warnings=0
+→ publicPagesChecked=42, ctaLinks=724, errors=0, warnings=0
 
 python3 scripts/run_launch_qa.py
 → status=passed, steps=14, passed=14, failed=0
@@ -675,6 +687,6 @@ curl -sI http://127.0.0.1:4321/
 
 Proceed to the next safe site-building pass without touching production:
 
-1. improve home lower-block parity (`Кибер Гоша`, FAQ/news/footer spacing) against live desktop/mobile evidence;
-2. refresh rendered image/heading/schema/social/CTA audits now that public route count increased to 42;
+1. run a focused catalog-card image asset pass for the home catalog blank image wells;
+2. improve Contacts page visual parity while keeping placeholders factual;
 3. continue integration prep only after Telegram/form/analytics IDs and approvals are provided.

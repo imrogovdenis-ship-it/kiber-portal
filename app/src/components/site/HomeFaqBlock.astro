@@ -1,0 +1,39 @@
+---
+import homeBlocks from '../../../../data/design/home-live-blocks.json';
+import CtaLink from './CtaLink.astro';
+
+const faq = homeBlocks.faq;
+const finalCta = homeBlocks.finalCta;
+---
+<section class="section home-faq" id="faq" data-source={faq.source}>
+  <div class="container home-faq__inner">
+    <div class="section-heading section-heading--left home-faq__heading">
+      <span class="content-live-eyebrow">05 — ВОПРОСЫ И ОТВЕТЫ</span>
+      <h2>{faq.title}</h2>
+      <p>Коротко отвечаем на вопросы, которые чаще всего появляются перед арендой робота на мероприятие.</p>
+    </div>
+    <div class="home-faq__list">
+      {faq.items.map((item, index) => (
+        <details class="home-faq__item" open={index === 0}>
+          <summary>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <strong>{item.question}</strong>
+          </summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+    <aside class="home-final-cta" aria-label={finalCta.title}>
+      <div class="home-final-cta__copy">
+        <span class="content-live-eyebrow">06 — СЛЕДУЮЩИЙ ШАГ</span>
+        <h2>{finalCta.title}</h2>
+        <p>{finalCta.description}</p>
+        <div class="hero-actions">
+          <CtaLink href={finalCta.primaryCta.href} event="home_final_cta_click" source="home_final_cta" pageType="home" placement="home_faq">{finalCta.primaryCta.label}</CtaLink>
+          <CtaLink class="btn btn-secondary" href={finalCta.secondaryCta.href} event="home_final_catalog_click" source="home_final_cta" pageType="home" placement="home_faq">{finalCta.secondaryCta.label}</CtaLink>
+        </div>
+      </div>
+      <img src={finalCta.image.src} alt={finalCta.image.alt} loading="lazy" />
+    </aside>
+  </div>
+</section>

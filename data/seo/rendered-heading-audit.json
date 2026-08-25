@@ -1,17 +1,10 @@
 {
-  "date": "2026-08-24",
-  "status": "passed",
-  "scope": "rendered public indexable pages only; preview/noindex routes excluded",
-  "checks": [
-    "exactly one non-empty H1 per public page",
-    "no empty headings warning",
-    "no skipped heading-level jumps warning"
-  ],
+  "ok": true,
   "summary": {
-    "publicPagesChecked": 38,
+    "publicPagesChecked": 42,
     "errors": 0,
     "warnings": 0,
-    "headings": 729
+    "headings": 779
   },
   "errors": [],
   "warnings": [],
@@ -919,13 +912,31 @@
       ]
     },
     {
+      "route": "/consent",
+      "h1": [
+        "Согласие на обработку персональных данных"
+      ],
+      "headingCount": 2,
+      "levels": [
+        1,
+        2
+      ]
+    },
+    {
       "route": "/contacts",
       "h1": [
         "Связаться с КИБЕР ПОРТАЛОМ"
       ],
-      "headingCount": 7,
+      "headingCount": 14,
       "levels": [
         1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
         2,
         3,
         3,
@@ -935,11 +946,27 @@
       ]
     },
     {
+      "route": "/cookie-policy",
+      "h1": [
+        "Политика использования файлов cookie"
+      ],
+      "headingCount": 7,
+      "levels": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
       "route": "/",
       "h1": [
         "Аренда роботов для мероприятий"
       ],
-      "headingCount": 35,
+      "headingCount": 37,
       "levels": [
         1,
         2,
@@ -975,6 +1002,8 @@
         3,
         3,
         3,
+        2,
+        2,
         2
       ]
     },
@@ -1025,6 +1054,35 @@
       ]
     },
     {
+      "route": "/privacy-policy",
+      "h1": [
+        "Политика обработки персональных данных"
+      ],
+      "headingCount": 20,
+      "levels": [
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
       "route": "/robot-ofitsiant-na-meropriyatii",
       "h1": [
         "Робот-официант на мероприятии: свадьба, конференция, фестиваль"
@@ -1062,6 +1120,27 @@
       "headingCount": 2,
       "levels": [
         1,
+        2
+      ]
+    },
+    {
+      "route": "/terms",
+      "h1": [
+        "Пользовательское соглашение"
+      ],
+      "headingCount": 12,
+      "levels": [
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
         2
       ]
     },

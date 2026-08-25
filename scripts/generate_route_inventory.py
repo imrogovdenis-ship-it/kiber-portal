@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -20,6 +21,8 @@ def classify(route: str, robots: str) -> str:
         return "content index"
     if route == "/contacts":
         return "contacts"
+    if route in {"/privacy-policy", "/consent", "/cookie-policy", "/terms"}:
+        return "legal"
     return "article/detail"
 
 
@@ -46,8 +49,9 @@ def main() -> int:
     by_type = {}
     for route in routes:
         by_type[route["pageType"]] = by_type.get(route["pageType"], 0) + 1
+    report_date = datetime.now(timezone.utc).date().isoformat()
     artifact = {
-        "date": "2026-08-24",
+        "date": report_date,
         "source": "data/seo/whole-site-static-check.json",
         "summary": {
             "routes": len(routes),
@@ -61,7 +65,7 @@ def main() -> int:
     lines = [
         "# KIBER PORTAL — route inventory",
         "",
-        "Дата: 2026-08-24  ",
+        f"Дата: {report_date}",
         "Источник: `data/seo/whole-site-static-check.json`",
         "",
         "## Summary",

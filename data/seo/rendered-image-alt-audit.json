@@ -1,17 +1,10 @@
 {
-  "date": "2026-08-24",
-  "status": "passed",
-  "scope": "rendered public indexable pages only; preview/noindex routes excluded",
-  "checks": [
-    "missing alt on meaningful rendered images",
-    "overlong alt warnings",
-    "basic every-second commercial alt coverage warning for pages with 4+ meaningful images"
-  ],
+  "ok": true,
   "summary": {
-    "publicPagesChecked": 38,
+    "publicPagesChecked": 42,
     "errors": 0,
     "warnings": 0,
-    "meaningfulImages": 435
+    "meaningfulImages": 440
   },
   "errors": [],
   "warnings": [],
@@ -401,15 +394,27 @@
       ]
     },
     {
+      "route": "/consent",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
       "route": "/contacts",
       "images": 6,
       "meaningfulImages": 1,
       "commercialAltPositions": []
     },
     {
+      "route": "/cookie-policy",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
       "route": "/",
-      "images": 42,
-      "meaningfulImages": 37,
+      "images": 43,
+      "meaningfulImages": 38,
       "commercialAltPositions": [
         2,
         5,
@@ -431,7 +436,8 @@
         33,
         34,
         35,
-        36
+        36,
+        37
       ]
     },
     {
@@ -461,6 +467,12 @@
       ]
     },
     {
+      "route": "/privacy-policy",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
       "route": "/robot-ofitsiant-na-meropriyatii",
       "images": 7,
       "meaningfulImages": 2,
@@ -478,6 +490,12 @@
     },
     {
       "route": "/sravnenie-unitree-g1-r1-h2",
+      "images": 6,
+      "meaningfulImages": 1,
+      "commercialAltPositions": []
+    },
+    {
+      "route": "/terms",
       "images": 6,
       "meaningfulImages": 1,
       "commercialAltPositions": []
