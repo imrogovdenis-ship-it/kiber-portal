@@ -639,7 +639,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Legal pages | `/privacy-policy`, `/consent`, `/cookie-policy`, `/terms` generated from existing source documents | mobile article layout stacks through shared template | pass via whole-site validation |
 | Rendered image alt audit | 440 meaningful images on 42 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 779 rendered headings on 42 public pages checked | no visual change | errors=0, warnings=0 |
-| Unified launch QA bundle | 14 local static gates run in one command | no visual change | passed=14, failed=0 |
+| Unified launch QA bundle | 15 local static gates run in one command | no visual change | passed=15, failed=0 |
 | Rendered schema audit | JSON-LD coverage on 42 public pages, including home FAQPage and legal WebPage routes | no visual change | errors=0, warnings=0 |
 | Rendered social metadata audit | OG/Twitter coverage on 42 public pages | homepage social image remains explicit | errors=0, warnings=0 |
 | Rendered CTA flow audit | 726 CTA/link-flow entries across 42 public pages | masked messenger href filtered | errors=0, warnings=0 |
@@ -701,7 +701,7 @@ python3 scripts/audit_rendered_cta_flow.py --root . --json
 → publicPagesChecked=42, ctaLinks=726, errors=0, warnings=0
 
 python3 scripts/run_launch_qa.py
-→ status=passed, steps=14, passed=14, failed=0
+→ status=passed, steps=15, passed=15, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
@@ -753,6 +753,19 @@ After the content-index QA pass, `scripts/validate_content_index_pages.py` now a
 - migration/extraction labels such as `sourceUrl`, `slug`, `extraction`, `migration`, `raw export`.
 
 This keeps canonical/source URLs in data and link targets while preventing implementation provenance from resurfacing as mobile card chrome. The gate is part of `python3 scripts/run_launch_qa.py` through the existing `content_index_pages` step.
+
+
+### Production-readiness matrix validation gate
+
+The launch QA bundle now includes `scripts/validate_production_readiness_matrix.py` as the `production_readiness_matrix` step. The gate keeps the deployment boundary explicit by verifying that:
+
+- `productionActionAllowed` remains `false` while business/deployment approvals are missing;
+- every technical gate references an existing evidence artifact;
+- required business blockers are present;
+- at least one blocking business input remains when the status is `code_ready_business_inputs_required`;
+- forbidden actions still include DNS, Coolify production deploy, redirects, analytics/pixels and real lead-destination wiring.
+
+Validation output: `technicalGates=10`, `businessBlockers=6`, `blockingBusinessInputs=4`, `errors=0`, `warnings=0`. The full `run_launch_qa.py` bundle now passes 15/15 gates.
 
 ## Recommended next step
 

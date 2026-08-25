@@ -83,6 +83,11 @@ STEPS = [
         "command": ["python3", "scripts/generate_route_inventory.py", "--root", "."],
         "json": True,
     },
+    {
+        "id": "production_readiness_matrix",
+        "command": ["python3", "scripts/validate_production_readiness_matrix.py", "--root", ".", "--json"],
+        "json": True,
+    },
 ]
 
 

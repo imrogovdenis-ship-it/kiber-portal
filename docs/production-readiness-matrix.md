@@ -53,6 +53,10 @@ productionActionAllowed=false
 - Wire real lead destinations.
 - Touch non-`alex-*` containers, secrets, DNS or analytics.
 
+## Validation gate
+
+The matrix is checked by `python3 scripts/validate_production_readiness_matrix.py --root . --json` and by the `production_readiness_matrix` step inside `python3 scripts/run_launch_qa.py`. The gate verifies conservative `productionActionAllowed=false`, required blockers, existing evidence paths and forbidden production actions.
+
 ## Machine-readable source
 
 ```text

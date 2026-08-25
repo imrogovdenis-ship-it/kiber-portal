@@ -1,12 +1,12 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T10:24:39.643670+00:00
+Дата: 2026-08-25T10:29:33.943780+00:00
 Статус: `passed`
 
 ## Summary
 
-- Steps: 14
-- Passed: 14
+- Steps: 15
+- Passed: 15
 - Failed: 0
 
 ## Gates
@@ -27,6 +27,7 @@
 | `rendered_social_metadata` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0}` |
 | `rendered_cta_flow` | pass | `{"publicPagesChecked": 42, "ctaLinks": 726, "hrefTypes": {"internal": 347, "same-page-anchor": 252, "approved-external": 127}, "errors": 0, "warnings": 0}` |
 | `route_inventory` | pass | `{"routes": 51, "publicRoutes": 42, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "legal": 4, "contacts": 1, "home": 1, "article/detail": 7}}` |
+| `production_readiness_matrix` | pass | `{"technicalGates": 10, "businessBlockers": 6, "blockingBusinessInputs": 4, "errors": 0, "warnings": 0}` |
 
 ## Artifact
 
