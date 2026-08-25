@@ -49,6 +49,8 @@ data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
+data/seo/launch-qa-summary.json
+docs/launch-qa-summary.md
 ```
 
 ## Что уже готово технически
@@ -64,6 +66,7 @@ docs/rendered-heading-audit.md
 - Production launch checklist and redirect scaffold are prepared but not activated.
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
 - Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
+- Unified launch QA bundle runs 11 gates and currently passes 11/11 with failed=0.
 
 ## Production blockers / inputs needed before launch
 

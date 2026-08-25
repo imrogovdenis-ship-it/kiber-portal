@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `rendered_heading_audit_passed_needs_business_launch_inputs`
+Статус: `launch_qa_bundle_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -56,6 +56,8 @@ data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
+data/seo/launch-qa-summary.json
+docs/launch-qa-summary.md
 ```
 
 ## Applied changes in this pass
@@ -274,6 +276,8 @@ data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
+data/seo/launch-qa-summary.json
+docs/launch-qa-summary.md
 ```
 
 ### Rendered image alt audit pass
@@ -293,6 +297,8 @@ data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
+data/seo/launch-qa-summary.json
+docs/launch-qa-summary.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -310,7 +316,28 @@ Evidence:
 ```text
 data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
+data/seo/launch-qa-summary.json
+docs/launch-qa-summary.md
 ```
+
+### Unified launch QA bundle pass
+
+A single pre-production QA command now runs all local static gates in order:
+
+```bash
+python3 scripts/run_launch_qa.py
+```
+
+Current result: `status=passed`, `steps=11`, `passed=11`, `failed=0`.
+
+The bundle writes:
+
+```text
+data/seo/launch-qa-summary.json
+docs/launch-qa-summary.md
+```
+
+It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
 
 Browser DOM proof after the pass:
 
@@ -400,6 +427,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Whole-site static validation | 46 generated pages checked, including 38 public routes | no visual change | errors=0, warnings=0 |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
+| Unified launch QA bundle | 11 local static gates run in one command | no visual change | passed=11, failed=0 |
 
 ## Remaining known differences
 
@@ -447,6 +475,9 @@ python3 scripts/audit_rendered_image_alt.py --root . --json
 
 python3 scripts/audit_rendered_headings.py --root . --json
 → publicPagesChecked=38, headings=729, errors=0, warnings=0
+
+python3 scripts/run_launch_qa.py
+→ status=passed, steps=11, passed=11, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK

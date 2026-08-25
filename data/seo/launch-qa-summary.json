@@ -1,0 +1,162 @@
+{
+  "date": "2026-08-25T00:13:49.549385+00:00",
+  "status": "passed",
+  "scope": "Complete pre-production local static QA bundle for KIBER PORTAL Astro output.",
+  "summary": {
+    "steps": 11,
+    "passed": 11,
+    "failed": 0
+  },
+  "steps": [
+    {
+      "id": "design_tokens",
+      "command": "python3 scripts/validate_design_tokens.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "cssFiles": 4,
+        "colorTokens": 15
+      },
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"errors\": 0,\n    \"warnings\": 0,\n    \"cssFiles\": 4,\n    \"colorTokens\": 15\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n"
+    },
+    {
+      "id": "public_pages",
+      "command": "python3 scripts/validate_public_pages.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "htmlPages": 46,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"htmlPages\": 46,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n"
+    },
+    {
+      "id": "astro_build",
+      "command": "npm --prefix app run build",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "built": true,
+        "pages": 46
+      },
+      "outputTail": "\n> build\n> astro build\n\n00:13:44 [content] Syncing content\n00:13:44 [content] Synced content\n00:13:44 [types] Generated 1.54s\n00:13:44 [build] output: \"static\"\n00:13:44 [build] mode: \"static\"\n00:13:44 [build] directory: /home/alex/projects/kiber-portal/app/dist/\n00:13:44 [build] Collecting build info...\n00:13:44 [build] ✓ Completed in 1.69s.\n00:13:45 [build] Building static entrypoints...\n00:13:46 [vite] ✓ built in 1.51s\n00:13:47 [vite] ✓ built in 562ms\n00:13:47 [build] Rearranging server assets...\n\n generating static routes \n00:13:47   ├─ /arenda-robotov-na-meropriyatie/index.html (+45ms) \n00:13:47   ├─ /articles/index.html (+6ms) \n00:13:47   ├─ /compilations/index.html (+9ms) \n00:13:47   ├─ /contacts/index.html (+5ms) \n00:13:47   ├─ /design-review/index.html (+4ms) \n00:13:47   ├─ /news/index.html (+4ms) \n00:13:47   ├─ /news-v2/index.html (+8ms) \n00:13:47   ├─ /parity/arenda-robotov-na-meropriyatie/index.html (+38ms) \n00:13:47   ├─ /parity/arenda-unitree-g1/index.html (+45ms) \n00:13:47   ├─ /parity/articles/index.html (+32ms) \n00:13:47   ├─ /parity/home/index.html (+37ms) \n00:13:47   ├─ /parity/news/index.html (+4ms) \n00:13:47   ├─ /parity/roboty-gumanoidy/index.html (+32ms) \n00:13:47   ├─ /roboty-gumanoidy/index.html (+13ms) \n00:13:47   ├─ /index.html (+9ms) \n00:13:47   ├─ /arenda-agibot-x2/index.html (+9ms) \n00:13:47   ├─ /arenda-bellabot/index.html (+4ms) \n00:13:47   ├─ /arenda-glambot/index.html (+3ms) \n00:13:47   ├─ /arenda-inchbot-l1-w-edu/index.html (+3ms) \n00:13:47   ├─ /arenda-kettybot/index.html (+4ms) \n00:13:47   ├─ /arenda-klipmeiker/index.html (+7ms) \n00:13:47   ├─ /arenda-mini-robo-kofeyni/index.html (+4ms) \n00:13:47   ├─ /arenda-noetix-bumi/index.html (+6ms) \n00:13:47   ├─ /arenda-promobot-v4/index.html (+10ms) \n00:13:47   ├─ /arenda-robo-kofeyni/index.html (+5ms) \n00:13:47   ├─ /arenda-roboshashki/index.html (+4ms) \n00:13:47   ├─ /arenda-robot-barmen/index.html (+3ms) \n00:13:47   ├─ /arenda-robota-ardi/index.html (+7ms) \n00:13:47   ├─ /arenda-robota-hudozhnika-a4/index.html (+3ms) \n00:13:47   ├─ /arenda-robota-sofiya/index.html (+3ms) \n00:13:47   ├─ /arenda-robota-tron/index.html (+4ms) \n00:13:47   ├─ /arenda-senserobot/index.html (+3ms) \n00:13:47   ├─ /arenda-sketchbot/index.html (+4ms) \n00:13:47   ├─ /arenda-unitree-g1/index.html (+3ms) \n00:13:47   ├─ /arenda-unitree-go2/index.html (+3ms) \n00:13:47   ├─ /arenda-unitree-h2/index.html (+7ms) \n00:13:47   ├─ /arenda-unitree-r1/index.html (+6ms) \n00:13:47   ├─ /arenda-uv-box/index.html (+4ms) \n00:13:47   ├─ /arenda-xiaomi-cyberdog-2/index.html (+4ms) \n00:13:47   ├─ /neobychnyi-podarok-direktoru-robot/index.html (+3ms) \n00:13:47   ├─ /noetix-bumi-robot-gumanoid-dlya-meropriyatiy/index.html (+2ms) \n00:13:47   ├─ /pozdravlenie-robotom-na-svadbe/index.html (+2ms) \n00:13:47   ├─ /robot-ofitsiant-na-meropriyatii/index.html (+2ms) \n00:13:47   ├─ /sravnenie-unitree-g1-r1-h2/index.html (+3ms) \n00:13:47   ├─ /unitree-g1-ili-agibot-x2/index.html (+7ms) \n00:13:47   ├─ /velkom-zona-na-svadbe-robot/index.html (+3ms) \n00:13:47 ✓ Completed in 556ms.\n\n00:13:47 [build] ✓ Completed in 2.77s.\n00:13:47 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`\n00:13:47 [build] 46 page(s) built in 4.61s\n00:13:47 [build] Complete!\n"
+    },
+    {
+      "id": "robot_seo_links",
+      "command": "python3 scripts/validate_robot_seo_links.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "robotPages": 24,
+        "checkedPages": 24,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "3431-4038-b939-396465653237__02.jpg\"\n    },\n    {\n      \"slug\": \"arenda-robota-sofiya\",\n      \"url\": \"/arenda-robota-sofiya\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 6,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-robota-sofiya\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg\"\n    },\n    {\n      \"slug\": \"arenda-robota-tron\",\n      \"url\": \"/arenda-robota-tron\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-robota-tron\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild3530-3730-4030-b432-386539343765__02.jpg\"\n    },\n    {\n      \"slug\": \"arenda-senserobot\",\n      \"url\": \"/arenda-senserobot\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-senserobot\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild3936-3039-4339-a464-636466646534__011.jpg\"\n    },\n    {\n      \"slug\": \"arenda-sketchbot\",\n      \"url\": \"/arenda-sketchbot\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-sketchbot\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild3739-6331-4234-b635-633262663663__010.jpg\"\n    },\n    {\n      \"slug\": \"arenda-unitree-g1\",\n      \"url\": \"/arenda-unitree-g1\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-unitree-g1\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6333-3137-4465-b265-323436646539__06.jpg\"\n    },\n    {\n      \"slug\": \"arenda-unitree-go2\",\n      \"url\": \"/arenda-unitree-go2\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-unitree-go2\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6666-3666-4662-a431-636535616562__6.jpg\"\n    },\n    {\n      \"slug\": \"arenda-unitree-h2\",\n      \"url\": \"/arenda-unitree-h2\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-unitree-h2\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6263-3431-4436-b463-366666346362__noroot.png\"\n    },\n    {\n      \"slug\": \"arenda-unitree-r1\",\n      \"url\": \"/arenda-unitree-r1\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-unitree-r1\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6136-3331-4366-b934-653538306539__noroot.png\"\n    },\n    {\n      \"slug\": \"arenda-uv-box\",\n      \"url\": \"/arenda-uv-box\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-uv-box\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild3932-3764-4535-a534-656663633833__011.jpg\"\n    },\n    {\n      \"slug\": \"arenda-xiaomi-cyberdog-2\",\n      \"url\": \"/arenda-xiaomi-cyberdog-2\",\n      \"jsonLdTypes\": [\n        \"Service\",\n        \"BreadcrumbList\",\n        \"FAQPage\"\n      ],\n      \"faqItems\": 5,\n      \"relatedRobots\": 5,\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2\",\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild3834-3231-4836-b737-366637613031__08.jpg\"\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "collection_pages",
+      "command": "python3 scripts/validate_collection_pages.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "collectionPages": 2,
+        "checkedPages": 2,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"collectionPages\": 2,\n    \"checkedPages\": 2,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": [],\n  \"checked\": [\n    {\n      \"slug\": \"arenda-robotov-na-meropriyatie\",\n      \"canonical\": \"https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie\",\n      \"jsonLdTypes\": [\n        \"CollectionPage\",\n        \"BreadcrumbList\"\n      ],\n      \"robotLinks\": 24,\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg\"\n    },\n    {\n      \"slug\": \"roboty-gumanoidy\",\n      \"canonical\": \"https://www.kiber-portal.ru/roboty-gumanoidy\",\n      \"jsonLdTypes\": [\n        \"CollectionPage\",\n        \"BreadcrumbList\"\n      ],\n      \"robotLinks\": 5,\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6333-3137-4465-b265-323436646539__06.jpg\"\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "content_index_pages",
+      "command": "python3 scripts/validate_content_index_pages.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "contentIndexPages": 3,
+        "checkedPages": 3,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"contentIndexPages\": 3,\n    \"checkedPages\": 3,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": [],\n  \"checked\": [\n    {\n      \"slug\": \"articles\",\n      \"canonical\": \"https://www.kiber-portal.ru/articles\",\n      \"jsonLdTypes\": [\n        \"Blog\",\n        \"BreadcrumbList\"\n      ],\n      \"internalLinks\": 26,\n      \"ogImage\": \"https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg\"\n    },\n    {\n      \"slug\": \"compilations\",\n      \"canonical\": \"https://www.kiber-portal.ru/compilations\",\n      \"jsonLdTypes\": [\n        \"BreadcrumbList\",\n        \"CollectionPage\"\n      ],\n      \"internalLinks\": 59,\n      \"ogImage\": \"https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg\"\n    },\n    {\n      \"slug\": \"news\",\n      \"canonical\": \"https://www.kiber-portal.ru/news\",\n      \"jsonLdTypes\": [\n        \"BreadcrumbList\",\n        \"CollectionPage\"\n      ],\n      \"internalLinks\": 10,\n      \"ogImage\": \"https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg\"\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "content_detail_pages",
+      "command": "python3 scripts/validate_content_detail_pages.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "detailPages": 7,
+        "checkedPages": 7,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"detailPages\": 7,\n    \"checkedPages\": 7,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": [],\n  \"checked\": [\n    {\n      \"url\": \"/neobychnyi-podarok-direktoru-robot\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot\"\n    },\n    {\n      \"url\": \"/noetix-bumi-robot-gumanoid-dlya-meropriyatiy\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy\"\n    },\n    {\n      \"url\": \"/pozdravlenie-robotom-na-svadbe\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe\"\n    },\n    {\n      \"url\": \"/robot-ofitsiant-na-meropriyatii\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii\"\n    },\n    {\n      \"url\": \"/sravnenie-unitree-g1-r1-h2\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2\"\n    },\n    {\n      \"url\": \"/unitree-g1-ili-agibot-x2\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2\"\n    },\n    {\n      \"url\": \"/velkom-zona-na-svadbe-robot\",\n      \"kind\": \"blog\",\n      \"jsonLdTypes\": [\n        \"BlogPosting\",\n        \"BreadcrumbList\"\n      ],\n      \"canonical\": \"https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot\"\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "whole_site_static",
+      "command": "python3 scripts/validate_whole_site_static.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "htmlPages": 46,
+        "publicPages": 38,
+        "previewPages": 8,
+        "checkedPages": 46,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "hemaCount\": 2,\n      \"images\": 7,\n      \"links\": 27\n    },\n    {\n      \"route\": \"/news\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/news\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 6,\n      \"links\": 23\n    },\n    {\n      \"route\": \"/news-v2\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/news-v2\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 9,\n      \"links\": 35\n    },\n    {\n      \"route\": \"/noetix-bumi-robot-gumanoid-dlya-meropriyatiy\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 6,\n      \"links\": 27\n    },\n    {\n      \"route\": \"/parity/arenda-robotov-na-meropriyatie\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"arenda-robotov-na-meropriyatie\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 8,\n      \"links\": 62\n    },\n    {\n      \"route\": \"/parity/arenda-unitree-g1\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"arenda-unitree-g1\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 20,\n      \"links\": 41\n    },\n    {\n      \"route\": \"/parity/articles\",\n      \"title\": true,\n      \"description\": false,\n      \"canonical\": \"https://www.kiber-portal.ru/articles\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 7,\n      \"links\": 37\n    },\n    {\n      \"route\": \"/parity/home\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 8,\n      \"links\": 69\n    },\n    {\n      \"route\": \"/parity/news\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/news\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 0,\n      \"links\": 20\n    },\n    {\n      \"route\": \"/parity/roboty-gumanoidy\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"roboty-gumanoidy\",\n      \"robots\": \"noindex,nofollow\",\n      \"schemaCount\": 0,\n      \"images\": 19,\n      \"links\": 44\n    },\n    {\n      \"route\": \"/pozdravlenie-robotom-na-svadbe\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 7,\n      \"links\": 27\n    },\n    {\n      \"route\": \"/robot-ofitsiant-na-meropriyatii\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 7,\n      \"links\": 27\n    },\n    {\n      \"route\": \"/roboty-gumanoidy\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/roboty-gumanoidy\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 11,\n      \"links\": 39\n    },\n    {\n      \"route\": \"/sravnenie-unitree-g1-r1-h2\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 6,\n      \"links\": 27\n    },\n    {\n      \"route\": \"/unitree-g1-ili-agibot-x2\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 6,\n      \"links\": 27\n    },\n    {\n      \"route\": \"/velkom-zona-na-svadbe-robot\",\n      \"title\": true,\n      \"description\": true,\n      \"canonical\": \"https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot\",\n      \"robots\": \"index,follow\",\n      \"schemaCount\": 2,\n      \"images\": 6,\n      \"links\": 27\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "rendered_image_alt",
+      "command": "python3 scripts/audit_rendered_image_alt.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "publicPagesChecked": 38,
+        "errors": 0,
+        "warnings": 0,
+        "meaningfulImages": 435
+      },
+      "outputTail": ": \"/arenda-senserobot\",\n      \"images\": 20,\n      \"meaningfulImages\": 15,\n      \"commercialAltPositions\": [\n        2,\n        4,\n        6,\n        8,\n        11,\n        12\n      ]\n    },\n    {\n      \"route\": \"/arenda-sketchbot\",\n      \"images\": 21,\n      \"meaningfulImages\": 16,\n      \"commercialAltPositions\": [\n        1,\n        2,\n        4,\n        6,\n        8,\n        10,\n        12\n      ]\n    },\n    {\n      \"route\": \"/arenda-unitree-g1\",\n      \"images\": 19,\n      \"meaningfulImages\": 14,\n      \"commercialAltPositions\": [\n        1,\n        2,\n        4,\n        5,\n        6,\n        7,\n        8,\n        11,\n        13\n      ]\n    },\n    {\n      \"route\": \"/arenda-unitree-go2\",\n      \"images\": 20,\n      \"meaningfulImages\": 15,\n      \"commercialAltPositions\": [\n        1,\n        2,\n        4,\n        6,\n        8,\n        12,\n        14\n      ]\n    },\n    {\n      \"route\": \"/arenda-unitree-h2\",\n      \"images\": 17,\n      \"meaningfulImages\": 12,\n      \"commercialAltPositions\": [\n        1,\n        2,\n        4,\n        6,\n        8,\n        10,\n        11\n      ]\n    },\n    {\n      \"route\": \"/arenda-unitree-r1\",\n      \"images\": 19,\n      \"meaningfulImages\": 14,\n      \"commercialAltPositions\": [\n        2,\n        4,\n        5,\n        6,\n        7,\n        8,\n        10,\n        12\n      ]\n    },\n    {\n      \"route\": \"/arenda-uv-box\",\n      \"images\": 18,\n      \"meaningfulImages\": 13,\n      \"commercialAltPositions\": [\n        1,\n        3,\n        4,\n        6,\n        9,\n        10,\n        12\n      ]\n    },\n    {\n      \"route\": \"/arenda-xiaomi-cyberdog-2\",\n      \"images\": 19,\n      \"meaningfulImages\": 14,\n      \"commercialAltPositions\": [\n        1,\n        2,\n        4,\n        5,\n        6,\n        8,\n        10,\n        11,\n        13\n      ]\n    },\n    {\n      \"route\": \"/articles\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/compilations\",\n      \"images\": 21,\n      \"meaningfulImages\": 16,\n      \"commercialAltPositions\": [\n        1,\n        3,\n        4,\n        5,\n        6,\n        8,\n        9,\n        10,\n        12,\n        13\n      ]\n    },\n    {\n      \"route\": \"/contacts\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/\",\n      \"images\": 42,\n      \"meaningfulImages\": 37,\n      \"commercialAltPositions\": [\n        2,\n        5,\n        7,\n        8,\n        10,\n        11,\n        13,\n        14,\n        15,\n        16,\n        21,\n        22,\n        23,\n        25,\n        26,\n        27,\n        32,\n        33,\n        34,\n        35,\n        36\n      ]\n    },\n    {\n      \"route\": \"/neobychnyi-podarok-direktoru-robot\",\n      \"images\": 7,\n      \"meaningfulImages\": 2,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/news\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/noetix-bumi-robot-gumanoid-dlya-meropriyatiy\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/pozdravlenie-robotom-na-svadbe\",\n      \"images\": 7,\n      \"meaningfulImages\": 2,\n      \"commercialAltPositions\": [\n        1\n      ]\n    },\n    {\n      \"route\": \"/robot-ofitsiant-na-meropriyatii\",\n      \"images\": 7,\n      \"meaningfulImages\": 2,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/roboty-gumanoidy\",\n      \"images\": 11,\n      \"meaningfulImages\": 6,\n      \"commercialAltPositions\": [\n        1,\n        3,\n        4\n      ]\n    },\n    {\n      \"route\": \"/sravnenie-unitree-g1-r1-h2\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/unitree-g1-ili-agibot-x2\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    },\n    {\n      \"route\": \"/velkom-zona-na-svadbe-robot\",\n      \"images\": 6,\n      \"meaningfulImages\": 1,\n      \"commercialAltPositions\": []\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "rendered_headings",
+      "command": "python3 scripts/audit_rendered_headings.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "publicPagesChecked": 38,
+        "errors": 0,
+        "warnings": 0,
+        "headings": 729
+      },
+      "outputTail": "nda-xiaomi-cyberdog-2\",\n      \"h1\": [\n        \"Аренда робота-собаки Xiaomi Cyberdog 2\"\n      ],\n      \"headingCount\": 25,\n      \"levels\": [\n        1,\n        2,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2,\n        2,\n        2,\n        2,\n        3,\n        3,\n        3,\n        3,\n        2\n      ]\n    },\n    {\n      \"route\": \"/articles\",\n      \"h1\": [\n        \"Идеи, сценарии и сравнения роботов\"\n      ],\n      \"headingCount\": 11,\n      \"levels\": [\n        1,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2\n      ]\n    },\n    {\n      \"route\": \"/compilations\",\n      \"h1\": [\n        \"Роботы под сценарий мероприятия\"\n      ],\n      \"headingCount\": 22,\n      \"levels\": [\n        1,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2\n      ]\n    },\n    {\n      \"route\": \"/contacts\",\n      \"h1\": [\n        \"Связаться с КИБЕР ПОРТАЛОМ\"\n      ],\n      \"headingCount\": 7,\n      \"levels\": [\n        1,\n        2,\n        3,\n        3,\n        3,\n        2,\n        2\n      ]\n    },\n    {\n      \"route\": \"/\",\n      \"h1\": [\n        \"Аренда роботов для мероприятий\"\n      ],\n      \"headingCount\": 35,\n      \"levels\": [\n        1,\n        2,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2\n      ]\n    },\n    {\n      \"route\": \"/neobychnyi-podarok-direktoru-robot\",\n      \"h1\": [\n        \"Необычный подарок директору: робот в кабинете вместо галстука\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    },\n    {\n      \"route\": \"/news\",\n      \"h1\": [\n        \"Роботы, AI и события индустрии\"\n      ],\n      \"headingCount\": 4,\n      \"levels\": [\n        1,\n        2,\n        3,\n        2\n      ]\n    },\n    {\n      \"route\": \"/noetix-bumi-robot-gumanoid-dlya-meropriyatiy\",\n      \"h1\": [\n        \"Noetix Bumi: робот-гуманоид ростом с ребёнка для мероприятий\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    },\n    {\n      \"route\": \"/pozdravlenie-robotom-na-svadbe\",\n      \"h1\": [\n        \"Необычное поздравление на свадьбе: робот выходит с тостом и танцем\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    },\n    {\n      \"route\": \"/robot-ofitsiant-na-meropriyatii\",\n      \"h1\": [\n        \"Робот-официант на мероприятии: свадьба, конференция, фестиваль\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    },\n    {\n      \"route\": \"/roboty-gumanoidy\",\n      \"h1\": [\n        \"Аренда роботов-гуманоидов для мероприятий\"\n      ],\n      \"headingCount\": 10,\n      \"levels\": [\n        1,\n        2,\n        2,\n        3,\n        3,\n        3,\n        3,\n        3,\n        2,\n        2\n      ]\n    },\n    {\n      \"route\": \"/sravnenie-unitree-g1-r1-h2\",\n      \"h1\": [\n        \"Unitree G1, R1 и H2: сравнение роботов-гуманоидов для мероприятий\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    },\n    {\n      \"route\": \"/unitree-g1-ili-agibot-x2\",\n      \"h1\": [\n        \"Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    },\n    {\n      \"route\": \"/velkom-zona-na-svadbe-robot\",\n      \"h1\": [\n        \"Необычная велком-зона на свадьбе: робот, который встречает гостей\"\n      ],\n      \"headingCount\": 2,\n      \"levels\": [\n        1,\n        2\n      ]\n    }\n  ]\n}\n"
+    },
+    {
+      "id": "route_inventory",
+      "command": "python3 scripts/generate_route_inventory.py --root .",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "routes": 46,
+        "publicRoutes": 38,
+        "previewNoindexRoutes": 8,
+        "pageTypes": {
+          "robot detail": 24,
+          "collection": 2,
+          "content index": 3,
+          "contacts": 1,
+          "preview/noindex": 8,
+          "home": 1,
+          "article/detail": 7
+        }
+      },
+      "outputTail": "{\"routes\": 46, \"publicRoutes\": 38, \"previewNoindexRoutes\": 8, \"pageTypes\": {\"robot detail\": 24, \"collection\": 2, \"content index\": 3, \"contacts\": 1, \"preview/noindex\": 8, \"home\": 1, \"article/detail\": 7}}\n"
+    }
+  ]
+}
