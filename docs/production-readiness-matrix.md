@@ -55,7 +55,7 @@ productionActionAllowed=false
 
 ## Validation gate
 
-The matrix is checked by `python3 scripts/validate_production_readiness_matrix.py --root . --json` and by the `production_readiness_matrix` step inside `python3 scripts/run_launch_qa.py`. The adjacent `production_dry_run_docs` step checks the deployment dry-run and launch checklist docs. These gates verify conservative `productionActionAllowed=false`, required blockers, existing evidence paths, forbidden production actions and current non-operative deployment docs.
+The matrix is checked by `python3 scripts/validate_production_readiness_matrix.py --root . --json` and by the `production_readiness_matrix` step inside `python3 scripts/run_launch_qa.py`. The adjacent `production_dry_run_docs` step checks the deployment dry-run and launch checklist docs; `business_input_pack` checks the business-input and lead-flow request docs. These gates verify conservative `productionActionAllowed=false`, required blockers, existing evidence paths, forbidden production actions and current non-operative deployment docs.
 
 ## Machine-readable source
 

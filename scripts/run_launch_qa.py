@@ -93,6 +93,11 @@ STEPS = [
         "command": ["python3", "scripts/validate_production_dry_run_docs.py", "--root", ".", "--json"],
         "json": True,
     },
+    {
+        "id": "business_input_pack",
+        "command": ["python3", "scripts/validate_business_input_pack.py", "--root", ".", "--json"],
+        "json": True,
+    },
 ]
 
 

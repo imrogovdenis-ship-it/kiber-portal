@@ -1,10 +1,10 @@
 {
-  "date": "2026-08-25T10:33:33.366792+00:00",
+  "date": "2026-08-25T10:37:38.305796+00:00",
   "status": "passed",
   "scope": "Complete pre-production local static QA bundle for KIBER PORTAL Astro output.",
   "summary": {
-    "steps": 16,
-    "passed": 16,
+    "steps": 17,
+    "passed": 17,
     "failed": 0
   },
   "steps": [
@@ -42,7 +42,7 @@
         "built": true,
         "pages": 51
       },
-      "outputTail": "\n> build\n> astro build\n\n10:33:25 [content] Syncing content\n10:33:25 [content] Synced content\n10:33:25 [types] Generated 3.62s\n10:33:25 [build] output: \"static\"\n10:33:25 [build] mode: \"static\"\n10:33:25 [build] directory: /home/alex/projects/kiber-portal/app/dist/\n10:33:25 [build] Collecting build info...\n10:33:25 [build] ✓ Completed in 3.88s.\n10:33:25 [build] Building static entrypoints...\n10:33:28 [vite] ✓ built in 2.43s\n10:33:28 [vite] ✓ built in 590ms\n10:33:28 [build] Rearranging server assets...\n\n generating static routes \n10:33:28   ├─ /404.html (+26ms) \n10:33:28   ├─ /arenda-robotov-na-meropriyatie/index.html (+17ms) \n10:33:29   ├─ /articles/index.html (+8ms) \n10:33:29   ├─ /compilations/index.html (+13ms) \n10:33:29   ├─ /contacts/index.html (+5ms) \n10:33:29   ├─ /design-review/index.html (+6ms) \n10:33:29   ├─ /news/index.html (+9ms) \n10:33:29   ├─ /news-v2/index.html (+28ms) \n10:33:29   ├─ /parity/arenda-robotov-na-meropriyatie/index.html (+45ms) \n10:33:29   ├─ /parity/arenda-unitree-g1/index.html (+38ms) \n10:33:29   ├─ /parity/articles/index.html (+39ms) \n10:33:29   ├─ /parity/home/index.html (+54ms) \n10:33:29   ├─ /parity/news/index.html (+7ms) \n10:33:29   ├─ /parity/roboty-gumanoidy/index.html (+42ms) \n10:33:29   ├─ /roboty-gumanoidy/index.html (+14ms) \n10:33:29   ├─ /index.html (+12ms) \n10:33:29   ├─ /arenda-agibot-x2/index.html (+7ms) \n10:33:29   ├─ /arenda-bellabot/index.html (+4ms) \n10:33:29   ├─ /arenda-glambot/index.html (+3ms) \n10:33:29   ├─ /arenda-inchbot-l1-w-edu/index.html (+3ms) \n10:33:29   ├─ /arenda-kettybot/index.html (+3ms) \n10:33:29   ├─ /arenda-klipmeiker/index.html (+4ms) \n10:33:29   ├─ /arenda-mini-robo-kofeyni/index.html (+4ms) \n10:33:29   ├─ /arenda-noetix-bumi/index.html (+3ms) \n10:33:29   ├─ /arenda-promobot-v4/index.html (+5ms) \n10:33:29   ├─ /arenda-robo-kofeyni/index.html (+5ms) \n10:33:29   ├─ /arenda-roboshashki/index.html (+4ms) \n10:33:29   ├─ /arenda-robot-barmen/index.html (+4ms) \n10:33:29   ├─ /arenda-robota-ardi/index.html (+4ms) \n10:33:29   ├─ /arenda-robota-hudozhnika-a4/index.html (+4ms) \n10:33:29   ├─ /arenda-robota-sofiya/index.html (+5ms) \n10:33:29   ├─ /arenda-robota-tron/index.html (+4ms) \n10:33:29   ├─ /arenda-senserobot/index.html (+7ms) \n10:33:29   ├─ /arenda-sketchbot/index.html (+5ms) \n10:33:29   ├─ /arenda-unitree-g1/index.html (+4ms) \n10:33:29   ├─ /arenda-unitree-go2/index.html (+4ms) \n10:33:29   ├─ /arenda-unitree-h2/index.html (+7ms) \n10:33:29   ├─ /arenda-unitree-r1/index.html (+5ms) \n10:33:29   ├─ /arenda-uv-box/index.html (+5ms) \n10:33:29   ├─ /arenda-xiaomi-cyberdog-2/index.html (+4ms) \n10:33:29   ├─ /neobychnyi-podarok-direktoru-robot/index.html (+4ms) \n10:33:29   ├─ /noetix-bumi-robot-gumanoid-dlya-meropriyatiy/index.html (+3ms) \n10:33:29   ├─ /pozdravlenie-robotom-na-svadbe/index.html (+3ms) \n10:33:29   ├─ /robot-ofitsiant-na-meropriyatii/index.html (+3ms) \n10:33:29   ├─ /sravnenie-unitree-g1-r1-h2/index.html (+3ms) \n10:33:29   ├─ /unitree-g1-ili-agibot-x2/index.html (+6ms) \n10:33:29   ├─ /velkom-zona-na-svadbe-robot/index.html (+3ms) \n10:33:29   ├─ /consent/index.html (+6ms) \n10:33:29   ├─ /cookie-policy/index.html (+4ms) \n10:33:29   ├─ /privacy-policy/index.html (+4ms) \n10:33:29   ├─ /terms/index.html (+2ms) \n10:33:29 ✓ Completed in 651ms.\n\n10:33:29 [build] ✓ Completed in 3.85s.\n10:33:29 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`\n10:33:29 [build] 51 page(s) built in 7.91s\n10:33:29 [build] Complete!\n"
+      "outputTail": "\n> build\n> astro build\n\n10:37:30 [content] Syncing content\n10:37:31 [content] Synced content\n10:37:31 [types] Generated 1.75s\n10:37:31 [build] output: \"static\"\n10:37:31 [build] mode: \"static\"\n10:37:31 [build] directory: /home/alex/projects/kiber-portal/app/dist/\n10:37:31 [build] Collecting build info...\n10:37:31 [build] ✓ Completed in 1.93s.\n10:37:31 [build] Building static entrypoints...\n10:37:33 [vite] ✓ built in 1.67s\n10:37:33 [vite] ✓ built in 618ms\n10:37:33 [build] Rearranging server assets...\n\n generating static routes \n10:37:33   ├─ /404.html (+41ms) \n10:37:33   ├─ /arenda-robotov-na-meropriyatie/index.html (+21ms) \n10:37:33   ├─ /articles/index.html (+11ms) \n10:37:33   ├─ /compilations/index.html (+13ms) \n10:37:33   ├─ /contacts/index.html (+8ms) \n10:37:33   ├─ /design-review/index.html (+7ms) \n10:37:33   ├─ /news/index.html (+14ms) \n10:37:33   ├─ /news-v2/index.html (+19ms) \n10:37:33   ├─ /parity/arenda-robotov-na-meropriyatie/index.html (+44ms) \n10:37:34   ├─ /parity/arenda-unitree-g1/index.html (+44ms) \n10:37:34   ├─ /parity/articles/index.html (+39ms) \n10:37:34   ├─ /parity/home/index.html (+39ms) \n10:37:34   ├─ /parity/news/index.html (+6ms) \n10:37:34   ├─ /parity/roboty-gumanoidy/index.html (+39ms) \n10:37:34   ├─ /roboty-gumanoidy/index.html (+7ms) \n10:37:34   ├─ /index.html (+15ms) \n10:37:34   ├─ /arenda-agibot-x2/index.html (+10ms) \n10:37:34   ├─ /arenda-bellabot/index.html (+4ms) \n10:37:34   ├─ /arenda-glambot/index.html (+4ms) \n10:37:34   ├─ /arenda-inchbot-l1-w-edu/index.html (+5ms) \n10:37:34   ├─ /arenda-kettybot/index.html (+4ms) \n10:37:34   ├─ /arenda-klipmeiker/index.html (+5ms) \n10:37:34   ├─ /arenda-mini-robo-kofeyni/index.html (+6ms) \n10:37:34   ├─ /arenda-noetix-bumi/index.html (+3ms) \n10:37:34   ├─ /arenda-promobot-v4/index.html (+3ms) \n10:37:34   ├─ /arenda-robo-kofeyni/index.html (+7ms) \n10:37:34   ├─ /arenda-roboshashki/index.html (+4ms) \n10:37:34   ├─ /arenda-robot-barmen/index.html (+3ms) \n10:37:34   ├─ /arenda-robota-ardi/index.html (+3ms) \n10:37:34   ├─ /arenda-robota-hudozhnika-a4/index.html (+3ms) \n10:37:34   ├─ /arenda-robota-sofiya/index.html (+3ms) \n10:37:34   ├─ /arenda-robota-tron/index.html (+3ms) \n10:37:34   ├─ /arenda-senserobot/index.html (+3ms) \n10:37:34   ├─ /arenda-sketchbot/index.html (+3ms) \n10:37:34   ├─ /arenda-unitree-g1/index.html (+3ms) \n10:37:34   ├─ /arenda-unitree-go2/index.html (+3ms) \n10:37:34   ├─ /arenda-unitree-h2/index.html (+3ms) \n10:37:34   ├─ /arenda-unitree-r1/index.html (+3ms) \n10:37:34   ├─ /arenda-uv-box/index.html (+3ms) \n10:37:34   ├─ /arenda-xiaomi-cyberdog-2/index.html (+2ms) \n10:37:34   ├─ /neobychnyi-podarok-direktoru-robot/index.html (+2ms) \n10:37:34   ├─ /noetix-bumi-robot-gumanoid-dlya-meropriyatiy/index.html (+2ms) \n10:37:34   ├─ /pozdravlenie-robotom-na-svadbe/index.html (+2ms) \n10:37:34   ├─ /robot-ofitsiant-na-meropriyatii/index.html (+2ms) \n10:37:34   ├─ /sravnenie-unitree-g1-r1-h2/index.html (+3ms) \n10:37:34   ├─ /unitree-g1-ili-agibot-x2/index.html (+3ms) \n10:37:34   ├─ /velkom-zona-na-svadbe-robot/index.html (+3ms) \n10:37:34   ├─ /consent/index.html (+3ms) \n10:37:34   ├─ /cookie-policy/index.html (+6ms) \n10:37:34   ├─ /privacy-policy/index.html (+4ms) \n10:37:34   ├─ /terms/index.html (+4ms) \n10:37:34 ✓ Completed in 636ms.\n\n10:37:34 [build] ✓ Completed in 3.09s.\n10:37:34 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`\n10:37:34 [build] 51 page(s) built in 5.19s\n10:37:34 [build] Complete!\n"
     },
     {
       "id": "robot_seo_links",
@@ -246,6 +246,19 @@
         "warnings": 0
       },
       "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"docsChecked\": 2,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": [],\n  \"checked\": [\n    \"production_deployment_dry_run\",\n    \"production_launch_checklist\"\n  ]\n}\n"
+    },
+    {
+      "id": "business_input_pack",
+      "command": "python3 scripts/validate_business_input_pack.py --root . --json",
+      "exitCode": 0,
+      "ok": true,
+      "summary": {
+        "docsChecked": 2,
+        "matrixBlockersChecked": 5,
+        "errors": 0,
+        "warnings": 0
+      },
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"docsChecked\": 2,\n    \"matrixBlockersChecked\": 5,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": [],\n  \"checked\": [\n    \"docs/business-inputs-request.md\",\n    \"docs/lead-flow-integration-plan.md\"\n  ]\n}\n"
     }
   ]
 }

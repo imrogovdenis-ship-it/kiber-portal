@@ -411,7 +411,7 @@ A single pre-production QA command now runs all local static gates in order:
 python3 scripts/run_launch_qa.py
 ```
 
-Current result: `status=passed`, `steps=16`, `passed=16`, `failed=0`.
+Current result: `status=passed`, `steps=17`, `passed=17`, `failed=0`.
 
 The bundle writes:
 
@@ -639,7 +639,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Legal pages | `/privacy-policy`, `/consent`, `/cookie-policy`, `/terms` generated from existing source documents | mobile article layout stacks through shared template | pass via whole-site validation |
 | Rendered image alt audit | 440 meaningful images on 42 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 779 rendered headings on 42 public pages checked | no visual change | errors=0, warnings=0 |
-| Unified launch QA bundle | 16 local static gates run in one command | no visual change | passed=16, failed=0 |
+| Unified launch QA bundle | 17 local static gates run in one command | no visual change | passed=17, failed=0 |
 | Rendered schema audit | JSON-LD coverage on 42 public pages, including home FAQPage and legal WebPage routes | no visual change | errors=0, warnings=0 |
 | Rendered social metadata audit | OG/Twitter coverage on 42 public pages | homepage social image remains explicit | errors=0, warnings=0 |
 | Rendered CTA flow audit | 726 CTA/link-flow entries across 42 public pages | masked messenger href filtered | errors=0, warnings=0 |
@@ -701,7 +701,7 @@ python3 scripts/audit_rendered_cta_flow.py --root . --json
 → publicPagesChecked=42, ctaLinks=726, errors=0, warnings=0
 
 python3 scripts/run_launch_qa.py
-→ status=passed, steps=16, passed=16, failed=0
+→ status=passed, steps=17, passed=17, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
@@ -777,6 +777,18 @@ The launch QA bundle now also includes `scripts/validate_production_dry_run_docs
 - the docs keep the canonical repo path, Alex-owned container/app naming, explicit approval boundaries, rollback coverage and existing Coolify/Traefik contour requirement.
 
 Validation output: `docsChecked=2`, `errors=0`, `warnings=0`.
+
+
+### Business-input pack validation gate
+
+The launch QA bundle now includes `scripts/validate_business_input_pack.py` as the `business_input_pack` step. It checks that `docs/business-inputs-request.md` and `docs/lead-flow-integration-plan.md` stay complete, secret-safe and aligned with the readiness matrix blockers:
+
+- contact/requisites, lead destination, analytics, SEO expansion, pricing/claims, redirects and deployment approval sections remain present;
+- Telegram/amoCRM/Yandex deferred integration plans remain explicit;
+- secret-like bot tokens, bearer tokens, API keys, passwords and similar values are rejected if they appear in the docs;
+- readiness-matrix blockers stay represented in the request pack.
+
+Validation output: `docsChecked=2`, `matrixBlockersChecked=5`, `errors=0`, `warnings=0`. The full bundle now passes 17/17 gates.
 
 ## Recommended next step
 

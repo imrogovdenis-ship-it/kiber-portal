@@ -37,6 +37,7 @@ python3 scripts/audit_rendered_cta_flow.py --root . --json
 python3 scripts/generate_route_inventory.py --root .
 python3 scripts/validate_production_readiness_matrix.py --root . --json
 python3 scripts/validate_production_dry_run_docs.py --root . --json
+python3 scripts/validate_business_input_pack.py --root . --json
 python3 scripts/run_launch_qa.py
 ```
 
