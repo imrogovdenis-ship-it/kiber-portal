@@ -15,7 +15,9 @@ const modalId = fields.modalId.example;
 const label = fields.label.example;
 const heading = fields.heading.example;
 const mascot = fields.mascotImage.example;
-const buttons = (fields.messengerButtons.example as MessengerButton[]).filter((button) => !button.href.includes('*'));
+const messengerButtons = fields.messengerButtons.example as MessengerButton[];
+const activeButtons = messengerButtons.filter((button) => !button.href.includes('*'));
+const pendingButtons = messengerButtons.filter((button) => button.href.includes('*'));
 ---
 <section class="contact-modal" id={modalId} aria-labelledby="contact-modal-title" role="dialog" aria-modal="true">
   <a class="contact-modal__backdrop" href="#" aria-label="Закрыть окно выбора мессенджера"></a>
@@ -27,17 +29,41 @@ const buttons = (fields.messengerButtons.example as MessengerButton[]).filter((b
     <div class="contact-modal__content">
       <div class="contact-modal__copy">
         <h2 id="contact-modal-title">{heading}</h2>
-        <p>Выберите канал связи — откроем мессенджер в новом окне или приложении.</p>
+        <p>Выберите мессенджер или оставьте имя и телефон. Отправку формы в Telegram и amoCRM подключим после передачи доступов.</p>
       </div>
       <img class="contact-modal__mascot" src={mascot.src} alt={mascot.alt} title={mascot.title} loading="lazy" />
     </div>
     <div class="contact-modal__buttons" aria-label="Мессенджеры для связи">
-      {buttons.map((button) => (
+      {activeButtons.map((button) => (
         <a class="contact-modal__button" href={button.href} target={button.target || '_blank'} rel={button.rel || 'noopener'} data-analytics-event="messenger_click" data-analytics-source="contact_messenger_modal" data-messenger={button.label}>
           <img src={button.icon} alt={button.iconAlt} loading="lazy" />
           <span>{button.label}</span>
         </a>
       ))}
+      {pendingButtons.map((button) => (
+        <button class="contact-modal__button contact-modal__button--pending" type="button" disabled data-integration-status="needs_real_destination" data-messenger={button.label}>
+          <img src={button.icon} alt={button.iconAlt} loading="lazy" />
+          <span>{button.label} — подключим после ссылки</span>
+        </button>
+      ))}
     </div>
+    <form class="contact-modal__form" data-integration-status="deferred_telegram_amocrm" aria-label="Форма заявки КИБЕР ПОРТАЛ">
+      <div class="contact-modal__form-grid">
+        <label>
+          <span>Имя</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required />
+        </label>
+        <label>
+          <span>Телефон</span>
+          <input type="tel" name="phone" autocomplete="tel" placeholder="+7 999 000 00 00" required />
+        </label>
+        <label class="contact-modal__form-wide">
+          <span>Email <em>необязательно</em></span>
+          <input type="email" name="email" autocomplete="email" placeholder="mail@example.ru" />
+        </label>
+      </div>
+      <p class="contact-modal__form-note">Форма подготовлена для отправки заявки в Telegram-чат и последующего дубля в amoCRM. Сейчас отправка не активирована, чтобы не подключать неподтверждённые доступы.</p>
+      <button class="contact-modal__submit" type="button" disabled data-analytics-event="lead_form_submit_deferred" data-analytics-source="contact_messenger_modal">Отправка формы будет подключена</button>
+    </form>
   </div>
 </section>

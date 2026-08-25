@@ -24,14 +24,15 @@ productionActionAllowed=false
 | Rendered social metadata audit | passed | `data/seo/rendered-social-metadata-audit.json` |
 | Rendered CTA/lead-flow audit | passed | `data/seo/rendered-cta-flow-audit.json` |
 | Static 404 page | ready/noindex | `app/src/pages/404.astro` |
+| Lead-flow integration plan | planned/deferred | `docs/lead-flow-integration-plan.md` |
 
 ## Business / approval blockers
 
 | Blocker | Status | Blocks production? | Source |
 |---|---:|---:|---|
-| Contacts/requisites | needs input | yes | `docs/business-inputs-request.md` |
-| Lead destination | needs input | yes | `docs/business-inputs-request.md` |
-| Analytics IDs/events | needs input | yes | `docs/business-inputs-request.md` |
+| Contacts/requisites | partially resolved from legal docs | no | `content-source/pages/privacy-policy.md`, `content-source/pages/terms.md` |
+| Lead destination | partially defined, Telegram/form targets needed | yes | `docs/lead-flow-integration-plan.md` |
+| Analytics IDs/events | planned, IDs needed | yes | `docs/lead-flow-integration-plan.md` |
 | Redirect approval | needs input | yes | `data/seo/redirects.scaffold.json` |
 | SEO expansion materials | needs input | partial | `docs/business-inputs-request.md` |
 | Coolify/DNS/SSL approval | needs approval | yes | `docs/production-deployment-dry-run.md` |

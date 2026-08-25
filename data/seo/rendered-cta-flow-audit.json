@@ -14,7 +14,9 @@
     "each public page has analytics CTA coverage"
   ],
   "safeFixesApplied": [
-    "Filtered messenger buttons with masked href values out of rendered ContactMessengerModal until real destination is approved."
+    "Header/footer/contact phone hrefs use tel:+79774790749.",
+    "Messenger buttons with masked href values render as disabled pending buttons until real destination is approved.",
+    "Contact popup form fields are rendered while actual Telegram/amoCRM submission remains disabled until credentials/destinations are provided."
   ],
   "summary": {
     "publicPagesChecked": 38,
@@ -5175,7 +5177,7 @@
     },
     {
       "route": "/contacts",
-      "label": "Передать данные",
+      "label": "Написать нам",
       "href": "#social",
       "hrefType": "same-page-anchor",
       "dataAnalyticsEvent": "contacts_confirm_click",

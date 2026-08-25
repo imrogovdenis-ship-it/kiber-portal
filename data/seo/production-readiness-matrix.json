@@ -57,26 +57,35 @@
       "status": "ready_noindex",
       "evidence": "app/src/pages/404.astro",
       "requiredBeforeLaunch": true
+    },
+    {
+      "id": "lead_flow_plan",
+      "status": "planned_deferred_until_ids_and_accesses",
+      "evidence": "docs/lead-flow-integration-plan.md",
+      "requiredBeforeLaunch": false
     }
   ],
   "businessBlockers": [
     {
       "id": "contacts_requisites",
-      "status": "needs_input",
-      "source": "docs/business-inputs-request.md",
-      "blocksProduction": true
+      "status": "partially_resolved_from_legal_docs",
+      "source": "content-source/pages/privacy-policy.md; content-source/pages/terms.md; app/src/pages/contacts/index.astro",
+      "blocksProduction": false,
+      "note": "Legal operator facts were added from existing legal documents; final review still recommended before launch."
     },
     {
       "id": "lead_destination",
-      "status": "needs_input",
-      "source": "docs/business-inputs-request.md",
-      "blocksProduction": true
+      "status": "partially_defined_destinations_needed",
+      "source": "docs/lead-flow-integration-plan.md",
+      "blocksProduction": true,
+      "note": "Max/WhatsApp links exist; Telegram link/chat target and form delivery endpoint still needed."
     },
     {
       "id": "analytics_ids_events",
-      "status": "needs_input",
-      "source": "docs/business-inputs-request.md",
-      "blocksProduction": true
+      "status": "planned_ids_needed",
+      "source": "docs/lead-flow-integration-plan.md",
+      "blocksProduction": true,
+      "note": "Yandex Metrica/Webmaster planned; IDs/verification values deferred."
     },
     {
       "id": "redirect_approval",

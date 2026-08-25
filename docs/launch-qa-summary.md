@@ -1,6 +1,6 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T01:22:56.990326+00:00
+Дата: 2026-08-25T02:30:30.637394+00:00
 Статус: `passed`
 
 ## Summary
@@ -22,7 +22,7 @@
 | `content_detail_pages` | pass | `{"detailPages": 7, "checkedPages": 7, "errors": 0, "warnings": 0}` |
 | `whole_site_static` | pass | `{"htmlPages": 47, "publicPages": 38, "previewPages": 9, "checkedPages": 47, "errors": 0, "warnings": 0}` |
 | `rendered_image_alt` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "meaningfulImages": 435}` |
-| `rendered_headings` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "headings": 729}` |
+| `rendered_headings` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "headings": 736}` |
 | `rendered_schema` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "schemaTypes": {"BreadcrumbList": 36, "FAQPage": 24, "Service": 24, "CollectionPage": 4, "Blog": 1, "ContactPage": 1, "Organization": 2, "WebSite": 1, "BlogPosting": 7}, "pageTypes": {"robot detail": 24, "collection/content index": 5, "contacts": 1, "home": 1, "article/detail": 7}}` |
 | `rendered_social_metadata` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0}` |
 | `rendered_cta_flow` | pass | `{"publicPagesChecked": 38, "ctaLinks": 678, "hrefTypes": {"internal": 330, "same-page-anchor": 233, "approved-external": 115}, "errors": 0, "warnings": 0}` |

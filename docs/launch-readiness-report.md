@@ -61,6 +61,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ## Что уже готово технически
@@ -79,6 +80,8 @@ docs/rendered-cta-flow-audit.md
 - Rendered schema audit covers 38 public pages with errors=0, warnings=0 and validates JSON-LD type coverage.
 - Rendered social metadata audit covers 38 public pages with errors=0, warnings=0 and validates OG/Twitter coverage.
 - Rendered CTA/lead-flow audit covers 38 public pages and 678 CTA links with errors=0, warnings=0.
+- Header/footer/contact phone links use `tel:+79774790749`; contact popup includes messenger buttons and a deferred lead form with name, phone and optional email.
+- Lead-flow/Yandex/amoCRM integration plan is prepared in `docs/lead-flow-integration-plan.md`; real IDs/accesses are deferred.
 - Unified launch QA bundle runs 14 gates and currently passes 14/14 with failed=0.
 - Business input request pack is prepared in `docs/business-inputs-request.md`.
 - Production deployment dry-run plan is prepared in `docs/production-deployment-dry-run.md`; it does not touch infrastructure.
@@ -88,17 +91,18 @@ docs/rendered-cta-flow-audit.md
 
 These are not code blockers for the static build, but they should be resolved before replacing production:
 
-1. **Final business/contact details**
-   - Contacts page currently has a safe placeholder.
-   - Need approved legal/company details, address if public, email, messenger links and any required footer/legal copy.
+1. **Telegram/form delivery destinations**
+   - Max/WhatsApp links are present where available.
+   - Telegram public link and target Telegram chat/thread for form delivery are still needed.
+   - Form UI is rendered, but submit is disabled until delivery endpoint is approved.
 
-2. **Lead capture and messenger behavior**
-   - CTA structure is present, but production endpoints/messenger routing must be approved.
-   - Need confirmed destination for forms or messenger modal behavior.
+2. **Lead capture and CRM behavior**
+   - CTA structure is present and validated.
+   - Telegram form delivery and amoCRM duplicate are documented in `docs/lead-flow-integration-plan.md`, but not connected yet.
 
 3. **Analytics and conversion tracking**
-   - Need approved analytics IDs/events before production wiring.
-   - Do not fabricate IDs or silently connect third-party analytics.
+   - Yandex Metrica/Webmaster stack is planned.
+   - Need approved counter ID, webmaster verification value, goal names/IDs and consent/cookie decision before production wiring.
 
 4. **Redirect policy**
    - Current canonical routes are preserved for migrated pages.

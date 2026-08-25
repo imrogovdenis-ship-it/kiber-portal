@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `rendered_cta_flow_audit_passed_needs_business_launch_inputs`
+Статус: `lead_flow_inputs_applied_deferred_integrations_need_ids`
 
 ## Цель прохода
 
@@ -68,6 +68,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ## Applied changes in this pass
@@ -298,6 +299,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ### Rendered image alt audit pass
@@ -329,6 +331,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -358,6 +361,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ### Unified launch QA bundle pass
@@ -385,6 +389,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -413,6 +418,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
@@ -431,6 +437,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 It documents allowed Alex-owned zones, hard server boundaries, pre-change note template, approval gates, local QA, Docker/Coolify dry-run commands, rollback options, post-deploy checks and production blockers.
@@ -456,6 +463,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ### Rendered social metadata audit pass
@@ -477,6 +485,7 @@ data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 ### Rendered CTA / lead-flow audit pass
@@ -488,6 +497,10 @@ Rendered public pages now have a CTA/link-flow gate:
 - CTA labels, placeholder hrefs, masked/broken hrefs, same-page anchors, internal route targets, internal fragments, external allowlist and `noopener` are validated;
 - every public page must have `data-analytics-event` CTA coverage;
 - masked messenger hrefs are filtered out of rendered modal HTML until real destinations are approved;
+- lead-flow/Yandex/amoCRM integration plan captured in `docs/lead-flow-integration-plan.md`;
+- legal contact facts were applied to `/contacts` from `content-source/pages/privacy-policy.md` and `content-source/pages/terms.md`;
+- header/footer/contact phone links now use real `tel:+79774790749` href;
+- contact popup now includes name/phone/email fields with disabled submit until Telegram/amoCRM destinations are provided;
 - latest validation result: `publicPagesChecked=38`, `ctaLinks=678`, `errors=0`, `warnings=0`.
 
 Evidence:
@@ -495,6 +508,7 @@ Evidence:
 ```text
 data/seo/rendered-cta-flow-audit.json
 docs/rendered-cta-flow-audit.md
+docs/lead-flow-integration-plan.md
 ```
 
 Browser DOM proof after the pass:

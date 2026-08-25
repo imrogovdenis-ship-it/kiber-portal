@@ -1,35 +1,47 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaLink from '../../components/site/CtaLink.astro';
+const legalFacts = [
+  ['Оператор', 'ИП Маркин Александр Сергеевич', 'Источник: Политика обработки персональных данных, п. 1.1 и контактная информация оператора.'],
+  ['ИНН', '771898397717', 'Источник: Политика обработки персональных данных и Пользовательское соглашение.'],
+  ['ОГРНИП', '326774600084499', 'Источник: Политика обработки персональных данных.'],
+  ['Телефон', '+7 977 479 07 49', 'Публичный телефон из юридических документов и шапки сайта.'],
+  ['Email по персональным данным', 'markinas28@yandex.ru', 'Источник: Политика обработки персональных данных.'],
+  ['Email из footer текущих данных сайта', 'hello.obtix@gmail.com', 'Источник: данные сайта в GitHub; использовать как публичный email после финального подтверждения.'],
+];
+const integrationPlan = [
+  ['Мессенджеры', 'Max и WhatsApp открываются напрямую; Telegram показывается как ожидающий финальной ссылки.', 'Реальную Telegram-ссылку нужно передать перед production.'],
+  ['Форма заявки', 'Поля: имя, телефон, email необязательно.', 'Отправка в Telegram-чат и дубль в amoCRM спроектированы, но не активированы без доступов.'],
+  ['Аналитика', 'Планируются Яндекс.Метрика, Яндекс.Вебмастер и цели по CTA/формам.', 'Конкретные ID и доступы будут добавлены позже.'],
+];
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     name: 'Контакты КИБЕР ПОРТАЛ',
     url: 'https://www.kiber-portal.ru/contacts',
-    description: 'Контактная страница КИБЕР ПОРТАЛА для заявок на аренду роботов.',
+    description: 'Контакты КИБЕР ПОРТАЛА для заявок на аренду роботов.',
   },
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'КИБЕР ПОРТАЛ',
+    legalName: 'ИП Маркин Александр Сергеевич',
     url: 'https://www.kiber-portal.ru/',
     telephone: '+7 977 479 07 49',
+    email: 'markinas28@yandex.ru',
+    taxID: '771898397717',
+    identifier: 'ОГРНИП 326774600084499',
   },
 ];
-const placeholders = [
-  ['Телефон', '+7 977 479 07 49', 'Публичный номер уже используется в шапке сайта.'],
-  ['Мессенджеры', 'Ожидают финального подключения', 'Нужны утверждённые Telegram/WhatsApp/Max ссылки.'],
-  ['Реквизиты', 'Требуют подтверждения', 'Юридические данные не добавляем без бизнес-аппрува.'],
-];
 ---
-<BaseLayout title="Контакты | КИБЕР ПОРТАЛ" description="Контакты КИБЕР ПОРТАЛА. Страница готовится к наполнению точными реквизитами компании." sourceUrl="/contacts" ogImage="/images/kiber-gosha-yoga-red-ushanka.jpg" jsonLd={jsonLd}>
+<BaseLayout title="Контакты | КИБЕР ПОРТАЛ" description="Контакты КИБЕР ПОРТАЛА: телефон, реквизиты оператора и каналы для заявки на аренду роботов." sourceUrl="/contacts" ogImage="/images/kiber-gosha-yoga-red-ushanka.jpg" jsonLd={jsonLd}>
   <main>
     <section class="content-live-hero contacts-live-hero">
       <div class="container content-live-hero__inner">
         <span>КОНТАКТЫ</span>
         <h1>Связаться с КИБЕР ПОРТАЛОМ</h1>
-        <p>Подберём робота под мероприятие, проверим сценарий и подготовим предложение. Фактические реквизиты и каналы связи добавим только после подтверждения.</p>
+        <p>Подберём робота под мероприятие, проверим сценарий и подготовим предложение. В шапке и в блоках связи показываем телефон, а в попапе — мессенджеры и форму заявки.</p>
         <div class="hero-actions">
           <CtaLink href="#social" event="contacts_write_click" source="contacts_hero" pageType="contacts" placement="hero">Написать нам</CtaLink>
           <CtaLink class="btn btn-secondary" href="tel:+79774790749" event="contacts_call_click" source="contacts_hero" pageType="contacts" placement="hero">Позвонить</CtaLink>
@@ -38,11 +50,26 @@ const placeholders = [
     </section>
     <section class="section content-live-section" id="contact-details">
       <div class="container">
-        <span class="content-live-eyebrow">01 — ДАННЫЕ ДЛЯ ЗАПУСКА</span>
-        <h2>Что уже можно показать и что требует подтверждения</h2>
-        <p class="content-live-lead">Страница сделана как безопасная production-ready заготовка: визуально она уже в стиле сайта, но спорные бизнес-факты не выдумываются.</p>
+        <span class="content-live-eyebrow">01 — РЕКВИЗИТЫ И КОНТАКТЫ</span>
+        <h2>Данные из юридических документов сайта</h2>
+        <p class="content-live-lead">Реквизиты взяты из raw extraction юридических страниц: `content-source/pages/privacy-policy.md` и `content-source/pages/terms.md`. Спорные или устаревшие значения отдельно отмечены как требующие финального подтверждения.</p>
         <div class="content-live-grid contacts-live-grid">
-          {placeholders.map(([label, value, note]) => (
+          {legalFacts.map(([label, value, note]) => (
+            <article class="content-live-card">
+              <span>{label}</span>
+              <h3>{value}</h3>
+              <p>{note}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="section content-live-section contacts-live-next">
+      <div class="container">
+        <span class="content-live-eyebrow">02 — ЗАЯВКИ И ИНТЕГРАЦИИ</span>
+        <h2>Что включаем сейчас и что подключим после доступов</h2>
+        <div class="content-live-grid contacts-live-grid">
+          {integrationPlan.map(([label, value, note]) => (
             <article class="content-live-card">
               <span>{label}</span>
               <h3>{value}</h3>
@@ -55,11 +82,11 @@ const placeholders = [
     <section class="section content-live-section contacts-live-next">
       <div class="container content-live-cta">
         <div>
-          <span class="content-live-eyebrow">02 — ПЕРЕД ПУБЛИКАЦИЕЙ</span>
-          <h2>Нужны финальные реквизиты и каналы связи</h2>
-          <p>После подтверждения можно будет заменить placeholders на точные контакты, добавить форму и включить аналитику событий.</p>
+          <span class="content-live-eyebrow">03 — НАПИСАТЬ НАМ</span>
+          <h2>Откройте попап связи</h2>
+          <p>В попапе доступны кнопки Max/WhatsApp, Telegram как ожидающий финальной ссылки, и форма с именем, телефоном и необязательным email.</p>
         </div>
-        <CtaLink href="#social" event="contacts_confirm_click" source="contacts_next" pageType="contacts" placement="body">Передать данные</CtaLink>
+        <CtaLink href="#social" event="contacts_confirm_click" source="contacts_next" pageType="contacts" placement="body">Написать нам</CtaLink>
       </div>
     </section>
   </main>
