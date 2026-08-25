@@ -31,6 +31,7 @@ python3 scripts/validate_content_detail_pages.py --root . --json
 python3 scripts/validate_whole_site_static.py --root . --json
 python3 scripts/audit_rendered_image_alt.py --root . --json
 python3 scripts/audit_rendered_headings.py --root . --json
+python3 scripts/audit_rendered_schema.py --root . --json
 python3 scripts/generate_route_inventory.py --root .
 python3 scripts/run_launch_qa.py
 ```

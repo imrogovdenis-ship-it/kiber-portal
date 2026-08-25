@@ -1,0 +1,406 @@
+{
+  "date": "2026-08-25",
+  "status": "passed",
+  "scope": "rendered public/indexable Astro HTML pages only; preview/noindex/system routes excluded",
+  "checks": [
+    "valid JSON-LD scripts",
+    "at least one schema type per public page",
+    "home Organization+WebSite",
+    "contacts ContactPage",
+    "robot Service+BreadcrumbList",
+    "article/detail BreadcrumbList warnings"
+  ],
+  "summary": {
+    "publicPagesChecked": 38,
+    "errors": 0,
+    "warnings": 0,
+    "schemaTypes": {
+      "BreadcrumbList": 36,
+      "FAQPage": 24,
+      "Service": 24,
+      "CollectionPage": 4,
+      "Blog": 1,
+      "ContactPage": 1,
+      "Organization": 2,
+      "WebSite": 1,
+      "BlogPosting": 7
+    },
+    "pageTypes": {
+      "robot detail": 24,
+      "collection/content index": 5,
+      "contacts": 1,
+      "home": 1,
+      "article/detail": 7
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "checked": [
+    {
+      "route": "/arenda-agibot-x2",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-bellabot",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-glambot",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-inchbot-l1-w-edu",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-kettybot",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-klipmeiker",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-mini-robo-kofeyni",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-noetix-bumi",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-promobot-v4",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robo-kofeyni",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-roboshashki",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robot-barmen",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robota-ardi",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robota-hudozhnika-a4",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robota-sofiya",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robota-tron",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-robotov-na-meropriyatie",
+      "pageType": "collection/content index",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "CollectionPage"
+      ]
+    },
+    {
+      "route": "/arenda-senserobot",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-sketchbot",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-unitree-g1",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-unitree-go2",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-unitree-h2",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-unitree-r1",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-uv-box",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/arenda-xiaomi-cyberdog-2",
+      "pageType": "robot detail",
+      "schemaScripts": 3,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "FAQPage",
+        "Service"
+      ]
+    },
+    {
+      "route": "/articles",
+      "pageType": "collection/content index",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "Blog",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/compilations",
+      "pageType": "collection/content index",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "CollectionPage"
+      ]
+    },
+    {
+      "route": "/contacts",
+      "pageType": "contacts",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "ContactPage",
+        "Organization"
+      ]
+    },
+    {
+      "route": "/",
+      "pageType": "home",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "Organization",
+        "WebSite"
+      ]
+    },
+    {
+      "route": "/neobychnyi-podarok-direktoru-robot",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/news",
+      "pageType": "collection/content index",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "CollectionPage"
+      ]
+    },
+    {
+      "route": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/pozdravlenie-robotom-na-svadbe",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/robot-ofitsiant-na-meropriyatii",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/roboty-gumanoidy",
+      "pageType": "collection/content index",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "CollectionPage"
+      ]
+    },
+    {
+      "route": "/sravnenie-unitree-g1-r1-h2",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/unitree-g1-ili-agibot-x2",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "route": "/velkom-zona-na-svadbe-robot",
+      "pageType": "article/detail",
+      "schemaScripts": 2,
+      "schemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ]
+    }
+  ]
+}

@@ -35,6 +35,12 @@
       "requiredBeforeLaunch": true
     },
     {
+      "id": "rendered_schema_audit",
+      "status": "passed",
+      "evidence": "data/seo/rendered-schema-audit.json",
+      "requiredBeforeLaunch": true
+    },
+    {
       "id": "static_404",
       "status": "ready_noindex",
       "evidence": "app/src/pages/404.astro",

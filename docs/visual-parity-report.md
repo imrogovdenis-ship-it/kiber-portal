@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `deployment_dry_run_plan_ready_needs_business_launch_inputs`
+Статус: `rendered_schema_audit_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -62,6 +62,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 ## Applied changes in this pass
@@ -286,6 +288,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 ### Rendered image alt audit pass
@@ -311,6 +315,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -334,6 +340,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 ### Unified launch QA bundle pass
@@ -355,6 +363,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -377,6 +387,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
@@ -389,9 +401,30 @@ A deployment dry-run plan is prepared without changing infrastructure:
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 It documents allowed Alex-owned zones, hard server boundaries, pre-change note template, approval gates, local QA, Docker/Coolify dry-run commands, rollback options, post-deploy checks and production blockers.
+
+### Rendered schema audit pass
+
+Rendered public pages now have a JSON-LD schema inventory/audit gate:
+
+- added `scripts/audit_rendered_schema.py`;
+- public/indexable pages only are checked; preview/noindex/system routes are excluded;
+- every public page must expose valid JSON-LD schema types;
+- homepage requires `Organization` + `WebSite`;
+- contacts requires `ContactPage`;
+- robot pages require `Service` + `BreadcrumbList`;
+- latest validation result: `publicPagesChecked=38`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
+```
 
 Browser DOM proof after the pass:
 
@@ -481,7 +514,8 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Whole-site static validation | 47 generated HTML files checked, including 38 public routes and static 404 | no visual change | errors=0, warnings=0 |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
-| Unified launch QA bundle | 11 local static gates run in one command | no visual change | passed=11, failed=0 |
+| Unified launch QA bundle | 12 local static gates run in one command | no visual change | passed=12, failed=0 |
+| Rendered schema audit | JSON-LD coverage on 38 public pages | no visual change | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -530,8 +564,11 @@ python3 scripts/audit_rendered_image_alt.py --root . --json
 python3 scripts/audit_rendered_headings.py --root . --json
 → publicPagesChecked=38, headings=729, errors=0, warnings=0
 
+python3 scripts/audit_rendered_schema.py --root . --json
+→ publicPagesChecked=38, errors=0, warnings=0
+
 python3 scripts/run_launch_qa.py
-→ status=passed, steps=11, passed=11, failed=0
+→ status=passed, steps=12, passed=12, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK

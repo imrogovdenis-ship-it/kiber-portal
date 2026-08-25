@@ -1,12 +1,12 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T00:52:26.690931+00:00
+Дата: 2026-08-25T00:58:03.285413+00:00
 Статус: `passed`
 
 ## Summary
 
-- Steps: 11
-- Passed: 11
+- Steps: 12
+- Passed: 12
 - Failed: 0
 
 ## Gates
@@ -23,6 +23,7 @@
 | `whole_site_static` | pass | `{"htmlPages": 47, "publicPages": 38, "previewPages": 9, "checkedPages": 47, "errors": 0, "warnings": 0}` |
 | `rendered_image_alt` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "meaningfulImages": 435}` |
 | `rendered_headings` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "headings": 729}` |
+| `rendered_schema` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "schemaTypes": {"BreadcrumbList": 36, "FAQPage": 24, "Service": 24, "CollectionPage": 4, "Blog": 1, "ContactPage": 1, "Organization": 2, "WebSite": 1, "BlogPosting": 7}, "pageTypes": {"robot detail": 24, "collection/content index": 5, "contacts": 1, "home": 1, "article/detail": 7}}` |
 | `route_inventory` | pass | `{"routes": 47, "publicRoutes": 38, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "contacts": 1, "home": 1, "article/detail": 7}}` |
 
 ## Artifact

@@ -55,6 +55,8 @@ docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
 data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
+data/seo/rendered-schema-audit.json
+docs/rendered-schema-audit.md
 ```
 
 ## Что уже готово технически
@@ -70,7 +72,8 @@ docs/production-readiness-matrix.md
 - Production launch checklist and redirect scaffold are prepared but not activated.
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
 - Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
-- Unified launch QA bundle runs 11 gates and currently passes 11/11 with failed=0.
+- Rendered schema audit covers 38 public pages with errors=0, warnings=0 and validates JSON-LD type coverage.
+- Unified launch QA bundle runs 12 gates and currently passes 12/12 with failed=0.
 - Business input request pack is prepared in `docs/business-inputs-request.md`.
 - Production deployment dry-run plan is prepared in `docs/production-deployment-dry-run.md`; it does not touch infrastructure.
 - Production readiness decision matrix is prepared in `data/seo/production-readiness-matrix.json` and `docs/production-readiness-matrix.md`.

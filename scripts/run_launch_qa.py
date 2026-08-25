@@ -64,6 +64,11 @@ STEPS = [
         "json": True,
     },
     {
+        "id": "rendered_schema",
+        "command": ["python3", "scripts/audit_rendered_schema.py", "--root", ".", "--json"],
+        "json": True,
+    },
+    {
         "id": "route_inventory",
         "command": ["python3", "scripts/generate_route_inventory.py", "--root", "."],
         "json": True,
