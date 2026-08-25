@@ -17,6 +17,12 @@
       "requiredBeforeLaunch": true
     },
     {
+      "id": "robots_txt",
+      "status": "passed",
+      "evidence": "app/public/robots.txt",
+      "requiredBeforeLaunch": true
+    },
+    {
       "id": "route_inventory",
       "status": "passed",
       "evidence": "data/seo/route-inventory.json",
@@ -63,6 +69,18 @@
       "status": "planned_deferred_until_ids_and_accesses",
       "evidence": "docs/lead-flow-integration-plan.md",
       "requiredBeforeLaunch": false
+    },
+    {
+      "id": "production_dry_run_docs",
+      "status": "passed",
+      "evidence": "docs/production-deployment-dry-run.md",
+      "requiredBeforeLaunch": true
+    },
+    {
+      "id": "business_input_pack",
+      "status": "passed",
+      "evidence": "docs/business-inputs-request.md",
+      "requiredBeforeLaunch": true
     }
   ],
   "businessBlockers": [

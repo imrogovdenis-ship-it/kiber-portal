@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /parity/
+Disallow: /design-review
+Disallow: /news-v2
+
+Sitemap: https://www.kiber-portal.ru/sitemap-index.xml

@@ -92,6 +92,7 @@ docs/lead-flow-integration-plan.md
 - Production-readiness matrix is now validated inside the launch QA bundle; it must stay conservative and evidence-backed before any production discussion.
 - Production dry-run/checklist docs are now validated inside the launch QA bundle so stale QA counts or unsafe deployment wording are caught before launch discussion.
 - Business-input request and lead-flow docs are now validated inside the launch QA bundle for completeness, matrix alignment and secret-safety.
+- Robots.txt and sitemap policy are now validated; preview/noindex surfaces are disallowed while public/legal routes stay crawlable.
 
 ## Production blockers / inputs needed before launch
 

@@ -54,6 +54,11 @@ STEPS = [
         "json": True,
     },
     {
+        "id": "robots_txt",
+        "command": ["python3", "scripts/validate_robots_txt.py", "--root", ".", "--json"],
+        "json": True,
+    },
+    {
         "id": "rendered_image_alt",
         "command": ["python3", "scripts/audit_rendered_image_alt.py", "--root", ".", "--json"],
         "json": True,

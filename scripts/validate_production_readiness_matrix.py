@@ -79,6 +79,7 @@ def main() -> int:
     required_gates = {
         "launch_qa_bundle",
         "whole_site_static_validation",
+        "robots_txt",
         "route_inventory",
         "rendered_image_alt_audit",
         "rendered_heading_audit",
@@ -87,6 +88,8 @@ def main() -> int:
         "rendered_cta_flow_audit",
         "static_404",
         "lead_flow_plan",
+        "production_dry_run_docs",
+        "business_input_pack",
     }
     for gate_id in sorted(required_gates - gate_ids):
         errors.append({"code": "missing_technical_gate", "message": gate_id})

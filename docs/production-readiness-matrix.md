@@ -17,6 +17,7 @@ productionActionAllowed=false
 |---|---:|---|
 | Launch QA bundle | passed | `data/seo/launch-qa-summary.json` |
 | Whole-site static validation | passed | `data/seo/whole-site-static-check.json` |
+| Robots.txt / sitemap policy | passed | `app/public/robots.txt` |
 | Route inventory | passed | `data/seo/route-inventory.json` |
 | Rendered image alt audit | passed | `data/seo/rendered-image-alt-audit.json` |
 | Rendered heading audit | passed | `data/seo/rendered-heading-audit.json` |
@@ -25,6 +26,8 @@ productionActionAllowed=false
 | Rendered CTA/lead-flow audit | passed | `data/seo/rendered-cta-flow-audit.json` |
 | Static 404 page | ready/noindex | `app/src/pages/404.astro` |
 | Lead-flow integration plan | planned/deferred | `docs/lead-flow-integration-plan.md` |
+| Production dry-run docs | passed | `docs/production-deployment-dry-run.md` |
+| Business input request pack | passed | `docs/business-inputs-request.md` |
 
 ## Business / approval blockers
 
