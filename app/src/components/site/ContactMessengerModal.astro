@@ -1,0 +1,43 @@
+---
+import modalSpec from '../../../../data/block-library/contact-messenger-modal.json';
+
+type MessengerButton = {
+  label: string;
+  href: string;
+  icon: string;
+  iconAlt: string;
+  target?: string;
+  rel?: string;
+};
+
+const fields = modalSpec.contentFields;
+const modalId = fields.modalId.example;
+const label = fields.label.example;
+const heading = fields.heading.example;
+const mascot = fields.mascotImage.example;
+const buttons = (fields.messengerButtons.example as MessengerButton[]).filter((button) => !button.href.includes('*'));
+---
+<section class="contact-modal" id={modalId} aria-labelledby="contact-modal-title" role="dialog" aria-modal="true">
+  <a class="contact-modal__backdrop" href="#" aria-label="Закрыть окно выбора мессенджера"></a>
+  <div class="contact-modal__panel">
+    <div class="contact-modal__topline">
+      <span class="contact-modal__label">{label}</span>
+      <a class="contact-modal__close" href="#" aria-label={fields.close.fields.ariaLabel}>× <span>{fields.close.fields.label}</span></a>
+    </div>
+    <div class="contact-modal__content">
+      <div class="contact-modal__copy">
+        <h2 id="contact-modal-title">{heading}</h2>
+        <p>Выберите канал связи — откроем мессенджер в новом окне или приложении.</p>
+      </div>
+      <img class="contact-modal__mascot" src={mascot.src} alt={mascot.alt} title={mascot.title} loading="lazy" />
+    </div>
+    <div class="contact-modal__buttons" aria-label="Мессенджеры для связи">
+      {buttons.map((button) => (
+        <a class="contact-modal__button" href={button.href} target={button.target || '_blank'} rel={button.rel || 'noopener'} data-analytics-event="messenger_click" data-analytics-source="contact_messenger_modal" data-messenger={button.label}>
+          <img src={button.icon} alt={button.iconAlt} loading="lazy" />
+          <span>{button.label}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

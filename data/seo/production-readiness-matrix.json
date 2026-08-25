@@ -47,6 +47,12 @@
       "requiredBeforeLaunch": true
     },
     {
+      "id": "rendered_cta_flow_audit",
+      "status": "passed",
+      "evidence": "data/seo/rendered-cta-flow-audit.json",
+      "requiredBeforeLaunch": true
+    },
+    {
       "id": "static_404",
       "status": "ready_noindex",
       "evidence": "app/src/pages/404.astro",

@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `rendered_social_metadata_audit_passed_needs_business_launch_inputs`
+Статус: `rendered_cta_flow_audit_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -66,6 +66,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 ## Applied changes in this pass
@@ -294,6 +296,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 ### Rendered image alt audit pass
@@ -323,6 +327,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -350,6 +356,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 ### Unified launch QA bundle pass
@@ -375,6 +383,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -401,6 +411,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
@@ -417,6 +429,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 It documents allowed Alex-owned zones, hard server boundaries, pre-change note template, approval gates, local QA, Docker/Coolify dry-run commands, rollback options, post-deploy checks and production blockers.
@@ -440,6 +454,8 @@ data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 ### Rendered social metadata audit pass
@@ -459,6 +475,26 @@ Evidence:
 ```text
 data/seo/rendered-social-metadata-audit.json
 docs/rendered-social-metadata-audit.md
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
+```
+
+### Rendered CTA / lead-flow audit pass
+
+Rendered public pages now have a CTA/link-flow gate:
+
+- added `scripts/audit_rendered_cta_flow.py`;
+- public/indexable pages only are checked;
+- CTA labels, placeholder hrefs, masked/broken hrefs, same-page anchors, internal route targets, internal fragments, external allowlist and `noopener` are validated;
+- every public page must have `data-analytics-event` CTA coverage;
+- masked messenger hrefs are filtered out of rendered modal HTML until real destinations are approved;
+- latest validation result: `publicPagesChecked=38`, `ctaLinks=678`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/seo/rendered-cta-flow-audit.json
+docs/rendered-cta-flow-audit.md
 ```
 
 Browser DOM proof after the pass:
@@ -549,9 +585,10 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Whole-site static validation | 47 generated HTML files checked, including 38 public routes and static 404 | no visual change | errors=0, warnings=0 |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
-| Unified launch QA bundle | 13 local static gates run in one command | no visual change | passed=13, failed=0 |
+| Unified launch QA bundle | 14 local static gates run in one command | no visual change | passed=14, failed=0 |
 | Rendered schema audit | JSON-LD coverage on 38 public pages | no visual change | errors=0, warnings=0 |
 | Rendered social metadata audit | OG/Twitter coverage on 38 public pages | homepage social image added | errors=0, warnings=0 |
+| Rendered CTA flow audit | 678 CTA/link-flow entries across 38 public pages | masked messenger href filtered | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -606,8 +643,11 @@ python3 scripts/audit_rendered_schema.py --root . --json
 python3 scripts/audit_rendered_social_metadata.py --root . --json
 → publicPagesChecked=38, errors=0, warnings=0
 
+python3 scripts/audit_rendered_cta_flow.py --root . --json
+→ publicPagesChecked=38, ctaLinks=678, errors=0, warnings=0
+
 python3 scripts/run_launch_qa.py
-→ status=passed, steps=13, passed=13, failed=0
+→ status=passed, steps=14, passed=14, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
