@@ -548,7 +548,263 @@ PDF может быть закрыт от индексации или генер
 
 ---
 
-## 8. Content/data model
+## 8. Роль Astro в проекте
+
+Astro является техническим ядром frontend/SEO-архитектуры КИБЕР ПОРТАЛА. Он не является CRM, Telegram-ботом, аналитическим сервисом или production-инфраструктурой. Его роль — превратить структурированные данные, контент и компоненты в быстрый статический сайт с SEO-ready HTML.
+
+Целевая схема:
+
+```text
+GitHub source-of-truth
+  ├─ robots
+  ├─ shop products
+  ├─ collections
+  ├─ articles
+  ├─ news
+  ├─ cases
+  ├─ media library
+  ├─ SEO fields
+  └─ integration contracts
+        ↓
+Astro
+  ├─ layouts
+  ├─ components
+  ├─ pages/routes
+  ├─ content rendering
+  ├─ SEO head
+  ├─ JSON-LD schema
+  ├─ forms UI
+  ├─ CTA contracts
+  └─ static build
+        ↓
+app/dist
+  ├─ HTML
+  ├─ CSS
+  ├─ images/assets
+  ├─ sitemap
+  └─ 404
+        ↓
+QA validators
+        ↓
+Docker/Nginx/Coolify production
+```
+
+### 8.1. Astro как генератор статического сайта
+
+Astro должен собирать сайт в статический HTML по умолчанию:
+
+```text
+structured data + content collections + Astro components
+→ static HTML pages
+→ SEO-ready website
+```
+
+Это важно, потому что сайт должен хорошо индексироваться, быстро открываться, сохранять текст в HTML без обязательного runtime JavaScript и поддерживать много SEO-страниц: карточки роботов, подборки, статьи, новости, кейсы и юридические страницы.
+
+SSR допускается только для функций, которым действительно нужен runtime, например для будущего backend/API слоя формы, если он будет реализован внутри той же платформы. Базовая публичная часть сайта должна оставаться static-first.
+
+### 8.2. Astro как слой между данными и страницами
+
+Astro-компоненты не должны хранить бизнес-факты вручную. Бизнес-факты должны жить в source-of-truth данных.
+
+Неправильно:
+
+```text
+RobotPage.astro вручную содержит цену Unitree G1, FAQ и связанные статьи.
+```
+
+Правильно:
+
+```text
+data/content/model содержит факты робота
+→ loader/helper нормализует данные
+→ RobotPage.astro отображает их
+→ validators проверяют rendered output
+```
+
+Astro должен быть отображающим и маршрутизирующим слоем, а не местом ручного копирования цен, реквизитов, alt-текстов, FAQ, связей и SEO-полей.
+
+### 8.3. Astro layouts
+
+Базовые layout-компоненты:
+
+| Component | Роль |
+|---|---|
+| `BaseLayout.astro` | общий HTML shell, подключение SEO, header, footer, modal slots |
+| `SeoHead.astro` | title, description, canonical, robots, OG/Twitter, JSON-LD |
+| `Header.astro` | логотип, навигация, телефон, CTA |
+| `Footer.astro` | footer navigation, контакты, legal links, CTA |
+| `ContactMessengerModal.astro` | попап мессенджеров и формы |
+| `CookieBanner.astro` | будущий слой согласия для Яндекс.Метрики |
+
+### 8.4. Astro route generation
+
+Astro отвечает за генерацию публичных маршрутов.
+
+Примеры маршрутов:
+
+```text
+/
+/arenda-unitree-g1
+/arenda-bellabot
+/roboty-gumanoidy
+/arenda-robotov-na-meropriyatie
+/articles
+/news
+/contacts
+/privacy-policy
+/terms
+/404.html
+```
+
+Для карточек роботов и динамических content routes должен использоваться `getStaticPaths()` или эквивалентная статическая генерация из данных.
+
+Принцип:
+
+```text
+новый робот добавлен в source-of-truth
+→ Astro сгенерировал страницу
+→ QA проверил SEO, links, schema, CTA
+```
+
+### 8.5. Astro и SEO
+
+Astro должен централизованно формировать page-level SEO:
+
+- `<title>`;
+- meta description;
+- canonical;
+- robots;
+- Open Graph;
+- Twitter metadata;
+- JSON-LD;
+- H1;
+- breadcrumbs;
+- internal links;
+- CTA contracts.
+
+Schema по типам страниц:
+
+| Page type | Schema |
+|---|---|
+| Home | `Organization`, `WebSite` |
+| Robot rental card | `Service`, `FAQPage`, `BreadcrumbList` |
+| Collection | `CollectionPage`, `BreadcrumbList`, FAQ при наличии |
+| Blog article | `BlogPosting`, `BreadcrumbList` |
+| News | `NewsArticle` или `BlogPosting`, `BreadcrumbList` |
+| Contacts | `ContactPage`, `Organization` |
+| Legal | `WebPage` или базовый page schema при необходимости |
+
+### 8.6. Astro и дизайн-система
+
+Astro должен использовать собственную design system проекта:
+
+```text
+tokens.css
+base.css
+components.css
+global.css
+```
+
+Компоненты должны строиться на токенах, извлечённых и переосмысленных из опубликованного сайта. Нельзя использовать старый generated HTML/CSS как permanent architecture.
+
+Astro-компонент должен выражать смысл блока:
+
+```text
+RobotHero
+RobotPricing
+CollectionFAQ
+LeadForm
+ArticleAside
+```
+
+а не быть бессмысленной обёрткой над экспортированными классами.
+
+### 8.7. Astro и медиабиблиотека
+
+Astro потребляет media library и выводит изображения согласно их роли:
+
+| Role | Где используется |
+|---|---|
+| `hero` | hero карточки/подборки/кейса |
+| `card` | каталожная карточка |
+| `gallery` | галерея |
+| `OG` | Open Graph / Twitter image |
+| `icon` | интерфейсные элементы |
+| `decorative` | не meaningful image |
+
+Компоненты не должны случайно брать hero-фото как card image, если для карточки есть отдельная square product image.
+
+### 8.8. Astro и формы
+
+Astro отображает UI формы и CTA-контракты, но не должен сам хранить секреты и не обязан быть backend.
+
+Разделение:
+
+```text
+Astro
+  → form UI
+  → поля формы
+  → validation hints
+  → consent checkbox
+  → analytics event contract
+
+Backend/integration layer
+  → captcha verification
+  → Telegram delivery
+  → amoCRM duplicate
+  → secret handling
+  → error logging
+```
+
+До подключения backend/integration layer форма может быть отрисована как disabled/deferred, чтобы не создавать ложное ощущение работающей отправки.
+
+### 8.9. Astro и Кибер Гоша
+
+Astro предоставляет публичный content/RAG surface для Кибер Гоши:
+
+- карточки роботов;
+- FAQ;
+- статьи;
+- подборки;
+- новости;
+- кейсы;
+- structured data;
+- CTA context.
+
+Сам RAG-бот — отдельный runtime/integration layer. Astro даёт ему базу знаний и точку встраивания на сайте.
+
+### 8.10. Astro и Гефест
+
+Гефест управляет Astro-проектом через GitHub:
+
+```text
+задача / SEO-пакет / правка
+→ Гефест меняет data/content/components
+→ запускает Astro build
+→ запускает validators
+→ создаёт commit/push после подтверждения
+```
+
+Гефест не заменяет Astro. Он является агентом сопровождения, который работает с Astro-кодом, данными, документами и quality gates.
+
+### 8.11. Astro и production
+
+Production delivery:
+
+```text
+npm --prefix app run build
+→ app/dist
+→ Docker/Nginx
+→ Coolify/Traefik
+→ kiber-portal.ru
+```
+
+Astro не должен напрямую менять DNS, Coolify, analytics IDs, Telegram bot tokens или amoCRM credentials. Эти действия относятся к deployment/integration layer и требуют отдельного approval.
+
+---
+
+## 9. Content/data model
 
 ### 8.1. Общий принцип
 
@@ -600,7 +856,7 @@ rejected
 
 ---
 
-## 9. Robot catalog model
+## 10. Robot catalog model
 
 ### 9.1. Robot rental entity
 
@@ -653,7 +909,7 @@ reviewStatus
 
 ---
 
-## 10. Collection model
+## 11. Collection model
 
 Подборка должна быть reusable landing entity.
 
@@ -685,7 +941,7 @@ reviewStatus
 
 ---
 
-## 11. Blog/news model
+## 12. Blog/news model
 
 ### 11.1. Blog article model
 
@@ -741,7 +997,7 @@ schema
 
 ---
 
-## 12. Media library
+## 13. Media library
 
 Нужен отдельный раздел/слой медиабиблиотеки.
 
@@ -777,7 +1033,7 @@ format
 
 ---
 
-## 13. Forms and lead-flow
+## 14. Forms and lead-flow
 
 ### 13.1. Два типа кнопок
 
@@ -827,7 +1083,7 @@ amoCRM:
 
 ---
 
-## 14. Bots / agents
+## 15. Bots / agents
 
 ### 14.1. Кибер Гоша публичный
 
@@ -872,7 +1128,7 @@ amoCRM:
 
 ---
 
-## 15. Analytics/events
+## 16. Analytics/events
 
 ### 15.1. Аналитический стек
 
@@ -924,7 +1180,7 @@ data-robot-slug, если применимо
 
 ---
 
-## 16. Integrations
+## 17. Integrations
 
 ### 16.1. Telegram
 
@@ -971,7 +1227,7 @@ PDF не должен быть отдельным source-of-truth. Он долж
 
 ---
 
-## 17. Legal/compliance
+## 18. Legal/compliance
 
 Обязательные юридические страницы:
 
@@ -992,7 +1248,7 @@ PDF не должен быть отдельным source-of-truth. Он долж
 
 ---
 
-## 18. Validation / quality gates
+## 19. Validation / quality gates
 
 Сайт должен иметь rendered-output validation, а не только проверку исходных данных.
 
@@ -1022,7 +1278,7 @@ Preview/parity/system routes:
 
 ---
 
-## 19. Production/deployment boundaries
+## 20. Production/deployment boundaries
 
 Production actions запрещены без явного approval.
 
@@ -1045,7 +1301,7 @@ Production actions запрещены без явного approval.
 
 ---
 
-## 20. Content management
+## 21. Content management
 
 Сайт должен обновляться через ассистента/Гефеста, который меняет GitHub после подтверждения.
 
@@ -1070,9 +1326,9 @@ Production actions запрещены без явного approval.
 
 ---
 
-## 21. Open questions / assumptions
+## 22. Open questions / assumptions
 
-### 21.1. Требуют уточнения
+### 22.1. Требуют уточнения
 
 1. Финальная Telegram-ссылка для публичной кнопки.
 2. Telegram chat/thread для заявок из формы.
@@ -1087,7 +1343,7 @@ Production actions запрещены без явного approval.
 11. Список товаров для будущего магазина.
 12. Правила публикации цен по каждому роботу.
 
-### 21.2. Принятые assumptions
+### 22.2. Принятые assumptions
 
 - Главная цель — заявки на аренду роботов.
 - Главный CTA — «Написать нам» в мессенджер.
@@ -1101,7 +1357,7 @@ Production actions запрещены без явного approval.
 
 ---
 
-## 22. Итоговая целевая система
+## 23. Итоговая целевая система
 
 КИБЕР ПОРТАЛ должен стать не просто сайтом-витриной, а структурированной коммерческой платформой:
 
