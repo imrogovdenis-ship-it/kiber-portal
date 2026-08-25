@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T09:48:20.093333+00:00",
+  "date": "2026-08-25T10:24:36.998662+00:00",
   "status": "passed",
   "scope": "whole-site static output: all generated Astro HTML files, with production blockers focused on public indexable routes",
   "checks": [

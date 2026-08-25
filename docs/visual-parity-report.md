@@ -677,7 +677,7 @@ python3 scripts/validate_collection_pages.py --root . --json
 → collectionPages=2, checkedPages=2, errors=0, warnings=0
 
 python3 scripts/validate_content_index_pages.py --root . --json
-→ contentIndexPages=3, checkedPages=3, errors=0, warnings=0
+→ contentIndexPages=3, checkedPages=3, errors=0, warnings=0, including technical UI-label guard
 
 python3 scripts/validate_content_detail_pages.py --root . --json
 → detailPages=7, checkedPages=7, errors=0, warnings=0
@@ -742,6 +742,17 @@ A representative desktop/mobile pass covered `/articles`, `/compilations` and `/
 - `/news` placeholder state remains readable and ready for editor-approved items.
 
 Screenshots are stored under `data/design/parity-screenshots/content-index-qa-2026-08-25/`.
+
+
+### Content-index UI-label validation gate
+
+After the content-index QA pass, `scripts/validate_content_index_pages.py` now also rejects technical UI labels inside `.content-live-card` eyebrows:
+
+- raw source URL slugs such as `/some-source-page`;
+- file/migration paths such as `content-source`, `site-export`, `app/src`, `data/`;
+- migration/extraction labels such as `sourceUrl`, `slug`, `extraction`, `migration`, `raw export`.
+
+This keeps canonical/source URLs in data and link targets while preventing implementation provenance from resurfacing as mobile card chrome. The gate is part of `python3 scripts/run_launch_qa.py` through the existing `content_index_pages` step.
 
 ## Recommended next step
 

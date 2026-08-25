@@ -15,6 +15,11 @@ PAGES = [
     {"slug": "news", "title": "Новости про роботов | КИБЕР ПОРТАЛ", "types": {"CollectionPage", "BreadcrumbList"}, "minLinks": 0},
 ]
 REQUIRED_MARKERS = ["content-live-hero", "content-live-feed", "site-footer--live"]
+RAW_UI_LABEL_PATTERNS = [
+    ("raw_source_url", re.compile(r"^/[a-z0-9][a-z0-9\-/_.#]*$", re.I)),
+    ("file_path_label", re.compile(r"\b(?:content-source|content-verified|site-export|app/src|data/)\b", re.I)),
+    ("migration_label", re.compile(r"\b(?:sourceUrl|slug|extraction|migration|raw export|preview scaffold)\b", re.I)),
+]
 
 
 class PageParser(HTMLParser):
@@ -118,6 +123,11 @@ def main() -> int:
                 target = href.split("#", 1)[1]
                 if target and target not in hp.ids:
                     errors.append({"slug": slug, "code": "broken_fragment_link", "message": href})
+        for match in re.finditer(r"<article[^>]*class=\"[^\"]*content-live-card[^\"]*\"[\s\S]*?<span>(.*?)</span>", html):
+            label = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", match.group(1))).strip()
+            for code, pattern in RAW_UI_LABEL_PATTERNS:
+                if pattern.search(label):
+                    errors.append({"slug": slug, "code": f"technical_ui_label_{code}", "message": label})
         checked.append({"slug": slug, "canonical": canonical, "jsonLdTypes": sorted(types), "internalLinks": len(internal_links), "ogImage": og_image})
 
     result = {"ok": not errors, "summary": {"contentIndexPages": len(PAGES), "checkedPages": len(checked), "errors": len(errors), "warnings": len(warnings)}, "errors": errors, "warnings": warnings, "checked": checked}
