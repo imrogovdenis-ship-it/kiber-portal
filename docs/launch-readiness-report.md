@@ -122,6 +122,6 @@ These are not code blockers for the static build, but they should be resolved be
 
 If no new business inputs are available, continue with safe technical work:
 
-1. Continue representative mobile/detail-page visual QA and fix only visible template issues.
+1. Continue representative desktop/mobile QA on remaining content index/detail routes if needed.
 2. Review below-fold lazy image behaviour separately from real missing media assets; do not copy/download replacement assets until DOM/image checks confirm they are missing.
 3. Add only business-approved lead/analytics IDs when Alexander provides them; do not touch production infrastructure without approval.

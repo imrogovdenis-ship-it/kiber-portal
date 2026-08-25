@@ -56,6 +56,9 @@ data/design/parity-screenshots/launch-prep/*.png
 data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390-after-grid-fix.png
 data/design/parity-screenshots/mobile-qa-2026-08-25/contacts-mobile-390-after-grid-fix.png
 data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png
+data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390-after-cta-padding.png
+data/design/parity-screenshots/mobile-detail-qa-2026-08-25/collection-roboty-gumanoidy-mobile-390-after-cta-padding.png
+data/design/parity-screenshots/mobile-detail-qa-2026-08-25/article-unitree-g1-agibot-x2-mobile-390.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
@@ -304,6 +307,9 @@ data/design/parity-screenshots/launch-prep/*.png
 data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390-after-grid-fix.png
 data/design/parity-screenshots/mobile-qa-2026-08-25/contacts-mobile-390-after-grid-fix.png
 data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png
+data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390-after-cta-padding.png
+data/design/parity-screenshots/mobile-detail-qa-2026-08-25/collection-roboty-gumanoidy-mobile-390-after-cta-padding.png
+data/design/parity-screenshots/mobile-detail-qa-2026-08-25/article-unitree-g1-agibot-x2-mobile-390.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
@@ -701,10 +707,22 @@ A focused 390px mobile QA pass caught a real regression in the shared `.robot-ca
 
 Note: full-page CLI screenshots can show below-fold lazy images as pale placeholders until the browser scrolls them into view; this was treated separately from the real grid layout issue.
 
+
+### Mobile detail/collection CTA strip QA pass
+
+A second 390px pass covered a representative robot detail page, a collection page and an article detail page:
+
+- `/arenda-unitree-g1` robot detail: hero, intro/features/scenarios, FAQ, Gosha helper and footer remain readable on mobile;
+- `/roboty-gumanoidy` collection: the catalog now stays single-column after the shared card-grid fix;
+- `/unitree-g1-ili-agibot-x2` article: article hero/body/aside/footer remain readable;
+- the shared blue `.robot-live-cta-strip` had its inner container padded because mobile screenshots showed CTA text flush to the viewport edge on robot/collection pages.
+
+Screenshots are stored under `data/design/parity-screenshots/mobile-detail-qa-2026-08-25/`. Below-fold pale media wells in CLI full-page screenshots are still treated as lazy-paint evidence, not confirmed missing assets, unless DOM/natural-size checks fail.
+
 ## Recommended next step
 
 Proceed to the next safe site-building pass without touching production:
 
-1. continue mobile/detail-page visual QA on representative robot and content routes;
+1. continue representative desktop/mobile QA on remaining content index/detail routes if needed;
 2. review lazy-loaded below-fold media behaviour separately from real missing assets;
 3. continue integration prep only after Telegram/form/analytics IDs and approvals are provided.
