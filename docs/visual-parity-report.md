@@ -59,6 +59,12 @@ data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png
 data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390-after-cta-padding.png
 data/design/parity-screenshots/mobile-detail-qa-2026-08-25/collection-roboty-gumanoidy-mobile-390-after-cta-padding.png
 data/design/parity-screenshots/mobile-detail-qa-2026-08-25/article-unitree-g1-agibot-x2-mobile-390.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/articles-mobile-390-after-label-fix.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/articles-desktop-1280.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-mobile-390.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-desktop-1280.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/news-mobile-390.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/news-desktop-1280.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
@@ -310,6 +316,12 @@ data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png
 data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390-after-cta-padding.png
 data/design/parity-screenshots/mobile-detail-qa-2026-08-25/collection-roboty-gumanoidy-mobile-390-after-cta-padding.png
 data/design/parity-screenshots/mobile-detail-qa-2026-08-25/article-unitree-g1-agibot-x2-mobile-390.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/articles-mobile-390-after-label-fix.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/articles-desktop-1280.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-mobile-390.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-desktop-1280.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/news-mobile-390.png
+data/design/parity-screenshots/content-index-qa-2026-08-25/news-desktop-1280.png
 data/seo/rendered-image-alt-audit.json
 docs/rendered-image-alt-audit.md
 data/seo/rendered-heading-audit.json
@@ -719,10 +731,22 @@ A second 390px pass covered a representative robot detail page, a collection pag
 
 Screenshots are stored under `data/design/parity-screenshots/mobile-detail-qa-2026-08-25/`. Below-fold pale media wells in CLI full-page screenshots are still treated as lazy-paint evidence, not confirmed missing assets, unless DOM/natural-size checks fail.
 
+
+### Content index desktop/mobile QA pass
+
+A representative desktop/mobile pass covered `/articles`, `/compilations` and `/news`:
+
+- `/articles` mobile card labels no longer expose long source URL slugs; cards now use the readable label `Блог Кибер Гоши`;
+- the articles section lead copy was adjusted to avoid saying the visible card preserves the source URL; canonical/source URLs remain in page data and links;
+- `/compilations` robot cards were checked against DOM/natural image sizes; pale below-fold boxes in CLI full-page screenshots are lazy-paint artifacts, not confirmed missing assets;
+- `/news` placeholder state remains readable and ready for editor-approved items.
+
+Screenshots are stored under `data/design/parity-screenshots/content-index-qa-2026-08-25/`.
+
 ## Recommended next step
 
 Proceed to the next safe site-building pass without touching production:
 
-1. continue representative desktop/mobile QA on remaining content index/detail routes if needed;
-2. review lazy-loaded below-fold media behaviour separately from real missing assets;
-3. continue integration prep only after Telegram/form/analytics IDs and approvals are provided.
+1. continue QA on remaining production-readiness blockers only when new business inputs/materials arrive;
+2. keep lazy-loaded below-fold media behaviour separate from real missing assets;
+3. connect Telegram/form/analytics integrations only after IDs, destinations and approvals are provided.

@@ -46,12 +46,12 @@ const jsonLd = [
         <div class="robot-live-heading">
           <span>01 — СТАТЬИ</span>
           <h2>{articles.length} материалов в блоге</h2>
-          <p>Каждая статья сохраняет исходный URL и ведёт к коммерческим страницам: карточкам роботов, подборкам и заявке.</p>
+          <p>Каждая статья ведёт к коммерческим страницам: карточкам роботов, подборкам и заявке.</p>
         </div>
         <div class="content-live-card-grid">
           {articles.map((article) => (
             <article class="content-live-card">
-              <span>{article.data.sourceUrl}</span>
+              <span>Блог Кибер Гоши</span>
               <h3><a href={article.data.sourceUrl}>{article.data.h1 || article.data.title}</a></h3>
               <p>{article.data.description}</p>
               <a class="btn btn-secondary" href={article.data.sourceUrl}>Читать</a>
