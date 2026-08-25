@@ -2,20 +2,30 @@
   "date": "2026-08-24",
   "source": "data/seo/whole-site-static-check.json",
   "summary": {
-    "routes": 46,
+    "routes": 47,
     "publicRoutes": 38,
-    "previewNoindexRoutes": 8,
+    "previewNoindexRoutes": 9,
     "pageTypes": {
+      "preview/noindex": 9,
       "robot detail": 24,
       "collection": 2,
       "content index": 3,
       "contacts": 1,
-      "preview/noindex": 8,
       "home": 1,
       "article/detail": 7
     }
   },
   "routes": [
+    {
+      "route": "/404",
+      "pageType": "preview/noindex",
+      "public": false,
+      "robots": "noindex,nofollow",
+      "schemaCount": 1,
+      "imageCount": 6,
+      "linkCount": 24,
+      "canonical": "https://www.kiber-portal.ru/404"
+    },
     {
       "route": "/arenda-agibot-x2",
       "pageType": "robot detail",
@@ -293,7 +303,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "imageCount": 6,
-      "linkCount": 22,
+      "linkCount": 24,
       "canonical": "https://www.kiber-portal.ru/contacts"
     },
     {

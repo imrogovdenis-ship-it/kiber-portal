@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
@@ -86,10 +87,23 @@ def run_step(step: dict) -> dict:
         try:
             parsed = json.loads(output)
             summary = parsed.get("summary", parsed)
+            if step["id"] == "whole_site_static" and proc.returncode == 0:
+                wrapped = {
+                    "date": datetime.now(timezone.utc).isoformat(),
+                    "status": "passed" if parsed.get("ok") else "failed",
+                    "scope": "whole-site static output: all generated Astro HTML files, with production blockers focused on public indexable routes",
+                    "checks": ["title", "meta description", "canonical", "robots meta", "sitemap inclusion", "JSON-LD presence", "local image asset existence", "internal route existence", "fragment CTA targets"],
+                    "summary": parsed.get("summary", {}),
+                    "errors": parsed.get("errors", []),
+                    "warnings": parsed.get("warnings", []),
+                    "checked": parsed.get("checked", []),
+                }
+                (ROOT / "data/seo/whole-site-static-check.json").write_text(json.dumps(wrapped, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         except json.JSONDecodeError:
             parsed = None
     if step["id"] == "astro_build" and proc.returncode == 0:
-        summary = {"built": True, "pages": 46 if "46 page(s) built" in output else None}
+        pages_match = re.search(r"(\d+) page\(s\) built", output)
+        summary = {"built": True, "pages": int(pages_match.group(1)) if pages_match else None}
     return {
         "id": step["id"],
         "command": " ".join(step["command"]),

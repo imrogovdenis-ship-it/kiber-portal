@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-25T00:13:49.549385+00:00",
+  "date": "2026-08-25T00:23:31.694317+00:00",
   "status": "passed",
   "scope": "Complete pre-production local static QA bundle for KIBER PORTAL Astro output.",
   "summary": {
@@ -27,11 +27,11 @@
       "exitCode": 0,
       "ok": true,
       "summary": {
-        "htmlPages": 46,
+        "htmlPages": 47,
         "errors": 0,
         "warnings": 0
       },
-      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"htmlPages\": 46,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n"
+      "outputTail": "{\n  \"ok\": true,\n  \"summary\": {\n    \"htmlPages\": 47,\n    \"errors\": 0,\n    \"warnings\": 0\n  },\n  \"errors\": [],\n  \"warnings\": []\n}\n"
     },
     {
       "id": "astro_build",
@@ -40,9 +40,9 @@
       "ok": true,
       "summary": {
         "built": true,
-        "pages": 46
+        "pages": 47
       },
-      "outputTail": "\n> build\n> astro build\n\n00:13:44 [content] Syncing content\n00:13:44 [content] Synced content\n00:13:44 [types] Generated 1.54s\n00:13:44 [build] output: \"static\"\n00:13:44 [build] mode: \"static\"\n00:13:44 [build] directory: /home/alex/projects/kiber-portal/app/dist/\n00:13:44 [build] Collecting build info...\n00:13:44 [build] ✓ Completed in 1.69s.\n00:13:45 [build] Building static entrypoints...\n00:13:46 [vite] ✓ built in 1.51s\n00:13:47 [vite] ✓ built in 562ms\n00:13:47 [build] Rearranging server assets...\n\n generating static routes \n00:13:47   ├─ /arenda-robotov-na-meropriyatie/index.html (+45ms) \n00:13:47   ├─ /articles/index.html (+6ms) \n00:13:47   ├─ /compilations/index.html (+9ms) \n00:13:47   ├─ /contacts/index.html (+5ms) \n00:13:47   ├─ /design-review/index.html (+4ms) \n00:13:47   ├─ /news/index.html (+4ms) \n00:13:47   ├─ /news-v2/index.html (+8ms) \n00:13:47   ├─ /parity/arenda-robotov-na-meropriyatie/index.html (+38ms) \n00:13:47   ├─ /parity/arenda-unitree-g1/index.html (+45ms) \n00:13:47   ├─ /parity/articles/index.html (+32ms) \n00:13:47   ├─ /parity/home/index.html (+37ms) \n00:13:47   ├─ /parity/news/index.html (+4ms) \n00:13:47   ├─ /parity/roboty-gumanoidy/index.html (+32ms) \n00:13:47   ├─ /roboty-gumanoidy/index.html (+13ms) \n00:13:47   ├─ /index.html (+9ms) \n00:13:47   ├─ /arenda-agibot-x2/index.html (+9ms) \n00:13:47   ├─ /arenda-bellabot/index.html (+4ms) \n00:13:47   ├─ /arenda-glambot/index.html (+3ms) \n00:13:47   ├─ /arenda-inchbot-l1-w-edu/index.html (+3ms) \n00:13:47   ├─ /arenda-kettybot/index.html (+4ms) \n00:13:47   ├─ /arenda-klipmeiker/index.html (+7ms) \n00:13:47   ├─ /arenda-mini-robo-kofeyni/index.html (+4ms) \n00:13:47   ├─ /arenda-noetix-bumi/index.html (+6ms) \n00:13:47   ├─ /arenda-promobot-v4/index.html (+10ms) \n00:13:47   ├─ /arenda-robo-kofeyni/index.html (+5ms) \n00:13:47   ├─ /arenda-roboshashki/index.html (+4ms) \n00:13:47   ├─ /arenda-robot-barmen/index.html (+3ms) \n00:13:47   ├─ /arenda-robota-ardi/index.html (+7ms) \n00:13:47   ├─ /arenda-robota-hudozhnika-a4/index.html (+3ms) \n00:13:47   ├─ /arenda-robota-sofiya/index.html (+3ms) \n00:13:47   ├─ /arenda-robota-tron/index.html (+4ms) \n00:13:47   ├─ /arenda-senserobot/index.html (+3ms) \n00:13:47   ├─ /arenda-sketchbot/index.html (+4ms) \n00:13:47   ├─ /arenda-unitree-g1/index.html (+3ms) \n00:13:47   ├─ /arenda-unitree-go2/index.html (+3ms) \n00:13:47   ├─ /arenda-unitree-h2/index.html (+7ms) \n00:13:47   ├─ /arenda-unitree-r1/index.html (+6ms) \n00:13:47   ├─ /arenda-uv-box/index.html (+4ms) \n00:13:47   ├─ /arenda-xiaomi-cyberdog-2/index.html (+4ms) \n00:13:47   ├─ /neobychnyi-podarok-direktoru-robot/index.html (+3ms) \n00:13:47   ├─ /noetix-bumi-robot-gumanoid-dlya-meropriyatiy/index.html (+2ms) \n00:13:47   ├─ /pozdravlenie-robotom-na-svadbe/index.html (+2ms) \n00:13:47   ├─ /robot-ofitsiant-na-meropriyatii/index.html (+2ms) \n00:13:47   ├─ /sravnenie-unitree-g1-r1-h2/index.html (+3ms) \n00:13:47   ├─ /unitree-g1-ili-agibot-x2/index.html (+7ms) \n00:13:47   ├─ /velkom-zona-na-svadbe-robot/index.html (+3ms) \n00:13:47 ✓ Completed in 556ms.\n\n00:13:47 [build] ✓ Completed in 2.77s.\n00:13:47 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`\n00:13:47 [build] 46 page(s) built in 4.61s\n00:13:47 [build] Complete!\n"
+      "outputTail": "\n> build\n> astro build\n\n00:23:27 [content] Syncing content\n00:23:27 [content] Synced content\n00:23:27 [types] Generated 1.46s\n00:23:27 [build] output: \"static\"\n00:23:27 [build] mode: \"static\"\n00:23:27 [build] directory: /home/alex/projects/kiber-portal/app/dist/\n00:23:27 [build] Collecting build info...\n00:23:27 [build] ✓ Completed in 1.59s.\n00:23:27 [build] Building static entrypoints...\n00:23:28 [vite] ✓ built in 1.23s\n00:23:29 [vite] ✓ built in 463ms\n00:23:29 [build] Rearranging server assets...\n\n generating static routes \n00:23:29   ├─ /404.html (+23ms) \n00:23:29   ├─ /arenda-robotov-na-meropriyatie/index.html (+19ms) \n00:23:29   ├─ /articles/index.html (+11ms) \n00:23:29   ├─ /compilations/index.html (+12ms) \n00:23:29   ├─ /contacts/index.html (+6ms) \n00:23:29   ├─ /design-review/index.html (+5ms) \n00:23:29   ├─ /news/index.html (+6ms) \n00:23:29   ├─ /news-v2/index.html (+11ms) \n00:23:29   ├─ /parity/arenda-robotov-na-meropriyatie/index.html (+35ms) \n00:23:29   ├─ /parity/arenda-unitree-g1/index.html (+50ms) \n00:23:29   ├─ /parity/articles/index.html (+25ms) \n00:23:29   ├─ /parity/home/index.html (+39ms) \n00:23:29   ├─ /parity/news/index.html (+4ms) \n00:23:29   ├─ /parity/roboty-gumanoidy/index.html (+30ms) \n00:23:29   ├─ /roboty-gumanoidy/index.html (+8ms) \n00:23:29   ├─ /index.html (+10ms) \n00:23:29   ├─ /arenda-agibot-x2/index.html (+7ms) \n00:23:29   ├─ /arenda-bellabot/index.html (+7ms) \n00:23:29   ├─ /arenda-glambot/index.html (+5ms) \n00:23:29   ├─ /arenda-inchbot-l1-w-edu/index.html (+4ms) \n00:23:29   ├─ /arenda-kettybot/index.html (+3ms) \n00:23:29   ├─ /arenda-klipmeiker/index.html (+4ms) \n00:23:29   ├─ /arenda-mini-robo-kofeyni/index.html (+7ms) \n00:23:29   ├─ /arenda-noetix-bumi/index.html (+4ms) \n00:23:29   ├─ /arenda-promobot-v4/index.html (+6ms) \n00:23:29   ├─ /arenda-robo-kofeyni/index.html (+4ms) \n00:23:29   ├─ /arenda-roboshashki/index.html (+3ms) \n00:23:29   ├─ /arenda-robot-barmen/index.html (+4ms) \n00:23:29   ├─ /arenda-robota-ardi/index.html (+4ms) \n00:23:29   ├─ /arenda-robota-hudozhnika-a4/index.html (+4ms) \n00:23:29   ├─ /arenda-robota-sofiya/index.html (+4ms) \n00:23:29   ├─ /arenda-robota-tron/index.html (+5ms) \n00:23:29   ├─ /arenda-senserobot/index.html (+5ms) \n00:23:29   ├─ /arenda-sketchbot/index.html (+3ms) \n00:23:29   ├─ /arenda-unitree-g1/index.html (+3ms) \n00:23:29   ├─ /arenda-unitree-go2/index.html (+3ms) \n00:23:29   ├─ /arenda-unitree-h2/index.html (+8ms) \n00:23:29   ├─ /arenda-unitree-r1/index.html (+5ms) \n00:23:29   ├─ /arenda-uv-box/index.html (+5ms) \n00:23:29   ├─ /arenda-xiaomi-cyberdog-2/index.html (+5ms) \n00:23:29   ├─ /neobychnyi-podarok-direktoru-robot/index.html (+3ms) \n00:23:29   ├─ /noetix-bumi-robot-gumanoid-dlya-meropriyatiy/index.html (+2ms) \n00:23:29   ├─ /pozdravlenie-robotom-na-svadbe/index.html (+3ms) \n00:23:29   ├─ /robot-ofitsiant-na-meropriyatii/index.html (+2ms) \n00:23:29   ├─ /sravnenie-unitree-g1-r1-h2/index.html (+2ms) \n00:23:29   ├─ /unitree-g1-ili-agibot-x2/index.html (+11ms) \n00:23:29   ├─ /velkom-zona-na-svadbe-robot/index.html (+4ms) \n00:23:29 ✓ Completed in 564ms.\n\n00:23:29 [build] ✓ Completed in 2.36s.\n00:23:29 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`\n00:23:29 [build] 47 page(s) built in 4.07s\n00:23:29 [build] Complete!\n"
     },
     {
       "id": "robot_seo_links",
@@ -102,10 +102,10 @@
       "exitCode": 0,
       "ok": true,
       "summary": {
-        "htmlPages": 46,
+        "htmlPages": 47,
         "publicPages": 38,
-        "previewPages": 8,
-        "checkedPages": 46,
+        "previewPages": 9,
+        "checkedPages": 47,
         "errors": 0,
         "warnings": 0
       },
@@ -143,20 +143,20 @@
       "exitCode": 0,
       "ok": true,
       "summary": {
-        "routes": 46,
+        "routes": 47,
         "publicRoutes": 38,
-        "previewNoindexRoutes": 8,
+        "previewNoindexRoutes": 9,
         "pageTypes": {
+          "preview/noindex": 9,
           "robot detail": 24,
           "collection": 2,
           "content index": 3,
           "contacts": 1,
-          "preview/noindex": 8,
           "home": 1,
           "article/detail": 7
         }
       },
-      "outputTail": "{\"routes\": 46, \"publicRoutes\": 38, \"previewNoindexRoutes\": 8, \"pageTypes\": {\"robot detail\": 24, \"collection\": 2, \"content index\": 3, \"contacts\": 1, \"preview/noindex\": 8, \"home\": 1, \"article/detail\": 7}}\n"
+      "outputTail": "{\"routes\": 47, \"publicRoutes\": 38, \"previewNoindexRoutes\": 9, \"pageTypes\": {\"preview/noindex\": 9, \"robot detail\": 24, \"collection\": 2, \"content index\": 3, \"contacts\": 1, \"home\": 1, \"article/detail\": 7}}\n"
     }
   ]
 }

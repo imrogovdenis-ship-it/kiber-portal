@@ -1,6 +1,6 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T00:13:49.549385+00:00
+Дата: 2026-08-25T00:23:31.694317+00:00
 Статус: `passed`
 
 ## Summary
@@ -14,16 +14,16 @@
 | Gate | Status | Summary |
 |---|---:|---|
 | `design_tokens` | pass | `{"errors": 0, "warnings": 0, "cssFiles": 4, "colorTokens": 15}` |
-| `public_pages` | pass | `{"htmlPages": 46, "errors": 0, "warnings": 0}` |
-| `astro_build` | pass | `{"built": true, "pages": 46}` |
+| `public_pages` | pass | `{"htmlPages": 47, "errors": 0, "warnings": 0}` |
+| `astro_build` | pass | `{"built": true, "pages": 47}` |
 | `robot_seo_links` | pass | `{"robotPages": 24, "checkedPages": 24, "errors": 0, "warnings": 0}` |
 | `collection_pages` | pass | `{"collectionPages": 2, "checkedPages": 2, "errors": 0, "warnings": 0}` |
 | `content_index_pages` | pass | `{"contentIndexPages": 3, "checkedPages": 3, "errors": 0, "warnings": 0}` |
 | `content_detail_pages` | pass | `{"detailPages": 7, "checkedPages": 7, "errors": 0, "warnings": 0}` |
-| `whole_site_static` | pass | `{"htmlPages": 46, "publicPages": 38, "previewPages": 8, "checkedPages": 46, "errors": 0, "warnings": 0}` |
+| `whole_site_static` | pass | `{"htmlPages": 47, "publicPages": 38, "previewPages": 9, "checkedPages": 47, "errors": 0, "warnings": 0}` |
 | `rendered_image_alt` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "meaningfulImages": 435}` |
 | `rendered_headings` | pass | `{"publicPagesChecked": 38, "errors": 0, "warnings": 0, "headings": 729}` |
-| `route_inventory` | pass | `{"routes": 46, "publicRoutes": 38, "previewNoindexRoutes": 8, "pageTypes": {"robot detail": 24, "collection": 2, "content index": 3, "contacts": 1, "preview/noindex": 8, "home": 1, "article/detail": 7}}` |
+| `route_inventory` | pass | `{"routes": 47, "publicRoutes": 38, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "contacts": 1, "home": 1, "article/detail": 7}}` |
 
 ## Artifact
 

@@ -1,29 +1,39 @@
 {
-  "date": "2026-08-24",
+  "date": "2026-08-25T00:23:30.744178+00:00",
   "status": "passed",
-  "scope": "whole-site static output: all generated Astro index.html files, with production blockers focused on public indexable routes",
+  "scope": "whole-site static output: all generated Astro HTML files, with production blockers focused on public indexable routes",
   "checks": [
     "title",
     "meta description",
     "canonical",
     "robots meta",
-    "sitemap inclusion for indexable pages",
-    "JSON-LD presence for public pages",
+    "sitemap inclusion",
+    "JSON-LD presence",
     "local image asset existence",
     "internal route existence",
     "fragment CTA targets"
   ],
   "summary": {
-    "htmlPages": 46,
+    "htmlPages": 47,
     "publicPages": 38,
-    "previewPages": 8,
-    "checkedPages": 46,
+    "previewPages": 9,
+    "checkedPages": 47,
     "errors": 0,
     "warnings": 0
   },
   "errors": [],
   "warnings": [],
   "checked": [
+    {
+      "route": "/404",
+      "title": true,
+      "description": true,
+      "canonical": "https://www.kiber-portal.ru/404",
+      "robots": "noindex,nofollow",
+      "schemaCount": 1,
+      "images": 6,
+      "links": 24
+    },
     {
       "route": "/arenda-agibot-x2",
       "title": true,
@@ -302,7 +312,7 @@
       "robots": "index,follow",
       "schemaCount": 2,
       "images": 6,
-      "links": 22
+      "links": 24
     },
     {
       "route": "/design-review",

@@ -56,7 +56,8 @@ class PageParser(HTMLParser):
 def route_for_html(dist: Path, html_path: Path) -> str:
     rel = html_path.relative_to(dist)
     if rel.name != "index.html":
-        return "/" + str(rel).replace("index.html", "").strip("/")
+        stem = str(rel).removesuffix(".html")
+        return "/" + stem.strip("/")
     parent = str(rel.parent).strip(".")
     return "/" if parent in ("", ".") else "/" + parent.strip("/")
 
@@ -87,7 +88,7 @@ def main() -> int:
     root = Path(args.root).resolve()
     dist = root / "app/dist"
     sitemap_text = (dist / "sitemap-0.xml").read_text(encoding="utf-8") if (dist / "sitemap-0.xml").exists() else ""
-    html_files = sorted(dist.rglob("index.html"))
+    html_files = sorted(set(dist.rglob("index.html")) | set(dist.glob("*.html")))
     errors: list[dict[str, str]] = []
     warnings: list[dict[str, str]] = []
     checked = []

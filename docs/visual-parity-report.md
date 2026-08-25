@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `launch_qa_bundle_passed_needs_business_launch_inputs`
+Статус: `static_404_and_launch_qa_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -339,6 +339,15 @@ docs/launch-qa-summary.md
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
 
+### Static 404 readiness pass
+
+A live-style static `404.html` route is now generated for production error handling:
+
+- added `app/src/pages/404.astro`;
+- page is `noindex,nofollow` and therefore treated as preview/system route, not a public SEO route;
+- whole-site static validation now includes non-index root HTML files and checks `47` generated HTML files;
+- route inventory now includes `47` routes: `38` public and `9` preview/noindex.
+
 Browser DOM proof after the pass:
 
 ```json
@@ -424,7 +433,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Collection pages | photo/scrim hero, numbered intro, robot source-of-truth catalog, CTA strip | mobile hero/cards readable | pass for `/arenda-robotov-na-meropriyatie` and `/roboty-gumanoidy` |
 | Content index pages | live-style heroes and cards for `Блог Кибер Гоши`, `Подборки`, `Новости` | mobile heroes/cards readable | pass for `/articles`, `/compilations`, `/news` |
 | Content detail pages | live-style article hero, article body and next-step aside | mobile article layout stacks | pass for 7 blog detail pages |
-| Whole-site static validation | 46 generated pages checked, including 38 public routes | no visual change | errors=0, warnings=0 |
+| Whole-site static validation | 47 generated HTML files checked, including 38 public routes and static 404 | no visual change | errors=0, warnings=0 |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Unified launch QA bundle | 11 local static gates run in one command | no visual change | passed=11, failed=0 |
@@ -468,7 +477,7 @@ python3 scripts/validate_content_detail_pages.py --root . --json
 → detailPages=7, checkedPages=7, errors=0, warnings=0
 
 python3 scripts/validate_whole_site_static.py --root . --json
-→ htmlPages=46, publicPages=38, previewPages=8, checkedPages=46, errors=0, warnings=0
+→ htmlPages=47, publicPages=38, previewPages=9, checkedPages=47, errors=0, warnings=0
 
 python3 scripts/audit_rendered_image_alt.py --root . --json
 → publicPagesChecked=38, meaningfulImages=435, errors=0, warnings=0

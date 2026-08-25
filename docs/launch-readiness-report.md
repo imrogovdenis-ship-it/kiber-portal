@@ -30,7 +30,7 @@ python3 scripts/validate_content_detail_pages.py --root . --json
 → detailPages=7, checkedPages=7, errors=0, warnings=0
 
 python3 scripts/validate_whole_site_static.py --root . --json
-→ htmlPages=46, publicPages=38, previewPages=8, checkedPages=46, errors=0, warnings=0
+→ htmlPages=47, publicPages=38, previewPages=9, checkedPages=47, errors=0, warnings=0
 ```
 
 Machine-readable artifacts:
@@ -59,9 +59,9 @@ docs/launch-qa-summary.md
 - Home, robot cards, robot detail pages, collection pages, content index pages and article detail pages have live-style baselines.
 - 24 robot pages have `Service`, `BreadcrumbList` and `FAQPage` JSON-LD where FAQ exists.
 - Collection/content pages have dedicated schema and validation gates.
-- Static validation covers all 46 generated pages, including 38 public indexable pages and 8 preview/noindex pages.
+- Static validation covers all 47 generated HTML pages, including 38 public indexable pages and 9 preview/noindex pages.
 - Public local images, local links, canonical URLs, robots meta, sitemap inclusion and fragment anchors pass automated checks.
-- Route inventory generated for 46 routes: 38 public indexable and 8 preview/noindex.
+- Route inventory generated for 47 routes: 38 public indexable and 9 preview/noindex, including the static 404 page.
 - Contacts page has a live-style safe placeholder template with explicit business-fact blockers.
 - Production launch checklist and redirect scaffold are prepared but not activated.
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.

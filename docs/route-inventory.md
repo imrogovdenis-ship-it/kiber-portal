@@ -5,9 +5,9 @@
 
 ## Summary
 
-- Total generated routes: 46
+- Total generated routes: 47
 - Public indexable routes: 38
-- Preview/noindex routes: 8
+- Preview/noindex routes: 9
 
 ## Page types
 
@@ -16,7 +16,7 @@
 - contacts: 1
 - content index: 3
 - home: 1
-- preview/noindex: 8
+- preview/noindex: 9
 - robot detail: 24
 
 ## Routes
@@ -32,7 +32,7 @@
 | `/velkom-zona-na-svadbe-robot` | article/detail | `index,follow` | 2 | 6 | 27 |
 | `/arenda-robotov-na-meropriyatie` | collection | `index,follow` | 2 | 30 | 96 |
 | `/roboty-gumanoidy` | collection | `index,follow` | 2 | 11 | 39 |
-| `/contacts` | contacts | `index,follow` | 2 | 6 | 22 |
+| `/contacts` | contacts | `index,follow` | 2 | 6 | 24 |
 | `/articles` | content index | `index,follow` | 2 | 6 | 39 |
 | `/compilations` | content index | `index,follow` | 2 | 21 | 72 |
 | `/news` | content index | `index,follow` | 2 | 6 | 23 |
@@ -61,6 +61,7 @@
 | `/arenda-unitree-r1` | robot detail | `index,follow` | 3 | 19 | 38 |
 | `/arenda-uv-box` | robot detail | `index,follow` | 3 | 18 | 38 |
 | `/arenda-xiaomi-cyberdog-2` | robot detail | `index,follow` | 3 | 19 | 38 |
+| `/404` | preview/noindex | `noindex,nofollow` | 1 | 6 | 24 |
 | `/design-review` | preview/noindex | `noindex,nofollow` | 0 | 9 | 32 |
 | `/news-v2` | preview/noindex | `noindex,nofollow` | 0 | 9 | 35 |
 | `/parity/arenda-robotov-na-meropriyatie` | preview/noindex | `noindex,nofollow` | 0 | 8 | 62 |
