@@ -57,6 +57,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 ## Что уже готово технически
@@ -73,7 +75,8 @@ docs/rendered-schema-audit.md
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
 - Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
 - Rendered schema audit covers 38 public pages with errors=0, warnings=0 and validates JSON-LD type coverage.
-- Unified launch QA bundle runs 12 gates and currently passes 12/12 with failed=0.
+- Rendered social metadata audit covers 38 public pages with errors=0, warnings=0 and validates OG/Twitter coverage.
+- Unified launch QA bundle runs 13 gates and currently passes 13/13 with failed=0.
 - Business input request pack is prepared in `docs/business-inputs-request.md`.
 - Production deployment dry-run plan is prepared in `docs/production-deployment-dry-run.md`; it does not touch infrastructure.
 - Production readiness decision matrix is prepared in `data/seo/production-readiness-matrix.json` and `docs/production-readiness-matrix.md`.

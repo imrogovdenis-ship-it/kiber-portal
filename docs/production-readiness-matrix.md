@@ -21,6 +21,7 @@ productionActionAllowed=false
 | Rendered image alt audit | passed | `data/seo/rendered-image-alt-audit.json` |
 | Rendered heading audit | passed | `data/seo/rendered-heading-audit.json` |
 | Rendered schema audit | passed | `data/seo/rendered-schema-audit.json` |
+| Rendered social metadata audit | passed | `data/seo/rendered-social-metadata-audit.json` |
 | Static 404 page | ready/noindex | `app/src/pages/404.astro` |
 
 ## Business / approval blockers

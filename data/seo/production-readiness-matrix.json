@@ -41,6 +41,12 @@
       "requiredBeforeLaunch": true
     },
     {
+      "id": "rendered_social_metadata_audit",
+      "status": "passed",
+      "evidence": "data/seo/rendered-social-metadata-audit.json",
+      "requiredBeforeLaunch": true
+    },
+    {
       "id": "static_404",
       "status": "ready_noindex",
       "evidence": "app/src/pages/404.astro",

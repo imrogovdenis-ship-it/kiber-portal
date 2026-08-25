@@ -1,0 +1,286 @@
+{
+  "date": "2026-08-25",
+  "status": "passed",
+  "scope": "rendered public/indexable Astro HTML pages only; preview/noindex/system routes excluded",
+  "checks": [
+    "Open Graph title/description/url/image/site_name/type",
+    "Twitter card/title/description/image",
+    "og:url equals canonical",
+    "absolute live-domain og:url and og:image"
+  ],
+  "summary": {
+    "publicPagesChecked": 38,
+    "errors": 0,
+    "warnings": 0
+  },
+  "errors": [],
+  "warnings": [],
+  "checked": [
+    {
+      "route": "/arenda-agibot-x2",
+      "canonical": "https://www.kiber-portal.ru/arenda-agibot-x2",
+      "ogTitle": "Аренда робота-гуманоида Agibot X2 в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6238-6339-4439-b061-313961333062__04.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-bellabot",
+      "canonical": "https://www.kiber-portal.ru/arenda-bellabot",
+      "ogTitle": "Аренда робота BellaBot для мероприятий",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3730-3164-4238-a530-353561376234__noroot.png",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-glambot",
+      "canonical": "https://www.kiber-portal.ru/arenda-glambot",
+      "ogTitle": "Аренда робота GlamBot | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6563-3439-4536-b265-393066346365__07.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-inchbot-l1-w-edu",
+      "canonical": "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+      "ogTitle": "Аренда робота-собаки Inchbot L1-W EDU | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3165-6138-4635-b538-623931653530__noroot.png",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-kettybot",
+      "canonical": "https://www.kiber-portal.ru/arenda-kettybot",
+      "ogTitle": "Аренда робота KettyBot для мероприятий",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6236-3131-4466-a632-623038373139__07.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-klipmeiker",
+      "canonical": "https://www.kiber-portal.ru/arenda-klipmeiker",
+      "ogTitle": "Аренда робота Клипмейкер | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3962-6238-4437-b135-656231613161__01.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-mini-robo-kofeyni",
+      "canonical": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+      "ogTitle": "Аренда мини робо-кофейни | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6265-3763-4265-b135-653138386261__06.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-noetix-bumi",
+      "canonical": "https://www.kiber-portal.ru/arenda-noetix-bumi",
+      "ogTitle": "Аренда робота-гуманоида Noetix Bumi в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6631-3463-4837-b233-303232393430__08.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-promobot-v4",
+      "canonical": "https://www.kiber-portal.ru/arenda-promobot-v4",
+      "ogTitle": "Аренда Promobot V4 | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3835-6365-4632-b863-616638656231__011.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robo-kofeyni",
+      "canonical": "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+      "ogTitle": "Аренда робо-кофейни | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3739-3864-4263-b630-616561386635__06.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-roboshashki",
+      "canonical": "https://www.kiber-portal.ru/arenda-roboshashki",
+      "ogTitle": "Аренда робота для игры в шашки | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3366-3065-4233-b732-643537393938__08.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robot-barmen",
+      "canonical": "https://www.kiber-portal.ru/arenda-robot-barmen",
+      "ogTitle": "Аренда робота-бармена «Робобар» на праздник | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3864-6538-4231-b239-656133613061__noroot.png",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robota-ardi",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-ardi",
+      "ogTitle": "Аренда робота Арди (Promobot) | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6362-3336-4633-b731-666561613938__01.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robota-hudozhnika-a4",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+      "ogTitle": "Аренда робота-художника большого формата | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3438-3431-4038-b939-396465653237__02.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robota-sofiya",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-sofiya",
+      "ogTitle": "Аренда робота София | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robota-tron",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-tron",
+      "ogTitle": "Аренда модульного робота Tron | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3530-3730-4030-b432-386539343765__02.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-robotov-na-meropriyatie",
+      "canonical": "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+      "ogTitle": "Аренда роботов на мероприятие | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-senserobot",
+      "canonical": "https://www.kiber-portal.ru/arenda-senserobot",
+      "ogTitle": "Аренда робота-шахматиста SenseRobot | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3936-3039-4339-a464-636466646534__011.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-sketchbot",
+      "canonical": "https://www.kiber-portal.ru/arenda-sketchbot",
+      "ogTitle": "Аренда робота-художника Sketchbot в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3739-6331-4234-b635-633262663663__010.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-unitree-g1",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "ogTitle": "Аренда робота-гуманоида Unitree G1 в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6333-3137-4465-b265-323436646539__06.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-unitree-go2",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-go2",
+      "ogTitle": "Аренда робота-собаки Unitree Go2 в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6666-3666-4662-a431-636535616562__6.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-unitree-h2",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-h2",
+      "ogTitle": "Аренда робота-гуманоида Unitree H2 в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6263-3431-4436-b463-366666346362__noroot.png",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-unitree-r1",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-r1",
+      "ogTitle": "Аренда робота-гуманоида Unitree R1 в Москве | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6136-3331-4366-b934-653538306539__noroot.png",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-uv-box",
+      "canonical": "https://www.kiber-portal.ru/arenda-uv-box",
+      "ogTitle": "Аренда UV-BOX | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3932-3764-4535-a534-656663633833__011.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/arenda-xiaomi-cyberdog-2",
+      "canonical": "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+      "ogTitle": "Прокат робота-собаки Xiaomi Cyberdog 2 | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3834-3231-4836-b737-366637613031__08.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/articles",
+      "canonical": "https://www.kiber-portal.ru/articles",
+      "ogTitle": "Блог Кибер Гоши | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/compilations",
+      "canonical": "https://www.kiber-portal.ru/compilations",
+      "ogTitle": "Подборки роботов для мероприятий | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6362-6166-4134-b566-363330363430__03.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/contacts",
+      "canonical": "https://www.kiber-portal.ru/contacts",
+      "ogTitle": "Контакты | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/",
+      "canonical": "https://www.kiber-portal.ru",
+      "ogTitle": "Аренда роботов для мероприятий в Москве — от 20 000 ₽ | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/neobychnyi-podarok-direktoru-robot",
+      "canonical": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+      "ogTitle": "Необычный подарок директору: робот в подарок | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3065-3664-4363-b561-616435326462______.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/news",
+      "canonical": "https://www.kiber-portal.ru/news",
+      "ogTitle": "Новости про роботов | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "canonical": "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "ogTitle": "Noetix Bumi: робот-гуманоид ростом с ребёнка | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/pozdravlenie-robotom-na-svadbe",
+      "canonical": "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe",
+      "ogTitle": "Необычное поздравление на свадьбе роботом | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6331-6439-4563-b861-396162663365__noroot.png",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/robot-ofitsiant-na-meropriyatii",
+      "canonical": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
+      "ogTitle": "Робот-официант на мероприятие — аренда | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild3263-3466-4434-b366-643161663638_____.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/roboty-gumanoidy",
+      "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy",
+      "ogTitle": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/tild6333-3137-4465-b265-323436646539__06.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/sravnenie-unitree-g1-r1-h2",
+      "canonical": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
+      "ogTitle": "Unitree G1, R1, H2: сравнение гуманоидов | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/unitree-g1-ili-agibot-x2",
+      "canonical": "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2",
+      "ogTitle": "Unitree G1 или Agibot X2: что выбрать для мероприятия | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    },
+    {
+      "route": "/velkom-zona-na-svadbe-robot",
+      "canonical": "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot",
+      "ogTitle": "Велком-зона на свадьбе с роботом | КИБЕР ПОРТАЛ",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-gosha-yoga-red-ushanka.jpg",
+      "twitterCard": "summary_large_image"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `rendered_schema_audit_passed_needs_business_launch_inputs`
+Статус: `rendered_social_metadata_audit_passed_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -64,6 +64,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 ## Applied changes in this pass
@@ -290,6 +292,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 ### Rendered image alt audit pass
@@ -317,6 +321,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -342,6 +348,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 ### Unified launch QA bundle pass
@@ -365,6 +373,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -389,6 +399,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
@@ -403,6 +415,8 @@ data/seo/production-readiness-matrix.json
 docs/production-readiness-matrix.md
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 It documents allowed Alex-owned zones, hard server boundaries, pre-change note template, approval gates, local QA, Docker/Coolify dry-run commands, rollback options, post-deploy checks and production blockers.
@@ -424,6 +438,27 @@ Evidence:
 ```text
 data/seo/rendered-schema-audit.json
 docs/rendered-schema-audit.md
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
+```
+
+### Rendered social metadata audit pass
+
+Rendered public pages now have an Open Graph/Twitter metadata gate:
+
+- added `scripts/audit_rendered_social_metadata.py`;
+- public/indexable pages only are checked;
+- OG title/description/url/image/site_name/type and Twitter card/title/description/image must be present;
+- `og:url` must match canonical;
+- social image URLs must be absolute live-domain URLs;
+- homepage now has explicit social image via `app/src/pages/index.astro`;
+- latest validation result: `publicPagesChecked=38`, `errors=0`, `warnings=0`.
+
+Evidence:
+
+```text
+data/seo/rendered-social-metadata-audit.json
+docs/rendered-social-metadata-audit.md
 ```
 
 Browser DOM proof after the pass:
@@ -514,8 +549,9 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Whole-site static validation | 47 generated HTML files checked, including 38 public routes and static 404 | no visual change | errors=0, warnings=0 |
 | Rendered image alt audit | 435 meaningful images on 38 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 729 rendered headings on 38 public pages checked | no visual change | errors=0, warnings=0 |
-| Unified launch QA bundle | 12 local static gates run in one command | no visual change | passed=12, failed=0 |
+| Unified launch QA bundle | 13 local static gates run in one command | no visual change | passed=13, failed=0 |
 | Rendered schema audit | JSON-LD coverage on 38 public pages | no visual change | errors=0, warnings=0 |
+| Rendered social metadata audit | OG/Twitter coverage on 38 public pages | homepage social image added | errors=0, warnings=0 |
 
 ## Remaining known differences
 
@@ -567,8 +603,11 @@ python3 scripts/audit_rendered_headings.py --root . --json
 python3 scripts/audit_rendered_schema.py --root . --json
 → publicPagesChecked=38, errors=0, warnings=0
 
+python3 scripts/audit_rendered_social_metadata.py --root . --json
+→ publicPagesChecked=38, errors=0, warnings=0
+
 python3 scripts/run_launch_qa.py
-→ status=passed, steps=12, passed=12, failed=0
+→ status=passed, steps=13, passed=13, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
