@@ -51,6 +51,7 @@ data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
+docs/business-inputs-request.md
 ```
 
 ## Что уже готово технически
@@ -67,6 +68,7 @@ docs/launch-qa-summary.md
 - Rendered image alt audit covers 38 public pages and 435 meaningful images with errors=0, warnings=0.
 - Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
 - Unified launch QA bundle runs 11 gates and currently passes 11/11 with failed=0.
+- Business input request pack is prepared in `docs/business-inputs-request.md`.
 
 ## Production blockers / inputs needed before launch
 

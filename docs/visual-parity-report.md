@@ -58,6 +58,7 @@ data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
+docs/business-inputs-request.md
 ```
 
 ## Applied changes in this pass
@@ -278,6 +279,7 @@ data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
+docs/business-inputs-request.md
 ```
 
 ### Rendered image alt audit pass
@@ -299,6 +301,7 @@ data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
+docs/business-inputs-request.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -318,6 +321,7 @@ data/seo/rendered-heading-audit.json
 docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
+docs/business-inputs-request.md
 ```
 
 ### Unified launch QA bundle pass
@@ -335,6 +339,7 @@ The bundle writes:
 ```text
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
+docs/business-inputs-request.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -347,6 +352,16 @@ A live-style static `404.html` route is now generated for production error handl
 - page is `noindex,nofollow` and therefore treated as preview/system route, not a public SEO route;
 - whole-site static validation now includes non-index root HTML files and checks `47` generated HTML files;
 - route inventory now includes `47` routes: `38` public and `9` preview/noindex.
+
+### Business input request pack
+
+A structured request pack is prepared for the remaining non-code blockers:
+
+```text
+docs/business-inputs-request.md
+```
+
+It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
 
 Browser DOM proof after the pass:
 
