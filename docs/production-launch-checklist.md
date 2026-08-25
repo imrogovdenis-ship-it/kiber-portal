@@ -13,6 +13,7 @@
 - [ ] Подтверждённые цены/условия аренды, если они должны быть публичными.
 - [ ] Утверждённые SEO-материалы Александра: ключи, синонимы, long-tail, статьи, подборки, alt-тексты.
 - [ ] Заполнить/передать пакет из `docs/business-inputs-request.md`.
+- [ ] Перед production action пройти `docs/production-deployment-dry-run.md`.
 - [ ] Политика/согласие на аналитику и пиксели.
 
 ## 2. Technical gates before production

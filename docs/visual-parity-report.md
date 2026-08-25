@@ -3,7 +3,7 @@
 Дата обновления: 2026-08-24  
 Источник: `https://www.kiber-portal.ru/`  
 Astro local preview: `http://127.0.0.1:4321/`  
-Статус: `static_404_and_launch_qa_passed_needs_business_launch_inputs`
+Статус: `deployment_dry_run_plan_ready_needs_business_launch_inputs`
 
 ## Цель прохода
 
@@ -59,6 +59,7 @@ docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 ## Applied changes in this pass
@@ -280,6 +281,7 @@ docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 ### Rendered image alt audit pass
@@ -302,6 +304,7 @@ docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -322,6 +325,7 @@ docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 ### Unified launch QA bundle pass
@@ -340,6 +344,7 @@ The bundle writes:
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -359,9 +364,20 @@ A structured request pack is prepared for the remaining non-code blockers:
 
 ```text
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
+
+### Production deployment dry-run plan
+
+A deployment dry-run plan is prepared without changing infrastructure:
+
+```text
+docs/production-deployment-dry-run.md
+```
+
+It documents allowed Alex-owned zones, hard server boundaries, pre-change note template, approval gates, local QA, Docker/Coolify dry-run commands, rollback options, post-deploy checks and production blockers.
 
 Browser DOM proof after the pass:
 

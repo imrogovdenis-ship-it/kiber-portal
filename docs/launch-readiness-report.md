@@ -52,6 +52,7 @@ docs/rendered-heading-audit.md
 data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
+docs/production-deployment-dry-run.md
 ```
 
 ## Что уже готово технически
@@ -69,6 +70,7 @@ docs/business-inputs-request.md
 - Rendered heading hierarchy audit covers 38 public pages and 729 headings with errors=0, warnings=0.
 - Unified launch QA bundle runs 11 gates and currently passes 11/11 with failed=0.
 - Business input request pack is prepared in `docs/business-inputs-request.md`.
+- Production deployment dry-run plan is prepared in `docs/production-deployment-dry-run.md`; it does not touch infrastructure.
 
 ## Production blockers / inputs needed before launch
 
