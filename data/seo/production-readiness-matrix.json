@@ -1,0 +1,97 @@
+{
+  "date": "2026-08-25",
+  "status": "code_ready_business_inputs_required",
+  "productionActionAllowed": false,
+  "reason": "Local static QA passes, but business approvals and deployment approvals are still required before production changes.",
+  "technicalGates": [
+    {
+      "id": "launch_qa_bundle",
+      "status": "passed",
+      "evidence": "data/seo/launch-qa-summary.json",
+      "requiredBeforeLaunch": true
+    },
+    {
+      "id": "whole_site_static_validation",
+      "status": "passed",
+      "evidence": "data/seo/whole-site-static-check.json",
+      "requiredBeforeLaunch": true
+    },
+    {
+      "id": "route_inventory",
+      "status": "passed",
+      "evidence": "data/seo/route-inventory.json",
+      "requiredBeforeLaunch": true
+    },
+    {
+      "id": "rendered_image_alt_audit",
+      "status": "passed",
+      "evidence": "data/seo/rendered-image-alt-audit.json",
+      "requiredBeforeLaunch": true
+    },
+    {
+      "id": "rendered_heading_audit",
+      "status": "passed",
+      "evidence": "data/seo/rendered-heading-audit.json",
+      "requiredBeforeLaunch": true
+    },
+    {
+      "id": "static_404",
+      "status": "ready_noindex",
+      "evidence": "app/src/pages/404.astro",
+      "requiredBeforeLaunch": true
+    }
+  ],
+  "businessBlockers": [
+    {
+      "id": "contacts_requisites",
+      "status": "needs_input",
+      "source": "docs/business-inputs-request.md",
+      "blocksProduction": true
+    },
+    {
+      "id": "lead_destination",
+      "status": "needs_input",
+      "source": "docs/business-inputs-request.md",
+      "blocksProduction": true
+    },
+    {
+      "id": "analytics_ids_events",
+      "status": "needs_input",
+      "source": "docs/business-inputs-request.md",
+      "blocksProduction": true
+    },
+    {
+      "id": "redirect_approval",
+      "status": "needs_input",
+      "source": "data/seo/redirects.scaffold.json",
+      "blocksProduction": true
+    },
+    {
+      "id": "seo_expansion_materials",
+      "status": "needs_input",
+      "source": "docs/business-inputs-request.md",
+      "blocksProduction": false,
+      "note": "Does not block static launch technically, but blocks full SEO enrichment pass."
+    },
+    {
+      "id": "coolify_dns_ssl_approval",
+      "status": "needs_approval",
+      "source": "docs/production-deployment-dry-run.md",
+      "blocksProduction": true
+    }
+  ],
+  "allowedNextActionsWithoutUserInput": [
+    "Improve documentation and QA automation",
+    "Prepare additional dry-run artifacts",
+    "Refine non-production preview checks",
+    "Add validators that do not require business facts"
+  ],
+  "forbiddenWithoutExplicitApproval": [
+    "Change DNS",
+    "Deploy to Coolify production",
+    "Activate redirects",
+    "Connect analytics or pixels",
+    "Wire real lead destinations",
+    "Touch non-alex containers, secrets, DNS or analytics"
+  ]
+}

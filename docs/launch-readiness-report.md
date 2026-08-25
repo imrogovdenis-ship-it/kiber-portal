@@ -53,6 +53,8 @@ data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 ## Что уже готово технически
@@ -71,6 +73,7 @@ docs/production-deployment-dry-run.md
 - Unified launch QA bundle runs 11 gates and currently passes 11/11 with failed=0.
 - Business input request pack is prepared in `docs/business-inputs-request.md`.
 - Production deployment dry-run plan is prepared in `docs/production-deployment-dry-run.md`; it does not touch infrastructure.
+- Production readiness decision matrix is prepared in `data/seo/production-readiness-matrix.json` and `docs/production-readiness-matrix.md`.
 
 ## Production blockers / inputs needed before launch
 

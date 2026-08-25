@@ -60,6 +60,8 @@ data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 ## Applied changes in this pass
@@ -282,6 +284,8 @@ data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 ### Rendered image alt audit pass
@@ -305,6 +309,8 @@ data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 ### Rendered heading hierarchy audit pass
@@ -326,6 +332,8 @@ data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 ### Unified launch QA bundle pass
@@ -345,6 +353,8 @@ data/seo/launch-qa-summary.json
 docs/launch-qa-summary.md
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 It does not deploy, change DNS, activate redirects, connect analytics, or touch production infrastructure.
@@ -365,6 +375,8 @@ A structured request pack is prepared for the remaining non-code blockers:
 ```text
 docs/business-inputs-request.md
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 It asks for final contacts/requisites, lead destination, analytics IDs/events, SEO keyword/long-tail materials, pricing/claims approval, redirect approval and production deploy approval.
@@ -375,6 +387,8 @@ A deployment dry-run plan is prepared without changing infrastructure:
 
 ```text
 docs/production-deployment-dry-run.md
+data/seo/production-readiness-matrix.json
+docs/production-readiness-matrix.md
 ```
 
 It documents allowed Alex-owned zones, hard server boundaries, pre-change note template, approval gates, local QA, Docker/Coolify dry-run commands, rollback options, post-deploy checks and production blockers.
