@@ -90,8 +90,8 @@ Required result:
 
 ```text
 status=passed
-steps=18
-passed=18
+steps=19
+passed=19
 failed=0
 ```
 

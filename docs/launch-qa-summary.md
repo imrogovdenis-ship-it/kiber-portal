@@ -1,12 +1,12 @@
 # KIBER PORTAL — launch QA summary
 
-Дата: 2026-08-25T10:41:06.480217+00:00
+Дата: 2026-08-26T08:55:20.595024+00:00
 Статус: `passed`
 
 ## Summary
 
-- Steps: 18
-- Passed: 18
+- Steps: 19
+- Passed: 19
 - Failed: 0
 
 ## Gates
@@ -28,9 +28,10 @@
 | `rendered_social_metadata` | pass | `{"publicPagesChecked": 42, "errors": 0, "warnings": 0}` |
 | `rendered_cta_flow` | pass | `{"publicPagesChecked": 42, "ctaLinks": 726, "hrefTypes": {"internal": 347, "same-page-anchor": 252, "approved-external": 127}, "errors": 0, "warnings": 0}` |
 | `route_inventory` | pass | `{"routes": 51, "publicRoutes": 42, "previewNoindexRoutes": 9, "pageTypes": {"preview/noindex": 9, "robot detail": 24, "collection": 2, "content index": 3, "legal": 4, "contacts": 1, "home": 1, "article/detail": 7}}` |
-| `production_readiness_matrix` | pass | `{"technicalGates": 13, "businessBlockers": 6, "blockingBusinessInputs": 4, "errors": 0, "warnings": 0}` |
+| `production_readiness_matrix` | pass | `{"technicalGates": 14, "businessBlockers": 6, "blockingBusinessInputs": 4, "errors": 0, "warnings": 0}` |
 | `production_dry_run_docs` | pass | `{"docsChecked": 2, "errors": 0, "warnings": 0}` |
 | `business_input_pack` | pass | `{"docsChecked": 2, "matrixBlockersChecked": 5, "errors": 0, "warnings": 0}` |
+| `visual_source_hierarchy` | pass | `{"docsChecked": 3, "hierarchyLevels": 5, "errors": 0, "warnings": 0}` |
 
 ## Artifact
 

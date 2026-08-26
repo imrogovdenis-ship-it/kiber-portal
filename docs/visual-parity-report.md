@@ -411,7 +411,7 @@ A single pre-production QA command now runs all local static gates in order:
 python3 scripts/run_launch_qa.py
 ```
 
-Current result: `status=passed`, `steps=18`, `passed=18`, `failed=0`.
+Current result: `status=passed`, `steps=19`, `passed=19`, `failed=0`.
 
 The bundle writes:
 
@@ -639,7 +639,7 @@ Measured in browser on `http://127.0.0.1:4321/`:
 | Legal pages | `/privacy-policy`, `/consent`, `/cookie-policy`, `/terms` generated from existing source documents | mobile article layout stacks through shared template | pass via whole-site validation |
 | Rendered image alt audit | 440 meaningful images on 42 public pages checked | no visual change | errors=0, warnings=0 |
 | Rendered heading audit | 779 rendered headings on 42 public pages checked | no visual change | errors=0, warnings=0 |
-| Unified launch QA bundle | 18 local static gates run in one command | no visual change | passed=18, failed=0 |
+| Unified launch QA bundle | 19 local static gates run in one command | no visual change | passed=19, failed=0 |
 | Rendered schema audit | JSON-LD coverage on 42 public pages, including home FAQPage and legal WebPage routes | no visual change | errors=0, warnings=0 |
 | Rendered social metadata audit | OG/Twitter coverage on 42 public pages | homepage social image remains explicit | errors=0, warnings=0 |
 | Rendered CTA flow audit | 726 CTA/link-flow entries across 42 public pages | masked messenger href filtered | errors=0, warnings=0 |
@@ -701,7 +701,7 @@ python3 scripts/audit_rendered_cta_flow.py --root . --json
 → publicPagesChecked=42, ctaLinks=726, errors=0, warnings=0
 
 python3 scripts/run_launch_qa.py
-→ status=passed, steps=18, passed=18, failed=0
+→ status=passed, steps=19, passed=19, failed=0
 
 curl -sI http://127.0.0.1:4321/
 → HTTP/1.1 200 OK
@@ -802,6 +802,24 @@ The Astro build now ships `app/public/robots.txt` and the launch QA bundle inclu
 - sitemap index references the generated `sitemap-0.xml`.
 
 Validation output: `robotsLines=5`, `publicRoutesProtected=9`, `errors=0`, `warnings=0`. The full bundle now passes 18/18 gates.
+
+
+### KIBER-27 visual source hierarchy gate
+
+KIBER-27 now has a proposed, versioned hierarchy for visual sources:
+
+```text
+Дизайн Александра → tokens/components/screenshots → live Tilda reference → export archive
+```
+
+Evidence files:
+
+- `docs/DESIGN-SYSTEM-TZ.md` — supplied design-system ТЗ captured in Git;
+- `docs/visual-source-hierarchy.md` — operational hierarchy for Hermes/review;
+- `docs/DECISIONS/0001-visual-source-hierarchy.md` — ADR with conflict-resolution rules and rollback;
+- `scripts/validate_visual_source_hierarchy.py` — local gate that checks the hierarchy stays explicit.
+
+Validation output: `docsChecked=3`, `hierarchyLevels=5`, `errors=0`, `warnings=0`. The unified launch QA bundle now passes 19/19 gates. Final Linear `Done` still requires Alexander's visual-source approve.
 
 ## Recommended next step
 

@@ -81,6 +81,12 @@
       "status": "passed",
       "evidence": "docs/business-inputs-request.md",
       "requiredBeforeLaunch": true
+    },
+    {
+      "id": "visual_source_hierarchy",
+      "status": "passed",
+      "evidence": "docs/visual-source-hierarchy.md",
+      "requiredBeforeLaunch": true
     }
   ],
   "businessBlockers": [

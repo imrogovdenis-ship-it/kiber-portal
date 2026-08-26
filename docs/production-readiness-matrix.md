@@ -28,6 +28,7 @@ productionActionAllowed=false
 | Lead-flow integration plan | planned/deferred | `docs/lead-flow-integration-plan.md` |
 | Production dry-run docs | passed | `docs/production-deployment-dry-run.md` |
 | Business input request pack | passed | `docs/business-inputs-request.md` |
+| Visual source hierarchy | proposed / validated | `docs/visual-source-hierarchy.md`, `docs/DECISIONS/0001-visual-source-hierarchy.md` |
 
 ## Business / approval blockers
 

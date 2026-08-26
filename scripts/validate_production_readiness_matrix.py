@@ -90,6 +90,7 @@ def main() -> int:
         "lead_flow_plan",
         "production_dry_run_docs",
         "business_input_pack",
+        "visual_source_hierarchy",
     }
     for gate_id in sorted(required_gates - gate_ids):
         errors.append({"code": "missing_technical_gate", "message": gate_id})

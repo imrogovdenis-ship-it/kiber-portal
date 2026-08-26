@@ -1,6 +1,6 @@
 # KIBER PORTAL — route inventory
 
-Дата: 2026-08-25
+Дата: 2026-08-26
 Источник: `data/seo/whole-site-static-check.json`
 
 ## Summary

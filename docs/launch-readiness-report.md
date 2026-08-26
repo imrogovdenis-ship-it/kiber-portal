@@ -93,6 +93,7 @@ docs/lead-flow-integration-plan.md
 - Production dry-run/checklist docs are now validated inside the launch QA bundle so stale QA counts or unsafe deployment wording are caught before launch discussion.
 - Business-input request and lead-flow docs are now validated inside the launch QA bundle for completeness, matrix alignment and secret-safety.
 - Robots.txt and sitemap policy are now validated; preview/noindex surfaces are disallowed while public/legal routes stay crawlable.
+- KIBER-27 visual source hierarchy is now captured as proposed docs + ADR and validated in the local QA bundle; final Done still needs Alexander approval.
 
 ## Production blockers / inputs needed before launch
 

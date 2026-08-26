@@ -103,6 +103,11 @@ STEPS = [
         "command": ["python3", "scripts/validate_business_input_pack.py", "--root", ".", "--json"],
         "json": True,
     },
+    {
+        "id": "visual_source_hierarchy",
+        "command": ["python3", "scripts/validate_visual_source_hierarchy.py", "--root", ".", "--json"],
+        "json": True,
+    },
 ]
 
 
