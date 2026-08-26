@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kiber-portal.ru/schema/robot-pricing.schema.json",
+  "title": "Robot pricing block",
+  "description": "Ценовой блок карточки робота: одна основная цена и произвольное число пакетов. Публикуется только то, что подтверждено (KP-060 / KIBER-42).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "primary", "packages", "publish"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "primary": { "$ref": "https://kiber-portal.ru/schema/robot-price.schema.json" },
+    "packages": {
+      "type": "array",
+      "maxItems": 12,
+      "items": { "$ref": "https://kiber-portal.ru/schema/robot-price.schema.json" }
+    },
+    "publish": {
+      "description": "Флаг публикации цены на сайте. true допустим только если primary.status = approved.",
+      "type": "boolean"
+    },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "publish": { "const": true } }, "required": ["publish"] },
+      "then": {
+        "properties": {
+          "primary": { "properties": { "status": { "const": "approved" } }, "required": ["status"] }
+        }
+      }
+    }
+  ]
+}

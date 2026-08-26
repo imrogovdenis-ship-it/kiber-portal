@@ -1,0 +1,161 @@
+{
+  "description": "Фикстуры для схемы цены робота (KP-060 / KIBER-42). `valid` должны проходить валидацию, `invalid` — падать с указанной причиной. Суммы здесь взяты из уже опубликованных на сайте цен.",
+  "valid": [
+    {
+      "case": "подтверждённая дневная цена с пакетами",
+      "record": {
+        "slug": "arenda-unitree-g1",
+        "publish": true,
+        "primary": {
+          "status": "approved",
+          "amount": 100000,
+          "currency": "RUB",
+          "unit": "day",
+          "qualifier": "exact",
+          "minimum": { "value": 1, "unit": "day" },
+          "display": "100 000 ₽ / день",
+          "validFrom": "2026-08-26",
+          "validUntil": null,
+          "source": {
+            "type": "live-site",
+            "ref": "https://www.kiber-portal.ru/arenda-unitree-g1",
+            "capturedAt": "2026-08-26"
+          },
+          "owner": "Denis Rogov",
+          "reviewedOn": "2026-08-26",
+          "publicOffer": false,
+          "disclaimer": "Не является публичной офертой"
+        },
+        "packages": []
+      }
+    },
+    {
+      "case": "цена неизвестна — публикуем «Цена по запросу», ничего не выдумываем",
+      "record": {
+        "slug": "arenda-unitree-h2",
+        "publish": false,
+        "primary": {
+          "status": "unknown",
+          "amount": null,
+          "currency": "RUB",
+          "unit": "event",
+          "qualifier": "from",
+          "minimum": null,
+          "display": "Цена по запросу",
+          "validFrom": "2026-08-26",
+          "source": {
+            "type": "live-site",
+            "ref": "https://www.kiber-portal.ru/arenda-unitree-h2",
+            "capturedAt": "2026-08-26"
+          },
+          "owner": "Denis Rogov",
+          "publicOffer": false,
+          "disclaimer": "Не является публичной офертой"
+        },
+        "packages": []
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "case": "часовая ставка, полученная делением дневной цены, без указания исходной шкалы",
+      "reason": "source.type=derived требует derivedFrom",
+      "record": {
+        "slug": "arenda-agibot-x2",
+        "publish": false,
+        "primary": {
+          "status": "needs_review",
+          "amount": 25000,
+          "currency": "RUB",
+          "unit": "hour",
+          "qualifier": "from",
+          "minimum": null,
+          "display": "от 25 000 ₽ / час",
+          "validFrom": "2026-08-26",
+          "source": { "type": "derived", "ref": "200 000 ₽ / день ÷ 8", "capturedAt": "2026-08-26" },
+          "owner": "Denis Rogov",
+          "publicOffer": false,
+          "disclaimer": "Не является публичной офертой"
+        },
+        "packages": []
+      }
+    },
+    {
+      "case": "неизвестная цена с придуманной суммой",
+      "reason": "при status=unknown amount должен быть null, а display — «Цена по запросу»",
+      "record": {
+        "slug": "arenda-robota-sofiya",
+        "publish": false,
+        "primary": {
+          "status": "unknown",
+          "amount": 50000,
+          "currency": "RUB",
+          "unit": "day",
+          "qualifier": "from",
+          "minimum": null,
+          "display": "от 50 000 ₽ / день",
+          "validFrom": "2026-08-26",
+          "source": { "type": "manager", "ref": "устная оценка", "capturedAt": "2026-08-26" },
+          "owner": "Denis Rogov",
+          "publicOffer": false,
+          "disclaimer": "Не является публичной офертой"
+        },
+        "packages": []
+      }
+    },
+    {
+      "case": "публикация неподтверждённой цены",
+      "reason": "publish=true допустим только при primary.status=approved",
+      "record": {
+        "slug": "arenda-sketchbot",
+        "publish": true,
+        "primary": {
+          "status": "needs_review",
+          "amount": 70000,
+          "currency": "RUB",
+          "unit": "day",
+          "qualifier": "exact",
+          "minimum": null,
+          "display": "70 000 ₽ / день",
+          "validFrom": "2026-08-26",
+          "source": {
+            "type": "live-site",
+            "ref": "https://www.kiber-portal.ru/arenda-sketchbot",
+            "capturedAt": "2026-08-26"
+          },
+          "owner": "Denis Rogov",
+          "publicOffer": false,
+          "disclaimer": "Не является публичной офертой"
+        },
+        "packages": []
+      }
+    },
+    {
+      "case": "подтверждённая цена без даты проверки",
+      "reason": "при status=approved обязательны amount и reviewedOn",
+      "record": {
+        "slug": "arenda-bellabot",
+        "publish": false,
+        "primary": {
+          "status": "approved",
+          "amount": 75000,
+          "currency": "RUB",
+          "unit": "day",
+          "qualifier": "exact",
+          "minimum": null,
+          "display": "75 000 ₽ / день",
+          "validFrom": "2026-08-26",
+          "source": {
+            "type": "live-site",
+            "ref": "https://www.kiber-portal.ru/arenda-bellabot",
+            "capturedAt": "2026-08-26"
+          },
+          "owner": "Denis Rogov",
+          "publicOffer": false,
+          "disclaimer": "Не является публичной офертой"
+        },
+        "packages": []
+      }
+    }
+  ]
+}

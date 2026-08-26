@@ -1,0 +1,1373 @@
+{
+  "generatedAt": "2026-08-26T13:14:37.744712+00:00",
+  "task": "KP-061 / KIBER-44",
+  "sources": {
+    "productionPages": 24,
+    "sourceOfTruth": "/home/alex/projects/kiber-portal/data/models"
+  },
+  "summary": {
+    "total": 24,
+    "byVerdict": {
+      "needs_review": 21,
+      "approved": 1,
+      "missing": 2
+    }
+  },
+  "robots": [
+    {
+      "slug": "arenda-agibot-x2",
+      "url": "https://www.kiber-portal.ru/arenda-agibot-x2",
+      "name": "робота-гуманоида Agibot X2",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "ота-гуманоида Agibot X2 для мероприятия от 50 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 200000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "ида Agibot X2 для выставок и праздников 200 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 100000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 100 000",
+        "variants": {
+          "от 100 000": [
+            "/arenda-glambot",
+            "/arenda-klipmeiker",
+            "/arenda-robo-kofeyni",
+            "/arenda-robota-sofiya",
+            "/arenda-robota-tron",
+            "/arenda-unitree-h2",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 25 000 ₽ / час",
+        "priceFrom": 25000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 100 000 ₽, такой цены нет в тексте страницы: 50 000 ₽/hour, 200 000 ₽/day",
+        "Источник истины хранит «от 25 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 200 000 ₽ ÷ 8 ≈ 25 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "ота-гуманоида Agibot X2 для мероприятия от 50 000 ₽ / час Написать нам Запо",
+        "ида Agibot X2 для выставок и праздников 200 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-bellabot",
+      "url": "https://www.kiber-portal.ru/arenda-bellabot",
+      "name": "робота-официанта BellaBot",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 75000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "бота-официанта BellaBot для мероприятия 75 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 75000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 75 000",
+        "variants": {
+          "от 75 000": [
+            "/arenda-glambot",
+            "/arenda-kettybot",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robot-barmen",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 9 500 ₽ / час",
+        "priceFrom": 9500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 9 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 75 000 ₽ ÷ 8 ≈ 9 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "бота-официанта BellaBot для мероприятия 75 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-glambot",
+      "url": "https://www.kiber-portal.ru/arenda-glambot",
+      "name": "робота GlamBot",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 150000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "е робота-камеру GlamBot для мероприятия 150 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 40000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "Прокат GlamBot для показов и праздников от 40 000 ₽ / час Написать нам Запо"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 150000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 150 000",
+        "variants": {
+          "от 150 000": [
+            "/arenda-klipmeiker",
+            "/arenda-robo-kofeyni",
+            "/arenda-robot-barmen",
+            "/arenda-senserobot",
+            "/arenda-sketchbot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 19 000 ₽ / час",
+        "priceFrom": 19000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 19 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 150 000 ₽ ÷ 8 ≈ 19 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "е робота-камеру GlamBot для мероприятия 150 000 ₽ / день Написать нам Зап",
+        "Прокат GlamBot для показов и праздников от 40 000 ₽ / час Написать нам Запо"
+      ]
+    },
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "url": "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+      "name": "робота-собаки Inchbot L1-W EDU",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 50000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "Inchbot L1-W EDU для своего мероприятия 50 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 50000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 50 000",
+        "variants": {
+          "от 50 000": [
+            "/arenda-robota-tron",
+            "/arenda-xiaomi-cyberdog-2"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 6 500 ₽ / час",
+        "priceFrom": 6500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 6 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 50 000 ₽ ÷ 8 ≈ 6 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "Inchbot L1-W EDU для своего мероприятия 50 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-kettybot",
+      "url": "https://www.kiber-portal.ru/arenda-kettybot",
+      "name": "робота-официанта KettyBot",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 55000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "бота-официанта KettyBot для мероприятия 55 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 55000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 55 000",
+        "variants": {
+          "от 55 000": [
+            "/arenda-bellabot",
+            "/arenda-klipmeiker",
+            "/arenda-promobot-v4",
+            "/arenda-robo-kofeyni",
+            "/arenda-robota-tron",
+            "/arenda-senserobot",
+            "/arenda-sketchbot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 7 000 ₽ / час",
+        "priceFrom": 7000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 7 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 55 000 ₽ ÷ 8 ≈ 7 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "бота-официанта KettyBot для мероприятия 55 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "url": "https://www.kiber-portal.ru/arenda-klipmeiker",
+      "name": "робота Клипмейкер",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 150000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "Арендуйте робота-клипмейкер для съемок 150 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 40000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "ота клипмейкера для съемок и праздников от 40 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 100000,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "ер? Аренда робота Клипмейкер начинается от 100 000 рублей в день, точная стоим"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 150000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 150 000",
+        "variants": {
+          "от 150 000": [
+            "/arenda-glambot",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-robota-tron",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 19 000 ₽ / час",
+        "priceFrom": 19000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 19 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы."
+      ],
+      "evidence": [
+        "Арендуйте робота-клипмейкер для съемок 150 000 ₽ / день Написать нам Зап",
+        "ота клипмейкера для съемок и праздников от 40 000 ₽ / час Написать нам Запо",
+        "ер? Аренда робота Клипмейкер начинается от 100 000 рублей в день, точная стоим"
+      ]
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "url": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+      "name": "мини робо-кофейни",
+      "verdict": "approved",
+      "owner": null,
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 160000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "дуйте мини робо-кофейню для мероприятия 160 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 20000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "робо-кофейни для выставок и праздников от 20 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 120000,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "ни? Аренда мини робо-кофейни начинается от 120 000 рублей в день, точная стоим"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 160000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 160 000",
+        "variants": {
+          "от 160 000": [
+            "/arenda-bellabot",
+            "/arenda-kettybot",
+            "/arenda-klipmeiker",
+            "/arenda-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robot-barmen",
+            "/arenda-senserobot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 20 000 ₽ / час",
+        "priceFrom": 20000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [],
+      "evidence": [
+        "дуйте мини робо-кофейню для мероприятия 160 000 ₽ / день Написать нам Зап",
+        "робо-кофейни для выставок и праздников от 20 000 ₽ / час Написать нам Запо",
+        "ни? Аренда мини робо-кофейни начинается от 120 000 рублей в день, точная стоим"
+      ]
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "url": "https://www.kiber-portal.ru/arenda-noetix-bumi",
+      "name": "робота-гуманоида Noetix Bumi",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 20000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "а-гуманоида Noetix Bumi для мероприятия от 20 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 80000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "а Noetix Bumi для выставок и праздников 80 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 40000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 40 000",
+        "variants": {
+          "от 40 000": [
+            "/arenda-glambot",
+            "/arenda-inchbot-l1-w-edu",
+            "/arenda-noetix-bumi",
+            "/arenda-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robota-tron",
+            "/arenda-unitree-g1",
+            "/arenda-unitree-go2",
+            "/arenda-unitree-r1",
+            "/arenda-uv-box",
+            "/arenda-xiaomi-cyberdog-2"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 10 000 ₽ / час",
+        "priceFrom": 10000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 40 000 ₽, такой цены нет в тексте страницы: 20 000 ₽/hour, 80 000 ₽/day",
+        "Источник истины хранит «от 10 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 80 000 ₽ ÷ 8 ≈ 10 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "а-гуманоида Noetix Bumi для мероприятия от 20 000 ₽ / час Написать нам Запо",
+        "а Noetix Bumi для выставок и праздников 80 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "url": "https://www.kiber-portal.ru/arenda-promobot-v4",
+      "name": "Promobot V4",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 75000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "-промоутера Promobot V4 для мероприятия 75 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "mobot V4? Аренда Promobot V4 начинается от 50 000 рублей в день, точная стоим"
+        }
+      ],
+      "catalogCardPrice": null,
+      "sourceOfTruth": {
+        "display": "от 10 000 ₽ / час",
+        "priceFrom": 10000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 10 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы."
+      ],
+      "evidence": [
+        "-промоутера Promobot V4 для мероприятия 75 000 ₽ / день Написать нам Зап",
+        "mobot V4? Аренда Promobot V4 начинается от 50 000 рублей в день, точная стоим"
+      ]
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "url": "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+      "name": "робота-кофейни",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 200000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "рендуйте робота-кофейню для мероприятия 200 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "обота-кофейни для выставок и праздников от 50 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 150000,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "кофейни? Аренда робо-кофейни начинается от 150 000 рублей в день, точная стоим"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 200000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 200 000",
+        "variants": {
+          "от 200 000": [
+            "/arenda-bellabot",
+            "/arenda-glambot",
+            "/arenda-kettybot",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-sketchbot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 25 000 ₽ / час",
+        "priceFrom": 25000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 25 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 150 000 ₽ ÷ 6 ≈ 25 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "рендуйте робота-кофейню для мероприятия 200 000 ₽ / день Написать нам Зап",
+        "обота-кофейни для выставок и праздников от 50 000 ₽ / час Написать нам Запо",
+        "кофейни? Аренда робо-кофейни начинается от 150 000 рублей в день, точная стоим"
+      ]
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "url": "https://www.kiber-portal.ru/arenda-roboshashki",
+      "name": "робота для игры в шашки",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 90000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": ";}} Арендуйте робошашки для мероприятия 90 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 25000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "игры в шашки для турниров и фестивалей от 25 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "ры в шашки? Аренда робошашки начинается от 50 000 рублей в день, точная цена"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 90000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 90 000",
+        "variants": {
+          "от 90 000": [
+            "/arenda-klipmeiker",
+            "/arenda-robo-kofeyni",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 11 500 ₽ / час",
+        "priceFrom": 11500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 11 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы."
+      ],
+      "evidence": [
+        ";}} Арендуйте робошашки для мероприятия 90 000 ₽ / день Написать нам Зап",
+        "игры в шашки для турниров и фестивалей от 25 000 ₽ / час Написать нам Запо",
+        "ры в шашки? Аренда робошашки начинается от 50 000 рублей в день, точная цена"
+      ]
+    },
+    {
+      "slug": "arenda-robot-barmen",
+      "url": "https://www.kiber-portal.ru/arenda-robot-barmen",
+      "name": "робота-бармена «Робобар»",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 170000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "обота-бармена «Робобар» для мероприятия 170 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 170000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 170 000",
+        "variants": {
+          "от 170 000": [
+            "/arenda-bellabot",
+            "/arenda-glambot",
+            "/arenda-kettybot",
+            "/arenda-klipmeiker",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-sketchbot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 21 500 ₽ / час",
+        "priceFrom": 21500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 21 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 170 000 ₽ ÷ 8 ≈ 21 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "обота-бармена «Робобар» для мероприятия 170 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "url": "https://www.kiber-portal.ru/arenda-robota-ardi",
+      "name": "робота Арди",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 200000,
+          "qualifier": "from",
+          "unit": "unspecified",
+          "context": "} Арендуйте робота Арди для мероприятия от 200 000 ₽ Написать нам Заполнить"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 250000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 250 000",
+        "variants": {
+          "от 250 000": [
+            "/arenda-agibot-x2",
+            "/arenda-klipmeiker",
+            "/arenda-promobot-v4",
+            "/arenda-robota-sofiya",
+            "/arenda-unitree-h2",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 32 000 ₽ / час",
+        "priceFrom": 32000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 0,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 250 000 ₽, такой цены нет в тексте страницы: 200 000 ₽/unspecified",
+        "Источник истины хранит «от 32 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы."
+      ],
+      "evidence": [
+        "} Арендуйте робота Арди для мероприятия от 200 000 ₽ Написать нам Заполнить"
+      ]
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "url": "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+      "name": "робота-художника большого формата",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 80000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "ндуйте робота-художника для мероприятия 80 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "го формата? Стоимость аренды начинается от 50 000 рублей в день, точная цена"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 80000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 80 000",
+        "variants": {
+          "от 80 000": [
+            "/arenda-klipmeiker",
+            "/arenda-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robot-barmen",
+            "/arenda-senserobot",
+            "/arenda-sketchbot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 10 000 ₽ / час",
+        "priceFrom": 10000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 10 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы."
+      ],
+      "evidence": [
+        "ндуйте робота-художника для мероприятия 80 000 ₽ / день Написать нам Зап",
+        "го формата? Стоимость аренды начинается от 50 000 рублей в день, точная цена"
+      ]
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "url": "https://www.kiber-portal.ru/arenda-robota-sofiya",
+      "name": "робота София",
+      "verdict": "missing",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [],
+      "catalogCardPrice": null,
+      "sourceOfTruth": {
+        "display": "цена по запросу",
+        "priceFrom": null,
+        "currency": "RUB",
+        "unit": "request",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 0,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Цена не найдена ни на странице, ни на карточке каталога."
+      ],
+      "evidence": []
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "url": "https://www.kiber-portal.ru/arenda-robota-tron",
+      "name": "модульного робота Tron",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 90000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "модульного робота Tron для мероприятия 90 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "unspecified",
+          "context": "ота Tron? Аренда робота Tron начинается от 50 000 рублей, точная стоимость за"
+        }
+      ],
+      "catalogCardPrice": null,
+      "sourceOfTruth": {
+        "display": "от 11 500 ₽ / час",
+        "priceFrom": 11500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 11 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 90 000 ₽ ÷ 8 ≈ 11 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "модульного робота Tron для мероприятия 90 000 ₽ / день Написать нам Зап",
+        "ота Tron? Аренда робота Tron начинается от 50 000 рублей, точная стоимость за"
+      ]
+    },
+    {
+      "slug": "arenda-senserobot",
+      "url": "https://www.kiber-portal.ru/arenda-senserobot",
+      "name": "робота-шахматиста SenseRobot",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 80000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "а-шахматиста SenseRobot для мероприятия 80 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 20000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "SenseRobot для фестивалей и праздников от 20 000 ₽ / час Написать нам Запо"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 80000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 80 000",
+        "variants": {
+          "от 80 000": [
+            "/arenda-glambot",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-sketchbot",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 10 000 ₽ / час",
+        "priceFrom": 10000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 10 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 80 000 ₽ ÷ 8 ≈ 10 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "а-шахматиста SenseRobot для мероприятия 80 000 ₽ / день Написать нам Зап",
+        "SenseRobot для фестивалей и праздников от 20 000 ₽ / час Написать нам Запо"
+      ]
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "url": "https://www.kiber-portal.ru/arenda-sketchbot",
+      "name": "робота-художника Sketchbot",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 70000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "ота-художника Sketchbot для мероприятия 70 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 705000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "ика Sketchbot для выставок и праздников 705 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 55000,
+          "qualifier": "exact",
+          "unit": "unspecified",
+          "context": "са работы обычно обходится от 45 000 до 55 000 ₽ — в стоимость входят до"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 70000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 70 000",
+        "variants": {
+          "от 70 000": [
+            "/arenda-glambot",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-robota-tron",
+            "/arenda-senserobot",
+            "/arenda-unitree-r1",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 9 000 ₽ / час",
+        "priceFrom": 9000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "На странице несколько цен за одну и ту же единицу (day): 70 000 ₽, 705 000 ₽ — похоже на ошибку в данных.",
+        "Источник истины хранит «от 9 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 70 000 ₽ ÷ 8 ≈ 9 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "ота-художника Sketchbot для мероприятия 70 000 ₽ / день Написать нам Зап",
+        "ика Sketchbot для выставок и праздников 705 000 ₽ / день Написать нам Зап",
+        "са работы обычно обходится от 45 000 до 55 000 ₽ — в стоимость входят до"
+      ]
+    },
+    {
+      "slug": "arenda-unitree-g1",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "name": "робота-гуманоида Unitree G1",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 25000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "та-гуманоида Unitree G1 для мероприятия от 25 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 100000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "а Unitree G1 для мероприятий и выставок 100 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 50000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 50 000",
+        "variants": {
+          "от 50 000": [
+            "/arenda-agibot-x2",
+            "/arenda-glambot",
+            "/arenda-klipmeiker",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-noetix-bumi",
+            "/arenda-promobot-v4",
+            "/arenda-robo-kofeyni",
+            "/arenda-robot-barmen",
+            "/arenda-robota-ardi",
+            "/arenda-robota-hudozhnika-a4",
+            "/arenda-robota-sofiya",
+            "/arenda-robota-tron",
+            "/arenda-senserobot",
+            "/arenda-unitree-go2",
+            "/arenda-unitree-h2",
+            "/arenda-unitree-r1",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 12 500 ₽ / час",
+        "priceFrom": 12500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 50 000 ₽, такой цены нет в тексте страницы: 25 000 ₽/hour, 100 000 ₽/day",
+        "Источник истины хранит «от 12 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 100 000 ₽ ÷ 8 ≈ 12 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "та-гуманоида Unitree G1 для мероприятия от 25 000 ₽ / час Написать нам Запо",
+        "а Unitree G1 для мероприятий и выставок 100 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-go2",
+      "name": "робота-собаки Unitree Go2",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 12500,
+          "qualifier": "from",
+          "unit": "day",
+          "context": "бота-собака Unitree Go2 для мероприятия от 12 500 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "и Unitree Go2 для выставок и праздников 50 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 25000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 25 000",
+        "variants": {
+          "от 25 000": [
+            "/arenda-glambot",
+            "/arenda-inchbot-l1-w-edu",
+            "/arenda-mini-robo-kofeyni",
+            "/arenda-noetix-bumi",
+            "/arenda-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robot-barmen",
+            "/arenda-senserobot",
+            "/arenda-sketchbot",
+            "/arenda-unitree-g1",
+            "/arenda-unitree-r1",
+            "/arenda-uv-box",
+            "/arenda-xiaomi-cyberdog-2"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 6 250 ₽ / час",
+        "priceFrom": 6250,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 25 000 ₽, такой цены нет в тексте страницы: 12 500 ₽/day, 50 000 ₽/day",
+        "На странице несколько цен за одну и ту же единицу (day): 12 500 ₽, 50 000 ₽ — похоже на ошибку в данных.",
+        "Источник истины хранит «от 6 250 ₽ / час», но эта сумма не встречается в публичном тексте страницы."
+      ],
+      "evidence": [
+        "бота-собака Unitree Go2 для мероприятия от 12 500 ₽ / день Написать нам Зап",
+        "и Unitree Go2 для выставок и праздников 50 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-h2",
+      "name": "робота-гуманоида Unitree H2",
+      "verdict": "missing",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [],
+      "catalogCardPrice": null,
+      "sourceOfTruth": {
+        "display": "цена по запросу",
+        "priceFrom": null,
+        "currency": "RUB",
+        "unit": "request",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 0,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Цена не найдена ни на странице, ни на карточке каталога."
+      ],
+      "evidence": []
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-r1",
+      "name": "робота-гуманоида Unitree R1",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 25000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "та-гуманоида Unitree R1 для мероприятия от 25 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 100000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "да Unitree R1 для выставок и праздников 100 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 50000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 50 000",
+        "variants": {
+          "от 50 000": [
+            "/arenda-inchbot-l1-w-edu",
+            "/arenda-noetix-bumi",
+            "/arenda-robo-kofeyni",
+            "/arenda-roboshashki",
+            "/arenda-robot-barmen",
+            "/arenda-robota-ardi",
+            "/arenda-sketchbot",
+            "/arenda-unitree-g1",
+            "/arenda-unitree-go2",
+            "/arenda-uv-box",
+            "/arenda-xiaomi-cyberdog-2"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 12 500 ₽ / час",
+        "priceFrom": 12500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 50 000 ₽, такой цены нет в тексте страницы: 25 000 ₽/hour, 100 000 ₽/day",
+        "Источник истины хранит «от 12 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 100 000 ₽ ÷ 8 ≈ 12 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "та-гуманоида Unitree R1 для мероприятия от 25 000 ₽ / час Написать нам Запо",
+        "да Unitree R1 для выставок и праздников 100 000 ₽ / день Написать нам Зап"
+      ]
+    },
+    {
+      "slug": "arenda-uv-box",
+      "url": "https://www.kiber-portal.ru/arenda-uv-box",
+      "name": "интерактивной витрины UV-BOX",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 200000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "е интерактивную витрину для мероприятия 200 000 ₽ / день Написать нам Зап"
+        },
+        {
+          "amount": 50000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "Прокат UV-BOX для выставок и праздников от 50 000 ₽ / час Написать нам Запо"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 200000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 200 000",
+        "variants": {
+          "от 200 000": [
+            "/arenda-glambot",
+            "/arenda-klipmeiker",
+            "/arenda-promobot-v4",
+            "/arenda-robo-kofeyni",
+            "/arenda-robot-barmen",
+            "/arenda-robota-tron",
+            "/arenda-senserobot"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 25 000 ₽ / час",
+        "priceFrom": 25000,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 3,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Источник истины хранит «от 25 000 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 200 000 ₽ ÷ 8 ≈ 25 000 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "е интерактивную витрину для мероприятия 200 000 ₽ / день Написать нам Зап",
+        "Прокат UV-BOX для выставок и праздников от 50 000 ₽ / час Написать нам Запо"
+      ]
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "url": "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+      "name": "робота-собаки Xiaomi Cyberdog 2",
+      "verdict": "needs_review",
+      "owner": "Denis Rogov",
+      "reviewedOn": "2026-08-26",
+      "pagePrices": [
+        {
+          "amount": 15000,
+          "qualifier": "from",
+          "unit": "hour",
+          "context": "собаку Xiaomi Cyberdog2 для мероприятия от 15 000 ₽ / час Написать нам Запо"
+        },
+        {
+          "amount": 60000,
+          "qualifier": "exact",
+          "unit": "day",
+          "context": "mi Cyberdog 2 для выставок и праздников 60 000 ₽ / день Написать нам Зап"
+        }
+      ],
+      "catalogCardPrice": {
+        "amount": 30000,
+        "qualifier": "from",
+        "unit": "unspecified",
+        "text": "от 30 000",
+        "variants": {
+          "от 30 000": [
+            "/arenda-inchbot-l1-w-edu",
+            "/arenda-klipmeiker",
+            "/arenda-unitree-g1",
+            "/arenda-unitree-go2",
+            "/arenda-uv-box"
+          ]
+        }
+      },
+      "sourceOfTruth": {
+        "display": "от 7 500 ₽ / час",
+        "priceFrom": 7500,
+        "currency": "RUB",
+        "unit": "hour",
+        "sourceStatus": "approved",
+        "priceAuditStatus": "approved"
+      },
+      "internalTariffs": {
+        "count": 4,
+        "publishedOnSite": 1,
+        "note": "Значения внутренних пакетов не публикуются в этом отчёте: репозиторий публичный."
+      },
+      "conflicts": [
+        "Карточка каталога показывает 30 000 ₽, такой цены нет в тексте страницы: 15 000 ₽/hour, 60 000 ₽/day",
+        "Источник истины хранит «от 7 500 ₽ / час», но эта сумма не встречается в публичном тексте страницы.",
+        "Часовая ставка выглядит расчётной: дневная цена 60 000 ₽ ÷ 8 ≈ 7 500 ₽. На сайте такой ставки нет, бизнес её не подтверждал — по KP-060 неизвестную цену нельзя выводить вычислением."
+      ],
+      "evidence": [
+        "собаку Xiaomi Cyberdog2 для мероприятия от 15 000 ₽ / час Написать нам Запо",
+        "mi Cyberdog 2 для выставок и праздников 60 000 ₽ / день Написать нам Зап"
+      ]
+    }
+  ]
+}

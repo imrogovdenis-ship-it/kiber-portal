@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kiber-portal.ru/schema/robot-price.schema.json",
+  "title": "Robot price record",
+  "description": "Одна цена робота: сумма, единица, минимальный заказ, статус подтверждения, срок действия и источник. Неизвестная цена остаётся неизвестной — выводить её расчётом запрещено (KP-060 / KIBER-42).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "currency", "unit", "qualifier", "display", "validFrom", "source", "owner"],
+  "properties": {
+    "status": {
+      "description": "approved — подтверждено владельцем и можно публиковать; needs_review — есть конфликт источников; unknown — цены нет.",
+      "enum": ["approved", "needs_review", "unknown"]
+    },
+    "amount": {
+      "description": "Сумма в целых рублях. Обязательна при status=approved, запрещена при status=unknown.",
+      "type": ["integer", "null"],
+      "minimum": 1000
+    },
+    "currency": { "const": "RUB" },
+    "unit": {
+      "description": "Единица, к которой относится сумма. `event` — цена за мероприятие целиком, `package` — за пакет из `packageName`.",
+      "enum": ["hour", "day", "shift", "event", "package"]
+    },
+    "packageName": {
+      "description": "Название пакета, обязательно при unit=package.",
+      "type": "string",
+      "minLength": 1
+    },
+    "qualifier": {
+      "description": "`from` — «от суммы», `exact` — фиксированная цена.",
+      "enum": ["from", "exact"]
+    },
+    "minimum": {
+      "description": "Минимальный заказ. null означает «минимум не установлен», а не «минимум неизвестен» — для неизвестного используйте status=needs_review.",
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["value", "unit"],
+      "properties": {
+        "value": { "type": "number", "exclusiveMinimum": 0 },
+        "unit": { "enum": ["hour", "day", "shift", "event"] }
+      }
+    },
+    "display": {
+      "description": "Текст, который видит пользователь. Должен выводиться из amount/unit/qualifier, а не сочиняться отдельно. При status=unknown допустимо только «Цена по запросу».",
+      "type": "string",
+      "minLength": 1
+    },
+    "validFrom": { "type": "string", "format": "date" },
+    "validUntil": { "type": ["string", "null"], "format": "date" },
+    "source": {
+      "description": "Откуда взята сумма. Без источника цена не публикуется.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "ref", "capturedAt"],
+      "properties": {
+        "type": {
+          "description": "`derived` разрешён только для пересчёта внутри одной подтверждённой шкалы и требует явного `derivedFrom`.",
+          "enum": ["live-site", "tariff-table", "manager", "contract", "derived"]
+        },
+        "ref": { "type": "string", "minLength": 1 },
+        "capturedAt": { "type": "string", "format": "date" },
+        "derivedFrom": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "derived" } }, "required": ["type"] },
+          "then": { "required": ["derivedFrom"] }
+        }
+      ]
+    },
+    "owner": {
+      "description": "Кто отвечает за подтверждение суммы.",
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewedOn": { "type": ["string", "null"], "format": "date" },
+    "publicOffer": {
+      "description": "Публикация цены не является публичной офертой.",
+      "const": false
+    },
+    "disclaimer": { "const": "Не является публичной офертой" },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "approved" } }, "required": ["status"] },
+      "then": {
+        "required": ["amount", "reviewedOn"],
+        "properties": { "amount": { "type": "integer" } }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "unknown" } }, "required": ["status"] },
+      "then": {
+        "properties": {
+          "amount": { "type": "null" },
+          "display": { "const": "Цена по запросу" }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "unit": { "const": "package" } }, "required": ["unit"] },
+      "then": { "required": ["packageName"] }
+    }
+  ]
+}
