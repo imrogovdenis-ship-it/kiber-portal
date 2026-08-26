@@ -1,0 +1,48 @@
+name: Production metadata drift
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: production-metadata-drift
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare sitemap and metadata
+        id: monitor
+        continue-on-error: true
+        run: python3 scripts/monitor_production_metadata.py
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-metadata-drift-${{ github.run_id }}
+          path: artifacts/production-metadata-drift.*
+          if-no-files-found: error
+          retention-days: 30
+      - name: Notify on drift or fetch failure
+        if: steps.monitor.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="[monitor] Production sitemap/metadata drift"
+          body_file="artifacts/production-metadata-drift.md"
+          existing="$(gh issue list --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file "$body_file"
+          else
+            gh issue create --title "$title" --body-file "$body_file"
+          fi
+      - name: Fail workflow on drift
+        if: steps.monitor.outcome == 'failure'
+        run: exit 1
