@@ -3,6 +3,7 @@ import '../styles/fonts.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/typography.css';
+import SeoHead from '../components/layout/SeoHead.astro';
 
 interface Props {
   title: string;
@@ -12,18 +13,13 @@ interface Props {
 }
 
 const { title, description, canonical, noindex = false } = Astro.props;
-const robots = noindex ? 'noindex, nofollow' : 'index, follow';
 ---
 
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="description" content={description} />
-    <meta name="robots" content={robots} />
-    {canonical && <link rel="canonical" href={canonical} />}
-    <title>{title}</title>
+    <SeoHead {title} {description} {canonical} {noindex} />
+    <slot name="head" />
   </head>
   <body>
     <slot />
