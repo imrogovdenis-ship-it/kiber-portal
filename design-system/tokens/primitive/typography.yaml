@@ -1,7 +1,7 @@
 layer: primitive
 namespace: typography
 tokens:
-  font.family.display: { type: fontFamily, value: "Gilroy, Arial, sans-serif" }
+  font.family.display: { type: fontFamily, value: "Montserrat, Arial, sans-serif" }
   font.family.body: { type: fontFamily, value: "Montserrat, Arial, sans-serif" }
   font.weight.medium: { type: fontWeight, value: 500 }
   font.weight.semibold: { type: fontWeight, value: 600 }
