@@ -2,7 +2,6 @@
 
 | Решение | Владелец | Блокирует | Временная политика |
 |---|---|---|---|
-| Подтвердить web-лицензию Gilroy | владелец проекта | production self-hosting Gilroy | fallback Arial, Tilda CDN запрещён |
 | Передать утверждённые изображения и права | владелец/дизайн | reference screenshots и production media | технические placeholders |
 | Утвердить телефон, TG, WA, реквизиты | владелец | публикацию контактов | значения `.env.example` не считаются production |
 | Выбрать analytics provider и consent policy | владелец/маркетинг | production analytics | provider-neutral contract, отправка выключена |
