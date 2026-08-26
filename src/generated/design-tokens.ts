@@ -58,7 +58,7 @@ export const designTokens = {
   "dimension.space.92": "92px",
   "dimension.zero": "0px",
   "font.family.body": "Montserrat, Arial, sans-serif",
-  "font.family.display": "Gilroy, Arial, sans-serif",
+  "font.family.display": "Montserrat, Arial, sans-serif",
   "font.weight.bold": 700,
   "font.weight.medium": 500,
   "font.weight.semibold": 600,
@@ -188,7 +188,7 @@ export const designTokens = {
   },
   "robot-card.surface": "#ffffff",
   "robot-card.title.color": "#36323e",
-  "robot-card.title.family": "Gilroy, Arial, sans-serif",
+  "robot-card.title.family": "Montserrat, Arial, sans-serif",
   "robot-card.title.letter-spacing": "0em",
   "robot-card.title.line-height": {
     "sm": 1.3,
@@ -233,7 +233,7 @@ export const designTokens = {
     "xl": "16px"
   },
   "typography.body.weight": 500,
-  "typography.heading.family": "Gilroy, Arial, sans-serif",
+  "typography.heading.family": "Montserrat, Arial, sans-serif",
   "typography.heading.letter-spacing": "0em",
   "typography.heading.line-height": 1,
   "typography.heading.size": {
@@ -253,7 +253,7 @@ export const designTokens = {
     "xl": "14px"
   },
   "typography.label.weight": 600,
-  "typography.title-s.family": "Gilroy, Arial, sans-serif",
+  "typography.title-s.family": "Montserrat, Arial, sans-serif",
   "typography.title-s.letter-spacing": "0em",
   "typography.title-s.line-height": 1.4,
   "typography.title-s.size": {
