@@ -100,7 +100,9 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
   .robot-card__description,
   .robot-card__price,
   .robot-card__disclaimer {
+    min-width: 0;
     margin: 0;
+    overflow-wrap: anywhere;
   }
 
   .robot-card__category {
