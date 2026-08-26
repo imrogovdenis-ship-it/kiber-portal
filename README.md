@@ -1,58 +1,54 @@
-# Кибер Портал — Design System
+# КИБЕР ПОРТАЛ
 
-Извлечена из боевой Tilda-сборки сайта (`repair-responsive-albite`, 42 страницы). Все значения — не придуманные, а снятые с продакшена: цвета из inline-стилей блоков, размеры кнопок из `t-btnflex`, радиусы и скримы из разметки обложек.
+Канонический репозиторий сайта и будущей машинно-читаемой дизайн-системы: `imrogovdenis-ship-it/kiber-portal`.
 
-## Канонический репозиторий
+## Текущий статус
 
-Единственный источник истины для кода, контента и документации Кибер Портала — [`imrogovdenis-ship-it/kiber-portal`](https://github.com/imrogovdenis-ship-it/kiber-portal).
+Идёт controlled rebuild. Сохранённый snapshot и legacy Tilda export используются как evidence и rollback source, но не как основа нового runtime.
 
-- Все изменения выполняются в ветках этого репозитория и попадают в `main` через review/PR.
-- Локальные копии, экспорты Tilda и прежние репозитории не используются как самостоятельные линии разработки.
-- Автоматизация и агенты, включая Hermes, должны клонировать этот remote и работать через ветку/PR.
-- Если найдено расхождение между копиями, каноническим считается состояние этого репозитория; полезные изменения переносятся сюда отдельным reviewable commit.
+Текущий `main` содержит полезные Astro-исходники и материалы миграции, но ещё не является воспроизводимым application runtime: в нём отсутствуют package manifest/lockfile, Astro config, production Dockerfile и часть импортируемых файлов. Исторические launch-readiness отчёты описывают прежнее локальное состояние и не заменяют проверку clean clone.
 
-Решение и порядок миграции зафиксированы в [ADR-001](docs/adr/001-canonical-repository.md).
+Архитектурное решение предлагается в [ADR-003](docs/adr/003-controlled-rebuild-and-source-hierarchy.md). Карта переноса находится в [controlled-rebuild-inventory](docs/controlled-rebuild-inventory.md), а порядок Linear-задач — в [task-execution-plan](docs/task-execution-plan.md).
 
-До DNS cutover действует [полная заморозка изменений Tilda](docs/adr/002-tilda-change-freeze.md); аварийные исключения требуют письменного approval и синхронизации diff в этот репозиторий.
+## Канонические правила
 
-## Структура
+- Любое изменение выполняется в короткоживущей ветке и попадает в `main` через PR.
+- Постоянный `app-v2`, второй runtime и второй production Dockerfile запрещены.
+- До DNS cutover действует [freeze изменений Tilda](docs/adr/002-tilda-change-freeze.md).
+- Production deploy, DNS, secrets, реальные lead destinations и analytics IDs требуют отдельного approval.
+- Старые CSS, component examples, live audits и screenshots пока являются migration evidence, а не окончательным machine-readable source of truth.
 
+## Целевая структура
+
+После controlled rebuild единственный Astro runtime располагается в корне:
+
+```text
+design-system/   tokens, schemas, block specs, fixtures, recipes, generators
+src/             Astro layouts, components, content, pages, styles, generated files
+public/          только runtime public assets
+tests/           unit, schema, integration, visual
+scripts/         repository and QA tooling
+docs/            ADR, ТЗ, traceability, runbooks
+package.json
+package-lock.json
+astro.config.mjs
+tsconfig.json
+Dockerfile
 ```
-colors_and_type.css   токены: @font-face Gilroy, цвета, шкала, радиусы, ритм
-components.css        компонентный слой (.kp-*)
-styles.css            единая точка входа — импортирует оба
-SKILL.md              правила применения, подключается как навык Claude
-preview/               карточки для панели Design System
-components/            React + статический HTML для каждого блока
-assets/                логотип, примеры фото, иконка
-site-export/           полная выгрузка боевого сайта из Tilda (см. ниже)
-```
 
-## site-export/ — выгрузка сайта
+## Иерархия визуальных источников
 
-Сырой экспорт из Tilda (Экспорт → Статический HTML), без изменений: 42 страницы, `css/`, `js/`, `images/`, `files/` (тексты блоков по страницам), `sitemap.xml`, `robots.txt`. Дизайн-система в корне репозитория извлечена именно из этой выгрузки — при её обновлении сверяйте изменившиеся токены (цвета, кнопки, радиусы) с `colors_and_type.css` и `components.css`.
+1. Утверждённый дизайн и review Александра.
+2. Machine-readable tokens/specs, Astro components и принятые reference screenshots.
+3. Live Tilda как временный reference до cutover.
+4. Tilda export и прежние audits как архивное evidence.
 
-**Как обновлять:** в Tilda → Экспорт проекта → скачать zip → распаковать поверх `site-export/` (структура и имена файлов у Tilda стабильны между экспортами) → закоммитить diff.
+До принятия ADR-003 старые файлы не удаляются. Новые дизайн-токены и компоненты также не добавляются как параллельная система внутри неполного `app/`.
 
-`site-export/htaccess` — переименовать в `.htaccess` только при заливке на боевой сервер по FTP, в репозитории он намеренно без точки (иначе Tilda-архив перезатирает его при следующей выгрузке).
+## Сохранение и восстановление
 
-## Что снято с сайта
+Канонический repo и процедура snapshot описаны в:
 
-- **Цвета.** `#0088FF` / `#005EFF` (hover) / `#F4F8FF` / `#25222B` / `#36323E` / `#797A91` / `#A1A2B8` / `#E7E7E7` / `#C9C9C9` / `#FF991D`.
-- **Шрифт.** Gilroy (в Tilda объявлен как `Gillroy`), веса 300–900 с CDN Тильды. В деле — 500 / 600 / 700.
-- **Кнопки.** Пять размеров `35/45/50/60/60px`, шрифт `13/14/15/16/22`, радиус `24px`, вес 600. Primary `#0088FF` → hover `#005EFF`; secondary белая с текстом `#0088FF` → hover-заливка `#F4F8FF`.
-- **Инпуты.** Высота 60px (50px в компактных формах), радиус 5px, граница `#C9C9C9`, текст `#000000`.
-- **Радиусы.** 5 / 12 / 16 / 18 / 24 / 50. Базовый для карточек и фото — 18px.
-- **Обложка.** Высота 50vh, фон `#25222B`, скрим `linear-gradient(to bottom, rgba(37,34,43,.20), rgba(37,34,43,.80))`, H1 64/1.0/700 белым.
-- **Попап.** Радиус 16px, затемнение `rgba(37,34,43,.60)`.
-
-## Чего в системе нет намеренно
-
-- **Теней.** На сайте их нет ни в одном блоке — глубину даёт тинт `#F4F8FF` и граница `#E7E7E7`.
-- **Второго брендового цвета.** Amber `#FF991D` встречается дважды на весь сайт, это акцент, а не пара к синему.
-- **Тёмной темы.** Бренд light-first; тёмные только обложка, подвал и отдельные карточки.
-
-## Открытые вопросы
-
-- Gilroy подтягивается с CDN Тильды. Для нового кода вне Tilda нужно либо самостоятельно хостить woff2, либо купить лицензию — сейчас в `colors_and_type.css` стоят те же CDN-ссылки, что и на сайте.
-- Мобильная шкала (H1 32px и т. д.) выведена из медиазапросов Тильды и слегка нормализована — если правите её, правьте в `components.css`, а не по месту.
+- [ADR-001](docs/adr/001-canonical-repository.md);
+- [KP-002 restore evidence](docs/recovery/kp-002-snapshot.md);
+- [KP-003 secret/media audit](docs/security/kp-003-snapshot-audit.md).
