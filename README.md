@@ -6,7 +6,7 @@
 
 Идёт controlled rebuild. Сохранённый snapshot и legacy Tilda export используются как evidence и rollback source, но не как основа нового runtime.
 
-Текущий `main` содержит полезные Astro-исходники и материалы миграции, но ещё не является воспроизводимым application runtime: в нём отсутствуют package manifest/lockfile, Astro config, production Dockerfile и часть импортируемых файлов. Исторические launch-readiness отчёты описывают прежнее локальное состояние и не заменяют проверку clean clone.
+Controlled-rebuild линия PR №8 содержит воспроизводимый корневой Astro runtime, CI и вертикальный пилот дизайн-системы. До merge production и `main` не изменяются.
 
 Единственная целевая архитектура принята в [ADR-003](docs/DECISIONS/003-controlled-rebuild-and-source-hierarchy.md). Операционная [иерархия визуальных источников](docs/VISUAL-SOURCE-HIERARCHY.md), карта переноса и [порядок Linear-задач](docs/task-execution-plan.md) дополняют это решение.
 
@@ -16,7 +16,7 @@
 - Постоянный `app-v2`, второй runtime и второй production Dockerfile запрещены.
 - До DNS cutover действует [freeze изменений Tilda](docs/adr/002-tilda-change-freeze.md).
 - Production deploy, DNS, secrets, реальные lead destinations и analytics IDs требуют отдельного approval.
-- Старые CSS, component examples, live audits и screenshots пока являются migration evidence, а не окончательным machine-readable source of truth.
+- Старые CSS, component examples, live audits и Tilda screenshots являются migration evidence. Отдельное решение владельца закрепляет два HTML-файла ниже как обязательную визуальную основу.
 
 ## Целевая структура
 
@@ -38,12 +38,14 @@ Dockerfile
 
 ## Иерархия визуальных источников
 
-1. Утверждённый дизайн и review Александра.
+1. Утверждённый дизайн и review Александра, включая `docs/source/reference-desktop-v9.html` и `docs/source/reference-mobile-v3.html`.
 2. Machine-readable tokens/specs, Astro components и принятые reference screenshots.
 3. Live Tilda как временный reference до cutover.
 4. Tilda export и прежние audits как архивное evidence.
 
 Вертикальный пилот новой дизайн-системы расположен в корневых `design-system/` и `src/`. Старые файлы пока не удаляются: их вывод из эксплуатации выполняется отдельным reviewable-коммитом после подтверждения паритета.
+
+Карта точных marker/selector для блоков 01–34: `design-system/references/visual-source-map.yaml`. Команда `npm run ds:validate` проверяет наличие locators в обоих HTML и прямую traceability каждого visual-ready block spec.
 
 ## Локальный запуск
 

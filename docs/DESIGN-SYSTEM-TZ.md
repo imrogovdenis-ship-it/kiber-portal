@@ -73,6 +73,7 @@
 | Данные роботов и публикаций | контентные записи + `src/content.config.ts` | статические страницы |
 | Состав и порядок блоков | `design-system/recipes/*.yaml` | страницы Astro |
 | Контрольные состояния | `design-system/fixtures/**` | design-review и screenshot-тесты |
+| Визуальная основа блоков 01–34 | `docs/source/reference-desktop-v9.html`, `docs/source/reference-mobile-v3.html` + locators в `design-system/references/visual-source-map.yaml` | traceability block specs и generated-таблица |
 | Контакты и публичная конфигурация | `src/config/site.ts` с валидируемыми env-overrides | значения в сборке |
 | Требования исходного ТЗ и Excel | `docs/TRACEABILITY.md` | отчёт о покрытии |
 
@@ -129,7 +130,7 @@ Astro-компонент отвечает за:
 2. Легенду нумерации блоков.
 3. `Правки.xlsx` без удаления исходных строк.
 4. Полное действующее ТЗ.
-5. Эталонные скриншоты desktop/tablet/mobile, если они существуют.
+5. Принятые базовые HTML-референсы desktop/mobile и эталонные скриншоты для последующего pixel-level regression.
 6. Логотипы, изображения Гоши, фотографии и логотипы роботов.
 7. Файлы шрифтов и подтверждение права на использование Gilroy.
 8. Утверждённые реквизиты, телефон, Telegram и WhatsApp.
@@ -182,12 +183,17 @@ kiber-portal/
 │   ├── CHANGELOG-DESIGN-SYSTEM.md
 │   ├── DECISIONS/
 │   ├── generated/
-│   │   └── BLOCK-SPEC-TABLE.md
+│   │   ├── BLOCK-SPEC-TABLE.md
+│   │   └── REFERENCE-TRACEABILITY.md
 │   └── source/
 │       ├── Правки.xlsx
-│       └── исходное-ТЗ.md
+│       ├── исходное-ТЗ.md
+│       ├── reference-desktop-v9.html
+│       └── reference-mobile-v3.html
 │
 ├── design-system/
+│   ├── references/
+│   │   └── visual-source-map.yaml
 │   ├── tokens/
 │   │   ├── primitive/
 │   │   │   ├── colors.yaml
@@ -207,7 +213,8 @@ kiber-portal/
 │   │   ├── block.schema.ts
 │   │   ├── recipe.schema.ts
 │   │   ├── fixture.schema.ts
-│   │   └── analytics.schema.ts
+│   │   ├── analytics.schema.ts
+│   │   └── visual-reference.schema.ts
 │   ├── blocks/
 │   │   ├── 01-header.yaml
 │   │   ├── 02-home-hero.yaml
@@ -393,7 +400,8 @@ fixtures:
 - responsive contract;
 - accessibility contract;
 - analytics contract;
-- минимум один fixture.
+- минимум один fixture;
+- прямая traceability на desktop и mobile locators из `visual-source-map.yaml`.
 
 ### 8.2. Запрещено
 
@@ -686,7 +694,7 @@ Spec сам по себе не является достаточным исто�
 
 ### 16.2. Обязательный процесс
 
-1. Прочитать `AGENT-RULES.md`, легенду и связанные specs.
+1. Прочитать `AGENT-RULES.md`, легенду, связанные specs и оба HTML-фрагмента по locators из `visual-source-map.yaml`.
 2. Найти требование в `TRACEABILITY.md` или создать запись для новой правки.
 3. Определить тип изменения: token, contract, component, content или recipe.
 4. Изменить только соответствующий источник правды.
@@ -800,7 +808,9 @@ CI блокирует PR при наличии:
 - draft/review-контента в production build;
 - preview-route в production;
 - обязательного изображения без `alt`;
-- события аналитики вне контракта.
+- события аналитики вне контракта;
+- отсутствующего marker/selector любого блока 01–34 в принятом desktop/mobile HTML;
+- visual-ready spec без точной traceability на оба HTML-референса.
 
 ### 18.3. Команды проекта
 
@@ -901,8 +911,8 @@ FORM_ENDPOINT=
 ### Этап 1. Нормализация
 
 **Работы:** устранить дубли блоков, выделить variants, сопоставить ТЗ и правки.  
-**Результат:** `BLOCK-LEGEND.md`, `TRACEABILITY.md`, список решений.  
-**Ворота:** каждая правка относится к блоку, общему token или отдельному требованию.
+**Результат:** `BLOCK-LEGEND.md`, `TRACEABILITY.md`, `visual-source-map.yaml`, список решений.  
+**Ворота:** каждая правка относится к блоку, общему token или отдельному требованию; locators 01–34 найдены в обоих HTML.
 
 ### Этап 2. Фундамент дизайн-системы
 
@@ -975,6 +985,7 @@ FORM_ENDPOINT=
 - `.github/workflows/ci.yml`;
 - `design-system/tokens/**`;
 - `design-system/schemas/**`;
+- `design-system/references/visual-source-map.yaml`;
 - `design-system/scripts/**`;
 - spec и fixtures пилотного блока 05;
 - Astro-компонент пилотного блока 05;
@@ -1008,6 +1019,7 @@ FORM_ENDPOINT=
 - В компонентах отсутствуют запрещённые raw colors/dimensions.
 - Сгенерированная документация совпадает с исходными YAML.
 - Каждый блок имеет fixtures и visual baseline.
+- Каждый блок имеет точные desktop/mobile locators и прямую traceability на принятые HTML-референсы.
 
 ### 23.3. Контент
 
@@ -1059,14 +1071,15 @@ FORM_ENDPOINT=
 
 1. Требование однозначно связано с блоком или page recipe.
 2. Изменён правильный источник правды.
-3. Производные файлы перегенерированы.
-4. Добавлен или обновлён fixture/test.
-5. Все обязательные проверки CI прошли.
-6. Preview доступен и не индексируется.
-7. Desktop/tablet/mobile проверены.
-8. PR содержит описание, screenshots и критерий проверки.
-9. Владелец/ревьюер дал approve.
-10. После merge production успешно развёрнут и проверен.
+3. Визуальные параметры сверены с desktop/mobile HTML; отклонения имеют явный owner/review/legal/a11y/security/business override.
+4. Производные файлы перегенерированы.
+5. Добавлен или обновлён fixture/test.
+6. Все обязательные проверки CI прошли.
+7. Preview доступен и не индексируется.
+8. Desktop/tablet/mobile проверены.
+9. PR содержит описание, screenshots и критерий проверки.
+10. Владелец/ревьюер дал approve.
+11. После merge production успешно развёрнут и проверен.
 
 ---
 

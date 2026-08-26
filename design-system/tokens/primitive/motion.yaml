@@ -1,0 +1,6 @@
+layer: primitive
+namespace: motion
+tokens:
+  motion.duration.normal: { type: string, value: 300ms }
+  motion.easing.standard: { type: string, value: ease-in-out }
+  motion.scale.subtle: { type: number, value: 1.03 }
