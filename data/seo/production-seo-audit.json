@@ -1,0 +1,1325 @@
+{
+  "generatedAt": "2026-08-26T13:31:42.604141+00:00",
+  "task": "KP-071 / KIBER-51",
+  "summary": {
+    "total": 44,
+    "clean": 0,
+    "withDefects": 44,
+    "defectCounts": {
+      "нет twitter": 44,
+      "нет JSON-LD (в микроразметке": 44,
+      "нет meta description": 9,
+      "нет hN": 8,
+      "нет og": 16,
+      "длина title N вне диапазона N–N": 6,
+      "canonical вне https": 1
+    },
+    "duplicateTitles": 2,
+    "duplicateDescriptions": 2
+  },
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://www.kiber-portal.ru/",
+      "pageType": "home",
+      "decision": "keep",
+      "title": "Аренда роботов для мероприятий в Москве — от 20 000 ₽ | КИБЕР ПОРТАЛ",
+      "description": "): Более 20 моделей роботов в аренду с доставкой, настройкой и оператором «под ключ»: гуманоиды, роботы-собаки, промо-роботы. Москва и вся Россия. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда роботов для мероприятий",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru",
+        "og:title": "Главная страница",
+        "og:description": "Аренда робота гуманоида в Москве и РФ. Прокат с оператором, программирование сценария, доставка под ключ. Честные цены и технические консультации от Кибер Гоши",
+        "og:type": "website",
+        "og:image": "https://thb.tildacdn.com/tild3761-3963-4036-b934-653463666435/-/resize/504x/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-agibot-x2",
+      "url": "https://www.kiber-portal.ru/arenda-agibot-x2",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-гуманоида Agibot X2 в Москве | КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-гуманоида Agibot X2 с оператором и доставкой по Москве и России. Танцы, интерактив, автономная навигация. Расчёт стоимости за 1 день.",
+      "canonical": "https://www.kiber-portal.ru/arenda-agibot-x2",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-гуманоида Agibot X2",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-agibot-x2",
+        "og:title": "Робот-гуманоид | Agibot X2",
+        "og:description": "Прокат робота-гуманоида Agibot X2 с оператором и доставкой по Москве и России. Танцы, интерактив, автономная навигация. Расчёт стоимости за 1 день.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3635-6464-4337-a138-666439373335/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-bellabot",
+      "url": "https://www.kiber-portal.ru/arenda-bellabot",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-официанта BellaBot | КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-официанта BellaBot с доставкой и настройкой в Москве и по России. Развозит блюда и напитки в паре с персоналом. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru/arenda-bellabot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-официанта BellaBot",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-bellabot",
+        "og:title": "Робот-официант | BellaBot",
+        "og:description": "Прокат робота-официанта BellaBot с доставкой и настройкой в Москве и по России. Развозит блюда и напитки в паре с персоналом. Рассчитаем стоимость за 1 час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6430-3838-4730-a532-343435366463/09.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-glambot",
+      "url": "https://www.kiber-portal.ru/arenda-glambot",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота GlamBot | КИБЕР ПОРТАЛ",
+      "description": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-glambot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота GlamBot",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-glambot",
+        "og:title": "Робот-манипулятор | GlamBot",
+        "og:description": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6338-3666-4263-b137-363336353565/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-inchbot-l1-w-edu",
+      "url": "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-собаки Inchbot L1-W EDU | КИБЕР ПОРТАЛ",
+      "description": "Прокат образовательного робота-квадропеда Inchbot L1-W EDU: занятия по робототехнике, демо на выставках, доставка по Москве и регионам. Оставьте заявку.",
+      "canonical": "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-собаки Inchbot L1-W EDU",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+        "og:title": "Робота-собака | Inchbot L1-W EDU",
+        "og:description": "Прокат образовательного робота-квадропеда Inchbot L1-W EDU: занятия по робототехнике, демо на выставках, доставка по Москве и регионам. Оставьте заявку.",
+        "og:type": "website",
+        "og:image": "https://thb.tildacdn.com/tild3339-3661-4139-b463-643561616565/-/resize/504x/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-kettybot",
+      "url": "https://www.kiber-portal.ru/arenda-kettybot",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-официанта KettyBot в Москве| КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-официанта KettyBot для ресторанов, кафе и отелей: доставка блюд, встреча гостей, рекламный экран. Расчёт стоимости за один день.",
+      "canonical": "https://www.kiber-portal.ru/arenda-kettybot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-официанта KettyBot",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-kettybot",
+        "og:title": "Робот-официант | KettyBot",
+        "og:description": "Прокат робота-официанта KettyBot для ресторанов, кафе и отелей: доставка блюд, встреча гостей, рекламный экран. Расчёт стоимости за один день.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6139-3335-4138-a539-383539326630/01.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-klipmeiker",
+      "url": "https://www.kiber-portal.ru/arenda-klipmeiker",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота Клипмейкер | КИБЕР ПОРТАЛ",
+      "description": "Клипмейкер — роборука с камерой, которая сама снимает динамичное моушн-видео гостей. Прокат для мероприятий и контента в соцсети по всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-klipmeiker",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота Клипмейкер",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-klipmeiker",
+        "og:title": "Робот-манипулятор | Клипмейкер",
+        "og:description": "Клипмейкер — роборука с камерой, которая сама снимает динамичное моушн-видео гостей. Прокат для мероприятий и контента в соцсети по всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3039-3538-4564-b237-626230636636/06.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-mini-robo-kofeyni",
+      "url": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда мини робо-кофейни | КИБЕР ПОРТАЛ",
+      "description": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда мини робо-кофейни",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+        "og:title": "Робот-кофейня | Мини",
+        "og:description": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3339-3933-4137-b235-613431633164/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-noetix-bumi",
+      "url": "https://www.kiber-portal.ru/arenda-noetix-bumi",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-гуманоида Noetix Bumi в Москве | КИБЕР ПОРТАЛ",
+      "description": "Прокат нового робота-гуманоида Noetix Bumi для мероприятий в Москве и по всей России. Доставка, настройка, оператор. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru/arenda-noetix-bumi",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-гуманоида Noetix Bumi",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-noetix-bumi",
+        "og:title": "Робот-гуманоид | Noetix Bumi",
+        "og:description": "Прокат нового робота-гуманоида Noetix Bumi для мероприятий в Москве и по всей России. Доставка, настройка, оператор. Рассчитаем стоимость за 1 час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3931-3239-4761-b435-343766386664/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-promobot-v4",
+      "url": "https://www.kiber-portal.ru/arenda-promobot-v4",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда Promobot V4 | КИБЕР ПОРТАЛ",
+      "description": "Promobot V4 — автономный робот-промоутер с распознаванием лиц и речью на 7 языках. Прокат для выставок и корпоративов по Москве и России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-promobot-v4",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда Promobot V4",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-promobot-v4",
+        "og:title": "Робот-промоутер | Promobot V4",
+        "og:description": "Promobot V4 — автономный робот-промоутер с распознаванием лиц и речью на 7 языках. Прокат для выставок и корпоративов по Москве и России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3636-6331-4535-b465-646266393432/03.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robo-kofeyni",
+      "url": "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робо-кофейни | КИБЕР ПОРТАЛ",
+      "description": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-кофейни",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+        "og:title": "Робот-кофейня | Стандарт",
+        "og:description": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3166-3530-4635-a635-326430303162/08.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-roboshashki",
+      "url": "https://www.kiber-portal.ru/arenda-roboshashki",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота для игры в шашки | КИБЕР ПОРТАЛ",
+      "description": "Робошашки распознают доску камерой и сами делают ход роборукой. Прокат простого и понятного всем гостям аттракциона по всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-roboshashki",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота для игры в шашки",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-roboshashki",
+        "og:title": "Робот-шашки | Большой",
+        "og:description": "Робошашки распознают доску камерой и сами делают ход роборукой. Прокат простого и понятного всем гостям аттракциона по всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3034-3761-4137-a336-346133313336/010.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robot-barmen",
+      "url": "https://www.kiber-portal.ru/arenda-robot-barmen",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-бармена «Робобар» на праздник | КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robot-barmen",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-бармена «Робобар»",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robot-barmen",
+        "og:title": "Робот-бармен | Робобар",
+        "og:description": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3533-3065-4934-b435-656434356665/05.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robota-ardi",
+      "url": "https://www.kiber-portal.ru/arenda-robota-ardi",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота Арди (Promobot) | КИБЕР ПОРТАЛ",
+      "description": "Робот Арди — реалистичный андроид Promobot с 600+ микровыражениями лица и ИИ-диалогом. Эксклюзивный прокат для премиальных мероприятий по России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-ardi",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота Арди",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robota-ardi",
+        "og:title": "Робот-гуманоид | Арди (Promobot)",
+        "og:description": "Робот Арди — реалистичный андроид Promobot с 600+ микровыражениями лица и ИИ-диалогом. Эксклюзивный прокат для премиальных мероприятий по России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6531-3538-4336-b765-336630623635/010.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robota-hudozhnika-a4",
+      "url": "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-художника большого формата | КИБЕР ПОРТАЛ",
+      "description": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-художника большого формата",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+        "og:title": "Робот-художник| Большой формат",
+        "og:description": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3865-6264-4061-b232-616230326430/05.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robota-sofiya",
+      "url": "https://www.kiber-portal.ru/arenda-robota-sofiya",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота София | КИБЕР ПОРТАЛ",
+      "description": "София Hanson Robotics — самый узнаваемый гуманоид в мире. Прокат робота-андроида на конференцию, форум или премиальное мероприятие.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-sofiya",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота София",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robota-sofiya",
+        "og:title": "Робот гуманоид | София",
+        "og:description": "София Hanson Robotics — самый узнаваемый гуманоид в мире. Прокат робота-андроида на конференцию, форум или премиальное мероприятие.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6138-3464-4439-a336-323663313833/07.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robota-tron",
+      "url": "https://www.kiber-portal.ru/arenda-robota-tron",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда модульного робота Tron | КИБЕР ПОРТАЛ",
+      "description": "Робот Tron меняет стопы между шагающим, опорным и колёсным режимом. Прокат для tech-выставок и научных фестивалей по всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robota-tron",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда модульного робота Tron",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robota-tron",
+        "og:title": "Модульный робота | Tron",
+        "og:description": "Робот Tron меняет стопы между шагающим, опорным и колёсным режимом. Прокат для tech-выставок и научных фестивалей по всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6436-3635-4263-b962-323339303432/09.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-robotov-na-meropriyatie",
+      "url": "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+      "pageType": "collection",
+      "decision": "keep",
+      "title": "Аренда роботов на мероприятие в Москве | КИБЕР ПОРТАЛ",
+      "description": "Аренда роботов на свадьбу, корпоратив, конференцию или фестиваль — гуманоиды, робособаки, официанты. Разбираем форматы и как выбрать модель.",
+      "canonical": "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда роботов на мероприятие: зачем это нужно и как выбрать формат",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+        "og:title": "Аренда роботов на мероприятие в Москве | КИБЕР ПОРТАЛ",
+        "og:description": "Аренда роботов на свадьбу, корпоратив, конференцию или фестиваль — гуманоиды, робособаки, официанты. Разбираем форматы и как выбрать модель.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6632-3039-4435-b631-633138313135/__________.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-senserobot",
+      "url": "https://www.kiber-portal.ru/arenda-senserobot",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-шахматиста SenseRobot | КИБЕР ПОРТАЛ",
+      "description": "Робот-шахматист SenseRobot с ИИ до уровня гроссмейстера сам делает ходы механической рукой. Прокат для выставок и корпоративов по всей России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-senserobot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-шахматиста SenseRobot",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-senserobot",
+        "og:title": "Робот-шахматист | SenseRobot",
+        "og:description": "Робот-шахматист SenseRobot с ИИ до уровня гроссмейстера сам делает ходы механической рукой. Прокат для выставок и корпоративов по всей России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3839-3537-4431-a234-626632626533/01.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-sketchbot",
+      "url": "https://www.kiber-portal.ru/arenda-sketchbot",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-художника Sketchbot в Москве | КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-художника Sketchbot: ИИ-портреты гостей за минуту, брендирование логотипом, доставка и оператор по Москве и регионам. Расчёт за час.",
+      "canonical": "https://www.kiber-portal.ru/arenda-sketchbot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-художника Sketchbot",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-sketchbot",
+        "og:title": "Робот-художник | Sketchbot",
+        "og:description": "Прокат робота-художника Sketchbot: ИИ-портреты гостей за минуту, брендирование логотипом, доставка и оператор по Москве и регионам. Расчёт за час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6139-6562-4232-b230-363664373137/017.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-unitree-g1",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-гуманоида Unitree G1 в Москве | КИБЕР ПОРТАЛ",
+      "description": "Гуманоид Unitree G1 на прокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-g1",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-гуманоида Unitree G1",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-unitree-g1",
+        "og:title": "Робот-гуманоид | Unitree G1",
+        "og:description": "Гуманоид Unitree G1 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3739-6330-4432-b730-636462313837/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-unitree-go2",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-go2",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-собаки Unitree Go2 в Москве | КИБЕР ПОРТАЛ",
+      "description": "Робот-собака Unitree Go2 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-go2",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-собаки Unitree Go2",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-unitree-go2",
+        "og:title": "Робота-собака | Unitree Go2",
+        "og:description": "Робот-собака Unitree Go2 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6535-6362-4435-b033-333438316436/0d040599a49c4793be74.webp"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-unitree-h2",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-h2",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-гуманоида Unitree H2 в Москве | КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-гуманоида Unitree H2 с оператором и доставкой по Москве и регионам. Новейшая модель Unitree с мимикой и ИИ. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-h2",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-гуманоида Unitree H2",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-unitree-h2",
+        "og:title": "Робот-гуманоид | Unitree H2",
+        "og:description": "Прокат робота-гуманоида Unitree H2 с оператором и доставкой по Москве и регионам. Новейшая модель Unitree с мимикой и ИИ. Рассчитаем стоимость за 1 час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6566-3862-4532-b338-383238633838/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-unitree-r1",
+      "url": "https://www.kiber-portal.ru/arenda-unitree-r1",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда робота-гуманоида Unitree R1 в Москве | КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-гуманоида Unitree R1 с оператором: акробатика, доставка, настройка. Компактный андроид для выставок в Москве и регионах. Рассчитаем стоимость.",
+      "canonical": "https://www.kiber-portal.ru/arenda-unitree-r1",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-гуманоида Unitree R1",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-unitree-r1",
+        "og:title": "Робот-гуманоид | Unitree R1",
+        "og:description": "Прокат робота-гуманоида Unitree R1 с оператором: акробатика, доставка, настройка. Компактный андроид для выставок в Москве и регионах. Рассчитаем стоимость.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6663-3738-4262-a338-613730653332/06.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-uv-box",
+      "url": "https://www.kiber-portal.ru/arenda-uv-box",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Аренда UV-BOX | КИБЕР ПОРТАЛ",
+      "description": "UV-BOX — сенсорная витрина, где 3D-товар парит прямо в воздухе. Прокат интерактивной витрины на выставку, стенд или открытие бутика.",
+      "canonical": "https://www.kiber-portal.ru/arenda-uv-box",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда интерактивной витрины UV-BOX",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-uv-box",
+        "og:title": "Не робот | UV-BOX",
+        "og:description": "UV-BOX — сенсорная витрина, где 3D-товар парит прямо в воздухе. Прокат интерактивной витрины на выставку, стенд или открытие бутика.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6438-3139-4061-a639-643764633432/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/arenda-xiaomi-cyberdog-2",
+      "url": "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+      "pageType": "robot detail",
+      "decision": "keep",
+      "title": "Прокат робота-собаки Xiaomi Cyberdog 2 | КИБЕР ПОРТАЛ",
+      "description": "Аренда робота-собаки Xiaomi Cyberdog 2 с оператором: голосовые команды, сальто, фотозона для гостей. Доставка по Москве и другим городам России.",
+      "canonical": "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-собаки Xiaomi Cyberdog 2",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+        "og:title": "Робота-собака | Xiaomi Cyberdog 2",
+        "og:description": "Аренда робота-собаки Xiaomi Cyberdog 2 с оператором: голосовые команды, сальто, фотозона для гостей. Доставка по Москве и другим городам России.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3962-6239-4563-b330-653865333837/photo.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/articles",
+      "url": "https://www.kiber-portal.ru/articles",
+      "pageType": "content index",
+      "decision": "keep",
+      "title": "Все статьи",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/articles",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/articles",
+        "og:title": "Все статьи",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/astri",
+      "url": "https://www.kiber-portal.ru/astri",
+      "pageType": "stub/system",
+      "decision": "redirect",
+      "title": "Astribot",
+      "description": "",
+      "canonical": "http://kiber-portal.ru/astri",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Astribot S1",
+      "openGraph": {
+        "og:url": "http://kiber-portal.ru/astri",
+        "og:title": "Astribot",
+        "og:description": "",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3935-6537-4632-a664-333838353533/photo.svg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "длина title 8 вне диапазона 10–70",
+        "нет meta description",
+        "canonical вне https://www.kiber-portal.ru: http://kiber-portal.ru/astri",
+        "нет og:description",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/compilations",
+      "url": "https://www.kiber-portal.ru/compilations",
+      "pageType": "content index",
+      "decision": "keep",
+      "title": "Подборки",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/compilations",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/compilations",
+        "og:title": "Подборки",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "длина title 8 вне диапазона 10–70",
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/neobychnyi-podarok-direktoru-robot",
+      "url": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Необычный подарок директору: робот в подарок | КИБЕР ПОРТАЛ",
+      "description": "Креативный подарок директору — робот-гуманоид с поклоном и поздравлением на празднике. Аренда с оператором в Москве. Цена по запросу — рассчитаем за час.",
+      "canonical": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Необычный подарок директору: робот в кабинете вместо галстука",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+        "og:title": "Необычный подарок директору: робот в подарок | КИБЕР ПОРТАЛ",
+        "og:description": "Креативный подарок директору — робот-гуманоид с поклоном и поздравлением на празднике. Аренда с оператором в Москве. Цена по запросу — рассчитаем за час.",
+        "og:type": "website",
+        "og:image": "https://thb.tildacdn.com/tild3065-3664-4363-b561-616435326462/-/resize/504x/____.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/news",
+      "url": "https://www.kiber-portal.ru/news",
+      "pageType": "content index",
+      "decision": "keep",
+      "title": "news",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/news",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/news",
+        "og:title": "news",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [],
+      "schemaErrors": [],
+      "defects": [
+        "длина title 4 вне диапазона 10–70",
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ничего)"
+      ]
+    },
+    {
+      "path": "/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "url": "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Noetix Bumi: робот-гуманоид ростом с ребёнка | КИБЕР ПОРТАЛ",
+      "description": "Noetix Bumi — компактный робот-гуманоид 94 см, который не пугает детей и танцует не хуже старших моделей. Разбираю, где он раскрывается лучше всего.",
+      "canonical": "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Noetix Bumi: робот-гуманоид ростом с ребёнка для мероприятий",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+        "og:title": "Noetix Bumi: робот-гуманоид ростом с ребёнка | КИБЕР ПОРТАЛ",
+        "og:description": "Noetix Bumi — компактный робот-гуманоид 94 см, который не пугает детей и танцует не хуже старших моделей. Разбираю, где он раскрывается лучше всего.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6336-6532-4234-b934-373466363836/_Noetix_Bumi_-.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/page135835866.html",
+      "url": "https://www.kiber-portal.ru/page135835866.html",
+      "pageType": "tilda system page",
+      "decision": "delete",
+      "title": "Шаблоны блоков",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/page135835866.html",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/page135835866.html",
+        "og:title": "Шаблоны блоков",
+        "og:description": "",
+        "og:type": "website",
+        "og:image": "https://thb.tildacdn.com/tild6362-6231-4039-b032-626132656135/-/resize/504x/baner_sale.png"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/page135870606.html",
+      "url": "https://www.kiber-portal.ru/page135870606.html",
+      "pageType": "tilda system page",
+      "decision": "delete",
+      "title": "404",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/page135870606.html",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/page135870606.html",
+        "og:title": "404",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "длина title 3 вне диапазона 10–70",
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/page145061706.html",
+      "url": "https://www.kiber-portal.ru/page145061706.html",
+      "pageType": "tilda system page",
+      "decision": "delete",
+      "title": "soon",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/page145061706.html",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/page145061706.html",
+        "og:title": "soon",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "длина title 4 вне диапазона 10–70",
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/page185196309.html",
+      "url": "https://www.kiber-portal.ru/page185196309.html",
+      "pageType": "tilda system page",
+      "decision": "redirect",
+      "title": "Необычный подарок директору: робот в подарок | КИБЕР ПОРТАЛ",
+      "description": "Креативный подарок директору — робот-гуманоид с поклоном и поздравлением на празднике. Аренда с оператором в Москве. Цена по запросу — рассчитаем за час.",
+      "canonical": "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Необычное поздравление на свадьбе: робот выходит с тостом и танцем",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/page185196309.html",
+        "og:title": "Copy of Шаблон статьи",
+        "og:description": "Креативный подарок директору — робот-гуманоид с поклоном и поздравлением на празднике. Аренда с оператором в Москве. Цена по запросу — рассчитаем за час.",
+        "og:type": "website",
+        "og:image": "https://thb.tildacdn.com/tild3065-3664-4363-b561-616435326462/-/resize/504x/____.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/page205493309.html",
+      "url": "https://www.kiber-portal.ru/page205493309.html",
+      "pageType": "tilda system page",
+      "decision": "delete",
+      "title": "Blank page",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/page205493309.html",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/page205493309.html",
+        "og:title": "Blank page",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [],
+      "schemaErrors": [],
+      "defects": [
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ничего)"
+      ]
+    },
+    {
+      "path": "/pozdravlenie-robotom-na-svadbe",
+      "url": "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Необычное поздравление на свадьбе роботом | КИБЕР ПОРТАЛ",
+      "description": "Ищете, как необычно поздравить молодожёнов? Робот-гуманоид выходит с тостом, песней и танцем. Разбираем формат и стоимость аренды.",
+      "canonical": "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Необычное поздравление на свадьбе: робот выходит с тостом и танцем",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe",
+        "og:title": "Необычное поздравление на свадьбе роботом | КИБЕР ПОРТАЛ",
+        "og:description": "Ищете, как необычно поздравить молодожёнов? Робот-гуманоид выходит с тостом, песней и танцем. Разбираем формат и стоимость аренды.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3937-6365-4436-b835-363962316365/__________.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/robot-ofitsiant-na-meropriyatii",
+      "url": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Робот-официант на мероприятие — аренда | КИБЕР ПОРТАЛ",
+      "description": "Робот-официант на свадьбу, конференцию или фестиваль: разносит напитки, привлекает внимание гостей. Разбираем форматы и цену аренды.",
+      "canonical": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Робот-официант на мероприятии: свадьба, конференция, фестиваль",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
+        "og:title": "Робот-официант на мероприятие — аренда | КИБЕР ПОРТАЛ",
+        "og:description": "Робот-официант на свадьбу, конференцию или фестиваль: разносит напитки, привлекает внимание гостей. Разбираем форматы и цену аренды.",
+        "og:type": "website",
+        "og:image": "https://thb.tildacdn.com/tild3263-3466-4434-b366-643161663638/-/resize/504x/___.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/roboty-gumanoidy",
+      "url": "https://www.kiber-portal.ru/roboty-gumanoidy",
+      "pageType": "collection",
+      "decision": "keep",
+      "title": "Аренда робота-гуманоида в Москве от 35 000 ₽ | КИБЕР ПОРТАЛ",
+      "description": "Аренда робота-гуманоида на мероприятие: Unitree G1, R1, Agibot X2, Noetix Bumi. Доставка и оператор по Москве и России. Рассчитаем стоимость за 1 час.",
+      "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Аренда робота-гуманоида для мероприятий",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/roboty-gumanoidy",
+        "og:title": "Аренда робота-гуманоида в Москве от 35 000 ₽ | КИБЕР ПОРТАЛ",
+        "og:description": "Аренда робота-гуманоида на мероприятие: Unitree G1, R1, Agibot X2, Noetix Bumi. Доставка и оператор по Москве и России. Рассчитаем стоимость за 1 час.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6432-6333-4465-b831-643066663462/_-.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/sravnenie-unitree-g1-r1-h2",
+      "url": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Unitree G1, R1, H2: сравнение гуманоидов | КИБЕР ПОРТАЛ",
+      "description": "Сравниваем гуманоидов Unitree G1, R1 и H2 по росту, автономности и сценариям для мероприятий — какая модель подойдёт именно вам.",
+      "canonical": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Unitree G1, R1 и H2: сравнение роботов-гуманоидов для мероприятий",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
+        "og:title": "Unitree G1, R1, H2: сравнение гуманоидов | КИБЕР ПОРТАЛ",
+        "og:description": "Сравниваем гуманоидов Unitree G1, R1 и H2 по росту, автономности и сценариям для мероприятий — какая модель подойдёт именно вам.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild3637-6338-4261-b733-376638383964/_Unitree_G1_R1_H2_.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/test2",
+      "url": "https://www.kiber-portal.ru/test2",
+      "pageType": "test page",
+      "decision": "delete",
+      "title": "test2",
+      "description": "",
+      "canonical": "https://www.kiber-portal.ru/test2",
+      "robots": "",
+      "h1Count": 0,
+      "h1": "",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/test2",
+        "og:title": "test2",
+        "og:description": "",
+        "og:type": "website"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [],
+      "schemaErrors": [],
+      "defects": [
+        "длина title 5 вне диапазона 10–70",
+        "нет meta description",
+        "нет h1",
+        "нет og:description",
+        "нет og:image",
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ничего)"
+      ]
+    },
+    {
+      "path": "/unitree-g1-ili-agibot-x2",
+      "url": "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Unitree G1 или Agibot X2: что выбрать для мероприятия | КИБЕР ПОРТАЛ",
+      "description": "Сравниваем роботов-гуманоидов Unitree G1 и Agibot X2: характеристики, сценарии использования, чек-лист выбора. Поможем подобрать робота под ваше мероприятие.",
+      "canonical": "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2",
+        "og:title": "Unitree G1 или Agibot X2: что выбрать для мероприятия | КИБЕР ПОРТАЛ",
+        "og:description": "Сравниваем роботов-гуманоидов Unitree G1 и Agibot X2: характеристики, сценарии использования, чек-лист выбора. Поможем подобрать робота под ваше мероприятие.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6135-3630-4137-a364-616534393962/_Unitree_G1__Agibot_.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    },
+    {
+      "path": "/velkom-zona-na-svadbe-robot",
+      "url": "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot",
+      "pageType": "article/detail",
+      "decision": "keep",
+      "title": "Велком-зона на свадьбе с роботом | КИБЕР ПОРТАЛ",
+      "description": "Ищете необычную идею для велком-зоны на свадьбе? Робот-гуманоид встречает гостей, пока молодожёны на фотосессии. Разбираем, как это работает.",
+      "canonical": "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot",
+      "robots": "",
+      "h1Count": 1,
+      "h1": "Необычная велком-зона на свадьбе: робот, который встречает гостей",
+      "openGraph": {
+        "og:url": "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot",
+        "og:title": "Велком-зона на свадьбе с роботом | КИБЕР ПОРТАЛ",
+        "og:description": "Ищете необычную идею для велком-зоны на свадьбе? Робот-гуманоид встречает гостей, пока молодожёны на фотосессии. Разбираем, как это работает.",
+        "og:type": "website",
+        "og:image": "https://static.tildacdn.com/tild6266-3534-4863-a462-636335633561/_-______.jpg"
+      },
+      "twitterCard": "",
+      "schemaTypes": [],
+      "microdataTypes": [
+        "ImageObject"
+      ],
+      "schemaErrors": [],
+      "defects": [
+        "нет twitter:card",
+        "нет JSON-LD (в микроразметке: ImageObject)"
+      ]
+    }
+  ]
+}
