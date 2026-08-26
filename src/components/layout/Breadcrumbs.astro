@@ -1,0 +1,23 @@
+---
+export interface BreadcrumbItem { label: string; href?: string }
+interface Props { items: BreadcrumbItem[] }
+const { items } = Astro.props;
+---
+
+<nav class="breadcrumbs" data-rv="10" aria-label="Хлебные крошки">
+  <ol class="breadcrumbs__list">
+    {items.map((item, index) => (
+      <li>
+        {index > 0 && <span class="breadcrumbs__separator" aria-hidden="true">/</span>}
+        {item.href && index < items.length - 1
+          ? <a class="breadcrumbs__link" href={item.href}>{item.label}</a>
+          : <span class="breadcrumbs__current" aria-current="page">{item.label}</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs{padding:1rem 1.25rem;background:var(--kp-sky)}.breadcrumbs__list{display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;margin:0;padding:0;list-style:none;font-size:0.75rem}.breadcrumbs__list li{display:contents}.breadcrumbs__link{color:var(--kp-muted);text-decoration:none}.breadcrumbs__separator{color:var(--kp-muted-soft)}.breadcrumbs__current{color:var(--kp-ink)}
+  @media(min-width:40rem){.breadcrumbs{padding:1.5rem var(--kp-container-inline)}.breadcrumbs__list{gap:0.75rem;font-size:0.875rem}.breadcrumbs__link:hover{color:var(--kp-blue)}}
+</style>
