@@ -16,7 +16,10 @@
     "test": "node --import tsx --test tests/content/**/*.test.ts",
     "test:visual": "node --import tsx --test tests/visual/**/*.test.ts",
     "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "ci": "npm run check && npm test && npm run test:visual && DEPLOY_ENV=production npm run build"
+    "verify": "npm run check && npm test && npm run test:visual",
+    "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
+    "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
+    "ci": "npm run verify && npm run build:production"
   },
   "dependencies": {
     "astro": "7.2.7",

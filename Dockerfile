@@ -2,11 +2,16 @@ FROM node:22-alpine AS build
 
 WORKDIR /workspace
 
+ARG DEPLOY_ENV=production
+ARG DESIGN_REVIEW_ENABLED=false
+ENV DEPLOY_ENV=$DEPLOY_ENV
+ENV DESIGN_REVIEW_ENABLED=$DESIGN_REVIEW_ENABLED
+
 COPY package.json package-lock.json ./
 RUN npm ci --ignore-scripts
 
 COPY . .
-RUN npm run ci
+RUN npm run verify && npm run build
 
 FROM nginx:alpine AS runtime
 
