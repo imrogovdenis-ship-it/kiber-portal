@@ -1,0 +1,17 @@
+schema_version: 1
+id: site-footer-long-content
+block_id: site-footer
+variant: default
+viewport: lg
+mode: long-content
+data:
+  logo_label: КИБЕР ПОРТАЛ
+  description: Аренда роботов-гуманоидов, роботов-собак и интерактивных решений для мероприятий в Москве и по всей России.
+  sections:
+    - { title: Каталог роботов, links: [{ href: "/#catalog", label: Все роботы и интерактивные решения }] }
+    - { title: Полезные материалы, links: [{ href: /articles, label: Статьи и руководства по роботам }] }
+  phone: +7 000 000-00-00
+  email: hello@kiber-portal.ru
+  messengers: [{ href: "https://t.me/kiber_portal", label: Telegram }, { href: "https://wa.me/70000000000", label: WhatsApp }]
+  legal_notice: Информация на сайте не является публичной офертой.
+  legal_links: [{ href: /privacy-policy, label: Политика обработки персональных данных }, { href: /cookie-policy, label: Политика использования cookie }]

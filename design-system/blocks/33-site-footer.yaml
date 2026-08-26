@@ -1,0 +1,36 @@
+schema_version: 1
+id: site-footer
+review_id: "33"
+name: Site Footer
+status: pilot
+component: src/components/layout/Footer.astro
+used_in: [all-public-pages, design-review]
+variants: [default]
+tokens:
+  surface: "{color.ink.dark}"
+  foreground: "{color.ink.inverse}"
+  muted: "{color.text.subtle}"
+  action: "{color.action.rest}"
+content_contract:
+  required: [logo_label, description, sections, phone, email, messengers, legal_notice, legal_links]
+  optional: []
+  rules:
+    - contacts and legal links remain usable without JavaScript
+    - published contacts are sourced from validated public config
+responsive:
+  sm: { columns: 1 }
+  md: { columns: 2 }
+  lg: { columns: 4 }
+  xl: { columns: 4 }
+accessibility:
+  landmark: contentinfo
+  image_alt_required: false
+  full_card_link: false
+  focus_visible: true
+analytics:
+  events: [phone_click, contact_click]
+fixtures: [default, long-content, minimal, missing-optional, mobile]
+traceability:
+  - { source: docs/source/reference-desktop-v9.html, locator: 33 FOOTER }
+  - { source: docs/source/reference-mobile-v3.html, locator: 33 FOOTER }
+  - { source: docs/DESIGN-SYSTEM-TZ.md, locator: Header/Footer/Breadcrumbs }

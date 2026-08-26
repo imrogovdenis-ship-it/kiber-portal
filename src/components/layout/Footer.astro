@@ -1,0 +1,30 @@
+---
+import { siteConfig } from '../../config/site';
+import type { FooterData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends Partial<FooterData> {}
+const defaults = {
+  logo_label: 'КИБЕР ПОРТАЛ',
+  description: 'Аренда роботов для мероприятий в Москве и по всей России.',
+  sections: [
+    { title: 'Каталог', links: [{ href: '/#catalog', label: 'Все роботы' }, { href: '/roboty-gumanoidy', label: 'Гуманоиды' }, { href: '/roboty-sobaki', label: 'Роботы-собаки' }] },
+    { title: 'Контент', links: [{ href: '/compilations', label: 'Подборки' }, { href: '/articles', label: 'Блог' }, { href: '/news', label: 'Новости' }] },
+  ],
+  messengers: [{ href: siteConfig.telegram, label: 'Telegram' }, { href: siteConfig.whatsapp, label: 'WhatsApp' }],
+  legal_notice: `© ${new Date().getUTCFullYear()} КИБЕР ПОРТАЛ · Не является публичной офертой`,
+  legal_links: [{ href: '/privacy-policy', label: 'Политика конфиденциальности' }, { href: '/cookie-policy', label: 'Политика cookie' }],
+};
+const { logo_label = defaults.logo_label, description = defaults.description, sections = defaults.sections, phone = siteConfig.phone, email = siteConfig.email, messengers = defaults.messengers, legal_notice = defaults.legal_notice, legal_links = defaults.legal_links } = Astro.props;
+const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
+---
+
+<footer class="site-footer" data-block="33-footer">
+  <div class="container">
+    <div class="site-footer__main">
+      <div><a class="site-footer__logo" href="/">{logo_label}</a><p class="site-footer__description">{description}</p></div>
+      {sections.map((section) => <div><h2 class="site-footer__title">{section.title}</h2><ul class="site-footer__nav-list">{section.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul></div>)}
+      <div><h2 class="site-footer__title">Контакты</h2><a class="site-footer__phone" href={phoneHref} data-analytics-event="phone_click">{phone}</a><a class="site-footer__email" href={`mailto:${email}`} data-analytics-event="contact_click">{email}</a><div class="site-footer__messengers">{messengers.map((link) => <a href={link.href} aria-label={link.label}>{link.label.slice(0, 2).toUpperCase()}</a>)}</div></div>
+    </div>
+    <div class="site-footer__bottom"><div>{legal_notice}</div><div class="site-footer__legal-links">{legal_links.map((link) => <a href={link.href}>{link.label}</a>)}</div></div>
+  </div>
+</footer>

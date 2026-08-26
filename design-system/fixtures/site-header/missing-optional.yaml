@@ -1,0 +1,13 @@
+schema_version: 1
+id: site-header-missing-optional
+block_id: site-header
+variant: default
+viewport: xl
+mode: missing-optional
+data:
+  logo_label: КИБЕР ПОРТАЛ
+  nav:
+    - { href: "/#catalog", label: Каталог }
+    - { href: /contacts, label: Контакты }
+  phone: +7 000 000-00-00
+  cta: { href: /contacts, label: Написать нам }

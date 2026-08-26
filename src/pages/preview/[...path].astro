@@ -11,13 +11,12 @@ export function getStaticPaths() {
 
 const block = blockRegistry.find((entry) => entry.spec.id === 'robot-card');
 if (!block) throw new Error('Robot Card is not registered');
-const module = await block.load();
-const RobotCard = module.default;
+const { default: RobotCard } = await import('../../components/blocks/RobotCard.astro');
 const specUrl = `https://github.com/imrogovdenis-ship-it/kiber-portal/blob/main/design-system/blocks/05-robot-card.yaml`;
 ---
 
 <BaseLayout title="Design review — КИБЕР ПОРТАЛ" description="Preview дизайн-системы." noindex>
-  <main class="review container">
+  <main class="review container" id="main-content" tabindex="-1">
     <header>
       <p>Design system / visual review</p>
       <h1>05 · Robot Card</h1>
@@ -25,7 +24,7 @@ const specUrl = `https://github.com/imrogovdenis-ship-it/kiber-portal/blob/main/
     </header>
 
     <div class="review__grid">
-      {block.fixtures.map((fixture) => (
+      {block.fixtures.filter((fixture) => fixture.block_id === 'robot-card').map((fixture) => (
         <section class="review__case" data-viewport={fixture.viewport}>
           <header>
             <strong>{fixture.mode}</strong>

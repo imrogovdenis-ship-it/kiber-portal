@@ -1,0 +1,49 @@
+---
+import { siteConfig } from '../../config/site';
+import type { HeaderData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends Partial<HeaderData> {}
+const defaultLinks = [
+  { href: '/#catalog', label: 'Каталог' },
+  { href: '/compilations', label: 'Подборки' },
+  { href: '/articles', label: 'Блог' },
+  { href: '/news', label: 'Новости' },
+  { href: '/contacts', label: 'Контакты' },
+];
+const { logo_label = 'КИБЕР ПОРТАЛ', nav: links = defaultLinks, phone = siteConfig.phone, cta = { href: '/contacts', label: 'Написать нам' } } = Astro.props;
+const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
+---
+
+<header class="site-header" data-block="01-header">
+  <div class="site-header__container">
+    <a class="site-header__logo" href="/" aria-label={`${logo_label} — главная`}>{logo_label}</a>
+    <nav class="site-header__nav" id="primary-navigation" aria-label="Основная навигация">
+      {links.map((link) => <a class="site-header__link" href={link.href}>{link.label}</a>)}
+    </nav>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href={phoneHref} data-analytics-event="phone_click">{phone}</a>
+      <a class="site-header__cta" href={cta.href} data-analytics-event="contact_click">{cta.label}</a>
+    </div>
+    <button class="site-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('.site-header');
+  const toggle = header?.querySelector<HTMLButtonElement>('.site-header__burger');
+  const closeMenu = () => {
+    header?.classList.remove('is-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.setAttribute('aria-label', 'Открыть меню');
+  };
+  toggle?.addEventListener('click', () => {
+    const open = !header?.classList.contains('is-open');
+    header?.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+  });
+  header?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', (event) => event.key === 'Escape' && closeMenu());
+</script>

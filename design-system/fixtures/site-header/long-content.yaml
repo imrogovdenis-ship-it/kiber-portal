@@ -1,0 +1,16 @@
+schema_version: 1
+id: site-header-long-content
+block_id: site-header
+variant: default
+viewport: lg
+mode: long-content
+data:
+  logo_label: КИБЕР ПОРТАЛ
+  nav:
+    - { href: "/#catalog", label: Полный каталог роботов }
+    - { href: /compilations, label: Тематические подборки }
+    - { href: /articles, label: Статьи и руководства }
+    - { href: /news, label: Новости робототехники }
+    - { href: /contacts, label: Контакты и реквизиты }
+  phone: +7 000 000-00-00
+  cta: { href: /contacts, label: Обсудить мероприятие }

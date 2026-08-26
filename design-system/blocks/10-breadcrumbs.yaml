@@ -1,0 +1,36 @@
+schema_version: 1
+id: breadcrumbs
+review_id: "10"
+name: Breadcrumbs
+status: pilot
+component: src/components/layout/Breadcrumbs.astro
+used_in: [detail-pages, design-review]
+variants: [default]
+tokens:
+  surface: "{color.canvas}"
+  link: "{color.text.muted}"
+  current: "{color.ink.heading}"
+  focus: "{color.badge}"
+content_contract:
+  required: [items]
+  optional: []
+  rules:
+    - items match the visible hierarchy and generated BreadcrumbList JSON-LD
+    - final item is current and is not a link
+responsive:
+  sm: { wrap: true }
+  md: { wrap: true }
+  lg: { wrap: true }
+  xl: { wrap: true }
+accessibility:
+  landmark: navigation
+  image_alt_required: false
+  full_card_link: false
+  focus_visible: true
+analytics:
+  events: [breadcrumb_click]
+fixtures: [default, long-content, minimal, missing-optional, mobile]
+traceability:
+  - { source: docs/source/reference-desktop-v9.html, locator: 10 BREADCRUMBS }
+  - { source: docs/source/reference-mobile-v3.html, locator: 10 BREADCRUMBS }
+  - { source: docs/DESIGN-SYSTEM-TZ.md, locator: BreadcrumbList }

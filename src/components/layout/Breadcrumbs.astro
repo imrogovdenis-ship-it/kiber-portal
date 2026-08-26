@@ -1,0 +1,24 @@
+---
+import { breadcrumbJsonLd, type Breadcrumb } from '../../lib/seo';
+
+interface Props { items: Breadcrumb[] }
+const { items } = Astro.props;
+const jsonLd = breadcrumbJsonLd(items);
+---
+
+{items.length > 1 && (
+  <>
+    <nav class="breadcrumbs" data-block="10-breadcrumbs" aria-label="Хлебные крошки">
+      <ol class="breadcrumbs__list">
+        {items.map((item, index) => (
+          <li class="breadcrumbs__item" data-position={index + 1}>
+            {index < items.length - 1
+              ? <a class="breadcrumbs__link" href={item.url} data-analytics-event="breadcrumb_click">{item.name}</a>
+              : <span class="breadcrumbs__current" aria-current="page">{item.name}</span>}
+          </li>
+        ))}
+      </ol>
+    </nav>
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </>
+)}

@@ -1,0 +1,15 @@
+schema_version: 1
+id: site-footer-minimal
+block_id: site-footer
+variant: default
+viewport: md
+mode: minimal
+data:
+  logo_label: КИБЕР ПОРТАЛ
+  description: Роботы для мероприятий.
+  sections: [{ title: Сайт, links: [{ href: /contacts, label: Контакты }] }]
+  phone: +7 000 000-00-00
+  email: hello@kiber-portal.ru
+  messengers: []
+  legal_notice: Не является публичной офертой
+  legal_links: [{ href: /privacy-policy, label: Конфиденциальность }]
