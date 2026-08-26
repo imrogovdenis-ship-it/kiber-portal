@@ -1,6 +1,7 @@
 import importlib.util
 import sys
 import unittest
+from unittest import mock
 from pathlib import Path
 
 MODULE_PATH = Path(__file__).parents[1] / "scripts" / "monitor_production_metadata.py"
@@ -24,6 +25,16 @@ class MetadataMonitorTests(unittest.TestCase):
         new = {"a": monitor.PageMetadata("a", "New", "H1", "a") , "c": monitor.PageMetadata("c", "C", "C", "c")}
         changes = monitor.compare(old, new)
         self.assertEqual([(item["url"], item["field"]) for item in changes], [("a", "title"), ("b", "url"), ("c", "url")])
+
+    @mock.patch.object(monitor.time, "sleep")
+    @mock.patch.object(monitor.urllib.request, "urlopen")
+    def test_retries_transient_http_error(self, urlopen, sleep):
+        headers = {"Retry-After": "1"}
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b"ok"
+        urlopen.side_effect = [monitor.urllib.error.HTTPError("https://example.test", 429, "rate limited", headers, None), response]
+        self.assertEqual(monitor.fetch("https://example.test", 1), b"ok")
+        sleep.assert_called_once_with(1.0)
 
 
 if __name__ == "__main__":

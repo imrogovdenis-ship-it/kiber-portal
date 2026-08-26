@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -15,7 +16,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
-USER_AGENT = "KiberPortalDriftMonitor/1.0 (+https://github.com/imrogovdenis-ship-it/kiber-portal)"
+USER_AGENT = "Mozilla/5.0 (compatible; KiberPortalDriftMonitor/1.0; +https://github.com/imrogovdenis-ship-it/kiber-portal)"
 
 
 class MetadataParser(HTMLParser):
@@ -63,10 +64,23 @@ class PageMetadata:
     canonical: str
 
 
-def fetch(url: str, timeout: float) -> bytes:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read()
+def fetch(url: str, timeout: float, retries: int = 3) -> bytes:
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xml;q=0.9,*/*;q=0.8"})
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read()
+        except urllib.error.HTTPError as exc:
+            if attempt == retries or exc.code not in {403, 408, 425, 429, 500, 502, 503, 504}:
+                raise
+            retry_after = exc.headers.get("Retry-After", "")
+            wait = float(retry_after) if retry_after.isdigit() else 2**attempt
+            time.sleep(min(wait, 30))
+        except urllib.error.URLError:
+            if attempt == retries:
+                raise
+            time.sleep(2**attempt)
+    raise RuntimeError("unreachable")
 
 
 def sitemap_urls(sitemap_url: str, timeout: float) -> list[str]:
@@ -140,6 +154,7 @@ def main() -> int:
     parser.add_argument("--json-report", type=Path, default=Path("artifacts/production-metadata-drift.json"))
     parser.add_argument("--markdown-report", type=Path, default=Path("artifacts/production-metadata-drift.md"))
     parser.add_argument("--timeout", type=float, default=20)
+    parser.add_argument("--delay", type=float, default=1.0, help="Polite delay between page requests")
     parser.add_argument("--write-baseline", action="store_true")
     args = parser.parse_args()
 
@@ -152,11 +167,14 @@ def main() -> int:
         errors.append({"url": args.sitemap, "error": type(exc).__name__})
 
     current: dict[str, PageMetadata] = {}
-    for url in urls:
+    for index, url in enumerate(urls):
         try:
             current[url] = capture(url, args.timeout)
         except (OSError, ValueError, urllib.error.URLError) as exc:
-            errors.append({"url": url, "error": type(exc).__name__})
+            status = f" HTTP {exc.code}" if isinstance(exc, urllib.error.HTTPError) else ""
+            errors.append({"url": url, "error": f"{type(exc).__name__}{status}"})
+        if args.delay and index < len(urls) - 1:
+            time.sleep(args.delay)
 
     if args.write_baseline:
         if errors:
