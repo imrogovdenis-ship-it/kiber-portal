@@ -1,0 +1,10 @@
+title = "Kiber Portal gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Public Tilda form identifier embedded in the static legacy export"
+targetRules = ["generic-api-key"]
+regexTarget = "match"
+regexes = ['''data-tilda-formskey="''']
