@@ -1,18 +1,23 @@
 # Font licensing status
 
+## Production decision
+
+Montserrat is the only production typeface for КИБЕР ПОРТАЛ. It is used for display and body typography through design tokens.
+
 ## Montserrat
 
-- Status: approved for self-hosting.
+- Status: approved for self-hosting and commercial website use.
 - License: SIL Open Font License 1.1.
 - Runtime files: Cyrillic WOFF2, weights 400/500/600/700.
+- License text: `public/fonts/montserrat/OFL.txt`.
 - CSS: `src/styles/fonts.css`.
+- Source tokens: `design-system/tokens/primitive/typography.yaml`.
 
 ## Gilroy / Gillroy
 
-- Status: blocked for self-hosting until a web license is confirmed.
-- The supplied TTF archive contains copyright metadata but no license grant.
-- Tilda CDN URLs are not copied into the new runtime.
-- Temporary fallback: `Arial, sans-serif` through the display-font token.
-- After approval, add licensed WOFF2 files and update only `src/styles/fonts.css` plus this record.
+- Status: deliberately not used.
+- The supplied archive has no verified web-license grant and is not published.
+- Gilroy files and Tilda CDN URLs must not be added to runtime, fixtures or generated assets.
+- Reintroducing Gilroy requires a new explicit owner decision, documented web license and a separate reviewable change.
 
-This policy keeps typography replaceable without changing component markup or block specs.
+This decision keeps typography reproducible and legally auditable without changing component markup.
