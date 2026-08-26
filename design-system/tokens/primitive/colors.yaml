@@ -1,0 +1,16 @@
+layer: primitive
+namespace: color
+tokens:
+  brand.blue.500: { type: color, value: "#0088ff" }
+  brand.blue.600: { type: color, value: "#005eff" }
+  brand.blue.50: { type: color, value: "#f4f8ff" }
+  brand.orange.500: { type: color, value: "#ff843a" }
+  neutral.ink.900: { type: color, value: "#25222b" }
+  neutral.ink.700: { type: color, value: "#36323e" }
+  neutral.grey.500: { type: color, value: "#797a91" }
+  neutral.grey.400: { type: color, value: "#a1a2b8" }
+  neutral.grey.200: { type: color, value: "#e7e7e7" }
+  neutral.white: { type: color, value: "#ffffff" }
+  neutral.black: { type: color, value: "#000000" }
+  messenger.telegram: { type: color, value: "#229ed9" }
+  messenger.whatsapp: { type: color, value: "#25d366" }

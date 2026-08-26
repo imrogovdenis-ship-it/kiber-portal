@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--kp-surface);
+  color: var(--kp-ink);
+  font-family: var(--kp-font-body);
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(100%, var(--kp-container-max));
+  margin-inline: auto;
+  padding-inline: var(--kp-container-inline);
+}

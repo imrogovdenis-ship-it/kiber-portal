@@ -8,7 +8,7 @@
 
 Текущий `main` содержит полезные Astro-исходники и материалы миграции, но ещё не является воспроизводимым application runtime: в нём отсутствуют package manifest/lockfile, Astro config, production Dockerfile и часть импортируемых файлов. Исторические launch-readiness отчёты описывают прежнее локальное состояние и не заменяют проверку clean clone.
 
-Архитектурное решение предлагается в [ADR-003](docs/adr/003-controlled-rebuild-and-source-hierarchy.md). Карта переноса находится в [controlled-rebuild-inventory](docs/controlled-rebuild-inventory.md), а порядок Linear-задач — в [task-execution-plan](docs/task-execution-plan.md).
+Архитектурное решение предлагается в [ADR-003](docs/DECISIONS/003-controlled-rebuild-and-source-hierarchy.md). Карта переноса находится в [controlled-rebuild-inventory](docs/controlled-rebuild-inventory.md), а порядок Linear-задач — в [task-execution-plan](docs/task-execution-plan.md).
 
 ## Канонические правила
 
@@ -43,7 +43,19 @@ Dockerfile
 3. Live Tilda как временный reference до cutover.
 4. Tilda export и прежние audits как архивное evidence.
 
-До принятия ADR-003 старые файлы не удаляются. Новые дизайн-токены и компоненты также не добавляются как параллельная система внутри неполного `app/`.
+Вертикальный пилот новой дизайн-системы расположен в корневых `design-system/` и `src/`. Старые файлы пока не удаляются: их вывод из эксплуатации выполняется отдельным reviewable-коммитом после подтверждения паритета.
+
+## Локальный запуск
+
+Требуются Node.js 22 и npm 10+.
+
+```bash
+npm ci
+npm run ci
+npm run dev
+```
+
+В development доступен `/preview/design-review/`. При `DEPLOY_ENV=production` этот маршрут не генерируется.
 
 ## Сохранение и восстановление
 

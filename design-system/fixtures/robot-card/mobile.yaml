@@ -1,0 +1,17 @@
+schema_version: 1
+id: robot-card-mobile
+block_id: robot-card
+variant: default
+viewport: sm
+mode: mobile
+data:
+  slug: mobile-robot
+  href: /robots/mobile-robot/
+  title: Робот для мобильного стенда
+  category: Робот-гуманоид
+  price: от 150 000 ₽
+  price_disclaimer: Не является публичной офертой
+  description: Проверка двухколоночной мобильной сетки и уменьшенной типографики.
+  badge: ХИТ
+  image: null
+  analytics: { event: robot_card_click, placement: design_review, position: 1 }

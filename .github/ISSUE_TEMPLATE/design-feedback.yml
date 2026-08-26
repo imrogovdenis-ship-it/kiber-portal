@@ -1,0 +1,35 @@
+name: Дизайн-фидбек
+description: Правка зарегистрированного блока по review ID и эталону
+title: "[Design] Блок XX: "
+labels: [design-system]
+body:
+  - type: input
+    id: review_id
+    attributes: { label: Review ID, description: Номер блока 01–34 }
+    validations: { required: true }
+  - type: input
+    id: block_id
+    attributes: { label: Смысловой ID, description: Например robot-card }
+    validations: { required: true }
+  - type: dropdown
+    id: viewport
+    attributes:
+      label: Viewport
+      options: [375 / sm, 768 / md, 1024 / lg, 1440 / xl, все]
+    validations: { required: true }
+  - type: textarea
+    id: observed
+    attributes: { label: Что наблюдается }
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes: { label: Как должно быть }
+    validations: { required: true }
+  - type: textarea
+    id: reference
+    attributes: { label: Эталон, источник или screenshot }
+    validations: { required: true }
+  - type: textarea
+    id: acceptance
+    attributes: { label: Критерий приёмки }
+    validations: { required: true }

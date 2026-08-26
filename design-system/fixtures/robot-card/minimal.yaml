@@ -1,0 +1,15 @@
+schema_version: 1
+id: robot-card-minimal
+block_id: robot-card
+variant: compact
+viewport: md
+mode: minimal
+data:
+  slug: compact-robot
+  href: /robots/compact-robot/
+  title: Компактный робот
+  category: Робот
+  price: По запросу
+  price_disclaimer: Не является публичной офертой
+  description: Для мероприятий.
+  analytics: { event: robot_card_click, placement: design_review }

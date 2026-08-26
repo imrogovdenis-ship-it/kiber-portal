@@ -1,0 +1,17 @@
+schema_version: 1
+id: robot-card-long-content
+block_id: robot-card
+variant: default
+viewport: xl
+mode: long-content
+data:
+  slug: humanoid-long-name
+  href: /robots/humanoid-long-name/
+  title: Робот-гуманоид с длинным названием для проверки переноса строк
+  category: Интерактивный гуманоид для мероприятий
+  price: Цена рассчитывается индивидуально
+  price_disclaimer: Не является публичной офертой
+  description: Длинное описание проверяет устойчивость карточки при нескольких строках текста, разных сценариях использования и отсутствии короткой рекламной формулировки.
+  badge: НОВИНКА
+  image: null
+  analytics: { event: robot_card_click, placement: design_review, position: 2 }

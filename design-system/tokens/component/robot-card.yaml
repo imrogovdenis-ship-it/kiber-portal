@@ -1,0 +1,39 @@
+layer: component
+namespace: robot-card
+tokens:
+  robot-card.surface: { type: color, value: "{color.surface}", css: "--kp-robot-card-surface" }
+  robot-card.image.radius: { type: dimension, value: "{dimension.radius.16}", css: "--kp-robot-card-image-radius" }
+  robot-card.content.gap: { type: dimension, value: "{spacing.card.gap}", css: "--kp-robot-card-content-gap" }
+  robot-card.title.color: { type: color, value: "{color.ink.heading}", css: "--kp-robot-card-title-color" }
+  robot-card.title.family: { type: fontFamily, value: "{typography.title-s.family}", css: "--kp-robot-card-title-family" }
+  robot-card.title.weight: { type: fontWeight, value: "{typography.title-s.weight}", css: "--kp-robot-card-title-weight" }
+  robot-card.title.size:
+    type: dimension
+    value: { sm: "{dimension.space.14}", md: "{dimension.space.18}", lg: "{dimension.space.22}", xl: "{dimension.space.22}" }
+    css: "--kp-robot-card-title-size"
+  robot-card.title.line-height: { type: number, value: "{typography.title-s.line-height}", css: "--kp-robot-card-title-line-height" }
+  robot-card.title.letter-spacing: { type: dimension, value: "{typography.title-s.letter-spacing}", css: "--kp-robot-card-title-letter-spacing" }
+  robot-card.price.color: { type: color, value: "{color.ink.heading}", css: "--kp-robot-card-price-color" }
+  robot-card.price.size:
+    type: dimension
+    value: { sm: "{dimension.space.14}", md: "{dimension.space.16}", lg: "{dimension.space.16}", xl: "{dimension.space.16}" }
+    css: "--kp-robot-card-price-size"
+  robot-card.description.color: { type: color, value: "{color.text.muted}", css: "--kp-robot-card-description-color" }
+  robot-card.description.size:
+    type: dimension
+    value: { sm: "{dimension.space.10}", md: "{dimension.space.13}", lg: "{dimension.space.13}", xl: "{dimension.space.13}" }
+    css: "--kp-robot-card-description-size"
+  robot-card.category.color: { type: color, value: "{color.text.subtle}", css: "--kp-robot-card-category-color" }
+  robot-card.category.size: { type: dimension, value: "{dimension.space.10}", css: "--kp-robot-card-category-size" }
+  robot-card.badge.background: { type: color, value: "{color.badge}", css: "--kp-robot-card-badge-background" }
+  robot-card.badge.foreground: { type: color, value: "{color.ink.inverse}", css: "--kp-robot-card-badge-foreground" }
+  robot-card.badge.size:
+    type: dimension
+    value: { sm: "{dimension.space.48}", md: "{dimension.space.92}", lg: "{dimension.space.92}", xl: "{dimension.space.92}" }
+    css: "--kp-robot-card-badge-size"
+  robot-card.badge.font-size:
+    type: dimension
+    value: { sm: "{dimension.space.9}", md: "{dimension.space.14}", lg: "{dimension.space.14}", xl: "{dimension.space.14}" }
+    css: "--kp-robot-card-badge-font-size"
+  robot-card.focus.color: { type: color, value: "{color.action.rest}", css: "--kp-robot-card-focus-color" }
+  robot-card.focus.width: { type: dimension, value: "{dimension.border.focus}", css: "--kp-robot-card-focus-width" }

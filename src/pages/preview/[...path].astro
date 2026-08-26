@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { blockRegistry } from '../../generated/block-registry';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  const enabled = process.env.DEPLOY_ENV !== 'production' && process.env.DESIGN_REVIEW_ENABLED !== 'false';
+  return enabled ? [{ params: { path: 'design-review' } }] : [];
+}
+
+const block = blockRegistry.find((entry) => entry.spec.id === 'robot-card');
+if (!block) throw new Error('Robot Card is not registered');
+const module = await block.load();
+const RobotCard = module.default;
+const specUrl = `https://github.com/imrogovdenis-ship-it/kiber-portal/blob/main/design-system/blocks/05-robot-card.yaml`;
+---
+
+<BaseLayout title="Design review — КИБЕР ПОРТАЛ" description="Preview дизайн-системы." noindex>
+  <main class="review container">
+    <header>
+      <p>Design system / visual review</p>
+      <h1>05 · Robot Card</h1>
+      <p><a href={specUrl}>Открыть spec</a> · статус: {block.spec.status}</p>
+    </header>
+
+    <div class="review__grid">
+      {block.fixtures.map((fixture) => (
+        <section class="review__case" data-viewport={fixture.viewport}>
+          <header>
+            <strong>{fixture.mode}</strong>
+            <span>{fixture.variant} · {fixture.viewport} · {fixture.source}</span>
+          </header>
+          <RobotCard {...fixture.data} variant={fixture.variant} />
+        </section>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .review {
+    padding-block: var(--kp-section-block);
+  }
+
+  .review__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--kp-robot-card-badge-size)), 1fr));
+    gap: var(--kp-grid-gap);
+  }
+
+  .review__case {
+    display: grid;
+    align-content: start;
+    gap: var(--kp-content-padding);
+    min-width: 0;
+  }
+
+  .review__case > header {
+    display: grid;
+    color: var(--kp-muted);
+  }
+</style>

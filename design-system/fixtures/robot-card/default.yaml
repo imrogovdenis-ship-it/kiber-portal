@@ -1,0 +1,17 @@
+schema_version: 1
+id: robot-card-default
+block_id: robot-card
+variant: default
+viewport: xl
+mode: reference
+data:
+  slug: unitree-g1
+  href: /robots/unitree-g1/
+  title: Unitree G1
+  category: Робот-гуманоид
+  price: от 150 000 ₽
+  price_disclaimer: Не является публичной офертой
+  description: Для выставок, презентаций и корпоративных мероприятий.
+  badge: ХИТ
+  image: null
+  analytics: { event: robot_card_click, placement: design_review, position: 1 }

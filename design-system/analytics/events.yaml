@@ -1,0 +1,21 @@
+schema_version: 1
+events:
+  - name: robot_card_click
+    description: Переход из карточки робота на страницу услуги.
+    trigger: Активация ссылки «Подробнее» мышью или клавиатурой.
+    source:
+      pages: [home, collection, robot, design-review]
+      blocks: [robot-card]
+    required:
+      robot_slug: string
+      block_id: string
+      placement: enum[catalog,related,collection,design_review]
+    optional:
+      position: integer
+    consent: analytics
+    metric_owner: commercial
+    example:
+      robot_slug: unitree-g1
+      block_id: robot-card
+      placement: design_review
+      position: 1

@@ -1,0 +1,11 @@
+schema_version: 1
+id: design-review
+layout: review
+seo_profile: preview
+route: /preview/design-review/
+production: false
+blocks:
+  - id: robot-card
+    variant: default
+    source: fixtures.robot-card
+    condition: DESIGN_REVIEW_ENABLED

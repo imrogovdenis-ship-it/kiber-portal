@@ -1,0 +1,12 @@
+layer: semantic
+namespace: spacing
+tokens:
+  spacing.card.gap: { type: dimension, value: "{dimension.space.10}", css: "--kp-card-gap" }
+  spacing.grid.gap: { type: dimension, value: "{dimension.space.32}", css: "--kp-grid-gap" }
+  spacing.container.gutter: { type: dimension, value: "{dimension.space.20}", css: "--kp-container-gutter" }
+  spacing.section.block:
+    type: dimension
+    value: { sm: "{dimension.space.48}", md: "{dimension.space.48}", lg: "{dimension.space.72}", xl: "{dimension.space.72}" }
+  spacing.padding.compact:
+    type: dimension
+    value: { sm: "{dimension.space.10}", md: "{dimension.space.16}", lg: "{dimension.space.24}", xl: "{dimension.space.36}" }

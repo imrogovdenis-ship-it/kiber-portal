@@ -1,0 +1,15 @@
+body {
+  font-size: var(--kp-body-size);
+  font-weight: var(--kp-body-weight);
+  letter-spacing: var(--kp-body-letter-spacing);
+  line-height: var(--kp-body-line-height);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--kp-font-heading);
+  font-weight: var(--kp-heading-weight);
+  letter-spacing: var(--kp-heading-letter-spacing);
+  line-height: var(--kp-heading-line-height);
+}

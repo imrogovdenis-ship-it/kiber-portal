@@ -1,0 +1,16 @@
+layer: semantic
+namespace: color
+tokens:
+  color.action.rest: { type: color, value: "{brand.blue.500}", css: "--kp-blue" }
+  color.action.hover: { type: color, value: "{brand.blue.600}", css: "--kp-blue-deep" }
+  color.canvas: { type: color, value: "{brand.blue.50}", css: "--kp-sky" }
+  color.surface: { type: color, value: "{neutral.white}", css: "--kp-surface" }
+  color.ink.heading: { type: color, value: "{neutral.ink.700}", css: "--kp-ink" }
+  color.ink.inverse: { type: color, value: "{neutral.white}", css: "--kp-white" }
+  color.ink.dark: { type: color, value: "{neutral.ink.900}", css: "--kp-ink-dark" }
+  color.text.muted: { type: color, value: "{neutral.grey.500}", css: "--kp-muted" }
+  color.text.subtle: { type: color, value: "{neutral.grey.400}", css: "--kp-muted-soft" }
+  color.border: { type: color, value: "{neutral.grey.200}", css: "--kp-line" }
+  color.badge: { type: color, value: "{brand.orange.500}", css: "--kp-orange" }
+  color.telegram: { type: color, value: "{messenger.telegram}", css: "--kp-telegram" }
+  color.whatsapp: { type: color, value: "{messenger.whatsapp}", css: "--kp-whatsapp" }

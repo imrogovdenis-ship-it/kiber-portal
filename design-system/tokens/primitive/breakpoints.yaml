@@ -1,0 +1,7 @@
+layer: primitive
+namespace: breakpoint
+tokens:
+  breakpoint.sm: { type: dimension, value: 0px, emit: false }
+  breakpoint.md: { type: dimension, value: 640px, emit: false }
+  breakpoint.lg: { type: dimension, value: 960px, emit: false }
+  breakpoint.xl: { type: dimension, value: 1200px, emit: false }

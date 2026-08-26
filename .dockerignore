@@ -1,0 +1,12 @@
+.git
+.github
+.astro
+dist
+node_modules
+app
+site-export
+incoming
+artifacts
+font-work
+upload
+*.zip

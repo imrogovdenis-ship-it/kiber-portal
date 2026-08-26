@@ -1,0 +1,110 @@
+/* GENERATED FILE — DO NOT EDIT. Source: design-system token YAML files. */
+:root {
+  --kp-blue-deep: #005eff;
+  --kp-blue: #0088ff;
+  --kp-orange: #ff843a;
+  --kp-line: #e7e7e7;
+  --kp-sky: #f4f8ff;
+  --kp-ink-dark: #25222b;
+  --kp-ink: #36323e;
+  --kp-white: #ffffff;
+  --kp-surface: #ffffff;
+  --kp-telegram: #229ed9;
+  --kp-muted: #797a91;
+  --kp-muted-soft: #a1a2b8;
+  --kp-whatsapp: #25d366;
+  --kp-container-inline: 20px;
+  --kp-container-max: 1160px;
+  --kp-content-padding: 10px;
+  --kp-section-block: 48px;
+  --kp-robot-card-badge-background: #ff843a;
+  --kp-robot-card-badge-font-size: 9px;
+  --kp-robot-card-badge-foreground: #ffffff;
+  --kp-robot-card-badge-size: 48px;
+  --kp-robot-card-category-color: #a1a2b8;
+  --kp-robot-card-category-size: 10px;
+  --kp-robot-card-content-gap: 10px;
+  --kp-robot-card-description-color: #797a91;
+  --kp-robot-card-description-size: 10px;
+  --kp-robot-card-focus-color: #0088ff;
+  --kp-robot-card-focus-width: 3px;
+  --kp-robot-card-image-radius: 16px;
+  --kp-robot-card-price-color: #36323e;
+  --kp-robot-card-price-size: 14px;
+  --kp-robot-card-surface: #ffffff;
+  --kp-robot-card-title-color: #36323e;
+  --kp-robot-card-title-family: Gilroy, Arial, sans-serif;
+  --kp-robot-card-title-letter-spacing: 0em;
+  --kp-robot-card-title-line-height: 1.4;
+  --kp-robot-card-title-size: 14px;
+  --kp-robot-card-title-weight: 700;
+  --kp-card-gap: 10px;
+  --kp-container-gutter: 20px;
+  --kp-grid-gap: 32px;
+  --kp-font-body: Montserrat, Arial, sans-serif;
+  --kp-body-letter-spacing: 0em;
+  --kp-body-line-height: 1.4;
+  --kp-body-size: 16px;
+  --kp-body-weight: 500;
+  --kp-font-heading: Gilroy, Arial, sans-serif;
+  --kp-heading-letter-spacing: 0em;
+  --kp-heading-line-height: 1;
+  --kp-heading-size: 20px;
+  --kp-heading-weight: 700;
+  --kp-label-family: Montserrat, Arial, sans-serif;
+  --kp-label-letter-spacing: 0em;
+  --kp-label-line-height: 1.2;
+  --kp-label-size: 12px;
+  --kp-label-weight: 600;
+  --kp-title-s-family: Gilroy, Arial, sans-serif;
+  --kp-title-s-letter-spacing: 0em;
+  --kp-title-s-line-height: 1.4;
+  --kp-title-s-size: 18px;
+  --kp-title-s-weight: 700;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --kp-content-padding: 16px;
+    --kp-robot-card-badge-font-size: 14px;
+    --kp-robot-card-badge-size: 92px;
+    --kp-robot-card-description-size: 13px;
+    --kp-robot-card-price-size: 16px;
+    --kp-robot-card-title-size: 18px;
+    --kp-body-line-height: 1.6;
+    --kp-heading-size: 28px;
+    --kp-label-size: 14px;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --kp-content-padding: 24px;
+    --kp-section-block: 72px;
+    --kp-robot-card-badge-font-size: 14px;
+    --kp-robot-card-badge-size: 92px;
+    --kp-robot-card-description-size: 13px;
+    --kp-robot-card-price-size: 16px;
+    --kp-robot-card-title-size: 22px;
+    --kp-body-line-height: 1.6;
+    --kp-heading-size: 34px;
+    --kp-label-size: 14px;
+    --kp-title-s-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --kp-content-padding: 36px;
+    --kp-section-block: 72px;
+    --kp-robot-card-badge-font-size: 14px;
+    --kp-robot-card-badge-size: 92px;
+    --kp-robot-card-description-size: 13px;
+    --kp-robot-card-price-size: 16px;
+    --kp-robot-card-title-size: 22px;
+    --kp-body-line-height: 1.6;
+    --kp-heading-size: 34px;
+    --kp-label-size: 14px;
+    --kp-title-s-size: 22px;
+  }
+}

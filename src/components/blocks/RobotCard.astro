@@ -1,0 +1,153 @@
+---
+import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends RobotCardData {
+  variant?: 'default' | 'compact';
+}
+
+const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
+---
+
+<article class:list={['robot-card', `robot-card--${variant}`]} data-block-id="robot-card" data-review-id="05">
+  <div class="robot-card__media">
+    {image ? (
+      <img class="robot-card__image" src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+    ) : (
+      <div class="robot-card__placeholder" role="img" aria-label="Изображение робота готовится">
+        <span aria-hidden="true">KP</span>
+      </div>
+    )}
+    {badge && <span class="robot-card__badge">{badge}</span>}
+  </div>
+
+  <div class="robot-card__content">
+    <p class="robot-card__category">{data.category}</p>
+    <h3 class="robot-card__title">{data.title}</h3>
+    <p class="robot-card__description">{data.description}</p>
+    <div class="robot-card__price-group">
+      <p class="robot-card__price">{data.price}</p>
+      <p class="robot-card__disclaimer">{data.price_disclaimer}</p>
+    </div>
+    <a
+      class="robot-card__link"
+      href={data.href}
+      data-analytics-event={analytics.event}
+      data-analytics-robot-slug={data.slug}
+      data-analytics-block-id="robot-card"
+      data-analytics-placement={analytics.placement}
+      data-analytics-position={analytics.position}
+    >
+      Подробнее<span aria-hidden="true"> →</span>
+    </a>
+  </div>
+</article>
+
+<style>
+  .robot-card {
+    display: grid;
+    gap: var(--kp-robot-card-content-gap);
+    min-width: 0;
+    color: var(--kp-robot-card-title-color);
+  }
+
+  .robot-card__media {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--kp-robot-card-image-radius);
+    background: var(--kp-robot-card-surface);
+  }
+
+  .robot-card__image,
+  .robot-card__placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .robot-card__placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--kp-sky);
+    color: var(--kp-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: var(--kp-heading-weight);
+  }
+
+  .robot-card__badge {
+    position: absolute;
+    inset-block-start: var(--kp-card-gap);
+    inset-inline-end: var(--kp-card-gap);
+    display: grid;
+    width: var(--kp-robot-card-badge-size);
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: var(--kp-robot-card-badge-size);
+    background: var(--kp-robot-card-badge-background);
+    color: var(--kp-robot-card-badge-foreground);
+    font-family: var(--kp-font-body);
+    font-size: var(--kp-robot-card-badge-font-size);
+    font-weight: var(--kp-label-weight);
+  }
+
+  .robot-card__content {
+    display: grid;
+    gap: var(--kp-robot-card-content-gap);
+  }
+
+  .robot-card__category,
+  .robot-card__title,
+  .robot-card__description,
+  .robot-card__price,
+  .robot-card__disclaimer {
+    margin: 0;
+  }
+
+  .robot-card__category {
+    color: var(--kp-robot-card-category-color);
+    font-size: var(--kp-robot-card-category-size);
+    font-weight: var(--kp-label-weight);
+    letter-spacing: var(--kp-label-letter-spacing);
+    line-height: var(--kp-label-line-height);
+    text-transform: uppercase;
+  }
+
+  .robot-card__title {
+    color: var(--kp-robot-card-title-color);
+    font-family: var(--kp-robot-card-title-family);
+    font-size: var(--kp-robot-card-title-size);
+    font-weight: var(--kp-robot-card-title-weight);
+    letter-spacing: var(--kp-robot-card-title-letter-spacing);
+    line-height: var(--kp-robot-card-title-line-height);
+  }
+
+  .robot-card__description,
+  .robot-card__disclaimer {
+    color: var(--kp-robot-card-description-color);
+    font-size: var(--kp-robot-card-description-size);
+  }
+
+  .robot-card__price {
+    color: var(--kp-robot-card-price-color);
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-robot-card-price-size);
+    font-weight: var(--kp-heading-weight);
+  }
+
+  .robot-card__disclaimer {
+    font-size: var(--kp-label-size);
+  }
+
+  .robot-card__link {
+    width: fit-content;
+    color: var(--kp-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: var(--kp-heading-weight);
+    text-underline-offset: var(--kp-card-gap);
+  }
+
+  .robot-card__link:focus-visible {
+    outline: var(--kp-robot-card-focus-width) solid var(--kp-robot-card-focus-color);
+    outline-offset: var(--kp-card-gap);
+  }
+</style>

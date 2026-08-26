@@ -1,0 +1,32 @@
+{
+  "name": "kiber-portal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "ds:generate": "node --import tsx design-system/scripts/build-tokens.ts && node --import tsx design-system/scripts/build-registry.ts && node --import tsx design-system/scripts/build-docs.ts",
+    "ds:validate": "node --import tsx design-system/scripts/validate.ts",
+    "lint": "node --import tsx design-system/scripts/lint.ts",
+    "check": "npm run ds:validate && npm run lint && npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "test": "node --import tsx --test tests/content/**/*.test.ts",
+    "test:visual": "node --import tsx --test tests/visual/**/*.test.ts",
+    "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "ci": "npm run check && npm test && npm run test:visual && DEPLOY_ENV=production npm run build"
+  },
+  "dependencies": {
+    "astro": "7.2.7",
+    "yaml": "2.9.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/node": "22.20.1",
+    "tsx": "4.23.12",
+    "typescript": "6.0.3"
+  }
+}

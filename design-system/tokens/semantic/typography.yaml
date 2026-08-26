@@ -1,0 +1,38 @@
+layer: semantic
+namespace: typography
+tokens:
+  typography.heading.family: { type: fontFamily, value: "{font.family.display}", css: "--kp-font-heading" }
+  typography.heading.weight: { type: fontWeight, value: "{font.weight.bold}", css: "--kp-heading-weight" }
+  typography.heading.size:
+    type: dimension
+    value: { sm: "{dimension.space.20}", md: "{dimension.space.28}", lg: "{dimension.space.34}", xl: "{dimension.space.34}" }
+    css: "--kp-heading-size"
+  typography.heading.line-height: { type: number, value: "{line-height.1}", css: "--kp-heading-line-height" }
+  typography.heading.letter-spacing: { type: dimension, value: "{letter-spacing.normal}", css: "--kp-heading-letter-spacing" }
+  typography.body.family: { type: fontFamily, value: "{font.family.body}", css: "--kp-font-body" }
+  typography.body.weight: { type: fontWeight, value: "{font.weight.medium}", css: "--kp-body-weight" }
+  typography.body.size:
+    type: dimension
+    value: { sm: "{dimension.space.16}", md: "{dimension.space.16}", lg: "{dimension.space.16}", xl: "{dimension.space.16}" }
+    css: "--kp-body-size"
+  typography.body.line-height:
+    type: number
+    value: { sm: "{line-height.14}", md: "{line-height.16}", lg: "{line-height.16}", xl: "{line-height.16}" }
+    css: "--kp-body-line-height"
+  typography.body.letter-spacing: { type: dimension, value: "{letter-spacing.normal}", css: "--kp-body-letter-spacing" }
+  typography.title-s.family: { type: fontFamily, value: "{font.family.display}", css: "--kp-title-s-family" }
+  typography.title-s.weight: { type: fontWeight, value: "{font.weight.bold}", css: "--kp-title-s-weight" }
+  typography.title-s.size:
+    type: dimension
+    value: { sm: "{dimension.space.18}", md: "{dimension.space.18}", lg: "{dimension.space.22}", xl: "{dimension.space.22}" }
+    css: "--kp-title-s-size"
+  typography.title-s.line-height: { type: number, value: "{line-height.14}", css: "--kp-title-s-line-height" }
+  typography.title-s.letter-spacing: { type: dimension, value: "{letter-spacing.normal}", css: "--kp-title-s-letter-spacing" }
+  typography.label.family: { type: fontFamily, value: "{font.family.body}", css: "--kp-label-family" }
+  typography.label.weight: { type: fontWeight, value: "{font.weight.semibold}", css: "--kp-label-weight" }
+  typography.label.size:
+    type: dimension
+    value: { sm: "{dimension.space.12}", md: "{dimension.space.14}", lg: "{dimension.space.14}", xl: "{dimension.space.14}" }
+    css: "--kp-label-size"
+  typography.label.line-height: { type: number, value: "{line-height.12}", css: "--kp-label-line-height" }
+  typography.label.letter-spacing: { type: dimension, value: "{letter-spacing.normal}", css: "--kp-label-letter-spacing" }
