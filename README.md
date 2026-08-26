@@ -1,6 +1,6 @@
 # КИБЕР ПОРТАЛ
 
-Канонический репозиторий сайта и будущей машинно-читаемой дизайн-системы: `imrogovdenis-ship-it/kiber-portal`.
+Канонический репозиторий сайта и машинно-читаемой дизайн-системы: `imrogovdenis-ship-it/kiber-portal`.
 
 ## Текущий статус
 
@@ -8,7 +8,7 @@
 
 Текущий `main` содержит полезные Astro-исходники и материалы миграции, но ещё не является воспроизводимым application runtime: в нём отсутствуют package manifest/lockfile, Astro config, production Dockerfile и часть импортируемых файлов. Исторические launch-readiness отчёты описывают прежнее локальное состояние и не заменяют проверку clean clone.
 
-Архитектурное решение предлагается в [ADR-003](docs/DECISIONS/003-controlled-rebuild-and-source-hierarchy.md). Карта переноса находится в [controlled-rebuild-inventory](docs/controlled-rebuild-inventory.md), а порядок Linear-задач — в [task-execution-plan](docs/task-execution-plan.md).
+Единственная целевая архитектура принята в [ADR-003](docs/DECISIONS/003-controlled-rebuild-and-source-hierarchy.md). Операционная [иерархия визуальных источников](docs/VISUAL-SOURCE-HIERARCHY.md), карта переноса и [порядок Linear-задач](docs/task-execution-plan.md) дополняют это решение.
 
 ## Канонические правила
 

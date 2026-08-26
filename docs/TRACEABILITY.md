@@ -3,6 +3,7 @@
 | Источник/требование | Реализация | Проверка | Статус |
 |---|---|---|---|
 | ТЗ §3: один источник правды на область | `design-system/`, `src/content.config.ts`, `src/config/site.ts` | `ds:validate` | pilot |
+| KIBER-27: единая визуальная иерархия | ADR-003 + `VISUAL-SOURCE-HIERARCHY.md` | source-hierarchy gate в `ds:validate` | принято |
 | ТЗ §7: primitive/semantic/component | `design-system/tokens/**` | token schema + reference validation | реализовано |
 | Комментарии: compact padding 36→24→16→10 | `spacing.padding.compact` | generated CSS на `sm/md/lg/xl` | реализовано |
 | Комментарии: container 1160 | `layout.container.max` | generated CSS | реализовано |

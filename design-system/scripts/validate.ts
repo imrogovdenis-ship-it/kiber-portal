@@ -1,4 +1,4 @@
-import { access } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import { basename, resolve } from 'node:path';
 import { analyticsSchema } from '../schemas/analytics.schema';
 import { blockSchema } from '../schemas/block.schema';
@@ -11,6 +11,39 @@ const errors: string[] = [];
 const tokenNames = new Set<string>();
 const tokenSources = new Map<string, string>();
 const tokenValues = new Map<string, unknown>();
+
+const hierarchyFiles = {
+  hierarchy: resolve(root, 'docs/VISUAL-SOURCE-HIERARCHY.md'),
+  decision: resolve(root, 'docs/DECISIONS/003-controlled-rebuild-and-source-hierarchy.md'),
+  specification: resolve(root, 'docs/DESIGN-SYSTEM-TZ.md'),
+};
+
+try {
+  const [hierarchy, decision, specification] = await Promise.all([
+    readFile(hierarchyFiles.hierarchy, 'utf8'),
+    readFile(hierarchyFiles.decision, 'utf8'),
+    readFile(hierarchyFiles.specification, 'utf8'),
+  ]);
+  const levels = [
+    'Утверждённый дизайн и решения владельца',
+    'Машинно-читаемая дизайн-система в Git',
+    'Корневая Astro-реализация',
+    'Live Tilda',
+    'Export и legacy archive',
+  ];
+  const positions = levels.map((level) => hierarchy.indexOf(level));
+  if (positions.some((position) => position < 0) || positions.some((position, index) => index > 0 && position <= positions[index - 1])) {
+    errors.push('Visual source hierarchy is missing or out of order');
+  }
+  for (const requirement of ['375', '768', '1024', '1440', 'human visual approval', 'Сгенерированные файлы нельзя менять вручную']) {
+    if (!hierarchy.includes(requirement)) errors.push(`Visual source hierarchy is missing requirement: ${requirement}`);
+  }
+  if (!decision.includes('Статус: принято')) errors.push('ADR-003 is not accepted');
+  if (!decision.includes('Один application runtime в корне')) errors.push('ADR-003 does not declare the root runtime');
+  if (!specification.includes('Hermes работает только через отдельную ветку и pull request')) errors.push('Design-system specification is missing the Hermes PR boundary');
+} catch (error) {
+  errors.push(`Visual source hierarchy validation failed: ${String(error)}`);
+}
 
 for (const file of await yamlFiles(resolve(root, 'design-system/tokens'))) {
   try {
@@ -79,4 +112,4 @@ for (const file of await yamlFiles(resolve(root, 'design-system/recipes'))) {
 }
 
 if (errors.length) throw new Error(`Design-system validation failed:\n- ${errors.join('\n- ')}`);
-console.log(`Validated ${tokenNames.size} tokens, ${blocks.length} block, ${analyticsNames.size} analytics event.`);
+console.log(`Validated source hierarchy, ${tokenNames.size} tokens, ${blocks.length} block, ${analyticsNames.size} analytics event.`);
