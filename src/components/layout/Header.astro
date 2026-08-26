@@ -1,0 +1,70 @@
+---
+interface NavItem { label: string; href: string }
+interface Props {
+  logoSrc?: string;
+  logoAlt?: string;
+  nav?: NavItem[];
+  phone?: string;
+  phoneHref?: string;
+  contactLabel?: string;
+}
+
+const {
+  logoSrc,
+  logoAlt = 'КИБЕР ПОРТАЛ',
+  nav = [
+    { label: 'Каталог', href: '/#catalog' },
+    { label: 'Подборки', href: '/compilations' },
+    { label: 'Блог', href: '/articles' },
+    { label: 'Новости', href: '/news' },
+    { label: 'Контакты', href: '/contacts' },
+  ],
+  phone,
+  phoneHref,
+  contactLabel = 'Написать нам',
+} = Astro.props;
+---
+
+<header class="site-header" data-rv="01" id="site-header">
+  <div class="site-header__container">
+    <a href="/" class="site-header__logo" aria-label="КИБЕР ПОРТАЛ — главная">
+      {logoSrc ? <img src={logoSrc} alt={logoAlt} /> : <span>КИБЕР ПОРТАЛ</span>}
+    </a>
+    <nav class="site-header__nav" id="site-header-menu" aria-label="Основная навигация">
+      {nav.map((item) => <a class="site-header__link" href={item.href}>{item.label}</a>)}
+    </nav>
+    <div class="site-header__actions">
+      {phone && phoneHref && <a class="site-header__phone" href={phoneHref} data-analytics-event="phone_click">{phone}</a>}
+      <button class="site-header__contact" type="button" data-open-modal="contact-modal" data-analytics-event="contact_click">{contactLabel}</button>
+    </div>
+    <button class="site-header__burger" type="button" aria-label="Открыть меню" aria-controls="site-header-menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('site-header');
+  const toggle = header?.querySelector<HTMLButtonElement>('.site-header__burger');
+  toggle?.addEventListener('click', () => {
+    const open = header?.classList.toggle('is-open') ?? false;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+  });
+</script>
+
+<style>
+  .site-header{position:sticky;top:0;z-index:1000;height:4.25rem;background:var(--kp-surface);border-bottom:0.0625rem solid color-mix(in srgb,var(--kp-blue-deep) 10%,transparent)}
+  .site-header__container{height:100%;display:flex;align-items:center;justify-content:space-between;padding-inline:1.25rem}
+  .site-header__logo{font-weight:700;text-decoration:none}.site-header__logo img{display:block;height:2rem;width:auto}
+  .site-header__nav,.site-header__actions{display:none}.site-header__link{font-size:0.9375rem;color:var(--kp-muted);text-decoration:none}
+  .site-header__phone{font-size:1rem;color:var(--kp-ink);text-decoration:none}
+  .site-header__contact{min-height:2.5rem;padding:0.625rem 1.125rem;border:0;border-radius:62.4375rem;background:var(--kp-blue);color:var(--kp-white);font:600 0.75rem/1 var(--kp-font-body)}
+  .site-header__burger{display:flex;flex-direction:column;gap:0.3125rem;padding:0.625rem;background:none;border:0}.site-header__burger span{width:1.5rem;height:0.125rem;background:var(--kp-ink)}
+  .site-header.is-open{height:auto}.site-header.is-open .site-header__container{flex-wrap:wrap}
+  .site-header.is-open .site-header__nav,.site-header.is-open .site-header__actions{display:flex;flex:0 0 calc(100% + 2.5rem);margin-inline:-1.25rem;padding-inline:1.25rem;background:var(--kp-surface)}
+  .site-header.is-open .site-header__nav{order:3;flex-direction:column;gap:0.875rem;padding-block:1.25rem 0.5rem}
+  .site-header.is-open .site-header__actions{order:4;flex-direction:column;align-items:center;gap:0.875rem;padding-block:0 1.25rem;border-bottom:0.0625rem solid color-mix(in srgb,var(--kp-blue-deep) 10%,transparent)}
+  @media(min-width:60rem){.site-header{height:5.25rem}.site-header__container{justify-content:flex-start;gap:1.5rem;padding-inline:2rem}.site-header__logo img{height:2.25rem}.site-header__nav{display:flex;gap:1.5rem;margin-left:1.5rem}.site-header__actions{display:flex;align-items:center;gap:1.5rem;margin-left:auto}.site-header__burger{display:none}.site-header__link:hover,.site-header__phone:hover{color:var(--kp-blue)}}
+  @media(min-width:75rem){.site-header__nav{gap:2.5rem;margin-left:3.5rem}}
+</style>
