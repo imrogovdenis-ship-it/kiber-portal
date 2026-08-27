@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
+---
+
+<BaseLayout
+  title="Заявка принята — КИБЕР ПОРТАЛ"
+  description="Preview-safe подтверждение заявки вертикального среза КИБЕР ПОРТАЛ."
+  canonical="https://www.kiber-portal.ru/lead/thanks/"
+  noindex
+  breadcrumbs={[
+    { name: 'Главная', url: '/' },
+    { name: 'Заявка принята', url: '/lead/thanks/' },
+  ]}
+>
+  <main class="lead-thanks container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-vertical-step="confirmation">
+    <section class="lead-thanks__card">
+      <p>Preview-safe confirmation</p>
+      <h1>Заявка принята</h1>
+      <p>Маршрут главная → карточка → заявка → подтверждение работает. Робот: <strong>{robot}</strong>.</p>
+      <p>Реальная отправка менеджеру будет включена только после утверждения каналов связи и legal/consent policy.</p>
+      <div class="lead-thanks__actions">
+        <a href={`/robots/${robot}/`}>Вернуться к роботу</a>
+        <a href="/">На главную</a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .lead-thanks { display: grid; min-height: 48vh; align-items: center; padding-block: var(--kp-section-block); }
+  .lead-thanks__card { display: grid; gap: var(--kp-card-gap); max-width: 48rem; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
+  .lead-thanks__card p, .lead-thanks__card h1 { margin: 0; }
+  .lead-thanks__card > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .lead-thanks__card h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
+  .lead-thanks__card p:not(:first-child) { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .lead-thanks__actions { display: flex; flex-wrap: wrap; gap: var(--kp-card-gap); }
+  .lead-thanks__actions a { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: .75rem 1.1rem; color: var(--kp-blue); font-weight: var(--kp-heading-weight); text-decoration: none; }
+</style>

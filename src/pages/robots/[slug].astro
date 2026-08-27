@@ -1,0 +1,92 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Pricing from '../../components/blocks/Pricing.astro';
+import Faq from '../../components/blocks/Faq.astro';
+
+export async function getStaticPaths() {
+  const robots = await getCollection('robots');
+  return robots.map((robot) => ({ params: { slug: robot.data.slug }, props: { robot: robot.data } }));
+}
+
+const { robot } = Astro.props;
+const isUnitree = robot.slug === 'unitree-g1';
+
+const pricing = {
+  title: `Стоимость ${robot.identity.name}`,
+  disclaimer: robot.pricing.disclaimer,
+  items: [
+    { label: robot.identity.name, price: robot.pricing.display, note: 'Финальная смета зависит от длительности, программы и логистики.' },
+    { label: 'Подбор сценария', price: 'по запросу', note: 'Менеджер уточнит площадку, тайминг и ограничения.' },
+  ],
+};
+
+const faq = {
+  title: 'Что уточнит менеджер',
+  items: [
+    { question: 'Можно ли подтвердить робота сразу?', answer: 'Нет. Доступность, площадка и программа подтверждаются менеджером до финальной сметы.' },
+    { question: 'Это публичная оферта?', answer: robot.pricing.disclaimer },
+  ],
+};
+---
+
+<BaseLayout
+  title={robot.seo.title}
+  description={robot.seo.description}
+  canonical={robot.seo.canonical}
+  breadcrumbs={[
+    { name: 'Главная', url: '/' },
+    { name: robot.identity.name, url: `/robots/${robot.slug}/` },
+  ]}
+>
+  <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-robot-slug={robot.slug}>
+    <section class="robot-page__hero" data-vertical-step="robot-detail">
+      <div class="robot-page__copy">
+        <p>{robot.identity.manufacturer} / {robot.identity.model}</p>
+        <h1>{robot.identity.name} для мероприятий</h1>
+        <p>{robot.seo.description}</p>
+        <div class="robot-page__actions">
+          <a class="robot-page__button robot-page__button--primary" href={`/lead/request/?robot=${robot.slug}`} data-vertical-step="robot-to-lead">Оставить заявку</a>
+          <a class="robot-page__button" href="/">Вернуться на главную</a>
+        </div>
+      </div>
+      <figure class="robot-page__media">
+        <img src={robot.media.hero.src} alt={robot.media.hero.alt} loading="eager" decoding="async" />
+      </figure>
+    </section>
+
+    <section class="robot-page__facts" aria-label="Сервисные условия">
+      <article><h2>Формат</h2><p>Робот работает с сопровождающим специалистом.</p></article>
+      <article><h2>Сценарии</h2><p>{robot.service.scenarios.join(', ')}</p></article>
+      <article><h2>Подтверждение</h2><p>Нужна проверка менеджера перед финальным предложением.</p></article>
+    </section>
+
+    <Pricing {...pricing} />
+    <Faq {...faq} />
+
+    {isUnitree && <p class="robot-page__marker">unitree-g1 vertical slice pilot</p>}
+  </main>
+</BaseLayout>
+
+<style>
+  .robot-page { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
+  .robot-page__hero { display: grid; gap: var(--kp-grid-gap); align-items: center; }
+  .robot-page__copy { display: grid; gap: var(--kp-card-gap); }
+  .robot-page__copy p, .robot-page__copy h1, .robot-page__media { margin: 0; }
+  .robot-page__copy > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .robot-page__copy h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
+  .robot-page__copy > p:nth-of-type(2) { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .robot-page__actions { display: flex; flex-wrap: wrap; gap: var(--kp-card-gap); }
+  .robot-page__button { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: .75rem 1.1rem; color: var(--kp-blue); font-weight: var(--kp-heading-weight); text-decoration: none; }
+  .robot-page__button--primary { background: var(--kp-blue); color: var(--kp-white); border-color: var(--kp-blue); }
+  .robot-page__media { overflow: hidden; border-radius: 1.5rem; background: var(--kp-sky); }
+  .robot-page__media img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; }
+  .robot-page__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--kp-card-gap); }
+  .robot-page__facts article { display: grid; gap: var(--kp-card-gap); padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.5rem; background: var(--kp-surface); }
+  .robot-page__facts h2, .robot-page__facts p { margin: 0; }
+  .robot-page__facts h2 { font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); }
+  .robot-page__facts p { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .robot-page__marker { color: var(--kp-muted); }
+  @media (min-width: 60em) { .robot-page__hero { grid-template-columns: 1fr .75fr; } }
+  @media (max-width: 59.9375rem) { .robot-page__facts { grid-template-columns: 1fr; } }
+</style>
