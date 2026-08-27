@@ -11,7 +11,7 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
 <article class:list={['robot-card', `robot-card--${variant}`]} data-block-id="robot-card" data-review-id="05">
   <div class="robot-card__media">
     {image ? (
-      <img class="robot-card__image" src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+      <img class="robot-card__image" src={image.src} alt={image.alt} width="640" height="640" loading="lazy" decoding="async" />
     ) : (
       <div class="robot-card__placeholder" role="img" aria-label="Изображение робота готовится">
         <span aria-hidden="true">KP</span>

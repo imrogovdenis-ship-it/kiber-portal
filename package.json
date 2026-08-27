@@ -17,12 +17,13 @@
     "test:visual": "node --import tsx --test tests/visual/**/*.test.ts",
     "test:visual-regression": "node scripts/visual-regression-smoke.mjs",
     "ci:baseline": "node scripts/ci-baseline-smoke.mjs",
+    "test:performance": "node scripts/performance-budget-smoke.mjs",
     "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
     "verify": "npm run check && npm test && npm run test:visual",
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
-    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run ci:baseline"
+    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run ci:baseline"
   },
   "dependencies": {
     "astro": "7.2.7",
