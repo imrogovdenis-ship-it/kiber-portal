@@ -30,3 +30,9 @@ pricing:
   disclaimer: Не является публичной офертой
 facts: []
 faq: []
+review:
+  publicRender: false
+  owner: КИБЕР ПОРТАЛ content review
+  lastReviewedAt: '2026-08-27'
+  internalNotes:
+    - 'KIBER-50-REVIEW-ONLY-SENTINEL: эта рабочая заметка доказывает, что review-only поля не попадают в production HTML.'
