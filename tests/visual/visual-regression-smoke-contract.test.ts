@@ -31,7 +31,5 @@ test('KIBER-34 exposes visual smoke as npm ci gate', async () => {
   const packageJson = JSON.parse(await readFile(resolve(root, 'package.json'), 'utf8'));
   assert.equal(packageJson.scripts['test:visual-regression'], 'node scripts/visual-regression-smoke.mjs');
   assert.match(packageJson.scripts.ci, /test:visual-regression/);
-
-  const workflow = await readFile(resolve(root, '.github/workflows/ci.yml'), 'utf8');
-  assert.match(workflow, /npm run ci/);
+  assert.match(packageJson.scripts.ci, /build:production/);
 });

@@ -14,8 +14,25 @@ GitHub Actions выполняет проверки, а Coolify — единст�
 | Base directory | `/` |
 | Ports Exposes | `8080` |
 | Healthcheck path | `/healthz/` |
+| Readiness path | `/readyz/` |
+| CPU limit | `0.50` vCPU |
+| Memory limit | `512Mi` |
 
 Контейнер слушает `0.0.0.0:8080`; reverse proxy Coolify/Traefik должен направлять домен на внутренний порт `8080`.
+
+## Resource limits and blast-radius contract
+
+Для Alex-owned приложений КИБЕР ПОРТАЛ в Coolify задавать лимиты на уровне Application/Container, чтобы отказ сайта не валил shared services (`coolify`, `coolify-db`, `coolify-redis`, `coolify-proxy`, `ai-class-*`, `umami*`, `qdrant`, `hermes*`).
+
+| Limit | Value | Reason |
+|---|---:|---|
+| CPU limit | `0.50` vCPU | Static Nginx runtime should not need more; prevents noisy-neighbor impact. |
+| Memory limit | `512Mi` | Enough for Nginx static runtime; bounds runaway memory use. |
+| Restart policy | `unless-stopped` / Coolify default managed restart | Container can recover without touching shared services. |
+| Healthcheck path | `/healthz/` | Docker/Coolify liveness signal. |
+| Readiness path | `/readyz/` | Proxy/readiness smoke endpoint for deployment checks. |
+
+Контейнеры и app folders должны оставаться в Alex namespace: `alex-*`. Не задавать host ports; трафик идёт только через существующий Coolify/Traefik proxy contour.
 
 ## Environment matrix
 
