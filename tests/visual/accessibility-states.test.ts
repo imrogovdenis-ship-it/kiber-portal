@@ -8,8 +8,9 @@ const root = process.cwd();
 test('KIBER-36 lead request exposes accessible required, error, status and loading states', async () => {
   const page = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
   assert.match(page, /aria-describedby="name-help name-error"/);
-  assert.match(page, /aria-describedby="contact-help contact-error"/);
-  assert.match(page, /aria-describedby="event-help"/);
+  assert.match(page, /aria-describedby="phone-help phone-error"/);
+  assert.match(page, /aria-describedby="email-help"/);
+  assert.match(page, /privacy-agreement-help/);
   assert.match(page, /required/);
   assert.match(page, /role="alert"/);
   assert.match(page, /aria-live="polite"/);

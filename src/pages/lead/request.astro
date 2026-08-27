@@ -1,12 +1,20 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteConfig } from '../../config/site';
 
 const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
+const leadFormEnabled = siteConfig.leadFormEnabled;
+const leadFormAction = leadFormEnabled ? siteConfig.leadFormEndpoint : '#callback-request';
+const messengers = [
+  { key: 'max', label: 'Max', href: siteConfig.max },
+  { key: 'telegram', label: 'Telegram', href: siteConfig.telegram },
+  { key: 'whatsapp', label: 'WhatsApp', href: siteConfig.whatsapp },
+];
 ---
 
 <BaseLayout
-  title="Заявка на подбор робота — КИБЕР ПОРТАЛ"
-  description="Короткая заявка на подбор робота для мероприятия."
+  title="Связаться с КИБЕР ПОРТАЛОМ"
+  description="Выберите мессенджер для быстрого контакта или оставьте заявку на обратный звонок."
   canonical="https://www.kiber-portal.ru/lead/request/"
   noindex
   breadcrumbs={[
@@ -14,52 +22,125 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     { name: 'Заявка', url: '/lead/request/' },
   ]}
 >
-  <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
+  <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="KIBER-38">
     <section class="lead-request__intro">
-      <p>Подбор робота</p>
-      <h1>Заявка на подбор робота</h1>
-      <p>Расскажите о городе, дате, площадке и формате события. Так менеджеру проще предложить подходящие модели и сценарий.</p>
+      <p>Связаться с нами</p>
+      <h1>Напишите нам или запросите обратный звонок</h1>
+      <p>Для быстрого диалога выберите мессенджер. Если удобнее, оставьте имя и телефон — менеджер свяжется с вами после настройки рабочего канала заявки.</p>
     </section>
 
-    <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation" data-state="ready" aria-describedby="lead-request-status">
-      <input type="hidden" name="robot" value={robot} />
-      <label>
-        <span>Имя *</span>
-        <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required aria-invalid="false" aria-describedby="name-help name-error" />
-        <span id="name-help" class="lead-request__help">Напишите имя или короткое обращение.</span>
-        <span id="name-error" class="lead-request__error" role="alert">Укажите имя, чтобы менеджер понял, к кому обратиться.</span>
-      </label>
-      <label>
-        <span>Телефон или мессенджер *</span>
-        <input name="contact" autocomplete="tel" placeholder="Телефон, Telegram или WhatsApp" required aria-invalid="false" aria-describedby="contact-help contact-error" />
-        <span id="contact-help" class="lead-request__help">Оставьте удобный способ связи.</span>
-        <span id="contact-error" class="lead-request__error" role="alert">Укажите телефон или мессенджер для ответа.</span>
-      </label>
-      <label>
-        <span>Формат мероприятия</span>
-        <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий" aria-describedby="event-help"></textarea>
-        <span id="event-help" class="lead-request__help">Можно кратко: дата, город, гости и задача робота.</span>
-      </label>
-      <button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={robot} data-analytics-form-state="static_get">Проверить подтверждение</button>
-      <p id="lead-request-status" class="lead-request__note" aria-live="polite">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
-    </form>
+    <section class="lead-request__panel" data-contact-section="messengers" aria-labelledby="messengers-title">
+      <div>
+        <p class="lead-request__eyebrow">Форма 1</p>
+        <h2 id="messengers-title">Написать нам</h2>
+        <p>Эта секция не собирает персональные данные: кнопки просто открывают выбранный мессенджер.</p>
+      </div>
+      <div class="lead-request__messengers" aria-label="Мессенджеры КИБЕР ПОРТАЛА">
+        {messengers.map((messenger) => (
+          <a
+            class="lead-request__messenger"
+            href={messenger.href}
+            data-messenger={messenger.key}
+            data-analytics-event="messenger_click"
+            data-analytics-source="lead_request"
+            data-analytics-placement="messenger_buttons"
+            data-analytics-slug={messenger.key}
+          >
+            {messenger.label}
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="lead-request__panel" data-contact-section="callback" aria-labelledby="callback-title">
+      <div>
+        <p class="lead-request__eyebrow">Форма 2</p>
+        <h2 id="callback-title">Запросить обратный звонок</h2>
+        <p>Форма собирает имя и телефон, поэтому отправка доступна только после согласия с правилами обработки персональных данных и политикой конфиденциальности.</p>
+      </div>
+
+      <form
+        id="callback-request"
+        class="lead-request__form"
+        method="post"
+        data-state="ready"
+        data-vertical-step="lead-to-callback"
+        action={leadFormAction}
+        data-routing="telegram-and-amocrm"
+        data-routing-state={leadFormEnabled ? 'enabled' : 'disabled'}
+        aria-describedby="lead-request-status privacy-agreement-help"
+      >
+        <input type="hidden" name="robot" value={robot} />
+        <label>
+          <span>Имя *</span>
+          <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required aria-invalid="false" aria-describedby="name-help name-error" />
+          <span id="name-help" class="lead-request__help">Напишите имя или короткое обращение.</span>
+          <span id="name-error" class="lead-request__error" role="alert">Укажите имя, чтобы менеджер понял, к кому обратиться.</span>
+        </label>
+        <label>
+          <span>Телефон *</span>
+          <input name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 000 000-00-00" required aria-invalid="false" aria-describedby="phone-help phone-error" />
+          <span id="phone-help" class="lead-request__help">Оставьте номер для обратного звонка.</span>
+          <span id="phone-error" class="lead-request__error" role="alert">Укажите телефон для связи.</span>
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" autocomplete="email" placeholder="mail@example.ru" aria-invalid="false" aria-describedby="email-help" />
+          <span id="email-help" class="lead-request__help">Email можно указать по желанию.</span>
+        </label>
+        <label class="lead-request__agreement">
+          <input name="privacyAgreement" type="checkbox" required />
+          <span>
+            Я ознакомлен с <a href="/privacy-policy/">Политикой конфиденциальности</a> и соглашаюсь с правилами <a href="/privacy-policy/">обработки персональных данных</a>.
+          </span>
+        </label>
+        <span id="privacy-agreement-help" class="lead-request__help">Без согласия мы не можем принять заявку с именем и телефоном.</span>
+        <button
+          type="submit"
+          disabled={!leadFormEnabled}
+          aria-disabled={!leadFormEnabled}
+          aria-busy="false"
+          data-loading-label="Отправляем заявку"
+          data-analytics-event="form_submit_intent"
+          data-analytics-source="lead_request"
+          data-analytics-placement="callback_form"
+          data-analytics-slug={robot}
+          data-analytics-form-state={leadFormEnabled ? 'enabled' : 'disabled'}
+        >
+          Запросить обратный звонок
+        </button>
+        <p id="lead-request-status" class="lead-request__note" aria-live="polite">
+          {leadFormEnabled
+            ? 'Заявка будет отправлена менеджеру в Telegram-группу и в amoCRM.'
+            : 'Отправка формы будет включена после подключения amoCRM и Telegram-бота.'}
+        </p>
+      </form>
+    </section>
   </main>
 </BaseLayout>
 
 <style>
   .lead-request { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
-  .lead-request__intro, .lead-request__form { display: grid; gap: var(--kp-card-gap); }
-  .lead-request__intro { max-width: 48rem; }
-  .lead-request__intro p, .lead-request__intro h1 { margin: 0; }
-  .lead-request__intro > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .lead-request__intro, .lead-request__panel, .lead-request__form { display: grid; gap: var(--kp-card-gap); }
+  .lead-request__intro { max-width: 54rem; }
+  .lead-request__intro p, .lead-request__intro h1, .lead-request__panel p, .lead-request__panel h2 { margin: 0; }
+  .lead-request__intro > p:first-child, .lead-request__eyebrow { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
   .lead-request__intro h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
-  .lead-request__intro > p:last-child, .lead-request__note, .lead-request__help { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
-  .lead-request__form { max-width: 42rem; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
+  .lead-request__panel h2 { font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); line-height: 1; }
+  .lead-request__intro > p:last-child, .lead-request__panel p, .lead-request__note, .lead-request__help { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .lead-request__panel { padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
+  .lead-request__messengers { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .lead-request__messenger, .lead-request button { min-height: 2.75rem; border: 0; border-radius: 62.4375rem; padding: .75rem 1.1rem; background: var(--kp-blue); color: var(--kp-white); font-weight: var(--kp-heading-weight); text-decoration: none; }
+  .lead-request__form { max-width: 42rem; }
   .lead-request label { display: grid; gap: .35rem; font-weight: var(--kp-label-weight); }
-  .lead-request input, .lead-request textarea { border: 0.0625rem solid var(--kp-line); border-radius: .875rem; padding: .875rem 1rem; background: var(--kp-sky); color: var(--kp-ink); font: inherit; }
-  .lead-request input:user-invalid, .lead-request textarea:user-invalid { border-color: var(--kp-orange); }
-  .lead-request button { min-height: 2.75rem; border: 0; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: var(--kp-heading-weight); }
+  .lead-request input { border: 0.0625rem solid var(--kp-line); border-radius: .875rem; padding: .875rem 1rem; background: var(--kp-sky); color: var(--kp-ink); font: inherit; }
+  .lead-request input:user-invalid { border-color: var(--kp-orange); }
+  .lead-request__agreement { grid-template-columns: auto 1fr; align-items: start; }
+  .lead-request__agreement input { margin-block-start: .2rem; }
+  .lead-request__agreement a { color: var(--kp-blue); }
+  .lead-request button:disabled { cursor: not-allowed; opacity: .55; }
   .lead-request__note, .lead-request__help { margin: 0; }
   .lead-request__help { font-size: var(--kp-label-size); font-weight: var(--kp-body-weight); }
   .lead-request__error { position: absolute; width: 0.0625rem; height: 0.0625rem; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (min-width: 60em) { .lead-request__panel { grid-template-columns: .8fr 1.2fr; align-items: start; } }
 </style>

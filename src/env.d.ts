@@ -4,7 +4,10 @@ interface ImportMetaEnv {
   readonly PUBLIC_PHONE?: string;
   readonly PUBLIC_TG?: string;
   readonly PUBLIC_WA?: string;
+  readonly PUBLIC_MAX_URL?: string;
   readonly PUBLIC_SITE_URL?: string;
+  readonly PUBLIC_LEAD_FORM_ENABLED?: 'true' | 'false';
+  readonly PUBLIC_LEAD_FORM_ENDPOINT?: string;
   readonly PUBLIC_ANALYTICS_PROVIDER?: string;
   readonly DEPLOY_ENV?: 'development' | 'preview' | 'production';
   readonly DESIGN_REVIEW_ENABLED?: 'true' | 'false';
