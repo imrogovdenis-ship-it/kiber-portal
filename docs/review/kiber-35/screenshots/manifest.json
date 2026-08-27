@@ -1,0 +1,76 @@
+{
+  "base": "http://127.0.0.1:18091",
+  "capturedAt": "2026-08-27T04:56:05.246Z",
+  "results": [
+    {
+      "name": "home",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-home-desktop-1440.png"
+    },
+    {
+      "name": "robot-unitree-g1",
+      "route": "/robots/unitree-g1/",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-robot-unitree-g1-desktop-1440.png"
+    },
+    {
+      "name": "lead-request",
+      "route": "/lead/request/?robot=unitree-g1",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-lead-request-desktop-1440.png"
+    },
+    {
+      "name": "lead-thanks",
+      "route": "/lead/thanks/?robot=unitree-g1",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-lead-thanks-desktop-1440.png"
+    },
+    {
+      "name": "not-found",
+      "route": "/404.html",
+      "viewport": "desktop-1440",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-not-found-desktop-1440.png"
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "viewport": "mobile-375",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-home-mobile-375.png"
+    },
+    {
+      "name": "robot-unitree-g1",
+      "route": "/robots/unitree-g1/",
+      "viewport": "mobile-375",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-robot-unitree-g1-mobile-375.png"
+    },
+    {
+      "name": "lead-request",
+      "route": "/lead/request/?robot=unitree-g1",
+      "viewport": "mobile-375",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-lead-request-mobile-375.png"
+    },
+    {
+      "name": "lead-thanks",
+      "route": "/lead/thanks/?robot=unitree-g1",
+      "viewport": "mobile-375",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-lead-thanks-mobile-375.png"
+    },
+    {
+      "name": "not-found",
+      "route": "/404.html",
+      "viewport": "mobile-375",
+      "status": 200,
+      "file": "/home/alex/kiber-35-qa/screenshots/kiber-35-reference-not-found-mobile-375.png"
+    }
+  ]
+}
