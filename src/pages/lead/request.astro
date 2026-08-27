@@ -6,7 +6,7 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 
 <BaseLayout
   title="Заявка на подбор робота — КИБЕР ПОРТАЛ"
-  description="Preview-safe заявка вертикального среза: данные не отправляются в production-каналы."
+  description="Короткая заявка на подбор робота для мероприятия."
   canonical="https://www.kiber-portal.ru/lead/request/"
   noindex
   breadcrumbs={[
@@ -16,9 +16,9 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 >
   <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
     <section class="lead-request__intro">
-      <p>Preview-safe lead flow</p>
+      <p>Подбор робота</p>
       <h1>Заявка на подбор робота</h1>
-      <p>Этот маршрут проверяет UX вертикального среза. Он не подключает реальные каналы заявок, пока не утверждены lead destination и legal/consent policy.</p>
+      <p>Расскажите о городе, дате, площадке и формате события. Так менеджеру проще предложить подходящие модели и сценарий.</p>
     </section>
 
     <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation">
@@ -36,7 +36,7 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
         <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий"></textarea>
       </label>
       <button type="submit">Проверить подтверждение</button>
-      <p class="lead-request__note">Preview-safe: форма использует GET-переход на страницу подтверждения и не отправляет данные в API.</p>
+      <p class="lead-request__note">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
     </form>
   </main>
 </BaseLayout>

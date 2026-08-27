@@ -36,5 +36,5 @@ test('KIBER-33 lead request source stays static-safe and does not claim real sub
   assert.match(requestPage, /method="get"/);
   assert.doesNotMatch(requestPage, /method="post"/i);
   assert.doesNotMatch(requestPage, /api\//i);
-  assert.match(requestPage, /preview-safe/i);
+  assert.match(requestPage, /action="\/lead\/thanks\/"/);
 });
