@@ -20,12 +20,13 @@
     "test:performance": "node scripts/performance-budget-smoke.mjs",
     "test:routes": "node scripts/route-sitemap-smoke.mjs",
     "test:analytics-events": "node scripts/analytics-event-contract-smoke.mjs",
+    "test:semantic-core": "node scripts/semantic-core-lifecycle-smoke.mjs",
     "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
     "verify": "npm run check && npm test && npm run test:visual",
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
-    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run ci:baseline"
+    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run ci:baseline"
   },
   "dependencies": {
     "astro": "7.2.7",
