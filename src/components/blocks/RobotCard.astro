@@ -34,7 +34,9 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
       data-analytics-event={analytics.event}
       data-analytics-robot-slug={data.slug}
       data-analytics-block-id="robot-card"
+      data-analytics-source="robot_card"
       data-analytics-placement={analytics.placement}
+      data-analytics-slug={data.slug}
       data-analytics-position={analytics.position}
     >
       Подробнее<span aria-hidden="true"> →</span>

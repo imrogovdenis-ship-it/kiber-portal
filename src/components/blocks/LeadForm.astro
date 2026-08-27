@@ -15,7 +15,7 @@ const { title, text, fields, submit, disabled_reason, analytics } = Astro.props 
         <input name={field.name} required={field.required} disabled />
       </label>
     ))}
-    <button type="button" disabled data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id}>{submit}</button>
+    <button type="button" disabled data-analytics-event="form_submit_intent" data-analytics-block-id={analytics.block_id} data-analytics-source="lead_form" data-analytics-placement="disabled_form" data-analytics-slug="global" data-analytics-form-state="disabled">{submit}</button>
     <p id="lead-form-status">{disabled_reason}</p>
   </form>
 </section>

@@ -9,7 +9,7 @@ const { title, text, primary, secondary, analytics } = Astro.props as CtaStripDa
     <p>{text}</p>
   </div>
   <div class="cta-strip__actions">
-    <a class="cta-strip__button cta-strip__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id}>{primary.label}</a>
+    <a class="cta-strip__button cta-strip__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id} data-analytics-source="cta_strip" data-analytics-placement="primary_cta" data-analytics-slug="global">{primary.label}</a>
     {secondary && <a class="cta-strip__button" href={secondary.href}>{secondary.label}</a>}
   </div>
 </section>

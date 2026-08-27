@@ -10,7 +10,7 @@ const { eyebrow, title, lead, primary, secondary, stats, analytics } = Astro.pro
     <h2>{title}</h2>
     <p>{lead}</p>
     <div class="home-hero__actions">
-      <a class="home-hero__button home-hero__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id}>{primary.label}</a>
+      <a class="home-hero__button home-hero__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id} data-analytics-source="home_hero" data-analytics-placement="primary_cta" data-analytics-slug="global">{primary.label}</a>
       {secondary && <a class="home-hero__button" href={secondary.href}>{secondary.label}</a>}
     </div>
   </div>
