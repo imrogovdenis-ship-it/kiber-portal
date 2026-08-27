@@ -6,7 +6,7 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 
 <BaseLayout
   title="Заявка принята — КИБЕР ПОРТАЛ"
-  description="Preview-safe подтверждение заявки вертикального среза КИБЕР ПОРТАЛ."
+  description="Подтверждение заявки на подбор робота для мероприятия."
   canonical="https://www.kiber-portal.ru/lead/thanks/"
   noindex
   breadcrumbs={[
@@ -16,10 +16,10 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 >
   <main class="lead-thanks container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-vertical-step="confirmation">
     <section class="lead-thanks__card">
-      <p>Preview-safe confirmation</p>
+      <p>Подтверждение заявки</p>
       <h1>Заявка принята</h1>
-      <p>Маршрут главная → карточка → заявка → подтверждение работает. Робот: <strong>{robot}</strong>.</p>
-      <p>Реальная отправка менеджеру будет включена только после утверждения каналов связи и legal/consent policy.</p>
+      <p>Бриф собран. Робот: <strong>{robot}</strong>.</p>
+      <p>Следующий шаг — уточнить доступность модели, площадку, тайминг и формат программы.</p>
       <div class="lead-thanks__actions">
         <a href={`/robots/${robot}/`}>Вернуться к роботу</a>
         <a href="/">На главную</a>
