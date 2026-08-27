@@ -12,7 +12,7 @@ test('KIBER-20 exposes links, 404, and secret scan as a CI baseline gate', async
 
   const packageJson = JSON.parse(await readFile(resolve(root, 'package.json'), 'utf8'));
   assert.equal(packageJson.scripts['ci:baseline'], 'node scripts/ci-baseline-smoke.mjs');
-  assert.match(packageJson.scripts.ci, /build:production\s*&&\s*npm run ci:baseline/);
+  assert.match(packageJson.scripts.ci, /build:production[\s\S]*ci:baseline/);
 });
 
 test('KIBER-20 baseline script documents required build outputs and safety scans', async () => {

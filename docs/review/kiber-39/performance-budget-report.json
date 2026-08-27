@@ -1,0 +1,84 @@
+{
+  "issue": "KIBER-39",
+  "generatedAt": "2026-08-27T07:17:11.569Z",
+  "coreWebVitalsTargets": {
+    "lcpMs": 2500,
+    "inpMs": 200,
+    "cls": 0.1
+  },
+  "staticBudgets": {
+    "htmlBytes": 100000,
+    "cssBytes": 140000,
+    "jsBytes": 25000,
+    "imageBytes": 120000,
+    "totalPageBytes": 250000
+  },
+  "routes": [
+    {
+      "route": "/",
+      "htmlBytes": 13956,
+      "cssBytes": 13395,
+      "jsBytes": 0,
+      "imageBytes": 0,
+      "totalPageBytes": 27351,
+      "cssFiles": 2,
+      "jsFiles": 0,
+      "imageFiles": 0,
+      "proxies": {
+        "lcp": "HTML+CSS+image byte budget and no lazy first content image",
+        "inp": "JS byte budget and no inline layout mutation handlers",
+        "cls": "image dimension guard and stable static markup"
+      }
+    },
+    {
+      "route": "/robots/unitree-g1/",
+      "htmlBytes": 15557,
+      "cssBytes": 9259,
+      "jsBytes": 0,
+      "imageBytes": 585,
+      "totalPageBytes": 25401,
+      "cssFiles": 1,
+      "jsFiles": 0,
+      "imageFiles": 1,
+      "proxies": {
+        "lcp": "HTML+CSS+image byte budget and no lazy first content image",
+        "inp": "JS byte budget and no inline layout mutation handlers",
+        "cls": "image dimension guard and stable static markup"
+      }
+    },
+    {
+      "route": "/lead/request/",
+      "htmlBytes": 10681,
+      "cssBytes": 9259,
+      "jsBytes": 0,
+      "imageBytes": 0,
+      "totalPageBytes": 19940,
+      "cssFiles": 1,
+      "jsFiles": 0,
+      "imageFiles": 0,
+      "proxies": {
+        "lcp": "HTML+CSS+image byte budget and no lazy first content image",
+        "inp": "JS byte budget and no inline layout mutation handlers",
+        "cls": "image dimension guard and stable static markup"
+      }
+    },
+    {
+      "route": "/lead/thanks/",
+      "htmlBytes": 7581,
+      "cssBytes": 9259,
+      "jsBytes": 0,
+      "imageBytes": 0,
+      "totalPageBytes": 16840,
+      "cssFiles": 1,
+      "jsFiles": 0,
+      "imageFiles": 0,
+      "proxies": {
+        "lcp": "HTML+CSS+image byte budget and no lazy first content image",
+        "inp": "JS byte budget and no inline layout mutation handlers",
+        "cls": "image dimension guard and stable static markup"
+      }
+    }
+  ],
+  "status": "passed",
+  "failures": []
+}
