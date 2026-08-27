@@ -13,7 +13,7 @@ const jsonLd = breadcrumbJsonLd(items);
         {items.map((item, index) => (
           <li class="breadcrumbs__item" data-position={index + 1}>
             {index < items.length - 1
-              ? <a class="breadcrumbs__link" href={item.url} data-analytics-event="breadcrumb_click">{item.name}</a>
+              ? <a class="breadcrumbs__link" href={item.url} data-analytics-event="breadcrumb_click" data-analytics-source="breadcrumbs" data-analytics-placement="link" data-analytics-slug={item.url} data-analytics-position={index + 1}>{item.name}</a>
               : <span class="breadcrumbs__current" aria-current="page">{item.name}</span>}
           </li>
         ))}

@@ -21,8 +21,8 @@ const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
       {links.map((link) => <a class="site-header__link" href={link.href}>{link.label}</a>)}
     </nav>
     <div class="site-header__actions">
-      <a class="site-header__phone" href={phoneHref} data-analytics-event="phone_click">{phone}</a>
-      <a class="site-header__cta" href={cta.href} data-analytics-event="contact_click">{cta.label}</a>
+      <a class="site-header__phone" href={phoneHref} data-analytics-event="phone_click" data-analytics-source="header" data-analytics-placement="top_nav" data-analytics-slug="global">{phone}</a>
+      <a class="site-header__cta" href={cta.href} data-analytics-event="contact_click" data-analytics-source="header" data-analytics-placement="primary_cta" data-analytics-slug="global">{cta.label}</a>
     </div>
     <button class="site-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-navigation">
       <span></span><span></span><span></span>
