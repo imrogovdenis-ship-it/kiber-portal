@@ -161,6 +161,55 @@ class ValidateRobotSourceTest(unittest.TestCase):
             self.assertTrue(any(error["code"] == "unapproved_pricing_decision_has_canonical" for error in result["errors"]))
             self.assertTrue(any(error["code"] == "needs_review_pricing_owner_not_placeholder" for error in result["errors"]))
 
+    def test_allows_approved_request_only_pricing_decision(self):
+        robot = self.base_robot(approved=True, tariffs=self.valid_tariffs())
+        robot["pricing"]["display"] = "цена по запросу"
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_json(root, "data/models/robots.source-of-truth.json", {"robots": [robot]})
+            self.write_json(root, "data/models/pricing-decision-template.json", {
+                "decisions": [{
+                    "slug": "arenda-unitree-g1",
+                    "decisionStatus": "approved",
+                    "approved": True,
+                    "canonicalPriceDisplay": "цена по запросу",
+                    "amount": None,
+                    "unit": "request",
+                    "owner": "Александр Маркин / Denis Rogov",
+                    "reviewedOn": "2026-08-26",
+                    "validFrom": "2026-08-26",
+                }]
+            })
+
+            result = validate_robot_source(root, strict=True)
+
+            self.assertTrue(result["ok"])
+            self.assertEqual(result["summary"]["decisionIssues"], 0)
+
+    def test_warns_when_approved_xlsx_price_needs_source_sync(self):
+        robot = self.base_robot(approved=True, tariffs=self.valid_tariffs())
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.write_json(root, "data/models/robots.source-of-truth.json", {"robots": [robot]})
+            self.write_json(root, "data/models/pricing-decision-template.json", {
+                "decisions": [{
+                    "slug": "arenda-unitree-g1",
+                    "decisionStatus": "approved",
+                    "approved": True,
+                    "canonicalPriceDisplay": "от 15 000 ₽ / час",
+                    "amount": 15000,
+                    "unit": "hour",
+                    "owner": "Александр Маркин / Denis Rogov",
+                    "reviewedOn": "2026-08-26",
+                    "validFrom": "2026-08-26",
+                }]
+            })
+
+            result = validate_robot_source(root, strict=True)
+
+            self.assertTrue(result["ok"])
+            self.assertTrue(any(warning["code"] == "approved_price_display_needs_source_sync" for warning in result["warnings"]))
+
     def test_reports_meaningful_media_without_human_description_as_warning(self):
         robot = self.base_robot(approved=True, tariffs=self.valid_tariffs())
         robot["media"] = {

@@ -1,63 +1,76 @@
 {
   "version": "1.0.0",
-  "status": "approved_from_xlsx",
-  "description": "All-24 robot pricing decision pack generated from the business-approved XLSX tariff source. Future catalog additions/exclusions are represented by mappingStatus/catalogChanges, not silent deletion.",
-  "generatedAt": "2026-08-27",
-  "sourceReports": [
-    "data/models/source/robot-tariffs-approved.xlsx",
-    "data/models/robot-tariffs-approved.json",
-    "docs/robot-tariffs-approved-review-table.md"
+  "status": "approved_by_alexander_and_denis",
+  "approvedBy": [
+    "Александр Маркин",
+    "Denis Rogov"
   ],
-  "summary": {
-    "robots": 24,
-    "approved": 24,
-    "needs_review": 0,
-    "missing": 0,
-    "requestOnlyApproved": 2,
-    "newUnmapped": 0,
-    "missingFromXlsx": 0,
-    "ownerMissing": 0,
-    "reviewDateMissing": 0
+  "approvedOn": "2026-08-27",
+  "source": {
+    "file": "data/models/source/robot-tariffs-approved.xlsx",
+    "sheet": "Тарифы аренды роботов",
+    "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
   },
   "catalogPolicy": {
     "activeRows": "Rows present in the XLSX are active catalog/pricing candidates.",
     "newModels": "Rows not mapped to an existing slug are preserved as new_unmapped and require slug/content creation before publishing.",
     "excludedModels": "Existing robots absent from the XLSX appear in catalogChanges.missingFromXlsx and should be reviewed as exclusion candidates, not silently deleted."
   },
-  "catalogChanges": {
-    "newInXlsx": [],
-    "missingFromXlsx": []
+  "tariffDefinitions": [
+    {
+      "key": "one_hour",
+      "label": "1 час",
+      "sourceColumn": "1 час"
+    },
+    {
+      "key": "two_hours_booking",
+      "label": "2 часа",
+      "sourceColumn": "2 часа"
+    },
+    {
+      "key": "four_hours",
+      "label": "До 4 часов",
+      "sourceColumn": "До 4 часов"
+    },
+    {
+      "key": "eight_hours",
+      "label": "До 8 часов / 1 день",
+      "sourceColumn": "До 8 часов\n(1 день)"
+    },
+    {
+      "key": "two_days",
+      "label": "2 дня",
+      "sourceColumn": "2 дня"
+    },
+    {
+      "key": "three_days",
+      "label": "3 дня",
+      "sourceColumn": "3 дня"
+    },
+    {
+      "key": "marketing_hourly_rate",
+      "label": "от {цена} ₽ / час",
+      "sourceColumn": "от {цена} ₽ / час"
+    }
+  ],
+  "summary": {
+    "records": 24,
+    "mapped": 24,
+    "newUnmapped": 0,
+    "requestOnly": 2,
+    "missingFromXlsx": 0
   },
-  "decisions": [
+  "robots": [
     {
       "slug": "arenda-robota-sofiya",
-      "robotName": "София (Sophia)",
-      "modelName": "София (Sophia)",
+      "sourceName": "София (Sophia)",
+      "category": "Роботы-гуманоиды и промо-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "цена по запросу",
-      "proposedCurrentDisplay": "цена по запросу",
       "amount": null,
       "currency": "RUB",
       "unit": "request",
-      "qualifier": "request",
-      "minimum": {
-        "status": "request",
-        "durationHours": null,
-        "display": "по запросу"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "request",
@@ -130,45 +143,22 @@
           "notes": "Утверждённая политика: цена по запросу."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "request",
+        "durationHours": null,
+        "display": "по запросу"
+      }
     },
     {
       "slug": "arenda-robota-ardi",
-      "robotName": "Арди (Ardi)",
-      "modelName": "Арди (Ardi)",
+      "sourceName": "Арди (Ardi)",
+      "category": "Роботы-гуманоиды и промо-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 30 000 ₽ / час",
-      "proposedCurrentDisplay": "от 30 000 ₽ / час",
       "amount": 30000,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 8,
-        "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -241,45 +231,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 8,
+        "display": "минимум 1 день"
+      }
     },
     {
       "slug": "arenda-unitree-g1",
-      "robotName": "Unitree G1",
-      "modelName": "Unitree G1",
+      "sourceName": "Unitree G1",
+      "category": "Роботы-гуманоиды и промо-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 15 000 ₽ / час",
-      "proposedCurrentDisplay": "от 15 000 ₽ / час",
       "amount": 15000,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 1,
-        "display": "минимум 1 ч"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "active",
@@ -352,45 +319,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 1,
+        "display": "минимум 1 ч"
+      }
     },
     {
       "slug": "arenda-unitree-h2",
-      "robotName": "Unitree H2",
-      "modelName": "Unitree H2",
+      "sourceName": "Unitree H2",
+      "category": "Роботы-гуманоиды и промо-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "цена по запросу",
-      "proposedCurrentDisplay": "цена по запросу",
       "amount": null,
       "currency": "RUB",
       "unit": "request",
-      "qualifier": "request",
-      "minimum": {
-        "status": "request",
-        "durationHours": null,
-        "display": "по запросу"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "request",
@@ -463,45 +407,22 @@
           "notes": "Утверждённая политика: цена по запросу."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "request",
+        "durationHours": null,
+        "display": "по запросу"
+      }
     },
     {
       "slug": "arenda-unitree-r1",
-      "robotName": "Unitree R1",
-      "modelName": "Unitree R1",
+      "sourceName": "Unitree R1",
+      "category": "Роботы-гуманоиды и промо-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 12 500 ₽ / час",
-      "proposedCurrentDisplay": "от 12 500 ₽ / час",
       "amount": 12500,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 1,
-        "display": "минимум 1 ч"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "active",
@@ -574,45 +495,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-noetix-bumi",
-      "robotName": "Noetix Bumi",
-      "modelName": "Noetix Bumi",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 10 000 ₽ / час",
-      "proposedCurrentDisplay": "от 10 000 ₽ / час",
-      "amount": 10000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 1,
         "display": "минимум 1 ч"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "sourceName": "Noetix Bumi",
+      "category": "Роботы-гуманоиды и промо-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 10 000 ₽ / час",
+      "amount": 10000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "active",
@@ -685,45 +583,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-agibot-x2",
-      "robotName": "Agibot X2",
-      "modelName": "Agibot X2",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 25 000 ₽ / час",
-      "proposedCurrentDisplay": "от 25 000 ₽ / час",
-      "amount": 25000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 1,
         "display": "минимум 1 ч"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-agibot-x2",
+      "sourceName": "Agibot X2",
+      "category": "Роботы-гуманоиды и промо-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 25 000 ₽ / час",
+      "amount": 25000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "active",
@@ -796,45 +671,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 1,
+        "display": "минимум 1 ч"
+      }
     },
     {
       "slug": "arenda-promobot-v4",
-      "robotName": "Promobot V4",
-      "modelName": "Promobot V4",
+      "sourceName": "Promobot V4",
+      "category": "Роботы-гуманоиды и промо-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 10 000 ₽ / час",
-      "proposedCurrentDisplay": "от 10 000 ₽ / час",
       "amount": 10000,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 8,
-        "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -907,45 +759,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 8,
+        "display": "минимум 1 день"
+      }
     },
     {
       "slug": "arenda-unitree-go2",
-      "robotName": "Unitree Go2",
-      "modelName": "Unitree Go2",
+      "sourceName": "Unitree Go2",
+      "category": "Роботы-собаки и роботизированные платформы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 6 500 ₽ / час",
-      "proposedCurrentDisplay": "от 6 500 ₽ / час",
       "amount": 6500,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 1,
-        "display": "минимум 1 ч"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "active",
@@ -1018,45 +847,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-xiaomi-cyberdog-2",
-      "robotName": "Xiaomi Cyberdog 2",
-      "modelName": "Xiaomi Cyberdog 2",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 7 500 ₽ / час",
-      "proposedCurrentDisplay": "от 7 500 ₽ / час",
-      "amount": 7500,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 1,
         "display": "минимум 1 ч"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "sourceName": "Xiaomi Cyberdog 2",
+      "category": "Роботы-собаки и роботизированные платформы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 7 500 ₽ / час",
+      "amount": 7500,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "active",
@@ -1129,45 +935,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 1,
+        "display": "минимум 1 ч"
+      }
     },
     {
       "slug": "arenda-inchbot-l1-w-edu",
-      "robotName": "Inchbot L1-W",
-      "modelName": "Inchbot L1-W",
+      "sourceName": "Inchbot L1-W",
+      "category": "Роботы-собаки и роботизированные платформы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 6 500 ₽ / час",
-      "proposedCurrentDisplay": "от 6 500 ₽ / час",
       "amount": 6500,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 8,
-        "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1240,45 +1023,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-bellabot",
-      "robotName": "BellaBot",
-      "modelName": "BellaBot",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 9 500 ₽ / час",
-      "proposedCurrentDisplay": "от 9 500 ₽ / час",
-      "amount": 9500,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-bellabot",
+      "sourceName": "BellaBot",
+      "category": "Сервисные роботы (кофе, бар, доставка)",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 9 500 ₽ / час",
+      "amount": 9500,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1351,45 +1111,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-kettybot",
-      "robotName": "KettyBot",
-      "modelName": "KettyBot",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 7 000 ₽ / час",
-      "proposedCurrentDisplay": "от 7 000 ₽ / час",
-      "amount": 7000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-kettybot",
+      "sourceName": "KettyBot",
+      "category": "Сервисные роботы (кофе, бар, доставка)",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 7 000 ₽ / час",
+      "amount": 7000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1462,45 +1199,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-robo-kofeyni",
-      "robotName": "Робот-кофейня (Робобариста)",
-      "modelName": "Робот-кофейня (Робобариста)",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 25 000 ₽ / час",
-      "proposedCurrentDisplay": "от 25 000 ₽ / час",
-      "amount": 25000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "sourceName": "Робот-кофейня (Робобариста)",
+      "category": "Сервисные роботы (кофе, бар, доставка)",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 25 000 ₽ / час",
+      "amount": 25000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1573,45 +1287,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-mini-robo-kofeyni",
-      "robotName": "Мини-кофейня (робот-бариста)",
-      "modelName": "Мини-кофейня (робот-бариста)",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 20 000 ₽ / час",
-      "proposedCurrentDisplay": "от 20 000 ₽ / час",
-      "amount": 20000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "sourceName": "Мини-кофейня (робот-бариста)",
+      "category": "Сервисные роботы (кофе, бар, доставка)",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 20 000 ₽ / час",
+      "amount": 20000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1684,45 +1375,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-robot-barmen",
-      "robotName": "Робобар",
-      "modelName": "Робобар",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 21 500 ₽ / час",
-      "proposedCurrentDisplay": "от 21 500 ₽ / час",
-      "amount": 21500,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-robot-barmen",
+      "sourceName": "Робобар",
+      "category": "Сервисные роботы (кофе, бар, доставка)",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 21 500 ₽ / час",
+      "amount": 21500,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1795,45 +1463,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-uv-box",
-      "robotName": "UV-BOX",
-      "modelName": "UV-BOX",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 25 000 ₽ / час",
-      "proposedCurrentDisplay": "от 25 000 ₽ / час",
-      "amount": 25000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-uv-box",
+      "sourceName": "UV-BOX",
+      "category": "Сервисные роботы (кофе, бар, доставка)",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 25 000 ₽ / час",
+      "amount": 25000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -1906,45 +1551,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-roboshashki",
-      "robotName": "Робот-шашки (Робошашки)",
-      "modelName": "Робот-шашки (Робошашки)",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 11 500 ₽ / час",
-      "proposedCurrentDisplay": "от 11 500 ₽ / час",
-      "amount": 11500,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "sourceName": "Робот-шашки (Робошашки)",
+      "category": "Интерактивные и арт-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 11 500 ₽ / час",
+      "amount": 11500,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2017,45 +1639,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-senserobot",
-      "robotName": "Робот-шахматист (SenseRobot)",
-      "modelName": "Робот-шахматист (SenseRobot)",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 10 000 ₽ / час",
-      "proposedCurrentDisplay": "от 10 000 ₽ / час",
-      "amount": 10000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-senserobot",
+      "sourceName": "Робот-шахматист (SenseRobot)",
+      "category": "Интерактивные и арт-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 10 000 ₽ / час",
+      "amount": 10000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2128,45 +1727,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-robota-tron",
-      "robotName": "Робот Tron",
-      "modelName": "Робот Tron",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 11 500 ₽ / час",
-      "proposedCurrentDisplay": "от 11 500 ₽ / час",
-      "amount": 11500,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "sourceName": "Робот Tron",
+      "category": "Интерактивные и арт-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 11 500 ₽ / час",
+      "amount": 11500,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2239,45 +1815,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-robota-hudozhnika-a4",
-      "robotName": "Робот-художник",
-      "modelName": "Робот-художник",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 10 000 ₽ / час",
-      "proposedCurrentDisplay": "от 10 000 ₽ / час",
-      "amount": 10000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "sourceName": "Робот-художник",
+      "category": "Интерактивные и арт-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 10 000 ₽ / час",
+      "amount": 10000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2350,45 +1903,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
-    },
-    {
-      "slug": "arenda-sketchbot",
-      "robotName": "Sketchbot",
-      "modelName": "Sketchbot",
-      "catalogStatus": "active",
-      "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
-      "canonicalPriceDisplay": "от 9 000 ₽ / час",
-      "proposedCurrentDisplay": "от 9 000 ₽ / час",
-      "amount": 9000,
-      "currency": "RUB",
-      "unit": "hour",
-      "qualifier": "from",
       "minimum": {
         "status": "approved",
         "durationHours": 8,
         "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
+      }
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "sourceName": "Sketchbot",
+      "category": "Интерактивные и арт-роботы",
+      "catalogStatus": "active",
+      "mappingStatus": "mapped",
+      "canonicalPriceDisplay": "от 9 000 ₽ / час",
+      "amount": 9000,
+      "currency": "RUB",
+      "unit": "hour",
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2461,45 +1991,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 8,
+        "display": "минимум 1 день"
+      }
     },
     {
       "slug": "arenda-klipmeiker",
-      "robotName": "Клипмейкер",
-      "modelName": "Клипмейкер",
+      "sourceName": "Клипмейкер",
+      "category": "Интерактивные и арт-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 19 000 ₽ / час",
-      "proposedCurrentDisplay": "от 19 000 ₽ / час",
       "amount": 19000,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 8,
-        "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2572,45 +2079,22 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 8,
+        "display": "минимум 1 день"
+      }
     },
     {
       "slug": "arenda-glambot",
-      "robotName": "GlamBot",
-      "modelName": "GlamBot",
+      "sourceName": "GlamBot",
+      "category": "Интерактивные и арт-роботы",
       "catalogStatus": "active",
       "mappingStatus": "mapped",
-      "decisionStatus": "approved",
-      "approved": true,
       "canonicalPriceDisplay": "от 19 000 ₽ / час",
-      "proposedCurrentDisplay": "от 19 000 ₽ / час",
       "amount": 19000,
       "currency": "RUB",
       "unit": "hour",
-      "qualifier": "from",
-      "minimum": {
-        "status": "approved",
-        "durationHours": 8,
-        "display": "минимум 1 день"
-      },
-      "validFrom": "2026-08-27",
-      "validUntil": "",
-      "owner": "Александр Маркин / Denis Rogov",
-      "reviewedOn": "2026-08-27",
-      "source": {
-        "type": "approved_xlsx",
-        "ref": "data/models/source/robot-tariffs-approved.xlsx",
-        "sheet": "Тарифы аренды роботов",
-        "notes": "User confirmed this workbook contains fully prepared and previously approved prices by Alexander and Denis; future changes replace parameters in this source."
-      },
       "tariffs": {
         "one_hour": {
           "status": "not_applicable",
@@ -2683,23 +2167,15 @@
           "notes": "Утверждено в XLSX Александром и Денисом; можно использовать как базовый источник до следующей замены параметров."
         }
       },
-      "risk": {
-        "hasPriceConflict": false,
-        "uniquePriceMentions": [],
-        "auditStatus": "superseded_by_approved_xlsx",
-        "reason": "Утверждённый XLSX от Александра и Дениса является базовым источником; прежние live/source конфликты не выбирают цену автоматически."
-      },
-      "businessNotes": "Use XLSX as base; future changes replace parameters in the workbook/imported dataset.",
-      "approvedBy": "Александр Маркин / Denis Rogov",
-      "approvedAt": "2026-08-27"
+      "minimum": {
+        "status": "approved",
+        "durationHours": 8,
+        "display": "минимум 1 день"
+      }
     }
   ],
-  "applyRules": [
-    "The approved XLSX is the canonical base for current prices.",
-    "Future edits replace parameters in the XLSX/imported approved tariff dataset.",
-    "Rows present in XLSX are active catalog/pricing candidates.",
-    "New unmapped rows require slug/content mapping before publication.",
-    "Existing robots absent from XLSX are exclusion candidates and must not be silently deleted.",
-    "Never use 0 for unknown or not-applicable prices; use explicit request/not_applicable/new_unmapped/exclusion statuses."
-  ]
+  "catalogChanges": {
+    "newInXlsx": [],
+    "missingFromXlsx": []
+  }
 }

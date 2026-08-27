@@ -98,7 +98,11 @@ def validate_robot_source(root: str | Path = ".", strict: bool = False) -> dict[
                         if not decision.get(field):
                             decision_issues += 1
                             errors.append(_error("approved_pricing_decision_missing_field", slug, f"Approved pricing decision is missing `{field}`."))
-                    if decision.get("amount") in (None, ""):
+                    if decision.get("unit") == "request":
+                        if decision.get("amount") not in (None, ""):
+                            decision_issues += 1
+                            errors.append(_error("request_pricing_decision_has_amount", slug, "Approved request-only pricing must keep amount=null."))
+                    elif decision.get("amount") in (None, ""):
                         decision_issues += 1
                         errors.append(_error("approved_pricing_decision_missing_amount", slug, "Approved pricing decision is missing numeric `amount`."))
                     if decision.get("approved") is not True:
@@ -124,11 +128,10 @@ def validate_robot_source(root: str | Path = ".", strict: bool = False) -> dict[
                 price_issues += 1
                 errors.append(_error("approved_decision_missing_display", slug, "Approved pricing decision has empty canonicalPriceDisplay."))
             elif source_status == "approved" and canonical != display:
-                price_issues += 1
-                errors.append(_error(
-                    "approved_price_display_mismatch",
+                warnings.append(_error(
+                    "approved_price_display_needs_source_sync",
                     slug,
-                    "Approved decision canonicalPriceDisplay does not match robots.source-of-truth pricing.display.",
+                    "Approved pricing decision from the canonical XLSX differs from robots.source-of-truth pricing.display; sync the source dataset before rendering.",
                 ))
 
         tariffs = pricing.get("tariffs", {})
