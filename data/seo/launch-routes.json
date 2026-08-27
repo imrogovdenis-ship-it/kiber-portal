@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "site": "https://www.kiber-portal.ru",
+  "description": "KIBER-43 controlled rebuild launch route registry. Preview, 404, thank-you and redirect source URLs are intentionally excluded from sitemap.",
+  "routes": [
+    {
+      "path": "/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 1.0,
+      "changefreq": "weekly",
+      "template": "home"
+    },
+    {
+      "path": "/robots/unitree-g1/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.9,
+      "changefreq": "weekly",
+      "template": "robot-detail"
+    },
+    {
+      "path": "/roboty-gumanoidy/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.8,
+      "changefreq": "weekly",
+      "template": "category"
+    },
+    {
+      "path": "/roboty-sobaki/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.8,
+      "changefreq": "weekly",
+      "template": "category"
+    },
+    {
+      "path": "/compilations/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "weekly",
+      "template": "compilations-index"
+    },
+    {
+      "path": "/articles/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "weekly",
+      "template": "articles-index"
+    },
+    {
+      "path": "/news/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.6,
+      "changefreq": "weekly",
+      "template": "news-index"
+    },
+    {
+      "path": "/contacts/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.6,
+      "changefreq": "monthly",
+      "template": "contacts"
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
+      "priority": 0.2,
+      "changefreq": "yearly",
+      "template": "legal",
+      "reason": "Draft legal policy route is available but noindex until legal approval."
+    },
+    {
+      "path": "/cookie-policy/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
+      "priority": 0.2,
+      "changefreq": "yearly",
+      "template": "legal",
+      "reason": "Draft legal policy route is available but noindex until legal approval."
+    },
+    {
+      "path": "/lead/request/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
+      "reason": "Conversion flow entry is linked from CTAs; keep out of clean SEO sitemap until real lead routing is approved."
+    },
+    {
+      "path": "/lead/thanks/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
+      "reason": "Thank-you/conversion confirmation page must not be advertised in sitemap."
+    }
+  ]
+}

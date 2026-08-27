@@ -1,0 +1,20 @@
+{
+  "issue": "KIBER-43",
+  "generatedAt": "2026-08-27T07:25:41.595Z",
+  "site": "https://www.kiber-portal.ru",
+  "routesChecked": 12,
+  "sitemapUrls": 8,
+  "sitemapLocs": [
+    "https://www.kiber-portal.ru/",
+    "https://www.kiber-portal.ru/robots/unitree-g1/",
+    "https://www.kiber-portal.ru/roboty-gumanoidy/",
+    "https://www.kiber-portal.ru/roboty-sobaki/",
+    "https://www.kiber-portal.ru/compilations/",
+    "https://www.kiber-portal.ru/articles/",
+    "https://www.kiber-portal.ru/news/",
+    "https://www.kiber-portal.ru/contacts/"
+  ],
+  "redirectsChecked": 2,
+  "status": "passed",
+  "failures": []
+}
