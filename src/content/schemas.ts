@@ -7,6 +7,12 @@ const seoSchema = z.object({
   canonical: z.url(),
 }).strict();
 const faqSchema = z.object({ question: z.string().min(1), answer: z.string().min(1) }).strict();
+const reviewOnlySchema = z.object({
+  publicRender: z.literal(false),
+  owner: z.string().min(1),
+  lastReviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  internalNotes: z.array(z.string().min(1)).max(20),
+}).strict();
 
 export const robotSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
@@ -36,10 +42,12 @@ export const robotSchema = z.object({
   }).strict(),
   facts: z.array(z.string()).max(12),
   faq: z.array(faqSchema).max(20),
+  review: reviewOnlySchema.optional(),
 }).strict();
 
 export const publicationSchema = z.looseObject({
   title: z.string().min(1),
   status: statusSchema,
   seo: seoSchema,
+  review: reviewOnlySchema.optional(),
 });

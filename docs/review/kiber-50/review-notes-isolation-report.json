@@ -1,0 +1,13 @@
+{
+  "issue": "KIBER-50",
+  "generatedAt": "2026-08-27T13:55:38.782Z",
+  "htmlFilesChecked": 13,
+  "forbiddenPublicMarkers": [
+    "KIBER-50-REVIEW-ONLY-SENTINEL",
+    "internalNotes",
+    "publicRender",
+    "review-only fields"
+  ],
+  "sourceFixture": "src/content/robots/unitree-g1.yaml",
+  "result": "passed"
+}
