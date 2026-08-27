@@ -1,0 +1,16 @@
+schema_version: 1
+id: home-hero-minimal
+block_id: home-hero
+variant: default
+viewport: md
+mode: minimal
+data:
+  eyebrow: Роботы для мероприятий
+  title: Аренда роботов, которые встречают гостей и держат внимание
+  lead: Подберём формат под площадку, тайминг и сценарий. Робот работает как часть программы, а менеджер помогает собрать безопасный план.
+  primary: { href: /contacts/, label: Обсудить мероприятие }
+  secondary: { href: /robots/, label: Смотреть каталог }
+  stats:
+    - { value: "24", label: модели в каталоге }
+    - { value: 1 день, label: типовой минимум для шоу-форматов }
+  analytics: { event: contact_click, block_id: home-hero }

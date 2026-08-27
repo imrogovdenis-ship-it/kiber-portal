@@ -1,0 +1,13 @@
+schema_version: 1
+id: faq-default
+block_id: faq
+variant: default
+viewport: xl
+mode: reference
+data:
+  title: Частые вопросы
+  items:
+    - question: Можно ли поставить робота на улице?
+      answer: Зависит от модели, покрытия, погоды и сценария. Перед подтверждением менеджер проверяет условия площадки.
+    - question: Цена фиксированная?
+      answer: Базовые тарифы есть в source-of-truth, но финальная смета зависит от города, времени, операторов и логистики.
