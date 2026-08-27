@@ -261,6 +261,284 @@ export const blockRegistry = [
   {
     spec: {
       "schema_version": 1,
+      "id": "home-hero",
+      "review_id": "02",
+      "name": "Home Hero",
+      "status": "pilot",
+      "component": "src/components/blocks/HomeHero.astro",
+      "used_in": [
+        "home",
+        "robot",
+        "collection",
+        "design-review"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": {
+        "surface": "{color.surface}",
+        "canvas": "{color.canvas}",
+        "action": "{color.action.rest}",
+        "border": "{color.border}",
+        "heading": "{typography.heading.family}",
+        "spacing": "{layout.content.padding}"
+      },
+      "content_contract": {
+        "required": [
+          "eyebrow",
+          "title",
+          "lead",
+          "primary",
+          "stats",
+          "analytics"
+        ],
+        "optional": [
+          "secondary"
+        ],
+        "rules": [
+          "public copy stays factual and does not promise unavailable lead destinations",
+          "focus-visible state remains available for every interactive element",
+          "mobile and desktop fixtures are reviewed before reuse in production pages"
+        ]
+      },
+      "responsive": {
+        "sm": {
+          "columns": 1,
+          "stacked": true
+        },
+        "md": {
+          "columns": 1,
+          "stacked": true
+        },
+        "lg": {
+          "columns": 2,
+          "stacked": false
+        },
+        "xl": {
+          "columns": 2,
+          "stacked": false
+        }
+      },
+      "accessibility": {
+        "landmark": "section",
+        "image_alt_required": false,
+        "full_card_link": false,
+        "focus_visible": true
+      },
+      "analytics": {
+        "events": [
+          "contact_click"
+        ]
+      },
+      "fixtures": [
+        "default",
+        "long-content",
+        "minimal",
+        "missing-optional",
+        "mobile"
+      ],
+      "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"02 · HOME HERO\"; .home-hero"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"02\"; .home-hero"
+        },
+        {
+          "source": "DESIGN-SYSTEM-TZ.md",
+          "locator": "KIBER-32-commercial-components-mvp"
+        }
+      ]
+    },
+    fixtures: [
+      {
+        "schema_version": 1,
+        "id": "home-hero-default",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "reference",
+        "block_id": "home-hero",
+        "data": {
+          "eyebrow": "Роботы для мероприятий",
+          "title": "Аренда роботов, которые встречают гостей и держат внимание",
+          "lead": "Подберём формат под площадку, тайминг и сценарий. Робот работает как часть программы, а менеджер помогает собрать безопасный план.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Обсудить мероприятие"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Смотреть каталог"
+          },
+          "stats": [
+            {
+              "value": "24",
+              "label": "модели в каталоге"
+            },
+            {
+              "value": "1 день",
+              "label": "типовой минимум для шоу-форматов"
+            }
+          ],
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "home-hero"
+          }
+        },
+        "source": "design-system/fixtures/home-hero/default.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "home-hero-long-content",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "long-content",
+        "block_id": "home-hero",
+        "data": {
+          "eyebrow": "Роботы для мероприятий",
+          "title": "Аренда роботов, которые встречают гостей и держат внимание — длинная проверка переносов",
+          "lead": "Подберём формат под площадку, тайминг и сценарий. Робот работает как часть программы, а менеджер помогает собрать безопасный план.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Обсудить мероприятие"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Смотреть каталог"
+          },
+          "stats": [
+            {
+              "value": "24",
+              "label": "модели в каталоге"
+            },
+            {
+              "value": "1 день",
+              "label": "типовой минимум для шоу-форматов"
+            }
+          ],
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "home-hero"
+          }
+        },
+        "source": "design-system/fixtures/home-hero/long-content.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "home-hero-minimal",
+        "variant": "default",
+        "viewport": "md",
+        "mode": "minimal",
+        "block_id": "home-hero",
+        "data": {
+          "eyebrow": "Роботы для мероприятий",
+          "title": "Аренда роботов, которые встречают гостей и держат внимание",
+          "lead": "Подберём формат под площадку, тайминг и сценарий. Робот работает как часть программы, а менеджер помогает собрать безопасный план.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Обсудить мероприятие"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Смотреть каталог"
+          },
+          "stats": [
+            {
+              "value": "24",
+              "label": "модели в каталоге"
+            },
+            {
+              "value": "1 день",
+              "label": "типовой минимум для шоу-форматов"
+            }
+          ],
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "home-hero"
+          }
+        },
+        "source": "design-system/fixtures/home-hero/minimal.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "home-hero-missing-optional",
+        "variant": "default",
+        "viewport": "lg",
+        "mode": "missing-optional",
+        "block_id": "home-hero",
+        "data": {
+          "eyebrow": "Роботы для мероприятий",
+          "title": "Аренда роботов, которые встречают гостей и держат внимание",
+          "lead": "Подберём формат под площадку, тайминг и сценарий. Робот работает как часть программы, а менеджер помогает собрать безопасный план.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Обсудить мероприятие"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Смотреть каталог"
+          },
+          "stats": [
+            {
+              "value": "24",
+              "label": "модели в каталоге"
+            },
+            {
+              "value": "1 день",
+              "label": "типовой минимум для шоу-форматов"
+            }
+          ],
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "home-hero"
+          }
+        },
+        "source": "design-system/fixtures/home-hero/missing-optional.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "home-hero-mobile",
+        "variant": "default",
+        "viewport": "sm",
+        "mode": "mobile",
+        "block_id": "home-hero",
+        "data": {
+          "eyebrow": "Роботы для мероприятий",
+          "title": "Аренда роботов, которые встречают гостей и держат внимание",
+          "lead": "Подберём формат под площадку, тайминг и сценарий. Робот работает как часть программы, а менеджер помогает собрать безопасный план.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Обсудить мероприятие"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Смотреть каталог"
+          },
+          "stats": [
+            {
+              "value": "24",
+              "label": "модели в каталоге"
+            },
+            {
+              "value": "1 день",
+              "label": "типовой минимум для шоу-форматов"
+            }
+          ],
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "home-hero"
+          }
+        },
+        "source": "design-system/fixtures/home-hero/mobile.yaml"
+      }
+    ],
+    load: () => import("../components/blocks/HomeHero.astro"),
+  },
+  {
+    spec: {
+      "schema_version": 1,
       "id": "robot-card",
       "review_id": "05",
       "name": "Robot Card",
@@ -499,6 +777,429 @@ export const blockRegistry = [
   {
     spec: {
       "schema_version": 1,
+      "id": "faq",
+      "review_id": "07",
+      "name": "FAQ",
+      "status": "pilot",
+      "component": "src/components/blocks/Faq.astro",
+      "used_in": [
+        "home",
+        "robot",
+        "collection",
+        "design-review"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": {
+        "surface": "{color.surface}",
+        "canvas": "{color.canvas}",
+        "action": "{color.action.rest}",
+        "border": "{color.border}",
+        "heading": "{typography.heading.family}",
+        "spacing": "{layout.content.padding}"
+      },
+      "content_contract": {
+        "required": [
+          "title",
+          "items"
+        ],
+        "optional": [],
+        "rules": [
+          "public copy stays factual and does not promise unavailable lead destinations",
+          "focus-visible state remains available for every interactive element",
+          "mobile and desktop fixtures are reviewed before reuse in production pages"
+        ]
+      },
+      "responsive": {
+        "sm": {
+          "columns": 1,
+          "stacked": true
+        },
+        "md": {
+          "columns": 1,
+          "stacked": true
+        },
+        "lg": {
+          "columns": 2,
+          "stacked": false
+        },
+        "xl": {
+          "columns": 2,
+          "stacked": false
+        }
+      },
+      "accessibility": {
+        "landmark": "section",
+        "image_alt_required": false,
+        "full_card_link": false,
+        "focus_visible": true
+      },
+      "analytics": {
+        "events": [
+          "contact_click"
+        ]
+      },
+      "fixtures": [
+        "default",
+        "long-content",
+        "minimal",
+        "missing-optional",
+        "mobile"
+      ],
+      "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"07 · FAQ\"; .faq"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"07\"; .faq"
+        },
+        {
+          "source": "DESIGN-SYSTEM-TZ.md",
+          "locator": "KIBER-32-commercial-components-mvp"
+        }
+      ]
+    },
+    fixtures: [
+      {
+        "schema_version": 1,
+        "id": "faq-default",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "reference",
+        "block_id": "faq",
+        "data": {
+          "title": "Частые вопросы",
+          "items": [
+            {
+              "question": "Можно ли поставить робота на улице?",
+              "answer": "Зависит от модели, покрытия, погоды и сценария. Перед подтверждением менеджер проверяет условия площадки."
+            },
+            {
+              "question": "Цена фиксированная?",
+              "answer": "Базовые тарифы есть в source-of-truth, но финальная смета зависит от города, времени, операторов и логистики."
+            }
+          ]
+        },
+        "source": "design-system/fixtures/faq/default.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "faq-long-content",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "long-content",
+        "block_id": "faq",
+        "data": {
+          "title": "Частые вопросы — длинная проверка переносов",
+          "items": [
+            {
+              "question": "Можно ли поставить робота на улице?",
+              "answer": "Зависит от модели, покрытия, погоды и сценария. Перед подтверждением менеджер проверяет условия площадки."
+            },
+            {
+              "question": "Цена фиксированная?",
+              "answer": "Базовые тарифы есть в source-of-truth, но финальная смета зависит от города, времени, операторов и логистики."
+            }
+          ]
+        },
+        "source": "design-system/fixtures/faq/long-content.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "faq-minimal",
+        "variant": "default",
+        "viewport": "md",
+        "mode": "minimal",
+        "block_id": "faq",
+        "data": {
+          "title": "Частые вопросы",
+          "items": [
+            {
+              "question": "Можно ли поставить робота на улице?",
+              "answer": "Зависит от модели, покрытия, погоды и сценария. Перед подтверждением менеджер проверяет условия площадки."
+            },
+            {
+              "question": "Цена фиксированная?",
+              "answer": "Базовые тарифы есть в source-of-truth, но финальная смета зависит от города, времени, операторов и логистики."
+            }
+          ]
+        },
+        "source": "design-system/fixtures/faq/minimal.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "faq-missing-optional",
+        "variant": "default",
+        "viewport": "lg",
+        "mode": "missing-optional",
+        "block_id": "faq",
+        "data": {
+          "title": "Частые вопросы",
+          "items": [
+            {
+              "question": "Можно ли поставить робота на улице?",
+              "answer": "Зависит от модели, покрытия, погоды и сценария. Перед подтверждением менеджер проверяет условия площадки."
+            },
+            {
+              "question": "Цена фиксированная?",
+              "answer": "Базовые тарифы есть в source-of-truth, но финальная смета зависит от города, времени, операторов и логистики."
+            }
+          ]
+        },
+        "source": "design-system/fixtures/faq/missing-optional.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "faq-mobile",
+        "variant": "default",
+        "viewport": "sm",
+        "mode": "mobile",
+        "block_id": "faq",
+        "data": {
+          "title": "Частые вопросы",
+          "items": [
+            {
+              "question": "Можно ли поставить робота на улице?",
+              "answer": "Зависит от модели, покрытия, погоды и сценария. Перед подтверждением менеджер проверяет условия площадки."
+            },
+            {
+              "question": "Цена фиксированная?",
+              "answer": "Базовые тарифы есть в source-of-truth, но финальная смета зависит от города, времени, операторов и логистики."
+            }
+          ]
+        },
+        "source": "design-system/fixtures/faq/mobile.yaml"
+      }
+    ],
+    load: () => import("../components/blocks/Faq.astro"),
+  },
+  {
+    spec: {
+      "schema_version": 1,
+      "id": "cta-strip",
+      "review_id": "09",
+      "name": "CTA Strip",
+      "status": "pilot",
+      "component": "src/components/blocks/CtaStrip.astro",
+      "used_in": [
+        "home",
+        "robot",
+        "collection",
+        "design-review"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": {
+        "surface": "{color.surface}",
+        "canvas": "{color.canvas}",
+        "action": "{color.action.rest}",
+        "border": "{color.border}",
+        "heading": "{typography.heading.family}",
+        "spacing": "{layout.content.padding}"
+      },
+      "content_contract": {
+        "required": [
+          "title",
+          "text",
+          "primary",
+          "analytics"
+        ],
+        "optional": [
+          "secondary"
+        ],
+        "rules": [
+          "public copy stays factual and does not promise unavailable lead destinations",
+          "focus-visible state remains available for every interactive element",
+          "mobile and desktop fixtures are reviewed before reuse in production pages"
+        ]
+      },
+      "responsive": {
+        "sm": {
+          "columns": 1,
+          "stacked": true
+        },
+        "md": {
+          "columns": 1,
+          "stacked": true
+        },
+        "lg": {
+          "columns": 2,
+          "stacked": false
+        },
+        "xl": {
+          "columns": 2,
+          "stacked": false
+        }
+      },
+      "accessibility": {
+        "landmark": "section",
+        "image_alt_required": false,
+        "full_card_link": false,
+        "focus_visible": true
+      },
+      "analytics": {
+        "events": [
+          "contact_click"
+        ]
+      },
+      "fixtures": [
+        "default",
+        "long-content",
+        "minimal",
+        "missing-optional",
+        "mobile"
+      ],
+      "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"09 · CTA STRIP\"; .cta-strip"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"09\"; .cta-strip"
+        },
+        {
+          "source": "DESIGN-SYSTEM-TZ.md",
+          "locator": "KIBER-32-commercial-components-mvp"
+        }
+      ]
+    },
+    fixtures: [
+      {
+        "schema_version": 1,
+        "id": "cta-strip-default",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "reference",
+        "block_id": "cta-strip",
+        "data": {
+          "title": "Нужен робот под конкретную площадку?",
+          "text": "Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Написать менеджеру"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Открыть каталог"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "cta-strip"
+          }
+        },
+        "source": "design-system/fixtures/cta-strip/default.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "cta-strip-long-content",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "long-content",
+        "block_id": "cta-strip",
+        "data": {
+          "title": "Нужен робот под конкретную площадку? — длинная проверка переносов",
+          "text": "Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Написать менеджеру"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Открыть каталог"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "cta-strip"
+          }
+        },
+        "source": "design-system/fixtures/cta-strip/long-content.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "cta-strip-minimal",
+        "variant": "default",
+        "viewport": "md",
+        "mode": "minimal",
+        "block_id": "cta-strip",
+        "data": {
+          "title": "Нужен робот под конкретную площадку?",
+          "text": "Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Написать менеджеру"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Открыть каталог"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "cta-strip"
+          }
+        },
+        "source": "design-system/fixtures/cta-strip/minimal.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "cta-strip-missing-optional",
+        "variant": "default",
+        "viewport": "lg",
+        "mode": "missing-optional",
+        "block_id": "cta-strip",
+        "data": {
+          "title": "Нужен робот под конкретную площадку?",
+          "text": "Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Написать менеджеру"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Открыть каталог"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "cta-strip"
+          }
+        },
+        "source": "design-system/fixtures/cta-strip/missing-optional.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "cta-strip-mobile",
+        "variant": "default",
+        "viewport": "sm",
+        "mode": "mobile",
+        "block_id": "cta-strip",
+        "data": {
+          "title": "Нужен робот под конкретную площадку?",
+          "text": "Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.",
+          "primary": {
+            "href": "/contacts/",
+            "label": "Написать менеджеру"
+          },
+          "secondary": {
+            "href": "/robots/",
+            "label": "Открыть каталог"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "cta-strip"
+          }
+        },
+        "source": "design-system/fixtures/cta-strip/mobile.yaml"
+      }
+    ],
+    load: () => import("../components/blocks/CtaStrip.astro"),
+  },
+  {
+    spec: {
+      "schema_version": 1,
       "id": "breadcrumbs",
       "review_id": "10",
       "name": "Breadcrumbs",
@@ -698,6 +1399,500 @@ export const blockRegistry = [
       }
     ],
     load: () => import("../components/layout/Breadcrumbs.astro"),
+  },
+  {
+    spec: {
+      "schema_version": 1,
+      "id": "pricing",
+      "review_id": "15",
+      "name": "Pricing",
+      "status": "pilot",
+      "component": "src/components/blocks/Pricing.astro",
+      "used_in": [
+        "home",
+        "robot",
+        "collection",
+        "design-review"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": {
+        "surface": "{color.surface}",
+        "canvas": "{color.canvas}",
+        "action": "{color.action.rest}",
+        "border": "{color.border}",
+        "heading": "{typography.heading.family}",
+        "spacing": "{layout.content.padding}"
+      },
+      "content_contract": {
+        "required": [
+          "title",
+          "disclaimer",
+          "items"
+        ],
+        "optional": [],
+        "rules": [
+          "public copy stays factual and does not promise unavailable lead destinations",
+          "focus-visible state remains available for every interactive element",
+          "mobile and desktop fixtures are reviewed before reuse in production pages"
+        ]
+      },
+      "responsive": {
+        "sm": {
+          "columns": 1,
+          "stacked": true
+        },
+        "md": {
+          "columns": 1,
+          "stacked": true
+        },
+        "lg": {
+          "columns": 2,
+          "stacked": false
+        },
+        "xl": {
+          "columns": 2,
+          "stacked": false
+        }
+      },
+      "accessibility": {
+        "landmark": "section",
+        "image_alt_required": false,
+        "full_card_link": false,
+        "focus_visible": true
+      },
+      "analytics": {
+        "events": [
+          "contact_click"
+        ]
+      },
+      "fixtures": [
+        "default",
+        "long-content",
+        "minimal",
+        "missing-optional",
+        "mobile"
+      ],
+      "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"15 · PRICING\"; .robot-pricing"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"15\"; .robot-pricing"
+        },
+        {
+          "source": "DESIGN-SYSTEM-TZ.md",
+          "locator": "KIBER-32-commercial-components-mvp"
+        }
+      ]
+    },
+    fixtures: [
+      {
+        "schema_version": 1,
+        "id": "pricing-default",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "reference",
+        "block_id": "pricing",
+        "data": {
+          "title": "Тарифы для согласования",
+          "disclaimer": "Не является публичной офертой",
+          "items": [
+            {
+              "label": "Unitree G1",
+              "price": "от 15 000 ₽ / час",
+              "note": "минимум 1 час, итог зависит от сценария"
+            },
+            {
+              "label": "Робот София",
+              "price": "цена по запросу",
+              "note": "рассчитывается после брифа и проверки доступности"
+            }
+          ]
+        },
+        "source": "design-system/fixtures/pricing/default.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "pricing-long-content",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "long-content",
+        "block_id": "pricing",
+        "data": {
+          "title": "Тарифы для согласования — длинная проверка переносов",
+          "disclaimer": "Не является публичной офертой",
+          "items": [
+            {
+              "label": "Unitree G1",
+              "price": "от 15 000 ₽ / час",
+              "note": "минимум 1 час, итог зависит от сценария"
+            },
+            {
+              "label": "Робот София",
+              "price": "цена по запросу",
+              "note": "рассчитывается после брифа и проверки доступности"
+            }
+          ]
+        },
+        "source": "design-system/fixtures/pricing/long-content.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "pricing-minimal",
+        "variant": "default",
+        "viewport": "md",
+        "mode": "minimal",
+        "block_id": "pricing",
+        "data": {
+          "title": "Тарифы для согласования",
+          "disclaimer": "Не является публичной офертой",
+          "items": [
+            {
+              "label": "Unitree G1",
+              "price": "от 15 000 ₽ / час",
+              "note": "минимум 1 час, итог зависит от сценария"
+            },
+            {
+              "label": "Робот София",
+              "price": "цена по запросу",
+              "note": "рассчитывается после брифа и проверки доступности"
+            }
+          ]
+        },
+        "source": "design-system/fixtures/pricing/minimal.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "pricing-missing-optional",
+        "variant": "default",
+        "viewport": "lg",
+        "mode": "missing-optional",
+        "block_id": "pricing",
+        "data": {
+          "title": "Тарифы для согласования",
+          "disclaimer": "Не является публичной офертой",
+          "items": [
+            {
+              "label": "Unitree G1",
+              "price": "от 15 000 ₽ / час",
+              "note": "минимум 1 час, итог зависит от сценария"
+            },
+            {
+              "label": "Робот София",
+              "price": "цена по запросу",
+              "note": "рассчитывается после брифа и проверки доступности"
+            }
+          ]
+        },
+        "source": "design-system/fixtures/pricing/missing-optional.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "pricing-mobile",
+        "variant": "default",
+        "viewport": "sm",
+        "mode": "mobile",
+        "block_id": "pricing",
+        "data": {
+          "title": "Тарифы для согласования",
+          "disclaimer": "Не является публичной офертой",
+          "items": [
+            {
+              "label": "Unitree G1",
+              "price": "от 15 000 ₽ / час",
+              "note": "минимум 1 час, итог зависит от сценария"
+            },
+            {
+              "label": "Робот София",
+              "price": "цена по запросу",
+              "note": "рассчитывается после брифа и проверки доступности"
+            }
+          ]
+        },
+        "source": "design-system/fixtures/pricing/mobile.yaml"
+      }
+    ],
+    load: () => import("../components/blocks/Pricing.astro"),
+  },
+  {
+    spec: {
+      "schema_version": 1,
+      "id": "lead-form",
+      "review_id": "31",
+      "name": "Lead Form",
+      "status": "pilot",
+      "component": "src/components/blocks/LeadForm.astro",
+      "used_in": [
+        "home",
+        "robot",
+        "collection",
+        "design-review"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": {
+        "surface": "{color.surface}",
+        "canvas": "{color.canvas}",
+        "action": "{color.action.rest}",
+        "border": "{color.border}",
+        "heading": "{typography.heading.family}",
+        "spacing": "{layout.content.padding}"
+      },
+      "content_contract": {
+        "required": [
+          "title",
+          "text",
+          "fields",
+          "submit",
+          "disabled_reason",
+          "analytics"
+        ],
+        "optional": [],
+        "rules": [
+          "public copy stays factual and does not promise unavailable lead destinations",
+          "focus-visible state remains available for every interactive element",
+          "mobile and desktop fixtures are reviewed before reuse in production pages"
+        ]
+      },
+      "responsive": {
+        "sm": {
+          "columns": 1,
+          "stacked": true
+        },
+        "md": {
+          "columns": 1,
+          "stacked": true
+        },
+        "lg": {
+          "columns": 2,
+          "stacked": false
+        },
+        "xl": {
+          "columns": 2,
+          "stacked": false
+        }
+      },
+      "accessibility": {
+        "landmark": "section",
+        "image_alt_required": false,
+        "full_card_link": false,
+        "focus_visible": true
+      },
+      "analytics": {
+        "events": [
+          "contact_click"
+        ]
+      },
+      "fixtures": [
+        "default",
+        "long-content",
+        "minimal",
+        "missing-optional",
+        "mobile"
+      ],
+      "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"31 · LEAD FORM\"; .lead-form"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"31\"; .lead-form"
+        },
+        {
+          "source": "DESIGN-SYSTEM-TZ.md",
+          "locator": "KIBER-32-commercial-components-mvp"
+        }
+      ]
+    },
+    fixtures: [
+      {
+        "schema_version": 1,
+        "id": "lead-form-default",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "reference",
+        "block_id": "lead-form",
+        "data": {
+          "title": "Заявка на подбор робота",
+          "text": "Форма показывает будущий production UX. До утверждения каналов отправки кнопка отключена.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Имя",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Телефон",
+              "required": true
+            },
+            {
+              "name": "event",
+              "label": "Что за мероприятие",
+              "required": false
+            }
+          ],
+          "submit": "Отправить заявку",
+          "disabled_reason": "Отправка будет включена после утверждения lead destination и legal/consent policy.",
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "lead-form"
+          }
+        },
+        "source": "design-system/fixtures/lead-form/default.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "lead-form-long-content",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "long-content",
+        "block_id": "lead-form",
+        "data": {
+          "title": "Заявка на подбор робота — длинная проверка переносов",
+          "text": "Форма показывает будущий production UX. До утверждения каналов отправки кнопка отключена.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Имя",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Телефон",
+              "required": true
+            },
+            {
+              "name": "event",
+              "label": "Что за мероприятие",
+              "required": false
+            }
+          ],
+          "submit": "Отправить заявку",
+          "disabled_reason": "Отправка будет включена после утверждения lead destination и legal/consent policy.",
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "lead-form"
+          }
+        },
+        "source": "design-system/fixtures/lead-form/long-content.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "lead-form-minimal",
+        "variant": "default",
+        "viewport": "md",
+        "mode": "minimal",
+        "block_id": "lead-form",
+        "data": {
+          "title": "Заявка на подбор робота",
+          "text": "Форма показывает будущий production UX. До утверждения каналов отправки кнопка отключена.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Имя",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Телефон",
+              "required": true
+            },
+            {
+              "name": "event",
+              "label": "Что за мероприятие",
+              "required": false
+            }
+          ],
+          "submit": "Отправить заявку",
+          "disabled_reason": "Отправка будет включена после утверждения lead destination и legal/consent policy.",
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "lead-form"
+          }
+        },
+        "source": "design-system/fixtures/lead-form/minimal.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "lead-form-missing-optional",
+        "variant": "default",
+        "viewport": "lg",
+        "mode": "missing-optional",
+        "block_id": "lead-form",
+        "data": {
+          "title": "Заявка на подбор робота",
+          "text": "Форма показывает будущий production UX. До утверждения каналов отправки кнопка отключена.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Имя",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Телефон",
+              "required": true
+            },
+            {
+              "name": "event",
+              "label": "Что за мероприятие",
+              "required": false
+            }
+          ],
+          "submit": "Отправить заявку",
+          "disabled_reason": "Отправка будет включена после утверждения lead destination и legal/consent policy.",
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "lead-form"
+          }
+        },
+        "source": "design-system/fixtures/lead-form/missing-optional.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "lead-form-mobile",
+        "variant": "default",
+        "viewport": "sm",
+        "mode": "mobile",
+        "block_id": "lead-form",
+        "data": {
+          "title": "Заявка на подбор робота",
+          "text": "Форма показывает будущий production UX. До утверждения каналов отправки кнопка отключена.",
+          "fields": [
+            {
+              "name": "name",
+              "label": "Имя",
+              "required": true
+            },
+            {
+              "name": "phone",
+              "label": "Телефон",
+              "required": true
+            },
+            {
+              "name": "event",
+              "label": "Что за мероприятие",
+              "required": false
+            }
+          ],
+          "submit": "Отправить заявку",
+          "disabled_reason": "Отправка будет включена после утверждения lead destination и legal/consent policy.",
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "lead-form"
+          }
+        },
+        "source": "design-system/fixtures/lead-form/mobile.yaml"
+      }
+    ],
+    load: () => import("../components/blocks/LeadForm.astro"),
   },
   {
     spec: {

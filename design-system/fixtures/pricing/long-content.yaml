@@ -1,0 +1,12 @@
+schema_version: 1
+id: pricing-long-content
+block_id: pricing
+variant: default
+viewport: xl
+mode: long-content
+data:
+  title: Тарифы для согласования — длинная проверка переносов
+  disclaimer: Не является публичной офертой
+  items:
+    - { label: Unitree G1, price: от 15 000 ₽ / час, note: "минимум 1 час, итог зависит от сценария" }
+    - { label: Робот София, price: цена по запросу, note: рассчитывается после брифа и проверки доступности }

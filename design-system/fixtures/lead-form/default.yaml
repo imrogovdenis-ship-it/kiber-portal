@@ -1,0 +1,16 @@
+schema_version: 1
+id: lead-form-default
+block_id: lead-form
+variant: default
+viewport: xl
+mode: reference
+data:
+  title: Заявка на подбор робота
+  text: Форма показывает будущий production UX. До утверждения каналов отправки кнопка отключена.
+  fields:
+    - { name: name, label: Имя, required: true }
+    - { name: phone, label: Телефон, required: true }
+    - { name: event, label: Что за мероприятие, required: false }
+  submit: Отправить заявку
+  disabled_reason: Отправка будет включена после утверждения lead destination и legal/consent policy.
+  analytics: { event: contact_click, block_id: lead-form }

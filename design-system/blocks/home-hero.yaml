@@ -1,0 +1,42 @@
+schema_version: 1
+id: home-hero
+review_id: "02"
+name: Home Hero
+status: pilot
+component: src/components/blocks/HomeHero.astro
+used_in: [home, robot, collection, design-review]
+variants: [default]
+tokens:
+  surface: "{color.surface}"
+  canvas: "{color.canvas}"
+  action: "{color.action.rest}"
+  border: "{color.border}"
+  heading: "{typography.heading.family}"
+  spacing: "{layout.content.padding}"
+content_contract:
+  required: [eyebrow, title, lead, primary, stats, analytics]
+  optional: [secondary]
+  rules:
+    - public copy stays factual and does not promise unavailable lead destinations
+    - focus-visible state remains available for every interactive element
+    - mobile and desktop fixtures are reviewed before reuse in production pages
+responsive:
+  sm: { columns: 1, stacked: true }
+  md: { columns: 1, stacked: true }
+  lg: { columns: 2, stacked: false }
+  xl: { columns: 2, stacked: false }
+accessibility:
+  landmark: section
+  image_alt_required: false
+  full_card_link: false
+  focus_visible: true
+analytics:
+  events: [contact_click]
+fixtures: [default, long-content, minimal, missing-optional, mobile]
+traceability:
+  - source: docs/source/reference-desktop-v9.html
+    locator: 'data-rv="02 · HOME HERO"; .home-hero'
+  - source: docs/source/reference-mobile-v3.html
+    locator: 'data-rv="02"; .home-hero'
+  - source: DESIGN-SYSTEM-TZ.md
+    locator: KIBER-32-commercial-components-mvp

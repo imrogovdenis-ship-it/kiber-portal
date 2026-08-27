@@ -1,0 +1,34 @@
+---
+import type { LeadFormData } from '../../../design-system/schemas/fixture.schema';
+const { title, text, fields, submit, disabled_reason, analytics } = Astro.props as LeadFormData;
+---
+
+<section class="lead-form" data-block-id="lead-form" data-review-id="31">
+  <div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+  </div>
+  <form class="lead-form__form" aria-describedby="lead-form-status">
+    {fields.map((field) => (
+      <label>
+        <span>{field.label}{field.required ? ' *' : ''}</span>
+        <input name={field.name} required={field.required} disabled />
+      </label>
+    ))}
+    <button type="button" disabled data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id}>{submit}</button>
+    <p id="lead-form-status">{disabled_reason}</p>
+  </form>
+</section>
+
+<style>
+  .lead-form { display: grid; gap: var(--kp-grid-gap); padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
+  .lead-form h2, .lead-form p { margin: 0; }
+  .lead-form h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: 1; }
+  .lead-form p { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .lead-form__form { display: grid; gap: var(--kp-card-gap); }
+  .lead-form label { display: grid; gap: .35rem; font-weight: var(--kp-label-weight); }
+  .lead-form input { min-height: 40.25rem; border: 0.0625rem solid var(--kp-line); border-radius: 10.25rem; padding-inline: 1rem; background: var(--kp-sky); color: var(--kp-muted); }
+  .lead-form input:focus-visible, .lead-form button:focus-visible { outline: 0.1875rem solid var(--kp-orange); outline-offset: 0.1875rem; }
+  .lead-form button { min-height: 40.25rem; border: 0; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: var(--kp-heading-weight); opacity: .65; }
+  @media (min-width: 60em) { .lead-form { grid-template-columns: .8fr 1.2fr; } }
+</style>

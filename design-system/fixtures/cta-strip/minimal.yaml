@@ -1,0 +1,12 @@
+schema_version: 1
+id: cta-strip-minimal
+block_id: cta-strip
+variant: default
+viewport: md
+mode: minimal
+data:
+  title: Нужен робот под конкретную площадку?
+  text: Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.
+  primary: { href: /contacts/, label: Написать менеджеру }
+  secondary: { href: /robots/, label: Открыть каталог }
+  analytics: { event: contact_click, block_id: cta-strip }
