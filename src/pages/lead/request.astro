@@ -21,22 +21,27 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
       <p>Расскажите о городе, дате, площадке и формате события. Так менеджеру проще предложить подходящие модели и сценарий.</p>
     </section>
 
-    <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation">
+    <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation" data-state="ready" aria-describedby="lead-request-status">
       <input type="hidden" name="robot" value={robot} />
       <label>
-        <span>Имя</span>
-        <input name="name" autocomplete="name" placeholder="Как к вам обращаться" />
+        <span>Имя *</span>
+        <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required aria-invalid="false" aria-describedby="name-help name-error" />
+        <span id="name-help" class="lead-request__help">Напишите имя или короткое обращение.</span>
+        <span id="name-error" class="lead-request__error" role="alert">Укажите имя, чтобы менеджер понял, к кому обратиться.</span>
       </label>
       <label>
-        <span>Телефон или мессенджер</span>
-        <input name="contact" autocomplete="tel" placeholder="Канал для связи будет утверждён отдельно" />
+        <span>Телефон или мессенджер *</span>
+        <input name="contact" autocomplete="tel" placeholder="Телефон, Telegram или WhatsApp" required aria-invalid="false" aria-describedby="contact-help contact-error" />
+        <span id="contact-help" class="lead-request__help">Оставьте удобный способ связи.</span>
+        <span id="contact-error" class="lead-request__error" role="alert">Укажите телефон или мессенджер для ответа.</span>
       </label>
       <label>
         <span>Формат мероприятия</span>
-        <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий"></textarea>
+        <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий" aria-describedby="event-help"></textarea>
+        <span id="event-help" class="lead-request__help">Можно кратко: дата, город, гости и задача робота.</span>
       </label>
-      <button type="submit">Проверить подтверждение</button>
-      <p class="lead-request__note">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
+      <button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение">Проверить подтверждение</button>
+      <p id="lead-request-status" class="lead-request__note" aria-live="polite">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
     </form>
   </main>
 </BaseLayout>
@@ -48,10 +53,13 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
   .lead-request__intro p, .lead-request__intro h1 { margin: 0; }
   .lead-request__intro > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
   .lead-request__intro h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
-  .lead-request__intro > p:last-child, .lead-request__note { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .lead-request__intro > p:last-child, .lead-request__note, .lead-request__help { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
   .lead-request__form { max-width: 42rem; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
   .lead-request label { display: grid; gap: .35rem; font-weight: var(--kp-label-weight); }
   .lead-request input, .lead-request textarea { border: 0.0625rem solid var(--kp-line); border-radius: .875rem; padding: .875rem 1rem; background: var(--kp-sky); color: var(--kp-ink); font: inherit; }
+  .lead-request input:user-invalid, .lead-request textarea:user-invalid { border-color: var(--kp-orange); }
   .lead-request button { min-height: 2.75rem; border: 0; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: var(--kp-heading-weight); }
-  .lead-request__note { margin: 0; }
+  .lead-request__note, .lead-request__help { margin: 0; }
+  .lead-request__help { font-size: var(--kp-label-size); font-weight: var(--kp-body-weight); }
+  .lead-request__error { position: absolute; width: 0.0625rem; height: 0.0625rem; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 </style>
