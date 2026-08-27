@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
+---
+
+<BaseLayout
+  title="Заявка на подбор робота — КИБЕР ПОРТАЛ"
+  description="Preview-safe заявка вертикального среза: данные не отправляются в production-каналы."
+  canonical="https://www.kiber-portal.ru/lead/request/"
+  noindex
+  breadcrumbs={[
+    { name: 'Главная', url: '/' },
+    { name: 'Заявка', url: '/lead/request/' },
+  ]}
+>
+  <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
+    <section class="lead-request__intro">
+      <p>Preview-safe lead flow</p>
+      <h1>Заявка на подбор робота</h1>
+      <p>Этот маршрут проверяет UX вертикального среза. Он не подключает реальные каналы заявок, пока не утверждены lead destination и legal/consent policy.</p>
+    </section>
+
+    <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation">
+      <input type="hidden" name="robot" value={robot} />
+      <label>
+        <span>Имя</span>
+        <input name="name" autocomplete="name" placeholder="Как к вам обращаться" />
+      </label>
+      <label>
+        <span>Телефон или мессенджер</span>
+        <input name="contact" autocomplete="tel" placeholder="Канал для связи будет утверждён отдельно" />
+      </label>
+      <label>
+        <span>Формат мероприятия</span>
+        <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий"></textarea>
+      </label>
+      <button type="submit">Проверить подтверждение</button>
+      <p class="lead-request__note">Preview-safe: форма использует GET-переход на страницу подтверждения и не отправляет данные в API.</p>
+    </form>
+  </main>
+</BaseLayout>
+
+<style>
+  .lead-request { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
+  .lead-request__intro, .lead-request__form { display: grid; gap: var(--kp-card-gap); }
+  .lead-request__intro { max-width: 48rem; }
+  .lead-request__intro p, .lead-request__intro h1 { margin: 0; }
+  .lead-request__intro > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .lead-request__intro h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
+  .lead-request__intro > p:last-child, .lead-request__note { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .lead-request__form { max-width: 42rem; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
+  .lead-request label { display: grid; gap: .35rem; font-weight: var(--kp-label-weight); }
+  .lead-request input, .lead-request textarea { border: 0.0625rem solid var(--kp-line); border-radius: .875rem; padding: .875rem 1rem; background: var(--kp-sky); color: var(--kp-ink); font: inherit; }
+  .lead-request button { min-height: 2.75rem; border: 0; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: var(--kp-heading-weight); }
+  .lead-request__note { margin: 0; }
+</style>

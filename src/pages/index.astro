@@ -1,14 +1,74 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from '../components/blocks/HomeHero.astro';
+import RobotCard from '../components/blocks/RobotCard.astro';
+import CtaStrip from '../components/blocks/CtaStrip.astro';
+
+const hero = {
+  eyebrow: 'Роботы для мероприятий',
+  title: 'Аренда роботов, которые держат внимание',
+  lead: 'Начните с одного проверенного сценария: выберите робота, изучите условия и оставьте безопасную заявку на подбор.',
+  primary: { href: '/robots/unitree-g1/', label: 'Смотреть Unitree G1' },
+  secondary: { href: '/lead/request/?robot=unitree-g1', label: 'Оставить заявку' },
+  stats: [
+    { value: '1', label: 'вертикальный срез для проверки пути' },
+    { value: '0', label: 'реальных отправок без утверждения каналов' },
+  ],
+  analytics: { event: 'contact_click', block_id: 'home-hero' },
+};
+
+const robot = {
+  slug: 'unitree-g1',
+  href: '/robots/unitree-g1/',
+  title: 'Unitree G1',
+  category: 'Робот-гуманоид',
+  price: 'от 150 000 ₽',
+  price_disclaimer: 'Не является публичной офертой',
+  description: 'Пилотная карточка для проверки пути: главная, робот, заявка и подтверждение.',
+  badge: 'Пилот',
+  image: null,
+  analytics: { event: 'robot_card_click', placement: 'catalog', position: 1 },
+} as const;
+
+const cta = {
+  title: 'Готовы проверить сценарий с роботом?',
+  text: 'Заявка в этом срезе работает как preview-safe маршрут: данные не уходят в production-каналы.',
+  primary: { href: '/lead/request/?robot=unitree-g1', label: 'Перейти к заявке' },
+  secondary: { href: '/preview/design-review/', label: 'Открыть review' },
+  analytics: { event: 'contact_click', block_id: 'vertical-slice-cta' },
+};
 ---
 
 <BaseLayout
-  title="КИБЕР ПОРТАЛ — новая дизайн-система"
-  description="Технический фундамент машинно-читаемой дизайн-системы КИБЕР ПОРТАЛ."
+  title="Аренда роботов для мероприятий — КИБЕР ПОРТАЛ"
+  description="Вертикальный срез КИБЕР ПОРТАЛ: главная, карточка Unitree G1, заявка и подтверждение."
   canonical="https://www.kiber-portal.ru/"
 >
-  <main class="container" id="main-content" tabindex="-1">
-    <h1>КИБЕР ПОРТАЛ</h1>
-    <p>Новый runtime подготовлен. Визуальный пилот доступен только в preview-окружении.</p>
+  <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
+    <HomeHero {...hero} />
+
+    <section class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot">
+      <div class="vertical-slice__section-copy">
+        <p>Пилотный робот</p>
+        <h2 id="pilot-robot-title">Начинаем с Unitree G1</h2>
+        <p>Один робот даёт проверяемый маршрут до заявки, не включая реальные каналы отправки раньше бизнес-решений.</p>
+      </div>
+      <div class="vertical-slice__card-grid">
+        <RobotCard {...robot} />
+      </div>
+    </section>
+
+    <CtaStrip {...cta} />
   </main>
 </BaseLayout>
+
+<style>
+  .vertical-slice { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
+  .vertical-slice__section { display: grid; gap: var(--kp-grid-gap); }
+  .vertical-slice__section-copy { display: grid; gap: var(--kp-card-gap); max-width: 42rem; }
+  .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
+  .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .vertical-slice__section-copy h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
+  .vertical-slice__section-copy p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .vertical-slice__card-grid { display: grid; max-width: 24rem; }
+</style>
