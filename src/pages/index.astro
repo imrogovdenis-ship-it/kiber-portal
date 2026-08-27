@@ -34,7 +34,7 @@ const cta = {
   title: 'Готовы проверить сценарий с роботом?',
   text: 'Выберите робота, заполните короткий бриф и получите понятное подтверждение следующего шага.',
   primary: { href: '/lead/request/?robot=unitree-g1', label: 'Перейти к заявке' },
-  secondary: { href: '/preview/design-review/', label: 'Открыть review' },
+  secondary: { href: '/contacts', label: 'Связаться' },
   analytics: { event: 'contact_click', block_id: 'vertical-slice-cta' },
 };
 ---
@@ -47,7 +47,7 @@ const cta = {
   <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
     <HomeHero {...hero} />
 
-    <section class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot">
+    <section id="catalog" class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot">
       <div class="vertical-slice__section-copy">
         <p>Пилотный робот</p>
         <h2 id="pilot-robot-title">Начинаем с Unitree G1</h2>
