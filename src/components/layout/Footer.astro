@@ -1,33 +1,30 @@
 ---
-interface LinkItem { label: string; href: string }
-interface LinkGroup { title: string; links: LinkItem[] }
-interface Props {
-  logoSrc?: string;
-  description?: string;
-  groups?: LinkGroup[];
-  phone?: string;
-  phoneHref?: string;
-  email?: string;
-  telegram?: string;
-  whatsapp?: string;
-  year?: number;
-}
-const { logoSrc, description = 'Аренда роботов для мероприятий в Москве и по всей России.', groups = [], phone, phoneHref, email, telegram, whatsapp, year = new Date().getFullYear() } = Astro.props;
+import { siteConfig } from '../../config/site';
+import type { FooterData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends Partial<FooterData> {}
+const defaults = {
+  logo_label: 'КИБЕР ПОРТАЛ',
+  description: 'Аренда роботов для мероприятий в Москве и по всей России.',
+  sections: [
+    { title: 'Каталог', links: [{ href: '/#catalog', label: 'Все роботы' }, { href: '/roboty-gumanoidy', label: 'Гуманоиды' }, { href: '/roboty-sobaki', label: 'Роботы-собаки' }] },
+    { title: 'Контент', links: [{ href: '/compilations', label: 'Подборки' }, { href: '/articles', label: 'Блог' }, { href: '/news', label: 'Новости' }] },
+  ],
+  messengers: [{ href: siteConfig.telegram, label: 'Telegram' }, { href: siteConfig.whatsapp, label: 'WhatsApp' }],
+  legal_notice: `© ${new Date().getUTCFullYear()} КИБЕР ПОРТАЛ · Не является публичной офертой`,
+  legal_links: [{ href: '/privacy-policy', label: 'Политика конфиденциальности' }, { href: '/cookie-policy', label: 'Политика cookie' }],
+};
+const { logo_label = defaults.logo_label, description = defaults.description, sections = defaults.sections, phone = siteConfig.phone, email = siteConfig.email, messengers = defaults.messengers, legal_notice = defaults.legal_notice, legal_links = defaults.legal_links } = Astro.props;
+const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
 ---
 
-<footer class="site-footer" data-rv="33">
+<footer class="site-footer" data-block="33-footer" data-rv="33">
   <div class="container">
     <div class="site-footer__main">
-      <div><a class="site-footer__logo" href="/">{logoSrc ? <img src={logoSrc} alt="КИБЕР ПОРТАЛ" /> : <strong>КИБЕР ПОРТАЛ</strong>}</a><p class="site-footer__description">{description}</p></div>
-      {groups.map((group) => <nav aria-label={group.title}><h2 class="site-footer__title">{group.title}</h2><ul class="site-footer__nav-list">{group.links.map((item) => <li><a href={item.href}>{item.label}</a></li>)}</ul></nav>)}
-      <div><h2 class="site-footer__title">Контакты</h2>{phone && phoneHref && <a class="site-footer__phone" href={phoneHref}>{phone}</a>}{email && <a class="site-footer__email" href={`mailto:${email}`}>{email}</a>}<div class="site-footer__messengers">{telegram && <a class="site-footer__messenger" href={telegram} aria-label="Telegram">TG</a>}{whatsapp && <a class="site-footer__messenger" href={whatsapp} aria-label="WhatsApp">WA</a>}</div></div>
+      <div><a class="site-footer__logo" href="/">{logo_label}</a><p class="site-footer__description">{description}</p></div>
+      {sections.map((section) => <div><h2 class="site-footer__title">{section.title}</h2><ul class="site-footer__nav-list">{section.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul></div>)}
+      <div><h2 class="site-footer__title">Контакты</h2><a class="site-footer__phone" href={phoneHref} data-analytics-event="phone_click">{phone}</a><a class="site-footer__email" href={`mailto:${email}`} data-analytics-event="contact_click">{email}</a><div class="site-footer__messengers">{messengers.map((link) => <a href={link.href} aria-label={link.label}>{link.label.slice(0, 2).toUpperCase()}</a>)}</div></div>
     </div>
-    <div class="site-footer__bottom"><div class="site-footer__legal"><span>© {year} КИБЕР ПОРТАЛ. Все права защищены.</span><span>Не является публичной офертой.</span></div><div class="site-footer__legal-links"><a href="/privacy-policy">Политика конфиденциальности</a><a href="/terms">Пользовательское соглашение</a><a href="/cookie-policy">Политика cookie</a></div></div>
+    <div class="site-footer__bottom"><div>{legal_notice}</div><div class="site-footer__legal-links">{legal_links.map((link) => <a href={link.href}>{link.label}</a>)}</div></div>
   </div>
 </footer>
-
-<style>
-  .site-footer{background:var(--kp-ink-dark);color:var(--kp-white);padding:3rem 0 1.5rem}.site-footer__main{display:grid;grid-template-columns:1fr;gap:1.75rem;margin-bottom:2rem}.site-footer__logo{color:inherit;text-decoration:none}.site-footer__logo img{height:2.25rem;width:auto;margin-bottom:0.75rem}.site-footer__description{color:var(--kp-muted-soft);font-size:0.875rem}.site-footer__title{margin:0 0 0.75rem;font-size:0.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em}.site-footer__nav-list{margin:0;padding:0;list-style:none}.site-footer__nav-list li{margin-bottom:0.625rem}.site-footer__nav-list a,.site-footer__legal-links a{color:var(--kp-muted-soft);font-size:0.875rem;text-decoration:none}.site-footer__phone,.site-footer__email{display:block;color:var(--kp-white);font-weight:700;margin-bottom:0.625rem;text-decoration:none}.site-footer__email{font-weight:500}.site-footer__messengers{display:flex;gap:0.625rem;margin-top:0.75rem}.site-footer__messenger{width:2.5rem;height:2.5rem;border-radius:50%;background:color-mix(in srgb,var(--kp-white) 10%,transparent);color:var(--kp-white);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:0.6875rem}.site-footer__bottom{border-top:0.0625rem solid color-mix(in srgb,var(--kp-white) 10%,transparent);padding-top:1.5rem;display:flex;flex-direction:column;gap:0.75rem}.site-footer__legal,.site-footer__legal-links{display:flex;flex-direction:column;gap:0.5rem;color:var(--kp-muted-soft);font-size:0.75rem}
-  @media(min-width:40rem){.site-footer__main{grid-template-columns:repeat(2,1fr)}}
-  @media(min-width:60rem){.site-footer{padding:4.5rem 0 2rem}.site-footer__main{grid-template-columns:2fr 1fr 1fr 1.2fr;gap:2.5rem;margin-bottom:3rem}.site-footer__logo img{height:2.5rem;margin-bottom:1rem}.site-footer__title{font-size:0.875rem;margin-bottom:1rem}.site-footer__nav-list li{margin-bottom:0.75rem}.site-footer__bottom{padding-top:2rem;flex-direction:row;justify-content:space-between;flex-wrap:wrap;gap:1rem}.site-footer__legal,.site-footer__legal-links{flex-direction:row;gap:1.5rem;font-size:0.875rem}.site-footer a:hover{color:var(--kp-blue)}}
-</style>

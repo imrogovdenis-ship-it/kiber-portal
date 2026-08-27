@@ -15,7 +15,7 @@ sources:
     viewport: 375
 blocks:
   - review_id: "01"
-    id: header
+    id: site-header
     desktop: { marker: 'data-rv="01 · HEADER"', selector: .site-header }
     mobile: { marker: 'data-rv="01"', selector: .site-header }
   - review_id: "02"
@@ -143,7 +143,7 @@ blocks:
     desktop: { marker: 'data-rv="32 · COOKIE BANNER"', selector: .cookie-banner }
     mobile: { marker: 'id="cookie-banner"', selector: .cookie-banner }
   - review_id: "33"
-    id: footer
+    id: site-footer
     desktop: { marker: 'data-rv="33 · FOOTER"', selector: .site-footer }
     mobile: { marker: 'data-rv="33"', selector: .site-footer }
   - review_id: "34"

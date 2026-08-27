@@ -21,6 +21,8 @@ test('every robot-card fixture includes the legal price disclaimer', async () =>
   for (const name of names) {
     const path = resolve(root, `design-system/fixtures/robot-card/${name}.yaml`);
     const fixture = fixtureSchema.parse(YAML.parse(await readFile(path, 'utf8')));
+    assert.equal(fixture.block_id, 'robot-card');
+    if (fixture.block_id !== 'robot-card') throw new Error('Unexpected fixture type');
     assert.equal(fixture.data.price_disclaimer, 'Не является публичной офертой');
     if (fixture.data.image) assert.ok(fixture.data.image.alt.length > 0);
   }

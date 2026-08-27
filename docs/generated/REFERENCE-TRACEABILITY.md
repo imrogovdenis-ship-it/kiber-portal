@@ -5,7 +5,7 @@ Desktop: `docs/source/reference-desktop-v9.html`. Mobile: `docs/source/reference
 
 | Review ID | ID | Desktop locator | Mobile locator |
 |---|---|---|---|
-| 01 | `header` | `data-rv="01 · HEADER"` / `.site-header` | `data-rv="01"` / `.site-header` |
+| 01 | `site-header` | `data-rv="01 · HEADER"` / `.site-header` | `data-rv="01"` / `.site-header` |
 | 02 | `home-hero` | `data-rv="02 · HOME HERO"` / `.home-hero` | `data-rv="02"` / `.home-hero` |
 | 03 | `gosha-quote` | `data-rv="03 · KIBER GOSHA QUOTE"` / `.gosha-quote` | `data-rv="03"` / `.gosha-quote` |
 | 04 | `collection-cards` | `data-rv="04 · COLLECTION CARDS"` / `.collection-section` | `data-rv="04"` / `.collection-section` |
@@ -37,5 +37,5 @@ Desktop: `docs/source/reference-desktop-v9.html`. Mobile: `docs/source/reference
 | 30 | `contact-modal` | `data-rv="30 · CONTACT MODAL"` / `.modal` | `id="contact-modal"` / `.modal` |
 | 31 | `lead-form` | `data-rv="31 · LEAD FORM"` / `.lead-form` | `data-rv="31"` / `.lead-form` |
 | 32 | `cookie-banner` | `data-rv="32 · COOKIE BANNER"` / `.cookie-banner` | `id="cookie-banner"` / `.cookie-banner` |
-| 33 | `footer` | `data-rv="33 · FOOTER"` / `.site-footer` | `data-rv="33"` / `.site-footer` |
+| 33 | `site-footer` | `data-rv="33 · FOOTER"` / `.site-footer` | `data-rv="33"` / `.site-footer` |
 | 34 | `cta-questions` | `data-rv="34 · CTA QUESTIONS (Остались вопросы?)"` / `.cta-questions` | `data-rv="34"` / `.cta-questions` |

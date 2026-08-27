@@ -1,0 +1,40 @@
+schema_version: 1
+id: site-header
+review_id: "01"
+name: Site Header
+status: pilot
+component: src/components/layout/Header.astro
+used_in: [all-public-pages, design-review]
+variants: [default]
+tokens:
+  surface: "{color.surface}"
+  foreground: "{color.ink.heading}"
+  muted: "{color.text.muted}"
+  action: "{color.action.rest}"
+  focus: "{color.badge}"
+content_contract:
+  required: [logo_label, nav, phone, cta]
+  optional: []
+  rules:
+    - navigation contains no more than seven primary destinations
+    - phone remains a real tel link and CTA remains a real link without JavaScript dependency
+responsive:
+  sm: { navigation: disclosure, sticky: true }
+  md: { navigation: disclosure, sticky: true }
+  lg: { navigation: inline, sticky: true }
+  xl: { navigation: inline, sticky: true }
+accessibility:
+  landmark: banner
+  image_alt_required: false
+  full_card_link: false
+  focus_visible: true
+analytics:
+  events: [phone_click, contact_click]
+fixtures: [default, long-content, minimal, missing-optional, mobile]
+traceability:
+  - source: docs/source/reference-desktop-v9.html
+    locator: 'data-rv="01 · HEADER"; .site-header'
+  - source: docs/source/reference-mobile-v3.html
+    locator: 'data-rv="01"; .site-header'
+  - source: docs/DESIGN-SYSTEM-TZ.md
+    locator: Header/Footer/Breadcrumbs
