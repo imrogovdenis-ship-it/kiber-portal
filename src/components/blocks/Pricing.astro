@@ -26,7 +26,7 @@ const { title, disclaimer, items } = Astro.props as PricingData;
   .robot-pricing h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: 1; }
   .robot-pricing header p, .robot-pricing__card p:not(.robot-pricing__price) { color: var(--kp-muted); }
   .robot-pricing__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--kp-card-gap); }
-  .robot-pricing__card { display: grid; gap: var(--kp-card-gap); min-width: 0; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 20.25rem; background: var(--kp-surface); }
+  .robot-pricing__card { display: grid; gap: var(--kp-card-gap); min-width: 0; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.5rem; background: var(--kp-surface); }
   .robot-pricing__card:focus-within { outline: 0.1875rem solid var(--kp-orange); outline-offset: 0.1875rem; }
   .robot-pricing__price { color: var(--kp-blue); font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); font-weight: var(--kp-heading-weight); }
   @media (min-width: 75em) { .robot-pricing__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
