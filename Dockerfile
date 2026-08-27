@@ -40,6 +40,7 @@ ENV IMAGE_VERSION=$IMAGE_VERSION
 ENV BUILD_DATE=$BUILD_DATE
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.redirects.conf /etc/nginx/includes/redirects.conf
 COPY --from=build /workspace/dist /usr/share/nginx/html
 
 EXPOSE 8080
