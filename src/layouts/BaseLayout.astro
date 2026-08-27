@@ -21,12 +21,13 @@ interface Props {
 }
 
 const { title, description, canonical, noindex = false, image, breadcrumbs = [], chrome = true } = Astro.props;
+const canonicalUrl = canonical ?? (Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined);
 ---
 
 <!doctype html>
 <html lang="ru">
   <head>
-    <SeoHead {title} {description} {canonical} {noindex} {image} />
+    <SeoHead {title} {description} canonical={canonicalUrl} {noindex} {image} />
     <slot name="head" />
   </head>
   <body>
