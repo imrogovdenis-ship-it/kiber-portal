@@ -39,7 +39,7 @@ const faq = {
     { name: robot.identity.name, url: `/robots/${robot.slug}/` },
   ]}
 >
-  <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-robot-slug={robot.slug}>
+  <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-robot-slug={robot.slug} data-state="ready" aria-live="polite">
     <section class="robot-page__hero" data-vertical-step="robot-detail">
       <div class="robot-page__copy">
         <p>{robot.identity.manufacturer} / {robot.identity.model}</p>
@@ -59,6 +59,11 @@ const faq = {
       <article><h2>Формат</h2><p>Робот работает с сопровождающим специалистом.</p></article>
       <article><h2>Сценарии</h2><p>{robot.service.scenarios.join(', ')}</p></article>
       <article><h2>Подтверждение</h2><p>Нужна проверка менеджера перед финальным предложением.</p></article>
+    </section>
+
+    <section class="robot-page__empty" data-state="empty" aria-label="Дополнительные материалы">
+      <h2>Нет дополнительных материалов</h2>
+      <p>Пока достаточно базового описания, стоимости и вопросов для первого запроса.</p>
     </section>
 
     <Pricing {...pricing} />
@@ -82,10 +87,10 @@ const faq = {
   .robot-page__media { overflow: hidden; border-radius: 1.5rem; background: var(--kp-sky); }
   .robot-page__media img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; }
   .robot-page__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--kp-card-gap); }
-  .robot-page__facts article { display: grid; gap: var(--kp-card-gap); padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.5rem; background: var(--kp-surface); }
-  .robot-page__facts h2, .robot-page__facts p { margin: 0; }
-  .robot-page__facts h2 { font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); }
-  .robot-page__facts p { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .robot-page__facts article, .robot-page__empty { display: grid; gap: var(--kp-card-gap); padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.5rem; background: var(--kp-surface); }
+  .robot-page__facts h2, .robot-page__facts p, .robot-page__empty h2, .robot-page__empty p { margin: 0; }
+  .robot-page__facts h2, .robot-page__empty h2 { font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); }
+  .robot-page__facts p, .robot-page__empty p { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
   .robot-page__marker { color: var(--kp-muted); }
   @media (min-width: 60em) { .robot-page__hero { grid-template-columns: 1fr .75fr; } }
   @media (max-width: 59.9375rem) { .robot-page__facts { grid-template-columns: 1fr; } }
