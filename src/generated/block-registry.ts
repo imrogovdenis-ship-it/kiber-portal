@@ -75,11 +75,11 @@ export const blockRegistry = [
       "traceability": [
         {
           "source": "docs/source/reference-desktop-v9.html",
-          "locator": "01 HEADER"
+          "locator": "data-rv=\"01 · HEADER\"; .site-header"
         },
         {
           "source": "docs/source/reference-mobile-v3.html",
-          "locator": "01 HEADER"
+          "locator": "data-rv=\"01\"; .site-header"
         },
         {
           "source": "docs/DESIGN-SYSTEM-TZ.md",
@@ -279,13 +279,18 @@ export const blockRegistry = [
       "tokens": {
         "surface": "{robot-card.surface}",
         "image_radius": "{robot-card.image.radius}",
+        "image_object_position": "{robot-card.image.object-position}",
+        "image_hover_scale": "{robot-card.image.hover-scale}",
         "content_gap": "{robot-card.content.gap}",
+        "content_padding_block_start": "{robot-card.content.padding-block-start}",
+        "content_padding_inline": "{robot-card.content.padding-inline}",
         "title_color": "{robot-card.title.color}",
         "title_typography": "{typography.title-s.family}",
         "price_color": "{robot-card.price.color}",
         "description_color": "{robot-card.description.color}",
         "category_color": "{robot-card.category.color}",
         "badge_background": "{robot-card.badge.background}",
+        "badge_inset": "{robot-card.badge.inset}",
         "focus_color": "{robot-card.focus.color}"
       },
       "content_contract": {
@@ -346,6 +351,14 @@ export const blockRegistry = [
         "mobile"
       ],
       "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"05 · ROBOT CARD (каталог)\"; .robot-card"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"05\"; .robot-card"
+        },
         {
           "source": "docs/source/BLOCK-SPEC-SOURCE.csv",
           "locator": "row-05"
@@ -549,11 +562,11 @@ export const blockRegistry = [
       "traceability": [
         {
           "source": "docs/source/reference-desktop-v9.html",
-          "locator": "10 BREADCRUMBS"
+          "locator": "data-rv=\"10 · BREADCRUMBS\"; .breadcrumbs"
         },
         {
           "source": "docs/source/reference-mobile-v3.html",
-          "locator": "10 BREADCRUMBS"
+          "locator": "data-rv=\"10\"; .breadcrumbs"
         },
         {
           "source": "docs/DESIGN-SYSTEM-TZ.md",
@@ -760,11 +773,11 @@ export const blockRegistry = [
       "traceability": [
         {
           "source": "docs/source/reference-desktop-v9.html",
-          "locator": "33 FOOTER"
+          "locator": "data-rv=\"33 · FOOTER\"; .site-footer"
         },
         {
           "source": "docs/source/reference-mobile-v3.html",
-          "locator": "33 FOOTER"
+          "locator": "data-rv=\"33\"; .site-footer"
         },
         {
           "source": "docs/DESIGN-SYSTEM-TZ.md",

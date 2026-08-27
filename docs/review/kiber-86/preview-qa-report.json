@@ -1,0 +1,57 @@
+{
+  "baseUrl": "https://alex-kiber-pr8-preview.38.180.37.42.sslip.io",
+  "viewports": [
+    {
+      "width": 375,
+      "status": 200,
+      "metaRobots": "noindex, nofollow",
+      "hasHorizontalOverflow": false,
+      "fixtureCount": 0,
+      "robotCards": 0,
+      "focusOutline": "3px solid rgb(0, 136, 255)",
+      "screenshot": "/home/alex/kiber-86-qa/screenshots/kiber-86-design-review-375.png"
+    },
+    {
+      "width": 768,
+      "status": 200,
+      "metaRobots": "noindex, nofollow",
+      "hasHorizontalOverflow": false,
+      "fixtureCount": 0,
+      "robotCards": 0,
+      "focusOutline": "3px solid rgb(0, 136, 255)",
+      "screenshot": "/home/alex/kiber-86-qa/screenshots/kiber-86-design-review-768.png"
+    },
+    {
+      "width": 1024,
+      "status": 200,
+      "metaRobots": "noindex, nofollow",
+      "hasHorizontalOverflow": false,
+      "fixtureCount": 0,
+      "robotCards": 0,
+      "focusOutline": "3px solid rgb(0, 136, 255)",
+      "screenshot": "/home/alex/kiber-86-qa/screenshots/kiber-86-design-review-1024.png"
+    },
+    {
+      "width": 1440,
+      "status": 200,
+      "metaRobots": "noindex, nofollow",
+      "hasHorizontalOverflow": false,
+      "fixtureCount": 0,
+      "robotCards": 0,
+      "focusOutline": "3px solid rgb(0, 136, 255)",
+      "screenshot": "/home/alex/kiber-86-qa/screenshots/kiber-86-design-review-1440.png"
+    }
+  ],
+  "cssAssets": [
+    {
+      "assetPath": "/_astro/BaseLayout.CKcgtrvl.css",
+      "bytes": 5106,
+      "hasKiber86Token": true
+    },
+    {
+      "assetPath": "/_astro/RobotCard.D6WGjvQp.css",
+      "bytes": 4136,
+      "hasKiber86Token": true
+    }
+  ]
+}

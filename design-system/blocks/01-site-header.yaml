@@ -33,8 +33,8 @@ analytics:
 fixtures: [default, long-content, minimal, missing-optional, mobile]
 traceability:
   - source: docs/source/reference-desktop-v9.html
-    locator: 01 HEADER
+    locator: 'data-rv="01 · HEADER"; .site-header'
   - source: docs/source/reference-mobile-v3.html
-    locator: 01 HEADER
+    locator: 'data-rv="01"; .site-header'
   - source: docs/DESIGN-SYSTEM-TZ.md
     locator: Header/Footer/Breadcrumbs

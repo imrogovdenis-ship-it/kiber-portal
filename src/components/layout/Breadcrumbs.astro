@@ -8,7 +8,7 @@ const jsonLd = breadcrumbJsonLd(items);
 
 {items.length > 1 && (
   <>
-    <nav class="breadcrumbs" data-block="10-breadcrumbs" aria-label="Хлебные крошки">
+    <nav class="breadcrumbs" data-block="10-breadcrumbs" data-rv="10" aria-label="Хлебные крошки">
       <ol class="breadcrumbs__list">
         {items.map((item, index) => (
           <li class="breadcrumbs__item" data-position={index + 1}>

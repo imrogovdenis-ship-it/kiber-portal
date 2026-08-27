@@ -26,8 +26,38 @@ GitHub Actions выполняет проверки, а Coolify — единст�
 | `DEPLOY_ENV` | `production` | `preview` | yes | optional |
 | `DESIGN_REVIEW_ENABLED` | `false` | `true` | yes | optional |
 | `PUBLIC_ANALYTICS_PROVIDER` | утверждённый provider | `disabled` | yes | no |
+| `BUILD_SHA` | commit SHA | commit SHA | yes | optional |
+| `IMAGE_VERSION` | `sha-<shortSha>` | `sha-<shortSha>` | yes | optional |
+| `BUILD_DATE` | UTC ISO timestamp | UTC ISO timestamp | yes | optional |
 
 Preview variables задаются в отдельной группе **Preview Deployment Environment Variables**. Production secrets, analytics IDs и реальные lead destinations туда не копируются.
+
+## Versioned Docker images
+
+Каждый staging/release image должен быть сопоставим с Git commit и пригоден для rollback.
+
+Обязательный contract:
+
+- image tag: `sha-<shortSha>`;
+- build arg `BUILD_SHA=<fullGitSha>`;
+- build arg `IMAGE_VERSION=sha-<shortSha>`;
+- OCI label `org.opencontainers.image.revision=<fullGitSha>`;
+- OCI label `org.opencontainers.image.version=sha-<shortSha>`;
+- deployment label `deployed.commit=<fullGitSha>`;
+- deployment label `deployed.version=sha-<shortSha>`.
+
+Локальная/CI команда сборки:
+
+```sh
+IMAGE_REPOSITORY=alex-kiber-staging \
+DEPLOY_ENV=preview \
+DESIGN_REVIEW_ENABLED=true \
+npm run docker:build:versioned
+```
+
+Для rollback выбирать image по SHA/tag, а не по mutable `latest`.
+
+Подробный runbook: `docs/review/kiber-25/versioned-docker-images.md`.
 
 ## Pull request preview
 

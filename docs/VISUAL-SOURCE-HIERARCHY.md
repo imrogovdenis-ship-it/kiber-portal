@@ -1,7 +1,7 @@
 # Иерархия визуальных источников
 
 **Статус:** принято.  
-**Linear:** KIBER-27 / KP-040.  
+**Linear:** KIBER-27 / KP-040; KIBER-86 / KP-041A.  
 **Архитектурное решение:** `docs/DECISIONS/003-controlled-rebuild-and-source-hierarchy.md`.
 
 ## Назначение
@@ -10,7 +10,7 @@
 
 ## Обязательный порядок
 
-1. **Утверждённый дизайн и решения владельца** — финальные макеты, дизайн-ревью и принятые reference screenshots.
+1. **Утверждённый дизайн и решения владельца** — финальные макеты, дизайн-ревью и два принятых базовых HTML-референса: `docs/source/reference-desktop-v9.html` и `docs/source/reference-mobile-v3.html`.
 2. **Машинно-читаемая дизайн-система в Git** — `design-system/tokens/**`, `design-system/blocks/**`, `design-system/recipes/**`, fixtures и generated registry.
 3. **Корневая Astro-реализация** — `src/components/**`, `src/layouts/**`, `src/pages/**` и `src/styles/**`; компонент отвечает за DOM, accessibility и поведение.
 4. **Live Tilda** — временный reference для parity до cutover, если более высокий источник не определил решение.
@@ -24,6 +24,14 @@
 
 `app/` не является целевым runtime. Он используется только как migration source до переноса полезного поведения и подтверждения parity.
 
+## Обязательная роль HTML-референсов
+
+По решению владельца от 2026-08-26 файлы `reference-desktop-v9.html` и `reference-mobile-v3.html` являются визуальной основой блоков 01–34, а не архивным evidence. Машинная карта секций и селекторов хранится в `design-system/references/visual-source-map.yaml`; её человекочитаемое представление генерируется в `docs/generated/REFERENCE-TRACEABILITY.md`.
+
+Каждый block spec со статусом `pilot` или `stable` обязан содержать прямую traceability на оба HTML-файла с точным marker и selector из карты. Validator проверяет наличие всех 34 секций в исходных HTML и не допускает дрейф locators.
+
+HTML-референс определяет визуальную композицию, размеры, порядок визуальных элементов и responsive-поведение. Явное более позднее решение владельца или design-review delta имеет больший приоритет. Legal, accessibility, security и подтверждённые business rules сохраняются даже тогда, когда их нет в визуальном макете; такое отклонение документируется в parity-аудите.
+
 ## Матрица конфликтов
 
 | Конфликт | Побеждает | Обязательное действие |
@@ -35,6 +43,7 @@
 | live Tilda vs export | live Tilda | export оставить evidence only |
 | визуальное предпочтение vs legal/business rule | legal/business rule | адаптировать дизайн без нарушения правила |
 | screenshot vs YAML | последний явно принятый источник | указать дату и статус screenshot в traceability |
+| принятый HTML reference vs block spec/component | HTML reference для визуальных свойств | обновить tokens/spec/component или зарегистрировать явный override/question |
 
 ## Требования к визуальному PR
 
@@ -53,6 +62,7 @@ PR обязан указать:
 ## Правила для Hermes
 
 - Не выводить решение из live/export, если существует принятый spec или review.
+- Перед изменением блока найти его locators в `visual-source-map.yaml` и сверить desktop и mobile HTML.
 - Не создавать постоянный код внутри legacy `app/`.
 - Не менять `review_id` после утверждения легенды.
 - При неопределённости записать вопрос в `OPEN-QUESTIONS.md`, а не угадывать значение.

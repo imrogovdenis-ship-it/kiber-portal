@@ -34,6 +34,7 @@ export const designTokens = {
   "dimension.space.14": "14px",
   "dimension.space.16": "16px",
   "dimension.space.18": "18px",
+  "dimension.space.2": "2px",
   "dimension.space.20": "20px",
   "dimension.space.22": "22px",
   "dimension.space.24": "24px",
@@ -41,20 +42,23 @@ export const designTokens = {
   "dimension.space.32": "32px",
   "dimension.space.34": "34px",
   "dimension.space.36": "36px",
+  "dimension.space.4": "4px",
   "dimension.space.40": "40px",
   "dimension.space.41": "41px",
   "dimension.space.44": "44px",
   "dimension.space.48": "48px",
   "dimension.space.5": "5px",
   "dimension.space.52": "52px",
+  "dimension.space.6": "6px",
   "dimension.space.60": "60px",
   "dimension.space.64": "64px",
   "dimension.space.72": "72px",
+  "dimension.space.8": "8px",
   "dimension.space.9": "9px",
   "dimension.space.92": "92px",
   "dimension.zero": "0px",
   "font.family.body": "Montserrat, Arial, sans-serif",
-  "font.family.display": "Gilroy, Arial, sans-serif",
+  "font.family.display": "Montserrat, Arial, sans-serif",
   "font.weight.bold": 700,
   "font.weight.medium": 500,
   "font.weight.semibold": 600,
@@ -75,11 +79,18 @@ export const designTokens = {
   "letter-spacing.normal": "0em",
   "letter-spacing.wide": "0.1em",
   "line-height.1": 1,
+  "line-height.11": 1.1,
   "line-height.12": 1.2,
+  "line-height.13": 1.3,
+  "line-height.135": 1.35,
   "line-height.14": 1.4,
+  "line-height.145": 1.45,
   "line-height.16": 1.6,
   "messenger.telegram": "#229ed9",
   "messenger.whatsapp": "#25d366",
+  "motion.duration.normal": "300ms",
+  "motion.easing.standard": "ease-in-out",
+  "motion.scale.subtle": 1.03,
   "neutral.black": "#000000",
   "neutral.grey.200": "#e7e7e7",
   "neutral.grey.400": "#a1a2b8",
@@ -90,45 +101,104 @@ export const designTokens = {
   "robot-card.badge.background": "#ff843a",
   "robot-card.badge.font-size": {
     "sm": "9px",
-    "md": "14px",
+    "md": "9px",
     "lg": "14px",
     "xl": "14px"
   },
   "robot-card.badge.foreground": "#ffffff",
+  "robot-card.badge.inset": {
+    "sm": "10px",
+    "md": "10px",
+    "lg": "16px",
+    "xl": "16px"
+  },
+  "robot-card.badge.line-height": {
+    "sm": 1.1,
+    "md": 1.1,
+    "lg": 1.2,
+    "xl": 1.2
+  },
+  "robot-card.badge.padding": {
+    "sm": "4px",
+    "md": "4px",
+    "lg": "8px",
+    "xl": "8px"
+  },
   "robot-card.badge.size": {
     "sm": "48px",
-    "md": "92px",
+    "md": "48px",
     "lg": "92px",
     "xl": "92px"
   },
+  "robot-card.badge.weight": 500,
   "robot-card.category.color": "#a1a2b8",
-  "robot-card.category.size": "10px",
-  "robot-card.content.gap": "10px",
+  "robot-card.category.line-height": 1,
+  "robot-card.category.size": {
+    "sm": "9px",
+    "md": "9px",
+    "lg": "10px",
+    "xl": "10px"
+  },
+  "robot-card.content.gap": {
+    "sm": "6px",
+    "md": "6px",
+    "lg": "12px",
+    "xl": "12px"
+  },
+  "robot-card.content.padding-block-start": {
+    "sm": "12px",
+    "md": "12px",
+    "lg": "24px",
+    "xl": "24px"
+  },
+  "robot-card.content.padding-inline": {
+    "sm": "2px",
+    "md": "2px",
+    "lg": "8px",
+    "xl": "8px"
+  },
   "robot-card.description.color": "#797a91",
+  "robot-card.description.line-height": {
+    "sm": 1.3,
+    "md": 1.3,
+    "lg": 1.45,
+    "xl": 1.45
+  },
   "robot-card.description.size": {
     "sm": "10px",
-    "md": "13px",
+    "md": "10px",
     "lg": "13px",
     "xl": "13px"
   },
+  "robot-card.description.weight": 600,
   "robot-card.focus.color": "#0088ff",
   "robot-card.focus.width": "3px",
+  "robot-card.image.hover-duration": "300ms",
+  "robot-card.image.hover-easing": "ease-in-out",
+  "robot-card.image.hover-scale": 1.03,
+  "robot-card.image.object-position": "center top",
   "robot-card.image.radius": "16px",
   "robot-card.price.color": "#36323e",
+  "robot-card.price.line-height": 1.4,
   "robot-card.price.size": {
     "sm": "14px",
-    "md": "16px",
+    "md": "14px",
     "lg": "16px",
     "xl": "16px"
   },
   "robot-card.surface": "#ffffff",
   "robot-card.title.color": "#36323e",
-  "robot-card.title.family": "Gilroy, Arial, sans-serif",
+  "robot-card.title.family": "Montserrat, Arial, sans-serif",
   "robot-card.title.letter-spacing": "0em",
-  "robot-card.title.line-height": 1.4,
+  "robot-card.title.line-height": {
+    "sm": 1.3,
+    "md": 1.3,
+    "lg": 1.35,
+    "xl": 1.35
+  },
   "robot-card.title.size": {
     "sm": "14px",
-    "md": "18px",
+    "md": "14px",
     "lg": "22px",
     "xl": "22px"
   },
@@ -163,7 +233,7 @@ export const designTokens = {
     "xl": "16px"
   },
   "typography.body.weight": 500,
-  "typography.heading.family": "Gilroy, Arial, sans-serif",
+  "typography.heading.family": "Montserrat, Arial, sans-serif",
   "typography.heading.letter-spacing": "0em",
   "typography.heading.line-height": 1,
   "typography.heading.size": {
@@ -183,7 +253,7 @@ export const designTokens = {
     "xl": "14px"
   },
   "typography.label.weight": 600,
-  "typography.title-s.family": "Gilroy, Arial, sans-serif",
+  "typography.title-s.family": "Montserrat, Arial, sans-serif",
   "typography.title-s.letter-spacing": "0em",
   "typography.title-s.line-height": 1.4,
   "typography.title-s.size": {

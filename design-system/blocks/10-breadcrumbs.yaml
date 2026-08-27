@@ -31,6 +31,6 @@ analytics:
   events: [breadcrumb_click]
 fixtures: [default, long-content, minimal, missing-optional, mobile]
 traceability:
-  - { source: docs/source/reference-desktop-v9.html, locator: 10 BREADCRUMBS }
-  - { source: docs/source/reference-mobile-v3.html, locator: 10 BREADCRUMBS }
+  - { source: docs/source/reference-desktop-v9.html, locator: 'data-rv="10 · BREADCRUMBS"; .breadcrumbs' }
+  - { source: docs/source/reference-mobile-v3.html, locator: 'data-rv="10"; .breadcrumbs' }
   - { source: docs/DESIGN-SYSTEM-TZ.md, locator: BreadcrumbList }

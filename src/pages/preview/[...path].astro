@@ -48,18 +48,6 @@ const specUrl = `https://github.com/imrogovdenis-ship-it/kiber-portal/blob/main/
     gap: var(--kp-grid-gap);
   }
 
-  @media (min-width: 60em) {
-    .review__grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-
-  @media (min-width: 75em) {
-    .review__grid {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-
   .review__case {
     display: grid;
     align-content: start;
@@ -70,7 +58,19 @@ const specUrl = `https://github.com/imrogovdenis-ship-it/kiber-portal/blob/main/
   .review__case > header {
     display: grid;
     min-width: 0;
-    overflow-wrap: anywhere;
     color: var(--kp-muted);
+    overflow-wrap: anywhere;
+  }
+
+  @media (min-width: 60em) {
+    .review__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 75em) {
+    .review__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
   }
 </style>

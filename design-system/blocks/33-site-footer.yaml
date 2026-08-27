@@ -31,6 +31,6 @@ analytics:
   events: [phone_click, contact_click]
 fixtures: [default, long-content, minimal, missing-optional, mobile]
 traceability:
-  - { source: docs/source/reference-desktop-v9.html, locator: 33 FOOTER }
-  - { source: docs/source/reference-mobile-v3.html, locator: 33 FOOTER }
+  - { source: docs/source/reference-desktop-v9.html, locator: 'data-rv="33 · FOOTER"; .site-footer' }
+  - { source: docs/source/reference-mobile-v3.html, locator: 'data-rv="33"; .site-footer' }
   - { source: docs/DESIGN-SYSTEM-TZ.md, locator: Header/Footer/Breadcrumbs }

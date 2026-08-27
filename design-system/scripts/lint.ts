@@ -7,6 +7,7 @@ const roots = [
   'public',
   'design-system/blocks',
   'design-system/fixtures',
+  'design-system/references',
   'design-system/recipes',
   'design-system/tokens/semantic',
   'design-system/tokens/component',

@@ -44,8 +44,7 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
 
 <style>
   .robot-card {
-    display: grid;
-    gap: var(--kp-robot-card-content-gap);
+    display: block;
     min-width: 0;
     color: var(--kp-robot-card-title-color);
   }
@@ -63,12 +62,21 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: var(--kp-robot-card-image-object-position);
+  }
+
+  .robot-card__image {
+    transition: transform var(--kp-robot-card-image-hover-duration) var(--kp-robot-card-image-hover-easing);
+  }
+
+  .robot-card:hover .robot-card__image {
+    transform: scale(var(--kp-robot-card-image-hover-scale));
   }
 
   .robot-card__placeholder {
     display: grid;
     place-items: center;
-    background: var(--kp-sky);
+    background: var(--kp-robot-card-surface);
     color: var(--kp-blue);
     font-family: var(--kp-font-heading);
     font-weight: var(--kp-heading-weight);
@@ -76,23 +84,28 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
 
   .robot-card__badge {
     position: absolute;
-    inset-block-start: var(--kp-card-gap);
-    inset-inline-end: var(--kp-card-gap);
+    inset-block-start: var(--kp-robot-card-badge-inset);
+    inset-inline-end: var(--kp-robot-card-badge-inset);
     display: grid;
     width: var(--kp-robot-card-badge-size);
     aspect-ratio: 1;
     place-items: center;
     border-radius: var(--kp-robot-card-badge-size);
+    padding: var(--kp-robot-card-badge-padding);
     background: var(--kp-robot-card-badge-background);
     color: var(--kp-robot-card-badge-foreground);
     font-family: var(--kp-font-body);
     font-size: var(--kp-robot-card-badge-font-size);
-    font-weight: var(--kp-label-weight);
+    font-weight: var(--kp-robot-card-badge-weight);
+    line-height: var(--kp-robot-card-badge-line-height);
+    text-align: center;
   }
 
   .robot-card__content {
     display: grid;
     gap: var(--kp-robot-card-content-gap);
+    min-width: 0;
+    padding: var(--kp-robot-card-content-padding-block-start) var(--kp-robot-card-content-padding-inline) 0;
   }
 
   .robot-card__category,
@@ -100,9 +113,7 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
   .robot-card__description,
   .robot-card__price,
   .robot-card__disclaimer {
-    min-width: 0;
     margin: 0;
-    overflow-wrap: anywhere;
   }
 
   .robot-card__category {
@@ -110,7 +121,7 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
     font-size: var(--kp-robot-card-category-size);
     font-weight: var(--kp-label-weight);
     letter-spacing: var(--kp-label-letter-spacing);
-    line-height: var(--kp-label-line-height);
+    line-height: var(--kp-robot-card-category-line-height);
     text-transform: uppercase;
   }
 
@@ -129,11 +140,22 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
     font-size: var(--kp-robot-card-description-size);
   }
 
+  .robot-card__description {
+    font-weight: var(--kp-robot-card-description-weight);
+    line-height: var(--kp-robot-card-description-line-height);
+  }
+
   .robot-card__price {
     color: var(--kp-robot-card-price-color);
     font-family: var(--kp-font-heading);
     font-size: var(--kp-robot-card-price-size);
     font-weight: var(--kp-heading-weight);
+    line-height: var(--kp-robot-card-price-line-height);
+  }
+
+  .robot-card__price-group {
+    display: grid;
+    gap: var(--kp-robot-card-content-gap);
   }
 
   .robot-card__disclaimer {
@@ -151,5 +173,15 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
   .robot-card__link:focus-visible {
     outline: var(--kp-robot-card-focus-width) solid var(--kp-robot-card-focus-color);
     outline-offset: var(--kp-card-gap);
+  }
+
+  .robot-card__category,
+  .robot-card__title,
+  .robot-card__description,
+  .robot-card__price,
+  .robot-card__disclaimer,
+  .robot-card__link {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 </style>

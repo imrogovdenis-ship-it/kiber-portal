@@ -5,6 +5,7 @@ import { blockSchema } from '../schemas/block.schema';
 import { fixtureSchema } from '../schemas/fixture.schema';
 import { recipeSchema } from '../schemas/recipe.schema';
 import { tokenFileSchema } from '../schemas/tokens.schema';
+import { visualReferenceMapSchema, type VisualReferenceMap } from '../schemas/visual-reference.schema';
 import { readYaml, repoPath, root, tokenReferences, yamlFiles } from './_shared';
 
 const errors: string[] = [];
@@ -45,6 +46,43 @@ try {
   errors.push(`Visual source hierarchy validation failed: ${String(error)}`);
 }
 
+let visualReferences: VisualReferenceMap | undefined;
+
+try {
+  visualReferences = visualReferenceMapSchema.parse(await readYaml(resolve(root, 'design-system/references/visual-source-map.yaml')));
+  const legend = await readFile(resolve(root, '.github/hermes/BLOCK-LEGEND.md'), 'utf8');
+  const seenReviewIds = new Set<string>();
+  const seenBlockIds = new Set<string>();
+  const sourceContents = new Map<'desktop' | 'mobile', string>();
+
+  for (const sourceName of ['desktop', 'mobile'] as const) {
+    const source = visualReferences.sources[sourceName];
+    sourceContents.set(sourceName, await readFile(resolve(root, source.path), 'utf8'));
+  }
+
+  for (const block of visualReferences.blocks) {
+    if (seenReviewIds.has(block.review_id)) errors.push(`Duplicate visual reference review_id ${block.review_id}`);
+    if (seenBlockIds.has(block.id)) errors.push(`Duplicate visual reference block id ${block.id}`);
+    seenReviewIds.add(block.review_id);
+    seenBlockIds.add(block.id);
+
+    const legendRow = `| ${block.review_id} | \`${block.id}\` |`;
+    if (!legend.includes(legendRow)) errors.push(`Visual reference ${block.review_id}/${block.id} is missing from BLOCK-LEGEND.md`);
+
+    for (const sourceName of ['desktop', 'mobile'] as const) {
+      const content = sourceContents.get(sourceName)!;
+      const locator = block[sourceName];
+      if (!content.includes(locator.marker)) errors.push(`${sourceName} reference is missing marker ${locator.marker} for ${block.review_id}/${block.id}`);
+      if (!content.includes(locator.selector)) errors.push(`${sourceName} reference is missing selector ${locator.selector} for ${block.review_id}/${block.id}`);
+    }
+  }
+
+  const expectedReviewIds = Array.from({ length: 34 }, (_, index) => String(index + 1).padStart(2, '0'));
+  for (const reviewId of expectedReviewIds) if (!seenReviewIds.has(reviewId)) errors.push(`Visual reference map is missing review_id ${reviewId}`);
+} catch (error) {
+  errors.push(`Visual reference map validation failed: ${String(error)}`);
+}
+
 for (const file of await yamlFiles(resolve(root, 'design-system/tokens'))) {
   try {
     const parsed = tokenFileSchema.parse(await readYaml(file));
@@ -83,6 +121,20 @@ for (const file of await yamlFiles(resolve(root, 'design-system/blocks'))) {
     await access(resolve(root, block.component));
     for (const ref of tokenReferences(block.tokens)) if (!tokenNames.has(ref)) errors.push(`Unknown token ${ref} in ${repoPath(file)}`);
     for (const event of block.analytics.events) if (!analyticsNames.has(event)) errors.push(`Unknown analytics event ${event} in ${repoPath(file)}`);
+    if (visualReferences) {
+      const visualBlock = visualReferences.blocks.find((candidate) => candidate.review_id === block.review_id && candidate.id === block.id);
+      if (!visualBlock) {
+        errors.push(`Missing visual reference mapping for ${block.review_id}/${block.id}`);
+      } else {
+        for (const sourceName of ['desktop', 'mobile'] as const) {
+          const source = visualReferences.sources[sourceName].path;
+          const locator = `${visualBlock[sourceName].marker}; ${visualBlock[sourceName].selector}`;
+          if (!block.traceability.some((entry) => entry.source === source && entry.locator === locator)) {
+            errors.push(`${repoPath(file)} is missing exact ${sourceName} reference traceability: ${source} -> ${locator}`);
+          }
+        }
+      }
+    }
     const fixtureDir = resolve(root, 'design-system/fixtures', block.id);
     const parsedFixtures = await Promise.all((await yamlFiles(fixtureDir)).map(async (fixtureFile) => fixtureSchema.parse(await readYaml(fixtureFile))));
     const names = new Set(parsedFixtures.map((fixture) => basename(fixture.id.replace(`${block.id}-`, ''))));
@@ -112,4 +164,4 @@ for (const file of await yamlFiles(resolve(root, 'design-system/recipes'))) {
 }
 
 if (errors.length) throw new Error(`Design-system validation failed:\n- ${errors.join('\n- ')}`);
-console.log(`Validated source hierarchy, ${tokenNames.size} tokens, ${blocks.length} block, ${analyticsNames.size} analytics event.`);
+console.log(`Validated source hierarchy, 34 visual reference mappings, ${tokenNames.size} tokens, ${blocks.length} block, ${analyticsNames.size} analytics event.`);

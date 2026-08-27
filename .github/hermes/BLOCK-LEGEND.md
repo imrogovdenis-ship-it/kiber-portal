@@ -4,7 +4,7 @@
 
 | № | ID | Название |
 |---|---|---|
-| 01 | `header` | Header |
+| 01 | `site-header` | Header |
 | 02 | `home-hero` | Home Hero |
 | 03 | `gosha-quote` | Kiber Gosha Quote |
 | 04 | `collection-cards` | Collection Cards |
@@ -36,7 +36,7 @@
 | 30 | `contact-modal` | Contact Modal |
 | 31 | `lead-form` | Lead Form |
 | 32 | `cookie-banner` | Cookie Banner |
-| 33 | `footer` | Footer |
+| 33 | `site-footer` | Footer |
 | 34 | `cta-questions` | CTA Questions |
 
 Mobile Sticky CTA из строки 35 исходной таблицы — состояние/дочерний UI карточки робота, не самостоятельный блок легенды.

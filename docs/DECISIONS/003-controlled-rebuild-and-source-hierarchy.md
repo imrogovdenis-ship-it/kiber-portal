@@ -3,7 +3,7 @@
 - Статус: принято
 - Дата: 2026-08-26
 - Принято: 2026-08-26, решение владельца начать консолидацию PR №8/№9 с одной архитектурой
-- Linear: KIBER-14 / KP-013, KIBER-15 / KP-020, KIBER-27 / KP-040
+- Linear: KIBER-14 / KP-013, KIBER-15 / KP-020, KIBER-27 / KP-040, KIBER-86 / KP-041A
 - Дополняет: ADR-001, ADR-002
 
 ## Контекст
@@ -55,7 +55,7 @@
 
 При конфликте применяется следующий порядок:
 
-1. утверждённые материалы и дизайн-ревью Александра;
+1. утверждённые материалы и дизайн-ревью Александра, включая `reference-desktop-v9.html` и `reference-mobile-v3.html` как обязательную визуальную основу блоков 01–34;
 2. `design-system/tokens/`, block specs, Astro-компоненты и утверждённые reference screenshots;
 3. live Tilda как временный визуальный reference до cutover;
 4. Tilda export и старые audit-файлы как архивное evidence.
@@ -74,6 +74,7 @@ Live Tilda и export не могут автоматически перезапи
 | Композиция страниц | `design-system/recipes/*.yaml` | Astro pages/layouts |
 | Контент | schema-validated records в `src/content/` и `src/content.config.ts` | страницы |
 | Контакты и публичная конфигурация | typed config + разрешённые public env overrides | значения сборки |
+| Визуальная основа | `docs/source/reference-desktop-v9.html`, `docs/source/reference-mobile-v3.html`, `design-system/references/visual-source-map.yaml` | block spec traceability и generated reference table |
 | Визуальная приёмка | versioned reference screenshots | visual regression artifacts |
 | Legacy evidence | snapshot/tag, live audit и export | только сравнение/миграция |
 
