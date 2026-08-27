@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "description": "KIBER-29 redirect registry for legacy/test URLs in the controlled rebuild runtime.",
+  "redirects": [
+    {
+      "from": "/test-blok/",
+      "to": "/",
+      "status": 301,
+      "reason": "Legacy test page must not be indexable or visible as a blank route."
+    },
+    {
+      "from": "/test-blok",
+      "to": "/",
+      "status": 301,
+      "reason": "Non-trailing-slash variant of the legacy test page."
+    }
+  ]
+}
