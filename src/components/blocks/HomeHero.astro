@@ -183,13 +183,39 @@ const { eyebrow, title, lead, primary, secondary, image, stats, analytics } = As
       padding: 1.25rem 1rem 1rem;
     }
     .home-hero__title { max-width: none; }
-    .home-hero__actions { flex-direction: column; }
-    .home-hero__button { width: 100%; }
+    .home-hero__actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .home-hero__button {
+      width: auto;
+      max-width: 100%;
+      padding-inline: 1.25rem;
+    }
     .home-hero__image {
       position: relative;
       width: 100%;
-      height: 10.3125rem;
+      height: calc((100vw - (2 * var(--kp-reference-pad-x))) * 0.5625);
+      max-height: 26rem;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: var(--kp-reference-white);
     }
-    .home-hero__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-hero__image img {
+      object-fit: contain;
+      object-position: center center;
+    }
+    .home-hero__image::after { display: none; }
+    .home-hero__stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .home-hero__stats div {
+      min-width: 0;
+    }
+    .home-hero__stats dt { font-size: 1.375rem; }
+    .home-hero__stats dd {
+      overflow-wrap: anywhere;
+      font-size: 0.75rem;
+    }
   }
 </style>

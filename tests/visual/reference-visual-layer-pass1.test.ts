@@ -47,6 +47,10 @@ test('KIBER-88 imports a reference-layer CSS file with core reference primitives
   assert.match(css, /\.home-hero__card/);
   assert.match(css, /\.robot-page__hero/);
   assert.match(css, /\.robot-card__badge/);
+  assert.match(css, /min-width:\s*20rem/);
+  assert.doesNotMatch(css, /min-width:\s*31\.25rem/);
+  assert.match(css, /aspect-ratio:\s*16\s*\/\s*9/);
+  assert.match(css, /object-fit:\s*contain/);
 
   const baseLayout = text(baseLayoutPath);
   assert.match(baseLayout, /\.\.\/styles\/reference-layer\.css/);

@@ -98,7 +98,7 @@ const faq = {
 
   .robot-page__hero {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(31.25rem, 0.9fr);
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.9fr);
     gap: 2.75rem;
     align-items: center;
     padding: 3rem 0;
@@ -246,6 +246,13 @@ const faq = {
 
     .robot-page__media {
       order: -1;
+      aspect-ratio: 16 / 9;
+      border-radius: 1.5rem;
+    }
+
+    .robot-page__media img {
+      object-fit: contain;
+      object-position: center center;
     }
 
     .robot-page__actions {
@@ -253,7 +260,10 @@ const faq = {
     }
 
     .robot-page__button {
-      width: 100%;
+      width: auto;
+      max-width: 100%;
+      justify-self: start;
+      padding-inline: 1.25rem;
     }
 
     .robot-page__facts {
