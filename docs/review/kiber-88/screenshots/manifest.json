@@ -1,0 +1,169 @@
+{
+  "issue": "KIBER-88",
+  "source": "local dist after npm run ci",
+  "baseUrl": "http://127.0.0.1:4330",
+  "screenshots": [
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "firstScreen": "home__mobile-375__first-screen.png",
+      "fullPage": "home__mobile-375__full-page.png"
+    },
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "firstScreen": "home__tablet-768__first-screen.png",
+      "fullPage": "home__tablet-768__full-page.png"
+    },
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "firstScreen": "home__tablet-landscape-1024__first-screen.png",
+      "fullPage": "home__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "firstScreen": "home__desktop-1440__first-screen.png",
+      "fullPage": "home__desktop-1440__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "firstScreen": "robot-unitree-g1__mobile-375__first-screen.png",
+      "fullPage": "robot-unitree-g1__mobile-375__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "firstScreen": "robot-unitree-g1__tablet-768__first-screen.png",
+      "fullPage": "robot-unitree-g1__tablet-768__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "firstScreen": "robot-unitree-g1__tablet-landscape-1024__first-screen.png",
+      "fullPage": "robot-unitree-g1__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "firstScreen": "robot-unitree-g1__desktop-1440__first-screen.png",
+      "fullPage": "robot-unitree-g1__desktop-1440__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "firstScreen": "contacts__mobile-375__first-screen.png",
+      "fullPage": "contacts__mobile-375__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "firstScreen": "contacts__tablet-768__first-screen.png",
+      "fullPage": "contacts__tablet-768__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "firstScreen": "contacts__tablet-landscape-1024__first-screen.png",
+      "fullPage": "contacts__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "firstScreen": "contacts__desktop-1440__first-screen.png",
+      "fullPage": "contacts__desktop-1440__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "firstScreen": "lead-request__mobile-375__first-screen.png",
+      "fullPage": "lead-request__mobile-375__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "firstScreen": "lead-request__tablet-768__first-screen.png",
+      "fullPage": "lead-request__tablet-768__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "firstScreen": "lead-request__tablet-landscape-1024__first-screen.png",
+      "fullPage": "lead-request__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "firstScreen": "lead-request__desktop-1440__first-screen.png",
+      "fullPage": "lead-request__desktop-1440__full-page.png"
+    }
+  ],
+  "screenshotCount": 32,
+  "generatedAt": "2026-08-28T05:13:53.240Z"
+}

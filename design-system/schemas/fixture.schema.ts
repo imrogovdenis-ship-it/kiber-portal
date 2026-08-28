@@ -49,6 +49,7 @@ export const homeHeroDataSchema = z.object({
   lead: z.string().min(1).max(360),
   primary: ctaSchema,
   secondary: ctaSchema.optional(),
+  image: z.object({ src: z.string().min(1), alt: z.string().min(1), position: z.string().min(1).max(80).optional() }).strict().optional(),
   stats: z.array(z.object({ value: z.string().min(1).max(24), label: z.string().min(1).max(80) }).strict()).min(1).max(4),
   analytics: analyticsContactSchema,
 }).strict();
