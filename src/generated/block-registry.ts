@@ -304,19 +304,27 @@ export const blockRegistry = [
       "responsive": {
         "sm": {
           "columns": 1,
-          "stacked": true
+          "stacked": true,
+          "media_aspect_ratio": "16:9",
+          "media_fit": "contain"
         },
         "md": {
           "columns": 1,
-          "stacked": true
+          "stacked": true,
+          "media_aspect_ratio": "16:9",
+          "media_fit": "contain"
         },
         "lg": {
           "columns": 2,
-          "stacked": false
+          "stacked": false,
+          "media_aspect_ratio": "freeform",
+          "media_fit": "cover"
         },
         "xl": {
           "columns": 2,
-          "stacked": false
+          "stacked": false,
+          "media_aspect_ratio": "freeform",
+          "media_fit": "cover"
         }
       },
       "accessibility": {
@@ -1399,6 +1407,279 @@ export const blockRegistry = [
       }
     ],
     load: () => import("../components/layout/Breadcrumbs.astro"),
+  },
+  {
+    spec: {
+      "schema_version": 1,
+      "id": "robot-hero",
+      "review_id": "11",
+      "name": "Robot Detail Hero",
+      "status": "pilot",
+      "component": "src/components/blocks/RobotPageHero.astro",
+      "used_in": [
+        "robot"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": {
+        "surface": "{color.surface}",
+        "canvas": "{color.canvas}",
+        "action": "{color.action.rest}",
+        "border": "{color.border}",
+        "heading": "{typography.heading.family}",
+        "spacing": "{layout.content.padding}"
+      },
+      "content_contract": {
+        "required": [
+          "breadcrumbs",
+          "taxonomy",
+          "title",
+          "excerpt",
+          "price",
+          "primary",
+          "media"
+        ],
+        "optional": [
+          "secondary",
+          "next_steps"
+        ],
+        "rules": [
+          "robot detail media card remains square 1:1 on mobile and tablet viewports",
+          "robot image uses contained fitting in mobile/tablet square media card to avoid destructive crop",
+          "desktop and landscape layouts may place media beside copy while preserving the card geometry",
+          "public copy stays factual and does not promise unavailable lead destinations",
+          "lead destination remains static-safe until routing/legal approvals exist"
+        ]
+      },
+      "responsive": {
+        "sm": {
+          "columns": 1,
+          "stacked": true,
+          "media_aspect_ratio": "1:1",
+          "media_fit": "contain"
+        },
+        "md": {
+          "columns": 1,
+          "stacked": true,
+          "media_aspect_ratio": "1:1",
+          "media_fit": "contain"
+        },
+        "lg": {
+          "columns": 2,
+          "stacked": false,
+          "media_aspect_ratio": "1:1",
+          "media_fit": "cover"
+        },
+        "xl": {
+          "columns": 2,
+          "stacked": false,
+          "media_aspect_ratio": "1:1",
+          "media_fit": "cover"
+        }
+      },
+      "accessibility": {
+        "landmark": "section",
+        "image_alt_required": true,
+        "full_card_link": false,
+        "focus_visible": true
+      },
+      "analytics": {
+        "events": [
+          "contact_click"
+        ]
+      },
+      "fixtures": [
+        "default"
+      ],
+      "traceability": [
+        {
+          "source": "docs/source/reference-desktop-v9.html",
+          "locator": "data-rv=\"11 · ROBOT HERO\"; .robot-hero"
+        },
+        {
+          "source": "docs/source/reference-mobile-v3.html",
+          "locator": "data-rv=\"11\"; .robot-hero"
+        },
+        {
+          "source": "docs/review/kiber-88/reference-visual-layer-evidence.md",
+          "locator": "Second feedback pass: Robot page mobile 375 and tablet 768 image card returned to square 1:1"
+        }
+      ]
+    },
+    fixtures: [
+      {
+        "schema_version": 1,
+        "id": "robot-hero-default",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "reference",
+        "block_id": "robot-hero",
+        "data": {
+          "manufacturer": "Unitree",
+          "model": "G1",
+          "title": "Unitree G1 для мероприятий",
+          "description": "Гуманоид Unitree G1 на прокат с оператором для шоу, форума или промо. Рассчитываем стоимость за час.",
+          "price": "от 12 500 ₽ / час",
+          "primary": {
+            "href": "/lead/request/?robot=arenda-unitree-g1",
+            "label": "Оставить заявку"
+          },
+          "secondary": {
+            "href": "/",
+            "label": "Вернуться на главную"
+          },
+          "image": {
+            "src": "/images/kiber-45/arenda-unitree-g1.webp",
+            "alt": "Робот-гуманоид Unitree G1 для мероприятия",
+            "mobile_aspect_ratio": "1:1",
+            "mobile_fit": "contain"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "robot-hero"
+          }
+        },
+        "source": "design-system/fixtures/robot-hero/default.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "robot-hero-long-content",
+        "variant": "default",
+        "viewport": "xl",
+        "mode": "long-content",
+        "block_id": "robot-hero",
+        "data": {
+          "manufacturer": "Unitree",
+          "model": "G1",
+          "title": "Unitree G1 для мероприятий",
+          "description": "Гуманоид Unitree G1 на прокат с оператором для деловой программы, форума, промо-зоны или развлекательного сценария. Менеджер уточнит площадку, тайминг, логистику и ограничения перед финальной сметой.",
+          "price": "от 12 500 ₽ / час",
+          "primary": {
+            "href": "/lead/request/?robot=arenda-unitree-g1",
+            "label": "Оставить заявку"
+          },
+          "secondary": {
+            "href": "/",
+            "label": "Вернуться на главную"
+          },
+          "image": {
+            "src": "/images/kiber-45/arenda-unitree-g1.webp",
+            "alt": "Робот-гуманоид Unitree G1 для мероприятия",
+            "mobile_aspect_ratio": "1:1",
+            "mobile_fit": "contain"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "robot-hero"
+          }
+        },
+        "source": "design-system/fixtures/robot-hero/long-content.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "robot-hero-minimal",
+        "variant": "default",
+        "viewport": "lg",
+        "mode": "minimal",
+        "block_id": "robot-hero",
+        "data": {
+          "manufacturer": "Unitree",
+          "model": "G1",
+          "title": "Unitree G1 для мероприятий",
+          "description": "Гуманоид Unitree G1 для мероприятия с оператором.",
+          "price": "от 12 500 ₽ / час",
+          "primary": {
+            "href": "/lead/request/?robot=arenda-unitree-g1",
+            "label": "Оставить заявку"
+          },
+          "secondary": {
+            "href": "/",
+            "label": "Вернуться на главную"
+          },
+          "image": {
+            "src": "/images/kiber-45/arenda-unitree-g1.webp",
+            "alt": "Робот-гуманоид Unitree G1 для мероприятия",
+            "mobile_aspect_ratio": "1:1",
+            "mobile_fit": "contain"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "robot-hero"
+          }
+        },
+        "source": "design-system/fixtures/robot-hero/minimal.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "robot-hero-missing-optional",
+        "variant": "default",
+        "viewport": "md",
+        "mode": "missing-optional",
+        "block_id": "robot-hero",
+        "data": {
+          "manufacturer": "Unitree",
+          "model": "G1",
+          "title": "Unitree G1 для мероприятий",
+          "description": "Гуманоид Unitree G1 на прокат с оператором для шоу, форума или промо. Рассчитываем стоимость за час.",
+          "price": "от 12 500 ₽ / час",
+          "primary": {
+            "href": "/lead/request/?robot=arenda-unitree-g1",
+            "label": "Оставить заявку"
+          },
+          "secondary": {
+            "href": "/",
+            "label": "Вернуться на главную"
+          },
+          "image": {
+            "src": "/images/kiber-45/arenda-unitree-g1.webp",
+            "alt": "Робот-гуманоид Unitree G1 для мероприятия",
+            "mobile_aspect_ratio": "1:1",
+            "mobile_fit": "contain"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "robot-hero"
+          }
+        },
+        "source": "design-system/fixtures/robot-hero/missing-optional.yaml"
+      },
+      {
+        "schema_version": 1,
+        "id": "robot-hero-mobile",
+        "variant": "default",
+        "viewport": "sm",
+        "mode": "mobile",
+        "block_id": "robot-hero",
+        "data": {
+          "manufacturer": "Unitree",
+          "model": "G1",
+          "title": "Unitree G1 для мероприятий",
+          "description": "Гуманоид Unitree G1 на прокат с оператором для шоу, форума или промо. Рассчитываем стоимость за час.",
+          "price": "от 12 500 ₽ / час",
+          "primary": {
+            "href": "/lead/request/?robot=arenda-unitree-g1",
+            "label": "Оставить заявку"
+          },
+          "secondary": {
+            "href": "/",
+            "label": "Вернуться на главную"
+          },
+          "image": {
+            "src": "/images/kiber-45/arenda-unitree-g1.webp",
+            "alt": "Робот-гуманоид Unitree G1 для мероприятия",
+            "mobile_aspect_ratio": "1:1",
+            "mobile_fit": "contain"
+          },
+          "analytics": {
+            "event": "contact_click",
+            "block_id": "robot-hero"
+          }
+        },
+        "source": "design-system/fixtures/robot-hero/mobile.yaml"
+      }
+    ],
+    load: () => import("../components/blocks/RobotPageHero.astro"),
   },
   {
     spec: {

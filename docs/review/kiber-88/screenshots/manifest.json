@@ -1,0 +1,251 @@
+{
+  "issue": "KIBER-88",
+  "revision": "robot-media-square-fix",
+  "baseUrl": "http://127.0.0.1:4332",
+  "screenshots": [
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375
+      },
+      "firstScreen": "home__mobile-375__first-screen.png",
+      "fullPage": "home__mobile-375__full-page.png"
+    },
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      },
+      "firstScreen": "home__tablet-768__first-screen.png",
+      "fullPage": "home__tablet-768__full-page.png"
+    },
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyScrollWidth": 1024
+      },
+      "firstScreen": "home__tablet-landscape-1024__first-screen.png",
+      "fullPage": "home__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/",
+      "routeId": "home",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "firstScreen": "home__desktop-1440__first-screen.png",
+      "fullPage": "home__desktop-1440__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375
+      },
+      "firstScreen": "robot-unitree-g1__mobile-375__first-screen.png",
+      "fullPage": "robot-unitree-g1__mobile-375__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      },
+      "firstScreen": "robot-unitree-g1__tablet-768__first-screen.png",
+      "fullPage": "robot-unitree-g1__tablet-768__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyScrollWidth": 1024
+      },
+      "firstScreen": "robot-unitree-g1__tablet-landscape-1024__first-screen.png",
+      "fullPage": "robot-unitree-g1__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "routeId": "robot-unitree-g1",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "firstScreen": "robot-unitree-g1__desktop-1440__first-screen.png",
+      "fullPage": "robot-unitree-g1__desktop-1440__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375
+      },
+      "firstScreen": "contacts__mobile-375__first-screen.png",
+      "fullPage": "contacts__mobile-375__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      },
+      "firstScreen": "contacts__tablet-768__first-screen.png",
+      "fullPage": "contacts__tablet-768__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyScrollWidth": 1024
+      },
+      "firstScreen": "contacts__tablet-landscape-1024__first-screen.png",
+      "fullPage": "contacts__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/contacts/",
+      "routeId": "contacts",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "firstScreen": "contacts__desktop-1440__first-screen.png",
+      "fullPage": "contacts__desktop-1440__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 375,
+        "scrollWidth": 375,
+        "bodyScrollWidth": 375
+      },
+      "firstScreen": "lead-request__mobile-375__first-screen.png",
+      "fullPage": "lead-request__mobile-375__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 768,
+        "scrollWidth": 768,
+        "bodyScrollWidth": 768
+      },
+      "firstScreen": "lead-request__tablet-768__first-screen.png",
+      "fullPage": "lead-request__tablet-768__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "tablet-landscape-1024",
+      "width": 1024,
+      "height": 768,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1024,
+        "scrollWidth": 1024,
+        "bodyScrollWidth": 1024
+      },
+      "firstScreen": "lead-request__tablet-landscape-1024__first-screen.png",
+      "fullPage": "lead-request__tablet-landscape-1024__full-page.png"
+    },
+    {
+      "route": "/lead/request/",
+      "routeId": "lead-request",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1000,
+      "status": 200,
+      "metrics": {
+        "innerWidth": 1440,
+        "scrollWidth": 1440,
+        "bodyScrollWidth": 1440
+      },
+      "firstScreen": "lead-request__desktop-1440__first-screen.png",
+      "fullPage": "lead-request__desktop-1440__full-page.png"
+    }
+  ],
+  "screenshotCount": 32,
+  "mobileOverflowChecked": true,
+  "mobileOverflowCount": 0,
+  "generatedAt": "2026-08-28T06:39:33.692Z"
+}

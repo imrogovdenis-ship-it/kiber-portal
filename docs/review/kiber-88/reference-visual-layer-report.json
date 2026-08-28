@@ -1,0 +1,32 @@
+{
+  "issue": "KIBER-88",
+  "status": "passed",
+  "sources": [
+    "docs/source/reference-desktop-v9.html",
+    "docs/source/reference-mobile-v3.html"
+  ],
+  "pass1Blocks": [
+    "01-header",
+    "02-home-hero",
+    "05-robot-card",
+    "09-cta-strip",
+    "11-robot-hero",
+    "15-pricing",
+    "33-footer"
+  ],
+  "routesChecked": [
+    "/",
+    "/robots/arenda-unitree-g1/",
+    "/contacts/",
+    "/lead/request/"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "leadRoutingChanged": false
+  },
+  "rawHtmlCopiedIntoRuntime": false,
+  "generatedAt": "2026-08-28T06:52:30.726Z"
+}

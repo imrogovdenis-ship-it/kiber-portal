@@ -49,7 +49,20 @@ export const homeHeroDataSchema = z.object({
   lead: z.string().min(1).max(360),
   primary: ctaSchema,
   secondary: ctaSchema.optional(),
+  image: z.object({ src: z.string().min(1), alt: z.string().min(1), position: z.string().min(1).max(80).optional() }).strict().optional(),
   stats: z.array(z.object({ value: z.string().min(1).max(24), label: z.string().min(1).max(80) }).strict()).min(1).max(4),
+  analytics: analyticsContactSchema,
+}).strict();
+
+export const robotHeroDataSchema = z.object({
+  manufacturer: z.string().min(1).max(80),
+  model: z.string().min(1).max(80),
+  title: z.string().min(1).max(140),
+  description: z.string().min(1).max(360),
+  price: z.string().min(1).max(80),
+  primary: ctaSchema,
+  secondary: ctaSchema,
+  image: z.object({ src: z.string().min(1), alt: z.string().min(1), mobile_aspect_ratio: z.literal('1:1'), mobile_fit: z.literal('contain') }).strict(),
   analytics: analyticsContactSchema,
 }).strict();
 
@@ -95,6 +108,7 @@ export const fixtureSchema = z.discriminatedUnion('block_id', [
   z.object({ ...fixtureBase, block_id: z.literal('breadcrumbs'), data: breadcrumbsDataSchema }).strict(),
   z.object({ ...fixtureBase, block_id: z.literal('site-footer'), data: footerDataSchema }).strict(),
   z.object({ ...fixtureBase, block_id: z.literal('home-hero'), data: homeHeroDataSchema }).strict(),
+  z.object({ ...fixtureBase, block_id: z.literal('robot-hero'), data: robotHeroDataSchema }).strict(),
   z.object({ ...fixtureBase, block_id: z.literal('faq'), data: faqDataSchema }).strict(),
   z.object({ ...fixtureBase, block_id: z.literal('cta-strip'), data: ctaStripDataSchema }).strict(),
   z.object({ ...fixtureBase, block_id: z.literal('pricing'), data: pricingDataSchema }).strict(),
@@ -107,6 +121,7 @@ export type HeaderData = z.infer<typeof headerDataSchema>;
 export type BreadcrumbsData = z.infer<typeof breadcrumbsDataSchema>;
 export type FooterData = z.infer<typeof footerDataSchema>;
 export type HomeHeroData = z.infer<typeof homeHeroDataSchema>;
+export type RobotHeroData = z.infer<typeof robotHeroDataSchema>;
 export type FaqData = z.infer<typeof faqDataSchema>;
 export type CtaStripData = z.infer<typeof ctaStripDataSchema>;
 export type PricingData = z.infer<typeof pricingDataSchema>;
