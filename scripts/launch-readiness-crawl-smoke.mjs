@@ -16,6 +16,7 @@ assert.equal(registry.productionPermission, false);
 assert.equal(registry.goNoGoStatus, 'blocked_until_owner_decisions');
 
 const routes = launchRoutes.routes.map((route) => route.path);
+const routeMeta = new Map(launchRoutes.routes.map((route) => [route.path, route]));
 const routeResults = [];
 for (const route of routes) {
   const file = route === '/' ? 'dist/index.html' : join('dist', route.replace(/^\//, '').replace(/\/$/, ''), 'index.html');
@@ -23,6 +24,12 @@ for (const route of routes) {
   assert.equal(exists, true, `${route} missing ${file}`);
   const html = read(file);
   routeResults.push({ route, file, h1Count: (html.match(/<h1\b/g) || []).length, hasCanonical: /rel="canonical"/.test(html) });
+}
+
+for (const route of registry.criticalRoutes || []) {
+  const meta = routeMeta.get(route.path);
+  assert(meta, `Critical route ${route.path} must exist in launch route inventory`);
+  assert.equal(meta.sitemap, route.sitemap, `Critical route ${route.path} sitemap mismatch`);
 }
 
 assert.equal(existsSync(resolve(root, 'dist/404.html')), true, '404 page must exist');

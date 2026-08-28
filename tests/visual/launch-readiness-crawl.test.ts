@@ -21,11 +21,24 @@ test('KIBER launch readiness crawl defines go/no-go gates', () => {
   ]);
   assert.equal(registry.productionPermission, false);
   assert.equal(registry.goNoGoStatus, 'blocked_until_owner_decisions');
+
+  assert.deepEqual(registry.criticalRoutes, [
+    { path: '/', purpose: 'commercial entry', sitemap: true },
+    { path: '/contacts/', purpose: 'placeholder contact trust page', sitemap: true },
+    { path: '/lead/request/', purpose: 'capability-only lead entry', sitemap: false },
+    { path: '/lead/thanks/', purpose: 'non-indexed lead confirmation', sitemap: false },
+    { path: '/privacy-policy/', purpose: 'live-site sourced legal document', sitemap: false },
+    { path: '/consent/', purpose: 'live-site sourced consent document', sitemap: false },
+    { path: '/cookie-policy/', purpose: 'live-site sourced cookie document', sitemap: false },
+  ]);
 });
 
 test('KIBER launch readiness crawl is enforced by CI', () => {
   const pkg = JSON.parse(text('package.json'));
   assert.equal(pkg.scripts['test:readiness-crawl'], 'node scripts/launch-readiness-crawl-smoke.mjs');
   assert.match(pkg.scripts.ci, /npm run test:readiness-crawl/);
-  assert.match(text('scripts/launch-readiness-crawl-smoke.mjs'), /productionBlockers/);
+  const script = text('scripts/launch-readiness-crawl-smoke.mjs');
+  assert.match(script, /productionBlockers/);
+  assert.match(script, /criticalRoutes/);
+  assert.match(script, /Critical route .* sitemap mismatch/);
 });
