@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "routing": {
+    "mode": "capability-only",
+    "enabled": false,
+    "destinations": []
+  },
+  "constraints": {
+    "productionContacts": "placeholder-only",
+    "liveLeadRouting": "disabled-until-owner-approval",
+    "analyticsProviderIds": "disabled"
+  },
+  "approvalGates": [
+    "owner approves live lead destinations"
+  ]
+}

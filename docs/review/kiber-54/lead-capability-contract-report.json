@@ -1,0 +1,14 @@
+{
+  "issue": "KIBER-54",
+  "generatedAt": "2026-08-28T10:11:13.069Z",
+  "contractPath": "data/lead/capability-contract.json",
+  "routingMode": "capability-only",
+  "routingEnabled": false,
+  "destinationsCount": 0,
+  "checkedPages": [
+    "src/pages/lead/request.astro",
+    "src/pages/contacts.astro"
+  ],
+  "status": "passed",
+  "failures": []
+}
