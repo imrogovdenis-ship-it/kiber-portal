@@ -32,15 +32,16 @@
     "test:lead-capability": "node scripts/lead-capability-contract-smoke.mjs",
     "test:media-rights": "node scripts/media-rights-registry-smoke.mjs",
     "test:content-package-workflow": "node scripts/content-package-workflow-smoke.mjs",
+    "test:production-approval-gates": "node scripts/production-approval-gates-smoke.mjs",
     "test:readiness-crawl": "node scripts/launch-readiness-crawl-smoke.mjs",
     "test:contact-lead-visual": "node scripts/contact-lead-visual-smoke.mjs",
+    "test:production-go-no-go": "node scripts/production-go-no-go-smoke.mjs",
     "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
     "verify": "npm run check && npm test && npm run test:visual",
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
-    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run test:content-acceptance && npm run test:responsive-visual-qa && npm run test:reference-visual-layer && npm run test:lead-capability && npm run test:media-rights && npm run test:content-package-workflow && npm run test:readiness-crawl && npm run test:contact-lead-visual && npm run test:production-go-no-go && npm run ci:baseline",
-    "test:production-go-no-go": "node scripts/production-go-no-go-smoke.mjs"
+    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run test:content-acceptance && npm run test:responsive-visual-qa && npm run test:reference-visual-layer && npm run test:lead-capability && npm run test:media-rights && npm run test:content-package-workflow && npm run test:production-approval-gates && npm run test:readiness-crawl && npm run test:contact-lead-visual && npm run test:production-go-no-go && npm run ci:baseline"
   },
   "dependencies": {
     "astro": "7.2.7",

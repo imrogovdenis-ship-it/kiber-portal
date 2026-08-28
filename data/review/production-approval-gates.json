@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-production-approval-gates",
+  "title": "Controlled rebuild production approval gates",
+  "description": "Single destination-free registry of the human approvals that are still required before production-impacting KIBER Portal actions. This file records boundaries only; it does not grant approval.",
+  "sourceDecisions": [
+    "data/review/owner-decisions-2026-08-28.json",
+    "data/review/launch-readiness-crawl.json",
+    "data/review/content-package-workflow.json",
+    "data/seo/production-readiness-matrix.json"
+  ],
+  "policy": {
+    "productionPermissionIncluded": false,
+    "productionContacts": "placeholder-only",
+    "liveLeadDestinations": "disabled",
+    "analyticsProviderIds": "disabled",
+    "noDeployDnsSecretsCookiesOrRouting": true
+  },
+  "gates": [
+    {
+      "id": "visual_direction",
+      "title": "Visual direction approval",
+      "status": "in_review",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "docs/review/kiber-63/responsive-visual-qa-evidence.md",
+        "docs/review/contact-lead-visual-pass2/evidence.md",
+        "data/review/responsive-visual-qa.json"
+      ],
+      "allowedAutonomousWork": [
+        "Prepare review screenshots and contact sheets",
+        "Run local visual QA and CI gates",
+        "Keep PRs open for explicit visual approval"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Treat screenshot approval as merge permission",
+        "Treat visual direction approval as production permission"
+      ]
+    },
+    {
+      "id": "business_legal_content",
+      "title": "Final business/legal content approval",
+      "status": "blocked_structural_only",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/review/content-acceptance.json",
+        "docs/review/kiber-55/content-approval-pack.md",
+        "data/legal/legal-documents.json"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain structural content acceptance checks",
+        "Prepare approval packages without marking final approval"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Mark KIBER-55 final business/legal approved",
+        "Publish unreviewed business/legal claims"
+      ]
+    },
+    {
+      "id": "media_rights",
+      "title": "Production media rights approval",
+      "status": "blocked_until_rights_review",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/review/media-rights-registry.json",
+        "docs/review/media-rights/evidence.md"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain media rights registry coverage",
+        "Collect source and alt metadata for review"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Claim production media rights approval",
+        "Replace preview gating with unrestricted production use"
+      ]
+    },
+    {
+      "id": "public_contacts",
+      "title": "Real public contact channels",
+      "status": "placeholder_only",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/review/owner-decisions-2026-08-28.json",
+        "src/pages/contacts.astro"
+      ],
+      "allowedAutonomousWork": [
+        "Improve placeholder-safe contact UI",
+        "Document contact publication requirements"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Publish real phone, email, messenger or requisites beyond approved legal documents",
+        "Enable public contact destinations"
+      ]
+    },
+    {
+      "id": "lead_routing",
+      "title": "Live lead routing destinations",
+      "status": "capability_only_disabled",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/lead/capability-contract.json",
+        "docs/review/kiber-54/lead-capability-contract-evidence.md"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain destination-free capability contracts",
+        "Validate static GET confirmation flow without delivery"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Enable CRM, Telegram bot, WhatsApp, email or webhook delivery",
+        "Store or transmit real lead submissions"
+      ]
+    },
+    {
+      "id": "analytics_provider",
+      "title": "Analytics provider IDs and cookies",
+      "status": "disabled_pending_decision",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/analytics/provider-neutral-events.json",
+        "docs/review/kiber-71/analytics-event-contract-evidence.md"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain provider-neutral event contracts",
+        "Validate analytics attributes without provider IDs"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Configure Yandex Metrica, pixels or analytics provider IDs",
+        "Enable analytics cookies"
+      ]
+    },
+    {
+      "id": "production_deploy",
+      "title": "Production deploy, DNS and secret changes",
+      "status": "blocked_until_explicit_production_permission",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/review/launch-readiness-crawl.json",
+        "data/seo/production-readiness-matrix.json",
+        "docs/production-deployment-dry-run.md"
+      ],
+      "allowedAutonomousWork": [
+        "Run local builds and preview-only validation",
+        "Prepare dry-run readiness artifacts"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Deploy production",
+        "Change DNS",
+        "Touch production secrets",
+        "Modify shared Coolify, Traefik, Hermes or ai-class containers"
+      ]
+    }
+  ]
+}
