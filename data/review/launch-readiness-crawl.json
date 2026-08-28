@@ -23,5 +23,11 @@
     "media rights/legal approval for production assets",
     "analytics provider decision and IDs",
     "explicit production deploy permission"
+  ],
+  "requiredLegalRoutes": [
+    "/privacy-policy/",
+    "/consent/",
+    "/cookie-policy/",
+    "/terms/"
   ]
 }
