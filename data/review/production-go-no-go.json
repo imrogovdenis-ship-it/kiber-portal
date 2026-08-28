@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-production-go-no-go",
+  "generatedAt": "2026-08-28T21:22:42Z",
+  "currentBase": {
+    "repository": "imrogovdenis-ship-it/kiber-portal",
+    "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
+    "branch": "codex/kiber-15-controlled-rebuild",
+    "head": "2169024",
+    "headTitle": "feat: contact and lead visual pass 2"
+  },
+  "productionDecision": {
+    "status": "NO_GO",
+    "summary": "Controlled rebuild is structurally close, but production launch remains blocked by human/business/legal/media/routing decisions.",
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  },
+  "readiness": {
+    "routesChecked": 36,
+    "robotRoutesChecked": 24,
+    "legalRoutesPresent": [
+      "/privacy-policy/",
+      "/consent/",
+      "/cookie-policy/"
+    ],
+    "leadRoutingEnabled": false,
+    "leadDestinations": 0,
+    "mediaProductionApproved": 0,
+    "crawlSource": "docs/review/launch-readiness-crawl/report.json"
+  },
+  "readyAreas": [
+    {
+      "id": "controlled-rebuild-base",
+      "status": "ready_for_review",
+      "evidence": "Git branch codex/kiber-15-controlled-rebuild at 2169024"
+    },
+    {
+      "id": "robot-pages",
+      "status": "structurally_ready",
+      "evidence": "24 robot routes pass robotpage/content/readiness smoke gates"
+    },
+    {
+      "id": "legal-static-pages",
+      "status": "present_needs_final_business_confirmation",
+      "evidence": "/privacy-policy/, /consent/, /cookie-policy/ are present in readiness crawl"
+    },
+    {
+      "id": "contacts-lead-visual",
+      "status": "visually_approved_and_merged",
+      "evidence": "PR #40 merged after Александр approved: «PR #40 визуально утверждаю, можно мержить»"
+    },
+    {
+      "id": "ci-gates",
+      "status": "passing",
+      "evidence": "Local npm run ci passed before PR #40 merge; GitHub validate passed on PR #40"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "real-public-contacts",
+      "severity": "blocking",
+      "decisionNeeded": "Утвердить реальные публичные телефон/Telegram/WhatsApp/email/реквизиты или явно разрешить запуск с placeholder-контактами.",
+      "currentState": "productionContacts = placeholder-only"
+    },
+    {
+      "id": "live-lead-routing",
+      "severity": "blocking",
+      "decisionNeeded": "Утвердить live destinations и fallback-политику для заявок.",
+      "currentState": "lead routing disabled; destinations = []"
+    },
+    {
+      "id": "media-rights-production-approval",
+      "severity": "blocking",
+      "decisionNeeded": "Подтвердить права/источники production-изображений или заменить неподтверждённые ассеты.",
+      "currentState": "24 robot media records need rights review; productionApproved = 0"
+    },
+    {
+      "id": "analytics-provider-ids",
+      "severity": "blocking",
+      "decisionNeeded": "Выбрать analytics provider, consent/cookie policy и разрешить конкретные IDs/cookies.",
+      "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
+    },
+    {
+      "id": "business-legal-launch-confirmation",
+      "severity": "blocking",
+      "decisionNeeded": "Подтвердить, что legal docs, цены, disclaimers, контакты и launch-copy можно публиковать вместе.",
+      "currentState": "content package workflow says production publish remains human-gated"
+    },
+    {
+      "id": "explicit-production-permission",
+      "severity": "blocking",
+      "decisionNeeded": "Дать явную команду на production deploy/DNS/секреты после закрытия предыдущих блокеров.",
+      "currentState": "production deploy permission is false"
+    }
+  ],
+  "openPullRequests": [
+    {
+      "number": 43,
+      "title": "test: add production approval gates registry",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/43",
+      "state": "OPEN",
+      "mergeabilityAtCapture": "CONFLICTING",
+      "ci": "SUCCESS",
+      "recommendation": "Обновить от базы или заменить этим go/no-go пакетом, если он перекрывает смысл PR #43."
+    },
+    {
+      "number": 44,
+      "title": "test: tighten launch readiness critical route crawl",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/44",
+      "state": "OPEN",
+      "mergeabilityAtCapture": "MERGEABLE",
+      "ci": "SUCCESS",
+      "recommendation": "Можно рассмотреть merge как усиление readiness crawl после проверки конфликтов с go/no-go пакетом."
+    },
+    {
+      "number": 45,
+      "title": "test: attach pricing disclaimer to tariff cards",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/45",
+      "state": "OPEN",
+      "mergeabilityAtCapture": "MERGEABLE",
+      "ci": "SUCCESS",
+      "recommendation": "Можно рассмотреть merge как коммерческую safety-защиту цен/дисклеймеров."
+    }
+  ],
+  "ownerDecisionChecklist": [
+    "Утвердить или заменить публичные контакты.",
+    "Утвердить live lead destinations и fallback-маршрут заявок.",
+    "Утвердить media rights для production assets или список замен.",
+    "Утвердить legal/business launch package целиком.",
+    "Выбрать analytics provider и разрешить конкретные IDs/cookies.",
+    "Решить судьбу открытых PR #43, #44, #45.",
+    "После закрытия блокеров дать отдельное явное разрешение на production deploy/DNS/secrets."
+  ],
+  "nextSafeWork": [
+    "Собрать media rights review table для 24 robot assets.",
+    "Подготовить public contacts config scaffold без реальных live destinations.",
+    "Обновить/смержить PR #44 и PR #45, если они не конфликтуют с текущей базой.",
+    "Подготовить визуальный pass 3 для /lead/thanks/, category pages и footer."
+  ]
+}
