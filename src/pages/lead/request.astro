@@ -14,52 +14,185 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     { name: 'Заявка', url: '/lead/request/' },
   ]}
 >
-  <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
-    <section class="lead-request__intro">
+  <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="contact-lead-visual-pass2" data-rv="31" data-lead-capability="disabled">
+    <section class="lead-request__intro" aria-labelledby="lead-request-title">
       <p>Подбор робота</p>
-      <h1>Заявка на подбор робота</h1>
+      <h1 id="lead-request-title">Заявка на подбор робота</h1>
       <p>Расскажите о городе, дате, площадке и формате события. Так менеджеру проще предложить подходящие модели и сценарий.</p>
     </section>
 
-    <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation" data-state="ready" aria-describedby="lead-request-status">
-      <input type="hidden" name="robot" value={robot} />
-      <label>
-        <span>Имя *</span>
-        <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required aria-invalid="false" aria-describedby="name-help name-error" />
-        <span id="name-help" class="lead-request__help">Напишите имя или короткое обращение.</span>
-        <span id="name-error" class="lead-request__error" role="alert">Укажите имя, чтобы менеджер понял, к кому обратиться.</span>
-      </label>
-      <label>
-        <span>Телефон или мессенджер *</span>
-        <input name="contact" autocomplete="tel" placeholder="Телефон, Telegram или WhatsApp" required aria-invalid="false" aria-describedby="contact-help contact-error" />
-        <span id="contact-help" class="lead-request__help">Оставьте удобный способ связи.</span>
-        <span id="contact-error" class="lead-request__error" role="alert">Укажите телефон или мессенджер для ответа.</span>
-      </label>
-      <label>
-        <span>Формат мероприятия</span>
-        <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий" aria-describedby="event-help"></textarea>
-        <span id="event-help" class="lead-request__help">Можно кратко: дата, город, гости и задача робота.</span>
-      </label>
-      <button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={robot} data-analytics-form-state="static_get">Проверить подтверждение</button>
-      <p id="lead-request-status" class="lead-request__note" aria-live="polite">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
-    </form>
+    <div class="lead-request__panel">
+      <form class="lead-request__form" method="get" action="/lead/thanks/" data-vertical-step="lead-to-confirmation" data-state="ready" aria-describedby="lead-request-status">
+        <input type="hidden" name="robot" value={robot} />
+        <label>
+          <span>Имя *</span>
+          <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required aria-invalid="false" aria-describedby="name-help name-error" />
+          <span id="name-help" class="lead-request__help">Напишите имя или короткое обращение.</span>
+          <span id="name-error" class="lead-request__error" role="alert">Укажите имя, чтобы менеджер понял, к кому обратиться.</span>
+        </label>
+        <label>
+          <span>Телефон или мессенджер *</span>
+          <input name="contact" autocomplete="tel" placeholder="Телефон, Telegram или WhatsApp" required aria-invalid="false" aria-describedby="contact-help contact-error" />
+          <span id="contact-help" class="lead-request__help">Оставьте удобный способ связи.</span>
+          <span id="contact-error" class="lead-request__error" role="alert">Укажите телефон или мессенджер для ответа.</span>
+        </label>
+        <label>
+          <span>Формат мероприятия</span>
+          <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий" aria-describedby="event-help"></textarea>
+          <span id="event-help" class="lead-request__help">Можно кратко: дата, город, гости и задача робота.</span>
+        </label>
+        <button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={robot} data-analytics-form-state="static_get">Проверить подтверждение</button>
+        <p id="lead-request-status" class="lead-request__note" aria-live="polite">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
+      </form>
+
+      <aside class="lead-request__sidebar" aria-label="Статус обработки заявки">
+        <p>Capability-only</p>
+        <h2>Routing remains disabled</h2>
+        <p>Эта страница собирает статическую заявку и подтверждение без CRM, Telegram bot, email-отправки и других live destinations.</p>
+        <ul>
+          <li>публичные контакты остаются placeholder-only;</li>
+          <li>lead destinations array stays empty;</li>
+          <li>live routing requires separate owner approval.</li>
+        </ul>
+      </aside>
+    </div>
   </main>
 </BaseLayout>
 
 <style>
-  .lead-request { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
-  .lead-request__intro, .lead-request__form { display: grid; gap: var(--kp-card-gap); }
-  .lead-request__intro { max-width: 48rem; }
-  .lead-request__intro p, .lead-request__intro h1 { margin: 0; }
-  .lead-request__intro > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
-  .lead-request__intro h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
-  .lead-request__intro > p:last-child, .lead-request__note, .lead-request__help { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
-  .lead-request__form { max-width: 42rem; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
-  .lead-request label { display: grid; gap: .35rem; font-weight: var(--kp-label-weight); }
-  .lead-request input, .lead-request textarea { border: 0.0625rem solid var(--kp-line); border-radius: .875rem; padding: .875rem 1rem; background: var(--kp-sky); color: var(--kp-ink); font: inherit; }
-  .lead-request input:user-invalid, .lead-request textarea:user-invalid { border-color: var(--kp-orange); }
-  .lead-request button { min-height: 2.75rem; border: 0; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: var(--kp-heading-weight); }
-  .lead-request__note, .lead-request__help { margin: 0; }
-  .lead-request__help { font-size: var(--kp-label-size); font-weight: var(--kp-body-weight); }
-  .lead-request__error { position: absolute; width: 0.0625rem; height: 0.0625rem; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .lead-request {
+    display: grid;
+    gap: var(--kp-reference-small-gap-xl);
+    padding-block: var(--kp-reference-pad-y) calc(var(--kp-reference-pad-y) * 2);
+  }
+
+  .lead-request__intro {
+    display: grid;
+    max-width: 52rem;
+    gap: var(--kp-reference-small-gap-md);
+  }
+
+  .lead-request__intro p,
+  .lead-request__intro h1,
+  .lead-request__note,
+  .lead-request__help,
+  .lead-request__sidebar p,
+  .lead-request__sidebar h2,
+  .lead-request__sidebar ul {
+    margin: 0;
+  }
+
+  .lead-request__intro > p:first-child,
+  .lead-request__sidebar > p:first-child {
+    color: var(--kp-reference-blue);
+    font-size: var(--kp-reference-label-size);
+    font-weight: var(--kp-label-weight);
+    letter-spacing: var(--kp-label-letter-spacing);
+    text-transform: uppercase;
+  }
+
+  .lead-request__intro h1 {
+    font-family: var(--kp-font-heading);
+    font-size: clamp(2.25rem, 6vw, var(--kp-reference-display-l));
+    line-height: var(--kp-display-line-height);
+  }
+
+  .lead-request__intro > p:last-child,
+  .lead-request__note,
+  .lead-request__help,
+  .lead-request__sidebar p,
+  .lead-request__sidebar li {
+    color: var(--kp-reference-muted);
+    line-height: var(--kp-body-line-height);
+  }
+
+  .lead-request__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1.18fr) minmax(18rem, 0.82fr);
+    gap: var(--kp-reference-small-gap-lg);
+    align-items: stretch;
+  }
+
+  .lead-request__form,
+  .lead-request__sidebar {
+    display: grid;
+    gap: var(--kp-reference-small-gap-md);
+    padding: clamp(1.25rem, 4vw, 2rem);
+    border-radius: 1.75rem;
+  }
+
+  .lead-request__form {
+    border: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue) 14%, transparent);
+    background: var(--kp-reference-white);
+  }
+
+  .lead-request__sidebar {
+    align-content: start;
+    background: var(--kp-reference-ink);
+    color: var(--kp-reference-white);
+  }
+
+  .lead-request__sidebar h2 {
+    color: var(--kp-reference-white);
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-reference-heading);
+    line-height: 1.04;
+  }
+
+  .lead-request__sidebar ul {
+    display: grid;
+    gap: 0.5rem;
+    padding-left: 1.25rem;
+  }
+
+  .lead-request label {
+    display: grid;
+    gap: 0.5rem;
+    font-weight: var(--kp-label-weight);
+  }
+
+  .lead-request input,
+  .lead-request textarea {
+    border: 0.0625rem solid var(--kp-line);
+    border-radius: 0.875rem;
+    padding: 0.875rem 1rem;
+    background: var(--kp-reference-sky);
+    color: var(--kp-reference-ink);
+    font: inherit;
+  }
+
+  .lead-request input:user-invalid,
+  .lead-request textarea:user-invalid {
+    border-color: var(--kp-reference-orange);
+  }
+
+  .lead-request button {
+    min-height: 2.75rem;
+    border: 0;
+    border-radius: var(--kp-reference-button-radius);
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+    font-family: var(--kp-font-heading);
+    font-weight: var(--kp-heading-weight);
+  }
+
+  .lead-request__help {
+    font-size: var(--kp-label-size);
+    font-weight: var(--kp-body-weight);
+  }
+
+  .lead-request__error {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (max-width: 59.9375rem) {
+    .lead-request__panel {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
