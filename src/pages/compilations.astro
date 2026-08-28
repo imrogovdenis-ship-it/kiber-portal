@@ -1,12 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import InternalLinks from '../components/content/InternalLinks.astro';
 import { collectionPageJsonLd } from '../lib/seo';
 
-const links = [
-  { href: '/', label: 'На главную' },
-  { href: '/robots/unitree-g1/', label: 'Unitree G1' },
-  { href: '/lead/request/?robot=unitree-g1', label: 'Перейти к заявке' },
-];
 ---
 
 <BaseLayout title='Подборки роботов — КИБЕР ПОРТАЛ' description='Сценарные подборки роботов для мероприятий: гуманоиды, роботы-собаки, промоутеры и технологичные event-форматы.' noindex={false} jsonLd={collectionPageJsonLd({ title: 'Подборки роботов — КИБЕР ПОРТАЛ', description: 'Сценарные подборки роботов для мероприятий.', url: '/compilations/' })}>
@@ -16,9 +12,7 @@ const links = [
       <h1 id="page-title">Подборки</h1>
       <p>Здесь будут сценарные подборки роботов: гуманоиды, роботы-собаки, промоутеры и event-форматы. До расширения каталога начните с пилотного робота Unitree G1.</p>
     </section>
-    <nav class="content-page__links" aria-label="Следующие шаги">
-      {links.map((link) => <a href={link.href}>{link.label}</a>)}
-    </nav>
+    <InternalLinks route="/compilations/" label="Следующие шаги" />
   </main>
 </BaseLayout>
 
@@ -29,6 +23,4 @@ const links = [
   .content-page__hero > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
   .content-page__hero h1 { font-family: var(--kp-font-heading); font-size: var(--kp-display-size); line-height: var(--kp-display-line-height); }
   .content-page__hero > p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
-  .content-page__links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-  .content-page__links a { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: 0.75rem 1.1rem; color: var(--kp-blue); font-weight: var(--kp-heading-weight); text-decoration: none; }
 </style>
