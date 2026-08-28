@@ -65,7 +65,7 @@ The production build now renders 24 robot pages through one route template:
 
 ## Rendered validation
 
-`npm run test:robotpage-24` checks:
+`npm run test:robotpage-24` checks rendered output after `npm run build:production`:
 
 - source dataset contains 24 robots;
 - generated render registry contains the same 24 slugs;

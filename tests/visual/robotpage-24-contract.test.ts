@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { readdir } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import test from 'node:test';
 
@@ -54,18 +54,12 @@ test('KIBER-45 keeps one unified RobotPage template and exposes rendered validat
   assert.match(pkg.scripts.ci, /npm run test:robotpage-24/);
 });
 
-test('KIBER-45 production build renders 24 robot pages through the unified route', async () => {
-  const distRobots = resolve(root, 'dist/robots');
-  assert.equal(existsSync(distRobots), true, 'dist/robots missing; run npm run build:production first');
-  const entries = await readdir(distRobots, { withFileTypes: true });
-  const rendered = entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort();
-
-  assert.equal(rendered.length, 24, 'production build should render exactly 24 robot pages');
-  for (const slug of rendered) {
-    const html = readFileSync(resolve(distRobots, slug, 'index.html'), 'utf8');
-    assert.match(html, new RegExp(`data-robot-slug="${slug}"`), `${slug}: route should render through unified RobotPage`);
-    assert.match(html, /<link rel="canonical" href="https:\/\/www\.kiber-portal\.ru\/robots\//, `${slug}: absolute canonical required`);
-    assert.match(html, /<script[^>]+application\/ld\+json/, `${slug}: JSON-LD required`);
-    assert.doesNotMatch(html, /KIBER-50-REVIEW-ONLY-SENTINEL/, `${slug}: review-only notes leaked`);
-  }
+test('KIBER-45 rendered validation stays in the post-build smoke, not pre-build source tests', async () => {
+  const smoke = await readFile(smokePath, 'utf8');
+  assert.match(smoke, /dist\/robots/);
+  assert.match(smoke, /renderedRobotPages/);
+  assert.match(smoke, /Service JSON-LD missing/);
+  assert.match(smoke, /BreadcrumbList JSON-LD missing/);
+  assert.match(smoke, /review note leaked/);
+  assert.match(smoke, /KIBER-50-REVIEW-ONLY-SENTINEL/);
 });
