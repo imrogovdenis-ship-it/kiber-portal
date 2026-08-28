@@ -36,7 +36,7 @@
   "summary": {
     "robotPages": 24,
     "launchPages": 7,
-    "legalDocuments": 3,
+    "legalDocuments": 4,
     "finalApproved": 0,
     "productionBlockedUntilHumanApproval": true
   },
@@ -76,13 +76,15 @@
     },
     {
       "id": "legal-documents",
-      "title": "Legal document package",
+      "title": "Four-document legal package",
       "status": "ready_for_human_review",
       "productionApproved": false,
       "sourcePath": "data/legal/legal-documents.json",
       "requiredEvidence": [
         "human confirmation that sourced live-site legal documents remain current",
-        "human confirmation of contact/requisite publication scope"
+        "human confirmation of contact/requisite publication scope",
+        "human confirmation that /terms user agreement matches the live-site legal source",
+        "all four legal documents cross-link correctly"
       ]
     }
   ]
