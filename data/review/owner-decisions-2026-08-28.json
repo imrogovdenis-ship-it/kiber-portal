@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-89",
+  "title": "Owner decisions captured before autonomous work window",
+  "decidedAt": "2026-08-28",
+  "source": "Telegram owner decisions from Александр",
+  "productionPermissionIncluded": false,
+  "decisions": {
+    "contacts": {
+      "status": "placeholder_only",
+      "publicRealContactsApproved": false,
+      "decision": "Контакты пока placeholder, не публиковать реальные."
+    },
+    "leadChannels": {
+      "status": "capability_only_no_live_destination",
+      "publicChannelsApproved": false,
+      "decision": "Решим позже; заложить возможность нужного функционала without live routing."
+    },
+    "legalDocuments": {
+      "status": "source_from_live_site",
+      "decision": "Юридические документы взять с сайта kiber-portal.ru; там верные документы и ссылки.",
+      "sourceUrls": {
+        "privacyPolicy": "https://www.kiber-portal.ru/privacy-policy",
+        "consent": "https://www.kiber-portal.ru/consent",
+        "cookiePolicy": "https://www.kiber-portal.ru/cookie-policy"
+      }
+    },
+    "pricing": {
+      "status": "approved_current_table",
+      "decision": "Используем текущую таблицу цен как источник истины; спорные Unitree G1/Go2, Sketchbot, Tron утвердить текущими значениями.",
+      "publicRule": "Цены можно показывать как “от X ₽ / час” + “Не является публичной офертой”."
+    },
+    "contentAcceptance": {
+      "status": "structurally_approved_not_final_business_legal",
+      "issue": "KIBER-55",
+      "decision": "Утвердить структурно, но не финально по business/legal; показать контент для утверждения."
+    }
+  }
+}

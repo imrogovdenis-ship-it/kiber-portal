@@ -306,7 +306,16 @@
       "priority": 0.2,
       "changefreq": "yearly",
       "template": "legal",
-      "reason": "Draft legal policy route is available but noindex until legal approval."
+      "reason": "Legal document copied from live kiber-portal.ru per 2026-08-28 owner decision; kept noindex until production cutover policy is finalized."
+    },
+    {
+      "path": "/consent/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
+      "priority": 0.2,
+      "changefreq": "yearly",
+      "template": "legal",
+      "reason": "Consent document copied from live kiber-portal.ru per 2026-08-28 owner decision; kept noindex until production cutover policy is finalized."
     },
     {
       "path": "/cookie-policy/",
@@ -315,7 +324,7 @@
       "priority": 0.2,
       "changefreq": "yearly",
       "template": "legal",
-      "reason": "Draft legal policy route is available but noindex until legal approval."
+      "reason": "Legal document copied from live kiber-portal.ru per 2026-08-28 owner decision; kept noindex until production cutover policy is finalized."
     },
     {
       "path": "/lead/request/",

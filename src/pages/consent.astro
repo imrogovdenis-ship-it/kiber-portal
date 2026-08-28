@@ -2,20 +2,20 @@
 import legal from '../../data/legal/legal-documents.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const document = legal.documents.find((entry) => entry.slug === 'cookie-policy');
-if (!document) throw new Error('Missing cookie-policy legal document');
+const document = legal.documents.find((entry) => entry.slug === 'consent');
+if (!document) throw new Error('Missing consent legal document');
 const relatedLinks = [
   { href: '/privacy-policy/', label: 'Политика обработки персональных данных' },
-  { href: '/consent/', label: 'Согласие на обработку персональных данных' },
+  { href: '/cookie-policy/', label: 'Политика cookie' },
 ];
 ---
 
-<BaseLayout title={`${document.title} — КИБЕР ПОРТАЛ`} description="Политика использования файлов cookie КИБЕР ПОРТАЛ." noindex={true}>
+<BaseLayout title={`${document.title} — КИБЕР ПОРТАЛ`} description="Согласие на обработку персональных данных КИБЕР ПОРТАЛ." noindex={true}>
   <main class="legal-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-48" data-legal-source={document.sourceUrl}>
     <section class="legal-page__hero" aria-labelledby="page-title">
       <p>КИБЕР ПОРТАЛ</p>
       <h1 id="page-title">{document.title}</h1>
-      <p>Документ перенесён с действующего сайта kiber-portal.ru по решению владельца. Реальные analytics providers не подключаются до отдельного consent/analytics approval.</p>
+      <p>Документ перенесён с действующего сайта kiber-portal.ru по решению владельца. Форма остаётся static-safe до отдельного утверждения маршрутизации заявок.</p>
     </section>
     <article class="legal-page__body">
       {document.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
