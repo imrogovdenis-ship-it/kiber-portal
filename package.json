@@ -36,7 +36,8 @@
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
-    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run test:content-acceptance && npm run test:responsive-visual-qa && npm run test:reference-visual-layer && npm run test:lead-capability && npm run test:media-rights && npm run ci:baseline"
+    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run test:content-acceptance && npm run test:responsive-visual-qa && npm run test:reference-visual-layer && npm run test:lead-capability && npm run test:media-rights && npm run test:readiness-crawl && npm run ci:baseline",
+    "test:readiness-crawl": "node scripts/launch-readiness-crawl-smoke.mjs"
   },
   "dependencies": {
     "astro": "7.2.7",

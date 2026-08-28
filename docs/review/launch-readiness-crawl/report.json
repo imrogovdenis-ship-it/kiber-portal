@@ -1,0 +1,23 @@
+{
+  "issue": "KIBER-launch-readiness-crawl",
+  "status": "passed_with_blockers",
+  "routesChecked": 36,
+  "robotRoutesChecked": 24,
+  "legalRoutesPresent": [
+    "/privacy-policy/",
+    "/consent/",
+    "/cookie-policy/"
+  ],
+  "leadRoutingEnabled": false,
+  "leadDestinations": 0,
+  "mediaProductionApproved": 0,
+  "productionBlockers": [
+    "final visual approval for pending visual PRs",
+    "real public contact channels",
+    "live lead routing destinations and backend",
+    "media rights/legal approval for production assets",
+    "analytics provider decision and IDs",
+    "explicit production deploy permission"
+  ],
+  "generatedAt": "2026-08-28T14:15:04.781Z"
+}

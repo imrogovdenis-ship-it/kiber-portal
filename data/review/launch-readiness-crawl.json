@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-launch-readiness-crawl",
+  "title": "Controlled rebuild launch readiness crawl",
+  "status": "in_review_after_pr",
+  "requiredChecks": [
+    "route_inventory",
+    "sitemap_alignment",
+    "404_page",
+    "robots_pages",
+    "legal_pages",
+    "lead_routing_disabled",
+    "analytics_provider_disabled",
+    "media_rights_gated",
+    "production_blockers"
+  ],
+  "productionPermission": false,
+  "goNoGoStatus": "blocked_until_owner_decisions",
+  "productionBlockers": [
+    "final visual approval for pending visual PRs",
+    "real public contact channels",
+    "live lead routing destinations and backend",
+    "media rights/legal approval for production assets",
+    "analytics provider decision and IDs",
+    "explicit production deploy permission"
+  ]
+}
