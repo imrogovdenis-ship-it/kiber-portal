@@ -10,6 +10,8 @@ import Footer from '../components/layout/Footer.astro';
 import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
 import type { Breadcrumb } from '../lib/seo';
 
+type JsonLd = Record<string, unknown> | Array<Record<string, unknown>>;
+
 interface Props {
   title: string;
   description: string;
@@ -17,17 +19,20 @@ interface Props {
   noindex?: boolean;
   image?: string;
   breadcrumbs?: Breadcrumb[];
+  jsonLd?: JsonLd;
   chrome?: boolean;
 }
 
-const { title, description, canonical, noindex = false, image, breadcrumbs = [], chrome = true } = Astro.props;
+const { title, description, canonical, noindex = false, image, breadcrumbs = [], jsonLd, chrome = true } = Astro.props;
 const canonicalUrl = canonical ?? (Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined);
+const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 ---
 
 <!doctype html>
 <html lang="ru">
   <head>
     <SeoHead {title} {description} canonical={canonicalUrl} {noindex} {image} />
+    {jsonLdItems.map((item) => <script type="application/ld+json" is:inline set:html={JSON.stringify(item)} />)}
     <slot name="head" />
   </head>
   <body>

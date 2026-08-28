@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { collectionPageJsonLd } from '../lib/seo';
 
 const links = [
   { href: '/', label: 'На главную' },
@@ -8,7 +9,7 @@ const links = [
 ];
 ---
 
-<BaseLayout title='Подборки роботов — КИБЕР ПОРТАЛ' description='Сценарные подборки роботов для мероприятий.' noindex={false}>
+<BaseLayout title='Подборки роботов — КИБЕР ПОРТАЛ' description='Сценарные подборки роботов для мероприятий: гуманоиды, роботы-собаки, промоутеры и технологичные event-форматы.' noindex={false} jsonLd={collectionPageJsonLd({ title: 'Подборки роботов — КИБЕР ПОРТАЛ', description: 'Сценарные подборки роботов для мероприятий.', url: '/compilations/' })}>
   <main class="content-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-20">
     <section class="content-page__hero" aria-labelledby="page-title">
       <p>КИБЕР ПОРТАЛ</p>
