@@ -1,0 +1,11 @@
+{
+  "issue": "KIBER-52",
+  "generatedAt": "2026-08-28T01:56:48.262Z",
+  "approvedLinks": 11,
+  "linkedSourceRoutes": 8,
+  "maxLinksPerPage": 3,
+  "htmlFilesChecked": 13,
+  "autoPublishGenerated": false,
+  "proposalMarkersLeaked": 0,
+  "result": "passed"
+}

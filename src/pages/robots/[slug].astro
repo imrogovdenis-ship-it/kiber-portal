@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Pricing from '../../components/blocks/Pricing.astro';
 import Faq from '../../components/blocks/Faq.astro';
+import InternalLinks from '../../components/content/InternalLinks.astro';
 import { serviceJsonLd } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -66,6 +67,8 @@ const faq = {
         <img src={robot.media.hero.src} alt={robot.media.hero.alt} width="640" height="640" loading="eager" decoding="async" />
       </figure>
     </section>
+
+    <InternalLinks route={robotCanonicalPath} label="Следующие шаги" />
 
     <section class="robot-page__facts" aria-label="Сервисные условия">
       <article><h2>Формат</h2><p>Робот работает с сопровождающим специалистом.</p></article>
