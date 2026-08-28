@@ -9,14 +9,15 @@ const root = process.cwd();
 test('KIBER-33 source exposes Main → Unitree G1 card → lead request → confirmation route', async () => {
   const index = await readFile(resolve(root, 'src/pages/index.astro'), 'utf8');
   assert.match(index, /data-kiber-task="KIBER-33"/);
-  assert.match(index, /\/robots\/unitree-g1\//);
+  assert.match(index, /\/robots\/arenda-unitree-g1\//);
   assert.match(index, /data-vertical-step="home-to-robot"/);
 
   const robotPage = resolve(root, 'src/pages/robots/[slug].astro');
   assert.equal(existsSync(robotPage), true, 'robot detail route exists');
   const robot = await readFile(robotPage, 'utf8');
-  assert.match(robot, /getStaticPaths/);
-  assert.match(robot, /unitree-g1/);
+  assert.match(robot, /getRobotPages/);
+  const generatedRobots = await readFile(resolve(root, 'src/content/robots.generated.json'), 'utf8');
+  assert.match(generatedRobots, /arenda-unitree-g1/);
   assert.match(robot, /\/lead\/request\/\?robot=\$\{robot\.slug\}/);
   assert.match(robot, /data-vertical-step="robot-to-lead"/);
 

@@ -1,0 +1,93 @@
+{
+  "issue": "KIBER-45",
+  "generatedAt": "2026-08-28T02:53:49.109Z",
+  "sourceRobots": 24,
+  "generatedRobots": 24,
+  "renderedRobotPages": 24,
+  "sourceStatus": "stage2_enriched_needs_review",
+  "generatedStatus": "generated_from_stage2_source_needs_review",
+  "routePrefix": "/robots/[slug]/",
+  "result": "passed",
+  "sample": [
+    {
+      "slug": "arenda-agibot-x2",
+      "route": "/robots/arenda-agibot-x2/",
+      "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Agibot X2 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-bellabot",
+      "route": "/robots/arenda-bellabot/",
+      "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-официанта BellaBot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-glambot",
+      "route": "/robots/arenda-glambot/",
+      "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота GlamBot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "route": "/robots/arenda-inchbot-l1-w-edu/",
+      "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Inchbot L1-W EDU для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-kettybot",
+      "route": "/robots/arenda-kettybot/",
+      "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-официанта KettyBot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "route": "/robots/arenda-klipmeiker/",
+      "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота Клипмейкер для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "route": "/robots/arenda-mini-robo-kofeyni/",
+      "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "мини робо-кофейни для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "route": "/robots/arenda-noetix-bumi/",
+      "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Noetix Bumi для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    }
+  ]
+}

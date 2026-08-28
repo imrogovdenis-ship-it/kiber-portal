@@ -660,8 +660,8 @@ export const blockRegistry = [
         "mode": "reference",
         "block_id": "robot-card",
         "data": {
-          "slug": "unitree-g1",
-          "href": "/robots/unitree-g1/",
+          "slug": "arenda-unitree-g1",
+          "href": "/robots/arenda-unitree-g1/",
           "title": "Unitree G1",
           "category": "Робот-гуманоид",
           "price": "от 150 000 ₽",
@@ -1295,7 +1295,7 @@ export const blockRegistry = [
             },
             {
               "name": "Unitree G1",
-              "url": "/robots/unitree-g1/"
+              "url": "/robots/arenda-unitree-g1/"
             }
           ]
         },
@@ -1324,7 +1324,7 @@ export const blockRegistry = [
             },
             {
               "name": "Unitree G1",
-              "url": "/robots/unitree-g1/"
+              "url": "/robots/arenda-unitree-g1/"
             }
           ]
         },
@@ -1391,7 +1391,7 @@ export const blockRegistry = [
             },
             {
               "name": "Unitree G1",
-              "url": "/robots/unitree-g1/"
+              "url": "/robots/arenda-unitree-g1/"
             }
           ]
         },

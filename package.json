@@ -25,12 +25,13 @@
     "test:internal-links": "node scripts/internal-link-proposals-smoke.mjs",
     "test:seo-metadata": "node scripts/seo-metadata-structured-data-smoke.mjs",
     "test:internal-link-rendering": "node scripts/internal-links-rendering-smoke.mjs",
+    "test:robotpage-24": "node scripts/robotpage-24-smoke.mjs",
     "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
     "verify": "npm run check && npm test && npm run test:visual",
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
-    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run ci:baseline"
+    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run ci:baseline"
   },
   "dependencies": {
     "astro": "7.2.7",

@@ -23,7 +23,7 @@ test('KIBER-36 robot page documents empty and ready states without hiding them f
   assert.match(page, /data-state="ready"/);
   assert.match(page, /data-state="empty"/);
   assert.match(page, /aria-live="polite"/);
-  assert.match(page, /Нет дополнительных материалов/i);
+  assert.match(page, /Факты и ограничения/i);
 });
 
 test('KIBER-36 keeps a global keyboard focus-visible style', async () => {

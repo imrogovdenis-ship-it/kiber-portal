@@ -16,7 +16,9 @@ test('KIBER-43 defines launch route registry and sitemap endpoint', async () => 
   assert.equal(registry.schemaVersion, 1);
   const routes = registry.routes as Array<{ path: string; sitemap: boolean }>;
   assert.ok(routes.some((route) => route.path === '/' && route.sitemap === true));
-  assert.ok(routes.some((route) => route.path === '/robots/unitree-g1/' && route.sitemap === true));
+  const robotRoutes = routes.filter((route) => route.path.startsWith('/robots/') && route.sitemap === true);
+  assert.equal(robotRoutes.length, 24, 'KIBER-45 should register 24 robot detail routes');
+  assert.ok(routes.some((route) => route.path === '/robots/arenda-unitree-g1/' && route.sitemap === true));
   assert.equal(routes.some((route) => route.path.startsWith('/preview/')), false);
   assert.equal(routes.some((route) => route.path === '/404.html'), false);
 });

@@ -3,7 +3,12 @@
   "issue": "KIBER-52",
   "description": "Curated public internal links for the controlled rebuild. Generated AI proposals remain in data/seo/internal-link-proposals.json and are not auto-published.",
   "autoPublishGenerated": false,
-  "allowedStatuses": ["approved", "generated_needs_review", "rejected", "disabled"],
+  "allowedStatuses": [
+    "approved",
+    "generated_needs_review",
+    "rejected",
+    "disabled"
+  ],
   "inputSources": [
     "data/seo/launch-routes.json",
     "data/seo/internal-link-proposals.json"
@@ -13,16 +18,18 @@
     "renderOnlyStatus": "approved",
     "forbidGeneratedProposalMarkers": true,
     "allowConversionTargetsOutsideSitemap": true,
-    "conversionTargets": ["/lead/request/"]
+    "conversionTargets": [
+      "/lead/request/"
+    ]
   },
   "links": [
     {
-      "id": "approved-home-to-g1-card",
+      "id": "approved-home-to-unitree-g1-card",
       "status": "approved",
       "publicRender": true,
       "sourceRoute": "/",
-      "targetRoute": "/robots/unitree-g1/",
-      "href": "/robots/unitree-g1/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
+      "href": "/robots/arenda-unitree-g1/",
       "anchor": "Unitree G1 для мероприятий",
       "intent": "proof-content",
       "reason": "Главная ведёт к текущей проверенной карточке робота как к proof-content MVP."
@@ -50,21 +57,21 @@
       "reason": "Главная связывает коммерческий интент с launch-категорией роботов-собак."
     },
     {
-      "id": "approved-g1-to-request",
+      "id": "approved-unitree-g1-to-request",
       "status": "approved",
       "publicRender": true,
-      "sourceRoute": "/robots/unitree-g1/",
+      "sourceRoute": "/robots/arenda-unitree-g1/",
       "targetRoute": "/lead/request/",
-      "href": "/lead/request/?robot=unitree-g1",
+      "href": "/lead/request/?robot=arenda-unitree-g1",
       "anchor": "Запросить обратный звонок по Unitree G1",
       "intent": "conversion-cta",
       "reason": "Карточка робота должна вести к CTA-заявке; сама интеграция лидов остаётся отдельно gated."
     },
     {
-      "id": "approved-g1-to-scenarios",
+      "id": "approved-unitree-g1-to-scenarios",
       "status": "approved",
       "publicRender": true,
-      "sourceRoute": "/robots/unitree-g1/",
+      "sourceRoute": "/robots/arenda-unitree-g1/",
       "targetRoute": "/compilations/",
       "href": "/compilations/",
       "anchor": "подборки роботов по сценариям",
@@ -72,12 +79,12 @@
       "reason": "Карточка робота ведёт к сценарному proof-content без публикации AI-generated предложений."
     },
     {
-      "id": "approved-humanoids-to-g1-card",
+      "id": "approved-humanoids-to-unitree-g1-card",
       "status": "approved",
       "publicRender": true,
       "sourceRoute": "/roboty-gumanoidy/",
-      "targetRoute": "/robots/unitree-g1/",
-      "href": "/robots/unitree-g1/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
+      "href": "/robots/arenda-unitree-g1/",
       "anchor": "Unitree G1 для мероприятий",
       "intent": "proof-content",
       "reason": "Категория гуманоидов ведёт к текущей проверенной карточке Unitree G1."
@@ -94,12 +101,12 @@
       "reason": "До расширения каталога роботов-собак категория ведёт к безопасной контактной странице."
     },
     {
-      "id": "approved-scenarios-to-g1-card",
+      "id": "approved-scenarios-to-unitree-g1-card",
       "status": "approved",
       "publicRender": true,
       "sourceRoute": "/compilations/",
-      "targetRoute": "/robots/unitree-g1/",
-      "href": "/robots/unitree-g1/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
+      "href": "/robots/arenda-unitree-g1/",
       "anchor": "проверенный сценарий с Unitree G1",
       "intent": "proof-content",
       "reason": "Подборки уводят к доступной карточке MVP вместо пустой автогенерации страниц."
@@ -127,12 +134,12 @@
       "reason": "Новости ведут к более устойчивому evergreen-контенту."
     },
     {
-      "id": "approved-contacts-to-g1-card",
+      "id": "approved-contacts-to-unitree-g1-card",
       "status": "approved",
       "publicRender": true,
       "sourceRoute": "/contacts/",
-      "targetRoute": "/robots/unitree-g1/",
-      "href": "/robots/unitree-g1/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
+      "href": "/robots/arenda-unitree-g1/",
       "anchor": "посмотреть Unitree G1",
       "intent": "proof-content",
       "reason": "Контакты дают обратный путь к проверенной коммерческой карточке."

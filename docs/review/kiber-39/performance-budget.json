@@ -12,7 +12,7 @@
   },
   "routes": [
     "/",
-    "/robots/unitree-g1/",
+    "/robots/arenda-unitree-g1/",
     "/lead/request/",
     "/lead/thanks/"
   ],

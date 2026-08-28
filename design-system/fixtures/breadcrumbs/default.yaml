@@ -4,4 +4,4 @@ block_id: breadcrumbs
 variant: default
 viewport: xl
 mode: reference
-data: { items: [{ name: Главная, url: / }, { name: Каталог, url: "/#catalog" }, { name: Unitree G1, url: /robots/unitree-g1/ }] }
+data: { items: [{ name: Главная, url: / }, { name: Каталог, url: "/#catalog" }, { name: Unitree G1, url: /robots/arenda-unitree-g1/ }] }

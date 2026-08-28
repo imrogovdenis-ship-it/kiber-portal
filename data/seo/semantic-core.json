@@ -42,7 +42,7 @@
       "lifecycle": "active",
       "region": "RU",
       "verifiedAt": "2026-08-27",
-      "primaryRoute": "/robots/unitree-g1/",
+      "primaryRoute": "/robots/arenda-unitree-g1/",
       "queries": ["аренда unitree g1", "unitree g1 на мероприятие"],
       "notes": "Launch model detail page."
     },

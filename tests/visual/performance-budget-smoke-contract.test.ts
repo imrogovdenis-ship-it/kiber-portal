@@ -18,7 +18,8 @@ test('KIBER-39 defines Core Web Vitals targets and static performance budgets', 
   });
   assert.ok(Array.isArray(budget.routes));
   assert.ok(budget.routes.includes('/'));
-  assert.ok(budget.routes.includes('/robots/unitree-g1/'));
+  assert.ok(budget.routes.includes('/robots/arenda-unitree-g1/'));
+  assert.ok(budget.routes.some((route: string) => route.startsWith('/robots/arenda-')));
   assert.ok(budget.routes.includes('/lead/request/'));
   assert.ok(budget.routes.includes('/lead/thanks/'));
   assert.ok(budget.staticBudgets.htmlBytes <= 100_000);

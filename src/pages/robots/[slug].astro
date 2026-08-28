@@ -1,18 +1,16 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Pricing from '../../components/blocks/Pricing.astro';
 import Faq from '../../components/blocks/Faq.astro';
 import InternalLinks from '../../components/content/InternalLinks.astro';
 import { serviceJsonLd } from '../../lib/seo';
+import { getRobotPages, type RobotPageRecord } from '../../lib/robot-pages';
 
 export async function getStaticPaths() {
-  const robots = await getCollection('robots');
-  return robots.map((robot) => ({ params: { slug: robot.data.slug }, props: { robot: robot.data } }));
+  return getRobotPages().map((robot) => ({ params: { slug: robot.slug }, props: { robot } }));
 }
 
-const { robot } = Astro.props;
-const isUnitree = robot.slug === 'unitree-g1';
+const { robot } = Astro.props as { robot: RobotPageRecord };
 const breadcrumbs = [
   { name: 'Главная', url: '/' },
   { name: robot.identity.name, url: `/robots/${robot.slug}/` },
@@ -30,8 +28,8 @@ const pricing = {
 
 const faq = {
   title: 'Что уточнит менеджер',
-  items: [
-    { question: 'Можно ли подтвердить робота сразу?', answer: 'Нет. Доступность, площадка и программа подтверждаются менеджером до финальной сметы.' },
+  items: robot.faq.length > 0 ? robot.faq : [
+    { question: 'Можно ли подтвердить робота сразу?', answer: 'Доступность, площадка и программа подтверждаются менеджером до финальной сметы.' },
     { question: 'Это публичная оферта?', answer: robot.pricing.disclaimer },
   ],
 };
@@ -41,6 +39,7 @@ const faq = {
   title={robot.seo.title}
   description={robot.seo.description}
   canonical={robot.seo.canonical}
+  image={robot.media.hero.src}
   breadcrumbs={breadcrumbs}
   jsonLd={[
     serviceJsonLd({
@@ -48,19 +47,19 @@ const faq = {
       description: robot.seo.description,
       url: robotCanonicalPath,
       image: robot.media.hero.src,
-      category: 'Аренда робота-гуманоида',
+      category: 'Аренда роботов для мероприятий',
     }),
   ]}
 >
-  <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-robot-slug={robot.slug} data-state="ready" aria-live="polite">
+  <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-45" data-robot-slug={robot.slug} data-state="ready" aria-live="polite">
     <section class="robot-page__hero" data-vertical-step="robot-detail">
       <div class="robot-page__copy">
         <p>{robot.identity.manufacturer} / {robot.identity.model}</p>
         <h1>{robot.identity.name} для мероприятий</h1>
         <p>{robot.seo.description}</p>
         <div class="robot-page__actions">
-          <a class="robot-page__button robot-page__button--primary" href={`/lead/request/?robot=${robot.slug}`} data-vertical-step="robot-to-lead">Оставить заявку</a>
-          <a class="robot-page__button" href="/">Вернуться на главную</a>
+          <a class="robot-page__button robot-page__button--primary" href={`/lead/request/?robot=${robot.slug}`} data-vertical-step="robot-to-lead" data-analytics-event="form_submit_intent" data-analytics-source="robot_page" data-analytics-placement="primary_cta" data-analytics-slug={robot.slug}>Оставить заявку</a>
+          <a class="robot-page__button" href="/" data-analytics-event="robot_card_click" data-analytics-source="robot_page" data-analytics-placement="back_to_catalog" data-analytics-slug={robot.slug}>Вернуться на главную</a>
         </div>
       </div>
       <figure class="robot-page__media">
@@ -77,14 +76,15 @@ const faq = {
     </section>
 
     <section class="robot-page__empty" data-state="empty" aria-label="Дополнительные материалы">
-      <h2>Нет дополнительных материалов</h2>
-      <p>Пока достаточно базового описания, стоимости и вопросов для первого запроса.</p>
+      <h2>Факты и ограничения</h2>
+      <ul>
+        {robot.facts.map((fact) => <li>{fact}</li>)}
+        {robot.service.limitations.map((limitation) => <li>{limitation}</li>)}
+      </ul>
     </section>
 
     <Pricing {...pricing} />
     <Faq {...faq} />
-
-    {isUnitree && <p class="robot-page__marker">unitree-g1 vertical slice pilot</p>}
   </main>
 </BaseLayout>
 
@@ -105,8 +105,8 @@ const faq = {
   .robot-page__facts article, .robot-page__empty { display: grid; gap: var(--kp-card-gap); padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.5rem; background: var(--kp-surface); }
   .robot-page__facts h2, .robot-page__facts p, .robot-page__empty h2, .robot-page__empty p { margin: 0; }
   .robot-page__facts h2, .robot-page__empty h2 { font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); }
-  .robot-page__facts p, .robot-page__empty p { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
-  .robot-page__marker { color: var(--kp-muted); }
+  .robot-page__facts p, .robot-page__empty p, .robot-page__empty li { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .robot-page__empty ul { margin: 0; padding-left: 1.2rem; }
   @media (min-width: 60em) { .robot-page__hero { grid-template-columns: 1fr .75fr; } }
   @media (max-width: 59.9375rem) { .robot-page__facts { grid-template-columns: 1fr; } }
 </style>
