@@ -1,0 +1,13 @@
+{
+  "issue": "KIBER-55",
+  "generatedAt": "2026-08-28T03:44:22.863Z",
+  "routesChecked": 31,
+  "robotsChecked": 24,
+  "launchPagesChecked": 7,
+  "structuralAccepted": 31,
+  "finalApproved": 0,
+  "humanReviewRequired": 31,
+  "status": "passed",
+  "failures": [],
+  "warnings": []
+}
