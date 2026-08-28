@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-contact-lead-visual-pass2",
+  "title": "Contact and lead visual layer pass 2",
+  "status": "in_review_after_pr",
+  "sources": [
+    "docs/source/reference-desktop-v9.html",
+    "docs/source/reference-mobile-v3.html",
+    "data/lead/capability-contract.json"
+  ],
+  "routes": [
+    "/contacts/",
+    "/lead/request/"
+  ],
+  "appliedBlocks": [
+    "30-contact-conversion",
+    "31-lead-form"
+  ],
+  "safety": {
+    "liveLeadRoutingChanged": false,
+    "productionContactsChanged": false,
+    "rawHtmlCopiedIntoRuntime": false,
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false
+  },
+  "humanApprovalRequired": [
+    "final visual approval for contact/lead pass 2",
+    "real public contacts",
+    "live lead routing destinations"
+  ]
+}

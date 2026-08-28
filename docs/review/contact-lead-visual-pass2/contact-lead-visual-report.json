@@ -1,0 +1,11 @@
+{
+  "issue": "KIBER-contact-lead-visual-pass2",
+  "status": "passed",
+  "routesChecked": [
+    "/contacts/",
+    "/lead/request/"
+  ],
+  "liveLeadRoutingChanged": false,
+  "productionContactsChanged": false,
+  "generatedAt": "2026-08-28T14:09:13.032Z"
+}
