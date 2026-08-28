@@ -1,0 +1,13 @@
+{
+  "issue": "KIBER-production-approval-gates",
+  "generatedAt": "2026-08-28T16:37:25.505Z",
+  "gateCount": 7,
+  "productionPermissionIncluded": false,
+  "productionActionAllowed": false,
+  "ownerRealContactsApproved": false,
+  "liveLeadDestinations": "disabled",
+  "analyticsProviderIds": "disabled",
+  "status": "passed",
+  "failures": [],
+  "warnings": []
+}
