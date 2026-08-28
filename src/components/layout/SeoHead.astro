@@ -9,6 +9,10 @@ interface Props {
 
 const { title, description, canonical, noindex = false, image } = Astro.props;
 const robots = noindex ? 'noindex, nofollow' : 'index, follow';
+const siteName = 'КИБЕР ПОРТАЛ';
+const defaultImage = '/assets/placeholders/robot-card.svg';
+const absoluteImage = new URL(image ?? defaultImage, Astro.site ?? 'https://www.kiber-portal.ru').toString();
+const twitterCard = image ? 'summary_large_image' : 'summary';
 ---
 
 <meta charset="UTF-8" />
@@ -16,12 +20,17 @@ const robots = noindex ? 'noindex, nofollow' : 'index, follow';
 <meta name="description" content={description} />
 <meta name="robots" content={robots} />
 <meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content={siteName} />
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 {canonical && <meta property="og:url" content={canonical} />}
-{image && <meta property="og:image" content={image} />}
-<meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+<meta property="og:image" content={absoluteImage} />
+<meta name="twitter:card" content={twitterCard} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{canonical && <meta name="twitter:url" content={canonical} />}
+<meta name="twitter:image" content={absoluteImage} />
 {canonical && <link rel="canonical" href={canonical} />}
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <title>{title}</title>

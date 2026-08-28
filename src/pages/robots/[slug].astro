@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Pricing from '../../components/blocks/Pricing.astro';
 import Faq from '../../components/blocks/Faq.astro';
+import { serviceJsonLd } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const robots = await getCollection('robots');
@@ -11,6 +12,11 @@ export async function getStaticPaths() {
 
 const { robot } = Astro.props;
 const isUnitree = robot.slug === 'unitree-g1';
+const breadcrumbs = [
+  { name: 'Главная', url: '/' },
+  { name: robot.identity.name, url: `/robots/${robot.slug}/` },
+];
+const robotCanonicalPath = `/robots/${robot.slug}/`;
 
 const pricing = {
   title: `Стоимость ${robot.identity.name}`,
@@ -34,9 +40,15 @@ const faq = {
   title={robot.seo.title}
   description={robot.seo.description}
   canonical={robot.seo.canonical}
-  breadcrumbs={[
-    { name: 'Главная', url: '/' },
-    { name: robot.identity.name, url: `/robots/${robot.slug}/` },
+  breadcrumbs={breadcrumbs}
+  jsonLd={[
+    serviceJsonLd({
+      name: `${robot.identity.name} для мероприятий`,
+      description: robot.seo.description,
+      url: robotCanonicalPath,
+      image: robot.media.hero.src,
+      category: 'Аренда робота-гуманоида',
+    }),
   ]}
 >
   <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-robot-slug={robot.slug} data-state="ready" aria-live="polite">

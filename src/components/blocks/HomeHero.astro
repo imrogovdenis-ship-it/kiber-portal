@@ -7,7 +7,7 @@ const { eyebrow, title, lead, primary, secondary, stats, analytics } = Astro.pro
 <section class="home-hero" data-block-id="home-hero" data-review-id="02">
   <div class="home-hero__copy">
     <p class="home-hero__eyebrow">{eyebrow}</p>
-    <h2>{title}</h2>
+    <h1>{title}</h1>
     <p>{lead}</p>
     <div class="home-hero__actions">
       <a class="home-hero__button home-hero__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id} data-analytics-source="home_hero" data-analytics-placement="primary_cta" data-analytics-slug="global">{primary.label}</a>
@@ -23,7 +23,7 @@ const { eyebrow, title, lead, primary, secondary, stats, analytics } = Astro.pro
   .home-hero { display: grid; gap: var(--kp-grid-gap); padding: var(--kp-section-block) var(--kp-content-padding); border-radius: 2rem; background: linear-gradient(135deg, var(--kp-sky), var(--kp-surface)); color: var(--kp-ink); }
   .home-hero__copy { display: grid; gap: var(--kp-card-gap); max-width: 47.5rem; }
   .home-hero__eyebrow { margin: 0; color: var(--kp-blue); font-weight: var(--kp-label-weight); text-transform: uppercase; letter-spacing: var(--kp-label-letter-spacing); }
-  .home-hero h2 { margin: 0; font-family: var(--kp-font-heading); font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.04em; }
+  .home-hero h1 { margin: 0; font-family: var(--kp-font-heading); font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.04em; }
   .home-hero p { margin: 0; font-size: var(--kp-body-size); line-height: var(--kp-body-line-height); }
   .home-hero__actions { display: flex; flex-wrap: wrap; gap: var(--kp-card-gap); }
   .home-hero__button { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: 0.75rem 1.1rem; color: var(--kp-blue); font-weight: var(--kp-heading-weight); text-decoration: none; }

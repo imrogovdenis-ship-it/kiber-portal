@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHero from '../components/blocks/HomeHero.astro';
 import RobotCard from '../components/blocks/RobotCard.astro';
 import CtaStrip from '../components/blocks/CtaStrip.astro';
+import { organizationJsonLd, websiteJsonLd } from '../lib/seo';
 
 const hero = {
   eyebrow: 'Роботы для мероприятий',
@@ -43,6 +44,7 @@ const cta = {
   title="Аренда роботов для мероприятий — КИБЕР ПОРТАЛ"
   description="Вертикальный срез КИБЕР ПОРТАЛ: главная, карточка Unitree G1, заявка и подтверждение."
   canonical="https://www.kiber-portal.ru/"
+  jsonLd={[organizationJsonLd(), websiteJsonLd()]}
 >
   <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
     <HomeHero {...hero} />

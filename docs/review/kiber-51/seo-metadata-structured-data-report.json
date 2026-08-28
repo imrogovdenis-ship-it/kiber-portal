@@ -1,0 +1,85 @@
+{
+  "issue": "KIBER-51",
+  "generatedAt": "2026-08-28T00:55:56.697Z",
+  "launchRoutesChecked": 8,
+  "site": "https://www.kiber-portal.ru",
+  "checks": [
+    "canonical",
+    "meta description",
+    "robots",
+    "unique title",
+    "unique h1",
+    "Open Graph",
+    "Twitter",
+    "JSON-LD"
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "title": "Аренда роботов для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Аренда роботов, которые держат внимание",
+      "jsonLdTypes": [
+        "Organization",
+        "WebSite"
+      ]
+    },
+    {
+      "path": "/robots/unitree-g1/",
+      "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Unitree G1 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/roboty-gumanoidy/",
+      "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
+      "h1": "Роботы-гуманоиды",
+      "jsonLdTypes": [
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/roboty-sobaki/",
+      "title": "Роботы-собаки в аренду — КИБЕР ПОРТАЛ",
+      "h1": "Роботы-собаки",
+      "jsonLdTypes": [
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/compilations/",
+      "title": "Подборки роботов — КИБЕР ПОРТАЛ",
+      "h1": "Подборки",
+      "jsonLdTypes": [
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/articles/",
+      "title": "Блог Кибер Гоши — КИБЕР ПОРТАЛ",
+      "h1": "Блог Кибер Гоши",
+      "jsonLdTypes": [
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/news/",
+      "title": "Новости робототехники — КИБЕР ПОРТАЛ",
+      "h1": "Новости",
+      "jsonLdTypes": [
+        "CollectionPage"
+      ]
+    },
+    {
+      "path": "/contacts/",
+      "title": "Контакты — КИБЕР ПОРТАЛ",
+      "h1": "Контакты",
+      "jsonLdTypes": [
+        "ContactPage"
+      ]
+    }
+  ],
+  "result": "passed"
+}
