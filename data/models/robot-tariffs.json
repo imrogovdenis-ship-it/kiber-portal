@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "status": "needs_business_review",
+  "status": "approved_current_table_with_public_from_price_disclaimer",
   "source": {
     "file": "/home/alex/.hermes/cache/documents/doc_87db8ed74cdc_КИБЕР_ПОРТАЛ_тарифы_аренды_роботов.xlsx",
     "sheet": "Тарифы аренды роботов",
@@ -337,14 +337,16 @@
       "minimumOrder": {
         "minimumTwoHours": false,
         "minimumDurationHours": null,
-        "status": "needs_review",
-        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час."
+        "status": "approved_by_owner_current_table",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
       },
       "normalization": {
-        "status": "needs_review",
+        "status": "approved_by_owner_current_table",
         "priceSourceStatus": "from_xlsx",
         "missingTariffs": [],
-        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
       },
       "marketingHourlyRate": {
         "status": "active",
@@ -945,14 +947,16 @@
       "minimumOrder": {
         "minimumTwoHours": false,
         "minimumDurationHours": null,
-        "status": "needs_review",
-        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час."
+        "status": "approved_by_owner_current_table",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
       },
       "normalization": {
-        "status": "needs_review",
+        "status": "approved_by_owner_current_table",
         "priceSourceStatus": "from_xlsx",
         "missingTariffs": [],
-        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
       },
       "marketingHourlyRate": {
         "status": "active",
@@ -2074,16 +2078,18 @@
       "minimumOrder": {
         "minimumTwoHours": false,
         "minimumDurationHours": 8,
-        "status": "needs_review",
-        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+        "status": "approved_by_owner_current_table",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
       },
       "normalization": {
-        "status": "needs_review",
+        "status": "approved_by_owner_current_table",
         "priceSourceStatus": "partial_from_xlsx",
         "missingTariffs": [
           "four_hours"
         ],
-        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
       },
       "marketingHourlyRate": {
         "status": "active",
@@ -2280,16 +2286,18 @@
       "minimumOrder": {
         "minimumTwoHours": false,
         "minimumDurationHours": 8,
-        "status": "needs_review",
-        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+        "status": "approved_by_owner_current_table",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
       },
       "normalization": {
-        "status": "needs_review",
+        "status": "approved_by_owner_current_table",
         "priceSourceStatus": "partial_from_xlsx",
         "missingTariffs": [
           "four_hours"
         ],
-        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
       },
       "marketingHourlyRate": {
         "status": "active",
@@ -2510,5 +2518,17 @@
     }
   ],
   "unmatchedSourceRows": [],
-  "missingRobotTariffs": []
+  "missingRobotTariffs": [],
+  "ownerDecision": {
+    "decidedAt": "2026-08-28",
+    "source": "Telegram owner decision during KIBER-89 intake",
+    "currentTableIsSourceOfTruth": true,
+    "publicPriceRule": "Show prices as “от X ₽ / час” with “Не является публичной офертой”.",
+    "disputedRobotsApproved": [
+      "arenda-unitree-g1",
+      "arenda-unitree-go2",
+      "arenda-sketchbot",
+      "arenda-robota-tron"
+    ]
+  }
 }

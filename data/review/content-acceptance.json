@@ -36,7 +36,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -63,7 +64,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -90,7 +92,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -117,7 +120,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -144,7 +148,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -171,7 +176,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -198,7 +204,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -225,7 +232,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -252,7 +260,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -279,7 +288,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -306,7 +316,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -333,7 +344,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -360,7 +372,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -387,7 +400,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -414,7 +428,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -441,7 +456,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -468,7 +484,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -495,7 +512,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -522,7 +540,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -549,7 +568,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -576,7 +596,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -603,7 +624,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -630,7 +652,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -657,7 +680,8 @@
       "reviewFlags": [
         "needs_human_final_content_approval",
         "needs_media_rights_review",
-        "review_metadata_private_not_final_approval"
+        "review_metadata_private_not_final_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
@@ -675,7 +699,8 @@
       "structuralStatus": "accepted_structurally",
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -691,7 +716,8 @@
       "structuralStatus": "accepted_structurally",
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -707,7 +733,8 @@
       "structuralStatus": "accepted_structurally",
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -724,7 +751,8 @@
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
         "needs_editorial_content_review",
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -741,7 +769,8 @@
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
         "needs_editorial_content_review",
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -758,7 +787,8 @@
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
         "needs_editorial_content_review",
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -775,7 +805,8 @@
       "finalApprovalStatus": "needs_human_review",
       "reviewFlags": [
         "needs_contact_business_approval",
-        "needs_human_final_content_approval"
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
@@ -789,5 +820,12 @@
     "launchPages": 7,
     "finalApproved": 0,
     "humanReviewRequired": 31
+  },
+  "ownerStructuralApproval": {
+    "status": "structurally_approved_not_final_business_legal",
+    "approvedAt": "2026-08-28",
+    "source": "Telegram owner decision",
+    "finalBusinessLegalApproval": false,
+    "contentApprovalPack": "docs/review/kiber-55/content-approval-pack.md"
   }
 }

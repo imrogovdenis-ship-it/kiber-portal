@@ -12,7 +12,11 @@ const defaults = {
   ],
   messengers: [{ href: siteConfig.telegram, label: 'Telegram' }, { href: siteConfig.whatsapp, label: 'WhatsApp' }],
   legal_notice: `© ${new Date().getUTCFullYear()} КИБЕР ПОРТАЛ · Не является публичной офертой`,
-  legal_links: [{ href: '/privacy-policy', label: 'Политика конфиденциальности' }, { href: '/cookie-policy', label: 'Политика cookie' }],
+  legal_links: [
+    { href: '/privacy-policy', label: 'Политика обработки персональных данных' },
+    { href: '/consent', label: 'Согласие на обработку персональных данных' },
+    { href: '/cookie-policy', label: 'Политика cookie' },
+  ],
 };
 const { logo_label = defaults.logo_label, description = defaults.description, sections = defaults.sections, phone = siteConfig.phone, email = siteConfig.email, messengers = defaults.messengers, legal_notice = defaults.legal_notice, legal_links = defaults.legal_links } = Astro.props;
 const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
