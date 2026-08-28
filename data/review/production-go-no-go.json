@@ -6,8 +6,8 @@
     "repository": "imrogovdenis-ship-it/kiber-portal",
     "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
     "branch": "codex/kiber-15-controlled-rebuild",
-    "head": "2169024",
-    "headTitle": "feat: contact and lead visual pass 2"
+    "head": "5698898",
+    "headTitle": "feat: add fourth legal document"
   },
   "productionDecision": {
     "status": "NO_GO",
@@ -19,12 +19,13 @@
     "analyticsProviderCookiesAllowed": false
   },
   "readiness": {
-    "routesChecked": 36,
+    "routesChecked": 37,
     "robotRoutesChecked": 24,
     "legalRoutesPresent": [
       "/privacy-policy/",
       "/consent/",
-      "/cookie-policy/"
+      "/cookie-policy/",
+      "/terms/"
     ],
     "leadRoutingEnabled": false,
     "leadDestinations": 0,
@@ -35,7 +36,7 @@
     {
       "id": "controlled-rebuild-base",
       "status": "ready_for_review",
-      "evidence": "Git branch codex/kiber-15-controlled-rebuild at 2169024"
+      "evidence": "Git branch codex/kiber-15-controlled-rebuild at 5698898"
     },
     {
       "id": "robot-pages",
@@ -45,7 +46,7 @@
     {
       "id": "legal-static-pages",
       "status": "present_needs_final_business_confirmation",
-      "evidence": "/privacy-policy/, /consent/, /cookie-policy/ are present in readiness crawl"
+      "evidence": "/privacy-policy/, /consent/, /cookie-policy/, /terms/ are present in readiness crawl and cross-linked"
     },
     {
       "id": "contacts-lead-visual",
@@ -129,6 +130,7 @@
     "Утвердить или заменить публичные контакты.",
     "Утвердить live lead destinations и fallback-маршрут заявок.",
     "Утвердить media rights для production assets или список замен.",
+    "Подтвердить four-document legal package: privacy-policy, consent, cookie-policy, terms.",
     "Утвердить legal/business launch package целиком.",
     "Выбрать analytics provider и разрешить конкретные IDs/cookies.",
     "Решить судьбу открытых PR #43, #44, #45.",

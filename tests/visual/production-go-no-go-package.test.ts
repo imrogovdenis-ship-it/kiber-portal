@@ -14,10 +14,10 @@ test('production go/no-go package records exact launch map and stays NO-GO', () 
   assert.equal(pack.productionDecision.dnsChangeAllowed, false);
   assert.equal(pack.productionDecision.secretsChangeAllowed, false);
   assert.equal(pack.currentBase.branch, 'codex/kiber-15-controlled-rebuild');
-  assert.equal(pack.currentBase.head, '2169024');
-  assert.equal(pack.readiness.routesChecked, 36);
+  assert.equal(pack.currentBase.head, '5698898');
+  assert.equal(pack.readiness.routesChecked, 37);
   assert.equal(pack.readiness.robotRoutesChecked, 24);
-  assert.deepEqual(pack.readiness.legalRoutesPresent, ['/privacy-policy/', '/consent/', '/cookie-policy/']);
+  assert.deepEqual(pack.readiness.legalRoutesPresent, ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/']);
 });
 
 test('production go/no-go package lists concrete blockers and required owner decisions', () => {
@@ -42,5 +42,5 @@ test('production go/no-go report and smoke gate are wired into CI', () => {
   assert.match(pkg.scripts.ci, /npm run test:production-go-no-go/);
   assert.match(read('scripts/production-go-no-go-smoke.mjs'), /NO_GO/);
   assert.match(report, /## Решение: NO-GO/);
-  assert.match(report, /2169024/);
+  assert.match(report, /5698898/);
 });
