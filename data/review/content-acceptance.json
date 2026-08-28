@@ -1,0 +1,793 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-55",
+  "description": "Content acceptance registry for 24 robot pages and public launch pages. This is structural acceptance only; final approved status requires explicit human evidence.",
+  "allowedStatuses": [
+    "accepted_structurally",
+    "needs_copy_review",
+    "needs_media_rights_review",
+    "needs_price_review",
+    "blocked_by_business_approval"
+  ],
+  "policy": {
+    "finalApprovalRequiresHumanOwner": true,
+    "placeholderPattern": "placeholder|TODO|TBD|lorem|заглушк|черновик|пилотная карточка|вертикальный срез",
+    "internalPhrasePattern": "KIBER-\\\\d+|controlled rebuild|review-only|needs_review|source-of-truth|stage2|debug|fixture|sentinel",
+    "publicApprovedStatus": "approved",
+    "structuralAcceptanceStatus": "accepted_structurally"
+  },
+  "robots": [
+    {
+      "id": "robot:arenda-agibot-x2",
+      "type": "robot",
+      "slug": "arenda-agibot-x2",
+      "route": "/robots/arenda-agibot-x2/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-bellabot",
+      "type": "robot",
+      "slug": "arenda-bellabot",
+      "route": "/robots/arenda-bellabot/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-glambot",
+      "type": "robot",
+      "slug": "arenda-glambot",
+      "route": "/robots/arenda-glambot/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-inchbot-l1-w-edu",
+      "type": "robot",
+      "slug": "arenda-inchbot-l1-w-edu",
+      "route": "/robots/arenda-inchbot-l1-w-edu/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-kettybot",
+      "type": "robot",
+      "slug": "arenda-kettybot",
+      "route": "/robots/arenda-kettybot/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-klipmeiker",
+      "type": "robot",
+      "slug": "arenda-klipmeiker",
+      "route": "/robots/arenda-klipmeiker/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-mini-robo-kofeyni",
+      "type": "robot",
+      "slug": "arenda-mini-robo-kofeyni",
+      "route": "/robots/arenda-mini-robo-kofeyni/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-noetix-bumi",
+      "type": "robot",
+      "slug": "arenda-noetix-bumi",
+      "route": "/robots/arenda-noetix-bumi/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-promobot-v4",
+      "type": "robot",
+      "slug": "arenda-promobot-v4",
+      "route": "/robots/arenda-promobot-v4/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-robo-kofeyni",
+      "type": "robot",
+      "slug": "arenda-robo-kofeyni",
+      "route": "/robots/arenda-robo-kofeyni/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-roboshashki",
+      "type": "robot",
+      "slug": "arenda-roboshashki",
+      "route": "/robots/arenda-roboshashki/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-robot-barmen",
+      "type": "robot",
+      "slug": "arenda-robot-barmen",
+      "route": "/robots/arenda-robot-barmen/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-robota-ardi",
+      "type": "robot",
+      "slug": "arenda-robota-ardi",
+      "route": "/robots/arenda-robota-ardi/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-robota-hudozhnika-a4",
+      "type": "robot",
+      "slug": "arenda-robota-hudozhnika-a4",
+      "route": "/robots/arenda-robota-hudozhnika-a4/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-robota-sofiya",
+      "type": "robot",
+      "slug": "arenda-robota-sofiya",
+      "route": "/robots/arenda-robota-sofiya/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-robota-tron",
+      "type": "robot",
+      "slug": "arenda-robota-tron",
+      "route": "/robots/arenda-robota-tron/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-senserobot",
+      "type": "robot",
+      "slug": "arenda-senserobot",
+      "route": "/robots/arenda-senserobot/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-sketchbot",
+      "type": "robot",
+      "slug": "arenda-sketchbot",
+      "route": "/robots/arenda-sketchbot/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-unitree-g1",
+      "type": "robot",
+      "slug": "arenda-unitree-g1",
+      "route": "/robots/arenda-unitree-g1/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-unitree-go2",
+      "type": "robot",
+      "slug": "arenda-unitree-go2",
+      "route": "/robots/arenda-unitree-go2/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-unitree-h2",
+      "type": "robot",
+      "slug": "arenda-unitree-h2",
+      "route": "/robots/arenda-unitree-h2/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-unitree-r1",
+      "type": "robot",
+      "slug": "arenda-unitree-r1",
+      "route": "/robots/arenda-unitree-r1/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-uv-box",
+      "type": "robot",
+      "slug": "arenda-uv-box",
+      "route": "/robots/arenda-uv-box/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "robot:arenda-xiaomi-cyberdog-2",
+      "type": "robot",
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "route": "/robots/arenda-xiaomi-cyberdog-2/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasHeroAlt": true,
+        "hasPricingDisclaimer": true,
+        "hasFaq": true,
+        "hasScenarios": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "needs_media_rights_review",
+        "review_metadata_private_not_final_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    }
+  ],
+  "launchPages": [
+    {
+      "id": "page:/",
+      "type": "launch_page",
+      "route": "/",
+      "template": "home",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/roboty-gumanoidy/",
+      "type": "launch_page",
+      "route": "/roboty-gumanoidy/",
+      "template": "category",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/roboty-sobaki/",
+      "type": "launch_page",
+      "route": "/roboty-sobaki/",
+      "template": "category",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/compilations/",
+      "type": "launch_page",
+      "route": "/compilations/",
+      "template": "compilations-index",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_editorial_content_review",
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/",
+      "type": "launch_page",
+      "route": "/articles/",
+      "template": "articles-index",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_editorial_content_review",
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/news/",
+      "type": "launch_page",
+      "route": "/news/",
+      "template": "news-index",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_editorial_content_review",
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/contacts/",
+      "type": "launch_page",
+      "route": "/contacts/",
+      "template": "contacts",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "needs_contact_business_approval",
+        "needs_human_final_content_approval"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    }
+  ],
+  "summary": {
+    "robots": 24,
+    "launchPages": 7,
+    "finalApproved": 0,
+    "humanReviewRequired": 31
+  }
+}
