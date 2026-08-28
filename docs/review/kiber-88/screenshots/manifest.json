@@ -1,8 +1,7 @@
 {
   "issue": "KIBER-88",
-  "revision": "mobile-feedback-fix",
-  "source": "local dist after mobile feedback fix",
-  "baseUrl": "http://127.0.0.1:4331",
+  "revision": "robot-media-square-fix",
+  "baseUrl": "http://127.0.0.1:4332",
   "screenshots": [
     {
       "route": "/",
@@ -248,5 +247,5 @@
   "screenshotCount": 32,
   "mobileOverflowChecked": true,
   "mobileOverflowCount": 0,
-  "generatedAt": "2026-08-28T05:38:16.337Z"
+  "generatedAt": "2026-08-28T06:39:33.692Z"
 }

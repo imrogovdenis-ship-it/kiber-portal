@@ -13,23 +13,31 @@ Visual sources:
 ## Pass 1 applied areas
 
 - `01-header`: reference-like sticky header rhythm and compact CTA.
-- `02-home-hero`: dark card, blue/white CTAs, 16:9/contain mobile image behavior, stats cards, responsive typography.
+- `02-home-hero`: dark card, blue/white CTAs, horizontal 16:9/contain mobile image behavior, stats cards, responsive typography.
 - `05-robot-card`: card/badge/radius/color treatment through the visual layer.
 - `09-cta-strip`: reference dark CTA, compact stacked mobile CTAs.
-- `11-robot-hero`: detail-page hero layout, 16:9/contain mobile media behavior, compact stacked mobile buttons.
+- `11-robot-hero`: detail-page hero layout; mobile/tablet image card remains square 1:1 with contained image per review feedback.
 - `15-pricing`: dark pricing surface treatment.
 - `33-footer`: reference dark footer, mobile-safe text wrapping, tablet 768 two-column arrangement with contacts top-right.
 
-## User feedback addressed after first review
+## User feedback addressed
 
-- Homepage hero image was visually too square on mobile; fixed by forcing a horizontal 16:9 viewport slot and `object-fit: contain` in the mobile/tablet stack.
-- Homepage mobile 375 buttons were too wide/split; fixed as compact stacked CTAs.
-- Homepage stats/value blocks overflowed on 375; fixed container/grid sizing and verified no horizontal overflow.
-- Robot detail page mobile image showed only a cropped portion; fixed mobile media to 16:9 + contain.
-- Robot detail page mobile text/buttons now fit within viewport and buttons stack compactly.
-- Contacts/lead mobile text/form visible area no longer horizontally overflows.
-- Footer mobile logo/description/contact text wraps within viewport.
-- Footer tablet 768 now uses a two-column arrangement: brand/description left, contacts upper-right, catalog/content below.
+First feedback pass:
+
+- Home mobile 375: fixed square/cropped hero image behavior by using a horizontal 16:9 slot with contained image.
+- Home mobile 375: compact stacked hero buttons, stats fit within viewport.
+- Root mobile overflow: fixed erroneous `320px -> 31.25rem` conversion and added sizing guard; screenshot capture verified `mobile overflow count 0`.
+- Robot page mobile 375: text/buttons fit within viewport.
+- Contacts/lead mobile: verified visible text/form area no longer horizontally overflows.
+- Footer mobile: text/logo/contact blocks wrap within viewport.
+- Footer tablet 768: two-column arrangement with brand/description left, contacts upper-right, catalog/content below.
+
+Second feedback pass:
+
+- Home was accepted and left unchanged.
+- Robot page mobile 375 and tablet 768 image card returned to square 1:1 format instead of horizontal 16:9.
+- Robot image remains `object-fit: contain` in the square card so the robot fits without destructive crop.
+- Regression test now protects this distinction: HomeHero keeps 16:9 mobile image, RobotPage media stays square 1:1.
 
 ## Verification
 
@@ -39,6 +47,7 @@ Commands run locally:
 node --import tsx --test tests/visual/reference-visual-layer-pass1.test.ts
 npm run build:production
 npm run test:reference-visual-layer
+npm run ci
 ```
 
 Screenshot capture verification:
@@ -46,8 +55,6 @@ Screenshot capture verification:
 ```text
 captured 16 route x viewport variants to docs/review/kiber-88/screenshots; mobile overflow count 0
 ```
-
-A full `npm run ci` is rerun after this feedback fix before pushing.
 
 ## Screenshot evidence
 

@@ -49,8 +49,9 @@ test('KIBER-88 imports a reference-layer CSS file with core reference primitives
   assert.match(css, /\.robot-card__badge/);
   assert.match(css, /min-width:\s*20rem/);
   assert.doesNotMatch(css, /min-width:\s*31\.25rem/);
-  assert.match(css, /aspect-ratio:\s*16\s*\/\s*9/);
   assert.match(css, /object-fit:\s*contain/);
+  assert.doesNotMatch(css, /\.robot-page__media\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*9/s);
+  assert.match(css, /\.robot-page__media\s*\{[^}]*aspect-ratio:\s*1/s);
 
   const baseLayout = text(baseLayoutPath);
   assert.match(baseLayout, /\.\.\/styles\/reference-layer\.css/);
@@ -61,6 +62,8 @@ test('KIBER-88 home hero and robot page expose reference-compatible structure', 
   assert.match(hero, /home-hero__card/);
   assert.match(hero, /home-hero__image/);
   assert.match(hero, /home-hero__content/);
+  assert.match(hero, /aspect-ratio:\s*16\s*\/\s*9/);
+  assert.match(hero, /object-fit:\s*contain/);
   assert.match(hero, /data-rv="02"/);
 
   const index = text(indexPath);
