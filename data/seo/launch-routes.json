@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "site": "https://www.kiber-portal.ru",
-  "description": "KIBER-43 controlled rebuild launch route registry. Preview, 404, thank-you and redirect source URLs are intentionally excluded from sitemap.",
+  "description": "KIBER-43/KIBER-45 controlled rebuild launch route registry. Robot detail pages render through one /robots/[slug]/ template; preview, 404, thank-you and redirect source URLs are excluded from sitemap.",
   "routes": [
     {
       "path": "/",
@@ -12,12 +12,244 @@
       "template": "home"
     },
     {
-      "path": "/robots/unitree-g1/",
+      "path": "/robots/arenda-agibot-x2/",
       "status": "launch",
       "sitemap": true,
-      "priority": 0.9,
+      "priority": 0.85,
       "changefreq": "weekly",
-      "template": "robot-detail"
+      "template": "robot-detail",
+      "sourceSlug": "arenda-agibot-x2",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-bellabot/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-bellabot",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-glambot/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-glambot",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-inchbot-l1-w-edu/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-inchbot-l1-w-edu",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-kettybot/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-kettybot",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-klipmeiker/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-klipmeiker",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-mini-robo-kofeyni/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-mini-robo-kofeyni",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-noetix-bumi/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-noetix-bumi",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-promobot-v4/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-promobot-v4",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-robo-kofeyni/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-robo-kofeyni",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-roboshashki/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-roboshashki",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-robot-barmen/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-robot-barmen",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-robota-ardi/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-robota-ardi",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-robota-hudozhnika-a4/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-robota-hudozhnika-a4",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-robota-sofiya/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-robota-sofiya",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-robota-tron/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-robota-tron",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-senserobot/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-senserobot",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-sketchbot/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-sketchbot",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-unitree-g1/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-unitree-g1",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-unitree-go2/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-unitree-go2",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-unitree-h2/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-unitree-h2",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-unitree-r1/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-unitree-r1",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-uv-box/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-uv-box",
+      "sourceStatus": "review"
+    },
+    {
+      "path": "/robots/arenda-xiaomi-cyberdog-2/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.85,
+      "changefreq": "weekly",
+      "template": "robot-detail",
+      "sourceSlug": "arenda-xiaomi-cyberdog-2",
+      "sourceStatus": "review"
     },
     {
       "path": "/roboty-gumanoidy/",

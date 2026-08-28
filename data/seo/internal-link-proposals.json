@@ -8,35 +8,40 @@
     "data/seo/launch-routes.json",
     "data/seo/semantic-core.json"
   ],
-  "allowedStatuses": ["generated_needs_review", "approved", "rejected", "disabled"],
+  "allowedStatuses": [
+    "generated_needs_review",
+    "approved",
+    "rejected",
+    "disabled"
+  ],
   "proposals": [
     {
-      "id": "home-to-unitree-g1",
+      "id": "home-to-arenda-unitree-g1",
       "source": "cta-proof-path",
       "status": "generated_needs_review",
       "publicRender": false,
       "sourceRoute": "/",
-      "targetRoute": "/robots/unitree-g1/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
       "anchor": "Unitree G1 для мероприятий",
       "reason": "Commercial home intent can point to the current pilot robot detail page after review."
     },
     {
-      "id": "unitree-g1-to-callback-request",
+      "id": "arenda-unitree-g1-to-callback-request",
       "source": "cta-proof-path",
       "status": "generated_needs_review",
       "publicRender": false,
-      "sourceRoute": "/robots/unitree-g1/",
+      "sourceRoute": "/robots/arenda-unitree-g1/",
       "targetRoute": "/lead/request/",
       "anchor": "запросить обратный звонок по Unitree G1",
       "reason": "Robot detail should have a reviewed conversion path; lead routing remains separately gated."
     },
     {
-      "id": "humanoid-category-to-unitree-g1",
+      "id": "humanoid-category-to-arenda-unitree-g1",
       "source": "semantic-core",
       "status": "generated_needs_review",
       "publicRender": false,
       "sourceRoute": "/roboty-gumanoidy/",
-      "targetRoute": "/robots/unitree-g1/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
       "anchor": "аренда Unitree G1",
       "reason": "Humanoid category semantic cluster aligns with the current Unitree G1 model route."
     },

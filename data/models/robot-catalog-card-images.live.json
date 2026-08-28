@@ -1,0 +1,395 @@
+{
+  "version": "0.2.0",
+  "status": "live_site_verified",
+  "source": "https://www.kiber-portal.ru/",
+  "description": "Correct catalog card images from live homepage block “Каталог аренды роботов”; use these for robot cards/catalog grids instead of hero/gallery images.",
+  "count": 24,
+  "missing": [],
+  "images": [
+    {
+      "slug": "arenda-robota-sofiya",
+      "title": "Робот София",
+      "src": "/images/tild3733-3365-4136-a436-613430646535__sophia.png",
+      "alt": "Робот-гуманоид Sophia (Hanson Robotics) — премиальная модель в аренду на мероприятие",
+      "priceTextOnLiveSite": "Цена по запросу",
+      "descriptionOnLiveSite": "Легендарный гуманоид Hanson Robotics — эксклюзив в России",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3733-3365-4136-a436-613430646535/Sophia.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-unitree-g1",
+      "title": "Робот-гуманоид Unitree G1",
+      "src": "/images/tild6264-3337-4963-a439-353465643933__unitree_g1.png",
+      "alt": "Робот-гуманоид Unitree G1 кланяется и машет рукой гостям на мероприятии",
+      "priceTextOnLiveSite": "от 50 000",
+      "descriptionOnLiveSite": "Узнаваемый гуманоид: уверенно ходит, танцует и ведет диалог с гостями",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6264-3337-4963-a439-353465643933/unitree_g1.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "title": "Робот-гуманоид Unitree H2",
+      "src": "/images/tild3761-3132-4762-b230-626131353038__unitree_h2.png",
+      "alt": "Робот-гуманоид Unitree H2 с мимикой лица, рост, близкий к человеческому",
+      "priceTextOnLiveSite": "Цена по запросу",
+      "descriptionOnLiveSite": "Рослый гуманоид с мимикой лица, почти в человеческий рост",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3761-3132-4762-b230-626131353038/unitree_h2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "title": "Робот-гуманоид Unitree R1",
+      "src": "/images/tild6535-6164-4536-a138-353939386633__unitree_r1.png",
+      "alt": "Робот-гуманоид Unitree R1 выполняет акробатический трюк на мероприятии",
+      "priceTextOnLiveSite": "от 50 000",
+      "descriptionOnLiveSite": "Компактный акробатичный гуманоид: кувырки, бег и трюки",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6535-6164-4536-a138-353939386633/unitree_r1.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "title": "Робот-гуманоид Noetix Bumi",
+      "src": "/images/tild3732-6361-4466-b362-613864343830__bumi.png",
+      "alt": "Робот-гуманоид Noetix Bumi общается с гостями на мероприятии",
+      "priceTextOnLiveSite": "от 40 000",
+      "descriptionOnLiveSite": "Компактный робот-подросток: ходит, танцует и общается с гостями",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3732-6361-4466-b362-613864343830/Bumi.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-agibot-x2",
+      "title": "Робот-гуманоид Agibot X2",
+      "src": "/images/tild3239-6334-4164-b832-633832396663__agibot_x2.png",
+      "alt": "Робот-гуманоид Agibot X2 с живой мимикой на презентации",
+      "priceTextOnLiveSite": "от 100 000",
+      "descriptionOnLiveSite": "Гуманоид с живой мимикой и жестикуляцией для шоу и презентаций",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3239-6334-4164-b832-633832396663/Agibot_X2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "title": "Робот Арди",
+      "src": "/images/tild3933-6262-4535-a562-643831363033__ardi.png",
+      "alt": "Робот Арди — андроид с живой мимикой лица — общается с гостями мероприятия",
+      "priceTextOnLiveSite": "от 250 000",
+      "descriptionOnLiveSite": "Робот-андроид с живой мимикой лица и диалогом на базе ИИ",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3933-6262-4535-a562-643831363033/ardi.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "title": "Робот Promobot V4",
+      "src": "/images/tild6364-3738-4261-b535-333333393532__promobot_v4.png",
+      "alt": "Промо-робот Promobot V4 в аренду объезжает гостей мероприятия и раздаёт купоны",
+      "priceTextOnLiveSite": "от 75 000",
+      "descriptionOnLiveSite": "Промо-робот сам объезжает гостей, общается и раздаёт купоны",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6364-3738-4261-b535-333333393532/Promobot_V4.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "title": "Робота-собака Unitree Go2",
+      "src": "/images/tild6434-3334-4537-b665-653438616634__unitree_go2.png",
+      "alt": "Робот-собака Unitree Go2 в аренду делает трюки и танцует на сцене мероприятия",
+      "priceTextOnLiveSite": "от 25 000",
+      "descriptionOnLiveSite": "Робособака делает трюки, танцует и бегает по сцене",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6434-3334-4537-b665-653438616634/Unitree_Go2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "title": "Робота-собака Inchbot L1-W",
+      "src": "/images/tild3763-6138-4462-b934-316636356537__inchbot_l1-w.png",
+      "alt": "Робот-собака Inchbot L1-W показывает STEM-программу на детском мероприятии",
+      "priceTextOnLiveSite": "от 50 000",
+      "descriptionOnLiveSite": "Образовательный робот-пёс для школ и STEM-мероприятий",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3763-6138-4462-b934-316636356537/Inchbot_L1-W.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "title": "Робота Xiaomi Cyberdog 2",
+      "src": "/images/tild3966-6632-4234-a131-313036656130__cyberdog_2.png",
+      "alt": "Робот-собака Xiaomi Cyberdog 2 делает сальто и акробатические трюки",
+      "priceTextOnLiveSite": "от 30 000",
+      "descriptionOnLiveSite": "Робособака с акробатикой, сальто и кастомизацией корпуса",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3966-6632-4234-a131-313036656130/Cyberdog_2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "title": "Модульный робот Tron",
+      "src": "/images/tild3065-3266-4766-a266-306366363331__tron.png",
+      "alt": "Модульный двуногий робот Tron на колёсно-шаговой платформе",
+      "priceTextOnLiveSite": "от 90 000",
+      "descriptionOnLiveSite": "Двуногий робот с колёсно-шаговой платформой",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3065-3266-4766-a266-306366363331/tron.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-bellabot",
+      "title": "Робот-официант BellaBot",
+      "src": "/images/tild3736-3232-4461-a161-313438363136__bellabot.png",
+      "alt": "Робот-официант BellaBot в виде кота разносит блюда и напитки гостям",
+      "priceTextOnLiveSite": "от 75 000",
+      "descriptionOnLiveSite": "Робот-кот с подносами разносит блюда и напитки по залу",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3736-3232-4461-a161-313438363136/BellaBot.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-kettybot",
+      "title": "Робот-официант KettyBot",
+      "src": "/images/tild6530-6163-4731-b964-396561616134__kettybot.png",
+      "alt": "Робот-доставщик KettyBot везёт заказы гостям с рекламным экраном",
+      "priceTextOnLiveSite": "от 55 000",
+      "descriptionOnLiveSite": "Робот-доставщик с рекламным экраном разносит заказы гостям",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6530-6163-4731-b964-396561616134/KettyBot.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "title": "Робот-художник Sketchbot",
+      "src": "/images/tild6533-6335-4234-a361-316135646435__sketchbot_2.png",
+      "alt": "Робот-художник Sketchbot в аренду рисует гостю карандашный блиц-портрет",
+      "priceTextOnLiveSite": "от 70 000",
+      "descriptionOnLiveSite": "Роборука рисует гостю карандашный блиц-портрет за минуту",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6533-6335-4234-a361-316135646435/Sketchbot_2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "title": "Робот-художник",
+      "src": "/images/tild6666-3234-4362-a233-313463356330__artist.png",
+      "alt": "Роборука рисует гостю мероприятия детальный портрет карандашом",
+      "priceTextOnLiveSite": "от 80 000",
+      "descriptionOnLiveSite": "Роборука рисует детальный портрет А4 настоящим карандашом",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6666-3234-4362-a233-313463356330/artist.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-robot-barmen",
+      "title": "Робот-бармен Робобар",
+      "src": "/images/tild3131-6439-4161-b932-663264623638__barmen.png",
+      "alt": "Робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного планшета",
+      "priceTextOnLiveSite": "от 170 000",
+      "descriptionOnLiveSite": "Робот-куб готовит коктейли по заказу с сенсорного планшета",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3131-6439-4161-b932-663264623638/barmen.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-senserobot",
+      "title": "Робот-шахматист SenseRobot",
+      "src": "/images/tild3661-3037-4330-a139-663063333930__chess_robot.png",
+      "alt": "Робот-шахматист SenseRobot играет в шахматы, сам передвигая фигуры",
+      "priceTextOnLiveSite": "от 80 000",
+      "descriptionOnLiveSite": "Робот сам играет в шахматы, передвигая фигуры рукой",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3661-3037-4330-a139-663063333930/chess_robot.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "title": "Робот-шашки",
+      "src": "/images/tild6165-3562-4364-a636-366564626537__chess_2.png",
+      "alt": "Робот с манипулятором играет в шашки с гостем мероприятия",
+      "priceTextOnLiveSite": "от 90 000",
+      "descriptionOnLiveSite": "Робот с камерой и манипулятором играет с гостями в шашки",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild6165-3562-4364-a636-366564626537/chess_2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "title": "Робот-кофейня",
+      "src": "/images/tild3566-3565-4133-b336-353764383938__coffee2.png",
+      "alt": "Робот-кофейня в аренду — роборука готовит кофе гостям мероприятия",
+      "priceTextOnLiveSite": "от 200 000",
+      "descriptionOnLiveSite": "Роборука готовит кофе гостям мероприятия без бариста-человека",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3566-3565-4133-b336-353764383938/coffee2.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "title": "Мини робот-кофейня",
+      "src": "/images/tild3762-3662-4633-a666-323265656433__coffee.png",
+      "alt": "Робот мини-кофейня в аренду — готовит кофе и мороженое гостям мероприятия",
+      "priceTextOnLiveSite": "от 160 000",
+      "descriptionOnLiveSite": "Компактный робот-бариста: кофе и мороженое прямо на мероприятии",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3762-3662-4633-a666-323265656433/coffee.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-glambot",
+      "title": "Робот GlamBot",
+      "src": "/images/tild3737-3334-4066-b863-613063396638__glam_bot.png",
+      "alt": "Робокамера GlamBot снимает slow-motion видео в стиле красной дорожки",
+      "priceTextOnLiveSite": "от 150 000",
+      "descriptionOnLiveSite": "Робокамера снимает slow-motion ролики в стиле красной дорожки",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3737-3334-4066-b863-613063396638/glam_bot.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "title": "Робот Клипмейкер",
+      "src": "/images/tild3037-6633-4865-b833-666239643534__clipmaker.png",
+      "alt": "Роборука с камерой Клипмейкер снимает динамичное моушн-видео гостей",
+      "priceTextOnLiveSite": "от 150 000",
+      "descriptionOnLiveSite": "Роборука с камерой снимает динамичное моушн-видео гостей на мероприятии",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3037-6633-4865-b833-666239643534/clipmaker.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    },
+    {
+      "slug": "arenda-uv-box",
+      "title": "Интерактивный экран UV-BOX",
+      "src": "/images/tild3835-3238-4535-b634-373035616266__uv_box.png",
+      "alt": "Интерактивная сенсорная витрина UV-BOX с 3D-эффектом парения товара в воздухе",
+      "priceTextOnLiveSite": "от 200 000",
+      "descriptionOnLiveSite": "Интерактивная сенсорная витрина с 3D-эффектом парения товара в воздухе",
+      "sourceLiveSrc": "https://static.tildacdn.com/tild3835-3238-4535-b634-373035616266/uv_box.png",
+      "source": "live_home_catalog_t786",
+      "visualRole": "catalog_square_robot_on_white_background",
+      "dimensionsObserved": {
+        "desktopCssBox": "281x281 on 1265px viewport",
+        "sourceBlockClass": "t786__bgimg\nt-bgimg js-product-img"
+      },
+      "reviewStatus": "live_site_verified"
+    }
+  ],
+  "mappedLocalCount": 24
+}
