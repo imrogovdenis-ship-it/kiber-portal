@@ -6,11 +6,11 @@ const { title, disclaimer, items } = Astro.props as PricingData;
 <section class="robot-pricing" data-block-id="pricing" data-review-id="15">
   <header>
     <h2>{title}</h2>
-    <p>{disclaimer}</p>
+    <p class="robot-pricing__disclaimer" id="robot-pricing-disclaimer">{disclaimer}</p>
   </header>
   <div class="robot-pricing__grid">
     {items.map((item) => (
-      <article class="robot-pricing__card">
+      <article class="robot-pricing__card" aria-describedby="robot-pricing-disclaimer">
         <h3>{item.label}</h3>
         <p class="robot-pricing__price">{item.price}</p>
         <p>{item.note}</p>

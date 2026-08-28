@@ -14,6 +14,43 @@
     "media_rights_gated",
     "production_blockers"
   ],
+  "criticalRoutes": [
+    {
+      "path": "/",
+      "purpose": "commercial entry",
+      "sitemap": true
+    },
+    {
+      "path": "/contacts/",
+      "purpose": "placeholder contact trust page",
+      "sitemap": true
+    },
+    {
+      "path": "/lead/request/",
+      "purpose": "capability-only lead entry",
+      "sitemap": false
+    },
+    {
+      "path": "/lead/thanks/",
+      "purpose": "non-indexed lead confirmation",
+      "sitemap": false
+    },
+    {
+      "path": "/privacy-policy/",
+      "purpose": "live-site sourced legal document",
+      "sitemap": false
+    },
+    {
+      "path": "/consent/",
+      "purpose": "live-site sourced consent document",
+      "sitemap": false
+    },
+    {
+      "path": "/cookie-policy/",
+      "purpose": "live-site sourced cookie document",
+      "sitemap": false
+    }
+  ],
   "productionPermission": false,
   "goNoGoStatus": "blocked_until_owner_decisions",
   "productionBlockers": [
@@ -23,5 +60,11 @@
     "media rights/legal approval for production assets",
     "analytics provider decision and IDs",
     "explicit production deploy permission"
+  ],
+  "requiredLegalRoutes": [
+    "/privacy-policy/",
+    "/consent/",
+    "/cookie-policy/",
+    "/terms/"
   ]
 }

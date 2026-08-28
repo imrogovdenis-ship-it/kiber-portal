@@ -16,6 +16,7 @@ assert.equal(registry.productionPermission, false);
 assert.equal(registry.goNoGoStatus, 'blocked_until_owner_decisions');
 
 const routes = launchRoutes.routes.map((route) => route.path);
+const routeMeta = new Map(launchRoutes.routes.map((route) => [route.path, route]));
 const routeResults = [];
 for (const route of routes) {
   const file = route === '/' ? 'dist/index.html' : join('dist', route.replace(/^\//, '').replace(/\/$/, ''), 'index.html');
@@ -23,6 +24,12 @@ for (const route of routes) {
   assert.equal(exists, true, `${route} missing ${file}`);
   const html = read(file);
   routeResults.push({ route, file, h1Count: (html.match(/<h1\b/g) || []).length, hasCanonical: /rel="canonical"/.test(html) });
+}
+
+for (const route of registry.criticalRoutes || []) {
+  const meta = routeMeta.get(route.path);
+  assert(meta, `Critical route ${route.path} must exist in launch route inventory`);
+  assert.equal(meta.sitemap, route.sitemap, `Critical route ${route.path} sitemap mismatch`);
 }
 
 assert.equal(existsSync(resolve(root, 'dist/404.html')), true, '404 page must exist');
@@ -33,7 +40,8 @@ assert(routeResults.every((r) => r.hasCanonical), 'every launch route must have 
 const robotRoutes = routes.filter((route) => route.startsWith('/robots/'));
 assert.equal(robotRoutes.length, 24, '24 robot pages must be in launch route inventory');
 
-for (const required of ['/privacy-policy/', '/consent/', '/cookie-policy/']) {
+const requiredLegalRoutes = registry.requiredLegalRoutes || ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/'];
+for (const required of requiredLegalRoutes) {
   assert(routes.includes(required), `${required} must be in launch routes`);
 }
 
@@ -50,7 +58,7 @@ const report = {
   status: 'passed_with_blockers',
   routesChecked: routes.length,
   robotRoutesChecked: robotRoutes.length,
-  legalRoutesPresent: ['/privacy-policy/', '/consent/', '/cookie-policy/'],
+  legalRoutesPresent: requiredLegalRoutes,
   leadRoutingEnabled: leadCapability.routing.enabled,
   leadDestinations: leadCapability.routing.destinations.length,
   mediaProductionApproved: mediaRights.summary.productionApproved,
