@@ -1715,6 +1715,7 @@ export const blockRegistry = [
         "optional": [],
         "rules": [
           "public copy stays factual and does not promise unavailable lead destinations",
+          "legal disclaimer remains programmatically attached to every tariff card",
           "focus-visible state remains available for every interactive element",
           "mobile and desktop fixtures are reviewed before reuse in production pages"
         ]
