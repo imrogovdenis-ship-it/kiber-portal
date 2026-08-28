@@ -7,6 +7,7 @@ const root = process.cwd();
 const refLayerPath = resolve(root, 'src/styles/reference-layer.css');
 const baseLayoutPath = resolve(root, 'src/layouts/BaseLayout.astro');
 const homeHeroPath = resolve(root, 'src/components/blocks/HomeHero.astro');
+const robotHeroPath = resolve(root, 'src/components/blocks/RobotPageHero.astro');
 const robotPagePath = resolve(root, 'src/pages/robots/[slug].astro');
 const indexPath = resolve(root, 'src/pages/index.astro');
 const registryPath = resolve(root, 'data/review/reference-visual-layer-pass1.json');
@@ -72,9 +73,14 @@ test('KIBER-88 home hero and robot page expose reference-compatible structure', 
   assert.match(index, /vertical-slice__card-grid/);
 
   const robotPage = text(robotPagePath);
-  assert.match(robotPage, /robot-page__price/);
-  assert.match(robotPage, /robot-page__media/);
-  assert.match(robotPage, /data-rv="11"/);
+  assert.match(robotPage, /RobotPageHero/);
+
+  const robotHero = text(robotHeroPath);
+  assert.match(robotHero, /robot-page__price/);
+  assert.match(robotHero, /robot-page__media/);
+  assert.match(robotHero, /data-rv="11"/);
+  assert.match(robotHero, /aspect-ratio:\s*1/);
+  assert.match(robotHero, /object-fit:\s*contain/);
 });
 
 test('KIBER-88 exposes rendered reference visual layer smoke as CI gate', () => {

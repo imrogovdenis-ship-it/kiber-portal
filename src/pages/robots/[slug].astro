@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Pricing from '../../components/blocks/Pricing.astro';
 import Faq from '../../components/blocks/Faq.astro';
+import RobotPageHero from '../../components/blocks/RobotPageHero.astro';
 import InternalLinks from '../../components/content/InternalLinks.astro';
 import { serviceJsonLd } from '../../lib/seo';
 import { getRobotPages, type RobotPageRecord } from '../../lib/robot-pages';
@@ -52,21 +53,7 @@ const faq = {
   ]}
 >
   <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-45" data-robot-slug={robot.slug} data-state="ready" aria-live="polite">
-    <section class="robot-page__hero" data-vertical-step="robot-detail" data-rv="11">
-      <div class="robot-page__copy">
-        <p>{robot.identity.manufacturer} / {robot.identity.model}</p>
-        <h1>{robot.identity.name} для мероприятий</h1>
-        <p>{robot.seo.description}</p>
-        <p class="robot-page__price"><span>{robot.pricing.display}</span></p>
-        <div class="robot-page__actions">
-          <a class="robot-page__button robot-page__button--primary" href={`/lead/request/?robot=${robot.slug}`} data-vertical-step="robot-to-lead" data-analytics-event="form_submit_intent" data-analytics-source="robot_page" data-analytics-placement="primary_cta" data-analytics-slug={robot.slug}>Оставить заявку</a>
-          <a class="robot-page__button" href="/" data-analytics-event="robot_card_click" data-analytics-source="robot_page" data-analytics-placement="back_to_catalog" data-analytics-slug={robot.slug}>Вернуться на главную</a>
-        </div>
-      </div>
-      <figure class="robot-page__media">
-        <img src={robot.media.hero.src} alt={robot.media.hero.alt} width="640" height="640" loading="eager" decoding="async" />
-      </figure>
-    </section>
+    <RobotPageHero robot={robot} />
 
     <InternalLinks route={robotCanonicalPath} label="Следующие шаги" />
 
@@ -94,97 +81,6 @@ const faq = {
     display: grid;
     gap: 0;
     padding-block: 0 4.5rem;
-  }
-
-  .robot-page__hero {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.9fr);
-    gap: 2.75rem;
-    align-items: center;
-    padding: 3rem 0;
-    background: var(--kp-reference-sky);
-  }
-
-  .robot-page__copy {
-    display: grid;
-    gap: 1.25rem;
-  }
-
-  .robot-page__copy p,
-  .robot-page__copy h1,
-  .robot-page__media {
-    margin: 0;
-  }
-
-  .robot-page__copy > p:first-child {
-    color: var(--kp-reference-muted);
-    font-size: var(--kp-reference-label-size);
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  .robot-page__copy h1 {
-    color: var(--kp-reference-ink);
-    font-family: var(--kp-font-heading);
-    font-size: clamp(2.375rem, 5vw, 4.5rem);
-    font-weight: 700;
-    line-height: 1;
-  }
-
-  .robot-page__copy > p:nth-of-type(2) {
-    color: var(--kp-reference-muted);
-    line-height: var(--kp-body-line-height);
-  }
-
-  .robot-page__price {
-    color: var(--kp-reference-blue);
-    font-family: var(--kp-font-heading);
-    font-size: var(--kp-reference-display-m);
-    font-weight: 700;
-    line-height: 1;
-  }
-
-  .robot-page__actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .robot-page__button {
-    display: inline-flex;
-    min-height: 2.75rem;
-    align-items: center;
-    justify-content: center;
-    border: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 18%, transparent);
-    border-radius: var(--kp-reference-button-radius);
-    padding: 0.875rem 1.5rem;
-    color: var(--kp-reference-blue);
-    font-family: var(--kp-font-heading);
-    font-size: 0.875rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .robot-page__button--primary {
-    border-color: var(--kp-reference-blue);
-    background: var(--kp-reference-blue);
-    color: var(--kp-reference-white);
-  }
-
-  .robot-page__media {
-    overflow: hidden;
-    aspect-ratio: 1;
-    border-radius: 1.5rem;
-    background: var(--kp-reference-white);
-  }
-
-  .robot-page__media img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
   }
 
   .robot-page__facts {
@@ -238,33 +134,6 @@ const faq = {
       padding-block-end: 3rem;
     }
 
-    .robot-page__hero {
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      padding: 1.5rem 0 3rem;
-    }
-
-    .robot-page__media {
-      order: -1;
-      aspect-ratio: 1;
-      border-radius: 1.5rem;
-    }
-
-    .robot-page__media img {
-      object-fit: contain;
-      object-position: center center;
-    }
-
-    .robot-page__actions {
-      display: grid;
-    }
-
-    .robot-page__button {
-      width: auto;
-      max-width: 100%;
-      justify-self: start;
-      padding-inline: 1.25rem;
-    }
 
     .robot-page__facts {
       grid-template-columns: 1fr;

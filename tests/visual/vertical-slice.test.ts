@@ -16,10 +16,12 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
   assert.equal(existsSync(robotPage), true, 'robot detail route exists');
   const robot = await readFile(robotPage, 'utf8');
   assert.match(robot, /getRobotPages/);
+  assert.match(robot, /RobotPageHero/);
+  const robotHero = await readFile(resolve(root, 'src/components/blocks/RobotPageHero.astro'), 'utf8');
   const generatedRobots = await readFile(resolve(root, 'src/content/robots.generated.json'), 'utf8');
   assert.match(generatedRobots, /arenda-unitree-g1/);
-  assert.match(robot, /\/lead\/request\/\?robot=\$\{robot\.slug\}/);
-  assert.match(robot, /data-vertical-step="robot-to-lead"/);
+  assert.match(robotHero, /\/lead\/request\/\?robot=\$\{robot\.slug\}/);
+  assert.match(robotHero, /data-vertical-step="robot-to-lead"/);
 
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
   assert.match(requestPage, /method="get"/);
