@@ -327,6 +327,15 @@
       "reason": "Legal document copied from live kiber-portal.ru per 2026-08-28 owner decision; kept noindex until production cutover policy is finalized."
     },
     {
+      "path": "/terms/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
+      "priority": 0.2,
+      "changefreq": "yearly",
+      "template": "legal",
+      "reason": "User agreement copied from live kiber-portal.ru per 2026-08-28 owner correction; kept noindex until production cutover policy is finalized."
+    },
+    {
       "path": "/lead/request/",
       "status": "available-not-sitemap",
       "sitemap": false,

@@ -33,7 +33,8 @@ assert(routeResults.every((r) => r.hasCanonical), 'every launch route must have 
 const robotRoutes = routes.filter((route) => route.startsWith('/robots/'));
 assert.equal(robotRoutes.length, 24, '24 robot pages must be in launch route inventory');
 
-for (const required of ['/privacy-policy/', '/consent/', '/cookie-policy/']) {
+const requiredLegalRoutes = registry.requiredLegalRoutes || ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/'];
+for (const required of requiredLegalRoutes) {
   assert(routes.includes(required), `${required} must be in launch routes`);
 }
 
@@ -50,7 +51,7 @@ const report = {
   status: 'passed_with_blockers',
   routesChecked: routes.length,
   robotRoutesChecked: robotRoutes.length,
-  legalRoutesPresent: ['/privacy-policy/', '/consent/', '/cookie-policy/'],
+  legalRoutesPresent: requiredLegalRoutes,
   leadRoutingEnabled: leadCapability.routing.enabled,
   leadDestinations: leadCapability.routing.destinations.length,
   mediaProductionApproved: mediaRights.summary.productionApproved,
