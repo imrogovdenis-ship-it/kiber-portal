@@ -2,13 +2,47 @@
 
 Статус: `needs_rights_review`; production запуск не разрешён.
 
-Пакет покрывает **24 robots** и все hero/gallery asset records из `data/review/media-rights-registry.json`.
+## Отдельные горизонтальные hero-изображения
 
-- Robots: `24`
-- Asset records: `167`
+Пакет по-прежнему покрывает **24 robots**; дополнительно найдено **24 legacy horizontal hero** изображения из исходных live/Tilda robot pages. Они лежат в `site-export/images/...` и раньше не попали в пакет прав.
+
+### Почему они потерялись
+
+Первый media-rights review package строился из `data/review/media-rights-registry.json`, а registry строился из `src/content/robots.generated.json`. В `robots.generated.json` в поле `media.hero` уже лежат оптимизированные квадратные `/images/kiber-45/*.webp`, а оригинальные горизонтальные hero/background изображения из live page HTML не были частью `media.hero`/`gallery`. Поэтому в документы попали текущие square hero + gallery, но не старые горизонтальные hero-блоки.
+
+- Legacy horizontal hero images: `24`
+- Existing hero/gallery asset records: `167`
+- Asset records including legacy heroes: `191`
 - productionApproved = `0`
-- Preview use allowed: `true` для review-сборки
-- Production use: blocked до human media/legal approval
+- Все legacy hero остаются `needs_rights_review`, пока человек не подтвердит права.
+
+| Robot | Route | Current generated hero | Lost legacy horizontal hero | Size | Status |
+|---|---|---|---|---:|---|
+| `arenda-agibot-x2` | `/robots/arenda-agibot-x2/` | `/images/kiber-45/arenda-agibot-x2.webp` | `site-export/images/tild3635-6464-4337-a138-666439373335__photo.jpg` | 1480×800 | `needs_rights_review` |
+| `arenda-bellabot` | `/robots/arenda-bellabot/` | `/images/kiber-45/arenda-bellabot.webp` | `site-export/images/tild6237-3138-4535-b563-336532646462__photo.jpg` | 1543×800 | `needs_rights_review` |
+| `arenda-glambot` | `/robots/arenda-glambot/` | `/images/kiber-45/arenda-glambot.webp` | `site-export/images/tild6338-3666-4263-b137-363336353565__photo.jpg` | 1201×800 | `needs_rights_review` |
+| `arenda-inchbot-l1-w-edu` | `/robots/arenda-inchbot-l1-w-edu/` | `/images/kiber-45/arenda-inchbot-l1-w-edu.webp` | `site-export/images/tild3339-3661-4139-b463-643561616565__-__resize__504x__photo.jpg` | 504×288 | `needs_rights_review` |
+| `arenda-kettybot` | `/robots/arenda-kettybot/` | `/images/kiber-45/arenda-kettybot.webp` | `site-export/images/tild3265-3261-4533-b965-383239633331__photo.jpg` | 1680×788 | `needs_rights_review` |
+| `arenda-klipmeiker` | `/robots/arenda-klipmeiker/` | `/images/kiber-45/arenda-klipmeiker.webp` | `site-export/images/tild6666-6661-4038-b966-616430346630__photo.jpg` | 1422×800 | `needs_rights_review` |
+| `arenda-mini-robo-kofeyni` | `/robots/arenda-mini-robo-kofeyni/` | `/images/kiber-45/arenda-mini-robo-kofeyni.webp` | `site-export/images/tild3339-3933-4137-b235-613431633164__photo.jpg` | 1257×800 | `needs_rights_review` |
+| `arenda-noetix-bumi` | `/robots/arenda-noetix-bumi/` | `/images/kiber-45/arenda-noetix-bumi.webp` | `site-export/images/tild3931-3239-4761-b435-343766386664__photo.jpg` | 1173×800 | `needs_rights_review` |
+| `arenda-promobot-v4` | `/robots/arenda-promobot-v4/` | `/images/kiber-45/arenda-promobot-v4.webp` | `site-export/images/tild6134-3535-4738-b332-646464643933__photo.jpg` | 1530×800 | `needs_rights_review` |
+| `arenda-robo-kofeyni` | `/robots/arenda-robo-kofeyni/` | `/images/kiber-45/arenda-robo-kofeyni.webp` | `site-export/images/tild3166-3530-4635-a635-326430303162__08.jpg` | 943×600 | `needs_rights_review` |
+| `arenda-roboshashki` | `/robots/arenda-roboshashki/` | `/images/kiber-45/arenda-roboshashki.webp` | `site-export/images/tild3830-6431-4535-a363-663663343965__photo.jpg` | 1151×800 | `needs_rights_review` |
+| `arenda-robot-barmen` | `/robots/arenda-robot-barmen/` | `/images/kiber-45/arenda-robot-barmen.webp` | `site-export/images/tild3530-3630-4038-b865-333964376335__photo.jpg` | 1710×800 | `needs_rights_review` |
+| `arenda-robota-ardi` | `/robots/arenda-robota-ardi/` | `/images/kiber-45/arenda-robota-ardi.webp` | `site-export/images/tild6531-3538-4336-b765-336630623635__010.jpg` | 881×600 | `needs_rights_review` |
+| `arenda-robota-hudozhnika-a4` | `/robots/arenda-robota-hudozhnika-a4/` | `/images/kiber-45/arenda-robota-hudozhnika-a4.webp` | `site-export/images/tild6238-6164-4062-b731-363861666132__photo.png` | 700×393 | `needs_rights_review` |
+| `arenda-robota-sofiya` | `/robots/arenda-robota-sofiya/` | `/images/kiber-45/arenda-robota-sofiya.webp` | `site-export/images/tild3736-3131-4533-a430-626665346166__photo.jpg` | 1680×666 | `needs_rights_review` |
+| `arenda-robota-tron` | `/robots/arenda-robota-tron/` | `/images/kiber-45/arenda-robota-tron.webp` | `site-export/images/tild3564-3966-4730-b831-326530313339__photo.jpg` | 1680×753 | `needs_rights_review` |
+| `arenda-senserobot` | `/robots/arenda-senserobot/` | `/images/kiber-45/arenda-senserobot.webp` | `site-export/images/tild3063-3131-4232-b234-393062353332__photo.jpg` | 1414×800 | `needs_rights_review` |
+| `arenda-sketchbot` | `/robots/arenda-sketchbot/` | `/images/kiber-45/arenda-sketchbot.webp` | `site-export/images/tild6139-6562-4232-b230-363664373137__017.jpg` | 879×600 | `needs_rights_review` |
+| `arenda-unitree-g1` | `/robots/arenda-unitree-g1/` | `/images/kiber-45/arenda-unitree-g1.webp` | `site-export/images/tild3739-6330-4432-b730-636462313837__photo.jpg` | 1275×800 | `needs_rights_review` |
+| `arenda-unitree-go2` | `/robots/arenda-unitree-go2/` | `/images/kiber-45/arenda-unitree-go2.webp` | `site-export/images/tild3861-3861-4133-b436-616637306137__photo.jpg` | 1400×800 | `needs_rights_review` |
+| `arenda-unitree-h2` | `/robots/arenda-unitree-h2/` | `/images/kiber-45/arenda-unitree-h2.webp` | `site-export/images/tild6566-3862-4532-b338-383238633838__photo.jpg` | 1400×800 | `needs_rights_review` |
+| `arenda-unitree-r1` | `/robots/arenda-unitree-r1/` | `/images/kiber-45/arenda-unitree-r1.webp` | `site-export/images/tild3664-6437-4561-b738-333935356561__photo.jpg` | 1422×800 | `needs_rights_review` |
+| `arenda-uv-box` | `/robots/arenda-uv-box/` | `/images/kiber-45/arenda-uv-box.webp` | `site-export/images/tild6438-3139-4061-a639-643764633432__photo.jpg` | 1680×675 | `needs_rights_review` |
+| `arenda-xiaomi-cyberdog-2` | `/robots/arenda-xiaomi-cyberdog-2/` | `/images/kiber-45/arenda-xiaomi-cyberdog-2.webp` | `site-export/images/tild3962-6239-4563-b330-653865333837__photo.jpg` | 1400×800 | `needs_rights_review` |
+
 
 ## Что нужно подтвердить человеку
 

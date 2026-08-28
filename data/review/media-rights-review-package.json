@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "issue": "KIBER-media-rights-review-package",
   "title": "KIBER PORTAL media rights review package",
-  "source": "data/review/media-rights-registry.json",
+  "source": "data/review/media-rights-registry.json + data/review/media-rights-legacy-hero-images.json",
   "policy": {
     "productionUseRequiresHumanRightsApproval": true,
     "noUnverifiedMediaInProduction": true,
@@ -15,7 +15,9 @@
     "assetRecords": 167,
     "productionApproved": 0,
     "needsRightsReview": 24,
-    "previewUseAllowed": 24
+    "previewUseAllowed": 24,
+    "legacyHorizontalHeroImages": 24,
+    "assetRecordsIncludingLegacyHeroes": 191
   },
   "reviewStatuses": [
     "needs_rights_review",
@@ -143,7 +145,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3635-6464-4337-a138-666439373335__photo.jpg",
+        "projectPath": "site-export/images/tild3635-6464-4337-a138-666439373335__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175932309.html",
+        "alt": "Робот-гуманоид Agibot X2 с живой мимикой на презентации",
+        "width": 1480,
+        "height": 800,
+        "aspectRatio": 1.85,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-bellabot",
@@ -256,7 +276,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6237-3138-4535-b563-336532646462__photo.jpg",
+        "projectPath": "site-export/images/tild6237-3138-4535-b563-336532646462__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175679409.html",
+        "alt": "Робот-официант BellaBot в виде кота разносит блюда и напитки гостям",
+        "width": 1543,
+        "height": 800,
+        "aspectRatio": 1.929,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-glambot",
@@ -369,7 +407,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6338-3666-4263-b137-363336353565__photo.jpg",
+        "projectPath": "site-export/images/tild6338-3666-4263-b137-363336353565__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177751009.html",
+        "alt": "Робокамера GlamBot снимает slow-motion видео в стиле красной дорожки",
+        "width": 1201,
+        "height": 800,
+        "aspectRatio": 1.501,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-inchbot-l1-w-edu",
@@ -482,7 +538,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3339-3661-4139-b463-643561616565__-__resize__504x__photo.jpg",
+        "projectPath": "site-export/images/tild3339-3661-4139-b463-643561616565__-__resize__504x__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page138273926.html",
+        "alt": "Робот-собака Inchbot L1-W показывает STEM-программу на детском мероприятии",
+        "width": 504,
+        "height": 288,
+        "aspectRatio": 1.75,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-kettybot",
@@ -595,7 +669,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3265-3261-4533-b965-383239633331__photo.jpg",
+        "projectPath": "site-export/images/tild3265-3261-4533-b965-383239633331__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page176019909.html",
+        "alt": "Робот-доставщик KettyBot везёт заказы гостям с рекламным экраном",
+        "width": 1680,
+        "height": 788,
+        "aspectRatio": 2.132,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-klipmeiker",
@@ -694,7 +786,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6666-6661-4038-b966-616430346630__photo.jpg",
+        "projectPath": "site-export/images/tild6666-6661-4038-b966-616430346630__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page178251009.html",
+        "alt": "Роборука с камерой Клипмейкер снимает динамичное моушн-видео гостей",
+        "width": 1422,
+        "height": 800,
+        "aspectRatio": 1.778,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-mini-robo-kofeyni",
@@ -807,7 +917,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3339-3933-4137-b235-613431633164__photo.jpg",
+        "projectPath": "site-export/images/tild3339-3933-4137-b235-613431633164__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177655009.html",
+        "alt": "Робот мини-кофейня в аренду — готовит кофе и мороженое гостям мероприятия",
+        "width": 1257,
+        "height": 800,
+        "aspectRatio": 1.571,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-noetix-bumi",
@@ -920,7 +1048,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3931-3239-4761-b435-343766386664__photo.jpg",
+        "projectPath": "site-export/images/tild3931-3239-4761-b435-343766386664__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175614509.html",
+        "alt": "Робот-гуманоид Noetix Bumi общается с гостями на мероприятии",
+        "width": 1173,
+        "height": 800,
+        "aspectRatio": 1.466,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-promobot-v4",
@@ -1033,7 +1179,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6134-3535-4738-b332-646464643933__photo.jpg",
+        "projectPath": "site-export/images/tild6134-3535-4738-b332-646464643933__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177763209.html",
+        "alt": "Промо-робот Promobot V4 в аренду объезжает гостей мероприятия и раздаёт купоны",
+        "width": 1530,
+        "height": 800,
+        "aspectRatio": 1.913,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-robo-kofeyni",
@@ -1146,7 +1310,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3166-3530-4635-a635-326430303162__08.jpg",
+        "projectPath": "site-export/images/tild3166-3530-4635-a635-326430303162__08.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177720609.html",
+        "alt": "Робот-кофейня в аренду — роборука готовит кофе гостям мероприятия",
+        "width": 943,
+        "height": 600,
+        "aspectRatio": 1.572,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-roboshashki",
@@ -1259,7 +1441,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3830-6431-4535-a363-663663343965__photo.jpg",
+        "projectPath": "site-export/images/tild3830-6431-4535-a363-663663343965__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page178228309.html",
+        "alt": "Робот с манипулятором играет в шашки с гостем мероприятия",
+        "width": 1151,
+        "height": 800,
+        "aspectRatio": 1.439,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-robot-barmen",
@@ -1372,7 +1572,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3530-3630-4038-b865-333964376335__photo.jpg",
+        "projectPath": "site-export/images/tild3530-3630-4038-b865-333964376335__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175967809.html",
+        "alt": "Робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного планшета",
+        "width": 1710,
+        "height": 800,
+        "aspectRatio": 2.138,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-robota-ardi",
@@ -1485,7 +1703,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6531-3538-4336-b765-336630623635__010.jpg",
+        "projectPath": "site-export/images/tild6531-3538-4336-b765-336630623635__010.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177733909.html",
+        "alt": "Робот Арди — андроид с живой мимикой лица — общается с гостями мероприятия",
+        "width": 881,
+        "height": 600,
+        "aspectRatio": 1.468,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-robota-hudozhnika-a4",
@@ -1598,7 +1834,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6238-6164-4062-b731-363861666132__photo.png",
+        "projectPath": "site-export/images/tild6238-6164-4062-b731-363861666132__photo.png",
+        "source": "live robot page hero/background image extracted from site-export/page177789609.html",
+        "alt": "Роборука рисует гостю мероприятия детальный портрет карандашом",
+        "width": 700,
+        "height": 393,
+        "aspectRatio": 1.781,
+        "sourceOrder": 9,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-robota-sofiya",
@@ -1711,7 +1965,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3736-3131-4533-a430-626665346166__photo.jpg",
+        "projectPath": "site-export/images/tild3736-3131-4533-a430-626665346166__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177695209.html",
+        "alt": "Робот-гуманоид Sophia (Hanson Robotics) — премиальная модель в аренду на мероприятие",
+        "width": 1680,
+        "height": 666,
+        "aspectRatio": 2.523,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-robota-tron",
@@ -1824,7 +2096,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3564-3966-4730-b831-326530313339__photo.jpg",
+        "projectPath": "site-export/images/tild3564-3966-4730-b831-326530313339__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page177678709.html",
+        "alt": "Модульный двуногий робот Tron на колёсно-шаговой платформе",
+        "width": 1680,
+        "height": 753,
+        "aspectRatio": 2.231,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-senserobot",
@@ -1937,7 +2227,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3063-3131-4232-b234-393062353332__photo.jpg",
+        "projectPath": "site-export/images/tild3063-3131-4232-b234-393062353332__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page176336009.html",
+        "alt": "Робот-шахматист SenseRobot играет в шахматы, сам передвигая фигуры",
+        "width": 1414,
+        "height": 800,
+        "aspectRatio": 1.768,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-sketchbot",
@@ -2050,7 +2358,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6139-6562-4232-b230-363664373137__017.jpg",
+        "projectPath": "site-export/images/tild6139-6562-4232-b230-363664373137__017.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175905109.html",
+        "alt": "Робот-художник Sketchbot в аренду рисует гостю карандашный блиц-портрет",
+        "width": 879,
+        "height": 600,
+        "aspectRatio": 1.465,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-unitree-g1",
@@ -2163,7 +2489,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3739-6330-4432-b730-636462313837__photo.jpg",
+        "projectPath": "site-export/images/tild3739-6330-4432-b730-636462313837__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page174102409.html",
+        "alt": "Робот-гуманоид Unitree G1 кланяется и машет рукой гостям на мероприятии",
+        "width": 1275,
+        "height": 800,
+        "aspectRatio": 1.594,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-unitree-go2",
@@ -2276,7 +2620,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3861-3861-4133-b436-616637306137__photo.jpg",
+        "projectPath": "site-export/images/tild3861-3861-4133-b436-616637306137__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page153266796.html",
+        "alt": "Робот-собака Unitree Go2 в аренду делает трюки и танцует на сцене мероприятия",
+        "width": 1400,
+        "height": 800,
+        "aspectRatio": 1.75,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-unitree-h2",
@@ -2389,7 +2751,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6566-3862-4532-b338-383238633838__photo.jpg",
+        "projectPath": "site-export/images/tild6566-3862-4532-b338-383238633838__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175743809.html",
+        "alt": "Робот-гуманоид Unitree H2 с мимикой лица, рост, близкий к человеческому",
+        "width": 1400,
+        "height": 800,
+        "aspectRatio": 1.75,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-unitree-r1",
@@ -2502,7 +2882,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3664-6437-4561-b738-333935356561__photo.jpg",
+        "projectPath": "site-export/images/tild3664-6437-4561-b738-333935356561__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175648709.html",
+        "alt": "Робот-гуманоид Unitree R1 выполняет акробатический трюк на мероприятии",
+        "width": 1422,
+        "height": 800,
+        "aspectRatio": 1.778,
+        "sourceOrder": 3,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-uv-box",
@@ -2615,7 +3013,25 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild6438-3139-4061-a639-643764633432__photo.jpg",
+        "projectPath": "site-export/images/tild6438-3139-4061-a639-643764633432__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page178304409.html",
+        "alt": "Интерактивная сенсорная витрина UV-BOX с 3D-эффектом парения товара в воздухе",
+        "width": 1680,
+        "height": 675,
+        "aspectRatio": 2.489,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     },
     {
       "slug": "arenda-xiaomi-cyberdog-2",
@@ -2728,7 +3144,28 @@
         "confirm rights holder/source for hero asset",
         "confirm rights holder/source for every gallery asset",
         "approve for production or replace/remove before launch"
-      ]
+      ],
+      "legacyHorizontalHero": {
+        "role": "legacy_horizontal_hero",
+        "src": "/images/tild3962-6239-4563-b330-653865333837__photo.jpg",
+        "projectPath": "site-export/images/tild3962-6239-4563-b330-653865333837__photo.jpg",
+        "source": "live robot page hero/background image extracted from site-export/page175708109.html",
+        "alt": "Робот-собака Xiaomi Cyberdog 2 делает сальто и акробатические трюки",
+        "width": 1400,
+        "height": 800,
+        "aspectRatio": 1.75,
+        "sourceOrder": 0,
+        "rightsStatus": "needs_rights_review",
+        "previewUseAllowed": true,
+        "productionApproved": false,
+        "usage": [
+          "original live-site robot hero block",
+          "candidate for restored robot hero media review"
+        ]
+      }
     }
+  ],
+  "knownGapsResolved": [
+    "Added original horizontal live-site robot hero images that were absent from the first media-rights review package."
   ]
 }
