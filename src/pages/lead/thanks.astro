@@ -14,27 +14,189 @@ const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
     { name: 'Заявка принята', url: '/lead/thanks/' },
   ]}
 >
-  <main class="lead-thanks container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-vertical-step="confirmation">
-    <section class="lead-thanks__card">
-      <p>Подтверждение заявки</p>
-      <h1>Заявка принята</h1>
-      <p>Бриф собран. Робот: <strong>{robot}</strong>.</p>
-      <p>Следующий шаг — уточнить доступность модели, площадку, тайминг и формат программы.</p>
+  <main class="lead-thanks container" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3" data-vertical-step="confirmation" data-routing-state="disabled">
+    <section class="lead-thanks__card" aria-labelledby="lead-thanks-title">
+      <div class="lead-thanks__mark" aria-hidden="true">✓</div>
+      <div class="lead-thanks__copy">
+        <p class="lead-thanks__eyebrow">Черновик заявки сохранён</p>
+        <h1 id="lead-thanks-title">Заявка принята в безопасном preview-режиме</h1>
+        <p>Бриф собран для модели <strong>{robot}</strong>. Сейчас live-отправка заявок отключена до подключения реальных каналов.</p>
+        <p>После запуска менеджер уточнит доступность робота, площадку, тайминг, сценарий, требования площадки и финальную смету.</p>
+      </div>
+      <div class="lead-thanks__steps" aria-label="Что будет дальше">
+        <article>
+          <span>1</span>
+          <h2>Проверка сценария</h2>
+          <p>Подберём формат участия робота под событие и аудиторию.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h2>Подтверждение доступности</h2>
+          <p>Проверим дату, площадку, логистику и ограничения площадки.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h2>Финальная смета</h2>
+          <p>Цена зависит от длительности, программы и состава сопровождения.</p>
+        </article>
+      </div>
+      <div class="lead-thanks__notice" role="note">
+        Live lead routing remains disabled: реальные Telegram, email, CRM или webhook-направления подключаются только после отдельного approval.
+      </div>
       <div class="lead-thanks__actions">
-        <a href={`/robots/${robot}/`}>Вернуться к роботу</a>
-        <a href="/">На главную</a>
+        <a class="lead-thanks__button lead-thanks__button--primary" href={`/robots/${robot}/`}>Вернуться к роботу</a>
+        <a class="lead-thanks__button" href="/contacts">Посмотреть контакты</a>
+        <a class="lead-thanks__button" href="/">На главную</a>
       </div>
     </section>
   </main>
 </BaseLayout>
 
 <style>
-  .lead-thanks { display: grid; min-height: 48vh; align-items: center; padding-block: var(--kp-section-block); }
-  .lead-thanks__card { display: grid; gap: var(--kp-card-gap); max-width: 48rem; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.75rem; background: var(--kp-surface); }
-  .lead-thanks__card p, .lead-thanks__card h1 { margin: 0; }
-  .lead-thanks__card > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
-  .lead-thanks__card h1 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
-  .lead-thanks__card p:not(:first-child) { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
-  .lead-thanks__actions { display: flex; flex-wrap: wrap; gap: var(--kp-card-gap); }
-  .lead-thanks__actions a { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: .75rem 1.1rem; color: var(--kp-blue); font-weight: var(--kp-heading-weight); text-decoration: none; }
+  .lead-thanks {
+    display: grid;
+    min-height: 64vh;
+    align-items: center;
+    padding-block: var(--kp-section-block);
+  }
+
+  .lead-thanks__card {
+    position: relative;
+    display: grid;
+    gap: 1.5rem;
+    overflow: hidden;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border: 0.0625rem solid color-mix(in srgb, var(--kp-blue) 16%, transparent);
+    border-radius: 2rem;
+    background:
+      radial-gradient(circle at top right, color-mix(in srgb, var(--kp-blue) 16%, transparent), transparent 34rem),
+      linear-gradient(135deg, var(--kp-white), var(--kp-sky));
+    box-shadow: 0 1.5rem 4rem color-mix(in srgb, var(--kp-blue-deep) 10%, transparent);
+  }
+
+  .lead-thanks__mark {
+    display: grid;
+    width: 4rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--kp-blue);
+    color: var(--kp-white);
+    font-family: var(--kp-font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .lead-thanks__copy,
+  .lead-thanks__steps article {
+    display: grid;
+    gap: .75rem;
+  }
+
+  .lead-thanks__eyebrow,
+  .lead-thanks__copy h1,
+  .lead-thanks__copy p,
+  .lead-thanks__steps h2,
+  .lead-thanks__steps p {
+    margin: 0;
+  }
+
+  .lead-thanks__eyebrow {
+    color: var(--kp-blue);
+    font-weight: var(--kp-label-weight);
+    letter-spacing: var(--kp-label-letter-spacing);
+    text-transform: uppercase;
+  }
+
+  .lead-thanks__copy h1 {
+    max-width: 52rem;
+    font-family: var(--kp-font-heading);
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1;
+  }
+
+  .lead-thanks__copy p,
+  .lead-thanks__steps p,
+  .lead-thanks__notice {
+    color: var(--kp-muted);
+    line-height: var(--kp-body-line-height);
+  }
+
+  .lead-thanks__steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .lead-thanks__steps article {
+    padding: 1.25rem;
+    border: 0.0625rem solid var(--kp-line);
+    border-radius: 1.25rem;
+    background: color-mix(in srgb, var(--kp-white) 88%, transparent);
+  }
+
+  .lead-thanks__steps span {
+    display: grid;
+    width: 2rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--kp-blue) 12%, transparent);
+    color: var(--kp-blue-deep);
+    font-weight: 700;
+  }
+
+  .lead-thanks__steps h2 {
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-title-s-size);
+  }
+
+  .lead-thanks__notice {
+    padding: 1rem 1.25rem;
+    border-left: .25rem solid var(--kp-orange);
+    border-radius: .75rem;
+    background: var(--kp-white);
+  }
+
+  .lead-thanks__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+
+  .lead-thanks__button {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    border: 0.0625rem solid var(--kp-line);
+    border-radius: 62.4375rem;
+    padding: .875rem 1.25rem;
+    color: var(--kp-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .lead-thanks__button--primary {
+    border-color: var(--kp-blue);
+    background: var(--kp-blue);
+    color: var(--kp-white);
+  }
+
+  @media (max-width: 59.9375rem) {
+    .lead-thanks__steps {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 39.9375rem) {
+    .lead-thanks__actions {
+      display: grid;
+    }
+
+    .lead-thanks__button {
+      width: 100%;
+    }
+  }
 </style>

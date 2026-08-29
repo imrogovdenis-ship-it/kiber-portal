@@ -1,26 +1,81 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import RobotCard from '../components/blocks/RobotCard.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
 import { collectionPageJsonLd } from '../lib/seo';
+import { getRobotPages } from '../lib/robot-pages';
 
+const robots = getRobotPages().filter((robot) => robot.category === 'humanoid');
+const cards = robots.map((robot, index) => ({
+  slug: robot.slug,
+  href: robot.route,
+  title: robot.identity.name,
+  category: 'Робот-гуманоид',
+  price: robot.pricing.display,
+  price_disclaimer: 'Не является публичной офертой' as const,
+  description: robot.seo.description,
+  badge: index === 0 ? 'Гуманоид' : undefined,
+  image: robot.media.hero,
+  analytics: { event: 'robot_card_click' as const, placement: 'collection' as const, position: index + 1 },
+}));
 ---
 
-<BaseLayout title='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ' description='Подборка гуманоидных роботов для мероприятий, выставочных стендов, презентаций, встреч гостей и интерактивного промо.' noindex={false} jsonLd={collectionPageJsonLd({ title: 'Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ', description: 'Подборка гуманоидных роботов для мероприятий.', url: '/roboty-gumanoidy/' })}>
-  <main class="content-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-20">
-    <section class="content-page__hero" aria-labelledby="page-title">
+<BaseLayout
+  title="Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ"
+  description="Подборка гуманоидных роботов для мероприятий, выставочных стендов, презентаций, встреч гостей и интерактивного промо."
+  canonical="https://www.kiber-portal.ru/roboty-gumanoidy/"
+  noindex={false}
+  jsonLd={collectionPageJsonLd({ title: 'Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ', description: 'Подборка гуманоидных роботов для мероприятий.', url: '/roboty-gumanoidy/' })}
+>
+  <main class="category-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3" data-category="humanoid">
+    <section class="category-page__hero" aria-labelledby="page-title">
       <p>КИБЕР ПОРТАЛ</p>
-      <h1 id="page-title">Роботы-гуманоиды</h1>
-      <p>Гуманоидные роботы подходят для встреч гостей, интерактивных презентаций, стендов и вау-эффекта на мероприятии.</p>
+      <h1 id="page-title">Роботы-гуманоиды для мероприятий</h1>
+      <p>Гуманоидные роботы подходят для встреч гостей, интерактивных презентаций, выставочных стендов и вау-эффекта на площадке.</p>
+      <div class="category-page__actions">
+        <a class="category-page__button category-page__button--primary" href="/lead/request/?scenario=humanoid">Оставить заявку</a>
+        <a class="category-page__button" href="/#catalog">Смотреть весь каталог</a>
+      </div>
     </section>
+
+    <section class="category-page__grid-section" aria-labelledby="humanoid-robots-title">
+      <div class="category-page__section-copy">
+        <p>Подборка</p>
+        <h2 id="humanoid-robots-title">{cards.length} моделей в категории</h2>
+        <p>Карточки используют утверждённые изображения и alt-тексты из media review; финальные условия подтверждаются менеджером.</p>
+      </div>
+      <div class="category-page__grid">
+        {cards.map((card) => <RobotCard {...card} />)}
+      </div>
+    </section>
+
+    <section class="category-page__notes" aria-label="Как выбрать гуманоидного робота">
+      <article><h2>Для презентации</h2><p>Подходит робот с выразительной мимикой, стабильной стойкой и понятным сценарием выхода.</p></article>
+      <article><h2>Для стенда</h2><p>Важны проходимость, фотозона, сопровождающий специалист и сценарий коротких интерактивов.</p></article>
+      <article><h2>Для премьеры</h2><p>Проверяем тайминг, пространство, звук, безопасность и запасной сценарий до финального предложения.</p></article>
+    </section>
+
     <InternalLinks route="/roboty-gumanoidy/" label="Следующие шаги" />
   </main>
 </BaseLayout>
 
 <style>
-  .content-page { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
-  .content-page__hero { display: grid; gap: var(--kp-card-gap); max-width: 48rem; }
-  .content-page__hero p, .content-page__hero h1 { margin: 0; }
-  .content-page__hero > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
-  .content-page__hero h1 { font-family: var(--kp-font-heading); font-size: var(--kp-display-size); line-height: var(--kp-display-line-height); }
-  .content-page__hero > p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .category-page { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
+  .category-page__hero { display: grid; gap: 1rem; max-width: 56rem; }
+  .category-page__hero p, .category-page__hero h1, .category-page__section-copy p, .category-page__section-copy h2, .category-page__notes h2, .category-page__notes p { margin: 0; }
+  .category-page__hero > p:first-child, .category-page__section-copy > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .category-page__hero h1 { font-family: var(--kp-font-heading); font-size: clamp(2.25rem, 6vw, 4.5rem); line-height: 1; }
+  .category-page__hero > p:last-of-type, .category-page__section-copy p:last-child, .category-page__notes p { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .category-page__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .5rem; }
+  .category-page__button { display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; border: .0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: .875rem 1.25rem; color: var(--kp-blue); font-family: var(--kp-font-heading); font-weight: 700; text-decoration: none; }
+  .category-page__button--primary { border-color: var(--kp-blue); background: var(--kp-blue); color: var(--kp-white); }
+  .category-page__grid-section, .category-page__section-copy { display: grid; gap: var(--kp-grid-gap); }
+  .category-page__section-copy { max-width: 44rem; gap: var(--kp-card-gap); }
+  .category-page__section-copy h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
+  .category-page__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+  .category-page__notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .category-page__notes article { display: grid; gap: .75rem; padding: 1.25rem; border: .0625rem solid var(--kp-line); border-radius: 1.25rem; background: var(--kp-sky); }
+  .category-page__notes h2 { font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); }
+  @media (max-width: 59.9375rem) { .category-page__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .category-page__notes { grid-template-columns: 1fr; } }
+  @media (max-width: 39.9375rem) { .category-page__grid, .category-page__actions { display: grid; grid-template-columns: 1fr; } .category-page__button { width: 100%; } }
 </style>
