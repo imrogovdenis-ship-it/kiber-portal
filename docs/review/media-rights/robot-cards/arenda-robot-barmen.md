@@ -2,6 +2,10 @@
 
 Route: `/robots/arenda-robot-barmen/`
 
+Source-of-truth meaningful images: `10`
+Upper gallery block near hero: `4`
+Lower gallery block near photo section: `6`
+
 Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
 
 Approval:
@@ -10,6 +14,10 @@ Approval:
 - [ ] replace before production
 - [ ] block for production
 - [ ] rights/source holder confirmed
+
+## Why earlier visual cards showed too few gallery images
+
+The earlier visual card used the rebuilt short gallery subset. The original live page has two gallery blocks, so this card now separates the upper gallery block near the hero area and the lower gallery block near the photo section.
 
 ## Legacy horizontal hero
 
@@ -21,6 +29,7 @@ Approval:
 - actualDescription: Горизонтальный hero-кадр: робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного планшета.
 - seoAlt: Аренда робота-бармена робота-бармена «Робобар»: робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного планшета.
 - caption: Горизонтальный hero-кадр: робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного.
+- sourceGalleryBlock: `n/a`
 - rightsStatus: `needs_rights_review`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
@@ -34,12 +43,41 @@ Approval:
 - actualDescription: Манипулятор робота-бармена крупным планом на неоновом фоне.
 - seoAlt: Робот-бармен Робобар: Манипулятор робота-бармена крупным планом на неоновом фоне.
 - caption: Манипулятор робота-бармена на неоновом фоне.
+- sourceGalleryBlock: `n/a`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
-## Gallery
+## Catalog card
 
-### Gallery 0
+![Аренда робобара для HoReCa-зоны и события с гостями: Робот-бармен держит в руке рюмку и готов наливать в неё алкоголь.](../../../../site-export/images/tild3165-3834-4637-b363-633935616133__06.jpg)
+
+- role: `catalog_card`
+- src: `/images/tild3165-3834-4637-b363-633935616133__06.jpg`
+- projectPath: `site-export/images/tild3165-3834-4637-b363-633935616133__06.jpg`
+- actualDescription: Робот-бармен держит в руке рюмку и готов наливать в неё алкоголь.
+- seoAlt: Аренда робобара для HoReCa-зоны и события с гостями: Робот-бармен держит в руке рюмку и готов наливать в неё алкоголь.
+- caption: Робот-бармен держит рюмку перед наливом напитка.
+- sourceGalleryBlock: `upper_near_hero`
+- rightsStatus: `needs_rights_review`
+- textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
+
+## Upper gallery block
+
+### arenda-robot-barmen__04
+
+![Робот-бармен Робобар: Манипулятор робота-бармена крупным планом на неоновом фоне.](../../../../site-export/images/tild3630-3731-4165-b139-303235633465__noroot.png)
+
+- role: `source_gallery_hero_candidate`
+- src: `/images/tild3630-3731-4165-b139-303235633465__noroot.png`
+- projectPath: `site-export/images/tild3630-3731-4165-b139-303235633465__noroot.png`
+- actualDescription: Манипулятор робота-бармена крупным планом на неоновом фоне.
+- seoAlt: Робот-бармен Робобар: Манипулятор робота-бармена крупным планом на неоновом фоне.
+- caption: Манипулятор робота-бармена на неоновом фоне.
+- sourceGalleryBlock: `upper_near_hero`
+- rightsStatus: `needs_rights_review`
+- textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
+
+### arenda-robot-barmen__06
 
 ![Робот для бара Робобар, роботизированный бармен Робобар: Роботизированная рука робота-бармена крупным планом на мероприятии.](../../../../site-export/images/tild3864-6538-4231-b239-656133613061__noroot.png)
 
@@ -49,10 +87,11 @@ Approval:
 - actualDescription: Роботизированная рука робота-бармена крупным планом на мероприятии.
 - seoAlt: Робот для бара Робобар, роботизированный бармен Робобар: Роботизированная рука робота-бармена крупным планом на мероприятии.
 - caption: Крупный план роботизированной руки робота-бармена.
+- sourceGalleryBlock: `upper_near_hero`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
-### Gallery 1
+### arenda-robot-barmen__07
 
 ![Прокат роботизированного бармена для HoReCa-зоны и события с гостями: Крупный план бутылок с алкоголем, установленных внутри куба робота-бармена.](../../../../site-export/images/tild6337-3061-4562-b138-326565643530__07.jpg)
 
@@ -62,10 +101,13 @@ Approval:
 - actualDescription: Крупный план бутылок с алкоголем, установленных внутри куба робота-бармена.
 - seoAlt: Прокат роботизированного бармена для HoReCa-зоны и события с гостями: Крупный план бутылок с алкоголем, установленных внутри куба робота-бармена.
 - caption: Бутылки внутри куба робота-бармена.
+- sourceGalleryBlock: `upper_near_hero`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
-### Gallery 2
+## Lower gallery block
+
+### arenda-robot-barmen__09
 
 ![Сервисный робот для напитков Робобар, автоматический бармен Робобар: Рука-манипулятор робота-бармена передвигается внутри куба, чтобы налить алкоголь в коктейль.](../../../../site-export/images/tild3465-6639-4631-b436-313332343335__noroot.png)
 
@@ -75,10 +117,11 @@ Approval:
 - actualDescription: Рука-манипулятор робота-бармена передвигается внутри куба, чтобы налить алкоголь в коктейль.
 - seoAlt: Сервисный робот для напитков Робобар, автоматический бармен Робобар: Рука-манипулятор робота-бармена передвигается внутри куба, чтобы налить алкоголь в коктейль.
 - caption: Манипулятор наливает алкоголь в коктейль.
+- sourceGalleryBlock: `lower_near_photo_section`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
-### Gallery 3
+### arenda-robot-barmen__10
 
 ![Заказать робобара на HoReCa-зоны и события с гостями: Мужчина наблюдает, как робот-бармен изготавливает фирменный коктейль для девушки на корпоративе.](../../../../site-export/images/tild3039-3761-4238-b036-383439386666__01.jpg)
 
@@ -88,10 +131,11 @@ Approval:
 - actualDescription: Мужчина наблюдает, как робот-бармен изготавливает фирменный коктейль для девушки на корпоративе.
 - seoAlt: Заказать робобара на HoReCa-зоны и события с гостями: Мужчина наблюдает, как робот-бармен изготавливает фирменный коктейль для девушки на корпоративе.
 - caption: Робот-бармен готовит фирменный коктейль на корпоративе.
+- sourceGalleryBlock: `lower_near_photo_section`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
-### Gallery 4
+### arenda-robot-barmen__11
 
 ![Робот-бармен Робобар: готовит фирменные коктейли на выставке для девушки, люди наблюдают за процессом.](../../../../site-export/images/tild3132-3731-4235-b666-306330316665__noroot.png)
 
@@ -101,10 +145,11 @@ Approval:
 - actualDescription: Робобар готовит фирменные коктейли на выставке для девушки, люди наблюдают за процессом.
 - seoAlt: Робот-бармен Робобар: готовит фирменные коктейли на выставке для девушки, люди наблюдают за процессом.
 - caption: Робобар готовит коктейль на выставочной площадке.
+- sourceGalleryBlock: `lower_near_photo_section`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
-### Gallery 5
+### arenda-robot-barmen__12
 
 ![Арендовать роботизированного бармена для мероприятия: Красивое фото процесса разлива алкоголя по стаканам: в стакане лёд, манипулятор наливает.](../../../../site-export/images/tild3533-3065-4934-b435-656434356665__05.jpg)
 
@@ -114,5 +159,34 @@ Approval:
 - actualDescription: Крупный план процесса разлива алкоголя по стаканам: в стакане лёд, манипулятор наливает алкогольный напиток, вид спереди.
 - seoAlt: Арендовать роботизированного бармена для мероприятия: Красивое фото процесса разлива алкоголя по стаканам: в стакане лёд, манипулятор наливает.
 - caption: Разлив напитка со льдом крупным планом.
+- sourceGalleryBlock: `lower_near_photo_section`
+- rightsStatus: `needs_rights_review`
+- textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
+
+### arenda-robot-barmen__13
+
+![Робот для бара Робобар, роботизированный бармен Робобар: Девушка через планшет заказывает себе напиток у робота-бармена.](../../../../site-export/images/tild6437-3562-4431-b965-616331636230__09.jpg)
+
+- role: `gallery`
+- src: `/images/tild6437-3562-4431-b965-616331636230__09.jpg`
+- projectPath: `site-export/images/tild6437-3562-4431-b965-616331636230__09.jpg`
+- actualDescription: Девушка через планшет заказывает себе напиток у робота-бармена.
+- seoAlt: Робот для бара Робобар, роботизированный бармен Робобар: Девушка через планшет заказывает себе напиток у робота-бармена.
+- caption: Заказ напитка у робота-бармена через планшет.
+- sourceGalleryBlock: `lower_near_photo_section`
+- rightsStatus: `needs_rights_review`
+- textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
+
+### arenda-robot-barmen__14
+
+![Взять в прокат робобара для HoReCa-зоны и события с гостями: Умный робобар работает на площадке городского фестиваля и наливает напитки.](../../../../site-export/images/tild6662-3732-4264-b635-613633623363__010.jpg)
+
+- role: `gallery`
+- src: `/images/tild6662-3732-4264-b635-613633623363__010.jpg`
+- projectPath: `site-export/images/tild6662-3732-4264-b635-613633623363__010.jpg`
+- actualDescription: Умный робобар работает на площадке городского фестиваля и наливает напитки.
+- seoAlt: Взять в прокат робобара для HoReCa-зоны и события с гостями: Умный робобар работает на площадке городского фестиваля и наливает напитки.
+- caption: Умный робобар наливает напитки на городском фестивале.
+- sourceGalleryBlock: `lower_near_photo_section`
 - rightsStatus: `needs_rights_review`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
