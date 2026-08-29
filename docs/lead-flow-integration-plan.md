@@ -1,29 +1,35 @@
 # KIBER PORTAL — lead-flow and analytics integration plan
 
-Дата: 2026-08-25  
-Статус: `planned_deferred_until_ids_and_accesses`
+Дата: 2026-08-29  
+Статус: `planned_deferred_until_real_destinations`
 
-## User-approved direction
+## Current owner-approved direction
 
-- В шапке сайта и в необходимых блоках показываем телефон: `+7 977 479 07 49`.
-- По кнопке «Написать нам» открываем попап связи.
-- В попапе показываем мессенджеры: Telegram, WhatsApp, Max.
-- В попапе показываем форму заявки с полями:
+- В header/footer/contact blocks можно показывать только утверждённые public contacts.
+- Сейчас реальные публичные контакты ещё ожидаются от Александра, поэтому defaults/placeholders не считаются production data.
+- По кнопке «Написать нам» должен открываться безопасный contact/lead сценарий.
+- В попапе/форме нужны поля:
   - имя — обязательное;
   - телефон — обязательное;
   - email — необязательное.
-- Переходы по кнопкам социальных сетей должны вести напрямую в соответствующие мессенджеры.
-- Заявка из формы должна отправляться в Telegram-чат и позже дублироваться в amoCRM.
-- Подключение CRM/amoCRM нужно заложить, но реализовывать позже.
-- Подключаем Яндекс.Метрику, Яндекс.Вебмастер и другие инструменты Яндекса позже, когда будут ID/доступы.
+- Заявка из формы должна уходить в выбранный lead destination после отдельного approval.
+- amoCRM можно заложить как deferred integration, но не подключать без access/secrets.
+- Яндекс.Метрика/Вебмастер и другие инструменты Яндекса подключаются позже, когда будут ID/доступы и consent decision.
 
 ## Current implemented safe state
 
-- Header/footer/contact page phone links use a real `tel:+79774790749` href.
-- Contact popup includes direct messenger buttons for available non-masked destinations from `data/block-library/contact-messenger-modal.json`.
-- Telegram destination is displayed as pending if the only available value contains a literal mask (`*`). It is not rendered as a broken clickable link.
-- Contact popup form fields are rendered but submission is disabled until Telegram/amoCRM destinations are provided.
-- CTA/link-flow validator checks rendered output and fails on masked/broken hrefs.
+```text
+live routing = disabled
+destinations = []
+production contacts = placeholders only
+PUBLIC_PHONE/PUBLIC_EMAIL/PUBLIC_TG/PUBLIC_WA = pending owner values
+```
+
+- Lead capability contract keeps routing disabled and destination-free.
+- Contact/lead pages render static-safe UI and do not claim real submission.
+- CTA/link-flow validators check rendered output and fail on masked/broken hrefs.
+- Secrets are not stored in Git.
+- If secrets are needed later, use 1Password / `op://` references or another approved server-side secret store; `OP_SERVICE_ACCOUNT_TOKEN` itself must never be committed or printed.
 
 ## Deferred implementation targets
 
@@ -86,9 +92,11 @@ consent/cookie policy decision
 ## Current blockers
 
 ```text
+Real public phone/email/messenger links: needed
 Telegram destination/link: needed
 Telegram form target chat: needed
 amoCRM access/webhook: needed later
 Yandex IDs/verification: needed later
 Consent/cookie analytics text: confirm before production
+Production deploy/DNS/secrets permission: needed separately
 ```
