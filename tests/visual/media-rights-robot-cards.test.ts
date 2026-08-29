@@ -28,7 +28,12 @@ test('media rights robot cards merge legacy hero, generated hero, gallery and ri
     assert.match(card.assets[0].projectPath, /^site-export\/images\//);
 
     assert(card.assets.some((asset: any) => asset.role === 'current_generated_hero'));
-    assert(card.assets.some((asset: any) => asset.role === 'gallery'));
+    assert(card.assets.some((asset: any) => asset.role === 'catalog_card'));
+    assert(card.assets.some((asset: any) => asset.sourceGalleryBlock === 'upper_near_hero'));
+    assert(card.assets.some((asset: any) => asset.sourceGalleryBlock === 'lower_near_photo_section'));
+    assert.equal(card.assets.filter((asset: any) => asset.sourceGalleryBlock === 'upper_near_hero').length, card.sourceGalleryBlocks.upperNearHero.meaningfulCount);
+    assert.equal(card.assets.filter((asset: any) => asset.sourceGalleryBlock === 'lower_near_photo_section').length, card.sourceGalleryBlocks.lowerNearPhotoSection.meaningfulCount);
+    assert.equal(card.assets.filter((asset: any) => asset.sourceLayer === 'robots.source-of-truth.meaningfulImage').length, card.sourceOfTruthMeaningfulImageCount);
 
     for (const asset of card.assets) {
       assert.equal(asset.rightsStatus, 'needs_rights_review');
@@ -60,7 +65,10 @@ test('human review documents provide one card per robot with image links and app
     assert.match(doc, new RegExp(`# ${card.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
     assert.match(doc, /## Legacy horizontal hero/);
     assert.match(doc, /## Current generated hero/);
-    assert.match(doc, /## Gallery/);
+    assert.match(doc, /## Catalog card/);
+    assert.match(doc, /## Upper gallery block/);
+    assert.match(doc, /## Lower gallery block/);
+    assert.match(doc, /## Why earlier visual cards showed too few gallery images/);
     assert.match(doc, /\[ \] approve for production/);
     assert.match(doc, /\[ \] replace before production/);
     assert.match(doc, /\[ \] block for production/);
