@@ -25,13 +25,12 @@ test('production go/no-go package lists concrete blockers and required owner dec
 
   assert(pack.blockers.some((b: { id: string }) => b.id === 'real-public-contacts'));
   assert(pack.blockers.some((b: { id: string }) => b.id === 'live-lead-routing'));
-  assert(pack.blockers.some((b: { id: string }) => b.id === 'media-rights-production-approval'));
+  assert(!pack.blockers.some((b: { id: string }) => b.id === 'media-rights-production-approval'));
   assert(pack.blockers.some((b: { id: string }) => b.id === 'analytics-provider-ids'));
   assert(pack.blockers.some((b: { id: string }) => b.id === 'explicit-production-permission'));
-  assert(pack.ownerDecisionChecklist.length >= 6);
-  assert(pack.openPullRequests.some((pr: { number: number }) => pr.number === 43));
-  assert(pack.openPullRequests.some((pr: { number: number }) => pr.number === 44));
-  assert(pack.openPullRequests.some((pr: { number: number }) => pr.number === 45));
+  assert.equal(pack.readiness.mediaProductionApproved, 24);
+  assert(pack.readyAreas.some((area: { id: string }) => area.id === 'media-rights-production-approval'));
+  assert(pack.ownerDecisionChecklist.length >= 5);
 });
 
 test('production go/no-go report and smoke gate are wired into CI', () => {
@@ -42,5 +41,5 @@ test('production go/no-go report and smoke gate are wired into CI', () => {
   assert.match(pkg.scripts.ci, /npm run test:production-go-no-go/);
   assert.match(read('scripts/production-go-no-go-smoke.mjs'), /NO_GO/);
   assert.match(report, /## Решение: NO-GO/);
-  assert.match(report, /5698898/);
+  assert.match(report, /Media approval resolved 2026-08-29/);
 });

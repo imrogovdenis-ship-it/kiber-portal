@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `9`
 Upper gallery block near hero: `4`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-художника робота-художника большого формата: роборука рисует гостю мероприятия детальный портрет карандашом.
 - caption: Горизонтальный hero-кадр: роборука рисует гостю мероприятия детальный портрет карандашом.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник A4: крупным планом на светлом фоне: виден только манипулятор, который держит карандаш.
 - caption: Манипулятор робота-художника A4 держит карандаш.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда рисующего робота A4 для арт-зоны и портретной активности: рисует портрет: лист закреплён на деревянном холсте, виден манипулятор сзади, стол, холст и.
 - caption: Робот-художник A4 рисует портрет на закреплённом листе.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник A4: крупным планом на светлом фоне: виден только манипулятор, который держит карандаш.
 - caption: Манипулятор робота-художника A4 держит карандаш.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-hudozhnika-a4__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-портретист робот-художник A4, робот для рисования робот-художник A4: Красивое изображение роботизированной руки робота-художника A4 на сером фоне.
 - caption: Роботизированная рука A4 на сером фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-hudozhnika-a4__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат арт-робота A4 для арт-зоны и портретной активности: Манипулятор робота-художника A4 крупным планом рисует изображение на мероприятии; виден сам.
 - caption: A4 рисует изображение на мероприятии.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -118,7 +122,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арт-робот робот-художник A4, робот-манипулятор для рисунков робот-художник A4: Красивое фото манипулятора робота-художника A4 на мероприятии, на фоне проходят люди.
 - caption: Манипулятор A4 на мероприятии на фоне людей.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-hudozhnika-a4__10
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать рисующего робота A4 на арт-зоны и портретной активности: Роботизированная рука робота-художника A4 установлена на столе; рядом лежит холст и масляные.
 - caption: A4 рисует красками на холсте.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-hudozhnika-a4__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник A4: Роботизированная рука робота-художника A4 в офисе компании в процессе тестирования; на заднем.
 - caption: Тестирование роботизированной руки A4 в офисе.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-hudozhnika-a4__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать арт-робота A4 для мероприятия: Процесс создания изображения: на металлическом столе на конференции установлен робот-художник.
 - caption: A4 создаёт изображение на конференции.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-hudozhnika-a4__13
@@ -174,5 +178,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-портретист робот-художник A4, робот для рисования робот-художник A4: Крупный план манипулятора робота-художника A4: рука пустая, на заднем фоне человек занимается.
 - caption: Манипулятор A4 готовят к работе и программированию.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `9`
 Upper gallery block near hero: `4`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота интерактивной витрины UV-BOX: интерактивная сенсорная витрина UV-BOX с 3D-эффектом парения товара в воздухе.
 - caption: Горизонтальный hero-кадр: интерактивная сенсорная витрина UV-BOX с 3D-эффектом парения товара в.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивная витрина UV Box: Крупный план UV Box: на экране изображён бокал вина, в который наливается вино, виден сам.
 - caption: UV Box показывает налив вина в бокал.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда цифровой витрины UV Box для выставочного стенда: вмонтирован в выставочный стенд; перед ним стоит девушка. На экране UV Box та же девушка в.
 - caption: UV Box работает как виртуальная примерочная на стенде.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивная витрина UV Box: Крупный план UV Box: на экране изображён бокал вина, в который наливается вино, виден сам.
 - caption: UV Box показывает налив вина в бокал.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-uv-box__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Виртуальная примерочная UV Box, интерактивный экран UV Box: Три UV Box выставлены в ряд в холле торгового центра; на каждом экране стилизованное.
 - caption: Три UV Box с рекламой магазинов на экранах.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-uv-box__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат цифрового консультанта UV Box для демонстрации возможностей: установлен в торговом центре; на экране изображён телефон с характеристиками, молодой человек.
 - caption: Посетитель выбирает телефон на экране UV Box.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -118,7 +122,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Роботизированная витрина UV Box, цифровой консультант UV Box: Крупный план UV Box, перед которым стоит мужчина; на экране изображение серёжек, мужчина.
 - caption: Мужчина выбирает серёжки на экране UV Box.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-uv-box__10
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать цифровой витрины UV Box на презентации: вмонтирован в стену на мероприятии Москва 20:30; на экране справочная информация, перед ним.
 - caption: Девушки изучают справочную информацию на UV Box.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-uv-box__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивная витрина UV Box: Три UV Box вмонтированы в стену, над ними логотип компании; на экранах разная одежда, которую.
 - caption: UV Box рекламируют одежду торговой марки.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-uv-box__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать цифрового консультанта UV Box для HoReCa-зоны и события с гостями: установлен в холле торгового центра; перед ним стоит девушка в светлой кофте и чёрных брюках, а.
 - caption: UV Box показывает образ Супервумен в виртуальной примерочной.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-uv-box__13
@@ -174,5 +178,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Виртуальная примерочная UV Box, интерактивный экран UV Box: установлен в холле бизнес-центра; перед ним стоит мужчина, на экране UV Box объёмное.
 - caption: UV Box показывает виртуального консультанта в бизнес-центре.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

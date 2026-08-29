@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `11`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `6`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-собаки Unitree Go2: робот-собака Unitree Go2 в аренду делает трюки и танцует на сцене мероприятия.
 - caption: Горизонтальный hero-кадр: робот-собака Unitree Go2 в аренду делает трюки и танцует на сцене мер.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Unitree Go2 выполняет акробатический трюк на передних лапах, четвероногий робот демонстрирует баланс.
 - caption: Unitree Go2 показывает акробатический трюк на передних лапах.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робособаки Unitree Go2 для уличного мероприятия, промо-активности и интерактива с гостями.
 - caption: Unitree Go2 позирует на улице.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Unitree Go2 выполняет акробатический трюк на передних лапах, четвероногий робот демонстрирует баланс.
 - caption: Unitree Go2 показывает акробатический трюк на передних лапах.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Механический пёс Unitree Go2 крупным планом на улице, робот-собака с модулем и световым индикатором.
 - caption: Крупный план Unitree Go2 на улице.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-пса Unitree Go2 для демонстрации движения на открытой площадке.
 - caption: Unitree Go2 в боковом ракурсе на улице.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Четвероногий робот Unitree Go2 проходит каменистую поверхность, механический пёс демонстрирует проходимость.
 - caption: Unitree Go2 демонстрирует проходимость на сложной поверхности.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робособаку Unitree Go2 для фестиваля, уличной демонстрации и интерактива с гостями.
 - caption: Unitree Go2 развлекает гостей на уличном мероприятии.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-собака Unitree Go2 в декоративной фотозоне рядом с гостями, интерактивная робособака для события.
 - caption: Гостья гладит Unitree Go2 на мероприятии в декоративной фотозоне.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат механического пса Unitree Go2 для новогоднего мероприятия, фотозоны и интерактива с детьми.
 - caption: Unitree Go2 в новогоднем костюме рядом с ёлкой и подарками.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Кибер-пёс Unitree Go2 на фестивале ИГРАПРОМ с LED-панелью и рекламной строкой.
 - caption: Unitree Go2 на фестивале ИГРАПРОМ с LED-панелью.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__14
@@ -188,7 +192,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать робота-собаку Unitree Go2 для детского дня рождения с подносом для торта.
 - caption: Unitree Go2 с подносом для торта на детском дне рождения.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-go2__15
@@ -202,5 +206,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Unitree Go2 крупным планом на фоне неоновой подсветки, современная робособака для эффектной фотозоны.
 - caption: Крупный план Unitree Go2 на фоне неоновой подсветки.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

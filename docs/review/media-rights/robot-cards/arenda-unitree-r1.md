@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-гуманоида Unitree R1: робот-гуманоид Unitree R1 выполняет акробатический трюк на мероприятии.
 - caption: Горизонтальный hero-кадр: робот-гуманоид Unitree R1 выполняет акробатический трюк на мероприяти.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Unitree R1: бежит по улице по асфальтовой дорожке; на заднем фоне зелёная трава и небольшие деревья.
 - caption: Unitree R1 бежит по асфальтовой дорожке.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда человекоподобного робота Unitree R1 для HoReCa-зоны и события с гостями: крупным планом по пояс, руки подняты вверх в боевой стойке, как будто собирается боксировать.
 - caption: Unitree R1 в боевой стойке крупным планом.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Unitree R1: бежит по улице по асфальтовой дорожке; на заднем фоне зелёная трава и небольшие деревья.
 - caption: Unitree R1 бежит по асфальтовой дорожке.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-человек Unitree R1, андроид Unitree R1: на лужайке с зелёной травой стоит на руках и выполняет акробатический трюк; на заднем фоне.
 - caption: Unitree R1 выполняет стойку на руках на лужайке.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат андроида Unitree R1 для мероприятия: Эпическое изображение робота-гуманоида Unitree R1, стилизованного под огромного робота из.
 - caption: Футуристичное изображение Unitree R1 в цеху.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прямоходящий робот Unitree R1, робот на двух ногах Unitree R1: Крупное изображение двух роботов-гуманоидов Unitree R1, лежащих на столе головами друг к другу.
 - caption: Два Unitree R1 в производственном виде крупным планом.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать человекоподобного робота Unitree R1 на демонстрации возможностей: делает акробатический трюк — стойку на руках на краю каменного утёса. Фотография крупным.
 - caption: Unitree R1 делает стойку на руках на краю утёса.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивный гуманоид Unitree R1: Крупная фотография робота Unitree R1, вероятно созданная с помощью искусственного интеллекта.
 - caption: Unitree R1 крупным планом на корпоративном фоне.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать андроида Unitree R1 для демонстрации возможностей: крупным планом во весь рост стоит у входа в здание; за ним лестница поднимается вверх, вход.
 - caption: Unitree R1 у входа в здание в танцевальной позе.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Человекоподобный робот Unitree R1, робот-человек Unitree R1: на выставке на переднем плане, виден примерно по колено; сзади несколько человек наблюдают за.
 - caption: Unitree R1 на выставке перед посетителями.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-r1__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат человекоподобного робота Unitree R1 для демонстрации возможностей: на фоне высоких зданий делает акробатический трюк — стойку на руках, ноги разведены в стороны.
 - caption: Unitree R1 делает стойку на руках на городской дорожке.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

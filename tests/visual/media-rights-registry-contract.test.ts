@@ -23,7 +23,10 @@ test('KIBER media rights registry exists and gates every generated robot asset',
   assert.equal(registry.policy.noUnverifiedMediaInProduction, true);
   assert.ok(registry.allowedRightsStatuses.includes('needs_rights_review'));
   assert.ok(registry.allowedRightsStatuses.includes('approved_for_preview'));
+  assert.ok(registry.allowedRightsStatuses.includes('approved_for_production'));
   assert.ok(registry.allowedRightsStatuses.includes('blocked_for_production'));
+  assert.equal(registry.summary.productionApproved, 24);
+  assert.equal(registry.approval.status, 'approved_by_owner_for_production_media_use');
 
   assert.deepEqual(
     new Set(registry.robots.map((item: { slug: string }) => item.slug)),
@@ -32,11 +35,11 @@ test('KIBER media rights registry exists and gates every generated robot asset',
   );
 
   for (const item of registry.robots) {
-    assert.equal(item.productionApproved, false, `${item.slug}: scaffold must not claim production media approval`);
-    assert.equal(item.rightsStatus, 'needs_rights_review', `${item.slug}: robot media starts human-rights gated`);
+    assert.equal(item.productionApproved, true, `${item.slug}: owner media approval should be recorded`);
+    assert.equal(item.rightsStatus, 'approved_for_production', `${item.slug}: robot media should record owner approval`);
     assert.ok(item.assets.hero.src.startsWith('/images/'), `${item.slug}: hero asset path must be tracked`);
     assert.ok(item.assets.hero.alt.length > 0, `${item.slug}: hero alt must be tracked for review`);
-    assert.ok(item.reviewFlags.includes('needs_media_rights_review'), `${item.slug}: media rights review flag required`);
+    assert.ok(item.reviewFlags.includes('owner_approved_media_rights'), `${item.slug}: media rights approval flag required`);
   }
 });
 
@@ -44,7 +47,7 @@ test('KIBER media rights registry is exposed as a CI smoke gate', () => {
   assert.equal(existsSync(smokePath), true, 'media rights smoke script is required');
   const smoke = readFileSync(smokePath, 'utf8');
   assert.match(smoke, /productionUseRequiresHumanRightsApproval/);
-  assert.match(smoke, /needs_rights_review/);
+  assert.match(smoke, /approved_for_production/);
   assert.match(smoke, /blocked_for_production/);
 
   const pkg = readJson(resolve(root, 'package.json'));

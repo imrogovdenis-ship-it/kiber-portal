@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `11`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `6`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-собаки Inchbot L1-W EDU: робот-собака Inchbot L1-W показывает STEM-программу на детском мероприятии.
 - caption: Горизонтальный hero-кадр: робот-собака Inchbot L1-W показывает STEM-программу на детском меропр.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-собака Inchbot L1-W EDU: движется по пересечённой местности на колёсах. Крупный план спереди.
 - caption: Inchbot L1-W EDU движется по пересечённой местности на колёсах.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робособаки Inchbot L1-W EDU для демонстрации возможностей: вид сбоку, залезает на большой камень. Кадр красиво демонстрирует технологические возможности.
 - caption: Inchbot L1-W EDU залезает на большой камень.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-собака Inchbot L1-W EDU: движется по пересечённой местности на колёсах. Крупный план спереди.
 - caption: Inchbot L1-W EDU движется по пересечённой местности на колёсах.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Inchbot L1-W EDU, механический пёс Inchbot L1-W EDU: оторвалась от земли и делает сальто в воздухе. Фотография спереди крупным планом.
 - caption: Inchbot L1-W EDU выполняет сальто в воздухе.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат четвероногого робота Inchbot L1-W EDU для демонстрации возможностей: движется на колёсах по пустыне, вид сбоку; за ней поднимается пыль.
 - caption: Inchbot L1-W EDU движется по пустыне, поднимая пыль.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Четвероногий робот Inchbot L1-W EDU, робот на четырёх лапах Inchbot L1-W EDU: видна издалека, спускается с небольшого каменистого пригорка и показывает технологические.
 - caption: Inchbot L1-W EDU спускается с каменистого пригорка.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робособаки Inchbot L1-W EDU на демонстрации возможностей: едет между кустарниками по земле, вид спереди, демонстрация проходимости.
 - caption: Inchbot L1-W EDU демонстрирует проходимость между кустарниками.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Образовательная робособака Inchbot L1-W EDU: на мероприятии на колёсной базе едет между столов, вид сбоку.
 - caption: Inchbot L1-W EDU едет между столов на мероприятии.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать четвероногого робота Inchbot L1-W EDU для демонстрации возможностей: на колёсной базе поднимается вверх по широкой каменной лестнице, вид сзади.
 - caption: Inchbot L1-W EDU поднимается по широкой каменной лестнице.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робособака Inchbot L1-W EDU, робот-пёс Inchbot L1-W EDU: едет по поляне по траве, вид сбоку; на заднем фоне деревья.
 - caption: Inchbot L1-W EDU едет по траве на фоне деревьев.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__14
@@ -188,7 +192,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат робособаки Inchbot L1-W EDU для презентации: передвигается по снегу в промышленной зоне, вид спереди.
 - caption: Inchbot L1-W EDU передвигается по снегу в промышленной зоне.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-inchbot-l1-w-edu__15
@@ -202,5 +206,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Механический пёс Inchbot L1-W EDU, четвероногий робот Inchbot L1-W EDU: поднимается по металлической лестнице зимой, вид сзади; выглядит технологично.
 - caption: Inchbot L1-W EDU поднимается по металлической лестнице зимой.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

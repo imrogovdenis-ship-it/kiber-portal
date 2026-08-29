@@ -8,20 +8,24 @@ const json = (path: string) => JSON.parse(read(path));
 const cardsPath = 'data/review/media-rights-robot-cards.json';
 const indexPath = 'docs/review/media-rights/robot-cards/README.md';
 
-test('media rights robot cards merge legacy hero, generated hero, gallery and rich media text layers', () => {
+test('media rights robot cards record Alexander approval for all full robot cards', () => {
   assert.equal(existsSync(cardsPath), true, `${cardsPath} must exist`);
   const data = json(cardsPath);
 
   assert.equal(data.summary.robots, 24);
   assert.equal(data.summary.legacyHorizontalHeroImages, 24);
-  assert.equal(data.policy.productionApprovedAssets, 0);
+  assert.equal(data.policy.productionApprovedAssets, data.summary.assetRecordsIncludingLegacyAndGeneratedHeroes);
   assert.equal(data.policy.productionUseRequiresHumanRightsApproval, true);
+  assert.equal(data.approval?.status, 'approved_by_owner_for_production_media_use');
+  assert.equal(data.approval?.approvedRobots, 24);
+  assert.match(data.approval?.evidence || '', /первые пять карточек/);
 
   for (const card of data.robots) {
     assert.match(card.slug, /^arenda-/);
     assert.match(card.route, /^\/robots\//);
-    assert.equal(card.productionApproved, false);
-    assert.equal(card.status, 'needs_rights_review');
+    assert.equal(card.productionApproved, true);
+    assert.equal(card.status, 'approved_by_owner_for_production_media_use');
+    assert.equal(card.approval?.status, 'approved_by_owner_for_production_media_use');
 
     assert.equal(card.assets[0].role, 'legacy_horizontal_hero');
     assert.match(card.assets[0].src, /^\/images\//);
@@ -36,8 +40,8 @@ test('media rights robot cards merge legacy hero, generated hero, gallery and ri
     assert.equal(card.assets.filter((asset: any) => asset.sourceLayer === 'robots.source-of-truth.meaningfulImage').length, card.sourceOfTruthMeaningfulImageCount);
 
     for (const asset of card.assets) {
-      assert.equal(asset.rightsStatus, 'needs_rights_review');
-      assert.equal(asset.productionApproved, false);
+      assert.equal(asset.rightsStatus, 'approved_for_production');
+      assert.equal(asset.productionApproved, true);
       assert.equal(typeof asset.actualDescription, 'string');
       assert(asset.actualDescription.length > 20, `${card.slug} ${asset.src} must have actualDescription`);
       assert.equal(typeof asset.seoAlt, 'string');
@@ -49,7 +53,7 @@ test('media rights robot cards merge legacy hero, generated hero, gallery and ri
   }
 });
 
-test('human review documents provide one card per robot with image links and approval slots', () => {
+test('human review documents provide one approved card per robot with image links and approval evidence', () => {
   assert.equal(existsSync(indexPath), true, `${indexPath} must exist`);
   const index = read(indexPath);
   assert.match(index, /24 robot media review cards/);
@@ -69,8 +73,8 @@ test('human review documents provide one card per robot with image links and app
     assert.match(doc, /## Upper gallery block/);
     assert.match(doc, /## Lower gallery block/);
     assert.match(doc, /## Why earlier visual cards showed too few gallery images/);
-    assert.match(doc, /\[ \] approve for production/);
-    assert.match(doc, /\[ \] replace before production/);
-    assert.match(doc, /\[ \] block for production/);
+    assert.match(doc, /\[x\] approve for production/);
+    assert.match(doc, /Approved by: Александр Маркин/);
+    assert.match(doc, /2026-08-29T00:55:09Z/);
   }
 });

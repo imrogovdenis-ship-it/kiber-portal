@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота робота для игры в шашки: робот с манипулятором играет в шашки с гостем мероприятия.
 - caption: Горизонтальный hero-кадр: робот с манипулятором играет в шашки с гостем мероприятия.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-шашист Робошашки: Роботизированная рука переставляет шашку с места на место в процессе игры с человеком.
 - caption: Роботизированная рука переставляет шашку во время партии.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота для игры в шашки для выставочного стенда: Роботизированная рука для игры в шашки стоит на стенде компании и ожидает человека, который.
 - caption: Робот-шашист ждёт игрока на стенде.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-шашист Робошашки: Роботизированная рука переставляет шашку с места на место в процессе игры с человеком.
 - caption: Роботизированная рука переставляет шашку во время партии.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Игровой робот Робошашки, робот-манипулятор для шашек Робошашки: выставили шашки в правильной последовательности и ждут начала игры на технологичной выставке.
 - caption: Робошашки готовы к началу игры.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат интерактивного робота для шашек для выставочного стенда: Игровая доска для робота-шашиста расположена на выставке; рядом подошёл ребёнок и.
 - caption: Ребёнок играет в шашки с роботом на выставке.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивный робот для настольной игры Робошашки, робот-шашист Робошашки: Робот-шашист установлен на турнире по игре в шашки и ожидает претендента на игру.
 - caption: Робот-шашист ждёт соперника за игровой доской.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робота для игры в шашки на интерактивной игровой зоны: Девушку фотографируют во время процесса игры с роботом-шашистом на мероприятии.
 - caption: Девушку фотографируют во время игры с роботом-шашистом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот для игры в шашки Робошашки: Гости выставки обсуждают процесс игры с роботом в шашки.
 - caption: Люди обсуждают игру с роботом-шашистом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать интерактивного робота для шашек для интерактивной игровой зоны: Ребёнок соревнуется с роботом-шашистом в игре на праздничном мероприятии.
 - caption: Ребёнок соревнуется с роботом-шашистом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-манипулятор для шашек Робошашки, интерактивный робот для настольной игры Робошашки: Несколько человек наблюдают на конференции, как робот играет с мужчиной партию в шашки.
 - caption: Робот играет партию в шашки с мужчиной.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-roboshashki__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат робота для игры в шашки для интерактивной игровой зоны: Гости мероприятия участвуют в турнире по шашкам с роботом.
 - caption: Гости участвуют в турнире по шашкам с роботом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

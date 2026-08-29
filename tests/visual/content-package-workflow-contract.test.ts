@@ -36,12 +36,19 @@ test('KIBER content package workflow exists and keeps launch content human-gated
   const contentAcceptance = await readJson(resolve(root, 'data/review/content-acceptance.json'));
   assert.equal(workflow.summary.robotPages, contentAcceptance.robots.length);
   assert.equal(workflow.summary.launchPages, contentAcceptance.launchPages.length);
-  assert.equal(workflow.summary.finalApproved, 0);
+  assert.equal(workflow.summary.finalApproved, 1);
+  assert.deepEqual(workflow.summary.approvedSections, ['media-rights']);
   assert.equal(workflow.summary.productionBlockedUntilHumanApproval, true);
 
   for (const item of workflow.packageSections) {
-    assert.equal(item.status, 'ready_for_human_review', `${item.id}: section must wait for human review`);
-    assert.equal(item.productionApproved, false, `${item.id}: must not claim production approval`);
+    if (item.id === 'media-rights') {
+      assert.equal(item.status, 'approved_by_owner_for_production_media_use', `${item.id}: media section should record owner approval`);
+      assert.equal(item.productionApproved, true, `${item.id}: media section should be production-approved after owner approval`);
+      assert.equal(item.approvedBy, 'Александр Маркин');
+    } else {
+      assert.equal(item.status, 'ready_for_human_review', `${item.id}: section must wait for human review`);
+      assert.equal(item.productionApproved, false, `${item.id}: must not claim production approval`);
+    }
     assert.ok(item.requiredEvidence.length > 0, `${item.id}: required evidence must be explicit`);
   }
 });

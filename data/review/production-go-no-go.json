@@ -29,8 +29,9 @@
     ],
     "leadRoutingEnabled": false,
     "leadDestinations": 0,
-    "mediaProductionApproved": 0,
-    "crawlSource": "docs/review/launch-readiness-crawl/report.json"
+    "mediaProductionApproved": 24,
+    "crawlSource": "docs/review/launch-readiness-crawl/report.json",
+    "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json"
   },
   "readyAreas": [
     {
@@ -57,6 +58,11 @@
       "id": "ci-gates",
       "status": "passing",
       "evidence": "Local npm run ci passed before PR #40 merge; GitHub validate passed on PR #40"
+    },
+    {
+      "id": "media-rights-production-approval",
+      "status": "approved_by_owner_for_production_media_use",
+      "evidence": "All 24 full robot media cards approved by Александр Маркин at 2026-08-29T00:55:09Z; production deploy/DNS/secrets/live routing still not approved."
     }
   ],
   "blockers": [
@@ -71,12 +77,6 @@
       "severity": "blocking",
       "decisionNeeded": "Утвердить live destinations и fallback-политику для заявок.",
       "currentState": "lead routing disabled; destinations = []"
-    },
-    {
-      "id": "media-rights-production-approval",
-      "severity": "blocking",
-      "decisionNeeded": "Подтвердить права/источники production-изображений или заменить неподтверждённые ассеты.",
-      "currentState": "24 robot media records need rights review; productionApproved = 0"
     },
     {
       "id": "analytics-provider-ids",

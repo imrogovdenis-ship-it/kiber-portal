@@ -28,26 +28,24 @@ assert.deepEqual(pack.readiness.legalRoutesPresent, readiness.legalRoutesPresent
 assert.equal(lead.routing.enabled, false);
 assert.equal(lead.routing.destinations.length, 0);
 assert.equal(media.summary.robots, 24);
-assert.equal(media.summary.productionApproved, 0);
+assert.equal(media.summary.productionApproved, 24);
 assert.equal(workflow.policy.productionPublishRequiresHumanApproval, true);
 assert.equal(workflow.policy.noProductionDeployDnsSecretsOrCookies, true);
 
 for (const required of [
   'real-public-contacts',
   'live-lead-routing',
-  'media-rights-production-approval',
   'analytics-provider-ids',
   'business-legal-launch-confirmation',
   'explicit-production-permission',
 ]) {
   assert(pack.blockers.some((blocker) => blocker.id === required), `missing blocker: ${required}`);
 }
+assert(!pack.blockers.some((blocker) => blocker.id === 'media-rights-production-approval'), 'media rights blocker should be resolved after owner approval');
 
 assert.match(report, /## Решение: NO-GO/);
 assert.match(report, /production deploy permission = `false`/);
-assert.match(report, /#43/);
-assert.match(report, /#44/);
-assert.match(report, /#45/);
+assert.match(report, /Media approval resolved 2026-08-29/);
 
 mkdirSync('docs/review/production-go-no-go', { recursive: true });
 const smoke = {

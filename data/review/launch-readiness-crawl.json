@@ -11,8 +11,8 @@
     "legal_pages",
     "lead_routing_disabled",
     "analytics_provider_disabled",
-    "media_rights_gated",
-    "production_blockers"
+    "production_blockers",
+    "media_rights_owner_approved"
   ],
   "criticalRoutes": [
     {
@@ -57,7 +57,6 @@
     "final visual approval for pending visual PRs",
     "real public contact channels",
     "live lead routing destinations and backend",
-    "media rights/legal approval for production assets",
     "analytics provider decision and IDs",
     "explicit production deploy permission"
   ],
@@ -66,5 +65,14 @@
     "/consent/",
     "/cookie-policy/",
     "/terms/"
+  ],
+  "resolvedOwnerDecisions": [
+    {
+      "id": "media-rights-production-approval",
+      "status": "approved_by_owner_for_production_media_use",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-29T00:55:09Z",
+      "evidence": "All 24 full robot media cards approved in Telegram after first five reviewed and remaining accepted by same validated principle."
+    }
   ]
 }

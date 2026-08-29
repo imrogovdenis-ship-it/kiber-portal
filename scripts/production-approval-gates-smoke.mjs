@@ -55,9 +55,12 @@ for (const gateId of requiredGateIds) {
 for (const gate of gates.gates || []) {
   const label = gate.id || gate.title || 'unknown-gate';
   if (gate.requiresExplicitHumanApproval !== true) failures.push(`${label}: requiresExplicitHumanApproval must be true`);
-  if (gate.productionApproved !== false) failures.push(`${label}: productionApproved must be false`);
+  if (gate.id === 'media_rights') {
+    if (gate.productionApproved !== true) failures.push(`${label}: media rights should be approved after owner review`);
+    if (!gate.approvedAt) failures.push(`${label}: media approval timestamp required`);
+  } else if (gate.productionApproved !== false) failures.push(`${label}: productionApproved must remain false unless explicitly approved`);
   if (!Array.isArray(gate.evidence) || gate.evidence.length === 0) failures.push(`${label}: evidence is required`);
-  if (!Array.isArray(gate.forbiddenActionsUntilApproved) || gate.forbiddenActionsUntilApproved.length === 0) failures.push(`${label}: forbidden actions are required`);
+  if (gate.id !== 'media_rights' && (!Array.isArray(gate.forbiddenActionsUntilApproved) || gate.forbiddenActionsUntilApproved.length === 0)) failures.push(`${label}: forbidden actions are required`);
   if (!Array.isArray(gate.allowedAutonomousWork) || gate.allowedAutonomousWork.length === 0) warnings.push(`${label}: allowed autonomous work is empty`);
 }
 
@@ -91,4 +94,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`KIBER production approval gates smoke passed: ${report.gateCount} gates remain explicitly human-gated before production.`);
+console.log(`KIBER production approval gates smoke passed: media rights approved; remaining production gates stay explicitly human-gated.`);

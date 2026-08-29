@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-гуманоида Agibot X2: робот-гуманоид Agibot X2 с живой мимикой на презентации.
 - caption: Горизонтальный hero-кадр: робот-гуманоид Agibot X2 с живой мимикой на презентации.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Agibot X2: на белом фоне, вид спереди; держит руки над головой и демонстрирует танцевальное движение.
 - caption: Agibot X2 демонстрирует танцевальное движение.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда человекоподобного робота Agibot X2 для презентации: присел на корточки на белом фоне; перед ним пирамида из деревянных кубиков, как будто он.
 - caption: Agibot X2 присел перед пирамидой из деревянных кубиков.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Agibot X2: на белом фоне, вид спереди; держит руки над головой и демонстрирует танцевальное движение.
 - caption: Agibot X2 демонстрирует танцевальное движение.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-человек Agibot X2, андроид Agibot X2: на белом фоне демонстрирует движение из ушу или боевого единоборства. Вид спереди.
 - caption: Agibot X2 показывает движение в стиле ушу.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат андроида Agibot X2 для мероприятия: стоит вертикально на белом фоне, руки немного согнуты, как будто он разговаривает с человеком.
 - caption: Agibot X2 демонстрирует жесты общения.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот в виде человека Agibot X2, интерактивный гуманоид Agibot X2: на сером фоне бежит и демонстрирует передвижение бегом.
 - caption: Agibot X2 демонстрирует бег.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать человекоподобного робота Agibot X2 на презентации: Реальная фотография: робот-гуманоид Agibot X2 танцует на сером фоне, вид спереди.
 - caption: Agibot X2 танцует на сером фоне.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Человекообразный робот Agibot X2: рядом с робособакой на выставке демонстрации технологий. Вид немного спереди.
 - caption: Agibot X2 и робособака на демонстрации технологий.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать андроида Agibot X2 для мероприятия: Крупный план робота Agibot X2 с человеком: человек приобнимает робота, у робота одна рука.
 - caption: Agibot X2 в кадре с человеком, робот поднимает руку.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Человекоподобный робот Agibot X2, робот-человек Agibot X2: на производстве что-то рассматривает. Вид спереди.
 - caption: Agibot X2 на производстве.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-agibot-x2__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат человекоподобного робота Agibot X2 для выставочного стенда: на выставке общается с людьми; вокруг него много мужчин, которые смотрят на робота или.
 - caption: Agibot X2 общается с посетителями выставки.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

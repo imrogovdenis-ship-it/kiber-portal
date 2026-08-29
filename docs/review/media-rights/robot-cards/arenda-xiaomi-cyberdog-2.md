@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-собаки Xiaomi Cyberdog 2: робот-собака Xiaomi Cyberdog 2 делает сальто и акробатические трюки.
 - caption: Горизонтальный hero-кадр: робот-собака Xiaomi Cyberdog 2 делает сальто и акробатические трюки.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Xiaomi CyberDog 2: Крупное изображение робота-собаки Xiaomi CyberDog 2 на чёрном фоне; видны только голова и шея.
 - caption: Xiaomi CyberDog 2 крупным планом на чёрном фоне.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робособаки Xiaomi CyberDog 2 для презентации: идёт по полу с серой плиткой; рядом шагает человек, самого человека не видно, видна только.
 - caption: Xiaomi CyberDog 2 идёт рядом с человеком по серой плитке.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Xiaomi CyberDog 2: Крупное изображение робота-собаки Xiaomi CyberDog 2 на чёрном фоне; видны только голова и шея.
 - caption: Xiaomi CyberDog 2 крупным планом на чёрном фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робособака Xiaomi CyberDog 2, механический пёс Xiaomi CyberDog 2: Крупный план робособаки Xiaomi CyberDog 2 на сером фоне, вид сбоку.
 - caption: Xiaomi CyberDog 2 сбоку на сером фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат механического пса Xiaomi CyberDog 2 для мероприятия: Крупный план робособаки Xiaomi CyberDog 2 на светлом фоне; видна рука человека по локоть.
 - caption: Человек гладит Xiaomi CyberDog 2 по голове.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Кибер-пёс Xiaomi CyberDog 2, четвероногий робот Xiaomi CyberDog 2: Крупный план робособаки Xiaomi CyberDog 2 в движении, вид сбоку; собака касается земли только.
 - caption: Xiaomi CyberDog 2 в движении крупным планом.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робособаки Xiaomi CyberDog 2 на презентации: Крупный план робособаки Xiaomi CyberDog 2: видна передняя часть туловища, ноги и голова, рядом.
 - caption: Человек гладит Xiaomi CyberDog 2 крупным планом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот на четырёх лапах Xiaomi CyberDog 2: позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние.
 - caption: Xiaomi CyberDog 2 позирует перед зрителями на выставке.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать механического пса Xiaomi CyberDog 2 для мероприятия: Вид сбоку: робособака Xiaomi CyberDog 2 и ребёнок в светлой рубашке и светлой кепке. Робособака.
 - caption: Xiaomi CyberDog 2 здоровается лапой с ребёнком.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-пёс Xiaomi CyberDog 2, робот-собака Xiaomi CyberDog 2: Робопёс Xiaomi CyberDog 2 стоит на полу, вид почти сверху; вокруг него много людей со всех.
 - caption: Люди снимают Xiaomi CyberDog 2 на камеры.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-xiaomi-cyberdog-2__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат робособаки Xiaomi CyberDog 2 для презентации: сидит на полу перед обычной собакой; они видны сбоку и смотрят друг на друга.
 - caption: Xiaomi CyberDog 2 смотрит на настоящую собаку.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

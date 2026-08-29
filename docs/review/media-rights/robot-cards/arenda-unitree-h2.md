@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `8`
 Upper gallery block near hero: `4`
 Lower gallery block near photo section: `4`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-гуманоида Unitree H2: робот-гуманоид Unitree H2 с мимикой лица, рост, близкий к человеческому.
 - caption: Горизонтальный hero-кадр: робот-гуманоид Unitree H2 с мимикой лица, рост.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Unitree H2: в позе балерины: стоит на одной ноге, руки подняты вверх, вторая нога согнута в колене и.
 - caption: Unitree H2 в балетной позе на одной ноге.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда человекоподобного робота Unitree H2 для презентации: идёт по подиуму на показе мод. Он одет в светло-коричневый костюм с длинными рукавами и.
 - caption: Unitree H2 идёт по подиуму на показе мод.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Unitree H2: в позе балерины: стоит на одной ноге, руки подняты вверх, вторая нога согнута в колене и.
 - caption: Unitree H2 в балетной позе на одной ноге.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-h2__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-человек Unitree H2, андроид Unitree H2: крупным планом, обрезан по колено, танцует на фоне пустого зала; сверху на потолке софиты.
 - caption: Unitree H2 танцует во время тестового прогона.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-h2__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат андроида Unitree H2 для мероприятия: на ринге проводит бой с роботом-гуманоидом Unitree G1. Оба в мягких шлемах и перчатках; H2 бьёт.
 - caption: Unitree H2 демонстрирует бой с Unitree G1 на ринге.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -118,7 +122,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прямоходящий робот Unitree H2, робот на двух ногах Unitree H2: Крупный план робота Unitree H2 на выставке: похоже на первую презентацию аудитории, люди.
 - caption: Unitree H2 показывают аудитории на презентации.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-h2__10
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать человекоподобного робота Unitree H2 на презентации: идёт по подиуму в светлом костюме с длинными рукавами, штанинами и капюшоном; рядом идёт.
 - caption: Unitree H2 идёт по подиуму рядом с человеком.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-h2__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивный гуманоид Unitree H2: стоит в полный рост в стойке единоборств, похожей на каратэ. Он на улице на фоне стеклянного.
 - caption: Unitree H2 в стойке единоборств на улице.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-h2__12
@@ -160,5 +164,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать андроида Unitree H2 для выставочного стенда: Крупный план робота Unitree H2 по пояс на выставочном стенде Unitree; на заднем фоне рекламные.
 - caption: Unitree H2 крупным планом на стенде Unitree.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
