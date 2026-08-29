@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `16`
 Upper gallery block near hero: `8`
 Lower gallery block near photo section: `8`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-художника робота-художника Sketchbot: робот-художник Sketchbot в аренду рисует гостю карандашный блиц-портрет.
 - caption: Горизонтальный hero-кадр: робот-художник Sketchbot в аренду рисует гостю карандашный блиц-портр.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник Sketchbot: рисует скетч; виден сам робот и процесс рисования.
 - caption: Sketchbot рисует скетч в процессе работы.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда рисующего робота Sketchbot для презентации: Человек держит три скетча, нарисованных роботом-художником Sketchbot. На изображении видны.
 - caption: Готовые скетчи, созданные роботом-художником Sketchbot.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник Sketchbot: рисует скетч; виден сам робот и процесс рисования.
 - caption: Sketchbot рисует скетч в процессе работы.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-портретист Sketchbot, робот для рисования Sketchbot: расположен на белом фоне и рисует скетчи. Рядом лежат яркие маркеры, скетчи стилизованные и.
 - caption: Брендированные скетчи Sketchbot можно адаптировать под заказчика.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат арт-робота Sketchbot для мероприятия: На столе расположены сразу три робота-художника Sketchbot, которые рисуют скетчи.
 - caption: Три Sketchbot одновременно рисуют скетчи на столе.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арт-робот Sketchbot, робот с манипулятором для рисунков Sketchbot: крупным планом рисует изображение.
 - caption: Крупный план Sketchbot во время рисования.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__09
@@ -130,7 +134,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать рисующего робота Sketchbot на выставочного стенда: крупным планом, вид сбоку, на выставке рисует изображение. На заднем фоне размыты люди.
 - caption: Sketchbot рисует скетч на выставке, на фоне посетители.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__10
@@ -144,7 +148,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник Sketchbot: рисует скетч чёрным маркером. Крупное изображение: видны манипулятор, маркер и скетч.
 - caption: Манипулятор Sketchbot рисует чёрным маркером.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__11
@@ -158,7 +162,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать арт-робота Sketchbot для арт-зоны и портретной активности: рисует скетч, крупное изображение немного сбоку.
 - caption: Sketchbot рисует скетч крупным планом.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-портретист Sketchbot, робот для рисования Sketchbot: только что закончил рисовать скетч и отвёл манипулятор в сторону. Вид спереди.
 - caption: Sketchbot завершил рисунок и отвёл манипулятор.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__14
@@ -188,7 +192,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат рисующего робота Sketchbot для презентации: Женщина фотографирует, как несколько роботов-художников Sketchbot рисуют скетчи.
 - caption: Гость фотографирует работу нескольких Sketchbot.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__15
@@ -202,7 +206,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арт-робот Sketchbot, робот с манипулятором для рисунков Sketchbot: установлен на подиуме на сцене, рядом женщина презентует его.
 - caption: Sketchbot на сцене во время презентации.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__16
@@ -216,7 +220,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда арт-робота Sketchbot для выставочного стенда: Несколько роботов-художников Sketchbot стоят на столе на технологической выставке и рисуют.
 - caption: Несколько Sketchbot рисуют скетчи на технологической выставке.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__17
@@ -230,7 +234,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-художник Sketchbot: только что закончил рисовать изображение; человек протянул руки, чтобы забрать скетч. Видны.
 - caption: Гость забирает готовый скетч у Sketchbot.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__18
@@ -244,7 +248,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат рисующего робота Sketchbot для арт-зоны и портретной активности: Человек крупным планом держит рисунок, который нарисовал робот-художник Sketchbot, демонстрируя.
 - caption: Готовый рисунок, созданный роботом-художником Sketchbot.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__19
@@ -258,7 +262,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-портретист Sketchbot, робот для рисования Sketchbot: рисует скетч в процессе работы; виден сам робот, рисунок, ракурс сбоку и немного сверху.
 - caption: Sketchbot рисует скетч, ракурс сбоку и сверху.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-sketchbot__20
@@ -272,5 +276,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать арт-робота Sketchbot на арт-зоны и портретной активности: Два робота-художника Sketchbot установлены на столе и крупным планом находятся в процессе.
 - caption: Два Sketchbot одновременно рисуют изображения.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

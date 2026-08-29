@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-гуманоида Noetix Bumi: робот-гуманоид Noetix Bumi общается с гостями на мероприятии.
 - caption: Горизонтальный hero-кадр: робот-гуманоид Noetix Bumi общается с гостями на мероприятии.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Мини-гуманоид Noetix Bumi: стоит прямо в холле на фоне логотипа компании Noetix, вид спереди.
 - caption: Noetix Bumi в холле на фоне логотипа компании.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда человекоподобного робота Noetix Bumi для презентации: танцует на фоне здания компании Noetix.
 - caption: Noetix Bumi танцует на фоне здания Noetix.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Мини-гуманоид Noetix Bumi: стоит прямо в холле на фоне логотипа компании Noetix, вид спереди.
 - caption: Noetix Bumi в холле на фоне логотипа компании.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Noetix Bumi, робот-компаньон Noetix Bumi: Молодая девушка держит робота Noetix Bumi на руках, показывая, насколько он лёгкий. Изображение.
 - caption: Девушка держит лёгкого Noetix Bumi на руках.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат интерактивного гуманоида Noetix Bumi для демонстрации возможностей: крупным планом в классе для обучения детей программированию демонстрирует движение при.
 - caption: Noetix Bumi в классе программирования для детей.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивный гуманоид Noetix Bumi, робот в виде человека Noetix Bumi: танцует на выставке, рядом стоят люди и смотрят на него.
 - caption: Noetix Bumi танцует перед зрителями.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать человекоподобного робота Noetix Bumi на презентации: танцует на мероприятии.
 - caption: Noetix Bumi танцует на событии.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Мини-гуманоид Noetix Bumi: Ребёнок управляет роботом Noetix Bumi в домашних условиях в своей комнате.
 - caption: Ребёнок управляет Noetix Bumi дома.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать интерактивного гуманоида Noetix Bumi для уличной площадки: танцует на улице на фестивале.
 - caption: Noetix Bumi танцует на уличном фестивале.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Noetix Bumi, робот-компаньон Noetix Bumi: бежит по траве вместе с ребёнком; они примерно одинакового роста, ребёнок веселится. Вид спереди.
 - caption: Noetix Bumi бежит по траве вместе с ребёнком.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-noetix-bumi__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат человекоподобного робота Noetix Bumi для презентации: Ребёнок занимается с роботом-гуманоидом Noetix Bumi в школе программирования, рядом дети за.
 - caption: Noetix Bumi на занятии в школе программирования.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

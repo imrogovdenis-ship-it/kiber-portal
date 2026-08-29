@@ -9,12 +9,13 @@ const legacy = readJson('data/review/media-rights-legacy-hero-images.json');
 
 assert.equal(pack.issue, 'KIBER-media-rights-review-package');
 assert.equal(pack.policy.productionUseRequiresHumanRightsApproval, true);
-assert.equal(pack.policy.productionApprovedAssets, 0);
+assert.equal(pack.policy.productionApprovedAssets, pack.summary.assetRecordsIncludingLegacyHeroes);
 assert.equal(pack.policy.productionDeployAllowed, false);
 assert.equal(pack.summary.robots, 24);
 assert.equal(pack.robots.length, registry.robots.length);
-assert.equal(pack.summary.productionApproved, 0);
-assert.equal(pack.summary.needsRightsReview, 24);
+assert.equal(pack.summary.productionApproved, 24);
+assert.equal(pack.summary.needsRightsReview, 0);
+assert.equal(pack.approval?.status, 'approved_by_owner_for_production_media_use');
 assert.equal(legacy.summary.legacyHorizontalHeroImages, 24);
 assert.equal(pack.summary.legacyHorizontalHeroImages, 24);
 assert.equal(pack.summary.assetRecordsIncludingLegacyHeroes, pack.summary.assetRecords + 24);
@@ -25,25 +26,25 @@ assert.match(doc, /Почему они потерялись/);
 
 let assetRecords = 0;
 for (const robot of pack.robots) {
-  assert.equal(robot.status, 'needs_rights_review');
-  assert.equal(robot.productionApproved, false);
+  assert.equal(robot.status, 'approved_by_owner_for_production_media_use');
+  assert.equal(robot.productionApproved, true);
   assert.equal(robot.previewUseAllowed, true);
   assert(robot.assets.length >= 1, `${robot.slug}: assets required`);
-  assert.equal(robot.legacyHorizontalHero?.rightsStatus, 'needs_rights_review', `${robot.slug}: legacy hero rights status required`);
-  assert.equal(robot.legacyHorizontalHero?.productionApproved, false, `${robot.slug}: legacy hero must remain human-gated`);
+  assert.equal(robot.legacyHorizontalHero?.rightsStatus, 'approved_for_production', `${robot.slug}: legacy hero rights status required`);
+  assert.equal(robot.legacyHorizontalHero?.productionApproved, true, `${robot.slug}: legacy hero must record owner approval`);
   assetRecords += robot.assets.length;
   for (const asset of robot.assets) {
     assert(asset.src, `${robot.slug}: src required`);
     assert(asset.alt, `${robot.slug}: alt required`);
-    assert.equal(asset.rightsStatus, 'needs_rights_review');
-    assert.equal(asset.productionApproved, false);
+    assert.equal(asset.rightsStatus, 'approved_for_production');
+    assert.equal(asset.productionApproved, true);
   }
 }
 assert.equal(pack.summary.assetRecords, assetRecords);
 
 const report = {
   issue: pack.issue,
-  status: 'passed_human_review_required',
+  status: 'passed_owner_media_approval_recorded',
   robots: pack.summary.robots,
   assetRecords,
   legacyHorizontalHeroImages: legacy.summary.legacyHorizontalHeroImages,
@@ -56,4 +57,4 @@ const report = {
 mkdirSync('docs/review/media-rights', { recursive: true });
 writeFileSync('docs/review/media-rights/review-package-report.json', `${JSON.stringify(report, null, 2)}
 `);
-console.log(`KIBER media rights review package smoke passed: ${report.robots} robots, ${report.assetRecordsIncludingLegacyHeroes} assets including legacy heroes, productionApproved=${report.productionApproved}.`);
+console.log(`KIBER media rights review package smoke passed: ${report.robots} robots, ${report.assetRecordsIncludingLegacyHeroes} assets including legacy heroes, productionApproved=${report.productionApproved}; production deploy remains separately blocked.`);

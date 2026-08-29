@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `9`
 Upper gallery block near hero: `4`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать роботизированную съёмку робота GlamBot: робокамера GlamBot снимает slow-motion видео в стиле красной дорожки.
 - caption: Горизонтальный hero-кадр: робокамера GlamBot снимает slow-motion видео в стиле красной дорожки.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-камера GlamBot: крупным планом, вид спереди на светло-синем фоне. Профессиональная съёмка.
 - caption: Профессиональный крупный план GlamBot на светло-синем фоне.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда роботизированной камеры GlamBot для презентации: на светло-розовом фоне стоит на подставке; рядом пульт управления тоже стоит на подставке.
 - caption: GlamBot с пультом управления на светло-розовом фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-камера GlamBot: крупным планом, вид спереди на светло-синем фоне. Профессиональная съёмка.
 - caption: Профессиональный крупный план GlamBot на светло-синем фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-glambot__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Камера-робот GlamBot, робот для видеосъёмки GlamBot: снимает красную дорожку на крупном ярком мероприятии или концерте, по дорожке идут две красивые.
 - caption: GlamBot снимает красную дорожку с двумя женщинами.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-glambot__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат медиа-робота GlamBot для выставочного стенда: стоит на выставке, вид сзади; перед ним пульт управления, рядом человек.
 - caption: GlamBot на выставке рядом с пультом управления.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -118,7 +122,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот для slow-motion видео GlamBot, медиа-робот GlamBot: крупным планом на фоне неоновой подсветки.
 - caption: Крупный план GlamBot в неоновой подсветке.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-glambot__10
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать роботизированной камеры GlamBot на фотозоны и фотоактивации: Две девушки позируют для робота GlamBot на фотозоне.
 - caption: Две девушки позируют для GlamBot на фотозоне.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-glambot__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-камера GlamBot: крупным планом на подставке на технологичной выставке.
 - caption: GlamBot на подставке в технологичной экспозиции.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-glambot__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать медиа-робота GlamBot для мероприятия: снимает девушку на праздничной вечеринке; девушка-блондинка улыбается и довольна съёмкой.
 - caption: GlamBot снимает гостью на праздничной вечеринке.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-glambot__13
@@ -174,5 +178,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Камера-робот GlamBot, робот для видеосъёмки GlamBot: крупным планом, вид спереди.
 - caption: Крупный план GlamBot спереди.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

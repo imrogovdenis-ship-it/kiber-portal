@@ -16,8 +16,8 @@ test('KIBER launch readiness crawl defines go/no-go gates', () => {
     'legal_pages',
     'lead_routing_disabled',
     'analytics_provider_disabled',
-    'media_rights_gated',
     'production_blockers',
+    'media_rights_owner_approved',
   ]);
   assert.equal(registry.productionPermission, false);
   assert.equal(registry.goNoGoStatus, 'blocked_until_owner_decisions');

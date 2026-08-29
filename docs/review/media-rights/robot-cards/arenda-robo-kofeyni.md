@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `11`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `6`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робо-кофейни робота-кофейни: робот-кофейня в аренду — роборука готовит кофе гостям мероприятия.
 - caption: Горизонтальный hero-кадр: робот-кофейня в аренду — роборука готовит кофе гостям мероприятия.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робо-кофейня: Роботизированная рука Robo-Кофейни наливает готовый кофе в стакан.
 - caption: Robo-Кофейня наливает готовый кофе в стакан.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-бариста для HoReCa-зоны и события с гостями: Процесс приготовления кофе в Robo-Кофейне крупным планом, технологичное фото.
 - caption: Технологичный процесс приготовления кофе в Robo-Кофейне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робо-кофейня: Роботизированная рука Robo-Кофейни наливает готовый кофе в стакан.
 - caption: Robo-Кофейня наливает готовый кофе в стакан.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Роботизированная кофейня Робо-Кофейня, автоматическая кофейня Робо-Кофейня: Манипулятор Robo-Кофейни засыпает молотый кофе в кофемашину, крупный план.
 - caption: Манипулятор засыпает молотый кофе в кофемашину.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат автоматической кофейни для HoReCa-зоны и события с гостями: Крупное изображение стакана кофе, небольшого тканевого мешочка с кофе и кофейных зёрен как.
 - caption: Кофейная иллюстрация со стаканом, мешочком и зёрнами.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот для кофе Робо-Кофейня, кофейный робот Робо-Кофейня: Манипулятор робокофейни держит стакан кофе и готов передать его человеку на мероприятии.
 - caption: Манипулятор готов передать стакан кофе человеку.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робота-бариста на HoReCa-зоны и события с гостями: Человек выбирает кофе на планшете: видно планшет крупным планом и руку человека, которая.
 - caption: Выбор кофе на планшете Robo-Кофейни.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робо-кофейня: Манипулятор Robo-Кофейни крупным планом держит стакан только что приготовленного свежего кофе и.
 - caption: Манипулятор держит стакан свежего кофе.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать автоматической кофейни для HoReCa-зоны и события с гостями: Крупный план: робот-манипулятор достаёт держатель для кофе из кофемашины на мероприятии.
 - caption: Робот-манипулятор достаёт держатель из кофемашины.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Роботизированная кофейня Робо-Кофейня, автоматическая кофейня Робо-Кофейня: Робокофейня манипулятором взаимодействует с кофемашиной, крупный план на выставке.
 - caption: Робокофейня взаимодействует с кофемашиной.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__14
@@ -188,7 +192,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат робота-бариста для HoReCa-зоны и события с гостями: Robo-Кофейня на корпоративе делает кофе для девушки, которая стоит в ожидании.
 - caption: Robo-Кофейня готовит кофе для гостьи на корпоративе.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robo-kofeyni__15
@@ -202,5 +206,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот для кофе Робо-Кофейня, кофейный робот Робо-Кофейня: Робокофейня крупным планом изготавливает кофе на конференции.
 - caption: Робокофейня готовит кофе крупным планом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

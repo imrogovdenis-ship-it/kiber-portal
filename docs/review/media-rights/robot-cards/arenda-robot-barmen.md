@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `4`
 Lower gallery block near photo section: `6`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-бармена робота-бармена «Робобар»: робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного планшета.
 - caption: Горизонтальный hero-кадр: робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-бармен Робобар: Манипулятор робота-бармена крупным планом на неоновом фоне.
 - caption: Манипулятор робота-бармена на неоновом фоне.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робобара для HoReCa-зоны и события с гостями: Робот-бармен держит в руке рюмку и готов наливать в неё алкоголь.
 - caption: Робот-бармен держит рюмку перед наливом напитка.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-бармен Робобар: Манипулятор робота-бармена крупным планом на неоновом фоне.
 - caption: Манипулятор робота-бармена на неоновом фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот для бара Робобар, роботизированный бармен Робобар: Роботизированная рука робота-бармена крупным планом на мероприятии.
 - caption: Крупный план роботизированной руки робота-бармена.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат роботизированного бармена для HoReCa-зоны и события с гостями: Крупный план бутылок с алкоголем, установленных внутри куба робота-бармена.
 - caption: Бутылки внутри куба робота-бармена.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -118,7 +122,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Сервисный робот для напитков Робобар, автоматический бармен Робобар: Рука-манипулятор робота-бармена передвигается внутри куба, чтобы налить алкоголь в коктейль.
 - caption: Манипулятор наливает алкоголь в коктейль.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__10
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робобара на HoReCa-зоны и события с гостями: Мужчина наблюдает, как робот-бармен изготавливает фирменный коктейль для девушки на корпоративе.
 - caption: Робот-бармен готовит фирменный коктейль на корпоративе.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-бармен Робобар: готовит фирменные коктейли на выставке для девушки, люди наблюдают за процессом.
 - caption: Робобар готовит коктейль на выставочной площадке.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать роботизированного бармена для мероприятия: Красивое фото процесса разлива алкоголя по стаканам: в стакане лёд, манипулятор наливает.
 - caption: Разлив напитка со льдом крупным планом.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот для бара Робобар, роботизированный бармен Робобар: Девушка через планшет заказывает себе напиток у робота-бармена.
 - caption: Заказ напитка у робота-бармена через планшет.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robot-barmen__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат робобара для HoReCa-зоны и события с гостями: Умный робобар работает на площадке городского фестиваля и наливает напитки.
 - caption: Умный робобар наливает напитки на городском фестивале.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

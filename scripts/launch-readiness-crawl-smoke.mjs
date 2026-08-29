@@ -47,11 +47,12 @@ for (const required of requiredLegalRoutes) {
 
 assert.equal(leadCapability.routing.enabled, false, 'lead routing must stay disabled');
 assert.deepEqual(leadCapability.routing.destinations, [], 'lead destinations must stay empty');
-assert.equal(mediaRights.summary.productionApproved, 0, 'no media rights production approval should be claimed');
+assert.equal(mediaRights.summary.productionApproved, 24, 'owner media rights production approval should be recorded for all 24 robot records');
 
 const productionBlockers = registry.productionBlockers;
 assert(productionBlockers.includes('explicit production deploy permission'));
 assert(productionBlockers.includes('live lead routing destinations and backend'));
+assert(!productionBlockers.includes('media rights/legal approval for production assets'));
 
 const report = {
   issue: registry.issue,

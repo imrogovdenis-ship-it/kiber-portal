@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `11`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `6`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-гуманоида робота София: робот-гуманоид Sophia (Hanson Robotics) — премиальная модель в аренду на мероприятие.
 - caption: Горизонтальный hero-кадр: робот-гуманоид Sophia (Hanson Robotics) — премиальная модель в аренду.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот София: крупным планом на мероприятии, одета в светлую рубашку и улыбается.
 - caption: Робот София улыбается крупным планом.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда человекоподобного робота София для презентации: крупным планом по пояс сидит в телестудии и что-то рассказывает; левая рука поднята вверх на.
 - caption: София выступает в телестудии с поднятой рукой.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот София: крупным планом на мероприятии, одета в светлую рубашку и улыбается.
 - caption: Робот София улыбается крупным планом.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Андроид София, робот-гуманоид София: Крупный план робота Софии: на лице выражено удивление, она находится в фотозоне или похожей.
 - caption: Крупный план Софии с удивлённым выражением лица.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-гуманоида София для мероприятия: Красивое фото робота Софии крупным планом: она даёт интервью телекомпании, вид спереди, на шее.
 - caption: София даёт интервью телекомпании.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-человек София, гуманоид Hanson Robotics София: на сцене оперного театра поёт под аккомпанемент оркестра; руки подняты и выражают эмоции. На.
 - caption: София поёт на сцене оперного театра.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать человекоподобного робота София на уличной площадки: идёт по тротуару городской улицы и катит перед собой тележку. Она одета в серую блузку и.
 - caption: София идёт по городской улице с тележкой.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот София: крупным планом даёт интервью, перед ней множество микрофонов разных телекомпаний.
 - caption: София крупным планом перед микрофонами.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать робота-гуманоида София для сцены и публичного выступления: читает речь на выступлении в ООН в основном зале совещаний; рядом стоит женщина в синем, на.
 - caption: София выступает в зале ООН.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Андроид София, робот-гуманоид София: даёт интервью или выступает на сцене: сзади интерактивный экран, перед ней тумба и два.
 - caption: София произносит эмоциональную речь на сцене.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__14
@@ -188,7 +192,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат человекоподобного робота София для сцены и публичного выступления: ведёт эмоциональное выступление на событии Citizen Robot; она одета в красно-белое одеяние, рот.
 - caption: София выступает на событии Citizen Robot.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-robota-sofiya__15
@@ -202,5 +206,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-человек София, гуманоид Hanson Robotics София: на экране телевизора: робот София в студии телекомпании, внизу экрана бегущая строка и описание.
 - caption: София в студии на экране телевизора.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

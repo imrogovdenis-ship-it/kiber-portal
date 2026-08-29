@@ -22,7 +22,7 @@ const warnings = [];
 if (registry.schemaVersion !== 1) failures.push('schemaVersion must be 1');
 if (registry.policy?.productionUseRequiresHumanRightsApproval !== true) failures.push('productionUseRequiresHumanRightsApproval must be true');
 if (registry.policy?.noUnverifiedMediaInProduction !== true) failures.push('noUnverifiedMediaInProduction must be true');
-for (const status of ['needs_rights_review', 'approved_for_preview', 'blocked_for_production']) {
+for (const status of ['needs_rights_review', 'approved_for_preview', 'approved_for_production', 'blocked_for_production']) {
   if (!registry.allowedRightsStatuses?.includes(status)) failures.push(`allowedRightsStatuses missing ${status}`);
 }
 
@@ -36,10 +36,10 @@ for (const slug of generatedSlugs) {
 for (const item of registry.robots || []) {
   const label = item.slug || item.id;
   if (!generatedSlugs.has(item.slug)) failures.push(`${label}: not present in generated catalog`);
-  if (item.productionApproved === true) failures.push(`${label}: production media approval must not be claimed in scaffold`);
-  if (item.rightsStatus !== 'needs_rights_review') failures.push(`${label}: rightsStatus must remain needs_rights_review until human approval`);
-  if (!item.reviewFlags?.includes('needs_media_rights_review')) failures.push(`${label}: needs_media_rights_review flag required`);
-  if (!item.reviewFlags?.includes('blocked_for_production_until_human_approval')) failures.push(`${label}: production block flag required`);
+  if (item.productionApproved !== true) failures.push(`${label}: production media approval should be recorded after owner review`);
+  if (item.rightsStatus !== 'approved_for_production') failures.push(`${label}: rightsStatus must be approved_for_production after owner approval`);
+  if (!item.reviewFlags?.includes('owner_approved_media_rights')) failures.push(`${label}: owner_approved_media_rights flag required`);
+  if (!item.approval?.approvedAt) failures.push(`${label}: approval evidence timestamp required`);
   if (!item.assets?.hero?.src?.startsWith('/images/')) failures.push(`${label}: hero asset path missing or not public image path`);
   if (!item.assets?.hero?.alt) failures.push(`${label}: hero alt missing`);
   for (const asset of item.assets?.gallery || []) {
@@ -66,4 +66,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`KIBER media rights registry smoke passed: ${report.robotsChecked} robot media records remain human-rights gated for production.`);
+console.log(`KIBER media rights registry smoke passed: ${report.robotsChecked} robot media records have owner media approval; production deploy remains separately blocked.`);

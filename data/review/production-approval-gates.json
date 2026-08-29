@@ -61,21 +61,22 @@
     {
       "id": "media_rights",
       "title": "Production media rights approval",
-      "status": "blocked_until_rights_review",
+      "status": "approved_by_owner_for_production_media_use",
       "requiresExplicitHumanApproval": true,
-      "productionApproved": false,
+      "productionApproved": true,
       "evidence": [
-        "data/review/media-rights-registry.json",
-        "docs/review/media-rights/evidence.md"
+        "data/review/media-rights-robot-cards.json",
+        "docs/review/media-rights/robot-cards/README.md",
+        "data/review/media-rights-review-package.json",
+        "data/review/media-rights-registry.json"
       ],
       "allowedAutonomousWork": [
-        "Maintain media rights registry coverage",
-        "Collect source and alt metadata for review"
+        "Maintain approved media-rights evidence and regression tests"
       ],
-      "forbiddenActionsUntilApproved": [
-        "Claim production media rights approval",
-        "Replace preview gating with unrestricted production use"
-      ]
+      "forbiddenActionsUntilApproved": [],
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-29T00:55:09Z",
+      "approvalEvidence": "All 24 full robot cards approved by Александр Маркин at 2026-08-29T00:55:09Z; first five reviewed directly, remaining accepted because built by same validated principle."
     },
     {
       "id": "public_contacts",

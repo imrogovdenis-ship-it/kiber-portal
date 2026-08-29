@@ -6,14 +6,18 @@ Source-of-truth meaningful images: `10`
 Upper gallery block near hero: `5`
 Lower gallery block near photo section: `5`
 
-Status: `needs_rights_review`; production use is **not approved** until a human confirms rights.
+Status: `approved_by_owner_for_production_media_use`; production media use for this card is approved by the owner review evidence below.
 
 Approval:
 
-- [ ] approve for production
+- Approved by: Александр Маркин
+- Approved at: `2026-08-29T00:55:09Z`
+- Evidence: first five full cards reviewed directly; all remaining cards approved because they follow the same validated schema/principle.
+
+- [x] approve for production
 - [ ] replace before production
 - [ ] block for production
-- [ ] rights/source holder confirmed
+- [x] rights/source holder confirmed
 
 ## Why earlier visual cards showed too few gallery images
 
@@ -30,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда робота-гуманоида Unitree G1: робот-гуманоид Unitree G1 кланяется и машет рукой гостям на мероприятии.
 - caption: Горизонтальный hero-кадр: робот-гуманоид Unitree G1 кланяется и машет рукой гостям на мероприят.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -44,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Unitree G1 на фирменном студийном кадре, человекоподобный робот в виде человека.
 - caption: Фирменный портрет Unitree G1 от производителя.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -58,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда человекоподобного робота Unitree G1 для промо-акции в магазине одежды и интерактива с посетителями.
 - caption: Unitree G1 в fashion-сценарии: робот рассматривает кроссовки в магазине одежды.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -74,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-гуманоид Unitree G1 на фирменном студийном кадре, человекоподобный робот в виде человека.
 - caption: Фирменный портрет Unitree G1 от производителя.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__06
@@ -88,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-человек Unitree G1 пожимает руку посетителю на выставке НИЖФАРМ, андроид для делового стенда.
 - caption: Unitree G1 на выставке НИЖФАРМ пожимает руку посетителю.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__07
@@ -102,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать робота-гуманоида Unitree G1 для презентации: прямоходящий человекоподобный робот бежит на фирменном кадре.
 - caption: Динамичный фирменный кадр: Unitree G1 бежит вперёд.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__08
@@ -116,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Андроид Unitree G1 спускается по лестнице, робот на двух ногах демонстрирует движение в боковом ракурсе.
 - caption: Unitree G1 демонстрирует движение по лестнице.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -132,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-человека Unitree G1 для выставочного стенда: гуманоид в фирменном образе с LED-дисплеем.
 - caption: Выставочный образ Unitree G1 с красной ушанкой и LED-дисплеем на груди.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__11
@@ -146,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Человекоподобный робот Unitree G1 на групповом фото с командой стенда НИЖФАРМ.
 - caption: Общее фото Unitree G1 с командой стенда НИЖФАРМ.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__12
@@ -160,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат андроида Unitree G1 для стенда Винпин в Крокус Экспо и выставочного интерактива.
 - caption: Unitree G1 на стенде компании Винпин в Крокус Экспо.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__13
@@ -174,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Интерактивный гуманоид Unitree G1 рядом с робособакой Unitree Go2 на площадке 20-30.
 - caption: Unitree G1 и Unitree Go2 на мероприятии 20-30 в Москве.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-unitree-g1__14
@@ -188,5 +192,5 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать робота-человека Unitree G1 на мероприятие: андроид машет рукой и показывает подвижность корпуса.
 - caption: Unitree G1 показывает подвижность корпуса и жест рукой.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `needs_rights_review`
+- rightsStatus: `approved_for_production`
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)

@@ -17,8 +17,8 @@
   ],
   "summary": {
     "robots": 24,
-    "productionApproved": 0,
-    "needsRightsReview": 24
+    "productionApproved": 24,
+    "needsRightsReview": 0
   },
   "robots": [
     {
@@ -26,12 +26,11 @@
       "type": "robot-media",
       "slug": "arenda-agibot-x2",
       "route": "/robots/arenda-agibot-x2/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -81,7 +80,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -89,12 +90,11 @@
       "type": "robot-media",
       "slug": "arenda-bellabot",
       "route": "/robots/arenda-bellabot/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -144,7 +144,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -152,12 +154,11 @@
       "type": "robot-media",
       "slug": "arenda-glambot",
       "route": "/robots/arenda-glambot/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -207,7 +208,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -215,12 +218,11 @@
       "type": "robot-media",
       "slug": "arenda-inchbot-l1-w-edu",
       "route": "/robots/arenda-inchbot-l1-w-edu/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -270,7 +272,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -278,12 +282,11 @@
       "type": "robot-media",
       "slug": "arenda-kettybot",
       "route": "/robots/arenda-kettybot/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -333,7 +336,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -341,12 +346,11 @@
       "type": "robot-media",
       "slug": "arenda-klipmeiker",
       "route": "/robots/arenda-klipmeiker/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -390,7 +394,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -398,12 +404,11 @@
       "type": "robot-media",
       "slug": "arenda-mini-robo-kofeyni",
       "route": "/robots/arenda-mini-robo-kofeyni/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -453,7 +458,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -461,12 +468,11 @@
       "type": "robot-media",
       "slug": "arenda-noetix-bumi",
       "route": "/robots/arenda-noetix-bumi/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -516,7 +522,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -524,12 +532,11 @@
       "type": "robot-media",
       "slug": "arenda-promobot-v4",
       "route": "/robots/arenda-promobot-v4/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -579,7 +586,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -587,12 +596,11 @@
       "type": "robot-media",
       "slug": "arenda-robo-kofeyni",
       "route": "/robots/arenda-robo-kofeyni/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -642,7 +650,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -650,12 +660,11 @@
       "type": "robot-media",
       "slug": "arenda-roboshashki",
       "route": "/robots/arenda-roboshashki/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -705,7 +714,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -713,12 +724,11 @@
       "type": "robot-media",
       "slug": "arenda-robot-barmen",
       "route": "/robots/arenda-robot-barmen/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -768,7 +778,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -776,12 +788,11 @@
       "type": "robot-media",
       "slug": "arenda-robota-ardi",
       "route": "/robots/arenda-robota-ardi/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -831,7 +842,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -839,12 +852,11 @@
       "type": "robot-media",
       "slug": "arenda-robota-hudozhnika-a4",
       "route": "/robots/arenda-robota-hudozhnika-a4/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -894,7 +906,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -902,12 +916,11 @@
       "type": "robot-media",
       "slug": "arenda-robota-sofiya",
       "route": "/robots/arenda-robota-sofiya/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -957,7 +970,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -965,12 +980,11 @@
       "type": "robot-media",
       "slug": "arenda-robota-tron",
       "route": "/robots/arenda-robota-tron/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1020,7 +1034,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1028,12 +1044,11 @@
       "type": "robot-media",
       "slug": "arenda-senserobot",
       "route": "/robots/arenda-senserobot/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1083,7 +1098,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1091,12 +1108,11 @@
       "type": "robot-media",
       "slug": "arenda-sketchbot",
       "route": "/robots/arenda-sketchbot/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1146,7 +1162,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1154,12 +1172,11 @@
       "type": "robot-media",
       "slug": "arenda-unitree-g1",
       "route": "/robots/arenda-unitree-g1/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1209,7 +1226,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1217,12 +1236,11 @@
       "type": "robot-media",
       "slug": "arenda-unitree-go2",
       "route": "/robots/arenda-unitree-go2/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1272,7 +1290,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1280,12 +1300,11 @@
       "type": "robot-media",
       "slug": "arenda-unitree-h2",
       "route": "/robots/arenda-unitree-h2/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1335,7 +1354,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1343,12 +1364,11 @@
       "type": "robot-media",
       "slug": "arenda-unitree-r1",
       "route": "/robots/arenda-unitree-r1/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1398,7 +1418,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1406,12 +1428,11 @@
       "type": "robot-media",
       "slug": "arenda-uv-box",
       "route": "/robots/arenda-uv-box/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1461,7 +1482,9 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     },
     {
@@ -1469,12 +1492,11 @@
       "type": "robot-media",
       "slug": "arenda-xiaomi-cyberdog-2",
       "route": "/robots/arenda-xiaomi-cyberdog-2/",
-      "rightsStatus": "needs_rights_review",
-      "productionApproved": false,
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
       "previewUseAllowed": true,
       "reviewFlags": [
-        "needs_media_rights_review",
-        "blocked_for_production_until_human_approval"
+        "owner_approved_media_rights"
       ],
       "assets": {
         "hero": {
@@ -1524,8 +1546,18 @@
       "approval": {
         "ownerRequired": "КИБЕР ПОРТАЛ human media/legal rights reviewer",
         "evidenceRequired": true,
-        "approvedAt": null
+        "approvedAt": "2026-08-29T00:55:09Z",
+        "approvedBy": "Александр Маркин",
+        "status": "approved_by_owner_for_production_media_use"
       }
     }
-  ]
+  ],
+  "approval": {
+    "status": "approved_by_owner_for_production_media_use",
+    "approvedBy": "Александр Маркин",
+    "approvedAt": "2026-08-29T00:55:09Z",
+    "approvedRobots": 24,
+    "evidence": "Telegram approval: «Я посмотрел первые пять карточек всё в порядке и я утверждаю эти карточки и если содержание остальных карточек такое же ну по тому же принципу построены то можешь считать что я утверждаю сразу все остальные карточки закрывают эту задачу и переходи к следующему.» Full cards were generated from the same schema/tested principle for all 24 robots.",
+    "source": "data/review/media-rights-robot-cards.json"
+  }
 }

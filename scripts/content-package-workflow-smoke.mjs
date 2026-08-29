@@ -29,7 +29,7 @@ if (workflow.policy?.productionPublishRequiresHumanApproval !== true) failures.p
 if (workflow.policy?.productionContacts !== 'placeholder-only') failures.push('productionContacts must remain placeholder-only');
 if (workflow.policy?.liveLeadDestinations !== 'disabled') failures.push('liveLeadDestinations must remain disabled');
 if (workflow.policy?.analyticsProviderIds !== 'disabled') failures.push('analyticsProviderIds must remain disabled');
-if (workflow.summary?.finalApproved !== 0) failures.push('workflow must not claim final human approvals');
+if (workflow.summary?.finalApproved !== 1) failures.push('workflow should record the one approved media-rights section');
 if (workflow.summary?.productionBlockedUntilHumanApproval !== true) failures.push('productionBlockedUntilHumanApproval must be true');
 
 const sourcePaths = new Set((workflow.sources || []).map((source) => source.path));
@@ -46,14 +46,20 @@ if (workflow.summary?.robotPages !== contentAcceptance.robots?.length) failures.
 if (workflow.summary?.launchPages !== contentAcceptance.launchPages?.length) failures.push('launchPages summary must match content acceptance registry');
 if (workflow.summary?.legalDocuments !== legalDocuments.documents?.length) failures.push('legalDocuments summary must match legal document registry');
 if (contentAcceptance.summary?.finalApproved !== 0) failures.push('content acceptance still must not claim final approval');
-if (mediaRights.summary?.productionApproved !== 0) failures.push('media rights registry still must not claim production approval');
+if (mediaRights.summary?.productionApproved !== 24) failures.push('media rights registry should record owner production media approval');
 if (leadContract.routing?.enabled !== false) failures.push('lead routing must stay disabled');
 if ((leadContract.routing?.destinations || []).length !== 0) failures.push('lead routing destinations must stay empty');
 
 for (const section of workflow.packageSections || []) {
   const label = section.id || section.title;
-  if (section.status !== 'ready_for_human_review') failures.push(`${label}: status must be ready_for_human_review`);
-  if (section.productionApproved !== false) failures.push(`${label}: productionApproved must be false`);
+  if (section.id === 'media-rights') {
+    if (section.status !== 'approved_by_owner_for_production_media_use') failures.push(`${label}: media rights section should be owner-approved`);
+    if (section.productionApproved !== true) failures.push(`${label}: media rights productionApproved should be true`);
+    if (!section.approvedAt) failures.push(`${label}: approval timestamp required`);
+  } else {
+    if (section.status !== 'ready_for_human_review') failures.push(`${label}: status must be ready_for_human_review`);
+    if (section.productionApproved !== false) failures.push(`${label}: productionApproved must be false`);
+  }
   if (!Array.isArray(section.requiredEvidence) || section.requiredEvidence.length === 0) failures.push(`${label}: requiredEvidence must be non-empty`);
   if (section.sourcePath && !sourcePaths.has(section.sourcePath)) warnings.push(`${label}: sourcePath is not listed in sources`);
 }
@@ -80,4 +86,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`KIBER content package workflow smoke passed: ${report.packageSections} sections ready for human review; production publish remains gated.`);
+console.log(`KIBER content package workflow smoke passed: media rights section approved; remaining content/legal/lead sections keep production publish gated.`);

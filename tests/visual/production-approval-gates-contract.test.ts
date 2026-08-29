@@ -36,10 +36,18 @@ test('KIBER production approval gates registry exists and preserves owner-approv
 
   for (const gate of gates.gates) {
     assert.equal(gate.requiresExplicitHumanApproval, true, `${gate.id}: human approval must be explicit`);
-    assert.equal(gate.productionApproved, false, `${gate.id}: registry must not claim production approval`);
-    assert.match(gate.status, /blocked|pending|in_review|capability_only|placeholder_only|disabled/);
+    if (gate.id === 'media_rights') {
+      assert.equal(gate.productionApproved, true, `${gate.id}: owner media approval should be recorded`);
+      assert.match(gate.status, /approved_by_owner/);
+      assert.equal(gate.approvedBy, 'Александр Маркин');
+    } else {
+      assert.equal(gate.productionApproved, false, `${gate.id}: registry must not claim unrelated production approval`);
+      assert.match(gate.status, /blocked|pending|in_review|capability_only|placeholder_only|disabled/);
+    }
     assert.ok(Array.isArray(gate.evidence) && gate.evidence.length > 0, `${gate.id}: evidence paths required`);
-    assert.ok(Array.isArray(gate.forbiddenActionsUntilApproved) && gate.forbiddenActionsUntilApproved.length > 0, `${gate.id}: forbidden actions required`);
+    if (gate.id !== 'media_rights') {
+      assert.ok(Array.isArray(gate.forbiddenActionsUntilApproved) && gate.forbiddenActionsUntilApproved.length > 0, `${gate.id}: forbidden actions required`);
+    }
   }
 
   assert.ok(gates.gates.find((gate: { id: string; allowedAutonomousWork: string[] }) => gate.id === 'lead_routing')?.allowedAutonomousWork.includes('Maintain destination-free capability contracts'));

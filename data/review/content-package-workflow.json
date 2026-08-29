@@ -37,8 +37,11 @@
     "robotPages": 24,
     "launchPages": 7,
     "legalDocuments": 4,
-    "finalApproved": 0,
-    "productionBlockedUntilHumanApproval": true
+    "finalApproved": 1,
+    "productionBlockedUntilHumanApproval": true,
+    "approvedSections": [
+      "media-rights"
+    ]
   },
   "packageSections": [
     {
@@ -55,13 +58,17 @@
     {
       "id": "media-rights",
       "title": "Robot and page media package",
-      "status": "ready_for_human_review",
-      "productionApproved": false,
+      "status": "approved_by_owner_for_production_media_use",
+      "productionApproved": true,
       "sourcePath": "data/review/media-rights-registry.json",
       "requiredEvidence": [
-        "rights holder/source evidence for every production asset",
-        "human media/legal rights approval"
-      ]
+        "data/review/media-rights-robot-cards.json",
+        "docs/review/media-rights/robot-cards/README.md",
+        "data/review/media-rights-review-package.json"
+      ],
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-29T00:55:09Z",
+      "approvalEvidence": "All 24 full robot media cards approved by Александр in Telegram after reviewing first five and accepting remaining cards by same validated principle."
     },
     {
       "id": "lead-capability",

@@ -25,15 +25,15 @@ test('media rights package includes the lost horizontal live-site robot hero ima
     assert.match(item.legacyHero.projectPath, /^site-export\/images\//);
     assert.ok(item.legacyHero.width > item.legacyHero.height, `${item.slug}: legacy hero must be horizontal`);
     assert.ok(item.legacyHero.aspectRatio >= 1.4, `${item.slug}: legacy hero aspect ratio must be horizontal`);
-    assert.equal(item.legacyHero.rightsStatus, 'needs_rights_review');
-    assert.equal(item.legacyHero.productionApproved, false);
+    assert.equal(item.legacyHero.rightsStatus, 'approved_for_production');
+    assert.equal(item.legacyHero.productionApproved, true);
     assert.notEqual(item.legacyHero.src, item.currentGeneratedHero.src, `${item.slug}: legacy hero must document the missing original hero, not the square generated hero`);
   }
 
   assert.equal(pack.summary.legacyHorizontalHeroImages, 24);
   for (const robot of pack.robots) {
-    assert.equal(robot.legacyHorizontalHero?.rightsStatus, 'needs_rights_review', `${robot.slug}: legacy hero needs rights review`);
-    assert.equal(robot.legacyHorizontalHero?.productionApproved, false, `${robot.slug}: legacy hero must remain human-gated`);
+    assert.equal(robot.legacyHorizontalHero?.rightsStatus, 'approved_for_production', `${robot.slug}: legacy hero owner approval required`);
+    assert.equal(robot.legacyHorizontalHero?.productionApproved, true, `${robot.slug}: legacy hero production approval should be recorded after owner review`);
   }
 });
 
