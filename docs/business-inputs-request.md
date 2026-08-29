@@ -1,17 +1,18 @@
 # KIBER PORTAL — business inputs request pack
 
-Дата: 2026-08-24  
+Дата: 2026-08-29  
 Статус: `needed_before_production_launch`
 
-Этот документ перечисляет данные, которые нужны от Александра/команды перед production launch и финальной SEO-оптимизацией. Без этих данных статический Astro build может оставаться технически валидным, но production launch будет неполным.
+Этот документ перечисляет только решения, которые всё ещё нужны от Александра/команды перед production launch. Media rights по роботам уже закрыты отдельным owner approval и больше не являются открытым blocker.
 
-## 1. Контакты и реквизиты
+Media rights статус: `approved_by_owner_for_production_media_use`  
+Evidence: `data/review/media-rights-robot-cards.json`, `docs/review/media-rights/robot-cards/`, `data/review/media-rights-review-package.json`.
+
+## 1. Реальные публичные контакты и реквизиты
 
 Нужно подтвердить:
 
-- публичный телефон;
-- публичный email;
-- Telegram/WhatsApp/Max ссылки, если их нужно показывать;
+- реальные публичные контакты: телефон, email, Telegram, WhatsApp/Max если используются;
 - юридическое название компании;
 - ИНН/ОГРН/реквизиты, если они должны быть публичными;
 - адрес/город/география работы, если это нужно в контактах и schema;
@@ -19,13 +20,13 @@
 
 Текущий статус в Astro:
 
-- `/contacts` сделана как live-style placeholder;
+- `/contacts` и footer остаются placeholder-safe до финальных значений;
 - неподтверждённые реквизиты не выдумываются;
-- Contacts page уже имеет `ContactPage` + `Organization` schema, но факты должны быть подтверждены.
+- значения из `.env.example` или локальных defaults не считаются production approval.
 
 ## 2. Lead capture / messenger routing
 
-Нужно выбрать production-поведение CTA:
+Нужно выбрать production-поведение CTA и lead destination:
 
 - открыть messenger modal;
 - вести в Telegram;
@@ -33,7 +34,7 @@
 - отправлять форму в CRM/email;
 - комбинированный сценарий.
 
-Нужны точные destination values, но секреты/токены нельзя передавать в открытом виде и нельзя хранить в Git.
+Нужны точные destination values. Секреты/токены нельзя передавать в открытом виде и нельзя хранить в Git; использовать 1Password / `op://` references или approved server-side secret store.
 
 ## 3. Analytics / conversion tracking
 
@@ -57,12 +58,11 @@
 - синонимы и long-tail phrases;
 - неопубликованные статьи;
 - неопубликованные подборки;
-- подготовленные alt-тексты;
 - приоритетные коммерческие страницы;
 - региональная стратегия, если нужна: Москва/Россия/конкретные города;
 - список роботов/сценариев, которые нужно усилить в первую очередь.
 
-Особенно важно для этапа production launch: нужны материалы с множеством SEO-ключей, синонимов и длинных хвостов для многих готовых страниц, чтобы быстрее оптимизировать страницы под SEO.
+Alt/описания по media review уже объединены и утверждены для robot media package; новые SEO-материалы нужны только для расширения страниц/статей/подборок.
 
 ## 5. Pricing / availability / claims approval
 
@@ -96,7 +96,7 @@ data/seo/redirects.scaffold.json
 - решение по preview/parity/noindex routes;
 - approval перед подключением в Astro/Coolify/Traefik.
 
-## 7. Production deployment approval
+## 7. Production deploy / DNS / secrets permission
 
 Перед любыми infrastructure changes нужно отдельно подтвердить:
 
@@ -111,11 +111,11 @@ data/seo/redirects.scaffold.json
 ```text
 Для запуска Astro-версии КИБЕР ПОРТАЛА нужны финальные данные:
 
-1. Контакты: телефон, email, Telegram/WhatsApp/Max, реквизиты, адрес/география, footer/legal text.
-2. Куда вести заявки: мессенджер, форма, CRM/email, точный сценарий CTA.
+1. Реальные контакты: телефон, email, Telegram/WhatsApp/Max, реквизиты, адрес/география, footer/legal text.
+2. Куда вести заявки: мессенджер, форма, CRM/email, точный сценарий CTA и lead destination.
 3. Аналитика: Метрика/GA4/пиксели, IDs, цели, consent если нужен.
-4. SEO-пакет: ключи по страницам, синонимы, long-tail, статьи, подборки, alt-тексты, приоритетные страницы.
+4. SEO-пакет: ключи по страницам, синонимы, long-tail, статьи, подборки, приоритетные страницы.
 5. Цены/доступность/claims: что можно публиковать, что только по запросу, какие кейсы/бренды можно упоминать.
 6. Редиректы: список старых URL и куда они должны вести.
-7. Подтверждение production deploy: домен, Coolify target, rollback, дата/окно запуска.
+7. Отдельное подтверждение production deploy: домен, Coolify target, rollback, дата/окно запуска.
 ```
