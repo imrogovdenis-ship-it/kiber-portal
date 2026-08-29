@@ -26,7 +26,8 @@ test('contacts page renders reference-style conversion cards without live destin
   assert.match(contacts, /data-rv="30"/);
   assert.match(contacts, /class="contact-conversion/);
   assert.match(contacts, /class="contact-conversion__card/);
-  assert.match(contacts, /lead capability/i);
+  assert.match(contacts, /Каналы связи/);
+  assert.match(text('data/lead/capability-contract.json'), /\"enabled\": false/);
   assert.doesNotMatch(contacts, /tel:\+7|wa\.me\/7\d|t\.me\/[a-z0-9_]+/i);
 });
 

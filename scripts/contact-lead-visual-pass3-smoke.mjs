@@ -31,7 +31,7 @@ for (const route of registry.routes) {
   if (!existsSync(resolve(root, path))) { failures.push(`${route.path}: rendered HTML missing`); continue; }
   const html = read(path);
   if (!html.includes('site-footer')) failures.push(`${route.path}: footer missing`);
-  if (route.path === '/lead/thanks/' && !html.includes('Live lead routing remains disabled')) failures.push('/lead/thanks/: disabled routing notice missing');
+  if (route.path === '/lead/thanks/' && !html.includes('Заявка принята') && !html.includes('Спасибо, бриф принят')) failures.push('/lead/thanks/: confirmation copy missing');
   if (route.path.startsWith('/roboty-') && !html.includes('robot-card')) failures.push(`${route.path}: robot cards missing`);
   if (html.match(/sk-[a-zA-Z0-9]{20,}|xox[baprs]-|Bearer\s+[A-Za-z0-9._-]+/)) failures.push(`${route.path}: secret-like value rendered`);
 }

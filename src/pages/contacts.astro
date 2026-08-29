@@ -9,21 +9,21 @@ const contactCards = [
     text: 'Коротко опишите город, дату, площадку и какую роль должен взять робот.',
     href: '/lead/request/',
     cta: 'Заполнить заявку',
-    state: 'static-safe form',
+    state: 'Первый шаг',
   },
   {
     title: 'Быстрый подбор',
     text: 'Подберём формат под выставку, форум, презентацию, ресторан, свадьбу или образовательное событие.',
     href: '/#catalog',
     cta: 'Смотреть роботов',
-    state: '24 модели в каталоге',
+    state: '24 модели',
   },
   {
     title: 'Каналы связи',
-    text: 'Публичные мессенджеры и CRM-отправка подключаются после отдельного lead-routing решения.',
+    text: 'Публичные мессенджеры и CRM-направление подключим после финального решения по заявкам.',
     href: '/lead/request/',
-    cta: 'Оставить контакты безопасно',
-    state: 'lead capability disabled',
+    cta: 'Оставить контакты',
+    state: 'На запуск',
   },
 ];
 ---
@@ -35,14 +35,20 @@ const contactCards = [
   noindex={false}
   jsonLd={contactPageJsonLd({ title: 'Контакты — КИБЕР ПОРТАЛ', description: 'Контактная страница КИБЕР ПОРТАЛА для подбора робота.', url: '/contacts/' })}
 >
-  <main class="contact-conversion container" id="main-content" tabindex="-1" data-kiber-task="contact-lead-visual-pass2" data-rv="30">
-    <section class="contact-conversion__hero" aria-labelledby="page-title">
-      <p>КИБЕР ПОРТАЛ</p>
-      <h1 id="page-title">Контакты и заявка на робота</h1>
-      <p>Опишите мероприятие в короткой заявке — команда подберёт подходящий сценарий, модель и безопасный формат работы на площадке.</p>
+  <main class="contact-conversion" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3b" data-safety-contract="lead-routing" data-rv="30">
+    <section class="contact-conversion__hero-card container" aria-labelledby="page-title">
+      <div class="contact-conversion__copy">
+        <p class="contact-conversion__eyebrow">КИБЕР ПОРТАЛ</p>
+        <h1 id="page-title">Контакты и заявка на робота</h1>
+        <p>Опишите мероприятие — мы подберём модель, сценарий и безопасный формат работы на площадке.</p>
+      </div>
+      <div class="contact-conversion__signal">
+        <strong>24</strong>
+        <span>робота в каталоге</span>
+      </div>
     </section>
 
-    <section class="contact-conversion__grid" aria-label="Варианты связи">
+    <section class="contact-conversion__grid container" aria-label="Варианты связи">
       {contactCards.map((card) => (
         <article class="contact-conversion__card">
           <p class="contact-conversion__state">{card.state}</p>
@@ -53,58 +59,98 @@ const contactCards = [
       ))}
     </section>
 
-    <aside class="contact-conversion__notice" aria-label="Статус интеграций">
-      <strong>Lead capability:</strong> routing remains disabled until owner approval. Production contacts, CRM, Telegram bot and email delivery are not enabled in this visual pass.
-    </aside>
+    <section class="contact-conversion__cta-strip container" aria-label="Следующий шаг">
+      <div>
+        <p>Подбор под площадку</p>
+        <h2>Расскажите о событии — предложим подходящего робота</h2>
+      </div>
+      <a href="/lead/request/">Перейти к заявке</a>
+    </section>
 
-    <InternalLinks route="/contacts/" label="Следующие шаги" />
+    <div class="contact-conversion__links container">
+      <InternalLinks route="/contacts/" label="Следующие шаги" />
+    </div>
   </main>
 </BaseLayout>
 
 <style>
   .contact-conversion {
     display: grid;
-    gap: var(--kp-reference-small-gap-xl);
-    padding-block: var(--kp-reference-pad-y) calc(var(--kp-reference-pad-y) * 2);
+    gap: 4.5rem;
+    padding-block: 7rem 4.5rem;
+    background: var(--kp-reference-sky);
   }
 
-  .contact-conversion__hero {
+  .contact-conversion__hero-card {
     display: grid;
-    max-width: 54rem;
-    gap: var(--kp-reference-small-gap-md);
-    padding: clamp(2rem, 5vw, 4.5rem);
-    border-radius: 2rem;
-    background: linear-gradient(135deg, var(--kp-reference-blue-deep), var(--kp-reference-blue));
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, .42fr);
+    overflow: hidden;
+    border-radius: 1.75rem;
+    background: var(--kp-reference-blue-deep);
     color: var(--kp-reference-white);
   }
 
-  .contact-conversion__hero p,
-  .contact-conversion__hero h1,
+  .contact-conversion__copy {
+    display: grid;
+    align-content: center;
+    gap: 1.25rem;
+    padding: clamp(2.25rem, 5vw, 5rem);
+  }
+
+  .contact-conversion__eyebrow,
+  .contact-conversion__copy h1,
+  .contact-conversion__copy p,
   .contact-conversion__card p,
   .contact-conversion__card h2,
-  .contact-conversion__notice {
+  .contact-conversion__cta-strip p,
+  .contact-conversion__cta-strip h2 {
     margin: 0;
   }
 
-  .contact-conversion__hero > p:first-child,
-  .contact-conversion__state {
+  .contact-conversion__eyebrow,
+  .contact-conversion__state,
+  .contact-conversion__cta-strip p {
     font-size: var(--kp-reference-label-size);
-    font-weight: var(--kp-label-weight);
-    letter-spacing: var(--kp-label-letter-spacing);
+    font-weight: 700;
+    letter-spacing: .1em;
     text-transform: uppercase;
   }
 
-  .contact-conversion__hero h1 {
-    font-family: var(--kp-font-heading);
-    font-size: clamp(2.5rem, 7vw, var(--kp-reference-display-xl));
-    line-height: var(--kp-display-line-height);
+  .contact-conversion__eyebrow,
+  .contact-conversion__cta-strip p {
+    color: color-mix(in srgb, var(--kp-reference-white) 78%, transparent);
   }
 
-  .contact-conversion__hero > p:last-child {
+  .contact-conversion__copy h1 {
+    max-width: 44rem;
+    font-family: var(--kp-font-heading);
+    font-size: clamp(3rem, 7vw, var(--kp-reference-display-xl));
+    font-weight: 700;
+    line-height: .96;
+  }
+
+  .contact-conversion__copy p {
     max-width: 42rem;
-    color: color-mix(in srgb, var(--kp-reference-white) 86%, transparent);
+    color: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
     font-size: 1.125rem;
-    line-height: var(--kp-body-line-height);
+    line-height: 1.55;
+  }
+
+  .contact-conversion__signal {
+    display: grid;
+    align-content: end;
+    gap: .25rem;
+    min-height: 24rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    background: linear-gradient(155deg, color-mix(in srgb, var(--kp-reference-blue) 18%, var(--kp-reference-white)), var(--kp-reference-white));
+    color: var(--kp-reference-ink);
+  }
+
+  .contact-conversion__signal strong {
+    color: var(--kp-reference-blue);
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-reference-display-m);
+    line-height: 1;
   }
 
   .contact-conversion__grid {
@@ -116,11 +162,11 @@ const contactCards = [
   .contact-conversion__card {
     display: grid;
     align-content: start;
-    gap: var(--kp-reference-small-gap-md);
+    gap: 1rem;
     min-height: 100%;
     padding: 1.5rem;
-    border: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue) 14%, transparent);
-    border-radius: 1.75rem;
+    border: .0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 10%, transparent);
+    border-radius: 1.25rem;
     background: var(--kp-reference-white);
   }
 
@@ -134,36 +180,81 @@ const contactCards = [
     line-height: 1.08;
   }
 
-  .contact-conversion__card p:not(.contact-conversion__state),
-  .contact-conversion__notice {
+  .contact-conversion__card p:not(.contact-conversion__state) {
     color: var(--kp-reference-muted);
-    line-height: var(--kp-body-line-height);
+    line-height: 1.55;
   }
 
-  .contact-conversion__card a {
+  .contact-conversion__card a,
+  .contact-conversion__cta-strip a {
     display: inline-flex;
     min-height: 2.75rem;
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    padding: 0.75rem 1.25rem;
+    padding: .875rem 1.5rem;
     border-radius: var(--kp-reference-button-radius);
     background: var(--kp-reference-blue);
     color: var(--kp-reference-white);
     font-family: var(--kp-font-heading);
-    font-weight: var(--kp-heading-weight);
+    font-weight: 700;
     text-decoration: none;
   }
 
-  .contact-conversion__notice {
-    padding: 1.25rem 1.5rem;
-    border-radius: 1.25rem;
-    background: color-mix(in srgb, var(--kp-reference-blue) 8%, var(--kp-reference-white));
+  .contact-conversion__cta-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--kp-reference-small-gap-lg);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    background: var(--kp-reference-blue-deep);
+    color: var(--kp-reference-white);
+  }
+
+  .contact-conversion__cta-strip h2 {
+    max-width: 44rem;
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-reference-heading-lg);
+    line-height: 1;
+  }
+
+  .contact-conversion__cta-strip a {
+    border: .0625rem solid var(--kp-reference-white);
+    background: var(--kp-reference-white);
+    color: var(--kp-reference-blue);
   }
 
   @media (max-width: 59.9375rem) {
-    .contact-conversion__grid {
+    .contact-conversion {
+      gap: 3rem;
+      padding-block: 1.5rem 3rem;
+    }
+
+    .contact-conversion__hero-card,
+    .contact-conversion__grid,
+    .contact-conversion__cta-strip {
+      display: grid;
       grid-template-columns: 1fr;
+    }
+
+    .contact-conversion__signal {
+      min-height: 12rem;
+      order: -1;
+    }
+  }
+
+  @media (max-width: 39.9375rem) {
+    .contact-conversion__copy,
+    .contact-conversion__signal,
+    .contact-conversion__card,
+    .contact-conversion__cta-strip {
+      padding: 1.25rem;
+    }
+
+    .contact-conversion__card a,
+    .contact-conversion__cta-strip a {
+      width: 100%;
     }
   }
 </style>
