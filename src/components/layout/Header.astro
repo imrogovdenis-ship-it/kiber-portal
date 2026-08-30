@@ -18,7 +18,7 @@ const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
 
 <header class="site-header" data-block="01-header" data-rv="01" id="site-header">
   <div class="site-header__container">
-    <a class="site-header__logo" href="/" aria-label={`${logo_label} — главная`}>
+    <a class:list={["site-header__logo", { "site-header__logo--with-mark": Boolean(logo?.src) }]} href="/" aria-label={`${logo_label} — главная`}>
       {logo?.src && <img class="site-header__logo-mark" src={logo.src} alt={logo.alt ?? ''} width={logo.width ?? 132} height={logo.height ?? 32} loading="eager" decoding="async" />}
       <span class="site-header__logo-text">{logo_label}</span>
     </a>

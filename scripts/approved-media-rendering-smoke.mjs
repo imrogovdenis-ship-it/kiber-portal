@@ -46,7 +46,8 @@ function imageTags(html) {
   return [...html.matchAll(/<img\b[^>]*>/g)].map((match) => match[0]);
 }
 function firstImageInside(html, className) {
-  const start = html.indexOf(className);
+  const bodyStart = html.indexOf('<body');
+  const start = html.indexOf(className, bodyStart === -1 ? 0 : bodyStart);
   if (start === -1) return undefined;
   const imgStart = html.indexOf('<img', start);
   if (imgStart === -1) return undefined;
@@ -90,7 +91,10 @@ const homePath = 'dist/index.html';
 if (existsSync(resolve(root, homePath))) {
   const home = read(homePath);
   const cardImgs = attrs(home, 'robot-card__image');
-  const publicImageTags = imageTags(home).filter((tag) => decodeAttr(attr(tag, 'src')).startsWith('/images/'));
+  const publicImageTags = imageTags(home).filter((tag) => {
+    const src = decodeAttr(attr(tag, 'src'));
+    return src.startsWith('/images/') && !src.startsWith('/images/brand/');
+  });
   if (publicImageTags.length < 1) failures.push(`home: expected at least one rendered public image, got ${publicImageTags.length}`);
   if (cardImgs.length === 0) warnings.push('home: robot-card__image elements are absent because the current catalog pilot card still uses a placeholder');
   for (const tag of publicImageTags) {

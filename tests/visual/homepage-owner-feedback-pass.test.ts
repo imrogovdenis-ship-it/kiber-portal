@@ -8,12 +8,16 @@ const read = (path: string) => readFile(resolve(root, path), 'utf8');
 
 test('homepage header keeps logo future-proof and compact desktop controls', async () => {
   const header = await read('src/components/layout/Header.astro');
+  const baseLayout = await read('src/layouts/BaseLayout.astro');
   const layout = await read('src/styles/layout.css');
   const reference = await read('src/styles/reference-layer.css');
 
   assert.match(header, /logo\?:\s*\{[^}]*src\?:\s*string[^}]*alt\?:\s*string/s);
   assert.match(header, /site-header__logo-mark/);
   assert.match(header, /site-header__logo-text/);
+  assert.match(header, /site-header__logo--with-mark/);
+  assert.match(baseLayout, /\/images\/brand\/kp_logo_full\.svg/);
+  assert.match(layout, /\.site-header__logo--with-mark \.site-header__logo-text/);
   assert.match(layout, /\.site-header__nav\s*\{[^}]*margin-left:\s*1\.25rem;/s);
   assert.match(reference, /\.site-header__nav\s*\{[^}]*gap:\s*1\.25rem;[^}]*margin-left:\s*0\.5rem;/s);
   assert.match(reference, /\.site-header__cta\s*\{[^}]*min-height:\s*2\.125rem;[^}]*padding:\s*0\.5rem 1\.125rem;/s);
