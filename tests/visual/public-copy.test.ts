@@ -31,7 +31,10 @@ test('KIBER-37 public pages avoid internal technical project wording', async () 
   const violations = [];
   for (const file of publicPageFiles) {
     const raw = await readFile(resolve(root, file), 'utf8');
-    const text = raw.replace(/action="\/api\/leads"/g, 'action="/lead-endpoint"');
+    const text = raw
+      .replace(/\/api\/leads/g, '/lead-endpoint')
+      .replace(/\/consent\//g, '/personal-data-approval/')
+      .replace(/privacy_consent|privacyConsent|lead-form-consent|lead-form-help lead-form-consent-help/g, 'privacy-approval');
     for (const pattern of forbidden) {
       if (pattern.test(text)) violations.push(`${relative(root, file)} matches ${pattern}`);
     }

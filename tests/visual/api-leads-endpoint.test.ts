@@ -98,7 +98,7 @@ test('POST /api/leads rate limits repeated submissions before external destinati
   const makeRequest = (id: string) => new Request('https://preview.kiber-portal.ru/api/leads', {
     method: 'POST',
     headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.99' },
-    body: JSON.stringify({ request_id: id, name: 'Тест Гефест', contact: '+700****0000' }),
+    body: JSON.stringify({ request_id: id, name: 'Тест Гефест', contact: '+700****0000', privacy_consent: 'on' }),
   });
   const fetchImpl = async (url: string) => {
     calls += 1;
@@ -124,7 +124,7 @@ test('POST /api/leads dry-run accepts a lead and does not call amoCRM or Telegra
   const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1&utm_source=yandex&utm_medium=cpc&utm_campaign=robots', {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded', referer: 'https://preview.kiber-portal.ru/robots/arenda-unitree-g1/' },
-    body: new URLSearchParams({ name: 'Тест Гефест', contact: '+70000000000', event: 'Preview dry-run test' }),
+    body: new URLSearchParams({ name: 'Тест Гефест', contact: '+700****0000', event: 'Preview dry-run test', privacy_consent: 'on' }),
   });
 
   const response = await handleLeadRequest(request, baseEnv, async () => {
@@ -147,7 +147,7 @@ test('POST /api/leads live mode calls amoCRM and Telegram only when explicitly e
   const request = new Request('https://preview.kiber-portal.ru/api/leads?utm_source=yandex&utm_medium=cpc&utm_campaign=robots', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ name: 'Тест Гефест', contact: '+70000000000', email: 'test@example.com', robot: 'manual-live-test', event: 'Allowed preview test' }),
+    body: JSON.stringify({ name: 'Тест Гефест', contact: '+700****0000', email: 'test@example.com', robot: 'manual-live-test', event: 'Allowed preview test', privacy_consent: 'on' }),
   });
 
   const response = await handleLeadRequest(request, { ...baseEnv, LEAD_ROUTING_MODE: 'live' }, async (url) => {
@@ -179,6 +179,7 @@ test('POST /api/leads live mode treats repeated request_id as idempotent and doe
       name: 'Тест Гефест',
       contact: '+700****0000',
       robot: 'manual-live-test',
+      privacy_consent: 'on',
     }),
   });
   const fetchImpl = async (url: string) => {
@@ -210,7 +211,7 @@ test('POST /api/leads live mode retries transient external channel failures befo
   const request = new Request('https://preview.kiber-portal.ru/api/leads', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ request_id: 'lead_retry_001', name: 'Тест Гефест', contact: '+700****0000' }),
+    body: JSON.stringify({ request_id: 'lead_retry_001', name: 'Тест Гефест', contact: '+700****0000', privacy_consent: 'on' }),
   });
 
   const response = await handleLeadRequest(request, { ...baseEnv, LEAD_ROUTING_MODE: 'live', LEAD_ROUTING_RETRY_ATTEMPTS: '3' }, async (url) => {
@@ -235,7 +236,7 @@ test('POST /api/leads live mode returns controlled failure JSON when a channel t
   const request = new Request('https://preview.kiber-portal.ru/api/leads', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ request_id: 'lead_timeout_001', name: 'Тест Гефест', contact: '+700****0000' }),
+    body: JSON.stringify({ request_id: 'lead_timeout_001', name: 'Тест Гефест', contact: '+700****0000', privacy_consent: 'on' }),
   });
 
   const response = await handleLeadRequest(request, { ...baseEnv, LEAD_ROUTING_MODE: 'live', LEAD_ROUTING_RETRY_ATTEMPTS: '1' }, async (url) => {
@@ -269,6 +270,7 @@ test('POST /api/leads writes sanitized structured logs with trace ID and deliver
       email: 'secret@example.com',
       event: 'Private launch details',
       robot: 'manual-live-test',
+      privacy_consent: 'on',
     }),
   });
 
@@ -305,7 +307,7 @@ test('POST /api/leads writes sanitized structured failure logs without raw chann
   const request = new Request('https://preview.kiber-portal.ru/api/leads', {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ request_id: 'lead_log_fail_001', name: 'Тест Гефест', contact: '+700****0000' }),
+    body: JSON.stringify({ request_id: 'lead_log_fail_001', name: 'Тест Гефест', contact: '+700****0000', privacy_consent: 'on' }),
   });
 
   const response = await handleLeadRequest(
@@ -353,6 +355,7 @@ test('POST /api/leads stores only a minimal redacted backup receipt when a sink 
       event: 'Private event description',
       robot: 'arenda-unitree-g1',
       source_page: 'https://preview.kiber-portal.ru/lead/request/',
+      privacy_consent: 'on',
     }),
   });
 
@@ -385,7 +388,7 @@ test('POST /api/leads dry-run redirects browser form submissions to safe confirm
   const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1', {
     method: 'POST',
     headers: { 'content-type': 'application/x-www-form-urlencoded', accept: 'text/html,application/xhtml+xml' },
-    body: new URLSearchParams({ name: 'Тест Гефест', contact: '+700****0000', event: 'Preview browser form' }),
+    body: new URLSearchParams({ name: 'Тест Гефест', contact: '+700****0000', event: 'Preview browser form', privacy_consent: 'on' }),
   });
 
   const response = await handleLeadRequest(request, baseEnv, async () => {
@@ -398,6 +401,47 @@ test('POST /api/leads dry-run redirects browser form submissions to safe confirm
   assert.equal(calls, 0);
 });
 
+test('POST /api/leads rejects submissions without explicit privacy consent', async () => {
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ name: 'Тест Гефест', contact: '+700****0000', event: 'Preview consent test' }),
+  });
+
+  const response = await handleLeadRequest(request, baseEnv, async () => {
+    throw new Error('consent rejection must not call external channels');
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 400);
+  assert.deepEqual(body, { ok: false, errors: ['privacy consent is required'] });
+});
+
+test('POST /api/leads accepts explicit privacy consent while preserving dry-run safety', async () => {
+  let calls = 0;
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({
+      name: 'Тест Гефест',
+      contact: '+700****0000',
+      event: 'Preview consent test',
+      privacy_consent: 'on',
+    }),
+  });
+
+  const response = await handleLeadRequest(request, baseEnv, async () => {
+    calls += 1;
+    return new Response('{}');
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 202);
+  assert.equal(body.ok, true);
+  assert.equal(body.mode, 'dry-run');
+  assert.equal(calls, 0);
+});
+
 test('lead endpoint stays preview-safe while disabled lead page exposes only working contacts', () => {
   const routePath = resolve(root, 'src/pages/api/leads/index.ts');
   const leadPagePath = resolve(root, 'src/pages/lead/request.astro');
@@ -407,12 +451,18 @@ test('lead endpoint stays preview-safe while disabled lead page exposes only wor
 
   assert.equal(existsSync(routePath), true, 'source route for /api/leads remains available behind explicit integration work');
   assert.match(readFileSync(routePath, 'utf8'), /POST/);
-  assert.doesNotMatch(leadPage, /<form[\s\S]*method="post"[\s\S]*action="\/api\/leads"[\s\S]*>/);
+  assert.match(leadPage, /const leadFormAction = '\/api\/leads'/);
+  assert.match(leadPage, /<form[\s\S]*method="post"[\s\S]*action=\{leadFormAction\}[\s\S]*>/);
+  assert.match(leadPage, /data-state="feature-flagged"/);
   assert.match(leadPage, /PUBLIC_LEAD_FORM_ENABLED/);
   assert.match(leadPage, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
   assert.match(leadPage, /siteConfig\.telegram/);
   assert.match(leadPage, /siteConfig\.whatsapp/);
   assert.match(leadPage, /siteConfig\.max/);
+  assert.match(leadPage, /name="privacy_consent"/);
+  assert.match(leadPage, /required/);
+  assert.match(leadPage, /\/privacy-policy\//);
+  assert.match(leadPage, /\/consent\//);
   assert.match(astroConfig, /output:\s*'static'/);
   assert.equal(contract.routing.enabled, false);
   assert.deepEqual(contract.routing.destinations, []);

@@ -43,6 +43,7 @@ interface NormalizedLead {
   email?: string;
   robot?: string;
   event?: string;
+  privacyConsent: boolean;
   sourcePage: string;
   referer?: string;
   ip?: string;
@@ -100,10 +101,11 @@ const routingMode = (env: EnvLike): LeadRoutingMode => {
   return 'disabled';
 };
 
-const validate = (lead: Pick<NormalizedLead, 'name' | 'contact'>) => {
+const validate = (lead: Pick<NormalizedLead, 'name' | 'contact' | 'privacyConsent'>) => {
   const errors: string[] = [];
   if (!lead.name) errors.push('name is required');
   if (!lead.contact) errors.push('contact is required');
+  if (lead.name && lead.contact && !lead.privacyConsent) errors.push('privacy consent is required');
   return errors;
 };
 
@@ -122,6 +124,12 @@ const originAllowed = (request: Request, env: EnvLike) => {
 
 const hasHoneypot = (body: Record<string, unknown>) => ['website', 'url', 'company', 'bot_field']
   .some((key) => Boolean(clean(body[key])));
+
+const hasExplicitConsent = (body: Record<string, unknown>) => {
+  const value = clean(body.privacy_consent) ?? clean(body.privacyConsent) ?? clean(body.consent);
+  if (!value) return false;
+  return ['1', 'true', 'yes', 'on', 'accepted'].includes(value.toLowerCase());
+};
 
 const requestId = () => `lead_${Date.now()}_${crypto.randomUUID()}`;
 const traceId = (request: Request, lead: Pick<NormalizedLead, 'requestId'>) => clean(request.headers.get('x-request-id')) ?? lead.requestId;
@@ -258,6 +266,7 @@ const normalizeLead = (request: Request, body: Record<string, unknown>, env: Env
     email: valueFrom(body, url, 'email'),
     robot: valueFrom(body, url, 'robot') ?? valueFrom(body, url, 'scenario'),
     event: valueFrom(body, url, 'event'),
+    privacyConsent: hasExplicitConsent(body),
     sourcePage: clean(body.source_page) ?? clean(body.sourcePage) ?? request.headers.get('referer') ?? `${url.origin}/lead/request/`,
     referer: request.headers.get('referer') ?? undefined,
     ip: request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || undefined,

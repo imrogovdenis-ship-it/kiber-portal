@@ -27,6 +27,7 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
   assert.match(requestPage, /PUBLIC_LEAD_FORM_ENABLED/);
   assert.match(requestPage, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
   assert.match(requestPage, /name="robot"/);
+  assert.match(requestPage, /data-vertical-step="lead-form-consent"/);
   assert.match(requestPage, /data-vertical-step="lead-to-contacts"/);
 
   const thanksPage = await readFile(resolve(root, 'src/pages/lead/thanks.astro'), 'utf8');
@@ -37,7 +38,11 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
 test('KIBER-33/KIBER-38 lead request source stays preview-safe and exposes working contacts while routing is disabled', async () => {
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
   assert.match(requestPage, /const leadFormEnabled = import\.meta\.env\.PUBLIC_LEAD_FORM_ENABLED === 'true'/);
-  assert.doesNotMatch(requestPage, /<form[\s\S]*method="post"[\s\S]*action="\/api\/leads"[\s\S]*>/);
+  assert.match(requestPage, /const leadFormAction = '\/api\/leads'/);
+  assert.match(requestPage, /<form[\s\S]*method="post"[\s\S]*action=\{leadFormAction\}[\s\S]*>/);
+  assert.match(requestPage, /name="privacy_consent"/);
+  assert.match(requestPage, /\/privacy-policy\//);
+  assert.match(requestPage, /\/consent\//);
   assert.match(requestPage, /siteConfig\.telegram/);
   assert.match(requestPage, /siteConfig\.whatsapp/);
   assert.match(requestPage, /siteConfig\.max/);

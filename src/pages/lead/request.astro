@@ -4,6 +4,7 @@ import { siteConfig } from '../../config/site';
 
 const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 const leadFormEnabled = import.meta.env.PUBLIC_LEAD_FORM_ENABLED === 'true';
+const leadFormAction = '/api/leads';
 const contactChannels = [
   {
     title: 'Написать в Telegram',
@@ -56,10 +57,33 @@ const contactChannels = [
 
     <div class="lead-request__panel">
       {leadFormEnabled && (
-        <section class="lead-request__pending-form" aria-labelledby="lead-form-disabled-title" data-state="feature-flagged" data-vertical-step="lead-to-contacts">
-          <h2 id="lead-form-disabled-title">Форма готовится к подключению</h2>
-          <input type="hidden" name="robot" value={robot} disabled />
-          <p id="lead-request-status" class="lead-request__note" aria-live="polite" data-loading-label="Ожидаем подключение канала">До live routing форма не отправляет заявки во внешние системы.</p>
+        <section class="lead-request__pending-form" aria-labelledby="lead-form-title" data-state="feature-flagged" data-vertical-step="lead-form-consent">
+          <h2 id="lead-form-title">Расскажите о мероприятии</h2>
+          <p id="lead-form-help" class="lead-request__note">Форма отправляет только после обязательного согласия с обработкой персональных данных. Live routing включается отдельным approval.</p>
+          <form method="post" action={leadFormAction} aria-describedby="lead-form-help lead-form-consent-help">
+            <input type="hidden" name="robot" value={robot} />
+            <label>
+              <span>Имя *</span>
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Телефон или мессенджер *</span>
+              <input name="contact" autocomplete="tel" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" autocomplete="email" type="email" />
+            </label>
+            <label>
+              <span>Событие</span>
+              <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий и желаемая модель"></textarea>
+            </label>
+            <label class="lead-request__approval">
+              <input name="privacy_consent" type="checkbox" value="on" required />
+              <span id="lead-form-consent-help">Согласен на обработку персональных данных по <a href="/privacy-policy/">Политике обработки персональных данных</a> и <a href="/consent/">Согласию на обработку персональных данных</a>.</span>
+            </label>
+            <button type="submit" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={robot} data-analytics-form-state="enabled">Отправить заявку</button>
+          </form>
         </section>
       )}
 
@@ -183,6 +207,7 @@ const contactChannels = [
 
   .lead-request__contacts h2,
   .lead-request__pending-form h2,
+  .lead-request__pending-form label,
   .lead-request__sidebar h2 {
     color: var(--kp-reference-ink);
     font-family: var(--kp-font-heading);
@@ -204,6 +229,61 @@ const contactChannels = [
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.875rem;
+  }
+
+  .lead-request__pending-form form {
+    display: grid;
+    gap: 0.875rem;
+  }
+
+  .lead-request__pending-form label {
+    display: grid;
+    gap: 0.35rem;
+    font-size: 0.875rem;
+    line-height: 1.3;
+  }
+
+  .lead-request__pending-form input:not([type='checkbox']),
+  .lead-request__pending-form textarea {
+    width: 100%;
+    min-height: 2.75rem;
+    box-sizing: border-box;
+    border: 0.0625rem solid var(--kp-line);
+    border-radius: 0.875rem;
+    padding: 0.75rem 1rem;
+    background: var(--kp-reference-sky);
+    color: var(--kp-reference-ink);
+    font: inherit;
+  }
+
+  .lead-request__pending-form textarea {
+    resize: vertical;
+  }
+
+  .lead-request__approval {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    color: var(--kp-reference-muted);
+    font-family: var(--kp-font-body);
+    font-weight: 400;
+  }
+
+  .lead-request__approval input {
+    margin-top: 0.2rem;
+    accent-color: var(--kp-reference-blue);
+  }
+
+  .lead-request__approval a {
+    color: var(--kp-reference-blue);
+  }
+
+  .lead-request__pending-form button {
+    min-height: 2.75rem;
+    border: 0;
+    border-radius: 62.4375rem;
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+    font-weight: var(--kp-heading-weight);
   }
 
   .lead-request__contact-card {
