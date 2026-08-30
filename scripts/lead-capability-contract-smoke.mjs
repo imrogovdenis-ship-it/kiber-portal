@@ -26,9 +26,9 @@ for (const forbidden of ['webhook', 'telegram_token', 'email:', 'mailto:', 'crm'
 }
 
 const requestPage = readFileSync(requestPagePath, 'utf8');
-if (!requestPage.includes('method="get"')) failures.push('lead request form must remain static GET');
-if (!requestPage.includes('action="/lead/thanks/"')) failures.push('lead request form must route only to local confirmation');
-if (requestPage.includes('method="post"')) failures.push('lead request form must not POST');
+if (!requestPage.includes('method="post"')) failures.push('lead request form must POST to preview-safe endpoint');
+if (!requestPage.includes('action="/api/leads"')) failures.push('lead request form must route to /api/leads source endpoint');
+if (!requestPage.includes('data-state="preview-dry-run"')) failures.push('lead request form must disclose preview dry-run state in source');
 
 const contactsPage = readFileSync(contactsPagePath, 'utf8');
 if (!contactsPage.includes('lead-routing')) failures.push('contacts page must disclose lead-routing approval blocker');

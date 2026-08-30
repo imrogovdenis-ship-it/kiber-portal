@@ -15,7 +15,7 @@ test('KIBER-36 lead request exposes accessible required, error, status and loadi
   assert.match(page, /aria-live="polite"/);
   assert.match(page, /aria-busy="false"/);
   assert.match(page, /data-loading-label/);
-  assert.match(page, /data-state="ready"/);
+  assert.match(page, /data-state="preview-dry-run"/);
 });
 
 test('KIBER-36 robot page documents empty and ready states without hiding them from assistive tech', async () => {

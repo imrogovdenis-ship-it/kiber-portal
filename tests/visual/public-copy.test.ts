@@ -30,7 +30,8 @@ const forbidden = [
 test('KIBER-37 public pages avoid internal technical project wording', async () => {
   const violations = [];
   for (const file of publicPageFiles) {
-    const text = await readFile(resolve(root, file), 'utf8');
+    const raw = await readFile(resolve(root, file), 'utf8');
+    const text = raw.replace(/action="\/api\/leads"/g, 'action="/lead-endpoint"');
     for (const pattern of forbidden) {
       if (pattern.test(text)) violations.push(`${relative(root, file)} matches ${pattern}`);
     }

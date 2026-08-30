@@ -2,65 +2,133 @@
   "schemaVersion": 1,
   "provider": "neutral",
   "description": "KIBER-71 provider-neutral analytics event contract. This file defines event names and payload fields only; it does not connect any analytics provider or IDs.",
-  "reservedFields": ["event", "source", "placement", "slug"],
+  "reservedFields": [
+    "event",
+    "source",
+    "placement",
+    "slug"
+  ],
   "events": [
     {
       "name": "phone_click",
       "description": "User clicks a phone contact link.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["href_kind"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "href_kind"
+      ],
       "consent": "analytics"
     },
     {
       "name": "messenger_click",
       "description": "User clicks Telegram, WhatsApp or another messenger contact link.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["messenger"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "messenger"
+      ],
       "consent": "analytics"
     },
     {
       "name": "contact_click",
       "description": "User clicks a generic contact CTA or email link.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["href_kind"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "href_kind"
+      ],
       "consent": "analytics"
     },
     {
       "name": "form_submit_intent",
       "description": "User attempts or intends to submit the lead form before provider-specific tracking is connected.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["form_state"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "form_state"
+      ],
       "consent": "analytics"
     },
     {
       "name": "pdf_download",
       "description": "Reserved contract for future PDF commercial proposal downloads.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["document_type"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "document_type"
+      ],
       "consent": "analytics",
       "reserved": true
     },
     {
       "name": "scroll_depth",
       "description": "Reserved contract for future scroll-depth milestones.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["threshold"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "threshold"
+      ],
       "consent": "analytics",
       "reserved": true
     },
     {
       "name": "robot_card_click",
       "description": "User clicks a robot card/detail CTA.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["position"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "position"
+      ],
       "consent": "analytics"
     },
     {
       "name": "breadcrumb_click",
       "description": "User clicks a breadcrumb navigation link.",
-      "required": ["source", "placement", "slug"],
-      "optional": ["position"],
+      "required": [
+        "source",
+        "placement",
+        "slug"
+      ],
+      "optional": [
+        "position"
+      ],
       "consent": "analytics"
     }
-  ]
+  ],
+  "deferredProvider": {
+    "name": "yandex_metrica",
+    "status": "deferred_until_site_publication_and_domain_binding",
+    "counterId": null,
+    "webmasterVerification": null,
+    "cookieConsentEnabled": false,
+    "activationRequires": [
+      "site published",
+      "production domain bound",
+      "owner-provided Yandex Metrica counter ID",
+      "owner-provided Yandex Webmaster verification value if used",
+      "separate analytics/consent approval"
+    ],
+    "productionDeploy": "not-approved"
+  }
 }

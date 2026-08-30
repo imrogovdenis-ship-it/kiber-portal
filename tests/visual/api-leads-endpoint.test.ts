@@ -1,0 +1,127 @@
+import assert from 'node:assert/strict';
+import { existsSync, readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import test from 'node:test';
+
+import { handleLeadRequest } from '../../src/server/lead-routing/api-leads';
+
+const root = process.cwd();
+const baseEnv = {
+  DEPLOY_ENV: 'preview',
+  LEAD_ROUTING_ENABLED: 'true',
+  LEAD_ROUTING_MODE: 'dry-run',
+  AMOCRM_BASE_URL: 'https://portalrent.amocrm.ru',
+  AMOCRM_ACCESS_TOKEN: 'fake',
+  TELEGRAM_BOT_TOKEN: '123456789:TEST_TOKEN',
+  TELEGRAM_LEADS_CHAT_ID: '-1001234567890',
+};
+
+test('POST /api/leads returns validation errors without calling external destinations', async () => {
+  let calls = 0;
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ name: '', contact: '', robot: 'arenda-unitree-g1' }),
+  });
+
+  const response = await handleLeadRequest(request, baseEnv, async () => {
+    calls += 1;
+    return new Response('{}');
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 400);
+  assert.equal(body.ok, false);
+  assert.deepEqual(body.errors, ['name is required', 'contact is required']);
+  assert.equal(calls, 0);
+});
+
+test('POST /api/leads dry-run accepts a lead and does not call amoCRM or Telegram', async () => {
+  let calls = 0;
+  const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1&utm_source=yandex&utm_medium=cpc&utm_campaign=robots', {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded', referer: 'https://preview.kiber-portal.ru/robots/arenda-unitree-g1/' },
+    body: new URLSearchParams({ name: 'Тест Гефест', contact: '+70000000000', event: 'Preview dry-run test' }),
+  });
+
+  const response = await handleLeadRequest(request, baseEnv, async () => {
+    calls += 1;
+    return new Response('{}');
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 202);
+  assert.equal(body.ok, true);
+  assert.equal(body.mode, 'dry-run');
+  assert.equal(body.channels.amoCRM.skipped, 'dry-run');
+  assert.equal(body.channels.telegram.skipped, 'dry-run');
+  assert.match(body.requestId, /^lead_/);
+  assert.equal(calls, 0);
+});
+
+test('POST /api/leads live mode calls amoCRM and Telegram only when explicitly enabled', async () => {
+  const urls: string[] = [];
+  const request = new Request('https://preview.kiber-portal.ru/api/leads?utm_source=yandex&utm_medium=cpc&utm_campaign=robots', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ name: 'Тест Гефест', contact: '+70000000000', email: 'test@example.com', robot: 'manual-live-test', event: 'Allowed preview test' }),
+  });
+
+  const response = await handleLeadRequest(request, { ...baseEnv, LEAD_ROUTING_MODE: 'live' }, async (url) => {
+    urls.push(String(url));
+    if (String(url).includes('amocrm.ru')) return new Response(JSON.stringify({ _embedded: { unsorted: [{ uid: 'unsorted-test' }] } }), { status: 200 });
+    if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 11 } }), { status: 200 });
+    throw new Error(`unexpected URL: ${url}`);
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(body.ok, true);
+  assert.equal(body.mode, 'live');
+  assert.equal(body.channels.amoCRM.unsortedUid, 'unsorted-test');
+  assert.equal(body.channels.telegram.messageId, 11);
+  assert.deepEqual(urls, [
+    'https://portalrent.amocrm.ru/api/v4/leads/unsorted/forms',
+    'https://api.telegram.org/bot123456789:TEST_TOKEN/sendMessage',
+  ]);
+});
+
+test('POST /api/leads dry-run redirects browser form submissions to safe confirmation page', async () => {
+  let calls = 0;
+  const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1', {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded', accept: 'text/html,application/xhtml+xml' },
+    body: new URLSearchParams({ name: 'Тест Гефест', contact: '+700****0000', event: 'Preview browser form' }),
+  });
+
+  const response = await handleLeadRequest(request, baseEnv, async () => {
+    calls += 1;
+    return new Response('{}');
+  });
+
+  assert.equal(response.status, 303);
+  assert.equal(response.headers.get('location'), '/lead/thanks/?robot=arenda-unitree-g1&request=preview');
+  assert.equal(calls, 0);
+});
+
+test('lead form and endpoint source stay preview-safe and production build remains static', () => {
+  const routePath = resolve(root, 'src/pages/api/leads.ts');
+  const formPath = resolve(root, 'src/pages/lead/request.astro');
+  const astroConfig = readFileSync(resolve(root, 'astro.config.mjs'), 'utf8');
+  const contract = JSON.parse(readFileSync(resolve(root, 'data/lead/capability-contract.json'), 'utf8'));
+
+  assert.equal(existsSync(routePath), true, 'source route for /api/leads is required');
+  assert.match(readFileSync(routePath, 'utf8'), /POST/);
+  assert.match(readFileSync(formPath, 'utf8'), /action="\/api\/leads"/);
+  assert.match(readFileSync(formPath, 'utf8'), /method="post"/);
+  assert.match(astroConfig, /output:\s*'static'/);
+  assert.equal(contract.routing.enabled, false);
+  assert.deepEqual(contract.routing.destinations, []);
+  assert.equal(contract.deferredIntegrations?.apiLeadsEndpoint?.status, 'preview-dry-run-scaffolded');
+
+  const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+  assert.equal(pkg.scripts['test:api-leads'], 'node --import tsx --test tests/visual/api-leads-endpoint.test.ts');
+  assert.equal(pkg.scripts['test:lead-capability'], 'node scripts/lead-capability-contract-smoke.mjs');
+  assert.match(pkg.scripts.ci, /npm run test:api-leads/);
+  assert.match(pkg.scripts.ci, /npm run test:lead-capability/);
+});

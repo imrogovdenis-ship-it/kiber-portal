@@ -14,6 +14,10 @@ test('KIBER-71 defines a provider-neutral analytics event registry', async () =>
   const registry = JSON.parse(await readFile(registryPath, 'utf8'));
   assert.equal(registry.schemaVersion, 1);
   assert.equal(registry.provider, 'neutral');
+  assert.equal(registry.deferredProvider?.name, 'yandex_metrica');
+  assert.equal(registry.deferredProvider?.status, 'deferred_until_site_publication_and_domain_binding');
+  assert.equal(registry.deferredProvider?.counterId, null);
+  assert.equal(registry.deferredProvider?.cookieConsentEnabled, false);
   const events = registry.events as Array<{ name: string; required: string[] }>;
   for (const name of requiredEvents) {
     const event = events.find((candidate) => candidate.name === name);

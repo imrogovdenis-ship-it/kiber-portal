@@ -24,8 +24,8 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
   assert.match(robotHero, /data-vertical-step="robot-to-lead"/);
 
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(requestPage, /method="get"/);
-  assert.match(requestPage, /action="\/lead\/thanks\/"/);
+  assert.match(requestPage, /method="post"/);
+  assert.match(requestPage, /action="\/api\/leads"/);
   assert.match(requestPage, /name="robot"/);
   assert.match(requestPage, /data-vertical-step="lead-to-confirmation"/);
 
@@ -34,10 +34,9 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
   assert.match(thanksPage, /заявка принята/i);
 });
 
-test('KIBER-33 lead request source stays static-safe and does not claim real submission', async () => {
+test('KIBER-33 lead request source posts to preview-safe /api/leads without enabling live destinations', async () => {
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(requestPage, /method="get"/);
-  assert.doesNotMatch(requestPage, /method="post"/i);
-  assert.doesNotMatch(requestPage, /api\//i);
-  assert.match(requestPage, /action="\/lead\/thanks\/"/);
+  assert.match(requestPage, /method="post"/);
+  assert.match(requestPage, /action="\/api\/leads"/);
+  assert.match(requestPage, /data-state="preview-dry-run"/);
 });
