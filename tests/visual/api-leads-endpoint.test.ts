@@ -36,6 +36,89 @@ test('POST /api/leads returns validation errors without calling external destina
   assert.equal(calls, 0);
 });
 
+test('POST /api/leads rejects blocked origins without calling external destinations', async () => {
+  let calls = 0;
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', origin: 'https://evil.example' },
+    body: JSON.stringify({ name: 'Тест Гефест', contact: '+700****0000' }),
+  });
+
+  const response = await handleLeadRequest(request, {
+    ...baseEnv,
+    LEAD_ROUTING_MODE: 'live',
+    LEAD_ALLOWED_ORIGINS: 'https://preview.kiber-portal.ru,https://kiber-portal.ru',
+  }, async () => {
+    calls += 1;
+    return new Response('{}');
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 403);
+  assert.equal(body.ok, false);
+  assert.deepEqual(body.errors, ['origin not allowed']);
+  assert.equal(calls, 0);
+  assert.doesNotMatch(JSON.stringify(body), /evil\.example|AMOCRM|TELEGRAM|token|destination/i);
+});
+
+test('POST /api/leads accepts and drops honeypot submissions without external destinations', async () => {
+  let calls = 0;
+  const logs: unknown[] = [];
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', origin: 'https://preview.kiber-portal.ru' },
+    body: JSON.stringify({ name: 'Bot', contact: '+700****0000', website: 'https://spam.example' }),
+  });
+
+  const response = await handleLeadRequest(request, baseEnv, async () => {
+    calls += 1;
+    return new Response('{}');
+  }, { logSink: (event) => logs.push(event) });
+  const body = await response.json();
+
+  assert.equal(response.status, 202);
+  assert.equal(body.ok, true);
+  assert.equal(body.mode, 'dry-run');
+  assert.equal(body.dropped, true);
+  assert.equal(body.reason, 'honeypot');
+  assert.equal(calls, 0);
+  assert.equal(logs.length, 1);
+  assert.doesNotMatch(JSON.stringify(body), /spam\.example|Bot|\+700/);
+  assert.doesNotMatch(JSON.stringify(logs), /spam\.example|Bot|\+700/);
+});
+
+test('POST /api/leads rate limits repeated submissions before external destinations', async () => {
+  let calls = 0;
+  const env = {
+    ...baseEnv,
+    LEAD_ROUTING_MODE: 'live',
+    LEAD_RATE_LIMIT_WINDOW_MS: '60000',
+    LEAD_RATE_LIMIT_MAX: '1',
+  };
+  const makeRequest = (id: string) => new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json', 'x-forwarded-for': '203.0.113.99' },
+    body: JSON.stringify({ request_id: id, name: 'Тест Гефест', contact: '+700****0000' }),
+  });
+  const fetchImpl = async (url: string) => {
+    calls += 1;
+    if (String(url).includes('amocrm.ru')) return new Response(JSON.stringify({ _embedded: { unsorted: [{ uid: 'unsorted-rate' }] } }), { status: 200 });
+    if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 77 } }), { status: 200 });
+    throw new Error(`unexpected URL: ${url}`);
+  };
+
+  const first = await handleLeadRequest(makeRequest('lead_rate_001'), env, fetchImpl);
+  const second = await handleLeadRequest(makeRequest('lead_rate_002'), env, fetchImpl);
+  const body = await second.json();
+
+  assert.equal(first.status, 200);
+  assert.equal(second.status, 429);
+  assert.equal(body.ok, false);
+  assert.deepEqual(body.errors, ['rate limit exceeded']);
+  assert.equal(calls, 2, 'only the first accepted lead should call amoCRM and Telegram');
+  assert.doesNotMatch(JSON.stringify(body), /203\.0\.113\.99|AMOCRM|TELEGRAM|token|destination/i);
+});
+
 test('POST /api/leads dry-run accepts a lead and does not call amoCRM or Telegram', async () => {
   let calls = 0;
   const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1&utm_source=yandex&utm_medium=cpc&utm_campaign=robots', {
