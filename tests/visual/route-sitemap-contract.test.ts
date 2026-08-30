@@ -56,3 +56,17 @@ test('KIBER-40 tracks all 44 production URLs with canonical type and status', as
     assert.ok(item.status);
   }
 });
+
+test('KIBER-41 tracks URL keep merge delete redirect decisions with no unresolved rows', async () => {
+  const decisionPath = resolve(root, 'data/seo/url-decision-registry.json');
+  assert.equal(existsSync(decisionPath), true, 'URL decision registry is required');
+
+  const registry = JSON.parse(await readFile(decisionPath, 'utf8'));
+  assert.equal(registry.issue, 'KIBER-41');
+  assert.equal(registry.expectedUrlCount, 44);
+  assert.equal(registry.summary.total, 44);
+  assert.equal(registry.summary.unresolved, 0);
+  assert.equal(registry.summary.productionActionAllowed, 0);
+  assert.equal(registry.decisions.length, 44);
+}
+);
