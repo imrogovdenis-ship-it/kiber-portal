@@ -1,5 +1,7 @@
 # Production go/no-go пакет КИБЕР ПОРТАЛА
 
+> Preview-first update: текущая цель — protected non-domain server preview; live analytics/routing/production DNS отложены.
+
 Дата фиксации: `2026-08-30T02:56:33Z`  
 Репозиторий: `imrogovdenis-ship-it/kiber-portal`  
 Рабочая база: `codex/kiber-15-controlled-rebuild`  

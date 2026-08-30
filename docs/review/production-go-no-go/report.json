@@ -3,14 +3,16 @@
   "status": "passed_with_no_go_blockers",
   "decision": "NO_GO",
   "branch": "codex/kiber-15-controlled-rebuild",
-  "head": "2169024",
-  "blockers": 6,
-  "routesChecked": 36,
+  "head": "96107ef",
+  "blockers": 4,
+  "routesChecked": 37,
   "robotRoutesChecked": 24,
   "openPullRequests": [
-    43,
-    44,
-    45
+    14,
+    12,
+    11,
+    10,
+    8
   ],
-  "generatedAt": "2026-08-28T21:28:58.037Z"
+  "generatedAt": "2026-08-30T08:21:26.734Z"
 }

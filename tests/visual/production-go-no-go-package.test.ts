@@ -14,7 +14,7 @@ test('production go/no-go package records exact launch map and stays NO-GO', () 
   assert.equal(pack.productionDecision.dnsChangeAllowed, false);
   assert.equal(pack.productionDecision.secretsChangeAllowed, false);
   assert.equal(pack.currentBase.branch, 'codex/kiber-15-controlled-rebuild');
-  assert.equal(pack.currentBase.head, 'e334c72');
+  assert.equal(pack.currentBase.head, '96107ef');
   assert.equal(pack.readiness.routesChecked, 37);
   assert.equal(pack.readiness.robotRoutesChecked, 24);
   assert.deepEqual(pack.readiness.legalRoutesPresent, ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/']);

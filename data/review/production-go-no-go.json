@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-production-go-no-go",
-  "generatedAt": "2026-08-30T02:56:33Z",
+  "generatedAt": "2026-08-30T08:17:53Z",
   "currentBase": {
     "repository": "imrogovdenis-ship-it/kiber-portal",
     "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
     "branch": "codex/kiber-15-controlled-rebuild",
-    "head": "e334c72",
-    "headTitle": "feat: align visual pass 3 pages to reference style"
+    "head": "96107ef",
+    "headTitle": "feat: add preview-safe api leads endpoint (#60)"
   },
   "productionDecision": {
     "status": "NO_GO",
-    "summary": "Controlled rebuild has owner-approved public contacts and media, but production launch remains blocked by lead routing, analytics/consent, legal/business launch confirmation, and explicit production permission.",
+    "summary": "Controlled rebuild is ready for a protected non-domain server preview, while production launch remains blocked by live lead routing, analytics/consent activation, final business/legal launch confirmation, and explicit production/DNS permission.",
     "productionDeployAllowed": false,
     "dnsChangeAllowed": false,
     "secretsChangeAllowed": false,
@@ -100,31 +100,59 @@
   ],
   "openPullRequests": [
     {
-      "number": 43,
-      "title": "test: add production approval gates registry",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/43",
+      "number": 14,
+      "title": "feat(data): add robot price decision pack",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/14",
       "state": "OPEN",
-      "mergeabilityAtCapture": "CONFLICTING",
-      "ci": "SUCCESS",
-      "recommendation": "Обновить от базы или заменить этим go/no-go пакетом, если он перекрывает смысл PR #43."
+      "base": "feat/kiber-27-visual-source-hierarchy",
+      "head": "hermes/kiber-42-44-price-decision-pack",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
     },
     {
-      "number": 44,
-      "title": "test: tighten launch readiness critical route crawl",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/44",
+      "number": 12,
+      "title": "KIBER-51: SEO-аудит production и baseline метаданных для cutover",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/12",
       "state": "OPEN",
-      "mergeabilityAtCapture": "MERGEABLE",
-      "ci": "SUCCESS",
-      "recommendation": "Можно рассмотреть merge как усиление readiness crawl после проверки конфликтов с go/no-go пакетом."
+      "base": "hermes/kiber-40-production-url-registry",
+      "head": "hermes/kiber-51-production-seo-audit",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
     },
     {
-      "number": 45,
-      "title": "test: attach pricing disclaimer to tariff cards",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/45",
+      "number": 11,
+      "title": "KIBER-42/KIBER-44: схема цены робота и аудит цен по 24 роботам",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/11",
       "state": "OPEN",
-      "mergeabilityAtCapture": "MERGEABLE",
+      "base": "hermes/kiber-40-production-url-registry",
+      "head": "hermes/kiber-42-robot-price-schema",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+    },
+    {
+      "number": 10,
+      "title": "KIBER-40/KIBER-41: реестр 44 production URL и решения keep/delete/redirect",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/10",
+      "state": "OPEN",
+      "base": "main",
+      "head": "hermes/kiber-40-production-url-registry",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+    },
+    {
+      "number": 8,
+      "title": "design: controlled rebuild and Robot Card vertical pilot",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/8",
+      "state": "OPEN",
+      "base": "main",
+      "head": "codex/kiber-15-controlled-rebuild",
+      "mergeabilityAtCapture": "CLEAN",
       "ci": "SUCCESS",
-      "recommendation": "Можно рассмотреть merge как коммерческую safety-защиту цен/дисклеймеров."
+      "recommendation": "Keep as current first-preview integration branch; merge to main only after protected staging review."
     }
   ],
   "ownerDecisionChecklist": [
@@ -134,9 +162,9 @@
     "Дать отдельное явное permission на production deploy/DNS/secrets/live routing после закрытия блокеров."
   ],
   "nextSafeWork": [
-    "Собрать media rights review table для 24 robot assets.",
-    "Подготовить public contacts config scaffold без реальных live destinations.",
-    "Обновить/смержить PR #44 и PR #45, если они не конфликтуют с текущей базой.",
-    "Подготовить визуальный pass 3 для /lead/thanks/, category pages и footer."
+    "Обновить protected staging alex-kiber-staging до текущего PR #8 HEAD и дать прямую sslip.io ссылку с Basic Auth.",
+    "Провести быстрый staging smoke/crawl: health, главная, robots/category/card/contact/lead pages, 404, noindex, отсутствие live analytics и live routing.",
+    "Обновить stale readiness/go-no-go reports после последних merges, чтобы они отражали 37 routes, 24 robots, 4 production blockers и HEAD 96107ef.",
+    "Отложить analytics IDs, live lead routing, чат/магазин/PDF/редакторские фичи до review первой опубликованной версии."
   ]
 }
