@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import test from 'node:test';
 
-import { handleLeadRequest } from '../../src/server/lead-routing/api-leads';
+import { handleLeadRequest, handleLeadStatusRequest } from '../../src/server/lead-routing/api-leads';
 
 const root = process.cwd();
 const baseEnv = {
@@ -105,7 +105,7 @@ test('POST /api/leads dry-run redirects browser form submissions to safe confirm
 });
 
 test('lead form and endpoint source stay preview-safe and production build remains static', () => {
-  const routePath = resolve(root, 'src/pages/api/leads.ts');
+  const routePath = resolve(root, 'src/pages/api/leads/index.ts');
   const formPath = resolve(root, 'src/pages/lead/request.astro');
   const astroConfig = readFileSync(resolve(root, 'astro.config.mjs'), 'utf8');
   const contract = JSON.parse(readFileSync(resolve(root, 'data/lead/capability-contract.json'), 'utf8'));
@@ -124,4 +124,39 @@ test('lead form and endpoint source stay preview-safe and production build remai
   assert.equal(pkg.scripts['test:lead-capability'], 'node scripts/lead-capability-contract-smoke.mjs');
   assert.match(pkg.scripts.ci, /npm run test:api-leads/);
   assert.match(pkg.scripts.ci, /npm run test:lead-capability/);
+});
+
+
+test('GET /api/leads/status exposes only a minimal health contract and no routing configuration', async () => {
+  const response = await handleLeadStatusRequest({
+    ...baseEnv,
+    LEAD_ROUTING_MODE: 'live',
+    AMOCRM_ACCESS_TOKEN: 'redacted',
+    TELEGRAM_BOT_TOKEN: 'redacted',
+    TELEGRAM_LEADS_CHAT_ID: '-1001234567890',
+  });
+  const bodyText = await response.text();
+  const body = JSON.parse(bodyText);
+
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get('cache-control'), 'no-store');
+  assert.deepEqual(body, {
+    ok: true,
+    service: 'api-leads',
+    status: 'available',
+  });
+
+  assert.doesNotMatch(bodyText, /secret-token|AMOCRM|TELEGRAM|portalrent|chat|destination|routing|live|dry-run|disabled|env|credential|token/i);
+});
+
+test('nginx serves /api/leads/status as an exact minimal JSON route without env-backed configuration', () => {
+  const routePath = resolve(root, 'src/pages/api/leads/status.ts');
+  assert.equal(existsSync(routePath), false, 'static Astro must not create a nested /api/leads/status file-vs-directory conflict');
+
+  const nginx = readFileSync(resolve(root, 'nginx.conf'), 'utf8');
+  assert.match(nginx, /location = \/api\/leads\/status/);
+  assert.match(nginx, /default_type application\/json/);
+  assert.match(nginx, /Cache-Control "no-store"/);
+  assert.match(nginx, /return 200 '\{"ok":true,"service":"api-leads","status":"available"\}\\n'/);
+  assert.doesNotMatch(nginx, /location = \/api\/leads\/status[\s\S]*?(process\.env|AMOCRM|TELEGRAM|LEAD_ROUTING|credential|token|destination|routing)/i);
 });

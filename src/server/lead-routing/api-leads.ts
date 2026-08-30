@@ -25,9 +25,9 @@ interface NormalizedLead {
   deployEnv: string;
 }
 
-const json = (body: unknown, status = 200) => new Response(JSON.stringify(body, null, 2), {
+const json = (body: unknown, status = 200, headers: HeadersInit = {}) => new Response(JSON.stringify(body, null, 2), {
   status,
-  headers: { 'content-type': 'application/json; charset=utf-8' },
+  headers: { 'content-type': 'application/json; charset=utf-8', ...headers },
 });
 
 const redirect = (location: string, status = 303) => new Response(null, {
@@ -134,6 +134,12 @@ const asTelegram = (lead: NormalizedLead): TelegramLeadPayload => ({
   submittedAt: lead.submittedAt,
   deployEnv: lead.deployEnv,
 });
+
+export const handleLeadStatusRequest = async (_env: EnvLike = process.env): Promise<Response> => json({
+  ok: true,
+  service: 'api-leads',
+  status: 'available',
+}, 200, { 'cache-control': 'no-store' });
 
 export const handleLeadRequest = async (
   request: Request,
