@@ -3,15 +3,31 @@ import type { RobotCardData } from '../../../design-system/schemas/fixture.schem
 
 interface Props extends RobotCardData {
   variant?: 'default' | 'compact';
+  hideDisclaimer?: boolean;
+  hideLink?: boolean;
+  imageLoading?: 'eager' | 'lazy';
 }
 
-const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
+const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hideLink = false, imageLoading = 'lazy', ...data } = Astro.props;
 ---
 
-<article class:list={['robot-card', `robot-card--${variant}`]} data-block-id="robot-card" data-review-id="05">
+<a
+  class:list={['robot-card', `robot-card--${variant}`]}
+  href={data.href}
+  aria-label={`Открыть карточку робота ${data.title}`}
+  data-block-id="robot-card"
+  data-review-id="05"
+  data-analytics-event={analytics.event}
+  data-analytics-robot-slug={data.slug}
+  data-analytics-block-id="robot-card"
+  data-analytics-source="robot_card"
+  data-analytics-placement={analytics.placement}
+  data-analytics-slug={data.slug}
+  data-analytics-position={analytics.position}
+>
   <div class="robot-card__media">
     {image ? (
-      <img class="robot-card__image" src={image.src} alt={image.alt} width="640" height="640" loading="lazy" decoding="async" />
+      <img class="robot-card__image" src={image.src} alt={image.alt} width="640" height="640" loading={imageLoading} decoding="async" />
     ) : (
       <div class="robot-card__placeholder" role="img" aria-label="Изображение робота готовится">
         <span aria-hidden="true">KP</span>
@@ -26,29 +42,18 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
     <p class="robot-card__description">{data.description}</p>
     <div class="robot-card__price-group">
       <p class="robot-card__price">{data.price}</p>
-      <p class="robot-card__disclaimer">{data.price_disclaimer}</p>
+      {!hideDisclaimer && <p class="robot-card__disclaimer">{data.price_disclaimer}</p>}
     </div>
-    <a
-      class="robot-card__link"
-      href={data.href}
-      data-analytics-event={analytics.event}
-      data-analytics-robot-slug={data.slug}
-      data-analytics-block-id="robot-card"
-      data-analytics-source="robot_card"
-      data-analytics-placement={analytics.placement}
-      data-analytics-slug={data.slug}
-      data-analytics-position={analytics.position}
-    >
-      Подробнее<span aria-hidden="true"> →</span>
-    </a>
+    {!hideLink && <span class="robot-card__link">Подробнее<span aria-hidden="true"> →</span></span>}
   </div>
-</article>
+</a>
 
 <style>
   .robot-card {
     display: block;
     min-width: 0;
     color: var(--kp-robot-card-title-color);
+    text-decoration: none;
   }
 
   .robot-card__media {
@@ -89,17 +94,18 @@ const { image, badge, analytics, variant = 'default', ...data } = Astro.props;
     inset-block-start: var(--kp-robot-card-badge-inset);
     inset-inline-end: var(--kp-robot-card-badge-inset);
     display: grid;
-    width: var(--kp-robot-card-badge-size);
+    width: clamp(3.25rem, 5vw, 4.75rem);
     aspect-ratio: 1;
-    place-items: center;
-    border-radius: var(--kp-robot-card-badge-size);
-    padding: var(--kp-robot-card-badge-padding);
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+    padding: clamp(0.25rem, 0.7vw, 0.45rem);
     background: var(--kp-robot-card-badge-background);
     color: var(--kp-robot-card-badge-foreground);
     font-family: var(--kp-font-body);
-    font-size: var(--kp-robot-card-badge-font-size);
+    font-size: clamp(0.55rem, 0.78vw, 0.72rem);
     font-weight: var(--kp-robot-card-badge-weight);
-    line-height: var(--kp-robot-card-badge-line-height);
+    line-height: 1.12;
     text-align: center;
   }
 

@@ -5,40 +5,62 @@ import RobotCard from '../components/blocks/RobotCard.astro';
 import CtaStrip from '../components/blocks/CtaStrip.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
 import { organizationJsonLd, websiteJsonLd } from '../lib/seo';
+import { getRobotPages } from '../lib/robot-pages';
+import type { RobotCardData } from '../../design-system/schemas/fixture.schema';
+
+const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
+const categoryLabels: Record<string, string> = {
+  humanoid: 'Робот-гуманоид',
+  robot_dog: 'Робот-собака',
+  service_robot: 'Робот-официант',
+  media_robot: 'Робот для съёмки',
+  coffee_robot: 'Робо-кофейня',
+};
+
+function getFeaturedHomeRobots(limit: number) {
+  const robots = getRobotPages();
+  const bySlug = new Map(robots.map((robot) => [robot.slug, robot]));
+
+  return featuredSlugs
+    .map((slug, index) => {
+      const robot = bySlug.get(slug);
+      if (!robot) return null;
+      return {
+        slug: robot.slug,
+        href: robot.route,
+        title: robot.identity.name,
+        category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
+        price: robot.pricing.display,
+        price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
+        description: robot.seo.description.slice(0, 132),
+        badge: index === 0 ? 'Популярный выбор' : undefined,
+        image: robot.media.hero,
+        analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
+      };
+    })
+    .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+    .slice(0, limit);
+}
+
+const homeRobots = getFeaturedHomeRobots(4);
 
 const hero = {
   eyebrow: 'Роботы для мероприятий',
   title: 'Аренда роботов, которые держат внимание',
   lead: 'Выберите робота под событие: мы поможем согласовать сценарий, площадку, тайминг и безопасный следующий шаг.',
-  primary: { href: '/robots/arenda-unitree-g1/', label: 'Смотреть Unitree G1' },
+  primary: { href: '/#catalog', label: 'Смотреть каталог' },
   secondary: { href: '/lead/request/?robot=arenda-unitree-g1', label: 'Оставить заявку' },
   image: { src: '/images/kiber-45/arenda-unitree-g1.webp', alt: 'Робот-гуманоид Unitree G1 для мероприятия', position: 'center top' },
-  stats: [
-    { value: '24', label: 'робота в каталоге' },
-    { value: '0', label: 'скрытых условий в заявке' },
-  ],
-  analytics: { event: 'contact_click', block_id: 'home-hero' },
+  stats: [],
+  analytics: { event: 'contact_click' as const, block_id: 'home-hero' },
 };
-
-const robot = {
-  slug: 'arenda-unitree-g1',
-  href: '/robots/arenda-unitree-g1/',
-  title: 'Unitree G1',
-  category: 'Робот-гуманоид',
-  price: 'от 150 000 ₽',
-  price_disclaimer: 'Не является публичной офертой',
-  description: 'Карточка робота для мероприятий: условия аренды, сценарии, ориентир стоимости и переход к заявке.',
-  badge: 'Популярный выбор',
-  image: null,
-  analytics: { event: 'robot_card_click', placement: 'catalog', position: 1 },
-} as const;
 
 const cta = {
   title: 'Готовы проверить сценарий с роботом?',
-  text: 'Выберите робота, заполните короткий бриф и получите понятное подтверждение следующего шага.',
-  primary: { href: '/lead/request/?robot=arenda-unitree-g1', label: 'Перейти к заявке' },
-  secondary: { href: '/contacts', label: 'Связаться' },
-  analytics: { event: 'contact_click', block_id: 'vertical-slice-cta' },
+  text: 'Выберите модель или напишите нам — подберём формат выхода, тайминг и площадку под ваше мероприятие.',
+  primary: { href: '/lead/request/?robot=arenda-unitree-g1', label: 'Заполнить форму' },
+  secondary: { href: '/contacts', label: 'Написать нам' },
+  analytics: { event: 'contact_click' as const, block_id: 'vertical-slice-cta' },
 };
 ---
 
@@ -51,29 +73,35 @@ const cta = {
   <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
     <HomeHero {...hero} />
 
-    <section id="catalog" class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot">
+    <section id="catalog" class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot" data-primary-route="/robots/arenda-unitree-g1/">
       <div class="vertical-slice__section-copy">
-        <p>Популярная модель</p>
-        <h2 id="pilot-robot-title">Начинаем с Unitree G1</h2>
-        <p>Карточка показывает формат аренды, ориентир стоимости, сценарии применения и переход к заявке.</p>
+        <p>Каталог роботов</p>
+        <h2 id="pilot-robot-title">Популярные модели для мероприятий</h2>
+        <p>Карточка полностью кликабельна: фото, название и описание ведут на страницу робота.</p>
       </div>
       <div class="vertical-slice__card-grid">
-        <RobotCard {...robot} />
+        {homeRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
       </div>
     </section>
 
     <CtaStrip {...cta} />
-  <InternalLinks route="/" label="Популярные направления" />
+    <InternalLinks route="/" label="Популярные направления" />
   </main>
 </BaseLayout>
 
 <style>
-  .vertical-slice { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
-  .vertical-slice__section { display: grid; gap: var(--kp-grid-gap); }
-  .vertical-slice__section-copy { display: grid; gap: var(--kp-card-gap); max-width: 42rem; }
+  .vertical-slice { display: grid; gap: clamp(2rem, 4vw, 3.5rem); padding-block: clamp(1.5rem, 3vw, 3rem); }
+  .vertical-slice__section { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .vertical-slice__section-copy { display: grid; gap: var(--kp-card-gap); max-width: 48rem; }
   .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
   .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
   .vertical-slice__section-copy h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
   .vertical-slice__section-copy p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
-  .vertical-slice__card-grid { display: grid; max-width: 24rem; }
+  .vertical-slice__card-grid { display: grid; gap: clamp(1rem, 1.8vw, 1.5rem); width: 100%; }
+  @media (min-width: 60rem) {
+    .vertical-slice__card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (min-width: 40rem) and (max-width: 59.9375rem) {
+    .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
 </style>

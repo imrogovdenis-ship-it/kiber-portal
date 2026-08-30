@@ -31,6 +31,7 @@ tokens:
   dimension.space.72: { type: dimension, value: 72px }
   dimension.space.92: { type: dimension, value: 92px }
   dimension.space.1160: { type: dimension, value: 1160px }
+  dimension.space.1320: { type: dimension, value: 1320px }
   dimension.radius.10: { type: dimension, value: 10px }
   dimension.radius.16: { type: dimension, value: 16px }
   dimension.radius.20: { type: dimension, value: 20px }

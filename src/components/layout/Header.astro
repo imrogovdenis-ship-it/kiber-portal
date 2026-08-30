@@ -2,7 +2,9 @@
 import { siteConfig } from '../../config/site';
 import type { HeaderData } from '../../../design-system/schemas/fixture.schema';
 
-interface Props extends Partial<HeaderData> {}
+interface Props extends Partial<HeaderData> {
+  logo?: { src?: string; alt?: string; width?: number; height?: number };
+}
 const defaultLinks = [
   { href: '/#catalog', label: 'Каталог' },
   { href: '/compilations', label: 'Подборки' },
@@ -10,13 +12,16 @@ const defaultLinks = [
   { href: '/news', label: 'Новости' },
   { href: '/contacts', label: 'Контакты' },
 ];
-const { logo_label = 'КИБЕР ПОРТАЛ', nav: links = defaultLinks, phone = siteConfig.phone, cta = { href: siteConfig.telegram, label: 'Написать нам' } } = Astro.props;
+const { logo_label = 'КИБЕР ПОРТАЛ', logo, nav: links = defaultLinks, phone = siteConfig.phone, cta = { href: siteConfig.telegram, label: 'Написать нам' } } = Astro.props;
 const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
 ---
 
 <header class="site-header" data-block="01-header" data-rv="01" id="site-header">
   <div class="site-header__container">
-    <a class="site-header__logo" href="/" aria-label={`${logo_label} — главная`}>{logo_label}</a>
+    <a class="site-header__logo" href="/" aria-label={`${logo_label} — главная`}>
+      {logo?.src && <img class="site-header__logo-mark" src={logo.src} alt={logo.alt ?? ''} width={logo.width ?? 132} height={logo.height ?? 32} loading="eager" decoding="async" />}
+      <span class="site-header__logo-text">{logo_label}</span>
+    </a>
     <nav class="site-header__nav" id="primary-navigation" aria-label="Основная навигация">
       {links.map((link) => <a class="site-header__link" href={link.href}>{link.label}</a>)}
     </nav>
@@ -30,20 +35,4 @@ const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
   </div>
 </header>
 
-<script>
-  const header = document.querySelector<HTMLElement>('.site-header');
-  const toggle = header?.querySelector<HTMLButtonElement>('.site-header__burger');
-  const closeMenu = () => {
-    header?.classList.remove('is-open');
-    toggle?.setAttribute('aria-expanded', 'false');
-    toggle?.setAttribute('aria-label', 'Открыть меню');
-  };
-  toggle?.addEventListener('click', () => {
-    const open = !header?.classList.contains('is-open');
-    header?.classList.toggle('is-open', open);
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-  });
-  header?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', (event) => event.key === 'Escape' && closeMenu());
-</script>
+<script is:inline src="/scripts/site-header.js" defer></script>

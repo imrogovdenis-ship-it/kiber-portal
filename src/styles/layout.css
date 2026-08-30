@@ -1,14 +1,17 @@
 .skip-link { position: fixed; left: 1rem; top: .5rem; z-index: 2000; transform: translateY(-160%); background: var(--kp-ink-dark); color: var(--kp-white); padding: .625rem 1rem; border-radius: .5rem; }
 .skip-link:focus { transform: none; }
 .site-header { position: sticky; top: 0; z-index: 1000; height: 4.25rem; background: var(--kp-surface); border-bottom: .0625rem solid color-mix(in srgb, var(--kp-blue) 10%, transparent); }
-.site-header__container { height: 100%; display: flex; align-items: center; gap: 1.5rem; padding: 0 2rem; }
+.site-header__container { height: 100%; display: flex; align-items: center; gap: 1.25rem; padding: 0 2rem; }
 .site-header__logo, .site-footer__logo { font-family: var(--kp-font-heading); font-weight: 700; text-decoration: none; letter-spacing: -.04em; }
+.site-header__logo { display: inline-flex; align-items: center; gap: .625rem; min-width: max-content; }
+.site-header__logo-mark { width: auto; max-width: 8.25rem; height: 2rem; object-fit: contain; }
+.site-header__logo-text { display: inline-block; }
 .site-header__logo, .site-header__phone, .site-header__cta { white-space: nowrap; }
-.site-header__nav { display: flex; gap: 2.5rem; margin-left: 3.5rem; }
+.site-header__nav { display: flex; gap: 2rem; margin-left: 1.25rem; }
 .site-header__link, .site-header__phone { color: var(--kp-muted); font-size: .9375rem; text-decoration: none; }
-.site-header__actions { display: flex; align-items: center; gap: 1.5rem; margin-left: auto; }
+.site-header__actions { display: flex; align-items: center; gap: 1.25rem; margin-left: auto; }
 .site-header__phone { color: var(--kp-ink); font-size: 1rem; }
-.site-header__cta { padding: .75rem 1.25rem; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: 600; text-decoration: none; }
+.site-header__cta { padding: .5625rem 1.125rem; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: 600; text-decoration: none; }
 .site-header__burger { display: none; flex-direction: column; gap: .3125rem; padding: .625rem; border: 0; background: none; }
 .site-header__burger span { width: 1.5rem; height: .125rem; background: var(--kp-ink); }
 .breadcrumbs { padding: 1.5rem var(--kp-content-padding); background: var(--kp-sky); }

@@ -31,6 +31,7 @@ export const designTokens = {
   "dimension.space.1160": "1160px",
   "dimension.space.12": "12px",
   "dimension.space.13": "13px",
+  "dimension.space.1320": "1320px",
   "dimension.space.14": "14px",
   "dimension.space.16": "16px",
   "dimension.space.18": "18px",
@@ -63,7 +64,7 @@ export const designTokens = {
   "font.weight.medium": 500,
   "font.weight.semibold": 600,
   "layout.container.inline": "20px",
-  "layout.container.max": "1160px",
+  "layout.container.max": "1320px",
   "layout.content.padding": {
     "sm": "10px",
     "md": "16px",

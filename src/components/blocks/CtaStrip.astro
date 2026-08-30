@@ -1,31 +1,58 @@
 ---
 import type { CtaStripData } from '../../../design-system/schemas/fixture.schema';
-const { title, text, primary, secondary, analytics } = Astro.props as CtaStripData;
+interface Props extends CtaStripData {
+  artLabel?: string;
+}
+const { title, text, primary, secondary, analytics, artLabel = 'Здесь появится Кибер Гоша' } = Astro.props as Props;
 ---
 
 <section class="cta-strip" data-block-id="cta-strip" data-review-id="09">
-  <div>
+  <div class="cta-strip__content">
     <h2>{title}</h2>
     <p>{text}</p>
+    <div class="cta-strip__actions">
+      <a class="cta-strip__button cta-strip__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id} data-analytics-source="cta_strip" data-analytics-placement="primary_cta" data-analytics-slug="global">{primary.label}</a>
+      {secondary && <a class="cta-strip__button" href={secondary.href}>{secondary.label}</a>}
+    </div>
   </div>
-  <div class="cta-strip__actions">
-    <a class="cta-strip__button cta-strip__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id} data-analytics-source="cta_strip" data-analytics-placement="primary_cta" data-analytics-slug="global">{primary.label}</a>
-    {secondary && <a class="cta-strip__button" href={secondary.href}>{secondary.label}</a>}
+  <div class="cta-strip__art" aria-hidden="true">
+    <span>{artLabel}</span>
   </div>
 </section>
 
 <style>
-  .cta-strip { display: grid; gap: var(--kp-grid-gap); align-items: center; margin-block: var(--kp-section-block); padding: var(--kp-content-padding); border-radius: 1.75rem; background: var(--kp-ink); color: var(--kp-white); }
+  .cta-strip {
+    display: grid;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    margin-block: var(--kp-section-block);
+    padding: clamp(2rem, 4vw, 3.5rem);
+    border-radius: 1.75rem;
+    background: var(--kp-blue);
+    color: var(--kp-white);
+  }
+  .cta-strip__content { max-width: 40rem; }
   .cta-strip h2, .cta-strip p { margin: 0; }
   .cta-strip h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: 1; }
   .cta-strip p { margin-top: var(--kp-card-gap); color: var(--kp-white); line-height: var(--kp-body-line-height); }
-  .cta-strip__actions { display: flex; flex-wrap: wrap; gap: var(--kp-card-gap); }
-  .cta-strip__button { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-white); border-radius: 62.4375rem; padding: .75rem 1.1rem; color: var(--kp-white); text-decoration: none; font-weight: var(--kp-heading-weight); }
-  .cta-strip__button--primary { background: var(--kp-white); color: var(--kp-blue); }
+  .cta-strip__actions { display: flex; flex-wrap: wrap; justify-content: flex-start; gap: var(--kp-card-gap); margin-top: 1.5rem; }
+  .cta-strip__button { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-white); border-radius: 62.4375rem; padding: .75rem 1.1rem; background: var(--kp-white); color: var(--kp-ink); text-decoration: none; font-weight: var(--kp-heading-weight); }
+  .cta-strip__button--primary { background: var(--kp-white); color: var(--kp-ink); }
+  .cta-strip__art {
+    display: grid;
+    min-height: 13rem;
+    place-items: center;
+    border-radius: 1.5rem;
+    background: color-mix(in srgb, var(--kp-white) 16%, transparent);
+    color: color-mix(in srgb, var(--kp-white) 72%, transparent);
+    font-weight: 700;
+    text-align: center;
+  }
   .cta-strip__button:focus-visible { outline: 0.1875rem solid var(--kp-orange); outline-offset: 0.1875rem; }
-  @media (min-width: 60em) { .cta-strip { grid-template-columns: 1fr auto; } }
+  @media (min-width: 60em) { .cta-strip { grid-template-columns: minmax(0, 0.62fr) minmax(16rem, 0.38fr); } }
   @media (max-width: 59.9375rem) {
     .cta-strip__actions { display: grid; justify-items: start; }
     .cta-strip__button { width: auto; max-width: 100%; padding-inline: 1.25rem; }
+    .cta-strip__art { min-height: 8rem; }
   }
 </style>
