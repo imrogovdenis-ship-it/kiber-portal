@@ -47,11 +47,14 @@
       "evidence": [
         "data/review/content-acceptance.json",
         "docs/review/kiber-55/content-approval-pack.md",
-        "data/legal/legal-documents.json"
+        "data/legal/legal-documents.json",
+        "data/review/owner-launch-content-approval-request.json",
+        "docs/review/production-approval-gates/owner-launch-content-approval-request.md"
       ],
       "allowedAutonomousWork": [
         "Maintain structural content acceptance checks",
-        "Prepare approval packages without marking final approval"
+        "Prepare approval packages without marking final approval",
+        "Prepare owner launch-content approval package without marking final approval"
       ],
       "forbiddenActionsUntilApproved": [
         "Mark KIBER-55 final business/legal approved",
@@ -101,16 +104,20 @@
     {
       "id": "lead_routing",
       "title": "Live lead routing destinations",
-      "status": "capability_only_disabled",
+      "status": "preview_dry_run_endpoint_scaffolded_live_disabled",
       "requiresExplicitHumanApproval": true,
       "productionApproved": false,
       "evidence": [
         "data/lead/capability-contract.json",
-        "docs/review/kiber-54/lead-capability-contract-evidence.md"
+        "docs/review/kiber-54/lead-capability-contract-evidence.md",
+        "tests/visual/api-leads-endpoint.test.ts",
+        "src/pages/api/leads.ts",
+        "src/server/lead-routing/api-leads.ts"
       ],
       "allowedAutonomousWork": [
         "Maintain destination-free capability contracts",
-        "Validate static GET confirmation flow without delivery"
+        "Validate preview dry-run confirmation flow without delivery",
+        "Maintain preview/dry-run /api/leads endpoint tests without live destinations"
       ],
       "forbiddenActionsUntilApproved": [
         "Enable CRM, Telegram bot, WhatsApp, email or webhook delivery",
@@ -120,7 +127,7 @@
     {
       "id": "analytics_provider",
       "title": "Analytics provider IDs and cookies",
-      "status": "disabled_pending_decision",
+      "status": "disabled_yandex_metrica_deferred_until_publication_and_domain_binding",
       "requiresExplicitHumanApproval": true,
       "productionApproved": false,
       "evidence": [
@@ -129,7 +136,8 @@
       ],
       "allowedAutonomousWork": [
         "Maintain provider-neutral event contracts",
-        "Validate analytics attributes without provider IDs"
+        "Validate analytics attributes without provider IDs",
+        "Keep Yandex Metrica deferred contract without provider IDs until publication/domain binding"
       ],
       "forbiddenActionsUntilApproved": [
         "Configure Yandex Metrica, pixels or analytics provider IDs",

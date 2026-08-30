@@ -44,6 +44,21 @@
         "AMOCRM_ACCESS_TOKEN"
       ],
       "tokenStorage": "1Password op:// reference only; token must not be committed or printed"
+    },
+    "apiLeadsEndpoint": {
+      "status": "preview-dry-run-scaffolded",
+      "route": "POST /api/leads",
+      "defaultMode": "dry-run",
+      "liveModeRequires": [
+        "LEAD_ROUTING_MODE=live",
+        "LEAD_ROUTING_ENABLED=true",
+        "separate production/live-routing approval"
+      ],
+      "calls": [
+        "amoCrmDuplicate",
+        "telegramDuplicate"
+      ],
+      "productionDeploy": "not-approved"
     }
   }
 }

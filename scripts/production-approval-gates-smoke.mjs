@@ -9,10 +9,13 @@ const launchReadinessPath = resolve(root, 'data/review/launch-readiness-crawl.js
 const contentPackagePath = resolve(root, 'data/review/content-package-workflow.json');
 const readinessMatrixPath = resolve(root, 'data/seo/production-readiness-matrix.json');
 const reportPath = resolve(root, 'docs/review/production-approval-gates/report.json');
+const approvalRequestPath = resolve(root, 'data/review/owner-launch-content-approval-request.json');
+const approvalRequestDocPath = resolve(root, 'docs/review/production-approval-gates/owner-launch-content-approval-request.md');
+const analyticsRegistryPath = resolve(root, 'data/analytics/provider-neutral-events.json');
 
 function readJson(path) { return JSON.parse(readFileSync(path, 'utf8')); }
 
-for (const path of [gatesPath, ownerDecisionsPath, launchReadinessPath, contentPackagePath, readinessMatrixPath]) {
+for (const path of [gatesPath, ownerDecisionsPath, launchReadinessPath, contentPackagePath, readinessMatrixPath, approvalRequestPath, approvalRequestDocPath, analyticsRegistryPath]) {
   assert.equal(existsSync(path), true, `${path.replace(`${root}/`, '')} missing`);
 }
 
@@ -21,6 +24,9 @@ const ownerDecisions = readJson(ownerDecisionsPath);
 const launchReadiness = readJson(launchReadinessPath);
 const contentPackage = readJson(contentPackagePath);
 const readinessMatrix = readJson(readinessMatrixPath);
+const approvalRequest = readJson(approvalRequestPath);
+const analyticsRegistry = readJson(analyticsRegistryPath);
+const approvalDoc = readFileSync(approvalRequestDocPath, 'utf8');
 const failures = [];
 const warnings = [];
 
@@ -36,6 +42,28 @@ if (ownerDecisions.decisions?.leadChannels?.publicChannelsApproved !== false) fa
 if (contentPackage.policy?.productionPublishRequiresHumanApproval !== true) failures.push('content package must require human production approval');
 if (launchReadiness.productionPermission !== false) failures.push('launch readiness must not grant production permission');
 if (readinessMatrix.productionActionAllowed !== false) failures.push('production readiness matrix must not allow production actions');
+if (approvalRequest.productionPermissionIncluded !== false) failures.push('owner launch-content request must not include production permission');
+if (approvalRequest.liveLeadRoutingIncluded !== false) failures.push('owner launch-content request must not include live lead routing');
+if (approvalRequest.analyticsProviderIdsIncluded !== false) failures.push('owner launch-content request must not include analytics provider IDs');
+if (approvalRequest.productionDeployIncluded !== false) failures.push('owner launch-content request must not include production deploy');
+if (analyticsRegistry.deferredProvider?.name !== 'yandex_metrica') failures.push('Yandex Metrica must be recorded as deferred provider');
+if (analyticsRegistry.deferredProvider?.status !== 'deferred_until_site_publication_and_domain_binding') failures.push('Yandex Metrica must remain deferred until publication/domain binding');
+if (analyticsRegistry.deferredProvider?.counterId !== null) failures.push('Yandex Metrica counter ID must not be configured');
+
+const requiredApprovalIds = [
+  'legal_pages_publishable',
+  'requisites_correct',
+  'prices_and_offer_disclaimer_ok',
+  'contacts_ok',
+  'launch_page_texts_ok',
+];
+const actualApprovalIds = new Set((approvalRequest.requestedApprovals || []).map((item) => item.id));
+for (const approvalId of requiredApprovalIds) {
+  if (!actualApprovalIds.has(approvalId)) failures.push(`missing owner launch-content approval ${approvalId}`);
+}
+for (const phrase of ['legal pages можно публиковать', 'реквизиты верные', 'Не является публичной офертой', 'контакты ок', 'тексты на launch-страницах ок', 'не включает production deploy']) {
+  if (!approvalDoc.includes(phrase)) failures.push(`owner launch-content approval doc missing phrase: ${phrase}`);
+}
 
 const requiredGateIds = [
   'visual_direction',

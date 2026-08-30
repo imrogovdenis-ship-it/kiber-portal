@@ -863,7 +863,7 @@ description="Короткая заявка на подбор робота для
 <span>Формат мероприятия</span>
 <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий" aria-describedby="event-help"></textarea>
 <span id="event-help" class="lead-request__help">Можно кратко: дата, город, гости и задача робота.</span>
-<button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={…} data-analytics-form-state="static_get">Проверить подтверждение</button>
+<button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={…} data-analytics-form-state="preview_dry_run">Проверить подтверждение</button>
 <p id="lead-request-status" class="lead-request__note" aria-live="polite">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
 ```
 

@@ -36,6 +36,10 @@ const failures = [];
 
 if (registry.schemaVersion !== 1) failures.push('schemaVersion must be 1');
 if (registry.provider !== 'neutral') failures.push('provider must be neutral');
+if (registry.deferredProvider?.name !== 'yandex_metrica') failures.push('Yandex Metrica must be recorded as the deferred provider');
+if (registry.deferredProvider?.status !== 'deferred_until_site_publication_and_domain_binding') failures.push('Yandex Metrica must stay deferred until publication and domain binding');
+if (registry.deferredProvider?.counterId !== null) failures.push('Yandex Metrica counter ID must not be configured before owner input');
+if (registry.deferredProvider?.cookieConsentEnabled !== false) failures.push('analytics cookies/consent must not be enabled before approval');
 for (const name of requiredReservedEvents) {
   const event = events.get(name);
   if (!event) {

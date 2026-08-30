@@ -6,6 +6,8 @@ import test from 'node:test';
 const root = process.cwd();
 const gatesPath = resolve(root, 'data/review/production-approval-gates.json');
 const smokePath = resolve(root, 'scripts/production-approval-gates-smoke.mjs');
+const approvalRequestPath = resolve(root, 'data/review/owner-launch-content-approval-request.json');
+const approvalRequestDocPath = resolve(root, 'docs/review/production-approval-gates/owner-launch-content-approval-request.md');
 
 function readJson(path: string) {
   return JSON.parse(readFileSync(path, 'utf8'));
@@ -64,4 +66,38 @@ test('KIBER production approval gates are enforced by a CI smoke gate', () => {
   const pkg = readJson(resolve(root, 'package.json'));
   assert.equal(pkg.scripts['test:production-approval-gates'], 'node scripts/production-approval-gates-smoke.mjs');
   assert.match(pkg.scripts.ci, /npm run test:production-approval-gates/);
+});
+
+test('KIBER owner launch-content approval request covers legal/requisites/prices/contacts/texts without production side effects', () => {
+  assert.equal(existsSync(approvalRequestPath), true, 'owner launch-content approval JSON is required');
+  assert.equal(existsSync(approvalRequestDocPath), true, 'owner launch-content approval markdown is required');
+
+  const request = readJson(approvalRequestPath);
+  assert.equal(request.schemaVersion, 1);
+  assert.equal(request.productionPermissionIncluded, false);
+  assert.equal(request.liveLeadRoutingIncluded, false);
+  assert.equal(request.analyticsProviderIdsIncluded, false);
+  assert.equal(request.productionDeployIncluded, false);
+
+  const requestedIds = new Set(request.requestedApprovals.map((item: { id: string }) => item.id));
+  assert.deepEqual(requestedIds, new Set([
+    'legal_pages_publishable',
+    'requisites_correct',
+    'prices_and_offer_disclaimer_ok',
+    'contacts_ok',
+    'launch_page_texts_ok',
+  ]));
+
+  for (const item of request.requestedApprovals) {
+    assert.equal(item.status, 'awaiting_owner_approval', `${item.id}: must wait for owner approval`);
+    assert.ok(Array.isArray(item.evidence) && item.evidence.length > 0, `${item.id}: evidence is required`);
+  }
+
+  const markdown = readFileSync(approvalRequestDocPath, 'utf8');
+  assert.match(markdown, /legal pages можно публиковать/);
+  assert.match(markdown, /реквизиты верные/);
+  assert.match(markdown, /Не является публичной офертой/);
+  assert.match(markdown, /контакты ок/);
+  assert.match(markdown, /тексты на launch-страницах ок/);
+  assert.match(markdown, /не включает production deploy/i);
 });
