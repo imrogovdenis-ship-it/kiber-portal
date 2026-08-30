@@ -31,6 +31,7 @@
 .site-footer__phone, .site-footer__email { display: block; margin-bottom: .75rem; font-weight: 600; }
 .site-footer__messengers { display: flex; gap: .75rem; margin-top: 1rem; }
 .site-footer__messengers a { display: grid; width: 2.5rem; height: 2.5rem; place-items: center; border-radius: 50%; background: color-mix(in srgb, var(--kp-white) 10%, transparent); }
+.site-footer__requisites { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin-bottom: 1rem; color: var(--kp-muted-soft); font-size: 0.8125rem; line-height: 1.45; }
 .site-footer__bottom { display: flex; justify-content: space-between; gap: 1rem; padding-top: 2rem; border-top: .0625rem solid color-mix(in srgb, var(--kp-white) 10%, transparent); }
 .site-footer__legal-links { display: flex; gap: 1.5rem; }
 :where(a, button):focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .1875rem; }

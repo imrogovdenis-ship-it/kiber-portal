@@ -19,7 +19,9 @@ test('homepage header keeps logo future-proof and compact desktop controls', asy
   assert.match(baseLayout, /\/images\/brand\/kp_logo_full\.svg/);
   assert.match(layout, /\.site-header__logo--with-mark \.site-header__logo-text/);
   assert.match(layout, /\.site-header__nav\s*\{[^}]*margin-left:\s*1\.25rem;/s);
-  assert.match(reference, /\.site-header__nav\s*\{[^}]*gap:\s*1\.25rem;[^}]*margin-left:\s*0\.5rem;/s);
+  assert.match(reference, /\.site-header__container\s*\{[^}]*width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\),\s*var\(--kp-reference-container\)\)/s);
+  assert.match(reference, /\.site-header__nav\s*\{[^}]*gap:\s*0\.875rem;[^}]*margin-left:\s*0\.5rem;/s);
+  assert.match(reference, /\.site-header__link\s*\{[^}]*font-size:\s*0\.875rem;/s);
   assert.match(reference, /\.site-header__cta\s*\{[^}]*min-height:\s*2\.125rem;[^}]*padding:\s*0\.5rem 1\.125rem;/s);
 });
 
@@ -29,8 +31,10 @@ test('homepage hero is tighter, less oversized, and does not show hidden-conditi
 
   assert.doesNotMatch(page, /скрытых условий/i);
   assert.doesNotMatch(page, /value:\s*'0'/);
-  assert.match(hero, /padding:\s*clamp\(1rem,\s*2vw,\s*1\.75rem\)/);
-  assert.match(hero, /min-height:\s*34rem;/);
+  assert.match(page, /padding-block:\s*clamp\(0\.75rem,\s*1\.5vw,\s*1\.5rem\) clamp\(1\.5rem,\s*3vw,\s*3rem\)/);
+  assert.match(hero, /padding:\s*clamp\(0\.5rem,\s*1vw,\s*0\.875rem\) 0 0/);
+  assert.match(hero, /min-height:\s*44rem;/);
+  assert.match(hero, /\.home-hero__actions\s*\{[^}]*margin-top:\s*0\.75rem;/s);
   assert.match(hero, /font-size:\s*clamp\(2\.5rem,\s*5vw,\s*5\.25rem\)/);
   assert.match(hero, /max-width:\s*14ch;/);
   assert.match(hero, /padding:\s*3\.5rem 0 3\.5rem 3\.75rem;/);
@@ -43,8 +47,9 @@ test('homepage catalog renders a four-card desktop grid with larger real robot i
 
   assert.match(page, /homeRobots\s*=\s*getFeaturedHomeRobots\(4\)/);
   assert.match(page, /grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\)/);
-  assert.match(reference, /--kp-reference-container:\s*90rem;/);
-  assert.match(reference, /\.container\s*\{[^}]*width:\s*min\(100% - 1rem,\s*var\(--kp-reference-container\)\)/s);
+  assert.match(reference, /--kp-reference-container:\s*86rem;/);
+  assert.match(reference, /--kp-reference-page-gutter:\s*4rem;/);
+  assert.match(reference, /\.container\s*\{[^}]*width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\),\s*var\(--kp-reference-container\)\)/s);
   assert.match(reference, /\.vertical-slice__section\s*\{\s*padding:\s*0;\s*\}/s);
   assert.match(page, /<RobotCard[^>]*hideDisclaimer=\{true\}[^>]*hideLink=\{true\}[^>]*imageLoading="eager"/s);
   assert.doesNotMatch(page, /Не является публичной офертой/);
@@ -57,11 +62,23 @@ test('homepage catalog renders a four-card desktop grid with larger real robot i
 test('homepage final CTA follows original blue strip, left-aligned white buttons, and reserves right-side mascot space', async () => {
   const cta = await read('src/components/blocks/CtaStrip.astro');
 
-  assert.match(cta, /background:\s*var\(--kp-blue\)/);
+  assert.match(cta, /background:\s*var\(--kp-blue-deep\)/);
   assert.match(cta, /grid-template-columns:\s*minmax\(0,\s*0\.62fr\) minmax\(16rem,\s*0\.38fr\)/);
   assert.match(cta, /cta-strip__art/);
   assert.match(cta, /justify-content:\s*flex-start/);
+  assert.match(cta, /font-weight:\s*500/);
   assert.match(cta, /background:\s*var\(--kp-white\);\s*color:\s*var\(--kp-ink\)/);
+});
+
+test('homepage footer requisites keep readable spacing and muted legal typography', async () => {
+  const footer = await read('src/components/layout/Footer.astro');
+  const layout = await read('src/styles/layout.css');
+  const reference = await read('src/styles/reference-layer.css');
+
+  assert.match(footer, /<span>ИНН \{siteConfig\.inn\}<\/span>/);
+  assert.match(footer, /<span>ОГРНИП \{siteConfig\.ogrnip\}<\/span>/);
+  assert.match(layout, /\.site-footer__requisites\s*\{[^}]*gap:\s*0\.35rem 1rem;[^}]*color:\s*var\(--kp-muted-soft\);[^}]*font-size:\s*0\.8125rem/s);
+  assert.match(reference, /\.site-footer__requisites\s*\{[^}]*gap:\s*0\.35rem 1rem;[^}]*font-size:\s*0\.8125rem/s);
 });
 
 test('homepage owner-provided hero image is registered as media-use approval without production side effects', async () => {

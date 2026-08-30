@@ -30,14 +30,14 @@ const { eyebrow, title, lead, primary, secondary, image, stats, analytics } = As
 
 <style>
   .home-hero {
-    padding: clamp(1rem, 2vw, 1.75rem);
+    padding: clamp(0.5rem, 1vw, 0.875rem) 0 0;
     background: var(--kp-reference-sky);
   }
 
   .home-hero__card {
     position: relative;
     display: flex;
-    min-height: 34rem;
+    min-height: 44rem;
     overflow: hidden;
     align-items: center;
     border-radius: 1.5rem;
@@ -90,6 +90,7 @@ const { eyebrow, title, lead, primary, secondary, image, stats, analytics } = As
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    margin-top: 0.75rem;
   }
 
   .home-hero__button {
@@ -170,7 +171,7 @@ const { eyebrow, title, lead, primary, secondary, image, stats, analytics } = As
   }
 
   @media (max-width: 74.9375rem) {
-    .home-hero__card { min-height: 33.75rem; }
+    .home-hero__card { min-height: 40rem; }
     .home-hero__content { width: min(100%, 38rem); padding: 3.5rem; }
   }
 
