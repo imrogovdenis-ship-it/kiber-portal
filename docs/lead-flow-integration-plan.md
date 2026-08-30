@@ -32,24 +32,48 @@ analytics provider IDs = disabled
 
 ### Telegram form delivery
 
-Needed inputs:
+Owner-approved delivery decision:
 
-- Telegram bot token or approved server-side gateway path — **do not put token in Git**.
-- Target Telegram chat ID/thread ID for lead notifications.
-- Message template.
-- Spam/rate-limit policy.
-- Consent/privacy text confirmation.
+- Separate Telegram chat: `Заявки с сайта КИБЕР ПОРТАЛ`.
+- Chat participants: Александр / менеджеры / Гефест.
+- Telegram topics/threads: no; `TELEGRAM_LEADS_THREAD_ID не используется`.
+- Bot token and chat ID are provided through 1Password `op://` references and must not be committed or printed.
+- Live routing remains disabled until separate owner approval flips `LEAD_ROUTING_ENABLED=true` in the deployment environment.
 
-Expected message fields:
+Required environment variables:
 
 ```text
-Имя
-Телефон
-Email, если заполнен
-Страница заявки
-UTM/source, если доступны
-Время заявки
+LEAD_ROUTING_ENABLED=false
+TELEGRAM_BOT_TOKEN=op://<vault>/<item>/TELEGRAM_BOT_TOKEN
+TELEGRAM_LEADS_CHAT_ID=op://<vault>/<item>/TELEGRAM_LEADS_CHAT_ID
 ```
+
+Approved Telegram message template:
+
+```text
+🤖 Новая заявка с KIBER PORTAL
+
+Имя: {{name}}
+Контакт: {{contact}}
+Email: {{email_or_dash}}
+Робот/интерес: {{robot}}
+Формат мероприятия: {{event}}
+
+Страница: {{source_page}}
+UTM source: {{utm_source}}
+UTM medium: {{utm_medium}}
+UTM campaign: {{utm_campaign}}
+
+Время: {{submitted_at}}
+Environment: {{deploy_env}}
+```
+
+Implementation scaffold:
+
+- `src/server/lead-routing/telegram.ts` builds the approved message and can call Telegram Bot API `sendMessage`.
+- With `LEAD_ROUTING_ENABLED=false`, sender returns `skipped: routing-disabled` and performs no network call.
+- Current static `/lead/request/` form still remains GET-only until the separately approved live endpoint/hosting change is made.
+- Spam/rate-limit policy and consent/privacy text confirmation remain required before production enablement.
 
 ### amoCRM duplicate
 

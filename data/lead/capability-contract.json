@@ -17,5 +17,21 @@
     "approvedBy": "Александр Маркин",
     "approvedAt": "2026-08-30T02:56:33Z",
     "scope": "phone, email, Telegram, WhatsApp, region, legal name, INN, OGRNIP and address approved for preview/PR publication"
+  },
+  "deferredIntegrations": {
+    "telegramDuplicate": {
+      "status": "scaffolded-disabled",
+      "chat": "Заявки с сайта КИБЕР ПОРТАЛ",
+      "threads": "not-used",
+      "requiredEnv": [
+        "LEAD_ROUTING_ENABLED",
+        "TELEGRAM_BOT_TOKEN",
+        "TELEGRAM_LEADS_CHAT_ID"
+      ],
+      "messageTemplate": "owner-approved-2026-08-30"
+    },
+    "amoCrmDuplicate": {
+      "status": "planned-awaiting-credentials-and-field-mapping"
+    }
   }
 }
