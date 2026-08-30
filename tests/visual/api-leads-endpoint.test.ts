@@ -315,16 +315,21 @@ test('POST /api/leads dry-run redirects browser form submissions to safe confirm
   assert.equal(calls, 0);
 });
 
-test('lead form and endpoint source stay preview-safe and production build remains static', () => {
+test('lead endpoint stays preview-safe while disabled lead page exposes only working contacts', () => {
   const routePath = resolve(root, 'src/pages/api/leads/index.ts');
-  const formPath = resolve(root, 'src/pages/lead/request.astro');
+  const leadPagePath = resolve(root, 'src/pages/lead/request.astro');
   const astroConfig = readFileSync(resolve(root, 'astro.config.mjs'), 'utf8');
   const contract = JSON.parse(readFileSync(resolve(root, 'data/lead/capability-contract.json'), 'utf8'));
+  const leadPage = readFileSync(leadPagePath, 'utf8');
 
-  assert.equal(existsSync(routePath), true, 'source route for /api/leads is required');
+  assert.equal(existsSync(routePath), true, 'source route for /api/leads remains available behind explicit integration work');
   assert.match(readFileSync(routePath, 'utf8'), /POST/);
-  assert.match(readFileSync(formPath, 'utf8'), /action="\/api\/leads"/);
-  assert.match(readFileSync(formPath, 'utf8'), /method="post"/);
+  assert.doesNotMatch(leadPage, /<form[\s\S]*method="post"[\s\S]*action="\/api\/leads"[\s\S]*>/);
+  assert.match(leadPage, /PUBLIC_LEAD_FORM_ENABLED/);
+  assert.match(leadPage, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
+  assert.match(leadPage, /siteConfig\.telegram/);
+  assert.match(leadPage, /siteConfig\.whatsapp/);
+  assert.match(leadPage, /siteConfig\.max/);
   assert.match(astroConfig, /output:\s*'static'/);
   assert.equal(contract.routing.enabled, false);
   assert.deepEqual(contract.routing.destinations, []);

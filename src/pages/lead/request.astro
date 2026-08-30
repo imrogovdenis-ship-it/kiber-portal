@@ -1,7 +1,32 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteConfig } from '../../config/site';
 
 const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
+const leadFormEnabled = import.meta.env.PUBLIC_LEAD_FORM_ENABLED === 'true';
+const contactChannels = [
+  {
+    title: 'Написать в Telegram',
+    text: 'Быстрый канал для брифа: город, дата, площадка, сценарий и желаемая модель.',
+    href: siteConfig.telegram,
+    cta: 'Открыть Telegram',
+    event: 'messenger_click',
+  },
+  {
+    title: 'Написать в WhatsApp',
+    text: 'Удобно отправить короткое описание события и получить следующий шаг.',
+    href: siteConfig.whatsapp,
+    cta: 'Открыть WhatsApp',
+    event: 'messenger_click',
+  },
+  {
+    title: 'Написать в MAX',
+    text: 'Дополнительный публичный канал без ожидания подключения формы.',
+    href: siteConfig.max,
+    cta: 'Открыть MAX',
+    event: 'messenger_click',
+  },
+];
 ---
 
 <BaseLayout
@@ -14,41 +39,58 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     { name: 'Заявка', url: '/lead/request/' },
   ]}
 >
-  <main class="lead-request container" id="main-content" tabindex="-1" data-kiber-task="contact-lead-visual-pass2" data-rv="31" data-lead-capability="disabled">
+  <main
+    class="lead-request container"
+    id="main-content"
+    tabindex="-1"
+    data-kiber-task="contact-lead-visual-pass2"
+    data-rv="31"
+    data-lead-capability="disabled"
+    data-lead-form-state={leadFormEnabled ? 'enabled' : 'disabled'}
+  >
     <section class="lead-request__intro" aria-labelledby="lead-request-title">
       <p>Подбор робота</p>
       <h1 id="lead-request-title">Заявка на подбор робота</h1>
-      <p>Расскажите о городе, дате, площадке и формате события. Так менеджеру проще предложить подходящие модели и сценарий.</p>
+      <p>Форма заявки появится только после отдельного подключения маршрута заявок. Сейчас используйте рабочие публичные каналы связи — Telegram, WhatsApp или MAX.</p>
     </section>
 
     <div class="lead-request__panel">
-      <form class="lead-request__form" method="post" action="/api/leads" data-vertical-step="lead-to-confirmation" data-state="preview-dry-run" aria-describedby="lead-request-status">
-        <input type="hidden" name="robot" value={robot} />
-        <label>
-          <span>Имя *</span>
-          <input name="name" autocomplete="name" placeholder="Как к вам обращаться" required aria-invalid="false" aria-describedby="name-help name-error" />
-          <span id="name-help" class="lead-request__help">Напишите имя или короткое обращение.</span>
-          <span id="name-error" class="lead-request__error" role="alert">Укажите имя, чтобы менеджер понял, к кому обратиться.</span>
-        </label>
-        <label>
-          <span>Телефон или мессенджер *</span>
-          <input name="contact" autocomplete="tel" placeholder="Телефон, Telegram или WhatsApp" required aria-invalid="false" aria-describedby="contact-help contact-error" />
-          <span id="contact-help" class="lead-request__help">Оставьте удобный способ связи.</span>
-          <span id="contact-error" class="lead-request__error" role="alert">Укажите телефон или мессенджер для ответа.</span>
-        </label>
-        <label>
-          <span>Формат мероприятия</span>
-          <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий" aria-describedby="event-help"></textarea>
-          <span id="event-help" class="lead-request__help">Можно кратко: дата, город, гости и задача робота.</span>
-        </label>
-        <button type="submit" aria-busy="false" data-loading-label="Готовим подтверждение" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={robot} data-analytics-form-state="preview_dry_run">Проверить подтверждение</button>
-        <p id="lead-request-status" class="lead-request__note" aria-live="polite">После заполнения откроется подтверждение с выбранным роботом и следующими шагами.</p>
-      </form>
+      {leadFormEnabled && (
+        <section class="lead-request__pending-form" aria-labelledby="lead-form-disabled-title" data-state="feature-flagged" data-vertical-step="lead-to-contacts">
+          <h2 id="lead-form-disabled-title">Форма готовится к подключению</h2>
+          <input type="hidden" name="robot" value={robot} disabled />
+          <p id="lead-request-status" class="lead-request__note" aria-live="polite" data-loading-label="Ожидаем подключение канала">До live routing форма не отправляет заявки во внешние системы.</p>
+        </section>
+      )}
+
+      <section class="lead-request__contacts" aria-labelledby="lead-working-contacts-title" data-vertical-step="lead-to-contacts">
+        <p class="lead-request__eyebrow">Рабочие контакты</p>
+        <h2 id="lead-working-contacts-title">Напишите нам напрямую</h2>
+        <p>Укажите выбранного робота, город, дату, площадку и примерный сценарий — менеджер продолжит диалог в выбранном канале.</p>
+        <div class="lead-request__contact-grid">
+          {contactChannels.map((channel) => (
+            <a
+              class="lead-request__contact-card"
+              href={channel.href}
+              data-analytics-event={channel.event}
+              data-analytics-source="lead_request"
+              data-analytics-placement="working_contact_channel"
+              data-analytics-slug={robot}
+              data-analytics-form-state="disabled"
+            >
+              <strong>{channel.title}</strong>
+              <span>{channel.text}</span>
+              <em>{channel.cta}</em>
+            </a>
+          ))}
+        </div>
+        <p id="lead-request-status" class="lead-request__note" aria-live="polite">Пользователь всегда видит только работающий канал связи; автоматическая форма скрыта до подключения live routing.</p>
+      </section>
 
       <aside class="lead-request__sidebar" aria-label="Статус обработки заявки">
         <p>Capability-only</p>
         <h2>Routing remains disabled</h2>
-        <p>Эта страница собирает статическую заявку и подтверждение без CRM, Telegram bot, email-отправки и других live destinations.</p>
+        <p>Эта страница не отправляет данные в CRM, Telegram bot, email-отправку или другие live destinations.</p>
         <ul>
           <li>публичные контакты утверждены для preview/PR;</li>
           <li>lead destinations array stays empty;</li>
@@ -75,7 +117,10 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
   .lead-request__intro p,
   .lead-request__intro h1,
   .lead-request__note,
-  .lead-request__help,
+  .lead-request__contacts p,
+  .lead-request__contacts h2,
+  .lead-request__pending-form p,
+  .lead-request__pending-form h2,
   .lead-request__sidebar p,
   .lead-request__sidebar h2,
   .lead-request__sidebar ul {
@@ -83,6 +128,7 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
   }
 
   .lead-request__intro > p:first-child,
+  .lead-request__eyebrow,
   .lead-request__sidebar > p:first-child {
     color: var(--kp-reference-blue);
     font-size: var(--kp-reference-label-size);
@@ -99,7 +145,8 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 
   .lead-request__intro > p:last-child,
   .lead-request__note,
-  .lead-request__help,
+  .lead-request__contacts > p,
+  .lead-request__contact-card span,
   .lead-request__sidebar p,
   .lead-request__sidebar li {
     color: var(--kp-reference-muted);
@@ -113,7 +160,8 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     align-items: stretch;
   }
 
-  .lead-request__form,
+  .lead-request__contacts,
+  .lead-request__pending-form,
   .lead-request__sidebar {
     display: grid;
     gap: var(--kp-reference-small-gap-md);
@@ -121,7 +169,8 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     border-radius: 1.75rem;
   }
 
-  .lead-request__form {
+  .lead-request__contacts,
+  .lead-request__pending-form {
     border: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue) 14%, transparent);
     background: var(--kp-reference-white);
   }
@@ -132,11 +181,17 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     color: var(--kp-reference-white);
   }
 
+  .lead-request__contacts h2,
+  .lead-request__pending-form h2,
   .lead-request__sidebar h2 {
-    color: var(--kp-reference-white);
+    color: var(--kp-reference-ink);
     font-family: var(--kp-font-heading);
     font-size: var(--kp-reference-heading);
     line-height: 1.04;
+  }
+
+  .lead-request__sidebar h2 {
+    color: var(--kp-reference-white);
   }
 
   .lead-request__sidebar ul {
@@ -145,53 +200,41 @@ const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
     padding-left: 1.25rem;
   }
 
-  .lead-request label {
+  .lead-request__contact-grid {
     display: grid;
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.875rem;
+  }
+
+  .lead-request__contact-card {
+    display: grid;
+    gap: 0.55rem;
+    min-height: 100%;
+    padding: 1rem;
+    border: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 10%, transparent);
+    border-radius: 1rem;
+    background: var(--kp-reference-sky);
+    color: var(--kp-reference-ink);
+    text-decoration: none;
+  }
+
+  .lead-request__contact-card strong,
+  .lead-request__contact-card em {
+    font-style: normal;
+  }
+
+  .lead-request__contact-card em {
+    color: var(--kp-reference-blue);
     font-weight: var(--kp-label-weight);
   }
 
-  .lead-request input,
-  .lead-request textarea {
-    border: 0.0625rem solid var(--kp-line);
-    border-radius: 0.875rem;
-    padding: 0.875rem 1rem;
-    background: var(--kp-reference-sky);
-    color: var(--kp-reference-ink);
-    font: inherit;
-  }
-
-  .lead-request input:user-invalid,
-  .lead-request textarea:user-invalid {
-    border-color: var(--kp-reference-orange);
-  }
-
-  .lead-request button {
-    min-height: 2.75rem;
-    border: 0;
-    border-radius: var(--kp-reference-button-radius);
-    background: var(--kp-reference-blue);
-    color: var(--kp-reference-white);
-    font-family: var(--kp-font-heading);
-    font-weight: var(--kp-heading-weight);
-  }
-
-  .lead-request__help {
-    font-size: var(--kp-label-size);
-    font-weight: var(--kp-body-weight);
-  }
-
-  .lead-request__error {
-    position: absolute;
-    width: 0.0625rem;
-    height: 0.0625rem;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
+  .lead-request__pending-form[hidden] {
+    display: none;
   }
 
   @media (max-width: 59.9375rem) {
-    .lead-request__panel {
+    .lead-request__panel,
+    .lead-request__contact-grid {
       grid-template-columns: 1fr;
     }
   }
