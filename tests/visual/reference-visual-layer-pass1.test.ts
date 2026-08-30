@@ -40,7 +40,7 @@ test('KIBER-88 imports a reference-layer CSS file with core reference primitives
   assert.match(css, /--kp-reference-blue-deep:\s*var\(--kp-blue-deep\)/);
   assert.match(css, /--kp-reference-sky:\s*var\(--kp-sky\)/);
   assert.match(css, /--kp-reference-ink-dark:\s*var\(--kp-ink\)/);
-  assert.match(css, /--kp-reference-container:\s*72\.5rem/i);
+  assert.match(css, /--kp-reference-container:\s*90rem/i);
   assert.match(css, /--kp-reference-small-gap-xl:\s*2\.25rem/i);
   assert.match(css, /--kp-reference-small-gap-lg:\s*1\.5rem/i);
   assert.match(css, /--kp-reference-small-gap-md:\s*1rem/i);

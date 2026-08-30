@@ -14,7 +14,7 @@
   --kp-reference-muted-soft: var(--kp-muted-soft);
   --kp-reference-white: var(--kp-white);
   --kp-reference-orange: var(--kp-orange);
-  --kp-reference-container: 72.5rem;
+  --kp-reference-container: 90rem;
   --kp-reference-small-gap-xl: 2.25rem;
   --kp-reference-small-gap-lg: 1.5rem;
   --kp-reference-small-gap-md: 1rem;
@@ -88,7 +88,7 @@ body {
 }
 
 .container {
-  width: min(100% - 2.5rem, var(--kp-reference-container));
+  width: min(100% - 1rem, var(--kp-reference-container));
   margin-inline: auto;
   padding-inline: 0;
 }
@@ -125,8 +125,8 @@ select:focus-visible {
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  padding: 0 2rem;
+  gap: 0.875rem;
+  padding: 0 1rem;
 }
 
 .site-header__logo,
@@ -134,14 +134,19 @@ select:focus-visible {
   color: var(--kp-reference-blue);
   font-family: var(--kp-font-heading);
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.035em;
   text-decoration: none;
+}
+
+.site-header__logo {
+  min-width: 10.25rem;
+  font-size: 1.125rem;
 }
 
 .site-header__nav {
   display: flex;
-  gap: 2.5rem;
-  margin-left: 3.5rem;
+  gap: 1.25rem;
+  margin-left: 0.5rem;
 }
 
 .site-header__link {
@@ -154,7 +159,7 @@ select:focus-visible {
 .site-header__actions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-left: auto;
 }
 
@@ -175,10 +180,10 @@ select:focus-visible {
 
 .site-header__cta {
   display: inline-flex;
-  min-height: 2.75rem;
+  min-height: 2.125rem;
   align-items: center;
   justify-content: center;
-  padding: 0.875rem 1.5rem;
+  padding: 0.5rem 1.125rem;
   background: var(--kp-reference-blue);
   color: var(--kp-reference-white);
   font-family: var(--kp-font-heading);
@@ -203,7 +208,7 @@ select:focus-visible {
 }
 
 .vertical-slice__section {
-  padding: 0 var(--kp-reference-pad-x);
+  padding: 0;
 }
 
 .vertical-slice__section-copy h2,
@@ -229,7 +234,7 @@ select:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   max-width: 100%;
-  gap: var(--kp-reference-small-gap-md);
+  gap: clamp(0.75rem, 1.25vw, 1.125rem);
 }
 
 .robot-card__media {
@@ -239,6 +244,10 @@ select:focus-visible {
 
 .robot-card__badge {
   background: var(--kp-reference-orange);
+  width: clamp(2.625rem, 3.4vw, 3.125rem);
+  padding: 0.25rem;
+  font-size: clamp(0.45rem, 0.56vw, 0.55rem);
+  line-height: 1.02;
 }
 
 .robot-page {
@@ -382,8 +391,8 @@ select:focus-visible {
 
 @media (max-width: 74.9375rem) {
   .site-header__nav {
-    gap: 1.5rem;
-    margin-left: 1.5rem;
+    gap: 0.875rem;
+    margin-left: 0.25rem;
   }
 }
 
