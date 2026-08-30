@@ -1,9 +1,9 @@
 {
   "issue": "KIBER-media-rights-registry",
-  "generatedAt": "2026-08-28T12:18:20.549Z",
+  "generatedAt": "2026-08-30T17:30:36.258Z",
   "robotsChecked": 24,
-  "productionApproved": 0,
-  "needsRightsReview": 24,
+  "productionApproved": 24,
+  "needsRightsReview": 0,
   "status": "passed",
   "failures": [],
   "warnings": []

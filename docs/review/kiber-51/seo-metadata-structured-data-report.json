@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-51",
-  "generatedAt": "2026-08-28T00:55:56.697Z",
-  "launchRoutesChecked": 8,
+  "generatedAt": "2026-08-30T17:30:24.092Z",
+  "launchRoutesChecked": 31,
   "site": "https://www.kiber-portal.ru",
   "checks": [
     "canonical",
@@ -24,7 +24,169 @@
       ]
     },
     {
-      "path": "/robots/unitree-g1/",
+      "path": "/robots/arenda-agibot-x2/",
+      "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Agibot X2 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-bellabot/",
+      "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-официанта BellaBot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-glambot/",
+      "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота GlamBot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-inchbot-l1-w-edu/",
+      "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Inchbot L1-W EDU для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-kettybot/",
+      "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-официанта KettyBot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-klipmeiker/",
+      "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота Клипмейкер для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-mini-robo-kofeyni/",
+      "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "мини робо-кофейни для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-noetix-bumi/",
+      "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Noetix Bumi для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-promobot-v4/",
+      "title": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Promobot V4 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-robo-kofeyni/",
+      "title": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-кофейни для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-roboshashki/",
+      "title": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота для игры в шашки для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-robot-barmen/",
+      "title": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-бармена «Робобар» для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-robota-ardi/",
+      "title": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота Арди для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-robota-hudozhnika-a4/",
+      "title": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "большого формата для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-robota-sofiya/",
+      "title": "робота София для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота София для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-robota-tron/",
+      "title": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "модульного робота Tron для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-senserobot/",
+      "title": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "робота-шахматиста SenseRobot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-sketchbot/",
+      "title": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Sketchbot для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-unitree-g1/",
       "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
       "h1": "Unitree G1 для мероприятий",
       "jsonLdTypes": [
@@ -33,9 +195,54 @@
       ]
     },
     {
+      "path": "/robots/arenda-unitree-go2/",
+      "title": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Unitree Go2 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-unitree-h2/",
+      "title": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Unitree H2 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-unitree-r1/",
+      "title": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Unitree R1 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-uv-box/",
+      "title": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "интерактивной витрины UV-BOX для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/robots/arenda-xiaomi-cyberdog-2/",
+      "title": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
+      "h1": "Xiaomi Cyberdog 2 для мероприятий",
+      "jsonLdTypes": [
+        "Service",
+        "BreadcrumbList"
+      ]
+    },
+    {
       "path": "/roboty-gumanoidy/",
       "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
-      "h1": "Роботы-гуманоиды",
+      "h1": "Роботы-гуманоиды, которые держат внимание",
       "jsonLdTypes": [
         "CollectionPage"
       ]
@@ -43,7 +250,7 @@
     {
       "path": "/roboty-sobaki/",
       "title": "Роботы-собаки в аренду — КИБЕР ПОРТАЛ",
-      "h1": "Роботы-собаки",
+      "h1": "Роботы-собаки для событий и промо",
       "jsonLdTypes": [
         "CollectionPage"
       ]
@@ -75,7 +282,7 @@
     {
       "path": "/contacts/",
       "title": "Контакты — КИБЕР ПОРТАЛ",
-      "h1": "Контакты",
+      "h1": "Контакты и заявка на робота",
       "jsonLdTypes": [
         "ContactPage"
       ]
