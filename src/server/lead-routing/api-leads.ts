@@ -5,6 +5,10 @@ export type LeadRoutingMode = 'disabled' | 'dry-run' | 'live';
 export type EnvLike = Record<string, string | undefined>;
 export type FetchLike = (url: string, init: RequestInit) => Promise<Response>;
 
+type ChannelName = 'amoCRM' | 'telegram';
+type ChannelResult = Awaited<ReturnType<typeof sendAmoCrmLeadDuplicate>> | Awaited<ReturnType<typeof sendTelegramLeadDuplicate>>;
+type GuardedChannelResult = ChannelResult & { attempts?: number; error?: 'external-channel-failed' | 'external-channel-timeout' };
+
 interface NormalizedLead {
   name: string;
   contact: string;
@@ -76,6 +80,64 @@ const validate = (lead: Pick<NormalizedLead, 'name' | 'contact'>) => {
 };
 
 const requestId = () => `lead_${Date.now()}_${crypto.randomUUID()}`;
+
+const IDEMPOTENCY_TTL_MS = 10 * 60 * 1000;
+const successfulLeadCache = new Map<string, { expiresAt: number; body: Record<string, unknown> }>();
+
+const positiveInteger = (value: string | undefined, fallback: number, max: number) => {
+  const parsed = Number.parseInt(String(value ?? ''), 10);
+  if (!Number.isFinite(parsed) || parsed < 1) return fallback;
+  return Math.min(parsed, max);
+};
+
+const pruneLeadCache = (now = Date.now()) => {
+  for (const [key, value] of successfulLeadCache.entries()) {
+    if (value.expiresAt <= now) successfulLeadCache.delete(key);
+  }
+};
+
+const cacheKey = (lead: Pick<NormalizedLead, 'requestId' | 'deployEnv'>) => `${lead.deployEnv}:${lead.requestId}`;
+
+const timeoutAfter = (ms: number) => new Promise<never>((_resolve, reject) => {
+  const timeout = setTimeout(() => {
+    clearTimeout(timeout);
+    reject(new Error('external-channel-timeout'));
+  }, ms);
+});
+
+const isTimeoutError = (error: unknown) => error instanceof Error && /timeout/i.test(error.message);
+
+const withTimeout = async <T>(operation: Promise<T>, timeoutMs: number) => {
+  if (timeoutMs <= 0) return operation;
+  return Promise.race([operation, timeoutAfter(timeoutMs)]);
+};
+
+const runChannel = async (
+  _name: ChannelName,
+  operation: () => Promise<ChannelResult>,
+  env: EnvLike,
+): Promise<GuardedChannelResult> => {
+  const maxAttempts = positiveInteger(env.LEAD_ROUTING_RETRY_ATTEMPTS, 2, 3);
+  const timeoutMs = positiveInteger(env.LEAD_ROUTING_TIMEOUT_MS, 8000, 15000);
+  let attempts = 0;
+  let timeout = false;
+
+  while (attempts < maxAttempts) {
+    attempts += 1;
+    try {
+      return { ...(await withTimeout(operation(), timeoutMs)), attempts };
+    } catch (error) {
+      timeout = timeout || isTimeoutError(error);
+      if (attempts >= maxAttempts) break;
+    }
+  }
+
+  return {
+    ok: false,
+    attempts,
+    error: timeout ? 'external-channel-timeout' : 'external-channel-failed',
+  };
+};
 
 const normalizeLead = (request: Request, body: Record<string, unknown>, env: EnvLike): NormalizedLead => {
   const url = new URL(request.url);
@@ -175,14 +237,23 @@ export const handleLeadRequest = async (
     }, 202);
   }
 
-  const amoCRM = await sendAmoCrmLeadDuplicate(asAmo(lead), loadAmoCrmLeadConfig({ ...env, LEAD_ROUTING_ENABLED: 'true' }), fetchImpl);
-  const telegram = await sendTelegramLeadDuplicate(asTelegram(lead), loadTelegramLeadConfig({ ...env, LEAD_ROUTING_ENABLED: 'true' }), fetchImpl);
+  pruneLeadCache();
+  const key = cacheKey(lead);
+  const cached = successfulLeadCache.get(key);
+  if (cached) return json({ ...cached.body, idempotent: true });
 
-  return json({
-    ok: true,
+  const amoCRM = await runChannel('amoCRM', () => sendAmoCrmLeadDuplicate(asAmo(lead), loadAmoCrmLeadConfig({ ...env, LEAD_ROUTING_ENABLED: 'true' }), fetchImpl), env);
+  const telegram = await runChannel('telegram', () => sendTelegramLeadDuplicate(asTelegram(lead), loadTelegramLeadConfig({ ...env, LEAD_ROUTING_ENABLED: 'true' }), fetchImpl), env);
+  const ok = amoCRM.ok && telegram.ok;
+  const responseBody = {
+    ok,
     mode,
     requestId: lead.requestId,
     channels: { amoCRM, telegram },
     redirectTo: '/lead/thanks/',
-  });
+  };
+
+  if (ok) successfulLeadCache.set(key, { expiresAt: Date.now() + IDEMPOTENCY_TTL_MS, body: responseBody });
+
+  return json(responseBody, ok ? 200 : 502);
 };

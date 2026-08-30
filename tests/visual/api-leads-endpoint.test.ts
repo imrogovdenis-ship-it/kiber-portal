@@ -86,6 +86,90 @@ test('POST /api/leads live mode calls amoCRM and Telegram only when explicitly e
   ]);
 });
 
+test('POST /api/leads live mode treats repeated request_id as idempotent and does not duplicate channels', async () => {
+  const urls: string[] = [];
+  const makeRequest = () => new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({
+      request_id: 'lead_owner_repeat_001',
+      name: 'Тест Гефест',
+      contact: '+700****0000',
+      robot: 'manual-live-test',
+    }),
+  });
+  const fetchImpl = async (url: string) => {
+    urls.push(String(url));
+    if (String(url).includes('amocrm.ru')) return new Response(JSON.stringify({ _embedded: { unsorted: [{ uid: 'unsorted-repeat' }] } }), { status: 200 });
+    if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 22 } }), { status: 200 });
+    throw new Error(`unexpected URL: ${url}`);
+  };
+
+  const first = await handleLeadRequest(makeRequest(), { ...baseEnv, LEAD_ROUTING_MODE: 'live' }, fetchImpl);
+  const second = await handleLeadRequest(makeRequest(), { ...baseEnv, LEAD_ROUTING_MODE: 'live' }, fetchImpl);
+  const firstBody = await first.json();
+  const secondBody = await second.json();
+
+  assert.equal(first.status, 200);
+  assert.equal(second.status, 200);
+  assert.equal(firstBody.requestId, 'lead_owner_repeat_001');
+  assert.equal(secondBody.requestId, 'lead_owner_repeat_001');
+  assert.equal(secondBody.idempotent, true);
+  assert.deepEqual(urls, [
+    'https://portalrent.amocrm.ru/api/v4/leads/unsorted/forms',
+    'https://api.telegram.org/bot123456789:TEST_TOKEN/sendMessage',
+  ]);
+});
+
+test('POST /api/leads live mode retries transient external channel failures before succeeding', async () => {
+  const amoStatuses = [500, 502, 200];
+  const calls: string[] = [];
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ request_id: 'lead_retry_001', name: 'Тест Гефест', contact: '+700****0000' }),
+  });
+
+  const response = await handleLeadRequest(request, { ...baseEnv, LEAD_ROUTING_MODE: 'live', LEAD_ROUTING_RETRY_ATTEMPTS: '3' }, async (url) => {
+    calls.push(String(url));
+    if (String(url).includes('amocrm.ru')) {
+      const status = amoStatuses.shift() ?? 200;
+      return new Response(JSON.stringify(status === 200 ? { _embedded: { unsorted: [{ uid: 'unsorted-retry' }] } } : { error: 'temporary' }), { status });
+    }
+    if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 33 } }), { status: 200 });
+    throw new Error(`unexpected URL: ${url}`);
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.equal(body.channels.amoCRM.ok, true);
+  assert.equal(body.channels.amoCRM.attempts, 3);
+  assert.equal(body.channels.amoCRM.unsortedUid, 'unsorted-retry');
+  assert.equal(calls.filter((url) => url.includes('amocrm.ru')).length, 3);
+});
+
+test('POST /api/leads live mode returns controlled failure JSON when a channel times out', async () => {
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ request_id: 'lead_timeout_001', name: 'Тест Гефест', contact: '+700****0000' }),
+  });
+
+  const response = await handleLeadRequest(request, { ...baseEnv, LEAD_ROUTING_MODE: 'live', LEAD_ROUTING_RETRY_ATTEMPTS: '1' }, async (url) => {
+    if (String(url).includes('amocrm.ru')) throw new Error('network timeout');
+    if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 44 } }), { status: 200 });
+    throw new Error(`unexpected URL: ${url}`);
+  });
+  const body = await response.json();
+
+  assert.equal(response.status, 502);
+  assert.equal(body.ok, false);
+  assert.equal(body.requestId, 'lead_timeout_001');
+  assert.equal(body.channels.amoCRM.ok, false);
+  assert.equal(body.channels.amoCRM.error, 'external-channel-timeout');
+  assert.doesNotMatch(JSON.stringify(body), /network timeout|AMOCRM_ACCESS_TOKEN|TELEGRAM_BOT_TOKEN|TEST_TOKEN/);
+});
+
 test('POST /api/leads dry-run redirects browser form submissions to safe confirmation page', async () => {
   let calls = 0;
   const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1', {
