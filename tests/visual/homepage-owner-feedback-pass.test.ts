@@ -59,3 +59,16 @@ test('homepage final CTA follows original blue strip, left-aligned white buttons
   assert.match(cta, /justify-content:\s*flex-start/);
   assert.match(cta, /background:\s*var\(--kp-white\);\s*color:\s*var\(--kp-ink\)/);
 });
+
+test('homepage owner-provided hero image is registered as media-use approval without production side effects', async () => {
+  const page = await read('src/pages/index.astro');
+  const registry = JSON.parse(await read('data/review/homepage-owner-media-assets.json'));
+
+  assert.match(page, /\/images\/home\/home-header-robot-owner-20260830\.webp/);
+  assert.equal(registry.policy.productionDeployChanged, false);
+  assert.equal(registry.policy.dnsChanged, false);
+  assert.equal(registry.policy.secretsChanged, false);
+  assert.equal(registry.assets[0].src, '/images/home/home-header-robot-owner-20260830.webp');
+  assert.equal(registry.assets[0].productionApproved, true);
+  assert.equal(registry.assets[0].approvalScope, 'media_use_only_not_production_deploy');
+});

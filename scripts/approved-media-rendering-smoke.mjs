@@ -8,6 +8,7 @@ const json = (path) => JSON.parse(read(path));
 
 const registry = json('data/review/media-rights-registry.json');
 const cards = json('data/review/media-rights-robot-cards.json');
+const homepageAssets = json('data/review/homepage-owner-media-assets.json');
 const robots = json('src/content/robots.generated.json').robots;
 const reportPath = resolve(root, 'docs/review/media-rights/approved-media-rendering-report.json');
 
@@ -30,6 +31,16 @@ for (const item of registry.robots || []) {
     failures.push(`${item.slug}: media registry item is not approved_for_production`);
   }
 }
+
+const approvedHomepageBySrc = new Map();
+for (const asset of homepageAssets.assets || []) {
+  if (asset.productionApproved === true && asset.rightsStatus === 'approved_for_production' && asset.approvalScope === 'media_use_only_not_production_deploy') {
+    approvedHomepageBySrc.set(asset.src, asset);
+  }
+}
+assert.equal(homepageAssets.policy?.productionDeployChanged, false, 'homepage owner media approval must not imply production deploy');
+assert.equal(homepageAssets.policy?.dnsChanged, false, 'homepage owner media approval must not imply DNS changes');
+assert.equal(homepageAssets.policy?.secretsChanged, false, 'homepage owner media approval must not imply secret changes');
 
 function imageTags(html) {
   return [...html.matchAll(/<img\b[^>]*>/g)].map((match) => match[0]);
@@ -85,7 +96,7 @@ if (existsSync(resolve(root, homePath))) {
   for (const tag of publicImageTags) {
     const src = decodeAttr(attr(tag, 'src'));
     const alt = decodeAttr(attr(tag, 'alt'));
-    if (!approvedBySrc.has(src)) failures.push(`home: rendered image ${src} is not in approved media cards`);
+    if (!approvedBySrc.has(src) && !approvedHomepageBySrc.has(src)) failures.push(`home: rendered image ${src} is not in approved media cards or homepage owner media assets`);
     if (!alt || alt.length < 20) failures.push(`home: rendered image ${src} alt missing or too short`);
   }
 } else {

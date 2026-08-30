@@ -69,7 +69,7 @@ test('KIBER-88 home hero and robot page expose reference-compatible structure', 
 
   const index = text(indexPath);
   assert.match(index, /image:\s*\{/);
-  assert.match(index, /\/images\/kiber-45\/arenda-unitree-g1\.webp/);
+  assert.match(index, /\/images\/home\/home-header-robot-owner-20260830\.webp/);
   assert.match(index, /vertical-slice__card-grid/);
 
   const robotPage = text(robotPagePath);

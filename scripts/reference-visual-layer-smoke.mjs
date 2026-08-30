@@ -53,7 +53,7 @@ const home = read(resolve(distRoot, 'index.html'));
 assertIncludes(home, 'home-hero__card', 'home page');
 assertIncludes(home, 'home-hero__image', 'home page');
 assertIncludes(home, 'data-rv="02"', 'home page');
-assertIncludes(home, '/images/kiber-45/arenda-unitree-g1.webp', 'home page');
+assertIncludes(home, '/images/home/home-header-robot-owner-20260830.webp', 'home page');
 assertIncludes(home, 'vertical-slice__card-grid', 'home page');
 const cssBundle = builtCssBundle();
 assertIncludes(cssBundle, '--kp-reference-blue:', 'built CSS');
