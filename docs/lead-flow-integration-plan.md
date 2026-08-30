@@ -77,13 +77,55 @@ Implementation scaffold:
 
 ### amoCRM duplicate
 
-Needed inputs:
+Owner-provided amoCRM configuration:
 
-- amoCRM domain/account.
-- OAuth/client setup or approved webhook path.
-- Pipeline/status for new leads.
-- Responsible user.
-- Custom fields mapping.
+- Base URL: `https://portalrent.amocrm.ru`.
+- Account: `ТЕХНО ПРОКАТ`, account_id: `32697154`.
+- Private integration: `Форма сайта kiber-portal.ru`.
+- client_id: `32664272-c86f-4f38-9e83-ee2d1ac7680c`.
+- Scope: `crm`.
+- pipeline_id: `10151598` (`КИБЕР ПОРТАЛ`).
+- unsorted incoming status_id: `80421598` (`Неразобранное — входящие`).
+- responsible_user_id: `13632386` (`Менеджер отдела продаж`).
+- Endpoint: `POST /api/v4/leads/unsorted/forms`.
+- Authorization header uses the amoCRM access token from 1Password at runtime; the token must never be committed or printed.
+
+Required environment variables:
+
+```text
+AMOCRM_BASE_URL=https://portalrent.amocrm.ru
+AMOCRM_ACCESS_TOKEN=op://<vault>/<item>/token
+AMOCRM_CLIENT_ID=32664272-c86f-4f38-9e83-ee2d1ac7680c
+AMOCRM_ACCOUNT_ID=32697154
+AMOCRM_PIPELINE_ID=10151598
+AMOCRM_UNSORTED_STATUS_ID=80421598
+AMOCRM_RESPONSIBLE_USER_ID=13632386
+```
+
+Field mapping:
+
+| Form/input | amoCRM target |
+|---|---|
+| `name` | `_embedded.contacts[0].name` |
+| `contact` / phone | contact custom field `field_code: PHONE`, `enum_code: WORK` |
+| `email` | contact custom field `field_code: EMAIL`, `enum_code: WORK` when present |
+| `utm_source` | lead custom field `id 903417` |
+| `utm_medium` | lead custom field `id 903413` |
+| `utm_campaign` | lead custom field `id 903415` |
+| `utm_content` | lead custom field `id 903411` |
+| `utm_term` | lead custom field `id 903419` |
+| source page | `metadata.form_page` |
+| submitted time | `metadata.form_sent_at` and `created_at` unix timestamp |
+| form name | `metadata.form_name = Заполнить форму`, `metadata.form_id = lead_request` |
+| source | top-level `source_name = kiber-portal.ru`, `source_uid = site-form-lead-request` |
+
+Implementation scaffold:
+
+- `src/server/lead-routing/amocrm.ts` builds the amoCRM `unsorted/forms` payload and can POST it when live routing is enabled.
+- Real manual validation against amoCRM showed that this account rejects `metadata.utm_*` keys on `unsorted/forms`; UTM values are therefore sent through the configured lead custom field IDs only.
+- With `LEAD_ROUTING_ENABLED=false`, sender returns `skipped: routing-disabled` and performs no network call.
+- The long-lived token must be stored in 1Password and supplied to runtime via `AMOCRM_ACCESS_TOKEN`; the token must not be committed, printed, or pasted into chat.
+- Current static `/lead/request/` form still remains GET-only until the separately approved live endpoint/hosting change is made.
 
 Do not store amoCRM tokens in Git.
 
