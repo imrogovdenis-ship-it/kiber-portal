@@ -16,7 +16,7 @@ test('homepage header keeps logo future-proof and compact desktop controls', asy
   assert.match(header, /site-header__logo-mark/);
   assert.match(header, /site-header__logo-text/);
   assert.match(header, /site-header__logo--with-mark/);
-  assert.match(baseLayout, /\/images\/brand\/kp_logo_full\.svg/);
+  assert.match(baseLayout, /\/images\/brand\/kp_logo_full_color\.svg/);
   assert.match(layout, /\.site-header__logo--with-mark \.site-header__logo-text/);
   assert.match(layout, /\.site-header__nav\s*\{[^}]*margin-left:\s*1\.25rem;/s);
   assert.match(reference, /\.site-header__container\s*\{[^}]*width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\),\s*var\(--kp-reference-container\)\)/s);
@@ -86,18 +86,18 @@ test('brand logos render as SVG marks in both header and footer without losing o
     read('src/layouts/BaseLayout.astro'),
     read('src/components/layout/Header.astro'),
     read('src/components/layout/Footer.astro'),
-    read('public/images/brand/kp_logo_full.svg'),
+    read('public/images/brand/kp_logo_full_color.svg'),
     read('design-system/scripts/lint.ts'),
   ]);
 
-  assert.match(baseLayout, /\/images\/brand\/kp_logo_full\.svg/);
+  assert.match(baseLayout, /\/images\/brand\/kp_logo_full_color\.svg/);
   assert.match(header, /site-header__logo-mark/);
   assert.match(footer, /site-footer__logo-mark/);
-  assert.match(footer, /\/images\/brand\/kp_logo_full\.svg/);
+  assert.match(footer, /\/images\/brand\/kp_logo_full_color\.svg/);
   assert.doesNotMatch(footer, /<a class="site-footer__logo" href="\/">\{logo_label\}<\/a>/);
   assert.match(logo, /#(?:0088FF|005EFF)/i);
   assert.doesNotMatch(logo, /currentColor/);
-  assert.match(lint, /public\/images\/brand\/kp_logo_full\.svg/);
+  assert.match(lint, /public\/images\/brand\/kp_logo_full_color\.svg/);
 });
 
 test('homepage owner-provided hero image is registered as media-use approval without production side effects', async () => {

@@ -19,6 +19,7 @@ const ignored = new Set([
   // They are source assets, not component styling tokens; converting them to
   // currentColor breaks <img>-rendered logos in browsers.
   'public/images/brand/kp_logo_full.svg',
+  'public/images/brand/kp_logo_full_color.svg',
 ]);
 
 async function files(directory: string): Promise<string[]> {
