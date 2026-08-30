@@ -107,11 +107,28 @@ const validate = (lead: Pick<NormalizedLead, 'name' | 'contact'>) => {
   return errors;
 };
 
+const csv = (value: string | undefined) => String(value ?? '')
+  .split(',')
+  .map((item) => item.trim())
+  .filter(Boolean);
+
+const originAllowed = (request: Request, env: EnvLike) => {
+  const allowed = csv(env.LEAD_ALLOWED_ORIGINS);
+  if (!allowed.length) return true;
+  const origin = clean(request.headers.get('origin'));
+  if (!origin) return true;
+  return allowed.includes(origin);
+};
+
+const hasHoneypot = (body: Record<string, unknown>) => ['website', 'url', 'company', 'bot_field']
+  .some((key) => Boolean(clean(body[key])));
+
 const requestId = () => `lead_${Date.now()}_${crypto.randomUUID()}`;
 const traceId = (request: Request, lead: Pick<NormalizedLead, 'requestId'>) => clean(request.headers.get('x-request-id')) ?? lead.requestId;
 
 const IDEMPOTENCY_TTL_MS = 10 * 60 * 1000;
 const successfulLeadCache = new Map<string, { expiresAt: number; body: Record<string, unknown> }>();
+const rateLimitCache = new Map<string, { expiresAt: number; count: number }>();
 
 const positiveInteger = (value: string | undefined, fallback: number, max: number) => {
   const parsed = Number.parseInt(String(value ?? ''), 10);
@@ -126,6 +143,33 @@ const pruneLeadCache = (now = Date.now()) => {
 };
 
 const cacheKey = (lead: Pick<NormalizedLead, 'requestId' | 'deployEnv'>) => `${lead.deployEnv}:${lead.requestId}`;
+
+const rateLimitKey = (request: Request, lead: Pick<NormalizedLead, 'deployEnv'>) => {
+  const ip = clean(request.headers.get('x-forwarded-for'))?.split(',')[0]?.trim()
+    ?? clean(request.headers.get('x-real-ip'))
+    ?? 'anonymous';
+  return `${lead.deployEnv}:${ip}`;
+};
+
+const rateLimitExceeded = (request: Request, lead: Pick<NormalizedLead, 'deployEnv'>, env: EnvLike, now = Date.now()) => {
+  const windowMs = positiveInteger(env.LEAD_RATE_LIMIT_WINDOW_MS, 60_000, 60 * 60 * 1000);
+  const max = positiveInteger(env.LEAD_RATE_LIMIT_MAX, 30, 1000);
+  const key = rateLimitKey(request, lead);
+
+  for (const [candidate, bucket] of rateLimitCache.entries()) {
+    if (bucket.expiresAt <= now) rateLimitCache.delete(candidate);
+  }
+
+  const bucket = rateLimitCache.get(key);
+  if (!bucket || bucket.expiresAt <= now) {
+    rateLimitCache.set(key, { expiresAt: now + windowMs, count: 1 });
+    return false;
+  }
+
+  if (bucket.count >= max) return true;
+  bucket.count += 1;
+  return false;
+};
 
 const timeoutAfter = (ms: number) => new Promise<never>((_resolve, reject) => {
   const timeout = setTimeout(() => {
@@ -168,7 +212,7 @@ const runChannel = async (
   };
 };
 
-const channelLog = (result: GuardedChannelResult | { ok: boolean; skipped: LeadRoutingMode }): LeadLogEvent['channels'][ChannelName] => {
+const channelLog = (result: GuardedChannelResult | { ok: boolean; skipped: LeadRoutingMode | 'honeypot' }): LeadLogEvent['channels'][ChannelName] => {
   const skipped = 'skipped' in result && result.skipped ? String(result.skipped) : false;
   return {
     ok: result.ok,
@@ -282,11 +326,32 @@ export const handleLeadRequest = async (
     return json({ ok: false, errors: ['invalid request body'] }, 400);
   }
 
+  if (!originAllowed(request, env)) return json({ ok: false, errors: ['origin not allowed'] }, 403);
+
   const lead = normalizeLead(request, body, env);
+  const mode = routingMode(env);
+
+  if (hasHoneypot(body)) {
+    emitLeadLog(options, {
+      event: 'lead.delivery.completed',
+      traceId: traceId(request, lead),
+      requestId: lead.requestId,
+      deployEnv: lead.deployEnv,
+      mode,
+      status: 'accepted',
+      channels: {
+        amoCRM: channelLog({ ok: true, skipped: 'honeypot' }),
+        telegram: channelLog({ ok: true, skipped: 'honeypot' }),
+      },
+    });
+    return json({ ok: true, mode, requestId: lead.requestId, dropped: true, reason: 'honeypot' }, 202);
+  }
+
   const errors = validate(lead);
   if (errors.length) return json({ ok: false, errors }, 400);
 
-  const mode = routingMode(env);
+  if (rateLimitExceeded(request, lead, env)) return json({ ok: false, errors: ['rate limit exceeded'] }, 429, { 'retry-after': '60' });
+
   if (mode !== 'live') {
     if (wantsHtml(request)) return redirect(safeThanksLocation(lead));
 
