@@ -5,17 +5,17 @@ import test from 'node:test';
 
 const root = process.cwd();
 
-test('KIBER-36 lead request exposes accessible required, error, status and loading states', async () => {
+test('KIBER-36 lead request exposes accessible working contact links while the form is disabled', async () => {
   const page = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(page, /aria-describedby="name-help name-error"/);
-  assert.match(page, /aria-describedby="contact-help contact-error"/);
-  assert.match(page, /aria-describedby="event-help"/);
-  assert.match(page, /required/);
-  assert.match(page, /role="alert"/);
+  assert.match(page, /aria-labelledby="lead-request-title"/);
+  assert.match(page, /aria-labelledby="lead-working-contacts-title"/);
   assert.match(page, /aria-live="polite"/);
-  assert.match(page, /aria-busy="false"/);
-  assert.match(page, /data-loading-label/);
-  assert.match(page, /data-state="preview-dry-run"/);
+  assert.match(page, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
+  assert.match(page, /data-analytics-form-state="disabled"/);
+  assert.match(page, /href=\{channel\.href\}/);
+  assert.match(page, /Написать в Telegram/);
+  assert.match(page, /Написать в WhatsApp/);
+  assert.match(page, /Написать в MAX/);
 });
 
 test('KIBER-36 robot page documents empty and ready states without hiding them from assistive tech', async () => {

@@ -26,9 +26,13 @@ for (const forbidden of ['webhook', 'telegram_token', 'email:', 'mailto:', 'crm'
 }
 
 const requestPage = readFileSync(requestPagePath, 'utf8');
-if (!requestPage.includes('method="post"')) failures.push('lead request form must POST to preview-safe endpoint');
-if (!requestPage.includes('action="/api/leads"')) failures.push('lead request form must route to /api/leads source endpoint');
-if (!requestPage.includes('data-state="preview-dry-run"')) failures.push('lead request form must disclose preview dry-run state in source');
+if (!requestPage.includes('PUBLIC_LEAD_FORM_ENABLED')) failures.push('lead request page must declare the lead-form feature flag');
+if (!requestPage.includes("data-lead-form-state={leadFormEnabled ? 'enabled' : 'disabled'}")) failures.push('lead request page must disclose enabled/disabled lead form state');
+if (/<form[\s\S]*method="post"[\s\S]*action="\/api\/leads"[\s\S]*>/.test(requestPage)) failures.push('disabled lead request page must not render an unavailable /api/leads submission form');
+for (const requiredContact of ['siteConfig.telegram', 'siteConfig.whatsapp', 'siteConfig.max']) {
+  if (!requestPage.includes(requiredContact)) failures.push(`lead request page must expose working contact channel: ${requiredContact}`);
+}
+if (!requestPage.includes('data-analytics-form-state="disabled"')) failures.push('lead request contact links must mark the form state as disabled');
 
 const contactsPage = readFileSync(contactsPagePath, 'utf8');
 if (!contactsPage.includes('lead-routing')) failures.push('contacts page must disclose lead-routing approval blocker');

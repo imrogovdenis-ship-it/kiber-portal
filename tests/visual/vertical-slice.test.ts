@@ -24,19 +24,21 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
   assert.match(robotHero, /data-vertical-step="robot-to-lead"/);
 
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(requestPage, /method="post"/);
-  assert.match(requestPage, /action="\/api\/leads"/);
+  assert.match(requestPage, /PUBLIC_LEAD_FORM_ENABLED/);
+  assert.match(requestPage, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
   assert.match(requestPage, /name="robot"/);
-  assert.match(requestPage, /data-vertical-step="lead-to-confirmation"/);
+  assert.match(requestPage, /data-vertical-step="lead-to-contacts"/);
 
   const thanksPage = await readFile(resolve(root, 'src/pages/lead/thanks.astro'), 'utf8');
   assert.match(thanksPage, /data-vertical-step="confirmation"/);
   assert.match(thanksPage, /заявка принята/i);
 });
 
-test('KIBER-33 lead request source posts to preview-safe /api/leads without enabling live destinations', async () => {
+test('KIBER-33/KIBER-38 lead request source stays preview-safe and exposes working contacts while routing is disabled', async () => {
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(requestPage, /method="post"/);
-  assert.match(requestPage, /action="\/api\/leads"/);
-  assert.match(requestPage, /data-state="preview-dry-run"/);
+  assert.match(requestPage, /const leadFormEnabled = import\.meta\.env\.PUBLIC_LEAD_FORM_ENABLED === 'true'/);
+  assert.doesNotMatch(requestPage, /<form[\s\S]*method="post"[\s\S]*action="\/api\/leads"[\s\S]*>/);
+  assert.match(requestPage, /siteConfig\.telegram/);
+  assert.match(requestPage, /siteConfig\.whatsapp/);
+  assert.match(requestPage, /siteConfig\.max/);
 });
