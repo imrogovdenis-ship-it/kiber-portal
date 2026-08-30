@@ -33,7 +33,6 @@ assert.equal(workflow.policy.productionPublishRequiresHumanApproval, true);
 assert.equal(workflow.policy.noProductionDeployDnsSecretsOrCookies, true);
 
 for (const required of [
-  'real-public-contacts',
   'live-lead-routing',
   'analytics-provider-ids',
   'business-legal-launch-confirmation',
@@ -45,7 +44,8 @@ assert(!pack.blockers.some((blocker) => blocker.id === 'media-rights-production-
 
 assert.match(report, /## Решение: NO-GO/);
 assert.match(report, /production deploy permission = `false`/);
-assert.match(report, /Media approval resolved 2026-08-29/);
+assert.match(report, /Media rights для production assets/);
+assert.match(report, /Реальные публичные контакты и реквизиты/);
 
 mkdirSync('docs/review/production-go-no-go', { recursive: true });
 const smoke = {

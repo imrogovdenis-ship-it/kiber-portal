@@ -9,10 +9,10 @@ const capability = JSON.parse(read('data/lead/capability-contract.json'));
 
 assert.equal(registry.issue, 'KIBER-contact-lead-visual-pass2');
 assert.equal(registry.safety.liveLeadRoutingChanged, false);
-assert.equal(registry.safety.productionContactsChanged, false);
 assert.equal(registry.safety.rawHtmlCopiedIntoRuntime, false);
 assert.equal(capability.routing.enabled, false);
 assert.deepEqual(capability.routing.destinations, []);
+assert.equal(capability.constraints.productionContacts, 'approved-public-defaults');
 
 for (const route of ['contacts', 'lead/request']) {
   const built = resolve(root, 'dist', route, 'index.html');
@@ -22,12 +22,19 @@ for (const route of ['contacts', 'lead/request']) {
 const contactsHtml = read('dist/contacts/index.html');
 const leadHtml = read('dist/lead/request/index.html');
 const contactsMain = contactsHtml.match(/<main class="contact-conversion[\s\S]*?<\/main>/)?.[0] ?? '';
+const footerHtml = contactsHtml.match(/<footer[\s\S]*?<\/footer>/)?.[0] ?? '';
 const leadMain = leadHtml.match(/<main class="lead-request[\s\S]*?<\/main>/)?.[0] ?? '';
 
 assert.match(contactsMain, /data-rv="30"/);
 assert.match(contactsMain, /contact-conversion__card/);
 assert.match(contactsMain, /data-safety-contract="lead-routing"|Lead capability:/);
-assert.doesNotMatch(contactsMain, /href="tel:\+7|wa\.me\/7\d|t\.me\/[a-z0-9_]+/i);
+assert.match(contactsHtml, /href="tel:\+79852666582"/);
+assert.match(contactsHtml, /mailto:markinas28@yandex\.ru/);
+assert.match(contactsHtml, /wa\.me\/79852666582/);
+assert.match(contactsHtml, /t\.me\/\+79852666582/);
+assert.match(footerHtml, /ИНН\s*771898397717/);
+assert.match(footerHtml, /ОГРНИП\s*326774600084499/);
+assert.doesNotMatch(contactsHtml, /\+7 000 000-00-00|hello@kiber-portal\.ru|wa\.me\/70000000000|t\.me\/kiber_portal/);
 
 assert.match(leadMain, /data-rv="31"/);
 assert.match(leadMain, /data-lead-capability="disabled"/);
@@ -40,7 +47,7 @@ const report = {
   status: 'passed',
   routesChecked: registry.routes,
   liveLeadRoutingChanged: false,
-  productionContactsChanged: false,
+  publicContactsApproved: true,
   generatedAt: new Date().toISOString(),
 };
 
@@ -50,4 +57,4 @@ writeFileSync(
   `${JSON.stringify(report, null, 2)}\n`,
 );
 
-console.log('KIBER contact/lead visual pass 2 smoke passed: /contacts/ and /lead/request/ checked with lead routing disabled.');
+console.log('KIBER contact/lead visual smoke passed: approved contacts render and lead routing remains disabled.');

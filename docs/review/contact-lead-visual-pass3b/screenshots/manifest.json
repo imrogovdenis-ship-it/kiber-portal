@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-contact-lead-visual-pass3b",
-  "generatedAt": "2026-08-29T14:03:25.816Z",
+  "generatedAt": "2026-08-30T03:39:35.163Z",
   "routes": [
     {
       "name": "lead-thanks",
@@ -44,7 +44,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/lead-thanks-mobile.png",
-      "sha256": "5758adf18f48660c9f5d62526faad1dc86b9aed8f1681d62962f3249f46c842f"
+      "sha256": "0c311667c12d308f066ddc1f2592f535c262463cb722ee9bd1d6db00b281a55b"
     },
     {
       "route": "lead-thanks",
@@ -53,7 +53,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/lead-thanks-tablet.png",
-      "sha256": "ed1c0aa6c77edc2d68c063563d87176bc2b06575db27b1fda449fcebdfe62190"
+      "sha256": "dc38455dc75871aec25cf82b593349a71b5cd034563a83daf691d014c1a4c108"
     },
     {
       "route": "lead-thanks",
@@ -62,7 +62,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/lead-thanks-desktop.png",
-      "sha256": "338e2238a0befaaeae1eaaf13601c7a7ef4160d1b2bc3efeaf4f701986bc4b4b"
+      "sha256": "e80bb7d97743741efa94d5a5b35c46e53c40e61fc77835b7df54391621de60cc"
     },
     {
       "route": "roboty-gumanoidy",
@@ -71,7 +71,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-gumanoidy-mobile.png",
-      "sha256": "2af036e0ba813b872c224065395f9a2d48e0143eb0b041d1aa86695a629b542f"
+      "sha256": "55ef0a38f487a35e845d956309fd9fefa3474316c1b8a1d81bcd38b7ff694576"
     },
     {
       "route": "roboty-gumanoidy",
@@ -80,7 +80,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-gumanoidy-tablet.png",
-      "sha256": "07b92e0cb3977820fdec8e528fd1101e298f8226e3feb182e5b7a994da9cbfc1"
+      "sha256": "d3e6eec6734c7a3a1bb414b508c347a73b1d8616817043b94337064057aff8d8"
     },
     {
       "route": "roboty-gumanoidy",
@@ -89,7 +89,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-gumanoidy-desktop.png",
-      "sha256": "e9f96ac4032ebad2df2fb715e7f5bd23ee1d53bfcefc7e26004919dc206bb388"
+      "sha256": "8415bc0f2745308795cc508d69c4e949f4a1f0ae2fc10e78d855b671a3e21c07"
     },
     {
       "route": "roboty-sobaki",
@@ -98,7 +98,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-sobaki-mobile.png",
-      "sha256": "3044281dc4ffe15f87e02f375eec2a1ee471b06cab4a602bf4dd88411f689383"
+      "sha256": "ad31d68b7248ba1ebad9c8aa4c304077d9bbdc0a32346f0aae0d2ee2410e86a3"
     },
     {
       "route": "roboty-sobaki",
@@ -107,7 +107,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-sobaki-tablet.png",
-      "sha256": "447b4ea71901a3449b5a5372f7e17dfd20a1c8361bfb37569f5baa5a615959c5"
+      "sha256": "6694ef05ae8ef68f339537f875da0ea5e20a9c8b4d0c21c6bd10308084968f45"
     },
     {
       "route": "roboty-sobaki",
@@ -116,7 +116,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-sobaki-desktop.png",
-      "sha256": "cd77cb1379ad5481bec5c7840b902ccc3b5d2396f6ec09d02b5f6795ead3b765"
+      "sha256": "8374f2c109e07e578a40a2cda7c3d054d24f3f4356fdf00e3be06f912ccf5c1b"
     },
     {
       "route": "contacts-footer",
@@ -125,7 +125,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/contacts-footer-mobile.png",
-      "sha256": "e869b9ddd06ad548776f0c913d924edea961f8060d8fa08c00c9e5f9e6bc4c39"
+      "sha256": "1a810341cdb96a139201a501bc96984b73ff6d3f6e28395a72473468fc171cbc"
     },
     {
       "route": "contacts-footer",
@@ -134,7 +134,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/contacts-footer-tablet.png",
-      "sha256": "5d8240da27363047317bb46b1795b1fba58a0b1c5bade507bde9563d72b0411b"
+      "sha256": "9c68c41ad78ad2183c26c79c2ad1c765c1177d2fd1ab477a2e1883fdc12b67b4"
     },
     {
       "route": "contacts-footer",
@@ -143,24 +143,8 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/contacts-footer-desktop.png",
-      "sha256": "b7c29f4873cf6627526240255def3d3a82b752c6934542f0b3424f8e429127fe"
+      "sha256": "795ca7b41fb427bbb3f05383377323d16e4387eb166f889807e19d65a25c30cf"
     }
   ],
-  "contactSheets": [
-    {
-      "viewport": "mobile",
-      "file": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-mobile.png",
-      "sha256": "d899316f5c0517a95c7205bc4f5e87f822fa8b685ae6063d30575db575ddbee5"
-    },
-    {
-      "viewport": "tablet",
-      "file": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-tablet.png",
-      "sha256": "857b2bb921811aec854b1a4abc07f11b6e1ca34c6035a0e0ea0b640dcc0f7dd5"
-    },
-    {
-      "viewport": "desktop",
-      "file": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-desktop.png",
-      "sha256": "0cbe52a5e37b023c850413d7dea671a3713c9f9dc3e03991a40d06756a04a95b"
-    }
-  ]
+  "contactSheets": []
 }

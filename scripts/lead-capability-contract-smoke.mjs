@@ -17,12 +17,12 @@ if (contract.routing?.mode !== 'capability-only') failures.push('routing.mode mu
 if (contract.routing?.enabled !== false) failures.push('routing.enabled must remain false');
 if (!Array.isArray(contract.routing?.destinations) || contract.routing.destinations.length !== 0) failures.push('routing.destinations must remain an empty array');
 if (contract.constraints?.liveLeadRouting !== 'disabled-until-owner-approval') failures.push('liveLeadRouting must remain disabled until owner approval');
-if (contract.constraints?.productionContacts !== 'placeholder-only') failures.push('production contacts must remain placeholder-only');
+if (contract.constraints?.productionContacts !== 'approved-public-defaults') failures.push('production contacts must remain approved public defaults');
 if (contract.constraints?.analyticsProviderIds !== 'disabled') failures.push('analytics provider IDs must remain disabled');
 
-const serialized = JSON.stringify(contract).toLowerCase();
-for (const forbidden of ['webhook', 'telegram_token', 'whatsapp', 'email:', 'mailto:', 'crm', 'bitrix', 'amocrm']) {
-  if (serialized.includes(forbidden)) failures.push(`contract must not include live destination marker: ${forbidden}`);
+const serializedDestinations = JSON.stringify(contract.routing?.destinations || []).toLowerCase();
+for (const forbidden of ['webhook', 'telegram_token', 'email:', 'mailto:', 'crm', 'bitrix', 'amocrm']) {
+  if (serializedDestinations.includes(forbidden)) failures.push(`contract must not include live destination marker: ${forbidden}`);
 }
 
 const requestPage = readFileSync(requestPagePath, 'utf8');

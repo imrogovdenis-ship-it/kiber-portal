@@ -24,12 +24,13 @@ test('KIBER launch readiness crawl defines go/no-go gates', () => {
 
   assert.deepEqual(registry.criticalRoutes, [
     { path: '/', purpose: 'commercial entry', sitemap: true },
-    { path: '/contacts/', purpose: 'placeholder contact trust page', sitemap: true },
+    { path: '/contacts/', purpose: 'approved public contact trust page', sitemap: true },
     { path: '/lead/request/', purpose: 'capability-only lead entry', sitemap: false },
     { path: '/lead/thanks/', purpose: 'non-indexed lead confirmation', sitemap: false },
     { path: '/privacy-policy/', purpose: 'live-site sourced legal document', sitemap: false },
     { path: '/consent/', purpose: 'live-site sourced consent document', sitemap: false },
     { path: '/cookie-policy/', purpose: 'live-site sourced cookie document', sitemap: false },
+    { path: '/terms/', purpose: 'live-site sourced user agreement', sitemap: false },
   ]);
 });
 

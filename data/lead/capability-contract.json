@@ -6,11 +6,16 @@
     "destinations": []
   },
   "constraints": {
-    "productionContacts": "placeholder-only",
+    "productionContacts": "approved-public-defaults",
     "liveLeadRouting": "disabled-until-owner-approval",
     "analyticsProviderIds": "disabled"
   },
   "approvalGates": [
     "owner approves live lead destinations"
-  ]
+  ],
+  "publicContactsApproval": {
+    "approvedBy": "Александр Маркин",
+    "approvedAt": "2026-08-30T02:56:33Z",
+    "scope": "phone, email, Telegram, WhatsApp, region, legal name, INN, OGRNIP and address approved for preview/PR publication"
+  }
 }

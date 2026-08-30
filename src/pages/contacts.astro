@@ -1,29 +1,33 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
+import { siteConfig } from '../config/site';
 import { contactPageJsonLd } from '../lib/seo';
 
 const contactCards = [
   {
-    title: 'Написать нам',
-    text: 'Коротко опишите город, дату, площадку и какую роль должен взять робот.',
-    href: '/lead/request/',
-    cta: 'Заполнить заявку',
-    state: 'Первый шаг',
+    title: 'Позвонить',
+    text: 'Обсудим дату, площадку, город и роль робота на мероприятии.',
+    href: `tel:${siteConfig.phone.replace(/[^+\d]/g, '')}`,
+    cta: siteConfig.phone,
+    state: 'Телефон',
+    event: 'phone_click',
   },
   {
-    title: 'Быстрый подбор',
-    text: 'Подберём формат под выставку, форум, презентацию, ресторан, свадьбу или образовательное событие.',
-    href: '/#catalog',
-    cta: 'Смотреть роботов',
-    state: '24 модели',
+    title: 'Написать в Telegram',
+    text: 'Быстрый способ отправить вводные по событию и получить следующий шаг.',
+    href: siteConfig.telegram,
+    cta: 'Открыть Telegram',
+    state: 'Мессенджер',
+    event: 'messenger_click',
   },
   {
-    title: 'Каналы связи',
-    text: 'Публичные мессенджеры и CRM-направление подключим после финального решения по заявкам.',
-    href: '/lead/request/',
-    cta: 'Оставить контакты',
-    state: 'На запуск',
+    title: 'Написать в WhatsApp',
+    text: 'Подойдёт для короткого брифа: город, дата, площадка, сценарий и желаемая модель.',
+    href: siteConfig.whatsapp,
+    cta: 'Открыть WhatsApp',
+    state: 'Мессенджер',
+    event: 'messenger_click',
   },
 ];
 ---
@@ -35,12 +39,12 @@ const contactCards = [
   noindex={false}
   jsonLd={contactPageJsonLd({ title: 'Контакты — КИБЕР ПОРТАЛ', description: 'Контактная страница КИБЕР ПОРТАЛА для подбора робота.', url: '/contacts/' })}
 >
-  <main class="contact-conversion" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3b" data-safety-contract="lead-routing" data-rv="30">
+  <main class="contact-conversion" id="main-content" tabindex="-1" data-kiber-task="KIBER-public-contacts-owner-input" data-safety-contract="lead-routing" data-rv="30">
     <section class="contact-conversion__hero-card container" aria-labelledby="page-title">
       <div class="contact-conversion__copy">
         <p class="contact-conversion__eyebrow">КИБЕР ПОРТАЛ</p>
         <h1 id="page-title">Контакты и заявка на робота</h1>
-        <p>Опишите мероприятие — мы подберём модель, сценарий и безопасный формат работы на площадке.</p>
+        <p>Опишите мероприятие — мы подберём модель, сценарий и безопасный формат работы на площадке. Работаем из региона: {siteConfig.region}.</p>
       </div>
       <div class="contact-conversion__signal">
         <strong>24</strong>
@@ -54,9 +58,27 @@ const contactCards = [
           <p class="contact-conversion__state">{card.state}</p>
           <h2>{card.title}</h2>
           <p>{card.text}</p>
-          <a href={card.href} data-analytics-event="contact_click" data-analytics-source="contacts" data-analytics-placement="conversion_card" data-analytics-slug="global">{card.cta}</a>
+          <a href={card.href} data-analytics-event={card.event} data-analytics-source="contacts" data-analytics-placement="conversion_card" data-analytics-slug="global">{card.cta}</a>
         </article>
       ))}
+    </section>
+
+    <section class="contact-conversion__details container" aria-label="Реквизиты и адрес">
+      <article>
+        <p>Оператор</p>
+        <h2>{siteConfig.legalName}</h2>
+        <dl>
+          <div><dt>ИНН</dt><dd>{siteConfig.inn}</dd></div>
+          <div><dt>ОГРНИП</dt><dd>{siteConfig.ogrnip}</dd></div>
+          <div><dt>Email</dt><dd><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></dd></div>
+          <div><dt>Адрес</dt><dd>{siteConfig.address}</dd></div>
+        </dl>
+      </article>
+      <article>
+        <p>Заявки</p>
+        <h2>Сначала бриф, затем финальный сценарий</h2>
+        <p>Публичные контакты утверждены владельцем. Автоматическая отправка формы в выбранный канал остаётся выключенной до отдельного решения по маршруту заявок.</p>
+      </article>
     </section>
 
     <section class="contact-conversion__cta-strip container" aria-label="Следующий шаг">
@@ -64,7 +86,7 @@ const contactCards = [
         <p>Подбор под площадку</p>
         <h2>Расскажите о событии — предложим подходящего робота</h2>
       </div>
-      <a href="/lead/request/">Перейти к заявке</a>
+      <a href={siteConfig.telegram}>Написать нам</a>
     </section>
 
     <div class="contact-conversion__links container">
@@ -102,6 +124,9 @@ const contactCards = [
   .contact-conversion__copy p,
   .contact-conversion__card p,
   .contact-conversion__card h2,
+  .contact-conversion__details p,
+  .contact-conversion__details h2,
+  .contact-conversion__details dl,
   .contact-conversion__cta-strip p,
   .contact-conversion__cta-strip h2 {
     margin: 0;
@@ -109,6 +134,7 @@ const contactCards = [
 
   .contact-conversion__eyebrow,
   .contact-conversion__state,
+  .contact-conversion__details > article > p:first-child,
   .contact-conversion__cta-strip p {
     font-size: var(--kp-reference-label-size);
     font-weight: 700;
@@ -153,13 +179,19 @@ const contactCards = [
     line-height: 1;
   }
 
-  .contact-conversion__grid {
+  .contact-conversion__grid,
+  .contact-conversion__details {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--kp-reference-small-gap-lg);
   }
 
-  .contact-conversion__card {
+  .contact-conversion__details {
+    grid-template-columns: 1.15fr .85fr;
+  }
+
+  .contact-conversion__card,
+  .contact-conversion__details article {
     display: grid;
     align-content: start;
     gap: 1rem;
@@ -170,19 +202,48 @@ const contactCards = [
     background: var(--kp-reference-white);
   }
 
-  .contact-conversion__state {
+  .contact-conversion__state,
+  .contact-conversion__details > article > p:first-child {
     color: var(--kp-reference-blue);
   }
 
-  .contact-conversion__card h2 {
+  .contact-conversion__card h2,
+  .contact-conversion__details h2 {
     font-family: var(--kp-font-heading);
     font-size: var(--kp-reference-title-s);
     line-height: 1.08;
   }
 
-  .contact-conversion__card p:not(.contact-conversion__state) {
+  .contact-conversion__card p:not(.contact-conversion__state),
+  .contact-conversion__details article > p:last-child {
     color: var(--kp-reference-muted);
     line-height: 1.55;
+  }
+
+  .contact-conversion__details dl {
+    display: grid;
+    gap: .75rem;
+  }
+
+  .contact-conversion__details div {
+    display: grid;
+    gap: .2rem;
+  }
+
+  .contact-conversion__details dt {
+    color: var(--kp-reference-muted);
+    font-size: .8125rem;
+    text-transform: uppercase;
+  }
+
+  .contact-conversion__details dd {
+    margin: 0;
+    color: var(--kp-reference-ink);
+    font-weight: 700;
+  }
+
+  .contact-conversion__details a {
+    color: var(--kp-reference-blue);
   }
 
   .contact-conversion__card a,
@@ -233,6 +294,7 @@ const contactCards = [
 
     .contact-conversion__hero-card,
     .contact-conversion__grid,
+    .contact-conversion__details,
     .contact-conversion__cta-strip {
       display: grid;
       grid-template-columns: 1fr;
@@ -248,6 +310,7 @@ const contactCards = [
     .contact-conversion__copy,
     .contact-conversion__signal,
     .contact-conversion__card,
+    .contact-conversion__details article,
     .contact-conversion__cta-strip {
       padding: 1.25rem;
     }

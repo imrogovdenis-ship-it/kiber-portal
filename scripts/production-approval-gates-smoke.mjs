@@ -26,13 +26,12 @@ const warnings = [];
 
 if (gates.schemaVersion !== 1) failures.push('schemaVersion must be 1');
 if (gates.policy?.productionPermissionIncluded !== false) failures.push('production permission must not be included');
-if (gates.policy?.productionContacts !== 'placeholder-only') failures.push('contacts must stay placeholder-only');
+if (gates.policy?.productionContacts !== 'approved-public-defaults') failures.push('contacts must remain approved public defaults');
 if (gates.policy?.liveLeadDestinations !== 'disabled') failures.push('live lead destinations must stay disabled');
 if (gates.policy?.analyticsProviderIds !== 'disabled') failures.push('analytics provider IDs must stay disabled');
 if (gates.policy?.noDeployDnsSecretsCookiesOrRouting !== true) failures.push('deploy/DNS/secrets/cookies/routing guard must stay true');
 
 if (ownerDecisions.productionPermissionIncluded !== false) failures.push('owner decisions must not include production permission');
-if (ownerDecisions.decisions?.contacts?.publicRealContactsApproved !== false) failures.push('owner decisions must keep real contacts unapproved');
 if (ownerDecisions.decisions?.leadChannels?.publicChannelsApproved !== false) failures.push('owner decisions must keep public lead channels unapproved');
 if (contentPackage.policy?.productionPublishRequiresHumanApproval !== true) failures.push('content package must require human production approval');
 if (launchReadiness.productionPermission !== false) failures.push('launch readiness must not grant production permission');
@@ -55,12 +54,12 @@ for (const gateId of requiredGateIds) {
 for (const gate of gates.gates || []) {
   const label = gate.id || gate.title || 'unknown-gate';
   if (gate.requiresExplicitHumanApproval !== true) failures.push(`${label}: requiresExplicitHumanApproval must be true`);
-  if (gate.id === 'media_rights') {
+  if (gate.id === 'media_rights' || gate.id === 'public_contacts') {
     if (gate.productionApproved !== true) failures.push(`${label}: media rights should be approved after owner review`);
     if (!gate.approvedAt) failures.push(`${label}: media approval timestamp required`);
   } else if (gate.productionApproved !== false) failures.push(`${label}: productionApproved must remain false unless explicitly approved`);
   if (!Array.isArray(gate.evidence) || gate.evidence.length === 0) failures.push(`${label}: evidence is required`);
-  if (gate.id !== 'media_rights' && (!Array.isArray(gate.forbiddenActionsUntilApproved) || gate.forbiddenActionsUntilApproved.length === 0)) failures.push(`${label}: forbidden actions are required`);
+  if (gate.id !== 'media_rights' && gate.id !== 'public_contacts' && (!Array.isArray(gate.forbiddenActionsUntilApproved) || gate.forbiddenActionsUntilApproved.length === 0)) failures.push(`${label}: forbidden actions are required`);
   if (!Array.isArray(gate.allowedAutonomousWork) || gate.allowedAutonomousWork.length === 0) warnings.push(`${label}: allowed autonomous work is empty`);
 }
 

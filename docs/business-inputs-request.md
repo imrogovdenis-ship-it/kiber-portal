@@ -1,36 +1,36 @@
 # KIBER PORTAL — business inputs request pack
 
-Дата: 2026-08-29  
+Дата: 2026-08-30  
 Статус: `needed_before_production_launch`
 
-Этот документ перечисляет только решения, которые всё ещё нужны от Александра/команды перед production launch. Media rights по роботам уже закрыты отдельным owner approval и больше не являются открытым blocker.
+Этот документ перечисляет решения, которые ещё нужны перед production launch. Media rights и public contacts/requisites уже закрыты owner input/approval и больше не являются открытыми blockers.
 
 Media rights статус: `approved_by_owner_for_production_media_use`  
 Evidence: `data/review/media-rights-robot-cards.json`, `docs/review/media-rights/robot-cards/`, `data/review/media-rights-review-package.json`.
 
-## 1. Реальные публичные контакты и реквизиты
+Public contacts approved: `yes`  
+Evidence: owner input 2026-08-30; defaults in `src/config/site.ts`; rendered header/footer/contacts/legal docs use the approved values.
 
-Нужно подтвердить:
+## 1. Закрыто: реальные публичные контакты и реквизиты
 
-- реальные публичные контакты: телефон, email, Telegram, WhatsApp/Max если используются;
-- юридическое название компании;
-- ИНН/ОГРН/реквизиты, если они должны быть публичными;
-- адрес/город/география работы, если это нужно в контактах и schema;
-- финальный текст для footer/legal blocks.
+Утверждено для preview/PR:
 
-Текущий статус в Astro:
-
-- `/contacts` и footer остаются placeholder-safe до финальных значений;
-- неподтверждённые реквизиты не выдумываются;
-- значения из `.env.example` или локальных defaults не считаются production approval.
+- телефон: `+7 985 266-65-82`;
+- email: `markinas28@yandex.ru`;
+- Telegram: phone-based public contact;
+- WhatsApp: phone-based public contact;
+- регион: Москва;
+- оператор: ИП Маркин Александр Сергеевич;
+- ИНН: `771898397717`;
+- ОГРНИП: `326774600084499`;
+- адрес: Нижний Сусальный переулок, 9, стр. 4А.
 
 ## 2. Lead capture / messenger routing
 
 Нужно выбрать production-поведение CTA и lead destination:
 
-- открыть messenger modal;
-- вести в Telegram;
-- вести в WhatsApp/Max;
+- вести сразу в Telegram/WhatsApp;
+- оставить форму только как бриф без автоматической отправки;
 - отправлять форму в CRM/email;
 - комбинированный сценарий.
 
@@ -109,13 +109,12 @@ data/seo/redirects.scaffold.json
 ## Copy-paste request for Alex/team
 
 ```text
-Для запуска Astro-версии КИБЕР ПОРТАЛА нужны финальные данные:
+Для запуска Astro-версии КИБЕР ПОРТАЛА ещё нужны финальные данные:
 
-1. Реальные контакты: телефон, email, Telegram/WhatsApp/Max, реквизиты, адрес/география, footer/legal text.
-2. Куда вести заявки: мессенджер, форма, CRM/email, точный сценарий CTA и lead destination.
-3. Аналитика: Метрика/GA4/пиксели, IDs, цели, consent если нужен.
-4. SEO-пакет: ключи по страницам, синонимы, long-tail, статьи, подборки, приоритетные страницы.
-5. Цены/доступность/claims: что можно публиковать, что только по запросу, какие кейсы/бренды можно упоминать.
-6. Редиректы: список старых URL и куда они должны вести.
-7. Отдельное подтверждение production deploy: домен, Coolify target, rollback, дата/окно запуска.
+1. Куда вести заявки: мессенджер, форма, CRM/email, точный сценарий CTA и lead destination.
+2. Аналитика: Метрика/GA4/пиксели, IDs, цели, consent если нужен.
+3. SEO-пакет: ключи по страницам, синонимы, long-tail, статьи, подборки, приоритетные страницы.
+4. Цены/доступность/claims: что можно публиковать, что только по запросу, какие кейсы/бренды можно упоминать.
+5. Редиректы: список старых URL и куда они должны вести.
+6. Отдельное подтверждение production deploy: домен, Coolify target, rollback, дата/окно запуска.
 ```

@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-production-go-no-go",
-  "generatedAt": "2026-08-28T21:22:42Z",
+  "generatedAt": "2026-08-30T02:56:33Z",
   "currentBase": {
     "repository": "imrogovdenis-ship-it/kiber-portal",
     "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
     "branch": "codex/kiber-15-controlled-rebuild",
-    "head": "5698898",
-    "headTitle": "feat: add fourth legal document"
+    "head": "e334c72",
+    "headTitle": "feat: align visual pass 3 pages to reference style"
   },
   "productionDecision": {
     "status": "NO_GO",
-    "summary": "Controlled rebuild is structurally close, but production launch remains blocked by human/business/legal/media/routing decisions.",
+    "summary": "Controlled rebuild has owner-approved public contacts and media, but production launch remains blocked by lead routing, analytics/consent, legal/business launch confirmation, and explicit production permission.",
     "productionDeployAllowed": false,
     "dnsChangeAllowed": false,
     "secretsChangeAllowed": false,
@@ -31,7 +31,9 @@
     "leadDestinations": 0,
     "mediaProductionApproved": 24,
     "crawlSource": "docs/review/launch-readiness-crawl/report.json",
-    "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json"
+    "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json",
+    "publicContactsApproved": true,
+    "publicContactsEvidence": "Owner provided phone, email, Telegram/WhatsApp phone, region, legal name, address and approved preview/PR replacement on 2026-08-30."
   },
   "readyAreas": [
     {
@@ -63,15 +65,14 @@
       "id": "media-rights-production-approval",
       "status": "approved_by_owner_for_production_media_use",
       "evidence": "All 24 full robot media cards approved by Александр Маркин at 2026-08-29T00:55:09Z; production deploy/DNS/secrets/live routing still not approved."
+    },
+    {
+      "id": "public-contacts",
+      "status": "approved_by_owner_for_preview_pr",
+      "evidence": "Owner input 2026-08-30: phone +7 985 266-65-82, email markinas28@yandex.ru, Telegram/WhatsApp phone, Москва, ИП Маркин Александр Сергеевич, ИНН/ОГРНИП from legal docs, address Нижний Сусальный переулок, 9, стр. 4А."
     }
   ],
   "blockers": [
-    {
-      "id": "real-public-contacts",
-      "severity": "blocking",
-      "decisionNeeded": "Утвердить реальные публичные телефон/Telegram/WhatsApp/email/реквизиты или явно разрешить запуск с placeholder-контактами.",
-      "currentState": "productionContacts = placeholder-only"
-    },
     {
       "id": "live-lead-routing",
       "severity": "blocking",
@@ -127,14 +128,10 @@
     }
   ],
   "ownerDecisionChecklist": [
-    "Утвердить или заменить публичные контакты.",
-    "Утвердить live lead destinations и fallback-маршрут заявок.",
-    "Утвердить media rights для production assets или список замен.",
-    "Подтвердить four-document legal package: privacy-policy, consent, cookie-policy, terms.",
-    "Утвердить legal/business launch package целиком.",
-    "Выбрать analytics provider и разрешить конкретные IDs/cookies.",
-    "Решить судьбу открытых PR #43, #44, #45.",
-    "После закрытия блокеров дать отдельное явное разрешение на production deploy/DNS/secrets."
+    "Утвердить live lead destination/backend и fallback-политику.",
+    "Утвердить analytics provider, public IDs, goals и cookie/consent policy.",
+    "Подтвердить финальный business/legal launch package: legal docs, prices, disclaimers, contacts, launch copy.",
+    "Дать отдельное явное permission на production deploy/DNS/secrets/live routing после закрытия блокеров."
   ],
   "nextSafeWork": [
     "Собрать media rights review table для 24 robot assets.",

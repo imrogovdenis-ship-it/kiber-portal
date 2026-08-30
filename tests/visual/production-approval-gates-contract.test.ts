@@ -18,7 +18,7 @@ test('KIBER production approval gates registry exists and preserves owner-approv
   assert.equal(gates.schemaVersion, 1);
   assert.equal(gates.issue, 'KIBER-production-approval-gates');
   assert.equal(gates.policy.productionPermissionIncluded, false);
-  assert.equal(gates.policy.productionContacts, 'placeholder-only');
+  assert.equal(gates.policy.productionContacts, 'approved-public-defaults');
   assert.equal(gates.policy.liveLeadDestinations, 'disabled');
   assert.equal(gates.policy.analyticsProviderIds, 'disabled');
   assert.equal(gates.policy.noDeployDnsSecretsCookiesOrRouting, true);
@@ -36,7 +36,7 @@ test('KIBER production approval gates registry exists and preserves owner-approv
 
   for (const gate of gates.gates) {
     assert.equal(gate.requiresExplicitHumanApproval, true, `${gate.id}: human approval must be explicit`);
-    if (gate.id === 'media_rights') {
+    if (gate.id === 'media_rights' || gate.id === 'public_contacts') {
       assert.equal(gate.productionApproved, true, `${gate.id}: owner media approval should be recorded`);
       assert.match(gate.status, /approved_by_owner/);
       assert.equal(gate.approvedBy, 'Александр Маркин');
@@ -45,7 +45,7 @@ test('KIBER production approval gates registry exists and preserves owner-approv
       assert.match(gate.status, /blocked|pending|in_review|capability_only|placeholder_only|disabled/);
     }
     assert.ok(Array.isArray(gate.evidence) && gate.evidence.length > 0, `${gate.id}: evidence paths required`);
-    if (gate.id !== 'media_rights') {
+    if (gate.id !== 'media_rights' && gate.id !== 'public_contacts') {
       assert.ok(Array.isArray(gate.forbiddenActionsUntilApproved) && gate.forbiddenActionsUntilApproved.length > 0, `${gate.id}: forbidden actions required`);
     }
   }

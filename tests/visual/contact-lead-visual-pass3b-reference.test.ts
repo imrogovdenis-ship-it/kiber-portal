@@ -15,7 +15,7 @@ test('visual pass 3B removes public-facing technical review labels from pass 3 p
   for (const file of files) {
     const source = read(file);
     assert.doesNotMatch(source, /STATIC-SAFE|LEAD CAPABILITY|Live lead routing remains disabled|preview-режим|data-routing-state/i, file);
-    assert.match(source, /data-kiber-task="KIBER-contact-lead-visual-pass3b"/, file);
+    assert.match(source, /data-kiber-task="KIBER-contact-lead-visual-pass3b"|data-kiber-task="KIBER-public-contacts-owner-input"/, file);
   }
 });
 
