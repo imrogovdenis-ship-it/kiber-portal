@@ -13,7 +13,13 @@ const roots = [
   'design-system/tokens/component',
 ];
 const textExtensions = new Set(['.astro', '.css', '.ts', '.yaml', '.yml', '.json', '.svg', '.txt']);
-const ignored = new Set(['src/styles/tokens.css']);
+const ignored = new Set([
+  'src/styles/tokens.css',
+  // Brand SVGs intentionally preserve owner-provided vector fill colors.
+  // They are source assets, not component styling tokens; converting them to
+  // currentColor breaks <img>-rendered logos in browsers.
+  'public/images/brand/kp_logo_full.svg',
+]);
 
 async function files(directory: string): Promise<string[]> {
   const entries = await readdir(directory, { withFileTypes: true });

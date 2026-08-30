@@ -2,9 +2,12 @@
 import { siteConfig } from '../../config/site';
 import type { FooterData } from '../../../design-system/schemas/fixture.schema';
 
-interface Props extends Partial<FooterData> {}
+interface Props extends Partial<FooterData> {
+  logo?: { src: string; alt: string; width: number; height: number };
+}
 const defaults = {
   logo_label: 'КИБЕР ПОРТАЛ',
+  logo: { src: '/images/brand/kp_logo_full.svg', alt: 'КИБЕР ПОРТАЛ', width: 415, height: 132 },
   description: 'Аренда роботов для мероприятий в Москве и по всей России.',
   sections: [
     { title: 'Каталог', links: [{ href: '/#catalog', label: 'Все роботы' }, { href: '/roboty-gumanoidy', label: 'Гуманоиды' }, { href: '/roboty-sobaki', label: 'Роботы-собаки' }] },
@@ -19,7 +22,7 @@ const defaults = {
     { href: '/terms', label: 'Пользовательское соглашение' },
   ],
 };
-const { logo_label = defaults.logo_label, description = defaults.description, sections = defaults.sections, phone = siteConfig.phone, email = siteConfig.email, messengers = defaults.messengers, legal_notice = defaults.legal_notice, legal_links = defaults.legal_links } = Astro.props;
+const { logo_label = defaults.logo_label, logo = defaults.logo, description = defaults.description, sections = defaults.sections, phone = siteConfig.phone, email = siteConfig.email, messengers = defaults.messengers, legal_notice = defaults.legal_notice, legal_links = defaults.legal_links } = Astro.props;
 const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
 ---
 
@@ -27,7 +30,10 @@ const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
   <div class="container">
     <div class="site-footer__main">
       <div>
-        <a class="site-footer__logo" href="/">{logo_label}</a>
+        <a class="site-footer__logo site-footer__logo--with-mark" href="/" aria-label={`${logo_label} — главная`}>
+          <img class="site-footer__logo-mark" src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} loading="lazy" decoding="async" />
+          <span class="site-footer__logo-text">{logo_label}</span>
+        </a>
         <p class="site-footer__description">{description}</p>
         <p class="site-footer__region">{siteConfig.region}</p>
       </div>

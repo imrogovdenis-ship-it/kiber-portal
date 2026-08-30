@@ -149,6 +149,33 @@ select:focus-visible {
   font-size: 1.125rem;
 }
 
+.site-footer__logo {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.site-footer__logo-mark {
+  display: block;
+  width: auto;
+  max-width: 11.25rem;
+  height: 3.625rem;
+  object-fit: contain;
+}
+
+.site-footer__logo--with-mark .site-footer__logo-text {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .site-header__nav {
   display: flex;
   gap: 0.875rem;

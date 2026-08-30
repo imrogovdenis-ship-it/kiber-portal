@@ -7,6 +7,10 @@
 .site-header__logo-mark { width: auto; max-width: 10.25rem; height: 2.25rem; object-fit: contain; }
 .site-header__logo-text { display: inline-block; }
 .site-header__logo--with-mark .site-header__logo-text { position: absolute; width: .0625rem; height: .0625rem; padding: 0; margin: -.0625rem; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.site-footer__logo { display: inline-flex; align-items: center; width: fit-content; margin-bottom: 1rem; }
+.site-footer__logo-mark { display: block; width: auto; max-width: 11.25rem; height: 3.625rem; object-fit: contain; }
+.site-footer__logo-text { display: inline-block; }
+.site-footer__logo--with-mark .site-footer__logo-text { position: absolute; width: .0625rem; height: .0625rem; padding: 0; margin: -.0625rem; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .site-header__logo, .site-header__phone, .site-header__cta { white-space: nowrap; }
 .site-header__nav { display: flex; gap: 2rem; margin-left: 1.25rem; }
 .site-header__link, .site-header__phone { color: var(--kp-muted); font-size: .9375rem; text-decoration: none; }

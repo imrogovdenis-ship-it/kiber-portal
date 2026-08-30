@@ -81,6 +81,25 @@ test('homepage footer requisites keep readable spacing and muted legal typograph
   assert.match(reference, /\.site-footer__requisites\s*\{[^}]*gap:\s*0\.35rem 1rem;[^}]*font-size:\s*0\.8125rem/s);
 });
 
+test('brand logos render as SVG marks in both header and footer without losing owner-provided colors', async () => {
+  const [baseLayout, header, footer, logo, lint] = await Promise.all([
+    read('src/layouts/BaseLayout.astro'),
+    read('src/components/layout/Header.astro'),
+    read('src/components/layout/Footer.astro'),
+    read('public/images/brand/kp_logo_full.svg'),
+    read('design-system/scripts/lint.ts'),
+  ]);
+
+  assert.match(baseLayout, /\/images\/brand\/kp_logo_full\.svg/);
+  assert.match(header, /site-header__logo-mark/);
+  assert.match(footer, /site-footer__logo-mark/);
+  assert.match(footer, /\/images\/brand\/kp_logo_full\.svg/);
+  assert.doesNotMatch(footer, /<a class="site-footer__logo" href="\/">\{logo_label\}<\/a>/);
+  assert.match(logo, /#(?:0088FF|005EFF)/i);
+  assert.doesNotMatch(logo, /currentColor/);
+  assert.match(lint, /public\/images\/brand\/kp_logo_full\.svg/);
+});
+
 test('homepage owner-provided hero image is registered as media-use approval without production side effects', async () => {
   const page = await read('src/pages/index.astro');
   const registry = JSON.parse(await read('data/review/homepage-owner-media-assets.json'));
