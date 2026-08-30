@@ -11,5 +11,5 @@ data:
   phone: +7 000 000-00-00
   email: hello@kiber-portal.ru
   messengers: []
-  legal_notice: Не является публичной офертой
+  legal_notice: Все права защищены ©
   legal_links: [{ href: /privacy-policy, label: Конфиденциальность }]

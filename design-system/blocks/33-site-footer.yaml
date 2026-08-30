@@ -7,7 +7,7 @@ component: src/components/layout/Footer.astro
 used_in: [all-public-pages, design-review]
 variants: [default]
 tokens:
-  surface: "{color.ink.dark}"
+  surface: "{color.footer.background}"
   foreground: "{color.ink.inverse}"
   muted: "{color.text.subtle}"
   action: "{color.action.rest}"
@@ -17,11 +17,14 @@ content_contract:
   rules:
     - contacts and legal links remain usable without JavaScript
     - published contacts are sourced from validated public config
+    - left brand text does not repeat the region; address renders as `г. Москва, Нижний Сусальный переулок, 9, стр. 4А`
+    - description renders as two lines and requisites render below it as three lines
+    - footer replaces the old Catalog column with the same vertical menu as the header
 responsive:
   sm: { columns: 1 }
   md: { columns: 2 }
-  lg: { columns: 4 }
-  xl: { columns: 4 }
+  lg: { columns: 5 }
+  xl: { columns: 5 }
 accessibility:
   landmark: contentinfo
   image_alt_required: false

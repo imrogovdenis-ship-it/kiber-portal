@@ -13,6 +13,7 @@ export const designTokens = {
   "color.badge": "#ff843a",
   "color.border": "#e7e7e7",
   "color.canvas": "#f4f8ff",
+  "color.footer.background": "#000000",
   "color.ink.dark": "#25222b",
   "color.ink.heading": "#36323e",
   "color.ink.inverse": "#ffffff",

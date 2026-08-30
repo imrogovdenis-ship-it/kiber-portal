@@ -70,15 +70,30 @@ test('homepage final CTA follows original blue strip, left-aligned white buttons
   assert.match(cta, /background:\s*var\(--kp-white\);\s*color:\s*var\(--kp-ink\)/);
 });
 
-test('homepage footer requisites keep readable spacing and muted legal typography', async () => {
+test('homepage footer follows owner footer composition feedback', async () => {
   const footer = await read('src/components/layout/Footer.astro');
   const layout = await read('src/styles/layout.css');
   const reference = await read('src/styles/reference-layer.css');
 
+  assert.match(footer, /description:\s*'Аренда роботов для мероприятий\\nв Москве и по всей России\.'/);
+  assert.match(footer, /<p class="site-footer__requisites"/);
   assert.match(footer, /<span>ИНН \{siteConfig\.inn\}<\/span>/);
   assert.match(footer, /<span>ОГРНИП \{siteConfig\.ogrnip\}<\/span>/);
-  assert.match(layout, /\.site-footer__requisites\s*\{[^}]*gap:\s*0\.35rem 1rem;[^}]*color:\s*var\(--kp-muted-soft\);[^}]*font-size:\s*0\.8125rem/s);
-  assert.match(reference, /\.site-footer__requisites\s*\{[^}]*gap:\s*0\.35rem 1rem;[^}]*font-size:\s*0\.8125rem/s);
+  assert.match(footer, /footerAddress = `г\. \$\{siteConfig\.region\}, \$\{siteConfig\.address\}`/);
+  assert.doesNotMatch(footer, /site-footer__region/);
+  assert.match(footer, /title:\s*'Меню'/);
+  assert.doesNotMatch(footer, /title:\s*'Каталог'/);
+  assert.match(footer, /legal_notice:\s*'Все права защищены ©'/);
+  assert.match(footer, /Политика обработки\\nперсональных данных/);
+  assert.match(footer, /Согласие на обработку\\nперсональных данных/);
+  assert.match(footer, /Политика использования\\nфайлов cookie/);
+  assert.match(footer, /Пользовательское\\nсоглашение/);
+  assert.match(layout, /\.site-footer\s*\{[^}]*background:\s*var\(--kp-footer-background\)/s);
+  assert.match(layout, /\.site-footer__main\s*\{[^}]*grid-template-columns:[^;]*minmax\(17rem, 1\.65fr\)[^;]*minmax\(10rem, \.82fr\)/s);
+  assert.match(layout, /\.site-footer__requisites\s*\{[^}]*display:\s*grid;[^}]*gap:\s*\.125rem;[^}]*margin:\s*0;/s);
+  assert.match(layout, /\.site-footer__phone, \.site-footer__email, \.site-footer__address\s*\{[^}]*color:\s*var\(--kp-muted-soft\);[^}]*font-size:\s*\.875rem;[^}]*font-weight:\s*400;/s);
+  assert.match(layout, /\.site-footer__legal a\s*\{[^}]*font-size:\s*\.75rem;[^}]*line-height:\s*1\.18;/s);
+  assert.match(reference, /\.site-footer\s*\{[^}]*background:\s*var\(--kp-footer-background\)/s);
 });
 
 test('brand logos render as SVG marks in both header and footer without losing owner-provided colors', async () => {

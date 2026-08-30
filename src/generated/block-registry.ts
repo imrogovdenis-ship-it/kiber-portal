@@ -2192,7 +2192,7 @@ export const blockRegistry = [
         "default"
       ],
       "tokens": {
-        "surface": "{color.ink.dark}",
+        "surface": "{color.footer.background}",
         "foreground": "{color.ink.inverse}",
         "muted": "{color.text.subtle}",
         "action": "{color.action.rest}"
@@ -2211,7 +2211,10 @@ export const blockRegistry = [
         "optional": [],
         "rules": [
           "contacts and legal links remain usable without JavaScript",
-          "published contacts are sourced from validated public config"
+          "published contacts are sourced from validated public config",
+          "left brand text does not repeat the region; address renders as `г. Москва, Нижний Сусальный переулок, 9, стр. 4А`",
+          "description renders as two lines and requisites render below it as three lines",
+          "footer replaces the old Catalog column with the same vertical menu as the header"
         ]
       },
       "responsive": {
@@ -2222,10 +2225,10 @@ export const blockRegistry = [
           "columns": 2
         },
         "lg": {
-          "columns": 4
+          "columns": 5
         },
         "xl": {
-          "columns": 4
+          "columns": 5
         }
       },
       "accessibility": {
@@ -2272,24 +2275,40 @@ export const blockRegistry = [
         "block_id": "site-footer",
         "data": {
           "logo_label": "КИБЕР ПОРТАЛ",
-          "description": "Аренда роботов для мероприятий в Москве и по всей России.",
+          "description": "Аренда роботов для мероприятий\nв Москве и по всей России.",
           "sections": [
             {
-              "title": "Каталог",
+              "title": "Меню",
               "links": [
                 {
                   "href": "/#catalog",
-                  "label": "Все роботы"
+                  "label": "Каталог"
                 },
                 {
-                  "href": "/roboty-gumanoidy",
-                  "label": "Гуманоиды"
+                  "href": "/compilations",
+                  "label": "Подборки"
+                },
+                {
+                  "href": "/articles",
+                  "label": "Блог"
+                },
+                {
+                  "href": "/news",
+                  "label": "Новости"
+                },
+                {
+                  "href": "/contacts",
+                  "label": "Контакты"
                 }
               ]
             },
             {
               "title": "Контент",
               "links": [
+                {
+                  "href": "/compilations",
+                  "label": "Подборки"
+                },
                 {
                   "href": "/articles",
                   "label": "Блог"
@@ -2309,11 +2328,23 @@ export const blockRegistry = [
               "label": "Telegram"
             }
           ],
-          "legal_notice": "Не является публичной офертой",
+          "legal_notice": "Все права защищены ©",
           "legal_links": [
             {
               "href": "/privacy-policy",
-              "label": "Политика конфиденциальности"
+              "label": "Политика обработки\nперсональных данных"
+            },
+            {
+              "href": "/consent",
+              "label": "Согласие на обработку\nперсональных данных"
+            },
+            {
+              "href": "/cookie-policy",
+              "label": "Политика использования\nфайлов cookie"
+            },
+            {
+              "href": "/terms",
+              "label": "Пользовательское\nсоглашение"
             }
           ]
         },
@@ -2331,11 +2362,27 @@ export const blockRegistry = [
           "description": "Аренда роботов-гуманоидов, роботов-собак и интерактивных решений для мероприятий в Москве и по всей России.",
           "sections": [
             {
-              "title": "Каталог роботов",
+              "title": "Меню",
               "links": [
                 {
                   "href": "/#catalog",
-                  "label": "Все роботы и интерактивные решения"
+                  "label": "Каталог"
+                },
+                {
+                  "href": "/compilations",
+                  "label": "Подборки"
+                },
+                {
+                  "href": "/articles",
+                  "label": "Блог"
+                },
+                {
+                  "href": "/news",
+                  "label": "Новости"
+                },
+                {
+                  "href": "/contacts",
+                  "label": "Контакты"
                 }
               ]
             },
@@ -2361,15 +2408,15 @@ export const blockRegistry = [
               "label": "WhatsApp"
             }
           ],
-          "legal_notice": "Информация на сайте не является публичной офертой.",
+          "legal_notice": "Все права защищены ©",
           "legal_links": [
             {
               "href": "/privacy-policy",
-              "label": "Политика обработки персональных данных"
+              "label": "Политика обработки\nперсональных данных"
             },
             {
               "href": "/cookie-policy",
-              "label": "Политика использования cookie"
+              "label": "Политика использования\nфайлов cookie"
             }
           ]
         },
@@ -2399,7 +2446,7 @@ export const blockRegistry = [
           "phone": "+7 000 000-00-00",
           "email": "hello@kiber-portal.ru",
           "messengers": [],
-          "legal_notice": "Не является публичной офертой",
+          "legal_notice": "Все права защищены ©",
           "legal_links": [
             {
               "href": "/privacy-policy",
@@ -2421,11 +2468,15 @@ export const blockRegistry = [
           "description": "Роботы для мероприятий.",
           "sections": [
             {
-              "title": "Каталог",
+              "title": "Меню",
               "links": [
                 {
                   "href": "/#catalog",
-                  "label": "Все роботы"
+                  "label": "Каталог"
+                },
+                {
+                  "href": "/contacts",
+                  "label": "Контакты"
                 }
               ]
             }
@@ -2433,11 +2484,11 @@ export const blockRegistry = [
           "phone": "+7 000 000-00-00",
           "email": "hello@kiber-portal.ru",
           "messengers": [],
-          "legal_notice": "Не является публичной офертой",
+          "legal_notice": "Все права защищены ©",
           "legal_links": [
             {
               "href": "/privacy-policy",
-              "label": "Политика конфиденциальности"
+              "label": "Политика обработки\nперсональных данных"
             }
           ]
         },
@@ -2452,14 +2503,30 @@ export const blockRegistry = [
         "block_id": "site-footer",
         "data": {
           "logo_label": "КИБЕР ПОРТАЛ",
-          "description": "Аренда роботов для мероприятий в Москве и по всей России.",
+          "description": "Аренда роботов для мероприятий\nв Москве и по всей России.",
           "sections": [
             {
-              "title": "Каталог",
+              "title": "Меню",
               "links": [
                 {
                   "href": "/#catalog",
-                  "label": "Все роботы"
+                  "label": "Каталог"
+                },
+                {
+                  "href": "/compilations",
+                  "label": "Подборки"
+                },
+                {
+                  "href": "/articles",
+                  "label": "Блог"
+                },
+                {
+                  "href": "/news",
+                  "label": "Новости"
+                },
+                {
+                  "href": "/contacts",
+                  "label": "Контакты"
                 }
               ]
             },
@@ -2481,11 +2548,11 @@ export const blockRegistry = [
               "label": "Telegram"
             }
           ],
-          "legal_notice": "Не является публичной офертой",
+          "legal_notice": "Все права защищены ©",
           "legal_links": [
             {
               "href": "/privacy-policy",
-              "label": "Политика конфиденциальности"
+              "label": "Политика обработки\nперсональных данных"
             }
           ]
         },
