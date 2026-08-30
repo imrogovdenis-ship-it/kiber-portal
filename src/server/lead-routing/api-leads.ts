@@ -5,9 +5,37 @@ export type LeadRoutingMode = 'disabled' | 'dry-run' | 'live';
 export type EnvLike = Record<string, string | undefined>;
 export type FetchLike = (url: string, init: RequestInit) => Promise<Response>;
 
-type ChannelName = 'amoCRM' | 'telegram';
+export type ChannelName = 'amoCRM' | 'telegram';
 type ChannelResult = Awaited<ReturnType<typeof sendAmoCrmLeadDuplicate>> | Awaited<ReturnType<typeof sendTelegramLeadDuplicate>>;
 type GuardedChannelResult = ChannelResult & { attempts?: number; error?: 'external-channel-failed' | 'external-channel-timeout' };
+
+export interface LeadLogEvent {
+  event: 'lead.delivery.completed';
+  traceId: string;
+  requestId: string;
+  deployEnv: string;
+  mode: LeadRoutingMode;
+  status: 'accepted' | 'delivered' | 'failed' | 'idempotent';
+  channels: Record<ChannelName, { ok: boolean; attempts?: number; skipped: false | string; error?: string }>;
+}
+
+export interface LeadBackupReceipt {
+  traceId: string;
+  requestId: string;
+  deployEnv: string;
+  mode: LeadRoutingMode;
+  status: LeadLogEvent['status'];
+  robot?: string;
+  sourcePage: string;
+  contactProvided: boolean;
+  emailProvided: boolean;
+  retention: 'minimal-redacted';
+}
+
+export interface LeadRequestOptions {
+  logSink?: (event: LeadLogEvent) => void;
+  backupSink?: (receipt: LeadBackupReceipt) => void;
+}
 
 interface NormalizedLead {
   name: string;
@@ -80,6 +108,7 @@ const validate = (lead: Pick<NormalizedLead, 'name' | 'contact'>) => {
 };
 
 const requestId = () => `lead_${Date.now()}_${crypto.randomUUID()}`;
+const traceId = (request: Request, lead: Pick<NormalizedLead, 'requestId'>) => clean(request.headers.get('x-request-id')) ?? lead.requestId;
 
 const IDEMPOTENCY_TTL_MS = 10 * 60 * 1000;
 const successfulLeadCache = new Map<string, { expiresAt: number; body: Record<string, unknown> }>();
@@ -137,6 +166,41 @@ const runChannel = async (
     attempts,
     error: timeout ? 'external-channel-timeout' : 'external-channel-failed',
   };
+};
+
+const channelLog = (result: GuardedChannelResult | { ok: boolean; skipped: LeadRoutingMode }): LeadLogEvent['channels'][ChannelName] => {
+  const skipped = 'skipped' in result && result.skipped ? String(result.skipped) : false;
+  return {
+    ok: result.ok,
+    attempts: 'attempts' in result ? result.attempts : undefined,
+    skipped,
+    error: 'error' in result ? result.error : undefined,
+  };
+};
+
+const emitLeadLog = (options: LeadRequestOptions | undefined, event: LeadLogEvent) => {
+  options?.logSink?.(event);
+};
+
+const emitBackupReceipt = (
+  options: LeadRequestOptions | undefined,
+  request: Request,
+  lead: NormalizedLead,
+  mode: LeadRoutingMode,
+  status: LeadLogEvent['status'],
+) => {
+  options?.backupSink?.({
+    traceId: traceId(request, lead),
+    requestId: lead.requestId,
+    deployEnv: lead.deployEnv,
+    mode,
+    status,
+    robot: lead.robot,
+    sourcePage: lead.sourcePage,
+    contactProvided: Boolean(lead.contact),
+    emailProvided: Boolean(lead.email),
+    retention: 'minimal-redacted',
+  });
 };
 
 const normalizeLead = (request: Request, body: Record<string, unknown>, env: EnvLike): NormalizedLead => {
@@ -207,6 +271,7 @@ export const handleLeadRequest = async (
   request: Request,
   env: EnvLike = process.env,
   fetchImpl: FetchLike = fetch,
+  options: LeadRequestOptions = {},
 ): Promise<Response> => {
   if (request.method !== 'POST') return json({ ok: false, errors: ['method not allowed'] }, 405);
 
@@ -225,14 +290,30 @@ export const handleLeadRequest = async (
   if (mode !== 'live') {
     if (wantsHtml(request)) return redirect(safeThanksLocation(lead));
 
+    const channels = {
+      amoCRM: { ok: true, skipped: mode },
+      telegram: { ok: true, skipped: mode },
+    };
+
+    emitLeadLog(options, {
+      event: 'lead.delivery.completed',
+      traceId: traceId(request, lead),
+      requestId: lead.requestId,
+      deployEnv: lead.deployEnv,
+      mode,
+      status: 'accepted',
+      channels: {
+        amoCRM: channelLog(channels.amoCRM),
+        telegram: channelLog(channels.telegram),
+      },
+    });
+    emitBackupReceipt(options, request, lead, mode, 'accepted');
+
     return json({
       ok: true,
       mode,
       requestId: lead.requestId,
-      channels: {
-        amoCRM: { ok: true, skipped: mode },
-        telegram: { ok: true, skipped: mode },
-      },
+      channels,
       redirectTo: '/lead/thanks/',
     }, 202);
   }
@@ -240,7 +321,23 @@ export const handleLeadRequest = async (
   pruneLeadCache();
   const key = cacheKey(lead);
   const cached = successfulLeadCache.get(key);
-  if (cached) return json({ ...cached.body, idempotent: true });
+  if (cached) {
+    const cachedChannels = cached.body.channels as Record<ChannelName, GuardedChannelResult>;
+    emitLeadLog(options, {
+      event: 'lead.delivery.completed',
+      traceId: traceId(request, lead),
+      requestId: lead.requestId,
+      deployEnv: lead.deployEnv,
+      mode,
+      status: 'idempotent',
+      channels: {
+        amoCRM: channelLog(cachedChannels.amoCRM),
+        telegram: channelLog(cachedChannels.telegram),
+      },
+    });
+    emitBackupReceipt(options, request, lead, mode, 'idempotent');
+    return json({ ...cached.body, idempotent: true });
+  }
 
   const amoCRM = await runChannel('amoCRM', () => sendAmoCrmLeadDuplicate(asAmo(lead), loadAmoCrmLeadConfig({ ...env, LEAD_ROUTING_ENABLED: 'true' }), fetchImpl), env);
   const telegram = await runChannel('telegram', () => sendTelegramLeadDuplicate(asTelegram(lead), loadTelegramLeadConfig({ ...env, LEAD_ROUTING_ENABLED: 'true' }), fetchImpl), env);
@@ -254,6 +351,20 @@ export const handleLeadRequest = async (
   };
 
   if (ok) successfulLeadCache.set(key, { expiresAt: Date.now() + IDEMPOTENCY_TTL_MS, body: responseBody });
+
+  emitLeadLog(options, {
+    event: 'lead.delivery.completed',
+    traceId: traceId(request, lead),
+    requestId: lead.requestId,
+    deployEnv: lead.deployEnv,
+    mode,
+    status: ok ? 'delivered' : 'failed',
+    channels: {
+      amoCRM: channelLog(amoCRM),
+      telegram: channelLog(telegram),
+    },
+  });
+  emitBackupReceipt(options, request, lead, mode, ok ? 'delivered' : 'failed');
 
   return json(responseBody, ok ? 200 : 502);
 };

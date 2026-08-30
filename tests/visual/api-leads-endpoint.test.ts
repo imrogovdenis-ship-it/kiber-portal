@@ -170,6 +170,133 @@ test('POST /api/leads live mode returns controlled failure JSON when a channel t
   assert.doesNotMatch(JSON.stringify(body), /network timeout|AMOCRM_ACCESS_TOKEN|TELEGRAM_BOT_TOKEN|TEST_TOKEN/);
 });
 
+test('POST /api/leads writes sanitized structured logs with trace ID and delivery status', async () => {
+  const logs: unknown[] = [];
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-request-id': 'trace-owner-safe-001',
+      'x-forwarded-for': '203.0.113.10',
+    },
+    body: JSON.stringify({
+      request_id: 'lead_log_safe_001',
+      name: 'Тест Гефест',
+      contact: '+700****0000',
+      email: 'secret@example.com',
+      event: 'Private launch details',
+      robot: 'manual-live-test',
+    }),
+  });
+
+  const response = await handleLeadRequest(
+    request,
+    { ...baseEnv, LEAD_ROUTING_MODE: 'live' },
+    async (url) => {
+      if (String(url).includes('amocrm.ru')) return new Response(JSON.stringify({ _embedded: { unsorted: [{ uid: 'unsorted-log' }] } }), { status: 200 });
+      if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 55 } }), { status: 200 });
+      throw new Error(`unexpected URL: ${url}`);
+    },
+    { logSink: (event) => logs.push(event) },
+  );
+
+  assert.equal(response.status, 200);
+  assert.equal(logs.length, 1);
+  assert.deepEqual(logs[0], {
+    event: 'lead.delivery.completed',
+    traceId: 'trace-owner-safe-001',
+    requestId: 'lead_log_safe_001',
+    deployEnv: 'preview',
+    mode: 'live',
+    status: 'delivered',
+    channels: {
+      amoCRM: { ok: true, attempts: 1, skipped: false, error: undefined },
+      telegram: { ok: true, attempts: 1, skipped: false, error: undefined },
+    },
+  });
+  assert.doesNotMatch(JSON.stringify(logs), /Тест Гефест|\+700|secret@example.com|Private launch|TEST_TOKEN|AMOCRM_ACCESS_TOKEN|TELEGRAM_BOT_TOKEN|203\.0\.113\.10/);
+});
+
+test('POST /api/leads writes sanitized structured failure logs without raw channel errors', async () => {
+  const logs: unknown[] = [];
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ request_id: 'lead_log_fail_001', name: 'Тест Гефест', contact: '+700****0000' }),
+  });
+
+  const response = await handleLeadRequest(
+    request,
+    { ...baseEnv, LEAD_ROUTING_MODE: 'live', LEAD_ROUTING_RETRY_ATTEMPTS: '1' },
+    async (url) => {
+      if (String(url).includes('amocrm.ru')) throw new Error('raw provider timeout with secret-ish detail');
+      if (String(url).includes('api.telegram.org')) return new Response(JSON.stringify({ ok: true, result: { message_id: 66 } }), { status: 200 });
+      throw new Error(`unexpected URL: ${url}`);
+    },
+    { logSink: (event) => logs.push(event) },
+  );
+
+  assert.equal(response.status, 502);
+  assert.equal(logs.length, 1);
+  assert.deepEqual(logs[0], {
+    event: 'lead.delivery.completed',
+    traceId: 'lead_log_fail_001',
+    requestId: 'lead_log_fail_001',
+    deployEnv: 'preview',
+    mode: 'live',
+    status: 'failed',
+    channels: {
+      amoCRM: { ok: false, attempts: 1, skipped: false, error: 'external-channel-timeout' },
+      telegram: { ok: true, attempts: 1, skipped: false, error: undefined },
+    },
+  });
+  assert.doesNotMatch(JSON.stringify(logs), /raw provider timeout|secret-ish|Тест Гефест|\+700|TEST_TOKEN|fake/);
+});
+
+test('POST /api/leads stores only a minimal redacted backup receipt when a sink is configured', async () => {
+  const backupReceipts: unknown[] = [];
+  const request = new Request('https://preview.kiber-portal.ru/api/leads', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-request-id': 'trace-backup-001',
+      referer: 'https://preview.kiber-portal.ru/robots/arenda-unitree-g1/',
+    },
+    body: JSON.stringify({
+      request_id: 'lead_backup_001',
+      name: 'Тест Гефест',
+      contact: '+700****0000',
+      email: 'secret@example.com',
+      event: 'Private event description',
+      robot: 'arenda-unitree-g1',
+      source_page: 'https://preview.kiber-portal.ru/lead/request/',
+    }),
+  });
+
+  const response = await handleLeadRequest(
+    request,
+    baseEnv,
+    async () => { throw new Error('dry-run must not call external channels'); },
+    { backupSink: (receipt) => backupReceipts.push(receipt) },
+  );
+
+  assert.equal(response.status, 202);
+  assert.equal(backupReceipts.length, 1);
+  assert.deepEqual(backupReceipts[0], {
+    traceId: 'trace-backup-001',
+    requestId: 'lead_backup_001',
+    deployEnv: 'preview',
+    mode: 'dry-run',
+    status: 'accepted',
+    robot: 'arenda-unitree-g1',
+    sourcePage: 'https://preview.kiber-portal.ru/lead/request/',
+    contactProvided: true,
+    emailProvided: true,
+    retention: 'minimal-redacted',
+  });
+  assert.doesNotMatch(JSON.stringify(backupReceipts), /Тест Гефест|\+700|secret@example.com|Private event|TEST_TOKEN|fake/);
+});
+
 test('POST /api/leads dry-run redirects browser form submissions to safe confirmation page', async () => {
   let calls = 0;
   const request = new Request('https://preview.kiber-portal.ru/api/leads?robot=arenda-unitree-g1', {
