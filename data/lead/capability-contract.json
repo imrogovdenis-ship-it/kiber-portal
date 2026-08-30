@@ -16,6 +16,6 @@
   "publicContactsApproval": {
     "approvedBy": "Александр Маркин",
     "approvedAt": "2026-08-30T02:56:33Z",
-    "scope": "phone, email, Telegram, WhatsApp, region, legal name, INN, OGRNIP and address approved for preview/PR publication"
+    "scope": "phone, email, Telegram, WhatsApp, MAX, region, legal name, INN, OGRNIP and address approved for preview/PR publication"
   }
 }

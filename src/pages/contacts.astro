@@ -29,6 +29,14 @@ const contactCards = [
     state: 'Мессенджер',
     event: 'messenger_click',
   },
+  {
+    title: 'Написать в MAX',
+    text: 'Дополнительный публичный канал для быстрого сообщения без заполнения формы.',
+    href: siteConfig.max,
+    cta: 'Открыть MAX',
+    state: 'Мессенджер',
+    event: 'messenger_click',
+  },
 ];
 ---
 
@@ -182,7 +190,7 @@ const contactCards = [
   .contact-conversion__grid,
   .contact-conversion__details {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--kp-reference-small-gap-lg);
   }
 

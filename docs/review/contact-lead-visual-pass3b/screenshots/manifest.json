@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-contact-lead-visual-pass3b",
-  "generatedAt": "2026-08-30T03:39:35.163Z",
+  "generatedAt": "2026-08-30T04:38:03.593Z",
   "routes": [
     {
       "name": "lead-thanks",
@@ -44,7 +44,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/lead-thanks-mobile.png",
-      "sha256": "0c311667c12d308f066ddc1f2592f535c262463cb722ee9bd1d6db00b281a55b"
+      "sha256": "1ff6848f6fd98ad4c0fb94341da4fcce018bdeb04ee54eb916b49e71a1bec453"
     },
     {
       "route": "lead-thanks",
@@ -53,7 +53,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/lead-thanks-tablet.png",
-      "sha256": "dc38455dc75871aec25cf82b593349a71b5cd034563a83daf691d014c1a4c108"
+      "sha256": "878bae1c1f74e3e8270fddb0566630ec5df8c20c6536d88b35c6baa58bb390e0"
     },
     {
       "route": "lead-thanks",
@@ -62,7 +62,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/lead-thanks-desktop.png",
-      "sha256": "e80bb7d97743741efa94d5a5b35c46e53c40e61fc77835b7df54391621de60cc"
+      "sha256": "0d3cdc5686a4d7236ea24a3e5d8058c0a5cc46408f2e588e4197cae7fcd05339"
     },
     {
       "route": "roboty-gumanoidy",
@@ -71,7 +71,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-gumanoidy-mobile.png",
-      "sha256": "55ef0a38f487a35e845d956309fd9fefa3474316c1b8a1d81bcd38b7ff694576"
+      "sha256": "9b91d2eb33204570e985bc392ea11fefb127f9e0fdc71d2219fac731f1d4de24"
     },
     {
       "route": "roboty-gumanoidy",
@@ -80,7 +80,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-gumanoidy-tablet.png",
-      "sha256": "d3e6eec6734c7a3a1bb414b508c347a73b1d8616817043b94337064057aff8d8"
+      "sha256": "9fb004f3a758877f33d04f993133a6411f0ecfa2bec3807b932e54f1820b9c34"
     },
     {
       "route": "roboty-gumanoidy",
@@ -89,7 +89,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-gumanoidy-desktop.png",
-      "sha256": "8415bc0f2745308795cc508d69c4e949f4a1f0ae2fc10e78d855b671a3e21c07"
+      "sha256": "f84128b159dc5ad31aae1f7b0b5ab472dbbeebdc209950ef837620ce33ef6c86"
     },
     {
       "route": "roboty-sobaki",
@@ -98,7 +98,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-sobaki-mobile.png",
-      "sha256": "ad31d68b7248ba1ebad9c8aa4c304077d9bbdc0a32346f0aae0d2ee2410e86a3"
+      "sha256": "26099ddcd7a3930fcca983f4fc8fb94d8732c00dcf2c976b3fc088c38383305a"
     },
     {
       "route": "roboty-sobaki",
@@ -107,7 +107,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-sobaki-tablet.png",
-      "sha256": "6694ef05ae8ef68f339537f875da0ea5e20a9c8b4d0c21c6bd10308084968f45"
+      "sha256": "dcfe68e5745be63f406ef6bafeeb119932e0063491f2d66b832e7b4943519a26"
     },
     {
       "route": "roboty-sobaki",
@@ -116,7 +116,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/roboty-sobaki-desktop.png",
-      "sha256": "8374f2c109e07e578a40a2cda7c3d054d24f3f4356fdf00e3be06f912ccf5c1b"
+      "sha256": "fdf6907a587ecedebf1423a7091b982c7cae2b95ac530c46f2b7dc203e39d924"
     },
     {
       "route": "contacts-footer",
@@ -125,7 +125,7 @@
       "width": 375,
       "height": 900,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/contacts-footer-mobile.png",
-      "sha256": "1a810341cdb96a139201a501bc96984b73ff6d3f6e28395a72473468fc171cbc"
+      "sha256": "933b365355bf6bc04ed20cb4b8808be4ef01d14afdfd6268375808cd0cb47b19"
     },
     {
       "route": "contacts-footer",
@@ -134,7 +134,7 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/contacts-footer-tablet.png",
-      "sha256": "9c68c41ad78ad2183c26c79c2ad1c765c1177d2fd1ab477a2e1883fdc12b67b4"
+      "sha256": "60072eb3f3f53797290d7d0e92de5ab5220f12c51b98eb4a245959768e8e86d4"
     },
     {
       "route": "contacts-footer",
@@ -143,7 +143,7 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/contact-lead-visual-pass3b/screenshots/contacts-footer-desktop.png",
-      "sha256": "795ca7b41fb427bbb3f05383377323d16e4387eb166f889807e19d65a25c30cf"
+      "sha256": "23b9ce5844a531445ecfcc3045cf6ddb63c8ff4f521a91c24951cc14b27f3ccf"
     }
   ],
   "contactSheets": []
