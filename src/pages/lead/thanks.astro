@@ -2,6 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
+const robotLabel = robot
+  .replace(/^arenda-/, '')
+  .split('-')
+  .filter(Boolean)
+  .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+  .join(' ');
 ---
 
 <BaseLayout
@@ -14,40 +20,40 @@ const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
     { name: 'Заявка принята', url: '/lead/thanks/' },
   ]}
 >
-  <main class="lead-thanks container" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3" data-vertical-step="confirmation" data-routing-state="disabled">
-    <section class="lead-thanks__card" aria-labelledby="lead-thanks-title">
-      <div class="lead-thanks__mark" aria-hidden="true">✓</div>
+  <main class="lead-thanks" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3b" data-vertical-step="confirmation">
+    <section class="lead-thanks__hero-card container" aria-labelledby="lead-thanks-title">
       <div class="lead-thanks__copy">
-        <p class="lead-thanks__eyebrow">Черновик заявки сохранён</p>
-        <h1 id="lead-thanks-title">Заявка принята в безопасном preview-режиме</h1>
-        <p>Бриф собран для модели <strong>{robot}</strong>. Сейчас live-отправка заявок отключена до подключения реальных каналов.</p>
-        <p>После запуска менеджер уточнит доступность робота, площадку, тайминг, сценарий, требования площадки и финальную смету.</p>
+        <p class="lead-thanks__eyebrow">КИБЕР ПОРТАЛ</p>
+        <h1 id="lead-thanks-title">Спасибо, бриф принят</h1>
+        <p class="lead-thanks__lead">Мы сохранили запрос по модели <strong>{robotLabel}</strong> и подготовим следующий шаг: сценарий, площадку, тайминг и состав сопровождения.</p>
+        <div class="lead-thanks__actions" aria-label="Навигация после заявки">
+          <a class="lead-thanks__button lead-thanks__button--primary" href={`/robots/${robot}/`}>Вернуться к роботу</a>
+          <a class="lead-thanks__button" href="/contacts">Контакты</a>
+        </div>
       </div>
-      <div class="lead-thanks__steps" aria-label="Что будет дальше">
-        <article>
-          <span>1</span>
-          <h2>Проверка сценария</h2>
-          <p>Подберём формат участия робота под событие и аудиторию.</p>
-        </article>
-        <article>
-          <span>2</span>
-          <h2>Подтверждение доступности</h2>
-          <p>Проверим дату, площадку, логистику и ограничения площадки.</p>
-        </article>
-        <article>
-          <span>3</span>
-          <h2>Финальная смета</h2>
-          <p>Цена зависит от длительности, программы и состава сопровождения.</p>
-        </article>
+
+      <div class="lead-thanks__signal" aria-label="Что будет дальше">
+        <div class="lead-thanks__mark" aria-hidden="true">✓</div>
+        <p>Менеджер свяжется после подключения утверждённых каналов связи.</p>
       </div>
-      <div class="lead-thanks__notice" role="note">
-        Live lead routing remains disabled: реальные Telegram, email, CRM или webhook-направления подключаются только после отдельного approval.
-      </div>
-      <div class="lead-thanks__actions">
-        <a class="lead-thanks__button lead-thanks__button--primary" href={`/robots/${robot}/`}>Вернуться к роботу</a>
-        <a class="lead-thanks__button" href="/contacts">Посмотреть контакты</a>
-        <a class="lead-thanks__button" href="/">На главную</a>
-      </div>
+    </section>
+
+    <section class="lead-thanks__steps container" aria-label="Что будет дальше">
+      <article>
+        <span>01</span>
+        <h2>Сценарий</h2>
+        <p>Уточняем роль робота: встреча гостей, стенд, презентация, шоу или фотозона.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>Площадка</h2>
+        <p>Проверяем дату, город, логистику, питание, звук, безопасность и ограничения площадки.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>Смета</h2>
+        <p>Собираем финальное предложение по времени аренды, программе и составу сопровождения.</p>
+      </article>
     </section>
   </main>
 </BaseLayout>
@@ -55,113 +61,67 @@ const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
 <style>
   .lead-thanks {
     display: grid;
-    min-height: 64vh;
-    align-items: center;
-    padding-block: var(--kp-section-block);
+    gap: var(--kp-reference-small-gap-xl);
+    padding-block: 7rem 4.5rem;
+    background: var(--kp-reference-sky);
   }
 
-  .lead-thanks__card {
-    position: relative;
+  .lead-thanks__hero-card {
     display: grid;
-    gap: 1.5rem;
+    grid-template-columns: minmax(0, 1.05fr) minmax(18rem, .65fr);
+    gap: clamp(1.5rem, 4vw, 3.25rem);
+    align-items: stretch;
     overflow: hidden;
-    padding: clamp(1.5rem, 4vw, 3rem);
-    border: 0.0625rem solid color-mix(in srgb, var(--kp-blue) 16%, transparent);
-    border-radius: 2rem;
-    background:
-      radial-gradient(circle at top right, color-mix(in srgb, var(--kp-blue) 16%, transparent), transparent 34rem),
-      linear-gradient(135deg, var(--kp-white), var(--kp-sky));
-    box-shadow: 0 1.5rem 4rem color-mix(in srgb, var(--kp-blue-deep) 10%, transparent);
+    border-radius: 1.75rem;
+    background: var(--kp-reference-blue-deep);
+    color: var(--kp-reference-white);
   }
 
-  .lead-thanks__mark {
+  .lead-thanks__copy {
     display: grid;
-    width: 4rem;
-    aspect-ratio: 1;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--kp-blue);
-    color: var(--kp-white);
-    font-family: var(--kp-font-heading);
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
-  .lead-thanks__copy,
-  .lead-thanks__steps article {
-    display: grid;
-    gap: .75rem;
+    align-content: center;
+    gap: 1.25rem;
+    padding: clamp(2rem, 5vw, 5rem);
   }
 
   .lead-thanks__eyebrow,
   .lead-thanks__copy h1,
-  .lead-thanks__copy p,
+  .lead-thanks__lead,
+  .lead-thanks__signal p,
   .lead-thanks__steps h2,
   .lead-thanks__steps p {
     margin: 0;
   }
 
   .lead-thanks__eyebrow {
-    color: var(--kp-blue);
-    font-weight: var(--kp-label-weight);
-    letter-spacing: var(--kp-label-letter-spacing);
+    color: color-mix(in srgb, var(--kp-reference-white) 78%, transparent);
+    font-size: var(--kp-reference-label-size);
+    font-weight: 700;
+    letter-spacing: .1em;
     text-transform: uppercase;
   }
 
   .lead-thanks__copy h1 {
-    max-width: 52rem;
+    max-width: 40rem;
     font-family: var(--kp-font-heading);
-    font-size: clamp(2rem, 6vw, 4rem);
-    line-height: 1;
-  }
-
-  .lead-thanks__copy p,
-  .lead-thanks__steps p,
-  .lead-thanks__notice {
-    color: var(--kp-muted);
-    line-height: var(--kp-body-line-height);
-  }
-
-  .lead-thanks__steps {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .lead-thanks__steps article {
-    padding: 1.25rem;
-    border: 0.0625rem solid var(--kp-line);
-    border-radius: 1.25rem;
-    background: color-mix(in srgb, var(--kp-white) 88%, transparent);
-  }
-
-  .lead-thanks__steps span {
-    display: grid;
-    width: 2rem;
-    aspect-ratio: 1;
-    place-items: center;
-    border-radius: 50%;
-    background: color-mix(in srgb, var(--kp-blue) 12%, transparent);
-    color: var(--kp-blue-deep);
+    font-size: clamp(3rem, 7vw, var(--kp-reference-display-xl));
     font-weight: 700;
+    line-height: .96;
   }
 
-  .lead-thanks__steps h2 {
-    font-family: var(--kp-font-heading);
-    font-size: var(--kp-title-s-size);
-  }
-
-  .lead-thanks__notice {
-    padding: 1rem 1.25rem;
-    border-left: .25rem solid var(--kp-orange);
-    border-radius: .75rem;
-    background: var(--kp-white);
+  .lead-thanks__lead,
+  .lead-thanks__signal p {
+    max-width: 42rem;
+    color: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
+    font-size: 1.125rem;
+    line-height: 1.55;
   }
 
   .lead-thanks__actions {
     display: flex;
     flex-wrap: wrap;
     gap: .75rem;
+    margin-top: .5rem;
   }
 
   .lead-thanks__button {
@@ -169,28 +129,107 @@ const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
     min-height: 2.75rem;
     align-items: center;
     justify-content: center;
-    border: 0.0625rem solid var(--kp-line);
-    border-radius: 62.4375rem;
-    padding: .875rem 1.25rem;
-    color: var(--kp-blue);
+    border: .0625rem solid color-mix(in srgb, var(--kp-reference-white) 26%, transparent);
+    border-radius: var(--kp-reference-button-radius);
+    padding: .875rem 1.5rem;
+    color: var(--kp-reference-white);
     font-family: var(--kp-font-heading);
     font-weight: 700;
     text-decoration: none;
   }
 
   .lead-thanks__button--primary {
-    border-color: var(--kp-blue);
-    background: var(--kp-blue);
-    color: var(--kp-white);
+    border-color: var(--kp-reference-blue);
+    background: var(--kp-reference-blue);
+  }
+
+  .lead-thanks__signal {
+    display: grid;
+    align-content: end;
+    gap: 1rem;
+    min-height: 24rem;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    background:
+      radial-gradient(circle at 55% 15%, color-mix(in srgb, var(--kp-reference-white) 94%, transparent) 0 4rem, transparent 4.25rem),
+      linear-gradient(155deg, color-mix(in srgb, var(--kp-reference-white) 92%, transparent), color-mix(in srgb, var(--kp-reference-blue) 16%, var(--kp-reference-white)));
+    color: var(--kp-reference-ink);
+  }
+
+  .lead-thanks__mark {
+    display: grid;
+    width: 5rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+    font-family: var(--kp-font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .lead-thanks__signal p {
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-reference-title-s);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .lead-thanks__steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--kp-reference-small-gap-md);
+  }
+
+  .lead-thanks__steps article {
+    display: grid;
+    gap: .75rem;
+    padding: 1.5rem;
+    border: .0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 10%, transparent);
+    border-radius: 1.25rem;
+    background: var(--kp-reference-white);
+  }
+
+  .lead-thanks__steps span {
+    color: var(--kp-reference-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: 700;
+  }
+
+  .lead-thanks__steps h2 {
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-reference-title-s);
+  }
+
+  .lead-thanks__steps p {
+    color: var(--kp-reference-muted);
+    line-height: 1.55;
   }
 
   @media (max-width: 59.9375rem) {
+    .lead-thanks {
+      padding-block: 1.5rem 3rem;
+    }
+
+    .lead-thanks__hero-card,
     .lead-thanks__steps {
       grid-template-columns: 1fr;
+    }
+
+    .lead-thanks__signal {
+      min-height: 14rem;
+      order: -1;
     }
   }
 
   @media (max-width: 39.9375rem) {
+    .lead-thanks__copy,
+    .lead-thanks__signal,
+    .lead-thanks__steps article {
+      padding: 1.25rem;
+    }
+
     .lead-thanks__actions {
       display: grid;
     }

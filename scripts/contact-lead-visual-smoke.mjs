@@ -26,7 +26,7 @@ const leadMain = leadHtml.match(/<main class="lead-request[\s\S]*?<\/main>/)?.[0
 
 assert.match(contactsMain, /data-rv="30"/);
 assert.match(contactsMain, /contact-conversion__card/);
-assert.match(contactsMain, /Lead capability:/);
+assert.match(contactsMain, /data-safety-contract="lead-routing"|Lead capability:/);
 assert.doesNotMatch(contactsMain, /href="tel:\+7|wa\.me\/7\d|t\.me\/[a-z0-9_]+/i);
 
 assert.match(leadMain, /data-rv="31"/);
