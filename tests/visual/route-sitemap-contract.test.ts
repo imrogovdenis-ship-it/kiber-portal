@@ -37,3 +37,22 @@ test('KIBER-43 exposes route/sitemap smoke as CI gate', async () => {
   assert.equal(packageJson.scripts['test:routes'], 'node scripts/route-sitemap-smoke.mjs');
   assert.match(packageJson.scripts.ci, /test:routes/);
 });
+
+test('KIBER-40 tracks all 44 production URLs with canonical type and status', async () => {
+  const registryPath = resolve(root, 'data/seo/production-url-registry.json');
+  assert.equal(existsSync(registryPath), true, 'production URL registry is required');
+
+  const registry = JSON.parse(await readFile(registryPath, 'utf8'));
+  assert.equal(registry.issue, 'KIBER-40');
+  assert.equal(registry.expectedProductionUrlCount, 44);
+  assert.equal(registry.urls.length, 44);
+  assert.equal(new Set(registry.urls.map((item: { path: string }) => item.path)).size, 44);
+  assert.equal(registry.urls.filter((item: { status: string }) => item.status === 'deferred-content-review').length, 7);
+
+  for (const item of registry.urls as Array<{ path: string; url: string; canonical: string; pageType: string; status: string }>) {
+    assert.equal(item.url, `${registry.site}${item.path === '/' ? '' : item.path}`);
+    assert.equal(item.canonical, item.url);
+    assert.ok(item.pageType);
+    assert.ok(item.status);
+  }
+});
