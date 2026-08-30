@@ -22,7 +22,7 @@
     },
     {
       "path": "/contacts/",
-      "purpose": "placeholder contact trust page",
+      "purpose": "approved public contact trust page",
       "sitemap": true
     },
     {
@@ -49,15 +49,19 @@
       "path": "/cookie-policy/",
       "purpose": "live-site sourced cookie document",
       "sitemap": false
+    },
+    {
+      "path": "/terms/",
+      "purpose": "live-site sourced user agreement",
+      "sitemap": false
     }
   ],
   "productionPermission": false,
   "goNoGoStatus": "blocked_until_owner_decisions",
   "productionBlockers": [
-    "final visual approval for pending visual PRs",
-    "real public contact channels",
     "live lead routing destinations and backend",
     "analytics provider decision and IDs",
+    "final business/legal launch confirmation",
     "explicit production deploy permission"
   ],
   "requiredLegalRoutes": [
@@ -73,6 +77,13 @@
       "approvedBy": "Александр Маркин",
       "approvedAt": "2026-08-29T00:55:09Z",
       "evidence": "All 24 full robot media cards approved in Telegram after first five reviewed and remaining accepted by same validated principle."
+    },
+    {
+      "id": "public-contacts",
+      "status": "approved_by_owner_for_preview_pr",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-30T02:56:33Z",
+      "evidence": "Owner approved phone, email, Telegram/WhatsApp, Москва, legal name, requisites and address for preview/PR publication."
     }
   ]
 }

@@ -1,13 +1,13 @@
 # Production go/no-go пакет КИБЕР ПОРТАЛА
 
-Дата фиксации: `2026-08-28T21:22:42Z`  
+Дата фиксации: `2026-08-30T02:56:33Z`  
 Репозиторий: `imrogovdenis-ship-it/kiber-portal`  
 Рабочая база: `codex/kiber-15-controlled-rebuild`  
-HEAD базы: `5698898` — `feat: add fourth legal document`
+HEAD базы до текущего PR: `e334c72`
 
 ## Решение: NO-GO
 
-Сайт уже близок к launch-readiness на уровне структуры, маршрутов, CI и preview-safe визуального слоя, но **production запуск пока нельзя делать**.
+Сайт стал ближе к launch-readiness: media rights утверждены, visual pass 3B смержен, публичные контакты и реквизиты владелец разрешил заменить в preview/PR. Но **production запуск пока нельзя делать**.
 
 Причина: остаются human/business/legal/routing решения, которые нельзя принимать автоматически.
 
@@ -16,22 +16,22 @@ HEAD базы: `5698898` — `feat: add fourth legal document`
 - production deploy;
 - DNS cutover;
 - изменение production secrets;
-- подключение real lead routing;
-- подключение analytics provider IDs/cookies;
-- публикация неподтверждённых media assets как production-approved.
+- подключение real lead routing / CRM / bot / email delivery;
+- подключение analytics provider IDs/cookies.
 
 ## Что уже готово
 
 | Область | Статус | Evidence |
 |---|---:|---|
-| Controlled rebuild base | готово к review | `codex/kiber-15-controlled-rebuild` at `5698898` |
+| Controlled rebuild base | готово к review | `codex/kiber-15-controlled-rebuild` |
 | Robot pages | структурно готово | 24 robot routes проходят `robotpage`, `content-acceptance`, `readiness` gates |
 | Legal static pages | есть 4/4, нужна финальная business/legal проверка | `/privacy-policy/`, `/consent/`, `/cookie-policy/`, `/terms/` |
-| Contacts/lead visual pass | визуально утверждено и смержено | PR #40, approval: «PR #40 визуально утверждаю, можно мержить» |
+| Contacts/lead visual pass | визуально утверждено и смержено | PR #56, owner approval: «Утверждаю» + «Мержи PR #56» |
 | Lead capability | безопасно подготовлено | routing disabled, destinations = `[]` |
 | Media rights registry | утверждено owner review | 24 robot media records, productionApproved = `24`; полные карточки 24 роботов утверждены Александром 2026-08-29 |
-| Content package workflow | подготовлено для review | 4 секции пакета, production publish gated |
-| CI | зелёный | `npm run ci` проходил перед merge PR #40; GitHub `validate` зелёный |
+| Public contacts/requisites | утверждено для preview/PR | phone/email/Telegram/WhatsApp/Москва/ИП/ИНН/ОГРНИП/address от owner input 2026-08-30 |
+| Content package workflow | подготовлено для review | production publish remains gated |
+| CI | проверяется PR-ом | local smoke gates passed after contact update |
 
 ## Readiness crawl
 
@@ -57,81 +57,53 @@ HEAD базы: `5698898` — `feat: add fourth legal document`
 
 ## Блокеры до production
 
-### 1. Реальные публичные контакты
-
-**Статус:** blocking  
-**Сейчас:** contacts are `placeholder-only`  
-**Нужно решить:** запускать с placeholder-контактами нельзя без отдельного разрешения. Нужно утвердить телефон, Telegram, WhatsApp, email и, если нужно, реквизиты/адрес.
-
-### 2. Live lead routing
+### 1. Live lead routing
 
 **Статус:** blocking  
 **Сейчас:** routing disabled, destinations = `[]`  
 **Нужно решить:** куда реально отправляются заявки, какой fallback, кто владелец канала, какие секреты используются.
 
-### 3. Media rights для production assets — resolved
-
-**Статус:** approved_by_owner_for_production_media_use  
-**Сейчас:** 24 robot media records approved; full 24 robot card package approved by Александр 2026-08-29.  
-**Граница:** это не даёт production deploy/DNS/secrets/live routing permission.
-
-### 4. Analytics provider и cookies
+### 2. Analytics provider и cookies
 
 **Статус:** blocking  
 **Сейчас:** есть provider-neutral analytics contract, но реальные IDs/cookies disabled  
 **Нужно решить:** какой provider, какие IDs, какая consent/cookie policy, когда включать.
 
-### 5. Финальный business/legal launch package
+### 3. Финальный business/legal launch package
 
 **Статус:** blocking  
 **Сейчас:** content package workflow остаётся human-gated  
 **Нужно решить:** подтвердить, что legal docs, prices, disclaimers, contacts и launch copy можно публиковать вместе.
 
-### 6. Явное production permission
+### 4. Явное production permission
 
 **Статус:** blocking  
 **Сейчас:** production deploy permission = `false`  
 **Нужно решить:** после закрытия предыдущих пунктов дать отдельную команду на production deploy/DNS/secrets.
 
-## Открытые PR, которые надо учесть
+## Закрытые решения
 
-| PR | Статус | CI | Mergeability на момент фиксации | Что делать |
-|---:|---|---|---|---|
-| #43 — production approval gates registry | open | success | conflicting | Обновить от базы или закрыть/заменить этим go/no-go пакетом, если он перекрывает смысл #43 |
-| #44 — critical route crawl | open | success | mergeable | Можно рассмотреть merge как усиление readiness crawl |
-| #45 — pricing disclaimer safety | open | success | mergeable | Можно рассмотреть merge как safety-защиту цен/дисклеймеров |
+| Решение | Evidence |
+|---|---|
+| Media rights для production assets | Owner approval 2026-08-29; `data/review/media-rights-robot-cards.json` |
+| Visual pass 3B | PR #56 merged after owner approval |
+| Реальные публичные контакты и реквизиты | Owner input 2026-08-30; `src/config/site.ts`, footer, contacts page, legal data |
 
 ## Чеклист решений для Александра/Дениса
 
 Перед production нужно ответить:
 
-1. Какие реальные публичные контакты публикуем?
-2. Куда идут заявки: Telegram, email, CRM, другое?
-3. Что делать, если primary lead destination недоступен?
-4. Подтверждены ли все 4 legal docs (`/privacy-policy/`, `/consent/`, `/cookie-policy/`, `/terms/`) и публичные disclaimers?
-5. Какую аналитику включаем и какие cookies допустимы?
-6. После закрытия всего выше — есть ли явное разрешение на production deploy/DNS/secrets?
+1. Куда идут заявки: Telegram, email, CRM, другое?
+2. Что делать, если primary lead destination недоступен?
+3. Подтверждены ли все 4 legal docs и публичные disclaimers?
+4. Какую аналитику включаем и какие cookies допустимы?
+5. После закрытия всего выше — есть ли явное разрешение на production deploy/DNS/secrets?
 
 ## Что можно делать дальше безопасно
 
 Без production side effects можно продолжать:
 
-1. Сделать **media rights review table** для 24 robot assets.
-2. Подготовить **public contacts config scaffold** без реальных контактов/destinations.
-3. Обновить/смержить безопасные PR #44 и #45 после проверки конфликтов.
-4. Подготовить **visual pass 3** для `/lead/thanks/`, категорий и footer.
-5. Подготовить production runbook, но не выполнять deploy.
-
-## Итог
-
-**Технический статус:** preview/controlled rebuild сильно продвинут, CI покрытие хорошее.  
-**Production статус:** **NO-GO** до закрытия 5 блокеров; legal set теперь 4/4, но финальная business/legal проверка всё ещё нужна.  
-**Следующий лучший шаг:** media rights review package или contacts/lead routing decision package.
-
-## Media approval resolved 2026-08-29
-
-- Approved by: Александр Маркин
-- Approved at: `2026-08-29T00:55:09Z`
-- Evidence: `data/review/media-rights-robot-cards.json`, `docs/review/media-rights/robot-cards/README.md`
-- Scope: all 24 full robot media cards.
-- Still blocked separately: real public contacts, live lead routing, analytics provider/IDs/cookies, final business/legal launch confirmation, explicit production deploy/DNS/secrets permission.
+1. Подготовить lead routing design без секретов и без отправки реальных заявок.
+2. Подготовить analytics/cookie decision pack без включения provider IDs.
+3. Собрать финальный business/legal launch approval package.
+4. Проверить redirects/sitemap/404/legal links в preview build.

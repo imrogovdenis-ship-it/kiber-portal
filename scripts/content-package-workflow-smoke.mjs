@@ -26,10 +26,10 @@ const warnings = [];
 
 if (workflow.schemaVersion !== 1) failures.push('schemaVersion must be 1');
 if (workflow.policy?.productionPublishRequiresHumanApproval !== true) failures.push('productionPublishRequiresHumanApproval must remain true');
-if (workflow.policy?.productionContacts !== 'placeholder-only') failures.push('productionContacts must remain placeholder-only');
+if (workflow.policy?.productionContacts !== 'approved-public-defaults') failures.push('productionContacts must remain approved public defaults');
 if (workflow.policy?.liveLeadDestinations !== 'disabled') failures.push('liveLeadDestinations must remain disabled');
 if (workflow.policy?.analyticsProviderIds !== 'disabled') failures.push('analyticsProviderIds must remain disabled');
-if (workflow.summary?.finalApproved !== 1) failures.push('workflow should record the one approved media-rights section');
+if (workflow.summary?.finalApproved !== 2) failures.push('workflow should record approved media-rights and public-contacts sections');
 if (workflow.summary?.productionBlockedUntilHumanApproval !== true) failures.push('productionBlockedUntilHumanApproval must be true');
 
 const sourcePaths = new Set((workflow.sources || []).map((source) => source.path));
@@ -56,6 +56,10 @@ for (const section of workflow.packageSections || []) {
     if (section.status !== 'approved_by_owner_for_production_media_use') failures.push(`${label}: media rights section should be owner-approved`);
     if (section.productionApproved !== true) failures.push(`${label}: media rights productionApproved should be true`);
     if (!section.approvedAt) failures.push(`${label}: approval timestamp required`);
+  } else if (section.id === 'public-contacts') {
+    if (section.status !== 'approved_by_owner_for_preview_pr') failures.push(`${label}: public contacts section should be owner-approved`);
+    if (section.productionApproved !== true) failures.push(`${label}: public contacts productionApproved should be true`);
+    if (!section.approvedAt) failures.push(`${label}: public contacts approval timestamp required`);
   } else {
     if (section.status !== 'ready_for_human_review') failures.push(`${label}: status must be ready_for_human_review`);
     if (section.productionApproved !== false) failures.push(`${label}: productionApproved must be false`);

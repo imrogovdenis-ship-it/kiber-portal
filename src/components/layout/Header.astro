@@ -10,7 +10,7 @@ const defaultLinks = [
   { href: '/news', label: 'Новости' },
   { href: '/contacts', label: 'Контакты' },
 ];
-const { logo_label = 'КИБЕР ПОРТАЛ', nav: links = defaultLinks, phone = siteConfig.phone, cta = { href: '/contacts', label: 'Написать нам' } } = Astro.props;
+const { logo_label = 'КИБЕР ПОРТАЛ', nav: links = defaultLinks, phone = siteConfig.phone, cta = { href: siteConfig.telegram, label: 'Написать нам' } } = Astro.props;
 const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
 ---
 

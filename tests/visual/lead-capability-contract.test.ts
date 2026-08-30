@@ -15,7 +15,7 @@ test('KIBER lead capability contract keeps routing disabled and destination-free
   assert.equal(contract.routing.mode, 'capability-only');
   assert.equal(contract.routing.enabled, false);
   assert.deepEqual(contract.routing.destinations, []);
-  assert.equal(contract.constraints.productionContacts, 'placeholder-only');
+  assert.equal(contract.constraints.productionContacts, 'approved-public-defaults');
   assert.equal(contract.constraints.liveLeadRouting, 'disabled-until-owner-approval');
   assert.equal(contract.constraints.analyticsProviderIds, 'disabled');
   assert.ok(contract.approvalGates.includes('owner approves live lead destinations'));

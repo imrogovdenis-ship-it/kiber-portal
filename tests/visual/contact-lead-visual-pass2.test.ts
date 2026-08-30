@@ -26,9 +26,9 @@ test('contacts page renders reference-style conversion cards without live destin
   assert.match(contacts, /data-rv="30"/);
   assert.match(contacts, /class="contact-conversion/);
   assert.match(contacts, /class="contact-conversion__card/);
-  assert.match(contacts, /Каналы связи/);
+  assert.match(contacts, /Написать в Telegram|Написать в WhatsApp/);
   assert.match(text('data/lead/capability-contract.json'), /\"enabled\": false/);
-  assert.doesNotMatch(contacts, /tel:\+7|wa\.me\/7\d|t\.me\/[a-z0-9_]+/i);
+  assert.match(contacts, /siteConfig\.telegram|siteConfig\.whatsapp/);
 });
 
 test('lead request page uses the pass-2 panel layout and capability contract marker', () => {
