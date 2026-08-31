@@ -1,0 +1,226 @@
+{
+  "issue": "KIBER-66",
+  "generatedAt": "2026-08-31T06:42:01.763481+00:00",
+  "container": "alex-kiber-staging",
+  "url": "https://alex-kiber-staging.38.180.37.42.sslip.io",
+  "initialImage": "alex-kiber-staging:sha-27f5e21",
+  "rollbackImage": "alex-kiber-staging:sha-d5e2ddc",
+  "currentImage": "alex-kiber-staging:sha-27f5e21",
+  "stages": [
+    {
+      "action": "rollback_to_previous",
+      "timing": {
+        "targetImage": "alex-kiber-staging:sha-d5e2ddc",
+        "healthyBeforeSwapSeconds": 6.26,
+        "swapAndFinalHealthySeconds": 0.76
+      },
+      "verification": {
+        "stage": "rollback",
+        "expectedImage": "alex-kiber-staging:sha-d5e2ddc",
+        "expectedCommit": "d5e2ddc13359236bcded9b5878082e7950496950",
+        "checks": [
+          {
+            "name": "image",
+            "passed": true,
+            "detail": "alex-kiber-staging:sha-d5e2ddc"
+          },
+          {
+            "name": "commit label",
+            "passed": true,
+            "detail": "d5e2ddc13359236bcded9b5878082e7950496950"
+          },
+          {
+            "name": "health",
+            "passed": true,
+            "detail": "healthy"
+          },
+          {
+            "name": "no host ports",
+            "passed": true,
+            "detail": "{\"80/tcp\": null, \"8080/tcp\": null}"
+          },
+          {
+            "name": "unauth 401",
+            "passed": true,
+            "detail": "HTTP/1.1 401 Unauthorized"
+          },
+          {
+            "name": "www-authenticate",
+            "passed": true,
+            "detail": "present"
+          },
+          {
+            "name": "healthz 200",
+            "passed": true,
+            "detail": "HTTP/1.1 200 OK"
+          },
+          {
+            "name": "home 200",
+            "passed": true,
+            "detail": "headers"
+          },
+          {
+            "name": "noindex header",
+            "passed": true,
+            "detail": "present"
+          },
+          {
+            "name": "marker present",
+            "passed": true,
+            "detail": "КИБЕР ПОРТАЛ"
+          },
+          {
+            "name": "analytics absent",
+            "passed": true,
+            "detail": "absent"
+          }
+        ],
+        "status": "passed"
+      }
+    },
+    {
+      "action": "restore_current",
+      "timing": {
+        "targetImage": "alex-kiber-staging:sha-27f5e21",
+        "healthyBeforeSwapSeconds": 6.2,
+        "swapAndFinalHealthySeconds": 1.05
+      },
+      "verification": {
+        "stage": "restore",
+        "expectedImage": "alex-kiber-staging:sha-27f5e21",
+        "expectedCommit": "27f5e214d43dfe62c9cec0109190dbb088d7d4e9",
+        "checks": [
+          {
+            "name": "image",
+            "passed": true,
+            "detail": "alex-kiber-staging:sha-27f5e21"
+          },
+          {
+            "name": "commit label",
+            "passed": true,
+            "detail": "27f5e214d43dfe62c9cec0109190dbb088d7d4e9"
+          },
+          {
+            "name": "health",
+            "passed": true,
+            "detail": "healthy"
+          },
+          {
+            "name": "no host ports",
+            "passed": true,
+            "detail": "{\"80/tcp\": null, \"8080/tcp\": null}"
+          },
+          {
+            "name": "unauth 401",
+            "passed": true,
+            "detail": "HTTP/1.1 401 Unauthorized"
+          },
+          {
+            "name": "www-authenticate",
+            "passed": true,
+            "detail": "present"
+          },
+          {
+            "name": "healthz 200",
+            "passed": true,
+            "detail": "HTTP/1.1 200 OK"
+          },
+          {
+            "name": "home 200",
+            "passed": false,
+            "detail": "headers"
+          },
+          {
+            "name": "noindex header",
+            "passed": true,
+            "detail": "present"
+          },
+          {
+            "name": "marker present",
+            "passed": false,
+            "detail": "Тематические подборки роботов для аренды"
+          },
+          {
+            "name": "analytics absent",
+            "passed": true,
+            "detail": "absent"
+          }
+        ],
+        "status": "failed"
+      }
+    }
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "leadRoutingChanged": false,
+    "sharedContainersTouched": false
+  },
+  "totalRehearsalSeconds": 49.03,
+  "restoreFromRollbackSeconds": 38.98,
+  "finalImage": "alex-kiber-staging:sha-27f5e21",
+  "finalCommit": "27f5e214d43dfe62c9cec0109190dbb088d7d4e9",
+  "finalHealth": "healthy",
+  "status": "passed",
+  "finalDelayedVerification": {
+    "status": "passed",
+    "checks": [
+      {
+        "name": "unauth 401",
+        "passed": true
+      },
+      {
+        "name": "www-authenticate",
+        "passed": true
+      },
+      {
+        "name": "healthz 200",
+        "passed": true
+      },
+      {
+        "name": "home 200",
+        "passed": true
+      },
+      {
+        "name": "noindex header",
+        "passed": true
+      },
+      {
+        "name": "Кибер Гоша",
+        "passed": true
+      },
+      {
+        "name": "Тематические подборки роботов для аренды",
+        "passed": true
+      },
+      {
+        "name": "Популярные модели для мероприятий",
+        "passed": true
+      },
+      {
+        "name": "Тематические статьи по аренде роботов на мероприятия",
+        "passed": true
+      },
+      {
+        "name": "Вопросы и ответы по аренде роботов",
+        "passed": true
+      },
+      {
+        "name": "Остались вопросы?",
+        "passed": true
+      },
+      {
+        "name": "analytics absent",
+        "passed": true
+      },
+      {
+        "name": "final current healthy no host ports",
+        "passed": true
+      }
+    ],
+    "note": "Final delayed verification after Traefik/container swap propagation; final staging is restored to the current homepage parity image."
+  },
+  "restore_current_immediateNote": "Immediate restore verification saw a transient stale/empty home response, but final delayed verification passed with the current image and expected homepage markers."
+}
