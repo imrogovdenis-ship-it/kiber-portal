@@ -16,7 +16,7 @@ test('KIBER content package workflow exists and keeps launch content human-gated
 
   const workflow = await readJson(workflowPath);
   assert.equal(workflow.schemaVersion, 1);
-  assert.equal(workflow.issue, 'KIBER-content-package-workflow');
+  assert.equal(workflow.issue, 'KIBER-78');
   assert.equal(workflow.policy.productionContacts, 'approved-public-defaults');
   assert.equal(workflow.policy.liveLeadDestinations, 'disabled');
   assert.equal(workflow.policy.productionPublishRequiresHumanApproval, true);
@@ -30,6 +30,7 @@ test('KIBER content package workflow exists and keeps launch content human-gated
       'data/review/media-rights-registry.json',
       'data/lead/capability-contract.json',
       'data/legal/legal-documents.json',
+      'src/config/site.ts',
     ],
   );
 

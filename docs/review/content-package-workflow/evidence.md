@@ -2,10 +2,10 @@
 
 ## Scope
 
-- Branch: `hermes/content-package-workflow-20260828`
-- Base: `codex/kiber-15-controlled-rebuild` at `22ce2a6a7f19b196304d6166e09259e531eb37ac`
-- Safe autonomous task selected while Александр is offline: content package schema/workflow.
-- Production-impacting actions excluded: no deploy, no DNS changes, no production secrets, no analytics provider IDs/cookies, no live lead routing, no real public contacts.
+- Branch: `codex/kiber-15-controlled-rebuild`
+- Current PR branch evidence refreshed at `ca265146d7228dd40489646d12cdc19d518946f6` before KIBER-78 closure pass
+- Linear issue: KIBER-78 / KP-122. Safe autonomous task selected while Александр reviews the homepage later: content package schema/workflow.
+- Production-impacting actions excluded: no deploy, no DNS changes, no production secrets, no analytics provider IDs/cookies, no live lead routing. Owner-approved public contacts/requisites are represented as a gated package section, but no live destination was enabled.
 
 ## What this adds
 
@@ -40,14 +40,14 @@ node --import tsx --test tests/visual/content-package-workflow-contract.test.ts 
 
 ```json
 {
-  "issue": "KIBER-content-package-workflow",
-  "packageSections": 4,
+  "issue": "KIBER-78",
+  "packageSections": 5,
   "robotPages": 24,
   "launchPages": 7,
-  "legalDocuments": 3,
-  "finalApproved": 0,
+  "legalDocuments": 4,
+  "finalApproved": 2,
   "leadRoutingEnabled": false,
-  "productionApprovedMedia": 0,
+  "productionApprovedMedia": 24,
   "status": "passed",
   "failures": [],
   "warnings": []
@@ -56,4 +56,4 @@ node --import tsx --test tests/visual/content-package-workflow-contract.test.ts 
 
 ## Remaining blockers
 
-This pass intentionally does not approve or publish the content package. Human approval is still required for final business/legal/media acceptance, real public contacts, live lead destinations, and any production deployment.
+This pass intentionally does not approve or publish the whole content package. Remaining human approvals are still required for final business/legal launch-copy acceptance, live lead destinations, analytics/cookies, and any production deployment. Already-approved package sections recorded here are media rights and public contacts/requisites; those approvals do not imply production deploy approval.

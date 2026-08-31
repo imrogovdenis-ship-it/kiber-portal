@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "issue": "KIBER-content-package-workflow",
+  "issue": "KIBER-78",
   "description": "Destination-free content package workflow for assembling launch copy/legal/media/lead evidence while Александр is offline. It prepares review artifacts only and does not approve production publishing.",
   "policy": {
     "productionContacts": "approved-public-defaults",
@@ -30,6 +30,10 @@
     {
       "path": "data/legal/legal-documents.json",
       "role": "legal document source material from live kiber-portal.ru decision"
+    },
+    {
+      "path": "src/config/site.ts",
+      "role": "owner-approved public contacts and requisites defaults"
     }
   ],
   "summary": {

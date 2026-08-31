@@ -1,6 +1,6 @@
 {
-  "issue": "KIBER-content-package-workflow",
-  "generatedAt": "2026-08-30T18:13:55.007Z",
+  "issue": "KIBER-78",
+  "generatedAt": "2026-08-31T10:09:15.267Z",
   "packageSections": 5,
   "robotPages": 24,
   "launchPages": 7,
@@ -10,7 +10,5 @@
   "productionApprovedMedia": 24,
   "status": "passed",
   "failures": [],
-  "warnings": [
-    "public-contacts: sourcePath is not listed in sources"
-  ]
+  "warnings": []
 }
