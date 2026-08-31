@@ -18,11 +18,11 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   </div>
   <div class="home-image-cards__grid" data-drag-slider={variant === 'overlay' ? 'true' : undefined} aria-label={variant === 'overlay' ? `${title}: горизонтальный слайдер` : undefined}>
     {cards.map((card) => (
-      <a class="home-image-cards__card" href={card.href} aria-label={`${card.cta ?? 'Подробнее'}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`}>
+      <a class="home-image-cards__card" href={card.href} aria-label={`${variant === 'article' ? 'Читать' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
         <span class="home-image-cards__body">
           <strong>{card.title}</strong>
           <span>{card.description}</span>
-          {variant !== 'article' && <em>{card.cta ?? 'Читать'}</em>}
+          <em>{variant === 'article' ? 'Читать' : (card.cta ?? 'Подробнее')}</em>
         </span>
       </a>
     ))}
@@ -37,7 +37,18 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
     let scrollLeft = 0;
     let dragged = false;
 
+    slider.querySelectorAll('a, img').forEach((item) => item.setAttribute('draggable', 'false'));
+
+    const stopDrag = (event: PointerEvent) => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('is-dragging');
+      if (slider.hasPointerCapture(event.pointerId)) slider.releasePointerCapture(event.pointerId);
+      window.setTimeout(() => { dragged = false; }, 0);
+    };
+
     slider.addEventListener('pointerdown', (event) => {
+      if (event.button !== 0) return;
       isDown = true;
       dragged = false;
       startX = event.clientX;
@@ -49,19 +60,16 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
     slider.addEventListener('pointermove', (event) => {
       if (!isDown) return;
       const walk = event.clientX - startX;
-      if (Math.abs(walk) > 4) dragged = true;
+      if (Math.abs(walk) > 4) {
+        dragged = true;
+        event.preventDefault();
+      }
       slider.scrollLeft = scrollLeft - walk;
-    });
-
-    const stopDrag = (event: PointerEvent) => {
-      if (!isDown) return;
-      isDown = false;
-      slider.classList.remove('is-dragging');
-      if (slider.hasPointerCapture(event.pointerId)) slider.releasePointerCapture(event.pointerId);
-    };
+    }, { passive: false });
 
     slider.addEventListener('pointerup', stopDrag);
     slider.addEventListener('pointercancel', stopDrag);
+    slider.addEventListener('pointerleave', stopDrag);
     slider.addEventListener('click', (event) => {
       if (dragged) {
         event.preventDefault();
@@ -87,14 +95,15 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   .home-image-cards__body strong { font-family: var(--kp-font-heading); font-size: clamp(1.15rem, 1.8vw, 1.55rem); line-height: 1.05; }
   .home-image-cards__body span { color: color-mix(in srgb, var(--kp-white) 86%, transparent); font-size: .875rem; line-height: 1.35; }
   .home-image-cards__body em { width: fit-content; border-radius: var(--kp-reference-button-radius); padding: .82rem 1.35rem; background: var(--kp-white); color: var(--kp-blue); font-family: var(--kp-font-heading); font-style: normal; font-weight: 700; font-size: .92rem; line-height: 1; }
-  .home-image-cards--overlay .home-image-cards__grid { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; cursor: grab; user-select: none; scrollbar-width: none; padding-bottom: 0; }
+  .home-image-cards--overlay .home-image-cards__grid { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; cursor: grab; user-select: none; touch-action: pan-y; scrollbar-width: none; padding-bottom: 0; }
   .home-image-cards--overlay .home-image-cards__grid::-webkit-scrollbar { display: none; }
   .home-image-cards--overlay .home-image-cards__grid.is-dragging { cursor: grabbing; scroll-snap-type: none; }
-  .home-image-cards--overlay .home-image-cards__card { flex: 0 0 23rem; width: 23rem; height: 23rem; min-height: 23rem; scroll-snap-align: start; }
+  .home-image-cards--overlay .home-image-cards__card { flex: 0 0 23rem; width: 23rem; height: 23rem; min-height: 23rem; scroll-snap-align: start; -webkit-user-drag: none; }
   .home-image-cards--article .home-image-cards__card { min-height: auto; grid-template-rows: minmax(24rem, auto) auto; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
   .home-image-cards--article .home-image-cards__card::before { position: relative; z-index: auto; height: auto; aspect-ratio: 16 / 9; }
   .home-image-cards--article .home-image-cards__card::after { display: none; }
   .home-image-cards--article .home-image-cards__body { align-content: end; min-height: 10rem; padding-top: 1.35rem; }
+  .home-image-cards--article .home-image-cards__body em { margin-top: .35rem; background: var(--kp-blue); color: var(--kp-white); }
   .home-image-cards--article .home-image-cards__body span { color: var(--kp-muted); }
   .home-image-cards__card:focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .1875rem; }
   @media (hover: hover) { .home-image-cards__card:hover::before { transform: scale(1.025); } }

@@ -108,10 +108,11 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(imageCards, /scrollLeft = scrollLeft - walk/);
   assert.match(imageCards, /scrollbar-width:\s*none/);
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
-  assert.match(imageCards, /variant !== 'article' && <em>/);
+  assert.match(imageCards, /<em>\{variant === 'article' \? 'Читать'/);
   assert.match(imageCards, /aspect-ratio:\s*16 \/ 9/);
   assert.doesNotMatch(faq, /open=\{index === 0\}/);
   assert.doesNotMatch(faq, /grid-template-columns:\s*repeat\(2/);
+  assert.match(faq, /margin-left:\s*var\(--kp-home-large-offset/);
   assert.match(faq, /background:\s*transparent/);
   assert.match(faq, /summary::-webkit-details-marker\s*\{\s*display:\s*none/);
   assert.match(faq, /summary::before, \.home-faq__item summary::after/);
