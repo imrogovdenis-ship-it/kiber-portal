@@ -1,0 +1,36 @@
+{
+  "issue": "KIBER-12",
+  "status": "passed",
+  "generatedAt": "2026-08-31T10:28:00.622Z",
+  "diskReserve": {
+    "measuredAt": "2026-08-31T10:16:00Z",
+    "path": "/home/alex/projects/kiber-portal-pr8",
+    "filesystem": "/dev/sda1",
+    "sizeGiB": 59,
+    "usedGiB": 47,
+    "availableGiB": 9.8,
+    "usePercent": 83,
+    "minimumRequiredAvailableGiB": 5,
+    "status": "sufficient_for_current_staging_and_ci_work",
+    "cleanupPerformed": false,
+    "cleanupBoundary": "No broad Docker/server cleanup was performed because shared server cleanup can affect non-Alex services and requires separate operator approval."
+  },
+  "selectedPolicy": "git_lfs_for_review_originals",
+  "gitLfsAvailable": true,
+  "gitLfsTrackedFiles": 510,
+  "trackedReviewOriginals": 510,
+  "lfsTrackedReviewOriginals": 510,
+  "reviewOriginalsNotInLfs": 0,
+  "runtimeImages": 39,
+  "runtimeImageBytes": 834938,
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "productionSecretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "sharedDockerCleanupPerformed": false
+  },
+  "failures": [],
+  "warnings": []
+}
