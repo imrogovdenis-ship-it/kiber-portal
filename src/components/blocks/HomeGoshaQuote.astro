@@ -2,6 +2,7 @@
 import type { HomeGoshaData } from '../../data/home-live';
 const { title, subtitle, text, image } = Astro.props as HomeGoshaData;
 const paragraphs = text.split('\n\n');
+const [leadQuote, ...bodyParagraphs] = paragraphs;
 ---
 <section class="home-gosha" id="kiber-gosha" data-home-block="kiber-gosha" aria-labelledby="home-gosha-title">
   <div class="home-gosha__avatar">
@@ -11,19 +12,28 @@ const paragraphs = text.split('\n\n');
     <p class="home-gosha__eyebrow">{subtitle}</p>
     <h2 id="home-gosha-title">{title}</h2>
     <div class="home-gosha__text">
-      {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      <p class="home-gosha__quote">{leadQuote}</p>
+      {bodyParagraphs.map((paragraph) => <p>{paragraph}</p>)}
     </div>
+    <footer class="home-gosha__signature" aria-label="Автор цитаты">
+      <strong>{title}</strong>
+      <span>{subtitle}</span>
+    </footer>
   </div>
 </section>
 
 <style>
-  .home-gosha { display: grid; gap: clamp(1rem, 2.2vw, 2rem); align-items: center; padding: clamp(1.25rem, 3vw, 2.5rem); border-radius: 1.75rem; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 1rem 2.5rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
-  .home-gosha__avatar { display: grid; justify-items: start; }
-  .home-gosha__avatar img { width: clamp(5rem, 11vw, 7.5rem); height: clamp(5rem, 11vw, 7.5rem); object-fit: contain; }
-  .home-gosha__copy { display: grid; gap: .65rem; }
-  .home-gosha__eyebrow, .home-gosha h2, .home-gosha__text p { margin: 0; }
-  .home-gosha__eyebrow { color: var(--kp-blue); font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-  .home-gosha h2 { font-family: var(--kp-font-heading); font-size: clamp(1.65rem, 3vw, 2.75rem); line-height: 1.05; }
-  .home-gosha__text { display: grid; gap: .7rem; color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .home-gosha { display: grid; gap: clamp(1rem, 2.2vw, 2rem); align-items: start; padding: clamp(1.25rem, 3vw, 2.5rem) 0; color: var(--kp-ink); }
+  .home-gosha__avatar { display: grid; justify-items: end; }
+  .home-gosha__avatar img { width: clamp(5.5rem, 10vw, 7.5rem); height: clamp(5.5rem, 10vw, 7.5rem); object-fit: contain; }
+  .home-gosha__copy { display: grid; gap: .55rem; max-width: 56rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .home-gosha__eyebrow, .home-gosha h2, .home-gosha__text p, .home-gosha__signature strong, .home-gosha__signature span { margin: 0; }
+  .home-gosha__eyebrow { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .home-gosha h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); }
+  .home-gosha__text { display: grid; gap: 1.25rem; color: var(--kp-ink); font-size: clamp(1.05rem, 1.6vw, 1.35rem); line-height: 1.55; }
+  .home-gosha__quote { font-weight: 700; }
+  .home-gosha__signature { display: grid; gap: .2rem; margin-top: 1.35rem; color: color-mix(in srgb, var(--kp-muted) 84%, var(--kp-ink)); font-family: var(--kp-font-heading); font-size: 1rem; line-height: 1.2; }
+  .home-gosha__signature span { color: color-mix(in srgb, var(--kp-muted) 78%, var(--kp-white)); font-weight: 700; }
   @media (min-width: 48rem) { .home-gosha { grid-template-columns: minmax(7rem, .18fr) minmax(0, 1fr); } }
+  @media (max-width: 39.9375rem) { .home-gosha__copy { margin-left: 0; } .home-gosha__avatar { justify-items: start; } }
 </style>

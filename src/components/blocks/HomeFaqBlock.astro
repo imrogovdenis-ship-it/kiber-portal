@@ -8,8 +8,8 @@ const { title, items } = Astro.props as HomeFaqData;
     <h2 id="home-faq-title">{title}</h2>
   </div>
   <div class="home-faq__list">
-    {items.map((item, index) => (
-      <details class="home-faq__item" open={index === 0}>
+    {items.map((item) => (
+      <details class="home-faq__item">
         <summary>{item.question}</summary>
         <p>{item.answer}</p>
       </details>
@@ -18,14 +18,14 @@ const { title, items } = Astro.props as HomeFaqData;
 </section>
 <style>
   .home-faq { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
-  .home-faq__head { display: grid; gap: .55rem; max-width: 52rem; }
+  .home-faq__head { display: grid; gap: .55rem; max-width: 52rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
   .home-faq__head p, .home-faq__head h2 { margin: 0; }
-  .home-faq__head p { color: var(--kp-blue); font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-  .home-faq__head h2 { font-family: var(--kp-font-heading); font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.04; letter-spacing: -.035em; }
+  .home-faq__head p { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .home-faq__head h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); letter-spacing: 0; }
   .home-faq__list { display: grid; gap: .9rem; }
   .home-faq__item { border: .0625rem solid color-mix(in srgb, var(--kp-line) 80%, transparent); border-radius: 1.25rem; padding: 1rem 1.1rem; background: var(--kp-white); }
   .home-faq__item summary { cursor: pointer; font-family: var(--kp-font-heading); font-weight: 700; line-height: 1.2; }
   .home-faq__item p { margin: .75rem 0 0; color: var(--kp-muted); line-height: var(--kp-body-line-height); }
   .home-faq__item summary:focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .25rem; }
-  @media (min-width: 60rem) { .home-faq__list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 39.9375rem) { .home-faq__head { margin-left: 0; } }
 </style>

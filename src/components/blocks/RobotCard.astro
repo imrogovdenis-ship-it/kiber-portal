@@ -6,9 +6,10 @@ interface Props extends RobotCardData {
   hideDisclaimer?: boolean;
   hideLink?: boolean;
   imageLoading?: 'eager' | 'lazy';
+  internalLinkId?: string;
 }
 
-const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hideLink = false, imageLoading = 'lazy', ...data } = Astro.props;
+const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hideLink = false, imageLoading = 'lazy', internalLinkId, ...data } = Astro.props;
 ---
 
 <a
@@ -24,6 +25,7 @@ const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hi
   data-analytics-placement={analytics.placement}
   data-analytics-slug={data.slug}
   data-analytics-position={analytics.position}
+  data-internal-link-id={internalLinkId}
 >
   <div class="robot-card__media">
     {image ? (

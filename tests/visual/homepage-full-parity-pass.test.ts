@@ -71,3 +71,43 @@ test('homepage exposes FAQPage JSON-LD from the same home FAQ data source', asyn
   assert.match(seo, /'@type': 'FAQPage'/);
   assert.match(seo, /'@type': 'Question'/);
 });
+
+test('homepage owner feedback pass keeps heading style consistent and removes extra popular directions block', async () => {
+  const [page, gosha, imageCards, faq, cta, data] = await Promise.all([
+    read('src/pages/index.astro'),
+    read('src/components/blocks/HomeGoshaQuote.astro'),
+    read('src/components/blocks/HomeImageCards.astro'),
+    read('src/components/blocks/HomeFaqBlock.astro'),
+    read('src/components/blocks/HomeFinalCta.astro'),
+    read('src/data/home-live.ts'),
+  ]);
+
+  assert.doesNotMatch(page, /InternalLinks/);
+  assert.doesNotMatch(page, /Популярные направления/);
+  for (const component of [gosha, imageCards, faq, cta]) {
+    assert.match(component, /font-size:\s*var\(--kp-heading-size\)/);
+  }
+  for (const component of [gosha, imageCards, faq]) {
+    assert.match(component, /margin-left:\s*var\(--kp-home-large-offset/);
+    assert.match(component, /font-size:\s*var\(--kp-label-size\)/);
+  }
+  assert.match(data, /Менеджер КИБЕР ПОРТАЛА ответит и подберет роботов по вашему бюджету и дате/);
+});
+
+test('homepage owner feedback pass matches requested cards FAQ and CTA behavior', async () => {
+  const [imageCards, faq, cta] = await Promise.all([
+    read('src/components/blocks/HomeImageCards.astro'),
+    read('src/components/blocks/HomeFaqBlock.astro'),
+    read('src/components/blocks/HomeFinalCta.astro'),
+  ]);
+
+  assert.match(imageCards, /data-drag-slider=\{variant === 'overlay' \? 'true' : undefined\}/);
+  assert.match(imageCards, /flex:\s*0 0 23rem; width:\s*23rem; height:\s*23rem; min-height:\s*23rem/);
+  assert.match(imageCards, /scrollLeft = scrollLeft - walk/);
+  assert.match(imageCards, /variant !== 'article' && <em>/);
+  assert.match(imageCards, /aspect-ratio:\s*9 \/ 16/);
+  assert.doesNotMatch(faq, /open=\{index === 0\}/);
+  assert.doesNotMatch(faq, /grid-template-columns:\s*repeat\(2/);
+  assert.match(cta, /margin-top:\s*1rem/);
+  assert.match(cta, /background:\s*transparent/);
+});

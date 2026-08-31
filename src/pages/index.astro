@@ -6,7 +6,6 @@ import HomeGoshaQuote from '../components/blocks/HomeGoshaQuote.astro';
 import HomeImageCards from '../components/blocks/HomeImageCards.astro';
 import HomeFaqBlock from '../components/blocks/HomeFaqBlock.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
-import InternalLinks from '../components/content/InternalLinks.astro';
 import { organizationJsonLd, websiteJsonLd, faqPageJsonLd } from '../lib/seo';
 import { getRobotPages } from '../lib/robot-pages';
 import { homeArticles, homeCompilations, homeFaq, homeFinalCta, homeGosha } from '../data/home-live';
@@ -78,25 +77,25 @@ const hero = {
         <p>Карточка полностью кликабельна: фото, название и описание ведут на страницу робота.</p>
       </div>
       <div class="vertical-slice__card-grid">
-        {homeRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+        {homeRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" internalLinkId={robot.slug === 'arenda-unitree-g1' ? 'approved-home-to-unitree-g1-card' : undefined} />)}
       </div>
     </section>
 
     <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...homeArticles} />
     <HomeFaqBlock {...homeFaq} />
     <HomeFinalCta {...homeFinalCta} />
-    <InternalLinks route="/" label="Популярные направления" />
   </main>
 </BaseLayout>
 
 <style>
   .vertical-slice { display: grid; gap: clamp(2rem, 4vw, 3.5rem); padding-block: clamp(0.75rem, 1.5vw, 1.5rem) clamp(1.5rem, 3vw, 3rem); }
   .vertical-slice__section { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
-  .vertical-slice__section-copy { display: grid; gap: var(--kp-card-gap); max-width: 48rem; }
+  .vertical-slice__section-copy { display: grid; gap: .55rem; max-width: 48rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
   .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
-  .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
-  .vertical-slice__section-copy h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: var(--kp-heading-line-height); }
+  .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .vertical-slice__section-copy h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); }
   .vertical-slice__section-copy p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  @media (max-width: 39.9375rem) { .vertical-slice__section-copy { margin-left: 0; } }
   .vertical-slice__card-grid { display: grid; gap: clamp(1rem, 1.8vw, 1.5rem); width: 100%; }
   @media (min-width: 60rem) {
     .vertical-slice__card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }

@@ -39,7 +39,9 @@ function image(input: { src: string; alt: string }): HomeImage {
 }
 
 function href(input: string): string {
-  return routeFallbacks[input] ?? input;
+  const resolved = routeFallbacks[input] ?? input;
+  if (resolved.startsWith('/') && !resolved.includes('#') && !resolved.includes('?') && !resolved.endsWith('/')) return `${resolved}/`;
+  return resolved;
 }
 
 function card(input: { title: string; description: string; href: string; cta?: string; image: { src: string; alt: string } }): HomeCard {
@@ -66,7 +68,7 @@ export const homeArticles: HomeCardsBlock = {
 export const homeFaq: HomeFaqData = source.faq;
 export const homeFinalCta: HomeFinalCtaData = {
   title: source.finalCta.title,
-  description: source.finalCta.description,
+  description: 'Напишите нам в любом удобном мессенджере или оставьте заявку в форме. Менеджер КИБЕР ПОРТАЛА ответит и подберет роботов по вашему бюджету и дате.',
   primaryCta: { label: source.finalCta.primaryCta.label, href: '/contacts/' },
   secondaryCta: { label: source.finalCta.secondaryCta.label, href: '/#catalog' },
   image: image(source.finalCta.image),
