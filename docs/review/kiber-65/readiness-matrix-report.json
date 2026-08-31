@@ -1,0 +1,40 @@
+{
+  "issue": "KIBER-65",
+  "status": "passed_with_production_blockers",
+  "generatedAt": "2026-08-31T11:54:50.612Z",
+  "areas": {
+    "forms": "green_preview_safe",
+    "analytics": "green_provider_neutral_deferred",
+    "robots": "green_source_policy",
+    "sitemap": "green",
+    "redirects": "green"
+  },
+  "routesChecked": 37,
+  "robotRoutesChecked": 24,
+  "sitemapUrls": 31,
+  "redirectsChecked": 2,
+  "leadRoutingEnabled": false,
+  "leadDestinations": 0,
+  "analyticsProvider": "neutral",
+  "analyticsDeferredProvider": "yandex_metrica",
+  "analyticsCounterIdConfigured": false,
+  "productionBlockers": [
+    "live lead routing destinations and backend",
+    "analytics provider decision and IDs",
+    "final business/legal launch confirmation",
+    "explicit production deploy permission"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "productionSecretsChanged": false,
+    "analyticsProviderEnabled": false,
+    "analyticsCookiesEnabled": false,
+    "liveLeadRoutingEnabled": false,
+    "realTestLeadsSubmitted": false
+  },
+  "failures": [],
+  "warnings": [
+    "Production matrix is not GO: KIBER-64/KIBER-67/KIBER-69 remain separate approval-dependent tasks."
+  ]
+}
