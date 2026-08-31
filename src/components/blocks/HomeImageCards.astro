@@ -36,44 +36,62 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
     let startX = 0;
     let scrollLeft = 0;
     let dragged = false;
-
-    slider.querySelectorAll('a, img').forEach((item) => item.setAttribute('draggable', 'false'));
-
-    const stopDrag = (event: PointerEvent) => {
-      if (!isDown) return;
-      isDown = false;
-      slider.classList.remove('is-dragging');
-      if (slider.hasPointerCapture(event.pointerId)) slider.releasePointerCapture(event.pointerId);
-      window.setTimeout(() => { dragged = false; }, 0);
-    };
-
-    slider.addEventListener('pointerdown', (event) => {
-      if (event.button !== 0) return;
-      isDown = true;
-      dragged = false;
-      startX = event.clientX;
-      scrollLeft = slider.scrollLeft;
-      slider.classList.add('is-dragging');
-      slider.setPointerCapture(event.pointerId);
+    const dragItems = slider.querySelectorAll('a, img');
+    dragItems.forEach((item) => {
+      item.setAttribute('draggable', 'false');
+      item.addEventListener('dragstart', (event) => event.preventDefault());
     });
 
-    slider.addEventListener('pointermove', (event) => {
+    const getClientX = (event: PointerEvent | MouseEvent | TouchEvent) => {
+      if ('touches' in event) return event.touches[0]?.clientX ?? startX;
+      return event.clientX;
+    };
+
+    const beginDrag = (event: PointerEvent | MouseEvent | TouchEvent) => {
+      if ('button' in event && event.button !== 0) return;
+      isDown = true;
+      dragged = false;
+      startX = getClientX(event);
+      scrollLeft = slider.scrollLeft;
+      slider.classList.add('is-dragging');
+      if ('pointerId' in event) {
+        slider.setPointerCapture(event.pointerId);
+      }
+    };
+
+    const moveDrag = (event: PointerEvent | MouseEvent | TouchEvent) => {
       if (!isDown) return;
-      const walk = event.clientX - startX;
+      const walk = getClientX(event) - startX;
       if (Math.abs(walk) > 4) {
         dragged = true;
         event.preventDefault();
       }
       slider.scrollLeft = scrollLeft - walk;
-    }, { passive: false });
+    };
 
+    const stopDrag = (event: PointerEvent | MouseEvent | TouchEvent) => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('is-dragging');
+      if ('pointerId' in event && slider.hasPointerCapture(event.pointerId)) slider.releasePointerCapture(event.pointerId);
+    };
+
+    slider.addEventListener('pointerdown', beginDrag);
+    slider.addEventListener('pointermove', moveDrag, { passive: false });
     slider.addEventListener('pointerup', stopDrag);
     slider.addEventListener('pointercancel', stopDrag);
     slider.addEventListener('pointerleave', stopDrag);
+    slider.addEventListener('mousedown', beginDrag);
+    slider.addEventListener('mousemove', moveDrag, { passive: false });
+    window.addEventListener('mouseup', stopDrag);
+    slider.addEventListener('touchstart', beginDrag, { passive: true });
+    slider.addEventListener('touchmove', moveDrag, { passive: false });
+    slider.addEventListener('touchend', stopDrag);
     slider.addEventListener('click', (event) => {
       if (dragged) {
         event.preventDefault();
         event.stopPropagation();
+        dragged = false;
       }
     }, true);
   }
@@ -88,26 +106,27 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   .home-image-cards__head span { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
   .home-image-cards__grid { display: grid; gap: clamp(.9rem, 1.6vw, 1.25rem); }
   .home-image-cards--article { margin-top: clamp(2rem, 4vw, 3.5rem); }
-  .home-image-cards__card { position: relative; display: grid; min-height: 23rem; overflow: hidden; border-radius: 1.25rem; background: var(--kp-surface); color: var(--kp-white); text-decoration: none; isolation: isolate; }
+  .home-image-cards__card { position: relative; display: grid; box-sizing: border-box; width: 100%; min-width: 0; min-height: 23rem; overflow: hidden; border-radius: 1.25rem; background: var(--kp-surface); color: var(--kp-white); text-decoration: none; isolation: isolate; }
   .home-image-cards__card::before { position: absolute; inset: 0; z-index: 0; background-image: var(--home-card-image); background-position: 58% center; background-size: cover; transition: transform .2s ease; content: ''; }
   .home-image-cards__card::after { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--kp-ink) 8%, transparent) 0%, color-mix(in srgb, var(--kp-ink) 70%, transparent) 100%); content: ''; }
-  .home-image-cards__body { position: relative; z-index: 2; display: grid; align-content: end; gap: .65rem; padding: 1.1rem; }
+  .home-image-cards__body { position: relative; z-index: 2; display: grid; box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0; align-content: end; gap: .65rem; padding: 1.1rem; }
   .home-image-cards__body strong { font-family: var(--kp-font-heading); font-size: clamp(1.15rem, 1.8vw, 1.55rem); line-height: 1.05; }
   .home-image-cards__body span { color: color-mix(in srgb, var(--kp-white) 86%, transparent); font-size: .875rem; line-height: 1.35; }
   .home-image-cards__body em { width: fit-content; border-radius: var(--kp-reference-button-radius); padding: .82rem 1.35rem; background: var(--kp-white); color: var(--kp-blue); font-family: var(--kp-font-heading); font-style: normal; font-weight: 700; font-size: .92rem; line-height: 1; }
-  .home-image-cards--overlay .home-image-cards__grid { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; cursor: grab; user-select: none; touch-action: pan-y; scrollbar-width: none; padding-bottom: 0; }
+  .home-image-cards--overlay .home-image-cards__grid { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; cursor: grab; user-select: none; touch-action: pan-y; scrollbar-width: none; padding-bottom: 0; }
   .home-image-cards--overlay .home-image-cards__grid::-webkit-scrollbar { display: none; }
   .home-image-cards--overlay .home-image-cards__grid.is-dragging { cursor: grabbing; scroll-snap-type: none; }
-  .home-image-cards--overlay .home-image-cards__card { flex: 0 0 23rem; width: 23rem; height: 23rem; min-height: 23rem; scroll-snap-align: start; -webkit-user-drag: none; }
-  .home-image-cards--article .home-image-cards__card { min-height: auto; grid-template-rows: minmax(24rem, auto) auto; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
-  .home-image-cards--article .home-image-cards__card::before { position: relative; z-index: auto; height: auto; aspect-ratio: 16 / 9; }
+  .home-image-cards--overlay .home-image-cards__card { flex: 0 0 23rem; width: 23rem; height: 23rem; min-height: 23rem; scroll-snap-align: start; -webkit-user-drag: none; touch-action: pan-y; }
+  .home-image-cards--article .home-image-cards__card { display: flex; flex-direction: column; min-height: auto; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
+  .home-image-cards--article .home-image-cards__card::before { position: relative; z-index: auto; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   .home-image-cards--article .home-image-cards__card::after { display: none; }
-  .home-image-cards--article .home-image-cards__body { align-content: end; min-height: 10rem; padding-top: 1.35rem; }
-  .home-image-cards--article .home-image-cards__body em { margin-top: .35rem; background: var(--kp-blue); color: var(--kp-white); }
-  .home-image-cards--article .home-image-cards__body span { color: var(--kp-muted); }
+  .home-image-cards--article .home-image-cards__body { align-content: start; min-width: 0; min-height: 13rem; padding-top: 1.1rem; }
+  .home-image-cards--article .home-image-cards__body em { margin-top: auto; background: color-mix(in srgb, var(--kp-blue) 10%, var(--kp-white)); color: var(--kp-blue-deep); }
+  .home-image-cards--article .home-image-cards__body span { color: var(--kp-muted); overflow-wrap: anywhere; }
+  .home-image-cards--article .home-image-cards__body strong { overflow-wrap: anywhere; }
   .home-image-cards__card:focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .1875rem; }
   @media (hover: hover) { .home-image-cards__card:hover::before { transform: scale(1.025); } }
   @media (min-width: 60rem) { .home-image-cards__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (min-width: 40rem) and (max-width: 59.9375rem) { .home-image-cards__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 39.9375rem) { .home-image-cards__head { margin-left: 0; } .home-image-cards__card { min-height: 18rem; } .home-image-cards--overlay .home-image-cards__card { flex-basis: 18rem; width: 18rem; height: 18rem; min-height: 18rem; } .home-image-cards--article .home-image-cards__card { grid-template-rows: minmax(20rem, auto) auto; } }
+  @media (max-width: 39.9375rem) { .home-image-cards__head { margin-left: 0; } .home-image-cards__card { min-height: 18rem; } .home-image-cards--overlay .home-image-cards__card { flex-basis: 18rem; width: 18rem; height: 18rem; min-height: 18rem; } .home-image-cards--article .home-image-cards__card { grid-template-rows: auto auto; } }
 </style>

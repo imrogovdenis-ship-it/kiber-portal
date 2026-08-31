@@ -106,10 +106,14 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(imageCards, /data-drag-slider=\{variant === 'overlay' \? 'true' : undefined\}/);
   assert.match(imageCards, /flex:\s*0 0 23rem; width:\s*23rem; height:\s*23rem; min-height:\s*23rem/);
   assert.match(imageCards, /scrollLeft = scrollLeft - walk/);
+  assert.match(imageCards, /addEventListener\('mousedown', beginDrag\)/);
+  assert.match(imageCards, /addEventListener\('touchmove', moveDrag, \{ passive: false \}\)/);
   assert.match(imageCards, /scrollbar-width:\s*none/);
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
   assert.match(imageCards, /<em>\{variant === 'article' \? 'Читать'/);
+  assert.match(imageCards, /\.home-image-cards--article \.home-image-cards__card\s*\{[^}]*display:\s*flex;[^}]*flex-direction:\s*column;/s);
   assert.match(imageCards, /aspect-ratio:\s*16 \/ 9/);
+  assert.match(imageCards, /overflow-wrap:\s*anywhere/);
   assert.doesNotMatch(faq, /open=\{index === 0\}/);
   assert.doesNotMatch(faq, /grid-template-columns:\s*repeat\(2/);
   assert.match(faq, /margin-left:\s*var\(--kp-home-large-offset/);
