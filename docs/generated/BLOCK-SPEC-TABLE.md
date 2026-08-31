@@ -12,4 +12,4 @@
 | 11 | `robot-hero` | Robot Detail Hero | pilot | default | `src/components/blocks/RobotPageHero.astro` |
 | 15 | `pricing` | Pricing | pilot | default | `src/components/blocks/Pricing.astro` |
 | 31 | `lead-form` | Lead Form | pilot | default | `src/components/blocks/LeadForm.astro` |
-| 33 | `site-footer` | Site Footer | pilot | default | `src/components/layout/Footer.astro` |
+| 33 | `site-footer` | Site Footer | stable | default | `src/components/layout/Footer.astro` |
