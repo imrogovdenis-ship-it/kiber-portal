@@ -2182,7 +2182,7 @@ export const blockRegistry = [
       "id": "site-footer",
       "review_id": "33",
       "name": "Site Footer",
-      "status": "pilot",
+      "status": "stable",
       "component": "src/components/layout/Footer.astro",
       "used_in": [
         "all-public-pages",
@@ -2215,7 +2215,8 @@ export const blockRegistry = [
           "left brand text does not repeat the region; address renders as `г. Москва, Нижний Сусальный переулок, 9, стр. 4А`",
           "description renders as two lines and requisites render below it as three lines",
           "footer removes the separate Content column and renders one muted page-link list",
-          "visible footer page links are Главное, Каталог, Подборки, Блог, Новости and Контакты; no visible `Меню` title is rendered"
+          "visible footer page links are Главное, Каталог, Подборки, Блог, Новости and Контакты; no visible `Меню` title is rendered",
+          "owner approved footer visual direction on 2026-08-31: Футер утверждаю; approval scope excludes PR merge, production deploy, DNS, secrets, analytics and live lead routing"
         ]
       },
       "responsive": {

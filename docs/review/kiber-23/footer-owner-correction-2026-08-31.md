@@ -42,6 +42,12 @@ Local preview at `http://127.0.0.1:4181/` was inspected after `npm run build:pre
 - the footer page nav shows `Главное`, `Каталог`, `Подборки`, `Блог`, `Новости`, `Контакты`;
 - page nav links are muted gray like the left description text.
 
+## Owner approval
+
+Alexander approved the corrected footer in Telegram on 2026-08-31 with: `Футер утверждаю`.
+
+Approval scope: footer visual direction and the owner-requested navigation/text-color corrections only. This is not PR merge permission and not production/DNS/secrets/analytics/live lead-routing approval.
+
 ## Safety
 
 No production deploy, DNS, secrets, analytics provider IDs, or live lead-routing destinations changed.

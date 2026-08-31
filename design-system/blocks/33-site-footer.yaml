@@ -2,7 +2,7 @@ schema_version: 1
 id: site-footer
 review_id: "33"
 name: Site Footer
-status: pilot
+status: stable
 component: src/components/layout/Footer.astro
 used_in: [all-public-pages, design-review]
 variants: [default]
@@ -21,6 +21,7 @@ content_contract:
     - description renders as two lines and requisites render below it as three lines
     - footer removes the separate Content column and renders one muted page-link list
     - visible footer page links are Главное, Каталог, Подборки, Блог, Новости and Контакты; no visible `Меню` title is rendered
+    - "owner approved footer visual direction on 2026-08-31: Футер утверждаю; approval scope excludes PR merge, production deploy, DNS, secrets, analytics and live lead routing"
 responsive:
   sm: { columns: 1 }
   md: { columns: 2 }
