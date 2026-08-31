@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-49",
-  "status": "passed_with_storage_migration_blocker",
-  "generatedAt": "2026-08-31T03:12:41.479Z",
+  "status": "passed_lfs_migrated",
+  "generatedAt": "2026-08-31T04:55:17.615Z",
   "policy": {
     "runtimePublicImageMaxBytes": 204800,
     "runtimeFormatsAllowed": [
@@ -12,13 +12,14 @@
     "reviewOriginalsAllowedOnlyUnder": [
       "site-export/images"
     ],
-    "ordinaryGitOriginalPolicy": "no new originals in ordinary Git; move legacy originals to approved object storage or Git LFS when storage is selected",
+    "ordinaryGitOriginalPolicy": "KIBER-49 variant A: legacy site-export/images originals are tracked through Git LFS pointers; new originals/raw assets are ignored unless explicitly migrated to LFS",
     "productionDeployChanged": false,
     "dnsChanged": false,
     "secretsChanged": false,
     "liveRoutingChanged": false
   },
-  "gitLfsAvailable": false,
+  "gitLfsAvailable": true,
+  "gitLfsTrackedFiles": 510,
   "summary": {
     "trackedMediaFiles": 713,
     "trackedMediaBytes": 164948430,
@@ -27,6 +28,8 @@
     "publicRuntimeLargestImageBytes": 29624,
     "trackedReviewOriginals": 510,
     "trackedReviewOriginalBytes": 102127050,
+    "lfsTrackedReviewOriginals": 510,
+    "reviewOriginalsNotInLfs": 0,
     "oversizedTrackedReviewOriginals": 41,
     "renderedDistScanned": true
   },
@@ -235,12 +238,6 @@
     }
   ],
   "failures": [],
-  "warnings": [
-    "510 legacy original/provenance images remain tracked under site-export/images until object storage or Git LFS migration is approved.",
-    "git-lfs is not installed on this host; KIBER-49 storage migration remains a separate blocker and was not guessed."
-  ],
-  "blockers": [
-    "Choose approved storage for legacy original/provenance images: Git LFS or object storage.",
-    "After storage is selected, migrate site-export/images out of ordinary Git without breaking review provenance links."
-  ]
+  "warnings": [],
+  "blockers": []
 }

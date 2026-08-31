@@ -6,33 +6,37 @@ Date: 2026-08-31
 
 Autonomous non-design pass for `[KP-069] Оптимизировать web-media и убрать originals из обычного Git`.
 
-This pass does not change visual media choices. It adds enforceable runtime/build hygiene and prevents new original/provenance media from being added to ordinary Git while the final storage target remains unapproved.
+Alexander selected **variant A: Git LFS** for existing legacy original/provenance images.
+
+This pass does not change visual media choices. It keeps public/runtime assets optimized and migrates legacy review originals under `site-export/images` to Git LFS pointers without rewriting repository history.
 
 ## Implemented
 
+- Installed/enabled Git LFS in the local repository (`git lfs install --local`).
+- Added `.gitattributes` tracking for legacy originals and raw/provenance formats:
+  - `site-export/images/**`
+  - `*.zip`, `*.psd`, `*.ai`, `*.sketch`, `*.fig`, `*.mov`, `*.mp4`, `*.tif`, `*.tiff`, `*.heic`, `*.raw`
+- Migrated existing tracked `site-export/images` files to Git LFS pointers using `git add --renormalize site-export/images`.
+- Updated GitHub Actions checkout to fetch LFS objects (`actions/checkout@v4` with `lfs: true`) before CI runs the media gate.
+- Kept `incoming/` and `upload/` ignored for new unreviewed drops, but did not broad-track `incoming/**` in LFS to avoid converting non-media content packages unnecessarily.
 - Added `scripts/media-git-hygiene-smoke.mjs`.
 - Added `npm run test:media-git-hygiene` and wired it into `npm run ci`.
 - Added `tests/visual/media-git-hygiene.test.ts` source contract.
-- Added `.gitignore` rules to keep new originals/provenance media out of ordinary Git:
-  - `site-export/images/`
-  - `incoming/`
-  - `upload/`
-  - large/design/archive raw formats (`*.zip`, `*.psd`, `*.ai`, `*.mov`, `*.tif`, etc.)
 - Generated `docs/review/kiber-49/media-git-hygiene-report.json`.
 
 ## Current measured state
 
 From the generated KIBER-49 report:
 
-- tracked media files: 713
-- tracked media bytes: 164,948,430
-- public runtime images: 27
-- public runtime image bytes: 356,930
+- runtime public images: 27
+- runtime public image bytes: 356,930
 - largest public runtime image: 29,624 bytes
 - tracked legacy review originals under `site-export/images`: 510
-- tracked legacy review originals bytes: 102,127,050
-- oversized tracked review originals over 500 KiB: 41
-- `git lfs` available on this host: false
+- Git LFS tracked review originals: 510 / 510
+- review originals not in LFS: 0
+- `git lfs` available on this host: true
+
+Working-tree files remain available at their normal paths for review/provenance, while the Git index stores LFS pointers for the migrated originals.
 
 ## Guardrails now enforced
 
@@ -41,18 +45,12 @@ From the generated KIBER-49 report:
 - Runtime source roots must not reference `site-export/images` originals.
 - Rendered `dist` must not reference `site-export/images` originals when a build is present.
 - Docker build context must exclude review/original media roots (`site-export`, `incoming`, `artifacts`).
-- New originals are ignored before they enter ordinary Git.
+- `.gitattributes` must route `site-export/images/**` through Git LFS.
+- New originals/raw media are ignored before they enter ordinary Git unless explicitly migrated to LFS.
 
-## Remaining blocker
+## Closure status
 
-Legacy originals are still present in existing Git history/current tracked files because the approved storage target is not selected and `git-lfs` is not installed on this host.
-
-To fully close the storage half of KIBER-49, choose one of:
-
-1. Git LFS for `site-export/images` and other raw/original media; or
-2. object storage with a manifest that replaces local review links with storage references.
-
-Until then, this PR prevents regressions and keeps production/runtime media optimized without guessing storage or deleting provenance assets.
+KIBER-49 variant A is closed in this PR: existing `site-export/images` review originals are tracked through Git LFS, runtime/build media are optimized, and CI prevents regressions.
 
 ## Safety boundary
 
