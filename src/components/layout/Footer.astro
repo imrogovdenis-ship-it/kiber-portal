@@ -6,6 +6,7 @@ interface Props extends Partial<FooterData> {
   logo?: { src: string; alt: string; width: number; height: number };
 }
 const defaultMenuLinks = [
+  { href: '/', label: 'Главное' },
   { href: '/#catalog', label: 'Каталог' },
   { href: '/compilations', label: 'Подборки' },
   { href: '/articles', label: 'Блог' },
@@ -17,8 +18,7 @@ const defaults = {
   logo: { src: '/images/brand/kp_logo_full_color.svg', alt: 'КИБЕР ПОРТАЛ', width: 415, height: 132 },
   description: 'Аренда роботов для мероприятий\nв Москве и по всей России.',
   sections: [
-    { title: 'Меню', links: defaultMenuLinks },
-    { title: 'Контент', links: [{ href: '/compilations', label: 'Подборки' }, { href: '/articles', label: 'Блог' }, { href: '/news', label: 'Новости' }] },
+    { title: 'Главное', links: defaultMenuLinks },
   ],
   messengers: [{ href: siteConfig.telegram, label: 'Telegram' }, { href: siteConfig.whatsapp, label: 'WhatsApp' }, { href: siteConfig.max, label: 'MAX' }],
   legal_notice: 'Все права защищены ©',
@@ -50,7 +50,7 @@ const descriptionLines = description.split('\n');
           <span>ОГРНИП {siteConfig.ogrnip}</span>
         </p>
       </div>
-      {sections.map((section) => <nav class="site-footer__section" aria-label={section.title}><h2 class="site-footer__title">{section.title}</h2><ul class="site-footer__nav-list">{section.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul></nav>)}
+      {sections.map((section) => <nav class="site-footer__section" aria-label={section.title}><ul class="site-footer__nav-list">{section.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul></nav>)}
       <address class="site-footer__contacts">
         <h2 class="site-footer__title">Контакты</h2>
         <p class="site-footer__contact-item"><span>Телефон</span><a class="site-footer__phone" href={phoneHref} data-analytics-event="phone_click" data-analytics-source="footer" data-analytics-placement="contacts" data-analytics-slug="global">{phone}</a></p>

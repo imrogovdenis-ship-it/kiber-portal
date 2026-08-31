@@ -81,8 +81,16 @@ test('homepage footer follows owner footer composition feedback', async () => {
   assert.match(footer, /<span>ОГРНИП \{siteConfig\.ogrnip\}<\/span>/);
   assert.match(footer, /footerAddress = `г\. \$\{siteConfig\.region\}, \$\{siteConfig\.address\}`/);
   assert.doesNotMatch(footer, /site-footer__region/);
-  assert.match(footer, /title:\s*'Меню'/);
-  assert.doesNotMatch(footer, /title:\s*'Каталог'/);
+  assert.match(footer, /title:\s*'Главное'/);
+  assert.doesNotMatch(footer, /title:\s*'Меню'/);
+  assert.doesNotMatch(footer, /title:\s*'Контент'/);
+  assert.doesNotMatch(footer, /<h2 class="site-footer__title">\{section\.title\}<\/h2>/);
+  assert.match(footer, /\{ href: '\/', label: 'Главное' \}/);
+  assert.match(footer, /\{ href: '\/#catalog', label: 'Каталог' \}/);
+  assert.match(footer, /\{ href: '\/compilations', label: 'Подборки' \}/);
+  assert.match(footer, /\{ href: '\/articles', label: 'Блог' \}/);
+  assert.match(footer, /\{ href: '\/news', label: 'Новости' \}/);
+  assert.match(footer, /\{ href: '\/contacts', label: 'Контакты' \}/);
   assert.match(footer, /legal_notice:\s*'Все права защищены ©'/);
   assert.match(footer, /Политика обработки\\nперсональных данных/);
   assert.match(footer, /Согласие на обработку\\nперсональных данных/);

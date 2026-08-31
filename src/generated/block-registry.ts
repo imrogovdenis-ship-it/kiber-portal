@@ -2214,7 +2214,8 @@ export const blockRegistry = [
           "published contacts are sourced from validated public config",
           "left brand text does not repeat the region; address renders as `г. Москва, Нижний Сусальный переулок, 9, стр. 4А`",
           "description renders as two lines and requisites render below it as three lines",
-          "footer replaces the old Catalog column with the same vertical menu as the header"
+          "footer removes the separate Content column and renders one muted page-link list",
+          "visible footer page links are Главное, Каталог, Подборки, Блог, Новости and Контакты; no visible `Меню` title is rendered"
         ]
       },
       "responsive": {
@@ -2225,10 +2226,10 @@ export const blockRegistry = [
           "columns": 2
         },
         "lg": {
-          "columns": 5
+          "columns": 4
         },
         "xl": {
-          "columns": 5
+          "columns": 4
         }
       },
       "accessibility": {
@@ -2278,8 +2279,12 @@ export const blockRegistry = [
           "description": "Аренда роботов для мероприятий\nв Москве и по всей России.",
           "sections": [
             {
-              "title": "Меню",
+              "title": "Главное",
               "links": [
+                {
+                  "href": "/",
+                  "label": "Главное"
+                },
                 {
                   "href": "/#catalog",
                   "label": "Каталог"
@@ -2299,23 +2304,6 @@ export const blockRegistry = [
                 {
                   "href": "/contacts",
                   "label": "Контакты"
-                }
-              ]
-            },
-            {
-              "title": "Контент",
-              "links": [
-                {
-                  "href": "/compilations",
-                  "label": "Подборки"
-                },
-                {
-                  "href": "/articles",
-                  "label": "Блог"
-                },
-                {
-                  "href": "/news",
-                  "label": "Новости"
                 }
               ]
             }
@@ -2362,8 +2350,12 @@ export const blockRegistry = [
           "description": "Аренда роботов-гуманоидов, роботов-собак и интерактивных решений для мероприятий в Москве и по всей России.",
           "sections": [
             {
-              "title": "Меню",
+              "title": "Главное",
               "links": [
+                {
+                  "href": "/",
+                  "label": "Главное"
+                },
                 {
                   "href": "/#catalog",
                   "label": "Каталог"
@@ -2468,11 +2460,27 @@ export const blockRegistry = [
           "description": "Роботы для мероприятий.",
           "sections": [
             {
-              "title": "Меню",
+              "title": "Главное",
               "links": [
+                {
+                  "href": "/",
+                  "label": "Главное"
+                },
                 {
                   "href": "/#catalog",
                   "label": "Каталог"
+                },
+                {
+                  "href": "/compilations",
+                  "label": "Подборки"
+                },
+                {
+                  "href": "/articles",
+                  "label": "Блог"
+                },
+                {
+                  "href": "/news",
+                  "label": "Новости"
                 },
                 {
                   "href": "/contacts",
@@ -2506,8 +2514,12 @@ export const blockRegistry = [
           "description": "Аренда роботов для мероприятий\nв Москве и по всей России.",
           "sections": [
             {
-              "title": "Меню",
+              "title": "Главное",
               "links": [
+                {
+                  "href": "/",
+                  "label": "Главное"
+                },
                 {
                   "href": "/#catalog",
                   "label": "Каталог"
@@ -2527,15 +2539,6 @@ export const blockRegistry = [
                 {
                   "href": "/contacts",
                   "label": "Контакты"
-                }
-              ]
-            },
-            {
-              "title": "Контент",
-              "links": [
-                {
-                  "href": "/articles",
-                  "label": "Блог"
                 }
               ]
             }

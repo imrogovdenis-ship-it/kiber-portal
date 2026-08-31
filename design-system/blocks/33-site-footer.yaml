@@ -19,12 +19,13 @@ content_contract:
     - published contacts are sourced from validated public config
     - left brand text does not repeat the region; address renders as `г. Москва, Нижний Сусальный переулок, 9, стр. 4А`
     - description renders as two lines and requisites render below it as three lines
-    - footer replaces the old Catalog column with the same vertical menu as the header
+    - footer removes the separate Content column and renders one muted page-link list
+    - visible footer page links are Главное, Каталог, Подборки, Блог, Новости and Контакты; no visible `Меню` title is rendered
 responsive:
   sm: { columns: 1 }
   md: { columns: 2 }
-  lg: { columns: 5 }
-  xl: { columns: 5 }
+  lg: { columns: 4 }
+  xl: { columns: 4 }
 accessibility:
   landmark: contentinfo
   image_alt_required: false
