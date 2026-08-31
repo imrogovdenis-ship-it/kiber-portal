@@ -2,10 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHero from '../components/blocks/HomeHero.astro';
 import RobotCard from '../components/blocks/RobotCard.astro';
-import CtaStrip from '../components/blocks/CtaStrip.astro';
+import HomeGoshaQuote from '../components/blocks/HomeGoshaQuote.astro';
+import HomeImageCards from '../components/blocks/HomeImageCards.astro';
+import HomeFaqBlock from '../components/blocks/HomeFaqBlock.astro';
+import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
-import { organizationJsonLd, websiteJsonLd } from '../lib/seo';
+import { organizationJsonLd, websiteJsonLd, faqPageJsonLd } from '../lib/seo';
 import { getRobotPages } from '../lib/robot-pages';
+import { homeArticles, homeCompilations, homeFaq, homeFinalCta, homeGosha } from '../data/home-live';
 import type { RobotCardData } from '../../design-system/schemas/fixture.schema';
 
 const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
@@ -54,24 +58,18 @@ const hero = {
   stats: [],
   analytics: { event: 'contact_click' as const, block_id: 'home-hero' },
 };
-
-const cta = {
-  title: 'Готовы проверить сценарий с роботом?',
-  text: 'Выберите модель или напишите нам — подберём формат выхода, тайминг и площадку под ваше мероприятие.',
-  primary: { href: '/lead/request/?robot=arenda-unitree-g1', label: 'Заполнить форму' },
-  secondary: { href: '/contacts', label: 'Написать нам' },
-  analytics: { event: 'contact_click' as const, block_id: 'vertical-slice-cta' },
-};
 ---
 
 <BaseLayout
   title="Аренда роботов для мероприятий — КИБЕР ПОРТАЛ"
   description="КИБЕР ПОРТАЛ: аренда роботов для мероприятий, карточки моделей, подбор сценария и заявка на обратный звонок."
   canonical="https://www.kiber-portal.ru/"
-  jsonLd={[organizationJsonLd(), websiteJsonLd()]}
+  jsonLd={[organizationJsonLd(), websiteJsonLd(), faqPageJsonLd(homeFaq)]}
 >
-  <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33">
+  <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-home-parity-pass="full-homepage-lower-blocks">
     <HomeHero {...hero} />
+    <HomeGoshaQuote {...homeGosha} />
+    <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
 
     <section id="catalog" class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot" data-primary-route="/robots/arenda-unitree-g1/">
       <div class="vertical-slice__section-copy">
@@ -84,7 +82,9 @@ const cta = {
       </div>
     </section>
 
-    <CtaStrip {...cta} />
+    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...homeArticles} />
+    <HomeFaqBlock {...homeFaq} />
+    <HomeFinalCta {...homeFinalCta} />
     <InternalLinks route="/" label="Популярные направления" />
   </main>
 </BaseLayout>
@@ -103,5 +103,8 @@ const cta = {
   }
   @media (min-width: 40rem) and (max-width: 59.9375rem) {
     .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 39.9375rem) {
+    .vertical-slice { gap: 1.75rem; padding-bottom: 2rem; }
   }
 </style>

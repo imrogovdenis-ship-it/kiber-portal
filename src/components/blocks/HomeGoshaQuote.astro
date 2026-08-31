@@ -1,0 +1,29 @@
+---
+import type { HomeGoshaData } from '../../data/home-live';
+const { title, subtitle, text, image } = Astro.props as HomeGoshaData;
+const paragraphs = text.split('\n\n');
+---
+<section class="home-gosha" id="kiber-gosha" data-home-block="kiber-gosha" aria-labelledby="home-gosha-title">
+  <div class="home-gosha__avatar">
+    <img src={image.src} alt={image.alt} width="240" height="240" loading="lazy" decoding="async" />
+  </div>
+  <div class="home-gosha__copy">
+    <p class="home-gosha__eyebrow">{subtitle}</p>
+    <h2 id="home-gosha-title">{title}</h2>
+    <div class="home-gosha__text">
+      {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .home-gosha { display: grid; gap: clamp(1rem, 2.2vw, 2rem); align-items: center; padding: clamp(1.25rem, 3vw, 2.5rem); border-radius: 1.75rem; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 1rem 2.5rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
+  .home-gosha__avatar { display: grid; justify-items: start; }
+  .home-gosha__avatar img { width: clamp(5rem, 11vw, 7.5rem); height: clamp(5rem, 11vw, 7.5rem); object-fit: contain; }
+  .home-gosha__copy { display: grid; gap: .65rem; }
+  .home-gosha__eyebrow, .home-gosha h2, .home-gosha__text p { margin: 0; }
+  .home-gosha__eyebrow { color: var(--kp-blue); font-size: .8125rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+  .home-gosha h2 { font-family: var(--kp-font-heading); font-size: clamp(1.65rem, 3vw, 2.75rem); line-height: 1.05; }
+  .home-gosha__text { display: grid; gap: .7rem; color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  @media (min-width: 48rem) { .home-gosha { grid-template-columns: minmax(7rem, .18fr) minmax(0, 1fr); } }
+</style>

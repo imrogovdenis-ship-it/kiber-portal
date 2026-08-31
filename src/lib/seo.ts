@@ -104,3 +104,18 @@ export function webPageJsonLd(input: { title: string; description: string; url: 
     isPartOf: websiteJsonLd(),
   };
 }
+
+export function faqPageJsonLd(input: { items: { question: string; answer: string }[] }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: input.items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  };
+}

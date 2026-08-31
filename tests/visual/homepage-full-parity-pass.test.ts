@@ -1,0 +1,73 @@
+import assert from 'node:assert/strict';
+import { readFile, stat } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import test from 'node:test';
+
+const root = resolve(import.meta.dirname, '../..');
+const read = (path: string) => readFile(resolve(root, path), 'utf8');
+
+test('homepage renders the original full-page block order through Astro components and data', async () => {
+  const page = await read('src/pages/index.astro');
+  const data = await read('src/data/home-live.ts');
+  const live = JSON.parse(await read('data/design/home-live-blocks.json'));
+
+  assert.deepEqual(live.homeOrder, ['hero', 'kiber_gosha', 'compilations', 'catalog', 'articles', 'faq', 'cta', 'news']);
+  assert.match(page, /import HomeGoshaQuote/);
+  assert.match(page, /import HomeImageCards/);
+  assert.match(page, /import HomeFaqBlock/);
+  assert.match(page, /import HomeFinalCta/);
+  assert.match(page, /<HomeHero[\s\S]*<HomeGoshaQuote[\s\S]*<HomeImageCards id="compilations"[\s\S]*id="catalog"[\s\S]*<HomeImageCards id="articles"[\s\S]*<HomeFaqBlock[\s\S]*<HomeFinalCta/s);
+  assert.match(page, /data-home-parity-pass="full-homepage-lower-blocks"/);
+  assert.match(data, /routeFallbacks/);
+  assert.doesNotMatch(page, /site-export\/images/);
+});
+
+test('home lower blocks use original homepage copy and avoid missing public routes', async () => {
+  const [gosha, imageCards, faq, cta, data] = await Promise.all([
+    read('src/components/blocks/HomeGoshaQuote.astro'),
+    read('src/components/blocks/HomeImageCards.astro'),
+    read('src/components/blocks/HomeFaqBlock.astro'),
+    read('src/components/blocks/HomeFinalCta.astro'),
+    read('src/data/home-live.ts'),
+  ]);
+
+  assert.match(gosha, /data-home-block="kiber-gosha"/);
+  assert.match(imageCards, /data-home-block=\{id\}/);
+  assert.match(faq, /data-home-block="faq"/);
+  assert.match(cta, /data-home-block="final-cta"/);
+  for (const originalRoute of [
+    '/arenda-robotov-na-meropriyatie',
+    '/sravnenie-unitree-g1-r1-h2',
+    '/neobychnyi-podarok-direktoru-robot',
+    '/unitree-g1-ili-agibot-x2',
+    '/pozdravlenie-robotom-na-svadbe',
+    '/robot-ofitsiant-na-meropriyatii',
+    '/velkom-zona-na-svadbe-robot',
+  ]) {
+    assert.match(data, new RegExp(`'${originalRoute}':`));
+  }
+  assert.match(data, /export const homeFaq/);
+  assert.match(data, /export const homeFinalCta/);
+});
+
+test('homepage full parity media is optimized runtime WebP rather than review-only originals', async () => {
+  const data = await read('src/data/home-live.ts');
+  const matches = [...data.matchAll(/'\/images\/[^']+': '(\/images\/home-live\/[^']+\.webp)'/g)].map((match) => match[1]);
+  assert.ok(matches.length >= 10, 'expected migrated home-live images');
+  for (const src of matches) {
+    const file = resolve(root, 'public', src.slice(1));
+    const info = await stat(file);
+    assert.ok(info.size <= 200 * 1024, `${src} exceeds runtime image budget`);
+  }
+  assert.doesNotMatch(data, /site-export\/images/);
+});
+
+test('homepage exposes FAQPage JSON-LD from the same home FAQ data source', async () => {
+  const page = await read('src/pages/index.astro');
+  const seo = await read('src/lib/seo.ts');
+
+  assert.match(page, /faqPageJsonLd\(homeFaq\)/);
+  assert.match(seo, /export function faqPageJsonLd/);
+  assert.match(seo, /'@type': 'FAQPage'/);
+  assert.match(seo, /'@type': 'Question'/);
+});

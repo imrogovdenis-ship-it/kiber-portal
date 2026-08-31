@@ -28,6 +28,23 @@
       "approvedBy": "Александр Маркин",
       "approvedAt": "2026-08-30T10:40:00Z",
       "approvalScope": "media_use_only_not_production_deploy"
+    },
+    {
+      "id": "home-gosha-original-site-20260831",
+      "role": "homepage_gosha_helper_and_final_cta",
+      "route": "/",
+      "src": "/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+      "projectPath": "public/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+      "source": "original kiber-portal.ru homepage export, promoted during full homepage parity pass on 2026-08-31",
+      "actualDescription": "Кибер Гоша — улыбающийся цифровой помощник в красной шапке-ушанке, машет рукой на синем круглом фоне.",
+      "seoAlt": "Кибер Гоша цифровой помощник КИБЕР ПОРТАЛА для подбора робота на мероприятие",
+      "caption": "Кибер Гоша помогает выбрать робота под формат мероприятия.",
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
+      "previewUseAllowed": true,
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-31T00:00:00Z",
+      "approvalScope": "media_use_only_not_production_deploy"
     }
   ]
 }
