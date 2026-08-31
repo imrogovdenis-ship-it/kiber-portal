@@ -34,7 +34,7 @@ test('homepage hero is tighter, less oversized, and does not show hidden-conditi
   assert.match(page, /padding-block:\s*clamp\(0\.75rem,\s*1\.5vw,\s*1\.5rem\) clamp\(1\.5rem,\s*3vw,\s*3rem\)/);
   assert.match(hero, /padding:\s*clamp\(0\.5rem,\s*1vw,\s*0\.875rem\) 0 0/);
   assert.match(hero, /min-height:\s*39\.6rem;/);
-  assert.match(hero, /inset:\s*7\.5% 0 7\.5% auto;/);
+  assert.match(hero, /inset:\s*0 0 0 auto;/);
   assert.match(hero, /\.home-hero__actions\s*\{[^}]*margin-top:\s*0\.75rem;/s);
   assert.match(hero, /font-size:\s*clamp\(2\.5rem,\s*5vw,\s*5\.25rem\)/);
   assert.match(hero, /max-width:\s*14ch;/);

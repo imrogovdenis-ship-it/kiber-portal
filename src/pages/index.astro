@@ -70,7 +70,7 @@ const hero = {
     <HomeGoshaQuote {...homeGosha} />
     <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
 
-    <section id="catalog" class="vertical-slice__section" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot" data-primary-route="/robots/arenda-unitree-g1/">
+    <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot" data-primary-route="/robots/arenda-unitree-g1/">
       <div class="vertical-slice__section-copy">
         <p>Каталог роботов</p>
         <h2 id="pilot-robot-title">Популярные модели для мероприятий</h2>
@@ -90,6 +90,7 @@ const hero = {
 <style>
   .vertical-slice { display: grid; gap: clamp(2rem, 4vw, 3.5rem); padding-block: clamp(0.75rem, 1.5vw, 1.5rem) clamp(1.5rem, 3vw, 3rem); }
   .vertical-slice__section { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .vertical-slice__section--catalog { margin-top: clamp(2rem, 4vw, 3.5rem); }
   .vertical-slice__section-copy { display: grid; gap: .55rem; max-width: 48rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
   .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
   .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }

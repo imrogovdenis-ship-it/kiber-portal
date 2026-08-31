@@ -72,25 +72,27 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
 </script>
 
 <style>
-  .home-image-cards { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .home-image-cards { display: grid; gap: clamp(.8rem, 1.4vw, 1.15rem); }
   .home-image-cards__head { display: grid; gap: .55rem; max-width: 56rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
   .home-image-cards__head p, .home-image-cards__head h2, .home-image-cards__head span { margin: 0; }
   .home-image-cards__head p { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
   .home-image-cards__head h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); letter-spacing: 0; }
   .home-image-cards__head span { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
   .home-image-cards__grid { display: grid; gap: clamp(.9rem, 1.6vw, 1.25rem); }
+  .home-image-cards--article { margin-top: clamp(2rem, 4vw, 3.5rem); }
   .home-image-cards__card { position: relative; display: grid; min-height: 23rem; overflow: hidden; border-radius: 1.25rem; background: var(--kp-surface); color: var(--kp-white); text-decoration: none; isolation: isolate; }
   .home-image-cards__card::before { position: absolute; inset: 0; z-index: 0; background-image: var(--home-card-image); background-position: 58% center; background-size: cover; transition: transform .2s ease; content: ''; }
   .home-image-cards__card::after { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--kp-ink) 8%, transparent) 0%, color-mix(in srgb, var(--kp-ink) 70%, transparent) 100%); content: ''; }
   .home-image-cards__body { position: relative; z-index: 2; display: grid; align-content: end; gap: .65rem; padding: 1.1rem; }
   .home-image-cards__body strong { font-family: var(--kp-font-heading); font-size: clamp(1.15rem, 1.8vw, 1.55rem); line-height: 1.05; }
   .home-image-cards__body span { color: color-mix(in srgb, var(--kp-white) 86%, transparent); font-size: .875rem; line-height: 1.35; }
-  .home-image-cards__body em { width: fit-content; border-radius: 62.4375rem; padding: .55rem .85rem; background: var(--kp-blue); color: var(--kp-white); font-style: normal; font-weight: 700; font-size: .8rem; }
-  .home-image-cards--overlay .home-image-cards__grid { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; cursor: grab; user-select: none; scrollbar-width: thin; padding-bottom: .25rem; }
+  .home-image-cards__body em { width: fit-content; border-radius: var(--kp-reference-button-radius); padding: .82rem 1.35rem; background: var(--kp-white); color: var(--kp-blue); font-family: var(--kp-font-heading); font-style: normal; font-weight: 700; font-size: .92rem; line-height: 1; }
+  .home-image-cards--overlay .home-image-cards__grid { display: flex; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; cursor: grab; user-select: none; scrollbar-width: none; padding-bottom: 0; }
+  .home-image-cards--overlay .home-image-cards__grid::-webkit-scrollbar { display: none; }
   .home-image-cards--overlay .home-image-cards__grid.is-dragging { cursor: grabbing; scroll-snap-type: none; }
   .home-image-cards--overlay .home-image-cards__card { flex: 0 0 23rem; width: 23rem; height: 23rem; min-height: 23rem; scroll-snap-align: start; }
   .home-image-cards--article .home-image-cards__card { min-height: auto; grid-template-rows: minmax(24rem, auto) auto; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
-  .home-image-cards--article .home-image-cards__card::before { position: relative; z-index: auto; height: auto; aspect-ratio: 9 / 16; }
+  .home-image-cards--article .home-image-cards__card::before { position: relative; z-index: auto; height: auto; aspect-ratio: 16 / 9; }
   .home-image-cards--article .home-image-cards__card::after { display: none; }
   .home-image-cards--article .home-image-cards__body { align-content: end; min-height: 10rem; padding-top: 1.35rem; }
   .home-image-cards--article .home-image-cards__body span { color: var(--kp-muted); }

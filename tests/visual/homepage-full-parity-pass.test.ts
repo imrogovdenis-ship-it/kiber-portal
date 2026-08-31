@@ -84,10 +84,12 @@ test('homepage owner feedback pass keeps heading style consistent and removes ex
 
   assert.doesNotMatch(page, /InternalLinks/);
   assert.doesNotMatch(page, /Популярные направления/);
-  for (const component of [gosha, imageCards, faq, cta]) {
+  for (const component of [imageCards, faq, cta]) {
     assert.match(component, /font-size:\s*var\(--kp-heading-size\)/);
   }
-  for (const component of [gosha, imageCards, faq]) {
+  assert.doesNotMatch(gosha, /home-gosha__eyebrow/);
+  assert.doesNotMatch(gosha, /<h2/);
+  for (const component of [imageCards, faq]) {
     assert.match(component, /margin-left:\s*var\(--kp-home-large-offset/);
     assert.match(component, /font-size:\s*var\(--kp-label-size\)/);
   }
@@ -104,10 +106,15 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(imageCards, /data-drag-slider=\{variant === 'overlay' \? 'true' : undefined\}/);
   assert.match(imageCards, /flex:\s*0 0 23rem; width:\s*23rem; height:\s*23rem; min-height:\s*23rem/);
   assert.match(imageCards, /scrollLeft = scrollLeft - walk/);
+  assert.match(imageCards, /scrollbar-width:\s*none/);
+  assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
   assert.match(imageCards, /variant !== 'article' && <em>/);
-  assert.match(imageCards, /aspect-ratio:\s*9 \/ 16/);
+  assert.match(imageCards, /aspect-ratio:\s*16 \/ 9/);
   assert.doesNotMatch(faq, /open=\{index === 0\}/);
   assert.doesNotMatch(faq, /grid-template-columns:\s*repeat\(2/);
+  assert.match(faq, /background:\s*transparent/);
+  assert.match(faq, /summary::-webkit-details-marker\s*\{\s*display:\s*none/);
+  assert.match(faq, /summary::before, \.home-faq__item summary::after/);
   assert.match(cta, /margin-top:\s*1rem/);
   assert.match(cta, /background:\s*transparent/);
 });
