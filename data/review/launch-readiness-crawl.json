@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-launch-readiness-crawl",
+  "title": "Controlled rebuild launch readiness crawl",
+  "status": "in_review_after_pr",
+  "requiredChecks": [
+    "route_inventory",
+    "sitemap_alignment",
+    "404_page",
+    "robots_pages",
+    "legal_pages",
+    "lead_routing_disabled",
+    "analytics_provider_disabled",
+    "production_blockers",
+    "media_rights_owner_approved"
+  ],
+  "criticalRoutes": [
+    {
+      "path": "/",
+      "purpose": "commercial entry",
+      "sitemap": true
+    },
+    {
+      "path": "/contacts/",
+      "purpose": "approved public contact trust page",
+      "sitemap": true
+    },
+    {
+      "path": "/lead/request/",
+      "purpose": "capability-only lead entry",
+      "sitemap": false
+    },
+    {
+      "path": "/lead/thanks/",
+      "purpose": "non-indexed lead confirmation",
+      "sitemap": false
+    },
+    {
+      "path": "/privacy-policy/",
+      "purpose": "live-site sourced legal document",
+      "sitemap": false
+    },
+    {
+      "path": "/consent/",
+      "purpose": "live-site sourced consent document",
+      "sitemap": false
+    },
+    {
+      "path": "/cookie-policy/",
+      "purpose": "live-site sourced cookie document",
+      "sitemap": false
+    },
+    {
+      "path": "/terms/",
+      "purpose": "live-site sourced user agreement",
+      "sitemap": false
+    }
+  ],
+  "productionPermission": false,
+  "goNoGoStatus": "blocked_until_owner_decisions",
+  "productionBlockers": [
+    "live lead routing destinations and backend",
+    "analytics provider decision and IDs",
+    "final business/legal launch confirmation",
+    "explicit production deploy permission"
+  ],
+  "requiredLegalRoutes": [
+    "/privacy-policy/",
+    "/consent/",
+    "/cookie-policy/",
+    "/terms/"
+  ],
+  "resolvedOwnerDecisions": [
+    {
+      "id": "media-rights-production-approval",
+      "status": "approved_by_owner_for_production_media_use",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-29T00:55:09Z",
+      "evidence": "All 24 full robot media cards approved in Telegram after first five reviewed and remaining accepted by same validated principle."
+    },
+    {
+      "id": "public-contacts",
+      "status": "approved_by_owner_for_preview_pr",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-30T02:56:33Z",
+      "evidence": "Owner approved phone, email, Telegram/WhatsApp, Москва, legal name, requisites and address for preview/PR publication."
+    }
+  ]
+}

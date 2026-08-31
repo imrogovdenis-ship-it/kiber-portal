@@ -1,0 +1,54 @@
+schema_version: 1
+events:
+  - name: breadcrumb_click
+    description: Переход по хлебным крошкам.
+    trigger: Активация ссылки хлебных крошек мышью или клавиатурой.
+    source:
+      pages: [detail]
+      blocks: [breadcrumbs]
+    required: { position: integer }
+    optional: {}
+    consent: analytics
+    metric_owner: seo
+    example: { position: 1 }
+  - name: phone_click
+    description: Переход к звонку из глобальной навигации.
+    trigger: Активация телефонной ссылки мышью или клавиатурой.
+    source:
+      pages: [all]
+      blocks: [site-header]
+    required: { block_id: string }
+    optional: {}
+    consent: analytics
+    metric_owner: commercial
+    example: { block_id: site-header }
+  - name: contact_click
+    description: Переход к контакту из глобальной навигации.
+    trigger: Активация CTA «Написать нам» мышью или клавиатурой.
+    source:
+      pages: [all]
+      blocks: [site-header]
+    required: { block_id: string }
+    optional: {}
+    consent: analytics
+    metric_owner: commercial
+    example: { block_id: site-header }
+  - name: robot_card_click
+    description: Переход из карточки робота на страницу услуги.
+    trigger: Активация ссылки «Подробнее» мышью или клавиатурой.
+    source:
+      pages: [home, collection, robot, design-review]
+      blocks: [robot-card]
+    required:
+      robot_slug: string
+      block_id: string
+      placement: enum[catalog,related,collection,design_review]
+    optional:
+      position: integer
+    consent: analytics
+    metric_owner: commercial
+    example:
+      robot_slug: unitree-g1
+      block_id: robot-card
+      placement: design_review
+      position: 1

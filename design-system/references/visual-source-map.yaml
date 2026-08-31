@@ -1,0 +1,152 @@
+schema_version: 1
+decision:
+  issue: KIBER-86
+  status: approved_base
+  approved_by: owner
+  approved_at: 2026-08-26
+sources:
+  desktop:
+    path: docs/source/reference-desktop-v9.html
+    role: approved_base_visual_reference
+    viewport: 1440
+  mobile:
+    path: docs/source/reference-mobile-v3.html
+    role: approved_base_visual_reference
+    viewport: 375
+blocks:
+  - review_id: "01"
+    id: site-header
+    desktop: { marker: 'data-rv="01 · HEADER"', selector: .site-header }
+    mobile: { marker: 'data-rv="01"', selector: .site-header }
+  - review_id: "02"
+    id: home-hero
+    desktop: { marker: 'data-rv="02 · HOME HERO"', selector: .home-hero }
+    mobile: { marker: 'data-rv="02"', selector: .home-hero }
+  - review_id: "03"
+    id: gosha-quote
+    desktop: { marker: 'data-rv="03 · KIBER GOSHA QUOTE"', selector: .gosha-quote }
+    mobile: { marker: 'data-rv="03"', selector: .gosha-quote }
+  - review_id: "04"
+    id: collection-cards
+    desktop: { marker: 'data-rv="04 · COLLECTION CARDS"', selector: .collection-section }
+    mobile: { marker: 'data-rv="04"', selector: .collection-section }
+  - review_id: "05"
+    id: robot-card
+    desktop: { marker: 'data-rv="05 · ROBOT CARD (каталог)"', selector: .robot-card }
+    mobile: { marker: 'data-rv="05"', selector: .robot-card }
+  - review_id: "06"
+    id: article-cards
+    desktop: { marker: 'data-rv="06 · ARTICLE CARDS"', selector: .articles-section }
+    mobile: { marker: 'data-rv="06"', selector: .articles-section }
+  - review_id: "07"
+    id: faq
+    desktop: { marker: 'data-rv="07 · FAQ"', selector: .faq }
+    mobile: { marker: 'data-rv="07"', selector: .faq }
+  - review_id: "08"
+    id: news-cards
+    desktop: { marker: 'data-rv="08 · NEWS CARDS"', selector: .news-section }
+    mobile: { marker: 'data-rv="08"', selector: .news-section }
+  - review_id: "09"
+    id: cta-strip
+    desktop: { marker: 'data-rv="09 · CTA STRIP"', selector: .cta-strip }
+    mobile: { marker: 'data-rv="09"', selector: .cta-strip }
+  - review_id: "10"
+    id: breadcrumbs
+    desktop: { marker: 'data-rv="10 · BREADCRUMBS"', selector: .breadcrumbs }
+    mobile: { marker: 'data-rv="10"', selector: .breadcrumbs }
+  - review_id: "11"
+    id: robot-hero
+    desktop: { marker: 'data-rv="11 · ROBOT HERO"', selector: .robot-hero }
+    mobile: { marker: 'data-rv="11"', selector: .robot-hero }
+  - review_id: "12"
+    id: robot-facts
+    desktop: { marker: 'data-rv="12 · ROBOT FACTS"', selector: .robot-facts }
+    mobile: { marker: 'data-rv="12"', selector: .robot-facts }
+  - review_id: "13"
+    id: robot-scenarios
+    desktop: { marker: 'data-rv="13 · ROBOT SCENARIOS"', selector: .robot-scenarios }
+    mobile: { marker: 'data-rv="13"', selector: .robot-scenarios }
+  - review_id: "14"
+    id: gallery
+    desktop: { marker: 'data-rv="14 · GALLERY"', selector: .robot-gallery }
+    mobile: { marker: 'data-rv="14"', selector: .robot-gallery }
+  - review_id: "15"
+    id: pricing
+    desktop: { marker: 'data-rv="15 · PRICING"', selector: .robot-pricing }
+    mobile: { marker: 'data-rv="15"', selector: .robot-pricing }
+  - review_id: "16"
+    id: comparison-table
+    desktop: { marker: 'data-rv="16 · COMPARISON TABLE"', selector: .comparison-section }
+    mobile: { marker: 'data-rv="16"', selector: .comparison-section }
+  - review_id: "17"
+    id: article-hero
+    desktop: { marker: 'data-rv="17 · ARTICLE HERO"', selector: .article-hero }
+    mobile: { marker: 'data-rv="17"', selector: .article-hero }
+  - review_id: "18"
+    id: article-body
+    desktop: { marker: 'data-rv="18 · ARTICLE BODY"', selector: .article-body-section }
+    mobile: { marker: 'data-rv="18"', selector: .article-body-section }
+  - review_id: "19"
+    id: accent-kicker
+    desktop: { marker: 'data-rv="19 · ACCENT KICKER"', selector: .kicker-section }
+    mobile: { marker: 'data-rv="19"', selector: .kicker-section }
+  - review_id: "20"
+    id: text-pairs
+    desktop: { marker: 'data-rv="20 · TEXT PAIRS"', selector: .text-pairs-section }
+    mobile: { marker: 'data-rv="20"', selector: .text-pairs-section }
+  - review_id: "21"
+    id: image-text-pairs
+    desktop: { marker: 'data-rv="21 · IMAGE TEXT PAIRS"', selector: .img-text-section }
+    mobile: { marker: 'data-rv="21"', selector: .img-text-section }
+  - review_id: "22"
+    id: stats-block
+    desktop: { marker: 'data-rv="22 · STATS BLOCK"', selector: .stats-section }
+    mobile: { marker: 'data-rv="22"', selector: .stats-section }
+  - review_id: "23"
+    id: checklist
+    desktop: { marker: 'data-rv="23 · CHECKLIST"', selector: .checklist-section }
+    mobile: { marker: 'data-rv="23"', selector: .checklist-section }
+  - review_id: "24"
+    id: media-figure
+    desktop: { marker: 'data-rv="24 · MEDIA FIGURE"', selector: .media-figure-section }
+    mobile: { marker: 'data-rv="24"', selector: .media-figure-section }
+  - review_id: "25"
+    id: video-embed
+    desktop: { marker: 'data-rv="25 · VIDEO EMBED"', selector: .video-section }
+    mobile: { marker: 'data-rv="25"', selector: .video-section }
+  - review_id: "26"
+    id: article-aside
+    desktop: { marker: 'data-rv="26 · ARTICLE ASIDE"', selector: .aside-section }
+    mobile: { marker: 'data-rv="26"', selector: .aside-section }
+  - review_id: "27"
+    id: collection-hero
+    desktop: { marker: 'data-rv="27 · COLLECTION HERO"', selector: .collection-hero }
+    mobile: { marker: 'data-rv="27"', selector: .collection-hero }
+  - review_id: "28"
+    id: collection-intro
+    desktop: { marker: 'data-rv="28 · COLLECTION INTRO"', selector: .intro-section }
+    mobile: { marker: 'data-rv="28"', selector: .intro-section }
+  - review_id: "29"
+    id: choice-guide
+    desktop: { marker: 'data-rv="29 · CHOICE GUIDE"', selector: .guide-section }
+    mobile: { marker: 'data-rv="29"', selector: .guide-section }
+  - review_id: "30"
+    id: contact-modal
+    desktop: { marker: 'data-rv="30 · CONTACT MODAL"', selector: .modal }
+    mobile: { marker: 'id="contact-modal"', selector: .modal }
+  - review_id: "31"
+    id: lead-form
+    desktop: { marker: 'data-rv="31 · LEAD FORM"', selector: .lead-form }
+    mobile: { marker: 'data-rv="31"', selector: .lead-form }
+  - review_id: "32"
+    id: cookie-banner
+    desktop: { marker: 'data-rv="32 · COOKIE BANNER"', selector: .cookie-banner }
+    mobile: { marker: 'id="cookie-banner"', selector: .cookie-banner }
+  - review_id: "33"
+    id: site-footer
+    desktop: { marker: 'data-rv="33 · FOOTER"', selector: .site-footer }
+    mobile: { marker: 'data-rv="33"', selector: .site-footer }
+  - review_id: "34"
+    id: cta-questions
+    desktop: { marker: 'data-rv="34 · CTA QUESTIONS (Остались вопросы?)"', selector: .cta-questions }
+    mobile: { marker: 'data-rv="34"', selector: .cta-questions }

@@ -1,0 +1,7 @@
+schema_version: 1
+id: breadcrumbs-missing-optional
+block_id: breadcrumbs
+variant: default
+viewport: xl
+mode: missing-optional
+data: { items: [{ name: Главная, url: / }, { name: Новости, url: /news }] }

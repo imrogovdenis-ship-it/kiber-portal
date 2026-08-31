@@ -1,0 +1,20 @@
+schema_version: 1
+id: robot-hero-missing-optional
+block_id: robot-hero
+variant: default
+viewport: md
+mode: missing-optional
+data:
+  manufacturer: Unitree
+  model: G1
+  title: Unitree G1 для мероприятий
+  description: Гуманоид Unitree G1 на прокат с оператором для шоу, форума или промо. Рассчитываем стоимость за час.
+  price: от 12 500 ₽ / час
+  primary: { href: /lead/request/?robot=arenda-unitree-g1, label: Оставить заявку }
+  secondary: { href: /, label: Вернуться на главную }
+  image:
+    src: /images/kiber-45/arenda-unitree-g1.webp
+    alt: Робот-гуманоид Unitree G1 для мероприятия
+    mobile_aspect_ratio: "1:1"
+    mobile_fit: contain
+  analytics: { event: contact_click, block_id: robot-hero }

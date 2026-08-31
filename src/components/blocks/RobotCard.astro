@@ -1,0 +1,197 @@
+---
+import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends RobotCardData {
+  variant?: 'default' | 'compact';
+  hideDisclaimer?: boolean;
+  hideLink?: boolean;
+  imageLoading?: 'eager' | 'lazy';
+  internalLinkId?: string;
+}
+
+const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hideLink = false, imageLoading = 'lazy', internalLinkId, ...data } = Astro.props;
+---
+
+<a
+  class:list={['robot-card', `robot-card--${variant}`]}
+  href={data.href}
+  aria-label={`Открыть карточку робота ${data.title}`}
+  data-block-id="robot-card"
+  data-review-id="05"
+  data-analytics-event={analytics.event}
+  data-analytics-robot-slug={data.slug}
+  data-analytics-block-id="robot-card"
+  data-analytics-source="robot_card"
+  data-analytics-placement={analytics.placement}
+  data-analytics-slug={data.slug}
+  data-analytics-position={analytics.position}
+  data-internal-link-id={internalLinkId}
+>
+  <div class="robot-card__media">
+    {image ? (
+      <img class="robot-card__image" src={image.src} alt={image.alt} width="640" height="640" loading={imageLoading} decoding="async" />
+    ) : (
+      <div class="robot-card__placeholder" role="img" aria-label="Изображение робота готовится">
+        <span aria-hidden="true">KP</span>
+      </div>
+    )}
+    {badge && <span class="robot-card__badge">{badge}</span>}
+  </div>
+
+  <div class="robot-card__content">
+    <p class="robot-card__category">{data.category}</p>
+    <h3 class="robot-card__title">{data.title}</h3>
+    <p class="robot-card__description">{data.description}</p>
+    <div class="robot-card__price-group">
+      <p class="robot-card__price">{data.price}</p>
+      {!hideDisclaimer && <p class="robot-card__disclaimer">{data.price_disclaimer}</p>}
+    </div>
+    {!hideLink && <span class="robot-card__link">Подробнее<span aria-hidden="true"> →</span></span>}
+  </div>
+</a>
+
+<style>
+  .robot-card {
+    display: block;
+    min-width: 0;
+    color: var(--kp-robot-card-title-color);
+    text-decoration: none;
+  }
+
+  .robot-card__media {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--kp-robot-card-image-radius);
+    background: var(--kp-robot-card-surface);
+  }
+
+  .robot-card__image,
+  .robot-card__placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: var(--kp-robot-card-image-object-position);
+  }
+
+  .robot-card__image {
+    transition: transform var(--kp-robot-card-image-hover-duration) var(--kp-robot-card-image-hover-easing);
+  }
+
+  .robot-card:hover .robot-card__image {
+    transform: scale(var(--kp-robot-card-image-hover-scale));
+  }
+
+  .robot-card__placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--kp-robot-card-surface);
+    color: var(--kp-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: var(--kp-heading-weight);
+  }
+
+  .robot-card__badge {
+    position: absolute;
+    inset-block-start: var(--kp-robot-card-badge-inset);
+    inset-inline-end: var(--kp-robot-card-badge-inset);
+    display: grid;
+    width: clamp(2.625rem, 3.4vw, 3.125rem);
+    aspect-ratio: 1;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+    padding: 0.25rem;
+    background: var(--kp-robot-card-badge-background);
+    color: var(--kp-robot-card-badge-foreground);
+    font-family: var(--kp-font-body);
+    font-size: clamp(0.45rem, 0.56vw, 0.55rem);
+    font-weight: var(--kp-robot-card-badge-weight);
+    line-height: 1.02;
+    text-align: center;
+  }
+
+  .robot-card__content {
+    display: grid;
+    gap: var(--kp-robot-card-content-gap);
+    min-width: 0;
+    padding: var(--kp-robot-card-content-padding-block-start) var(--kp-robot-card-content-padding-inline) 0;
+  }
+
+  .robot-card__category,
+  .robot-card__title,
+  .robot-card__description,
+  .robot-card__price,
+  .robot-card__disclaimer {
+    margin: 0;
+  }
+
+  .robot-card__category {
+    color: var(--kp-robot-card-category-color);
+    font-size: var(--kp-robot-card-category-size);
+    font-weight: var(--kp-label-weight);
+    letter-spacing: var(--kp-label-letter-spacing);
+    line-height: var(--kp-robot-card-category-line-height);
+    text-transform: uppercase;
+  }
+
+  .robot-card__title {
+    color: var(--kp-robot-card-title-color);
+    font-family: var(--kp-robot-card-title-family);
+    font-size: var(--kp-robot-card-title-size);
+    font-weight: var(--kp-robot-card-title-weight);
+    letter-spacing: var(--kp-robot-card-title-letter-spacing);
+    line-height: var(--kp-robot-card-title-line-height);
+  }
+
+  .robot-card__description,
+  .robot-card__disclaimer {
+    color: var(--kp-robot-card-description-color);
+    font-size: var(--kp-robot-card-description-size);
+  }
+
+  .robot-card__description {
+    font-weight: var(--kp-robot-card-description-weight);
+    line-height: var(--kp-robot-card-description-line-height);
+  }
+
+  .robot-card__price {
+    color: var(--kp-robot-card-price-color);
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-robot-card-price-size);
+    font-weight: var(--kp-heading-weight);
+    line-height: var(--kp-robot-card-price-line-height);
+  }
+
+  .robot-card__price-group {
+    display: grid;
+    gap: var(--kp-robot-card-content-gap);
+  }
+
+  .robot-card__disclaimer {
+    font-size: var(--kp-label-size);
+  }
+
+  .robot-card__link {
+    width: fit-content;
+    color: var(--kp-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: var(--kp-heading-weight);
+    text-underline-offset: var(--kp-card-gap);
+  }
+
+  .robot-card__link:focus-visible {
+    outline: var(--kp-robot-card-focus-width) solid var(--kp-robot-card-focus-color);
+    outline-offset: var(--kp-card-gap);
+  }
+
+  .robot-card__category,
+  .robot-card__title,
+  .robot-card__description,
+  .robot-card__price,
+  .robot-card__disclaimer,
+  .robot-card__link {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+</style>

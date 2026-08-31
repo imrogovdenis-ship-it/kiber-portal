@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "routing": {
+    "mode": "capability-only",
+    "enabled": false,
+    "destinations": []
+  },
+  "constraints": {
+    "productionContacts": "approved-public-defaults",
+    "liveLeadRouting": "disabled-until-owner-approval",
+    "analyticsProviderIds": "disabled"
+  },
+  "approvalGates": [
+    "owner approves live lead destinations"
+  ],
+  "publicContactsApproval": {
+    "approvedBy": "Александр Маркин",
+    "approvedAt": "2026-08-30T02:56:33Z",
+    "scope": "phone, email, Telegram, WhatsApp, MAX, region, legal name, INN, OGRNIP and address approved for preview/PR publication"
+  },
+  "deferredIntegrations": {
+    "telegramDuplicate": {
+      "status": "scaffolded-disabled",
+      "chat": "Заявки с сайта КИБЕР ПОРТАЛ",
+      "threads": "not-used",
+      "requiredEnv": [
+        "LEAD_ROUTING_ENABLED",
+        "TELEGRAM_BOT_TOKEN",
+        "TELEGRAM_LEADS_CHAT_ID"
+      ],
+      "messageTemplate": "owner-approved-2026-08-30"
+    },
+    "amoCrmDuplicate": {
+      "status": "scaffolded-disabled",
+      "baseUrl": "https://portalrent.amocrm.ru",
+      "accountId": 32697154,
+      "pipelineId": 10151598,
+      "unsortedStatusId": 80421598,
+      "responsibleUserId": 13632386,
+      "endpoint": "/api/v4/leads/unsorted/forms",
+      "requiredEnv": [
+        "LEAD_ROUTING_ENABLED",
+        "AMOCRM_BASE_URL",
+        "AMOCRM_ACCESS_TOKEN"
+      ],
+      "tokenStorage": "1Password op:// reference only; token must not be committed or printed"
+    },
+    "apiLeadsEndpoint": {
+      "status": "preview-dry-run-scaffolded",
+      "route": "POST /api/leads",
+      "defaultMode": "dry-run",
+      "liveModeRequires": [
+        "LEAD_ROUTING_MODE=live",
+        "LEAD_ROUTING_ENABLED=true",
+        "separate production/live-routing approval"
+      ],
+      "calls": [
+        "amoCrmDuplicate",
+        "telegramDuplicate"
+      ],
+      "productionDeploy": "not-approved"
+    }
+  }
+}

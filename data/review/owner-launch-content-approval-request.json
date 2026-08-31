@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "title": "KIBER PORTAL owner launch-content approval request",
+  "purpose": "Single approval package for the owner decisions requested before launch publication of legal pages, requisites, prices/disclaimer, contacts and launch-page texts.",
+  "productionPermissionIncluded": false,
+  "liveLeadRoutingIncluded": false,
+  "analyticsProviderIdsIncluded": false,
+  "productionDeployIncluded": false,
+  "requestedApprovals": [
+    {
+      "id": "legal_pages_publishable",
+      "label": "legal pages можно публиковать",
+      "status": "awaiting_owner_approval",
+      "scope": "Publish the four legal pages copied from the current live-site source set: privacy-policy, consent, cookie-policy and terms.",
+      "evidence": [
+        "data/legal/legal-documents.json",
+        "src/pages/privacy-policy.astro",
+        "src/pages/consent.astro",
+        "src/pages/cookie-policy.astro",
+        "src/pages/terms.astro",
+        "tests/visual/legal-four-documents.test.ts"
+      ]
+    },
+    {
+      "id": "requisites_correct",
+      "label": "реквизиты верные",
+      "status": "awaiting_owner_approval",
+      "scope": "Legal name, INN, OGRNIP and public address in shared site config and legal pages are correct for publication.",
+      "currentValues": {
+        "legalName": "ИП Маркин Александр Сергеевич",
+        "inn": "771898397717",
+        "ogrnip": "326774600084499",
+        "address": "Нижний Сусальный переулок, 9, стр. 4А"
+      },
+      "evidence": [
+        "src/config/site.ts",
+        "data/legal/legal-documents.json",
+        "src/pages/contacts.astro",
+        "src/components/layout/Footer.astro"
+      ]
+    },
+    {
+      "id": "prices_and_offer_disclaimer_ok",
+      "label": "цены/дисклеймер “Не является публичной офертой” ок",
+      "status": "awaiting_owner_approval",
+      "scope": "Published robot-card and launch-page price phrases may be shown with the non-public-offer disclaimer.",
+      "evidence": [
+        "data/models/robots.source-of-truth.json",
+        "data/models/robot-tariffs.json",
+        "docs/review/kiber-55/content-approval-pack.md",
+        "data/review/content-acceptance.json"
+      ]
+    },
+    {
+      "id": "contacts_ok",
+      "label": "контакты ок",
+      "status": "awaiting_owner_approval",
+      "scope": "Public contact channels shown on contacts/footer/CTA surfaces are acceptable for launch publication; this does not enable backend live routing.",
+      "currentValues": {
+        "phone": "+7 985 266-65-82",
+        "email": "markinas28@yandex.ru",
+        "telegram": "https://t.me/+798****6582",
+        "whatsapp": "https://wa.me/79852666582",
+        "max": "https://max.ru/u/f9LHodD0cOJFwZ694dB_W9-xhrJzZpX0harafdS1XMVgHy-gk8Sh24t5tJA"
+      },
+      "evidence": [
+        "src/config/site.ts",
+        "src/pages/contacts.astro",
+        "src/components/layout/Footer.astro",
+        "scripts/rendered-cta-flow-audit.mjs"
+      ]
+    },
+    {
+      "id": "launch_page_texts_ok",
+      "label": "тексты на launch-страницах ок",
+      "status": "awaiting_owner_approval",
+      "scope": "Visible text on home, contacts, lead request/thanks, category pages and 24 robot pages is approved for launch publication.",
+      "evidence": [
+        "docs/review/kiber-55/content-approval-pack.md",
+        "data/review/content-acceptance.json",
+        "src/pages/index.astro",
+        "src/pages/contacts.astro",
+        "src/pages/lead/request.astro"
+      ]
+    }
+  ],
+  "explicitlyExcluded": [
+    "production deploy",
+    "DNS changes",
+    "production secret changes",
+    "Yandex Metrica counter ID configuration",
+    "analytics cookies/consent activation",
+    "live Telegram or amoCRM lead delivery"
+  ]
+}

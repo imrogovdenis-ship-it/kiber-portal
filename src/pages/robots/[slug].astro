@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Pricing from '../../components/blocks/Pricing.astro';
+import Faq from '../../components/blocks/Faq.astro';
+import RobotPageHero from '../../components/blocks/RobotPageHero.astro';
+import InternalLinks from '../../components/content/InternalLinks.astro';
+import { serviceJsonLd } from '../../lib/seo';
+import { getRobotPages, type RobotPageRecord } from '../../lib/robot-pages';
+
+export async function getStaticPaths() {
+  return getRobotPages().map((robot) => ({ params: { slug: robot.slug }, props: { robot } }));
+}
+
+const { robot } = Astro.props as { robot: RobotPageRecord };
+const breadcrumbs = [
+  { name: 'Главная', url: '/' },
+  { name: robot.identity.name, url: `/robots/${robot.slug}/` },
+];
+const robotCanonicalPath = `/robots/${robot.slug}/`;
+
+const pricing = {
+  title: `Стоимость ${robot.identity.name}`,
+  disclaimer: robot.pricing.disclaimer,
+  items: [
+    { label: robot.identity.name, price: robot.pricing.display, note: 'Финальная смета зависит от длительности, программы и логистики.' },
+    { label: 'Подбор сценария', price: 'по запросу', note: 'Менеджер уточнит площадку, тайминг и ограничения.' },
+  ],
+};
+
+const faq = {
+  title: 'Что уточнит менеджер',
+  items: robot.faq.length > 0 ? robot.faq : [
+    { question: 'Можно ли подтвердить робота сразу?', answer: 'Доступность, площадка и программа подтверждаются менеджером до финальной сметы.' },
+    { question: 'Это публичная оферта?', answer: robot.pricing.disclaimer },
+  ],
+};
+---
+
+<BaseLayout
+  title={robot.seo.title}
+  description={robot.seo.description}
+  canonical={robot.seo.canonical}
+  image={robot.media.hero.src}
+  breadcrumbs={breadcrumbs}
+  jsonLd={[
+    serviceJsonLd({
+      name: `${robot.identity.name} для мероприятий`,
+      description: robot.seo.description,
+      url: robotCanonicalPath,
+      image: robot.media.hero.src,
+      category: 'Аренда роботов для мероприятий',
+    }),
+  ]}
+>
+  <main class="robot-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-45" data-robot-slug={robot.slug} data-state="ready" aria-live="polite">
+    <RobotPageHero robot={robot} />
+
+    <InternalLinks route={robotCanonicalPath} label="Следующие шаги" />
+
+    <section class="robot-page__facts" aria-label="Сервисные условия">
+      <article><h2>Формат</h2><p>Робот работает с сопровождающим специалистом.</p></article>
+      <article><h2>Сценарии</h2><p>{robot.service.scenarios.join(', ')}</p></article>
+      <article><h2>Подтверждение</h2><p>Нужна проверка менеджера перед финальным предложением.</p></article>
+    </section>
+
+    <section class="robot-page__empty" data-state="empty" aria-label="Дополнительные материалы">
+      <h2>Факты и ограничения</h2>
+      <ul>
+        {robot.facts.map((fact) => <li>{fact}</li>)}
+        {robot.service.limitations.map((limitation) => <li>{limitation}</li>)}
+      </ul>
+    </section>
+
+    <Pricing {...pricing} />
+    <Faq {...faq} />
+  </main>
+</BaseLayout>
+
+<style>
+  .robot-page {
+    display: grid;
+    gap: 0;
+    padding-block: 0 4.5rem;
+  }
+
+  .robot-page__facts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding: 3rem 0;
+  }
+
+  .robot-page__facts article,
+  .robot-page__empty {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 10%, transparent);
+    border-radius: 1.25rem;
+    background: var(--kp-reference-white);
+  }
+
+  .robot-page__empty {
+    margin-bottom: 3rem;
+  }
+
+  .robot-page__facts h2,
+  .robot-page__facts p,
+  .robot-page__empty h2,
+  .robot-page__empty p {
+    margin: 0;
+  }
+
+  .robot-page__facts h2,
+  .robot-page__empty h2 {
+    font-family: var(--kp-font-heading);
+    font-size: var(--kp-reference-title-s);
+  }
+
+  .robot-page__facts p,
+  .robot-page__empty p,
+  .robot-page__empty li {
+    color: var(--kp-reference-muted);
+    line-height: var(--kp-body-line-height);
+  }
+
+  .robot-page__empty ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  @media (max-width: 59.9375rem) {
+    .robot-page {
+      padding-block-end: 3rem;
+    }
+
+
+    .robot-page__facts {
+      grid-template-columns: 1fr;
+      padding: 2rem 0;
+    }
+  }
+</style>

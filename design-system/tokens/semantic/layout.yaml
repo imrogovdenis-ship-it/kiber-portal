@@ -1,0 +1,7 @@
+layer: semantic
+namespace: layout
+tokens:
+  layout.container.max: { type: dimension, value: "{dimension.space.1320}", css: "--kp-container-max" }
+  layout.container.inline: { type: dimension, value: "{spacing.container.gutter}", css: "--kp-container-inline" }
+  layout.content.padding: { type: dimension, value: "{spacing.padding.compact}", css: "--kp-content-padding" }
+  layout.section.block: { type: dimension, value: "{spacing.section.block}", css: "--kp-section-block" }

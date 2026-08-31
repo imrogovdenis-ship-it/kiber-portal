@@ -1,0 +1,33 @@
+---
+import type { PricingData } from '../../../design-system/schemas/fixture.schema';
+const { title, disclaimer, items } = Astro.props as PricingData;
+---
+
+<section class="robot-pricing" data-block-id="pricing" data-review-id="15">
+  <header>
+    <h2>{title}</h2>
+    <p class="robot-pricing__disclaimer" id="robot-pricing-disclaimer">{disclaimer}</p>
+  </header>
+  <div class="robot-pricing__grid">
+    {items.map((item) => (
+      <article class="robot-pricing__card" aria-describedby="robot-pricing-disclaimer">
+        <h3>{item.label}</h3>
+        <p class="robot-pricing__price">{item.price}</p>
+        <p>{item.note}</p>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .robot-pricing { display: grid; gap: var(--kp-grid-gap); padding-block: var(--kp-section-block); }
+  .robot-pricing header { display: grid; gap: var(--kp-card-gap); }
+  .robot-pricing h2, .robot-pricing h3, .robot-pricing p { margin: 0; }
+  .robot-pricing h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); line-height: 1; }
+  .robot-pricing header p, .robot-pricing__card p:not(.robot-pricing__price) { color: var(--kp-muted); }
+  .robot-pricing__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--kp-card-gap); }
+  .robot-pricing__card { display: grid; gap: var(--kp-card-gap); min-width: 0; padding: var(--kp-content-padding); border: 0.0625rem solid var(--kp-line); border-radius: 1.5rem; background: var(--kp-surface); }
+  .robot-pricing__card:focus-within { outline: 0.1875rem solid var(--kp-orange); outline-offset: 0.1875rem; }
+  .robot-pricing__price { color: var(--kp-blue); font-family: var(--kp-font-heading); font-size: var(--kp-title-s-size); font-weight: var(--kp-heading-weight); }
+  @media (min-width: 75em) { .robot-pricing__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+</style>

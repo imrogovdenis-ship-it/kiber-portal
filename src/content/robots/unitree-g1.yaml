@@ -1,0 +1,38 @@
+slug: unitree-g1
+status: draft
+identity:
+  name: Unitree G1
+  manufacturer: Unitree
+  model: G1
+seo:
+  title: Unitree G1 для мероприятий — КИБЕР ПОРТАЛ
+  description: Пилотная контентная запись робота Unitree G1 для проверки новой дизайн-системы и content schema.
+  canonical: https://www.kiber-portal.ru/robots/unitree-g1/
+media:
+  hero:
+    src: /assets/placeholders/robot-card.svg
+    alt: Серебристый робот-гуманоид Unitree G1 на светлом фоне
+  gallery: []
+service:
+  format: accompanied
+  specialist_included: true
+  standalone_rental: false
+  manager_confirmation_required: true
+  scenarios: [выставки, презентации, корпоративные мероприятия]
+  limitations: []
+  venue_requirements: []
+pricing:
+  mode: calculated
+  currency: RUB
+  display: от 150 000 ₽
+  factors: [duration, program, logistics]
+  public_offer: false
+  disclaimer: Не является публичной офертой
+facts: []
+faq: []
+review:
+  publicRender: false
+  owner: КИБЕР ПОРТАЛ content review
+  lastReviewedAt: '2026-08-27'
+  internalNotes:
+    - 'KIBER-50-REVIEW-ONLY-SENTINEL: эта рабочая заметка доказывает, что review-only поля не попадают в production HTML.'

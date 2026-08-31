@@ -1,0 +1,25 @@
+{
+  "issue": "KIBER-71",
+  "generatedAt": "2026-08-30T18:13:40.156Z",
+  "registeredEvents": [
+    "breadcrumb_click",
+    "contact_click",
+    "form_submit_intent",
+    "messenger_click",
+    "pdf_download",
+    "phone_click",
+    "robot_card_click",
+    "scroll_depth"
+  ],
+  "domEventsChecked": 361,
+  "domEventNames": [
+    "breadcrumb_click",
+    "contact_click",
+    "form_submit_intent",
+    "messenger_click",
+    "phone_click",
+    "robot_card_click"
+  ],
+  "status": "passed",
+  "failures": []
+}

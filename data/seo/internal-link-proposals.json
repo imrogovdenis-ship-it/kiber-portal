@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-79",
+  "description": "Deterministic internal-link proposals for human review. Generated proposals are not rendered publicly until explicitly approved in a later human-reviewed task.",
+  "autoPublish": false,
+  "generatedAt": "2026-08-27",
+  "inputSources": [
+    "data/seo/launch-routes.json",
+    "data/seo/semantic-core.json"
+  ],
+  "allowedStatuses": [
+    "generated_needs_review",
+    "approved",
+    "rejected",
+    "disabled"
+  ],
+  "proposals": [
+    {
+      "id": "home-to-arenda-unitree-g1",
+      "source": "cta-proof-path",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
+      "anchor": "Unitree G1 для мероприятий",
+      "reason": "Commercial home intent can point to the current pilot robot detail page after review."
+    },
+    {
+      "id": "arenda-unitree-g1-to-callback-request",
+      "source": "cta-proof-path",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/robots/arenda-unitree-g1/",
+      "targetRoute": "/lead/request/",
+      "anchor": "запросить обратный звонок по Unitree G1",
+      "reason": "Robot detail should have a reviewed conversion path; lead routing remains separately gated."
+    },
+    {
+      "id": "humanoid-category-to-arenda-unitree-g1",
+      "source": "semantic-core",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/roboty-gumanoidy/",
+      "targetRoute": "/robots/arenda-unitree-g1/",
+      "anchor": "аренда Unitree G1",
+      "reason": "Humanoid category semantic cluster aligns with the current Unitree G1 model route."
+    },
+    {
+      "id": "home-to-humanoid-category",
+      "source": "launch-route-registry",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/",
+      "targetRoute": "/roboty-gumanoidy/",
+      "anchor": "роботы-гуманоиды для мероприятий",
+      "reason": "Launch route registry marks humanoid category as sitemap-visible commercial category."
+    },
+    {
+      "id": "home-to-robot-dogs-category",
+      "source": "launch-route-registry",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/",
+      "targetRoute": "/roboty-sobaki/",
+      "anchor": "роботы-собаки для мероприятий",
+      "reason": "Launch route registry marks robot-dog category as sitemap-visible commercial category."
+    },
+    {
+      "id": "articles-to-compilations",
+      "source": "semantic-core",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/articles/",
+      "targetRoute": "/compilations/",
+      "anchor": "подборки роботов по сценариям",
+      "reason": "Informational blog traffic can propose a reviewed path to scenario collections."
+    },
+    {
+      "id": "news-to-articles",
+      "source": "launch-route-registry",
+      "status": "generated_needs_review",
+      "publicRender": false,
+      "sourceRoute": "/news/",
+      "targetRoute": "/articles/",
+      "anchor": "Блог Кибер Гоши",
+      "reason": "News index can propose a reviewed path to evergreen educational content."
+    }
+  ]
+}

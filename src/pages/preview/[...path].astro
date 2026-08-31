@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { blockRegistry } from '../../generated/block-registry';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  const enabled = process.env.DEPLOY_ENV !== 'production' && process.env.DESIGN_REVIEW_ENABLED !== 'false';
+  return enabled ? [{ params: { path: 'design-review' } }] : [];
+}
+
+const reviewBlocks: Array<{ id: string; label: string; component: any; block: any }> = ([
+  { id: 'home-hero', label: '02 · Home Hero', component: (await import('../../components/blocks/HomeHero.astro')).default },
+  { id: 'robot-card', label: '05 · Robot Card / Grid', component: (await import('../../components/blocks/RobotCard.astro')).default },
+  { id: 'faq', label: '07 · FAQ', component: (await import('../../components/blocks/Faq.astro')).default },
+  { id: 'cta-strip', label: '09 · CTA Strip', component: (await import('../../components/blocks/CtaStrip.astro')).default },
+  { id: 'pricing', label: '15 · Pricing', component: (await import('../../components/blocks/Pricing.astro')).default },
+  { id: 'lead-form', label: '31 · Lead Form', component: (await import('../../components/blocks/LeadForm.astro')).default },
+] as Array<{ id: string; label: string; component: any }>).map((entry) => {
+  const block = blockRegistry.find((candidate) => candidate.spec.id === entry.id);
+  if (!block) throw new Error(`${entry.id} is not registered`);
+  return { ...entry, block };
+});
+
+const specUrl = (id: string) => `https://github.com/imrogovdenis-ship-it/kiber-portal/blob/main/design-system/blocks/${id}.yaml`;
+---
+
+<BaseLayout title="Design review — КИБЕР ПОРТАЛ" description="Preview дизайн-системы." noindex>
+  <main class="review container" id="main-content" tabindex="-1" data-kiber-task="KIBER-32">
+    <header class="review__intro">
+      <p>Design system / visual review</p>
+      <h1>KIBER-32 · Commercial components MVP</h1>
+      <p>Hero, RobotCard/Grid, FAQ, CTA, Pricing и Form показываются с mobile/desktop/states fixtures.</p>
+    </header>
+
+    {reviewBlocks.map(({ id, label, component: Component, block }) => (
+      <section class="review__block" data-review-block={id}>
+        <header class="review__block-header">
+          <div>
+            <p>commercial MVP</p>
+            <h2>{label}</h2>
+          </div>
+          <a href={specUrl(id)}>Открыть spec</a>
+        </header>
+        <div class:list={['review__grid', id === 'robot-card' && 'review__grid--cards']}>
+          {block.fixtures.filter((fixture: any) => fixture.block_id === id).map((fixture: any) => (
+            <section class="review__case" data-viewport={fixture.viewport} data-fixture-mode={fixture.mode}>
+              <header>
+                <strong>{fixture.mode}</strong>
+                <span>{fixture.variant} · {fixture.viewport} · {fixture.source}</span>
+              </header>
+              <Component {...fixture.data} variant={fixture.variant} />
+            </section>
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+</BaseLayout>
+
+<style>
+  .review { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
+  .review__intro, .review__block { display: grid; gap: var(--kp-grid-gap); min-width: 0; }
+  .review__intro p, .review__block-header p { margin: 0; color: var(--kp-muted); }
+  .review__intro h1, .review__block-header h2 { margin: 0; font-family: var(--kp-font-heading); line-height: 1; }
+  .review__block-header { display: flex; flex-wrap: wrap; gap: var(--kp-card-gap); align-items: end; justify-content: space-between; border-top: 0.0625rem solid var(--kp-line); padding-top: var(--kp-grid-gap); }
+  .review__grid { display: grid; grid-template-columns: 1fr; gap: var(--kp-grid-gap); }
+  .review__grid--cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .review__case { display: grid; align-content: start; gap: var(--kp-content-padding); min-width: 0; }
+  .review__case > header { display: grid; min-width: 0; color: var(--kp-muted); overflow-wrap: anywhere; }
+  @media (min-width: 60em) { .review__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .review__grid--cards { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (min-width: 75em) { .review__grid--cards { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+</style>

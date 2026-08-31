@@ -1,0 +1,7 @@
+schema_version: 1
+id: breadcrumbs-default
+block_id: breadcrumbs
+variant: default
+viewport: xl
+mode: reference
+data: { items: [{ name: Главная, url: / }, { name: Каталог, url: "/#catalog" }, { name: Unitree G1, url: /robots/arenda-unitree-g1/ }] }

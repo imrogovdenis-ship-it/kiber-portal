@@ -1,0 +1,55 @@
+schema_version: 1
+id: robot-card
+review_id: "05"
+name: Robot Card
+status: pilot
+component: src/components/blocks/RobotCard.astro
+used_in: [catalog, related, collection, design-review]
+variants: [default, compact]
+tokens:
+  surface: "{robot-card.surface}"
+  image_radius: "{robot-card.image.radius}"
+  image_object_position: "{robot-card.image.object-position}"
+  image_hover_scale: "{robot-card.image.hover-scale}"
+  content_gap: "{robot-card.content.gap}"
+  content_padding_block_start: "{robot-card.content.padding-block-start}"
+  content_padding_inline: "{robot-card.content.padding-inline}"
+  title_color: "{robot-card.title.color}"
+  title_typography: "{typography.title-s.family}"
+  price_color: "{robot-card.price.color}"
+  description_color: "{robot-card.description.color}"
+  category_color: "{robot-card.category.color}"
+  badge_background: "{robot-card.badge.background}"
+  badge_inset: "{robot-card.badge.inset}"
+  focus_color: "{robot-card.focus.color}"
+content_contract:
+  required: [slug, href, title, category, price, price_disclaimer, description, analytics]
+  optional: [image, badge]
+  rules:
+    - image alt describes visible content without price or SEO keywords
+    - price disclaimer is rendered next to every published price
+    - missing image renders a neutral technical placeholder
+responsive:
+  sm: { columns: 2, variant: default }
+  md: { columns: 2, variant: default }
+  lg: { columns: 3, variant: default }
+  xl: { columns: 4, variant: default }
+accessibility:
+  landmark: article
+  image_alt_required: true
+  full_card_link: false
+  focus_visible: true
+analytics:
+  events: [robot_card_click]
+fixtures: [default, long-content, minimal, missing-optional, mobile]
+traceability:
+  - source: docs/source/reference-desktop-v9.html
+    locator: 'data-rv="05 · ROBOT CARD (каталог)"; .robot-card'
+  - source: docs/source/reference-mobile-v3.html
+    locator: 'data-rv="05"; .robot-card'
+  - source: docs/source/BLOCK-SPEC-SOURCE.csv
+    locator: row-05
+  - source: docs/source/BLOCK-HANDOFF.md
+    locator: block-05
+  - source: DESIGN-SYSTEM-TZ.md
+    locator: section-8

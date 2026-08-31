@@ -1,0 +1,15 @@
+schema_version: 1
+id: robot-card-missing-optional
+block_id: robot-card
+variant: default
+viewport: lg
+mode: missing-optional
+data:
+  slug: robot-without-media
+  href: /robots/robot-without-media/
+  title: Робот без готового изображения
+  category: Сервисный робот
+  price: По запросу
+  price_disclaimer: Не является публичной офертой
+  description: Техническое состояние до загрузки утверждённого ассета.
+  analytics: { event: robot_card_click, placement: design_review }

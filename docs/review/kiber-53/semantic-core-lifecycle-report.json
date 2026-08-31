@@ -1,0 +1,19 @@
+{
+  "issue": "KIBER-53",
+  "generatedAt": "2026-08-30T18:13:40.499Z",
+  "verifiedAt": "2026-08-27",
+  "verificationRegion": "RU",
+  "entries": 7,
+  "lifecycleCounts": {
+    "active": 4,
+    "deprecated": 1,
+    "experimental": 2
+  },
+  "intentCounts": {
+    "commercial": 2,
+    "category": 2,
+    "scenario": 1,
+    "informational": 1,
+    "brand": 1
+  }
+}

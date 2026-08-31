@@ -1,0 +1,36 @@
+---
+import { getApprovedInternalLinksForRoute } from '../../lib/internal-links';
+
+interface Props {
+  route: string;
+  label?: string;
+}
+
+const { route, label = 'Полезные ссылки' } = Astro.props;
+const links = getApprovedInternalLinksForRoute(route);
+---
+
+{links.length > 0 && (
+  <nav class="internal-links" aria-label={label} data-kiber-task="KIBER-52" data-internal-links-source="approved-registry">
+    <p class="internal-links__title">{label}</p>
+    <ul class="internal-links__list">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            data-internal-link-id={link.id}
+            data-internal-link-intent={link.intent}
+          >{link.anchor}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+<style>
+  .internal-links { display: grid; gap: 0.75rem; }
+  .internal-links__title { margin: 0; color: var(--kp-muted); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
+  .internal-links__list { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+  .internal-links a { display: inline-flex; min-height: 2.75rem; align-items: center; border: 0.0625rem solid var(--kp-line); border-radius: 62.4375rem; padding: 0.75rem 1.1rem; color: var(--kp-blue); font-weight: var(--kp-heading-weight); text-decoration: none; }
+  .internal-links a:focus-visible { outline: 0.1875rem solid var(--kp-orange); outline-offset: 0.1875rem; }
+</style>

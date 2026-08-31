@@ -1,0 +1,16 @@
+schema_version: 1
+id: site-footer-mobile
+block_id: site-footer
+variant: default
+viewport: sm
+mode: mobile
+data:
+  logo_label: КИБЕР ПОРТАЛ
+  description: "Аренда роботов для мероприятий\nв Москве и по всей России."
+  sections:
+    - { title: Главное, links: [{ href: /, label: Главное }, { href: "/#catalog", label: Каталог }, { href: /compilations, label: Подборки }, { href: /articles, label: Блог }, { href: /news, label: Новости }, { href: /contacts, label: Контакты }] }
+  phone: +7 000 000-00-00
+  email: hello@kiber-portal.ru
+  messengers: [{ href: "https://t.me/kiber_portal", label: Telegram }]
+  legal_notice: Все права защищены ©
+  legal_links: [{ href: /privacy-policy, label: "Политика обработки\nперсональных данных" }]

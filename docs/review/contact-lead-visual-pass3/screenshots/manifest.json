@@ -1,0 +1,166 @@
+{
+  "issue": "KIBER-contact-lead-visual-pass3",
+  "generatedAt": "2026-08-29T03:35:51.374Z",
+  "routes": [
+    {
+      "name": "lead-thanks",
+      "path": "/lead/thanks/"
+    },
+    {
+      "name": "roboty-gumanoidy",
+      "path": "/roboty-gumanoidy/"
+    },
+    {
+      "name": "roboty-sobaki",
+      "path": "/roboty-sobaki/"
+    },
+    {
+      "name": "contacts-footer",
+      "path": "/contacts/"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 900
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1200
+    }
+  ],
+  "screenshots": [
+    {
+      "route": "lead-thanks",
+      "path": "/lead/thanks/",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 900,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/lead-thanks-mobile.png",
+      "sha256": "5ad1f49c98593b055b0d33c973b209393652a6144b8f1ac18e91ece44e440c7e"
+    },
+    {
+      "route": "lead-thanks",
+      "path": "/lead/thanks/",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/lead-thanks-tablet.png",
+      "sha256": "a29cb5b9df67c6a2f35cabdcdbb02d4ef388a7d966014bb3f961ef65a66566b9"
+    },
+    {
+      "route": "lead-thanks",
+      "path": "/lead/thanks/",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/lead-thanks-desktop.png",
+      "sha256": "a750d49f63f4939b8b22553134b484fd6a722575631984773536f7219436023c"
+    },
+    {
+      "route": "roboty-gumanoidy",
+      "path": "/roboty-gumanoidy/",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 900,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/roboty-gumanoidy-mobile.png",
+      "sha256": "ecbf3064f382b9829a105672e5c10926592656e97b379ef66ccee8c064f111db"
+    },
+    {
+      "route": "roboty-gumanoidy",
+      "path": "/roboty-gumanoidy/",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/roboty-gumanoidy-tablet.png",
+      "sha256": "0ef55b8b3bae782f61a4356cfd2c8771261eee3ea63bc6ea775e6eba6712ce54"
+    },
+    {
+      "route": "roboty-gumanoidy",
+      "path": "/roboty-gumanoidy/",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/roboty-gumanoidy-desktop.png",
+      "sha256": "afe78d960beb976e02d848265cfa5eba6c4e3bf56ca978d4b9f05cc6580523ed"
+    },
+    {
+      "route": "roboty-sobaki",
+      "path": "/roboty-sobaki/",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 900,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/roboty-sobaki-mobile.png",
+      "sha256": "eecdc7b03d23e6a20fea0814c4e4f04fb58e4a92cec95acd9b4ab366f4126cd4"
+    },
+    {
+      "route": "roboty-sobaki",
+      "path": "/roboty-sobaki/",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/roboty-sobaki-tablet.png",
+      "sha256": "da00a4b31a96c2549ca598e43226268a49041634d87ede18db6c295bb3418959"
+    },
+    {
+      "route": "roboty-sobaki",
+      "path": "/roboty-sobaki/",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/roboty-sobaki-desktop.png",
+      "sha256": "7173ef191ce96f17ea0397c7d641ebf16f6f06ebc7be1226a0459398b861031d"
+    },
+    {
+      "route": "contacts-footer",
+      "path": "/contacts/",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 900,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/contacts-footer-mobile.png",
+      "sha256": "e78b1bcbc1616fd96fed95637fd0c0d635f722e4c203fa0aafa280670f3d5a49"
+    },
+    {
+      "route": "contacts-footer",
+      "path": "/contacts/",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/contacts-footer-tablet.png",
+      "sha256": "2a2404e5b49b83cecc134453a18552d1dea6854800b5e27ddca683659dbf5f7b"
+    },
+    {
+      "route": "contacts-footer",
+      "path": "/contacts/",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/contacts-footer-desktop.png",
+      "sha256": "bc861c39710aeb88d472a472234e23ab3b9e6e117f1a9b1bfa3da481c62f4c04"
+    }
+  ],
+  "contactSheets": [
+    {
+      "viewport": "mobile",
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/contact-sheet-mobile.png",
+      "sha256": "c00227080dc3092a0ccfae02d6e2b38270956a5ad41bfbf7cc5f592543887439"
+    },
+    {
+      "viewport": "tablet",
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/contact-sheet-tablet.png",
+      "sha256": "abac76d97bf1029d29c66e6485d481966ad38d2a513efb9cd9f64592a05997c5"
+    },
+    {
+      "viewport": "desktop",
+      "file": "docs/review/contact-lead-visual-pass3/screenshots/contact-sheet-desktop.png",
+      "sha256": "ffcdc79f43c01f02886b61d7b97f1f186448d293470a7b73f04e277f92ddcf50"
+    }
+  ]
+}

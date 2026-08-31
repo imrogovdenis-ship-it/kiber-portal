@@ -1,0 +1,48 @@
+---
+import '../styles/fonts.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/typography.css';
+import '../styles/layout.css';
+import '../styles/reference-layer.css';
+import SeoHead from '../components/layout/SeoHead.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Breadcrumbs from '../components/layout/Breadcrumbs.astro';
+import type { Breadcrumb } from '../lib/seo';
+
+type JsonLd = Record<string, unknown> | Array<Record<string, unknown>>;
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  noindex?: boolean;
+  image?: string;
+  breadcrumbs?: Breadcrumb[];
+  jsonLd?: JsonLd;
+  chrome?: boolean;
+}
+
+const { title, description, canonical, noindex = false, image, breadcrumbs = [], jsonLd, chrome = true } = Astro.props;
+const canonicalUrl = canonical ?? (Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined);
+const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <SeoHead {title} {description} canonical={canonicalUrl} {noindex} {image} />
+    {jsonLdItems.map((item) => <script type="application/ld+json" is:inline set:html={JSON.stringify(item)} />)}
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">К основному содержимому</a>
+    {chrome && (
+      <Header logo={{ src: '/images/brand/kp_logo_full_color.svg', alt: 'КИБЕР ПОРТАЛ', width: 415, height: 132 }} />
+    )}
+    {breadcrumbs.length > 1 && <Breadcrumbs items={breadcrumbs} />}
+    <slot />
+    {chrome && <Footer />}
+  </body>
+</html>

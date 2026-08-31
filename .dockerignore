@@ -1,0 +1,14 @@
+.git
+.github/*
+!.github/hermes/
+!.github/hermes/**
+.astro
+dist
+node_modules
+app
+site-export
+incoming
+artifacts
+font-work
+upload
+*.zip

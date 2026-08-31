@@ -1,0 +1,14 @@
+{
+  "issue": "KIBER-79",
+  "generatedAt": "2026-08-30T18:13:41.403Z",
+  "proposalCount": 7,
+  "statusCounts": {
+    "generated_needs_review": 7,
+    "approved": 0,
+    "rejected": 0,
+    "disabled": 0
+  },
+  "htmlFilesChecked": 38,
+  "autoPublish": false,
+  "result": "passed"
+}

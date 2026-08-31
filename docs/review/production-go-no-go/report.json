@@ -1,0 +1,18 @@
+{
+  "issue": "KIBER-production-go-no-go",
+  "status": "passed_with_no_go_blockers",
+  "decision": "NO_GO",
+  "branch": "codex/kiber-15-controlled-rebuild",
+  "head": "96107ef",
+  "blockers": 4,
+  "routesChecked": 37,
+  "robotRoutesChecked": 24,
+  "openPullRequests": [
+    14,
+    12,
+    11,
+    10,
+    8
+  ],
+  "generatedAt": "2026-08-30T18:13:57.202Z"
+}

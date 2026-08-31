@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "task": "KIBER-35",
+  "approvalStatus": "approved",
+  "approvedSource": "Telegram approval for KIBER-35 followed by PR #21 merge",
+  "approvedPr": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/21",
+  "approvedMergeCommit": "d2f21c3acd679746affd4a4610fb8106b45739a7",
+  "viewports": [
+    "desktop-1440",
+    "mobile-375"
+  ],
+  "routes": [
+    "/",
+    "/robots/unitree-g1/",
+    "/lead/request/?robot=unitree-g1",
+    "/lead/thanks/?robot=unitree-g1",
+    "/404.html"
+  ],
+  "references": [
+    {
+      "name": "home",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-home-desktop-1440.png",
+      "sha256": "8d39e41335e39e1a9f0e7bb0eb420efdf654bc2ea9cf45c4166a8fc6ab712bbb"
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "viewport": "mobile-375",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-home-mobile-375.png",
+      "sha256": "5f1bf484445c58ec197b27a0cf75b4160692a67a78b372012f6910169f45d896"
+    },
+    {
+      "name": "lead-request",
+      "route": "/lead/request/?robot=unitree-g1",
+      "viewport": "desktop-1440",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-lead-request-desktop-1440.png",
+      "sha256": "576b52435b566c8f0c60efa5972df1b70865454be4bdfe3ef9c31d6e07c933e1"
+    },
+    {
+      "name": "lead-request",
+      "route": "/lead/request/?robot=unitree-g1",
+      "viewport": "mobile-375",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-lead-request-mobile-375.png",
+      "sha256": "a02502b89d7f7d04ff75f984a2f191deac84d9e15d265568d44734e2ba356fb9"
+    },
+    {
+      "name": "lead-thanks",
+      "route": "/lead/thanks/?robot=unitree-g1",
+      "viewport": "desktop-1440",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-lead-thanks-desktop-1440.png",
+      "sha256": "268fb62faff02531e24aede8c6fdd55149917421916b92f3372c424fd4eaae70"
+    },
+    {
+      "name": "lead-thanks",
+      "route": "/lead/thanks/?robot=unitree-g1",
+      "viewport": "mobile-375",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-lead-thanks-mobile-375.png",
+      "sha256": "28d6f9794bc32f1f8a3e45b9d9fe6ee1ca6271dc1f2a48dccd6c026af568a8af"
+    },
+    {
+      "name": "not-found",
+      "route": "/404.html",
+      "viewport": "desktop-1440",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-not-found-desktop-1440.png",
+      "sha256": "6bf57769063d04465842307eebf265a49077219d462b0a34fbdbc0ed6447115a"
+    },
+    {
+      "name": "not-found",
+      "route": "/404.html",
+      "viewport": "mobile-375",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-not-found-mobile-375.png",
+      "sha256": "2fdf3c3c872e8176cda74d8fcd2d1a5740246faa86553c8783322b424ee7012b"
+    },
+    {
+      "name": "robot-unitree-g1",
+      "route": "/robots/unitree-g1/",
+      "viewport": "desktop-1440",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-robot-unitree-g1-desktop-1440.png",
+      "sha256": "3931d77fea25d27084871d6043a1e10fff4bbe8652b30ebdae00ac05050a022b"
+    },
+    {
+      "name": "robot-unitree-g1",
+      "route": "/robots/unitree-g1/",
+      "viewport": "mobile-375",
+      "file": "docs/review/kiber-35/screenshots/kiber-35-reference-robot-unitree-g1-mobile-375.png",
+      "sha256": "451d919d129dfed39961714ba6d168a26b134988f22ebb60387c38b17d4a9fc3"
+    }
+  ]
+}

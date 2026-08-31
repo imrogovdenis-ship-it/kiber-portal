@@ -1,0 +1,77 @@
+{
+  "issue": "KIBER-contact-lead-visual-pass3",
+  "status": "ready_for_owner_visual_review",
+  "scope": "Safe visual/content pass for /lead/thanks/, category pages and global footer evidence.",
+  "routes": [
+    {
+      "name": "lead-thanks",
+      "path": "/lead/thanks/",
+      "checks": [
+        "confirmation hierarchy",
+        "safe disabled routing notice",
+        "return actions"
+      ]
+    },
+    {
+      "name": "roboty-gumanoidy",
+      "path": "/roboty-gumanoidy/",
+      "checks": [
+        "category hero",
+        "approved robot cards",
+        "CTA to non-live request route"
+      ]
+    },
+    {
+      "name": "roboty-sobaki",
+      "path": "/roboty-sobaki/",
+      "checks": [
+        "category hero",
+        "approved robot cards",
+        "CTA to non-live request route"
+      ]
+    },
+    {
+      "name": "contacts-footer",
+      "path": "/contacts/",
+      "checks": [
+        "footer legal links",
+        "placeholder contacts",
+        "messenger/contact surfaces"
+      ]
+    }
+  ],
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 900
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1200
+    }
+  ],
+  "summary": {
+    "routesChecked": 4,
+    "viewportsChecked": 3,
+    "screenshotsCaptured": 12,
+    "contactSheetsCommitted": 3,
+    "blockingDefects": 0
+  },
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "leadDestinationsRemainEmpty": true,
+    "publicContactsRemainPlaceholderOnly": true
+  },
+  "approvalBoundary": "Visual review only. Does not approve production deploy, DNS, secrets, analytics IDs, real contacts, or live lead routing."
+}

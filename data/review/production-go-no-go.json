@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-production-go-no-go",
+  "generatedAt": "2026-08-30T08:17:53Z",
+  "currentBase": {
+    "repository": "imrogovdenis-ship-it/kiber-portal",
+    "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
+    "branch": "codex/kiber-15-controlled-rebuild",
+    "head": "96107ef",
+    "headTitle": "feat: add preview-safe api leads endpoint (#60)"
+  },
+  "productionDecision": {
+    "status": "NO_GO",
+    "summary": "Controlled rebuild is ready for a protected non-domain server preview, while production launch remains blocked by live lead routing, analytics/consent activation, final business/legal launch confirmation, and explicit production/DNS permission.",
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  },
+  "readiness": {
+    "routesChecked": 37,
+    "robotRoutesChecked": 24,
+    "legalRoutesPresent": [
+      "/privacy-policy/",
+      "/consent/",
+      "/cookie-policy/",
+      "/terms/"
+    ],
+    "leadRoutingEnabled": false,
+    "leadDestinations": 0,
+    "mediaProductionApproved": 24,
+    "crawlSource": "docs/review/launch-readiness-crawl/report.json",
+    "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json",
+    "publicContactsApproved": true,
+    "publicContactsEvidence": "Owner provided phone, email, Telegram/WhatsApp phone, region, legal name, address and approved preview/PR replacement on 2026-08-30."
+  },
+  "readyAreas": [
+    {
+      "id": "controlled-rebuild-base",
+      "status": "ready_for_review",
+      "evidence": "Git branch codex/kiber-15-controlled-rebuild at 5698898"
+    },
+    {
+      "id": "robot-pages",
+      "status": "structurally_ready",
+      "evidence": "24 robot routes pass robotpage/content/readiness smoke gates"
+    },
+    {
+      "id": "legal-static-pages",
+      "status": "present_needs_final_business_confirmation",
+      "evidence": "/privacy-policy/, /consent/, /cookie-policy/, /terms/ are present in readiness crawl and cross-linked"
+    },
+    {
+      "id": "contacts-lead-visual",
+      "status": "visually_approved_and_merged",
+      "evidence": "PR #40 merged after Александр approved: «PR #40 визуально утверждаю, можно мержить»"
+    },
+    {
+      "id": "ci-gates",
+      "status": "passing",
+      "evidence": "Local npm run ci passed before PR #40 merge; GitHub validate passed on PR #40"
+    },
+    {
+      "id": "media-rights-production-approval",
+      "status": "approved_by_owner_for_production_media_use",
+      "evidence": "All 24 full robot media cards approved by Александр Маркин at 2026-08-29T00:55:09Z; production deploy/DNS/secrets/live routing still not approved."
+    },
+    {
+      "id": "public-contacts",
+      "status": "approved_by_owner_for_preview_pr",
+      "evidence": "Owner input 2026-08-30: phone +7 985 266-65-82, email markinas28@yandex.ru, Telegram/WhatsApp phone, Москва, ИП Маркин Александр Сергеевич, ИНН/ОГРНИП from legal docs, address Нижний Сусальный переулок, 9, стр. 4А."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "live-lead-routing",
+      "severity": "blocking",
+      "decisionNeeded": "Утвердить live destinations и fallback-политику для заявок.",
+      "currentState": "lead routing disabled; destinations = []"
+    },
+    {
+      "id": "analytics-provider-ids",
+      "severity": "blocking",
+      "decisionNeeded": "Выбрать analytics provider, consent/cookie policy и разрешить конкретные IDs/cookies.",
+      "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
+    },
+    {
+      "id": "business-legal-launch-confirmation",
+      "severity": "blocking",
+      "decisionNeeded": "Подтвердить, что legal docs, цены, disclaimers, контакты и launch-copy можно публиковать вместе.",
+      "currentState": "content package workflow says production publish remains human-gated"
+    },
+    {
+      "id": "explicit-production-permission",
+      "severity": "blocking",
+      "decisionNeeded": "Дать явную команду на production deploy/DNS/секреты после закрытия предыдущих блокеров.",
+      "currentState": "production deploy permission is false"
+    }
+  ],
+  "openPullRequests": [
+    {
+      "number": 14,
+      "title": "feat(data): add robot price decision pack",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/14",
+      "state": "OPEN",
+      "base": "feat/kiber-27-visual-source-hierarchy",
+      "head": "hermes/kiber-42-44-price-decision-pack",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+    },
+    {
+      "number": 12,
+      "title": "KIBER-51: SEO-аудит production и baseline метаданных для cutover",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/12",
+      "state": "OPEN",
+      "base": "hermes/kiber-40-production-url-registry",
+      "head": "hermes/kiber-51-production-seo-audit",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+    },
+    {
+      "number": 11,
+      "title": "KIBER-42/KIBER-44: схема цены робота и аудит цен по 24 роботам",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/11",
+      "state": "OPEN",
+      "base": "hermes/kiber-40-production-url-registry",
+      "head": "hermes/kiber-42-robot-price-schema",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+    },
+    {
+      "number": 10,
+      "title": "KIBER-40/KIBER-41: реестр 44 production URL и решения keep/delete/redirect",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/10",
+      "state": "OPEN",
+      "base": "main",
+      "head": "hermes/kiber-40-production-url-registry",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "NONE",
+      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+    },
+    {
+      "number": 8,
+      "title": "design: controlled rebuild and Robot Card vertical pilot",
+      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/8",
+      "state": "OPEN",
+      "base": "main",
+      "head": "codex/kiber-15-controlled-rebuild",
+      "mergeabilityAtCapture": "CLEAN",
+      "ci": "SUCCESS",
+      "recommendation": "Keep as current first-preview integration branch; merge to main only after protected staging review."
+    }
+  ],
+  "ownerDecisionChecklist": [
+    "Утвердить live lead destination/backend и fallback-политику.",
+    "Утвердить analytics provider, public IDs, goals и cookie/consent policy.",
+    "Подтвердить финальный business/legal launch package: legal docs, prices, disclaimers, contacts, launch copy.",
+    "Дать отдельное явное permission на production deploy/DNS/secrets/live routing после закрытия блокеров."
+  ],
+  "nextSafeWork": [
+    "Обновить protected staging alex-kiber-staging до текущего PR #8 HEAD и дать прямую sslip.io ссылку с Basic Auth.",
+    "Провести быстрый staging smoke/crawl: health, главная, robots/category/card/contact/lead pages, 404, noindex, отсутствие live analytics и live routing.",
+    "Обновить stale readiness/go-no-go reports после последних merges, чтобы они отражали 37 routes, 24 robots, 4 production blockers и HEAD 96107ef.",
+    "Отложить analytics IDs, live lead routing, чат/магазин/PDF/редакторские фичи до review первой опубликованной версии."
+  ]
+}

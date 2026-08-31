@@ -1,0 +1,19 @@
+{
+  "issue": "KIBER-contact-lead-visual-pass3",
+  "status": "passed",
+  "routesChecked": 4,
+  "viewportsChecked": 3,
+  "screenshotsChecked": 12,
+  "contactSheetsChecked": 3,
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "leadDestinationsRemainEmpty": true,
+    "publicContactsRemainPlaceholderOnly": true
+  },
+  "failures": [],
+  "generatedAt": "2026-08-30T18:13:56.775Z"
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-63",
+  "description": "Responsive/mobile/desktop/a11y/visual QA for KIBER Portal controlled rebuild based on locally captured screenshots and automated rendered gates.",
+  "scope": {
+    "commit": "8f0e4a58ee81b183446dd058d57ed1978ad5f6e8",
+    "routesChecked": 6,
+    "viewportsChecked": 4,
+    "productionDeployChanged": false,
+    "serverPreviewUsed": false,
+    "localLoopbackUsed": true
+  },
+  "approval": {
+    "visualDirection": {
+      "status": "approved",
+      "source": "Telegram: Александр — \"Утверждаю этот этап\"",
+      "approvedAt": "2026-08-28"
+    },
+    "mergePermission": {
+      "status": "implicit_for_safe_autonomous_task",
+      "source": "Telegram: \"Выбирай следующую задачу начинай реализовывать\""
+    },
+    "production": {
+      "status": "not_requested"
+    }
+  },
+  "severityPolicy": {
+    "blockingSeverities": [
+      "critical",
+      "high"
+    ],
+    "nonBlockingSeverities": [
+      "medium",
+      "low"
+    ],
+    "doneAllowedWhenBlockingDefects": 0
+  },
+  "checks": [
+    {
+      "id": "responsive-contact-sheets",
+      "status": "passed",
+      "severity": "blocking",
+      "evidence": "docs/review/kiber-63/screenshots/manifest.json",
+      "summary": "4 viewports x 6 route first-screen sheets plus route-responsive sheets captured and approved by user."
+    },
+    {
+      "id": "a11y-source-contracts",
+      "status": "passed",
+      "severity": "blocking",
+      "evidence": "npm run test:visual",
+      "summary": "Existing a11y state tests remain green."
+    },
+    {
+      "id": "rendered-route-link-seo-contracts",
+      "status": "passed",
+      "severity": "blocking",
+      "evidence": "npm run ci",
+      "summary": "Route, SEO metadata, review isolation, internal links, content acceptance and baseline link checks remain green."
+    },
+    {
+      "id": "visual-sanity",
+      "status": "passed",
+      "severity": "blocking",
+      "evidence": "manual visual inspection of contact sheets",
+      "summary": "No critical clipping, overlap, blank page or unreadable first-screen layout observed."
+    },
+    {
+      "id": "known-nonblocking-observation",
+      "status": "noted",
+      "severity": "low",
+      "evidence": "robot contact sheets",
+      "summary": "Robot hero image area uses a large light frame; accepted as current direction, can be refined later if desired."
+    }
+  ],
+  "openDefects": [],
+  "observations": [
+    {
+      "severity": "low",
+      "category": "visual",
+      "route": "/robots/arenda-unitree-g1/",
+      "summary": "Large light hero media frame around robot image; not blocking after current visual direction approval."
+    }
+  ],
+  "summary": {
+    "routesChecked": 6,
+    "viewportsChecked": 4,
+    "screenshotsCaptured": 24,
+    "contactSheetsCommitted": 11,
+    "blockingDefects": 0,
+    "criticalDefects": 0,
+    "highDefects": 0,
+    "visualDirectionApproved": true,
+    "productionApproved": false
+  }
+}

@@ -1,0 +1,44 @@
+schema_version: 1
+id: robot-hero
+review_id: "11"
+name: Robot Detail Hero
+status: pilot
+component: src/components/blocks/RobotPageHero.astro
+used_in: [robot]
+variants: [default]
+tokens:
+  surface: "{color.surface}"
+  canvas: "{color.canvas}"
+  action: "{color.action.rest}"
+  border: "{color.border}"
+  heading: "{typography.heading.family}"
+  spacing: "{layout.content.padding}"
+content_contract:
+  required: [breadcrumbs, taxonomy, title, excerpt, price, primary, media]
+  optional: [secondary, next_steps]
+  rules:
+    - robot detail media card remains square 1:1 on mobile and tablet viewports
+    - robot image uses contained fitting in mobile/tablet square media card to avoid destructive crop
+    - desktop and landscape layouts may place media beside copy while preserving the card geometry
+    - public copy stays factual and does not promise unavailable lead destinations
+    - lead destination remains static-safe until routing/legal approvals exist
+responsive:
+  sm: { columns: 1, stacked: true, media_aspect_ratio: "1:1", media_fit: contain }
+  md: { columns: 1, stacked: true, media_aspect_ratio: "1:1", media_fit: contain }
+  lg: { columns: 2, stacked: false, media_aspect_ratio: "1:1", media_fit: cover }
+  xl: { columns: 2, stacked: false, media_aspect_ratio: "1:1", media_fit: cover }
+accessibility:
+  landmark: section
+  image_alt_required: true
+  full_card_link: false
+  focus_visible: true
+analytics:
+  events: [contact_click]
+fixtures: [default]
+traceability:
+  - source: docs/source/reference-desktop-v9.html
+    locator: 'data-rv="11 · ROBOT HERO"; .robot-hero'
+  - source: docs/source/reference-mobile-v3.html
+    locator: 'data-rv="11"; .robot-hero'
+  - source: docs/review/kiber-88/reference-visual-layer-evidence.md
+    locator: 'Second feedback pass: Robot page mobile 375 and tablet 768 image card returned to square 1:1'

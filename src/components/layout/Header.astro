@@ -1,0 +1,38 @@
+---
+import { siteConfig } from '../../config/site';
+import type { HeaderData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends Partial<HeaderData> {
+  logo?: { src?: string; alt?: string; width?: number; height?: number };
+}
+const defaultLinks = [
+  { href: '/#catalog', label: 'Каталог' },
+  { href: '/compilations', label: 'Подборки' },
+  { href: '/articles', label: 'Блог' },
+  { href: '/news', label: 'Новости' },
+  { href: '/contacts', label: 'Контакты' },
+];
+const { logo_label = 'КИБЕР ПОРТАЛ', logo, nav: links = defaultLinks, phone = siteConfig.phone, cta = { href: siteConfig.telegram, label: 'Написать нам' } } = Astro.props;
+const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
+---
+
+<header class="site-header" data-block="01-header" data-rv="01" id="site-header">
+  <div class="site-header__container">
+    <a class:list={["site-header__logo", { "site-header__logo--with-mark": Boolean(logo?.src) }]} href="/" aria-label={`${logo_label} — главная`}>
+      {logo?.src && <img class="site-header__logo-mark" src={logo.src} alt={logo.alt ?? ''} width={logo.width ?? 132} height={logo.height ?? 32} loading="eager" decoding="async" />}
+      <span class="site-header__logo-text">{logo_label}</span>
+    </a>
+    <nav class="site-header__nav" id="primary-navigation" aria-label="Основная навигация">
+      {links.map((link) => <a class="site-header__link" href={link.href}>{link.label}</a>)}
+    </nav>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href={phoneHref} data-analytics-event="phone_click" data-analytics-source="header" data-analytics-placement="top_nav" data-analytics-slug="global">{phone}</a>
+      <a class="site-header__cta" href={cta.href} data-analytics-event="contact_click" data-analytics-source="header" data-analytics-placement="primary_cta" data-analytics-slug="global">{cta.label}</a>
+    </div>
+    <button class="site-header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<script is:inline src="/scripts/site-header.js" defer></script>

@@ -1,0 +1,2534 @@
+{
+  "version": "0.1.0",
+  "status": "approved_current_table_with_public_from_price_disclaimer",
+  "source": {
+    "file": "/home/alex/.hermes/cache/documents/doc_87db8ed74cdc_КИБЕР_ПОРТАЛ_тарифы_аренды_роботов.xlsx",
+    "sheet": "Тарифы аренды роботов",
+    "extractedAt": "2026-08-24",
+    "notes": "Read via Hermes XLSX extraction. Public one_hour uses source column `от {цена} ₽ / час`; source 2-hour column is preserved as sourceOperationalTariffs.two_hours_booking."
+  },
+  "tariffDefinitions": {
+    "one_hour": {
+      "label": "1 час",
+      "public": true,
+      "sourceColumn": "1 час",
+      "description": "Реальный тариф выезда на 1 час, если применим. Это не маркетинговая ставка."
+    },
+    "four_hours": {
+      "label": "4 часа",
+      "public": true,
+      "sourceColumn": "До 4 часов",
+      "description": "Пакет до 4 часов, если применим."
+    },
+    "eight_hours": {
+      "label": "8 часов",
+      "public": true,
+      "sourceColumn": "До 8 часов (1 день)",
+      "description": "Пакет до 8 часов / 1 день."
+    },
+    "two_days": {
+      "label": "2 дня",
+      "public": true,
+      "sourceColumn": "2 дня",
+      "description": "Пакет на 2 дня."
+    },
+    "three_days": {
+      "label": "3 дня",
+      "public": true,
+      "sourceColumn": "3 дня",
+      "description": "Пакет на 3 дня."
+    },
+    "source_two_hours": {
+      "label": "2 часа",
+      "public": false,
+      "sourceColumn": "2 часа",
+      "description": "Исходная колонка XLSX. Сохраняется для minimum-order/business-review logic, но не входит в публичный набор тарифов по умолчанию."
+    },
+    "marketing_hourly_rate": {
+      "label": "от {цена} ₽ / час",
+      "public": true,
+      "sourceColumn": "от {цена} ₽ / час",
+      "description": "Маркетинговая ставка за час для карточек/входной цены. Не означает, что заказ на 1 час доступен."
+    }
+  },
+  "robots": [
+    {
+      "slug": "arenda-robota-sofiya",
+      "sourceName": "София (Sophia)",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "four_hours": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "eight_hours": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "two_days": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "three_days": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "two_hours_booking": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "request",
+        "notes": "Все тарифы по запросу; минимальная длительность определяется индивидуально."
+      },
+      "normalization": {
+        "status": "partial",
+        "priceSourceStatus": "request_only",
+        "missingTariffs": [],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "request",
+        "price": null,
+        "currency": "RUB",
+        "display": "цена по запросу",
+        "sourceValue": "по запросу",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+      }
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "sourceName": "Арди (Ardi)",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 250000,
+          "currency": "RUB",
+          "display": "250 000 ₽",
+          "sourceValue": "250 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 450000,
+          "currency": "RUB",
+          "display": "450 000 ₽",
+          "sourceValue": "450000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 600000,
+          "currency": "RUB",
+          "display": "600 000 ₽",
+          "sourceValue": "600000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 32000,
+        "currency": "RUB",
+        "display": "от 32 000 ₽ / час",
+        "sourceValue": "32000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-unitree-g1",
+      "sourceName": "Unitree G1",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "active",
+          "price": 25000,
+          "currency": "RUB",
+          "display": "25 000 ₽",
+          "sourceValue": "25000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "four_hours": {
+          "status": "active",
+          "price": 75000,
+          "currency": "RUB",
+          "display": "75 000 ₽",
+          "sourceValue": "75000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 4 часов` из XLSX."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 100000,
+          "currency": "RUB",
+          "display": "100 000 ₽",
+          "sourceValue": "100000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 180000,
+          "currency": "RUB",
+          "display": "180 000 ₽",
+          "sourceValue": "180000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 240000,
+          "currency": "RUB",
+          "display": "240 000 ₽",
+          "sourceValue": "240000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "active",
+          "price": 25000,
+          "currency": "RUB",
+          "display": "25 000 ₽",
+          "sourceValue": "25000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "two_hours_booking": {
+          "status": "active",
+          "price": 50000,
+          "currency": "RUB",
+          "display": "50 000 ₽",
+          "sourceValue": "50000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `2 часа` из XLSX."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "approved_by_owner_current_table",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
+      },
+      "normalization": {
+        "status": "approved_by_owner_current_table",
+        "priceSourceStatus": "from_xlsx",
+        "missingTariffs": [],
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 12500,
+        "currency": "RUB",
+        "display": "от 12 500 ₽ / час",
+        "sourceValue": "12500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "sourceName": "Unitree H2",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "four_hours": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "eight_hours": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "two_days": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "three_days": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": true,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        },
+        "two_hours_booking": {
+          "status": "request",
+          "price": null,
+          "currency": "RUB",
+          "display": "цена по запросу",
+          "sourceValue": "по запросу",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "request",
+        "notes": "Все тарифы по запросу; минимальная длительность определяется индивидуально."
+      },
+      "normalization": {
+        "status": "partial",
+        "priceSourceStatus": "request_only",
+        "missingTariffs": [],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "request",
+        "price": null,
+        "currency": "RUB",
+        "display": "цена по запросу",
+        "sourceValue": "по запросу",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Цена зависит от факторов проекта и не публикуется заранее."
+      }
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "sourceName": "Unitree R1",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "active",
+          "price": 25000,
+          "currency": "RUB",
+          "display": "25 000 ₽",
+          "sourceValue": "25000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "four_hours": {
+          "status": "active",
+          "price": 75000,
+          "currency": "RUB",
+          "display": "75 000 ₽",
+          "sourceValue": "75000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 4 часов` из XLSX."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 100000,
+          "currency": "RUB",
+          "display": "100 000 ₽",
+          "sourceValue": "100000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 180000,
+          "currency": "RUB",
+          "display": "180 000 ₽",
+          "sourceValue": "180000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 240000,
+          "currency": "RUB",
+          "display": "240 000 ₽",
+          "sourceValue": "240000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "active",
+          "price": 25000,
+          "currency": "RUB",
+          "display": "25 000 ₽",
+          "sourceValue": "25000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "two_hours_booking": {
+          "status": "active",
+          "price": 50000,
+          "currency": "RUB",
+          "display": "50 000 ₽",
+          "sourceValue": "50000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `2 часа` из XLSX."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "needs_review",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "from_xlsx",
+        "missingTariffs": [],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 12500,
+        "currency": "RUB",
+        "display": "от 12 500 ₽ / час",
+        "sourceValue": "12500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "sourceName": "Noetix Bumi",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "active",
+          "price": 20000,
+          "currency": "RUB",
+          "display": "20 000 ₽",
+          "sourceValue": "20000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "four_hours": {
+          "status": "active",
+          "price": 60000,
+          "currency": "RUB",
+          "display": "60 000 ₽",
+          "sourceValue": "60000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 4 часов` из XLSX."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 80000,
+          "currency": "RUB",
+          "display": "80 000 ₽",
+          "sourceValue": "80000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 144000,
+          "currency": "RUB",
+          "display": "144 000 ₽",
+          "sourceValue": "144000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 192000,
+          "currency": "RUB",
+          "display": "192 000 ₽",
+          "sourceValue": "192000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "active",
+          "price": 20000,
+          "currency": "RUB",
+          "display": "20 000 ₽",
+          "sourceValue": "20000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "two_hours_booking": {
+          "status": "active",
+          "price": 40000,
+          "currency": "RUB",
+          "display": "40 000 ₽",
+          "sourceValue": "40000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `2 часа` из XLSX."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "needs_review",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "from_xlsx",
+        "missingTariffs": [],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 10000,
+        "currency": "RUB",
+        "display": "от 10 000 ₽ / час",
+        "sourceValue": "10000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-agibot-x2",
+      "sourceName": "Agibot X2",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "active",
+          "price": 50000,
+          "currency": "RUB",
+          "display": "50 000 ₽",
+          "sourceValue": "50000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "four_hours": {
+          "status": "active",
+          "price": 150000,
+          "currency": "RUB",
+          "display": "150 000 ₽",
+          "sourceValue": "150000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 4 часов` из XLSX."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 200000,
+          "currency": "RUB",
+          "display": "200 000 ₽",
+          "sourceValue": "200000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 350000,
+          "currency": "RUB",
+          "display": "350 000 ₽",
+          "sourceValue": "350000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 480000,
+          "currency": "RUB",
+          "display": "480 000 ₽",
+          "sourceValue": "480000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "active",
+          "price": 50000,
+          "currency": "RUB",
+          "display": "50 000 ₽",
+          "sourceValue": "50000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "two_hours_booking": {
+          "status": "active",
+          "price": 100000,
+          "currency": "RUB",
+          "display": "100 000 ₽",
+          "sourceValue": "100000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `2 часа` из XLSX."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "needs_review",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "from_xlsx",
+        "missingTariffs": [],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 25000,
+        "currency": "RUB",
+        "display": "от 25 000 ₽ / час",
+        "sourceValue": "25000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "sourceName": "Promobot V4",
+      "category": "humanoid_promo",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 75000,
+          "currency": "RUB",
+          "display": "75 000 ₽",
+          "sourceValue": "75 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 140000,
+          "currency": "RUB",
+          "display": "140 000 ₽",
+          "sourceValue": "140000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 195000,
+          "currency": "RUB",
+          "display": "195 000 ₽",
+          "sourceValue": "195 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 10000,
+        "currency": "RUB",
+        "display": "от 10 000 ₽ / час",
+        "sourceValue": "10000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "sourceName": "Unitree Go2",
+      "category": "robot_dogs_platforms",
+      "tariffs": {
+        "one_hour": {
+          "status": "active",
+          "price": 12500,
+          "currency": "RUB",
+          "display": "12 500 ₽",
+          "sourceValue": "12500",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "four_hours": {
+          "status": "active",
+          "price": 37500,
+          "currency": "RUB",
+          "display": "37 500 ₽",
+          "sourceValue": "37500",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 4 часов` из XLSX."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 50000,
+          "currency": "RUB",
+          "display": "50 000 ₽",
+          "sourceValue": "50000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 90000,
+          "currency": "RUB",
+          "display": "90 000 ₽",
+          "sourceValue": "90000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 120000,
+          "currency": "RUB",
+          "display": "120 000 ₽",
+          "sourceValue": "120000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "active",
+          "price": 12500,
+          "currency": "RUB",
+          "display": "12 500 ₽",
+          "sourceValue": "12500",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "two_hours_booking": {
+          "status": "active",
+          "price": 25000,
+          "currency": "RUB",
+          "display": "25 000 ₽",
+          "sourceValue": "25000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `2 часа` из XLSX."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "approved_by_owner_current_table",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
+      },
+      "normalization": {
+        "status": "approved_by_owner_current_table",
+        "priceSourceStatus": "from_xlsx",
+        "missingTariffs": [],
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 6250,
+        "currency": "RUB",
+        "display": "от 6 250 ₽ / час",
+        "sourceValue": "6250",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "sourceName": "Xiaomi Cyberdog 2",
+      "category": "robot_dogs_platforms",
+      "tariffs": {
+        "one_hour": {
+          "status": "active",
+          "price": 15000,
+          "currency": "RUB",
+          "display": "15 000 ₽",
+          "sourceValue": "15000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "four_hours": {
+          "status": "active",
+          "price": 45000,
+          "currency": "RUB",
+          "display": "45 000 ₽",
+          "sourceValue": "45000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 4 часов` из XLSX."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 60000,
+          "currency": "RUB",
+          "display": "60 000 ₽",
+          "sourceValue": "60000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 100000,
+          "currency": "RUB",
+          "display": "100 000 ₽",
+          "sourceValue": "100000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 140000,
+          "currency": "RUB",
+          "display": "140 000 ₽",
+          "sourceValue": "140000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "active",
+          "price": 15000,
+          "currency": "RUB",
+          "display": "15 000 ₽",
+          "sourceValue": "15000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `1 час` из XLSX."
+        },
+        "two_hours_booking": {
+          "status": "active",
+          "price": 30000,
+          "currency": "RUB",
+          "display": "30 000 ₽",
+          "sourceValue": "30000",
+          "publicVisible": false,
+          "bookable": true,
+          "notes": "Тариф `2 часа` из XLSX."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": null,
+        "status": "needs_review",
+        "notes": "В XLSX есть тариф 2 часа; нужно бизнес-подтверждение, является ли он минимальным заказом для публичной ставки за час."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "from_xlsx",
+        "missingTariffs": [],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 7500,
+        "currency": "RUB",
+        "display": "от 7 500 ₽ / час",
+        "sourceValue": "7500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "sourceName": "Inchbot L1-W",
+      "category": "robot_dogs_platforms",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 50000,
+          "currency": "RUB",
+          "display": "50 000 ₽",
+          "sourceValue": "50000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 90000,
+          "currency": "RUB",
+          "display": "90 000 ₽",
+          "sourceValue": "90000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 120000,
+          "currency": "RUB",
+          "display": "120 000 ₽",
+          "sourceValue": "120000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 6500,
+        "currency": "RUB",
+        "display": "от 6 500 ₽ / час",
+        "sourceValue": "6500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-bellabot",
+      "sourceName": "BellaBot",
+      "category": "service_robots",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 75000,
+          "currency": "RUB",
+          "display": "75 000 ₽",
+          "sourceValue": "75 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 140000,
+          "currency": "RUB",
+          "display": "140 000 ₽",
+          "sourceValue": "140 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 195000,
+          "currency": "RUB",
+          "display": "195 000 ₽",
+          "sourceValue": "195 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 9500,
+        "currency": "RUB",
+        "display": "от 9 500 ₽ / час",
+        "sourceValue": "9500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-kettybot",
+      "sourceName": "KettyBot",
+      "category": "service_robots",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 55000,
+          "currency": "RUB",
+          "display": "55 000 ₽",
+          "sourceValue": "55 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 100000,
+          "currency": "RUB",
+          "display": "100 000 ₽",
+          "sourceValue": "100 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 135000,
+          "currency": "RUB",
+          "display": "135 000 ₽",
+          "sourceValue": "135 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 7000,
+        "currency": "RUB",
+        "display": "от 7 000 ₽ / час",
+        "sourceValue": "7000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "sourceName": "Робот-кофейня (Робобариста)",
+      "category": "service_robots",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 200000,
+          "currency": "RUB",
+          "display": "200 000 ₽",
+          "sourceValue": "200 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 380000,
+          "currency": "RUB",
+          "display": "380 000 ₽",
+          "sourceValue": "380 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 490000,
+          "currency": "RUB",
+          "display": "490 000 ₽",
+          "sourceValue": "490 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 25000,
+        "currency": "RUB",
+        "display": "от 25 000 ₽ / час",
+        "sourceValue": "25000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "sourceName": "Мини-кофейня (робот-бариста)",
+      "category": "service_robots",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 160000,
+          "currency": "RUB",
+          "display": "160 000 ₽",
+          "sourceValue": "160 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 300000,
+          "currency": "RUB",
+          "display": "300 000 ₽",
+          "sourceValue": "300 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 440000,
+          "currency": "RUB",
+          "display": "440 000 ₽",
+          "sourceValue": "440 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 20000,
+        "currency": "RUB",
+        "display": "от 20 000 ₽ / час",
+        "sourceValue": "20000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-robot-barmen",
+      "sourceName": "Робобар",
+      "category": "service_robots",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 170000,
+          "currency": "RUB",
+          "display": "170 000 ₽",
+          "sourceValue": "170 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 320000,
+          "currency": "RUB",
+          "display": "320 000 ₽",
+          "sourceValue": "320 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 450000,
+          "currency": "RUB",
+          "display": "450 000 ₽",
+          "sourceValue": "450 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 21500,
+        "currency": "RUB",
+        "display": "от 21 500 ₽ / час",
+        "sourceValue": "21500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-uv-box",
+      "sourceName": "UV-BOX",
+      "category": "service_robots",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 200000,
+          "currency": "RUB",
+          "display": "200 000 ₽",
+          "sourceValue": "200000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 360000,
+          "currency": "RUB",
+          "display": "360 000 ₽",
+          "sourceValue": "360000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 480000,
+          "currency": "RUB",
+          "display": "480 000 ₽",
+          "sourceValue": "480000",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 25000,
+        "currency": "RUB",
+        "display": "от 25 000 ₽ / час",
+        "sourceValue": "25000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "sourceName": "Робот-шашки (Робошашки)",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 90000,
+          "currency": "RUB",
+          "display": "90 000 ₽",
+          "sourceValue": "90 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 170000,
+          "currency": "RUB",
+          "display": "170 000 ₽",
+          "sourceValue": "170 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 230000,
+          "currency": "RUB",
+          "display": "230 000 ₽",
+          "sourceValue": "230 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 11500,
+        "currency": "RUB",
+        "display": "от 11 500 ₽ / час",
+        "sourceValue": "11500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-senserobot",
+      "sourceName": "Робот-шахматист (SenseRobot)",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 80000,
+          "currency": "RUB",
+          "display": "80 000 ₽",
+          "sourceValue": "80 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 150000,
+          "currency": "RUB",
+          "display": "150 000 ₽",
+          "sourceValue": "150 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 210000,
+          "currency": "RUB",
+          "display": "210 000 ₽",
+          "sourceValue": "210 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 10000,
+        "currency": "RUB",
+        "display": "от 10 000 ₽ / час",
+        "sourceValue": "10000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "sourceName": "Робот Tron",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 90000,
+          "currency": "RUB",
+          "display": "90 000 ₽",
+          "sourceValue": "90 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 170000,
+          "currency": "RUB",
+          "display": "170 000 ₽",
+          "sourceValue": "170 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 240000,
+          "currency": "RUB",
+          "display": "240 000 ₽",
+          "sourceValue": "240 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "approved_by_owner_current_table",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
+      },
+      "normalization": {
+        "status": "approved_by_owner_current_table",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 11500,
+        "currency": "RUB",
+        "display": "от 11 500 ₽ / час",
+        "sourceValue": "11500",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "sourceName": "Робот-художник",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 80000,
+          "currency": "RUB",
+          "display": "80 000 ₽",
+          "sourceValue": "80 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 150000,
+          "currency": "RUB",
+          "display": "150 000 ₽",
+          "sourceValue": "150 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 195000,
+          "currency": "RUB",
+          "display": "195 000 ₽",
+          "sourceValue": "195 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 10000,
+        "currency": "RUB",
+        "display": "от 10 000 ₽ / час",
+        "sourceValue": "10000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "sourceName": "Sketchbot",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 70000,
+          "currency": "RUB",
+          "display": "70 000 ₽",
+          "sourceValue": "70 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 130000,
+          "currency": "RUB",
+          "display": "130 000 ₽",
+          "sourceValue": "130 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 180000,
+          "currency": "RUB",
+          "display": "180 000 ₽",
+          "sourceValue": "180 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "approved_by_owner_current_table",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения. Owner approved current table interpretation on 2026-08-28.",
+        "reviewedAt": "2026-08-28"
+      },
+      "normalization": {
+        "status": "approved_by_owner_current_table",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Owner approved current table values for this previously disputed robot; retain source XLSX values and public from-price disclaimer.",
+        "reviewedAt": "2026-08-28"
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 9000,
+        "currency": "RUB",
+        "display": "от 9 000 ₽ / час",
+        "sourceValue": "9000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "sourceName": "Клипмейкер",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 150000,
+          "currency": "RUB",
+          "display": "150 000 ₽",
+          "sourceValue": "150 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 280000,
+          "currency": "RUB",
+          "display": "280 000 ₽",
+          "sourceValue": "280 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 390000,
+          "currency": "RUB",
+          "display": "390 000 ₽",
+          "sourceValue": "390 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 19000,
+        "currency": "RUB",
+        "display": "от 19 000 ₽ / час",
+        "sourceValue": "19000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    },
+    {
+      "slug": "arenda-glambot",
+      "sourceName": "GlamBot",
+      "category": "interactive_art",
+      "tariffs": {
+        "one_hour": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "four_hours": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "eight_hours": {
+          "status": "active",
+          "price": 150000,
+          "currency": "RUB",
+          "display": "150 000 ₽",
+          "sourceValue": "150 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `до 8 часов / 1 день` из XLSX."
+        },
+        "two_days": {
+          "status": "active",
+          "price": 280000,
+          "currency": "RUB",
+          "display": "280 000 ₽",
+          "sourceValue": "280 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `2 дня` из XLSX."
+        },
+        "three_days": {
+          "status": "active",
+          "price": 390000,
+          "currency": "RUB",
+          "display": "390 000 ₽",
+          "sourceValue": "390 000 ₽",
+          "publicVisible": true,
+          "bookable": true,
+          "notes": "Тариф `3 дня` из XLSX."
+        }
+      },
+      "sourceOperationalTariffs": {
+        "one_hour_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        },
+        "two_hours_booking": {
+          "status": "not_applicable",
+          "price": null,
+          "currency": "RUB",
+          "display": "",
+          "sourceValue": "нет",
+          "publicVisible": false,
+          "bookable": false,
+          "notes": "Тариф не используется для этого робота."
+        }
+      },
+      "minimumOrder": {
+        "minimumTwoHours": false,
+        "minimumDurationHours": 8,
+        "status": "needs_review",
+        "notes": "Краткие тарифы отмечены как `нет`; предварительно минимальный пакет — до 8 часов/1 день, требует подтверждения."
+      },
+      "normalization": {
+        "status": "needs_review",
+        "priceSourceStatus": "partial_from_xlsx",
+        "missingTariffs": [
+          "four_hours"
+        ],
+        "notes": "Сгенерировано из XLSX. Требуется business review для minimumOrder и публичных формулировок. Split real one_hour tariff from marketingHourlyRate."
+      },
+      "marketingHourlyRate": {
+        "status": "active",
+        "price": 19000,
+        "currency": "RUB",
+        "display": "от 19 000 ₽ / час",
+        "sourceValue": "19000",
+        "publicVisible": true,
+        "bookable": false,
+        "notes": "Публичный маркетинговый вход: ставка из колонки `от {цена} ₽ / час`, обычно производная от дневного тарифа."
+      }
+    }
+  ],
+  "unmatchedSourceRows": [],
+  "missingRobotTariffs": [],
+  "ownerDecision": {
+    "decidedAt": "2026-08-28",
+    "source": "Telegram owner decision during KIBER-89 intake",
+    "currentTableIsSourceOfTruth": true,
+    "publicPriceRule": "Show prices as “от X ₽ / час” with “Не является публичной офертой”.",
+    "disputedRobotsApproved": [
+      "arenda-unitree-g1",
+      "arenda-unitree-go2",
+      "arenda-sketchbot",
+      "arenda-robota-tron"
+    ]
+  }
+}

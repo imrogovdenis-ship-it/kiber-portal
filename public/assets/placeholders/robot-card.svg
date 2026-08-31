@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title description">
+  <title id="title">Технический placeholder робота</title>
+  <desc id="description">Заменяемая заглушка до загрузки утверждённого изображения.</desc>
+  <rect width="800" height="800" fill="white"/>
+  <circle cx="400" cy="320" r="120" fill="none" stroke="currentColor" stroke-width="24"/>
+  <path d="M260 650c0-120 63-190 140-190s140 70 140 190" fill="none" stroke="currentColor" stroke-width="24"/>
+</svg>

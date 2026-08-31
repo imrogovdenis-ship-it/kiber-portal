@@ -1,0 +1,12 @@
+{
+  "issue": "KIBER-47",
+  "status": "passed_owner_media_approval_recorded",
+  "robots": 24,
+  "assetRecords": 167,
+  "legacyHorizontalHeroImages": 24,
+  "assetRecordsIncludingLegacyHeroes": 191,
+  "productionApproved": 24,
+  "needsRightsReview": 0,
+  "productionDeployAllowed": false,
+  "generatedAt": "2026-08-31T11:43:19.225Z"
+}

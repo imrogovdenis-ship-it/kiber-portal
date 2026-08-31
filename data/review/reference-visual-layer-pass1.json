@@ -1,0 +1,54 @@
+{
+  "issue": "KIBER-88",
+  "title": "Reference visual layer pass 1",
+  "status": "approved_for_controlled_rebuild_merge",
+  "sources": [
+    "docs/source/reference-desktop-v9.html",
+    "docs/source/reference-mobile-v3.html"
+  ],
+  "strategy": {
+    "rawHtmlCopiedIntoRuntime": false,
+    "referenceHtmlUsedAsVisualSource": true,
+    "migratedThroughTokensSpecsComponentsPages": true,
+    "priorSeoContentRuntimeFoundationPreserved": true
+  },
+  "approval": {
+    "visualDirectionApprovedByUser": true,
+    "approvedScope": "HomeHero pass 1 plus RobotPage square 1:1 mobile/tablet media behavior",
+    "productionPermissionIncluded": false,
+    "approvedAt": "2026-08-28"
+  },
+  "pass1Blocks": [
+    "01-header",
+    "02-home-hero",
+    "05-robot-card",
+    "09-cta-strip",
+    "11-robot-hero",
+    "15-pricing",
+    "33-footer"
+  ],
+  "routesForScreenshots": [
+    "/",
+    "/robots/arenda-unitree-g1/",
+    "/contacts/",
+    "/lead/request/"
+  ],
+  "viewports": [
+    "375x812",
+    "768x1024",
+    "1024x768",
+    "1440x1000"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "leadRoutingChanged": false
+  },
+  "knownFollowUps": [
+    "Expand visual parity beyond pass-1 blocks to all 34 reference sections.",
+    "Replace temporary homepage representative image/geometry only after final visual approval if needed.",
+    "Keep contacts/lead routing disabled until approved destinations and legal texts exist."
+  ]
+}

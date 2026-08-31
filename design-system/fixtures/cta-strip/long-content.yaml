@@ -1,0 +1,12 @@
+schema_version: 1
+id: cta-strip-long-content
+block_id: cta-strip
+variant: default
+viewport: xl
+mode: long-content
+data:
+  title: Нужен робот под конкретную площадку? — длинная проверка переносов
+  text: Опишите дату, город, формат и ожидаемое количество гостей — вернёмся с подходящими моделями.
+  primary: { href: /contacts/, label: Написать менеджеру }
+  secondary: { href: /robots/, label: Открыть каталог }
+  analytics: { event: contact_click, block_id: cta-strip }

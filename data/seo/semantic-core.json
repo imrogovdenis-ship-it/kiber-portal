@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-53",
+  "description": "Semantic-core lifecycle registry for KIBER PORTAL launch query clusters. The registry stores review status only and does not auto-publish AI-generated links or content.",
+  "verifiedAt": "2026-08-27",
+  "verificationRegion": "RU",
+  "allowedLifecycle": ["active", "deprecated", "experimental"],
+  "entries": [
+    {
+      "id": "robot-rental-commercial",
+      "intent": "commercial",
+      "lifecycle": "active",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/",
+      "queries": ["аренда роботов", "прокат роботов", "роботы на мероприятие"],
+      "notes": "Main commercial cluster for the home page."
+    },
+    {
+      "id": "humanoid-robots-category",
+      "intent": "category",
+      "lifecycle": "active",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/roboty-gumanoidy/",
+      "queries": ["аренда робота гуманоид", "гуманоидный робот на мероприятие"],
+      "notes": "Launch category page for humanoid robots."
+    },
+    {
+      "id": "robot-dogs-category",
+      "intent": "category",
+      "lifecycle": "active",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/roboty-sobaki/",
+      "queries": ["аренда робота собаки", "робот собака на мероприятие"],
+      "notes": "Launch category page for robot dogs."
+    },
+    {
+      "id": "unitree-g1-model",
+      "intent": "commercial",
+      "lifecycle": "active",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/robots/arenda-unitree-g1/",
+      "queries": ["аренда unitree g1", "unitree g1 на мероприятие"],
+      "notes": "Launch model detail page."
+    },
+    {
+      "id": "event-compilations",
+      "intent": "scenario",
+      "lifecycle": "experimental",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/compilations/",
+      "queries": ["роботы для выставки", "роботы для презентации", "роботы для стенда"],
+      "notes": "Scenario cluster exists as a safe index shell; detailed подборки require editorial review before expansion."
+    },
+    {
+      "id": "kiber-gosha-blog",
+      "intent": "informational",
+      "lifecycle": "experimental",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/articles/",
+      "queries": ["идеи с роботами для мероприятия", "как выбрать робота на выставку"],
+      "notes": "Blog shell exists; future articles must use reviewed SEO/editorial packages."
+    },
+    {
+      "id": "legacy-tilda-route-names",
+      "intent": "brand",
+      "lifecycle": "deprecated",
+      "region": "RU",
+      "verifiedAt": "2026-08-27",
+      "primaryRoute": "/",
+      "queries": ["тильда кибер портал", "старый сайт кибер портал"],
+      "notes": "Legacy implementation terms are not public SEO targets and should not be used in public copy."
+    }
+  ]
+}

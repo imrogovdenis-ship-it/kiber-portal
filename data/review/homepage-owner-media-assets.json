@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-homepage-owner-media-assets",
+  "description": "Owner-provided homepage media assets allowed for the homepage hero/header visual layer. This records media-use approval only and is not production deploy, DNS, analytics, or live lead-routing approval.",
+  "policy": {
+    "productionUseRequiresHumanRightsApproval": true,
+    "ownerProvidedChatUploadCanBeUsedForHomepageHero": true,
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "leadRoutingChanged": false
+  },
+  "assets": [
+    {
+      "id": "home-hero-owner-20260830",
+      "role": "homepage_hero",
+      "route": "/",
+      "src": "/images/home/home-header-robot-owner-20260830.webp",
+      "projectPath": "public/images/home/home-header-robot-owner-20260830.webp",
+      "source": "owner-provided image uploaded in Telegram review thread on 2026-08-30",
+      "actualDescription": "Гуманоидный робот крупным планом на тёмном фоне, корпус развёрнут вправо, одна рука поднята в приветственном жесте.",
+      "seoAlt": "Гуманоидный робот для мероприятия на тёмном hero-изображении главной страницы КИБЕР ПОРТАЛА",
+      "caption": "Гуманоидный робот для верхнего блока главной страницы.",
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
+      "previewUseAllowed": true,
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-30T10:40:00Z",
+      "approvalScope": "media_use_only_not_production_deploy"
+    },
+    {
+      "id": "home-gosha-original-site-20260831",
+      "role": "homepage_gosha_helper_and_final_cta",
+      "route": "/",
+      "src": "/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+      "projectPath": "public/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+      "source": "original kiber-portal.ru homepage export, promoted during full homepage parity pass on 2026-08-31",
+      "actualDescription": "Кибер Гоша — улыбающийся цифровой помощник в красной шапке-ушанке, машет рукой на синем круглом фоне.",
+      "seoAlt": "Кибер Гоша цифровой помощник КИБЕР ПОРТАЛА для подбора робота на мероприятие",
+      "caption": "Кибер Гоша помогает выбрать робота под формат мероприятия.",
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
+      "previewUseAllowed": true,
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-31T00:00:00Z",
+      "approvalScope": "media_use_only_not_production_deploy"
+    }
+  ]
+}

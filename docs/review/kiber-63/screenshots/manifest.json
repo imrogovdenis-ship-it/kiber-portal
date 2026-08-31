@@ -1,0 +1,364 @@
+{
+  "issue": "KIBER-63",
+  "source": "local loopback screenshots generated from merged controlled rebuild; user approved visual direction in Telegram before this task started",
+  "commit": "8f0e4a58ee81b183446dd058d57ed1978ad5f6e8",
+  "capturedAt": "2026-08-28T04:12:54.963Z",
+  "approval": {
+    "visualDirection": {
+      "status": "approved",
+      "source": "Telegram: Александр — \"Утверждаю этот этап\"",
+      "approvedAt": "2026-08-28"
+    },
+    "mergePermission": {
+      "status": "implicit_for_safe_autonomous_task",
+      "source": "Telegram: \"Выбирай следующую задачу начинай реализовывать\""
+    },
+    "production": {
+      "status": "not_requested"
+    }
+  },
+  "routes": [
+    {
+      "name": "home",
+      "path": "/"
+    },
+    {
+      "name": "robot-unitree-g1",
+      "path": "/robots/arenda-unitree-g1/"
+    },
+    {
+      "name": "robot-bellabot",
+      "path": "/robots/arenda-bellabot/"
+    },
+    {
+      "name": "humanoids",
+      "path": "/roboty-gumanoidy/"
+    },
+    {
+      "name": "contacts",
+      "path": "/contacts/"
+    },
+    {
+      "name": "lead-request",
+      "path": "/lead/request/?robot=arenda-unitree-g1"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "deviceScaleFactor": 1,
+      "isMobile": true
+    },
+    {
+      "name": "mobile-430",
+      "width": 430,
+      "height": 932,
+      "deviceScaleFactor": 1,
+      "isMobile": true
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "deviceScaleFactor": 1,
+      "isMobile": false
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 1100,
+      "deviceScaleFactor": 1,
+      "isMobile": false
+    }
+  ],
+  "screenshots": [
+    {
+      "viewport": "mobile-375",
+      "route": "/",
+      "routeName": "home",
+      "width": 375,
+      "height": 812,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-375",
+      "route": "/robots/arenda-unitree-g1/",
+      "routeName": "robot-unitree-g1",
+      "width": 375,
+      "height": 812,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-375",
+      "route": "/robots/arenda-bellabot/",
+      "routeName": "robot-bellabot",
+      "width": 375,
+      "height": 812,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-375",
+      "route": "/roboty-gumanoidy/",
+      "routeName": "humanoids",
+      "width": 375,
+      "height": 812,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-375",
+      "route": "/contacts/",
+      "routeName": "contacts",
+      "width": 375,
+      "height": 812,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-375",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "routeName": "lead-request",
+      "width": 375,
+      "height": 812,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-430",
+      "route": "/",
+      "routeName": "home",
+      "width": 430,
+      "height": 932,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-430",
+      "route": "/robots/arenda-unitree-g1/",
+      "routeName": "robot-unitree-g1",
+      "width": 430,
+      "height": 932,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-430",
+      "route": "/robots/arenda-bellabot/",
+      "routeName": "robot-bellabot",
+      "width": 430,
+      "height": 932,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-430",
+      "route": "/roboty-gumanoidy/",
+      "routeName": "humanoids",
+      "width": 430,
+      "height": 932,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-430",
+      "route": "/contacts/",
+      "routeName": "contacts",
+      "width": 430,
+      "height": 932,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "mobile-430",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "routeName": "lead-request",
+      "width": 430,
+      "height": 932,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/",
+      "routeName": "home",
+      "width": 768,
+      "height": 1024,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/robots/arenda-unitree-g1/",
+      "routeName": "robot-unitree-g1",
+      "width": 768,
+      "height": 1024,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/robots/arenda-bellabot/",
+      "routeName": "robot-bellabot",
+      "width": 768,
+      "height": 1024,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/roboty-gumanoidy/",
+      "routeName": "humanoids",
+      "width": 768,
+      "height": 1024,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/contacts/",
+      "routeName": "contacts",
+      "width": 768,
+      "height": 1024,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "tablet-768",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "routeName": "lead-request",
+      "width": 768,
+      "height": 1024,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/",
+      "routeName": "home",
+      "width": 1440,
+      "height": 1100,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/robots/arenda-unitree-g1/",
+      "routeName": "robot-unitree-g1",
+      "width": 1440,
+      "height": 1100,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/robots/arenda-bellabot/",
+      "routeName": "robot-bellabot",
+      "width": 1440,
+      "height": 1100,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/roboty-gumanoidy/",
+      "routeName": "humanoids",
+      "width": 1440,
+      "height": 1100,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/contacts/",
+      "routeName": "contacts",
+      "width": 1440,
+      "height": 1100,
+      "kind": "captured_locally_not_committed_raw_png"
+    },
+    {
+      "viewport": "desktop-1440",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "routeName": "lead-request",
+      "width": 1440,
+      "height": 1100,
+      "kind": "captured_locally_not_committed_raw_png"
+    }
+  ],
+  "contactSheets": [
+    {
+      "name": "all-routes__mobile-desktop-fullpage-crops",
+      "file": "docs/review/kiber-63/screenshots/all-routes__mobile-desktop-fullpage-crops.jpg",
+      "bytes": 431095,
+      "width": 1136,
+      "height": 3020,
+      "sha256": "ec2e2bdb29188dbc20d6126ed62e2fad5220128494830d6050245040ca6e5206"
+    },
+    {
+      "name": "desktop-1440__first-screens-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/desktop-1440__first-screens-contact-sheet.jpg",
+      "bytes": 107391,
+      "width": 1074,
+      "height": 752,
+      "sha256": "9f4ae857139b134f025150d93184dc3e99bc0228a333b64c3e425f02afe063e3"
+    },
+    {
+      "name": "mobile-375__first-screens-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/mobile-375__first-screens-contact-sheet.jpg",
+      "bytes": 237338,
+      "width": 1074,
+      "height": 1288,
+      "sha256": "1a0be9ebb38bdeb1fb2b986b642e136ffc1c8ffcac970834a30a42bc77bb244d"
+    },
+    {
+      "name": "mobile-430__first-screens-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/mobile-430__first-screens-contact-sheet.jpg",
+      "bytes": 221054,
+      "width": 1074,
+      "height": 1288,
+      "sha256": "ad00f74aadb9068ca7624358a3f792a2500e83a390e1949f330de30bb2e2c53c"
+    },
+    {
+      "name": "route-contacts__responsive-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/route-contacts__responsive-contact-sheet.jpg",
+      "bytes": 109896,
+      "width": 1306,
+      "height": 728,
+      "sha256": "4a1866347541737ab8091fbdd197013028de074779fc41b16d0c59c0a875f138"
+    },
+    {
+      "name": "route-home__responsive-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/route-home__responsive-contact-sheet.jpg",
+      "bytes": 127876,
+      "width": 1306,
+      "height": 728,
+      "sha256": "37026e20cca3070e8e6934e169e370da4836d78590f1f6b232f797f4f500542b"
+    },
+    {
+      "name": "route-humanoids__responsive-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/route-humanoids__responsive-contact-sheet.jpg",
+      "bytes": 110157,
+      "width": 1306,
+      "height": 728,
+      "sha256": "fd2cd3c2ac0bfdc6b7b77152f187212e0b2e428467fc6a7305e32941f14a9c1d"
+    },
+    {
+      "name": "route-lead-request__responsive-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/route-lead-request__responsive-contact-sheet.jpg",
+      "bytes": 135991,
+      "width": 1306,
+      "height": 728,
+      "sha256": "9224ed0e31de668dbdaeb1b146de8730e5a6c853429114a72c1f86e2cba0fad4"
+    },
+    {
+      "name": "route-robot-bellabot__responsive-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/route-robot-bellabot__responsive-contact-sheet.jpg",
+      "bytes": 130578,
+      "width": 1306,
+      "height": 728,
+      "sha256": "bec5b46b6be71d1d73aca064aaa3c8743b16c5b380a5a38a4ef6951e610059df"
+    },
+    {
+      "name": "route-robot-unitree-g1__responsive-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/route-robot-unitree-g1__responsive-contact-sheet.jpg",
+      "bytes": 120319,
+      "width": 1306,
+      "height": 728,
+      "sha256": "07f348c3caf636b0de2a08726d5968fb14b12a9d89c3b358d6730ba24d6edf60"
+    },
+    {
+      "name": "tablet-768__first-screens-contact-sheet",
+      "file": "docs/review/kiber-63/screenshots/tablet-768__first-screens-contact-sheet.jpg",
+      "bytes": 171303,
+      "width": 1074,
+      "height": 1128,
+      "sha256": "99aa80a82be75c5251d43de735c3c1dabe11aa61972ce9d2f99b1d850137f9c9"
+    }
+  ],
+  "notes": [
+    "Raw PNG screenshots and ZIP were delivered in Telegram from /home/alex/kiber-visual-review-2026-08-28; repo keeps compact contact sheets for review evidence.",
+    "No server preview or production deploy was used."
+  ]
+}

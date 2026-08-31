@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from '../components/blocks/HomeHero.astro';
+import RobotCard from '../components/blocks/RobotCard.astro';
+import HomeGoshaQuote from '../components/blocks/HomeGoshaQuote.astro';
+import HomeImageCards from '../components/blocks/HomeImageCards.astro';
+import HomeFaqBlock from '../components/blocks/HomeFaqBlock.astro';
+import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
+import { organizationJsonLd, websiteJsonLd, faqPageJsonLd } from '../lib/seo';
+import { getRobotPages } from '../lib/robot-pages';
+import { homeArticles, homeCompilations, homeFaq, homeFinalCta, homeGosha } from '../data/home-live';
+import type { RobotCardData } from '../../design-system/schemas/fixture.schema';
+
+const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
+const categoryLabels: Record<string, string> = {
+  humanoid: 'Робот-гуманоид',
+  robot_dog: 'Робот-собака',
+  service_robot: 'Робот-официант',
+  media_robot: 'Робот для съёмки',
+  coffee_robot: 'Робо-кофейня',
+};
+
+function getFeaturedHomeRobots(limit: number) {
+  const robots = getRobotPages();
+  const bySlug = new Map(robots.map((robot) => [robot.slug, robot]));
+
+  return featuredSlugs
+    .map((slug, index) => {
+      const robot = bySlug.get(slug);
+      if (!robot) return null;
+      return {
+        slug: robot.slug,
+        href: robot.route,
+        title: robot.identity.name,
+        category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
+        price: robot.pricing.display,
+        price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
+        description: robot.seo.description.slice(0, 132),
+        badge: index === 0 ? 'Популярный выбор' : undefined,
+        image: robot.media.hero,
+        analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
+      };
+    })
+    .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+    .slice(0, limit);
+}
+
+const homeRobots = getFeaturedHomeRobots(4);
+
+const hero = {
+  eyebrow: 'Роботы для мероприятий',
+  title: 'Аренда роботов, которые держат внимание',
+  lead: 'Выберите робота под событие: мы поможем согласовать сценарий, площадку, тайминг и безопасный следующий шаг.',
+  primary: { href: '/#catalog', label: 'Смотреть каталог' },
+  secondary: { href: '/lead/request/?robot=arenda-unitree-g1', label: 'Оставить заявку' },
+  image: { src: '/images/home/home-header-robot-owner-20260830.webp', alt: 'Гуманоидный робот на тёмном фоне для мероприятий', position: '72% center' },
+  stats: [],
+  analytics: { event: 'contact_click' as const, block_id: 'home-hero' },
+};
+---
+
+<BaseLayout
+  title="Аренда роботов для мероприятий — КИБЕР ПОРТАЛ"
+  description="КИБЕР ПОРТАЛ: аренда роботов для мероприятий, карточки моделей, подбор сценария и заявка на обратный звонок."
+  canonical="https://www.kiber-portal.ru/"
+  jsonLd={[organizationJsonLd(), websiteJsonLd(), faqPageJsonLd(homeFaq)]}
+>
+  <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-home-parity-pass="full-homepage-lower-blocks">
+    <HomeHero {...hero} />
+    <HomeGoshaQuote {...homeGosha} />
+    <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
+
+    <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot" data-primary-route="/robots/arenda-unitree-g1/">
+      <div class="vertical-slice__section-copy">
+        <p>Каталог роботов</p>
+        <h2 id="pilot-robot-title">Популярные модели для мероприятий</h2>
+        <p>Карточка полностью кликабельна: фото, название и описание ведут на страницу робота.</p>
+      </div>
+      <div class="vertical-slice__card-grid">
+        {homeRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" internalLinkId={robot.slug === 'arenda-unitree-g1' ? 'approved-home-to-unitree-g1-card' : undefined} />)}
+      </div>
+    </section>
+
+    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...homeArticles} />
+    <HomeFaqBlock {...homeFaq} />
+    <HomeFinalCta {...homeFinalCta} />
+  </main>
+</BaseLayout>
+
+<style>
+  .vertical-slice { display: grid; gap: clamp(2rem, 4vw, 3.5rem); padding-block: clamp(0.75rem, 1.5vw, 1.5rem) clamp(1.5rem, 3vw, 3rem); }
+  .vertical-slice__section { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .vertical-slice__section--catalog { margin-top: clamp(2rem, 4vw, 3.5rem); }
+  .vertical-slice__section-copy { display: grid; gap: .55rem; max-width: 48rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
+  .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .vertical-slice__section-copy h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); }
+  .vertical-slice__section-copy p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  @media (max-width: 39.9375rem) { .vertical-slice__section-copy { margin-left: 0; } }
+  .vertical-slice__card-grid { display: grid; gap: clamp(1rem, 1.8vw, 1.5rem); width: 100%; }
+  @media (min-width: 60rem) {
+    .vertical-slice__card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  @media (min-width: 40rem) and (max-width: 59.9375rem) {
+    .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 39.9375rem) {
+    .vertical-slice { gap: 1.75rem; padding-bottom: 2rem; }
+  }
+</style>

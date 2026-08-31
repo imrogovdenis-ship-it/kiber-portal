@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-production-approval-gates",
+  "title": "Controlled rebuild production approval gates",
+  "description": "Single destination-free registry of the human approvals that are still required before production-impacting KIBER Portal actions. This file records boundaries only; it does not grant approval.",
+  "sourceDecisions": [
+    "data/review/owner-decisions-2026-08-28.json",
+    "data/review/launch-readiness-crawl.json",
+    "data/review/content-package-workflow.json",
+    "data/seo/production-readiness-matrix.json"
+  ],
+  "policy": {
+    "productionPermissionIncluded": false,
+    "productionContacts": "approved-public-defaults",
+    "liveLeadDestinations": "disabled",
+    "analyticsProviderIds": "disabled",
+    "noDeployDnsSecretsCookiesOrRouting": true
+  },
+  "gates": [
+    {
+      "id": "visual_direction",
+      "title": "Visual direction approval",
+      "status": "in_review",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "docs/review/kiber-63/responsive-visual-qa-evidence.md",
+        "docs/review/contact-lead-visual-pass2/evidence.md",
+        "data/review/responsive-visual-qa.json"
+      ],
+      "allowedAutonomousWork": [
+        "Prepare review screenshots and contact sheets",
+        "Run local visual QA and CI gates",
+        "Keep PRs open for explicit visual approval"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Treat screenshot approval as merge permission",
+        "Treat visual direction approval as production permission"
+      ]
+    },
+    {
+      "id": "business_legal_content",
+      "title": "Final business/legal content approval",
+      "status": "blocked_structural_only",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/review/content-acceptance.json",
+        "docs/review/kiber-55/content-approval-pack.md",
+        "data/legal/legal-documents.json",
+        "data/review/owner-launch-content-approval-request.json",
+        "docs/review/production-approval-gates/owner-launch-content-approval-request.md"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain structural content acceptance checks",
+        "Prepare approval packages without marking final approval",
+        "Prepare owner launch-content approval package without marking final approval"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Mark KIBER-55 final business/legal approved",
+        "Publish unreviewed business/legal claims"
+      ]
+    },
+    {
+      "id": "media_rights",
+      "title": "Production media rights approval",
+      "status": "approved_by_owner_for_production_media_use",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": true,
+      "evidence": [
+        "data/review/media-rights-robot-cards.json",
+        "docs/review/media-rights/robot-cards/README.md",
+        "data/review/media-rights-review-package.json",
+        "data/review/media-rights-registry.json"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain approved media-rights evidence and regression tests"
+      ],
+      "forbiddenActionsUntilApproved": [],
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-29T00:55:09Z",
+      "approvalEvidence": "All 24 full robot cards approved by Александр Маркин at 2026-08-29T00:55:09Z; first five reviewed directly, remaining accepted because built by same validated principle."
+    },
+    {
+      "id": "public_contacts",
+      "title": "Real public contact channels",
+      "status": "approved_by_owner_for_preview_pr",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": true,
+      "evidence": [
+        "src/config/site.ts",
+        "src/pages/contacts.astro",
+        "src/components/layout/Footer.astro",
+        "data/legal/legal-documents.json"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain approved public contact/requisite rendering and regression tests"
+      ],
+      "forbiddenActionsUntilApproved": [],
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-30T02:56:33Z",
+      "approvalEvidence": "Owner input approved replacement in preview/PR for public phone/email/messengers/legal name/requisites/address."
+    },
+    {
+      "id": "lead_routing",
+      "title": "Live lead routing destinations",
+      "status": "preview_dry_run_endpoint_scaffolded_live_disabled",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/lead/capability-contract.json",
+        "docs/review/kiber-54/lead-capability-contract-evidence.md",
+        "tests/visual/api-leads-endpoint.test.ts",
+        "src/pages/api/leads.ts",
+        "src/server/lead-routing/api-leads.ts"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain destination-free capability contracts",
+        "Validate preview dry-run confirmation flow without delivery",
+        "Maintain preview/dry-run /api/leads endpoint tests without live destinations"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Enable CRM, Telegram bot, WhatsApp, email or webhook delivery",
+        "Store or transmit real lead submissions"
+      ]
+    },
+    {
+      "id": "analytics_provider",
+      "title": "Analytics provider IDs and cookies",
+      "status": "disabled_yandex_metrica_deferred_until_publication_and_domain_binding",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/analytics/provider-neutral-events.json",
+        "docs/review/kiber-71/analytics-event-contract-evidence.md"
+      ],
+      "allowedAutonomousWork": [
+        "Maintain provider-neutral event contracts",
+        "Validate analytics attributes without provider IDs",
+        "Keep Yandex Metrica deferred contract without provider IDs until publication/domain binding"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Configure Yandex Metrica, pixels or analytics provider IDs",
+        "Enable analytics cookies"
+      ]
+    },
+    {
+      "id": "production_deploy",
+      "title": "Production deploy, DNS and secret changes",
+      "status": "blocked_until_explicit_production_permission",
+      "requiresExplicitHumanApproval": true,
+      "productionApproved": false,
+      "evidence": [
+        "data/review/launch-readiness-crawl.json",
+        "data/seo/production-readiness-matrix.json",
+        "docs/production-deployment-dry-run.md"
+      ],
+      "allowedAutonomousWork": [
+        "Run local builds and preview-only validation",
+        "Prepare dry-run readiness artifacts"
+      ],
+      "forbiddenActionsUntilApproved": [
+        "Deploy production",
+        "Change DNS",
+        "Touch production secrets",
+        "Modify shared Coolify, Traefik, Hermes or ai-class containers"
+      ]
+    }
+  ]
+}

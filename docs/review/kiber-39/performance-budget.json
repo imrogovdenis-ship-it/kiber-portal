@@ -1,0 +1,31 @@
+{
+  "issue": "KIBER-39",
+  "scope": "CI static performance smoke for controlled rebuild key templates",
+  "measurementProfile": {
+    "type": "static-production-build-proxy",
+    "note": "Targets mirror Core Web Vitals acceptance envelope, while CI enforces deterministic static proxies. Field RUM/Lighthouse on an agreed device/network profile must be run before final production approval."
+  },
+  "coreWebVitalsTargets": {
+    "lcpMs": 2500,
+    "inpMs": 200,
+    "cls": 0.1
+  },
+  "routes": [
+    "/",
+    "/robots/arenda-unitree-g1/",
+    "/lead/request/",
+    "/lead/thanks/"
+  ],
+  "staticBudgets": {
+    "htmlBytes": 100000,
+    "cssBytes": 140000,
+    "jsBytes": 25000,
+    "imageBytes": 120000,
+    "totalPageBytes": 250000
+  },
+  "layoutShiftGuards": {
+    "imagesRequireDimensions": true,
+    "forbidLazyFirstContentImage": true,
+    "forbidInlineLayoutMutationHandlers": true
+  }
+}

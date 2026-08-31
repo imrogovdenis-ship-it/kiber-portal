@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>КИБЕР ПОРТАЛ — reference/desktop-v9.html (desktop-эталон)</title>
+<!--
+  REFERENCE BUILD · desktop v9
+  Назначение: визуальный эталон дизайн-системы для агента-исполнителя и ревьюера.
+  Источник значений: HANDOFF.md §3–5 (приоритет), Правки.xlsx (исходник).
+  Термины: маленький = 36→24→16→10px; большой = container 1160px.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --blue-500:#0088ff;--blue-600:#005eff;--blue-50:#f4f8ff;
+  --ink-900:#25222b;--ink-700:#36323e;--grey-500:#797a91;--grey-400:#a1a2b8;
+  --white:#ffffff;--orange-500:#ff843a;
+  --font-h:"Gilroy",Arial,sans-serif;--font-b:"Montserrat",Arial,sans-serif;
+  --r-btn:24px;--tr:background-color .2s ease-in-out,color .2s ease-in-out;
+  --header-height:68px;--pad-sm-x:36px;--pad-sm-y:40px;
+}
+@media(max-width:1199px){:root{--r-btn:20px;--pad-sm-x:24px;--pad-sm-y:32px}}
+@media(max-width:959px){:root{--pad-sm-x:16px;--pad-sm-y:24px}}
+@media(max-width:639px){:root{--pad-sm-x:10px;--pad-sm-y:16px}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-b);font-weight:500;font-size:16px;line-height:1.6;color:var(--ink-700);background:var(--white);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}ul,ol{list-style:none}
+.container{width:min(100% - 40px,1160px);margin-inline:auto}
+.section{padding:72px 0}
+@media(max-width:959px){.section{padding:48px 0}}
+.rv{position:relative;outline:2px dashed #f59e0b;outline-offset:-2px;scroll-margin-top:96px}
+.rv::before{content:attr(data-rv);position:absolute;top:0;left:0;z-index:60;background:#f59e0b;color:#111;font:600 12px/1 var(--font-b);padding:6px 10px;letter-spacing:.5px}
+
+/* Типографика */
+.display-xl{font-family:var(--font-h);font-weight:700;font-size:72px;line-height:1;color:var(--ink-700)}
+.display-l{font-family:var(--font-h);font-weight:700;font-size:64px;line-height:1;color:var(--ink-700)}
+.display-m{font-family:var(--font-h);font-weight:700;font-size:44px;line-height:1;color:var(--blue-500)}
+.heading{font-family:var(--font-h);font-weight:700;font-size:34px;line-height:1;color:var(--ink-700)}
+.heading--lg{font-size:41px}
+.title-s{font-family:var(--font-h);font-weight:700;font-size:22px;line-height:1.4;color:var(--ink-700)}
+.body-text{font-family:var(--font-b);font-weight:500;font-size:16px;line-height:1.6}
+.caption{font-family:var(--font-b);font-weight:500;font-size:16px;line-height:1.4;color:var(--grey-500)}
+.label{font-family:var(--font-b);font-weight:600;font-size:14px;line-height:1.2;color:var(--grey-500)}
+@media(max-width:1199px){.display-xl{font-size:60px}.display-l{font-size:52px}.display-m{font-size:40px}.heading{font-size:28px}.heading--lg{font-size:34px}}
+@media(max-width:959px){.display-xl{font-size:48px}.display-l{font-size:48px}.heading{font-size:20px}.heading--lg{font-size:24px}}
+@media(max-width:639px){.display-xl,.display-l{font-size:36px}.display-m{font-size:28px}.title-s{font-size:18px}.caption{font-size:12px}.label{font-size:12px}.body-text{line-height:1.4}}
+
+/* Кнопки */
+.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 32px;font-family:var(--font-h);font-weight:700;font-size:14px;line-height:1;border:none;border-radius:var(--r-btn);cursor:pointer;transition:var(--tr);min-height:44px}
+.button__icon{width:14px;height:14px;flex-shrink:0}
+.button--primary{background:var(--blue-500);color:#fff}.button--primary:hover{background:var(--blue-600)}
+.button--secondary{background:#fff;color:var(--blue-500)}.button--secondary:hover{background:var(--blue-50)}
+.button--small{padding:12px 24px;font-size:13px}
+.button--ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}.button--ghost:hover{background:rgba(255,255,255,.12)}
+.button--white{background:#fff;color:var(--ink-900)}.button--white:hover{background:var(--blue-50)}
+
+/* 01 HEADER */
+.site-header{position:sticky;top:0;z-index:1000;height:var(--header-height);background:#ffffff;border-bottom:1px solid rgba(0,94,255,.1)}
+.site-header__container{height:100%;display:flex;align-items:center;gap:24px;padding:0 32px}
+.site-header__logo img{height:36px;width:auto}
+.site-header__nav{display:flex;gap:40px;margin-left:56px}
+.site-header__link{font-weight:400;font-size:15px;color:var(--grey-500);transition:color .2s}
+.site-header__link:hover{color:var(--blue-500)}
+.site-header__actions{display:flex;align-items:center;gap:24px;margin-left:auto}
+.site-header__phone{font-family:var(--font-h);font-weight:400;font-size:16px;color:var(--ink-700);transition:color .2s}
+.site-header__phone:hover{color:var(--blue-500)}
+.site-header__burger{display:none;flex-direction:column;gap:5px;padding:10px;background:none;border:none;cursor:pointer}
+.site-header__burger span{width:24px;height:2px;background:var(--ink-700)}
+@media(max-width:1199px){.site-header__nav{gap:24px;margin-left:24px}}
+@media(max-width:959px){.site-header__nav,.site-header__actions{display:none}.site-header__burger{display:flex}.site-header__container{padding:0 20px}.site-header.is-open .site-header__nav,.site-header.is-open .site-header__actions{display:flex;position:absolute;left:0;right:0;top:var(--header-height);background:#fff;border-bottom:1px solid rgba(0,94,255,.1);padding:24px 20px}.site-header.is-open .site-header__nav{flex-direction:column;gap:16px;border-bottom:none;padding-bottom:8px;margin-left:0}.site-header.is-open .site-header__actions{position:static;flex-direction:column;align-items:center;justify-content:center;gap:16px;border:none;padding-top:0;margin-left:0}.site-header.is-open .site-header__actions .button{font-size:12px;padding:10px 18px;min-height:40px}.site-header.is-open .site-header__container{flex-wrap:wrap;height:auto}}
+
+/* 02 HOME HERO */
+.home-hero{padding:var(--pad-sm-y) var(--pad-sm-x);background:var(--blue-50)}
+.home-hero__card{position:relative;overflow:hidden;border-radius:24px;background:var(--ink-900);min-height:648px;display:flex;align-items:center}
+@media(max-width:1199px){.home-hero__card{min-height:540px}}
+@media(max-width:959px){.home-hero__card{min-height:auto;flex-direction:column-reverse}}
+.home-hero__content{position:relative;z-index:2;max-width:60%;padding:80px 0 80px 80px}
+@media(max-width:1199px){.home-hero__content{max-width:70%;padding:56px}}
+@media(max-width:959px){.home-hero__content{max-width:100%;padding:20px 16px 16px}}
+.home-hero__title{color:#fff;margin-bottom:28px}
+.home-hero__subtitle{color:rgba(255,255,255,.85);margin-bottom:40px;max-width:640px}
+.home-hero__actions{display:flex;gap:16px;flex-wrap:wrap}
+.home-hero__image{position:absolute;top:0;right:0;bottom:0;width:52%;z-index:1}
+.home-hero__image img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.home-hero__image::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink-900) 0%,rgba(37,34,43,0) 45%)}
+@media(max-width:959px){.home-hero__image{position:relative;width:100%;height:165px}.home-hero__actions{flex-direction:column}.home-hero__actions .button{width:100%}}
+
+/* 03 GOSHA QUOTE */
+.gosha-quote{background:var(--blue-50)}
+.gosha-quote__inner{display:grid;grid-template-columns:140px 1fr;gap:64px;align-items:start;padding-left:max(20px,calc((100% - 1160px)/2));padding-right:var(--pad-sm-x)}
+.gosha-quote__img{width:140px;height:140px;border-radius:50%;object-fit:cover}
+.gosha-quote__lead{font-weight:700;font-size:16px;line-height:1.6;color:var(--ink-700);margin-bottom:16px}
+.gosha-quote__text{font-weight:500;font-size:16px;line-height:1.6;color:var(--ink-700);margin-bottom:24px}
+.gosha-quote__author{margin-bottom:16px}
+.gosha-quote__author-name{display:block;font-weight:600;font-size:16px;color:var(--grey-500)}
+.gosha-quote__author-role{display:block;font-weight:600;font-size:16px;color:var(--grey-400)}
+@media(max-width:959px){.gosha-quote__inner{grid-template-columns:1fr;align-items:flex-start;text-align:left;gap:20px;padding-left:var(--pad-sm-x)}.gosha-quote__img{width:120px;height:120px}}
+
+/* 04 COLLECTION CARDS */
+.section-head{margin-bottom:40px}
+.section-head__title{margin-bottom:16px}
+.section-head__subtitle{color:var(--grey-500);max-width:800px}
+.collection-section{background:var(--blue-50)}
+.collection-section .slider-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:40px}
+.collection-section .slider-head .section-head{margin-bottom:0}
+.collection-slider{padding-left:max(20px,calc((100% - 1160px)/2));padding-right:var(--pad-sm-x)}
+.drag-slider{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 var(--pad-sm-x) 8px;width:100%;cursor:grab}
+.drag-slider::-webkit-scrollbar{display:none}
+.drag-slider.is-dragging{cursor:grabbing;user-select:none;scroll-snap-type:none}
+.gallery-nav{display:flex;gap:12px;flex-shrink:0}
+.gallery-nav__btn{width:48px;height:48px;border-radius:50%;background:var(--blue-500);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--tr)}
+.gallery-nav__btn:hover{background:var(--blue-600)}
+.collection-card{position:relative;flex:0 0 370px;height:350px;border-radius:20px;overflow:hidden;scroll-snap-align:start;display:block}
+.collection-card__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.collection-card__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(37,34,43,.85) 0%,rgba(37,34,43,.30) 45%,rgba(37,34,43,.55) 100%)}
+.collection-card__content{position:relative;z-index:2;padding:28px}
+.collection-card__title{font-family:var(--font-h);font-weight:700;font-size:24px;line-height:1.2;color:#fff;margin-bottom:12px}
+.collection-card__description{font-weight:500;font-size:15px;line-height:1.5;color:rgba(255,255,255,.9);max-width:340px}
+.collection-card__btn{position:absolute;left:28px;bottom:28px;z-index:2}
+.collection-card--all{background:var(--blue-500)}
+@media(max-width:959px){.collection-card{flex-basis:320px;height:320px}.collection-section .slider-head{flex-direction:column}.gallery-nav{display:none}.collection-slider{padding-left:var(--pad-sm-x);padding-right:var(--pad-sm-x)}}
+@media(max-width:639px){.collection-card{flex-basis:85%;height:300px}.collection-card__title{font-size:20px}}
+
+/* 05 ROBOT CARD */
+.robot-grid-section{background:var(--blue-50)}
+.robot-grid__head{margin-bottom:40px}
+.robot-grid__items{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding:0 var(--pad-sm-x)}
+@media(max-width:1199px){.robot-grid__items{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:959px){.robot-grid__items{grid-template-columns:repeat(2,1fr);gap:16px}}
+.robot-card{display:block;color:inherit}
+.robot-card__image-wrapper{position:relative;padding-bottom:100%;border-radius:16px;background:var(--white);overflow:hidden}
+.robot-card__image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .3s ease-in-out}
+.robot-card:hover .robot-card__image{transform:scale(1.03)}
+.robot-card__placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--blue-500)}
+.robot-card__logo{position:absolute;top:16px;left:16px;width:28px;height:28px;color:var(--blue-500);z-index:2}
+.robot-card__badge{position:absolute;top:16px;right:16px;z-index:2;width:92px;height:92px;border-radius:50%;background:var(--orange-500);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;font-weight:500;font-size:14px;line-height:1.2}
+.robot-card__content{padding:24px 8px 0}
+.robot-card__title{font-family:var(--font-h);font-weight:700;font-size:22px;line-height:1.35;color:var(--ink-700);margin-bottom:12px}
+.robot-card__price{font-family:var(--font-h);font-weight:700;font-size:16px;line-height:1.4;color:var(--ink-700);margin-bottom:12px}
+.robot-card__description{font-weight:600;font-size:13px;line-height:1.45;color:var(--grey-500);margin-bottom:12px}
+.robot-card__category{display:block;font-weight:600;font-size:10px;line-height:1;text-transform:uppercase;letter-spacing:1px;color:var(--grey-400)}
+@media(max-width:959px){.robot-card__title{font-size:14px}.robot-card__price{font-size:14px}.robot-card__description{font-size:10px}.robot-card__badge{width:48px;height:48px;font-size:9px;padding:4px;line-height:1.1}.robot-card__content{padding:12px 2px 0}}
+
+/* 06 ARTICLE CARDS */
+.articles-section{background:var(--blue-50)}
+.articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:0 var(--pad-sm-x)}
+@media(max-width:959px){.articles-grid{grid-template-columns:1fr}}
+.article-card{border-radius:20px;overflow:hidden;border:1px solid rgba(0,94,255,.1);background:#fff;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.article-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,136,255,.1)}
+.article-card__image{aspect-ratio:16/9;background:var(--blue-50);display:flex;align-items:center;justify-content:center;color:var(--blue-500)}
+.article-card__content{padding:20px;flex:1;display:flex;flex-direction:column}
+.article-card__title{margin-bottom:8px}
+.article-card__description{font-size:14px;line-height:1.45;color:var(--grey-500);margin-bottom:16px;flex:1}
+.article-card__link{font-family:var(--font-h);font-weight:700;font-size:14px;color:var(--blue-500)}
+.block-actions{margin-top:24px}
+@media(max-width:959px){.article-card__title{font-size:14px}.article-card__description{font-size:11px}.block-actions .button{width:100%}}
+
+/* 07 FAQ */
+.faq{background:var(--blue-50)}
+.faq .section-head{text-align:left}
+.faq__items{display:flex;flex-direction:column;gap:16px}
+.faq-item{background:#fff;border-radius:16px;overflow:hidden}
+.faq-item__question{width:100%;padding:24px;background:#fff;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;font-family:var(--font-h);font-weight:700;font-size:18px;color:var(--ink-700)}
+.faq-item__icon{flex-shrink:0;color:var(--blue-500);transition:transform .3s}
+.faq-item.is-open .faq-item__icon{transform:rotate(45deg)}
+.faq-item__answer{display:none;padding:0 24px 24px;color:var(--grey-500)}
+.faq-item.is-open .faq-item__answer{display:block}
+@media(max-width:959px){.faq-item__question{padding:20px;font-size:16px}}
+
+/* 08 NEWS CARDS */
+.news-section{background:#36323e}
+.news-section .section-head__title{color:#fff}
+.news-section .section-head__subtitle{color:var(--grey-400)}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:959px){.news-grid{grid-template-columns:1fr}}
+.news-card{border-radius:16px;padding:24px;display:flex;flex-direction:column;background:#fff;transition:box-shadow .2s,transform .2s}
+.news-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,136,255,.25)}
+.news-card__date{display:block;margin-bottom:12px}
+.news-card__title{margin-bottom:8px}
+.news-card__description{font-size:14px;line-height:1.45;color:var(--grey-500);margin-bottom:16px;flex:1}
+.news-card__link{font-family:var(--font-h);font-weight:700;font-size:14px;color:var(--blue-500)}
+
+/* 09 CTA STRIP */
+.cta-strip{padding:var(--pad-sm-y) var(--pad-sm-x);background:var(--blue-50)}
+.cta-strip__card{position:relative;overflow:hidden;background:var(--blue-600);border-radius:16px;padding:72px 96px;min-height:480px;display:flex;align-items:center}
+.cta-strip__content{position:relative;z-index:2;max-width:60%}
+.cta-strip__title{color:#fff;margin-bottom:20px;text-align:left}
+.cta-strip__subtitle{color:rgba(255,255,255,.85);max-width:640px;margin-bottom:40px;text-align:left}
+.cta-strip__actions{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-start}
+.cta-strip__gosha{position:absolute;right:96px;top:50%;transform:translateY(-50%);height:78%;max-height:420px;width:auto;z-index:1}
+@media(max-width:1199px){.cta-strip__card{padding:56px 64px}.cta-strip__gosha{right:48px}}
+@media(max-width:959px){.cta-strip__card{padding:32px 20px;min-height:auto;flex-direction:column;align-items:flex-start}.cta-strip__content{max-width:100%}.cta-strip__actions{flex-direction:column}.cta-strip__actions .button{width:100%}.cta-strip__gosha{display:none}}
+
+/* 10 BREADCRUMBS */
+.breadcrumbs{padding:24px var(--pad-sm-x);background:var(--blue-50)}
+.breadcrumbs__list{display:flex;align-items:center;gap:12px;flex-wrap:wrap;list-style:none}
+.breadcrumbs__link{font-size:14px;color:var(--grey-500);transition:color .2s}
+.breadcrumbs__link:hover{color:var(--blue-500)}
+.breadcrumbs__separator{color:var(--grey-400);font-size:14px}
+.breadcrumbs__current{font-size:14px;color:var(--ink-700)}
+
+/* 11 ROBOT HERO */
+.robot-hero{padding:72px 0;background:var(--blue-50)}
+.robot-hero__inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.robot-hero__title{margin:16px 0 24px}
+.robot-hero__intro{color:var(--grey-500);margin-bottom:32px;max-width:560px}
+.robot-hero__price{display:flex;align-items:baseline;gap:8px;margin-bottom:32px}
+.robot-hero__actions{display:flex;gap:16px;flex-wrap:wrap}
+.robot-hero__image{border-radius:24px;overflow:hidden;aspect-ratio:1/1;background:var(--white)}
+.robot-hero__image img{width:100%;height:100%;object-fit:cover}
+@media(max-width:959px){.robot-hero{padding:48px 0}.robot-hero__inner{grid-template-columns:1fr;gap:20px}.robot-hero__image{order:-1}.robot-hero__title{margin:0}.robot-hero__actions{flex-direction:column}.robot-hero__actions .button{width:100%}}
+
+/* 12 ROBOT FACTS */
+.robot-facts{background:var(--blue-50)}
+.facts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 24px}
+.fact-card{background:none;border:none;padding:0}
+.fact-card__title{margin-bottom:16px}
+.fact-card__image{border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:var(--ink-900);margin-bottom:16px}
+.fact-card__image img{width:100%;height:100%;object-fit:cover}
+.fact-card__text{color:var(--grey-500)}
+@media(max-width:959px){.facts-grid{grid-template-columns:1fr;gap:32px}}
+
+/* 13 ROBOT SCENARIOS */
+.robot-scenarios{background:var(--blue-50)}
+.scenario-card{background:#fff;border:1px solid rgba(0,94,255,.1);border-radius:16px;padding:24px}
+.scenario-card__title{margin-bottom:8px}
+.scenario-card__text{color:var(--grey-500)}
+
+/* 14 GALLERY */
+.robot-gallery{background:var(--blue-50)}
+.gallery-head{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:40px}
+.gallery-slider{gap:16px}
+.gallery-slider__item{flex:0 0 480px;aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--white)}
+.gallery-slider__item img{width:100%;height:100%;object-fit:cover}
+@media(max-width:959px){.gallery-head{flex-direction:column;align-items:flex-start}.gallery-nav{display:none}}
+@media(max-width:639px){.gallery-slider__item{flex-basis:85%;aspect-ratio:1/1}}
+
+/* 15 PRICING */
+.robot-pricing{padding:0 var(--pad-sm-x) 72px;background:var(--blue-50)}
+.pricing__card{position:relative;overflow:hidden;background:var(--blue-600);border-radius:16px;padding:64px 96px;color:#fff;display:flex;align-items:center}
+.pricing__content{position:relative;z-index:2;max-width:60%;text-align:left}
+.pricing__title{font-family:var(--font-h);font-weight:700;font-size:34px;line-height:1.2;color:#fff;margin-bottom:32px;text-align:left}
+.pricing__options{display:flex;gap:48px;flex-wrap:wrap;margin-bottom:32px}
+.pricing__value{display:block;font-family:var(--font-h);font-weight:700;font-size:44px;line-height:1;color:#fff;margin-bottom:8px}
+.pricing__unit{color:rgba(255,255,255,.8)}
+.pricing__actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.pricing__note{color:rgba(255,255,255,.8);max-width:640px;text-align:left}
+.pricing__gosha{position:absolute;right:72px;bottom:-48px;height:115%;width:auto;z-index:1}
+@media(max-width:1199px){.pricing__card{padding:48px 64px}.pricing__title{font-size:28px}.pricing__gosha{right:40px}}
+@media(max-width:959px){.pricing__card{padding:32px 20px;flex-direction:column;align-items:flex-start}.pricing__content{max-width:100%}.pricing__title{font-size:22px}.pricing__options{flex-direction:column;gap:20px}.pricing__value{font-size:22px}.pricing__actions{flex-direction:column;margin-top:auto}.pricing__actions .button{width:100%}.pricing__gosha{display:none}}
+
+/* 16 COMPARISON TABLE */
+.comparison-section{background:var(--blue-50)}
+.table-wrapper{overflow-x:auto;border-radius:16px;border:1px solid #e5e7eb}
+.comparison-table{width:100%;border-collapse:collapse;background:#fff}
+.comparison-table th{font-family:var(--font-h);font-weight:700;font-size:13px;padding:16px 24px;background:var(--blue-50);border-bottom:2px solid #e5e7eb;text-align:left}
+.comparison-table td{font-size:13px;padding:16px 24px;border-bottom:1px solid #e5e7eb;line-height:1.6}
+.comparison-table td:first-child{font-weight:600;background:var(--blue-50);width:154px}
+.comparison-table tr:last-child td{border-bottom:none}
+.comparison-table--with-images{background:#fff;border-radius:16px;border:1px solid #e5e7eb;overflow:hidden}
+.comparison-robots-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:32px;background:#fff;border-bottom:2px solid #e5e7eb}
+.comparison-robot-col{text-align:center}
+.comparison-robot-col img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;margin-bottom:12px}
+.comparison-robot-col h4{font-family:var(--font-h);font-weight:700;font-size:18px;color:var(--ink-700);margin-bottom:4px}
+.comparison-robot-col p{font-size:14px;color:var(--grey-500);line-height:1.4}
+@media(max-width:959px){.comparison-table th,.comparison-table td{font-size:11px;padding:10px 12px}.comparison-table td:first-child{width:110px;position:sticky;left:0;box-shadow:1px 0 0 #e5e7eb}.comparison-table{min-width:480px}}
+
+/* 17 ARTICLE HERO */
+.article-hero{background:#36323e;padding:var(--pad-sm-y) var(--pad-sm-x)}
+.article-hero__card{position:relative;overflow:hidden;border-radius:20px;min-height:620px;display:flex;align-items:center}
+.article-hero__bg{position:absolute;inset:0}
+.article-hero__bg img{width:100%;height:100%;object-fit:cover}
+.article-hero__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(37,34,43,.85) 0%,rgba(37,34,43,.50) 55%,rgba(37,34,43,.25) 100%)}
+.article-hero__content{position:relative;z-index:2;padding:96px clamp(32px,10%,260px);max-width:1400px}
+.article-hero__meta{display:flex;gap:16px;align-items:center;margin-bottom:24px}
+.article-hero__meta .label{color:var(--grey-400)}
+.article-hero__title{color:#fff;max-width:900px;margin-bottom:24px}
+.article-hero__subtitle{color:var(--grey-400);max-width:800px}
+@media(max-width:959px){.article-hero__card{min-height:auto}.article-hero__content{padding:48px 20px}}
+
+/* 18 ARTICLE BODY */
+.article-body-section{background:var(--blue-50)}
+.article-body{max-width:800px}
+.article-body h2{margin:0 0 16px}
+.article-body p{margin-bottom:16px;color:var(--grey-500)}
+.article-body__cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px}
+.article-body__col-title{font-family:var(--font-h);font-weight:700;font-size:20px;line-height:1.4;color:var(--ink-700);margin-bottom:12px}
+.article-body__col p{color:var(--grey-500)}
+@media(max-width:959px){.article-body__cols{grid-template-columns:1fr;gap:28px}}
+
+/* 19 ACCENT KICKER */
+.kicker-section{background:#25222b}
+.accent-kicker{font-family:var(--font-h);font-weight:700;font-size:28px;line-height:1.5;color:#fff;max-width:1100px}
+@media(max-width:959px){.accent-kicker{font-size:20px}}
+
+/* 20 TEXT PAIRS */
+.text-pairs-section{background:var(--blue-50)}
+.text-pairs__row{display:grid;grid-template-columns:1fr 2fr;gap:24px;padding:20px 0;border-bottom:1px solid rgba(0,94,255,.1)}
+.text-pairs__row:last-child{border-bottom:none}
+@media(max-width:639px){.text-pairs__row{grid-template-columns:1fr;gap:8px}}
+
+/* 21 IMAGE TEXT PAIRS */
+.img-text-section{background:var(--blue-50)}
+.img-text-pairs__item{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;margin-bottom:32px}
+.img-text-pairs__item:nth-child(even){direction:rtl}
+.img-text-pairs__item:nth-child(even)>*{direction:ltr}
+.img-text-pairs__img{border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:var(--white)}
+.img-text-pairs__img img{width:100%;height:100%;object-fit:cover}
+@media(max-width:959px){.img-text-pairs__item,.img-text-pairs__item:nth-child(even){grid-template-columns:1fr;direction:ltr}}
+
+/* 22 STATS BLOCK */
+.stats-section{background:var(--blue-50)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stats-grid__item{text-align:center;background:#fff;border:1px solid rgba(0,94,255,.1);border-radius:16px;padding:32px 16px}
+.stats-grid__value{margin-bottom:8px}
+@media(max-width:959px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* 23 CHECKLIST */
+.checklist-section{background:var(--blue-50)}
+.checklist{display:grid;grid-template-columns:1fr 1fr;gap:48px 64px;max-width:none}
+.checklist__item{display:flex;gap:24px;align-items:flex-start}
+.checklist__icon{flex-shrink:0;width:48px;height:48px;border-radius:50%;background:var(--blue-500);color:#fff;display:flex;align-items:center;justify-content:center}
+.checklist__icon svg{width:24px;height:24px}
+.checklist__title{font-family:var(--font-h);font-weight:700;font-size:20px;line-height:1.3;color:var(--ink-700);margin-bottom:12px}
+.checklist__text{color:var(--grey-500)}
+.checklist--with-numbers .checklist__number{flex-shrink:0;width:48px;font-family:var(--font-h);font-weight:700;font-size:48px;line-height:1;color:rgba(0,136,255,.35)}
+@media(max-width:959px){.checklist,.checklist--with-numbers{grid-template-columns:1fr;gap:28px}.checklist--with-numbers .checklist__number{width:40px;font-size:40px}}
+
+/* 24 MEDIA FIGURE */
+.media-figure-section{background:var(--blue-50)}
+.media-figure{display:grid;grid-template-columns:7fr 3fr;gap:48px;align-items:start;margin:0}
+.media-figure__img{border-radius:20px;overflow:hidden;aspect-ratio:3/2;background:var(--white)}
+.media-figure__img img{width:100%;height:100%;object-fit:cover}
+.media-figure__lead{font-weight:700;font-size:16px;line-height:1.6;color:var(--ink-700);margin-bottom:24px}
+.media-figure__text p{color:var(--ink-700);margin-bottom:16px}
+.media-figure__text p:last-child{margin-bottom:0}
+@media(max-width:959px){.media-figure{grid-template-columns:1fr;gap:16px}}
+
+/* 25 VIDEO EMBED */
+.video-section{background:var(--blue-50)}
+.video-embed{aspect-ratio:16/9;border-radius:20px;background:var(--ink-900);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:var(--grey-400)}
+.video-embed__play{width:72px;height:72px;border-radius:50%;background:var(--blue-500);color:#fff;display:flex;align-items:center;justify-content:center}
+
+/* 26 ARTICLE ASIDE */
+.aside-section{background:var(--blue-50)}
+.aside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:0 var(--pad-sm-x)}
+@media(max-width:959px){.aside-grid{grid-template-columns:1fr}}
+.aside-card{background:#fff;border-radius:20px;border:1px solid rgba(0,94,255,.1);padding:24px;display:block;transition:box-shadow .2s,transform .2s}
+.aside-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,136,255,.1)}
+.aside-card__title{margin-bottom:8px}
+.aside-card__description{font-size:14px;line-height:1.45;color:var(--grey-500);margin-bottom:16px}
+.aside-card__link{font-family:var(--font-h);font-weight:700;font-size:14px;color:var(--blue-500)}
+.aside-actions{margin-top:24px;padding:0 var(--pad-sm-x)}
+@media(max-width:959px){.aside-actions .button{width:100%}}
+
+/* 27-29 */
+.collection-hero{background:var(--blue-50);padding:64px 0}
+.collection-hero__title{margin-bottom:16px;max-width:900px}
+.collection-hero__subtitle{color:var(--grey-500);max-width:800px}
+.intro-section{background:var(--blue-50)}
+.collection-intro{max-width:800px}
+.collection-intro h2{margin-bottom:16px}
+.collection-intro p{color:var(--grey-500);margin-bottom:16px}
+.guide-section{background:var(--blue-50)}
+.choice-guide{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.choice-guide__step{background:#fff;border:1px solid rgba(0,94,255,.1);border-radius:16px;padding:24px}
+.choice-guide__number{font-family:var(--font-h);font-weight:700;font-size:44px;color:var(--blue-500);margin-bottom:12px}
+.choice-guide__title{margin-bottom:8px}
+.choice-guide__text{color:var(--grey-500)}
+@media(max-width:959px){.choice-guide{grid-template-columns:1fr}}
+
+/* 31 LEAD FORM */
+.lead-form{max-width:480px;background:#fff;border:1px solid rgba(0,94,255,.1);border-radius:20px;overflow:hidden;padding:0}
+.lead-form__header{position:relative;background:var(--blue-500);padding:24px;min-height:210px;overflow:hidden}
+.lead-form__logo{height:40px;width:auto;filter:brightness(0) invert(1)}
+.lead-form__tagline{color:rgba(255,255,255,.9);font-size:13px;line-height:1.4;margin-top:12px}
+.lead-form__gosha{position:absolute;right:16px;bottom:0;height:190px;width:auto}
+.lead-form__body{padding:32px}
+.lead-form__title{font-family:var(--font-h);font-weight:700;font-size:24px;line-height:1.2;color:var(--ink-700);margin-bottom:8px}
+.lead-form__subtitle{color:var(--grey-500);font-size:14px;line-height:1.5;margin-bottom:24px}
+.lead-form__field{margin-bottom:16px}
+.lead-form__label{display:block;margin-bottom:8px}
+.lead-form__input{width:100%;padding:12px 16px;border:1px solid #e5e7eb;border-radius:5px;font-family:var(--font-b);font-size:16px;color:var(--ink-700);background:#fff}
+.lead-form__input:focus{outline:none;border-color:var(--blue-500)}
+.lead-form__consent{display:flex;gap:12px;align-items:flex-start;margin-bottom:24px}
+.lead-form__honeypot{display:none}
+.lead-form__note{font-size:12px;line-height:1.5;color:var(--grey-500);margin-top:16px}
+.lead-form__note a{color:var(--blue-500);text-decoration:underline}
+@media(max-width:959px){.lead-form__header{min-height:170px}.lead-form__gosha{height:150px}.lead-form__body{padding:24px 20px}}
+
+/* 34 CTA QUESTIONS */
+.cta-questions{padding:var(--pad-sm-y) var(--pad-sm-x);background:var(--blue-50)}
+.cta-questions__card{position:relative;overflow:hidden;background:var(--blue-500);border-radius:16px;padding:72px 96px;min-height:480px;display:flex;align-items:center}
+.cta-questions__content{position:relative;z-index:2;max-width:60%}
+.cta-questions__title{font-family:var(--font-h);font-weight:700;font-size:44px;line-height:1.1;color:#fff;margin-bottom:20px}
+.cta-questions__subtitle{color:rgba(255,255,255,.9);max-width:640px;margin-bottom:40px}
+.cta-questions__actions{display:flex;gap:16px;flex-wrap:wrap}
+.cta-questions__gosha{position:absolute;right:96px;top:50%;transform:translateY(-50%);height:78%;max-height:420px;width:auto;z-index:1}
+@media(max-width:1199px){.cta-questions__card{padding:56px 64px}.cta-questions__title{font-size:36px}.cta-questions__gosha{right:48px}}
+@media(max-width:959px){.cta-questions__card{padding:32px 20px;min-height:auto;flex-direction:column;align-items:flex-start}.cta-questions__content{max-width:100%}.cta-questions__title{font-size:28px}.cta-questions__actions{flex-direction:column}.cta-questions__actions .button{width:100%}.cta-questions__gosha{display:none}}
+
+/* 30 CONTACT MODAL */
+.modal{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.is-open{display:flex}
+.modal__overlay{position:absolute;inset:0;background:rgba(37,34,43,.6)}
+.modal__content{position:relative;background:#fff;border-radius:16px;padding:40px;max-width:480px;width:100%}
+.modal__close{position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;color:var(--grey-500)}
+.modal__title{margin-bottom:8px}
+.modal__subtitle{color:var(--grey-500);margin-bottom:24px}
+.messenger-buttons{display:flex;flex-direction:column;gap:12px}
+.messenger-button{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 32px;border-radius:var(--r-btn);font-family:var(--font-h);font-weight:700;font-size:14px;color:#fff;transition:var(--tr)}
+.messenger-button--telegram{background:#229ED9}.messenger-button--telegram:hover{background:#1b8ac0}
+.messenger-button--whatsapp{background:#25D366}.messenger-button--whatsapp:hover{background:#1eb557}
+@media(max-width:639px){.modal{align-items:flex-end;padding:0}.modal__content{max-width:none;width:100%;border-radius:20px 20px 0 0;padding:24px 20px calc(24px + env(safe-area-inset-bottom));max-height:90vh;overflow-y:auto}}
+
+/* 32 COOKIE BANNER */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:1500;background:var(--ink-900);color:#fff;padding:20px 0}
+.cookie-banner__inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cookie-banner.is-hidden{display:none}
+@media(max-width:639px){.cookie-banner__inner{flex-direction:column;align-items:stretch;text-align:center}.cookie-banner__inner .button{width:100%}}
+
+/* 33 FOOTER */
+.site-footer{background:var(--ink-900);color:#fff;padding:72px 0 32px}
+.site-footer__main{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:48px}
+.site-footer__logo img{height:40px;width:auto;margin-bottom:16px}
+.site-footer__description{color:var(--grey-400);font-size:14px;max-width:320px}
+.site-footer__title{font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:#fff;margin-bottom:16px}
+.site-footer__nav-list li{margin-bottom:12px}
+.site-footer__nav-list a{color:var(--grey-400);font-size:14px;transition:color .2s}
+.site-footer__nav-list a:hover{color:var(--blue-500)}
+.site-footer__phone,.site-footer__email{display:block;color:#fff;font-weight:700;margin-bottom:12px;transition:color .2s}
+.site-footer__email{font-weight:500}
+.site-footer__phone:hover,.site-footer__email:hover{color:var(--blue-500)}
+.site-footer__messengers{display:flex;gap:12px;margin-top:16px}
+.site-footer__messenger{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(255,255,255,.1);color:#fff;transition:var(--tr)}
+.site-footer__messenger:hover{background:var(--blue-500)}
+.site-footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.site-footer__legal{display:flex;gap:24px;color:var(--grey-400);font-size:14px;flex-wrap:wrap}
+.site-footer__legal-links{display:flex;gap:24px;flex-wrap:wrap}
+.site-footer__legal-links a{color:var(--grey-400);font-size:14px}
+@media(max-width:959px){.site-footer__main{grid-template-columns:1fr 1fr}}
+@media(max-width:639px){.site-footer__main{grid-template-columns:1fr}.site-footer__bottom{flex-direction:column;align-items:flex-start}}
+
+/* Sticky CTA (mobile only) */
+.mobile-cta{display:none}
+.mobile-cta-fab{display:none}
+@media(max-width:639px){
+  .mobile-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:1400;background:#fff;border-top:1px solid rgba(0,94,255,.1);padding:8px 8px calc(8px + env(safe-area-inset-bottom));align-items:center;gap:10px}
+  .mobile-cta.is-hidden{display:none}
+  .mobile-cta__price{font-family:var(--font-h);font-weight:700;font-size:14px;white-space:nowrap;padding-left:8px}
+  .mobile-cta__btn{flex:1;padding:10px 16px;font-size:13px;min-height:40px}
+  .mobile-cta__close{width:32px;height:32px;flex-shrink:0;border-radius:50%;background:transparent;border:none;color:var(--grey-400);display:flex;align-items:center;justify-content:center}
+  .mobile-cta-fab{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:var(--blue-500);color:#fff;border:none;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,136,255,.35);z-index:1400;cursor:pointer}
+  .mobile-cta-fab.is-visible{display:flex}
+  body.has-mobile-cta{padding-bottom:64px}
+}
+</style>
+</head>
+<body class="has-mobile-cta">
+
+<!-- 01 HEADER -->
+<header class="site-header rv" data-rv="01 · HEADER" id="site-header">
+  <div class="site-header__container">
+    <a href="/" class="site-header__logo"><img src="assets/logo.svg" alt="КИБЕР ПОРТАЛ"/></a>
+    <nav class="site-header__nav" aria-label="Основная навигация"><a class="site-header__link" href="/#catalog">Каталог</a><a class="site-header__link" href="/compilations">Подборки</a><a class="site-header__link" href="/articles">Блог</a><a class="site-header__link" href="/news">Новости</a><a class="site-header__link" href="/contacts">Контакты</a></nav>
+    <div class="site-header__actions">
+      <a class="site-header__phone" href="tel:+79852666582" data-analytics-event="phone_click">+7 (985) 266-65-82</a>
+      <button class="button button--primary" data-open-modal="contact-modal" data-analytics-event="contact_click">Написать нам<svg class="button__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" stroke="currentColor" stroke-width="2"/></svg></button>
+    </div>
+    <button class="site-header__burger" aria-label="Открыть меню" onclick="document.getElementById('site-header').classList.toggle('is-open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- 02 HOME HERO -->
+<section class="home-hero rv" data-rv="02 · HOME HERO">
+  <div class="home-hero__card">
+    <div class="home-hero__image"><img src="assets/robots/unitree-g1/hero.jpg" alt="Робот-гуманоид на мероприятии"/></div>
+    <div class="home-hero__content">
+      <h1 class="home-hero__title display-xl">Аренда роботов для мероприятий</h1>
+      <p class="home-hero__subtitle body-text">Взять робота в аренду «под ключ»: с доставкой, настройкой сценария и оператором на площадке — в Москве и по всей России. Подходит для выставки, корпоратива, свадьбы, детского праздника или промо-акции в торговом центре — привозим, настраиваем и сопровождаем робота до конца мероприятия.</p>
+      <div class="home-hero__actions"><a class="button button--primary" href="/#catalog">Каталог<svg class="button__icon" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v12M2 8l5 5 5-5" stroke="currentColor" stroke-width="2"/></svg></a><button class="button button--secondary" data-open-modal="contact-modal">Консультация</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 KIBER GOSHA QUOTE -->
+<section class="gosha-quote section rv" data-rv="03 · KIBER GOSHA QUOTE">
+  <div class="gosha-quote__inner">
+    <img class="gosha-quote__img" src="assets/kiber-gosha.png" alt="Кибер Гоша — цифровой помощник КИБЕР ПОРТАЛ"/>
+    <div>
+      <p class="gosha-quote__lead">— Привет, я Кибер-Гоша, ваш цифровой помощник в мире робототехники!</p>
+      <p class="gosha-quote__text">В КИБЕР ПОРТАЛ — собственный парк роботов: гуманоиды, роботы-собаки, промо-роботы, роборуки-художники и ещё два десятка моделей на любой сценарий. Не знаете как сделать выбор? Пролистайте каталог — я подскажу, кто из моих друзей подойдёт под ваше мероприятие.</p>
+      <div class="gosha-quote__author"><span class="gosha-quote__author-name">Кибер Гоша</span><span class="gosha-quote__author-role">Ваш цифровой помощник</span></div>
+      <button class="button button--primary button--small" data-open-modal="contact-modal" data-analytics-event="contact_click">Написать Гоше</button>
+    </div>
+  </div>
+</section>
+
+<!-- 04 COLLECTION CARDS -->
+<section class="collection-section section rv" data-rv="04 · COLLECTION CARDS">
+  <div class="container slider-head">
+    <div class="section-head">
+      <h2 class="section-head__title heading heading--lg">Тематические подборки роботов для аренды</h2>
+      <p class="section-head__subtitle body-text">Собрали информацию по типам роботов и сценариям использования на различных мероприятиях</p>
+    </div>
+    <div class="gallery-nav">
+      <button class="gallery-nav__btn" data-slider-prev=".collection-slider" aria-label="Назад"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5"/></svg></button>
+      <button class="gallery-nav__btn" data-slider-next=".collection-slider" aria-label="Вперёд"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5"/></svg></button>
+    </div>
+  </div>
+  <div class="drag-slider collection-slider">
+    <a class="collection-card" href="/roboty-gumanoidy"><img class="collection-card__img" src="assets/robots/unitree-g1/hero.jpg" alt="Робот-гуманоид на тёмном фоне" loading="lazy"/><div class="collection-card__overlay"></div><div class="collection-card__content"><h3 class="collection-card__title">Совсем как люди, только с батарейкой</h3><p class="collection-card__description">Расскажем, каких роботов-гуманоидов выбрать для мероприятия</p></div><span class="button button--secondary collection-card__btn">Подробнее</span></a>
+    <a class="collection-card" href="/roboty-dlya-vystavok"><img class="collection-card__img" src="assets/robots/unitree-g1/action-1.jpg" alt="Робот с экраном на спине на выставке" loading="lazy"/><div class="collection-card__overlay"></div><div class="collection-card__content"><h3 class="collection-card__title">Впечатляющие роботы для выставок</h3><p class="collection-card__description">Какой робот остановит поток посетителей у вашего стенда</p></div><span class="button button--secondary collection-card__btn">Подробнее</span></a>
+    <a class="collection-card" href="/roboty-sobaki"><img class="collection-card__img" src="assets/robots/unitree-g1/action-4.jpg" alt="Робот-гуманоид с роботом-собакой на поводке" loading="lazy"/><div class="collection-card__overlay"></div><div class="collection-card__content"><h3 class="collection-card__title">Роботы-собаки вместо цветов</h3><p class="collection-card__description">Как сделать международный женский день кибер-незабываемым</p></div><span class="button button--secondary collection-card__btn">Подробнее</span></a>
+    <a class="collection-card" href="/arenda-unitree"><img class="collection-card__img" src="assets/robots/unitree-g1/action-2.jpg" alt="Робот Unitree в брендированной футболке на стенде" loading="lazy"/><div class="collection-card__overlay"></div><div class="collection-card__content"><h3 class="collection-card__title">Аренда роботов Unitree</h3><p class="collection-card__description">Вся линейка гуманоидов и робособак одного бренда</p></div><span class="button button--secondary collection-card__btn">Подробнее</span></a>
+    <a class="collection-card collection-card--all" href="/compilations"><div class="collection-card__content"><h3 class="collection-card__title">Все наши подборки</h3><p class="collection-card__description">Крайне полезно изучить</p></div><span class="button button--secondary collection-card__btn">Все подборки</span></a>
+  </div>
+</section>
+
+<!-- 05 ROBOT CARD -->
+<section class="robot-grid-section section rv" data-rv="05 · ROBOT CARD (каталог)">
+  <div class="container robot-grid__head">
+    <h2 class="section-head__title heading">Каталог аренды роботов</h2>
+    <p class="section-head__subtitle body-text">Роботов из этого каталога чаще всего заказывают для выставок, корпоративов, промо-акций, свадеб и детских праздников. Все модели — из собственного парка КИБЕР ПОРТАЛ, с доставкой и настройкой под ваш сценарий.</p>
+  </div>
+  <div class="robot-grid__items">
+    <a class="robot-card" href="/arenda-robot-sofia"><div class="robot-card__image-wrapper"><div class="robot-card__placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="6" width="10" height="8" rx="2"/><path d="M12 2v4M9 18l-1 4M15 18l1 4"/></svg></div><svg class="robot-card__logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h10M20 3L8 21M6 3l3 5"/></svg><span class="robot-card__badge">Мировой хит</span></div><div class="robot-card__content"><h3 class="robot-card__title">Робот София</h3><div class="robot-card__price">Цена по запросу ₽</div><p class="robot-card__description">Легендарный гуманоид Hanson Robotics — эксклюзив в России</p><span class="robot-card__category">Робот–гуманоид</span></div></a>
+    <a class="robot-card" href="/arenda-unitree-g1"><div class="robot-card__image-wrapper"><img class="robot-card__image" src="assets/robots/unitree-g1/hero.jpg" alt="Робот-гуманоид Unitree G1 машет рукой" loading="lazy"/><svg class="robot-card__logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h10M20 3L8 21M6 3l3 5"/></svg><span class="robot-card__badge">Хит продаж</span></div><div class="robot-card__content"><h3 class="robot-card__title">Робот-гуманоид Unitree G1</h3><div class="robot-card__price">от 50 000 ₽</div><p class="robot-card__description">Узнаваемый гуманоид: уверенно ходит, танцует и ведёт диалог с гостями</p><span class="robot-card__category">Робот–гуманоид</span></div></a>
+    <a class="robot-card" href="/arenda-agibot-x2"><div class="robot-card__image-wrapper"><div class="robot-card__placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="6" width="10" height="8" rx="2"/><path d="M12 2v4M9 18l-1 4M15 18l1 4"/></svg></div><svg class="robot-card__logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h10M20 3L8 21M6 3l3 5"/></svg></div><div class="robot-card__content"><h3 class="robot-card__title">Робот-гуманоид Agibot X2</h3><div class="robot-card__price">от 100 000 ₽</div><p class="robot-card__description">Гуманоид с живой мимикой и жестикуляцией для шоу и презентаций</p><span class="robot-card__category">Робот–гуманоид</span></div></a>
+    <a class="robot-card" href="/arenda-robot-ardi"><div class="robot-card__image-wrapper"><div class="robot-card__placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="6" width="10" height="8" rx="2"/><path d="M12 2v4M9 18l-1 4M15 18l1 4"/></svg></div><svg class="robot-card__logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 12h10M20 3L8 21M6 3l3 5"/></svg></div><div class="robot-card__content"><h3 class="robot-card__title">Робот Арди</h3><div class="robot-card__price">от 250 000 ₽</div><p class="robot-card__description">Робот-андроид с живой мимикой лица и диалогом на базе ИИ</p><span class="robot-card__category">Робот–гуманоид</span></div></a>
+  </div>
+</section>
+
+<!-- 06 ARTICLE CARDS -->
+<section class="articles-section section rv" data-rv="06 · ARTICLE CARDS">
+  <div class="container section-head">
+    <h2 class="section-head__title heading">Тематические статьи по аренде роботов</h2>
+    <p class="section-head__subtitle body-text">Разбираем, каких роботов выбрать под конкретный повод, как проходит аренда и что учесть при подготовке площадки.</p>
+  </div>
+  <div class="articles-grid">
+    <a class="article-card" href="/articles/podarok-direktoru"><div class="article-card__image"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8v12M4 12h16"/></svg></div><div class="article-card__content"><h3 class="article-card__title title-s">Необычный подарок директору — робот в кабинете вместо галстука</h3><p class="article-card__description">Пока одни выбирают галстук, другие заказывают гуманоида, который кланяется директору при всём коллективе.</p><span class="article-card__link">Читать →</span></div></a>
+    <a class="article-card" href="/sravnenie-g1-agibot-x2"><div class="article-card__image"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8v12M4 12h16"/></svg></div><div class="article-card__content"><h3 class="article-card__title title-s">Unitree G1 или Agibot X2 — что выбрать для мероприятия</h3><p class="article-card__description">Сравниваю двух гуманоидов по росту, движениям и вау-эффекту.</p><span class="article-card__link">Читать →</span></div></a>
+    <a class="article-card" href="/articles/robot-na-svadbe"><div class="article-card__image"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8v12M4 12h16"/></svg></div><div class="article-card__content"><h3 class="article-card__title title-s">Необычное поздравление на свадьбе: робот выходит с тостом и танцем</h3><p class="article-card__description">К столу неожиданно выходит робот-гуманоид — говорит поздравление и танцует.</p><span class="article-card__link">Читать →</span></div></a>
+  </div>
+  <div class="container block-actions"><a class="button button--primary" href="/articles">Читать все статьи</a></div>
+</section>
+
+<!-- 07 FAQ -->
+<section class="faq section rv" data-rv="07 · FAQ">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title heading">Вопросы и ответы по аренде роботов</h2>
+      <p class="section-head__subtitle body-text">Ответы на самые частые вопросы об аренде</p>
+    </div>
+    <div class="faq__items">
+      <div class="faq-item"><button class="faq-item__question">Что входит в стоимость аренды робота «под ключ»?<svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2"/></svg></button><div class="faq-item__answer body-text">Доставка робота на площадку, настройка под ваш сценарий, работа оператора на протяжении всего мероприятия и техническая поддержка.</div></div>
+      <div class="faq-item"><button class="faq-item__question">Вы работаете только в Москве или по всей России?<svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2"/></svg></button><div class="faq-item__answer body-text">Мы базируемся в Москве, но доставляем роботов по всей России — логистику и монтаж берёт на себя команда КИБЕР ПОРТАЛ.</div></div>
+      <div class="faq-item"><button class="faq-item__question">Сколько робот может работать без подзарядки?<svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2"/></svg></button><div class="faq-item__answer body-text">В среднем от 2 до 4 часов активной программы на одном заряде. Для длинных мероприятий берём сменный аккумулятор.</div></div>
+      <div class="faq-item"><button class="faq-item__question">Можно ли запрограммировать робота под наш бренд?<svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2"/></svg></button><div class="faq-item__answer body-text">Да, это одна из наших ключевых компетенций. Мы адаптируем реплики, жесты и даже внешний вид робота под ваш бренд.</div></div>
+      <div class="faq-item"><button class="faq-item__question">Какие документы вы предоставляете для юрлиц?<svg class="faq-item__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2"/></svg></button><div class="faq-item__answer body-text">Мы работаем по официальному договору и предоставляем полный пакет закрывающих документов.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 NEWS CARDS -->
+<section class="news-section section rv" data-rv="08 · NEWS CARDS">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title heading">Новости про роботов</h2>
+      <p class="section-head__subtitle body-text">Последние новости из мира робототехники и компании КИБЕР ПОРТАЛ</p>
+    </div>
+    <div class="news-grid">
+      <a class="news-card" href="/news/byd-xiao-di"><span class="news-card__date label">14.08.2026</span><h3 class="news-card__title title-s">BYD представил гуманоида Xiao Di — прямой конкурент Tesla Optimus</h3><p class="news-card__description">52 степени свободы, собственная батарея Blade Battery, целевая цена $30 000.</p><span class="news-card__link">Читать →</span></a>
+      <a class="news-card" href="/news/agibot-lider"><span class="news-card__date label">14.08.2026</span><h3 class="news-card__title title-s">AgiBot обогнал Unitree по поставкам гуманоидов — смена лидера перед IPO</h3><p class="news-card__description">38 000 против 31 000. Обе компании готовятся к выходу на биржу.</p><span class="news-card__link">Читать →</span></a>
+      <a class="news-card" href="/news/kitay-97"><span class="news-card__date label">12.08.2026</span><h3 class="news-card__title title-s">Китай захватил 97% поставок гуманоидных роботов — разбор отчёта SAG</h3><p class="news-card__description">Мировые поставки выросли в 3,7 раза за полгода.</p><span class="news-card__link">Читать →</span></a>
+    </div>
+    <div class="block-actions" style="margin-top:24px"><a class="button button--primary" href="/news">Читать все новости</a></div>
+  </div>
+</section>
+
+<!-- 09 CTA STRIP -->
+<section class="cta-strip rv" data-rv="09 · CTA STRIP">
+  <div class="cta-strip__card">
+    <div class="cta-strip__content">
+      <h2 class="cta-strip__title heading">Готовы заказать робота на мероприятие?</h2>
+      <p class="cta-strip__subtitle body-text">Напишите нам в удобном мессенджере или оставьте заявку — менеджер подберёт робота под ваш бюджет и дату.</p>
+      <div class="cta-strip__actions"><button class="button button--secondary" data-open-modal="contact-modal" data-analytics-event="contact_click">Написать нам</button><button class="button button--ghost" data-analytics-event="lead_click">Оставить заявку</button></div>
+    </div>
+    <img class="cta-strip__gosha" src="assets/kiber-gosha-meditation.png" alt="Кибер Гоша медитирует в позе лотоса"/>
+  </div>
+</section>
+
+<!-- 10 BREADCRUMBS -->
+<nav class="breadcrumbs rv" data-rv="10 · BREADCRUMBS">
+  <ol class="breadcrumbs__list"><li><a class="breadcrumbs__link" href="/">Главная</a></li><li><span class="breadcrumbs__separator">/</span></li><li><a class="breadcrumbs__link" href="/#catalog">Каталог</a></li><li><span class="breadcrumbs__separator">/</span></li><li><span class="breadcrumbs__current">Unitree G1</span></li></ol>
+</nav>
+
+<!-- 11 ROBOT HERO -->
+<section class="robot-hero rv" data-rv="11 · ROBOT HERO">
+  <div class="container robot-hero__inner">
+    <div>
+      <h1 class="robot-hero__title display-l">Аренда робота-гуманоида Unitree G1</h1>
+      <p class="robot-hero__intro body-text">Unitree G1 — это возможность привести на ваше мероприятие одного из самых узнаваемых гуманоидов на рынке: он уверенно ходит, кланяется, машет рукой и реагирует на голос оператора.</p>
+      <div class="robot-hero__price"><span class="label">от</span><span class="display-m">25 000 ₽</span><span class="label">/ час</span></div>
+      <div class="robot-hero__actions"><a class="button button--primary" href="/arenda-unitree-g1">Смотреть карточку робота</a></div>
+    </div>
+    <div class="robot-hero__image"><img src="assets/robots/unitree-g1/hero.jpg" alt="Робот-гуманоид Unitree G1 машет рукой"/></div>
+  </div>
+</section>
+
+<!-- 12 ROBOT FACTS -->
+<section class="robot-facts section rv" data-rv="12 · ROBOT FACTS">
+  <div class="container">
+    <div class="section-head">
+      <span class="label" style="color:var(--blue-500);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:16px">01 — Ключевые возможности</span>
+      <h2 class="section-head__title heading">Что умеет робот-гуманоид Unitree G1</h2>
+      <p class="section-head__subtitle body-text">Если коротко, Unitree G1 умеет уверенно ходить и разговаривать, делать движения руками и танцевать. Подробнее — в шести пунктах ниже.</p>
+    </div>
+    <div class="facts-grid">
+      <div class="fact-card"><h3 class="fact-card__title title-s">Рост и вес</h3><div class="fact-card__image"><img src="assets/robots/unitree-g1/facts/height.jpg" alt="Unitree G1 в полный рост машет рукой" loading="lazy"/></div><p class="fact-card__text body-text">Около 130 см ростом и порядка 35 кг весом — по габаритам робот сопоставим с подростком, поэтому не выглядит громоздким на сцене или стенде.</p></div>
+      <div class="fact-card"><h3 class="fact-card__title title-s">Степени свободы</h3><div class="fact-card__image"><img src="assets/robots/unitree-g1/facts/freedom.jpg" alt="Unitree G1 в динамичной позе" loading="lazy"/></div><p class="fact-card__text body-text">23 степени свободы обеспечивают плавные, почти человеческие движения — от обычного шага до резкого разворота корпуса на 180°.</p></div>
+      <div class="fact-card"><h3 class="fact-card__title title-s">Автономность работы</h3><div class="fact-card__image"><img src="assets/robots/unitree-g1/facts/battery.jpg" alt="Неоновая батарея и часы" loading="lazy"/></div><p class="fact-card__text body-text">До 2 часов активной работы на одном заряде; аккумулятор быстросъёмный, поэтому для многочасовых мероприятий берём робота с запасной батареей.</p></div>
+      <div class="fact-card"><h3 class="fact-card__title title-s">Скорость передвижения</h3><div class="fact-card__image"><img src="assets/robots/unitree-g1/facts/speed.jpg" alt="Unitree G1 бежит" loading="lazy"/></div><p class="fact-card__text body-text">До 2 м/с — уверенно поспевает за темпом мероприятия, от спокойного выхода к гостям до энергичного прохода по залу.</p></div>
+      <div class="fact-card"><h3 class="fact-card__title title-s">Голосовое общение</h3><div class="fact-card__image"><img src="assets/robots/unitree-g1/facts/voice.jpg" alt="Гуманоид с голосовыми волнами" loading="lazy"/></div><p class="fact-card__text body-text">Реагирует на обращения людей, кланяется и машет рукой гостям — создаёт ощущение живого диалога, а не заранее записанной программы.</p></div>
+      <div class="fact-card"><h3 class="fact-card__title title-s">Компактность</h3><div class="fact-card__image"><img src="assets/robots/unitree-g1/facts/compact.jpg" alt="Сложенный Unitree G1" loading="lazy"/></div><p class="fact-card__text body-text">Складывается в компактную позу для перевозки, поэтому помещается даже в небольшой лифт или машину — доставка на площадку без спецтехники.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 ROBOT SCENARIOS -->
+<section class="robot-scenarios section rv" data-rv="13 · ROBOT SCENARIOS">
+  <div class="container">
+    <div class="section-head">
+      <span class="label" style="color:var(--blue-500);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:16px">02 — Сценарии использования</span>
+      <h2 class="section-head__title heading">Где аренда робота-гуманоида Unitree G1 произведёт «вау-эффект»?</h2>
+      <p class="section-head__subtitle body-text">Гуманоид одинаково хорошо работает и как главный герой шоу, и как фоновая «звезда» стенда, которая сама собирает вокруг себя людей. Вот шесть форматов, где он раскрывается лучше всего.</p>
+    </div>
+    <div class="facts-grid">
+      <div class="scenario-card"><h3 class="scenario-card__title title-s">Интерактивная фотозона</h3><p class="scenario-card__text body-text">Unitree G1 становится центром притяжения: гости фотографируются с роботом, который кланяется, машет рукой и позирует по команде.</p></div>
+      <div class="scenario-card"><h3 class="scenario-card__title title-s">Открытие бизнес-центра или шоурума</h3><p class="scenario-card__text body-text">Робот встречает первых гостей у входа и создаёт очередь из любопытных за несколько минут.</p></div>
+      <div class="scenario-card"><h3 class="scenario-card__title title-s">Презентация продукта или бренда</h3><p class="scenario-card__text body-text">Выход робота на сцену становится отдельным инфоповодом, о котором пишут в соцсетях.</p></div>
+      <div class="scenario-card"><h3 class="scenario-card__title title-s">Корпоратив и деловое мероприятие</h3><p class="scenario-card__text body-text">Неформальный гость на сцене разряжает обстановку между докладами.</p></div>
+      <div class="scenario-card"><h3 class="scenario-card__title title-s">Технологичная выставка или конференция</h3><p class="scenario-card__text body-text">Магнит для трафика на стенде: останавливает поток посетителей.</p></div>
+      <div class="scenario-card"><h3 class="scenario-card__title title-s">Съёмка видео и контента для соцсетей</h3><p class="scenario-card__text body-text">Футуристичный акцент для роликов и постов.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 GALLERY -->
+<section class="robot-gallery section rv" data-rv="14 · GALLERY">
+  <div class="container gallery-head">
+    <div>
+      <span class="label" style="color:var(--blue-500);letter-spacing:1px;text-transform:uppercase;display:block;margin-bottom:16px">03 — Галерея</span>
+      <h2 class="heading" style="margin-bottom:0">Робот Unitree G1 в действии</h2>
+    </div>
+    <div class="gallery-nav">
+      <button class="gallery-nav__btn" data-slider-prev=".gallery-slider" aria-label="Назад"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5"/></svg></button>
+      <button class="gallery-nav__btn" data-slider-next=".gallery-slider" aria-label="Вперёд"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5"/></svg></button>
+    </div>
+  </div>
+  <div class="drag-slider gallery-slider">
+    <figure class="gallery-slider__item"><img src="assets/robots/unitree-g1/action-1.jpg" alt="Unitree G1 в красной шапке с экраном на спине" loading="lazy"/></figure>
+    <figure class="gallery-slider__item"><img src="assets/robots/unitree-g1/action-2.jpg" alt="Unitree G1 в красной футболке с ведущей" loading="lazy"/></figure>
+    <figure class="gallery-slider__item"><img src="assets/robots/unitree-g1/action-3.jpg" alt="Unitree G1 в магазине одежды" loading="lazy"/></figure>
+    <figure class="gallery-slider__item"><img src="assets/robots/unitree-g1/action-4.jpg" alt="Unitree G1 с роботом-собакой на поводке" loading="lazy"/></figure>
+  </div>
+</section>
+
+<!-- 15 PRICING -->
+<section class="robot-pricing rv" data-rv="15 · PRICING">
+  <div class="pricing__card">
+    <div class="pricing__content">
+      <h2 class="pricing__title">Арендуйте Unitree G1 для вашего мероприятия</h2>
+      <div class="pricing__options">
+        <div><span class="pricing__value">от 25 000 ₽</span><span class="pricing__unit">/ час</span></div>
+        <div><span class="pricing__value">100 000 ₽</span><span class="pricing__unit">/ день</span></div>
+      </div>
+      <div class="pricing__actions">
+        <button class="button button--white" data-open-modal="contact-modal" data-analytics-event="contact_click">Написать нам<svg class="button__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.7 1.4 5.1 3.6 6.7-.1.9-.5 2.2-1.4 3.3 1.9-.2 3.6-1 4.7-1.7 1 .3 2 .4 3.1.4 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/><circle cx="8" cy="11.7" r="1.2" fill="#fff"/><circle cx="12" cy="11.7" r="1.2" fill="#fff"/><circle cx="16" cy="11.7" r="1.2" fill="#fff"/></svg></button>
+        <a class="button button--white" href="#lead-form" data-analytics-event="lead_click">Заполнить заявку</a>
+      </div>
+      <p class="pricing__note caption">Точная стоимость рассчитывается индивидуально. Не является публичной офертой.</p>
+    </div>
+    <img class="pricing__gosha" src="assets/kiber-gosha-wave.png" alt="Кибер Гоша в красной шапке машет рукой"/>
+  </div>
+</section>
+
+<!-- 16 COMPARISON TABLE -->
+<section class="comparison-section section rv" data-rv="16 · COMPARISON TABLE">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title heading">Полное сравнение характеристик Unitree G1, R1 и H2</h2>
+      <p class="section-head__subtitle body-text">Собрали ключевые параметры трёх гуманоидов Unitree в одну таблицу — удобно свериться, какая модель ближе к задаче вашего мероприятия.</p>
+    </div>
+    <div class="table-wrapper"><table class="comparison-table">
+      <thead><tr><th>Характеристика</th><th>Unitree G1</th><th>Unitree R1</th><th>Unitree H2</th></tr></thead>
+      <tbody>
+        <tr><td>Рост</td><td>~130 см</td><td>~121 см</td><td>180 см</td></tr>
+        <tr><td>Вес</td><td>~35 кг</td><td>~25 кг</td><td>~70 кг</td></tr>
+        <tr><td>Степени свободы</td><td>23</td><td>24–26</td><td>31</td></tr>
+        <tr><td>Автономность</td><td>до 2 часов</td><td>около 1 часа</td><td>около 3 часов</td></tr>
+        <tr><td>Лучше всего подходит для</td><td>универсальных мероприятий</td><td>компактных площадок, шоу-номеров</td><td>статусных корпоративов, премьер</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <div class="container" style="margin-top:48px">
+    <div class="section-head"><h2 class="section-head__title heading">Сравнение с изображениями</h2></div>
+    <div class="comparison-table--with-images">
+      <div class="comparison-robots-preview">
+        <div class="comparison-robot-col"><img src="assets/robots/unitree-g1/hero.jpg" alt="Unitree G1" loading="lazy"/><h4>Unitree G1</h4><p>Универсальный</p></div>
+        <div class="comparison-robot-col"><img src="assets/robots/unitree-g1/action-1.jpg" alt="Unitree R1" loading="lazy"/><h4>Unitree R1</h4><p>Компактный акробат</p></div>
+        <div class="comparison-robot-col"><img src="assets/robots/unitree-g1/action-2.jpg" alt="Unitree H2" loading="lazy"/><h4>Unitree H2</h4><p>Статусный, с мимикой</p></div>
+      </div>
+      <div class="table-wrapper" style="border-radius:0;border:none"><table class="comparison-table">
+        <thead><tr><th>Характеристика</th><th>G1</th><th>R1</th><th>H2</th></tr></thead>
+        <tbody>
+          <tr><td>Рост</td><td>130 см</td><td>121 см</td><td>180 см</td></tr>
+          <tr><td>Вес</td><td>35 кг</td><td>25 кг</td><td>70 кг</td></tr>
+          <tr><td>Автономность</td><td>2 часа</td><td>1 час</td><td>3 часа</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<!-- 17 ARTICLE HERO -->
+<section class="article-hero rv" data-rv="17 · ARTICLE HERO">
+  <div class="article-hero__card">
+    <div class="article-hero__bg"><img src="assets/articles/comparison-hero.jpg" alt="" loading="eager"/></div>
+    <div class="article-hero__content">
+      <div class="article-hero__meta"><time class="label" datetime="2026-08-25">25 августа 2026</time><span class="label" style="color:var(--blue-500)">Сравнение</span></div>
+      <h1 class="article-hero__title display-l">Unitree G1, R1 и H2: сравнение роботов-гуманоидов для мероприятий</h1>
+      <p class="article-hero__subtitle body-text">Три гуманоида одной компании — но подходят они для совершенно разных сценариев. Разбираю рост, автономность и вау-эффект каждого.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 18 ARTICLE BODY -->
+<section class="article-body-section section rv" data-rv="18 · ARTICLE BODY">
+  <div class="container">
+    <div class="article-body">
+      <h2 class="heading">Три разных инструмента для мероприятия</h2>
+      <p class="body-text">Компания Unitree выпускает не один, а сразу три гуманоида, и это не три версии одного робота — это три принципиально разных инструмента для мероприятия.</p>
+    </div>
+    <div class="article-body__cols">
+      <div class="article-body__col"><h3 class="article-body__col-title">Unitree R1 — компактный акробат для тесных площадок.</h3><p class="body-text">Его сила — в зрелищности при минимальных габаритах: кувырки, стойка на руках и уверенный бег при росте 121 см и весе 25 кг. Идеальный выбор для шоурумов, фотозон и небольших стендов, где крупному андроиду не хватит места.</p></div>
+      <div class="article-body__col"><h3 class="article-body__col-title">Unitree H2 — статусная новинка с живой мимикой.</h3><p class="body-text">При росте 180 см и 31 степени свободы это самый крупный гуманоид линейки — с анимированным бионическим лицом, синхронизирующим мимику с репликами. Кинематографичный, статусный эффект на премьерах и флагманских выставках.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 ACCENT KICKER -->
+<section class="kicker-section section rv" data-rv="19 · ACCENT KICKER">
+  <div class="container"><p class="accent-kicker">Коротко: Unitree G1 берёт инженерной точностью и узнаваемостью, а Agibot X2 — мимикой, живым диалогом и харизмой на сцене мероприятия.</p></div>
+</section>
+
+<!-- 20 TEXT PAIRS -->
+<section class="text-pairs-section section rv" data-rv="20 · TEXT PAIRS">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title heading">Коротко о каждой модели</h2>
+      <p class="section-head__subtitle body-text">Официальная цена производителя — от $16 000 у Unitree G1, от $5 900 у Unitree R1 и около $29 900 у Unitree H2.</p>
+    </div>
+    <div class="text-pairs__row"><h3 class="title-s">Unitree G1</h3><p class="body-text" style="color:var(--grey-500)">Около 130 см ростом, 35 кг весом, 23 степени свободы, до 2 часов автономной работы. Универсальный выбор: узнаваемость и складной корпус для перевозки.</p></div>
+    <div class="text-pairs__row"><h3 class="title-s">Unitree R1</h3><p class="body-text" style="color:var(--grey-500)">Около 121 см ростом, 25 кг весом, 24–26 степеней свободы, 1 час автономной работы. Компактный акробат для тесных площадок: кувырки, стойка на руках, бег.</p></div>
+    <div class="text-pairs__row"><h3 class="title-s">Unitree H2</h3><p class="body-text" style="color:var(--grey-500)">180 см ростом, около 70 кг весом, 31 степень свободы, около 3 часов автономной работы. Статусная новинка с анимированной мимикой и грузоподъёмностью 15 кг.</p></div>
+  </div>
+</section>
+
+<!-- 21 IMAGE TEXT PAIRS -->
+<section class="img-text-section section rv" data-rv="21 · IMAGE TEXT PAIRS">
+  <div class="container">
+    <div class="section-head"><h2 class="section-head__title heading heading--lg">Роботы в деле: сценарии и кейсы</h2></div>
+    <div class="img-text-pairs__item"><div class="img-text-pairs__img"><img src="assets/robots/unitree-g1/action-2.jpg" alt="Unitree G1 на промо-акции" loading="lazy"/></div><div><h3 class="title-s" style="margin-bottom:8px">Робот на промо-акции</h3><p class="body-text" style="color:var(--grey-500)">Брендирование корпусом или футболкой превращает робота в амбассадора бренда.</p></div></div>
+    <div class="img-text-pairs__item"><div class="img-text-pairs__img"><img src="assets/robots/unitree-g1/action-3.jpg" alt="Unitree G1 в ритейле" loading="lazy"/></div><div><h3 class="title-s" style="margin-bottom:8px">Робот в ритейле</h3><p class="body-text" style="color:var(--grey-500)">Гуманоид в шоуруме останавливает поток посетителей и оживляет витрину.</p></div></div>
+  </div>
+</section>
+
+<!-- 22 STATS BLOCK -->
+<section class="stats-section section rv" data-rv="22 · STATS BLOCK">
+  <div class="container">
+    <div class="section-head"><h2 class="section-head__title heading heading--lg">КИБЕР ПОРТАЛ в цифрах</h2></div>
+    <div class="stats-grid">
+      <div class="stats-grid__item"><div class="stats-grid__value display-m">25+</div><span class="caption">роботов в собственном парке</span></div>
+      <div class="stats-grid__item"><div class="stats-grid__value display-m">23</div><span class="caption">степени свободы у Unitree G1</span></div>
+      <div class="stats-grid__item"><div class="stats-grid__value display-m">2 ч</div><span class="caption">автономной работы на одном заряде</span></div>
+      <div class="stats-grid__item"><div class="stats-grid__value display-m">2 м/с</div><span class="caption">скорость передвижения</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 23 CHECKLIST -->
+<section class="checklist-section section rv" data-rv="23 · CHECKLIST">
+  <div class="container">
+    <div class="section-head"><h2 class="section-head__title heading">Что учесть при выборе гуманоида Unitree</h2></div>
+    <div class="checklist">
+      <div class="checklist__item"><span class="checklist__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3 class="checklist__title">Автономность</h3><p class="checklist__text body-text">У Unitree R1 около часа, у Unitree G1 до двух, у Unitree H2 около трёх; для длинных мероприятий любую модель мы привозим с запасным аккумулятором.</p></div></div>
+      <div class="checklist__item"><span class="checklist__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3 class="checklist__title">Площадка</h3><p class="checklist__text body-text">Всем трём моделям нужен ровный пол без высоких порогов; Unitree R1 для трюков требует чуть больше свободного пространства (около 3×3 м), Unitree H2 — розетку 220 В рядом.</p></div></div>
+      <div class="checklist__item"><span class="checklist__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3 class="checklist__title">Оператор</h3><p class="checklist__text body-text">Ни одна из моделей не работает без специалиста КИБЕР ПОРТАЛ — самостоятельная аренда без сопровождения не предусмотрена.</p></div></div>
+      <div class="checklist__item"><span class="checklist__icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3 class="checklist__title">Бюджет</h3><p class="checklist__text body-text">Официальные цены производителя растут от Unitree R1 к Unitree G1 и далее к Unitree H2; финальная стоимость аренды зависит от программы, длительности и логистики.</p></div></div>
+    </div>
+    <div class="section-head" style="margin-top:72px"><h2 class="section-head__title heading">Вариант B: чеклист с цифрами на фоне</h2></div>
+    <div class="checklist checklist--with-numbers">
+      <div class="checklist__item"><span class="checklist__number">1</span><div><h3 class="checklist__title">Определите цель для робота</h3><p class="checklist__text body-text">Привлечь лиды, создать вирусный контент или развлечь гостей?</p></div></div>
+      <div class="checklist__item"><span class="checklist__number">2</span><div><h3 class="checklist__title">Выберите сценарий работы</h3><p class="checklist__text body-text">Промо-взаимодействие, танцевальное шоу или презентация?</p></div></div>
+      <div class="checklist__item"><span class="checklist__number">3</span><div><h3 class="checklist__title">Рассчитайте TCO</h3><p class="checklist__text body-text">Учтите не только цену, но и логистику, обслуживание и риски.</p></div></div>
+      <div class="checklist__item"><span class="checklist__number">4</span><div><h3 class="checklist__title">Проверьте поставщика</h3><p class="checklist__text body-text">Используйте 7 вопросов из предыдущего раздела.</p></div></div>
+      <div class="checklist__item"><span class="checklist__number">5</span><div><h3 class="checklist__title">Запросите кейсы</h3><p class="checklist__text body-text">Попросите видео с похожих мероприятий и контакты прошлых клиентов.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 24 MEDIA FIGURE -->
+<section class="media-figure-section section rv" data-rv="24 · MEDIA FIGURE">
+  <div class="container">
+    <figure class="media-figure">
+      <div class="media-figure__img"><img src="assets/robots/unitree-g1/action-1.jpg" alt="Робот кланяется руководителю, коллеги снимают на телефоны" loading="lazy"/></div>
+      <div class="media-figure__text">
+        <p class="media-figure__lead">Вот как выглядит сам момент:</p>
+        <p class="body-text">Гуманоид спокойно заходит в переговорную или на сцену, останавливается напротив руководителя, кланяется и «зачитывает» короткое поздравление — либо заранее записанным текстом, либо через оператора, который ведёт диалог в реальном времени.</p>
+        <p class="body-text">Для директора это неожиданность, для коллег — повод достать телефоны, а для организатора праздника — готовый вау-эффект без сложного сценария и долгих репетиций.</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- 25 VIDEO EMBED -->
+<section class="video-section section rv" data-rv="25 · VIDEO EMBED">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-head__title heading">Unitree G1 в действии — видео</h2>
+      <p class="section-head__subtitle body-text">Минута живого выступления: как робот встречает гостей, кланяется и работает на сцене.</p>
+    </div>
+    <div class="video-embed">
+      <div class="video-embed__play"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+      <span class="caption">Видео встраивается с внешнего сервиса (Кинескоп) по ссылке/id</span>
+    </div>
+  </div>
+</section>
+
+<!-- 26 ARTICLE ASIDE -->
+<section class="aside-section section rv" data-rv="26 · ARTICLE ASIDE">
+  <div class="container section-head">
+    <h2 class="section-head__title heading heading--lg">Читайте также о роботах-гуманоидах</h2>
+    <p class="section-head__subtitle body-text">Если хотите разобраться в моделях подробнее — ниже материалы, где мы сравниваем гуманоидов между собой.</p>
+  </div>
+  <div class="aside-grid">
+    <a class="aside-card" href="/articles/podarok-direktoru"><h3 class="aside-card__title title-s">Необычный подарок директору — робот в кабинете вместо галстука</h3><p class="aside-card__description">Пока одни выбирают галстук, другие заказывают гуманоида, который кланяется директору при всём коллективе.</p><span class="aside-card__link">Читать →</span></a>
+    <a class="aside-card" href="/sravnenie-g1-agibot-x2"><h3 class="aside-card__title title-s">Unitree G1 или Agibot X2 — что выбрать для мероприятия</h3><p class="aside-card__description">Сравниваю двух гуманоидов по росту, движениям и вау-эффекту.</p><span class="aside-card__link">Читать →</span></a>
+    <a class="aside-card" href="/articles/velkom-zona"><h3 class="aside-card__title title-s">Необычная велком-зона на свадьбе: робот, который встречает гостей</h3><p class="aside-card__description">Свежая идея для welcome-зоны, пока молодожёны на выездной фотосессии.</p><span class="aside-card__link">Читать →</span></a>
+  </div>
+  <div class="aside-actions"><a class="button button--primary" href="/articles">Все статьи</a></div>
+</section>
+
+<!-- 27 COLLECTION HERO -->
+<section class="collection-hero rv" data-rv="27 · COLLECTION HERO">
+  <div class="container">
+    <h1 class="collection-hero__title heading">Роботы-гуманоиды в каталоге КИБЕР ПОРТАЛ</h1>
+    <p class="collection-hero__subtitle body-text">Модели роботов-гуманоидов, которых чаще всего заказывают на мероприятия — от доступного варианта до компактного акробата.</p>
+  </div>
+</section>
+
+<!-- 28 COLLECTION INTRO -->
+<section class="intro-section section rv" data-rv="28 · COLLECTION INTRO">
+  <div class="container collection-intro">
+    <h2 class="heading">Кто такие роботы-гуманоиды</h2>
+    <p class="body-text">Гуманоид — самый эффектный формат робота для мероприятия: человекоподобная фигура мгновенно собирает вокруг себя гостей, фотографов и соцсети.</p>
+    <p class="body-text">В парке КИБЕР ПОРТАЛ — модели от компактных акробатов до рослых гуманоидов с живой мимикой, под любой сценарий и площадку.</p>
+  </div>
+</section>
+
+<!-- 29 CHOICE GUIDE -->
+<section class="guide-section section rv" data-rv="29 · CHOICE GUIDE">
+  <div class="container">
+    <div class="section-head"><h2 class="section-head__title heading">Как выбрать гуманоида под ваше мероприятие</h2></div>
+    <div class="choice-guide">
+      <div class="choice-guide__step"><div class="choice-guide__number">1</div><h3 class="choice-guide__title title-s">Оцените площадку</h3><p class="choice-guide__text body-text">Для тесных стендов — компактный R1, для сцены и статусных событий — H2.</p></div>
+      <div class="choice-guide__step"><div class="choice-guide__number">2</div><h3 class="choice-guide__title title-s">Определите длительность</h3><p class="choice-guide__text body-text">До 2 часов — G1; на весь день — модель с запасным аккумулятором.</p></div>
+      <div class="choice-guide__step"><div class="choice-guide__number">3</div><h3 class="choice-guide__title title-s">Выберите сценарий</h3><p class="choice-guide__text body-text">Фотозона, шоу-номер, welcome-зона или презентация — под каждый есть своя модель.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 31 LEAD FORM -->
+<section class="section rv" data-rv="31 · LEAD FORM" id="lead-form" style="background:var(--blue-50)">
+  <div class="container">
+    <form class="lead-form">
+      <div class="lead-form__header">
+        <div><img class="lead-form__logo" src="assets/logo.svg" alt="КИБЕР ПОРТАЛ"/><p class="lead-form__tagline">Роботы<br>для ваших задач</p></div>
+        <img class="lead-form__gosha" src="assets/kiber-gosha-wave.png" alt="Кибер Гоша с планшетом"/>
+      </div>
+      <div class="lead-form__body">
+        <h3 class="lead-form__title">Оставьте заявку</h3>
+        <p class="lead-form__subtitle">Наши менеджеры свяжутся с вами в ближайшее время</p>
+        <div class="lead-form__field"><label class="lead-form__label label" for="lf-name">Имя *</label><input class="lead-form__input" id="lf-name" type="text" required/></div>
+        <div class="lead-form__field"><label class="lead-form__label label" for="lf-phone">Телефон *</label><input class="lead-form__input" id="lf-phone" type="tel" required/></div>
+        <div class="lead-form__field"><label class="lead-form__label label" for="lf-email">Email (необязательно)</label><input class="lead-form__input" id="lf-email" type="email"/></div>
+        <div class="lead-form__consent"><input type="checkbox" id="lf-consent" required/><label class="caption" for="lf-consent">Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</label></div>
+        <input class="lead-form__honeypot" type="text" name="website" tabindex="-1" autocomplete="off"/>
+        <button class="button button--primary" type="submit" style="width:100%">Отправить заявку</button>
+        <p class="lead-form__note">Нажимая кнопку «Отправить», вы принимаете условия <a href="/terms">Пользовательского соглашения</a></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- 34 CTA QUESTIONS -->
+<section class="cta-questions rv" data-rv="34 · CTA QUESTIONS (Остались вопросы?)">
+  <div class="cta-questions__card">
+    <div class="cta-questions__content">
+      <h2 class="cta-questions__title">Остались вопросы?</h2>
+      <p class="cta-questions__subtitle">Напишите нам в любом удобном мессенджере или оставьте заявку в форме — менеджер КИБЕР ПОРТАЛ ответит и подберёт робота под ваш бюджет и дату.</p>
+      <div class="cta-questions__actions">
+        <button class="button button--white" data-open-modal="contact-modal" data-analytics-event="contact_click">Написать нам<svg class="button__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.7 1.4 5.1 3.6 6.7-.1.9-.5 2.2-1.4 3.3 1.9-.2 3.6-1 4.7-1.7 1 .3 2 .4 3.1.4 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/><circle cx="8" cy="11.7" r="1.2" fill="#0088ff"/><circle cx="12" cy="11.7" r="1.2" fill="#0088ff"/><circle cx="16" cy="11.7" r="1.2" fill="#0088ff"/></svg></button>
+        <a class="button button--white" href="#lead-form" data-analytics-event="lead_click">Заполнить форму</a>
+      </div>
+    </div>
+    <img class="cta-questions__gosha" src="assets/kiber-gosha-meditation.png" alt="Кибер Гоша медитирует в позе лотоса"/>
+  </div>
+</section>
+
+<!-- 33 FOOTER -->
+<footer class="site-footer rv" data-rv="33 · FOOTER">
+  <div class="container">
+    <div class="site-footer__main">
+      <div><span class="site-footer__logo"><img src="assets/logo.svg" alt="КИБЕР ПОРТАЛ"/></span><p class="site-footer__description">Аренда роботов для мероприятий в Москве и по всей России: гуманоиды, роботы-собаки, промо-роботы и роборуки-художники — с доставкой, настройкой и оператором.</p></div>
+      <div><h3 class="site-footer__title">Каталог</h3><ul class="site-footer__nav-list"><li><a href="/#catalog">Все роботы</a></li><li><a href="/roboty-gumanoidy">Роботы-гуманоиды</a></li><li><a href="/roboty-sobaki">Роботы-собаки</a></li><li><a href="/roboty-oficianty">Роботы-официанты</a></li></ul></div>
+      <div><h3 class="site-footer__title">Контент</h3><ul class="site-footer__nav-list"><li><a href="/compilations">Подборки</a></li><li><a href="/articles">Блог Кибер Гоши</a></li><li><a href="/news">Новости</a></li><li><a href="/cases">Кейсы</a></li></ul></div>
+      <div><h3 class="site-footer__title">Контакты</h3><a class="site-footer__phone" href="tel:+79852666582">+7 (985) 266-65-82</a><a class="site-footer__email" href="mailto:hello@kiber-portal.ru">hello@kiber-portal.ru</a><div class="site-footer__messengers"><a class="site-footer__messenger" href="https://t.me/kiberportal" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></a><a class="site-footer__messenger" href="https://wa.me/79852666582" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a></div></div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="site-footer__legal"><span>© 2026 КИБЕР ПОРТАЛ. Все права защищены.</span><span>Не является публичной офертой.</span></div>
+      <div class="site-footer__legal-links"><a href="/privacy-policy">Политика конфиденциальности</a><a href="/terms">Пользовательское соглашение</a><a href="/cookie-policy">Политика cookie</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky CTA (mobile) + FAB -->
+<div class="mobile-cta" id="mobile-cta">
+  <span class="mobile-cta__price">от 25 000 ₽/час</span>
+  <button class="button button--primary mobile-cta__btn" data-open-modal="contact-modal">Оставить заявку</button>
+  <button class="mobile-cta__close" id="mobile-cta-close" aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/></svg></button>
+</div>
+<button class="mobile-cta-fab" id="mobile-cta-fab" aria-label="Связаться"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a1 1 0 0 0 .25-1.02A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1c0 9.39 7.61 17 17 17a1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg></button>
+
+<!-- 30 CONTACT MODAL -->
+<div class="modal rv" data-rv="30 · CONTACT MODAL" id="contact-modal">
+  <div class="modal__overlay" data-close-modal></div>
+  <div class="modal__content">
+    <button class="modal__close" data-close-modal aria-label="Закрыть"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/></svg></button>
+    <h2 class="modal__title heading">Напишите нам</h2>
+    <p class="modal__subtitle body-text">Выберите удобный мессенджер — ответим в течение часа</p>
+    <div class="messenger-buttons">
+      <a class="messenger-button messenger-button--telegram" href="https://t.me/kiberportal" data-analytics-event="telegram_click"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>Telegram</a>
+      <a class="messenger-button messenger-button--whatsapp" href="https://wa.me/79852666582" data-analytics-event="whatsapp_click"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 32 COOKIE BANNER -->
+<div class="cookie-banner rv" data-rv="32 · COOKIE BANNER" id="cookie-banner">
+  <div class="container cookie-banner__inner">
+    <p class="body-text" style="color:var(--grey-400);font-size:14px">Мы используем cookie и Яндекс.Метрику для улучшения работы сайта. Продолжая, вы соглашаетесь с политикой cookie.</p>
+    <button class="button button--primary" onclick="document.getElementById('cookie-banner').classList.add('is-hidden')">Принять</button>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('[data-open-modal]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.openModal).classList.add('is-open')));
+document.querySelectorAll('[data-close-modal]').forEach(b=>b.addEventListener('click',()=>b.closest('.modal').classList.remove('is-open')));
+document.querySelectorAll('.faq-item__question').forEach(b=>b.addEventListener('click',()=>{const i=b.closest('.faq-item'),o=i.classList.contains('is-open');document.querySelectorAll('.faq-item.is-open').forEach(x=>x.classList.remove('is-open'));if(!o)i.classList.add('is-open')}));
+document.querySelectorAll('.drag-slider').forEach(slider=>{let isDown=false,startX=0,startScroll=0,moved=0;slider.querySelectorAll('img').forEach(i=>i.draggable=false);slider.addEventListener('mousedown',e=>{if(e.button!==0&&e.button!==2)return;isDown=true;moved=0;startX=e.pageX;startScroll=slider.scrollLeft;slider.classList.add('is-dragging');e.preventDefault()});window.addEventListener('mousemove',e=>{if(!isDown)return;const dx=e.pageX-startX;moved=Math.max(moved,Math.abs(dx));slider.scrollLeft=startScroll-dx});window.addEventListener('mouseup',()=>{if(!isDown)return;isDown=false;slider.classList.remove('is-dragging')});slider.addEventListener('contextmenu',e=>e.preventDefault());slider.addEventListener('click',e=>{if(moved>5){e.preventDefault();e.stopPropagation();moved=0}},true)});
+document.querySelectorAll('[data-slider-prev]').forEach(b=>b.addEventListener('click',()=>{const s=document.querySelector(b.dataset.sliderPrev);if(s)s.scrollBy({left:-s.clientWidth*0.8,behavior:'smooth'})}));
+document.querySelectorAll('[data-slider-next]').forEach(b=>b.addEventListener('click',()=>{const s=document.querySelector(b.dataset.sliderNext);if(s)s.scrollBy({left:s.clientWidth*0.8,behavior:'smooth'})}));
+const cta=document.getElementById('mobile-cta');
+const fab=document.getElementById('mobile-cta-fab');
+document.getElementById('mobile-cta-close').addEventListener('click',()=>{cta.classList.add('is-hidden');fab.classList.add('is-visible')});
+fab.addEventListener('click',()=>{cta.classList.remove('is-hidden');fab.classList.remove('is-visible')});
+</script>
+</body>
+</html>

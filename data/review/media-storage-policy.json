@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-12",
+  "title": "Media storage policy and disk reserve",
+  "status": "closed_by_lfs_policy_and_disk_evidence",
+  "ownerDecision": {
+    "selectedPolicy": "git_lfs_for_review_originals",
+    "selectedBy": "Александр Маркин",
+    "decisionEvidence": "Owner selected variant A: Git LFS for existing legacy original/provenance images during KIBER-49 closure.",
+    "productionDeployApproval": false
+  },
+  "diskReserve": {
+    "measuredAt": "2026-08-31T10:16:00Z",
+    "path": "/home/alex/projects/kiber-portal-pr8",
+    "filesystem": "/dev/sda1",
+    "sizeGiB": 59,
+    "usedGiB": 47,
+    "availableGiB": 9.8,
+    "usePercent": 83,
+    "minimumRequiredAvailableGiB": 5,
+    "status": "sufficient_for_current_staging_and_ci_work",
+    "cleanupPerformed": false,
+    "cleanupBoundary": "No broad Docker/server cleanup was performed because shared server cleanup can affect non-Alex services and requires separate operator approval."
+  },
+  "policy": {
+    "runtimePublicMedia": {
+      "root": "public/images/",
+      "allowedFormats": ["webp", "avif", "svg"],
+      "maxBytesPerRasterImage": 204800,
+      "sourceRule": "Runtime pages must reference optimized public assets only, not site-export originals."
+    },
+    "reviewOriginals": {
+      "root": "site-export/images/",
+      "storage": "git_lfs",
+      "trackingRule": "site-export/images/** filter=lfs diff=lfs merge=lfs -text",
+      "historyRewriteRequired": false,
+      "workingTreeAvailability": "Originals remain available at normal paths for review/provenance while the Git index stores LFS pointers."
+    },
+    "incomingDrops": {
+      "roots": ["incoming/", "upload/"],
+      "ordinaryGitPolicy": "ignored_until_explicitly_migrated",
+      "migrationRule": "New original/raw drops stay out of ordinary Git unless explicitly optimized into public runtime media or migrated to Git LFS."
+    },
+    "dockerContext": {
+      "excludedRoots": ["site-export", "incoming", "artifacts"],
+      "rule": "Review originals and incoming drops must not enter runtime Docker context."
+    }
+  },
+  "currentEvidence": {
+    "gitLfsInstalledLocally": true,
+    "gitLfsTrackedReviewOriginals": 510,
+    "trackedReviewOriginals": 510,
+    "reviewOriginalsNotInLfs": 0,
+    "runtimeImages": 37,
+    "runtimeImageBytes": 824680,
+    "siteExportImages": 510,
+    "siteExportWorkingTreeBytes": 102127050,
+    "mediaGitHygieneReport": "docs/review/kiber-49/media-git-hygiene-report.json"
+  },
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "productionSecretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "sharedDockerCleanupPerformed": false
+  }
+}

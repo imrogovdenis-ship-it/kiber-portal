@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-08-28T15:52:08.127Z",
+  "baseUrl": "http://127.0.0.1:4331",
+  "items": [
+    {
+      "route": "/contacts/",
+      "viewport": {
+        "name": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "file": "contacts-desktop-1440.png",
+      "title": "Контакты — КИБЕР ПОРТАЛ",
+      "h1": "Контакты и заявка на робота",
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "overflowX": false
+    },
+    {
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "viewport": {
+        "name": "desktop-1440",
+        "width": 1440,
+        "height": 1100
+      },
+      "file": "lead-request-desktop-1440.png",
+      "title": "Заявка на подбор робота — КИБЕР ПОРТАЛ",
+      "h1": "Заявка на подбор робота",
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "overflowX": false
+    },
+    {
+      "route": "/contacts/",
+      "viewport": {
+        "name": "mobile-390",
+        "width": 390,
+        "height": 1200
+      },
+      "file": "contacts-mobile-390.png",
+      "title": "Контакты — КИБЕР ПОРТАЛ",
+      "h1": "Контакты и заявка на робота",
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "overflowX": false
+    },
+    {
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "viewport": {
+        "name": "mobile-390",
+        "width": 390,
+        "height": 1200
+      },
+      "file": "lead-request-mobile-390.png",
+      "title": "Заявка на подбор робота — КИБЕР ПОРТАЛ",
+      "h1": "Заявка на подбор робота",
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "overflowX": false
+    }
+  ]
+}

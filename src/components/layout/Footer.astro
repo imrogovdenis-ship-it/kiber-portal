@@ -1,0 +1,69 @@
+---
+import { siteConfig } from '../../config/site';
+import type { FooterData } from '../../../design-system/schemas/fixture.schema';
+
+interface Props extends Partial<FooterData> {
+  logo?: { src: string; alt: string; width: number; height: number };
+}
+const defaultMenuLinks = [
+  { href: '/', label: 'Главное' },
+  { href: '/#catalog', label: 'Каталог' },
+  { href: '/compilations', label: 'Подборки' },
+  { href: '/articles', label: 'Блог' },
+  { href: '/news', label: 'Новости' },
+  { href: '/contacts', label: 'Контакты' },
+];
+const defaults = {
+  logo_label: 'КИБЕР ПОРТАЛ',
+  logo: { src: '/images/brand/kp_logo_full_color.svg', alt: 'КИБЕР ПОРТАЛ', width: 415, height: 132 },
+  description: 'Аренда роботов для мероприятий\nв Москве и по всей России.',
+  sections: [
+    { title: 'Главное', links: defaultMenuLinks },
+  ],
+  messengers: [{ href: siteConfig.telegram, label: 'Telegram' }, { href: siteConfig.whatsapp, label: 'WhatsApp' }, { href: siteConfig.max, label: 'MAX' }],
+  legal_notice: 'Все права защищены ©',
+  legal_links: [
+    { href: '/privacy-policy', label: 'Политика обработки\nперсональных данных' },
+    { href: '/consent', label: 'Согласие на обработку\nперсональных данных' },
+    { href: '/cookie-policy', label: 'Политика использования\nфайлов cookie' },
+    { href: '/terms', label: 'Пользовательское\nсоглашение' },
+  ],
+};
+const { logo_label = defaults.logo_label, logo = defaults.logo, description = defaults.description, sections = defaults.sections, phone = siteConfig.phone, email = siteConfig.email, messengers = defaults.messengers, legal_notice = defaults.legal_notice, legal_links = defaults.legal_links } = Astro.props;
+const phoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
+const footerAddress = `г. ${siteConfig.region}, ${siteConfig.address}`;
+const descriptionLines = description.split('\n');
+---
+
+<footer class="site-footer" data-block="33-footer" data-rv="33">
+  <div class="container">
+    <div class="site-footer__main">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo site-footer__logo--with-mark" href="/" aria-label={`${logo_label} — главная`}>
+          <img class="site-footer__logo-mark" src={logo.src} alt={logo.alt} width={logo.width} height={logo.height} loading="lazy" decoding="async" />
+          <span class="site-footer__logo-text">{logo_label}</span>
+        </a>
+        <p class="site-footer__description">{descriptionLines.map((line) => <span>{line}</span>)}</p>
+        <p class="site-footer__requisites" aria-label="Реквизиты">
+          <span>{siteConfig.legalName}</span>
+          <span>ИНН {siteConfig.inn}</span>
+          <span>ОГРНИП {siteConfig.ogrnip}</span>
+        </p>
+      </div>
+      {sections.map((section) => <nav class="site-footer__section" aria-label={section.title}><ul class="site-footer__nav-list">{section.links.map((link) => <li><a href={link.href}>{link.label}</a></li>)}</ul></nav>)}
+      <address class="site-footer__contacts">
+        <h2 class="site-footer__title">Контакты</h2>
+        <p class="site-footer__contact-item"><span>Телефон</span><a class="site-footer__phone" href={phoneHref} data-analytics-event="phone_click" data-analytics-source="footer" data-analytics-placement="contacts" data-analytics-slug="global">{phone}</a></p>
+        <p class="site-footer__contact-item"><span>Почта</span><a class="site-footer__email" href={`mailto:${email}`} data-analytics-event="contact_click" data-analytics-source="footer" data-analytics-placement="email" data-analytics-slug="global">{email}</a></p>
+        <p class="site-footer__contact-item"><span>Адрес</span><span class="site-footer__address">{footerAddress}</span></p>
+      </address>
+      <div class="site-footer__meta">
+        <div class="site-footer__messengers">{messengers.map((link) => <a href={link.href} aria-label={link.label} data-analytics-event="messenger_click" data-analytics-source="footer" data-analytics-placement="messengers" data-analytics-slug={link.label.toLowerCase()}>{link.label.slice(0, 2).toUpperCase()}</a>)}</div>
+        <nav class="site-footer__legal" aria-label="Юридические документы">
+          {legal_links.map((link) => <a href={link.href}>{link.label.split('\n').map((line) => <span>{line}</span>)}</a>)}
+        </nav>
+      </div>
+    </div>
+    <div class="site-footer__bottom"><div>{legal_notice}</div></div>
+  </div>
+</footer>

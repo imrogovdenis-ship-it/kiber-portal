@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-65",
+  "title": "Forms, analytics, robots, sitemap and redirects readiness matrix",
+  "status": "passed_with_production_blockers",
+  "scope": "Non-production verification of forms, provider-neutral analytics, robots policy, sitemap alignment and redirects for PR #8 controlled rebuild.",
+  "productionPermission": false,
+  "areas": [
+    {
+      "id": "forms",
+      "label": "Forms / lead endpoint",
+      "status": "green_preview_safe",
+      "evidence": [
+        "data/lead/capability-contract.json",
+        "tests/visual/api-leads-endpoint.test.ts",
+        "scripts/lead-capability-contract-smoke.mjs",
+        "docs/review/kiber-54/lead-capability-contract-report.json"
+      ],
+      "assertions": [
+        "POST /api/leads validates payloads and rejects submissions without explicit privacy consent.",
+        "Dry-run is default and makes no external amoCRM/Telegram calls.",
+        "Live routing remains disabled until separate owner approval."
+      ]
+    },
+    {
+      "id": "analytics",
+      "label": "Analytics contract",
+      "status": "green_provider_neutral_deferred",
+      "evidence": [
+        "data/analytics/provider-neutral-events.json",
+        "scripts/analytics-event-contract-smoke.mjs",
+        "docs/review/kiber-71/analytics-event-contract-report.json"
+      ],
+      "assertions": [
+        "Provider-neutral DOM event contract is present.",
+        "Yandex Metrica is recorded as deferred until site publication/domain binding.",
+        "Counter ID, cookies and provider script injection remain disabled."
+      ]
+    },
+    {
+      "id": "robots",
+      "label": "robots.txt / indexability policy",
+      "status": "green_source_policy",
+      "evidence": [
+        "public/robots.txt",
+        "data/review/launch-readiness-crawl.json",
+        "scripts/launch-readiness-crawl-smoke.mjs"
+      ],
+      "assertions": [
+        "Production robots.txt allows public crawl and declares production sitemap.",
+        "Protected staging remains separately noindex through Traefik headers and Basic Auth, not by changing production robots.txt.",
+        "Preview/review/thank-you routes are excluded from sitemap checks."
+      ]
+    },
+    {
+      "id": "sitemap",
+      "label": "Sitemap / launch route inventory",
+      "status": "green",
+      "evidence": [
+        "data/seo/launch-routes.json",
+        "src/pages/sitemap.xml.ts",
+        "scripts/route-sitemap-smoke.mjs",
+        "docs/review/kiber-43/route-sitemap-report.json"
+      ],
+      "assertions": [
+        "37 launch routes checked.",
+        "31 sitemap URLs expected.",
+        "24 robot detail routes present."
+      ]
+    },
+    {
+      "id": "redirects",
+      "label": "Redirects / 404",
+      "status": "green",
+      "evidence": [
+        "data/seo/redirects.json",
+        "nginx.redirects.conf",
+        "tests/visual/http-404-redirects.test.ts",
+        "scripts/route-sitemap-smoke.mjs"
+      ],
+      "assertions": [
+        "Legacy /test-blok variants redirect to / with 301.",
+        "Redirect sources are excluded from sitemap.",
+        "Static 404 page exists and remains noindex."
+      ]
+    }
+  ],
+  "blockingProductionDependencies": [
+    {
+      "id": "KIBER-64",
+      "reason": "Allowed end-to-end test leads require live destinations approval; do not execute real submissions yet."
+    },
+    {
+      "id": "KIBER-67",
+      "reason": "Analytics provider IDs/cookies and consent activation require owner approval."
+    },
+    {
+      "id": "KIBER-69",
+      "reason": "Real health/lead-failure/no-lead alert destinations require approved monitoring channels."
+    }
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "productionSecretsChanged": false,
+    "analyticsProviderEnabled": false,
+    "analyticsCookiesEnabled": false,
+    "liveLeadRoutingEnabled": false,
+    "realTestLeadsSubmitted": false
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "issue": "KIBER-49",
+  "status": "passed_lfs_migrated",
+  "generatedAt": "2026-08-31T04:55:17.615Z",
+  "policy": {
+    "runtimePublicImageMaxBytes": 204800,
+    "runtimeFormatsAllowed": [
+      "webp",
+      "avif",
+      "svg"
+    ],
+    "reviewOriginalsAllowedOnlyUnder": [
+      "site-export/images"
+    ],
+    "ordinaryGitOriginalPolicy": "KIBER-49 variant A: legacy site-export/images originals are tracked through Git LFS pointers; new originals/raw assets are ignored unless explicitly migrated to LFS",
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "liveRoutingChanged": false
+  },
+  "gitLfsAvailable": true,
+  "gitLfsTrackedFiles": 510,
+  "summary": {
+    "trackedMediaFiles": 713,
+    "trackedMediaBytes": 164948430,
+    "publicRuntimeImages": 27,
+    "publicRuntimeImageBytes": 356930,
+    "publicRuntimeLargestImageBytes": 29624,
+    "trackedReviewOriginals": 510,
+    "trackedReviewOriginalBytes": 102127050,
+    "lfsTrackedReviewOriginals": 510,
+    "reviewOriginalsNotInLfs": 0,
+    "oversizedTrackedReviewOriginals": 41,
+    "renderedDistScanned": true
+  },
+  "topTrackedMedia": [
+    {
+      "path": "data/design/parity-screenshots/mobile-detail-qa-2026-08-25/article-unitree-g1-agibot-x2-mobile-390.png",
+      "bytes": 2791981
+    },
+    {
+      "path": "data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390-after-grid-fix.png",
+      "bytes": 1962303
+    },
+    {
+      "path": "data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390.png",
+      "bytes": 1943733
+    },
+    {
+      "path": "data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-desktop-1280.png",
+      "bytes": 1622066
+    },
+    {
+      "path": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-mobile.png",
+      "bytes": 1457582
+    },
+    {
+      "path": "docs/review/contact-lead-visual-pass3/screenshots/contact-sheet-mobile.png",
+      "bytes": 1396595
+    },
+    {
+      "path": "data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-desktop-1280.png",
+      "bytes": 1193227
+    },
+    {
+      "path": "site-export/images/tild3265-6338-4163-b136-316230653365__404.png",
+      "bytes": 1102569
+    },
+    {
+      "path": "data/design/parity-screenshots/collection-template/roboty-gumanoidy-desktop-1280.png",
+      "bytes": 1029149
+    },
+    {
+      "path": "site-export/images/tild3764-6163-4463-a364-393236616631__noroot.png",
+      "bytes": 981027
+    },
+    {
+      "path": "data/design/parity-screenshots/collection-template/arenda-robotov-na-meropriyatie-desktop-1280.png",
+      "bytes": 969025
+    },
+    {
+      "path": "site-export/images/tild6136-3331-4366-b934-653538306539__noroot.png",
+      "bytes": 947707
+    },
+    {
+      "path": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-tablet.png",
+      "bytes": 934333
+    },
+    {
+      "path": "data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390-after-cta-padding.png",
+      "bytes": 915205
+    },
+    {
+      "path": "data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390.png",
+      "bytes": 913908
+    },
+    {
+      "path": "data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png",
+      "bytes": 909810
+    },
+    {
+      "path": "data/design/parity-screenshots/content-index/compilations-desktop-1280.png",
+      "bytes": 894165
+    },
+    {
+      "path": "data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-mobile-390.png",
+      "bytes": 893003
+    },
+    {
+      "path": "data/design/parity-screenshots/content-index-qa-2026-08-25/articles-desktop-1280.png",
+      "bytes": 890044
+    },
+    {
+      "path": "data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-mobile-390.png",
+      "bytes": 877492
+    },
+    {
+      "path": "docs/review/kiber-32/screenshots/kiber-32-design-review-tablet-768.png",
+      "bytes": 821784
+    },
+    {
+      "path": "site-export/images/tild3566-3661-4738-a336-333765313364__frame_55.png",
+      "bytes": 819622
+    },
+    {
+      "path": "site-export/images/tild6331-6439-4563-b861-396162663365__noroot.png",
+      "bytes": 819295
+    },
+    {
+      "path": "data/design/parity-screenshots/content-detail/unitree-g1-ili-agibot-x2-desktop-1280.png",
+      "bytes": 807945
+    },
+    {
+      "path": "site-export/images/tild3737-6237-4465-a132-393964613265__noroot.png",
+      "bytes": 802056
+    }
+  ],
+  "topReviewOriginals": [
+    {
+      "path": "site-export/images/tild3265-6338-4163-b136-316230653365__404.png",
+      "bytes": 1102569
+    },
+    {
+      "path": "site-export/images/tild3764-6163-4463-a364-393236616631__noroot.png",
+      "bytes": 981027
+    },
+    {
+      "path": "site-export/images/tild6136-3331-4366-b934-653538306539__noroot.png",
+      "bytes": 947707
+    },
+    {
+      "path": "site-export/images/tild3566-3661-4738-a336-333765313364__frame_55.png",
+      "bytes": 819622
+    },
+    {
+      "path": "site-export/images/tild6331-6439-4563-b861-396162663365__noroot.png",
+      "bytes": 819295
+    },
+    {
+      "path": "site-export/images/tild3737-6237-4465-a132-393964613265__noroot.png",
+      "bytes": 802056
+    },
+    {
+      "path": "site-export/images/tild3462-6666-4536-a237-336139306536__message.png",
+      "bytes": 789415
+    },
+    {
+      "path": "site-export/images/tild6565-3262-4433-b061-363638353331__noroot.png",
+      "bytes": 731873
+    },
+    {
+      "path": "site-export/images/tild3263-6161-4964-b234-343464353965__b_5.jpg",
+      "bytes": 713815
+    },
+    {
+      "path": "site-export/images/tild3839-6266-4137-b166-313931343164__image_82.png",
+      "bytes": 689981
+    },
+    {
+      "path": "site-export/images/tild3361-6435-4361-a263-613032636434___.png",
+      "bytes": 669447
+    },
+    {
+      "path": "site-export/images/tild6335-3536-4133-a532-356662336538__frame_53.png",
+      "bytes": 645749
+    },
+    {
+      "path": "site-export/images/tild3336-3237-4331-b366-613435326463__noroot.png",
+      "bytes": 637058
+    },
+    {
+      "path": "site-export/images/tild3437-6236-4665-a164-653035646238__noroot.png",
+      "bytes": 631428
+    },
+    {
+      "path": "site-export/images/tild3136-3230-4164-b132-313762636265__noroot.png",
+      "bytes": 623475
+    },
+    {
+      "path": "site-export/images/tild3132-3731-4235-b666-306330316665__noroot.png",
+      "bytes": 604710
+    },
+    {
+      "path": "site-export/images/tild3165-6138-4635-b538-623931653530__noroot.png",
+      "bytes": 593222
+    },
+    {
+      "path": "site-export/images/tild6536-3766-4034-a538-626532663162__noroot.png",
+      "bytes": 587784
+    },
+    {
+      "path": "site-export/images/tild6362-6630-4239-a231-356633366431___.png",
+      "bytes": 585205
+    },
+    {
+      "path": "site-export/images/tild6634-6231-4565-b935-323537653230____.png",
+      "bytes": 575070
+    },
+    {
+      "path": "site-export/images/tild6463-6566-4864-a666-383936326331__cool.png",
+      "bytes": 569211
+    },
+    {
+      "path": "site-export/images/tild3065-3266-4766-a266-306366363331__tron.png",
+      "bytes": 568240
+    },
+    {
+      "path": "site-export/images/tild3866-3739-4636-b233-373864373365_____.png",
+      "bytes": 558161
+    },
+    {
+      "path": "site-export/images/tild3762-3662-4633-a666-323265656433__coffee.png",
+      "bytes": 555623
+    },
+    {
+      "path": "site-export/images/tild3037-6130-4064-b066-646161643932__noroot.png",
+      "bytes": 551376
+    }
+  ],
+  "failures": [],
+  "warnings": [],
+  "blockers": []
+}

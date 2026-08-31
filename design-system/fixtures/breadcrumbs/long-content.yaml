@@ -1,0 +1,7 @@
+schema_version: 1
+id: breadcrumbs-long-content
+block_id: breadcrumbs
+variant: default
+viewport: lg
+mode: long-content
+data: { items: [{ name: Главная, url: / }, { name: Каталог роботов для мероприятий, url: "/#catalog" }, { name: Роботы-гуманоиды для выставок и конференций, url: /roboty-gumanoidy }, { name: Unitree G1, url: /robots/arenda-unitree-g1/ }] }

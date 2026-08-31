@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-78",
+  "description": "Destination-free content package workflow for assembling launch copy/legal/media/lead evidence while Александр is offline. It prepares review artifacts only and does not approve production publishing.",
+  "policy": {
+    "productionContacts": "approved-public-defaults",
+    "liveLeadDestinations": "disabled",
+    "productionPublishRequiresHumanApproval": true,
+    "analyticsProviderIds": "disabled",
+    "noProductionDeployDnsSecretsOrCookies": true
+  },
+  "approvalGates": [
+    "human approves final business/legal/media content package",
+    "human approves live lead destinations before routing",
+    "human grants explicit production deploy permission"
+  ],
+  "sources": [
+    {
+      "path": "data/review/content-acceptance.json",
+      "role": "structural launch copy and page acceptance registry"
+    },
+    {
+      "path": "data/review/media-rights-registry.json",
+      "role": "media rights and production approval gate"
+    },
+    {
+      "path": "data/lead/capability-contract.json",
+      "role": "lead capability-only routing constraints"
+    },
+    {
+      "path": "data/legal/legal-documents.json",
+      "role": "legal document source material from live kiber-portal.ru decision"
+    },
+    {
+      "path": "src/config/site.ts",
+      "role": "owner-approved public contacts and requisites defaults"
+    }
+  ],
+  "summary": {
+    "robotPages": 24,
+    "launchPages": 7,
+    "legalDocuments": 4,
+    "finalApproved": 2,
+    "productionBlockedUntilHumanApproval": true,
+    "approvedSections": [
+      "media-rights",
+      "public-contacts"
+    ]
+  },
+  "packageSections": [
+    {
+      "id": "launch-copy",
+      "title": "Launch page and robot copy package",
+      "status": "ready_for_human_review",
+      "productionApproved": false,
+      "sourcePath": "data/review/content-acceptance.json",
+      "requiredEvidence": [
+        "structural acceptance report",
+        "human business/legal copy approval"
+      ]
+    },
+    {
+      "id": "media-rights",
+      "title": "Robot and page media package",
+      "status": "approved_by_owner_for_production_media_use",
+      "productionApproved": true,
+      "sourcePath": "data/review/media-rights-registry.json",
+      "requiredEvidence": [
+        "data/review/media-rights-robot-cards.json",
+        "docs/review/media-rights/robot-cards/README.md",
+        "data/review/media-rights-review-package.json"
+      ],
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-29T00:55:09Z",
+      "approvalEvidence": "All 24 full robot media cards approved by Александр in Telegram after reviewing first five and accepting remaining cards by same validated principle."
+    },
+    {
+      "id": "lead-capability",
+      "title": "Lead forms and routing capability package",
+      "status": "ready_for_human_review",
+      "productionApproved": false,
+      "sourcePath": "data/lead/capability-contract.json",
+      "requiredEvidence": [
+        "approved live lead destinations and fallback routing"
+      ]
+    },
+    {
+      "id": "legal-documents",
+      "title": "Four-document legal package",
+      "status": "ready_for_human_review",
+      "productionApproved": false,
+      "sourcePath": "data/legal/legal-documents.json",
+      "requiredEvidence": [
+        "human confirmation that sourced live-site legal documents remain current",
+        "human confirmation that /terms user agreement matches the live-site legal source",
+        "all four legal documents cross-link correctly"
+      ]
+    },
+    {
+      "id": "public-contacts",
+      "title": "Public contacts and requisites",
+      "status": "approved_by_owner_for_preview_pr",
+      "productionApproved": true,
+      "sourcePath": "src/config/site.ts",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-08-30T02:56:33Z",
+      "approvalEvidence": "Owner provided and approved replacement of placeholders with public phone, email, Telegram/WhatsApp, Moscow region, legal name, INN, OGRNIP and address.",
+      "requiredEvidence": [
+        "src/config/site.ts",
+        "src/components/layout/Header.astro",
+        "src/components/layout/Footer.astro",
+        "src/pages/contacts.astro",
+        "data/legal/legal-documents.json"
+      ]
+    }
+  ]
+}
