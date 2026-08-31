@@ -18,11 +18,11 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   </div>
   <div class="home-image-cards__grid" data-drag-slider={variant === 'overlay' ? 'true' : undefined} aria-label={variant === 'overlay' ? `${title}: горизонтальный слайдер` : undefined}>
     {cards.map((card) => (
-      <a class="home-image-cards__card" href={card.href} aria-label={`${variant === 'article' ? 'Читать' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
+      <a class="home-image-cards__card" href={card.href} aria-label={`${variant === 'article' ? 'Открыть' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
         <span class="home-image-cards__body">
           <strong>{card.title}</strong>
           <span>{card.description}</span>
-          <em>{variant === 'article' ? 'Читать' : (card.cta ?? 'Подробнее')}</em>
+          {variant === 'overlay' && <em>{card.cta ?? 'Подробнее'}</em>}
         </span>
       </a>
     ))}
@@ -30,71 +30,58 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
 </section>
 
 <script>
-  const sliders = document.querySelectorAll<HTMLElement>('[data-drag-slider="true"]');
-  for (const slider of sliders) {
+  document.querySelectorAll<HTMLElement>('[data-drag-slider="true"]').forEach((slider) => {
     let isDown = false;
     let startX = 0;
-    let scrollLeft = 0;
-    let dragged = false;
-    const dragItems = slider.querySelectorAll('a, img');
-    dragItems.forEach((item) => {
+    let startScroll = 0;
+    let moved = 0;
+
+    slider.querySelectorAll('a, img').forEach((item) => {
       item.setAttribute('draggable', 'false');
       item.addEventListener('dragstart', (event) => event.preventDefault());
     });
 
-    const getClientX = (event: PointerEvent | MouseEvent | TouchEvent) => {
-      if ('touches' in event) return event.touches[0]?.clientX ?? startX;
-      return event.clientX;
-    };
+    const pageX = (event: MouseEvent | TouchEvent) => ('touches' in event ? (event.touches[0]?.pageX ?? startX) : event.pageX);
 
-    const beginDrag = (event: PointerEvent | MouseEvent | TouchEvent) => {
-      if ('button' in event && event.button !== 0) return;
+    const start = (event: MouseEvent | TouchEvent) => {
+      if ('button' in event && event.button !== 0 && event.button !== 2) return;
       isDown = true;
-      dragged = false;
-      startX = getClientX(event);
-      scrollLeft = slider.scrollLeft;
+      moved = 0;
+      startX = pageX(event);
+      startScroll = slider.scrollLeft;
       slider.classList.add('is-dragging');
-      if ('pointerId' in event) {
-        slider.setPointerCapture(event.pointerId);
-      }
+      event.preventDefault();
     };
 
-    const moveDrag = (event: PointerEvent | MouseEvent | TouchEvent) => {
+    const move = (event: MouseEvent | TouchEvent) => {
       if (!isDown) return;
-      const walk = getClientX(event) - startX;
-      if (Math.abs(walk) > 4) {
-        dragged = true;
-        event.preventDefault();
-      }
-      slider.scrollLeft = scrollLeft - walk;
+      const dx = pageX(event) - startX;
+      moved = Math.max(moved, Math.abs(dx));
+      slider.scrollLeft = startScroll - dx;
+      event.preventDefault();
     };
 
-    const stopDrag = (event: PointerEvent | MouseEvent | TouchEvent) => {
+    const stop = () => {
       if (!isDown) return;
       isDown = false;
       slider.classList.remove('is-dragging');
-      if ('pointerId' in event && slider.hasPointerCapture(event.pointerId)) slider.releasePointerCapture(event.pointerId);
     };
 
-    slider.addEventListener('pointerdown', beginDrag);
-    slider.addEventListener('pointermove', moveDrag, { passive: false });
-    slider.addEventListener('pointerup', stopDrag);
-    slider.addEventListener('pointercancel', stopDrag);
-    slider.addEventListener('pointerleave', stopDrag);
-    slider.addEventListener('mousedown', beginDrag);
-    slider.addEventListener('mousemove', moveDrag, { passive: false });
-    window.addEventListener('mouseup', stopDrag);
-    slider.addEventListener('touchstart', beginDrag, { passive: true });
-    slider.addEventListener('touchmove', moveDrag, { passive: false });
-    slider.addEventListener('touchend', stopDrag);
+    slider.addEventListener('mousedown', start);
+    window.addEventListener('mousemove', move, { passive: false });
+    window.addEventListener('mouseup', stop);
+    slider.addEventListener('touchstart', start, { passive: false });
+    window.addEventListener('touchmove', move, { passive: false });
+    window.addEventListener('touchend', stop);
+    slider.addEventListener('contextmenu', (event) => event.preventDefault());
     slider.addEventListener('click', (event) => {
-      if (dragged) {
+      if (moved > 5) {
         event.preventDefault();
         event.stopPropagation();
-        dragged = false;
+        moved = 0;
       }
     }, true);
-  }
+  });
 </script>
 
 <style>
@@ -117,6 +104,8 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   .home-image-cards--overlay .home-image-cards__grid::-webkit-scrollbar { display: none; }
   .home-image-cards--overlay .home-image-cards__grid.is-dragging { cursor: grabbing; scroll-snap-type: none; }
   .home-image-cards--overlay .home-image-cards__card { flex: 0 0 23rem; width: 23rem; height: 23rem; min-height: 23rem; scroll-snap-align: start; -webkit-user-drag: none; touch-action: pan-y; }
+  .home-image-cards--overlay .home-image-cards__body { min-height: 100%; grid-template-rows: auto auto minmax(0, 1fr) auto; align-content: stretch; padding: 1.4rem; }
+  .home-image-cards--overlay .home-image-cards__body em { align-self: end; margin-top: auto; }
   .home-image-cards--article .home-image-cards__card { display: flex; flex-direction: column; min-height: auto; background: var(--kp-white); color: var(--kp-ink); box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
   .home-image-cards--article .home-image-cards__card::before { position: relative; z-index: auto; display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   .home-image-cards--article .home-image-cards__card::after { display: none; }

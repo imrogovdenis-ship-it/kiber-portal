@@ -17,12 +17,12 @@ const { title, items } = Astro.props as HomeFaqData;
   </div>
 </section>
 <style>
-  .home-faq { display: grid; gap: clamp(1.5rem, 3vw, 2.75rem); }
+  .home-faq { display: grid; gap: clamp(1.5rem, 3vw, 2.75rem); margin-top: clamp(2rem, 4vw, 3.5rem); }
   .home-faq__head { display: grid; gap: .55rem; max-width: 52rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
   .home-faq__head p, .home-faq__head h2 { margin: 0; }
   .home-faq__head p { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
   .home-faq__head h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); letter-spacing: 0; }
-  .home-faq__list { display: grid; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); border-top: .125rem solid color-mix(in srgb, var(--kp-ink) 28%, transparent); }
+  .home-faq__list { display: grid; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); border-top: .125rem solid color-mix(in srgb, var(--kp-ink) 28%, transparent); }
   .home-faq__item { border: 0; border-bottom: .125rem solid color-mix(in srgb, var(--kp-ink) 28%, transparent); border-radius: 0; padding: 0; background: transparent; }
   .home-faq__item summary { position: relative; display: grid; min-height: 4.9rem; align-items: center; padding: 1.25rem 3.75rem 1.25rem 0; cursor: pointer; list-style: none; font-family: var(--kp-font-heading); font-size: clamp(1rem, 1.35vw, 1.25rem); font-weight: 700; line-height: 1.18; }
   .home-faq__item summary::-webkit-details-marker { display: none; }
@@ -31,5 +31,5 @@ const { title, items } = Astro.props as HomeFaqData;
   .home-faq__item[open] summary::after { transform: translateY(-50%) rotate(0deg); }
   .home-faq__item p { margin: 0; padding: 0 3.75rem 2rem 0; color: var(--kp-muted); font-size: clamp(.92rem, 1.05vw, 1rem); line-height: 1.55; }
   .home-faq__item summary:focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .25rem; }
-  @media (max-width: 39.9375rem) { .home-faq__head, .home-faq__list { margin-left: 0; } }
+  @media (max-width: 39.9375rem) { .home-faq__head, .home-faq__list { margin-left: 0; margin-right: 0; } }
 </style>
