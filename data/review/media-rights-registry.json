@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "issue": "KIBER-media-rights-registry",
-  "description": "Preview-only media rights registry scaffold for generated robot assets. It records asset paths and alt text while keeping production media use blocked until a human rights review approves each asset.",
+  "issue": "KIBER-47",
+  "description": "KIBER-47 media rights and meaningful-asset role registry for launch robot media. Records robot/context, role, source/alt, owner approval evidence, and keeps production deployment separately blocked.",
   "source": "src/content/robots.generated.json",
   "policy": {
     "productionUseRequiresHumanRightsApproval": true,
     "noUnverifiedMediaInProduction": true,
-    "contactsRemainPlaceholders": true,
-    "noLiveLeadDestinations": true
+    "contactsRemainPlaceholders": false,
+    "noLiveLeadDestinations": true,
+    "productionDeployAllowed": false,
+    "dnsSecretsAnalyticsLeadRoutingChanged": false
   },
   "allowedRightsStatuses": [
     "needs_rights_review",
@@ -1558,6 +1560,8 @@
     "approvedAt": "2026-08-29T00:55:09Z",
     "approvedRobots": 24,
     "evidence": "Telegram approval: «Я посмотрел первые пять карточек всё в порядке и я утверждаю эти карточки и если содержание остальных карточек такое же ну по тому же принципу построены то можешь считать что я утверждаю сразу все остальные карточки закрывают эту задачу и переходи к следующему.» Full cards were generated from the same schema/tested principle for all 24 robots.",
-    "source": "data/review/media-rights-robot-cards.json"
+    "source": "data/review/media-rights-robot-cards.json",
+    "scope": "24 robot media records and their meaningful hero/gallery roles; production deploy/DNS/secrets/analytics/live routing remain separately blocked",
+    "linearIssue": "KIBER-47"
   }
 }

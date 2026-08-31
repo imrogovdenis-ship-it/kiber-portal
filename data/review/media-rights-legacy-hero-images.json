@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "issue": "KIBER-media-rights-legacy-hero-images",
+  "issue": "KIBER-47",
   "title": "Lost horizontal robot hero images audit",
   "rootCause": "Previous review package was derived from data/review/media-rights-registry.json, which was derived from src/content/robots.generated.json. That generated file only exposes the optimized square /images/kiber-45/*.webp hero plus gallery array, so the original horizontal live-site/Tilda robot-page hero background images from site-export HTML were not included in the human media-rights documents.",
   "summary": {
@@ -740,6 +740,7 @@
     "status": "approved_by_owner_for_production_media_use",
     "approvedBy": "Александр Маркин",
     "approvedAt": "2026-08-29T00:55:09Z",
-    "evidence": "Telegram approval: «Я посмотрел первые пять карточек всё в порядке и я утверждаю эти карточки и если содержание остальных карточек такое же ну по тому же принципу построены то можешь считать что я утверждаю сразу все остальные карточки закрывают эту задачу и переходи к следующему.» Full cards were generated from the same schema/tested principle for all 24 robots."
+    "evidence": "Telegram approval: «Я посмотрел первые пять карточек всё в порядке и я утверждаю эти карточки и если содержание остальных карточек такое же ну по тому же принципу построены то можешь считать что я утверждаю сразу все остальные карточки закрывают эту задачу и переходи к следующему.» Full cards were generated from the same schema/tested principle for all 24 robots.",
+    "scope": "legacy horizontal hero images included in KIBER-47 media rights package; production deployment remains separately blocked"
   }
 }

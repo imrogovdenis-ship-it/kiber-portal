@@ -7,7 +7,7 @@ const registry = readJson('data/review/media-rights-registry.json');
 const doc = readFileSync('docs/review/media-rights/review-package.md', 'utf8');
 const legacy = readJson('data/review/media-rights-legacy-hero-images.json');
 
-assert.equal(pack.issue, 'KIBER-media-rights-review-package');
+assert.equal(pack.issue, 'KIBER-47');
 assert.equal(pack.policy.productionUseRequiresHumanRightsApproval, true);
 assert.equal(pack.policy.productionApprovedAssets, pack.summary.assetRecordsIncludingLegacyHeroes);
 assert.equal(pack.policy.productionDeployAllowed, false);
@@ -16,11 +16,13 @@ assert.equal(pack.robots.length, registry.robots.length);
 assert.equal(pack.summary.productionApproved, 24);
 assert.equal(pack.summary.needsRightsReview, 0);
 assert.equal(pack.approval?.status, 'approved_by_owner_for_production_media_use');
+assert.equal(pack.policy.productionDeployAllowed, false);
+assert.match(pack.approval?.scope || '', /not production deployment approval/);
 assert.equal(legacy.summary.legacyHorizontalHeroImages, 24);
 assert.equal(pack.summary.legacyHorizontalHeroImages, 24);
 assert.equal(pack.summary.assetRecordsIncludingLegacyHeroes, pack.summary.assetRecords + 24);
 assert.match(doc, /# Media rights review package/);
-assert.match(doc, /Что нужно подтвердить человеку/);
+assert.match(doc, /Что уже подтверждено/);
 assert.match(doc, /Отдельные горизонтальные hero-изображения/);
 assert.match(doc, /Почему они потерялись/);
 

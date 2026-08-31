@@ -11,7 +11,7 @@ test('media rights package includes the lost horizontal live-site robot hero ima
   const audit = json('data/review/media-rights-legacy-hero-images.json');
   const pack = json('data/review/media-rights-review-package.json');
 
-  assert.equal(audit.issue, 'KIBER-media-rights-legacy-hero-images');
+  assert.equal(audit.issue, 'KIBER-47');
   assert.equal(audit.summary.robots, 24);
   assert.equal(audit.summary.legacyHorizontalHeroImages, 24);
   assert.equal(audit.summary.missingFromPreviousReviewPackage, 24);

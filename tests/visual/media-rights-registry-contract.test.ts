@@ -18,7 +18,7 @@ test('KIBER media rights registry exists and gates every generated robot asset',
   const generated = readJson(generatedRobotsPath);
 
   assert.equal(registry.schemaVersion, 1);
-  assert.equal(registry.issue, 'KIBER-media-rights-registry');
+  assert.equal(registry.issue, 'KIBER-47');
   assert.equal(registry.policy.productionUseRequiresHumanRightsApproval, true);
   assert.equal(registry.policy.noUnverifiedMediaInProduction, true);
   assert.ok(registry.allowedRightsStatuses.includes('needs_rights_review'));
@@ -27,6 +27,9 @@ test('KIBER media rights registry exists and gates every generated robot asset',
   assert.ok(registry.allowedRightsStatuses.includes('blocked_for_production'));
   assert.equal(registry.summary.productionApproved, 24);
   assert.equal(registry.approval.status, 'approved_by_owner_for_production_media_use');
+  assert.equal(registry.policy.productionDeployAllowed, false);
+  assert.equal(registry.policy.dnsSecretsAnalyticsLeadRoutingChanged, false);
+  assert.match(registry.approval.scope, /production deploy\/DNS\/secrets\/analytics\/live routing remain separately blocked/);
 
   assert.deepEqual(
     new Set(registry.robots.map((item: { slug: string }) => item.slug)),

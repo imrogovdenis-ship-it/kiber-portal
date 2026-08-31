@@ -46,3 +46,18 @@ Generated smoke report: `docs/review/media-rights/media-rights-registry-report.j
 - Contacts remain placeholders.
 - Lead channels/routing remain capability-only with no live destinations.
 - KIBER-55 structural approval was not converted into final business/legal/media approval.
+
+
+## KIBER-47 closure update — 2026-08-31
+
+KIBER-47 / KP-068 is now tied directly to the media-rights registry and review package. The package records rights status, robot/context, meaningful asset role, source path and alt source for the 24 launch robot media records.
+
+Current closure evidence:
+
+- `data/review/media-rights-registry.json` — issue marker `KIBER-47`, 24/24 robot media records `approved_for_production`.
+- `data/review/media-rights-review-package.json` — issue marker `KIBER-47`, 191 approved assets including 24 legacy horizontal hero images.
+- `data/review/media-rights-legacy-hero-images.json` — legacy hero coverage tied to `KIBER-47`.
+- `docs/review/media-rights/review-package.md` — human-readable table of robot/context/role/source/alt/status.
+- `scripts/media-rights-registry-smoke.mjs` and `scripts/media-rights-review-package-smoke.mjs` enforce registry/package consistency in CI.
+
+This closes the media-rights/role criterion only. It does not approve production deploy, DNS/domain, production secrets, analytics provider IDs/cookies, or live lead routing.

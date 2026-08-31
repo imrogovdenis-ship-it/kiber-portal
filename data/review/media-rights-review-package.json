@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "issue": "KIBER-media-rights-review-package",
-  "title": "KIBER PORTAL media rights review package",
+  "issue": "KIBER-47",
+  "title": "KIBER-47 media rights and meaningful asset role review package",
   "source": "data/review/media-rights-registry.json + data/review/media-rights-legacy-hero-images.json",
   "policy": {
     "productionUseRequiresHumanRightsApproval": true,
@@ -27,11 +27,9 @@
     "replace_before_production"
   ],
   "humanDecisionChecklist": [
-    "For each robot hero/gallery asset: identify source or rights holder",
-    "Approve asset for production, block it, or mark replacement needed",
-    "Confirm alt text remains truthful and not keyword-stuffed",
-    "Confirm no production media approval is implied by preview use",
-    "Keep production launch blocked until media/legal approval is recorded"
+    "Media rights and meaningful roles are approved for the 24 launch robot media records in this package.",
+    "Keep alt text truthful and separate from visible captions/actual descriptions.",
+    "Keep production launch blocked until the separate production deploy/DNS/secrets/analytics/live-routing gates are approved."
   ],
   "robots": [
     {
@@ -3733,6 +3731,8 @@
       "analytics IDs/cookies",
       "real public contacts",
       "live lead routing"
-    ]
+    ],
+    "scope": "24 robot media records / 191 assets including legacy heroes; this is media-use approval only, not production deployment approval",
+    "linearIssue": "KIBER-47"
   }
 }

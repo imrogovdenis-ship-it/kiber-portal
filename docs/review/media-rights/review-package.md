@@ -1,6 +1,8 @@
 # Media rights review package
 
-Статус: `approved_for_production`; production запуск не разрешён.
+Issue: KIBER-47 / KP-068
+
+Статус: `approved_for_production`; KIBER-47 закрывает права/роли media assets, но production запуск не разрешён.
 
 ## Отдельные горизонтальные hero-изображения
 
@@ -14,7 +16,7 @@
 - Existing hero/gallery asset records: `167`
 - Asset records including legacy heroes: `191`
 - productionApproved = `24 robots / 191 assets including legacy heroes`
-- Все legacy hero остаются `approved_for_production`, пока человек не подтвердит права.
+- Все legacy hero записаны как `approved_for_production` по owner approval от 2026-08-29; это не разрешает production deploy.
 
 | Robot | Route | Current generated hero | Lost legacy horizontal hero | Size | Status |
 |---|---|---|---|---:|---|
@@ -44,13 +46,12 @@
 | `arenda-xiaomi-cyberdog-2` | `/robots/arenda-xiaomi-cyberdog-2/` | `/images/kiber-45/arenda-xiaomi-cyberdog-2.webp` | `site-export/images/tild3962-6239-4563-b330-653865333837__photo.jpg` | 1400×800 | `approved_for_production` |
 
 
-## Что нужно подтвердить человеку
+## Что уже подтверждено
 
-- For each robot hero/gallery asset: identify source or rights holder
-- Approve asset for production, block it, or mark replacement needed
-- Confirm alt text remains truthful and not keyword-stuffed
-- Confirm no production media approval is implied by preview use
-- Keep production launch blocked until media/legal approval is recorded
+- Для 24 launch robot media records известны robot/context, role, source path и alt source.
+- Для 191 assets including legacy heroes записан owner approval: `approved_by_owner_for_production_media_use`.
+- Alt/source поля остаются в registry/review package для аудита.
+- Production запуск не разрешён этим approval: deploy/DNS/secrets/analytics/live lead routing остаются отдельными gates.
 
 ## Таблица 24 роботов
 
