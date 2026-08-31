@@ -116,6 +116,9 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
   assert.match(imageCards, /variant === 'overlay' && <em>/);
   assert.doesNotMatch(imageCards, /'Читать'/);
+  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 15%, transparent\) 0%/);
+  assert.match(imageCards, /transparent 52%, transparent 100%/);
+  assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body\s*\{[^}]*padding:\s*2\.8rem 1\.4rem 1\.4rem 2\.8rem/s);
   assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body\s*\{[^}]*grid-template-rows:\s*auto auto minmax\(0, 1fr\) auto;[^}]*align-content:\s*stretch/s);
   assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body em\s*\{[^}]*margin-top:\s*auto/s);
   assert.match(imageCards, /\.home-image-cards--article \.home-image-cards__card\s*\{[^}]*display:\s*flex;[^}]*flex-direction:\s*column;/s);
