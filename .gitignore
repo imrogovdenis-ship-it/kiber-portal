@@ -10,3 +10,20 @@ dist/
 .env
 .env.*
 !.env.example
+
+# KIBER-49: keep new originals/provenance media out of ordinary Git.
+# Existing tracked legacy review originals stay inventoried until Git LFS/object storage is approved.
+site-export/images/
+incoming/
+upload/
+*.zip
+*.psd
+*.ai
+*.sketch
+*.fig
+*.mov
+*.mp4
+*.tif
+*.tiff
+*.heic
+*.raw
