@@ -18,9 +18,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
 >
   <main class="articles-page" id="main-content" tabindex="-1" data-kiber-task="KIBER-91" data-articles-index="filled">
     <section class="articles-page__hero container" aria-labelledby="page-title">
-      <p class="articles-page__eyebrow">Блог Кибер Гоши</p>
-      <h1 id="page-title">{homeArticles.title}</h1>
-      <p>{articlesPageDescription}</p>
+      <h1 id="page-title">Блог Кибер Гоши</h1>
     </section>
 
     <section class="articles-page__intro container" aria-labelledby="articles-intro-title">
@@ -64,28 +62,31 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
 <style>
   .articles-page {
     display: grid;
-    gap: clamp(2.6rem, 6vw, 5rem);
-    padding-block: clamp(2.4rem, 6vw, 5rem);
+    gap: clamp(4rem, 7vw, 7rem);
+    padding-block: clamp(5rem, 8vw, 7rem) 4.5rem;
     overflow-x: clip;
-    background: var(--kp-page-bg);
+    background: var(--kp-reference-sky);
   }
 
   .articles-page__hero,
   .articles-page__intro,
   .articles-page__feed,
   .articles-page__cta {
-    width: 100%;
+    width: min(100% - (2 * var(--kp-reference-page-gutter)), var(--kp-reference-container));
+    margin-inline: auto;
+    padding-inline: 0;
   }
 
   .articles-page__hero {
     display: grid;
-    gap: .7rem;
-    max-width: 72rem;
   }
 
-  .articles-page__hero > *,
-  .articles-page__section-copy > *,
-  .articles-page__intro-copy > * {
+  .articles-page__hero h1,
+  .articles-page__eyebrow,
+  .articles-page__section-copy h2,
+  .articles-page__section-copy p,
+  .articles-page__intro-copy h2,
+  .articles-page__intro-copy p {
     margin: 0;
   }
 
@@ -94,57 +95,49 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     font-size: var(--kp-reference-label-size);
     font-weight: 700;
     letter-spacing: .1em;
-    line-height: 1.2;
+    line-height: normal;
     text-transform: uppercase;
   }
 
   .articles-page__hero h1 {
     max-width: 58rem;
-    color: var(--kp-ink);
+    color: var(--kp-reference-blue);
     font-family: var(--kp-font-heading);
-    font-size: var(--kp-display-size);
-    font-weight: var(--kp-heading-weight);
-    line-height: var(--kp-display-line-height);
+    font-size: clamp(3.1rem, 7vw, var(--kp-reference-display-xl));
+    font-weight: 700;
+    line-height: .98;
     letter-spacing: 0;
-  }
-
-  .articles-page__hero > p:last-child {
-    max-width: 52rem;
-    color: var(--kp-muted);
-    font-size: clamp(1rem, 1.4vw, 1.18rem);
-    line-height: var(--kp-body-line-height);
   }
 
   .articles-page__intro-copy,
   .articles-page__section-copy {
     display: grid;
-    gap: .7rem;
-    max-width: 72rem;
+    gap: .75rem;
   }
 
   .articles-page__intro-copy {
-    border: .0625rem solid color-mix(in srgb, var(--kp-reference-blue) 16%, var(--kp-line));
-    border-radius: 1.75rem;
-    padding: clamp(1.5rem, 4vw, 2.4rem);
-    background: var(--kp-white);
-    box-shadow: 0 1rem 2.25rem color-mix(in srgb, var(--kp-ink) 7%, transparent);
+    max-width: 72rem;
+  }
+
+  .articles-page__section-copy {
+    max-width: 48rem;
   }
 
   .articles-page__intro-copy h2,
   .articles-page__section-copy h2 {
-    color: var(--kp-ink);
+    color: var(--kp-reference-ink);
     font-family: var(--kp-font-heading);
-    font-size: clamp(1.9rem, 4vw, 3rem);
+    font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg));
     font-weight: var(--kp-heading-weight);
-    line-height: 1.02;
+    line-height: 1;
     letter-spacing: 0;
   }
 
   .articles-page__intro-copy p:last-child,
   .articles-page__section-copy p:last-child {
     max-width: 60rem;
-    color: var(--kp-muted);
-    line-height: var(--kp-body-line-height);
+    color: var(--kp-reference-muted);
+    line-height: 1.65;
   }
 
   .articles-page__feed {
@@ -206,6 +199,10 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     outline-offset: .1875rem;
   }
 
+  .articles-page__cta :global(.home-final-cta) {
+    margin-top: 0;
+  }
+
   .articles-page__links-hidden {
     position: absolute;
     width: .0625rem;
@@ -231,17 +228,16 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
 
   @media (max-width: 39.9375rem) {
     .articles-page {
-      gap: 2.4rem;
-      padding-block: 2rem 3rem;
+      gap: 3.25rem;
+      padding-block: 4.25rem 3.5rem;
+    }
+
+    .articles-page__hero h1 {
+      font-size: clamp(2.6rem, 14vw, 4rem);
     }
 
     .articles-page__grid {
       grid-template-columns: 1fr;
-    }
-
-    .articles-page__intro-copy {
-      border-radius: 1.25rem;
-      padding: 1.25rem;
     }
   }
 </style>

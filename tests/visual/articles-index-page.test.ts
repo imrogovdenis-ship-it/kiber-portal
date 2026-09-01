@@ -6,6 +6,14 @@ const page = readFileSync('src/pages/articles.astro', 'utf8');
 const data = JSON.parse(readFileSync('data/design/home-live-blocks.json', 'utf8')) as {
   articles: { title: string; description: string; cards: Array<{ title: string }> };
 };
+const cssBlock = (selector: string) => {
+  const marker = `${selector} {`;
+  const start = page.indexOf(marker);
+  if (start === -1) return '';
+  const bodyStart = start + marker.length;
+  const end = page.indexOf('\n  }', bodyStart);
+  return end === -1 ? page.slice(bodyStart) : page.slice(bodyStart, end);
+};
 const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8')) as {
   visualFindings: Array<{ id: string; severity: string; routes: string[] }>;
   resolvedFindings?: Array<{ id: string; route: string; status: string }>;
@@ -16,8 +24,11 @@ test('KIBER-91 articles index is filled from approved homepage article data', ()
   assert.doesNotMatch(page, /Здесь будут практические статьи/);
   assert.match(page, /import \{ homeArticles, homeFinalCta \}/);
   assert.match(page, /const articleCards = homeArticles\.cards/);
-  assert.match(page, /<h1 id="page-title">\{homeArticles\.title\}<\/h1>/);
-  assert.match(page, /\{articlesPageDescription\}/);
+  assert.match(page, /<h1 id="page-title">Блог Кибер Гоши<\/h1>/);
+  assert.doesNotMatch(page, /<h1 id="page-title">\{homeArticles\.title\}<\/h1>/);
+  assert.doesNotMatch(page, /<section class="articles-page__hero container"[\s\S]*\{articlesPageDescription\}[\s\S]*<\/section>/);
+  assert.doesNotMatch(page, /Тематические статьи по аренде роботов на мероприятия/);
+  assert.doesNotMatch(page, /Разбираем, каких роботов выбрать под конкретный повод/);
   assert.match(page, /data-article-card-count=\{articleCards\.length\}/);
   assert.equal(data.articles.cards.length, 6);
   assert.match(page, /\{articleCards\.map\(\(card\) => \(/);
@@ -27,6 +38,12 @@ test('KIBER-91 articles index has intro block, article feed and bottom CTA in or
   assert.match(page, /class="articles-page__intro container"/);
   assert.match(page, /Все практические статьи о роботах в одном месте/);
   assert.match(page, /который позже нужно будет адаптировать по SEO|позже адаптируем под SEO/);
+  const introCss = cssBlock('.articles-page__intro-copy');
+  assert.doesNotMatch(introCss, /background:\s*var\(--kp-white\)/);
+  assert.doesNotMatch(introCss, /box-shadow:/);
+  assert.match(cssBlock('.articles-page__hero h1'), /color:\s*var\(--kp-reference-blue\)/);
+  assert.match(cssBlock('.articles-page__hero h1'), /font-size:\s*clamp\(3\.1rem, 7vw, var\(--kp-reference-display-xl\)\)/);
+  assert.match(page, /\.articles-page__hero,[\s\S]*\.articles-page__cta \{[\s\S]*?width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\), var\(--kp-reference-container\)\)/);
   assert.match(page, /<section class="articles-page__feed container" id="article-feed"/);
   assert.match(page, /<h2 id="article-feed-title">Все статьи сайта<\/h2>/);
   assert.match(page, /<section class="articles-page__cta container"[\s\S]*<HomeFinalCta \{\.\.\.homeFinalCta\} \/>[\s\S]*<\/section>/);
