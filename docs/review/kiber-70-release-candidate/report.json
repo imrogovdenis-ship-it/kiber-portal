@@ -1,0 +1,9 @@
+{
+  "issue": "KIBER-70",
+  "status": "passed_awaiting_owner_go_no_go",
+  "sourceCommit": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
+  "image": "alex-kiber-release:sha-6b88d7e",
+  "productionDeployAllowed": false,
+  "dnsChangeAllowed": false,
+  "generatedAt": "2026-09-01T04:10:53.897Z"
+}

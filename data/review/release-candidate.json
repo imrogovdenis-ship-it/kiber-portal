@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-70",
+  "generatedAt": "2026-09-01T04:07:47Z",
+  "releaseCandidate": {
+    "repository": "imrogovdenis-ship-it/kiber-portal",
+    "sourceBranch": "main",
+    "sourceCommit": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
+    "sourceCommitShort": "6b88d7e",
+    "image": "alex-kiber-release:sha-6b88d7e",
+    "imageRepository": "alex-kiber-release",
+    "imageVersion": "sha-6b88d7e",
+    "imageId": "sha256:744aafb03514c5573cb8e8b39da229f26bc52f3291fdbb7033e731455bbe24cf",
+    "buildDate": "2026-09-01T04:05:12Z",
+    "deployEnv": "production",
+    "designReviewEnabled": false,
+    "analyticsProvider": "disabled"
+  },
+  "immutability": {
+    "dirtyTreeGuard": "scripts/docker-versioned-build.sh refused dirty trees unless ALLOW_DIRTY_BUILD=true",
+    "labels": {
+      "deployed.commit": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
+      "deployed.version": "sha-6b88d7e",
+      "org.opencontainers.image.revision": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
+      "org.opencontainers.image.version": "sha-6b88d7e",
+      "org.opencontainers.image.created": "2026-09-01T04:05:12Z"
+    }
+  },
+  "verification": {
+    "buildCommand": "BUILD_SHA=6b88d7eb5720d88430b3ea74375d4d74f209b6be IMAGE_REPOSITORY=alex-kiber-release DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false PUBLIC_ANALYTICS_PROVIDER=disabled scripts/docker-versioned-build.sh",
+    "dockerBuildResult": "passed; Dockerfile ran npm run verify and production npm run build inside image build",
+    "dockerBuildLog": "/home/alex/.hermes/cache/terminal-output/out-1788235512-3621618-1ad0.log",
+    "imageInspectResult": "labels match source commit and image version",
+    "smokeContainer": "alex-kiber-release-smoke-6b88d7e",
+    "smokeContainerPublishedHostPorts": [],
+    "smokeContainerResult": "passed; /healthz/ ok, /readyz/ ready, / and /robots/arenda-unitree-g1/ served; container healthy",
+    "smokeLog": "/home/alex/.hermes/cache/terminal-output/out-1788235649-3621618-dc90.log"
+  },
+  "releaseApproval": {
+    "status": "AWAITING_OWNER_GO_NO_GO",
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "productionSecretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false,
+    "reason": "This package proves the immutable release candidate, but does not grant production/DNS/secrets/analytics/live-routing permission."
+  },
+  "remainingBeforeProduction": [
+    {
+      "id": "full-site-visual-qa",
+      "status": "recommended_next",
+      "note": "Собрать и проверить дизайн остальных страниц сайта: категории/подборки/блог/новости/контакты/заявка/legal/404/карточки роботов на desktop/tablet/mobile."
+    },
+    {
+      "id": "KIBER-57/KIBER-58/KIBER-64",
+      "status": "blocked_by_owner_and_secrets",
+      "note": "live lead routing: amoCRM + Telegram duplicate + permitted test leads."
+    },
+    {
+      "id": "KIBER-67",
+      "status": "blocked_by_owner",
+      "note": "analytics provider IDs/cookies and consent policy approval."
+    },
+    {
+      "id": "KIBER-68",
+      "status": "pending",
+      "note": "final backup of Tilda/sitemap/production data before cutover."
+    },
+    {
+      "id": "KIBER-72",
+      "status": "requires_explicit_permission",
+      "note": "DNS cutover is separate and not included in KIBER-70."
+    }
+  ]
+}
