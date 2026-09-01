@@ -23,7 +23,7 @@
   },
   "designPass": {
     "status": "ready_for_owner_visual_review",
-    "scope": "preview-only robot_card visual layout pass aligned to approved home/compilations/articles pages and live robot page references",
+    "scope": "preview-only robot_card visual layout pass using existing HomeFinalCta, HomeGoshaQuote, RobotCard catalog, HomeFaqBlock, and HomeImageCards article blocks",
     "publicRouteReplacementApproval": false,
     "productionApproval": false
   }

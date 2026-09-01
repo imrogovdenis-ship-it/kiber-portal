@@ -1,5 +1,13 @@
 ---
 import type { RobotCardTemplateData } from '../../lib/page-type-templates';
+import RobotCard from '../blocks/RobotCard.astro';
+import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
+import HomeImageCards from '../blocks/HomeImageCards.astro';
+import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
+import HomeFinalCta from '../blocks/HomeFinalCta.astro';
+import { getRobotPages } from '../../lib/robot-pages';
+import { homeArticles, homeFinalCta, homeGosha } from '../../data/home-live';
+import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
 
 const { template } = Astro.props as { template: RobotCardTemplateData };
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
@@ -10,6 +18,49 @@ const introText = descriptionBlocks[0]?.text ?? template.hero.text;
 const followupText = descriptionBlocks[1]?.text;
 const capabilityItems = template.robot.capabilities.slice(0, 6);
 const scenarioItems = template.robot.scenarios.slice(0, 6);
+
+const categoryLabels: Record<string, string> = {
+  humanoid: 'Робот-гуманоид',
+  robot_dog: 'Робот-собака',
+  service_robot: 'Робот-официант',
+  media_robot: 'Робот для съёмки',
+  coffee_robot: 'Робо-кофейня',
+};
+const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
+const relatedRobots = getRobotPages()
+  .filter((robot) => featuredSlugs.includes(robot.slug))
+  .sort((a, b) => featuredSlugs.indexOf(a.slug) - featuredSlugs.indexOf(b.slug))
+  .slice(0, 4)
+  .map((robot, index) => ({
+    slug: robot.slug,
+    href: robot.route,
+    title: robot.identity.name,
+    category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
+    price: robot.pricing.display,
+    price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
+    description: robot.seo.description.slice(0, 132),
+    badge: robot.identity.name === template.robot.name ? 'Сейчас смотрим' : (index === 0 ? 'Популярный выбор' : undefined),
+    image: robot.media.hero,
+    analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
+  }));
+
+const robotFinalCta = {
+  ...homeFinalCta,
+  title: `Арендуйте ${template.robot.name} для мероприятия`,
+  description: `${template.robot.priceDisplay}. ${template.cta.note ?? homeFinalCta.description}`,
+  primaryCta: { label: 'Написать нам', href: '/contacts/' },
+  secondaryCta: { label: 'Смотреть каталог', href: '#robot-card-related-catalog' },
+};
+
+const robotGosha = {
+  ...homeGosha,
+  text: `— Подскажу честно, как робот человеку.\n\n${template.cta.note ?? 'Менеджеры КИБЕР ПОРТАЛ подберут сценарий, рассчитают стоимость и обсудят все детали площадки заранее.'}`,
+};
+
+const robotFaq = {
+  title: 'Вопросы и ответы (FAQ)',
+  items: template.faq.map(({ question, answer }) => ({ question, answer })),
+};
 ---
 
 <article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card">
@@ -18,8 +69,8 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     <div class="template-live-hero__content">
       <h1>{template.seo.h1}</h1>
       <div class="template-live-hero__actions">
-        <a class="template-button template-button--primary" href={template.cta.href}>{template.cta.label}</a>
-        <a class="template-button template-button--light" href="#robot-card-pricing">Задать вопрос</a>
+        <a class="template-hero-button template-hero-button--primary" href="/contacts/">Написать нам</a>
+        <a class="template-hero-button template-hero-button--light" href="#robot-card-pricing">Стоимость</a>
       </div>
     </div>
   </section>
@@ -34,17 +85,6 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
   <section class="template-live-gallery" data-block-id="gallery" aria-label="Галерея">
     {heroImage && <img src={heroImage.src} alt={heroImage.alt} loading="lazy" decoding="async" />}
     <div class="template-live-gallery__arrows" aria-hidden="true"><span>‹</span><span>›</span></div>
-  </section>
-
-  <section class="template-live-cta" id="robot-card-pricing" data-block-id="pricing">
-    <div>
-      <h2>{`Арендуйте ${template.robot.name} для мероприятия`}</h2>
-      <div class="template-live-cta__actions">
-        <span class="template-live-cta__price">{template.robot.priceDisplay}</span>
-        <a class="template-button template-button--light" href={template.cta.href}>Написать нам</a>
-        <a class="template-button template-button--light" href={template.cta.href}>Заполнить заявку</a>
-      </div>
-    </div>
   </section>
 
   <section class="template-section" data-block-id="capabilities" aria-labelledby="robot-card-capabilities-title">
@@ -71,37 +111,38 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     </div>
   </section>
 
-  <section class="template-live-cta" data-block-id="robotInAction">
-    <div>
-      <h2>{`Прокат ${template.robot.name} для мероприятий и выставок`}</h2>
-      <div class="template-live-cta__actions">
-        <span class="template-live-cta__price">{template.robot.priceDisplay}</span>
-        <a class="template-button template-button--light" href={template.cta.href}>Написать нам</a>
-        <a class="template-button template-button--light" href={template.cta.href}>Заполнить заявку</a>
-      </div>
+  <section class="template-reused-block template-reused-block--cta" id="robot-card-pricing" data-block-id="pricing">
+    <HomeFinalCta {...robotFinalCta} />
+  </section>
+
+  <section class="template-reused-block" data-block-id="robotInAction">
+    <div data-block-id="goshaCta">
+      <HomeGoshaQuote {...robotGosha} />
     </div>
   </section>
 
-  <section class="template-gosha-quote" data-block-id="goshaCta">
-    <div class="template-gosha-quote__avatar" aria-hidden="true">*</div>
-    <div>
-      <p><strong>Скажу честно, как робот человеку:</strong> {template.cta.note ?? 'менеджеры КИБЕР ПОРТАЛ подберут сценарий, рассчитают стоимость и обсудят все детали площадки заранее.'}</p>
-      <p class="template-gosha-quote__author">Кибер Гоша<br /><span>Ваш цифровой помощник</span></p>
+  <section id="robot-card-related-catalog" class="template-related-catalog" aria-labelledby="robot-card-related-catalog-title" data-block-id="relatedCatalog">
+    <div class="template-section-copy">
+      <p>Каталог роботов</p>
+      <h2 id="robot-card-related-catalog-title">Популярные модели для мероприятий</h2>
+      <p>Этот блок переиспользует готовые карточки каталога с главной страницы.</p>
+    </div>
+    <div class="template-related-catalog__grid">
+      {relatedRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
   </section>
 
-  <section class="template-section template-section--faq" data-block-id="faq" aria-labelledby="robot-card-faq-title">
-    <h2 id="robot-card-faq-title">Вопросы и ответы (FAQ)</h2>
-    <div class="template-faq-list">
-      {template.faq.map((item) => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}
-    </div>
+  <section class="template-reused-block" data-block-id="faq">
+    <HomeFaqBlock {...robotFaq} />
   </section>
+
+  <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...homeArticles} />
 </article>
 
 <style>
   .page-template--robot {
     display: grid;
-    gap: clamp(4.5rem, 7vw, 7rem);
+    gap: clamp(3.5rem, 6vw, 6rem);
     padding-block: clamp(1.25rem, 2.4vw, 2rem) 4.5rem;
     background: var(--kp-reference-sky);
   }
@@ -147,8 +188,8 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
   .template-section h3,
   .template-section p,
   .template-section__number,
-  .template-live-cta h2,
-  .template-gosha-quote p {
+  .template-section-copy p,
+  .template-section-copy h2 {
     margin: 0;
   }
 
@@ -160,15 +201,15 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     line-height: .98;
   }
 
-  .template-live-hero__actions,
-  .template-live-cta__actions {
+  .template-live-hero__actions {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
   }
 
-  .template-button {
+  .template-hero-button {
     display: inline-flex;
     min-height: 2.75rem;
     align-items: center;
@@ -182,12 +223,12 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     text-decoration: none;
   }
 
-  .template-button--primary {
+  .template-hero-button--primary {
     background: var(--kp-reference-blue);
     color: var(--kp-reference-white);
   }
 
-  .template-button--light {
+  .template-hero-button--light {
     background: var(--kp-reference-white);
     color: var(--kp-reference-ink);
   }
@@ -195,7 +236,8 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
   .template-live-intro,
   .template-section,
   .template-live-gallery,
-  .template-gosha-quote {
+  .template-related-catalog,
+  .template-reused-block {
     display: grid;
     gap: clamp(1.5rem, 3vw, 2.25rem);
   }
@@ -236,7 +278,7 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
 
   .template-live-intro h2,
   .template-section h2,
-  .template-live-cta h2 {
+  .template-section-copy h2 {
     color: var(--kp-reference-ink);
     font-family: var(--kp-font-heading);
     font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg));
@@ -248,8 +290,7 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
   .template-section__lead,
   .template-feature-grid p,
   .template-scenario-grid p,
-  .template-faq-list p,
-  .template-gosha-quote p {
+  .template-section-copy p:last-child {
     color: var(--kp-reference-muted);
     font-size: 1rem;
     line-height: 1.65;
@@ -263,7 +304,8 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     line-height: 1.45 !important;
   }
 
-  .template-section__number {
+  .template-section__number,
+  .template-section-copy p:first-child {
     color: var(--kp-reference-blue);
     font-size: var(--kp-reference-label-size);
     font-weight: 700;
@@ -310,121 +352,27 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     gap: clamp(2.5rem, 4vw, 4rem) clamp(1.5rem, 4vw, 4rem);
   }
 
-  .template-live-cta {
-    position: relative;
+  .template-section-copy {
     display: grid;
-    overflow: hidden;
-    border-radius: 1rem;
-    padding: clamp(1.5rem, 3vw, 2.25rem);
-    background: var(--kp-reference-blue);
-    color: var(--kp-reference-white);
+    gap: .55rem;
+    max-width: 48rem;
+    margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
   }
 
-  .template-live-cta h2 {
-    max-width: 46rem;
-    color: var(--kp-reference-white);
-    font-size: clamp(2rem, 4vw, 3rem);
-  }
-
-  .template-live-cta__actions {
-    margin-top: 1.25rem;
-  }
-
-  .template-live-cta__price {
-    display: inline-flex;
-    min-height: 2.75rem;
-    align-items: center;
-    border: .125rem solid color-mix(in srgb, var(--kp-reference-white) 82%, transparent);
-    border-radius: 999rem;
-    padding: .75rem 1.5rem;
-    color: var(--kp-reference-white);
-    font-family: var(--kp-font-heading);
-    font-weight: 700;
-  }
-
-  .template-gosha-quote {
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: start;
-    max-width: 58rem;
-  }
-
-  .template-gosha-quote__avatar {
+  .template-related-catalog__grid {
     display: grid;
-    width: clamp(4.5rem, 9vw, 7.5rem);
-    aspect-ratio: 1;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--kp-reference-blue);
-    color: var(--kp-reference-white);
-    font-family: var(--kp-font-heading);
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
+    gap: clamp(1rem, 1.8vw, 1.5rem);
+    width: 100%;
   }
 
-  .template-gosha-quote strong,
-  .template-gosha-quote__author {
-    color: var(--kp-reference-ink);
-    font-weight: 700;
+  @media (min-width: 60rem) {
+    .template-related-catalog__grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
   }
 
-  .template-gosha-quote__author span {
-    color: var(--kp-reference-muted);
-    font-weight: 500;
-  }
-
-  .template-section--faq {
-    gap: 2.5rem;
-  }
-
-  .template-faq-list {
-    display: grid;
-    gap: 0;
-  }
-
-  .template-faq-list details {
-    border-top: .0625rem solid color-mix(in srgb, var(--kp-reference-ink) 18%, transparent);
-    padding-block: 1.35rem;
-  }
-
-  .template-faq-list details:last-child {
-    border-bottom: .0625rem solid color-mix(in srgb, var(--kp-reference-ink) 18%, transparent);
-  }
-
-  .template-faq-list summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--kp-reference-ink);
-    cursor: pointer;
-    font-family: var(--kp-font-heading);
-    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
-    font-weight: 700;
-    list-style: none;
-  }
-
-  .template-faq-list summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .template-faq-list summary::after {
-    color: var(--kp-reference-blue);
-    content: '+';
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1;
-  }
-
-  .template-faq-list details[open] summary::after {
-    content: '–';
-  }
-
-  .template-faq-list p {
-    max-width: 58rem;
-    margin: .9rem 0 0;
-  }
-
-  @media (max-width: 64rem) {
+  @media (min-width: 40rem) and (max-width: 59.9375rem) {
+    .template-related-catalog__grid,
     .template-feature-grid,
     .template-scenario-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -433,7 +381,7 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
 
   @media (max-width: 39.9375rem) {
     .page-template--robot {
-      gap: 3.5rem;
+      gap: 3.25rem;
       padding-block: 1rem 3.5rem;
     }
 
@@ -447,21 +395,19 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     }
 
     .template-live-hero__actions,
-    .template-live-cta__actions,
     .template-feature-grid,
     .template-scenario-grid,
-    .template-gosha-quote {
+    .template-related-catalog__grid {
       grid-template-columns: 1fr;
     }
 
-    .template-live-hero__actions,
-    .template-live-cta__actions {
+    .template-live-hero__actions {
       display: grid;
       justify-items: center;
     }
 
-    .template-gosha-quote {
-      justify-items: start;
+    .template-section-copy {
+      margin-left: 0;
     }
   }
 </style>

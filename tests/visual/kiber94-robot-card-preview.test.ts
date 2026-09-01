@@ -65,6 +65,16 @@ test('KIBER-94 records owner approval only for robot_card structure and data map
 
 test('KIBER-94 robot_card preview has an owner-review visual layout layer', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
+  assert.match(componentSource, /import RobotCard from '\.\.\/blocks\/RobotCard\.astro'/);
+  assert.match(componentSource, /import HomeGoshaQuote from '\.\.\/blocks\/HomeGoshaQuote\.astro'/);
+  assert.match(componentSource, /import HomeImageCards from '\.\.\/blocks\/HomeImageCards\.astro'/);
+  assert.match(componentSource, /import HomeFaqBlock from '\.\.\/blocks\/HomeFaqBlock\.astro'/);
+  assert.match(componentSource, /import HomeFinalCta from '\.\.\/blocks\/HomeFinalCta\.astro'/);
+  assert.match(componentSource, /homeArticles/);
+  assert.match(componentSource, /homeGosha/);
+  assert.doesNotMatch(componentSource, /template-gosha-quote/);
+  assert.doesNotMatch(componentSource, /template-faq-list/);
+  assert.doesNotMatch(componentSource, /template-live-cta/);
   assert.match(componentSource, /template-live-hero/);
   assert.match(componentSource, /template-live-hero__scrim/);
   assert.match(componentSource, /template-live-intro/);
@@ -72,9 +82,6 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.match(componentSource, /02 — сценарии использования/);
   assert.match(componentSource, /template-feature-grid/);
   assert.match(componentSource, /template-scenario-grid/);
-  assert.match(componentSource, /template-live-cta/);
-  assert.match(componentSource, /template-gosha-quote/);
-  assert.match(componentSource, /Вопросы и ответы \(FAQ\)/);
   assert.match(componentSource, /box-shadow: none/);
   assert.match(componentSource, /border-radius: 1\.625rem/);
 });

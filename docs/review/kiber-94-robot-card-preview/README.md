@@ -58,8 +58,11 @@ if test -d dist/preview/kiber-94/robot-card; then echo 'preview route leaked int
 
 After structure/data mapping approval, the preview received a first visual layout pass for owner review:
 
-- live-style KIBER visual primitives from approved Главная / Подборки / Блог Кибер Гоши: pale blue page canvas, large Montserrat headings, blue/white pill CTA system, section-number rhythm and clean low-shadow cards;
-- live robot-page patterns from `https://www.kiber-portal.ru/arenda-agibot-x2`, `https://www.kiber-portal.ru/arenda-unitree-g1`, `https://www.kiber-portal.ru/arenda-bellabot`: rounded image hero with dark scrim and centered title/actions, intro text rhythm, repeated blue CTA bands, numbered capability/scenario sections, Gosha quote and collapsed FAQ rows;
+- the preview now imports and reuses existing blocks instead of re-drawing them locally: `HomeFinalCta`, `HomeGoshaQuote`, `RobotCard`, `HomeFaqBlock`, and `HomeImageCards`;
+- the robot catalog section uses the same `RobotCard` component/pattern as the approved homepage catalog;
+- the FAQ section uses `HomeFaqBlock` with robot-specific questions;
+- the article section uses `HomeImageCards` with `homeArticles` data from the approved homepage/blog block;
+- the CTA/Gosha sections use the existing homepage CTA and Кибер Гоша quote components with robot-specific copy;
 - missing legacy gallery assets are filtered out of the rendered preview so the review surface does not show broken image cards;
 - this is still a preview-only design pass, not approval to replace public robot routes.
 
