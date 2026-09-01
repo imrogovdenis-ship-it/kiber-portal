@@ -54,6 +54,17 @@ Additional production guard:
 if test -d dist/preview/kiber-94/robot-card; then echo 'preview route leaked into production build'; exit 1; else echo 'production build excludes KIBER-94 robot_card preview route'; fi
 ```
 
+## Design pass scope
+
+After structure/data mapping approval, the preview received a first visual layout pass for owner review:
+
+- live-style KIBER visual primitives: pale blue page canvas, large Montserrat headings, blue/orange action system, white rounded content cards;
+- hero split layout with copy/actions and real robot media;
+- card-like description, capabilities, scenario chips, pricing band, Gosha CTA band and FAQ rhythm;
+- missing legacy gallery assets are filtered out of the rendered preview so the review surface does not show broken image cards;
+- this is still a preview-only design pass, not approval to replace public robot routes.
+
 ## Evidence
 
-- `report.json` records 24 generated preview pages and safety flags.
+- `report.json` records 24 generated preview pages, safety flags, owner approval scope and design-pass scope.
+- Local browser inspection verified the Agibot X2 preview first viewport and full-page rhythm after the preview build.

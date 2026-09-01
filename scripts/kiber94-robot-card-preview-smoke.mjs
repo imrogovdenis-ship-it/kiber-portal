@@ -49,6 +49,12 @@ for (const robot of robots) {
   if (/Wordstat|SERP|keywordDensity|checklistReport|crmConfig|leadRoutingImplementationNotes/.test(html)) {
     failures.push(`${robot.slug}: review-only/service-only wording leaked into preview HTML`);
   }
+  const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map((match) => match[1]);
+  for (const src of imageSources) {
+    if (src.startsWith('/images/') && !existsSync(resolve(root, 'public', src.slice(1)))) {
+      failures.push(`${robot.slug}: rendered missing public image asset ${src}`);
+    }
+  }
   checked.push(robot.slug);
 }
 
@@ -66,6 +72,20 @@ const report = {
     liveLeadRoutingChanged: false,
     massPageGeneration: false,
     publicRobotRoutesChanged: false,
+  },
+  ownerApproval: {
+    status: 'approved',
+    scope: 'structure_and_data_mapping_only',
+    quote: 'Вроде бы все верно.',
+    designApproval: false,
+    publicRouteReplacementApproval: false,
+    productionApproval: false,
+  },
+  designPass: {
+    status: failures.length ? 'failed' : 'ready_for_owner_visual_review',
+    scope: 'preview-only robot_card visual layout pass',
+    publicRouteReplacementApproval: false,
+    productionApproval: false,
   },
 };
 mkdirSync(dirname(reportPath), { recursive: true });

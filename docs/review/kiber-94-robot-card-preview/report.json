@@ -4,19 +4,6 @@
   "routePattern": "/preview/kiber-94/robot-card/[slug]/",
   "checkedCount": 24,
   "failures": [],
-  "ownerApproval": {
-    "status": "approved",
-    "scope": "structure_and_data_mapping_only",
-    "quote": "Вроде бы все верно.",
-    "approvedAt": "2026-09-01",
-    "designApproval": false,
-    "publicRouteReplacementApproval": false,
-    "productionApproval": false,
-    "notes": [
-      "Owner indicated the block set and real-data mapping look correct.",
-      "This is not visual design approval and does not authorize replacing public robot routes."
-    ]
-  },
   "safety": {
     "productionDeployChanged": false,
     "dnsChanged": false,
@@ -25,5 +12,19 @@
     "liveLeadRoutingChanged": false,
     "massPageGeneration": false,
     "publicRobotRoutesChanged": false
+  },
+  "ownerApproval": {
+    "status": "approved",
+    "scope": "structure_and_data_mapping_only",
+    "quote": "Вроде бы все верно.",
+    "designApproval": false,
+    "publicRouteReplacementApproval": false,
+    "productionApproval": false
+  },
+  "designPass": {
+    "status": "ready_for_owner_visual_review",
+    "scope": "preview-only robot_card visual layout pass",
+    "publicRouteReplacementApproval": false,
+    "productionApproval": false
   }
 }

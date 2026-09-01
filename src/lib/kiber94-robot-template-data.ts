@@ -1,6 +1,11 @@
 import type { RobotPageRecord } from './robot-pages';
 import type { RobotCardTemplateData } from './page-type-templates';
 
+function hasPublicAsset(src: string): boolean {
+  if (!src.startsWith('/')) return true;
+  return Boolean(import.meta.glob('/public/**/*', { eager: true, query: '?url', import: 'default' })[`/public${src}`]);
+}
+
 export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTemplateData {
   const priceStatus = robot.pricing.mode === 'calculated' ? 'request' : 'needs_review';
   const scenarioBlocks = robot.service.scenarios.map((scenario, index) => ({
@@ -76,7 +81,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
       priceDisplay: robot.pricing.display,
       capabilities: capabilityBlocks,
       scenarios: scenarioBlocks,
-      gallery: [robot.media.hero, ...robot.media.gallery].filter(Boolean).slice(0, 8).map((image) => ({
+      gallery: [robot.media.hero, ...robot.media.gallery].filter(Boolean).filter((image) => hasPublicAsset(image.src)).slice(0, 8).map((image) => ({
         src: image.src,
         alt: image.alt,
         sourceStatus: 'page_content' as const,

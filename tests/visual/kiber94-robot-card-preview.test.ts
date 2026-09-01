@@ -62,3 +62,16 @@ test('KIBER-94 records owner approval only for robot_card structure and data map
   assert.equal(report.ownerApproval.publicRouteReplacementApproval, false);
   assert.equal(report.ownerApproval.productionApproval, false);
 });
+
+test('KIBER-94 robot_card preview has an owner-review visual layout layer', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  assert.match(componentSource, /template-hero__copy/);
+  assert.match(componentSource, /template-hero__media/);
+  assert.match(componentSource, /template-facts-grid/);
+  assert.match(componentSource, /template-checklist/);
+  assert.match(componentSource, /template-section--pricing/);
+  assert.match(componentSource, /template-gosha__inner/);
+  assert.match(componentSource, /var\(--kp-reference-sky\)/);
+  assert.match(componentSource, /var\(--kp-reference-blue\)/);
+  assert.match(componentSource, /border-radius: 1\.5rem/);
+});
