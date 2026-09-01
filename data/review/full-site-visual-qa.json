@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-91",
+  "title": "Full-site visual QA перед production cutover",
+  "generatedAt": "2026-09-01T04:51:39Z",
+  "source": {
+    "repository": "imrogovdenis-ship-it/kiber-portal",
+    "branch": "hermes/kiber-full-site-visual-qa-20260901",
+    "baseBranch": "main",
+    "baseCommit": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
+    "productionBuild": "npm run build:production",
+    "homepageVisualBaseline": "Главная утверждена Александром; переносимые паттерны используются как baseline для остальных страниц."
+  },
+  "scope": {
+    "routesChecked": 15,
+    "viewportsChecked": 3,
+    "screenshotsCaptured": 45,
+    "contactSheets": 3,
+    "routes": [
+      {
+        "name": "home",
+        "path": "/"
+      },
+      {
+        "name": "robot-unitree-g1",
+        "path": "/robots/arenda-unitree-g1/"
+      },
+      {
+        "name": "robot-bellabot",
+        "path": "/robots/arenda-bellabot/"
+      },
+      {
+        "name": "robot-barmen",
+        "path": "/robots/arenda-robot-barmen/"
+      },
+      {
+        "name": "category-humanoids",
+        "path": "/roboty-gumanoidy/"
+      },
+      {
+        "name": "category-dogs",
+        "path": "/roboty-sobaki/"
+      },
+      {
+        "name": "compilations",
+        "path": "/compilations/"
+      },
+      {
+        "name": "articles",
+        "path": "/articles/"
+      },
+      {
+        "name": "news",
+        "path": "/news/"
+      },
+      {
+        "name": "contacts",
+        "path": "/contacts/"
+      },
+      {
+        "name": "lead-request",
+        "path": "/lead/request/?robot=arenda-unitree-g1"
+      },
+      {
+        "name": "lead-thanks",
+        "path": "/lead/thanks/"
+      },
+      {
+        "name": "privacy",
+        "path": "/privacy-policy/"
+      },
+      {
+        "name": "terms",
+        "path": "/terms/"
+      },
+      {
+        "name": "not-found",
+        "path": "/404.html"
+      }
+    ],
+    "viewports": [
+      {
+        "name": "mobile-390",
+        "width": 390,
+        "height": 844
+      },
+      {
+        "name": "tablet-768",
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "name": "desktop-1440",
+        "width": 1440,
+        "height": 1200
+      }
+    ]
+  },
+  "homepagePatternsToReuse": [
+    "утверждённые header/footer и навигация",
+    "карточная сетка и карточки роботов/сценариев",
+    "синий CTA-strip с понятным primary action",
+    "FAQ/accordion spacing and separators",
+    "единая типографика, gutters, rounded cards, blue accent system",
+    "mobile/tablet правила: без horizontal overflow; hero/media ratios по утверждённым компонентам",
+    "интерактивы проверять поведением, не только CSS"
+  ],
+  "automatedAudit": {
+    "domAuditPath": "docs/review/kiber-91-full-site-visual-qa/dom-audit.json",
+    "checks": 45,
+    "failures": 0,
+    "status": "passed"
+  },
+  "visualFindings": [
+    {
+      "id": "FSVQA-01",
+      "severity": "high",
+      "category": "design-parity",
+      "routes": [
+        "/compilations/",
+        "/articles/",
+        "/news/"
+      ],
+      "summary": "Index pages for Подборки, Блог and Новости are still placeholder-style pages and do not yet reuse the rich approved homepage card/list patterns.",
+      "expected": "Use approved homepage design language: section hero, meaningful cards/list blocks, blue CTA, consistent spacing, and public-ready page depth.",
+      "productionImpact": "blocks production visual approval; safe to keep PR as QA package without production changes"
+    },
+    {
+      "id": "FSVQA-02",
+      "severity": "medium",
+      "category": "design-consistency",
+      "routes": [
+        "/robots/arenda-unitree-g1/",
+        "/robots/arenda-bellabot/",
+        "/robots/arenda-robot-barmen/"
+      ],
+      "summary": "Robot detail pages are technically stable and readable, but they use an earlier detail-page visual language; should be reviewed for alignment with the newly approved homepage patterns before launch.",
+      "expected": "Preserve approved RobotPage mobile 1:1 media rule, but align spacing/card/CTA rhythm with homepage where appropriate.",
+      "productionImpact": "review-needed before final visual approval"
+    },
+    {
+      "id": "FSVQA-03",
+      "severity": "medium",
+      "category": "design-consistency",
+      "routes": [
+        "/privacy-policy/",
+        "/terms/",
+        "/404.html"
+      ],
+      "summary": "Legal and 404 pages are functional and branded, but visually minimal compared with the approved homepage system.",
+      "expected": "Keep legal text readable; optionally add approved shell/CTA/footer rhythm for launch polish.",
+      "productionImpact": "non-critical, but should be accepted or improved explicitly"
+    }
+  ],
+  "technicalChecks": {
+    "criticalRenderFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "brokenImages": 0,
+    "analyticsScriptsWhileDisabled": 0,
+    "designReviewLeak": 0,
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "productionSecretsChanged": false,
+    "liveLeadRoutingChanged": false,
+    "analyticsProviderChanged": false
+  },
+  "approval": {
+    "status": "AWAITING_OWNER_REVIEW",
+    "visualApprovalScope": "full site screenshots/contact sheets and findings package",
+    "productionApprovalGranted": false,
+    "mergePermissionGranted": false,
+    "recommendedDecision": "NO_GO_FOR_PRODUCTION_UNTIL_FINDINGS_ACCEPTED_OR_FIXED"
+  },
+  "evidence": {
+    "manifest": "docs/review/kiber-91-full-site-visual-qa/screenshots/manifest.json",
+    "contactSheets": [
+      "docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-desktop-1440.jpg",
+      "docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-mobile-390.jpg",
+      "docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-tablet-768.jpg"
+    ],
+    "domAudit": "docs/review/kiber-91-full-site-visual-qa/dom-audit.json",
+    "smoke": "scripts/full-site-visual-qa-smoke.mjs"
+  }
+}
