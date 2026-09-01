@@ -160,10 +160,11 @@ const textSections = [
 
   .compilations-page__card {
     position: relative;
-    display: grid;
+    display: flex;
     min-height: clamp(18.75rem, 28.75vw, 25rem);
+    flex-direction: column;
+    align-items: flex-start;
     overflow: hidden;
-    align-content: start;
     gap: .75rem;
     border-radius: 1.75rem;
     padding: clamp(1.5rem, 3vw, 2.25rem);
