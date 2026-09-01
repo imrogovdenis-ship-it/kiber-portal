@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-93",
-  "status": "ready_for_owner_review",
+  "status": "owner_approved_complete",
   "sourceAudit": "data/seo/page-seo-audit.json",
   "summary": {
     "routesChecked": 37,
@@ -12,7 +12,7 @@
       "aiCrawlerRobotsPolicy"
     ]
   },
-  "decision": "KIBER-93 infrastructure is complete when audits, passports, AI visibility, llms.txt, robots policy and remediation backlog are in CI. Remaining warnings become follow-up implementation/review tasks, not hidden debt.",
+  "decision": "Owner approved KIBER-93 as complete infrastructure under option A. Remaining warnings are follow-up tasks, not hidden debt and not blockers for closing KIBER-93.",
   "completedRemediations": [
     {
       "id": "seo-audit-cta-query-string-detection",
@@ -218,5 +218,21 @@
         "massPageGeneration": false
       }
     }
-  ]
+  ],
+  "ownerApproval": {
+    "status": "owner_approved_complete",
+    "approvedAt": "2026-09-01T11:23:48.928462+00:00",
+    "approvedBy": "Александр Маркин",
+    "approvalQuote": "Закрываем KIBER-93 по варианту А.",
+    "meaning": "KIBER-93 is approved as SEO/AI audit infrastructure. Remaining warnings are intentionally preserved as follow-up tasks and do not block closing KIBER-93.",
+    "doesNotApprove": [
+      "productionDeploy",
+      "dnsChange",
+      "productionSecrets",
+      "analyticsActivation",
+      "liveLeadRouting",
+      "prMerge",
+      "massPageGeneration"
+    ]
+  }
 }

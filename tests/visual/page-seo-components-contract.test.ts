@@ -166,7 +166,10 @@ test('KIBER-93 closes with a machine-readable remediation backlog for non-blocki
   const backlog = readJson(remediationBacklogPath);
   assert.equal(backlog.schemaVersion, 1);
   assert.equal(backlog.issue, 'KIBER-93');
-  assert.equal(backlog.status, 'ready_for_owner_review');
+  assert.equal(backlog.status, 'owner_approved_complete');
+  assert.equal(backlog.ownerApproval.approvalQuote, 'Закрываем KIBER-93 по варианту А.');
+  assert.ok(backlog.ownerApproval.doesNotApprove.includes('productionDeploy'));
+  assert.ok(backlog.ownerApproval.doesNotApprove.includes('prMerge'));
   assert.equal(backlog.summary.technicalFailures, 0);
   assert.ok(backlog.summary.warningCount > 0, 'baseline warnings must be preserved instead of hidden');
   assert.ok(Array.isArray(backlog.remediationTasks) && backlog.remediationTasks.length >= 3);
