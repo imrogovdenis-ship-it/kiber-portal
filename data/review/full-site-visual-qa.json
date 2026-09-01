@@ -118,12 +118,11 @@
       "severity": "high",
       "category": "design-parity",
       "routes": [
-        "/articles/",
         "/news/"
       ],
-      "summary": "Блог and Новости remain placeholder-style index pages and do not yet reuse the rich approved homepage card/list patterns. Подборки was promoted to a filled two-column compilations index in this PR follow-up.",
+      "summary": "Новости remain a placeholder-style index page. Подборки is owner design-approved, and Блог Кибер Гоши (/articles/) is promoted to a filled article index in this PR follow-up.",
       "expected": "Use approved homepage design language: section hero, meaningful cards/list blocks, blue CTA, consistent spacing, and public-ready page depth.",
-      "productionImpact": "blocks production visual approval until remaining index pages are accepted or fixed"
+      "productionImpact": "blocks production visual approval until the remaining /news/ index page is accepted or fixed"
     },
     {
       "id": "FSVQA-02",
@@ -166,7 +165,7 @@
   },
   "approval": {
     "status": "AWAITING_OWNER_REVIEW",
-    "visualApprovalScope": "full site remains under review; /compilations/ design is owner-approved",
+    "visualApprovalScope": "full site remains under review; /compilations/ design is owner-approved; /articles/ is ready for owner review",
     "productionApprovalGranted": false,
     "mergePermissionGranted": false,
     "recommendedDecision": "NO_GO_FOR_PRODUCTION_UNTIL_REMAINING_FINDINGS_ACCEPTED_OR_FIXED"
@@ -200,6 +199,36 @@
         "stagingImage": "alex-kiber-staging:sha-f903428",
         "stagingUrl": "https://alex-kiber-staging.38.180.37.42.sslip.io/compilations/"
       }
+    },
+    {
+      "id": "FSVQA-01B",
+      "sourceFinding": "FSVQA-01",
+      "route": "/articles/",
+      "status": "ready_for_owner_review",
+      "ownerFeedback": "Страница пустая; нужно расположить заголовок и описание блока с главной, все карточки статей, текстовый блок с описанием раздела над статьями, CTA внизу; использовать наработки Главной и Подборок; фильтр вынести отдельной задачей следующих этапов.",
+      "implementation": "Replaced placeholder /articles/ with a filled Блог Кибер Гоши index: homepage article heading/description, SEO-adaptation intro block, six article cards from approved homepage/live article data, bottom HomeFinalCta, hidden InternalLinks to preserve CI/SEO contract. Card links retain the current homepage-safe /articles/ fallback until article detail routes are migrated.",
+      "safetyBoundary": "Preview/design QA only. No PR merge permission, production deploy, DNS, production secrets, analytics IDs/cookies, or live lead routing changes.",
+      "pendingOwnerDecision": "Needs owner visual review/approval for /articles/ design."
+    }
+  ],
+  "futureTasks": [
+    {
+      "id": "KIBER-91-FILTER-ARTICLES",
+      "route": "/articles/",
+      "summary": "Implement an article filter for the Блог Кибер Гоши index in a later stage.",
+      "status": "deferred",
+      "requestedBy": "Александр",
+      "notes": "Do not implement in the current /articles/ fill pass; create as separate follow-up task after visual approval.",
+      "linearIssue": "KIBER-92",
+      "linearUrl": "https://linear.app/ai-class/issue/KIBER-92/blog-kiber-goshi-filtr-statej-na-articles"
+    },
+    {
+      "id": "KIBER-91-ARTICLE-DETAIL-MIGRATION",
+      "route": "/articles/",
+      "summary": "Migrate/rebuild article detail pages and restore cards to real article URLs instead of the safe index fallback.",
+      "status": "deferred",
+      "requestedBy": "Hermes QA",
+      "notes": "Full CI blocks broken internal links until the detail routes exist in Astro; current index keeps the homepage-safe fallback to /articles/."
     }
   ]
 }

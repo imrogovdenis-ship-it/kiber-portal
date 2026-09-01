@@ -49,5 +49,5 @@ test('KIBER-91 QA finding no longer lists compilations as unresolved placeholder
   const high = qa.visualFindings.find((finding) => finding.id === 'FSVQA-01');
   assert.ok(high);
   assert.equal(high?.severity, 'high');
-  assert.deepEqual(high?.routes, ['/articles/', '/news/']);
+  assert.deepEqual(high?.routes, ['/news/']);
 });

@@ -24,8 +24,12 @@ assert.equal(dom.results.length, 45);
 assert.equal(dom.failures.length, 0);
 assert.ok(qa.homepagePatternsToReuse.some((item) => item.includes('header/footer')));
 assert.ok(qa.homepagePatternsToReuse.some((item) => item.includes('mobile/tablet')));
-assert.ok(qa.visualFindings.some((finding) => finding.id === 'FSVQA-01' && finding.severity === 'high'));
-assert.ok(qa.visualFindings.some((finding) => finding.routes.includes('/articles/')));
+const unresolvedHigh = qa.visualFindings.find((finding) => finding.id === 'FSVQA-01' && finding.severity === 'high');
+assert.ok(unresolvedHigh);
+assert.deepEqual(unresolvedHigh.routes, ['/news/']);
+assert.ok(qa.resolvedFindings.some((finding) => finding.id === 'FSVQA-01A' && finding.route === '/compilations/'));
+assert.ok(qa.resolvedFindings.some((finding) => finding.id === 'FSVQA-01B' && finding.route === '/articles/'));
+assert.ok(qa.futureTasks.some((task) => task.id === 'KIBER-91-FILTER-ARTICLES' && task.route === '/articles/' && task.status === 'deferred'));
 for (const sheet of manifest.contactSheets) {
   assert.ok(existsSync(sheet.file), `${sheet.file} missing`);
   assert.ok(statSync(sheet.file).size > 50_000, `${sheet.file} unexpectedly small`);

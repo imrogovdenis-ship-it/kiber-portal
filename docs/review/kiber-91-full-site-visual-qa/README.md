@@ -85,6 +85,21 @@ Owner design approval recorded: **“Страницу "Подборки" утв�
 
 Approval scope: `/compilations/` visual design only at commit `f9034281fead595072c210e67f4617dfe74b7e60` / staging image `alex-kiber-staging:sha-f903428`. This is not PR merge permission and not production/DNS/secrets/analytics/live lead routing approval.
 
+### FSVQA-01B — READY FOR OWNER REVIEW — Блог Кибер Гоши promoted from placeholder to filled article index
+
+Route: `/articles/`
+
+Owner feedback: the page was empty and should use the title/description from the homepage article block, collect all article cards from the site, place a text description block above articles for later SEO adaptation, and add a CTA at the bottom. The article filter is explicitly deferred to a separate later task.
+
+Implementation: `/articles/` now renders the homepage article title/description, a section-description block above the feed, all six article cards from the approved homepage/live article data, the approved homepage final CTA, and hidden internal links to preserve the SEO/internal-link CI contract without adding an extra visible block. Card links retain the current homepage-safe `/articles/` fallback until article detail routes are migrated, because full CI blocks broken internal links.
+
+Status: ready for Alexander visual review. This is not `/articles/` design approval yet, not PR merge permission, and not production/DNS/secrets/analytics/live lead routing approval.
+
+Deferred follow-ups:
+
+- `KIBER-91-FILTER-ARTICLES` / Linear `KIBER-92` — implement article filtering on this page in a later stage.
+- `KIBER-91-ARTICLE-DETAIL-MIGRATION` — migrate/rebuild article detail pages and restore cards to real article URLs instead of the safe index fallback.
+
 ### FSVQA-02 — MEDIUM — Robot detail pages need final design alignment review
 
 Routes sampled: `/robots/arenda-unitree-g1/`, `/robots/arenda-bellabot/`, `/robots/arenda-robot-barmen/`
