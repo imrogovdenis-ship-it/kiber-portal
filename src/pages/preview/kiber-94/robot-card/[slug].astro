@@ -3,7 +3,7 @@ import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import RobotCardTemplate from '../../../../components/templates/RobotCardTemplate.astro';
 import { getRobotPages, type RobotPageRecord } from '../../../../lib/robot-pages';
 import { toRobotCardTemplateData } from '../../../../lib/kiber94-robot-template-data';
-import { serviceJsonLd } from '../../../../lib/seo';
+import { breadcrumbJsonLd, faqPageJsonLd, serviceJsonLd } from '../../../../lib/seo';
 
 export const prerender = true;
 
@@ -17,6 +17,11 @@ export function getStaticPaths() {
 const { robot } = Astro.props as { robot: RobotPageRecord };
 const template = toRobotCardTemplateData(robot);
 const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
+const breadcrumbs = [
+  { name: 'Главная', url: '/' },
+  { name: 'Каталог', url: '/#catalog' },
+  { name: template.robot.name, url: previewPath },
+];
 ---
 
 <BaseLayout
@@ -24,6 +29,7 @@ const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
   description={`Preview robot_card template with real data: ${template.seo.description}`}
   canonical={Astro.site ? new URL(previewPath, Astro.site).toString() : previewPath}
   image={robot.media.hero.src}
+  breadcrumbs={breadcrumbs}
   noindex
   jsonLd={[
     serviceJsonLd({
@@ -33,6 +39,8 @@ const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
       image: robot.media.hero.src,
       category: 'KIBER-94 preview robot_card template',
     }),
+    breadcrumbJsonLd(breadcrumbs),
+    faqPageJsonLd({ items: template.faq.map(({ question, answer }) => ({ question, answer })) }),
   ]}
 >
   <main class="kiber94-preview" id="main-content" tabindex="-1" data-kiber-task="KIBER-94" data-preview-route="robot_card" data-robot-slug={robot.slug}>

@@ -8,6 +8,7 @@ const robots = JSON.parse(readFileSync(resolve(root, 'src/content/robots.generat
 const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report.json');
 const checked = [];
 const failures = [];
+const warnings = [];
 
 for (const robot of robots) {
   const htmlPath = join(root, previewDistPath, robot.slug, 'index.html');
@@ -24,12 +25,23 @@ for (const robot of robots) {
     'data-block-id="modelIntro"',
     'data-block-id="gallery"',
     'data-block-id="description"',
+    'data-block-id="aiSummary"',
+    'data-block-id="structuredFacts"',
+    'data-block-id="includedService"',
     'data-block-id="capabilities"',
     'data-block-id="scenarios"',
+    'data-block-id="orderFlow"',
     'data-block-id="robotInAction"',
     'data-block-id="pricing"',
     'data-block-id="goshaCta"',
+    'data-block-id="relatedCatalog"',
+    'data-block-id="relatedCompilations"',
     'data-block-id="faq"',
+    'data-home-block="kiber-gosha"',
+    'data-home-block="final-cta"',
+    'data-home-block="robot-card-compilations"',
+    'FAQPage',
+    'BreadcrumbList',
     'noindex, nofollow',
     robot.identity.name,
     robot.pricing.display,
@@ -46,10 +58,18 @@ for (const robot of robots) {
   if (sourceUrlLeakPatterns.some((needle) => html.includes(needle))) failures.push(`${robot.slug}: source URL leaked`);
   const h1Count = (html.match(/<h1[\s>]/g) ?? []).length;
   if (h1Count !== 1) failures.push(`${robot.slug}: expected exactly one H1, found ${h1Count}`);
+  const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map((match) => match[1]);
+  const galleryBlock = html.match(/<section[^>]*data-block-id="gallery"[\s\S]*?<\/section>/)?.[0] ?? '';
+  const galleryImageCount = (galleryBlock.match(/<img\b/g) ?? []).length;
+  if (galleryImageCount < 1) failures.push(`${robot.slug}: first gallery must render at least one visible real image, found ${galleryImageCount}`);
+  if (galleryImageCount < 2) warnings.push(`${robot.slug}: media debt — only ${galleryImageCount} local gallery image available; import approved gallery assets before public rollout`);
+  if (/height:\s*\.0625rem/.test(html)) failures.push(`${robot.slug}: gallery image CSS is visually hidden`);
+  if (!/template-ai-summary/.test(html)) failures.push(`${robot.slug}: visible AI summary block missing`);
+  if (!/Что важно знать перед арендой/.test(html)) failures.push(`${robot.slug}: structured facts selling block missing`);
+  if (!/Кибер Гоша|КИБЕР Гоша|КИБЕР ГОША/.test(html)) failures.push(`${robot.slug}: Kiber Gosha brand voice block missing`);
   if (/Wordstat|SERP|keywordDensity|checklistReport|crmConfig|leadRoutingImplementationNotes/.test(html)) {
     failures.push(`${robot.slug}: review-only/service-only wording leaked into preview HTML`);
   }
-  const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map((match) => match[1]);
   for (const src of imageSources) {
     if (src.startsWith('/images/') && !existsSync(resolve(root, 'public', src.slice(1)))) {
       failures.push(`${robot.slug}: rendered missing public image asset ${src}`);
@@ -64,6 +84,7 @@ const report = {
   routePattern: '/preview/kiber-94/robot-card/[slug]/',
   checkedCount: checked.length,
   failures,
+  warnings,
   safety: {
     productionDeployChanged: false,
     dnsChanged: false,
@@ -83,7 +104,7 @@ const report = {
   },
   designPass: {
     status: failures.length ? 'failed' : 'ready_for_owner_visual_review',
-    scope: 'preview-only robot_card visual layout pass using existing HomeFinalCta, HomeGoshaQuote, RobotCard catalog, HomeFaqBlock, and HomeImageCards article blocks',
+    scope: 'preview-only robot_card selling + SEO/AI structure pass with visible aiSummary, real first gallery surface, structured facts, included service, order flow, robot-in-action media, mandatory Kiber Gosha brand voice, related catalog/compilations/articles, FAQ and schemas',
     publicRouteReplacementApproval: false,
     productionApproval: false,
   },

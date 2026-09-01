@@ -6,12 +6,14 @@ import HomeImageCards from '../blocks/HomeImageCards.astro';
 import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import { getRobotPages } from '../../lib/robot-pages';
-import { homeArticles, homeFinalCta, homeGosha } from '../../data/home-live';
+import { homeArticles, homeCompilations, homeFinalCta, homeGosha } from '../../data/home-live';
 import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
 
 const { template } = Astro.props as { template: RobotCardTemplateData };
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
+const primaryGallery = gallery.slice(0, 5);
+const actionGallery = (gallery.length > 1 ? gallery.slice(1, 6) : gallery).slice(0, 5);
 const descriptionBlocks = template.bodyBlocks.filter((block) => block.text);
 const introTitle = template.robot.name;
 const introText = descriptionBlocks[0]?.text ?? template.hero.text;
@@ -44,6 +46,29 @@ const relatedRobots = getRobotPages()
     analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
   }));
 
+const priceStatusLabel = template.robot.priceStatus === 'request'
+  ? 'стоимость подтверждает менеджер'
+  : 'стоимость требует ручной проверки';
+const serviceFacts = [
+  { label: 'Модель', value: template.robot.model ?? template.robot.name },
+  { label: 'Формат', value: 'аренда робота для мероприятия' },
+  { label: 'Сервис', value: 'оператор, настройка и сценарий под площадку' },
+  { label: 'География', value: 'Москва и выездные мероприятия по РФ после согласования' },
+  { label: 'Цена', value: `${template.robot.priceDisplay}; ${priceStatusLabel}` },
+  { label: 'Уточняем', value: 'дату, площадку, длительность, сценарий и требования к движению' },
+];
+const includedService = [
+  'подберём сценарий использования робота под событие и аудиторию',
+  'привезём робота, подготовим площадку и проверим технические ограничения',
+  'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии',
+  'заранее согласуем длительность, выходы робота, паузы и подзарядку',
+];
+const orderFlow = [
+  'Вы пишете нам и называете робота, дату, город и формат мероприятия.',
+  'Менеджер уточняет площадку, аудиторию, сценарий, тайминг и ограничения.',
+  'Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат.',
+  'В день события привозим, настраиваем и сопровождаем робота на площадке.',
+];
 const robotFinalCta = {
   ...homeFinalCta,
   title: `Арендуйте ${template.robot.name} для мероприятия`,
@@ -54,7 +79,7 @@ const robotFinalCta = {
 
 const robotGosha = {
   ...homeGosha,
-  text: `— Подскажу честно, как робот человеку.\n\n${template.cta.note ?? 'Менеджеры КИБЕР ПОРТАЛ подберут сценарий, рассчитают стоимость и обсудят все детали площадки заранее.'}`,
+  text: `— Подскажу честно, как робот человеку.\n\n${template.robot.name} стоит выбирать не только по внешнему виду, а по сценарию: где он будет двигаться, кто будет рядом, сколько длится программа и какой вау-эффект нужен гостям. Менеджеры КИБЕР ПОРТАЛ заранее проверят площадку, рассчитают стоимость и подскажут безопасный формат.`
 };
 
 const robotFaq = {
@@ -67,10 +92,12 @@ const robotFaq = {
   <section class="template-live-hero" data-block-id="hero" style={heroImage ? `--template-hero-image: url('${heroImage.src}')` : undefined}>
     <div class="template-live-hero__scrim" aria-hidden="true"></div>
     <div class="template-live-hero__content">
+      <p class="template-live-hero__eyebrow">КИБЕР ПОРТАЛ · аренда роботов</p>
       <h1>{template.seo.h1}</h1>
+      <p>{template.robot.priceDisplay}. Робот приезжает с оператором, сценарием и подготовкой под площадку.</p>
       <div class="template-live-hero__actions">
         <a class="template-hero-button template-hero-button--primary" href="/contacts/">Написать нам</a>
-        <a class="template-hero-button template-hero-button--light" href="#robot-card-pricing">Стоимость</a>
+        <a class="template-hero-button template-hero-button--light" href="#robot-card-gallery">Смотреть фото</a>
       </div>
     </div>
   </section>
@@ -78,23 +105,63 @@ const robotFaq = {
   <section class="template-live-intro" data-block-id="description" aria-labelledby="robot-card-intro-title">
     <h2 id="robot-card-intro-title">{introTitle}</h2>
     <p class="template-live-intro__lead" data-block-id="modelIntro">— {template.hero.text}</p>
+    <div class="template-ai-summary" data-block-id="aiSummary" aria-label="Краткое AI-описание страницы">
+      <strong>Коротко для гостей, поисковиков и AI-агентов:</strong>
+      <p>{template.aiSummary}</p>
+    </div>
     {introText && <p>{introText}</p>}
     {followupText && <p>{followupText}</p>}
   </section>
 
-  <section class="template-live-gallery" data-block-id="gallery" aria-label="Галерея">
-    {heroImage && <img src={heroImage.src} alt={heroImage.alt} loading="lazy" decoding="async" />}
-    <div class="template-live-gallery__arrows" aria-hidden="true"><span>‹</span><span>›</span></div>
+  <section id="robot-card-gallery" class="template-live-gallery" data-block-id="gallery" aria-labelledby="robot-card-gallery-title">
+    <div class="template-section-copy template-section-copy--gallery">
+      <p>Галерея</p>
+      <h2 id="robot-card-gallery-title">Посмотрите, как выглядит {template.robot.name}</h2>
+      <span>Сначала показываем самого робота крупно — это первый вау-крючок страницы и proof, что модель реальная.</span>
+    </div>
+    <div class:list={['template-live-gallery__grid', primaryGallery.length === 1 && 'template-live-gallery__grid--single']}>
+      {primaryGallery.map((image, index) => (
+        <figure class:list={['template-live-gallery__item', index === 0 && 'template-live-gallery__item--featured', primaryGallery.length === 1 && 'template-live-gallery__item--solo']}>
+          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+          <figcaption>{index + 1} из {primaryGallery.length}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="template-section template-commercial-brief" data-block-id="structuredFacts" aria-labelledby="robot-card-facts-title">
+    <p class="template-section__number">01 — факты для выбора</p>
+    <h2 id="robot-card-facts-title">Что важно знать перед арендой</h2>
+    <p class="template-section__lead">Этот блок собирает коммерческие и AI-readable факты в одном месте: модель, формат услуги, цена, логистика и ограничения без спорных обещаний.</p>
+    <dl class="template-facts-grid">
+      {serviceFacts.map((fact) => (
+        <div>
+          <dt>{fact.label}</dt>
+          <dd>{fact.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+
+  <section class="template-section template-two-column" data-block-id="includedService" aria-labelledby="robot-card-included-title">
+    <div>
+      <p class="template-section__number">02 — что входит</p>
+      <h2 id="robot-card-included-title">Не просто робот, а готовый event-сервис</h2>
+      <p class="template-section__lead">Клиенту не нужно самостоятельно программировать или запускать робота: задача КИБЕР ПОРТАЛА — превратить модель в понятный сценарий для события.</p>
+    </div>
+    <ul class="template-check-list">
+      {includedService.map((item) => <li>{item}</li>)}
+    </ul>
   </section>
 
   <section class="template-section" data-block-id="capabilities" aria-labelledby="robot-card-capabilities-title">
-    <p class="template-section__number">01 — ключевые возможности</p>
+    <p class="template-section__number">03 — ключевые возможности</p>
     <h2 id="robot-card-capabilities-title">{`Что умеет ${template.robot.name}`}</h2>
-    <p class="template-section__lead">Если коротко, робот закрывает ключевые сценарии мероприятия. Подробнее — в шести пунктах ниже.</p>
+    <p class="template-section__lead">Возможности показываем как продающие сценарные преимущества, но без неподтверждённых обещаний: факты идут из текущей карточки робота.</p>
     <div class="template-feature-grid">
-      {capabilityItems.map((item) => (
+      {capabilityItems.map((item, index) => (
         <article>
-          {heroImage && <img src={heroImage.src} alt="" loading="lazy" decoding="async" />}
+          {gallery[index % Math.max(gallery.length, 1)] && <img src={gallery[index % gallery.length].src} alt="" loading="lazy" decoding="async" />}
           <h3>{item.title ?? item.text}</h3>
           <p>{item.text}</p>
         </article>
@@ -103,11 +170,38 @@ const robotFaq = {
   </section>
 
   <section class="template-section" data-block-id="scenarios" aria-labelledby="robot-card-scenarios-title">
-    <p class="template-section__number">02 — сценарии использования</p>
+    <p class="template-section__number">04 — сценарии использования</p>
     <h2 id="robot-card-scenarios-title">{`Где ${template.robot.name} произведёт «вау-эффект»?`}</h2>
-    <p class="template-section__lead">Каждый сценарий адаптируется под задачу заказчика — от короткого приветствия гостей до полноценного шоу с несколькими выходами робота в течение дня.</p>
+    <p class="template-section__lead">Сценарии помогают посетителю быстро понять, подойдёт ли робот под его событие, а AI-агенту — связать модель с реальными event-задачами.</p>
     <div class="template-scenario-grid">
       {scenarioItems.map((item) => <article><h3>{item.title ?? item.text}</h3><p>{item.text}</p></article>)}
+    </div>
+  </section>
+
+  <section class="template-section template-two-column" data-block-id="orderFlow" aria-labelledby="robot-card-order-flow-title">
+    <div>
+      <p class="template-section__number">05 — как заказать</p>
+      <h2 id="robot-card-order-flow-title">Что произойдёт после заявки</h2>
+      <p class="template-section__lead">Показываем прозрачный процесс, чтобы убрать тревогу перед обращением и объяснить, почему финальная стоимость подтверждается менеджером.</p>
+    </div>
+    <ol class="template-order-list">
+      {orderFlow.map((item) => <li>{item}</li>)}
+    </ol>
+  </section>
+
+  <section class="template-section template-action-gallery" data-block-id="robotInAction" aria-labelledby="robot-card-action-title">
+    <div class="template-section-copy template-section-copy--gallery">
+      <p>06 — робот в действии</p>
+      <h2 id="robot-card-action-title">Покажите гостям движение, общение и фото-контент</h2>
+      <span>Вторая media-зона ближе к CTA напоминает, зачем робот нужен на мероприятии: фото, видео, поток гостей и запоминаемый брендовый эффект.</span>
+    </div>
+    <div class="template-action-gallery__strip">
+      {actionGallery.map((image, index) => (
+        <figure>
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+          <figcaption>{index + 1} / {actionGallery.length}</figcaption>
+        </figure>
+      ))}
     </div>
   </section>
 
@@ -115,21 +209,23 @@ const robotFaq = {
     <HomeFinalCta {...robotFinalCta} />
   </section>
 
-  <section class="template-reused-block" data-block-id="robotInAction">
-    <div data-block-id="goshaCta">
-      <HomeGoshaQuote {...robotGosha} />
-    </div>
+  <section class="template-reused-block" data-block-id="goshaCta">
+    <HomeGoshaQuote {...robotGosha} />
   </section>
 
   <section id="robot-card-related-catalog" class="template-related-catalog" aria-labelledby="robot-card-related-catalog-title" data-block-id="relatedCatalog">
     <div class="template-section-copy">
       <p>Каталог роботов</p>
       <h2 id="robot-card-related-catalog-title">Популярные модели для мероприятий</h2>
-      <p>Этот блок переиспользует готовые карточки каталога с главной страницы.</p>
+      <span>Этот блок переиспользует готовые карточки каталога с главной страницы, чтобы не изобретать отдельный дизайн карточек.</span>
     </div>
     <div class="template-related-catalog__grid">
       {relatedRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
+  </section>
+
+  <section class="template-reused-block" data-block-id="relatedCompilations">
+    <HomeImageCards id="robot-card-compilations" eyebrow="Подборки" variant="overlay" {...homeCompilations} />
   </section>
 
   <section class="template-reused-block" data-block-id="faq">
@@ -150,12 +246,12 @@ const robotFaq = {
   .template-live-hero {
     position: relative;
     display: grid;
-    min-height: clamp(24rem, 40vw, 30rem);
+    min-height: clamp(25rem, 43vw, 32rem);
     place-items: center;
     overflow: hidden;
     border-radius: 1.625rem;
     background:
-      linear-gradient(90deg, color-mix(in srgb, var(--kp-reference-ink) 80%, transparent), color-mix(in srgb, var(--kp-reference-ink) 38%, transparent)),
+      linear-gradient(90deg, color-mix(in srgb, var(--kp-reference-ink) 82%, transparent), color-mix(in srgb, var(--kp-reference-ink) 36%, transparent)),
       var(--template-hero-image, none),
       var(--kp-reference-blue-deep);
     background-position: center;
@@ -175,21 +271,28 @@ const robotFaq = {
   .template-live-hero__content {
     display: grid;
     justify-items: center;
-    gap: 2rem;
-    max-width: 54rem;
+    gap: 1.35rem;
+    max-width: 58rem;
     padding: clamp(2rem, 5vw, 4rem);
     text-align: center;
   }
 
+  .template-live-hero__eyebrow,
   .template-live-hero h1,
+  .template-live-hero p,
   .template-live-intro h2,
   .template-live-intro p,
+  .template-ai-summary p,
   .template-section h2,
   .template-section h3,
   .template-section p,
   .template-section__number,
   .template-section-copy p,
-  .template-section-copy h2 {
+  .template-section-copy h2,
+  .template-section-copy span,
+  .template-facts-grid,
+  .template-facts-grid dd,
+  .template-facts-grid dt {
     margin: 0;
   }
 
@@ -199,6 +302,27 @@ const robotFaq = {
     font-size: clamp(3rem, 6.6vw, 4.75rem);
     font-weight: 700;
     line-height: .98;
+  }
+
+  .template-live-hero p:not(.template-live-hero__eyebrow) {
+    max-width: 44rem;
+    color: color-mix(in srgb, var(--kp-reference-white) 88%, transparent);
+    font-size: clamp(1rem, 1.7vw, 1.2rem);
+    line-height: 1.55;
+  }
+
+  .template-live-hero__eyebrow,
+  .template-section__number,
+  .template-section-copy p:first-child {
+    color: var(--kp-reference-blue);
+    font-size: var(--kp-reference-label-size);
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+
+  .template-live-hero__eyebrow {
+    color: color-mix(in srgb, var(--kp-reference-white) 86%, var(--kp-reference-blue));
   }
 
   .template-live-hero__actions {
@@ -242,38 +366,79 @@ const robotFaq = {
     gap: clamp(1.5rem, 3vw, 2.25rem);
   }
 
-  .template-live-gallery {
-    min-height: 3rem;
-    align-items: end;
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .template-live-gallery img {
-    width: 100%;
-    height: .0625rem;
-    object-fit: cover;
-    opacity: .28;
-  }
-
-  .template-live-gallery__arrows {
-    display: flex;
-    gap: .5rem;
-  }
-
-  .template-live-gallery__arrows span {
-    display: grid;
-    width: 2rem;
-    aspect-ratio: 1;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--kp-reference-blue);
-    color: var(--kp-reference-white);
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-
   .template-live-intro {
-    max-width: 70rem;
+    max-width: 72rem;
+  }
+
+  .template-ai-summary {
+    display: grid;
+    gap: .65rem;
+    max-width: 58rem;
+    border-left: .32rem solid var(--kp-reference-blue);
+    border-radius: 1.15rem;
+    padding: 1.15rem 1.35rem;
+    background: color-mix(in srgb, var(--kp-reference-white) 78%, transparent);
+    color: var(--kp-reference-ink);
+  }
+
+  .template-ai-summary strong {
+    font-family: var(--kp-font-heading);
+    font-size: .98rem;
+  }
+
+  .template-live-gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(.75rem, 1.4vw, 1rem);
+  }
+
+  .template-live-gallery__grid--single {
+    grid-template-columns: minmax(16rem, 34rem);
+  }
+
+  .template-live-gallery__item {
+    position: relative;
+    display: grid;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 1.35rem;
+    background: var(--kp-reference-white);
+  }
+
+  .template-live-gallery__item--featured {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .template-live-gallery__item--solo {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .template-live-gallery__item img,
+  .template-action-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .template-live-gallery__item--featured img {
+    min-height: 100%;
+  }
+
+  .template-live-gallery figcaption,
+  .template-action-gallery figcaption {
+    position: absolute;
+    right: .8rem;
+    bottom: .8rem;
+    border-radius: 999rem;
+    padding: .35rem .65rem;
+    background: color-mix(in srgb, var(--kp-reference-ink) 70%, transparent);
+    color: var(--kp-reference-white);
+    font-size: .78rem;
+    font-weight: 700;
   }
 
   .template-live-intro h2,
@@ -290,27 +455,87 @@ const robotFaq = {
   .template-section__lead,
   .template-feature-grid p,
   .template-scenario-grid p,
-  .template-section-copy p:last-child {
+  .template-section-copy span,
+  .template-check-list,
+  .template-order-list,
+  .template-facts-grid dd {
     color: var(--kp-reference-muted);
     font-size: 1rem;
     line-height: 1.65;
   }
 
   .template-live-intro__lead {
-    max-width: 49rem;
+    max-width: 54rem;
     color: var(--kp-reference-ink) !important;
     font-size: clamp(1.2rem, 2vw, 1.45rem) !important;
     font-weight: 700;
     line-height: 1.45 !important;
   }
 
-  .template-section__number,
-  .template-section-copy p:first-child {
+  .template-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .9rem;
+  }
+
+  .template-facts-grid div,
+  .template-check-list li,
+  .template-order-list li {
+    border-radius: 1.15rem;
+    background: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
+  }
+
+  .template-facts-grid div {
+    display: grid;
+    gap: .4rem;
+    padding: 1.1rem;
+  }
+
+  .template-facts-grid dt {
     color: var(--kp-reference-blue);
-    font-size: var(--kp-reference-label-size);
-    font-weight: 700;
-    letter-spacing: .18em;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .12em;
     text-transform: uppercase;
+  }
+
+  .template-facts-grid dd {
+    color: var(--kp-reference-ink);
+    font-weight: 700;
+  }
+
+  .template-two-column {
+    grid-template-columns: minmax(0, .45fr) minmax(0, .55fr);
+    align-items: start;
+  }
+
+  .template-check-list,
+  .template-order-list {
+    display: grid;
+    gap: .8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .template-check-list li,
+  .template-order-list li {
+    padding: 1rem 1.15rem;
+    color: var(--kp-reference-ink);
+    font-weight: 700;
+  }
+
+  .template-order-list {
+    counter-reset: order-flow;
+  }
+
+  .template-order-list li {
+    counter-increment: order-flow;
+  }
+
+  .template-order-list li::before {
+    content: counter(order-flow, decimal-leading-zero) ' — ';
+    color: var(--kp-reference-blue);
   }
 
   .template-feature-grid {
@@ -352,11 +577,35 @@ const robotFaq = {
     gap: clamp(2.5rem, 4vw, 4rem) clamp(1.5rem, 4vw, 4rem);
   }
 
+  .template-action-gallery__strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: .85rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .template-action-gallery__strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  .template-action-gallery figure {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    background: var(--kp-reference-white);
+  }
+
   .template-section-copy {
     display: grid;
     gap: .55rem;
-    max-width: 48rem;
+    max-width: 50rem;
     margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
+  }
+
+  .template-section-copy--gallery {
+    margin-left: 0;
   }
 
   .template-related-catalog__grid {
@@ -374,8 +623,19 @@ const robotFaq = {
   @media (min-width: 40rem) and (max-width: 59.9375rem) {
     .template-related-catalog__grid,
     .template-feature-grid,
-    .template-scenario-grid {
+    .template-scenario-grid,
+    .template-facts-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .template-live-gallery__grid,
+    .template-two-column {
+      grid-template-columns: 1fr;
+    }
+
+    .template-live-gallery__item--featured {
+      grid-column: auto;
+      grid-row: auto;
     }
   }
 
@@ -397,13 +657,21 @@ const robotFaq = {
     .template-live-hero__actions,
     .template-feature-grid,
     .template-scenario-grid,
-    .template-related-catalog__grid {
+    .template-related-catalog__grid,
+    .template-live-gallery__grid,
+    .template-facts-grid,
+    .template-two-column {
+      display: grid;
       grid-template-columns: 1fr;
     }
 
-    .template-live-hero__actions {
-      display: grid;
-      justify-items: center;
+    .template-live-gallery__item--featured {
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    .template-action-gallery__strip {
+      grid-template-columns: 1fr;
     }
 
     .template-section-copy {

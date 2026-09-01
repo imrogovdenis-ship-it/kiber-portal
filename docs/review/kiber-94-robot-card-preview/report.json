@@ -4,6 +4,32 @@
   "routePattern": "/preview/kiber-94/robot-card/[slug]/",
   "checkedCount": 24,
   "failures": [],
+  "warnings": [
+    "arenda-agibot-x2: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-bellabot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-glambot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-inchbot-l1-w-edu: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-kettybot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-klipmeiker: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-mini-robo-kofeyni: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-noetix-bumi: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-promobot-v4: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-robo-kofeyni: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-roboshashki: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-robot-barmen: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-robota-ardi: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-robota-hudozhnika-a4: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-robota-sofiya: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-robota-tron: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-senserobot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-sketchbot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-unitree-g1: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-unitree-go2: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-unitree-h2: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-unitree-r1: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-uv-box: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
+    "arenda-xiaomi-cyberdog-2: media debt — only 1 local gallery image available; import approved gallery assets before public rollout"
+  ],
   "safety": {
     "productionDeployChanged": false,
     "dnsChanged": false,
@@ -23,7 +49,7 @@
   },
   "designPass": {
     "status": "ready_for_owner_visual_review",
-    "scope": "preview-only robot_card visual layout pass using existing HomeFinalCta, HomeGoshaQuote, RobotCard catalog, HomeFaqBlock, and HomeImageCards article blocks",
+    "scope": "preview-only robot_card selling + SEO/AI structure pass with visible aiSummary, real first gallery surface, structured facts, included service, order flow, robot-in-action media, mandatory Kiber Gosha brand voice, related catalog/compilations/articles, FAQ and schemas",
     "publicRouteReplacementApproval": false,
     "productionApproval": false
   }

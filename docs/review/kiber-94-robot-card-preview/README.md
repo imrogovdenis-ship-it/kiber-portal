@@ -56,15 +56,24 @@ if test -d dist/preview/kiber-94/robot-card; then echo 'preview route leaked int
 
 ## Design pass scope
 
-After structure/data mapping approval, the preview received a first visual layout pass for owner review:
+After structure/data mapping approval, the preview received a selling + SEO/AI structure pass for owner review:
 
-- the preview now imports and reuses existing blocks instead of re-drawing them locally: `HomeFinalCta`, `HomeGoshaQuote`, `RobotCard`, `HomeFaqBlock`, and `HomeImageCards`;
+- the short block immediately after Hero is now a visible `aiSummary`, so humans, search crawlers and AI agents can extract the model/service/scenario/price-status summary early;
+- the first gallery is restored as a visible robot appearance/proof block directly after intro/AI summary;
+- the page adds structured facts, included-service and order-flow blocks so the commercial conditions are clear before the lower CTA;
+- the preview still imports and reuses existing blocks instead of re-drawing them locally: `HomeFinalCta`, `HomeGoshaQuote`, `RobotCard`, `HomeFaqBlock`, and `HomeImageCards`;
+- Kiber Gosha is treated as a mandatory mascot/brand-voice layer, not decoration: `HomeGoshaQuote` remains required for robot_card and the new contract extends that rule to future page types;
 - the robot catalog section uses the same `RobotCard` component/pattern as the approved homepage catalog;
-- the FAQ section uses `HomeFaqBlock` with robot-specific questions;
+- the FAQ section uses `HomeFaqBlock` with robot-specific questions and the preview route emits `FAQPage` JSON-LD;
 - the article section uses `HomeImageCards` with `homeArticles` data from the approved homepage/blog block;
-- the CTA/Gosha sections use the existing homepage CTA and Кибер Гоша quote components with robot-specific copy;
-- missing legacy gallery assets are filtered out of the rendered preview so the review surface does not show broken image cards;
-- this is still a preview-only design pass, not approval to replace public robot routes.
+- the page now links to related `Подборки` using `HomeImageCards` + `homeCompilations`;
+- the preview route emits `Service`, `BreadcrumbList` and `FAQPage` JSON-LD;
+- missing legacy gallery assets are not rendered as broken images; media debt is recorded as a warning until approved gallery assets are imported;
+- this is still a preview-only design/structure pass, not approval to replace public robot routes.
+
+## Structure contract
+
+The current draft structure is versioned in `robot-card-structure-contract.md`. It is the source for the later Claude/agent skill rewrite after owner approval.
 
 ## Evidence
 

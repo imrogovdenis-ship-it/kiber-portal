@@ -10,6 +10,7 @@ const componentPath = resolve(root, 'src/components/templates/RobotCardTemplate.
 const smokePath = resolve(root, 'scripts/kiber94-robot-card-preview-smoke.mjs');
 const packagePath = resolve(root, 'package.json');
 const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report.json');
+const structureContractPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md');
 
 function readJson(path: string) {
   return JSON.parse(readFileSync(path, 'utf8'));
@@ -78,10 +79,49 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.match(componentSource, /template-live-hero/);
   assert.match(componentSource, /template-live-hero__scrim/);
   assert.match(componentSource, /template-live-intro/);
-  assert.match(componentSource, /01 — ключевые возможности/);
-  assert.match(componentSource, /02 — сценарии использования/);
+  assert.match(componentSource, /data-block-id="aiSummary"/);
+  assert.match(componentSource, /template-ai-summary/);
+  assert.match(componentSource, /primaryGallery\.map/);
+  assert.match(componentSource, /actionGallery\.map/);
+  assert.doesNotMatch(componentSource, /height:\s*\.0625rem/);
+  assert.match(componentSource, /data-block-id="structuredFacts"/);
+  assert.match(componentSource, /data-block-id="includedService"/);
+  assert.match(componentSource, /data-block-id="orderFlow"/);
+  assert.match(componentSource, /data-block-id="relatedCompilations"/);
+  assert.match(componentSource, /homeCompilations/);
+  assert.match(componentSource, /03 — ключевые возможности/);
+  assert.match(componentSource, /04 — сценарии использования/);
+  assert.match(componentSource, /06 — робот в действии/);
   assert.match(componentSource, /template-feature-grid/);
   assert.match(componentSource, /template-scenario-grid/);
   assert.match(componentSource, /box-shadow: none/);
   assert.match(componentSource, /border-radius: 1\.625rem/);
+});
+
+test('KIBER-94 preview route exposes SEO/AI schemas required for visible robot_card content', () => {
+  const routeSource = readFileSync(routePath, 'utf8');
+  assert.match(routeSource, /faqPageJsonLd/);
+  assert.match(routeSource, /breadcrumbJsonLd/);
+  assert.match(routeSource, /breadcrumbs=\{breadcrumbs\}/);
+  assert.match(routeSource, /template\.faq\.map/);
+});
+
+test('KIBER-94 documents the approved-draft robot_card structure before rewriting generation skills', () => {
+  assert.equal(existsSync(structureContractPath), true, 'robot-card structure contract must exist');
+  const doc = readFileSync(structureContractPath, 'utf8');
+  for (const phrase of [
+    'Intro + visible AI summary',
+    'First gallery / robot appearance proof',
+    'Structured facts / facts for choosing',
+    'Included service',
+    'Order flow / what happens after request',
+    'Robot in action / second media surface',
+    'Kiber Gosha brand voice',
+    'Related Подборки',
+    'Skill rewrite requirement',
+  ]) {
+    assert.ok(doc.includes(phrase), `structure contract must include ${phrase}`);
+  }
+  assert.match(doc, /Kiber Gosha must appear across page types/);
+  assert.match(doc, /not decoration/);
 });
