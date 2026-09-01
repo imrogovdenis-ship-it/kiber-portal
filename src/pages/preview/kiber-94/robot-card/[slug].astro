@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import RobotCardTemplate from '../../../../components/templates/RobotCardTemplate.astro';
+import { getRobotPages, type RobotPageRecord } from '../../../../lib/robot-pages';
+import { toRobotCardTemplateData } from '../../../../lib/kiber94-robot-template-data';
+import { serviceJsonLd } from '../../../../lib/seo';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  const enabled = process.env.DEPLOY_ENV !== 'production' && process.env.DESIGN_REVIEW_ENABLED !== 'false';
+  return enabled
+    ? getRobotPages().map((robot) => ({ params: { slug: robot.slug }, props: { robot } }))
+    : [];
+}
+
+const { robot } = Astro.props as { robot: RobotPageRecord };
+const template = toRobotCardTemplateData(robot);
+const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
+---
+
+<BaseLayout
+  title={`KIBER-94 preview: ${template.seo.title}`}
+  description={`Preview robot_card template with real data: ${template.seo.description}`}
+  canonical={Astro.site ? new URL(previewPath, Astro.site).toString() : previewPath}
+  image={robot.media.hero.src}
+  noindex
+  jsonLd={[
+    serviceJsonLd({
+      name: template.seo.h1,
+      description: template.seo.description,
+      url: previewPath,
+      image: robot.media.hero.src,
+      category: 'KIBER-94 preview robot_card template',
+    }),
+  ]}
+>
+  <main class="kiber94-preview container" id="main-content" tabindex="-1" data-kiber-task="KIBER-94" data-preview-route="robot_card" data-robot-slug={robot.slug}>
+    <header class="kiber94-preview__notice" aria-label="Статус preview">
+      <p>Preview-first / KIBER-94</p>
+      <p class="kiber94-preview__title">robot_card template с реальными данными: {robot.identity.name}</p>
+      <p>Эта страница не индексируется, не попадает в публичные маршруты и нужна только для проверки нового шаблона перед заменой публичных карточек.</p>
+    </header>
+    <RobotCardTemplate {template} />
+  </main>
+</BaseLayout>
+
+<style>
+  .kiber94-preview {
+    display: grid;
+    gap: var(--kp-grid-gap);
+    padding-block: var(--kp-section-block);
+  }
+  .kiber94-preview__notice {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    border: 0.0625rem solid var(--kp-line);
+    border-radius: 1.25rem;
+    background: var(--kp-surface-soft);
+  }
+  .kiber94-preview__notice p {
+    margin: 0;
+  }
+  .kiber94-preview__notice p:first-child {
+    color: var(--kp-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .kiber94-preview__title {
+    font-family: var(--kp-font-heading);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1;
+  }
+</style>

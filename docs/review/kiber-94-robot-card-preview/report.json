@@ -1,0 +1,16 @@
+{
+  "issue": "KIBER-94",
+  "status": "passed",
+  "routePattern": "/preview/kiber-94/robot-card/[slug]/",
+  "checkedCount": 24,
+  "failures": [],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "massPageGeneration": false,
+    "publicRobotRoutesChanged": false
+  }
+}

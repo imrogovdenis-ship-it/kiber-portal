@@ -53,7 +53,8 @@
     "test:full-site-visual-qa": "node scripts/full-site-visual-qa-smoke.mjs",
     "test:page-seo-components": "python3 scripts/audit_page_seo_components.py",
     "test:page-type-intent-contract": "node --import tsx --test tests/visual/page-seo-components-contract.test.ts",
-    "test:kiber94-page-templates": "node scripts/kiber94-page-template-contract-smoke.mjs"
+    "test:kiber94-page-templates": "node scripts/kiber94-page-template-contract-smoke.mjs",
+    "test:kiber94-robot-card-preview": "node scripts/kiber94-robot-card-preview-smoke.mjs"
   },
   "dependencies": {
     "astro": "7.2.7",
