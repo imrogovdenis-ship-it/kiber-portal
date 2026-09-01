@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-91",
-  "generatedAt": "2026-09-01T04:48:06Z",
-  "source": "local production build from current main; approved homepage patterns used as design baseline for the rest of the site",
+  "generatedAt": "2026-09-01T05:31:36Z",
+  "source": "local preview build with FSVQA-01A compilations follow-up; approved homepage patterns used as design baseline",
   "routes": [
     {
       "name": "home",
@@ -161,10 +161,10 @@
       "width": 390,
       "height": 844,
       "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-mobile-390.png",
-      "bytes": 71628,
-      "sha256": "0f60282468eb96d094dbb61946033b6ba34004a97410bccb0fe7e40b4a28ea65",
+      "bytes": 755348,
+      "sha256": "bec099931c493056d3c23007046d246c3248ab18be038ef6ab76fecd3aca250a",
       "imageWidth": 390,
-      "imageHeight": 1559
+      "imageHeight": 4929
     },
     {
       "routeName": "articles",
@@ -341,10 +341,10 @@
       "width": 768,
       "height": 1024,
       "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-tablet-768.png",
-      "bytes": 75954,
-      "sha256": "1fa70426f6d23c7b24974a37f57d7deced08213e04c7c22ed18d9954f3520514",
+      "bytes": 1063443,
+      "sha256": "6d2cf3a5b52d95b345b0807ed74a44faa660ba20b0d8766cde2f4f4539922d42",
       "imageWidth": 768,
-      "imageHeight": 1054
+      "imageHeight": 3820
     },
     {
       "routeName": "articles",
@@ -521,10 +521,10 @@
       "width": 1440,
       "height": 1200,
       "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-desktop-1440.png",
-      "bytes": 86880,
-      "sha256": "da61fead7e20091c90ada020e2134ea1de426021a49c07d3b517150eb5f186ee",
+      "bytes": 1191154,
+      "sha256": "4a170c7e36c17ae3776222f8a566bad1f56d3f6cfc96fb3f5e005cf5a26823e5",
       "imageWidth": 1440,
-      "imageHeight": 1200
+      "imageHeight": 3109
     },
     {
       "routeName": "articles",

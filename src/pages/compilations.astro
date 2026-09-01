@@ -1,26 +1,324 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
+import { homeCompilations, homeFinalCta } from '../data/home-live';
 import { collectionPageJsonLd } from '../lib/seo';
 
+const cardAnchors = ['roboty-gumanoidy', 'roboty-dlya-vystavok', 'roboty-sobaki', 'unitree'];
+const compilationCards = homeCompilations.cards.slice(0, 4).map((card, index) => ({
+  ...card,
+  id: cardAnchors[index],
+  href:
+    card.href === '/compilations/'
+      ? `/compilations/#${cardAnchors[index]}`
+      : card.href,
+}));
+
+const textSections = [
+  {
+    title: 'Как пользоваться подборками',
+    text: 'Подборки помогают быстро выбрать не одну модель, а готовый сценарий: кого поставить на стенд, чем удивить гостей на свадьбе, какой робот подойдёт для welcome-зоны, презентации или промо. Мы собираем роботов по задачам, формату площадки и ожидаемому вау-эффекту, чтобы вы не сравнивали десятки карточек вручную.',
+  },
+  {
+    title: 'Подбор под событие',
+    text: 'Если сценарий пока не очевиден, начните с направления: гуманоиды для сцены и презентаций, роботы-собаки для фотозоны и динамики, сервисные роботы для welcome и фуршета, технологичные форматы для выставок. Команда КИБЕР ПОРТАЛА уточнит дату, город, площадку и бюджет — и предложит набор роботов под задачу.',
+  },
+];
 ---
 
-<BaseLayout title='Подборки роботов — КИБЕР ПОРТАЛ' description='Сценарные подборки роботов для мероприятий: гуманоиды, роботы-собаки, промоутеры и технологичные event-форматы.' noindex={false} jsonLd={collectionPageJsonLd({ title: 'Подборки роботов — КИБЕР ПОРТАЛ', description: 'Сценарные подборки роботов для мероприятий.', url: '/compilations/' })}>
-  <main class="content-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-20">
-    <section class="content-page__hero" aria-labelledby="page-title">
-      <p>КИБЕР ПОРТАЛ</p>
-      <h1 id="page-title">Подборки</h1>
-      <p>Здесь будут сценарные подборки роботов: гуманоиды, роботы-собаки, промоутеры и event-форматы. До расширения каталога начните с пилотного робота Unitree G1.</p>
+<BaseLayout
+  title="Подборки роботов — КИБЕР ПОРТАЛ"
+  description="Сценарные подборки роботов для мероприятий: гуманоиды, роботы-собаки, промоутеры, выставочные и event-форматы."
+  canonical="https://www.kiber-portal.ru/compilations/"
+  noindex={false}
+  jsonLd={collectionPageJsonLd({ title: 'Подборки роботов — КИБЕР ПОРТАЛ', description: 'Сценарные подборки роботов для мероприятий.', url: '/compilations/' })}
+>
+  <main class="compilations-page" id="main-content" tabindex="-1" data-kiber-task="KIBER-91-FSVQA-01">
+    <section class="compilations-page__hero container" aria-labelledby="page-title">
+      <p class="compilations-page__eyebrow">Подборки</p>
+      <h1 id="page-title">Подборки роботов для аренды</h1>
+      <p>Готовые сценарии выбора роботов под мероприятие: выставка, презентация, свадьба, welcome-зона или технологичное промо.</p>
     </section>
-    <InternalLinks route="/compilations/" label="Следующие шаги" />
+
+    <section class="compilations-page__cards container" aria-labelledby="compilations-cards-title">
+      <div class="compilations-page__section-copy">
+        <p class="compilations-page__eyebrow">Сценарии</p>
+        <h2 id="compilations-cards-title">Выберите подборку под событие</h2>
+      </div>
+      <div class="compilations-page__grid">
+        {compilationCards.map((card, index) => (
+          <a
+            id={card.id}
+            class="compilations-page__card"
+            href={card.href}
+            style={`--compilation-card-image: url('${card.image.src}')`}
+            data-analytics-event="robot_card_click"
+            data-analytics-block-id="compilations-index"
+            data-analytics-source="compilations_index"
+            data-analytics-placement="card"
+            data-analytics-slug={`compilation-${index + 1}`}
+          >
+            <span class="compilations-page__card-index">0{index + 1}</span>
+            <span class="compilations-page__card-title">{card.title}</span>
+            <span class="compilations-page__card-description">{card.description}</span>
+            <span class="compilations-page__card-cta">{card.cta ?? 'Подробнее'}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="compilations-page__text container" aria-labelledby="compilations-text-title">
+      <p class="compilations-page__eyebrow">Гид по выбору</p>
+      <h2 id="compilations-text-title">Подборка — это не список роботов, а готовый сценарий</h2>
+      <div class="compilations-page__text-grid">
+        {textSections.map((section) => (
+          <article>
+            <h3>{section.title}</h3>
+            <p>{section.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="compilations-page__cta container" aria-label="Связаться с КИБЕР ПОРТАЛ">
+      <HomeFinalCta {...homeFinalCta} />
+    </section>
+
+    <div class="compilations-page__links container">
+      <InternalLinks route="/compilations/" label="Следующие шаги" />
+    </div>
   </main>
 </BaseLayout>
 
 <style>
-  .content-page { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
-  .content-page__hero { display: grid; gap: var(--kp-card-gap); max-width: 48rem; }
-  .content-page__hero p, .content-page__hero h1 { margin: 0; }
-  .content-page__hero > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
-  .content-page__hero h1 { font-family: var(--kp-font-heading); font-size: var(--kp-display-size); line-height: var(--kp-display-line-height); }
-  .content-page__hero > p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .compilations-page {
+    display: grid;
+    gap: clamp(4rem, 7vw, 7rem);
+    padding-block: clamp(5rem, 8vw, 7rem) 4.5rem;
+    background: var(--kp-reference-sky);
+  }
+
+  .compilations-page__hero,
+  .compilations-page__cards,
+  .compilations-page__text {
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .compilations-page__hero {
+    max-width: 72rem;
+  }
+
+  .compilations-page__eyebrow,
+  .compilations-page__hero h1,
+  .compilations-page__hero p,
+  .compilations-page__section-copy h2,
+  .compilations-page__text h2,
+  .compilations-page__text h3,
+  .compilations-page__text p {
+    margin: 0;
+  }
+
+  .compilations-page__eyebrow {
+    color: var(--kp-reference-blue);
+    font-size: var(--kp-reference-label-size);
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .compilations-page__hero h1 {
+    max-width: 58rem;
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: clamp(3.1rem, 7vw, var(--kp-reference-display-xl));
+    font-weight: 700;
+    line-height: .98;
+  }
+
+  .compilations-page__hero p:last-child {
+    max-width: 46rem;
+    color: var(--kp-reference-muted);
+    font-size: 1.15rem;
+    line-height: 1.55;
+  }
+
+  .compilations-page__section-copy {
+    display: grid;
+    gap: .75rem;
+    max-width: 48rem;
+  }
+
+  .compilations-page__section-copy h2,
+  .compilations-page__text h2 {
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg));
+    line-height: 1;
+  }
+
+  .compilations-page__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.4rem, 2.5vw, 2.5rem);
+  }
+
+  .compilations-page__card {
+    position: relative;
+    display: grid;
+    min-height: clamp(15rem, 23vw, 20rem);
+    overflow: hidden;
+    align-content: start;
+    gap: .75rem;
+    border-radius: 1.75rem;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    color: var(--kp-reference-white);
+    isolation: isolate;
+    text-decoration: none;
+    background: var(--kp-reference-blue-deep);
+    box-shadow: 0 1.25rem 3rem color-mix(in srgb, var(--kp-reference-ink) 14%, transparent);
+  }
+
+  .compilations-page__card::before {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-image: var(--compilation-card-image);
+    background-position: center;
+    background-size: cover;
+    content: '';
+    transform: scale(1.02);
+    transition: transform .35s ease;
+  }
+
+  .compilations-page__card::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(90deg, color-mix(in srgb, var(--kp-reference-ink) 78%, transparent) 0%, color-mix(in srgb, var(--kp-reference-ink) 46%, transparent) 48%, color-mix(in srgb, var(--kp-reference-ink) 10%, transparent) 100%),
+      linear-gradient(180deg, color-mix(in srgb, var(--kp-reference-ink) 28%, transparent) 0%, transparent 56%);
+    content: '';
+  }
+
+  .compilations-page__card:hover::before {
+    transform: scale(1.07);
+  }
+
+  .compilations-page__card:focus-visible {
+    outline: .1875rem solid var(--kp-orange);
+    outline-offset: .25rem;
+  }
+
+  .compilations-page__card-index {
+    width: max-content;
+    border: .0625rem solid color-mix(in srgb, var(--kp-reference-white) 42%, transparent);
+    border-radius: 999rem;
+    padding: .45rem .7rem;
+    color: color-mix(in srgb, var(--kp-reference-white) 86%, transparent);
+    font-family: var(--kp-font-heading);
+    font-size: .85rem;
+    font-weight: 700;
+  }
+
+  .compilations-page__card-title {
+    max-width: 22rem;
+    font-family: var(--kp-font-heading);
+    font-size: clamp(1.85rem, 3vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .compilations-page__card-description {
+    max-width: 24rem;
+    color: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
+    font-size: .98rem;
+    line-height: 1.45;
+  }
+
+  .compilations-page__card-cta {
+    display: inline-flex;
+    width: max-content;
+    min-height: 2.6rem;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    margin-top: auto;
+    border-radius: 999rem;
+    padding: .72rem 1.25rem;
+    background: var(--kp-reference-white);
+    color: var(--kp-reference-blue);
+    font-family: var(--kp-font-heading);
+    font-weight: 700;
+  }
+
+  .compilations-page__text {
+    max-width: 76rem;
+  }
+
+  .compilations-page__text-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .compilations-page__text article {
+    display: grid;
+    gap: .75rem;
+    border-radius: 1.5rem;
+    padding: clamp(1.35rem, 3vw, 2rem);
+    background: var(--kp-reference-white);
+  }
+
+  .compilations-page__text h3 {
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    line-height: 1.08;
+  }
+
+  .compilations-page__text p {
+    color: var(--kp-reference-muted);
+    line-height: 1.65;
+  }
+
+  .compilations-page__cta :global(.home-final-cta) {
+    margin-top: 0;
+  }
+
+  .compilations-page__links {
+    margin-top: -2rem;
+  }
+
+  @media (max-width: 56rem) {
+    .compilations-page__grid,
+    .compilations-page__text-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .compilations-page__card {
+      min-height: 18rem;
+    }
+  }
+
+  @media (max-width: 39.9375rem) {
+    .compilations-page {
+      gap: 3.25rem;
+      padding-block: 4.25rem 3.5rem;
+    }
+
+    .compilations-page__hero h1 {
+      font-size: clamp(2.6rem, 14vw, 4rem);
+    }
+
+    .compilations-page__card {
+      min-height: 19rem;
+      padding: 1.35rem;
+    }
+
+    .compilations-page__card-title {
+      font-size: clamp(1.7rem, 8vw, 2.25rem);
+    }
+  }
 </style>

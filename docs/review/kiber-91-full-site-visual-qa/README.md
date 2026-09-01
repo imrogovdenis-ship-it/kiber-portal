@@ -1,6 +1,6 @@
 # KIBER-91 — Full-site visual QA перед production cutover
 
-## Decision: NO-GO for production until findings are accepted or fixed
+## Decision: NO-GO for production until remaining findings are accepted or fixed
 
 Это QA-пакет, а не production approval. Production/DNS/secrets/analytics/live lead routing не менялись.
 
@@ -65,13 +65,21 @@ Evidence:
 
 ## Findings
 
-### FSVQA-01 — HIGH — Подборки / Блог / Новости are placeholder-style index pages
+### FSVQA-01 — HIGH — Блог / Новости are placeholder-style index pages
 
-Routes: `/compilations/`, `/articles/`, `/news/`
+Routes: `/articles/`, `/news/`
 
 These pages are functional and branded, but visually thin compared with the approved homepage. They should reuse homepage-approved patterns before production: richer section hero, card/list blocks, consistent spacing, and CTA rhythm.
 
 **Recommendation:** fix before production visual approval.
+
+### FSVQA-01A — RESOLVED — Подборки promoted from placeholder to filled page
+
+Route: `/compilations/`
+
+Owner feedback: the page was empty and needed the actual compilations as on the homepage, adjusted card styling, two columns, bottom text block with heading, and CTA.
+
+Implementation: `/compilations/` now renders four compilation cards from the approved homepage data in a two-column wide-card grid, followed by an explanatory text block and the approved homepage CTA component.
 
 ### FSVQA-02 — MEDIUM — Robot detail pages need final design alignment review
 
@@ -105,6 +113,6 @@ Functional, readable, and branded. They can ship if accepted, but visually they 
 
 ## Next safe work
 
-1. Convert FSVQA-01 into a design alignment PR for `/compilations/`, `/articles/`, `/news/` using approved homepage patterns.
+1. Continue FSVQA-01 for `/articles/` and `/news/` using approved homepage patterns. `/compilations/` has been implemented in this PR follow-up.
 2. Review/refine robot detail pages for homepage rhythm while preserving approved RobotPage media rules.
 3. Ask owner whether legal/404 pages can remain minimal or need light polish.

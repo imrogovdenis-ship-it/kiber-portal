@@ -9,7 +9,8 @@
     "baseBranch": "main",
     "baseCommit": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
     "productionBuild": "npm run build:production",
-    "homepageVisualBaseline": "Главная утверждена Александром; переносимые паттерны используются как baseline для остальных страниц."
+    "homepageVisualBaseline": "Главная утверждена Александром; переносимые паттерны используются как baseline для остальных страниц.",
+    "followUpCommitScope": "FSVQA-01 compilations index implemented from owner feedback on live staging review."
   },
   "scope": {
     "routesChecked": 15,
@@ -117,13 +118,12 @@
       "severity": "high",
       "category": "design-parity",
       "routes": [
-        "/compilations/",
         "/articles/",
         "/news/"
       ],
-      "summary": "Index pages for Подборки, Блог and Новости are still placeholder-style pages and do not yet reuse the rich approved homepage card/list patterns.",
+      "summary": "Блог and Новости remain placeholder-style index pages and do not yet reuse the rich approved homepage card/list patterns. Подборки was promoted to a filled two-column compilations index in this PR follow-up.",
       "expected": "Use approved homepage design language: section hero, meaningful cards/list blocks, blue CTA, consistent spacing, and public-ready page depth.",
-      "productionImpact": "blocks production visual approval; safe to keep PR as QA package without production changes"
+      "productionImpact": "blocks production visual approval until remaining index pages are accepted or fixed"
     },
     {
       "id": "FSVQA-02",
@@ -180,5 +180,16 @@
     ],
     "domAudit": "docs/review/kiber-91-full-site-visual-qa/dom-audit.json",
     "smoke": "scripts/full-site-visual-qa-smoke.mjs"
-  }
+  },
+  "resolvedFindings": [
+    {
+      "id": "FSVQA-01A",
+      "sourceFinding": "FSVQA-01",
+      "route": "/compilations/",
+      "status": "implemented",
+      "ownerFeedback": "Страница была пустая; нужно расположить сами подборки как блок на главной, карточки немного изменить, две колонки, текстовый блок с заголовком внизу, CTA внизу.",
+      "implementation": "Replaced placeholder page with filled compilations index: 4 compilation cards from approved homepage data, desktop two-column wide card grid, bottom text block with heading, approved homepage CTA component, live-site-inspired page rhythm.",
+      "safetyBoundary": "No production deploy, DNS, production secrets, analytics IDs/cookies, or live lead routing changes."
+    }
+  ]
 }
