@@ -72,7 +72,6 @@ const textSections = [
             data-analytics-placement="card"
             data-analytics-slug={`compilation-${index + 1}`}
           >
-            <span class="compilations-page__card-index">0{index + 1}</span>
             <span class="compilations-page__card-title">{card.title}</span>
             <span class="compilations-page__card-description">{card.description}</span>
             <span class="compilations-page__card-cta">{card.cta ?? 'Подробнее'}</span>
@@ -213,17 +212,6 @@ const textSections = [
   .compilations-page__card:focus-visible {
     outline: .1875rem solid var(--kp-orange);
     outline-offset: .25rem;
-  }
-
-  .compilations-page__card-index {
-    width: max-content;
-    border: .0625rem solid color-mix(in srgb, var(--kp-reference-white) 42%, transparent);
-    border-radius: 999rem;
-    padding: .45rem .7rem;
-    color: color-mix(in srgb, var(--kp-reference-white) 86%, transparent);
-    font-family: var(--kp-font-heading);
-    font-size: .85rem;
-    font-weight: 700;
   }
 
   .compilations-page__card-title {

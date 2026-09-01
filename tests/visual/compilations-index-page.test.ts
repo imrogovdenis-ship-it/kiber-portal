@@ -15,6 +15,8 @@ test('KIBER-91 compilations index is not a placeholder page', () => {
   assert.match(page, /id=\{card\.id\}/);
   assert.match(page, /class="compilations-page__grid"/);
   assert.match(page, /class="compilations-page__card"/);
+  assert.doesNotMatch(page, /compilations-page__card-index/);
+  assert.doesNotMatch(page, />0\{index \+ 1\}</);
   assert.match(page, /Подборка — это не список роботов, а готовый сценарий/);
   assert.match(page, /<HomeFinalCta \{\.\.\.homeFinalCta\} \/>/);
   assert.match(page, /compilations-page__hero[\s\S]*compilations-page__text[\s\S]*compilations-page__cards[\s\S]*compilations-page__cta/);
