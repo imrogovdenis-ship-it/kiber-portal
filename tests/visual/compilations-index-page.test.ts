@@ -42,7 +42,7 @@ test('KIBER-91 compilations index uses two-column card layout on desktop', () =>
   assert.match(page, /@media \(max-width: 56rem\)[\s\S]*min-height:\s*22\.5rem/);
   assert.match(page, /@media \(max-width: 39\.9375rem\)[\s\S]*min-height:\s*23\.75rem/);
   assert.match(page, /\.compilations-page__card \{[\s\S]*display:\s*flex[\s\S]*flex-direction:\s*column[\s\S]*align-items:\s*flex-start/);
-  assert.match(page, /\.compilations-page__card-cta \{[\s\S]*margin-top:\s*auto/);
+  assert.match(page, /\.compilations-page__card-cta \{[\s\S]*align-self:\s*flex-start[\s\S]*margin-top:\s*auto/);
 });
 
 test('KIBER-91 QA finding no longer lists compilations as unresolved placeholder', () => {
