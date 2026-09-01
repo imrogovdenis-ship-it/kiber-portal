@@ -44,7 +44,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 36 rendered internal links
 
@@ -86,7 +86,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -128,7 +128,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -170,7 +170,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -212,7 +212,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -254,7 +254,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -296,7 +296,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -338,7 +338,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -380,7 +380,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -422,7 +422,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -464,7 +464,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -506,7 +506,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -548,7 +548,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -590,7 +590,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -632,7 +632,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -674,7 +674,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -716,7 +716,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -758,7 +758,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -800,7 +800,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -842,7 +842,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 22 rendered internal links
 
@@ -884,7 +884,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -926,7 +926,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -968,7 +968,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -1010,7 +1010,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -1052,7 +1052,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 5 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
@@ -1094,7 +1094,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 26 rendered internal links
 
@@ -1136,7 +1136,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
 
@@ -1178,7 +1178,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
 
@@ -1220,7 +1220,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 26 rendered internal links
 
@@ -1262,7 +1262,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 18 rendered internal links
 
@@ -1304,7 +1304,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 1 AI related pages; 18 rendered internal links
 
@@ -1346,7 +1346,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
@@ -1388,7 +1388,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
@@ -1430,7 +1430,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
@@ -1472,7 +1472,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
@@ -1514,7 +1514,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 
@@ -1556,7 +1556,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `faqQuestions` — 0 FAQ questions
 - ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 

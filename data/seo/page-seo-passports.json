@@ -18,7 +18,13 @@
     "productionSideEffects": false,
     "aiSearchVisibilityLayer": "draft_for_owner_review",
     "llmsTxtEnabled": true,
-    "aiCrawlerRobotsDecisionRequired": true
+    "aiCrawlerRobotsDecisionRequired": false,
+    "aiCrawlerRobotsPolicy": "owner_approved_allow_ai_agents_to_read_and_index",
+    "aiCrawlerUserAgentsAllowed": [
+      "OAI-SearchBot",
+      "ChatGPT-User",
+      "GPTBot"
+    ]
   },
   "pages": [
     {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-93",
-  "status": "draft_for_owner_review",
+  "status": "owner_policy_approved_draft_for_content_review",
   "name": "AI Search Visibility / LLM Optimization conditions for KIBER PORTAL",
   "sources": [
     "owner AI search / LLM visibility brief 2026-09-01",
@@ -9,7 +9,7 @@
     "https://developers.google.com/search/docs/appearance/ai-features",
     "https://llmstxt.org"
   ],
-  "decision": "Classic SEO remains the base, but KIBER PORTAL pages also need AI-readable summaries, explicit entities, Q&A blocks, structured facts, llms.txt coverage, and contradiction checks before mass page generation.",
+  "decision": "Classic SEO remains the base. Owner approved AI agents/crawlers reading and indexing the site for search/answer systems; KIBER PORTAL pages also need AI-readable summaries, explicit entities, Q&A blocks, structured facts, llms.txt coverage, and contradiction checks before mass page generation.",
   "requiredChecks": [
     "aiSummary",
     "entityClarity",
@@ -26,7 +26,7 @@
     "reviewSourceForClaims",
     "updatedDateForArticlesNews"
   ],
-  "robotsPolicyDecisionRequired": true,
+  "robotsPolicyDecisionRequired": false,
   "recommendedFiles": [
     "docs/ai-search-visibility-checklist.md",
     "data/seo/ai-entity-map.json",
@@ -80,8 +80,8 @@
   "allowedExceptions": [
     "llms.txt is a proposal, not an official Google/Yandex ranking standard",
     "Markdown alternates are optional in first baseline if llms.txt links to canonical HTML",
-    "OAI-SearchBot/GPTBot/ChatGPT-User robots policy needs owner decision before changing robots.txt",
-    "Training crawl may be handled separately from AI search crawling"
+    "Training crawl may be handled separately from AI search crawling",
+    "AI crawler robots policy is owner-approved as allow for OAI-SearchBot, ChatGPT-User and GPTBot on 2026-09-01."
   ],
   "safetyBoundary": {
     "productionDeploy": false,
@@ -90,5 +90,23 @@
     "analyticsActivation": false,
     "liveLeadRouting": false,
     "massPageGeneration": false
+  },
+  "robotsPolicy": {
+    "status": "owner_approved",
+    "approvedAt": "2026-09-01",
+    "ownerDecision": "Разрешить AI-агентам читать и индексировать сайт для поиска/ответов.",
+    "allowedUserAgents": [
+      "*",
+      "OAI-SearchBot",
+      "ChatGPT-User",
+      "GPTBot"
+    ],
+    "disallowedUserAgents": [],
+    "sitemap": "https://www.kiber-portal.ru/sitemap-index.xml",
+    "notes": [
+      "OAI-SearchBot allowed for ChatGPT search-style discovery",
+      "ChatGPT-User allowed for user-initiated retrieval",
+      "GPTBot allowed by owner decision; revisit if training-crawl policy changes"
+    ]
   }
 }

@@ -94,7 +94,7 @@ test('KIBER-93 includes AI search / LLM visibility conditions before mass genera
   const aiContract = readJson(aiContractPath);
   assert.equal(aiContract.schemaVersion, 1);
   assert.equal(aiContract.issue, 'KIBER-93');
-  assert.equal(aiContract.status, 'draft_for_owner_review');
+  assert.equal(aiContract.status, 'owner_policy_approved_draft_for_content_review');
   assert.ok(aiContract.sources.includes('https://platform.openai.com/docs/bots'));
   assert.ok(aiContract.sources.includes('https://developers.google.com/search/docs/appearance/ai-features'));
   assert.ok(aiContract.sources.includes('https://llmstxt.org'));
@@ -104,13 +104,20 @@ test('KIBER-93 includes AI search / LLM visibility conditions before mass genera
   assert.ok(aiContract.requiredChecks.includes('structuredFacts'));
   assert.ok(aiContract.requiredChecks.includes('llmsTxtCoverage'));
   assert.ok(aiContract.requiredChecks.includes('markdownAlternateOrLlmsEntry'));
-  assert.equal(aiContract.robotsPolicyDecisionRequired, true);
+  assert.equal(aiContract.robotsPolicyDecisionRequired, false);
+  assert.equal(aiContract.robotsPolicy.status, 'owner_approved');
+  assert.deepEqual(aiContract.robotsPolicy.allowedUserAgents, ['*', 'OAI-SearchBot', 'ChatGPT-User', 'GPTBot']);
 
   const llmsTxt = readFileSync(llmsTxtPath, 'utf8');
   assert.match(llmsTxt, /^# КИБЕР ПОРТАЛ/m);
   assert.match(llmsTxt, /Блог Кибер Гоши/);
   assert.match(llmsTxt, /Подборки/);
   assert.match(llmsTxt, /Гуманоидные роботы/);
+
+  const robotsTxt = readFileSync(resolve(root, 'public/robots.txt'), 'utf8');
+  assert.match(robotsTxt, /User-agent: OAI-SearchBot\nAllow: \//);
+  assert.match(robotsTxt, /User-agent: ChatGPT-User\nAllow: \//);
+  assert.match(robotsTxt, /User-agent: GPTBot\nAllow: \//);
 });
 
 test('SEO passports expose AI visibility fields aligned to entity map', () => {

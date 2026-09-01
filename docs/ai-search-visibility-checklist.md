@@ -1,7 +1,7 @@
 # KIBER PORTAL — AI Search Visibility / LLM Optimization checklist
 
-Статус: **draft / на утверждение**  
-Задача: **KIBER-93**  
+Статус: **draft / AI crawler policy owner-approved**
+Задача: **KIBER-93**
 Назначение: расширить классический SEO-паспорт страницы отдельным слоем для AI-поиска и агентных систем: ChatGPT Search, Claude/Grok/Perplexity-style answers, Gemini и будущие site agents.
 
 ## Почему это отдельный слой
@@ -67,9 +67,7 @@ type AiVisibilityPassport = {
 
 ## Robots.txt decision — отдельно утвердить
 
-Не меняем robots.txt автоматически без owner approval.
-
-Вариант политики для обсуждения:
+Owner decision от 2026-09-01: разрешить AI-агентам читать и индексировать сайт для поиска/ответов. Принятая политика:
 
 ```txt
 User-agent: *
@@ -81,18 +79,17 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-# Если не хотим отдавать контент для обучения моделей:
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 Sitemap: https://www.kiber-portal.ru/sitemap-index.xml
 ```
 
-Смысл: можно разрешить AI search/user retrieval, но отдельно запретить training crawl. Это нужно утвердить до production.
+Смысл: AI search/user retrieval и GPTBot crawling разрешены по решению владельца. Если политика по training crawl изменится, robots.txt нужно будет пересмотреть отдельной задачей.
 
 ## Что ещё не считаем закрытым
 
-- Финальная AI crawler policy в `robots.txt` — **не утверждена**.
+- Финальная AI crawler policy в `robots.txt` — **утверждена владельцем как allow для OAI-SearchBot / ChatGPT-User / GPTBot**.
 - Markdown-версии всех ключевых страниц — **не реализованы**, пока есть `llms.txt` как baseline.
 - AI summaries в rendered page body — **пока не везде выведены как видимые блоки**, есть в паспортах; дальше нужно решать дизайн/контентный формат.
 - Противоречия фактов/цен — нужен отдельный ratchet после утверждения источников и тарифов.
@@ -100,6 +97,6 @@ Sitemap: https://www.kiber-portal.ru/sitemap-index.xml
 
 ## Sources
 
-[1] OpenAI crawlers and user agents — https://platform.openai.com/docs/bots  
-[2] Google Search AI features and your website — https://developers.google.com/search/docs/appearance/ai-features  
+[1] OpenAI crawlers and user agents — https://platform.openai.com/docs/bots
+[2] Google Search AI features and your website — https://developers.google.com/search/docs/appearance/ai-features
 [3] llms.txt proposal — https://llmstxt.org

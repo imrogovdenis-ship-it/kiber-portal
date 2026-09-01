@@ -13,7 +13,8 @@
     "purpose": "Help search systems and AI agents understand entities, facts, questions, and relationships without relying on hidden keyword fields.",
     "publicRender": false,
     "massPageGenerationBlockedUntil": "AI visibility contract is reviewed together with SEO component contract.",
-    "robotsTxtAiCrawlerDecisionRequired": true
+    "robotsTxtAiCrawlerDecisionRequired": false,
+    "robotsTxtAiCrawlerPolicy": "owner_approved_allow_ai_agents_to_read_and_index"
   },
   "entities": {
     "КИБЕР ПОРТАЛ": {
