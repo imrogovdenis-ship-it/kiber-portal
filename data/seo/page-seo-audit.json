@@ -304,8 +304,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -366,8 +366,7 @@
         "primaryKeywordInTitle: primary='аренда Agibot X2'",
         "primaryKeywordInH1: primary='аренда Agibot X2'",
         "primaryKeywordInFirstBlock: primary='аренда Agibot X2'",
-        "secondaryKeywords: missing: прокат Agibot X2, Agibot X2 на мероприятие, робот Agibot X2 для выставки, заказать Agibot X2",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Agibot X2, Agibot X2 на мероприятие, робот Agibot X2 для выставки, заказать Agibot X2"
       ],
       "rendered": {
         "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -491,8 +490,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -553,8 +552,7 @@
         "primaryKeywordInTitle: primary='аренда робота-официанта BellaBot'",
         "primaryKeywordInH1: primary='аренда робота-официанта BellaBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота-официанта BellaBot'",
-        "secondaryKeywords: missing: робота-официанта BellaBot на мероприятие, робот робота-официанта BellaBot для выставки, заказать робота-официанта BellaBot",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: робота-официанта BellaBot на мероприятие, робот робота-официанта BellaBot для выставки, заказать робота-официанта BellaBot"
       ],
       "rendered": {
         "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
@@ -678,8 +676,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -740,8 +738,7 @@
         "primaryKeywordInTitle: primary='аренда робота GlamBot'",
         "primaryKeywordInH1: primary='аренда робота GlamBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота GlamBot'",
-        "secondaryKeywords: missing: прокат робота GlamBot, робота GlamBot на мероприятие, робот робота GlamBot для выставки, заказать робота GlamBot",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота GlamBot, робота GlamBot на мероприятие, робот робота GlamBot для выставки, заказать робота GlamBot"
       ],
       "rendered": {
         "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
@@ -865,8 +862,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -927,8 +924,7 @@
         "primaryKeywordInTitle: primary='аренда Inchbot L1-W EDU'",
         "primaryKeywordInH1: primary='аренда Inchbot L1-W EDU'",
         "primaryKeywordInFirstBlock: primary='аренда Inchbot L1-W EDU'",
-        "secondaryKeywords: missing: прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки, заказать Inchbot L1-W EDU",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки, заказать Inchbot L1-W EDU"
       ],
       "rendered": {
         "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
@@ -1052,8 +1048,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -1114,8 +1110,7 @@
         "primaryKeywordInTitle: primary='аренда робота-официанта KettyBot'",
         "primaryKeywordInH1: primary='аренда робота-официанта KettyBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота-официанта KettyBot'",
-        "secondaryKeywords: missing: робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot"
       ],
       "rendered": {
         "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
@@ -1239,8 +1234,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -1301,8 +1296,7 @@
         "primaryKeywordInTitle: primary='аренда робота Клипмейкер'",
         "primaryKeywordInH1: primary='аренда робота Клипмейкер'",
         "primaryKeywordInFirstBlock: primary='аренда робота Клипмейкер'",
-        "secondaryKeywords: missing: прокат робота Клипмейкер, робота Клипмейкер на мероприятие, робот робота Клипмейкер для выставки, заказать робота Клипмейкер",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота Клипмейкер, робота Клипмейкер на мероприятие, робот робота Клипмейкер для выставки, заказать робота Клипмейкер"
       ],
       "rendered": {
         "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
@@ -1426,8 +1420,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -1488,8 +1482,7 @@
         "primaryKeywordInTitle: primary='аренда мини робо-кофейни'",
         "primaryKeywordInH1: primary='аренда мини робо-кофейни'",
         "primaryKeywordInFirstBlock: primary='аренда мини робо-кофейни'",
-        "secondaryKeywords: missing: прокат мини робо-кофейни, мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат мини робо-кофейни, мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни"
       ],
       "rendered": {
         "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
@@ -1613,8 +1606,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -1675,8 +1668,7 @@
         "primaryKeywordInTitle: primary='аренда Noetix Bumi'",
         "primaryKeywordInH1: primary='аренда Noetix Bumi'",
         "primaryKeywordInFirstBlock: primary='аренда Noetix Bumi'",
-        "secondaryKeywords: missing: прокат Noetix Bumi, Noetix Bumi на мероприятие, робот Noetix Bumi для выставки, заказать Noetix Bumi",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Noetix Bumi, Noetix Bumi на мероприятие, робот Noetix Bumi для выставки, заказать Noetix Bumi"
       ],
       "rendered": {
         "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
@@ -1800,8 +1792,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -1862,8 +1854,7 @@
         "primaryKeywordInTitle: primary='аренда Promobot V4'",
         "primaryKeywordInH1: primary='аренда Promobot V4'",
         "primaryKeywordInFirstBlock: primary='аренда Promobot V4'",
-        "secondaryKeywords: missing: прокат Promobot V4, Promobot V4 на мероприятие, робот Promobot V4 для выставки, заказать Promobot V4",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Promobot V4, Promobot V4 на мероприятие, робот Promobot V4 для выставки, заказать Promobot V4"
       ],
       "rendered": {
         "title": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
@@ -1987,8 +1978,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -2049,8 +2040,7 @@
         "primaryKeywordInTitle: primary='аренда робота-кофейни'",
         "primaryKeywordInH1: primary='аренда робота-кофейни'",
         "primaryKeywordInFirstBlock: primary='аренда робота-кофейни'",
-        "secondaryKeywords: missing: прокат робота-кофейни, робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота-кофейни, робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни"
       ],
       "rendered": {
         "title": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
@@ -2174,8 +2164,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -2236,8 +2226,7 @@
         "primaryKeywordInTitle: primary='аренда робота для игры в шашки'",
         "primaryKeywordInH1: primary='аренда робота для игры в шашки'",
         "primaryKeywordInFirstBlock: primary='аренда робота для игры в шашки'",
-        "secondaryKeywords: missing: прокат робота для игры в шашки, робота для игры в шашки на мероприятие, робот робота для игры в шашки для выставки, заказать робота для игры в шашки",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота для игры в шашки, робота для игры в шашки на мероприятие, робот робота для игры в шашки для выставки, заказать робота для игры в шашки"
       ],
       "rendered": {
         "title": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
@@ -2361,8 +2350,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -2423,8 +2412,7 @@
         "primaryKeywordInTitle: primary='аренда робота-бармена «Робобар»'",
         "primaryKeywordInH1: primary='аренда робота-бармена «Робобар»'",
         "primaryKeywordInFirstBlock: primary='аренда робота-бармена «Робобар»'",
-        "secondaryKeywords: missing: робота-бармена «Робобар» на мероприятие, робот робота-бармена «Робобар» для выставки, заказать робота-бармена «Робобар»",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: робота-бармена «Робобар» на мероприятие, робот робота-бармена «Робобар» для выставки, заказать робота-бармена «Робобар»"
       ],
       "rendered": {
         "title": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
@@ -2548,8 +2536,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -2610,8 +2598,7 @@
         "primaryKeywordInTitle: primary='аренда робота Арди'",
         "primaryKeywordInH1: primary='аренда робота Арди'",
         "primaryKeywordInFirstBlock: primary='аренда робота Арди'",
-        "secondaryKeywords: missing: прокат робота Арди, робота Арди на мероприятие, робот робота Арди для выставки, заказать робота Арди",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота Арди, робота Арди на мероприятие, робот робота Арди для выставки, заказать робота Арди"
       ],
       "rendered": {
         "title": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
@@ -2735,8 +2722,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -2797,8 +2784,7 @@
         "primaryKeywordInTitle: primary='аренда большого формата'",
         "primaryKeywordInH1: primary='аренда большого формата'",
         "primaryKeywordInFirstBlock: primary='аренда большого формата'",
-        "secondaryKeywords: missing: прокат большого формата, большого формата на мероприятие, робот большого формата для выставки, заказать большого формата",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат большого формата, большого формата на мероприятие, робот большого формата для выставки, заказать большого формата"
       ],
       "rendered": {
         "title": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
@@ -2922,8 +2908,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -2984,8 +2970,7 @@
         "primaryKeywordInTitle: primary='аренда робота София'",
         "primaryKeywordInH1: primary='аренда робота София'",
         "primaryKeywordInFirstBlock: primary='аренда робота София'",
-        "secondaryKeywords: missing: прокат робота София, робота София на мероприятие, робот робота София для выставки, заказать робота София",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота София, робота София на мероприятие, робот робота София для выставки, заказать робота София"
       ],
       "rendered": {
         "title": "робота София для мероприятий — КИБЕР ПОРТАЛ",
@@ -3109,8 +3094,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -3171,8 +3156,7 @@
         "primaryKeywordInTitle: primary='аренда модульного робота Tron'",
         "primaryKeywordInH1: primary='аренда модульного робота Tron'",
         "primaryKeywordInFirstBlock: primary='аренда модульного робота Tron'",
-        "secondaryKeywords: missing: прокат модульного робота Tron, модульного робота Tron на мероприятие, робот модульного робота Tron для выставки, заказать модульного робота Tron",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат модульного робота Tron, модульного робота Tron на мероприятие, робот модульного робота Tron для выставки, заказать модульного робота Tron"
       ],
       "rendered": {
         "title": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
@@ -3296,8 +3280,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -3358,8 +3342,7 @@
         "primaryKeywordInTitle: primary='аренда робота-шахматиста SenseRobot'",
         "primaryKeywordInH1: primary='аренда робота-шахматиста SenseRobot'",
         "primaryKeywordInFirstBlock: primary='аренда робота-шахматиста SenseRobot'",
-        "secondaryKeywords: missing: прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие, робот робота-шахматиста SenseRobot для выставки, заказать робота-шахматиста SenseRobot",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие, робот робота-шахматиста SenseRobot для выставки, заказать робота-шахматиста SenseRobot"
       ],
       "rendered": {
         "title": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
@@ -3483,8 +3466,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -3545,8 +3528,7 @@
         "primaryKeywordInTitle: primary='аренда Sketchbot'",
         "primaryKeywordInH1: primary='аренда Sketchbot'",
         "primaryKeywordInFirstBlock: primary='аренда Sketchbot'",
-        "secondaryKeywords: missing: прокат Sketchbot, Sketchbot на мероприятие, робот Sketchbot для выставки, заказать Sketchbot",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Sketchbot, Sketchbot на мероприятие, робот Sketchbot для выставки, заказать Sketchbot"
       ],
       "rendered": {
         "title": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
@@ -3670,8 +3652,8 @@
           "message": "22 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -3732,8 +3714,7 @@
         "primaryKeywordInTitle: primary='аренда Unitree G1'",
         "primaryKeywordInH1: primary='аренда Unitree G1'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree G1'",
-        "secondaryKeywords: missing: прокат Unitree G1, Unitree G1 на мероприятие, робот Unitree G1 для выставки, заказать Unitree G1",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Unitree G1, Unitree G1 на мероприятие, робот Unitree G1 для выставки, заказать Unitree G1"
       ],
       "rendered": {
         "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
@@ -3857,8 +3838,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -3919,8 +3900,7 @@
         "primaryKeywordInTitle: primary='аренда Unitree Go2'",
         "primaryKeywordInH1: primary='аренда Unitree Go2'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree Go2'",
-        "secondaryKeywords: missing: прокат Unitree Go2, Unitree Go2 на мероприятие, робот Unitree Go2 для выставки, заказать Unitree Go2",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Unitree Go2, Unitree Go2 на мероприятие, робот Unitree Go2 для выставки, заказать Unitree Go2"
       ],
       "rendered": {
         "title": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -4044,8 +4024,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -4106,8 +4086,7 @@
         "primaryKeywordInTitle: primary='аренда Unitree H2'",
         "primaryKeywordInH1: primary='аренда Unitree H2'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree H2'",
-        "secondaryKeywords: missing: прокат Unitree H2, Unitree H2 на мероприятие, робот Unitree H2 для выставки, заказать Unitree H2",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Unitree H2, Unitree H2 на мероприятие, робот Unitree H2 для выставки, заказать Unitree H2"
       ],
       "rendered": {
         "title": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -4231,8 +4210,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -4293,8 +4272,7 @@
         "primaryKeywordInTitle: primary='аренда Unitree R1'",
         "primaryKeywordInH1: primary='аренда Unitree R1'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree R1'",
-        "secondaryKeywords: missing: прокат Unitree R1, Unitree R1 на мероприятие, робот Unitree R1 для выставки, заказать Unitree R1",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Unitree R1, Unitree R1 на мероприятие, робот Unitree R1 для выставки, заказать Unitree R1"
       ],
       "rendered": {
         "title": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
@@ -4418,8 +4396,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -4480,8 +4458,7 @@
         "primaryKeywordInTitle: primary='аренда интерактивной витрины UV-BOX'",
         "primaryKeywordInH1: primary='аренда интерактивной витрины UV-BOX'",
         "primaryKeywordInFirstBlock: primary='аренда интерактивной витрины UV-BOX'",
-        "secondaryKeywords: missing: прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие, робот интерактивной витрины UV-BOX для выставки, заказать интерактивной витрины UV-BOX",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие, робот интерактивной витрины UV-BOX для выставки, заказать интерактивной витрины UV-BOX"
       ],
       "rendered": {
         "title": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
@@ -4605,8 +4582,8 @@
           "message": "20 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -4667,8 +4644,7 @@
         "primaryKeywordInTitle: primary='аренда Xiaomi Cyberdog 2'",
         "primaryKeywordInH1: primary='аренда Xiaomi Cyberdog 2'",
         "primaryKeywordInFirstBlock: primary='аренда Xiaomi Cyberdog 2'",
-        "secondaryKeywords: missing: прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки, заказать Xiaomi Cyberdog 2",
-        "cta: required CTA target missing"
+        "secondaryKeywords: missing: прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки, заказать Xiaomi Cyberdog 2"
       ],
       "rendered": {
         "title": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -4792,8 +4768,8 @@
           "message": "26 internal hrefs"
         },
         "cta": {
-          "status": "warning",
-          "message": "required CTA target missing"
+          "status": "pass",
+          "message": "conversion/contact path present"
         },
         "viewport": {
           "status": "pass",
@@ -4857,7 +4833,6 @@
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
         "secondaryKeywords: missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события",
         "breadcrumbs: visible breadcrumbs missing",
-        "cta: required CTA target missing",
         "faqQuestions: 0 FAQ questions"
       ],
       "rendered": {
@@ -5859,7 +5834,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "11313 visible chars; target 0"
+          "message": "11756 visible chars; target 0"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -5902,8 +5877,8 @@
           "message": "invalid scripts=0"
         },
         "requiredSchemaTypes": {
-          "status": "warning",
-          "message": "missing: WebPage; present: "
+          "status": "pass",
+          "message": "present: WebPage"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -5977,16 +5952,17 @@
         "primaryKeywordInTitle: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
-        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных"
       ],
       "rendered": {
         "title": "Политика обработки персональных данных — КИБЕР ПОРТАЛ",
         "description": "Политика обработки персональных данных КИБЕР ПОРТАЛ.",
         "h1": "Политика обработки персональных данных",
         "h2Count": 1,
-        "schemaTypes": [],
-        "visibleTextChars": 11313
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "visibleTextChars": 11756
       }
     },
     {
@@ -6044,7 +6020,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "5469 visible chars; target 0"
+          "message": "5911 visible chars; target 0"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -6087,8 +6063,8 @@
           "message": "invalid scripts=0"
         },
         "requiredSchemaTypes": {
-          "status": "warning",
-          "message": "missing: WebPage; present: "
+          "status": "pass",
+          "message": "present: WebPage"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -6160,16 +6136,17 @@
         "primaryKeywordInTitle: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
-        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных"
       ],
       "rendered": {
         "title": "Согласие на обработку персональных данных — КИБЕР ПОРТАЛ",
         "description": "Согласие на обработку персональных данных КИБЕР ПОРТАЛ.",
         "h1": "Согласие на обработку персональных данных",
         "h2Count": 1,
-        "schemaTypes": [],
-        "visibleTextChars": 5469
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "visibleTextChars": 5911
       }
     },
     {
@@ -6227,7 +6204,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "4869 visible chars; target 0"
+          "message": "5307 visible chars; target 0"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -6270,8 +6247,8 @@
           "message": "invalid scripts=0"
         },
         "requiredSchemaTypes": {
-          "status": "warning",
-          "message": "missing: WebPage; present: "
+          "status": "pass",
+          "message": "present: WebPage"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -6345,16 +6322,17 @@
         "primaryKeywordInTitle: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
-        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных"
       ],
       "rendered": {
         "title": "Политика использования файлов cookie — КИБЕР ПОРТАЛ",
         "description": "Политика использования файлов cookie КИБЕР ПОРТАЛ.",
         "h1": "Политика использования файлов cookie",
         "h2Count": 1,
-        "schemaTypes": [],
-        "visibleTextChars": 4869
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "visibleTextChars": 5307
       }
     },
     {
@@ -6412,7 +6390,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "5883 visible chars; target 0"
+          "message": "6295 visible chars; target 0"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -6455,8 +6433,8 @@
           "message": "invalid scripts=0"
         },
         "requiredSchemaTypes": {
-          "status": "warning",
-          "message": "missing: WebPage; present: "
+          "status": "pass",
+          "message": "present: WebPage"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -6528,16 +6506,17 @@
         "primaryKeywordInTitle: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
-        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных"
       ],
       "rendered": {
         "title": "Пользовательское соглашение — КИБЕР ПОРТАЛ",
         "description": "Пользовательское соглашение КИБЕР ПОРТАЛ.",
         "h1": "Пользовательское соглашение",
         "h2Count": 1,
-        "schemaTypes": [],
-        "visibleTextChars": 5883
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "visibleTextChars": 6295
       }
     },
     {
@@ -6595,7 +6574,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "1952 visible chars; target 0"
+          "message": "2375 visible chars; target 0"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -6638,8 +6617,8 @@
           "message": "invalid scripts=0"
         },
         "requiredSchemaTypes": {
-          "status": "warning",
-          "message": "missing: WebPage; present: BreadcrumbList"
+          "status": "pass",
+          "message": "present: BreadcrumbList, WebPage"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -6714,7 +6693,6 @@
         "primaryKeywordInH1: primary='заявка на аренду робота'",
         "primaryKeywordInFirstBlock: primary='заявка на аренду робота'",
         "secondaryKeywords: missing: форма заявки робот, подобрать робота на мероприятие",
-        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList",
         "cta: required CTA target missing"
       ],
       "rendered": {
@@ -6723,9 +6701,10 @@
         "h1": "Заявка на подбор робота",
         "h2Count": 3,
         "schemaTypes": [
-          "BreadcrumbList"
+          "BreadcrumbList",
+          "WebPage"
         ],
-        "visibleTextChars": 1952
+        "visibleTextChars": 2375
       }
     },
     {
@@ -6783,7 +6762,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "1443 visible chars; target 0"
+          "message": "1861 visible chars; target 0"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -6826,8 +6805,8 @@
           "message": "invalid scripts=0"
         },
         "requiredSchemaTypes": {
-          "status": "warning",
-          "message": "missing: WebPage; present: BreadcrumbList"
+          "status": "pass",
+          "message": "present: BreadcrumbList, WebPage"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -6902,7 +6881,6 @@
         "primaryKeywordInH1: primary='заявка на аренду робота'",
         "primaryKeywordInFirstBlock: primary='заявка на аренду робота'",
         "secondaryKeywords: missing: форма заявки робот, подобрать робота на мероприятие",
-        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList",
         "cta: required CTA target missing"
       ],
       "rendered": {
@@ -6911,9 +6889,10 @@
         "h1": "Спасибо, бриф принят",
         "h2Count": 4,
         "schemaTypes": [
-          "BreadcrumbList"
+          "BreadcrumbList",
+          "WebPage"
         ],
-        "visibleTextChars": 1443
+        "visibleTextChars": 1861
       }
     }
   ]

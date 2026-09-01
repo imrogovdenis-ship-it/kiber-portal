@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { webPageJsonLd } from '../../lib/seo';
 
 const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
 const robotLabel = robot
@@ -19,6 +20,7 @@ const robotLabel = robot
     { name: 'Главная', url: '/' },
     { name: 'Заявка принята', url: '/lead/thanks/' },
   ]}
+  jsonLd={webPageJsonLd({ title: 'Заявка принята', description: 'Подтверждение заявки на подбор робота для мероприятия.', url: '/lead/thanks/' })}
 >
   <main class="lead-thanks" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3b" data-vertical-step="confirmation">
     <section class="lead-thanks__hero-card container" aria-labelledby="lead-thanks-title">

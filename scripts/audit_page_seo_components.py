@@ -153,8 +153,9 @@ def audit_page(page, sitemap_locs, robots_txt, ai_contract=None, ai_entity_map=N
     has_breadcrumb_nav='aria-label="Хлебные крошки"' in html or "aria-label='Хлебные крошки'" in html
     check('breadcrumbs','pass' if (not wants_breadcrumbs or has_breadcrumb_nav) else 'warning','present or not required' if (not wants_breadcrumbs or has_breadcrumb_nav) else 'visible breadcrumbs missing')
     internal=[a.get('href','') for a in p.anchors if a.get('href','').startswith('/')]
+    normalized_internal=[href.split('#',1)[0].split('?',1)[0] for href in internal]
     check('internalLinks','pass' if internal or not page.get('internalLinksRequired') else 'warning',f'{len(internal)} internal hrefs')
-    cta_ok=('/contacts/' in internal or '/lead/request/' in internal or page['pageType']=='legal')
+    cta_ok=('/contacts/' in normalized_internal or '/lead/request/' in normalized_internal or page['pageType']=='legal')
     check('cta','pass' if cta_ok or not page.get('ctaRequired') else 'warning','conversion/contact path present' if cta_ok else 'required CTA target missing')
     check('viewport','pass' if meta_content(p,'viewport')=='width=device-width, initial-scale=1' else 'fail',meta_content(p,'viewport') or 'missing')
     check('robotsTxt','pass' if 'Disallow: /' not in robots_txt and 'Sitemap:' in robots_txt else 'fail','robots.txt allows crawl and declares sitemap')
@@ -202,6 +203,123 @@ def audit_page(page, sitemap_locs, robots_txt, ai_contract=None, ai_entity_map=N
     status='fail' if failures else ('warning' if warnings else 'pass')
     return {'slug':route,'pageType':page['pageType'],'status':status,'checks':checks,'missing':failures,'warnings':warnings,'rendered':{'title':title,'description':desc,'h1':h1s[0] if h1s else None,'h2Count':len(h2s),'schemaTypes':types,'visibleTextChars':useful}}
 
+def build_remediation_backlog(report):
+    routes = report['routes']
+    warning_routes = {}
+    for route in routes:
+        for key, value in route.get('checks', {}).items():
+            if value.get('status') == 'warning':
+                warning_routes.setdefault(key, []).append(route['slug'])
+    def routes_for(keys):
+        out=[]
+        for key in keys:
+            out.extend(warning_routes.get(key, []))
+        return sorted(set(out))
+    safety={'productionDeploy':False,'dnsChange':False,'secretsChanged':False,'analyticsActivation':False,'liveLeadRouting':False,'massPageGeneration':False}
+    tasks=[
+        {
+            'id':'seo-robot-template-keyword-intent-and-cta',
+            'title':'Strengthen robot detail template keyword intent and safe CTA coverage',
+            'status':'ready_for_next_issue',
+            'owner':'agent_can_prepare_pr_then_owner_reviews_copy_and_visuals',
+            'warningKeys':['primaryKeywordInTitle','primaryKeywordInH1','primaryKeywordInFirstBlock','secondaryKeywords','h1MatchesPassport','cta'],
+            'routes':routes_for(['primaryKeywordInTitle','primaryKeywordInH1','primaryKeywordInFirstBlock','secondaryKeywords','h1MatchesPassport','cta']),
+            'recommendedNextWork':['Align SEO passports with approved visible H1/title where visual copy is intentionally different.','Add visible short-answer/AI summary blocks only after design review.','Improve robot detail copy from source-of-truth without inventing prices or capabilities.','Keep price claims tied to approved tariff/source-of-truth data.'],
+            'safety':safety,
+        },
+        {
+            'id':'seo-index-pages-faq-breadcrumbs-schema',
+            'title':'Add FAQ/breadcrumb/schema coverage for category and index pages',
+            'status':'requires_design_review',
+            'owner':'agent_can_prepare_patterns_owner_approves_visible_blocks',
+            'warningKeys':['faqQuestions','breadcrumbs','requiredSchemaTypes'],
+            'routes':routes_for(['faqQuestions','breadcrumbs','requiredSchemaTypes']),
+            'recommendedNextWork':['Prepare approved visual pattern for visible breadcrumbs on category/contact/index pages.','Add FAQ questions to collection/category AI passports and decide which are visible.','Use WebPage/CollectionPage/BreadcrumbList schema according to page type without pretending article index is an article detail.'],
+            'safety':safety,
+        },
+        {
+            'id':'seo-markdown-alternates-for-llm',
+            'title':'Generate Markdown alternates for LLM-friendly retrieval',
+            'status':'requires_owner_content_review',
+            'owner':'agent_can_generate_review_only_first_owner_approves_public_policy',
+            'warningKeys':['markdownAlternateOrLlmsEntry','aiSummary','structuredFacts','questionAnswerBlocks'],
+            'routes':[route['slug'] for route in routes if route.get('pageType') in ['home','robot_card','collection','article','news','contacts']],
+            'recommendedNextWork':['Generate review-only Markdown from canonical source-of-truth, not from scraped rendered HTML.','Add rel=alternate type=text/markdown only after public policy review.','Keep /llms.txt as the current baseline until markdown alternates are approved.'],
+            'safety':safety,
+        },
+    ]
+    tasks=[task for task in tasks if task['routes']]
+    completed=[
+        {
+            'id':'seo-audit-cta-query-string-detection',
+            'title':'CTA auditor recognizes lead-request links with query strings',
+            'status':'completed_in_kiber93',
+            'warningKeys':['cta'],
+            'routes':['/robots/*'],
+            'evidence':'Robot pages link to /lead/request/?scenario=... and are now counted as CTA-covered.',
+            'safety':safety,
+        },
+        {
+            'id':'seo-legal-conversion-webpage-schema',
+            'title':'Legal and conversion pages expose WebPage JSON-LD',
+            'status':'completed_in_kiber93',
+            'warningKeys':['requiredSchemaTypes'],
+            'routes':['/privacy-policy/','/consent/','/cookie-policy/','/terms/','/lead/request/','/lead/thanks/'],
+            'evidence':'WebPage JSON-LD wired via LegalDocumentPage and lead utility pages without changing legal copy or lead routing.',
+            'safety':safety,
+        },
+    ]
+    backlog={
+        'schemaVersion':1,
+        'issue':'KIBER-93',
+        'status':'ready_for_owner_review',
+        'sourceAudit':'data/seo/page-seo-audit.json',
+        'summary':{
+            'routesChecked':report['summary']['routesChecked'],
+            'technicalFailures':report['summary']['failed'],
+            'warningCount':sum(len([v for v in route.get('checks', {}).values() if v.get('status') == 'warning']) for route in routes),
+            'routesWithWarnings':report['summary']['warnings'],
+            'closedPolicyWarnings':['aiCrawlerRobotsPolicy'],
+        },
+        'decision':'KIBER-93 infrastructure is complete when audits, passports, AI visibility, llms.txt, robots policy and remediation backlog are in CI. Remaining warnings become follow-up implementation/review tasks, not hidden debt.',
+        'completedRemediations':completed,
+        'remediationTasks':tasks,
+    }
+    return backlog
+
+def write_remediation_backlog(report):
+    backlog=build_remediation_backlog(report)
+    (ROOT/'data/seo/page-seo-remediation-backlog.json').write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    icon={'ready_for_next_issue':'✅','requires_owner_content_review':'⚠️','requires_design_review':'⚠️'}
+    lines=['# KIBER-93 — SEO/AI remediation backlog','','Status: **ready_for_owner_review**','',backlog['decision'],'',f"Routes checked: **{backlog['summary']['routesChecked']}**  ",f"Technical failures: **{backlog['summary']['technicalFailures']}**  ",f"Warning checks preserved: **{backlog['summary']['warningCount']}**  ",f"Routes with warnings: **{backlog['summary']['routesWithWarnings']}**  ",'','## Completed in KIBER-93','']
+    for task in backlog['completedRemediations']:
+        lines.append(f"### ✅ `{task['id']}` — {task['title']}")
+        lines.append(f"- Status: `{task['status']}`")
+        lines.append(f"- Warning keys: {', '.join('`'+k+'`' for k in task['warningKeys'])}")
+        lines.append(f"- Routes: {', '.join('`'+r+'`' for r in task['routes'])}")
+        lines.append(f"- Evidence: {task['evidence']}")
+        lines.append('')
+    lines.append('## Remaining remediation tasks')
+    lines.append('')
+    for task in backlog['remediationTasks']:
+        lines.append(f"### {icon[task['status']]} `{task['id']}` — {task['title']}")
+        lines.append(f"- Status: `{task['status']}`")
+        lines.append(f"- Owner/workflow: {task['owner']}")
+        lines.append(f"- Warning keys: {', '.join('`'+k+'`' for k in task['warningKeys'])}")
+        lines.append(f"- Routes: {len(task['routes'])}")
+        if task['routes']:
+            lines.append('- Route preview: '+', '.join(f"`{r}`" for r in task['routes'][:12])+(' …' if len(task['routes'])>12 else ''))
+        lines.append('- Next work:')
+        for item in task['recommendedNextWork']:
+            lines.append(f"  - {item}")
+        lines.append('')
+    lines.append('## Safety boundaries')
+    lines.append('')
+    lines.append('This backlog does not grant production deploy, DNS, secrets, analytics, live lead routing, PR merge or mass page generation approval.')
+    lines.append('')
+    (ROOT/'docs/page-seo-remediation-backlog.md').write_text('\n'.join(lines),encoding='utf-8')
+    return backlog
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--fail-on-warning', action='store_true'); args=ap.parse_args()
     passports=json.loads((ROOT/'data/seo/page-seo-passports.json').read_text())
@@ -214,7 +332,8 @@ def main():
     report={'schemaVersion':1,'issue':'KIBER-93','status':'failed' if summary['failed'] else ('warning' if summary['warnings'] else 'passed'),'summary':summary,'routes':routes}
     (ROOT/'data/seo').mkdir(parents=True, exist_ok=True); (ROOT/'docs').mkdir(parents=True, exist_ok=True)
     (ROOT/'data/seo/page-seo-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    lines=['# KIBER-93 — Page SEO components audit','','Status: **'+report['status']+'**','',f"Checked: {summary['routesChecked']} routes; pass: {summary['passed']}; warnings: {summary['warnings']}; failed: {summary['failed']}",'','## Per-route summary','']
+    backlog = write_remediation_backlog(report)
+    lines=['# KIBER-93 — Page SEO components audit','','Status: **'+report['status']+'**','',f"Checked: {summary['routesChecked']} routes; pass: {summary['passed']}; warnings: {summary['warnings']}; failed: {summary['failed']}",'',f"Remediation backlog: **{len(backlog['remediationTasks'])} tasks** in `data/seo/page-seo-remediation-backlog.json` and `docs/page-seo-remediation-backlog.md`",'','## Per-route summary','']
     icon={'pass':'✅','warning':'⚠️','fail':'❌'}
     for r in routes:
         lines.append(f"### {r['slug']} — {icon[r['status']]} {r['status']}")

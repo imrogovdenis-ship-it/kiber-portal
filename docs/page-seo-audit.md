@@ -4,6 +4,8 @@ Status: **warning**
 
 Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 
+Remediation backlog: **3 tasks** in `data/seo/page-seo-remediation-backlog.json` and `docs/page-seo-remediation-backlog.md`
+
 ## Per-route summary
 
 ### / — ⚠️ warning
@@ -75,7 +77,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 236 chars
@@ -117,7 +119,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 252 chars
@@ -159,7 +161,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 241 chars
@@ -201,7 +203,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 243 chars
@@ -243,7 +245,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 252 chars
@@ -285,7 +287,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 244 chars
@@ -327,7 +329,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 244 chars
@@ -369,7 +371,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 238 chars
@@ -411,7 +413,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 238 chars
@@ -453,7 +455,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 241 chars
@@ -495,7 +497,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 250 chars
@@ -537,7 +539,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 251 chars
@@ -579,7 +581,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 238 chars
@@ -621,7 +623,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 243 chars
@@ -663,7 +665,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 239 chars
@@ -705,7 +707,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 249 chars
@@ -747,7 +749,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 255 chars
@@ -789,7 +791,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 236 chars
@@ -831,7 +833,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 22 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 237 chars
@@ -873,7 +875,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 238 chars
@@ -915,7 +917,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 237 chars
@@ -957,7 +959,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 237 chars
@@ -999,7 +1001,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 255 chars
@@ -1041,7 +1043,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 244 chars
@@ -1083,7 +1085,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `requiredSchemaTypes` — present: CollectionPage
 - ⚠️ `breadcrumbs` — visible breadcrumbs missing
 - ✅ `internalLinks` — 26 internal hrefs
-- ⚠️ `cta` — required CTA target missing
+- ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 229 chars
@@ -1321,7 +1323,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `h1MatchesPassport` — rendered='Политика обработки персональных данных'; passport='Политика конфиденциальности'
 - ✅ `h2Present` — 1 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 11313 visible chars; target 0
+- ✅ `usefulText` — 11756 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1332,7 +1334,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
 - ✅ `cta` — conversion/contact path present
@@ -1363,7 +1365,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `h1MatchesPassport` — rendered='Согласие на обработку персональных данных'; passport='Согласие на обработку персональных данных'
 - ✅ `h2Present` — 1 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5469 visible chars; target 0
+- ✅ `usefulText` — 5911 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1374,7 +1376,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
 - ✅ `cta` — conversion/contact path present
@@ -1405,7 +1407,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `h1MatchesPassport` — rendered='Политика использования файлов cookie'; passport='Политика cookie'
 - ✅ `h2Present` — 1 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 4869 visible chars; target 0
+- ✅ `usefulText` — 5307 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1416,7 +1418,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
 - ✅ `cta` — conversion/contact path present
@@ -1447,7 +1449,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `h1MatchesPassport` — rendered='Пользовательское соглашение'; passport='Пользовательское соглашение'
 - ✅ `h2Present` — 1 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5883 visible chars; target 0
+- ✅ `usefulText` — 6295 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1458,7 +1460,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
 - ✅ `cta` — conversion/contact path present
@@ -1489,7 +1491,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `h1MatchesPassport` — rendered='Заявка на подбор робота'; passport='Заявка на аренду робота'
 - ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 1952 visible chars; target 0
+- ✅ `usefulText` — 2375 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
 - ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
@@ -1500,7 +1502,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, WebPage
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 18 internal hrefs
 - ⚠️ `cta` — required CTA target missing
@@ -1531,7 +1533,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `h1MatchesPassport` — rendered='Спасибо, бриф принят'; passport='Спасибо за заявку'
 - ✅ `h2Present` — 4 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 1443 visible chars; target 0
+- ✅ `usefulText` — 1861 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
 - ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
@@ -1542,7 +1544,7 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, WebPage
 - ✅ `breadcrumbs` — present or not required
 - ✅ `internalLinks` — 20 internal hrefs
 - ⚠️ `cta` — required CTA target missing

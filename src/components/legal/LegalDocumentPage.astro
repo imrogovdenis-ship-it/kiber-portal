@@ -1,6 +1,7 @@
 ---
 import legal from '../../../data/legal/legal-documents.json';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { webPageJsonLd } from '../../lib/seo';
 
 type LegalSlug = 'privacy-policy' | 'consent' | 'cookie-policy' | 'terms';
 
@@ -26,7 +27,12 @@ const relatedLinks = (Object.keys(labels) as LegalSlug[])
   .map((item) => ({ href: `/${item}/`, label: labels[item] }));
 ---
 
-<BaseLayout title={`${document.title} — КИБЕР ПОРТАЛ`} description={description} noindex={true}>
+<BaseLayout
+  title={`${document.title} — КИБЕР ПОРТАЛ`}
+  description={description}
+  noindex={true}
+  jsonLd={webPageJsonLd({ title: document.title, description, url: `/${slug}/` })}
+>
   <main class="legal-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-48" data-legal-source={document.sourceUrl}>
     <section class="legal-page__hero" aria-labelledby="page-title">
       <p>КИБЕР ПОРТАЛ</p>

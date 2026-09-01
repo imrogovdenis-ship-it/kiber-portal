@@ -11,6 +11,8 @@ const aiChecklistPath = resolve(root, 'docs/ai-search-visibility-checklist.md');
 const aiContractPath = resolve(root, 'data/seo/ai-search-visibility-contract.draft.json');
 const aiEntityMapPath = resolve(root, 'data/seo/ai-entity-map.json');
 const llmsTxtPath = resolve(root, 'public/llms.txt');
+const remediationBacklogPath = resolve(root, 'data/seo/page-seo-remediation-backlog.json');
+const remediationBacklogDocPath = resolve(root, 'docs/page-seo-remediation-backlog.md');
 const packagePath = resolve(root, 'package.json');
 
 function readJson(path: string) {
@@ -136,5 +138,53 @@ test('SEO passports expose AI visibility fields aligned to entity map', () => {
     assert.ok(Array.isArray(page.aiVisibility.userQuestionsAnswered), `${page.slug}: userQuestionsAnswered required`);
     assert.ok(Array.isArray(page.aiVisibility.factualClaims), `${page.slug}: factualClaims required`);
     assert.ok(Array.isArray(page.aiVisibility.relatedPages), `${page.slug}: relatedPages required`);
+  }
+});
+
+test('KIBER-93 audit closes safe CTA and WebPage schema false-positive warnings', () => {
+  const auditPath = resolve(root, 'data/seo/page-seo-audit.json');
+  assert.equal(existsSync(auditPath), true, 'data/seo/page-seo-audit.json must exist');
+  const audit = readJson(auditPath);
+
+  const robotRoutes = audit.routes.filter((route: { pageType: string }) => route.pageType === 'robot_card');
+  assert.ok(robotRoutes.length >= 20, 'robot route audit coverage required');
+  for (const route of robotRoutes) {
+    assert.equal(route.checks.cta.status, 'pass', `${route.slug}: robot pages have lead/request CTAs with query strings`);
+  }
+
+  for (const slug of ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/', '/lead/request/', '/lead/thanks/']) {
+    const route = audit.routes.find((item: { slug: string }) => item.slug === slug);
+    assert.ok(route, `${slug}: route audit missing`);
+    assert.equal(route.checks.requiredSchemaTypes.status, 'pass', `${slug}: WebPage schema required`);
+  }
+});
+
+test('KIBER-93 closes with a machine-readable remediation backlog for non-blocking warnings', () => {
+  assert.equal(existsSync(remediationBacklogPath), true, 'data/seo/page-seo-remediation-backlog.json must exist');
+  assert.equal(existsSync(remediationBacklogDocPath), true, 'docs/page-seo-remediation-backlog.md must exist');
+
+  const backlog = readJson(remediationBacklogPath);
+  assert.equal(backlog.schemaVersion, 1);
+  assert.equal(backlog.issue, 'KIBER-93');
+  assert.equal(backlog.status, 'ready_for_owner_review');
+  assert.equal(backlog.summary.technicalFailures, 0);
+  assert.ok(backlog.summary.warningCount > 0, 'baseline warnings must be preserved instead of hidden');
+  assert.ok(Array.isArray(backlog.remediationTasks) && backlog.remediationTasks.length >= 3);
+  assert.ok(Array.isArray(backlog.completedRemediations) && backlog.completedRemediations.length >= 2);
+
+  const taskIds = backlog.remediationTasks.map((task: { id: string }) => task.id);
+  const completedIds = backlog.completedRemediations.map((task: { id: string }) => task.id);
+  assert.ok(taskIds.includes('seo-robot-template-keyword-intent-and-cta'));
+  assert.ok(taskIds.includes('seo-index-pages-faq-breadcrumbs-schema'));
+  assert.ok(taskIds.includes('seo-markdown-alternates-for-llm'));
+  assert.ok(completedIds.includes('seo-audit-cta-query-string-detection'));
+  assert.ok(completedIds.includes('seo-legal-conversion-webpage-schema'));
+
+  for (const task of backlog.remediationTasks) {
+    assert.match(task.status, /^(ready_for_next_issue|requires_owner_content_review|requires_design_review)$/);
+    assert.ok(Array.isArray(task.warningKeys) && task.warningKeys.length > 0, `${task.id}: warning keys required`);
+    assert.ok(Array.isArray(task.routes) && task.routes.length > 0, `${task.id}: routes required`);
+    assert.equal(task.safety.productionDeploy, false, `${task.id}: must not imply production deploy`);
+    assert.equal(task.safety.liveLeadRouting, false, `${task.id}: must not imply live lead routing`);
   }
 });
