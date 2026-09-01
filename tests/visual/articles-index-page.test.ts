@@ -41,7 +41,7 @@ test('KIBER-91 articles index has intro block, article feed and bottom CTA in or
   const introCss = cssBlock('.articles-page__intro-copy');
   assert.doesNotMatch(introCss, /background:\s*var\(--kp-white\)/);
   assert.doesNotMatch(introCss, /box-shadow:/);
-  assert.match(cssBlock('.articles-page__hero h1'), /color:\s*var\(--kp-reference-blue\)/);
+  assert.match(cssBlock('.articles-page__hero h1'), /color:\s*var\(--kp-reference-ink\)/);
   assert.match(cssBlock('.articles-page__hero h1'), /font-size:\s*clamp\(3\.1rem, 7vw, var\(--kp-reference-display-xl\)\)/);
   assert.match(page, /\.articles-page__hero,[\s\S]*\.articles-page__cta \{[\s\S]*?width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\), var\(--kp-reference-container\)\)/);
   assert.match(page, /<section class="articles-page__feed container" id="article-feed"/);
