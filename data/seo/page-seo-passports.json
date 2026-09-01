@@ -1,0 +1,2505 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-93",
+  "status": "draft_for_owner_review",
+  "site": "https://www.kiber-portal.ru",
+  "generatedFrom": [
+    "data/seo/launch-routes.json",
+    "src/content/robots.generated.json",
+    "owner SEO component brief 2026-09-01"
+  ],
+  "policy": {
+    "massPageGenerationBlockedUntil": "SEO component contract approved and audit baseline reviewed",
+    "metaKeywordsAreNotSourceOfTruth": true,
+    "productionSideEffects": false
+  },
+  "pages": [
+    {
+      "slug": "/",
+      "pageType": "home",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/",
+      "primaryKeyword": "аренда роботов",
+      "secondaryKeywords": [
+        "прокат роботов",
+        "роботы на мероприятие",
+        "роботы для выставки",
+        "заказать робота на мероприятие"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "home",
+      "priority": "high",
+      "title": "Аренда роботов на мероприятия | КИБЕР ПОРТАЛ",
+      "description": "Аренда и прокат роботов для мероприятий, выставок, презентаций и шоу. Подберём модель, сценарий и сопровождение под вашу площадку.",
+      "h1": "Аренда роботов на мероприятия",
+      "h2Required": [
+        "Каталог роботов",
+        "Подборки",
+        "Блог",
+        "Частые вопросы"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Аренда роботов на мероприятия | КИБЕР ПОРТАЛ",
+      "ogDescription": "Аренда и прокат роботов для мероприятий, выставок, презентаций и шоу. Подберём модель, сценарий и сопровождение под вашу площадку.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Organization",
+        "WebSite"
+      ],
+      "breadcrumbsRequired": [],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "card",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-agibot-x2/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-agibot-x2/",
+      "primaryKeyword": "аренда Agibot X2",
+      "secondaryKeywords": [
+        "прокат Agibot X2",
+        "Agibot X2 на мероприятие",
+        "робот Agibot X2 для выставки",
+        "заказать Agibot X2"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-гуманоида Agibot X2 с оператором и доставкой по Москве и России. Танцы, интерактив, автономная навигация. Расчёт стоимости за 1 день.",
+      "h1": "Аренда Agibot X2",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-гуманоида Agibot X2 с оператором и доставкой по Москве и России. Танцы, интерактив, автономная навигация. Расчёт стоимости за 1 день.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Agibot X2",
+          "href": "/robots/arenda-agibot-x2/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-bellabot/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-bellabot/",
+      "primaryKeyword": "аренда робота-официанта BellaBot",
+      "secondaryKeywords": [
+        "прокат робота-официанта BellaBot",
+        "робота-официанта BellaBot на мероприятие",
+        "робот робота-официанта BellaBot для выставки",
+        "заказать робота-официанта BellaBot"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-официанта BellaBot с доставкой и настройкой в Москве и по России. Развозит блюда и напитки в паре с персоналом. Рассчитаем стоимость за 1 час.",
+      "h1": "Аренда робота-официанта BellaBot",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-официанта BellaBot с доставкой и настройкой в Москве и по России. Развозит блюда и напитки в паре с персоналом. Рассчитаем стоимость за 1 час.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота-официанта BellaBot",
+          "href": "/robots/arenda-bellabot/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-glambot/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-glambot/",
+      "primaryKeyword": "аренда робота GlamBot",
+      "secondaryKeywords": [
+        "прокат робота GlamBot",
+        "робота GlamBot на мероприятие",
+        "робот робота GlamBot для выставки",
+        "заказать робота GlamBot"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
+      "h1": "Аренда робота GlamBot",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота GlamBot",
+          "href": "/robots/arenda-glambot/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-inchbot-l1-w-edu/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-inchbot-l1-w-edu/",
+      "primaryKeyword": "аренда Inchbot L1-W EDU",
+      "secondaryKeywords": [
+        "прокат Inchbot L1-W EDU",
+        "Inchbot L1-W EDU на мероприятие",
+        "робот Inchbot L1-W EDU для выставки",
+        "заказать Inchbot L1-W EDU"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат образовательного робота-квадропеда Inchbot L1-W EDU: занятия по робототехнике, демо на выставках, доставка по Москве и регионам. Оставьте заявку.",
+      "h1": "Аренда Inchbot L1-W EDU",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат образовательного робота-квадропеда Inchbot L1-W EDU: занятия по робототехнике, демо на выставках, доставка по Москве и регионам. Оставьте заявку.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Inchbot L1-W EDU",
+          "href": "/robots/arenda-inchbot-l1-w-edu/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-kettybot/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-kettybot/",
+      "primaryKeyword": "аренда робота-официанта KettyBot",
+      "secondaryKeywords": [
+        "прокат робота-официанта KettyBot",
+        "робота-официанта KettyBot на мероприятие",
+        "робот робота-официанта KettyBot для выставки",
+        "заказать робота-официанта KettyBot"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-официанта KettyBot для ресторанов, кафе и отелей: доставка блюд, встреча гостей, рекламный экран. Расчёт стоимости за один день.",
+      "h1": "Аренда робота-официанта KettyBot",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-официанта KettyBot для ресторанов, кафе и отелей: доставка блюд, встреча гостей, рекламный экран. Расчёт стоимости за один день.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота-официанта KettyBot",
+          "href": "/robots/arenda-kettybot/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-klipmeiker/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-klipmeiker/",
+      "primaryKeyword": "аренда робота Клипмейкер",
+      "secondaryKeywords": [
+        "прокат робота Клипмейкер",
+        "робота Клипмейкер на мероприятие",
+        "робот робота Клипмейкер для выставки",
+        "заказать робота Клипмейкер"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Клипмейкер — роборука с камерой, которая сама снимает динамичное моушн-видео гостей. Прокат для мероприятий и контента в соцсети по всей России.",
+      "h1": "Аренда робота Клипмейкер",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Клипмейкер — роборука с камерой, которая сама снимает динамичное моушн-видео гостей. Прокат для мероприятий и контента в соцсети по всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота Клипмейкер",
+          "href": "/robots/arenda-klipmeiker/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-mini-robo-kofeyni/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-mini-robo-kofeyni/",
+      "primaryKeyword": "аренда мини робо-кофейни",
+      "secondaryKeywords": [
+        "прокат мини робо-кофейни",
+        "мини робо-кофейни на мероприятие",
+        "робот мини робо-кофейни для выставки",
+        "заказать мини робо-кофейни"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
+      "h1": "Аренда мини робо-кофейни",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда мини робо-кофейни",
+          "href": "/robots/arenda-mini-robo-kofeyni/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-noetix-bumi/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-noetix-bumi/",
+      "primaryKeyword": "аренда Noetix Bumi",
+      "secondaryKeywords": [
+        "прокат Noetix Bumi",
+        "Noetix Bumi на мероприятие",
+        "робот Noetix Bumi для выставки",
+        "заказать Noetix Bumi"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат нового робота-гуманоида Noetix Bumi для мероприятий в Москве и по всей России. Доставка, настройка, оператор. Рассчитаем стоимость за 1 час.",
+      "h1": "Аренда Noetix Bumi",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат нового робота-гуманоида Noetix Bumi для мероприятий в Москве и по всей России. Доставка, настройка, оператор. Рассчитаем стоимость за 1 час.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Noetix Bumi",
+          "href": "/robots/arenda-noetix-bumi/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-promobot-v4/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-promobot-v4/",
+      "primaryKeyword": "аренда Promobot V4",
+      "secondaryKeywords": [
+        "прокат Promobot V4",
+        "Promobot V4 на мероприятие",
+        "робот Promobot V4 для выставки",
+        "заказать Promobot V4"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Promobot V4 — автономный робот-промоутер с распознаванием лиц и речью на 7 языках. Прокат для выставок и корпоративов по Москве и России.",
+      "h1": "Аренда Promobot V4",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Promobot V4 — автономный робот-промоутер с распознаванием лиц и речью на 7 языках. Прокат для выставок и корпоративов по Москве и России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Promobot V4",
+          "href": "/robots/arenda-promobot-v4/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-robo-kofeyni/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-robo-kofeyni/",
+      "primaryKeyword": "аренда робота-кофейни",
+      "secondaryKeywords": [
+        "прокат робота-кофейни",
+        "робота-кофейни на мероприятие",
+        "робот робота-кофейни для выставки",
+        "заказать робота-кофейни"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
+      "h1": "Аренда робота-кофейни",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота-кофейни",
+          "href": "/robots/arenda-robo-kofeyni/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-roboshashki/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-roboshashki/",
+      "primaryKeyword": "аренда робота для игры в шашки",
+      "secondaryKeywords": [
+        "прокат робота для игры в шашки",
+        "робота для игры в шашки на мероприятие",
+        "робот робота для игры в шашки для выставки",
+        "заказать робота для игры в шашки"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робошашки распознают доску камерой и сами делают ход роборукой. Прокат простого и понятного всем гостям аттракциона по всей России.",
+      "h1": "Аренда робота для игры в шашки",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робошашки распознают доску камерой и сами делают ход роборукой. Прокат простого и понятного всем гостям аттракциона по всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота для игры в шашки",
+          "href": "/robots/arenda-roboshashki/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-robot-barmen/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-robot-barmen/",
+      "primaryKeyword": "аренда робота-бармена «Робобар»",
+      "secondaryKeywords": [
+        "прокат робота-бармена «Робобар»",
+        "робота-бармена «Робобар» на мероприятие",
+        "робот робота-бармена «Робобар» для выставки",
+        "заказать робота-бармена «Робобар»"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
+      "h1": "Аренда робота-бармена «Робобар»",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота-бармена «Робобар»",
+          "href": "/robots/arenda-robot-barmen/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-robota-ardi/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-ardi/",
+      "primaryKeyword": "аренда робота Арди",
+      "secondaryKeywords": [
+        "прокат робота Арди",
+        "робота Арди на мероприятие",
+        "робот робота Арди для выставки",
+        "заказать робота Арди"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робот Арди — реалистичный андроид Promobot с 600+ микровыражениями лица и ИИ-диалогом. Эксклюзивный прокат для премиальных мероприятий по России.",
+      "h1": "Аренда робота Арди",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робот Арди — реалистичный андроид Promobot с 600+ микровыражениями лица и ИИ-диалогом. Эксклюзивный прокат для премиальных мероприятий по России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота Арди",
+          "href": "/robots/arenda-robota-ardi/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-robota-hudozhnika-a4/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/",
+      "primaryKeyword": "аренда большого формата",
+      "secondaryKeywords": [
+        "прокат большого формата",
+        "большого формата на мероприятие",
+        "робот большого формата для выставки",
+        "заказать большого формата"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
+      "h1": "Аренда большого формата",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда большого формата",
+          "href": "/robots/arenda-robota-hudozhnika-a4/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-robota-sofiya/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-sofiya/",
+      "primaryKeyword": "аренда робота София",
+      "secondaryKeywords": [
+        "прокат робота София",
+        "робота София на мероприятие",
+        "робот робота София для выставки",
+        "заказать робота София"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота София для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "София Hanson Robotics — самый узнаваемый гуманоид в мире. Прокат робота-андроида на конференцию, форум или премиальное мероприятие.",
+      "h1": "Аренда робота София",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота София для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "София Hanson Robotics — самый узнаваемый гуманоид в мире. Прокат робота-андроида на конференцию, форум или премиальное мероприятие.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота София",
+          "href": "/robots/arenda-robota-sofiya/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-robota-tron/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-tron/",
+      "primaryKeyword": "аренда модульного робота Tron",
+      "secondaryKeywords": [
+        "прокат модульного робота Tron",
+        "модульного робота Tron на мероприятие",
+        "робот модульного робота Tron для выставки",
+        "заказать модульного робота Tron"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робот Tron меняет стопы между шагающим, опорным и колёсным режимом. Прокат для tech-выставок и научных фестивалей по всей России.",
+      "h1": "Аренда модульного робота Tron",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робот Tron меняет стопы между шагающим, опорным и колёсным режимом. Прокат для tech-выставок и научных фестивалей по всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда модульного робота Tron",
+          "href": "/robots/arenda-robota-tron/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-senserobot/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-senserobot/",
+      "primaryKeyword": "аренда робота-шахматиста SenseRobot",
+      "secondaryKeywords": [
+        "прокат робота-шахматиста SenseRobot",
+        "робота-шахматиста SenseRobot на мероприятие",
+        "робот робота-шахматиста SenseRobot для выставки",
+        "заказать робота-шахматиста SenseRobot"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робот-шахматист SenseRobot с ИИ до уровня гроссмейстера сам делает ходы механической рукой. Прокат для выставок и корпоративов по всей России.",
+      "h1": "Аренда робота-шахматиста SenseRobot",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робот-шахматист SenseRobot с ИИ до уровня гроссмейстера сам делает ходы механической рукой. Прокат для выставок и корпоративов по всей России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда робота-шахматиста SenseRobot",
+          "href": "/robots/arenda-senserobot/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-sketchbot/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-sketchbot/",
+      "primaryKeyword": "аренда Sketchbot",
+      "secondaryKeywords": [
+        "прокат Sketchbot",
+        "Sketchbot на мероприятие",
+        "робот Sketchbot для выставки",
+        "заказать Sketchbot"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-художника Sketchbot: ИИ-портреты гостей за минуту, брендирование логотипом, доставка и оператор по Москве и регионам. Расчёт за час.",
+      "h1": "Аренда Sketchbot",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-художника Sketchbot: ИИ-портреты гостей за минуту, брендирование логотипом, доставка и оператор по Москве и регионам. Расчёт за час.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Sketchbot",
+          "href": "/robots/arenda-sketchbot/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-unitree-g1/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-unitree-g1/",
+      "primaryKeyword": "аренда Unitree G1",
+      "secondaryKeywords": [
+        "прокат Unitree G1",
+        "Unitree G1 на мероприятие",
+        "робот Unitree G1 для выставки",
+        "заказать Unitree G1"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Гуманоид Unitree G1 на прокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+      "h1": "Аренда Unitree G1",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Гуманоид Unitree G1 на прокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Unitree G1",
+          "href": "/robots/arenda-unitree-g1/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-unitree-go2/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-unitree-go2/",
+      "primaryKeyword": "аренда Unitree Go2",
+      "secondaryKeywords": [
+        "прокат Unitree Go2",
+        "Unitree Go2 на мероприятие",
+        "робот Unitree Go2 для выставки",
+        "заказать Unitree Go2"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Робот-собака Unitree Go2 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+      "h1": "Аренда Unitree Go2",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Робот-собака Unitree Go2 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Unitree Go2",
+          "href": "/robots/arenda-unitree-go2/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-unitree-h2/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-unitree-h2/",
+      "primaryKeyword": "аренда Unitree H2",
+      "secondaryKeywords": [
+        "прокат Unitree H2",
+        "Unitree H2 на мероприятие",
+        "робот Unitree H2 для выставки",
+        "заказать Unitree H2"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-гуманоида Unitree H2 с оператором и доставкой по Москве и регионам. Новейшая модель Unitree с мимикой и ИИ. Рассчитаем стоимость за 1 час.",
+      "h1": "Аренда Unitree H2",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-гуманоида Unitree H2 с оператором и доставкой по Москве и регионам. Новейшая модель Unitree с мимикой и ИИ. Рассчитаем стоимость за 1 час.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Unitree H2",
+          "href": "/robots/arenda-unitree-h2/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-unitree-r1/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-unitree-r1/",
+      "primaryKeyword": "аренда Unitree R1",
+      "secondaryKeywords": [
+        "прокат Unitree R1",
+        "Unitree R1 на мероприятие",
+        "робот Unitree R1 для выставки",
+        "заказать Unitree R1"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Прокат робота-гуманоида Unitree R1 с оператором: акробатика, доставка, настройка. Компактный андроид для выставок в Москве и регионах. Рассчитаем стоимость.",
+      "h1": "Аренда Unitree R1",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Прокат робота-гуманоида Unitree R1 с оператором: акробатика, доставка, настройка. Компактный андроид для выставок в Москве и регионах. Рассчитаем стоимость.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Unitree R1",
+          "href": "/robots/arenda-unitree-r1/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-uv-box/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-uv-box/",
+      "primaryKeyword": "аренда интерактивной витрины UV-BOX",
+      "secondaryKeywords": [
+        "прокат интерактивной витрины UV-BOX",
+        "интерактивной витрины UV-BOX на мероприятие",
+        "робот интерактивной витрины UV-BOX для выставки",
+        "заказать интерактивной витрины UV-BOX"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "UV-BOX — сенсорная витрина, где 3D-товар парит прямо в воздухе. Прокат интерактивной витрины на выставку, стенд или открытие бутика.",
+      "h1": "Аренда интерактивной витрины UV-BOX",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "UV-BOX — сенсорная витрина, где 3D-товар парит прямо в воздухе. Прокат интерактивной витрины на выставку, стенд или открытие бутика.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда интерактивной витрины UV-BOX",
+          "href": "/robots/arenda-uv-box/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/robots/arenda-xiaomi-cyberdog-2/",
+      "pageType": "robot_card",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/",
+      "primaryKeyword": "аренда Xiaomi Cyberdog 2",
+      "secondaryKeywords": [
+        "прокат Xiaomi Cyberdog 2",
+        "Xiaomi Cyberdog 2 на мероприятие",
+        "робот Xiaomi Cyberdog 2 для выставки",
+        "заказать Xiaomi Cyberdog 2"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high",
+      "title": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
+      "description": "Аренда робота-собаки Xiaomi Cyberdog 2 с оператором: голосовые команды, сальто, фотозона для гостей. Доставка по Москве и другим городам России.",
+      "h1": "Аренда Xiaomi Cyberdog 2",
+      "h2Required": [
+        "Формат",
+        "Сценарии",
+        "Факты и ограничения",
+        "Стоимость",
+        "Что уточнит менеджер"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
+      "ogDescription": "Аренда робота-собаки Xiaomi Cyberdog 2 с оператором: голосовые команды, сальто, фотозона для гостей. Доставка по Москве и другим городам России.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Аренда Xiaomi Cyberdog 2",
+          "href": "/robots/arenda-xiaomi-cyberdog-2/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        },
+        {
+          "role": "gallery",
+          "meaningful": true,
+          "requiresActualDescription": true,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/roboty-gumanoidy/",
+      "pageType": "collection",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy/",
+      "primaryKeyword": "аренда роботов для мероприятий",
+      "secondaryKeywords": [
+        "подборка роботов",
+        "роботы для выставки",
+        "роботы для презентации",
+        "роботы для события"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "category",
+      "priority": "high",
+      "title": "Аренда гуманоидных роботов | КИБЕР ПОРТАЛ",
+      "description": "Гуманоидные роботы для сцены, стенда, welcome-зоны и презентаций. Подберите робота для аренды на мероприятие с сопровождением.",
+      "h1": "Гуманоидные роботы для мероприятий",
+      "h2Required": [
+        "Гид по выбору",
+        "Сценарии",
+        "Подходящие роботы"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Аренда гуманоидных роботов | КИБЕР ПОРТАЛ",
+      "ogDescription": "Гуманоидные роботы для сцены, стенда, welcome-зоны и презентаций. Подберите робота для аренды на мероприятие с сопровождением.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "CollectionPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Гуманоидные роботы для мероприятий",
+          "href": "/roboty-gumanoidy/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "card",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/roboty-sobaki/",
+      "pageType": "collection",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/roboty-sobaki/",
+      "primaryKeyword": "аренда роботов для мероприятий",
+      "secondaryKeywords": [
+        "подборка роботов",
+        "роботы для выставки",
+        "роботы для презентации",
+        "роботы для события"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "category",
+      "priority": "high",
+      "title": "Аренда роботов-собак | КИБЕР ПОРТАЛ",
+      "description": "Роботы-собаки для выставок, промо, фотоконтента и демонстраций технологий. Подбор модели и сценария под событие.",
+      "h1": "Роботы-собаки для мероприятий",
+      "h2Required": [
+        "Гид по выбору",
+        "Сценарии",
+        "Подходящие роботы"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Аренда роботов-собак | КИБЕР ПОРТАЛ",
+      "ogDescription": "Роботы-собаки для выставок, промо, фотоконтента и демонстраций технологий. Подбор модели и сценария под событие.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "CollectionPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Роботы-собаки для мероприятий",
+          "href": "/roboty-sobaki/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "card",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/compilations/",
+      "pageType": "collection",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/compilations/",
+      "primaryKeyword": "аренда роботов для мероприятий",
+      "secondaryKeywords": [
+        "подборка роботов",
+        "роботы для выставки",
+        "роботы для презентации",
+        "роботы для события"
+      ],
+      "searchIntent": "commercial",
+      "pageCluster": "compilations-index",
+      "priority": "medium",
+      "title": "Подборки роботов для аренды | КИБЕР ПОРТАЛ",
+      "description": "Подборки роботов по сценариям мероприятий: выставки, свадьбы, презентации, промо-акции и корпоративы.",
+      "h1": "Подборки роботов для аренды",
+      "h2Required": [
+        "Гид по выбору",
+        "Сценарии",
+        "Подходящие роботы"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Подборки роботов для аренды | КИБЕР ПОРТАЛ",
+      "ogDescription": "Подборки роботов по сценариям мероприятий: выставки, свадьбы, презентации, промо-акции и корпоративы.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "CollectionPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Подборки роботов для аренды",
+          "href": "/compilations/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "card",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/articles/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/",
+      "primaryKeyword": "статьи о роботах для мероприятий",
+      "secondaryKeywords": [
+        "как выбрать робота для мероприятия",
+        "роботы на выставку",
+        "идеи с роботами для события"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "articles-index",
+      "priority": "medium",
+      "title": "Блог Кибер Гоши | КИБЕР ПОРТАЛ",
+      "description": "Блог Кибер Гоши: практические статьи о выборе роботов для мероприятий, выставок, презентаций и частных событий.",
+      "h1": "Блог Кибер Гоши",
+      "h2Required": [
+        "Статьи",
+        "О разделе"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Блог Кибер Гоши | КИБЕР ПОРТАЛ",
+      "ogDescription": "Блог Кибер Гоши: практические статьи о выборе роботов для мероприятий, выставок, презентаций и частных событий.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "card",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/news/",
+      "pageType": "news",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/news/",
+      "primaryKeyword": "новости робототехники",
+      "secondaryKeywords": [
+        "роботы для мероприятий новости",
+        "технологии робототехники",
+        "новости КИБЕР ПОРТАЛА"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "news-index",
+      "priority": "medium",
+      "title": "Новости робототехники | КИБЕР ПОРТАЛ",
+      "description": "Новости КИБЕР ПОРТАЛА и робототехники: события, технологии, роботы для мероприятий и идеи для бизнеса.",
+      "h1": "Новости КИБЕР ПОРТАЛА",
+      "h2Required": [
+        "Новости"
+      ],
+      "minUsefulTextChars": 500,
+      "ogTitle": "Новости робототехники | КИБЕР ПОРТАЛ",
+      "ogDescription": "Новости КИБЕР ПОРТАЛА и робототехники: события, технологии, роботы для мероприятий и идеи для бизнеса.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "NewsArticle"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Новости КИБЕР ПОРТАЛА",
+          "href": "/news/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "card",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/contacts/",
+      "pageType": "contacts",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/contacts/",
+      "primaryKeyword": "контакты КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "заказать робота",
+        "заявка на аренду робота",
+        "связаться с КИБЕР ПОРТАЛ"
+      ],
+      "searchIntent": "local",
+      "pageCluster": "contacts",
+      "priority": "medium",
+      "title": "Контакты — КИБЕР ПОРТАЛ",
+      "description": "Контакты КИБЕР ПОРТАЛА для подбора робота на мероприятие: телефон, email, мессенджеры, реквизиты и заявка.",
+      "h1": "Контакты и заявка на робота",
+      "h2Required": [
+        "Варианты связи",
+        "Реквизиты и адрес",
+        "Следующий шаг"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Контакты — КИБЕР ПОРТАЛ",
+      "ogDescription": "Контакты КИБЕР ПОРТАЛА для подбора робота на мероприятие: телефон, email, мессенджеры, реквизиты и заявка.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "ContactPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Контакты и заявка на робота",
+          "href": "/contacts/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch"
+    },
+    {
+      "slug": "/privacy-policy/",
+      "pageType": "legal",
+      "indexable": false,
+      "robotsStatus": "noindex",
+      "canonical": "https://www.kiber-portal.ru/privacy-policy/",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "searchIntent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low",
+      "title": "Политика конфиденциальности — КИБЕР ПОРТАЛ",
+      "description": "Политика конфиденциальности КИБЕР ПОРТАЛА: порядок обработки и защиты персональных данных пользователей сайта.",
+      "h1": "Политика конфиденциальности",
+      "h2Required": [
+        "Основные положения"
+      ],
+      "minUsefulTextChars": 0,
+      "ogTitle": "Политика конфиденциальности — КИБЕР ПОРТАЛ",
+      "ogDescription": "Политика конфиденциальности КИБЕР ПОРТАЛА: порядок обработки и защиты персональных данных пользователей сайта.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "WebPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Политика конфиденциальности",
+          "href": "/privacy-policy/"
+        }
+      ],
+      "internalLinksRequired": [],
+      "imagesRequired": [],
+      "ctaRequired": [],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "available-not-sitemap"
+    },
+    {
+      "slug": "/consent/",
+      "pageType": "legal",
+      "indexable": false,
+      "robotsStatus": "noindex",
+      "canonical": "https://www.kiber-portal.ru/consent/",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "searchIntent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low",
+      "title": "Согласие на обработку персональных данных — КИБЕР ПОРТАЛ",
+      "description": "Согласие на обработку персональных данных при отправке заявки на сайте КИБЕР ПОРТАЛА.",
+      "h1": "Согласие на обработку персональных данных",
+      "h2Required": [
+        "Основные положения"
+      ],
+      "minUsefulTextChars": 0,
+      "ogTitle": "Согласие на обработку персональных данных — КИБЕР ПОРТАЛ",
+      "ogDescription": "Согласие на обработку персональных данных при отправке заявки на сайте КИБЕР ПОРТАЛА.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "WebPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Согласие на обработку персональных данных",
+          "href": "/consent/"
+        }
+      ],
+      "internalLinksRequired": [],
+      "imagesRequired": [],
+      "ctaRequired": [],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "available-not-sitemap"
+    },
+    {
+      "slug": "/cookie-policy/",
+      "pageType": "legal",
+      "indexable": false,
+      "robotsStatus": "noindex",
+      "canonical": "https://www.kiber-portal.ru/cookie-policy/",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "searchIntent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low",
+      "title": "Политика cookie — КИБЕР ПОРТАЛ",
+      "description": "Политика использования cookie на сайте КИБЕР ПОРТАЛА и описание применяемых технологий.",
+      "h1": "Политика cookie",
+      "h2Required": [
+        "Основные положения"
+      ],
+      "minUsefulTextChars": 0,
+      "ogTitle": "Политика cookie — КИБЕР ПОРТАЛ",
+      "ogDescription": "Политика использования cookie на сайте КИБЕР ПОРТАЛА и описание применяемых технологий.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "WebPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Политика cookie",
+          "href": "/cookie-policy/"
+        }
+      ],
+      "internalLinksRequired": [],
+      "imagesRequired": [],
+      "ctaRequired": [],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "available-not-sitemap"
+    },
+    {
+      "slug": "/terms/",
+      "pageType": "legal",
+      "indexable": false,
+      "robotsStatus": "noindex",
+      "canonical": "https://www.kiber-portal.ru/terms/",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "searchIntent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low",
+      "title": "Пользовательское соглашение — КИБЕР ПОРТАЛ",
+      "description": "Пользовательское соглашение сайта КИБЕР ПОРТАЛ и условия использования материалов и сервисов.",
+      "h1": "Пользовательское соглашение",
+      "h2Required": [
+        "Основные положения"
+      ],
+      "minUsefulTextChars": 0,
+      "ogTitle": "Пользовательское соглашение — КИБЕР ПОРТАЛ",
+      "ogDescription": "Пользовательское соглашение сайта КИБЕР ПОРТАЛ и условия использования материалов и сервисов.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "WebPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Пользовательское соглашение",
+          "href": "/terms/"
+        }
+      ],
+      "internalLinksRequired": [],
+      "imagesRequired": [],
+      "ctaRequired": [],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "available-not-sitemap"
+    },
+    {
+      "slug": "/lead/request/",
+      "pageType": "conversion",
+      "indexable": false,
+      "robotsStatus": "noindex",
+      "canonical": "https://www.kiber-portal.ru/lead/request/",
+      "primaryKeyword": "заявка на аренду робота",
+      "secondaryKeywords": [
+        "форма заявки робот",
+        "подобрать робота на мероприятие"
+      ],
+      "searchIntent": "transactional",
+      "pageCluster": "conversion",
+      "priority": "low",
+      "title": "Заявка на аренду робота — КИБЕР ПОРТАЛ",
+      "description": "Форма заявки на подбор и аренду робота для мероприятия через КИБЕР ПОРТАЛ в preview-safe режиме.",
+      "h1": "Заявка на аренду робота",
+      "h2Required": [
+        "Контакты",
+        "Согласие"
+      ],
+      "minUsefulTextChars": 0,
+      "ogTitle": "Заявка на аренду робота — КИБЕР ПОРТАЛ",
+      "ogDescription": "Форма заявки на подбор и аренду робота для мероприятия через КИБЕР ПОРТАЛ в preview-safe режиме.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "WebPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Заявка на аренду робота",
+          "href": "/lead/request/"
+        }
+      ],
+      "internalLinksRequired": [],
+      "imagesRequired": [],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "available-not-sitemap"
+    },
+    {
+      "slug": "/lead/thanks/",
+      "pageType": "conversion",
+      "indexable": false,
+      "robotsStatus": "noindex",
+      "canonical": "https://www.kiber-portal.ru/lead/thanks/",
+      "primaryKeyword": "заявка на аренду робота",
+      "secondaryKeywords": [
+        "форма заявки робот",
+        "подобрать робота на мероприятие"
+      ],
+      "searchIntent": "transactional",
+      "pageCluster": "conversion",
+      "priority": "low",
+      "title": "Спасибо за заявку — КИБЕР ПОРТАЛ",
+      "description": "Страница подтверждения получения заявки КИБЕР ПОРТАЛА после отправки формы.",
+      "h1": "Спасибо за заявку",
+      "h2Required": [
+        "Контакты",
+        "Согласие"
+      ],
+      "minUsefulTextChars": 0,
+      "ogTitle": "Спасибо за заявку — КИБЕР ПОРТАЛ",
+      "ogDescription": "Страница подтверждения получения заявки КИБЕР ПОРТАЛА после отправки формы.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "WebPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Спасибо за заявку",
+          "href": "/lead/thanks/"
+        }
+      ],
+      "internalLinksRequired": [],
+      "imagesRequired": [],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/contacts/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "available-not-sitemap"
+    }
+  ]
+}

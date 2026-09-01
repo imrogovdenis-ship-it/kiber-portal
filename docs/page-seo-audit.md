@@ -1,0 +1,1155 @@
+# KIBER-93 — Page SEO components audit
+
+Status: **warning**
+
+Checked: 37 routes; pass: 0; warnings: 37; failed: 0
+
+## Per-route summary
+
+### / — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/, got https://www.kiber-portal.ru/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Аренда роботов для мероприятий — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Аренда роботов для мероприятий — КИБЕР ПОРТАЛ'; passport='Аренда роботов на мероприятия | КИБЕР ПОРТАЛ'
+- ✅ `description` — 108 chars
+- ✅ `h1Count` — 1 H1: ['Аренда роботов, которые держат внимание']
+- ⚠️ `h1MatchesPassport` — rendered='Аренда роботов, которые держат внимание'; passport='Аренда роботов на мероприятия'
+- ✅ `h2Present` — 6 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 14913 visible chars; target 300
+- ✅ `primaryKeywordInTitle` — primary='аренда роботов'
+- ✅ `primaryKeywordInH1` — primary='аренда роботов'
+- ✅ `primaryKeywordInFirstBlock` — primary='аренда роботов'
+- ⚠️ `secondaryKeywords` — missing: прокат роботов, роботы на мероприятие, роботы для выставки, заказать робота на мероприятие
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: FAQPage, Organization, WebSite
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 36 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-agibot-x2/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-agibot-x2/, got https://www.kiber-portal.ru/robots/arenda-agibot-x2/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Agibot X2 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Agibot X2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Agibot X2 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 147 chars
+- ✅ `h1Count` — 1 H1: ['Agibot X2 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Agibot X2 для мероприятий'; passport='Аренда Agibot X2'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12432 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Agibot X2'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Agibot X2'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Agibot X2'
+- ⚠️ `secondaryKeywords` — missing: прокат Agibot X2, Agibot X2 на мероприятие, робот Agibot X2 для выставки, заказать Agibot X2
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-bellabot/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-bellabot/, got https://www.kiber-portal.ru/robots/arenda-bellabot/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 156 chars
+- ✅ `h1Count` — 1 H1: ['робота-официанта BellaBot для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота-официанта BellaBot для мероприятий'; passport='Аренда робота-официанта BellaBot'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12630 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота-официанта BellaBot'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота-официанта BellaBot'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-официанта BellaBot'
+- ⚠️ `secondaryKeywords` — missing: робота-официанта BellaBot на мероприятие, робот робота-официанта BellaBot для выставки, заказать робота-официанта BellaBot
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-glambot/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-glambot/, got https://www.kiber-portal.ru/robots/arenda-glambot/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота GlamBot для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота GlamBot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота GlamBot для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 133 chars
+- ✅ `h1Count` — 1 H1: ['робота GlamBot для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота GlamBot для мероприятий'; passport='Аренда робота GlamBot'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12176 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота GlamBot'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота GlamBot'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота GlamBot'
+- ⚠️ `secondaryKeywords` — missing: прокат робота GlamBot, робота GlamBot на мероприятие, робот робота GlamBot для выставки, заказать робота GlamBot
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-inchbot-l1-w-edu/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-inchbot-l1-w-edu/, got https://www.kiber-portal.ru/robots/arenda-inchbot-l1-w-edu/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ'; passport='Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 152 chars
+- ✅ `h1Count` — 1 H1: ['Inchbot L1-W EDU для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Inchbot L1-W EDU для мероприятий'; passport='Аренда Inchbot L1-W EDU'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12678 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Inchbot L1-W EDU'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Inchbot L1-W EDU'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Inchbot L1-W EDU'
+- ⚠️ `secondaryKeywords` — missing: прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки, заказать Inchbot L1-W EDU
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-kettybot/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-kettybot/, got https://www.kiber-portal.ru/robots/arenda-kettybot/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 142 chars
+- ✅ `h1Count` — 1 H1: ['робота-официанта KettyBot для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота-официанта KettyBot для мероприятий'; passport='Аренда робота-официанта KettyBot'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12300 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота-официанта KettyBot'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота-официанта KettyBot'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-официанта KettyBot'
+- ⚠️ `secondaryKeywords` — missing: робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-klipmeiker/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-klipmeiker/, got https://www.kiber-portal.ru/robots/arenda-klipmeiker/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ'; passport='робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 144 chars
+- ✅ `h1Count` — 1 H1: ['робота Клипмейкер для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота Клипмейкер для мероприятий'; passport='Аренда робота Клипмейкер'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12029 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота Клипмейкер'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота Клипмейкер'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота Клипмейкер'
+- ⚠️ `secondaryKeywords` — missing: прокат робота Клипмейкер, робота Клипмейкер на мероприятие, робот робота Клипмейкер для выставки, заказать робота Клипмейкер
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-mini-robo-kofeyni/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-mini-robo-kofeyni/, got https://www.kiber-portal.ru/robots/arenda-mini-robo-kofeyni/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ'; passport='мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 132 chars
+- ✅ `h1Count` — 1 H1: ['мини робо-кофейни для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='мини робо-кофейни для мероприятий'; passport='Аренда мини робо-кофейни'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12381 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда мини робо-кофейни'
+- ⚠️ `primaryKeywordInH1` — primary='аренда мини робо-кофейни'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда мини робо-кофейни'
+- ⚠️ `secondaryKeywords` — missing: прокат мини робо-кофейни, мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-noetix-bumi/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-noetix-bumi/, got https://www.kiber-portal.ru/robots/arenda-noetix-bumi/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ'; passport='Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 147 chars
+- ✅ `h1Count` — 1 H1: ['Noetix Bumi для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Noetix Bumi для мероприятий'; passport='Аренда Noetix Bumi'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 10754 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Noetix Bumi'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Noetix Bumi'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Noetix Bumi'
+- ⚠️ `secondaryKeywords` — missing: прокат Noetix Bumi, Noetix Bumi на мероприятие, робот Noetix Bumi для выставки, заказать Noetix Bumi
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-promobot-v4/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-promobot-v4/, got https://www.kiber-portal.ru/robots/arenda-promobot-v4/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Promobot V4 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Promobot V4 для мероприятий — КИБЕР ПОРТАЛ'; passport='Promobot V4 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 137 chars
+- ✅ `h1Count` — 1 H1: ['Promobot V4 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Promobot V4 для мероприятий'; passport='Аренда Promobot V4'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12233 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Promobot V4'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Promobot V4'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Promobot V4'
+- ⚠️ `secondaryKeywords` — missing: прокат Promobot V4, Promobot V4 на мероприятие, робот Promobot V4 для выставки, заказать Promobot V4
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-robo-kofeyni/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-robo-kofeyni/, got https://www.kiber-portal.ru/robots/arenda-robo-kofeyni/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота-кофейни для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота-кофейни для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-кофейни для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 129 chars
+- ✅ `h1Count` — 1 H1: ['робота-кофейни для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота-кофейни для мероприятий'; passport='Аренда робота-кофейни'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12410 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота-кофейни'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота-кофейни'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-кофейни'
+- ⚠️ `secondaryKeywords` — missing: прокат робота-кофейни, робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-roboshashki/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-roboshashki/, got https://www.kiber-portal.ru/robots/arenda-roboshashki/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ'; passport='робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 131 chars
+- ✅ `h1Count` — 1 H1: ['робота для игры в шашки для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота для игры в шашки для мероприятий'; passport='Аренда робота для игры в шашки'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12200 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота для игры в шашки'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота для игры в шашки'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота для игры в шашки'
+- ⚠️ `secondaryKeywords` — missing: прокат робота для игры в шашки, робота для игры в шашки на мероприятие, робот робота для игры в шашки для выставки, заказать робота для игры в шашки
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-robot-barmen/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-robot-barmen/, got https://www.kiber-portal.ru/robots/arenda-robot-barmen/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 136 chars
+- ✅ `h1Count` — 1 H1: ['робота-бармена «Робобар» для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота-бармена «Робобар» для мероприятий'; passport='Аренда робота-бармена «Робобар»'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12319 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота-бармена «Робобар»'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота-бармена «Робобар»'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-бармена «Робобар»'
+- ⚠️ `secondaryKeywords` — missing: робота-бармена «Робобар» на мероприятие, робот робота-бармена «Робобар» для выставки, заказать робота-бармена «Робобар»
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-robota-ardi/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-robota-ardi/, got https://www.kiber-portal.ru/robots/arenda-robota-ardi/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота Арди для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота Арди для мероприятий — КИБЕР ПОРТАЛ'; passport='робота Арди для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 145 chars
+- ✅ `h1Count` — 1 H1: ['робота Арди для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота Арди для мероприятий'; passport='Аренда робота Арди'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12349 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота Арди'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота Арди'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота Арди'
+- ⚠️ `secondaryKeywords` — missing: прокат робота Арди, робота Арди на мероприятие, робот робота Арди для выставки, заказать робота Арди
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-robota-hudozhnika-a4/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/, got https://www.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — большого формата для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='большого формата для мероприятий — КИБЕР ПОРТАЛ'; passport='большого формата для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 136 chars
+- ✅ `h1Count` — 1 H1: ['большого формата для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='большого формата для мероприятий'; passport='Аренда большого формата'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12290 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда большого формата'
+- ⚠️ `primaryKeywordInH1` — primary='аренда большого формата'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда большого формата'
+- ⚠️ `secondaryKeywords` — missing: прокат большого формата, большого формата на мероприятие, робот большого формата для выставки, заказать большого формата
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-robota-sofiya/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-robota-sofiya/, got https://www.kiber-portal.ru/robots/arenda-robota-sofiya/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота София для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота София для мероприятий — КИБЕР ПОРТАЛ'; passport='робота София для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 131 chars
+- ✅ `h1Count` — 1 H1: ['робота София для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота София для мероприятий'; passport='Аренда робота София'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12495 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота София'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота София'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота София'
+- ⚠️ `secondaryKeywords` — missing: прокат робота София, робота София на мероприятие, робот робота София для выставки, заказать робота София
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-robota-tron/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-robota-tron/, got https://www.kiber-portal.ru/robots/arenda-robota-tron/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ'; passport='модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 129 chars
+- ✅ `h1Count` — 1 H1: ['модульного робота Tron для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='модульного робота Tron для мероприятий'; passport='Аренда модульного робота Tron'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12180 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда модульного робота Tron'
+- ⚠️ `primaryKeywordInH1` — primary='аренда модульного робота Tron'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда модульного робота Tron'
+- ⚠️ `secondaryKeywords` — missing: прокат модульного робота Tron, модульного робота Tron на мероприятие, робот модульного робота Tron для выставки, заказать модульного робота Tron
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-senserobot/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-senserobot/, got https://www.kiber-portal.ru/robots/arenda-senserobot/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 142 chars
+- ✅ `h1Count` — 1 H1: ['робота-шахматиста SenseRobot для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='робота-шахматиста SenseRobot для мероприятий'; passport='Аренда робота-шахматиста SenseRobot'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12397 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда робота-шахматиста SenseRobot'
+- ⚠️ `primaryKeywordInH1` — primary='аренда робота-шахматиста SenseRobot'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-шахматиста SenseRobot'
+- ⚠️ `secondaryKeywords` — missing: прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие, робот робота-шахматиста SenseRobot для выставки, заказать робота-шахматиста SenseRobot
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-sketchbot/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-sketchbot/, got https://www.kiber-portal.ru/robots/arenda-sketchbot/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Sketchbot для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Sketchbot для мероприятий — КИБЕР ПОРТАЛ'; passport='Sketchbot для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 146 chars
+- ✅ `h1Count` — 1 H1: ['Sketchbot для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Sketchbot для мероприятий'; passport='Аренда Sketchbot'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12610 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Sketchbot'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Sketchbot'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Sketchbot'
+- ⚠️ `secondaryKeywords` — missing: прокат Sketchbot, Sketchbot на мероприятие, робот Sketchbot для выставки, заказать Sketchbot
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-unitree-g1/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-unitree-g1/, got https://www.kiber-portal.ru/robots/arenda-unitree-g1/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Unitree G1 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Unitree G1 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree G1 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 143 chars
+- ✅ `h1Count` — 1 H1: ['Unitree G1 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Unitree G1 для мероприятий'; passport='Аренда Unitree G1'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12348 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree G1'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Unitree G1'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree G1'
+- ⚠️ `secondaryKeywords` — missing: прокат Unitree G1, Unitree G1 на мероприятие, робот Unitree G1 для выставки, заказать Unitree G1
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 22 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-unitree-go2/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-unitree-go2/, got https://www.kiber-portal.ru/robots/arenda-unitree-go2/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 147 chars
+- ✅ `h1Count` — 1 H1: ['Unitree Go2 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Unitree Go2 для мероприятий'; passport='Аренда Unitree Go2'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12439 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree Go2'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Unitree Go2'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree Go2'
+- ⚠️ `secondaryKeywords` — missing: прокат Unitree Go2, Unitree Go2 на мероприятие, робот Unitree Go2 для выставки, заказать Unitree Go2
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-unitree-h2/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-unitree-h2/, got https://www.kiber-portal.ru/robots/arenda-unitree-h2/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Unitree H2 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Unitree H2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree H2 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 152 chars
+- ✅ `h1Count` — 1 H1: ['Unitree H2 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Unitree H2 для мероприятий'; passport='Аренда Unitree H2'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12371 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree H2'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Unitree H2'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree H2'
+- ⚠️ `secondaryKeywords` — missing: прокат Unitree H2, Unitree H2 на мероприятие, робот Unitree H2 для выставки, заказать Unitree H2
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-unitree-r1/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-unitree-r1/, got https://www.kiber-portal.ru/robots/arenda-unitree-r1/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Unitree R1 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Unitree R1 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree R1 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 156 chars
+- ✅ `h1Count` — 1 H1: ['Unitree R1 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Unitree R1 для мероприятий'; passport='Аренда Unitree R1'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12481 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree R1'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Unitree R1'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree R1'
+- ⚠️ `secondaryKeywords` — missing: прокат Unitree R1, Unitree R1 на мероприятие, робот Unitree R1 для выставки, заказать Unitree R1
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-uv-box/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-uv-box/, got https://www.kiber-portal.ru/robots/arenda-uv-box/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ'; passport='интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 132 chars
+- ✅ `h1Count` — 1 H1: ['интерактивной витрины UV-BOX для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='интерактивной витрины UV-BOX для мероприятий'; passport='Аренда интерактивной витрины UV-BOX'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12057 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда интерактивной витрины UV-BOX'
+- ⚠️ `primaryKeywordInH1` — primary='аренда интерактивной витрины UV-BOX'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда интерактивной витрины UV-BOX'
+- ⚠️ `secondaryKeywords` — missing: прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие, робот интерактивной витрины UV-BOX для выставки, заказать интерактивной витрины UV-BOX
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /robots/arenda-xiaomi-cyberdog-2/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/, got https://www.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ'
+- ✅ `description` — 144 chars
+- ✅ `h1Count` — 1 H1: ['Xiaomi Cyberdog 2 для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Xiaomi Cyberdog 2 для мероприятий'; passport='Аренда Xiaomi Cyberdog 2'
+- ✅ `h2Present` — 7 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 12706 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда Xiaomi Cyberdog 2'
+- ⚠️ `primaryKeywordInH1` — primary='аренда Xiaomi Cyberdog 2'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Xiaomi Cyberdog 2'
+- ⚠️ `secondaryKeywords` — missing: прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки, заказать Xiaomi Cyberdog 2
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /roboty-gumanoidy/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/roboty-gumanoidy/, got https://www.kiber-portal.ru/roboty-gumanoidy/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'
+- ✅ `description` — 117 chars
+- ✅ `h1Count` — 1 H1: ['Роботы-гуманоиды, которые держат внимание']
+- ⚠️ `h1MatchesPassport` — rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'
+- ✅ `h2Present` — 6 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 8045 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
+- ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
+- ⚠️ `secondaryKeywords` — missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: CollectionPage
+- ⚠️ `breadcrumbs` — visible breadcrumbs missing
+- ✅ `internalLinks` — 26 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /roboty-sobaki/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/roboty-sobaki/, got https://www.kiber-portal.ru/roboty-sobaki/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Роботы-собаки в аренду — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Роботы-собаки в аренду — КИБЕР ПОРТАЛ'; passport='Аренда роботов-собак | КИБЕР ПОРТАЛ'
+- ✅ `description` — 94 chars
+- ✅ `h1Count` — 1 H1: ['Роботы-собаки для событий и промо']
+- ⚠️ `h1MatchesPassport` — rendered='Роботы-собаки для событий и промо'; passport='Роботы-собаки для мероприятий'
+- ✅ `h2Present` — 6 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 7563 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
+- ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
+- ⚠️ `secondaryKeywords` — missing: роботы для выставки, роботы для презентации, роботы для события
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: CollectionPage
+- ⚠️ `breadcrumbs` — visible breadcrumbs missing
+- ✅ `internalLinks` — 24 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /compilations/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/compilations/, got https://www.kiber-portal.ru/compilations/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Подборки роботов — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Подборки роботов — КИБЕР ПОРТАЛ'; passport='Подборки роботов для аренды | КИБЕР ПОРТАЛ'
+- ✅ `description` — 110 chars
+- ✅ `h1Count` — 1 H1: ['Подборки роботов для аренды']
+- ✅ `h1MatchesPassport` — rendered='Подборки роботов для аренды'; passport='Подборки роботов для аренды'
+- ✅ `h2Present` — 4 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 5342 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
+- ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
+- ⚠️ `secondaryKeywords` — missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: CollectionPage
+- ⚠️ `breadcrumbs` — visible breadcrumbs missing
+- ✅ `internalLinks` — 24 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /articles/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/, got https://www.kiber-portal.ru/articles/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Блог Кибер Гоши — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Блог Кибер Гоши — КИБЕР ПОРТАЛ'; passport='Блог Кибер Гоши | КИБЕР ПОРТАЛ'
+- ✅ `description` — 101 chars
+- ✅ `h1Count` — 1 H1: ['Блог Кибер Гоши']
+- ✅ `h1MatchesPassport` — rendered='Блог Кибер Гоши'; passport='Блог Кибер Гоши'
+- ✅ `h2Present` — 4 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 5852 visible chars; target 500
+- ⚠️ `primaryKeywordInTitle` — primary='статьи о роботах для мероприятий'
+- ⚠️ `primaryKeywordInH1` — primary='статьи о роботах для мероприятий'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='статьи о роботах для мероприятий'
+- ⚠️ `secondaryKeywords` — missing: как выбрать робота для мероприятия, роботы на выставку, идеи с роботами для события
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: BlogPosting; present: CollectionPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 26 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /news/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/news/, got https://www.kiber-portal.ru/news/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Новости робототехники — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Новости робототехники — КИБЕР ПОРТАЛ'; passport='Новости робототехники | КИБЕР ПОРТАЛ'
+- ✅ `description` — 95 chars
+- ✅ `h1Count` — 1 H1: ['Новости']
+- ⚠️ `h1MatchesPassport` — rendered='Новости'; passport='Новости КИБЕР ПОРТАЛА'
+- ✅ `h2Present` — 1 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 2918 visible chars; target 500
+- ✅ `primaryKeywordInTitle` — primary='новости робототехники'
+- ⚠️ `primaryKeywordInH1` — primary='новости робототехники'
+- ✅ `primaryKeywordInFirstBlock` — primary='новости робототехники'
+- ⚠️ `secondaryKeywords` — missing: роботы для мероприятий новости, технологии робототехники
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: NewsArticle; present: CollectionPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 18 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /contacts/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/contacts/, got https://www.kiber-portal.ru/contacts/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Контакты — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Контакты — КИБЕР ПОРТАЛ'; passport='Контакты — КИБЕР ПОРТАЛ'
+- ✅ `description` — 53 chars
+- ✅ `h1Count` — 1 H1: ['Контакты и заявка на робота']
+- ✅ `h1MatchesPassport` — rendered='Контакты и заявка на робота'; passport='Контакты и заявка на робота'
+- ✅ `h2Present` — 8 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 2952 visible chars; target 300
+- ⚠️ `primaryKeywordInTitle` — primary='контакты КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInH1` — primary='контакты КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='контакты КИБЕР ПОРТАЛ'
+- ⚠️ `secondaryKeywords` — missing: заказать робота, заявка на аренду робота, связаться с КИБЕР ПОРТАЛ
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: ContactPage
+- ⚠️ `breadcrumbs` — visible breadcrumbs missing
+- ✅ `internalLinks` — 18 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /privacy-policy/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/privacy-policy/, got https://www.kiber-portal.ru/privacy-policy/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Политика обработки персональных данных — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Политика обработки персональных данных — КИБЕР ПОРТАЛ'; passport='Политика конфиденциальности — КИБЕР ПОРТАЛ'
+- ✅ `description` — 52 chars
+- ✅ `h1Count` — 1 H1: ['Политика обработки персональных данных']
+- ⚠️ `h1MatchesPassport` — rendered='Политика обработки персональных данных'; passport='Политика конфиденциальности'
+- ✅ `h2Present` — 1 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 11313 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `secondaryKeywords` — missing: политика конфиденциальности, согласие на обработку данных
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /consent/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/consent/, got https://www.kiber-portal.ru/consent/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Согласие на обработку персональных данных — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Согласие на обработку персональных данных — КИБЕР ПОРТАЛ'; passport='Согласие на обработку персональных данных — КИБЕР ПОРТАЛ'
+- ✅ `description` — 55 chars
+- ✅ `h1Count` — 1 H1: ['Согласие на обработку персональных данных']
+- ✅ `h1MatchesPassport` — rendered='Согласие на обработку персональных данных'; passport='Согласие на обработку персональных данных'
+- ✅ `h2Present` — 1 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 5469 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `secondaryKeywords` — missing: политика конфиденциальности, согласие на обработку данных
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /cookie-policy/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/cookie-policy/, got https://www.kiber-portal.ru/cookie-policy/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Политика использования файлов cookie — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Политика использования файлов cookie — КИБЕР ПОРТАЛ'; passport='Политика cookie — КИБЕР ПОРТАЛ'
+- ✅ `description` — 50 chars
+- ✅ `h1Count` — 1 H1: ['Политика использования файлов cookie']
+- ⚠️ `h1MatchesPassport` — rendered='Политика использования файлов cookie'; passport='Политика cookie'
+- ✅ `h2Present` — 1 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 4869 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `secondaryKeywords` — missing: политика конфиденциальности, согласие на обработку данных
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /terms/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/terms/, got https://www.kiber-portal.ru/terms/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Пользовательское соглашение — КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Пользовательское соглашение — КИБЕР ПОРТАЛ'; passport='Пользовательское соглашение — КИБЕР ПОРТАЛ'
+- ✅ `description` — 41 chars
+- ✅ `h1Count` — 1 H1: ['Пользовательское соглашение']
+- ✅ `h1MatchesPassport` — rendered='Пользовательское соглашение'; passport='Пользовательское соглашение'
+- ✅ `h2Present` — 1 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 5883 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
+- ⚠️ `secondaryKeywords` — missing: политика конфиденциальности, согласие на обработку данных
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: 
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /lead/request/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/lead/request/, got https://www.kiber-portal.ru/lead/request/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Заявка на подбор робота — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Заявка на подбор робота — КИБЕР ПОРТАЛ'; passport='Заявка на аренду робота — КИБЕР ПОРТАЛ'
+- ✅ `description` — 49 chars
+- ✅ `h1Count` — 1 H1: ['Заявка на подбор робота']
+- ⚠️ `h1MatchesPassport` — rendered='Заявка на подбор робота'; passport='Заявка на аренду робота'
+- ✅ `h2Present` — 3 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 1952 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
+- ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
+- ⚠️ `secondaryKeywords` — missing: форма заявки робот, подобрать робота на мероприятие
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 18 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+
+### /lead/thanks/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/lead/thanks/, got https://www.kiber-portal.ru/lead/thanks/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Заявка принята — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Заявка принята — КИБЕР ПОРТАЛ'; passport='Спасибо за заявку — КИБЕР ПОРТАЛ'
+- ✅ `description` — 54 chars
+- ✅ `h1Count` — 1 H1: ['Спасибо, бриф принят']
+- ⚠️ `h1MatchesPassport` — rendered='Спасибо, бриф принят'; passport='Спасибо за заявку'
+- ✅ `h2Present` — 4 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 1443 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
+- ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
+- ⚠️ `secondaryKeywords` — missing: форма заявки робот, подобрать робота на мероприятие
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 20 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+

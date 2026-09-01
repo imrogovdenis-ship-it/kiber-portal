@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-93",
+  "status": "draft_for_owner_review",
+  "site": "https://www.kiber-portal.ru",
+  "pages": {
+    "/": {
+      "pageType": "home",
+      "primaryKeyword": "аренда роботов",
+      "secondaryKeywords": [
+        "прокат роботов",
+        "роботы на мероприятие",
+        "роботы для выставки",
+        "заказать робота на мероприятие"
+      ],
+      "intent": "commercial",
+      "pageCluster": "home",
+      "priority": "high"
+    },
+    "/robots/arenda-agibot-x2/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Agibot X2",
+      "secondaryKeywords": [
+        "прокат Agibot X2",
+        "Agibot X2 на мероприятие",
+        "робот Agibot X2 для выставки",
+        "заказать Agibot X2"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-bellabot/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота-официанта BellaBot",
+      "secondaryKeywords": [
+        "прокат робота-официанта BellaBot",
+        "робота-официанта BellaBot на мероприятие",
+        "робот робота-официанта BellaBot для выставки",
+        "заказать робота-официанта BellaBot"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-glambot/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота GlamBot",
+      "secondaryKeywords": [
+        "прокат робота GlamBot",
+        "робота GlamBot на мероприятие",
+        "робот робота GlamBot для выставки",
+        "заказать робота GlamBot"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-inchbot-l1-w-edu/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Inchbot L1-W EDU",
+      "secondaryKeywords": [
+        "прокат Inchbot L1-W EDU",
+        "Inchbot L1-W EDU на мероприятие",
+        "робот Inchbot L1-W EDU для выставки",
+        "заказать Inchbot L1-W EDU"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-kettybot/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота-официанта KettyBot",
+      "secondaryKeywords": [
+        "прокат робота-официанта KettyBot",
+        "робота-официанта KettyBot на мероприятие",
+        "робот робота-официанта KettyBot для выставки",
+        "заказать робота-официанта KettyBot"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-klipmeiker/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота Клипмейкер",
+      "secondaryKeywords": [
+        "прокат робота Клипмейкер",
+        "робота Клипмейкер на мероприятие",
+        "робот робота Клипмейкер для выставки",
+        "заказать робота Клипмейкер"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-mini-robo-kofeyni/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда мини робо-кофейни",
+      "secondaryKeywords": [
+        "прокат мини робо-кофейни",
+        "мини робо-кофейни на мероприятие",
+        "робот мини робо-кофейни для выставки",
+        "заказать мини робо-кофейни"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-noetix-bumi/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Noetix Bumi",
+      "secondaryKeywords": [
+        "прокат Noetix Bumi",
+        "Noetix Bumi на мероприятие",
+        "робот Noetix Bumi для выставки",
+        "заказать Noetix Bumi"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-promobot-v4/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Promobot V4",
+      "secondaryKeywords": [
+        "прокат Promobot V4",
+        "Promobot V4 на мероприятие",
+        "робот Promobot V4 для выставки",
+        "заказать Promobot V4"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-robo-kofeyni/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота-кофейни",
+      "secondaryKeywords": [
+        "прокат робота-кофейни",
+        "робота-кофейни на мероприятие",
+        "робот робота-кофейни для выставки",
+        "заказать робота-кофейни"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-roboshashki/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота для игры в шашки",
+      "secondaryKeywords": [
+        "прокат робота для игры в шашки",
+        "робота для игры в шашки на мероприятие",
+        "робот робота для игры в шашки для выставки",
+        "заказать робота для игры в шашки"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-robot-barmen/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота-бармена «Робобар»",
+      "secondaryKeywords": [
+        "прокат робота-бармена «Робобар»",
+        "робота-бармена «Робобар» на мероприятие",
+        "робот робота-бармена «Робобар» для выставки",
+        "заказать робота-бармена «Робобар»"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-robota-ardi/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота Арди",
+      "secondaryKeywords": [
+        "прокат робота Арди",
+        "робота Арди на мероприятие",
+        "робот робота Арди для выставки",
+        "заказать робота Арди"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-robota-hudozhnika-a4/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда большого формата",
+      "secondaryKeywords": [
+        "прокат большого формата",
+        "большого формата на мероприятие",
+        "робот большого формата для выставки",
+        "заказать большого формата"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-robota-sofiya/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота София",
+      "secondaryKeywords": [
+        "прокат робота София",
+        "робота София на мероприятие",
+        "робот робота София для выставки",
+        "заказать робота София"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-robota-tron/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда модульного робота Tron",
+      "secondaryKeywords": [
+        "прокат модульного робота Tron",
+        "модульного робота Tron на мероприятие",
+        "робот модульного робота Tron для выставки",
+        "заказать модульного робота Tron"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-senserobot/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда робота-шахматиста SenseRobot",
+      "secondaryKeywords": [
+        "прокат робота-шахматиста SenseRobot",
+        "робота-шахматиста SenseRobot на мероприятие",
+        "робот робота-шахматиста SenseRobot для выставки",
+        "заказать робота-шахматиста SenseRobot"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-sketchbot/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Sketchbot",
+      "secondaryKeywords": [
+        "прокат Sketchbot",
+        "Sketchbot на мероприятие",
+        "робот Sketchbot для выставки",
+        "заказать Sketchbot"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-unitree-g1/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Unitree G1",
+      "secondaryKeywords": [
+        "прокат Unitree G1",
+        "Unitree G1 на мероприятие",
+        "робот Unitree G1 для выставки",
+        "заказать Unitree G1"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-unitree-go2/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Unitree Go2",
+      "secondaryKeywords": [
+        "прокат Unitree Go2",
+        "Unitree Go2 на мероприятие",
+        "робот Unitree Go2 для выставки",
+        "заказать Unitree Go2"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-unitree-h2/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Unitree H2",
+      "secondaryKeywords": [
+        "прокат Unitree H2",
+        "Unitree H2 на мероприятие",
+        "робот Unitree H2 для выставки",
+        "заказать Unitree H2"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-unitree-r1/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Unitree R1",
+      "secondaryKeywords": [
+        "прокат Unitree R1",
+        "Unitree R1 на мероприятие",
+        "робот Unitree R1 для выставки",
+        "заказать Unitree R1"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-uv-box/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда интерактивной витрины UV-BOX",
+      "secondaryKeywords": [
+        "прокат интерактивной витрины UV-BOX",
+        "интерактивной витрины UV-BOX на мероприятие",
+        "робот интерактивной витрины UV-BOX для выставки",
+        "заказать интерактивной витрины UV-BOX"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/robots/arenda-xiaomi-cyberdog-2/": {
+      "pageType": "robot_card",
+      "primaryKeyword": "аренда Xiaomi Cyberdog 2",
+      "secondaryKeywords": [
+        "прокат Xiaomi Cyberdog 2",
+        "Xiaomi Cyberdog 2 на мероприятие",
+        "робот Xiaomi Cyberdog 2 для выставки",
+        "заказать Xiaomi Cyberdog 2"
+      ],
+      "intent": "commercial",
+      "pageCluster": "robot-detail",
+      "priority": "high"
+    },
+    "/roboty-gumanoidy/": {
+      "pageType": "collection",
+      "primaryKeyword": "аренда роботов для мероприятий",
+      "secondaryKeywords": [
+        "подборка роботов",
+        "роботы для выставки",
+        "роботы для презентации",
+        "роботы для события"
+      ],
+      "intent": "commercial",
+      "pageCluster": "category",
+      "priority": "high"
+    },
+    "/roboty-sobaki/": {
+      "pageType": "collection",
+      "primaryKeyword": "аренда роботов для мероприятий",
+      "secondaryKeywords": [
+        "подборка роботов",
+        "роботы для выставки",
+        "роботы для презентации",
+        "роботы для события"
+      ],
+      "intent": "commercial",
+      "pageCluster": "category",
+      "priority": "high"
+    },
+    "/compilations/": {
+      "pageType": "collection",
+      "primaryKeyword": "аренда роботов для мероприятий",
+      "secondaryKeywords": [
+        "подборка роботов",
+        "роботы для выставки",
+        "роботы для презентации",
+        "роботы для события"
+      ],
+      "intent": "commercial",
+      "pageCluster": "compilations-index",
+      "priority": "medium"
+    },
+    "/articles/": {
+      "pageType": "article",
+      "primaryKeyword": "статьи о роботах для мероприятий",
+      "secondaryKeywords": [
+        "как выбрать робота для мероприятия",
+        "роботы на выставку",
+        "идеи с роботами для события"
+      ],
+      "intent": "informational",
+      "pageCluster": "articles-index",
+      "priority": "medium"
+    },
+    "/news/": {
+      "pageType": "news",
+      "primaryKeyword": "новости робототехники",
+      "secondaryKeywords": [
+        "роботы для мероприятий новости",
+        "технологии робототехники",
+        "новости КИБЕР ПОРТАЛА"
+      ],
+      "intent": "informational",
+      "pageCluster": "news-index",
+      "priority": "medium"
+    },
+    "/contacts/": {
+      "pageType": "contacts",
+      "primaryKeyword": "контакты КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "заказать робота",
+        "заявка на аренду робота",
+        "связаться с КИБЕР ПОРТАЛ"
+      ],
+      "intent": "local",
+      "pageCluster": "contacts",
+      "priority": "medium"
+    },
+    "/privacy-policy/": {
+      "pageType": "legal",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "intent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low"
+    },
+    "/consent/": {
+      "pageType": "legal",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "intent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low"
+    },
+    "/cookie-policy/": {
+      "pageType": "legal",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "intent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low"
+    },
+    "/terms/": {
+      "pageType": "legal",
+      "primaryKeyword": "документы КИБЕР ПОРТАЛ",
+      "secondaryKeywords": [
+        "политика конфиденциальности",
+        "согласие на обработку данных",
+        "пользовательское соглашение"
+      ],
+      "intent": "navigational",
+      "pageCluster": "legal",
+      "priority": "low"
+    },
+    "/lead/request/": {
+      "pageType": "conversion",
+      "primaryKeyword": "заявка на аренду робота",
+      "secondaryKeywords": [
+        "форма заявки робот",
+        "подобрать робота на мероприятие"
+      ],
+      "intent": "transactional",
+      "pageCluster": "conversion",
+      "priority": "low"
+    },
+    "/lead/thanks/": {
+      "pageType": "conversion",
+      "primaryKeyword": "заявка на аренду робота",
+      "secondaryKeywords": [
+        "форма заявки робот",
+        "подобрать робота на мероприятие"
+      ],
+      "intent": "transactional",
+      "pageCluster": "conversion",
+      "priority": "low"
+    }
+  }
+}
