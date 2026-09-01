@@ -82,7 +82,16 @@ def schema_types(values):
 def add(checks, key, status, message):
     checks[key]={'status':status,'message':message}
 
-def audit_page(page, sitemap_locs, robots_txt):
+def load_ai_support():
+    contract_path = ROOT/'data/seo/ai-search-visibility-contract.draft.json'
+    entity_map_path = ROOT/'data/seo/ai-entity-map.json'
+    llms_path = ROOT/'public/llms.txt'
+    contract = json.loads(contract_path.read_text(encoding='utf-8')) if contract_path.exists() else {}
+    entity_map = json.loads(entity_map_path.read_text(encoding='utf-8')) if entity_map_path.exists() else {}
+    llms_txt = llms_path.read_text(encoding='utf-8', errors='replace') if llms_path.exists() else ''
+    return contract, entity_map, llms_txt
+
+def audit_page(page, sitemap_locs, robots_txt, ai_contract=None, ai_entity_map=None, llms_txt=''):
     route=page['slug']; file=html_path_for(route); checks={}; warnings=[]; failures=[]
     def check(key, status, message):
         add(checks,key,status,message)
@@ -149,6 +158,47 @@ def audit_page(page, sitemap_locs, robots_txt):
     check('cta','pass' if cta_ok or not page.get('ctaRequired') else 'warning','conversion/contact path present' if cta_ok else 'required CTA target missing')
     check('viewport','pass' if meta_content(p,'viewport')=='width=device-width, initial-scale=1' else 'fail',meta_content(p,'viewport') or 'missing')
     check('robotsTxt','pass' if 'Disallow: /' not in robots_txt and 'Sitemap:' in robots_txt else 'fail','robots.txt allows crawl and declares sitemap')
+
+    ai = page.get('aiVisibility') or {}
+    ai_required = bool(ai_contract) and page.get('indexable', False)
+    ai_summary = ai.get('aiSummary', '')
+    check('aiSummary','pass' if (not ai_required or len(ai_summary) >= 80) else 'warning',f'{len(ai_summary)} chars')
+    entities = ai.get('entities') or []
+    entity_names = [e.get('name','') for e in entities if isinstance(e, dict)]
+    brand_present = 'КИБЕР ПОРТАЛ' in entity_names
+    primary_present = any(lc(page['primaryKeyword']) == lc(name) or contains(name, page['primaryKeyword']) or contains(page['primaryKeyword'], name) for name in entity_names)
+    check('entityClarity','pass' if (not ai_required or (brand_present and primary_present)) else 'warning',f'entities: {", ".join(entity_names[:6])}')
+    questions = ai.get('userQuestionsAnswered') or []
+    min_questions = 3 if page['pageType'] != 'robot_card' else 5
+    check('questionAnswerBlocks','pass' if (not ai_required or len(questions) >= min_questions) else 'warning',f'{len(questions)} questions; target {min_questions}')
+    factual_claims = ai.get('factualClaims') or []
+    allowed_sources = {'owner_approved','page_content','manufacturer','needs_review'}
+    bad_sources = [c.get('source') for c in factual_claims if isinstance(c, dict) and c.get('source') not in allowed_sources]
+    check('reviewSourceForClaims','pass' if (not ai_required or (factual_claims and not bad_sources)) else 'warning',f'{len(factual_claims)} claims; bad sources: {bad_sources[:3]}')
+    has_structured_facts = bool(re.search(r'(Формат|Сценарии|Факты|Стоимость|Условия|Реквизиты|Контакты)', text, re.I))
+    check('structuredFacts','pass' if (not ai_required or has_structured_facts or page['pageType'] in ['home','article','legal']) else 'warning','structured fact labels present' if has_structured_facts else 'facts should be exposed as table/list/QA block')
+    faq = ai.get('faqQuestions') or []
+    faq_required = page['pageType'] in ['robot_card','collection']
+    check('faqQuestions','pass' if (not ai_required or not faq_required or faq) else 'warning',f'{len(faq)} FAQ questions')
+    llms_has_route = (page['canonical'] in llms_txt) or (route == '/' and 'https://www.kiber-portal.ru/' in llms_txt)
+    llms_status = 'pass' if (not ai_required or llms_has_route or page['pageType'] in ['legal','conversion']) else 'warning'
+    check('llmsTxtCoverage', llms_status, 'canonical listed in public/llms.txt' if llms_has_route else 'route not listed in public/llms.txt')
+    markdown_path = ai.get('llmMarkdownPath')
+    check('markdownAlternateOrLlmsEntry','pass' if (not ai_required or markdown_path or llms_has_route or page['pageType'] in ['legal','conversion']) else 'warning','markdown alternate present or covered by llms.txt' if (markdown_path or llms_has_route) else 'no markdown alternate and no llms.txt entry')
+    robots_has_oai = 'OAI-SearchBot' in robots_txt
+    robots_has_chatgpt_user = 'ChatGPT-User' in robots_txt
+    robots_has_gptbot = 'GPTBot' in robots_txt
+    if ai_contract and ai_contract.get('robotsPolicyDecisionRequired'):
+        check('aiCrawlerRobotsPolicy','warning' if not (robots_has_oai and robots_has_chatgpt_user and robots_has_gptbot) else 'pass','owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy')
+    else:
+        check('aiCrawlerRobotsPolicy','pass','no separate AI crawler decision required')
+    img_alt_text = ' '.join(img.get('alt','') for img in p.images)
+    critical_terms=[page['primaryKeyword'], 'КИБЕР ПОРТАЛ']
+    only_in_images=[term for term in critical_terms if contains(img_alt_text, term) and not contains(text, term)]
+    check('contentNotHiddenInImagesOrClientJs','pass' if not only_in_images else 'warning','critical facts visible in HTML text' if not only_in_images else 'critical terms appear only in image alt: '+', '.join(only_in_images))
+    related_pages = ai.get('relatedPages') or []
+    check('internalEntityLinks','pass' if (not ai_required or related_pages or internal) else 'warning',f'{len(related_pages)} AI related pages; {len(internal)} rendered internal links')
+
     status='fail' if failures else ('warning' if warnings else 'pass')
     return {'slug':route,'pageType':page['pageType'],'status':status,'checks':checks,'missing':failures,'warnings':warnings,'rendered':{'title':title,'description':desc,'h1':h1s[0] if h1s else None,'h2Count':len(h2s),'schemaTypes':types,'visibleTextChars':useful}}
 
@@ -158,7 +208,8 @@ def main():
     sitemap=(ROOT/'dist/sitemap.xml').read_text(encoding='utf-8', errors='replace') if (ROOT/'dist/sitemap.xml').exists() else ''
     sitemap_locs=set(re.findall(r'<loc>([^<]+)</loc>', sitemap))
     robots_txt=(ROOT/'public/robots.txt').read_text(encoding='utf-8', errors='replace') if (ROOT/'public/robots.txt').exists() else ''
-    routes=[audit_page(p, sitemap_locs, robots_txt) for p in passports['pages']]
+    ai_contract, ai_entity_map, llms_txt = load_ai_support()
+    routes=[audit_page(p, sitemap_locs, robots_txt, ai_contract, ai_entity_map, llms_txt) for p in passports['pages']]
     summary={'routesChecked':len(routes),'passed':sum(r['status']=='pass' for r in routes),'warnings':sum(r['status']=='warning' for r in routes),'failed':sum(r['status']=='fail' for r in routes)}
     report={'schemaVersion':1,'issue':'KIBER-93','status':'failed' if summary['failed'] else ('warning' if summary['warnings'] else 'passed'),'summary':summary,'routes':routes}
     (ROOT/'data/seo').mkdir(parents=True, exist_ok=True); (ROOT/'docs').mkdir(parents=True, exist_ok=True)

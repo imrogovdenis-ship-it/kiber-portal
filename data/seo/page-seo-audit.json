@@ -129,13 +129,58 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "239 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, аренда роботов, прокат роботов, роботы на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 36 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
         "titleMatchesPassport: rendered='Аренда роботов для мероприятий — КИБЕР ПОРТАЛ'; passport='Аренда роботов на мероприятия | КИБЕР ПОРТАЛ'",
         "h1MatchesPassport: rendered='Аренда роботов, которые держат внимание'; passport='Аренда роботов на мероприятия'",
-        "secondaryKeywords: missing: прокат роботов, роботы на мероприятие, роботы для выставки, заказать робота на мероприятие"
+        "secondaryKeywords: missing: прокат роботов, роботы на мероприятие, роботы для выставки, заказать робота на мероприятие",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Аренда роботов для мероприятий — КИБЕР ПОРТАЛ",
@@ -270,6 +315,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "236 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Agibot X2, аренда Agibot X2, прокат Agibot X2, Agibot X2 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -279,7 +368,8 @@
         "primaryKeywordInH1: primary='аренда Agibot X2'",
         "primaryKeywordInFirstBlock: primary='аренда Agibot X2'",
         "secondaryKeywords: missing: прокат Agibot X2, Agibot X2 на мероприятие, робот Agibot X2 для выставки, заказать Agibot X2",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -413,6 +503,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "252 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота-официанта BellaBot, аренда робота-официанта BellaBot, прокат робота-официанта BellaBot, робота-официанта BellaBot на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -422,7 +556,8 @@
         "primaryKeywordInH1: primary='аренда робота-официанта BellaBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота-официанта BellaBot'",
         "secondaryKeywords: missing: робота-официанта BellaBot на мероприятие, робот робота-официанта BellaBot для выставки, заказать робота-официанта BellaBot",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
@@ -556,6 +691,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "241 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота GlamBot, аренда робота GlamBot, прокат робота GlamBot, робота GlamBot на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -565,7 +744,8 @@
         "primaryKeywordInH1: primary='аренда робота GlamBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота GlamBot'",
         "secondaryKeywords: missing: прокат робота GlamBot, робота GlamBot на мероприятие, робот робота GlamBot для выставки, заказать робота GlamBot",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
@@ -699,6 +879,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "243 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Inchbot L1-W EDU, аренда Inchbot L1-W EDU, прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -708,7 +932,8 @@
         "primaryKeywordInH1: primary='аренда Inchbot L1-W EDU'",
         "primaryKeywordInFirstBlock: primary='аренда Inchbot L1-W EDU'",
         "secondaryKeywords: missing: прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки, заказать Inchbot L1-W EDU",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
@@ -842,6 +1067,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "252 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота-официанта KettyBot, аренда робота-официанта KettyBot, прокат робота-официанта KettyBot, робота-официанта KettyBot на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -851,7 +1120,8 @@
         "primaryKeywordInH1: primary='аренда робота-официанта KettyBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота-официанта KettyBot'",
         "secondaryKeywords: missing: робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
@@ -985,6 +1255,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "244 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота Клипмейкер, аренда робота Клипмейкер, прокат робота Клипмейкер, робота Клипмейкер на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -994,7 +1308,8 @@
         "primaryKeywordInH1: primary='аренда робота Клипмейкер'",
         "primaryKeywordInFirstBlock: primary='аренда робота Клипмейкер'",
         "secondaryKeywords: missing: прокат робота Клипмейкер, робота Клипмейкер на мероприятие, робот робота Клипмейкер для выставки, заказать робота Клипмейкер",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
@@ -1128,6 +1443,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "244 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, мини робо-кофейни, аренда мини робо-кофейни, прокат мини робо-кофейни, мини робо-кофейни на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1137,7 +1496,8 @@
         "primaryKeywordInH1: primary='аренда мини робо-кофейни'",
         "primaryKeywordInFirstBlock: primary='аренда мини робо-кофейни'",
         "secondaryKeywords: missing: прокат мини робо-кофейни, мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
@@ -1271,6 +1631,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "238 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Noetix Bumi, аренда Noetix Bumi, прокат Noetix Bumi, Noetix Bumi на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1280,7 +1684,8 @@
         "primaryKeywordInH1: primary='аренда Noetix Bumi'",
         "primaryKeywordInFirstBlock: primary='аренда Noetix Bumi'",
         "secondaryKeywords: missing: прокат Noetix Bumi, Noetix Bumi на мероприятие, робот Noetix Bumi для выставки, заказать Noetix Bumi",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
@@ -1414,6 +1819,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "238 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Promobot V4, аренда Promobot V4, прокат Promobot V4, Promobot V4 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1423,7 +1872,8 @@
         "primaryKeywordInH1: primary='аренда Promobot V4'",
         "primaryKeywordInFirstBlock: primary='аренда Promobot V4'",
         "secondaryKeywords: missing: прокат Promobot V4, Promobot V4 на мероприятие, робот Promobot V4 для выставки, заказать Promobot V4",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
@@ -1557,6 +2007,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "241 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота-кофейни, аренда робота-кофейни, прокат робота-кофейни, робота-кофейни на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1566,7 +2060,8 @@
         "primaryKeywordInH1: primary='аренда робота-кофейни'",
         "primaryKeywordInFirstBlock: primary='аренда робота-кофейни'",
         "secondaryKeywords: missing: прокат робота-кофейни, робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
@@ -1700,6 +2195,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "250 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота для игры в шашки, аренда робота для игры в шашки, прокат робота для игры в шашки, робота для игры в шашки на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1709,7 +2248,8 @@
         "primaryKeywordInH1: primary='аренда робота для игры в шашки'",
         "primaryKeywordInFirstBlock: primary='аренда робота для игры в шашки'",
         "secondaryKeywords: missing: прокат робота для игры в шашки, робота для игры в шашки на мероприятие, робот робота для игры в шашки для выставки, заказать робота для игры в шашки",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
@@ -1843,6 +2383,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "251 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота-бармена «Робобар», аренда робота-бармена «Робобар», прокат робота-бармена «Робобар», робота-бармена «Робобар» на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1852,7 +2436,8 @@
         "primaryKeywordInH1: primary='аренда робота-бармена «Робобар»'",
         "primaryKeywordInFirstBlock: primary='аренда робота-бармена «Робобар»'",
         "secondaryKeywords: missing: робота-бармена «Робобар» на мероприятие, робот робота-бармена «Робобар» для выставки, заказать робота-бармена «Робобар»",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
@@ -1986,6 +2571,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "238 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота Арди, аренда робота Арди, прокат робота Арди, робота Арди на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -1995,7 +2624,8 @@
         "primaryKeywordInH1: primary='аренда робота Арди'",
         "primaryKeywordInFirstBlock: primary='аренда робота Арди'",
         "secondaryKeywords: missing: прокат робота Арди, робота Арди на мероприятие, робот робота Арди для выставки, заказать робота Арди",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
@@ -2129,6 +2759,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "243 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, большого формата, аренда большого формата, прокат большого формата, большого формата на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -2138,7 +2812,8 @@
         "primaryKeywordInH1: primary='аренда большого формата'",
         "primaryKeywordInFirstBlock: primary='аренда большого формата'",
         "secondaryKeywords: missing: прокат большого формата, большого формата на мероприятие, робот большого формата для выставки, заказать большого формата",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
@@ -2272,6 +2947,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "239 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота София, аренда робота София, прокат робота София, робота София на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -2281,7 +3000,8 @@
         "primaryKeywordInH1: primary='аренда робота София'",
         "primaryKeywordInFirstBlock: primary='аренда робота София'",
         "secondaryKeywords: missing: прокат робота София, робота София на мероприятие, робот робота София для выставки, заказать робота София",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота София для мероприятий — КИБЕР ПОРТАЛ",
@@ -2415,6 +3135,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "249 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, модульного робота Tron, аренда модульного робота Tron, прокат модульного робота Tron, модульного робота Tron на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -2424,7 +3188,8 @@
         "primaryKeywordInH1: primary='аренда модульного робота Tron'",
         "primaryKeywordInFirstBlock: primary='аренда модульного робота Tron'",
         "secondaryKeywords: missing: прокат модульного робота Tron, модульного робота Tron на мероприятие, робот модульного робота Tron для выставки, заказать модульного робота Tron",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
@@ -2558,6 +3323,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "255 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робота-шахматиста SenseRobot, аренда робота-шахматиста SenseRobot, прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -2567,7 +3376,8 @@
         "primaryKeywordInH1: primary='аренда робота-шахматиста SenseRobot'",
         "primaryKeywordInFirstBlock: primary='аренда робота-шахматиста SenseRobot'",
         "secondaryKeywords: missing: прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие, робот робота-шахматиста SenseRobot для выставки, заказать робота-шахматиста SenseRobot",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
@@ -2701,6 +3511,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "236 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Sketchbot, аренда Sketchbot, прокат Sketchbot, Sketchbot на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -2710,7 +3564,8 @@
         "primaryKeywordInH1: primary='аренда Sketchbot'",
         "primaryKeywordInFirstBlock: primary='аренда Sketchbot'",
         "secondaryKeywords: missing: прокат Sketchbot, Sketchbot на мероприятие, робот Sketchbot для выставки, заказать Sketchbot",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
@@ -2844,6 +3699,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "237 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Unitree G1, аренда Unitree G1, прокат Unitree G1, Unitree G1 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 22 rendered internal links"
         }
       },
       "missing": [],
@@ -2853,7 +3752,8 @@
         "primaryKeywordInH1: primary='аренда Unitree G1'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree G1'",
         "secondaryKeywords: missing: прокат Unitree G1, Unitree G1 на мероприятие, робот Unitree G1 для выставки, заказать Unitree G1",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
@@ -2987,6 +3887,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "238 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Unitree Go2, аренда Unitree Go2, прокат Unitree Go2, Unitree Go2 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -2996,7 +3940,8 @@
         "primaryKeywordInH1: primary='аренда Unitree Go2'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree Go2'",
         "secondaryKeywords: missing: прокат Unitree Go2, Unitree Go2 на мероприятие, робот Unitree Go2 для выставки, заказать Unitree Go2",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -3130,6 +4075,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "237 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Unitree H2, аренда Unitree H2, прокат Unitree H2, Unitree H2 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -3139,7 +4128,8 @@
         "primaryKeywordInH1: primary='аренда Unitree H2'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree H2'",
         "secondaryKeywords: missing: прокат Unitree H2, Unitree H2 на мероприятие, робот Unitree H2 для выставки, заказать Unitree H2",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -3273,6 +4263,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "237 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Unitree R1, аренда Unitree R1, прокат Unitree R1, Unitree R1 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -3282,7 +4316,8 @@
         "primaryKeywordInH1: primary='аренда Unitree R1'",
         "primaryKeywordInFirstBlock: primary='аренда Unitree R1'",
         "secondaryKeywords: missing: прокат Unitree R1, Unitree R1 на мероприятие, робот Unitree R1 для выставки, заказать Unitree R1",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
@@ -3416,6 +4451,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "255 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, интерактивной витрины UV-BOX, аренда интерактивной витрины UV-BOX, прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -3425,7 +4504,8 @@
         "primaryKeywordInH1: primary='аренда интерактивной витрины UV-BOX'",
         "primaryKeywordInFirstBlock: primary='аренда интерактивной витрины UV-BOX'",
         "secondaryKeywords: missing: прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие, робот интерактивной витрины UV-BOX для выставки, заказать интерактивной витрины UV-BOX",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
@@ -3559,6 +4639,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "244 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Xiaomi Cyberdog 2, аренда Xiaomi Cyberdog 2, прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 5"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "3 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -3568,7 +4692,8 @@
         "primaryKeywordInH1: primary='аренда Xiaomi Cyberdog 2'",
         "primaryKeywordInFirstBlock: primary='аренда Xiaomi Cyberdog 2'",
         "secondaryKeywords: missing: прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки, заказать Xiaomi Cyberdog 2",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
@@ -3702,6 +4827,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "229 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, аренда роботов для мероприятий, подборка роботов, роботы для выставки"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "warning",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
@@ -3713,7 +4882,9 @@
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
         "secondaryKeywords: missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события",
         "breadcrumbs: visible breadcrumbs missing",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "faqQuestions: 0 FAQ questions",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
@@ -3846,6 +5017,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "224 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, аренда роботов для мероприятий, подборка роботов, роботы для выставки"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "warning",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 24 rendered internal links"
         }
       },
       "missing": [],
@@ -3856,7 +5071,9 @@
         "primaryKeywordInH1: primary='аренда роботов для мероприятий'",
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
         "secondaryKeywords: missing: роботы для выставки, роботы для презентации, роботы для события",
-        "breadcrumbs: visible breadcrumbs missing"
+        "breadcrumbs: visible breadcrumbs missing",
+        "faqQuestions: 0 FAQ questions",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Роботы-собаки в аренду — КИБЕР ПОРТАЛ",
@@ -3989,6 +5206,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "222 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, аренда роботов для мероприятий, подборка роботов, роботы для выставки"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "warning",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 24 rendered internal links"
         }
       },
       "missing": [],
@@ -3998,7 +5259,9 @@
         "primaryKeywordInH1: primary='аренда роботов для мероприятий'",
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
         "secondaryKeywords: missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события",
-        "breadcrumbs: visible breadcrumbs missing"
+        "breadcrumbs: visible breadcrumbs missing",
+        "faqQuestions: 0 FAQ questions",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Подборки роботов — КИБЕР ПОРТАЛ",
@@ -4131,6 +5394,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "221 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, статьи о роботах для мероприятий, как выбрать робота для мероприятия, роботы на выставку"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
@@ -4140,7 +5447,8 @@
         "primaryKeywordInH1: primary='статьи о роботах для мероприятий'",
         "primaryKeywordInFirstBlock: primary='статьи о роботах для мероприятий'",
         "secondaryKeywords: missing: как выбрать робота для мероприятия, роботы на выставку, идеи с роботами для события",
-        "requiredSchemaTypes: missing: BlogPosting; present: CollectionPage"
+        "requiredSchemaTypes: missing: BlogPosting; present: CollectionPage",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Блог Кибер Гоши — КИБЕР ПОРТАЛ",
@@ -4273,6 +5581,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "211 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, новости робототехники, роботы для мероприятий новости, технологии робототехники"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 18 rendered internal links"
         }
       },
       "missing": [],
@@ -4282,7 +5634,8 @@
         "primaryKeywordInH1: primary='новости робототехники'",
         "secondaryKeywords: missing: роботы для мероприятий новости, технологии робототехники",
         "requiredSchemaTypes: missing: NewsArticle; present: CollectionPage",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Новости робототехники — КИБЕР ПОРТАЛ",
@@ -4415,6 +5768,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "214 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, контакты КИБЕР ПОРТАЛ, заказать робота, заявка на аренду робота"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "canonical listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "markdown alternate present or covered by llms.txt"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "1 AI related pages; 18 rendered internal links"
         }
       },
       "missing": [],
@@ -4424,7 +5821,8 @@
         "primaryKeywordInFirstBlock: primary='контакты КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: заказать робота, заявка на аренду робота, связаться с КИБЕР ПОРТАЛ",
         "breadcrumbs: visible breadcrumbs missing",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Контакты — КИБЕР ПОРТАЛ",
@@ -4557,6 +5955,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "225 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "0 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -4567,7 +6009,8 @@
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "requiredSchemaTypes: missing: WebPage; present: ",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Политика обработки персональных данных — КИБЕР ПОРТАЛ",
@@ -4698,6 +6141,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "239 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "0 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -4706,7 +6193,8 @@
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "requiredSchemaTypes: missing: WebPage; present: ",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Согласие на обработку персональных данных — КИБЕР ПОРТАЛ",
@@ -4837,6 +6325,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "213 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "0 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -4847,7 +6379,8 @@
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "requiredSchemaTypes: missing: WebPage; present: ",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Политика использования файлов cookie — КИБЕР ПОРТАЛ",
@@ -4978,6 +6511,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "225 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "3 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "0 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -4986,7 +6563,8 @@
         "primaryKeywordInH1: primary='документы КИБЕР ПОРТАЛ'",
         "primaryKeywordInFirstBlock: primary='документы КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: политика конфиденциальности, согласие на обработку данных",
-        "requiredSchemaTypes: missing: WebPage; present: "
+        "requiredSchemaTypes: missing: WebPage; present: ",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Пользовательское соглашение — КИБЕР ПОРТАЛ",
@@ -5117,6 +6695,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "143 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "2 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "0 AI related pages; 18 rendered internal links"
         }
       },
       "missing": [],
@@ -5128,7 +6750,8 @@
         "primaryKeywordInFirstBlock: primary='заявка на аренду робота'",
         "secondaryKeywords: missing: форма заявки робот, подобрать робота на мероприятие",
         "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Заявка на подбор робота — КИБЕР ПОРТАЛ",
@@ -5261,6 +6884,50 @@
         "robotsTxt": {
           "status": "pass",
           "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "137 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "2 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "0 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "pass",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "pass",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "warning",
+          "message": "owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "0 AI related pages; 20 rendered internal links"
         }
       },
       "missing": [],
@@ -5272,7 +6939,8 @@
         "primaryKeywordInFirstBlock: primary='заявка на аренду робота'",
         "secondaryKeywords: missing: форма заявки робот, подобрать робота на мероприятие",
         "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList",
-        "cta: required CTA target missing"
+        "cta: required CTA target missing",
+        "aiCrawlerRobotsPolicy: owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy"
       ],
       "rendered": {
         "title": "Заявка принята — КИБЕР ПОРТАЛ",

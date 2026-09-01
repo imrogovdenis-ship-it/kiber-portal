@@ -6,12 +6,19 @@
   "generatedFrom": [
     "data/seo/launch-routes.json",
     "src/content/robots.generated.json",
-    "owner SEO component brief 2026-09-01"
+    "owner SEO component brief 2026-09-01",
+    "owner AI search / LLM visibility brief 2026-09-01",
+    "https://platform.openai.com/docs/bots",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "https://llmstxt.org"
   ],
   "policy": {
     "massPageGenerationBlockedUntil": "SEO component contract approved and audit baseline reviewed",
     "metaKeywordsAreNotSourceOfTruth": true,
-    "productionSideEffects": false
+    "productionSideEffects": false,
+    "aiSearchVisibilityLayer": "draft_for_owner_review",
+    "llmsTxtEnabled": true,
+    "aiCrawlerRobotsDecisionRequired": true
   },
   "pages": [
     {
@@ -70,7 +77,54 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "КИБЕР ПОРТАЛ — сервис аренды роботов для мероприятий, выставок, презентаций, промо-акций, корпоративов и частных событий. Главная страница должна быстро объяснять, какие роботы доступны, для каких задач они подходят и как отправить заявку.",
+        "entityType": "organization",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "аренда роботов",
+            "type": "service"
+          },
+          {
+            "name": "прокат роботов",
+            "type": "service"
+          },
+          {
+            "name": "роботы на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Каких роботов можно арендовать в КИБЕР ПОРТАЛЕ?",
+          "Для каких мероприятий подходят роботы?",
+          "Как заказать робота на мероприятие?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Аренда и прокат роботов для мероприятий, выставок, презентаций и шоу. Подберём модель, сценарий и сопровождение под вашу площадку.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Organization",
+          "WebSite"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-agibot-x2/",
@@ -144,7 +198,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Agibot X2 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Agibot X2",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Agibot X2",
+            "type": "service"
+          },
+          {
+            "name": "прокат Agibot X2",
+            "type": "service"
+          },
+          {
+            "name": "Agibot X2 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Agibot X2?",
+          "Для каких мероприятий подходит Agibot X2?",
+          "Сколько стоит аренда Agibot X2?",
+          "Что входит в аренду Agibot X2?",
+          "Как заказать Agibot X2?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-гуманоида Agibot X2 с оператором и доставкой по Москве и России. Танцы, интерактив, автономная навигация. Расчёт стоимости за 1 день.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Agibot X2?",
+          "Для каких мероприятий подходит Agibot X2?",
+          "Сколько стоит аренда Agibot X2?",
+          "Что входит в аренду Agibot X2?",
+          "Как заказать Agibot X2?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-bellabot/",
@@ -218,7 +333,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота-официанта BellaBot — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота-официанта BellaBot",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота-официанта BellaBot",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота-официанта BellaBot",
+            "type": "service"
+          },
+          {
+            "name": "робота-официанта BellaBot на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота-официанта BellaBot?",
+          "Для каких мероприятий подходит робота-официанта BellaBot?",
+          "Сколько стоит аренда робота-официанта BellaBot?",
+          "Что входит в аренду робота-официанта BellaBot?",
+          "Как заказать робота-официанта BellaBot?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-официанта BellaBot с доставкой и настройкой в Москве и по России. Развозит блюда и напитки в паре с персоналом. Рассчитаем стоимость за 1 час.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота-официанта BellaBot?",
+          "Для каких мероприятий подходит робота-официанта BellaBot?",
+          "Сколько стоит аренда робота-официанта BellaBot?",
+          "Что входит в аренду робота-официанта BellaBot?",
+          "Как заказать робота-официанта BellaBot?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-glambot/",
@@ -292,7 +468,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота GlamBot — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота GlamBot",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота GlamBot",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота GlamBot",
+            "type": "service"
+          },
+          {
+            "name": "робота GlamBot на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота GlamBot?",
+          "Для каких мероприятий подходит робота GlamBot?",
+          "Сколько стоит аренда робота GlamBot?",
+          "Что входит в аренду робота GlamBot?",
+          "Как заказать робота GlamBot?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота GlamBot?",
+          "Для каких мероприятий подходит робота GlamBot?",
+          "Сколько стоит аренда робота GlamBot?",
+          "Что входит в аренду робота GlamBot?",
+          "Как заказать робота GlamBot?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-inchbot-l1-w-edu/",
@@ -366,7 +603,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Inchbot L1-W EDU — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Inchbot L1-W EDU",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Inchbot L1-W EDU",
+            "type": "service"
+          },
+          {
+            "name": "прокат Inchbot L1-W EDU",
+            "type": "service"
+          },
+          {
+            "name": "Inchbot L1-W EDU на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Inchbot L1-W EDU?",
+          "Для каких мероприятий подходит Inchbot L1-W EDU?",
+          "Сколько стоит аренда Inchbot L1-W EDU?",
+          "Что входит в аренду Inchbot L1-W EDU?",
+          "Как заказать Inchbot L1-W EDU?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат образовательного робота-квадропеда Inchbot L1-W EDU: занятия по робототехнике, демо на выставках, доставка по Москве и регионам. Оставьте заявку.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Inchbot L1-W EDU?",
+          "Для каких мероприятий подходит Inchbot L1-W EDU?",
+          "Сколько стоит аренда Inchbot L1-W EDU?",
+          "Что входит в аренду Inchbot L1-W EDU?",
+          "Как заказать Inchbot L1-W EDU?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-kettybot/",
@@ -440,7 +738,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота-официанта KettyBot — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота-официанта KettyBot",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота-официанта KettyBot",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота-официанта KettyBot",
+            "type": "service"
+          },
+          {
+            "name": "робота-официанта KettyBot на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота-официанта KettyBot?",
+          "Для каких мероприятий подходит робота-официанта KettyBot?",
+          "Сколько стоит аренда робота-официанта KettyBot?",
+          "Что входит в аренду робота-официанта KettyBot?",
+          "Как заказать робота-официанта KettyBot?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-официанта KettyBot для ресторанов, кафе и отелей: доставка блюд, встреча гостей, рекламный экран. Расчёт стоимости за один день.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота-официанта KettyBot?",
+          "Для каких мероприятий подходит робота-официанта KettyBot?",
+          "Сколько стоит аренда робота-официанта KettyBot?",
+          "Что входит в аренду робота-официанта KettyBot?",
+          "Как заказать робота-официанта KettyBot?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-klipmeiker/",
@@ -514,7 +873,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота Клипмейкер — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота Клипмейкер",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота Клипмейкер",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота Клипмейкер",
+            "type": "service"
+          },
+          {
+            "name": "робота Клипмейкер на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота Клипмейкер?",
+          "Для каких мероприятий подходит робота Клипмейкер?",
+          "Сколько стоит аренда робота Клипмейкер?",
+          "Что входит в аренду робота Клипмейкер?",
+          "Как заказать робота Клипмейкер?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Клипмейкер — роборука с камерой, которая сама снимает динамичное моушн-видео гостей. Прокат для мероприятий и контента в соцсети по всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота Клипмейкер?",
+          "Для каких мероприятий подходит робота Клипмейкер?",
+          "Сколько стоит аренда робота Клипмейкер?",
+          "Что входит в аренду робота Клипмейкер?",
+          "Как заказать робота Клипмейкер?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-mini-robo-kofeyni/",
@@ -588,7 +1008,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "мини робо-кофейни — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "мини робо-кофейни",
+            "type": "robot"
+          },
+          {
+            "name": "аренда мини робо-кофейни",
+            "type": "service"
+          },
+          {
+            "name": "прокат мини робо-кофейни",
+            "type": "service"
+          },
+          {
+            "name": "мини робо-кофейни на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать мини робо-кофейни?",
+          "Для каких мероприятий подходит мини робо-кофейни?",
+          "Сколько стоит аренда мини робо-кофейни?",
+          "Что входит в аренду мини робо-кофейни?",
+          "Как заказать мини робо-кофейни?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать мини робо-кофейни?",
+          "Для каких мероприятий подходит мини робо-кофейни?",
+          "Сколько стоит аренда мини робо-кофейни?",
+          "Что входит в аренду мини робо-кофейни?",
+          "Как заказать мини робо-кофейни?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-noetix-bumi/",
@@ -662,7 +1143,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Noetix Bumi — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Noetix Bumi",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Noetix Bumi",
+            "type": "service"
+          },
+          {
+            "name": "прокат Noetix Bumi",
+            "type": "service"
+          },
+          {
+            "name": "Noetix Bumi на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Noetix Bumi?",
+          "Для каких мероприятий подходит Noetix Bumi?",
+          "Сколько стоит аренда Noetix Bumi?",
+          "Что входит в аренду Noetix Bumi?",
+          "Как заказать Noetix Bumi?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат нового робота-гуманоида Noetix Bumi для мероприятий в Москве и по всей России. Доставка, настройка, оператор. Рассчитаем стоимость за 1 час.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Noetix Bumi?",
+          "Для каких мероприятий подходит Noetix Bumi?",
+          "Сколько стоит аренда Noetix Bumi?",
+          "Что входит в аренду Noetix Bumi?",
+          "Как заказать Noetix Bumi?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-promobot-v4/",
@@ -736,7 +1278,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Promobot V4 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Promobot V4",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Promobot V4",
+            "type": "service"
+          },
+          {
+            "name": "прокат Promobot V4",
+            "type": "service"
+          },
+          {
+            "name": "Promobot V4 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Promobot V4?",
+          "Для каких мероприятий подходит Promobot V4?",
+          "Сколько стоит аренда Promobot V4?",
+          "Что входит в аренду Promobot V4?",
+          "Как заказать Promobot V4?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Promobot V4 — автономный робот-промоутер с распознаванием лиц и речью на 7 языках. Прокат для выставок и корпоративов по Москве и России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Promobot V4?",
+          "Для каких мероприятий подходит Promobot V4?",
+          "Сколько стоит аренда Promobot V4?",
+          "Что входит в аренду Promobot V4?",
+          "Как заказать Promobot V4?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-robo-kofeyni/",
@@ -810,7 +1413,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота-кофейни — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота-кофейни",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота-кофейни",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота-кофейни",
+            "type": "service"
+          },
+          {
+            "name": "робота-кофейни на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота-кофейни?",
+          "Для каких мероприятий подходит робота-кофейни?",
+          "Сколько стоит аренда робота-кофейни?",
+          "Что входит в аренду робота-кофейни?",
+          "Как заказать робота-кофейни?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота-кофейни?",
+          "Для каких мероприятий подходит робота-кофейни?",
+          "Сколько стоит аренда робота-кофейни?",
+          "Что входит в аренду робота-кофейни?",
+          "Как заказать робота-кофейни?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-roboshashki/",
@@ -884,7 +1548,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота для игры в шашки — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота для игры в шашки",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота для игры в шашки",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота для игры в шашки",
+            "type": "service"
+          },
+          {
+            "name": "робота для игры в шашки на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота для игры в шашки?",
+          "Для каких мероприятий подходит робота для игры в шашки?",
+          "Сколько стоит аренда робота для игры в шашки?",
+          "Что входит в аренду робота для игры в шашки?",
+          "Как заказать робота для игры в шашки?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робошашки распознают доску камерой и сами делают ход роборукой. Прокат простого и понятного всем гостям аттракциона по всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота для игры в шашки?",
+          "Для каких мероприятий подходит робота для игры в шашки?",
+          "Сколько стоит аренда робота для игры в шашки?",
+          "Что входит в аренду робота для игры в шашки?",
+          "Как заказать робота для игры в шашки?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-robot-barmen/",
@@ -958,7 +1683,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота-бармена «Робобар» — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота-бармена «Робобар»",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота-бармена «Робобар»",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота-бармена «Робобар»",
+            "type": "service"
+          },
+          {
+            "name": "робота-бармена «Робобар» на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота-бармена «Робобар»?",
+          "Для каких мероприятий подходит робота-бармена «Робобар»?",
+          "Сколько стоит аренда робота-бармена «Робобар»?",
+          "Что входит в аренду робота-бармена «Робобар»?",
+          "Как заказать робота-бармена «Робобар»?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота-бармена «Робобар»?",
+          "Для каких мероприятий подходит робота-бармена «Робобар»?",
+          "Сколько стоит аренда робота-бармена «Робобар»?",
+          "Что входит в аренду робота-бармена «Робобар»?",
+          "Как заказать робота-бармена «Робобар»?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-robota-ardi/",
@@ -1032,7 +1818,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота Арди — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота Арди",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота Арди",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота Арди",
+            "type": "service"
+          },
+          {
+            "name": "робота Арди на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота Арди?",
+          "Для каких мероприятий подходит робота Арди?",
+          "Сколько стоит аренда робота Арди?",
+          "Что входит в аренду робота Арди?",
+          "Как заказать робота Арди?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робот Арди — реалистичный андроид Promobot с 600+ микровыражениями лица и ИИ-диалогом. Эксклюзивный прокат для премиальных мероприятий по России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота Арди?",
+          "Для каких мероприятий подходит робота Арди?",
+          "Сколько стоит аренда робота Арди?",
+          "Что входит в аренду робота Арди?",
+          "Как заказать робота Арди?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-robota-hudozhnika-a4/",
@@ -1106,7 +1953,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "большого формата — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "большого формата",
+            "type": "robot"
+          },
+          {
+            "name": "аренда большого формата",
+            "type": "service"
+          },
+          {
+            "name": "прокат большого формата",
+            "type": "service"
+          },
+          {
+            "name": "большого формата на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать большого формата?",
+          "Для каких мероприятий подходит большого формата?",
+          "Сколько стоит аренда большого формата?",
+          "Что входит в аренду большого формата?",
+          "Как заказать большого формата?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать большого формата?",
+          "Для каких мероприятий подходит большого формата?",
+          "Сколько стоит аренда большого формата?",
+          "Что входит в аренду большого формата?",
+          "Как заказать большого формата?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-robota-sofiya/",
@@ -1180,7 +2088,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота София — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота София",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота София",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота София",
+            "type": "service"
+          },
+          {
+            "name": "робота София на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота София?",
+          "Для каких мероприятий подходит робота София?",
+          "Сколько стоит аренда робота София?",
+          "Что входит в аренду робота София?",
+          "Как заказать робота София?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "София Hanson Robotics — самый узнаваемый гуманоид в мире. Прокат робота-андроида на конференцию, форум или премиальное мероприятие.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота София?",
+          "Для каких мероприятий подходит робота София?",
+          "Сколько стоит аренда робота София?",
+          "Что входит в аренду робота София?",
+          "Как заказать робота София?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-robota-tron/",
@@ -1254,7 +2223,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "модульного робота Tron — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "модульного робота Tron",
+            "type": "robot"
+          },
+          {
+            "name": "аренда модульного робота Tron",
+            "type": "service"
+          },
+          {
+            "name": "прокат модульного робота Tron",
+            "type": "service"
+          },
+          {
+            "name": "модульного робота Tron на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать модульного робота Tron?",
+          "Для каких мероприятий подходит модульного робота Tron?",
+          "Сколько стоит аренда модульного робота Tron?",
+          "Что входит в аренду модульного робота Tron?",
+          "Как заказать модульного робота Tron?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робот Tron меняет стопы между шагающим, опорным и колёсным режимом. Прокат для tech-выставок и научных фестивалей по всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать модульного робота Tron?",
+          "Для каких мероприятий подходит модульного робота Tron?",
+          "Сколько стоит аренда модульного робота Tron?",
+          "Что входит в аренду модульного робота Tron?",
+          "Как заказать модульного робота Tron?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-senserobot/",
@@ -1328,7 +2358,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "робота-шахматиста SenseRobot — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робота-шахматиста SenseRobot",
+            "type": "robot"
+          },
+          {
+            "name": "аренда робота-шахматиста SenseRobot",
+            "type": "service"
+          },
+          {
+            "name": "прокат робота-шахматиста SenseRobot",
+            "type": "service"
+          },
+          {
+            "name": "робота-шахматиста SenseRobot на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать робота-шахматиста SenseRobot?",
+          "Для каких мероприятий подходит робота-шахматиста SenseRobot?",
+          "Сколько стоит аренда робота-шахматиста SenseRobot?",
+          "Что входит в аренду робота-шахматиста SenseRobot?",
+          "Как заказать робота-шахматиста SenseRobot?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робот-шахматист SenseRobot с ИИ до уровня гроссмейстера сам делает ходы механической рукой. Прокат для выставок и корпоративов по всей России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать робота-шахматиста SenseRobot?",
+          "Для каких мероприятий подходит робота-шахматиста SenseRobot?",
+          "Сколько стоит аренда робота-шахматиста SenseRobot?",
+          "Что входит в аренду робота-шахматиста SenseRobot?",
+          "Как заказать робота-шахматиста SenseRobot?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-sketchbot/",
@@ -1402,7 +2493,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Sketchbot — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Sketchbot",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Sketchbot",
+            "type": "service"
+          },
+          {
+            "name": "прокат Sketchbot",
+            "type": "service"
+          },
+          {
+            "name": "Sketchbot на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Sketchbot?",
+          "Для каких мероприятий подходит Sketchbot?",
+          "Сколько стоит аренда Sketchbot?",
+          "Что входит в аренду Sketchbot?",
+          "Как заказать Sketchbot?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-художника Sketchbot: ИИ-портреты гостей за минуту, брендирование логотипом, доставка и оператор по Москве и регионам. Расчёт за час.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Sketchbot?",
+          "Для каких мероприятий подходит Sketchbot?",
+          "Сколько стоит аренда Sketchbot?",
+          "Что входит в аренду Sketchbot?",
+          "Как заказать Sketchbot?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-unitree-g1/",
@@ -1476,7 +2628,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Unitree G1 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Unitree G1",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Unitree G1",
+            "type": "service"
+          },
+          {
+            "name": "прокат Unitree G1",
+            "type": "service"
+          },
+          {
+            "name": "Unitree G1 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Unitree G1?",
+          "Для каких мероприятий подходит Unitree G1?",
+          "Сколько стоит аренда Unitree G1?",
+          "Что входит в аренду Unitree G1?",
+          "Как заказать Unitree G1?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Гуманоид Unitree G1 на прокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Unitree G1?",
+          "Для каких мероприятий подходит Unitree G1?",
+          "Сколько стоит аренда Unitree G1?",
+          "Что входит в аренду Unitree G1?",
+          "Как заказать Unitree G1?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-unitree-go2/",
@@ -1550,7 +2763,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Unitree Go2 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Unitree Go2",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Unitree Go2",
+            "type": "service"
+          },
+          {
+            "name": "прокат Unitree Go2",
+            "type": "service"
+          },
+          {
+            "name": "Unitree Go2 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Unitree Go2?",
+          "Для каких мероприятий подходит Unitree Go2?",
+          "Сколько стоит аренда Unitree Go2?",
+          "Что входит в аренду Unitree Go2?",
+          "Как заказать Unitree Go2?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Робот-собака Unitree Go2 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Unitree Go2?",
+          "Для каких мероприятий подходит Unitree Go2?",
+          "Сколько стоит аренда Unitree Go2?",
+          "Что входит в аренду Unitree Go2?",
+          "Как заказать Unitree Go2?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-unitree-h2/",
@@ -1624,7 +2898,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Unitree H2 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Unitree H2",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Unitree H2",
+            "type": "service"
+          },
+          {
+            "name": "прокат Unitree H2",
+            "type": "service"
+          },
+          {
+            "name": "Unitree H2 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Unitree H2?",
+          "Для каких мероприятий подходит Unitree H2?",
+          "Сколько стоит аренда Unitree H2?",
+          "Что входит в аренду Unitree H2?",
+          "Как заказать Unitree H2?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-гуманоида Unitree H2 с оператором и доставкой по Москве и регионам. Новейшая модель Unitree с мимикой и ИИ. Рассчитаем стоимость за 1 час.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Unitree H2?",
+          "Для каких мероприятий подходит Unitree H2?",
+          "Сколько стоит аренда Unitree H2?",
+          "Что входит в аренду Unitree H2?",
+          "Как заказать Unitree H2?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-unitree-r1/",
@@ -1698,7 +3033,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Unitree R1 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Unitree R1",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Unitree R1",
+            "type": "service"
+          },
+          {
+            "name": "прокат Unitree R1",
+            "type": "service"
+          },
+          {
+            "name": "Unitree R1 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Unitree R1?",
+          "Для каких мероприятий подходит Unitree R1?",
+          "Сколько стоит аренда Unitree R1?",
+          "Что входит в аренду Unitree R1?",
+          "Как заказать Unitree R1?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Прокат робота-гуманоида Unitree R1 с оператором: акробатика, доставка, настройка. Компактный андроид для выставок в Москве и регионах. Рассчитаем стоимость.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Unitree R1?",
+          "Для каких мероприятий подходит Unitree R1?",
+          "Сколько стоит аренда Unitree R1?",
+          "Что входит в аренду Unitree R1?",
+          "Как заказать Unitree R1?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-uv-box/",
@@ -1772,7 +3168,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "интерактивной витрины UV-BOX — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "интерактивной витрины UV-BOX",
+            "type": "robot"
+          },
+          {
+            "name": "аренда интерактивной витрины UV-BOX",
+            "type": "service"
+          },
+          {
+            "name": "прокат интерактивной витрины UV-BOX",
+            "type": "service"
+          },
+          {
+            "name": "интерактивной витрины UV-BOX на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать интерактивной витрины UV-BOX?",
+          "Для каких мероприятий подходит интерактивной витрины UV-BOX?",
+          "Сколько стоит аренда интерактивной витрины UV-BOX?",
+          "Что входит в аренду интерактивной витрины UV-BOX?",
+          "Как заказать интерактивной витрины UV-BOX?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "UV-BOX — сенсорная витрина, где 3D-товар парит прямо в воздухе. Прокат интерактивной витрины на выставку, стенд или открытие бутика.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать интерактивной витрины UV-BOX?",
+          "Для каких мероприятий подходит интерактивной витрины UV-BOX?",
+          "Сколько стоит аренда интерактивной витрины UV-BOX?",
+          "Что входит в аренду интерактивной витрины UV-BOX?",
+          "Как заказать интерактивной витрины UV-BOX?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/robots/arenda-xiaomi-cyberdog-2/",
@@ -1846,7 +3303,68 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Xiaomi Cyberdog 2 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.",
+        "entityType": "service",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Xiaomi Cyberdog 2",
+            "type": "robot"
+          },
+          {
+            "name": "аренда Xiaomi Cyberdog 2",
+            "type": "service"
+          },
+          {
+            "name": "прокат Xiaomi Cyberdog 2",
+            "type": "service"
+          },
+          {
+            "name": "Xiaomi Cyberdog 2 на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли арендовать Xiaomi Cyberdog 2?",
+          "Для каких мероприятий подходит Xiaomi Cyberdog 2?",
+          "Сколько стоит аренда Xiaomi Cyberdog 2?",
+          "Что входит в аренду Xiaomi Cyberdog 2?",
+          "Как заказать Xiaomi Cyberdog 2?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Аренда робота-собаки Xiaomi Cyberdog 2 с оператором: голосовые команды, сальто, фотозона для гостей. Доставка по Москве и другим городам России.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "faqQuestions": [
+          "Можно ли арендовать Xiaomi Cyberdog 2?",
+          "Для каких мероприятий подходит Xiaomi Cyberdog 2?",
+          "Сколько стоит аренда Xiaomi Cyberdog 2?",
+          "Что входит в аренду Xiaomi Cyberdog 2?",
+          "Как заказать Xiaomi Cyberdog 2?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/compilations/",
+          "/contacts/",
+          "/roboty-gumanoidy/"
+        ]
+      }
     },
     {
       "slug": "/roboty-gumanoidy/",
@@ -1911,7 +3429,53 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Страница «Гуманоидные роботы для мероприятий» помогает выбрать подходящих роботов для сценария или категории. Она должна объяснять, кому подходит подборка, какие модели выбрать, как сравнить варианты и как обратиться за подбором.",
+        "entityType": "collection",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "аренда роботов для мероприятий",
+            "type": "service"
+          },
+          {
+            "name": "подборка роботов",
+            "type": "service"
+          },
+          {
+            "name": "роботы для выставки",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какого робота выбрать для мероприятия?",
+          "Какие роботы подходят для этого сценария?",
+          "Как заказать подбор робота?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Гуманоидные роботы для сцены, стенда, welcome-зоны и презентаций. Подберите робота для аренды на мероприятие с сопровождением.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "CollectionPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/roboty-sobaki/",
@@ -1976,7 +3540,53 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Страница «Роботы-собаки для мероприятий» помогает выбрать подходящих роботов для сценария или категории. Она должна объяснять, кому подходит подборка, какие модели выбрать, как сравнить варианты и как обратиться за подбором.",
+        "entityType": "collection",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "аренда роботов для мероприятий",
+            "type": "service"
+          },
+          {
+            "name": "подборка роботов",
+            "type": "service"
+          },
+          {
+            "name": "роботы для выставки",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какого робота выбрать для мероприятия?",
+          "Какие роботы подходят для этого сценария?",
+          "Как заказать подбор робота?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Роботы-собаки для выставок, промо, фотоконтента и демонстраций технологий. Подбор модели и сценария под событие.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "CollectionPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/compilations/",
@@ -2041,7 +3651,53 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Страница «Подборки роботов для аренды» помогает выбрать подходящих роботов для сценария или категории. Она должна объяснять, кому подходит подборка, какие модели выбрать, как сравнить варианты и как обратиться за подбором.",
+        "entityType": "collection",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "аренда роботов для мероприятий",
+            "type": "service"
+          },
+          {
+            "name": "подборка роботов",
+            "type": "service"
+          },
+          {
+            "name": "роботы для выставки",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какого робота выбрать для мероприятия?",
+          "Какие роботы подходят для этого сценария?",
+          "Как заказать подбор робота?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Подборки роботов по сценариям мероприятий: выставки, свадьбы, презентации, промо-акции и корпоративы.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "CollectionPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/articles/",
@@ -2104,7 +3760,53 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Блог Кибер Гоши собирает практические статьи о выборе и использовании роботов на мероприятиях. Страница должна помогать AI-системам понять темы материалов и связать информационные статьи с коммерческими страницами аренды.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "статьи о роботах для мероприятий",
+            "type": "topic"
+          },
+          {
+            "name": "как выбрать робота для мероприятия",
+            "type": "scenario"
+          },
+          {
+            "name": "роботы на выставку",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие статьи помогут выбрать робота?",
+          "Как выбрать робота для мероприятия?",
+          "Где найти практические сценарии?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Блог Кибер Гоши: практические статьи о выборе роботов для мероприятий, выставок, презентаций и частных событий.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/news/",
@@ -2166,7 +3868,53 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Новости КИБЕР ПОРТАЛА и робототехники должны давать проверяемый контекст о событиях, технологиях и роботах для мероприятий без выдуманных фактов. Для AI-поиска важны даты, источники, сущности и связанные услуги.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "новости робототехники",
+            "type": "topic"
+          },
+          {
+            "name": "роботы для мероприятий новости",
+            "type": "scenario"
+          },
+          {
+            "name": "технологии робототехники",
+            "type": "service"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие новости робототехники важны для мероприятий?",
+          "Что нового у КИБЕР ПОРТАЛА?",
+          "Какие технологии роботов появляются для бизнеса?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Новости КИБЕР ПОРТАЛА и робототехники: события, технологии, роботы для мероприятий и идеи для бизнеса.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "NewsArticle"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/contacts/",
@@ -2223,7 +3971,53 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch"
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Контакты КИБЕР ПОРТАЛА объясняют, как связаться с компанией, отправить заявку на аренду робота, проверить реквизиты и выбрать удобный канал связи. Важные контактные факты должны быть текстовыми и машинно читаемыми.",
+        "entityType": "organization",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "контакты КИБЕР ПОРТАЛ",
+            "type": "topic"
+          },
+          {
+            "name": "заказать робота",
+            "type": "service"
+          },
+          {
+            "name": "заявка на аренду робота",
+            "type": "service"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Как связаться с КИБЕР ПОРТАЛОМ?",
+          "Куда отправить заявку на аренду робота?",
+          "Какие контакты и реквизиты у компании?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Контакты КИБЕР ПОРТАЛА для подбора робота на мероприятие: телефон, email, мессенджеры, реквизиты и заявка.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "ContactPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/contacts/"
+        ]
+      }
     },
     {
       "slug": "/privacy-policy/",
@@ -2267,7 +4061,51 @@
       "imagesRequired": [],
       "ctaRequired": [],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "available-not-sitemap"
+      "sourceRouteStatus": "available-not-sitemap",
+      "aiVisibility": {
+        "aiSummary": "Юридическая страница «Политика конфиденциальности» содержит официальный текст условий КИБЕР ПОРТАЛА. Для AI-систем она должна быть понятной, текстовой, связанной с другими правовыми документами и без маркетингового переспама.",
+        "entityType": "legal",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "документы КИБЕР ПОРТАЛ",
+            "type": "topic"
+          },
+          {
+            "name": "политика конфиденциальности",
+            "type": "service"
+          },
+          {
+            "name": "согласие на обработку данных",
+            "type": "service"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие юридические условия действуют на сайте?",
+          "Как обрабатываются персональные данные?",
+          "Где найти правовые документы КИБЕР ПОРТАЛА?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Политика конфиденциальности КИБЕР ПОРТАЛА: порядок обработки и защиты персональных данных пользователей сайта.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": []
+      }
     },
     {
       "slug": "/consent/",
@@ -2311,7 +4149,51 @@
       "imagesRequired": [],
       "ctaRequired": [],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "available-not-sitemap"
+      "sourceRouteStatus": "available-not-sitemap",
+      "aiVisibility": {
+        "aiSummary": "Юридическая страница «Согласие на обработку персональных данных» содержит официальный текст условий КИБЕР ПОРТАЛА. Для AI-систем она должна быть понятной, текстовой, связанной с другими правовыми документами и без маркетингового переспама.",
+        "entityType": "legal",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "документы КИБЕР ПОРТАЛ",
+            "type": "topic"
+          },
+          {
+            "name": "политика конфиденциальности",
+            "type": "service"
+          },
+          {
+            "name": "согласие на обработку данных",
+            "type": "service"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие юридические условия действуют на сайте?",
+          "Как обрабатываются персональные данные?",
+          "Где найти правовые документы КИБЕР ПОРТАЛА?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Согласие на обработку персональных данных при отправке заявки на сайте КИБЕР ПОРТАЛА.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": []
+      }
     },
     {
       "slug": "/cookie-policy/",
@@ -2355,7 +4237,51 @@
       "imagesRequired": [],
       "ctaRequired": [],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "available-not-sitemap"
+      "sourceRouteStatus": "available-not-sitemap",
+      "aiVisibility": {
+        "aiSummary": "Юридическая страница «Политика cookie» содержит официальный текст условий КИБЕР ПОРТАЛА. Для AI-систем она должна быть понятной, текстовой, связанной с другими правовыми документами и без маркетингового переспама.",
+        "entityType": "legal",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "документы КИБЕР ПОРТАЛ",
+            "type": "topic"
+          },
+          {
+            "name": "политика конфиденциальности",
+            "type": "service"
+          },
+          {
+            "name": "согласие на обработку данных",
+            "type": "service"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие юридические условия действуют на сайте?",
+          "Как обрабатываются персональные данные?",
+          "Где найти правовые документы КИБЕР ПОРТАЛА?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Политика использования cookie на сайте КИБЕР ПОРТАЛА и описание применяемых технологий.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": []
+      }
     },
     {
       "slug": "/terms/",
@@ -2399,7 +4325,51 @@
       "imagesRequired": [],
       "ctaRequired": [],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "available-not-sitemap"
+      "sourceRouteStatus": "available-not-sitemap",
+      "aiVisibility": {
+        "aiSummary": "Юридическая страница «Пользовательское соглашение» содержит официальный текст условий КИБЕР ПОРТАЛА. Для AI-систем она должна быть понятной, текстовой, связанной с другими правовыми документами и без маркетингового переспама.",
+        "entityType": "legal",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "документы КИБЕР ПОРТАЛ",
+            "type": "topic"
+          },
+          {
+            "name": "политика конфиденциальности",
+            "type": "service"
+          },
+          {
+            "name": "согласие на обработку данных",
+            "type": "service"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие юридические условия действуют на сайте?",
+          "Как обрабатываются персональные данные?",
+          "Где найти правовые документы КИБЕР ПОРТАЛА?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Пользовательское соглашение сайта КИБЕР ПОРТАЛ и условия использования материалов и сервисов.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": []
+      }
     },
     {
       "slug": "/lead/request/",
@@ -2449,7 +4419,50 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "available-not-sitemap"
+      "sourceRouteStatus": "available-not-sitemap",
+      "aiVisibility": {
+        "aiSummary": "Страница «Заявка на аренду робота» должна ясно объяснять тему заявка на аренду робота, основные сущности, вопросы пользователя и следующий шаг.",
+        "entityType": "conversion",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "заявка на аренду робота",
+            "type": "service"
+          },
+          {
+            "name": "форма заявки робот",
+            "type": "service"
+          },
+          {
+            "name": "подобрать робота на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Что находится на этой странице?",
+          "Какой следующий шаг для пользователя?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Форма заявки на подбор и аренду робота для мероприятия через КИБЕР ПОРТАЛ в preview-safe режиме.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": []
+      }
     },
     {
       "slug": "/lead/thanks/",
@@ -2499,7 +4512,50 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "available-not-sitemap"
+      "sourceRouteStatus": "available-not-sitemap",
+      "aiVisibility": {
+        "aiSummary": "Страница «Спасибо за заявку» должна ясно объяснять тему заявка на аренду робота, основные сущности, вопросы пользователя и следующий шаг.",
+        "entityType": "conversion",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "заявка на аренду робота",
+            "type": "service"
+          },
+          {
+            "name": "форма заявки робот",
+            "type": "service"
+          },
+          {
+            "name": "подобрать робота на мероприятие",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Что находится на этой странице?",
+          "Какой следующий шаг для пользователя?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Страница подтверждения получения заявки КИБЕР ПОРТАЛА после отправки формы.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage"
+        ],
+        "faqQuestions": [],
+        "comparisonTargets": [],
+        "relatedPages": []
+      }
     }
   ]
 }

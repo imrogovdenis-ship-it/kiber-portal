@@ -36,6 +36,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 239 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, аренда роботов, прокат роботов, роботы на мероприятие
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 36 rendered internal links
 
 ### /robots/arenda-agibot-x2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -67,6 +78,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 236 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Agibot X2, аренда Agibot X2, прокат Agibot X2, Agibot X2 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-bellabot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -98,6 +120,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 252 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота-официанта BellaBot, аренда робота-официанта BellaBot, прокат робота-официанта BellaBot, робота-официанта BellaBot на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-glambot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -129,6 +162,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 241 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота GlamBot, аренда робота GlamBot, прокат робота GlamBot, робота GlamBot на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-inchbot-l1-w-edu/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -160,6 +204,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 243 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Inchbot L1-W EDU, аренда Inchbot L1-W EDU, прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-kettybot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -191,6 +246,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 252 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота-официанта KettyBot, аренда робота-официанта KettyBot, прокат робота-официанта KettyBot, робота-официанта KettyBot на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-klipmeiker/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -222,6 +288,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 244 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота Клипмейкер, аренда робота Клипмейкер, прокат робота Клипмейкер, робота Клипмейкер на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-mini-robo-kofeyni/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -253,6 +330,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 244 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, мини робо-кофейни, аренда мини робо-кофейни, прокат мини робо-кофейни, мини робо-кофейни на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-noetix-bumi/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -284,6 +372,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 238 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Noetix Bumi, аренда Noetix Bumi, прокат Noetix Bumi, Noetix Bumi на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-promobot-v4/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -315,6 +414,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 238 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Promobot V4, аренда Promobot V4, прокат Promobot V4, Promobot V4 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-robo-kofeyni/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -346,6 +456,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 241 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота-кофейни, аренда робота-кофейни, прокат робота-кофейни, робота-кофейни на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-roboshashki/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -377,6 +498,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 250 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота для игры в шашки, аренда робота для игры в шашки, прокат робота для игры в шашки, робота для игры в шашки на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-robot-barmen/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -408,6 +540,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 251 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота-бармена «Робобар», аренда робота-бармена «Робобар», прокат робота-бармена «Робобар», робота-бармена «Робобар» на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-robota-ardi/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -439,6 +582,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 238 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота Арди, аренда робота Арди, прокат робота Арди, робота Арди на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-robota-hudozhnika-a4/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -470,6 +624,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 243 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, большого формата, аренда большого формата, прокат большого формата, большого формата на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-robota-sofiya/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -501,6 +666,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 239 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота София, аренда робота София, прокат робота София, робота София на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-robota-tron/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -532,6 +708,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 249 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, модульного робота Tron, аренда модульного робота Tron, прокат модульного робота Tron, модульного робота Tron на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-senserobot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -563,6 +750,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 255 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робота-шахматиста SenseRobot, аренда робота-шахматиста SenseRobot, прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-sketchbot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -594,6 +792,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 236 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Sketchbot, аренда Sketchbot, прокат Sketchbot, Sketchbot на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-unitree-g1/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -625,6 +834,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 237 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Unitree G1, аренда Unitree G1, прокат Unitree G1, Unitree G1 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 22 rendered internal links
 
 ### /robots/arenda-unitree-go2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -656,6 +876,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 238 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Unitree Go2, аренда Unitree Go2, прокат Unitree Go2, Unitree Go2 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-unitree-h2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -687,6 +918,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 237 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Unitree H2, аренда Unitree H2, прокат Unitree H2, Unitree H2 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-unitree-r1/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -718,6 +960,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 237 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Unitree R1, аренда Unitree R1, прокат Unitree R1, Unitree R1 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-uv-box/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -749,6 +1002,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 255 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, интерактивной витрины UV-BOX, аренда интерактивной витрины UV-BOX, прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-xiaomi-cyberdog-2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -780,6 +1044,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 244 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Xiaomi Cyberdog 2, аренда Xiaomi Cyberdog 2, прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие
+- ✅ `questionAnswerBlocks` — 5 questions; target 5
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 5 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /roboty-gumanoidy/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -811,6 +1086,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 229 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, аренда роботов для мероприятий, подборка роботов, роботы для выставки
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ⚠️ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 26 rendered internal links
 
 ### /roboty-sobaki/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -842,6 +1128,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 224 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, аренда роботов для мероприятий, подборка роботов, роботы для выставки
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ⚠️ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
 
 ### /compilations/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -873,6 +1170,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 222 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, аренда роботов для мероприятий, подборка роботов, роботы для выставки
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ⚠️ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
 
 ### /articles/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -904,6 +1212,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 221 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, статьи о роботах для мероприятий, как выбрать робота для мероприятия, роботы на выставку
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 26 rendered internal links
 
 ### /news/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -935,6 +1254,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 211 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, новости робототехники, роботы для мероприятий новости, технологии робототехники
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 18 rendered internal links
 
 ### /contacts/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -966,6 +1296,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 214 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, контакты КИБЕР ПОРТАЛ, заказать робота, заявка на аренду робота
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — canonical listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 1 AI related pages; 18 rendered internal links
 
 ### /privacy-policy/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -997,6 +1338,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 225 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
 ### /consent/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1028,6 +1380,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 239 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
 ### /cookie-policy/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1059,6 +1422,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 213 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
 ### /terms/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1090,6 +1464,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 225 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, документы КИБЕР ПОРТАЛ, политика конфиденциальности, согласие на обработку данных
+- ✅ `questionAnswerBlocks` — 3 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 
 ### /lead/request/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1121,6 +1506,17 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 143 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие
+- ✅ `questionAnswerBlocks` — 2 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 
 ### /lead/thanks/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1152,4 +1548,15 @@ Checked: 37 routes; pass: 0; warnings: 37; failed: 0
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 137 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие
+- ✅ `questionAnswerBlocks` — 2 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ⚠️ `aiCrawlerRobotsPolicy` — owner decision required for OAI-SearchBot / ChatGPT-User / GPTBot policy
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
 

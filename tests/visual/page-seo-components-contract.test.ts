@@ -7,6 +7,10 @@ const root = process.cwd();
 const passportsPath = resolve(root, 'data/seo/page-seo-passports.json');
 const keywordMapPath = resolve(root, 'data/seo/keyword-map.json');
 const auditorPath = resolve(root, 'scripts/audit_page_seo_components.py');
+const aiChecklistPath = resolve(root, 'docs/ai-search-visibility-checklist.md');
+const aiContractPath = resolve(root, 'data/seo/ai-search-visibility-contract.draft.json');
+const aiEntityMapPath = resolve(root, 'data/seo/ai-entity-map.json');
+const llmsTxtPath = resolve(root, 'public/llms.txt');
 const packagePath = resolve(root, 'package.json');
 
 function readJson(path: string) {
@@ -78,5 +82,52 @@ test('keyword map is aligned with SEO passports and keeps query intent separate 
     assert.deepEqual(entry.secondaryKeywords, page.secondaryKeywords, `${page.slug}: secondaryKeywords mismatch`);
     assert.equal(entry.intent, page.searchIntent, `${page.slug}: intent mismatch`);
     assert.ok(!('metaKeywords' in entry), `${page.slug}: do not use legacy meta keywords as the SEO source of truth`);
+  }
+});
+
+test('KIBER-93 includes AI search / LLM visibility conditions before mass generation', () => {
+  assert.equal(existsSync(aiChecklistPath), true, 'docs/ai-search-visibility-checklist.md must exist');
+  assert.equal(existsSync(aiContractPath), true, 'data/seo/ai-search-visibility-contract.draft.json must exist');
+  assert.equal(existsSync(aiEntityMapPath), true, 'data/seo/ai-entity-map.json must exist');
+  assert.equal(existsSync(llmsTxtPath), true, 'public/llms.txt must exist');
+
+  const aiContract = readJson(aiContractPath);
+  assert.equal(aiContract.schemaVersion, 1);
+  assert.equal(aiContract.issue, 'KIBER-93');
+  assert.equal(aiContract.status, 'draft_for_owner_review');
+  assert.ok(aiContract.sources.includes('https://platform.openai.com/docs/bots'));
+  assert.ok(aiContract.sources.includes('https://developers.google.com/search/docs/appearance/ai-features'));
+  assert.ok(aiContract.sources.includes('https://llmstxt.org'));
+  assert.ok(aiContract.requiredChecks.includes('aiSummary'));
+  assert.ok(aiContract.requiredChecks.includes('entityClarity'));
+  assert.ok(aiContract.requiredChecks.includes('questionAnswerBlocks'));
+  assert.ok(aiContract.requiredChecks.includes('structuredFacts'));
+  assert.ok(aiContract.requiredChecks.includes('llmsTxtCoverage'));
+  assert.ok(aiContract.requiredChecks.includes('markdownAlternateOrLlmsEntry'));
+  assert.equal(aiContract.robotsPolicyDecisionRequired, true);
+
+  const llmsTxt = readFileSync(llmsTxtPath, 'utf8');
+  assert.match(llmsTxt, /^# КИБЕР ПОРТАЛ/m);
+  assert.match(llmsTxt, /Блог Кибер Гоши/);
+  assert.match(llmsTxt, /Подборки/);
+  assert.match(llmsTxt, /Гуманоидные роботы/);
+});
+
+test('SEO passports expose AI visibility fields aligned to entity map', () => {
+  const passports = readJson(passportsPath);
+  const entityMap = readJson(aiEntityMapPath);
+  assert.equal(entityMap.schemaVersion, 1);
+  assert.equal(entityMap.issue, 'KIBER-93');
+  assert.ok(entityMap.entities['КИБЕР ПОРТАЛ'], 'brand entity required');
+
+  for (const page of passports.pages.filter((item: { indexable: boolean }) => item.indexable)) {
+    assert.ok(page.aiVisibility, `${page.slug}: aiVisibility block required`);
+    assert.ok(page.aiVisibility.aiSummary.length >= 80, `${page.slug}: aiSummary must be extractable`);
+    assert.match(page.aiVisibility.entityType, /^(service|product|article|collection|organization|legal|conversion)$/);
+    assert.ok(Array.isArray(page.aiVisibility.entities) && page.aiVisibility.entities.length > 0, `${page.slug}: entities required`);
+    assert.ok(page.aiVisibility.entities.some((entity: { name: string }) => entity.name === 'КИБЕР ПОРТАЛ'), `${page.slug}: brand entity required`);
+    assert.ok(Array.isArray(page.aiVisibility.userQuestionsAnswered), `${page.slug}: userQuestionsAnswered required`);
+    assert.ok(Array.isArray(page.aiVisibility.factualClaims), `${page.slug}: factualClaims required`);
+    assert.ok(Array.isArray(page.aiVisibility.relatedPages), `${page.slug}: relatedPages required`);
   }
 });
