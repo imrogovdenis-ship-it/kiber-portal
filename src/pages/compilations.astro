@@ -41,8 +41,21 @@ const textSections = [
       <p>Готовые сценарии выбора роботов под мероприятие: выставка, презентация, свадьба, welcome-зона или технологичное промо.</p>
     </section>
 
+    <section class="compilations-page__text container" aria-labelledby="compilations-text-title">
+      <p class="compilations-page__eyebrow">Гид по выбору</p>
+      <h2 id="compilations-text-title">Подборка — это не список роботов, а готовый сценарий</h2>
+      <div class="compilations-page__text-grid">
+        {textSections.map((section) => (
+          <article>
+            <h3>{section.title}</h3>
+            <p>{section.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
     <section class="compilations-page__cards container" aria-labelledby="compilations-cards-title">
-      <div class="compilations-page__section-copy">
+      <div class="compilations-page__section-copy compilations-page__section-copy--inset">
         <p class="compilations-page__eyebrow">Сценарии</p>
         <h2 id="compilations-cards-title">Выберите подборку под событие</h2>
       </div>
@@ -64,19 +77,6 @@ const textSections = [
             <span class="compilations-page__card-description">{card.description}</span>
             <span class="compilations-page__card-cta">{card.cta ?? 'Подробнее'}</span>
           </a>
-        ))}
-      </div>
-    </section>
-
-    <section class="compilations-page__text container" aria-labelledby="compilations-text-title">
-      <p class="compilations-page__eyebrow">Гид по выбору</p>
-      <h2 id="compilations-text-title">Подборка — это не список роботов, а готовый сценарий</h2>
-      <div class="compilations-page__text-grid">
-        {textSections.map((section) => (
-          <article>
-            <h3>{section.title}</h3>
-            <p>{section.text}</p>
-          </article>
         ))}
       </div>
     </section>
@@ -148,6 +148,10 @@ const textSections = [
     display: grid;
     gap: .75rem;
     max-width: 48rem;
+  }
+
+  .compilations-page__section-copy--inset {
+    max-width: 52rem;
   }
 
   .compilations-page__section-copy h2,
@@ -291,6 +295,15 @@ const textSections = [
     margin-top: -2rem;
   }
 
+  @media (min-width: 40rem) {
+    .compilations-page__section-copy--inset,
+    .compilations-page__text > .compilations-page__eyebrow,
+    .compilations-page__text > h2,
+    .compilations-page__text-grid {
+      margin-inline-start: clamp(1.75rem, 5vw, 4rem);
+    }
+  }
+
   @media (max-width: 56rem) {
     .compilations-page__grid,
     .compilations-page__text-grid {
@@ -315,6 +328,10 @@ const textSections = [
     .compilations-page__card {
       min-height: 19rem;
       padding: 1.35rem;
+    }
+
+    .compilations-page__section-copy--inset {
+      padding-inline-start: 0;
     }
 
     .compilations-page__card-title {

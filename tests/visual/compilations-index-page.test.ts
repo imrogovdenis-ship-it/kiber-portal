@@ -17,6 +17,13 @@ test('KIBER-91 compilations index is not a placeholder page', () => {
   assert.match(page, /class="compilations-page__card"/);
   assert.match(page, /Подборка — это не список роботов, а готовый сценарий/);
   assert.match(page, /<HomeFinalCta \{\.\.\.homeFinalCta\} \/>/);
+  assert.match(page, /compilations-page__hero[\s\S]*compilations-page__text[\s\S]*compilations-page__cards[\s\S]*compilations-page__cta/);
+});
+
+test('KIBER-91 compilations scenario and guide blocks use owner-requested left inset', () => {
+  assert.match(page, /compilations-page__section-copy compilations-page__section-copy--inset/);
+  assert.match(page, /@media \(min-width: 40rem\)[\s\S]*compilations-page__section-copy--inset,[\s\S]*compilations-page__text > \.compilations-page__eyebrow,[\s\S]*compilations-page__text > h2,[\s\S]*compilations-page__text-grid[\s\S]*margin-inline-start:\s*clamp\(1\.75rem, 5vw, 4rem\)/);
+  assert.doesNotMatch(page, /@media \(max-width: 39\.9375rem\)[\s\S]*\.compilations-page__text \{\s*padding-inline-start:\s*0/);
 });
 
 test('KIBER-91 compilations index uses two-column card layout on desktop', () => {
