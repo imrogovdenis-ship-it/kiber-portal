@@ -9,6 +9,7 @@ const mapperPath = resolve(root, 'src/lib/kiber94-robot-template-data.ts');
 const componentPath = resolve(root, 'src/components/templates/RobotCardTemplate.astro');
 const smokePath = resolve(root, 'scripts/kiber94-robot-card-preview-smoke.mjs');
 const packagePath = resolve(root, 'package.json');
+const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report.json');
 
 function readJson(path: string) {
   return JSON.parse(readFileSync(path, 'utf8'));
@@ -50,4 +51,14 @@ test('KIBER-94 preview smoke is wired but keeps production and public routes unt
   const pkg = readJson(packagePath);
   assert.equal(pkg.scripts['test:kiber94-robot-card-preview'], 'node scripts/kiber94-robot-card-preview-smoke.mjs');
   assert.doesNotMatch(pkg.scripts.ci, /test:kiber94-robot-card-preview/, 'preview-rendered smoke should not run in production CI before build:preview');
+});
+
+test('KIBER-94 records owner approval only for robot_card structure and data mapping', () => {
+  const report = readJson(reportPath);
+  assert.equal(report.ownerApproval.scope, 'structure_and_data_mapping_only');
+  assert.equal(report.ownerApproval.status, 'approved');
+  assert.equal(report.ownerApproval.quote, 'Вроде бы все верно.');
+  assert.equal(report.ownerApproval.designApproval, false);
+  assert.equal(report.ownerApproval.publicRouteReplacementApproval, false);
+  assert.equal(report.ownerApproval.productionApproval, false);
 });

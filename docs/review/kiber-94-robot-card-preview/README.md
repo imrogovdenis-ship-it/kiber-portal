@@ -11,6 +11,20 @@ Preview-only integration of the reusable `robot_card` template with the existing
 - Generated only when `DEPLOY_ENV !== 'production'` and `DESIGN_REVIEW_ENABLED !== 'false'`.
 - The route renders with `noindex` and is excluded from the production build.
 
+## Owner approval scope
+
+Alexander reviewed the protected preview and approved only the structure/data-mapping layer:
+
+> Вроде бы все верно.
+
+Recorded meaning:
+
+- approved: `robot_card` block set and real source-of-truth data mapping look correct;
+- not approved: final visual design;
+- not approved: final/public text quality;
+- not approved: replacing current public `/robots/[slug]/` pages;
+- not approved: production deploy or any production-side effect.
+
 ## Safety boundaries
 
 This slice does not change:
