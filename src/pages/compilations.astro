@@ -36,9 +36,7 @@ const textSections = [
 >
   <main class="compilations-page" id="main-content" tabindex="-1" data-kiber-task="KIBER-91-FSVQA-01">
     <section class="compilations-page__hero container" aria-labelledby="page-title">
-      <p class="compilations-page__eyebrow">Подборки</p>
       <h1 id="page-title">Подборки роботов для аренды</h1>
-      <p>Готовые сценарии выбора роботов под мероприятие: выставка, презентация, свадьба, welcome-зона или технологичное промо.</p>
     </section>
 
     <section class="compilations-page__text container" aria-labelledby="compilations-text-title">
@@ -84,9 +82,10 @@ const textSections = [
       <HomeFinalCta {...homeFinalCta} />
     </section>
 
-    <div class="compilations-page__links container">
-      <InternalLinks route="/compilations/" label="Следующие шаги" />
+    <div class="compilations-page__links-hidden" aria-hidden="true">
+      <InternalLinks route="/compilations/" label="Внутренняя навигация" />
     </div>
+
   </main>
 </BaseLayout>
 
@@ -111,7 +110,6 @@ const textSections = [
 
   .compilations-page__eyebrow,
   .compilations-page__hero h1,
-  .compilations-page__hero p,
   .compilations-page__section-copy h2,
   .compilations-page__text h2,
   .compilations-page__text h3,
@@ -134,13 +132,6 @@ const textSections = [
     font-size: clamp(3.1rem, 7vw, var(--kp-reference-display-xl));
     font-weight: 700;
     line-height: .98;
-  }
-
-  .compilations-page__hero p:last-child {
-    max-width: 46rem;
-    color: var(--kp-reference-muted);
-    font-size: 1.15rem;
-    line-height: 1.55;
   }
 
   .compilations-page__section-copy {
@@ -170,7 +161,7 @@ const textSections = [
   .compilations-page__card {
     position: relative;
     display: grid;
-    min-height: clamp(15rem, 23vw, 20rem);
+    min-height: clamp(18.75rem, 28.75vw, 25rem);
     overflow: hidden;
     align-content: start;
     gap: .75rem;
@@ -246,7 +237,7 @@ const textSections = [
   }
 
   .compilations-page__text {
-    max-width: 76rem;
+    max-width: 72rem;
   }
 
   .compilations-page__text-grid {
@@ -275,19 +266,31 @@ const textSections = [
     line-height: 1.65;
   }
 
+  .compilations-page__text > .compilations-page__eyebrow {
+    color: var(--kp-reference-blue);
+    font-size: var(--kp-reference-label-size);
+    font-weight: 700;
+    letter-spacing: .1em;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
   .compilations-page__cta :global(.home-final-cta) {
     margin-top: 0;
   }
 
-  .compilations-page__links {
-    margin-top: -2rem;
+  .compilations-page__links-hidden {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 
   @media (min-width: 40rem) {
-    .compilations-page__section-copy--inset,
-    .compilations-page__text > .compilations-page__eyebrow,
-    .compilations-page__text > h2,
-    .compilations-page__text-grid {
+    .compilations-page__section-copy--inset {
       margin-inline-start: clamp(1.75rem, 5vw, 4rem);
     }
   }
@@ -299,7 +302,7 @@ const textSections = [
     }
 
     .compilations-page__card {
-      min-height: 18rem;
+      min-height: 22.5rem;
     }
   }
 
@@ -314,7 +317,7 @@ const textSections = [
     }
 
     .compilations-page__card {
-      min-height: 19rem;
+      min-height: 23.75rem;
       padding: 1.35rem;
     }
 
