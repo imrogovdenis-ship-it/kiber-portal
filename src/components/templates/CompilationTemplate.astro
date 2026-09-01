@@ -1,0 +1,49 @@
+---
+import type { CompilationTemplateData } from '../../lib/page-type-templates';
+
+const { template } = Astro.props as { template: CompilationTemplateData };
+---
+
+<article class="page-template page-template--compilation" data-kiber-task="KIBER-94" data-page-type="compilation">
+  <header class="template-hero" data-block-id="hero">
+    <p class="template-eyebrow">{template.publicLabel}</p>
+    <h1>{template.seo.h1}</h1>
+    <p>{template.hero.text}</p>
+    <p class="template-ai-summary">{template.aiSummary}</p>
+  </header>
+
+  <section class="template-section" data-block-id="intro">
+    <h2>О подборке</h2>
+    <p>{template.hero.text}</p>
+  </section>
+
+  <section class="template-gallery" data-block-id="gallery" aria-label="Галерея подборки"></section>
+
+  <section class="template-section" data-block-id="scenarioExplanation">
+    {template.bodyBlocks.map((block) => <div><h2>{block.title}</h2><p>{block.text}</p></div>)}
+  </section>
+
+  <section class="template-section" data-block-id="catalogBlock">
+    <h2>Роботы из подборки</h2>
+    <ul>{template.catalogItems.map((item) => <li>{item.title ?? item.text}</li>)}</ul>
+  </section>
+
+  <nav class="template-related" data-block-id="relatedArticles" aria-label="Статьи по теме">
+    {template.relatedArticles.map((link) => <a href={link.href}>{link.label}</a>)}
+  </nav>
+
+  <section class="template-section" data-block-id="faq">
+    <h2>Вопросы и ответы</h2>
+    {template.faq.map((item) => <details open><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+  </section>
+
+  <aside class="template-gosha" data-block-id="goshaCta">
+    <h2>Кибер Гоша подсказывает</h2>
+    <p>{template.cta.note ?? 'Подборку стоит обсуждать с менеджером: он сверит сценарий, дату, площадку и доступность моделей.'}</p>
+    <a class="template-button" href={template.cta.href}>{template.cta.label}</a>
+  </aside>
+
+  <nav class="template-related" data-block-id="otherCompilations" aria-label="Другие подборки">
+    {template.otherCompilations.map((link) => <a href={link.href}>{link.label}</a>)}
+  </nav>
+</article>

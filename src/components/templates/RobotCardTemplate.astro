@@ -1,0 +1,55 @@
+---
+import type { RobotCardTemplateData } from '../../lib/page-type-templates';
+
+const { template } = Astro.props as { template: RobotCardTemplateData };
+const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
+---
+
+<article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card">
+  <section class="template-hero" data-block-id="hero">
+    <p class="template-eyebrow">{template.robot.manufacturer ?? 'КИБЕР ПОРТАЛ'} / {template.robot.model ?? template.robot.name}</p>
+    <h1>{template.seo.h1}</h1>
+    <p>{template.hero.text}</p>
+    <p class="template-ai-summary" data-block-id="modelIntro">{template.aiSummary}</p>
+    <a class="template-button" href={template.cta.href}>{template.cta.label}</a>
+  </section>
+
+  <section class="template-gallery" data-block-id="gallery" aria-label="Галерея">
+    {gallery.map((image) => <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />)}
+  </section>
+
+  <section class="template-section" data-block-id="description">
+    {template.bodyBlocks.map((block) => <div><h2>{block.title}</h2><p>{block.text}</p></div>)}
+  </section>
+
+  <section class="template-section" data-block-id="capabilities">
+    <h2>Возможности</h2>
+    <ul>{template.robot.capabilities.map((item) => <li>{item.title ?? item.text}</li>)}</ul>
+  </section>
+
+  <section class="template-section" data-block-id="scenarios">
+    <h2>Сценарии</h2>
+    <ul>{template.robot.scenarios.map((item) => <li>{item.title ?? item.text}</li>)}</ul>
+  </section>
+
+  <section class="template-section" data-block-id="robotInAction">
+    <h2>Робот в действии</h2>
+    <p>Блок принимает видео, фото или описание сценария после проверки источников и прав на медиа.</p>
+  </section>
+
+  <section class="template-section" data-block-id="pricing">
+    <h2>Стоимость</h2>
+    <p>{template.robot.priceDisplay}</p>
+  </section>
+
+  <section class="template-gosha" data-block-id="goshaCta">
+    <h2>Кибер Гоша подсказывает</h2>
+    <p>{template.cta.note ?? 'Менеджер уточнит площадку, дату, программу и ограничения перед финальной сметой.'}</p>
+    <a class="template-button" href={template.cta.href}>{template.cta.label}</a>
+  </section>
+
+  <section class="template-section" data-block-id="faq">
+    <h2>Вопросы и ответы</h2>
+    {template.faq.map((item) => <details open><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+  </section>
+</article>
