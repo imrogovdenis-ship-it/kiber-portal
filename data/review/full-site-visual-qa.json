@@ -166,10 +166,10 @@
   },
   "approval": {
     "status": "AWAITING_OWNER_REVIEW",
-    "visualApprovalScope": "full site screenshots/contact sheets and findings package",
+    "visualApprovalScope": "full site remains under review; /compilations/ design is owner-approved",
     "productionApprovalGranted": false,
     "mergePermissionGranted": false,
-    "recommendedDecision": "NO_GO_FOR_PRODUCTION_UNTIL_FINDINGS_ACCEPTED_OR_FIXED"
+    "recommendedDecision": "NO_GO_FOR_PRODUCTION_UNTIL_REMAINING_FINDINGS_ACCEPTED_OR_FIXED"
   },
   "evidence": {
     "manifest": "docs/review/kiber-91-full-site-visual-qa/screenshots/manifest.json",
@@ -186,10 +186,20 @@
       "id": "FSVQA-01A",
       "sourceFinding": "FSVQA-01",
       "route": "/compilations/",
-      "status": "implemented",
+      "status": "owner_design_approved",
       "ownerFeedback": "Страница была пустая; нужно расположить сами подборки как блок на главной, карточки немного изменить, две колонки, текстовый блок с заголовком внизу, CTA внизу.",
       "implementation": "Replaced placeholder page with filled compilations index: 4 compilation cards from approved homepage data, desktop two-column wide card grid, bottom text block with heading, approved homepage CTA component, live-site-inspired page rhythm.",
-      "safetyBoundary": "No production deploy, DNS, production secrets, analytics IDs/cookies, or live lead routing changes."
+      "safetyBoundary": "Design approval only. No PR merge permission, production deploy, DNS, production secrets, analytics IDs/cookies, or live lead routing changes.",
+      "ownerDesignApproval": {
+        "approved": true,
+        "approvedAt": "2026-09-01T07:45:00Z",
+        "approvedBy": "Александр",
+        "quote": "Страницу \"Подборки\" утверждаю по дизайну.",
+        "scope": "/compilations/ visual design only",
+        "commit": "f9034281fead595072c210e67f4617dfe74b7e60",
+        "stagingImage": "alex-kiber-staging:sha-f903428",
+        "stagingUrl": "https://alex-kiber-staging.38.180.37.42.sslip.io/compilations/"
+      }
     }
   ]
 }

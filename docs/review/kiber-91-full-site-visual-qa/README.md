@@ -73,13 +73,17 @@ These pages are functional and branded, but visually thin compared with the appr
 
 **Recommendation:** fix before production visual approval.
 
-### FSVQA-01A — RESOLVED — Подборки promoted from placeholder to filled page
+### FSVQA-01A — OWNER DESIGN APPROVED — Подборки promoted from placeholder to filled page
 
 Route: `/compilations/`
 
-Owner feedback: the page was empty and needed the actual compilations as on the homepage, adjusted card styling, two columns, bottom text block with heading, and CTA.
+Owner feedback: the page was empty and needed the actual compilations as on the homepage, adjusted card styling, two columns, explanatory guide block, CTA, and iterative card/button refinements.
 
-Implementation: `/compilations/` now renders four compilation cards from the approved homepage data in a two-column wide-card grid, followed by an explanatory text block and the approved homepage CTA component.
+Implementation: `/compilations/` now renders four compilation cards from the approved homepage data in a two-column wide-card grid, includes the approved guide/CTA rhythm, hides the unwanted visible “Следующие шаги” block while preserving the SEO/internal-link contract, and pins `Подробнее` buttons bottom-left inside each card.
+
+Owner design approval recorded: **“Страницу "Подборки" утверждаю по дизайну.”**
+
+Approval scope: `/compilations/` visual design only at commit `f9034281fead595072c210e67f4617dfe74b7e60` / staging image `alex-kiber-staging:sha-f903428`. This is not PR merge permission and not production/DNS/secrets/analytics/live lead routing approval.
 
 ### FSVQA-02 — MEDIUM — Robot detail pages need final design alignment review
 
