@@ -65,13 +65,13 @@ Evidence:
 
 ## Findings
 
-### FSVQA-01 — HIGH — Блог / Новости are placeholder-style index pages
+### FSVQA-01 — HIGH — Новости remains a placeholder-style index page
 
-Routes: `/articles/`, `/news/`
+Routes still unresolved: `/news/`
 
-These pages are functional and branded, but visually thin compared with the approved homepage. They should reuse homepage-approved patterns before production: richer section hero, card/list blocks, consistent spacing, and CTA rhythm.
+`/compilations/` and `/articles/` have been promoted from placeholder-style pages and received owner design approval in this PR follow-up. `/news/` still needs the same homepage-approved depth before production visual approval.
 
-**Recommendation:** fix before production visual approval.
+**Recommendation:** fix or explicitly accept `/news/` before production visual approval.
 
 ### FSVQA-01A — OWNER DESIGN APPROVED — Подборки promoted from placeholder to filled page
 
@@ -85,15 +85,17 @@ Owner design approval recorded: **“Страницу "Подборки" утв�
 
 Approval scope: `/compilations/` visual design only at commit `f9034281fead595072c210e67f4617dfe74b7e60` / staging image `alex-kiber-staging:sha-f903428`. This is not PR merge permission and not production/DNS/secrets/analytics/live lead routing approval.
 
-### FSVQA-01B — READY FOR OWNER REVIEW — Блог Кибер Гоши promoted from placeholder to filled article index
+### FSVQA-01B — OWNER DESIGN APPROVED — Блог Кибер Гоши promoted from placeholder to filled article index
 
 Route: `/articles/`
 
-Owner feedback: the page was empty and should use the title/description from the homepage article block, collect all article cards from the site, place a text description block above articles for later SEO adaptation, and add a CTA at the bottom. The article filter is explicitly deferred to a separate later task.
+Owner feedback: the page was empty and should use approved homepage/compilations patterns: article cards, section description above articles, CTA at the bottom, shared page gutters, no visible `Читать` buttons, no white “О разделе” container, and final H1 `Блог Кибер Гоши` styled black like other headings.
 
-Implementation: `/articles/` now renders the homepage article title/description, a section-description block above the feed, all six article cards from the approved homepage/live article data, the approved homepage final CTA, and hidden internal links to preserve the SEO/internal-link CI contract without adding an extra visible block. Card links retain the current homepage-safe `/articles/` fallback until article detail routes are migrated, because full CI blocks broken internal links.
+Implementation: `/articles/` now renders a single black `<h1 id="page-title">Блог Кибер Гоши</h1>`, an SEO-adaptation intro block above the feed without a white container, all six article cards from the approved homepage/live article data, the approved homepage final CTA, and hidden internal links to preserve the SEO/internal-link CI contract without adding an extra visible block. Card links retain the current homepage-safe `/articles/` fallback until article detail routes are migrated, because full CI blocks broken internal links.
 
-Status: ready for Alexander visual review. This is not `/articles/` design approval yet, not PR merge permission, and not production/DNS/secrets/analytics/live lead routing approval.
+Owner design approval recorded: **“Я Утверждаю дизайн Блога”**
+
+Approval scope: `/articles/` / «Блог Кибер Гоши» visual design only at commit `8901052da67ceac6eef83983ae7a78cf17fbe256` / staging image `alex-kiber-staging:sha-8901052`. This is not PR merge permission and not production/DNS/secrets/analytics/live lead routing approval.
 
 Deferred follow-ups:
 
@@ -132,6 +134,6 @@ Functional, readable, and branded. They can ship if accepted, but visually they 
 
 ## Next safe work
 
-1. Continue FSVQA-01 for `/articles/` and `/news/` using approved homepage patterns. `/compilations/` has been implemented in this PR follow-up.
+1. Continue FSVQA-01 for `/news/` using approved homepage patterns. `/compilations/` and `/articles/` have owner design approval in this PR follow-up.
 2. Review/refine robot detail pages for homepage rhythm while preserving approved RobotPage media rules.
 3. Ask owner whether legal/404 pages can remain minimal or need light polish.

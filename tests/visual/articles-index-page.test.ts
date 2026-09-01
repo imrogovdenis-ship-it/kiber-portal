@@ -16,7 +16,12 @@ const cssBlock = (selector: string) => {
 };
 const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8')) as {
   visualFindings: Array<{ id: string; severity: string; routes: string[] }>;
-  resolvedFindings?: Array<{ id: string; route: string; status: string }>;
+  resolvedFindings?: Array<{
+    id: string;
+    route: string;
+    status: string;
+    ownerDesignApproval?: { approved: boolean; quote: string };
+  }>;
   futureTasks?: Array<{ id: string; route: string; summary: string; status: string }>;
 };
 
@@ -66,6 +71,7 @@ test('KIBER-91 articles keeps internal-link contract hidden and records filter a
   const high = qa.visualFindings.find((finding) => finding.id === 'FSVQA-01');
   assert.ok(high);
   assert.deepEqual(high?.routes, ['/news/']);
-  assert.ok(qa.resolvedFindings?.some((finding) => finding.id === 'FSVQA-01B' && finding.route === '/articles/' && finding.status === 'ready_for_owner_review'));
+  assert.ok(qa.resolvedFindings?.some((finding) => finding.id === 'FSVQA-01B' && finding.route === '/articles/' && finding.status === 'owner_design_approved'));
+  assert.ok(qa.resolvedFindings?.some((finding) => finding.id === 'FSVQA-01B' && finding.ownerDesignApproval?.approved === true && finding.ownerDesignApproval?.quote === 'Я Утверждаю дизайн Блога'));
   assert.ok(qa.futureTasks?.some((task) => task.id === 'KIBER-91-FILTER-ARTICLES' && task.route === '/articles/' && task.status === 'deferred'));
 });

@@ -10,7 +10,7 @@
     "baseCommit": "6b88d7eb5720d88430b3ea74375d4d74f209b6be",
     "productionBuild": "npm run build:production",
     "homepageVisualBaseline": "Главная утверждена Александром; переносимые паттерны используются как baseline для остальных страниц.",
-    "followUpCommitScope": "FSVQA-01 compilations index implemented from owner feedback on live staging review."
+    "followUpCommitScope": "FSVQA-01 compilations and articles indexes implemented/refined from owner feedback on live staging review."
   },
   "scope": {
     "routesChecked": 15,
@@ -120,7 +120,7 @@
       "routes": [
         "/news/"
       ],
-      "summary": "Новости remain a placeholder-style index page. Подборки is owner design-approved, and Блог Кибер Гоши (/articles/) is promoted to a filled article index in this PR follow-up.",
+      "summary": "Новости remains a placeholder-style index page. Подборки and Блог Кибер Гоши (/articles/) are owner design-approved in this PR follow-up.",
       "expected": "Use approved homepage design language: section hero, meaningful cards/list blocks, blue CTA, consistent spacing, and public-ready page depth.",
       "productionImpact": "blocks production visual approval until the remaining /news/ index page is accepted or fixed"
     },
@@ -165,7 +165,7 @@
   },
   "approval": {
     "status": "AWAITING_OWNER_REVIEW",
-    "visualApprovalScope": "full site remains under review; /compilations/ design is owner-approved; /articles/ is ready for owner review",
+    "visualApprovalScope": "full site remains under review; /compilations/ design is owner-approved; /articles/ / Блог Кибер Гоши design is owner-approved; /news/ remains unresolved",
     "productionApprovalGranted": false,
     "mergePermissionGranted": false,
     "recommendedDecision": "NO_GO_FOR_PRODUCTION_UNTIL_REMAINING_FINDINGS_ACCEPTED_OR_FIXED"
@@ -204,11 +204,25 @@
       "id": "FSVQA-01B",
       "sourceFinding": "FSVQA-01",
       "route": "/articles/",
-      "status": "ready_for_owner_review",
-      "ownerFeedback": "Страница пустая; нужно расположить заголовок и описание блока с главной, все карточки статей, текстовый блок с описанием раздела над статьями, CTA внизу; использовать наработки Главной и Подборок; фильтр вынести отдельной задачей следующих этапов.",
-      "implementation": "Replaced placeholder /articles/ with a filled Блог Кибер Гоши index: homepage article heading/description, SEO-adaptation intro block, six article cards from approved homepage/live article data, bottom HomeFinalCta, hidden InternalLinks to preserve CI/SEO contract. Card links retain the current homepage-safe /articles/ fallback until article detail routes are migrated.",
+      "status": "owner_design_approved",
+      "ownerFeedback": "Страница пустая; нужно расположить заголовок и описание блока с главной, все карточки статей, текстовый блок с описанием раздела над статьями, CTA внизу; затем по итерациям: оставить сверху только Блог Кибер Гоши, убрать видимые подзаголовок/описание, убрать белый контейнер О разделе, выровнять gutters блоков/карточек/CTA, оформить H1 чёрным как остальные заголовки.",
+      "implementation": "Replaced placeholder /articles/ with a filled Блог Кибер Гоши index: single black H1, SEO-adaptation intro block without white container, six article cards from approved homepage/live article data, shared left/right gutters for hero/intro/feed/grid/CTA, bottom HomeFinalCta, hidden InternalLinks to preserve CI/SEO contract. Card links retain the current homepage-safe /articles/ fallback until article detail routes are migrated.",
       "safetyBoundary": "Preview/design QA only. No PR merge permission, production deploy, DNS, production secrets, analytics IDs/cookies, or live lead routing changes.",
-      "pendingOwnerDecision": "Needs owner visual review/approval for /articles/ design."
+      "ownerDesignApproval": {
+        "approved": true,
+        "approvedAt": "2026-09-01T09:20:00Z",
+        "approvedBy": "Александр",
+        "quote": "Я Утверждаю дизайн Блога",
+        "scope": "/articles/ / Блог Кибер Гоши visual design only",
+        "commit": "8901052da67ceac6eef83983ae7a78cf17fbe256",
+        "stagingImage": "alex-kiber-staging:sha-8901052",
+        "stagingUrl": "https://alex-kiber-staging.38.180.37.42.sslip.io/articles/",
+        "h1Evidence": {
+          "tag": "h1",
+          "text": "Блог Кибер Гоши",
+          "computedColor": "rgb(54, 50, 62)"
+        }
+      }
     }
   ],
   "futureTasks": [
