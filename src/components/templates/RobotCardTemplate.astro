@@ -4,93 +4,96 @@ import type { RobotCardTemplateData } from '../../lib/page-type-templates';
 const { template } = Astro.props as { template: RobotCardTemplateData };
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
-const galleryRest = gallery.slice(1, 5);
 const descriptionBlocks = template.bodyBlocks.filter((block) => block.text);
+const introTitle = template.robot.name;
+const introText = descriptionBlocks[0]?.text ?? template.hero.text;
+const followupText = descriptionBlocks[1]?.text;
 const capabilityItems = template.robot.capabilities.slice(0, 6);
 const scenarioItems = template.robot.scenarios.slice(0, 6);
 ---
 
 <article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card">
-  <section class="template-hero" data-block-id="hero">
-    <div class="template-hero__copy">
-      <p class="template-eyebrow">{template.robot.manufacturer ?? 'КИБЕР ПОРТАЛ'} / {template.robot.model ?? template.robot.name}</p>
+  <section class="template-live-hero" data-block-id="hero" style={heroImage ? `--template-hero-image: url('${heroImage.src}')` : undefined}>
+    <div class="template-live-hero__scrim" aria-hidden="true"></div>
+    <div class="template-live-hero__content">
       <h1>{template.seo.h1}</h1>
-      <p class="template-hero__lead">{template.hero.text}</p>
-      <p class="template-ai-summary" data-block-id="modelIntro">{template.aiSummary}</p>
-      <div class="template-hero__actions">
+      <div class="template-live-hero__actions">
         <a class="template-button template-button--primary" href={template.cta.href}>{template.cta.label}</a>
-        <a class="template-button" href="#robot-card-pricing">Стоимость</a>
+        <a class="template-button template-button--light" href="#robot-card-pricing">Задать вопрос</a>
       </div>
     </div>
-    {heroImage && (
-      <figure class="template-hero__media">
-        <img src={heroImage.src} alt={heroImage.alt} width="720" height="720" loading="eager" decoding="async" />
-      </figure>
-    )}
   </section>
 
-  <section class="template-gallery" data-block-id="gallery" aria-label="Галерея">
-    {galleryRest.map((image) => <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />)}
+  <section class="template-live-intro" data-block-id="description" aria-labelledby="robot-card-intro-title">
+    <h2 id="robot-card-intro-title">{introTitle}</h2>
+    <p class="template-live-intro__lead" data-block-id="modelIntro">— {template.hero.text}</p>
+    {introText && <p>{introText}</p>}
+    {followupText && <p>{followupText}</p>}
   </section>
 
-  <section class="template-section template-section--description" data-block-id="description">
-    {descriptionBlocks.map((block) => <article><h2>{block.title}</h2><p>{block.text}</p></article>)}
+  <section class="template-live-gallery" data-block-id="gallery" aria-label="Галерея">
+    {heroImage && <img src={heroImage.src} alt={heroImage.alt} loading="lazy" decoding="async" />}
+    <div class="template-live-gallery__arrows" aria-hidden="true"><span>‹</span><span>›</span></div>
   </section>
 
-  <section class="template-section" data-block-id="capabilities">
-    <div class="template-section__header">
-      <p class="template-eyebrow">Возможности</p>
-      <h2>Что умеет робот</h2>
-    </div>
-    <div class="template-facts-grid">
-      {capabilityItems.map((item) => <article><span aria-hidden="true">✓</span><p>{item.title ?? item.text}</p></article>)}
-    </div>
-  </section>
-
-  <section class="template-section" data-block-id="scenarios">
-    <div class="template-section__header">
-      <p class="template-eyebrow">Сценарии</p>
-      <h2>Куда подойдёт</h2>
-    </div>
-    <ul class="template-checklist">
-      {scenarioItems.map((item) => <li>{item.title ?? item.text}</li>)}
-    </ul>
-  </section>
-
-  <section class="template-section template-section--action" data-block-id="robotInAction">
+  <section class="template-live-cta" id="robot-card-pricing" data-block-id="pricing">
     <div>
-      <p class="template-eyebrow">Робот в действии</p>
-      <h2>Демо-блок для фото и видео</h2>
-    </div>
-    <p>Здесь будет проверенный медиа-сценарий: видео, серия фото или короткое описание выступления после подтверждения прав и источников.</p>
-  </section>
-
-  <section class="template-section template-section--pricing" id="robot-card-pricing" data-block-id="pricing">
-    <div>
-      <p class="template-eyebrow">Стоимость</p>
-      <h2>{template.robot.priceDisplay}</h2>
-    </div>
-    <p>Итоговая смета зависит от даты, города, площадки, длительности и сценария. Цена в preview не является публичной офертой.</p>
-  </section>
-
-  <section class="template-gosha" data-block-id="goshaCta">
-    <div class="template-gosha__inner">
-      <div>
-        <p class="template-eyebrow">Кибер Гоша подсказывает</p>
-        <h2>Проверим сценарий перед сметой</h2>
+      <h2>{`Арендуйте ${template.robot.name} для мероприятия`}</h2>
+      <div class="template-live-cta__actions">
+        <span class="template-live-cta__price">{template.robot.priceDisplay}</span>
+        <a class="template-button template-button--light" href={template.cta.href}>Написать нам</a>
+        <a class="template-button template-button--light" href={template.cta.href}>Заполнить заявку</a>
       </div>
-      <p>{template.cta.note ?? 'Менеджер уточнит площадку, дату, программу и ограничения перед финальной сметой.'}</p>
-      <a class="template-button template-button--light" href={template.cta.href}>{template.cta.label}</a>
     </div>
   </section>
 
-  <section class="template-section template-section--faq" data-block-id="faq">
-    <div class="template-section__header">
-      <p class="template-eyebrow">FAQ</p>
-      <h2>Вопросы и ответы</h2>
+  <section class="template-section" data-block-id="capabilities" aria-labelledby="robot-card-capabilities-title">
+    <p class="template-section__number">01 — ключевые возможности</p>
+    <h2 id="robot-card-capabilities-title">{`Что умеет ${template.robot.name}`}</h2>
+    <p class="template-section__lead">Если коротко, робот закрывает ключевые сценарии мероприятия. Подробнее — в шести пунктах ниже.</p>
+    <div class="template-feature-grid">
+      {capabilityItems.map((item) => (
+        <article>
+          {heroImage && <img src={heroImage.src} alt="" loading="lazy" decoding="async" />}
+          <h3>{item.title ?? item.text}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
     </div>
+  </section>
+
+  <section class="template-section" data-block-id="scenarios" aria-labelledby="robot-card-scenarios-title">
+    <p class="template-section__number">02 — сценарии использования</p>
+    <h2 id="robot-card-scenarios-title">{`Где ${template.robot.name} произведёт «вау-эффект»?`}</h2>
+    <p class="template-section__lead">Каждый сценарий адаптируется под задачу заказчика — от короткого приветствия гостей до полноценного шоу с несколькими выходами робота в течение дня.</p>
+    <div class="template-scenario-grid">
+      {scenarioItems.map((item) => <article><h3>{item.title ?? item.text}</h3><p>{item.text}</p></article>)}
+    </div>
+  </section>
+
+  <section class="template-live-cta" data-block-id="robotInAction">
+    <div>
+      <h2>{`Прокат ${template.robot.name} для мероприятий и выставок`}</h2>
+      <div class="template-live-cta__actions">
+        <span class="template-live-cta__price">{template.robot.priceDisplay}</span>
+        <a class="template-button template-button--light" href={template.cta.href}>Написать нам</a>
+        <a class="template-button template-button--light" href={template.cta.href}>Заполнить заявку</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="template-gosha-quote" data-block-id="goshaCta">
+    <div class="template-gosha-quote__avatar" aria-hidden="true">*</div>
+    <div>
+      <p><strong>Скажу честно, как робот человеку:</strong> {template.cta.note ?? 'менеджеры КИБЕР ПОРТАЛ подберут сценарий, рассчитают стоимость и обсудят все детали площадки заранее.'}</p>
+      <p class="template-gosha-quote__author">Кибер Гоша<br /><span>Ваш цифровой помощник</span></p>
+    </div>
+  </section>
+
+  <section class="template-section template-section--faq" data-block-id="faq" aria-labelledby="robot-card-faq-title">
+    <h2 id="robot-card-faq-title">Вопросы и ответы (FAQ)</h2>
     <div class="template-faq-list">
-      {template.faq.map((item) => <details open><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+      {template.faq.map((item) => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}
     </div>
   </section>
 </article>
@@ -98,80 +101,71 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
 <style>
   .page-template--robot {
     display: grid;
-    gap: clamp(3rem, 6vw, 5.5rem);
-    padding-block: clamp(2rem, 4vw, 3rem) 4.5rem;
+    gap: clamp(4.5rem, 7vw, 7rem);
+    padding-block: clamp(1.25rem, 2.4vw, 2rem) 4.5rem;
     background: var(--kp-reference-sky);
   }
 
-  .template-hero {
+  .template-live-hero {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(20rem, .92fr);
-    gap: clamp(1.5rem, 4vw, 3.25rem);
-    align-items: center;
+    min-height: clamp(24rem, 40vw, 30rem);
+    place-items: center;
+    overflow: hidden;
+    border-radius: 1.625rem;
+    background:
+      linear-gradient(90deg, color-mix(in srgb, var(--kp-reference-ink) 80%, transparent), color-mix(in srgb, var(--kp-reference-ink) 38%, transparent)),
+      var(--template-hero-image, none),
+      var(--kp-reference-blue-deep);
+    background-position: center;
+    background-size: cover;
+    box-shadow: none;
+    color: var(--kp-reference-white);
+    isolation: isolate;
   }
 
-  .template-hero__copy,
-  .template-section,
-  .template-section__header,
-  .template-section--description article,
-  .template-section--action,
-  .template-section--pricing,
-  .template-gosha__inner {
-    display: grid;
-    gap: 1rem;
+  .template-live-hero__scrim {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(circle at 50% 22%, transparent 0 22%, color-mix(in srgb, var(--kp-reference-ink) 18%, transparent) 58%);
   }
 
-  .template-eyebrow,
-  .template-hero h1,
-  .template-hero__lead,
-  .template-ai-summary,
+  .template-live-hero__content {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    max-width: 54rem;
+    padding: clamp(2rem, 5vw, 4rem);
+    text-align: center;
+  }
+
+  .template-live-hero h1,
+  .template-live-intro h2,
+  .template-live-intro p,
   .template-section h2,
+  .template-section h3,
   .template-section p,
-  .template-section ul,
-  .template-gosha h2,
-  .template-gosha p,
-  .template-hero__media {
+  .template-section__number,
+  .template-live-cta h2,
+  .template-gosha-quote p {
     margin: 0;
   }
 
-  .template-eyebrow {
-    color: var(--kp-reference-blue);
-    font-size: var(--kp-reference-label-size);
-    font-weight: 700;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-
-  .template-hero h1 {
-    max-width: 58rem;
-    color: var(--kp-reference-ink);
+  .template-live-hero h1 {
+    color: var(--kp-reference-white);
     font-family: var(--kp-font-heading);
-    font-size: clamp(2.65rem, 6vw, var(--kp-reference-display-xl));
+    font-size: clamp(3rem, 6.6vw, 4.75rem);
     font-weight: 700;
     line-height: .98;
   }
 
-  .template-hero__lead {
-    max-width: 42rem;
-    color: var(--kp-reference-muted);
-    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
-    line-height: 1.55;
-  }
-
-  .template-ai-summary {
-    max-width: 42rem;
-    border-left: .25rem solid var(--kp-reference-blue);
-    padding-left: 1rem;
-    color: var(--kp-reference-muted);
-    font-size: .98rem;
-    line-height: 1.6;
-  }
-
-  .template-hero__actions {
+  .template-live-hero__actions,
+  .template-live-cta__actions {
     display: flex;
     flex-wrap: wrap;
-    gap: .75rem;
-    margin-top: .25rem;
+    gap: 1rem;
+    align-items: center;
   }
 
   .template-button {
@@ -179,10 +173,9 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
     min-height: 2.75rem;
     align-items: center;
     justify-content: center;
-    border: .0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 18%, transparent);
-    border-radius: var(--kp-reference-button-radius);
-    padding: .875rem 1.5rem;
-    color: var(--kp-reference-blue);
+    border: .0625rem solid transparent;
+    border-radius: 999rem;
+    padding: .875rem 1.65rem;
     font-family: var(--kp-font-heading);
     font-size: .875rem;
     font-weight: 700;
@@ -190,191 +183,285 @@ const scenarioItems = template.robot.scenarios.slice(0, 6);
   }
 
   .template-button--primary {
-    border-color: var(--kp-reference-blue);
     background: var(--kp-reference-blue);
     color: var(--kp-reference-white);
   }
 
   .template-button--light {
-    border-color: var(--kp-reference-white);
     background: var(--kp-reference-white);
-    color: var(--kp-reference-blue);
-  }
-
-  .template-hero__media {
-    overflow: hidden;
-    aspect-ratio: 1;
-    border-radius: 1.5rem;
-    background: var(--kp-reference-white);
-  }
-
-  .template-hero__media img,
-  .template-gallery img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-  }
-
-  .template-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: clamp(.75rem, 1.4vw, 1.25rem);
-  }
-
-  .template-gallery img {
-    aspect-ratio: 1;
-    border-radius: 1rem;
-    background: var(--kp-reference-white);
-  }
-
-  .template-section--description,
-  .template-facts-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(1rem, 2vw, 1.5rem);
-  }
-
-  .template-section--description article,
-  .template-facts-grid article,
-  .template-faq-list details {
-    border: .0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 10%, transparent);
-    border-radius: 1.5rem;
-    padding: clamp(1.25rem, 2.5vw, 1.75rem);
-    background: var(--kp-reference-white);
-  }
-
-  .template-section h2,
-  .template-gosha h2 {
     color: var(--kp-reference-ink);
-    font-family: var(--kp-font-heading);
-    font-size: clamp(2rem, 4vw, var(--kp-reference-heading-lg));
-    font-weight: 700;
-    line-height: 1;
   }
 
-  .template-section p,
-  .template-section li,
-  .template-gosha p,
-  .template-faq-list p {
-    color: var(--kp-reference-muted);
-    line-height: 1.65;
-  }
-
-  .template-facts-grid article {
-    align-content: start;
-    grid-template-columns: auto 1fr;
-  }
-
-  .template-facts-grid span {
+  .template-live-intro,
+  .template-section,
+  .template-live-gallery,
+  .template-gosha-quote {
     display: grid;
-    width: 1.75rem;
+    gap: clamp(1.5rem, 3vw, 2.25rem);
+  }
+
+  .template-live-gallery {
+    min-height: 3rem;
+    align-items: end;
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .template-live-gallery img {
+    width: 100%;
+    height: .0625rem;
+    object-fit: cover;
+    opacity: .28;
+  }
+
+  .template-live-gallery__arrows {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .template-live-gallery__arrows span {
+    display: grid;
+    width: 2rem;
     aspect-ratio: 1;
     place-items: center;
     border-radius: 50%;
     background: var(--kp-reference-blue);
     color: var(--kp-reference-white);
+    font-size: 1.25rem;
     font-weight: 700;
   }
 
-  .template-checklist {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: .75rem 1rem;
-    padding: 0;
-    list-style: none;
+  .template-live-intro {
+    max-width: 70rem;
   }
 
-  .template-checklist li {
-    border-radius: 999rem;
-    padding: .8rem 1rem;
-    background: var(--kp-reference-white);
-  }
-
-  .template-section--action,
-  .template-section--pricing,
-  .template-gosha__inner {
-    border-radius: 1.5rem;
-    padding: clamp(1.5rem, 4vw, 2.5rem);
-  }
-
-  .template-section--action {
-    background: var(--kp-reference-white);
-  }
-
-  .template-section--pricing,
-  .template-gosha__inner {
-    background: var(--kp-reference-blue-deep);
-    color: var(--kp-reference-white);
-  }
-
-  .template-section--pricing .template-eyebrow,
-  .template-gosha .template-eyebrow,
-  .template-section--pricing h2,
-  .template-gosha h2,
-  .template-section--pricing p,
-  .template-gosha p {
-    color: var(--kp-reference-white);
-  }
-
-  .template-section--pricing h2 {
-    font-size: clamp(2.4rem, 5vw, var(--kp-reference-display-m));
-  }
-
-  .template-section--pricing p,
-  .template-gosha p {
-    color: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
-  }
-
-  .template-faq-list {
-    display: grid;
-    gap: 1rem;
-  }
-
-  .template-faq-list summary {
+  .template-live-intro h2,
+  .template-section h2,
+  .template-live-cta h2 {
     color: var(--kp-reference-ink);
-    cursor: pointer;
+    font-family: var(--kp-font-heading);
+    font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg));
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .template-live-intro p,
+  .template-section__lead,
+  .template-feature-grid p,
+  .template-scenario-grid p,
+  .template-faq-list p,
+  .template-gosha-quote p {
+    color: var(--kp-reference-muted);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .template-live-intro__lead {
+    max-width: 49rem;
+    color: var(--kp-reference-ink) !important;
+    font-size: clamp(1.2rem, 2vw, 1.45rem) !important;
+    font-weight: 700;
+    line-height: 1.45 !important;
+  }
+
+  .template-section__number {
+    color: var(--kp-reference-blue);
+    font-size: var(--kp-reference-label-size);
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+
+  .template-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.5rem, 2.5vw, 2.5rem);
+  }
+
+  .template-feature-grid article,
+  .template-scenario-grid article {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .template-feature-grid img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: .45rem;
+    background: var(--kp-reference-white);
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .template-feature-grid h3,
+  .template-scenario-grid h3 {
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: clamp(1.45rem, 2.6vw, 2rem);
+    font-weight: 700;
+    line-height: 1.05;
+  }
+
+  .template-scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(2.5rem, 4vw, 4rem) clamp(1.5rem, 4vw, 4rem);
+  }
+
+  .template-live-cta {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+  }
+
+  .template-live-cta h2 {
+    max-width: 46rem;
+    color: var(--kp-reference-white);
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+
+  .template-live-cta__actions {
+    margin-top: 1.25rem;
+  }
+
+  .template-live-cta__price {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    border: .125rem solid color-mix(in srgb, var(--kp-reference-white) 82%, transparent);
+    border-radius: 999rem;
+    padding: .75rem 1.5rem;
+    color: var(--kp-reference-white);
     font-family: var(--kp-font-heading);
     font-weight: 700;
   }
 
-  @media (max-width: 59.9375rem) {
-    .page-template--robot {
-      gap: 3rem;
-      padding-block: 1.5rem 3rem;
-    }
+  .template-gosha-quote {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: start;
+    max-width: 58rem;
+  }
 
-    .template-hero,
-    .template-section--description,
-    .template-facts-grid,
-    .template-checklist {
-      grid-template-columns: 1fr;
-    }
+  .template-gosha-quote__avatar {
+    display: grid;
+    width: clamp(4.5rem, 9vw, 7.5rem);
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+    font-family: var(--kp-font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
 
-    .template-hero__media {
-      order: -1;
-    }
+  .template-gosha-quote strong,
+  .template-gosha-quote__author {
+    color: var(--kp-reference-ink);
+    font-weight: 700;
+  }
 
-    .template-gallery {
+  .template-gosha-quote__author span {
+    color: var(--kp-reference-muted);
+    font-weight: 500;
+  }
+
+  .template-section--faq {
+    gap: 2.5rem;
+  }
+
+  .template-faq-list {
+    display: grid;
+    gap: 0;
+  }
+
+  .template-faq-list details {
+    border-top: .0625rem solid color-mix(in srgb, var(--kp-reference-ink) 18%, transparent);
+    padding-block: 1.35rem;
+  }
+
+  .template-faq-list details:last-child {
+    border-bottom: .0625rem solid color-mix(in srgb, var(--kp-reference-ink) 18%, transparent);
+  }
+
+  .template-faq-list summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--kp-reference-ink);
+    cursor: pointer;
+    font-family: var(--kp-font-heading);
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    font-weight: 700;
+    list-style: none;
+  }
+
+  .template-faq-list summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .template-faq-list summary::after {
+    color: var(--kp-reference-blue);
+    content: '+';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  .template-faq-list details[open] summary::after {
+    content: '–';
+  }
+
+  .template-faq-list p {
+    max-width: 58rem;
+    margin: .9rem 0 0;
+  }
+
+  @media (max-width: 64rem) {
+    .template-feature-grid,
+    .template-scenario-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
   @media (max-width: 39.9375rem) {
-    .template-hero h1 {
-      font-size: clamp(2.35rem, 12vw, 3.5rem);
+    .page-template--robot {
+      gap: 3.5rem;
+      padding-block: 1rem 3.5rem;
     }
 
-    .template-hero__actions {
+    .template-live-hero {
+      min-height: 24rem;
+      border-radius: 1.25rem;
+    }
+
+    .template-live-hero h1 {
+      font-size: clamp(2.45rem, 11vw, 3.5rem);
+    }
+
+    .template-live-hero__actions,
+    .template-live-cta__actions,
+    .template-feature-grid,
+    .template-scenario-grid,
+    .template-gosha-quote {
+      grid-template-columns: 1fr;
+    }
+
+    .template-live-hero__actions,
+    .template-live-cta__actions {
       display: grid;
-      justify-items: start;
+      justify-items: center;
     }
 
-    .template-button {
-      width: auto;
-      max-width: 100%;
-      padding-inline: 1.25rem;
+    .template-gosha-quote {
+      justify-items: start;
     }
   }
 </style>

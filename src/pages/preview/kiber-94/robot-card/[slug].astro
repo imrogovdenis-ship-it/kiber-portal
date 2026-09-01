@@ -35,11 +35,9 @@ const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
     }),
   ]}
 >
-  <main class="kiber94-preview container" id="main-content" tabindex="-1" data-kiber-task="KIBER-94" data-preview-route="robot_card" data-robot-slug={robot.slug}>
+  <main class="kiber94-preview" id="main-content" tabindex="-1" data-kiber-task="KIBER-94" data-preview-route="robot_card" data-robot-slug={robot.slug}>
     <header class="kiber94-preview__notice" aria-label="Статус preview">
-      <p>Preview-first / KIBER-94</p>
-      <p class="kiber94-preview__title">robot_card template с реальными данными: {robot.identity.name}</p>
-      <p>Эта страница не индексируется, не попадает в публичные маршруты и нужна только для проверки нового шаблона перед заменой публичных карточек.</p>
+      <p>Preview-first / KIBER-94 · дизайн сверяется с Главной, Подборками, Блогом Кибер Гоши и live robot pages</p>
     </header>
     <RobotCardTemplate {template} />
   </main>
@@ -48,30 +46,36 @@ const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
 <style>
   .kiber94-preview {
     display: grid;
-    gap: var(--kp-grid-gap);
-    padding-block: var(--kp-section-block);
+    width: min(100% - (2 * var(--kp-reference-page-gutter)), var(--kp-reference-container));
+    margin-inline: auto;
+    gap: 1rem;
+    padding-block: 1.5rem 0;
   }
   .kiber94-preview__notice {
-    display: grid;
-    gap: 0.75rem;
-    padding: 1.25rem;
-    border: 0.0625rem solid var(--kp-line);
-    border-radius: 1.25rem;
-    background: var(--kp-surface-soft);
+    width: fit-content;
+    max-width: 100%;
+    padding: .6rem .9rem;
+    border-radius: 999rem;
+    background: color-mix(in srgb, var(--kp-reference-white) 76%, transparent);
   }
   .kiber94-preview__notice p {
     margin: 0;
-  }
-  .kiber94-preview__notice p:first-child {
     color: var(--kp-muted);
-    font-size: 0.8rem;
+    font-size: .75rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
-  .kiber94-preview__title {
-    font-family: var(--kp-font-heading);
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    line-height: 1;
+
+  @media (max-width: 39.9375rem) {
+    .kiber94-preview {
+      width: auto;
+      max-width: 100%;
+      padding-inline: var(--kp-reference-page-gutter);
+    }
+
+    .kiber94-preview__notice {
+      border-radius: 1rem;
+    }
   }
 </style>

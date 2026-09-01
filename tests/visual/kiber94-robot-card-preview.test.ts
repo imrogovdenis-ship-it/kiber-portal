@@ -65,13 +65,16 @@ test('KIBER-94 records owner approval only for robot_card structure and data map
 
 test('KIBER-94 robot_card preview has an owner-review visual layout layer', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
-  assert.match(componentSource, /template-hero__copy/);
-  assert.match(componentSource, /template-hero__media/);
-  assert.match(componentSource, /template-facts-grid/);
-  assert.match(componentSource, /template-checklist/);
-  assert.match(componentSource, /template-section--pricing/);
-  assert.match(componentSource, /template-gosha__inner/);
-  assert.match(componentSource, /var\(--kp-reference-sky\)/);
-  assert.match(componentSource, /var\(--kp-reference-blue\)/);
-  assert.match(componentSource, /border-radius: 1\.5rem/);
+  assert.match(componentSource, /template-live-hero/);
+  assert.match(componentSource, /template-live-hero__scrim/);
+  assert.match(componentSource, /template-live-intro/);
+  assert.match(componentSource, /01 — ключевые возможности/);
+  assert.match(componentSource, /02 — сценарии использования/);
+  assert.match(componentSource, /template-feature-grid/);
+  assert.match(componentSource, /template-scenario-grid/);
+  assert.match(componentSource, /template-live-cta/);
+  assert.match(componentSource, /template-gosha-quote/);
+  assert.match(componentSource, /Вопросы и ответы \(FAQ\)/);
+  assert.match(componentSource, /box-shadow: none/);
+  assert.match(componentSource, /border-radius: 1\.625rem/);
 });

@@ -83,7 +83,7 @@ const report = {
   },
   designPass: {
     status: failures.length ? 'failed' : 'ready_for_owner_visual_review',
-    scope: 'preview-only robot_card visual layout pass',
+    scope: 'preview-only robot_card visual layout pass aligned to approved home/compilations/articles pages and live robot page references',
     publicRouteReplacementApproval: false,
     productionApproval: false,
   },
