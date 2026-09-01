@@ -13,6 +13,9 @@ const aiEntityMapPath = resolve(root, 'data/seo/ai-entity-map.json');
 const llmsTxtPath = resolve(root, 'public/llms.txt');
 const remediationBacklogPath = resolve(root, 'data/seo/page-seo-remediation-backlog.json');
 const remediationBacklogDocPath = resolve(root, 'docs/page-seo-remediation-backlog.md');
+const pageTypeIntentContractPath = resolve(root, 'data/seo/page-type-intent-contract.draft.json');
+const pageTypeIntentMatrixDocPath = resolve(root, 'docs/seo-ai-page-type-intent-matrix.md');
+const kiber94MaterialsAnalysisPath = resolve(root, 'docs/review/kiber-94-materials-alignment/materials-analysis.json');
 const packagePath = resolve(root, 'package.json');
 
 function readJson(path: string) {
@@ -189,5 +192,75 @@ test('KIBER-93 closes with a machine-readable remediation backlog for non-blocki
     assert.ok(Array.isArray(task.routes) && task.routes.length > 0, `${task.id}: routes required`);
     assert.equal(task.safety.productionDeploy, false, `${task.id}: must not imply production deploy`);
     assert.equal(task.safety.liveLeadRouting, false, `${task.id}: must not imply live lead routing`);
+  }
+});
+
+test('KIBER-94 defines a sitewide SEO/AI page-type intent contract before template changes', () => {
+  assert.equal(existsSync(pageTypeIntentContractPath), true, 'data/seo/page-type-intent-contract.draft.json must exist');
+  assert.equal(existsSync(pageTypeIntentMatrixDocPath), true, 'docs/seo-ai-page-type-intent-matrix.md must exist');
+  assert.equal(existsSync(kiber94MaterialsAnalysisPath), true, 'KIBER-94 material archaeology report must exist');
+
+  const contract = readJson(pageTypeIntentContractPath);
+  const materials = readJson(kiber94MaterialsAnalysisPath);
+  const matrixDoc = readFileSync(pageTypeIntentMatrixDocPath, 'utf8');
+  const packageJson = readJson(packagePath);
+
+  assert.equal(contract.schemaVersion, 1);
+  assert.equal(contract.issue, 'KIBER-94');
+  assert.equal(contract.status, 'draft_for_owner_review');
+  assert.equal(contract.strategy, 'contract_first_hybrid');
+  assert.equal(contract.policy.productionSideEffects, false);
+  assert.equal(contract.policy.massPageGenerationBlockedUntil, 'page-type intent contract approved');
+  assert.equal(contract.policy.renderServiceSectionsPublicly, false);
+  assert.equal(contract.policy.tildaBlocksAreSourceStructureOnly, true);
+  assert.equal(contract.policy.publicCompilationTerm, 'Подборки');
+  assert.ok(Array.isArray(contract.sourceMaterials) && contract.sourceMaterials.length >= 11);
+  assert.ok(materials.materials.length >= 11, 'materials-analysis must cover uploaded representative materials');
+
+  assert.equal(packageJson.scripts['test:page-type-intent-contract'], 'node --import tsx --test tests/visual/page-seo-components-contract.test.ts');
+
+  for (const pageType of ['home', 'robot_card', 'category', 'compilation', 'article_index', 'article_detail', 'news_index', 'news_detail', 'contacts', 'legal', 'conversion']) {
+    const spec = contract.pageTypes[pageType];
+    assert.ok(spec, `${pageType}: page-type contract missing`);
+    assert.ok(spec.requiredH1Pattern.length >= 3, `${pageType}: H1 pattern required`);
+    assert.ok(spec.titlePattern.length >= 3, `${pageType}: title pattern required`);
+    assert.ok(spec.primaryKeywordRule.length >= 3, `${pageType}: primary keyword rule required`);
+    assert.ok(spec.firstBlockRule.length >= 3, `${pageType}: first-block rule required`);
+    assert.ok(spec.aiSummaryRule.length >= 3, `${pageType}: AI summary rule required`);
+    assert.ok(spec.ctaRule.length >= 3, `${pageType}: CTA rule required`);
+    assert.ok(spec.schemaRule.length >= 3, `${pageType}: schema rule required`);
+    assert.ok(spec.internalLinksRule.length >= 3, `${pageType}: internal links rule required`);
+    assert.ok(spec.factualSafetyRule.length >= 3, `${pageType}: factual-safety rule required`);
+    assert.ok(Array.isArray(spec.publicBlocks), `${pageType}: public blocks array required`);
+    assert.ok(Array.isArray(spec.reviewOnlyBlocks), `${pageType}: review-only blocks array required`);
+    assert.ok(Array.isArray(spec.claudeOutputFields), `${pageType}: Claude output fields array required`);
+    assert.ok(Array.isArray(spec.ciChecks), `${pageType}: CI checks array required`);
+    assert.ok(matrixDoc.includes(`\`${pageType}\``), `${pageType}: matrix doc must mention page type`);
+  }
+});
+
+test('KIBER-94 contract models repeating content templates as typed block systems', () => {
+  const contract = readJson(pageTypeIntentContractPath);
+
+  const robot = contract.pageTypes.robot_card;
+  for (const block of ['hero', 'modelIntro', 'gallery', 'description', 'capabilities', 'scenarios', 'robotInAction', 'goshaCta', 'faq']) {
+    assert.ok(robot.publicBlocks.includes(block), `robot_card: expected ${block}`);
+  }
+  assert.ok(robot.reviewOnlyBlocks.includes('priceSourceReconciliation'));
+  assert.ok(robot.reviewOnlyBlocks.includes('claimSourceStatus'));
+
+  const article = contract.pageTypes.article_detail;
+  assert.deepEqual(article.requiredArchetypes, ['scenario/occasion', 'price_explainer', 'ideas/listicle', 'comparison']);
+  for (const optionalBlock of ['comparisonTable', 'checkpointList', 'numbersBlock', 'catalogBlock', 'relatedArticles', 'gallery']) {
+    assert.ok(article.optionalTypedBlocks.includes(optionalBlock), `article_detail: expected optional ${optionalBlock}`);
+  }
+  assert.ok(article.reviewOnlyBlocks.includes('wordstatAnalysis'));
+  assert.ok(article.reviewOnlyBlocks.includes('serpAnalysis'));
+
+  const compilation = contract.pageTypes.compilation;
+  assert.ok(compilation.aliases.includes('сборка'), 'compilation must preserve source alias');
+  assert.equal(compilation.publicLabel, 'Подборки');
+  for (const block of ['hero', 'intro', 'gallery', 'scenarioExplanation', 'catalogBlock', 'relatedArticles', 'faq', 'goshaCta', 'otherCompilations']) {
+    assert.ok(compilation.publicBlocks.includes(block), `compilation: expected ${block}`);
   }
 });

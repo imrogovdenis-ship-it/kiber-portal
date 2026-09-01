@@ -289,9 +289,47 @@ def build_remediation_backlog(report):
 
 def write_remediation_backlog(report):
     backlog=build_remediation_backlog(report)
-    (ROOT/'data/seo/page-seo-remediation-backlog.json').write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    existing_path = ROOT/'data/seo/page-seo-remediation-backlog.json'
+    existing = {}
+    if existing_path.exists():
+        try:
+            existing = json.loads(existing_path.read_text(encoding='utf-8'))
+        except Exception:
+            existing = {}
+    owner_approval = existing.get('ownerApproval')
+    if owner_approval and owner_approval.get('status') == 'owner_approved_complete':
+        backlog['status'] = 'owner_approved_complete'
+        backlog['decision'] = 'Owner approved KIBER-93 as complete infrastructure under option A. Remaining warnings are follow-up tasks, not hidden debt and not blockers for closing KIBER-93.'
+        backlog['ownerApproval'] = owner_approval
+        report['kiber93Closure'] = {
+            'status': owner_approval['status'],
+            'approvedAt': owner_approval.get('approvedAt'),
+            'approvalQuote': owner_approval.get('approvalQuote'),
+            'remainingWarningsDisposition': 'moved_to_page_seo_remediation_backlog',
+        }
+    existing_path.write_text(json.dumps(backlog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     icon={'ready_for_next_issue':'✅','requires_owner_content_review':'⚠️','requires_design_review':'⚠️'}
-    lines=['# KIBER-93 — SEO/AI remediation backlog','','Status: **ready_for_owner_review**','',backlog['decision'],'',f"Routes checked: **{backlog['summary']['routesChecked']}**  ",f"Technical failures: **{backlog['summary']['technicalFailures']}**  ",f"Warning checks preserved: **{backlog['summary']['warningCount']}**  ",f"Routes with warnings: **{backlog['summary']['routesWithWarnings']}**  ",'','## Completed in KIBER-93','']
+    status_label = backlog['status']
+    lines=['# KIBER-93 — SEO/AI remediation backlog','',f'Status: **{status_label}**','',backlog['decision'],'',f"Routes checked: **{backlog['summary']['routesChecked']}**  ",f"Technical failures: **{backlog['summary']['technicalFailures']}**  ",f"Warning checks preserved: **{backlog['summary']['warningCount']}**  ",f"Routes with warnings: **{backlog['summary']['routesWithWarnings']}**  ",'']
+    if owner_approval and owner_approval.get('status') == 'owner_approved_complete':
+        lines[4] = 'KIBER-93 infrastructure is complete when audits, passports, AI visibility, llms.txt, robots policy and remediation backlog are in CI. Remaining warnings become follow-up implementation/review tasks, not hidden debt.'
+        no_approval_labels = {
+            'productionDeploy': 'production deploy',
+            'dnsChange': 'DNS',
+            'productionSecrets': 'production secrets',
+            'analyticsActivation': 'analytics activation',
+            'liveLeadRouting': 'live lead routing',
+            'prMerge': 'PR merge',
+            'massPageGeneration': 'mass page generation',
+        }
+        does_not_approve_items = [no_approval_labels.get(str(item), str(item)) for item in owner_approval.get('doesNotApprove', [])]
+        if len(does_not_approve_items) > 1:
+            does_not_approve = ', '.join(does_not_approve_items[:-1]) + ', or ' + does_not_approve_items[-1]
+        else:
+            does_not_approve = ', '.join(does_not_approve_items)
+        lines.append('')
+        lines.extend(['## Owner approval','',f"- Approved by: {owner_approval.get('approvedBy', 'owner')}",f"- Approved at: `{owner_approval.get('approvedAt')}`",f"- Quote: “{owner_approval.get('approvalQuote')}”",'- Meaning: KIBER-93 closes as SEO/AI audit infrastructure. Remaining warnings are preserved as follow-up tasks and do not block closing KIBER-93.',f"- Does not approve: {does_not_approve}.",''])
+    lines.extend(['## Completed in KIBER-93',''])
     for task in backlog['completedRemediations']:
         lines.append(f"### ✅ `{task['id']}` — {task['title']}")
         lines.append(f"- Status: `{task['status']}`")
@@ -331,9 +369,16 @@ def main():
     summary={'routesChecked':len(routes),'passed':sum(r['status']=='pass' for r in routes),'warnings':sum(r['status']=='warning' for r in routes),'failed':sum(r['status']=='fail' for r in routes)}
     report={'schemaVersion':1,'issue':'KIBER-93','status':'failed' if summary['failed'] else ('warning' if summary['warnings'] else 'passed'),'summary':summary,'routes':routes}
     (ROOT/'data/seo').mkdir(parents=True, exist_ok=True); (ROOT/'docs').mkdir(parents=True, exist_ok=True)
-    (ROOT/'data/seo/page-seo-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     backlog = write_remediation_backlog(report)
-    lines=['# KIBER-93 — Page SEO components audit','','Status: **'+report['status']+'**','',f"Checked: {summary['routesChecked']} routes; pass: {summary['passed']}; warnings: {summary['warnings']}; failed: {summary['failed']}",'',f"Remediation backlog: **{len(backlog['remediationTasks'])} tasks** in `data/seo/page-seo-remediation-backlog.json` and `docs/page-seo-remediation-backlog.md`",'','## Per-route summary','']
+    (ROOT/'data/seo/page-seo-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    status_label = report['status']
+    if report.get('kiber93Closure', {}).get('status') == 'owner_approved_complete':
+        status_label = f"{report['status']} / KIBER-93 owner-approved complete"
+    lines=['# KIBER-93 — Page SEO components audit','','Status: **'+status_label+'**','',f"Checked: {summary['routesChecked']} routes; pass: {summary['passed']}; warnings: {summary['warnings']}; failed: {summary['failed']}",'',f"Remediation backlog: **{len(backlog['remediationTasks'])} tasks** in `data/seo/page-seo-remediation-backlog.json` and `docs/page-seo-remediation-backlog.md`",'']
+    if report.get('kiber93Closure', {}).get('status') == 'owner_approved_complete':
+        closure = report['kiber93Closure']
+        lines.extend(['## KIBER-93 closure','',f"Owner approved option A at `{closure.get('approvedAt')}`: KIBER-93 is complete as SEO/AI audit infrastructure; remaining warnings are moved to the remediation backlog.",'','This approval does not grant production deploy, DNS, production secrets, analytics activation, live lead routing, PR merge, or mass page generation.',''])
+    lines.extend(['## Per-route summary',''])
     icon={'pass':'✅','warning':'⚠️','fail':'❌'}
     for r in routes:
         lines.append(f"### {r['slug']} — {icon[r['status']]} {r['status']}")

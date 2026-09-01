@@ -51,7 +51,8 @@
     "test:media-storage-policy": "node scripts/media-storage-policy-smoke.mjs",
     "test:kiber-65-readiness": "node scripts/kiber-65-readiness-matrix-smoke.mjs",
     "test:full-site-visual-qa": "node scripts/full-site-visual-qa-smoke.mjs",
-    "test:page-seo-components": "python3 scripts/audit_page_seo_components.py"
+    "test:page-seo-components": "python3 scripts/audit_page_seo_components.py",
+    "test:page-type-intent-contract": "node --import tsx --test tests/visual/page-seo-components-contract.test.ts"
   },
   "dependencies": {
     "astro": "7.2.7",
