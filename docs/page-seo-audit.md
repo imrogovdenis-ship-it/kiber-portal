@@ -1201,9 +1201,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 101 chars
 - ✅ `h1Count` — 1 H1: ['Блог Кибер Гоши']
 - ✅ `h1MatchesPassport` — rendered='Блог Кибер Гоши'; passport='Блог Кибер Гоши'
-- ✅ `h2Present` — 4 H2
+- ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5852 visible chars; target 500
+- ✅ `usefulText` — 5772 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='статьи о роботах для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='статьи о роботах для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='статьи о роботах для мероприятий'

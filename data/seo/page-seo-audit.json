@@ -5268,7 +5268,7 @@
         },
         "h2Present": {
           "status": "pass",
-          "message": "4 H2"
+          "message": "3 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -5276,7 +5276,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "5852 visible chars; target 500"
+          "message": "5772 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -5400,11 +5400,11 @@
         "title": "Блог Кибер Гоши — КИБЕР ПОРТАЛ",
         "description": "Блог Кибер Гоши со статьями о роботах для мероприятий, аренде, подготовке площадки и выборе сценария.",
         "h1": "Блог Кибер Гоши",
-        "h2Count": 4,
+        "h2Count": 3,
         "schemaTypes": [
           "CollectionPage"
         ],
-        "visibleTextChars": 5852
+        "visibleTextChars": 5772
       }
     },
     {

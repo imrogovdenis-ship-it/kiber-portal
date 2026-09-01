@@ -29,13 +29,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
       </div>
     </section>
 
-    <section class="articles-page__feed container" id="article-feed" aria-labelledby="article-feed-title">
-      <div class="articles-page__section-copy">
-        <p class="articles-page__eyebrow">Статьи</p>
-        <h2 id="article-feed-title">Все статьи сайта</h2>
-        <p>Собрали материалы из блока главной и реального раздела статей: идеи для мероприятий, сравнения моделей, сценарии welcome-зон и практические советы по аренде роботов.</p>
-      </div>
-
+    <section class="articles-page__feed container" id="article-feed" aria-label="Статьи Блога Кибер Гоши">
       <div class="articles-page__grid" data-article-card-count={articleCards.length}>
         {articleCards.map((card) => (
           <a class="articles-page__card" href={card.href} aria-label={`Открыть: ${card.title}`} style={`--article-card-image: url('${card.image.src}')`}>
@@ -81,10 +75,13 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     display: grid;
   }
 
+  .articles-page__hero,
+  .articles-page__intro {
+    max-width: 72rem;
+  }
+
   .articles-page__hero h1,
   .articles-page__eyebrow,
-  .articles-page__section-copy h2,
-  .articles-page__section-copy p,
   .articles-page__intro-copy h2,
   .articles-page__intro-copy p {
     margin: 0;
@@ -109,8 +106,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     letter-spacing: 0;
   }
 
-  .articles-page__intro-copy,
-  .articles-page__section-copy {
+  .articles-page__intro-copy {
     display: grid;
     gap: .75rem;
   }
@@ -119,12 +115,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     max-width: 72rem;
   }
 
-  .articles-page__section-copy {
-    max-width: 48rem;
-  }
-
-  .articles-page__intro-copy h2,
-  .articles-page__section-copy h2 {
+  .articles-page__intro-copy h2 {
     color: var(--kp-reference-ink);
     font-family: var(--kp-font-heading);
     font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg));
@@ -133,8 +124,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     letter-spacing: 0;
   }
 
-  .articles-page__intro-copy p:last-child,
-  .articles-page__section-copy p:last-child {
+  .articles-page__intro-copy p:last-child {
     max-width: 60rem;
     color: var(--kp-reference-muted);
     line-height: 1.65;
