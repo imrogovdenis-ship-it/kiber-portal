@@ -90,6 +90,18 @@ test('KIBER-94 Unitree G1 capabilities and scenarios use owner requested expande
 });
 
 
+test('KIBER-94 Unitree G1 CTA #2 uses the owner attached Gosha image without changing CTA #1', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const smoke = readFileSync(smokePath, 'utf8');
+
+  assert.match(componentSource, /const robotFinalCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta2\.webp'/);
+  assert.match(componentSource, /alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота'/);
+  assert.match(componentSource, /image: robotFinalCtaImage/);
+  assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: homeFinalCta\.image/);
+  assert.match(smoke, /CTA #2 owner image/);
+});
+
+
 test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with live price', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');

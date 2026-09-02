@@ -93,15 +93,21 @@ const orderFlow = [
 ];
 
 const aiSummary = template.aiSummary;
+const robotFinalCtaImage = {
+  src: '/images/kiber-94-preview/gosha-ushanka-cta2.webp',
+  alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота',
+};
 const robotQuickCta = {
   ...homeFinalCta,
   title: quickCtaTitle,
   description: '',
+  image: homeFinalCta.image,
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
   secondaryCta: { label: 'Оставить заявку', href: leadHref },
 };
 const robotFinalCta = {
   ...homeFinalCta,
+  image: robotFinalCtaImage,
   title: 'Остались вопросы?',
   description: `Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, подойдёт ли ${template.robot.name} под вашу площадку, аудиторию и тайминг.`,
   primaryCta: { label: 'Написать нам', href: '/contacts/' },

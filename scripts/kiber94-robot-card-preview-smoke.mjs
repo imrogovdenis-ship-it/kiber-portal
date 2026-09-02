@@ -77,6 +77,11 @@ for (const robot of robots) {
     if (!/template-reused-block--quick-cta/.test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 class missing`);
   }
   if (/data-block-id="structuredFacts"/.test(html)) failures.push(`${robot.slug}: visible structured facts block must be removed`);
+  const finalQuestionsBlock = html.match(/<section[^>]*data-block-id="finalQuestionsCta"[\s\S]*?<\/section>/)?.[0] ?? '';
+  if (robot.slug === 'arenda-unitree-g1') {
+    if (!/\/images\/kiber-94-preview\/gosha-ushanka-cta2\.webp/.test(finalQuestionsBlock)) failures.push(`${robot.slug}: CTA #2 owner image missing`);
+    if (!/Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота/.test(finalQuestionsBlock)) failures.push(`${robot.slug}: CTA #2 owner image alt missing`);
+  }
   if (!/data-block-id="hiddenMachineFacts"/.test(html)) failures.push(`${robot.slug}: machine-readable facts marker missing`);
   if (!/template-live-hero--dark/.test(html)) failures.push(`${robot.slug}: dark hero visual class missing`);
   if (!/data-drag-slider="robot-gallery"/.test(html)) failures.push(`${robot.slug}: first gallery drag slider missing`);
