@@ -23,7 +23,6 @@ for (const robot of robots) {
     'data-kiber-task="KIBER-94"',
     'data-block-id="hero"',
     'data-block-id="gallery"',
-    'data-block-id="description"',
     'data-block-id="aiSummary"',
     'data-block-id="hiddenMachineFacts"',
     'data-block-id="includedService"',
@@ -64,6 +63,15 @@ for (const robot of robots) {
   if (galleryImageCount < 2) warnings.push(`${robot.slug}: media debt — only ${galleryImageCount} local gallery image available; import approved gallery assets before public rollout`);
   if (/height:\s*\.0625rem/.test(html)) failures.push(`${robot.slug}: gallery image CSS is visually hidden`);
   if (!/template-ai-summary/.test(html)) failures.push(`${robot.slug}: visible AI summary block missing`);
+  if (/data-block-id="description"/.test(html) || /template-live-intro/.test(html)) failures.push(`${robot.slug}: text block with heading must be removed`);
+  if (robot.slug === 'arenda-unitree-g1') {
+    const capabilitiesBlock = html.match(/<section[^>]*data-block-id="capabilities"[\s\S]*?<\/section>/)?.[0] ?? '';
+    const scenariosBlock = html.match(/<section[^>]*data-block-id="scenarios"[\s\S]*?<\/section>/)?.[0] ?? '';
+    if (!/Ключевые возможности Unitree G1 показывают/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capabilities lead missing`);
+    if (!/Сценарии использования помогают быстро понять/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenarios lead missing`);
+    if (!/Рост и пластика гуманоидного корпуса/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capability card copy missing`);
+    if (!/Интерактивная фотозона превращает Unitree G1 в героя кадров/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenario card copy missing`);
+  }
   if (/data-block-id="structuredFacts"/.test(html)) failures.push(`${robot.slug}: visible structured facts block must be removed`);
   if (!/data-block-id="hiddenMachineFacts"/.test(html)) failures.push(`${robot.slug}: machine-readable facts marker missing`);
   if (!/template-live-hero--dark/.test(html)) failures.push(`${robot.slug}: dark hero visual class missing`);

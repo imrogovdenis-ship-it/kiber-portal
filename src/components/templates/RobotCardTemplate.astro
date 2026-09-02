@@ -14,8 +14,8 @@ const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
 const primaryGallery = (gallery.length > 1 ? gallery.slice(1, 6) : gallery).slice(0, 5);
 const actionGallery = (gallery.length > 3 ? gallery.slice(3, 8) : gallery.slice(1, 6).length > 0 ? gallery.slice(1, 6) : gallery).slice(0, 5);
-const descriptionBlocks = template.bodyBlocks.filter((block) => block.text);
-const introText = descriptionBlocks[0]?.text;
+const capabilitiesLead = template.bodyBlocks.find((block) => block.id === 'capabilitiesLead')?.text ?? 'Возможности показываем как продающие сценарные преимущества, но без неподтверждённых обещаний: факты идут из текущей карточки робота.';
+const scenariosLead = template.bodyBlocks.find((block) => block.id === 'scenariosLead')?.text ?? 'Сценарии помогают посетителю быстро понять, подойдёт ли робот под его событие, а AI-агенту — связать модель с реальными event-задачами.';
 const capabilityItems = template.robot.capabilities.slice(0, 6);
 const scenarioItems = template.robot.scenarios.slice(0, 6);
 
@@ -167,15 +167,10 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     </div>
   </section>
 
-  <section class="template-live-intro" data-block-id="description" aria-labelledby="robot-card-text-title">
-    <h2 id="robot-card-text-title">{template.robot.name} на мероприятии</h2>
-    {introText && <p>{introText}</p>}
-  </section>
-
   <section class="template-section" data-block-id="capabilities" aria-labelledby="robot-card-capabilities-title">
     <p class="template-section__number">01 — ключевые возможности</p>
     <h2 id="robot-card-capabilities-title">{`Что умеет ${template.robot.name}`}</h2>
-    <p class="template-section__lead">Возможности показываем как продающие сценарные преимущества, но без неподтверждённых обещаний: факты идут из текущей карточки робота.</p>
+    <p class="template-section__lead">{capabilitiesLead}</p>
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
         <article>
@@ -190,7 +185,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   <section class="template-section" data-block-id="scenarios" aria-labelledby="robot-card-scenarios-title">
     <p class="template-section__number">02 — сценарии использования</p>
     <h2 id="robot-card-scenarios-title">{`Где ${template.robot.name} произведёт «вау-эффект»?`}</h2>
-    <p class="template-section__lead">Сценарии помогают посетителю быстро понять, подойдёт ли робот под его событие, а AI-агенту — связать модель с реальными event-задачами.</p>
+    <p class="template-section__lead">{scenariosLead}</p>
     <div class="template-scenario-grid">
       {scenarioItems.map((item) => <article><h3>{item.title ?? item.text}</h3><p>{item.text}</p></article>)}
     </div>
@@ -437,8 +432,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-live-hero__eyebrow,
   .template-live-hero h1,
   .template-live-hero p,
-  .template-live-intro h2,
-  .template-live-intro p,
   .template-ai-summary p,
   .template-section h2,
   .template-section h3,
@@ -516,7 +509,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     color: var(--kp-reference-white);
   }
 
-  .template-live-intro,
   .template-section,
   .template-live-gallery,
   .template-related-catalog,
@@ -526,8 +518,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     gap: clamp(1.5rem, 3vw, 2.25rem);
   }
 
-  .template-ai-summary,
-  .template-live-intro {
+  .template-ai-summary {
     max-width: 72rem;
   }
 
@@ -649,7 +640,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     max-width: min(44rem, 86vw);
   }
 
-  .template-live-intro h2,
   .template-section h2,
   .template-section-copy h2 {
     color: var(--kp-reference-ink);
@@ -659,7 +649,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     line-height: 1;
   }
 
-  .template-live-intro p,
   .template-section__lead,
   .template-feature-grid p,
   .template-scenario-grid p,
@@ -683,6 +672,12 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     align-content: start;
     gap: 1rem;
     min-width: 0;
+  }
+
+  .template-scenario-grid article {
+    border-radius: 1.35rem;
+    padding: clamp(1.15rem, 2vw, 1.65rem);
+    background: var(--kp-reference-white);
   }
 
   .template-feature-grid img {

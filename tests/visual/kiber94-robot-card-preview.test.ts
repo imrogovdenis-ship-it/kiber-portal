@@ -63,10 +63,40 @@ test('KIBER-94 Unitree G1 aiSummary uses owner supplied bold scenario copy', () 
   assert.doesNotMatch(componentSource, /const aiSummary = `\$\{template\.hero\.text\} \$\{template\.aiSummary\}`/);
 });
 
+test('KIBER-94 Unitree G1 capabilities and scenarios use owner requested expanded copy', () => {
+  const mapperSource = readFileSync(mapperPath, 'utf8');
+  const componentSource = readFileSync(componentPath, 'utf8');
+
+  assert.match(mapperSource, /const ownerRobotCardCopyBySlug/);
+  assert.match(mapperSource, /capabilitiesLead:/);
+  assert.match(mapperSource, /scenariosLead:/);
+  assert.match(mapperSource, /capabilities: ownerCapabilityBlocks \?\? capabilityBlocks/);
+  assert.match(mapperSource, /scenarios: ownerScenarioBlocks \?\? scenarioBlocks/);
+  assert.match(componentSource, /\{capabilitiesLead\}/);
+  assert.match(componentSource, /\{scenariosLead\}/);
+  assert.doesNotMatch(componentSource, /template-live-intro/);
+  assert.doesNotMatch(componentSource, /data-block-id=\"description\"/);
+  assert.match(componentSource, /\.template-scenario-grid article \{[\s\S]*background:\s*var\(--kp-reference-white\)/);
+  assert.match(componentSource, /\.template-scenario-grid article \{[\s\S]*border-radius:\s*1\.35rem/);
+  assert.match(componentSource, /\.template-scenario-grid article \{[\s\S]*padding:\s*clamp\(1\.15rem,\s*2vw,\s*1\.65rem\)/);
+
+  const requiredTexts = [
+    'Ключевые возможности Unitree G1 показывают, за что его берут на мероприятия',
+    'Сценарии использования помогают быстро понять, где Unitree G1 даст лучший эффект',
+    'Рост и пластика гуманоидного корпуса помогают Unitree G1 выглядеть как живой герой стенда',
+    'Интерактивная фотозона превращает Unitree G1 в героя кадров',
+  ];
+  for (const text of requiredTexts) assert.ok(mapperSource.includes(text), `missing expanded copy: ${text}`);
+});
+
+
 test('KIBER-94 preview smoke is wired but keeps production and public routes untouched', () => {
   const smoke = readFileSync(smokePath, 'utf8');
   assert.match(smoke, /dist\/preview\/kiber-94\/robot-card/);
   assert.match(smoke, /data-page-type="robot_card"/);
+  assert.match(smoke, /data-block-id="gallery"/);
+  assert.match(smoke, /text block with heading must be removed/);
+  assert.match(smoke, /data-block-id="capabilities"/);
   assert.match(smoke, /noindex, nofollow/);
   assert.match(smoke, /source URL leaked/);
   assert.match(smoke, /massPageGeneration: false/);
@@ -100,7 +130,8 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.doesNotMatch(componentSource, /template-live-cta/);
   assert.match(componentSource, /template-live-hero/);
   assert.match(componentSource, /template-live-hero__media/);
-  assert.match(componentSource, /template-live-intro/);
+  assert.doesNotMatch(componentSource, /template-live-intro/);
+  assert.doesNotMatch(componentSource, /data-block-id="description"/);
   assert.match(componentSource, /data-block-id="aiSummary"/);
   assert.match(componentSource, /template-ai-summary/);
   assert.match(componentSource, /primaryGallery\.map/);
@@ -166,7 +197,6 @@ test('KIBER-94 owner feedback fixes block order and removes duplicate short summ
     'data-block-id="hero"',
     'data-block-id="aiSummary"',
     'data-block-id="gallery"',
-    'data-block-id="description"',
     'data-block-id="capabilities"',
     'data-block-id="scenarios"',
     'data-block-id="robotInAction"',

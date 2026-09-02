@@ -60,7 +60,7 @@ test('KIBER-94 template schemas preserve typed public blocks and review-only bou
 
 test('KIBER-94 Astro templates expose stable block markers and do not render service-only sections', () => {
   const expectations = [
-    { path: robotTemplatePath, pageType: 'robot_card', blocks: ['hero', 'aiSummary', 'gallery', 'description', 'capabilities', 'scenarios', 'robotInAction', 'goshaCta', 'pricing', 'includedService', 'hiddenMachineFacts', 'orderFlow', 'faq', 'finalQuestionsCta', 'articles', 'relatedCatalog'] },
+    { path: robotTemplatePath, pageType: 'robot_card', blocks: ['hero', 'aiSummary', 'gallery', 'capabilities', 'scenarios', 'robotInAction', 'goshaCta', 'pricing', 'includedService', 'hiddenMachineFacts', 'orderFlow', 'faq', 'finalQuestionsCta', 'articles', 'relatedCatalog'] },
     { path: articleTemplatePath, pageType: 'article_detail', blocks: ['hero', 'intro', 'bodySections', 'goshaCta', 'faq', 'relatedLinks'] },
     { path: compilationTemplatePath, pageType: 'compilation', blocks: ['hero', 'intro', 'gallery', 'scenarioExplanation', 'catalogBlock', 'relatedArticles', 'faq', 'goshaCta', 'otherCompilations'] },
   ];
