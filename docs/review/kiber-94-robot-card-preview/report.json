@@ -49,7 +49,7 @@
   },
   "designPass": {
     "status": "ready_for_owner_visual_review",
-    "scope": "preview-only robot_card selling + SEO/AI structure pass with visible aiSummary, real first gallery surface, structured facts, included service, order flow, robot-in-action media, mandatory Kiber Gosha brand voice, related catalog/compilations/articles, FAQ and schemas",
+    "scope": "preview-only robot_card selling + SEO/AI structure pass with visible aiSummary, real first gallery surface, structured facts, included service, order flow, robot-in-action media, mandatory Kiber Gosha brand voice, two CTAs, FAQ, related articles before catalog, and schemas",
     "publicRouteReplacementApproval": false,
     "productionApproval": false
   }

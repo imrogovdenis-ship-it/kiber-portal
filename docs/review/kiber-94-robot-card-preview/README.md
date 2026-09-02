@@ -79,3 +79,39 @@ The current draft structure is versioned in `robot-card-structure-contract.md`. 
 
 - `report.json` records 24 generated preview pages, safety flags, owner approval scope and design-pass scope.
 - Local browser inspection verified the Agibot X2 preview first viewport and full-page rhythm after the preview build.
+
+## Design pass scope
+
+After owner feedback on the first structural pass, the preview now follows the approved-draft order:
+
+1. Header
+2. Breadcrumbs
+3. Hero with left-side title/copy/buttons and right-side square robot image when only catalog media is available
+4. One short visible `aiSummary` block — no duplicate short intro + AI summary pair
+5. First visible gallery
+6. Long text block
+7. Key capabilities
+8. Use scenarios
+9. Robot in action media
+10. Kiber Gosha quote/brand voice
+11. CTA #1
+12. Included service
+13. Facts for choosing
+14. Order flow
+15. FAQ
+16. CTA #2 / “Остались вопросы?”
+17. Blog Kiber Gosha
+18. Related robot catalog
+
+Owner feedback applied:
+
+- visible `Подборки` block removed from `robot_card`;
+- Gosha quote moved between `robotInAction` and CTA #1;
+- Gosha remains mandatory as mascot/brand voice, not decorative filler;
+- CTA with Gosha/`HomeFinalCta` moved after FAQ as CTA #2;
+- articles moved before related catalog;
+- catalog moved to the end;
+- `Service`, `BreadcrumbList`, and `FAQPage` JSON-LD stay present;
+- public `/robots/[slug]/`, production, DNS, secrets, analytics and live lead routing remain untouched.
+
+Known non-blocking media debt: current runtime still has only one local gallery image per robot. The page renders the available real image visibly, but approved gallery assets should be imported before public rollout.

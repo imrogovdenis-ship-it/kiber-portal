@@ -31,15 +31,21 @@
       ],
       "publicBlocks": [
         "hero",
-        "modelIntro",
+        "aiSummary",
         "gallery",
         "description",
         "capabilities",
         "scenarios",
         "robotInAction",
-        "pricing",
         "goshaCta",
-        "faq"
+        "pricing",
+        "includedService",
+        "structuredFacts",
+        "orderFlow",
+        "faq",
+        "finalQuestionsCta",
+        "articles",
+        "relatedCatalog"
       ],
       "reviewOnlyBlocks": [
         "priceSourceReconciliation",

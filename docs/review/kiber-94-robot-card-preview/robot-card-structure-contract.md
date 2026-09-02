@@ -1,6 +1,6 @@
 # KIBER-94 robot_card structure contract draft
 
-Status: **draft_for_owner_review**. Preview-only. This document fixes the robot-card generation structure before rewriting Claude/agent skills and before any public route replacement.
+Status: **draft_for_owner_review**. Preview-only. Updated after Alexander's block-order feedback. This document fixes the robot-card generation structure before rewriting Claude/agent skills and before any public route replacement.
 
 ## Goal
 
@@ -13,85 +13,89 @@ Every generated `robot_card` must:
 3. expose extractable facts for AI agents and search systems;
 4. use real approved media instead of placeholders where available;
 5. include Kiber Gosha as the visible mascot/brand voice;
-6. link the visitor to catalog, Подборки, Blog and contact/request paths;
+6. link the visitor to contact/request paths, Blog Kiber Gosha and the robot catalog;
 7. avoid public rendering of service-only SEO/Wordstat/SERP/internal notes.
 
 ## Canonical block order
 
-This order is strict enough for repeatability, but allows visual/design refinements inside each block.
+This order follows owner feedback and is strict for future generation. Visual/design refinements inside blocks are allowed, but blocks must not be freely rearranged by agents.
 
 1. **Hero**
    - H1 pattern: `Аренда {robotName}` or approved close variant.
    - Must show commercial intent: rental/prokat/request.
+   - If the available robot image is the square catalog image, use a two-column composition: text/data/buttons on the left, square image on the right.
    - Must include immediate CTA and photo/gallery anchor.
    - Must not claim unapproved availability or fixed package.
 
-2. **Intro + visible AI summary**
-   - This is the short text block immediately after Hero.
-   - It must be useful to humans and extractable by AI agents.
-   - It must answer: what the robot is, that it is available as an event rental/service page, where it fits, price status, and that manager clarifies scenario/logistics.
-   - Recommended length: 80–220 visible chars for compact summary, with optional longer supporting intro below.
+2. **Short visible AI summary**
+   - One short block only. Do not render a separate model intro plus a second AI-summary card.
+   - It must combine the compact human intro and AI/search summary.
+   - It must answer: what the robot is, that it is an event rental/service page, where it fits, price status, and that manager clarifies scenario/logistics.
 
 3. **First gallery / robot appearance proof**
-   - Comes immediately after intro/AI summary.
+   - Comes immediately after the short AI summary.
    - Purpose: catch attention and prove that the model is real.
    - Use approved per-robot gallery images when imported.
    - If only one local image is available in preview, render it visibly and record media debt; do not render broken 404 images or fake unrelated images.
-   - Public rollout requires importing/approving the real gallery assets.
 
-4. **Structured facts / facts for choosing**
-   - Machine-readable and human-readable list/table.
-   - Must include: model/type, rental format, operator/service, geography, price/status, manager-clarified details.
-   - Do not publish claims whose source status is unknown.
+4. **Text block**
+   - Longer explanatory copy after the gallery.
+   - Can include practical setup/logistics/limitations and why the robot works for events.
 
-5. **Included service**
-   - Explain what the client receives besides the robot: scenario selection, delivery/setup, operator support, safety/logistics check.
-   - This may be visually combined with structured facts if the design requires it, but the fields must remain extractable.
-
-6. **Capabilities**
+5. **Capabilities**
    - Key robot abilities from source-of-truth data.
    - Phrase as practical benefits where possible.
    - No invented autonomy, movement, language, venue or client claims.
 
-7. **Scenarios / use cases**
+6. **Scenarios / use cases**
    - Show event formats where the robot creates wow-effect.
    - Must help users choose, not merely list keywords.
-   - Must support internal links to Подборки or categories later.
 
-8. **Order flow / what happens after request**
+7. **Robot in action / second media surface**
+   - Media/gallery area focused on action, guests, stage, stand, video/social effect.
+   - May use the same approved gallery set until separate action media is imported.
+
+8. **Kiber Gosha brand voice**
+   - Required between `robot in action` and the first CTA.
+   - Use `HomeGoshaQuote` or an approved Gosha helper/quote component.
+   - Gosha is the mascot and brand voice, not decoration. Copy must be helpful: explain choice, scenario, limitation or next step in memorable voice.
+
+9. **CTA #1**
+   - Immediate conversion after the Gosha quote.
+   - Simple CTA without changing live lead routing approvals.
+
+10. **Included service**
+   - Explain what the client receives besides the robot: scenario selection, delivery/setup, operator support, safety/logistics check.
+
+11. **Structured facts / facts for choosing**
+   - Machine-readable and human-readable list/table.
+   - Must include: model/type, rental format, operator/service, geography, price/status, manager-clarified details.
+   - Do not publish claims whose source status is unknown.
+
+12. **Order flow / what happens after request**
    - Remove conversion anxiety.
    - Explain request → clarification → price/availability → delivery/setup/support.
    - Must not imply live CRM/lead routing unless separately approved.
 
-9. **Robot in action / second media surface**
-   - Later media/gallery area focused on action, guests, stage, stand, video/social effect.
-   - May use the same approved gallery set until separate action media is imported.
-
-10. **CTA with Gosha**
-   - Reuse `HomeFinalCta` where possible.
-   - CTA must link to approved contact/request path.
-   - Price copy must preserve “от …” and “not public offer” semantics where applicable.
-
-11. **Kiber Gosha brand voice**
-   - Required on every page type.
-   - Use `HomeGoshaQuote` or an approved Gosha helper/quote component.
-   - Gosha is the mascot and brand voice, not decoration. Copy must be helpful: explain choice, scenario, limitation or next step in memorable voice.
-
-12. **Related catalog**
-   - Use existing `RobotCard` component; do not hand-clone cards.
-   - Links/cards should support comparison and next model discovery.
-
-13. **Related Подборки**
-   - Link to scenario/category pages using public term **Подборки**.
-   - Can reuse `HomeImageCards` with `homeCompilations` until detail pages mature.
-
-14. **FAQ**
+13. **FAQ**
    - Use existing `HomeFaqBlock` where possible.
    - Visible FAQ requires `FAQPage` JSON-LD.
+
+14. **CTA #2 / Остались вопросы?**
+   - Comes immediately after FAQ.
+   - Prefer shared Gosha CTA component (`HomeFinalCta`) if used on the site.
 
 15. **Related articles / Blog Kiber Gosha**
    - Use existing `HomeImageCards` with article data/patterns.
    - Purpose: informational support and long-tail SEO path.
+
+16. **Related catalog**
+   - Use existing `RobotCard` component; do not hand-clone cards.
+   - Links/cards support comparison and next model discovery after the visitor has read the page.
+
+## Explicitly removed from robot_card
+
+- Visible `Подборки` block is removed from this robot-card structure. Подборки can still be linked contextually elsewhere or revisited later, but they are not part of the current canonical robot_card page order.
 
 ## Required schema/SEO/AI layer
 
@@ -100,8 +104,8 @@ This order is strict enough for repeatability, but allows visual/design refineme
 - `FAQPage` JSON-LD when FAQ is visible.
 - One H1 only.
 - Title/description/canonical from page passport/source-of-truth.
-- Visible AI summary or equivalent extractable block.
-- Internal links to contacts/request, catalog, Подборки and articles.
+- One visible AI summary or equivalent extractable block.
+- Internal links to contacts/request, Blog and catalog.
 - No Wordstat/SERP/checklist/source-notes leaks in public HTML.
 
 ## Kiber Gosha rule

@@ -77,7 +77,7 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.doesNotMatch(componentSource, /template-faq-list/);
   assert.doesNotMatch(componentSource, /template-live-cta/);
   assert.match(componentSource, /template-live-hero/);
-  assert.match(componentSource, /template-live-hero__scrim/);
+  assert.match(componentSource, /template-live-hero__media/);
   assert.match(componentSource, /template-live-intro/);
   assert.match(componentSource, /data-block-id="aiSummary"/);
   assert.match(componentSource, /template-ai-summary/);
@@ -87,11 +87,14 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.match(componentSource, /data-block-id="structuredFacts"/);
   assert.match(componentSource, /data-block-id="includedService"/);
   assert.match(componentSource, /data-block-id="orderFlow"/);
-  assert.match(componentSource, /data-block-id="relatedCompilations"/);
-  assert.match(componentSource, /homeCompilations/);
-  assert.match(componentSource, /03 — ключевые возможности/);
-  assert.match(componentSource, /04 — сценарии использования/);
-  assert.match(componentSource, /06 — робот в действии/);
+  assert.doesNotMatch(componentSource, /data-block-id="relatedCompilations"/);
+  assert.doesNotMatch(componentSource, /homeCompilations/);
+  assert.match(componentSource, /01 — ключевые возможности/);
+  assert.match(componentSource, /02 — сценарии использования/);
+  assert.match(componentSource, /03 — робот в действии/);
+  assert.match(componentSource, /04 — что входит/);
+  assert.match(componentSource, /05 — факты для выбора/);
+  assert.match(componentSource, /06 — как заказать/);
   assert.match(componentSource, /template-feature-grid/);
   assert.match(componentSource, /template-scenario-grid/);
   assert.match(componentSource, /box-shadow: none/);
@@ -110,18 +113,60 @@ test('KIBER-94 documents the approved-draft robot_card structure before rewritin
   assert.equal(existsSync(structureContractPath), true, 'robot-card structure contract must exist');
   const doc = readFileSync(structureContractPath, 'utf8');
   for (const phrase of [
-    'Intro + visible AI summary',
+    'Hero',
+    'Short visible AI summary',
     'First gallery / robot appearance proof',
-    'Structured facts / facts for choosing',
-    'Included service',
-    'Order flow / what happens after request',
+    'Text block',
+    'Capabilities',
+    'Scenarios / use cases',
     'Robot in action / second media surface',
     'Kiber Gosha brand voice',
-    'Related Подборки',
+    'CTA #1',
+    'Included service',
+    'Structured facts / facts for choosing',
+    'Order flow / what happens after request',
+    'FAQ',
+    'CTA #2',
+    'Related articles / Blog Kiber Gosha',
+    'Related catalog',
     'Skill rewrite requirement',
   ]) {
     assert.ok(doc.includes(phrase), `structure contract must include ${phrase}`);
   }
   assert.match(doc, /Kiber Gosha must appear across page types/);
   assert.match(doc, /not decoration/);
+  assert.doesNotMatch(doc, /Related Подборки/);
+})
+
+test('KIBER-94 owner feedback fixes block order and removes duplicate short summaries', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const order = [
+    'data-block-id="hero"',
+    'data-block-id="aiSummary"',
+    'data-block-id="gallery"',
+    'data-block-id="description"',
+    'data-block-id="capabilities"',
+    'data-block-id="scenarios"',
+    'data-block-id="robotInAction"',
+    'data-block-id="goshaCta"',
+    'data-block-id="pricing"',
+    'data-block-id="includedService"',
+    'data-block-id="structuredFacts"',
+    'data-block-id="orderFlow"',
+    'data-block-id="faq"',
+    'data-block-id="finalQuestionsCta"',
+    'data-block-id="articles"',
+    'data-block-id="relatedCatalog"',
+  ];
+  let previous = -1;
+  for (const needle of order) {
+    const current = componentSource.indexOf(needle);
+    assert.ok(current > previous, `${needle} must appear after the previous approved block`);
+    previous = current;
+  }
+  assert.equal((componentSource.match(/data-block-id="aiSummary"/g) ?? []).length, 1);
+  assert.doesNotMatch(componentSource, /data-block-id="modelIntro"/);
+  assert.doesNotMatch(componentSource, /data-block-id="relatedCompilations"/);
+  assert.match(componentSource, /template-live-hero__media/);
+  assert.match(componentSource, /Остались вопросы/);
 });
