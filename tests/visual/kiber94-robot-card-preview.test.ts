@@ -84,7 +84,8 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.match(componentSource, /primaryGallery\.map/);
   assert.match(componentSource, /actionGallery\.map/);
   assert.doesNotMatch(componentSource, /height:\s*\.0625rem/);
-  assert.match(componentSource, /data-block-id="structuredFacts"/);
+  assert.doesNotMatch(componentSource, /data-block-id="structuredFacts"/);
+  assert.match(componentSource, /data-block-id="hiddenMachineFacts"/);
   assert.match(componentSource, /data-block-id="includedService"/);
   assert.match(componentSource, /data-block-id="orderFlow"/);
   assert.doesNotMatch(componentSource, /data-block-id="relatedCompilations"/);
@@ -93,8 +94,7 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.match(componentSource, /02 — сценарии использования/);
   assert.match(componentSource, /03 — робот в действии/);
   assert.match(componentSource, /04 — что входит/);
-  assert.match(componentSource, /05 — факты для выбора/);
-  assert.match(componentSource, /06 — как заказать/);
+  assert.match(componentSource, /05 — как заказать/);
   assert.match(componentSource, /template-feature-grid/);
   assert.match(componentSource, /template-scenario-grid/);
   assert.match(componentSource, /box-shadow: none/);
@@ -123,7 +123,7 @@ test('KIBER-94 documents the approved-draft robot_card structure before rewritin
     'Kiber Gosha brand voice',
     'CTA #1',
     'Included service',
-    'Structured facts / facts for choosing',
+    'Machine facts / structured data for choosing',
     'Order flow / what happens after request',
     'FAQ',
     'CTA #2',
@@ -151,7 +151,6 @@ test('KIBER-94 owner feedback fixes block order and removes duplicate short summ
     'data-block-id="goshaCta"',
     'data-block-id="pricing"',
     'data-block-id="includedService"',
-    'data-block-id="structuredFacts"',
     'data-block-id="orderFlow"',
     'data-block-id="faq"',
     'data-block-id="finalQuestionsCta"',
@@ -169,4 +168,32 @@ test('KIBER-94 owner feedback fixes block order and removes duplicate short summ
   assert.doesNotMatch(componentSource, /data-block-id="relatedCompilations"/);
   assert.match(componentSource, /template-live-hero__media/);
   assert.match(componentSource, /Остались вопросы/);
+});
+
+
+test('KIBER-94 robot_card design-block refinement follows owner visual contract', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  assert.match(componentSource, /robotTypeAccusative/);
+  assert.match(componentSource, /heroTitle = `Аренда \${robotTypeAccusative} \${template\.robot\.name}`/);
+  assert.match(componentSource, /template-live-hero--dark/);
+  assert.match(componentSource, /template-live-hero__media img/);
+  assert.match(componentSource, /Оставить заявку/);
+  assert.doesNotMatch(componentSource, /Робот приезжает с оператором, сценарием и подготовкой под площадку/);
+  assert.doesNotMatch(componentSource, /border-left:\s*\.32rem solid var\(--kp-reference-blue\)/);
+  assert.match(componentSource, /data-drag-slider=\"robot-gallery\"/);
+  assert.match(componentSource, /data-drag-slider=\"robot-action-gallery\"/);
+  assert.match(componentSource, /mousedown/);
+  assert.match(componentSource, /mousemove/);
+  assert.match(componentSource, /scrollLeft = startScroll - dx/);
+  assert.doesNotMatch(componentSource, /Сначала показываем самого робота крупно/);
+  assert.doesNotMatch(componentSource, /Media-зона напоминает/);
+  assert.doesNotMatch(componentSource, /data-block-id=\"structuredFacts\"/);
+  assert.match(componentSource, /hiddenMachineFacts/);
+  assert.match(componentSource, /template-check-list--cards/);
+  assert.match(componentSource, /template-order-list--wide/);
+  assert.match(componentSource, /HomeFinalCta \{\.\.\.robotQuickCta/);
+  assert.match(componentSource, /primaryCta: \{ label: 'Написать нам'/);
+  assert.match(componentSource, /secondaryCta: \{ label: 'Оставить заявку'/);
+  assert.match(componentSource, /robotArticles/);
+  assert.match(componentSource, /robotCatalogTitle = 'Вас также могут заинтересовать'/);
 });

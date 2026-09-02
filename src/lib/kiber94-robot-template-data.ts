@@ -1,9 +1,13 @@
 import type { RobotPageRecord } from './robot-pages';
 import type { RobotCardTemplateData } from './page-type-templates';
 
-function hasPublicAsset(src: string): boolean {
-  if (!src.startsWith('/')) return true;
-  return Boolean(import.meta.glob('/public/**/*', { eager: true, query: '?url', import: 'default' })[`/public${src}`]);
+function toPreviewAsset(src: string): string | undefined {
+  if (!src.startsWith('/')) return src;
+  const publicAssets = import.meta.glob('/public/**/*', { eager: true, query: '?url', import: 'default' });
+  if (publicAssets[`/public${src}`]) return src;
+  const filename = src.split('/').at(-1);
+  const previewSrc = filename ? `/images/kiber-94-preview/${filename}` : undefined;
+  return previewSrc && publicAssets[`/public${previewSrc}`] ? previewSrc : undefined;
 }
 
 export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTemplateData {
@@ -77,15 +81,15 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
       name: robot.identity.name,
       manufacturer: robot.identity.manufacturer,
       model: robot.identity.model,
+      category: robot.category,
       priceStatus,
       priceDisplay: robot.pricing.display,
       capabilities: capabilityBlocks,
       scenarios: scenarioBlocks,
-      gallery: [robot.media.hero, ...robot.media.gallery].filter(Boolean).filter((image) => hasPublicAsset(image.src)).slice(0, 8).map((image) => ({
-        src: image.src,
-        alt: image.alt,
-        sourceStatus: 'page_content' as const,
-      })),
+      gallery: [robot.media.hero, ...robot.media.gallery].filter(Boolean).map((image) => {
+        const previewSrc = toPreviewAsset(image.src);
+        return previewSrc ? { src: previewSrc, alt: image.alt, sourceStatus: 'page_content' as const } : undefined;
+      }).filter((image): image is { src: string; alt: string; sourceStatus: 'page_content' } => Boolean(image)).slice(0, 8),
     },
   };
 }

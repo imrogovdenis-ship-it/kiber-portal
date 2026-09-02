@@ -23,7 +23,6 @@
     "arenda-robota-tron: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
     "arenda-senserobot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
     "arenda-sketchbot: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
-    "arenda-unitree-g1: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
     "arenda-unitree-go2: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
     "arenda-unitree-h2: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
     "arenda-unitree-r1: media debt — only 1 local gallery image available; import approved gallery assets before public rollout",
@@ -49,7 +48,7 @@
   },
   "designPass": {
     "status": "ready_for_owner_visual_review",
-    "scope": "preview-only robot_card selling + SEO/AI structure pass with visible aiSummary, real first gallery surface, structured facts, included service, order flow, robot-in-action media, mandatory Kiber Gosha brand voice, two CTAs, FAQ, related articles before catalog, and schemas",
+    "scope": "preview-only robot_card design-block refinement: dark typed hero, two CTAs, one white aiSummary, draggable gallery/action gallery, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog",
     "publicRouteReplacementApproval": false,
     "productionApproval": false
   }

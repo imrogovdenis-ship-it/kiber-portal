@@ -67,7 +67,7 @@ This order follows owner feedback and is strict for future generation. Visual/de
 10. **Included service**
    - Explain what the client receives besides the robot: scenario selection, delivery/setup, operator support, safety/logistics check.
 
-11. **Structured facts / facts for choosing**
+11. **Machine facts / structured data for choosing**
    - Machine-readable and human-readable list/table.
    - Must include: model/type, rental format, operator/service, geography, price/status, manager-clarified details.
    - Do not publish claims whose source status is unknown.
@@ -139,3 +139,8 @@ Not approved by this draft:
 ## Skill rewrite requirement
 
 After owner approval of this structure, rewrite the card-generation skill/prompt so Claude/AI agents emit structured fields for these blocks instead of freeform page prose. The skill must require source status for facts and must reject service-only SEO notes in public copy.
+
+
+## Visible facts block decision
+
+Owner asked to remove `Факты для выбора` from the human-visible page. We do not implement hidden SEO-only text for crawlers because that would risk cloaking. The safe contract is: no visible `structuredFacts` section; facts remain available through normal schema/machine-readable JSON data generated from the same robot source of truth.

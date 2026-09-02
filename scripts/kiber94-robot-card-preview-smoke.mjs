@@ -25,7 +25,7 @@ for (const robot of robots) {
     'data-block-id="gallery"',
     'data-block-id="description"',
     'data-block-id="aiSummary"',
-    'data-block-id="structuredFacts"',
+    'data-block-id="hiddenMachineFacts"',
     'data-block-id="includedService"',
     'data-block-id="capabilities"',
     'data-block-id="scenarios"',
@@ -64,7 +64,12 @@ for (const robot of robots) {
   if (galleryImageCount < 2) warnings.push(`${robot.slug}: media debt — only ${galleryImageCount} local gallery image available; import approved gallery assets before public rollout`);
   if (/height:\s*\.0625rem/.test(html)) failures.push(`${robot.slug}: gallery image CSS is visually hidden`);
   if (!/template-ai-summary/.test(html)) failures.push(`${robot.slug}: visible AI summary block missing`);
-  if (!/Что важно знать перед арендой/.test(html)) failures.push(`${robot.slug}: structured facts selling block missing`);
+  if (/data-block-id="structuredFacts"/.test(html)) failures.push(`${robot.slug}: visible structured facts block must be removed`);
+  if (!/data-block-id="hiddenMachineFacts"/.test(html)) failures.push(`${robot.slug}: machine-readable facts marker missing`);
+  if (!/template-live-hero--dark/.test(html)) failures.push(`${robot.slug}: dark hero visual class missing`);
+  if (!/data-drag-slider="robot-gallery"/.test(html)) failures.push(`${robot.slug}: first gallery drag slider missing`);
+  if (!/data-drag-slider="robot-action-gallery"/.test(html)) failures.push(`${robot.slug}: action gallery drag slider missing`);
+  if (!/Аренда робота|Аренда робо-кофейню/.test(html)) failures.push(`${robot.slug}: typed rental H1 missing`);
   if (!/Кибер Гоша|КИБЕР Гоша|КИБЕР ГОША/.test(html)) failures.push(`${robot.slug}: Kiber Gosha brand voice block missing`);
   if (/Wordstat|SERP|keywordDensity|checklistReport|crmConfig|leadRoutingImplementationNotes/.test(html)) {
     failures.push(`${robot.slug}: review-only/service-only wording leaked into preview HTML`);
@@ -103,7 +108,7 @@ const report = {
   },
   designPass: {
     status: failures.length ? 'failed' : 'ready_for_owner_visual_review',
-    scope: 'preview-only robot_card selling + SEO/AI structure pass with visible aiSummary, real first gallery surface, structured facts, included service, order flow, robot-in-action media, mandatory Kiber Gosha brand voice, two CTAs, FAQ, related articles before catalog, and schemas',
+    scope: 'preview-only robot_card design-block refinement: dark typed hero, two CTAs, one white aiSummary, draggable gallery/action gallery, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog',
     publicRouteReplacementApproval: false,
     productionApproval: false,
   },

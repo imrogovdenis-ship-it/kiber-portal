@@ -115,3 +115,35 @@ Owner feedback applied:
 - public `/robots/[slug]/`, production, DNS, secrets, analytics and live lead routing remain untouched.
 
 Known non-blocking media debt: current runtime still has only one local gallery image per robot. The page renders the available real image visibly, but approved gallery assets should be imported before public rollout.
+
+## Design-block refinement pass — owner visual contract
+
+Status: `implemented_for_owner_review`, preview-only.
+
+Owner feedback applied:
+- Hero: dark-gray article-style underlay, no blue fill; title uses robot type + model, e.g. `Аренда робота-гуманоида Unitree G1`; only price remains in meta; buttons: `Написать нам` and `Оставить заявку`; catalog image remains in Hero and is enlarged to match the block height.
+- aiSummary: white card, no blue left stripe, aligned with page container; text remains human-facing while carrying SEO/AI-readable summary semantics.
+- Main gallery: title kept, descriptive subtitle removed; horizontal drag slider; uses approved preview-scoped gallery assets instead of duplicating the Hero catalog image.
+- Text block, capabilities: preserved; text heading remains h2 + one paragraph.
+- Scenarios: preserved, h3 titles reduced.
+- Robot in action: subtitle removed; horizontal drag slider with shorter media height, ready for future photo/video assets.
+- Gosha quote: preserved as two-part quote, with bold humorous first part and soft manager handoff second part.
+- CTA №1: uses the same visual language as CTA №2: blue background, title, left buttons, Gosha image right; technical label removed; buttons match Hero/CTA №2.
+- Included service: heading/description kept; checklist moved below, four horizontal checkpoint items with blue checkmarks.
+- Facts for choosing: removed from visible UI. To avoid cloaking, facts are not hidden as SEO text; only a machine-readable JSON payload/schema layer remains.
+- Order flow: heading/description aligned; four full-width steps below with larger step numbers and no arrows.
+- FAQ: reusable accordion block preserved; answers closed by default.
+- Blog: heading/description personalized by robot; cards kept in multiples of three.
+- Related robot catalog: title changed to `Вас также могут заинтересовать`; description updated; related robots remain 4 cards.
+
+Rendered evidence:
+- `screenshots/unitree-design-blocks-desktop-full.png`
+- `screenshots/unitree-design-blocks-mobile-full.png`
+- `screenshots/unitree-design-blocks-contact-sheet.jpg`
+
+Programmatic evidence:
+- Hero image height is ~86% of Hero height on desktop.
+- First gallery renders 5 preview-scoped approved assets and moves with mouse drag.
+- Robot-in-action gallery renders 4 preview-scoped approved assets and moves with mouse drag.
+- FAQ starts with `details[open]` count = 0.
+- Visible `structuredFacts` block count = 0; machine facts marker count = 1.

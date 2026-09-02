@@ -69,6 +69,7 @@ export const robotCardTemplateSchema = pageTemplateSchema.extend({
     name: z.string().min(1),
     manufacturer: z.string().min(1).optional(),
     model: z.string().min(1).optional(),
+    category: z.string().min(1).optional(),
     priceStatus: templatePriceStatusSchema,
     priceDisplay: z.string().min(1),
     capabilities: z.array(pageTemplateBlockSchema).default([]),
