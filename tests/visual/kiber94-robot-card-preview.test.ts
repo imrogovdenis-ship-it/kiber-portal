@@ -221,8 +221,12 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /flex:\s*0 0 auto/);
   assert.match(componentSource, /pointerdown/);
   assert.match(componentSource, /pointermove/);
+  assert.match(componentSource, /window\.addEventListener\('pointermove', move, \{ passive: false \}\)/);
+  assert.match(componentSource, /window\.addEventListener\('pointerup', stop\)/);
   assert.match(componentSource, /setPointerCapture/);
   assert.match(componentSource, /slider\.scrollLeft = startScroll - dx/);
+  assert.match(componentSource, /scroll-snap-type:\s*none/);
+  assert.doesNotMatch(componentSource, /scroll-snap-type:\s*x mandatory/);
   assert.doesNotMatch(componentSource, /<figcaption>\{index \+ 1\} из \{primaryGallery\.length\}<\/figcaption>/);
   assert.doesNotMatch(componentSource, /<figcaption>\{index \+ 1\} \/ \{actionGallery\.length\}<\/figcaption>/);
   assert.doesNotMatch(componentSource, /Сначала показываем самого робота крупно/);

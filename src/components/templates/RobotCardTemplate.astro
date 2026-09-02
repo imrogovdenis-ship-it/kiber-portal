@@ -288,16 +288,20 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       event.preventDefault();
     });
 
-    slider.addEventListener('pointermove', (event) => {
+    const move = (event: PointerEvent) => {
       if (pointerId !== event.pointerId) return;
       const dx = event.pageX - startX;
       moved = Math.max(moved, Math.abs(dx));
       slider.scrollLeft = startScroll - dx;
       event.preventDefault();
-    });
+    };
 
+    slider.addEventListener('pointermove', move, { passive: false });
+    window.addEventListener('pointermove', move, { passive: false });
+    window.addEventListener('pointerup', stop);
     slider.addEventListener('pointerup', stop);
     slider.addEventListener('pointercancel', stop);
+    window.addEventListener('pointercancel', stop);
     slider.addEventListener('lostpointercapture', stop);
 
     slider.addEventListener('click', (event) => {
@@ -497,7 +501,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: none;
     cursor: grab;
     user-select: none;
     touch-action: pan-y;
