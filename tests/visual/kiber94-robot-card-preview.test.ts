@@ -214,7 +214,12 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.doesNotMatch(componentSource, /border-left:\s*\.32rem solid var\(--kp-reference-blue\)/);
   assert.match(componentSource, /data-drag-slider=\"robot-gallery\"/);
   assert.match(componentSource, /data-drag-slider=\"robot-action-gallery\"/);
-  assert.match(componentSource, /--robot-card-gallery-height:\s*clamp\(20\.8rem,\s*34vw,\s*25\.35rem\)/);
+  assert.match(componentSource, /data-slider-prev=\"\[data-drag-slider='robot-gallery'\]\"/);
+  assert.match(componentSource, /data-slider-next=\"\[data-drag-slider='robot-gallery'\]\"/);
+  assert.match(componentSource, /data-slider-prev=\"\[data-drag-slider='robot-action-gallery'\]\"/);
+  assert.match(componentSource, /data-slider-next=\"\[data-drag-slider='robot-action-gallery'\]\"/);
+  assert.match(componentSource, /--robot-card-gallery-height:\s*clamp\(29\.12rem,\s*47\.6vw,\s*35\.49rem\)/);
+  assert.match(componentSource, /--robot-card-action-gallery-height:\s*clamp\(21rem,\s*33\.6vw,\s*26\.6rem\)/);
   assert.match(componentSource, /height:\s*var\(--robot-card-gallery-height\)/);
   assert.match(componentSource, /width:\s*auto/);
   assert.match(componentSource, /object-fit:\s*contain/);
@@ -224,7 +229,13 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /window\.addEventListener\('pointermove', move, \{ passive: false \}\)/);
   assert.match(componentSource, /window\.addEventListener\('pointerup', stop\)/);
   assert.match(componentSource, /setPointerCapture/);
+  assert.match(componentSource, /mousedown/);
+  assert.match(componentSource, /window\.addEventListener\('mousemove', mouseMove\)/);
+  assert.match(componentSource, /window\.addEventListener\('mouseup', mouseStop\)/);
+  assert.match(componentSource, /data-slider-next/);
+  assert.match(componentSource, /scrollBy\(\{ left: slider\.clientWidth \* 0\.8, behavior: 'smooth' \}\)/);
   assert.match(componentSource, /slider\.scrollLeft = startScroll - dx/);
+  assert.match(componentSource, /slider\.scrollLeft = mouseStartScroll - dx/);
   assert.match(componentSource, /scroll-snap-type:\s*none/);
   assert.doesNotMatch(componentSource, /scroll-snap-type:\s*x mandatory/);
   assert.doesNotMatch(componentSource, /<figcaption>\{index \+ 1\} из \{primaryGallery\.length\}<\/figcaption>/);

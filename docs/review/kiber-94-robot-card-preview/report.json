@@ -48,7 +48,7 @@
   },
   "designPass": {
     "status": "ready_for_owner_visual_review",
-    "scope": "preview-only robot_card design-block refinement: dark typed hero, two CTAs, transparent bold aiSummary, draggable gallery/action gallery, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog",
+    "scope": "preview-only robot_card design-block refinement: dark typed hero, two CTAs, transparent bold aiSummary, reference-style mouse draggable gallery/action gallery with nav controls, +40% height-first gallery media, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog",
     "publicRouteReplacementApproval": false,
     "productionApproval": false
   }

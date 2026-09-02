@@ -148,9 +148,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   </section>
 
   <section id="robot-card-gallery" class="template-live-gallery" data-block-id="gallery" aria-labelledby="robot-card-gallery-title">
-    <div class="template-section-copy template-section-copy--gallery">
-      <p>Галерея</p>
-      <h2 id="robot-card-gallery-title">Посмотрите, как выглядит {template.robot.name}</h2>
+    <div class="template-gallery-head">
+      <div class="template-section-copy template-section-copy--gallery">
+        <p>Галерея</p>
+        <h2 id="robot-card-gallery-title">Посмотрите, как выглядит {template.robot.name}</h2>
+      </div>
+      <div class="template-gallery-nav" aria-label="Навигация по галерее">
+        <button class="template-gallery-nav__button" type="button" data-slider-prev="[data-drag-slider='robot-gallery']" aria-label="Предыдущие фото галереи">‹</button>
+        <button class="template-gallery-nav__button" type="button" data-slider-next="[data-drag-slider='robot-gallery']" aria-label="Следующие фото галереи">›</button>
+      </div>
     </div>
     <div class="template-drag-gallery template-live-gallery__strip" data-drag-slider="robot-gallery" aria-label={`Галерея ${template.robot.name}: горизонтальный слайдер`}>
       {primaryGallery.map((image, index) => (
@@ -191,9 +197,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   </section>
 
   <section class="template-section template-action-gallery" data-block-id="robotInAction" aria-labelledby="robot-card-action-title">
-    <div class="template-section-copy template-section-copy--gallery">
-      <p>03 — робот в действии</p>
-      <h2 id="robot-card-action-title">Покажите гостям движение, общение и фото-контент</h2>
+    <div class="template-gallery-head">
+      <div class="template-section-copy template-section-copy--gallery">
+        <p>03 — робот в действии</p>
+        <h2 id="robot-card-action-title">Покажите гостям движение, общение и фото-контент</h2>
+      </div>
+      <div class="template-gallery-nav" aria-label="Навигация по галерее робота в действии">
+        <button class="template-gallery-nav__button" type="button" data-slider-prev="[data-drag-slider='robot-action-gallery']" aria-label="Предыдущие фото робота в действии">‹</button>
+        <button class="template-gallery-nav__button" type="button" data-slider-next="[data-drag-slider='robot-action-gallery']" aria-label="Следующие фото робота в действии">›</button>
+      </div>
     </div>
     <div class="template-drag-gallery template-action-gallery__strip" data-drag-slider="robot-action-gallery" aria-label={`${template.robot.name} в действии: горизонтальный слайдер`}>
       {actionGallery.map((image) => (
@@ -266,6 +278,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     let startX = 0;
     let startScroll = 0;
     let moved = 0;
+    let mouseIsDown = false;
+    let mouseStartX = 0;
+    let mouseStartScroll = 0;
 
     slider.querySelectorAll('a, img').forEach((item) => {
       item.setAttribute('draggable', 'false');
@@ -277,8 +292,14 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       slider.classList.remove('is-dragging');
     };
 
+    const mouseStop = () => {
+      if (!mouseIsDown) return;
+      mouseIsDown = false;
+      slider.classList.remove('is-dragging');
+    };
+
     slider.addEventListener('pointerdown', (event) => {
-      if (event.button !== 0) return;
+      if (event.pointerType === 'mouse' || event.button !== 0) return;
       pointerId = event.pointerId;
       moved = 0;
       startX = event.pageX;
@@ -296,6 +317,27 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       event.preventDefault();
     };
 
+    const mouseMove = (event: MouseEvent) => {
+      if (!mouseIsDown) return;
+      const dx = event.pageX - mouseStartX;
+      moved = Math.max(moved, Math.abs(dx));
+      slider.scrollLeft = mouseStartScroll - dx;
+      event.preventDefault();
+    };
+
+    slider.addEventListener('mousedown', (event) => {
+      if (event.button !== 0) return;
+      mouseIsDown = true;
+      moved = 0;
+      mouseStartX = event.pageX;
+      mouseStartScroll = slider.scrollLeft;
+      slider.classList.add('is-dragging');
+      event.preventDefault();
+    });
+
+    window.addEventListener('mousemove', mouseMove);
+    window.addEventListener('mouseup', mouseStop);
+    slider.addEventListener('contextmenu', (event) => event.preventDefault());
     slider.addEventListener('pointermove', move, { passive: false });
     window.addEventListener('pointermove', move, { passive: false });
     window.addEventListener('pointerup', stop);
@@ -312,12 +354,26 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       }
     }, true);
   });
+
+  document.querySelectorAll<HTMLButtonElement>('[data-slider-prev], [data-slider-next]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const selector = button.dataset.sliderPrev ?? button.dataset.sliderNext;
+      if (!selector) return;
+      const slider = document.querySelector<HTMLElement>(selector);
+      if (!slider) return;
+      if (button.dataset.sliderNext) {
+        slider.scrollBy({ left: slider.clientWidth * 0.8, behavior: 'smooth' });
+      } else {
+        slider.scrollBy({ left: -slider.clientWidth * 0.8, behavior: 'smooth' });
+      }
+    });
+  });
 </script>
 
 <style>
   .page-template--robot {
-    --robot-card-gallery-height: clamp(20.8rem, 34vw, 25.35rem);
-    --robot-card-action-gallery-height: clamp(15rem, 24vw, 19rem);
+    --robot-card-gallery-height: clamp(29.12rem, 47.6vw, 35.49rem);
+    --robot-card-action-gallery-height: clamp(21rem, 33.6vw, 26.6rem);
     display: grid;
     gap: clamp(3.5rem, 6vw, 6rem);
     padding-block: clamp(1.25rem, 2.4vw, 2rem) 4.5rem;
@@ -493,6 +549,47 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-ai-summary strong {
     font: inherit;
+  }
+
+  .template-gallery-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .template-gallery-nav {
+    display: flex;
+    flex-shrink: 0;
+    gap: .75rem;
+  }
+
+  .template-gallery-nav__button {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 999rem;
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+    cursor: pointer;
+    font-family: var(--kp-font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform .18s ease, background .18s ease;
+  }
+
+  .template-gallery-nav__button:hover {
+    transform: translateY(-.08rem);
+    background: color-mix(in srgb, var(--kp-reference-blue) 88%, var(--kp-reference-ink));
+  }
+
+  .template-gallery-nav__button:focus-visible {
+    outline: .1875rem solid var(--kp-reference-ink);
+    outline-offset: .2rem;
   }
 
   .template-drag-gallery {
@@ -711,6 +808,14 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   @media (min-width: 40rem) and (max-width: 59.9375rem) {
     .template-live-hero {
       grid-template-columns: 1fr;
+    }
+
+    .template-gallery-head {
+      display: grid;
+    }
+
+    .template-gallery-nav {
+      display: none;
     }
 
     .template-related-catalog__grid,

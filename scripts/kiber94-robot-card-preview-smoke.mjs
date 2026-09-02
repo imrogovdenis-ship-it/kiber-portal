@@ -69,6 +69,12 @@ for (const robot of robots) {
   if (!/template-live-hero--dark/.test(html)) failures.push(`${robot.slug}: dark hero visual class missing`);
   if (!/data-drag-slider="robot-gallery"/.test(html)) failures.push(`${robot.slug}: first gallery drag slider missing`);
   if (!/data-drag-slider="robot-action-gallery"/.test(html)) failures.push(`${robot.slug}: action gallery drag slider missing`);
+  if (!/data-slider-prev="\[data-drag-slider='robot-gallery'\]"/.test(html)) failures.push(`${robot.slug}: first gallery reference-style prev button missing`);
+  if (!/data-slider-next="\[data-drag-slider='robot-gallery'\]"/.test(html)) failures.push(`${robot.slug}: first gallery reference-style next button missing`);
+  if (!/data-slider-prev="\[data-drag-slider='robot-action-gallery'\]"/.test(html)) failures.push(`${robot.slug}: action gallery reference-style prev button missing`);
+  if (!/data-slider-next="\[data-drag-slider='robot-action-gallery'\]"/.test(html)) failures.push(`${robot.slug}: action gallery reference-style next button missing`);
+  if (!/mousedown/.test(html) || !/mousemove/.test(html) || !/mouseup/.test(html)) failures.push(`${robot.slug}: reference-style mouse drag script missing`);
+  if (!/scrollBy/.test(html)) failures.push(`${robot.slug}: reference-style gallery navigation script missing`);
   if (/\d+\s*(?:из|\/)\s*\d+/.test(galleryBlock)) failures.push(`${robot.slug}: first gallery visible image numbering must be removed`);
   if (!/template-live-gallery__item/.test(galleryBlock)) failures.push(`${robot.slug}: first gallery item class missing`);
   if (!/Аренда робота|Аренда робо-кофейню/.test(html)) failures.push(`${robot.slug}: typed rental H1 missing`);
@@ -110,7 +116,7 @@ const report = {
   },
   designPass: {
     status: failures.length ? 'failed' : 'ready_for_owner_visual_review',
-    scope: 'preview-only robot_card design-block refinement: dark typed hero, two CTAs, transparent bold aiSummary, draggable gallery/action gallery, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog',
+    scope: 'preview-only robot_card design-block refinement: dark typed hero, two CTAs, transparent bold aiSummary, reference-style mouse draggable gallery/action gallery with nav controls, +40% height-first gallery media, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog',
     publicRouteReplacementApproval: false,
     productionApproval: false,
   },
