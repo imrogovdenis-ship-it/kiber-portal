@@ -330,12 +330,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     --robot-card-hero-title-scale: .9;
     --robot-card-hero-media-height: 95%;
     --robot-card-hero-media-bleed: clamp(2.6rem, 3.2vw, 3.2rem);
+    --robot-card-hero-block-inset: clamp(1rem, 1.6vw, 1.45rem);
+    --robot-card-hero-inline-inset: clamp(1.5rem, 3.2vw, 3.35rem);
+    --robot-card-hero-media-edge-inset: calc(var(--robot-card-hero-block-inset) * .65);
     grid-template-columns: minmax(0, .84fr) minmax(27rem, .96fr);
-    gap: clamp(1.5rem, 3vw, 3.25rem);
+    gap: var(--robot-card-hero-inline-inset);
     align-items: stretch;
     overflow: hidden;
     border-radius: 1.625rem;
-    padding: clamp(1rem, 1.6vw, 1.45rem) clamp(1.5rem, 3.2vw, 3.35rem);
+    padding: var(--robot-card-hero-block-inset) var(--robot-card-hero-media-edge-inset) var(--robot-card-hero-block-inset) var(--robot-card-hero-inline-inset);
     background: var(--kp-reference-ink-dark);
     box-shadow: none;
     color: var(--kp-reference-white);

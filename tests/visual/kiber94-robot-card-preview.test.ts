@@ -190,6 +190,11 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /template-live-hero__media img/);
   assert.match(componentSource, /--robot-card-hero-title-scale:\s*\.9/);
   assert.match(componentSource, /--robot-card-hero-media-height:\s*95%/);
+  assert.match(componentSource, /--robot-card-hero-block-inset:/);
+  assert.match(componentSource, /--robot-card-hero-inline-inset:/);
+  assert.match(componentSource, /--robot-card-hero-media-edge-inset:\s*calc\(var\(--robot-card-hero-block-inset\) \* \.65\)/);
+  assert.match(componentSource, /padding:\s*var\(--robot-card-hero-block-inset\) var\(--robot-card-hero-media-edge-inset\) var\(--robot-card-hero-block-inset\) var\(--robot-card-hero-inline-inset\)/);
+  assert.match(componentSource, /gap:\s*var\(--robot-card-hero-inline-inset\)/);
   assert.match(componentSource, /\.template-live-hero__eyebrow[\s\S]*color:\s*var\(--kp-reference-white\)/);
   assert.match(componentSource, /\.template-hero-button--primary[\s\S]*background:\s*var\(--kp-reference-white\)[\s\S]*color:\s*var\(--kp-reference-blue\)/);
   assert.match(componentSource, /\.template-hero-button--light[\s\S]*background:\s*var\(--kp-reference-blue\)[\s\S]*color:\s*var\(--kp-reference-white\)/);
