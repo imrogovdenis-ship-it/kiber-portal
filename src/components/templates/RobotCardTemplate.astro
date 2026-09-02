@@ -35,7 +35,7 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
 };
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
-const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия`;
+const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
 const leadHref = `/lead/request/?robot=${template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name}&source=kiber94-preview`;
 
 const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
@@ -211,7 +211,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     </div>
   </section>
 
-  <section class="template-reused-block" data-block-id="goshaCta">
+  <section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">
     <HomeGoshaQuote {...robotGosha} />
   </section>
 
@@ -369,8 +369,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .page-template--robot {
     --robot-card-gallery-height: clamp(29.12rem, 47.6vw, 35.49rem);
     --robot-card-action-gallery-height: clamp(21rem, 33.6vw, 26.6rem);
+    --robot-card-page-gap: clamp(3.5rem, 6vw, 6rem);
     display: grid;
-    gap: clamp(3.5rem, 6vw, 6rem);
+    gap: var(--robot-card-page-gap);
     padding-block: clamp(1.25rem, 2.4vw, 2rem) 4.5rem;
     background: var(--kp-reference-sky);
   }
@@ -782,6 +783,32 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     font-weight: 700;
     line-height: .9;
     content: counter(order-flow, decimal-leading-zero);
+  }
+
+  .template-reused-block--gosha-quote {
+    margin-bottom: calc(var(--robot-card-page-gap) * -.3);
+  }
+
+  .template-reused-block--quick-cta :global(.home-final-cta) {
+    gap: clamp(1.05rem, 2.8vw, 2.1rem);
+    margin-top: 0;
+    padding: clamp(1.4rem, 3.5vw, 2.8rem);
+  }
+
+  .template-reused-block--quick-cta :global(.home-final-cta__copy) {
+    gap: .7rem;
+  }
+
+  .template-reused-block--quick-cta :global(.home-final-cta__actions) {
+    margin-top: .7rem;
+  }
+
+  .template-reused-block--quick-cta :global(.home-final-cta__image) {
+    min-height: 7rem;
+  }
+
+  .template-reused-block--quick-cta :global(.home-final-cta__image img) {
+    width: min(9.1rem, 42vw);
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta p:empty) {

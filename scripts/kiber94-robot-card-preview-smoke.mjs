@@ -71,6 +71,10 @@ for (const robot of robots) {
     if (!/Сценарии использования помогают быстро понять/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenarios lead missing`);
     if (!/Рост и пластика гуманоидного корпуса/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capability card copy missing`);
     if (!/Интерактивная фотозона превращает Unitree G1 в героя кадров/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenario card copy missing`);
+    const pricingBlock = html.match(/<section[^>]*data-block-id="pricing"[\s\S]*?<\/section>/)?.[0] ?? '';
+    const compactCtaPrice = `Арендуйте робота-гуманоида Unitree G1 для мероприятия ${robot.pricing.display}`;
+    if (!pricingBlock.includes(compactCtaPrice)) failures.push(`${robot.slug}: compact CTA #1 price missing or not sourced from pricing.display`);
+    if (!/template-reused-block--quick-cta/.test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 class missing`);
   }
   if (/data-block-id="structuredFacts"/.test(html)) failures.push(`${robot.slug}: visible structured facts block must be removed`);
   if (!/data-block-id="hiddenMachineFacts"/.test(html)) failures.push(`${robot.slug}: machine-readable facts marker missing`);

@@ -90,6 +90,22 @@ test('KIBER-94 Unitree G1 capabilities and scenarios use owner requested expande
 });
 
 
+test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with live price', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const smoke = readFileSync(smokePath, 'utf8');
+
+  assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
+  assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);
+  assert.match(componentSource, /\.template-reused-block--gosha-quote \{[\s\S]*margin-bottom:\s*calc\(var\(--robot-card-page-gap\) \* -\.3\)/);
+  assert.match(componentSource, /--robot-card-page-gap:\s*clamp\(3\.5rem,\s*6vw,\s*6rem\)/);
+  assert.match(componentSource, /gap:\s*var\(--robot-card-page-gap\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta\) \{[\s\S]*padding:\s*clamp\(1\.4rem,\s*3\.5vw,\s*2\.8rem\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*min-height:\s*7rem/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*min\(9\.1rem,\s*42vw\)/);
+  assert.match(smoke, /compact CTA #1 price/);
+});
+
+
 test('KIBER-94 preview smoke is wired but keeps production and public routes untouched', () => {
   const smoke = readFileSync(smokePath, 'utf8');
   assert.match(smoke, /dist\/preview\/kiber-94\/robot-card/);
