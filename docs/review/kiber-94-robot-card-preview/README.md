@@ -122,7 +122,7 @@ Status: `implemented_for_owner_review`, preview-only.
 
 Owner feedback applied:
 - Hero: dark-gray article-style underlay, no blue fill; title uses robot type + model, e.g. `Аренда робота-гуманоида Unitree G1`; only price remains in meta; buttons: `Написать нам` and `Оставить заявку`; catalog image remains in Hero and is enlarged to match the block height.
-- aiSummary: white card, no blue left stripe, aligned with page container; text remains human-facing while carrying SEO/AI-readable summary semantics.
+- aiSummary: transparent block with no white card/background and no blue left stripe; text starts with the robot model, stays 300-400 characters, is fully bold and enlarged while retaining SEO/AI-readable summary semantics.
 - Main gallery: title kept, descriptive subtitle removed; horizontal drag slider; uses approved preview-scoped gallery assets instead of duplicating the Hero catalog image.
 - Text block, capabilities: preserved; text heading remains h2 + one paragraph.
 - Scenarios: preserved, h3 titles reduced.

@@ -41,14 +41,25 @@ test('KIBER-94 maps existing robot source-of-truth into template data without in
   assert.match(mapperSource, /claimSourceStatus/);
 });
 
-test('KIBER-94 Unitree G1 aiSummary uses owner supplied Gosha scenario copy', () => {
+test('KIBER-94 Unitree G1 aiSummary uses owner supplied bold scenario copy', () => {
   const mapperSource = readFileSync(mapperPath, 'utf8');
-  assert.match(mapperSource, /'arenda-unitree-g1'/);
-  assert.match(mapperSource, /Кибер Гоша — брендированный сценарий аренды робота-гуманоида Unitree G1 для мероприятий/);
-  assert.match(mapperSource, /Команда КИБЕР ПОРТАЛА готовит сценарий, доставляет робота на площадку и сопровождает его работу оператором/);
+  const summaryMatch = mapperSource.match(/'arenda-unitree-g1': '([^']+)'/);
+  assert.ok(summaryMatch, 'Unitree G1 owner aiSummary override must exist');
+  const summary = summaryMatch[1];
+  assert.ok(summary.startsWith('Unitree G1 - '), 'Unitree G1 aiSummary must start with owner requested prefix');
+  assert.ok(summary.length >= 300 && summary.length <= 400, `Unitree G1 aiSummary must be 300-400 chars, got ${summary.length}`);
+  assert.match(summary, /гуманоидный робот для мероприятий, выставок, презентаций и шоу-программ/);
+  assert.match(summary, /Команда КИБЕР ПОРТАЛА помогает подобрать сценарий, доставляет робота на площадку и сопровождает его работу оператором/);
 
   const componentSource = readFileSync(componentPath, 'utf8');
   assert.match(componentSource, /const aiSummary = template\.aiSummary/);
+  assert.match(componentSource, /<p><strong>\{aiSummary\}<\/strong><\/p>/);
+  assert.match(componentSource, /background:\s*transparent/);
+  assert.match(componentSource, /font-size:\s*clamp\(1\.18rem,\s*1\.65vw,\s*1\.38rem\)/);
+  assert.match(componentSource, /font-weight:\s*700/);
+  assert.match(componentSource, /\.template-ai-summary strong \{[\s\S]*font:\s*inherit/);
+  assert.doesNotMatch(componentSource, /\.template-ai-summary \{[\s\S]{0,160}background:\s*var\(--kp-reference-white\)/);
+  assert.doesNotMatch(componentSource, /<strong>Коротко:<\/strong>/);
   assert.doesNotMatch(componentSource, /const aiSummary = `\$\{template\.hero\.text\} \$\{template\.aiSummary\}`/);
 });
 

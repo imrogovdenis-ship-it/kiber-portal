@@ -144,8 +144,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   </section>
 
   <section class="template-ai-summary" data-block-id="aiSummary" aria-label="Краткое описание страницы для гостей, поисковиков и AI-агентов">
-    <strong>Коротко:</strong>
-    <p>{aiSummary}</p>
+    <p><strong>{aiSummary}</strong></p>
   </section>
 
   <section id="robot-card-gallery" class="template-live-gallery" data-block-id="gallery" aria-labelledby="robot-card-gallery-title">
@@ -479,14 +478,21 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-ai-summary {
     gap: .65rem;
     border-radius: 1.15rem;
-    padding: 1.15rem 1.35rem;
-    background: var(--kp-reference-white);
+    padding: .35rem 0;
+    background: transparent;
     color: var(--kp-reference-ink);
   }
 
+  .template-ai-summary p {
+    margin: 0;
+    color: var(--kp-reference-ink);
+    font-size: clamp(1.18rem, 1.65vw, 1.38rem);
+    font-weight: 700;
+    line-height: 1.45;
+  }
+
   .template-ai-summary strong {
-    font-family: var(--kp-font-heading);
-    font-size: .98rem;
+    font: inherit;
   }
 
   .template-drag-gallery {
@@ -575,8 +581,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-scenario-grid p,
   .template-section-copy span,
   .template-check-list,
-  .template-order-list,
-  .template-ai-summary p {
+  .template-order-list {
     color: var(--kp-reference-muted);
     font-size: 1rem;
     line-height: 1.65;
