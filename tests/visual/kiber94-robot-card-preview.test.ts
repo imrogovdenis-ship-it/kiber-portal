@@ -41,6 +41,17 @@ test('KIBER-94 maps existing robot source-of-truth into template data without in
   assert.match(mapperSource, /claimSourceStatus/);
 });
 
+test('KIBER-94 Unitree G1 aiSummary uses owner supplied Gosha scenario copy', () => {
+  const mapperSource = readFileSync(mapperPath, 'utf8');
+  assert.match(mapperSource, /'arenda-unitree-g1'/);
+  assert.match(mapperSource, /Кибер Гоша — брендированный сценарий аренды робота-гуманоида Unitree G1 для мероприятий/);
+  assert.match(mapperSource, /Команда КИБЕР ПОРТАЛА готовит сценарий, доставляет робота на площадку и сопровождает его работу оператором/);
+
+  const componentSource = readFileSync(componentPath, 'utf8');
+  assert.match(componentSource, /const aiSummary = template\.aiSummary/);
+  assert.doesNotMatch(componentSource, /const aiSummary = `\$\{template\.hero\.text\} \$\{template\.aiSummary\}`/);
+});
+
 test('KIBER-94 preview smoke is wired but keeps production and public routes untouched', () => {
   const smoke = readFileSync(smokePath, 'utf8');
   assert.match(smoke, /dist\/preview\/kiber-94\/robot-card/);
@@ -177,6 +188,11 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /heroTitle = `Аренда \${robotTypeAccusative} \${template\.robot\.name}`/);
   assert.match(componentSource, /template-live-hero--dark/);
   assert.match(componentSource, /template-live-hero__media img/);
+  assert.match(componentSource, /--robot-card-hero-title-scale:\s*\.9/);
+  assert.match(componentSource, /--robot-card-hero-media-height:\s*95%/);
+  assert.match(componentSource, /\.template-live-hero__eyebrow[\s\S]*color:\s*var\(--kp-reference-white\)/);
+  assert.match(componentSource, /\.template-hero-button--primary[\s\S]*background:\s*var\(--kp-reference-white\)[\s\S]*color:\s*var\(--kp-reference-blue\)/);
+  assert.match(componentSource, /\.template-hero-button--light[\s\S]*background:\s*var\(--kp-reference-blue\)[\s\S]*color:\s*var\(--kp-reference-white\)/);
   assert.match(componentSource, /Оставить заявку/);
   assert.doesNotMatch(componentSource, /Робот приезжает с оператором, сценарием и подготовкой под площадку/);
   assert.doesNotMatch(componentSource, /border-left:\s*\.32rem solid var\(--kp-reference-blue\)/);

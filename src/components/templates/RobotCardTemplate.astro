@@ -92,7 +92,7 @@ const orderFlow = [
   'В день события привозим, настраиваем и сопровождаем робота на площадке.',
 ];
 
-const aiSummary = `${template.hero.text} ${template.aiSummary}`;
+const aiSummary = template.aiSummary;
 const robotQuickCta = {
   ...homeFinalCta,
   title: quickCtaTitle,
@@ -327,12 +327,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-live-hero {
     display: grid;
-    grid-template-columns: minmax(0, .9fr) minmax(22rem, .78fr);
+    --robot-card-hero-title-scale: .9;
+    --robot-card-hero-media-height: 95%;
+    --robot-card-hero-media-bleed: clamp(2.6rem, 3.2vw, 3.2rem);
+    grid-template-columns: minmax(0, .84fr) minmax(27rem, .96fr);
     gap: clamp(1.5rem, 3vw, 3.25rem);
     align-items: stretch;
     overflow: hidden;
     border-radius: 1.625rem;
-    padding: clamp(1.5rem, 3.2vw, 3.35rem);
+    padding: clamp(1rem, 1.6vw, 1.45rem) clamp(1.5rem, 3.2vw, 3.35rem);
     background: var(--kp-reference-ink-dark);
     box-shadow: none;
     color: var(--kp-reference-white);
@@ -353,7 +356,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-live-hero__media {
     display: grid;
-    min-height: 100%;
+    align-self: center;
+    height: calc(var(--robot-card-hero-media-height) + var(--robot-card-hero-media-bleed));
+    min-height: 0;
     place-items: center;
     margin: 0;
     overflow: hidden;
@@ -392,7 +397,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-live-hero h1 {
     color: var(--kp-reference-white);
     font-family: var(--kp-font-heading);
-    font-size: clamp(2.9rem, 6.1vw, 4.65rem);
+    font-size: clamp(calc(2.9rem * var(--robot-card-hero-title-scale)), calc(6.1vw * var(--robot-card-hero-title-scale)), calc(4.65rem * var(--robot-card-hero-title-scale)));
     font-weight: 700;
     line-height: .98;
   }
@@ -417,7 +422,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   }
 
   .template-live-hero__eyebrow {
-    color: color-mix(in srgb, var(--kp-reference-white) 84%, var(--kp-reference-blue));
+    color: var(--kp-reference-white);
   }
 
   .template-live-hero__actions {
@@ -444,12 +449,12 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-hero-button--primary {
     background: var(--kp-reference-white);
-    color: var(--kp-reference-ink);
+    color: var(--kp-reference-blue);
   }
 
   .template-hero-button--light {
-    border-color: color-mix(in srgb, var(--kp-reference-white) 45%, transparent);
-    background: color-mix(in srgb, var(--kp-reference-white) 12%, transparent);
+    border-color: var(--kp-reference-blue);
+    background: var(--kp-reference-blue);
     color: var(--kp-reference-white);
   }
 

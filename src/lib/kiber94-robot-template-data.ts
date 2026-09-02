@@ -11,6 +11,10 @@ function toPreviewAsset(src: string): string | undefined {
   return previewSrc && publicAssets[`/public${previewSrc}`] ? previewSrc : undefined;
 }
 
+const ownerAiSummaryBySlug: Record<string, string> = {
+  'arenda-unitree-g1': 'Кибер Гоша — брендированный сценарий аренды робота-гуманоида Unitree G1 для мероприятий. Робот помогает привлечь внимание гостей на выставках, презентациях, корпоративах и промо-акциях. Команда КИБЕР ПОРТАЛА готовит сценарий, доставляет робота на площадку и сопровождает его работу оператором.',
+};
+
 export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTemplateData {
   const priceStatus = robot.pricing.mode === 'calculated' ? 'request' : 'needs_review';
   const scenarioBlocks = robot.service.scenarios.map((scenario, index) => ({
@@ -46,7 +50,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
       primaryKeyword: `аренда ${robot.identity.name}`,
       secondaryKeywords: [`прокат ${robot.identity.name}`, `${robot.identity.name} на мероприятие`],
     },
-    aiSummary: `${robot.identity.name} — робот из каталога КИБЕР ПОРТАЛ для мероприятий. Preview-шаблон показывает реальные данные карточки: описание услуги, сценарии, медиа, цену в утверждённом статусе и заявку без публикации на production.`,
+    aiSummary: ownerAiSummaryBySlug[robot.slug] ?? `${robot.identity.name} — робот из каталога КИБЕР ПОРТАЛ для мероприятий. Preview-шаблон показывает реальные данные карточки: описание услуги, сценарии, медиа, цену в утверждённом статусе и заявку без публикации на production.`,
     hero: {
       id: 'hero',
       title: `Аренда ${robot.identity.name}`,
