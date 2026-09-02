@@ -76,6 +76,13 @@ for (const robot of robots) {
     if (!(html.indexOf('data-block-id="gallery"') < html.indexOf('data-block-id="includedService"') && html.indexOf('data-block-id="includedService"') < html.indexOf('data-block-id="capabilities"'))) failures.push(`${robot.slug}: included service block must appear between gallery and capabilities`);
     if (!/02 — ключевые возможности/.test(capabilitiesBlock)) failures.push(`${robot.slug}: renumbered capabilities marker missing`);
     if (!/03 — сценарии использования/.test(scenariosBlock)) failures.push(`${robot.slug}: renumbered scenarios marker missing`);
+    const orderFlowBlock = html.match(/<section[^>]*data-block-id="orderFlow"[\s\S]*?<\/section>/)?.[0] ?? '';
+    const orderFlowLeadText = 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт Unitree G1, как он будет работать в программе и что нужно подготовить на площадке.';
+    if (!orderFlowBlock.includes(orderFlowLeadText)) failures.push(`${robot.slug}: order flow owner lead missing`);
+    const orderFlowLeadLength = [...orderFlowLeadText].length;
+    if (orderFlowLeadLength < 300 || orderFlowLeadLength > 350) failures.push(`${robot.slug}: order flow owner lead length must be 300-350 chars, got ${orderFlowLeadLength}`);
+    if (!/template-order-list--reference/.test(orderFlowBlock)) failures.push(`${robot.slug}: order flow owner reference numbered layout missing`);
+    if (/template-order-list--wide/.test(orderFlowBlock)) failures.push(`${robot.slug}: order flow must not render old white-card layout`);
     if (!/Ключевые возможности Unitree G1 показывают/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capabilities lead missing`);
     if (!/Сценарии использования помогают быстро понять/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenarios lead missing`);
     if (!/Рост и пластика гуманоидного корпуса/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capability card copy missing`);

@@ -123,6 +123,29 @@ test('KIBER-94 Unitree G1 included service matches owner reference block placeme
 });
 
 
+test('KIBER-94 Unitree G1 order flow matches owner reference with long lead and numbered circles', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const smoke = readFileSync(smokePath, 'utf8');
+
+  const orderFlowLeadMatch = componentSource.match(/const orderFlowLead = '([^']+)'/);
+  assert.ok(orderFlowLeadMatch, 'order flow lead must be a named owner-copy constant');
+  const orderFlowLeadLength = [...orderFlowLeadMatch[1]].length;
+  assert.ok(orderFlowLeadLength >= 300 && orderFlowLeadLength <= 350, `order flow lead length must be 300-350 chars, got ${orderFlowLeadLength}`);
+
+  assert.match(componentSource, /<span>\{orderFlowLead\}<\/span>/);
+  assert.match(componentSource, /class="template-order-list template-order-list--reference"/);
+  assert.match(componentSource, /\.template-order-list--reference \{[\s\S]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/);
+  assert.match(componentSource, /\.template-order-list--reference \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.match(componentSource, /\.template-order-list--reference li \{[\s\S]*background:\s*transparent/);
+  assert.match(componentSource, /\.template-order-list--reference li::before \{[\s\S]*border-radius:\s*999rem/);
+  assert.match(componentSource, /\.template-order-list--reference li::before \{[\s\S]*background:\s*var\(--kp-reference-blue\)/);
+  assert.match(componentSource, /\.template-order-list--reference li::before \{[\s\S]*color:\s*var\(--kp-reference-white\)/);
+  assert.match(componentSource, /\.template-order-list--reference li::before \{[\s\S]*content:\s*counter\(order-flow\)/);
+  assert.doesNotMatch(componentSource, /class="template-order-list template-order-list--wide"/);
+  assert.match(smoke, /order flow owner reference numbered layout/);
+});
+
+
 test('KIBER-94 Unitree G1 CTA #2 uses the owner attached Gosha image without changing CTA #1', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
@@ -337,7 +360,7 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.doesNotMatch(componentSource, /data-block-id=\"structuredFacts\"/);
   assert.match(componentSource, /hiddenMachineFacts/);
   assert.match(componentSource, /template-check-list--reference/);
-  assert.match(componentSource, /template-order-list--wide/);
+  assert.match(componentSource, /template-order-list--reference/);
   assert.match(componentSource, /HomeFinalCta \{\.\.\.robotQuickCta/);
   assert.match(componentSource, /primaryCta: \{ label: 'Написать нам'/);
   assert.match(componentSource, /secondaryCta: \{ label: 'Оставить заявку'/);

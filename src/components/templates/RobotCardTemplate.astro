@@ -86,6 +86,7 @@ const includedService = [
   'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии',
   'заранее согласуем длительность, выходы робота, паузы и подзарядку',
 ];
+const orderFlowLead = 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт Unitree G1, как он будет работать в программе и что нужно подготовить на площадке.';
 const orderFlow = [
   'Вы пишете нам и называете робота, дату, город и формат мероприятия.',
   'Менеджер уточняет площадку, аудиторию, сценарий, тайминг и ограничения.',
@@ -243,9 +244,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     <div class="template-section-copy">
       <p class="template-section__number">05 — как заказать</p>
       <h2 id="robot-card-order-flow-title">Что произойдёт после заявки</h2>
-      <span>Показываем прозрачный процесс, чтобы убрать тревогу перед обращением и объяснить, почему финальная стоимость подтверждается менеджером.</span>
+      <span>{orderFlowLead}</span>
     </div>
-    <ol class="template-order-list template-order-list--wide">
+    <ol class="template-order-list template-order-list--reference">
       {orderFlow.map((item) => <li>{item}</li>)}
     </ol>
   </section>
@@ -784,32 +785,41 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     font-weight: 500;
   }
 
-  .template-order-list li {
-    background: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
-  }
-
-  .template-order-list--wide {
+  .template-order-list--reference {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(2.4rem, 4.4vw, 4.9rem) clamp(3rem, 7vw, 7rem);
     margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
     margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
     counter-reset: order-flow;
   }
 
-  .template-order-list li {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 1.2rem;
-    align-items: start;
-    padding: 1.25rem 1.35rem;
+  .template-order-list--reference li {
+    position: relative;
+    min-height: 3.4rem;
+    padding: .05rem 0 .05rem 4.3rem;
+    background: transparent;
+    color: var(--kp-reference-muted);
+    font-weight: 500;
     counter-increment: order-flow;
   }
 
-  .template-order-list li::before {
-    color: var(--kp-reference-blue);
+  .template-order-list--reference li::before {
+    position: absolute;
+    top: .15rem;
+    left: 0;
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999rem;
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
     font-family: var(--kp-font-heading);
-    font-size: clamp(2rem, 3.4vw, 3rem);
+    font-size: 1rem;
     font-weight: 700;
-    line-height: .9;
-    content: counter(order-flow, decimal-leading-zero);
+    line-height: 1;
+    content: counter(order-flow);
   }
 
   .template-reused-block--gosha-quote {
@@ -870,7 +880,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     .template-related-catalog__grid,
     .template-feature-grid,
     .template-scenario-grid,
-    .template-check-list--reference {
+    .template-check-list--reference,
+    .template-order-list--reference {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
@@ -898,14 +909,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     .template-feature-grid,
     .template-scenario-grid,
     .template-related-catalog__grid,
-    .template-check-list--reference {
+    .template-check-list--reference,
+    .template-order-list--reference {
       display: grid;
       grid-template-columns: 1fr;
     }
 
     .template-section-copy,
     .template-check-list--reference,
-    .template-order-list--wide {
+    .template-order-list--reference {
       margin-left: 0;
       margin-right: 0;
     }
