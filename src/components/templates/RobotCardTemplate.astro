@@ -79,6 +79,7 @@ const hiddenMachineFacts = {
   priceStatus: template.robot.priceStatus,
   facts: serviceFacts,
 };
+const includedServiceLead = 'В аренду входит не только сам Unitree G1, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы и дал вау-эффект без лишней технической нагрузки на клиента.';
 const includedService = [
   'подберём сценарий использования робота под событие и аудиторию',
   'привезём робота, подготовим площадку и проверим технические ограничения',
@@ -173,8 +174,19 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     </div>
   </section>
 
+  <section id="robot-card-included" class="template-section template-included-service" data-block-id="includedService" aria-labelledby="robot-card-included-title">
+    <div class="template-section-copy">
+      <p class="template-section__number">01 — что входит</p>
+      <h2 id="robot-card-included-title">Не просто робот, а готовый event-сервис</h2>
+      <span>{includedServiceLead}</span>
+    </div>
+    <ul class="template-check-list template-check-list--reference">
+      {includedService.map((item) => <li>{item}</li>)}
+    </ul>
+  </section>
+
   <section class="template-section" data-block-id="capabilities" aria-labelledby="robot-card-capabilities-title">
-    <p class="template-section__number">01 — ключевые возможности</p>
+    <p class="template-section__number">02 — ключевые возможности</p>
     <h2 id="robot-card-capabilities-title">{`Что умеет ${template.robot.name}`}</h2>
     <p class="template-section__lead">{capabilitiesLead}</p>
     <div class="template-feature-grid">
@@ -189,7 +201,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   </section>
 
   <section class="template-section" data-block-id="scenarios" aria-labelledby="robot-card-scenarios-title">
-    <p class="template-section__number">02 — сценарии использования</p>
+    <p class="template-section__number">03 — сценарии использования</p>
     <h2 id="robot-card-scenarios-title">{`Где ${template.robot.name} произведёт «вау-эффект»?`}</h2>
     <p class="template-section__lead">{scenariosLead}</p>
     <div class="template-scenario-grid">
@@ -200,7 +212,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   <section class="template-section template-action-gallery" data-block-id="robotInAction" aria-labelledby="robot-card-action-title">
     <div class="template-gallery-head">
       <div class="template-section-copy template-section-copy--gallery">
-        <p>03 — робот в действии</p>
+        <p>04 — робот в действии</p>
         <h2 id="robot-card-action-title">Покажите гостям движение, общение и фото-контент</h2>
       </div>
       <div class="template-gallery-nav" aria-label="Навигация по галерее робота в действии">
@@ -223,17 +235,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   <section class="template-reused-block template-reused-block--cta template-reused-block--quick-cta" id="robot-card-pricing" data-block-id="pricing">
     <HomeFinalCta {...robotQuickCta} />
-  </section>
-
-  <section id="robot-card-included" class="template-section template-included-service" data-block-id="includedService" aria-labelledby="robot-card-included-title">
-    <div class="template-section-copy">
-      <p class="template-section__number">04 — что входит</p>
-      <h2 id="robot-card-included-title">Не просто робот, а готовый event-сервис</h2>
-      <span>Клиенту не нужно самостоятельно программировать или запускать робота: задача КИБЕР ПОРТАЛА — превратить модель в понятный сценарий для события.</span>
-    </div>
-    <ul class="template-check-list template-check-list--cards">
-      {includedService.map((item) => <li>{item}</li>)}
-    </ul>
   </section>
 
   <script is:inline type="application/json" data-block-id="hiddenMachineFacts" set:html={JSON.stringify(hiddenMachineFacts)} />
@@ -738,8 +739,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     list-style: none;
   }
 
-  .template-check-list--cards {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .template-check-list--reference {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(2.4rem, 4.4vw, 4.9rem) clamp(3rem, 7vw, 7rem);
     margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
     margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
   }
@@ -747,24 +749,43 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-check-list li,
   .template-order-list li {
     border-radius: 1.15rem;
-    background: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
     color: var(--kp-reference-ink);
     font-weight: 700;
   }
 
-  .template-check-list li {
+  .template-check-list--reference li {
     position: relative;
-    padding: 1.1rem 1.1rem 1.1rem 2.7rem;
+    min-height: 3.4rem;
+    padding: .05rem 0 .05rem 4.3rem;
+    background: transparent;
   }
 
-  .template-check-list li::before {
+  .template-check-list--reference li::before {
     position: absolute;
-    top: 1.15rem;
-    left: 1rem;
-    color: var(--kp-reference-blue);
-    font-size: 1.25rem;
+    top: .15rem;
+    left: 0;
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999rem;
+    background: var(--kp-reference-blue);
+    color: var(--kp-reference-white);
+    font-size: 1.45rem;
     font-weight: 900;
+    line-height: 1;
     content: '✓';
+  }
+
+  .template-check-list--reference li p,
+  .template-check-list--reference li {
+    color: var(--kp-reference-muted);
+    font-weight: 500;
+  }
+
+  .template-order-list li {
+    background: color-mix(in srgb, var(--kp-reference-white) 84%, transparent);
   }
 
   .template-order-list--wide {
@@ -849,7 +870,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     .template-related-catalog__grid,
     .template-feature-grid,
     .template-scenario-grid,
-    .template-check-list--cards {
+    .template-check-list--reference {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
@@ -877,13 +898,13 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     .template-feature-grid,
     .template-scenario-grid,
     .template-related-catalog__grid,
-    .template-check-list--cards {
+    .template-check-list--reference {
       display: grid;
       grid-template-columns: 1fr;
     }
 
     .template-section-copy,
-    .template-check-list--cards,
+    .template-check-list--reference,
     .template-order-list--wide {
       margin-left: 0;
       margin-right: 0;

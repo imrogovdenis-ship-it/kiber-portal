@@ -90,6 +90,39 @@ test('KIBER-94 Unitree G1 capabilities and scenarios use owner requested expande
 });
 
 
+test('KIBER-94 Unitree G1 included service matches owner reference block placement and checklist style', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const smoke = readFileSync(smokePath, 'utf8');
+
+  const includedLeadMatch = componentSource.match(/const includedServiceLead = '([^']+)'/);
+  assert.ok(includedLeadMatch, 'included service lead must be a named owner-copy constant');
+  const includedLeadLength = [...includedLeadMatch[1]].length;
+  assert.ok(includedLeadLength >= 300 && includedLeadLength <= 350, `included service lead length must be 300-350 chars, got ${includedLeadLength}`);
+
+  const order = [
+    'data-block-id="gallery"',
+    'data-block-id="includedService"',
+    'data-block-id="capabilities"',
+  ];
+  let previous = -1;
+  for (const needle of order) {
+    const current = componentSource.indexOf(needle);
+    assert.ok(current > previous, `${needle} must appear after the previous owner-requested block`);
+    previous = current;
+  }
+
+  assert.match(componentSource, /<span>\{includedServiceLead\}<\/span>/);
+  assert.match(componentSource, /class="template-check-list template-check-list--reference"/);
+  assert.match(componentSource, /\.template-check-list--reference \{[\s\S]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/);
+  assert.match(componentSource, /\.template-check-list--reference \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.match(componentSource, /\.template-check-list--reference li \{[\s\S]*background:\s*transparent/);
+  assert.match(componentSource, /\.template-check-list--reference li::before \{[\s\S]*border-radius:\s*999rem/);
+  assert.match(componentSource, /\.template-check-list--reference li::before \{[\s\S]*background:\s*var\(--kp-reference-blue\)/);
+  assert.match(componentSource, /\.template-check-list--reference li::before \{[\s\S]*color:\s*var\(--kp-reference-white\)/);
+  assert.match(smoke, /included service owner reference checklist/);
+});
+
+
 test('KIBER-94 Unitree G1 CTA #2 uses the owner attached Gosha image without changing CTA #1', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
@@ -171,10 +204,10 @@ test('KIBER-94 robot_card preview has an owner-review visual layout layer', () =
   assert.match(componentSource, /data-block-id="orderFlow"/);
   assert.doesNotMatch(componentSource, /data-block-id="relatedCompilations"/);
   assert.doesNotMatch(componentSource, /homeCompilations/);
-  assert.match(componentSource, /01 — ключевые возможности/);
-  assert.match(componentSource, /02 — сценарии использования/);
-  assert.match(componentSource, /03 — робот в действии/);
-  assert.match(componentSource, /04 — что входит/);
+  assert.match(componentSource, /01 — что входит/);
+  assert.match(componentSource, /02 — ключевые возможности/);
+  assert.match(componentSource, /03 — сценарии использования/);
+  assert.match(componentSource, /04 — робот в действии/);
   assert.match(componentSource, /05 — как заказать/);
   assert.match(componentSource, /template-feature-grid/);
   assert.match(componentSource, /template-scenario-grid/);
@@ -225,12 +258,13 @@ test('KIBER-94 owner feedback fixes block order and removes duplicate short summ
     'data-block-id="hero"',
     'data-block-id="aiSummary"',
     'data-block-id="gallery"',
+    'data-block-id="includedService"',
     'data-block-id="capabilities"',
     'data-block-id="scenarios"',
     'data-block-id="robotInAction"',
     'data-block-id="goshaCta"',
     'data-block-id="pricing"',
-    'data-block-id="includedService"',
+    'data-block-id="hiddenMachineFacts"',
     'data-block-id="orderFlow"',
     'data-block-id="faq"',
     'data-block-id="finalQuestionsCta"',
@@ -302,7 +336,7 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.doesNotMatch(componentSource, /Media-зона напоминает/);
   assert.doesNotMatch(componentSource, /data-block-id=\"structuredFacts\"/);
   assert.match(componentSource, /hiddenMachineFacts/);
-  assert.match(componentSource, /template-check-list--cards/);
+  assert.match(componentSource, /template-check-list--reference/);
   assert.match(componentSource, /template-order-list--wide/);
   assert.match(componentSource, /HomeFinalCta \{\.\.\.robotQuickCta/);
   assert.match(componentSource, /primaryCta: \{ label: 'Написать нам'/);

@@ -65,8 +65,17 @@ for (const robot of robots) {
   if (!/template-ai-summary/.test(html)) failures.push(`${robot.slug}: visible AI summary block missing`);
   if (/data-block-id="description"/.test(html) || /template-live-intro/.test(html)) failures.push(`${robot.slug}: text block with heading must be removed`);
   if (robot.slug === 'arenda-unitree-g1') {
+    const includedBlock = html.match(/<section[^>]*data-block-id="includedService"[\s\S]*?<\/section>/)?.[0] ?? '';
     const capabilitiesBlock = html.match(/<section[^>]*data-block-id="capabilities"[\s\S]*?<\/section>/)?.[0] ?? '';
     const scenariosBlock = html.match(/<section[^>]*data-block-id="scenarios"[\s\S]*?<\/section>/)?.[0] ?? '';
+    const includedLeadText = 'В аренду входит не только сам Unitree G1, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы и дал вау-эффект без лишней технической нагрузки на клиента.';
+    if (!includedBlock.includes(includedLeadText)) failures.push(`${robot.slug}: included service owner lead missing`);
+    const includedLeadLength = [...includedLeadText].length;
+    if (includedLeadLength < 300 || includedLeadLength > 350) failures.push(`${robot.slug}: included service owner lead length must be 300-350 chars, got ${includedLeadLength}`);
+    if (!/template-check-list--reference/.test(includedBlock)) failures.push(`${robot.slug}: included service owner reference checklist missing`);
+    if (!(html.indexOf('data-block-id="gallery"') < html.indexOf('data-block-id="includedService"') && html.indexOf('data-block-id="includedService"') < html.indexOf('data-block-id="capabilities"'))) failures.push(`${robot.slug}: included service block must appear between gallery and capabilities`);
+    if (!/02 — ключевые возможности/.test(capabilitiesBlock)) failures.push(`${robot.slug}: renumbered capabilities marker missing`);
+    if (!/03 — сценарии использования/.test(scenariosBlock)) failures.push(`${robot.slug}: renumbered scenarios marker missing`);
     if (!/Ключевые возможности Unitree G1 показывают/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capabilities lead missing`);
     if (!/Сценарии использования помогают быстро понять/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenarios lead missing`);
     if (!/Рост и пластика гуманоидного корпуса/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capability card copy missing`);
