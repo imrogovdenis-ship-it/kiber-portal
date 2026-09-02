@@ -5,8 +5,9 @@ function toPreviewAsset(src: string): string | undefined {
   if (!src.startsWith('/')) return src;
   const publicAssets = import.meta.glob('/public/**/*', { eager: true, query: '?url', import: 'default' });
   if (publicAssets[`/public${src}`]) return src;
-  const filename = src.split('/').at(-1);
-  const previewSrc = filename ? `/images/kiber-94-preview/${filename}` : undefined;
+  const rawFilename = src.split('/').at(-1);
+  const previewFilename = rawFilename?.replace(/\.(jpe?g|png)$/i, '.webp');
+  const previewSrc = previewFilename ? `/images/kiber-94-preview/${previewFilename}` : undefined;
   return previewSrc && publicAssets[`/public${previewSrc}`] ? previewSrc : undefined;
 }
 
