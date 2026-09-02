@@ -156,7 +156,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       {primaryGallery.map((image, index) => (
         <figure class="template-live-gallery__item">
           <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
-          <figcaption>{index + 1} из {primaryGallery.length}</figcaption>
         </figure>
       ))}
     </div>
@@ -197,10 +196,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       <h2 id="robot-card-action-title">Покажите гостям движение, общение и фото-контент</h2>
     </div>
     <div class="template-drag-gallery template-action-gallery__strip" data-drag-slider="robot-action-gallery" aria-label={`${template.robot.name} в действии: горизонтальный слайдер`}>
-      {actionGallery.map((image, index) => (
+      {actionGallery.map((image) => (
         <figure>
           <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
-          <figcaption>{index + 1} / {actionGallery.length}</figcaption>
         </figure>
       ))}
     </div>
@@ -264,7 +262,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
 <script>
   document.querySelectorAll<HTMLElement>('[data-drag-slider^="robot-"]').forEach((slider) => {
-    let isDown = false;
+    let pointerId: number | null = null;
     let startX = 0;
     let startScroll = 0;
     let moved = 0;
@@ -274,38 +272,34 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       item.addEventListener('dragstart', (event) => event.preventDefault());
     });
 
-    const pageX = (event: MouseEvent | TouchEvent) => ('touches' in event ? (event.touches[0]?.pageX ?? startX) : event.pageX);
-
-    const start = (event: MouseEvent | TouchEvent) => {
-      if ('button' in event && event.button !== 0) return;
-      isDown = true;
-      moved = 0;
-      startX = pageX(event);
-      startScroll = slider.scrollLeft;
-      slider.classList.add('is-dragging');
-      event.preventDefault();
-    };
-
-    const move = (event: MouseEvent | TouchEvent) => {
-      if (!isDown) return;
-      const dx = pageX(event) - startX;
-      moved = Math.max(moved, Math.abs(dx));
-      slider.scrollLeft = startScroll - dx;
-      event.preventDefault();
-    };
-
     const stop = () => {
-      if (!isDown) return;
-      isDown = false;
+      pointerId = null;
       slider.classList.remove('is-dragging');
     };
 
-    slider.addEventListener('mousedown', start);
-    window.addEventListener('mousemove', move, { passive: false });
-    window.addEventListener('mouseup', stop);
-    slider.addEventListener('touchstart', start, { passive: false });
-    window.addEventListener('touchmove', move, { passive: false });
-    window.addEventListener('touchend', stop);
+    slider.addEventListener('pointerdown', (event) => {
+      if (event.button !== 0) return;
+      pointerId = event.pointerId;
+      moved = 0;
+      startX = event.pageX;
+      startScroll = slider.scrollLeft;
+      slider.classList.add('is-dragging');
+      slider.setPointerCapture(event.pointerId);
+      event.preventDefault();
+    });
+
+    slider.addEventListener('pointermove', (event) => {
+      if (pointerId !== event.pointerId) return;
+      const dx = event.pageX - startX;
+      moved = Math.max(moved, Math.abs(dx));
+      slider.scrollLeft = startScroll - dx;
+      event.preventDefault();
+    });
+
+    slider.addEventListener('pointerup', stop);
+    slider.addEventListener('pointercancel', stop);
+    slider.addEventListener('lostpointercapture', stop);
+
     slider.addEventListener('click', (event) => {
       if (moved > 5) {
         event.preventDefault();
@@ -318,6 +312,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
 <style>
   .page-template--robot {
+    --robot-card-gallery-height: clamp(20.8rem, 34vw, 25.35rem);
+    --robot-card-action-gallery-height: clamp(15rem, 24vw, 19rem);
     display: grid;
     gap: clamp(3.5rem, 6vw, 6rem);
     padding-block: clamp(1.25rem, 2.4vw, 2rem) 4.5rem;
@@ -501,7 +497,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     cursor: grab;
     user-select: none;
     touch-action: pan-y;
@@ -520,9 +516,10 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-live-gallery__item,
   .template-action-gallery figure {
     position: relative;
-    flex: 0 0 min(26rem, 78vw);
-    width: min(26rem, 78vw);
+    flex: 0 0 auto;
+    width: auto;
     min-width: 0;
+    height: var(--robot-card-gallery-height);
     margin: 0;
     overflow: hidden;
     border-radius: 1.35rem;
@@ -531,38 +528,24 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     -webkit-user-drag: none;
   }
 
-  .template-live-gallery__item img {
+  .template-live-gallery__item img,
+  .template-action-gallery img {
     display: block;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: center top;
+    width: auto;
+    height: 100%;
+    max-width: min(52rem, 88vw);
+    object-fit: contain;
+    object-position: center;
+    -webkit-user-drag: none;
+    user-select: none;
   }
 
   .template-action-gallery figure {
-    flex-basis: min(22rem, 76vw);
-    width: min(22rem, 76vw);
+    height: var(--robot-card-action-gallery-height);
   }
 
   .template-action-gallery img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 5;
-    object-fit: cover;
-    object-position: center top;
-  }
-
-  .template-live-gallery figcaption,
-  .template-action-gallery figcaption {
-    position: absolute;
-    right: .8rem;
-    bottom: .8rem;
-    border-radius: 999rem;
-    padding: .35rem .65rem;
-    background: color-mix(in srgb, var(--kp-reference-ink) 70%, transparent);
-    color: var(--kp-reference-white);
-    font-size: .78rem;
-    font-weight: 700;
+    max-width: min(44rem, 86vw);
   }
 
   .template-live-intro h2,

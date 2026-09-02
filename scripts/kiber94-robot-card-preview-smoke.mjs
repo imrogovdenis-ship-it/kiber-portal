@@ -69,6 +69,8 @@ for (const robot of robots) {
   if (!/template-live-hero--dark/.test(html)) failures.push(`${robot.slug}: dark hero visual class missing`);
   if (!/data-drag-slider="robot-gallery"/.test(html)) failures.push(`${robot.slug}: first gallery drag slider missing`);
   if (!/data-drag-slider="robot-action-gallery"/.test(html)) failures.push(`${robot.slug}: action gallery drag slider missing`);
+  if (/\d+\s*(?:из|\/)\s*\d+/.test(galleryBlock)) failures.push(`${robot.slug}: first gallery visible image numbering must be removed`);
+  if (!/template-live-gallery__item/.test(galleryBlock)) failures.push(`${robot.slug}: first gallery item class missing`);
   if (!/Аренда робота|Аренда робо-кофейню/.test(html)) failures.push(`${robot.slug}: typed rental H1 missing`);
   if (!/Кибер Гоша|КИБЕР Гоша|КИБЕР ГОША/.test(html)) failures.push(`${robot.slug}: Kiber Gosha brand voice block missing`);
   if (/Wordstat|SERP|keywordDensity|checklistReport|crmConfig|leadRoutingImplementationNotes/.test(html)) {
