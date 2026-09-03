@@ -197,6 +197,13 @@ test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the 
   assert.match(componentSource, /alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота'/);
   assert.match(componentSource, /image: robotFinalCtaImage/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta\) \{[\s\S]*align-items:\s*stretch/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta\) \{[\s\S]*height:\s*clamp\(20rem,\s*26\.25vw,\s*21rem\)/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*height:\s*100%/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*overflow:\s*visible/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(16rem,\s*23\.6vw,\s*18\.9rem\)/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*transform:\s*translateY\(-1\.9rem\)/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*auto/);
   assert.match(smoke, /CTA #2 owner image/);
 });
 

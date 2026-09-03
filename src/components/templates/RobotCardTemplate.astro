@@ -736,6 +736,33 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     margin-bottom: calc(var(--robot-card-page-gap) * -.3);
   }
 
+  .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta) {
+    align-items: stretch;
+  }
+
+  .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image) {
+    align-self: stretch;
+    height: 100%;
+    min-height: 10rem;
+    overflow: visible;
+  }
+
+  .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image img) {
+    width: auto !important;
+    height: clamp(16rem, 23.6vw, 18.9rem) !important;
+    max-width: 100%;
+    max-height: none;
+    transform: translateY(-1.9rem);
+  }
+
+  @media (min-width: 60rem) {
+    .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta) {
+      box-sizing: border-box;
+      height: clamp(20rem, 26.25vw, 21rem);
+      min-height: clamp(20rem, 26.25vw, 21rem);
+    }
+  }
+
   .template-reused-block--quick-cta :global(.home-final-cta) {
     align-items: stretch;
     gap: clamp(1.05rem, 2.8vw, 2.1rem);
