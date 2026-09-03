@@ -8,6 +8,7 @@ const routePath = resolve(root, 'src/pages/preview/kiber-94/robot-card/[slug].as
 const mapperPath = resolve(root, 'src/lib/kiber94-robot-template-data.ts');
 const componentPath = resolve(root, 'src/components/templates/RobotCardTemplate.astro');
 const smokePath = resolve(root, 'scripts/kiber94-robot-card-preview-smoke.mjs');
+const robotGalleryScriptPath = resolve(root, 'public/scripts/robot-card-gallery.js');
 const packagePath = resolve(root, 'package.json');
 const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report.json');
 const structureContractPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md');
@@ -160,6 +161,31 @@ test('KIBER-94 robot_card mobile gallery follows supplied mobile reference witho
   assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*height:\s*auto/);
   assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*width:\s*100%/);
   assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*height:\s*100%/);
+});
+
+
+test('KIBER-94 desktop gallery behavior uses a CSP-safe external script based on desktop reference', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const scriptSource = readFileSync(robotGalleryScriptPath, 'utf8');
+  const desktopReference = readFileSync(resolve(root, 'docs/source/reference-desktop-v9.html'), 'utf8');
+
+  assert.match(desktopReference, /document\.querySelectorAll\('\.drag-slider'\)/);
+  assert.match(desktopReference, /slider\.addEventListener\('mousedown'/);
+  assert.match(desktopReference, /window\.addEventListener\('mousemove'/);
+  assert.match(desktopReference, /window\.addEventListener\('mouseup'/);
+  assert.match(desktopReference, /slider\.scrollLeft=startScroll-dx/);
+  assert.match(desktopReference, /document\.querySelectorAll\('\[data-slider-next\]'\)/);
+
+  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
+  assert.doesNotMatch(componentSource, /document\.querySelectorAll<HTMLElement>\('\[data-drag-slider\^="robot-"\]'\)/);
+  assert.match(scriptSource, /document\.querySelectorAll\('\[data-drag-slider\^="robot-"\]'\)/);
+  assert.match(scriptSource, /slider\.addEventListener\('mousedown'/);
+  assert.match(scriptSource, /window\.addEventListener\('mousemove'/);
+  assert.match(scriptSource, /window\.addEventListener\('mouseup'/);
+  assert.match(scriptSource, /slider\.scrollLeft = startScroll - dx/);
+  assert.match(scriptSource, /document\.querySelectorAll\('\[data-slider-prev\]'\)/);
+  assert.match(scriptSource, /document\.querySelectorAll\('\[data-slider-next\]'\)/);
+  assert.doesNotMatch(scriptSource, /<script|type="module"|HTMLElement|PointerEvent|MouseEvent/);
 });
 
 
@@ -356,18 +382,14 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /width:\s*auto/);
   assert.match(componentSource, /object-fit:\s*contain/);
   assert.match(componentSource, /flex:\s*0 0 auto/);
-  assert.match(componentSource, /pointerdown/);
-  assert.match(componentSource, /pointermove/);
-  assert.match(componentSource, /window\.addEventListener\('pointermove', move, \{ passive: false \}\)/);
-  assert.match(componentSource, /window\.addEventListener\('pointerup', stop\)/);
-  assert.match(componentSource, /setPointerCapture/);
-  assert.match(componentSource, /mousedown/);
-  assert.match(componentSource, /window\.addEventListener\('mousemove', mouseMove\)/);
-  assert.match(componentSource, /window\.addEventListener\('mouseup', mouseStop\)/);
-  assert.match(componentSource, /data-slider-next/);
-  assert.match(componentSource, /scrollBy\(\{ left: slider\.clientWidth \* 0\.8, behavior: 'smooth' \}\)/);
-  assert.match(componentSource, /slider\.scrollLeft = startScroll - dx/);
-  assert.match(componentSource, /slider\.scrollLeft = mouseStartScroll - dx/);
+  const robotGalleryScript = readFileSync(robotGalleryScriptPath, 'utf8');
+  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
+  assert.match(robotGalleryScript, /mousedown/);
+  assert.match(robotGalleryScript, /window\.addEventListener\('mousemove'/);
+  assert.match(robotGalleryScript, /window\.addEventListener\('mouseup'/);
+  assert.match(robotGalleryScript, /data-slider-next/);
+  assert.match(robotGalleryScript, /scrollBy\(\{ left: slider\.clientWidth \* 0\.8, behavior: 'smooth' \}\)/);
+  assert.match(robotGalleryScript, /slider\.scrollLeft = startScroll - dx/);
   assert.match(componentSource, /scroll-snap-type:\s*none/);
   assert.doesNotMatch(componentSource, /scroll-snap-type:\s*x mandatory/);
   assert.doesNotMatch(componentSource, /<figcaption>\{index \+ 1\} из \{primaryGallery\.length\}<\/figcaption>/);

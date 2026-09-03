@@ -6,6 +6,7 @@ const root = process.cwd();
 const previewDistPath = 'dist/preview/kiber-94/robot-card';
 const robots = JSON.parse(readFileSync(resolve(root, 'src/content/robots.generated.json'), 'utf8')).robots;
 const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report.json');
+const robotGalleryScriptPath = resolve(root, 'public/scripts/robot-card-gallery.js');
 const checked = [];
 const failures = [];
 const warnings = [];
@@ -30,6 +31,7 @@ for (const robot of robots) {
   }
   const html = readFileSync(htmlPath, 'utf8');
   const builtCss = readBuiltCssForHtml(html).replace(/\s+/g, '');
+  const robotGalleryScript = readFileSync(robotGalleryScriptPath, 'utf8');
   const required = [
     'data-preview-route="robot_card"',
     'data-page-type="robot_card"',
@@ -122,8 +124,9 @@ for (const robot of robots) {
   if (!/data-slider-next="\[data-drag-slider='robot-gallery'\]"/.test(html)) failures.push(`${robot.slug}: first gallery reference-style next button missing`);
   if (!/data-slider-prev="\[data-drag-slider='robot-action-gallery'\]"/.test(html)) failures.push(`${robot.slug}: action gallery reference-style prev button missing`);
   if (!/data-slider-next="\[data-drag-slider='robot-action-gallery'\]"/.test(html)) failures.push(`${robot.slug}: action gallery reference-style next button missing`);
-  if (!/mousedown/.test(html) || !/mousemove/.test(html) || !/mouseup/.test(html)) failures.push(`${robot.slug}: reference-style mouse drag script missing`);
-  if (!/scrollBy/.test(html)) failures.push(`${robot.slug}: reference-style gallery navigation script missing`);
+  if (!/mousedown/.test(robotGalleryScript) || !/mousemove/.test(robotGalleryScript) || !/mouseup/.test(robotGalleryScript)) failures.push(`${robot.slug}: reference-style mouse drag script missing from external robot gallery script`);
+  if (!/scrollBy/.test(robotGalleryScript)) failures.push(`${robot.slug}: reference-style gallery navigation script missing from external robot gallery script`);
+  if (!html.includes('/scripts/robot-card-gallery.js')) failures.push(`${robot.slug}: CSP-safe external robot gallery script missing`);
   if (/\d+\s*(?:из|\/)\s*\d+/.test(galleryBlock)) failures.push(`${robot.slug}: first gallery visible image numbering must be removed`);
   if (!/template-live-gallery__item/.test(galleryBlock)) failures.push(`${robot.slug}: first gallery item class missing`);
   if (!/Аренда робота|Аренда робо-кофейню/.test(html)) failures.push(`${robot.slug}: typed rental H1 missing`);
