@@ -29,60 +29,7 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   </div>
 </section>
 
-<script>
-  document.querySelectorAll<HTMLElement>('[data-drag-slider="true"]').forEach((slider) => {
-    let isDown = false;
-    let startX = 0;
-    let startScroll = 0;
-    let moved = 0;
-
-    slider.querySelectorAll('a, img').forEach((item) => {
-      item.setAttribute('draggable', 'false');
-      item.addEventListener('dragstart', (event) => event.preventDefault());
-    });
-
-    const pageX = (event: MouseEvent | TouchEvent) => ('touches' in event ? (event.touches[0]?.pageX ?? startX) : event.pageX);
-
-    const start = (event: MouseEvent | TouchEvent) => {
-      if ('button' in event && event.button !== 0 && event.button !== 2) return;
-      isDown = true;
-      moved = 0;
-      startX = pageX(event);
-      startScroll = slider.scrollLeft;
-      slider.classList.add('is-dragging');
-      event.preventDefault();
-    };
-
-    const move = (event: MouseEvent | TouchEvent) => {
-      if (!isDown) return;
-      const dx = pageX(event) - startX;
-      moved = Math.max(moved, Math.abs(dx));
-      slider.scrollLeft = startScroll - dx;
-      event.preventDefault();
-    };
-
-    const stop = () => {
-      if (!isDown) return;
-      isDown = false;
-      slider.classList.remove('is-dragging');
-    };
-
-    slider.addEventListener('mousedown', start);
-    window.addEventListener('mousemove', move, { passive: false });
-    window.addEventListener('mouseup', stop);
-    slider.addEventListener('touchstart', start, { passive: false });
-    window.addEventListener('touchmove', move, { passive: false });
-    window.addEventListener('touchend', stop);
-    slider.addEventListener('contextmenu', (event) => event.preventDefault());
-    slider.addEventListener('click', (event) => {
-      if (moved > 5) {
-        event.preventDefault();
-        event.stopPropagation();
-        moved = 0;
-      }
-    }, true);
-  });
-</script>
+<script is:inline src="/scripts/home-image-cards-slider.js" defer></script>
 
 <style>
   .home-image-cards { display: grid; gap: clamp(.8rem, 1.4vw, 1.15rem); }

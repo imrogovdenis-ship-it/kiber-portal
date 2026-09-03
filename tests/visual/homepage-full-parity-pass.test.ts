@@ -97,21 +97,23 @@ test('homepage owner feedback pass keeps heading style consistent and removes ex
 });
 
 test('homepage owner feedback pass matches requested cards FAQ and CTA behavior', async () => {
-  const [imageCards, faq, cta] = await Promise.all([
+  const [imageCards, imageCardsScript, faq, cta] = await Promise.all([
     read('src/components/blocks/HomeImageCards.astro'),
+    read('public/scripts/home-image-cards-slider.js'),
     read('src/components/blocks/HomeFaqBlock.astro'),
     read('src/components/blocks/HomeFinalCta.astro'),
   ]);
 
   assert.match(imageCards, /data-drag-slider=\{variant === 'overlay' \? 'true' : undefined\}/);
   assert.match(imageCards, /flex:\s*0 0 23rem; width:\s*23rem; height:\s*23rem; min-height:\s*23rem/);
-  assert.match(imageCards, /const dx = pageX\(event\) - startX/);
-  assert.match(imageCards, /slider\.scrollLeft = startScroll - dx/);
-  assert.match(imageCards, /addEventListener\('mousedown', start\)/);
-  assert.match(imageCards, /window\.addEventListener\('mousemove', move, \{ passive: false \}\)/);
-  assert.match(imageCards, /addEventListener\('touchstart', start, \{ passive: false \}\)/);
-  assert.match(imageCards, /window\.addEventListener\('touchmove', move, \{ passive: false \}\)/);
-  assert.match(imageCards, /event\.preventDefault\(\);\n\s*\};\n\n\s*const move/s);
+  assert.match(imageCards, /<script is:inline src="\/scripts\/home-image-cards-slider\.js" defer><\/script>/);
+  assert.match(imageCardsScript, /const dx = pageX\(event, startX\) - startX/);
+  assert.match(imageCardsScript, /slider\.scrollLeft = startScroll - dx/);
+  assert.match(imageCardsScript, /addEventListener\('mousedown', start\)/);
+  assert.match(imageCardsScript, /window\.addEventListener\('mousemove', move, \{ passive: false \}\)/);
+  assert.match(imageCardsScript, /addEventListener\('touchstart', start, \{ passive: false \}\)/);
+  assert.match(imageCardsScript, /window\.addEventListener\('touchmove', move, \{ passive: false \}\)/);
+  assert.match(imageCardsScript, /event\.preventDefault\(\);\n\s*\};\n\n\s*const move/s);
   assert.match(imageCards, /scrollbar-width:\s*none/);
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
   assert.match(imageCards, /variant === 'overlay' && <em>/);
