@@ -97,6 +97,21 @@ test('homepage owner feedback pass keeps heading style consistent and removes ex
   assert.match(data, /Менеджер КИБЕР ПОРТАЛА ответит и подберет роботов по вашему бюджету и дате/);
 });
 
+test('homepage mobile hero matches owner phone feedback: full-cover image and one-row buttons', async () => {
+  const hero = await read('src/components/blocks/HomeHero.astro');
+
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__card \{[\s\S]*?min-height:\s*clamp\(46rem, 155vw, 62rem\)/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__content \{[\s\S]*?grid-template-rows:\s*auto auto auto minmax\(2rem, 1fr\) auto/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__content \{[\s\S]*?padding:\s*clamp\(3\.4rem, 12vw, 4\.9rem\)/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__actions \{[\s\S]*?grid-template-columns:\s*repeat\(2, minmax\(0, 1fr\)\)/s);
+  assert.match(hero, /font-size:\s*clamp\(0\.68rem, 3\.25vw, 0\.82rem\)/);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__image \{[\s\S]*?position:\s*absolute;[\s\S]*?inset:\s*0;[\s\S]*?width:\s*100%;[\s\S]*?height:\s*100%/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__image img \{[\s\S]*?object-fit:\s*cover/s);
+  assert.match(hero, /object-position:\s*66% center !important/);
+  assert.doesNotMatch(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?flex-direction:\s*column-reverse/s);
+  assert.doesNotMatch(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?object-fit:\s*contain/s);
+});
+
 test('homepage owner feedback pass matches requested cards FAQ and CTA behavior', async () => {
   const [imageCards, imageCardsScript, faq, cta] = await Promise.all([
     read('src/components/blocks/HomeImageCards.astro'),
