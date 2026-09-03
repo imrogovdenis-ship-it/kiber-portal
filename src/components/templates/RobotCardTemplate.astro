@@ -749,10 +749,10 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image img) {
     width: auto !important;
-    height: clamp(16rem, 23.6vw, 18.9rem) !important;
+    height: clamp(17rem, 25vw, 20rem) !important;
     max-width: 100%;
     max-height: none;
-    transform: translateY(-1.9rem);
+    transform: translateY(-3.5rem);
   }
 
   @media (min-width: 60rem) {
@@ -771,7 +771,17 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta h2) {
-    line-height: 1.16;
+    line-height: 1.3 !important;
+  }
+
+  .template-reused-block--quick-cta :global(.home-final-cta__title-nowrap) {
+    display: inline-block;
+    margin-top: .2rem;
+    color: color-mix(in srgb, var(--kp-white) 86%, transparent);
+    font-family: var(--kp-font-body);
+    font-size: var(--kp-body-size);
+    font-weight: var(--kp-body-weight);
+    line-height: var(--kp-body-line-height);
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta__copy) {

@@ -201,8 +201,8 @@ test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the 
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta\) \{[\s\S]*height:\s*clamp\(20rem,\s*26\.25vw,\s*21rem\)/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*height:\s*100%/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*overflow:\s*visible/);
-  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(16rem,\s*23\.6vw,\s*18\.9rem\)/);
-  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*transform:\s*translateY\(-1\.9rem\)/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(17rem,\s*25vw,\s*20rem\)/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{\n\s*width:\s*auto !important;\n\s*height:\s*clamp\(17rem,\s*25vw,\s*20rem\) !important;\n\s*max-width:\s*100%;\n\s*max-height:\s*none;\n\s*transform:\s*translateY\(-3\.5rem\);\n\s*\}/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*auto/);
   assert.match(smoke, /CTA #2 owner image/);
 });
@@ -224,7 +224,10 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   assert.match(componentSource, /--robot-card-page-gap:\s*clamp\(3\.5rem,\s*6vw,\s*6rem\)/);
   assert.match(componentSource, /gap:\s*var\(--robot-card-page-gap\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta\) \{[\s\S]*padding:\s*clamp\(1\.4rem,\s*3\.5vw,\s*2\.8rem\)/);
-  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta h2\) \{[\s\S]*line-height:\s*1\.16/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta h2\) \{[\s\S]*line-height:\s*1\.3/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*font-size:\s*var\(--kp-body-size\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*font-weight:\s*var\(--kp-body-weight\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*line-height:\s*var\(--kp-body-line-height\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__copy\) \{[\s\S]*transform:\s*translateY\(-\.35rem\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__actions\) \{[\s\S]*margin-top:\s*1\.45rem/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*align-self:\s*center/);
