@@ -216,6 +216,10 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     </div>
   </section>
 
+  <section class="template-reused-block template-reused-block--cta template-reused-block--quick-cta" id="robot-card-pricing" data-block-id="pricing">
+    <HomeFinalCta {...robotQuickCta} />
+  </section>
+
   <section class="template-section template-action-gallery" data-block-id="robotInAction" aria-labelledby="robot-card-action-title">
     <div class="template-gallery-head">
       <div class="template-section-copy template-section-copy--gallery">
@@ -238,10 +242,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   <section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">
     <HomeGoshaQuote {...robotGosha} />
-  </section>
-
-  <section class="template-reused-block template-reused-block--cta template-reused-block--quick-cta" id="robot-card-pricing" data-block-id="pricing">
-    <HomeFinalCta {...robotQuickCta} />
   </section>
 
   <script is:inline type="application/json" data-block-id="hiddenMachineFacts" set:html={JSON.stringify(hiddenMachineFacts)} />
@@ -286,7 +286,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 <style>
   .page-template--robot {
     --robot-card-gallery-height: clamp(29.12rem, 47.6vw, 35.49rem);
-    --robot-card-action-gallery-height: clamp(21rem, 33.6vw, 26.6rem);
     --robot-card-page-gap: clamp(3.5rem, 6vw, 6rem);
     display: grid;
     gap: var(--robot-card-page-gap);
@@ -552,11 +551,19 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   }
 
   .template-action-gallery figure {
-    height: var(--robot-card-action-gallery-height);
+    height: var(--robot-card-gallery-height);
   }
 
   .template-action-gallery img {
-    max-width: min(44rem, 86vw);
+    max-width: min(52rem, 88vw);
+  }
+
+  .template-section > .template-section__number,
+  .template-section > h2,
+  .template-section > .template-section__lead {
+    max-width: 56rem;
+    margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
+    margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
   }
 
   .template-section h2,
@@ -636,11 +643,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
   }
 
-  .template-section-copy--gallery {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .template-check-list,
   .template-order-list {
     display: grid;
@@ -653,8 +655,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-check-list--reference {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(2.4rem, 4.4vw, 4.9rem) clamp(3rem, 7vw, 7rem);
-    margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
-    margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .template-check-list li,
@@ -698,8 +700,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-order-list--reference {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(2.4rem, 4.4vw, 4.9rem) clamp(3rem, 7vw, 7rem);
-    margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
-    margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
+    margin-left: 0;
+    margin-right: 0;
     counter-reset: order-flow;
   }
 
@@ -782,8 +784,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     margin-top: .2rem;
     color: color-mix(in srgb, var(--kp-white) 86%, transparent);
     font-family: var(--kp-font-body);
-    font-size: var(--kp-body-size);
-    font-weight: var(--kp-body-weight);
+    font-size: calc(var(--kp-body-size) + .125rem);
+    font-weight: 700;
     line-height: var(--kp-body-line-height);
   }
 
@@ -907,6 +909,9 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     }
 
     .template-section-copy,
+    .template-section > .template-section__number,
+    .template-section > h2,
+    .template-section > .template-section__lead,
     .template-check-list--reference,
     .template-order-list--reference {
       margin-left: 0;

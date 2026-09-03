@@ -115,7 +115,8 @@ test('KIBER-94 Unitree G1 included service matches owner reference block placeme
   assert.match(componentSource, /<span>\{includedServiceLead\}<\/span>/);
   assert.match(componentSource, /class="template-check-list template-check-list--reference"/);
   assert.match(componentSource, /\.template-check-list--reference \{[\s\S]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/);
-  assert.match(componentSource, /\.template-check-list--reference \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.match(componentSource, /\.template-check-list--reference \{[\s\S]*margin-left:\s*0/);
+  assert.match(componentSource, /\.template-check-list--reference \{[\s\S]*margin-right:\s*0/);
   assert.match(componentSource, /\.template-check-list--reference li \{[\s\S]*background:\s*transparent/);
   assert.match(componentSource, /\.template-check-list--reference li::before \{[\s\S]*border-radius:\s*999rem/);
   assert.match(componentSource, /\.template-check-list--reference li::before \{[\s\S]*background:\s*var\(--kp-reference-blue\)/);
@@ -136,7 +137,8 @@ test('KIBER-94 Unitree G1 order flow matches owner reference with long lead and 
   assert.match(componentSource, /<span>\{orderFlowLead\}<\/span>/);
   assert.match(componentSource, /class="template-order-list template-order-list--reference"/);
   assert.match(componentSource, /\.template-order-list--reference \{[\s\S]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/);
-  assert.match(componentSource, /\.template-order-list--reference \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.match(componentSource, /\.template-order-list--reference \{[\s\S]*margin-left:\s*0/);
+  assert.match(componentSource, /\.template-order-list--reference \{[\s\S]*margin-right:\s*0/);
   assert.match(componentSource, /\.template-order-list--reference li \{[\s\S]*background:\s*transparent/);
   assert.match(componentSource, /\.template-order-list--reference li::before \{[\s\S]*border-radius:\s*999rem/);
   assert.match(componentSource, /\.template-order-list--reference li::before \{[\s\S]*background:\s*var\(--kp-reference-blue\)/);
@@ -189,6 +191,20 @@ test('KIBER-94 desktop gallery behavior uses a CSP-safe external script based on
 });
 
 
+test('KIBER-94 owner spacing keeps gallery and numbered-section text aligned to included-service heading', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+
+  assert.doesNotMatch(componentSource, /--robot-card-action-gallery-height:\s*clamp\(/);
+  assert.match(componentSource, /\.template-action-gallery figure \{[\s\S]*height:\s*var\(--robot-card-gallery-height\)/);
+  assert.match(componentSource, /\.template-action-gallery img \{[\s\S]*max-width:\s*min\(52rem,\s*88vw\)/);
+  assert.match(componentSource, /\.template-section-copy\s*\{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.doesNotMatch(componentSource, /\.template-section-copy--gallery \{[\s\S]*margin-left:\s*0/);
+  assert.match(componentSource, /\.template-section > \.template-section__number,[\s\S]*\.template-section > h2,[\s\S]*\.template-section > \.template-section__lead \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.match(componentSource, /\.template-section > \.template-section__number,[\s\S]*\.template-section > h2,[\s\S]*\.template-section > \.template-section__lead \{[\s\S]*max-width:\s*56rem/);
+  assert.match(componentSource, /@media \(max-width: 39\.9375rem\) \{[\s\S]*\.template-section-copy,[\s\S]*\.template-section > \.template-section__number,[\s\S]*\.template-section > h2,[\s\S]*\.template-section > \.template-section__lead,[\s\S]*\.template-check-list--reference,[\s\S]*\.template-order-list--reference \{[\s\S]*margin-left:\s*0/);
+});
+
+
 test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the latest owner image', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
@@ -221,13 +237,15 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
   assert.match(componentSource, /const robotFinalCta = \{[\s\S]*image: robotFinalCtaImage/);
   assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);
+  assert.ok(componentSource.indexOf('data-block-id="scenarios"') < componentSource.indexOf('data-block-id="pricing"'), 'CTA #1 must sit after scenarios');
+  assert.ok(componentSource.indexOf('data-block-id="pricing"') < componentSource.indexOf('data-block-id="robotInAction"'), 'CTA #1 must sit before robot in action');
   assert.match(componentSource, /\.template-reused-block--gosha-quote \{[\s\S]*margin-bottom:\s*calc\(var\(--robot-card-page-gap\) \* -\.3\)/);
   assert.match(componentSource, /--robot-card-page-gap:\s*clamp\(3\.5rem,\s*6vw,\s*6rem\)/);
   assert.match(componentSource, /gap:\s*var\(--robot-card-page-gap\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta\) \{[\s\S]*padding:\s*clamp\(1\.4rem,\s*3\.5vw,\s*2\.8rem\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta h2\) \{[\s\S]*line-height:\s*1\.3/);
-  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*font-size:\s*var\(--kp-body-size\)/);
-  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*font-weight:\s*var\(--kp-body-weight\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*font-size:\s*calc\(var\(--kp-body-size\) \+ \.125rem\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*font-weight:\s*700/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__title-nowrap\) \{[\s\S]*line-height:\s*var\(--kp-body-line-height\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__copy\) \{[\s\S]*transform:\s*translateY\(-\.35rem\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__actions\) \{[\s\S]*margin-top:\s*1\.45rem/);
@@ -353,9 +371,9 @@ test('KIBER-94 owner feedback fixes block order and removes duplicate short summ
     'data-block-id="includedService"',
     'data-block-id="capabilities"',
     'data-block-id="scenarios"',
+    'data-block-id="pricing"',
     'data-block-id="robotInAction"',
     'data-block-id="goshaCta"',
-    'data-block-id="pricing"',
     'data-block-id="hiddenMachineFacts"',
     'data-block-id="orderFlow"',
     'data-block-id="faq"',
@@ -403,7 +421,7 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /data-slider-prev=\"\[data-drag-slider='robot-action-gallery'\]\"/);
   assert.match(componentSource, /data-slider-next=\"\[data-drag-slider='robot-action-gallery'\]\"/);
   assert.match(componentSource, /--robot-card-gallery-height:\s*clamp\(29\.12rem,\s*47\.6vw,\s*35\.49rem\)/);
-  assert.match(componentSource, /--robot-card-action-gallery-height:\s*clamp\(21rem,\s*33\.6vw,\s*26\.6rem\)/);
+  assert.doesNotMatch(componentSource, /--robot-card-action-gallery-height:\s*clamp\(/);
   assert.match(componentSource, /height:\s*var\(--robot-card-gallery-height\)/);
   assert.match(componentSource, /width:\s*auto/);
   assert.match(componentSource, /object-fit:\s*contain/);
