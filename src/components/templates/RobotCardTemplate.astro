@@ -905,6 +905,24 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       font-size: clamp(2.4rem, 10vw, 3.35rem);
     }
 
+    .template-gallery-nav {
+      display: none;
+    }
+
+    .template-live-gallery__item,
+    .template-action-gallery figure {
+      flex: 0 0 85%;
+      aspect-ratio: 1 / 1;
+      height: auto;
+    }
+
+    .template-live-gallery__item img,
+    .template-action-gallery img {
+      width: 100%;
+      height: 100%;
+      max-width: none;
+    }
+
     .template-live-hero__actions,
     .template-feature-grid,
     .template-scenario-grid,

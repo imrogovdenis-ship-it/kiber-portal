@@ -146,6 +146,23 @@ test('KIBER-94 Unitree G1 order flow matches owner reference with long lead and 
 });
 
 
+test('KIBER-94 robot_card mobile gallery follows supplied mobile reference without arrow controls', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const mobileReference = readFileSync(resolve(root, 'docs/source/reference-mobile-v3.html'), 'utf8');
+
+  assert.match(mobileReference, /Слайдеры: свайп, без стрелок/);
+  assert.match(mobileReference, /\.gallery-slider__item\{flex:0 0 85%;aspect-ratio:1\/1/);
+
+  const mobileMedia = componentSource.match(/@media \(max-width: 39\.9375rem\) \{[\s\S]*?\n  \}/)?.[0] ?? '';
+  assert.match(mobileMedia, /\.template-gallery-nav\s*\{[\s\S]*display:\s*none/);
+  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*flex:\s*0 0 85%/);
+  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*aspect-ratio:\s*1 \/ 1/);
+  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*height:\s*auto/);
+  assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*width:\s*100%/);
+  assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*height:\s*100%/);
+});
+
+
 test('KIBER-94 Unitree G1 CTA #2 uses the owner attached Gosha image without changing CTA #1', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');

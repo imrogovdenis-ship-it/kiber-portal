@@ -9,6 +9,18 @@ const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report
 const checked = [];
 const failures = [];
 const warnings = [];
+const cssCache = new Map();
+
+function readBuiltCssForHtml(html) {
+  const cssHrefs = [...html.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+\.css[^"]*)"/g)].map((match) => match[1].split('?')[0]);
+  const chunks = [];
+  for (const href of cssHrefs) {
+    const cssPath = resolve(root, 'dist', href.replace(/^\//, ''));
+    if (!cssCache.has(cssPath)) cssCache.set(cssPath, existsSync(cssPath) ? readFileSync(cssPath, 'utf8') : '');
+    chunks.push(cssCache.get(cssPath));
+  }
+  return chunks.join('\n');
+}
 
 for (const robot of robots) {
   const htmlPath = join(root, previewDistPath, robot.slug, 'index.html');
@@ -17,6 +29,7 @@ for (const robot of robots) {
     continue;
   }
   const html = readFileSync(htmlPath, 'utf8');
+  const builtCss = readBuiltCssForHtml(html).replace(/\s+/g, '');
   const required = [
     'data-preview-route="robot_card"',
     'data-page-type="robot_card"',
@@ -83,6 +96,9 @@ for (const robot of robots) {
     if (orderFlowLeadLength < 300 || orderFlowLeadLength > 350) failures.push(`${robot.slug}: order flow owner lead length must be 300-350 chars, got ${orderFlowLeadLength}`);
     if (!/template-order-list--reference/.test(orderFlowBlock)) failures.push(`${robot.slug}: order flow owner reference numbered layout missing`);
     if (/template-order-list--wide/.test(orderFlowBlock)) failures.push(`${robot.slug}: order flow must not render old white-card layout`);
+    if (!/\.template-gallery-nav\[[^\]]+\]\{display:none\}/.test(builtCss)) failures.push(`${robot.slug}: mobile gallery must hide arrow controls per supplied mobile reference`);
+    if (!/\.template-live-gallery__item\[[^\]]+\],\.template-action-gallery\[[^\]]+\]figure\[[^\]]+\]\{[^}]*flex:0085%/.test(builtCss)) failures.push(`${robot.slug}: mobile gallery items must be 85% swipe cards per supplied mobile reference`);
+    if (!/\.template-live-gallery__item\[[^\]]+\],\.template-action-gallery\[[^\]]+\]figure\[[^\]]+\]\{[^}]*aspect-ratio:1(?:\/1)?/.test(builtCss)) failures.push(`${robot.slug}: mobile gallery items must be square per supplied mobile reference`);
     if (!/Ключевые возможности Unitree G1 показывают/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capabilities lead missing`);
     if (!/Сценарии использования помогают быстро понять/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenarios lead missing`);
     if (!/Рост и пластика гуманоидного корпуса/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capability card copy missing`);
