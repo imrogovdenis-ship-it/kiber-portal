@@ -99,11 +99,15 @@ const robotFinalCtaImage = {
   src: '/images/kiber-94-preview/gosha-ushanka-cta2.webp',
   alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота',
 };
+const robotQuickCtaImage = {
+  src: '/images/kiber-94-preview/gosha-ushanka-cta1.webp',
+  alt: 'Кибер Гоша в красной ушанке приглашает арендовать Unitree G1',
+};
 const robotQuickCta = {
   ...homeFinalCta,
   title: quickCtaTitle,
   description: '',
-  image: homeFinalCta.image,
+  image: robotQuickCtaImage,
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
   secondaryCta: { label: 'Оставить заявку', href: leadHref },
 };
@@ -731,25 +735,37 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta) {
+    align-items: stretch;
     gap: clamp(1.05rem, 2.8vw, 2.1rem);
     margin-top: 0;
     padding: clamp(1.4rem, 3.5vw, 2.8rem);
   }
 
+  .template-reused-block--quick-cta :global(.home-final-cta h2) {
+    line-height: 1.16;
+  }
+
   .template-reused-block--quick-cta :global(.home-final-cta__copy) {
-    gap: .7rem;
+    align-content: center;
+    gap: .95rem;
+    transform: translateY(-.35rem);
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta__actions) {
-    margin-top: .7rem;
+    margin-top: 1.45rem;
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta__image) {
+    align-self: center;
+    height: clamp(7rem, 15.2vw, 12.1rem);
     min-height: 7rem;
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta__image img) {
-    width: min(9.1rem, 42vw);
+    width: auto !important;
+    height: calc(clamp(7rem, 15.2vw, 12.1rem) * .9) !important;
+    max-width: min(18rem, 42vw);
+    max-height: 90%;
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta p:empty) {

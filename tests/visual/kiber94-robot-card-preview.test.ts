@@ -189,14 +189,14 @@ test('KIBER-94 desktop gallery behavior uses a CSP-safe external script based on
 });
 
 
-test('KIBER-94 Unitree G1 CTA #2 uses the owner attached Gosha image without changing CTA #1', () => {
+test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the latest owner image', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
   assert.match(componentSource, /const robotFinalCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta2\.webp'/);
   assert.match(componentSource, /alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота'/);
   assert.match(componentSource, /image: robotFinalCtaImage/);
-  assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: homeFinalCta\.image/);
+  assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
   assert.match(smoke, /CTA #2 owner image/);
 });
 
@@ -206,14 +206,24 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   const smoke = readFileSync(smokePath, 'utf8');
 
   assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
+  assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1\.webp'/);
+  assert.match(componentSource, /alt: 'Кибер Гоша в красной ушанке приглашает арендовать Unitree G1'/);
+  assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
+  assert.match(componentSource, /const robotFinalCta = \{[\s\S]*image: robotFinalCtaImage/);
   assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);
   assert.match(componentSource, /\.template-reused-block--gosha-quote \{[\s\S]*margin-bottom:\s*calc\(var\(--robot-card-page-gap\) \* -\.3\)/);
   assert.match(componentSource, /--robot-card-page-gap:\s*clamp\(3\.5rem,\s*6vw,\s*6rem\)/);
   assert.match(componentSource, /gap:\s*var\(--robot-card-page-gap\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta\) \{[\s\S]*padding:\s*clamp\(1\.4rem,\s*3\.5vw,\s*2\.8rem\)/);
-  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*min-height:\s*7rem/);
-  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*min\(9\.1rem,\s*42vw\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta h2\) \{[\s\S]*line-height:\s*1\.16/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__copy\) \{[\s\S]*transform:\s*translateY\(-\.35rem\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__actions\) \{[\s\S]*margin-top:\s*1\.45rem/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*align-self:\s*center/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*height:\s*clamp\(7rem,\s*15\.2vw,\s*12\.1rem\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*calc\(clamp\(7rem,\s*15\.2vw,\s*12\.1rem\) \* \.9\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*auto/);
   assert.match(smoke, /compact CTA #1 price/);
+  assert.match(smoke, /CTA #1 owner image/);
 });
 
 

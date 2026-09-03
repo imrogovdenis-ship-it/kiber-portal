@@ -109,6 +109,8 @@ for (const robot of robots) {
     const compactCtaPrice = `Арендуйте робота-гуманоида Unitree G1 для мероприятия ${robot.pricing.display}`;
     if (!pricingBlock.includes(compactCtaPrice)) failures.push(`${robot.slug}: compact CTA #1 price missing or not sourced from pricing.display`);
     if (!/template-reused-block--quick-cta/.test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 class missing`);
+    if (!/\/images\/kiber-94-preview\/gosha-ushanka-cta1\.webp/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image missing`);
+    if (!/Кибер Гоша в красной ушанке приглашает арендовать Unitree G1/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image alt missing`);
   }
   if (/data-block-id="structuredFacts"/.test(html)) failures.push(`${robot.slug}: visible structured facts block must be removed`);
   const finalQuestionsBlock = html.match(/<section[^>]*data-block-id="finalQuestionsCta"[\s\S]*?<\/section>/)?.[0] ?? '';
