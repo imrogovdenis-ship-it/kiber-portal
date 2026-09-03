@@ -1,10 +1,14 @@
 ---
 import type { HomeFinalCtaData } from '../../data/home-live';
-const { title, description, primaryCta, secondaryCta, image } = Astro.props as HomeFinalCtaData;
+type Props = HomeFinalCtaData & { variant?: 'default' | 'robot-card-final' };
+const { title, titleNoWrap, description, primaryCta, secondaryCta, image, variant = 'default' } = Astro.props as Props;
+const titlePrefix = titleNoWrap && title.endsWith(titleNoWrap) ? title.slice(0, -titleNoWrap.length).trimEnd() : title;
 ---
-<section class="home-final-cta" id="social" data-home-block="final-cta" aria-labelledby="home-final-cta-title">
+<section class:list={['home-final-cta', variant === 'robot-card-final' && 'home-final-cta--robot-card-final']} id="social" data-home-block="final-cta" data-cta-variant={variant} aria-labelledby="home-final-cta-title">
   <div class="home-final-cta__copy">
-    <h2 id="home-final-cta-title">{title}</h2>
+    <h2 id="home-final-cta-title">
+      {titleNoWrap ? <>{titlePrefix}<br class="home-final-cta__title-break" /><span class="home-final-cta__title-nowrap">{titleNoWrap}</span></> : title}
+    </h2>
     <p>{description}</p>
     <div class="home-final-cta__actions">
       <a class="home-final-cta__button home-final-cta__button--primary" href={primaryCta.href} data-analytics-event="contact_click" data-analytics-block-id="home-final-cta" data-analytics-source="home_final_cta" data-analytics-placement="primary_cta" data-analytics-slug="global">{primaryCta.label}</a>
@@ -20,6 +24,7 @@ const { title, description, primaryCta, secondaryCta, image } = Astro.props as H
   .home-final-cta__copy { display: grid; gap: 1rem; }
   .home-final-cta h2, .home-final-cta p { margin: 0; }
   .home-final-cta h2 { font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); letter-spacing: 0; }
+  .home-final-cta__title-nowrap { white-space: nowrap; }
   .home-final-cta p { max-width: 42rem; color: color-mix(in srgb, var(--kp-white) 86%, transparent); line-height: var(--kp-body-line-height); }
   .home-final-cta__actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1rem; }
   .home-final-cta__button { display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; border: .0625rem solid var(--kp-white); border-radius: 62.4375rem; padding: .8rem 1.2rem; background: var(--kp-white); color: var(--kp-ink); font-weight: 700; text-decoration: none; }
@@ -27,6 +32,10 @@ const { title, description, primaryCta, secondaryCta, image } = Astro.props as H
   .home-final-cta__image { display: grid; place-items: center; min-height: 10rem; border-radius: 0; background: transparent; }
   .home-final-cta__image img { width: min(13rem, 60vw); height: auto; object-fit: contain; }
   .home-final-cta__button:focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .1875rem; }
+  .home-final-cta--robot-card-final { align-items: stretch; }
+  .home-final-cta--robot-card-final .home-final-cta__image { align-self: stretch; height: 100%; min-height: 10rem; overflow: visible; }
+  .home-final-cta--robot-card-final .home-final-cta__image img { width: auto; height: clamp(17rem, 25vw, 20rem); max-width: 100%; max-height: none; }
+  @media (min-width: 60rem) { .home-final-cta--robot-card-final { box-sizing: border-box; height: clamp(20rem, 26.25vw, 21rem); min-height: clamp(20rem, 26.25vw, 21rem); } .home-final-cta--robot-card-final .home-final-cta__image img { transform: translateY(-3.5rem); } }
   @media (min-width: 60rem) { .home-final-cta { grid-template-columns: minmax(0, .66fr) minmax(12rem, .34fr); } }
   @media (max-width: 39.9375rem) { .home-final-cta { padding: 1.35rem; } .home-final-cta__actions { display: grid; justify-items: start; } }
 </style>

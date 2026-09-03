@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-93",
+  "status": "draft_for_owner_review",
+  "site": "https://www.kiber-portal.ru",
+  "sources": [
+    "owner AI search / LLM visibility brief 2026-09-01",
+    "https://platform.openai.com/docs/bots",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "https://llmstxt.org"
+  ],
+  "policy": {
+    "purpose": "Help search systems and AI agents understand entities, facts, questions, and relationships without relying on hidden keyword fields.",
+    "publicRender": false,
+    "massPageGenerationBlockedUntil": "AI visibility contract is reviewed together with SEO component contract.",
+    "robotsTxtAiCrawlerDecisionRequired": false,
+    "robotsTxtAiCrawlerPolicy": "owner_approved_allow_ai_agents_to_read_and_index"
+  },
+  "entities": {
+    "КИБЕР ПОРТАЛ": {
+      "type": "brand",
+      "description": "Сервис аренды роботов для мероприятий, выставок, презентаций, промо-акций и частных событий.",
+      "source": "owner_approved"
+    },
+    "аренда робота": {
+      "type": "service",
+      "description": "Коммерческая услуга подбора, доставки, настройки и сопровождения робота на мероприятии.",
+      "source": "page_content"
+    },
+    "мероприятие": {
+      "type": "scenario",
+      "description": "Событие, для которого подбирается робот: выставка, презентация, корпоратив, свадьба, промо-акция или шоу.",
+      "source": "page_content"
+    },
+    "Москва": {
+      "type": "location",
+      "description": "Географический маркер для контактов и логистики, если применимо к странице и подтверждено публичными данными.",
+      "source": "owner_approved"
+    },
+    "Agibot X2": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-agibot-x2/.",
+      "source": "page_content",
+      "page": "/robots/arenda-agibot-x2/"
+    },
+    "робота-официанта BellaBot": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-bellabot/.",
+      "source": "page_content",
+      "page": "/robots/arenda-bellabot/"
+    },
+    "робота GlamBot": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-glambot/.",
+      "source": "page_content",
+      "page": "/robots/arenda-glambot/"
+    },
+    "Inchbot L1-W EDU": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-inchbot-l1-w-edu/.",
+      "source": "page_content",
+      "page": "/robots/arenda-inchbot-l1-w-edu/"
+    },
+    "робота-официанта KettyBot": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-kettybot/.",
+      "source": "page_content",
+      "page": "/robots/arenda-kettybot/"
+    },
+    "робота Клипмейкер": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-klipmeiker/.",
+      "source": "page_content",
+      "page": "/robots/arenda-klipmeiker/"
+    },
+    "мини робо-кофейни": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-mini-robo-kofeyni/.",
+      "source": "page_content",
+      "page": "/robots/arenda-mini-robo-kofeyni/"
+    },
+    "Noetix Bumi": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-noetix-bumi/.",
+      "source": "page_content",
+      "page": "/robots/arenda-noetix-bumi/"
+    },
+    "Promobot V4": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-promobot-v4/.",
+      "source": "page_content",
+      "page": "/robots/arenda-promobot-v4/"
+    },
+    "робота-кофейни": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-robo-kofeyni/.",
+      "source": "page_content",
+      "page": "/robots/arenda-robo-kofeyni/"
+    },
+    "робота для игры в шашки": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-roboshashki/.",
+      "source": "page_content",
+      "page": "/robots/arenda-roboshashki/"
+    },
+    "робота-бармена «Робобар»": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-robot-barmen/.",
+      "source": "page_content",
+      "page": "/robots/arenda-robot-barmen/"
+    },
+    "робота Арди": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-robota-ardi/.",
+      "source": "page_content",
+      "page": "/robots/arenda-robota-ardi/"
+    },
+    "большого формата": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-robota-hudozhnika-a4/.",
+      "source": "page_content",
+      "page": "/robots/arenda-robota-hudozhnika-a4/"
+    },
+    "робота София": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-robota-sofiya/.",
+      "source": "page_content",
+      "page": "/robots/arenda-robota-sofiya/"
+    },
+    "модульного робота Tron": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-robota-tron/.",
+      "source": "page_content",
+      "page": "/robots/arenda-robota-tron/"
+    },
+    "робота-шахматиста SenseRobot": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-senserobot/.",
+      "source": "page_content",
+      "page": "/robots/arenda-senserobot/"
+    },
+    "Sketchbot": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-sketchbot/.",
+      "source": "page_content",
+      "page": "/robots/arenda-sketchbot/"
+    },
+    "Unitree G1": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-unitree-g1/.",
+      "source": "page_content",
+      "page": "/robots/arenda-unitree-g1/"
+    },
+    "Unitree Go2": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-unitree-go2/.",
+      "source": "page_content",
+      "page": "/robots/arenda-unitree-go2/"
+    },
+    "Unitree H2": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-unitree-h2/.",
+      "source": "page_content",
+      "page": "/robots/arenda-unitree-h2/"
+    },
+    "Unitree R1": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-unitree-r1/.",
+      "source": "page_content",
+      "page": "/robots/arenda-unitree-r1/"
+    },
+    "интерактивной витрины UV-BOX": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-uv-box/.",
+      "source": "page_content",
+      "page": "/robots/arenda-uv-box/"
+    },
+    "Xiaomi Cyberdog 2": {
+      "type": "robot",
+      "description": "Робот из каталога КИБЕР ПОРТАЛА; SEO-паспорт связан со страницей /robots/arenda-xiaomi-cyberdog-2/.",
+      "source": "page_content",
+      "page": "/robots/arenda-xiaomi-cyberdog-2/"
+    }
+  },
+  "relationships": [
+    {
+      "from": "КИБЕР ПОРТАЛ",
+      "to": "аренда робота",
+      "type": "provides_service"
+    },
+    {
+      "from": "аренда робота",
+      "to": "мероприятие",
+      "type": "serves_scenario"
+    },
+    {
+      "from": "КИБЕР ПОРТАЛ",
+      "to": "Москва",
+      "type": "operates_from_or_serves_when_approved"
+    }
+  ]
+}

@@ -1,26 +1,233 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
+import { homeArticles, homeRobotCardFinalCta } from '../data/home-live';
 import { collectionPageJsonLd } from '../lib/seo';
 
+const articleCards = homeArticles.cards;
+const articlesPageDescription = homeArticles.description;
+const articleIntro = 'В блоге Кибер Гоши собираем практические материалы о том, как выбрать робота под формат мероприятия, чем отличаются гуманоиды, роботы-собаки и сервисные модели, и какие детали важно обсудить до аренды. Этот блок позже адаптируем под SEO: добавим точные запросы, перелинковку и фильтры по сценариям.';
 ---
 
-<BaseLayout title='Блог Кибер Гоши — КИБЕР ПОРТАЛ' description='Блог Кибер Гоши со статьями о роботах для мероприятий, аренде, подготовке площадки и выборе сценария.' noindex={false} jsonLd={collectionPageJsonLd({ title: 'Блог Кибер Гоши — КИБЕР ПОРТАЛ', description: 'Статьи о роботах для мероприятий и аренды.', url: '/articles/' })}>
-  <main class="content-page container" id="main-content" tabindex="-1" data-kiber-task="KIBER-20">
-    <section class="content-page__hero" aria-labelledby="page-title">
-      <p>КИБЕР ПОРТАЛ</p>
+<BaseLayout
+  title="Блог Кибер Гоши — КИБЕР ПОРТАЛ"
+  description="Блог Кибер Гоши со статьями о роботах для мероприятий, аренде, подготовке площадки и выборе сценария."
+  noindex={false}
+  jsonLd={collectionPageJsonLd({ title: 'Блог Кибер Гоши — КИБЕР ПОРТАЛ', description: articlesPageDescription, url: '/articles/' })}
+>
+  <main class="articles-page" id="main-content" tabindex="-1" data-kiber-task="KIBER-91" data-articles-index="filled">
+    <section class="articles-page__hero container" aria-labelledby="page-title">
       <h1 id="page-title">Блог Кибер Гоши</h1>
-      <p>Здесь будут практические статьи о выборе робота, подготовке площадки, сценариях взаимодействия и безопасной аренде.</p>
     </section>
-    <InternalLinks route="/articles/" label="Следующие шаги" />
+
+    <section class="articles-page__intro container" aria-labelledby="articles-intro-title">
+      <div class="articles-page__intro-copy">
+        <p class="articles-page__eyebrow">О разделе</p>
+        <h2 id="articles-intro-title">Все практические статьи о роботах в одном месте</h2>
+        <p>{articleIntro}</p>
+      </div>
+    </section>
+
+    <section class="articles-page__feed container" id="article-feed" aria-label="Статьи Блога Кибер Гоши">
+      <div class="articles-page__grid" data-article-card-count={articleCards.length}>
+        {articleCards.map((card) => (
+          <a class="articles-page__card" href={card.href} aria-label={`Открыть: ${card.title}`} style={`--article-card-image: url('${card.image.src}')`}>
+            <span class="articles-page__image" role="img" aria-label={card.image.alt}></span>
+            <span class="articles-page__body">
+              <strong>{card.title}</strong>
+              <span>{card.description}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="articles-page__cta container" aria-label="Связаться с КИБЕР ПОРТАЛ">
+      <HomeFinalCta {...homeRobotCardFinalCta} variant="robot-card-final" />
+    </section>
+
+    <div class="articles-page__links-hidden" aria-hidden="true">
+      <InternalLinks route="/articles/" label="Внутренняя навигация" />
+    </div>
   </main>
 </BaseLayout>
 
 <style>
-  .content-page { display: grid; gap: var(--kp-section-block); padding-block: var(--kp-section-block); }
-  .content-page__hero { display: grid; gap: var(--kp-card-gap); max-width: 48rem; }
-  .content-page__hero p, .content-page__hero h1 { margin: 0; }
-  .content-page__hero > p:first-child { color: var(--kp-blue); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); text-transform: uppercase; }
-  .content-page__hero h1 { font-family: var(--kp-font-heading); font-size: var(--kp-display-size); line-height: var(--kp-display-line-height); }
-  .content-page__hero > p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  .articles-page {
+    display: grid;
+    gap: clamp(4rem, 7vw, 7rem);
+    padding-block: clamp(5rem, 8vw, 7rem) 4.5rem;
+    overflow-x: clip;
+    background: var(--kp-reference-sky);
+  }
+
+  .articles-page__hero,
+  .articles-page__intro,
+  .articles-page__feed,
+  .articles-page__cta {
+    width: min(100% - (2 * var(--kp-reference-page-gutter)), var(--kp-reference-container));
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  .articles-page__hero {
+    display: grid;
+  }
+
+  .articles-page__hero,
+  .articles-page__intro {
+    max-width: 72rem;
+  }
+
+  .articles-page__hero h1,
+  .articles-page__eyebrow,
+  .articles-page__intro-copy h2,
+  .articles-page__intro-copy p {
+    margin: 0;
+  }
+
+  .articles-page__eyebrow {
+    color: var(--kp-reference-blue);
+    font-size: var(--kp-reference-label-size);
+    font-weight: 700;
+    letter-spacing: .1em;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .articles-page__hero h1 {
+    max-width: 58rem;
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: clamp(3.1rem, 7vw, var(--kp-reference-display-xl));
+    font-weight: 700;
+    line-height: .98;
+    letter-spacing: 0;
+  }
+
+  .articles-page__intro-copy {
+    display: grid;
+    gap: .75rem;
+  }
+
+  .articles-page__intro-copy {
+    max-width: 72rem;
+  }
+
+  .articles-page__intro-copy h2 {
+    color: var(--kp-reference-ink);
+    font-family: var(--kp-font-heading);
+    font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg));
+    font-weight: var(--kp-heading-weight);
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .articles-page__intro-copy p:last-child {
+    max-width: 60rem;
+    color: var(--kp-reference-muted);
+    line-height: 1.65;
+  }
+
+  .articles-page__feed {
+    display: grid;
+    gap: clamp(1.3rem, 3vw, 2.2rem);
+  }
+
+  .articles-page__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 1.35rem);
+  }
+
+  .articles-page__card {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1.35rem;
+    background: var(--kp-white);
+    color: var(--kp-ink);
+    text-decoration: none;
+    box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+
+  .articles-page__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-image: var(--article-card-image);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .articles-page__body {
+    display: grid;
+    gap: .7rem;
+    padding: clamp(1rem, 2.1vw, 1.35rem);
+  }
+
+  .articles-page__body strong {
+    font-family: var(--kp-font-heading);
+    font-size: clamp(1.12rem, 1.8vw, 1.45rem);
+    font-weight: var(--kp-heading-weight);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  .articles-page__body > span {
+    color: var(--kp-muted);
+    font-size: .95rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  .articles-page__card:focus-visible {
+    outline: .1875rem solid var(--kp-orange);
+    outline-offset: .1875rem;
+  }
+
+  .articles-page__cta :global(.home-final-cta) {
+    margin-top: 0;
+  }
+
+  .articles-page__links-hidden {
+    position: absolute;
+    width: .0625rem;
+    height: .0625rem;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  @media (hover: hover) {
+    .articles-page__card:hover {
+      transform: translateY(-.18rem);
+      box-shadow: 0 1.1rem 2.4rem color-mix(in srgb, var(--kp-ink) 12%, transparent);
+    }
+  }
+
+  @media (max-width: 64rem) {
+    .articles-page__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 39.9375rem) {
+    .articles-page {
+      gap: 3.25rem;
+      padding-block: 4.25rem 3.5rem;
+    }
+
+    .articles-page__hero h1 {
+      font-size: clamp(2.6rem, 14vw, 4rem);
+    }
+
+    .articles-page__grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

@@ -45,6 +45,31 @@
       "approvedBy": "Александр Маркин",
       "approvedAt": "2026-08-31T00:00:00Z",
       "approvalScope": "media_use_only_not_production_deploy"
+    },
+    {
+      "id": "home-robot-card-cta2-compact-20260903",
+      "role": "homepage_compilations_articles_robot_card_cta2_derivative",
+      "route": "/,/compilations/,/articles/",
+      "src": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "projectPath": "public/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "source": "optimized AVIF derivative of robot-card CTA2 owner-approved visual /images/kiber-94-preview/gosha-ushanka-cta2.webp, created for homepage performance budget during owner feedback pass on 2026-09-03",
+      "actualDescription": "Кибер Гоша в красной шапке-ушанке сидит на синем CTA-фоне и помогает ответить на вопросы по аренде робота.",
+      "seoAlt": "Кибер Гоша помогает подобрать робота для мероприятия в CTA-блоке КИБЕР ПОРТАЛА",
+      "caption": "Кибер Гоша отвечает на вопросы по аренде роботов.",
+      "rightsStatus": "approved_for_production",
+      "productionApproved": true,
+      "previewUseAllowed": true,
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-09-03T00:00:00Z",
+      "approvalScope": "media_use_only_not_production_deploy",
+      "derivativeOf": "/images/kiber-94-preview/gosha-ushanka-cta2.webp",
+      "optimization": {
+        "format": "avif",
+        "width": 410,
+        "height": 500,
+        "bytes": 10897,
+        "preservesTransparency": true
+      }
     }
   ]
 }

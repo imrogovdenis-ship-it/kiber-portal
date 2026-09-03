@@ -177,38 +177,70 @@ const { eyebrow, title, lead, primary, secondary, image, stats, analytics } = As
 
   @media (max-width: 59.9375rem) {
     .home-hero__card {
-      min-height: auto;
-      flex-direction: column-reverse;
+      min-height: clamp(46rem, 155vw, 62rem);
       align-items: stretch;
+      border-radius: 1.25rem;
     }
     .home-hero__content {
+      display: grid;
       width: 100%;
-      padding: 1.25rem 1rem 1rem;
+      min-height: inherit;
+      grid-template-rows: auto auto auto minmax(2rem, 1fr) auto;
+      gap: 0.95rem;
+      padding: clamp(3.4rem, 12vw, 4.9rem) clamp(1.5rem, 7vw, 2rem) clamp(1.8rem, 7vw, 2.45rem);
+      align-content: start;
     }
-    .home-hero__title { max-width: none; }
+    .home-hero__eyebrow {
+      font-size: 0.72rem;
+    }
+    .home-hero__title {
+      max-width: 11.5ch;
+      font-size: clamp(2.75rem, 12vw, 3.75rem);
+      line-height: 1.02;
+    }
+    .home-hero__subtitle {
+      max-width: 28rem;
+      font-size: clamp(1.05rem, 5.4vw, 1.45rem);
+      line-height: 1.42;
+    }
     .home-hero__actions {
-      flex-direction: column;
-      align-items: flex-start;
+      grid-row: 5;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(0.7rem, 4vw, 1.05rem);
+      width: 100%;
+      margin-top: 0;
+      align-items: center;
     }
     .home-hero__button {
-      width: auto;
-      max-width: 100%;
-      padding-inline: 1.25rem;
+      width: 100%;
+      min-width: 0;
+      min-height: clamp(3.15rem, 13vw, 3.65rem);
+      padding: 0.72rem 0.45rem;
+      border-radius: 999rem;
+      font-size: clamp(0.68rem, 3.25vw, 0.82rem);
+      white-space: nowrap;
     }
     .home-hero__image {
-      position: relative;
+      position: absolute;
+      inset: 0;
       width: 100%;
-      height: calc((100vw - (2 * var(--kp-reference-pad-x))) * 0.5625);
-      max-height: 26rem;
-      aspect-ratio: 16 / 9;
+      height: 100%;
       overflow: hidden;
-      background: var(--kp-reference-white);
+      background: var(--kp-reference-ink-dark);
     }
     .home-hero__image img {
-      object-fit: contain;
-      object-position: center center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 66% center !important;
     }
-    .home-hero__image::after { display: none; }
+    .home-hero__image::after {
+      display: block;
+      background:
+        linear-gradient(180deg, color-mix(in srgb, var(--kp-reference-ink-dark) 16%, transparent) 0%, transparent 42%, color-mix(in srgb, var(--kp-reference-ink-dark) 22%, transparent) 100%),
+        linear-gradient(90deg, color-mix(in srgb, var(--kp-reference-ink-dark) 82%, transparent) 0%, color-mix(in srgb, var(--kp-reference-ink-dark) 48%, transparent) 48%, color-mix(in srgb, var(--kp-reference-ink-dark) 16%, transparent) 100%);
+    }
     .home-hero__stats {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }

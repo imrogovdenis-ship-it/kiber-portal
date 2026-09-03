@@ -1,0 +1,652 @@
+{
+  "issue": "KIBER-91",
+  "generatedAt": "2026-09-01T05:31:36Z",
+  "source": "local preview build with FSVQA-01A compilations follow-up; approved homepage patterns used as design baseline",
+  "routes": [
+    {
+      "name": "home",
+      "path": "/"
+    },
+    {
+      "name": "robot-unitree-g1",
+      "path": "/robots/arenda-unitree-g1/"
+    },
+    {
+      "name": "robot-bellabot",
+      "path": "/robots/arenda-bellabot/"
+    },
+    {
+      "name": "robot-barmen",
+      "path": "/robots/arenda-robot-barmen/"
+    },
+    {
+      "name": "category-humanoids",
+      "path": "/roboty-gumanoidy/"
+    },
+    {
+      "name": "category-dogs",
+      "path": "/roboty-sobaki/"
+    },
+    {
+      "name": "compilations",
+      "path": "/compilations/"
+    },
+    {
+      "name": "articles",
+      "path": "/articles/"
+    },
+    {
+      "name": "news",
+      "path": "/news/"
+    },
+    {
+      "name": "contacts",
+      "path": "/contacts/"
+    },
+    {
+      "name": "lead-request",
+      "path": "/lead/request/?robot=arenda-unitree-g1"
+    },
+    {
+      "name": "lead-thanks",
+      "path": "/lead/thanks/"
+    },
+    {
+      "name": "privacy",
+      "path": "/privacy-policy/"
+    },
+    {
+      "name": "terms",
+      "path": "/terms/"
+    },
+    {
+      "name": "not-found",
+      "path": "/404.html"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "desktop-1440",
+      "width": 1440,
+      "height": 1200
+    }
+  ],
+  "screenshots": [
+    {
+      "routeName": "home",
+      "route": "/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/home-mobile-390.png",
+      "bytes": 1308524,
+      "sha256": "6c241240c875e07e0ad60e01b15468cd138038c372429cde666d2b363e3bc8d1",
+      "imageWidth": 390,
+      "imageHeight": 7865
+    },
+    {
+      "routeName": "robot-unitree-g1",
+      "route": "/robots/arenda-unitree-g1/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-unitree-g1-mobile-390.png",
+      "bytes": 362497,
+      "sha256": "204f1730ec789a31740ecc3c3f561aa664468e8b04c2fd697cde0be147744134",
+      "imageWidth": 390,
+      "imageHeight": 5538
+    },
+    {
+      "routeName": "robot-bellabot",
+      "route": "/robots/arenda-bellabot/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-bellabot-mobile-390.png",
+      "bytes": 373781,
+      "sha256": "37e65b99bd0b82e32e240eb0f244ea71424a54c1ed6345166685c6365045f034",
+      "imageWidth": 390,
+      "imageHeight": 5662
+    },
+    {
+      "routeName": "robot-barmen",
+      "route": "/robots/arenda-robot-barmen/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-barmen-mobile-390.png",
+      "bytes": 366797,
+      "sha256": "4cffdaf81df62f6014f7a1b0edd57a5b70ec22dec93ff360625472852bbd5239",
+      "imageWidth": 390,
+      "imageHeight": 5439
+    },
+    {
+      "routeName": "category-humanoids",
+      "route": "/roboty-gumanoidy/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/category-humanoids-mobile-390.png",
+      "bytes": 354239,
+      "sha256": "f8a5cc5f354af718f4bda114d76aa45cf177c43207aa13196a449e1184942fd6",
+      "imageWidth": 390,
+      "imageHeight": 6336
+    },
+    {
+      "routeName": "category-dogs",
+      "route": "/roboty-sobaki/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/category-dogs-mobile-390.png",
+      "bytes": 349754,
+      "sha256": "1db940824a7132590bb77efe1e28356c0dd2fbd7e5e8e729c6984fb9a6302d4c",
+      "imageWidth": 390,
+      "imageHeight": 5239
+    },
+    {
+      "routeName": "compilations",
+      "route": "/compilations/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-mobile-390.png",
+      "bytes": 755348,
+      "sha256": "bec099931c493056d3c23007046d246c3248ab18be038ef6ab76fecd3aca250a",
+      "imageWidth": 390,
+      "imageHeight": 4929
+    },
+    {
+      "routeName": "articles",
+      "route": "/articles/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/articles-mobile-390.png",
+      "bytes": 69457,
+      "sha256": "b4ec016a556fd4646bbcd8066ae702139215ac565d36a1b535c9b28a2a51b373",
+      "imageWidth": 390,
+      "imageHeight": 1537
+    },
+    {
+      "routeName": "news",
+      "route": "/news/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/news-mobile-390.png",
+      "bytes": 67814,
+      "sha256": "2666bbeed4ff3f6bf43ea28bda8b848598b91b3b1cbe9857a9e5803928cac376",
+      "imageWidth": 390,
+      "imageHeight": 1514
+    },
+    {
+      "routeName": "contacts",
+      "route": "/contacts/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/contacts-mobile-390.png",
+      "bytes": 210689,
+      "sha256": "46d4fcef801872e00c0ae85ac9b061b153201ed0c3830d532d5a7d0beb8d89fe",
+      "imageWidth": 390,
+      "imageHeight": 4002
+    },
+    {
+      "routeName": "lead-request",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/lead-request-mobile-390.png",
+      "bytes": 157560,
+      "sha256": "b7ac89697c7624c435d4c062d803f3ab0269008f3eea44d513b9ec518674acfb",
+      "imageWidth": 390,
+      "imageHeight": 2741
+    },
+    {
+      "routeName": "lead-thanks",
+      "route": "/lead/thanks/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/lead-thanks-mobile-390.png",
+      "bytes": 144293,
+      "sha256": "08a14349f710a65155743c3e89443139881e2fe3bead3becb1871eafc6ca5e08",
+      "imageWidth": 390,
+      "imageHeight": 2659
+    },
+    {
+      "routeName": "privacy",
+      "route": "/privacy-policy/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/privacy-mobile-390.png",
+      "bytes": 610802,
+      "sha256": "c430782c6629720bd698a928211798f02e0ab286652e356ee19bb75044f85f54",
+      "imageWidth": 390,
+      "imageHeight": 9256
+    },
+    {
+      "routeName": "terms",
+      "route": "/terms/",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/terms-mobile-390.png",
+      "bytes": 303331,
+      "sha256": "56d467040a2a2971a24e59284acc58000b3c620bc1e7a98aff3900804b44671c",
+      "imageWidth": 390,
+      "imageHeight": 4511
+    },
+    {
+      "routeName": "not-found",
+      "route": "/404.html",
+      "viewport": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/not-found-mobile-390.png",
+      "bytes": 57148,
+      "sha256": "57070beba719fb4a327110d8fee14d622179ce371e80ddf9dbac4a81e7306709",
+      "imageWidth": 390,
+      "imageHeight": 1285
+    },
+    {
+      "routeName": "home",
+      "route": "/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/home-tablet-768.png",
+      "bytes": 1536348,
+      "sha256": "fbee48e651da5f54ab9a39c9f60b0dcaa63748d387ba710dca08db9f3c82b9ee",
+      "imageWidth": 768,
+      "imageHeight": 6287
+    },
+    {
+      "routeName": "robot-unitree-g1",
+      "route": "/robots/arenda-unitree-g1/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-unitree-g1-tablet-768.png",
+      "bytes": 530202,
+      "sha256": "7f91bbda196414891683adccea3007dc9ecdfbec6ad821265ef32375a4de2d8d",
+      "imageWidth": 768,
+      "imageHeight": 4580
+    },
+    {
+      "routeName": "robot-bellabot",
+      "route": "/robots/arenda-bellabot/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-bellabot-tablet-768.png",
+      "bytes": 535436,
+      "sha256": "4b57fc8a9873d9bef0ca909fc09d654252d4ab9b2d9d74c98a86256373b6b925",
+      "imageWidth": 768,
+      "imageHeight": 4556
+    },
+    {
+      "routeName": "robot-barmen",
+      "route": "/robots/arenda-robot-barmen/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-barmen-tablet-768.png",
+      "bytes": 555555,
+      "sha256": "6b77f59ac4046e802e73a6855f26e1d795303a8b49ab3c892740dae788f4dfe3",
+      "imageWidth": 768,
+      "imageHeight": 4453
+    },
+    {
+      "routeName": "category-humanoids",
+      "route": "/roboty-gumanoidy/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/category-humanoids-tablet-768.png",
+      "bytes": 454588,
+      "sha256": "12a24e8bddd3e242d1bc2c4e49636c5b61a368521039caae377bf5edd53c6c77",
+      "imageWidth": 768,
+      "imageHeight": 4784
+    },
+    {
+      "routeName": "category-dogs",
+      "route": "/roboty-sobaki/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/category-dogs-tablet-768.png",
+      "bytes": 574677,
+      "sha256": "f40fb4f263528f3a9a398abe7854b33604dfaa4c2cd61f65b5e73398a9f9c761",
+      "imageWidth": 768,
+      "imageHeight": 4188
+    },
+    {
+      "routeName": "compilations",
+      "route": "/compilations/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-tablet-768.png",
+      "bytes": 1063443,
+      "sha256": "6d2cf3a5b52d95b345b0807ed74a44faa660ba20b0d8766cde2f4f4539922d42",
+      "imageWidth": 768,
+      "imageHeight": 3820
+    },
+    {
+      "routeName": "articles",
+      "route": "/articles/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/articles-tablet-768.png",
+      "bytes": 74673,
+      "sha256": "92596ca9fcfef8b6833a5557365f402a1bce035e44c61fd19798f0854a346204",
+      "imageWidth": 768,
+      "imageHeight": 1054
+    },
+    {
+      "routeName": "news",
+      "route": "/news/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/news-tablet-768.png",
+      "bytes": 72518,
+      "sha256": "5baccf23ccfcc21b8b9aaf1b90499bc4644830c0eeb3e2bce2ebcaf24314c541",
+      "imageWidth": 768,
+      "imageHeight": 1054
+    },
+    {
+      "routeName": "contacts",
+      "route": "/contacts/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/contacts-tablet-768.png",
+      "bytes": 237016,
+      "sha256": "5c4d79e0c4893b38a6b66d4676ff9004e4f3beaea07cd646bcc0ad52b42d85d2",
+      "imageWidth": 768,
+      "imageHeight": 3326
+    },
+    {
+      "routeName": "lead-request",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/lead-request-tablet-768.png",
+      "bytes": 168383,
+      "sha256": "12aef672752f35b337b259fb6a5cd61e8d83789389ca928f4ec599b872e31795",
+      "imageWidth": 768,
+      "imageHeight": 2121
+    },
+    {
+      "routeName": "lead-thanks",
+      "route": "/lead/thanks/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/lead-thanks-tablet-768.png",
+      "bytes": 166682,
+      "sha256": "51b81d3f2a81aeed2dab101f65e7e506076a366dbe08c510c5baa93a088685e9",
+      "imageWidth": 768,
+      "imageHeight": 2002
+    },
+    {
+      "routeName": "privacy",
+      "route": "/privacy-policy/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/privacy-tablet-768.png",
+      "bytes": 708314,
+      "sha256": "38e5eb6c6a82c7676025f5861db81d95e70f8426a9a4fbdf8eff600add356dab",
+      "imageWidth": 768,
+      "imageHeight": 5693
+    },
+    {
+      "routeName": "terms",
+      "route": "/terms/",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/terms-tablet-768.png",
+      "bytes": 339325,
+      "sha256": "221aee7b866e3e424b611ca75b3c70694d6c3d04961ba91eef92d7de965301e8",
+      "imageWidth": 768,
+      "imageHeight": 2921
+    },
+    {
+      "routeName": "not-found",
+      "route": "/404.html",
+      "viewport": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/not-found-tablet-768.png",
+      "bytes": 61390,
+      "sha256": "0161ed9dd207b81225ff21cf3e435263cd470b31f3c037150c6b9e252e0bf939",
+      "imageWidth": 768,
+      "imageHeight": 1024
+    },
+    {
+      "routeName": "home",
+      "route": "/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/home-desktop-1440.png",
+      "bytes": 2215999,
+      "sha256": "00166c9b4a6aa9caab567f5c3c8bde61b630950ec3a9780685cdaa7d81b01dc3",
+      "imageWidth": 1440,
+      "imageHeight": 5213
+    },
+    {
+      "routeName": "robot-unitree-g1",
+      "route": "/robots/arenda-unitree-g1/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-unitree-g1-desktop-1440.png",
+      "bytes": 497227,
+      "sha256": "e95b882445fbd90fa76931d1b0f33845a728b73049c97631d05c5d9efa73a96c",
+      "imageWidth": 1440,
+      "imageHeight": 3693
+    },
+    {
+      "routeName": "robot-bellabot",
+      "route": "/robots/arenda-bellabot/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-bellabot-desktop-1440.png",
+      "bytes": 510141,
+      "sha256": "dcc3bf50dc532ec6c3f4581cb2d7d48ca6948ac718831c83bca67157efc9a9a7",
+      "imageWidth": 1440,
+      "imageHeight": 3648
+    },
+    {
+      "routeName": "robot-barmen",
+      "route": "/robots/arenda-robot-barmen/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/robot-barmen-desktop-1440.png",
+      "bytes": 527364,
+      "sha256": "c07f5c2fcaaf0d0dc74c1df9bd2808ea711e686d98cd1d01ad8f5e467397c680",
+      "imageWidth": 1440,
+      "imageHeight": 3623
+    },
+    {
+      "routeName": "category-humanoids",
+      "route": "/roboty-gumanoidy/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/category-humanoids-desktop-1440.png",
+      "bytes": 662737,
+      "sha256": "e5a2424bc08508f8c89ae8af6ab982ffaf2f03bdb2216e7031e274843a40d845",
+      "imageWidth": 1440,
+      "imageHeight": 3883
+    },
+    {
+      "routeName": "category-dogs",
+      "route": "/roboty-sobaki/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/category-dogs-desktop-1440.png",
+      "bytes": 746322,
+      "sha256": "73f058b5f97c9cfca1b14224a165ee4501afd9558e2b83def6ce353296b5f79c",
+      "imageWidth": 1440,
+      "imageHeight": 3100
+    },
+    {
+      "routeName": "compilations",
+      "route": "/compilations/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-desktop-1440.png",
+      "bytes": 1191154,
+      "sha256": "4a170c7e36c17ae3776222f8a566bad1f56d3f6cfc96fb3f5e005cf5a26823e5",
+      "imageWidth": 1440,
+      "imageHeight": 3109
+    },
+    {
+      "routeName": "articles",
+      "route": "/articles/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/articles-desktop-1440.png",
+      "bytes": 85394,
+      "sha256": "c366ea14ee13b95beadaa96a3c8a0125899e3476285574bf0e7aed1b04fe92e0",
+      "imageWidth": 1440,
+      "imageHeight": 1200
+    },
+    {
+      "routeName": "news",
+      "route": "/news/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/news-desktop-1440.png",
+      "bytes": 83249,
+      "sha256": "2292845045e77c48c93a1f9fb09510bc0ea833589b58f1ebff1ee567d48ab97f",
+      "imageWidth": 1440,
+      "imageHeight": 1200
+    },
+    {
+      "routeName": "contacts",
+      "route": "/contacts/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/contacts-desktop-1440.png",
+      "bytes": 270287,
+      "sha256": "87dcb4c717ca9057ccddf7890104bf8b80b84566ae244f50eb8ade539c129826",
+      "imageWidth": 1440,
+      "imageHeight": 2355
+    },
+    {
+      "routeName": "lead-request",
+      "route": "/lead/request/?robot=arenda-unitree-g1",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/lead-request-desktop-1440.png",
+      "bytes": 188988,
+      "sha256": "2a279de0ea0d8664a278783627ec3797f5702b445072d45fd02da5be6f018f21",
+      "imageWidth": 1440,
+      "imageHeight": 1552
+    },
+    {
+      "routeName": "lead-thanks",
+      "route": "/lead/thanks/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/lead-thanks-desktop-1440.png",
+      "bytes": 205118,
+      "sha256": "bfdc1dc452baff619030bf43a1b1d5a7b9cd9c02bc5056d883d3ada3c212528c",
+      "imageWidth": 1440,
+      "imageHeight": 1493
+    },
+    {
+      "routeName": "privacy",
+      "route": "/privacy-policy/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/privacy-desktop-1440.png",
+      "bytes": 702445,
+      "sha256": "9fdfc31ac7070a0f8ab7bb8f72b23f4f9f19dce1ce5eb5f7b5842a2ced6d0be5",
+      "imageWidth": 1440,
+      "imageHeight": 5025
+    },
+    {
+      "routeName": "terms",
+      "route": "/terms/",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/terms-desktop-1440.png",
+      "bytes": 339484,
+      "sha256": "7ba4b4dcd4842288c95448f5f9fd69cd7b422a3d1d3e6e552bc842d98206f326",
+      "imageWidth": 1440,
+      "imageHeight": 2534
+    },
+    {
+      "routeName": "not-found",
+      "route": "/404.html",
+      "viewport": "desktop-1440",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/not-found-desktop-1440.png",
+      "bytes": 73249,
+      "sha256": "63d3d6c5da4008403f4375cfc82f07b9cfefe81f68ea96c9e091ce855b8e7474",
+      "imageWidth": 1440,
+      "imageHeight": 1200
+    }
+  ],
+  "contactSheets": [
+    {
+      "viewport": "desktop-1440",
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-desktop-1440.jpg",
+      "bytes": 305028,
+      "sha256": "b3242f5d356b38152ef10bf29fdd38dc0bf47ef63dc926c4c3ad031359d66e07",
+      "imageWidth": 1020,
+      "imageHeight": 2850
+    },
+    {
+      "viewport": "mobile-390",
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-mobile-390.jpg",
+      "bytes": 171300,
+      "sha256": "d2b9ac280a4386284a4aa58634580f8e4fbe3bb6c09eae11704f0375ae0689c4",
+      "imageWidth": 1020,
+      "imageHeight": 2850
+    },
+    {
+      "viewport": "tablet-768",
+      "file": "docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-tablet-768.jpg",
+      "bytes": 258998,
+      "sha256": "bb34c20cfa1c7b384e71eb76e8e6b4298ddf3dc4addd62404579084bc20c0348",
+      "imageWidth": 1020,
+      "imageHeight": 2850
+    }
+  ]
+}

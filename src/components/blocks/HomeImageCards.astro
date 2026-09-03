@@ -29,60 +29,7 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   </div>
 </section>
 
-<script>
-  document.querySelectorAll<HTMLElement>('[data-drag-slider="true"]').forEach((slider) => {
-    let isDown = false;
-    let startX = 0;
-    let startScroll = 0;
-    let moved = 0;
-
-    slider.querySelectorAll('a, img').forEach((item) => {
-      item.setAttribute('draggable', 'false');
-      item.addEventListener('dragstart', (event) => event.preventDefault());
-    });
-
-    const pageX = (event: MouseEvent | TouchEvent) => ('touches' in event ? (event.touches[0]?.pageX ?? startX) : event.pageX);
-
-    const start = (event: MouseEvent | TouchEvent) => {
-      if ('button' in event && event.button !== 0 && event.button !== 2) return;
-      isDown = true;
-      moved = 0;
-      startX = pageX(event);
-      startScroll = slider.scrollLeft;
-      slider.classList.add('is-dragging');
-      event.preventDefault();
-    };
-
-    const move = (event: MouseEvent | TouchEvent) => {
-      if (!isDown) return;
-      const dx = pageX(event) - startX;
-      moved = Math.max(moved, Math.abs(dx));
-      slider.scrollLeft = startScroll - dx;
-      event.preventDefault();
-    };
-
-    const stop = () => {
-      if (!isDown) return;
-      isDown = false;
-      slider.classList.remove('is-dragging');
-    };
-
-    slider.addEventListener('mousedown', start);
-    window.addEventListener('mousemove', move, { passive: false });
-    window.addEventListener('mouseup', stop);
-    slider.addEventListener('touchstart', start, { passive: false });
-    window.addEventListener('touchmove', move, { passive: false });
-    window.addEventListener('touchend', stop);
-    slider.addEventListener('contextmenu', (event) => event.preventDefault());
-    slider.addEventListener('click', (event) => {
-      if (moved > 5) {
-        event.preventDefault();
-        event.stopPropagation();
-        moved = 0;
-      }
-    }, true);
-  });
-</script>
+<script is:inline src="/scripts/home-image-cards-slider.js" defer></script>
 
 <style>
   .home-image-cards { display: grid; gap: clamp(.8rem, 1.4vw, 1.15rem); }
@@ -95,7 +42,7 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   .home-image-cards--article { margin-top: clamp(2rem, 4vw, 3.5rem); }
   .home-image-cards__card { position: relative; display: grid; box-sizing: border-box; width: 100%; min-width: 0; min-height: 23rem; overflow: hidden; border-radius: 1.25rem; background: var(--kp-surface); color: var(--kp-white); text-decoration: none; isolation: isolate; }
   .home-image-cards__card::before { position: absolute; inset: 0; z-index: 0; background-image: var(--home-card-image); background-position: 58% center; background-size: cover; transition: transform .2s ease; content: ''; }
-  .home-image-cards__card::after { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--kp-ink) 30%, transparent) 0%, color-mix(in srgb, var(--kp-ink) 12%, transparent) 24%, transparent 52%, transparent 100%); content: ''; }
+  .home-image-cards__card::after { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, color-mix(in srgb, var(--kp-ink) 45%, transparent) 0%, color-mix(in srgb, var(--kp-ink) 18%, transparent) 24%, transparent 52%, transparent 100%); content: ''; }
   .home-image-cards__body { position: relative; z-index: 2; display: grid; box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0; align-content: end; gap: .65rem; padding: 1.1rem; }
   .home-image-cards__body strong { font-family: var(--kp-font-heading); font-size: clamp(1.15rem, 1.8vw, 1.55rem); line-height: 1.05; }
   .home-image-cards__body span { color: color-mix(in srgb, var(--kp-white) 86%, transparent); font-size: .875rem; line-height: 1.35; }

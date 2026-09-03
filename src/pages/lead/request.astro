@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { siteConfig } from '../../config/site';
+import { webPageJsonLd } from '../../lib/seo';
 
 const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
 const leadFormEnabled = import.meta.env.PUBLIC_LEAD_FORM_ENABLED === 'true';
@@ -39,6 +40,7 @@ const contactChannels = [
     { name: 'Главная', url: '/' },
     { name: 'Заявка', url: '/lead/request/' },
   ]}
+  jsonLd={webPageJsonLd({ title: 'Заявка на подбор робота', description: 'Короткая заявка на подбор робота для мероприятия.', url: '/lead/request/' })}
 >
   <main
     class="lead-request container"

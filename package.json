@@ -42,14 +42,20 @@
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
-    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run test:content-acceptance && npm run test:responsive-visual-qa && npm run test:reference-visual-layer && npm run test:lead-capability && npm run test:api-leads && npm run test:media-rights && npm run test:media-rights-review-package && npm run test:approved-media-rendering && npm run test:media-git-hygiene && npm run test:media-storage-policy && npm run test:content-package-workflow && npm run test:production-approval-gates && npm run test:readiness-crawl && npm run test:kiber-65-readiness && npm run test:contact-lead-visual && npm run test:contact-lead-visual-pass3 && npm run test:production-go-no-go && npm run ci:baseline",
+    "ci": "npm run verify && npm run test:visual-regression && npm run build:production && npm run test:performance && npm run test:routes && npm run test:analytics-events && npm run test:semantic-core && npm run test:review-notes && npm run test:internal-links && npm run test:seo-metadata && npm run test:page-seo-components && npm run test:page-type-intent-contract && npm run test:kiber94-page-templates && npm run test:internal-link-rendering && npm run test:robotpage-24 && npm run test:content-acceptance && npm run test:responsive-visual-qa && npm run test:reference-visual-layer && npm run test:lead-capability && npm run test:api-leads && npm run test:media-rights && npm run test:media-rights-review-package && npm run test:approved-media-rendering && npm run test:media-git-hygiene && npm run test:media-storage-policy && npm run test:content-package-workflow && npm run test:production-approval-gates && npm run test:readiness-crawl && npm run test:kiber-65-readiness && npm run test:contact-lead-visual && npm run test:contact-lead-visual-pass3 && npm run test:production-go-no-go && npm run ci:baseline && npm run test:full-site-visual-qa && npm run test:kinescope-video-contract",
     "test:media-rights-review-package": "node scripts/media-rights-review-package-smoke.mjs",
     "test:approved-media-rendering": "node scripts/approved-media-rendering-smoke.mjs",
     "test:media-git-hygiene": "node scripts/media-git-hygiene-smoke.mjs",
     "test:contact-lead-visual-pass3": "node scripts/contact-lead-visual-pass3-smoke.mjs",
     "capture:contact-lead-visual-pass3b": "node scripts/capture-contact-lead-visual-pass3b.mjs",
     "test:media-storage-policy": "node scripts/media-storage-policy-smoke.mjs",
-    "test:kiber-65-readiness": "node scripts/kiber-65-readiness-matrix-smoke.mjs"
+    "test:kiber-65-readiness": "node scripts/kiber-65-readiness-matrix-smoke.mjs",
+    "test:full-site-visual-qa": "node scripts/full-site-visual-qa-smoke.mjs",
+    "test:kinescope-video-contract": "node scripts/kinescope-video-contract-smoke.mjs",
+    "test:page-seo-components": "python3 scripts/audit_page_seo_components.py",
+    "test:page-type-intent-contract": "node --import tsx --test tests/visual/page-seo-components-contract.test.ts",
+    "test:kiber94-page-templates": "node scripts/kiber94-page-template-contract-smoke.mjs",
+    "test:kiber94-robot-card-preview": "node scripts/kiber94-robot-card-preview-smoke.mjs"
   },
   "dependencies": {
     "astro": "7.2.7",

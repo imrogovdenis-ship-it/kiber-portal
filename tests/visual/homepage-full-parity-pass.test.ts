@@ -16,7 +16,7 @@ test('homepage renders the original full-page block order through Astro componen
   assert.match(page, /import HomeImageCards/);
   assert.match(page, /import HomeFaqBlock/);
   assert.match(page, /import HomeFinalCta/);
-  assert.match(page, /<HomeHero[\s\S]*<HomeGoshaQuote[\s\S]*<HomeImageCards id="compilations"[\s\S]*id="catalog"[\s\S]*<HomeImageCards id="articles"[\s\S]*<HomeFaqBlock[\s\S]*<HomeFinalCta/s);
+  assert.match(page, /<HomeHero[\s\S]*<HomeGoshaQuote[\s\S]*<HomeImageCards id="compilations"[\s\S]*id="catalog"[\s\S]*<HomeImageCards id="articles"[\s\S]*<HomeFaqBlock[\s\S]*<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/s);
   assert.match(page, /data-home-parity-pass="full-homepage-lower-blocks"/);
   assert.match(data, /routeFallbacks/);
   assert.doesNotMatch(page, /site-export\/images/);
@@ -48,6 +48,7 @@ test('home lower blocks use original homepage copy and avoid missing public rout
   }
   assert.match(data, /export const homeFaq/);
   assert.match(data, /export const homeFinalCta/);
+  assert.match(data, /export const homeRobotCardFinalCta/);
 });
 
 test('homepage full parity media is optimized runtime WebP rather than review-only originals', async () => {
@@ -96,27 +97,45 @@ test('homepage owner feedback pass keeps heading style consistent and removes ex
   assert.match(data, /Менеджер КИБЕР ПОРТАЛА ответит и подберет роботов по вашему бюджету и дате/);
 });
 
+test('homepage mobile hero matches owner phone feedback: full-cover image and one-row buttons', async () => {
+  const hero = await read('src/components/blocks/HomeHero.astro');
+
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__card \{[\s\S]*?min-height:\s*clamp\(46rem, 155vw, 62rem\)/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__content \{[\s\S]*?grid-template-rows:\s*auto auto auto minmax\(2rem, 1fr\) auto/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__content \{[\s\S]*?padding:\s*clamp\(3\.4rem, 12vw, 4\.9rem\)/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__actions \{[\s\S]*?grid-template-columns:\s*repeat\(2, minmax\(0, 1fr\)\)/s);
+  assert.match(hero, /font-size:\s*clamp\(0\.68rem, 3\.25vw, 0\.82rem\)/);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__image \{[\s\S]*?position:\s*absolute;[\s\S]*?inset:\s*0;[\s\S]*?width:\s*100%;[\s\S]*?height:\s*100%/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?\.home-hero__image img \{[\s\S]*?object-fit:\s*cover/s);
+  assert.match(hero, /object-position:\s*66% center !important/);
+  assert.doesNotMatch(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?flex-direction:\s*column-reverse/s);
+  assert.doesNotMatch(hero, /@media \(max-width: 59\.9375rem\) \{[\s\S]*?object-fit:\s*contain/s);
+});
+
 test('homepage owner feedback pass matches requested cards FAQ and CTA behavior', async () => {
-  const [imageCards, faq, cta] = await Promise.all([
+  const [imageCards, imageCardsScript, faq, cta] = await Promise.all([
     read('src/components/blocks/HomeImageCards.astro'),
+    read('public/scripts/home-image-cards-slider.js'),
     read('src/components/blocks/HomeFaqBlock.astro'),
     read('src/components/blocks/HomeFinalCta.astro'),
   ]);
 
   assert.match(imageCards, /data-drag-slider=\{variant === 'overlay' \? 'true' : undefined\}/);
   assert.match(imageCards, /flex:\s*0 0 23rem; width:\s*23rem; height:\s*23rem; min-height:\s*23rem/);
-  assert.match(imageCards, /const dx = pageX\(event\) - startX/);
-  assert.match(imageCards, /slider\.scrollLeft = startScroll - dx/);
-  assert.match(imageCards, /addEventListener\('mousedown', start\)/);
-  assert.match(imageCards, /window\.addEventListener\('mousemove', move, \{ passive: false \}\)/);
-  assert.match(imageCards, /addEventListener\('touchstart', start, \{ passive: false \}\)/);
-  assert.match(imageCards, /window\.addEventListener\('touchmove', move, \{ passive: false \}\)/);
-  assert.match(imageCards, /event\.preventDefault\(\);\n\s*\};\n\n\s*const move/s);
+  assert.match(imageCards, /<script is:inline src="\/scripts\/home-image-cards-slider\.js" defer><\/script>/);
+  assert.match(imageCardsScript, /const dx = pageX\(event, startX\) - startX/);
+  assert.match(imageCardsScript, /slider\.scrollLeft = startScroll - dx/);
+  assert.match(imageCardsScript, /addEventListener\('mousedown', start\)/);
+  assert.match(imageCardsScript, /window\.addEventListener\('mousemove', move, \{ passive: false \}\)/);
+  assert.match(imageCardsScript, /addEventListener\('touchstart', start, \{ passive: false \}\)/);
+  assert.match(imageCardsScript, /window\.addEventListener\('touchmove', move, \{ passive: false \}\)/);
+  assert.match(imageCardsScript, /event\.preventDefault\(\);\n\s*\};\n\n\s*const move/s);
   assert.match(imageCards, /scrollbar-width:\s*none/);
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
   assert.match(imageCards, /variant === 'overlay' && <em>/);
   assert.doesNotMatch(imageCards, /'Читать'/);
-  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 30%, transparent\) 0%/);
+  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 45%, transparent\) 0%/);
+  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 18%, transparent\) 24%/);
   assert.match(imageCards, /transparent 52%, transparent 100%/);
   assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body\s*\{[^}]*padding:\s*1\.96rem 1\.4rem 1\.4rem 1\.96rem/s);
   assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body\s*\{[^}]*grid-template-rows:\s*auto auto minmax\(0, 1fr\) auto;[^}]*align-content:\s*stretch/s);
@@ -133,6 +152,9 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(faq, /summary::-webkit-details-marker\s*\{\s*display:\s*none/);
   assert.match(faq, /summary::before, \.home-faq__item summary::after/);
   assert.match(cta, /\.home-final-cta\s*\{[^}]*margin-top:\s*clamp\(2rem, 4vw, 3\.5rem\)/s);
+  assert.match(cta, /data-cta-variant=\{variant\}/);
+  assert.match(cta, /home-final-cta--robot-card-final/);
+  assert.match(cta, /height:\s*clamp\(17rem, 25vw, 20rem\)/);
   assert.match(cta, /margin-top:\s*1rem/);
   assert.match(cta, /background:\s*transparent/);
 });

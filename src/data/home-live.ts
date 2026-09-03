@@ -6,7 +6,14 @@ export type HomeGoshaData = { title: string; subtitle: string; text: string; ima
 export type HomeCard = { title: string; description: string; href: string; cta?: string; image: HomeImage };
 export type HomeCardsBlock = { title: string; description: string; cards: HomeCard[] };
 export type HomeFaqData = { title: string; items: { question: string; answer: string }[] };
-export type HomeFinalCtaData = { title: string; description: string; primaryCta: HomeLink; secondaryCta: HomeLink; image: HomeImage };
+export type HomeFinalCtaData = {
+  title: string;
+  titleNoWrap?: string;
+  description: string;
+  primaryCta: HomeLink;
+  secondaryCta: HomeLink;
+  image: HomeImage;
+};
 
 const imageMap: Record<string, string> = {
   '/images/tild3632-3236-4238-b335-623531393036__hi.png': '/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp',
@@ -72,4 +79,16 @@ export const homeFinalCta: HomeFinalCtaData = {
   primaryCta: { label: source.finalCta.primaryCta.label, href: '/contacts/' },
   secondaryCta: { label: source.finalCta.secondaryCta.label, href: '/#catalog' },
   image: image(source.finalCta.image),
+};
+
+export const homeRobotCardFinalCta: HomeFinalCtaData = {
+  ...homeFinalCta,
+  title: 'Остались вопросы?',
+  description: 'Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, какой робот подойдёт под площадку, аудиторию, тайминг и формат вашего события.',
+  primaryCta: { label: 'Написать нам', href: '/contacts/' },
+  secondaryCta: { label: 'Оставить заявку', href: '/lead/request/' },
+  image: {
+    src: '/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif',
+    alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота',
+  },
 };

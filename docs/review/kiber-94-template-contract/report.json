@@ -1,0 +1,32 @@
+{
+  "issue": "KIBER-94",
+  "status": "passed",
+  "checked": [
+    {
+      "pageType": "robot_card",
+      "component": "src/components/templates/RobotCardTemplate.astro",
+      "publicBlocks": 16,
+      "reviewOnlyBlocks": 6
+    },
+    {
+      "pageType": "article_detail",
+      "component": "src/components/templates/ArticleDetailTemplate.astro",
+      "publicBlocks": 6,
+      "reviewOnlyBlocks": 7
+    },
+    {
+      "pageType": "compilation",
+      "component": "src/components/templates/CompilationTemplate.astro",
+      "publicBlocks": 9,
+      "reviewOnlyBlocks": 6
+    }
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "massPageGeneration": false
+  }
+}

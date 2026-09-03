@@ -1,0 +1,35 @@
+---
+import type { ArticleDetailTemplateData } from '../../lib/page-type-templates';
+
+const { template } = Astro.props as { template: ArticleDetailTemplateData };
+const relatedBlocks = template.bodyBlocks.filter((block) => block.id === 'relatedArticles');
+const contentBlocks = template.bodyBlocks.filter((block) => block.id !== 'relatedArticles');
+---
+
+<article class="page-template page-template--article" data-kiber-task="KIBER-94" data-page-type="article_detail" data-article-archetype={template.archetype}>
+  <header class="template-hero" data-block-id="hero">
+    <p class="template-eyebrow">Блог Кибер Гоши</p>
+    <h1>{template.seo.h1}</h1>
+    <p>{template.hero.text}</p>
+    <p class="template-ai-summary" data-block-id="intro">{template.aiSummary}</p>
+  </header>
+
+  <div class="template-body" data-block-id="bodySections">
+    {contentBlocks.map((block) => <section data-source-status={block.sourceStatus}><h2>{block.title}</h2><p>{block.text}</p>{block.items.length > 0 && <ul>{block.items.map((item) => <li>{item}</li>)}</ul>}</section>)}
+  </div>
+
+  <aside class="template-gosha" data-block-id="goshaCta">
+    <h2>Кибер Гоша подсказывает</h2>
+    <p>{template.cta.note ?? 'Если статья помогла выбрать сценарий, менеджер КИБЕР ПОРТАЛ уточнит модель, площадку и бюджет.'}</p>
+    <a class="template-button" href={template.cta.href}>{template.cta.label}</a>
+  </aside>
+
+  <section class="template-section" data-block-id="faq">
+    <h2>Вопросы и ответы</h2>
+    {template.faq.map((item) => <details open><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+  </section>
+
+  <nav class="template-related" data-block-id="relatedLinks" aria-label="Читайте также">
+    {relatedBlocks.map((block) => <a href={template.cta.href}>{block.title ?? block.text}</a>)}
+  </nav>
+</article>
