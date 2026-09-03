@@ -36,6 +36,7 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
 const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
+const quickCtaNoWrap = template.robot.priceDisplay;
 const leadHref = `/lead/request/?robot=${template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name}&source=kiber94-preview`;
 
 const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
@@ -106,6 +107,7 @@ const robotQuickCtaImage = {
 const robotQuickCta = {
   ...homeFinalCta,
   title: quickCtaTitle,
+  titleNoWrap: quickCtaNoWrap,
   description: '',
   image: robotQuickCtaImage,
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
@@ -759,13 +761,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     align-self: center;
     height: clamp(7rem, 15.2vw, 12.1rem);
     min-height: 7rem;
+    overflow: visible;
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta__image img) {
     width: auto !important;
-    height: calc(clamp(7rem, 15.2vw, 12.1rem) * .9) !important;
-    max-width: min(18rem, 42vw);
-    max-height: 90%;
+    height: clamp(14rem, 20vw, 15.95rem) !important;
+    max-width: 100%;
+    max-height: none;
+    transform: translateY(-1.15rem);
   }
 
   .template-reused-block--quick-cta :global(.home-final-cta p:empty) {
@@ -841,6 +845,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       width: 100%;
       height: 100%;
       max-width: none;
+    }
+
+    .template-reused-block--quick-cta :global(.home-final-cta__image) {
+      height: clamp(11rem, 55vw, 13.5rem);
+    }
+
+    .template-reused-block--quick-cta :global(.home-final-cta__image img) {
+      height: 90% !important;
+      transform: none;
     }
 
     .template-live-hero__actions,

@@ -6,7 +6,14 @@ export type HomeGoshaData = { title: string; subtitle: string; text: string; ima
 export type HomeCard = { title: string; description: string; href: string; cta?: string; image: HomeImage };
 export type HomeCardsBlock = { title: string; description: string; cards: HomeCard[] };
 export type HomeFaqData = { title: string; items: { question: string; answer: string }[] };
-export type HomeFinalCtaData = { title: string; description: string; primaryCta: HomeLink; secondaryCta: HomeLink; image: HomeImage };
+export type HomeFinalCtaData = {
+  title: string;
+  titleNoWrap?: string;
+  description: string;
+  primaryCta: HomeLink;
+  secondaryCta: HomeLink;
+  image: HomeImage;
+};
 
 const imageMap: Record<string, string> = {
   '/images/tild3632-3236-4238-b335-623531393036__hi.png': '/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp',

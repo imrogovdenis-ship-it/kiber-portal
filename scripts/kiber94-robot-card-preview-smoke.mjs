@@ -12,6 +12,10 @@ const failures = [];
 const warnings = [];
 const cssCache = new Map();
 
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
 function readBuiltCssForHtml(html) {
   const cssHrefs = [...html.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+\.css[^"]*)"/g)].map((match) => match[1].split('?')[0]);
   const chunks = [];
@@ -106,8 +110,9 @@ for (const robot of robots) {
     if (!/Рост и пластика гуманоидного корпуса/.test(capabilitiesBlock)) failures.push(`${robot.slug}: expanded capability card copy missing`);
     if (!/Интерактивная фотозона превращает Unitree G1 в героя кадров/.test(scenariosBlock)) failures.push(`${robot.slug}: expanded scenario card copy missing`);
     const pricingBlock = html.match(/<section[^>]*data-block-id="pricing"[\s\S]*?<\/section>/)?.[0] ?? '';
-    const compactCtaPrice = `Арендуйте робота-гуманоида Unitree G1 для мероприятия ${robot.pricing.display}`;
-    if (!pricingBlock.includes(compactCtaPrice)) failures.push(`${robot.slug}: compact CTA #1 price missing or not sourced from pricing.display`);
+    const compactCtaPrefix = 'Арендуйте робота-гуманоида Unitree G1 для мероприятия';
+    if (!pricingBlock.includes(compactCtaPrefix)) failures.push(`${robot.slug}: compact CTA #1 prefix missing`);
+    if (!new RegExp(`<span class="home-final-cta__title-nowrap"[^>]*>${escapeRegExp(robot.pricing.display)}</span>`).test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 price must stay unbroken on one line`);
     if (!/template-reused-block--quick-cta/.test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 class missing`);
     if (!/\/images\/kiber-94-preview\/gosha-ushanka-cta1\.webp/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image missing`);
     if (!/Кибер Гоша в красной ушанке приглашает арендовать Unitree G1/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image alt missing`);

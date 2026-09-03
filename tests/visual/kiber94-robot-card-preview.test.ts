@@ -206,6 +206,8 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   const smoke = readFileSync(smokePath, 'utf8');
 
   assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
+  assert.match(componentSource, /const quickCtaNoWrap = template\.robot\.priceDisplay/);
+  assert.match(componentSource, /titleNoWrap: quickCtaNoWrap/);
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1\.webp'/);
   assert.match(componentSource, /alt: 'Кибер Гоша в красной ушанке приглашает арендовать Unitree G1'/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
@@ -220,9 +222,12 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__actions\) \{[\s\S]*margin-top:\s*1\.45rem/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*align-self:\s*center/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*height:\s*clamp\(7rem,\s*15\.2vw,\s*12\.1rem\)/);
-  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*calc\(clamp\(7rem,\s*15\.2vw,\s*12\.1rem\) \* \.9\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image\) \{[\s\S]*overflow:\s*visible/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(14rem,\s*20vw,\s*15\.95rem\)/);
+  assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*transform:\s*translateY\(-1\.15rem\)/);
   assert.match(componentSource, /\.template-reused-block--quick-cta :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*auto/);
-  assert.match(smoke, /compact CTA #1 price/);
+  assert.match(smoke, /compact CTA #1 price must stay unbroken on one line/);
+  assert.match(smoke, /home-final-cta__title-nowrap/);
   assert.match(smoke, /CTA #1 owner image/);
 });
 
