@@ -12,6 +12,8 @@ const robotGalleryScriptPath = resolve(root, 'public/scripts/robot-card-gallery.
 const packagePath = resolve(root, 'package.json');
 const reportPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/report.json');
 const structureContractPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md');
+const designStructureApprovalPath = resolve(root, 'data/review/kiber-94-robot-card-design-structure-approval.json');
+const designStructureApprovalDocPath = resolve(root, 'docs/review/kiber-94-robot-card-preview/design-structure-approval-2026-09-03.md');
 
 function readJson(path: string) {
   return JSON.parse(readFileSync(path, 'utf8'));
@@ -277,14 +279,41 @@ test('KIBER-94 preview smoke is wired but keeps production and public routes unt
   assert.doesNotMatch(pkg.scripts.ci, /test:kiber94-robot-card-preview/, 'preview-rendered smoke should not run in production CI before build:preview');
 });
 
-test('KIBER-94 records owner approval only for robot_card structure and data mapping', () => {
+test('KIBER-94 records owner approval for robot_card design and structure without production-side approvals', () => {
   const report = readJson(reportPath);
-  assert.equal(report.ownerApproval.scope, 'structure_and_data_mapping_only');
+  const approval = readJson(designStructureApprovalPath);
+  const approvalDoc = readFileSync(designStructureApprovalDocPath, 'utf8');
+
+  assert.equal(existsSync(designStructureApprovalPath), true, 'machine-readable owner approval record is required');
+  assert.equal(existsSync(designStructureApprovalDocPath), true, 'human-readable owner approval note is required');
+  assert.equal(report.ownerApproval.scope, 'robot_card_design_and_structure');
   assert.equal(report.ownerApproval.status, 'approved');
-  assert.equal(report.ownerApproval.quote, 'Вроде бы все верно.');
-  assert.equal(report.ownerApproval.designApproval, false);
+  assert.equal(report.ownerApproval.quote, 'Ну все, дизайн и структуру карточки робота утверждаем. Сделаем все необходимые записи, зафиксируем информацию');
+  assert.equal(report.ownerApproval.approvedBy, 'Александр Маркин');
+  assert.equal(report.ownerApproval.designApproval, true);
+  assert.equal(report.ownerApproval.structureApproval, true);
   assert.equal(report.ownerApproval.publicRouteReplacementApproval, false);
   assert.equal(report.ownerApproval.productionApproval, false);
+  assert.equal(report.ownerApproval.mergeApproval, false);
+  assert.equal(report.ownerApproval.dnsApproval, false);
+  assert.equal(report.ownerApproval.secretsApproval, false);
+  assert.equal(report.ownerApproval.analyticsApproval, false);
+  assert.equal(report.ownerApproval.liveLeadRoutingApproval, false);
+
+  assert.equal(approval.status, 'approved_by_owner');
+  assert.equal(approval.scope, 'robot_card_design_and_structure');
+  assert.equal(approval.approvedCommit, 'a24d66646ef6160eae19e17defadea695c798a8c');
+  assert.equal(approval.safety.productionDeployChanged, false);
+  assert.equal(approval.safety.dnsChanged, false);
+  assert.equal(approval.safety.secretsChanged, false);
+  assert.equal(approval.safety.analyticsProviderChanged, false);
+  assert.equal(approval.safety.liveLeadRoutingChanged, false);
+  assert.ok(approval.notApprovedByThisRecord.includes('PR merge'));
+  assert.ok(approval.notApprovedByThisRecord.includes('production deploy'));
+  assert.match(approval.approvedContract.headingSemantics, /Hero title is H1/);
+  assert.match(approval.approvedContract.capabilities, /robot-capability-images\.source\.json/);
+  assert.match(approvalDoc, /design and structure approval/);
+  assert.match(approvalDoc, /does not\*\* approve/);
 });
 
 test('KIBER-94 robot_card preview has an owner-review visual layout layer', () => {
@@ -336,6 +365,9 @@ test('KIBER-94 preview route exposes SEO/AI schemas required for visible robot_c
 test('KIBER-94 documents the approved-draft robot_card structure before rewriting generation skills', () => {
   assert.equal(existsSync(structureContractPath), true, 'robot-card structure contract must exist');
   const doc = readFileSync(structureContractPath, 'utf8');
+  assert.match(doc, /approved_by_owner_for_robot_card_design_and_structure/);
+  assert.match(doc, /Ну все, дизайн и структуру карточки робота утверждаем/);
+  assert.match(doc, /Hero title uses H1; main named content blocks use H2/);
   for (const phrase of [
     'Hero',
     'Short visible AI summary',

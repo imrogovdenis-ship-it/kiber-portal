@@ -1,6 +1,12 @@
 # KIBER-94 robot_card structure contract draft
 
-Status: **draft_for_owner_review**. Preview-only. Updated after Alexander's block-order feedback. This document fixes the robot-card generation structure before rewriting Claude/agent skills and before any public route replacement.
+Status: **approved_by_owner_for_robot_card_design_and_structure**. Preview-only. Updated after Alexander's 2026-09-03 approval. This document fixes the approved robot-card generation structure before rewriting Claude/agent skills and before any public route replacement.
+
+Owner approval quote:
+
+> Ну все, дизайн и структуру карточки робота утверждаем. Сделаем все необходимые записи, зафиксируем информацию
+
+Approval boundary: this approves the `robot_card` design and structure baseline only. It does not approve PR merge, public route replacement, production deploy, DNS, secrets, analytics or live lead routing.
 
 ## Goal
 
@@ -103,6 +109,7 @@ This order follows owner feedback and is strict for future generation. Visual/de
 - `BreadcrumbList` JSON-LD and visible breadcrumbs where route context allows it.
 - `FAQPage` JSON-LD when FAQ is visible.
 - One H1 only.
+- Hero title uses H1; main named content blocks use H2.
 - Title/description/canonical from page passport/source-of-truth.
 - One visible AI summary or equivalent extractable block.
 - Internal links to contacts/request, Blog and catalog.

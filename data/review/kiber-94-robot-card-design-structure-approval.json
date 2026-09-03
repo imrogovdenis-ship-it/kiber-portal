@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-94",
+  "pageType": "robot_card",
+  "approvedBy": "Александр Маркин",
+  "approvedDate": "2026-09-03",
+  "source": "Telegram DM with Александр Маркин",
+  "ownerQuote": "Ну все, дизайн и структуру карточки робота утверждаем. Сделаем все необходимые записи, зафиксируем информацию",
+  "status": "approved_by_owner",
+  "scope": "robot_card_design_and_structure",
+  "approvedPreviewRoute": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+  "approvedStagingUrl": "https://alex-kiber-staging.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-unitree-g1/",
+  "approvedCommit": "a24d66646ef6160eae19e17defadea695c798a8c",
+  "approvedImage": "alex-kiber-staging:sha-a24d666",
+  "evidence": {
+    "latestOwnerFeedback": "docs/review/kiber-94-robot-card-preview/latest-owner-feedback-2026-09-03.md",
+    "responsiveManifest": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/manifest.json",
+    "contactSheet": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-contact-sheet.jpg",
+    "report": "docs/review/kiber-94-robot-card-preview/report.json",
+    "structureContract": "docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md",
+    "pr": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/70",
+    "prEvidenceComments": [
+      "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/70#issuecomment-5529717415",
+      "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/70#issuecomment-5529789547"
+    ]
+  },
+  "approvedContract": {
+    "h1Pattern": "Аренда <тип робота> <модель>",
+    "headingSemantics": "Hero title is H1; main named content blocks are H2.",
+    "hero": "dark-gray article-style underlay, H1 and price stable, robot catalog image right, centered eyebrow and CTA placement",
+    "aiSummary": "one short visible bold summary block after Hero, no duplicate intro",
+    "galleries": "main appearance gallery and robot-in-action gallery use real approved media and mouse-drag horizontal sliders",
+    "capabilities": "uses dedicated original capability image registry data/models/robot-capability-images.source.json, separate from galleries",
+    "scenarios": "white scenario cards with approved catalog-like hover animation",
+    "includedService": "FAQ-like side insets, transparent two-column checklist, blue circle check icons, 90-110 char owner-expanded phrases",
+    "orderFlow": "FAQ-like side insets, transparent two-column numbered list, 90-110 char owner-expanded phrases",
+    "faq": "HomeFaqBlock accordion, answers closed by default",
+    "blog": "Blog Kiber Gosha section personalized by robot",
+    "relatedCatalog": "related robot catalog at page end, title Вас также могут заинтересовать",
+    "removed": "visible Подборки block and visible structured facts block are not part of the approved robot_card design"
+  },
+  "notApprovedByThisRecord": [
+    "PR merge",
+    "public /robots/[slug]/ route replacement",
+    "production deploy",
+    "DNS changes",
+    "secrets changes",
+    "analytics provider activation",
+    "live lead routing",
+    "new pricing/legal/business claims beyond current source-of-truth"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false,
+    "publicRobotRoutesChanged": false
+  }
+}

@@ -40,15 +40,24 @@
   },
   "ownerApproval": {
     "status": "approved",
-    "scope": "structure_and_data_mapping_only",
-    "quote": "Вроде бы все верно.",
-    "designApproval": false,
+    "scope": "robot_card_design_and_structure",
+    "quote": "Ну все, дизайн и структуру карточки робота утверждаем. Сделаем все необходимые записи, зафиксируем информацию",
+    "approvedBy": "Александр Маркин",
+    "approvedDate": "2026-09-03",
+    "designApproval": true,
+    "structureApproval": true,
     "publicRouteReplacementApproval": false,
-    "productionApproval": false
+    "productionApproval": false,
+    "mergeApproval": false,
+    "dnsApproval": false,
+    "secretsApproval": false,
+    "analyticsApproval": false,
+    "liveLeadRoutingApproval": false,
+    "approvalBoundary": "Visual design and block structure of the robot_card template are approved for recording and reuse as the canonical robot-card design baseline. This does not approve PR merge, public route replacement, production deployment, DNS, secrets, analytics, or live lead routing."
   },
   "designPass": {
-    "status": "ready_for_owner_visual_review",
-    "scope": "preview-only robot_card design-block refinement: dark typed hero, two CTAs, transparent bold aiSummary, reference-style mouse draggable gallery/action gallery with nav controls, +40% height-first gallery media, included service checks, hidden machine facts data, order flow, FAQ, Gosha CTAs, robot-specific blog and related catalog",
+    "status": "approved_by_owner",
+    "scope": "approved robot_card design and structure baseline for Unitree G1 / KIBER-94 preview: hero, galleries, aiSummary, capabilities, scenarios, robot in action, Gosha quote/CTAs, included service, order flow, FAQ, Blog Kiber Gosha, related catalog, heading semantics and capability image registry usage",
     "publicRouteReplacementApproval": false,
     "productionApproval": false
   }

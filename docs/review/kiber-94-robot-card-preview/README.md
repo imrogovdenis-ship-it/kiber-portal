@@ -13,17 +13,19 @@ Preview-only integration of the reusable `robot_card` template with the existing
 
 ## Owner approval scope
 
-Alexander reviewed the protected preview and approved only the structure/data-mapping layer:
+Earlier structure/data mapping approval was superseded by final owner approval of the robot-card design and structure.
 
-> Вроде бы все верно.
+Alexander approved the robot-card design and structure on 2026-09-03:
+
+> Ну все, дизайн и структуру карточки робота утверждаем. Сделаем все необходимые записи, зафиксируем информацию
 
 Recorded meaning:
 
-- approved: `robot_card` block set and real source-of-truth data mapping look correct;
-- not approved: final visual design;
+- approved: `robot_card` design and block structure demonstrated on Unitree G1 / KIBER-94;
+- approved: heading semantics, capability-image registry usage, included/order side insets and responsive layout evidence;
 - not approved: final/public text quality;
 - not approved: replacing current public `/robots/[slug]/` pages;
-- not approved: production deploy or any production-side effect.
+- not approved: PR merge, production deploy, DNS, secrets, analytics, live lead routing or any production-side effect.
 
 ## Safety boundaries
 
@@ -78,6 +80,8 @@ The current draft structure is versioned in `robot-card-structure-contract.md`. 
 ## Evidence
 
 - `report.json` records 24 generated preview pages, safety flags, owner approval scope and design-pass scope.
+- `data/review/kiber-94-robot-card-design-structure-approval.json` records the final 2026-09-03 design/structure approval and explicit safety boundary.
+- `design-structure-approval-2026-09-03.md` is the human-readable approval note.
 - Local browser inspection verified the Agibot X2 preview first viewport and full-page rhythm after the preview build.
 
 ## Design pass scope
