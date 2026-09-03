@@ -7,6 +7,7 @@ import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import { getRobotPages } from '../../lib/robot-pages';
 import { homeArticles, homeFinalCta, homeGosha } from '../../data/home-live';
+import capabilityImageRegistry from '../../../data/models/robot-capability-images.source.json';
 import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
 
 const { template } = Astro.props as { template: RobotCardTemplateData };
@@ -37,7 +38,9 @@ const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.categor
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
 const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
 const quickCtaNoWrap = template.robot.priceDisplay;
-const leadHref = `/lead/request/?robot=${template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name}&source=kiber94-preview`;
+const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
+const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
+const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
 const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
 const relatedRobots = getRobotPages()
@@ -82,17 +85,17 @@ const hiddenMachineFacts = {
 };
 const includedServiceLead = 'В аренду входит не только сам Unitree G1, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы и дал вау-эффект без лишней технической нагрузки на клиента.';
 const includedService = [
-  'подберём сценарий использования робота под событие и аудиторию',
-  'привезём робота, подготовим площадку и проверим технические ограничения',
-  'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии',
-  'заранее согласуем длительность, выходы робота, паузы и подзарядку',
+  'подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы',
+  'привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения',
+  'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно',
+  'заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события',
 ];
 const orderFlowLead = 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт Unitree G1, как он будет работать в программе и что нужно подготовить на площадке.';
 const orderFlow = [
-  'Вы пишете нам и называете робота, дату, город и формат мероприятия.',
-  'Менеджер уточняет площадку, аудиторию, сценарий, тайминг и ограничения.',
-  'Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат.',
-  'В день события привозим, настраиваем и сопровождаем робота на площадке.',
+  'Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта.',
+  'Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта.',
+  'Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат работы робота.',
+  'В день события привозим, настраиваем и сопровождаем робота на площадке до окончания программы.',
 ];
 
 const aiSummary = template.aiSummary;
@@ -143,11 +146,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   <section class="template-live-hero template-live-hero--dark" data-block-id="hero" aria-labelledby="robot-card-hero-title">
     <div class="template-live-hero__content">
       <p class="template-live-hero__eyebrow">КИБЕР ПОРТАЛ · аренда роботов</p>
-      <h1 id="robot-card-hero-title">{heroTitle}</h1>
-      <p>{template.robot.priceDisplay}</p>
-      <div class="template-live-hero__actions">
-        <a class="template-hero-button template-hero-button--primary" href="/contacts/">Написать нам</a>
-        <a class="template-hero-button template-hero-button--light" href={leadHref}>Оставить заявку</a>
+      <div class="template-live-hero__main-copy">
+        <h1 id="robot-card-hero-title">{heroTitle}</h1>
+        <p>{template.robot.priceDisplay}</p>
+      </div>
+      <div class="template-live-hero__price-actions">
+        <div class="template-live-hero__actions">
+          <a class="template-hero-button template-hero-button--primary" href="/contacts/">Написать нам</a>
+          <a class="template-hero-button template-hero-button--light" href={leadHref}>Оставить заявку</a>
+        </div>
       </div>
     </div>
     {heroImage && (
@@ -199,7 +206,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
         <article>
-          {gallery[index % Math.max(gallery.length, 1)] && <img src={gallery[index % gallery.length].src} alt="" loading="lazy" decoding="async" />}
+          {capabilityImages[index] && <img src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}
           <h3>{item.title ?? item.text}</h3>
           <p>{item.text}</p>
         </article>
@@ -318,11 +325,19 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-live-hero__content {
     display: grid;
+    grid-template-rows: 1fr auto auto 1fr;
     justify-items: start;
-    align-content: center;
-    gap: 1.35rem;
+    align-content: stretch;
+    gap: clamp(1rem, 2vw, 1.35rem);
     max-width: 46rem;
+    min-height: 100%;
     text-align: left;
+  }
+
+  .template-live-hero__main-copy {
+    display: grid;
+    gap: 1.35rem;
+    justify-self: start;
   }
 
   .template-live-hero__media {
@@ -391,7 +406,18 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   }
 
   .template-live-hero__eyebrow {
+    align-self: center;
+    justify-self: center;
     color: var(--kp-reference-white);
+    text-align: center;
+  }
+
+  .template-live-hero__price-actions {
+    display: grid;
+    align-self: center;
+    justify-items: center;
+    width: 100%;
+    margin-top: clamp(2.2rem, 3vw, 3rem);
   }
 
   .template-live-hero__actions {
@@ -399,7 +425,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .template-hero-button {
@@ -604,6 +630,11 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     border-radius: 1.35rem;
     padding: clamp(1.15rem, 2vw, 1.65rem);
     background: var(--kp-reference-white);
+    transition: transform var(--kp-robot-card-image-hover-duration) var(--kp-robot-card-image-hover-easing);
+  }
+
+  .template-scenario-grid article:hover {
+    transform: scale(var(--kp-robot-card-image-hover-scale));
   }
 
   .template-feature-grid img {
@@ -614,6 +645,11 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     background: var(--kp-reference-white);
     object-fit: cover;
     object-position: center top;
+    transition: transform var(--kp-robot-card-image-hover-duration) var(--kp-robot-card-image-hover-easing);
+  }
+
+  .template-feature-grid article:hover img {
+    transform: scale(var(--kp-robot-card-image-hover-scale));
   }
 
   .template-feature-grid h3,
@@ -655,8 +691,12 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-check-list--reference {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(2.4rem, 4.4vw, 4.9rem) clamp(3rem, 7vw, 7rem);
-    margin-left: 0;
-    margin-right: 0;
+  }
+
+  .template-check-list--reference,
+  .template-order-list--reference {
+    margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
+    margin-right: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem));
   }
 
   .template-check-list li,
@@ -700,8 +740,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-order-list--reference {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(2.4rem, 4.4vw, 4.9rem) clamp(3rem, 7vw, 7rem);
-    margin-left: 0;
-    margin-right: 0;
     counter-reset: order-flow;
   }
 

@@ -450,3 +450,42 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /robotArticles/);
   assert.match(componentSource, /robotCatalogTitle = 'Вас также могут заинтересовать'/);
 });
+
+test('KIBER-94 robot_card latest owner visual feedback is protected', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+
+  const included = [
+    'подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы',
+    'привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения',
+    'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно',
+    'заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события',
+  ];
+  const order = [
+    'Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта.',
+    'Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта.',
+    'Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат работы робота.',
+    'В день события привозим, настраиваем и сопровождаем робота на площадке до окончания программы.',
+  ];
+  for (const phrase of [...included, ...order]) {
+    assert.ok(phrase.length >= 90 && phrase.length <= 110, `${phrase} must stay 90-110 chars`);
+    assert.ok(componentSource.includes(phrase), `${phrase} must render from the robot-card template`);
+  }
+
+  assert.match(componentSource, /class="template-live-hero__main-copy"/);
+  assert.match(componentSource, /class="template-live-hero__price-actions"/);
+  assert.match(componentSource, /\.template-live-hero__content \{[\s\S]*grid-template-rows:\s*1fr auto auto 1fr/);
+  assert.match(componentSource, /\.template-live-hero__eyebrow \{[\s\S]*align-self:\s*center[\s\S]*justify-self:\s*center/);
+  assert.match(componentSource, /\.template-live-hero__price-actions \{[\s\S]*align-self:\s*center[\s\S]*justify-items:\s*center[\s\S]*margin-top:\s*clamp\(2\.2rem,\s*3vw,\s*3rem\)/);
+  assert.match(componentSource, /\.template-live-hero__main-copy \{[\s\S]*justify-self:\s*start/);
+
+  assert.match(componentSource, /\.template-check-list--reference,[\s\S]*\.template-order-list--reference \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
+  assert.match(componentSource, /capabilityImageRegistry/);
+  assert.match(componentSource, /robot-capability-images\.source\.json/);
+  assert.match(componentSource, /capabilityImages\[index\]\.publicSrc/);
+  assert.match(componentSource, /alt=\{capabilityImages\[index\]\.seoAlt\}/);
+  assert.doesNotMatch(componentSource, /gallery\[index % gallery\.length\]\.src/);
+  assert.match(componentSource, /\.template-feature-grid img \{[\s\S]*transition:\s*transform var\(--kp-robot-card-image-hover-duration\)/);
+  assert.match(componentSource, /\.template-feature-grid article:hover img \{[\s\S]*transform:\s*scale\(var\(--kp-robot-card-image-hover-scale\)\)/);
+  assert.match(componentSource, /\.template-scenario-grid article \{[\s\S]*transition:\s*transform var\(--kp-robot-card-image-hover-duration\)/);
+  assert.match(componentSource, /\.template-scenario-grid article:hover \{[\s\S]*transform:\s*scale\(var\(--kp-robot-card-image-hover-scale\)\)/);
+});
