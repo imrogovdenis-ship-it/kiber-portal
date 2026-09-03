@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
-import { homeCompilations, homeFinalCta } from '../data/home-live';
+import { homeCompilations, homeRobotCardFinalCta } from '../data/home-live';
 import { collectionPageJsonLd } from '../lib/seo';
 
 const cardAnchors = ['roboty-gumanoidy', 'roboty-dlya-vystavok', 'roboty-sobaki', 'unitree'];
@@ -79,7 +79,7 @@ const textSections = [
     </section>
 
     <section class="compilations-page__cta container" aria-label="Связаться с КИБЕР ПОРТАЛ">
-      <HomeFinalCta {...homeFinalCta} />
+      <HomeFinalCta {...homeRobotCardFinalCta} variant="robot-card-final" />
     </section>
 
     <div class="compilations-page__links-hidden" aria-hidden="true">

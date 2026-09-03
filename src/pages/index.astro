@@ -8,7 +8,7 @@ import HomeFaqBlock from '../components/blocks/HomeFaqBlock.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import { organizationJsonLd, websiteJsonLd, faqPageJsonLd } from '../lib/seo';
 import { getRobotPages } from '../lib/robot-pages';
-import { homeArticles, homeCompilations, homeFaq, homeFinalCta, homeGosha } from '../data/home-live';
+import { homeArticles, homeCompilations, homeFaq, homeGosha, homeRobotCardFinalCta } from '../data/home-live';
 import type { RobotCardData } from '../../design-system/schemas/fixture.schema';
 
 const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
@@ -83,7 +83,7 @@ const hero = {
 
     <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...homeArticles} />
     <HomeFaqBlock {...homeFaq} />
-    <HomeFinalCta {...homeFinalCta} />
+    <HomeFinalCta {...homeRobotCardFinalCta} variant="robot-card-final" />
   </main>
 </BaseLayout>
 

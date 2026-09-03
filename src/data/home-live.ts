@@ -80,3 +80,15 @@ export const homeFinalCta: HomeFinalCtaData = {
   secondaryCta: { label: source.finalCta.secondaryCta.label, href: '/#catalog' },
   image: image(source.finalCta.image),
 };
+
+export const homeRobotCardFinalCta: HomeFinalCtaData = {
+  ...homeFinalCta,
+  title: 'Остались вопросы?',
+  description: 'Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, какой робот подойдёт под площадку, аудиторию, тайминг и формат вашего события.',
+  primaryCta: { label: 'Написать нам', href: '/contacts/' },
+  secondaryCta: { label: 'Оставить заявку', href: '/lead/request/' },
+  image: {
+    src: '/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif',
+    alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота',
+  },
+};

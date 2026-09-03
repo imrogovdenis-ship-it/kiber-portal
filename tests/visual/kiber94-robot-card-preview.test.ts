@@ -211,9 +211,8 @@ test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the 
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
-  assert.match(componentSource, /const robotFinalCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta2\.webp'/);
-  assert.match(componentSource, /alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота'/);
-  assert.match(componentSource, /image: robotFinalCtaImage/);
+  assert.match(componentSource, /homeRobotCardFinalCta/);
+  assert.match(componentSource, /\.\.\.homeRobotCardFinalCta/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta\) \{[\s\S]*align-items:\s*stretch/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta\) \{[\s\S]*height:\s*clamp\(20rem,\s*26\.25vw,\s*21rem\)/);
@@ -237,7 +236,7 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp'/);
   assert.match(componentSource, /alt: 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
-  assert.match(componentSource, /const robotFinalCta = \{[\s\S]*image: robotFinalCtaImage/);
+  assert.match(componentSource, /const robotFinalCta = \{[\s\S]*\.\.\.homeRobotCardFinalCta/);
   assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);
   assert.ok(componentSource.indexOf('data-block-id="scenarios"') < componentSource.indexOf('data-block-id="pricing"'), 'CTA #1 must sit after scenarios');
   assert.ok(componentSource.indexOf('data-block-id="pricing"') < componentSource.indexOf('data-block-id="robotInAction"'), 'CTA #1 must sit before robot in action');

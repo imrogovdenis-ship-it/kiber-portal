@@ -21,7 +21,8 @@ test('KIBER-91 compilations index is not a placeholder page', () => {
   assert.doesNotMatch(page, /compilations-page__card-index/);
   assert.doesNotMatch(page, />0\{index \+ 1\}</);
   assert.match(page, /Подборка — это не список роботов, а готовый сценарий/);
-  assert.match(page, /<HomeFinalCta \{\.\.\.homeFinalCta\} \/>/);
+  assert.match(page, /homeRobotCardFinalCta/);
+  assert.match(page, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
   assert.match(page, /class="compilations-page__links-hidden"/);
   assert.match(page, /<InternalLinks route="\/compilations\/" label="Внутренняя навигация" \/>/);
   assert.doesNotMatch(page, /Следующие шаги/);

@@ -16,7 +16,7 @@ test('homepage renders the original full-page block order through Astro componen
   assert.match(page, /import HomeImageCards/);
   assert.match(page, /import HomeFaqBlock/);
   assert.match(page, /import HomeFinalCta/);
-  assert.match(page, /<HomeHero[\s\S]*<HomeGoshaQuote[\s\S]*<HomeImageCards id="compilations"[\s\S]*id="catalog"[\s\S]*<HomeImageCards id="articles"[\s\S]*<HomeFaqBlock[\s\S]*<HomeFinalCta/s);
+  assert.match(page, /<HomeHero[\s\S]*<HomeGoshaQuote[\s\S]*<HomeImageCards id="compilations"[\s\S]*id="catalog"[\s\S]*<HomeImageCards id="articles"[\s\S]*<HomeFaqBlock[\s\S]*<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/s);
   assert.match(page, /data-home-parity-pass="full-homepage-lower-blocks"/);
   assert.match(data, /routeFallbacks/);
   assert.doesNotMatch(page, /site-export\/images/);
@@ -48,6 +48,7 @@ test('home lower blocks use original homepage copy and avoid missing public rout
   }
   assert.match(data, /export const homeFaq/);
   assert.match(data, /export const homeFinalCta/);
+  assert.match(data, /export const homeRobotCardFinalCta/);
 });
 
 test('homepage full parity media is optimized runtime WebP rather than review-only originals', async () => {
@@ -118,7 +119,8 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);
   assert.match(imageCards, /variant === 'overlay' && <em>/);
   assert.doesNotMatch(imageCards, /'Читать'/);
-  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 30%, transparent\) 0%/);
+  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 45%, transparent\) 0%/);
+  assert.match(imageCards, /color-mix\(in srgb, var\(--kp-ink\) 18%, transparent\) 24%/);
   assert.match(imageCards, /transparent 52%, transparent 100%/);
   assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body\s*\{[^}]*padding:\s*1\.96rem 1\.4rem 1\.4rem 1\.96rem/s);
   assert.match(imageCards, /\.home-image-cards--overlay \.home-image-cards__body\s*\{[^}]*grid-template-rows:\s*auto auto minmax\(0, 1fr\) auto;[^}]*align-content:\s*stretch/s);
@@ -135,6 +137,9 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
   assert.match(faq, /summary::-webkit-details-marker\s*\{\s*display:\s*none/);
   assert.match(faq, /summary::before, \.home-faq__item summary::after/);
   assert.match(cta, /\.home-final-cta\s*\{[^}]*margin-top:\s*clamp\(2rem, 4vw, 3\.5rem\)/s);
+  assert.match(cta, /data-cta-variant=\{variant\}/);
+  assert.match(cta, /home-final-cta--robot-card-final/);
+  assert.match(cta, /height:\s*clamp\(17rem, 25vw, 20rem\)/);
   assert.match(cta, /margin-top:\s*1rem/);
   assert.match(cta, /background:\s*transparent/);
 });

@@ -27,7 +27,7 @@ const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8
 
 test('KIBER-91 articles index is filled from approved homepage article data', () => {
   assert.doesNotMatch(page, /Здесь будут практические статьи/);
-  assert.match(page, /import \{ homeArticles, homeFinalCta \}/);
+  assert.match(page, /import \{ homeArticles, homeRobotCardFinalCta \}/);
   assert.match(page, /const articleCards = homeArticles\.cards/);
   assert.match(page, /<h1 id="page-title">Блог Кибер Гоши<\/h1>/);
   assert.doesNotMatch(page, /<h1 id="page-title">\{homeArticles\.title\}<\/h1>/);
@@ -54,7 +54,7 @@ test('KIBER-91 articles index has intro block, article feed and bottom CTA in or
   assert.doesNotMatch(page, /<p class="articles-page__eyebrow">Статьи<\/p>/);
   assert.doesNotMatch(page, /<h2 id="article-feed-title">Все статьи сайта<\/h2>/);
   assert.doesNotMatch(page, /Собрали материалы из блока главной и реального раздела статей/);
-  assert.match(page, /<section class="articles-page__cta container"[\s\S]*<HomeFinalCta \{\.\.\.homeFinalCta\} \/>[\s\S]*<\/section>/);
+  assert.match(page, /<section class="articles-page__cta container"[\s\S]*<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>[\s\S]*<\/section>/);
   assert.match(page, /articles-page__hero[\s\S]*articles-page__intro[\s\S]*articles-page__feed[\s\S]*articles-page__cta/);
 });
 

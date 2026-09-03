@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
-import { homeArticles, homeFinalCta } from '../data/home-live';
+import { homeArticles, homeRobotCardFinalCta } from '../data/home-live';
 import { collectionPageJsonLd } from '../lib/seo';
 
 const articleCards = homeArticles.cards;
@@ -44,7 +44,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     </section>
 
     <section class="articles-page__cta container" aria-label="Связаться с КИБЕР ПОРТАЛ">
-      <HomeFinalCta {...homeFinalCta} />
+      <HomeFinalCta {...homeRobotCardFinalCta} variant="robot-card-final" />
     </section>
 
     <div class="articles-page__links-hidden" aria-hidden="true">
