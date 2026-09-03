@@ -114,8 +114,8 @@ for (const robot of robots) {
     if (!pricingBlock.includes(compactCtaPrefix)) failures.push(`${robot.slug}: compact CTA #1 prefix missing`);
     if (!new RegExp(`<span class="home-final-cta__title-nowrap"[^>]*>${escapeRegExp(robot.pricing.display)}</span>`).test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 price must stay unbroken on one line`);
     if (!/template-reused-block--quick-cta/.test(pricingBlock)) failures.push(`${robot.slug}: compact CTA #1 class missing`);
-    if (!/\/images\/kiber-94-preview\/gosha-ushanka-cta1\.webp/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image missing`);
-    if (!/Кибер Гоша в красной ушанке приглашает арендовать Unitree G1/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image alt missing`);
+    if (!/\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image missing`);
+    if (!/Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1/.test(pricingBlock)) failures.push(`${robot.slug}: CTA #1 owner image alt missing`);
   }
   if (/data-block-id="structuredFacts"/.test(html)) failures.push(`${robot.slug}: visible structured facts block must be removed`);
   const finalQuestionsBlock = html.match(/<section[^>]*data-block-id="finalQuestionsCta"[\s\S]*?<\/section>/)?.[0] ?? '';
