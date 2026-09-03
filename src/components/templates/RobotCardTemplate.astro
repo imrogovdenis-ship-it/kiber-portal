@@ -752,7 +752,6 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     height: clamp(17rem, 25vw, 20rem) !important;
     max-width: 100%;
     max-height: none;
-    transform: translateY(-3.5rem);
   }
 
   @media (min-width: 60rem) {
@@ -760,6 +759,10 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
       box-sizing: border-box;
       height: clamp(20rem, 26.25vw, 21rem);
       min-height: clamp(20rem, 26.25vw, 21rem);
+    }
+
+    .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image img) {
+      transform: translateY(-3.5rem);
     }
   }
 

@@ -202,7 +202,8 @@ test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the 
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*height:\s*100%/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*overflow:\s*visible/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(17rem,\s*25vw,\s*20rem\)/);
-  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{\n\s*width:\s*auto !important;\n\s*height:\s*clamp\(17rem,\s*25vw,\s*20rem\) !important;\n\s*max-width:\s*100%;\n\s*max-height:\s*none;\n\s*transform:\s*translateY\(-3\.5rem\);\n\s*\}/);
+  assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{\n\s*width:\s*auto !important;\n\s*height:\s*clamp\(17rem,\s*25vw,\s*20rem\) !important;\n\s*max-width:\s*100%;\n\s*max-height:\s*none;\n\s*\}/);
+  assert.match(componentSource, /@media \(min-width: 60rem\) \{[\s\S]*\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*transform:\s*translateY\(-3\.5rem\)/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*auto/);
   assert.match(smoke, /CTA #2 owner image/);
 });
