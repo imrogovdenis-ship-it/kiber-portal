@@ -120,22 +120,22 @@
       "routes": [
         "/news/"
       ],
-      "summary": "Новости remains a placeholder-style index page. Подборки and Блог Кибер Гоши (/articles/) are owner design-approved in this PR follow-up.",
+      "summary": "Новости remains outside the named owner-approved route set. Подборки and Блог Кибер Гоши (/articles/) are owner design-approved across mobile/tablet/desktop.",
       "expected": "Use approved homepage design language: section hero, meaningful cards/list blocks, blue CTA, consistent spacing, and public-ready page depth.",
-      "productionImpact": "blocks production visual approval until the remaining /news/ index page is accepted or fixed"
+      "productionImpact": "outside current named approval; requires separate accept/fix before full production visual approval if included in launch scope"
     },
     {
       "id": "FSVQA-02",
-      "severity": "medium",
+      "severity": "resolved",
       "category": "design-consistency",
       "routes": [
         "/robots/arenda-unitree-g1/",
         "/robots/arenda-bellabot/",
         "/robots/arenda-robot-barmen/"
       ],
-      "summary": "Robot detail pages are technically stable and readable, but they use an earlier detail-page visual language; should be reviewed for alignment with the newly approved homepage patterns before launch.",
+      "summary": "Robot-card page type visual design is owner-approved across mobile/tablet/desktop on the KIBER-94 preview route. Public /robots/[slug]/ route replacement/production rollout remains gated separately.",
       "expected": "Preserve approved RobotPage mobile 1:1 media rule, but align spacing/card/CTA rhythm with homepage where appropriate.",
-      "productionImpact": "review-needed before final visual approval"
+      "productionImpact": "no production/public route replacement approval granted by this visual approval"
     },
     {
       "id": "FSVQA-03",
@@ -164,11 +164,12 @@
     "analyticsProviderChanged": false
   },
   "approval": {
-    "status": "AWAITING_OWNER_REVIEW",
-    "visualApprovalScope": "full site remains under review; /compilations/ design is owner-approved; /articles/ / Блог Кибер Гоши design is owner-approved; /news/ remains unresolved",
+    "status": "OWNER_DESIGN_APPROVED_FOR_NAMED_ROUTES",
+    "visualApprovalScope": "Owner-approved visual design for named PR8 routes/page types across mobile, tablet, and desktop: /, /compilations/, /articles/ (Блог Кибер Гоши), and robot_card preview. Remaining launch-wide pages such as /news/, legal, 404 are outside this approval unless separately accepted.",
     "productionApprovalGranted": false,
     "mergePermissionGranted": false,
-    "recommendedDecision": "NO_GO_FOR_PRODUCTION_UNTIL_REMAINING_FINDINGS_ACCEPTED_OR_FIXED"
+    "recommendedDecision": "CONTINUE_NEXT_TASK_WITH_PRODUCTION_AND_MERGE_GATES_CLOSED",
+    "ownerDesignApprovalsRecord": "data/review/pr8-route-visual-approvals.json"
   },
   "evidence": {
     "manifest": "docs/review/kiber-91-full-site-visual-qa/screenshots/manifest.json",
@@ -223,6 +224,23 @@
           "computedColor": "rgb(54, 50, 62)"
         }
       }
+    },
+    {
+      "id": "PR8-ROUTE-VISUAL-APPROVALS-2026-09-04",
+      "status": "owner_design_approved",
+      "routes": [
+        "/",
+        "/compilations/",
+        "/articles/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/"
+      ],
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "record": "data/review/pr8-route-visual-approvals.json",
+      "approvedAt": "2026-09-04T10:05:18Z"
     }
   ],
   "futureTasks": [
@@ -243,6 +261,52 @@
       "status": "deferred",
       "requestedBy": "Hermes QA",
       "notes": "Full CI blocks broken internal links until the detail routes exist in Astro; current index keeps the homepage-safe fallback to /articles/."
+    }
+  ],
+  "ownerDesignApprovals": [
+    {
+      "name": "Главная",
+      "key": "home",
+      "path": "/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    },
+    {
+      "name": "Подборки",
+      "key": "compilations",
+      "path": "/compilations/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    },
+    {
+      "name": "Блог Кибер Гоши",
+      "key": "articles",
+      "path": "/articles/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    },
+    {
+      "name": "Карточка робота",
+      "key": "robot_card",
+      "path": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
     }
   ]
 }

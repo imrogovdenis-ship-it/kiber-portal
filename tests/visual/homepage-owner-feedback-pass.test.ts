@@ -62,6 +62,7 @@ test('homepage catalog renders a four-card desktop grid with larger real robot i
 
 test('homepage final CTA follows original blue strip, left-aligned white buttons, and reserves right-side mascot space', async () => {
   const cta = await read('src/components/blocks/CtaStrip.astro');
+  const finalCta = await read('src/components/blocks/HomeFinalCta.astro');
 
   assert.match(cta, /background:\s*var\(--kp-blue-deep\)/);
   assert.match(cta, /grid-template-columns:\s*minmax\(0,\s*0\.62fr\) minmax\(16rem,\s*0\.38fr\)/);
@@ -69,6 +70,9 @@ test('homepage final CTA follows original blue strip, left-aligned white buttons
   assert.match(cta, /justify-content:\s*flex-start/);
   assert.match(cta, /font-weight:\s*500/);
   assert.match(cta, /background:\s*var\(--kp-white\);\s*color:\s*var\(--kp-ink\)/);
+  assert.match(finalCta, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*\.home-final-cta__actions\s*\{[^}]*margin-top:\s*1\.65rem;/s);
+  assert.match(finalCta, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*height:\s*clamp\(14\.25rem, 27vw, 16\.5rem\);[\s\S]*transform:\s*translate\(-\.35rem, 0\)/s);
+  assert.match(finalCta, /@media \(min-width: 60rem\) \{[\s\S]*\.home-final-cta--robot-card-final \.home-final-cta__image img \{[^}]*height:\s*clamp\(14\.875rem, 21\.875vw, 17\.5rem\);[^}]*transform:\s*translateY\(-2\.25rem\)/s); // desktop CTA2 mascot reduced only at desktop breakpoint
 });
 
 test('homepage footer follows owner footer composition feedback', async () => {
@@ -82,27 +86,48 @@ test('homepage footer follows owner footer composition feedback', async () => {
   assert.match(footer, /<span>ОГРНИП \{siteConfig\.ogrnip\}<\/span>/);
   assert.match(footer, /footerAddress = `г\. \$\{siteConfig\.region\}, \$\{siteConfig\.address\}`/);
   assert.doesNotMatch(footer, /site-footer__region/);
-  assert.match(footer, /title:\s*'Главное'/);
-  assert.doesNotMatch(footer, /title:\s*'Меню'/);
-  assert.doesNotMatch(footer, /title:\s*'Контент'/);
+  assert.doesNotMatch(footer, /\{ href: '\/', label: 'Главное' \}/);
   assert.doesNotMatch(footer, /<h2 class="site-footer__title">\{section\.title\}<\/h2>/);
-  assert.match(footer, /\{ href: '\/', label: 'Главное' \}/);
   assert.match(footer, /\{ href: '\/#catalog', label: 'Каталог' \}/);
   assert.match(footer, /\{ href: '\/compilations', label: 'Подборки' \}/);
   assert.match(footer, /\{ href: '\/articles', label: 'Блог' \}/);
   assert.match(footer, /\{ href: '\/news', label: 'Новости' \}/);
   assert.match(footer, /\{ href: '\/contacts', label: 'Контакты' \}/);
-  assert.match(footer, /legal_notice:\s*'Все права защищены ©'/);
+  assert.match(footer, /legal_notice:\s*`Все права защищены © \$\{new Date\(\)\.getFullYear\(\)\} КИБЕР ПОРТАЛ`/);
   assert.match(footer, /Политика обработки\\nперсональных данных/);
   assert.match(footer, /Согласие на обработку\\nперсональных данных/);
   assert.match(footer, /Политика использования\\nфайлов cookie/);
   assert.match(footer, /Пользовательское\\nсоглашение/);
   assert.match(layout, /\.site-footer\s*\{[^}]*background:\s*var\(--kp-footer-background\)/s);
   assert.match(layout, /\.site-footer__main\s*\{[^}]*grid-template-columns:[^;]*minmax\(17rem, 1\.65fr\)[^;]*minmax\(10rem, \.82fr\)/s);
-  assert.match(layout, /\.site-footer__requisites\s*\{[^}]*display:\s*grid;[^}]*gap:\s*\.125rem;[^}]*margin:\s*0;/s);
+  assert.match(layout, /\.site-footer__section\s*\{[^}]*grid-column:\s*2;[^}]*justify-self:\s*end;/s);
+  assert.match(layout, /\.site-footer__nav-list\s*\{[^}]*display:\s*grid;/s);
+  assert.match(layout, /\.site-footer__nav-list a\s*\{[^}]*border:\s*0;[^}]*background:\s*transparent;/s);
+  assert.match(layout, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*grid-template-columns:\s*minmax\(11\.75rem, 1\.35fr\)/s);
+  assert.match(layout, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*\.site-footer__contacts\s*\{[^}]*grid-column:\s*3;/s);
+  assert.match(layout, /@media \(max-width: 39\.9375rem\) \{[\s\S]*\.site-footer__section\s*\{[^}]*margin-bottom:\s*1\.75rem;/s);
+  assert.match(layout, /\.site-footer__requisites\s*\{[^}]*grid-column:\s*1;[^}]*grid-row:\s*1;[^}]*margin:\s*8rem 0 0;/s);
   assert.match(layout, /\.site-footer__phone, \.site-footer__email, \.site-footer__address\s*\{[^}]*color:\s*var\(--kp-muted-soft\);[^}]*font-size:\s*\.875rem;[^}]*font-weight:\s*400;/s);
+  assert.match(layout, /\.site-footer__legal\s*\{[^}]*grid-column:\s*4;[^}]*grid-row:\s*1;[^}]*margin-top:\s*3\.1rem;/s);
   assert.match(layout, /\.site-footer__legal a\s*\{[^}]*font-size:\s*\.75rem;[^}]*line-height:\s*1\.18;/s);
   assert.match(reference, /\.site-footer\s*\{[^}]*background:\s*var\(--kp-footer-background\)/s);
+});
+
+
+test('current page-level CTA2 users share approved tablet HomeFinalCta design', async () => {
+  const [home, compilations, articles, robotTemplate, finalCta] = await Promise.all([
+    read('src/pages/index.astro'),
+    read('src/pages/compilations.astro'),
+    read('src/pages/articles.astro'),
+    read('src/components/templates/RobotCardTemplate.astro'),
+    read('src/components/blocks/HomeFinalCta.astro'),
+  ]);
+
+  assert.match(home, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
+  assert.match(compilations, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
+  assert.match(articles, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
+  assert.match(robotTemplate, /<HomeFinalCta \{\.\.\.robotFinalCta\} \/>/);
+  assert.match(finalCta, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*place-items:\s*center end;[\s\S]*height:\s*clamp\(14\.25rem, 27vw, 16\.5rem\);[\s\S]*transform:\s*translate\(-\.35rem, 0\)/s);
 });
 
 test('brand logos render as SVG marks in both header and footer without losing owner-provided colors', async () => {

@@ -789,6 +789,35 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     max-height: none;
   }
 
+
+  @media (min-width: 40rem) and (max-width: 59.9375rem) {
+    .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta) {
+      align-items: center;
+      height: auto;
+      min-height: 15rem;
+      padding: clamp(1.5rem, 3.2vw, 2rem) clamp(1.5rem, 4vw, 2.35rem);
+    }
+
+    .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__actions) {
+      margin-top: 1.65rem;
+    }
+
+    .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image) {
+      align-self: center;
+      height: auto;
+      min-height: 7.5rem;
+      place-items: center end;
+    }
+
+    .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image img) {
+      width: auto !important;
+      height: clamp(14.25rem, 27vw, 16.5rem) !important;
+      max-width: 100%;
+      max-height: none;
+      transform: translate(-.35rem, 0);
+    }
+  }
+
   @media (min-width: 60rem) {
     .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta) {
       box-sizing: border-box;
@@ -797,7 +826,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     }
 
     .template-reused-block--cta:not(.template-reused-block--quick-cta) :global(.home-final-cta__image img) {
-      transform: translateY(-3.5rem);
+      height: clamp(14.875rem, 21.875vw, 17.5rem) !important;
+      transform: translateY(-2.25rem);
     }
   }
 

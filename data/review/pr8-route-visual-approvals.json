@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-91/KIBER-94",
+  "title": "PR8 route-level visual design approvals across responsive viewports",
+  "status": "owner_design_approved_for_named_routes",
+  "approvedAt": "2026-09-04T10:05:18Z",
+  "approvedBy": "Александр Маркин",
+  "source": "Telegram DM with Александр Маркин",
+  "ownerQuote": "На дизайн мобильной версии и версии для планшета для страницы блок кибергоша тоже утверждаем получается что мы должны утвердить и сделать все соответствующие записи в проекте по страницам главное подборки блок кибергоши и карточка робота все эти страницы визуальное утверждены во всех версиях мобильная десктопная и планшет зафиксирую все эти изменения и перейдём к следующему к следующей задаче",
+  "repository": "imrogovdenis-ship-it/kiber-portal",
+  "workingTree": "/home/alex/projects/kiber-portal-pr8",
+  "branch": "hermes/kiber-full-site-visual-qa-20260901",
+  "recordedAtHead": "d190abc3acd1a86b8b551834bfd90e537aa3c06a",
+  "reviewUrlBase": "https://alex-kiber-pr8-footer-review.38.180.37.42.nip.io",
+  "routes": [
+    {
+      "name": "Главная",
+      "key": "home",
+      "path": "/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    },
+    {
+      "name": "Подборки",
+      "key": "compilations",
+      "path": "/compilations/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    },
+    {
+      "name": "Блог Кибер Гоши",
+      "key": "articles",
+      "path": "/articles/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    },
+    {
+      "name": "Карточка робота",
+      "key": "robot_card",
+      "path": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "status": "owner_design_approved"
+    }
+  ],
+  "sharedApprovedComponents": [
+    {
+      "component": "HomeFinalCta",
+      "label": "CTA2 / Остались вопросы?",
+      "scope": "tablet design approved sitewide for all current pages using this shared block; desktop adjusted with smaller vertically-centered Gosha; mobile approved where shown"
+    },
+    {
+      "component": "Footer",
+      "label": "site footer",
+      "scope": "homepage footer responsive design approved as part of homepage visual approval"
+    }
+  ],
+  "notApprovedByThisRecord": [
+    "PR merge",
+    "production deploy",
+    "DNS changes",
+    "secrets changes",
+    "analytics provider activation",
+    "live lead routing",
+    "new pricing/legal/business claims beyond current source-of-truth"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "liveLeadRoutingChanged": false
+  }
+}

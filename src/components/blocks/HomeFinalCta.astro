@@ -35,7 +35,63 @@ const titlePrefix = titleNoWrap && title.endsWith(titleNoWrap) ? title.slice(0, 
   .home-final-cta--robot-card-final { align-items: stretch; }
   .home-final-cta--robot-card-final .home-final-cta__image { align-self: stretch; height: 100%; min-height: 10rem; overflow: visible; }
   .home-final-cta--robot-card-final .home-final-cta__image img { width: auto; height: clamp(17rem, 25vw, 20rem); max-width: 100%; max-height: none; }
-  @media (min-width: 60rem) { .home-final-cta--robot-card-final { box-sizing: border-box; height: clamp(20rem, 26.25vw, 21rem); min-height: clamp(20rem, 26.25vw, 21rem); } .home-final-cta--robot-card-final .home-final-cta__image img { transform: translateY(-3.5rem); } }
+  @media (min-width: 60rem) { .home-final-cta--robot-card-final { box-sizing: border-box; height: clamp(20rem, 26.25vw, 21rem); min-height: clamp(20rem, 26.25vw, 21rem); } .home-final-cta--robot-card-final .home-final-cta__image img { height: clamp(14.875rem, 21.875vw, 17.5rem); transform: translateY(-2.25rem); } }
   @media (min-width: 60rem) { .home-final-cta { grid-template-columns: minmax(0, .66fr) minmax(12rem, .34fr); } }
-  @media (max-width: 39.9375rem) { .home-final-cta { padding: 1.35rem; } .home-final-cta__actions { display: grid; justify-items: start; } }
+
+  @media (min-width: 40rem) and (max-width: 59.9375rem) {
+    .home-final-cta {
+      grid-template-columns: minmax(0, .66fr) minmax(8.5rem, .34fr);
+      gap: 1rem;
+      align-items: center;
+      min-height: 0;
+      padding: clamp(1.5rem, 3.2vw, 2rem) clamp(1.5rem, 4vw, 2.35rem);
+    }
+    .home-final-cta--robot-card-final {
+      align-items: center;
+      height: auto;
+      min-height: 15rem;
+    }
+    .home-final-cta__copy {
+      gap: .85rem;
+      align-content: center;
+    }
+    .home-final-cta p {
+      max-width: 34rem;
+    }
+    .home-final-cta__actions {
+      margin-top: 1.65rem;
+    }
+    .home-final-cta__image {
+      align-self: center;
+      min-height: 7.5rem;
+      place-items: center end;
+      overflow: visible;
+    }
+    .home-final-cta--robot-card-final .home-final-cta__image {
+      align-self: center;
+      height: auto;
+      min-height: 7.5rem;
+    }
+    .home-final-cta__image img,
+    .home-final-cta--robot-card-final .home-final-cta__image img {
+      width: auto;
+      height: clamp(14.25rem, 27vw, 16.5rem);
+      max-width: 100%;
+      transform: translate(-.35rem, 0);
+    }
+  }
+  @media (max-width: 39.9375rem) {
+    .home-final-cta { padding: 1.35rem; }
+    .home-final-cta h2 { font-size: clamp(2.35rem, 11vw, 2.75rem); }
+    .home-final-cta__actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: stretch;
+      width: 100%;
+    }
+    .home-final-cta__button {
+      width: 100%;
+      text-align: center;
+    }
+  }
 </style>

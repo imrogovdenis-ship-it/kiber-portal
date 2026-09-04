@@ -4,13 +4,32 @@ import { test } from 'node:test';
 
 type QaRoute = { path: string };
 type QaFinding = { id: string; severity: string };
+type OwnerDesignApproval = { name: string; key: string; path: string; viewports: string[]; status: string };
+
+type RouteApprovalsRecord = {
+  status: string;
+  approvedBy: string;
+  ownerQuote: string;
+  routes: OwnerDesignApproval[];
+  notApprovedByThisRecord: string[];
+  safety: {
+    productionDeployChanged: boolean;
+    dnsChanged: boolean;
+    secretsChanged: boolean;
+    analyticsProviderChanged: boolean;
+    liveLeadRoutingChanged: boolean;
+  };
+};
+
+const routeApprovals = JSON.parse(readFileSync('data/review/pr8-route-visual-approvals.json', 'utf8')) as RouteApprovalsRecord;
 
 const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8')) as {
   issue: string;
   scope: { routesChecked: number; viewportsChecked: number; screenshotsCaptured: number; contactSheets: number; routes: QaRoute[] };
   source: { homepageVisualBaseline: string };
   homepagePatternsToReuse: string[];
-  approval: { productionApprovalGranted: boolean };
+  approval: { status: string; visualApprovalScope: string; ownerDesignApprovalsRecord: string; productionApprovalGranted: boolean; mergePermissionGranted: boolean };
+  ownerDesignApprovals: OwnerDesignApproval[];
   technicalChecks: {
     productionDeployChanged: boolean;
     dnsChanged: boolean;
@@ -52,4 +71,39 @@ test('KIBER-91 records design findings without granting production approval', ()
   assert.equal(qa.technicalChecks.analyticsProviderChanged, false);
   assert.ok(qa.visualFindings.some((finding) => finding.id === 'FSVQA-01' && finding.severity === 'high'));
   assert.match(readme, /NO-GO for production/);
+});
+
+
+test('KIBER-91 records owner approval for named PR8 routes across mobile tablet and desktop only', () => {
+  assert.equal(qa.approval.status, 'OWNER_DESIGN_APPROVED_FOR_NAMED_ROUTES');
+  assert.equal(qa.approval.ownerDesignApprovalsRecord, 'data/review/pr8-route-visual-approvals.json');
+  assert.equal(routeApprovals.status, 'owner_design_approved_for_named_routes');
+  assert.equal(routeApprovals.approvedBy, 'Александр Маркин');
+  assert.match(routeApprovals.ownerQuote, /главное подборки блок кибергоши и карточка робота/);
+
+  const expected = new Map([
+    ['home', '/'],
+    ['compilations', '/compilations/'],
+    ['articles', '/articles/'],
+    ['robot_card', '/preview/kiber-94/robot-card/arenda-unitree-g1/'],
+  ]);
+  assert.equal(routeApprovals.routes.length, expected.size);
+  assert.equal(qa.ownerDesignApprovals.length, expected.size);
+
+  for (const approval of routeApprovals.routes) {
+    assert.equal(approval.status, 'owner_design_approved');
+    assert.equal(expected.get(approval.key), approval.path);
+    assert.deepEqual(approval.viewports, ['mobile', 'tablet', 'desktop']);
+  }
+
+  assert.match(readme, /PR8 route-level owner design approvals — 2026-09-04/);
+  assert.match(readme, /Блог Кибер Гоши: mobile\/tablet\/desktop approved/);
+  assert.equal(routeApprovals.safety.productionDeployChanged, false);
+  assert.equal(routeApprovals.safety.dnsChanged, false);
+  assert.equal(routeApprovals.safety.secretsChanged, false);
+  assert.equal(routeApprovals.safety.analyticsProviderChanged, false);
+  assert.equal(routeApprovals.safety.liveLeadRoutingChanged, false);
+  assert.ok(routeApprovals.notApprovedByThisRecord.includes('PR merge'));
+  assert.equal(qa.approval.productionApprovalGranted, false);
+  assert.equal(qa.approval.mergePermissionGranted, false);
 });

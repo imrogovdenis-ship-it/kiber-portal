@@ -124,6 +124,24 @@ Functional, readable, and branded. They can ship if accepted, but visually they 
 - Tablet: `docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-tablet-768.jpg`
 - Desktop: `docs/review/kiber-91-full-site-visual-qa/screenshots/contact-sheet-desktop-1440.jpg`
 
+
+## PR8 route-level owner design approvals — 2026-09-04
+
+Александр утвердил визуальный дизайн перечисленных PR8 страниц/типов во всех версиях: mobile/телефон, tablet/планшет, desktop/ПК.
+
+> На дизайн мобильной версии и версии для планшета для страницы блок кибергоша тоже утверждаем получается что мы должны утвердить и сделать все соответствующие записи в проекте по страницам главное подборки блок кибергоши и карточка робота все эти страницы визуальное утверждены во всех версиях мобильная десктопная и планшет зафиксирую все эти изменения и перейдём к следующему к следующей задаче
+
+Approved scope:
+
+- `/` — Главная: mobile/tablet/desktop approved.
+- `/compilations/` — Подборки: mobile/tablet/desktop approved.
+- `/articles/` — Блог Кибер Гоши: mobile/tablet/desktop approved.
+- `/preview/kiber-94/robot-card/arenda-unitree-g1/` — Карточка робота page type: mobile/tablet/desktop approved.
+
+Machine-readable record: `data/review/pr8-route-visual-approvals.json`.
+
+Boundary: это visual approval только для named routes/page types. Это не PR merge approval и не production/DNS/secrets/analytics/live lead routing approval.
+
 ## Safety boundary
 
 - production deploy allowed = `false`

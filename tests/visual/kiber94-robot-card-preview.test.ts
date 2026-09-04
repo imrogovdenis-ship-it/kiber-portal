@@ -220,7 +220,9 @@ test('KIBER-94 Unitree G1 CTA #2 keeps its owner image while CTA #1 can use the 
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image\) \{[\s\S]*overflow:\s*visible/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(17rem,\s*25vw,\s*20rem\)/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{\n\s*width:\s*auto !important;\n\s*height:\s*clamp\(17rem,\s*25vw,\s*20rem\) !important;\n\s*max-width:\s*100%;\n\s*max-height:\s*none;\n\s*\}/);
-  assert.match(componentSource, /@media \(min-width: 60rem\) \{[\s\S]*\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*transform:\s*translateY\(-3\.5rem\)/);
+  assert.match(componentSource, /@media \(min-width: 60rem\) \{[\s\S]*\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*height:\s*clamp\(14\.875rem,\s*21\.875vw,\s*17\.5rem\) !important;[\s\S]*transform:\s*translateY\(-2\.25rem\)/);
+  assert.match(componentSource, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__actions\) \{[\s\S]*margin-top:\s*1\.65rem/);
+  assert.match(componentSource, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*height:\s*clamp\(14\.25rem,\s*27vw,\s*16\.5rem\) !important;[\s\S]*transform:\s*translate\(-\.35rem, 0\)/);
   assert.match(componentSource, /\.template-reused-block--cta:not\(\.template-reused-block--quick-cta\) :global\(\.home-final-cta__image img\) \{[\s\S]*width:\s*auto/);
   assert.match(smoke, /CTA #2 owner image/);
 });
@@ -519,4 +521,20 @@ test('KIBER-94 robot_card latest owner visual feedback is protected', () => {
   assert.match(componentSource, /\.template-feature-grid article:hover img \{[\s\S]*transform:\s*scale\(var\(--kp-robot-card-image-hover-scale\)\)/);
   assert.match(componentSource, /\.template-scenario-grid article \{[\s\S]*transition:\s*transform var\(--kp-robot-card-image-hover-duration\)/);
   assert.match(componentSource, /\.template-scenario-grid article:hover \{[\s\S]*transform:\s*scale\(var\(--kp-robot-card-image-hover-scale\)\)/);
+});
+
+
+test('KIBER-94 robot_card responsive visual approval is recorded without opening production gates', () => {
+  const approval = JSON.parse(readFileSync('data/review/kiber-94-robot-card-design-structure-approval.json', 'utf8')) as {
+    responsiveVisualApproval: { status: string; viewports: string[]; ownerQuote: string; scope: string };
+    safety: { publicRobotRoutesChanged: boolean; liveLeadRoutingChanged: boolean; productionDeployChanged: boolean };
+  };
+
+  assert.equal(approval.responsiveVisualApproval.status, 'owner_design_approved');
+  assert.deepEqual(approval.responsiveVisualApproval.viewports, ['mobile', 'tablet', 'desktop']);
+  assert.match(approval.responsiveVisualApproval.ownerQuote, /главное подборки блок кибергоши и карточка робота/);
+  assert.match(approval.responsiveVisualApproval.scope, /public route replacement and production gates remain closed/);
+  assert.equal(approval.safety.publicRobotRoutesChanged, false);
+  assert.equal(approval.safety.liveLeadRoutingChanged, false);
+  assert.equal(approval.safety.productionDeployChanged, false);
 });

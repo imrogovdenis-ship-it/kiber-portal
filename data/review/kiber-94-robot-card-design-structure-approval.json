@@ -56,5 +56,17 @@
     "analyticsProviderChanged": false,
     "liveLeadRoutingChanged": false,
     "publicRobotRoutesChanged": false
+  },
+  "responsiveVisualApproval": {
+    "status": "owner_design_approved",
+    "approvedAt": "2026-09-04T10:05:18Z",
+    "approvedBy": "Александр Маркин",
+    "viewports": [
+      "mobile",
+      "tablet",
+      "desktop"
+    ],
+    "ownerQuote": "На дизайн мобильной версии и версии для планшета для страницы блок кибергоша тоже утверждаем получается что мы должны утвердить и сделать все соответствующие записи в проекте по страницам главное подборки блок кибергоши и карточка робота все эти страницы визуальное утверждены во всех версиях мобильная десктопная и планшет зафиксирую все эти изменения и перейдём к следующему к следующей задаче",
+    "scope": "robot_card visual design approved across mobile/tablet/desktop on preview route; public route replacement and production gates remain closed"
   }
 }
