@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-production-go-no-go",
-  "generatedAt": "2026-09-06T13:32:37.469052+00:00",
+  "generatedAt": "2026-09-06T15:36:30.915889Z",
   "currentBase": {
     "repository": "imrogovdenis-ship-it/kiber-portal",
-    "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
-    "branch": "hermes/kiber-full-site-visual-qa-20260901",
-    "head": "17c57f65943f",
-    "headTitle": "PR8 stabilization with approved form, legal cleanup, phone and popup work"
+    "localWorkdir": "/home/alex/projects/kiber-portal-main-rc-20260906",
+    "branch": "main",
+    "head": "12ef3d6dd54f",
+    "headFull": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+    "headTitle": "KIBER-91: full-site visual QA package (#70)"
   },
   "productionDecision": {
     "status": "NO_GO",
-    "summary": "Approved legal documents, public contacts, messenger popup and lead form are now closed for RC scope; production launch remains blocked by RC packaging/commit state, production live lead runtime/secrets deployment decision, analytics/cookie activation decision, and explicit production/DNS permission.",
+    "summary": "PR #70 is merged and fresh main RC staging is verified; production launch remains NO_GO until owner approves the merged main RC candidate, production live lead runtime/secrets deployment, analytics/defer decision, and explicit production/DNS permission.",
     "productionDeployAllowed": false,
     "dnsChangeAllowed": false,
     "secretsChangeAllowed": false,
@@ -87,16 +88,21 @@
     },
     {
       "id": "launch-scope-manifest",
-      "status": "created",
-      "evidence": "data/review/launch-scope-manifest.json separates approved RC scope from raw/review/local artifacts"
+      "status": "merged_in_main_and_verified",
+      "evidence": "data/review/launch-scope-manifest.json plus docs/review/main-rc-after-pr70-20260906/summary.json"
+    },
+    {
+      "id": "main-rc-staging-after-pr70",
+      "status": "verified_from_main_no_production",
+      "evidence": "docs/review/main-rc-after-pr70-20260906/summary.json — main commit 12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3; npm run ci/builds pass; alex-kiber-staging healthy/noindex."
     }
   ],
   "blockers": [
     {
       "id": "release-candidate-package-stabilization",
       "severity": "blocking",
-      "decisionNeeded": "Собрать чистый commit/PR-ready RC package: approved launch scope vs raw/review artifacts, full gates, staging image evidence.",
-      "currentState": "launch-scope manifest created; workspace still contains large uncommitted PR8/content/evidence layer"
+      "decisionNeeded": "Owner approval of merged main RC staging as the production candidate before any production/DNS/secrets action.",
+      "currentState": "PR #70 merged into main; fresh main staging image alex-kiber-staging:main-rc-20260906-12ef3d6 is healthy and verified; production permission remains false."
     },
     {
       "id": "production-live-lead-runtime",
@@ -175,15 +181,15 @@
     }
   ],
   "ownerDecisionChecklist": [
-    "Утвердить/закоммитить clean RC package после full gates.",
-    "Решить dynamic/API runtime для формы: staging-only before launch или сразу production runtime gate.",
-    "Решить analytics: defer post-launch или включать с отдельным approval.",
-    "После закрытия предыдущих пунктов дать отдельное production deploy/DNS/secrets permission."
+    "Решить production dynamic/API runtime для формы: включаем amoCRM + Telegram на production или запускаем static с отложенной live routing интеграцией.",
+    "Решить analytics: defer post-launch или включать provider/IDs/goals/cookies с отдельным approval.",
+    "Получить/подтвердить DNS/cutover inputs и rollback-договорённость с Денисом/владельцем инфраструктуры.",
+    "После предыдущих пунктов дать отдельное production deploy/DNS/secrets permission."
   ],
   "nextSafeWork": [
-    "Довести release-candidate stabilization package до commit/PR-ready state.",
-    "Прогнать full RC gates: launch-scope, legal, form, lead API, SEO, preview/production build.",
-    "Обновить staging одной RC-версией и проверить основные routes.",
-    "После RC — поднять dynamic lead-runtime staging или готовить final production/DNS request."
+    "Поднять dynamic/API lead-runtime staging из main и проверить реальную форму через staging URL с редактированием только alex-* container/secrets.",
+    "Подготовить DNS/cutover dry-run и rollback checklist без переключения DNS.",
+    "Сверить Linear urgent/high задачи: какие закрыты evidence, какие являются production/post-cutover blockers.",
+    "Опционально оставить Linear comments/evidence по KIBER-59/KIBER-70 без закрытия статусов, если владелец разрешит."
   ]
 }

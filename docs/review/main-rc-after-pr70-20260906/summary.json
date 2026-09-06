@@ -1,0 +1,21 @@
+{
+  "status": "MAIN_RC_STAGING_READY_NO_PRODUCTION_DEPLOY",
+  "mainHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+  "stagingImage": "alex-kiber-staging:main-rc-20260906-12ef3d6",
+  "reviewUrl": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/preview/review-approved/",
+  "verified": {
+    "npm ci": "PASS, 0 vulnerabilities",
+    "npm run ci": "PASS",
+    "npm run build:preview": "PASS, 67 pages",
+    "npm run build:production": "PASS, 42 pages",
+    "staging routes": "HTTP 200 + noindex on all checked routes",
+    "host ports": "none"
+  },
+  "excluded": [
+    "production deploy",
+    "DNS",
+    "analytics",
+    "production secrets",
+    "live routing activation"
+  ]
+}

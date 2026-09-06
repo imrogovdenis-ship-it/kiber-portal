@@ -1,0 +1,25 @@
+{
+  "scope": "Build and verify fresh RC/staging from clean origin/main after PR #70 merge.",
+  "mainHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+  "affected": [
+    "/home/alex/projects/kiber-portal-main-rc-20260906",
+    "Docker image alex-kiber-staging:main-rc-20260906-12ef3d6",
+    "container alex-kiber-staging"
+  ],
+  "rollback": "Recreate alex-kiber-staging from previous image alex-kiber-staging:approved-review-links-20260906 or rc-stabilization-20260906-ci-green; no shared containers touched.",
+  "verification": [
+    "npm run ci from clean main worktree",
+    "npm run build:preview",
+    "Docker build from dist",
+    "curl review routes HTTP 200 + noindex",
+    "docker inspect labels/health/no host ports"
+  ],
+  "excluded": [
+    "production deploy",
+    "DNS",
+    "analytics",
+    "production secrets",
+    "live routing activation"
+  ],
+  "denisApprovalRequired": false
+}
