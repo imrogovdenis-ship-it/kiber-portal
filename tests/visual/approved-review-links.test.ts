@@ -15,12 +15,12 @@ test('preview review links route approved surfaces instead of old public detail 
   assert.doesNotMatch(home, /data-primary-route="\/robots\/arenda-unitree-g1\/"/);
 
   const cards = read('src/components/blocks/HomeImageCards.astro');
-  assert.match(cards, /href=\{reviewHref\(card\.href\)\}/);
+  assert.match(cards, /reviewLinksAreEnabled \? reviewHref\(card\.originalHref \?\? card\.href\) : card\.href/);
 
   const compilations = read('src/pages/compilations.astro');
   const articles = read('src/pages/articles.astro');
-  assert.match(compilations, /href=\{reviewHref\(card\.href\)\}/);
-  assert.match(articles, /href=\{reviewHref\(card\.href\)\}/);
+  assert.match(compilations, /reviewLinksAreEnabled \? reviewHref\(card\.originalHref \?\? card\.href\) : card\.href/);
+  assert.match(articles, /reviewLinksAreEnabled \? reviewHref\(card\.originalHref \?\? card\.href\) : card\.href/);
 
   const internalLinks = read('src/components/content/InternalLinks.astro');
   assert.match(internalLinks, /href=\{reviewHref\(link\.href\)\}/);
@@ -41,8 +41,10 @@ test('approved review map exposes all owner-approved page surfaces', () => {
 });
 
 
-test('home-live data does not collapse article card hrefs before preview review mapping', () => {
+test('home-live data preserves original article hrefs for preview review mapping', () => {
   const data = read('src/data/home-live.ts');
-  assert.doesNotMatch(data, /'\/neobychnyi-podarok-direktoru-robot': '\/articles\/'/);
-  assert.doesNotMatch(data, /'\/sravnenie-unitree-g1-r1-h2': '\/compilations\/'/);
+  assert.match(data, /originalHref: input.href/);
+  assert.match(data, /'\/sravnenie-unitree-g1-r1-h2': '\/compilations\/'/);
+  const cards = read('src/components/blocks/HomeImageCards.astro');
+  assert.match(cards, /reviewLinksAreEnabled \? reviewHref\(card\.originalHref \?\? card\.href\) : card\.href/);
 });

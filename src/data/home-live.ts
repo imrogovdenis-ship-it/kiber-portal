@@ -3,7 +3,7 @@ import source from '../../data/design/home-live-blocks.json';
 export type HomeImage = { src: string; alt: string };
 export type HomeLink = { label: string; href: string };
 export type HomeGoshaData = { title: string; subtitle: string; text: string; image: HomeImage };
-export type HomeCard = { title: string; description: string; href: string; cta?: string; image: HomeImage };
+export type HomeCard = { title: string; description: string; href: string; originalHref?: string; cta?: string; image: HomeImage };
 export type HomeCardsBlock = { title: string; description: string; cards: HomeCard[] };
 export type HomeFaqData = { title: string; items: { question: string; answer: string }[] };
 export type HomeFinalCtaData = {
@@ -32,7 +32,15 @@ const imageMap: Record<string, string> = {
 
 const routeFallbacks: Record<string, string> = {
   '/compilations#roboty-sobaki': '/roboty-sobaki/',
+  '/arenda-robotov-na-meropriyatie': '/compilations/',
+  '/sravnenie-unitree-g1-r1-h2': '/compilations/',
+  '/neobychnyi-podarok-direktoru-robot': '/articles/',
+  '/unitree-g1-ili-agibot-x2': '/articles/',
+  '/pozdravlenie-robotom-na-svadbe': '/articles/',
+  '/robot-ofitsiant-na-meropriyatii': '/articles/',
+  '/velkom-zona-na-svadbe-robot': '/articles/',
 };
+
 
 function image(input: { src: string; alt: string }): HomeImage {
   return { src: imageMap[input.src] ?? input.src, alt: input.alt };
@@ -45,7 +53,7 @@ function href(input: string): string {
 }
 
 function card(input: { title: string; description: string; href: string; cta?: string; image: { src: string; alt: string } }): HomeCard {
-  return { title: input.title, description: input.description, href: href(input.href), cta: input.cta, image: image(input.image) };
+  return { title: input.title, description: input.description, href: href(input.href), originalHref: input.href, cta: input.cta, image: image(input.image) };
 }
 
 export const homeLiveOrder = source.homeOrder;

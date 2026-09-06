@@ -26,11 +26,11 @@ const exactReviewHrefMap = new Map<string, string>([
 
 export const approvedPreviewReviewRoutes = {
   home: '/',
-  robotCard: '/preview/kiber-94/robot-card/arenda-unitree-g1/',
+  robotCard: reviewEnabled ? '/preview/kiber-94/robot-card/arenda-unitree-g1/' : '/robots/arenda-unitree-g1/',
   compilationsIndex: '/compilations/',
-  compilationHumanoids: '/preview/kiber-94/compilation/roboty-gumanoidy/',
+  compilationHumanoids: reviewEnabled ? '/preview/kiber-94/compilation/roboty-gumanoidy/' : '/roboty-gumanoidy/',
   articlesIndex: '/articles/',
-  articleTemplate: articleMediaMomentHref,
+  articleTemplate: reviewEnabled ? articleMediaMomentHref : '/articles/',
 } as const;
 
 export const reviewLinksAreEnabled = reviewEnabled;

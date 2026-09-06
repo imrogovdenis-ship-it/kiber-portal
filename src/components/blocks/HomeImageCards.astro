@@ -1,5 +1,5 @@
 ---
-import { reviewHref } from '../../lib/review-links';
+import { reviewHref, reviewLinksAreEnabled } from '../../lib/review-links';
 import type { HomeCardsBlock } from '../../data/home-live';
 interface Props extends HomeCardsBlock { id: string; eyebrow: string; variant?: 'overlay' | 'article'; }
 const { id, eyebrow, title, description, cards, variant = 'overlay' } = Astro.props as Props;
@@ -19,7 +19,7 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   </div>
   <div class="home-image-cards__grid" data-drag-slider={variant === 'overlay' ? 'true' : undefined} aria-label={variant === 'overlay' ? `${title}: горизонтальный слайдер` : undefined}>
     {cards.map((card) => (
-      <a class="home-image-cards__card" href={reviewHref(card.href)} aria-label={`${variant === 'article' ? 'Открыть' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
+      <a class="home-image-cards__card" href={(reviewLinksAreEnabled ? reviewHref(card.originalHref ?? card.href) : card.href)} aria-label={`${variant === 'article' ? 'Открыть' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
         <span class="home-image-cards__body">
           <strong>{card.title}</strong>
           <span>{card.description}</span>
