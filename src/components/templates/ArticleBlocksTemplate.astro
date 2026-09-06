@@ -1,4 +1,5 @@
 ---
+import { reviewRobotPreviewHref } from '../../lib/review-links';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
@@ -7,11 +8,12 @@ import RobotCard from '../blocks/RobotCard.astro';
 import type { ArticleBlocksTemplateData } from '../../lib/kiber94-article-template-data';
 
 const { template } = Astro.props as { template: ArticleBlocksTemplateData };
-const [g1] = template.robots;
 const content = template.articleContent;
-const featuredRobot = content?.product?.featuredSlug ? template.robots.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
+const reviewRobotCards = template.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
+const [g1] = reviewRobotCards;
+const featuredRobot = content?.product?.featuredSlug ? reviewRobotCards.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
 const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
-const articleGalleryImages = template.robots
+const articleGalleryImages = reviewRobotCards
   .filter((robot) => robot.image)
   .map((robot) => ({ src: robot.image!.src, alt: `${robot.title}: фото для галереи шаблона статьи`, title: robot.title.replace(/^Аренда\s+/i, '') }));
 ---
@@ -226,7 +228,7 @@ const articleGalleryImages = template.robots
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {template.robots.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {reviewRobotCards.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
   </section>
 

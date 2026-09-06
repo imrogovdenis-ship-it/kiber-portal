@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
 import { homeCompilations, homeRobotCardFinalCta } from '../data/home-live';
+import { reviewHref } from '../lib/review-links';
 import { collectionPageJsonLd } from '../lib/seo';
 
 const cardAnchors = ['roboty-gumanoidy', 'roboty-dlya-vystavok', 'roboty-sobaki', 'unitree'];
@@ -62,7 +63,7 @@ const textSections = [
           <a
             id={card.id}
             class="compilations-page__card"
-            href={card.href}
+            href={reviewHref(card.href)}
             style={`--compilation-card-image: url('${card.image.src}')`}
             data-analytics-event="robot_card_click"
             data-analytics-block-id="compilations-index"

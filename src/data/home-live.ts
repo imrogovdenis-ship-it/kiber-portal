@@ -32,13 +32,6 @@ const imageMap: Record<string, string> = {
 
 const routeFallbacks: Record<string, string> = {
   '/compilations#roboty-sobaki': '/roboty-sobaki/',
-  '/arenda-robotov-na-meropriyatie': '/compilations/',
-  '/sravnenie-unitree-g1-r1-h2': '/compilations/',
-  '/neobychnyi-podarok-direktoru-robot': '/articles/',
-  '/unitree-g1-ili-agibot-x2': '/articles/',
-  '/pozdravlenie-robotom-na-svadbe': '/articles/',
-  '/robot-ofitsiant-na-meropriyatii': '/articles/',
-  '/velkom-zona-na-svadbe-robot': '/articles/',
 };
 
 function image(input: { src: string; alt: string }): HomeImage {

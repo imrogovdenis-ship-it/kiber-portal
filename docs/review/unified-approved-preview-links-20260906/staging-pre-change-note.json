@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-09-06T14:36:00+03:00",
+  "scope": "Refresh existing Alex-owned static staging preview from already verified dist/ so owner can review approved-route link wiring.",
+  "affected": [
+    "container: alex-kiber-staging",
+    "image: alex-kiber-staging:approved-review-links-20260906",
+    "files: dist/ static build artifact only",
+    "Traefik labels preserved from existing alex-kiber-staging"
+  ],
+  "rollback": "Recreate alex-kiber-staging from previous image alex-kiber-staging:rc-stabilization-20260906-ci-green with the preserved labels/network, or docker rm/re-run old image; no shared containers touched.",
+  "verification": [
+    "docker ps/inspect only alex-kiber-staging",
+    "curl review routes for HTTP 200",
+    "verify X-Robots-Tag noindex,nofollow",
+    "verify rendered links do not point review flow to old /robots or /roboty-gumanoidy designs"
+  ],
+  "requiresDenisApproval": false,
+  "excluded": [
+    "production deploy",
+    "DNS changes",
+    "analytics",
+    "production secrets",
+    "merge"
+  ]
+}

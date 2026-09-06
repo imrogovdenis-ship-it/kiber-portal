@@ -1,4 +1,5 @@
 ---
+import { reviewRobotPreviewHref } from '../../lib/review-links';
 import type { RobotCardTemplateData } from '../../lib/page-type-templates';
 import RobotCard from '../blocks/RobotCard.astro';
 import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
@@ -53,7 +54,7 @@ const relatedRobots = getRobotPages()
   .slice(0, 4)
   .map((robot, index) => ({
     slug: robot.slug,
-    href: robot.route,
+    href: reviewRobotPreviewHref(robot.slug, robot.route),
     title: robot.identity.name,
     category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
     price: robot.pricing.display,

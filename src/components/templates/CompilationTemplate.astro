@@ -1,4 +1,5 @@
 ---
+import { reviewRobotPreviewHref } from '../../lib/review-links';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
@@ -8,6 +9,7 @@ import { homeCompilations } from '../../data/home-live';
 import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-template-data';
 
 const { template } = Astro.props as { template: CompilationPageTemplateData };
+const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
 ---
 
 <article class="humanoid-template" data-kiber-task="KIBER-94" data-page-type="compilation" data-template-status="draft_for_owner_review">
@@ -130,7 +132,7 @@ const { template } = Astro.props as { template: CompilationPageTemplateData };
       <p>{template.catalog.lead}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {template.catalog.robots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {reviewCatalogRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
   </section>
 

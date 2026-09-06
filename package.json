@@ -61,7 +61,8 @@
     "map:claude-content:dry-run": "python3 scripts/map_claude_package_to_preview.py",
     "test:kiber-seo-writing-protocol": "node --test tests/content-contracts/kiber-seo-writing-protocol.test.mjs",
     "validate:kiber-seo-writing-protocol": "python3 scripts/validate_kiber_seo_research_writing_protocol.py",
-    "test:launch-scope-manifest": "node --import tsx --test tests/visual/launch-scope-manifest.test.ts"
+    "test:launch-scope-manifest": "node --import tsx --test tests/visual/launch-scope-manifest.test.ts",
+    "test:approved-review-links": "node --import tsx --test tests/visual/approved-review-links.test.ts"
   },
   "dependencies": {
     "astro": "7.2.7",

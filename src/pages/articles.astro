@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
 import { homeArticles, homeRobotCardFinalCta } from '../data/home-live';
+import { reviewHref } from '../lib/review-links';
 import { collectionPageJsonLd } from '../lib/seo';
 
 const articleCards = homeArticles.cards;
@@ -32,7 +33,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     <section class="articles-page__feed container" id="article-feed" aria-label="Статьи Блога Кибер Гоши">
       <div class="articles-page__grid" data-article-card-count={articleCards.length}>
         {articleCards.map((card) => (
-          <a class="articles-page__card" href={card.href} aria-label={`Открыть: ${card.title}`} style={`--article-card-image: url('${card.image.src}')`}>
+          <a class="articles-page__card" href={reviewHref(card.href)} aria-label={`Открыть: ${card.title}`} style={`--article-card-image: url('${card.image.src}')`}>
             <span class="articles-page__image" role="img" aria-label={card.image.alt}></span>
             <span class="articles-page__body">
               <strong>{card.title}</strong>

@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { approvedPreviewReviewRoutes } from '../../../lib/review-links';
+
+const pages = [
+  { label: 'Главная', href: approvedPreviewReviewRoutes.home, note: 'утверждённая главная + текущие формы/popup' },
+  { label: 'Карточка робота Unitree G1', href: approvedPreviewReviewRoutes.robotCard, note: 'approved KIBER-94 robot-card preview template' },
+  { label: 'Подборки', href: approvedPreviewReviewRoutes.compilationsIndex, note: 'утверждённый индекс подборок' },
+  { label: 'Подборка: Роботы-гуманоиды', href: approvedPreviewReviewRoutes.compilationHumanoids, note: 'approved CompilationTemplate preview' },
+  { label: 'Блог Кибер Гоши', href: approvedPreviewReviewRoutes.articlesIndex, note: 'утверждённый индекс статей' },
+  { label: 'Шаблон статьи / блок mediaMoment', href: approvedPreviewReviewRoutes.articleTemplate, note: 'approved ArticleBlocksTemplate preview' },
+  { label: 'Форма заявки', href: '/lead/request/', note: 'визуально утверждена; static preview без отправки' },
+  { label: 'Контакты', href: '/contacts/', note: 'публичные контакты + popup Написать нам' },
+];
+---
+<BaseLayout title="Approved PR8 review map — КИБЕР ПОРТАЛ" description="Единая карта preview-ссылок на утверждённые дизайн-страницы PR8." noindex={true}>
+  <main class="review-map container" data-review-map="approved-pr8-links">
+    <p class="review-map__eyebrow">PR8 preview</p>
+    <h1>Карта утверждённых страниц для финальной проверки</h1>
+    <p class="review-map__lead">Эта страница нужна только для review: ссылки ведут на текущие approved preview-поверхности, чтобы не попадать на старые публичные шаблоны карточек, подборок или статей.</p>
+    <div class="review-map__grid">
+      {pages.map((page) => (
+        <a class="review-map__card" href={page.href}>
+          <span>{page.label}</span>
+          <small>{page.note}</small>
+          <b>Открыть</b>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+<style>
+  .review-map { padding-block: clamp(4rem, 8vw, 7rem); }
+  .review-map__eyebrow { margin: 0 0 .75rem; color: var(--kp-blue); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+  .review-map h1 { max-width: 54rem; margin: 0; color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: clamp(2.75rem, 6vw, 5.5rem); line-height: .9; }
+  .review-map__lead { max-width: 47rem; margin: 1.5rem 0 0; color: var(--kp-ink); font-size: clamp(1.05rem, 1.5vw, 1.35rem); line-height: 1.45; }
+  .review-map__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+  .review-map__card { display: grid; min-height: 11rem; padding: 1.35rem; border-radius: 1.75rem; background: var(--kp-white); color: var(--kp-ink); text-decoration: none; box-shadow: 0 1rem 2rem color-mix(in srgb, var(--kp-ink) 9%, transparent); }
+  .review-map__card span { font-family: var(--kp-font-heading); font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: .95; }
+  .review-map__card small { margin-top: .75rem; color: color-mix(in srgb, var(--kp-ink) 72%, transparent); font-size: .98rem; line-height: 1.35; }
+  .review-map__card b { align-self: end; margin-top: 1.25rem; color: var(--kp-blue); }
+  @media (max-width: 48rem) { .review-map__grid { grid-template-columns: 1fr; } .review-map { padding-block: 3rem; } }
+</style>
