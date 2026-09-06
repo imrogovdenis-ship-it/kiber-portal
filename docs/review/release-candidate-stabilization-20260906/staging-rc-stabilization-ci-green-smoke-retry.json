@@ -1,0 +1,70 @@
+{
+  "retryChecks": [
+    {
+      "path": "/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/contacts/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/lead/request/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/privacy-policy/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/cookie-policy/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/terms/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/consent/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/robots/arenda-unitree-g1/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    },
+    {
+      "path": "/articles/",
+      "httpLine": "HTTP/2 200",
+      "noindex": true,
+      "exit": 0,
+      "forbiddenLegalNotice": false
+    }
+  ],
+  "all200": true,
+  "allNoindex": true,
+  "noForbiddenLegalNotice": true
+}

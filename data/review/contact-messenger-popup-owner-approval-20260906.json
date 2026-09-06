@@ -1,0 +1,54 @@
+{
+  "status": "owner_approved",
+  "approvedAt": "2026-09-06T12:27:17.788118+00:00",
+  "owner": "Александр Маркин",
+  "ownerStatement": "Давай фиксировать размер как бы считая форму утверждённой",
+  "surface": "Popup “Написать нам” / messenger chooser",
+  "approvedScope": {
+    "visualDesign": true,
+    "desktop": true,
+    "mobile": true,
+    "sizeLocked": true,
+    "buttonLabels": [
+      "MAX",
+      "WhatsApp",
+      "Telegram"
+    ],
+    "buttonIconsAllowed": false,
+    "goshaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+    "layout": [
+      "top-left small label “Связаться с нами”",
+      "top-right close button “Закрыть”",
+      "large title “Напишите нам в любом удобном мессенджере”",
+      "Gosha image on right/top area",
+      "three messenger buttons stacked vertically"
+    ]
+  },
+  "measuredCurrentSize": {
+    "desktopViewport": "1280x900",
+    "desktopPanel": "800x544",
+    "mobileViewport": "390x844",
+    "mobilePanel": "366x427"
+  },
+  "links": {
+    "telegram": "https://t.me/+79067309691",
+    "whatsapp": "https://wa.me/79067309691?text=Привет. Пишу с сайта kiber-portal.ru",
+    "max": "https://max.ru/u/f9LHodD0cOJhJ-X4IZgcN132WZOzWIuvqM8KhYmQShyPoEZQ-C84DJgI4M0"
+  },
+  "evidence": {
+    "desktopScreenshot": "docs/review/contact-messenger-popup-20260906/popup-desktop-smaller.png",
+    "mobileScreenshot": "docs/review/contact-messenger-popup-20260906/popup-mobile-smaller.png",
+    "visualMeasurements": "docs/review/contact-messenger-popup-20260906/visual-evidence-smaller.json",
+    "stagingUrl": "https://alex-kiber-mobile-review-d190abc.38.180.37.42.nip.io/"
+  },
+  "boundaries": {
+    "productionDeployApproved": false,
+    "dnsApproved": false,
+    "analyticsApproved": false,
+    "liveLeadRoutingApproved": false,
+    "amoCrmApproved": false,
+    "telegramBotRoutingApproved": false,
+    "mergeApproved": false,
+    "massPublicationApproved": false
+  }
+}

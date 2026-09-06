@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kiber-portal.local/schemas/claude-content-task.schema.json",
+  "title": "KIBER Claude content task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "taskId",
+    "pageType",
+    "targetSlug",
+    "sourceDocuments",
+    "instructions",
+    "linearIssue",
+    "ownerReviewRequired",
+    "forbiddenChanges"
+  ],
+  "properties": {
+    "taskId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{7,120}$"
+    },
+    "pageType": {
+      "enum": [
+        "robot_card",
+        "compilation",
+        "article_detail"
+      ]
+    },
+    "targetSlug": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,120}$"
+    },
+    "sourceDocuments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "pathOrUrl",
+          "sourceType"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "pathOrUrl": {
+            "type": "string"
+          },
+          "sourceType": {
+            "enum": [
+              "docx",
+              "markdown",
+              "html",
+              "url",
+              "text",
+              "json",
+              "other"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "instructions": {
+      "type": "string",
+      "minLength": 20
+    },
+    "requiredBlocks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferredInternalLinks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "linearIssue": {
+      "type": "string",
+      "pattern": "^KIBER-[0-9]+$"
+    },
+    "ownerReviewRequired": {
+      "const": true
+    },
+    "forbiddenChanges": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "design",
+          "production",
+          "dns",
+          "secrets",
+          "analytics",
+          "liveLeadRouting",
+          "templates",
+          "styles",
+          "mainBranch",
+          "autoMerge"
+        ]
+      },
+      "contains": {
+        "const": "production"
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "packagePath": {
+          "type": "string"
+        },
+        "format": {
+          "const": "kiber_claude_content_package_json"
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ import test from 'node:test';
 
 const read = (path: string) => readFileSync(path, 'utf8');
 
-const maxLink = 'https://max.ru/u/f9LHodD0cOJFwZ694dB_W9-xhrJzZpX0harafdS1XMVgHy-gk8Sh24t5tJA';
+const maxLink = 'https://max.ru/u/f9LHodD0cOJhJ-X4IZgcN132WZOzWIuvqM8KhYmQShyPoEZQ-C84DJgI4M0';
 
 test('site public config exposes the owner-approved MAX messenger link', () => {
   const config = read('src/config/site.ts');

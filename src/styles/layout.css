@@ -1,6 +1,6 @@
 .skip-link { position: fixed; left: 1rem; top: .5rem; z-index: 2000; transform: translateY(-160%); background: var(--kp-ink-dark); color: var(--kp-white); padding: .625rem 1rem; border-radius: .5rem; }
 .skip-link:focus { transform: none; }
-.site-header { position: sticky; top: 0; z-index: 1000; height: 4.25rem; background: var(--kp-surface); border-bottom: .0625rem solid color-mix(in srgb, var(--kp-blue) 10%, transparent); }
+.site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: 4.25rem; background: var(--kp-surface); border-bottom: .0625rem solid color-mix(in srgb, var(--kp-blue) 10%, transparent); }
 .site-header__container { height: 100%; display: flex; align-items: center; gap: 1.25rem; padding: 0 2rem; }
 .site-header__logo, .site-footer__logo { font-family: var(--kp-font-heading); font-weight: 700; text-decoration: none; letter-spacing: -.04em; }
 .site-header__logo { display: inline-flex; align-items: center; gap: .625rem; min-width: max-content; color: var(--kp-blue); }

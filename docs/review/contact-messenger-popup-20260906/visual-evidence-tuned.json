@@ -1,0 +1,59 @@
+{
+  "capturedAt": "2026-09-06T12:21:01.184Z",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop-tuned",
+        "width": 1280,
+        "height": 900
+      },
+      "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-messenger-popup-20260906/popup-desktop-tuned.png",
+      "data": {
+        "title": "Напишите нам в любом удобном мессенджере",
+        "buttons": [
+          "MAX",
+          "WhatsApp",
+          "Telegram"
+        ],
+        "panel": {
+          "x": 192,
+          "y": 132.859375,
+          "w": 896,
+          "h": 634.28125
+        },
+        "viewport": {
+          "w": 1280,
+          "h": 900
+        },
+        "fits": true
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile-tuned",
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-messenger-popup-20260906/popup-mobile-tuned.png",
+      "data": {
+        "title": "Напишите нам в любом удобном мессенджере",
+        "buttons": [
+          "MAX",
+          "WhatsApp",
+          "Telegram"
+        ],
+        "panel": {
+          "x": 12,
+          "y": 352.125,
+          "w": 366,
+          "h": 479.875
+        },
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "fits": true
+      }
+    }
+  ]
+}

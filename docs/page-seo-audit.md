@@ -25,9 +25,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 108 chars
 - ✅ `h1Count` — 1 H1: ['Аренда роботов, которые держат внимание']
 - ⚠️ `h1MatchesPassport` — rendered='Аренда роботов, которые держат внимание'; passport='Аренда роботов на мероприятия'
-- ✅ `h2Present` — 6 H2
+- ✅ `h2Present` — 8 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 14913 visible chars; target 300
+- ✅ `usefulText` — 15539 visible chars; target 300
 - ✅ `primaryKeywordInTitle` — primary='аренда роботов'
 - ✅ `primaryKeywordInH1` — primary='аренда роботов'
 - ✅ `primaryKeywordInFirstBlock` — primary='аренда роботов'
@@ -40,7 +40,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: FAQPage, Organization, WebSite
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 36 internal hrefs
+- ✅ `internalLinks` — 33 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -54,7 +54,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 36 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 33 rendered internal links
 
 ### /robots/arenda-agibot-x2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -67,9 +67,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 147 chars
 - ✅ `h1Count` — 1 H1: ['Agibot X2 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Agibot X2 для мероприятий'; passport='Аренда Agibot X2'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12432 visible chars; target 500
+- ✅ `usefulText` — 12890 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Agibot X2'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Agibot X2'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Agibot X2'
@@ -82,7 +82,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -96,7 +96,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-bellabot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -109,9 +109,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 156 chars
 - ✅ `h1Count` — 1 H1: ['робота-официанта BellaBot для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота-официанта BellaBot для мероприятий'; passport='Аренда робота-официанта BellaBot'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12630 visible chars; target 500
+- ✅ `usefulText` — 13088 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота-официанта BellaBot'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота-официанта BellaBot'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-официанта BellaBot'
@@ -124,7 +124,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -138,7 +138,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-glambot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -151,9 +151,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 133 chars
 - ✅ `h1Count` — 1 H1: ['робота GlamBot для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота GlamBot для мероприятий'; passport='Аренда робота GlamBot'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12176 visible chars; target 500
+- ✅ `usefulText` — 12634 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота GlamBot'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота GlamBot'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота GlamBot'
@@ -166,7 +166,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -180,7 +180,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-inchbot-l1-w-edu/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -193,9 +193,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 152 chars
 - ✅ `h1Count` — 1 H1: ['Inchbot L1-W EDU для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Inchbot L1-W EDU для мероприятий'; passport='Аренда Inchbot L1-W EDU'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12678 visible chars; target 500
+- ✅ `usefulText` — 13136 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Inchbot L1-W EDU'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Inchbot L1-W EDU'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Inchbot L1-W EDU'
@@ -208,7 +208,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -222,7 +222,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-kettybot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -235,9 +235,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 142 chars
 - ✅ `h1Count` — 1 H1: ['робота-официанта KettyBot для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота-официанта KettyBot для мероприятий'; passport='Аренда робота-официанта KettyBot'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12300 visible chars; target 500
+- ✅ `usefulText` — 12758 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота-официанта KettyBot'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота-официанта KettyBot'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-официанта KettyBot'
@@ -250,7 +250,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -264,7 +264,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-klipmeiker/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -277,9 +277,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 144 chars
 - ✅ `h1Count` — 1 H1: ['робота Клипмейкер для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота Клипмейкер для мероприятий'; passport='Аренда робота Клипмейкер'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12029 visible chars; target 500
+- ✅ `usefulText` — 12487 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота Клипмейкер'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота Клипмейкер'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота Клипмейкер'
@@ -292,7 +292,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -306,7 +306,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-mini-robo-kofeyni/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -319,9 +319,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 132 chars
 - ✅ `h1Count` — 1 H1: ['мини робо-кофейни для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='мини робо-кофейни для мероприятий'; passport='Аренда мини робо-кофейни'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12381 visible chars; target 500
+- ✅ `usefulText` — 12839 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда мини робо-кофейни'
 - ⚠️ `primaryKeywordInH1` — primary='аренда мини робо-кофейни'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда мини робо-кофейни'
@@ -334,7 +334,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -348,7 +348,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-noetix-bumi/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -361,9 +361,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 147 chars
 - ✅ `h1Count` — 1 H1: ['Noetix Bumi для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Noetix Bumi для мероприятий'; passport='Аренда Noetix Bumi'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 10754 visible chars; target 500
+- ✅ `usefulText` — 11212 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Noetix Bumi'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Noetix Bumi'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Noetix Bumi'
@@ -376,7 +376,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -390,7 +390,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-promobot-v4/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -403,9 +403,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 137 chars
 - ✅ `h1Count` — 1 H1: ['Promobot V4 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Promobot V4 для мероприятий'; passport='Аренда Promobot V4'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12233 visible chars; target 500
+- ✅ `usefulText` — 12691 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Promobot V4'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Promobot V4'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Promobot V4'
@@ -418,7 +418,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -432,7 +432,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-robo-kofeyni/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -445,9 +445,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 129 chars
 - ✅ `h1Count` — 1 H1: ['робота-кофейни для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота-кофейни для мероприятий'; passport='Аренда робота-кофейни'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12410 visible chars; target 500
+- ✅ `usefulText` — 12868 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота-кофейни'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота-кофейни'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-кофейни'
@@ -460,7 +460,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -474,7 +474,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-roboshashki/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -487,9 +487,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 131 chars
 - ✅ `h1Count` — 1 H1: ['робота для игры в шашки для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота для игры в шашки для мероприятий'; passport='Аренда робота для игры в шашки'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12200 visible chars; target 500
+- ✅ `usefulText` — 12658 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота для игры в шашки'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота для игры в шашки'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота для игры в шашки'
@@ -502,7 +502,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -516,7 +516,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-robot-barmen/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -529,9 +529,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 136 chars
 - ✅ `h1Count` — 1 H1: ['робота-бармена «Робобар» для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота-бармена «Робобар» для мероприятий'; passport='Аренда робота-бармена «Робобар»'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12319 visible chars; target 500
+- ✅ `usefulText` — 12777 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота-бармена «Робобар»'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота-бармена «Робобар»'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-бармена «Робобар»'
@@ -544,7 +544,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -558,7 +558,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-robota-ardi/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -571,9 +571,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 145 chars
 - ✅ `h1Count` — 1 H1: ['робота Арди для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота Арди для мероприятий'; passport='Аренда робота Арди'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12349 visible chars; target 500
+- ✅ `usefulText` — 12807 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота Арди'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота Арди'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота Арди'
@@ -586,7 +586,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -600,7 +600,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-robota-hudozhnika-a4/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -613,9 +613,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 136 chars
 - ✅ `h1Count` — 1 H1: ['большого формата для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='большого формата для мероприятий'; passport='Аренда большого формата'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12290 visible chars; target 500
+- ✅ `usefulText` — 12748 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда большого формата'
 - ⚠️ `primaryKeywordInH1` — primary='аренда большого формата'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда большого формата'
@@ -628,7 +628,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -642,7 +642,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-robota-sofiya/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -655,9 +655,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 131 chars
 - ✅ `h1Count` — 1 H1: ['робота София для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота София для мероприятий'; passport='Аренда робота София'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12495 visible chars; target 500
+- ✅ `usefulText` — 12953 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота София'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота София'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота София'
@@ -670,7 +670,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -684,7 +684,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-robota-tron/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -697,9 +697,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 129 chars
 - ✅ `h1Count` — 1 H1: ['модульного робота Tron для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='модульного робота Tron для мероприятий'; passport='Аренда модульного робота Tron'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12180 visible chars; target 500
+- ✅ `usefulText` — 12638 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда модульного робота Tron'
 - ⚠️ `primaryKeywordInH1` — primary='аренда модульного робота Tron'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда модульного робота Tron'
@@ -712,7 +712,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -726,7 +726,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-senserobot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -739,9 +739,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 142 chars
 - ✅ `h1Count` — 1 H1: ['робота-шахматиста SenseRobot для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='робота-шахматиста SenseRobot для мероприятий'; passport='Аренда робота-шахматиста SenseRobot'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12397 visible chars; target 500
+- ✅ `usefulText` — 12855 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда робота-шахматиста SenseRobot'
 - ⚠️ `primaryKeywordInH1` — primary='аренда робота-шахматиста SenseRobot'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда робота-шахматиста SenseRobot'
@@ -754,7 +754,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -768,7 +768,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-sketchbot/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -781,9 +781,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 146 chars
 - ✅ `h1Count` — 1 H1: ['Sketchbot для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Sketchbot для мероприятий'; passport='Аренда Sketchbot'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12610 visible chars; target 500
+- ✅ `usefulText` — 13068 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Sketchbot'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Sketchbot'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Sketchbot'
@@ -796,7 +796,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -810,7 +810,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-unitree-g1/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -823,9 +823,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 143 chars
 - ✅ `h1Count` — 1 H1: ['Unitree G1 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Unitree G1 для мероприятий'; passport='Аренда Unitree G1'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12348 visible chars; target 500
+- ✅ `usefulText` — 12806 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree G1'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Unitree G1'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree G1'
@@ -838,7 +838,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 22 internal hrefs
+- ✅ `internalLinks` — 20 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -852,7 +852,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 22 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
 
 ### /robots/arenda-unitree-go2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -865,9 +865,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 147 chars
 - ✅ `h1Count` — 1 H1: ['Unitree Go2 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Unitree Go2 для мероприятий'; passport='Аренда Unitree Go2'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12439 visible chars; target 500
+- ✅ `usefulText` — 12897 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree Go2'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Unitree Go2'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree Go2'
@@ -880,7 +880,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -894,7 +894,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-unitree-h2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -907,9 +907,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 152 chars
 - ✅ `h1Count` — 1 H1: ['Unitree H2 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Unitree H2 для мероприятий'; passport='Аренда Unitree H2'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12371 visible chars; target 500
+- ✅ `usefulText` — 12829 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree H2'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Unitree H2'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree H2'
@@ -922,7 +922,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -936,7 +936,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-unitree-r1/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -949,9 +949,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 156 chars
 - ✅ `h1Count` — 1 H1: ['Unitree R1 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Unitree R1 для мероприятий'; passport='Аренда Unitree R1'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12481 visible chars; target 500
+- ✅ `usefulText` — 12939 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Unitree R1'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Unitree R1'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Unitree R1'
@@ -964,7 +964,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -978,7 +978,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-uv-box/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -991,9 +991,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 132 chars
 - ✅ `h1Count` — 1 H1: ['интерактивной витрины UV-BOX для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='интерактивной витрины UV-BOX для мероприятий'; passport='Аренда интерактивной витрины UV-BOX'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12057 visible chars; target 500
+- ✅ `usefulText` — 12515 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда интерактивной витрины UV-BOX'
 - ⚠️ `primaryKeywordInH1` — primary='аренда интерактивной витрины UV-BOX'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда интерактивной витрины UV-BOX'
@@ -1006,7 +1006,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1020,7 +1020,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /robots/arenda-xiaomi-cyberdog-2/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1033,9 +1033,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 144 chars
 - ✅ `h1Count` — 1 H1: ['Xiaomi Cyberdog 2 для мероприятий']
 - ⚠️ `h1MatchesPassport` — rendered='Xiaomi Cyberdog 2 для мероприятий'; passport='Аренда Xiaomi Cyberdog 2'
-- ✅ `h2Present` — 7 H2
+- ✅ `h2Present` — 9 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 12706 visible chars; target 500
+- ✅ `usefulText` — 13164 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда Xiaomi Cyberdog 2'
 - ⚠️ `primaryKeywordInH1` — primary='аренда Xiaomi Cyberdog 2'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда Xiaomi Cyberdog 2'
@@ -1048,7 +1048,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: BreadcrumbList, Service
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1062,7 +1062,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 3 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 3 AI related pages; 18 rendered internal links
 
 ### /roboty-gumanoidy/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1075,9 +1075,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 117 chars
 - ✅ `h1Count` — 1 H1: ['Роботы-гуманоиды, которые держат внимание']
 - ⚠️ `h1MatchesPassport` — rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'
-- ✅ `h2Present` — 6 H2
+- ✅ `h2Present` — 8 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 8045 visible chars; target 500
+- ✅ `usefulText` — 8503 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
@@ -1090,7 +1090,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: CollectionPage
 - ⚠️ `breadcrumbs` — visible breadcrumbs missing
-- ✅ `internalLinks` — 26 internal hrefs
+- ✅ `internalLinks` — 24 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1104,7 +1104,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 26 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
 
 ### /roboty-sobaki/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1117,9 +1117,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 94 chars
 - ✅ `h1Count` — 1 H1: ['Роботы-собаки для событий и промо']
 - ⚠️ `h1MatchesPassport` — rendered='Роботы-собаки для событий и промо'; passport='Роботы-собаки для мероприятий'
-- ✅ `h2Present` — 6 H2
+- ✅ `h2Present` — 8 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 7563 visible chars; target 500
+- ✅ `usefulText` — 8021 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
@@ -1132,7 +1132,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: CollectionPage
 - ⚠️ `breadcrumbs` — visible breadcrumbs missing
-- ✅ `internalLinks` — 24 internal hrefs
+- ✅ `internalLinks` — 22 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1146,7 +1146,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 22 rendered internal links
 
 ### /compilations/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1159,9 +1159,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 110 chars
 - ✅ `h1Count` — 1 H1: ['Подборки роботов для аренды']
 - ✅ `h1MatchesPassport` — rendered='Подборки роботов для аренды'; passport='Подборки роботов для аренды'
-- ✅ `h2Present` — 4 H2
+- ✅ `h2Present` — 6 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5342 visible chars; target 500
+- ✅ `usefulText` — 3729 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
@@ -1174,7 +1174,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: CollectionPage
 - ⚠️ `breadcrumbs` — visible breadcrumbs missing
-- ✅ `internalLinks` — 24 internal hrefs
+- ✅ `internalLinks` — 21 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1188,7 +1188,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 21 rendered internal links
 
 ### /articles/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1201,9 +1201,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 101 chars
 - ✅ `h1Count` — 1 H1: ['Блог Кибер Гоши']
 - ✅ `h1MatchesPassport` — rendered='Блог Кибер Гоши'; passport='Блог Кибер Гоши'
-- ✅ `h2Present` — 3 H2
+- ✅ `h2Present` — 5 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5772 visible chars; target 500
+- ✅ `usefulText` — 8140 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='статьи о роботах для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='статьи о роботах для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='статьи о роботах для мероприятий'
@@ -1216,7 +1216,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ⚠️ `requiredSchemaTypes` — missing: BlogPosting; present: CollectionPage
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 26 internal hrefs
+- ✅ `internalLinks` — 23 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1230,7 +1230,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 26 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 23 rendered internal links
 
 ### /news/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1243,9 +1243,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 95 chars
 - ✅ `h1Count` — 1 H1: ['Новости']
 - ⚠️ `h1MatchesPassport` — rendered='Новости'; passport='Новости КИБЕР ПОРТАЛА'
-- ✅ `h2Present` — 1 H2
+- ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 2918 visible chars; target 500
+- ✅ `usefulText` — 3376 visible chars; target 500
 - ✅ `primaryKeywordInTitle` — primary='новости робототехники'
 - ⚠️ `primaryKeywordInH1` — primary='новости робототехники'
 - ✅ `primaryKeywordInFirstBlock` — primary='новости робототехники'
@@ -1258,7 +1258,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ⚠️ `requiredSchemaTypes` — missing: NewsArticle; present: CollectionPage
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 18 internal hrefs
+- ✅ `internalLinks` — 16 internal hrefs
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1272,7 +1272,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 18 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 16 rendered internal links
 
 ### /contacts/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1285,9 +1285,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 53 chars
 - ✅ `h1Count` — 1 H1: ['Контакты и заявка на робота']
 - ✅ `h1MatchesPassport` — rendered='Контакты и заявка на робота'; passport='Контакты и заявка на робота'
-- ✅ `h2Present` — 8 H2
+- ✅ `h2Present` — 10 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 2952 visible chars; target 300
+- ✅ `usefulText` — 3412 visible chars; target 300
 - ⚠️ `primaryKeywordInTitle` — primary='контакты КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='контакты КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='контакты КИБЕР ПОРТАЛ'
@@ -1300,7 +1300,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: ContactPage
 - ⚠️ `breadcrumbs` — visible breadcrumbs missing
-- ✅ `internalLinks` — 18 internal hrefs
+- ✅ `internalLinks` — 16 internal hrefs
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1314,7 +1314,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 18 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 16 rendered internal links
 
 ### /privacy-policy/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1327,9 +1327,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 52 chars
 - ✅ `h1Count` — 1 H1: ['Политика обработки персональных данных']
 - ⚠️ `h1MatchesPassport` — rendered='Политика обработки персональных данных'; passport='Политика конфиденциальности'
-- ✅ `h2Present` — 1 H2
+- ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 11756 visible chars; target 0
+- ✅ `usefulText` — 12048 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1342,7 +1342,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1356,7 +1356,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 
 ### /consent/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1369,9 +1369,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 55 chars
 - ✅ `h1Count` — 1 H1: ['Согласие на обработку персональных данных']
 - ✅ `h1MatchesPassport` — rendered='Согласие на обработку персональных данных'; passport='Согласие на обработку персональных данных'
-- ✅ `h2Present` — 1 H2
+- ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5911 visible chars; target 0
+- ✅ `usefulText` — 6225 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1384,7 +1384,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1398,7 +1398,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 
 ### /cookie-policy/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1411,9 +1411,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 50 chars
 - ✅ `h1Count` — 1 H1: ['Политика использования файлов cookie']
 - ⚠️ `h1MatchesPassport` — rendered='Политика использования файлов cookie'; passport='Политика cookie'
-- ✅ `h2Present` — 1 H2
+- ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 5307 visible chars; target 0
+- ✅ `usefulText` — 5616 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1426,7 +1426,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1440,7 +1440,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 
 ### /terms/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1453,9 +1453,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 41 chars
 - ✅ `h1Count` — 1 H1: ['Пользовательское соглашение']
 - ✅ `h1MatchesPassport` — rendered='Пользовательское соглашение'; passport='Пользовательское соглашение'
-- ✅ `h2Present` — 1 H2
+- ✅ `h2Present` — 3 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 6295 visible chars; target 0
+- ✅ `usefulText` — 6605 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInH1` — primary='документы КИБЕР ПОРТАЛ'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='документы КИБЕР ПОРТАЛ'
@@ -1468,7 +1468,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `jsonLdValid` — invalid scripts=0
 - ✅ `requiredSchemaTypes` — present: WebPage
 - ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
+- ✅ `internalLinks` — 18 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1482,7 +1482,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 
 ### /lead/request/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1495,9 +1495,51 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `description` — 49 chars
 - ✅ `h1Count` — 1 H1: ['Заявка на подбор робота']
 - ⚠️ `h1MatchesPassport` — rendered='Заявка на подбор робота'; passport='Заявка на аренду робота'
-- ✅ `h2Present` — 3 H2
+- ✅ `h2Present` — 5 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 2375 visible chars; target 0
+- ✅ `usefulText` — 2833 visible chars; target 0
+- ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
+- ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
+- ⚠️ `secondaryKeywords` — missing: форма заявки робот, подобрать робота на мероприятие
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, WebPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 16 internal hrefs
+- ⚠️ `cta` — required CTA target missing
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 143 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие
+- ✅ `questionAnswerBlocks` — 2 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 0 FAQ questions
+- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 0 AI related pages; 16 rendered internal links
+
+### /lead/thanks/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/lead/thanks/, got https://www.kiber-portal.ru/lead/thanks/
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
+- ✅ `title` — Заявка принята — КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Заявка принята — КИБЕР ПОРТАЛ'; passport='Спасибо за заявку — КИБЕР ПОРТАЛ'
+- ✅ `description` — 54 chars
+- ✅ `h1Count` — 1 H1: ['Спасибо, бриф принят']
+- ⚠️ `h1MatchesPassport` — rendered='Спасибо, бриф принят'; passport='Спасибо за заявку'
+- ✅ `h2Present` — 6 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 2319 visible chars; target 0
 - ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
 - ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
@@ -1514,48 +1556,6 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ⚠️ `cta` — required CTA target missing
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
-- ✅ `aiSummary` — 143 chars
-- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие
-- ✅ `questionAnswerBlocks` — 2 questions; target 3
-- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
-- ✅ `structuredFacts` — structured fact labels present
-- ✅ `faqQuestions` — 0 FAQ questions
-- ✅ `llmsTxtCoverage` — route not listed in public/llms.txt
-- ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
-- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
-- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
-
-### /lead/thanks/ — ⚠️ warning
-- ✅ `httpStatusStatic` — rendered HTML exists
-- ✅ `urlHumanReadable` — latin lowercase slug without random ids
-- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
-- ✅ `canonical` — expected https://www.kiber-portal.ru/lead/thanks/, got https://www.kiber-portal.ru/lead/thanks/
-- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
-- ✅ `title` — Заявка принята — КИБЕР ПОРТАЛ
-- ⚠️ `titleMatchesPassport` — rendered='Заявка принята — КИБЕР ПОРТАЛ'; passport='Спасибо за заявку — КИБЕР ПОРТАЛ'
-- ✅ `description` — 54 chars
-- ✅ `h1Count` — 1 H1: ['Спасибо, бриф принят']
-- ⚠️ `h1MatchesPassport` — rendered='Спасибо, бриф принят'; passport='Спасибо за заявку'
-- ✅ `h2Present` — 4 H2
-- ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 1861 visible chars; target 0
-- ⚠️ `primaryKeywordInTitle` — primary='заявка на аренду робота'
-- ⚠️ `primaryKeywordInH1` — primary='заявка на аренду робота'
-- ⚠️ `primaryKeywordInFirstBlock` — primary='заявка на аренду робота'
-- ⚠️ `secondaryKeywords` — missing: форма заявки робот, подобрать робота на мероприятие
-- ✅ `meaningfulImageAlts` — missing alt count 0
-- ✅ `ogTitle` — present
-- ✅ `ogDescription` — present
-- ✅ `ogImage` — present
-- ✅ `twitterCard` — present
-- ✅ `jsonLdValid` — invalid scripts=0
-- ✅ `requiredSchemaTypes` — present: BreadcrumbList, WebPage
-- ✅ `breadcrumbs` — present or not required
-- ✅ `internalLinks` — 20 internal hrefs
-- ⚠️ `cta` — required CTA target missing
-- ✅ `viewport` — width=device-width, initial-scale=1
-- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
 - ✅ `aiSummary` — 137 chars
 - ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, заявка на аренду робота, форма заявки робот, подобрать робота на мероприятие
 - ✅ `questionAnswerBlocks` — 2 questions; target 3
@@ -1566,5 +1566,5 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 0 AI related pages; 20 rendered internal links
+- ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
 

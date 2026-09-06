@@ -308,5 +308,22 @@
       ],
       "status": "owner_design_approved"
     }
+  ],
+  "approvedPageTemplates": [
+    {
+      "key": "article_template",
+      "name": "Шаблон статьи / article_detail",
+      "path": "/preview/kiber-94/article-blocks/",
+      "status": "owner_design_structure_meaning_approved",
+      "approvedAt": "2026-09-04T18:36:00Z",
+      "approvedBy": "Александр Маркин",
+      "viewports": [
+        "mobile",
+        "tablet",
+        "desktop"
+      ],
+      "record": "data/review/kiber-94-article-template-design-structure-approval.json",
+      "scope": "canonical article template design, structure, and semantic block contract; no production/merge/live-routing approval"
+    }
   ]
 }

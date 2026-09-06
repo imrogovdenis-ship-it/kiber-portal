@@ -1,0 +1,46 @@
+{
+  "taskId": "kiber-article-unitree-g1-r1-h2-20260905",
+  "pageType": "article_detail",
+  "targetSlug": "sravnenie-unitree-g1-r1-h2",
+  "sourceDocuments": [
+    {
+      "label": "source article draft",
+      "pathOrUrl": "docs/source/unitree-g1-r1-h2.md",
+      "sourceType": "markdown",
+      "notes": "Provide factual source text; Claude must not invent availability/prices."
+    }
+  ],
+  "instructions": "Transform the source into a KIBER article_detail content package using the approved ArticleBlocksTemplate contract. Return only structured JSON fields, not prose outside JSON.",
+  "requiredBlocks": [
+    "hero",
+    "seoIntro",
+    "plainText",
+    "goshaQuote",
+    "faq",
+    "cta2",
+    "catalogBlock",
+    "relatedArticles"
+  ],
+  "preferredInternalLinks": [
+    "/robots/arenda-unitree-g1/",
+    "/compilations/roboty-gumanoidy/"
+  ],
+  "linearIssue": "KIBER-94",
+  "ownerReviewRequired": true,
+  "forbiddenChanges": [
+    "design",
+    "production",
+    "dns",
+    "secrets",
+    "analytics",
+    "liveLeadRouting",
+    "templates",
+    "styles",
+    "mainBranch",
+    "autoMerge"
+  ],
+  "output": {
+    "packagePath": "data/content-inbox/claude/packages/kiber-article-unitree-g1-r1-h2-20260905.content-package.json",
+    "format": "kiber_claude_content_package_json"
+  }
+}

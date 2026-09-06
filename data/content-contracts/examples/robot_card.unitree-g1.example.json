@@ -1,0 +1,85 @@
+{
+  "contentPackageVersion": "1.0",
+  "pageType": "robot_card",
+  "slug": "arenda-unitree-g1",
+  "reviewStatus": "draft",
+  "sourceDocuments": [
+    {
+      "path": "src/content/robots.generated.json",
+      "status": "existing_site"
+    }
+  ],
+  "seo": {
+    "metaTitle": "Аренда робота-гуманоида Unitree G1 | КИБЕР ПОРТАЛ",
+    "metaDescription": "Unitree G1 для выставок, презентаций и промо: робот встречает гостей, двигается, привлекает внимание и работает с оператором.",
+    "canonicalPath": "/robots/arenda-unitree-g1/",
+    "primaryKeyword": "аренда робота-гуманоида Unitree G1",
+    "secondaryKeywords": [
+      "робот гуманоид на мероприятие",
+      "Unitree G1 на выставку",
+      "аренда роботов для презентации"
+    ],
+    "h1": "Аренда робота-гуманоида Unitree G1"
+  },
+  "aiVisibility": {
+    "aiSummary": "Кибер Гоша — брендированный сценарий аренды робота-гуманоида Unitree G1 для мероприятий. Робот помогает привлечь внимание гостей на выставках, презентациях, корпоративах и промо-акциях. Команда КИБЕР ПОРТАЛА готовит сценарий, доставляет робота на площадку и сопровождает его оператором."
+  },
+  "blocks": {
+    "hero": {
+      "h1": "Аренда робота-гуманоида Unitree G1",
+      "priceStatus": "active",
+      "priceDisplay": "от 35 000 ₽ / час"
+    },
+    "aiSummary": {
+      "paragraph": "..."
+    },
+    "includedService": {
+      "title": "Не просто робот, а готовый выход на площадку",
+      "items": [
+        "Подготовим сценарий появления робота под формат события и аудиторию гостей."
+      ]
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Можно ли арендовать Unitree G1 на выставку?",
+          "answer": "Да, робот подходит для welcome-зоны, стенда и презентации. Финальный сценарий и тайминг согласуются заранее."
+        }
+      ]
+    }
+  },
+  "media": [
+    {
+      "mediaId": "unitree-g1-hero",
+      "role": "hero",
+      "src": "/images/...webp",
+      "alt": "Робот-гуманоид Unitree G1 на белом фоне",
+      "actualDescription": "Робот-гуманоид Unitree G1 стоит в полный рост на светлом фоне.",
+      "seoAlt": "Аренда робота-гуманоида Unitree G1 для презентации и выставочного стенда",
+      "caption": "Unitree G1 для событий",
+      "sourceStatus": "existing_site",
+      "rightsStatus": "needs_rights_review"
+    }
+  ],
+  "internalLinks": {
+    "robotSlugs": [
+      "arenda-unitree-r1",
+      "arenda-unitree-h2"
+    ],
+    "articleSlugs": [],
+    "compilationSlugs": [
+      "roboty-gumanoidy"
+    ]
+  },
+  "schema": {
+    "types": [
+      "Service",
+      "BreadcrumbList"
+    ]
+  },
+  "review": {
+    "notes": [
+      "Example only; price must be checked against approved tariff data."
+    ]
+  }
+}

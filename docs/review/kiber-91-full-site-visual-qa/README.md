@@ -49,6 +49,17 @@ Routes:
 - mobile/tablet rules without horizontal overflow;
 - preserve approved media aspect-ratio distinctions: HomeHero mobile/tablet 16:9 contain; RobotPage hero mobile/tablet remains 1:1 contained.
 
+
+## Approved article template — KIBER-94 / 2026-09-04
+
+Александр утвердил `/preview/kiber-94/article-blocks/` как канонический шаблон статей Блога Кибер Гоши: дизайн, структуру и смыслы для desktop/ПК, tablet/планшета и mobile/телефона.
+
+> Всё утверждаю эту страницу шаблон для статей в том виде в котором она есть дизайн структуру и смыслы как ПК версию такой мобильную для планшетов вносить все необходимые информацию в проект файлы записываю всё что нужно
+
+Record: `data/review/kiber-94-article-template-design-structure-approval.json`
+
+Boundary: это approval шаблона статьи, не PR merge, не production/DNS/secrets/analytics/live lead routing и не массовая генерация статей без отдельного content/SEO-прохода.
+
 ## Automated audit
 
 - DOM/render checks: **45**

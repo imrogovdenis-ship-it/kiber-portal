@@ -1,49 +1,254 @@
 ---
-import type { CompilationTemplateData } from '../../lib/page-type-templates';
+import HomeFinalCta from '../blocks/HomeFinalCta.astro';
+import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
+import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
+import HomeImageCards from '../blocks/HomeImageCards.astro';
+import RobotCard from '../blocks/RobotCard.astro';
+import { homeCompilations } from '../../data/home-live';
+import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-template-data';
 
-const { template } = Astro.props as { template: CompilationTemplateData };
+const { template } = Astro.props as { template: CompilationPageTemplateData };
 ---
 
-<article class="page-template page-template--compilation" data-kiber-task="KIBER-94" data-page-type="compilation">
-  <header class="template-hero" data-block-id="hero">
-    <p class="template-eyebrow">{template.publicLabel}</p>
-    <h1>{template.seo.h1}</h1>
-    <p>{template.hero.text}</p>
-    <p class="template-ai-summary">{template.aiSummary}</p>
-  </header>
-
-  <section class="template-section" data-block-id="intro">
-    <h2>О подборке</h2>
-    <p>{template.hero.text}</p>
+<article class="humanoid-template" data-kiber-task="KIBER-94" data-page-type="compilation" data-template-status="draft_for_owner_review">
+  <section class="humanoid-template__hero" data-block-id="hero" aria-labelledby="page-title">
+    <div class="container humanoid-template__hero-inner">
+      <div class="humanoid-template__hero-copy">
+        <p class="humanoid-template__eyebrow">{template.hero.eyebrow}</p>
+        <h1 id="page-title">{template.seo.h1}</h1>
+        <p class="humanoid-template__lead">{template.hero.lead}</p>
+        <div class="humanoid-template__actions">
+          <a class="humanoid-template__button humanoid-template__button--primary" href={template.finalCta.secondaryCta.href}>Оставить заявку</a>
+          <a class="humanoid-template__button" href="#catalog">Смотреть модели</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="template-gallery" data-block-id="gallery" aria-label="Галерея подборки"></section>
-
-  <section class="template-section" data-block-id="scenarioExplanation">
-    {template.bodyBlocks.map((block) => <div><h2>{block.title}</h2><p>{block.text}</p></div>)}
+  <section class="humanoid-template__text container" data-block-id="intro" aria-labelledby="intro-title">
+    <h2 id="intro-title">{template.intro.title}</h2>
+    <div class="humanoid-template__prose">
+      {template.intro.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
   </section>
 
-  <section class="template-section" data-block-id="catalogBlock">
-    <h2>Роботы из подборки</h2>
-    <ul>{template.catalogItems.map((item) => <li>{item.title ?? item.text}</li>)}</ul>
+  <section class="humanoid-template__gosha-intro container" data-block-id="introGosha" aria-label="Вводный комментарий Кибер Гоши">
+    <HomeGoshaQuote {...template.gosha} />
   </section>
 
-  <nav class="template-related" data-block-id="relatedArticles" aria-label="Статьи по теме">
-    {template.relatedArticles.map((link) => <a href={link.href}>{link.label}</a>)}
-  </nav>
-
-  <section class="template-section" data-block-id="faq">
-    <h2>Вопросы и ответы</h2>
-    {template.faq.map((item) => <details open><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+  <section class="humanoid-template__gallery" data-block-id="gallery" aria-labelledby="gallery-title">
+    <div class="container humanoid-template__gallery-head">
+      <div class="humanoid-template__section-head">
+        <p class="humanoid-template__eyebrow">Галерея</p>
+        <h2 id="gallery-title">{template.gallery.title}</h2>
+        <span>{template.gallery.lead}</span>
+      </div>
+      <div class="humanoid-template__gallery-nav" aria-label="Навигация по галерее">
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev="[data-drag-slider='robot-humanoid-compilation-gallery']" aria-label="Предыдущие фотографии гуманоидов">‹</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next="[data-drag-slider='robot-humanoid-compilation-gallery']" aria-label="Следующие фотографии гуманоидов">›</button>
+      </div>
+    </div>
+    <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider="robot-humanoid-compilation-gallery" aria-label="Фотографии гуманоидных роботов: горизонтальный слайдер как на карточке робота">
+      {template.gallery.images.map((image, index) => (
+        <figure class="humanoid-template__gallery-item">
+          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+        </figure>
+      ))}
+    </div>
   </section>
 
-  <aside class="template-gosha" data-block-id="goshaCta">
-    <h2>Кибер Гоша подсказывает</h2>
-    <p>{template.cta.note ?? 'Подборку стоит обсуждать с менеджером: он сверит сценарий, дату, площадку и доступность моделей.'}</p>
-    <a class="template-button" href={template.cta.href}>{template.cta.label}</a>
-  </aside>
+  <section class="humanoid-template__guide container" data-block-id="choiceGuide" aria-labelledby="guide-title">
+    <div class="humanoid-template__section-head">
+      <p class="humanoid-template__eyebrow">Гид по выбору</p>
+      <h2 id="guide-title">{template.guide.title}</h2>
+      <span>{template.guide.lead}</span>
+    </div>
+    <div class="humanoid-template__steps">
+      {template.guide.steps.map((step, index) => (
+        <article class="humanoid-template__step">
+          <span>0{index + 1}</span>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
 
-  <nav class="template-related" data-block-id="otherCompilations" aria-label="Другие подборки">
-    {template.otherCompilations.map((link) => <a href={link.href}>{link.label}</a>)}
-  </nav>
+  <section class="humanoid-template__video container" data-block-id="video" aria-labelledby="video-title">
+    <div>
+      <p class="humanoid-template__eyebrow humanoid-template__eyebrow--video">Видео</p>
+      <h2 id="video-title">{template.video.title}</h2>
+      <p>{template.video.lead}</p>
+    </div>
+    <div class="humanoid-template__video-frame" role="img" aria-label={template.video.embedHint}>
+      <span>{template.video.embedHint}</span>
+    </div>
+  </section>
+
+  <section class="humanoid-template__scenarios" data-block-id="scenarioExplanation" aria-labelledby="scenarios-title">
+    <div class="container humanoid-template__section-head humanoid-template__section-head--scenarios-left">
+      <p class="humanoid-template__eyebrow">Сценарии</p>
+      <h2 id="scenarios-title">{template.scenarios.title}</h2>
+      <span>{template.scenarios.lead}</span>
+    </div>
+    <div class="container humanoid-template__scenario-head-row">
+      <div class="humanoid-template__gallery-nav" aria-label="Управление слайдером сценариев">
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev="[data-drag-slider='robot-humanoid-scenarios-slider']" aria-label="Предыдущий сценарий">‹</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next="[data-drag-slider='robot-humanoid-scenarios-slider']" aria-label="Следующий сценарий">›</button>
+      </div>
+    </div>
+    <div class="humanoid-template__scenario-strip humanoid-template__drag-gallery" data-drag-slider="robot-humanoid-scenarios-slider" aria-label="Сценарии аренды робота-гуманоида: горизонтальный слайдер">
+      {template.scenarios.items.map((item) => (
+        <article class="humanoid-template__scenario-card">
+          <div class="humanoid-template__scenario-video" role="img" aria-label={item.image.alt}>
+            <img src={item.image.src} alt={item.image.alt} loading="lazy" decoding="async" />
+          </div>
+          <div class="humanoid-template__scenario-caption"><h3>{item.title}</h3><p>{item.text}</p></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="humanoid-template__gosha-intro container" data-block-id="goshaConclusion" aria-label="Финальный комментарий Кибер Гоши">
+    <HomeGoshaQuote {...template.conclusionGosha} />
+  </section>
+
+  <section class="container" data-block-id="faq" aria-label="FAQ по сборке">
+    <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
+  </section>
+
+  <section class="humanoid-template__cta container" data-block-id="cta2" aria-label="Связаться с КИБЕР ПОРТАЛ">
+    <div data-block-id="goshaCta">
+      <HomeFinalCta {...template.finalCta} variant="robot-card-final" />
+    </div>
+  </section>
+
+  <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog container" data-block-id="catalogBlock" aria-labelledby="catalog-title">
+    <div class="vertical-slice__section-copy">
+      <p>{template.catalog.eyebrow}</p>
+      <h2 id="catalog-title">{template.catalog.title}</h2>
+      <p>{template.catalog.lead}</p>
+    </div>
+    <div class="vertical-slice__card-grid">
+      {template.catalog.robots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+    </div>
+  </section>
+
+  <section class="container" data-block-id="relatedArticles" aria-label="Статьи по теме">
+    <HomeImageCards id="compilation-related-articles" eyebrow="Блог Кибер Гоши" title={template.relatedArticles.title} description={template.relatedArticles.lead} cards={template.relatedArticles.cards} variant="article" />
+  </section>
+
+  <section class="humanoid-template__bottom-compilations container" data-block-id="otherCompilations" aria-label="Подборки">
+    <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
+  </section>
 </article>
+
+<script is:inline src="/scripts/robot-card-gallery.js" defer></script>
+
+<style>
+  .humanoid-template { display: grid; max-width: 100vw; overflow-x: clip; gap: 0; background: var(--kp-reference-sky); color: var(--kp-reference-ink); }
+  .humanoid-template section { scroll-margin-top: 6rem; }
+  .humanoid-template__hero { padding: clamp(2.25rem, 3.5vw, 3.25rem) 0 clamp(3.5rem, 6vw, 5.5rem); background: var(--kp-ink-dark); color: var(--kp-reference-white); }
+  .humanoid-template__hero-inner { display: grid; gap: clamp(2rem, 4vw, 4rem); }
+  .humanoid-template__hero-copy { display: grid; gap: 1.1rem; max-width: 62rem; }
+  .humanoid-template h1, .humanoid-template h2, .humanoid-template h3, .humanoid-template p, .humanoid-template span, .humanoid-template dl, .humanoid-template dt, .humanoid-template dd, .humanoid-template figure { margin: 0; }
+  .humanoid-template h1, .humanoid-template h2, .humanoid-template h3-card strong { font-family: var(--kp-font-heading); font-weight: 700; letter-spacing: -.03em; }
+  .humanoid-template h1 { max-width: 14ch; font-size: clamp(2.5rem, 5vw, 5.25rem); line-height: 1; }
+  .humanoid-template h2 { max-width: 58rem; font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg)); line-height: 1; }
+  .humanoid-template h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.05; }
+  .humanoid-template__eyebrow { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .humanoid-template__lead { max-width: 48rem; color: color-mix(in srgb, var(--kp-reference-white) 82%, transparent); font-size: clamp(1.08rem, 1.5vw, 1.35rem); line-height: 1.48; }
+
+  .humanoid-template__actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: .4rem; }
+  .humanoid-template__button { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; border: .0625rem solid color-mix(in srgb, var(--kp-reference-white) 28%, transparent); border-radius: var(--kp-reference-button-radius); padding: .95rem 1.55rem; color: var(--kp-reference-white); font-family: var(--kp-font-heading); font-weight: 700; text-decoration: none; }
+  .humanoid-template__button--primary { border-color: var(--kp-reference-blue); background: var(--kp-reference-blue); }
+  .humanoid-template__gosha-intro { padding-block: clamp(.98rem, 1.96vw, 1.8375rem) clamp(1.4rem, 2.8vw, 2.625rem); }
+  .humanoid-template__text, .humanoid-template__guide, .humanoid-template__video, .humanoid-template__cta { padding-block: clamp(3.5rem, 6vw, 5.25rem); }
+  .humanoid-template__text { display: grid; gap: 1.5rem; padding-block: clamp(2.45rem, 4.2vw, 3.675rem) clamp(2.45rem, 4.2vw, 3.675rem); }
+  .humanoid-template__prose { display: grid; grid-template-columns: 1fr; gap: .95rem; max-width: 72rem; }
+  .humanoid-template__prose p, .humanoid-template__section-head span, .humanoid-template__step p, .humanoid-template__video p, .humanoid-template__scenario-card p { color: var(--kp-reference-muted); font-size: clamp(.98rem, 1.1vw, 1.08rem); line-height: 1.58; }
+  .humanoid-template__gallery { --humanoid-gallery-height: clamp(29.12rem, 47.6vw, 35.49rem); display: grid; gap: 1.5rem; padding-block: clamp(2.5rem, 5vw, 4.5rem); background: var(--kp-reference-white); overflow: hidden; }
+  .humanoid-template__section-head { display: grid; gap: .8rem; max-width: 58rem; }
+  .humanoid-template__gallery-head .humanoid-template__section-head,
+  .humanoid-template__guide > .humanoid-template__section-head { margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .humanoid-template__section-head--scenarios-left { box-sizing: border-box; width: min(100% - (var(--kp-reference-page-gutter) * 2), var(--kp-reference-container)); max-width: none; margin-inline: auto; padding-inline: 0; padding-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .humanoid-template__gallery-head { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; }
+  .humanoid-template__gallery-nav { display: inline-flex; gap: .5rem; align-items: center; }
+  .humanoid-template__gallery-nav-button { display: inline-flex; width: 2.65rem; height: 2.65rem; align-items: center; justify-content: center; border: 0; border-radius: 999rem; background: var(--kp-reference-blue); color: white; font-family: var(--kp-font-heading); font-size: 1.7rem; font-weight: 700; line-height: 1; cursor: pointer; }
+  .humanoid-template__gallery-nav-button:focus-visible { outline: .1875rem solid var(--kp-reference-ink); outline-offset: .2rem; }
+  .humanoid-template__drag-gallery { display: flex; gap: clamp(.85rem, 1.5vw, 1.15rem); overflow-x: auto; overscroll-behavior-inline: contain; -webkit-overflow-scrolling: touch; scroll-snap-type: none; cursor: grab; user-select: none; touch-action: pan-y; scrollbar-width: none; }
+  .humanoid-template__drag-gallery::-webkit-scrollbar { display: none; }
+  .humanoid-template__drag-gallery.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+  .humanoid-template__gallery-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
+  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: auto; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: var(--kp-reference-white); scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: min(52rem, 88vw); object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
+  .humanoid-template__guide { display: grid; gap: 1.75rem; }
+  .humanoid-template__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .humanoid-template__step { position: relative; isolation: isolate; display: grid; min-height: clamp(13rem, 18vw, 16rem); align-content: center; gap: .8rem; overflow: hidden; border-radius: 1.5rem; padding: clamp(1.45rem, 2.4vw, 2.05rem); background: var(--kp-reference-white); }
+  .humanoid-template__step > span { position: absolute; inset: 50% auto auto 50%; z-index: -1; transform: translate(-50%, -50%); color: color-mix(in srgb, var(--kp-reference-blue) 9%, transparent); font-family: var(--kp-font-heading); font-size: clamp(8rem, 15vw, 13.5rem); font-weight: 800; line-height: .75; letter-spacing: -.08em; pointer-events: none; user-select: none; }
+  .humanoid-template__step h3, .humanoid-template__step p { position: relative; z-index: 1; }
+  .humanoid-template__video { display: grid; grid-template-columns: minmax(0, .68fr) minmax(22rem, 1fr); align-items: center; gap: clamp(1.5rem, 4vw, 4rem); }
+  .humanoid-template__video > div:first-child { display: grid; gap: .9rem; }
+  .humanoid-template__video .humanoid-template__eyebrow--video { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); }
+  .humanoid-template__video-frame { display: grid; min-height: clamp(18rem, 36vw, 30rem); place-items: center; border-radius: 1.6rem; background: radial-gradient(circle at 50% 45%, color-mix(in srgb, var(--kp-reference-blue) 28%, var(--kp-ink-dark)), var(--kp-ink-dark) 70%); color: white; font-family: var(--kp-font-heading); font-size: clamp(1.4rem, 2.8vw, 2.5rem); font-weight: 700; text-align: center; }
+  .humanoid-template__scenarios { display: grid; gap: 1.75rem; padding-block: clamp(3.5rem, 6vw, 5.25rem); background: var(--kp-reference-white); }
+  .humanoid-template__scenario-head-row { display: flex; justify-content: flex-end; margin-top: -3.25rem; pointer-events: none; }
+  .humanoid-template__scenario-head-row .humanoid-template__gallery-nav { pointer-events: auto; }
+  .humanoid-template__scenario-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
+  .humanoid-template__scenario-card { flex: 0 0 clamp(16rem, 22vw, 21rem); width: clamp(16rem, 22vw, 21rem); color: var(--kp-reference-ink); scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__scenario-video { overflow: hidden; border-radius: 1.45rem; background: var(--kp-ink-dark); aspect-ratio: 9 / 16; }
+  .humanoid-template__scenario-video img { display: block; width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; user-select: none; }
+  .humanoid-template__scenario-caption { display: grid; gap: .45rem; padding-top: .85rem; }
+  .humanoid-template__scenario-caption h3 { color: var(--kp-reference-ink); font-size: clamp(1.1rem, 1.45vw, 1.35rem); line-height: 1.08; }
+  .humanoid-template__scenario-caption p { color: var(--kp-reference-muted); font-size: .92rem; line-height: 1.45; }
+  .vertical-slice__section { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .vertical-slice__section--catalog { margin-top: clamp(2rem, 4vw, 3.5rem); }
+  .vertical-slice__section-copy { display: grid; gap: .55rem; max-width: 48rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
+  .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .vertical-slice__section-copy h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); }
+  .vertical-slice__section-copy p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  @media (max-width: 39.9375rem) { .vertical-slice__section-copy { margin-left: 0; } }
+  .vertical-slice__card-grid { display: grid; gap: clamp(1rem, 1.8vw, 1.5rem); width: 100%; }
+  .humanoid-template__bottom-compilations { padding-block: clamp(3.5rem, 6vw, 5.25rem) clamp(4rem, 7vw, 6rem); }
+  @media (min-width: 60rem) { .vertical-slice__card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (min-width: 40rem) and (max-width: 59.9375rem) { .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 74.9375rem) { .humanoid-template__video { grid-template-columns: 1fr; } .humanoid-template__gallery-head { display: grid; } .humanoid-template__gallery-nav { display: none; } .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 40rem) and (max-width: 59.9375rem) { .humanoid-template__steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 56rem) { .humanoid-template__prose, .humanoid-template__steps, .vertical-slice__card-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 39.9375rem) {
+    .humanoid-template__hero { padding-block: 1.75rem 2.8rem; }
+    .humanoid-template h2 { font-size: clamp(2.4rem, 5vw, var(--kp-reference-heading-lg)); }
+    .humanoid-template__actions { display: grid; grid-template-columns: 1fr; }
+    .humanoid-template__gallery-head .humanoid-template__section-head,
+    .humanoid-template__guide > .humanoid-template__section-head { margin-left: 0; }
+    .humanoid-template__section-head--scenarios-left { padding-left: 0; }
+    .humanoid-template__button { width: 100%; }
+    .humanoid-template__text, .humanoid-template__guide, .humanoid-template__video, .humanoid-template__cta { padding-block: 3rem; }
+    #catalog.vertical-slice__section {
+      box-sizing: border-box;
+      width: auto;
+      max-width: none;
+      margin-inline: var(--kp-reference-page-gutter);
+      padding-inline: 0;
+    }
+    #catalog .vertical-slice__section-copy,
+    #catalog .vertical-slice__card-grid {
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #catalog :global(.robot-card) {
+      max-width: 100%;
+    }
+    .humanoid-template__bottom-compilations { padding-block: 3rem 3.5rem; }
+    .humanoid-template__text { padding-block: 2.1rem 2.1rem; }
+    .humanoid-template__gallery-item { flex: 0 0 85%; aspect-ratio: 1 / 1; height: auto; }
+    .humanoid-template__scenario-card { flex-basis: 76vw; width: 76vw; }
+    .humanoid-template__gallery-item img { width: 100%; height: 100%; max-width: none; }
+    .humanoid-template__video-frame { min-height: 17rem; }
+  }
+</style>

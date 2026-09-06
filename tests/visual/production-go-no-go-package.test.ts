@@ -13,8 +13,8 @@ test('production go/no-go package records exact launch map and stays NO-GO', () 
   assert.equal(pack.productionDecision.productionDeployAllowed, false);
   assert.equal(pack.productionDecision.dnsChangeAllowed, false);
   assert.equal(pack.productionDecision.secretsChangeAllowed, false);
-  assert.equal(pack.currentBase.branch, 'codex/kiber-15-controlled-rebuild');
-  assert.equal(pack.currentBase.head, '96107ef');
+  assert.equal(pack.currentBase.branch, 'hermes/kiber-full-site-visual-qa-20260901');
+  assert.match(pack.currentBase.head, /^[0-9a-f]{12}$/);
   assert.equal(pack.readiness.routesChecked, 37);
   assert.equal(pack.readiness.robotRoutesChecked, 24);
   assert.deepEqual(pack.readiness.legalRoutesPresent, ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/']);
@@ -25,7 +25,8 @@ test('production go/no-go package lists concrete blockers and required owner dec
 
   assert(!pack.blockers.some((b: { id: string }) => b.id === 'real-public-contacts'));
   assert(pack.readyAreas.some((a: { id: string }) => a.id === 'public-contacts'));
-  assert(pack.blockers.some((b: { id: string }) => b.id === 'live-lead-routing'));
+  assert(pack.blockers.some((b: { id: string }) => b.id === 'release-candidate-package-stabilization'));
+  assert(pack.blockers.some((b: { id: string }) => b.id === 'production-live-lead-runtime'));
   assert(!pack.blockers.some((b: { id: string }) => b.id === 'media-rights-production-approval'));
   assert(pack.blockers.some((b: { id: string }) => b.id === 'analytics-provider-ids'));
   assert(pack.blockers.some((b: { id: string }) => b.id === 'explicit-production-permission'));
@@ -42,6 +43,7 @@ test('production go/no-go report and smoke gate are wired into CI', () => {
   assert.match(pkg.scripts.ci, /npm run test:production-go-no-go/);
   assert.match(read('scripts/production-go-no-go-smoke.mjs'), /NO_GO/);
   assert.match(report, /## Решение: NO-GO/);
-  assert.match(report, /Media rights для production assets/);
-  assert.match(report, /Реальные публичные контакты и реквизиты/);
+  assert.match(report, /Форма `Оставить заявку`/);
+  assert.match(report, /4 legal documents/);
+  assert.match(report, /Launch scope manifest/);
 });

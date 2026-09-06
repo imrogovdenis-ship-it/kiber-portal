@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "timestamp": "2026-09-05T10:18:07.938966+00:00",
+  "mode": "dry-run",
+  "policyStatus": "draft_safe_for_review",
+  "packagesChecked": 0,
+  "valid": 0,
+  "invalid": 0,
+  "results": [],
+  "publicationAllowed": false,
+  "requiresOwnerReview": true
+}

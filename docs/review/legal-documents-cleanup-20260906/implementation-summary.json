@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-06T13:09:39.334443+00:00",
+  "changes": [
+    {
+      "document": "Политика обработки персональных данных",
+      "action": "removed internal notice; converted extracted duplicate numbering into hierarchical numbering 1.1/1.2/etc; split embedded subparagraph numbering where needed",
+      "isolated_number_paragraphs_after": 0,
+      "embedded_subnumbering_after": 0
+    },
+    {
+      "document": "Политика использования файлов cookie",
+      "action": "removed internal notice; converted extracted duplicate numbering into hierarchical numbering 1.1/1.2/etc; split embedded subparagraph numbering where needed",
+      "isolated_number_paragraphs_after": 0,
+      "embedded_subnumbering_after": 0
+    },
+    {
+      "document": "Пользовательское соглашение",
+      "action": "removed internal notice"
+    },
+    {
+      "document": "Согласие на обработку персональных данных",
+      "action": "removed internal notice"
+    }
+  ],
+  "verification": [
+    "legal-four-documents 4/4 pass",
+    "test:page-seo-components pass",
+    "test:production-go-no-go pass",
+    "build:preview pass",
+    "rendered forbidden phrase grep: 0 hits",
+    "privacy/cookie isolated number paragraphs: 0",
+    "privacy/cookie embedded subnumbering inside same paragraph: 0",
+    "staging legal routes HTTP 200 + no forbidden notices"
+  ],
+  "staging": "https://alex-kiber-mobile-review-d190abc.38.180.37.42.nip.io/"
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-06T12:25:46.485155+00:00",
+  "ownerFeedback": "Еще немного уменьши",
+  "change": "Popup reduced again: desktop panel 800x544 on 1280x900; mobile panel 366x427 on 390x844; buttons remain text-only.",
+  "screenshots": [
+    "popup-desktop-smaller.png",
+    "popup-mobile-smaller.png"
+  ],
+  "stagingUrl": "https://alex-kiber-mobile-review-d190abc.38.180.37.42.nip.io/",
+  "checks": [
+    "popup_test pass",
+    "contact_lead_visual pass",
+    "build_preview pass",
+    "staging HTTP 200/noindex pass"
+  ]
+}

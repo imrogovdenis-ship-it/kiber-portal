@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-production-go-no-go",
-  "generatedAt": "2026-08-30T08:17:53Z",
+  "generatedAt": "2026-09-06T13:32:37.469052+00:00",
   "currentBase": {
     "repository": "imrogovdenis-ship-it/kiber-portal",
     "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
-    "branch": "codex/kiber-15-controlled-rebuild",
-    "head": "96107ef",
-    "headTitle": "feat: add preview-safe api leads endpoint (#60)"
+    "branch": "hermes/kiber-full-site-visual-qa-20260901",
+    "head": "17c57f65943f",
+    "headTitle": "PR8 stabilization with approved form, legal cleanup, phone and popup work"
   },
   "productionDecision": {
     "status": "NO_GO",
-    "summary": "Controlled rebuild is ready for a protected non-domain server preview, while production launch remains blocked by live lead routing, analytics/consent activation, final business/legal launch confirmation, and explicit production/DNS permission.",
+    "summary": "Approved legal documents, public contacts, messenger popup and lead form are now closed for RC scope; production launch remains blocked by RC packaging/commit state, production live lead runtime/secrets deployment decision, analytics/cookie activation decision, and explicit production/DNS permission.",
     "productionDeployAllowed": false,
     "dnsChangeAllowed": false,
     "secretsChangeAllowed": false,
@@ -33,7 +33,11 @@
     "crawlSource": "docs/review/launch-readiness-crawl/report.json",
     "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json",
     "publicContactsApproved": true,
-    "publicContactsEvidence": "Owner provided phone, email, Telegram/WhatsApp phone, region, legal name, address and approved preview/PR replacement on 2026-08-30."
+    "publicContactsEvidence": "Owner approved new public phone +7 (906) 730-96-91, messenger links and legal document phone replacement on 2026-09-06.",
+    "legalDocumentsApproved": true,
+    "leadFormVisualApproved": true,
+    "leadRoutingStagingFunctionTested": true,
+    "launchScopeManifest": "data/review/launch-scope-manifest.json"
   },
   "readyAreas": [
     {
@@ -48,8 +52,8 @@
     },
     {
       "id": "legal-static-pages",
-      "status": "present_needs_final_business_confirmation",
-      "evidence": "/privacy-policy/, /consent/, /cookie-policy/, /terms/ are present in readiness crawl and cross-linked"
+      "status": "owner_approved_closed",
+      "evidence": "All four legal docs approved by Александр on 2026-09-06; see docs/review/legal-documents-cleanup-20260906/OWNER_APPROVAL_FOUR_LEGAL_DOCUMENTS.md"
     },
     {
       "id": "contacts-lead-visual",
@@ -69,32 +73,47 @@
     {
       "id": "public-contacts",
       "status": "approved_by_owner_for_preview_pr",
-      "evidence": "Owner input 2026-08-30: phone +7 985 266-65-82, email markinas28@yandex.ru, Telegram/WhatsApp phone, Москва, ИП Маркин Александр Сергеевич, ИНН/ОГРНИП from legal docs, address Нижний Сусальный переулок, 9, стр. 4А."
+      "evidence": "Owner input 2026-08-30: phone +7 (906) 730-96-91, email markinas28@yandex.ru, Telegram/WhatsApp by new phone and MAX public link, Москва, ИП Маркин Александр Сергеевич, ИНН/ОГРНИП from legal docs, address Нижний Сусальный переулок, 9, стр. 4А."
+    },
+    {
+      "id": "lead-form-popup",
+      "status": "owner_visual_approved_and_live_function_tested",
+      "evidence": "Form approved; overflow fixed; source /api/leads live function test delivered amoCRM unsorted lead and Telegram duplicate. See docs/review/contact-lead-form-popup-20260906/"
+    },
+    {
+      "id": "messenger-popup",
+      "status": "implemented_verified",
+      "evidence": "Написать нам popup with MAX/WhatsApp/Telegram verified under docs/review/contact-messenger-popup-20260906/"
+    },
+    {
+      "id": "launch-scope-manifest",
+      "status": "created",
+      "evidence": "data/review/launch-scope-manifest.json separates approved RC scope from raw/review/local artifacts"
     }
   ],
   "blockers": [
     {
-      "id": "live-lead-routing",
+      "id": "release-candidate-package-stabilization",
       "severity": "blocking",
-      "decisionNeeded": "Утвердить live destinations и fallback-политику для заявок.",
-      "currentState": "lead routing disabled; destinations = []"
+      "decisionNeeded": "Собрать чистый commit/PR-ready RC package: approved launch scope vs raw/review artifacts, full gates, staging image evidence.",
+      "currentState": "launch-scope manifest created; workspace still contains large uncommitted PR8/content/evidence layer"
+    },
+    {
+      "id": "production-live-lead-runtime",
+      "severity": "blocking",
+      "decisionNeeded": "Решить, включаем ли dynamic/API runtime + env secrets для real public form delivery перед production, и где именно.",
+      "currentState": "source /api/leads live function test passed; current public staging container is static nginx review runtime; production env live routing remains disabled"
     },
     {
       "id": "analytics-provider-ids",
       "severity": "blocking",
-      "decisionNeeded": "Выбрать analytics provider, consent/cookie policy и разрешить конкретные IDs/cookies.",
+      "decisionNeeded": "Либо явно отложить analytics на post-launch, либо выбрать provider/IDs/goals/cookies и approve consent behavior.",
       "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
-    },
-    {
-      "id": "business-legal-launch-confirmation",
-      "severity": "blocking",
-      "decisionNeeded": "Подтвердить, что legal docs, цены, disclaimers, контакты и launch-copy можно публиковать вместе.",
-      "currentState": "content package workflow says production publish remains human-gated"
     },
     {
       "id": "explicit-production-permission",
       "severity": "blocking",
-      "decisionNeeded": "Дать явную команду на production deploy/DNS/секреты после закрытия предыдущих блокеров.",
+      "decisionNeeded": "После RC package и gated decisions дать отдельную явную команду на production deploy/DNS/secrets.",
       "currentState": "production deploy permission is false"
     }
   ],
@@ -156,15 +175,15 @@
     }
   ],
   "ownerDecisionChecklist": [
-    "Утвердить live lead destination/backend и fallback-политику.",
-    "Утвердить analytics provider, public IDs, goals и cookie/consent policy.",
-    "Подтвердить финальный business/legal launch package: legal docs, prices, disclaimers, contacts, launch copy.",
-    "Дать отдельное явное permission на production deploy/DNS/secrets/live routing после закрытия блокеров."
+    "Утвердить/закоммитить clean RC package после full gates.",
+    "Решить dynamic/API runtime для формы: staging-only before launch или сразу production runtime gate.",
+    "Решить analytics: defer post-launch или включать с отдельным approval.",
+    "После закрытия предыдущих пунктов дать отдельное production deploy/DNS/secrets permission."
   ],
   "nextSafeWork": [
-    "Обновить protected staging alex-kiber-staging до текущего PR #8 HEAD и дать прямую sslip.io ссылку с Basic Auth.",
-    "Провести быстрый staging smoke/crawl: health, главная, robots/category/card/contact/lead pages, 404, noindex, отсутствие live analytics и live routing.",
-    "Обновить stale readiness/go-no-go reports после последних merges, чтобы они отражали 37 routes, 24 robots, 4 production blockers и HEAD 96107ef.",
-    "Отложить analytics IDs, live lead routing, чат/магазин/PDF/редакторские фичи до review первой опубликованной версии."
+    "Довести release-candidate stabilization package до commit/PR-ready state.",
+    "Прогнать full RC gates: launch-scope, legal, form, lead API, SEO, preview/production build.",
+    "Обновить staging одной RC-версией и проверить основные routes.",
+    "После RC — поднять dynamic lead-runtime staging или готовить final production/DNS request."
   ]
 }

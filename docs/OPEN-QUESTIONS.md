@@ -16,4 +16,4 @@
 | Решение | Evidence |
 |---|---|
 | Media rights по 24 full robot cards | `data/review/media-rights-robot-cards.json`, `docs/review/media-rights/robot-cards/`, owner approval 2026-08-29 |
-| Контакты и реквизиты | Owner input 2026-08-30: +7 985 266-65-82, markinas28@yandex.ru, Telegram/WhatsApp by phone, Москва, ИП Маркин Александр Сергеевич, ИНН 771898397717, ОГРНИП 326774600084499, Нижний Сусальный переулок, 9, стр. 4А |
+| Контакты и реквизиты | Owner input 2026-08-30: +7 (906) 730-96-91, markinas28@yandex.ru, Telegram/WhatsApp by phone, Москва, ИП Маркин Александр Сергеевич, ИНН 771898397717, ОГРНИП 326774600084499, Нижний Сусальный переулок, 9, стр. 4А |

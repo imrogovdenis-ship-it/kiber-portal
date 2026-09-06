@@ -1,0 +1,107 @@
+[
+  {
+    "viewport": {
+      "name": "desktop",
+      "width": 1280,
+      "height": 900,
+      "file": "lead-form-popup-desktop-no-overflow.png"
+    },
+    "metrics": {
+      "viewport": {
+        "w": 1280,
+        "h": 900
+      },
+      "body": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "overflowX": 0
+      },
+      "panel": {
+        "x": 388,
+        "w": 504,
+        "right": 892,
+        "scrollWidth": 504,
+        "clientWidth": 504,
+        "overflowX": 0,
+        "overflowY": 0,
+        "cssOverflow": "auto"
+      },
+      "honeypot": {
+        "x": -892,
+        "w": 1,
+        "right": -891
+      }
+    },
+    "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop-no-overflow.png"
+  },
+  {
+    "viewport": {
+      "name": "mobile390",
+      "width": 390,
+      "height": 844,
+      "file": "lead-form-popup-mobile-no-overflow.png"
+    },
+    "metrics": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "body": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "overflowX": 0
+      },
+      "panel": {
+        "x": 12,
+        "w": 366,
+        "right": 378,
+        "scrollWidth": 366,
+        "clientWidth": 366,
+        "overflowX": 0,
+        "overflowY": 0,
+        "cssOverflow": "auto"
+      },
+      "honeypot": {
+        "x": -378,
+        "w": 1,
+        "right": -377
+      }
+    },
+    "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile-no-overflow.png"
+  },
+  {
+    "viewport": {
+      "name": "mobile360",
+      "width": 360,
+      "height": 740,
+      "file": "lead-form-popup-mobile360-no-overflow.png"
+    },
+    "metrics": {
+      "viewport": {
+        "w": 360,
+        "h": 740
+      },
+      "body": {
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "overflowX": 0
+      },
+      "panel": {
+        "x": 12,
+        "w": 336,
+        "right": 348,
+        "scrollWidth": 336,
+        "clientWidth": 336,
+        "overflowX": 0,
+        "overflowY": 0,
+        "cssOverflow": "auto"
+      },
+      "honeypot": {
+        "x": -348,
+        "w": 1,
+        "right": -347
+      }
+    },
+    "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile360-no-overflow.png"
+  }
+]

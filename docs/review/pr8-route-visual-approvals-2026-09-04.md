@@ -14,6 +14,7 @@
 | Подборки | `/compilations/` | approved | approved | approved |
 | Блог Кибер Гоши | `/articles/` | approved | approved | approved |
 | Карточка робота | `/preview/kiber-94/robot-card/arenda-unitree-g1/` | approved | approved | approved |
+| Шаблон статьи / article_detail | `/preview/kiber-94/article-blocks/` | approved | approved | approved |
 
 ## Shared CTA2 note
 
@@ -27,6 +28,17 @@
 - Robot-card approval record: `data/review/kiber-94-robot-card-design-structure-approval.json`
 - Current review URL base: https://alex-kiber-pr8-footer-review.38.180.37.42.nip.io
 - Recorded at HEAD: `d190abc3acd1a86b8b551834bfd90e537aa3c06a`
+
+
+## Article template approval — 2026-09-04
+
+Александр утвердил страницу-шаблон статьи `/preview/kiber-94/article-blocks/` как канонический шаблон статей: дизайн, структуру и смыслы для ПК, планшета и мобильной версии.
+
+> Всё утверждаю эту страницу шаблон для статей в том виде в котором она есть дизайн структуру и смыслы как ПК версию такой мобильную для планшетов вносить все необходимые информацию в проект файлы записываю всё что нужно
+
+Record: `data/review/kiber-94-article-template-design-structure-approval.json`
+
+Boundary: это template/visual approval, не merge/prod/DNS/secrets/analytics/live lead routing approval и не разрешение на массовую генерацию статей без отдельного content/SEO-прохода.
 
 ## Safety boundary
 

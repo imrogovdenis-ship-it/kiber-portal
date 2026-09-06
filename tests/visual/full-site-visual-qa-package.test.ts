@@ -77,7 +77,7 @@ test('KIBER-91 records design findings without granting production approval', ()
 test('KIBER-91 records owner approval for named PR8 routes across mobile tablet and desktop only', () => {
   assert.equal(qa.approval.status, 'OWNER_DESIGN_APPROVED_FOR_NAMED_ROUTES');
   assert.equal(qa.approval.ownerDesignApprovalsRecord, 'data/review/pr8-route-visual-approvals.json');
-  assert.equal(routeApprovals.status, 'owner_design_approved_for_named_routes');
+  assert.equal(routeApprovals.status, 'owner_design_approved_for_named_routes_and_page_templates');
   assert.equal(routeApprovals.approvedBy, 'Александр Маркин');
   assert.match(routeApprovals.ownerQuote, /главное подборки блок кибергоши и карточка робота/);
 
@@ -86,12 +86,13 @@ test('KIBER-91 records owner approval for named PR8 routes across mobile tablet 
     ['compilations', '/compilations/'],
     ['articles', '/articles/'],
     ['robot_card', '/preview/kiber-94/robot-card/arenda-unitree-g1/'],
+    ['article_template', '/preview/kiber-94/article-blocks/'],
   ]);
   assert.equal(routeApprovals.routes.length, expected.size);
-  assert.equal(qa.ownerDesignApprovals.length, expected.size);
+  assert.equal(qa.ownerDesignApprovals.length, 4);
 
   for (const approval of routeApprovals.routes) {
-    assert.equal(approval.status, 'owner_design_approved');
+    assert.ok(['owner_design_approved', 'owner_design_structure_meaning_approved'].includes(approval.status));
     assert.equal(expected.get(approval.key), approval.path);
     assert.deepEqual(approval.viewports, ['mobile', 'tablet', 'desktop']);
   }

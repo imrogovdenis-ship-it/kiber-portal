@@ -72,6 +72,7 @@
 }
 
 html {
+  overflow-x: hidden;
   background: var(--kp-reference-sky);
 }
 
@@ -83,6 +84,7 @@ html {
 
 body {
   min-width: 20rem;
+  padding-top: 4.25rem;
   overflow-x: hidden;
   background: var(--kp-reference-sky);
   color: var(--kp-reference-ink);
@@ -117,8 +119,10 @@ select:focus-visible {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   height: 4.25rem;
   border-bottom: 0.0625rem solid color-mix(in srgb, var(--kp-reference-blue-deep) 10%, transparent);

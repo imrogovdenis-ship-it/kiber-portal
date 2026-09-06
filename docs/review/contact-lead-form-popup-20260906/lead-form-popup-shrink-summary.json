@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-09-06T12:49:12.470516+00:00",
+  "change": "Lead form popup proportionally reduced after owner feedback that it looked normal but too large.",
+  "beforeApprox": {
+    "desktop": "544x684",
+    "mobile": "366x666"
+  },
+  "afterApprox": {
+    "desktop": "504x639",
+    "mobile": "366x574"
+  },
+  "visualProportions": "same structure, smaller panel/padding/gaps/title/inputs/button/legal text",
+  "fields": "unchanged: name required, phone/contact required, email optional, required consent links",
+  "verification": [
+    "lead_form_popup_test pass",
+    "api_leads_endpoint_test 18/18 pass",
+    "contact_lead_visual pass",
+    "build_preview pass",
+    "staging HTTP 200 + noindex + healthy container"
+  ],
+  "screenshots": [
+    "lead-form-popup-desktop-shrunk.png",
+    "lead-form-popup-mobile-shrunk.png"
+  ],
+  "staging": "https://alex-kiber-mobile-review-d190abc.38.180.37.42.nip.io/"
+}

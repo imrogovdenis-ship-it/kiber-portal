@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "status": "draft_safe_for_review",
+  "purpose": "Guardrails for Claude→GitHub→Hermes content intake.",
+  "allowedInputPaths": [
+    "data/content-inbox/claude/tasks/**",
+    "data/content-inbox/claude/packages/**"
+  ],
+  "allowedGeneratedReportPaths": [
+    "data/content-inbox/claude/reports/**",
+    "docs/review/claude-content-intake/**"
+  ],
+  "allowedPreviewOutputPaths": [
+    "src/pages/preview/kiber-94/**",
+    "src/lib/kiber94-*.ts",
+    "docs/review/claude-content-intake/**"
+  ],
+  "forbiddenPaths": [
+    ".env",
+    ".env.*",
+    "src/styles/**",
+    "src/components/layout/Header.astro",
+    "src/components/layout/Footer.astro",
+    "src/components/templates/**",
+    ".github/workflows/**",
+    "Dockerfile",
+    "docker-compose*.yml",
+    "data/lead/**",
+    "data/analytics/**"
+  ],
+  "forbiddenActions": [
+    "push_to_main",
+    "merge_pr",
+    "production_deploy",
+    "dns_change",
+    "secret_change",
+    "analytics_enable",
+    "live_lead_routing_enable",
+    "approved_design_change",
+    "mass_generation_without_owner_approval"
+  ],
+  "requiredChecks": [
+    "python3 scripts/intake_claude_content_packages.py --dry-run --write-report",
+    "python3 scripts/validate_claude_content_contracts.py",
+    "node --test tests/content-contracts/claude-content-inbox.test.mjs",
+    "npm run build:preview"
+  ],
+  "publicationBoundary": "Valid packages may produce preview/draft PR only. Publication requires separate human approval, merge, release candidate and production/DNS permission."
+}

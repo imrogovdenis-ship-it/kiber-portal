@@ -1,0 +1,49 @@
+{
+  "capturedAt": "2026-09-06T12:48:08.806Z",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop-shrunk",
+        "width": 1280,
+        "height": 900
+      },
+      "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop-shrunk.png",
+      "data": {
+        "panel": {
+          "x": 388,
+          "y": 130.59375,
+          "w": 504,
+          "h": 638.796875
+        },
+        "viewport": {
+          "w": 1280,
+          "h": 900
+        },
+        "fits": true,
+        "title": "Оставьте заявку"
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile-shrunk",
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile-shrunk.png",
+      "data": {
+        "panel": {
+          "x": 12,
+          "y": 258.375,
+          "w": 366,
+          "h": 573.625
+        },
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "fits": true,
+        "title": "Оставьте заявку"
+      }
+    }
+  ]
+}

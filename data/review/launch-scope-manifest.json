@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-06T13:30:55.561501+00:00",
+  "status": "release_candidate_stabilization_manifest",
+  "repository": "imrogovdenis-ship-it/kiber-portal",
+  "workdir": "/home/alex/projects/kiber-portal-pr8",
+  "branch": "hermes/kiber-full-site-visual-qa-20260901",
+  "head": "17c57f65943fe5f5949a45f1084170e232562659",
+  "decision": "RC_PACKAGE_IN_PROGRESS_NO_PRODUCTION_PERMISSION",
+  "approvedLaunchScope": [
+    {
+      "id": "public-phone-and-contacts",
+      "status": "approved_for_first_publication_scope",
+      "evidence": [
+        "docs/review/public-phone-update-20260906/README.md"
+      ],
+      "sourcePaths": [
+        "src/config/site.ts",
+        "data/legal/legal-documents.json",
+        ".env.example",
+        "src/components/layout/Header.astro",
+        "src/components/layout/Footer.astro",
+        "src/pages/contacts.astro"
+      ]
+    },
+    {
+      "id": "contact-messenger-popup",
+      "status": "implemented_verified_review_scope",
+      "evidence": [
+        "docs/review/contact-messenger-popup-20260906/README.md"
+      ],
+      "sourcePaths": [
+        "src/components/layout/ContactMessengerPopup.astro",
+        "public/scripts/contact-messenger-popup.js",
+        "src/layouts/BaseLayout.astro"
+      ]
+    },
+    {
+      "id": "lead-form-popup",
+      "status": "owner_visual_approved_closed_and_live_integration_tested",
+      "evidence": [
+        "docs/review/contact-lead-form-popup-20260906/OWNER_APPROVAL_CONTACT_LEAD_FORM_POPUP.md",
+        "docs/review/contact-lead-form-popup-20260906/LIVE_ROUTING_TEST_EVIDENCE.md"
+      ],
+      "sourcePaths": [
+        "src/components/layout/ContactLeadFormPopup.astro",
+        "public/scripts/contact-lead-form-popup.js",
+        "src/server/lead-routing/api-leads.ts",
+        "src/server/lead-routing/amocrm.ts",
+        "src/server/lead-routing/telegram.ts",
+        "src/pages/api/leads/index.ts"
+      ]
+    },
+    {
+      "id": "legal-documents-four-pack",
+      "status": "owner_approved_closed",
+      "evidence": [
+        "docs/review/legal-documents-cleanup-20260906/OWNER_APPROVAL_FOUR_LEGAL_DOCUMENTS.md",
+        "docs/review/legal-documents-cleanup-20260906/verification-results-final.json"
+      ],
+      "sourcePaths": [
+        "data/legal/legal-documents.json",
+        "src/components/legal/LegalDocumentPage.astro",
+        "src/pages/privacy-policy.astro",
+        "src/pages/cookie-policy.astro",
+        "src/pages/terms.astro",
+        "src/pages/consent.astro"
+      ]
+    },
+    {
+      "id": "approved-page-type-templates-and-pr8-visual-work",
+      "status": "review_scope_for_pr8_package",
+      "evidence": [
+        "docs/review/kiber-94-article-template-design-structure-approval-2026-09-04.md",
+        "data/review/pr8-route-visual-approvals.json",
+        "docs/review/kiber-91-full-site-visual-qa/README.md"
+      ],
+      "sourcePaths": [
+        "src/components/templates/ArticleBlocksTemplate.astro",
+        "src/components/templates/CompilationTemplate.astro",
+        "src/pages/preview/kiber-94/"
+      ]
+    },
+    {
+      "id": "seo-content-contracts-and-wordstat-prep",
+      "status": "supporting_material_not_mass_publication",
+      "evidence": [
+        "docs/review/wordstat-remote-browser-20260906/RUNBOOK.md",
+        "docs/review/claude-materials-corpus-intake-20260906/README.md"
+      ],
+      "sourcePaths": [
+        "data/content-contracts/",
+        "tests/content-contracts/",
+        "scripts/validate_kiber_seo_research_writing_protocol.py",
+        "scripts/validate_claude_content_contracts.py"
+      ]
+    }
+  ],
+  "notInFirstPublicationScopeByDefault": [
+    {
+      "id": "raw-corpus-archives",
+      "paths": [
+        "docs/review/claude-materials-corpus-intake-20260906/raw/"
+      ],
+      "reason": "source material/evidence, not public site content"
+    },
+    {
+      "id": "large-screenshot-iteration-folders",
+      "paths": [
+        "docs/review/*-pr8-20260904/ screenshots/contact sheets"
+      ],
+      "reason": "review evidence; do not publish to site runtime"
+    },
+    {
+      "id": "test-results-cache",
+      "paths": [
+        "test-results/"
+      ],
+      "reason": "local test/browser output"
+    },
+    {
+      "id": "analytics-provider-activation",
+      "paths": [
+        "analytics provider IDs/cookies"
+      ],
+      "reason": "deferred until separate approval"
+    },
+    {
+      "id": "production-dns-secrets",
+      "paths": [
+        "production deploy/DNS/secret activation"
+      ],
+      "reason": "explicit approval required"
+    }
+  ],
+  "rcGates": [
+    "npm run test:launch-scope-manifest",
+    "npm run test:production-go-no-go",
+    "node --import tsx --test tests/visual/legal-four-documents.test.ts",
+    "node --import tsx --test tests/visual/contact-lead-form-popup.test.ts",
+    "npm run test:contact-lead-visual",
+    "npm run test:page-seo-components",
+    "npm run build:preview",
+    "npm run build:production"
+  ],
+  "stillGated": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsProviderCookiesAllowed": false,
+    "productionLiveLeadRoutingAllowed": false,
+    "mergeAllowed": false
+  },
+  "recommendedNextAfterRc": "Either dynamic lead-runtime staging with env secrets, or final production/DNS approval after RC gates are green."
+}

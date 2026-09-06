@@ -50,3 +50,24 @@ test('route, readiness and content package gates account for four legal document
   assert.ok(readiness.requiredChecks.includes('legal_pages'));
   assert.match(read('scripts/launch-readiness-crawl-smoke.mjs'), /\/terms\//);
 });
+
+
+test('legal pages do not expose internal transfer notices or duplicate isolated numbering', () => {
+  const legal = json('data/legal/legal-documents.json');
+  for (const doc of legal.documents as Array<{ slug: string; paragraphs: string[] }>) {
+    const page = read(`src/pages/${doc.slug}.astro`);
+    assert.doesNotMatch(page, /Документ перенес[её]н с действующего сайта kiber-portal\.ru/);
+    assert.doesNotMatch(page, /Production-контакты|placeholder|analytics providers|consent\/analytics approval|Связан с политикой персональных данных/);
+  }
+
+  for (const slug of ['privacy-policy', 'cookie-policy']) {
+    const doc = legal.documents.find((entry: { slug: string }) => entry.slug === slug);
+    assert.ok(doc, `${slug} missing`);
+    const isolated = doc.paragraphs.filter((paragraph: string) => /^\d+\.$/.test(paragraph.trim()));
+    assert.deepEqual(isolated, [], `${slug} must not contain duplicate isolated section-number paragraphs`);
+  }
+
+  const shared = read('src/components/legal/LegalDocumentPage.astro');
+  assert.match(shared, /notice\?: string/);
+  assert.match(shared, /\{notice && <p>\{notice\}<\/p>\}/);
+});

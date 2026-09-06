@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-49",
   "status": "passed_lfs_migrated",
-  "generatedAt": "2026-08-31T04:55:17.615Z",
+  "generatedAt": "2026-09-06T13:52:49.734Z",
   "policy": {
     "runtimePublicImageMaxBytes": 204800,
     "runtimeFormatsAllowed": [
@@ -21,11 +21,11 @@
   "gitLfsAvailable": true,
   "gitLfsTrackedFiles": 510,
   "summary": {
-    "trackedMediaFiles": 713,
-    "trackedMediaBytes": 164948430,
-    "publicRuntimeImages": 27,
-    "publicRuntimeImageBytes": 356930,
-    "publicRuntimeLargestImageBytes": 29624,
+    "trackedMediaFiles": 990,
+    "trackedMediaBytes": 233480817,
+    "publicRuntimeImages": 193,
+    "publicRuntimeImageBytes": 6111625,
+    "publicRuntimeLargestImageBytes": 196122,
     "trackedReviewOriginals": 510,
     "trackedReviewOriginalBytes": 102127050,
     "lfsTrackedReviewOriginals": 510,
@@ -35,8 +35,44 @@
   },
   "topTrackedMedia": [
     {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-full.png",
+      "bytes": 4524216
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-design-blocks-desktop-full.png",
+      "bytes": 3434664
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-structure-desktop-full.png",
+      "bytes": 3342392
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-full.png",
+      "bytes": 3205835
+    },
+    {
       "path": "data/design/parity-screenshots/mobile-detail-qa-2026-08-25/article-unitree-g1-agibot-x2-mobile-390.png",
       "bytes": 2791981
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-feedback-order-desktop-full.png",
+      "bytes": 2615858
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-full.png",
+      "bytes": 2310030
+    },
+    {
+      "path": "docs/review/kiber-91-full-site-visual-qa/screenshots/home-desktop-1440.png",
+      "bytes": 2215999
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-design-blocks-mobile-full.png",
+      "bytes": 2072837
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-structure-mobile-full.png",
+      "bytes": 2041531
     },
     {
       "path": "data/design/parity-screenshots/mobile-qa-2026-08-25/home-mobile-390-after-grid-fix.png",
@@ -47,8 +83,20 @@
       "bytes": 1943733
     },
     {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-feedback-order-mobile-full.png",
+      "bytes": 1938348
+    },
+    {
+      "path": "docs/review/kiber-94-robot-card-preview/screenshots/unitree-feedback-order-contact-sheet.jpg",
+      "bytes": 1775504
+    },
+    {
       "path": "data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-desktop-1280.png",
       "bytes": 1622066
+    },
+    {
+      "path": "docs/review/kiber-91-full-site-visual-qa/screenshots/home-tablet-768.png",
+      "bytes": 1536348
     },
     {
       "path": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-mobile.png",
@@ -57,6 +105,22 @@
     {
       "path": "docs/review/contact-lead-visual-pass3/screenshots/contact-sheet-mobile.png",
       "bytes": 1396595
+    },
+    {
+      "path": "docs/review/kiber-91-full-site-visual-qa/screenshots/home-mobile-390.png",
+      "bytes": 1308524
+    },
+    {
+      "path": "docs/review/kiber-91-full-site-visual-qa/screenshots/articles-desktop-1440.png",
+      "bytes": 1252595
+    },
+    {
+      "path": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-desktop-1440.png",
+      "bytes": 1236463
+    },
+    {
+      "path": "docs/review/kiber-91-full-site-visual-qa/screenshots/compilations-tablet-768.png",
+      "bytes": 1221403
     },
     {
       "path": "data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-desktop-1280.png",
@@ -69,70 +133,6 @@
     {
       "path": "data/design/parity-screenshots/collection-template/roboty-gumanoidy-desktop-1280.png",
       "bytes": 1029149
-    },
-    {
-      "path": "site-export/images/tild3764-6163-4463-a364-393236616631__noroot.png",
-      "bytes": 981027
-    },
-    {
-      "path": "data/design/parity-screenshots/collection-template/arenda-robotov-na-meropriyatie-desktop-1280.png",
-      "bytes": 969025
-    },
-    {
-      "path": "site-export/images/tild6136-3331-4366-b934-653538306539__noroot.png",
-      "bytes": 947707
-    },
-    {
-      "path": "docs/review/contact-lead-visual-pass3b/screenshots/contact-sheet-tablet.png",
-      "bytes": 934333
-    },
-    {
-      "path": "data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390-after-cta-padding.png",
-      "bytes": 915205
-    },
-    {
-      "path": "data/design/parity-screenshots/mobile-detail-qa-2026-08-25/robot-unitree-g1-mobile-390.png",
-      "bytes": 913908
-    },
-    {
-      "path": "data/design/parity-screenshots/mobile-qa-2026-08-25/unitree-g1-mobile-390.png",
-      "bytes": 909810
-    },
-    {
-      "path": "data/design/parity-screenshots/content-index/compilations-desktop-1280.png",
-      "bytes": 894165
-    },
-    {
-      "path": "data/design/parity-screenshots/astro-unitree-g1-faq-footer-full-mobile-390.png",
-      "bytes": 893003
-    },
-    {
-      "path": "data/design/parity-screenshots/content-index-qa-2026-08-25/articles-desktop-1280.png",
-      "bytes": 890044
-    },
-    {
-      "path": "data/design/parity-screenshots/content-index-qa-2026-08-25/compilations-mobile-390.png",
-      "bytes": 877492
-    },
-    {
-      "path": "docs/review/kiber-32/screenshots/kiber-32-design-review-tablet-768.png",
-      "bytes": 821784
-    },
-    {
-      "path": "site-export/images/tild3566-3661-4738-a336-333765313364__frame_55.png",
-      "bytes": 819622
-    },
-    {
-      "path": "site-export/images/tild6331-6439-4563-b861-396162663365__noroot.png",
-      "bytes": 819295
-    },
-    {
-      "path": "data/design/parity-screenshots/content-detail/unitree-g1-ili-agibot-x2-desktop-1280.png",
-      "bytes": 807945
-    },
-    {
-      "path": "site-export/images/tild3737-6237-4465-a132-393964613265__noroot.png",
-      "bytes": 802056
     }
   ],
   "topReviewOriginals": [

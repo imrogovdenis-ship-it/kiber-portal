@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-09-06T12:57:21.056923+00:00",
+  "status": "owner_visual_approved_closed",
+  "owner_statement": "Всё читаем задачу с формой заявки на обратную связь закрытой утверждаемую в том виде в котором она есть сейчас",
+  "scope": {
+    "component": "ContactLeadFormPopup",
+    "route_preview": "/",
+    "trigger": "Оставить заявку",
+    "approved_as_of_git_head": "17c57f65943fe5f5949a45f1084170e232562659",
+    "approved_artifacts": [
+      "src/components/layout/ContactLeadFormPopup.astro",
+      "public/scripts/contact-lead-form-popup.js",
+      "tests/visual/contact-lead-form-popup.test.ts",
+      "docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop-no-overflow.png",
+      "docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile-no-overflow.png"
+    ],
+    "fields": [
+      {
+        "name": "name",
+        "label": "Имя",
+        "required": true
+      },
+      {
+        "name": "contact",
+        "label": "Телефон",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Почта",
+        "required": false
+      },
+      {
+        "name": "privacy_consent",
+        "label": "Юридическое согласие",
+        "required": true
+      }
+    ],
+    "approved_visual_notes": [
+      "current reduced size approved",
+      "horizontal overflow fixed and absent",
+      "text-only visible form controls preserved",
+      "legal links present: /consent/, /privacy-policy/, /terms/"
+    ]
+  },
+  "exclusions": {
+    "merge": false,
+    "production_deploy": false,
+    "dns": false,
+    "analytics": false,
+    "live_amoCRM_or_telegram_routing": false,
+    "secrets": false,
+    "linear_done": false
+  }
+}

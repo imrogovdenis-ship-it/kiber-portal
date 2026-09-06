@@ -12,7 +12,7 @@ const { eyebrow, title, lead, primary, secondary, image, stats, analytics } = As
       <p class="home-hero__subtitle">{lead}</p>
       <div class="home-hero__actions">
         <a class="home-hero__button home-hero__button--primary" href={primary.href} data-analytics-event={analytics.event} data-analytics-block-id={analytics.block_id} data-analytics-source="home_hero" data-analytics-placement="primary_cta" data-analytics-slug="global">{primary.label}</a>
-        {secondary && <a class="home-hero__button home-hero__button--secondary" href={secondary.href}>{secondary.label}</a>}
+        {secondary && <a class="home-hero__button home-hero__button--secondary" href={secondary.href} data-lead-form-popup-trigger>{secondary.label}</a>}
       </div>
       {stats?.length > 0 && (
         <dl class="home-hero__stats" aria-label="Кратко о каталоге">

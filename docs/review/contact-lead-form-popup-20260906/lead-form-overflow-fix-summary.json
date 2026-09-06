@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-09-06T12:55:37.414496+00:00",
+  "userImageObservation": "Horizontal scrollbar visible at bottom of lead form popup; form itself looked acceptable but container had sideways scroll.",
+  "rootCause": "Hidden honeypot anti-spam input was matched by the general input selector, inherited width:100%, and as an absolutely positioned element extended beyond the popup panel, creating internal horizontal overflow.",
+  "fix": "Excluded .contact-lead-popup__honeypot from visible input selector and positioned honeypot off-screen with 1px max width; visible form structure unchanged.",
+  "verification": {
+    "beforeOverflow": {
+      "desktopPanelOverflowX": 34,
+      "mobile390PanelOverflowX": 14,
+      "mobile360PanelOverflowX": 14
+    },
+    "afterOverflow": {
+      "desktopPanelOverflowX": 0,
+      "mobile390PanelOverflowX": 0,
+      "mobile360PanelOverflowX": 0,
+      "stagingMobilePanelOverflowX": 0
+    },
+    "tests": [
+      "contact-lead-form-popup.test.ts pass",
+      "api-leads-endpoint.test.ts 18/18 pass",
+      "test:contact-lead-visual pass",
+      "build:preview pass"
+    ],
+    "staging": "healthy, HTTP 200, noindex"
+  },
+  "screenshots": [
+    "lead-form-popup-desktop-no-overflow.png",
+    "lead-form-popup-mobile-no-overflow.png",
+    "lead-form-popup-mobile360-no-overflow.png"
+  ]
+}

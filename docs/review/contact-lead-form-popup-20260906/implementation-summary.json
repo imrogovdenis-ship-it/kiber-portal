@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-09-06T12:33:23.281104+00:00",
+  "recalledLeadRouting": {
+    "amoCRM": "portalrent.amocrm.ru, unsorted/forms endpoint; UTM via custom field IDs only, metadata.utm_* must not be sent",
+    "telegram": "duplicate to dedicated Telegram chat “Заявки с сайта КИБЕР ПОРТАЛ”; no topics/thread required",
+    "previousManualTest": "Owner confirmed test lead arrived in amoCRM and Telegram chat",
+    "secrets": "AMOCRM_ACCESS_TOKEN, TELEGRAM_BOT_TOKEN, TELEGRAM_LEADS_CHAT_ID remain secret env/1Password only; not committed or printed"
+  },
+  "implementedUi": {
+    "surface": "Global lead form popup opened from “Оставить заявку” CTAs",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Имя",
+        "required": true
+      },
+      {
+        "name": "contact",
+        "label": "Телефон",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Почта",
+        "required": false
+      }
+    ],
+    "removedFields": [
+      "textarea/event wishes in popup, per owner minimal-field request"
+    ],
+    "consent": "required checkbox with links to /consent/, /privacy-policy/, /terms/",
+    "action": "POST /api/leads",
+    "copy": "Оставьте заявку / Наш менеджер свяжется с вами, уточнит задачу и предложит подходящего робота для мероприятия."
+  },
+  "technicalBoundary": {
+    "apiSourceExists": true,
+    "apiSupportsLiveAmoCrmAndTelegram": true,
+    "currentStagingRuntime": "static nginx review container; visual form is present, live POST requires dynamic/API runtime and env secrets",
+    "liveRoutingActivatedNow": false,
+    "productionDeploy": false,
+    "dns": false,
+    "analytics": false
+  },
+  "verification": {
+    "leadFormPopupTest": "pass",
+    "apiLeadsEndpointTest": "18/18 pass",
+    "contactLeadVisual": "pass",
+    "leadCapability": "pass",
+    "buildPreview": "pass",
+    "staging": "HTTP 200 + noindex on homepage and /lead/request/"
+  },
+  "evidence": {
+    "desktopScreenshot": "docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop.png",
+    "mobileScreenshot": "docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile.png",
+    "visualEvidence": "docs/review/contact-lead-form-popup-20260906/visual-evidence.json",
+    "stagingRedeploy": "docs/review/staging-link-popup-form-review-20260906/staging-redeploy-lead-form-popup.json"
+  }
+}

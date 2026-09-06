@@ -11,8 +11,8 @@ const titlePrefix = titleNoWrap && title.endsWith(titleNoWrap) ? title.slice(0, 
     </h2>
     <p>{description}</p>
     <div class="home-final-cta__actions">
-      <a class="home-final-cta__button home-final-cta__button--primary" href={primaryCta.href} data-analytics-event="contact_click" data-analytics-block-id="home-final-cta" data-analytics-source="home_final_cta" data-analytics-placement="primary_cta" data-analytics-slug="global">{primaryCta.label}</a>
-      <a class="home-final-cta__button" href={secondaryCta.href}>{secondaryCta.label}</a>
+      <a class="home-final-cta__button home-final-cta__button--primary" href={primaryCta.href} data-contact-popup-trigger data-analytics-event="contact_click" data-analytics-block-id="home-final-cta" data-analytics-source="home_final_cta" data-analytics-placement="primary_cta" data-analytics-slug="global">{primaryCta.label}</a>
+      <a class="home-final-cta__button" href={secondaryCta.href} data-lead-form-popup-trigger>{secondaryCta.label}</a>
     </div>
   </div>
   <div class="home-final-cta__image">

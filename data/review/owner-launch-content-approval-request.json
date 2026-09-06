@@ -57,11 +57,11 @@
       "status": "awaiting_owner_approval",
       "scope": "Public contact channels shown on contacts/footer/CTA surfaces are acceptable for launch publication; this does not enable backend live routing.",
       "currentValues": {
-        "phone": "+7 985 266-65-82",
+        "phone": "+7 (906) 730-96-91",
         "email": "markinas28@yandex.ru",
-        "telegram": "https://t.me/+798****6582",
-        "whatsapp": "https://wa.me/79852666582",
-        "max": "https://max.ru/u/f9LHodD0cOJFwZ694dB_W9-xhrJzZpX0harafdS1XMVgHy-gk8Sh24t5tJA"
+        "telegram": "https://t.me/+79067309691",
+        "whatsapp": "https://wa.me/79067309691",
+        "max": "https://max.ru/u/f9LHodD0cOJhJ-X4IZgcN132WZOzWIuvqM8KhYmQShyPoEZQ-C84DJgI4M0"
       },
       "evidence": [
         "src/config/site.ts",

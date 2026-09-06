@@ -16,9 +16,13 @@ test('homepage header keeps logo future-proof and compact desktop controls', asy
   assert.match(header, /site-header__logo-mark/);
   assert.match(header, /site-header__logo-text/);
   assert.match(header, /site-header__logo--with-mark/);
+  assert.doesNotMatch(header, /\{ href: '\/news', label: 'Новости' \}/);
+  assert.doesNotMatch(header, /\{ href: '\/contacts', label: 'Контакты' \}/);
   assert.match(baseLayout, /\/images\/brand\/kp_logo_full_color\.svg/);
   assert.match(layout, /\.site-header__logo--with-mark \.site-header__logo-text/);
   assert.match(layout, /\.site-header__nav\s*\{[^}]*margin-left:\s*1\.25rem;/s);
+  assert.match(reference, /\.site-header\s*\{[^}]*position:\s*fixed;[^}]*left:\s*0;[^}]*right:\s*0;/s);
+  assert.match(reference, /body \{[\s\S]*padding-top:\s*4\.25rem;/);
   assert.match(reference, /\.site-header__container\s*\{[^}]*width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\),\s*var\(--kp-reference-container\)\)/s);
   assert.match(reference, /\.site-header__nav\s*\{[^}]*gap:\s*0\.875rem;[^}]*margin-left:\s*0\.5rem;/s);
   assert.match(reference, /\.site-header__link\s*\{[^}]*font-size:\s*0\.875rem;/s);
@@ -91,8 +95,8 @@ test('homepage footer follows owner footer composition feedback', async () => {
   assert.match(footer, /\{ href: '\/#catalog', label: 'Каталог' \}/);
   assert.match(footer, /\{ href: '\/compilations', label: 'Подборки' \}/);
   assert.match(footer, /\{ href: '\/articles', label: 'Блог' \}/);
-  assert.match(footer, /\{ href: '\/news', label: 'Новости' \}/);
-  assert.match(footer, /\{ href: '\/contacts', label: 'Контакты' \}/);
+  assert.doesNotMatch(footer, /\{ href: '\/news', label: 'Новости' \}/);
+  assert.doesNotMatch(footer, /\{ href: '\/contacts', label: 'Контакты' \}/);
   assert.match(footer, /legal_notice:\s*`Все права защищены © \$\{new Date\(\)\.getFullYear\(\)\} КИБЕР ПОРТАЛ`/);
   assert.match(footer, /Политика обработки\\nперсональных данных/);
   assert.match(footer, /Согласие на обработку\\nперсональных данных/);
@@ -160,4 +164,10 @@ test('homepage owner-provided hero image is registered as media-use approval wit
   assert.equal(registry.assets[0].src, '/images/home/home-header-robot-owner-20260830.webp');
   assert.equal(registry.assets[0].productionApproved, true);
   assert.equal(registry.assets[0].approvalScope, 'media_use_only_not_production_deploy');
+});
+
+test('reference layer keeps mobile pages from creating right-side footer gutters', async () => {
+  const css = await read('src/styles/reference-layer.css');
+  assert.match(css, /html \{[\s\S]*overflow-x: hidden/);
+  assert.match(css, /body \{[\s\S]*overflow-x: hidden/);
 });

@@ -5,7 +5,7 @@
     {
       "pageType": "robot_card",
       "component": "src/components/templates/RobotCardTemplate.astro",
-      "publicBlocks": 16,
+      "publicBlocks": 15,
       "reviewOnlyBlocks": 6
     },
     {

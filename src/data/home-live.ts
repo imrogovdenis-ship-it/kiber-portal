@@ -85,7 +85,7 @@ export const homeRobotCardFinalCta: HomeFinalCtaData = {
   ...homeFinalCta,
   title: 'Остались вопросы?',
   description: 'Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, какой робот подойдёт под площадку, аудиторию, тайминг и формат вашего события.',
-  primaryCta: { label: 'Написать нам', href: '/contacts/' },
+  primaryCta: { label: 'Написать нам', href: '#contact-messengers' },
   secondaryCta: { label: 'Оставить заявку', href: '/lead/request/' },
   image: {
     src: '/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif',

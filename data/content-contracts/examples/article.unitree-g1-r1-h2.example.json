@@ -1,0 +1,95 @@
+{
+  "contentPackageVersion": "1.0",
+  "pageType": "article_detail",
+  "slug": "sravnenie-unitree-g1-r1-h2",
+  "reviewStatus": "draft",
+  "sourceDocuments": [
+    {
+      "path": "/home/alex/.hermes/cache/documents/doc_ff47f1e08923_Статья Unitree G1 R1 H2 сравнение.docx",
+      "status": "source_document"
+    }
+  ],
+  "seo": {
+    "metaTitle": "Unitree G1, R1 и H2: сравнение роботов | КИБЕР ПОРТАЛ",
+    "metaDescription": "Сравниваем Unitree G1, R1 и H2 для мероприятий: размеры, сценарии применения, эффект на гостей и выбор под формат площадки.",
+    "canonicalPath": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "primaryKeyword": "Unitree G1 R1 H2 сравнение",
+    "secondaryKeywords": [
+      "роботы-гуманоиды для мероприятий",
+      "Unitree G1 для выставки",
+      "Unitree H2 робот-гуманоид"
+    ],
+    "h1": "Unitree G1, R1 и H2: сравнение роботов-гуманоидов для мероприятий"
+  },
+  "aiVisibility": {
+    "aiSummary": "Статья помогает выбрать между Unitree G1, R1 и H2: компактным интерактивным гуманоидом, лёгкой моделью для динамичных выходов и крупным роботом для сильного визуального эффекта."
+  },
+  "blocks": {
+    "hero": {
+      "h1": "Unitree G1, R1 и H2: сравнение роботов-гуманоидов для мероприятий"
+    },
+    "seoIntro": {
+      "title": "Короткий вывод перед сравнением",
+      "paragraphs": [
+        "..."
+      ]
+    },
+    "plainText": {
+      "title": "Чем отличаются три гуманоида Unitree",
+      "paragraphs": [
+        "..."
+      ]
+    },
+    "comparisonBlock": {
+      "title": "Полное сравнение характеристик Unitree G1, R1 и H2",
+      "table": {
+        "headers": [
+          "Характеристика",
+          "Unitree G1",
+          "Unitree R1",
+          "Unitree H2"
+        ],
+        "rows": []
+      }
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Какого Unitree выбрать для выставки?",
+          "answer": "Для стенда обычно выбирают модель по роли: G1 для общения и демонстрации, R1 для динамики, H2 для крупного вау-эффекта."
+        }
+      ]
+    },
+    "catalogBlock": {
+      "robotSlugs": [
+        "arenda-unitree-g1",
+        "arenda-unitree-r1",
+        "arenda-unitree-h2"
+      ]
+    }
+  },
+  "media": [],
+  "internalLinks": {
+    "robotSlugs": [
+      "arenda-unitree-g1",
+      "arenda-unitree-r1",
+      "arenda-unitree-h2"
+    ],
+    "articleSlugs": [],
+    "compilationSlugs": [
+      "roboty-gumanoidy"
+    ]
+  },
+  "schema": {
+    "types": [
+      "BlogPosting",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "review": {
+    "notes": [
+      "Claude must label every optional block it chooses."
+    ]
+  }
+}

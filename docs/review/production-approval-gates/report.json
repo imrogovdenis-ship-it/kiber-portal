@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-production-approval-gates",
-  "generatedAt": "2026-08-30T18:13:55.416Z",
+  "generatedAt": "2026-09-06T13:52:50.810Z",
   "gateCount": 7,
   "productionPermissionIncluded": false,
   "productionActionAllowed": false,
