@@ -1,0 +1,23 @@
+{
+  "scope": "Dynamic/API staging from merged main candidate to verify real lead form delivery via staging URL.",
+  "mainHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+  "affected": [
+    "/home/alex/projects/kiber-portal-dynamic-main-20260906",
+    "Docker image alex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6",
+    "container alex-kiber-dynamic-staging"
+  ],
+  "rollback": "docker rm -f alex-kiber-dynamic-staging; static alex-kiber-staging remains separate and untouched.",
+  "verification": [
+    "npm ci/build:preview",
+    "container /healthz 200",
+    "GET pages 200 + noindex",
+    "POST /api/leads via staging origin returns ok + amoCRM/Telegram non-secret receipts"
+  ],
+  "excluded": [
+    "production deploy",
+    "DNS changes",
+    "analytics activation",
+    "production secrets mutation",
+    "changing existing alex-kiber-staging"
+  ]
+}

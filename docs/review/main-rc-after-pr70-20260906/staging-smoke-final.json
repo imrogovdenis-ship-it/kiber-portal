@@ -1,0 +1,172 @@
+{
+  "base": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io",
+  "safeLabels": {
+    "deployed.commit": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+    "deployed.version": "main-rc-20260906-12ef3d6",
+    "kiber.portal.analytics.provider": "disabled",
+    "kiber.portal.deploy.env": "preview",
+    "kiber.portal.deploy.sha": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+    "kiber.portal.deploy.version": "main-rc-20260906-12ef3d6",
+    "kiber.staging.commit": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3"
+  },
+  "dockerPs": "alex-kiber-staging\talex-kiber-staging:main-rc-20260906-12ef3d6\tUp 41 seconds (healthy)\t80/tcp",
+  "routes": [
+    {
+      "route": "/preview/review-approved/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": true,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/compilations/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/articles/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": false,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/preview/kiber-94/article-blocks/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": true,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/lead/request/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": false,
+      "approvedArticleHref": false,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/contacts/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": true,
+      "approvedArticleHref": false,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/privacy-policy/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": false,
+      "approvedArticleHref": false,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/cookie-policy/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": false,
+      "approvedArticleHref": false,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/terms/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": false,
+      "approvedArticleHref": false,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    },
+    {
+      "route": "/consent/",
+      "http": 200,
+      "noindexHeader": true,
+      "reviewMapMarker": false,
+      "oldPublicRobotHref": false,
+      "oldPublicHumanoidHref": false,
+      "approvedPreviewRobotHref": false,
+      "approvedArticleHref": false,
+      "leadFormPresent": false,
+      "messengerPopupPresent": true
+    }
+  ],
+  "logsTail": "eview/review-approved/ HTTP/1.1\" 200 17911 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:45 +0000] \"GET / HTTP/1.1\" 200 51760 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:46 +0000] \"GET /compilations/ HTTP/1.1\" 200 23486 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:46 +0000] \"GET /articles/ HTTP/1.1\" 200 29354 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:46 +0000] \"GET /preview/kiber-94/robot-card/arenda-unitree-g1/ HTTP/1.1\" 200 71921 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:47 +0000] \"GET /preview/kiber-94/compilation/roboty-gumanoidy/ HTTP/1.1\" 200 63762 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:47 +0000] \"GET /preview/kiber-94/article-blocks/ HTTP/1.1\" 200 80146 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /lead/request/ HTTP/1.1\" 200 19177 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /contacts/ HTTP/1.1\" 200 20943 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /privacy-policy/ HTTP/1.1\" 200 33405 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /cookie-policy/ HTTP/1.1\" 200 20924 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:49 +0000] \"GET /terms/ HTTP/1.1\" 200 23222 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:49 +0000] \"GET /consent/ HTTP/1.1\" 200 22115 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n2026/09/06 15:22:08 [notice] 1#1: using the \"epoll\" event method\n2026/09/06 15:22:08 [notice] 1#1: nginx/1.27.5\n2026/09/06 15:22:08 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) \n2026/09/06 15:22:08 [notice] 1#1: OS: Linux 6.8.0-137-generic\n2026/09/06 15:22:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288\n2026/09/06 15:22:08 [notice] 1#1: start worker processes\n2026/09/06 15:22:08 [notice] 1#1: start worker process 29\n2026/09/06 15:22:08 [notice] 1#1: start worker process 30\n"
+}

@@ -1,0 +1,56 @@
+{
+  "secretResolutionExit": 0,
+  "secretMeta": {
+    "DEPLOY_ENV": {
+      "set": true,
+      "length": 7
+    },
+    "DESIGN_REVIEW_ENABLED": {
+      "set": true,
+      "length": 4
+    },
+    "LEAD_ROUTING_ENABLED": {
+      "set": true,
+      "length": 4
+    },
+    "LEAD_ROUTING_MODE": {
+      "set": true,
+      "length": 4
+    },
+    "LEAD_ALLOWED_ORIGINS": {
+      "set": true,
+      "length": 54
+    },
+    "AMOCRM_BASE_URL": {
+      "set": true,
+      "length": 28
+    },
+    "TELEGRAM_BOT_TOKEN": {
+      "set": true,
+      "length": "redacted"
+    },
+    "TELEGRAM_LEADS_CHAT_ID": {
+      "set": true,
+      "length": "redacted"
+    },
+    "AMOCRM_ACCESS_TOKEN": {
+      "set": true,
+      "length": "redacted"
+    }
+  },
+  "envPath": "/home/alex/.hermes/state/kiber-portal/dynamic-staging.env",
+  "envMode": "0o600",
+  "image": "alex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6",
+  "host": "alex-kiber-dynamic-staging.38.180.37.42.nip.io",
+  "rmExit": 0,
+  "runExit": 0,
+  "containerId": "0b3b7a477690",
+  "healthSamples": [
+    "starting",
+    "starting",
+    "healthy"
+  ],
+  "dockerPs": "alex-kiber-dynamic-staging\talex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6\tUp 6 seconds (healthy)\t8080/tcp",
+  "hostPorts": "",
+  "stderrSafe": ""
+}

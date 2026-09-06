@@ -1,0 +1,12 @@
+{
+  "image": "alex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6-r2",
+  "buildExit": 0,
+  "rmExit": 0,
+  "runExit": 0,
+  "containerId": "7cf55f8144b4",
+  "healthSamples": [
+    "starting",
+    "starting",
+    "healthy"
+  ]
+}
