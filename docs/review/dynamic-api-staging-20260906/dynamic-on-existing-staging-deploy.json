@@ -1,0 +1,18 @@
+{
+  "action": "replaced_existing_alex_kiber_staging_with_dynamic_image",
+  "previousImage": "alex-kiber-staging:main-rc-20260906-12ef3d6",
+  "rollback": "docker rm -f alex-kiber-staging && recreate using previous image alex-kiber-staging:main-rc-20260906-12ef3d6 with preserved labels",
+  "image": "alex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6",
+  "head": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+  "rmExit": 0,
+  "runExit": 0,
+  "containerId": "5104673568df",
+  "healthSamples": [
+    "starting",
+    "starting",
+    "healthy"
+  ],
+  "dockerPs": "alex-kiber-staging\talex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6\tUp 6 seconds (healthy)\t8080/tcp",
+  "hostPorts": "",
+  "envMode": "0o600"
+}

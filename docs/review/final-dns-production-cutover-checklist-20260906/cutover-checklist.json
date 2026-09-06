@@ -1,0 +1,56 @@
+{
+  "createdAt": "2026-09-06",
+  "decision": "GO_WITH_FINAL_PRODUCTION_COMMAND_REQUIRED",
+  "candidate": {
+    "repo": "imrogovdenis-ship-it/kiber-portal",
+    "branch": "main",
+    "head": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+    "stagingUrl": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io",
+    "dynamicImage": "alex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6-r2",
+    "container": "alex-kiber-staging"
+  },
+  "verified": [
+    "main RC owner-approved as production candidate",
+    "dynamic/API staging healthy, no host ports, noindex",
+    "/api/leads/status HTTP 200",
+    "one authorized staging POST /api/leads returned ok=true, mode=live, amoCRM ok, Telegram ok",
+    "analytics decision: defer all analytics/pixels post-launch",
+    "current production read-only backup captured under /home/alex/projects/kiber-portal-production-backups/20260906-pre-cutover"
+  ],
+  "preCutoverRequired": [
+    "Confirm final command from owner/Denis to switch production/DNS",
+    "Confirm target production host and Traefik/Coolify app path",
+    "Confirm rollback target: previous public site/DNS record or old container image",
+    "Snapshot current DNS records before any change",
+    "Ensure production env contains only required live lead secrets; do not print values",
+    "Set LEAD_ALLOWED_ORIGINS to production origins only after cutover",
+    "Keep analytics provider disabled at launch",
+    "Remove staging noindex only on production container; keep staging noindex",
+    "Run post-cutover smoke immediately after DNS/route change"
+  ],
+  "postCutoverSmoke": [
+    "GET / HTTP 200; no staging/basic-auth/noindex header on production",
+    "GET /robots.txt and /sitemap.xml HTTP 200; canonical production URLs",
+    "GET /lead/request/ HTTP 200 with /api/leads form action",
+    "GET /api/leads/status HTTP 200 on production runtime",
+    "Submit one separately authorized production test lead or skip if owner declines",
+    "Check amoCRM accepted test lead and Telegram duplicate without exposing secrets",
+    "Check legal pages /privacy-policy/ /cookie-policy/ /terms/ /consent/",
+    "Check top launch routes /robots/arenda-unitree-g1/ /compilations/ /articles/",
+    "Check no Yandex/Umami/pixel scripts present at launch",
+    "Monitor logs 30–60 minutes; keep rollback window open"
+  ],
+  "rollback": [
+    "If DNS switched: restore previous DNS target/record TTL path",
+    "If container switched: recreate previous known-good production container/image",
+    "If lead routing fails: set LEAD_ROUTING_MODE=dry-run or disable live production routing; keep public contact messenger fallback",
+    "If SSL fails: route back to previous public site while investigating cert/Traefik labels"
+  ],
+  "notIncluded": [
+    "Yandex Metrica",
+    "Umami",
+    "pixels",
+    "mass content publication beyond current main",
+    "DNS switch without final explicit approval"
+  ]
+}

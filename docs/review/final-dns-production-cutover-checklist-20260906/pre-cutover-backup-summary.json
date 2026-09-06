@@ -1,0 +1,144 @@
+{
+  "type": "pre_cutover_readonly_backup",
+  "base": "https://kiber-portal.ru",
+  "createdAt": "2026-09-06",
+  "scope": "robots/sitemap/critical current production pages; read-only curl backup; no site changes",
+  "paths": [
+    {
+      "path": "/robots.txt",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/robots.txt",
+      "bytes": 673,
+      "sha256": "79bc420ffdd4f4e7d2740ed72490e51b599203b3a9507301286417f513c17965"
+    },
+    {
+      "path": "/sitemap.xml",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/sitemap.xml",
+      "bytes": 5685,
+      "sha256": "6a2678b15839a16c1b0a3988e052e806604baa36ae305ade9502ee73ec897da8"
+    },
+    {
+      "path": "/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/",
+      "bytes": 573019,
+      "sha256": "76e432665b65015486b4b5593dd606ec283bd50ef9ea5941475abf195792217b"
+    },
+    {
+      "path": "/robots/arenda-unitree-g1/",
+      "exit": 0,
+      "http": "404",
+      "effectiveUrl": "https://www.kiber-portal.ru/robots/arenda-unitree-g1/",
+      "bytes": 574,
+      "sha256": "afa4c5fb407a3253431690879c3bd3d58b0419445a5c300c502efdcc74e563f8"
+    },
+    {
+      "path": "/roboty-gumanoidy/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/roboty-gumanoidy/",
+      "bytes": 617522,
+      "sha256": "0cfc347e561c43da0ce7da8f148909a7b45fb3b5aa325bd17cbccaadd5f63251"
+    },
+    {
+      "path": "/articles/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/articles/",
+      "bytes": 351938,
+      "sha256": "ff6d180def236a78620f6437d155a49de3cd799f4864f086b8ff11eaf550648c"
+    },
+    {
+      "path": "/contacts/",
+      "exit": 0,
+      "http": "404",
+      "effectiveUrl": "https://www.kiber-portal.ru/contacts/",
+      "bytes": 574,
+      "sha256": "afa4c5fb407a3253431690879c3bd3d58b0419445a5c300c502efdcc74e563f8"
+    },
+    {
+      "path": "/privacy-policy/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/privacy-policy/",
+      "bytes": 301144,
+      "sha256": "10457618758a04d0a90ee003c711a079a30209fc2a03aa3d42d4c31056bee3d9"
+    },
+    {
+      "path": "/cookie-policy/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/cookie-policy/",
+      "bytes": 288460,
+      "sha256": "e0a0a7253a651ee9a05acd9c0de4dee464e348e9f8ce028d4be9d0c3787008a5"
+    },
+    {
+      "path": "/terms/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/terms/",
+      "bytes": 290406,
+      "sha256": "7fdc77ed28c5245ee69dcc2b215723b7ff8f4faff285ed746913aa0f074fbe89"
+    },
+    {
+      "path": "/consent/",
+      "exit": 0,
+      "http": "200",
+      "effectiveUrl": "https://www.kiber-portal.ru/consent/",
+      "bytes": 289646,
+      "sha256": "5dfbf3d04f2f485f5579b22e8613fdc3575f05565b66398601b50356a985d8b3"
+    }
+  ],
+  "sitemapUrlCountSampled": 44,
+  "sitemapUrlsSample": [
+    "https://www.kiber-portal.ru/",
+    "https://www.kiber-portal.ru/page135835866.html",
+    "https://www.kiber-portal.ru/articles",
+    "https://www.kiber-portal.ru/page185196309.html",
+    "https://www.kiber-portal.ru/unitree-g1-ili-agibot-x2",
+    "https://www.kiber-portal.ru/neobychnyi-podarok-direktoru-robot",
+    "https://www.kiber-portal.ru/pozdravlenie-robotom-na-svadbe",
+    "https://www.kiber-portal.ru/robot-ofitsiant-na-meropriyatii",
+    "https://www.kiber-portal.ru/arenda-robotov-na-meropriyatie",
+    "https://www.kiber-portal.ru/velkom-zona-na-svadbe-robot",
+    "https://www.kiber-portal.ru/arenda-robota-sofiya",
+    "https://www.kiber-portal.ru/arenda-unitree-g1",
+    "https://www.kiber-portal.ru/arenda-unitree-r1",
+    "https://www.kiber-portal.ru/arenda-unitree-h2",
+    "https://www.kiber-portal.ru/arenda-noetix-bumi",
+    "https://www.kiber-portal.ru/arenda-agibot-x2",
+    "https://www.kiber-portal.ru/arenda-robota-ardi",
+    "https://www.kiber-portal.ru/arenda-unitree-go2",
+    "https://www.kiber-portal.ru/arenda-inchbot-l1-w-edu",
+    "https://www.kiber-portal.ru/arenda-xiaomi-cyberdog-2",
+    "https://www.kiber-portal.ru/arenda-promobot-v4",
+    "https://www.kiber-portal.ru/arenda-bellabot",
+    "https://www.kiber-portal.ru/arenda-kettybot",
+    "https://www.kiber-portal.ru/arenda-sketchbot",
+    "https://www.kiber-portal.ru/arenda-robota-hudozhnika-a4",
+    "https://www.kiber-portal.ru/arenda-robota-tron",
+    "https://www.kiber-portal.ru/arenda-robot-barmen",
+    "https://www.kiber-portal.ru/arenda-senserobot",
+    "https://www.kiber-portal.ru/arenda-roboshashki",
+    "https://www.kiber-portal.ru/arenda-mini-robo-kofeyni",
+    "https://www.kiber-portal.ru/arenda-robo-kofeyni",
+    "https://www.kiber-portal.ru/arenda-glambot",
+    "https://www.kiber-portal.ru/arenda-klipmeiker",
+    "https://www.kiber-portal.ru/arenda-uv-box",
+    "https://www.kiber-portal.ru/roboty-gumanoidy",
+    "https://www.kiber-portal.ru/compilations",
+    "https://www.kiber-portal.ru/page135870606.html",
+    "https://www.kiber-portal.ru/page145061706.html",
+    "https://www.kiber-portal.ru/news",
+    "https://www.kiber-portal.ru/astri",
+    "https://www.kiber-portal.ru/sravnenie-unitree-g1-r1-h2",
+    "https://www.kiber-portal.ru/noetix-bumi-robot-gumanoid-dlya-meropriyatiy",
+    "https://www.kiber-portal.ru/page205493309.html",
+    "https://www.kiber-portal.ru/test2"
+  ],
+  "storage": "/home/alex/projects/kiber-portal-production-backups/20260906-pre-cutover"
+}
