@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-51",
-  "generatedAt": "2026-08-30T18:13:41.818Z",
+  "generatedAt": "2026-09-06T13:52:35.681Z",
   "launchRoutesChecked": 31,
   "site": "https://www.kiber-portal.ru",
   "checks": [
@@ -20,7 +20,8 @@
       "h1": "Аренда роботов, которые держат внимание",
       "jsonLdTypes": [
         "Organization",
-        "WebSite"
+        "WebSite",
+        "FAQPage"
       ]
     },
     {
@@ -258,7 +259,7 @@
     {
       "path": "/compilations/",
       "title": "Подборки роботов — КИБЕР ПОРТАЛ",
-      "h1": "Подборки",
+      "h1": "Подборки роботов для аренды",
       "jsonLdTypes": [
         "CollectionPage"
       ]

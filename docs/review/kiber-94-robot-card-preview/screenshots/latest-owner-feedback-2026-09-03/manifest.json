@@ -1,0 +1,605 @@
+{
+  "issue": "KIBER-94 robot_card latest owner feedback",
+  "generatedAt": "2026-09-03T17:38:44.607Z",
+  "url": "http://127.0.0.1:4184/preview/kiber-94/robot-card/arenda-unitree-g1/",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1200
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1200
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 1200
+    }
+  ],
+  "screenshots": [
+    {
+      "viewport": "desktop",
+      "type": "full-page",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-full.png",
+      "sha256": "2c284ef4ebeffc3ce4aec8005de76461a9a2b1c1844a8aecbac11112093679a6"
+    },
+    {
+      "viewport": "desktop",
+      "type": "hero",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-hero.png",
+      "sha256": "fa3457ad37e97eb59decd0a756ff489b370b1c42362d0deb86333eabef40059f"
+    },
+    {
+      "viewport": "desktop",
+      "type": "included",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-included.png",
+      "sha256": "6c0621169d1ad24e2fd3a8c6dcdfc99146580ed32da4f4e2bceeeedd36c2680a"
+    },
+    {
+      "viewport": "desktop",
+      "type": "capabilities",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-capabilities.png",
+      "sha256": "bc2090bea347e20d93a0d7d86f36f4cfebfa67e9ff9e7fea78aaca52127f38e6"
+    },
+    {
+      "viewport": "desktop",
+      "type": "scenarios",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-scenarios.png",
+      "sha256": "661164142d7288322ac22e9d1d5e2373564e43f06a01db62f6e0b3805e5fffdc"
+    },
+    {
+      "viewport": "desktop",
+      "type": "order",
+      "width": 1440,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-desktop-order.png",
+      "sha256": "ae99fcc952e050f043b7217436be7dcacacc93d79847d8d96416542977801e1c"
+    },
+    {
+      "viewport": "tablet",
+      "type": "full-page",
+      "width": 768,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-full.png",
+      "sha256": "2e37cb916529a11ff3dee8fd69f8964ea43dc6a32dd15ba94c4c293df62f2bb4"
+    },
+    {
+      "viewport": "tablet",
+      "type": "hero",
+      "width": 768,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-hero.png",
+      "sha256": "951643a24b590645971d27d20d5ca865c02a667dfd609813fb9cc4f38723edcb"
+    },
+    {
+      "viewport": "tablet",
+      "type": "included",
+      "width": 768,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-included.png",
+      "sha256": "1354b3ec86439641cc758d89ddff14871ab8a3aefca3157013cd6b1aaad14531"
+    },
+    {
+      "viewport": "tablet",
+      "type": "capabilities",
+      "width": 768,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-capabilities.png",
+      "sha256": "b5286ec5ceb77846295a2ee7b785643f020bdd634f8ffae69fdef43330bbab55"
+    },
+    {
+      "viewport": "tablet",
+      "type": "scenarios",
+      "width": 768,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-scenarios.png",
+      "sha256": "e29accaf6f5a348c612fad436f91e0b887677bb704b0b9b6cd0793d68e9a8ca0"
+    },
+    {
+      "viewport": "tablet",
+      "type": "order",
+      "width": 768,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-tablet-order.png",
+      "sha256": "58e4f958c49749b6d255c5e4ec28588fbf38f4c23f5c63e70ff832da2e205feb"
+    },
+    {
+      "viewport": "mobile",
+      "type": "full-page",
+      "width": 390,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-full.png",
+      "sha256": "9fb8a41d3bda869a49a126e2ab92b2279c0524b06dd9489fb70d8f1a81f5ab3b"
+    },
+    {
+      "viewport": "mobile",
+      "type": "hero",
+      "width": 390,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-hero.png",
+      "sha256": "26f223ad4d73ab39a9b3d4e2be9afa56927db65357697db469f4665f69b982db"
+    },
+    {
+      "viewport": "mobile",
+      "type": "included",
+      "width": 390,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-included.png",
+      "sha256": "4f3c88d2cd1bb48f9598093c6c9572b84dcab280f62b01c7794053e4e171b7be"
+    },
+    {
+      "viewport": "mobile",
+      "type": "capabilities",
+      "width": 390,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-capabilities.png",
+      "sha256": "e8dd944cafc0b78d98054fe5cfcce4319f972431e5d7833aebab0dfd43cbc1fb"
+    },
+    {
+      "viewport": "mobile",
+      "type": "scenarios",
+      "width": 390,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-scenarios.png",
+      "sha256": "302a3562d87a3c5e904e91c0d316d55637d2b7b489a056c161eec7189f0b2b42"
+    },
+    {
+      "viewport": "mobile",
+      "type": "order",
+      "width": 390,
+      "height": 1200,
+      "file": "docs/review/kiber-94-robot-card-preview/screenshots/latest-owner-feedback-2026-09-03/unitree-g1-owner-feedback-mobile-order.png",
+      "sha256": "e158cc387666c1a28a6986829a8478632a100661a2d48679e64be04401c1c909"
+    }
+  ],
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1200
+      },
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 1200
+        },
+        "hero": {
+          "x": 64,
+          "y": -5720,
+          "w": 1312,
+          "h": 689
+        },
+        "eyebrow": {
+          "x": 218,
+          "y": -5667,
+          "w": 347,
+          "h": 22
+        },
+        "title": {
+          "x": 110,
+          "y": -5593,
+          "w": 562,
+          "h": 262
+        },
+        "price": {
+          "x": 110,
+          "y": -5309,
+          "w": 562,
+          "h": 34
+        },
+        "actions": {
+          "x": 214,
+          "y": -5210,
+          "w": 354,
+          "h": 52
+        },
+        "includedList": {
+          "x": 165,
+          "y": -3693,
+          "w": 1110,
+          "h": 225
+        },
+        "orderList": {
+          "x": 165,
+          "y": 599,
+          "w": 1110,
+          "h": 225
+        },
+        "faq": {
+          "x": 64,
+          "y": 910,
+          "w": 1312,
+          "h": 563
+        },
+        "includedStyle": {
+          "marginLeft": "100.8px",
+          "marginRight": "100.8px",
+          "transition": "all",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "orderStyle": {
+          "marginLeft": "100.8px",
+          "marginRight": "100.8px",
+          "transition": "all",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "featureImgStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "transform 0.3s ease-in-out",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "scenarioCardStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "transform 0.3s ease-in-out",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "capabilityImageSrcs": [
+          "/images/robot-capabilities/arenda-unitree-g1/01-tild6632-3663-4234-a237-353162663362____unitree_g1.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/02-tild3261-3664-4733-a363-666637613732__31__.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/03-tild3362-3535-4263-b863-316338643633___.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/04-tild3337-3631-4531-a236-616331626333___.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/05-tild3662-3633-4563-b935-666566656538____.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/06-tild3061-3866-4735-b635-323965623538____.webp"
+        ],
+        "includedLengths": [
+          {
+            "length": 95,
+            "text": "подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы"
+          },
+          {
+            "length": 90,
+            "text": "привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения"
+          },
+          {
+            "length": 97,
+            "text": "оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно"
+          },
+          {
+            "length": 90,
+            "text": "заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события"
+          }
+        ],
+        "orderLengths": [
+          {
+            "length": 97,
+            "text": "Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта."
+          },
+          {
+            "length": 99,
+            "text": "Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта."
+          },
+          {
+            "length": 92,
+            "text": "Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат работы робота."
+          },
+          {
+            "length": 94,
+            "text": "В день события привозим, настраиваем и сопровождаем робота на площадке до окончания программы."
+          }
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "name": "tablet",
+        "width": 768,
+        "height": 1200
+      },
+      "metrics": {
+        "viewport": {
+          "w": 768,
+          "h": 1200
+        },
+        "hero": {
+          "x": 16,
+          "y": -6550,
+          "w": 736,
+          "h": 1059
+        },
+        "eyebrow": {
+          "x": 218,
+          "y": -6534,
+          "w": 347,
+          "h": 20
+        },
+        "title": {
+          "x": 41,
+          "y": -6498,
+          "w": 701,
+          "h": 83
+        },
+        "price": {
+          "x": 41,
+          "y": -6394,
+          "w": 608,
+          "h": 25
+        },
+        "actions": {
+          "x": 214,
+          "y": -6318,
+          "w": 354,
+          "h": 50
+        },
+        "includedList": {
+          "x": 70,
+          "y": -4283,
+          "w": 629,
+          "h": 332
+        },
+        "orderList": {
+          "x": 70,
+          "y": 550,
+          "w": 629,
+          "h": 332
+        },
+        "faq": {
+          "x": 16,
+          "y": 938,
+          "w": 736,
+          "h": 514
+        },
+        "includedStyle": {
+          "marginLeft": "53.76px",
+          "marginRight": "53.76px",
+          "transition": "all",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "orderStyle": {
+          "marginLeft": "53.76px",
+          "marginRight": "53.76px",
+          "transition": "all",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "featureImgStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "transform 0.3s ease-in-out",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "scenarioCardStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "transform 0.3s ease-in-out",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "capabilityImageSrcs": [
+          "/images/robot-capabilities/arenda-unitree-g1/01-tild6632-3663-4234-a237-353162663362____unitree_g1.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/02-tild3261-3664-4733-a363-666637613732__31__.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/03-tild3362-3535-4263-b863-316338643633___.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/04-tild3337-3631-4531-a236-616331626333___.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/05-tild3662-3633-4563-b935-666566656538____.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/06-tild3061-3866-4735-b635-323965623538____.webp"
+        ],
+        "includedLengths": [
+          {
+            "length": 95,
+            "text": "подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы"
+          },
+          {
+            "length": 90,
+            "text": "привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения"
+          },
+          {
+            "length": 97,
+            "text": "оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно"
+          },
+          {
+            "length": 90,
+            "text": "заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события"
+          }
+        ],
+        "orderLengths": [
+          {
+            "length": 97,
+            "text": "Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта."
+          },
+          {
+            "length": 99,
+            "text": "Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта."
+          },
+          {
+            "length": 92,
+            "text": "Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат работы робота."
+          },
+          {
+            "length": 94,
+            "text": "В день события привозим, настраиваем и сопровождаем робота на площадке до окончания программы."
+          }
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 1200
+      },
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 1200
+        },
+        "hero": {
+          "x": 16,
+          "y": -9420,
+          "w": 358,
+          "h": 811
+        },
+        "eyebrow": {
+          "x": 50,
+          "y": -9404,
+          "w": 303,
+          "h": 17
+        },
+        "title": {
+          "x": 40,
+          "y": -9371,
+          "w": 324,
+          "h": 153
+        },
+        "price": {
+          "x": 40,
+          "y": -9197,
+          "w": 324,
+          "h": 25
+        },
+        "actions": {
+          "x": 112,
+          "y": -9121,
+          "w": 180,
+          "h": 115
+        },
+        "includedList": {
+          "x": 16,
+          "y": -7234,
+          "w": 358,
+          "h": 544
+        },
+        "orderList": {
+          "x": 16,
+          "y": 514,
+          "w": 358,
+          "h": 544
+        },
+        "faq": {
+          "x": 16,
+          "y": 1110,
+          "w": 358,
+          "h": 558
+        },
+        "includedStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "all",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "orderStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "all",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "featureImgStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "transform 0.3s ease-in-out",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "scenarioCardStyle": {
+          "marginLeft": "0px",
+          "marginRight": "0px",
+          "transition": "transform 0.3s ease-in-out",
+          "transform": "none",
+          "justifyContent": "normal",
+          "justifyItems": "normal",
+          "alignSelf": "auto",
+          "justifySelf": "auto"
+        },
+        "capabilityImageSrcs": [
+          "/images/robot-capabilities/arenda-unitree-g1/01-tild6632-3663-4234-a237-353162663362____unitree_g1.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/02-tild3261-3664-4733-a363-666637613732__31__.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/03-tild3362-3535-4263-b863-316338643633___.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/04-tild3337-3631-4531-a236-616331626333___.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/05-tild3662-3633-4563-b935-666566656538____.webp",
+          "/images/robot-capabilities/arenda-unitree-g1/06-tild3061-3866-4735-b635-323965623538____.webp"
+        ],
+        "includedLengths": [
+          {
+            "length": 95,
+            "text": "подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы"
+          },
+          {
+            "length": 90,
+            "text": "привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения"
+          },
+          {
+            "length": 97,
+            "text": "оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно"
+          },
+          {
+            "length": 90,
+            "text": "заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события"
+          }
+        ],
+        "orderLengths": [
+          {
+            "length": 97,
+            "text": "Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта."
+          },
+          {
+            "length": 99,
+            "text": "Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта."
+          },
+          {
+            "length": 92,
+            "text": "Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат работы робота."
+          },
+          {
+            "length": 94,
+            "text": "В день события привозим, настраиваем и сопровождаем робота на площадке до окончания программы."
+          }
+        ]
+      }
+    }
+  ]
+}

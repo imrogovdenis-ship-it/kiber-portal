@@ -1,0 +1,79 @@
+---
+import { siteConfig } from '../../config/site';
+
+const goshaImage = {
+  src: '/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif',
+  alt: 'Кибер Гоша в красной шапке помогает выбрать удобный мессенджер для связи',
+};
+
+const messengers = [
+  { label: 'MAX', href: siteConfig.max, slug: 'max' },
+  { label: 'WhatsApp', href: siteConfig.whatsapp, slug: 'whatsapp' },
+  { label: 'Telegram', href: siteConfig.telegram, slug: 'telegram' },
+];
+---
+
+<div class="contact-messenger-popup" id="contact-messengers" data-contact-popup hidden>
+  <div class="contact-messenger-popup__backdrop" data-contact-popup-close></div>
+  <section class="contact-messenger-popup__panel" role="dialog" aria-modal="true" aria-labelledby="contact-messenger-popup-title" aria-describedby="contact-messenger-popup-description" tabindex="-1">
+    <header class="contact-messenger-popup__topline">
+      <p>Связаться с нами</p>
+      <button class="contact-messenger-popup__close" type="button" data-contact-popup-close aria-label="Закрыть окно выбора мессенджера">
+        <span aria-hidden="true">×</span>
+        <span>Закрыть</span>
+      </button>
+    </header>
+    <div class="contact-messenger-popup__hero">
+      <h2 id="contact-messenger-popup-title">Напишите нам в любом удобном мессенджере</h2>
+      <img src={goshaImage.src} alt={goshaImage.alt} width="240" height="240" loading="lazy" decoding="async" />
+    </div>
+    <p class="contact-messenger-popup__description" id="contact-messenger-popup-description">Выберите канал — команда КИБЕР ПОРТАЛ ответит и поможет подобрать робота под мероприятие.</p>
+    <div class="contact-messenger-popup__actions">
+      {messengers.map((messenger) => (
+        <a
+          class="contact-messenger-popup__button"
+          href={messenger.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-analytics-event="messenger_click"
+          data-analytics-source="contact_popup"
+          data-analytics-placement="messenger_choice"
+          data-analytics-slug={messenger.slug}
+        >
+          <span>{messenger.label}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</div>
+<script is:inline src="/scripts/contact-messenger-popup.js" defer></script>
+
+<style>
+  .contact-messenger-popup[hidden] { display: none; }
+  .contact-messenger-popup { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: clamp(1rem, 4vw, 3rem); }
+  .contact-messenger-popup__backdrop { position: absolute; inset: 0; background: color-mix(in srgb, var(--kp-ink) 72%, transparent); backdrop-filter: blur(.125rem); }
+  .contact-messenger-popup__panel { position: relative; z-index: 1; box-sizing: border-box; display: grid; width: min(50rem, calc(100vw - 2rem)); max-height: min(90vh, 54rem); overflow: auto; gap: clamp(.8rem, 1.8vw, 1.35rem); border-radius: clamp(1.5rem, 3vw, 2.5rem); padding: clamp(1.15rem, 3vw, 2.55rem) clamp(1.15rem, 4.6vw, 4rem); background: var(--kp-blue); color: var(--kp-white); box-shadow: 0 2rem 5rem color-mix(in srgb, var(--kp-ink) 32%, transparent); }
+  .contact-messenger-popup__topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+  .contact-messenger-popup__topline p { margin: 0; font-size: clamp(1rem, 1.5vw, 1.25rem); font-weight: 500; line-height: 1.2; color: color-mix(in srgb, var(--kp-white) 92%, transparent); }
+  .contact-messenger-popup__close { display: inline-flex; min-height: 2.25rem; align-items: center; justify-content: center; gap: .65rem; border: .0625rem solid color-mix(in srgb, var(--kp-white) 50%, transparent); border-radius: 62rem; padding: .45rem .95rem; background: color-mix(in srgb, var(--kp-white) 8%, transparent); color: var(--kp-white); font: inherit; font-weight: 700; cursor: pointer; }
+  .contact-messenger-popup__close span:first-child { font-size: 1.7rem; line-height: .8; }
+  .contact-messenger-popup__hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(7rem, .28fr); gap: clamp(.8rem, 3vw, 2rem); align-items: center; }
+  .contact-messenger-popup h2 { max-width: 12ch; margin: 0; color: var(--kp-white); font-family: var(--kp-font-heading); font-size: clamp(2.05rem, 4vw, 3rem); font-weight: var(--kp-heading-weight); line-height: .99; letter-spacing: 0; }
+  .contact-messenger-popup__hero img { justify-self: end; width: min(9.8rem, 20vw); height: auto; object-fit: contain; }
+  .contact-messenger-popup__description { position: absolute; width: .0625rem; height: .0625rem; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .contact-messenger-popup__actions { display: grid; gap: clamp(.6rem, 1.2vw, .85rem); }
+  .contact-messenger-popup__button { display: inline-flex; min-height: clamp(3rem, 4.3vw, 3.95rem); align-items: center; justify-content: center; gap: 1.1rem; border-radius: 62rem; background: var(--kp-white); color: var(--kp-ink); font-size: clamp(.98rem, 1.2vw, 1.12rem); font-weight: 800; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease; }
+  .contact-messenger-popup__button:hover { transform: translateY(-.125rem); box-shadow: 0 1rem 2rem color-mix(in srgb, var(--kp-ink) 14%, transparent); }
+  .contact-messenger-popup__button:focus-visible, .contact-messenger-popup__close:focus-visible { outline: .1875rem solid var(--kp-orange); outline-offset: .1875rem; }
+  body.contact-messenger-popup-open { overflow: hidden; }
+  @media (max-width: 47.9375rem) {
+    .contact-messenger-popup { padding: .75rem; align-items: end; }
+    .contact-messenger-popup__panel { width: 100%; max-height: 82vh; gap: .75rem; border-radius: 1.5rem; padding: .88rem; }
+    .contact-messenger-popup__topline { align-items: flex-start; }
+    .contact-messenger-popup__close { min-height: 2.25rem; padding: .55rem .9rem; }
+    .contact-messenger-popup__hero { grid-template-columns: minmax(0, 1fr) minmax(5.5rem, .34fr); gap: .8rem; }
+    .contact-messenger-popup h2 { font-size: clamp(1.75rem, 8.8vw, 2.35rem); }
+    .contact-messenger-popup__hero img { width: min(5.5rem, 23vw); }
+    .contact-messenger-popup__button { min-height: 3rem; font-size: .96rem; }
+  }
+</style>

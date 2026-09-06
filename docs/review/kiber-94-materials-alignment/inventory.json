@@ -1,0 +1,198 @@
+{
+  "generatedAt": "2026-09-01T12:44:16.755407+00:00",
+  "status": "review_only",
+  "items": [
+    {
+      "id": "article_23_feb",
+      "originalName": "Статья Робот на 23 февраля.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_eacccb6de395_Статья Робот на 23 февраля.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Статья Робот на 23 февраля.docx",
+      "type": "article_detail",
+      "sha256": "aec7f1e10f3baba82880644a7fa86585c80d0589c27326428ba812848c1bd9d6",
+      "bytes": 14743,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_23_feb.md",
+      "paragraphs": 93,
+      "extractedChars": 11172
+    },
+    {
+      "id": "article_price",
+      "originalName": "Статья_Сколько_стоит_аренда_робота.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_590ec15adb3b_Статья_Сколько_стоит_аренда_робота.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Статья_Сколько_стоит_аренда_робота.docx",
+      "type": "article_detail",
+      "sha256": "e74dfe5709b084e842329cdff1efe629e3cc7c6d642308f38d3961d194f281e6",
+      "bytes": 14970,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_price.md",
+      "paragraphs": 113,
+      "extractedChars": 14158
+    },
+    {
+      "id": "compilation_humanoids",
+      "originalName": "Сборка Роботы-гуманоиды.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_9082e1acc343_Сборка Роботы-гуманоиды.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Сборка Роботы-гуманоиды.docx",
+      "type": "compilation",
+      "sha256": "976d15e8d7e79ed1d1611be34e4afa13cebf4181228c1b9b2aafa15e1a37f331",
+      "bytes": 16167,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/compilation_humanoids.md",
+      "paragraphs": 137,
+      "extractedChars": 16139
+    },
+    {
+      "id": "compilation_wedding",
+      "originalName": "Сборка Роботы на свадьбу.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_514e0816e09a_Сборка Роботы на свадьбу.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Сборка Роботы на свадьбу.docx",
+      "type": "compilation",
+      "sha256": "93627380c1c66df28ddf2daf2952423f8cac9c0fca775c169cc47c4d5e829543",
+      "bytes": 17281,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/compilation_wedding.md",
+      "paragraphs": 143,
+      "extractedChars": 19902
+    },
+    {
+      "id": "robot_unitree_go2",
+      "originalName": "Робот собака Unitree GO2.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_110539bd8edc_Робот собака Unitree GO2.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Робот собака Unitree GO2.docx",
+      "type": "robot_card",
+      "sha256": "11f2d398da5e5a023de6881b10a5e6d72f3c067af10967d635ff4fd831cdf053",
+      "bytes": 22337,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/robot_unitree_go2.md",
+      "paragraphs": 127,
+      "extractedChars": 13105
+    },
+    {
+      "id": "robot_senserobot",
+      "originalName": "Робот шахматист SenseRobot.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_bb535ba93fb7_Робот шахматист SenseRobot.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Робот шахматист SenseRobot.docx",
+      "type": "robot_card",
+      "sha256": "6dc6cc9436bef6aa7c38216a1ee563e30022914f050bdf21e7a148941b16efe8",
+      "bytes": 44097,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/robot_senserobot.md",
+      "paragraphs": 114,
+      "extractedChars": 13250
+    },
+    {
+      "id": "robot_unitree_r1",
+      "originalName": "Робот гуманоид Unitree R1.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_b66901d70670_Робот гуманоид Unitree R1.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Робот гуманоид Unitree R1.docx",
+      "type": "robot_card",
+      "sha256": "def60c0bf608a368dc3d31d9c32401ef73591fa7be8f1356cd64533a02ed4320",
+      "bytes": 44955,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/robot_unitree_r1.md",
+      "paragraphs": 132,
+      "extractedChars": 14411
+    },
+    {
+      "id": "skill_rent",
+      "originalName": "kiber-portal-seo-copywriter-rent.skill",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_4a46e22e17b6_kiber-portal-seo-copywriter-rent.skill",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/kiber-portal-seo-copywriter-rent.skill",
+      "type": "claude_skill",
+      "sha256": "304f04447d0ce03d4562973b09fc8523462d5d1bf9eaf740f8b0e6077a10e415",
+      "bytes": 68816,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/skill_rent.md",
+      "zipEntries": [
+        "kiber-portal-seo-copywriter-rent/references/seo_rules.md",
+        "kiber-portal-seo-copywriter-rent/references/seo_keys.md",
+        "kiber-portal-seo-copywriter-rent/references/service_card_template.md",
+        "kiber-portal-seo-copywriter-rent/references/tone_of_voice.md",
+        "kiber-portal-seo-copywriter-rent/references/promt_template.md",
+        "kiber-portal-seo-copywriter-rent/SKILL.md"
+      ],
+      "zipEntryCount": 6,
+      "extractedChars": 144824
+    },
+    {
+      "id": "skill_articles",
+      "originalName": "kiber-portal-seo-copywriter-articles.skill",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_c994ac498e80_kiber-portal-seo-copywriter-articles.skill",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/kiber-portal-seo-copywriter-articles.skill",
+      "type": "claude_skill",
+      "sha256": "9297e66a66ab06c2b2515e235a48884b96c935c3b3725a9f051413e71cc0190c",
+      "bytes": 72242,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/skill_articles.md",
+      "zipEntries": [
+        "kiber-portal-seo-copywriter-articles/references/seo_rules.md",
+        "kiber-portal-seo-copywriter-articles/references/seo_keys.md",
+        "kiber-portal-seo-copywriter-articles/references/tone_of_voice.md",
+        "kiber-portal-seo-copywriter-articles/references/article_template.md",
+        "kiber-portal-seo-copywriter-articles/references/promt_template.md",
+        "kiber-portal-seo-copywriter-articles/SKILL.md"
+      ],
+      "zipEntryCount": 6,
+      "extractedChars": 153365
+    },
+    {
+      "id": "skill_sborki",
+      "originalName": "kiber-portal-seo-copywriter-sborki.skill",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_c77c9f762414_kiber-portal-seo-copywriter-sborki.skill",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/kiber-portal-seo-copywriter-sborki.skill",
+      "type": "claude_skill",
+      "sha256": "0724873715db34adb5d646c0d4c6ee6401ea0e9b7253930fc713cb858798ed80",
+      "bytes": 71195,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/skill_sborki.md",
+      "zipEntries": [
+        "kiber-portal-seo-copywriter-sborki/references/seo_rules.md",
+        "kiber-portal-seo-copywriter-sborki/references/seo_keys.md",
+        "kiber-portal-seo-copywriter-sborki/references/sborka_template.md",
+        "kiber-portal-seo-copywriter-sborki/references/tone_of_voice.md",
+        "kiber-portal-seo-copywriter-sborki/references/promt_template.md",
+        "kiber-portal-seo-copywriter-sborki/SKILL.md"
+      ],
+      "zipEntryCount": 6,
+      "extractedChars": 151154
+    },
+    {
+      "id": "article_sofia_gala",
+      "originalName": "Статья Робот София на гала-ужине.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_b1553974873a_Статья Робот София на гала-ужине.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Статья Робот София на гала-ужине.docx",
+      "type": "article_detail",
+      "sha256": "f4104c84be322c9ab5e34b5471014a92d691329041135711b85424b4004f38b3",
+      "bytes": 16314,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_sofia_gala.md",
+      "paragraphs": 107,
+      "extractedChars": 14781
+    },
+    {
+      "id": "article_store_opening",
+      "originalName": "Статья_Открытие_магазина_идеи_с_роботами.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_dd6a5d3342fc_Статья_Открытие_магазина_идеи_с_роботами.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Статья_Открытие_магазина_идеи_с_роботами.docx",
+      "type": "article_detail",
+      "sha256": "894587f71b2004861b31656bc43410665ecda06c96dcfcaa603d3dba2bdd66a5",
+      "bytes": 16825,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_store_opening.md",
+      "paragraphs": 125,
+      "extractedChars": 15870
+    },
+    {
+      "id": "article_unusual_corporate",
+      "originalName": "Статья_Необычный_корпоратив_5_идей.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_8c8e043ddbbe_Статья_Необычный_корпоратив_5_идей.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Статья_Необычный_корпоратив_5_идей.docx",
+      "type": "article_detail",
+      "sha256": "22e71084e9f46a7ba5861e82eece4a2fe82439f5859168109480cf633c81833d",
+      "bytes": 17255,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_unusual_corporate.md",
+      "paragraphs": 142,
+      "extractedChars": 16655
+    },
+    {
+      "id": "article_unitree_comparison",
+      "originalName": "Статья Unitree G1 R1 H2 сравнение.docx",
+      "sourcePath": "/home/alex/.hermes/cache/documents/doc_6d4578beed6f_Статья Unitree G1 R1 H2 сравнение.docx",
+      "reviewCopy": "docs/review/kiber-94-materials-alignment/sources/Статья Unitree G1 R1 H2 сравнение.docx",
+      "type": "article_detail",
+      "sha256": "c4eb12b63307e23820f8b3c7b98717f6d47003083d98be611030a3b17db0f93e",
+      "bytes": 22293,
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_unitree_comparison.md",
+      "paragraphs": 188,
+      "extractedChars": 28465
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-06T13:19:51.155304+00:00",
+  "status": "owner_approved_closed",
+  "owner_statement": "Утверждаю все четыре документа юридических в том виде в котором они есть",
+  "scope": {
+    "documents": [
+      "privacy-policy",
+      "cookie-policy",
+      "terms",
+      "consent"
+    ],
+    "human_titles": [
+      "Политика обработки персональных данных",
+      "Политика использования файлов cookie",
+      "Пользовательское соглашение",
+      "Согласие на обработку персональных данных"
+    ],
+    "approved_artifacts": [
+      "data/legal/legal-documents.json",
+      "src/pages/privacy-policy.astro",
+      "src/pages/cookie-policy.astro",
+      "src/pages/terms.astro",
+      "src/pages/consent.astro",
+      "src/components/legal/LegalDocumentPage.astro"
+    ],
+    "evidence": [
+      "docs/review/legal-documents-cleanup-20260906/README.md",
+      "docs/review/legal-documents-cleanup-20260906/implementation-summary.json",
+      "docs/review/legal-documents-cleanup-20260906/verification-results-final.json"
+    ],
+    "approved_as_of_git_head": "17c57f65943fe5f5949a45f1084170e232562659"
+  },
+  "verification": {
+    "legal_four_documents": "4/4 pass",
+    "page_seo_components": "pass",
+    "production_go_no_go": "pass / NO_GO remains",
+    "build_preview": "pass",
+    "rendered_forbidden_internal_notices": "0 hits",
+    "privacy_cookie_duplicate_numbering": "0 isolated/embedded duplicate numbering findings"
+  },
+  "exclusions": {
+    "merge": false,
+    "production_deploy": false,
+    "dns": false,
+    "analytics": false,
+    "live_lead_routing": false,
+    "secrets": false,
+    "linear_done": false
+  }
+}

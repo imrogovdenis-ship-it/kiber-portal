@@ -2,8 +2,8 @@
   "issue": "KIBER-production-go-no-go",
   "status": "passed_with_no_go_blockers",
   "decision": "NO_GO",
-  "branch": "codex/kiber-15-controlled-rebuild",
-  "head": "96107ef",
+  "branch": "hermes/kiber-full-site-visual-qa-20260901",
+  "head": "17c57f65943f",
   "blockers": 4,
   "routesChecked": 37,
   "robotRoutesChecked": 24,
@@ -14,5 +14,5 @@
     10,
     8
   ],
-  "generatedAt": "2026-08-30T18:13:57.202Z"
+  "generatedAt": "2026-09-06T13:52:52.319Z"
 }

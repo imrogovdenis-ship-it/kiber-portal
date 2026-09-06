@@ -1,0 +1,77 @@
+{
+  "home": {
+    "hrefCount": 36,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/",
+      "/preview/kiber-94/article-blocks/#mediaMoment",
+      "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+      "/preview/kiber-94/robot-card/arenda-bellabot/",
+      "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/"
+    ]
+  },
+  "compilations": {
+    "hrefCount": 29,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/#mediaMoment",
+      "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "/preview/kiber-94/robot-card/arenda-unitree-g1/"
+    ]
+  },
+  "articles": {
+    "hrefCount": 26,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/"
+    ]
+  },
+  "robot_card": {
+    "hrefCount": 32,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/",
+      "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+      "/preview/kiber-94/robot-card/arenda-bellabot/",
+      "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/"
+    ]
+  },
+  "humanoid_preview": {
+    "hrefCount": 38,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/#mediaMoment",
+      "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+      "/preview/kiber-94/robot-card/arenda-noetix-bumi/",
+      "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "/preview/kiber-94/robot-card/arenda-unitree-h2/",
+      "/preview/kiber-94/robot-card/arenda-unitree-r1/"
+    ]
+  },
+  "article_template": {
+    "hrefCount": 53,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/",
+      "/preview/kiber-94/article-blocks/#mediaMoment",
+      "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+      "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "/preview/kiber-94/robot-card/arenda-unitree-h2/",
+      "/preview/kiber-94/robot-card/arenda-unitree-r1/"
+    ]
+  },
+  "review_map": {
+    "hrefCount": 28,
+    "badOldDesignLinks": [],
+    "approvedPreviewLinks": [
+      "/preview/kiber-94/article-blocks/#mediaMoment",
+      "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "/preview/kiber-94/robot-card/arenda-unitree-g1/"
+    ]
+  }
+}

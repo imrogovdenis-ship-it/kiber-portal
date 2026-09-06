@@ -1,0 +1,1026 @@
+{
+  "schemaVersion": 1,
+  "project": "КИБЕР ПОРТАЛ",
+  "status": "draft_for_owner_review",
+  "createdAt": "2026-09-04T19:24:59.087102+00:00",
+  "sourceAudit": "docs/review/seo-ai-compliance-audit-current-20260904/report.json",
+  "purpose": "Claude-ready block and field contracts for adapting existing texts into approved KIBER PORTAL page templates without redesigning components.",
+  "policy": {
+    "productionDeploy": false,
+    "dnsChange": false,
+    "secretsChanged": false,
+    "analyticsActivation": false,
+    "liveLeadRouting": false,
+    "massPageGeneration": false,
+    "claudeMayChangeDesign": false,
+    "hermesMapsFieldsWithoutReinterpretingDesign": true,
+    "reviewOnlyUntilOwnerApproval": true,
+    "noHiddenCrawlerOnlySeoText": true
+  },
+  "globalOutputEnvelope": {
+    "requiredTopLevelFields": [
+      "contentPackageVersion",
+      "pageType",
+      "slug",
+      "sourceDocuments",
+      "seo",
+      "aiVisibility",
+      "blocks",
+      "media",
+      "internalLinks",
+      "schema",
+      "review"
+    ],
+    "contentPackageVersion": "1.0",
+    "fieldAddressingRule": "Every piece of copy must be addressed as blocks.<blockId>.<fieldName>; no unassigned prose is allowed.",
+    "sourceStatusValues": [
+      "owner_approved",
+      "source_document",
+      "existing_site",
+      "generated_needs_review",
+      "needs_business_review",
+      "needs_legal_review"
+    ],
+    "reviewStatusValues": [
+      "draft",
+      "structurally_valid",
+      "needs_owner_review",
+      "approved_for_mapping"
+    ],
+    "forbiddenOutput": [
+      "new CSS/design instructions",
+      "secret values",
+      "production URLs not approved",
+      "hidden SEO text",
+      "unverified prices/capabilities",
+      "raw Wordstat/checklist/service metadata as visible copy"
+    ]
+  },
+  "globalSeoFields": {
+    "metaTitle": {
+      "required": true,
+      "length": "45-65 chars",
+      "renderTarget": "<title> + og:title/twitter:title",
+      "auditWarningsAddressed": [
+        "titleMatchesPassport",
+        "primaryKeywordInTitle"
+      ]
+    },
+    "metaDescription": {
+      "required": true,
+      "length": "120-160 chars",
+      "renderTarget": "meta description + og:description/twitter:description"
+    },
+    "canonicalPath": {
+      "required": true,
+      "format": "/path/",
+      "renderTarget": "canonical"
+    },
+    "primaryKeyword": {
+      "required": true,
+      "notes": "Must be present or semantically exact in metaTitle, H1, first visible block unless approved visual wording intentionally differs."
+    },
+    "secondaryKeywords": {
+      "required": true,
+      "count": "3-7",
+      "notes": "Must be distributed naturally in visible copy; no keyword stuffing."
+    },
+    "h1": {
+      "type": "string",
+      "length": "35-75 chars",
+      "tag": "h1",
+      "required": true,
+      "notes": "Один H1 на страницу; должен совпадать с page intent, но не ломать утверждённый визуальный стиль."
+    },
+    "requiredSchemaTypes": {
+      "required": true,
+      "byPageType": {
+        "robot_card": [
+          "Service",
+          "BreadcrumbList"
+        ],
+        "compilation": [
+          "CollectionPage",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "article_detail": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ]
+      }
+    },
+    "breadcrumbs": {
+      "required": true,
+      "fields": [
+        "label",
+        "href"
+      ],
+      "notes": "Header before page body, breadcrumbs before Hero."
+    },
+    "aiSummary": {
+      "required": true,
+      "length": "180-320 chars",
+      "notes": "Visible concise answer for users and AI agents; no hidden crawler-only text."
+    }
+  },
+  "mediaPolicy": {
+    "requiredFieldsPerImage": [
+      "mediaId",
+      "role",
+      "src",
+      "alt",
+      "actualDescription",
+      "seoAlt",
+      "caption",
+      "sourceStatus",
+      "rightsStatus"
+    ],
+    "actualDescription": "Human factual visual description: what is visible, no SEO/long-tail/commercial wording, no subjective hype.",
+    "seoAlt": "Truthful SEO-aware alt based on actualDescription and page context; no prices, no unverified places/brands/capabilities.",
+    "commercialAltDistribution": "For every page/block context, roughly every second meaningful image may carry commercial long-tail phrasing, following existing KIBER media policy.",
+    "rightsStatusValues": [
+      "approved",
+      "needs_rights_review",
+      "decorative_or_service",
+      "rejected"
+    ]
+  },
+  "pageTypes": {
+    "robot_card": {
+      "approvedTemplate": "src/components/templates/RobotCardTemplate.astro",
+      "approvalStatus": "owner_visual_structure_approved_desktop_tablet_mobile",
+      "fixedBlockOrder": true,
+      "claudeRole": "Write field-level copy for fixed blocks; do not add/remove/reorder blocks unless owner updates contract.",
+      "requiredOpening": [
+        "Header",
+        "Breadcrumbs",
+        "hero",
+        "aiSummary"
+      ],
+      "requiredClosing": [
+        "faq",
+        "finalQuestionsCta",
+        "articles",
+        "relatedCatalog"
+      ],
+      "blocks": [
+        {
+          "id": "hero",
+          "name": "Hero карточки робота",
+          "required": true,
+          "order": 1,
+          "component": "RobotCardTemplate.astro / template-live-hero",
+          "purpose": "Сразу объяснить модель, тип робота, аренду и CTA.",
+          "headings": [
+            {
+              "field": "h1",
+              "tag": "h1",
+              "rule": "Аренда <тип робота> <модель>; один H1"
+            }
+          ],
+          "fields": [
+            "eyebrow",
+            "h1",
+            "priceDisplay",
+            "primaryCtaLabel",
+            "secondaryCtaLabel",
+            "heroImage"
+          ],
+          "textRequirements": {
+            "h1": "35-75 chars; содержит аренда + тип + модель",
+            "priceDisplay": "только из approved tariff/source-of-truth; request/not_applicable statuses explicit"
+          },
+          "mediaRoles": [
+            "hero"
+          ],
+          "seoPurpose": [
+            "primaryKeywordInH1",
+            "primaryKeywordInFirstBlock"
+          ]
+        },
+        {
+          "id": "aiSummary",
+          "name": "Коротко / AI summary",
+          "required": true,
+          "order": 2,
+          "purpose": "Один короткий видимый ответ: что за робот, где полезен, что делает команда.",
+          "headings": [],
+          "fields": [
+            "paragraph"
+          ],
+          "textRequirements": {
+            "paragraph": "180-320 chars; один абзац; без склейки meta description; sourceStatus required"
+          }
+        },
+        {
+          "id": "gallery",
+          "name": "Галерея",
+          "required": true,
+          "order": 3,
+          "purpose": "Показать approved media робота без дублирования hero/catalog card.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2",
+              "default": "Галерея"
+            }
+          ],
+          "fields": [
+            "title",
+            "images[]"
+          ],
+          "mediaRoles": [
+            "gallery"
+          ],
+          "textRequirements": {
+            "title": "короткий H2; без подзаголовка если нечего сказать"
+          }
+        },
+        {
+          "id": "includedService",
+          "name": "01 — что входит",
+          "required": true,
+          "order": 4,
+          "purpose": "Снять риск: аренда = робот + доставка + оператор + настройка сценария.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "eyebrow",
+            "title",
+            "items[]"
+          ],
+          "textRequirements": {
+            "items": "4 items; 90-110 chars each; FAQ-like side inset; no invented service promises"
+          }
+        },
+        {
+          "id": "capabilities",
+          "name": "02 — ключевые возможности",
+          "required": true,
+          "order": 5,
+          "purpose": "Понятно объяснить функциональность модели.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            },
+            {
+              "field": "items[].title",
+              "tag": "h3"
+            }
+          ],
+          "fields": [
+            "title",
+            "items[]",
+            "capabilityImages[]"
+          ],
+          "mediaRoles": [
+            "capability"
+          ],
+          "textRequirements": {
+            "items": "4-6 capabilities; facts from source/manufacturer/site; sourceStatus required"
+          }
+        },
+        {
+          "id": "scenarios",
+          "name": "03 — сценарии использования",
+          "required": true,
+          "order": 6,
+          "purpose": "Показать где робот создаёт эффект на мероприятии.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            },
+            {
+              "field": "items[].title",
+              "tag": "h3"
+            }
+          ],
+          "fields": [
+            "title",
+            "lead",
+            "items[]"
+          ],
+          "textRequirements": {
+            "items": "3-6 cards; each title 2-5 words; text 90-180 chars"
+          }
+        },
+        {
+          "id": "pricing",
+          "name": "CTA #1 / аренда конкретной модели",
+          "required": true,
+          "order": 7,
+          "component": "HomeFinalCta",
+          "purpose": "Первый коммерческий переход после пользы/сценариев.",
+          "fields": [
+            "title",
+            "description",
+            "buttons[]"
+          ],
+          "textRequirements": {
+            "title": "Арендуйте <тип> <модель> для мероприятия; no price if not approved"
+          }
+        },
+        {
+          "id": "robotInAction",
+          "name": "04 — робот в действии",
+          "required": true,
+          "order": 8,
+          "purpose": "Вторая media-gallery с действием/гостями/площадкой, не catalog stills.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "title",
+            "images[]"
+          ],
+          "mediaRoles": [
+            "action_gallery"
+          ]
+        },
+        {
+          "id": "goshaCta",
+          "name": "Цитата Кибер Гоши",
+          "required": true,
+          "order": 9,
+          "component": "HomeGoshaQuote",
+          "purpose": "Брендовый голос: лёгкая фраза + практичный подвод к менеджеру.",
+          "fields": [
+            "quote",
+            "text"
+          ],
+          "textRequirements": {
+            "quote": "1 funny/useful line, not childish; text 140-260 chars"
+          }
+        },
+        {
+          "id": "hiddenMachineFacts",
+          "name": "Machine-readable facts",
+          "required": true,
+          "order": 10,
+          "publicVisible": false,
+          "purpose": "JSON facts for schema/audit; not hidden SEO prose; safe only as structured data.",
+          "fields": [
+            "facts[]"
+          ],
+          "textRequirements": {
+            "facts": "factual, sourceStatus, no crawler-only marketing copy"
+          }
+        },
+        {
+          "id": "orderFlow",
+          "name": "05 — как заказать",
+          "required": true,
+          "order": 11,
+          "purpose": "Объяснить процесс заявки без лишней сложности.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "title",
+            "steps[]"
+          ],
+          "textRequirements": {
+            "steps": "3-5 steps; 90-110 chars each; FAQ-like side insets"
+          }
+        },
+        {
+          "id": "faq",
+          "name": "FAQ",
+          "required": true,
+          "order": 12,
+          "component": "HomeFaqBlock",
+          "purpose": "Закрыть возражения и дать FAQPage schema.",
+          "fields": [
+            "title",
+            "items[]"
+          ],
+          "textRequirements": {
+            "items": "3-6 Q/A; answers 180-450 chars; no unsupported claims"
+          }
+        },
+        {
+          "id": "finalQuestionsCta",
+          "name": "CTA2 / Остались вопросы?",
+          "required": true,
+          "order": 13,
+          "component": "HomeFinalCta",
+          "purpose": "Финальный контактный блок approved homepage style.",
+          "fields": [
+            "title",
+            "description",
+            "buttons[]"
+          ]
+        },
+        {
+          "id": "articles",
+          "name": "Блог Кибер Гоши",
+          "required": true,
+          "order": 14,
+          "component": "HomeImageCards",
+          "purpose": "Внутренняя перелинковка на статьи по смыслу робота.",
+          "fields": [
+            "title",
+            "description",
+            "cards[]"
+          ],
+          "textRequirements": {
+            "cards": "3 or 6 cards; existing/approved routes preferred"
+          }
+        },
+        {
+          "id": "relatedCatalog",
+          "name": "Каталог / Вас также могут заинтересовать",
+          "required": true,
+          "order": 15,
+          "component": "RobotCard grid",
+          "purpose": "Рекомендовать связанные модели.",
+          "fields": [
+            "title",
+            "description",
+            "robotSlugs[]"
+          ],
+          "textRequirements": {
+            "robotSlugs": "3-4 relevant robots from source-of-truth; no invented items"
+          }
+        }
+      ]
+    },
+    "compilation": {
+      "approvedTemplate": "src/components/templates/CompilationTemplate.astro",
+      "approvalStatus": "owner_visual_structure_approved_desktop_tablet_mobile",
+      "fixedBlockOrder": true,
+      "claudeRole": "Write into fixed подборка blocks; may choose gallery/video only if approved media exists.",
+      "requiredOpening": [
+        "Header",
+        "Breadcrumbs",
+        "hero",
+        "intro",
+        "introGosha"
+      ],
+      "requiredClosing": [
+        "faq",
+        "cta2",
+        "catalogBlock",
+        "relatedArticles",
+        "otherCompilations"
+      ],
+      "blocks": [
+        {
+          "id": "hero",
+          "name": "Hero подборки",
+          "required": true,
+          "order": 1,
+          "purpose": "Назвать сценарий/класс роботов и коммерческий intent.",
+          "headings": [
+            {
+              "field": "h1",
+              "tag": "h1"
+            }
+          ],
+          "fields": [
+            "eyebrow",
+            "h1",
+            "lead",
+            "heroImage"
+          ],
+          "mediaRoles": [
+            "hero_group_or_theme"
+          ]
+        },
+        {
+          "id": "intro",
+          "name": "SEO / AI intro подборки",
+          "required": true,
+          "order": 2,
+          "purpose": "Коротко объяснить, что выбрать и кому подходит подборка.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "title",
+            "paragraphs[]"
+          ],
+          "textRequirements": {
+            "paragraphs": "1-3 paragraphs, visible, with primary/secondary keywords naturally"
+          }
+        },
+        {
+          "id": "introGosha",
+          "name": "Вводный комментарий Кибер Гоши",
+          "required": true,
+          "order": 3,
+          "component": "HomeGoshaQuote",
+          "purpose": "Брендовый помощник перед разбором моделей.",
+          "fields": [
+            "quote",
+            "text"
+          ]
+        },
+        {
+          "id": "gallery",
+          "name": "Галерея подборки",
+          "required": false,
+          "order": 4,
+          "purpose": "Показывает класс/сценарий, если есть approved media.",
+          "fields": [
+            "title",
+            "lead",
+            "images[]"
+          ],
+          "mediaRoles": [
+            "collection_gallery"
+          ]
+        },
+        {
+          "id": "choiceGuide",
+          "name": "Гид по выбору",
+          "required": true,
+          "order": 5,
+          "purpose": "Объяснить критерии выбора внутри подборки.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            },
+            {
+              "field": "steps[].title",
+              "tag": "h3"
+            }
+          ],
+          "fields": [
+            "title",
+            "lead",
+            "steps[]"
+          ],
+          "textRequirements": {
+            "steps": "3-5 cards; compare scenarios, not generic sales copy"
+          }
+        },
+        {
+          "id": "video",
+          "name": "Видео",
+          "required": false,
+          "order": 6,
+          "purpose": "Kinescope/approved video if meaningful.",
+          "fields": [
+            "title",
+            "lead",
+            "videoId|embedLink",
+            "posterImage"
+          ],
+          "mediaRoles": [
+            "video"
+          ]
+        },
+        {
+          "id": "scenarioExplanation",
+          "name": "Сценарии",
+          "required": true,
+          "order": 7,
+          "purpose": "Сценарные карточки применения подборки.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            },
+            {
+              "field": "items[].title",
+              "tag": "h3"
+            }
+          ],
+          "fields": [
+            "title",
+            "lead",
+            "items[]"
+          ]
+        },
+        {
+          "id": "goshaConclusion",
+          "name": "Финальный комментарий Кибер Гоши",
+          "required": true,
+          "order": 8,
+          "component": "HomeGoshaQuote",
+          "purpose": "Переход от объяснения к выбору/заявке.",
+          "fields": [
+            "quote",
+            "text"
+          ]
+        },
+        {
+          "id": "faq",
+          "name": "FAQ подборки",
+          "required": true,
+          "order": 9,
+          "component": "HomeFaqBlock",
+          "fields": [
+            "title",
+            "items[]"
+          ],
+          "schema": [
+            "FAQPage"
+          ]
+        },
+        {
+          "id": "cta2",
+          "name": "CTA2 / Остались вопросы?",
+          "required": true,
+          "order": 10,
+          "component": "HomeFinalCta",
+          "fields": [
+            "title",
+            "description",
+            "buttons[]"
+          ]
+        },
+        {
+          "id": "catalogBlock",
+          "name": "Каталог роботов по теме",
+          "required": true,
+          "order": 11,
+          "component": "RobotCard grid",
+          "purpose": "Главный список моделей подборки.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "description",
+            "robotSlugs[]"
+          ],
+          "textRequirements": {
+            "robotSlugs": "all relevant approved robots; order by business/SEO meaning"
+          }
+        },
+        {
+          "id": "relatedArticles",
+          "name": "Блог Кибер Гоши",
+          "required": true,
+          "order": 12,
+          "component": "HomeImageCards",
+          "fields": [
+            "title",
+            "lead",
+            "cards[]"
+          ],
+          "purpose": "Дать читателю следующие материалы Блога Кибер Гоши по теме подборки и усилить внутреннюю перелинковку."
+        },
+        {
+          "id": "otherCompilations",
+          "name": "Подборки",
+          "required": true,
+          "order": 13,
+          "component": "HomeImageCards",
+          "fields": [
+            "title",
+            "description",
+            "cards[]"
+          ],
+          "purpose": "Показать соседние подборки, чтобы пользователь мог перейти к альтернативному сценарию выбора роботов."
+        }
+      ]
+    },
+    "article_detail": {
+      "approvedTemplate": "src/components/templates/ArticleBlocksTemplate.astro",
+      "approvalStatus": "owner_visual_structure_meaning_approved_desktop_tablet_mobile",
+      "fixedBlockOrder": false,
+      "claudeRole": "Choose appropriate optional middle blocks and output block-labeled fields. Required start/end cannot be omitted.",
+      "requiredOpening": [
+        "Header",
+        "Breadcrumbs",
+        "hero",
+        "seoIntro"
+      ],
+      "mandatoryFlexibleMiddle": [
+        "plainText",
+        "goshaQuote"
+      ],
+      "requiredClosing": [
+        "faq",
+        "cta2",
+        "catalogBlock",
+        "relatedArticles",
+        "relatedCompilations"
+      ],
+      "optionalBlocks": [
+        "mediaMoment",
+        "robotCardGallery",
+        "comparisonBlock",
+        "obviousChoice",
+        "numberedUseCases",
+        "checkpointList",
+        "pairedEnumeration",
+        "productCard"
+      ],
+      "blocks": [
+        {
+          "id": "hero",
+          "name": "Hero статьи",
+          "required": true,
+          "order": "1",
+          "purpose": "Название статьи и быстрый смысл.",
+          "headings": [
+            {
+              "field": "h1",
+              "tag": "h1"
+            }
+          ],
+          "fields": [
+            "eyebrow",
+            "h1",
+            "lead",
+            "heroImage"
+          ],
+          "textRequirements": {
+            "h1": "article intent; no generic 'шаблон' for real article"
+          }
+        },
+        {
+          "id": "seoIntro",
+          "name": "SEO / AI intro",
+          "required": true,
+          "order": "2",
+          "purpose": "Первый видимый ответ для людей и AI agents.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "eyebrow",
+            "title",
+            "paragraphs[]"
+          ],
+          "textRequirements": {
+            "paragraphs": "1-3 paragraphs; primary keyword/intent in first paragraph; no hidden text"
+          }
+        },
+        {
+          "id": "plainText",
+          "name": "Простой текстовый блок с заголовком",
+          "required": true,
+          "order": "after seoIntro, flexible",
+          "purpose": "Нормальный editorial explanation without complex layout.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "title",
+            "paragraphs[]"
+          ]
+        },
+        {
+          "id": "goshaQuote",
+          "name": "Цитата Кибер Гоши",
+          "required": true,
+          "order": "after seoIntro, flexible",
+          "component": "HomeGoshaQuote",
+          "purpose": "Брендовый голос/объяснение сложного выбора.",
+          "fields": [
+            "quote",
+            "text"
+          ]
+        },
+        {
+          "id": "mediaMoment",
+          "name": "Фото / видео момент",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Иллюстрация момента из статьи.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "image|video",
+            "caption"
+          ],
+          "mediaRoles": [
+            "article_moment"
+          ]
+        },
+        {
+          "id": "robotCardGallery",
+          "name": "Галерея",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Несколько изображений/кадров по теме статьи.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "images[]"
+          ],
+          "mediaRoles": [
+            "article_gallery"
+          ]
+        },
+        {
+          "id": "comparisonBlock",
+          "name": "Сравнение",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Сравнить модели/форматы/характеристики.",
+          "headings": [
+            {
+              "field": "title",
+              "tag": "h2"
+            }
+          ],
+          "fields": [
+            "eyebrow",
+            "title",
+            "lead",
+            "columns[]|table"
+          ],
+          "textRequirements": {
+            "table": "headers + rows + optional note; no unsupported specs"
+          }
+        },
+        {
+          "id": "obviousChoice",
+          "name": "Выбор",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Когда читателю нужно быстро понять что выбрать.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "cards[]"
+          ],
+          "textRequirements": {
+            "cards": "2-4 cards with title/text"
+          }
+        },
+        {
+          "id": "numberedUseCases",
+          "name": "Форматы / сценарии",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Нумерованный список сценариев применения.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "items[]"
+          ]
+        },
+        {
+          "id": "checkpointList",
+          "name": "Чек-лист",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Практические пункты проверки перед заявкой.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "items[]"
+          ]
+        },
+        {
+          "id": "pairedEnumeration",
+          "name": "Перечисление",
+          "required": false,
+          "order": "optional middle",
+          "purpose": "Пары/варианты/фирменные моменты.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "items[]"
+          ]
+        },
+        {
+          "id": "productCard",
+          "name": "Одна рекомендованная модель",
+          "required": false,
+          "order": "optional before closing",
+          "purpose": "Рекомендовать одну или несколько моделей; для сравнений может быть несколько instances.",
+          "fields": [
+            "eyebrow",
+            "title",
+            "featuredSlug",
+            "reason",
+            "ctaLabel"
+          ],
+          "textRequirements": {
+            "featuredSlug": "must exist in robot source-of-truth"
+          }
+        },
+        {
+          "id": "faq",
+          "name": "FAQ статьи",
+          "required": true,
+          "order": "closing 1",
+          "component": "HomeFaqBlock",
+          "fields": [
+            "title",
+            "items[]"
+          ],
+          "schema": [
+            "FAQPage"
+          ]
+        },
+        {
+          "id": "cta2",
+          "name": "CTA2 / Остались вопросы?",
+          "required": true,
+          "order": "closing 2",
+          "component": "HomeFinalCta",
+          "fields": [
+            "title",
+            "description",
+            "buttons[]"
+          ]
+        },
+        {
+          "id": "catalogBlock",
+          "name": "Каталог роботов",
+          "required": true,
+          "order": "closing 3",
+          "component": "RobotCard grid",
+          "fields": [
+            "eyebrow",
+            "title",
+            "description",
+            "robotSlugs[]"
+          ],
+          "purpose": "Связать статью с релевантными моделями каталога и дать коммерческий путь после FAQ/CTA."
+        },
+        {
+          "id": "relatedArticles",
+          "name": "Блог Кибер Гоши",
+          "required": true,
+          "order": "closing 4",
+          "component": "HomeImageCards",
+          "fields": [
+            "eyebrow",
+            "title",
+            "description",
+            "cards[]"
+          ],
+          "purpose": "Продолжить чтение в Блоге Кибер Гоши по близким вопросам и усилить тематическую перелинковку."
+        },
+        {
+          "id": "relatedCompilations",
+          "name": "Подборки",
+          "required": true,
+          "order": "closing 5",
+          "component": "HomeImageCards",
+          "fields": [
+            "eyebrow",
+            "title",
+            "description",
+            "cards[]"
+          ],
+          "purpose": "Показать подборки по смыслу статьи для перехода от чтения к выбору группы роботов."
+        }
+      ]
+    }
+  },
+  "validationRules": {
+    "required": [
+      "Every page type has blocks with unique ids.",
+      "Every required block declares fields and purpose.",
+      "Every heading field declares tag placement.",
+      "Every page type declares required opening and closing sequence.",
+      "Every image/media field requires alt, actualDescription, seoAlt, sourceStatus, rightsStatus.",
+      "Claude output must not contain unassigned prose outside blocks."
+    ],
+    "articleClosingSequence": [
+      "faq",
+      "cta2",
+      "catalogBlock",
+      "relatedArticles",
+      "relatedCompilations"
+    ],
+    "robotCardClosingSequence": [
+      "faq",
+      "finalQuestionsCta",
+      "articles",
+      "relatedCatalog"
+    ],
+    "compilationClosingSequence": [
+      "faq",
+      "cta2",
+      "catalogBlock",
+      "relatedArticles",
+      "otherCompilations"
+    ]
+  }
+}

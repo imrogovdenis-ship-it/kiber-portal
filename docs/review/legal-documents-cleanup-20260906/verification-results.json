@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-09-06T13:05:15.525875+00:00",
+  "allPassed": true,
+  "results": [
+    {
+      "name": "legal_four_documents",
+      "exit": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: legal registry contains all four live-site legal documents\nok 1 - legal registry contains all four live-site legal documents\n  ---\n  duration_ms: 2.877142\n  type: 'test'\n  ...\n# Subtest: legal pages and navigation expose the four-document cross-link set\nok 2 - legal pages and navigation expose the four-document cross-link set\n  ---\n  duration_ms: 1.107106\n  type: 'test'\n  ...\n# Subtest: route, readiness and content package gates account for four legal documents\nok 3 - route, readiness and content package gates account for four legal documents\n  ---\n  duration_ms: 0.662289\n  type: 'test'\n  ...\n# Subtest: legal pages do not expose internal transfer notices or duplicate isolated numbering\nok 4 - legal pages do not expose internal transfer notices or duplicate isolated numbering\n  ---\n  duration_ms: 1.378446\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 566.589922\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "page_seo_components",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:page-seo-components\n> python3 scripts/audit_page_seo_components.py\n\nKIBER-93 page SEO component audit: 37 routes, 0 failed, 37 warnings. Reports written to data/seo/page-seo-audit.json and docs/page-seo-audit.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "production_go_no_go",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:production-go-no-go\n> node scripts/production-go-no-go-smoke.mjs\n\nKIBER production go/no-go smoke passed: NO_GO; 37 routes, 24 robots, 4 blockers.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "build_preview",
+      "exit": 0,
+      "stdout_tail": "renda-senserobot/index.html (+4ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-sketchbot/index.html (+8ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-unitree-g1/index.html (+4ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-unitree-go2/index.html (+4ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-unitree-h2/index.html (+4ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-unitree-r1/index.html (+6ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-uv-box/index.html (+6ms) \n13:05:15   ├─ /preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/index.html (+5ms) \n13:05:15   ├─ /preview/design-review/index.html (+15ms) \n13:05:15   ├─ /privacy-policy/index.html (+5ms) \n13:05:15   ├─ /robots/arenda-agibot-x2/index.html (+5ms) \n13:05:15   ├─ /robots/arenda-bellabot/index.html (+3ms) \n13:05:15   ├─ /robots/arenda-glambot/index.html (+3ms) \n13:05:15   ├─ /robots/arenda-inchbot-l1-w-edu/index.html (+6ms) \n13:05:15   ├─ /robots/arenda-kettybot/index.html (+4ms) \n13:05:15   ├─ /robots/arenda-klipmeiker/index.html (+3ms) \n13:05:15   ├─ /robots/arenda-mini-robo-kofeyni/index.html (+3ms) \n13:05:15   ├─ /robots/arenda-noetix-bumi/index.html (+3ms) \n13:05:15   ├─ /robots/arenda-promobot-v4/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-robo-kofeyni/index.html (+3ms) \n13:05:15   ├─ /robots/arenda-roboshashki/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-robot-barmen/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-robota-ardi/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-robota-hudozhnika-a4/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-robota-sofiya/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-robota-tron/index.html (+4ms) \n13:05:15   ├─ /robots/arenda-senserobot/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-sketchbot/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-unitree-g1/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-unitree-go2/index.html (+2ms) \n13:05:15   ├─ /robots/arenda-unitree-h2/index.html (+8ms) \n13:05:15   ├─ /robots/arenda-unitree-r1/index.html (+5ms) \n13:05:15   ├─ /robots/arenda-uv-box/index.html (+4ms) \n13:05:15   ├─ /robots/arenda-xiaomi-cyberdog-2/index.html (+3ms) \n13:05:15   ├─ /roboty-gumanoidy/index.html (+8ms) \n13:05:15   ├─ /roboty-sobaki/index.html (+5ms) \n13:05:15   ├─ /sitemap.xml (+3ms) \n13:05:15   ├─ /terms/index.html (+3ms) \n13:05:15   ├─ /index.html (+5ms) \n13:05:15 ✓ Completed in 514ms.\n\n13:05:15 [build] ✓ Completed in 2.08s.\n13:05:15 [build] 66 page(s) built in 3.49s\n13:05:15 [build] Complete!\n",
+      "stderr_tail": ""
+    }
+  ],
+  "rendered_forbidden_hits": "",
+  "isolated_number_check": "privacy-policy 0 []\ncookie-policy 0 []\n"
+}

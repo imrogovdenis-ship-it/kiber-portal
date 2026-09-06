@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-94",
+  "status": "draft_for_owner_review",
+  "sourceContract": "data/seo/page-type-intent-contract.draft.json",
+  "policy": {
+    "productionSideEffects": false,
+    "massPageGeneration": false,
+    "reviewOnlyBlocksPublicRender": false,
+    "templatePreviewOnlyUntilOwnerVisualApproval": true,
+    "pricesRequireApprovedTariffSource": true,
+    "claimsRequireSourceStatus": true
+  },
+  "repeatingPageTypes": [
+    "robot_card",
+    "article_detail",
+    "compilation"
+  ],
+  "templates": {
+    "robot_card": {
+      "component": "src/components/templates/RobotCardTemplate.astro",
+      "schema": "robotCardTemplateSchema",
+      "requiredDataFields": [
+        "seo",
+        "aiSummary",
+        "hero",
+        "robot",
+        "cta",
+        "faq",
+        "reviewOnly"
+      ],
+      "publicBlocks": [
+        "hero",
+        "aiSummary",
+        "gallery",
+        "capabilities",
+        "scenarios",
+        "robotInAction",
+        "goshaCta",
+        "pricing",
+        "includedService",
+        "hiddenMachineFacts",
+        "orderFlow",
+        "faq",
+        "finalQuestionsCta",
+        "articles",
+        "relatedCatalog"
+      ],
+      "reviewOnlyBlocks": [
+        "priceSourceReconciliation",
+        "claimSourceStatus",
+        "wordstatAnalysis",
+        "serpAnalysis",
+        "sourceNotes",
+        "mediaRightsReview"
+      ]
+    },
+    "article_detail": {
+      "component": "src/components/templates/ArticleDetailTemplate.astro",
+      "schema": "articleDetailTemplateSchema",
+      "requiredDataFields": [
+        "seo",
+        "aiSummary",
+        "hero",
+        "archetype",
+        "bodyBlocks",
+        "cta",
+        "faq",
+        "reviewOnly"
+      ],
+      "publicBlocks": [
+        "hero",
+        "intro",
+        "bodySections",
+        "goshaCta",
+        "faq",
+        "relatedLinks"
+      ],
+      "optionalTypedBlocks": [
+        "comparisonTable",
+        "checkpointList",
+        "numbersBlock",
+        "catalogBlock",
+        "relatedArticles",
+        "gallery",
+        "productCard",
+        "twoColumnText",
+        "scenarioList"
+      ],
+      "reviewOnlyBlocks": [
+        "wordstatAnalysis",
+        "serpAnalysis",
+        "checklistReport",
+        "keywordDensityReport",
+        "sourceNotes",
+        "internalLinkProposals",
+        "priceSourceReconciliation"
+      ]
+    },
+    "compilation": {
+      "component": "src/components/templates/CompilationTemplate.astro",
+      "schema": "compilationTemplateSchema",
+      "publicLabel": "Подборки",
+      "sourceAliases": [
+        "сборка"
+      ],
+      "requiredDataFields": [
+        "seo",
+        "aiSummary",
+        "hero",
+        "publicLabel",
+        "catalogItems",
+        "relatedArticles",
+        "otherCompilations",
+        "cta",
+        "faq",
+        "reviewOnly"
+      ],
+      "publicBlocks": [
+        "hero",
+        "intro",
+        "gallery",
+        "scenarioExplanation",
+        "catalogBlock",
+        "relatedArticles",
+        "faq",
+        "goshaCta",
+        "otherCompilations"
+      ],
+      "reviewOnlyBlocks": [
+        "wordstatAnalysis",
+        "serpAnalysis",
+        "checklistReport",
+        "sourceAliasMapping",
+        "priceSourceReconciliation",
+        "internalLinkProposals"
+      ]
+    }
+  }
+}

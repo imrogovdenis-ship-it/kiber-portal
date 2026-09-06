@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "kiber-seo-content-research-writing-protocol",
+  "status": "draft_for_owner_review",
+  "purpose": "Author KIBER PORTAL robot_card, compilation, and article_detail content via Hermes-led SEO research, Wordstat/SERP analysis, competitor gap analysis, Cyber Gosha style, and structured page-block content packages.",
+  "pageTypes": [
+    "robot_card",
+    "compilation",
+    "article_detail"
+  ],
+  "outputPackageRequiredFields": [
+    "contentPackageVersion",
+    "pageType",
+    "slug",
+    "sourceDocuments",
+    "research",
+    "seo",
+    "aiVisibility",
+    "blocks",
+    "media",
+    "internalLinks",
+    "schema",
+    "review"
+  ],
+  "researchRequiredFields": [
+    "brief",
+    "wordstatAnalysis",
+    "serpAnalysis",
+    "competitorGapAnalysis",
+    "contentStrategy",
+    "sourceEvidence",
+    "checklistReport"
+  ],
+  "researchStages": [
+    {
+      "id": "brief",
+      "required": true,
+      "description": "Define page type, target slug, audience, conversion goal, source documents, and claims requiring source status."
+    },
+    {
+      "id": "wordstatAnalysis",
+      "required": true,
+      "description": "Collect/record Yandex Wordstat query volumes or mark needs_wordstat_verification honestly.",
+      "allowedStatuses": [
+        "checked_live",
+        "user_export",
+        "not_available_needs_verification"
+      ]
+    },
+    {
+      "id": "serpAnalysis",
+      "required": true,
+      "description": "Inspect search results for target queries and record competitors, page types, strengths, weak spots, and content gaps.",
+      "allowedStatuses": [
+        "checked",
+        "partial",
+        "not_available_needs_verification"
+      ]
+    },
+    {
+      "id": "competitorGapAnalysis",
+      "required": true,
+      "description": "Translate competitor weaknesses into KIBER content angle without mocking/copying competitors."
+    },
+    {
+      "id": "seoPassport",
+      "required": true,
+      "description": "Prepare title, description, H1, canonical, primary/secondary/long-tail keywords, schema types, AI summary."
+    },
+    {
+      "id": "blockMap",
+      "required": true,
+      "description": "Map every public text item to approved blocks before writing prose."
+    },
+    {
+      "id": "cyberGoshaStylePass",
+      "required": true,
+      "description": "Apply correct Kiber Gosha dosage per page type and stop-phrase bans."
+    },
+    {
+      "id": "factAndMediaSafetyPass",
+      "required": true,
+      "description": "Verify price/capability/media/legal claims and split actualDescription from seoAlt."
+    },
+    {
+      "id": "internalLinkProposal",
+      "required": true,
+      "description": "Produce reviewable internal links with target, anchor, reason, and status."
+    },
+    {
+      "id": "validationAndPreview",
+      "required": true,
+      "description": "Run validators/build/preview checks before owner review."
+    }
+  ],
+  "styleRules": {
+    "source": "kiber-portal-cyber-gosha-style",
+    "dosage": {
+      "article_detail": "~60% Kiber Gosha / 40% neutral expert",
+      "compilation": "~60% Kiber Gosha / 40% neutral expert",
+      "robot_card": "Gosha only in designated blocks",
+      "metadata": "no Gosha",
+      "alt": "no Gosha"
+    },
+    "absoluteBans": [
+      "pretending to be human",
+      "aggressive marketing",
+      "mocking competitors",
+      "unsupported robot capabilities",
+      "legal/financial guarantees",
+      "stop-phrases",
+      "keyword stuffing"
+    ]
+  },
+  "wordstatAccessPolicy": {
+    "preferred": "dedicated_yandex_account_or_persisted_browser_session",
+    "doNotPastePasswordsInChat": true,
+    "allowedSources": [
+      "live_wordstat_checked_by_hermes",
+      "user_export_csv_or_screenshot",
+      "not_available_needs_verification"
+    ],
+    "captcha2faPolicy": "Stop and ask for human action; never bypass captcha or 2FA."
+  },
+  "sourceMaterialPolicy": {
+    "oldClaudeTexts": "Allowed as source/information base, not as final copy authority.",
+    "robotCardTexts": "Allowed as factual source if source status is recorded.",
+    "articlesAndCompilations": "Allowed for analysis, structure, gaps, and reusable facts; must be rewritten into approved block packages.",
+    "missingFacts": "Use review.openQuestions; do not invent."
+  },
+  "validationCommands": [
+    "python3 scripts/validate_kiber_seo_research_writing_protocol.py",
+    "python3 scripts/validate_claude_content_contracts.py",
+    "npm run test:kiber-seo-writing-protocol",
+    "npm run build:preview"
+  ],
+  "forbiddenActions": [
+    "production_deploy",
+    "dns_change",
+    "secret_change",
+    "analytics_enable",
+    "live_lead_routing_enable",
+    "merge_without_owner",
+    "mass_generation_without_pilot",
+    "approved_design_change"
+  ],
+  "ownerInputsNeeded": [
+    "historical Claude-written articles/compilations/robot card texts as source corpus",
+    "Yandex Wordstat access method",
+    "approval for first pilot page type and slug",
+    "business facts/prices/availability corrections"
+  ]
+}

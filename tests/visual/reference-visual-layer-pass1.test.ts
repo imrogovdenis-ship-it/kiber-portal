@@ -64,8 +64,8 @@ test('KIBER-88 home hero and robot page expose reference-compatible structure', 
   assert.match(hero, /home-hero__card/);
   assert.match(hero, /home-hero__image/);
   assert.match(hero, /home-hero__content/);
-  assert.match(hero, /aspect-ratio:\s*16\s*\/\s*9/);
-  assert.match(hero, /object-fit:\s*contain/);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\)[\s\S]*?\.home-hero__image \{[\s\S]*?position:\s*absolute;[\s\S]*?inset:\s*0;[\s\S]*?height:\s*100%/s);
+  assert.match(hero, /@media \(max-width: 59\.9375rem\)[\s\S]*?\.home-hero__image img \{[\s\S]*?object-fit:\s*cover/s);
   assert.match(hero, /data-rv="02"/);
 
   const index = text(indexPath);

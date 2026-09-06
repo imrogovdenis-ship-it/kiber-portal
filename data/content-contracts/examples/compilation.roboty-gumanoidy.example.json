@@ -1,0 +1,74 @@
+{
+  "contentPackageVersion": "1.0",
+  "pageType": "compilation",
+  "slug": "roboty-gumanoidy",
+  "reviewStatus": "draft",
+  "sourceDocuments": [
+    {
+      "path": "approved CompilationTemplate PR8",
+      "status": "owner_approved"
+    }
+  ],
+  "seo": {
+    "metaTitle": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+    "metaDescription": "Подборка роботов-гуманоидов для выставок, презентаций и корпоративов: сравните модели и выберите формат под площадку.",
+    "canonicalPath": "/roboty-gumanoidy/",
+    "primaryKeyword": "аренда робота-гуманоида",
+    "secondaryKeywords": [
+      "робот гуманоид на мероприятие",
+      "гуманоид для выставки",
+      "робот для презентации"
+    ],
+    "h1": "Аренда робота-гуманоида для мероприятий"
+  },
+  "aiVisibility": {
+    "aiSummary": "Подборка помогает выбрать гуманоида под задачу: привлечение внимания, welcome-зона, презентация или технологичный вау-эффект."
+  },
+  "blocks": {
+    "hero": {
+      "h1": "Аренда робота-гуманоида для мероприятий"
+    },
+    "intro": {
+      "title": "Как выбрать гуманоида под формат события",
+      "paragraphs": [
+        "..."
+      ]
+    },
+    "catalogBlock": {
+      "title": "Роботы-гуманоиды в каталоге",
+      "robotSlugs": [
+        "arenda-unitree-g1",
+        "arenda-unitree-r1",
+        "arenda-unitree-h2",
+        "arenda-agibot-x2"
+      ]
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Какого гуманоида выбрать для выставки?",
+          "answer": "Выбор зависит от роли робота: встреча гостей, демонстрация технологий, фотомомент или сценарий на стенде."
+        }
+      ]
+    }
+  },
+  "media": [],
+  "internalLinks": {
+    "articleSlugs": [],
+    "compilationSlugs": [
+      "roboty-sobaki"
+    ]
+  },
+  "schema": {
+    "types": [
+      "CollectionPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "review": {
+    "notes": [
+      "Example structure only."
+    ]
+  }
+}

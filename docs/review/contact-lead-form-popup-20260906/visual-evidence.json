@@ -1,0 +1,147 @@
+{
+  "capturedAt": "2026-09-06T12:31:55.061Z",
+  "results": [
+    {
+      "viewport": {
+        "name": "desktop",
+        "width": 1280,
+        "height": 900
+      },
+      "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop.png",
+      "data": {
+        "title": "Оставьте заявку",
+        "panel": {
+          "x": 368,
+          "y": 107.84375,
+          "w": 544,
+          "h": 684.296875
+        },
+        "viewport": {
+          "w": 1280,
+          "h": 900
+        },
+        "fits": true,
+        "fields": [
+          {
+            "name": "source_page",
+            "type": "hidden",
+            "required": false,
+            "hidden": true
+          },
+          {
+            "name": "robot",
+            "type": "hidden",
+            "required": false,
+            "hidden": true
+          },
+          {
+            "name": "website",
+            "type": "text",
+            "required": false,
+            "hidden": true
+          },
+          {
+            "name": "name",
+            "type": "text",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "name": "contact",
+            "type": "text",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "name": "privacy_consent",
+            "type": "checkbox",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "legalLinks": [
+          "/consent/",
+          "/privacy-policy/",
+          "/terms/"
+        ]
+      }
+    },
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "/home/alex/projects/kiber-portal-pr8/docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile.png",
+      "data": {
+        "title": "Оставьте заявку",
+        "panel": {
+          "x": 12,
+          "y": 166.234375,
+          "w": 366,
+          "h": 665.765625
+        },
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "fits": true,
+        "fields": [
+          {
+            "name": "source_page",
+            "type": "hidden",
+            "required": false,
+            "hidden": true
+          },
+          {
+            "name": "robot",
+            "type": "hidden",
+            "required": false,
+            "hidden": true
+          },
+          {
+            "name": "website",
+            "type": "text",
+            "required": false,
+            "hidden": true
+          },
+          {
+            "name": "name",
+            "type": "text",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "name": "contact",
+            "type": "text",
+            "required": true,
+            "hidden": false
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "required": false,
+            "hidden": false
+          },
+          {
+            "name": "privacy_consent",
+            "type": "checkbox",
+            "required": true,
+            "hidden": false
+          }
+        ],
+        "legalLinks": [
+          "/consent/",
+          "/privacy-policy/",
+          "/terms/"
+        ]
+      }
+    }
+  ]
+}

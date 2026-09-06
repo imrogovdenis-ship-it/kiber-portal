@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-09-06T13:20:53.646561+00:00",
+  "snapshot": {
+    "branch": "hermes/kiber-full-site-visual-qa-20260901",
+    "head": "17c57f65943fe5f5949a45f1084170e232562659",
+    "git_status_short_count": 154,
+    "open_prs": [
+      {
+        "baseRefName": "main",
+        "headRefName": "hermes/kiber-full-site-visual-qa-20260901",
+        "isDraft": false,
+        "mergeable": "MERGEABLE",
+        "number": 70,
+        "state": "OPEN",
+        "title": "KIBER-91: full-site visual QA package",
+        "updatedAt": "2026-09-03T19:29:56Z"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "hermes/kiber-70-release-candidate-20260901",
+        "isDraft": false,
+        "mergeable": "MERGEABLE",
+        "number": 69,
+        "state": "OPEN",
+        "title": "KIBER-70: release candidate package",
+        "updatedAt": "2026-09-01T04:11:48Z"
+      }
+    ],
+    "current_go_no_go_blockers": [
+      {
+        "id": "live-lead-routing",
+        "severity": "blocking",
+        "decisionNeeded": "Утвердить live destinations и fallback-политику для заявок.",
+        "currentState": "lead routing disabled; destinations = []"
+      },
+      {
+        "id": "analytics-provider-ids",
+        "severity": "blocking",
+        "decisionNeeded": "Выбрать analytics provider, consent/cookie policy и разрешить конкретные IDs/cookies.",
+        "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
+      },
+      {
+        "id": "business-legal-launch-confirmation",
+        "severity": "blocking",
+        "decisionNeeded": "Подтвердить, что legal docs, цены, disclaimers, контакты и launch-copy можно публиковать вместе.",
+        "currentState": "content package workflow says production publish remains human-gated"
+      },
+      {
+        "id": "explicit-production-permission",
+        "severity": "blocking",
+        "decisionNeeded": "Дать явную команду на production deploy/DNS/секреты после закрытия предыдущих блокеров.",
+        "currentState": "production deploy permission is false"
+      }
+    ]
+  },
+  "closed_since_previous_go_no_go": [
+    "public phone updated everywhere including legal docs",
+    "messenger popup “Написать нам” implemented/verified",
+    "lead form popup visually approved and closed",
+    "amoCRM + Telegram duplicate live function test passed",
+    "all four legal documents approved and closed",
+    "build/SEO/readiness smoke checks pass locally"
+  ],
+  "remaining": [
+    {
+      "id": "package-stabilization",
+      "status": "next",
+      "why": "Рабочее дерево содержит большой PR8/content слой и 154 status entries; перед публикацией нужно упаковать утверждённые изменения в чистый проверяемый PR/state, иначе нельзя безопасно отличить approved launch scope от черновиков/артефактов."
+    },
+    {
+      "id": "production-readiness-refresh",
+      "status": "next",
+      "why": "data/review/production-go-no-go.json всё ещё считает business/legal launch confirmation blocker, хотя legal/form/contact уже закрыты; нужно пересчитать GO/NO-GO и owner checklist."
+    },
+    {
+      "id": "dynamic-lead-runtime-staging",
+      "status": "after-package",
+      "why": "Код /api/leads и amoCRM/TG проверка готовы, но публичный staging сейчас static nginx; для настоящей формы на сайте нужен dynamic/API runtime с env secrets, отдельно от production."
+    },
+    {
+      "id": "analytics-defer-or-approve",
+      "status": "later/gated",
+      "why": "analytics provider IDs/cookies пока отключены; можно оставить как post-launch если публикация без аналитики приемлема."
+    },
+    {
+      "id": "production-deploy-dns-permission",
+      "status": "final-gated",
+      "why": "production deploy/DNS только после чистого RC и явной команды."
+    }
+  ],
+  "recommendation": {
+    "recommended_next_step": "Стабилизационный release-candidate пакет: отделить approved launch scope от черновиков, обновить production-go-no-go после закрытия legal/form/contact gates, прогнать полный CI/build, собрать чистый PR/commit-ready пакет и обновить staging одной проверенной версией.",
+    "why_this_first": "Это самый быстрый путь к публикации, потому что дизайн/форма/legal уже закрыты; главный риск теперь не новый дизайн, а большой несобранный рабочий слой и stale readiness blockers.",
+    "not_recommended_next": "Не начинать массовый контент и не включать production/DNS/analytics до стабилизации пакета; иначе увеличим diff и риск перед публикацией."
+  },
+  "safe_next_actions": [
+    "обновить production-go-no-go.json/README с новыми approvals",
+    "сформировать launch-scope manifest: approved files vs review artifacts vs raw corpus",
+    "восстановить/убрать unrelated generated timestamp churn",
+    "прогнать npm run ci/build:preview/build:production или доступный full gate",
+    "подготовить commit/PR summary без push/merge unless explicitly approved",
+    "после этого — dynamic lead staging runtime или final RC image"
+  ]
+}

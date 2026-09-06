@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "provider": "kinescope",
+  "contract": "data/media/kinescope-video-contract.json",
+  "status": "empty_until_owner_provides_api_access_and_video_files",
+  "pendingInbox": {
+    "policy": "owner_attaches_video_then_agent_uploads_to_kinescope_with_api_token",
+    "defaultFolder": "KIBER PORTAL/raw-inbox",
+    "notes": "Concrete videos are added here only after upload/readback from Kinescope. Do not paste unverified URLs by hand."
+  },
+  "folderPlan": [
+    {
+      "path": "KIBER PORTAL/raw-inbox",
+      "usage": "temporary owner uploads awaiting classification"
+    },
+    {
+      "path": "KIBER PORTAL/compilations/<compilation-slug>",
+      "usage": "Подборки scenario and hero video blocks"
+    },
+    {
+      "path": "KIBER PORTAL/articles/<article-slug>",
+      "usage": "Блог Кибер Гоши explanatory videos"
+    },
+    {
+      "path": "KIBER PORTAL/cases/<case-slug>",
+      "usage": "case/story videos"
+    },
+    {
+      "path": "KIBER PORTAL/robots/<robot-slug>",
+      "usage": "optional robot-card video sections, separate from image galleries"
+    }
+  ],
+  "videos": [],
+  "exampleRecordShape": {
+    "videoId": "compilation__roboty-dlya-vystavki__unitree-g1-demo",
+    "provider": "kinescope",
+    "kinescopeId": "<returned-by-api>",
+    "projectId": "<returned-by-api-or-safe-config>",
+    "folderId": "<returned-by-api-or-safe-config>",
+    "title": "Unitree G1 на выставке",
+    "description": "Короткое описание видео для Кинескопа.",
+    "actualDescription": "Что действительно видно в видео, без SEO-переспама.",
+    "seoTitle": "Видео Unitree G1 для мероприятия",
+    "seoDescription": "SEO-aware, truthful video description for the page context.",
+    "playLink": "https://kinescope.io/...",
+    "embedLink": "https://kinescope.io/embed/...",
+    "hlsLink": "https://kinescope.io/.../master.m3u8",
+    "poster": {
+      "src": "/images/video-posters/example.webp",
+      "alt": "Визуальное описание постера"
+    },
+    "durationSeconds": 0,
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-dlya-vystavki",
+        "blockId": "video",
+        "position": 1
+      }
+    ],
+    "rightsStatus": "needs_review",
+    "publicationStatus": "ready",
+    "uploadedAt": "YYYY-MM-DDTHH:mm:ssZ"
+  }
+}

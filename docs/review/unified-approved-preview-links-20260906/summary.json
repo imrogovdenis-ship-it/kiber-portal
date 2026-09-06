@@ -1,0 +1,49 @@
+{
+  "status": "READY_FOR_OWNER_REVIEW_NO_PRODUCTION",
+  "rootCause": "Approved design surfaces existed on preview routes, but several current review/public-index links still pointed to legacy public detail routes (/robots/..., /roboty-gumanoidy/, old article slugs) or article cards were collapsed to /articles/. In preview mode those now route to approved KIBER-94 preview surfaces.",
+  "reviewUrl": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/preview/review-approved/",
+  "approvedRoutes": {
+    "home": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/",
+    "robotCard": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-unitree-g1/",
+    "compilationsIndex": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/compilations/",
+    "compilationHumanoids": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/preview/kiber-94/compilation/roboty-gumanoidy/",
+    "articlesIndex": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/articles/",
+    "articleTemplate": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/preview/kiber-94/article-blocks/#mediaMoment",
+    "leadRequest": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/lead/request/",
+    "contacts": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/contacts/"
+  },
+  "verification": {
+    "npm run test:approved-review-links": "PASS",
+    "article template test": "PASS",
+    "compilation template test": "PASS",
+    "contact form/popup tests": "PASS",
+    "npm run build:preview": "PASS, 67 pages built",
+    "npm run test:page-seo-components": "PASS, 37 routes, 0 failed, 37 warnings",
+    "staging curl": "all checked routes HTTP 200 + X-Robots-Tag noindex,nofollow",
+    "rendered old-design href audit": "0 old public detail hrefs on checked review surfaces"
+  },
+  "changedFiles": [
+    "src/lib/review-links.ts",
+    "src/pages/preview/review-approved/index.astro",
+    "tests/visual/approved-review-links.test.ts",
+    "src/components/blocks/HomeImageCards.astro",
+    "src/components/content/InternalLinks.astro",
+    "src/components/templates/ArticleBlocksTemplate.astro",
+    "src/components/templates/CompilationTemplate.astro",
+    "src/components/templates/RobotCardTemplate.astro",
+    "src/data/home-live.ts",
+    "src/pages/articles.astro",
+    "src/pages/compilations.astro",
+    "src/pages/index.astro",
+    "package.json"
+  ],
+  "excluded": [
+    "production deploy",
+    "DNS",
+    "analytics",
+    "merge",
+    "production secrets",
+    "live routing activation"
+  ],
+  "git": "not committed or pushed yet; staging was refreshed from verified local dist for visual review"
+}

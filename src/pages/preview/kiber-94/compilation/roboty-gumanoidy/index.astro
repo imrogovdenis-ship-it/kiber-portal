@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import CompilationTemplate from '../../../../../components/templates/CompilationTemplate.astro';
+import { buildHumanoidCompilationTemplate, type CompilationRobotCard } from '../../../../../lib/kiber94-compilation-template-data';
+import { breadcrumbJsonLd, collectionPageJsonLd, faqPageJsonLd } from '../../../../../lib/seo';
+import { getRobotPages } from '../../../../../lib/robot-pages';
+
+const robots = getRobotPages().filter((robot) => robot.category === 'humanoid');
+const robotCards: CompilationRobotCard[] = robots.map((robot, index) => ({
+  slug: robot.slug,
+  href: robot.route,
+  title: robot.identity.name,
+  category: 'Робот-гуманоид',
+  price: robot.pricing.display,
+  price_disclaimer: 'Не является публичной офертой',
+  description: robot.seo.description,
+  badge: index === 0 ? 'Хит' : undefined,
+  image: robot.media.hero,
+  analytics: { event: 'robot_card_click', placement: 'collection', position: index + 1 },
+}));
+
+const template = buildHumanoidCompilationTemplate(robotCards);
+const pageUrl = '/preview/kiber-94/compilation/roboty-gumanoidy/';
+---
+
+<BaseLayout
+  title={`Preview: ${template.seo.title}`}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${pageUrl}`}
+  noindex={true}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    collectionPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1">
+    <CompilationTemplate {template} />
+  </main>
+</BaseLayout>

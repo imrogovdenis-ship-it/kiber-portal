@@ -28,10 +28,10 @@ const leadMain = leadHtml.match(/<main class="lead-request[\s\S]*?<\/main>/)?.[0
 assert.match(contactsMain, /data-rv="30"/);
 assert.match(contactsMain, /contact-conversion__card/);
 assert.match(contactsMain, /data-safety-contract="lead-routing"|Lead capability:/);
-assert.match(contactsHtml, /href="tel:\+79852666582"/);
+assert.match(contactsHtml, /href="tel:\+79067309691"/);
 assert.match(contactsHtml, /mailto:markinas28@yandex\.ru/);
-assert.match(contactsHtml, /wa\.me\/79852666582/);
-assert.match(contactsHtml, /t\.me\/\+79852666582/);
+assert.match(contactsHtml, /wa\.me\/79067309691/);
+assert.match(contactsHtml, /t\.me\/\+79067309691/);
 assert.match(footerHtml, /ИНН\s*771898397717/);
 assert.match(footerHtml, /ОГРНИП\s*326774600084499/);
 assert.doesNotMatch(contactsHtml, /\+7 000 000-00-00|hello@kiber-portal\.ru|wa\.me\/70000000000|t\.me\/kiber_portal/);

@@ -1,0 +1,10 @@
+{
+  "image": "alex-kiber-staging:approved-review-links-20260906",
+  "buildExit": 0,
+  "rmExit": 0,
+  "runExit": 0,
+  "containerId": "8e93dd413815",
+  "runStderrTail": "",
+  "labelsPreservedCount": 54,
+  "network": "coolify"
+}

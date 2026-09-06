@@ -1,0 +1,89 @@
+{
+  "newPhoneDisplay": "+7 (906) 730-96-91",
+  "newPhoneTel": "+79067309691",
+  "legalDocumentsUpdated": true,
+  "messengerLinksUpdated": false,
+  "messengerLinksNote": "Telegram/WhatsApp/MAX links not changed because owner only provided phone; request channel links separately for popup.",
+  "changedFiles": [
+    {
+      "path": "src/config/site.ts",
+      "replacements": 1
+    },
+    {
+      "path": "data/legal/legal-documents.json",
+      "replacements": 3
+    },
+    {
+      "path": ".env.example",
+      "replacements": 1
+    },
+    {
+      "path": "tests/visual/public-contacts-owner-input.test.ts",
+      "replacements": 1
+    },
+    {
+      "path": "data/review/production-go-no-go.json",
+      "replacements": 1
+    },
+    {
+      "path": "data/review/owner-launch-content-approval-request.json",
+      "replacements": 1
+    },
+    {
+      "path": "docs/OPEN-QUESTIONS.md",
+      "replacements": 1
+    },
+    {
+      "path": "docs/business-inputs-request.md",
+      "replacements": 1
+    },
+    {
+      "path": "scripts/contact-lead-visual-smoke.mjs",
+      "replacements": "tel assertion updated"
+    }
+  ],
+  "productionSafety": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "analyticsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "mergeAllowed": false
+  },
+  "postVerification": {
+    "statusLines": [
+      " M .env.example",
+      " M data/legal/legal-documents.json",
+      " M data/review/owner-launch-content-approval-request.json",
+      " M data/review/production-go-no-go.json",
+      " M docs/OPEN-QUESTIONS.md",
+      " M docs/business-inputs-request.md",
+      " M scripts/contact-lead-visual-smoke.mjs",
+      " M src/config/site.ts",
+      " M tests/visual/public-contacts-owner-input.test.ts",
+      "?? docs/review/public-phone-update-20260906/"
+    ],
+    "activeSourceChecks": {
+      "src/config/site.ts": {
+        "oldPresent": false,
+        "newPresent": true
+      },
+      "data/legal/legal-documents.json": {
+        "oldPresent": false,
+        "newPresent": true
+      },
+      ".env.example": {
+        "oldPresent": false,
+        "newPresent": true
+      },
+      "tests/visual/public-contacts-owner-input.test.ts": {
+        "oldPresent": false,
+        "newPresent": true
+      },
+      "scripts/contact-lead-visual-smoke.mjs": {
+        "oldPresent": false,
+        "newPresent": true
+      }
+    },
+    "allChecksPassed": true
+  }
+}

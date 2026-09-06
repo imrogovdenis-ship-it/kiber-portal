@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-09-06T13:20:19.700993+00:00",
+  "repo": "/home/alex/projects/kiber-portal-pr8",
+  "branch": "hermes/kiber-full-site-visual-qa-20260901",
+  "head": "17c57f65943fe5f5949a45f1084170e232562659",
+  "git_status_short_count": 154,
+  "git_status_short_tail": "?? docs/review/compilations-mobile-pr8-20260904/\n?? docs/review/compilations-tablet-pr8-20260904/\n?? docs/review/contact-lead-form-popup-20260906/\n?? docs/review/contact-messenger-popup-20260906/\n?? docs/review/cta2-desktop-gosha-lowered-pr8-20260904/\n?? docs/review/cta2-desktop-gosha-smaller-pr8-20260904/\n?? docs/review/cta2-tablet-all-pr8-20260904/\n?? docs/review/cta2-tablet-gosha-larger-pr8-20260904/\n?? docs/review/current-state-before-content-pilot-20260906/\n?? docs/review/home-cta2-pr8-20260904/\n?? docs/review/home-footer-cta2-pr8-20260904/\n?? docs/review/home-footer-desktop-mobile-pr8-20260904/\n?? docs/review/home-footer-desktop-revert-pr8-20260904/\n?? docs/review/home-footer-legal-up-pr8-20260904/\n?? docs/review/home-footer-menu-pr8-20260904/\n?? docs/review/home-footer-requisites-down-pr8-20260904/\n?? docs/review/home-footer-requisites-up-pr8-20260904/\n?? docs/review/home-tablet-footer-4col-pr8-20260904/\n?? docs/review/home-tablet-pr8-20260904/\n?? docs/review/humanoid-compilation-approved-reused-blocks-pr8-20260904/\n?? docs/review/humanoid-compilation-bottom-compilations-spacing-pr8-20260904/\n?? docs/review/humanoid-compilation-bottom-home-compilations-pr8-20260904/\n?? docs/review/humanoid-compilation-catalog-h2-pr8-20260904/\n?? docs/review/humanoid-compilation-desktop-pr8-20260904/\n?? docs/review/humanoid-compilation-feedback2-pr8-20260904/\n?? docs/review/humanoid-compilation-final-gosha-quote-pr8-20260904/\n?? docs/review/humanoid-compilation-gosha-spacing-pr8-20260904/\n?? docs/review/humanoid-compilation-guide-video-scenarios-pr8-20260904/\n?? docs/review/humanoid-compilation-headings-offset-video-blue-pr8-20260904/\n?? docs/review/humanoid-compilation-hero-fixes-pr8-20260904/\n?? docs/review/humanoid-compilation-hero-h1-home-size-pr8-20260904/\n?? docs/review/humanoid-compilation-hero-rollback-slider-fix-pr8-20260904/\n?? docs/review/humanoid-compilation-homepage-shared-blocks-pr8-20260904/\n?? docs/review/humanoid-compilation-mobile-catalog-gutters-pr8-20260904/\n?? docs/review/humanoid-compilation-mobile-footer-fullwidth-pr8-20260904/\n?? docs/review/humanoid-compilation-mobile-footer-inspect-pr8-20260904/\n?? docs/review/humanoid-compilation-reordered-lower-blocks-pr8-20260904/\n?? docs/review/humanoid-compilation-scenarios-guide-number-bg-pr8-20260904/\n?? docs/review/humanoid-compilation-scenarios-left-align-pr8-20260904/\n?? docs/review/humanoid-compilation-scenarios-slider-pr8-20260904/\n?? docs/review/humanoid-compilation-swap-gallery-align-pr8-20260904/\n?? docs/review/kiber-94-article-template-design-structure-approval-2026-09-04.md\n?? docs/review/kiber-94-closure-evidence-20260905/\n?? docs/review/kiber-approved-home-shared-block-contract.md\n?? docs/review/kiber-seo-phrase-research-arenda-robota-20260906/\n?? docs/review/kiber-seo-research-writing-protocol-20260905/\n?? docs/review/legal-documents-cleanup-20260906/\n?? docs/review/live-humanoids-reference-20260904/\n?? docs/review/logo-export-20260904/\n?? docs/review/project-state-deep-audit-20260904/\n?? docs/review/public-phone-update-20260906/\n?? docs/review/seo-ai-compliance-audit-current-20260904/\n?? docs/review/site-header-footer-minimal-nav-pr8-20260904/\n?? docs/review/staging-link-popup-form-review-20260906/\n?? docs/review/wordstat-browser-access-20260906/\n?? docs/review/wordstat-remote-browser-20260906/\n?? docs/review/workspace-materials-cleanup-20260904/\n?? public/images/kiber-94-preview/humanoid-compilation-hero-group.webp\n?? public/scripts/contact-lead-form-popup.js\n?? public/scripts/contact-messenger-popup.js\n?? scripts/intake_claude_content_packages.py\n?? scripts/map_claude_package_to_preview.py\n?? scripts/validate_claude_content_contracts.py\n?? scripts/validate_kiber_seo_research_writing_protocol.py\n?? src/components/layout/ContactLeadFormPopup.astro\n?? src/components/layout/ContactMessengerPopup.astro\n?? src/components/templates/ArticleBlocksTemplate.astro\n?? src/lib/kiber94-article-template-data.ts\n?? src/lib/kiber94-article-unitree-g1-r1-h2-data.ts\n?? src/lib/kiber94-compilation-template-data.ts\n?? src/pages/preview/kiber-94/article-blocks/\n?? src/pages/preview/kiber-94/articles/\n?? src/pages/preview/kiber-94/compilation/\n?? test-results/\n?? tests/content-contracts/\n?? tests/visual/article-blocks-template-preview.test.ts\n?? tests/visual/article-unitree-g1-r1-h2-preview.test.ts\n?? tests/visual/compilation-template-preview.test.ts\n?? tests/visual/contact-lead-form-popup.test.ts\n?? tests/visual/contact-messenger-popup.test.ts",
+  "diff_stat": " .env.example                                       |   8 +-\n data/legal/legal-documents.json                    |  81 ++--\n data/review/full-site-visual-qa.json               |  17 +\n .../owner-launch-content-approval-request.json     |   8 +-\n data/review/pr8-route-visual-approvals.json        |  27 +-\n data/review/production-go-no-go.json               |   4 +-\n data/seo/page-seo-audit.json                       | 444 ++++++++++-----------\n docs/OPEN-QUESTIONS.md                             |   2 +-\n docs/business-inputs-request.md                    |   2 +-\n docs/page-seo-audit.md                             | 296 +++++++-------\n .../contact-lead-visual-report.json                |   2 +-\n docs/review/kiber-43/route-sitemap-report.json     |   2 +-\n .../kiber-54/lead-capability-contract-report.json  |   2 +-\n .../review/kiber-55/content-acceptance-report.json |   2 +-\n docs/review/kiber-91-full-site-visual-qa/README.md |  11 +\n .../pr8-route-visual-approvals-2026-09-04.md       |  12 +\n docs/review/production-approval-gates/report.json  |   2 +-\n docs/review/production-go-no-go/report.json        |   2 +-\n package.json                                       |   7 +-\n scripts/contact-lead-visual-smoke.mjs              |   6 +-\n src/components/blocks/HomeFinalCta.astro           |   4 +-\n src/components/blocks/HomeHero.astro               |   2 +-\n src/components/layout/Footer.astro                 |   2 -\n src/components/layout/Header.astro                 |   6 +-\n src/components/legal/LegalDocumentPage.astro       |   6 +-\n src/components/templates/CompilationTemplate.astro | 267 +++++++++++--\n src/config/site.ts                                 |   8 +-\n src/data/home-live.ts                              |   2 +-\n src/layouts/BaseLayout.astro                       |   4 +\n src/pages/consent.astro                            |   2 +-\n src/pages/contacts.astro                           |   2 +-\n src/pages/cookie-policy.astro                      |   2 +-\n src/pages/privacy-policy.astro                     |   2 +-\n src/pages/terms.astro                              |   2 +-\n src/styles/layout.css                              |   2 +-\n src/styles/reference-layer.css                     |   6 +-\n tests/visual/homepage-owner-feedback-pass.test.ts  |  14 +-\n tests/visual/legal-four-documents.test.ts          |  21 +\n tests/visual/public-contacts-owner-input.test.ts   |   8 +-\n 39 files changed, 790 insertions(+), 509 deletions(-)\n",
+  "checks": [
+    {
+      "name": "production_go_no_go",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:production-go-no-go\n> node scripts/production-go-no-go-smoke.mjs\n\nKIBER production go/no-go smoke passed: NO_GO; 37 routes, 24 robots, 4 blockers.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "legal_four_documents",
+      "exit": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: legal registry contains all four live-site legal documents\nok 1 - legal registry contains all four live-site legal documents\n  ---\n  duration_ms: 3.776263\n  type: 'test'\n  ...\n# Subtest: legal pages and navigation expose the four-document cross-link set\nok 2 - legal pages and navigation expose the four-document cross-link set\n  ---\n  duration_ms: 1.478334\n  type: 'test'\n  ...\n# Subtest: route, readiness and content package gates account for four legal documents\nok 3 - route, readiness and content package gates account for four legal documents\n  ---\n  duration_ms: 0.806064\n  type: 'test'\n  ...\n# Subtest: legal pages do not expose internal transfer notices or duplicate isolated numbering\nok 4 - legal pages do not expose internal transfer notices or duplicate isolated numbering\n  ---\n  duration_ms: 1.59279\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 629.442331\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "contact_lead_form_popup",
+      "exit": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: lead form popup uses approved minimal fields and legal consent links\nok 1 - lead form popup uses approved minimal fields and legal consent links\n  ---\n  duration_ms: 2.263821\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 401.324474\n",
+      "stderr_tail": ""
+    }
+  ],
+  "production_go_no_go": {
+    "decision": null,
+    "blockers": [
+      {
+        "id": "live-lead-routing",
+        "severity": "blocking",
+        "decisionNeeded": "Утвердить live destinations и fallback-политику для заявок.",
+        "currentState": "lead routing disabled; destinations = []"
+      },
+      {
+        "id": "analytics-provider-ids",
+        "severity": "blocking",
+        "decisionNeeded": "Выбрать analytics provider, consent/cookie policy и разрешить конкретные IDs/cookies.",
+        "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
+      },
+      {
+        "id": "business-legal-launch-confirmation",
+        "severity": "blocking",
+        "decisionNeeded": "Подтвердить, что legal docs, цены, disclaimers, контакты и launch-copy можно публиковать вместе.",
+        "currentState": "content package workflow says production publish remains human-gated"
+      },
+      {
+        "id": "explicit-production-permission",
+        "severity": "blocking",
+        "decisionNeeded": "Дать явную команду на production deploy/DNS/секреты после закрытия предыдущих блокеров.",
+        "currentState": "production deploy permission is false"
+      }
+    ],
+    "ready": null,
+    "readiness": {
+      "routesChecked": 37,
+      "robotRoutesChecked": 24,
+      "legalRoutesPresent": [
+        "/privacy-policy/",
+        "/consent/",
+        "/cookie-policy/",
+        "/terms/"
+      ],
+      "leadRoutingEnabled": false,
+      "leadDestinations": 0,
+      "mediaProductionApproved": 24,
+      "crawlSource": "docs/review/launch-readiness-crawl/report.json",
+      "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json",
+      "publicContactsApproved": true,
+      "publicContactsEvidence": "Owner provided phone, email, Telegram/WhatsApp by new phone and MAX public link, region, legal name, address and approved preview/PR replacement on 2026-08-30."
+    }
+  },
+  "open_prs": [
+    {
+      "baseRefName": "main",
+      "headRefName": "hermes/kiber-full-site-visual-qa-20260901",
+      "isDraft": false,
+      "mergeable": "MERGEABLE",
+      "number": 70,
+      "state": "OPEN",
+      "title": "KIBER-91: full-site visual QA package",
+      "updatedAt": "2026-09-03T19:29:56Z"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "hermes/kiber-70-release-candidate-20260901",
+      "isDraft": false,
+      "mergeable": "MERGEABLE",
+      "number": 69,
+      "state": "OPEN",
+      "title": "KIBER-70: release candidate package",
+      "updatedAt": "2026-09-01T04:11:48Z"
+    }
+  ]
+}

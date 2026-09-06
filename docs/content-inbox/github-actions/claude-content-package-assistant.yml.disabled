@@ -1,0 +1,38 @@
+# Copy to .github/workflows/claude-content-package-assistant.yml only after safety review.
+# This file is intentionally stored as documentation template, not an active workflow.
+
+name: Claude Content Package Assistant
+
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      task_file:
+        description: Path to data/content-inbox/claude/tasks/*.json
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude-content-package:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Claude Code Action
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Create KIBER PORTAL JSON content packages only.
+            Read docs/content-inbox/CLAUDE_GITHUB_CONTENT_PACKAGE_PROMPT.md.
+            Do not edit styles/templates/production/secrets/analytics/lead routing.
+      - name: Validate Claude inbox
+        run: |
+          python3 scripts/intake_claude_content_packages.py --dry-run --write-report
+          python3 scripts/validate_claude_content_contracts.py
+          node --test tests/content-contracts/claude-content-inbox.test.mjs

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-09-06T13:00:52.085497+00:00",
+  "status": "passed",
+  "scope": "single controlled staging live-routing function test via source /api/leads handler; no production deploy/DNS/analytics/merge",
+  "secretHandling": "secrets resolved from 1Password item KIBER PORTAL lead routing, values not printed or committed",
+  "request": {
+    "requestId": "lead_staging_owner_test_20260906_130007",
+    "name": "Тест Гефест staging",
+    "contact": "[TEST_PHONE_REDACTED]",
+    "email": "hermes-test@example.invalid",
+    "robot": "manual-staging-live-test",
+    "sourcePage": "https://alex-kiber-mobile-review-d190abc.38.180.37.42.nip.io/"
+  },
+  "telegram": {
+    "getMeOk": true,
+    "botUsername": "lead_kiberportal_bot",
+    "getChatOk": true,
+    "chatTitle": "Заявки с сайта КИБЕР ПОРТАЛ",
+    "chatType": "group"
+  },
+  "leadRequest": {
+    "httpStatus": 200,
+    "ok": true,
+    "mode": "live",
+    "amoCRM": {
+      "ok": true,
+      "attempts": 1,
+      "unsortedUid": "9b281c7aae1426cbe4f49eb154e1d6369d1c26e1417289474c7f98e9ea65"
+    },
+    "telegram": {
+      "ok": true,
+      "attempts": 1,
+      "messageId": 12
+    }
+  },
+  "interpretation": {
+    "amoCRM": "accepted by amoCRM unsorted/forms and returned unsortedUid",
+    "telegram": "message sent to dedicated Telegram group and returned messageId",
+    "repoDefaults": "live routing remains env-gated; tracked defaults are not switched to live"
+  }
+}

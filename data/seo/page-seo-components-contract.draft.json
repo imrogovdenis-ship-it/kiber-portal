@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "status": "draft_for_owner_review",
+  "decision": "Do not mass-generate robot/article/collection/news pages until SEO page passports and aggregate audit are approved and wired.",
+  "sources": [
+    "Owner-provided SEO component brief in Telegram, 2026-09-01",
+    "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+    "https://yandex.ru/support/webmaster/ru/recommendations/intro.html"
+  ],
+  "pageTypes": {
+    "home": {
+      "requiredSchemaTypes": [
+        "Organization",
+        "WebSite"
+      ],
+      "recommendedSchemaTypes": [
+        "FAQPage",
+        "ItemList"
+      ],
+      "requiredBlocks": [
+        "hero",
+        "catalog_or_robot_cards",
+        "collections_or_scenarios",
+        "articles_or_blog",
+        "cta"
+      ],
+      "intent": "commercial"
+    },
+    "robot_card": {
+      "requiredSchemaTypes": [
+        "Service",
+        "BreadcrumbList"
+      ],
+      "conditionalSchemaTypes": {
+        "FAQPage": "when visible FAQ exists",
+        "Offer": "only when public approved price is legally safe"
+      },
+      "requiredBlocks": [
+        "hero",
+        "useful_text",
+        "capabilities",
+        "scenarios",
+        "formats_or_service_scope",
+        "price_or_request",
+        "media",
+        "related_links",
+        "cta"
+      ],
+      "intent": "commercial"
+    },
+    "collection": {
+      "requiredSchemaTypes": [
+        "CollectionPage"
+      ],
+      "recommendedSchemaTypes": [
+        "ItemList",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "requiredBlocks": [
+        "hero",
+        "scenario_intro",
+        "robot_list",
+        "internal_links",
+        "cta"
+      ],
+      "intent": "commercial"
+    },
+    "article": {
+      "requiredSchemaTypes": [
+        "BlogPosting",
+        "BreadcrumbList"
+      ],
+      "recommendedSchemaTypes": [
+        "FAQPage"
+      ],
+      "requiredBlocks": [
+        "hero",
+        "article_body",
+        "author_or_publisher",
+        "published_or_updated_date",
+        "commercial_internal_links",
+        "cta_or_next_step"
+      ],
+      "intent": "informational"
+    },
+    "news": {
+      "requiredSchemaTypes": [
+        "NewsArticle",
+        "BreadcrumbList"
+      ],
+      "requiredBlocks": [
+        "hero",
+        "news_body",
+        "published_or_updated_date",
+        "source_context",
+        "related_links"
+      ],
+      "intent": "informational"
+    },
+    "contacts": {
+      "requiredSchemaTypes": [
+        "ContactPage"
+      ],
+      "conditionalSchemaTypes": {
+        "LocalBusiness": "only after explicit legal/business approval"
+      },
+      "requiredBlocks": [
+        "h1",
+        "nap",
+        "phone",
+        "email",
+        "messengers",
+        "legal_links",
+        "cta_or_form"
+      ],
+      "intent": "local"
+    },
+    "legal": {
+      "requiredSchemaTypes": [
+        "WebPage"
+      ],
+      "recommendedSchemaTypes": [
+        "BreadcrumbList"
+      ],
+      "requiredBlocks": [
+        "h1",
+        "legal_text",
+        "legal_cross_links"
+      ],
+      "intent": "navigational"
+    }
+  },
+  "requiredPassportFields": [
+    "slug",
+    "pageType",
+    "indexable",
+    "robotsStatus",
+    "canonical",
+    "primaryKeyword",
+    "secondaryKeywords",
+    "searchIntent",
+    "pageCluster",
+    "priority",
+    "title",
+    "description",
+    "h1",
+    "h2Required",
+    "minUsefulTextChars",
+    "ogTitle",
+    "ogDescription",
+    "ogImage",
+    "schemaTypesRequired",
+    "breadcrumbsRequired",
+    "internalLinksRequired",
+    "imagesRequired",
+    "ctaRequired",
+    "reviewStatus"
+  ],
+  "auditOutputs": {
+    "json": "data/seo/page-seo-audit.json",
+    "markdown": "docs/page-seo-audit.md"
+  },
+  "proposedFiles": [
+    "data/seo/page-seo-passports.json",
+    "data/seo/keyword-map.json",
+    "scripts/audit_page_seo_components.py",
+    "data/seo/page-seo-audit.json",
+    "docs/page-seo-audit.md",
+    "tests/visual/page-seo-components-contract.test.ts"
+  ],
+  "currentRepoCoverage": {
+    "covered": [
+      "title",
+      "meta description",
+      "canonical",
+      "robots meta",
+      "viewport",
+      "OG/Twitter",
+      "unique H1",
+      "sitemap alignment",
+      "basic JSON-LD",
+      "Service schema for robots",
+      "BreadcrumbList for robot pages",
+      "curated internal links",
+      "media alt gates",
+      "performance/readiness gates"
+    ],
+    "missingOrPartial": [
+      "per-route SEO passport",
+      "keyword-map per URL",
+      "primaryKeyword in title/H1/first paragraph/schema/internal anchors",
+      "secondary keyword distribution",
+      "pageType-specific H2 requirements",
+      "useful text length per pageType",
+      "ItemList for collections",
+      "BlogPosting/NewsArticle for future detail pages",
+      "per-route CTA requirements",
+      "single aggregate pass/warn/fail audit report"
+    ]
+  },
+  "safetyBoundary": {
+    "productionDeploy": false,
+    "dnsChange": false,
+    "productionSecrets": false,
+    "analyticsActivation": false,
+    "liveLeadRouting": false,
+    "prMergePermission": false
+  }
+}

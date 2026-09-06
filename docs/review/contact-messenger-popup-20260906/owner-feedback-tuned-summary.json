@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-06T12:22:36.245746+00:00",
+  "change": "Tuned popup after owner feedback: proportionally smaller panel/text/buttons/Gosha image; messenger button labels are text-only with no icons.",
+  "visualEvidence": [
+    "popup-desktop-tuned.png",
+    "popup-mobile-tuned.png",
+    "visual-evidence-tuned.json"
+  ],
+  "verification": [
+    "popup_test pass",
+    "public_contacts_test pass",
+    "contact_lead_visual pass",
+    "build_preview pass"
+  ],
+  "stagingUrl": "https://alex-kiber-mobile-review-d190abc.38.180.37.42.nip.io/"
+}

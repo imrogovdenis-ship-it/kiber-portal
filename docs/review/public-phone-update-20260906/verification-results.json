@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-09-06T11:44:06.174182+00:00",
+  "allPassed": true,
+  "results": [
+    {
+      "name": "contact_lead_visual_smoke",
+      "cmd": "node scripts/contact-lead-visual-smoke.mjs",
+      "exit": 0,
+      "stdout_tail": "KIBER contact/lead visual smoke passed: approved contacts render and lead routing remains disabled.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "public_contacts_owner_input",
+      "cmd": "npm run test -- tests/visual/public-contacts-owner-input.test.ts",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test\n> node --import tsx --test tests/content/**/*.test.ts tests/visual/public-contacts-owner-input.test.ts\n\nTAP version 13\n# Subtest: pilot robot enforces the commercial service rules\nok 1 - pilot robot enforces the commercial service rules\n  ---\n  duration_ms: 49.463435\n  type: 'test'\n  ...\n# Subtest: every robot-card fixture includes the legal price disclaimer\nok 2 - every robot-card fixture includes the legal price disclaimer\n  ---\n  duration_ms: 23.108421\n  type: 'test'\n  ...\n# Subtest: site public config uses owner-approved contacts and requisites as defaults\nok 3 - site public config uses owner-approved contacts and requisites as defaults\n  ---\n  duration_ms: 1.823383\n  type: 'test'\n  ...\n# Subtest: header and footer render real public contacts from shared site config\nok 4 - header and footer render real public contacts from shared site config\n  ---\n  duration_ms: 0.366893\n  type: 'test'\n  ...\n# Subtest: public contact pages and docs stop requesting the now-provided public contacts\nok 5 - public contact pages and docs stop requesting the now-provided public contacts\n  ---\n  duration_ms: 0.668215\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1043.002055\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "page_seo_components",
+      "cmd": "npm run test:page-seo-components",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:page-seo-components\n> python3 scripts/audit_page_seo_components.py\n\nKIBER-93 page SEO component audit: 37 routes, 0 failed, 37 warnings. Reports written to data/seo/page-seo-audit.json and docs/page-seo-audit.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "production_go_no_go",
+      "cmd": "npm run test:production-go-no-go",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:production-go-no-go\n> node scripts/production-go-no-go-smoke.mjs\n\nKIBER production go/no-go smoke passed: NO_GO; 37 routes, 24 robots, 4 blockers.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "build_preview",
+      "cmd": "npm run build:preview",
+      "exit": 0,
+      "stdout_tail": "nda-senserobot/index.html (+4ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-sketchbot/index.html (+12ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-unitree-g1/index.html (+4ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-unitree-go2/index.html (+8ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-unitree-h2/index.html (+5ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-unitree-r1/index.html (+4ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-uv-box/index.html (+5ms) \n11:44:05   ├─ /preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/index.html (+8ms) \n11:44:05   ├─ /preview/design-review/index.html (+14ms) \n11:44:05   ├─ /privacy-policy/index.html (+5ms) \n11:44:05   ├─ /robots/arenda-agibot-x2/index.html (+6ms) \n11:44:05   ├─ /robots/arenda-bellabot/index.html (+3ms) \n11:44:05   ├─ /robots/arenda-glambot/index.html (+3ms) \n11:44:05   ├─ /robots/arenda-inchbot-l1-w-edu/index.html (+3ms) \n11:44:05   ├─ /robots/arenda-kettybot/index.html (+6ms) \n11:44:05   ├─ /robots/arenda-klipmeiker/index.html (+5ms) \n11:44:06   ├─ /robots/arenda-mini-robo-kofeyni/index.html (+7ms) \n11:44:06   ├─ /robots/arenda-noetix-bumi/index.html (+5ms) \n11:44:06   ├─ /robots/arenda-promobot-v4/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-robo-kofeyni/index.html (+6ms) \n11:44:06   ├─ /robots/arenda-roboshashki/index.html (+4ms) \n11:44:06   ├─ /robots/arenda-robot-barmen/index.html (+4ms) \n11:44:06   ├─ /robots/arenda-robota-ardi/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-robota-hudozhnika-a4/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-robota-sofiya/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-robota-tron/index.html (+7ms) \n11:44:06   ├─ /robots/arenda-senserobot/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-sketchbot/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-unitree-g1/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-unitree-go2/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-unitree-h2/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-unitree-r1/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-uv-box/index.html (+3ms) \n11:44:06   ├─ /robots/arenda-xiaomi-cyberdog-2/index.html (+3ms) \n11:44:06   ├─ /roboty-gumanoidy/index.html (+7ms) \n11:44:06   ├─ /roboty-sobaki/index.html (+6ms) \n11:44:06   ├─ /sitemap.xml (+5ms) \n11:44:06   ├─ /terms/index.html (+4ms) \n11:44:06   ├─ /index.html (+14ms) \n11:44:06 ✓ Completed in 542ms.\n\n11:44:06 [build] ✓ Completed in 2.33s.\n11:44:06 [build] 66 page(s) built in 4.50s\n11:44:06 [build] Complete!\n",
+      "stderr_tail": ""
+    }
+  ]
+}

@@ -3,10 +3,10 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 const read = (path: string) => readFileSync(path, 'utf8');
-const publicPhone = '+7 985 266-65-82';
+const publicPhone = '+7 (906) 730-96-91';
 const publicEmail = 'markinas28@yandex.ru';
-const telegram = 'https://t.me/+79852666582';
-const whatsapp = 'https://wa.me/79852666582';
+const telegram = 'https://t.me/+79067309691';
+const whatsapp = 'https://wa.me/79067309691?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20kiber-portal.ru';
 const escapeRe = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const legalName = 'ИП Маркин Александр Сергеевич';
 const inn = '771898397717';
@@ -32,7 +32,7 @@ test('header and footer render real public contacts from shared site config', ()
   const footer = read('src/components/layout/Footer.astro');
 
   assert.match(header, /siteConfig\.phone/);
-  assert.match(header, /siteConfig\.telegram/);
+  assert.match(header, /#contact-messengers/);
   assert.match(header, /Написать нам/);
   assert.match(footer, /siteConfig\.legalName/);
   assert.match(footer, /siteConfig\.inn/);

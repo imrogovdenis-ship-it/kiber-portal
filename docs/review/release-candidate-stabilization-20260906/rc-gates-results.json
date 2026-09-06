@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-09-06T13:33:24.270252+00:00",
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "launch_scope_manifest",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:launch-scope-manifest\n> node --import tsx --test tests/visual/launch-scope-manifest.test.ts\n\nTAP version 13\n# Subtest: launch scope manifest records closed approvals and keeps production gates closed\nok 1 - launch scope manifest records closed approvals and keeps production gates closed\n  ---\n  duration_ms: 1.784857\n  type: 'test'\n  ...\n# Subtest: launch scope manifest evidence paths exist for approval-critical items\nok 2 - launch scope manifest evidence paths exist for approval-critical items\n  ---\n  duration_ms: 0.511935\n  type: 'test'\n  ...\n# Subtest: launch scope manifest excludes raw artifacts and deferred production activations\nok 3 - launch scope manifest excludes raw artifacts and deferred production activations\n  ---\n  duration_ms: 0.37173\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 506.692028\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "production_go_no_go",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:production-go-no-go\n> node scripts/production-go-no-go-smoke.mjs\n\nKIBER production go/no-go smoke passed: NO_GO; 37 routes, 24 robots, 4 blockers.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "legal_four_documents",
+      "exit": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: legal registry contains all four live-site legal documents\nok 1 - legal registry contains all four live-site legal documents\n  ---\n  duration_ms: 6.191278\n  type: 'test'\n  ...\n# Subtest: legal pages and navigation expose the four-document cross-link set\nok 2 - legal pages and navigation expose the four-document cross-link set\n  ---\n  duration_ms: 1.76857\n  type: 'test'\n  ...\n# Subtest: route, readiness and content package gates account for four legal documents\nok 3 - route, readiness and content package gates account for four legal documents\n  ---\n  duration_ms: 1.0778\n  type: 'test'\n  ...\n# Subtest: legal pages do not expose internal transfer notices or duplicate isolated numbering\nok 4 - legal pages do not expose internal transfer notices or duplicate isolated numbering\n  ---\n  duration_ms: 1.914425\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 530.351136\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "contact_lead_form_popup",
+      "exit": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: lead form popup uses approved minimal fields and legal consent links\nok 1 - lead form popup uses approved minimal fields and legal consent links\n  ---\n  duration_ms: 2.066824\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 390.067597\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "contact_messenger_popup",
+      "exit": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: global messenger popup is wired to approved public contacts and CTA triggers\nok 1 - global messenger popup is wired to approved public contacts and CTA triggers\n  ---\n  duration_ms: 1.796921\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 373.95158\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "api_leads",
+      "exit": 0,
+      "stdout_tail": "\n# Subtest: POST /api/leads live mode returns controlled failure JSON when a channel times out\nok 9 - POST /api/leads live mode returns controlled failure JSON when a channel times out\n  ---\n  duration_ms: 3.114711\n  type: 'test'\n  ...\n# Subtest: POST /api/leads writes sanitized structured logs with trace ID and delivery status\nok 10 - POST /api/leads writes sanitized structured logs with trace ID and delivery status\n  ---\n  duration_ms: 3.678538\n  type: 'test'\n  ...\n# Subtest: POST /api/leads writes sanitized structured failure logs without raw channel errors\nok 11 - POST /api/leads writes sanitized structured failure logs without raw channel errors\n  ---\n  duration_ms: 2.376963\n  type: 'test'\n  ...\n# Subtest: POST /api/leads stores only a minimal redacted backup receipt when a sink is configured\nok 12 - POST /api/leads stores only a minimal redacted backup receipt when a sink is configured\n  ---\n  duration_ms: 1.807507\n  type: 'test'\n  ...\n# Subtest: POST /api/leads dry-run redirects browser form submissions to safe confirmation page\nok 13 - POST /api/leads dry-run redirects browser form submissions to safe confirmation page\n  ---\n  duration_ms: 1.795726\n  type: 'test'\n  ...\n# Subtest: POST /api/leads rejects submissions without explicit privacy consent\nok 14 - POST /api/leads rejects submissions without explicit privacy consent\n  ---\n  duration_ms: 1.186613\n  type: 'test'\n  ...\n# Subtest: POST /api/leads accepts explicit privacy consent while preserving dry-run safety\nok 15 - POST /api/leads accepts explicit privacy consent while preserving dry-run safety\n  ---\n  duration_ms: 1.215275\n  type: 'test'\n  ...\n# Subtest: lead endpoint stays preview-safe while disabled lead page exposes only working contacts\nok 16 - lead endpoint stays preview-safe while disabled lead page exposes only working contacts\n  ---\n  duration_ms: 1.565722\n  type: 'test'\n  ...\n# Subtest: GET /api/leads/status exposes only a minimal health contract and no routing configuration\nok 17 - GET /api/leads/status exposes only a minimal health contract and no routing configuration\n  ---\n  duration_ms: 1.054611\n  type: 'test'\n  ...\n# Subtest: nginx serves /api/leads/status as an exact minimal JSON route without env-backed configuration\nok 18 - nginx serves /api/leads/status as an exact minimal JSON route without env-backed configuration\n  ---\n  duration_ms: 0.805952\n  type: 'test'\n  ...\n1..18\n# tests 18\n# suites 0\n# pass 18\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 8480.510689\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "contact_lead_visual",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:contact-lead-visual\n> node scripts/contact-lead-visual-smoke.mjs\n\nKIBER contact/lead visual smoke passed: approved contacts render and lead routing remains disabled.\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "page_seo_components",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:page-seo-components\n> python3 scripts/audit_page_seo_components.py\n\nKIBER-93 page SEO component audit: 37 routes, 0 failed, 37 warnings. Reports written to data/seo/page-seo-audit.json and docs/page-seo-audit.md\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "build_preview",
+      "exit": 0,
+      "stdout_tail": "da-senserobot/index.html (+3ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-sketchbot/index.html (+12ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-unitree-g1/index.html (+4ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-unitree-go2/index.html (+4ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-unitree-h2/index.html (+4ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-unitree-r1/index.html (+4ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-uv-box/index.html (+4ms) \n13:33:14   ├─ /preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/index.html (+3ms) \n13:33:14   ├─ /preview/design-review/index.html (+11ms) \n13:33:14   ├─ /privacy-policy/index.html (+5ms) \n13:33:14   ├─ /robots/arenda-agibot-x2/index.html (+4ms) \n13:33:14   ├─ /robots/arenda-bellabot/index.html (+4ms) \n13:33:14   ├─ /robots/arenda-glambot/index.html (+4ms) \n13:33:14   ├─ /robots/arenda-inchbot-l1-w-edu/index.html (+3ms) \n13:33:14   ├─ /robots/arenda-kettybot/index.html (+3ms) \n13:33:14   ├─ /robots/arenda-klipmeiker/index.html (+5ms) \n13:33:14   ├─ /robots/arenda-mini-robo-kofeyni/index.html (+7ms) \n13:33:14   ├─ /robots/arenda-noetix-bumi/index.html (+6ms) \n13:33:14   ├─ /robots/arenda-promobot-v4/index.html (+6ms) \n13:33:14   ├─ /robots/arenda-robo-kofeyni/index.html (+5ms) \n13:33:14   ├─ /robots/arenda-roboshashki/index.html (+5ms) \n13:33:14   ├─ /robots/arenda-robot-barmen/index.html (+3ms) \n13:33:14   ├─ /robots/arenda-robota-ardi/index.html (+2ms) \n13:33:14   ├─ /robots/arenda-robota-hudozhnika-a4/index.html (+2ms) \n13:33:14   ├─ /robots/arenda-robota-sofiya/index.html (+3ms) \n13:33:14   ├─ /robots/arenda-robota-tron/index.html (+2ms) \n13:33:14   ├─ /robots/arenda-senserobot/index.html (+2ms) \n13:33:14   ├─ /robots/arenda-sketchbot/index.html (+3ms) \n13:33:14   ├─ /robots/arenda-unitree-g1/index.html (+3ms) \n13:33:14   ├─ /robots/arenda-unitree-go2/index.html (+21ms) \n13:33:14   ├─ /robots/arenda-unitree-h2/index.html (+9ms) \n13:33:14   ├─ /robots/arenda-unitree-r1/index.html (+6ms) \n13:33:14   ├─ /robots/arenda-uv-box/index.html (+5ms) \n13:33:14   ├─ /robots/arenda-xiaomi-cyberdog-2/index.html (+5ms) \n13:33:14   ├─ /roboty-gumanoidy/index.html (+12ms) \n13:33:14   ├─ /roboty-sobaki/index.html (+8ms) \n13:33:14   ├─ /sitemap.xml (+5ms) \n13:33:14   ├─ /terms/index.html (+4ms) \n13:33:14   ├─ /index.html (+9ms) \n13:33:14 ✓ Completed in 530ms.\n\n13:33:14 [build] ✓ Completed in 3.05s.\n13:33:14 [build] 66 page(s) built in 4.87s\n13:33:14 [build] Complete!\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "build_production",
+      "exit": 0,
+      "stdout_tail": "dlers: \"POST\"\n\n (+10ms) \n13:33:23   ├─ /articles/index.html (+10ms) \n13:33:23   ├─ /compilations/index.html (+10ms) \n13:33:23   ├─ /consent/index.html (+8ms) \n13:33:23   ├─ /contacts/index.html (+7ms) \n13:33:23   ├─ /cookie-policy/index.html (+19ms) \n13:33:23   ├─ /healthz.txt (+6ms) \n13:33:23   ├─ /lead/request/index.html (+9ms) \n13:33:23   ├─ /lead/thanks/index.html (+9ms) \n13:33:23   ├─ /news/index.html (+19ms) \n13:33:24   ├─ /preview/kiber-94/article-blocks/index.html (+26ms) \n13:33:24   ├─ /preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/index.html (+11ms) \n13:33:24   ├─ /preview/kiber-94/compilation/roboty-gumanoidy/index.html (+9ms) \n13:33:24   ├─ /privacy-policy/index.html (+6ms) \n13:33:24   ├─ /robots/arenda-agibot-x2/index.html (+6ms) \n13:33:24   ├─ /robots/arenda-bellabot/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-glambot/index.html (+2ms) \n13:33:24   ├─ /robots/arenda-inchbot-l1-w-edu/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-kettybot/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-klipmeiker/index.html (+5ms) \n13:33:24   ├─ /robots/arenda-mini-robo-kofeyni/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-noetix-bumi/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-promobot-v4/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-robo-kofeyni/index.html (+2ms) \n13:33:24   ├─ /robots/arenda-roboshashki/index.html (+5ms) \n13:33:24   ├─ /robots/arenda-robot-barmen/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-robota-ardi/index.html (+4ms) \n13:33:24   ├─ /robots/arenda-robota-hudozhnika-a4/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-robota-sofiya/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-robota-tron/index.html (+2ms) \n13:33:24   ├─ /robots/arenda-senserobot/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-sketchbot/index.html (+5ms) \n13:33:24   ├─ /robots/arenda-unitree-g1/index.html (+7ms) \n13:33:24   ├─ /robots/arenda-unitree-go2/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-unitree-h2/index.html (+3ms) \n13:33:24   ├─ /robots/arenda-unitree-r1/index.html (+11ms) \n13:33:24   ├─ /robots/arenda-uv-box/index.html (+4ms) \n13:33:24   ├─ /robots/arenda-xiaomi-cyberdog-2/index.html (+7ms) \n13:33:24   ├─ /roboty-gumanoidy/index.html (+6ms) \n13:33:24   ├─ /roboty-sobaki/index.html (+6ms) \n13:33:24   ├─ /sitemap.xml (+3ms) \n13:33:24   ├─ /terms/index.html (+5ms) \n13:33:24   ├─ /index.html (+11ms) \n13:33:24 ✓ Completed in 410ms.\n\n13:33:24 [build] ✓ Completed in 2.49s.\n13:33:24 [build] 41 page(s) built in 4.10s\n13:33:24 [build] Complete!\n",
+      "stderr_tail": ""
+    }
+  ]
+}

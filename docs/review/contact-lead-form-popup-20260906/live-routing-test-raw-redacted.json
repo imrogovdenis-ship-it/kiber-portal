@@ -1,0 +1,5 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"timestamp\": \"2026-09-06T13:00:10.861Z\",\n  \"requestId\": \"lead_staging_owner_test_20260906_130007\",\n  \"telegram\": {\n    \"getMeOk\": true,\n    \"botUsername\": \"lead_kiberportal_bot\",\n    \"getChatOk\": true,\n    \"chatTitle\": \"Заявки с сайта КИБЕР ПОРТАЛ\",\n    \"chatType\": \"group\"\n  },\n  \"leadRequest\": {\n    \"httpStatus\": 200,\n    \"ok\": true,\n    \"mode\": \"live\",\n    \"amoCRM\": {\n      \"ok\": true,\n      \"attempts\": 1,\n      \"unsortedUid\": \"9b281c7aae1426cbe4f49eb154e1d6369d1c26e1417289474c7f98e9ea65\"\n    },\n    \"telegram\": {\n      \"ok\": true,\n      \"attempts\": 1,\n      \"messageId\": 12\n    }\n  }\n}\n",
+  "stderr": ""
+}

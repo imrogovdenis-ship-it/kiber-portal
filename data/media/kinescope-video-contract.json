@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "provider": "kinescope",
+  "status": "contract_recorded_waiting_for_owner_api_access_and_first_video_batch",
+  "tracking": {
+    "linearIssue": "KIBER-97",
+    "linearUrl": "https://linear.app/ai-class/issue/KIBER-97/kinescope-video-upload-and-rendering-pipeline"
+  },
+  "createdFromOwnerDecisionAt": "2026-09-03",
+  "purpose": "Make Kinescope-hosted videos a managed source-of-truth media layer for KIBER PORTAL compilations, articles, cases and optional robot-card video blocks.",
+  "ownerDecision": {
+    "accessMode": "api_token_via_1password_or_op_reference",
+    "allowDirectAgentUploads": true,
+    "notes": "Alexander will provide Kinescope access through API key / 1Password in safe mode. Passwords, API tokens and session cookies must not be sent in chat or committed to Git."
+  },
+  "security": {
+    "secretsInChatAllowed": false,
+    "secretsInGitAllowed": false,
+    "requiredSecretEnv": [
+      "KINESCOPE_API_TOKEN"
+    ],
+    "optionalEnv": [
+      "KINESCOPE_DEFAULT_PROJECT_ID",
+      "KINESCOPE_DEFAULT_FOLDER_ID"
+    ],
+    "secretStorage": "1Password / op:// references or local env only",
+    "doNotStore": [
+      "raw API token",
+      "login password",
+      "session cookies",
+      "Authorization headers"
+    ]
+  },
+  "allowedPageTypes": [
+    "compilation",
+    "article",
+    "case",
+    "robot_card",
+    "landing_section"
+  ],
+  "folderPolicy": {
+    "root": "KIBER PORTAL",
+    "folders": [
+      "KIBER PORTAL/robots/<robot-slug>",
+      "KIBER PORTAL/compilations/<compilation-slug>",
+      "KIBER PORTAL/articles/<article-slug>",
+      "KIBER PORTAL/cases/<case-slug>",
+      "KIBER PORTAL/raw-inbox"
+    ],
+    "rawInboxPurpose": "Temporary folder for owner-attached videos before final page/block assignment."
+  },
+  "namingPolicy": {
+    "pattern": "<page-type>__<slug>__<short-scene>__<date-or-batch>",
+    "examples": [
+      "compilation__roboty-dlya-vystavki__unitree-g1-demo",
+      "article__arenda-robota-na-meropriyatie__promobot-v4",
+      "robot__arenda-unitree-g1__dance-demo"
+    ]
+  },
+  "workflow": {
+    "uploadSteps": [
+      "Receive owner-attached video file and inspect format, size, duration, orientation and audio presence.",
+      "Choose target project/folder or place unclassified files into KIBER PORTAL/raw-inbox.",
+      "Upload to Kinescope through API using KINESCOPE_API_TOKEN from 1Password/op or local env only.",
+      "Set X-Video-Title, X-Video-Description, X-File-Name and poster metadata when available.",
+      "Poll Kinescope until video status is done; do not publish registry records as ready while status is uploading, processing, error or aborted.",
+      "Read back Kinescope video object and store id, project_id, folder_id, duration, play_link, embed_link, hls_link and poster metadata in data/media/kinescope-video-library.json.",
+      "Assign the video to page/block usages in the registry rather than pasting ad hoc links into Markdown.",
+      "Run source contract tests, production/preview build where applicable, rendered smoke and secret scans before PR/commit."
+    ]
+  },
+  "rendering": {
+    "component": "src/components/blocks/KinescopeVideo.astro",
+    "lazyIframe": true,
+    "requiresPoster": true,
+    "aspectRatio": "16 / 9",
+    "fallbackLink": true,
+    "allowedIframeSrcPattern": "^https://kinescope\\.(io|com)/embed/",
+    "disallowed": [
+      "inline raw API tokens",
+      "hard-coded Authorization headers",
+      "unreviewed external iframes",
+      "autoplay with sound by default"
+    ]
+  },
+  "seo": {
+    "requiresVideoObjectJsonLd": true,
+    "requiredFieldsForApprovedVideo": [
+      "name",
+      "description",
+      "thumbnailUrl",
+      "uploadDate",
+      "duration",
+      "embedUrl"
+    ],
+    "textLayers": [
+      "actualDescription",
+      "seoTitle",
+      "seoDescription",
+      "caption",
+      "transcriptSummary"
+    ]
+  },
+  "statusModel": [
+    "owner_uploaded_to_agent",
+    "uploaded_to_kinescope",
+    "processing",
+    "ready",
+    "assigned",
+    "approved",
+    "published",
+    "needs_replacement",
+    "do_not_use"
+  ],
+  "publicationGates": {
+    "productionDeployChangedByThisContract": false,
+    "dnsChangedByThisContract": false,
+    "analyticsChangedByThisContract": false,
+    "leadRoutingChangedByThisContract": false,
+    "requiresSeparateProductionApproval": true,
+    "requiresRightsApprovalPerVideo": true,
+    "requiresPrivacyCookieReviewBeforeProduction": true
+  },
+  "kinescopeApiEvidence": {
+    "docsChecked": "https://docs.kinescope.com/api/video/core/#v2-videos-upload-video",
+    "videoObjectFieldsObserved": [
+      "id",
+      "project_id",
+      "folder_id",
+      "status",
+      "duration",
+      "play_link",
+      "embed_link",
+      "hls_link",
+      "poster"
+    ],
+    "uploadHeadersObserved": [
+      "X-Parent-ID",
+      "X-Video-Title",
+      "X-Video-Description",
+      "X-File-Name",
+      "X-Poster-URL",
+      "X-Video-URL",
+      "X-Replace-Video-ID"
+    ]
+  }
+}

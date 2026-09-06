@@ -1,21 +1,21 @@
 # KIBER PORTAL — business inputs request pack
 
-Дата: 2026-08-30  
+Дата: 2026-08-30
 Статус: `needed_before_production_launch`
 
 Этот документ перечисляет решения, которые ещё нужны перед production launch. Media rights и public contacts/requisites уже закрыты owner input/approval и больше не являются открытыми blockers.
 
-Media rights статус: `approved_by_owner_for_production_media_use`  
+Media rights статус: `approved_by_owner_for_production_media_use`
 Evidence: `data/review/media-rights-robot-cards.json`, `docs/review/media-rights/robot-cards/`, `data/review/media-rights-review-package.json`.
 
-Public contacts approved: `yes`  
+Public contacts approved: `yes`
 Evidence: owner input 2026-08-30; defaults in `src/config/site.ts`; rendered header/footer/contacts/legal docs use the approved values.
 
 ## 1. Закрыто: реальные публичные контакты и реквизиты
 
 Утверждено для preview/PR:
 
-- телефон: `+7 985 266-65-82`;
+- телефон: `+7 (906) 730-96-91`;
 - email: `markinas28@yandex.ru`;
 - Telegram: phone-based public contact;
 - WhatsApp: phone-based public contact;

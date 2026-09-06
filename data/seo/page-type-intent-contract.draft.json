@@ -1,0 +1,897 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-94",
+  "status": "draft_for_owner_review",
+  "generatedAt": "2026-09-01T13:10:03.853471+00:00",
+  "strategy": "contract_first_hybrid",
+  "sourceReports": [
+    "docs/review/kiber-94-materials-alignment/materials-analysis.md",
+    "docs/review/kiber-94-materials-alignment/materials-analysis.json",
+    "data/seo/page-seo-passports.json",
+    "data/seo/page-seo-remediation-backlog.json"
+  ],
+  "sourceMaterials": [
+    {
+      "id": "article_23_feb",
+      "pageType": "article_detail",
+      "archetype": "scenario/occasion",
+      "roughWords": 984,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_23_feb.md"
+    },
+    {
+      "id": "article_price",
+      "pageType": "article_detail",
+      "archetype": "price_explainer",
+      "roughWords": 1510,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_price.md"
+    },
+    {
+      "id": "article_sofia_gala",
+      "pageType": "article_detail",
+      "archetype": "scenario/occasion",
+      "roughWords": 1362,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_sofia_gala.md"
+    },
+    {
+      "id": "article_store_opening",
+      "pageType": "article_detail",
+      "archetype": "scenario/occasion",
+      "roughWords": 1563,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_store_opening.md"
+    },
+    {
+      "id": "article_unusual_corporate",
+      "pageType": "article_detail",
+      "archetype": "ideas/listicle",
+      "roughWords": 1605,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_unusual_corporate.md"
+    },
+    {
+      "id": "article_unitree_comparison",
+      "pageType": "article_detail",
+      "archetype": "comparison",
+      "roughWords": 2884,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/article_unitree_comparison.md"
+    },
+    {
+      "id": "compilation_humanoids",
+      "pageType": "compilation",
+      "archetype": null,
+      "roughWords": 1363,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/compilation_humanoids.md"
+    },
+    {
+      "id": "compilation_wedding",
+      "pageType": "compilation",
+      "archetype": null,
+      "roughWords": 1515,
+      "signals": [
+        "hero",
+        "intro",
+        "gallery",
+        "tableOrCheckpoint",
+        "catalog",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/compilation_wedding.md"
+    },
+    {
+      "id": "robot_unitree_go2",
+      "pageType": "robot_card",
+      "archetype": null,
+      "roughWords": 1851,
+      "signals": [
+        "hero",
+        "gallery",
+        "tableOrCheckpoint",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/robot_unitree_go2.md"
+    },
+    {
+      "id": "robot_senserobot",
+      "pageType": "robot_card",
+      "archetype": null,
+      "roughWords": 1786,
+      "signals": [
+        "intro",
+        "gallery",
+        "related",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/robot_senserobot.md"
+    },
+    {
+      "id": "robot_unitree_r1",
+      "pageType": "robot_card",
+      "archetype": null,
+      "roughWords": 1977,
+      "signals": [
+        "gallery",
+        "faq",
+        "goshaCta",
+        "serviceReport",
+        "prices"
+      ],
+      "extractedTextPath": "docs/review/kiber-94-materials-alignment/extracted-text/robot_unitree_r1.md"
+    }
+  ],
+  "policy": {
+    "productionSideEffects": false,
+    "dnsChanges": false,
+    "secretsChanged": false,
+    "analyticsActivation": false,
+    "liveLeadRouting": false,
+    "prMerge": false,
+    "massPageGenerationBlockedUntil": "page-type intent contract approved",
+    "renderServiceSectionsPublicly": false,
+    "tildaBlocksAreSourceStructureOnly": true,
+    "publicCompilationTerm": "Подборки",
+    "priceClaimsRequireApprovedTariffSource": true,
+    "capabilityClaimsRequireSourceStatus": true,
+    "internalLinksStartAsReviewOnlyProposals": true,
+    "legalPagesDoNotNeedCommercialKeywordStuffing": true
+  },
+  "sharedRules": {
+    "sourceStatusValues": [
+      "owner_approved",
+      "manufacturer",
+      "page_content",
+      "needs_review",
+      "generated_needs_review",
+      "not_applicable"
+    ],
+    "priceStatusValues": [
+      "active",
+      "request",
+      "not_applicable",
+      "missing",
+      "needs_review"
+    ],
+    "serviceOnlyBlocks": [
+      "wordstatAnalysis",
+      "serpAnalysis",
+      "checklistReport",
+      "sourceNotes",
+      "generationPrompt",
+      "keywordDensityReport"
+    ],
+    "firstImplementationOrder": [
+      "contract and tests",
+      "repeating templates: robot_card, article_detail, compilation",
+      "index/category templates",
+      "single utility pages",
+      "Claude skill rewrite",
+      "material import"
+    ]
+  },
+  "pageTypes": {
+    "home": {
+      "publicLabel": "Главная",
+      "role": "commercial gateway for robot rental demand",
+      "requiredH1Pattern": "Commercial H1 contains owner-approved high-frequency service intent such as “Аренда роботов …”.",
+      "titlePattern": "Brand + primary commercial keyword; no unapproved superlatives.",
+      "primaryKeywordRule": "One approved high-frequency commercial cluster; usually аренда/прокат роботов.",
+      "firstBlockRule": "First visible block answers who, what service, for which events, and how to request selection.",
+      "aiSummaryRule": "80–220 visible chars summarizing brand, service, event use cases, and next action for AI extraction.",
+      "ctaRule": "Primary CTA to request/contact; secondary to catalog/подборки. No live routing implication beyond approved forms.",
+      "schemaRule": "Organization + WebSite; ItemList when catalog/promo lists are visible.",
+      "internalLinksRule": "Link to robot catalog/cards, Подборки, Блог Кибер Гоши, contacts/request.",
+      "factualSafetyRule": "Only approved brand/contact/service claims; do not imply availability/prices for all models.",
+      "publicBlocks": [
+        "hero",
+        "catalogPreview",
+        "compilationsPreview",
+        "articlesPreview",
+        "aiSummary",
+        "cta",
+        "faq"
+      ],
+      "reviewOnlyBlocks": [
+        "keywordResearch",
+        "routePriorityNotes",
+        "internalLinkProposals"
+      ],
+      "claudeOutputFields": [
+        "slug",
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "heroLead",
+        "aiSummary",
+        "primaryKeyword",
+        "secondaryKeywords",
+        "cta",
+        "internalLinks",
+        "schemaTypes"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "homepageIntentAudit"
+      ]
+    },
+    "robot_card": {
+      "publicLabel": "Карточка робота",
+      "role": "one model rental/service page",
+      "requiredH1Pattern": "Pattern: “Аренда {robotName}” or approved close equivalent with rental intent visible.",
+      "titlePattern": "Robot name + rental/event intent + КИБЕР ПОРТАЛ; preserve approved title if visual copy differs, but record mismatch.",
+      "primaryKeywordRule": "Model-specific commercial query: аренда/прокат/заказать {robotName}; do not invent search volume.",
+      "firstBlockRule": "First block must answer what model is, rental availability, scenarios, operator/logistics boundary, and price status if approved/request-only.",
+      "aiSummaryRule": "Short answer for AI: model, service context, suitable scenarios, price status, what manager clarifies.",
+      "ctaRule": "Lead/request CTA with robot/scenario context; price CTA must not claim unapproved package.",
+      "schemaRule": "Service + BreadcrumbList; FAQPage only when visible FAQ exists; Offer only for approved public prices.",
+      "internalLinksRule": "Related robots, categories, Подборки, articles, contacts/request.",
+      "factualSafetyRule": "Prices from approved tariff source only; capabilities with source status; no invented autonomy, movement, language, or venue claims.",
+      "publicBlocks": [
+        "hero",
+        "modelIntro",
+        "gallery",
+        "description",
+        "capabilities",
+        "scenarios",
+        "robotInAction",
+        "pricing",
+        "goshaCta",
+        "faq"
+      ],
+      "reviewOnlyBlocks": [
+        "priceSourceReconciliation",
+        "claimSourceStatus",
+        "wordstatAnalysis",
+        "serpAnalysis",
+        "sourceNotes",
+        "mediaRightsReview"
+      ],
+      "claudeOutputFields": [
+        "slug",
+        "canonical",
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "primaryKeyword",
+        "secondaryKeywords",
+        "heroLead",
+        "aiSummary",
+        "gallery",
+        "description",
+        "capabilities",
+        "scenarios",
+        "pricing",
+        "cta",
+        "faq",
+        "internalLinks",
+        "factualClaims"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "robotTemplateBlockCoverage",
+        "priceStatusSemantics",
+        "claimSourceStatusRequired"
+      ]
+    },
+    "category": {
+      "publicLabel": "Категория роботов",
+      "role": "robot type/category hub",
+      "requiredH1Pattern": "Category name + rental/category intent, e.g. “Гуманоидные роботы в аренду”.",
+      "titlePattern": "Category name + аренда/прокат + КИБЕР ПОРТАЛ.",
+      "primaryKeywordRule": "Mid-frequency category/service query; not a single model query.",
+      "firstBlockRule": "First block defines category, when to use it, and points to model list.",
+      "aiSummaryRule": "Category-level answer: what robots are in the class, common scenarios, how to choose.",
+      "ctaRule": "CTA to selection/request plus model cards.",
+      "schemaRule": "CollectionPage + ItemList + BreadcrumbList; FAQPage if visible FAQ.",
+      "internalLinksRule": "Robots in category, related categories, Подборки/articles, contacts/request.",
+      "factualSafetyRule": "Do not claim every robot fits every scenario; category copy must defer uncertain selection to manager.",
+      "publicBlocks": [
+        "hero",
+        "aiSummary",
+        "modelGrid",
+        "scenarioGuide",
+        "selectionCriteria",
+        "faq",
+        "cta"
+      ],
+      "reviewOnlyBlocks": [
+        "categoryKeywordResearch",
+        "generatedRelatedLinks",
+        "claimSourceStatus"
+      ],
+      "claudeOutputFields": [
+        "slug",
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "categoryIntro",
+        "aiSummary",
+        "robots",
+        "selectionCriteria",
+        "faq",
+        "cta",
+        "schemaTypes"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "categoryItemListCoverage"
+      ]
+    },
+    "compilation": {
+      "publicLabel": "Подборки",
+      "role": "scenario/theme landing page built from source “сборка” materials",
+      "requiredH1Pattern": "Scenario/theme phrase + robots/rental intent where natural, using public label Подборки in navigation.",
+      "titlePattern": "Theme + robots/аренда + КИБЕР ПОРТАЛ; avoid source word “Сборка” in public title unless owner approves.",
+      "primaryKeywordRule": "Scenario/theme query, not only model query; may be commercial or informational-commercial hybrid.",
+      "firstBlockRule": "First block states the occasion/scenario, who it is for, and what robot formats are compared/recommended.",
+      "aiSummaryRule": "AI summary names scenario, recommended robot formats, selection logic, and request path.",
+      "ctaRule": "CTA to discuss scenario; catalog/product block links to approved robot cards.",
+      "schemaRule": "CollectionPage + ItemList + BreadcrumbList; FAQPage if visible FAQ.",
+      "internalLinksRule": "Robot cards, related articles, other Подборки, category pages, contacts/request.",
+      "factualSafetyRule": "Catalog prices must be sourced; scenario recommendations must not overpromise venue outcomes or availability.",
+      "publicBlocks": [
+        "hero",
+        "intro",
+        "gallery",
+        "scenarioExplanation",
+        "video",
+        "scenarios",
+        "catalogBlock",
+        "relatedArticles",
+        "faq",
+        "goshaCta",
+        "otherCompilations",
+        "homepagePromoCard"
+      ],
+      "reviewOnlyBlocks": [
+        "wordstatAnalysis",
+        "serpAnalysis",
+        "checklistReport",
+        "sourceAliasMapping",
+        "priceSourceReconciliation",
+        "internalLinkProposals"
+      ],
+      "claudeOutputFields": [
+        "slug",
+        "canonical",
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "primaryKeyword",
+        "secondaryKeywords",
+        "heroLead",
+        "aiSummary",
+        "gallery",
+        "scenarioBlocks",
+        "catalogItems",
+        "relatedArticles",
+        "faq",
+        "goshaCta",
+        "otherCompilations"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "compilationPublicTerm",
+        "collectionItemListCoverage"
+      ],
+      "aliases": [
+        "сборка",
+        "sborka"
+      ]
+    },
+    "article_index": {
+      "publicLabel": "Блог Кибер Гоши",
+      "role": "blog/article listing page",
+      "requiredH1Pattern": "Index H1 is section label, currently “Блог Кибер Гоши”; no need to force individual article keyword.",
+      "titlePattern": "Section brand + practical article intent.",
+      "primaryKeywordRule": "Section-level informational/commercial-support query; not one article keyword.",
+      "firstBlockRule": "First block explains what the blog contains and how to use articles to choose robots.",
+      "aiSummaryRule": "AI summary describes section scope and links to article/detail pages.",
+      "ctaRule": "CTA to articles and contact/request; no fake article count promises.",
+      "schemaRule": "WebPage or Blog; ItemList recommended when article cards exist.",
+      "internalLinksRule": "Article detail pages, robot cards, Подборки, contacts/request.",
+      "factualSafetyRule": "Index copy must not pretend unpublished article detail pages exist publicly.",
+      "publicBlocks": [
+        "hero",
+        "sectionIntro",
+        "articleCards",
+        "relatedNavigation",
+        "cta"
+      ],
+      "reviewOnlyBlocks": [
+        "articleInventory",
+        "unpublishedArticleQueue",
+        "internalLinkProposals"
+      ],
+      "claudeOutputFields": [
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "sectionIntro",
+        "aiSummary",
+        "articleCards",
+        "internalLinks",
+        "cta"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "articleIndexItemListCoverage"
+      ]
+    },
+    "article_detail": {
+      "publicLabel": "Статья",
+      "role": "informational/how-to/detail content page",
+      "requiredH1Pattern": "Specific article headline; contains the primary query naturally, not keyword stuffing.",
+      "titlePattern": "Article title + КИБЕР ПОРТАЛ; may include scenario/model if truthful.",
+      "primaryKeywordRule": "One article-level query mapped to archetype: scenario, price explainer, ideas/listicle, or comparison.",
+      "firstBlockRule": "Hero + intro must answer the user’s search question within first 1–2 paragraphs.",
+      "aiSummaryRule": "80–220 char extractable answer: what the article explains, involved robots/scenarios, and when to contact manager.",
+      "ctaRule": "Gosha quote or CTA near end plus contextual links to robot cards/request.",
+      "schemaRule": "Article or BlogPosting + BreadcrumbList; FAQPage when visible FAQ exists.",
+      "internalLinksRule": "Related articles, robot cards, Подборки/category hubs, request/contact.",
+      "factualSafetyRule": "Generated article claims start as needs_review; price/model specs must reconcile to source-of-truth before publication.",
+      "publicBlocks": [
+        "hero",
+        "intro",
+        "bodySections",
+        "goshaCta",
+        "faq"
+      ],
+      "reviewOnlyBlocks": [
+        "wordstatAnalysis",
+        "serpAnalysis",
+        "checklistReport",
+        "keywordDensityReport",
+        "sourceNotes",
+        "internalLinkProposals",
+        "priceSourceReconciliation"
+      ],
+      "claudeOutputFields": [
+        "slug",
+        "canonical",
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "primaryKeyword",
+        "secondaryKeywords",
+        "archetype",
+        "heroImagePrompt",
+        "heroLead",
+        "aiSummary",
+        "blocks",
+        "cta",
+        "faq",
+        "relatedLinks",
+        "serviceReport"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "articleArchetypeCoverage",
+        "optionalBlockValidation"
+      ],
+      "requiredArchetypes": [
+        "scenario/occasion",
+        "price_explainer",
+        "ideas/listicle",
+        "comparison"
+      ],
+      "optionalTypedBlocks": [
+        "comparisonTable",
+        "checkpointList",
+        "numbersBlock",
+        "catalogBlock",
+        "relatedArticles",
+        "gallery",
+        "productCard",
+        "twoColumnText",
+        "scenarioList"
+      ]
+    },
+    "news_index": {
+      "publicLabel": "Новости",
+      "role": "news listing page",
+      "requiredH1Pattern": "Section H1 such as “Новости” or approved КИБЕР ПОРТАЛ news label.",
+      "titlePattern": "News index + КИБЕР ПОРТАЛ; avoid article/detail claims.",
+      "primaryKeywordRule": "Freshness/news section query; not model rental keyword unless section copy supports it.",
+      "firstBlockRule": "First block explains what news/events are collected and links to items.",
+      "aiSummaryRule": "AI summary gives section scope, publication policy, and source context.",
+      "ctaRule": "CTA to related service pages only when news item context supports it.",
+      "schemaRule": "WebPage or CollectionPage + ItemList; not NewsArticle for index alone.",
+      "internalLinksRule": "News details, related services, articles/categories.",
+      "factualSafetyRule": "No invented dates, participants, awards, venues, or client names.",
+      "publicBlocks": [
+        "hero",
+        "newsCards",
+        "sourcePolicy",
+        "cta"
+      ],
+      "reviewOnlyBlocks": [
+        "newsSourceQueue",
+        "unpublishedNews",
+        "internalLinkProposals"
+      ],
+      "claudeOutputFields": [
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "aiSummary",
+        "newsCards",
+        "sourcePolicy",
+        "schemaTypes"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "newsIndexItemListCoverage"
+      ]
+    },
+    "news_detail": {
+      "publicLabel": "Новость",
+      "role": "event/news detail page",
+      "requiredH1Pattern": "Specific event/news headline; includes date/context where appropriate.",
+      "titlePattern": "News headline + КИБЕР ПОРТАЛ.",
+      "primaryKeywordRule": "News/entity query or event-specific informational query.",
+      "firstBlockRule": "First block states what happened, when, where, source/evidence, and why it matters.",
+      "aiSummaryRule": "AI summary gives factual who/what/when/where without promotional invention.",
+      "ctaRule": "Contextual CTA only after factual report; link to relevant robot/service if directly related.",
+      "schemaRule": "NewsArticle + BreadcrumbList; images with factual alt/source.",
+      "internalLinksRule": "Related robot/service pages, articles, categories, source links if public.",
+      "factualSafetyRule": "Every factual claim needs source/date; no fabricated client/event details.",
+      "publicBlocks": [
+        "hero",
+        "dateline",
+        "body",
+        "sourceContext",
+        "relatedLinks",
+        "cta"
+      ],
+      "reviewOnlyBlocks": [
+        "sourceEvidence",
+        "rightsReview",
+        "internalLinkProposals"
+      ],
+      "claudeOutputFields": [
+        "slug",
+        "canonical",
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "datePublished",
+        "source",
+        "aiSummary",
+        "body",
+        "images",
+        "relatedLinks",
+        "schemaTypes"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "newsArticleSourceRequired"
+      ]
+    },
+    "contacts": {
+      "publicLabel": "Контакты",
+      "role": "contact/conversion support page",
+      "requiredH1Pattern": "Contacts H1; no need to force commercial keyword unnaturally.",
+      "titlePattern": "Контакты + КИБЕР ПОРТАЛ.",
+      "primaryKeywordRule": "Navigational/local/contact intent.",
+      "firstBlockRule": "First block exposes approved ways to contact and what happens after request.",
+      "aiSummaryRule": "AI summary lists approved contact channels and service scope.",
+      "ctaRule": "CTA to request/contact methods; no unapproved live routing assumptions.",
+      "schemaRule": "ContactPage; Organization/LocalBusiness only with approved legal/business data.",
+      "internalLinksRule": "Legal pages, request page, home, catalog.",
+      "factualSafetyRule": "Use only approved public contacts/requisites; do not expose secrets or internal routing.",
+      "publicBlocks": [
+        "hero",
+        "contactMethods",
+        "requestPath",
+        "legalLinks",
+        "faq"
+      ],
+      "reviewOnlyBlocks": [
+        "leadRoutingImplementationNotes",
+        "crmConfig",
+        "secretReferences"
+      ],
+      "claudeOutputFields": [
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "aiSummary",
+        "contactMethods",
+        "cta",
+        "schemaTypes"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "contactApprovedFactsOnly"
+      ]
+    },
+    "legal": {
+      "publicLabel": "Юридическая страница",
+      "role": "legal/compliance utility page",
+      "requiredH1Pattern": "Legal document H1; exact document title.",
+      "titlePattern": "Document title + КИБЕР ПОРТАЛ.",
+      "primaryKeywordRule": "Legal/navigational intent; do not optimize for robot rental unless naturally relevant.",
+      "firstBlockRule": "First block states the document scope and effective context.",
+      "aiSummaryRule": "AI summary names document type and scope without changing legal meaning.",
+      "ctaRule": "CTA optional; links to contacts/legal set.",
+      "schemaRule": "WebPage; specific legal schema only after legal review.",
+      "internalLinksRule": "Contacts, related legal documents, request pages if relevant.",
+      "factualSafetyRule": "Do not rewrite legal copy for SEO; no commercial keyword stuffing.",
+      "publicBlocks": [
+        "documentHeader",
+        "legalBody",
+        "legalCrossLinks"
+      ],
+      "reviewOnlyBlocks": [
+        "legalReviewNotes",
+        "policyChangeLog"
+      ],
+      "claudeOutputFields": [
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "aiSummary",
+        "legalBody",
+        "schemaTypes"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "legalNoKeywordStuffing"
+      ]
+    },
+    "conversion": {
+      "publicLabel": "Заявка / конверсия",
+      "role": "lead/request/thanks utility page",
+      "requiredH1Pattern": "Action H1: request, thanks, next step; not a landing keyword target.",
+      "titlePattern": "Action + КИБЕР ПОРТАЛ.",
+      "primaryKeywordRule": "Transactional/conversion support intent.",
+      "firstBlockRule": "First block explains current action, expected next step, and privacy boundary.",
+      "aiSummaryRule": "AI summary explains request/thanks function; no false promise of live CRM.",
+      "ctaRule": "Primary form/contact action only where approved; thanks page next links.",
+      "schemaRule": "WebPage; noindex policy may apply by route.",
+      "internalLinksRule": "Contacts, privacy/consent, home/catalog.",
+      "factualSafetyRule": "Do not imply production lead routing, analytics, or secret changes unless separately approved.",
+      "publicBlocks": [
+        "actionHero",
+        "formOrThanks",
+        "privacyLinks",
+        "nextLinks"
+      ],
+      "reviewOnlyBlocks": [
+        "leadRoutingNotes",
+        "analyticsNotes",
+        "crmIntegrationNotes"
+      ],
+      "claudeOutputFields": [
+        "seoTitle",
+        "metaDescription",
+        "h1",
+        "aiSummary",
+        "cta",
+        "schemaTypes",
+        "robotsPolicy"
+      ],
+      "ciChecks": [
+        "contractJsonValid",
+        "matrixDocMentionsPageType",
+        "h1PatternPresent",
+        "titlePatternPresent",
+        "primaryKeywordRulePresent",
+        "firstBlockRulePresent",
+        "aiSummaryRulePresent",
+        "ctaRulePresent",
+        "schemaRulePresent",
+        "internalLinksRulePresent",
+        "factualSafetyRulePresent",
+        "reviewOnlyBlocksNotPublic",
+        "conversionNoLiveRoutingImplication"
+      ]
+    }
+  },
+  "pageTypeAliases": {
+    "collection": "compilation",
+    "article": "article_detail",
+    "news": "news_detail",
+    "landing": "category"
+  }
+}

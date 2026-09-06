@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-94",
+  "pageType": "article_detail",
+  "template": "ArticleBlocksTemplate",
+  "status": "owner_design_structure_meaning_approved",
+  "approvedBy": "Александр Маркин",
+  "approvedAt": "2026-09-04T18:36:00Z",
+  "source": "Telegram DM with Александр Маркин",
+  "ownerQuote": "Всё утверждаю эту страницу шаблон для статей в том виде в котором она есть дизайн структуру и смыслы как ПК версию такой мобильную для планшетов вносить все необходимые информацию в проект файлы записываю всё что нужно",
+  "scope": "canonical_article_template_design_structure_meaning_for_desktop_tablet_mobile",
+  "repository": "imrogovdenis-ship-it/kiber-portal",
+  "workingTree": "/home/alex/projects/kiber-portal-pr8",
+  "branch": "hermes/kiber-full-site-visual-qa-20260901",
+  "recordedAtHead": "17c57f65943fe5f5949a45f1084170e232562659",
+  "reviewUrlBase": "https://alex-kiber-pr8-footer-review.38.180.37.42.nip.io",
+  "approvedPreviewRoute": "/preview/kiber-94/article-blocks/",
+  "approvedStagingUrl": "https://alex-kiber-pr8-footer-review.38.180.37.42.nip.io/preview/kiber-94/article-blocks/",
+  "approvedViewports": [
+    "desktop/ПК",
+    "tablet/планшет",
+    "mobile/телефон"
+  ],
+  "canonicalUse": "Use this ArticleBlocksTemplate as the approved source for future KIBER PORTAL article pages. Preserve approved design, structure, responsive behavior, and semantic intent; change only article-specific content, media, robot/article/compilation selections, and optional block inclusion by meaning.",
+  "mandatoryContract": {
+    "openingOrder": [
+      "Header",
+      "Breadcrumbs",
+      "Hero",
+      "SEO / AI intro"
+    ],
+    "afterIntroMandatory": [
+      "Цитата Кибер Гоши",
+      "Простой текстовый блок с заголовком"
+    ],
+    "endingOrder": [
+      "FAQ",
+      "CTA2",
+      "Каталог роботов",
+      "Блог Кибер Гоши",
+      "Подборки"
+    ]
+  },
+  "optionalBlocks": [
+    "Фото / видео момент",
+    "Галерея",
+    "Сравнение",
+    "Выбор / очевидные сценарии",
+    "Форматы / numbered use cases",
+    "Чек-лист",
+    "Перечисление вариантов",
+    "Одна рекомендованная модель"
+  ],
+  "sharedStyleBoundary": "Shared lower blocks must reuse approved homepage components/styles: HomeFaqBlock, HomeFinalCta, HomeImageCards, RobotCard and homepage catalog structure. Do not recreate styles locally.",
+  "notApprovedByThisRecord": [
+    "PR merge",
+    "production deploy",
+    "DNS changes",
+    "secrets",
+    "analytics",
+    "live lead routing",
+    "mass article generation without final content/SEO task approval"
+  ],
+  "evidence": {
+    "latestPreviewScreenshots": "docs/review/article-blocks-inventory-required-pr8-20260904/",
+    "desktopScreenshot": "docs/review/article-blocks-inventory-required-pr8-20260904/article-blocks-inventory-required-desktop-1440-full.png",
+    "mobileScreenshot": "docs/review/article-blocks-inventory-required-pr8-20260904/article-blocks-inventory-required-mobile-390-full.png",
+    "regressionTest": "tests/visual/article-blocks-template-preview.test.ts",
+    "component": "src/components/templates/ArticleBlocksTemplate.astro",
+    "data": "src/lib/kiber94-article-template-data.ts"
+  }
+}

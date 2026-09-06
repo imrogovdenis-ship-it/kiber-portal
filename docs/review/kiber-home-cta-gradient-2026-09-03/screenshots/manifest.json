@@ -1,0 +1,170 @@
+[
+  {
+    "route": "/",
+    "name": "home-compilations",
+    "selector": "[data-home-block=\"compilations\"]",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1100
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/home-compilations-desktop.png",
+    "data": {
+      "selector": "[data-home-block=\"compilations\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": "linear-gradient(color(srgb 0.211765 0.196078 0.243137 / 0.45) 0%, color(srgb 0.211765 0.196078 0.243137 / 0.18) 24%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%)",
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440
+    }
+  },
+  {
+    "route": "/",
+    "name": "home-cta",
+    "selector": "[data-home-block=\"final-cta\"]",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1100
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/home-cta-desktop.png",
+    "data": {
+      "selector": "[data-home-block=\"final-cta\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": "linear-gradient(color(srgb 0.211765 0.196078 0.243137 / 0.45) 0%, color(srgb 0.211765 0.196078 0.243137 / 0.18) 24%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%)",
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440
+    }
+  },
+  {
+    "route": "/compilations/",
+    "name": "compilations-cta",
+    "selector": "[data-home-block=\"final-cta\"]",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1100
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/compilations-cta-desktop.png",
+    "data": {
+      "selector": "[data-home-block=\"final-cta\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": null,
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440
+    }
+  },
+  {
+    "route": "/articles/",
+    "name": "articles-cta",
+    "selector": "[data-home-block=\"final-cta\"]",
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1100
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/articles-cta-desktop.png",
+    "data": {
+      "selector": "[data-home-block=\"final-cta\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": null,
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "clientWidth": 1440
+    }
+  },
+  {
+    "route": "/",
+    "name": "home-compilations",
+    "selector": "[data-home-block=\"compilations\"]",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 980
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/home-compilations-mobile.png",
+    "data": {
+      "selector": "[data-home-block=\"compilations\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": "linear-gradient(color(srgb 0.211765 0.196078 0.243137 / 0.45) 0%, color(srgb 0.211765 0.196078 0.243137 / 0.18) 24%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%)",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390
+    }
+  },
+  {
+    "route": "/",
+    "name": "home-cta",
+    "selector": "[data-home-block=\"final-cta\"]",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 980
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/home-cta-mobile.png",
+    "data": {
+      "selector": "[data-home-block=\"final-cta\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": "linear-gradient(color(srgb 0.211765 0.196078 0.243137 / 0.45) 0%, color(srgb 0.211765 0.196078 0.243137 / 0.18) 24%, rgba(0, 0, 0, 0) 52%, rgba(0, 0, 0, 0) 100%)",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390
+    }
+  },
+  {
+    "route": "/compilations/",
+    "name": "compilations-cta",
+    "selector": "[data-home-block=\"final-cta\"]",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 980
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/compilations-cta-mobile.png",
+    "data": {
+      "selector": "[data-home-block=\"final-cta\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": null,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390
+    }
+  },
+  {
+    "route": "/articles/",
+    "name": "articles-cta",
+    "selector": "[data-home-block=\"final-cta\"]",
+    "viewport": {
+      "name": "mobile",
+      "width": 390,
+      "height": 980
+    },
+    "path": "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-home-cta-gradient-2026-09-03/screenshots/articles-cta-mobile.png",
+    "data": {
+      "selector": "[data-home-block=\"final-cta\"]",
+      "ctaVariant": "robot-card-final",
+      "ctaTitle": "Остались вопросы?",
+      "ctaImage": "/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif",
+      "gradientContent": null,
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "clientWidth": 390
+    }
+  }
+]

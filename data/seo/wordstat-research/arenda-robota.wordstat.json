@@ -1,0 +1,246 @@
+{
+  "query": "аренда робота",
+  "source": "Yandex Wordstat via user Windows Chrome remote debugging over SSH reverse tunnel",
+  "status": "checked_live",
+  "region": "Все регионы",
+  "devices": [
+    "Десктопы",
+    "Cмартфоны",
+    "Планшеты"
+  ],
+  "period": "06.08.2026 – 04.09.2026",
+  "total_queries": 2161,
+  "captured_at": "2026-09-06T11:11:34.134755+00:00",
+  "screenshot": "docs/review/wordstat-remote-browser-20260906/02-after-wait-current-query.png",
+  "rows": [
+    {
+      "phrase": "+аренда роботов",
+      "monthly_queries": 2161
+    },
+    {
+      "phrase": "+аренда робота окон",
+      "monthly_queries": 722
+    },
+    {
+      "phrase": "+робот мойщик аренда",
+      "monthly_queries": 509
+    },
+    {
+      "phrase": "+аренда робота мойщика окон",
+      "monthly_queries": 472
+    },
+    {
+      "phrase": "+аренда робота пылесоса",
+      "monthly_queries": 231
+    },
+    {
+      "phrase": "+взять робота в аренду",
+      "monthly_queries": 199
+    },
+    {
+      "phrase": "+аренда роботов москва",
+      "monthly_queries": 88
+    },
+    {
+      "phrase": "+взять в аренду робот мойщик окон",
+      "monthly_queries": 81
+    },
+    {
+      "phrase": "+аренда робота гуманоида",
+      "monthly_queries": 78
+    },
+    {
+      "phrase": "+аренда роботов на мероприятие",
+      "monthly_queries": 74
+    },
+    {
+      "phrase": "+аренда робота газонокосилки",
+      "monthly_queries": 71
+    },
+    {
+      "phrase": "+робот мойка аренда",
+      "monthly_queries": 71
+    },
+    {
+      "phrase": "+аренда робота спб",
+      "monthly_queries": 69
+    },
+    {
+      "phrase": "+аренда робота для мойки окон",
+      "monthly_queries": 62
+    },
+    {
+      "phrase": "+взять в аренду робот для окон",
+      "monthly_queries": 61
+    },
+    {
+      "phrase": "+робот пылесос для окон аренда",
+      "monthly_queries": 55
+    },
+    {
+      "phrase": "+аренда робота собаки",
+      "monthly_queries": 54
+    },
+    {
+      "phrase": "+авито робот мойщик окон аренда",
+      "monthly_queries": 53
+    },
+    {
+      "phrase": "+аренда робота пылесоса для бассейна",
+      "monthly_queries": 50
+    },
+    {
+      "phrase": "+аренда роботов цена",
+      "monthly_queries": 42
+    },
+    {
+      "phrase": "+аренда робота для мытья окон",
+      "monthly_queries": 39
+    },
+    {
+      "phrase": "+аренда робота уборщика",
+      "monthly_queries": 36
+    },
+    {
+      "phrase": "+аренда робота косилки",
+      "monthly_queries": 34
+    },
+    {
+      "phrase": "+моющий робот пылесос аренда",
+      "monthly_queries": 28
+    },
+    {
+      "phrase": "+робот штукатур аренда",
+      "monthly_queries": 27
+    },
+    {
+      "phrase": "+робот разрушитель аренда",
+      "monthly_queries": 25
+    },
+    {
+      "phrase": "+взять в аренду робот для мойки окон",
+      "monthly_queries": 25
+    },
+    {
+      "phrase": "+робот доставщик аренда",
+      "monthly_queries": 22
+    },
+    {
+      "phrase": "+аренда демонтажного робота",
+      "monthly_queries": 20
+    },
+    {
+      "phrase": "+аренда робота мойщика окон спб",
+      "monthly_queries": 19
+    },
+    {
+      "phrase": "+робот официант аренда",
+      "monthly_queries": 17
+    },
+    {
+      "phrase": "+робот мойщик окон аренда москва",
+      "monthly_queries": 17
+    },
+    {
+      "phrase": "+договор аренды робота мойщика окон",
+      "monthly_queries": 16
+    },
+    {
+      "phrase": "+робот мульчер в аренду",
+      "monthly_queries": 15
+    },
+    {
+      "phrase": "+взять в аренду робот пылесос",
+      "monthly_queries": 15
+    },
+    {
+      "phrase": "+авито тольятти аренда робота мойщика окон",
+      "monthly_queries": 15
+    },
+    {
+      "phrase": "+аренда робота мойщика окон новосибирск",
+      "monthly_queries": 13
+    },
+    {
+      "phrase": "+аренда робота мойщика окон екатеринбург",
+      "monthly_queries": 10
+    },
+    {
+      "phrase": "+яндекс роботы аренда",
+      "monthly_queries": 10
+    },
+    {
+      "phrase": "+роботы аренда нижний новгород",
+      "monthly_queries": 9
+    },
+    {
+      "phrase": "+робот рука для съемки видео аренда",
+      "monthly_queries": 9
+    },
+    {
+      "phrase": "+договор аренды робота мойщика окон образец",
+      "monthly_queries": 9
+    },
+    {
+      "phrase": "+аренда робота пылесоса для бассейна самара",
+      "monthly_queries": 9
+    },
+    {
+      "phrase": "+робот шахматист аренда",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+аренда робот пылесос промышленный с влажной уборкой",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+аренда роботов на мероприятие спб",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+аренда робота косильщика",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+робот для демонтажа бетона аренда",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+робот рука в аренду",
+      "monthly_queries": 6
+    },
+    {
+      "phrase": "+аренда роботов в рф",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+стоимость аренды робота пылесоса бытового",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+аренда робот ровер москва",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+робот мойщик окон в аренду как бизнес",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+аренда аттракциона робот вратарь",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+робот для мытья окон в аренду нефтеюганск",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+робот мойщик окон взять в аренду челябинск",
+      "monthly_queries": 5
+    }
+  ],
+  "notes": [
+    "Remote debugging tunnel connected to isolated user browser profile.",
+    "No captcha bypass performed; user completed interactive checks manually.",
+    "Yandex footer says a link to Yandex is required when using materials from the page."
+  ]
+}

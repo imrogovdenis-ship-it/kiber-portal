@@ -1,0 +1,162 @@
+{
+  "checks": [
+    {
+      "name": "approved_review_links",
+      "exit": 0,
+      "stdout_tail": "\n> kiber-portal@0.1.0 test:approved-review-links\n> node --import tsx --test tests/visual/approved-review-links.test.ts\n\nTAP version 13\n# Subtest: preview review links route approved surfaces instead of old public detail designs\nok 1 - preview review links route approved surfaces instead of old public detail designs\n  ---\n  duration_ms: 3.399344\n  type: 'test'\n  ...\n# Subtest: approved review map exposes all owner-approved page surfaces\nok 2 - approved review map exposes all owner-approved page surfaces\n  ---\n  duration_ms: 0.408358\n  type: 'test'\n  ...\n# Subtest: home-live data does not collapse article card hrefs before preview review mapping\nok 3 - home-live data does not collapse article card hrefs before preview review mapping\n  ---\n  duration_ms: 0.324428\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 533.374697\n",
+      "stderr_tail": ""
+    },
+    {
+      "name": "build_preview",
+      "exit": 0,
+      "stdout_tail": "s) \n14:37:46   ├─ /robots/arenda-agibot-x2/index.html (+4ms) \n14:37:46   ├─ /robots/arenda-bellabot/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-glambot/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-inchbot-l1-w-edu/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-kettybot/index.html (+3ms) \n14:37:46   ├─ /robots/arenda-klipmeiker/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-mini-robo-kofeyni/index.html (+3ms) \n14:37:46   ├─ /robots/arenda-noetix-bumi/index.html (+4ms) \n14:37:46   ├─ /robots/arenda-promobot-v4/index.html (+4ms) \n14:37:46   ├─ /robots/arenda-robo-kofeyni/index.html (+3ms) \n14:37:46   ├─ /robots/arenda-roboshashki/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-robot-barmen/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-robota-ardi/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-robota-hudozhnika-a4/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-robota-sofiya/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-robota-tron/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-senserobot/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-sketchbot/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-unitree-g1/index.html (+11ms) \n14:37:46   ├─ /robots/arenda-unitree-go2/index.html (+3ms) \n14:37:46   ├─ /robots/arenda-unitree-h2/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-unitree-r1/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-uv-box/index.html (+2ms) \n14:37:46   ├─ /robots/arenda-xiaomi-cyberdog-2/index.html (+2ms) \n14:37:46   ├─ /roboty-gumanoidy/index.html (+4ms) \n14:37:46   ├─ /roboty-sobaki/index.html (+4ms) \n14:37:46   ├─ /sitemap.xml (+3ms) \n14:37:46   ├─ /terms/index.html (+3ms) \n14:37:46   ├─ /index.html (+6ms) \n14:37:46 ✓ Completed in 506ms.\n\n14:37:46 [build] ✓ Completed in 2.13s.\n14:37:46 [build] 67 page(s) built in 3.80s\n14:37:46 [build] Complete!\n",
+      "stderr_tail": ""
+    }
+  ],
+  "renderedAudit": {
+    "home": {
+      "hrefCount": 36,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/",
+        "/preview/kiber-94/article-blocks/#mediaMoment",
+        "/preview/kiber-94/compilation/roboty-gumanoidy/",
+        "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+        "/preview/kiber-94/robot-card/arenda-bellabot/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+        "/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/"
+      ]
+    },
+    "compilations": {
+      "hrefCount": 29,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/#mediaMoment",
+        "/preview/kiber-94/compilation/roboty-gumanoidy/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/"
+      ]
+    },
+    "articles": {
+      "hrefCount": 26,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/"
+      ]
+    },
+    "robot_card": {
+      "hrefCount": 32,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/",
+        "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+        "/preview/kiber-94/robot-card/arenda-bellabot/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+        "/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/"
+      ]
+    },
+    "humanoid_preview": {
+      "hrefCount": 38,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/#mediaMoment",
+        "/preview/kiber-94/compilation/roboty-gumanoidy/",
+        "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+        "/preview/kiber-94/robot-card/arenda-noetix-bumi/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+        "/preview/kiber-94/robot-card/arenda-unitree-h2/",
+        "/preview/kiber-94/robot-card/arenda-unitree-r1/"
+      ]
+    },
+    "article_template": {
+      "hrefCount": 53,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/",
+        "/preview/kiber-94/article-blocks/#mediaMoment",
+        "/preview/kiber-94/compilation/roboty-gumanoidy/",
+        "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+        "/preview/kiber-94/robot-card/arenda-unitree-h2/",
+        "/preview/kiber-94/robot-card/arenda-unitree-r1/"
+      ]
+    },
+    "review_map": {
+      "hrefCount": 28,
+      "badOldDesignLinks": [],
+      "approvedPreviewLinks": [
+        "/preview/kiber-94/article-blocks/#mediaMoment",
+        "/preview/kiber-94/compilation/roboty-gumanoidy/",
+        "/preview/kiber-94/robot-card/arenda-unitree-g1/"
+      ]
+    }
+  },
+  "deploy": {
+    "runExit": 0,
+    "container": "68e6ccbb5fbd"
+  },
+  "smoke": [
+    {
+      "route": "/preview/review-approved/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": true
+    },
+    {
+      "route": "/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/compilations/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/articles/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/preview/kiber-94/article-blocks/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/lead/request/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    },
+    {
+      "route": "/contacts/",
+      "http": 200,
+      "noindex": true,
+      "oldDesignHrefPresent": false,
+      "reviewMapMarker": false
+    }
+  ]
+}

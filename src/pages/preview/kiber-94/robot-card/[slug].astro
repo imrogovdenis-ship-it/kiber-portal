@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import RobotCardTemplate from '../../../../components/templates/RobotCardTemplate.astro';
+import { getRobotPages, type RobotPageRecord } from '../../../../lib/robot-pages';
+import { toRobotCardTemplateData } from '../../../../lib/kiber94-robot-template-data';
+import { breadcrumbJsonLd, faqPageJsonLd, serviceJsonLd } from '../../../../lib/seo';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  const enabled = process.env.DEPLOY_ENV !== 'production' && process.env.DESIGN_REVIEW_ENABLED !== 'false';
+  return enabled
+    ? getRobotPages().map((robot) => ({ params: { slug: robot.slug }, props: { robot } }))
+    : [];
+}
+
+const { robot } = Astro.props as { robot: RobotPageRecord };
+const template = toRobotCardTemplateData(robot);
+const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
+const breadcrumbs = [
+  { name: 'Главная', url: '/' },
+  { name: 'Каталог', url: '/#catalog' },
+  { name: template.robot.name, url: previewPath },
+];
+---
+
+<BaseLayout
+  title={`KIBER-94 preview: ${template.seo.title}`}
+  description={`Preview robot_card template with real data: ${template.seo.description}`}
+  canonical={Astro.site ? new URL(previewPath, Astro.site).toString() : previewPath}
+  image={robot.media.hero.src}
+  breadcrumbs={breadcrumbs}
+  noindex
+  jsonLd={[
+    serviceJsonLd({
+      name: template.seo.h1,
+      description: template.seo.description,
+      url: previewPath,
+      image: robot.media.hero.src,
+      category: 'KIBER-94 preview robot_card template',
+    }),
+    breadcrumbJsonLd(breadcrumbs),
+    faqPageJsonLd({ items: template.faq.map(({ question, answer }) => ({ question, answer })) }),
+  ]}
+>
+  <main class="kiber94-preview" id="main-content" tabindex="-1" data-kiber-task="KIBER-94" data-preview-route="robot_card" data-robot-slug={robot.slug}>
+    <header class="kiber94-preview__notice" aria-label="Статус preview">
+      <p>Preview-first / KIBER-94 · дизайн сверяется с Главной, Подборками, Блогом Кибер Гоши и live robot pages</p>
+    </header>
+    <RobotCardTemplate {template} />
+  </main>
+</BaseLayout>
+
+<style>
+  .kiber94-preview {
+    display: grid;
+    width: min(100% - (2 * var(--kp-reference-page-gutter)), var(--kp-reference-container));
+    margin-inline: auto;
+    gap: 1rem;
+    padding-block: 1.5rem 0;
+  }
+  .kiber94-preview__notice {
+    width: fit-content;
+    max-width: 100%;
+    padding: .6rem .9rem;
+    border-radius: 999rem;
+    background: color-mix(in srgb, var(--kp-reference-white) 76%, transparent);
+  }
+  .kiber94-preview__notice p {
+    margin: 0;
+    color: var(--kp-muted);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 39.9375rem) {
+    .kiber94-preview {
+      width: auto;
+      max-width: 100%;
+      padding-inline: var(--kp-reference-page-gutter);
+    }
+
+    .kiber94-preview__notice {
+      border-radius: 1rem;
+    }
+  }
+</style>

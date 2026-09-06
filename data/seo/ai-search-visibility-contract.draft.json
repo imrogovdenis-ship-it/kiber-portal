@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-93",
+  "status": "owner_policy_approved_draft_for_content_review",
+  "name": "AI Search Visibility / LLM Optimization conditions for KIBER PORTAL",
+  "sources": [
+    "owner AI search / LLM visibility brief 2026-09-01",
+    "https://platform.openai.com/docs/bots",
+    "https://developers.google.com/search/docs/appearance/ai-features",
+    "https://llmstxt.org"
+  ],
+  "decision": "Classic SEO remains the base. Owner approved AI agents/crawlers reading and indexing the site for search/answer systems; KIBER PORTAL pages also need AI-readable summaries, explicit entities, Q&A blocks, structured facts, llms.txt coverage, and contradiction checks before mass page generation.",
+  "requiredChecks": [
+    "aiSummary",
+    "entityClarity",
+    "questionAnswerBlocks",
+    "structuredFacts",
+    "schemaOrg",
+    "breadcrumbs",
+    "internalEntityLinks",
+    "llmsTxtCoverage",
+    "markdownAlternateOrLlmsEntry",
+    "aiCrawlerRobotsPolicy",
+    "contentNotHiddenInImagesOrClientJs",
+    "factualConsistency",
+    "reviewSourceForClaims",
+    "updatedDateForArticlesNews"
+  ],
+  "robotsPolicyDecisionRequired": false,
+  "recommendedFiles": [
+    "docs/ai-search-visibility-checklist.md",
+    "data/seo/ai-entity-map.json",
+    "public/llms.txt",
+    "data/seo/page-seo-passports.json aiVisibility blocks",
+    "scripts/audit_page_seo_components.py AI checks"
+  ],
+  "pageTypeRequirements": {
+    "robot_card": [
+      "aiSummary",
+      "robot/service/scenario/provider entities",
+      "questions about rental, price, included service, ordering and limitations",
+      "structured fact block",
+      "FAQ",
+      "Service schema",
+      "related robots/collections/articles"
+    ],
+    "collection": [
+      "aiSummary",
+      "scenario/category entities",
+      "questions about choosing robots",
+      "ItemList/CollectionPage schema",
+      "links to robot pages"
+    ],
+    "article": [
+      "aiSummary",
+      "question-led structure",
+      "Article/BlogPosting schema for detail pages",
+      "date/source/update status",
+      "links to commercial pages"
+    ],
+    "news": [
+      "aiSummary",
+      "source/date/context",
+      "NewsArticle schema for detail pages",
+      "no invented facts"
+    ],
+    "contacts": [
+      "clear brand/provider entity",
+      "text contact facts",
+      "requisites/legal links",
+      "ContactPage schema"
+    ],
+    "home": [
+      "brand/service/scenario overview",
+      "links to key sections",
+      "Organization/WebSite schema",
+      "llms.txt entry"
+    ]
+  },
+  "allowedExceptions": [
+    "llms.txt is a proposal, not an official Google/Yandex ranking standard",
+    "Markdown alternates are optional in first baseline if llms.txt links to canonical HTML",
+    "Training crawl may be handled separately from AI search crawling",
+    "AI crawler robots policy is owner-approved as allow for OAI-SearchBot, ChatGPT-User and GPTBot on 2026-09-01."
+  ],
+  "safetyBoundary": {
+    "productionDeploy": false,
+    "dnsChange": false,
+    "productionSecrets": false,
+    "analyticsActivation": false,
+    "liveLeadRouting": false,
+    "massPageGeneration": false
+  },
+  "robotsPolicy": {
+    "status": "owner_approved",
+    "approvedAt": "2026-09-01",
+    "ownerDecision": "Разрешить AI-агентам читать и индексировать сайт для поиска/ответов.",
+    "allowedUserAgents": [
+      "*",
+      "OAI-SearchBot",
+      "ChatGPT-User",
+      "GPTBot"
+    ],
+    "disallowedUserAgents": [],
+    "sitemap": "https://www.kiber-portal.ru/sitemap-index.xml",
+    "notes": [
+      "OAI-SearchBot allowed for ChatGPT search-style discovery",
+      "ChatGPT-User allowed for user-initiated retrieval",
+      "GPTBot allowed by owner decision; revisit if training-crawl policy changes"
+    ]
+  }
+}

@@ -3,10 +3,17 @@ import source from '../../data/design/home-live-blocks.json';
 export type HomeImage = { src: string; alt: string };
 export type HomeLink = { label: string; href: string };
 export type HomeGoshaData = { title: string; subtitle: string; text: string; image: HomeImage };
-export type HomeCard = { title: string; description: string; href: string; cta?: string; image: HomeImage };
+export type HomeCard = { title: string; description: string; href: string; originalHref?: string; cta?: string; image: HomeImage };
 export type HomeCardsBlock = { title: string; description: string; cards: HomeCard[] };
 export type HomeFaqData = { title: string; items: { question: string; answer: string }[] };
-export type HomeFinalCtaData = { title: string; description: string; primaryCta: HomeLink; secondaryCta: HomeLink; image: HomeImage };
+export type HomeFinalCtaData = {
+  title: string;
+  titleNoWrap?: string;
+  description: string;
+  primaryCta: HomeLink;
+  secondaryCta: HomeLink;
+  image: HomeImage;
+};
 
 const imageMap: Record<string, string> = {
   '/images/tild3632-3236-4238-b335-623531393036__hi.png': '/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp',
@@ -34,6 +41,7 @@ const routeFallbacks: Record<string, string> = {
   '/velkom-zona-na-svadbe-robot': '/articles/',
 };
 
+
 function image(input: { src: string; alt: string }): HomeImage {
   return { src: imageMap[input.src] ?? input.src, alt: input.alt };
 }
@@ -45,7 +53,7 @@ function href(input: string): string {
 }
 
 function card(input: { title: string; description: string; href: string; cta?: string; image: { src: string; alt: string } }): HomeCard {
-  return { title: input.title, description: input.description, href: href(input.href), cta: input.cta, image: image(input.image) };
+  return { title: input.title, description: input.description, href: href(input.href), originalHref: input.href, cta: input.cta, image: image(input.image) };
 }
 
 export const homeLiveOrder = source.homeOrder;
@@ -72,4 +80,16 @@ export const homeFinalCta: HomeFinalCtaData = {
   primaryCta: { label: source.finalCta.primaryCta.label, href: '/contacts/' },
   secondaryCta: { label: source.finalCta.secondaryCta.label, href: '/#catalog' },
   image: image(source.finalCta.image),
+};
+
+export const homeRobotCardFinalCta: HomeFinalCtaData = {
+  ...homeFinalCta,
+  title: 'Остались вопросы?',
+  description: 'Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, какой робот подойдёт под площадку, аудиторию, тайминг и формат вашего события.',
+  primaryCta: { label: 'Написать нам', href: '#contact-messengers' },
+  secondaryCta: { label: 'Оставить заявку', href: '/lead/request/' },
+  image: {
+    src: '/images/kiber-94-preview/gosha-ushanka-cta2-compact.avif',
+    alt: 'Кибер Гоша в красной шапке помогает ответить на вопросы по аренде робота',
+  },
 };
