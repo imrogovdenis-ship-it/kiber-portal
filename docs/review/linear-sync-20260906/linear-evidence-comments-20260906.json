@@ -1,0 +1,75 @@
+{
+  "viewer": {
+    "id": "7081070c-0741-406d-8022-9f0c80ffc2c6",
+    "name": "Александр Маркин"
+  },
+  "issues": {
+    "KIBER-70": {
+      "identifier": "KIBER-70",
+      "title": "[KP-105] Собрать release image с commit SHA и получить approval",
+      "state": "In Review",
+      "priority": 1,
+      "url": "https://linear.app/ai-class/issue/KIBER-70/kp-105-sobrat-release-image-s-commit-sha-i-poluchit-approval"
+    },
+    "KIBER-57": {
+      "identifier": "KIBER-57",
+      "title": "[KP-080] Утвердить каналы и реквизиты лидов",
+      "state": "Backlog",
+      "priority": 1,
+      "url": "https://linear.app/ai-class/issue/KIBER-57/kp-080-utverdit-kanaly-i-rekvizity-lidov"
+    },
+    "KIBER-58": {
+      "identifier": "KIBER-58",
+      "title": "[KP-083] Настроить Telegram + amoCRM и резервный канал/очередь",
+      "state": "Backlog",
+      "priority": 1,
+      "url": "https://linear.app/ai-class/issue/KIBER-58/kp-083-nastroit-telegram-amocrm-i-rezervnyj-kanalochered"
+    },
+    "KIBER-68": {
+      "identifier": "KIBER-68",
+      "title": "[KP-104] Сделать финальный backup Tilda, sitemap и production data",
+      "state": "Backlog",
+      "priority": 1,
+      "url": "https://linear.app/ai-class/issue/KIBER-68/kp-104-sdelat-finalnyj-backup-tilda-sitemap-i-production-data"
+    }
+  },
+  "comments": {
+    "KIBER-70": {
+      "success": true,
+      "url": "https://linear.app/ai-class/issue/KIBER-70/kp-105-sobrat-release-image-s-commit-sha-i-poluchit-approval#comment-173e4de7",
+      "id": "173e4de7-05eb-4f62-b4dd-28bc19643f27",
+      "createdAt": "2026-09-06T16:29:07.640Z",
+      "issueState": "In Review",
+      "title": "[KP-105] Собрать release image с commit SHA и получить approval",
+      "issueUrl": "https://linear.app/ai-class/issue/KIBER-70/kp-105-sobrat-release-image-s-commit-sha-i-poluchit-approval"
+    },
+    "KIBER-57": {
+      "success": true,
+      "url": "https://linear.app/ai-class/issue/KIBER-57/kp-080-utverdit-kanaly-i-rekvizity-lidov#comment-59c011b0",
+      "id": "59c011b0-6fc1-4bbb-ba79-fceed24cef85",
+      "createdAt": "2026-09-06T16:29:08.713Z",
+      "issueState": "Backlog",
+      "title": "[KP-080] Утвердить каналы и реквизиты лидов",
+      "issueUrl": "https://linear.app/ai-class/issue/KIBER-57/kp-080-utverdit-kanaly-i-rekvizity-lidov"
+    },
+    "KIBER-58": {
+      "success": true,
+      "url": "https://linear.app/ai-class/issue/KIBER-58/kp-083-nastroit-telegram-amocrm-i-rezervnyj-kanalochered#comment-edfae53d",
+      "id": "edfae53d-35a6-4fe8-97e8-d24ce20c9211",
+      "createdAt": "2026-09-06T16:29:09.892Z",
+      "issueState": "Backlog",
+      "title": "[KP-083] Настроить Telegram + amoCRM и резервный канал/очередь",
+      "issueUrl": "https://linear.app/ai-class/issue/KIBER-58/kp-083-nastroit-telegram-amocrm-i-rezervnyj-kanalochered"
+    },
+    "KIBER-68": {
+      "success": true,
+      "url": "https://linear.app/ai-class/issue/KIBER-68/kp-104-sdelat-finalnyj-backup-tilda-sitemap-i-production-data#comment-e8c6c53f",
+      "id": "e8c6c53f-3240-44bc-9bf5-a9007225971f",
+      "createdAt": "2026-09-06T16:29:11.205Z",
+      "issueState": "Backlog",
+      "title": "[KP-104] Сделать финальный backup Tilda, sitemap и production data",
+      "issueUrl": "https://linear.app/ai-class/issue/KIBER-68/kp-104-sdelat-finalnyj-backup-tilda-sitemap-i-production-data"
+    }
+  },
+  "mutations": "comments_only_no_status_priority_changes"
+}
