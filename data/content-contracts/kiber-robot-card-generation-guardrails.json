@@ -47,7 +47,8 @@
     "legacyTildaHero": "archive/provenance only; previewUseAllowed=false for runtime galleries",
     "galleries": "upper/lower non-hero source gallery photos split by sourceGalleryBlock",
     "galleryLayout": "one common height, intrinsic proportional width, no square aspect-ratio, no crop by default",
-    "capabilities": "data/models/robot-capability-images.source.json only"
+    "capabilities": "data/models/robot-capability-images.source.json only",
+    "batchGalleryRuntimeRequired": "For every generated robot-card batch, convert/wire sourceGalleryBlock gallery assets into public preview runtime assets; do not let preview fallback pass with only /images/kiber-45/<slug>.webp or catalog_card/current_generated_hero images."
   },
   "seoAiRules": {
     "seoIntentRequired": true,
@@ -78,7 +79,8 @@
     "mobile aspect-ratio 1/1 reintroduced",
     "capability images pulled from gallery",
     "visible service/research labels leaked into preview",
-    "seoIntent incomplete"
+    "seoIntent incomplete",
+    "batch robot-card galleries shipped with only square catalog hero/fallback because source gallery assets were not converted/wired into preview runtime"
   ],
   "safetyBoundaries": {
     "productionDeployAllowed": false,

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-09-07",
+  "rootCause": "Batch 1 preview mapping fell back to reduced robots.generated.json assets. The fallback starts with /images/kiber-45/<slug>.webp, so pages showed only the square catalog/Hero card when source gallery images had not been converted into public preview assets.",
+  "fix": "Converted approved media-rights source-gallery images from site-export to public/images/kiber-94-preview/batch1-humanoids and wired explicit per-slug galleries; component now splits curated galleries as upper slice(1,6) and lower slice(6,11) with no overlap.",
+  "cssChecks": {
+    "figureWidthFitContent": true,
+    "figureHeightVar": true,
+    "imgWidthAuto": true,
+    "imgHeight100": true,
+    "objectFitContain": true,
+    "noGalleryObjectFitCover": true,
+    "noGallerySquareAspect": true
+  },
+  "results": [
+    {
+      "slug": "arenda-agibot-x2",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 3,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6665-6366-4537-a464-653439383238__09.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6437-3735-4235-a161-656439643739__02.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3063-6333-4161-b064-343764636537__011.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6238-6339-4439-b061-313961333062__04.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3730-3866-4365-b461-336133633866__01.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6561-6236-4831-a663-663263643764__07.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6664-3537-4635-a266-633164383463__05.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 3,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3965-3331-4665-b330-623534633536__04.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3335-3863-4438-b032-663231346639__01.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6631-3463-4837-b233-303232393430__08.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6265-6262-4137-a166-336266316631__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3036-3735-4763-b764-613239623964__02.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3236-3461-4431-b233-623937366430__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3664-6436-4461-b166-303266313631__010.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6361-6334-4263-b464-663235336535__03.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 3,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-6138-4933-b832-633633326535__05.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6136-3331-4366-b934-653538306539__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3762-6238-4662-b332-366430336433__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6536-3766-4034-a538-626532663162__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3062-3332-4361-b232-613130313861__03.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3937-3061-4237-a338-346232613765__04.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-3730-4138-a238-373063623031__01.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 1,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6263-3431-4436-b463-366666346362__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3634-6665-4631-b530-653838623332__07.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3465-6438-4039-a362-363565353563__04.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3132-6631-4237-a432-326664313536__02.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6665-6262-4230-b331-653935303135__01.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 4,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6138-3464-4439-a336-323663313833__07.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6630-3139-4562-b532-363137613763__08.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3765-3435-4633-b862-323837616537__05.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3231-3464-4138-b632-653036383765__06.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3165-6261-4366-b538-336262343464__04.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3134-6537-4237-b337-396630643233__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3734-3332-4338-b166-383336376131__010.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6436-3932-4231-b931-653434363937__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3735-6536-4366-b133-363031306330__011.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 4,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6631-3064-4130-b065-386464393630__06.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6232-3966-4565-a364-376230343535__011.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3766-6366-4261-b161-313637633031__04.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3038-3330-4135-a132-316462346334__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3434-3862-4665-b832-643034303733__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3764-3566-4436-b462-636632653738__05.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6464-3364-4466-b331-613636656637__012.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3538-3231-4930-a234-613065646461__03.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6666-6639-4363-b535-636638386662__08.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "primaryGalleryCount": 5,
+      "actionGalleryCount": 5,
+      "gallerySrcs": [
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild6362-3431-4465-b132-356532616262__07.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3463-3739-4766-b036-376366613534__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3536-3736-4337-b632-643630306235__01.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3839-6235-4164-a665-346361626166__noroot.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild6637-3136-4133-b838-616337386661__011.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3530-3730-4030-b432-386539343765__02.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3235-3966-4364-b635-306562343464__013.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3031-3435-4261-b363-393361623934__05.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild6535-6131-4931-b562-646633363134__03.webp",
+        "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3238-3533-4861-a431-303533306661__012.webp"
+      ],
+      "allGalleryRuntimeAssetsAreBatchPhotos": true,
+      "noCatalogHeroInGalleries": true,
+      "noLegacyHeroInGalleries": true,
+      "noOverlap": true,
+      "figcaptionCount": 0,
+      "h1Count": 1,
+      "seoIntent": true,
+      "capabilityImagesReferenced": 6
+    }
+  ],
+  "allPass": true
+}

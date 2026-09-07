@@ -25,6 +25,7 @@ Do not use `/home/alex/projects/kiber-portal` branch `hermes/kiber-42-44-price-d
 10. Tried to fix gutters with `object-fit: cover` / fixed square frames, which broke the approved gallery aspect contract.
 11. Reintroduced mobile `aspect-ratio: 1 / 1` for robot-card galleries.
 12. Risked mixing gallery photos with `Что умеет` capability images.
+13. Shipped a batch preview with only the square catalog Hero image/fallback because real source-gallery photos were not converted and wired into preview runtime.
 
 ## Correct mandatory pipeline
 
@@ -35,6 +36,7 @@ Do not use `/home/alex/projects/kiber-portal` branch `hermes/kiber-42-44-price-d
 - Hero uses only `/images/kiber-45/<slug>.webp`.
 - Legacy Tilda hero/background images are archive/provenance only and blocked from runtime robot-card galleries.
 - First gallery uses upper non-hero source gallery photos.
+- Batch generation must convert and wire source-gallery assets into public preview runtime paths before staging; a hero/catalog-only fallback is a blocker, not an acceptable preview.
 - `04 — робот в действии` uses lower non-hero source gallery photos.
 - `02 — ключевые возможности` uses only `data/models/robot-capability-images.source.json` and `/images/robot-capabilities/<slug>/...`.
 - Gallery CSS: one common height, proportional width, no forced squares, no default crop: `flex: 0 0 auto`, `width: fit-content`, `height: var(--robot-card-gallery-height)`, image `width:auto`, `height:100%`, `object-fit: contain`, `max-width:none`. Mobile must not contain `aspect-ratio: 1 / 1`.

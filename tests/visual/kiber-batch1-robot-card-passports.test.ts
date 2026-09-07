@@ -60,3 +60,27 @@ test('KIBER Batch 1 robot-card SEO passports are review-gated and exact-model sc
     assert.match(passport.seo.primaryKeyword, /(Agibot X2|Noetix Bumi|Unitree R1|Unitree H2|София|Арди|Tron)/);
   }
 });
+
+test('KIBER Batch 1 robot-card galleries use real source-gallery photos, not hero/catalog-only fallback', () => {
+  const galleryManifestPath = 'data/review/batch1-humanoids-gallery-assets.json';
+  assert.equal(existsSync(galleryManifestPath), true);
+  const galleryManifest = readJson(galleryManifestPath);
+  const dataSource = readFileSync('src/lib/kiber94-robot-template-data.ts', 'utf8');
+  const templateSource = readFileSync('src/components/templates/RobotCardTemplate.astro', 'utf8');
+  assert.match(dataSource, /const batch1ReviewGalleryBySlug/);
+  assert.ok(templateSource.includes('hasCuratedSplitGallery ? gallery.slice(1, 6)'), 'primary gallery uses curated non-hero slice');
+  assert.ok(templateSource.includes('hasCuratedSplitGallery ? gallery.slice(6, 11)'), 'action gallery uses curated non-overlapping slice');
+
+  for (const slug of slugs) {
+    const robot = galleryManifest.robots.find((item: { slug: string }) => item.slug === slug);
+    assert.ok(robot, `${slug} gallery manifest exists`);
+    assert.ok(robot.count >= 6, `${slug} has at least 6 real gallery/action photos`);
+    const sources = robot.assets.map((asset: { src: string }) => asset.src);
+    assert.ok(sources.every((src: string) => src.startsWith('/images/kiber-94-preview/batch1-humanoids/')), `${slug} uses converted preview gallery assets`);
+    assert.ok(sources.every((src: string) => !src.includes('/images/kiber-45/')), `${slug} gallery photos exclude square catalog hero assets`);
+    assert.ok(sources.every((src: string) => !src.includes('__photo')), `${slug} gallery photos exclude legacy horizontal hero assets`);
+    assert.ok(robot.assets.every((asset: { sourceRole: string }) => asset.sourceRole === 'gallery'), `${slug} uses source-gallery role only`);
+    assert.ok(robot.assets.some((asset: { aspectRatio: number }) => Math.abs(asset.aspectRatio - 1) > 0.15), `${slug} has non-square photo ratios for height-driven layout`);
+    assert.ok(robot.assets.every((asset: { webpWidth: number; webpHeight: number }) => !(asset.webpWidth === 720 && asset.webpHeight === 720)), `${slug} gallery assets are not square catalog derivatives`);
+  }
+});
