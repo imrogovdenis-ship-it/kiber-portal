@@ -75,14 +75,19 @@
       "interpretation": "Exact rental intent stays on the robot-card even if query volume is low/zero; awareness/entity totals support FAQ/model variants, not generic category primary keywords."
     },
     "serpAnalysis": {
-      "status": "needs_live_verification",
-      "evidence": "not_collected_yet",
-      "limitation": "No ranked SERP evidence is claimed until checked live; use source-of-truth facts and owner review only."
+      "status": "partial_checked",
+      "source": "direct_vendor_competitor_pages_plus_search_attempts",
+      "evidence": "data/seo/serp-research/batch2-robot-cards-20260907/batch2-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "https://www.unitree.com/g1/"
+      ],
+      "limitation": "Yandex public SERP returned captcha from server-side fetch and Bing/DDG exact-rental SERPs were noisy; direct vendor/competitor source pages were inspected, but ranked SERP remains partial."
     },
     "contentGaps": [
-      "Exact model page must own model-specific rental intent, not generic category demand.",
-      "Visible copy must explain scenarios, operator role, venue requirements, and what is included without unverifiable technical promises.",
-      "Media must come from approved source-gallery assets; capability illustrations stay in separate capability registry."
+      "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+      "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+      "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+      "Humanoid pages need safety zone, stage/floor readiness, operator-controlled scenario, and why exact G1 differs from generic humanoid demand."
     ]
   },
   "seo": {
@@ -168,10 +173,10 @@
     "readyForPublication": false,
     "readyForMassRender": false,
     "wordstatStatus": "checked_live",
-    "serpStatus": "needs_live_verification",
+    "serpStatus": "partial_checked",
     "openQuestions": [
       "Confirm final visible copy and screenshots before merge/publication.",
-      "SERP/competitor review and owner visual/content approval remain required before final publication."
+      "Ranked Yandex/Google SERP screenshots can be added later if human browser SERP access is required; owner visual/content approval remains required before merge/publication."
     ]
   }
 }

@@ -1,0 +1,26 @@
+{
+  "slug": "arenda-promobot-v4",
+  "status": "partial_checked",
+  "queriesConsidered": [
+    "аренда promobot v4",
+    "promobot v4 аренда"
+  ],
+  "inspectedPages": [
+    {
+      "url": "https://promo-bot.ru/products/promobot-v4/",
+      "status": "fetch_error",
+      "error": "The read operation timed out"
+    }
+  ],
+  "contentGaps": [
+    "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+    "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+    "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+    "Promobot V4 has low entity demand and zero exact rental demand; page should emphasize practical promo-host scenarios, screen, prepared dialogue and queue limits."
+  ],
+  "riskNotes": [
+    "Do not cite search snippets as page facts.",
+    "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+    "Owner review remains required for final public claims."
+  ]
+}

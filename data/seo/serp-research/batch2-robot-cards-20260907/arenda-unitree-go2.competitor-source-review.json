@@ -1,0 +1,32 @@
+{
+  "slug": "arenda-unitree-go2",
+  "status": "partial_checked",
+  "queriesConsidered": [
+    "аренда unitree go2",
+    "unitree go2 аренда"
+  ],
+  "inspectedPages": [
+    {
+      "url": "https://www.unitree.com/go2/",
+      "status": "fetched",
+      "httpStatus": 200,
+      "finalUrl": "https://www.unitree.com/go2/",
+      "title": "Robot Dog Go2_Quadruped_Robot Dog Company | Unitree Robotics",
+      "description": "Unitree Go2 robot dog is equipped with 4D ultra-wide-angle LiDAR, creating a new species with body intelligence, Unitree quadruped (consumer-grade quadruped) has advanced configuration and cool appearance, but also has a super interactive features, simulating the behaviour of a real pet dog, bringing users a more intimate and pleasant human-machine interaction experience.",
+      "textSample": "Robot Dog Go2_Quadruped_Robot Dog Company | Unitree Robotics Robots Robot - Consumer/Education As2 Go2 Go1 A1 Robot - Industry A2 B2 B1 AlienGo Robotic Arms Robotic Arms Perception 4D LiDAR Components Components As2 Compact Size Industrial Capability As2-W Powerful Pioneer, Compact Yet Extraordinary Human Humanoid Robot H2 R1 G1 H1 / H1-2 Application Plan H2-D R1-A / R1-A-D G1-D G1-Comp G1-Boxing Dexterous Hand Dex2/5 Dex1-1 Dex5-1 Dex3-1 H2 Destiny Awakening H2 Plus Integrated R&D and Manufacturing, Embarking on Full-Stack Development Industry Advanced Quadruped Inspection Solutions Unitree quadruped robot launched a new power intelligent inspection solution, designed a series of solutions for dangerous, urgent and repetitive tasks, and provided efficient guarantee for power system construction, operation and maintenance and other work. Fire Rescue Solutions Overcome Hazards, Protect the Ones Who March Against the Tide Unifolm OS Services Terms & Policies Download Center Resource Center Customer Service Document Center Explore News About Unitree Contact Us Investor Relations Download UniStore H2 R1 G1 H1 / H1-2 A2 / A2-W B2 / B2-W Go2 As2 Challenge UniBot World Challenge Store / Cooperate New Creature of Embodied AI Unitree Go2 Infinite Revolution Video ▶ Go2 APP Download Price from $ 1600 Continuous OTA Software Upgrade and Update Rage Mode：Unleashing the Potential of Joint Motors By fully tapping into the hardware's capabilities, it achieves faster speed, more responsive steering, and stable, agile movement across complex terrains like gravel and slopes. Standard Ultra-wide 4D LiDAR upgrades Recognition system by 200%. Go2 features with Unitree's self-developed 4D LiDAR L2 with 360°x96°hemispherical ultra-wide recognition, super small blind spot and a minimum detection distance as low as 0.05m, which makes Go2 realise all-terrain recognizing. Embodied Intelligence: AI+Robot empowers the new intelligent creature to better understand the world and make decisions Note: Use varies by country or region, please refer to the actual situation. Hangzhou Asian Games \"robot dog superstar\" At the 19th Asian Games in Hangzhou, a robot dog transported discus and javelin on",
+      "hasRentalLanguage": true,
+      "hasPriceLanguage": true
+    }
+  ],
+  "contentGaps": [
+    "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+    "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+    "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+    "Robot dog pages need tricks/photo-zone/event-safety framing and distinguish Go2 from generic robot-dog queries."
+  ],
+  "riskNotes": [
+    "Do not cite search snippets as page facts.",
+    "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+    "Owner review remains required for final public claims."
+  ]
+}

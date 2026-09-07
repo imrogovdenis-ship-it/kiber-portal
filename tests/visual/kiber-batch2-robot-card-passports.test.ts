@@ -35,7 +35,7 @@ test('KIBER Batch 2 robot-card SEO passports are exact-model scoped and review-g
     assert.equal(passport.pageType, 'robot_card');
     assert.equal(passport.slug, slug);
     assert.match(passport.research.wordstatAnalysis.status, /^(checked_live|needs_live_verification)$/);
-    assert.equal(passport.research.serpAnalysis.status, 'needs_live_verification');
+    assert.match(passport.research.serpAnalysis.status, /^(needs_live_verification|partial_checked|checked_live)$/);
     assert.equal(passport.seoIntent.pageIntent, 'commercial_robot_rental');
     assert.equal(passport.seoIntent.isCrawlerOnlyText, false);
     assert.equal(passport.review.ownerReviewRequired, true);
