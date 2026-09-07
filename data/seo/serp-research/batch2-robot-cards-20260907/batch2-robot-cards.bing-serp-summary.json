@@ -1,0 +1,1082 @@
+{
+  "schemaVersion": 1,
+  "source": "bing_search_plus_page_fetch",
+  "regionLanguage": "ru",
+  "collectedAt": "2026-09-07T18:25:00Z",
+  "robots": [
+    {
+      "slug": "arenda-unitree-g1",
+      "queries": [
+        {
+          "query": "аренда Unitree G1",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Unitree%20G1&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Сдать квартиру в аренду на длительный срок проверенным …",
+              "url": "https://www.bing.com/ck/a?!&&p=de1c9d07f69f675873fd7581f0f7ef6bd19ad3d5867d3f9e7248d77c4626c2c3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Снять квартиру в Балыкчы – объявления на Хаусе.",
+              "url": "https://www.bing.com/ck/a?!&&p=9f90c799fdb8e9f704cdbc8dab2ba817e484032b33612988c5e040bd981af17dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Недвижимость: Балыкчи ᐈ Продажа и Аренда Недвижимости 455 …",
+              "url": "https://www.bing.com/ck/a?!&&p=7125908b36c3f5feaf9d51c06d9c5f7c1e21e31c9efc44a7653949f85e2598c0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Аренда недвижимости в Балыкчы : бесплатные объявления об …",
+              "url": "https://www.bing.com/ck/a?!&&p=e22d141b2102626d76a1d908bc08f48ebdf13073b31c94c308d7e898330cebbdJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Продажа, аренда квартир и домов в Бишкеке",
+              "url": "https://www.bing.com/ck/a?!&&p=7cbd660e4ba8f22f4214a77a14c624bcca144c16de6a37596a80649306757b62JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9tMi5rZy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Аренда недвижимости в Балыкчы : Квартиры, дома, участки",
+              "url": "https://www.bing.com/ck/a?!&&p=84bb018efb5314cedb2c7aaf9568ca18f9e27e0f613b2a02c506846cd04622d8JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9ob21lbGxlci5jb20vYmFseWlrY2h5aS9mb3ItcmVudC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Сдача квартиры в аренду в Балыкчах. Снять квартиру в Балыкчах ...",
+              "url": "https://www.bing.com/ck/a?!&&p=224c478fa73a3e55553f0292952251b5c205f6167effad5112cf11c8bd09aaafJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9zYWxleHkua2cvYmFseWtjaHkvbmVkdml6aGltb3N0L2t2YXJ0aXJ5aS9zZGFt&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Иссык-Куль: аренда квартир | Airbnb",
+              "url": "https://www.bing.com/ck/a?!&&p=12ec38b67aac8f4fde03bc328118b08d2809074c870fa7f783f9a8180675c24fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuYWlyYm5iLnJ1L2lzc3lrLWt1bC1reXJneXpzdGFuL3N0YXlzL2FwYXJ0bWVudHM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Снять квартиру во всех регионах | Цены на аренду квартир во …",
+              "url": "https://www.bing.com/ck/a?!&&p=1234ce1c095a1a9beec3f193d3472e29beb3ef577226927d7ea7e0a5dc0a6da0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuYXZpdG8ucnUvYWxsL2t2YXJ0aXJ5L3NkYW0tQVNnQkFnSUNBVVNTQThnUQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Циан - база недвижимости в Москве и по всей РФ | Продажа, аренда ...",
+              "url": "https://www.bing.com/ck/a?!&&p=3eaae00b434b735d652833b0788d91d8fb8887207bda5dd9009a75c18d2ae30aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuY2lhbi5ydS8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        },
+        {
+          "query": "Unitree G1 аренда",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=Unitree%20G1%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=27d8f0bbfaa14b01b137551e194747de645f1af6d17f7e1d253a535a3f55ae2eJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9Ub3BpYy9zaG93VG9waWNMaXN0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=4a6af30ef7a6681ac029c6b57c57a2c292182baeef686beb35902e470ccf6f06JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3ZpZXdBcnRpY2xlP2E9MTcxNDU4ODc0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Volánbusz - BAZ-vármegye - járműkiadás - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=a5d1646622125aa7358a54065c8032c185ad54d70805f175de4dad20695682eaJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP2dvPTE2NzE1Mjk5NyZwPTEmdD05MjM5NTYw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "FTC Női Kézilabda - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=82f5367a835027a75faa9460019cb896c5b357c7896da5db803d3d4b6fa77ca5JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP3Q9OTA1Nzc2MA&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Amatőr fotók - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=7326fafddfef288f88f72bf1cb75deb11258320614f954ab58765931716dba6dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP3Q9OTExOTA0Ng&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Cseresznyefa-kedvelőknek - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=3090190f730dab8d4d483c740e30df7c99e4793b4f6dc9611d56a508a5c8a3d8JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP25hX3N0YXJ0PTIwMDAmbmFfc3RlcD01MDAmdD05MjA2NjE3&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Drukkerkocsma - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=93ae2749d4aaec70775d4c9ff046d703f50c1424833cf2db76696ff20e0f1a9cJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9Ub3BpYy9zaG93VG9waWNMaXN0P3Q9MzM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "MIKA 6 mini kazán - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=9408cd589887eaed4023f4b489342e442a0fe5fc6bd518ad4e3cdc4a727a5f9fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP3Q9OTIyMDQ3Nw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "LÉGFEGYVERES Adás-Vétel-Keresés - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=11bf4739b3313b54130622553e9653bc0e5c15927feb0e713eb7248b67c90b69JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP3Q9OTIyMTAxMQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "50 felett, mégis fiatalon - Index Fórum",
+              "url": "https://www.bing.com/ck/a?!&&p=37df4f371ff532d2004f8233dcfff19761f15898f9dc2aa2a497cd8171676c2fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=275c7683-6698-6560-3bd5-614e678f6481&u=a1aHR0cHM6Ly9mb3J1bS5pbmRleC5odS9BcnRpY2xlL3Nob3dBcnRpY2xlP3Q9OTAzMTY2OQ&ntb=1",
+              "snippet": ""
+            }
+          ]
+        }
+      ],
+      "inspectedCompetitorPages": [
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=de1c9d07f69f675873fd7581f0f7ef6bd19ad3d5867d3f9e7248d77c4626c2c3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=de1c9d07f69f675873fd7581f0f7ef6bd19ad3d5867d3f9e7248d77c4626c2c3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=9f90c799fdb8e9f704cdbc8dab2ba817e484032b33612988c5e040bd981af17dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=9f90c799fdb8e9f704cdbc8dab2ba817e484032b33612988c5e040bd981af17dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=7125908b36c3f5feaf9d51c06d9c5f7c1e21e31c9efc44a7653949f85e2598c0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=7125908b36c3f5feaf9d51c06d9c5f7c1e21e31c9efc44a7653949f85e2598c0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=e22d141b2102626d76a1d908bc08f48ebdf13073b31c94c308d7e898330cebbdJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=e22d141b2102626d76a1d908bc08f48ebdf13073b31c94c308d7e898330cebbdJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=2180e42e-d98a-6229-1d1e-f3e3d81b63db&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-bellabot",
+      "queries": [
+        {
+          "query": "аренда BellaBot",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20BellaBot&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Сдать квартиру в аренду на длительный срок проверенным …",
+              "url": "https://www.bing.com/ck/a?!&&p=15ac2fb98ed0a33d05ddb51985f32a303342ea38fc7ef59a3d9a0c74bb9a5db0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Снять квартиру в Балыкчы – объявления на Хаусе.",
+              "url": "https://www.bing.com/ck/a?!&&p=e3bcc273b965eb86027bc8a984a55d3de58cc244631d9e7cc276ee459841d695JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Недвижимость: Балыкчи ᐈ Продажа и Аренда Недвижимости 455 …",
+              "url": "https://www.bing.com/ck/a?!&&p=15fc67f1248bdb750deb60c629906c4664f9ac5d46fe2c136fb70ca8c643ba9aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Аренда недвижимости в Балыкчы : бесплатные объявления об …",
+              "url": "https://www.bing.com/ck/a?!&&p=56f84ae406c4c0fa285f9690cca8ba305795d6440d2ed18a4d21b405b4530b8fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Продажа, аренда квартир и домов в Бишкеке",
+              "url": "https://www.bing.com/ck/a?!&&p=76d23bc514adad1e31538d6860cc12c67b03647159f0d2932b4575e88da8462bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9tMi5rZy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Аренда недвижимости в Балыкчы : Квартиры, дома, участки",
+              "url": "https://www.bing.com/ck/a?!&&p=0faf349b227d3e14bb6494dc01b98a59582bb270b27a1610661a0d552c976129JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9ob21lbGxlci5jb20vYmFseWlrY2h5aS9mb3ItcmVudC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Сдача квартиры в аренду в Балыкчах. Снять квартиру в Балыкчах ...",
+              "url": "https://www.bing.com/ck/a?!&&p=b48c3726ed973632f81c63f7eb5b9bfca7cedd2c4fc345e6b8043f8719390251JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9zYWxleHkua2cvYmFseWtjaHkvbmVkdml6aGltb3N0L2t2YXJ0aXJ5aS9zZGFt&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Иссык-Куль: аренда квартир | Airbnb",
+              "url": "https://www.bing.com/ck/a?!&&p=51298f427c211d01df30b5002b95c746bdcb9d243f3730f516617430bd7bf50aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuYWlyYm5iLnJ1L2lzc3lrLWt1bC1reXJneXpzdGFuL3N0YXlzL2FwYXJ0bWVudHM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Снять квартиру во всех регионах | Цены на аренду квартир во …",
+              "url": "https://www.bing.com/ck/a?!&&p=84347a2ba51b1c18bbf8d5da8d210a2082baf71f76342272580c13d802b44ce7JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuYXZpdG8ucnUvYWxsL2t2YXJ0aXJ5L3NkYW0tQVNnQkFnSUNBVVNTQThnUQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Циан - база недвижимости в Москве и по всей РФ | Продажа, аренда ...",
+              "url": "https://www.bing.com/ck/a?!&&p=239101d8da7a57b36d2be40a7eb5e9769660568462a2c14368d407294bf6ea83JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuY2lhbi5ydS8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        },
+        {
+          "query": "робот официант BellaBot",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%20BellaBot&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Робот — Википедия",
+              "url": "https://www.bing.com/ck/a?!&&p=1a90523c8e3dbc590573589bf706dc74b1a3029a34522cbb82787726c09ffd0aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEwJUQwJUJFJUQwJUIxJUQwJUJFJUQxJTgy&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Robot - Wikipedia",
+              "url": "https://www.bing.com/ck/a?!&&p=d121f3df73ea43f1d28dc4d56c37143cfa6b0855706b9ae7daa942ba6a017d0bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUm9ib3Q&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Что такое робот : история, сферы применения, виды",
+              "url": "https://www.bing.com/ck/a?!&&p=429f4b07985f661df7c3cc466c5c74dd86e5ef245e7451954632e4f799629817JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9yb2JvcnQucnUvYXJ0aWNsZXMvYmxvZy9jaHRvLXRha29lLXJvYm90Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Дикий робот (мультфильм, 2024) - Rutube",
+              "url": "https://www.bing.com/ck/a?!&&p=1f49519cadaa9d423959f6991d6ae3d372037c68499ea6ffc01842186aff2204JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vOGE2ZmZlMmU2YzFkNzdlZTQ1N2Y5NGQ4MDNhZjM1ZGEv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Робот : что такое, как работает, виды и применение",
+              "url": "https://www.bing.com/ck/a?!&&p=d17859ca33b563e89231c5455a3a58056e797691507de476e7b00cb3c85d9e83JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9za3llbmcucnUvbWFnYXppbmUvd2lraS9pdC1pbmR1c3RyaXlhL2NodG8tdGFrb2Utcm9ib3Qv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Что такое робот ? Какие виды бывают и где применяются",
+              "url": "https://www.bing.com/ck/a?!&&p=1089a522ebc4184ffe24450582bd7f82da952d1fb46a52e1d1ef2bc3025da37dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9kaWdpdGFsb2NlYW4ucnUvbi9jaHRvLXRha29lLXJvYm90&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Робототехника — Википедия",
+              "url": "https://www.bing.com/ck/a?!&&p=a1a75ff7d1f344f67c82820303b74dd08e9ece0d888fa4f53ce794851f565924JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEwJUQwJUJFJUQwJUIxJUQwJUJFJUQxJTgyJUQwJUJFJUQxJTgyJUQwJUI1JUQxJTg1JUQwJUJEJUQwJUI4JUQwJUJBJUQwJUIw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Я, робот (фильм, 2004) - Rutube",
+              "url": "https://www.bing.com/ck/a?!&&p=7ff78cd7d00176f6d09dc1a78ce0c61d4470bf5bb8d4cfa5d721d2daed46187eJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vZjkwZWJjMDAwMTdiMmNkZTgwNTdlNGUyZTJmOWRmZjgv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Подробный разбор, что такое робот , чем он отличается от …",
+              "url": "https://www.bing.com/ck/a?!&&p=7c61aac312c7c47762bc7d523a16244b0688b1ed39d1a679a40a29222882f948JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9uZXVyb3RvZGF5LnJ1L2pvdXJuYWwvY2h0by10YWtvZS1yb2JvdC1wb2xueXktZ2lk&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Что такое робот ? | Robosobaka",
+              "url": "https://www.bing.com/ck/a?!&&p=c95942c1eeb0de9501660ca5ab90d8f67187df921718a96283d5a9e9ebeed644JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=02e721eb-889d-6b13-3a80-362689946a35&u=a1aHR0cHM6Ly9yb2Jvc29iYWthLnJ1L2V4cGVydGlzZS9hcnRpY2xlcy9jaHRvLXRha29lLXJvYm90Lw&ntb=1",
+              "snippet": ""
+            }
+          ]
+        }
+      ],
+      "inspectedCompetitorPages": [
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=15ac2fb98ed0a33d05ddb51985f32a303342ea38fc7ef59a3d9a0c74bb9a5db0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=15ac2fb98ed0a33d05ddb51985f32a303342ea38fc7ef59a3d9a0c74bb9a5db0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=e3bcc273b965eb86027bc8a984a55d3de58cc244631d9e7cc276ee459841d695JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=e3bcc273b965eb86027bc8a984a55d3de58cc244631d9e7cc276ee459841d695JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=15fc67f1248bdb750deb60c629906c4664f9ac5d46fe2c136fb70ca8c643ba9aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=15fc67f1248bdb750deb60c629906c4664f9ac5d46fe2c136fb70ca8c643ba9aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=56f84ae406c4c0fa285f9690cca8ba305795d6440d2ed18a4d21b405b4530b8fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=56f84ae406c4c0fa285f9690cca8ba305795d6440d2ed18a4d21b405b4530b8fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=04865ae7-66fc-649f-3231-4d2a678965e7&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-kettybot",
+      "queries": [
+        {
+          "query": "аренда KettyBot",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20KettyBot&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Сдать квартиру в аренду на длительный срок проверенным …",
+              "url": "https://www.bing.com/ck/a?!&&p=79b792a79c6623903f4e9a9ccdd7f014ad983a6e1db488f88fdc8886ac580146JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Снять квартиру в Балыкчы – объявления на Хаусе.",
+              "url": "https://www.bing.com/ck/a?!&&p=b87512e0e298b49865ed5ad2606b955ff1e7d64c348a5b0908863e35c7bab64fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Недвижимость: Балыкчи ᐈ Продажа и Аренда Недвижимости 455 …",
+              "url": "https://www.bing.com/ck/a?!&&p=52bba0a7451abfca155e9bac752e6bed0a8c1780c6c8b77748e2116e0b786630JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Аренда недвижимости в Балыкчы : бесплатные объявления об …",
+              "url": "https://www.bing.com/ck/a?!&&p=0ef190f53dc136ffcebc77877b8fe811dd5abb84a7e48d17b462b1ad8b4d10e8JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Продажа, аренда квартир и домов в Бишкеке",
+              "url": "https://www.bing.com/ck/a?!&&p=04fb3c405ca4c196c3638fbdc8786a9875c03a878190ffc2edc1f367cf5f857bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9tMi5rZy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Аренда недвижимости в Балыкчы : Квартиры, дома, участки",
+              "url": "https://www.bing.com/ck/a?!&&p=10987604d04a28df288ae213cca11bf20639a41542b8b545a20fd3d80006b3daJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9ob21lbGxlci5jb20vYmFseWlrY2h5aS9mb3ItcmVudC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Сдача квартиры в аренду в Балыкчах. Снять квартиру в Балыкчах ...",
+              "url": "https://www.bing.com/ck/a?!&&p=ad91d7c8dc11d84b0d017414093c13e2db8bca44f45819b36d564bb417ab194dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9zYWxleHkua2cvYmFseWtjaHkvbmVkdml6aGltb3N0L2t2YXJ0aXJ5aS9zZGFt&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Иссык-Куль: аренда квартир | Airbnb",
+              "url": "https://www.bing.com/ck/a?!&&p=48c0c8f5f887b21ffb8e5feb20b86a80f95e287f9525c0ce8a790b344b923d76JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuYWlyYm5iLnJ1L2lzc3lrLWt1bC1reXJneXpzdGFuL3N0YXlzL2FwYXJ0bWVudHM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Снять квартиру во всех регионах | Цены на аренду квартир во …",
+              "url": "https://www.bing.com/ck/a?!&&p=c6f4a17051b1b0726131d3a898287ce6649a51b65868ec870b598cbac8fee32aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuYXZpdG8ucnUvYWxsL2t2YXJ0aXJ5L3NkYW0tQVNnQkFnSUNBVVNTQThnUQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Циан - база недвижимости в Москве и по всей РФ | Продажа, аренда ...",
+              "url": "https://www.bing.com/ck/a?!&&p=fbd69a1bd7bfd4bfcc4c73306f58de8667ef4bb0ba1258d17d8ea74bbd0f8feaJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuY2lhbi5ydS8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        },
+        {
+          "query": "робот официант KettyBot",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%20KettyBot&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Робот — Википедия",
+              "url": "https://www.bing.com/ck/a?!&&p=b026a275c25f1a9b3aad110551f900e886d92b934dbbc1cb6513a80d20047586JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEwJUQwJUJFJUQwJUIxJUQwJUJFJUQxJTgy&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Robot - Wikipedia",
+              "url": "https://www.bing.com/ck/a?!&&p=4d6c8035e5f33e23dba34ebc621f8b8ce437bc6958eed455a5be3aae326df085JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUm9ib3Q&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Что такое робот : история, сферы применения, виды",
+              "url": "https://www.bing.com/ck/a?!&&p=c07511f6d413cc581d8cfd7a9a4507f532501bdb2ed133c7ed375781c40bc123JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9yb2JvcnQucnUvYXJ0aWNsZXMvYmxvZy9jaHRvLXRha29lLXJvYm90Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Дикий робот (мультфильм, 2024) - Rutube",
+              "url": "https://www.bing.com/ck/a?!&&p=19a1a5b5be760ed22c6435a3aae813c9014a115f3f01345e23547204f1eb1dc4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vOGE2ZmZlMmU2YzFkNzdlZTQ1N2Y5NGQ4MDNhZjM1ZGEv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Робот : что такое, как работает, виды и применение",
+              "url": "https://www.bing.com/ck/a?!&&p=fd4da592e194cc9bfcde21c3e9dc12c4ac0501ea26880c3853b44a8fc75b2708JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9za3llbmcucnUvbWFnYXppbmUvd2lraS9pdC1pbmR1c3RyaXlhL2NodG8tdGFrb2Utcm9ib3Qv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Что такое робот ? Какие виды бывают и где применяются",
+              "url": "https://www.bing.com/ck/a?!&&p=4a5676a21718fa4c0c23a709dae358d31f4f89205bdc260c9d9b66aa41766457JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9kaWdpdGFsb2NlYW4ucnUvbi9jaHRvLXRha29lLXJvYm90&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Робототехника — Википедия",
+              "url": "https://www.bing.com/ck/a?!&&p=e696e99441892582b21124e584676864e9eae450558016160272ea3a36689821JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEwJUQwJUJFJUQwJUIxJUQwJUJFJUQxJTgyJUQwJUJFJUQxJTgyJUQwJUI1JUQxJTg1JUQwJUJEJUQwJUI4JUQwJUJBJUQwJUIw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Я, робот (фильм, 2004) - Rutube",
+              "url": "https://www.bing.com/ck/a?!&&p=28c185a539a435c74aa5f63eca6d6daef2170c586b4d23aaa1c310c82e045a13JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vZjkwZWJjMDAwMTdiMmNkZTgwNTdlNGUyZTJmOWRmZjgv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Подробный разбор, что такое робот , чем он отличается от …",
+              "url": "https://www.bing.com/ck/a?!&&p=403b79fc3c5b51292077ad11c25f636bd934562e0ec1ca3fdcc9cbb7bd1e1c3aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9uZXVyb3RvZGF5LnJ1L2pvdXJuYWwvY2h0by10YWtvZS1yb2JvdC1wb2xueXktZ2lk&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Что такое робот ? | Robosobaka",
+              "url": "https://www.bing.com/ck/a?!&&p=6f4b5d9650c070a59fb067a71415a13b73a1b40f655870da47622c4d1f712917JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3c888d5c-e371-60b9-1a5e-9a91e2fc6130&u=a1aHR0cHM6Ly9yb2Jvc29iYWthLnJ1L2V4cGVydGlzZS9hcnRpY2xlcy9jaHRvLXRha29lLXJvYm90Lw&ntb=1",
+              "snippet": ""
+            }
+          ]
+        }
+      ],
+      "inspectedCompetitorPages": [
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=79b792a79c6623903f4e9a9ccdd7f014ad983a6e1db488f88fdc8886ac580146JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=79b792a79c6623903f4e9a9ccdd7f014ad983a6e1db488f88fdc8886ac580146JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=b87512e0e298b49865ed5ad2606b955ff1e7d64c348a5b0908863e35c7bab64fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=b87512e0e298b49865ed5ad2606b955ff1e7d64c348a5b0908863e35c7bab64fJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=52bba0a7451abfca155e9bac752e6bed0a8c1780c6c8b77748e2116e0b786630JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=52bba0a7451abfca155e9bac752e6bed0a8c1780c6c8b77748e2116e0b786630JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=0ef190f53dc136ffcebc77877b8fe811dd5abb84a7e48d17b462b1ad8b4d10e8JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=0ef190f53dc136ffcebc77877b8fe811dd5abb84a7e48d17b462b1ad8b4d10e8JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=0d5a9d77-2d68-628e-1340-8aba2c696391&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "queries": [
+        {
+          "query": "аренда Unitree Go2",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Unitree%20Go2&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Сдать квартиру в аренду на длительный срок проверенным …",
+              "url": "https://www.bing.com/ck/a?!&&p=9f1d85e715098dca44ed98fb45ff993dd79c5a166337dc01d9ef496c69af6b35JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Снять квартиру в Балыкчы – объявления на Хаусе.",
+              "url": "https://www.bing.com/ck/a?!&&p=98cff07c420ef898c0b88153cdb8f506188cf1dd37cca85cab787d6715de521cJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Недвижимость: Балыкчи ᐈ Продажа и Аренда Недвижимости 455 …",
+              "url": "https://www.bing.com/ck/a?!&&p=5f879ec2082876fc605323f5b04257762234c49f61c09f447b61a9b6524c97c4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Аренда недвижимости в Балыкчы : бесплатные объявления об …",
+              "url": "https://www.bing.com/ck/a?!&&p=acb776e72ca88a492fde753cd43ef6379710f256e951c03b1a3e81885decbf6aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Продажа, аренда квартир и домов в Бишкеке",
+              "url": "https://www.bing.com/ck/a?!&&p=9ed2e057360213e1430d5960c5f4d302af2a0260962f5a4423d68c615ffe3958JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9tMi5rZy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Аренда недвижимости в Балыкчы : Квартиры, дома, участки",
+              "url": "https://www.bing.com/ck/a?!&&p=dc997af07969aca4088a8e01dcbe1dbc6dd7f5a20ad111801f6255a70ae9b172JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9ob21lbGxlci5jb20vYmFseWlrY2h5aS9mb3ItcmVudC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Сдача квартиры в аренду в Балыкчах. Снять квартиру в Балыкчах ...",
+              "url": "https://www.bing.com/ck/a?!&&p=07edb776ef0718a3f5511915265be63815c717ce85779cfe0879430b92e590a4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9zYWxleHkua2cvYmFseWtjaHkvbmVkdml6aGltb3N0L2t2YXJ0aXJ5aS9zZGFt&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Иссык-Куль: аренда квартир | Airbnb",
+              "url": "https://www.bing.com/ck/a?!&&p=679c45bcd497d2f1edad45077e40e908bd1af836638915168381f66b84ab9a60JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuYWlyYm5iLnJ1L2lzc3lrLWt1bC1reXJneXpzdGFuL3N0YXlzL2FwYXJ0bWVudHM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Снять квартиру во всех регионах | Цены на аренду квартир во …",
+              "url": "https://www.bing.com/ck/a?!&&p=aebd17e8c8f9c6913a465a25366e24c63d73de61b45b00be0af996822077bf27JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuYXZpdG8ucnUvYWxsL2t2YXJ0aXJ5L3NkYW0tQVNnQkFnSUNBVVNTQThnUQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Циан - база недвижимости в Москве и по всей РФ | Продажа, аренда ...",
+              "url": "https://www.bing.com/ck/a?!&&p=1469d7ee02aa4a0dec1f8bd808e22216dc1eff65406e44740e69cdbe31f3faa3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuY2lhbi5ydS8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        },
+        {
+          "query": "робот собака Unitree Go2",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D0%B0%20Unitree%20Go2&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Робот — Википедия",
+              "url": "https://www.bing.com/ck/a?!&&p=be466f0eb40bc44e87f703deb88f5f226c543525a54f4f702bedcf969e94d787JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEwJUQwJUJFJUQwJUIxJUQwJUJFJUQxJTgy&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Robot - Wikipedia",
+              "url": "https://www.bing.com/ck/a?!&&p=234fab34898b0df200c365aa9654173ceef01edf84e5396c4f727a4d0114f8edJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUm9ib3Q&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Что такое робот : история, сферы применения, виды",
+              "url": "https://www.bing.com/ck/a?!&&p=819c65ff1cac80a936a3d0b5ce42857b6f9f7149995aa0f1ab8bd33ee773bb4cJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9yb2JvcnQucnUvYXJ0aWNsZXMvYmxvZy9jaHRvLXRha29lLXJvYm90Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Дикий робот (мультфильм, 2024) - Rutube",
+              "url": "https://www.bing.com/ck/a?!&&p=d6b594f2831e741ee0f87c3020d2270eabd722cc1b76b174ad0939b439206b15JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vOGE2ZmZlMmU2YzFkNzdlZTQ1N2Y5NGQ4MDNhZjM1ZGEv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Робот : что такое, как работает, виды и применение",
+              "url": "https://www.bing.com/ck/a?!&&p=f7d6c80e5702270c2b6737872d4654ad1aff098c0a5b3187d8de350df698c610JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9za3llbmcucnUvbWFnYXppbmUvd2lraS9pdC1pbmR1c3RyaXlhL2NodG8tdGFrb2Utcm9ib3Qv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Что такое робот ? Какие виды бывают и где применяются",
+              "url": "https://www.bing.com/ck/a?!&&p=777c19af18448793782fd1e5a84cf53585b208a59c97577b5ee456798563d7baJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9kaWdpdGFsb2NlYW4ucnUvbi9jaHRvLXRha29lLXJvYm90&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Робототехника — Википедия",
+              "url": "https://www.bing.com/ck/a?!&&p=07d9ad18ccdefa23f7078c38b3ca95013731ff930867a1c9f2627079d4d093c9JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9ydS53aWtpcGVkaWEub3JnL3dpa2kvJUQwJUEwJUQwJUJFJUQwJUIxJUQwJUJFJUQxJTgyJUQwJUJFJUQxJTgyJUQwJUI1JUQxJTg1JUQwJUJEJUQwJUI4JUQwJUJBJUQwJUIw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Я, робот (фильм, 2004) - Rutube",
+              "url": "https://www.bing.com/ck/a?!&&p=72b68bd06b2de51c881831b3dc38a2a7890019e2e02dac9ad3fcf9ee77ab0a58JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9ydXR1YmUucnUvdmlkZW8vZjkwZWJjMDAwMTdiMmNkZTgwNTdlNGUyZTJmOWRmZjgv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Подробный разбор, что такое робот , чем он отличается от …",
+              "url": "https://www.bing.com/ck/a?!&&p=52f0790f342f74d1764ab8ebe5346e19b4009ea847c3703de198894f4cea5fd7JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9uZXVyb3RvZGF5LnJ1L2pvdXJuYWwvY2h0by10YWtvZS1yb2JvdC1wb2xueXktZ2lk&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Что такое робот ? | Robosobaka",
+              "url": "https://www.bing.com/ck/a?!&&p=bb5d366e9ec8b4965e30d0f7660550d16ba496894ded6bba6283a6d1611c738dJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3a3aa1d9-2d20-6746-3d1b-b6142c72660e&u=a1aHR0cHM6Ly9yb2Jvc29iYWthLnJ1L2V4cGVydGlzZS9hcnRpY2xlcy9jaHRvLXRha29lLXJvYm90Lw&ntb=1",
+              "snippet": ""
+            }
+          ]
+        }
+      ],
+      "inspectedCompetitorPages": [
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=9f1d85e715098dca44ed98fb45ff993dd79c5a166337dc01d9ef496c69af6b35JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=9f1d85e715098dca44ed98fb45ff993dd79c5a166337dc01d9ef496c69af6b35JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=98cff07c420ef898c0b88153cdb8f506188cf1dd37cca85cab787d6715de521cJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=98cff07c420ef898c0b88153cdb8f506188cf1dd37cca85cab787d6715de521cJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=5f879ec2082876fc605323f5b04257762234c49f61c09f447b61a9b6524c97c4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=5f879ec2082876fc605323f5b04257762234c49f61c09f447b61a9b6524c97c4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=acb776e72ca88a492fde753cd43ef6379710f256e951c03b1a3e81885decbf6aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=acb776e72ca88a492fde753cd43ef6379710f256e951c03b1a3e81885decbf6aJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=17e3e8c3-6eaf-602a-3fc9-ff0e6f866187&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "queries": [
+        {
+          "query": "аренда Xiaomi CyberDog 2",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Xiaomi%20CyberDog%202&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Сдать квартиру в аренду на длительный срок проверенным …",
+              "url": "https://www.bing.com/ck/a?!&&p=76384e541bdf3373c7b721ac631cc38e69a558473f3c712660f1c41e665a7b0bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Снять квартиру в Балыкчы – объявления на Хаусе.",
+              "url": "https://www.bing.com/ck/a?!&&p=ca22fc7778125af7546cafad44b89d3851dad7009433d604424631f02586bc74JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Недвижимость: Балыкчи ᐈ Продажа и Аренда Недвижимости 455 …",
+              "url": "https://www.bing.com/ck/a?!&&p=62e582d1d560c8e43be63edc9d038f0eb173bf02356d18a92b5d0741b5a78db0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Аренда недвижимости в Балыкчы : бесплатные объявления об …",
+              "url": "https://www.bing.com/ck/a?!&&p=150e371588136e557193982f64edb6e9dcb2823acc26ac91bec41ad74d856c78JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Продажа, аренда квартир и домов в Бишкеке",
+              "url": "https://www.bing.com/ck/a?!&&p=a0dadfe8987947b6f4798000d875af935ddc6119167d0a56163045595e788021JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9tMi5rZy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Аренда недвижимости в Балыкчы : Квартиры, дома, участки",
+              "url": "https://www.bing.com/ck/a?!&&p=b3d39f096f7b9a0e55a874e98c93cba9d86addcb6e774b9674094f924e5a0814JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9ob21lbGxlci5jb20vYmFseWlrY2h5aS9mb3ItcmVudC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Сдача квартиры в аренду в Балыкчах. Снять квартиру в Балыкчах ...",
+              "url": "https://www.bing.com/ck/a?!&&p=664886fe7b5a290ec2fa23732b892afb09fe3dd915c2abd71e5ce0396ae92610JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9zYWxleHkua2cvYmFseWtjaHkvbmVkdml6aGltb3N0L2t2YXJ0aXJ5aS9zZGFt&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Иссык-Куль: аренда квартир | Airbnb",
+              "url": "https://www.bing.com/ck/a?!&&p=124c46c93c4d03912b84073ee1d2505ee4f9cad5cc6ce29548d5a26dbe1c94d4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuYWlyYm5iLnJ1L2lzc3lrLWt1bC1reXJneXpzdGFuL3N0YXlzL2FwYXJ0bWVudHM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Снять квартиру во всех регионах | Цены на аренду квартир во …",
+              "url": "https://www.bing.com/ck/a?!&&p=cee7e81142c7b9cab60570e878bfc9d5bb5194b2aa34ba0f06d6760e6684adf4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuYXZpdG8ucnUvYWxsL2t2YXJ0aXJ5L3NkYW0tQVNnQkFnSUNBVVNTQThnUQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Циан - база недвижимости в Москве и по всей РФ | Продажа, аренда ...",
+              "url": "https://www.bing.com/ck/a?!&&p=583ef724410806b9c6e7736ad74cd1652b70a9a39cc6b9e59f7ec73c09c2814eJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuY2lhbi5ydS8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        },
+        {
+          "query": "CyberDog 2 аренда",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=CyberDog%202%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "玩物社区 | 潮玩手办收藏家聚集地 发现同好与宝藏",
+              "url": "https://www.bing.com/ck/a?!&&p=07d8ddd91a6fe92d50639b3674c719e31de5665eba1dab6000fdc85c8845e7f5JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9tLndhbnd1c2hlcXUubmV0LmNuL3dhbnd1c2hlcXUuaHRtbA&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "玩物社区 _兴趣同好交流_文玩收藏分享 | 原创视频 社区",
+              "url": "https://www.bing.com/ck/a?!&&p=8af45d50b0a5e294c4dbf0b2b29308a4bb79a7ba141affb97474f8ec0319f2bcJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly93d3cud2Fud3VzaGVxdS5lYy5jYy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "玩物社区",
+              "url": "https://www.bing.com/ck/a?!&&p=3dd8be9ae7c9f5d24556e7755b138929b2c50d6dfe13992b48f044e27f1eafe3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly95endqYmguY24v&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "玩物社区 - 国内领先影视传媒视频 社区 平台 | 原创视频创作与分享",
+              "url": "https://www.bing.com/ck/a?!&&p=c08a68b999263eee7b30a790024ad0ebcc82fa6ebad46f819ca8b595f375fbabJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9tZWl3aW5lLmNuLw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "玩物社区 -点击进入官网",
+              "url": "https://www.bing.com/ck/a?!&&p=1fc90a0d7d11e4953e6c8ec5755c30a87337600618b0be3673d403e073be75e1JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9iZGhpbnMuY24v&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "玩物社区",
+              "url": "https://www.bing.com/ck/a?!&&p=0539ca086718a867cc7d42ac58601cab8bf3a8686d20ec524ede9248c14978fdJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9oYWN5Y28uY24v&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "玩物 app - Yandex",
+              "url": "https://www.bing.com/ck/a?!&&p=8ce90b1b799a4fb2864a2320ee6c8e938c6af26306b2cf1b1368a8c2f58b725eJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly90di55YW5kZXguY29tL3NlYXJjaD90ZXh0PSVFNyU4RSVBOSVFNyU4OSVBOWFwcCZscj0yMTIwNg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "玩物社区 - 收藏癖的线上据点 | 旧物·胶片·黑胶",
+              "url": "https://www.bing.com/ck/a?!&&p=daab63b613170031d5e8a3b155fd8dbd88dafa5a663d04c44c1668528484a473JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9tLndhbnd1c2hlcXUuaGkuY24vd2Fud3VzaGVxdS5odG1s&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "玩物社区 -点击进入官网",
+              "url": "https://www.bing.com/ck/a?!&&p=22ab3cde792e38bc86cda920d0be9ba82915c23df105ed894afbf2e949c85c09JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9iZHh5aGUuY24v&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "玩物社区 -----潮玩文化与创意影像平台 | lnssq.cn",
+              "url": "https://www.bing.com/ck/a?!&&p=88153f8a162de31092f5293973a69e93b2736fb684247f9534a7c1100773bac9JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=3ba0a1f6-ad94-68af-1a21-b63bac7a69ef&u=a1aHR0cHM6Ly9sbnNzcS5jbi8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        }
+      ],
+      "inspectedCompetitorPages": [
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=76384e541bdf3373c7b721ac631cc38e69a558473f3c712660f1c41e665a7b0bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=76384e541bdf3373c7b721ac631cc38e69a558473f3c712660f1c41e665a7b0bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=ca22fc7778125af7546cafad44b89d3851dad7009433d604424631f02586bc74JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=ca22fc7778125af7546cafad44b89d3851dad7009433d604424631f02586bc74JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=62e582d1d560c8e43be63edc9d038f0eb173bf02356d18a92b5d0741b5a78db0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=62e582d1d560c8e43be63edc9d038f0eb173bf02356d18a92b5d0741b5a78db0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=150e371588136e557193982f64edb6e9dcb2823acc26ac91bec41ad74d856c78JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=150e371588136e557193982f64edb6e9dcb2823acc26ac91bec41ad74d856c78JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=224836b2-dfb0-672a-3bbb-217fde2a66d4&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "queries": [
+        {
+          "query": "аренда Promobot V4",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Promobot%20V4&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "Сдать квартиру в аренду на длительный срок проверенным …",
+              "url": "https://www.bing.com/ck/a?!&&p=d094ebfbbfdeb77ce5e4971feaa6f248168a6bb6114df6e6788b0d38454fd9ffJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "Снять квартиру в Балыкчы – объявления на Хаусе.",
+              "url": "https://www.bing.com/ck/a?!&&p=fc8f1e99d79645d1058c535475e2dbf993d39a85c805b7db81319bb7ce6e6bfbJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "Недвижимость: Балыкчи ᐈ Продажа и Аренда Недвижимости 455 …",
+              "url": "https://www.bing.com/ck/a?!&&p=48147dd1de3d8adc89fceb4ba186ad5a0439fd20d8464c49b4ba7520c3977ba9JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Аренда недвижимости в Балыкчы : бесплатные объявления об …",
+              "url": "https://www.bing.com/ck/a?!&&p=83159247dca0d6d255baf44398c7261c23cb84752d40a4c44cb78e2a037b24a3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Продажа, аренда квартир и домов в Бишкеке",
+              "url": "https://www.bing.com/ck/a?!&&p=2fc431e6f99570aff2800409c10a9671c22ad479fd713229a93135ad17a019a4JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9tMi5rZy8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Аренда недвижимости в Балыкчы : Квартиры, дома, участки",
+              "url": "https://www.bing.com/ck/a?!&&p=0fc5300f316c2c29f35a67d32524d0cdcd54df9fd612fb75f4d4bf741b530a15JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9ob21lbGxlci5jb20vYmFseWlrY2h5aS9mb3ItcmVudC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Сдача квартиры в аренду в Балыкчах. Снять квартиру в Балыкчах ...",
+              "url": "https://www.bing.com/ck/a?!&&p=8da37d0e81be81e32315bf637d808befd933ffca0711f63dbcea1de688c199b3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9zYWxleHkua2cvYmFseWtjaHkvbmVkdml6aGltb3N0L2t2YXJ0aXJ5aS9zZGFt&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Иссык-Куль: аренда квартир | Airbnb",
+              "url": "https://www.bing.com/ck/a?!&&p=b56171b106c037f15c1a1b8decfb7a479d79c5e0b7b447abf27c543d03255da3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuYWlyYm5iLnJ1L2lzc3lrLWt1bC1reXJneXpzdGFuL3N0YXlzL2FwYXJ0bWVudHM&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "Снять квартиру во всех регионах | Цены на аренду квартир во …",
+              "url": "https://www.bing.com/ck/a?!&&p=445d52b8911c28e4fdae9f18fe149dc53751b15c44faf370f5d66dc5b2c88f1bJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuYXZpdG8ucnUvYWxsL2t2YXJ0aXJ5L3NkYW0tQVNnQkFnSUNBVVNTQThnUQ&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Циан - база недвижимости в Москве и по всей РФ | Продажа, аренда ...",
+              "url": "https://www.bing.com/ck/a?!&&p=fba76d0a2366a02e895c23dba65641a0e5d950fa570225eaa6ba92deeda215bfJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuY2lhbi5ydS8&ntb=1",
+              "snippet": ""
+            }
+          ]
+        },
+        {
+          "query": "Promobot V4 аренда",
+          "engine": "bing",
+          "status": "checked",
+          "url": "https://www.bing.com/search?q=Promobot%20V4%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0&setlang=ru-RU&cc=ru",
+          "results": [
+            {
+              "rank": 1,
+              "title": "GST Number search by name or pan - Know Your GST",
+              "url": "https://www.bing.com/ck/a?!&&p=97df6cfef38162bf373eb1e541b44c6841328bee15238ca9e305f433a51ebe43JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL2J5LW5hbWUtcGFuLw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 2,
+              "title": "GST number search and verification tool - GSTIN Search",
+              "url": "https://www.bing.com/ck/a?!&&p=0f8f22f48c089871653c3354f1a126c0b1f541f3178f749f8d4f390db65c1b55JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoLw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 3,
+              "title": "GST id locked due to wrong password 3 times? - KnowyourGST",
+              "url": "https://www.bing.com/ck/a?!&&p=753904ae4da0dbff7a3fcb32cb8f3461c07cd001325cfcbd876e89016d9cfce1JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL3FhL2dzdC1pZC1sb2NrZWQtZHVlLXRvLXdyb25nLXBhc3N3b3JkLTMtdGltZXMvODg4Lw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 4,
+              "title": "Siemens Limited - 07AAACS0764L1Z8 - Delhi - Know Your GST",
+              "url": "https://www.bing.com/ck/a?!&&p=27e2e9d542ff3e15e8d57b9e2c59cda26cada4799b6667ede6cc34c41f499785JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL3NpZW1lbnMtbHRkLTA3QUFBQ1MwNzY0TDFaOC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 5,
+              "title": "Ahmedabad University - 24AAAJT2294D1Z8 - Gujarat - Know Your GST",
+              "url": "https://www.bing.com/ck/a?!&&p=7c3132295da00d4702b6fb7a1c2697f1d374dddaab302ad6fa3c27c4dcae4e97JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL2FobWVkYWJhZC11bml2ZXJzaXR5LTI0QUFBSlQyMjk0RDFaOC8&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 6,
+              "title": "Forgot GST user id and password - KnowYourGST",
+              "url": "https://www.bing.com/ck/a?!&&p=1623210e6a68410fe32f107aa58fad4ba7b9bc8d4e9615da0ecdb87c588a4026JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL3FhL2ZvcmdvdC1nc3QtdXNlci1pZC1hbmQtcGFzc3dvcmQvODgv&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 7,
+              "title": "Awfis Space Solutions Private Limited - KnowyourGST",
+              "url": "https://www.bing.com/ck/a?!&&p=c6638b849f815b94ca05577c1c94453f68914d865204a28f1bfd151fca9666d0JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL2F3ZmlzLXNwYWNlLXNvbHV0aW9ucy1wcml2YXRlLWxpbWl0ZWQtMjdBQU5DQTExNzVHMVpOLw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 8,
+              "title": "Mac Chem Products India Pvt Ltd (27AAECM9623L1Z0)",
+              "url": "https://www.bing.com/ck/a?!&&p=72bb5d221ec3d71ceb861122a3549785ea8679eecbead372846c36b15324db96JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL21hYy1jaGVtLXByb2R1Y3RzLWluZGlhLXB2dC1sdGQtMjdBQUVDTTk2MjNMMVowLw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 9,
+              "title": "State Bank Of India - 27AAACS8577K2ZO - Maharashtra - Know …",
+              "url": "https://www.bing.com/ck/a?!&&p=39fa844dd5fcfa6b6b7990e4588a73e27d3158141b6cc42fc9d21692f1223a78JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL3N0YXRlLWJhbmstb2YtaW5kaWEtMjdBQUFDUzg1NzdLMlpPLw&ntb=1",
+              "snippet": ""
+            },
+            {
+              "rank": 10,
+              "title": "Login Infotech Private Limited - 29AAACL4949G1Z9 - Karnataka",
+              "url": "https://www.bing.com/ck/a?!&&p=8036db3d96d5bcc7e10e94c3ed9b5080bf9cdf13c8a842c6df18e485565a8d21JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=33c4f902-3584-6efe-1b8f-eecf349d6f77&u=a1aHR0cHM6Ly93d3cua25vd3lvdXJnc3QuY29tL2dzdC1udW1iZXItc2VhcmNoL2xvZ2luLWluZm90ZWNoLXByaXZhdGUtbGltaXRlZC0yOUFBQUNMNDk0OUcxWjkv&ntb=1",
+              "snippet": ""
+            }
+          ]
+        }
+      ],
+      "inspectedCompetitorPages": [
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=d094ebfbbfdeb77ce5e4971feaa6f248168a6bb6114df6e6788b0d38454fd9ffJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=d094ebfbbfdeb77ce5e4971feaa6f248168a6bb6114df6e6788b0d38454fd9ffJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9hcmVuZGEueWFuZGV4LnJ1Lw&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=fc8f1e99d79645d1058c535475e2dbf993d39a85c805b7db81319bb7ce6e6bfbJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=fc8f1e99d79645d1058c535475e2dbf993d39a85c805b7db81319bb7ce6e6bfbJmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvaW5kZXgucGhwL3NueWF0LWt2YXJ0aXJ1P3JlZ2lvbj0yJnRvd249MTI&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=48147dd1de3d8adc89fceb4ba186ad5a0439fd20d8464c49b4ba7520c3977ba9JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=48147dd1de3d8adc89fceb4ba186ad5a0439fd20d8464c49b4ba7520c3977ba9JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly9sYWxhZm8ua2cvYmFseWtjaGkvbmVkdml6aGltb3N0&ntb=1"
+        },
+        {
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.bing.com/ck/a?!&&p=83159247dca0d6d255baf44398c7261c23cb84752d40a4c44cb78e2a037b24a3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1",
+          "title": "",
+          "description": "",
+          "textSample": "Please click here if the page does not redirect automatically ...",
+          "url": "https://www.bing.com/ck/a?!&&p=83159247dca0d6d255baf44398c7261c23cb84752d40a4c44cb78e2a037b24a3JmltdHM9MTc4ODczOTIwMA&ptn=3&ver=2&hsh=4&fclid=213a93a6-cdf8-6269-3c05-846bcc626369&u=a1aHR0cHM6Ly93d3cuaG91c2Uua2cvc255YXQ_cmVnaW9uPTImdG93bj0xMg&ntb=1"
+        }
+      ]
+    }
+  ]
+}

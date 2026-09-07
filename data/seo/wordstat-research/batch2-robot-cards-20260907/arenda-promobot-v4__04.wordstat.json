@@ -1,0 +1,17 @@
+{
+  "slug": "arenda-promobot-v4",
+  "queryIndex": 4,
+  "query": "промо робот Promobot V4",
+  "source": "live_wordstat_chrome_cdp",
+  "region": "all",
+  "devices": "desktop+smartphone+tablet visible defaults",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%BF%D1%80%D0%BE%D0%BC%D0%BE%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20Promobot%20V4",
+  "captcha": false,
+  "period": "06.08.2026 – 06.09.2026",
+  "total": 0,
+  "noResults": true,
+  "rows": [],
+  "screenshot": null,
+  "collectedAt": "2026-09-07T18:11:28Z",
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nпромо робот Promobot V4\n \nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+}

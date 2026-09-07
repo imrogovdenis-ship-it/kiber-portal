@@ -1,0 +1,32 @@
+{
+  "slug": "arenda-unitree-g1",
+  "status": "partial_checked",
+  "queriesConsidered": [
+    "аренда unitree g1",
+    "unitree g1 аренда"
+  ],
+  "inspectedPages": [
+    {
+      "url": "https://www.unitree.com/g1/",
+      "status": "fetched",
+      "httpStatus": 200,
+      "finalUrl": "https://www.unitree.com/g1/",
+      "title": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot Price | Unitree Robotics",
+      "description": "Unitree Robotics Humanoid Robot G1 has the flexibility beyond normal human, can imitate & reinforce the learning drive, combined with force-position hybrid control, sensitive and reliable, can simulate the human hand to achieve the precise operation of the object, welcome to consult with us to know the price, function and usage of the humanoid robot.",
+      "textSample": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot Price | Unitree Robotics Robots Robot - Consumer/Education As2 Go2 Go1 A1 Robot - Industry A2 B2 B1 AlienGo Robotic Arms Robotic Arms Perception 4D LiDAR Components Components As2 Compact Size Industrial Capability As2-W Powerful Pioneer, Compact Yet Extraordinary Human Humanoid Robot H2 R1 G1 H1 / H1-2 Application Plan H2-D R1-A / R1-A-D G1-D G1-Comp G1-Boxing Dexterous Hand Dex2/5 Dex1-1 Dex5-1 Dex3-1 H2 Destiny Awakening H2 Plus Integrated R&D and Manufacturing, Embarking on Full-Stack Development Industry Advanced Quadruped Inspection Solutions Unitree quadruped robot launched a new power intelligent inspection solution, designed a series of solutions for dangerous, urgent and repetitive tasks, and provided efficient guarantee for power system construction, operation and maintenance and other work. Fire Rescue Solutions Overcome Hazards, Protect the Ones Who March Against the Tide Unifolm OS Services Terms & Policies Download Center Resource Center Customer Service Document Center Explore News About Unitree Contact Us Investor Relations Download UniStore H2 R1 G1 H1 / H1-2 A2 / A2-W B2 / B2-W Go2 As2 Challenge UniBot World Challenge Store / Cooperate Unitree G1 Humanoid agent AI avatar Price from $13.5K Video Continuous OTA Software Upgrade and Update Flexibility beyond ordinary people Extra large joint movement angle space, 23~43 joint motors Imitation & reinforcement learning driven Robotics technology accelerated by AI is upgrading and evolving every day Force control dexterous hand, manipulation of all things Combined with force-position hybrid control, it is sensitive and reliable, and can simulate human hands to achieve precise operation of objects. Robot world model, let’s create it together UnifoLM (Unified Robot Large Model), create a new era of intelligence together More flexible and more comfortable! Start the agent New era Unitree G1 Parameter Mechanical Dimensions Model G1 G1 EDU Height, Width and Thickness（Stand） 1320x450x200mm 1320x450x200mm Height, Width and Thickness（Fold） 690x450x300mm 690x450x300mm Weight (With Battery) About 35kg About 35kg+ Total Degrees of Freedom（Joint Freedom） ",
+      "hasRentalLanguage": true,
+      "hasPriceLanguage": true
+    }
+  ],
+  "contentGaps": [
+    "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+    "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+    "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+    "Humanoid pages need safety zone, stage/floor readiness, operator-controlled scenario, and why exact G1 differs from generic humanoid demand."
+  ],
+  "riskNotes": [
+    "Do not cite search snippets as page facts.",
+    "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+    "Owner review remains required for final public claims."
+  ]
+}

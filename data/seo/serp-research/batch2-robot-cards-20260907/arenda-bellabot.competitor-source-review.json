@@ -1,0 +1,32 @@
+{
+  "slug": "arenda-bellabot",
+  "status": "partial_checked",
+  "queriesConsidered": [
+    "аренда bellabot",
+    "bellabot аренда"
+  ],
+  "inspectedPages": [
+    {
+      "url": "https://www.pudurobotics.com/products/bellabot",
+      "status": "fetched",
+      "httpStatus": 200,
+      "finalUrl": "https://www.pudurobotics.com/en/products/bellabot",
+      "title": "BellaBot | Pudu Robotics' Original Cat Delivery & Engagement Robot for Restaurants and Retail",
+      "description": "BellaBot is a charming cat server robot designed to delight guests in restaurants, and retail stores. With its 3d obstacle avoidance, voice greetings, and playful animations, this multimodal robot server enhances customer engagement and dining experience.",
+      "textSample": "BellaBot | Pudu Robotics' Original Cat Delivery & Engagement Robot for Restaurants and Retail Return Products Industries Case Studies Resources News Blogs Events Download PUDU Open Platform About Us Support Online Repair Request Documents & Manuals Service Plan Contact Us Premium Delivery Robot Request a Demo BellaBot, the latest delivery robot designed by Pudu, inherits the outstanding characteristics of the previous generation while being endowed with superior human-robot interaction capabilities. Featuring an innovative bionic design, cute appearance, multi-modal interaction, and many other new functions, BellaBot provides users with an unprecedented food delivery experience. Industry-exclusive Dual SLAM Solution Covering All Scenarios BellaBot supports both LiDAR and visual SLAM positioning and navigation to adapt to more scenarios. Both solutions are accurate and easy to use, providing an excellent and customer-centered experience to end-users. Visual SLAM LiDAR SLAM 3D Omnidirectional Obstacle Avoidance For higher safety, BellaBot comes with 3D sensors and a new modular chassis. It can stop when it encounters obstacles at any angle and then move away. With 3 RGBD cameras and the LiDAR, BellaBot can smoothly avoid low-lying and overhanging obstacles. Multimodal interaction Light Interaction Different statuses trigger different light interactions, making the status indication clearer. Haptic Feedback The new haptic feedback system makes BellaBot's feedback more comprehensive, enabling an unprecedented human-robot experience. Smart Expressions Dozens of exclusive original expressions enrich BellaBot's facial expressions, making it more like a cat. Infrared Tray Sensor Modular quick-disassembly structures and infrared tray sensors empower smarter trays and higher delivery efficiency. Battery Swap Technology Quick battery swap makes it easy for BellaBot to serve 24/7. RGBD The 3 RGBD camera gives BellaBot the strongest 3D perception to date. It can accurately detect and stop when encountering obstacles with a response time as short as 0.5 seconds. Steady Delivery Powered by Automotive Grade Independent Suspension Automotive-grade Independent Suspension.The auto",
+      "hasRentalLanguage": true,
+      "hasPriceLanguage": false
+    }
+  ],
+  "contentGaps": [
+    "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+    "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+    "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+    "Waiter robot pages need route setup, aisle/table constraints, staff handoff, and HoReCa use cases rather than only “cute cat robot” product copy."
+  ],
+  "riskNotes": [
+    "Do not cite search snippets as page facts.",
+    "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+    "Owner review remains required for final public claims."
+  ]
+}

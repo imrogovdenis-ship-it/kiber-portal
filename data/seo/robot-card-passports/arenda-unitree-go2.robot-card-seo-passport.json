@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-unitree-go2",
+  "canonicalPath": "/robots/arenda-unitree-go2/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-unitree-go2/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "Unitree Go2",
+    "sourceName": "робота-собаки Unitree Go2",
+    "modelName": "Unitree Go2",
+    "brand": "Unitree",
+    "category": {
+      "primary": "robot_dog",
+      "labels": [
+        "robot_dog"
+      ],
+      "collectionSlugs": [
+        "roboty-sobaki"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed: commercial queries 06.08.2026–06.09.2026; entity queries 07.08.2026–05.09.2026 when results existed",
+      "region": "all",
+      "queries": {
+        "аренда Unitree Go2": 7,
+        "Unitree Go2 аренда": 7,
+        "прокат Unitree Go2": 0,
+        "робот собака Unitree Go2": 365,
+        "Unitree Go2": 1740
+      },
+      "evidence": "data/seo/wordstat-research/batch2-robot-cards-20260907/batch2-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда Unitree Go2",
+          "total": 7,
+          "noResults": true
+        },
+        {
+          "query": "Unitree Go2 аренда",
+          "total": 7,
+          "noResults": true
+        },
+        {
+          "query": "прокат Unitree Go2",
+          "total": 0,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робот собака Unitree Go2",
+          "total": 365,
+          "noResults": false
+        },
+        {
+          "query": "Unitree Go2",
+          "total": 1740,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on the robot-card even if query volume is low/zero; awareness/entity totals support FAQ/model variants, not generic category primary keywords."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_vendor_competitor_pages_plus_search_attempts",
+      "evidence": "data/seo/serp-research/batch2-robot-cards-20260907/batch2-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "https://www.unitree.com/go2/"
+      ],
+      "limitation": "Yandex public SERP returned captcha from server-side fetch and Bing/DDG exact-rental SERPs were noisy; direct vendor/competitor source pages were inspected, but ranked SERP remains partial."
+    },
+    "contentGaps": [
+      "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+      "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+      "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+      "Robot dog pages need tricks/photo-zone/event-safety framing and distinguish Go2 from generic robot-dog queries."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Unitree Go2 — робот-собака для мероприятия",
+    "metaDescription": "Аренда Unitree Go2 для выставки, фотозоны, детского праздника или корпоративного события: трюки, интерактив с гостями и операторское сопровождение.",
+    "h1": "Аренда робота-собаки Unitree Go2",
+    "primaryKeyword": "аренда Unitree Go2",
+    "secondaryKeywords": [
+      "Unitree Go2 аренда",
+      "прокат Unitree Go2",
+      "заказать Unitree Go2",
+      "робот-собака Unitree Go2",
+      "Unitree Go2 для мероприятия"
+    ],
+    "longTailKeywords": [
+      "аренда Unitree Go2 для выставки",
+      "аренда Unitree Go2 для мероприятия",
+      "аренда Unitree Go2 для презентации"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда Unitree Go2",
+    "secondaryKeywords": [
+      "Unitree Go2 аренда",
+      "прокат Unitree Go2",
+      "заказать Unitree Go2",
+      "робот-собака Unitree Go2",
+      "Unitree Go2 для мероприятия"
+    ],
+    "modelNameVariants": [
+      "Unitree Go2",
+      "робот Unitree Go2",
+      "Юнитри Go2",
+      "робот-собака Unitree Go2",
+      "Unitree Go2 quadruped"
+    ],
+    "entitySynonyms": [
+      "робот-собака",
+      "робопёс",
+      "интерактивная робособака",
+      "четвероногий робот",
+      "робот для фотозоны"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "Unitree Go2",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic category page.",
+      "Keep generic category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved source-gallery assets, no legacy hero/catalog fallback",
+    "includedService": "01 — what is included",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — usage scenarios",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 10,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Confirm final visible copy and screenshots before merge/publication.",
+      "Ranked Yandex/Google SERP screenshots can be added later if human browser SERP access is required; owner visual/content approval remains required before merge/publication."
+    ]
+  }
+}

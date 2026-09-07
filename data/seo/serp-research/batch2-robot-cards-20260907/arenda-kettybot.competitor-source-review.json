@@ -1,0 +1,32 @@
+{
+  "slug": "arenda-kettybot",
+  "status": "partial_checked",
+  "queriesConsidered": [
+    "аренда kettybot",
+    "kettybot аренда"
+  ],
+  "inspectedPages": [
+    {
+      "url": "https://www.pudurobotics.com/products/kettybot",
+      "status": "fetched",
+      "httpStatus": 200,
+      "finalUrl": "https://www.pudurobotics.com/en/products/kettybot",
+      "title": "Products - PUDU",
+      "description": "PUDU Products",
+      "textSample": "Products - PUDU Return Products Industries Case Studies Resources News Blogs Events Download PUDU Open Platform About Us Support Online Repair Request Documents & Manuals Service Plan Contact Us Request a Demo Browser not compatible Subscribe to PUDU News Copyright © 2026 Pudu Robotics All Rights Reserved. Privacy Policy Sitemap Subscribe to PUDU News Contact Us Copyright © 2026 Pudu Robotics All Rights Reserved. Privacy Policy Sitemap We use cookies to enhance your browsing experience,serve personalized ads or content, and analyze our traffic. By clicking Accept All , you consent to ( our use of cookie ).",
+      "hasRentalLanguage": false,
+      "hasPriceLanguage": false
+    }
+  ],
+  "contentGaps": [
+    "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+    "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+    "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+    "KettyBot pages should explain advertising screen + delivery route scenarios and sync with existing Wordstat evidence."
+  ],
+  "riskNotes": [
+    "Do not cite search snippets as page facts.",
+    "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+    "Owner review remains required for final public claims."
+  ]
+}

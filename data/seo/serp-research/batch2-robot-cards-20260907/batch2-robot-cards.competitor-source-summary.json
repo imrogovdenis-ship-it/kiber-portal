@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "source": "direct_vendor_competitor_pages_plus_search_attempts",
+  "collectedAt": "2026-09-07T18:21:40Z",
+  "searchNote": "Direct Yandex search via curl returned captcha; generic Bing/DDG results were noisy for exact rental queries. Vendor/competitor pages were fetched directly and SERP status is partial, not final publication proof.",
+  "robots": [
+    {
+      "slug": "arenda-unitree-g1",
+      "status": "partial_checked",
+      "queriesConsidered": [
+        "аренда unitree g1",
+        "unitree g1 аренда"
+      ],
+      "inspectedPages": [
+        {
+          "url": "https://www.unitree.com/g1/",
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.unitree.com/g1/",
+          "title": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot Price | Unitree Robotics",
+          "description": "Unitree Robotics Humanoid Robot G1 has the flexibility beyond normal human, can imitate & reinforce the learning drive, combined with force-position hybrid control, sensitive and reliable, can simulate the human hand to achieve the precise operation of the object, welcome to consult with us to know the price, function and usage of the humanoid robot.",
+          "textSample": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot Price | Unitree Robotics Robots Robot - Consumer/Education As2 Go2 Go1 A1 Robot - Industry A2 B2 B1 AlienGo Robotic Arms Robotic Arms Perception 4D LiDAR Components Components As2 Compact Size Industrial Capability As2-W Powerful Pioneer, Compact Yet Extraordinary Human Humanoid Robot H2 R1 G1 H1 / H1-2 Application Plan H2-D R1-A / R1-A-D G1-D G1-Comp G1-Boxing Dexterous Hand Dex2/5 Dex1-1 Dex5-1 Dex3-1 H2 Destiny Awakening H2 Plus Integrated R&D and Manufacturing, Embarking on Full-Stack Development Industry Advanced Quadruped Inspection Solutions Unitree quadruped robot launched a new power intelligent inspection solution, designed a series of solutions for dangerous, urgent and repetitive tasks, and provided efficient guarantee for power system construction, operation and maintenance and other work. Fire Rescue Solutions Overcome Hazards, Protect the Ones Who March Against the Tide Unifolm OS Services Terms & Policies Download Center Resource Center Customer Service Document Center Explore News About Unitree Contact Us Investor Relations Download UniStore H2 R1 G1 H1 / H1-2 A2 / A2-W B2 / B2-W Go2 As2 Challenge UniBot World Challenge Store / Cooperate Unitree G1 Humanoid agent AI avatar Price from $13.5K Video Continuous OTA Software Upgrade and Update Flexibility beyond ordinary people Extra large joint movement angle space, 23~43 joint motors Imitation & reinforcement learning driven Robotics technology accelerated by AI is upgrading and evolving every day Force control dexterous hand, manipulation of all things Combined with force-position hybrid control, it is sensitive and reliable, and can simulate human hands to achieve precise operation of objects. Robot world model, let’s create it together UnifoLM (Unified Robot Large Model), create a new era of intelligence together More flexible and more comfortable! Start the agent New era Unitree G1 Parameter Mechanical Dimensions Model G1 G1 EDU Height, Width and Thickness（Stand） 1320x450x200mm 1320x450x200mm Height, Width and Thickness（Fold） 690x450x300mm 690x450x300mm Weight (With Battery) About 35kg About 35kg+ Total Degrees of Freedom（Joint Freedom） ",
+          "hasRentalLanguage": true,
+          "hasPriceLanguage": true
+        }
+      ],
+      "contentGaps": [
+        "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+        "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+        "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+        "Humanoid pages need safety zone, stage/floor readiness, operator-controlled scenario, and why exact G1 differs from generic humanoid demand."
+      ],
+      "riskNotes": [
+        "Do not cite search snippets as page facts.",
+        "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+        "Owner review remains required for final public claims."
+      ]
+    },
+    {
+      "slug": "arenda-bellabot",
+      "status": "partial_checked",
+      "queriesConsidered": [
+        "аренда bellabot",
+        "bellabot аренда"
+      ],
+      "inspectedPages": [
+        {
+          "url": "https://www.pudurobotics.com/products/bellabot",
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.pudurobotics.com/en/products/bellabot",
+          "title": "BellaBot | Pudu Robotics' Original Cat Delivery & Engagement Robot for Restaurants and Retail",
+          "description": "BellaBot is a charming cat server robot designed to delight guests in restaurants, and retail stores. With its 3d obstacle avoidance, voice greetings, and playful animations, this multimodal robot server enhances customer engagement and dining experience.",
+          "textSample": "BellaBot | Pudu Robotics' Original Cat Delivery & Engagement Robot for Restaurants and Retail Return Products Industries Case Studies Resources News Blogs Events Download PUDU Open Platform About Us Support Online Repair Request Documents & Manuals Service Plan Contact Us Premium Delivery Robot Request a Demo BellaBot, the latest delivery robot designed by Pudu, inherits the outstanding characteristics of the previous generation while being endowed with superior human-robot interaction capabilities. Featuring an innovative bionic design, cute appearance, multi-modal interaction, and many other new functions, BellaBot provides users with an unprecedented food delivery experience. Industry-exclusive Dual SLAM Solution Covering All Scenarios BellaBot supports both LiDAR and visual SLAM positioning and navigation to adapt to more scenarios. Both solutions are accurate and easy to use, providing an excellent and customer-centered experience to end-users. Visual SLAM LiDAR SLAM 3D Omnidirectional Obstacle Avoidance For higher safety, BellaBot comes with 3D sensors and a new modular chassis. It can stop when it encounters obstacles at any angle and then move away. With 3 RGBD cameras and the LiDAR, BellaBot can smoothly avoid low-lying and overhanging obstacles. Multimodal interaction Light Interaction Different statuses trigger different light interactions, making the status indication clearer. Haptic Feedback The new haptic feedback system makes BellaBot's feedback more comprehensive, enabling an unprecedented human-robot experience. Smart Expressions Dozens of exclusive original expressions enrich BellaBot's facial expressions, making it more like a cat. Infrared Tray Sensor Modular quick-disassembly structures and infrared tray sensors empower smarter trays and higher delivery efficiency. Battery Swap Technology Quick battery swap makes it easy for BellaBot to serve 24/7. RGBD The 3 RGBD camera gives BellaBot the strongest 3D perception to date. It can accurately detect and stop when encountering obstacles with a response time as short as 0.5 seconds. Steady Delivery Powered by Automotive Grade Independent Suspension Automotive-grade Independent Suspension.The auto",
+          "hasRentalLanguage": true,
+          "hasPriceLanguage": false
+        }
+      ],
+      "contentGaps": [
+        "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+        "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+        "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+        "Waiter robot pages need route setup, aisle/table constraints, staff handoff, and HoReCa use cases rather than only “cute cat robot” product copy."
+      ],
+      "riskNotes": [
+        "Do not cite search snippets as page facts.",
+        "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+        "Owner review remains required for final public claims."
+      ]
+    },
+    {
+      "slug": "arenda-kettybot",
+      "status": "partial_checked",
+      "queriesConsidered": [
+        "аренда kettybot",
+        "kettybot аренда"
+      ],
+      "inspectedPages": [
+        {
+          "url": "https://www.pudurobotics.com/products/kettybot",
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.pudurobotics.com/en/products/kettybot",
+          "title": "Products - PUDU",
+          "description": "PUDU Products",
+          "textSample": "Products - PUDU Return Products Industries Case Studies Resources News Blogs Events Download PUDU Open Platform About Us Support Online Repair Request Documents & Manuals Service Plan Contact Us Request a Demo Browser not compatible Subscribe to PUDU News Copyright © 2026 Pudu Robotics All Rights Reserved. Privacy Policy Sitemap Subscribe to PUDU News Contact Us Copyright © 2026 Pudu Robotics All Rights Reserved. Privacy Policy Sitemap We use cookies to enhance your browsing experience,serve personalized ads or content, and analyze our traffic. By clicking Accept All , you consent to ( our use of cookie ).",
+          "hasRentalLanguage": false,
+          "hasPriceLanguage": false
+        }
+      ],
+      "contentGaps": [
+        "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+        "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+        "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+        "KettyBot pages should explain advertising screen + delivery route scenarios and sync with existing Wordstat evidence."
+      ],
+      "riskNotes": [
+        "Do not cite search snippets as page facts.",
+        "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+        "Owner review remains required for final public claims."
+      ]
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "status": "partial_checked",
+      "queriesConsidered": [
+        "аренда unitree go2",
+        "unitree go2 аренда"
+      ],
+      "inspectedPages": [
+        {
+          "url": "https://www.unitree.com/go2/",
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.unitree.com/go2/",
+          "title": "Robot Dog Go2_Quadruped_Robot Dog Company | Unitree Robotics",
+          "description": "Unitree Go2 robot dog is equipped with 4D ultra-wide-angle LiDAR, creating a new species with body intelligence, Unitree quadruped (consumer-grade quadruped) has advanced configuration and cool appearance, but also has a super interactive features, simulating the behaviour of a real pet dog, bringing users a more intimate and pleasant human-machine interaction experience.",
+          "textSample": "Robot Dog Go2_Quadruped_Robot Dog Company | Unitree Robotics Robots Robot - Consumer/Education As2 Go2 Go1 A1 Robot - Industry A2 B2 B1 AlienGo Robotic Arms Robotic Arms Perception 4D LiDAR Components Components As2 Compact Size Industrial Capability As2-W Powerful Pioneer, Compact Yet Extraordinary Human Humanoid Robot H2 R1 G1 H1 / H1-2 Application Plan H2-D R1-A / R1-A-D G1-D G1-Comp G1-Boxing Dexterous Hand Dex2/5 Dex1-1 Dex5-1 Dex3-1 H2 Destiny Awakening H2 Plus Integrated R&D and Manufacturing, Embarking on Full-Stack Development Industry Advanced Quadruped Inspection Solutions Unitree quadruped robot launched a new power intelligent inspection solution, designed a series of solutions for dangerous, urgent and repetitive tasks, and provided efficient guarantee for power system construction, operation and maintenance and other work. Fire Rescue Solutions Overcome Hazards, Protect the Ones Who March Against the Tide Unifolm OS Services Terms & Policies Download Center Resource Center Customer Service Document Center Explore News About Unitree Contact Us Investor Relations Download UniStore H2 R1 G1 H1 / H1-2 A2 / A2-W B2 / B2-W Go2 As2 Challenge UniBot World Challenge Store / Cooperate New Creature of Embodied AI Unitree Go2 Infinite Revolution Video ▶ Go2 APP Download Price from $ 1600 Continuous OTA Software Upgrade and Update Rage Mode：Unleashing the Potential of Joint Motors By fully tapping into the hardware's capabilities, it achieves faster speed, more responsive steering, and stable, agile movement across complex terrains like gravel and slopes. Standard Ultra-wide 4D LiDAR upgrades Recognition system by 200%. Go2 features with Unitree's self-developed 4D LiDAR L2 with 360°x96°hemispherical ultra-wide recognition, super small blind spot and a minimum detection distance as low as 0.05m, which makes Go2 realise all-terrain recognizing. Embodied Intelligence: AI+Robot empowers the new intelligent creature to better understand the world and make decisions Note: Use varies by country or region, please refer to the actual situation. Hangzhou Asian Games \"robot dog superstar\" At the 19th Asian Games in Hangzhou, a robot dog transported discus and javelin on",
+          "hasRentalLanguage": true,
+          "hasPriceLanguage": true
+        }
+      ],
+      "contentGaps": [
+        "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+        "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+        "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+        "Robot dog pages need tricks/photo-zone/event-safety framing and distinguish Go2 from generic robot-dog queries."
+      ],
+      "riskNotes": [
+        "Do not cite search snippets as page facts.",
+        "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+        "Owner review remains required for final public claims."
+      ]
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "status": "partial_checked",
+      "queriesConsidered": [
+        "аренда xiaomi cyberdog 2",
+        "xiaomi cyberdog 2 аренда"
+      ],
+      "inspectedPages": [
+        {
+          "url": "https://www.mi.com/cyberdog2",
+          "status": "fetched",
+          "httpStatus": 200,
+          "finalUrl": "https://www.mi.com/cyberdog2",
+          "title": "cyberdog2",
+          "description": "cyberdog2",
+          "textSample": "cyberdog2 小米官网 | 小米商城 | 小米澎湃OS | 小米汽车 | 云服务 | IoT | 有品 | 小爱开放平台 | 资质证照 | 协议规则 | 下载app 小米商城APP | Select Location 购物车 购物车中还没有商品，赶紧选购吧！ 登录 | 注册 Global Home Bangladesh Brazil Chile Czechia Egypt France GCC Germany Greece India Indonesia Italy Japan Korea Malaysia Mexico Nepal Netherlands Nigeria Pakistan Philippines Poland Russia Saudi Arabia Singapore Spain Sri Lanka Sweden Thailand Türkiye United Kingdom United States Ukraine Vietnam 小米官网 全部商品分类 手机 Xiaomi 数字旗舰 Xiaomi MIX系列 Xiaomi Civi系列 REDMI K系列 REDMI Turbo系列 REDMI Note系列 REDMI 数字系列 电视 S Pro RGB-Mini LED S Mini LED 2026 小米电视SPro MiniLED2026 旗舰系列-S Pro Mini LED 巨幕影院-REDMI MAX 游戏高刷-REDMI 电视 X 2026 性价比爆款-REDMI A Pro 性价比爆款-REDMI A 2025 家电 壁挂空调 立式空调 中央空调Pro 冰箱 滚筒洗衣机 波轮洗衣机 除湿机 洗地机 电暖器 净水器 微蒸烤 烟灶 洗碗机 扫地机器人 吸尘器 加湿器 空气净化器 电饭煲 电磁炉 水壶 落地风扇 投影仪 灯具 除螨仪 笔记本 平板 显示器 Xiaomi Pad 9 Pro Max REDMIBookPro 16 2026 REDMIBookPro 14 2026 Xiaomi Book Pro 14 REDMI K Pad 2 REDMI Pad 2 SE REDMI Pad 2 Pro REDMI Book 14 2026 REDMI Book 16 2026 Xiaomi Pad 8 Pro Xiaomi Pad 8 REDMI Pad 2 REDMI K Pad Xiaomi Pad 7S Pro Xiaomi Pad 7 Ultra Xiaomi Pad 7 Pro Xiaomi Pad 7 REDMI Book 14 锐龙版 REDMI Book Pro 14 REDMI Book Pro 16 REDMI 平板 REDMI Book 14 2025 REDMI Book 16 2025 办公娱乐显示器 出行 穿戴 小米手环11 NFC版 小米手环11 标准版 Xiaomi Watch S5 Xiaomi Watch 5 REDMI Watch 6 小米AI眼镜 Xiaomi Watch S4 41mm 小米手环9 Pro REDMI 手环 3 REDMI Watch 6 活力版 耳机 音箱 REDMI 头戴降噪耳机 Xiaomi 耳夹式耳机 REDMI Buds 8 REDMI Buds 8 活力版 REDMI Buds 8 青春版 REDMI Buds 8 Pro Xiaomi Buds 6 Xiaomi 骨传导耳机2 Xiaomi Buds 5 Pro Xiaomi 开放式耳机 Pro REDMI Buds 6 REDMI Buds 7S REDMI Buds 6 活力版 Xiaomi 蓝牙音箱 Mini Xiaomi智能音箱 Xiaomi智能家庭屏Pro 8 Xiaomi智能家庭屏 6 Xiaomi智能家庭屏 10 Xiaomi 智能音箱 Pro 小爱音箱Play 增强版 Xiaomi 智能家庭屏 Mini Xiaomi Sound Pro 小米小爱音箱 Play Xiaomi Sound 2 Max 健康 儿童 洗手机 修剪器 剃须刀 牙刷 吹风机 体重秤 体脂秤 米家跑步机 米家动感单车 走步机 益智积木 儿童手表 儿童滑板车 婴儿推车 理发器 生活 箱包 小背包 双肩包 胸包 旅行箱 收纳袋 运动鞋 服饰 眼镜 床垫 枕头 螺丝刀 水杯 驱蚊器 毛巾/浴巾 笔 智能 路由器 MIJIA K歌麦克风 打印机 小米路由器 REDMI路由器 智能家庭 对讲机 摄像机 智能门锁 门铃/猫眼 小爱音箱 家庭屏 电源 配件 插座插排 移动电源 数据线 穿戴配件 平板配件 充电器 电池 自拍杆 手机壳 手机贴膜 无线充电器 其他配件 Xiaomi手机 Xiaomi 18 Fold 10999元起 Xiaomi 17T Pro 4299元起 Xiaomi 17T 3499元起 Xiaomi 17 Max 4799元起 Xiaomi 17 Ultra 徕卡版 7999元起 Xiaomi 17 Ultra 6999元起 REDMI手机 REDMI K100 Pro Max 4499元起 REDMI K100 Pro 3999元起 REDMI 17 5G 999",
+          "hasRentalLanguage": false,
+          "hasPriceLanguage": false
+        }
+      ],
+      "contentGaps": [
+        "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+        "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+        "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+        "CyberDog 2 has awareness demand but zero exact rental demand; page should keep exact model SEO while answering “is it rentable for a show/promo?” clearly."
+      ],
+      "riskNotes": [
+        "Do not cite search snippets as page facts.",
+        "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+        "Owner review remains required for final public claims."
+      ]
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "status": "partial_checked",
+      "queriesConsidered": [
+        "аренда promobot v4",
+        "promobot v4 аренда"
+      ],
+      "inspectedPages": [
+        {
+          "url": "https://promo-bot.ru/products/promobot-v4/",
+          "status": "fetch_error",
+          "error": "The read operation timed out"
+        }
+      ],
+      "contentGaps": [
+        "Competitor/vendor pages usually emphasize product specs, sale or demo positioning; KIBER card must translate that into rental scenarios and event operations.",
+        "Add clear rental fit: event type, operator role, venue requirements, timing/logistics, and request-based price framing.",
+        "Avoid unsupported technical promises; keep specs only if source-of-truth supports them and route uncertain claims to owner review.",
+        "Promobot V4 has low entity demand and zero exact rental demand; page should emphasize practical promo-host scenarios, screen, prepared dialogue and queue limits."
+      ],
+      "riskNotes": [
+        "Do not cite search snippets as page facts.",
+        "Do not use zero-volume exact rental queries as reason to switch robot_card to generic category primary.",
+        "Owner review remains required for final public claims."
+      ]
+    }
+  ]
+}
