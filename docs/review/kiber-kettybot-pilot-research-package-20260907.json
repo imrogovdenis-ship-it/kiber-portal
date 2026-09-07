@@ -1,0 +1,606 @@
+{
+  "contentPackageVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-kettybot",
+  "canonicalPreviewPath": "/preview/kiber-94/robot-card/arenda-kettybot/",
+  "sourceDocuments": [
+    "src/content/robots.generated.json",
+    "data/models/robot-capability-images.source.json",
+    "docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md",
+    "data/review/kiber-94-robot-card-design-structure-approval.json"
+  ],
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "artifactDir": "docs/review/kiber-wordstat-kettybot-20260907",
+      "queries": [
+        {
+          "slug": "arenda-kettybot",
+          "query": "аренда KettyBot",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20KettyBot",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 2
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-01.png",
+          "collectedAt": "2026-09-07T09:47:48.402359Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nаренда KettyBot\nза 06.08.2026 – 06.09.2026: 2\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "KettyBot аренда",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=KettyBot%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 2
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-02.png",
+          "collectedAt": "2026-09-07T09:47:50.796631Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nKettyBot аренда\nза 06.08.2026 – 06.09.2026: 2\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "прокат KettyBot",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%BF%D1%80%D0%BE%D0%BA%D0%B0%D1%82%20KettyBot",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 0
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-03.png",
+          "collectedAt": "2026-09-07T09:47:53.218721Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nпрокат KettyBot\nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "заказать KettyBot",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20KettyBot",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 0
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-04.png",
+          "collectedAt": "2026-09-07T09:49:30.372713Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nзаказать KettyBot\nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "робот-официант KettyBot",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82-%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%20KettyBot",
+          "captcha": false,
+          "period": "за 07.08.2026 – 05.09.2026",
+          "total": null,
+          "noResults": false,
+          "rows": [
+            {
+              "phrase": "за 07.08.2026 – 05.09.2026:",
+              "shows": 7
+            },
+            {
+              "phrase": "+робот официант в kettybot цена",
+              "shows": 5
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-05.png",
+          "collectedAt": "2026-09-07T09:49:32.704502Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nробот-официант KettyBot\nза 07.08.2026 – 05.09.2026: 7\nСкачать\nДобавить все\nЗапросы со\nсловами\nЧисло\nзапросов\n+робот официант в kettybot цена\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "KettyBot для ресторана",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=KettyBot%20%D0%B4%D0%BB%D1%8F%20%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D0%B0",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 0
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-06.png",
+          "collectedAt": "2026-09-07T09:49:34.966883Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nKettyBot для ресторана\nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "Кеттибот аренда",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%9A%D0%B5%D1%82%D1%82%D0%B8%D0%B1%D0%BE%D1%82%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 0
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-07.png",
+          "collectedAt": "2026-09-07T09:49:37.271491Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nКеттибот аренда\nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "Кэтибот аренда",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%9A%D1%8D%D1%82%D0%B8%D0%B1%D0%BE%D1%82%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0",
+          "captcha": false,
+          "period": "за 06.08.2026 – 06.09.2026",
+          "total": null,
+          "noResults": true,
+          "rows": [
+            {
+              "phrase": "за 06.08.2026 – 06.09.2026:",
+              "shows": 0
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-08.png",
+          "collectedAt": "2026-09-07T09:49:39.392361Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nКэтибот аренда\nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        },
+        {
+          "slug": "arenda-kettybot",
+          "query": "аренда робота официанта",
+          "source": "live_wordstat_chrome_cdp",
+          "region": "all",
+          "devices": "visible defaults",
+          "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%D0%B0",
+          "captcha": false,
+          "period": "за 07.08.2026 – 05.09.2026",
+          "total": null,
+          "noResults": false,
+          "rows": [
+            {
+              "phrase": "за 07.08.2026 – 05.09.2026:",
+              "shows": 17
+            },
+            {
+              "phrase": "+робот официант аренда",
+              "shows": 17
+            }
+          ],
+          "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-09.png",
+          "collectedAt": "2026-09-07T09:49:41.689331Z",
+          "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nаренда робота официанта\nза 07.08.2026 – 05.09.2026: 17\nСкачать\nДобавить все\nЗапросы со\nсловами\nЧисло\nзапросов\n+робот официант аренда\t17\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+        }
+      ]
+    },
+    "serpAnalysis": {
+      "status": "checked_partial",
+      "engine": "Yandex",
+      "region": "Москва lr=213",
+      "artifactDir": "docs/review/kiber-serp-kettybot-20260907",
+      "queries": [
+        {
+          "query": "аренда KettyBot",
+          "engine": "Yandex",
+          "region": "Москва lr=213",
+          "checkedAt": "2026-09-07T09:50:16.212965Z",
+          "url": "https://yandex.ru/search/?text=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+KettyBot&lr=213",
+          "captcha": false,
+          "results": [
+            {
+              "position": 1,
+              "title": "Аренда роботов с доставкой",
+              "url": "https://yabs.yandex.ru/count/Wg4ejI_zOoVX2LdS0fqK05CaYjShkrD7eMBQawjGCOrAR-Wq-iGt2824OmadS0Bc1AfummJq63CUc1S46fk0aJq04V1w1FGIG6YXp-ToPy_sEtU-wsldwtUytd27wtGg6G7TK5AoqeX2eTFdr7v6fG2WqfWHj8JqGwqMMP6e91W16I49sG5JDZSmbE80H09APVCBnnDB70OTnxjeJKq1JUW2mdG1tWGAu5wlX1MWlLu1Aq1xlV9LWFPwPIz0UxqIf03jzOfN0LeWHgoSBos-ee-nwF6fdtTD7Qe1ZKAVJgSpj-tR6RsVKYYqdkPGQFJvjAEuL9hdKbi27AnlZEEYhsav6m9EKbd9W4pA-Np31BW17C06xjFfCKs93jWbKgjXRm9sYTHgs6BG1V0omue8mDLtlKRdK0MjR-mkaMjCmstIRCDwz011j2BKhrV20jWwe6Fth3zZQcCgNp1Rlx2mdRluQ9Iqi3MHPObKmz015HPsq6GLoZTNm1HqBcynv2OpHgSX6Cgzv0mslwmdw7wSGOoGum--wJ-i0SoeVp25jhRk_oxFlAnyx_BCoyhdCgFYUFpz03CLjg-TmN9h-jaPBBScfdbvDsQMbtVZ9j-yNTTrdJRxAMXG3kb6cXxNC34kqdiD4-CYlLts-R9tYxnxy-GFDcK8dn_J7fo0U34BvR--ISWU7DTlQLrdQXAo1yVrMi-4wGwivRE-H-7Us-5UaQadp5ofL2f3yCe2sZ4wXkMWyXy9yC6BFM6n6YByF3lNCi42lEWyKQpeJ3ykbO_JT6ITDSzqneURKSwrpkbrRjFucEluo6rB6mm9FOVbT-Gr2eFNkUPGovHgmci0qRklxtkQjzNn7rk5zFF1Rs7wa8HRr5QNZJCMagLhYwfRXPKDae46~2?etext=2202.-380tZcOPRD5C3FsxZX6YPOOj9oOLAW7paVLDUOjqhVrcnNsa3dzcWZ2bXdjeW5m.d2b23d4bc149934b1fb9188fb64fa6dd67eace00&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+kettybot",
+              "snippet": "Срочная аренда. · Привлекают клиентов. Поднимают продажи. Эксклюзивные роботы. Более 30 роботов. Техобслуживание. Доставка по Москве и обл."
+            },
+            {
+              "position": 2,
+              "title": "Аренда роботов на мероприятия в Москве и по России",
+              "url": "https://yabs.yandex.ru/count/WfqejI_zOoVX2Lbj0dqK0ACbaDShkrDtga0XJQ42Fn6THgSeUgRE3G8WuUXhhg-rp4CqFG5p0bMyOG9wZ1aFp0i2ZKt0o1w027Wz0de98BGgZ5YWt6a2VJwNEtkstxdpXZjVl-FrXZjS9_JEeyyd_iodKDksf_Oq2fLAdqwfbKX8gKuIKXBIiGEcR6vWADM1u8rIsVpgKXOzOj1nD266AI3i2_1UhuGLeBrU0Ij0UxtoLO3sUcKlG7kz4gG0xVMALm5Q84QidAy9BrSPw0M0E2EdIuiVhzG-X9aVlDu3D_UnGS464o29809F2megu61zOnmNVKtBsH3mnZiD7-72ecGFIEFDNWBO91e4HkVp3HFW1d006xYq4zUWbDqBi4kaLiFU1EmIgTMmnQ0BuAMdQieSgg3rZTqbSerfk4sQRLYF7Y28LeHw6mx31z9gI0ZWwtebB82j0rej63bcYvTm-OBP-eM5xTp5HwEaXQs9nPpoKf38Z8KTD5c5ieh0hOn-SmLCmTpaeKTXwodeC1FACOVX8Z7afeu5C-dOFKRCZD4X69fwCzxyWkbQJz3zE8CO8GTJ21VymnWQ_y0Vp44U-N-X-j_tGlM_ptMWoTVVwJ8FyjTwSTt-irvSjpFDCscGp38JKGTp303crpEzkwxhEcsU81Vb1Ig08psmz1x0aHvOUajx-VBoY9kL9t-lBgWkFwOz684kNdpe_WjzIgJ2PTgXrkUrVzAfJH7iizxhNWSNmZr1Eh5sFyf0XwyCvagbKXc2LnRGNX8f_nAh5bQkCCW0GnZyj3bN8S7sfO2GCHFylnx3BzSmACOH03C2ve4H-0CSve6EkjEYh5o9_UWd2kmiL7FEXc0keev5YaHm01OyOvR1_KGicYrXfNkUqm40~2?etext=&from=&q=",
+              "snippet": "Аренда роботов на мероприятие в Москве, аренда роботов в Санкт-Петербурге и по России. ... Робот KettyBot Pro."
+            },
+            {
+              "position": 3,
+              "title": "Робот KettyBot Pro, продажа и аренда в Москве",
+              "url": "https://yabs.yandex.ru/count/WgaejI_zOoVX2Lc30jqK0EFbaTShkrD_Fa-SKD7ZuuIYG97YZfwGRX002KTVStsjPHwYwGcO4wZY3HFGOynuO5uGQ6m2HlO0HC3h4T1BE8FGHl1aGTzf0dq-bpjxjj-vyuOxNx_ZzOOxt6dKYTyuBhMT-3E7vlRKcK_jt7axfKX7jP8Hq0qb9IiD4af6G4P899QGHZYTjf8H4D9s1qpPtC1GgWF16wMo-TMbB7h4eEDeGWnJGDWNuBrU2Ij0Uxq2Le3sUkMh0Etrobw0zdebI07QwnMl0hH0Z5WvNmTYb4gbKgdCwT9zMh9b7yBD3rxlWPlxsA1WWmcGH121fmK55N2mlZ6EYxwcvMm8UEETXezmOL6o1wJnPXUH8W8E5A6SppTCW1l00MpWqavSWqfqm2wHMWrx4x1Bf5R35eCkW9UUgYbpg8BMDtQNo3McuJPfjc4zUe0WMX7gRJWC7qYh8I60h-kLi02s3cYrO3DGSqnGanVCrYyiRESkFXebBMnD749Pe9e0lMDX1qrMeNpxACleDrV05CnD7deKjccFZZ7afeu5C-dOFKRCZD4X69fwCzxyWkbQJz3zE8CO8GUM9pn-62QDYlx17EIH_pU4D-rxGtZJFdT4bQY_qsKUvA_rMLsw_ApFwjA5QQwWvcMMAn0vikkwhjFc2N9HNg0qHAc2IEyQebH1fBTBA5zU7d6pykJlLOI8sOzf3rQWgcn9dVz2oOnqmqrI7W-zzaykcK9IwBFUwxxCXTm5gtOVZqSPwF2LmLofL2f3yCe2siicvPzGvzPtXK46608P_FmvS2KUtIeWI2zGzm7bPA-nZqnF7rZKxegQby5W4ZZ4htwAlPMoAdX3vaPokZDKL0v-2U_OrWGf16W41p4f6i6W3rmTQ4x4eb0HLbeN31a0~2?etext=&from=&q=",
+              "snippet": "*Стоимость указана при аренде на 1 день, до 8ч работы, для г. Москва (под ключ). При аренде от 2х дней, а также роботов со сложным функционалом..."
+            },
+            {
+              "position": 4,
+              "title": "Аренда роботов в Москве и МО под ключ",
+              "url": "https://yabs.yandex.ru/count/WgyejI_zOoVX2LcF0WqL08FcbDShkrD7eMBQawjGCOrAR-Wq-iGt2824ew-vljRIaNnv2PWJgE8Ju7h31FGOCnwO5mGQcu2HFG0Hy7e4iXKGq2SWCd5YfCaLa2a3jXCGcJZHuo4PHsQ0jWGGMkZpkTpPi_tEdU_wsldw7QyttE7YJgTJcakb0A3Ue1OXKMiOAP5m8wZ8AeDg16I4H884JzAHaj8CpxG3fcnkO2ZLWU2DKjdywb8MFMBGSOGf8EmBy5wlX1MWlLu1Aq1xlV9LWFPwPIz0UxqIf03jzOfN0LeWHgoShmcp42OGNhvuaDEb_un8AViGXldWzHwukOyD2ZQO04a44NXQK5011-iRuxZeQrhEXe0ttY8dlBqbTeRRhPiTn9KBi2EqdCytJ3RUPPdDlWm4t00EO0FtwVIOfaG7x1AfrR0t0Rj4QZLi0z05yD9JDMKELT3wnkuIkSOqt2RDDgn73n14AqAz3OVX0sar90JmTRqI5i3M0QtL5vC_OsfZAbymMx-mi9sx-6YKjB0r8GW3p-xgIv657JHPXVAr2qj6lxa2fc1kyj2ZiDMvlCMGcpeMpAHZznWnCqQ7O6ZgpNZp2wPhFK7tumnYX1mfg9RyC5sr-EI3lLZ7uF_wD21Et-lJW3XzhWT4ylNt9fiQaQ_zQ4BOVlQZ2M5ZcYj0qPbb63qbkwxhEcsU81Vb1Qg6YN6HtckO61VfxTBBbxrRvDsR9t-oCr-Z7zCUhC3JuzET_ted8xfWdT_IkixaP4GNhFFQFxct1cQOWGvV6SoLIgKo1AyieBsiKlucW5jqLnXaW24M_FJdVEY1ZGqtUxWjc0dxBBcHHGv8wJ0Cw27WUQIIOQ1OV1IbPt7rxmnXsCTe0cJ4UvdW2hPTerYONnsEv60j6gMB7QCBAxTXLWW0~2?etext=&from=&q=",
+              "snippet": "Аренда роботов на мероприятия под ключ в Москве. Шоу-рум на ВДНХ. Эксклюзивные роботы. Заказы без посредников."
+            },
+            {
+              "position": 5,
+              "title": "Аренда роботов для бизнеса от SPI ROBOTICS",
+              "url": "https://yabs.yandex.ru/count/WgSejI_zOoVX2LcG0iqK0AFbZzShkrEVIdCdYXCeUg0-FldJbaOt2824uqrzkAovljOo3z7q1Cm9LF49SBrX0dgC6G_C2mADJS387e08U4i0eOK-dykTFTlltFckhvslt_5wmnskRTjHf-sqxIcUE_Cer8v6ezFRdkPGf_E6vZQEuzES1j7F3IKZ82CafI8hKfAI4P0Hqb9rwGXCsTp0KAe3mHkbildLfInwnA3ZUBqILe3sUWMi0EtrobS1skkLlG3jzKgG0hJNAru5Q84OiNA-9guOzYY29mL8JfTUGkQbyY7yFtYz1sxkOuE23IP04a44dXOKLC31-iOuBlgQbhCXu8qtCQi8szZ6-Np31BW17C06hlS1fKk94XsmIwHMmzu4x1AfrR35e0lWfQTgojxg4CXRZJX7hz4vL47h6xjBv1hJS9iqsx0UFK0GhGZrDXo63wJLa130r_LAM03R7gpMM-4B4R0dfmjcwnSMjdCN7usI5hOc_h1u4jKHRbZOGPDLADk40SheDrV05CnD7deKjaEmNsB8JHqBPjAnUuoO6QD3C3JrPhpv1TErdg3xSGOnGeuREoG_FAEhweCxi3tzxmzy-juV-FIvpIs7VwT1-FQr6iZ8Fwk1ZCmqLy02CyjC9pJccBdqnYptNTTrdJPFa8lo0iKXyIcItZaaFaNIMoRNbtyGAIc8dlo3_CZYwCS9M5dXGkM_qEnOdbc_8eRosZ-flSA5n6Uzr_qLArLSINQCOVUZ37Juoc2kL2gL8NXb0UsbLlarsEpeki8W0mm17Fpv2kZ6wQ7FBdPIZLEDQ0-5gSGbZLzRTwsjmHJ-aMFVXszszqQAzK69Ju5cllVbAe91cHjjahqEK5ESFu1mZ4sQGSNx0oUnJHb1HsyFiEX02oj9UNiF~2",
+              "snippet": "Аренда роботов для бизнеса — неутомимые сотрудники в сфере HoReCa. Порадуйте покупателей впечатлениями от обслуживания Bellabot..."
+            },
+            {
+              "position": 6,
+              "title": "Аренда робота промоутера Pudu KettyBot в Москве",
+              "url": "https://robort.ru/lease/arenda-pudu-kettybot/",
+              "snippet": "Аренда Pudu KettyBot — робот для приветствия гостей и клиентов. Быстрая доставка по Москве и всей России. Профессиональная поддержка и..."
+            },
+            {
+              "position": 7,
+              "title": "Может заинтересовать",
+              "url": "https://yandex.ru/an/count/Ws4ejI_zOoVX2LbI19qQ05DigzShkrDNSUBPu-ovfIXyScVFFKsnGG0a74SmpRYoW93946vMr5ryhMKUeka9c1EeuWqJq6FCU61U46Xi0aRs04J0wn7GJLoVX011gLGUqAK445heyxdSsRFzpftl-jhv-XslDzpXBY6Dk5gHVcw4u9bnzCDJfVxm0CduWQB8xPufYgUFZmraOmbfXFE-er3eD0frFlDS-ipjwNDwuqzeBeNcg0h9o54L2ihXp54LkWOXvSXpt2dDyJkNGdDKXMOSvRZKlgTEQGuQIKG_r6gH5OdwOrGaHAF8clH30yd8XfArwET6q57I22GbAn4LYNeqGgd8YWIcR6vWAAK1anfAPOK9l4q2DM3GSKJau-FZurEoB21ylH9MWFPw1Qm0xVNALm7QwvMz0EtrIf02jDShNWLehrx9dAy35Cu0XN8C5tAwjDyU5P4FORz_y7eFN1D_AMWFaEZk05-vZmqADc31mWNESvH11HoiRupZegzfEHi2tdXZj75vPCJhCckysV76HaHPQZgVRvYQR03J6xu1RE1whIHELpPiVHrXLA06SHEmIwHMmzu4x1AfrR35e0lWvL05hM_iBf5hJCDjqcp3UlG0GRGYrDjm63wGLaD205_NAs41R1tGQdVh5nQsSnSVZP8MjXPsQE3pgf39riZeDrV05h0w_i1YnCmO7OAXV0kJd0eJm7Ij9-X-d46Ca6ClZkgBOsG5VvWEbBFomJGHEIt_w_VYUdoltulhyRaUyXpaxnFqU11-RREB2_cppIuk9DFSGGkp33C6YGMFRiHngXAZzm6sb6tHMnqww-i8emAzcORqvH_MBOBboLyiJWcW7zCUh00FBxmn_uK6cUBQCksH4NgjTm9NHXlxxCnXaCb9foX7dD3OAdAkL2gL8NXb0UtVGlclI0lRX1ojc0ay_Fysbmzjun7N1ei8Oa_uSnM2M726kYqrCcT93VpHu1yj8HuyXVLa5lz7xTRcPZH2RLyJWYaEQN3282T5yuEuG7EbAvEUWW0OWIvv9JN151Z2gP1J3DijdqBC0SEL7NF55qOLbuweS6h06Kmfrt4KNg5_kSP1nIYxJ9NxlSkwPLOUQH9kCKnngUjmfyFHl19I7Gh4GoFNL_R0FUFrdB2oEDkc~2",
+              "snippet": "5 км до Калужского шоссе. Помещения от 563м² в аренду. Быстрый заезд без ожидания · Комфорт для логистики · Профессиональная УК"
+            },
+            {
+              "position": 8,
+              "title": "Робот KettyBot, аренда - Время Роботов",
+              "url": "https://itis-time.ru/robot/kettybot/",
+              "snippet": "*Стоимость указана при аренде на 1 день, до 8ч работы, для г. Москва (под ключ)."
+            },
+            {
+              "position": 9,
+              "title": "ВауРобот - Аренда роботов официантов Bellabot, Kettybot...",
+              "url": "https://xn--80acb3cbjrd.xn--p1ai/oficzianty-dlya-reklamnyh-kompanij/",
+              "snippet": "Без машины времени. Просто аренда роботов официантов Bellabot и Kettybot для торговых центров с единым федеральным запуском."
+            },
+            {
+              "position": 10,
+              "title": "Аренда роботов на мероприятие по доступным ценам",
+              "url": "https://rbot100.ru/arenda-robotov-na-meropriyatie/",
+              "snippet": "Аренда роботов для мероприятий и праздников по доступным ценам. Удивите гостей инновационными роботами для развлечений и презентаций."
+            }
+          ],
+          "screenshot": "docs/review/kiber-serp-kettybot-20260907/serp-01.png",
+          "textSample": "К дополнительным результатамК основным результатамОбратная связь о специальных возможностях\n+13°\nпоиск\nпоиск\nалиса ai\nкартинки\nвидео\nкарты\nтовары\nфинансы\nквартиры\nпереводчик\nвсе\nАренда роботов с доставкой\nroboagency.ru›аренда-роботов…\nСрочная аренда. · Привлекают клиентов. Поднимают продажи. Эксклюзивные роботы. Более 30 роботов. Техобслуживание. Доставка по Москве и обл.\nРейтинг 5,0 из 5\n5,0\n63 отзыва\n⁠\n«...Сотрудники действительно знают своё дело...»\nКонтактная информация\nТелефон\n+7 (999) 055-XX-XX Показать\nВремя работы\nежедневно 9:00-21:00\nМетро\nм. ВДНХ\nАдрес\nМосква\nРобопёс\nУникальный робот, умеет выполнять команды и вилять хвостом\nРоботы на День рождения\nУдивите гостей нашими роботами. Почасовая аренда\nРобот Теспиан\nСамый редкий и технологичный робот Теспиан в аренду\nРобот-гуманоид G1\nБольшой выбор роботов. Оставляйте заявку уже сейчас\nРобот-бармен\nУникальный автоматизированный комплекс по созданию коктейлей\nРобот-аватар\nИнтерактивный экран. Выступает в роли виртуального ведущего\nХимическое шоу\nНезабываемое шоу для самых любознательных\nПроизводство 3D сувениров\nУникальные и неповторимые сувениры для ваших близких\nСкидка 10% по промокоду СЕНТЯБРЬ\nroboagency.ru›Скидка 10% по пром"
+        },
+        {
+          "query": "робот-официант KettyBot",
+          "engine": "Yandex",
+          "region": "Москва lr=213",
+          "checkedAt": "2026-09-07T09:50:20.400453Z",
+          "url": "https://yandex.ru/search/?text=%D1%80%D0%BE%D0%B1%D0%BE%D1%82-%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82+KettyBot&lr=213",
+          "captcha": false,
+          "results": [
+            {
+              "position": 1,
+              "title": "Найти скидку",
+              "url": "https://alice.yandex.ru/?alice_deeplink=%257B%2522directives%2522%253A%255B%257B%2522name%2522%253A%2522type_silent%2522%252C%2522type%2522%253A%2522client_action%2522%252C%2522payload%2522%253A%257B%2522text%2522%253A%2522%25D1%2580%25D0%25BE%25D0%25B1%25D0%25BE%25D1%2582-%25D0%25BE%25D1%2584%25D0%25B8%25D1%2586%25D0%25B8%25D0%25B0%25D0%25BD%25D1%2582%2520KettyBot%2522%257D%257D%252C%257B%2522name%2522%253A%2522%2540%2540mm_typed_callback%2522%252C%2522type%2522%253A%2522server_action%2522%252C%2522payload%2522%253A%257B%2522typed_callback_struct%2522%253A%257B%2522typed_callback_name%2522%253A%2522BestPriceStartTypedCallback%2522%252C%2522payload%2522%253A%257B%2522mode%2522%253A%2522MODE_SERP_MODEL_QUERY%2522%252C%2522query%2522%253A%2522%25D1%2580%25D0%25BE%25D0%25B1%25D0%25BE%25D1%2582-%25D0%25BE%25D1%2584%25D0%25B8%25D1%2586%25D0%25B8%25D0%25B0%25D0%25BD%25D1%2582%2520KettyBot%2522%252C%2522serp_offers%2522%253A%255B%2522https%253A%252F%252Frobort.ru%252Fproduct%252Fpudu-robotics%252Frobot-pudu-kettybot%252F%253Foid%253D646%2522%252C%2522https%253A%252F%252Frobort.ru%252Fproduct%252Fpudu-robotics%252Frobot-pudu-kettybot%252F%253Foid%253D644%2522%252C%2522https%253A%252F%252Fwww.xcom-shop.ru%252Fpudu_kettybot_pro_1281062.html%253Futm_source%253Dyandex%2526utm_medium%253Dgoods%2526utm_campaign%253D1281062%2522%252C%2522https%253A%252F%252Fmarket.yandex.ru%252Fcard%252Fservisnyy-robot-dostavshchik-pudurobotics-modeli-kettybot-pro-v-kompl-s-zaryadnoy-stants-belyy%252F6026366743%253Fclid%253D1651%2522%252C%2522https%253A%252F%252Fwww.xcom-shop.ru%252Fpudu_kettybot_pro_1281064.html%253Futm_source%253Dyandex%2526utm_medium%253Dgoods%2526utm_campaign%253D1281064%2522%252C%2522https%253A%252F%252Ftnvst.ru%252Fcatalog%252Fservisnye-roboty%252Frobot-pudu-kettybot%252F%2522%255D%252C%2522source%2522%253A%2522serp_filters%2522%257D%257D%252C%2522analytics%2522%253A%257B%2522origin%2522%253A%2522Scenario%2522%252C%2522purpose%2522%253A%2522purpose%2522%257D%257D%257D%255D%257D&best_price_from=serp_filters&model=alice-agents-best-price&best-price-redirect-supported=1",
+              "snippet": "Найти скидку\nФильтры\nЦена\nФильтр Цена"
+            },
+            {
+              "position": 2,
+              "title": "Аренда-робота официанта на ваше мероприятие от «Дивент»",
+              "url": "https://yabs.yandex.ru/count/WhWejI_zOoVX2La80rKL02FbZDShkrFtSQOuyRJjQ1wzJvouVQ0R1432SGSmAm5p0bMyOG9wZ1aFp0i2ZKt0o1vZ1BmU0Rq445heyxdSsRFzpftl-jhv-XslDzpXFdCGDWeGAA9v3i9suj0SwfHARoWP0HaXrKf6G4P898HaB0qbBP5OGXgXL6Ij8LGDt05JDZSmbEgYuogLpHmtz8IQCEWuBWi8Nw-45Q2zNW4hG7kzybM0zdfbBq1xlHAa0EtrYbS1MY16h9mlxSVa2-zvrzIX6a_dL0gTIlDeD9_Uk7Jgd4vhw3Itdz2e7SMbqZoNsXBWO7rZ71TzJSlP4F36MvSr0SjgqziolDcNOB07mVxXVBvX0jm03c03zxazmgL41-mIgTMmDm6xH6erR37e0dYZ0d0vL47h6xjBv1hJS9iqsx0UFK0GhGZrwvMm0BOEwFgUXOdZxcNxBfYjNrZOpbryD4fQs9gO8gCvmhLnpy8Ecgn2-UOAM4R95Js6t6J6w3G4GpmUUq0pX_K4tOypY15oWA7jFyoSJ9BaW-afT4x-bsv2K_jUkWbDxNFfkROfVwSmERNrjJ2IMkxFmaXgkKmp_KECMQP_Y377pANtGbTiAcgPjT2uVLlSTLtNQVEIpiVS5Dr8q-CDN88wlM_W4jJfRGvVzbyc7LvF_c9BiYJzcFRW1CfsTbF-wvksBEbHvxUqhZCrRLdIeyvhFM0LCoSqd_LRU11PL9A5MdjavagbKXc2LtPin-WOc37Alu6YJnt5uM149_pKErSFmrujQwhkHC1pAMASihssK0yf3pR7cPnHfO0jffvdWXhPPMdjEkPivpuAyVsWTWTGfhtAU3X2OdHRGtXgLysMPJdzRFkMZBJWAWPznzY0iiE2r0AUk24Csb0OirlygmvklFWTne1PKO6riDA3rA00~2?etext=2202.WF4aG1u7_Kf9ZjSNHWewgSxHdYeyq90Glxwaph6JmajRzMElm5Tn5yTM2kdmUa_jeGV1dWJwanpqa2J0cWRnaQ.a8db1420b9cb12caca1a8314b7a8ff358b2a2353&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82+kettybot",
+              "snippet": "Удивите гостей на вашем мероприятии уже с первой минуты с ии-роботами от «Дивент» · Селфи зеркало. Фотобудки и фотостойки. VR-игры, PS5, Xbox X. Энергичные аниматоры. Работа по таймлайну. Аккуратный монтаж. Брендинг контента"
+            },
+            {
+              "position": 3,
+              "title": "Роботы-официанты KettyBot Pro. Купить или арендовать!",
+              "url": "https://yabs.yandex.ru/count/Wj0ejI_zOoVX2Lc-0XKM04DecTShkrD_Fa-SKD7ZuuIYG97YZfwGRX002KTVQvc7Q7e2vWIgUCC4z1Wp7fWN11gRW94znWXuFG9w2I2q4JnPq7UQG9_FvSwUxNVklE7Er-zulU4ETqK98YIh4dGAdKgTjerFxHoQsrCyUjzGfzG8wQXMCWAweQHafK52oGZ828d44j88fzDMCW92qkw0APiR64frqN6LocQE6tf2JHXq79S5XAzNmWhGNg-05Q2zNlagG7kziXUWlLu9Ke3sUiMh02qG8rRErmIM6jX0FGWiv7I7dcHHFU-QEbJZwPnAeLDf7etcqnkNJftJQGsTvlOJ6hMZk5IQvr9R0XoiRupZegzfEHi2tdXjjXHc2TJ1NSERlOkkW7iFEPzlc00tW0FOmAMTk0QLw81T8hKQzYPWbqYjXYq6NG1lL00kFLLJvb05hM_iBf5hJCDjqcp3UlG0GRGYrDjm63wGLaD205_NAs41R6amc_QBQGPgZWbgyeBP-eM5xTp5HwEaXQq9ArAqnFqqG8A57JHPXVBD5N3QesCCkQdhO2OTkyU8cJ4w3S4GZySUqCnXFK7tumnYX1mrFnf_k88XGJwumvRzVozesVhU2rgsFfU6hSlVYH8HlxQ18pr-je4ZFPZcpmMDMVvSq9XZvjBBNEunMyfBlfPPt-WKvsJNTLsdpKiw7tDJT2DDZpL4gO98xngYL46ajpxGbvT7tAmy-U-0Vre_fZrOWQgoj4V_XUvlSLodo2fbNkkTu861EVcihnAb2Uk84onpNxpkorp8NR1gz_5uH3DpfLAf3C4hExPZT0pBEkNlOh4J4yNXO4GU_DGwLoa2c_BlGiPEhO7TjWnYG7wRdOWBZshlqqLI8pGJIeLvYa9sWQIYzfgJrH8QgumhnmJo6mRc6KB7dIYSzxWSJUbHa8x6GrkCdKGr9le8CUY4i3Afj_S0~2?etext=2202.WF4aG1u7_Kf9ZjSNHWewgSxHdYeyq90Glxwaph6JmajRzMElm5Tn5yTM2kdmUa_jeGV1dWJwanpqa2J0cWRnaQ.a8db1420b9cb12caca1a8314b7a8ff358b2a2353&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82+kettybot",
+              "snippet": "Роботы KettyBot привлекают внимание, показывают рекламу и общаются с посетителями. · Свой парк роботов. 50 моделей. Работаем по России. Пожизненная техподдержка. Под ключ. Надёжные решения"
+            },
+            {
+              "position": 4,
+              "title": "Робот – официант BellaBot",
+              "url": "https://yabs.yandex.ru/count/Wj8ejI_zOoVX2Lde0YKM05EecTShkrE7vYfGu3RUqvC_xnuLpfuD0Y3Xo3n4qnCm9r359y3rXWdeCMOyC2y8D3O18tkC4V1w17G5fcpHkyBM0L5Ym5Q1ALlqjbDFjb4Cq9O0GWjzFfSxUxRVkVDTNpjVl-FrXZlS7-SpXurFxQVJEPtYzWt5SzmvjNDKXQWvRAXzIw7vKmhDKHMISJlpA3wLEgKvga91IK52IaP0HaZKwnAOihc1eLGN7LUfREQueIVKX477yGud8AQ09ii2mjShOGLehrV02j1UhtmLeBrUsGlGNgy4AK1xlU9LW1Q84IldQyBA4APwI0WsfqlxwLeIdtTD7QhnT4wbqAaqZqRpwOrBfyxfj8PES_i9ZTfHN2hDSwaj0GxMDyPnqTUqd0q1RxmNHE5XVbZWVBvX0jm03c03Lu0TLaJ8VO1T8hKQzYPWbqYjXYq6NG1lL00kFLLJre17-5iZpj5hT0vLqFh6xXAvnZJS9iqsh4SF44GhGhqDX-43QJKa1F1rlH8MmDO1NUk5eLeBUuoxOBP-OM4xT_7HA6bXQu8G0nXHoX2tBEoWoIgKRww0APYRFFGeR3q57MP2sSAZ7P8OSbF7Wfbqx1uZPiRe6Y0Oul7O0vevh2VeVfn1Z923Wo3S3rEp8Zyu0s3T_ye0UlbU6K0ldsi1YDlV8s0J_DgwaVkpTIENQPxGneDPdj36WpbcBhtDvRxhkgxJvYMTZxcf0SfdAdeVe7ocehTqsPThjDv5J_vXLsA9VanxS09Ejb3g_1SwDkvInZBno7hjdnpIfAJGPpqpLogLoX2yicCxHiUmB2k_4nGos2WE1oC27lnXxtnWXOq-DwKTPRl0_r_GTbIjB8Elb7AZW_NXr7U9xnGo3gLiGISvg3ux4hsxh_j559AozlrSn8sXZJb_aq37x2lrJ4Mr-FPj6NzgdAzODA-Ykg6m4kSWrW00~2?etext=2202.WF4aG1u7_Kf9ZjSNHWewgSxHdYeyq90Glxwaph6JmajRzMElm5Tn5yTM2kdmUa_jeGV1dWJwanpqa2J0cWRnaQ.a8db1420b9cb12caca1a8314b7a8ff358b2a2353&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82+kettybot",
+              "snippet": "BellaBot создает wow-эффект в вашем заведении. Узнайте подробнее!"
+            },
+            {
+              "position": 5,
+              "title": "Умный робот-официант для обслуживания гостей.",
+              "url": "https://yabs.yandex.ru/count/WoCejI_zOoVX2LdO0wqO04ChfTShkrEFedX6epqfUdgWKXKzKXyK6mH0mf5vYAOdO4wWYZTCG8ynuu5vGQ2n2HZPOuo0roEWbm122tq-bpjxjj-vyrrVEr-_u_M6Erpyv-U6uZa8syVv1E7pj7Ffz7O-RQcBdn5Jt9v6RTiffIPPYt080TL6CeoAYgX8Haf9LgJQg6X6a52Ha5AIaOoQUcEeMjzGCW8oGb92CW8oGkBkW2cR6nXATT5nbSfcZXjwGaqOT1nD8FBnyV7nALaM4BvU2Ij0Uxq2Le3sUkMh0Etrobw0zdebI07QwnMl0hH0Z5WvNnDN_bxWBPpYShfq7n2mquSmyuFNU-0-xvewLEFfd4gXKsaUZURJ6vTEdTDf3PtczXCQjQEuL9hdKbi27AnlZEEYhsav6mBUU7tQZoxZy134ArqtEvA9EUe64kVp3HFW1d006xZ-Ab395oKwO9T8hOQz2TWbKgjXYq4Nm1iLW4jFrPGvL47h6xjBv1hJS9iqsx0UFK0GhGZrDXo63wJLa130r_LAM01R1xJQtKfTZN3RD8EOgYc9Xs0NpDOlB6pdBZuQ9IriJG1w85o1JHA0XHqqMONopHKm1REJmjPJq64cb2s8rSunP0nGkWvcqh5wZ9WPeqCmnEEn1pHpM4_G_JY36277JXOhF-nxJ27vu0swrV_MD4dolJLDadok3TUIlsym9-HhBn0Y-RCN295acfSyz9Zb9G-zc5tNTPqsB-byp4tHZJGzxj34YEES44OhM3HuWBrmaju7s0idwQsdykNVrNO6wCc_omcNI3-cFHW1HByjCVyj0OaOMTblQLtNpqZ4oCfUwvNqC8pyuhFUwxxCXTm5gtOVZqSqCrSgbSeGlB9ZEqR7m1mhlua9K3P4SJWO4IhyE3-kWVB63IkOckD-D_Vi2Q9QQaLamb6-G0tHt6OWjYpxoUUqZNToCOGhi0sFgWAS5e2zNUIrz3_uqtLsIDHWtSGgTJw7JOS1nxOa5mPL663TkgHUMRAJ29WFIUrPqZAUAa3IXt_iq-YARV7epJNwL268v7Q0jhwmiWq3cG00~2?etext=2202.WF4aG1u7_Kf9ZjSNHWewgSxHdYeyq90Glxwaph6JmajRzMElm5Tn5yTM2kdmUa_jeGV1dWJwanpqa2J0cWRnaQ.a8db1420b9cb12caca1a8314b7a8ff358b2a2353&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82+kettybot",
+              "snippet": "Интерактивный робот с привлекательным дизайном для вашего ресторана. Закажите! · Большой выбор роботов. Сервисное сопровождение. Экологичные материалы. Гарантия качества. Уникальные решения"
+            },
+            {
+              "position": 6,
+              "title": "Робот KettyBot Pro, продажа и аренда в Москве",
+              "url": "https://rbot100.ru/robot/kettybot-pro/",
+              "snippet": "KettyBot Pro — робот нового поколения, умный, надёжный и стильный. ... KettyBot Pro — это робот-официант и промоутер в одном лице."
+            },
+            {
+              "position": 7,
+              "title": "Популярные товары по запросу «робот-официант KettyBot»",
+              "url": "https://yandex.ru/search/?text=%D1%80%D0%BE%D0%B1%D0%BE%D1%82-%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82+KettyBot&lr=213&rs=eJwzmsDqpcslZpJRmFeclBse5uqdF6HraRHuamlpmO7xaVvzx6_HLz0IDji78PyaGbvvXd_CCFJu6ZtimuJdnOjvGRAYYJnplmZQml9a7vHl2e8z9yfsu1aLprwo1LDSIiWioszNyzDZL6DCM9_XJD_QY2Xz5d7mHTs2vWAM-Lm09-3Fx10f80DKCzyLvDxCwh0rc1xdk1wsfePT0gOMAj3u_-6YcP7845XZAdPWPJ_dMmfhy-tg0_0ck_zSvb1SvCo9S_08wiMjMjKCMgM9Zk290r3hxKaLy9BMD0kscvRzMTJwL_AxzjXI8naJD8pLD_S40_rrztcNV45NYQxY1tjzatu1ZWtsvfS4xOI9w7xTUoNDC_zdvYIdfRItQ319ioGmr170s-_Ukr8HGQPa9zddPtz9vPcH2DVBZsGR5fEFWcmuyXkVFamFkdlGUUWOHp9On_528Gb7Qe2Av09mf2z9-ahpOVh5XnlGUbxfSHlkcGG5f5WPQVKKWUSeo0frjbuNHRNmHTjPGLB51Zqj_-a8n1DopcMl5p8eZpaX6FdgmFdpbpbhFmhWVhpcUu6x786J1d_XtbXxBOyb2za9YeeVs8kg1S5RFfHZYaWRHiaJ_tnJ7iG6rvE5gY4eu57_m7Jr6eE1aQG398069vv53AZ9kE8t8yoty5xCQsrK_P1c8k3Ts8IjoiIcPfomLV4_d-a2xWsYkZ0ONN27ICzMIM8gNSM8PsjJpcLHIyPdNSzQY8mbP_d-9n1oMQ3ofXNy57HXy5uCQaqDg0pcjHRTcvKN88K8nDO9I_yT01LSPRYf_NDycv25l5kI1QDhTi3D&products_mode=1&serp-reload-from=constr&parent-reqid=1788774616521895-9909743986687957902-balancer-l7leveler-kubr-yp-vla-32-BAL",
+              "snippet": "Популярные товары по запросу «робот-официант KettyBot»\nЦена\n747000\n747 000\nруб.\n₽\nРобот PUDU KettyBot Белый\n⁠\nrobort.ru\n1. Робот PUDU KettyBot Белый\nВ магазин\nЦена\n747000\n747 000\nруб.\n₽\nРобот PUDU KettyBot желтый\n⁠\nrobort.ru\n2. Робот PUDU KettyBot желтый\nВ магазин\nОК–цена\nЦена\n825056\n825 056\nруб.\n₽\nРобот PUDU KettyBot Pro 216764 -доставщик сервисный цвет&#58; черный в компл. с зарядной станц.\n⁠\nXCOM-SHOP\nВ ПВЗ Boxberry и др.КурьерСо склада\nВ ПВЗ Boxberry и др. Курьер Со склада Доступно не для вс"
+            },
+            {
+              "position": 8,
+              "title": "Производство и продажа роботов для дома и бизнеса",
+              "url": "https://yabs.yandex.ru/count/WeaejI_zOoVX2Lbm0jqJ00EaYTShkrD7SJjLz4XlN8LFj0U_RnKR1432qTTSNskPXsXw0kO4gdZ31FGOCnwO5mGQcu2HFSO8U3q2UWbd4De8dYpeEqsWp-ToPy_sEtVUSEVhTxpUS8VxV3hngFDsEgTs3itjgJEVshdpTagTJbl920ZfQGTCsTp0KCfB1enIsSp1d6homg3ZQ48CKq3O5-2zNWahG7kz0bQ0zdhbgm3jzSfUWFPw9KW1skiLhmAqG8nOELy7OfHAfLAfpEdIVLgoPRcF3Gesi1u1NS1p0L457AnlZEEYhsav6mBUUAVX8rnObEm1QRpPPqmGCbH1udo-OGBS00vW0vTsuXhK6WJi4gdLi3S1kqHgDMmnw09uwQcQCeSgQ7rZTubSOnfkasORrgC72A8LeTw6m_21j1eI0lYwNWaBOEk0LWis0pN713LvmMpzmi9sxkAZKTB2reHXLOQSRyoEXHqqMOLo7RSdezzS0LCmDtdeKTYcFJh6a9iw5ioaO_SOCJD6Xs289yQ0isOEcAxr1DsFCuWHSc1vmkE7OTAew1_CGHxvVmkGCdzl0LBcpqM0J_yxNUP1_beFDLNbPptKL1McEIPFaLbcefLtNTTrsYmZXQshh25A5KHwrn2b2YAzNKBvylA8cvKdVwyYHCn-J7km0bLbPtV-2ztVuhXEaOH_NlidbqozVVcizxelSo5tmQhTn-DH1ZfyPJ1NAfNA4BooOtjvfFnX5EGUL9Z1JGeQ_B0vS2KUhIbW20Ag-h_Dtho1eH-V0SgFccz6a8HFWvg91R_RLAbGognkrMqV8khEfTfqRZ2y8t0AqYIl4Hp2fcXCgmzeXO-SY4MHHLXPPIra~2?etext=&from=&q=",
+              "snippet": "Многофункциональный современный робот KettyBot Pro — идеальное устройство для работы в сфере общественного питания и участия в промоакциях."
+            },
+            {
+              "position": 9,
+              "title": "Роботы официанты и доставщики от официального...",
+              "url": "https://yabs.yandex.ru/count/WgqejI_zOoVX2Lcd0lqK0ECbaTShkrEVIdCdYXCeUg0-FldJbaOt28248uZwS5bpVQrb7gBf2PWJgE8Ju7h31FGOCnwO5mGQcu2HFSO8U4i0eOK-dykTFTlltFckhvslt_5wmnskr9bByQSpnvzGg6r3ftVK3d7RqnpgTDxGtCPnV9eJ_TnGCW8oGafICW8oGggJb8o0Z92Mgaj7R3jWokO6Xb9UCc2KocOEvbIJ5mOTn-kLi0AqrojW1MYlLxuAq5wlx0LehrU25A2zNl4gG0l4Y9NpDV6OFvNe6d8bfqil8VDI-H1cVl1w3zpSnmO56rYFW2xWkO2e0WxMDyPnqTUqd0q1RxnVEWGrO8MTppTCW1l00MpWUXzGkfGeqG6xH6erx4t0Bf5Q3LiCkW1UUggcxAqEWRpLY7Fq6fr35RI-iRj4hZ4Djqcp3UlH0mJHYb1lms7uG5eD2G5yNQ-41R3jmMgz5RuG0Njokc2sVc5XEtVnqIXfOMlYYGH1Hi0SY65X1qrMeHo0qrX6lxa2fc1kyj2Zi1s2_H93RkfOC9EEtMF4p1WTWY6U60FEcZbWkjOJT3_E84R8SVDsvOTbTCdomJkIaV_xiP1yxyT2yhbD8Or_zps-ObzRC_RZPsl6VZ3DCbrsCCjCEYJCCNFfRIxtNTTrdJRBI67hAdD8V8gaTmw9Jv7qbidrvHz4IWgY9_yWFx8u-d42LbQuKFalD3kMPzQlYA6yzazght0XyLdlTN_5IXLNaXrZsFqe0ns-CfWhbKfb25xPiRqaKtx72JZ0L9Z1JGeR_0XC5OWy1klw-gkX2mOtpEqU8Y5q5_WcRN7dt0cuJ7s-QEPSJWtYU3BIRm6Bu0rpbJMXJAPMey4Eyc6SymPnJApDe2i11ETZhupCf98FiEXKX9NrlKC6~2",
+              "snippet": "KettyBot: Робот официант-промоутер. ... Один Bella Bot способен заменять до 4 официантов и поднимать вдвое больше грузов, чем человек."
+            },
+            {
+              "position": 10,
+              "title": "Робот Pudu KettyBot Pro белый купить в Москве - низкая...",
+              "url": "https://robort.ru/product/pudu-robotics/robot-pudu-kettybot-pro/",
+              "snippet": "Pudu KettyBot Pro — робот для гостеприимства и розничной торговли, оснащенный рекламным экраном и…"
+            }
+          ],
+          "screenshot": "docs/review/kiber-serp-kettybot-20260907/serp-02.png",
+          "textSample": "Быстрый ответ:Популярные товары по запросу «робот-официант KettyBot»\nК дополнительным результатамК основным результатамОбратная связь о специальных возможностях\n+13°\nпоиск\nпоиск\nалиса ai\nтовары\nкартинки\nвидео\nкарты\nфинансы\nквартиры\nпереводчик\nвсе\nНайти скидку\nФильтры\nЦена\nФильтр Цена\nАренда-робота официанта на ваше мероприятие от «Дивент»\ndivent.ru›Аренда-робота официанта на ваше мероприятие от «Дивент»…\nУдивите гостей на вашем мероприятии уже с первой минуты с ии-роботами от «Дивент» · Селфи зеркало. Фотобудки и фотостойки. VR-игры, PS5, Xbox X. Энергичные аниматоры. Работа по таймлайну. Аккуратный монтаж. Брендинг контента\nКонтактная информация\nТелефон\n+7 (499) 398-XX-XX Показать\nВремя работы\nбудни 10:00-20:00\nМетро\nм. Пролетарская\nАдрес\nМосква\n3 сметы за 30 минут\nНаши менеджеры уточнят детали и отправят 3 варианта сметы\nОтветственный сервис\nБыстрый и аккуратный монтаж площадок, на связи 24/7\nБольшой выбор роботов\nОт робота-официанта до роборуки с видеокамерой\nРазвлечения для гостей\nНи одно мероприятие не будет скучным для ваших гостей\nпромо\nРоботы-официанты KettyBot Pro. Купить или арендовать!\nrbot100.ru›продажа-аренда…\nРоботы KettyBot привлекают внимание, показывают рекламу и о"
+        },
+        {
+          "query": "аренда робота официанта",
+          "engine": "Yandex",
+          "region": "Москва lr=213",
+          "checkedAt": "2026-09-07T09:50:25.969929Z",
+          "url": "https://yandex.ru/search/?text=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%D0%B0&lr=213",
+          "captcha": false,
+          "results": [
+            {
+              "position": 1,
+              "title": "Аренда робота",
+              "url": "https://yabs.yandex.ru/count/WfyejI_zOoVX2Lcu0eqK07FaYzShkrD7eMBQawjGCOrAR-Wq-iGt2824ew-rj9Ux7mcO4wZY4-1wmmJq63CUc1S46fk0aJq64V1MG40l0OGM-dmkT_PiltFdkxvsldx7wmrtk3dkT3gbkLGA0EeDQX4IjOQH4WbBI4P0HaXCEs3AvWQ6Ke9nkT8tSDTKeq04WuxZdOi7H2YW2Lr0c2x0cq01tEkLi0AqrojW1MYlLxuAq5wlx0LehrU25A2zNl4gG0l4Y9NpDO751qy1DfONv7JfFoDIobZq-DJFUufFR-SK6fr6xUbzEtEfNTjIQ7GATJwZk5IQvr9x1GxMDyPnqTUqd0q1Rxn5JdXxI-mCjritEu-_9mFTfFFvXWbm0pY03TodqsEQ4XsmIwHMmzu4x1AfrR35e0lWNGh0vL05hM_iBf5hJCDjqcp3UlG0GRGYrDjm63wGLaD205_NAs41R1tGMdqn-JEcDgRo1RFr2mlRkOkFHaaBMnE5CGvyX-YhXHqqMONopHKm1NEJHvZ2beBEvIs6tDInp1XT0mH3F5roW6ZWpdg2xiSPn0WvKb0j-M6wQl791tic9eN_I-F7tlVI-B7tkHvhcENloo-IIRvsAIH9uCykXIG9P9gNMtHcURb5ttLTrscpXSS_SxU6YN6HtckO61VfxTBBbxrRvDsR9t-oCr-Z7zCUhC3JuzET_ted8xhWdj_IkixaP4GNtFFQFxct1cP8CtEbKgaCmIixQCVe69PVvOzQuy121OjIDm8U_CCwL_vWurn0Z3KLdYsiI0pYjoVpEeDd-EWqg2FJTJOae8F1k_u3_c2rMLRclNO_v26EAOm4_TqjUViO1eanOwTOXWOZpnOLTLFZ681029PSC8yF-s97xiBA7e5O0m00~2?etext=2202.-7nS1u9mrnmuNnSSvQ6U0TQCn_Zh-Mn05ad5mr_CSx57FkwhiiJEs4plMXwSboUojJAnQgPkrk_RTRLFa6jwm2hkeGx2aHZ4dWRjaXB1bXk.3138f5b51a48c8eaabb359d6aa57f8365cf5283a&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%D0%B0",
+              "snippet": "Срочная аренда."
+            },
+            {
+              "position": 2,
+              "title": "Роботы-официанты KettyBot Pro. Купить или арендовать!",
+              "url": "https://yabs.yandex.ru/count/WhCejI_zOoVX2Lcu0YqL04FcaTShkrD_Fa-SKD7ZuuIYG97YZfwGRX002KTVQvc7Q7e2vWIgUCC4z1Wp7fWN11gRW94z1X7mUWJq4a1e8tYoeEyqWJwVovqzs-_SUSEThz_nUiCTBX6ILGawXKwbJjl6ftOEpUqf7hrlg5DgX7HKAna1tL1Iij8WeMG4P8H4OWbfXDDfAna18Mrtm9JD3Gob1EDofM_Whgb6WGW67STb0U7hbR02jDShO0LehrU-2j1Uh-m5QAzNWXIWlLxnAa0Bn8YLypLHXZBuY08fdDCTUf95nQB7ftxUKtnwEwVGw3HgJ-_RcKljsfP2erEeynd5fT8ybzehSB2-COwBlgRbR0XuuxNPKfWbK0Tt3MzsFn2wk8XmEPzlc00tW0FOmAMTk0Rhie1T8hKQzYPWbqYjXYq6NG3lKW0kXofeVMDtYLnZ6cwJPXlMemS8eXMXteR3y86q6X82-BfU2GjWIuFPj5zCCr1pJ52J5ypMBonivou-6YKjR4qOyWWgqr7Xny8Ecgn2-UOAc8AvoKEFmbOcxT4nXjpKiSmONGC4GpnTSe1euCvwWkx76SG8EMf-DFvm1KE2V32DsCZ_qfH1VIzD6TJdRjWp-_i4MtnVow9f_raMJJlJJ8695BDCWOaKSynSUfdBVTTrNQVD5Xx_p5qDKQeWqhk6A5KGwQqFzENb4JShJ_uxu9_MZsaFLg2gBEtHVw7xMnpNARBAcDV-oILJHE9yrdlTbxcGks3LxkFnY6RcIgLI6O9NTj2EqJ4ilygFnG7oNC6Yr8qU_0mxLr72DkK2HAInqy_WmrVcBo3HPWVaX8VNzkaMSH5gFYYhuaE_6_3wiLlA-oWZmM24UYCE9VH0DMVbEtI4xPOssFK_0cT2giMORCkO401-8XODkHHRPUzq~2?etext=2202.-7nS1u9mrnmuNnSSvQ6U0TQCn_Zh-Mn05ad5mr_CSx57FkwhiiJEs4plMXwSboUojJAnQgPkrk_RTRLFa6jwm2hkeGx2aHZ4dWRjaXB1bXk.3138f5b51a48c8eaabb359d6aa57f8365cf5283a&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%D0%B0",
+              "snippet": "Роботы-помощники KettyBot от производителя для учреждений, образования и бизнеса! · Свой парк роботов. 50 моделей. Работаем по России. Пожизненная техподдержка. Под ключ. Надёжные решения"
+            },
+            {
+              "position": 3,
+              "title": "Роботы-промоутеры, гуманоиды, аниматоры в аренду!",
+              "url": "https://yabs.yandex.ru/count/WgmejI_zOoVX2Lcn0lKK0BFbZzShkrDtga0XJQ42Fn6THgSeUgRE3G8WuUXhBVCGJK_0d40LRvY07cF60_E2G6CJCBB7809UZu1U0WYj2YCMA7UQG9_FvSwUxNVklE7Er-zulU4Ermczy-ZpYJ_pATIsxQazZKAbqgTJQYKIKggJX9I4TEo0APiR64e9nkLAty1TKuq24GmwZYR4omB2rojX1MYlLy0Aq5wlV1MWlLxP2z1UhmGfG7kzubM05eWHA-Theh7Cju4D9IWvNLhyUANs8RpyuFKUk2nwVEhdFSMdjtCAZKwZzlI-dRdKhcqfD3g5EfzHN2hDSwcz0WVh6-Euw6jQpeQ0Dzvf-0WN5YLxG1flTXLsq9u7v_FvXWbm0pY03LpQYMjGoku5s2LIgs5l0dQ9r6hOOj05y2u5uD9JDMKELT3wnkuIkSOqt2RDDgn73n14AqAz3OVX0sar90JmTRqI5i3M0QqMZ1opnKkuVC5i_SB2TkxYer7ImjP44qWq1OwiWBEmWoQhKBwv0gPWRlBGex2DEGmNYI4tTImpHjS0mH1FbnmW6hYpdg3xSGOnGWuXNF0FOsZy0t-m1LY1_-iJXEbxVO8mVQu5PRQ_qt9ZVrzBE-KT_Ypjb7V8DCkCtPXbcR4RSmo0NTTrdJPRUFmpTmCuqWDBxm4SwO6bjxINBo-Fk5bvylVgWkhoOzg34UZYnOVklz2dH2fSfXrgVLxx9vtQ5C4-wxtkTN0Xt1Ea4slt8vgPAvLAPGXUsK4xHiUmN5F-A09u85UmA7KZ7lp4EbSDmlQLco7n9lZ_O8PVha5PZECHPiJT0oE36HYWnu0tz1q_rwerK9bNDftC3o21vuh5EbMM14iUfqQm4RjSIR8Kxslnsc7XftCd_-sC_qGiYbl2oZs2fmC0~2?etext=2202.-7nS1u9mrnmuNnSSvQ6U0TQCn_Zh-Mn05ad5mr_CSx57FkwhiiJEs4plMXwSboUojJAnQgPkrk_RTRLFa6jwm2hkeGx2aHZ4dWRjaXB1bXk.3138f5b51a48c8eaabb359d6aa57f8365cf5283a&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BD%D1%82%D0%B0",
+              "snippet": "27+ моделей в аренду: от роботов-собак до гуманоидов. Своё производство. Бронируйте! · Свой парк роботов. Работаем по России. Под ключ. Оперативная подача. Надёжные решения. 100% запас расходников. 100% запас аккумулятора. c 2012"
+            },
+            {
+              "position": 4,
+              "title": "Аренда роботов на мероприятия в Москве и по России",
+              "url": "https://yabs.yandex.ru/count/WfeejI_zOoVX2Lbk0cKK01EbZjShkrDtga0XJQ42Fn6THgSeUgRE3G8WuUXhhg-rp4CqFG5p0bMyOG9wZ1aFp0i2ZKt0o1w327Wz0de98BGgZ5YWt6a2VJwNEtkstxdpXZjVl-FrXZjS9_JEeyyd_iodKDksf_Oq2fLAdqwfbKX8gKuIKXBIiGEcR6vWA3MuOOFIDt0t8sD91WmwZYR4C0M4VG7UwvMm0hJNAs05QAzNlWhGNg_i1MYlLu8KeBrUyIf02yI8bVCrySMmZ178ZhQSBYr-l5BpiK711ZLkF2NWWG38EeE3zOrnNFGrBMT3m1llD7o42ukIFI2DDpi4CZ70C71oFjym0Mu01x21Ipjn3IhH0Rj4QZNiJS0kaLeDMmow05vwggRCeGfQtzXT8jUOXjkasORrw062Q4Mej-4mV22jXeG0lgvNmWBOEg3LWf5ZjdW9bo-OhLzOsCvTV3HAMjYQSAow6a71Zfg57JHPXN89GqaP_UOAc8AvoKEFmjPJq64cb6CEmqLYo4qT2sRIiNkCc1cZGp34CwaueO4xcAxr1DsFCuWHSZ25SC4_ZA7n3_p17EIH_tT4b-vxHtJfFZSlukNlT9a7-MlzsrRVp_gthJwcMQRBnIp7-3LXZW70_7gcTzTrNQVDpR8jOoK17Ec1fVS0ZlJ0qblQovUNHzoiFFbxTK5r-J7jmGXqyU93zr_eKo8LBjCEhzPh_wHJcoBOPxtNlGukX7k2T6BjVfI13byPp9LAfJ84hsmKUrca_7uYpDISyDA0JHdyk3bN9S4sfe2GCXFy_nx3JpOGSOCn02SYvdC8Wf1iu7yICIyrAhu0WTmdk-Xd4NQMJtFEZ00keeuLHI8u20kUCPW1Vo8M3InXvHwUqm40~2?etext=&from=&q=",
+              "snippet": "Аренда роботов на мероприятие в Москве, аренда роботов в Санкт-Петербурге и по России."
+            },
+            {
+              "position": 5,
+              "title": "Специалисты в Москве",
+              "url": "https://yabs.yandex.ru/count/WqOejI_zOoVX2Ldo0yKP05CjhDShkrE7sZvEQ0gy9veYXNr3yNo304Wu-bhBF4JJ4p0dKCKR9g37cF70l23Gs0ICx368W7U9W5u22AtFc5AvqmJwV2vtzco_S-UxldQ-ViVh3NUuj_ty-VdvAL4L-Y4Aoc7VEVwqfzFRng7vrCPjgVJvX3wXp-Sp6itpg1t5xniApL4Laf4ZZqQTqgVKjdDKXOBggj2r5Xgo0bc9QXf7LYIZ6pE2QgfI4LKeIEXgL5Dfp0Wo0g82aLX26b73gCX8A8W65Kb9YLfJgqLM9EhIRWTCsTp0K4emJgdq3TpPFA2Y38EEunq54COAQB8i87oz4bQ0zde5h03jzSfN0ThhbRq0xVLAa0AqrojU1MY16B5olYQUKAdh6LQGELtw3mePY05GkD110lvr1_YowF6fd_SKdzxEAJGwZThJ-tRcKhksfT3e5EfyHd6fDC-bzWeSh6-CuwAlQJaR0jvuHJW4qv5nvQs9RtOWA9BqW5pWVBvX0jm03c03bmHVODTQ8s2NIAs6lGdO9LAhOOjX5y1xGG3k17tNQtGELT3wnkuIkSOqt2RDDgn73n14AqAz3OVX0sar90JmTRqI5i2M1hDflvYYwW0JnnVCrYyiRESkFXebBMnD4DO8jqqpm61X1qrMeNnp1Kp1d40KAGfRJq67cL3sJqEAn92REXRCfCNgCM9cZ0x144yN740Qk8FfMa_G_JY362671t3R3zluKlR16AhK_XV6ol1xOQmCFpTcaEdl9ePi-LeSAgYVnQ62Ofg7gfZbeIhcE0VpwvdUNTTrdJOtoxQCbT1HLB3qZW4IButUml1bNwPDikV9VidMsDQFQGz604WL6wF_tebNGx9CRPAwtt58B6vaNN1Nz5glvmGI6-QpFeOFZfmhbKfb25xPGJj6ny1qLFu6OcIWdIc1Eo0j_BW_hZhcbwZsETq0WkU3GVG8WopvVWF_qxwGVOQClk587PBRvnCWXmBbqz-xUHW6HTwoqePdSXtumZZ6y1-0QUV-a5hvs9qPOoiuhXl696SpR1q1tkJZx-VLxawPrzgPUeSAy2FQEUb-r13UT7Q113_sBOqdLFSDk6XefFgIVIOiQ7C6~2",
+              "snippet": "Специалисты в Москве\nпромо\nВсе\nКомпании\nЧастные специалисты\nАренда Плюс\n5,0\n213 отзывов\nЯндекс Бизнес\nАренда - Бабочка официанта чёрная. Аренда текстил... ещё\nАренда - Бабочка официанта чёрная. Аренда текстил... ещё\nАрт-Актив\n5,0\n369 отзывов\nЯндекс Бизнес\nАренда - Рекламный робот. Промо робот — отличный... ещё\nАренда - Рекламный робот. Промо робот — отличный... ещё\nВремя Роботов\n4,9\n35 отзывов\nЯндекс Бизнес\nАренда роботов-промоутеров, гуманоидов, аниматоро... ещё\nАренда роботов-промоутеров, гума"
+            },
+            {
+              "position": 6,
+              "title": "Аренда роботов для бизнеса от SPI ROBOTICS",
+              "url": "https://yabs.yandex.ru/count/WgeejI_zOoVX2LcI0kKK04CbZzShkrEVIdCdYXCeUg0-FldJbaOt2824uqrzkAovljOo3z7q1Cm9LF49SBrX0dgC6G_C2mADJS387eC8U4i0eOK-dykTFTlltFckhvslt_5wmntkL9exfT0SZ-RHV2gzy-XK6ftUzZI7EfqtDBTn79_cH3ytb8o0Z91CA1LPaPAKZ82Ca9QgIqTWokO6XbA36pOeVGDtCpAMPC2WutYz4bQ0zde5h03jzSfN0ThhbRq0xVLAa0AqrojU1MY16B5olYQqh4sPWM0qSxhq4Z8lbTp71WKRrBZnb8070Y3h30xMDyPnqTUqd0q1RxnTEi1Am03D-Np31BW17C06hlS1fKk94XsmIwHMmzu4x1AfrR35e0lWfQTgojxg4CXRZJX7hz4vL47h6xjBv1hJS9iqsx0UFK0GhGZrDXo63wJLa130r_LAM03R7gpMM-4B4R0dfmjcwnSMjdCN7usI5hOch1YMwD9Y8C723fgiGld9f4j6lxa2fc1kyj2Zi1s2_H93RkfOC9EEtMF4p1WTWY6UISK93Tp1TAqdw7wSGOoGu-RjoW_Bw9BbWtUOylxNWbdylHRCui_D0AJjxvx7NvQlvJay_opFuPbfdl35YLbcfecPO-RIorpkkwxhEcrkbcqPA-6G-1H9xnmIdoBfBPFhop-8b1H4J_v1VcHnzEC4hAnmeV9VQ7OipwnV4KDvxP_KNk52uhFUw_wAbIgk93l6iFjH1ZfyPJ1NAfNA4BooKUobbV9FMEB5yOIN1cm27lpv1gWDmXxyx68trL_Lo31Hc8bSaWcsi-oh6aq_bsv92N2HnBOkWzGmrXDdOK1ozyZiX0UJww0APUbBOGtsbiauQ3o8uuZR39G8GF3AzifOMp3k08kYNrWfJf1C~2",
+              "snippet": "Аренда роботов для бизнеса — неутомимые сотрудники в сфере HoReCa. Порадуйте покупателей впечатлениями от обслуживания Bellabot..."
+            },
+            {
+              "position": 7,
+              "title": "Аренда роботов в Москве и МО под ключ",
+              "url": "https://yabs.yandex.ru/count/WgWejI_zOoVX2LcD0jKK0AEbaTShkrD7eMBQawjGCOrAR-Wq-iGt2824ew-vljRINkv-961Ee8fFWEiD4z1Zp7XWNX1eR096zXX4m5i10Nq28XCdHffS0PaoO3i1aOaJFHwISMG6Q4i0eOK-dykTFTlltFckhvslt_5wmnqkxdGwfRbK2W3g3MeH4hM6aH89IqX6G4P894Zm91qfAStmJ3jWokO6XbA36pOeVGDtCpAMPC2WumXJGDWNuBrU2Ij0Uxq2Le3sUkMh0Etrobw0zdebI07QwnMl0hH0Z5WvNnFcADNC0SKQELtwpuYKiW_XvWUlzy3DVMnGi46D6qy9U200iixWO7rZ71TzJSlP4F36M-I4jxV4pd2xTRFJc7HIrd9rFjym0Mu01x21-tHwJ5EY0tQ9r6hOcu1T8hKQjXXq0RpqL4sPGnMqlh6xHAun3RT9imthqGC4qOfGRyDX-41Q3Ga1V5slX0MmTK1hzSNapvZQcCeNpDOlB6pdBZuQ9IriJKoHsaA0ODm82pjeiWhb8wwoZ7vp1Kp1tEIXHs6hStcB8JTrB9X9n-unOcQC3i4GpwJYX0RkOBhM4tG_pY16o962QiaFqrMBJpxOyx4v-LylvsZ-NY_dQFvSFyNBwk_DiCWZN_kbPD5-zal9eZ7DC5xYcEK9EyAxhkiwRMwMRHahgM5YNAJt6YR6HNgxzF9bxnPvz-R9d-pCr-Z7j0ShyFJuTEU_tic8BbZdjxIkCpaPqGNhlFPFxgs16MQWmrS6SwLIgGp1Anl5Nl9G_Yf6K1PFU6d09XZyqUTyy84D3ZTxl2sO2Si2v4O2Lcg8wxf478D04JXXgfzMcK4s28i7F-cvxlsT8HRs4Je06VLR9ZX2jciC2-PNbnSRh4MXw6AtN67bjbTf0G00~2?etext=&from=&q=",
+              "snippet": "Аренда роботов на мероприятия под ключ в Москве. Шоу-рум на ВДНХ. Эксклюзивные роботы. Заказы без посредников."
+            },
+            {
+              "position": 8,
+              "title": "Робот-официант Си-Си, продажа и аренда в Москве",
+              "url": "https://yabs.yandex.ru/count/WcCejI_zOoVX2La30gqI04CYXTShkrD7SJjLz4XlN8LFj0U_RnKR1432iJvSrbnVQvc7Q7e2vWIgUCC4z1Wp7fWN11gRW94z1X7mUWIo9Pn1Q2Duig3lD84-dykTFTllt7d3dQ_VyNh37Iu9eQHQA8c4aX6G4HA99QGHJgUjP0I4H884JzAHajAC3pjWokO6XbA36pOeVGDtCpAMPC2WusX2VBqILe3sUWMi0EtrobS1skkLlG3jzKgG0hJNAru5Q84OiNA-3iGebKgbKfdJfVkqPCjo7niKR53ZnbC27WY0h3CuMDyOnqLVqt8s1BpnJiD7kB0esGFIUBEJyCJHWY7dy_c6oSQxBBFPbu606y01RE3IJbo3Kus0NIAr6lOcO9T8hOPj0Be0NdggfioX2bhVs5qYrvY6swJPXlNe0O9eHQYtuJ1y8As6X02-hbV20jWweDM2pK3DCK5DNZ1Rlx2mdRluQ9Iqi3L1VjEHOMJAix239gjGlha2fc1kyj2Zi4rxT8mXDtKic4d7xZ5YPemEmH3FfEA41kvWkjOJT3_E84R8WUK9Zn-6IQEYVp07UUJ_fSiyo5zROSp5BCFyS1Apt7TTrtNQt2pRCbQY8KeLH7hN4AKA8hrTGldoyeYRbIT_ho94p7wiG5NPsPt_GlSifsnJ5R4eh_sJIwRUldpMUzsNkP2xODNku_4e0ns-CfWhbKfb25xPAFPogVn7nhlD2IyDs0GJ_3PNil-UfC8NAlpV6SgQmMfpIwf6itpB0v5kbg71vWa_PamP8weklO4B0WdZ5ku11N7oZQzejeILptbE1m00~2",
+              "snippet": "В компании «Ваши роботы» в Москве вы сможете купить или взять в аренду робота-официанта выгодно, с гарантиями качества и доставкой в..."
+            },
+            {
+              "position": 9,
+              "title": "Может заинтересовать",
+              "url": "https://yandex.ru/an/count/Ws8ejI_zOoVX2LaW1AKQ00CjhjShkrDNSUBPu-ovfIXyScVFFKsnGG0a74SmpRYoW93946vMr5ryhMKUeka9c1EeuWqJq6FCU61U46Xi0aRs64J0wn7GJL1tSa1GAfK7T2a1X1RwV2vtzco_S-UxldQ-ViVh3NUuIqWZhbQadniXU6OS_V1KgJyyG39-R1yGJXGWdZa86mK85D0JFZxt4j88vtr7eT1f5EfyvhdqcTlJv_J6dz1S2irH5PAHeoeKbCEPeofq3KBA4ONYJccEtxaKcgCgDECenwNsFNLASz188lgXLekiIDGVeo8X6aNMf1yQI4OsbAn5FpU2Zf9682bPYQX8rACHIaLM96QF7J1bSmD3gN5Zcr9POG8Eognl67GS4Vdu-FZub2mB25-lX1MWlLu1Aq1xlV9LWFPwPIz0UxqIf03jzOfN0TghLpBdwu0CXmzCXD05SxgqtnuLaGzXp_tWzHwu9lvIq1uWqTq1ld8V6nHii1H140GyHnbKmC7wnZWk-fgMio7WZJT66vT7HhmkiyQRdQa3I9E4vVbymzHa0vZUy0rW0zTh9N6wic7hwmYZ0ZM8cu1T8hKQzYPWbqYjXYq6NG0lXofeVMDtYLnZ6cwJPXlMemS8eXMXteR3y86q6X82-BfU2GjWwu1Mkrk_iB2Tk_XebBImjR13GnBnp9Q22fbiKqQ_kGAsWDNn1nOZPiRe40pnE48mGeK9OBhM4tG_pY16oA7aR-kBOsG5VvWEbBFomVISMfJ_zKh-W7olL_87v7DzP9QglqyO7BBzsYQNSUfdcrp6AQRvfejPZk7k2FEW6t6SgiJeVO0jPLlqLeVE-Zh2g41lfY5z-OTrYs1vyXUBKmBenxG7Ay332s_CVw51fhYsJ7jaX5xhdS2LqRu-AqABaJq_SQHP28sj8kTAfL8PWbTsqFuvofyzgj4IWEGFdZNy_pON0stZtzQ6VWXYJ_ZZ4u9O38QwoJGodqWDcD6W6Iq87b17s3O7unOMV3flcFboiLes44oCqh66da8tZ027l99HC8KySIfQDeOjwBB8izLGc1rplKKb5fUEdUUKOeKfgHwEmclqJsZyknXbXwDoVnzPjspA8qtVBSqFATo7Ex0SpLkYwb1XFJIoJsKF_39ULmihZR8D2W00~2",
+              "snippet": "5 км до Калужского шоссе. Помещения от 563м² в аренду. Быстрый заезд без ожидания · Комфорт для логистики · Профессиональная УК"
+            },
+            {
+              "position": 10,
+              "title": "Робот-официант Си-Си, аренда - Время Роботов",
+              "url": "https://itis-time.ru/robot/si-si/",
+              "snippet": "Компания ВРЕМЯ РОБОТОВ предлагает в аренду робота-официанта в Москве с оптимальными техническими характеристиками."
+            }
+          ],
+          "screenshot": "docs/review/kiber-serp-kettybot-20260907/serp-03.png",
+          "textSample": "К дополнительным результатамК основным результатамОбратная связь о специальных возможностях\n+13°\nпоиск\nпоиск\nалиса ai\nуслуги\nкартинки\nвидео\nкарты\nтовары\nфинансы\nквартиры\nпереводчик\nвсе\nАренда робота\nroboagency.ru›Аренда робота…\nСрочная аренда.\nРейтинг 5,0 из 5\n5,0\n63 отзыва\n⁠\n«...Сотрудники действительно знают своё дело...»\nКонтактная информация\nТелефон\n+7 (999) 055-XX-XX Показать\nВремя работы\nежедневно 9:00-21:00\nМетро\nм. ВДНХ\nАдрес\nМосква\nпромо\nРоботы-официанты KettyBot Pro. Купить или арендовать!\nrbot100.ru›продажа-аренда…\nРоботы-помощники KettyBot от производителя для учреждений, образования и бизнеса! · Свой парк роботов. 50 моделей. Работаем по России. Пожизненная техподдержка. Под ключ. Надёжные решения\nРейтинг 5,0 из 5\n5,0\n22 отзыва\nУзнать ценуБолее 50 моделейОт производителяРФ, Беларусь\nКонтактная информация\nТелефон\n+7 (495) 799-XX-XX Показать\nВремя работы\nежедневно 9:00-20:00\nМетро\nм. Дубровка\nАдрес\nМосква\nпромо\nРоботы-промоутеры, гуманоиды, аниматоры в аренду!\nitis-time.ru›аренда-роботов…\n27+ моделей в аренду: от роботов-собак до гуманоидов. Своё производство. Бронируйте! · Свой парк роботов. Работаем по России. Под ключ. Оперативная подача. Надёжные решения. 100% запас "
+        }
+      ]
+    },
+    "competitorAnalysis": {
+      "status": "checked_partial",
+      "directPages": [
+        {
+          "url": "https://robort.ru/product/pudu-robotics/robot-pudu-kettybot/",
+          "finalUrl": "https://robort.ru/product/pudu-robotics/robot-pudu-kettybot/",
+          "status": 200,
+          "title": "Робот PUDU KettyBot Белый купить в Москве - низкая цена",
+          "textSample": "        Робот PUDU KettyBot Белый купить в Москве - низкая цена                                                                                                            Размер шрифта                                                              Цвет фона и шрифта                                                                                                     Изображения                                               Озвучивание текста                                                    Обычная версия сайта                                        Технологии вашего успеха  роботы для бизнеса  и образования                                               8 800 555 84 28             8 800 555 84 28           Заказать звонок         E-mail        info@robort.ru             Адрес       121059, г. Москва, ул. Киевская, дом 7, корпус 2, подъезд №7           Режим работы       Пн. – Пт.: с 10:00 до 19:00                                                                   Подать заявку                    Каталог              Бионические роботы-собаки                    Unitree         DEEPRobotics         Petoi         Weilan         Роботы с лидаром         Роботы-обходчики         Роботы собаки с искусственным интеллектом         Роботы с голосовым управлением         Роботы с камерой для видеонаблюдения               Роботы для образования                    Роботы для профессиональной разработки         Роботы для университетов         Роботы для школьного образования               Сервисные роботы                    Keenon Robotics         Pudu Robotics         Роботы коты-официанты         Роботы с экраном               Роботы для гостинично-ресторанного бизнеса                    Роботы помощники         Роботы-доставщики         Роботы-официанты         Роботы-уборщики         Роботы-промоутеры               Роботы-манипуляторы                    Коллаборативные роботы         Мобильные роботы-манипуляторы         Промышленные роботы-манипуляторы         Роборуки манипуляторы               Роботы-уборщики                    Гостиничные роботы-уборщики         Офисные роботы-уборщики         Промышленные роботы-уборщики               Роботы для развлечений                    Колесные и гусеничные роботы         Коллекционные роботы         Роботы-игрушки         Роботы-собаки         Человекоподобные роботы               Роботы-гуманоиды                    Unitree         Agibot         Noetix         Ubtech         Роботы с искусственным интеллектом               Логистические и складские роботы                    Роботы грузчики               Аксессуары                    Зарядные станции         Кисти         Сенсоры         Лидары         Грипперы               Колесные и гусеничные роботы                    AgileX         Elephant Robotics         Пожарные роботы               Программируемые роботы                    Программное обеспечение                 Аренда              Аренда Keenon DinerBot T10             Аренда Unitree G1             Аренда Unitree Go2 Air             Аренда Unitree Go2 Pro             Аренда Unitree Go1 Pro             Аренда DeepRobotics Lite3 Venture             Аренда Pudu BellaBot             Аренда Pudu KettyBot               Проекты              Гостиницы и рестораны             Образование             Промышленность             Ритейл             Склады и логистика             Строительство               Статьи            Гарантия и поддержка            Компания              О компании             Прои"
+        },
+        {
+          "url": "https://roboagency.ru/arenda-robotov/",
+          "error": "HTTPError: HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://spirobotics.ru/",
+          "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+        },
+        {
+          "url": "https://pudurobotics.com/products/kettybot/",
+          "finalUrl": "https://www.pudurobotics.com/en/products/kettybot",
+          "status": 200,
+          "title": "Products - PUDU",
+          "textSample": "      Products - PUDU                                                               Return          Products      Industries      Case Studies      Resources                 News    Blogs    Events    Download    PUDU Open Platform        About Us      Support                 Online Repair Request    Documents & Manuals    Service Plan       Contact Us                                Request a Demo   Browser not compatible                      Subscribe to PUDU News                            Copyright © 2026 Pudu Robotics All Rights Reserved.  Privacy Policy  Sitemap                   Subscribe to PUDU News                       Contact Us     Copyright © 2026 Pudu Robotics All Rights Reserved.   Privacy Policy  Sitemap       We use cookies to enhance your browsing experience,serve personalized ads or content, and analyze our traffic. By clicking   Accept All  , you consent to (   our use of cookie   ).      "
+        }
+      ],
+      "summary": [
+        {
+          "competitor": "Robort / Pudu KettyBot",
+          "strengths": [
+            "модельная страница KettyBot",
+            "много категорий/роботов",
+            "акцент купить/арендовать"
+          ],
+          "weaknesses": [
+            "страница сильнее про продажу, чем event-сценарий",
+            "мало объяснения маршрута/площадки/оператора для мероприятия"
+          ]
+        },
+        {
+          "competitor": "Roboagency / аренда роботов",
+          "strengths": [
+            "широкая аренда роботов, свой парк, доставка"
+          ],
+          "weaknesses": [
+            "страница недоступна для прямого чтения 403 в нашем probe",
+            "видна как общий арендный интент, не как глубокая KettyBot-card"
+          ]
+        },
+        {
+          "competitor": "Pudu Robotics official",
+          "strengths": [
+            "официальная entity/source страница производителя"
+          ],
+          "weaknesses": [
+            "не российская rental/event page; не закрывает цену аренды, оператора и площадку КИБЕР ПОРТАЛ"
+          ]
+        }
+      ]
+    },
+    "contentGaps": [
+      {
+        "gap": "Exact-model спрос низкий, но в выдаче есть страницы продажи/аренды KettyBot; нужно объяснить, почему заказывать именно как event-сервис, а не просто купить робота.",
+        "kiberAnswer": "Hero + aiSummary + scenarios показывают аренду KettyBot как сервис для мероприятия с оператором и настройкой маршрутов.",
+        "targetBlock": "hero/aiSummary/scenarios"
+      },
+      {
+        "gap": "Конкуренты/выдача слабее раскрывают требования к площадке и маршрутам.",
+        "kiberAnswer": "FAQ и orderFlow объясняют проходы, точки остановки, пол, расстановку и проверку перед запуском.",
+        "targetBlock": "faq/orderFlow"
+      },
+      {
+        "gap": "Generic запрос «аренда робота официанта» существует, но не должен стать primary для карточки KettyBot.",
+        "kiberAnswer": "Primary остаётся exact-model «аренда KettyBot», generic фиксируется как evidence для будущей Подборки роботов-официантов.",
+        "targetBlock": "seoPassport/seoIntent"
+      },
+      {
+        "gap": "Многие страницы выглядят как каталог/продажа, а не как готовый event-сервис.",
+        "kiberAnswer": "Блок «что входит» фиксирует доставку, настройку, оператора, сценарий и проверку площадки.",
+        "targetBlock": "includedService"
+      }
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда KettyBot — робот-официант для ресторана и мероприятия",
+    "metaDescription": "Аренда KettyBot с доставкой, настройкой маршрутов, рекламным экраном и сопровождением для ресторана, банкета, отеля или выставки HoReCa.",
+    "h1": "Аренда робота-официанта KettyBot",
+    "primaryKeyword": "аренда KettyBot",
+    "secondaryKeywords": [
+      "KettyBot аренда",
+      "робот-официант KettyBot",
+      "прокат KettyBot",
+      "заказать KettyBot",
+      "KettyBot для ресторана"
+    ],
+    "genericKeywordsReservedForCompilations": [
+      "аренда робота официанта",
+      "робот официант аренда"
+    ]
+  },
+  "aiVisibility": {
+    "seoIntent": {
+      "pageIntent": "commercial_robot_rental",
+      "primaryKeyword": "аренда KettyBot",
+      "secondaryKeywords": [
+        "KettyBot аренда",
+        "робот-официант KettyBot",
+        "прокат KettyBot",
+        "заказать KettyBot",
+        "KettyBot для ресторана"
+      ],
+      "modelNameVariants": [
+        "KettyBot",
+        "Ketty Bot",
+        "Кеттибот",
+        "Кэтибот",
+        "робот KettyBot",
+        "Pudu KettyBot"
+      ],
+      "entitySynonyms": [
+        "робот-официант",
+        "сервисный робот",
+        "робот-доставщик",
+        "робот для ресторана",
+        "робот для HoReCa"
+      ]
+    }
+  },
+  "blockMap": [
+    "hero",
+    "seoIntent",
+    "aiSummary",
+    "gallery",
+    "includedService",
+    "capabilities",
+    "scenarios",
+    "robotInAction",
+    "goshaQuote",
+    "cta1",
+    "orderFlow",
+    "faq",
+    "cta2",
+    "relatedArticles",
+    "relatedCatalog"
+  ],
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "checked_partial",
+    "readyForPublication": false,
+    "openQuestions": [
+      "Финальную цену/доступность KettyBot подтверждать по актуальному тарифному источнику перед публикацией.",
+      "SERP содержит рекламные yabs-результаты; для production-pass лучше дополнить органическую выдачу/конкурентов ручной проверкой, но для pilot-preview evidence достаточно для выбора exact-model стратегии."
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "cmd": "node --import tsx --test tests/visual/kiber94-robot-card-preview.test.ts tests/visual/kiber94-template-contract.test.ts tests/visual/robot-capability-images-contract.test.ts tests/visual/page-seo-components-contract.test.ts",
+      "code": 0,
+      "stdout_tail": "st: SEO passports expose AI visibility fields aligned to entity map\nok 32 - SEO passports expose AI visibility fields aligned to entity map\n  ---\n  duration_ms: 8.5191\n  type: 'test'\n  ...\n# Subtest: KIBER-93 audit closes safe CTA and WebPage schema false-positive warnings\nok 33 - KIBER-93 audit closes safe CTA and WebPage schema false-positive warnings\n  ---\n  duration_ms: 5.81581\n  type: 'test'\n  ...\n# Subtest: KIBER-93 closes with a machine-readable remediation backlog for non-blocking warnings\nok 34 - KIBER-93 closes with a machine-readable remediation backlog for non-blocking warnings\n  ---\n  duration_ms: 1.573205\n  type: 'test'\n  ...\n# Subtest: KIBER-94 defines a sitewide SEO/AI page-type intent contract before template changes\nok 35 - KIBER-94 defines a sitewide SEO/AI page-type intent contract before template changes\n  ---\n  duration_ms: 1.79185\n  type: 'test'\n  ...\n# Subtest: KIBER-94 contract models repeating content templates as typed block systems\nok 36 - KIBER-94 contract models repeating content templates as typed block systems\n  ---\n  duration_ms: 0.846933\n  type: 'test'\n  ...\n# Subtest: original robot capability image registry records the separate six-image Что умеет block for all 24 robots\nok 37 - original robot capability image registry records the separate six-image Что умеет block for all 24 robots\n  ---\n  duration_ms: 70.953419\n  type: 'test'\n  ...\n1..37\n# tests 37\n# suites 0\n# pass 37\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2091.195196\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "node --import tsx --test tests/visual/media-rights-legacy-hero-images.test.ts tests/visual/media-rights-review-package.test.ts tests/visual/media-rights-robot-cards.test.ts",
+      "code": 0,
+      "stdout_tail": "TAP version 13\n# Subtest: media rights package includes the lost horizontal live-site robot hero images\nok 1 - media rights package includes the lost horizontal live-site robot hero images\n  ---\n  duration_ms: 8.886588\n  type: 'test'\n  ...\n# Subtest: human review document explains why hero images were missing and shows them separately\nok 2 - human review document explains why hero images were missing and shows them separately\n  ---\n  duration_ms: 1.65621\n  type: 'test'\n  ...\n# Subtest: media rights review package covers all 24 robots and records owner media approval\nok 3 - media rights review package covers all 24 robots and records owner media approval\n  ---\n  duration_ms: 6.295067\n  type: 'test'\n  ...\n# Subtest: media rights review package is documented and enforced by CI\nok 4 - media rights review package is documented and enforced by CI\n  ---\n  duration_ms: 1.622402\n  type: 'test'\n  ...\n# Subtest: media rights robot cards record Alexander approval for all full robot cards\nok 5 - media rights robot cards record Alexander approval for all full robot cards\n  ---\n  duration_ms: 10.370725\n  type: 'test'\n  ...\n# Subtest: human review documents provide one approved card per robot with image links and approval evidence\nok 6 - human review documents provide one approved card per robot with image links and approval evidence\n  ---\n  duration_ms: 14.107491\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1472.951495\n",
+      "stderr_tail": ""
+    },
+    {
+      "cmd": "npm run build:preview",
+      "code": 0,
+      "stdout_tail": ":38:49   ├─ /robots/arenda-klipmeiker/index.html (+3ms) \n12:38:49   ├─ /robots/arenda-mini-robo-kofeyni/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-noetix-bumi/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-promobot-v4/index.html (+3ms) \n12:38:49   ├─ /robots/arenda-robo-kofeyni/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-roboshashki/index.html (+3ms) \n12:38:49   ├─ /robots/arenda-robot-barmen/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-robota-ardi/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-robota-hudozhnika-a4/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-robota-sofiya/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-robota-tron/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-senserobot/index.html (+9ms) \n12:38:49   ├─ /robots/arenda-sketchbot/index.html (+3ms) \n12:38:49   ├─ /robots/arenda-unitree-g1/index.html (+3ms) \n12:38:49   ├─ /robots/arenda-unitree-go2/index.html (+5ms) \n12:38:49   ├─ /robots/arenda-unitree-h2/index.html (+3ms) \n12:38:49   ├─ /robots/arenda-unitree-r1/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-uv-box/index.html (+2ms) \n12:38:49   ├─ /robots/arenda-xiaomi-cyberdog-2/index.html (+3ms) \n12:38:49   ├─ /roboty-gumanoidy/index.html (+5ms) \n12:38:49   ├─ /roboty-sobaki/index.html (+4ms) \n12:38:49   ├─ /sitemap.xml (+2ms) \n12:38:49   ├─ /terms/index.html (+3ms) \n12:38:49   ├─ /index.html (+7ms) \n12:38:49 ✓ Completed in 542ms.\n\n12:38:49 [build] ✓ Completed in 2.18s.\n12:38:49 [build] 67 page(s) built in 4.09s\n12:38:49 [build] Complete!\n",
+      "stderr_tail": ""
+    }
+  ],
+  "renderedAudit": {
+    "h1Count": 1,
+    "seoIntent": true,
+    "legacyTildaHeroRuntimePresent": false,
+    "galleryCssHeightDriven": true,
+    "galleryCssContainsObjectFitCoverInGallery": false,
+    "robotCardGalleryMobileSquare": false,
+    "guardrailsJson": true,
+    "guardrailsDoc": true
+  }
+}

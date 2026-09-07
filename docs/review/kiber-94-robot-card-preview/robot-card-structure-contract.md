@@ -22,6 +22,19 @@ Every generated `robot_card` must:
 6. link the visitor to contact/request paths, Blog Kiber Gosha and the robot catalog;
 7. avoid public rendering of service-only SEO/Wordstat/SERP/internal notes.
 
+
+## Approved media contract after KettyBot corrections (2026-09-07)
+
+These rules supersede earlier bad/generated gallery rules and must be used before any robot-card scaling:
+
+- **Hero image**: only the square catalog image from `robot.media.hero` / `/images/kiber-45/<slug>.webp`.
+- **Legacy Tilda hero images** (`role: legacy_horizontal_hero`, old `*__photo.*` hero backgrounds): archive/provenance only; never runtime robot-card gallery/Hero assets unless Александр explicitly re-approves a named asset.
+- **First gallery**: upper non-hero source gallery photos.
+- **`04 — робот в действии`**: lower non-hero source gallery photos.
+- **Capability images**: only `data/models/robot-capability-images.source.json` → `/images/robot-capabilities/<slug>/...`; never generic gallery images.
+- **Gallery layout**: one common height, intrinsic proportional width, no forced square cards, no default crop. CSS contract: slide `flex: 0 0 auto`, `width: fit-content`, `height: var(--robot-card-gallery-height)`, `background: transparent`; image `width: auto`, `height: 100%`, `max-width: none`, `object-fit: contain`. Mobile must not reintroduce `aspect-ratio: 1 / 1`.
+- **Visible UI**: no `figcaption`; `actualDescription`, `seoAlt`, captions stay in data/reports.
+
 ## Canonical block order
 
 This order follows owner feedback and is strict for future generation. Visual/design refinements inside blocks are allowed, but blocks must not be freely rearranged by agents.
@@ -29,8 +42,8 @@ This order follows owner feedback and is strict for future generation. Visual/de
 1. **Hero**
    - H1 pattern: `Аренда {robotName}` or approved close variant.
    - Must show commercial intent: rental/prokat/request.
-   - If the available robot image is the square catalog image, use a two-column composition: text/data/buttons on the left, square image on the right.
-   - Must include immediate CTA and photo/gallery anchor.
+   - Hero uses the square catalog/catalog-card image `/images/kiber-45/<slug>.webp` in a two-column composition: text/data/buttons on the left, square image on the right. Do not use legacy Tilda horizontal hero images in Hero or galleries.
+   - Must include immediate CTA and photo/gallery anchor; eyebrow, H1/price and CTA row must align left together (`justify-self:start`, `justify-items:start`, `justify-content:flex-start`).
    - Must not claim unapproved availability or fixed package.
 
 2. **Short visible AI summary**

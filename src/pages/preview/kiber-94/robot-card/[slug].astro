@@ -25,8 +25,8 @@ const breadcrumbs = [
 ---
 
 <BaseLayout
-  title={`KIBER-94 preview: ${template.seo.title}`}
-  description={`Preview robot_card template with real data: ${template.seo.description}`}
+  title={template.seo.title}
+  description={template.seo.description}
   canonical={Astro.site ? new URL(previewPath, Astro.site).toString() : previewPath}
   image={robot.media.hero.src}
   breadcrumbs={breadcrumbs}
@@ -44,9 +44,6 @@ const breadcrumbs = [
   ]}
 >
   <main class="kiber94-preview" id="main-content" tabindex="-1" data-kiber-task="KIBER-94" data-preview-route="robot_card" data-robot-slug={robot.slug}>
-    <header class="kiber94-preview__notice" aria-label="Статус preview">
-      <p>Preview-first / KIBER-94 · дизайн сверяется с Главной, Подборками, Блогом Кибер Гоши и live robot pages</p>
-    </header>
     <RobotCardTemplate {template} />
   </main>
 </BaseLayout>

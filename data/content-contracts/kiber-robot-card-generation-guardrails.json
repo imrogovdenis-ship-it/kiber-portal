@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "status": "canonical_for_robot_card_generation_after_kettybot_correction",
+  "date": "2026-09-07",
+  "correctContour": {
+    "repo": "/home/alex/projects/kiber-portal-pr8",
+    "branch": "hermes/kiber-full-site-visual-qa-20260901",
+    "route": "/preview/kiber-94/robot-card/[slug]/",
+    "template": "src/components/templates/RobotCardTemplate.astro"
+  },
+  "blockedContours": [
+    {
+      "repo": "/home/alex/projects/kiber-portal",
+      "branch": "hermes/kiber-42-44-price-decision-pack",
+      "blockedFor": "robot_card design/structure/SEO scaling baseline",
+      "reason": "old batch2/public-like contour used app/src/components/robots and skipped approved KIBER-94 pipeline"
+    },
+    {
+      "repo": "/home/alex/projects/kiber-portal-robot-cards-launch-20260906",
+      "branch": "hermes/kiber-robot-cards-launch-ready-20260906",
+      "blockedFor": "new edits unless explicitly selected",
+      "reason": "superseded by current PR8/KIBER-94 correction pass; may contain useful evidence but is not active baseline"
+    }
+  ],
+  "mandatoryPipeline": [
+    "approved contour audit",
+    "one pilot slug",
+    "Wordstat",
+    "SERP/competitors",
+    "content gaps",
+    "SEO passport",
+    "seoIntent",
+    "approved block map",
+    "public visible copy/FAQ/Gosha",
+    "media/source/fact/price pass",
+    "preview build",
+    "rendered/staging visual+SEO audit",
+    "owner review",
+    "only then scaling/cleanup"
+  ],
+  "antiCannibalization": {
+    "robot_card": "exact model/entity commercial keywords only",
+    "genericClassScenarioKeywords": "compilation/article evidence only, not robot-card primaryKeyword"
+  },
+  "mediaRules": {
+    "hero": "/images/kiber-45/<slug>.webp only",
+    "legacyTildaHero": "archive/provenance only; previewUseAllowed=false for runtime galleries",
+    "galleries": "upper/lower non-hero source gallery photos split by sourceGalleryBlock",
+    "galleryLayout": "one common height, intrinsic proportional width, no square aspect-ratio, no crop by default",
+    "capabilities": "data/models/robot-capability-images.source.json only"
+  },
+  "seoAiRules": {
+    "seoIntentRequired": true,
+    "requiredFields": [
+      "pageType",
+      "pageIntent",
+      "primaryKeyword",
+      "secondaryKeywords",
+      "modelNameVariants",
+      "entitySynonyms",
+      "aiAgentHints",
+      "entity",
+      "isCrawlerOnlyText"
+    ],
+    "isCrawlerOnlyText": false,
+    "previewMeta": "no KIBER-94 preview/service labels in title/description/OG"
+  },
+  "knownMistakesBlocked": [
+    "wrong repo/old contour",
+    "build success treated as approval",
+    "research skipped or marked ready without Wordstat/SERP",
+    "generic keyword primary on robot_card",
+    "centered Hero eyebrow/buttons",
+    "reduced robots.generated.json treated as full media source",
+    "legacy Tilda hero used in gallery",
+    "white-background product shots used as event gallery photos",
+    "gallery object-fit cover/crop forced square cards",
+    "mobile aspect-ratio 1/1 reintroduced",
+    "capability images pulled from gallery",
+    "visible service/research labels leaked into preview",
+    "seoIntent incomplete"
+  ],
+  "safetyBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "mergeAllowed": false
+  },
+  "ownerApproval": {
+    "status": "approved_by_owner_for_pilot_generation_contract",
+    "approvedDate": "2026-09-07",
+    "record": "docs/review/kiber-kettybot-pilot-owner-approval-20260907/owner-approval.json",
+    "approvedPreviewRoute": "/preview/kiber-94/robot-card/arenda-kettybot/"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "arenda-kettybot",
+  "query": "заказать KettyBot",
+  "source": "live_wordstat_chrome_cdp",
+  "region": "all",
+  "devices": "visible defaults",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20KettyBot",
+  "captcha": false,
+  "period": "за 06.08.2026 – 06.09.2026",
+  "total": null,
+  "noResults": true,
+  "rows": [
+    {
+      "phrase": "за 06.08.2026 – 06.09.2026:",
+      "shows": 0
+    }
+  ],
+  "screenshot": "docs/review/kiber-wordstat-kettybot-20260907/kettybot-wordstat-04.png",
+  "collectedAt": "2026-09-07T09:49:30.372713Z",
+  "textSample": "YWA 1.9.4\n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\nзаказать KettyBot\nза 06.08.2026 – 06.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+}

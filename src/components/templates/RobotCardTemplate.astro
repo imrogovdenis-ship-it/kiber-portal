@@ -12,10 +12,11 @@ import capabilityImageRegistry from '../../../data/models/robot-capability-image
 import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
 
 const { template } = Astro.props as { template: RobotCardTemplateData };
+const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
-const primaryGallery = (gallery.length > 1 ? gallery.slice(1, 6) : gallery).slice(0, 5);
-const actionGallery = (gallery.length > 3 ? gallery.slice(3, 8) : gallery.slice(1, 6).length > 0 ? gallery.slice(1, 6) : gallery).slice(0, 5);
+const primaryGallery = robotSlug === 'arenda-kettybot' && gallery.length >= 9 ? gallery.slice(1, 5) : (gallery.length > 1 ? gallery.slice(1, 6) : gallery).slice(0, 5);
+const actionGallery = robotSlug === 'arenda-kettybot' && gallery.length >= 9 ? gallery.slice(5, 9) : (gallery.length > 3 ? gallery.slice(3, 8) : gallery.slice(1, 6).length > 0 ? gallery.slice(1, 6) : gallery).slice(0, 5);
 const capabilitiesLead = template.bodyBlocks.find((block) => block.id === 'capabilitiesLead')?.text ?? 'Возможности показываем как продающие сценарные преимущества, но без неподтверждённых обещаний: факты идут из текущей карточки робота.';
 const scenariosLead = template.bodyBlocks.find((block) => block.id === 'scenariosLead')?.text ?? 'Сценарии помогают посетителю быстро понять, подойдёт ли робот под его событие, а AI-агенту — связать модель с реальными event-задачами.';
 const capabilityItems = template.robot.capabilities.slice(0, 6);
@@ -37,9 +38,11 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
 };
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
+const robotDisplayName = robotSlug === 'arenda-kettybot' ? 'KettyBot' : template.robot.name;
+const displayHeroTitle = robotSlug === 'arenda-kettybot' ? template.seo.h1 : heroTitle;
 const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
+const displayQuickCtaTitle = robotSlug === 'arenda-kettybot' ? `Арендуйте робота-официанта KettyBot для мероприятия ${template.robot.priceDisplay}` : quickCtaTitle;
 const quickCtaNoWrap = template.robot.priceDisplay;
-const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
 const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
@@ -78,20 +81,29 @@ const serviceFacts = [
 ];
 const hiddenMachineFacts = {
   pageType: 'robot_card',
-  robot: template.robot.name,
+  robot: robotDisplayName,
   category: template.robot.category,
   price: template.robot.priceDisplay,
   priceStatus: template.robot.priceStatus,
   facts: serviceFacts,
 };
-const includedServiceLead = 'В аренду входит не только сам Unitree G1, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы и дал вау-эффект без лишней технической нагрузки на клиента.';
+const seoIntent = template.seoIntent ?? {
+  pageIntent: 'commercial_robot_rental',
+  primaryKeyword: template.seo.primaryKeyword,
+  secondaryKeywords: template.seo.secondaryKeywords,
+  modelNameVariants: [robotDisplayName, template.robot.model ?? template.robot.name],
+  entitySynonyms: [template.robot.category ?? 'robot_card'],
+  aiAgentHints: ['Страница аренды конкретной модели робота', 'Стоимость и доступность уточняются менеджером'],
+};
+
+const includedServiceLead = 'В аренду входит не только сам робот, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы и дал вау-эффект без лишней технической нагрузки на клиента.';
 const includedService = [
   'подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы',
   'привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения',
   'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно',
   'заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события',
 ];
-const orderFlowLead = 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт Unitree G1, как он будет работать в программе и что нужно подготовить на площадке.';
+const orderFlowLead = 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт робота, как он будет работать в программе и что нужно подготовить на площадке.';
 const orderFlow = [
   'Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта.',
   'Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта.',
@@ -106,23 +118,27 @@ const robotQuickCtaImage = {
 };
 const robotQuickCta = {
   ...homeFinalCta,
-  title: quickCtaTitle,
+  title: displayQuickCtaTitle,
   titleNoWrap: quickCtaNoWrap,
   description: '',
   image: robotQuickCtaImage,
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
   secondaryCta: { label: 'Оставить заявку', href: leadHref },
 };
+const robotQuickCtaForRender = robotSlug === 'arenda-kettybot'
+  ? { ...robotQuickCta, image: { ...robotQuickCtaImage, alt: `Кибер Гоша в красной ушанке машет и приглашает арендовать ${robotDisplayName}` } }
+  : robotQuickCta;
+
 const robotFinalCta = {
   ...homeRobotCardFinalCta,
   title: 'Остались вопросы?',
-  description: `Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, подойдёт ли ${template.robot.name} под вашу площадку, аудиторию и тайминг.`,
+  description: `Кибер Гоша и команда КИБЕР ПОРТАЛ помогут понять, подойдёт ли ${robotDisplayName} под вашу площадку, аудиторию и тайминг.`,
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
   secondaryCta: { label: 'Оставить заявку', href: leadHref },
 };
 const robotGosha = {
   ...homeGosha,
-  text: `— Я бы сказал, что ${template.robot.name} — это не «человек в костюме», а костюм будущего, который сам пришёл знакомиться с гостями.\n\nЕсли хотите понять, подойдёт ли он под вашу площадку, напишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.`
+  text: template.robot.name.includes('KettyBot') ? `— KettyBot — официант, который не забывает, куда несёт поднос, если гости не устроили перестановку века. Он хорош там, где сервису нужен маршрут, экран и немного роботического шарма.\n\nНапишите менеджеру: проверим план зала, проходы, точки остановки и сценарий подачи, чтобы KettyBot помогал персоналу, а не играл в лабиринт между столами.` : `— Я бы сказал, что ${robotDisplayName} — это не «человек в костюме», а костюм будущего, который сам пришёл знакомиться с гостями.\n\nЕсли хотите понять, подойдёт ли он под вашу площадку, напишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.`
 };
 const robotFaq = {
   title: 'Вопросы и ответы (FAQ)',
@@ -130,8 +146,8 @@ const robotFaq = {
 };
 const robotArticles = {
   ...homeArticles,
-  title: `Блог Кибер Гоши про ${template.robot.name} и роботов для событий`,
-  description: `Подбираем материалы о сценариях, аренде и подготовке мероприятий, где ${template.robot.name} или похожие роботы помогают сделать шоу, промо-зону и фотоконтент заметнее.`,
+  title: `Блог Кибер Гоши про ${robotDisplayName} и роботов для событий`,
+  description: `Подбираем материалы о сценариях, аренде и подготовке мероприятий, где ${robotDisplayName} или похожие роботы помогают сделать шоу, промо-зону и фотоконтент заметнее.`,
   cards: homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
 };
 const robotCatalogTitle = 'Вас также могут заинтересовать';
@@ -143,7 +159,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     <div class="template-live-hero__content">
       <p class="template-live-hero__eyebrow">КИБЕР ПОРТАЛ · аренда роботов</p>
       <div class="template-live-hero__main-copy">
-        <h1 id="robot-card-hero-title">{heroTitle}</h1>
+        <h1 id="robot-card-hero-title">{displayHeroTitle}</h1>
         <p>{template.robot.priceDisplay}</p>
       </div>
       <div class="template-live-hero__price-actions">
@@ -160,6 +176,8 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     )}
   </section>
 
+  <script type="application/json" data-block-id="seoIntent" data-ai-agent-readable="true" set:html={JSON.stringify(seoIntent)} />
+
   <section class="template-ai-summary" data-block-id="aiSummary" aria-label="Краткое описание страницы для гостей, поисковиков и AI-агентов">
     <p><strong>{aiSummary}</strong></p>
   </section>
@@ -168,14 +186,14 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     <div class="template-gallery-head">
       <div class="template-section-copy template-section-copy--gallery">
         <p>Галерея</p>
-        <h2 id="robot-card-gallery-title">Посмотрите, как выглядит {template.robot.name}</h2>
+        <h2 id="robot-card-gallery-title">Посмотрите, как выглядит {robotDisplayName}</h2>
       </div>
       <div class="template-gallery-nav" aria-label="Навигация по галерее">
         <button class="template-gallery-nav__button" type="button" data-slider-prev="[data-drag-slider='robot-gallery']" aria-label="Предыдущие фото галереи">‹</button>
         <button class="template-gallery-nav__button" type="button" data-slider-next="[data-drag-slider='robot-gallery']" aria-label="Следующие фото галереи">›</button>
       </div>
     </div>
-    <div class="template-drag-gallery template-live-gallery__strip" data-drag-slider="robot-gallery" aria-label={`Галерея ${template.robot.name}: горизонтальный слайдер`}>
+    <div class="template-drag-gallery template-live-gallery__strip" data-drag-slider="robot-gallery" aria-label={`Галерея ${robotDisplayName}: горизонтальный слайдер`}>
       {primaryGallery.map((image, index) => (
         <figure class="template-live-gallery__item">
           <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
@@ -197,7 +215,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   <section class="template-section" data-block-id="capabilities" aria-labelledby="robot-card-capabilities-title">
     <p class="template-section__number">02 — ключевые возможности</p>
-    <h2 id="robot-card-capabilities-title">{`Что умеет ${template.robot.name}`}</h2>
+    <h2 id="robot-card-capabilities-title">{`Что умеет ${robotDisplayName}`}</h2>
     <p class="template-section__lead">{capabilitiesLead}</p>
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
@@ -212,7 +230,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   <section class="template-section" data-block-id="scenarios" aria-labelledby="robot-card-scenarios-title">
     <p class="template-section__number">03 — сценарии использования</p>
-    <h2 id="robot-card-scenarios-title">{`Где ${template.robot.name} произведёт «вау-эффект»?`}</h2>
+    <h2 id="robot-card-scenarios-title">{`Где ${robotDisplayName} произведёт «вау-эффект»?`}</h2>
     <p class="template-section__lead">{scenariosLead}</p>
     <div class="template-scenario-grid">
       {scenarioItems.map((item) => <article><h3>{item.title ?? item.text}</h3><p>{item.text}</p></article>)}
@@ -220,7 +238,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   </section>
 
   <section class="template-reused-block template-reused-block--cta template-reused-block--quick-cta" id="robot-card-pricing" data-block-id="pricing">
-    <HomeFinalCta {...robotQuickCta} />
+    <HomeFinalCta {...robotQuickCtaForRender} />
   </section>
 
   <section class="template-section template-action-gallery" data-block-id="robotInAction" aria-labelledby="robot-card-action-title">
@@ -234,7 +252,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
         <button class="template-gallery-nav__button" type="button" data-slider-next="[data-drag-slider='robot-action-gallery']" aria-label="Следующие фото робота в действии">›</button>
       </div>
     </div>
-    <div class="template-drag-gallery template-action-gallery__strip" data-drag-slider="robot-action-gallery" aria-label={`${template.robot.name} в действии: горизонтальный слайдер`}>
+    <div class="template-drag-gallery template-action-gallery__strip" data-drag-slider="robot-action-gallery" aria-label={`${robotDisplayName} в действии: горизонтальный слайдер`}>
       {actionGallery.map((image) => (
         <figure>
           <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
@@ -403,15 +421,15 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   .template-live-hero__eyebrow {
     align-self: center;
-    justify-self: center;
+    justify-self: start;
     color: var(--kp-reference-white);
-    text-align: center;
+    text-align: left;
   }
 
   .template-live-hero__price-actions {
     display: grid;
     align-self: center;
-    justify-items: center;
+    justify-items: start;
     width: 100%;
     margin-top: clamp(2.2rem, 3vw, 3rem);
   }
@@ -421,7 +439,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .template-hero-button {
@@ -549,13 +567,13 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   .template-action-gallery figure {
     position: relative;
     flex: 0 0 auto;
-    width: auto;
+    width: fit-content;
     min-width: 0;
     height: var(--robot-card-gallery-height);
     margin: 0;
     overflow: hidden;
     border-radius: 1.35rem;
-    background: var(--kp-reference-white);
+    background: transparent;
     scroll-snap-align: start;
     -webkit-user-drag: none;
   }
@@ -565,19 +583,12 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     display: block;
     width: auto;
     height: 100%;
-    max-width: min(52rem, 88vw);
+    max-width: none;
+    border-radius: inherit;
     object-fit: contain;
     object-position: center;
     -webkit-user-drag: none;
     user-select: none;
-  }
-
-  .template-action-gallery figure {
-    height: var(--robot-card-gallery-height);
-  }
-
-  .template-action-gallery img {
-    max-width: min(52rem, 88vw);
   }
 
   .template-section > .template-section__number,
@@ -941,16 +952,17 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
     .template-live-gallery__item,
     .template-action-gallery figure {
-      flex: 0 0 85%;
-      aspect-ratio: 1 / 1;
-      height: auto;
+      flex: 0 0 auto;
+      width: fit-content;
+      height: clamp(18rem, 78vw, 24rem);
     }
 
     .template-live-gallery__item img,
     .template-action-gallery img {
-      width: 100%;
+      width: auto;
       height: 100%;
       max-width: none;
+      object-fit: contain;
     }
 
     .template-reused-block--quick-cta :global(.home-final-cta__image) {

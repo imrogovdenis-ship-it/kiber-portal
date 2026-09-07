@@ -1,0 +1,247 @@
+# Workspace inventory for robot-card guardrail cleanup
+
+## Current task candidates
+- ` M` `data/review/kiber-94-robot-card-design-structure-approval.json`
+- ` M` `data/review/media-rights-legacy-hero-images.json`
+- ` M` `data/review/media-rights-review-package.json`
+- ` M` `data/review/media-rights-robot-cards.json`
+- ` M` `docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md`
+- ` M` `docs/review/media-rights/review-package.md`
+- ` M` `docs/review/media-rights/robot-cards/arenda-kettybot.md`
+- ` M` `src/components/templates/RobotCardTemplate.astro`
+- ` M` `src/lib/kiber94-robot-template-data.ts`
+- ` M` `src/lib/page-type-templates.ts`
+- ` M` `src/pages/preview/kiber-94/robot-card/[slug].astro`
+- ` M` `tests/visual/kiber94-robot-card-preview.test.ts`
+- `??` `data/content-contracts/kiber-robot-card-generation-guardrails.json`
+- `??` `data/review/kiber-legacy-hero-images-do-not-use.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__01.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__02.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__03.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__04.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__05.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__06.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__07.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__08.wordstat.json`
+- `??` `data/seo/wordstat-research/arenda-kettybot__09.wordstat.json`
+- `??` `docs/content-contracts/kiber-robot-card-generation-guardrails.md`
+- `??` `docs/review/kiber-kettybot-gallery-approved-contract-audit-20260907.json`
+- `??` `docs/review/kiber-kettybot-gallery-approved-contract-staging-smoke-20260907.json`
+- `??` `docs/review/kiber-kettybot-pilot-rendered-audit-20260907.json`
+- `??` `docs/review/kiber-kettybot-pilot-research-package-20260907.json`
+- `??` `docs/review/kiber-kettybot-pilot-screenshots-20260907/`
+- `??` `docs/review/kiber-kettybot-pilot-staging-prechange-20260907.md`
+- `??` `docs/review/kiber-kettybot-pilot-staging-smoke-20260907.json`
+- `??` `docs/review/kiber-kettybot-seo-ai-audit-20260907.json`
+- `??` `docs/review/kiber-kettybot-seo-ai-staging-audit-20260907.json`
+- `??` `docs/review/kiber-robot-card-generation-rules-cleanup-20260907/`
+- `??` `docs/review/kiber-serp-kettybot-20260907/`
+- `??` `docs/review/kiber-wordstat-kettybot-20260907/`
+- `??` `public/images/kiber-94-preview/humanoid-compilation-hero-group.webp`
+- `??` `public/images/kiber-94-preview/tild3663-6530-4536-b734-643935626664__08.webp`
+- `??` `public/images/kiber-94-preview/tild3736-3534-4030-b338-333366663735__06.webp`
+- `??` `public/images/kiber-94-preview/tild3762-3232-4237-b965-323533333164__09.webp`
+- `??` `public/images/kiber-94-preview/tild3864-3062-4563-b431-666566303761__02.webp`
+- `??` `public/images/kiber-94-preview/tild3864-3165-4464-b639-613562333764__010.webp`
+- `??` `public/images/kiber-94-preview/tild3938-3662-4534-b030-623936613139__05.webp`
+- `??` `public/images/kiber-94-preview/tild6139-3335-4138-a539-383539326630__01.webp`
+- `??` `public/images/kiber-94-preview/tild6236-3131-4466-a632-623038373139__07.webp`
+- `??` `public/images/kiber-94-preview/tild6330-6138-4764-a335-376636333838__04.webp`
+- `??` `public/images/kiber-94-preview/tild6362-3235-4561-a436-623839356139__011.webp`
+- `??` `public/images/kiber-94-preview/tild6365-3064-4761-a334-303561393261__03.webp`
+
+## Do not touch / unrelated existing artifacts
+- `??` `.hermes/` — do_not_commit_local_hermes
+- `??` `docs/exports/` — do_not_commit_export_artifact_by_default
+- `??` `docs/review/article-blocks-corrected-seo-guide-shared-tail-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-desktop-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-expanded-refs-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-featured-model-full-bleed-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-featured-model-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-gallery-catalog-media-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-hero-home-style-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-hq-mobile-tablet-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-inventory-required-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-mobile-catalog-blog-grid-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-mobile-catalog-gutters-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-plain-text-block-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-rollback-last-step-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-rollback-seo-intro-stage-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-seo-scenarios-closing-contract-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-blocks-spacing-inventory-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-g1-r1-h2-source-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-live-sources-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/article-unitree-g1-r1-h2-preview-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/articles-mobile-tablet-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/autonomous-stabilization-work-20260905/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/claude-content-contracts-after-seo-audit-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/claude-direct-integration-research-20260905.sources.json` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/claude-direct-integration-research-20260905/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/claude-github-hermes-content-pipeline-20260905/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/claude-materials-corpus-intake-20260906/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/compilations-mobile-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/compilations-tablet-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-api_leads_endpoint_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-lead_capability.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-lead_form_popup_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-overflow-api_leads_endpoint_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-overflow-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-overflow-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-overflow-lead_form_popup_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-shrink-api_leads_endpoint_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-shrink-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-shrink-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/check-shrink-lead_form_popup_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop-no-overflow.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop-shrunk.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-desktop.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile-no-overflow.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile-shrunk.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/lead-form-popup-mobile360-no-overflow.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-lead-form-popup-20260906/run-live-lead-routing-test.mjs` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-size-tune-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-size-tune-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-size-tune-popup_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-size-tune-public_contacts_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-smaller-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-smaller-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-after-smaller-popup_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-popup_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-production_go_no_go.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/check-public_contacts_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/popup-desktop-smaller.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/popup-desktop-tuned.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/popup-desktop.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/popup-mobile-smaller.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/popup-mobile-tuned.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/contact-messenger-popup-20260906/popup-mobile.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/cta2-desktop-gosha-lowered-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/cta2-desktop-gosha-smaller-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/cta2-tablet-all-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/cta2-tablet-gosha-larger-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/current-state-before-content-pilot-20260906/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/github-pr70-ci-20260906/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-cta2-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-cta2-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-desktop-mobile-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-desktop-revert-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-legal-up-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-menu-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-requisites-down-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-footer-requisites-up-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-tablet-footer-4col-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/home-tablet-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-approved-reused-blocks-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-bottom-compilations-spacing-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-bottom-home-compilations-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-catalog-h2-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-desktop-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-feedback2-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-final-gosha-quote-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-gosha-spacing-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-guide-video-scenarios-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-headings-offset-video-blue-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-hero-fixes-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-hero-h1-home-size-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-hero-rollback-slider-fix-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-homepage-shared-blocks-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-mobile-catalog-gutters-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-mobile-footer-fullwidth-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-mobile-footer-inspect-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-reordered-lower-blocks-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-scenarios-guide-number-bg-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-scenarios-left-align-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-scenarios-slider-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/humanoid-compilation-swap-gallery-align-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/kiber-94-article-template-design-structure-approval-2026-09-04.md` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/kiber-94-closure-evidence-20260905/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/kiber-approved-home-shared-block-contract.md` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/kiber-seo-phrase-research-arenda-robota-20260906/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/kiber-seo-research-writing-protocol-20260905/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-final-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-final-legal_four_documents.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-final-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-final-production_go_no_go.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-legal_four_documents.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/check-production_go_no_go.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/legal-documents-cleanup-20260906/docker-build-legal-cleanup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/live-humanoids-reference-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/logo-export-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/project-state-deep-audit-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/public-phone-update-20260906/check-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/public-phone-update-20260906/check-contact_lead_visual_smoke.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/public-phone-update-20260906/check-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/public-phone-update-20260906/check-production_go_no_go.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/public-phone-update-20260906/check-public_contacts_owner_input.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/rc-commit-ready-20260906/commit-result.json` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/rc-commit-ready-20260906/post-commit-status.json` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/rc-commit-ready-20260906/stage-clean-rc.NOT-RUN.sh` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-after-article-fix-astro_check.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-after-article-fix2-article_template_test.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-after-article-fix2-astro_check.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-after-article-fix2-ci.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-api_leads.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-build_production.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-contact_lead_form_popup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-contact_lead_visual.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-contact_messenger_popup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-launch_scope_manifest.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-legal_four_documents.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/check-production_go_no_go.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/docker-build-rc-stabilization-ci-green.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/docker-build-rc-stabilization-green.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/docker-build-rc-stabilization.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/npm-run-ci-after-token-fix.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/npm-run-ci-final-2.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/npm-run-ci-final.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/npm-run-ci-green-with-launch-scope.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/npm-run-ci-green.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/release-candidate-stabilization-20260906/npm-run-ci.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/seo-ai-compliance-audit-current-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/site-header-footer-minimal-nav-pr8-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-build-lead-form-overflow-fix.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-build-lead-form-popup-shrunk.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-build.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-static-dist-build-lead-form.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-static-dist-build-smaller.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-static-dist-build-tuned.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/staging-link-popup-form-review-20260906/docker-static-dist-build.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-approved_review_links.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-article_template.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-compilation_template.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-contact_lead_form_popup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-contact_messenger_popup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-approved_review_links.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-article_template.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-compilation_template.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-contact_lead_form_popup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-contact_messenger_popup.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check-final-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check2-approved_review_links.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check2-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check2-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check3-approved_review_links.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check4-approved_review_links.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check4-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check4-page_seo_components.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check5-approved_review_links.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/check5-build_preview.log` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/pr-comment.md` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/unified-approved-preview-links-20260906/rendered-link-audit.json` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/wordstat-browser-access-20260906/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/wordstat-remote-browser-20260906/01-initial-wordstat-tab.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/wordstat-remote-browser-20260906/02-after-wait-current-query.png` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `docs/review/workspace-materials-cleanup-20260904/` — do_not_touch_unrelated_existing_artifact_or_prior_work
+- `??` `test-results/` — do_not_touch_unrelated_existing_artifact_or_prior_work

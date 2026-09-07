@@ -27,9 +27,9 @@
   "approvedContract": {
     "h1Pattern": "Аренда <тип робота> <модель>",
     "headingSemantics": "Hero title is H1; main named content blocks are H2.",
-    "hero": "dark-gray article-style underlay, H1 and price stable, robot catalog image right, centered eyebrow and CTA placement",
+    "hero": "dark-gray article-style underlay; H1 and price stable; robot catalog image on the right; eyebrow, H1/price and CTA row align left together; Hero media uses /images/kiber-45/<slug>.webp only, not legacy Tilda horizontal hero images",
     "aiSummary": "one short visible bold summary block after Hero, no duplicate intro",
-    "galleries": "main appearance gallery and robot-in-action gallery use real approved media and mouse-drag horizontal sliders",
+    "galleries": "main ГАЛЕРЕЯ and 04 — робот в действии use approved non-hero media; preserve source aspect ratio at one common height; width follows intrinsic photo proportion; no forced square cards, no default crop, no visible captions, no legacy Tilda hero assets",
     "capabilities": "uses dedicated original capability image registry data/models/robot-capability-images.source.json, separate from galleries",
     "scenarios": "white scenario cards with approved catalog-like hover animation",
     "includedService": "FAQ-like side insets, transparent two-column checklist, blue circle check icons, 90-110 char owner-expanded phrases",
@@ -37,7 +37,9 @@
     "faq": "HomeFaqBlock accordion, answers closed by default",
     "blog": "Blog Kiber Gosha section personalized by robot",
     "relatedCatalog": "related robot catalog at page end, title Вас также могут заинтересовать",
-    "removed": "visible Подборки block and visible structured facts block are not part of the approved robot_card design"
+    "removed": "visible Подборки block and visible structured facts block are not part of the approved robot_card design",
+    "mediaSourceSeparation": "Hero=/images/kiber-45/<slug>.webp catalog image; galleries=Tilda/site-export upper/lower non-hero gallery photos; capabilities=data/models/robot-capability-images.source.json only; legacy_horizontal_hero=archive/provenance only and blocked from runtime robot-card galleries",
+    "seoAi": "robot_card requires rendered data-block-id=\"seoIntent\" data-ai-agent-readable=\"true\" with exact-model commercial intent, entity, isCrawlerOnlyText=false; preview meta must not contain service labels like KIBER-94 preview"
   },
   "notApprovedByThisRecord": [
     "PR merge",
@@ -68,5 +70,10 @@
     ],
     "ownerQuote": "На дизайн мобильной версии и версии для планшета для страницы блок кибергоша тоже утверждаем получается что мы должны утвердить и сделать все соответствующие записи в проекте по страницам главное подборки блок кибергоши и карточка робота все эти страницы визуальное утверждены во всех версиях мобильная десктопная и планшет зафиксирую все эти изменения и перейдём к следующему к следующей задаче",
     "scope": "robot_card visual design approved across mobile/tablet/desktop on preview route; public route replacement and production gates remain closed"
+  },
+  "latestCorrection": {
+    "date": "2026-09-07",
+    "reason": "KettyBot pilot review revealed old/bad rules: old contour, skipped research, centered Hero eyebrow/buttons, missing galleries, legacy Tilda hero photo in gallery, white gutters, forced square/cropped gallery cards, incomplete seoIntent/preview meta leakage. Contract supersedes those mistakes.",
+    "productionDnsSecretsAnalyticsLiveRouting": "unchanged_not_approved"
   }
 }

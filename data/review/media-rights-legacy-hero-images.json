@@ -35,14 +35,18 @@
         "aspectRatio": 1.85,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -65,14 +69,18 @@
         "aspectRatio": 1.929,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -95,14 +103,18 @@
         "aspectRatio": 1.501,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -125,14 +137,18 @@
         "aspectRatio": 1.75,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -155,14 +171,18 @@
         "aspectRatio": 2.132,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -185,14 +205,18 @@
         "aspectRatio": 1.778,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -215,14 +239,18 @@
         "aspectRatio": 1.571,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -245,14 +273,18 @@
         "aspectRatio": 1.466,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -275,14 +307,18 @@
         "aspectRatio": 1.913,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -305,14 +341,18 @@
         "aspectRatio": 1.572,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -335,14 +375,18 @@
         "aspectRatio": 1.439,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -365,14 +409,18 @@
         "aspectRatio": 2.138,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -395,14 +443,18 @@
         "aspectRatio": 1.468,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -425,14 +477,18 @@
         "aspectRatio": 1.781,
         "sourceOrder": 9,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -455,14 +511,18 @@
         "aspectRatio": 2.523,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -485,14 +545,18 @@
         "aspectRatio": 2.231,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -515,14 +579,18 @@
         "aspectRatio": 1.768,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -545,14 +613,18 @@
         "aspectRatio": 1.465,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -575,14 +647,18 @@
         "aspectRatio": 1.594,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -605,14 +681,18 @@
         "aspectRatio": 1.75,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -635,14 +715,18 @@
         "aspectRatio": 1.75,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -665,14 +749,18 @@
         "aspectRatio": 1.778,
         "sourceOrder": 3,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -695,14 +783,18 @@
         "aspectRatio": 2.489,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     },
     {
@@ -725,14 +817,18 @@
         "aspectRatio": 1.75,
         "sourceOrder": 0,
         "rightsStatus": "approved_for_production",
-        "previewUseAllowed": true,
+        "previewUseAllowed": false,
         "productionApproved": true,
         "usage": [
           "original live-site robot hero block",
-          "candidate for restored robot hero media review"
+          "archive/provenance only; blocked from robot-card runtime galleries"
         ],
         "approvedAt": "2026-08-29T00:55:09Z",
-        "approvedBy": "Александр Маркин"
+        "approvedBy": "Александр Маркин",
+        "runtimeUseAllowed": false,
+        "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+        "galleryUseAllowed": false,
+        "heroRuntimeUseAllowed": false
       }
     }
   ],

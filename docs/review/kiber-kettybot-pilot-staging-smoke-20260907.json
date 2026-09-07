@@ -1,0 +1,42 @@
+{
+  "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-kettybot/",
+  "http_line": "HTTP/2 200 ",
+  "x_robots_noindex": true,
+  "h1": [
+    "Аренда робота-официанта KettyBot"
+  ],
+  "primary_gallery_imgs": [
+    "/images/kiber-94-preview/tild6236-3131-4466-a632-623038373139__07.webp",
+    "/images/kiber-94-preview/tild3864-3165-4464-b639-613562333764__010.webp",
+    "/images/kiber-94-preview/tild6139-3335-4138-a539-383539326630__01.webp",
+    "/images/kiber-94-preview/tild3663-6530-4536-b734-643935626664__08.webp",
+    "/images/kiber-94-preview/tild6330-6138-4764-a335-376636333838__04.webp"
+  ],
+  "action_gallery_imgs": [
+    "/images/kiber-94-preview/tild3762-3232-4237-b965-323533333164__09.webp",
+    "/images/kiber-94-preview/tild3864-3062-4563-b431-666566303761__02.webp",
+    "/images/kiber-94-preview/tild3736-3534-4030-b338-333366663735__06.webp",
+    "/images/kiber-94-preview/tild6365-3064-4761-a334-303561393261__03.webp",
+    "/images/kiber-94-preview/tild3938-3662-4534-b030-623936613139__05.webp"
+  ],
+  "capability_refs": 6,
+  "hero_left_css": true,
+  "forbidden": {
+    "Wordstat": false,
+    "SERP": false,
+    "generic": false,
+    "model-specific": false,
+    "production": false,
+    "review_draft": false,
+    "needs_live_verification": false,
+    "AI-агенту": false,
+    "Preview-first": false,
+    "дизайн сверяется": false
+  },
+  "grammar_bad": {
+    "робота-официанта робота-официанта": false,
+    "сам робота-официанта": false,
+    "Что умеет робота-официанта": false,
+    "как выглядит робота-официанта": false
+  }
+}
