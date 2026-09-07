@@ -165,6 +165,34 @@ const batch1ReviewGalleryBySlug: Record<string, Array<{ src: string; alt: string
   ],
 };
 
+
+const curatedRobotCardSlugs = new Set([
+  'arenda-kettybot',
+  'arenda-agibot-x2',
+  'arenda-noetix-bumi',
+  'arenda-unitree-r1',
+  'arenda-unitree-h2',
+  'arenda-robota-sofiya',
+  'arenda-robota-ardi',
+  'arenda-robota-tron',
+]);
+
+function assertCuratedRobotCardData(robot: RobotPageRecord, gallery: Array<{ src: string; alt: string; sourceStatus: 'page_content' }>, goshaQuote: string | undefined): void {
+  if (!curatedRobotCardSlugs.has(robot.slug)) return;
+  if (!goshaQuote) throw new Error(`Missing explicit per-robot Gosha quote for curated robot card: ${robot.slug}`);
+  const galleryPhotoAssets = gallery.slice(1);
+  if (galleryPhotoAssets.length < 6) throw new Error(`Missing explicit source-gallery runtime assets for curated robot card: ${robot.slug}`);
+  if (galleryPhotoAssets.some((image) => image.src.includes('/images/kiber-45/'))) throw new Error(`Catalog/Hero image leaked into curated gallery: ${robot.slug}`);
+  if (galleryPhotoAssets.some((image) => image.src.includes('__photo'))) throw new Error(`Legacy Tilda hero/background leaked into curated gallery: ${robot.slug}`);
+  if (galleryPhotoAssets.some((image) => !image.src.startsWith('/images/kiber-94-preview/'))) throw new Error(`Curated gallery must use explicit public preview assets: ${robot.slug}`);
+}
+
+function fallbackGoshaQuoteForUnpreparedRobot(robot: RobotPageRecord): string {
+  return `— ${robot.identity.name} пока ждёт отдельной цитаты Гоши: не буду притворяться, что эта карточка уже прошла редакторскую подготовку. Для review можно увидеть структуру, но перед публикацией нужен свой текст под модель и сценарий.
+
+Напишите менеджеру: команда КИБЕР ПОРТАЛ уточнит задачу, площадку, тайминг и подготовит сценарий без роботических сюрпризов.`;
+}
+
 const ownerSeoBySlug: Record<string, OwnerSeoOverride> = {
   'arenda-agibot-x2': {
     title: "Аренда Agibot X2 — робот-гуманоид для выставки и презентации",
@@ -612,6 +640,7 @@ const ownerRobotCardCopyBySlug: Record<string, OwnerRobotCardCopy> = {
 };
 
 const ownerGoshaQuoteBySlug: Record<string, string> = {
+  'arenda-kettybot': '— KettyBot — официант, который не забывает, куда несёт поднос, если гости не устроили перестановку века. Он хорош там, где сервису нужен маршрут, экран и немного роботического шарма.\n\nНапишите менеджеру: проверим план зала, проходы, точки остановки и сценарий подачи, чтобы KettyBot помогал персоналу, а не играл в лабиринт между столами.',
   'arenda-agibot-x2': "— Agibot X2 выглядит так, будто вышел из лаборатории и сразу спросил: «Где тут ваш самый технологичный стенд?» Он умеет быть главным магнитом внимания без лишнего шума — главное заранее дать ему сцену, пространство и понятный момент выхода.\n\nНапишите менеджеру: команда КИБЕР ПОРТАЛ проверит площадку, тайминг, безопасную зону и соберёт сценарий, чтобы Agibot X2 не просто стоял рядом, а работал на вау-эффект мероприятия.",
   'arenda-noetix-bumi': "— Я бы сказал, что Noetix Bumi — это не «человек в костюме», а костюм будущего, который сам пришёл знакомиться с гостями. Маленький рост тут не минус: к нему подходят ближе, улыбаются быстрее и фотографируют охотнее.\n\nНапишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.",
   'arenda-unitree-r1': "— Unitree R1 — тот самый робот, который может спокойно стоять рядом с баннером, а потом движением объяснить гостям, что стенд тут явно не скучный. Главное — не просить его импровизировать между кофейной стойкой и толпой без плана.\n\nНапишите менеджеру: мы проверим покрытие, дистанции, плотность гостей и подберём безопасный демонстрационный сценарий для вашей площадки.",
@@ -662,6 +691,15 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
     items: [],
     sourceStatus: 'page_content' as const,
   }));
+  const preparedGallery = batch1ReviewGalleryBySlug[robot.slug]
+    ?? (robot.slug === 'arenda-kettybot'
+      ? kettybotReviewGallery
+      : [robot.media.hero, ...robot.media.gallery].filter(Boolean).map((image) => {
+        const previewSrc = toPreviewAsset(image.src);
+        return previewSrc ? { src: previewSrc, alt: image.alt, sourceStatus: 'page_content' as const } : undefined;
+      }).filter((image): image is { src: string; alt: string; sourceStatus: 'page_content' } => Boolean(image)).slice(0, 8));
+  const preparedGoshaQuote = ownerGoshaQuoteBySlug[robot.slug] ?? fallbackGoshaQuoteForUnpreparedRobot(robot);
+  assertCuratedRobotCardData(robot, preparedGallery, preparedGoshaQuote);
 
   return {
     pageType: 'robot_card',
@@ -676,7 +714,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
     },
     seoIntent: ownerSeoIntent,
     aiSummary: ownerAiSummaryBySlug[robot.slug] ?? `${robot.identity.name} — робот из каталога КИБЕР ПОРТАЛ для мероприятий. Preview-шаблон показывает реальные данные карточки: описание услуги, сценарии, медиа, цену в утверждённом статусе и заявку без публикации на production.`,
-    goshaQuote: ownerGoshaQuoteBySlug[robot.slug],
+    goshaQuote: preparedGoshaQuote,
     hero: {
       id: 'hero',
       title: `Аренда ${robot.identity.name}`,
@@ -724,13 +762,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
       priceDisplay: robot.pricing.display,
       capabilities: ownerCapabilityBlocks ?? capabilityBlocks,
       scenarios: ownerScenarioBlocks ?? scenarioBlocks,
-      gallery: batch1ReviewGalleryBySlug[robot.slug]
-        ?? (robot.slug === 'arenda-kettybot'
-          ? kettybotReviewGallery
-          : [robot.media.hero, ...robot.media.gallery].filter(Boolean).map((image) => {
-            const previewSrc = toPreviewAsset(image.src);
-            return previewSrc ? { src: previewSrc, alt: image.alt, sourceStatus: 'page_content' as const } : undefined;
-          }).filter((image): image is { src: string; alt: string; sourceStatus: 'page_content' } => Boolean(image)).slice(0, 8)),
+      gallery: preparedGallery,
     },
   };
 }

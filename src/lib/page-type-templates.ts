@@ -77,7 +77,6 @@ export const pageTemplateSchema = z.object({
   seo: templateSeoSchema,
   seoIntent: templateSeoIntentSchema.optional(),
   aiSummary: z.string().min(80),
-  goshaQuote: z.string().min(80).optional(),
   hero: pageTemplateBlockSchema,
   bodyBlocks: z.array(pageTemplateBlockSchema).default([]),
   cta: templateCtaSchema,
@@ -87,6 +86,7 @@ export const pageTemplateSchema = z.object({
 
 export const robotCardTemplateSchema = pageTemplateSchema.extend({
   pageType: z.literal('robot_card'),
+  goshaQuote: z.string().min(80),
   robot: z.object({
     name: z.string().min(1),
     manufacturer: z.string().min(1).optional(),

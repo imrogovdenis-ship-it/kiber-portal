@@ -114,3 +114,21 @@ test('KIBER Batch 1 Gosha quotes are unique per robot and not generic fallback',
     assert.equal(item.hasRobotSpecificName, true, `${item.slug} quote mentions its robot/model`);
   }
 });
+
+test('KIBER robot-card generation blocks wrong active data sources', () => {
+  const archive = readJson('data/review/kiber-robot-card-wrong-data-sources-archive.json');
+  assert.equal(archive.status, 'active_guardrail_do_not_use_as_generation_source');
+  const component = readFileSync('src/components/templates/RobotCardTemplate.astro', 'utf8');
+  const dataSource = readFileSync('src/lib/kiber94-robot-template-data.ts', 'utf8');
+  const schema = readFileSync('src/lib/page-type-templates.ts', 'utf8');
+
+  assert.doesNotMatch(component, /не «человек в костюме», а костюм будущего[\s\S]*robotDisplayName/);
+  assert.doesNotMatch(component, /fallbackRobotGoshaQuote/);
+  assert.match(component, /text: template\.goshaQuote/);
+  assert.match(schema, /robotCardTemplateSchema[\s\S]*goshaQuote: z\.string\(\)\.min\(80\)/);
+  assert.match(dataSource, /assertCuratedRobotCardData/);
+  assert.match(dataSource, /Missing explicit per-robot Gosha quote/);
+  assert.match(dataSource, /Missing explicit source-gallery runtime assets/);
+  assert.match(dataSource, /Catalog\/Hero image leaked into curated gallery/);
+  assert.match(dataSource, /Legacy Tilda hero\/background leaked into curated gallery/);
+});

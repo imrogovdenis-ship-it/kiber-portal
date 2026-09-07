@@ -139,12 +139,9 @@ const robotFinalCta = {
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
   secondaryCta: { label: 'Оставить заявку', href: leadHref },
 };
-const fallbackRobotGoshaQuote = `— ${robotDisplayName} заслуживает отдельного сценария, а не общей шутки из робо-буфета. Если робот выходит к гостям, у него должна быть своя роль, свой момент и понятная задача на площадке.
-
-Напишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.`;
 const robotGosha = {
   ...homeGosha,
-  text: template.goshaQuote ?? fallbackRobotGoshaQuote,
+  text: template.goshaQuote,
 };
 const robotFaq = {
   title: 'Вопросы и ответы (FAQ)',

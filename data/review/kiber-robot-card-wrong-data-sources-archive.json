@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "status": "active_guardrail_do_not_use_as_generation_source",
+  "rootCause": [
+    "RobotCardTemplate had presentation-layer fallback logic for Gosha quotes, so non-KettyBot cards reused one generic quote instead of explicit per-slug copy.",
+    "Batch gallery generation trusted reduced robots.generated.json fallback. That data starts with square catalog/Hero media and omits converted source-gallery runtime assets, so previews could pass with missing/incorrect galleries.",
+    "Hard-coded gallery slicing split first five photos into the first gallery and left the second gallery thin when the robot had fewer assets.",
+    "Validation checked presence of H1/seoIntent/capability images but did not prove gallery runtime source, balanced split, vertical-first mobile affordance, or unique Gosha text."
+  ],
+  "archivedOrDemotedSources": [
+    {
+      "source": "src/components/templates/RobotCardTemplate.astro component-level generic Gosha fallback",
+      "status": "removed_from_active_render_path",
+      "replacement": "template.goshaQuote supplied from explicit per-slug data; curated cards throw if missing"
+    },
+    {
+      "source": "src/content/robots.generated.json gallery fallback for curated robot-card batches",
+      "status": "demoted_to_unprepared_preview_only_not_batch_source",
+      "replacement": "explicit batch gallery manifest converted from data/review/media-rights-robot-cards.json source-gallery assets"
+    },
+    {
+      "source": "/images/kiber-45/<slug>.webp in robot-card photo galleries",
+      "status": "blocked_for_gallery_runtime_allowed_for_Hero_only",
+      "replacement": "/images/kiber-94-preview/<batch>/... source-gallery WebP assets"
+    },
+    {
+      "source": "legacy_horizontal_hero / __photo Tilda background assets",
+      "status": "archive_provenance_only_blocked_from_Hero_and_galleries",
+      "replacement": "catalog Hero + source gallery photos only"
+    }
+  ],
+  "requiredGenerationOrder": [
+    "explicit SEO passport",
+    "explicit per-slug goshaQuote",
+    "explicit gallery manifest from media-rights source-gallery assets",
+    "converted public preview WebP assets",
+    "roughly half gallery split",
+    "vertical/narrow first photo in each gallery when available",
+    "rendered HTML/CSS audit",
+    "staging smoke"
+  ],
+  "activeCuratedSlugs": [
+    "arenda-kettybot",
+    "arenda-agibot-x2",
+    "arenda-noetix-bumi",
+    "arenda-unitree-r1",
+    "arenda-unitree-h2",
+    "arenda-robota-sofiya",
+    "arenda-robota-ardi",
+    "arenda-robota-tron"
+  ],
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "publicRouteReplacementAllowed": false,
+    "mergeAllowed": false
+  }
+}
