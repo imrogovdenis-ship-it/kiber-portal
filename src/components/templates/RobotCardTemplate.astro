@@ -40,10 +40,8 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
   coffee_robot: 'робо-кофейню',
 };
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
-const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
 const robotDisplayName = robotSlug === 'arenda-kettybot' ? 'KettyBot' : template.robot.name;
 const displayHeroTitle = template.seo.h1;
-const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
 const displayQuickCtaTitle = `Арендуйте ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
 const quickCtaNoWrap = template.robot.priceDisplay;
 const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;

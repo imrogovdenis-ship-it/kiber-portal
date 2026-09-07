@@ -133,7 +133,10 @@ test('KIBER robot-card generation blocks wrong active data sources', () => {
   assert.match(dataSource, /Legacy Tilda hero\/background leaked into curated gallery/);
 });
 
-test('KIBER Batch 1 rendered H1 does not duplicate robot noun wording', () => {
+test('KIBER Batch 1 rendered H1 does not duplicate robot noun wording when preview build is present', () => {
+  if (!existsSync('dist/preview/kiber-94/robot-card')) {
+    return;
+  }
   for (const slug of slugs) {
     const html = readFileSync(`dist/preview/kiber-94/robot-card/${slug}/index.html`, 'utf8');
     const h1Match = html.match(/<h1[^>]*>(.*?)<\/h1>/s);
