@@ -39,6 +39,26 @@ export const templateSeoSchema = z.object({
   secondaryKeywords: z.array(z.string()).default([]),
 }).strict();
 
+
+export const templateSeoIntentSchema = z.object({
+  pageType: z.literal('robot_card').default('robot_card'),
+  pageIntent: z.string().min(1),
+  primaryKeyword: z.string().min(3),
+  secondaryKeywords: z.array(z.string()).default([]),
+  modelNameVariants: z.array(z.string()).default([]),
+  entitySynonyms: z.array(z.string()).default([]),
+  aiAgentHints: z.array(z.string()).default([]),
+  entity: z.object({
+    type: z.literal('Robot'),
+    name: z.string().min(1),
+    model: z.string().min(1).optional(),
+    manufacturer: z.string().min(1).optional(),
+    category: z.string().min(1).optional(),
+    canonicalPath: z.string().startsWith('/'),
+  }).strict().optional(),
+  isCrawlerOnlyText: z.literal(false).default(false),
+}).strict();
+
 export const templateCtaSchema = z.object({
   label: z.string().min(1),
   href: z.string().startsWith('/'),
@@ -55,6 +75,7 @@ export const pageTemplateSchema = z.object({
   pageType: z.enum(['robot_card', 'article_detail', 'compilation']),
   status: z.enum(['draft_for_owner_review', 'approved_for_template_build', 'published']).default('draft_for_owner_review'),
   seo: templateSeoSchema,
+  seoIntent: templateSeoIntentSchema.optional(),
   aiSummary: z.string().min(80),
   hero: pageTemplateBlockSchema,
   bodyBlocks: z.array(pageTemplateBlockSchema).default([]),

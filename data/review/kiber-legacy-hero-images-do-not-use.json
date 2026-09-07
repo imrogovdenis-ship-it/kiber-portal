@@ -1,0 +1,14 @@
+{
+  "status": "do_not_use_runtime_robot_card_galleries",
+  "reason": "Alexander explicitly rejected old Tilda hero-block images for KettyBot gallery/runtime preview; keep only as archived provenance/right-review evidence, not as visible gallery/Hero assets.",
+  "scope": "KIBER robot_card galleries and preview runtime",
+  "blockedAssets": [
+    {
+      "slug": "arenda-kettybot",
+      "legacyRole": "legacy_horizontal_hero",
+      "sourceSrc": "/images/tild3265-3261-4533-b965-383239633331__photo.jpg",
+      "blockedRuntimeSrc": "/images/kiber-94-preview/tild3265-3261-4533-b965-383239633331__photo.webp"
+    }
+  ],
+  "productionDnsSecretsAnalyticsLiveRouting": "unchanged_not_approved"
+}

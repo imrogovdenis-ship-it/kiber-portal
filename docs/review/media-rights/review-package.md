@@ -384,3 +384,8 @@ Issue: KIBER-47 / KP-068
 - Evidence: Telegram approval: «Я посмотрел первые пять карточек всё в порядке и я утверждаю эти карточки и если содержание остальных карточек такое же ну по тому же принципу построены то можешь считать что я утверждаю сразу все остальные карточки закрывают эту задачу и переходи к следующему.» Full cards were generated from the same schema/tested principle for all 24 robots.
 - Scope: all 24 full robot media cards generated from the same schema/principle; includes legacy horizontal hero, current generated hero/gallery and full source-of-truth galleries.
 - Boundaries: this closes media-card/media-use approval only; production deploy, DNS, secrets, analytics IDs/cookies, real public contacts and live lead routing still require separate explicit approval.
+
+
+## Legacy hero runtime correction 2026-09-07
+
+Old Tilda `legacy_horizontal_hero` assets are retained only as archive/provenance/right-review evidence. They are blocked from robot-card runtime Hero/gallery preview use after Alexander rejected the KettyBot legacy hero photo in the gallery. Runtime Hero uses `/images/kiber-45/<slug>.webp`; galleries use non-hero upper/lower source-gallery photos.

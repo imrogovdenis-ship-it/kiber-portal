@@ -34,7 +34,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда сервисного робота робота-официанта KettyBot: робот-доставщик KettyBot везёт заказы гостям с рекламным экраном.
 - caption: Горизонтальный hero-кадр: робот-доставщик KettyBot везёт заказы гостям с рекламным экраном.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: legacy-hero-generated from extracted live hero evidence; needs human text/right review
 
 ## Current generated hero
@@ -48,7 +48,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-официант KettyBot: крупным планом везёт поднос на корпоративном мероприятии.
 - caption: KettyBot везёт поднос на корпоративном событии.
 - sourceGalleryBlock: `n/a`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review, mapped from role=hero to optimized generated hero)
 
 ## Catalog card
@@ -62,7 +62,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Аренда сервисного робота KettyBot для презентации: крупным планом на белом фоне, вид спереди немного наискось.
 - caption: Крупный план KettyBot на белом фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Upper gallery block
@@ -78,7 +78,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-официант KettyBot: крупным планом везёт поднос на корпоративном мероприятии.
 - caption: KettyBot везёт поднос на корпоративном событии.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__06
@@ -92,7 +92,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-доставщик KettyBot, робот для ресторана KettyBot: едет вдоль столиков в кафе; на рекламном экране показаны изображения блюд. Горизонтальное фото.
 - caption: KettyBot едет вдоль столиков с рекламным экраном блюд.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__07
@@ -106,7 +106,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Прокат робота-промоутера KettyBot для мероприятия: Два робота KettyBot, один жёлтый и один белый, крупным планом на белом фоне.
 - caption: Жёлтый и белый KettyBot на белом фоне.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__08
@@ -120,7 +120,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-промоутер с экраном KettyBot, интерактивный робот-официант KettyBot: везёт два блюда гостям конференции, вид сзади.
 - caption: KettyBot везёт блюда людям в деловой обстановке.
 - sourceGalleryBlock: `upper_near_hero`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ## Lower gallery block
@@ -136,7 +136,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Заказать сервисного робота KettyBot на HoReCa-зоны и события с гостями: крупным планом едет по кафе; на заднем фоне столики и стулья.
 - caption: KettyBot движется по кафе на фоне столиков и стульев.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__11
@@ -150,7 +150,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-официант KettyBot: стоит у фотозоны на выставке рядом с женщиной, которая смотрит на него и фотографируется с ним.
 - caption: KettyBot у фотозоны рядом с женщиной.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__12
@@ -164,7 +164,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Арендовать робота-промоутера KettyBot для HoReCa-зоны и события с гостями: едет по ресторану; на экране отображаются изображения блюд.
 - caption: KettyBot едет по ресторану с изображениями блюд на экране.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__13
@@ -178,7 +178,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-доставщик KettyBot, робот для ресторана KettyBot: крупным планом в помещении кафе.
 - caption: Крупный план KettyBot в интерьерном помещении.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__14
@@ -192,7 +192,7 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Взять в прокат сервисного робота KettyBot для HoReCa-зоны и события с гостями: Сервисный робот-официант KettyBot на корпоративном мероприятии позирует рядом с робобаром.
 - caption: KettyBot на корпоративном событии рядом с робобаром.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
 
 ### arenda-kettybot__15
@@ -206,5 +206,10 @@ The earlier visual card used the rebuilt short gallery subset. The original live
 - seoAlt: Робот-промоутер с экраном KettyBot, интерактивный робот-официант KettyBot: Жёлтый робот-официант KettyBot крупным планом на белом фоне.
 - caption: Жёлтый KettyBot крупным планом на белом фоне.
 - sourceGalleryBlock: `lower_near_photo_section`
-- rightsStatus: `approved_for_production`
+- rightsStatus: `approved_for_production` + runtime/gallery use blocked
 - textSource: data/models/robots.source-of-truth.json (previous human+agent media review)
+
+
+## Legacy hero runtime correction 2026-09-07
+
+Old Tilda `legacy_horizontal_hero` assets are retained only as archive/provenance/right-review evidence. They are blocked from robot-card runtime Hero/gallery preview use after Alexander rejected the KettyBot legacy hero photo in the gallery. Runtime Hero uses `/images/kiber-45/<slug>.webp`; galleries use non-hero upper/lower source-gallery photos.

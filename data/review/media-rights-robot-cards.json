@@ -46,10 +46,17 @@
           "caption": "Горизонтальный hero-кадр: робот-гуманоид Agibot X2 с живой мимикой на презентации.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -357,10 +364,17 @@
           "caption": "Горизонтальный hero-кадр: робот-официант BellaBot в виде кота разносит блюда и напитки гостям.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -692,10 +706,17 @@
           "caption": "Горизонтальный hero-кадр: робокамера GlamBot снимает slow-motion видео в стиле красной дорожки.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -979,10 +1000,17 @@
           "caption": "Горизонтальный hero-кадр: робот-собака Inchbot L1-W показывает STEM-программу на детском меропр.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -1314,10 +1342,17 @@
           "caption": "Горизонтальный hero-кадр: робот-доставщик KettyBot везёт заказы гостям с рекламным экраном.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -1649,10 +1684,17 @@
           "caption": "Горизонтальный hero-кадр: роборука с камерой Клипмейкер снимает динамичное моушн-видео гостей.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -1888,10 +1930,17 @@
           "caption": "Горизонтальный hero-кадр: робот мини-кофейня в аренду — готовит кофе и мороженое гостям меропри.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -2151,10 +2200,17 @@
           "caption": "Горизонтальный hero-кадр: робот-гуманоид Noetix Bumi общается с гостями на мероприятии.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -2462,10 +2518,17 @@
           "caption": "Горизонтальный hero-кадр: промо-робот Promobot V4 в аренду объезжает гостей мероприятия и разда.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -2821,10 +2884,17 @@
           "caption": "Горизонтальный hero-кадр: робот-кофейня в аренду — роборука готовит кофе гостям мероприятия.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -3156,10 +3226,17 @@
           "caption": "Горизонтальный hero-кадр: робот с манипулятором играет в шашки с гостем мероприятия.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -3467,10 +3544,17 @@
           "caption": "Горизонтальный hero-кадр: робот-бармен Робобар в аренду готовит коктейль по заказу с сенсорного.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -3778,10 +3862,17 @@
           "caption": "Горизонтальный hero-кадр: робот Арди — андроид с живой мимикой лица — общается с гостями меропр.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -4113,10 +4204,17 @@
           "caption": "Горизонтальный hero-кадр: роборука рисует гостю мероприятия детальный портрет карандашом.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -4400,10 +4498,17 @@
           "caption": "Горизонтальный hero-кадр: робот-гуманоид Sophia (Hanson Robotics) — премиальная модель в аренду.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -4735,10 +4840,17 @@
           "caption": "Горизонтальный hero-кадр: модульный двуногий робот Tron на колёсно-шаговой платформе.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -5094,10 +5206,17 @@
           "caption": "Горизонтальный hero-кадр: робот-шахматист SenseRobot играет в шахматы, сам передвигая фигуры.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -5429,10 +5548,17 @@
           "caption": "Горизонтальный hero-кадр: робот-художник Sketchbot в аренду рисует гостю карандашный блиц-портр.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -5884,10 +6010,17 @@
           "caption": "Горизонтальный hero-кадр: робот-гуманоид Unitree G1 кланяется и машет рукой гостям на мероприят.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -6195,10 +6328,17 @@
           "caption": "Горизонтальный hero-кадр: робот-собака Unitree Go2 в аренду делает трюки и танцует на сцене мер.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -6530,10 +6670,17 @@
           "caption": "Горизонтальный hero-кадр: робот-гуманоид Unitree H2 с мимикой лица, рост.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -6793,10 +6940,17 @@
           "caption": "Горизонтальный hero-кадр: робот-гуманоид Unitree R1 выполняет акробатический трюк на мероприяти.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -7104,10 +7258,17 @@
           "caption": "Горизонтальный hero-кадр: интерактивная сенсорная витрина UV-BOX с 3D-эффектом парения товара в.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",
@@ -7391,10 +7552,17 @@
           "caption": "Горизонтальный hero-кадр: робот-собака Xiaomi Cyberdog 2 делает сальто и акробатические трюки.",
           "rightsStatus": "approved_for_production",
           "productionApproved": true,
-          "previewUseAllowed": true,
+          "previewUseAllowed": false,
           "textSource": "legacy-hero-generated from extracted live hero evidence; needs human text/right review",
           "approvedBy": "Александр Маркин",
-          "approvedAt": "2026-08-29T00:55:09Z"
+          "approvedAt": "2026-08-29T00:55:09Z",
+          "runtimeUseAllowed": false,
+          "usage": [
+            "archive/provenance only; blocked from robot-card runtime galleries"
+          ],
+          "blockedReason": "Runtime-blocked by Alexander after KettyBot gallery review: old Tilda hero/background images are archive/provenance/right-review evidence only, not robot-card Hero/gallery runtime assets.",
+          "galleryUseAllowed": false,
+          "heroRuntimeUseAllowed": false
         },
         {
           "role": "current_generated_hero",

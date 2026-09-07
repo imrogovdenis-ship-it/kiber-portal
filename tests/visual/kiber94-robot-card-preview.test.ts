@@ -160,10 +160,11 @@ test('KIBER-94 robot_card mobile gallery follows supplied mobile reference witho
 
   const mobileMedia = componentSource.match(/@media \(max-width: 39\.9375rem\) \{[\s\S]*?\n  \}/)?.[0] ?? '';
   assert.match(mobileMedia, /\.template-gallery-nav\s*\{[\s\S]*display:\s*none/);
-  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*flex:\s*0 0 85%/);
-  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*aspect-ratio:\s*1 \/ 1/);
-  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*height:\s*auto/);
-  assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*width:\s*100%/);
+  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*flex:\s*0 0 auto/);
+  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*width:\s*fit-content/);
+  assert.match(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*height:\s*clamp\(18rem,\s*78vw,\s*24rem\)/);
+  assert.doesNotMatch(mobileMedia, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*aspect-ratio:\s*1 \/ 1/);
+  assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*width:\s*auto/);
   assert.match(mobileMedia, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*height:\s*100%/);
 });
 
@@ -198,7 +199,7 @@ test('KIBER-94 owner spacing keeps gallery and numbered-section text aligned to 
 
   assert.doesNotMatch(componentSource, /--robot-card-action-gallery-height:\s*clamp\(/);
   assert.match(componentSource, /\.template-action-gallery figure \{[\s\S]*height:\s*var\(--robot-card-gallery-height\)/);
-  assert.match(componentSource, /\.template-action-gallery img \{[\s\S]*max-width:\s*min\(52rem,\s*88vw\)/);
+  assert.match(componentSource, /\.template-action-gallery img \{[\s\S]*width:\s*auto[\s\S]*height:\s*100%[\s\S]*max-width:\s*none[\s\S]*object-fit:\s*contain/);
   assert.match(componentSource, /\.template-section-copy\s*\{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
   assert.doesNotMatch(componentSource, /\.template-section-copy--gallery \{[\s\S]*margin-left:\s*0/);
   assert.match(componentSource, /\.template-section > \.template-section__number,[\s\S]*\.template-section > h2,[\s\S]*\.template-section > \.template-section__lead \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
@@ -458,6 +459,8 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /height:\s*var\(--robot-card-gallery-height\)/);
   assert.match(componentSource, /width:\s*auto/);
   assert.match(componentSource, /object-fit:\s*contain/);
+  // white gutters owner fix: photo galleries shrink-wrap intrinsic image width without square forced frames
+  assert.match(componentSource, /\.template-live-gallery__item,[\s\S]*background:\s*transparent/);
   assert.match(componentSource, /flex:\s*0 0 auto/);
   const robotGalleryScript = readFileSync(robotGalleryScriptPath, 'utf8');
   assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
@@ -484,6 +487,27 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /robotCatalogTitle = 'Вас также могут заинтересовать'/);
 });
 
+
+
+test('KIBER-94 robot-card galleries preserve source photo aspect ratio on mobile', () => {
+  const componentSource = readFileSync(componentPath, 'utf8');
+  const mobileMedia = componentSource.match(/@media \(max-width: 39\.9375rem\) \{[\s\S]*?\n  \}/)?.[0] ?? '';
+  assert.match(componentSource, /\.template-live-gallery__item,\s*\n\s*\.template-action-gallery figure\s*\{[\s\S]*flex:\s*0 0 auto[\s\S]*width:\s*fit-content[\s\S]*height:\s*var\(--robot-card-gallery-height\)/);
+  assert.match(componentSource, /\.template-live-gallery__item img,\s*\n\s*\.template-action-gallery img\s*\{[\s\S]*width:\s*auto[\s\S]*height:\s*100%[\s\S]*object-fit:\s*contain/);
+  assert.match(mobileMedia, /width:\s*fit-content/);
+  assert.match(mobileMedia, /width:\s*auto/);
+  assert.doesNotMatch(mobileMedia, /aspect-ratio:\s*1\s*\/\s*1/);
+});
+
+test('KIBER-94 KettyBot galleries do not use rejected legacy Tilda hero images', () => {
+  const mapperSource = readFileSync(new URL('../../src/lib/kiber94-robot-template-data.ts', import.meta.url), 'utf8');
+  const doNotUseRegistry = JSON.parse(readFileSync(new URL('../../data/review/kiber-legacy-hero-images-do-not-use.json', import.meta.url), 'utf8'));
+  assert.equal(doNotUseRegistry.status, 'do_not_use_runtime_robot_card_galleries');
+  assert.match(mapperSource, /const kettybotReviewGallery = \[/);
+  assert.doesNotMatch(mapperSource, /tild3265-3261-4533-b965-383239633331__photo\.webp/);
+  assert.match(mapperSource, /tild6236-3131-4466-a632-623038373139__07\.webp/);
+});
+
 test('KIBER-94 robot_card latest owner visual feedback is protected', () => {
   const componentSource = readFileSync(componentPath, 'utf8');
 
@@ -507,8 +531,9 @@ test('KIBER-94 robot_card latest owner visual feedback is protected', () => {
   assert.match(componentSource, /class="template-live-hero__main-copy"/);
   assert.match(componentSource, /class="template-live-hero__price-actions"/);
   assert.match(componentSource, /\.template-live-hero__content \{[\s\S]*grid-template-rows:\s*1fr auto auto 1fr/);
-  assert.match(componentSource, /\.template-live-hero__eyebrow \{[\s\S]*align-self:\s*center[\s\S]*justify-self:\s*center/);
-  assert.match(componentSource, /\.template-live-hero__price-actions \{[\s\S]*align-self:\s*center[\s\S]*justify-items:\s*center[\s\S]*margin-top:\s*clamp\(2\.2rem,\s*3vw,\s*3rem\)/);
+  assert.match(componentSource, /\.template-live-hero__eyebrow \{[\s\S]*align-self:\s*center[\s\S]*justify-self:\s*start/);
+  assert.match(componentSource, /\.template-live-hero__price-actions \{[\s\S]*align-self:\s*center[\s\S]*justify-items:\s*start[\s\S]*margin-top:\s*clamp\(2\.2rem,\s*3vw,\s*3rem\)/);
+  assert.match(componentSource, /\.template-live-hero__actions \{[\s\S]*justify-content:\s*flex-start/);
   assert.match(componentSource, /\.template-live-hero__main-copy \{[\s\S]*justify-self:\s*start/);
 
   assert.match(componentSource, /\.template-check-list--reference,[\s\S]*\.template-order-list--reference \{[\s\S]*margin-left:\s*var\(--kp-home-large-offset/);
@@ -537,4 +562,41 @@ test('KIBER-94 robot_card responsive visual approval is recorded without opening
   assert.equal(approval.safety.publicRobotRoutesChanged, false);
   assert.equal(approval.safety.liveLeadRoutingChanged, false);
   assert.equal(approval.safety.productionDeployChanged, false);
+});
+
+
+test('KIBER robot-card generation guardrails block recent KettyBot mistakes', () => {
+  const guardrails = readJson(resolve(root, 'data/content-contracts/kiber-robot-card-generation-guardrails.json'));
+  const approval = readJson(designStructureApprovalPath);
+  assert.equal(guardrails.status, 'canonical_for_robot_card_generation_after_kettybot_correction');
+  assert.equal(guardrails.correctContour.repo, '/home/alex/projects/kiber-portal-pr8');
+  assert.equal(guardrails.correctContour.template, 'src/components/templates/RobotCardTemplate.astro');
+  assert.ok(guardrails.blockedContours.some((contour: { repo: string }) => contour.repo === '/home/alex/projects/kiber-portal'));
+  assert.ok(guardrails.knownMistakesBlocked.includes('wrong repo/old contour'));
+  assert.ok(guardrails.knownMistakesBlocked.includes('legacy Tilda hero used in gallery'));
+  assert.ok(guardrails.knownMistakesBlocked.includes('gallery object-fit cover/crop forced square cards'));
+  assert.match(approval.approvedContract.hero, /align left/);
+  assert.match(approval.approvedContract.galleries, /no forced square cards/);
+});
+
+
+
+test('legacy Tilda hero media stays rights-approved but runtime-blocked for robot-card galleries', () => {
+  const mediaCards = readJson(resolve(root, 'data/review/media-rights-robot-cards.json'));
+  const legacyAudit = readJson(resolve(root, 'data/review/media-rights-legacy-hero-images.json'));
+  for (const card of mediaCards.robots) {
+    const legacy = card.assets.find((asset: { role: string }) => asset.role === 'legacy_horizontal_hero');
+    assert.equal(legacy?.rightsStatus, 'approved_for_production');
+    assert.equal(legacy?.productionApproved, true);
+    assert.equal(legacy?.runtimeUseAllowed, false);
+    assert.equal(legacy?.galleryUseAllowed, false);
+    assert.equal(legacy?.heroRuntimeUseAllowed, false);
+  }
+  for (const item of legacyAudit.robots) {
+    assert.equal(item.legacyHero.rightsStatus, 'approved_for_production');
+    assert.equal(item.legacyHero.productionApproved, true);
+    assert.equal(item.legacyHero.runtimeUseAllowed, false);
+    assert.equal(item.legacyHero.galleryUseAllowed, false);
+    assert.equal(item.legacyHero.heroRuntimeUseAllowed, false);
+  }
 });

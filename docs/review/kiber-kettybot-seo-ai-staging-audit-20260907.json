@@ -1,0 +1,69 @@
+{
+  "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-kettybot/",
+  "http": "HTTP/2 200 ",
+  "xRobotsNoindex": true,
+  "title": "Аренда KettyBot — робот-официант для ресторана и мероприятия",
+  "description": "Аренда KettyBot с доставкой, настройкой маршрутов, рекламным экраном и сопровождением для ресторана, банкета, отеля или выставки HoReCa.",
+  "robots": "noindex, nofollow",
+  "ogTitle": "Аренда KettyBot — робот-официант для ресторана и мероприятия",
+  "ogDescription": "Аренда KettyBot с доставкой, настройкой маршрутов, рекламным экраном и сопровождением для ресторана, банкета, отеля или выставки HoReCa.",
+  "h1Count": 1,
+  "h1": [
+    "Аренда робота-официанта KettyBot"
+  ],
+  "seoIntentComplete": true,
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда KettyBot",
+    "secondaryKeywords": [
+      "KettyBot аренда",
+      "робот-официант KettyBot",
+      "прокат KettyBot",
+      "заказать KettyBot",
+      "KettyBot для ресторана"
+    ],
+    "modelNameVariants": [
+      "KettyBot",
+      "Ketty Bot",
+      "Кеттибот",
+      "Кэтибот",
+      "робот KettyBot",
+      "Pudu KettyBot"
+    ],
+    "entitySynonyms": [
+      "робот-официант",
+      "сервисный робот",
+      "робот-доставщик",
+      "робот для ресторана",
+      "робот для HoReCa"
+    ],
+    "aiAgentHints": [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели KettyBot.",
+      "Generic запросы про аренду робота-официанта принадлежат подборке/сценарной странице, а не primaryKeyword этой карточки.",
+      "Wordstat показал низкий exact-model спрос, но наличие выдачи и entity-запроса robot-waiter KettyBot подтверждает смысл exact-model карточки.",
+      "Цена, маршрут, длительность, брендирование и условия площадки уточняются менеджером КИБЕР ПОРТАЛ."
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "KettyBot",
+      "model": "KettyBot",
+      "manufacturer": "Pudu Robotics",
+      "category": "service_robot",
+      "canonicalPath": "/preview/kiber-94/robot-card/arenda-kettybot/"
+    },
+    "isCrawlerOnlyText": false
+  },
+  "visibleLeaks": {
+    "Wordstat": false,
+    "SERP": false,
+    "generic": false,
+    "model-specific": false,
+    "preview-first": false,
+    "дизайн сверяется": false,
+    "review_draft": false,
+    "needs_live_verification": false
+  },
+  "galleryRefs": 10,
+  "capabilityRefs": 6
+}

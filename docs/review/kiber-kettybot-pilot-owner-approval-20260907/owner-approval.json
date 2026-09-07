@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "issue": "KIBER-94",
+  "slug": "arenda-kettybot",
+  "pageType": "robot_card",
+  "status": "approved_by_owner_for_pilot_generation_contract",
+  "approvedBy": "Александр Маркин",
+  "approvedDate": "2026-09-07",
+  "source": "Telegram DM with Александр Маркин",
+  "ownerQuote": "Сначала ты смотришь текущий KettyBot preview - посмотрел. Все в порядке. Если KettyBot ок — фиксируем owner approval пилота - делай. Подтверждаю. После approval — делаем clean commit/PR package - делай. Подтверждаю.",
+  "approvedPreviewRoute": "/preview/kiber-94/robot-card/arenda-kettybot/",
+  "approvedStagingUrl": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-kettybot/",
+  "approvedScope": [
+    "KettyBot pilot preview visual/content/media/SEO-AI contract",
+    "robot-card generation guardrails for future batches",
+    "clean commit/PR package preparation"
+  ],
+  "notApproved": [
+    "production deploy",
+    "DNS changes",
+    "secrets changes",
+    "analytics activation",
+    "live lead routing",
+    "merge",
+    "public route replacement",
+    "mass scaling without next batch review"
+  ],
+  "evidence": {
+    "guardrails": "data/content-contracts/kiber-robot-card-generation-guardrails.json",
+    "contractDoc": "docs/content-contracts/kiber-robot-card-generation-guardrails.md",
+    "cleanupReport": "docs/review/kiber-robot-card-generation-rules-cleanup-20260907/README.md",
+    "verification": "docs/review/kiber-robot-card-generation-rules-cleanup-20260907/verification.json",
+    "kettybotResearchPackage": "docs/review/kiber-kettybot-pilot-research-package-20260907.json",
+    "seoAiAudit": "docs/review/kiber-kettybot-seo-ai-staging-audit-20260907.json",
+    "galleryAudit": "docs/review/kiber-kettybot-gallery-approved-contract-staging-smoke-20260907.json"
+  },
+  "approvedContractSummary": {
+    "contour": "/home/alex/projects/kiber-portal-pr8 branch hermes/kiber-full-site-visual-qa-20260901, preview route only",
+    "pipeline": "Wordstat → SERP/competitors → content gaps → SEO passport → seoIntent → approved blocks → media/fact pass → preview → rendered audit → owner review",
+    "hero": "catalog image /images/kiber-45/<slug>.webp; text/buttons left aligned",
+    "galleries": "non-hero media only; source aspect ratio preserved at common height; no square/crop/default cover; legacy Tilda hero blocked",
+    "capabilities": "only data/models/robot-capability-images.source.json",
+    "seoAi": "exact-model robot_card seoIntent, no visible service/research leakage"
+  }
+}
