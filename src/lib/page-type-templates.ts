@@ -77,6 +77,7 @@ export const pageTemplateSchema = z.object({
   seo: templateSeoSchema,
   seoIntent: templateSeoIntentSchema.optional(),
   aiSummary: z.string().min(80),
+  goshaQuote: z.string().min(80).optional(),
   hero: pageTemplateBlockSchema,
   bodyBlocks: z.array(pageTemplateBlockSchema).default([]),
   cta: templateCtaSchema,

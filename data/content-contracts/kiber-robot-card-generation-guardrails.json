@@ -48,7 +48,9 @@
     "galleries": "upper/lower non-hero source gallery photos split by sourceGalleryBlock",
     "galleryLayout": "one common height, intrinsic proportional width, no square aspect-ratio, no crop by default",
     "capabilities": "data/models/robot-capability-images.source.json only",
-    "batchGalleryRuntimeRequired": "For every generated robot-card batch, convert/wire sourceGalleryBlock gallery assets into public preview runtime assets; do not let preview fallback pass with only /images/kiber-45/<slug>.webp or catalog_card/current_generated_hero images."
+    "batchGalleryRuntimeRequired": "For every generated robot-card batch, convert/wire sourceGalleryBlock gallery assets into public preview runtime assets; do not let preview fallback pass with only /images/kiber-45/<slug>.webp or catalog_card/current_generated_hero images.",
+    "galleryDistribution": "For curated robot-card batches, split real gallery photos roughly in half between `Галерея` and `04 — робот в действии`; do not hard-code first five when a robot has only six assets, because that leaves the second gallery empty/thin.",
+    "galleryMobileAffordance": "For each robot-card gallery block, place a narrow/vertical photo first when available. This makes mobile sliders visibly continue to the right and teaches users to drag."
   },
   "seoAiRules": {
     "seoIntentRequired": true,
@@ -80,7 +82,10 @@
     "capability images pulled from gallery",
     "visible service/research labels leaked into preview",
     "seoIntent incomplete",
-    "batch robot-card galleries shipped with only square catalog hero/fallback because source gallery assets were not converted/wired into preview runtime"
+    "batch robot-card galleries shipped with only square catalog hero/fallback because source gallery assets were not converted/wired into preview runtime",
+    "hard-coded gallery split left Unitree H2 with only one `04 — робот в действии` image instead of roughly half of available photos",
+    "generic Gosha fallback quote reused across multiple robot cards instead of individual robot-specific jokes",
+    "gallery order did not put a narrow/vertical photo first, reducing mobile slider affordance"
   ],
   "safetyBoundaries": {
     "productionDeployAllowed": false,
@@ -95,5 +100,8 @@
     "approvedDate": "2026-09-07",
     "record": "docs/review/kiber-kettybot-pilot-owner-approval-20260907/owner-approval.json",
     "approvedPreviewRoute": "/preview/kiber-94/robot-card/arenda-kettybot/"
+  },
+  "goshaRules": {
+    "individualRobotQuoteRequired": "Every robot_card must have a unique Gosha quote tied to the concrete robot/model. Generic fallback quotes reused across cards are blockers."
   }
 }

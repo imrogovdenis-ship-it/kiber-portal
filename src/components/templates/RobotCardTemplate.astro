@@ -15,9 +15,11 @@ const { template } = Astro.props as { template: RobotCardTemplateData };
 const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
-const hasCuratedSplitGallery = gallery.length >= 7;
-const primaryGallery = hasCuratedSplitGallery ? gallery.slice(1, 6) : (gallery.length > 1 ? gallery.slice(1, 6) : gallery).slice(0, 5);
-const actionGallery = hasCuratedSplitGallery ? gallery.slice(6, 11) : (gallery.length > 3 ? gallery.slice(3, 8) : gallery.slice(1, 6).length > 0 ? gallery.slice(1, 6) : gallery).slice(0, 5);
+const curatedGalleryPhotoCount = Math.max(0, gallery.length - 1);
+const curatedGallerySplitIndex = 1 + Math.ceil(curatedGalleryPhotoCount / 2);
+const hasCuratedSplitGallery = curatedGalleryPhotoCount >= 6;
+const primaryGallery = hasCuratedSplitGallery ? gallery.slice(1, curatedGallerySplitIndex) : (gallery.length > 1 ? gallery.slice(1, 6) : gallery).slice(0, 5);
+const actionGallery = hasCuratedSplitGallery ? gallery.slice(curatedGallerySplitIndex) : (gallery.length > 3 ? gallery.slice(3, 8) : gallery.slice(1, 6).length > 0 ? gallery.slice(1, 6) : gallery).slice(0, 5);
 const capabilitiesLead = template.bodyBlocks.find((block) => block.id === 'capabilitiesLead')?.text ?? 'Возможности показываем как продающие сценарные преимущества, но без неподтверждённых обещаний: факты идут из текущей карточки робота.';
 const scenariosLead = template.bodyBlocks.find((block) => block.id === 'scenariosLead')?.text ?? 'Сценарии помогают посетителю быстро понять, подойдёт ли робот под его событие, а AI-агенту — связать модель с реальными event-задачами.';
 const capabilityItems = template.robot.capabilities.slice(0, 6);
@@ -137,9 +139,12 @@ const robotFinalCta = {
   primaryCta: { label: 'Написать нам', href: '/contacts/' },
   secondaryCta: { label: 'Оставить заявку', href: leadHref },
 };
+const fallbackRobotGoshaQuote = `— ${robotDisplayName} заслуживает отдельного сценария, а не общей шутки из робо-буфета. Если робот выходит к гостям, у него должна быть своя роль, свой момент и понятная задача на площадке.
+
+Напишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.`;
 const robotGosha = {
   ...homeGosha,
-  text: template.robot.name.includes('KettyBot') ? `— KettyBot — официант, который не забывает, куда несёт поднос, если гости не устроили перестановку века. Он хорош там, где сервису нужен маршрут, экран и немного роботического шарма.\n\nНапишите менеджеру: проверим план зала, проходы, точки остановки и сценарий подачи, чтобы KettyBot помогал персоналу, а не играл в лабиринт между столами.` : `— Я бы сказал, что ${robotDisplayName} — это не «человек в костюме», а костюм будущего, который сам пришёл знакомиться с гостями.\n\nЕсли хотите понять, подойдёт ли он под вашу площадку, напишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.`
+  text: template.goshaQuote ?? fallbackRobotGoshaQuote,
 };
 const robotFaq = {
   title: 'Вопросы и ответы (FAQ)',

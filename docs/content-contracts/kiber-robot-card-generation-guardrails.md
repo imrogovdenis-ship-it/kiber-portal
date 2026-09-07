@@ -26,6 +26,9 @@ Do not use `/home/alex/projects/kiber-portal` branch `hermes/kiber-42-44-price-d
 11. Reintroduced mobile `aspect-ratio: 1 / 1` for robot-card galleries.
 12. Risked mixing gallery photos with `Что умеет` capability images.
 13. Shipped a batch preview with only the square catalog Hero image/fallback because real source-gallery photos were not converted and wired into preview runtime.
+14. Used a hard-coded first-five gallery split, leaving Unitree H2 with only one image in `04 — робот в действии`; batch galleries must split available real photos roughly in half.
+15. Reused a generic Кибер Гоша quote across robot cards instead of writing an individual model-specific joke/CTA.
+16. Failed to start each gallery with a narrow/vertical photo when available, so mobile users did not see that the slider continues to the right.
 
 ## Correct mandatory pipeline
 
@@ -35,7 +38,8 @@ Do not use `/home/alex/projects/kiber-portal` branch `hermes/kiber-42-44-price-d
 
 - Hero uses only `/images/kiber-45/<slug>.webp`.
 - Legacy Tilda hero/background images are archive/provenance only and blocked from runtime robot-card galleries.
-- First gallery uses upper non-hero source gallery photos.
+- First gallery uses upper/non-hero source gallery photos; `04 — робот в действии` uses the remaining source-gallery photos.
+- For batches, split available real gallery photos roughly in half, by source meaning where possible but never leaving the second gallery empty/thin when enough photos exist.
 - Batch generation must convert and wire source-gallery assets into public preview runtime paths before staging; a hero/catalog-only fallback is a blocker, not an acceptable preview.
 - `04 — робот в действии` uses lower non-hero source gallery photos.
 - `02 — ключевые возможности` uses only `data/models/robot-capability-images.source.json` and `/images/robot-capabilities/<slug>/...`.
@@ -53,3 +57,11 @@ This document does not approve production, DNS, secrets, analytics, live lead ro
 On 2026-09-07 Alexander reviewed the current KettyBot preview and approved it as the pilot/generation-contract checkpoint. Evidence: `docs/review/kiber-kettybot-pilot-owner-approval-20260907/owner-approval.json`.
 
 This still does not approve production, DNS, secrets, analytics, live lead routing, merge, public route replacement, or mass scaling without the next batch review.
+
+## Кибер Гоша rule
+
+Every `robot_card` must have a unique Кибер Гоша quote for the specific robot/model. A shared generic quote/fallback across a batch is a blocker. The quote may joke lightly about the concrete robot, but must still send the user to a real manager, not pretend Гоша makes the final decision.
+
+## Mobile gallery affordance rule
+
+For each gallery block (`Галерея` and `04 — робот в действии`), place a narrow/vertical photo first when available. This is intentional for mobile: users should see that the next photo peeks in from the right and understand that the slider is draggable. Then distribute the rest by meaning and keep the two galleries roughly half/half.

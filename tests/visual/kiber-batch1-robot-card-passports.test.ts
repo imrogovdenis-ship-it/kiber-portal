@@ -68,8 +68,9 @@ test('KIBER Batch 1 robot-card galleries use real source-gallery photos, not her
   const dataSource = readFileSync('src/lib/kiber94-robot-template-data.ts', 'utf8');
   const templateSource = readFileSync('src/components/templates/RobotCardTemplate.astro', 'utf8');
   assert.match(dataSource, /const batch1ReviewGalleryBySlug/);
-  assert.ok(templateSource.includes('hasCuratedSplitGallery ? gallery.slice(1, 6)'), 'primary gallery uses curated non-hero slice');
-  assert.ok(templateSource.includes('hasCuratedSplitGallery ? gallery.slice(6, 11)'), 'action gallery uses curated non-overlapping slice');
+  assert.ok(templateSource.includes('curatedGallerySplitIndex = 1 + Math.ceil(curatedGalleryPhotoCount / 2)'), 'gallery split is computed as roughly half of available real photos');
+  assert.ok(templateSource.includes('gallery.slice(1, curatedGallerySplitIndex)'), 'primary gallery uses first roughly half of real photos');
+  assert.ok(templateSource.includes('gallery.slice(curatedGallerySplitIndex)'), 'action gallery uses second roughly half without overlap');
 
   for (const slug of slugs) {
     const robot = galleryManifest.robots.find((item: { slug: string }) => item.slug === slug);
@@ -80,7 +81,36 @@ test('KIBER Batch 1 robot-card galleries use real source-gallery photos, not her
     assert.ok(sources.every((src: string) => !src.includes('/images/kiber-45/')), `${slug} gallery photos exclude square catalog hero assets`);
     assert.ok(sources.every((src: string) => !src.includes('__photo')), `${slug} gallery photos exclude legacy horizontal hero assets`);
     assert.ok(robot.assets.every((asset: { sourceRole: string }) => asset.sourceRole === 'gallery'), `${slug} uses source-gallery role only`);
+
+    const expectedPrimaryCount = Math.ceil(robot.count / 2);
+    const expectedActionCount = robot.count - expectedPrimaryCount;
+    assert.ok(expectedPrimaryCount >= 3, `${slug} primary gallery keeps at least 3 photos`);
+    assert.ok(expectedActionCount >= 3 || robot.count === 6, `${slug} action gallery keeps a meaningful second half`);
     assert.ok(robot.assets.some((asset: { aspectRatio: number }) => Math.abs(asset.aspectRatio - 1) > 0.15), `${slug} has non-square photo ratios for height-driven layout`);
     assert.ok(robot.assets.every((asset: { webpWidth: number; webpHeight: number }) => !(asset.webpWidth === 720 && asset.webpHeight === 720)), `${slug} gallery assets are not square catalog derivatives`);
+  }
+});
+
+test('KIBER Batch 1 rendered galleries are balanced and start each gallery with a narrow photo', () => {
+  const audit = readJson('docs/review/kiber-batch1-humanoids-research-20260907/gallery-fix-rendered-audit.json');
+  assert.equal(audit.allPass, true);
+  for (const item of audit.results) {
+    assert.ok(Math.abs(item.primaryGalleryCount - item.actionGalleryCount) <= 1, `${item.slug} gallery counts are roughly half/half`);
+    assert.equal(item.noOverlap, true, `${item.slug} galleries do not overlap`);
+    assert.equal(item.noCatalogHeroInGalleries, true, `${item.slug} has no catalog/Hero image in galleries`);
+    assert.equal(item.noLegacyHeroInGalleries, true, `${item.slug} has no legacy hero in galleries`);
+    assert.ok(item.primaryFirstAspectRatio <= 1.05 || item.primaryFirstIsNarrowestAvailable, `${item.slug} primary gallery starts with a narrow/vertical photo when available`);
+    assert.ok(item.actionFirstAspectRatio <= 1.05 || item.actionFirstIsNarrowestAvailable, `${item.slug} action gallery starts with a narrow/vertical photo when available`);
+  }
+});
+
+test('KIBER Batch 1 Gosha quotes are unique per robot and not generic fallback', () => {
+  const rendered = readJson('docs/review/kiber-batch1-humanoids-research-20260907/gosha-quotes-rendered-audit.json');
+  assert.equal(rendered.allPass, true);
+  const quotes = rendered.results.map((item: { quote: string }) => item.quote);
+  assert.equal(new Set(quotes).size, slugs.length);
+  for (const item of rendered.results) {
+    assert.equal(item.hasGenericCostumeFutureFallback, false, `${item.slug} does not reuse the generic costume-future fallback`);
+    assert.equal(item.hasRobotSpecificName, true, `${item.slug} quote mentions its robot/model`);
   }
 });
