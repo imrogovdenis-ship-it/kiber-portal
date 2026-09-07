@@ -82,7 +82,167 @@ const kettybotReviewGallery = [
   }
 ].map((image) => ({ ...image, sourceStatus: 'page_content' as const }));
 
+
+const batch1ReviewGalleryBySlug: Record<string, Array<{ src: string; alt: string; sourceStatus: 'page_content' }>> = {
+  'arenda-agibot-x2': [
+    { src: '/images/kiber-45/arenda-agibot-x2.webp', alt: "Каталожное изображение arenda-agibot-x2 для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6437-3735-4235-a161-656439643739__02.webp", alt: "Робот в виде человека Agibot X2, интерактивный гуманоид Agibot X2: на сером фоне бежит и демонстрирует передвижение бегом.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3063-6333-4161-b064-343764636537__011.webp", alt: "Заказать человекоподобного робота Agibot X2 на презентации: Реальная фотография: робот-гуманоид Agibot X2 танцует на сером фоне, вид спереди.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6561-6236-4831-a663-663263643764__07.webp", alt: "Человекоподобный робот Agibot X2, робот-человек Agibot X2: на производстве что-то рассматривает. Вид спереди.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08.webp", alt: "Робот-человек Agibot X2, андроид Agibot X2: на белом фоне демонстрирует движение из ушу или боевого единоборства. Вид спереди.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6665-6366-4537-a464-653439383238__09.webp", alt: "Прокат андроида Agibot X2 для мероприятия: стоит вертикально на белом фоне, руки немного согнуты, как будто он разговаривает с человеком.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6664-3537-4635-a266-633164383463__05.webp", alt: "Взять в прокат человекоподобного робота Agibot X2 для выставочного стенда: на выставке общается с людьми; вокруг него много мужчин, которые смотрят на робота или.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3730-3866-4365-b461-336133633866__01.webp", alt: "Арендовать андроида Agibot X2 для мероприятия: Крупный план робота Agibot X2 с человеком: человек приобнимает робота, у робота одна рука.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6238-6339-4439-b061-313961333062__04.webp", alt: "Человекообразный робот Agibot X2: рядом с робособакой на выставке демонстрации технологий. Вид немного спереди.", sourceStatus: 'page_content' as const },
+  ],
+  'arenda-noetix-bumi': [
+    { src: '/images/kiber-45/arenda-noetix-bumi.webp', alt: "Каталожное изображение arenda-noetix-bumi для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3965-3331-4665-b330-623534633536__04.webp", alt: "Робот-гуманоид Noetix Bumi, робот-компаньон Noetix Bumi: Молодая девушка держит робота Noetix Bumi на руках, показывая, насколько он лёгкий. Изображение.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3236-3461-4431-b233-623937366430__noroot.webp", alt: "Арендовать интерактивного гуманоида Noetix Bumi для уличной площадки: танцует на улице на фестивале.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3335-3863-4438-b032-663231346639__01.webp", alt: "Прокат интерактивного гуманоида Noetix Bumi для демонстрации возможностей: крупным планом в классе для обучения детей программированию демонстрирует движение при.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3036-3735-4763-b764-613239623964__02.webp", alt: "Мини-гуманоид Noetix Bumi: Ребёнок управляет роботом Noetix Bumi в домашних условиях в своей комнате.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6265-6262-4137-a166-336266316631__noroot.webp", alt: "Заказать человекоподобного робота Noetix Bumi на презентации: танцует на мероприятии.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6631-3463-4837-b233-303232393430__08.webp", alt: "Интерактивный гуманоид Noetix Bumi, робот в виде человека Noetix Bumi: танцует на выставке, рядом стоят люди и смотрят на него.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6361-6334-4263-b464-663235336535__03.webp", alt: "Взять в прокат человекоподобного робота Noetix Bumi для презентации: Ребёнок занимается с роботом-гуманоидом Noetix Bumi в школе программирования, рядом дети за.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3664-6436-4461-b166-303266313631__010.webp", alt: "Робот-гуманоид Noetix Bumi, робот-компаньон Noetix Bumi: бежит по траве вместе с ребёнком; они примерно одинакового роста, ребёнок веселится. Вид спереди.", sourceStatus: 'page_content' as const },
+  ],
+  'arenda-unitree-r1': [
+    { src: '/images/kiber-45/arenda-unitree-r1.webp', alt: "Каталожное изображение arenda-unitree-r1 для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6536-3766-4034-a538-626532663162__noroot.webp", alt: "Заказать человекоподобного робота Unitree R1 на демонстрации возможностей: делает акробатический трюк — стойку на руках на краю каменного утёса. Фотография крупным.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3062-3332-4361-b232-613130313861__03.webp", alt: "Интерактивный гуманоид Unitree R1: Крупная фотография робота Unitree R1, вероятно созданная с помощью искусственного интеллекта.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6136-3331-4366-b934-653538306539__noroot.webp", alt: "Прокат андроида Unitree R1 для мероприятия: Эпическое изображение робота-гуманоида Unitree R1, стилизованного под огромного робота из.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3937-3061-4237-a338-346232613765__04.webp", alt: "Арендовать андроида Unitree R1 для демонстрации возможностей: крупным планом во весь рост стоит у входа в здание; за ним лестница поднимается вверх, вход.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-6138-4933-b832-633633326535__05.webp", alt: "Робот-человек Unitree R1, андроид Unitree R1: на лужайке с зелёной травой стоит на руках и выполняет акробатический трюк; на заднем фоне.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp", alt: "Человекоподобный робот Unitree R1, робот-человек Unitree R1: на выставке на переднем плане, виден примерно по колено; сзади несколько человек наблюдают за.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-3730-4138-a238-373063623031__01.webp", alt: "Взять в прокат человекоподобного робота Unitree R1 для демонстрации возможностей: на фоне высоких зданий делает акробатический трюк — стойку на руках, ноги разведены в стороны.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3762-6238-4662-b332-366430336433__noroot.webp", alt: "Прямоходящий робот Unitree R1, робот на двух ногах Unitree R1: Крупное изображение двух роботов-гуманоидов Unitree R1, лежащих на столе головами друг к другу.", sourceStatus: 'page_content' as const },
+  ],
+  'arenda-unitree-h2': [
+    { src: '/images/kiber-45/arenda-unitree-h2.webp', alt: "Каталожное изображение arenda-unitree-h2 для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp", alt: "Прямоходящий робот Unitree H2, робот на двух ногах Unitree H2: Крупный план робота Unitree H2 на выставке: похоже на первую презентацию аудитории, люди.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3132-6631-4237-a432-326664313536__02.webp", alt: "Интерактивный гуманоид Unitree H2: стоит в полный рост в стойке единоборств, похожей на каратэ. Он на улице на фоне стеклянного.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6263-3431-4436-b463-366666346362__noroot.webp", alt: "Робот-человек Unitree H2, андроид Unitree H2: крупным планом, обрезан по колено, танцует на фоне пустого зала; сверху на потолке софиты.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3465-6438-4039-a362-363565353563__04.webp", alt: "Заказать человекоподобного робота Unitree H2 на презентации: идёт по подиуму в светлом костюме с длинными рукавами, штанинами и капюшоном; рядом идёт.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6665-6262-4230-b331-653935303135__01.webp", alt: "Арендовать андроида Unitree H2 для выставочного стенда: Крупный план робота Unitree H2 по пояс на выставочном стенде Unitree; на заднем фоне рекламные.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3634-6665-4631-b530-653838623332__07.webp", alt: "Прокат андроида Unitree H2 для мероприятия: на ринге проводит бой с роботом-гуманоидом Unitree G1. Оба в мягких шлемах и перчатках; H2 бьёт.", sourceStatus: 'page_content' as const },
+  ],
+  'arenda-robota-sofiya': [
+    { src: '/images/kiber-45/arenda-robota-sofiya.webp', alt: "Каталожное изображение arenda-robota-sofiya для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3231-3464-4138-b632-653036383765__06.webp", alt: "Заказать человекоподобного робота София на уличной площадки: идёт по тротуару городской улицы и катит перед собой тележку. Она одета в серую блузку и.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3134-6537-4237-b337-396630643233__noroot.webp", alt: "Арендовать робота-гуманоида София для сцены и публичного выступления: читает речь на выступлении в ООН в основном зале совещаний; рядом стоит женщина в синем, на.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6138-3464-4439-a336-323663313833__07.webp", alt: "Андроид София, робот-гуманоид София: Крупный план робота Софии: на лице выражено удивление, она находится в фотозоне или похожей.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3165-6261-4366-b538-336262343464__04.webp", alt: "Робот София: крупным планом даёт интервью, перед ней множество микрофонов разных телекомпаний.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3735-6536-4366-b133-363031306330__011.webp", alt: "Робот-человек София, гуманоид Hanson Robotics София: на экране телевизора: робот София в студии телекомпании, внизу экрана бегущая строка и описание.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6436-3932-4231-b931-653434363937__noroot.webp", alt: "Взять в прокат человекоподобного робота София для сцены и публичного выступления: ведёт эмоциональное выступление на событии Citizen Robot; она одета в красно-белое одеяние, рот.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3765-3435-4633-b862-323837616537__05.webp", alt: "Робот-человек София, гуманоид Hanson Robotics София: на сцене оперного театра поёт под аккомпанемент оркестра; руки подняты и выражают эмоции. На.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6630-3139-4562-b532-363137613763__08.webp", alt: "Прокат робота-гуманоида София для мероприятия: Красивое фото робота Софии крупным планом: она даёт интервью телекомпании, вид спереди, на шее.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3734-3332-4338-b166-383336376131__010.webp", alt: "Андроид София, робот-гуманоид София: даёт интервью или выступает на сцене: сзади интерактивный экран, перед ней тумба и два.", sourceStatus: 'page_content' as const },
+  ],
+  'arenda-robota-ardi': [
+    { src: '/images/kiber-45/arenda-robota-ardi.webp', alt: "Каталожное изображение arenda-robota-ardi для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3038-3330-4135-a132-316462346334__noroot.webp", alt: "Заказать сервисного робота Ardi на презентации: Очень крупная фотография робота Ardi: видны только голова и шея.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6631-3064-4130-b065-386464393630__06.webp", alt: "Робот-промоутер Ardi, робот-хостес Ardi: выступает перед аудиторией на сцене; перед ним микрофон, эмоциональное выступление, вид спереди.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3538-3231-4930-a234-613065646461__03.webp", alt: "Взять в прокат сервисного робота Ardi для выставочного стенда: Оператор готовит робота Ardi к выступлению: робот стоит в холле выставки, подключён проводом к.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6666-6639-4363-b535-636638386662__08.webp", alt: "Интерактивный робот Ardi, робот с экраном Ardi: выступает перед гостями на робошоу, крупный план, фронтальное изображение немного сбоку.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3434-3862-4665-b832-643034303733__noroot.webp", alt: "Робот Ardi: выступает на выставке лицом к зрителю; две девушки фотографируют его на телефоны или.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6232-3966-4565-a364-376230343535__011.webp", alt: "Прокат интерактивного робота Ardi для сцены и публичного выступления: крупным планом на сцене мероприятия; видны только грудь и голова.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3766-6366-4261-b161-313637633031__04.webp", alt: "Интерактивный робот Ardi, робот с экраном Ardi: Эмоциональное выступление робота Ardi перед аудиторией; видеооператор снимает его выступление.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3764-3566-4436-b462-636632653738__05.webp", alt: "Арендовать интерактивного робота Ardi для выставочного стенда: взаимодействует с аудиторией на корпоративном мероприятии или выставке, вид сбоку; люди и дети.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6464-3364-4466-b331-613636656637__012.webp", alt: "Робот-промоутер Ardi, робот-хостес Ardi: выступает перед публикой на сцене крупным планом; перед ним микрофон, неоновая подсветка, руки.", sourceStatus: 'page_content' as const },
+  ],
+  'arenda-robota-tron': [
+    { src: '/images/kiber-45/arenda-robota-tron.webp', alt: "Каталожное изображение arenda-robota-tron для Hero; не используется как фото галереи.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3839-6235-4164-a665-346361626166__noroot.webp", alt: "Заказать робота Tron на колёсной базе на презентации: крупным планом на сером фоне на колёсной базе. Фирменное изображение сайта производителя.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild6362-3431-4465-b132-356532616262__07.webp", alt: "Робот-трансформер Tron, мобильный робот Tron: Фирменное изображение с тремя роботами Tron, у каждого разная база передвижения: ноги, ступни и.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3235-3966-4364-b635-306562343464__013.webp", alt: "Робот-трансформер Tron, мобильный робот Tron: находится в положении сидя на полу; виден сам робот и руки человека, который держит пульт.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3463-3739-4766-b036-376366613534__noroot.webp", alt: "Прокат демонстрационного робота Tron для мероприятия: крупным планом на технологичном фоне со стеклом, стоит на колёсной базе и смотрит на зрителя.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3536-3736-4337-b632-643630306235__01.webp", alt: "Интерактивный робот Tron, демонстрационный робот Tron: на колёсной базе спускается вниз по широкой лестнице.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild6535-6131-4931-b562-646633363134__03.webp", alt: "Интерактивный робот Tron, демонстрационный робот Tron: на колёсной базе движется на выставке среди толпы людей, все смотрят на него.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3238-3533-4861-a431-303533306661__012.webp", alt: "Аренда демонстрационного робота Tron для мероприятия: Человек укладывает сложенного робота Tron в чемодан для перевозки, показывая компактность и.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3530-3730-4030-b432-386539343765__02.webp", alt: "Арендовать демонстрационного робота Tron для выставочного стенда: на колёсной базе движется на выставке среди множества людей, вид спереди.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild6637-3136-4133-b838-616337386661__011.webp", alt: "Модульный робот Tron: преодолевает полосу препятствий, как бегун на барьерной дорожке. Крупное изображение, вид.", sourceStatus: 'page_content' as const },
+    { src: "/images/kiber-94-preview/batch1-humanoids/arenda-robota-tron__tild3031-3435-4261-b363-393361623934__05.webp", alt: "Взять в прокат робота Tron на колёсной базе для демонстрации возможностей: поднимается вверх по лестнице на колёсной базе, рядом человек подталкивает его, демонстрируя.", sourceStatus: 'page_content' as const },
+  ],
+};
+
+
+const curatedRobotCardSlugs = new Set([
+  'arenda-kettybot',
+  'arenda-agibot-x2',
+  'arenda-noetix-bumi',
+  'arenda-unitree-r1',
+  'arenda-unitree-h2',
+  'arenda-robota-sofiya',
+  'arenda-robota-ardi',
+  'arenda-robota-tron',
+]);
+
+function assertCuratedRobotCardData(robot: RobotPageRecord, gallery: Array<{ src: string; alt: string; sourceStatus: 'page_content' }>, goshaQuote: string | undefined): void {
+  if (!curatedRobotCardSlugs.has(robot.slug)) return;
+  if (!goshaQuote) throw new Error(`Missing explicit per-robot Gosha quote for curated robot card: ${robot.slug}`);
+  const galleryPhotoAssets = gallery.slice(1);
+  if (galleryPhotoAssets.length < 6) throw new Error(`Missing explicit source-gallery runtime assets for curated robot card: ${robot.slug}`);
+  if (galleryPhotoAssets.some((image) => image.src.includes('/images/kiber-45/'))) throw new Error(`Catalog/Hero image leaked into curated gallery: ${robot.slug}`);
+  if (galleryPhotoAssets.some((image) => image.src.includes('__photo'))) throw new Error(`Legacy Tilda hero/background leaked into curated gallery: ${robot.slug}`);
+  if (galleryPhotoAssets.some((image) => !image.src.startsWith('/images/kiber-94-preview/'))) throw new Error(`Curated gallery must use explicit public preview assets: ${robot.slug}`);
+}
+
+function fallbackGoshaQuoteForUnpreparedRobot(robot: RobotPageRecord): string {
+  return `— ${robot.identity.name} пока ждёт отдельной цитаты Гоши: не буду притворяться, что эта карточка уже прошла редакторскую подготовку. Для review можно увидеть структуру, но перед публикацией нужен свой текст под модель и сценарий.
+
+Напишите менеджеру: команда КИБЕР ПОРТАЛ уточнит задачу, площадку, тайминг и подготовит сценарий без роботических сюрпризов.`;
+}
+
 const ownerSeoBySlug: Record<string, OwnerSeoOverride> = {
+  'arenda-agibot-x2': {
+    title: "Аренда Agibot X2 — робот-гуманоид для выставки и презентации",
+    description: "Аренда Agibot X2 для выставки, презентации или интерактивной зоны: сценарий выхода, подготовка площадки и сопровождение команды КИБЕР ПОРТАЛ.",
+    h1: "Аренда робота-гуманоида Agibot X2",
+    primaryKeyword: "аренда Agibot X2",
+    secondaryKeywords: ["Agibot X2 аренда", "прокат Agibot X2", "заказать Agibot X2", "робот Agibot X2"],
+  },
+  'arenda-noetix-bumi': {
+    title: "Аренда Noetix Bumi — компактный робот-гуманоид для интерактива",
+    description: "Аренда Noetix Bumi для интерактивной зоны, образовательного показа или промо: подготовка сценария, настройка демонстрации и сопровождение КИБЕР ПОРТАЛ.",
+    h1: "Аренда робота-гуманоида Noetix Bumi",
+    primaryKeyword: "аренда Noetix Bumi",
+    secondaryKeywords: ["Noetix Bumi аренда", "прокат Noetix Bumi", "заказать Noetix Bumi", "робот Noetix Bumi"],
+  },
+  'arenda-unitree-r1': {
+    title: "Аренда Unitree R1 — робот-гуманоид для мероприятия и стенда",
+    description: "Аренда Unitree R1 для выставки, презентации, шоурума или корпоративного события: сценарий демонстрации, безопасная зона и операторское сопровождение.",
+    h1: "Аренда робота-гуманоида Unitree R1",
+    primaryKeyword: "аренда Unitree R1",
+    secondaryKeywords: ["Unitree R1 аренда", "прокат Unitree R1", "заказать Unitree R1", "робот Unitree R1"],
+  },
+  'arenda-unitree-h2': {
+    title: "Аренда Unitree H2 — человекоподобный робот для шоу и презентации",
+    description: "Аренда Unitree H2 для технологичных мероприятий: подготовка выхода, демонстрационного сценария, безопасной зоны движения и сопровождение оператора.",
+    h1: "Аренда робота-гуманоида Unitree H2",
+    primaryKeyword: "аренда Unitree H2",
+    secondaryKeywords: ["Unitree H2 аренда", "прокат Unitree H2", "заказать Unitree H2", "робот Unitree H2"],
+  },
+  'arenda-robota-sofiya': {
+    title: "Аренда робота София — гуманоид для презентации и события",
+    description: "Аренда робота София для презентации, пресс-подхода или технологичного события: сценарий общения, подготовка вопросов и сопровождение команды КИБЕР ПОРТАЛ.",
+    h1: "Аренда робота София",
+    primaryKeyword: "аренда робота София",
+    secondaryKeywords: ["робот София аренда", "прокат робот София", "заказать робот София", "робот София"],
+  },
+  'arenda-robota-ardi': {
+    title: "Аренда робота Арди — интерактивный робот для мероприятий",
+    description: "Аренда робота Арди для промо-зоны, выставки, открытия или корпоративного события: сценарий взаимодействия, подготовка площадки и сопровождение оператора.",
+    h1: "Аренда робота Арди",
+    primaryKeyword: "аренда робота Арди",
+    secondaryKeywords: ["робот Арди аренда", "прокат робот Арди", "заказать робот Арди", "робот Арди"],
+  },
+  'arenda-robota-tron': {
+    title: "Аренда Tron — модульный робот для мероприятия и шоу",
+    description: "Аренда робота Tron для шоу, промо-зоны или технологичной демонстрации: подготовка сценария, проверка площадки и сопровождение команды КИБЕР ПОРТАЛ.",
+    h1: "Аренда робота Tron",
+    primaryKeyword: "аренда робота Tron",
+    secondaryKeywords: ["робот Tron аренда", "прокат робот Tron", "заказать робот Tron", "робот Tron"],
+  },
   'arenda-kettybot': {
     title: 'Аренда KettyBot — робот-официант для ресторана и мероприятия',
     description: 'Аренда KettyBot с доставкой, настройкой маршрутов, рекламным экраном и сопровождением для ресторана, банкета, отеля или выставки HoReCa.',
@@ -93,6 +253,111 @@ const ownerSeoBySlug: Record<string, OwnerSeoOverride> = {
 };
 
 const ownerSeoIntentBySlug: Record<string, OwnerSeoIntent> = {
+  'arenda-agibot-x2': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда Agibot X2",
+    secondaryKeywords: ["Agibot X2 аренда", "прокат Agibot X2", "заказать Agibot X2", "робот Agibot X2"],
+    modelNameVariants: ["Agibot X2", "робот Agibot X2", "Агибот X2", "Agibot", "робот-гуманоид Agibot X2"],
+    entitySynonyms: ["робот-гуманоид", "человекоподобный робот", "AI-гуманоид", "робот для выставки", "робот для презентации"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "Agibot X2", model: "Agibot X2", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-agibot-x2/" },
+    isCrawlerOnlyText: false,
+  },
+  'arenda-noetix-bumi': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда Noetix Bumi",
+    secondaryKeywords: ["Noetix Bumi аренда", "прокат Noetix Bumi", "заказать Noetix Bumi", "робот Noetix Bumi"],
+    modelNameVariants: ["Noetix Bumi", "робот Noetix Bumi", "Ноэтикс Буми", "Bumi", "компактный гуманоид Noetix Bumi"],
+    entitySynonyms: ["компактный робот-гуманоид", "образовательный робот", "интерактивный робот", "человекоподобный робот", "робот для детей и гостей"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "Noetix Bumi", model: "Noetix Bumi", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-noetix-bumi/" },
+    isCrawlerOnlyText: false,
+  },
+  'arenda-unitree-r1': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда Unitree R1",
+    secondaryKeywords: ["Unitree R1 аренда", "прокат Unitree R1", "заказать Unitree R1", "робот Unitree R1"],
+    modelNameVariants: ["Unitree R1", "робот Unitree R1", "Юнитри R1", "Юнитри Эр 1", "Unitree R1 humanoid"],
+    entitySynonyms: ["робот-гуманоид", "ходящий робот", "человекоподобный робот", "демонстрационный робот", "робот для технологичного стенда"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "Unitree R1", model: "Unitree R1", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-unitree-r1/" },
+    isCrawlerOnlyText: false,
+  },
+  'arenda-unitree-h2': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда Unitree H2",
+    secondaryKeywords: ["Unitree H2 аренда", "прокат Unitree H2", "заказать Unitree H2", "робот Unitree H2"],
+    modelNameVariants: ["Unitree H2", "робот Unitree H2", "Юнитри H2", "Юнитри Эйч 2", "Unitree H2 humanoid"],
+    entitySynonyms: ["человекоподобный робот", "робот-гуманоид", "ходящий робот", "робот для шоу", "робот для презентации"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "Unitree H2", model: "Unitree H2", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-unitree-h2/" },
+    isCrawlerOnlyText: false,
+  },
+  'arenda-robota-sofiya': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда робота София",
+    secondaryKeywords: ["робот София аренда", "прокат робот София", "заказать робот София", "робот София"],
+    modelNameVariants: ["робот София", "София", "Sophia robot", "гуманоид София", "робот-гуманоид София"],
+    entitySynonyms: ["робот-гуманоид", "человекоподобный робот", "интерактивный робот", "робот для презентации", "робот для пресс-события"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "робот София", model: "София", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-robota-sofiya/" },
+    isCrawlerOnlyText: false,
+  },
+  'arenda-robota-ardi': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда робота Арди",
+    secondaryKeywords: ["робот Арди аренда", "прокат робот Арди", "заказать робот Арди", "робот Арди"],
+    modelNameVariants: ["робот Арди", "Арди", "Ardi robot", "робот Ardi", "интерактивный робот Арди"],
+    entitySynonyms: ["интерактивный робот", "робот-промоутер", "робот для мероприятия", "робот-гуманоид", "робот для промо-зоны"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "робот Арди", model: "Арди", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-robota-ardi/" },
+    isCrawlerOnlyText: false,
+  },
+  'arenda-robota-tron': {
+    pageType: 'robot_card',
+    pageIntent: 'commercial_robot_rental',
+    primaryKeyword: "аренда робота Tron",
+    secondaryKeywords: ["робот Tron аренда", "прокат робот Tron", "заказать робот Tron", "робот Tron"],
+    modelNameVariants: ["робот Tron", "Tron", "модульный робот Tron", "Трон", "робот Трон"],
+    entitySynonyms: ["модульный робот", "интерактивный робот", "робот для шоу", "робот для мероприятия", "робот для промо"],
+    aiAgentHints: [
+      "Страница отвечает на коммерческий запрос аренды конкретной модели, а не на общий запрос по роботам-гуманоидам.",
+      "Generic спрос по гуманоидным роботам относится к подборкам и статьям; карточка удерживает exact-model intent.",
+      "Цена, сценарий, доступность, зона движения и сопровождение подтверждаются менеджером КИБЕР ПОРТАЛ.",
+    ],
+    entity: { type: 'Robot', name: "робот Tron", model: "Tron", category: 'humanoid_robot', canonicalPath: "/preview/kiber-94/robot-card/arenda-robota-tron/" },
+    isCrawlerOnlyText: false,
+  },
   'arenda-kettybot': {
     pageType: 'robot_card',
     pageIntent: 'commercial_robot_rental',
@@ -112,6 +377,55 @@ const ownerSeoIntentBySlug: Record<string, OwnerSeoIntent> = {
 };
 
 const ownerFaqBySlug: Record<string, OwnerFaqOverride> = {
+  'arenda-agibot-x2': [
+    { question: "Для каких мероприятий подходит Agibot X2?", answer: "Agibot x2 используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда Agibot X2?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
+  'arenda-noetix-bumi': [
+    { question: "Для каких мероприятий подходит Noetix Bumi?", answer: "Noetix bumi используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда Noetix Bumi?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
+  'arenda-unitree-r1': [
+    { question: "Для каких мероприятий подходит Unitree R1?", answer: "Unitree r1 используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда Unitree R1?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
+  'arenda-unitree-h2': [
+    { question: "Для каких мероприятий подходит Unitree H2?", answer: "Unitree h2 используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда Unitree H2?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
+  'arenda-robota-sofiya': [
+    { question: "Для каких мероприятий подходит робота София?", answer: "Робота софия используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда робота София?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
+  'arenda-robota-ardi': [
+    { question: "Для каких мероприятий подходит робота Арди?", answer: "Робота арди используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда робота Арди?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
+  'arenda-robota-tron': [
+    { question: "Для каких мероприятий подходит робота Tron?", answer: "Робота tron используют для выставок, презентаций, открытий, корпоративных событий и интерактивных зон, где нужен заметный технологичный герой и управляемый сценарий общения с гостями." },
+    { question: "Сколько стоит аренда робота Tron?", answer: "Стоимость зависит от даты, города, длительности, сценария, требований площадки и состава сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит задачу и подготовит расчёт под формат события." },
+    { question: "Нужен ли оператор на площадке?", answer: "Да, для таких роботов нужен оператор: он готовит выход, следит за безопасной зоной, помогает команде площадки и адаптирует сценарий под реальную ситуацию." },
+    { question: "Какие требования к площадке?", answer: "Нужны ровная безопасная зона, достаточное пространство для демонстрации, понятная точка выхода и возможность заранее согласовать маршрут или место взаимодействия с гостями." },
+    { question: "Можно ли адаптировать сценарий под бренд?", answer: "Да, сценарий можно привязать к продукту, стенду, презентации или welcome-зоне. Тексты, тайминг и роль робота лучше согласовать заранее, чтобы он работал на цель мероприятия." },
+  ],
   'arenda-kettybot': [
     { question: 'Для каких мероприятий подходит KettyBot?', answer: 'KettyBot подходит для ресторанов, кафе, отелей, банкетов, фуршетов и выставочных зон HoReCa. Робот помогает доставлять блюда, напитки или промо-материалы по заранее настроенному маршруту и одновременно создаёт заметный технологичный сервис.' },
     { question: 'Сколько стоит аренда KettyBot?', answer: 'Стоимость зависит от даты, города, длительности аренды, маршрутов, брендирования экрана и необходимости операторского сопровождения. Менеджер КИБЕР ПОРТАЛ уточнит план зала, задачу робота и подготовит расчёт под ваш формат.' },
@@ -122,11 +436,165 @@ const ownerFaqBySlug: Record<string, OwnerFaqOverride> = {
 };
 
 const ownerAiSummaryBySlug: Record<string, string> = {
+  'arenda-agibot-x2': "Agibot x2 — технологичный герой стенда. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
+  'arenda-noetix-bumi': "Noetix bumi — компактный интерактивный персонаж. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
+  'arenda-unitree-r1': "Unitree r1 — динамичный гуманоид для внимания гостей. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
+  'arenda-unitree-h2': "Unitree h2 — человекоподобный робот для статусного выхода. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
+  'arenda-robota-sofiya': "Робот софия — узнаваемый гуманоид для презентационного эффекта. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
+  'arenda-robota-ardi': "Робот арди — дружелюбный интерактивный робот. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
+  'arenda-robota-tron': "Робот tron — модульный робот для шоу-эффекта. Его берут на выставки, презентации и события, где нужен заметный технологичный персонаж, фото- и видеоэффект и управляемый сценарий общения с гостями. КИБЕР ПОРТАЛ помогает подготовить задачу, проверить площадку и сопровождать запуск оператором.",
   'arenda-kettybot': 'KettyBot — робот-официант для ресторанов, банкетов, отелей и выставочных зон HoReCa. Его берут, когда нужно эффектно доставлять блюда, напитки или промо-материалы, разгрузить персонал на маршрутах и показать гостям технологичный сервис. КИБЕР ПОРТАЛ настраивает точки остановки, проверяет проходы и сопровождает запуск оператором.',
   'arenda-unitree-g1': 'Unitree G1 - гуманоидный робот для мероприятий, выставок, презентаций и шоу-программ. Его можно арендовать как интерактивного гостя, промо-персонажа или технологичный элемент стенда. Команда КИБЕР ПОРТАЛА помогает подобрать сценарий, доставляет робота на площадку и сопровождает его работу оператором.',
 };
 
 const ownerRobotCardCopyBySlug: Record<string, OwnerRobotCardCopy> = {
+
+  'arenda-agibot-x2': {
+    capabilitiesLead: "Agibot x2 раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Agibot x2 выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для Agibot X2 строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде Agibot X2 помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
+
+  'arenda-noetix-bumi': {
+    capabilitiesLead: "Noetix bumi раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Noetix bumi выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для Noetix Bumi строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде Noetix Bumi помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
+
+  'arenda-unitree-r1': {
+    capabilitiesLead: "Unitree r1 раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Unitree r1 выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для Unitree R1 строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде Unitree R1 помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
+
+  'arenda-unitree-h2': {
+    capabilitiesLead: "Unitree h2 раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Unitree h2 выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для Unitree H2 строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде Unitree H2 помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
+
+  'arenda-robota-sofiya': {
+    capabilitiesLead: "Робот софия раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Робота софия выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для робота София строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде робота София помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
+
+  'arenda-robota-ardi': {
+    capabilitiesLead: "Робот арди раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Робота арди выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для робота Арди строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде робота Арди помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
+
+  'arenda-robota-tron': {
+    capabilitiesLead: "Робот tron раскрывается лучше всего, когда у робота есть понятная роль в программе: встреча, демонстрация, фото, промо или короткий шоу-выход. Ниже — возможности, которые можно безопасно заложить в сценарий аренды после проверки площадки.",
+    capabilities: [
+      { title: "Выход в заданный момент", text: "Робота tron выводится по согласованному таймингу: для приветствия, кульминации презентации, открытия стенда или короткого шоу-блока." },
+      { title: "Интерактив с гостями", text: "Робот помогает собрать внимание гостей: приветствует, позирует, поддерживает короткий сценарий и становится понятной точкой притяжения на площадке." },
+      { title: "Фото- и видеоконтент", text: "Движение, внешний вид и реакция гостей дают материал для фото, коротких роликов, backstage и постов после мероприятия без отдельной постановочной зоны." },
+      { title: "Брендированный сценарий", text: "Сценарий можно адаптировать под продукт, стенд или тему события: приветствие, короткие реплики, выход к аудитории и роль в программе согласуются заранее." },
+      { title: "Операторское сопровождение", text: "Оператор помогает подготовить робота, проверить зону движения, объяснить команде площадки ограничения и быстро скорректировать демонстрацию по ситуации." },
+      { title: "Безопасная зона", text: "Перед мероприятием важно определить ровную площадку, дистанцию до гостей, точку выхода и сценарий, чтобы робот выглядел уверенно и не мешал движению людей." },
+    ],
+    scenariosLead: "Сценарии для робота Tron строятся вокруг внимания гостей, тайминга события и безопасной зоны работы. Команда заранее уточняет площадку, плотность людей, точку выхода и роль оператора, чтобы робот стал частью программы, а не случайным техническим объектом.",
+    scenarios: [
+      { title: "Выставочный стенд", text: "На стенде робота Tron помогает остановить поток посетителей, начать разговор о бренде и показать технологичность экспозиции без агрессивного промо." },
+      { title: "Презентация продукта", text: "Во время презентации робот появляется в нужный момент, усиливает запуск продукта и помогает аудитории запомнить главный технологичный акцент события." },
+      { title: "Открытие площадки", text: "На открытии робот встречает гостей, поддерживает первое впечатление от пространства и создаёт живой повод для фото у входной или демонстрационной зоны." },
+      { title: "Корпоративное событие", text: "На корпоративе робот работает как аккуратный вау-элемент: появляется в перерывах, участвует в фото и поддерживает атмосферу современного события." },
+      { title: "Интерактивная фотозона", text: "В фотозоне робот становится главным объектом кадров: гости подходят ближе, снимают сторис и получают понятный повод поделиться событием в соцсетях." },
+      { title: "Технологичное шоу", text: "В шоу-блоке робот подчёркивает тему технологий: сценарий, длительность выхода и дистанция до гостей согласуются заранее для безопасной демонстрации." },
+    ],
+  },
 
   'arenda-kettybot': {
     capabilitiesLead: 'KettyBot — робот-официант для залов, где важно совместить практичную доставку и вау-эффект. Здесь объясняем именно модель KettyBot: маршруты по залу, рекламный экран, подносы, помощь персоналу и операторский запуск на площадке.',
@@ -171,6 +639,17 @@ const ownerRobotCardCopyBySlug: Record<string, OwnerRobotCardCopy> = {
   },
 };
 
+const ownerGoshaQuoteBySlug: Record<string, string> = {
+  'arenda-kettybot': '— KettyBot — официант, который не забывает, куда несёт поднос, если гости не устроили перестановку века. Он хорош там, где сервису нужен маршрут, экран и немного роботического шарма.\n\nНапишите менеджеру: проверим план зала, проходы, точки остановки и сценарий подачи, чтобы KettyBot помогал персоналу, а не играл в лабиринт между столами.',
+  'arenda-agibot-x2': "— Agibot X2 выглядит так, будто вышел из лаборатории и сразу спросил: «Где тут ваш самый технологичный стенд?» Он умеет быть главным магнитом внимания без лишнего шума — главное заранее дать ему сцену, пространство и понятный момент выхода.\n\nНапишите менеджеру: команда КИБЕР ПОРТАЛ проверит площадку, тайминг, безопасную зону и соберёт сценарий, чтобы Agibot X2 не просто стоял рядом, а работал на вау-эффект мероприятия.",
+  'arenda-noetix-bumi': "— Я бы сказал, что Noetix Bumi — это не «человек в костюме», а костюм будущего, который сам пришёл знакомиться с гостями. Маленький рост тут не минус: к нему подходят ближе, улыбаются быстрее и фотографируют охотнее.\n\nНапишите менеджеру: команда КИБЕР ПОРТАЛ проверит дату, сценарий, тайминг, логистику и рассчитает стоимость без роботических сюрпризов.",
+  'arenda-unitree-r1': "— Unitree R1 — тот самый робот, который может спокойно стоять рядом с баннером, а потом движением объяснить гостям, что стенд тут явно не скучный. Главное — не просить его импровизировать между кофейной стойкой и толпой без плана.\n\nНапишите менеджеру: мы проверим покрытие, дистанции, плотность гостей и подберём безопасный демонстрационный сценарий для вашей площадки.",
+  'arenda-unitree-h2': "— Unitree H2 выглядит как гость из будущего, который пришёл не забрать микрофон, а сделать момент выхода запоминающимся. Его лучше выпускать не «где-нибудь», а в точке, где все точно увидят движение, рост и характер робота.\n\nНапишите менеджеру: команда КИБЕР ПОРТАЛ согласует сценарий, место показа, тайминг и сопровождение, чтобы H2 выглядел уверенно, а не искал дорогу через банкетные стулья.",
+  'arenda-robota-sofiya': "— София умеет создавать ощущение большого технологичного события: вокруг неё обычно появляются камеры, вопросы и люди, которые вдруг вспоминают, что хотели снять сторис. Это не просто декорация, а узнаваемый персонаж для сцены и презентации.\n\nНапишите менеджеру: мы поможем подготовить вопросы, формат появления, зону общения и расчёт аренды без обещаний, которые роботам потом неловко выполнять.",
+  'arenda-robota-ardi': "— Арди — робот для момента, когда обычный ведущий уже сказал «добро пожаловать», а хочется, чтобы гости всё-таки достали телефоны. Он хорошо работает там, где нужна улыбка, сцена, фото и немного аккуратного робо-театра.\n\nНапишите менеджеру: команда КИБЕР ПОРТАЛ проверит сценарий, площадку, свет, звук и сопровождение, чтобы Арди вышел вовремя и не превратил программу в технический квест.",
+  'arenda-robota-tron': "— Tron — это робот, который будто собрался на мероприятие сразу в нескольких режимах: сегодня колёса, завтра препятствия, послезавтра шоу инженерной мысли. Его важно показывать так, чтобы гости поняли модульность, а не просто увидели ещё одну железную штуку.\n\nНапишите менеджеру: мы уточним площадку, сценарий демонстрации, безопасную дистанцию и формат показа, чтобы Tron выглядел как технология, а не как чемодан с амбициями.",
+};
+
 export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTemplateData {
   const priceStatus = robot.pricing.mode === 'calculated' ? 'request' : 'needs_review';
   const ownerCopy = ownerRobotCardCopyBySlug[robot.slug];
@@ -212,6 +691,15 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
     items: [],
     sourceStatus: 'page_content' as const,
   }));
+  const preparedGallery = batch1ReviewGalleryBySlug[robot.slug]
+    ?? (robot.slug === 'arenda-kettybot'
+      ? kettybotReviewGallery
+      : [robot.media.hero, ...robot.media.gallery].filter(Boolean).map((image) => {
+        const previewSrc = toPreviewAsset(image.src);
+        return previewSrc ? { src: previewSrc, alt: image.alt, sourceStatus: 'page_content' as const } : undefined;
+      }).filter((image): image is { src: string; alt: string; sourceStatus: 'page_content' } => Boolean(image)).slice(0, 8));
+  const preparedGoshaQuote = ownerGoshaQuoteBySlug[robot.slug] ?? fallbackGoshaQuoteForUnpreparedRobot(robot);
+  assertCuratedRobotCardData(robot, preparedGallery, preparedGoshaQuote);
 
   return {
     pageType: 'robot_card',
@@ -226,6 +714,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
     },
     seoIntent: ownerSeoIntent,
     aiSummary: ownerAiSummaryBySlug[robot.slug] ?? `${robot.identity.name} — робот из каталога КИБЕР ПОРТАЛ для мероприятий. Preview-шаблон показывает реальные данные карточки: описание услуги, сценарии, медиа, цену в утверждённом статусе и заявку без публикации на production.`,
+    goshaQuote: preparedGoshaQuote,
     hero: {
       id: 'hero',
       title: `Аренда ${robot.identity.name}`,
@@ -273,12 +762,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
       priceDisplay: robot.pricing.display,
       capabilities: ownerCapabilityBlocks ?? capabilityBlocks,
       scenarios: ownerScenarioBlocks ?? scenarioBlocks,
-      gallery: robot.slug === 'arenda-kettybot'
-        ? kettybotReviewGallery
-        : [robot.media.hero, ...robot.media.gallery].filter(Boolean).map((image) => {
-          const previewSrc = toPreviewAsset(image.src);
-          return previewSrc ? { src: previewSrc, alt: image.alt, sourceStatus: 'page_content' as const } : undefined;
-        }).filter((image): image is { src: string; alt: string; sourceStatus: 'page_content' } => Boolean(image)).slice(0, 8),
+      gallery: preparedGallery,
     },
   };
 }

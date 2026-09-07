@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-noetix-bumi",
+  "canonicalPath": "/robots/arenda-noetix-bumi/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-noetix-bumi/",
+  "approvedPilotContract": "KettyBot robot-card owner-approved pilot, merged in main PR #73 on 2026-09-07",
+  "robotEntity": {
+    "name": "Noetix Bumi",
+    "sourceName": "робота-гуманоида Noetix Bumi",
+    "modelName": "Noetix Bumi",
+    "brand": "Noetix",
+    "category": {
+      "primary": "humanoid",
+      "labels": [
+        "humanoid"
+      ],
+      "collectionSlugs": [
+        "roboty-gumanoidy"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "06.08.2026 – 06.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда Noetix Bumi": 0,
+        "Noetix Bumi аренда": 0,
+        "прокат Noetix Bumi": 0,
+        "заказать Noetix Bumi": 0,
+        "робот Noetix Bumi": 35
+      },
+      "evidence": "data/seo/wordstat-research/batch1-humanoids-20260907/arenda-noetix-bumi.wordstat-summary.json"
+    },
+    "serpAnalysis": {
+      "status": "needs_live_verification",
+      "evidence": "docs/review/kiber-batch1-humanoids-research-20260907/serp-competitors/arenda-noetix-bumi.serp-competitors.json",
+      "searchResultCount": 0,
+      "directPageEvidenceCount": 0,
+      "limitation": "Direct/search HTML evidence is partial; blocked/empty engines are not treated as ranked SERP proof."
+    },
+    "contentGaps": [
+      "Exact commercial Wordstat спрос нулевой/низкий; карточка должна удерживать модельный коммерческий intent, а не забирать generic «аренда робота-гуманоида».",
+      "SERP/direct competitor evidence needs live verification before public-copy scale; do not claim ranked SERP coverage.",
+      "Показать практические сценарии аренды, требования площадки, состав сопровождения и безопасное ожидание возможностей без неподтверждённых технических обещаний."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Noetix Bumi — робот-гуманоид для мероприятия",
+    "metaDescription": "Аренда Noetix Bumi для интерактивной зоны, образования и промо: подготовка сценария, настройка демонстрации и сопровождение КИБЕР ПОРТАЛ.",
+    "h1": "Аренда Noetix Bumi",
+    "primaryKeyword": "аренда Noetix Bumi",
+    "secondaryKeywords": [
+      "Noetix Bumi аренда",
+      "прокат Noetix Bumi",
+      "заказать Noetix Bumi",
+      "робот Noetix Bumi"
+    ],
+    "longTailKeywords": [
+      "аренда Noetix Bumi для выставки",
+      "аренда Noetix Bumi для презентации",
+      "аренда Noetix Bumi для мероприятия"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда Noetix Bumi",
+    "secondaryKeywords": [
+      "Noetix Bumi аренда",
+      "прокат Noetix Bumi",
+      "заказать Noetix Bumi",
+      "робот Noetix Bumi"
+    ],
+    "modelNameVariants": [
+      "Noetix Bumi",
+      "Noetix Bumi",
+      "Noetix Bumi"
+    ],
+    "entitySynonyms": [
+      "робот-гуманоид",
+      "компактный гуманоид",
+      "образовательный робот",
+      "робот для интерактива"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "Noetix Bumi",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic humanoid compilation.",
+      "Keep generic humanoid/category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved upper gallery from media-rights/source archive, no legacy hero",
+    "includedService": "01 — что входит",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — сценарии использования",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "capabilityRegistryImagesCount": 12,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "needs_live_verification",
+    "openQuestions": [
+      "Confirm model-specific claims/capabilities before public copy."
+    ]
+  }
+}

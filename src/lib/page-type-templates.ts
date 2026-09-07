@@ -86,6 +86,7 @@ export const pageTemplateSchema = z.object({
 
 export const robotCardTemplateSchema = pageTemplateSchema.extend({
   pageType: z.literal('robot_card'),
+  goshaQuote: z.string().min(80),
   robot: z.object({
     name: z.string().min(1),
     manufacturer: z.string().min(1).optional(),

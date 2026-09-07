@@ -1,0 +1,58 @@
+{
+  "slug": "arenda-robota-ardi",
+  "robotName": "робот Арди",
+  "primaryQuery": "аренда робота Арди",
+  "collectedAt": "2026-09-07T14:08:35.600433+00:00",
+  "searchProbes": [
+    {
+      "query": "аренда робота Арди",
+      "engine": "duckduckgo_html",
+      "statusCode": 202,
+      "blocked": false,
+      "results": [],
+      "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+    },
+    {
+      "query": "аренда робота Арди",
+      "engine": "yandex_html",
+      "statusCode": 200,
+      "blocked": true,
+      "results": [],
+      "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+    },
+    {
+      "query": "робот Арди аренда",
+      "engine": "duckduckgo_html",
+      "statusCode": 202,
+      "blocked": false,
+      "results": [],
+      "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+    },
+    {
+      "query": "робот Арди аренда",
+      "engine": "yandex_html",
+      "statusCode": 200,
+      "blocked": true,
+      "results": [],
+      "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+    },
+    {
+      "query": "робот Ardi humanoid",
+      "engine": "duckduckgo_html",
+      "statusCode": 202,
+      "blocked": false,
+      "results": [],
+      "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+    },
+    {
+      "query": "робот Ardi humanoid",
+      "engine": "yandex_html",
+      "statusCode": 200,
+      "blocked": true,
+      "results": [],
+      "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+    }
+  ],
+  "directPageEvidence": [],
+  "status": "checked_partial_search_html_direct_pages"
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-robota-ardi",
+  "canonicalPath": "/robots/arenda-robota-ardi/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-robota-ardi/",
+  "approvedPilotContract": "KettyBot robot-card owner-approved pilot, merged in main PR #73 on 2026-09-07",
+  "robotEntity": {
+    "name": "робот Арди",
+    "sourceName": "робота Арди",
+    "modelName": "робота Арди",
+    "brand": "",
+    "category": {
+      "primary": "robot_service",
+      "labels": [
+        "robot_service"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "06.08.2026 – 06.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда робота Арди": 1,
+        "робот Арди аренда": 1,
+        "прокат робота Арди": 0,
+        "заказать робота Арди": 0,
+        "робот Арди": 144
+      },
+      "evidence": "data/seo/wordstat-research/batch1-humanoids-20260907/arenda-robota-ardi.wordstat-summary.json"
+    },
+    "serpAnalysis": {
+      "status": "needs_live_verification",
+      "evidence": "docs/review/kiber-batch1-humanoids-research-20260907/serp-competitors/arenda-robota-ardi.serp-competitors.json",
+      "searchResultCount": 0,
+      "directPageEvidenceCount": 0,
+      "limitation": "Direct/search HTML evidence is partial; blocked/empty engines are not treated as ranked SERP proof."
+    },
+    "contentGaps": [
+      "Exact commercial Wordstat спрос есть, но низкий; усилить entity/FAQ/AI visibility без смены primary на generic class key.",
+      "SERP/direct competitor evidence needs live verification before public-copy scale; do not claim ranked SERP coverage.",
+      "Показать практические сценарии аренды, требования площадки, состав сопровождения и безопасное ожидание возможностей без неподтверждённых технических обещаний."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Арди — робот-гуманоид для мероприятия",
+    "metaDescription": "Аренда Арди для выставки, презентации или события: подготовка сценария, настройка поведения и сопровождение команды КИБЕР ПОРТАЛ.",
+    "h1": "Аренда робот Арди",
+    "primaryKeyword": "аренда робота Арди",
+    "secondaryKeywords": [
+      "робот Арди аренда",
+      "прокат робота Арди",
+      "заказать робота Арди",
+      "робот Арди"
+    ],
+    "longTailKeywords": [
+      "аренда робота Арди для выставки",
+      "аренда робота Арди для презентации",
+      "аренда робота Арди для мероприятия"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда робота Арди",
+    "secondaryKeywords": [
+      "робот Арди аренда",
+      "прокат робота Арди",
+      "заказать робота Арди",
+      "робот Арди"
+    ],
+    "modelNameVariants": [
+      "робот Арди",
+      "Арди",
+      "Арди"
+    ],
+    "entitySynonyms": [
+      "робот-гуманоид",
+      "интерактивный робот",
+      "робот для мероприятия",
+      "робот-промоутер"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "робот Арди",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic humanoid compilation.",
+      "Keep generic humanoid/category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved upper gallery from media-rights/source archive, no legacy hero",
+    "includedService": "01 — что входит",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — сценарии использования",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "capabilityRegistryImagesCount": 12,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "needs_live_verification",
+    "openQuestions": [
+      "Confirm any request-only pricing/public claim nuance before public copy."
+    ]
+  }
+}

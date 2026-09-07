@@ -1,0 +1,570 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "batch": "batch1_humanoids",
+  "status": "checked_partial_search_html_direct_pages",
+  "limitation": "Search HTML/direct requests can be blocked or personalized; use as partial SERP/source evidence, not final ranked SERP proof when blocked/empty.",
+  "robots": [
+    {
+      "slug": "arenda-agibot-x2",
+      "robotName": "Agibot X2",
+      "primaryQuery": "аренда Agibot X2",
+      "collectedAt": "2026-09-07T14:07:47.989309+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда Agibot X2",
+          "engine": "duckduckgo_html",
+          "statusCode": 200,
+          "blocked": false,
+          "results": [
+            {
+              "title": "AGIBOT Professional robot rental services",
+              "url": "https://store.agibot.com/products/rental"
+            },
+            {
+              "title": "Аренда гуманоида Agibot X2 Ultra для мероприятий | SBE Robotics",
+              "url": "https://sberobotics.ru/rent-humanoid"
+            },
+            {
+              "title": "Agibot X2",
+              "url": "https://store.agibot.com/products/x2"
+            },
+            {
+              "title": "Аренда робота Кай (Agibot X2 Ultra)",
+              "url": "https://rent-robot.ru/agibot-x2-ultra"
+            },
+            {
+              "title": "Agibot на MWC 2026: полная линейка гуманоидных роботов и аренда от €900 ...",
+              "url": "https://abit.ee/ru/iskusstvennyj-intellekt/roboty/agibot-humanoid-robots-mwc-2026-raas-robot-rental-a2-d1-6g-china-robotics-ru"
+            },
+            {
+              "title": "Tai AGIBOT X2 Ultra Humanoid Robot Rental | Bots-4-Events",
+              "url": "https://www.bots-4-events.com/tai-humanoid-robot-rental"
+            },
+            {
+              "title": "AGIBOT X2 - EmbodiedMall",
+              "url": "https://www.embodiedmall.com/products/agibot-x2"
+            },
+            {
+              "title": "Humanoid Robot Events | Tai, Kai &amp; Interactive Robot Rentals",
+              "url": "https://humanoidrobot.events/"
+            },
+            {
+              "title": "Rent Humanoid Robot | Agibot X2 €899/Day",
+              "url": "https://news.theresarobotforthat.com/rent-agibots-x2-humanoid-for-eu899-a-day/"
+            },
+            {
+              "title": "You Can Now Rent This Robot For $1,000 Per Day - Forbes",
+              "url": "https://www.forbes.com/sites/johnkoetsier/2026/03/02/you-can-now-rent-this-robot-for-1000-per-day/"
+            }
+          ],
+          "htmlSample": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<!--[if IE 6]><html class=\"ie6\" xmlns=\"http://www.w3.org/1999/xhtml\"><![endif]-->\n<!--[if IE 7]><html class=\"lt-ie8 lt-ie9\" xmlns=\"http://www.w3.org/1999/xhtml\"><![endif]-->\n<!--[if IE 8]><html class=\"lt-ie9\" xmlns=\"http://www.w3.org/1999/xhtml\"><![endif]-->\n<!--[if gt IE 8]><!--><html xmlns=\"http://www.w3.org/1999/xhtml\"><!--<![endif]-->\n<head>\n  <meta http-equiv=\"content-t"
+        },
+        {
+          "query": "аренда Agibot X2",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Agibot X2 robot official",
+          "engine": "duckduckgo_html",
+          "statusCode": 200,
+          "blocked": false,
+          "results": [
+            {
+              "title": "Agibot X2",
+              "url": "https://store.agibot.com/products/x2"
+            },
+            {
+              "title": "AGIBOT Innovation (Shanghai) Technology Co., Ltd. -AGIBOT Innovation ...",
+              "url": "https://www.agibot.com/"
+            },
+            {
+              "title": "AGIBOT X2 Ultra",
+              "url": "https://store.agibot.com/products/x2-ultra"
+            },
+            {
+              "title": "AGIBOT on X: &quot;Humanoid Robot AGIBOT X2 Steals The Spotlight at MWC26 ...",
+              "url": "https://x.com/AGIBOTofficial/status/2031311650222113020"
+            },
+            {
+              "title": "AgiBot X2 - Robot Details, Use Case and Specifications | Aparobot",
+              "url": "https://www.aparobot.com/robots/agibot-x2"
+            },
+            {
+              "title": "AgiBot X2 Specs, Price &amp; Review 2026 | OOB",
+              "url": "https://www.originofbots.com/robot/agibot-x2-by-agibot-details-specifications-rating"
+            },
+            {
+              "title": "AGIBOT - YouTube",
+              "url": "https://www.youtube.com/@AGIBOTofficial"
+            },
+            {
+              "title": "AGIBOT (@AGIBOTofficial) / X",
+              "url": "https://x.com/AGIBOTofficial"
+            },
+            {
+              "title": "2 Operation Guide — AimDK_X2 1.0.0 documentation - x2-aimdk.agibot.com",
+              "url": "https://x2-aimdk.agibot.com/en/latest/operation_guide/index.html"
+            },
+            {
+              "title": "AgiBot X2-N Specs, Price &amp; Review 2026 | OOB",
+              "url": "https://www.originofbots.com/robot/agibot-x2-n-by-agibot-details-specifications-rating"
+            }
+          ],
+          "htmlSample": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n\n<!--[if IE 6]><html class=\"ie6\" xmlns=\"http://www.w3.org/1999/xhtml\"><![endif]-->\n<!--[if IE 7]><html class=\"lt-ie8 lt-ie9\" xmlns=\"http://www.w3.org/1999/xhtml\"><![endif]-->\n<!--[if IE 8]><html class=\"lt-ie9\" xmlns=\"http://www.w3.org/1999/xhtml\"><![endif]-->\n<!--[if gt IE 8]><!--><html xmlns=\"http://www.w3.org/1999/xhtml\"><!--<![endif]-->\n<head>\n  <meta http-equiv=\"content-t"
+        },
+        {
+          "query": "Agibot X2 robot official",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Agibot X2 humanoid robot",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Agibot X2 humanoid robot",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [
+        {
+          "url": "https://store.agibot.com/products/rental",
+          "finalUrl": "https://store.agibot.com/products/rental",
+          "statusCode": 200,
+          "contentType": "text/html; charset=utf-8",
+          "title": "AGIBOT Professional robot rental services",
+          "description": "We focus on the core needs of terminal scenarios and provide cost-effective, highly adaptable robot rental services. With no large upfront investment required, enterprises can quickly deploy a full range of intelligent robots to reduce costs, boost efficiency, and upgrade service quality. Our services cover multiple in",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://sberobotics.ru/rent-humanoid",
+          "finalUrl": "https://sberobotics.ru/rent-humanoid",
+          "statusCode": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "title": "Аренда гуманоида Agibot X2 Ultra для мероприятий | SBE Robotics",
+          "description": "Аренда человекоподобного робота Agibot X2 Ultra для выставок, форумов, презентаций и событий. Доставка, настройка и сопровождение на площадке",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://store.agibot.com/products/x2",
+          "finalUrl": "https://store.agibot.com/products/x2",
+          "statusCode": 200,
+          "contentType": "text/html; charset=utf-8",
+          "title": "AGIBOT X2",
+          "description": "AGIBOT X2 is a half-size humanoid robot engineered for the entertainment and commercial performance sector. It supports a wide variety of full-body motion transitions and possesses a rich set of motion skills and preset motions, offering exceptional cost-effectiveness. It features powerful multimodal capabilities in mu",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://rent-robot.ru/agibot-x2-ultra",
+          "finalUrl": "https://rent-robot.ru/agibot-x2-ultra",
+          "statusCode": 200,
+          "contentType": "text/html; charset=UTF-8",
+          "title": "Робот Кай (Agibot X2 Ultra) в аренду для мероприятий — человекоподобный AI-робот",
+          "description": "Гуманоидный робот для мероприятий, выставок и презентаций. Интерактив, эффектное движение и AI-взаимодействие.",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://abit.ee/ru/iskusstvennyj-intellekt/roboty/agibot-humanoid-robots-mwc-2026-raas-robot-rental-a2-d1-6g-china-robotics-ru",
+          "finalUrl": "https://abit.ee/ru/iskusstvennyj-intellekt/roboty/agibot-humanoid-robots-mwc-2026-raas-robot-rental-a2-d1-6g-china-robotics-ru",
+          "statusCode": 200,
+          "contentType": "text/html; charset=utf-8",
+          "title": "Agibot на MWC 2026: полная линейка гуманоидных роботов и аренда от €900 в сутки",
+          "description": "Agibot на MWC 2026 показала полную линейку роботов (A2, X2, G2, D1, C5, OmniHand) и запустила сервис аренды RaaS от €900 в сутки, доступный в 17 странах мира.",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://www.bots-4-events.com/tai-humanoid-robot-rental",
+          "finalUrl": "https://www.bots-4-events.com/tai-humanoid-robot-rental",
+          "statusCode": 200,
+          "contentType": "text/html;charset=utf-8",
+          "title": "Tai AGIBOT X2 Ultra Humanoid Robot Rental | Bots-4-Events",
+          "description": "Rent TAI, our AGIBOT X2 Ultra humanoid robot, to your corporate event, trade show, conference, product launch, after party, or brand activation. This interactive robot helps create booth traffic, guest engagement, photo moments, and a futuristic event experience.",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://www.embodiedmall.com/products/agibot-x2",
+          "finalUrl": "https://www.embodiedmall.com/products/agibot-x2",
+          "statusCode": 200,
+          "contentType": "text/html; charset=utf-8",
+          "title": "AGIBOT X2 &ndash; EmbodiedMall",
+          "description": "Item X2 X2 Ultra Dimensions 1310mm（H）×460mm（W）×210mm（L） 1310mm（H）×460mm（W）×210mm（L） Height Approx.1.31 m Approx.1.31 m Weight Approx.35kg Approx.39kg Total Degrees of Freedom 25 30 Neck DOF 0 1 Arm DOF (per arm) 5 7 Waist DOF 3 3 Leg DOF (per leg) 6 6 Arm Reach 558mmexcluding end effector 558mmexcluding end effector Ex",
+          "mentionsRobot": true
+        },
+        {
+          "url": "https://humanoidrobot.events/",
+          "finalUrl": "https://humanoidrobot.events/",
+          "statusCode": 200,
+          "contentType": "text/html",
+          "title": "Humanoid Robot Events | Tai, Kai & Interactive Robot Rentals for Trade Shows & Events",
+          "description": "Rent Tai the AGIBOT X2 Ultra or Kai the Booster K1 humanoid robot for your trade show, corporate event, or brand activation. Plus SelfieBot, DrawMeBot, Robo Dog, and Photo Mosaic. Fully managed. Nationwide. Powered by Bots-4-Events.",
+          "mentionsRobot": true
+        }
+      ],
+      "status": "checked_partial_search_html_direct_pages"
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "robotName": "Noetix Bumi",
+      "primaryQuery": "аренда Noetix Bumi",
+      "collectedAt": "2026-09-07T14:07:58.165371+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда Noetix Bumi",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "аренда Noetix Bumi",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Noetix Bumi robot official",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Noetix Bumi robot official",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Noetix Bumi humanoid",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Noetix Bumi humanoid",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [],
+      "status": "checked_partial_search_html_direct_pages"
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "robotName": "Unitree R1",
+      "primaryQuery": "аренда Unitree R1",
+      "collectedAt": "2026-09-07T14:08:08.028360+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда Unitree R1",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "аренда Unitree R1",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Unitree R1 robot official",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Unitree R1 robot official",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Unitree R1 humanoid",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Unitree R1 humanoid",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [],
+      "status": "checked_partial_search_html_direct_pages"
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "robotName": "Unitree H2",
+      "primaryQuery": "аренда Unitree H2",
+      "collectedAt": "2026-09-07T14:08:17.463965+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда Unitree H2",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "аренда Unitree H2",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Unitree H2 robot official",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Unitree H2 robot official",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Unitree H2 humanoid",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Unitree H2 humanoid",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [],
+      "status": "checked_partial_search_html_direct_pages"
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "robotName": "робот София",
+      "primaryQuery": "аренда робота София",
+      "collectedAt": "2026-09-07T14:08:26.094001+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда робота София",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "аренда робота София",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "Sophia robot official Hanson Robotics",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "Sophia robot official Hanson Robotics",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "робот София аренда",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "робот София аренда",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [],
+      "status": "checked_partial_search_html_direct_pages"
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "robotName": "робот Арди",
+      "primaryQuery": "аренда робота Арди",
+      "collectedAt": "2026-09-07T14:08:35.600433+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда робота Арди",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "аренда робота Арди",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "робот Арди аренда",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "робот Арди аренда",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "робот Ardi humanoid",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "робот Ardi humanoid",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [],
+      "status": "checked_partial_search_html_direct_pages"
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "robotName": "робот Tron",
+      "primaryQuery": "аренда робота Tron",
+      "collectedAt": "2026-09-07T14:08:44.790708+00:00",
+      "searchProbes": [
+        {
+          "query": "аренда робота Tron",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "аренда робота Tron",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "модульный робот Tron",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "модульный робот Tron",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        },
+        {
+          "query": "робот Tron аренда",
+          "engine": "duckduckgo_html",
+          "statusCode": 202,
+          "blocked": false,
+          "results": [],
+          "htmlSample": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+        },
+        {
+          "query": "робот Tron аренда",
+          "engine": "yandex_html",
+          "statusCode": 200,
+          "blocked": true,
+          "results": [],
+          "htmlSample": "<!doctype html><html prefix=\"og: http://ogp.me/ns#\" lang=\"ru\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png\" sizes=\"16x16\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/home-static/_/f4/f47b1b3d8194c36ce660324ab55a04fe.png\" sizes=\"32x32\">\n    <link rel=\"icon\" href=\"https://yastatic.net/s3/ho"
+        }
+      ],
+      "directPageEvidence": [],
+      "status": "checked_partial_search_html_direct_pages"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "batch": "batch1_humanoids",
+  "status": "research_passports_draft_for_owner_review",
+  "approvedPilotContract": "KettyBot PR #73 merged to main",
+  "robots": [
+    "arenda-agibot-x2",
+    "arenda-noetix-bumi",
+    "arenda-unitree-r1",
+    "arenda-unitree-h2",
+    "arenda-robota-sofiya",
+    "arenda-robota-ardi",
+    "arenda-robota-tron"
+  ],
+  "wordstatStatus": "checked_live",
+  "serpStatus": "checked_partial_or_needs_live_verification_per_slug",
+  "passports": [
+    "data/seo/robot-card-passports/arenda-agibot-x2.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-noetix-bumi.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-unitree-r1.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-unitree-h2.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-robota-sofiya.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-robota-ardi.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-robota-tron.robot-card-seo-passport.json"
+  ],
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "publicRouteReplacementAllowed": false,
+    "massScalingBeyondBatchAllowed": false
+  }
+}

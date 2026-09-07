@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "rootCause": "RobotCardTemplate used a component-level generic Gosha fallback for every non-KettyBot robot, ignoring per-slug quote data.",
+  "fix": "Added goshaQuote to the template schema/data and rendered template.goshaQuote per slug; fallback remains only for unprepared cards and is test-blocked for Batch 1.",
+  "results": [
+    {
+      "slug": "arenda-agibot-x2",
+      "quote": "— Agibot X2 выглядит так, будто вышел из лаборатории и сразу спросил: «Где тут ваш самый технологичный стенд?» Он умеет быть главным магнитом внимания без лишнего шума — главное заранее дать ему сцену, пространство и понятный момент выхода.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 240
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "quote": "— Я бы сказал, что Noetix Bumi — это не «человек в костюме», а костюм будущего, который сам пришёл знакомиться с гостями. Маленький рост тут не минус: к нему подходят ближе, улыбаются быстрее и фотографируют охотнее.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 216
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "quote": "— Unitree R1 — тот самый робот, который может спокойно стоять рядом с баннером, а потом движением объяснить гостям, что стенд тут явно не скучный. Главное — не просить его импровизировать между кофейной стойкой и толпой без плана.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 230
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "quote": "— Unitree H2 выглядит как гость из будущего, который пришёл не забрать микрофон, а сделать момент выхода запоминающимся. Его лучше выпускать не «где-нибудь», а в точке, где все точно увидят движение, рост и характер робота.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 223
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "quote": "— София умеет создавать ощущение большого технологичного события: вокруг неё обычно появляются камеры, вопросы и люди, которые вдруг вспоминают, что хотели снять сторис. Это не просто декорация, а узнаваемый персонаж для сцены и презентации.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 241
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "quote": "— Арди — робот для момента, когда обычный ведущий уже сказал «добро пожаловать», а хочется, чтобы гости всё-таки достали телефоны. Он хорошо работает там, где нужна улыбка, сцена, фото и немного аккуратного робо-театра.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 219
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "quote": "— Tron — это робот, который будто собрался на мероприятие сразу в нескольких режимах: сегодня колёса, завтра препятствия, послезавтра шоу инженерной мысли. Его важно показывать так, чтобы гости поняли модульность, а не просто увидели ещё одну железную штуку.",
+      "hasGenericCostumeFutureFallback": false,
+      "hasRobotSpecificName": true,
+      "length": 258
+    }
+  ],
+  "allPass": true
+}
