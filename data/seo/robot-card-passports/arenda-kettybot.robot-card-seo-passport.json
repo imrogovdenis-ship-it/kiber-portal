@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-kettybot",
+  "canonicalPath": "/robots/arenda-kettybot/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-kettybot/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "KettyBot",
+    "sourceName": "робота-официанта KettyBot",
+    "modelName": "KettyBot",
+    "brand": "KettyBot",
+    "category": {
+      "primary": "service_robot",
+      "labels": [
+        "service_robot"
+      ],
+      "collectionSlugs": [
+        "servisnye-roboty"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "07.08.2026 – 05.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда KettyBot": null,
+        "KettyBot аренда": null,
+        "робот-официант KettyBot": null
+      },
+      "evidence": "docs/review/kiber-wordstat-kettybot-20260907/wordstat-kettybot-summary.json"
+    },
+    "serpAnalysis": {
+      "status": "needs_live_verification",
+      "evidence": "not_collected_yet",
+      "limitation": "No ranked SERP evidence is claimed until checked live; use source-of-truth facts and owner review only."
+    },
+    "contentGaps": [
+      "Exact model page must own model-specific rental intent, not generic category demand.",
+      "Visible copy must explain scenarios, operator role, venue requirements, and what is included without unverifiable technical promises.",
+      "Media must come from approved source-gallery assets; capability illustrations stay in separate capability registry."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда KettyBot — робот-официант для ресторана и мероприятия",
+    "metaDescription": "Аренда KettyBot с доставкой, настройкой маршрутов, рекламным экраном и сопровождением для ресторана, банкета, отеля или выставки HoReCa.",
+    "h1": "Аренда робота-официанта KettyBot",
+    "primaryKeyword": "аренда KettyBot",
+    "secondaryKeywords": [
+      "KettyBot аренда",
+      "робот-официант KettyBot",
+      "прокат KettyBot",
+      "заказать KettyBot",
+      "KettyBot для ресторана"
+    ],
+    "longTailKeywords": [
+      "аренда KettyBot для выставки",
+      "аренда KettyBot для мероприятия",
+      "аренда KettyBot для презентации"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда KettyBot",
+    "secondaryKeywords": [
+      "KettyBot аренда",
+      "робот-официант KettyBot",
+      "прокат KettyBot",
+      "заказать KettyBot",
+      "KettyBot для ресторана"
+    ],
+    "modelNameVariants": [
+      "KettyBot",
+      "Ketty Bot",
+      "Кеттибот",
+      "Кэтибот",
+      "робот KettyBot",
+      "Pudu KettyBot"
+    ],
+    "entitySynonyms": [
+      "робот-официант",
+      "сервисный робот",
+      "робот-доставщик",
+      "робот для ресторана",
+      "робот для HoReCa"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "KettyBot",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic category page.",
+      "Keep generic category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved source-gallery assets, no legacy hero/catalog fallback",
+    "includedService": "01 — what is included",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — usage scenarios",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 10,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "needs_live_verification",
+    "openQuestions": [
+      "Confirm final visible copy and screenshots before merge/publication."
+    ]
+  }
+}

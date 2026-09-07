@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-xiaomi-cyberdog-2",
+  "canonicalPath": "/robots/arenda-xiaomi-cyberdog-2/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "Xiaomi CyberDog 2",
+    "sourceName": "робота-собаки Xiaomi Cyberdog 2",
+    "modelName": "Xiaomi CyberDog 2",
+    "brand": "Xiaomi",
+    "category": {
+      "primary": "robot_dog",
+      "labels": [
+        "robot_dog"
+      ],
+      "collectionSlugs": [
+        "roboty-sobaki"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "needs_live_verification",
+      "source": "pending_live_wordstat",
+      "period": null,
+      "region": "all",
+      "queries": {
+        "аренда Xiaomi CyberDog 2": null,
+        "Xiaomi CyberDog 2 аренда": null,
+        "прокат Xiaomi CyberDog 2": null
+      },
+      "evidence": "not_collected_yet__must_use_live_wordstat_before_final_publication"
+    },
+    "serpAnalysis": {
+      "status": "needs_live_verification",
+      "evidence": "not_collected_yet",
+      "limitation": "No ranked SERP evidence is claimed until checked live; use source-of-truth facts and owner review only."
+    },
+    "contentGaps": [
+      "Exact model page must own model-specific rental intent, not generic category demand.",
+      "Visible copy must explain scenarios, operator role, venue requirements, and what is included without unverifiable technical promises.",
+      "Media must come from approved source-gallery assets; capability illustrations stay in separate capability registry."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Xiaomi CyberDog 2 — робот-собака для шоу и промо",
+    "metaDescription": "Аренда Xiaomi CyberDog 2 для технологичной выставки, промо-акции, фотозоны или съёмки контента: трюки, интерактив и сопровождение.",
+    "h1": "Аренда робота-собаки Xiaomi CyberDog 2",
+    "primaryKeyword": "аренда Xiaomi CyberDog 2",
+    "secondaryKeywords": [
+      "Xiaomi CyberDog 2 аренда",
+      "прокат Xiaomi CyberDog 2",
+      "заказать Xiaomi CyberDog 2",
+      "робот-собака Xiaomi CyberDog 2",
+      "CyberDog 2 для мероприятия"
+    ],
+    "longTailKeywords": [
+      "аренда Xiaomi CyberDog 2 для выставки",
+      "аренда Xiaomi CyberDog 2 для мероприятия",
+      "аренда Xiaomi CyberDog 2 для презентации"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда Xiaomi CyberDog 2",
+    "secondaryKeywords": [
+      "Xiaomi CyberDog 2 аренда",
+      "прокат Xiaomi CyberDog 2",
+      "заказать Xiaomi CyberDog 2",
+      "робот-собака Xiaomi CyberDog 2",
+      "CyberDog 2 для мероприятия"
+    ],
+    "modelNameVariants": [
+      "Xiaomi CyberDog 2",
+      "CyberDog 2",
+      "робот Xiaomi CyberDog 2",
+      "Кибердог 2",
+      "робот-собака CyberDog 2"
+    ],
+    "entitySynonyms": [
+      "робот-собака",
+      "робопёс",
+      "интерактивная робособака",
+      "робот для промо",
+      "робот для выставки"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "Xiaomi CyberDog 2",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic category page.",
+      "Keep generic category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved source-gallery assets, no legacy hero/catalog fallback",
+    "includedService": "01 — what is included",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — usage scenarios",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 9,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "needs_live_verification",
+    "serpStatus": "needs_live_verification",
+    "openQuestions": [
+      "Confirm final visible copy and screenshots before merge/publication."
+    ]
+  }
+}

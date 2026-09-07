@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-unitree-go2",
+  "canonicalPath": "/robots/arenda-unitree-go2/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-unitree-go2/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "Unitree Go2",
+    "sourceName": "робота-собаки Unitree Go2",
+    "modelName": "Unitree Go2",
+    "brand": "Unitree",
+    "category": {
+      "primary": "robot_dog",
+      "labels": [
+        "robot_dog"
+      ],
+      "collectionSlugs": [
+        "roboty-sobaki"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "needs_live_verification",
+      "source": "pending_live_wordstat",
+      "period": null,
+      "region": "all",
+      "queries": {
+        "аренда Unitree Go2": null,
+        "Unitree Go2 аренда": null,
+        "прокат Unitree Go2": null
+      },
+      "evidence": "not_collected_yet__must_use_live_wordstat_before_final_publication"
+    },
+    "serpAnalysis": {
+      "status": "needs_live_verification",
+      "evidence": "not_collected_yet",
+      "limitation": "No ranked SERP evidence is claimed until checked live; use source-of-truth facts and owner review only."
+    },
+    "contentGaps": [
+      "Exact model page must own model-specific rental intent, not generic category demand.",
+      "Visible copy must explain scenarios, operator role, venue requirements, and what is included without unverifiable technical promises.",
+      "Media must come from approved source-gallery assets; capability illustrations stay in separate capability registry."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Unitree Go2 — робот-собака для мероприятия",
+    "metaDescription": "Аренда Unitree Go2 для выставки, фотозоны, детского праздника или корпоративного события: трюки, интерактив с гостями и операторское сопровождение.",
+    "h1": "Аренда робота-собаки Unitree Go2",
+    "primaryKeyword": "аренда Unitree Go2",
+    "secondaryKeywords": [
+      "Unitree Go2 аренда",
+      "прокат Unitree Go2",
+      "заказать Unitree Go2",
+      "робот-собака Unitree Go2",
+      "Unitree Go2 для мероприятия"
+    ],
+    "longTailKeywords": [
+      "аренда Unitree Go2 для выставки",
+      "аренда Unitree Go2 для мероприятия",
+      "аренда Unitree Go2 для презентации"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда Unitree Go2",
+    "secondaryKeywords": [
+      "Unitree Go2 аренда",
+      "прокат Unitree Go2",
+      "заказать Unitree Go2",
+      "робот-собака Unitree Go2",
+      "Unitree Go2 для мероприятия"
+    ],
+    "modelNameVariants": [
+      "Unitree Go2",
+      "робот Unitree Go2",
+      "Юнитри Go2",
+      "робот-собака Unitree Go2",
+      "Unitree Go2 quadruped"
+    ],
+    "entitySynonyms": [
+      "робот-собака",
+      "робопёс",
+      "интерактивная робособака",
+      "четвероногий робот",
+      "робот для фотозоны"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "Unitree Go2",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic category page.",
+      "Keep generic category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved source-gallery assets, no legacy hero/catalog fallback",
+    "includedService": "01 — what is included",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — usage scenarios",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 10,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "needs_live_verification",
+    "serpStatus": "needs_live_verification",
+    "openQuestions": [
+      "Confirm final visible copy and screenshots before merge/publication."
+    ]
+  }
+}

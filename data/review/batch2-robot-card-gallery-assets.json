@@ -1,0 +1,575 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "batch": "batch2_robot_cards",
+  "status": "converted_source_gallery_assets_for_preview",
+  "robots": [
+    {
+      "slug": "arenda-unitree-g1",
+      "count": 9,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild3335-3863-4737-b865-343938666339__04.webp",
+          "sourceRole": "source_gallery_hero_candidate",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3335-3863-4737-b865-343938666339__04.jpg",
+          "alt": "Робот-гуманоид Unitree G1 на фирменном студийном кадре, человекоподобный робот в виде человека.",
+          "webpWidth": 500,
+          "webpHeight": 600,
+          "aspectRatio": 0.8333
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6333-3137-4465-b265-323436646539__06.jpg",
+          "alt": "Робот-человек Unitree G1 пожимает руку посетителю на выставке НИЖФАРМ, андроид для делового стенда.",
+          "webpWidth": 399,
+          "webpHeight": 600,
+          "aspectRatio": 0.665
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6262-6336-4038-a130-626264326663__02.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6262-6336-4038-a130-626264326663__02.jpg",
+          "alt": "Арендовать робота-гуманоида Unitree G1 для презентации: прямоходящий человекоподобный робот бежит на фирменном кадре.",
+          "webpWidth": 553,
+          "webpHeight": 600,
+          "aspectRatio": 0.9217
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6434-6663-4638-b765-303861663563__05.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6434-6663-4638-b765-303861663563__05.jpg",
+          "alt": "Андроид Unitree G1 спускается по лестнице, робот на двух ногах демонстрирует движение в боковом ракурсе.",
+          "webpWidth": 493,
+          "webpHeight": 600,
+          "aspectRatio": 0.8217
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild3662-3964-4530-a331-663534313936__01.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3662-3964-4530-a331-663534313936__01.jpg",
+          "alt": "Прокат робота-человека Unitree G1 для выставочного стенда: гуманоид в фирменном образе с LED-дисплеем.",
+          "webpWidth": 533,
+          "webpHeight": 800,
+          "aspectRatio": 0.6663
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6134-6536-4662-a134-643063656632__09.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6134-6536-4662-a134-643063656632__09.jpg",
+          "alt": "Человекоподобный робот Unitree G1 на групповом фото с командой стенда НИЖФАРМ.",
+          "webpWidth": 877,
+          "webpHeight": 600,
+          "aspectRatio": 1.4617
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6430-3334-4539-b033-633732353634__07.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6430-3334-4539-b033-633732353634__07.jpg",
+          "alt": "Взять в прокат андроида Unitree G1 для стенда Винпин в Крокус Экспо и выставочного интерактива.",
+          "webpWidth": 544,
+          "webpHeight": 600,
+          "aspectRatio": 0.9067
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6532-3936-4631-a336-313438353966__010.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6532-3936-4631-a336-313438353966__010.jpg",
+          "alt": "Интерактивный гуманоид Unitree G1 рядом с робособакой Unitree Go2 на площадке 20-30.",
+          "webpWidth": 728,
+          "webpHeight": 600,
+          "aspectRatio": 1.2133
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild3639-3163-4237-a262-626361333964__03.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3639-3163-4237-a262-626361333964__03.jpg",
+          "alt": "Заказать робота-человека Unitree G1 на мероприятие: андроид машет рукой и показывает подвижность корпуса.",
+          "webpWidth": 793,
+          "webpHeight": 600,
+          "aspectRatio": 1.3217
+        }
+      ]
+    },
+    {
+      "slug": "arenda-bellabot",
+      "count": 10,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild6137-3561-4532-b062-646264396639__02.webp",
+          "sourceRole": "source_gallery_hero_candidate",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6137-3561-4532-b062-646264396639__02.jpg",
+          "alt": "Робот-официант BellaBot: крупным планом на сером фоне, вид спереди немного наискось.",
+          "webpWidth": 427,
+          "webpHeight": 600,
+          "aspectRatio": 0.7117
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild3730-3164-4238-a530-353561376234__noroot.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3730-3164-4238-a530-353561376234__noroot.png",
+          "alt": "Робот-доставщик BellaBot, робот для ресторана BellaBot: крупным планом; видна кошачья мордочка и стилизованное человеческое лицо на экране. Робот явно.",
+          "webpWidth": 676,
+          "webpHeight": 600,
+          "aspectRatio": 1.1267
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild3161-3431-4835-a134-373533613032__03.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3161-3431-4835-a134-373533613032__03.jpg",
+          "alt": "Прокат робота для ресторана BellaBot для мероприятия: Два белых робота-официанта BellaBot крупным планом на сером фоне.",
+          "webpWidth": 643,
+          "webpHeight": 600,
+          "aspectRatio": 1.0717
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild6430-3838-4730-a532-343435366463__09.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6430-3838-4730-a532-343435366463__09.jpg",
+          "alt": "Робот-кот официант BellaBot, интерактивный официант BellaBot: крупным планом; видна только верхняя часть кошачьей мордочки, на заднем фоне помещение ресторана.",
+          "webpWidth": 795,
+          "webpHeight": 600,
+          "aspectRatio": 1.325
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild3461-3562-4063-b032-656137346433__05.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3461-3562-4063-b032-656137346433__05.jpg",
+          "alt": "Заказать сервисного робота BellaBot на HoReCa-зоны и события с гостями: во весь рост движется по помещению кафе или ресторана.",
+          "webpWidth": 445,
+          "webpHeight": 600,
+          "aspectRatio": 0.7417
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild6239-6132-4661-a438-316164333461__01.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6239-6132-4661-a438-316164333461__01.jpg",
+          "alt": "Робот-официант BellaBot: Белый робот-официант BellaBot находится в помещении ресторана; широкое изображение, видно почти.",
+          "webpWidth": 888,
+          "webpHeight": 600,
+          "aspectRatio": 1.48
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild6533-3031-4766-b662-303762393638__010.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6533-3031-4766-b662-303762393638__010.jpg",
+          "alt": "Арендовать робота для ресторана BellaBot для демонстрации возможностей: движется по залу мероприятия и перевозит блюда. На заднем фоне несколько человек стоят и.",
+          "webpWidth": 749,
+          "webpHeight": 600,
+          "aspectRatio": 1.2483
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild6338-3063-4335-b931-623732346635__noroot.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6338-3063-4335-b931-623732346635__noroot.png",
+          "alt": "Робот-доставщик BellaBot, робот для ресторана BellaBot: на выставке; на заднем фоне люди сидят и слушают лекцию, робот движется по направлению от.",
+          "webpWidth": 600,
+          "webpHeight": 600,
+          "aspectRatio": 1
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild3966-6630-4761-a135-306232623062__08.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3966-6630-4761-a135-306232623062__08.jpg",
+          "alt": "Взять в прокат сервисного робота BellaBot для презентации: Чёрный робот-официант BellaBot крупным планом, на его подносах лежат сладости.",
+          "webpWidth": 439,
+          "webpHeight": 600,
+          "aspectRatio": 0.7317
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-bellabot__tild3532-3264-4261-a634-643438656237__noroot.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3532-3264-4261-a634-643438656237__noroot.png",
+          "alt": "Робот-кот официант BellaBot, интерактивный официант BellaBot: Два робота-официанта BellaBot чёрного и белого цвета на светлом фоне помещения; стилизованное.",
+          "webpWidth": 800,
+          "webpHeight": 800,
+          "aspectRatio": 1
+        }
+      ]
+    },
+    {
+      "slug": "arenda-kettybot",
+      "count": 10,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild6236-3131-4466-a632-623038373139__07.webp",
+          "sourceRole": "source_gallery_hero_candidate",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6236-3131-4466-a632-623038373139__07.jpg",
+          "alt": "Робот-официант KettyBot: крупным планом везёт поднос на корпоративном мероприятии.",
+          "webpWidth": 417,
+          "webpHeight": 600,
+          "aspectRatio": 0.695
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild6139-3335-4138-a539-383539326630__01.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6139-3335-4138-a539-383539326630__01.jpg",
+          "alt": "Робот-доставщик KettyBot, робот для ресторана KettyBot: едет вдоль столиков в кафе; на рекламном экране показаны изображения блюд. Горизонтальное фото.",
+          "webpWidth": 1000,
+          "webpHeight": 600,
+          "aspectRatio": 1.6667
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild3663-6530-4536-b734-643935626664__08.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3663-6530-4536-b734-643935626664__08.jpg",
+          "alt": "Прокат робота-промоутера KettyBot для мероприятия: Два робота KettyBot, один жёлтый и один белый, крупным планом на белом фоне.",
+          "webpWidth": 602,
+          "webpHeight": 600,
+          "aspectRatio": 1.0033
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild6330-6138-4764-a335-376636333838__04.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6330-6138-4764-a335-376636333838__04.jpg",
+          "alt": "Робот-промоутер с экраном KettyBot, интерактивный робот-официант KettyBot: везёт два блюда гостям конференции, вид сзади.",
+          "webpWidth": 432,
+          "webpHeight": 600,
+          "aspectRatio": 0.72
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild3762-3232-4237-b965-323533333164__09.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3762-3232-4237-b965-323533333164__09.jpg",
+          "alt": "Заказать сервисного робота KettyBot на HoReCa-зоны и события с гостями: крупным планом едет по кафе; на заднем фоне столики и стулья.",
+          "webpWidth": 594,
+          "webpHeight": 600,
+          "aspectRatio": 0.99
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild3864-3062-4563-b431-666566303761__02.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3864-3062-4563-b431-666566303761__02.jpg",
+          "alt": "Робот-официант KettyBot: стоит у фотозоны на выставке рядом с женщиной, которая смотрит на него и фотографируется с ним.",
+          "webpWidth": 735,
+          "webpHeight": 600,
+          "aspectRatio": 1.225
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild3736-3534-4030-b338-333366663735__06.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3736-3534-4030-b338-333366663735__06.jpg",
+          "alt": "Арендовать робота-промоутера KettyBot для HoReCa-зоны и события с гостями: едет по ресторану; на экране отображаются изображения блюд.",
+          "webpWidth": 1001,
+          "webpHeight": 600,
+          "aspectRatio": 1.6683
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild6365-3064-4761-a334-303561393261__03.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6365-3064-4761-a334-303561393261__03.jpg",
+          "alt": "Робот-доставщик KettyBot, робот для ресторана KettyBot: крупным планом в помещении кафе.",
+          "webpWidth": 428,
+          "webpHeight": 600,
+          "aspectRatio": 0.7133
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild3938-3662-4534-b030-623936613139__05.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3938-3662-4534-b030-623936613139__05.jpg",
+          "alt": "Взять в прокат сервисного робота KettyBot для HoReCa-зоны и события с гостями: Сервисный робот-официант KettyBot на корпоративном мероприятии позирует рядом с робобаром.",
+          "webpWidth": 595,
+          "webpHeight": 600,
+          "aspectRatio": 0.9917
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-kettybot__tild6362-3235-4561-a436-623839356139__011.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6362-3235-4561-a436-623839356139__011.jpg",
+          "alt": "Робот-промоутер с экраном KettyBot, интерактивный робот-официант KettyBot: Жёлтый робот-официант KettyBot крупным планом на белом фоне.",
+          "webpWidth": 384,
+          "webpHeight": 600,
+          "aspectRatio": 0.64
+        }
+      ]
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "count": 10,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-3530-4530-b063-393336396631__-_unitree_go2____.webp",
+          "sourceRole": "source_gallery_hero_candidate",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6530-3530-4530-b063-393336396631__-_unitree_go2____.jpg",
+          "alt": "Робот-пёс Unitree Go2 выполняет акробатический трюк на передних лапах, четвероногий робот демонстрирует баланс.",
+          "webpWidth": 600,
+          "webpHeight": 600,
+          "aspectRatio": 1
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3736-3066-4163-a539-633336363532__-_unitree_go2______.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3736-3066-4163-a539-633336363532__-_unitree_go2______.jpg",
+          "alt": "Механический пёс Unitree Go2 крупным планом на улице, робот-собака с модулем и световым индикатором.",
+          "webpWidth": 1067,
+          "webpHeight": 600,
+          "aspectRatio": 1.7783
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3966-3830-4332-a165-396334616437___-_unitree_go2______.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3966-3830-4332-a165-396334616437___-_unitree_go2______.jpg",
+          "alt": "Прокат робота-пса Unitree Go2 для демонстрации движения на открытой площадке.",
+          "webpWidth": 600,
+          "webpHeight": 600,
+          "aspectRatio": 1
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6235-3630-4865-a365-316333613930__-_unitree_go2_____.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6235-3630-4865-a365-316333613930__-_unitree_go2_____.jpg",
+          "alt": "Четвероногий робот Unitree Go2 проходит каменистую поверхность, механический пёс демонстрирует проходимость.",
+          "webpWidth": 1067,
+          "webpHeight": 600,
+          "aspectRatio": 1.7783
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6666-3666-4662-a431-636535616562__6.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6666-3666-4662-a431-636535616562__6.jpg",
+          "alt": "Заказать робособаку Unitree Go2 для фестиваля, уличной демонстрации и интерактива с гостями.",
+          "webpWidth": 533,
+          "webpHeight": 800,
+          "aspectRatio": 0.6663
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-6261-4733-b832-343462316432__4.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6530-6261-4733-b832-343462316432__4.jpg",
+          "alt": "Робот-собака Unitree Go2 в декоративной фотозоне рядом с гостями, интерактивная робособака для события.",
+          "webpWidth": 800,
+          "webpHeight": 800,
+          "aspectRatio": 1
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3334-6166-4337-a661-373732343830__3.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3334-6166-4337-a661-373732343830__3.jpg",
+          "alt": "Взять в прокат механического пса Unitree Go2 для новогоднего мероприятия, фотозоны и интерактива с детьми.",
+          "webpWidth": 450,
+          "webpHeight": 600,
+          "aspectRatio": 0.75
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3034-3431-4664-b364-613830393864__1.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3034-3431-4664-b364-613830393864__1.jpg",
+          "alt": "Кибер-пёс Unitree Go2 на фестивале ИГРАПРОМ с LED-панелью и рекламной строкой.",
+          "webpWidth": 401,
+          "webpHeight": 600,
+          "aspectRatio": 0.6683
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3234-6131-4736-b062-623866663537__2.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3234-6131-4736-b062-623866663537__2.jpg",
+          "alt": "Арендовать робота-собаку Unitree Go2 для детского дня рождения с подносом для торта.",
+          "webpWidth": 450,
+          "webpHeight": 600,
+          "aspectRatio": 0.75
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3233-3033-4335-b638-343335666637__5.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3233-3033-4335-b638-343335666637__5.jpg",
+          "alt": "Робот-пёс Unitree Go2 крупным планом на фоне неоновой подсветки, современная робособака для эффектной фотозоны.",
+          "webpWidth": 450,
+          "webpHeight": 600,
+          "aspectRatio": 0.75
+        }
+      ]
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "count": 9,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3634-6431-4932-a636-653336656338__010.webp",
+          "sourceRole": "source_gallery_hero_candidate",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3634-6431-4932-a636-653336656338__010.jpg",
+          "alt": "Робот-пёс Xiaomi CyberDog 2: Крупное изображение робота-собаки Xiaomi CyberDog 2 на чёрном фоне; видны только голова и шея.",
+          "webpWidth": 440,
+          "webpHeight": 600,
+          "aspectRatio": 0.7333
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3239-3230-4630-a339-353163353432__noroot.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3239-3230-4630-a339-353163353432__noroot.png",
+          "alt": "Робособака Xiaomi CyberDog 2, механический пёс Xiaomi CyberDog 2: Крупный план робособаки Xiaomi CyberDog 2 на сером фоне, вид сбоку.",
+          "webpWidth": 567,
+          "webpHeight": 600,
+          "aspectRatio": 0.945
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild6531-3232-4333-b263-373839366131__05.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6531-3232-4333-b263-373839366131__05.jpg",
+          "alt": "Прокат механического пса Xiaomi CyberDog 2 для мероприятия: Крупный план робособаки Xiaomi CyberDog 2 на светлом фоне; видна рука человека по локоть.",
+          "webpWidth": 695,
+          "webpHeight": 600,
+          "aspectRatio": 1.1583
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3334-6430-4538-a132-313139356263__03.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3334-6430-4538-a132-313139356263__03.jpg",
+          "alt": "Кибер-пёс Xiaomi CyberDog 2, четвероногий робот Xiaomi CyberDog 2: Крупный план робособаки Xiaomi CyberDog 2 в движении, вид сбоку; собака касается земли только.",
+          "webpWidth": 1038,
+          "webpHeight": 600,
+          "aspectRatio": 1.73
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3536-6239-4431-b434-333763623165__noroot.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3536-6239-4431-b434-333763623165__noroot.png",
+          "alt": "Заказать робособаки Xiaomi CyberDog 2 на презентации: Крупный план робособаки Xiaomi CyberDog 2: видна передняя часть туловища, ноги и голова, рядом.",
+          "webpWidth": 434,
+          "webpHeight": 599,
+          "aspectRatio": 0.7245
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3834-3231-4836-b737-366637613031__08.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3834-3231-4836-b737-366637613031__08.jpg",
+          "alt": "Робот на четырёх лапах Xiaomi CyberDog 2: позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние.",
+          "webpWidth": 670,
+          "webpHeight": 600,
+          "aspectRatio": 1.1167
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild6138-6135-4862-a132-626663393638__07.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6138-6135-4862-a132-626663393638__07.jpg",
+          "alt": "Арендовать механического пса Xiaomi CyberDog 2 для мероприятия: Вид сбоку: робособака Xiaomi CyberDog 2 и ребёнок в светлой рубашке и светлой кепке. Робособака.",
+          "webpWidth": 858,
+          "webpHeight": 600,
+          "aspectRatio": 1.43
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3130-6661-4337-b133-613762633164__09.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3130-6661-4337-b133-613762633164__09.jpg",
+          "alt": "Робот-пёс Xiaomi CyberDog 2, робот-собака Xiaomi CyberDog 2: Робопёс Xiaomi CyberDog 2 стоит на полу, вид почти сверху; вокруг него много людей со всех.",
+          "webpWidth": 900,
+          "webpHeight": 600,
+          "aspectRatio": 1.5
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3236-3835-4331-b539-373139386462__01.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3236-3835-4331-b539-373139386462__01.jpg",
+          "alt": "Взять в прокат робособаки Xiaomi CyberDog 2 для презентации: сидит на полу перед обычной собакой; они видны сбоку и смотрят друг на друга.",
+          "webpWidth": 1216,
+          "webpHeight": 600,
+          "aspectRatio": 2.0267
+        }
+      ]
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "count": 11,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3835-6365-4632-b863-616638656231__011.webp",
+          "sourceRole": "source_gallery_hero_candidate",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3835-6365-4632-b863-616638656231__011.jpg",
+          "alt": "Робот-промоутер Promobot V4: на мероприятии крупным планом, вид спереди; руки разведены в стороны, на лице улыбка.",
+          "webpWidth": 402,
+          "webpHeight": 600,
+          "aspectRatio": 0.67
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3834-3962-4239-b965-316661316234__01.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3834-3962-4239-b965-316661316234__01.jpg",
+          "alt": "Робот-хостес Promobot V4, робот-консультант Promobot V4: в помещении торгового центра взаимодействует с посетителями; двое мужчин общаются с ним.",
+          "webpWidth": 478,
+          "webpHeight": 600,
+          "aspectRatio": 0.7967
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3562-6138-4433-b931-646465643163__08.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3562-6138-4433-b931-646465643163__08.jpg",
+          "alt": "Прокат промо-робота Promobot V4 для выставочного стенда: на ярком выставочном стенде; рядом девушка-промо сидит, вместе они взаимодействуют с.",
+          "webpWidth": 1105,
+          "webpHeight": 600,
+          "aspectRatio": 1.8417
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3636-6331-4535-b465-646266393432__03.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3636-6331-4535-b465-646266393432__03.jpg",
+          "alt": "Интерактивный робот с экраном Promobot V4, промо-робот Promobot V4: крупным планом, вид спереди; стоит в помещении офисного центра, виден по пояс, на лице улыбка.",
+          "webpWidth": 804,
+          "webpHeight": 600,
+          "aspectRatio": 1.34
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3534-3933-4962-b462-376361346430__012.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3534-3933-4962-b462-376361346430__012.jpg",
+          "alt": "Заказать сервисного робота Promobot V4 на выставочного стенда: крупным планом во весь рост, вид сбоку, в холле выставки.",
+          "webpWidth": 575,
+          "webpHeight": 784,
+          "aspectRatio": 0.7334
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild6333-3039-4261-b631-313337316333__05.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6333-3039-4261-b631-313337316333__05.jpg",
+          "alt": "Робот-промоутер Promobot V4: Девушка держит на руках ребёнка, который тянется, чтобы дотронуться до робота Promobot V4; все.",
+          "webpWidth": 777,
+          "webpHeight": 600,
+          "aspectRatio": 1.295
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild6533-6561-4461-b632-323964643433__noroot.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6533-6561-4461-b632-323964643433__noroot.png",
+          "alt": "Арендовать промо-робота Promobot V4 для сцены и публичного выступления: на сцене развлекает людей и машет руками. Яркая фотография, вид спереди.",
+          "webpWidth": 600,
+          "webpHeight": 600,
+          "aspectRatio": 1
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3732-6531-4935-a361-376363323131__04.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3732-6531-4935-a361-376363323131__04.jpg",
+          "alt": "Робот-хостес Promobot V4, робот-консультант Promobot V4: на выставке взаимодействует с посетителями; фото крупным планом, на заднем фоне люди, робот.",
+          "webpWidth": 774,
+          "webpHeight": 600,
+          "aspectRatio": 1.29
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild6664-3339-4639-b231-323261366264__010.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild6664-3339-4639-b231-323261366264__010.jpg",
+          "alt": "Взять в прокат сервисного робота Promobot V4 для презентации: Девушка стоит лицом к Promobot V4, к зрителю спиной, и взаимодействует с интерактивным экраном.",
+          "webpWidth": 904,
+          "webpHeight": 600,
+          "aspectRatio": 1.5067
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3135-6638-4431-a538-363464393463__07.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3135-6638-4431-a538-363464393463__07.jpg",
+          "alt": "Интерактивный робот с экраном Promobot V4, промо-робот Promobot V4: на выставочном стенде крупным планом; вместо глаз у него стилизованные сердечки.",
+          "webpWidth": 466,
+          "webpHeight": 600,
+          "aspectRatio": 0.7767
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3832-3664-4865-b531-663761353435__09.webp",
+          "sourceRole": "gallery",
+          "source": "/home/alex/projects/kiber-portal-pr8/site-export/images/tild3832-3664-4865-b531-663761353435__09.jpg",
+          "alt": "Аренда промо-робота Promobot V4 для выставочного стенда: на выставочном стенде крупным планом; на заднем фоне люди взаимодействуют со стендом.",
+          "webpWidth": 714,
+          "webpHeight": 600,
+          "aspectRatio": 1.19
+        }
+      ]
+    }
+  ]
+}

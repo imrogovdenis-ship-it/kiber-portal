@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "batch": "batch2_robot_cards",
+  "status": "research_passports_draft_for_owner_review",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robots": [
+    "arenda-unitree-g1",
+    "arenda-bellabot",
+    "arenda-kettybot",
+    "arenda-unitree-go2",
+    "arenda-xiaomi-cyberdog-2",
+    "arenda-promobot-v4"
+  ],
+  "wordstatStatus": "checked_live_for_kettybot_only__needs_live_verification_for_remaining_slugs",
+  "serpStatus": "needs_live_verification_per_slug",
+  "passports": [
+    "data/seo/robot-card-passports/arenda-unitree-g1.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-bellabot.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-kettybot.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-unitree-go2.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-xiaomi-cyberdog-2.robot-card-seo-passport.json",
+    "data/seo/robot-card-passports/arenda-promobot-v4.robot-card-seo-passport.json"
+  ],
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "publicRouteReplacementAllowed": false,
+    "massScalingBeyondBatchAllowed": false
+  }
+}

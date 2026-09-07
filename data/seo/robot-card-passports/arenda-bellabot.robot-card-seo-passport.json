@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-bellabot",
+  "canonicalPath": "/robots/arenda-bellabot/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-bellabot/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "BellaBot",
+    "sourceName": "робота-официанта BellaBot",
+    "modelName": "BellaBot",
+    "brand": "BellaBot",
+    "category": {
+      "primary": "service_robot",
+      "labels": [
+        "service_robot"
+      ],
+      "collectionSlugs": [
+        "servisnye-roboty"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "needs_live_verification",
+      "source": "pending_live_wordstat",
+      "period": null,
+      "region": "all",
+      "queries": {
+        "аренда BellaBot": null,
+        "BellaBot аренда": null,
+        "робот-официант BellaBot": null
+      },
+      "evidence": "not_collected_yet__must_use_live_wordstat_before_final_publication"
+    },
+    "serpAnalysis": {
+      "status": "needs_live_verification",
+      "evidence": "not_collected_yet",
+      "limitation": "No ranked SERP evidence is claimed until checked live; use source-of-truth facts and owner review only."
+    },
+    "contentGaps": [
+      "Exact model page must own model-specific rental intent, not generic category demand.",
+      "Visible copy must explain scenarios, operator role, venue requirements, and what is included without unverifiable technical promises.",
+      "Media must come from approved source-gallery assets; capability illustrations stay in separate capability registry."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда BellaBot — робот-официант для ресторана и мероприятия",
+    "metaDescription": "Аренда BellaBot для ресторана, банкета, отеля или выставки HoReCa: доставка блюд, вау-эффект, настройка маршрутов и сопровождение.",
+    "h1": "Аренда робота-официанта BellaBot",
+    "primaryKeyword": "аренда BellaBot",
+    "secondaryKeywords": [
+      "BellaBot аренда",
+      "робот-официант BellaBot",
+      "прокат BellaBot",
+      "заказать BellaBot",
+      "BellaBot для ресторана"
+    ],
+    "longTailKeywords": [
+      "аренда BellaBot для выставки",
+      "аренда BellaBot для мероприятия",
+      "аренда BellaBot для презентации"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда BellaBot",
+    "secondaryKeywords": [
+      "BellaBot аренда",
+      "робот-официант BellaBot",
+      "прокат BellaBot",
+      "заказать BellaBot",
+      "BellaBot для ресторана"
+    ],
+    "modelNameVariants": [
+      "BellaBot",
+      "Bella Bot",
+      "Беллабот",
+      "робот BellaBot",
+      "Pudu BellaBot"
+    ],
+    "entitySynonyms": [
+      "робот-официант",
+      "сервисный робот",
+      "робот-доставщик",
+      "робот для ресторана",
+      "робот для HoReCa"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "BellaBot",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic category page.",
+      "Keep generic category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved source-gallery assets, no legacy hero/catalog fallback",
+    "includedService": "01 — what is included",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — usage scenarios",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 10,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "needs_live_verification",
+    "serpStatus": "needs_live_verification",
+    "openQuestions": [
+      "Confirm final visible copy and screenshots before merge/publication."
+    ]
+  }
+}

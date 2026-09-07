@@ -1,0 +1,89 @@
+{
+  "allPass": true,
+  "results": [
+    {
+      "slug": "arenda-unitree-g1",
+      "h1": [
+        "Аренда робота-гуманоида Unitree G1"
+      ],
+      "seoIntent": true,
+      "heroPopup": true,
+      "fallbackGosha": false,
+      "galleryImgs": 5,
+      "actionImgs": 4,
+      "galleryKiber45": false,
+      "legacyPhoto": false,
+      "capImgs": 6
+    },
+    {
+      "slug": "arenda-bellabot",
+      "h1": [
+        "Аренда робота-официанта BellaBot"
+      ],
+      "seoIntent": true,
+      "heroPopup": true,
+      "fallbackGosha": false,
+      "galleryImgs": 5,
+      "actionImgs": 5,
+      "galleryKiber45": false,
+      "legacyPhoto": false,
+      "capImgs": 6
+    },
+    {
+      "slug": "arenda-kettybot",
+      "h1": [
+        "Аренда робота-официанта KettyBot"
+      ],
+      "seoIntent": true,
+      "heroPopup": true,
+      "fallbackGosha": false,
+      "galleryImgs": 5,
+      "actionImgs": 5,
+      "galleryKiber45": false,
+      "legacyPhoto": false,
+      "capImgs": 6
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "h1": [
+        "Аренда робота-собаки Unitree Go2"
+      ],
+      "seoIntent": true,
+      "heroPopup": true,
+      "fallbackGosha": false,
+      "galleryImgs": 5,
+      "actionImgs": 5,
+      "galleryKiber45": false,
+      "legacyPhoto": false,
+      "capImgs": 6
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "h1": [
+        "Аренда робота-собаки Xiaomi CyberDog 2"
+      ],
+      "seoIntent": true,
+      "heroPopup": true,
+      "fallbackGosha": false,
+      "galleryImgs": 5,
+      "actionImgs": 4,
+      "galleryKiber45": false,
+      "legacyPhoto": false,
+      "capImgs": 6
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "h1": [
+        "Аренда Promobot V4"
+      ],
+      "seoIntent": true,
+      "heroPopup": true,
+      "fallbackGosha": false,
+      "galleryImgs": 6,
+      "actionImgs": 5,
+      "galleryKiber45": false,
+      "legacyPhoto": false,
+      "capImgs": 6
+    }
+  ]
+}
