@@ -600,3 +600,15 @@ test('legacy Tilda hero media stays rights-approved but runtime-blocked for robo
     assert.equal(item.legacyHero.heroRuntimeUseAllowed, false);
   }
 });
+
+test('KIBER-94 robot_card Hero “Написать нам” opens messenger popup, not the old contacts page', () => {
+  const templateSource = readFileSync('src/components/templates/RobotCardTemplate.astro', 'utf8');
+  assert.match(
+    templateSource,
+    /<a class="template-hero-button template-hero-button--primary" href="#contact-messengers" data-contact-popup-trigger[^>]*>Написать нам<\/a>/,
+  );
+  assert.doesNotMatch(
+    templateSource,
+    /<a class="template-hero-button template-hero-button--primary" href="\/contacts\/">Написать нам<\/a>/,
+  );
+});
