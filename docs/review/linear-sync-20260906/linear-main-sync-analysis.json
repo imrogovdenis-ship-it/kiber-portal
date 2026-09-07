@@ -1,0 +1,1127 @@
+{
+  "linearTeam": {
+    "id": "adf1d08a-2c74-4ed2-b59e-aeba5678438b",
+    "key": "KIBER",
+    "name": "Кибер Портал"
+  },
+  "counts": {
+    "total": 97,
+    "selected": 82,
+    "openSelected": 22,
+    "urgentOpen": 12,
+    "highOpen": 9
+  },
+  "urgentOpen": [
+    {
+      "identifier": "KIBER-10",
+      "title": "[KP-008] Исправить права `.env` и перенести production secrets в Coolify",
+      "priority": "Urgent",
+      "state": "In Progress",
+      "stateType": "started",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-10/kp-008-ispravit-prava-env-i-perenesti-production-secrets-v-coolify",
+      "updatedAt": "2026-08-30T07:49:39.740Z"
+    },
+    {
+      "identifier": "KIBER-16",
+      "title": "[KP-022] Выборочно перенести полезные активы из legacy repo",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-02 · Платформа и delivery",
+      "url": "https://linear.app/ai-class/issue/KIBER-16/kp-022-vyborochno-perenesti-poleznye-aktivy-iz-legacy-repo",
+      "updatedAt": "2026-08-26T06:12:58.761Z"
+    },
+    {
+      "identifier": "KIBER-57",
+      "title": "[KP-080] Утвердить каналы и реквизиты лидов",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-57/kp-080-utverdit-kanaly-i-rekvizity-lidov",
+      "updatedAt": "2026-08-28T07:59:35.257Z"
+    },
+    {
+      "identifier": "KIBER-58",
+      "title": "[KP-083] Настроить Telegram + amoCRM и резервный канал/очередь",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-58/kp-083-nastroit-telegram-amocrm-i-rezervnyj-kanalochered",
+      "updatedAt": "2026-08-26T06:14:52.329Z"
+    },
+    {
+      "identifier": "KIBER-59",
+      "title": "[KP-084] Добавить consent checkbox и ссылки на legal",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-59/kp-084-dobavit-consent-checkbox-i-ssylki-na-legal",
+      "updatedAt": "2026-08-30T19:51:23.200Z"
+    },
+    {
+      "identifier": "KIBER-62",
+      "title": "[KP-107] Выполнить post-cutover smoke",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-62/kp-107-vypolnit-post-cutover-smoke",
+      "updatedAt": "2026-08-26T06:15:02.665Z"
+    },
+    {
+      "identifier": "KIBER-64",
+      "title": "[KP-087] Провести разрешённые end-to-end тестовые заявки",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-64/kp-087-provesti-razreshyonnye-end-to-end-testovye-zayavki",
+      "updatedAt": "2026-08-26T06:15:09.037Z"
+    },
+    {
+      "identifier": "KIBER-68",
+      "title": "[KP-104] Сделать финальный backup Tilda, sitemap и production data",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-68/kp-104-sdelat-finalnyj-backup-tilda-sitemap-i-production-data",
+      "updatedAt": "2026-08-26T06:15:20.471Z"
+    },
+    {
+      "identifier": "KIBER-7",
+      "title": "[KP-006] Удалить `/test-blok` и blank page из Tilda/sitemap",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-7/kp-006-udalit-test-blok-i-blank-page-iz-tildasitemap",
+      "updatedAt": "2026-08-26T06:12:32.700Z"
+    },
+    {
+      "identifier": "KIBER-70",
+      "title": "[KP-105] Собрать release image с commit SHA и получить approval",
+      "priority": "Urgent",
+      "state": "In Review",
+      "stateType": "started",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-70/kp-105-sobrat-release-image-s-commit-sha-i-poluchit-approval",
+      "updatedAt": "2026-09-01T04:13:20.835Z"
+    },
+    {
+      "identifier": "KIBER-72",
+      "title": "[KP-106] Переключить DNS на новую production-версию",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-72/kp-106-pereklyuchit-dns-na-novuyu-production-versiyu",
+      "updatedAt": "2026-08-26T06:15:31.738Z"
+    },
+    {
+      "identifier": "KIBER-75",
+      "title": "[KP-108] Наблюдать production 24–72 часа",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-75/kp-108-nablyudat-production-24-72-chasa",
+      "updatedAt": "2026-08-26T06:15:40.085Z"
+    }
+  ],
+  "highOpen": [
+    {
+      "identifier": "KIBER-11",
+      "title": "[KP-009] Перевести `kiber-portal-site` в legacy/read-only",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-11/kp-009-perevesti-kiber-portal-site-v-legacyread-only",
+      "updatedAt": "2026-08-26T06:12:43.073Z"
+    },
+    {
+      "identifier": "KIBER-13",
+      "title": "[KP-011] Проверить backup сервера и выполнить тест восстановления",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-13/kp-011-proverit-backup-servera-i-vypolnit-test-vosstanovleniya",
+      "updatedAt": "2026-08-26T06:12:49.653Z"
+    },
+    {
+      "identifier": "KIBER-26",
+      "title": "[KP-032] Стабилизировать сервер: swap/ресурсы/очистка Docker",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-02 · Платформа и delivery",
+      "url": "https://linear.app/ai-class/issue/KIBER-26/kp-032-stabilizirovat-server-swapresursyochistka-docker",
+      "updatedAt": "2026-08-26T06:13:25.280Z"
+    },
+    {
+      "identifier": "KIBER-28",
+      "title": "[KP-033] Восстановить здоровье Umami либо утвердить другой мониторинг",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-02 · Платформа и delivery",
+      "url": "https://linear.app/ai-class/issue/KIBER-28/kp-033-vosstanovit-zdorove-umami-libo-utverdit-drugoj-monitoring",
+      "updatedAt": "2026-08-26T06:13:33.044Z"
+    },
+    {
+      "identifier": "KIBER-55",
+      "title": "[KP-074] Провести content acceptance 24 роботов и launch-страниц",
+      "priority": "High",
+      "state": "In Review",
+      "stateType": "started",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-04 · Данные, контент и SEO",
+      "url": "https://linear.app/ai-class/issue/KIBER-55/kp-074-provesti-content-acceptance-24-robotov-i-launch-stranic",
+      "updatedAt": "2026-08-28T21:00:47.332Z"
+    },
+    {
+      "identifier": "KIBER-67",
+      "title": "[KP-088] Утвердить аналитику и consent policy",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-67/kp-088-utverdit-analitiku-i-consent-policy",
+      "updatedAt": "2026-08-26T06:15:17.577Z"
+    },
+    {
+      "identifier": "KIBER-69",
+      "title": "[KP-090] Настроить monitoring заявок и сайта",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-69/kp-090-nastroit-monitoring-zayavok-i-sajta",
+      "updatedAt": "2026-08-26T06:15:23.098Z"
+    },
+    {
+      "identifier": "KIBER-74",
+      "title": "[KP-109] Сохранить Tilda как временный rollback и затем вывести из эксплуатации",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-74/kp-109-sohranit-tilda-kak-vremennyj-rollback-i-zatem-vyvesti-iz",
+      "updatedAt": "2026-08-26T06:15:37.089Z"
+    },
+    {
+      "identifier": "KIBER-8",
+      "title": "[KP-010] Обновить память обоих Hermes и убрать ссылку на вторичный repo",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-8/kp-010-obnovit-pamyat-oboih-hermes-i-ubrat-ssylku-na-vtorichnyj-repo",
+      "updatedAt": "2026-08-26T06:12:35.308Z"
+    }
+  ],
+  "classification": [
+    {
+      "identifier": "KIBER-10",
+      "title": "[KP-008] Исправить права `.env` и перенести production secrets в Coolify",
+      "priority": "Urgent",
+      "state": "In Progress",
+      "stateType": "started",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-10/kp-008-ispravit-prava-env-i-perenesti-production-secrets-v-coolify",
+      "updatedAt": "2026-08-30T07:49:39.740Z",
+      "classification": "secrets_ops_blocker",
+      "note": "production secrets/Coolify env migration remains blocked until production runtime decision; do not modify secrets now."
+    },
+    {
+      "identifier": "KIBER-16",
+      "title": "[KP-022] Выборочно перенести полезные активы из legacy repo",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-02 · Платформа и delivery",
+      "url": "https://linear.app/ai-class/issue/KIBER-16/kp-022-vyborochno-perenesti-poleznye-aktivy-iz-legacy-repo",
+      "updatedAt": "2026-08-26T06:12:58.761Z",
+      "classification": "defer_unless_missing_assets_found",
+      "note": "approved main RC does not require more legacy asset transfer now."
+    },
+    {
+      "identifier": "KIBER-57",
+      "title": "[KP-080] Утвердить каналы и реквизиты лидов",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-57/kp-080-utverdit-kanaly-i-rekvizity-lidov",
+      "updatedAt": "2026-08-28T07:59:35.257Z",
+      "classification": "production_runtime_decision_blocker",
+      "note": "source/API integration evidence exists, but production dynamic runtime/secrets/live destinations require explicit approval; safe next: dynamic staging runtime test from main."
+    },
+    {
+      "identifier": "KIBER-58",
+      "title": "[KP-083] Настроить Telegram + amoCRM и резервный канал/очередь",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-58/kp-083-nastroit-telegram-amocrm-i-rezervnyj-kanalochered",
+      "updatedAt": "2026-08-26T06:14:52.329Z",
+      "classification": "production_runtime_decision_blocker",
+      "note": "source/API integration evidence exists, but production dynamic runtime/secrets/live destinations require explicit approval; safe next: dynamic staging runtime test from main."
+    },
+    {
+      "identifier": "KIBER-59",
+      "title": "[KP-084] Добавить consent checkbox и ссылки на legal",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-59/kp-084-dobavit-consent-checkbox-i-ssylki-na-legal",
+      "updatedAt": "2026-08-30T19:51:23.200Z",
+      "classification": "likely_satisfied_needs_linear_evidence",
+      "note": "consent checkbox/legal links implemented and CI/form tests pass; can comment/close only with permission."
+    },
+    {
+      "identifier": "KIBER-62",
+      "title": "[KP-107] Выполнить post-cutover smoke",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-62/kp-107-vypolnit-post-cutover-smoke",
+      "updatedAt": "2026-08-26T06:15:02.665Z",
+      "classification": "post_cutover_only",
+      "note": "must wait until production deploy/DNS approval."
+    },
+    {
+      "identifier": "KIBER-64",
+      "title": "[KP-087] Провести разрешённые end-to-end тестовые заявки",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-64/kp-087-provesti-razreshyonnye-end-to-end-testovye-zayavki",
+      "updatedAt": "2026-08-26T06:15:09.037Z",
+      "classification": "production_runtime_decision_blocker",
+      "note": "source/API integration evidence exists, but production dynamic runtime/secrets/live destinations require explicit approval; safe next: dynamic staging runtime test from main."
+    },
+    {
+      "identifier": "KIBER-68",
+      "title": "[KP-104] Сделать финальный backup Tilda, sitemap и production data",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-68/kp-104-sdelat-finalnyj-backup-tilda-sitemap-i-production-data",
+      "updatedAt": "2026-08-26T06:15:20.471Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-7",
+      "title": "[KP-006] Удалить `/test-blok` и blank page из Tilda/sitemap",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-7/kp-006-udalit-test-blok-i-blank-page-iz-tildasitemap",
+      "updatedAt": "2026-08-26T06:12:32.700Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-70",
+      "title": "[KP-105] Собрать release image с commit SHA и получить approval",
+      "priority": "Urgent",
+      "state": "In Review",
+      "stateType": "started",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-70/kp-105-sobrat-release-image-s-commit-sha-i-poluchit-approval",
+      "updatedAt": "2026-09-01T04:13:20.835Z",
+      "classification": "satisfied_by_main_rc_staging_needs_owner_approval_or_linear_update",
+      "note": "main SHA-tagged staging image built/deployed and healthy; no production; can update Linear evidence if allowed."
+    },
+    {
+      "identifier": "KIBER-72",
+      "title": "[KP-106] Переключить DNS на новую production-версию",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-72/kp-106-pereklyuchit-dns-na-novuyu-production-versiyu",
+      "updatedAt": "2026-08-26T06:15:31.738Z",
+      "classification": "post_cutover_only",
+      "note": "must wait until production deploy/DNS approval."
+    },
+    {
+      "identifier": "KIBER-75",
+      "title": "[KP-108] Наблюдать production 24–72 часа",
+      "priority": "Urgent",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-75/kp-108-nablyudat-production-24-72-chasa",
+      "updatedAt": "2026-08-26T06:15:40.085Z",
+      "classification": "post_cutover_only",
+      "note": "must wait until production deploy/DNS approval."
+    },
+    {
+      "identifier": "KIBER-11",
+      "title": "[KP-009] Перевести `kiber-portal-site` в legacy/read-only",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-11/kp-009-perevesti-kiber-portal-site-v-legacyread-only",
+      "updatedAt": "2026-08-26T06:12:43.073Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-13",
+      "title": "[KP-011] Проверить backup сервера и выполнить тест восстановления",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-13/kp-011-proverit-backup-servera-i-vypolnit-test-vosstanovleniya",
+      "updatedAt": "2026-08-26T06:12:49.653Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-26",
+      "title": "[KP-032] Стабилизировать сервер: swap/ресурсы/очистка Docker",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-02 · Платформа и delivery",
+      "url": "https://linear.app/ai-class/issue/KIBER-26/kp-032-stabilizirovat-server-swapresursyochistka-docker",
+      "updatedAt": "2026-08-26T06:13:25.280Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-28",
+      "title": "[KP-033] Восстановить здоровье Umami либо утвердить другой мониторинг",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-02 · Платформа и delivery",
+      "url": "https://linear.app/ai-class/issue/KIBER-28/kp-033-vosstanovit-zdorove-umami-libo-utverdit-drugoj-monitoring",
+      "updatedAt": "2026-08-26T06:13:33.044Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-55",
+      "title": "[KP-074] Провести content acceptance 24 роботов и launch-страниц",
+      "priority": "High",
+      "state": "In Review",
+      "stateType": "started",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-04 · Данные, контент и SEO",
+      "url": "https://linear.app/ai-class/issue/KIBER-55/kp-074-provesti-content-acceptance-24-robotov-i-launch-stranic",
+      "updatedAt": "2026-08-28T21:00:47.332Z",
+      "classification": "mostly_satisfied_needs_owner_content_acceptance",
+      "note": "CI says content acceptance gates pass, but owner content acceptance for publication scope should be explicit."
+    },
+    {
+      "identifier": "KIBER-67",
+      "title": "[KP-088] Утвердить аналитику и consent policy",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-67/kp-088-utverdit-analitiku-i-consent-policy",
+      "updatedAt": "2026-08-26T06:15:17.577Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-69",
+      "title": "[KP-090] Настроить monitoring заявок и сайта",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-05 · Заявки, legal и аналитика",
+      "url": "https://linear.app/ai-class/issue/KIBER-69/kp-090-nastroit-monitoring-zayavok-i-sajta",
+      "updatedAt": "2026-08-26T06:15:23.098Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-74",
+      "title": "[KP-109] Сохранить Tilda как временный rollback и затем вывести из эксплуатации",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-06 · Release 1",
+      "url": "https://linear.app/ai-class/issue/KIBER-74/kp-109-sohranit-tilda-kak-vremennyj-rollback-i-zatem-vyvesti-iz",
+      "updatedAt": "2026-08-26T06:15:37.089Z",
+      "classification": "pre_cutover_or_external_decision",
+      "note": "not closed by code merge; needs owner/Denis/business/infrastructure decision or separate safe prep."
+    },
+    {
+      "identifier": "KIBER-8",
+      "title": "[KP-010] Обновить память обоих Hermes и убрать ссылку на вторичный repo",
+      "priority": "High",
+      "state": "Backlog",
+      "stateType": "backlog",
+      "assignee": null,
+      "labels": [],
+      "project": "KP-01 · Сохранение и управление",
+      "url": "https://linear.app/ai-class/issue/KIBER-8/kp-010-obnovit-pamyat-oboih-hermes-i-ubrat-ssylku-na-vtorichnyj-repo",
+      "updatedAt": "2026-08-26T06:12:35.308Z",
+      "classification": "needs_human_or_external",
+      "note": ""
+    }
+  ],
+  "repo": {
+    "head": {
+      "exit": 0,
+      "stdout": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3\n",
+      "stderr": ""
+    },
+    "status": {
+      "exit": 0,
+      "stdout": " M docs/review/contact-lead-visual-pass2/contact-lead-visual-report.json\n M docs/review/contact-lead-visual-pass3/report.json\n M docs/review/content-package-workflow/report.json\n M docs/review/kiber-12/media-storage-policy-report.json\n M docs/review/kiber-39/performance-budget-report.json\n M docs/review/kiber-43/route-sitemap-report.json\n M docs/review/kiber-45/robotpage-24-report.json\n M docs/review/kiber-49/media-git-hygiene-report.json\n M docs/review/kiber-50/review-notes-isolation-report.json\n M docs/review/kiber-51/seo-metadata-structured-data-report.json\n M docs/review/kiber-52/internal-links-rendering-report.json\n M docs/review/kiber-53/semantic-core-lifecycle-report.json\n M docs/review/kiber-54/lead-capability-contract-report.json\n M docs/review/kiber-55/content-acceptance-report.json\n M docs/review/kiber-63/responsive-visual-qa-report.json\n M docs/review/kiber-65/readiness-matrix-report.json\n M docs/review/kiber-71/analytics-event-contract-report.json\n M docs/review/kiber-79/internal-link-proposals-report.json\n M docs/review/kiber-88/reference-visual-layer-report.json\n M docs/review/launch-readiness-crawl/report.json\n M docs/review/media-rights/approved-media-rendering-report.json\n M docs/review/media-rights/media-rights-registry-report.json\n M docs/review/media-rights/review-package-report.json\n M docs/review/production-approval-gates/report.json\n M docs/review/production-go-no-go/report.json\n?? docs/review/linear-sync-20260906/\n?? docs/review/main-rc-after-pr70-20260906/\n",
+      "stderr": ""
+    },
+    "branch": {
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "open_prs": {
+      "exit": 0,
+      "stdout": "[{\"baseRefName\":\"main\",\"headRefName\":\"hermes/kiber-70-release-candidate-20260901\",\"isDraft\":false,\"mergeStateStatus\":\"UNKNOWN\",\"number\":69,\"statusCheckRollup\":[{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-09-01T04:12:56Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/imrogovdenis-ship-it/kiber-portal/actions/runs/33468935468/job/99734515712\",\"name\":\"validate\",\"startedAt\":\"2026-09-01T04:11:55Z\",\"status\":\"COMPLETED\",\"workflowName\":\"CI\"}],\"title\":\"KIBER-70: release candidate package\",\"url\":\"https://github.com/imrogovdenis-ship-it/kiber-portal/pull/69\"}]\n",
+      "stderr": ""
+    }
+  },
+  "readiness": {
+    "data/review/production-go-no-go.json": {
+      "schemaVersion": 1,
+      "issue": "KIBER-production-go-no-go",
+      "generatedAt": "2026-09-06T13:32:37.469052+00:00",
+      "currentBase": {
+        "repository": "imrogovdenis-ship-it/kiber-portal",
+        "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
+        "branch": "hermes/kiber-full-site-visual-qa-20260901",
+        "head": "17c57f65943f",
+        "headTitle": "PR8 stabilization with approved form, legal cleanup, phone and popup work"
+      },
+      "productionDecision": {
+        "status": "NO_GO",
+        "summary": "Approved legal documents, public contacts, messenger popup and lead form are now closed for RC scope; production launch remains blocked by RC packaging/commit state, production live lead runtime/secrets deployment decision, analytics/cookie activation decision, and explicit production/DNS permission.",
+        "productionDeployAllowed": false,
+        "dnsChangeAllowed": false,
+        "secretsChangeAllowed": false,
+        "liveLeadRoutingAllowed": false,
+        "analyticsProviderCookiesAllowed": false
+      },
+      "readiness": {
+        "routesChecked": 37,
+        "robotRoutesChecked": 24,
+        "legalRoutesPresent": [
+          "/privacy-policy/",
+          "/consent/",
+          "/cookie-policy/",
+          "/terms/"
+        ],
+        "leadRoutingEnabled": false,
+        "leadDestinations": 0,
+        "mediaProductionApproved": 24,
+        "crawlSource": "docs/review/launch-readiness-crawl/report.json",
+        "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json",
+        "publicContactsApproved": true,
+        "publicContactsEvidence": "Owner approved new public phone +7 (906) 730-96-91, messenger links and legal document phone replacement on 2026-09-06.",
+        "legalDocumentsApproved": true,
+        "leadFormVisualApproved": true,
+        "leadRoutingStagingFunctionTested": true,
+        "launchScopeManifest": "data/review/launch-scope-manifest.json"
+      },
+      "readyAreas": [
+        {
+          "id": "controlled-rebuild-base",
+          "status": "ready_for_review",
+          "evidence": "Git branch codex/kiber-15-controlled-rebuild at 5698898"
+        },
+        {
+          "id": "robot-pages",
+          "status": "structurally_ready",
+          "evidence": "24 robot routes pass robotpage/content/readiness smoke gates"
+        },
+        {
+          "id": "legal-static-pages",
+          "status": "owner_approved_closed",
+          "evidence": "All four legal docs approved by Александр on 2026-09-06; see docs/review/legal-documents-cleanup-20260906/OWNER_APPROVAL_FOUR_LEGAL_DOCUMENTS.md"
+        },
+        {
+          "id": "contacts-lead-visual",
+          "status": "visually_approved_and_merged",
+          "evidence": "PR #40 merged after Александр approved: «PR #40 визуально утверждаю, можно мержить»"
+        },
+        {
+          "id": "ci-gates",
+          "status": "passing",
+          "evidence": "Local npm run ci passed before PR #40 merge; GitHub validate passed on PR #40"
+        },
+        {
+          "id": "media-rights-production-approval",
+          "status": "approved_by_owner_for_production_media_use",
+          "evidence": "All 24 full robot media cards approved by Александр Маркин at 2026-08-29T00:55:09Z; production deploy/DNS/secrets/live routing still not approved."
+        },
+        {
+          "id": "public-contacts",
+          "status": "approved_by_owner_for_preview_pr",
+          "evidence": "Owner input 2026-08-30: phone +7 (906) 730-96-91, email markinas28@yandex.ru, Telegram/WhatsApp by new phone and MAX public link, Москва, ИП Маркин Александр Сергеевич, ИНН/ОГРНИП from legal docs, address Нижний Сусальный переулок, 9, стр. 4А."
+        },
+        {
+          "id": "lead-form-popup",
+          "status": "owner_visual_approved_and_live_function_tested",
+          "evidence": "Form approved; overflow fixed; source /api/leads live function test delivered amoCRM unsorted lead and Telegram duplicate. See docs/review/contact-lead-form-popup-20260906/"
+        },
+        {
+          "id": "messenger-popup",
+          "status": "implemented_verified",
+          "evidence": "Написать нам popup with MAX/WhatsApp/Telegram verified under docs/review/contact-messenger-popup-20260906/"
+        },
+        {
+          "id": "launch-scope-manifest",
+          "status": "created",
+          "evidence": "data/review/launch-scope-manifest.json separates approved RC scope from raw/review/local artifacts"
+        }
+      ],
+      "blockers": [
+        {
+          "id": "release-candidate-package-stabilization",
+          "severity": "blocking",
+          "decisionNeeded": "Собрать чистый commit/PR-ready RC package: approved launch scope vs raw/review artifacts, full gates, staging image evidence.",
+          "currentState": "launch-scope manifest created; workspace still contains large uncommitted PR8/content/evidence layer"
+        },
+        {
+          "id": "production-live-lead-runtime",
+          "severity": "blocking",
+          "decisionNeeded": "Решить, включаем ли dynamic/API runtime + env secrets для real public form delivery перед production, и где именно.",
+          "currentState": "source /api/leads live function test passed; current public staging container is static nginx review runtime; production env live routing remains disabled"
+        },
+        {
+          "id": "analytics-provider-ids",
+          "severity": "blocking",
+          "decisionNeeded": "Либо явно отложить analytics на post-launch, либо выбрать provider/IDs/goals/cookies и approve consent behavior.",
+          "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
+        },
+        {
+          "id": "explicit-production-permission",
+          "severity": "blocking",
+          "decisionNeeded": "После RC package и gated decisions дать отдельную явную команду на production deploy/DNS/secrets.",
+          "currentState": "production deploy permission is false"
+        }
+      ],
+      "openPullRequests": [
+        {
+          "number": 14,
+          "title": "feat(data): add robot price decision pack",
+          "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/14",
+          "state": "OPEN",
+          "base": "feat/kiber-27-visual-source-hierarchy",
+          "head": "hermes/kiber-42-44-price-decision-pack",
+          "mergeabilityAtCapture": "CLEAN",
+          "ci": "NONE",
+          "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+        },
+        {
+          "number": 12,
+          "title": "KIBER-51: SEO-аудит production и baseline метаданных для cutover",
+          "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/12",
+          "state": "OPEN",
+          "base": "hermes/kiber-40-production-url-registry",
+          "head": "hermes/kiber-51-production-seo-audit",
+          "mergeabilityAtCapture": "CLEAN",
+          "ci": "NONE",
+          "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+        },
+        {
+          "number": 11,
+          "title": "KIBER-42/KIBER-44: схема цены робота и аудит цен по 24 роботам",
+          "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/11",
+          "state": "OPEN",
+          "base": "hermes/kiber-40-production-url-registry",
+          "head": "hermes/kiber-42-robot-price-schema",
+          "mergeabilityAtCapture": "CLEAN",
+          "ci": "NONE",
+          "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+        },
+        {
+          "number": 10,
+          "title": "KIBER-40/KIBER-41: реестр 44 production URL и решения keep/delete/redirect",
+          "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/10",
+          "state": "OPEN",
+          "base": "main",
+          "head": "hermes/kiber-40-production-url-registry",
+          "mergeabilityAtCapture": "CLEAN",
+          "ci": "NONE",
+          "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
+        },
+        {
+          "number": 8,
+          "title": "design: controlled rebuild and Robot Card vertical pilot",
+          "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/8",
+          "state": "OPEN",
+          "base": "main",
+          "head": "codex/kiber-15-controlled-rebuild",
+          "mergeabilityAtCapture": "CLEAN",
+          "ci": "SUCCESS",
+          "recommendation": "Keep as current first-preview integration branch; merge to main only after protected staging review."
+        }
+      ],
+      "ownerDecisionChecklist": [
+        "Утвердить/закоммитить clean RC package после full gates.",
+        "Решить dynamic/API runtime для формы: staging-only before launch или сразу production runtime gate.",
+        "Решить analytics: defer post-launch или включать с отдельным approval.",
+        "После закрытия предыдущих пунктов дать отдельное production deploy/DNS/secrets permission."
+      ],
+      "nextSafeWork": [
+        "Довести release-candidate stabilization package до commit/PR-ready state.",
+        "Прогнать full RC gates: launch-scope, legal, form, lead API, SEO, preview/production build.",
+        "Обновить staging одной RC-версией и проверить основные routes.",
+        "После RC — поднять dynamic lead-runtime staging или готовить final production/DNS request."
+      ]
+    },
+    "data/review/launch-scope-manifest.json": {
+      "schemaVersion": 1,
+      "generatedAt": "2026-09-06T13:30:55.561501+00:00",
+      "status": "release_candidate_stabilization_manifest",
+      "repository": "imrogovdenis-ship-it/kiber-portal",
+      "workdir": "/home/alex/projects/kiber-portal-pr8",
+      "branch": "hermes/kiber-full-site-visual-qa-20260901",
+      "head": "17c57f65943fe5f5949a45f1084170e232562659",
+      "decision": "RC_PACKAGE_IN_PROGRESS_NO_PRODUCTION_PERMISSION",
+      "approvedLaunchScope": [
+        {
+          "id": "public-phone-and-contacts",
+          "status": "approved_for_first_publication_scope",
+          "evidence": [
+            "docs/review/public-phone-update-20260906/README.md"
+          ],
+          "sourcePaths": [
+            "src/config/site.ts",
+            "data/legal/legal-documents.json",
+            ".env.example",
+            "src/components/layout/Header.astro",
+            "src/components/layout/Footer.astro",
+            "src/pages/contacts.astro"
+          ]
+        },
+        {
+          "id": "contact-messenger-popup",
+          "status": "implemented_verified_review_scope",
+          "evidence": [
+            "docs/review/contact-messenger-popup-20260906/README.md"
+          ],
+          "sourcePaths": [
+            "src/components/layout/ContactMessengerPopup.astro",
+            "public/scripts/contact-messenger-popup.js",
+            "src/layouts/BaseLayout.astro"
+          ]
+        },
+        {
+          "id": "lead-form-popup",
+          "status": "owner_visual_approved_closed_and_live_integration_tested",
+          "evidence": [
+            "docs/review/contact-lead-form-popup-20260906/OWNER_APPROVAL_CONTACT_LEAD_FORM_POPUP.md",
+            "docs/review/contact-lead-form-popup-20260906/LIVE_ROUTING_TEST_EVIDENCE.md"
+          ],
+          "sourcePaths": [
+            "src/components/layout/ContactLeadFormPopup.astro",
+            "public/scripts/contact-lead-form-popup.js",
+            "src/server/lead-routing/api-leads.ts",
+            "src/server/lead-routing/amocrm.ts",
+            "src/server/lead-routing/telegram.ts",
+            "src/pages/api/leads/index.ts"
+          ]
+        },
+        {
+          "id": "legal-documents-four-pack",
+          "status": "owner_approved_closed",
+          "evidence": [
+            "docs/review/legal-documents-cleanup-20260906/OWNER_APPROVAL_FOUR_LEGAL_DOCUMENTS.md",
+            "docs/review/legal-documents-cleanup-20260906/verification-results-final.json"
+          ],
+          "sourcePaths": [
+            "data/legal/legal-documents.json",
+            "src/components/legal/LegalDocumentPage.astro",
+            "src/pages/privacy-policy.astro",
+            "src/pages/cookie-policy.astro",
+            "src/pages/terms.astro",
+            "src/pages/consent.astro"
+          ]
+        },
+        {
+          "id": "approved-page-type-templates-and-pr8-visual-work",
+          "status": "review_scope_for_pr8_package",
+          "evidence": [
+            "docs/review/kiber-94-article-template-design-structure-approval-2026-09-04.md",
+            "data/review/pr8-route-visual-approvals.json",
+            "docs/review/kiber-91-full-site-visual-qa/README.md"
+          ],
+          "sourcePaths": [
+            "src/components/templates/ArticleBlocksTemplate.astro",
+            "src/components/templates/CompilationTemplate.astro",
+            "src/pages/preview/kiber-94/"
+          ]
+        },
+        {
+          "id": "seo-content-contracts-and-wordstat-prep",
+          "status": "supporting_material_not_mass_publication",
+          "evidence": [
+            "docs/review/wordstat-remote-browser-20260906/RUNBOOK.md",
+            "docs/review/claude-materials-corpus-intake-20260906/README.md"
+          ],
+          "sourcePaths": [
+            "data/content-contracts/",
+            "tests/content-contracts/",
+            "scripts/validate_kiber_seo_research_writing_protocol.py",
+            "scripts/validate_claude_content_contracts.py"
+          ]
+        }
+      ],
+      "notInFirstPublicationScopeByDefault": [
+        {
+          "id": "raw-corpus-archives",
+          "paths": [
+            "docs/review/claude-materials-corpus-intake-20260906/raw/"
+          ],
+          "reason": "source material/evidence, not public site content"
+        },
+        {
+          "id": "large-screenshot-iteration-folders",
+          "paths": [
+            "docs/review/*-pr8-20260904/ screenshots/contact sheets"
+          ],
+          "reason": "review evidence; do not publish to site runtime"
+        },
+        {
+          "id": "test-results-cache",
+          "paths": [
+            "test-results/"
+          ],
+          "reason": "local test/browser output"
+        },
+        {
+          "id": "analytics-provider-activation",
+          "paths": [
+            "analytics provider IDs/cookies"
+          ],
+          "reason": "deferred until separate approval"
+        },
+        {
+          "id": "production-dns-secrets",
+          "paths": [
+            "production deploy/DNS/secret activation"
+          ],
+          "reason": "explicit approval required"
+        }
+      ],
+      "rcGates": [
+        "npm run test:launch-scope-manifest",
+        "npm run test:production-go-no-go",
+        "node --import tsx --test tests/visual/legal-four-documents.test.ts",
+        "node --import tsx --test tests/visual/contact-lead-form-popup.test.ts",
+        "npm run test:contact-lead-visual",
+        "npm run test:page-seo-components",
+        "npm run build:preview",
+        "npm run build:production"
+      ],
+      "stillGated": {
+        "productionDeployAllowed": false,
+        "dnsChangeAllowed": false,
+        "secretsChangeAllowed": false,
+        "analyticsProviderCookiesAllowed": false,
+        "productionLiveLeadRoutingAllowed": false,
+        "mergeAllowed": false
+      },
+      "recommendedNextAfterRc": "Either dynamic lead-runtime staging with env secrets, or final production/DNS approval after RC gates are green."
+    },
+    "docs/review/main-rc-after-pr70-20260906/summary.json": {
+      "status": "MAIN_RC_STAGING_READY_NO_PRODUCTION_DEPLOY",
+      "mainHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+      "stagingImage": "alex-kiber-staging:main-rc-20260906-12ef3d6",
+      "reviewUrl": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io/preview/review-approved/",
+      "verified": {
+        "npm ci": "PASS, 0 vulnerabilities",
+        "npm run ci": "PASS",
+        "npm run build:preview": "PASS, 67 pages",
+        "npm run build:production": "PASS, 42 pages",
+        "staging routes": "HTTP 200 + noindex on all checked routes",
+        "host ports": "none"
+      },
+      "excluded": [
+        "production deploy",
+        "DNS",
+        "analytics",
+        "production secrets",
+        "live routing activation"
+      ]
+    },
+    "docs/review/main-rc-after-pr70-20260906/staging-smoke-final.json": {
+      "base": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io",
+      "safeLabels": {
+        "deployed.commit": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+        "deployed.version": "main-rc-20260906-12ef3d6",
+        "kiber.portal.analytics.provider": "disabled",
+        "kiber.portal.deploy.env": "preview",
+        "kiber.portal.deploy.sha": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+        "kiber.portal.deploy.version": "main-rc-20260906-12ef3d6",
+        "kiber.staging.commit": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3"
+      },
+      "dockerPs": "alex-kiber-staging\talex-kiber-staging:main-rc-20260906-12ef3d6\tUp 41 seconds (healthy)\t80/tcp",
+      "routes": [
+        {
+          "route": "/preview/review-approved/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": true,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/compilations/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/articles/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": false,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/preview/kiber-94/compilation/roboty-gumanoidy/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/preview/kiber-94/article-blocks/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": true,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/lead/request/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": false,
+          "approvedArticleHref": false,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/contacts/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": true,
+          "approvedArticleHref": false,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/privacy-policy/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": false,
+          "approvedArticleHref": false,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/cookie-policy/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": false,
+          "approvedArticleHref": false,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/terms/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": false,
+          "approvedArticleHref": false,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        },
+        {
+          "route": "/consent/",
+          "http": 200,
+          "noindexHeader": true,
+          "reviewMapMarker": false,
+          "oldPublicRobotHref": false,
+          "oldPublicHumanoidHref": false,
+          "approvedPreviewRobotHref": false,
+          "approvedArticleHref": false,
+          "leadFormPresent": false,
+          "messengerPopupPresent": true
+        }
+      ],
+      "logsTail": "eview/review-approved/ HTTP/1.1\" 200 17911 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:45 +0000] \"GET / HTTP/1.1\" 200 51760 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:46 +0000] \"GET /compilations/ HTTP/1.1\" 200 23486 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:46 +0000] \"GET /articles/ HTTP/1.1\" 200 29354 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:46 +0000] \"GET /preview/kiber-94/robot-card/arenda-unitree-g1/ HTTP/1.1\" 200 71921 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:47 +0000] \"GET /preview/kiber-94/compilation/roboty-gumanoidy/ HTTP/1.1\" 200 63762 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:47 +0000] \"GET /preview/kiber-94/article-blocks/ HTTP/1.1\" 200 80146 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /lead/request/ HTTP/1.1\" 200 19177 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /contacts/ HTTP/1.1\" 200 20943 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /privacy-policy/ HTTP/1.1\" 200 33405 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:48 +0000] \"GET /cookie-policy/ HTTP/1.1\" 200 20924 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:49 +0000] \"GET /terms/ HTTP/1.1\" 200 23222 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n10.0.1.12 - - [06/Sep/2026:15:22:49 +0000] \"GET /consent/ HTTP/1.1\" 200 22115 \"-\" \"curl/8.5.0\" \"38.180.37.42\"\n2026/09/06 15:22:08 [notice] 1#1: using the \"epoll\" event method\n2026/09/06 15:22:08 [notice] 1#1: nginx/1.27.5\n2026/09/06 15:22:08 [notice] 1#1: built by gcc 14.2.0 (Alpine 14.2.0) \n2026/09/06 15:22:08 [notice] 1#1: OS: Linux 6.8.0-137-generic\n2026/09/06 15:22:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288\n2026/09/06 15:22:08 [notice] 1#1: start worker processes\n2026/09/06 15:22:08 [notice] 1#1: start worker process 29\n2026/09/06 15:22:08 [notice] 1#1: start worker process 30\n"
+    }
+  }
+}

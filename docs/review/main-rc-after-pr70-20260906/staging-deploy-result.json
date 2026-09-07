@@ -1,0 +1,14 @@
+{
+  "head": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+  "image": "alex-kiber-staging:main-rc-20260906-12ef3d6",
+  "rmExit": 0,
+  "runExit": 0,
+  "containerId": "6237db336940",
+  "healthSamples": [
+    "starting",
+    "starting",
+    "healthy"
+  ],
+  "dockerPs": "alex-kiber-staging\talex-kiber-staging:main-rc-20260906-12ef3d6\tUp 6 seconds (healthy)\t80/tcp",
+  "hostPorts": ""
+}

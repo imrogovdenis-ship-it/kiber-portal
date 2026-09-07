@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-09-06",
+  "source": "owner Telegram approval in Hermes session",
+  "mainProductionCandidateApproved": true,
+  "analyticsDecision": "defer_post_launch_no_yandex_metrica_umami_pixels_at_publication",
+  "approvedLinearKeys": {
+    "KIBER-70": "[KP-105] release image/current main RC staging is production candidate approved",
+    "KIBER-57": "[KP-080] channels/requisites lead routing approved for amoCRM + Telegram staging validation",
+    "KIBER-58": "[KP-083] Telegram + amoCRM lead duplicate setup approved for staging e2e",
+    "KIBER-68": "[KP-104] pre-cutover backup/checklist lane approved"
+  },
+  "productionStillRequiresExplicitFinalCommand": true,
+  "notAuthorizedYet": [
+    "DNS switch",
+    "production deploy/live production routing",
+    "analytics activation",
+    "Linear status/priority changes unless separately requested"
+  ]
+}

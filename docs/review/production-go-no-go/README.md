@@ -85,3 +85,10 @@ HEAD: `17c57f65943fe5f5949a45f1084170e232562659`
 2. Прогнать full RC gates.
 3. Обновить staging одной RC-версией.
 4. После этого выбрать: dynamic lead-runtime staging или final production/DNS request.
+
+## 2026-09-06 owner-approved dynamic staging update
+
+- Main RC staging from `main` commit `12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3` is owner-approved as production candidate.
+- Dynamic/API staging is live on the staging URL and passed one owner-authorized `/api/leads` e2e submission: `amoCRM.ok=true`, `telegram.ok=true`.
+- Analytics are intentionally deferred after launch: no Yandex Metrica, Umami, or pixels at publication.
+- Production/DNS/live production routing still require a separate explicit final command.

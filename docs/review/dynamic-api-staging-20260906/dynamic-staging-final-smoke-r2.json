@@ -1,0 +1,107 @@
+{
+  "base": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io",
+  "routeChecks": [
+    {
+      "route": "/healthz/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": false,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/lead/request/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/api/leads/status",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": true,
+        "form": false,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/preview/review-approved/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": true
+      }
+    },
+    {
+      "route": "/contacts/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/privacy-policy/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/terms/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/consent/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    }
+  ],
+  "validationOnlyPost": {
+    "curlExit": 0,
+    "response": {
+      "ok": false,
+      "errors": [
+        "name is required",
+        "contact is required"
+      ]
+    }
+  },
+  "dockerPs": "alex-kiber-staging\talex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6-r2\tUp 30 seconds (healthy)\t8080/tcp",
+  "hostPorts": ""
+}

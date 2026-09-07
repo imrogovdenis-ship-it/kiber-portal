@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
   "issue": "KIBER-production-go-no-go",
-  "generatedAt": "2026-09-06T13:32:37.469052+00:00",
+  "generatedAt": "2026-09-06T15:36:30.915889Z",
   "currentBase": {
-    "repository": "imrogovdenis-ship-it/kiber-portal",
-    "localWorkdir": "/home/alex/projects/kiber-portal-pr8",
-    "branch": "hermes/kiber-full-site-visual-qa-20260901",
-    "head": "17c57f65943f",
-    "headTitle": "PR8 stabilization with approved form, legal cleanup, phone and popup work"
+    "repo": "imrogovdenis-ship-it/kiber-portal",
+    "branch": "main",
+    "head": "12ef3d6dd54f",
+    "updatedAt": "2026-09-06T16:15:00Z",
+    "fullHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+    "headTitle": "KIBER-91: full-site visual QA package (#70)"
   },
   "productionDecision": {
     "status": "NO_GO",
-    "summary": "Approved legal documents, public contacts, messenger popup and lead form are now closed for RC scope; production launch remains blocked by RC packaging/commit state, production live lead runtime/secrets deployment decision, analytics/cookie activation decision, and explicit production/DNS permission.",
+    "summary": "PR #70 is merged and fresh main RC staging is verified; production launch remains NO_GO until owner approves the merged main RC candidate, production live lead runtime/secrets deployment, analytics/defer decision, and explicit production/DNS permission.",
     "productionDeployAllowed": false,
     "dnsChangeAllowed": false,
     "secretsChangeAllowed": false,
@@ -87,34 +88,42 @@
     },
     {
       "id": "launch-scope-manifest",
-      "status": "created",
-      "evidence": "data/review/launch-scope-manifest.json separates approved RC scope from raw/review/local artifacts"
+      "status": "merged_in_main_and_verified",
+      "evidence": "data/review/launch-scope-manifest.json plus docs/review/main-rc-after-pr70-20260906/summary.json"
+    },
+    {
+      "id": "main-rc-staging-after-pr70",
+      "status": "verified_from_main_no_production",
+      "evidence": "docs/review/main-rc-after-pr70-20260906/summary.json — main commit 12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3; npm run ci/builds pass; alex-kiber-staging healthy/noindex."
     }
   ],
   "blockers": [
     {
       "id": "release-candidate-package-stabilization",
-      "severity": "blocking",
-      "decisionNeeded": "Собрать чистый commit/PR-ready RC package: approved launch scope vs raw/review artifacts, full gates, staging image evidence.",
-      "currentState": "launch-scope manifest created; workspace still contains large uncommitted PR8/content/evidence layer"
+      "severity": "blocking_until_pr71_merge",
+      "decisionNeeded": "Merge the post-PR70 readiness/evidence sync PR before production cutover package is considered current.",
+      "currentState": "Owner approved main RC candidate; PR #71 records dynamic staging/e2e/cutover evidence and must be merged before final production execution."
     },
     {
       "id": "production-live-lead-runtime",
-      "severity": "blocking",
-      "decisionNeeded": "Решить, включаем ли dynamic/API runtime + env secrets для real public form delivery перед production, и где именно.",
-      "currentState": "source /api/leads live function test passed; current public staging container is static nginx review runtime; production env live routing remains disabled"
+      "severity": "critical",
+      "owner": "Hermes after explicit production approval",
+      "state": "pending_production_only",
+      "description": "Dynamic/API staging passed, but live lead routing on production domain/container is not enabled until final production/DNS command."
     },
     {
       "id": "analytics-provider-ids",
-      "severity": "blocking",
-      "decisionNeeded": "Либо явно отложить analytics на post-launch, либо выбрать provider/IDs/goals/cookies и approve consent behavior.",
-      "currentState": "provider-neutral analytics contract exists; provider IDs disabled"
+      "severity": "non_blocking_deferred",
+      "decisionNeeded": "No analytics at launch; connect Yandex Metrica/Umami/pixels after launch as separate task.",
+      "currentState": "Owner explicitly deferred analytics post-launch; provider IDs disabled.",
+      "state": "deferred_post_launch",
+      "description": "Kept in package as deferred launch decision, not a production blocker."
     },
     {
       "id": "explicit-production-permission",
-      "severity": "blocking",
-      "decisionNeeded": "После RC package и gated decisions дать отдельную явную команду на production deploy/DNS/secrets.",
-      "currentState": "production deploy permission is false"
+      "severity": "critical",
+      "decisionNeeded": "Separate explicit final command is required for production deploy/DNS/live production routing.",
+      "currentState": "production deploy permission is false; checklist prepared but not executed."
     }
   ],
   "openPullRequests": [
@@ -175,15 +184,59 @@
     }
   ],
   "ownerDecisionChecklist": [
-    "Утвердить/закоммитить clean RC package после full gates.",
-    "Решить dynamic/API runtime для формы: staging-only before launch или сразу production runtime gate.",
-    "Решить analytics: defer post-launch или включать с отдельным approval.",
-    "После закрытия предыдущих пунктов дать отдельное production deploy/DNS/secrets permission."
+    "Решить production dynamic/API runtime для формы: включаем amoCRM + Telegram на production или запускаем static с отложенной live routing интеграцией.",
+    "Решить analytics: defer post-launch или включать provider/IDs/goals/cookies с отдельным approval.",
+    "Получить/подтвердить DNS/cutover inputs и rollback-договорённость с Денисом/владельцем инфраструктуры.",
+    "После предыдущих пунктов дать отдельное production deploy/DNS/secrets permission."
   ],
-  "nextSafeWork": [
-    "Довести release-candidate stabilization package до commit/PR-ready state.",
-    "Прогнать full RC gates: launch-scope, legal, form, lead API, SEO, preview/production build.",
-    "Обновить staging одной RC-версией и проверить основные routes.",
-    "После RC — поднять dynamic lead-runtime staging или готовить final production/DNS request."
-  ]
+  "nextSafeWork": "Merge PR #71. Production/DNS/live production runtime remain blocked until explicit final production command.",
+  "decision": "NO_GO",
+  "ownerDecisions": {
+    "mainRcProductionCandidateApproved": true,
+    "analyticsAtLaunch": "deferred_post_launch_no_yandex_metrica_umami_pixels",
+    "linearApprovalKeys": [
+      "KIBER-70",
+      "KIBER-57",
+      "KIBER-58",
+      "KIBER-68"
+    ],
+    "dynamicApiStagingE2EApprovedAndCompleted": true
+  },
+  "runtimeReadiness": {
+    "dynamicApiStaging": {
+      "status": "passed",
+      "url": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io",
+      "image": "alex-kiber-dynamic-staging:main-dynamic-20260906-12ef3d6-r2",
+      "container": "alex-kiber-staging",
+      "commit": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+      "noHostPorts": true,
+      "noindex": true,
+      "apiStatusHttp": 200,
+      "e2eLead": {
+        "status": "passed",
+        "mode": "live",
+        "amoCRM": "ok",
+        "telegram": "ok",
+        "requestId": "lead_e2e_main_dynamic_7200f8f9159f",
+        "telegramMessageId": 13,
+        "unsortedUid": "9b281c7aae1426cbe4f449254219c4055fc11f3de75f1d634a9f8bd1e944"
+      }
+    },
+    "productionRuntime": "pending_final_production_command"
+  },
+  "analytics": {
+    "provider": "disabled_at_launch",
+    "activation": "deferred_post_launch",
+    "yandexMetrica": false,
+    "umami": false,
+    "pixels": false
+  },
+  "productionActionAllowed": false,
+  "dnsChangesAllowed": false,
+  "productionSecretsChangesAllowed": false,
+  "liveLeadRoutingAllowed": false,
+  "analyticsProviderIdsCookiesAllowed": false,
+  "postMergeMainRcEvidence": {
+    "fullHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3"
+  }
 }

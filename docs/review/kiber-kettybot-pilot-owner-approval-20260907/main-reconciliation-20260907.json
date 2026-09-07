@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-07",
+  "pr": 73,
+  "mergeBaseAgainstMain": "origin/main merged into PR branch",
+  "decisions": [
+    {
+      "files": [
+        "src/components/templates/RobotCardTemplate.astro",
+        "src/lib/kiber94-robot-template-data.ts",
+        "src/lib/page-type-templates.ts",
+        "src/pages/preview/kiber-94/robot-card/[slug].astro",
+        "tests/visual/kiber94-robot-card-preview.test.ts",
+        "data/review/kiber-94-robot-card-design-structure-approval.json",
+        "docs/review/kiber-94-robot-card-preview/robot-card-structure-contract.md"
+      ],
+      "decision": "kept PR73 side",
+      "rationale": "preserves Alexander-approved KettyBot pilot, robot-card guardrails, SEO/AI contract, non-square gallery contract, and owner approval evidence."
+    },
+    {
+      "files": [
+        "data/review/launch-scope-manifest.json",
+        "data/review/production-go-no-go.json",
+        "docs/review/production-go-no-go/README.md",
+        "tests/visual/production-go-no-go-package.test.ts"
+      ],
+      "decision": "kept origin/main side",
+      "rationale": "main contains newer RC/production NO-GO evidence after PR70/PR71; KettyBot approval does not alter production readiness."
+    },
+    {
+      "files": [
+        "docs/review/dynamic-api-staging-20260906/*",
+        "docs/review/final-dns-production-cutover-checklist-20260906/*",
+        "docs/review/linear-sync-20260906/*",
+        "docs/review/main-rc-after-pr70-20260906/*"
+      ],
+      "decision": "kept origin/main additions",
+      "rationale": "they are current main evidence and do not grant production/DNS/secrets/analytics/live-routing permission."
+    }
+  ],
+  "localVerification": [
+    "37 robot-card/template/SEO/capability tests passed",
+    "6 media-rights tests passed",
+    "3 production-go-no-go tests passed",
+    "npm run build:preview built 67 pages"
+  ],
+  "renderedAudit": {
+    "h1Count": 1,
+    "seoIntent": true,
+    "legacyTildaHeroRuntimePresent": false,
+    "galleryCssContainsObjectFitCoverInGallery": false,
+    "robotCardGalleryMobileSquare": false,
+    "prodNoGoMainState": true
+  },
+  "safetyBoundaries": "No production deploy, DNS, secrets, analytics, live lead routing, merge, public route replacement, or mass scaling performed."
+}

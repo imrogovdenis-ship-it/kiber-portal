@@ -1,0 +1,86 @@
+{
+  "base": "https://alex-kiber-mobile-review-e489e77.38.180.37.42.nip.io",
+  "statusProbes": [
+    {
+      "i": 0,
+      "http": 200,
+      "noindex": true,
+      "body": "{\n  \"ok\": true,\n  \"service\": \"api-leads\",\n  \"status\": \"available\"\n}"
+    }
+  ],
+  "routeChecks": [
+    {
+      "route": "/healthz/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": false,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/",
+      "http": 400,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": false,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/lead/request/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": true,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/api/leads/status",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": true,
+        "form": false,
+        "reviewMap": false
+      }
+    },
+    {
+      "route": "/preview/review-approved/",
+      "http": 200,
+      "noindexHeader": true,
+      "markers": {
+        "apiStatus": false,
+        "form": false,
+        "reviewMap": true
+      }
+    }
+  ],
+  "e2e": {
+    "requestId": "lead_e2e_main_dynamic_7200f8f9159f",
+    "curlExit": 0,
+    "response": {
+      "ok": true,
+      "mode": "live",
+      "requestId": "lead_e2e_main_dynamic_7200f8f9159f",
+      "channels": {
+        "amoCRM": {
+          "ok": true,
+          "unsortedUid": "9b281c7aae1426cbe4f449254219c4055fc11f3de75f1d634a9f8bd1e944",
+          "attempts": 1
+        },
+        "telegram": {
+          "ok": true,
+          "messageId": 13,
+          "attempts": 1
+        }
+      },
+      "redirectTo": "/lead/thanks/"
+    }
+  },
+  "logsTailRedacted": "dynamic staging listening on 8080\n"
+}
