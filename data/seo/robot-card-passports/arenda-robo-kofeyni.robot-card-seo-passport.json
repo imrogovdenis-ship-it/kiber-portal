@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-robo-kofeyni",
+  "canonicalPath": "/robots/arenda-robo-kofeyni/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-robo-kofeyni/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "Robo-Кофейня",
+    "sourceName": "робота-кофейни",
+    "modelName": "Robo-Кофейня",
+    "brand": "Robo-Кофейня",
+    "category": {
+      "primary": "coffee_robot",
+      "labels": [
+        "coffee_robot"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed periods from live Wordstat evidence",
+      "region": "all",
+      "queries": {
+        "аренда робо кофейни": 0,
+        "робо кофейня аренда": 0,
+        "робот кофейня аренда": 0,
+        "робо кофейня": 17,
+        "робот бариста": 398
+      },
+      "evidence": "data/seo/wordstat-research/batch3-robot-cards-20260907/batch3-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда робо кофейни",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "робо кофейня аренда",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "робот кофейня аренда",
+          "total": 0,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робо кофейня",
+          "total": 17,
+          "noResults": false
+        },
+        {
+          "query": "робот бариста",
+          "total": 398,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on robot-card; generic/category demand supports FAQ/context, not replacing exact-model page intent."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch3-robot-cards-20260907/batch3-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "limitation": "Ranked SERP screenshots can be added later; current review records source/competitor-style content gaps honestly."
+    },
+    "contentGaps": [
+      "Exact robot-card must answer rental/event intent, not just product/source specs.",
+      "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+      "Do not invent unsupported capabilities or final availability; keep owner review required.",
+      "Explain coffee menu, water/power/logistics, guest throughput and staff handoff for event service."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда робо-кофейни робота-кофейни для мероприятий",
+    "metaDescription": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
+    "h1": "Аренда Robo-Кофейня",
+    "primaryKeyword": "аренда робо-кофейни",
+    "secondaryKeywords": [
+      "прокат робота-кофейни",
+      "заказать робота-кофейни на мероприятие",
+      "робота-кофейни для выставки",
+      "робота-кофейни для корпоративного мероприятия",
+      "сервисный робот для мероприятия",
+      "робот для HoReCa и промо-зоны"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда робо-кофейни",
+    "secondaryKeywords": [
+      "прокат робота-кофейни",
+      "заказать робота-кофейни на мероприятие",
+      "робота-кофейни для выставки",
+      "робота-кофейни для корпоративного мероприятия",
+      "сервисный робот для мероприятия",
+      "робот для HoReCa и промо-зоны"
+    ],
+    "modelNameVariants": [
+      "Robo-Кофейня",
+      "робота-кофейни"
+    ],
+    "entitySynonyms": [
+      "coffee_robot",
+      "робот для мероприятия",
+      "интерактивная зона"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 8,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-robota-hudozhnika-a4",
+  "canonicalPath": "/robots/arenda-robota-hudozhnika-a4/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-robota-hudozhnika-a4/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "робот-художник A4",
+    "sourceName": "робота-художника большого формата",
+    "modelName": "робот-художник A4",
+    "brand": "робот-художник",
+    "category": {
+      "primary": "drawing_robot",
+      "labels": [
+        "drawing_robot"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed periods from live Wordstat evidence",
+      "region": "all",
+      "queries": {
+        "аренда робота художника": 1,
+        "робот художник аренда": 1,
+        "робот художник A4": 0,
+        "робот художник": 973,
+        "робот рисует портрет": 41
+      },
+      "evidence": "data/seo/wordstat-research/batch3-robot-cards-20260907/batch3-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда робота художника",
+          "total": 1,
+          "noResults": true
+        },
+        {
+          "query": "робот художник аренда",
+          "total": 1,
+          "noResults": true
+        },
+        {
+          "query": "робот художник A4",
+          "total": 0,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робот художник",
+          "total": 973,
+          "noResults": false
+        },
+        {
+          "query": "робот рисует портрет",
+          "total": 41,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on robot-card; generic/category demand supports FAQ/context, not replacing exact-model page intent."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch3-robot-cards-20260907/batch3-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "limitation": "Ranked SERP screenshots can be added later; current review records source/competitor-style content gaps honestly."
+    },
+    "contentGaps": [
+      "Exact robot-card must answer rental/event intent, not just product/source specs.",
+      "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+      "Do not invent unsupported capabilities or final availability; keep owner review required.",
+      "Separate A4 portrait robot from generic robot-artist queries; describe drawing time, surface setup and final artifact."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда робота-художника большого формата для мероприятий",
+    "metaDescription": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
+    "h1": "Аренда робот-художник A4",
+    "primaryKeyword": "аренда робота-художника A4",
+    "secondaryKeywords": [
+      "прокат большого формата",
+      "заказать большого формата на мероприятие",
+      "большого формата для выставки",
+      "большого формата для корпоративного мероприятия",
+      "робот-художник на мероприятие",
+      "робот для творческой зоны"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда робота-художника A4",
+    "secondaryKeywords": [
+      "прокат большого формата",
+      "заказать большого формата на мероприятие",
+      "большого формата для выставки",
+      "большого формата для корпоративного мероприятия",
+      "робот-художник на мероприятие",
+      "робот для творческой зоны"
+    ],
+    "modelNameVariants": [
+      "робот-художник A4",
+      "робота-художника большого формата"
+    ],
+    "entitySynonyms": [
+      "drawing_robot",
+      "робот для мероприятия",
+      "интерактивная зона"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 8,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

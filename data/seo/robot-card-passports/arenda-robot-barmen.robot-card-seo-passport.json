@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-robot-barmen",
+  "canonicalPath": "/robots/arenda-robot-barmen/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-robot-barmen/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "робот-бармен «Робобар»",
+    "sourceName": "робота-бармена «Робобар»",
+    "modelName": "робот-бармен «Робобар»",
+    "brand": "робот-бармен",
+    "category": {
+      "primary": "service_robot",
+      "labels": [
+        "service_robot"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed periods from live Wordstat evidence",
+      "region": "all",
+      "queries": {
+        "аренда робот бармен": 2,
+        "робот бармен аренда": 2,
+        "робобар аренда": 0,
+        "робот бармен": 352,
+        "робобар": 21
+      },
+      "evidence": "data/seo/wordstat-research/batch3-robot-cards-20260907/batch3-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда робот бармен",
+          "total": 2,
+          "noResults": true
+        },
+        {
+          "query": "робот бармен аренда",
+          "total": 2,
+          "noResults": true
+        },
+        {
+          "query": "робобар аренда",
+          "total": 0,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робот бармен",
+          "total": 352,
+          "noResults": false
+        },
+        {
+          "query": "робобар",
+          "total": 21,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on robot-card; generic/category demand supports FAQ/context, not replacing exact-model page intent."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch3-robot-cards-20260907/batch3-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "limitation": "Ranked SERP screenshots can be added later; current review records source/competitor-style content gaps honestly."
+    },
+    "contentGaps": [
+      "Exact robot-card must answer rental/event intent, not just product/source specs.",
+      "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+      "Do not invent unsupported capabilities or final availability; keep owner review required.",
+      "Explain drink-menu setup, alcohol/non-alcohol boundary, operator and queue safety instead of only showing robot arm spectacle."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда робота-бармена «Робобар» для мероприятий",
+    "metaDescription": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
+    "h1": "Аренда робот-бармен «Робобар»",
+    "primaryKeyword": "аренда робота-бармена Робобар",
+    "secondaryKeywords": [
+      "прокат робота-бармена «Робобар»",
+      "заказать робота-бармена «Робобар» на мероприятие",
+      "робота-бармена «Робобар» для выставки",
+      "робота-бармена «Робобар» для корпоративного мероприятия"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда робота-бармена Робобар",
+    "secondaryKeywords": [
+      "прокат робота-бармена «Робобар»",
+      "заказать робота-бармена «Робобар» на мероприятие",
+      "робота-бармена «Робобар» для выставки",
+      "робота-бармена «Робобар» для корпоративного мероприятия"
+    ],
+    "modelNameVariants": [
+      "робот-бармен «Робобар»",
+      "робота-бармена «Робобар»"
+    ],
+    "entitySynonyms": [
+      "service_robot",
+      "робот для мероприятия",
+      "интерактивная зона"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 8,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

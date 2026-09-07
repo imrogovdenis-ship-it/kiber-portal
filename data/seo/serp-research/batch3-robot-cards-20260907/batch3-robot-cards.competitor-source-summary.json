@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "source": "direct_source_truth_and_search_attempts",
+  "collectedAt": "2026-09-07T19:37:02Z",
+  "searchNote": "Ranked Yandex SERP via server-side fetch can be captcha/noisy; review records direct source-of-truth page positioning and content gaps honestly as partial_checked.",
+  "robots": [
+    {
+      "slug": "arenda-robot-barmen",
+      "status": "partial_checked",
+      "inspectedSources": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "contentGaps": [
+        "Exact robot-card must answer rental/event intent, not just product/source specs.",
+        "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+        "Do not invent unsupported capabilities or final availability; keep owner review required.",
+        "Explain drink-menu setup, alcohol/non-alcohol boundary, operator and queue safety instead of only showing robot arm spectacle."
+      ]
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "status": "partial_checked",
+      "inspectedSources": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "contentGaps": [
+        "Exact robot-card must answer rental/event intent, not just product/source specs.",
+        "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+        "Do not invent unsupported capabilities or final availability; keep owner review required.",
+        "Explain coffee menu, water/power/logistics, guest throughput and staff handoff for event service."
+      ]
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "status": "partial_checked",
+      "inspectedSources": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "contentGaps": [
+        "Exact robot-card must answer rental/event intent, not just product/source specs.",
+        "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+        "Do not invent unsupported capabilities or final availability; keep owner review required.",
+        "Position compact footprint and coffee/ice-cream module for smaller event zones; avoid claiming broad demand where exact rental volume is near zero."
+      ]
+    },
+    {
+      "slug": "arenda-glambot",
+      "status": "partial_checked",
+      "inspectedSources": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "contentGaps": [
+        "Exact robot-card must answer rental/event intent, not just product/source specs.",
+        "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+        "Do not invent unsupported capabilities or final availability; keep owner review required.",
+        "Translate camera/slow-motion spectacle into event deliverables: operator, shooting zone, guests flow, branded clips."
+      ]
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "status": "partial_checked",
+      "inspectedSources": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "contentGaps": [
+        "Exact robot-card must answer rental/event intent, not just product/source specs.",
+        "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+        "Do not invent unsupported capabilities or final availability; keep owner review required.",
+        "Separate Sketchbot from generic children toy/education demand; emphasize event portrait flow, queue timing and branded prints."
+      ]
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "status": "partial_checked",
+      "inspectedSources": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "contentGaps": [
+        "Exact robot-card must answer rental/event intent, not just product/source specs.",
+        "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+        "Do not invent unsupported capabilities or final availability; keep owner review required.",
+        "Separate A4 portrait robot from generic robot-artist queries; describe drawing time, surface setup and final artifact."
+      ]
+    }
+  ]
+}

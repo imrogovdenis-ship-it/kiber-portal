@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-mini-robo-kofeyni",
+  "canonicalPath": "/robots/arenda-mini-robo-kofeyni/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-mini-robo-kofeyni/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "мини Robo-Кофейня",
+    "sourceName": "мини робо-кофейни",
+    "modelName": "мини Robo-Кофейня",
+    "brand": "мини",
+    "category": {
+      "primary": "coffee_robot",
+      "labels": [
+        "coffee_robot"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed periods from live Wordstat evidence",
+      "region": "all",
+      "queries": {
+        "мини робо кофейня аренда": 0,
+        "аренда мини робо кофейни": 0,
+        "мини робот кофейня": 0,
+        "мини робо кофейня": 0,
+        "кофейный робот аренда": 2
+      },
+      "evidence": "data/seo/wordstat-research/batch3-robot-cards-20260907/batch3-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "мини робо кофейня аренда",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "аренда мини робо кофейни",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "мини робот кофейня",
+          "total": 0,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "мини робо кофейня",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "кофейный робот аренда",
+          "total": 2,
+          "noResults": true
+        }
+      ],
+      "interpretation": "Exact rental intent stays on robot-card; generic/category demand supports FAQ/context, not replacing exact-model page intent."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch3-robot-cards-20260907/batch3-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "limitation": "Ranked SERP screenshots can be added later; current review records source/competitor-style content gaps honestly."
+    },
+    "contentGaps": [
+      "Exact robot-card must answer rental/event intent, not just product/source specs.",
+      "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+      "Do not invent unsupported capabilities or final availability; keep owner review required.",
+      "Position compact footprint and coffee/ice-cream module for smaller event zones; avoid claiming broad demand where exact rental volume is near zero."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда робо-кофейни мини робо-кофейни для мероприятий",
+    "metaDescription": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
+    "h1": "Аренда мини Robo-Кофейня",
+    "primaryKeyword": "аренда мини робо-кофейни",
+    "secondaryKeywords": [
+      "прокат мини робо-кофейни",
+      "заказать мини робо-кофейни на мероприятие",
+      "мини робо-кофейни для выставки",
+      "мини робо-кофейни для корпоративного мероприятия",
+      "сервисный робот для мероприятия",
+      "робот для HoReCa и промо-зоны"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда мини робо-кофейни",
+    "secondaryKeywords": [
+      "прокат мини робо-кофейни",
+      "заказать мини робо-кофейни на мероприятие",
+      "мини робо-кофейни для выставки",
+      "мини робо-кофейни для корпоративного мероприятия",
+      "сервисный робот для мероприятия",
+      "робот для HoReCa и промо-зоны"
+    ],
+    "modelNameVariants": [
+      "мини Robo-Кофейня",
+      "мини робо-кофейни"
+    ],
+    "entitySynonyms": [
+      "coffee_robot",
+      "робот для мероприятия",
+      "интерактивная зона"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 8,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

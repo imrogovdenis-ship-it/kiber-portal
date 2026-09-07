@@ -1,0 +1,13 @@
+{
+  "slug": "arenda-robo-kofeyni",
+  "status": "partial_checked",
+  "inspectedSources": [
+    "data/models/robots.source-of-truth.json"
+  ],
+  "contentGaps": [
+    "Exact robot-card must answer rental/event intent, not just product/source specs.",
+    "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+    "Do not invent unsupported capabilities or final availability; keep owner review required.",
+    "Explain coffee menu, water/power/logistics, guest throughput and staff handoff for event service."
+  ]
+}

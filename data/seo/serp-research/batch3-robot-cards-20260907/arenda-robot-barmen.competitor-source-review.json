@@ -1,0 +1,13 @@
+{
+  "slug": "arenda-robot-barmen",
+  "status": "partial_checked",
+  "inspectedSources": [
+    "data/models/robots.source-of-truth.json"
+  ],
+  "contentGaps": [
+    "Exact robot-card must answer rental/event intent, not just product/source specs.",
+    "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+    "Do not invent unsupported capabilities or final availability; keep owner review required.",
+    "Explain drink-menu setup, alcohol/non-alcohol boundary, operator and queue safety instead of only showing robot arm spectacle."
+  ]
+}
