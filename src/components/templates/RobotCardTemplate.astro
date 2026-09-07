@@ -42,9 +42,9 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
 const robotDisplayName = robotSlug === 'arenda-kettybot' ? 'KettyBot' : template.robot.name;
-const displayHeroTitle = robotSlug === 'arenda-kettybot' ? template.seo.h1 : heroTitle;
+const displayHeroTitle = template.seo.h1;
 const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
-const displayQuickCtaTitle = robotSlug === 'arenda-kettybot' ? `Арендуйте робота-официанта KettyBot для мероприятия ${template.robot.priceDisplay}` : quickCtaTitle;
+const displayQuickCtaTitle = `Арендуйте ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
 const quickCtaNoWrap = template.robot.priceDisplay;
 const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];

@@ -132,3 +132,13 @@ test('KIBER robot-card generation blocks wrong active data sources', () => {
   assert.match(dataSource, /Catalog\/Hero image leaked into curated gallery/);
   assert.match(dataSource, /Legacy Tilda hero\/background leaked into curated gallery/);
 });
+
+test('KIBER Batch 1 rendered H1 does not duplicate robot noun wording', () => {
+  for (const slug of slugs) {
+    const html = readFileSync(`dist/preview/kiber-94/robot-card/${slug}/index.html`, 'utf8');
+    const h1Match = html.match(/<h1[^>]*>(.*?)<\/h1>/s);
+    assert.ok(h1Match, `${slug} has rendered H1`);
+    const h1 = h1Match[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    assert.doesNotMatch(h1, /робота\s+робота/i, `${slug} H1 must not say “робота робота”`);
+  }
+});
