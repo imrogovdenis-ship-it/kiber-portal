@@ -31,16 +31,48 @@
       "rendered audit"
     ],
     "wordstatAnalysis": {
-      "status": "needs_live_verification",
-      "source": "pending_live_wordstat",
-      "period": null,
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed: commercial queries 06.08.2026–06.09.2026; entity queries 07.08.2026–05.09.2026 when results existed",
       "region": "all",
       "queries": {
-        "аренда Xiaomi CyberDog 2": null,
-        "Xiaomi CyberDog 2 аренда": null,
-        "прокат Xiaomi CyberDog 2": null
+        "аренда Xiaomi CyberDog 2": 0,
+        "Xiaomi CyberDog 2 аренда": 0,
+        "прокат Xiaomi CyberDog 2": 0,
+        "робот собака Xiaomi CyberDog 2": 3,
+        "CyberDog 2": 258
       },
-      "evidence": "not_collected_yet__must_use_live_wordstat_before_final_publication"
+      "evidence": "data/seo/wordstat-research/batch2-robot-cards-20260907/batch2-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда Xiaomi CyberDog 2",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "Xiaomi CyberDog 2 аренда",
+          "total": 0,
+          "noResults": true
+        },
+        {
+          "query": "прокат Xiaomi CyberDog 2",
+          "total": 0,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робот собака Xiaomi CyberDog 2",
+          "total": 3,
+          "noResults": true
+        },
+        {
+          "query": "CyberDog 2",
+          "total": 258,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on the robot-card even if query volume is low/zero; awareness/entity totals support FAQ/model variants, not generic category primary keywords."
     },
     "serpAnalysis": {
       "status": "needs_live_verification",
@@ -135,10 +167,11 @@
     "ownerReviewRequired": true,
     "readyForPublication": false,
     "readyForMassRender": false,
-    "wordstatStatus": "needs_live_verification",
+    "wordstatStatus": "checked_live",
     "serpStatus": "needs_live_verification",
     "openQuestions": [
-      "Confirm final visible copy and screenshots before merge/publication."
+      "Confirm final visible copy and screenshots before merge/publication.",
+      "SERP/competitor review and owner visual/content approval remain required before final publication."
     ]
   }
 }

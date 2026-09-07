@@ -12,7 +12,7 @@
     "arenda-xiaomi-cyberdog-2",
     "arenda-promobot-v4"
   ],
-  "wordstatStatus": "checked_live_for_kettybot_only__needs_live_verification_for_remaining_slugs",
+  "wordstatStatus": "checked_live_for_all_batch2_slugs",
   "serpStatus": "needs_live_verification_per_slug",
   "passports": [
     "data/seo/robot-card-passports/arenda-unitree-g1.robot-card-seo-passport.json",
@@ -30,5 +30,11 @@
     "liveLeadRoutingAllowed": false,
     "publicRouteReplacementAllowed": false,
     "massScalingBeyondBatchAllowed": false
+  },
+  "wordstatEvidence": "data/seo/wordstat-research/batch2-robot-cards-20260907/batch2-robot-cards.wordstat-summary.json plus docs/review/kiber-wordstat-kettybot-20260907/wordstat-kettybot-summary.json for KettyBot",
+  "wordstatInterpretation": {
+    "rule": "Keep exact-model commercial robot-card keywords even when commercial volume is zero/low; use entity demand only as support in variants/FAQ/seoIntent, not as generic primary intent.",
+    "commercialDemand": "Unitree G1 and Unitree Go2 show low exact rental demand; BellaBot, Xiaomi CyberDog 2 and Promobot V4 exact rental queries are zero in current Wordstat period; model/entity queries still show awareness demand.",
+    "periodNote": "Commercial/no-result pages showed 06.08.2026–06.09.2026; entity result pages showed 07.08.2026–05.09.2026 in the captured Wordstat UI."
   }
 }

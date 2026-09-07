@@ -31,16 +31,48 @@
       "rendered audit"
     ],
     "wordstatAnalysis": {
-      "status": "needs_live_verification",
-      "source": "pending_live_wordstat",
-      "period": null,
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed: commercial queries 06.08.2026–06.09.2026; entity queries 07.08.2026–05.09.2026 when results existed",
       "region": "all",
       "queries": {
-        "аренда Unitree G1": null,
-        "Unitree G1 аренда": null,
-        "прокат Unitree G1": null
+        "аренда Unitree G1": 15,
+        "Unitree G1 аренда": 15,
+        "прокат Unitree G1": 1,
+        "робот Unitree G1": 1070,
+        "Unitree G1": 2705
       },
-      "evidence": "not_collected_yet__must_use_live_wordstat_before_final_publication"
+      "evidence": "data/seo/wordstat-research/batch2-robot-cards-20260907/batch2-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда Unitree G1",
+          "total": 15,
+          "noResults": true
+        },
+        {
+          "query": "Unitree G1 аренда",
+          "total": 15,
+          "noResults": true
+        },
+        {
+          "query": "прокат Unitree G1",
+          "total": 1,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робот Unitree G1",
+          "total": 1070,
+          "noResults": false
+        },
+        {
+          "query": "Unitree G1",
+          "total": 2705,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on the robot-card even if query volume is low/zero; awareness/entity totals support FAQ/model variants, not generic category primary keywords."
     },
     "serpAnalysis": {
       "status": "needs_live_verification",
@@ -135,10 +167,11 @@
     "ownerReviewRequired": true,
     "readyForPublication": false,
     "readyForMassRender": false,
-    "wordstatStatus": "needs_live_verification",
+    "wordstatStatus": "checked_live",
     "serpStatus": "needs_live_verification",
     "openQuestions": [
-      "Confirm final visible copy and screenshots before merge/publication."
+      "Confirm final visible copy and screenshots before merge/publication.",
+      "SERP/competitor review and owner visual/content approval remain required before final publication."
     ]
   }
 }

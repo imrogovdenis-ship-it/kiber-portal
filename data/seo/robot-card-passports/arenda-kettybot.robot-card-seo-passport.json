@@ -40,7 +40,8 @@
         "KettyBot аренда": null,
         "робот-официант KettyBot": null
       },
-      "evidence": "docs/review/kiber-wordstat-kettybot-20260907/wordstat-kettybot-summary.json"
+      "evidence": "docs/review/kiber-wordstat-kettybot-20260907/wordstat-kettybot-summary.json",
+      "batch2EvidenceNote": "KettyBot was collected in an earlier live Wordstat pass and reused for Batch 2 sync."
     },
     "serpAnalysis": {
       "status": "needs_live_verification",
@@ -139,7 +140,8 @@
     "wordstatStatus": "checked_live",
     "serpStatus": "needs_live_verification",
     "openQuestions": [
-      "Confirm final visible copy and screenshots before merge/publication."
+      "Confirm final visible copy and screenshots before merge/publication.",
+      "SERP/competitor review and owner visual/content approval remain required before final publication."
     ]
   }
 }
