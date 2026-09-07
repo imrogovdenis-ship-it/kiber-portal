@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-agibot-x2",
+  "canonicalPath": "/robots/arenda-agibot-x2/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+  "approvedPilotContract": "KettyBot robot-card owner-approved pilot, merged in main PR #73 on 2026-09-07",
+  "robotEntity": {
+    "name": "Agibot X2",
+    "sourceName": "робота-гуманоида Agibot X2",
+    "modelName": "Agibot X2",
+    "brand": "Agibot",
+    "category": {
+      "primary": "humanoid",
+      "labels": [
+        "humanoid"
+      ],
+      "collectionSlugs": [
+        "roboty-gumanoidy"
+      ]
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "06.08.2026 – 06.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда Agibot X2": 0,
+        "Agibot X2 аренда": 0,
+        "прокат Agibot X2": 0,
+        "заказать Agibot X2": 0,
+        "робот Agibot X2": 8
+      },
+      "evidence": "data/seo/wordstat-research/batch1-humanoids-20260907/arenda-agibot-x2.wordstat-summary.json"
+    },
+    "serpAnalysis": {
+      "status": "checked_partial",
+      "evidence": "docs/review/kiber-batch1-humanoids-research-20260907/serp-competitors/arenda-agibot-x2.serp-competitors.json",
+      "searchResultCount": 20,
+      "directPageEvidenceCount": 8,
+      "limitation": "Direct/search HTML evidence is partial; blocked/empty engines are not treated as ranked SERP proof."
+    },
+    "contentGaps": [
+      "Exact commercial Wordstat спрос нулевой/низкий; карточка должна удерживать модельный коммерческий intent, а не забирать generic «аренда робота-гуманоида».",
+      "Partial search/direct evidence collected; use gaps cautiously and keep owner-review gate.",
+      "Показать практические сценарии аренды, требования площадки, состав сопровождения и безопасное ожидание возможностей без неподтверждённых технических обещаний."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Agibot X2 — робот-гуманоид для мероприятия",
+    "metaDescription": "Аренда Agibot X2 для выставки, презентации или события: подготовка сценария, настройка поведения и сопровождение команды КИБЕР ПОРТАЛ.",
+    "h1": "Аренда Agibot X2",
+    "primaryKeyword": "аренда Agibot X2",
+    "secondaryKeywords": [
+      "Agibot X2 аренда",
+      "прокат Agibot X2",
+      "заказать Agibot X2",
+      "робот Agibot X2"
+    ],
+    "longTailKeywords": [
+      "аренда Agibot X2 для выставки",
+      "аренда Agibot X2 для презентации",
+      "аренда Agibot X2 для мероприятия"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда Agibot X2",
+    "secondaryKeywords": [
+      "Agibot X2 аренда",
+      "прокат Agibot X2",
+      "заказать Agibot X2",
+      "робот Agibot X2"
+    ],
+    "modelNameVariants": [
+      "Agibot X2",
+      "Agibot X2",
+      "Agibot X2"
+    ],
+    "entitySynonyms": [
+      "робот-гуманоид",
+      "человекоподобный робот",
+      "робот для демонстраций",
+      "AI-гуманоид"
+    ],
+    "entity": {
+      "type": "Robot",
+      "name": "Agibot X2",
+      "commercialAction": "rent"
+    },
+    "aiAgentHints": [
+      "This is a model-specific robot rental card, not a generic humanoid compilation.",
+      "Keep generic humanoid/category demand for compilation/article pages.",
+      "Use source-verified capabilities and separate capability images only."
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "blockMap": {
+    "hero": [
+      "seo.h1",
+      "pricing",
+      "hero catalog image /images/kiber-45/<slug>.webp"
+    ],
+    "aiSummary": "short visible commercial summary, no research terms",
+    "gallery": "approved upper gallery from media-rights/source archive, no legacy hero",
+    "includedService": "01 — что входит",
+    "capabilities": "02 — key capabilities from data/models/robot-capability-images.source.json",
+    "scenarios": "03 — сценарии использования",
+    "robotInAction": "04 — lower/action gallery",
+    "goshaQuote": "individual visible Кибер Гоша quote",
+    "faq": "model-specific public FAQ",
+    "seoIntent": "rendered application/json data-block-id=seoIntent"
+  },
+  "media": {
+    "capabilityRegistryImagesCount": 12,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryContract": "height-driven proportional width, no square/crop, no visible captions"
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "checked_partial",
+    "openQuestions": [
+      "Confirm model-specific claims/capabilities before public copy."
+    ]
+  }
+}
