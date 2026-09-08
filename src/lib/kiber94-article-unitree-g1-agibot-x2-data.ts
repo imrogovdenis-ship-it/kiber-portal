@@ -84,12 +84,12 @@ export function buildUnitreeG1AgibotX2Article(robots: ArticleRobotCard[]): Artic
         description: 'В сравнении важны не только названия моделей. Посмотрите кадры из галерей самих роботов: где-то робот собирает внимание у стенда, где-то показывает жест, движение или контакт с человеком.',
         sliderId: 'unitree-g1-agibot-x2-gallery',
         images: [
-          { src: '/images/tild6333-3137-4465-b265-323436646539__06.jpg', alt: 'Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ', title: 'Unitree G1 на стенде' },
-          { src: '/images/tild6664-3537-4635-a266-633164383463__05.jpg', alt: 'Agibot X2 общается с посетителями выставки рядом со стендом', title: 'Agibot X2 с посетителями' },
-          { src: '/images/tild6664-3237-4964-b364-616162363835__08.jpg', alt: 'Unitree G1 сидит в магазине одежды и держит кроссовок как участник промо-зоны', title: 'Unitree G1 в промо-зоне' },
-          { src: '/images/tild3730-3866-4365-b461-336133633866__01.jpg', alt: 'Agibot X2 рядом с человеком поднимает руку для совместного кадра', title: 'Agibot X2 для фотомомента' },
-          { src: '/images/tild6262-6336-4038-a130-626264326663__02.jpg', alt: 'Unitree G1 бежит на нейтральном фоне и демонстрирует динамичное движение', title: 'Unitree G1 в движении' },
-          { src: '/images/tild3063-6333-4161-b064-343764636537__011.jpg', alt: 'Agibot X2 танцует на сером фоне во время демонстрации', title: 'Agibot X2 танцует' },
+          { src: '/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-nizhfarm-handshake.webp', alt: 'Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ', title: 'Unitree G1 на стенде' },
+          { src: '/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-exhibition-visitors.webp', alt: 'Agibot X2 общается с посетителями выставки рядом со стендом', title: 'Agibot X2 с посетителями' },
+          { src: '/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-promo-store.webp', alt: 'Unitree G1 сидит в магазине одежды и держит кроссовок как участник промо-зоны', title: 'Unitree G1 в промо-зоне' },
+          { src: '/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-human-photo.webp', alt: 'Agibot X2 рядом с человеком поднимает руку для совместного кадра', title: 'Agibot X2 для фотомомента' },
+          { src: '/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-running.webp', alt: 'Unitree G1 бежит на нейтральном фоне и демонстрирует динамичное движение', title: 'Unitree G1 в движении' },
+          { src: '/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-dancing.webp', alt: 'Agibot X2 танцует на сером фоне во время демонстрации', title: 'Agibot X2 танцует' },
         ],
       },
       comparison: {
