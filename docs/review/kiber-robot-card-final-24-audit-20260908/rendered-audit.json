@@ -1,0 +1,500 @@
+{
+  "batch": "all-24-robot-cards-final-rendered-audit",
+  "commit": "8c0a6d0eda976096e7236cafa1367c9054683bb4",
+  "generatedAt": "2026-09-08T06:21:54+00:00",
+  "scope": "preview rendered pages for owner visual/content review",
+  "total": 24,
+  "passed": 24,
+  "failed": 0,
+  "results": [
+    {
+      "slug": "arenda-agibot-x2",
+      "path": "/preview/kiber-94/robot-card/arenda-agibot-x2/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-agibot-x2/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-bellabot",
+      "path": "/preview/kiber-94/robot-card/arenda-bellabot/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-bellabot/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-glambot",
+      "path": "/preview/kiber-94/robot-card/arenda-glambot/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-glambot/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "path": "/preview/kiber-94/robot-card/arenda-inchbot-l1-w-edu/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-inchbot-l1-w-edu/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-kettybot",
+      "path": "/preview/kiber-94/robot-card/arenda-kettybot/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-kettybot/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "path": "/preview/kiber-94/robot-card/arenda-klipmeiker/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-klipmeiker/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "path": "/preview/kiber-94/robot-card/arenda-mini-robo-kofeyni/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-mini-robo-kofeyni/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "path": "/preview/kiber-94/robot-card/arenda-noetix-bumi/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-noetix-bumi/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "path": "/preview/kiber-94/robot-card/arenda-promobot-v4/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-promobot-v4/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "path": "/preview/kiber-94/robot-card/arenda-robo-kofeyni/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-robo-kofeyni/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "path": "/preview/kiber-94/robot-card/arenda-roboshashki/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-roboshashki/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-robot-barmen",
+      "path": "/preview/kiber-94/robot-card/arenda-robot-barmen/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-robot-barmen/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "path": "/preview/kiber-94/robot-card/arenda-robota-ardi/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-robota-ardi/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "path": "/preview/kiber-94/robot-card/arenda-robota-hudozhnika-a4/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-robota-hudozhnika-a4/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "path": "/preview/kiber-94/robot-card/arenda-robota-sofiya/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-robota-sofiya/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "path": "/preview/kiber-94/robot-card/arenda-robota-tron/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-robota-tron/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-senserobot",
+      "path": "/preview/kiber-94/robot-card/arenda-senserobot/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-senserobot/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "path": "/preview/kiber-94/robot-card/arenda-sketchbot/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-sketchbot/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-unitree-g1",
+      "path": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "path": "/preview/kiber-94/robot-card/arenda-unitree-go2/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-unitree-go2/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "path": "/preview/kiber-94/robot-card/arenda-unitree-h2/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-unitree-h2/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "path": "/preview/kiber-94/robot-card/arenda-unitree-r1/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-unitree-r1/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-uv-box",
+      "path": "/preview/kiber-94/robot-card/arenda-uv-box/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-uv-box/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "path": "/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/",
+      "url": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/",
+      "checks": {
+        "noInternalResearchTextInVisibleCopy": true,
+        "oneH1": true,
+        "seoIntentPresent": true,
+        "heroCtaMessengerPopup": true,
+        "galleryNoKiber45": true,
+        "galleryNoLegacyHero": true,
+        "galleryNoCapabilityImages": true,
+        "capabilityImagesFromRegistry": true,
+        "capabilityCardsCount": 6,
+        "scenarioCardsCount": 6,
+        "faqItemsCount": 8,
+        "passed": true
+      },
+      "failures": []
+    }
+  ],
+  "boundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "publicRouteReplacementAllowed": false,
+    "mergeRequired": true
+  }
+}
