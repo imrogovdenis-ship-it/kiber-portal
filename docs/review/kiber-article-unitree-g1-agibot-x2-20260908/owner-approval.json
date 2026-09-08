@@ -1,0 +1,51 @@
+{
+  "status": "approved",
+  "approvalType": "visual_content_owner_review",
+  "approvedBy": "Александр Маркин",
+  "approvedAt": "2026-09-08",
+  "ownerQuote": "Работает!Утверждаем эту страницу.",
+  "scope": {
+    "project": "KIBER PORTAL",
+    "pageType": "article_detail",
+    "article": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать для мероприятия",
+    "previewRoute": "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "stagingUrl": "https://alex-kiber-staging.38.180.37.42.sslip.io/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "pullRequest": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/81",
+    "branch": "feat/kiber-article-unitree-g1-agibot-x2-20260908",
+    "approvedHeadSha": "7a8d0b74b4aa1b433b6f1b3ecbceae78424e85f1"
+  },
+  "includes": [
+    "visible article copy and block composition as rendered on staging at approvedHeadSha",
+    "gallery drag behavior after owner confirmation",
+    "article media selection/rendering as shown in the preview",
+    "SEO component package for this draft article, with preview noindex boundary"
+  ],
+  "notApprovedByThisRecord": [
+    "PR merge",
+    "production deploy",
+    "DNS/cutover",
+    "production secrets/configuration",
+    "analytics provider scripts/IDs",
+    "dynamic form runtime /api/leads",
+    "live amoCRM or Telegram lead routing",
+    "public route replacement/canonical launch",
+    "mass generation of other articles",
+    "assembling /articles/ index before all six articles are approved"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsProviderChanged": false,
+    "dynamicFormRuntimeChanged": false,
+    "liveLeadRoutingChanged": false,
+    "publicRouteReplacementChanged": false
+  },
+  "verificationBeforeApproval": {
+    "npmRunCi": "PASS",
+    "githubCiValidate": "PASS",
+    "stagingContainer": "healthy",
+    "stagingNoindex": true,
+    "ownerConfirmedGalleryDragWorks": true
+  }
+}

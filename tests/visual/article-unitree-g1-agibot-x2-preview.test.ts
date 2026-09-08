@@ -25,3 +25,20 @@ test('article #1 gallery keeps robot-prefixed slider id for cached/reference dra
   assert.match(sliderScript, /mousedown/);
   assert.match(sliderScript, /scrollLeft = startScroll - dx/);
 });
+
+
+test('owner approval record for article #1 is scoped and keeps launch gates closed', () => {
+  const approval = JSON.parse(readFileSync('docs/review/kiber-article-unitree-g1-agibot-x2-20260908/owner-approval.json', 'utf8'));
+  assert.equal(approval.status, 'approved');
+  assert.equal(approval.approvalType, 'visual_content_owner_review');
+  assert.equal(approval.scope.pullRequest, 'https://github.com/imrogovdenis-ship-it/kiber-portal/pull/81');
+  assert.equal(approval.scope.previewRoute, '/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/');
+  assert.equal(approval.verificationBeforeApproval.ownerConfirmedGalleryDragWorks, true);
+  for (const boundary of ['PR merge', 'production deploy', 'DNS/cutover', 'public route replacement/canonical launch', 'mass generation of other articles']) {
+    assert.ok(approval.notApprovedByThisRecord.includes(boundary), `${boundary} must remain excluded`);
+  }
+  assert.equal(approval.safety.productionDeployChanged, false);
+  assert.equal(approval.safety.dnsChanged, false);
+  assert.equal(approval.safety.secretsChanged, false);
+  assert.equal(approval.safety.liveLeadRoutingChanged, false);
+});
