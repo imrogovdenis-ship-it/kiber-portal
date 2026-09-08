@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-51",
-  "generatedAt": "2026-09-06T13:52:35.681Z",
-  "launchRoutesChecked": 31,
+  "generatedAt": "2026-09-08T08:58:08.051Z",
+  "launchRoutesChecked": 36,
   "site": "https://www.kiber-portal.ru",
   "checks": [
     "canonical",
@@ -242,10 +242,13 @@
     },
     {
       "path": "/roboty-gumanoidy/",
-      "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
-      "h1": "Роботы-гуманоиды, которые держат внимание",
+      "title": "Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида для мероприятий",
       "jsonLdTypes": [
-        "CollectionPage"
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
       ]
     },
     {
@@ -273,11 +276,69 @@
       ]
     },
     {
-      "path": "/news/",
-      "title": "Новости робототехники — КИБЕР ПОРТАЛ",
-      "h1": "Новости",
+      "path": "/articles/robot-gumanoid-dlya-vystavki/",
+      "title": "Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ",
+      "h1": "Робот-гуманоид для выставки: как использовать на стенде",
       "jsonLdTypes": [
-        "CollectionPage"
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "title": "Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Как выбрать робота-гуманоида для мероприятия",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "title": "Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ",
+      "h1": "Unitree G1, R1 и H2: сравнение для аренды",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "title": "Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ",
+      "h1": "Promobot или гуманоид для презентации: что выбрать",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/robot-gumanoid-na-korporativ/",
+      "title": "Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ",
+      "h1": "Робот-гуманоид на корпоратив: сценарии и подготовка",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "title": "Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ",
+      "h1": "Сколько стоит аренда робота-гуманоида",
+      "jsonLdTypes": [
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
       ]
     },
     {

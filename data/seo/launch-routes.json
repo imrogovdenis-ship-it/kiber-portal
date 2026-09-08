@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "site": "https://www.kiber-portal.ru",
-  "description": "KIBER-43/KIBER-45 controlled rebuild launch route registry. Robot detail pages render through one /robots/[slug]/ template; preview, 404, thank-you and redirect source URLs are excluded from sitemap.",
+  "description": "KIBER fast launch route registry: homepage, 24 robot cards, one live humanoid compilation, six humanoid articles, contacts/forms/legal; empty placeholders are excluded from sitemap.",
   "routes": [
     {
       "path": "/",
@@ -284,12 +284,67 @@
       "template": "articles-index"
     },
     {
-      "path": "/news/",
+      "path": "/articles/robot-gumanoid-dlya-vystavki/",
       "status": "launch",
       "sitemap": true,
+      "priority": 0.72,
+      "changefreq": "weekly",
+      "template": "article-detail",
+      "launchCluster": "humanoids"
+    },
+    {
+      "path": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.72,
+      "changefreq": "weekly",
+      "template": "article-detail",
+      "launchCluster": "humanoids"
+    },
+    {
+      "path": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.72,
+      "changefreq": "weekly",
+      "template": "article-detail",
+      "launchCluster": "humanoids"
+    },
+    {
+      "path": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "weekly",
+      "template": "article-detail",
+      "launchCluster": "humanoids"
+    },
+    {
+      "path": "/articles/robot-gumanoid-na-korporativ/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "weekly",
+      "template": "article-detail",
+      "launchCluster": "humanoids"
+    },
+    {
+      "path": "/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "weekly",
+      "template": "article-detail",
+      "launchCluster": "humanoids"
+    },
+    {
+      "path": "/news/",
+      "status": "available-not-sitemap",
+      "sitemap": false,
       "priority": 0.6,
       "changefreq": "weekly",
-      "template": "news-index"
+      "template": "news-index",
+      "reason": "News index is deferred from fast launch scope until real news content is ready."
     },
     {
       "path": "/contacts/",

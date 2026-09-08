@@ -779,19 +779,133 @@
       }
     },
     {
-      "id": "page:/news/",
+      "id": "page:/articles/robot-gumanoid-dlya-vystavki/",
       "type": "launch_page",
-      "route": "/news/",
-      "template": "news-index",
+      "route": "/articles/robot-gumanoid-dlya-vystavki/",
       "structuralStatus": "accepted_structurally",
       "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasH1": true
+      },
       "reviewFlags": [
-        "needs_editorial_content_review",
         "needs_human_final_content_approval",
         "owner_structural_approval_not_final_business_legal"
       ],
       "approval": {
-        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "type": "launch_page",
+      "route": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasH1": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "type": "launch_page",
+      "route": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasH1": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "type": "launch_page",
+      "route": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasH1": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/robot-gumanoid-na-korporativ/",
+      "type": "launch_page",
+      "route": "/articles/robot-gumanoid-na-korporativ/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasH1": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
+        "evidenceRequired": true,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "type": "launch_page",
+      "route": "/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "checks": {
+        "hasTitle": true,
+        "hasDescription": true,
+        "hasCanonical": true,
+        "hasH1": true
+      },
+      "reviewFlags": [
+        "needs_human_final_content_approval",
+        "owner_structural_approval_not_final_business_legal"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal/media reviewer",
         "evidenceRequired": true,
         "approvedAt": null
       }

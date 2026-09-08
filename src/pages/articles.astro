@@ -2,13 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
-import { homeArticles, homeRobotCardFinalCta } from '../data/home-live';
+import { homeRobotCardFinalCta } from '../data/home-live';
+import { launchArticleCards } from '../lib/kiber94-launch-articles-data';
 import { reviewHref, reviewLinksAreEnabled } from '../lib/review-links';
 import { collectionPageJsonLd } from '../lib/seo';
 
-const articleCards = homeArticles.cards;
-const articlesPageDescription = homeArticles.description;
-const articleIntro = 'В блоге Кибер Гоши собираем практические материалы о том, как выбрать робота под формат мероприятия, чем отличаются гуманоиды, роботы-собаки и сервисные модели, и какие детали важно обсудить до аренды. Этот блок позже адаптируем под SEO: добавим точные запросы, перелинковку и фильтры по сценариям.';
+const articleCards = launchArticleCards;
+const articlesPageDescription = 'Шесть практических статей о роботах-гуманоидах для выставок, презентаций, корпоративов и подбора бюджета.';
+const articleIntro = 'В Блоге Кибер Гоши собрали шесть практических материалов о роботах-гуманоидах: как выбрать модель для выставки, презентации, корпоратива и как заранее понять бюджет аренды.';
 ---
 
 <BaseLayout

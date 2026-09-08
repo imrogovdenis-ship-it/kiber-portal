@@ -63,8 +63,8 @@
         "docs/review/kiber-43/route-sitemap-report.json"
       ],
       "assertions": [
-        "37 launch routes checked.",
-        "31 sitemap URLs expected.",
+        "43 launch routes checked.",
+        "36 sitemap URLs expected.",
         "24 robot detail routes present."
       ]
     },

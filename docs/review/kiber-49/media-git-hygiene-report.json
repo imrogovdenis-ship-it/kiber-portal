@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-49",
   "status": "passed_lfs_migrated",
-  "generatedAt": "2026-09-06T13:52:49.734Z",
+  "generatedAt": "2026-09-08T08:58:22.961Z",
   "policy": {
     "runtimePublicImageMaxBytes": 204800,
     "runtimeFormatsAllowed": [
@@ -21,10 +21,10 @@
   "gitLfsAvailable": true,
   "gitLfsTrackedFiles": 510,
   "summary": {
-    "trackedMediaFiles": 990,
-    "trackedMediaBytes": 233480817,
-    "publicRuntimeImages": 193,
-    "publicRuntimeImageBytes": 6111625,
+    "trackedMediaFiles": 1233,
+    "trackedMediaBytes": 247961280,
+    "publicRuntimeImages": 396,
+    "publicRuntimeImageBytes": 13919663,
     "publicRuntimeLargestImageBytes": 196122,
     "trackedReviewOriginals": 510,
     "trackedReviewOriginalBytes": 102127050,

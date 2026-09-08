@@ -27,8 +27,8 @@ const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8
 
 test('KIBER-91 articles index is filled from approved homepage article data', () => {
   assert.doesNotMatch(page, /Здесь будут практические статьи/);
-  assert.match(page, /import \{ homeArticles, homeRobotCardFinalCta \}/);
-  assert.match(page, /const articleCards = homeArticles\.cards/);
+  assert.match(page, /import \{ launchArticleCards \}/);
+  assert.match(page, /const articleCards = launchArticleCards/);
   assert.match(page, /<h1 id="page-title">Блог Кибер Гоши<\/h1>/);
   assert.doesNotMatch(page, /<h1 id="page-title">\{homeArticles\.title\}<\/h1>/);
   assert.doesNotMatch(page, /<section class="articles-page__hero container"[\s\S]*\{articlesPageDescription\}[\s\S]*<\/section>/);
@@ -42,7 +42,7 @@ test('KIBER-91 articles index is filled from approved homepage article data', ()
 test('KIBER-91 articles index has intro block, article feed and bottom CTA in order', () => {
   assert.match(page, /class="articles-page__intro container"/);
   assert.match(page, /Все практические статьи о роботах в одном месте/);
-  assert.match(page, /который позже нужно будет адаптировать по SEO|позже адаптируем под SEO/);
+  assert.doesNotMatch(page, /позже нужно будет адаптировать по SEO|позже адаптируем под SEO/);
   const introCss = cssBlock('.articles-page__intro-copy');
   assert.doesNotMatch(introCss, /background:\s*var\(--kp-white\)/);
   assert.doesNotMatch(introCss, /box-shadow:/);
