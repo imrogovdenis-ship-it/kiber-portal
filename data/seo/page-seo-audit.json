@@ -3,9 +3,9 @@
   "issue": "KIBER-93",
   "status": "warning",
   "summary": {
-    "routesChecked": 37,
+    "routesChecked": 43,
     "passed": 0,
-    "warnings": 37,
+    "warnings": 43,
     "failed": 0
   },
   "routes": [
@@ -4685,27 +4685,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ"
+          "message": "Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
           "status": "warning",
-          "message": "rendered='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'"
+          "message": "rendered='Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "117 chars"
+          "message": "153 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Роботы-гуманоиды, которые держат внимание']"
+          "message": "1 H1: ['Аренда робота-гуманоида для мероприятий']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'"
+          "message": "rendered='Аренда робота-гуманоида для мероприятий'; passport='Гуманоидные роботы для мероприятий'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "8 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -4713,7 +4713,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "8503 visible chars; target 500"
+          "message": "16894 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -4757,15 +4757,15 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: CollectionPage"
+          "message": "present: BreadcrumbList, CollectionPage, FAQPage"
         },
         "breadcrumbs": {
-          "status": "warning",
-          "message": "visible breadcrumbs missing"
+          "status": "pass",
+          "message": "present or not required"
         },
         "internalLinks": {
           "status": "pass",
-          "message": "24 internal hrefs"
+          "message": "34 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -4821,29 +4821,30 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "1 AI related pages; 24 rendered internal links"
+          "message": "1 AI related pages; 34 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "titleMatchesPassport: rendered='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'",
-        "h1MatchesPassport: rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'",
+        "titleMatchesPassport: rendered='Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида для мероприятий'; passport='Гуманоидные роботы для мероприятий'",
         "primaryKeywordInTitle: primary='аренда роботов для мероприятий'",
         "primaryKeywordInH1: primary='аренда роботов для мероприятий'",
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
         "secondaryKeywords: missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события",
-        "breadcrumbs: visible breadcrumbs missing",
         "faqQuestions: 0 FAQ questions"
       ],
       "rendered": {
-        "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
-        "description": "Подборка гуманоидных роботов для мероприятий, выставочных стендов, презентаций, встреч гостей и интерактивного промо.",
-        "h1": "Роботы-гуманоиды, которые держат внимание",
-        "h2Count": 8,
+        "title": "Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ",
+        "description": "Аренда робота-гуманоида на мероприятие: Unitree G1, R1, H2, Agibot X2 и Noetix Bumi. Сравнение моделей, сценарии, оператор и доставка по Москве и России.",
+        "h1": "Аренда робота-гуманоида для мероприятий",
+        "h2Count": 13,
         "schemaTypes": [
-          "CollectionPage"
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
         ],
-        "visibleTextChars": 8503
+        "visibleTextChars": 16894
       }
     },
     {
@@ -5276,7 +5277,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "8140 visible chars; target 500"
+          "message": "8018 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -5404,7 +5405,7 @@
         "schemaTypes": [
           "CollectionPage"
         ],
-        "visibleTextChars": 8140
+        "visibleTextChars": 8018
       }
     },
     {
@@ -5422,7 +5423,7 @@
         },
         "robotsMeta": {
           "status": "pass",
-          "message": "expected index, follow, got index, follow"
+          "message": "expected noindex, nofollow, got noindex, nofollow"
         },
         "canonical": {
           "status": "pass",
@@ -5430,7 +5431,7 @@
         },
         "sitemapInclusion": {
           "status": "pass",
-          "message": "in sitemap=True, indexable=True"
+          "message": "in sitemap=False, indexable=False"
         },
         "title": {
           "status": "pass",
@@ -6893,6 +6894,1122 @@
           "WebPage"
         ],
         "visibleTextChars": 2319
+      }
+    },
+    {
+      "slug": "/articles/robot-gumanoid-dlya-vystavki/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/robot-gumanoid-dlya-vystavki/, got https://www.kiber-portal.ru/articles/robot-gumanoid-dlya-vystavki/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ'; passport='Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "148 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Робот-гуманоид для выставки: как использовать на стенде']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Робот-гуманоид для выставки: как использовать на стенде'; passport='Робот-гуманоид для выставки: как использовать на стенде'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "16369 visible chars; target 1800"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='робот-гуманоид для выставки'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='робот-гуманоид для выставки'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='робот-гуманоид для выставки'"
+        },
+        "secondaryKeywords": {
+          "status": "pass",
+          "message": "all found"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "warning",
+          "message": "missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "29 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "158 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робот-гуманоид для выставки, робот для выставочного стенда, гуманоид на стенд, робот для презентации продукта"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "4 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "4 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 29 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ",
+        "description": "Как робот-гуманоид помогает на выставке: привлекает внимание к стенду, встречает гостей, поддерживает презентацию и собирает заявки через менеджера.",
+        "h1": "Робот-гуманоид для выставки: как использовать на стенде",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
+        ],
+        "visibleTextChars": 16369
+      }
+    },
+    {
+      "slug": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/, got https://www.kiber-portal.ru/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ'; passport='Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "128 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Как выбрать робота-гуманоида для мероприятия']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Как выбрать робота-гуманоида для мероприятия'; passport='Как выбрать робота-гуманоида для мероприятия'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "16259 visible chars; target 1800"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='как выбрать робота-гуманоида'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='как выбрать робота-гуманоида'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='как выбрать робота-гуманоида'"
+        },
+        "secondaryKeywords": {
+          "status": "pass",
+          "message": "all found"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "warning",
+          "message": "missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "29 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "181 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, как выбрать робота-гуманоида, робот-гуманоид на мероприятие, аренда человекоподобного робота, какой гуманоид выбрать"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "4 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "4 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 29 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ",
+        "description": "Понятный гид по выбору робота-гуманоида для события: площадка, сценарий, аудитория, безопасность, автономность и роль оператора.",
+        "h1": "Как выбрать робота-гуманоида для мероприятия",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
+        ],
+        "visibleTextChars": 16259
+      }
+    },
+    {
+      "slug": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/, got https://www.kiber-portal.ru/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ'; passport='Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "121 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Unitree G1, R1 и H2: сравнение для аренды']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1, R1 и H2: сравнение для аренды'; passport='Unitree G1, R1 и H2: сравнение для аренды'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "16053 visible chars; target 1800"
+        },
+        "primaryKeywordInTitle": {
+          "status": "warning",
+          "message": "primary='Unitree G1 R1 H2 сравнение'"
+        },
+        "primaryKeywordInH1": {
+          "status": "warning",
+          "message": "primary='Unitree G1 R1 H2 сравнение'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "warning",
+          "message": "primary='Unitree G1 R1 H2 сравнение'"
+        },
+        "secondaryKeywords": {
+          "status": "pass",
+          "message": "all found"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "warning",
+          "message": "missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "29 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "153 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, Unitree G1 R1 H2 сравнение, Unitree G1 аренда, Unitree R1 аренда, Unitree H2 аренда"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "4 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "4 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 29 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "primaryKeywordInTitle: primary='Unitree G1 R1 H2 сравнение'",
+        "primaryKeywordInH1: primary='Unitree G1 R1 H2 сравнение'",
+        "primaryKeywordInFirstBlock: primary='Unitree G1 R1 H2 сравнение'",
+        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ",
+        "description": "Сравниваем Unitree G1, R1 и H2 для аренды на мероприятия: рост, автономность, эффект на площадке, сценарии и ограничения.",
+        "h1": "Unitree G1, R1 и H2: сравнение для аренды",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
+        ],
+        "visibleTextChars": 16053
+      }
+    },
+    {
+      "slug": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/promobot-ili-gumanoid-dlya-prezentatsii/, got https://www.kiber-portal.ru/articles/promobot-ili-gumanoid-dlya-prezentatsii/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ'; passport='Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "127 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Promobot или гуманоид для презентации: что выбрать']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Promobot или гуманоид для презентации: что выбрать'; passport='Promobot или гуманоид для презентации: что выбрать'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "16655 visible chars; target 1800"
+        },
+        "primaryKeywordInTitle": {
+          "status": "warning",
+          "message": "primary='робот для презентации'"
+        },
+        "primaryKeywordInH1": {
+          "status": "warning",
+          "message": "primary='робот для презентации'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "warning",
+          "message": "primary='робот для презентации'"
+        },
+        "secondaryKeywords": {
+          "status": "pass",
+          "message": "all found"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "warning",
+          "message": "missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "29 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "121 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робот для презентации, Promobot для презентации, гуманоид для презентации, робот на презентацию продукта"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "4 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "4 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 29 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "primaryKeywordInTitle: primary='робот для презентации'",
+        "primaryKeywordInH1: primary='робот для презентации'",
+        "primaryKeywordInFirstBlock: primary='робот для презентации'",
+        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ",
+        "description": "Когда для презентации лучше Promobot V4, а когда человекоподобный робот: сравниваем диалог, сценический эффект и задачи гостей.",
+        "h1": "Promobot или гуманоид для презентации: что выбрать",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
+        ],
+        "visibleTextChars": 16655
+      }
+    },
+    {
+      "slug": "/articles/robot-gumanoid-na-korporativ/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/robot-gumanoid-na-korporativ/, got https://www.kiber-portal.ru/articles/robot-gumanoid-na-korporativ/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ'; passport='Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "146 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Робот-гуманоид на корпоратив: сценарии и подготовка']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Робот-гуманоид на корпоратив: сценарии и подготовка'; passport='Робот-гуманоид на корпоратив: сценарии и подготовка'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "16548 visible chars; target 1800"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='робот-гуманоид на корпоратив'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='робот-гуманоид на корпоратив'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='робот-гуманоид на корпоратив'"
+        },
+        "secondaryKeywords": {
+          "status": "pass",
+          "message": "all found"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "warning",
+          "message": "missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "29 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "145 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, робот-гуманоид на корпоратив, робот на корпоратив, гуманоид для корпоратива, робот для праздника компании"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "4 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "4 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 29 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ",
+        "description": "Как использовать робота-гуманоида на корпоративе: встреча гостей, сценический выход, фотозона, вручение подарков и безопасная подготовка площадки.",
+        "h1": "Робот-гуманоид на корпоратив: сценарии и подготовка",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
+        ],
+        "visibleTextChars": 16548
+      }
+    },
+    {
+      "slug": "/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/skolko-stoit-arenda-robota-gumanoida/, got https://www.kiber-portal.ru/articles/skolko-stoit-arenda-robota-gumanoida/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ'; passport='Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "123 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Сколько стоит аренда робота-гуманоида']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Сколько стоит аренда робота-гуманоида'; passport='Сколько стоит аренда робота-гуманоида'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "16622 visible chars; target 1800"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='сколько стоит аренда робота-гуманоида'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='сколько стоит аренда робота-гуманоида'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='сколько стоит аренда робота-гуманоида'"
+        },
+        "secondaryKeywords": {
+          "status": "pass",
+          "message": "all found"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "warning",
+          "message": "missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "29 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "150 chars"
+        },
+        "entityClarity": {
+          "status": "pass",
+          "message": "entities: КИБЕР ПОРТАЛ, сколько стоит аренда робота-гуманоида, цена аренды робота-гуманоида, стоимость робота на мероприятие, аренда гуманоида цена"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "4 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "pass",
+          "message": "2 claims; bad sources: []"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "4 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 29 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "requiredSchemaTypes: missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ",
+        "description": "От чего зависит стоимость аренды робота-гуманоида: модель, длительность, программа, логистика, оператор и условия площадки.",
+        "h1": "Сколько стоит аренда робота-гуманоида",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage"
+        ],
+        "visibleTextChars": 16622
       }
     }
   ],

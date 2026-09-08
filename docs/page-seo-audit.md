@@ -2,7 +2,7 @@
 
 Status: **warning / KIBER-93 owner-approved complete**
 
-Checked: 37 routes; pass: 0; warnings: 37; failed: 0
+Checked: 43 routes; pass: 0; warnings: 43; failed: 0
 
 Remediation backlog: **3 tasks** in `data/seo/page-seo-remediation-backlog.json` and `docs/page-seo-remediation-backlog.md`
 
@@ -1070,14 +1070,14 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `robotsMeta` — expected index, follow, got index, follow
 - ✅ `canonical` — expected https://www.kiber-portal.ru/roboty-gumanoidy/, got https://www.kiber-portal.ru/roboty-gumanoidy/
 - ✅ `sitemapInclusion` — in sitemap=True, indexable=True
-- ✅ `title` — Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ
-- ⚠️ `titleMatchesPassport` — rendered='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'
-- ✅ `description` — 117 chars
-- ✅ `h1Count` — 1 H1: ['Роботы-гуманоиды, которые держат внимание']
-- ⚠️ `h1MatchesPassport` — rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'
-- ✅ `h2Present` — 8 H2
+- ✅ `title` — Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ
+- ⚠️ `titleMatchesPassport` — rendered='Аренда робота-гуманоида в Москве для мероприятий | КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'
+- ✅ `description` — 153 chars
+- ✅ `h1Count` — 1 H1: ['Аренда робота-гуманоида для мероприятий']
+- ⚠️ `h1MatchesPassport` — rendered='Аренда робота-гуманоида для мероприятий'; passport='Гуманоидные роботы для мероприятий'
+- ✅ `h2Present` — 13 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 8503 visible chars; target 500
+- ✅ `usefulText` — 16894 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='аренда роботов для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='аренда роботов для мероприятий'
@@ -1088,9 +1088,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `ogImage` — present
 - ✅ `twitterCard` — present
 - ✅ `jsonLdValid` — invalid scripts=0
-- ✅ `requiredSchemaTypes` — present: CollectionPage
-- ⚠️ `breadcrumbs` — visible breadcrumbs missing
-- ✅ `internalLinks` — 24 internal hrefs
+- ✅ `requiredSchemaTypes` — present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 34 internal hrefs
 - ✅ `cta` — conversion/contact path present
 - ✅ `viewport` — width=device-width, initial-scale=1
 - ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
@@ -1104,7 +1104,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `markdownAlternateOrLlmsEntry` — markdown alternate present or covered by llms.txt
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
-- ✅ `internalEntityLinks` — 1 AI related pages; 24 rendered internal links
+- ✅ `internalEntityLinks` — 1 AI related pages; 34 rendered internal links
 
 ### /roboty-sobaki/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
@@ -1203,7 +1203,7 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `h1MatchesPassport` — rendered='Блог Кибер Гоши'; passport='Блог Кибер Гоши'
 - ✅ `h2Present` — 5 H2
 - ✅ `headingHierarchy` — no heading level jumps
-- ✅ `usefulText` — 8140 visible chars; target 500
+- ✅ `usefulText` — 8018 visible chars; target 500
 - ⚠️ `primaryKeywordInTitle` — primary='статьи о роботах для мероприятий'
 - ⚠️ `primaryKeywordInH1` — primary='статьи о роботах для мероприятий'
 - ⚠️ `primaryKeywordInFirstBlock` — primary='статьи о роботах для мероприятий'
@@ -1235,9 +1235,9 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 ### /news/ — ⚠️ warning
 - ✅ `httpStatusStatic` — rendered HTML exists
 - ✅ `urlHumanReadable` — latin lowercase slug without random ids
-- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `robotsMeta` — expected noindex, nofollow, got noindex, nofollow
 - ✅ `canonical` — expected https://www.kiber-portal.ru/news/, got https://www.kiber-portal.ru/news/
-- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `sitemapInclusion` — in sitemap=False, indexable=False
 - ✅ `title` — Новости робототехники — КИБЕР ПОРТАЛ
 - ⚠️ `titleMatchesPassport` — rendered='Новости робототехники — КИБЕР ПОРТАЛ'; passport='Новости робототехники | КИБЕР ПОРТАЛ'
 - ✅ `description` — 95 chars
@@ -1567,4 +1567,256 @@ This approval does not grant production deploy, DNS, production secrets, analyti
 - ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
 - ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
 - ✅ `internalEntityLinks` — 0 AI related pages; 18 rendered internal links
+
+### /articles/robot-gumanoid-dlya-vystavki/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/robot-gumanoid-dlya-vystavki/, got https://www.kiber-portal.ru/articles/robot-gumanoid-dlya-vystavki/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ'; passport='Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ'
+- ✅ `description` — 148 chars
+- ✅ `h1Count` — 1 H1: ['Робот-гуманоид для выставки: как использовать на стенде']
+- ✅ `h1MatchesPassport` — rendered='Робот-гуманоид для выставки: как использовать на стенде'; passport='Робот-гуманоид для выставки: как использовать на стенде'
+- ✅ `h2Present` — 18 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 16369 visible chars; target 1800
+- ✅ `primaryKeywordInTitle` — primary='робот-гуманоид для выставки'
+- ✅ `primaryKeywordInH1` — primary='робот-гуманоид для выставки'
+- ✅ `primaryKeywordInFirstBlock` — primary='робот-гуманоид для выставки'
+- ✅ `secondaryKeywords` — all found
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 29 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 158 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робот-гуманоид для выставки, робот для выставочного стенда, гуманоид на стенд, робот для презентации продукта
+- ✅ `questionAnswerBlocks` — 4 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 4 FAQ questions
+- ⚠️ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ⚠️ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 2 AI related pages; 29 rendered internal links
+
+### /articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/, got https://www.kiber-portal.ru/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ'; passport='Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ'
+- ✅ `description` — 128 chars
+- ✅ `h1Count` — 1 H1: ['Как выбрать робота-гуманоида для мероприятия']
+- ✅ `h1MatchesPassport` — rendered='Как выбрать робота-гуманоида для мероприятия'; passport='Как выбрать робота-гуманоида для мероприятия'
+- ✅ `h2Present` — 18 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 16259 visible chars; target 1800
+- ✅ `primaryKeywordInTitle` — primary='как выбрать робота-гуманоида'
+- ✅ `primaryKeywordInH1` — primary='как выбрать робота-гуманоида'
+- ✅ `primaryKeywordInFirstBlock` — primary='как выбрать робота-гуманоида'
+- ✅ `secondaryKeywords` — all found
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 29 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 181 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, как выбрать робота-гуманоида, робот-гуманоид на мероприятие, аренда человекоподобного робота, какой гуманоид выбрать
+- ✅ `questionAnswerBlocks` — 4 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 4 FAQ questions
+- ⚠️ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ⚠️ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 2 AI related pages; 29 rendered internal links
+
+### /articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/, got https://www.kiber-portal.ru/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ'; passport='Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ'
+- ✅ `description` — 121 chars
+- ✅ `h1Count` — 1 H1: ['Unitree G1, R1 и H2: сравнение для аренды']
+- ✅ `h1MatchesPassport` — rendered='Unitree G1, R1 и H2: сравнение для аренды'; passport='Unitree G1, R1 и H2: сравнение для аренды'
+- ✅ `h2Present` — 18 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 16053 visible chars; target 1800
+- ⚠️ `primaryKeywordInTitle` — primary='Unitree G1 R1 H2 сравнение'
+- ⚠️ `primaryKeywordInH1` — primary='Unitree G1 R1 H2 сравнение'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='Unitree G1 R1 H2 сравнение'
+- ✅ `secondaryKeywords` — all found
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 29 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 153 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, Unitree G1 R1 H2 сравнение, Unitree G1 аренда, Unitree R1 аренда, Unitree H2 аренда
+- ✅ `questionAnswerBlocks` — 4 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 4 FAQ questions
+- ⚠️ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ⚠️ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 2 AI related pages; 29 rendered internal links
+
+### /articles/promobot-ili-gumanoid-dlya-prezentatsii/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/promobot-ili-gumanoid-dlya-prezentatsii/, got https://www.kiber-portal.ru/articles/promobot-ili-gumanoid-dlya-prezentatsii/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ'; passport='Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ'
+- ✅ `description` — 127 chars
+- ✅ `h1Count` — 1 H1: ['Promobot или гуманоид для презентации: что выбрать']
+- ✅ `h1MatchesPassport` — rendered='Promobot или гуманоид для презентации: что выбрать'; passport='Promobot или гуманоид для презентации: что выбрать'
+- ✅ `h2Present` — 18 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 16655 visible chars; target 1800
+- ⚠️ `primaryKeywordInTitle` — primary='робот для презентации'
+- ⚠️ `primaryKeywordInH1` — primary='робот для презентации'
+- ⚠️ `primaryKeywordInFirstBlock` — primary='робот для презентации'
+- ✅ `secondaryKeywords` — all found
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 29 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 121 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робот для презентации, Promobot для презентации, гуманоид для презентации, робот на презентацию продукта
+- ✅ `questionAnswerBlocks` — 4 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 4 FAQ questions
+- ⚠️ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ⚠️ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 2 AI related pages; 29 rendered internal links
+
+### /articles/robot-gumanoid-na-korporativ/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/robot-gumanoid-na-korporativ/, got https://www.kiber-portal.ru/articles/robot-gumanoid-na-korporativ/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ'; passport='Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ'
+- ✅ `description` — 146 chars
+- ✅ `h1Count` — 1 H1: ['Робот-гуманоид на корпоратив: сценарии и подготовка']
+- ✅ `h1MatchesPassport` — rendered='Робот-гуманоид на корпоратив: сценарии и подготовка'; passport='Робот-гуманоид на корпоратив: сценарии и подготовка'
+- ✅ `h2Present` — 18 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 16548 visible chars; target 1800
+- ✅ `primaryKeywordInTitle` — primary='робот-гуманоид на корпоратив'
+- ✅ `primaryKeywordInH1` — primary='робот-гуманоид на корпоратив'
+- ✅ `primaryKeywordInFirstBlock` — primary='робот-гуманоид на корпоратив'
+- ✅ `secondaryKeywords` — all found
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 29 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 145 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, робот-гуманоид на корпоратив, робот на корпоратив, гуманоид для корпоратива, робот для праздника компании
+- ✅ `questionAnswerBlocks` — 4 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 4 FAQ questions
+- ⚠️ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ⚠️ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 2 AI related pages; 29 rendered internal links
+
+### /articles/skolko-stoit-arenda-robota-gumanoida/ — ⚠️ warning
+- ✅ `httpStatusStatic` — rendered HTML exists
+- ✅ `urlHumanReadable` — latin lowercase slug without random ids
+- ✅ `robotsMeta` — expected index, follow, got index, follow
+- ✅ `canonical` — expected https://www.kiber-portal.ru/articles/skolko-stoit-arenda-robota-gumanoida/, got https://www.kiber-portal.ru/articles/skolko-stoit-arenda-robota-gumanoida/
+- ✅ `sitemapInclusion` — in sitemap=True, indexable=True
+- ✅ `title` — Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ
+- ✅ `titleMatchesPassport` — rendered='Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ'; passport='Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ'
+- ✅ `description` — 123 chars
+- ✅ `h1Count` — 1 H1: ['Сколько стоит аренда робота-гуманоида']
+- ✅ `h1MatchesPassport` — rendered='Сколько стоит аренда робота-гуманоида'; passport='Сколько стоит аренда робота-гуманоида'
+- ✅ `h2Present` — 18 H2
+- ✅ `headingHierarchy` — no heading level jumps
+- ✅ `usefulText` — 16622 visible chars; target 1800
+- ✅ `primaryKeywordInTitle` — primary='сколько стоит аренда робота-гуманоида'
+- ✅ `primaryKeywordInH1` — primary='сколько стоит аренда робота-гуманоида'
+- ✅ `primaryKeywordInFirstBlock` — primary='сколько стоит аренда робота-гуманоида'
+- ✅ `secondaryKeywords` — all found
+- ✅ `meaningfulImageAlts` — missing alt count 0
+- ✅ `ogTitle` — present
+- ✅ `ogDescription` — present
+- ✅ `ogImage` — present
+- ✅ `twitterCard` — present
+- ✅ `jsonLdValid` — invalid scripts=0
+- ⚠️ `requiredSchemaTypes` — missing: WebPage; present: BreadcrumbList, CollectionPage, FAQPage
+- ✅ `breadcrumbs` — present or not required
+- ✅ `internalLinks` — 29 internal hrefs
+- ✅ `cta` — conversion/contact path present
+- ✅ `viewport` — width=device-width, initial-scale=1
+- ✅ `robotsTxt` — robots.txt allows crawl and declares sitemap
+- ✅ `aiSummary` — 150 chars
+- ✅ `entityClarity` — entities: КИБЕР ПОРТАЛ, сколько стоит аренда робота-гуманоида, цена аренды робота-гуманоида, стоимость робота на мероприятие, аренда гуманоида цена
+- ✅ `questionAnswerBlocks` — 4 questions; target 3
+- ✅ `reviewSourceForClaims` — 2 claims; bad sources: []
+- ✅ `structuredFacts` — structured fact labels present
+- ✅ `faqQuestions` — 4 FAQ questions
+- ⚠️ `llmsTxtCoverage` — route not listed in public/llms.txt
+- ⚠️ `markdownAlternateOrLlmsEntry` — no markdown alternate and no llms.txt entry
+- ✅ `aiCrawlerRobotsPolicy` — no separate AI crawler decision required
+- ✅ `contentNotHiddenInImagesOrClientJs` — critical facts visible in HTML text
+- ✅ `internalEntityLinks` — 2 AI related pages; 29 rendered internal links
 

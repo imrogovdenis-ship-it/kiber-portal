@@ -3817,8 +3817,8 @@
     {
       "slug": "/news/",
       "pageType": "news",
-      "indexable": true,
-      "robotsStatus": "index",
+      "indexable": false,
+      "robotsStatus": "noindex",
       "canonical": "https://www.kiber-portal.ru/news/",
       "primaryKeyword": "новости робототехники",
       "secondaryKeywords": [
@@ -3874,7 +3874,7 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch",
+      "sourceRouteStatus": "available-not-sitemap",
       "aiVisibility": {
         "aiSummary": "Новости КИБЕР ПОРТАЛА и робототехники должны давать проверяемый контекст о событиях, технологиях и роботах для мероприятий без выдуманных фактов. Для AI-поиска важны даты, источники, сущности и связанные услуги.",
         "entityType": "article",
@@ -4561,6 +4561,829 @@
         "faqQuestions": [],
         "comparisonTargets": [],
         "relatedPages": []
+      }
+    },
+    {
+      "slug": "/articles/robot-gumanoid-dlya-vystavki/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/robot-gumanoid-dlya-vystavki/",
+      "primaryKeyword": "робот-гуманоид для выставки",
+      "secondaryKeywords": [
+        "робот для выставочного стенда",
+        "гуманоид на стенд",
+        "робот для презентации продукта"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium",
+      "title": "Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ",
+      "description": "Как робот-гуманоид помогает на выставке: привлекает внимание к стенду, встречает гостей, поддерживает презентацию и собирает заявки через менеджера.",
+      "h1": "Робот-гуманоид для выставки: как использовать на стенде",
+      "h2Required": [
+        "SEO / AI intro",
+        "Каталог роботов",
+        "Вопросы и ответы"
+      ],
+      "minUsefulTextChars": 1800,
+      "ogTitle": "Робот-гуманоид для выставки: как использовать на стенде | КИБЕР ПОРТАЛ",
+      "ogDescription": "Как робот-гуманоид помогает на выставке: привлекает внимание к стенду, встречает гостей, поддерживает презентацию и собирает заявки через менеджера.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-45/arenda-agibot-x2.webp",
+      "schemaTypesRequired": [
+        "WebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Робот-гуманоид для выставки: как использовать на стенде",
+          "href": "/articles/robot-gumanoid-dlya-vystavki/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/roboty-gumanoidy/",
+          "anchorIntent": "подборка роботов-гуманоидов"
+        },
+        {
+          "href": "/lead/request/",
+          "anchorIntent": "заявка или подбор робота"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Для выставки гуманоид нужен не вместо промоутера, а как сильный магнит внимания: короткий выход, приветствие, фото-момент и передача гостя живому специалисту.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робот-гуманоид для выставки",
+            "type": "topic"
+          },
+          {
+            "name": "робот для выставочного стенда",
+            "type": "scenario"
+          },
+          {
+            "name": "гуманоид на стенд",
+            "type": "scenario"
+          },
+          {
+            "name": "робот для презентации продукта",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Гуманоид заменит промоутера на выставке?",
+          "Можно ли сделать реплику под бренд?",
+          "Нужен ли оператор рядом?",
+          "Какой робот лучше для небольшого стенда?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Как робот-гуманоид помогает на выставке: привлекает внимание к стенду, встречает гостей, поддерживает презентацию и собирает заявки через менеджера.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Гуманоид заменит промоутера на выставке?",
+          "Можно ли сделать реплику под бренд?",
+          "Нужен ли оператор рядом?",
+          "Какой робот лучше для небольшого стенда?"
+        ],
+        "comparisonTargets": [
+          "arenda-agibot-x2",
+          "arenda-unitree-g1",
+          "arenda-unitree-h2",
+          "arenda-promobot-v4"
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "primaryKeyword": "как выбрать робота-гуманоида",
+      "secondaryKeywords": [
+        "робот-гуманоид на мероприятие",
+        "аренда человекоподобного робота",
+        "какой гуманоид выбрать"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium",
+      "title": "Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ",
+      "description": "Понятный гид по выбору робота-гуманоида для события: площадка, сценарий, аудитория, безопасность, автономность и роль оператора.",
+      "h1": "Как выбрать робота-гуманоида для мероприятия",
+      "h2Required": [
+        "SEO / AI intro",
+        "Каталог роботов",
+        "Вопросы и ответы"
+      ],
+      "minUsefulTextChars": 1800,
+      "ogTitle": "Как выбрать робота-гуманоида для мероприятия | КИБЕР ПОРТАЛ",
+      "ogDescription": "Понятный гид по выбору робота-гуманоида для события: площадка, сценарий, аудитория, безопасность, автономность и роль оператора.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-45/arenda-unitree-g1.webp",
+      "schemaTypesRequired": [
+        "WebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Как выбрать робота-гуманоида для мероприятия",
+          "href": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/roboty-gumanoidy/",
+          "anchorIntent": "подборка роботов-гуманоидов"
+        },
+        {
+          "href": "/lead/request/",
+          "anchorIntent": "заявка или подбор робота"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Чтобы выбрать гуманоида, сначала определите формат события, доступную площадку, длительность активности и нужный эффект: встреча гостей, сценический номер, фотозона или презентация.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "как выбрать робота-гуманоида",
+            "type": "topic"
+          },
+          {
+            "name": "робот-гуманоид на мероприятие",
+            "type": "scenario"
+          },
+          {
+            "name": "аренда человекоподобного робота",
+            "type": "scenario"
+          },
+          {
+            "name": "какой гуманоид выбрать",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "С чего начать выбор гуманоида?",
+          "Можно ли выбрать модель только по фото?",
+          "Если площадка маленькая, гуманоид подойдёт?",
+          "Кто помогает выбрать робота?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Понятный гид по выбору робота-гуманоида для события: площадка, сценарий, аудитория, безопасность, автономность и роль оператора.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "С чего начать выбор гуманоида?",
+          "Можно ли выбрать модель только по фото?",
+          "Если площадка маленькая, гуманоид подойдёт?",
+          "Кто помогает выбрать робота?"
+        ],
+        "comparisonTargets": [
+          "arenda-unitree-g1",
+          "arenda-unitree-r1",
+          "arenda-agibot-x2",
+          "arenda-robota-ardi"
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "primaryKeyword": "Unitree G1 R1 H2 сравнение",
+      "secondaryKeywords": [
+        "Unitree G1 аренда",
+        "Unitree R1 аренда",
+        "Unitree H2 аренда",
+        "гуманоиды Unitree"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium",
+      "title": "Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ",
+      "description": "Сравниваем Unitree G1, R1 и H2 для аренды на мероприятия: рост, автономность, эффект на площадке, сценарии и ограничения.",
+      "h1": "Unitree G1, R1 и H2: сравнение для аренды",
+      "h2Required": [
+        "SEO / AI intro",
+        "Каталог роботов",
+        "Вопросы и ответы"
+      ],
+      "minUsefulTextChars": 1800,
+      "ogTitle": "Unitree G1, R1 и H2: сравнение для аренды | КИБЕР ПОРТАЛ",
+      "ogDescription": "Сравниваем Unitree G1, R1 и H2 для аренды на мероприятия: рост, автономность, эффект на площадке, сценарии и ограничения.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-45/arenda-unitree-h2.webp",
+      "schemaTypesRequired": [
+        "WebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Unitree G1, R1 и H2: сравнение для аренды",
+          "href": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/roboty-gumanoidy/",
+          "anchorIntent": "подборка роботов-гуманоидов"
+        },
+        {
+          "href": "/lead/request/",
+          "anchorIntent": "заявка или подбор робота"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Unitree G1 — универсальный выбор, R1 — компактный и динамичный, H2 — крупный и статусный. Финальный выбор зависит от площадки, бюджета и нужного эффекта.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Unitree G1 R1 H2 сравнение",
+            "type": "topic"
+          },
+          {
+            "name": "Unitree G1 аренда",
+            "type": "scenario"
+          },
+          {
+            "name": "Unitree R1 аренда",
+            "type": "scenario"
+          },
+          {
+            "name": "Unitree H2 аренда",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какую модель Unitree выбрать первой?",
+          "Unitree R1 подходит для сцены?",
+          "Unitree H2 нужен только для больших событий?",
+          "Можно ли сравнить модели перед заказом?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Сравниваем Unitree G1, R1 и H2 для аренды на мероприятия: рост, автономность, эффект на площадке, сценарии и ограничения.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Какую модель Unitree выбрать первой?",
+          "Unitree R1 подходит для сцены?",
+          "Unitree H2 нужен только для больших событий?",
+          "Можно ли сравнить модели перед заказом?"
+        ],
+        "comparisonTargets": [
+          "arenda-unitree-g1",
+          "arenda-unitree-r1",
+          "arenda-unitree-h2",
+          "arenda-unitree-go2"
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "primaryKeyword": "робот для презентации",
+      "secondaryKeywords": [
+        "Promobot для презентации",
+        "гуманоид для презентации",
+        "робот на презентацию продукта"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium",
+      "title": "Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ",
+      "description": "Когда для презентации лучше Promobot V4, а когда человекоподобный робот: сравниваем диалог, сценический эффект и задачи гостей.",
+      "h1": "Promobot или гуманоид для презентации: что выбрать",
+      "h2Required": [
+        "SEO / AI intro",
+        "Каталог роботов",
+        "Вопросы и ответы"
+      ],
+      "minUsefulTextChars": 1800,
+      "ogTitle": "Promobot или гуманоид для презентации: что выбрать | КИБЕР ПОРТАЛ",
+      "ogDescription": "Когда для презентации лучше Promobot V4, а когда человекоподобный робот: сравниваем диалог, сценический эффект и задачи гостей.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-45/arenda-promobot-v4.webp",
+      "schemaTypesRequired": [
+        "WebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Promobot или гуманоид для презентации: что выбрать",
+          "href": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/roboty-gumanoidy/",
+          "anchorIntent": "подборка роботов-гуманоидов"
+        },
+        {
+          "href": "/lead/request/",
+          "anchorIntent": "заявка или подбор робота"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Promobot V4 сильнее в диалоге и информационной роли, гуманоид — в визуальном эффекте, движении и сценическом вау-моменте.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робот для презентации",
+            "type": "topic"
+          },
+          {
+            "name": "Promobot для презентации",
+            "type": "scenario"
+          },
+          {
+            "name": "гуманоид для презентации",
+            "type": "scenario"
+          },
+          {
+            "name": "робот на презентацию продукта",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Promobot и гуманоид могут работать вместе?",
+          "Что лучше для презентации продукта?",
+          "Можно ли подготовить речь робота?",
+          "Кто управляет роботом на презентации?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Когда для презентации лучше Promobot V4, а когда человекоподобный робот: сравниваем диалог, сценический эффект и задачи гостей.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Promobot и гуманоид могут работать вместе?",
+          "Что лучше для презентации продукта?",
+          "Можно ли подготовить речь робота?",
+          "Кто управляет роботом на презентации?"
+        ],
+        "comparisonTargets": [
+          "arenda-promobot-v4",
+          "arenda-agibot-x2",
+          "arenda-unitree-g1",
+          "arenda-robota-sofiya"
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/robot-gumanoid-na-korporativ/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/robot-gumanoid-na-korporativ/",
+      "primaryKeyword": "робот-гуманоид на корпоратив",
+      "secondaryKeywords": [
+        "робот на корпоратив",
+        "гуманоид для корпоратива",
+        "робот для праздника компании"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium",
+      "title": "Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ",
+      "description": "Как использовать робота-гуманоида на корпоративе: встреча гостей, сценический выход, фотозона, вручение подарков и безопасная подготовка площадки.",
+      "h1": "Робот-гуманоид на корпоратив: сценарии и подготовка",
+      "h2Required": [
+        "SEO / AI intro",
+        "Каталог роботов",
+        "Вопросы и ответы"
+      ],
+      "minUsefulTextChars": 1800,
+      "ogTitle": "Робот-гуманоид на корпоратив: сценарии и подготовка | КИБЕР ПОРТАЛ",
+      "ogDescription": "Как использовать робота-гуманоида на корпоративе: встреча гостей, сценический выход, фотозона, вручение подарков и безопасная подготовка площадки.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-45/arenda-robota-tron.webp",
+      "schemaTypesRequired": [
+        "WebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Робот-гуманоид на корпоратив: сценарии и подготовка",
+          "href": "/articles/robot-gumanoid-na-korporativ/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/roboty-gumanoidy/",
+          "anchorIntent": "подборка роботов-гуманоидов"
+        },
+        {
+          "href": "/lead/request/",
+          "anchorIntent": "заявка или подбор робота"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Для корпоратива гуманоид лучше всего работает в коротких сценариях: welcome, выход на сцену, вручение, фотозона и финальный интерактив с ведущим.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "робот-гуманоид на корпоратив",
+            "type": "topic"
+          },
+          {
+            "name": "робот на корпоратив",
+            "type": "scenario"
+          },
+          {
+            "name": "гуманоид для корпоратива",
+            "type": "scenario"
+          },
+          {
+            "name": "робот для праздника компании",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Робот может выйти вместе с ведущим?",
+          "Можно ли использовать робота в фотозоне?",
+          "Подойдёт ли гуманоид для небольшого корпоратива?",
+          "Что нужно подготовить организатору?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Как использовать робота-гуманоида на корпоративе: встреча гостей, сценический выход, фотозона, вручение подарков и безопасная подготовка площадки.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Робот может выйти вместе с ведущим?",
+          "Можно ли использовать робота в фотозоне?",
+          "Подойдёт ли гуманоид для небольшого корпоратива?",
+          "Что нужно подготовить организатору?"
+        ],
+        "comparisonTargets": [
+          "arenda-robota-tron",
+          "arenda-unitree-g1",
+          "arenda-robota-ardi",
+          "arenda-robota-sofiya"
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "primaryKeyword": "сколько стоит аренда робота-гуманоида",
+      "secondaryKeywords": [
+        "цена аренды робота-гуманоида",
+        "стоимость робота на мероприятие",
+        "аренда гуманоида цена"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium",
+      "title": "Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ",
+      "description": "От чего зависит стоимость аренды робота-гуманоида: модель, длительность, программа, логистика, оператор и условия площадки.",
+      "h1": "Сколько стоит аренда робота-гуманоида",
+      "h2Required": [
+        "SEO / AI intro",
+        "Каталог роботов",
+        "Вопросы и ответы"
+      ],
+      "minUsefulTextChars": 1800,
+      "ogTitle": "Сколько стоит аренда робота-гуманоида | КИБЕР ПОРТАЛ",
+      "ogDescription": "От чего зависит стоимость аренды робота-гуманоида: модель, длительность, программа, логистика, оператор и условия площадки.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-45/arenda-unitree-r1.webp",
+      "schemaTypesRequired": [
+        "WebPage",
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Сколько стоит аренда робота-гуманоида",
+          "href": "/articles/skolko-stoit-arenda-robota-gumanoida/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/roboty-gumanoidy/",
+          "anchorIntent": "подборка роботов-гуманоидов"
+        },
+        {
+          "href": "/lead/request/",
+          "anchorIntent": "заявка или подбор робота"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "needs_review",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Стоимость аренды гуманоида нельзя честно назвать одной цифрой без вводных: важны модель, время работы, площадка, логистика, сценарий и роль оператора.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "сколько стоит аренда робота-гуманоида",
+            "type": "topic"
+          },
+          {
+            "name": "цена аренды робота-гуманоида",
+            "type": "scenario"
+          },
+          {
+            "name": "стоимость робота на мероприятие",
+            "type": "scenario"
+          },
+          {
+            "name": "аренда гуманоида цена",
+            "type": "scenario"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Почему нет одной цены для всех мероприятий?",
+          "Цена на сайте является офертой?",
+          "Можно ли быстро получить ориентир по бюджету?",
+          "Что дешевле: компактный или крупный гуманоид?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "От чего зависит стоимость аренды робота-гуманоида: модель, длительность, программа, логистика, оператор и условия площадки.",
+            "source": "page_content"
+          },
+          {
+            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
+            "source": "owner_approved"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "WebPage",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Почему нет одной цены для всех мероприятий?",
+          "Цена на сайте является офертой?",
+          "Можно ли быстро получить ориентир по бюджету?",
+          "Что дешевле: компактный или крупный гуманоид?"
+        ],
+        "comparisonTargets": [
+          "arenda-unitree-g1",
+          "arenda-unitree-r1",
+          "arenda-unitree-h2",
+          "arenda-agibot-x2"
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ]
       }
     }
   ]

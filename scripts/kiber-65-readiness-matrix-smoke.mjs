@@ -75,9 +75,9 @@ const routes = launch.routes || [];
 const robotRoutes = routes.filter((route) => route.path?.startsWith('/robots/'));
 const sitemapRoutes = routes.filter((route) => route.sitemap === true);
 const sitemap = read('dist/sitemap.xml');
-if (routes.length !== 37) failures.push(`expected 37 launch routes, got ${routes.length}`);
+if (routes.length !== 43) failures.push(`expected 43 launch routes, got ${routes.length}`);
 if (robotRoutes.length !== 24) failures.push(`expected 24 robot routes, got ${robotRoutes.length}`);
-if ((sitemap.match(/<loc>/g) || []).length !== 31) failures.push('expected 31 sitemap <loc> entries');
+if ((sitemap.match(/<loc>/g) || []).length !== 36) failures.push('expected 36 sitemap <loc> entries');
 for (const route of sitemapRoutes) {
   const loc = `${launch.site.replace(/\/$/, '')}${route.path}`;
   if (!sitemap.includes(`<loc>${loc}</loc>`)) failures.push(`sitemap missing ${loc}`);

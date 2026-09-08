@@ -18,8 +18,9 @@ test('production go/no-go package records exact launch map and stays NO-GO', () 
   if (pack.currentBase.branch === 'main') {
     assert.match(pack.currentBase.headTitle, /KIBER-91/);
   }
-  assert.equal(pack.readiness.routesChecked, 37);
+  assert.equal(pack.readiness.routesChecked, 43);
   assert.equal(pack.readiness.robotRoutesChecked, 24);
+  assert.equal(pack.readiness.articleRoutesChecked, 6);
   assert.deepEqual(pack.readiness.legalRoutesPresent, ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/']);
 });
 

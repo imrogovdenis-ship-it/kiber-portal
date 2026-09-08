@@ -390,7 +390,7 @@
       ],
       "intent": "informational",
       "pageCluster": "news-index",
-      "priority": "medium"
+      "priority": "low"
     },
     "/contacts/": {
       "pageType": "contacts",
@@ -473,6 +473,79 @@
       "intent": "transactional",
       "pageCluster": "conversion",
       "priority": "low"
+    },
+    "/articles/robot-gumanoid-dlya-vystavki/": {
+      "pageType": "article",
+      "primaryKeyword": "робот-гуманоид для выставки",
+      "secondaryKeywords": [
+        "робот для выставочного стенда",
+        "гуманоид на стенд",
+        "робот для презентации продукта"
+      ],
+      "intent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium"
+    },
+    "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/": {
+      "pageType": "article",
+      "primaryKeyword": "как выбрать робота-гуманоида",
+      "secondaryKeywords": [
+        "робот-гуманоид на мероприятие",
+        "аренда человекоподобного робота",
+        "какой гуманоид выбрать"
+      ],
+      "intent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium"
+    },
+    "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/": {
+      "pageType": "article",
+      "primaryKeyword": "Unitree G1 R1 H2 сравнение",
+      "secondaryKeywords": [
+        "Unitree G1 аренда",
+        "Unitree R1 аренда",
+        "Unitree H2 аренда",
+        "гуманоиды Unitree"
+      ],
+      "intent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium"
+    },
+    "/articles/promobot-ili-gumanoid-dlya-prezentatsii/": {
+      "pageType": "article",
+      "primaryKeyword": "робот для презентации",
+      "secondaryKeywords": [
+        "Promobot для презентации",
+        "гуманоид для презентации",
+        "робот на презентацию продукта"
+      ],
+      "intent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium"
+    },
+    "/articles/robot-gumanoid-na-korporativ/": {
+      "pageType": "article",
+      "primaryKeyword": "робот-гуманоид на корпоратив",
+      "secondaryKeywords": [
+        "робот на корпоратив",
+        "гуманоид для корпоратива",
+        "робот для праздника компании"
+      ],
+      "intent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium"
+    },
+    "/articles/skolko-stoit-arenda-robota-gumanoida/": {
+      "pageType": "article",
+      "primaryKeyword": "сколько стоит аренда робота-гуманоида",
+      "secondaryKeywords": [
+        "цена аренды робота-гуманоида",
+        "стоимость робота на мероприятие",
+        "аренда гуманоида цена"
+      ],
+      "intent": "informational",
+      "pageCluster": "humanoids-fast-launch-articles",
+      "priority": "medium"
     }
   }
 }

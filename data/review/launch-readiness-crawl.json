@@ -1,8 +1,8 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "issue": "KIBER-launch-readiness-crawl",
-  "title": "Controlled rebuild launch readiness crawl",
-  "status": "in_review_after_pr",
+  "title": "Fast launch readiness crawl: humanoids + six articles",
+  "status": "fast_launch_scope_in_review",
   "requiredChecks": [
     "route_inventory",
     "sitemap_alignment",
@@ -84,6 +84,75 @@
       "approvedBy": "Александр Маркин",
       "approvedAt": "2026-08-30T02:56:33Z",
       "evidence": "Owner approved phone, email, Telegram/WhatsApp, Москва, legal name, requisites and address for preview/PR publication."
+    },
+    {
+      "id": "24-robot-card-content-approval",
+      "status": "approved_by_owner_for_visual_content_review",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-09-08",
+      "evidence": "PR #79 owner approval record for all 24 robot-card preview pages."
+    },
+    {
+      "id": "fast-launch-scope-plan",
+      "status": "approved_for_implementation",
+      "approvedBy": "Александр Маркин",
+      "approvedAt": "2026-09-08",
+      "evidence": "План согласован. Начинай реализацию launch scope."
+    }
+  ],
+  "deferredPostLaunch": [
+    "analytics provider decision and IDs"
+  ],
+  "fastLaunchAdditionalChecks": [
+    "humanoid_compilation",
+    "six_article_routes",
+    "placeholder_noindex_policy"
+  ],
+  "fastLaunchCriticalRoutes": [
+    {
+      "path": "/roboty-gumanoidy/",
+      "purpose": "live humanoid compilation",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/",
+      "purpose": "blog index with six humanoid articles",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/robot-gumanoid-dlya-vystavki/",
+      "purpose": "fast launch humanoid article",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+      "purpose": "fast launch humanoid article",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+      "purpose": "fast launch humanoid article",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+      "purpose": "fast launch humanoid article",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/robot-gumanoid-na-korporativ/",
+      "purpose": "fast launch humanoid article",
+      "sitemap": true
+    },
+    {
+      "path": "/articles/skolko-stoit-arenda-robota-gumanoida/",
+      "purpose": "fast launch humanoid article",
+      "sitemap": true
+    },
+    {
+      "path": "/news/",
+      "purpose": "deferred placeholder excluded from sitemap",
+      "sitemap": false
     }
   ]
 }

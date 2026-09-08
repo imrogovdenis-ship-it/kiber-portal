@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-39",
-  "generatedAt": "2026-09-06T13:52:33.732Z",
+  "generatedAt": "2026-09-08T08:58:05.757Z",
   "coreWebVitalsTargets": {
     "lcpMs": 2500,
     "inpMs": 200,
@@ -16,11 +16,11 @@
   "routes": [
     {
       "route": "/",
-      "htmlBytes": 51389,
+      "htmlBytes": 51462,
       "cssBytes": 52896,
       "jsBytes": 6837,
       "imageBytes": 118632,
-      "totalPageBytes": 229754,
+      "totalPageBytes": 229827,
       "cssFiles": 4,
       "jsFiles": 4,
       "imageFiles": 8,

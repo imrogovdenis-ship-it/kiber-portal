@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-12",
   "status": "passed",
-  "generatedAt": "2026-09-06T13:52:50.225Z",
+  "generatedAt": "2026-09-08T08:58:23.517Z",
   "diskReserve": {
     "measuredAt": "2026-08-31T10:16:00Z",
     "path": "/home/alex/projects/kiber-portal-pr8",
@@ -21,8 +21,8 @@
   "trackedReviewOriginals": 510,
   "lfsTrackedReviewOriginals": 510,
   "reviewOriginalsNotInLfs": 0,
-  "runtimeImages": 193,
-  "runtimeImageBytes": 6111625,
+  "runtimeImages": 396,
+  "runtimeImageBytes": 13919663,
   "safety": {
     "productionDeployChanged": false,
     "dnsChanged": false,

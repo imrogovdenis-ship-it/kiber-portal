@@ -1,9 +1,9 @@
 {
   "issue": "KIBER-43",
-  "generatedAt": "2026-09-06T13:52:34.061Z",
+  "generatedAt": "2026-09-08T08:58:06.154Z",
   "site": "https://www.kiber-portal.ru",
-  "routesChecked": 37,
-  "sitemapUrls": 31,
+  "routesChecked": 43,
+  "sitemapUrls": 36,
   "sitemapLocs": [
     "https://www.kiber-portal.ru/",
     "https://www.kiber-portal.ru/robots/arenda-agibot-x2/",
@@ -34,7 +34,12 @@
     "https://www.kiber-portal.ru/roboty-sobaki/",
     "https://www.kiber-portal.ru/compilations/",
     "https://www.kiber-portal.ru/articles/",
-    "https://www.kiber-portal.ru/news/",
+    "https://www.kiber-portal.ru/articles/robot-gumanoid-dlya-vystavki/",
+    "https://www.kiber-portal.ru/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+    "https://www.kiber-portal.ru/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+    "https://www.kiber-portal.ru/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+    "https://www.kiber-portal.ru/articles/robot-gumanoid-na-korporativ/",
+    "https://www.kiber-portal.ru/articles/skolko-stoit-arenda-robota-gumanoida/",
     "https://www.kiber-portal.ru/contacts/"
   ],
   "redirectsChecked": 2,

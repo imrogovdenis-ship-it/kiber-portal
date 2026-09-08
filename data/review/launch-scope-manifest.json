@@ -1,11 +1,11 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-09-06T15:36:30.915889Z",
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-08T08:35:00Z",
   "status": "release_candidate_stabilization_manifest",
   "repository": "imrogovdenis-ship-it/kiber-portal",
   "workdir": "/home/alex/projects/kiber-portal-pr8",
-  "branch": "main",
-  "head": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
+  "branch": "feat/kiber-fast-launch-humanoids-articles-20260908",
+  "head": "eab98c1c349160891192b5009f8894296599bfc8",
   "decision": "RC_PACKAGE_IN_PROGRESS_NO_PRODUCTION_PERMISSION",
   "approvedLaunchScope": [
     {
@@ -94,6 +94,32 @@
         "scripts/validate_kiber_seo_research_writing_protocol.py",
         "scripts/validate_claude_content_contracts.py"
       ]
+    },
+    {
+      "id": "24-approved-robot-cards",
+      "status": "owner_approved_and_merged",
+      "evidence": [
+        "docs/review/kiber-robot-card-final-24-audit-20260908/owner-approval.json",
+        "docs/review/kiber-robot-card-final-24-audit-20260908/OWNER_APPROVAL.md"
+      ],
+      "sourcePaths": [
+        "src/lib/kiber94-robot-template-data.ts",
+        "src/components/templates/RobotCardTemplate.astro"
+      ]
+    },
+    {
+      "id": "fast-humanoid-compilation-and-six-articles",
+      "status": "implemented_for_owner_review",
+      "evidence": [
+        "docs/review/kiber-fast-launch-20260908/README.md"
+      ],
+      "sourcePaths": [
+        "src/pages/roboty-gumanoidy.astro",
+        "src/pages/articles.astro",
+        "src/pages/articles/[slug].astro",
+        "src/lib/kiber94-launch-articles-data.ts",
+        "src/lib/kiber94-compilation-template-data.ts"
+      ]
     }
   ],
   "notInFirstPublicationScopeByDefault": [
@@ -141,7 +167,9 @@
     "npm run test:contact-lead-visual",
     "npm run test:page-seo-components",
     "npm run build:preview",
-    "npm run build:production"
+    "npm run build:production",
+    "node --import tsx --test tests/visual/kiber-fast-launch-scope.test.ts",
+    "npm run test:readiness-crawl"
   ],
   "stillGated": {
     "productionDeployAllowed": false,
@@ -161,5 +189,60 @@
     "dnsChangeAllowed": false,
     "analyticsProviderCookiesAllowed": false,
     "productionLiveLeadRoutingAllowed": false
-  }
+  },
+  "launchScope": "fast_humanoids_plus_articles",
+  "includedRoutes": [
+    "/",
+    "/roboty-gumanoidy/",
+    "/articles/",
+    "/articles/robot-gumanoid-dlya-vystavki/",
+    "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+    "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+    "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+    "/articles/robot-gumanoid-na-korporativ/",
+    "/articles/skolko-stoit-arenda-robota-gumanoida/",
+    "/contacts/",
+    "/lead/request/",
+    "/lead/thanks/",
+    "/privacy-policy/",
+    "/consent/",
+    "/cookie-policy/",
+    "/terms/",
+    "/robots/arenda-agibot-x2/",
+    "/robots/arenda-bellabot/",
+    "/robots/arenda-glambot/",
+    "/robots/arenda-inchbot-l1-w-edu/",
+    "/robots/arenda-kettybot/",
+    "/robots/arenda-klipmeiker/",
+    "/robots/arenda-mini-robo-kofeyni/",
+    "/robots/arenda-noetix-bumi/",
+    "/robots/arenda-promobot-v4/",
+    "/robots/arenda-robo-kofeyni/",
+    "/robots/arenda-roboshashki/",
+    "/robots/arenda-robot-barmen/",
+    "/robots/arenda-robota-ardi/",
+    "/robots/arenda-robota-hudozhnika-a4/",
+    "/robots/arenda-robota-sofiya/",
+    "/robots/arenda-robota-tron/",
+    "/robots/arenda-senserobot/",
+    "/robots/arenda-sketchbot/",
+    "/robots/arenda-unitree-g1/",
+    "/robots/arenda-unitree-go2/",
+    "/robots/arenda-unitree-h2/",
+    "/robots/arenda-unitree-r1/",
+    "/robots/arenda-uv-box/",
+    "/robots/arenda-xiaomi-cyberdog-2/"
+  ],
+  "excludedOrNoindex": [
+    "/news/",
+    "/roboty-sobaki/",
+    "future empty compilations",
+    "future empty articles",
+    "preview routes"
+  ],
+  "productionPermissionIncluded": false,
+  "dnsPermissionIncluded": false,
+  "secretsPermissionIncluded": false,
+  "liveLeadRoutingPermissionIncluded": false,
+  "analyticsDeferredPostLaunch": true
 }

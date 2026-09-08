@@ -1,18 +1,19 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "issue": "KIBER-production-go-no-go",
-  "generatedAt": "2026-09-06T15:36:30.915889Z",
+  "generatedAt": "2026-09-08T08:35:00Z",
   "currentBase": {
     "repo": "imrogovdenis-ship-it/kiber-portal",
     "branch": "main",
-    "head": "12ef3d6dd54f",
-    "updatedAt": "2026-09-06T16:15:00Z",
-    "fullHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
-    "headTitle": "KIBER-91: full-site visual QA package (#70)"
+    "head": "eab98c1c3491",
+    "fullHead": "eab98c1c349160891192b5009f8894296599bfc8",
+    "updatedAt": "2026-09-08T08:35:00Z",
+    "headTitle": "KIBER-91 fast launch scope: humanoids compilation + six articles",
+    "workingBranch": "feat/kiber-fast-launch-humanoids-articles-20260908"
   },
   "productionDecision": {
     "status": "NO_GO",
-    "summary": "PR #70 is merged and fresh main RC staging is verified; production launch remains NO_GO until owner approves the merged main RC candidate, production live lead runtime/secrets deployment, analytics/defer decision, and explicit production/DNS permission.",
+    "summary": "Fast launch scope is implemented for review: homepage, 24 approved robot cards, one live humanoid compilation, six humanoid articles, forms/contact/legal. Production remains NO_GO until final production/DNS/secrets/live-routing permission; analytics is deferred post-launch.",
     "productionDeployAllowed": false,
     "dnsChangeAllowed": false,
     "secretsChangeAllowed": false,
@@ -20,8 +21,12 @@
     "analyticsProviderCookiesAllowed": false
   },
   "readiness": {
-    "routesChecked": 37,
+    "routesChecked": 43,
     "robotRoutesChecked": 24,
+    "articleRoutesChecked": 6,
+    "liveCompilationRoutes": [
+      "/roboty-gumanoidy/"
+    ],
     "legalRoutesPresent": [
       "/privacy-policy/",
       "/consent/",
@@ -32,84 +37,69 @@
     "leadDestinations": 0,
     "mediaProductionApproved": 24,
     "crawlSource": "docs/review/launch-readiness-crawl/report.json",
-    "mediaApprovalEvidence": "data/review/media-rights-robot-cards.json",
-    "publicContactsApproved": true,
-    "publicContactsEvidence": "Owner approved new public phone +7 (906) 730-96-91, messenger links and legal document phone replacement on 2026-09-06.",
-    "legalDocumentsApproved": true,
-    "leadFormVisualApproved": true,
-    "leadRoutingStagingFunctionTested": true,
-    "launchScopeManifest": "data/review/launch-scope-manifest.json"
+    "launchScopeManifest": "data/review/launch-scope-manifest.json",
+    "analyticsDeferredPostLaunch": true
   },
   "readyAreas": [
     {
-      "id": "controlled-rebuild-base",
-      "status": "ready_for_review",
-      "evidence": "Git branch codex/kiber-15-controlled-rebuild at 5698898"
-    },
-    {
-      "id": "robot-pages",
-      "status": "structurally_ready",
-      "evidence": "24 robot routes pass robotpage/content/readiness smoke gates"
-    },
-    {
-      "id": "legal-static-pages",
-      "status": "owner_approved_closed",
-      "evidence": "All four legal docs approved by Александр on 2026-09-06; see docs/review/legal-documents-cleanup-20260906/OWNER_APPROVAL_FOUR_LEGAL_DOCUMENTS.md"
+      "id": "media-rights-production-approval",
+      "status": "approved_by_owner_for_production_media_use",
+      "evidence": "24 robot media records approved; production deploy still gated."
     },
     {
       "id": "contacts-lead-visual",
       "status": "visually_approved_and_merged",
-      "evidence": "PR #40 merged after Александр approved: «PR #40 визуально утверждаю, можно мержить»"
+      "evidence": "Preserved approved launch baseline evidence; see launch-scope-manifest approvedLaunchScope."
     },
     {
-      "id": "ci-gates",
-      "status": "passing",
-      "evidence": "Local npm run ci passed before PR #40 merge; GitHub validate passed on PR #40"
-    },
-    {
-      "id": "media-rights-production-approval",
-      "status": "approved_by_owner_for_production_media_use",
-      "evidence": "All 24 full robot media cards approved by Александр Маркин at 2026-08-29T00:55:09Z; production deploy/DNS/secrets/live routing still not approved."
+      "id": "legal-static-pages",
+      "status": "owner_approved_closed",
+      "evidence": "Preserved approved launch baseline evidence; see launch-scope-manifest approvedLaunchScope."
     },
     {
       "id": "public-contacts",
       "status": "approved_by_owner_for_preview_pr",
-      "evidence": "Owner input 2026-08-30: phone +7 (906) 730-96-91, email markinas28@yandex.ru, Telegram/WhatsApp by new phone and MAX public link, Москва, ИП Маркин Александр Сергеевич, ИНН/ОГРНИП from legal docs, address Нижний Сусальный переулок, 9, стр. 4А."
+      "evidence": "Preserved approved launch baseline evidence; see launch-scope-manifest approvedLaunchScope."
     },
     {
-      "id": "lead-form-popup",
-      "status": "owner_visual_approved_and_live_function_tested",
-      "evidence": "Form approved; overflow fixed; source /api/leads live function test delivered amoCRM unsorted lead and Telegram duplicate. See docs/review/contact-lead-form-popup-20260906/"
+      "id": "24-approved-robot-cards",
+      "status": "approved_and_merged",
+      "evidence": "PR #79 merged; owner approval record in docs/review/kiber-robot-card-final-24-audit-20260908/"
     },
     {
-      "id": "messenger-popup",
-      "status": "implemented_verified",
-      "evidence": "Написать нам popup with MAX/WhatsApp/Telegram verified under docs/review/contact-messenger-popup-20260906/"
+      "id": "humanoid-compilation",
+      "status": "implemented_for_review",
+      "evidence": "/roboty-gumanoidy/ uses approved CompilationTemplate and launch sitemap entry."
     },
     {
-      "id": "launch-scope-manifest",
-      "status": "merged_in_main_and_verified",
-      "evidence": "data/review/launch-scope-manifest.json plus docs/review/main-rc-after-pr70-20260906/summary.json"
+      "id": "six-humanoid-articles",
+      "status": "implemented_for_review",
+      "evidence": "Six /articles/<slug>/ pages use approved ArticleBlocksTemplate."
     },
     {
-      "id": "main-rc-staging-after-pr70",
-      "status": "verified_from_main_no_production",
-      "evidence": "docs/review/main-rc-after-pr70-20260906/summary.json — main commit 12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3; npm run ci/builds pass; alex-kiber-staging healthy/noindex."
+      "id": "placeholder-policy",
+      "status": "implemented",
+      "evidence": "/news/ excluded from sitemap; future placeholders listed excluded/noindex in launch-scope manifest."
+    },
+    {
+      "id": "contacts-forms-legal",
+      "status": "available_with_final_runtime_gate",
+      "evidence": "Existing contacts, lead request/thanks and legal pages remain in launch scope; live production routing requires explicit permission."
     }
   ],
   "blockers": [
     {
       "id": "release-candidate-package-stabilization",
-      "severity": "blocking_until_pr71_merge",
-      "decisionNeeded": "Merge the post-PR70 readiness/evidence sync PR before production cutover package is considered current.",
-      "currentState": "Owner approved main RC candidate; PR #71 records dynamic staging/e2e/cutover evidence and must be merged before final production execution."
+      "severity": "blocking_until_fast_launch_pr_merge",
+      "decisionNeeded": "Merge the fast launch scope PR and refresh main-based RC before production cutover package is considered current.",
+      "currentState": "Fast launch branch implements /roboty-gumanoidy/ and six articles; needs PR review/merge before final production execution."
     },
     {
       "id": "production-live-lead-runtime",
       "severity": "critical",
       "owner": "Hermes after explicit production approval",
       "state": "pending_production_only",
-      "description": "Dynamic/API staging passed, but live lead routing on production domain/container is not enabled until final production/DNS command."
+      "description": "Production domain/container live lead routing and secrets are not enabled until final production command."
     },
     {
       "id": "analytics-provider-ids",
@@ -117,7 +107,7 @@
       "decisionNeeded": "No analytics at launch; connect Yandex Metrica/Umami/pixels after launch as separate task.",
       "currentState": "Owner explicitly deferred analytics post-launch; provider IDs disabled.",
       "state": "deferred_post_launch",
-      "description": "Kept in package as deferred launch decision, not a production blocker."
+      "description": "Deferred launch decision, not a content blocker."
     },
     {
       "id": "explicit-production-permission",
@@ -126,63 +116,7 @@
       "currentState": "production deploy permission is false; checklist prepared but not executed."
     }
   ],
-  "openPullRequests": [
-    {
-      "number": 14,
-      "title": "feat(data): add robot price decision pack",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/14",
-      "state": "OPEN",
-      "base": "feat/kiber-27-visual-source-hierarchy",
-      "head": "hermes/kiber-42-44-price-decision-pack",
-      "mergeabilityAtCapture": "CLEAN",
-      "ci": "NONE",
-      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
-    },
-    {
-      "number": 12,
-      "title": "KIBER-51: SEO-аудит production и baseline метаданных для cutover",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/12",
-      "state": "OPEN",
-      "base": "hermes/kiber-40-production-url-registry",
-      "head": "hermes/kiber-51-production-seo-audit",
-      "mergeabilityAtCapture": "CLEAN",
-      "ci": "NONE",
-      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
-    },
-    {
-      "number": 11,
-      "title": "KIBER-42/KIBER-44: схема цены робота и аудит цен по 24 роботам",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/11",
-      "state": "OPEN",
-      "base": "hermes/kiber-40-production-url-registry",
-      "head": "hermes/kiber-42-robot-price-schema",
-      "mergeabilityAtCapture": "CLEAN",
-      "ci": "NONE",
-      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
-    },
-    {
-      "number": 10,
-      "title": "KIBER-40/KIBER-41: реестр 44 production URL и решения keep/delete/redirect",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/10",
-      "state": "OPEN",
-      "base": "main",
-      "head": "hermes/kiber-40-production-url-registry",
-      "mergeabilityAtCapture": "CLEAN",
-      "ci": "NONE",
-      "recommendation": "Defer unless it directly reduces first protected preview risk; avoid broad SEO/price/URL stacks before first server link."
-    },
-    {
-      "number": 8,
-      "title": "design: controlled rebuild and Robot Card vertical pilot",
-      "url": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/8",
-      "state": "OPEN",
-      "base": "main",
-      "head": "codex/kiber-15-controlled-rebuild",
-      "mergeabilityAtCapture": "CLEAN",
-      "ci": "SUCCESS",
-      "recommendation": "Keep as current first-preview integration branch; merge to main only after protected staging review."
-    }
-  ],
+  "openPullRequests": [],
   "ownerDecisionChecklist": [
     "Решить production dynamic/API runtime для формы: включаем amoCRM + Telegram на production или запускаем static с отложенной live routing интеграцией.",
     "Решить analytics: defer post-launch или включать provider/IDs/goals/cookies с отдельным approval.",

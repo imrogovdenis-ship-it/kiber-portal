@@ -4,10 +4,10 @@
   "status": "owner_approved_complete",
   "sourceAudit": "data/seo/page-seo-audit.json",
   "summary": {
-    "routesChecked": 37,
+    "routesChecked": 43,
     "technicalFailures": 0,
-    "warningCount": 198,
-    "routesWithWarnings": 37,
+    "warningCount": 221,
+    "routesWithWarnings": 43,
     "closedPolicyWarnings": [
       "aiCrawlerRobotsPolicy"
     ]
@@ -77,6 +77,8 @@
       "routes": [
         "/",
         "/articles/",
+        "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+        "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
         "/compilations/",
         "/consent/",
         "/contacts/",
@@ -140,6 +142,12 @@
       ],
       "routes": [
         "/articles/",
+        "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+        "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+        "/articles/robot-gumanoid-dlya-vystavki/",
+        "/articles/robot-gumanoid-na-korporativ/",
+        "/articles/skolko-stoit-arenda-robota-gumanoida/",
+        "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
         "/compilations/",
         "/contacts/",
         "/news/",
@@ -202,7 +210,13 @@
         "/compilations/",
         "/articles/",
         "/news/",
-        "/contacts/"
+        "/contacts/",
+        "/articles/robot-gumanoid-dlya-vystavki/",
+        "/articles/kak-vybrat-robota-gumanoida-dlya-meropriyatiya/",
+        "/articles/unitree-g1-r1-h2-sravnenie-dlya-arendy/",
+        "/articles/promobot-ili-gumanoid-dlya-prezentatsii/",
+        "/articles/robot-gumanoid-na-korporativ/",
+        "/articles/skolko-stoit-arenda-robota-gumanoida/"
       ],
       "recommendedNextWork": [
         "Generate review-only Markdown from canonical source-of-truth, not from scraped rendered HTML.",
