@@ -149,7 +149,7 @@ export function buildUnitreeG1AgibotX2Article(robots: ArticleRobotCard[]): Artic
       product: { eyebrow: 'Карточки роботов', title: 'Посмотрите обе модели отдельно', featuredSlugs: ['arenda-unitree-g1', 'arenda-agibot-x2'] },
       catalog: { eyebrow: 'Каталог', title: 'Другие роботы-гуманоиды для мероприятий', description: 'Если G1 и X2 не закрывают задачу полностью, посмотрите соседние модели: для сцены, промо, интерактива, фотозоны и делового события.', slugs: ['arenda-unitree-r1', 'arenda-unitree-h2', 'arenda-promobot-v4', 'arenda-robota-sofiya'] },
       relatedArticles: { eyebrow: 'Блог Кибер Гоши', title: 'Продолжить разбор', description: 'Следующие статьи помогут сравнить гуманоидов с другими роботами и подготовить площадку.' },
-      relatedCompilations: { eyebrow: 'Подборки', title: 'Посмотреть классы роботов', description: 'Подборки нужны для выбора не одной модели, а подходящего формата под событие.' },
+      relatedCompilations: { eyebrow: 'Подборки', title: 'Подборки роботов для аренды', description: 'Подборки нужны для выбора не одной модели, а подходящего формата под событие.' },
     },
   };
 }
