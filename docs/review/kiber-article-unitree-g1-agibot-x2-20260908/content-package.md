@@ -31,6 +31,13 @@ Yandex SERP shows direct comparison/info pages plus rental/service pages. Gap fo
 
 Hero: owner-provided wide image. In-text comparison: use catalog/robot-card images for Unitree G1 and Agibot X2 from repository only.
 
+
+## Keyword ownership / anti-cannibalization
+
+Project policy source: `data/seo/kiber-keyword-ownership-policy.json`.
+
+This article must not use generic compilation keys as primary targets. The primary article intent is the complex low-frequency comparison/question: `Unitree G1 или Agibot X2` / `какого робота-гуманоида выбрать для мероприятия`. Generic keys such as `аренда робота гуманоида`, `аренда роботов на мероприятие`, `робот на выставку` are supporting bridge terms only and should point users toward the future humanoid compilation. Exact model commercial demand stays with robot cards.
+
 ## Approval boundary
 
 This package is content candidate only. Not production, DNS, analytics, secrets, or live lead routing approval.

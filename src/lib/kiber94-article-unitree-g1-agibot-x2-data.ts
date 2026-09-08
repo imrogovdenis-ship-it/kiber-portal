@@ -16,12 +16,12 @@ export function buildUnitreeG1AgibotX2Article(robots: ArticleRobotCard[]): Artic
 
   return {
     seo: {
-      title: 'Unitree G1 или Agibot X2 — кого выбрать для мероприятия | КИБЕР ПОРТАЛ',
-      description: 'Сравниваем Unitree G1 и Agibot X2 для аренды на мероприятие: сцена, стенд, встреча гостей, фотозона, ограничения и выбор по сценарию.',
+      title: 'Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ',
+      description: 'Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.',
       canonical: '/articles/unitree-g1-ili-agibot-x2-kakogo-robota-vybrat/',
       h1: 'Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия',
       primaryKeyword: 'Unitree G1 или Agibot X2',
-      secondaryKeywords: ['Unitree G1', 'Agibot X2', 'аренда робота гуманоида', 'аренда роботов на мероприятие', 'робот для мероприятия', 'робот на выставку'],
+      secondaryKeywords: ['Unitree G1', 'Agibot X2', 'робот Unitree G1', 'робот Agibot X2', 'чем Unitree G1 отличается от Agibot X2', 'какой робот-гуманоид выбрать для мероприятия', 'робот-гуманоид для welcome-зоны', 'робот-гуманоид для стенда'],
     },
     breadcrumbs: [
       { name: 'Главная', url: '/' },

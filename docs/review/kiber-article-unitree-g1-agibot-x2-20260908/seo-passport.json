@@ -12,18 +12,34 @@
     "primary": "decision_support_commercial_article",
     "searcherProblem": "Организатор выбирает между двумя роботами-гуманоидами для мероприятия и хочет понять, кого брать под сцену, стенд, встречу гостей или фотозону.",
     "primaryKeyword": "Unitree G1 или Agibot X2",
-    "commercialPrimaryKeyword": "аренда робота гуманоида",
+    "commercialPrimaryKeyword": null,
     "secondaryKeywords": [
       "Unitree G1",
       "Agibot X2",
       "робот Unitree G1",
       "робот Agibot X2",
+      "чем Unitree G1 отличается от Agibot X2",
+      "какой робот-гуманоид выбрать для мероприятия",
+      "робот-гуманоид для welcome-зоны",
+      "робот-гуманоид для стенда"
+    ],
+    "keywordOwnership": "Статья забирает сложный НЧ intent выбора/сравнения Unitree G1 vs Agibot X2 для мероприятия. Generic class/scenario keys вроде «аренда робота гуманоида», «аренда роботов на мероприятие», «робот на выставку» принадлежат будущим подборкам и в статье используются только как contextual/secondary bridge, не как primary.",
+    "articlePrimaryLongTail": "какого робота-гуманоида выбрать для мероприятия",
+    "compilationBridgeKeywords": [
+      "аренда робота гуманоида",
+      "роботы гуманоиды аренда",
       "аренда роботов на мероприятие",
       "робот для мероприятия",
-      "робот на выставку",
-      "роботы гуманоиды аренда"
+      "робот на выставку"
     ],
-    "keywordOwnership": "Статья забирает сравнение/выбор и event-intent; robot-card pages остаются exact-model routes для аренды Unitree G1 и Agibot X2."
+    "longTailKeywords": [
+      "Unitree G1 или Agibot X2 для мероприятия",
+      "какого робота-гуманоида выбрать для мероприятия",
+      "чем Unitree G1 отличается от Agibot X2",
+      "робот-гуманоид для welcome-зоны",
+      "какой гуманоид подойдёт для выставочного стенда",
+      "кого выбрать для встречи гостей Unitree G1 или Agibot X2"
+    ]
   },
   "wordstatFindings": [
     {
@@ -79,5 +95,16 @@
       "reviewStatus": "owner_provided_for_hero"
     },
     "comparisonImages": "Внутри статьи использовать catalog/robot-card images из репозитория для Unitree G1 и Agibot X2; не подставлять внешние или generic-заглушки."
-  }
+  },
+  "policyEvidence": "data/seo/kiber-keyword-ownership-policy.json",
+  "metaTitle": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
+  "metaDescription": "Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.",
+  "articleSeoChecklistApplied": [
+    "Primary keyword is a complex long-tail article intent, not a generic compilation key.",
+    "Meta title/H1 include the comparison/question/scenario angle.",
+    "Meta description can mention rental context, but must not position a compilation key as the main target.",
+    "Secondary keywords separate exact model entities from contextual compilation bridges.",
+    "Internal links route generic class/scenario demand to the relevant compilation page and exact model demand to robot cards.",
+    "SEO passport records keywordOwnership before writing visible copy."
+  ]
 }
