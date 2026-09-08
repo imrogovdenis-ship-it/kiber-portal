@@ -12,7 +12,9 @@ test('Unitree G1/R1/H2 article preview uses approved article template and previe
   assert.match(route, /noindex=\{true\}/);
   assert.match(route, /faqPageJsonLd\(\{ items: template\.faq\.items \}\)/);
   assert.match(data, /showInventory: false/);
-  assert.match(component, /\{\(content\?\.showInventory \?\? true\) && \(/);
+  assert.match(component, /const isInventoryMode = content\?\.showInventory \?\? true/);
+  assert.match(component, /\{isInventoryMode && \(/);
+  assert.match(component, /\{\(isInventoryMode \|\| content\?\.pairedEnumeration\) && \(/);
 });
 
 test('Unitree G1/R1/H2 article content maps owner doc into approved block families', () => {
