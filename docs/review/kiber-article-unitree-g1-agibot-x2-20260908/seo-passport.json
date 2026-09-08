@@ -94,7 +94,52 @@
       "seoAlt": "Unitree G1 и Agibot X2 рядом в студии: сравнение роботов-гуманоидов для мероприятия",
       "reviewStatus": "owner_provided_for_hero"
     },
-    "comparisonImages": "Внутри статьи использовать catalog/robot-card images из репозитория для Unitree G1 и Agibot X2; не подставлять внешние или generic-заглушки."
+    "comparisonImages": "Внутри статьи использовать catalog/robot-card images из репозитория для Unitree G1 и Agibot X2; не подставлять внешние или generic-заглушки.",
+    "mediaMoment": {
+      "src": "/images/articles/unitree-g1-agibot-x2-hero.webp",
+      "actualDescription": "Два белых робота-гуманоида на сером студийном фоне: один машет рукой, второй держит руки над головой; сверху видны студийные световые приборы.",
+      "seoAlt": "Unitree G1 и Agibot X2 в студии перед сравнением роботов-гуманоидов для мероприятия",
+      "readerCaption": "Слева и справа — два разных сценарных образа: деловой гуманоид для вау-эффекта и робот-персонаж для контакта с гостями.",
+      "reviewStatus": "owner_feedback_rewritten_for_reader"
+    },
+    "gallery": [
+      {
+        "robot": "Unitree G1",
+        "src": "/images/tild6333-3137-4465-b265-323436646539__06.jpg",
+        "actualDescription": "Unitree G1 стоит на выставочном стенде НИЖФАРМ и пожимает руку посетителю.",
+        "seoAlt": "Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ"
+      },
+      {
+        "robot": "Agibot X2",
+        "src": "/images/tild6664-3537-4635-a266-633164383463__05.jpg",
+        "actualDescription": "Agibot X2 на выставке общается с посетителями.",
+        "seoAlt": "Agibot X2 общается с посетителями выставки рядом со стендом"
+      },
+      {
+        "robot": "Unitree G1",
+        "src": "/images/tild6664-3237-4964-b364-616162363835__08.jpg",
+        "actualDescription": "Unitree G1 сидит в магазине одежды и держит в руках кроссовок.",
+        "seoAlt": "Unitree G1 в промо-зоне магазина одежды"
+      },
+      {
+        "robot": "Agibot X2",
+        "src": "/images/tild3730-3866-4365-b461-336133633866__01.jpg",
+        "actualDescription": "Agibot X2 рядом с человеком поднимает руку для совместного кадра.",
+        "seoAlt": "Agibot X2 рядом с человеком для фотомомента"
+      },
+      {
+        "robot": "Unitree G1",
+        "src": "/images/tild6262-6336-4038-a130-626264326663__02.jpg",
+        "actualDescription": "Unitree G1 бежит вперёд на нейтральном студийном фоне.",
+        "seoAlt": "Unitree G1 демонстрирует динамичное движение"
+      },
+      {
+        "robot": "Agibot X2",
+        "src": "/images/tild3063-6333-4161-b064-343764636537__011.jpg",
+        "actualDescription": "Agibot X2 танцует на сером фоне.",
+        "seoAlt": "Agibot X2 танцует во время демонстрации"
+      }
+    ]
   },
   "policyEvidence": "data/seo/kiber-keyword-ownership-policy.json",
   "metaTitle": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
@@ -106,5 +151,16 @@
     "Secondary keywords separate exact model entities from contextual compilation bridges.",
     "Internal links route generic class/scenario demand to the relevant compilation page and exact model demand to robot cards.",
     "SEO passport records keywordOwnership before writing visible copy."
+  ],
+  "ownerFeedbackApplied": [
+    "Reduced article block vertical padding for this preview.",
+    "Split Gosha quote into bold first paragraph and regular second paragraph.",
+    "Rewrote mediaMoment title/description/caption for readers.",
+    "Added curated alternating gallery from Unitree G1 and Agibot X2 robot-page galleries.",
+    "Rewrote gallery title/description for readers.",
+    "Expanded formats block to six formats in popularity order, including Выставка and Промо-акция.",
+    "Removed pairedEnumeration from this article rendering.",
+    "Product cards show both Unitree G1 and Agibot X2.",
+    "Catalog shows other humanoids only: Unitree R1, Unitree H2, Promobot V4, София."
   ]
 }

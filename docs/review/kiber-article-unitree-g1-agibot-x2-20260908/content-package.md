@@ -41,3 +41,17 @@ This article must not use generic compilation keys as primary targets. The prima
 ## Approval boundary
 
 This package is content candidate only. Not production, DNS, analytics, secrets, or live lead routing approval.
+
+## Owner feedback applied — article #1
+
+These changes are specific to this article and are not a universal rule for all future articles.
+
+- Reduced vertical spacing between article blocks.
+- Split Gosha quote: first paragraph bold, second paragraph regular.
+- Rewrote “Визуальный ориентир” for readers, not as technical media notes.
+- Replaced gallery with six curated robot-page gallery images, alternating Unitree G1 / Agibot X2.
+- Rewrote gallery title and description for readers.
+- Expanded “Форматы” to six items in popularity order: Выставка, Промо-акция, Презентация продукта, Встреча гостей, Фотозона, Семейный праздник или открытие.
+- Removed “Перечисление” from this article.
+- Product cards now show both robots from the article.
+- Catalog block now shows other humanoids, not G1/X2.

@@ -30,7 +30,7 @@ export type ArticleContent = {
   seoIntro?: { eyebrow?: string; title: string; paragraphs: string[] };
   plainText?: { title: string; paragraphs: string[] };
   mediaMoment?: { eyebrow?: string; title: string; description: string; image: { src: string; alt: string }; caption?: string };
-  gallery?: { eyebrow?: string; title: string; description: string; sliderId?: string };
+  gallery?: { eyebrow?: string; title: string; description: string; sliderId?: string; images?: { src: string; alt: string; title?: string }[] };
   comparison?: {
     eyebrow?: string;
     title: string;
@@ -42,8 +42,8 @@ export type ArticleContent = {
   numberedUseCases?: { eyebrow?: string; title: string; description: string; items: { number: string; title: string; text: string }[] };
   checklist?: { eyebrow?: string; title: string; description: string; items: { title: string; text: string }[] };
   pairedEnumeration?: { eyebrow?: string; title: string; description: string; items: { title: string; text: string }[] };
-  product?: { eyebrow?: string; title: string; featuredSlug?: string };
-  catalog?: { eyebrow?: string; title: string; description: string };
+  product?: { eyebrow?: string; title: string; featuredSlug?: string; featuredSlugs?: string[] };
+  catalog?: { eyebrow?: string; title: string; description: string; slugs?: string[] };
   relatedArticles?: { eyebrow?: string; title: string; description: string };
   relatedCompilations?: { eyebrow?: string; title: string; description: string };
 };
