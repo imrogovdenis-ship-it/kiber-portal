@@ -1,0 +1,37 @@
+{
+  "status": "approved",
+  "approvalType": "owner_visual_content_review",
+  "scope": "all_24_robot_card_preview_pages_as_is",
+  "owner": "Александр Маркин",
+  "quote": "Мне все нравится, давай утверждать и записывать как есть в проект.",
+  "approvedAt": "2026-09-08T06:36:00+00:00",
+  "reviewSurface": {
+    "stagingBaseUrl": "https://alex-kiber-robot-pilot-821e8a2.38.180.37.42.nip.io/preview/kiber-94/robot-card/",
+    "pullRequest": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/79",
+    "pullRequestNumber": 79,
+    "commit": "d7c36af5fd36d3be68b2d1dedf9a4770cdfa5d8b",
+    "stagingImage": "alex-kiber-robot-pilot:pr79-final24-preview-d7c36af5fd36"
+  },
+  "approvedGates": [
+    "24/24 robot-card preview pages ready for owner visual/content review",
+    "no visible internal/review/Wordstat/SERP copy in rendered pages",
+    "exactly one H1 on each rendered preview page",
+    "seoIntent block present on each rendered preview page",
+    "Hero CTA opens messenger popup",
+    "gallery excludes /images/kiber-45/ and legacy hero assets",
+    "capability images come from separate registry",
+    "6 capability cards, 6 scenario cards, 8 FAQ items on each page"
+  ],
+  "notApproved": [
+    "production deploy",
+    "DNS changes",
+    "secrets changes",
+    "analytics activation",
+    "live lead routing",
+    "public route replacement"
+  ],
+  "evidence": [
+    "docs/review/kiber-robot-card-final-24-audit-20260908/rendered-audit.json",
+    "docs/review/kiber-robot-card-final-24-audit-20260908/approval-package.md"
+  ]
+}
