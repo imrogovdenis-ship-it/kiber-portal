@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-senserobot",
+  "canonicalPath": "/robots/arenda-senserobot/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-senserobot/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "SenseRobot",
+    "sourceName": "робота-шахматиста SenseRobot",
+    "modelName": "SenseRobot",
+    "brand": "SenseRobot",
+    "category": {
+      "primary": "robot_service",
+      "labels": [
+        "robot_service"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "07.08.2026 – 07.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда SenseRobot": 0,
+        "SenseRobot шахматы": 0,
+        "аренда робота шахматиста": 8,
+        "робот шахматист аренда": 8,
+        "SenseRobot": 35
+      },
+      "evidence": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда SenseRobot",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "аренда робота шахматиста",
+          "total": 8,
+          "rows": 2,
+          "noResults": false
+        },
+        {
+          "query": "робот шахматист аренда",
+          "total": 8,
+          "rows": 2,
+          "noResults": false
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "SenseRobot шахматы",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "SenseRobot",
+          "total": 35,
+          "rows": 3,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact model/entity intent stays on robot-card; stronger generic demand is context only and belongs to Подборки/articles."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch4-robot-cards-20260908/",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json",
+        "data/review/media-rights-robot-cards.json"
+      ],
+      "limitation": "Search result collection was partially blocked/low-signal for niche model queries; source facts and media gaps are recorded honestly."
+    },
+    "contentGaps": [
+      "Show exact rental/event use for this specific model, not generic robot rental.",
+      "Explain operator, placement, queue/timing and logistics before owner review.",
+      "Keep prices and capabilities tied to source data; unsupported claims remain out of visible copy."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда SenseRobot — робот-шахматист для мероприятия",
+    "metaDescription": "Аренда SenseRobot: робот-шахматист для интеллектуальной игровой зоны, выставки, клуба, школы или корпоративного события. Настройка и оператор.",
+    "h1": "Аренда робота-шахматиста SenseRobot",
+    "primaryKeyword": "аренда SenseRobot",
+    "secondaryKeywords": [
+      "SenseRobot аренда",
+      "прокат SenseRobot",
+      "робот шахматист аренда",
+      "аренда робота шахматиста",
+      "SenseRobot шахматы"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда SenseRobot",
+    "secondaryKeywords": [
+      "SenseRobot аренда",
+      "прокат SenseRobot",
+      "робот шахматист аренда",
+      "аренда робота шахматиста",
+      "SenseRobot шахматы"
+    ],
+    "modelNameVariants": [
+      "SenseRobot",
+      "SenseRobot",
+      "робота-шахматиста SenseRobot"
+    ],
+    "entitySynonyms": [
+      "робот-шахматист",
+      "шахматный робот",
+      "интеллектуальный игровой робот",
+      "robot_service"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 6,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

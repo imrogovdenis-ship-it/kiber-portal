@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "batch": "batch4-robot-cards",
+  "robots": [
+    "arenda-inchbot-l1-w-edu",
+    "arenda-klipmeiker",
+    "arenda-roboshashki",
+    "arenda-senserobot",
+    "arenda-uv-box"
+  ],
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false
+  }
+}

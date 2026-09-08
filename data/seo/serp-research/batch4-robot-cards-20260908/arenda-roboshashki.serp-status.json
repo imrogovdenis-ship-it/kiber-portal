@@ -1,0 +1,6 @@
+{
+  "slug": "arenda-roboshashki",
+  "query": "аренда робота для игры в шашки",
+  "status": "needs_live_verification",
+  "reason": "remote browser tunnel dropped and direct SERP fetch returned no usable unblocked results"
+}

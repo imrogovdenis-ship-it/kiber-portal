@@ -1,0 +1,15 @@
+{
+  "slug": "arenda-senserobot",
+  "query": "аренда робота шахматиста SenseRobot",
+  "engine": "yandex",
+  "url": "https://yandex.ru/search/?text=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B0%20SenseRobot&lr=213",
+  "httpStatus": 200,
+  "blocked": true,
+  "results": [
+    {
+      "title": "Yandex SmartCaptcha",
+      "url": "https://yandex.cloud/ru/services/smartcaptcha?utm_source=captcha&utm_medium=chbx&utm_campaign=security"
+    }
+  ],
+  "textSample": " Вы не робот? @media only screen and (min-width:651px){body{background-image:url('https://captcha-backgrounds.s3.yandex.net/static/default-background.jpg')}}.LogoLink{background-image:url('https://cdnrhkgfkkpupuotntfj.svc.cdn.yandex.net/yandexrulogo.svg')}.Theme_root_default{--smart-captcha-background-color:#fff;--checkbox-captcha-error-color:#f33;--checkbox-captcha-border:1px solid rgba(0,0,0,0.15);--checkbox-captcha-border-radius:11px;--anchor-background-color:#fff;--anchor-background-color-error:rgba(255,51,51,0.12);--anchor-background-color-checked:#5282ff;--anchor-check-mark-color:#fff;--anchor-border:2px solid #ccc;--spin-view-captcha-border-color:#5c81d1;--advanced-captcha-border-radius:11px;--advanced-captcha-image-preview-background-color:rgba(0,0,0,0.05);--textinput-border:2px solid rgba(0,0,0,0.1);--textinput-border-focused:2px solid rgba(0,0,0,0.3);--textinput-view-default-fill-color-base:#fff;--advanced-captcha-tooltip-background-color:#adafb6;--link-view-default-typo-colo"
+}

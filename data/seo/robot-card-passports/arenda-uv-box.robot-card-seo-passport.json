@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-uv-box",
+  "canonicalPath": "/robots/arenda-uv-box/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-uv-box/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "UV-BOX",
+    "sourceName": "интерактивной витрины UV-BOX",
+    "modelName": "UV-BOX",
+    "brand": "UV-BOX",
+    "category": {
+      "primary": "robot_service",
+      "labels": [
+        "robot_service"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "07.08.2026 – 07.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда UV-BOX": 0,
+        "интерактивная витрина UV-BOX": 0,
+        "аренда интерактивной витрины": 0,
+        "интерактивная витрина аренда": 0,
+        "UV BOX витрина": 0
+      },
+      "evidence": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда UV-BOX",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "аренда интерактивной витрины",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "интерактивная витрина аренда",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "интерактивная витрина UV-BOX",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "UV BOX витрина",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        }
+      ],
+      "interpretation": "Exact model/entity intent stays on robot-card; stronger generic demand is context only and belongs to Подборки/articles."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch4-robot-cards-20260908/",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json",
+        "data/review/media-rights-robot-cards.json"
+      ],
+      "limitation": "Search result collection was partially blocked/low-signal for niche model queries; source facts and media gaps are recorded honestly."
+    },
+    "contentGaps": [
+      "Show exact rental/event use for this specific model, not generic robot rental.",
+      "Explain operator, placement, queue/timing and logistics before owner review.",
+      "Keep prices and capabilities tied to source data; unsupported claims remain out of visible copy."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда UV-BOX — интерактивная витрина для презентации продукта",
+    "metaDescription": "Аренда UV-BOX: интерактивная сенсорная витрина с 3D-эффектом для выставки, шоурума, презентации продукта или retail-зоны.",
+    "h1": "Аренда интерактивной витрины UV-BOX",
+    "primaryKeyword": "аренда UV-BOX",
+    "secondaryKeywords": [
+      "UV-BOX аренда",
+      "прокат UV-BOX",
+      "интерактивная витрина UV-BOX",
+      "аренда интерактивной витрины",
+      "сенсорная витрина для мероприятия"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда UV-BOX",
+    "secondaryKeywords": [
+      "UV-BOX аренда",
+      "прокат UV-BOX",
+      "интерактивная витрина UV-BOX",
+      "аренда интерактивной витрины",
+      "сенсорная витрина для мероприятия"
+    ],
+    "modelNameVariants": [
+      "UV-BOX",
+      "UV-BOX",
+      "интерактивной витрины UV-BOX"
+    ],
+    "entitySynonyms": [
+      "интерактивная витрина",
+      "сенсорная витрина",
+      "цифровой консультант",
+      "robot_service"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 6,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

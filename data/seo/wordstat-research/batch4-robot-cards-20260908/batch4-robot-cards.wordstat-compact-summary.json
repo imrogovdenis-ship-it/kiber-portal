@@ -1,0 +1,197 @@
+[
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "label": "Inchbot L1-W EDU",
+    "period": "07.08.2026 – 07.09.2026",
+    "queries": [
+      {
+        "query": "аренда Inchbot L1-W EDU",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "Inchbot L1-W EDU",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "аренда робота собаки",
+        "total": 54,
+        "rows": 2,
+        "noResults": false
+      },
+      {
+        "query": "робот собака аренда",
+        "total": 54,
+        "rows": 2,
+        "noResults": false
+      },
+      {
+        "query": "Inchbot робот собака",
+        "total": 1,
+        "rows": 1,
+        "noResults": true
+      }
+    ],
+    "exactCommercialTotal": 0,
+    "maxSupportTotal": 54
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "label": "Клипмейкер",
+    "period": "07.08.2026 – 07.09.2026",
+    "queries": [
+      {
+        "query": "аренда Клипмейкер",
+        "total": 1,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "робот Клипмейкер",
+        "total": 2,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "аренда робота для видео",
+        "total": 12,
+        "rows": 2,
+        "noResults": false
+      },
+      {
+        "query": "робот видеосъемка",
+        "total": 48,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "клипмейкер робот",
+        "total": 2,
+        "rows": 1,
+        "noResults": true
+      }
+    ],
+    "exactCommercialTotal": 1,
+    "maxSupportTotal": 48
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "label": "Робошашки",
+    "period": "07.08.2026 – 07.09.2026",
+    "queries": [
+      {
+        "query": "аренда робошашки",
+        "total": 1,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "робот шашки",
+        "total": 78,
+        "rows": 3,
+        "noResults": false
+      },
+      {
+        "query": "аренда робота для игры",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "робот для игры в шашки",
+        "total": 10,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "робот шашист",
+        "total": 4,
+        "rows": 1,
+        "noResults": true
+      }
+    ],
+    "exactCommercialTotal": 1,
+    "maxSupportTotal": 78
+  },
+  {
+    "slug": "arenda-senserobot",
+    "label": "SenseRobot",
+    "period": "07.08.2026 – 07.09.2026",
+    "queries": [
+      {
+        "query": "аренда SenseRobot",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "SenseRobot шахматы",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "аренда робота шахматиста",
+        "total": 8,
+        "rows": 2,
+        "noResults": false
+      },
+      {
+        "query": "робот шахматист аренда",
+        "total": 8,
+        "rows": 2,
+        "noResults": false
+      },
+      {
+        "query": "SenseRobot",
+        "total": 35,
+        "rows": 3,
+        "noResults": false
+      }
+    ],
+    "exactCommercialTotal": 0,
+    "maxSupportTotal": 35
+  },
+  {
+    "slug": "arenda-uv-box",
+    "label": "UV-BOX",
+    "period": "07.08.2026 – 07.09.2026",
+    "queries": [
+      {
+        "query": "аренда UV-BOX",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "интерактивная витрина UV-BOX",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "аренда интерактивной витрины",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "интерактивная витрина аренда",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      },
+      {
+        "query": "UV BOX витрина",
+        "total": 0,
+        "rows": 1,
+        "noResults": true
+      }
+    ],
+    "exactCommercialTotal": 0,
+    "maxSupportTotal": 0
+  }
+]

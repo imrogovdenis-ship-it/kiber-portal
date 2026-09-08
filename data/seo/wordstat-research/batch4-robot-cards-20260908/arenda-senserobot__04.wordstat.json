@@ -1,0 +1,29 @@
+{
+  "slug": "arenda-senserobot",
+  "queryIndex": 4,
+  "query": "робот шахматист аренда",
+  "source": "live_wordstat_chrome_cdp",
+  "cdpPort": 9224,
+  "region": "all",
+  "view": "table",
+  "devices": "visible defaults",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D1%88%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D0%B8%D1%81%D1%82%20%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0",
+  "collectedAt": "2026-09-08T05:14:32Z",
+  "period": "07.08.2026 – 05.09.2026",
+  "total": 8,
+  "noResults": false,
+  "captcha": false,
+  "loginRequired": false,
+  "rows": [
+    {
+      "phrase": "за 07.08.2026 – 05.09.2026:",
+      "count": 8
+    },
+    {
+      "phrase": "+робот шахматист аренда",
+      "count": 8
+    }
+  ],
+  "screenshot": null,
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот шахматист аренда\n \nза 07.08.2026 – 05.09.2026: 8\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+робот шахматист аренда\t8\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+}

@@ -74,6 +74,11 @@ const relatedSlugsByRobotSlug: Record<string, string[]> = {
   'arenda-glambot': ['arenda-sketchbot', 'arenda-robota-hudozhnika-a4', 'arenda-robot-barmen', 'arenda-promobot-v4'],
   'arenda-sketchbot': ['arenda-robota-hudozhnika-a4', 'arenda-glambot', 'arenda-robot-barmen', 'arenda-promobot-v4'],
   'arenda-robota-hudozhnika-a4': ['arenda-sketchbot', 'arenda-glambot', 'arenda-robot-barmen', 'arenda-promobot-v4'],
+  'arenda-inchbot-l1-w-edu': ['arenda-xiaomi-cyberdog-2', 'arenda-unitree-go2', 'arenda-promobot-v4', 'arenda-kettybot'],
+  'arenda-klipmeiker': ['arenda-glambot', 'arenda-sketchbot', 'arenda-robota-hudozhnika-a4', 'arenda-promobot-v4'],
+  'arenda-roboshashki': ['arenda-senserobot', 'arenda-promobot-v4', 'arenda-sketchbot', 'arenda-robota-hudozhnika-a4'],
+  'arenda-senserobot': ['arenda-roboshashki', 'arenda-promobot-v4', 'arenda-sketchbot', 'arenda-robota-hudozhnika-a4'],
+  'arenda-uv-box': ['arenda-klipmeiker', 'arenda-glambot', 'arenda-promobot-v4', 'arenda-kettybot'],
 };
 const fallbackFeaturedSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
 const featuredSlugs = relatedSlugsByRobotSlug[robotSlug] ?? fallbackFeaturedSlugs;
@@ -86,6 +91,13 @@ const relatedRobotDescriptionBySlug: Record<string, string> = {
   'arenda-robota-hudozhnika-a4': 'Робот-художник для бумажных портретов A4: больше внимания к детализации, очереди и выдаче готовых работ.',
   'arenda-kettybot': 'Робот-официант с подносами и экраном для маршрутов подачи, промо и сервисных зон на мероприятии.',
   'arenda-promobot-v4': 'Промо-робот с экраном и речевым сценарием для стойки регистрации, стенда или брендированной зоны.',
+  'arenda-xiaomi-cyberdog-2': 'Робот-собака для динамичного показа движения, фото-точки и технологичной зоны с оператором.',
+  'arenda-unitree-go2': 'Четвероногий робот для демонстраций, проходов по зоне и спокойного общения с гостями под контролем оператора.',
+  'arenda-inchbot-l1-w-edu': 'Образовательная робот-собака для STEM-показа, детской зоны и технологичного стенда.',
+  'arenda-klipmeiker': 'Роботизированная камера для коротких event-роликов, бренд-зоны и управляемой съёмочной точки.',
+  'arenda-roboshashki': 'Игровой робот с шашками для спокойного турнира, семейной зоны или демонстрации манипулятора.',
+  'arenda-senserobot': 'Робот-шахматист для интеллектуальной игровой зоны, клуба, школы или технологичной выставки.',
+  'arenda-uv-box': 'Интерактивная витрина с сенсорным экраном для презентации продукта, retail-зоны или шоурума.',
 };
 const relatedRobots = getRobotPages()
   .filter((robot) => featuredSlugs.includes(robot.slug))
@@ -238,6 +250,12 @@ const articleHrefsByRobotSlug: Record<string, string[]> = {
   'arenda-glambot': ['/arenda-robotov-na-meropriyatie'],
   'arenda-sketchbot': ['/arenda-robotov-na-meropriyatie'],
   'arenda-robota-hudozhnika-a4': ['/arenda-robotov-na-meropriyatie'],
+  // Batch 4 has no approved relevant article-detail set yet; hide the block instead of showing homepage filler.
+  'arenda-inchbot-l1-w-edu': [],
+  'arenda-klipmeiker': [],
+  'arenda-roboshashki': [],
+  'arenda-senserobot': [],
+  'arenda-uv-box': [],
 };
 const ownerArticleBlock = ownerArticleBlockBySlug[robotSlug];
 const articleHrefs = articleHrefsByRobotSlug[robotSlug];
