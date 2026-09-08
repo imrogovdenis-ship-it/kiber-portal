@@ -15,3 +15,13 @@ test('article #1 latest owner visual feedback is encoded in source contracts', (
   assert.match(data, /title: 'Подборки роботов для аренды'/);
   assert.doesNotMatch(data, /Посмотреть классы роботов/);
 });
+
+
+test('article #1 gallery keeps robot-prefixed slider id for cached/reference drag script compatibility', () => {
+  assert.match(data, /sliderId: 'robot-unitree-g1-agibot-x2-gallery'/);
+  assert.doesNotMatch(data, /sliderId: 'unitree-g1-agibot-x2-gallery'/);
+  assert.match(component, /data-drag-slider=\{gallerySliderId\}/);
+  assert.match(component, /data-slider-prev=\{`\[data-drag-slider='\$\{gallerySliderId\}'\]`\}/);
+  assert.match(sliderScript, /mousedown/);
+  assert.match(sliderScript, /scrollLeft = startScroll - dx/);
+});

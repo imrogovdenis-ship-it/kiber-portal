@@ -82,7 +82,7 @@ export function buildUnitreeG1AgibotX2Article(robots: ArticleRobotCard[]): Artic
         eyebrow: 'Галерея',
         title: 'Как G1 и X2 выглядят в движении и рядом с людьми',
         description: 'В сравнении важны не только названия моделей. Посмотрите кадры из галерей самих роботов: где-то робот собирает внимание у стенда, где-то показывает жест, движение или контакт с человеком.',
-        sliderId: 'unitree-g1-agibot-x2-gallery',
+        sliderId: 'robot-unitree-g1-agibot-x2-gallery',
         images: [
           { src: '/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-nizhfarm-handshake.webp', alt: 'Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ', title: 'Unitree G1 на стенде' },
           { src: '/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-exhibition-visitors.webp', alt: 'Agibot X2 общается с посетителями выставки рядом со стендом', title: 'Agibot X2 с посетителями' },
