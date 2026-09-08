@@ -1,0 +1,83 @@
+{
+  "slug": "unitree-g1-ili-agibot-x2-kakogo-robota-vybrat",
+  "route": "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+  "publicRouteProposal": "/articles/unitree-g1-ili-agibot-x2-kakogo-robota-vybrat/",
+  "title": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать для мероприятия",
+  "status": "draft_for_owner_review_not_public_approved",
+  "wordstatStatus": "checked_live",
+  "wordstatEvidence": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/summary.wordstat.json",
+  "serpStatus": "checked_live_yandex",
+  "serpEvidence": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/serp/summary.serp.json",
+  "seoIntent": {
+    "primary": "decision_support_commercial_article",
+    "searcherProblem": "Организатор выбирает между двумя роботами-гуманоидами для мероприятия и хочет понять, кого брать под сцену, стенд, встречу гостей или фотозону.",
+    "primaryKeyword": "Unitree G1 или Agibot X2",
+    "commercialPrimaryKeyword": "аренда робота гуманоида",
+    "secondaryKeywords": [
+      "Unitree G1",
+      "Agibot X2",
+      "робот Unitree G1",
+      "робот Agibot X2",
+      "аренда роботов на мероприятие",
+      "робот для мероприятия",
+      "робот на выставку",
+      "роботы гуманоиды аренда"
+    ],
+    "keywordOwnership": "Статья забирает сравнение/выбор и event-intent; robot-card pages остаются exact-model routes для аренды Unitree G1 и Agibot X2."
+  },
+  "wordstatFindings": [
+    {
+      "query": "Unitree G1",
+      "total": 2743
+    },
+    {
+      "query": "робот Unitree G1",
+      "total": 1087
+    },
+    {
+      "query": "Agibot X2",
+      "total": 129
+    },
+    {
+      "query": "робот Agibot X2",
+      "total": 8
+    },
+    {
+      "query": "аренда робота гуманоида",
+      "total": 80
+    },
+    {
+      "query": "аренда роботов на мероприятие",
+      "total": 69
+    },
+    {
+      "query": "робот для мероприятия",
+      "total": 55
+    },
+    {
+      "query": "Unitree G1 аренда",
+      "total": 14
+    },
+    {
+      "query": "аренда Agibot X2",
+      "total": 0
+    }
+  ],
+  "contentGaps": [
+    "Не писать абстрактное “какой круче”: нужен выбор по сценариям мероприятия.",
+    "Развести модельную узнаваемость Unitree G1 и “персонажность”/экранную мимику Agibot X2 без недоказанных обещаний.",
+    "Сразу проговорить ограничения: оператор, ровная площадка, сценарная работа, не автономный “живой интеллект”.",
+    "Дать краткую таблицу выбора: встреча гостей, сцена, стенд, фотозона, дети/семейное мероприятие, деловой формат.",
+    "Вынести commercial CTA к менеджеру: дата и площадка важнее теоретического выбора.",
+    "Избежать повторяющихся generic-блоков из PR #80: каждый блок должен решать отдельный вопрос выбора."
+  ],
+  "mediaMap": {
+    "hero": {
+      "src": "/images/articles/unitree-g1-agibot-x2-hero.webp",
+      "actualDescription": "Два белых робота-гуманоида на сером студийном фоне: один машет рукой, второй держит руки над головой; сверху видны студийные световые приборы.",
+      "seoAlt": "Unitree G1 и Agibot X2 рядом в студии: сравнение роботов-гуманоидов для мероприятия",
+      "reviewStatus": "owner_provided_for_hero"
+    },
+    "comparisonImages": "Внутри статьи использовать catalog/robot-card images из репозитория для Unitree G1 и Agibot X2; не подставлять внешние или generic-заглушки."
+  }
+}

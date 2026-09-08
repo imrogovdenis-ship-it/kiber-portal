@@ -1,0 +1,21 @@
+{
+  "slug": "unitree-g1-ili-agibot-x2-kakogo-robota-vybrat",
+  "title": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать для мероприятия",
+  "sourceDocuments": [
+    "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/source/claude-draft-unitree-g1-agibot-x2.docx",
+    "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/source/claude-draft-unitree-g1-agibot-x2.md",
+    "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/source/hero-unitree-g1-agibot-x2.png"
+  ],
+  "robots": [
+    "Unitree G1",
+    "Agibot X2"
+  ],
+  "heroImage": {
+    "path": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/source/hero-unitree-g1-agibot-x2.png",
+    "width": 2720,
+    "height": 1536,
+    "sha256": "b973fb0045e4fad9cb5fcb05a35b3cdbda437371aba9ba995712d1dd2cc4543c"
+  },
+  "docxSha256": "44ba215cd646252897118d7afebeecb5834a60bad0ae29322e5be7dbeb055b1f",
+  "intakeStatus": "source_corpus_only_not_approved_public_copy"
+}

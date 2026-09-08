@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import ArticleBlocksTemplate from '../../../../../components/templates/ArticleBlocksTemplate.astro';
+import { type ArticleRobotCard } from '../../../../../lib/kiber94-article-template-data';
+import { buildUnitreeG1AgibotX2Article } from '../../../../../lib/kiber94-article-unitree-g1-agibot-x2-data';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../../../lib/seo';
+import { getRobotPageBySlug } from '../../../../../lib/robot-pages';
+
+const slugs = ['arenda-unitree-g1', 'arenda-agibot-x2'];
+const robotCards: ArticleRobotCard[] = slugs
+  .map((slug) => getRobotPageBySlug(slug))
+  .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+  .map((robot, index) => ({
+    slug: robot.slug,
+    href: robot.route,
+    title: robot.identity.name,
+    category: 'Робот-гуманоид',
+    price: robot.pricing.display,
+    price_disclaimer: 'Не является публичной офертой',
+    description: robot.seo.description,
+    badge: index === 0 ? 'Для деловых событий' : 'Для персонажного контакта',
+    image: robot.media.hero,
+    analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
+  }));
+
+const template = buildUnitreeG1AgibotX2Article(robotCards);
+---
+
+<BaseLayout
+  title={template.seo.title}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
+  noindex={true}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1">
+    <ArticleBlocksTemplate {template} />
+  </main>
+</BaseLayout>

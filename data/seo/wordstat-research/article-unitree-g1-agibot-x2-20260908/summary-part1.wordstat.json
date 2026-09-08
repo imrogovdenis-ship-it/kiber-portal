@@ -1,0 +1,150 @@
+{
+  "status": "checked_live",
+  "visibleTab": true,
+  "cdpPort": 9225,
+  "collectedAt": "2026-09-08T10:18:52.496Z",
+  "queries": [
+    {
+      "query": "Unitree G1",
+      "total": 2743,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 2743
+        },
+        {
+          "phrase": "+unitree g1",
+          "monthly_queries": 2743
+        },
+        {
+          "phrase": "+робот unitree g1",
+          "monthly_queries": 1087
+        },
+        {
+          "phrase": "+unitree g1 basic",
+          "monthly_queries": 690
+        },
+        {
+          "phrase": "+гуманоид unitree g1",
+          "monthly_queries": 352
+        },
+        {
+          "phrase": "+робот гуманоид unitree g1",
+          "monthly_queries": 338
+        },
+        {
+          "phrase": "+робот unitree g1 basic",
+          "monthly_queries": 320
+        },
+        {
+          "phrase": "+unitree g1 купить",
+          "monthly_queries": 275
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/01-unitree-g1.wordstat.json",
+      "screenshot": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/wordstat/01-unitree-g1.png"
+    },
+    {
+      "query": "Agibot X2",
+      "total": 129,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 129
+        },
+        {
+          "phrase": "+agibot x2",
+          "monthly_queries": 129
+        },
+        {
+          "phrase": "+agibot x2 ultra",
+          "monthly_queries": 95
+        },
+        {
+          "phrase": "+гуманоид agibot x2 ultra",
+          "monthly_queries": 23
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/02-agibot-x2.wordstat.json",
+      "screenshot": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/wordstat/02-agibot-x2.png"
+    },
+    {
+      "query": "робот Unitree G1",
+      "total": 1087,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 1087
+        },
+        {
+          "phrase": "+робот unitree g1",
+          "monthly_queries": 1087
+        },
+        {
+          "phrase": "+робот гуманоид unitree g1",
+          "monthly_queries": 338
+        },
+        {
+          "phrase": "+робот unitree g1 basic",
+          "monthly_queries": 320
+        },
+        {
+          "phrase": "+гуманоидный робот unitree g1",
+          "monthly_queries": 119
+        },
+        {
+          "phrase": "+unitree g1 basic робот гуманоид",
+          "monthly_queries": 119
+        },
+        {
+          "phrase": "+робот unitree g1 купить",
+          "monthly_queries": 106
+        },
+        {
+          "phrase": "+робот unitree g1 edu",
+          "monthly_queries": 102
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/03-робот-unitree-g1.wordstat.json",
+      "screenshot": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/wordstat/03-робот-unitree-g1.png"
+    },
+    {
+      "query": "робот Agibot X2",
+      "total": 8,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 8
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/04-робот-agibot-x2.wordstat.json",
+      "screenshot": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/wordstat/04-робот-agibot-x2.png"
+    },
+    {
+      "query": "аренда робота гуманоида",
+      "total": 80,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 80
+        },
+        {
+          "phrase": "+аренда робота гуманоида",
+          "monthly_queries": 80
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/05-аренда-робота-гуманоида.wordstat.json",
+      "screenshot": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/wordstat/05-аренда-робота-гуманоида.png"
+    }
+  ]
+}

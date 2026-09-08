@@ -1,0 +1,29 @@
+{
+  "query": "аренда робота гуманоида",
+  "status": "checked_live",
+  "source": "live_wordstat_visible_chrome_cdp",
+  "cdpPort": 9225,
+  "region": "all",
+  "devices": [
+    "desktop",
+    "smartphone",
+    "tablet"
+  ],
+  "collectedAt": "2026-09-08T10:18:52.493Z",
+  "period": "08.08.2026 – 06.09.2026",
+  "total": 80,
+  "noResults": false,
+  "rows": [
+    {
+      "phrase": "за 08.08.2026 – 06.09.2026:",
+      "monthly_queries": 80
+    },
+    {
+      "phrase": "+аренда робота гуманоида",
+      "monthly_queries": 80
+    }
+  ],
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nаренда робота гуманоида\n \nза 08.08.2026 – 06.09.2026: 80\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+аренда робота гуманоида\t80\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4%D0%B0",
+  "screenshot": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/wordstat/05-аренда-робота-гуманоида.png"
+}
