@@ -1,0 +1,96 @@
+{
+  "batch": "batch4-robot-cards-20260908",
+  "scope": "rendered preview audit for owner review, not production approval",
+  "routes": [
+    "/preview/kiber-94/robot-card/arenda-inchbot-l1-w-edu/",
+    "/preview/kiber-94/robot-card/arenda-klipmeiker/",
+    "/preview/kiber-94/robot-card/arenda-roboshashki/",
+    "/preview/kiber-94/robot-card/arenda-senserobot/",
+    "/preview/kiber-94/robot-card/arenda-uv-box/"
+  ],
+  "results": [
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "htmlExists": true,
+      "h1": "Аренда робота-собаки Inchbot L1-W EDU",
+      "oneH1": true,
+      "seoIntent": true,
+      "heroContactPopup": true,
+      "galleryPreviewAssets": true,
+      "capabilityAssets": true,
+      "capabilityCount": 6,
+      "scenarioCount": 6,
+      "faqCount": 8,
+      "boilerplateCapabilityAltLeak": false,
+      "visibleInternalReviewLeak": false
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "htmlExists": true,
+      "h1": "Аренда робота Клипмейкер",
+      "oneH1": true,
+      "seoIntent": true,
+      "heroContactPopup": true,
+      "galleryPreviewAssets": true,
+      "capabilityAssets": true,
+      "capabilityCount": 6,
+      "scenarioCount": 6,
+      "faqCount": 8,
+      "boilerplateCapabilityAltLeak": false,
+      "visibleInternalReviewLeak": false
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "htmlExists": true,
+      "h1": "Аренда робота для игры в шашки",
+      "oneH1": true,
+      "seoIntent": true,
+      "heroContactPopup": true,
+      "galleryPreviewAssets": true,
+      "capabilityAssets": true,
+      "capabilityCount": 6,
+      "scenarioCount": 6,
+      "faqCount": 8,
+      "boilerplateCapabilityAltLeak": false,
+      "visibleInternalReviewLeak": false
+    },
+    {
+      "slug": "arenda-senserobot",
+      "htmlExists": true,
+      "h1": "Аренда робота-шахматиста SenseRobot",
+      "oneH1": true,
+      "seoIntent": true,
+      "heroContactPopup": true,
+      "galleryPreviewAssets": true,
+      "capabilityAssets": true,
+      "capabilityCount": 6,
+      "scenarioCount": 6,
+      "faqCount": 8,
+      "boilerplateCapabilityAltLeak": false,
+      "visibleInternalReviewLeak": false
+    },
+    {
+      "slug": "arenda-uv-box",
+      "htmlExists": true,
+      "h1": "Аренда интерактивной витрины UV-BOX",
+      "oneH1": true,
+      "seoIntent": true,
+      "heroContactPopup": true,
+      "galleryPreviewAssets": true,
+      "capabilityAssets": true,
+      "capabilityCount": 6,
+      "scenarioCount": 6,
+      "faqCount": 8,
+      "boilerplateCapabilityAltLeak": false,
+      "visibleInternalReviewLeak": false
+    }
+  ],
+  "boundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "analyticsAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "mergeRequiresOwnerApproval": true
+  }
+}

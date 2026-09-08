@@ -1,0 +1,430 @@
+{
+  "batch": "batch4-robot-cards-20260908",
+  "rules": {
+    "runtimeGalleryOnlyConvertedSourceGallery": true,
+    "excludeKiber45Hero": true,
+    "excludeLegacyHorizontalHero": true
+  },
+  "robots": [
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "count": 6,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__01-tild3039-6438-4864-a336-613831663462__noroot.webp",
+          "sourceSrc": "/images/tild3039-6438-4864-a336-613831663462__noroot.png",
+          "sourcePath": "site-export/images/tild3039-6438-4864-a336-613831663462__noroot.png",
+          "sourceRole": "gallery",
+          "index": 1,
+          "alt": "Робот-пёс Inchbot L1-W EDU, механический пёс Inchbot L1-W EDU: оторвалась от земли и делает сальто в воздухе. Фотография спереди крупным планом",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 554,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__02-tild6263-3565-4132-b736-663530333864__08.webp",
+          "sourceSrc": "/images/tild6263-3565-4132-b736-663530333864__08.jpg",
+          "sourcePath": "site-export/images/tild6263-3565-4132-b736-663530333864__08.jpg",
+          "sourceRole": "gallery",
+          "index": 2,
+          "alt": "Прокат четвероногого робота Inchbot L1-W EDU для демонстрации возможностей: движется на колёсах по пустыне, вид сбоку; за ней поднимается пыль",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 862,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__03-tild6637-6536-4064-a663-353132643466__07.webp",
+          "sourceSrc": "/images/tild6637-6536-4064-a663-353132643466__07.jpg",
+          "sourcePath": "site-export/images/tild6637-6536-4064-a663-353132643466__07.jpg",
+          "sourceRole": "gallery",
+          "index": 3,
+          "alt": "Четвероногий робот Inchbot L1-W EDU, робот на четырёх лапах Inchbot L1-W EDU: видна издалека, спускается с небольшого каменистого пригорка и показывает технологические",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 959,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__04-tild6164-3661-4835-b039-303964323837__noroot.webp",
+          "sourceSrc": "/images/tild6164-3661-4835-b039-303964323837__noroot.png",
+          "sourcePath": "site-export/images/tild6164-3661-4835-b039-303964323837__noroot.png",
+          "sourceRole": "gallery",
+          "index": 4,
+          "alt": "Заказать робособаки Inchbot L1-W EDU на демонстрации возможностей: едет между кустарниками по земле, вид спереди, демонстрация проходимости",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 399,
+          "height": 529
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__05-tild3165-6138-4635-b538-623931653530__noroot.webp",
+          "sourceSrc": "/images/tild3165-6138-4635-b538-623931653530__noroot.png",
+          "sourcePath": "site-export/images/tild3165-6138-4635-b538-623931653530__noroot.png",
+          "sourceRole": "gallery",
+          "index": 5,
+          "alt": "Образовательная робособака Inchbot L1-W EDU: на мероприятии на колёсной базе едет между столов, вид сбоку",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 882,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__06-tild3237-3030-4131-b965-346163333661__noroot.webp",
+          "sourceSrc": "/images/tild3237-3030-4131-b965-346163333661__noroot.png",
+          "sourcePath": "site-export/images/tild3237-3030-4131-b965-346163333661__noroot.png",
+          "sourceRole": "gallery",
+          "index": 6,
+          "alt": "Арендовать четвероногого робота Inchbot L1-W EDU для демонстрации возможностей: на колёсной базе поднимается вверх по широкой каменной лестнице, вид сзади",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 694,
+          "height": 423
+        }
+      ]
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "count": 6,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-klipmeiker__01-tild3039-3538-4564-b237-626230636636__06.webp",
+          "sourceSrc": "/images/tild3039-3538-4564-b237-626230636636__06.jpg",
+          "sourcePath": "site-export/images/tild3039-3538-4564-b237-626230636636__06.jpg",
+          "sourceRole": "gallery",
+          "index": 1,
+          "alt": "Камера-робот Klipmeiker, робот для видеороликов Klipmeiker: Робот для создания клипов Klipmeiker крупным планом на фоне красивой неоновой подсветки в",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 744,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-klipmeiker__02-tild6165-6134-4737-b861-653139383366__04.webp",
+          "sourceSrc": "/images/tild6165-6134-4737-b861-653139383366__04.jpg",
+          "sourcePath": "site-export/images/tild6165-6134-4737-b861-653139383366__04.jpg",
+          "sourceRole": "gallery",
+          "index": 2,
+          "alt": "Прокат медиа-робота Klipmeiker для HoReCa-зоны и события с гостями: Роботизированная рука с камерой, вид спереди крупным планом, стоит на подставке на мероприятии",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 400,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-klipmeiker__03-tild3330-3561-4639-b639-343130353130__08.webp",
+          "sourceSrc": "/images/tild3330-3561-4639-b639-343130353130__08.jpg",
+          "sourcePath": "site-export/images/tild3330-3561-4639-b639-343130353130__08.jpg",
+          "sourceRole": "gallery",
+          "index": 3,
+          "alt": "Робот для контента Klipmeiker, медиа-робот Klipmeiker: на подставке стоит на сцене в небольшой дымке и снимает выступающего человека",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 417,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-klipmeiker__04-tild3936-6361-4463-a536-336239326466__07.webp",
+          "sourceSrc": "/images/tild3936-6361-4463-a536-336239326466__07.jpg",
+          "sourcePath": "site-export/images/tild3936-6361-4463-a536-336239326466__07.jpg",
+          "sourceRole": "gallery",
+          "index": 4,
+          "alt": "Заказать роботизированной камеры Klipmeiker на фотозоны и фотоактивации: Девушка позирует для роботизированной руки с камерой Klipmeiker; у неё развеваются волосы, она",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 801,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-klipmeiker__05-tild3331-3030-4833-a364-383039306561__09.webp",
+          "sourceSrc": "/images/tild3331-3030-4833-a364-383039306561__09.jpg",
+          "sourcePath": "site-export/images/tild3331-3030-4833-a364-383039306561__09.jpg",
+          "sourceRole": "gallery",
+          "index": 5,
+          "alt": "Робот-Klipmeiker: установлен на подставке на сцене; вокруг мужчины монтируют его. На заднем фоне много экранов с",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 377,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-klipmeiker__06-tild6661-3737-4761-b032-643935616666__02.webp",
+          "sourceSrc": "/images/tild6661-3737-4761-b032-643935616666__02.jpg",
+          "sourcePath": "site-export/images/tild6661-3737-4761-b032-643935616666__02.jpg",
+          "sourceRole": "source_gallery_hero_candidate",
+          "index": 6,
+          "alt": "Роборука робота Клипмейкер с камерой для моушн-видео",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 400,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "count": 6,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__01-tild6237-6438-4661-a563-393364353366__01.webp",
+          "sourceSrc": "/images/tild6237-6438-4661-a563-393364353366__01.jpg",
+          "sourcePath": "site-export/images/tild6237-6438-4661-a563-393364353366__01.jpg",
+          "sourceRole": "gallery",
+          "index": 1,
+          "alt": "Игровой робот Робошашки, робот-манипулятор для шашек Робошашки: выставили шашки в правильной последовательности и ждут начала игры на технологичной выставке",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 800,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__02-tild3363-3066-4533-a662-373435393838__06.webp",
+          "sourceSrc": "/images/tild3363-3066-4533-a662-373435393838__06.jpg",
+          "sourcePath": "site-export/images/tild3363-3066-4533-a662-373435393838__06.jpg",
+          "sourceRole": "gallery",
+          "index": 2,
+          "alt": "Прокат интерактивного робота для шашек для выставочного стенда: Игровая доска для робота-шашиста расположена на выставке; рядом подошёл ребёнок и",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 446,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__03-tild6662-3163-4339-b535-393537623661__09.webp",
+          "sourceSrc": "/images/tild6662-3163-4339-b535-393537623661__09.jpg",
+          "sourcePath": "site-export/images/tild6662-3163-4339-b535-393537623661__09.jpg",
+          "sourceRole": "gallery",
+          "index": 3,
+          "alt": "Интерактивный робот для настольной игры Робошашки, робот-шашист Робошашки: Робот-шашист установлен на турнире по игре в шашки и ожидает претендента на игру",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 455,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__04-tild3939-6338-4836-b630-333563303035__02.webp",
+          "sourceSrc": "/images/tild3939-6338-4836-b630-333563303035__02.jpg",
+          "sourcePath": "site-export/images/tild3939-6338-4836-b630-333563303035__02.jpg",
+          "sourceRole": "gallery",
+          "index": 4,
+          "alt": "Заказать робота для игры в шашки на интерактивной игровой зоны: Девушку фотографируют во время процесса игры с роботом-шашистом на мероприятии",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 447,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__05-tild6337-3337-4531-a264-306436333637__07.webp",
+          "sourceSrc": "/images/tild6337-3337-4531-a264-306436333637__07.jpg",
+          "sourcePath": "site-export/images/tild6337-3337-4531-a264-306436333637__07.jpg",
+          "sourceRole": "gallery",
+          "index": 5,
+          "alt": "Робот для игры в шашки Робошашки: Гости выставки обсуждают процесс игры с роботом в шашки",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 734,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__06-tild3736-3630-4564-b964-333336653665__04.webp",
+          "sourceSrc": "/images/tild3736-3630-4564-b964-333336653665__04.jpg",
+          "sourcePath": "site-export/images/tild3736-3630-4564-b964-333336653665__04.jpg",
+          "sourceRole": "gallery",
+          "index": 6,
+          "alt": "Арендовать интерактивного робота для шашек для интерактивной игровой зоны: Ребёнок соревнуется с роботом-шашистом в игре на праздничном мероприятии",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 455,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "slug": "arenda-senserobot",
+      "count": 6,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-senserobot__01-tild3761-6664-4265-b236-313865633932__02.webp",
+          "sourceSrc": "/images/tild3761-6664-4265-b236-313865633932__02.jpg",
+          "sourcePath": "site-export/images/tild3761-6664-4265-b236-313865633932__02.jpg",
+          "sourceRole": "gallery",
+          "index": 1,
+          "alt": "Робот-манипулятор для шахмат SenseRobot, интерактивный робот для игры в шахматы SenseRobot: Крупный план: манипулятор робота-шахматиста Senserobot готовится взять фигуру с шахматной",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 949,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-senserobot__02-tild3630-6162-4864-b262-303132393161__08.webp",
+          "sourceSrc": "/images/tild3630-6162-4864-b262-303132393161__08.jpg",
+          "sourcePath": "site-export/images/tild3630-6162-4864-b262-303132393161__08.jpg",
+          "sourceRole": "gallery",
+          "index": 2,
+          "alt": "Прокат интерактивного робота для шахмат SenseRobot для интерактивной игровой зоны: установлен на столе в помещении; манипулятор поднят вверх и ожидает хода соперника. Видны",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 594,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-senserobot__03-tild6535-6534-4332-b931-333537643739__05.webp",
+          "sourceSrc": "/images/tild6535-6534-4332-b931-333537643739__05.jpg",
+          "sourcePath": "site-export/images/tild6535-6534-4332-b931-333537643739__05.jpg",
+          "sourceRole": "gallery",
+          "index": 3,
+          "alt": "Робот с шахматной доской SenseRobot, робот-шахматист SenseRobot: Крупный план робота-шахматиста Senserobot сбоку: манипулятор находится над шахматной доской",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 893,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-senserobot__04-tild3936-3039-4339-a464-636466646534__011.webp",
+          "sourceSrc": "/images/tild3936-3039-4339-a464-636466646534__011.jpg",
+          "sourcePath": "site-export/images/tild3936-3039-4339-a464-636466646534__011.jpg",
+          "sourceRole": "gallery",
+          "index": 4,
+          "alt": "Заказать шахматного робота SenseRobot на выставочного стенда: Крупный план робота-шахматиста Senserobot на выставке: робот установлен на столе, сзади виден",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 358,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-senserobot__05-tild3063-3131-4232-b234-393062353332.webp",
+          "sourceSrc": "/images/tild3063-3131-4232-b234-393062353332__photo.jpg",
+          "sourcePath": "site-export/images/tild3063-3131-4232-b234-393062353332__photo.jpg",
+          "sourceRole": "gallery",
+          "index": 5,
+          "alt": "Шахматный робот SenseRobot: Соревнование по шахматам в большом технологическом помещении: на столах установлено много",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 1414,
+          "height": 800
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-senserobot__06-tild3230-3831-4936-a465-656439373766__noroot.webp",
+          "sourceSrc": "/images/tild3230-3831-4936-a465-656439373766__noroot.png",
+          "sourcePath": "site-export/images/tild3230-3831-4936-a465-656439373766__noroot.png",
+          "sourceRole": "gallery",
+          "index": 6,
+          "alt": "Арендовать интерактивного робота для шахмат SenseRobot для интерактивной игровой зоны: стоит на столе в комнате квартиры; перед ним человек, который играет с ним и обдумывает ход",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 621,
+          "height": 600
+        }
+      ]
+    },
+    {
+      "slug": "arenda-uv-box",
+      "count": 6,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-uv-box__01-tild3730-6233-4534-b461-633133306461__09.webp",
+          "sourceSrc": "/images/tild3730-6233-4534-b461-633133306461__09.jpg",
+          "sourcePath": "site-export/images/tild3730-6233-4534-b461-633133306461__09.jpg",
+          "sourceRole": "gallery",
+          "index": 1,
+          "alt": "Виртуальная примерочная UV Box, интерактивный экран UV Box: Три UV Box выставлены в ряд в холле торгового центра; на каждом экране стилизованное",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 716,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-uv-box__02-tild3137-3933-4065-b034-616639376437__noroot.webp",
+          "sourceSrc": "/images/tild3137-3933-4065-b034-616639376437__noroot.png",
+          "sourcePath": "site-export/images/tild3137-3933-4065-b034-616639376437__noroot.png",
+          "sourceRole": "gallery",
+          "index": 2,
+          "alt": "Прокат цифрового консультанта UV Box для демонстрации возможностей: установлен в торговом центре; на экране изображён телефон с характеристиками, молодой человек",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 503,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-uv-box__03-tild3339-3062-4261-b731-663038613337__02.webp",
+          "sourceSrc": "/images/tild3339-3062-4261-b731-663038613337__02.jpg",
+          "sourcePath": "site-export/images/tild3339-3062-4261-b731-663038613337__02.jpg",
+          "sourceRole": "gallery",
+          "index": 3,
+          "alt": "Роботизированная витрина UV Box, цифровой консультант UV Box: Крупный план UV Box, перед которым стоит мужчина; на экране изображение серёжек, мужчина",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 386,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-uv-box__04-tild6134-3766-4335-b032-376433643865__012.webp",
+          "sourceSrc": "/images/tild6134-3766-4335-b032-376433643865__012.jpg",
+          "sourcePath": "site-export/images/tild6134-3766-4335-b032-376433643865__012.jpg",
+          "sourceRole": "gallery",
+          "index": 4,
+          "alt": "Заказать цифровой витрины UV Box на презентации: вмонтирован в стену на мероприятии Москва 20:30; на экране справочная информация, перед ним",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 750,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-uv-box__05-tild3230-3463-4365-a235-613931656262__08.webp",
+          "sourceSrc": "/images/tild3230-3463-4365-a235-613931656262__08.jpg",
+          "sourcePath": "site-export/images/tild3230-3463-4365-a235-613931656262__08.jpg",
+          "sourceRole": "gallery",
+          "index": 5,
+          "alt": "Интерактивная витрина UV Box: Три UV Box вмонтированы в стену, над ними логотип компании; на экранах разная одежда, которую",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 719,
+          "height": 600
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-uv-box__06-tild3634-3530-4438-a133-643236646537__013.webp",
+          "sourceSrc": "/images/tild3634-3530-4438-a133-643236646537__013.jpg",
+          "sourcePath": "site-export/images/tild3634-3530-4438-a133-643236646537__013.jpg",
+          "sourceRole": "gallery",
+          "index": 6,
+          "alt": "Арендовать цифрового консультанта UV Box для HoReCa-зоны и события с гостями: установлен в холле торгового центра; перед ним стоит девушка в светлой кофте и чёрных брюках, а",
+          "rightsStatus": "approved_for_production",
+          "previewUseAllowed": true,
+          "productionApproved": true,
+          "width": 711,
+          "height": 600
+        }
+      ]
+    }
+  ]
+}

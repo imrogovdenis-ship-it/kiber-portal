@@ -1,0 +1,33 @@
+{
+  "slug": "arenda-senserobot",
+  "queryIndex": 5,
+  "query": "SenseRobot",
+  "source": "live_wordstat_chrome_cdp",
+  "cdpPort": 9224,
+  "region": "all",
+  "view": "table",
+  "devices": "visible defaults",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=SenseRobot",
+  "collectedAt": "2026-09-08T05:14:35Z",
+  "period": "07.08.2026 – 05.09.2026",
+  "total": 35,
+  "noResults": false,
+  "captcha": false,
+  "loginRequired": false,
+  "rows": [
+    {
+      "phrase": "за 07.08.2026 – 05.09.2026:",
+      "count": 35
+    },
+    {
+      "phrase": "+senserobot",
+      "count": 35
+    },
+    {
+      "phrase": "+senserobot chess",
+      "count": 13
+    }
+  ],
+  "screenshot": "docs/review/kiber-batch4-robot-card-research-20260908/wordstat/arenda-senserobot__05.png",
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nSenseRobot\n \nза 07.08.2026 – 05.09.2026: 35\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+senserobot\t35\n+senserobot chess\t13\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-roboshashki",
+  "canonicalPath": "/robots/arenda-roboshashki/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-roboshashki/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "Робошашки",
+    "sourceName": "робота для игры в шашки",
+    "modelName": "Робошашки",
+    "brand": "Робшашки",
+    "category": {
+      "primary": "robot_service",
+      "labels": [
+        "robot_service"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "07.08.2026 – 07.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда робошашки": 1,
+        "робот шашки": 78,
+        "аренда робота для игры": 0,
+        "робот для игры в шашки": 10,
+        "робот шашист": 4
+      },
+      "evidence": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда робошашки",
+          "total": 1,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "аренда робота для игры",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "робот шашки",
+          "total": 78,
+          "rows": 3,
+          "noResults": false
+        },
+        {
+          "query": "робот для игры в шашки",
+          "total": 10,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "робот шашист",
+          "total": 4,
+          "rows": 1,
+          "noResults": true
+        }
+      ],
+      "interpretation": "Exact model/entity intent stays on robot-card; stronger generic demand is context only and belongs to Подборки/articles."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch4-robot-cards-20260908/",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json",
+        "data/review/media-rights-robot-cards.json"
+      ],
+      "limitation": "Search result collection was partially blocked/low-signal for niche model queries; source facts and media gaps are recorded honestly."
+    },
+    "contentGaps": [
+      "Show exact rental/event use for this specific model, not generic robot rental.",
+      "Explain operator, placement, queue/timing and logistics before owner review.",
+      "Keep prices and capabilities tied to source data; unsupported claims remain out of visible copy."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Робошашек — игровой робот для стенда и интерактива",
+    "metaDescription": "Аренда Робошашек: роботизированная игровая зона с шашками для выставки, семейного дня, корпоративного события или промо. Оператор и настройка.",
+    "h1": "Аренда робота для игры в шашки",
+    "primaryKeyword": "аренда робошашки",
+    "secondaryKeywords": [
+      "Робошашки аренда",
+      "прокат робота для шашек",
+      "робот для игры в шашки",
+      "робот шашки",
+      "игровой робот на мероприятие"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда робошашки",
+    "secondaryKeywords": [
+      "Робошашки аренда",
+      "прокат робота для шашек",
+      "робот для игры в шашки",
+      "робот шашки",
+      "игровой робот на мероприятие"
+    ],
+    "modelNameVariants": [
+      "Робошашки",
+      "Робшашки",
+      "робота для игры в шашки"
+    ],
+    "entitySynonyms": [
+      "игровой робот",
+      "робот-шашист",
+      "робот-манипулятор",
+      "robot_service"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 6,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-inchbot-l1-w-edu",
+  "canonicalPath": "/robots/arenda-inchbot-l1-w-edu/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-inchbot-l1-w-edu/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "Inchbot L1-W EDU",
+    "sourceName": "робота-собаки Inchbot L1-W EDU",
+    "modelName": "Inchbot L1-W EDU",
+    "brand": "Inchbot",
+    "category": {
+      "primary": "robot_dog",
+      "labels": [
+        "robot_dog"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "07.08.2026 – 07.09.2026",
+      "region": "all",
+      "queries": {
+        "аренда Inchbot L1-W EDU": 0,
+        "Inchbot L1-W EDU": 0,
+        "аренда робота собаки": 54,
+        "робот собака аренда": 54,
+        "Inchbot робот собака": 1
+      },
+      "evidence": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда Inchbot L1-W EDU",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "аренда робота собаки",
+          "total": 54,
+          "rows": 2,
+          "noResults": false
+        },
+        {
+          "query": "робот собака аренда",
+          "total": 54,
+          "rows": 2,
+          "noResults": false
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "Inchbot L1-W EDU",
+          "total": 0,
+          "rows": 1,
+          "noResults": true
+        },
+        {
+          "query": "Inchbot робот собака",
+          "total": 1,
+          "rows": 1,
+          "noResults": true
+        }
+      ],
+      "interpretation": "Exact model/entity intent stays on robot-card; stronger generic demand is context only and belongs to Подборки/articles."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch4-robot-cards-20260908/",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json",
+        "data/review/media-rights-robot-cards.json"
+      ],
+      "limitation": "Search result collection was partially blocked/low-signal for niche model queries; source facts and media gaps are recorded honestly."
+    },
+    "contentGaps": [
+      "Show exact rental/event use for this specific model, not generic robot rental.",
+      "Explain operator, placement, queue/timing and logistics before owner review.",
+      "Keep prices and capabilities tied to source data; unsupported claims remain out of visible copy."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда Inchbot L1-W EDU — робот-собака для STEM и промо",
+    "metaDescription": "Аренда Inchbot L1-W EDU: робот-собака для образовательной зоны, промо, детского события или технологичного стенда. Доставка, настройка и оператор.",
+    "h1": "Аренда робота-собаки Inchbot L1-W EDU",
+    "primaryKeyword": "аренда Inchbot L1-W EDU",
+    "secondaryKeywords": [
+      "Inchbot L1-W EDU аренда",
+      "прокат Inchbot L1-W EDU",
+      "заказать Inchbot L1-W EDU",
+      "робот-собака Inchbot для мероприятия",
+      "Inchbot робот-собака"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда Inchbot L1-W EDU",
+    "secondaryKeywords": [
+      "Inchbot L1-W EDU аренда",
+      "прокат Inchbot L1-W EDU",
+      "заказать Inchbot L1-W EDU",
+      "робот-собака Inchbot для мероприятия",
+      "Inchbot робот-собака"
+    ],
+    "modelNameVariants": [
+      "Inchbot L1-W EDU",
+      "Inchbot",
+      "робота-собаки Inchbot L1-W EDU"
+    ],
+    "entitySynonyms": [
+      "робот-собака",
+      "четвероногий робот",
+      "STEM-робот",
+      "robot_dog"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 6,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

@@ -1,0 +1,1889 @@
+{
+  "arenda-inchbot-l1-w-edu": [
+    {
+      "path": "site-export/images/tild3763-6138-4462-b934-316636356537__inchbot_l1-w.png",
+      "kind": "filename",
+      "size": 461663
+    },
+    {
+      "path": "public/images/kiber-45/arenda-inchbot-l1-w-edu.webp",
+      "kind": "filename",
+      "size": 14256
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-inchbot-l1-w-edu/03-tild3464-6234-4464-b762-386238303933__photo.webp",
+      "kind": "filename",
+      "size": 21702
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-inchbot-l1-w-edu/05-tild3665-3635-4034-a235-666236393030__photo.webp",
+      "kind": "filename",
+      "size": 39630
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-inchbot-l1-w-edu/04-tild3763-3331-4964-b335-303330353239___.webp",
+      "kind": "filename",
+      "size": 28554
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-inchbot-l1-w-edu/02-tild3362-3535-4263-b863-316338643633___.webp",
+      "kind": "filename",
+      "size": 15694
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-inchbot-l1-w-edu/06-tild3938-3331-4536-b536-393963333336_____.webp",
+      "kind": "filename",
+      "size": 27876
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-inchbot-l1-w-edu/01-tild3030-3632-4336-b537-623938666235____.webp",
+      "kind": "filename",
+      "size": 40524
+    },
+    {
+      "path": "data/models/robot-catalog-card-images.live.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 22363
+    },
+    {
+      "path": "data/models/robots.source-of-truth.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu",
+        "робота-собаки Inchbot"
+      ],
+      "size": 1243249
+    },
+    {
+      "path": "data/models/robot-capability-images.source.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu",
+        "робота-собаки Inchbot"
+      ],
+      "size": 260802
+    },
+    {
+      "path": "data/models/robot-tariffs.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 92973
+    },
+    {
+      "path": "data/monitoring/production-metadata-baseline.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu",
+        "робота-собаки Inchbot"
+      ],
+      "size": 13631
+    },
+    {
+      "path": "data/media/kinescope-video-contract.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 4972
+    },
+    {
+      "path": "data/review/media-rights-review-package.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 185263
+    },
+    {
+      "path": "data/review/content-package-workflow.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 4325
+    },
+    {
+      "path": "data/review/kiber-93-repository-preservation-manifest.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 294394
+    },
+    {
+      "path": "data/review/production-go-no-go.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 11079
+    },
+    {
+      "path": "data/review/media-rights-robot-cards.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu",
+        "робота-собаки Inchbot"
+      ],
+      "size": 525446
+    },
+    {
+      "path": "data/review/media-rights-registry.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 89740
+    },
+    {
+      "path": "data/review/media-rights-legacy-hero-images.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 44168
+    },
+    {
+      "path": "data/review/kiber-robot-card-wrong-data-sources-archive.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 2855
+    },
+    {
+      "path": "data/review/content-acceptance.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 26915
+    },
+    {
+      "path": "data/seo/rendered-schema-audit.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 9004
+    },
+    {
+      "path": "data/seo/rendered-social-metadata-audit.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu",
+        "робота-собаки Inchbot"
+      ],
+      "size": 15403
+    },
+    {
+      "path": "data/seo/ai-entity-map.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 9879
+    },
+    {
+      "path": "data/seo/page-seo-audit.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 256271
+    },
+    {
+      "path": "data/seo/url-decision-registry.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 21423
+    },
+    {
+      "path": "data/seo/rendered-image-alt-audit.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 8582
+    },
+    {
+      "path": "data/seo/internal-link-proposals.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 3367
+    },
+    {
+      "path": "data/seo/production-url-registry.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 18359
+    },
+    {
+      "path": "data/seo/page-seo-passports.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 193580
+    },
+    {
+      "path": "data/seo/rendered-heading-audit.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu",
+        "робота-собаки Inchbot"
+      ],
+      "size": 17152
+    },
+    {
+      "path": "data/seo/launch-qa-summary.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 48841
+    },
+    {
+      "path": "data/seo/launch-routes.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 9789
+    },
+    {
+      "path": "data/seo/whole-site-static-check.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 13879
+    },
+    {
+      "path": "data/seo/page-type-intent-contract.draft.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 30808
+    },
+    {
+      "path": "data/seo/route-inventory.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 14467
+    },
+    {
+      "path": "data/seo/ai-search-visibility-contract.draft.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 3829
+    },
+    {
+      "path": "data/seo/page-seo-remediation-backlog.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 8194
+    },
+    {
+      "path": "data/seo/rendered-cta-flow-audit.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 224719
+    },
+    {
+      "path": "data/seo/keyword-map.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 18098
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-robota-hudozhnika-a4.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5999
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-unitree-g1.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 7049
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-bellabot.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 6988
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-unitree-go2.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 7063
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-sketchbot.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5425
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-robo-kofeyni.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5714
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-promobot-v4.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 7042
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-xiaomi-cyberdog-2.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 7232
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-robot-barmen.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5784
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-mini-robo-kofeyni.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5946
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-glambot.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5238
+    },
+    {
+      "path": "data/seo/robot-card-passports/arenda-kettybot.robot-card-seo-passport.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 6103
+    },
+    {
+      "path": "data/seo/wordstat-research/batch1-humanoids-20260907/arenda-unitree-r1.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 7615
+    },
+    {
+      "path": "data/seo/wordstat-research/batch1-humanoids-20260907/arenda-unitree-r1__05.wordstat.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 1621
+    },
+    {
+      "path": "data/seo/wordstat-research/batch1-humanoids-20260907/batch1-humanoids.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 54315
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/arenda-unitree-go2__05.wordstat.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 3738
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/arenda-unitree-go2.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 11341
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/arenda-unitree-g1__04.wordstat.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 3482
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/arenda-unitree-g1.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 13125
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/batch2-robot-cards.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 53576
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/arenda-unitree-g1__05.wordstat.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 4127
+    },
+    {
+      "path": "data/seo/wordstat-research/batch2-robot-cards-20260907/arenda-unitree-go2__04.wordstat.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 2062
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 49425
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-inchbot-l1-w-edu__01.wordstat.json",
+      "kind": "filename",
+      "size": 1683
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "kind": "content",
+      "terms": [
+        "inchbot",
+        "l1-w",
+        "edu"
+      ],
+      "size": 4393
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-inchbot-l1-w-edu__04.wordstat.json",
+      "kind": "filename",
+      "size": 1796
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-inchbot-l1-w-edu__02.wordstat.json",
+      "kind": "filename",
+      "size": 1618
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-inchbot-l1-w-edu__03.wordstat.json",
+      "kind": "filename",
+      "size": 1898
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-inchbot-l1-w-edu__05.wordstat.json",
+      "kind": "filename",
+      "size": 1707
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-inchbot-l1-w-edu.wordstat-summary.json",
+      "kind": "filename",
+      "size": 9298
+    },
+    {
+      "path": "data/seo/serp-research/batch3-robot-cards-20260907/batch3-robot-cards.competitor-source-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 4123
+    },
+    {
+      "path": "data/seo/serp-research/batch3-robot-cards-20260907/arenda-sketchbot.competitor-source-review.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 581
+    },
+    {
+      "path": "data/seo/serp-research/batch2-robot-cards-20260907/arenda-unitree-g1.competitor-source-review.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 3965
+    },
+    {
+      "path": "data/seo/serp-research/batch2-robot-cards-20260907/batch2-robot-cards.competitor-source-summary.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 20794
+    },
+    {
+      "path": "data/seo/serp-research/batch2-robot-cards-20260907/arenda-unitree-go2.competitor-source-review.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 3935
+    },
+    {
+      "path": "data/content-contracts/kiber-robot-card-generation-guardrails.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 5182
+    },
+    {
+      "path": "data/content-contracts/kiber-claude-page-block-contracts.json",
+      "kind": "content",
+      "terms": [
+        "edu"
+      ],
+      "size": 31353
+    }
+  ],
+  "arenda-klipmeiker": [
+    {
+      "path": "site-export/images/tild3037-6633-4865-b833-666239643534__clipmaker.png",
+      "kind": "filename",
+      "size": 418554
+    },
+    {
+      "path": "public/images/kiber-45/arenda-klipmeiker.webp",
+      "kind": "filename",
+      "size": 8466
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-klipmeiker/04-tild3435-3836-4730-b264-393166353964_____.webp",
+      "kind": "filename",
+      "size": 31310
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-klipmeiker/01-tild3061-3038-4034-b430-623965373631___.webp",
+      "kind": "filename",
+      "size": 30114
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-klipmeiker/03-tild3330-6431-4130-b237-313738346238___.webp",
+      "kind": "filename",
+      "size": 39454
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-klipmeiker/06-tild3362-3535-4263-b863-316338643633___.webp",
+      "kind": "filename",
+      "size": 15694
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-klipmeiker/02-tild6238-6164-4062-b731-363861666132__photo.webp",
+      "kind": "filename",
+      "size": 18994
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-klipmeiker/05-tild3332-3561-4038-a564-613966653731____.webp",
+      "kind": "filename",
+      "size": 81716
+    },
+    {
+      "path": "data/models/robot-catalog-card-images.live.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "clipmaker",
+        "клип"
+      ],
+      "size": 22363
+    },
+    {
+      "path": "data/models/robots.source-of-truth.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 1243249
+    },
+    {
+      "path": "data/models/robot-capability-images.source.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 260802
+    },
+    {
+      "path": "data/models/robot-tariffs.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 92973
+    },
+    {
+      "path": "data/monitoring/production-metadata-baseline.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 13631
+    },
+    {
+      "path": "data/review/media-rights-review-package.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 185263
+    },
+    {
+      "path": "data/review/kiber-93-repository-preservation-manifest.json",
+      "kind": "content",
+      "terms": [
+        "klip",
+        "clipmaker"
+      ],
+      "size": 294394
+    },
+    {
+      "path": "data/review/media-rights-robot-cards.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 525446
+    },
+    {
+      "path": "data/review/media-rights-registry.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 89740
+    },
+    {
+      "path": "data/review/media-rights-legacy-hero-images.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 44168
+    },
+    {
+      "path": "data/review/content-acceptance.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 26915
+    },
+    {
+      "path": "data/seo/rendered-schema-audit.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 9004
+    },
+    {
+      "path": "data/seo/rendered-social-metadata-audit.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 15403
+    },
+    {
+      "path": "data/seo/ai-entity-map.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 9879
+    },
+    {
+      "path": "data/seo/page-seo-audit.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 256271
+    },
+    {
+      "path": "data/seo/url-decision-registry.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 21423
+    },
+    {
+      "path": "data/seo/rendered-image-alt-audit.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 8582
+    },
+    {
+      "path": "data/seo/production-url-registry.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 18359
+    },
+    {
+      "path": "data/seo/page-seo-passports.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 193580
+    },
+    {
+      "path": "data/seo/rendered-heading-audit.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 17152
+    },
+    {
+      "path": "data/seo/launch-qa-summary.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 48841
+    },
+    {
+      "path": "data/seo/launch-routes.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 9789
+    },
+    {
+      "path": "data/seo/whole-site-static-check.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 13879
+    },
+    {
+      "path": "data/seo/route-inventory.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 14467
+    },
+    {
+      "path": "data/seo/page-seo-remediation-backlog.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 8194
+    },
+    {
+      "path": "data/seo/rendered-cta-flow-audit.json",
+      "kind": "content",
+      "terms": [
+        "klip"
+      ],
+      "size": 224719
+    },
+    {
+      "path": "data/seo/keyword-map.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 18098
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 49425
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-klipmeiker__01.wordstat.json",
+      "kind": "filename",
+      "size": 1719
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-klipmeiker__02.wordstat.json",
+      "kind": "filename",
+      "size": 1709
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-klipmeiker__03.wordstat.json",
+      "kind": "filename",
+      "size": 1959
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "kind": "content",
+      "terms": [
+        "клипмейкер",
+        "klip",
+        "клип"
+      ],
+      "size": 4393
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-klipmeiker__04.wordstat.json",
+      "kind": "filename",
+      "size": 1636
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-klipmeiker__05.wordstat.json",
+      "kind": "filename",
+      "size": 1709
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-klipmeiker.wordstat-summary.json",
+      "kind": "filename",
+      "size": 9306
+    }
+  ],
+  "arenda-roboshashki": [
+    {
+      "path": "public/images/kiber-45/arenda-roboshashki.webp",
+      "kind": "filename",
+      "size": 12788
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-roboshashki/02-tild3731-6664-4863-a366-336661633563__photo.webp",
+      "kind": "filename",
+      "size": 22046
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-roboshashki/05-tild3233-3639-4030-b836-366361396438___.webp",
+      "kind": "filename",
+      "size": 37396
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-roboshashki/04-tild3265-3065-4430-b030-616437323931___.webp",
+      "kind": "filename",
+      "size": 38146
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-roboshashki/03-tild3734-6665-4936-b731-333438346566___.webp",
+      "kind": "filename",
+      "size": 105496
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-roboshashki/01-tild3435-3936-4661-a539-373030326136___.webp",
+      "kind": "filename",
+      "size": 34246
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-roboshashki/06-tild3362-3535-4263-b863-316338643633___.webp",
+      "kind": "filename",
+      "size": 15694
+    },
+    {
+      "path": "data/models/robot-catalog-card-images.live.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 22363
+    },
+    {
+      "path": "data/models/robots.source-of-truth.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 1243249
+    },
+    {
+      "path": "data/models/robot-capability-images.source.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 260802
+    },
+    {
+      "path": "data/models/robot-tariffs.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 92973
+    },
+    {
+      "path": "data/monitoring/production-metadata-baseline.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 13631
+    },
+    {
+      "path": "data/review/media-rights-review-package.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 185263
+    },
+    {
+      "path": "data/review/media-rights-robot-cards.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 525446
+    },
+    {
+      "path": "data/review/media-rights-registry.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 89740
+    },
+    {
+      "path": "data/review/media-rights-legacy-hero-images.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 44168
+    },
+    {
+      "path": "data/seo/rendered-social-metadata-audit.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 15403
+    },
+    {
+      "path": "data/seo/ai-entity-map.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 9879
+    },
+    {
+      "path": "data/seo/page-seo-audit.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 256271
+    },
+    {
+      "path": "data/seo/page-seo-passports.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 193580
+    },
+    {
+      "path": "data/seo/rendered-heading-audit.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 17152
+    },
+    {
+      "path": "data/seo/keyword-map.json",
+      "kind": "content",
+      "terms": [
+        "шашк"
+      ],
+      "size": 18098
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 49425
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-roboshashki__01.wordstat.json",
+      "kind": "filename",
+      "size": 1711
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-roboshashki__05.wordstat.json",
+      "kind": "filename",
+      "size": 1671
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-roboshashki__04.wordstat.json",
+      "kind": "filename",
+      "size": 1672
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-roboshashki__02.wordstat.json",
+      "kind": "filename",
+      "size": 1972
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "kind": "content",
+      "terms": [
+        "робошаш",
+        "шашк"
+      ],
+      "size": 4393
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-roboshashki.wordstat-summary.json",
+      "kind": "filename",
+      "size": 9378
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-roboshashki__03.wordstat.json",
+      "kind": "filename",
+      "size": 1761
+    }
+  ],
+  "arenda-senserobot": [
+    {
+      "path": "public/images/kiber-45/arenda-senserobot.webp",
+      "kind": "filename",
+      "size": 13620
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-senserobot/04-tild3133-6136-4265-b864-323432393163_____.webp",
+      "kind": "filename",
+      "size": 36688
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-senserobot/05-tild3362-3535-4263-b863-316338643633___.webp",
+      "kind": "filename",
+      "size": 15694
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-senserobot/03-tild3162-6337-4832-b134-393566613136___.webp",
+      "kind": "filename",
+      "size": 30080
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-senserobot/01-tild3935-3536-4835-b562-633238666535___.webp",
+      "kind": "filename",
+      "size": 33302
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-senserobot/06-tild3136-6232-4534-a363-343930363332___.webp",
+      "kind": "filename",
+      "size": 29582
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-senserobot/02-tild6561-6234-4138-a266-646433326336____.webp",
+      "kind": "filename",
+      "size": 34258
+    },
+    {
+      "path": "data/models/robot-catalog-card-images.live.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 22363
+    },
+    {
+      "path": "data/models/robots.source-of-truth.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 1243249
+    },
+    {
+      "path": "data/models/robot-capability-images.source.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 260802
+    },
+    {
+      "path": "data/models/robot-tariffs.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 92973
+    },
+    {
+      "path": "data/monitoring/production-metadata-baseline.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 13631
+    },
+    {
+      "path": "data/review/media-rights-review-package.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 185263
+    },
+    {
+      "path": "data/review/kiber-93-repository-preservation-manifest.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 294394
+    },
+    {
+      "path": "data/review/media-rights-robot-cards.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 525446
+    },
+    {
+      "path": "data/review/media-rights-registry.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 89740
+    },
+    {
+      "path": "data/review/media-rights-legacy-hero-images.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 44168
+    },
+    {
+      "path": "data/review/content-acceptance.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 26915
+    },
+    {
+      "path": "data/seo/rendered-schema-audit.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 9004
+    },
+    {
+      "path": "data/seo/rendered-social-metadata-audit.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 15403
+    },
+    {
+      "path": "data/seo/ai-entity-map.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 9879
+    },
+    {
+      "path": "data/seo/page-seo-audit.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 256271
+    },
+    {
+      "path": "data/seo/url-decision-registry.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 21423
+    },
+    {
+      "path": "data/seo/rendered-image-alt-audit.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 8582
+    },
+    {
+      "path": "data/seo/production-url-registry.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 18359
+    },
+    {
+      "path": "data/seo/page-seo-passports.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 193580
+    },
+    {
+      "path": "data/seo/rendered-heading-audit.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 17152
+    },
+    {
+      "path": "data/seo/launch-qa-summary.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 48841
+    },
+    {
+      "path": "data/seo/launch-routes.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 9789
+    },
+    {
+      "path": "data/seo/whole-site-static-check.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 13879
+    },
+    {
+      "path": "data/seo/page-type-intent-contract.draft.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 30808
+    },
+    {
+      "path": "data/seo/route-inventory.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 14467
+    },
+    {
+      "path": "data/seo/page-seo-remediation-backlog.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 8194
+    },
+    {
+      "path": "data/seo/rendered-cta-flow-audit.json",
+      "kind": "content",
+      "terms": [
+        "senserobot"
+      ],
+      "size": 224719
+    },
+    {
+      "path": "data/seo/keyword-map.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 18098
+    },
+    {
+      "path": "data/seo/wordstat-research/arenda-robota.wordstat.json",
+      "kind": "content",
+      "terms": [
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 7211
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 49425
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-senserobot__02.wordstat.json",
+      "kind": "filename",
+      "size": 1659
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-senserobot__05.wordstat.json",
+      "kind": "filename",
+      "size": 1761
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-senserobot.wordstat-summary.json",
+      "kind": "filename",
+      "size": 9443
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "kind": "content",
+      "terms": [
+        "senserobot",
+        "шахматист",
+        "шахмат"
+      ],
+      "size": 4393
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-senserobot__04.wordstat.json",
+      "kind": "filename",
+      "size": 1823
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-senserobot__03.wordstat.json",
+      "kind": "filename",
+      "size": 1929
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-senserobot__01.wordstat.json",
+      "kind": "filename",
+      "size": 1649
+    }
+  ],
+  "arenda-uv-box": [
+    {
+      "path": "public/images/kiber-45/arenda-uv-box.webp",
+      "kind": "filename",
+      "size": 8198
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-uv-box/06-tild3565-6565-4534-a632-343338326438___.webp",
+      "kind": "filename",
+      "size": 15880
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-uv-box/04-tild6231-3561-4436-a466-306663636539____.webp",
+      "kind": "filename",
+      "size": 33840
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-uv-box/01-tild3337-3736-4937-a338-373430373834___3d-.webp",
+      "kind": "filename",
+      "size": 18266
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-uv-box/02-tild3135-3462-4334-b335-396533396630__touch-.webp",
+      "kind": "filename",
+      "size": 21702
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-uv-box/05-tild3036-3934-4664-b734-663962346539_____.webp",
+      "kind": "filename",
+      "size": 35588
+    },
+    {
+      "path": "public/images/robot-capabilities/arenda-uv-box/03-tild3737-6161-4636-b263-323339363562___.webp",
+      "kind": "filename",
+      "size": 27184
+    },
+    {
+      "path": "data/models/robot-catalog-card-images.live.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 22363
+    },
+    {
+      "path": "data/models/robots.source-of-truth.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "uv box",
+        "витрин"
+      ],
+      "size": 1243249
+    },
+    {
+      "path": "data/models/robot-capability-images.source.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 260802
+    },
+    {
+      "path": "data/models/robot-tariffs.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 92973
+    },
+    {
+      "path": "data/monitoring/production-metadata-baseline.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 13631
+    },
+    {
+      "path": "data/review/media-rights-review-package.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "uv box",
+        "витрин"
+      ],
+      "size": 185263
+    },
+    {
+      "path": "data/review/kiber-93-repository-preservation-manifest.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 294394
+    },
+    {
+      "path": "data/review/media-rights-robot-cards.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "uv box",
+        "витрин"
+      ],
+      "size": 525446
+    },
+    {
+      "path": "data/review/media-rights-registry.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "uv box",
+        "витрин"
+      ],
+      "size": 89740
+    },
+    {
+      "path": "data/review/media-rights-legacy-hero-images.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 44168
+    },
+    {
+      "path": "data/review/content-acceptance.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 26915
+    },
+    {
+      "path": "data/seo/rendered-schema-audit.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 9004
+    },
+    {
+      "path": "data/seo/rendered-social-metadata-audit.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 15403
+    },
+    {
+      "path": "data/seo/ai-entity-map.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 9879
+    },
+    {
+      "path": "data/seo/page-seo-audit.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 256271
+    },
+    {
+      "path": "data/seo/url-decision-registry.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 21423
+    },
+    {
+      "path": "data/seo/rendered-image-alt-audit.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 8582
+    },
+    {
+      "path": "data/seo/production-url-registry.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 18359
+    },
+    {
+      "path": "data/seo/page-seo-passports.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 193580
+    },
+    {
+      "path": "data/seo/rendered-heading-audit.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 17152
+    },
+    {
+      "path": "data/seo/launch-qa-summary.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 48841
+    },
+    {
+      "path": "data/seo/launch-routes.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 9789
+    },
+    {
+      "path": "data/seo/whole-site-static-check.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 13879
+    },
+    {
+      "path": "data/seo/route-inventory.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 14467
+    },
+    {
+      "path": "data/seo/page-seo-remediation-backlog.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 8194
+    },
+    {
+      "path": "data/seo/rendered-cta-flow-audit.json",
+      "kind": "content",
+      "terms": [
+        "uv-box"
+      ],
+      "size": 224719
+    },
+    {
+      "path": "data/seo/keyword-map.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "витрин"
+      ],
+      "size": 18098
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-summary.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "uv box",
+        "витрин"
+      ],
+      "size": 49425
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-uv-box__01.wordstat.json",
+      "kind": "filename",
+      "size": 1629
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-uv-box__04.wordstat.json",
+      "kind": "filename",
+      "size": 1734
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-uv-box__03.wordstat.json",
+      "kind": "filename",
+      "size": 1816
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-uv-box__05.wordstat.json",
+      "kind": "filename",
+      "size": 1641
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/batch4-robot-cards.wordstat-compact-summary.json",
+      "kind": "content",
+      "terms": [
+        "uv-box",
+        "uv box",
+        "витрин"
+      ],
+      "size": 4393
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-uv-box.wordstat-summary.json",
+      "kind": "filename",
+      "size": 9148
+    },
+    {
+      "path": "data/seo/wordstat-research/batch4-robot-cards-20260908/arenda-uv-box__02.wordstat.json",
+      "kind": "filename",
+      "size": 1774
+    },
+    {
+      "path": "docs/source/reference-desktop-v9.html",
+      "kind": "content",
+      "terms": [
+        "витрин"
+      ],
+      "size": 102928
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "slug": "arenda-senserobot",
+  "query": "аренда робота шахматиста SenseRobot",
+  "status": "needs_live_verification",
+  "reason": "remote browser tunnel dropped and direct SERP fetch returned no usable unblocked results"
+}

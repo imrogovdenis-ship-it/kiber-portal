@@ -1,0 +1,138 @@
+{
+  "slug": "arenda-roboshashki",
+  "queries": [
+    {
+      "slug": "arenda-roboshashki",
+      "queryIndex": 1,
+      "query": "аренда робошашки",
+      "source": "live_wordstat_chrome_cdp",
+      "cdpPort": 9224,
+      "region": "all",
+      "view": "table",
+      "devices": "visible defaults",
+      "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%88%D0%B0%D1%88%D0%BA%D0%B8",
+      "collectedAt": "2026-09-08T05:13:09Z",
+      "period": "07.08.2026 – 07.09.2026",
+      "total": 1,
+      "noResults": true,
+      "captcha": false,
+      "loginRequired": false,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "count": 1
+        }
+      ],
+      "screenshot": "docs/review/kiber-batch4-robot-card-research-20260908/wordstat/arenda-roboshashki__01.png",
+      "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nаренда робошашки\n \nза 07.08.2026 – 07.09.2026: 1\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "queryIndex": 2,
+      "query": "робот шашки",
+      "source": "live_wordstat_chrome_cdp",
+      "cdpPort": 9224,
+      "region": "all",
+      "view": "table",
+      "devices": "visible defaults",
+      "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D1%88%D0%B0%D1%88%D0%BA%D0%B8",
+      "collectedAt": "2026-09-08T05:13:12Z",
+      "period": "07.08.2026 – 05.09.2026",
+      "total": 78,
+      "noResults": false,
+      "captcha": false,
+      "loginRequired": false,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 05.09.2026:",
+          "count": 78
+        },
+        {
+          "phrase": "+шашки с роботом",
+          "count": 21
+        },
+        {
+          "phrase": "+роботы для расстановки шашек дымовы",
+          "count": 5
+        }
+      ],
+      "screenshot": "docs/review/kiber-batch4-robot-card-research-20260908/wordstat/arenda-roboshashki__02.png",
+      "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот шашки\n \nза 07.08.2026 – 05.09.2026: 78\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+шашки с роботом\t21\n+роботы для расстановки шашек дымовы\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "queryIndex": 3,
+      "query": "аренда робота для игры",
+      "source": "live_wordstat_chrome_cdp",
+      "cdpPort": 9224,
+      "region": "all",
+      "view": "table",
+      "devices": "visible defaults",
+      "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B8%D0%B3%D1%80%D1%8B",
+      "collectedAt": "2026-09-08T05:14:21Z",
+      "period": "07.08.2026 – 07.09.2026",
+      "total": 0,
+      "noResults": true,
+      "captcha": false,
+      "loginRequired": false,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "count": 0
+        }
+      ],
+      "screenshot": "docs/review/kiber-batch4-robot-card-research-20260908/wordstat/arenda-roboshashki__03.png",
+      "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nаренда робота для игры\n \nза 07.08.2026 – 07.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "queryIndex": 4,
+      "query": "робот для игры в шашки",
+      "source": "live_wordstat_chrome_cdp",
+      "cdpPort": 9224,
+      "region": "all",
+      "view": "table",
+      "devices": "visible defaults",
+      "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D0%B4%D0%BB%D1%8F%20%D0%B8%D0%B3%D1%80%D1%8B%20%D0%B2%20%D1%88%D0%B0%D1%88%D0%BA%D0%B8",
+      "collectedAt": "2026-09-08T05:14:23Z",
+      "period": "07.08.2026 – 07.09.2026",
+      "total": 10,
+      "noResults": true,
+      "captcha": false,
+      "loginRequired": false,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "count": 10
+        }
+      ],
+      "screenshot": null,
+      "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот для игры в шашки\n \nза 07.08.2026 – 07.09.2026: 10\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "queryIndex": 5,
+      "query": "робот шашист",
+      "source": "live_wordstat_chrome_cdp",
+      "cdpPort": 9224,
+      "region": "all",
+      "view": "table",
+      "devices": "visible defaults",
+      "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D1%88%D0%B0%D1%88%D0%B8%D1%81%D1%82",
+      "collectedAt": "2026-09-08T05:14:26Z",
+      "period": "07.08.2026 – 07.09.2026",
+      "total": 4,
+      "noResults": true,
+      "captcha": false,
+      "loginRequired": false,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "count": 4
+        }
+      ],
+      "screenshot": "docs/review/kiber-batch4-robot-card-research-20260908/wordstat/arenda-roboshashki__05.png",
+      "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот шашист\n \nза 07.08.2026 – 07.09.2026: 4\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?"
+    }
+  ]
+}
