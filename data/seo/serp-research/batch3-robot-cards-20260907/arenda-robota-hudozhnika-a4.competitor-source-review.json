@@ -1,0 +1,13 @@
+{
+  "slug": "arenda-robota-hudozhnika-a4",
+  "status": "partial_checked",
+  "inspectedSources": [
+    "data/models/robots.source-of-truth.json"
+  ],
+  "contentGaps": [
+    "Exact robot-card must answer rental/event intent, not just product/source specs.",
+    "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+    "Do not invent unsupported capabilities or final availability; keep owner review required.",
+    "Separate A4 portrait robot from generic robot-artist queries; describe drawing time, surface setup and final artifact."
+  ]
+}

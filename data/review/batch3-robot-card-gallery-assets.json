@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "batch": "batch3-robot-cards",
+  "generatedAt": "2026-09-07T19:36:56Z",
+  "robots": [
+    {
+      "slug": "arenda-robot-barmen",
+      "count": 8,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3630-3731-4165-b139-303235633465__noroot.webp",
+          "alt": "Манипулятор робота-бармена крупным планом на неоновом фоне.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3630-3731-4165-b139-303235633465__noroot.png"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3165-3834-4637-b363-633935616133__06.webp",
+          "alt": "Робот-бармен держит в руке рюмку и готов наливать в неё алкоголь. Аренда робот-бармен «Робобар» для мероприятия и интерактивной зоны.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3165-3834-4637-b363-633935616133__06.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3864-6538-4231-b239-656133613061__noroot.webp",
+          "alt": "Роботизированная рука робота-бармена крупным планом на мероприятии.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3864-6538-4231-b239-656133613061__noroot.png"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild6337-3061-4562-b138-326565643530__07.webp",
+          "alt": "Крупный план бутылок с алкоголем, установленных внутри куба робота-бармена. Аренда робот-бармен «Робобар» для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6337-3061-4562-b138-326565643530__07.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3465-6639-4631-b436-313332343335__noroot.webp",
+          "alt": "Рука-манипулятор робота-бармена передвигается внутри куба, чтобы налить алкоголь в коктейль.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3465-6639-4631-b436-313332343335__noroot.png"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3039-3761-4238-b036-383439386666__01.webp",
+          "alt": "Мужчина наблюдает, как робот-бармен изготавливает фирменный коктейль для девушки на корпоративе. Аренда робот-бармен «Робобар» для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3039-3761-4238-b036-383439386666__01.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3132-3731-4235-b666-306330316665__noroot.webp",
+          "alt": "Робобар готовит фирменные коктейли на выставке для девушки, люди наблюдают за процессом.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3132-3731-4235-b666-306330316665__noroot.png"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3533-3065-4934-b435-656434356665__05.webp",
+          "alt": "Крупный план процесса разлива алкоголя по стаканам: в стакане лёд, манипулятор наливает алкогольный напиток, вид спереди. Аренда робот-бармен «Робобар» для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3533-3065-4934-b435-656434356665__05.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "count": 8,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild3539-6161-4962-b461-313766373363__01.webp",
+          "alt": "Роботизированная рука Robo-Кофейни наливает готовый кофе в стакан.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3539-6161-4962-b461-313766373363__01.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild6461-3763-4635-b532-666633626634__010.webp",
+          "alt": "Процесс приготовления кофе в Robo-Кофейне крупным планом, технологичное фото. Аренда Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild6461-3763-4635-b532-666633626634__010.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild6235-3566-4030-b434-383765343333__03.webp",
+          "alt": "Манипулятор Robo-Кофейни засыпает молотый кофе в кофемашину, крупный план.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6235-3566-4030-b434-383765343333__03.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild3737-6237-4465-a132-393964613265__noroot.webp",
+          "alt": "Крупное изображение стакана кофе, небольшого тканевого мешочка с кофе и кофейных зёрен как иллюстрация к робокофейне. Аренда Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3737-6237-4465-a132-393964613265__noroot.png"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild3739-3864-4263-b630-616561386635__06.webp",
+          "alt": "Манипулятор робокофейни держит стакан кофе и готов передать его человеку на мероприятии.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3739-3864-4263-b630-616561386635__06.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild3438-3161-4562-b937-626434386232__05.webp",
+          "alt": "Человек выбирает кофе на планшете: видно планшет крупным планом и руку человека, которая нажимает на экран. Аренда Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3438-3161-4562-b937-626434386232__05.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild3166-3530-4635-a635-326430303162__08.webp",
+          "alt": "Манипулятор Robo-Кофейни крупным планом держит стакан только что приготовленного свежего кофе и готов передать его человеку.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3166-3530-4635-a635-326430303162__08.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robo-kofeyni__tild6663-3336-4432-a366-386435363061__04.webp",
+          "alt": "Крупный план: робот-манипулятор достаёт держатель для кофе из кофемашины на мероприятии. Аренда Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6663-3336-4432-a366-386435363061__04.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "count": 8,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild3439-3161-4166-a662-336436386532__08.webp",
+          "alt": "Человек держит в руке стакан кофе, приготовленный мини-робокофейней. Видна только рука человека, на заднем фоне размытое здание, фото сделано на улице.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3439-3161-4166-a662-336436386532__08.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild3430-3038-4438-a532-323836613937__04.webp",
+          "alt": "Процесс приготовления кофе мини-робокофейней: видно стакан, в который льётся кофе, стакан держит роботизированная рука. Аренда мини Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3430-3038-4438-a532-323836613937__04.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild3364-3236-4736-b430-303065663465__02.webp",
+          "alt": "Мини-робокофейня крупным планом во весь рост, видна целиком и установлена в зале конференции.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3364-3236-4736-b430-303065663465__02.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild6231-3835-4131-b966-373139663534__07.webp",
+          "alt": "Человек только что взял стакан кофе у робокофейни: видны только руки человека, манипулятор робота и стол. Аренда мини Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6231-3835-4131-b966-373139663534__07.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild6634-3530-4637-a534-653639323435__05.webp",
+          "alt": "Человек подошёл к робокофейне и забирает свой стакан кофе, крупный план.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6634-3530-4637-a534-653639323435__05.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild3035-3038-4565-b133-646631646662__03.webp",
+          "alt": "Мини-робокофейня делает мороженое: роботизированная рука держит стакан, в который из аппарата подаётся мороженое. Аренда мини Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3035-3038-4565-b133-646631646662__03.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild6265-3763-4265-b135-653138386261__06.webp",
+          "alt": "Несколько женщин стоят и ждут своей очереди у мини-робокофейни на мероприятии.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6265-3763-4265-b135-653138386261__06.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-mini-robo-kofeyni__tild3462-6461-4733-b237-356464643830__01.webp",
+          "alt": "Робокофейня крупным планом на выставке; рядом две женщины ждут, пока приготовится кофе. Аренда мини Robo-Кофейня для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3462-6461-4733-b237-356464643830__01.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-glambot",
+      "count": 8,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild6439-3737-4733-a635-653830636563__01.webp",
+          "alt": "Робот GlamBot крупным планом, вид спереди на светло-синем фоне. Профессиональная съёмка.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild6439-3737-4733-a635-653830636563__01.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild6262-3061-4134-a465-323062633539__05.webp",
+          "alt": "Робот GlamBot на светло-розовом фоне стоит на подставке; рядом пульт управления тоже стоит на подставке. Аренда GlamBot для мероприятия и интерактивной зоны.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild6262-3061-4134-a465-323062633539__05.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild6563-3439-4536-b265-393066346365__07.webp",
+          "alt": "Робот GlamBot снимает красную дорожку на крупном ярком мероприятии или концерте, по дорожке идут две две женщины.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6563-3439-4536-b265-393066346365__07.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild3637-3630-4030-b038-613562616238__06.webp",
+          "alt": "Робот GlamBot стоит на выставке, вид сзади; перед ним пульт управления, рядом человек. Аренда GlamBot для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3637-3630-4030-b038-613562616238__06.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild3337-3930-4364-b435-613434363334__04.webp",
+          "alt": "Робот GlamBot крупным планом на фоне неоновой подсветки.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3337-3930-4364-b435-613434363334__04.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild3430-3866-4336-a665-323638663034__02.webp",
+          "alt": "Две девушки позируют для робота GlamBot на фотозоне. Аренда GlamBot для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3430-3866-4336-a665-323638663034__02.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild6635-6361-4463-b939-396566616636__08.webp",
+          "alt": "Робот GlamBot крупным планом на подставке на технологичной выставке.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6635-6361-4463-b939-396566616636__08.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-glambot__tild6231-3464-4563-b232-353731303462__03.webp",
+          "alt": "Робот GlamBot снимает девушку на праздничной вечеринке; девушка-блондинка улыбается и довольна съёмкой. Аренда GlamBot для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6231-3464-4563-b232-353731303462__03.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "count": 8,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild3333-3837-4336-b232-396235623162__09.webp",
+          "alt": "Робот-художник Sketchbot рисует скетч; виден сам робот и процесс рисования.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3333-3837-4336-b232-396235623162__09.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild3064-6338-4337-b230-376434623431__01.webp",
+          "alt": "Человек держит три скетча, нарисованных роботом-художником Sketchbot. На изображении видны только руки и сами скетчи, человека не видно. Аренда Sketchbot для мероприятия и интерактивной зоны.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3064-6338-4337-b230-376434623431__01.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild6139-6562-4232-b230-363664373137__017.webp",
+          "alt": "Робот-художник Sketchbot расположен на белом фоне и рисует скетчи. Рядом лежат яркие маркеры, скетчи стилизованные и брендированные с логотипами компании, что показывает возможность брендирования рисунков под заказчика.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6139-6562-4232-b230-363664373137__017.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild3834-3838-4137-b333-646164343332__02.webp",
+          "alt": "На столе расположены сразу три робота-художника Sketchbot, которые рисуют скетчи. Аренда Sketchbot для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3834-3838-4137-b333-646164343332__02.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild3834-6463-4234-b165-323762353931__noroot.webp",
+          "alt": "Робот-художник Sketchbot крупным планом рисует изображение.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3834-6463-4234-b165-323762353931__noroot.png"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild3739-6331-4234-b635-633262663663__010.webp",
+          "alt": "Робот-художник Sketchbot крупным планом, вид сбоку, на выставке рисует изображение. На заднем фоне размыты люди. Аренда Sketchbot для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3739-6331-4234-b635-633262663663__010.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild6630-3238-4963-b564-316235323834__015.webp",
+          "alt": "Робот-художник Sketchbot рисует скетч чёрным маркером. Крупное изображение: видны манипулятор, маркер и скетч.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6630-3238-4963-b564-316235323834__015.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-sketchbot__tild6563-3964-4130-a239-393764383362__07.webp",
+          "alt": "Робот-художник Sketchbot рисует скетч, крупное изображение немного сбоку. Аренда Sketchbot для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6563-3964-4130-a239-393764383362__07.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "count": 8,
+      "assets": [
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild6434-3038-4462-a265-313833396538__09.webp",
+          "alt": "Робот-художник A4 крупным планом на светлом фоне: виден только манипулятор, который держит карандаш.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild6434-3038-4462-a265-313833396538__09.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild3034-3566-4665-b136-633866383265__03.webp",
+          "alt": "Робот-художник A4 рисует портрет: лист закреплён на деревянном холсте, виден манипулятор сзади, стол, холст и стена на фоне. Аренда робот-художник A4 для мероприятия и интерактивной зоны.",
+          "sourceRole": "source_gallery_hero_candidate",
+          "sourceSrc": "/images/tild3034-3566-4665-b136-633866383265__03.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild3364-3836-4633-b538-633865636364__01.webp",
+          "alt": "Изображение роботизированной руки робота-художника A4 на сером фоне.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3364-3836-4633-b538-633865636364__01.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild3438-3431-4038-b939-396465653237__02.webp",
+          "alt": "Манипулятор робота-художника A4 крупным планом рисует изображение на мероприятии; виден сам процесс рисования. Аренда робот-художник A4 для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3438-3431-4038-b939-396465653237__02.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild3138-6562-4865-b933-313264613765__06.webp",
+          "alt": "Крупный план манипулятора робота-художника A4 на мероприятии, на фоне проходят люди.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3138-6562-4865-b933-313264613765__06.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild6339-3766-4133-a566-356232306263__08.webp",
+          "alt": "Роботизированная рука робота-художника A4 установлена на столе; рядом лежит холст и масляные краски, манипулятор кисточкой рисует изображение красками. Аренда робот-художник A4 для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild6339-3766-4133-a566-356232306263__08.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild3135-3665-4635-a234-313737613137__07.webp",
+          "alt": "Роботизированная рука робота-художника A4 в офисе компании в процессе тестирования; на заднем фоне стол, монитор и компьютер.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3135-3665-4635-a234-313737613137__07.jpg"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch3-robot-cards/arenda-robota-hudozhnika-a4__tild3033-3262-4138-b338-326636666339__04.webp",
+          "alt": "Процесс создания изображения: на металлическом столе на конференции установлен робот-художник A4, перед ним деревянная конструкция с закреплённым листом бумаги, идёт рисование. Аренда робот-художник A4 для мероприятия и интерактивной зоны.",
+          "sourceRole": "gallery",
+          "sourceSrc": "/images/tild3033-3262-4138-b338-326636666339__04.jpg"
+        }
+      ]
+    }
+  ]
+}

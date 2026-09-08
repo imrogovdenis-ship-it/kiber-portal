@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "pageType": "robot_card",
+  "slug": "arenda-glambot",
+  "canonicalPath": "/robots/arenda-glambot/",
+  "previewPath": "/preview/kiber-94/robot-card/arenda-glambot/",
+  "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
+  "robotEntity": {
+    "name": "GlamBot",
+    "sourceName": "робота GlamBot",
+    "modelName": "GlamBot",
+    "brand": "GlamBot",
+    "category": {
+      "primary": "media_robot",
+      "labels": [
+        "media_robot"
+      ],
+      "collectionSlugs": []
+    }
+  },
+  "research": {
+    "requiredChain": [
+      "Wordstat",
+      "SERP/competitors",
+      "content gaps",
+      "SEO passport",
+      "seoIntent",
+      "approved robot-card blocks",
+      "rendered audit"
+    ],
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "source": "live_wordstat_chrome_cdp",
+      "period": "mixed periods from live Wordstat evidence",
+      "region": "all",
+      "queries": {
+        "аренда glambot": 1,
+        "glambot аренда": 1,
+        "глэмбот аренда": 2,
+        "glambot": 77,
+        "глэмбот": 207
+      },
+      "evidence": "data/seo/wordstat-research/batch3-robot-cards-20260907/batch3-robot-cards.wordstat-summary.json",
+      "commercialQueries": [
+        {
+          "query": "аренда glambot",
+          "total": 1,
+          "noResults": true
+        },
+        {
+          "query": "glambot аренда",
+          "total": 1,
+          "noResults": true
+        },
+        {
+          "query": "глэмбот аренда",
+          "total": 2,
+          "noResults": true
+        }
+      ],
+      "entityQueries": [
+        {
+          "query": "glambot",
+          "total": 77,
+          "noResults": false
+        },
+        {
+          "query": "глэмбот",
+          "total": 207,
+          "noResults": false
+        }
+      ],
+      "interpretation": "Exact rental intent stays on robot-card; generic/category demand supports FAQ/context, not replacing exact-model page intent."
+    },
+    "serpAnalysis": {
+      "status": "partial_checked",
+      "source": "direct_source_truth_and_search_attempts",
+      "evidence": "data/seo/serp-research/batch3-robot-cards-20260907/batch3-robot-cards.competitor-source-summary.json",
+      "inspectedUrls": [
+        "data/models/robots.source-of-truth.json"
+      ],
+      "limitation": "Ranked SERP screenshots can be added later; current review records source/competitor-style content gaps honestly."
+    },
+    "contentGaps": [
+      "Exact robot-card must answer rental/event intent, not just product/source specs.",
+      "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+      "Do not invent unsupported capabilities or final availability; keep owner review required.",
+      "Translate camera/slow-motion spectacle into event deliverables: operator, shooting zone, guests flow, branded clips."
+    ]
+  },
+  "seo": {
+    "metaTitle": "Аренда GlamBot для фото- и видеозон",
+    "metaDescription": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
+    "h1": "Аренда GlamBot",
+    "primaryKeyword": "аренда GlamBot",
+    "secondaryKeywords": [
+      "прокат GlamBot",
+      "заказать GlamBot на мероприятие",
+      "GlamBot для выставки",
+      "GlamBot для корпоративного мероприятия",
+      "робот для фотозоны",
+      "робот для эффектной видеосъёмки"
+    ]
+  },
+  "seoIntent": {
+    "pageType": "robot_card",
+    "pageIntent": "commercial_robot_rental",
+    "primaryKeyword": "аренда GlamBot",
+    "secondaryKeywords": [
+      "прокат GlamBot",
+      "заказать GlamBot на мероприятие",
+      "GlamBot для выставки",
+      "GlamBot для корпоративного мероприятия",
+      "робот для фотозоны",
+      "робот для эффектной видеосъёмки"
+    ],
+    "modelNameVariants": [
+      "GlamBot",
+      "робота GlamBot"
+    ],
+    "entitySynonyms": [
+      "media_robot",
+      "робот для мероприятия",
+      "интерактивная зона"
+    ],
+    "isCrawlerOnlyText": false
+  },
+  "media": {
+    "sourceGalleryPreviewImagesCount": 8,
+    "capabilityRegistryImagesCount": 6,
+    "capabilityImagesMustStaySeparate": true,
+    "legacyTildaHeroRuntimeAllowed": false,
+    "galleryHeroCatalogFallbackAllowed": false
+  },
+  "review": {
+    "ownerReviewRequired": true,
+    "readyForPublication": false,
+    "readyForMassRender": false,
+    "wordstatStatus": "checked_live",
+    "serpStatus": "partial_checked",
+    "openQuestions": [
+      "Owner visual/content approval required before merge/publication."
+    ]
+  },
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false,
+    "analyticsProviderCookiesAllowed": false
+  }
+}

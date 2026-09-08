@@ -1,0 +1,13 @@
+{
+  "slug": "arenda-sketchbot",
+  "status": "partial_checked",
+  "inspectedSources": [
+    "data/models/robots.source-of-truth.json"
+  ],
+  "contentGaps": [
+    "Exact robot-card must answer rental/event intent, not just product/source specs.",
+    "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+    "Do not invent unsupported capabilities or final availability; keep owner review required.",
+    "Separate Sketchbot from generic children toy/education demand; emphasize event portrait flow, queue timing and branded prints."
+  ]
+}

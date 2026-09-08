@@ -40,16 +40,53 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
   coffee_robot: 'робо-кофейню',
 };
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
+const ownerDisplayNameBySlug: Record<string, string> = {
+  'arenda-kettybot': 'KettyBot',
+  'arenda-robot-barmen': 'робот-бармен «Робобар»',
+  'arenda-robo-kofeyni': 'Robo-Кофейня',
+  'arenda-mini-robo-kofeyni': 'мини Robo-Кофейня',
+  'arenda-glambot': 'GlamBot',
+  'arenda-sketchbot': 'Sketchbot',
+  'arenda-robota-hudozhnika-a4': 'робот-художник A4',
+};
+const ownerQuickCtaTitleBySlug: Record<string, string> = {
+  'arenda-kettybot': `Арендуйте робота-официанта KettyBot для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-robot-barmen': `Арендуйте робота-бармена «Робобар» для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-robo-kofeyni': `Арендуйте Robo-Кофейню для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-mini-robo-kofeyni': `Арендуйте мини Robo-Кофейню для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-glambot': `Арендуйте GlamBot для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-sketchbot': `Арендуйте Sketchbot для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-robota-hudozhnika-a4': `Арендуйте робота-художника A4 для мероприятия ${template.robot.priceDisplay}`,
+};
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
-const robotDisplayName = robotSlug === 'arenda-kettybot' ? 'KettyBot' : template.robot.name;
+const robotDisplayName = ownerDisplayNameBySlug[robotSlug] ?? template.robot.name;
 const displayHeroTitle = template.seo.h1;
 const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
-const displayQuickCtaTitle = robotSlug === 'arenda-kettybot' ? `Арендуйте робота-официанта KettyBot для мероприятия ${template.robot.priceDisplay}` : quickCtaTitle;
+const displayQuickCtaTitle = ownerQuickCtaTitleBySlug[robotSlug] ?? quickCtaTitle;
 const quickCtaNoWrap = template.robot.priceDisplay;
 const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
-const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
+const relatedSlugsByRobotSlug: Record<string, string[]> = {
+  'arenda-robot-barmen': ['arenda-robo-kofeyni', 'arenda-mini-robo-kofeyni', 'arenda-kettybot', 'arenda-promobot-v4'],
+  'arenda-robo-kofeyni': ['arenda-mini-robo-kofeyni', 'arenda-robot-barmen', 'arenda-kettybot', 'arenda-promobot-v4'],
+  'arenda-mini-robo-kofeyni': ['arenda-robo-kofeyni', 'arenda-robot-barmen', 'arenda-kettybot', 'arenda-promobot-v4'],
+  'arenda-glambot': ['arenda-sketchbot', 'arenda-robota-hudozhnika-a4', 'arenda-robot-barmen', 'arenda-promobot-v4'],
+  'arenda-sketchbot': ['arenda-robota-hudozhnika-a4', 'arenda-glambot', 'arenda-robot-barmen', 'arenda-promobot-v4'],
+  'arenda-robota-hudozhnika-a4': ['arenda-sketchbot', 'arenda-glambot', 'arenda-robot-barmen', 'arenda-promobot-v4'],
+};
+const fallbackFeaturedSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
+const featuredSlugs = relatedSlugsByRobotSlug[robotSlug] ?? fallbackFeaturedSlugs;
+const relatedRobotDescriptionBySlug: Record<string, string> = {
+  'arenda-robot-barmen': 'Роботизированный бар для welcome-зоны, вечеринки или стенда: меню, напитки, оператор и расчёт потока гостей.',
+  'arenda-robo-kofeyni': 'Полноформатная робо-кофейня для стенда, форума или бренд-зоны, где кофе-пауза должна работать как интерактив.',
+  'arenda-mini-robo-kofeyni': 'Компактная кофейная робот-зона для небольшого стенда, офиса или камерной презентации без крупной застройки.',
+  'arenda-glambot': 'Роботизированная видеозона для slow-motion роликов, красной дорожки, премии, показа или брендового события.',
+  'arenda-sketchbot': 'Портретный робот для творческой зоны: фото гостя превращается в рисунок и персональный сувенир.',
+  'arenda-robota-hudozhnika-a4': 'Робот-художник для бумажных портретов A4: больше внимания к детализации, очереди и выдаче готовых работ.',
+  'arenda-kettybot': 'Робот-официант с подносами и экраном для маршрутов подачи, промо и сервисных зон на мероприятии.',
+  'arenda-promobot-v4': 'Промо-робот с экраном и речевым сценарием для стойки регистрации, стенда или брендированной зоны.',
+};
 const relatedRobots = getRobotPages()
   .filter((robot) => featuredSlugs.includes(robot.slug))
   .sort((a, b) => {
@@ -58,24 +95,27 @@ const relatedRobots = getRobotPages()
     return featuredSlugs.indexOf(a.slug) - featuredSlugs.indexOf(b.slug);
   })
   .slice(0, 4)
-  .map((robot, index) => ({
-    slug: robot.slug,
-    href: reviewRobotPreviewHref(robot.slug, robot.route),
-    title: robot.identity.name,
-    category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
-    price: robot.pricing.display,
-    price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
-    description: robot.seo.description.slice(0, 132),
-    badge: robot.identity.name === template.robot.name ? 'Сейчас смотрим' : (index === 0 ? 'Похожая модель' : undefined),
-    image: robot.media.hero,
-    analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
-  }));
+  .map((robot, index) => {
+    const relatedName = ownerDisplayNameBySlug[robot.slug] ?? robot.identity.name;
+    return {
+      slug: robot.slug,
+      href: reviewRobotPreviewHref(robot.slug, robot.route),
+      title: relatedName,
+      category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
+      price: robot.pricing.display,
+      price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
+      description: relatedRobotDescriptionBySlug[robot.slug] ?? robot.seo.description.slice(0, 132),
+      badge: relatedName === robotDisplayName ? 'Сейчас смотрим' : (index === 0 ? 'Похожий формат' : undefined),
+      image: robot.media.hero,
+      analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
+    };
+  });
 
 const priceStatusLabel = template.robot.priceStatus === 'request'
   ? 'стоимость подтверждает менеджер'
   : 'стоимость требует ручной проверки';
 const serviceFacts = [
-  { label: 'Модель', value: template.robot.model ?? template.robot.name },
+  { label: 'Модель', value: robotDisplayName },
   { label: 'Тип робота', value: robotTypeAccusative.replace('робота-', '').replace('робота ', '') },
   { label: 'Формат', value: 'аренда робота для мероприятия' },
   { label: 'Сервис', value: 'оператор, настройка и сценарий под площадку' },
@@ -99,7 +139,25 @@ const seoIntent = template.seoIntent ?? {
   aiAgentHints: ['Страница аренды конкретной модели робота', 'Стоимость и доступность уточняются менеджером'],
 };
 
-const includedServiceLead = 'В аренду входит не только сам робот, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы и дал вау-эффект без лишней технической нагрузки на клиента.';
+const includedServiceTitleBySlug: Record<string, string> = {
+  'arenda-robot-barmen': 'Что входит в аренду Робобара',
+  'arenda-robo-kofeyni': 'Что входит в аренду Robo-Кофейни',
+  'arenda-mini-robo-kofeyni': 'Что входит в аренду мини Robo-Кофейни',
+  'arenda-glambot': 'Что входит в аренду GlamBot',
+  'arenda-sketchbot': 'Что входит в аренду Sketchbot',
+  'arenda-robota-hudozhnika-a4': 'Что входит в аренду робота-художника A4',
+};
+const scenariosTitleBySlug: Record<string, string> = {
+  'arenda-robot-barmen': 'Где Робобар уместен на мероприятии',
+  'arenda-robo-kofeyni': 'Где Robo-Кофейня работает лучше всего',
+  'arenda-mini-robo-kofeyni': 'Где мини Robo-Кофейня закрывает задачу без большой зоны',
+  'arenda-glambot': 'Где GlamBot даёт сильный видеоконтент',
+  'arenda-sketchbot': 'Где Sketchbot собирает очередь за портретами',
+  'arenda-robota-hudozhnika-a4': 'Где робот-художник A4 подходит по темпу и формату',
+};
+const includedServiceTitle = includedServiceTitleBySlug[robotSlug] ?? 'Что входит в аренду робота';
+const scenariosTitle = scenariosTitleBySlug[robotSlug] ?? `Где использовать ${robotDisplayName}`;
+const includedServiceLead = 'В аренду входит не только сам робот, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы без лишней технической нагрузки на клиента.';
 const includedService = [
   'подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы',
   'привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения',
@@ -147,14 +205,50 @@ const robotFaq = {
   title: 'Вопросы и ответы (FAQ)',
   items: template.faq.map(({ question, answer }) => ({ question, answer })),
 };
+const ownerArticleBlockBySlug: Record<string, { title: string; description: string }> = {
+  'arenda-robot-barmen': {
+    title: 'Как спланировать роботизированный бар на мероприятии',
+    description: 'Разбираем, как спланировать барную зону с Робобаром: меню, очередь, расходники, правила площадки и роль оператора, чтобы робот стал шоу-точкой, а не узким местом у стойки.',
+  },
+  'arenda-robo-kofeyni': {
+    title: 'Как поставить Robo-Кофейню на стенд или форум',
+    description: 'Материалы о том, как превратить кофе-паузу в технологичный контакт с гостем: где поставить Robo-Кофейню, как считать поток, меню, расходники и требования к зоне.',
+  },
+  'arenda-mini-robo-kofeyni': {
+    title: 'Когда нужна компактная робо-кофейня',
+    description: 'Пишем о небольших кофейных роботизированных точках: когда важны размер зоны, скорость напитков, понятное меню, электропитание и аккуратная работа без большой застройки.',
+  },
+  'arenda-glambot': {
+    title: 'Как подготовить GlamBot-зону для гостей',
+    description: 'Разбираем съёмочную зону под эффектные slow-motion ролики: фон, свет, траекторию камеры, очередь гостей, брендинг видео и выдачу готового контента после съёмки.',
+  },
+  'arenda-sketchbot': {
+    title: 'Как организовать портретную зону со Sketchbot',
+    description: 'Материалы о роботизированных портретах: как выбрать стиль рисунка, организовать очередь, брендировать листы и сделать так, чтобы гости уносили не буклет, а личный сувенир.',
+  },
+  'arenda-robota-hudozhnika-a4': {
+    title: 'Как организовать зону с роботом-художником A4',
+    description: 'Разбираем портреты на бумаге A4: детализацию, время ожидания, качество фотографии, расходники, брендинг листа и организацию спокойной творческой зоны на мероприятии.',
+  },
+};
+const articleHrefsByRobotSlug: Record<string, string[]> = {
+  'arenda-robot-barmen': ['/robot-ofitsiant-na-meropriyatii', '/arenda-robotov-na-meropriyatie'],
+  'arenda-robo-kofeyni': ['/robot-ofitsiant-na-meropriyatii', '/arenda-robotov-na-meropriyatie'],
+  'arenda-mini-robo-kofeyni': ['/robot-ofitsiant-na-meropriyatii', '/arenda-robotov-na-meropriyatie'],
+  'arenda-glambot': ['/arenda-robotov-na-meropriyatie'],
+  'arenda-sketchbot': ['/arenda-robotov-na-meropriyatie'],
+  'arenda-robota-hudozhnika-a4': ['/arenda-robotov-na-meropriyatie'],
+};
+const ownerArticleBlock = ownerArticleBlockBySlug[robotSlug];
+const articleHrefs = articleHrefsByRobotSlug[robotSlug];
 const robotArticles = {
   ...homeArticles,
-  title: `Блог Кибер Гоши про ${robotDisplayName} и роботов для событий`,
-  description: `Подбираем материалы о сценариях, аренде и подготовке мероприятий, где ${robotDisplayName} или похожие роботы помогают сделать шоу, промо-зону и фотоконтент заметнее.`,
-  cards: homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
+  title: ownerArticleBlock?.title ?? `Материалы по аренде ${robotDisplayName}`,
+  description: ownerArticleBlock?.description ?? `Подбираем материалы о сценариях аренды, подготовке площадки и работе ${robotDisplayName} на мероприятии.`,
+  cards: articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
 };
 const robotCatalogTitle = 'Вас также могут заинтересовать';
-const robotCatalogDescription = 'Роботов из этого списка чаще всего заказывают для выставок, корпоративов, промо-акций, свадеб и детских праздников. Все модели — из собственного парка КИБЕР ПОРТАЛ, с доставкой и настройкой под ваш сценарий.';
+const robotCatalogDescription = 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
 ---
 
 <article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card">
@@ -208,7 +302,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
   <section id="robot-card-included" class="template-section template-included-service" data-block-id="includedService" aria-labelledby="robot-card-included-title">
     <div class="template-section-copy">
       <p class="template-section__number">01 — что входит</p>
-      <h2 id="robot-card-included-title">Не просто робот, а готовый event-сервис</h2>
+      <h2 id="robot-card-included-title">{includedServiceTitle}</h2>
       <span>{includedServiceLead}</span>
     </div>
     <ul class="template-check-list template-check-list--reference">
@@ -233,7 +327,7 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
 
   <section class="template-section" data-block-id="scenarios" aria-labelledby="robot-card-scenarios-title">
     <p class="template-section__number">03 — сценарии использования</p>
-    <h2 id="robot-card-scenarios-title">{`Где ${robotDisplayName} произведёт «вау-эффект»?`}</h2>
+    <h2 id="robot-card-scenarios-title">{scenariosTitle}</h2>
     <p class="template-section__lead">{scenariosLead}</p>
     <div class="template-scenario-grid">
       {scenarioItems.map((item) => <article><h3>{item.title ?? item.text}</h3><p>{item.text}</p></article>)}
@@ -289,9 +383,11 @@ const robotCatalogDescription = 'Роботов из этого списка ч�
     <HomeFinalCta {...robotFinalCta} />
   </section>
 
-  <section class="template-reused-block" data-block-id="articles">
-    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...robotArticles} />
-  </section>
+  {robotArticles.cards.length > 0 && (
+    <section class="template-reused-block" data-block-id="articles">
+      <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...robotArticles} />
+    </section>
+  )}
 
   <section id="robot-card-related-catalog" class="template-related-catalog" aria-labelledby="robot-card-related-catalog-title" data-block-id="relatedCatalog">
     <div class="template-section-copy">

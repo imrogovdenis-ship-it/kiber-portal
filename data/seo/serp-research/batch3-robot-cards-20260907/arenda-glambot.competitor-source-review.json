@@ -1,0 +1,13 @@
+{
+  "slug": "arenda-glambot",
+  "status": "partial_checked",
+  "inspectedSources": [
+    "data/models/robots.source-of-truth.json"
+  ],
+  "contentGaps": [
+    "Exact robot-card must answer rental/event intent, not just product/source specs.",
+    "Keep operator, space/power, timing/logistics, price-by-request and scenario framing visible.",
+    "Do not invent unsupported capabilities or final availability; keep owner review required.",
+    "Translate camera/slow-motion spectacle into event deliverables: operator, shooting zone, guests flow, branded clips."
+  ]
+}

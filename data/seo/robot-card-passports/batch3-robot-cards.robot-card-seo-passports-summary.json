@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "batch": "batch3-robot-cards",
+  "robots": [
+    "arenda-robot-barmen",
+    "arenda-robo-kofeyni",
+    "arenda-mini-robo-kofeyni",
+    "arenda-glambot",
+    "arenda-sketchbot",
+    "arenda-robota-hudozhnika-a4"
+  ],
+  "publicationBoundaries": {
+    "productionDeployAllowed": false,
+    "dnsChangeAllowed": false,
+    "secretsChangeAllowed": false,
+    "liveLeadRoutingAllowed": false
+  }
+}
