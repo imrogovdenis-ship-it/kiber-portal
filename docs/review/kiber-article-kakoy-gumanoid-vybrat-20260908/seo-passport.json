@@ -1,0 +1,47 @@
+{
+  "pageType": "article_detail",
+  "status": "draft_for_owner_review",
+  "title": "Какой гуманоид выбрать для мероприятия: сравнение всех моделей КИБЕР ПОРТАЛ",
+  "slug": "kakoy-gumanoid-vybrat-dlya-meropriyatiya",
+  "canonicalPath": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+  "previewRoute": "/preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+  "metaTitle": "Какой гуманоид выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ",
+  "metaDescription": "Сравниваем гуманоидов КИБЕР ПОРТАЛ для мероприятия: Unitree G1, R1, H2, Agibot X2, Noetix Bumi, Арди и София по бюджету, сценарию и статусу.",
+  "h1": "Какой гуманоид выбрать для мероприятия: сравнение всех моделей КИБЕР ПОРТАЛ",
+  "primaryKeyword": "какой гуманоид выбрать для мероприятия",
+  "primaryKeywordDecision": "Exact query has 0 Wordstat impressions for the checked period, but matches the article decision intent; generic rental queries are kept as bridge terms to avoid cannibalizing the humanoid compilation.",
+  "secondaryKeywords": [
+    "какого гуманоида выбрать для мероприятия",
+    "сравнение роботов-гуманоидов",
+    "выбор гуманоида на мероприятие",
+    "Unitree G1",
+    "Unitree R1",
+    "Unitree H2",
+    "Agibot X2",
+    "Noetix Bumi",
+    "робот Арди",
+    "робот София"
+  ],
+  "bridgeKeywordsForCompilation": [
+    "аренда робота гуманоида",
+    "аренда роботов гуманоидов",
+    "аренда роботов на мероприятие",
+    "робот для мероприятия"
+  ],
+  "schemaTypes": [
+    "BlogPosting",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "wordstat": {
+    "status": "checked_live",
+    "summaryPath": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat-summary.md"
+  },
+  "serp": {
+    "status": "checked",
+    "summaryPath": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/summary.serp.json"
+  },
+  "indexing": "preview_noindex_until_public_launch_approval",
+  "approvalRequired": true,
+  "productionApproved": false
+}
