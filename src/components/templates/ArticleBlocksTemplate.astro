@@ -304,8 +304,8 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   .humanoid-template__drag-gallery::-webkit-scrollbar { display: none; }
   .humanoid-template__drag-gallery.is-dragging { cursor: grabbing; scroll-snap-type: none; }
   .humanoid-template__gallery-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
-  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: auto; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: var(--kp-reference-white); scroll-snap-align: start; -webkit-user-drag: none; }
-  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: min(52rem, 88vw); object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
+  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: fit-content; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: transparent; scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: none; object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
   .article-blocks__comparison { display: grid; gap: clamp(3rem, 6vw, 5rem); }
   .article-blocks__comparison .article-blocks__section-head { max-width: 49rem; }
   .article-blocks__comparison-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.5rem, 7vw, 7rem); }

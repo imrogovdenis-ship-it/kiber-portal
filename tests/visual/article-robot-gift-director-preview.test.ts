@@ -46,3 +46,18 @@ test('robot gift director article applies owner feedback', () => {
   assert.match(data, /extraGoshaQuoteAfterNumberedUseCases/);
   assert.match(data, /кабинетный квест с гуманоидами/);
 });
+
+
+test('article #5 owner gallery and second Gosha quote feedback is locked', () => {
+  const r1 = '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp';
+  const x2 = '/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3730-3866-4365-b461-336133633866__01.webp';
+  assert.match(route, new RegExp(r1));
+  assert.match(route, new RegExp(x2));
+  assert.doesNotMatch(route, /arenda-unitree-r1__tild6664-3730-4138-a238-373063623031__01\.webp/);
+  assert.doesNotMatch(route, /arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08\.webp/);
+  assert.match(component, /humanoid-template__gallery-item \{[^}]*width: fit-content;[^}]*background: transparent/);
+  assert.match(component, /humanoid-template__gallery-item img \{[^}]*width: auto; height: 100%; max-width: none; object-fit: contain/);
+  assert.doesNotMatch(component, /humanoid-template__gallery-item img \{[^}]*object-fit: cover/);
+  assert.match(data, /где стоять и когда хлопать\.\\n\\nНапишите менеджеру/);
+  assert.equal((component.match(/data-block-id="goshaQuoteAfterNumberedUseCases"/g) ?? []).length, 1);
+});
