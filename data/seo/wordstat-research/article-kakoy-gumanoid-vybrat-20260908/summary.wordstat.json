@@ -1,0 +1,402 @@
+{
+  "status": "checked_live",
+  "visibleTab": true,
+  "cdpPort": 9226,
+  "collectedAt": "2026-09-08T19:51:09.936Z",
+  "queries": [
+    {
+      "query": "какого гуманоида выбрать для мероприятия",
+      "total": 0,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 0
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/01-какого-гуманоида-выбрать-для-мероприятия.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/01-какого-гуманоида-выбрать-для-мероприятия.png"
+    },
+    {
+      "query": "какой гуманоид выбрать для мероприятия",
+      "total": 0,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 0
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/02-какой-гуманоид-выбрать-для-мероприятия.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/02-какой-гуманоид-выбрать-для-мероприятия.png"
+    },
+    {
+      "query": "робот гуманоид для мероприятия",
+      "total": 0,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 0
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/03-робот-гуманоид-для-мероприятия.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/03-робот-гуманоид-для-мероприятия.png"
+    },
+    {
+      "query": "аренда робота гуманоида для мероприятия",
+      "total": 0,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 0
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/04-аренда-робота-гуманоида-для-мероприятия.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/04-аренда-робота-гуманоида-для-мероприятия.png"
+    },
+    {
+      "query": "аренда робота гуманоида",
+      "total": 80,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 80
+        },
+        {
+          "phrase": "+аренда робота гуманоида",
+          "monthly_queries": 80
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/05-аренда-робота-гуманоида.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/05-аренда-робота-гуманоида.png"
+    },
+    {
+      "query": "аренда роботов гуманоидов",
+      "total": 80,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 80
+        },
+        {
+          "phrase": "+аренда робота гуманоида",
+          "monthly_queries": 80
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/06-аренда-роботов-гуманоидов.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/06-аренда-роботов-гуманоидов.png"
+    },
+    {
+      "query": "аренда роботов на мероприятие",
+      "total": 69,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 69
+        },
+        {
+          "phrase": "+аренда роботов на мероприятие",
+          "monthly_queries": 69
+        },
+        {
+          "phrase": "+аренда роботов на мероприятие спб",
+          "monthly_queries": 5
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/07-аренда-роботов-на-мероприятие.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/07-аренда-роботов-на-мероприятие.png"
+    },
+    {
+      "query": "робот для мероприятия",
+      "total": 55,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 55
+        },
+        {
+          "phrase": "+робот для мероприятия",
+          "monthly_queries": 55
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/08-робот-для-мероприятия.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/08-робот-для-мероприятия.png"
+    },
+    {
+      "query": "Unitree G1",
+      "total": 2743,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 2743
+        },
+        {
+          "phrase": "+unitree g1",
+          "monthly_queries": 2743
+        },
+        {
+          "phrase": "+робот unitree g1",
+          "monthly_queries": 1087
+        },
+        {
+          "phrase": "+unitree g1 basic",
+          "monthly_queries": 690
+        },
+        {
+          "phrase": "+гуманоид unitree g1",
+          "monthly_queries": 352
+        },
+        {
+          "phrase": "+робот гуманоид unitree g1",
+          "monthly_queries": 338
+        },
+        {
+          "phrase": "+робот unitree g1 basic",
+          "monthly_queries": 320
+        },
+        {
+          "phrase": "+unitree g1 купить",
+          "monthly_queries": 275
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/09-unitree-g1.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/09-unitree-g1.png"
+    },
+    {
+      "query": "Unitree R1",
+      "total": 475,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 475
+        },
+        {
+          "phrase": "+unitree r1",
+          "monthly_queries": 475
+        },
+        {
+          "phrase": "+unitree r1 робот",
+          "monthly_queries": 132
+        },
+        {
+          "phrase": "+unitree r1 купить",
+          "monthly_queries": 61
+        },
+        {
+          "phrase": "+unitree r1 edu",
+          "monthly_queries": 59
+        },
+        {
+          "phrase": "+робот гуманоид unitree r1",
+          "monthly_queries": 38
+        },
+        {
+          "phrase": "+unitree r1 air",
+          "monthly_queries": 30
+        },
+        {
+          "phrase": "+unitree r1 цена",
+          "monthly_queries": 21
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/10-unitree-r1.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/10-unitree-r1.png"
+    },
+    {
+      "query": "Unitree H2",
+      "total": 285,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 285
+        },
+        {
+          "phrase": "+unitree h2",
+          "monthly_queries": 285
+        },
+        {
+          "phrase": "+робот unitree h2",
+          "monthly_queries": 70
+        },
+        {
+          "phrase": "+unitree h2 edu",
+          "monthly_queries": 36
+        },
+        {
+          "phrase": "+робот гуманоид unitree h2",
+          "monthly_queries": 29
+        },
+        {
+          "phrase": "+unitree h2 купить",
+          "monthly_queries": 9
+        },
+        {
+          "phrase": "+unitree h2 plus",
+          "monthly_queries": 8
+        },
+        {
+          "phrase": "+unitree robotics h2",
+          "monthly_queries": 8
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/11-unitree-h2.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/11-unitree-h2.png"
+    },
+    {
+      "query": "Agibot X2",
+      "total": 129,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 129
+        },
+        {
+          "phrase": "+agibot x2",
+          "monthly_queries": 129
+        },
+        {
+          "phrase": "+agibot x2 ultra",
+          "monthly_queries": 95
+        },
+        {
+          "phrase": "+гуманоид agibot x2 ultra",
+          "monthly_queries": 23
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/12-agibot-x2.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/12-agibot-x2.png"
+    },
+    {
+      "query": "Noetix Bumi",
+      "total": 93,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 93
+        },
+        {
+          "phrase": "+noetix bumi",
+          "monthly_queries": 93
+        },
+        {
+          "phrase": "+робот noetix bumi",
+          "monthly_queries": 35
+        },
+        {
+          "phrase": "+noetix robotics bumi",
+          "monthly_queries": 34
+        },
+        {
+          "phrase": "+noetix bumi купить",
+          "monthly_queries": 29
+        },
+        {
+          "phrase": "+робот гуманоид noetix bumi",
+          "monthly_queries": 26
+        },
+        {
+          "phrase": "+робот гуманоид noetix robotics bumi",
+          "monthly_queries": 18
+        },
+        {
+          "phrase": "+noetix robotics bumi купить",
+          "monthly_queries": 8
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/13-noetix-bumi.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/13-noetix-bumi.png"
+    },
+    {
+      "query": "робот Арди",
+      "total": 142,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 142
+        },
+        {
+          "phrase": "+робот арди",
+          "monthly_queries": 142
+        },
+        {
+          "phrase": "+надежда бабкина и робот арди",
+          "monthly_queries": 71
+        },
+        {
+          "phrase": "+пермский робот арди",
+          "monthly_queries": 5
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/14-робот-арди.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/14-робот-арди.png"
+    },
+    {
+      "query": "робот София",
+      "total": 709,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 709
+        },
+        {
+          "phrase": "+робот софия",
+          "monthly_queries": 709
+        },
+        {
+          "phrase": "+робот софия уничтожит",
+          "monthly_queries": 27
+        },
+        {
+          "phrase": "+искусственный робот софия",
+          "monthly_queries": 25
+        },
+        {
+          "phrase": "+гражданство робота софии",
+          "monthly_queries": 22
+        },
+        {
+          "phrase": "+робот софия получила",
+          "monthly_queries": 19
+        },
+        {
+          "phrase": "+робот софия интервью",
+          "monthly_queries": 19
+        },
+        {
+          "phrase": "+робот софия получила гражданство",
+          "monthly_queries": 15
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-kakoy-gumanoid-vybrat-20260908/15-робот-софия.wordstat.json",
+      "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/15-робот-софия.png"
+    }
+  ]
+}

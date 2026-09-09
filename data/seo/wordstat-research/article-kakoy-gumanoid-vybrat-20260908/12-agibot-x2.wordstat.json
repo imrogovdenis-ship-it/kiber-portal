@@ -1,0 +1,37 @@
+{
+  "query": "Agibot X2",
+  "status": "checked_live",
+  "source": "live_wordstat_visible_chrome_cdp",
+  "cdpPort": 9226,
+  "region": "all",
+  "devices": [
+    "desktop",
+    "smartphone",
+    "tablet"
+  ],
+  "collectedAt": "2026-09-08T19:50:40.781Z",
+  "period": "08.08.2026 – 06.09.2026",
+  "total": 129,
+  "noResults": false,
+  "rows": [
+    {
+      "phrase": "за 08.08.2026 – 06.09.2026:",
+      "monthly_queries": 129
+    },
+    {
+      "phrase": "+agibot x2",
+      "monthly_queries": 129
+    },
+    {
+      "phrase": "+agibot x2 ultra",
+      "monthly_queries": 95
+    },
+    {
+      "phrase": "+гуманоид agibot x2 ultra",
+      "monthly_queries": 23
+    }
+  ],
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nAgibot X2\n \nза 08.08.2026 – 06.09.2026: 129\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+agibot x2\t129\n+agibot x2 ultra\t95\n+гуманоид agibot x2 ultra\t23\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=Agibot%20X2",
+  "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/12-agibot-x2.png"
+}

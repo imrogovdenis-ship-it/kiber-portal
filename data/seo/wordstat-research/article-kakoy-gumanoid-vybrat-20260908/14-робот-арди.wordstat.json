@@ -1,0 +1,37 @@
+{
+  "query": "робот Арди",
+  "status": "checked_live",
+  "source": "live_wordstat_visible_chrome_cdp",
+  "cdpPort": 9226,
+  "region": "all",
+  "devices": [
+    "desktop",
+    "smartphone",
+    "tablet"
+  ],
+  "collectedAt": "2026-09-08T19:50:59.783Z",
+  "period": "08.08.2026 – 06.09.2026",
+  "total": 142,
+  "noResults": false,
+  "rows": [
+    {
+      "phrase": "за 08.08.2026 – 06.09.2026:",
+      "monthly_queries": 142
+    },
+    {
+      "phrase": "+робот арди",
+      "monthly_queries": 142
+    },
+    {
+      "phrase": "+надежда бабкина и робот арди",
+      "monthly_queries": 71
+    },
+    {
+      "phrase": "+пермский робот арди",
+      "monthly_queries": 5
+    }
+  ],
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот Арди\n \nза 08.08.2026 – 06.09.2026: 142\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+робот арди\t142\n+надежда бабкина и робот арди\t71\n+пермский робот арди\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D0%90%D1%80%D0%B4%D0%B8",
+  "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/14-робот-арди.png"
+}

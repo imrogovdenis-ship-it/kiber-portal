@@ -1,0 +1,317 @@
+{
+  "query": "Unitree G1",
+  "status": "checked_live",
+  "source": "live_wordstat_visible_chrome_cdp",
+  "cdpPort": 9226,
+  "region": "all",
+  "devices": [
+    "desktop",
+    "smartphone",
+    "tablet"
+  ],
+  "collectedAt": "2026-09-08T19:50:12.025Z",
+  "period": "08.08.2026 – 06.09.2026",
+  "total": 2743,
+  "noResults": false,
+  "rows": [
+    {
+      "phrase": "за 08.08.2026 – 06.09.2026:",
+      "monthly_queries": 2743
+    },
+    {
+      "phrase": "+unitree g1",
+      "monthly_queries": 2743
+    },
+    {
+      "phrase": "+робот unitree g1",
+      "monthly_queries": 1087
+    },
+    {
+      "phrase": "+unitree g1 basic",
+      "monthly_queries": 690
+    },
+    {
+      "phrase": "+гуманоид unitree g1",
+      "monthly_queries": 352
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1",
+      "monthly_queries": 338
+    },
+    {
+      "phrase": "+робот unitree g1 basic",
+      "monthly_queries": 320
+    },
+    {
+      "phrase": "+unitree g1 купить",
+      "monthly_queries": 275
+    },
+    {
+      "phrase": "+unitree g1 edu",
+      "monthly_queries": 231
+    },
+    {
+      "phrase": "+гуманоидный робот unitree g1",
+      "monthly_queries": 119
+    },
+    {
+      "phrase": "+unitree g1 basic робот гуманоид",
+      "monthly_queries": 119
+    },
+    {
+      "phrase": "+робот unitree g1 купить",
+      "monthly_queries": 106
+    },
+    {
+      "phrase": "+робот unitree g1 edu",
+      "monthly_queries": 102
+    },
+    {
+      "phrase": "+unitree g1 ultimate",
+      "monthly_queries": 78
+    },
+    {
+      "phrase": "+unitree g1 цена",
+      "monthly_queries": 75
+    },
+    {
+      "phrase": "+unitree robotics g1",
+      "monthly_queries": 67
+    },
+    {
+      "phrase": "+модель g1 unitree",
+      "monthly_queries": 56
+    },
+    {
+      "phrase": "+unitree g1 d",
+      "monthly_queries": 54
+    },
+    {
+      "phrase": "+unitree g1 умеет",
+      "monthly_queries": 52
+    },
+    {
+      "phrase": "+гуманоидный робот unitree g1 basic",
+      "monthly_queries": 51
+    },
+    {
+      "phrase": "+бионический робот гуманоид unitree g1",
+      "monthly_queries": 48
+    },
+    {
+      "phrase": "+программируемый робот unitree g1",
+      "monthly_queries": 47
+    },
+    {
+      "phrase": "+бионический робот гуманоид unitree g1 basic",
+      "monthly_queries": 47
+    },
+    {
+      "phrase": "+unitree g1 basic купить",
+      "monthly_queries": 43
+    },
+    {
+      "phrase": "+робот unitree g1 цена",
+      "monthly_queries": 39
+    },
+    {
+      "phrase": "+unitree g1 сколько стоит",
+      "monthly_queries": 37
+    },
+    {
+      "phrase": "+робот unitree g1 что умеет",
+      "monthly_queries": 33
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1 edu",
+      "monthly_queries": 33
+    },
+    {
+      "phrase": "+unitree g1 edu plus",
+      "monthly_queries": 27
+    },
+    {
+      "phrase": "+unitree g1 видео",
+      "monthly_queries": 26
+    },
+    {
+      "phrase": "+robot unitree g1",
+      "monthly_queries": 26
+    },
+    {
+      "phrase": "+unitree g1 d flagship",
+      "monthly_queries": 26
+    },
+    {
+      "phrase": "+unitree g1 edu flagship d",
+      "monthly_queries": 26
+    },
+    {
+      "phrase": "+unitree g1 edu ultimate b",
+      "monthly_queries": 25
+    },
+    {
+      "phrase": "+робот unitree g1 версии edu ultimate",
+      "monthly_queries": 25
+    },
+    {
+      "phrase": "+китайский робот unitree g1",
+      "monthly_queries": 25
+    },
+    {
+      "phrase": "+unitree g1 обзор",
+      "monthly_queries": 25
+    },
+    {
+      "phrase": "+unitree g1 edu ultimate d",
+      "monthly_queries": 23
+    },
+    {
+      "phrase": "+человекоподобный робот unitree g1",
+      "monthly_queries": 20
+    },
+    {
+      "phrase": "+бионический гуманоидный робот unitree g1",
+      "monthly_queries": 19
+    },
+    {
+      "phrase": "+робот unitree g1 видео",
+      "monthly_queries": 19
+    },
+    {
+      "phrase": "+unitree g1 edu flagship d робот",
+      "monthly_queries": 18
+    },
+    {
+      "phrase": "+робот unitree g1 обзор",
+      "monthly_queries": 17
+    },
+    {
+      "phrase": "+unitree g1 руки",
+      "monthly_queries": 17
+    },
+    {
+      "phrase": "+китайский человекоподобный робот купить unitree g1",
+      "monthly_queries": 15
+    },
+    {
+      "phrase": "+unitree g1 edu купить",
+      "monthly_queries": 15
+    },
+    {
+      "phrase": "+робот unitree g1 edu plus",
+      "monthly_queries": 15
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1 версия edu standard",
+      "monthly_queries": 14
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1 с ии",
+      "monthly_queries": 14
+    },
+    {
+      "phrase": "+обувь woodgenio для робота unitree g1",
+      "monthly_queries": 14
+    },
+    {
+      "phrase": "+unitree g1 r1",
+      "monthly_queries": 14
+    },
+    {
+      "phrase": "+unitree g1 edu flagship d робот гуманоид",
+      "monthly_queries": 12
+    },
+    {
+      "phrase": "+unitree g1 basic что умеет",
+      "monthly_queries": 12
+    },
+    {
+      "phrase": "+unitree g1 управление пультом",
+      "monthly_queries": 10
+    },
+    {
+      "phrase": "+гуманоидный робот unitree g1 basic цена",
+      "monthly_queries": 9
+    },
+    {
+      "phrase": "+unitree robotics g1 купить",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+китайский гуманоидный робот unitree g1",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+робот unitree g1 edu ultimate d",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+unitree g1 humanoid robot",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+mocap unitree g1",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+unitree g1 характеристики",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+unitree g1 на озоне",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+unitree g1 версия basic",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1 кукояки",
+      "monthly_queries": 7
+    },
+    {
+      "phrase": "+unitree g1 basic робот гуманоид сколько стоит",
+      "monthly_queries": 6
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1 купить самый дешевый",
+      "monthly_queries": 6
+    },
+    {
+      "phrase": "+unitree g1 basic edu цена",
+      "monthly_queries": 6
+    },
+    {
+      "phrase": "+робот гуманоид unitree g1 с ии купить",
+      "monthly_queries": 6
+    },
+    {
+      "phrase": "+робот unitree g1 версии edu ultimate c",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+где можно купить самого дешевого unitree g1",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+робот unitree g1 basic для квартиры",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+unitree g1 comp",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+unitree g1 basi может ли разговаривать",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+unitree g1 детали купить",
+      "monthly_queries": 5
+    }
+  ],
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nUnitree G1\n \nза 08.08.2026 – 06.09.2026: 2 743\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+unitree g1\t2 743\n+робот unitree g1\t1 087\n+unitree g1 basic\t690\n+гуманоид unitree g1\t352\n+робот гуманоид unitree g1\t338\n+робот unitree g1 basic\t320\n+unitree g1 купить\t275\n+unitree g1 edu\t231\n+гуманоидный робот unitree g1\t119\n+unitree g1 basic робот гуманоид\t119\n+робот unitree g1 купить\t106\n+робот unitree g1 edu\t102\n+unitree g1 ultimate\t78\n+unitree g1 цена\t75\n+unitree robotics g1\t67\n+модель g1 unitree\t56\n+unitree g1 d\t54\n+unitree g1 умеет\t52\n+гуманоидный робот unitree g1 basic\t51\n+бионический робот гуманоид unitree g1\t48\n+программируемый робот unitree g1\t47\n+бионический робот гуманоид unitree g1 basic\t47\n+unitree g1 basic купить\t43\n+робот unitree g1 цена\t39\n+unitree g1 сколько стоит\t37\n+робот unitree g1 что умеет\t33\n+робот гуманоид unitree g1 edu\t33\n+unitree g1 edu plus\t27\n+unitree g1 видео\t26\n+robot unitree g1\t26\n+unitree g1 d flagship\t26\n+unitree g1 edu flagship d\t26\n+unitree g1 edu ultimate b\t25\n+робот unitree g1 версии edu ultimate\t25\n+китайский робот unitree g1\t25\n+unitree g1 обзор\t25\n+unitree g1 edu ultimate d\t23\n+человекоподобный робот unitree g1\t20\n+бионический гуманоидный робот unitree g1\t19\n+робот unitree g1 видео\t19\n+unitree g1 edu flagship d робот\t18\n+робот unitree g1 обзор\t17\n+unitree g1 руки\t17\n+китайский человекоподобный робот купить unitree g1\t15\n+unitree g1 edu купить\t15\n+робот unitree g1 edu plus\t15\n+робот гуманоид unitree g1 версия edu standard\t14\n+робот гуманоид unitree g1 с ии\t14\n+обувь woodgenio для робота unitree g1\t14\n+unitree g1 r1\t14\n+unitree g1 edu flagship d робот гуманоид\t12\n+unitree g1 basic что умеет\t12\n+unitree g1 управление пультом\t10\n+гуманоидный робот unitree g1 basic цена\t9\n+unitree robotics g1 купить\t8\n+китайский гуманоидный робот unitree g1\t8\n+робот unitree g1 edu ultimate d\t8\n+unitree g1 humanoid robot\t8\n+mocap unitree g1\t7\n+unitree g1 характеристики\t7\n+unitree g1 на озоне\t7\n+unitree g1 версия basic\t7\n+робот гуманоид unitree g1 кукояки\t7\n+unitree g1 basic робот гуманоид сколько стоит\t6\n+робот гуманоид unitree g1 купить самый дешевый\t6\n+unitree g1 basic edu цена\t6\n+робот гуманоид unitree g1 с ии купить\t6\n+робот unitree g1 версии edu ultimate c\t5\n+где можно купить самого д",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=Unitree%20G1",
+  "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/09-unitree-g1.png"
+}

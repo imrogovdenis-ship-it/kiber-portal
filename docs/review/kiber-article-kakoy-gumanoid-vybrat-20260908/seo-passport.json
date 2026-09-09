@@ -1,0 +1,48 @@
+{
+  "pageType": "article_detail",
+  "status": "draft_for_owner_review",
+  "title": "Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей",
+  "slug": "kakoy-gumanoid-vybrat-dlya-meropriyatiya",
+  "canonicalPath": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+  "previewRoute": "/preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+  "metaTitle": "Какого робота-гуманоида выбрать для мероприятия | КИБЕР ПОРТАЛ",
+  "metaDescription": "Помогаем выбрать робота-гуманоида для мероприятия: Noetix Bumi, Unitree R1, Unitree G1, Agibot X2, Unitree H2, Арди и София по бюджету и сценарию.",
+  "h1": "Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей",
+  "primaryKeyword": "какого робота-гуманоида выбрать для мероприятия",
+  "primaryKeywordDecision": "Exact query has 0 Wordstat impressions for the checked period, but matches the article decision intent; generic rental queries are kept as bridge terms to avoid cannibalizing the humanoid compilation.",
+  "secondaryKeywords": [
+    "какого гуманоида выбрать для мероприятия",
+    "сравнение роботов-гуманоидов",
+    "выбор гуманоида на мероприятие",
+    "Unitree G1",
+    "Unitree R1",
+    "Unitree H2",
+    "Agibot X2",
+    "Noetix Bumi",
+    "робот Арди",
+    "робот София"
+  ],
+  "bridgeKeywordsForCompilation": [
+    "аренда робота гуманоида",
+    "аренда роботов гуманоидов",
+    "аренда роботов на мероприятие",
+    "робот для мероприятия"
+  ],
+  "schemaTypes": [
+    "BlogPosting",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "wordstat": {
+    "status": "checked_live",
+    "summaryPath": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat-summary.md"
+  },
+  "serp": {
+    "status": "checked",
+    "summaryPath": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/summary.serp.json"
+  },
+  "indexing": "preview_noindex_until_public_launch_approval",
+  "approvalRequired": true,
+  "productionApproved": false,
+  "ownerFeedbackApplied": "2026-09-09: heading updated, hero/media image fixed, hero image right aligned, request-only price wording changed, stale choice block removed, scenarios expanded to six, product cards removed, visible copy rewritten for first-time potential customer and sales funnel."
+}

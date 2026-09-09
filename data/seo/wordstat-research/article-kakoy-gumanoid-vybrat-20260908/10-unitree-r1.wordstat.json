@@ -1,0 +1,77 @@
+{
+  "query": "Unitree R1",
+  "status": "checked_live",
+  "source": "live_wordstat_visible_chrome_cdp",
+  "cdpPort": 9226,
+  "region": "all",
+  "devices": [
+    "desktop",
+    "smartphone",
+    "tablet"
+  ],
+  "collectedAt": "2026-09-08T19:50:21.474Z",
+  "period": "08.08.2026 – 06.09.2026",
+  "total": 475,
+  "noResults": false,
+  "rows": [
+    {
+      "phrase": "за 08.08.2026 – 06.09.2026:",
+      "monthly_queries": 475
+    },
+    {
+      "phrase": "+unitree r1",
+      "monthly_queries": 475
+    },
+    {
+      "phrase": "+unitree r1 робот",
+      "monthly_queries": 132
+    },
+    {
+      "phrase": "+unitree r1 купить",
+      "monthly_queries": 61
+    },
+    {
+      "phrase": "+unitree r1 edu",
+      "monthly_queries": 59
+    },
+    {
+      "phrase": "+робот гуманоид unitree r1",
+      "monthly_queries": 38
+    },
+    {
+      "phrase": "+unitree r1 air",
+      "monthly_queries": 30
+    },
+    {
+      "phrase": "+unitree r1 цена",
+      "monthly_queries": 21
+    },
+    {
+      "phrase": "+робот unitree r1 купить",
+      "monthly_queries": 18
+    },
+    {
+      "phrase": "+unitree r1 pro",
+      "monthly_queries": 18
+    },
+    {
+      "phrase": "+unitree g1 r1",
+      "monthly_queries": 14
+    },
+    {
+      "phrase": "+робот unitree r1 edu smart",
+      "monthly_queries": 10
+    },
+    {
+      "phrase": "+робот unitree r1 ultra light weight",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+unitree r1 basic",
+      "monthly_queries": 3
+    }
+  ],
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nUnitree R1\n \nза 08.08.2026 – 06.09.2026: 475\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+unitree r1\t475\n+unitree r1 робот\t132\n+unitree r1 купить\t61\n+unitree r1 edu\t59\n+робот гуманоид unitree r1\t38\n+unitree r1 air\t30\n+unitree r1 цена\t21\n+робот unitree r1 купить\t18\n+unitree r1 pro\t18\n+unitree g1 r1\t14\n+робот unitree r1 edu smart\t10\n+робот unitree r1 ultra light weight\t5\n+unitree r1 basic\t3\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=Unitree%20R1",
+  "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/10-unitree-r1.png"
+}

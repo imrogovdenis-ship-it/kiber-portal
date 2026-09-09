@@ -1,0 +1,103 @@
+{
+  "status": "checked",
+  "visibleTab": true,
+  "cdpPort": 9226,
+  "collectedAt": "2026-09-08T19:52:52.462Z",
+  "queries": [
+    {
+      "query": "какой гуманоид выбрать для мероприятия",
+      "path": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/01-какой-гуманоид-выбрать-для-мероприятия.serp.json",
+      "count": 10,
+      "top": [
+        {
+          "title": "Гуманоид Unitree G1 на мероприятие. Аренда или продажа!",
+          "href": "https://yabs.yandex.ru/count/WhWejI_zOoVX2Ld10bKL03DdbTShkrD7eGAFtjFdz4J-bA8uuJFT800IZdKHNskPXsXw0kO4gdZ31FGOCnwO5mGQcqsO-leGy7e4z190Q5KOiK2vqmJwV2vtzco_S-SDTxv-n-iDTxZt4uzERIbkGs_eysdRK_p6SIW-dTeoQgiLIKceQ8c4aX6G4HA99QGHLY8XfJf9I4denmwOihd198OD0F2ZL3Qr22ZojcFGSLmM4BvU2Ij0Uxq2Le3sUkMh0Etrobw0zdebI07QwnMl0hH0Z5WvNnEE9TpbrJZEv7HfyQDLP9v7er7eytxYKISK6hsXDjHfrpVKdjhHfzEMJlCybzeiSB0-IM9MbIjZ7dlZ6w_Dbi8iWJguQtYpY_4I-2BhE9zlc00tW0FOmAMTk0QpxW2xH6erx4t0Bf5Q3LiCkW1UBm1trsjq3bNG-iRk4hd6DDmcpJQiHmyGH2j2lGs7uGDfDIG4y7Mz4XR0bWQpQR-OOhPu2PSlcArVMDZENNmqIbhOcg0onEQA8O-KXHqqMONopHKm1NEJXnw5hQUWmqmenno6YyIGcpeMpAHZznWnCqRN004X2pCJjwbbFK7tumnYX1mOehv-s4IGyWVJAFhutvX1BTyRCwZbSodyBVdx16UuhosWs-Dd2-ZsO9ffi1_CCWtsWpbcBhr-IfDltgxhkawR9m1X4ymUwO6bzm2EzC3IMthIbvT7tAmysTTnoU7vCUt12PnHqGhxBnJAgGbPP-8bqMl_9135HKIVzLxtNMwO4YfURDl58vgPAvLAPGYx30hi61t3ieZo7_MW-C8buC460HhynZjGx9Qi4epa0ceiiP8BMsGvCOMrFQstk6XoieoswWt1E0nyVWoNCYlAI3VuHzl8NODc9P8JiHd8SUR3zNEBMXp9CXbd6PB7y5nXPG_CGG40~2?etext=2202.8dazJZEV5Xjn-8fLDNGZ2TQY8BJMhsN-1iB1J5H38DLfuL8n-RDJvmxqqNmNoHwwE1iXJRDHIbaNZQsaWgEjSn6KhOmYQT3qMGB3leP8_1l6d294dWdkdmd3eWJocmN0.86f739bd2ad4d506e4019dfb25cf27190f6d1710&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F"
+        },
+        {
+          "title": "Быстрый ответ Алисы AI",
+          "href": "https://yandex.ru/alice/?utm_source=yandex&utm_medium=interface&utm_campaign=serp_aliseicon_chat&reqid=1788897102619153-10515365506423256668-balancer-l7leveler-kubr-yp-sas-188-BAL&theme=serp&source_query=%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F&alice_deeplink=%7B%22text%22%3A%22%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F%22%7D"
+        },
+        {
+          "title": "Может заинтересовать",
+          "href": "https://yandex.ru/an/count/Wk4ejI_zOoVX2LdK0fqM03DeczShkrEFzjpFdlm42caAdnGuYkU93G8WuJY2YN4AIjFFL08OwYvraIF0FG5p0bLy0k4OCnwO5mGQcqsO-leGy7e4T1DNvWvMAfK7T2dX34Bh3NU-ViVh3NUuFpzGfnsLtbAddMFwlANEwJHtEg6vCvTExQdJ-SoZq7igdKxlwMrBSrI5WdBdJ_xyeP54zFFyIR865Lc5galKd-ZJ-VnHAhBMIF7p8WK5FnYqk1OPqR0YZQ3U8E-0APiRJ6B8W8IcKbbXXJFA0KGCEexYPG7XwvMm0hJNAs05QAzNlWhGNg_i1MYlLu8KeBrUyIf0Iwq3alDre4QfL2gLofmk_UV8eyY7i1VyuFKUk2QOG0090tV0q01VkS-D31wuqM9AW-S8HWKSh4-Ic5NbofZ7tlZ6YxZ1KmaLw9pFDqnDDe3f3Ty0Dd2TIeHKsR3rTOHqTHh4JS0kaLeDUnEmIwHMmnQ3Be3NHy4H6jQ8ELH1wnkxI-GQqt2RDDkm7Zr04Aq8zJOSXW-arP0GmDVrIbW0MmTqxMxzmi9sxkAZKTB2ri8E3a2-LCXaAyZeDrV05gYwo37afgwzOzApO35YPemEyuM0a4MZ23iLLi1qhIVeVfn1Z91ZUKQ3-sBlPPVbXvbOY31zSDFgoVX_bsSqyFSkpsZWpsLYkHBsTmvPQ7fVUm5A6P6VlG2bZ0ZJp8J2B3ENtWf659riqOquNN1WUiVfWhkZjpfqrjSHqjLvCntsPN_M7KFqvCzbR1JpOzg35V2HvKJhlr0n8b6DJBiKrsjlBIXLV9QcIrOXZQqYvqgbKXd2BeC2Umce_10W1i14cw7cH1_y18Upy9las845F1X_WCvf3m8Y2YnN5C8JFQYZF6oAx3yJjNRa8LGhE1HU-vpB2tsZDBVj109MbqydrS6J1Kl7RK1DSXJbSYm9OU9A6wcjUXlNJZibMuGoCZVU1nLMYg0o7W00~2"
+        }
+      ]
+    },
+    {
+      "query": "робот гуманоид для мероприятия",
+      "path": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/02-робот-гуманоид-для-мероприятия.serp.json",
+      "count": 10,
+      "top": [
+        {
+          "title": "Роботы для мероприятий и праздников. Купить, арендовать!",
+          "href": "https://yabs.yandex.ru/count/Wg4ejI_zOoVX2Lcp0fqK02FbZDShkrD7SJjLz4XlN8LFj0U_RnKR1432iIxYQwt_yjAKW3c1Ajum0Jt6Z0Vc1O76PXEcla44l1u1lGGGsWYUBEWxJQ3Fvt9dp_OxTzvmv-jtlDvmXok5GgVGgTHfs_ZKpg6vFSMZzmrrIfrEMya82Ebf1qpPt60o018vhYYL7yZX6c4nCEWuBWi8Nw-45Q2zNW4hG7kzybM0zdfbBq1xlHAa0EtrYbS1MY16h9olYSQm1he1i82LqnrwaaMLvr8eVkVFs_cqf_cDJ_DfVKUTpcSqQjlIQPxdKdi53jOdISogScNCOszyuxNPKfWbK0Tt3Mzs6KViAK1Sv_CD4-06S00RkBGJrs1T5h1Bf5R3tWJi4gdLiCMW2-0juNGd07VNQtGELT3wnkuIkSOqt2RDDgn73n14AqAz3OVX0sar90JmTRqI5i2M1hDflvXceEQOe2OlcArVMDZENNmqIbhOcg1YzS4V4HM15dRGP1NADrV05CnD7deKjccFZZ7afeu5C-dOFKRCZD4rG41e0GiT_q2sdg3xSGOnGeu1i7q_Z6IL-C4DdB_yRmWkLzyRWilLvvAm-_xTSqaa-rglfLtxMQ-bNMEQVTOYi-op5fdZNTTrdJR385cRpA8XIXL4UjSGfGeYlVM1lhmyucRboNy7_DFwCUt12bILfK7wBtH_ezERhAoaUUsVN395HCvdlTTzcGkv2rRjFXwFQ6QkL2gL8UmoEh1ZT0pB8SeVXIg7IH4F42O27_p6Eq3hbYmGZDO2Abeq-213Fr1vf8KMrjplXwKNzrnO18OVo_QgjyZGSQXwFcjY6xsKrPpsJFVLzGqQlaflqt7eIAlx4JgOO4sbMbHijOnIPfSJiMXOX9M-Iq86~2?etext=2202.QoptDgMI8F06nzZQcSWqjh8lEu_AwfdAa41qFuoF7kCDXAbKOJaXb4ITDleHwx-0h5dusCKbJTqmKc3VYP4mpmpzdG15cGVlaWJzenR2cHY.c2a6cf7a2769b8282a166444b736863dabea88d1&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F"
+        },
+        {
+          "title": "Программно-аппаратный комплекс (робот-гуманоид)...",
+          "href": "https://yabs.yandex.ru/count/Wr8ejI_zOoVX2Lc_0oKQ0EDkizShkrENHgFs2QWAPuuYUiB7FY7T800IZdMH47nOiK21B_wGorO2vWIgUCC4z1Wp7fWN11gRJPZw1X7mBX7GIm2XbI1yezrf0dq-bpjxjj-vyrrVEr-_u_M6EzodjSYewEVdnczfBitnvntDfrFdD5-g6Y5PCEAsfLFdZJkbjrHQeYfaP894VIGq8qa6TUXQLsjRHcsr8Ya95ItLLI6Z8YhHaenQoGZ82AbEec4TEY8oeb7Vk56aH4MY7XrHQwCY8Y8gaWmZf2CIDOoKh4f2IKZM6a95IpNrnb2rlg5a16I4f8Ha16I4fBW3fcnkC1a0YHnNbCeFv72Di1WOT1nD8FBnyV7nALaM4BvU2Ij0Uxq2Le3sUkMh0Etrobw0zdebI07QwnMl0hH0Z5WvNnEGaLPC5l0mcTEbbznvMTLNM2HIsYbpR0DyyrmAnU_yUJkVzZI_yMa-hU-eq_cCHcrREitpN6glmC7w98bPLQwCUUoDRxmU2PQl5Y68UczhDxkL3H852E_p-OO9S0CuW0rSVnMev4iNO9T8hOQz2TWbKgjXYq4Nm5l2wKu0xgxNw1ogeFMDtILoZMcuJPfjM8yU88XMX7eR3iC7qcf82E3hUYKiWAq3MkqUKpKbyH3iWjdwXONjtCL7ewI5hGb367eMU660iR239gjGlha2fc1E8CeE2bjFGOUPKBOWLZl7a9iw5ioanUenOcQChW42GWjOwFW7ilK4tOypY15o-BGb-M7wYUllWrtiNVdV9tZylK_m-7DBz47-dGuVNdsjpsCYvMTz7XCfJBFtSsIMlP_ZhkkwJfjXaAnDPXbWBvoazm7smabwM-JBlwlj3D2JVn0dP61-J7jm0bvI2DFy5w-xqm9cGWAbzJlqQuUYbwciBkorVpAhIjKFd_LUzsKkv2vOjVjuFAAPkLAfL8Qmo-Z0Zj4nCEsKFsr95BmY7Y1C12RyoLjo-Ymv7Lj5e_ge94gvJWJzVJJo6r2v1J5Vtjr2IAGqBMcR9h_E3uDkEqEdJS-kxckkzF8QnDMG8HL65Hne3ebziAsO2WpBs1bEUMwDAhATZebNfIRyaN1NJaIgBHvhiaPN50Jf8EUejYZk2olt2989~2?etext=2202.QoptDgMI8F06nzZQcSWqjh8lEu_AwfdAa41qFuoF7kCDXAbKOJaXb4ITDleHwx-0h5dusCKbJTqmKc3VYP4mpmpzdG15cGVlaWJzenR2cHY.c2a6cf7a2769b8282a166444b736863dabea88d1&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F"
+        },
+        {
+          "title": "Робот для мероприятия",
+          "href": "https://yabs.yandex.ru/count/WgKejI_zOoVX2Ld00hqK0FEaZTShkrD7eMBQawjGCOrAR-Wq-iGt2824Ort4rzeIJk04p0bKyGbmlM42UemP3ymB0etD9anzWmXuAo2Wbm122tq-bpjxjj-vyrrVEr-_u_M6ErpSwNHASwaK0DGRr28aQWqZ9HAMa8o0Z92OTi2KpGqc0o2HuufI-O4ShX4M0uEEuvq97HyKq8Gk84mNu4sW0ExrIbW1skiLi0AqrojV1MYlL_O2jDShGGhGNgzu5Q05OiJA-Pf8Z5vbSUbfvdJfFoDIoZw4bn-ytWCtpwLG_CwVj_DfJ_CRd-RJ-euwdSzerBQbqppFfVOA7AnFafXLvSgOnzxunblaXBUtnCvmktMpmq6TFNy4dSytJ80Rm05iu3wT7jEw0Bj4QZNiJS0kaLeDMmow0DuIJdS2SEcfcZA7AcXzOtU9N6CQRfDc6zQZ1mYY5Q7UXiFmWRGQ4WBukbu92s3hWDRgYycVCRKnbI-OhLzOsCvTV3HAMjYQ02moQG4LmzV23fgiGldc2fY2kSb3Zy9Mv_8MGsxgM32JZjrZnCmONGC4X1QmqF4FPEi9kXzd42FaG01kxeTzcDEF3zxPUltl06zTtpl0MzVdwZXE-RkdEjD-RLAKn9zDYfB8DEVeOvPpzEswhkkq6GR9scIM6YR6HNglOM9SfBTBBr_sRf5tRvxyoSvyZNvCUx02JuzFT_xhdOpeJoRzbjPr9YSZ-fD9h_sJUsjWXZGpLogLoX1s6HtOCJg69LZvvOBYe1Jn064Y7lp56ophTl079dC1bK1HcVI2xO6WYdqkhoTuXR-T9dGO6h5cK3dKWe6jk_ICbJ7dIEDn5s2UuTpSoSSUFYw387EpL7Dpo1RVM9d67s7-V5YTWxLeM1UxiIwixF5Q8G00~2?etext=2202.QoptDgMI8F06nzZQcSWqjh8lEu_AwfdAa41qFuoF7kCDXAbKOJaXb4ITDleHwx-0h5dusCKbJTqmKc3VYP4mpmpzdG15cGVlaWJzenR2cHY.c2a6cf7a2769b8282a166444b736863dabea88d1&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F"
+        }
+      ]
+    },
+    {
+      "query": "аренда робота гуманоида для мероприятия",
+      "path": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/03-аренда-робота-гуманоида-для-мероприятия.serp.json",
+      "count": 10,
+      "top": [
+        {
+          "title": "Роботы для мероприятий и праздников. Купить, арендовать!",
+          "href": "https://yabs.yandex.ru/count/Wg8ejI_zOoVX2Lcl0gKK06EbZTShkrD7SJjLz4XlN8LFj0U_RnKR1432iIxYQwq78rALW3c1Ajum0Jt6Z0Vc1O76PXEcFaK4l1u1lGGGsWYUBEWxJQ3Fvt9dp_OxTzvmv-jtlDvmXok5GgVGgTHfs_ZKpg6vFOr2yUXzGvrIfzDMCW92Uje1KpOtcCpmAOIWL3Qh5sZWeSMWuxWi87oz4bQ0zde5h03jzSfN0ThhbRq0xVLAa0AqrojU1MY16B5olYOUCo1497n2aTCTUf95nQB7fyxp9nI_y-ZjbEOtD0h5yTkUrhbKAfL2dRSjdUPvBhLNu61zaiIiAbV6FFR6DrwRBOLP0dLmr_1cRq7X2arIq_bymmIu0Hp01Yxjn3LObmNi4gdLi3S1kqHgDMmnw09ulG3SNQ_HELH1wnkxI-GQqt2RDDkm7Zr04Aq8zJOSXW-arP0GmDVrIbW0MnhCflrYce6QOuAQl62sVc5XEtVnqIXfOMk2YWLKZWn9WS323fgiGldc2fY2kSb3Zy8sxT4nXjpKiM0c7Rl7Y9ankWO825s0lV4rgzOJT3_E84R8CG2sxuUHh18_M0NYuFz6o-w-Drfszxa-OaN-JcUzANwjRo98v6Tz4q4YJBC6KSoo1b7CyQxhkawROOXq8LzfY585aTurHAc2I6zze2ylZxXPUVBV0V-qVanxi09LPMcG_WlTt-Zq9YihQLxx9vTC4P7pMUzrN-P2xe9Lku_78vgPAvLAPGYxZ13i61t3KatvTNXHlTWZgF0Y7lp6Eo3hbYmGZD82LDGo_53gympQrtRx3WkWxQbG4XVzGLdmVdgC8vgeXNfZlyfnb7cg6SzsiB0DIYYqN4l5pB7Vw56cmlBX9hMe9KWPzuGq9s9HkGWh0pQ43000~2?etext=2202.DK5IKMcIhHwxP2rw8VABd8Jp96NVWTMuX1-xOffSmAcbuS8oO8zNmo-34RDGaTvwRAOcsWjWnLYgpW5I8oX7mwzYCzhYTbTkJSbq-RAjX3FqaHppcmJvaXJ0d2RwaW16.7fbe037d26f05987ed10ae1cfa561abdefe0365c&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4%D0%B0+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F"
+        },
+        {
+          "title": "Специалисты в Москве",
+          "href": "https://yabs.yandex.ru/count/WhOejI_zOoVX2Lcw0aKL05EdbTShkrD7eGAFtjFdz4J-bA8uuJFT800IZdKHNskPXsXw0kO4gdZ31FGOCnwO5mGQcqsO-XGHy7e4z190Q5KOiK2vqmJwV2vtzco_S-SDTxv-n-iDTxZt4uzERIbkGs_eysdRK_p6SIW-dTeoQgiLIKceQ8c4aX6G4HA99QGHLY8XfJf9I4denmwOihd1P0RcuvDIsQoo85kYWK77SLb0-7ebh03jzGfO0ThhbQy2jDShUm7QwvKW1MYlLxmAq08nOkLy7O0fykoxOrIGqwN5ZrQHB7fywZotdr3ypgEtKvhVq2WKnszxMkTIgLGATTwsT9hdkTHUWOFrIHApgbmPyzWRttXjjXHc2TJ1NSERVOcT8MzOu7o-OGBS00vW0vTsuXfKeWDsYTHgs9k0NIAr6hOOT06yNm3khjVe7AgWzOtT9NADQRXDccrOZnuWY5Q4UXiEmmVIQaW8uEjw9Io0BGrcqtunnMpn4YvVC5k_iB2Tk_XebBImDP75W1iv0A1WWeKTD5c5yiqLC0Lp0b6aA6mz1HrcGZdcC5maXjpKiM0c7Rl7Y9anEWI4Bi0-y3QhC5th2ReVPn0ZvC0GzVN39eAKFpWl-_wl0ECitol0ECldtiWb_jr7qTFnjHYKjVqi1cLjJBFlhZ7Blhl673ENNZ-boJTlrtLTfyqNgX22kHpfWQNt08xqmD9RUjANbqVSh3pPrt79uVanxS49d57H2lil5Cgf2LbdukNEQ_ya4CL5n2utJ0aLBxRjOWmV73bNAfNA47OP8TWnEePbdF8tQO29Wgqoc9uO_COxeEkMZ1ACtG9glB2I2rja7J65cJsjjwfeuY2BuK3k2mMrIz0LpvyiHxuFNBFVCcZD3CFTWeCt1eu9Way8SndPSdmCLvAQzPb8FsaH~2"
+        },
+        {
+          "title": "Может заинтересовать",
+          "href": "https://yandex.ru/an/count/WkGejI_zOoVX2LdK0hKM06CedDShkrEFzjpFdlm42caAdnGuYkU93G8WuJY2YN4AIjFFL08OwYvraIF9RmBc1Ahu1C8nPZmmBmWqDfimzIaYuFK8w2PaE0N00QLIUK2N4iuWjDvmv-jtlDvmX_lp0tNQKUajTTevfizRwfnESwSJcZjpwTIUEftFF0gzfzBfz9xUjZH7LIWeT_xapnyQIKG_pvyaQr2HLQYwHFs9FftF7wKYQuqKFozIKF23GOjhaH4DAz88wWto3fYokS5aXYMC4gMomegmBowsOD1n52yB25-lX1MWlLu1Aq1xlV9LWFPwPIz0UxqIf03jzOfN0Lfg7P2ShmCrIgLIgLJcTEa_Hnv5FeGzamzUxu5hWWa4a31m1mmDy9NxtCWW0gGGB2ZYEO9H0GVhaoHcLRaovh4tll7Al5659P6SppTCJJQ0wGtV03PmdKg4LDcmzNM4T7KQn4t0Bf5Q3NiJi4kaLiCMWow0rqV14HhMY3bKGUiRkqla6jDmcpJRi1uzG12j2FKs78OFfDMG4C3NzKfO05i7TErk_SB2TkxYer7ImjR23Wv0lcQs55J8P6aP_UOAs09L5pc6tDIrTqnw5Yn6p8pHORuG4BhO8dDMM07JjPwW-t46CKAEvHaDxekzbrsM7sPY8SBqmKsh9-F_NPxHmD-xFAE1FvU9vKhOtpbaeUbzxGKePKH-zWAKCY9CCnEBMMOklSqhQ4s7T2DE5noOtd6wuExehGwTzNM4T7NUJ8TzsPzrnn0z-NCP6yNycFPW1NnaET7wBrICI5GZqox5zTfR2qeLdwNfabL8Owl8kLAfL8QmomZ1NW8g_mDGVSqe6a2081_y18Upy9las845F1X_WCvf3m8Y2YnN5C8JFQYZF6oAx3yJjNRa8LGhE1HU-vpB2tsZDBVj109MbqydrS6J1Kl7RK1DSXJbSYm9OU926wbHlKrifvtzDK8PEHllHuMLVQcC1m00~2"
+        }
+      ]
+    },
+    {
+      "query": "аренда роботов на мероприятие",
+      "path": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/04-аренда-роботов-на-мероприятие.serp.json",
+      "count": 10,
+      "top": [
+        {
+          "title": "Организация мероприятий — регаты на Ваше мероприятие!",
+          "href": "https://yabs.yandex.ru/count/Wi4ejI_zOoVX2Lcx0fqL00FdbTShkrC_aQUufIbGJ6-f57_QkOeD0Y3XM1S9m61X0kO4glW4mjum0Jt6Z0Vc1O76PXEcFZC2Ne-0NW88BVJvNExisNxdpXlkVFsErnlkS6aa4Vq42ILHWOoGZchgZMgHq8mWewIQggH4bM55ggrAL2IZ8oIZ819BI2Da50afpGYYtgYDa8wmEs3AvWQJ6GHfA50gcrahlkWi67GSJPYB919D5j24BY3yWLu1tEkLi0AqrojW1MYlLxuAq5wlx0LehrU25A2zNl4gG0l4Y9NpDM58Wye33J0PvdHTiEs1B7fywZo_frAez8RUTev7eRYTstYqVkPIMmh5SLiwpVDSQg_0mVeaYLbLhenvx8rll0HGVQNCnWXxBBdPpR2ynNqrdSytJ80Rm05iu4PWBaTX0NQ9r6hOcu1T8hKQjXXq0Rmbd8e8mELG1Qrlx2wHQqp3RT9imthq046q8jJRS1W-a5P3GW1VrojX0MmTqEfWNp5bmyYf2sRh5nQsSnSVZP8MjYO29zWnm98w2XPsq6GLoZTNm1JCJWfRJq67cL2EgSBLZI5ZW6B6w10Gme0i_3Qph2VeVfn1Z923PkJIVrXc9w9_S1ALglyz6Wz-xz5uy7FzZZgilo-HWB--TYdt1UHdbt9VG9Xc1iJCCWDYvfYvzFefJRvvkwxhEcscCDQqLqOtqlGunakM1WVmz_P7xm7ylVtHMp_sPI_44MtFa_qOOf4pFwOzU0TAtzRHVpd8BifXPHVbiBpMWpsU5KBnMS_CbKgbCeHTnWXsZ8vXAQVyK4P8j7y4y8897Fp2-rthbe0FF80jAgcCNyPRQ01qVGJu8uFVnd0vxgEp4RXy6KTOSGa7l5qhHrRciMQU_k5YlY9MSNK_ZCLZ4ZTm-maFlnQVKWsXyVRtMCDGL3CHLcO4tnG0~2?etext=2202.Jh6Mp8DubQU6ZWYFlJS6zbPZd1I4z-ltv3flZtI4zHoOvstyDCSR9wAppiJL1DkbenaSKDkS_JOSIyby9lkPqXFxa3dxaG9odGx3anFiYXU.f8328aed4517687efcd798b309bd91fe932ab69f&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B5"
+        },
+        {
+          "title": "Организация выездных мастер-классов",
+          "href": "https://yabs.yandex.ru/count/WeSejI_zOoVX2LbX0iqJ00DaYTShkrEVIfrEAGfdZufexdJUFlW60P1mh8im3z7q1Cm9LF49SBrX0dgC6G_C2mADpIPCVMO4l1u1lGGGMkZpkTpPi_tEdJVS-VeThpVSuP9OGXfX52HKLCL1HJe2KpOtcCmWI4E1KjdCMl55Py6WusWYy0UF2WeNg2uB25-lX1MWlLu1Aq1xlV9LWFPwPIz0UxqIf03jzOfN0LeWHgoShmdoLkz7sbUQqwN_zlwuiEZngVFSdagXqXjwspaUXU9sRkFH-fbBRIaKnstfDCzpgRq21-kJ96PLkJBciJU-yJxxZFYDPJdE-TtiIXOCpG1oSJxVC05k00UmWLkpHGzIpGcmIwHMmzu4x1AfrR35e0lWBU5KH00kXofeVMDtYLnZ6cwJPXlMemS8eXMXteR3y86q6X82-BfU2GjWwu1M1_l247P0QVt2mdRkugDHqiBMnD-VKyyLAnOMTj1a5SetLy0Kp4uAMqz1XvbG_aEGP6F86A2OCVhNORuG4CA0BFmsiwmdw7wSGOoGWxO2t7yuvjlTFzXJbSN_YnJ7vNkHuhXyhfVww_5tvbhXbAzTtcsTVtPvjtLccZsG9Soo1x9artLTfyqKnfhsokX6cXvFk0BSOfJos5L2WobGeTBIEmKgL5fwYyANQx9Ia9xykTetGJ-cFLW1A497hlz2jmwtktxdbUQrtiaLt8ukFkkPkLAfL8QmonZ1Zj4nBAdAVmI7X8SV0RnW0Xdym_iCvNOO0coJVq7SHKQf89whGcXFKCZRz8Wm_dY0g9KIP6KKFKI3t2ZDFBYXOsSnVNg4ye9Jzg9VskB9ysfq5n14Hqj_DYegiHPMUjWP5000~2?etext=2202.Jh6Mp8DubQU6ZWYFlJS6zbPZd1I4z-ltv3flZtI4zHoOvstyDCSR9wAppiJL1DkbenaSKDkS_JOSIyby9lkPqXFxa3dxaG9odGx3anFiYXU.f8328aed4517687efcd798b309bd91fe932ab69f&from=yandex.ru%3Bsearch%26%23x2F%3B%3Bweb%3B%3B0%3B&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B5"
+        },
+        {
+          "title": "Специалисты в Москве",
+          "href": "https://yabs.yandex.ru/count/Wg8ejI_zOoVX2LbN0gKK05EcajShkrE_ez4JKLiQpQNt2QapgcA304WuraLyhMKUeka9c1EeuXC8UyC4z1Wp7fWN11gRJPZwp0XuFG9w2I2qqETpkRDd-vqxRxZpzJjURxZ3lQ54HQ8U7L5hwuqQHaWoX6gbeAMgZESD9IJg4GaIF4b7Iaepe3jWokO6ana4GoGfbSqiPmOLwC2WutZ7OyD90Kte0i8Vv1N0lLu9Aq1xlG9MWFPwvQi0xVNANe3sUYL80Thh5Qy2j42CM3bV4rLuleZ2cqTEby8MHgOFOV_1wprmMVJur7bkJwLGwGszxHoFGd4xj_5e_SobjXIAuxPqckUvr5w1W_L94hEgN1dps1lVU7qSOHXX65S9cDtDphR1IAS0BkVp3HFW1d006xXBBTiYPuo0NIAr6lOcO9T8hOOjXbq0xnU0Iq_Lb3bKGUiRkqla6jDmcpJRi1uzG12j2FKs78OFfDMG4C3NzKfO05iQpARzOeBPeL0HfBfWjdvXOJjtyT4eQM5h8ei1Dt80GC442pjeiWhbcojW2kO4eaXHs7eAEio4Seb9RGovgMF1J3fsZn4pOtG8265mCM1lPi5qhIVeVfn1Z93Zg6xnXvTnSd4VJC6F9VzBG7RxlGHajvzxW1dOt-aXHiQ-rcEXbFoinq8fOPfP-62MMVXWZdTTrtNQJ9l55Fj8aDpfdGJ9dTxIWhvCyvRbpvC5i3A8zMFQWs_8zhPy_kiCqgXuvxTECXTWbDVwDQopDzrdVGmV73bNAfNA47OP8zWnEePb3EMd0eD5u2dmS4GL_COxREMMt0LyfMk0xAKeJUKQB91JaFlYZxM9QYc1JqRHGpIjZIJdZBI09qepVEEOCmYE3uaPCNiiRbaq6wakuJuJBk4j0W00~2"
+        }
+      ]
+    },
+    {
+      "query": "аренда робота гуманоида",
+      "path": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/serp/05-аренда-робота-гуманоида.serp.json",
+      "count": 10,
+      "top": [
+        {
+          "title": "Быстрый ответ Алисы AI",
+          "href": "https://yandex.ru/alice/?utm_source=yandex&utm_medium=interface&utm_campaign=serp_aliseicon_chat&reqid=1788897158608113-8866091961036513811-balancer-l7leveler-kubr-yp-sas-188-BAL&theme=serp&source_query=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4%D0%B0&alice_deeplink=%7B%22text%22%3A%22%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B0+%D0%B3%D1%83%D0%BC%D0%B0%D0%BD%D0%BE%D0%B8%D0%B4%D0%B0%22%7D"
+        },
+        {
+          "title": "Может заинтересовать",
+          "href": "https://yandex.ru/an/count/WnOejI_zOoVX2Lb20qKO0CDfeTShkrFtGU638WLKHVxqmQFF53U-GG0a74SmCKv1QVgPIW13tQKkucij1LM82PWJgE8J27l31FGOCnwO5mGQcqsOba0XuFK8w2Q8C2W2AvNA0xgK048BVJwNEtkstxdpXZjVl-FrXZjSgFFEGTWeG4IXFZstRTzEANGAjUzf3hsdEHJwlALvRjiqa8X-cFo8a89g9ElrQbGZ7TL3L24a9Q4Hg4Gabf16104XZKYo2XLHZuYCWinsm9JD3IPfqeWmKIehh8ZwE1A5GSSHaO-FZuzFoRA0yFLAM07QwnMm0hJNAry5QAzNzWAqroj12j1UhtWLeANM0SdvcjYIeiDO4m80aDDTkfg2zo7Cm0Ulzy0rmGG2I1Yu0uO6-CfzRcImOcW5Zfpd24O57AnFafXLvSgOnzxunYj50oGVGbxEvnkc9Xl0z8Pl01kulcfloik6hQyZb2fh43S1kqHgDUnDm2wHMWrR3Be0tiOkIFPgn0NekhxhDJg7AcXzOtU9N6CQRfDc6zQZ1mYY5Q7UXiFmWRGQ4WBukbu92s3hWAxT-VZu-FYK-1vCQ7sF5ypMBonivou-6YKjR2tiu03aQsPBGOLCbeACVdC5308JM8oO6QD3GBX115QS2YjWkjOJT3_E84R8iULbyiKU38lhXvbVganziBzIfEb__PQtoVVwBM-Jp_LpPqn_XndJIljQPY4GiPzb5W8HOvef266MIs1-cKjlJ1Um3pwwqOEnzCx1R9X8RtKyb2_xC9lJxibU70Mopuzf3qw03CYJD__5aNZfkFgM8u5UwyLZhw6Qpz9RNScOrxqUOLsO6HrR4_CHZQqYvqgbKXd2BWFAPleeFrWG4sC9aYv-0Yty2uTpyLktvRcm3jlYyiB7FIvsFmZhxyfSj3_fw4WnyiaExyKxQH1sBrs9S92RxSJQgsO5unmyn_gwb8k4yRFtJokwK2RQApvptbe2JlvWk0wxG6NHaV47lg1EBI51uJ6QeDiVveZ7lYL9XkQeJEE1r5XcVDzWMINfmif43I43~2"
+        },
+        {
+          "title": "Робот-гуманоид Unitree G1 с ИИ",
+          "href": "https://yabs.yandex.ru/count/WgCejI_zOoVX2Lb_0gqK03DcajShkrD7eGAFtjFdz4J-bA8uuJFT800IZdKHNtDzhMKUeka9c1EeuWqJq6FCU61U46XiDc5Q0eM0roEWbm12gyA81SgT9j3dSxcpP_kTEs-uy_KxNc-umxsVU7HgIt4RUaEVJzkUuZUEG_7fr9PHMwr8Ia95IoIKZ82Ca4Wi8Osm4WafrKb2Ia8_Ti2KpGqcQTPq855w4p6Wll08Oj1nX2aWx0lmNg-45Q2zNW4hG7kzybM0zdfbBq1xlHAa0EtrYbS1MY16h9ol0qkj8qrTOfVJfSMFLf4-Dp9OGKH3HWeU2Apt30xM9qdCgd9bp6DlVEErsLAO9L07TmrlzgMLfyH14-Vp3HFW1d006xYq4zUW4XsmIwHMmzu4x1AfrR35e0lWfQTgoXogeFMDtILoZMcuJPfjM8yU88XMX7eR3iC7qcf82E3hUYKiW2qDPjD-CSLiyH8kNp1Rlx2mdRluQ9Iqi3NHI2K0aPHQ50ixQB8AvPwrGndzvWgOWhd9Gu_2rbFGOIQKOmx3HMB8JHqBPjAnUuoO6QD3GBZ12pGX9cB0TAqdw7wSGOoG0qFKrm-R25B-u153elwNmvMqx-Lm9UrpFNI__kxVmDwlfHgU_IpLy8nf_bDKcEMlv8mvPYwzVagJRzwkwxfEcvTXH7RmaHvOUW_WI0yilQKdVNbvnCtAatqTbnoU7zCUdC0P5Qsm_qAXd9gGTIPUnBpsJm9HN4JqMUzrt-M6AQ7YnRPTFCf0XwyCvagbKXd2BaE7lIn1-MdQPluKCD9i81RyoLlovvOi2umORjQuMIKNjiXAO0f3ULelNj34K7_wh6x4LCzvCd5g4A-EMfvpKrTnpZ82Zh3Q7_YQPIZZmY5v39SAAwrZOWq0~2?etext=&from=&q="
+        }
+      ]
+    }
+  ]
+}

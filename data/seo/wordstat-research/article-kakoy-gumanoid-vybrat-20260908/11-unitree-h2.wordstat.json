@@ -1,0 +1,65 @@
+{
+  "query": "Unitree H2",
+  "status": "checked_live",
+  "source": "live_wordstat_visible_chrome_cdp",
+  "cdpPort": 9226,
+  "region": "all",
+  "devices": [
+    "desktop",
+    "smartphone",
+    "tablet"
+  ],
+  "collectedAt": "2026-09-08T19:50:31.051Z",
+  "period": "08.08.2026 – 06.09.2026",
+  "total": 285,
+  "noResults": false,
+  "rows": [
+    {
+      "phrase": "за 08.08.2026 – 06.09.2026:",
+      "monthly_queries": 285
+    },
+    {
+      "phrase": "+unitree h2",
+      "monthly_queries": 285
+    },
+    {
+      "phrase": "+робот unitree h2",
+      "monthly_queries": 70
+    },
+    {
+      "phrase": "+unitree h2 edu",
+      "monthly_queries": 36
+    },
+    {
+      "phrase": "+робот гуманоид unitree h2",
+      "monthly_queries": 29
+    },
+    {
+      "phrase": "+unitree h2 купить",
+      "monthly_queries": 9
+    },
+    {
+      "phrase": "+unitree h2 plus",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+unitree robotics h2",
+      "monthly_queries": 8
+    },
+    {
+      "phrase": "+robort unitree h2 edu",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+робот гуманоид unitree h2 basic",
+      "monthly_queries": 5
+    },
+    {
+      "phrase": "+робот unitree h2 рост",
+      "monthly_queries": 5
+    }
+  ],
+  "textSample": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nUnitree H2\n \nза 08.08.2026 – 06.09.2026: 285\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+unitree h2\t285\n+робот unitree h2\t70\n+unitree h2 edu\t36\n+робот гуманоид unitree h2\t29\n+unitree h2 купить\t9\n+unitree h2 plus\t8\n+unitree robotics h2\t8\n+robort unitree h2 edu\t5\n+робот гуманоид unitree h2 basic\t5\n+робот unitree h2 рост\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=Unitree%20H2",
+  "screenshot": "docs/review/kiber-article-kakoy-gumanoid-vybrat-20260908/wordstat/11-unitree-h2.png"
+}
