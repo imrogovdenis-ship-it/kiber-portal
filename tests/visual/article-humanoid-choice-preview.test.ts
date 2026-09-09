@@ -22,7 +22,8 @@ test('humanoid choice article #2 records Wordstat-backed SEO ownership and previ
 test('humanoid choice article #2 renders through approved article template with seven humanoid cards', () => {
   assert.match(page, /ArticleBlocksTemplate/);
   assert.match(page, /noindex=\{true\}/);
-  assert.match(data, /Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей/);
+  assert.match(data, /Какого робота-гуманоида выбрать для мероприятия: сравнение моделей/);
+  assert.doesNotMatch(data, /Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей/);
   for (const slug of ['arenda-noetix-bumi','arenda-unitree-r1','arenda-unitree-g1','arenda-agibot-x2','arenda-unitree-h2','arenda-robota-ardi','arenda-robota-sofiya']) {
     assert.match(data, new RegExp(slug));
   }
@@ -43,4 +44,12 @@ test('humanoid choice article #2 keeps generic rental keys as compilation bridge
   assert.doesNotMatch(data, /SERP/);
   assert.doesNotMatch(data, /draft_for_owner_review/);
   assert.doesNotMatch(data, /checked_live/);
+});
+
+
+test('article #2 latest owner feedback is encoded', () => {
+  assert.match(data, /Я, Кибер Гоша, сейчас разложу по полочкам/);
+  assert.doesNotMatch(data, /Чем статья отличается от карточек роботов/);
+  assert.match(data, /Что должно получиться/);
+  assert.match(data, /hideBadges: true/);
 });

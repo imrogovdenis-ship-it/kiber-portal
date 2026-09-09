@@ -5,11 +5,12 @@ interface Props extends RobotCardData {
   variant?: 'default' | 'compact';
   hideDisclaimer?: boolean;
   hideLink?: boolean;
+  hideBadge?: boolean;
   imageLoading?: 'eager' | 'lazy';
   internalLinkId?: string;
 }
 
-const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hideLink = false, imageLoading = 'lazy', internalLinkId, ...data } = Astro.props;
+const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hideLink = false, hideBadge = false, imageLoading = 'lazy', internalLinkId, ...data } = Astro.props;
 ---
 
 <a
@@ -35,7 +36,7 @@ const { image, badge, analytics, variant = 'default', hideDisclaimer = false, hi
         <span aria-hidden="true">KP</span>
       </div>
     )}
-    {badge && <span class="robot-card__badge">{badge}</span>}
+    {badge && !hideBadge && <span class="robot-card__badge">{badge}</span>}
   </div>
 
   <div class="robot-card__content">
