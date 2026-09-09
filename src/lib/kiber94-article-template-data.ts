@@ -30,8 +30,8 @@ export type ArticleContent = {
   showInventory?: boolean;
   seoIntro?: { eyebrow?: string; title: string; paragraphs: string[] };
   plainText?: { title: string; paragraphs: string[] };
-  mediaMoment?: { eyebrow?: string; title: string; description: string; image: { src: string; alt: string }; caption?: string };
-  gallery?: { eyebrow?: string; title: string; description: string; sliderId?: string; images?: { src: string; alt: string }[] };
+  mediaMoment?: { eyebrow?: string; title: string; description: string; image: { src: string; alt: string; actualDescription?: string }; caption?: string };
+  gallery?: { eyebrow?: string; title: string; description: string; sliderId?: string; images?: { src: string; alt: string; title?: string }[] };
   comparison?: {
     eyebrow?: string;
     title: string;
@@ -61,7 +61,7 @@ export type ArticleBlocksTemplateData = {
   };
   breadcrumbs: Breadcrumb[];
   blockVariants: ArticleBlockVariant[];
-  hero: { eyebrow: string; lead: string; image: { src: string; alt: string }; imageAlign?: 'left' | 'right' };
+  hero: { eyebrow: string; lead: string; image: { src: string; alt: string; actualDescription?: string }; imageAlign?: 'left' | 'right' };
   aiSummary: string;
   gosha: HomeGoshaData;
   finalCta: HomeFinalCtaData;
