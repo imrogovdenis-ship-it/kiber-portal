@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "task": "example-owner-feedback",
+  "baseRef": "origin/main",
+  "scopeStatement": "Change only the named gallery selector and its regression test.",
+  "allowedFiles": [
+    "src/components/templates/ArticleBlocksTemplate.astro",
+    "tests/visual/article-example.test.ts"
+  ],
+  "forbiddenFiles": [
+    "src/components/BaseLayout.astro",
+    "src/components/blocks/HomeFaqBlock.astro",
+    "src/components/blocks/HomeFinalCta.astro"
+  ],
+  "requiredChecks": [
+    "npm run test:approved-contracts",
+    "node --import tsx --test tests/visual/article-example.test.ts",
+    "npm run build:preview"
+  ],
+  "reviewUrl": "https://protected-staging.example/preview/article/",
+  "allowUntracked": false,
+  "approvedReference": "/preview/kiber-94/article-blocks/",
+  "protectedElements": [
+    "Header/Footer shared chrome",
+    "all article copy outside named target",
+    "current gallery assets",
+    "FAQ/CTA2/catalog/blog/compilations shared blocks"
+  ]
+}

@@ -130,7 +130,7 @@ test('current page-level CTA2 users share approved tablet HomeFinalCta design', 
   assert.match(home, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
   assert.match(compilations, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
   assert.match(articles, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
-  assert.match(robotTemplate, /<HomeFinalCta \{\.\.\.robotFinalCta\} \/>/);
+  assert.match(robotTemplate, /<HomeFinalCta \{\.\.\.robotFinalCta\} sectionId="robot-card-final-cta" titleId="robot-card-final-cta-title" \/>/);
   assert.match(finalCta, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*place-items:\s*center end;[\s\S]*height:\s*clamp\(14\.25rem, 27vw, 16\.5rem\);[\s\S]*transform:\s*translate\(-\.35rem, 0\)/s);
 });
 

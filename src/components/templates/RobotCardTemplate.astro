@@ -353,7 +353,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
   </section>
 
   <section class="template-reused-block template-reused-block--cta template-reused-block--quick-cta" id="robot-card-pricing" data-block-id="pricing">
-    <HomeFinalCta {...robotQuickCtaForRender} />
+    <HomeFinalCta {...robotQuickCtaForRender} sectionId="robot-card-quick-cta" titleId="robot-card-quick-cta-title" />
   </section>
 
   <section class="template-section template-action-gallery" data-block-id="robotInAction" aria-labelledby="robot-card-action-title">
@@ -398,7 +398,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
   </section>
 
   <section class="template-reused-block template-reused-block--cta" data-block-id="finalQuestionsCta">
-    <HomeFinalCta {...robotFinalCta} />
+    <HomeFinalCta {...robotFinalCta} sectionId="robot-card-final-cta" titleId="robot-card-final-cta-title" />
   </section>
 
   {robotArticles.cards.length > 0 && (
