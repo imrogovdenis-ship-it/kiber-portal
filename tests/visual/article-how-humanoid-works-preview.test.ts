@@ -48,3 +48,14 @@ test('how humanoid works article applies owner copy feedback', () => {
   assert.match(data, /extraGoshaQuoteAfterNumberedUseCases/);
   assert.match(data, /не просите гуманоида «просто походить где-нибудь рядом»/);
 });
+
+
+test('how humanoid works article applies latest gallery and gosha feedback', () => {
+  assert.match(route, /arenda-agibot-x2__tild6238-6339-4439-b061-313961333062__04\.webp/);
+  assert.doesNotMatch(route, /arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08\.webp/);
+  assert.match(route, /робособакой/);
+  assert.match(data, /Напишите менеджеру КИБЕР ПОРТАЛ/);
+  assert.match(data, /гость, который случайно вышел из будущего/);
+  assert.match(component, /humanoid-template__gallery-item img \{ display: block; width: 100%; height: 100%; max-width: none; object-fit: cover/);
+  assert.doesNotMatch(component, /humanoid-template__gallery-item img \{[^}]*object-fit: contain/);
+});
