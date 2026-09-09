@@ -1,14 +1,14 @@
 {
   "pageType": "article_detail",
   "status": "draft_for_owner_review",
-  "title": "Какой гуманоид выбрать для мероприятия: сравнение всех моделей КИБЕР ПОРТАЛ",
+  "title": "Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей",
   "slug": "kakoy-gumanoid-vybrat-dlya-meropriyatiya",
   "canonicalPath": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
   "previewRoute": "/preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
-  "metaTitle": "Какой гуманоид выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ",
-  "metaDescription": "Сравниваем гуманоидов КИБЕР ПОРТАЛ для мероприятия: Unitree G1, R1, H2, Agibot X2, Noetix Bumi, Арди и София по бюджету, сценарию и статусу.",
-  "h1": "Какой гуманоид выбрать для мероприятия: сравнение всех моделей КИБЕР ПОРТАЛ",
-  "primaryKeyword": "какой гуманоид выбрать для мероприятия",
+  "metaTitle": "Какого робота-гуманоида выбрать для мероприятия | КИБЕР ПОРТАЛ",
+  "metaDescription": "Помогаем выбрать робота-гуманоида для мероприятия: Noetix Bumi, Unitree R1, Unitree G1, Agibot X2, Unitree H2, Арди и София по бюджету и сценарию.",
+  "h1": "Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей",
+  "primaryKeyword": "какого робота-гуманоида выбрать для мероприятия",
   "primaryKeywordDecision": "Exact query has 0 Wordstat impressions for the checked period, but matches the article decision intent; generic rental queries are kept as bridge terms to avoid cannibalizing the humanoid compilation.",
   "secondaryKeywords": [
     "какого гуманоида выбрать для мероприятия",
@@ -43,5 +43,6 @@
   },
   "indexing": "preview_noindex_until_public_launch_approval",
   "approvalRequired": true,
-  "productionApproved": false
+  "productionApproved": false,
+  "ownerFeedbackApplied": "2026-09-09: heading updated, hero/media image fixed, hero image right aligned, request-only price wording changed, stale choice block removed, scenarios expanded to six, product cards removed, visible copy rewritten for first-time potential customer and sales funnel."
 }

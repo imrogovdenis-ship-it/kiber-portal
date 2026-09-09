@@ -9,7 +9,7 @@ const wordstat = readFileSync('docs/review/kiber-article-kakoy-gumanoid-vybrat-2
 
 test('humanoid choice article #2 records Wordstat-backed SEO ownership and preview-only boundary', () => {
   assert.equal(passport.pageType, 'article_detail');
-  assert.equal(passport.primaryKeyword, 'какой гуманоид выбрать для мероприятия');
+  assert.equal(passport.primaryKeyword, 'какого робота-гуманоида выбрать для мероприятия');
   assert.match(passport.primaryKeywordDecision, /0 Wordstat impressions/);
   assert.ok(passport.bridgeKeywordsForCompilation.includes('аренда робота гуманоида'));
   assert.equal(passport.indexing, 'preview_noindex_until_public_launch_approval');
@@ -22,16 +22,24 @@ test('humanoid choice article #2 records Wordstat-backed SEO ownership and previ
 test('humanoid choice article #2 renders through approved article template with seven humanoid cards', () => {
   assert.match(page, /ArticleBlocksTemplate/);
   assert.match(page, /noindex=\{true\}/);
-  assert.match(data, /Какой гуманоид выбрать для мероприятия: сравнение всех моделей КИБЕР ПОРТАЛ/);
+  assert.match(data, /Какого робота-гуманоида выбрать для мероприятия: сравнение всех моделей/);
   for (const slug of ['arenda-noetix-bumi','arenda-unitree-r1','arenda-unitree-g1','arenda-agibot-x2','arenda-unitree-h2','arenda-robota-ardi','arenda-robota-sofiya']) {
     assert.match(data, new RegExp(slug));
   }
   assert.doesNotMatch(data, /arenda-promobot-v4/);
   assert.match(data, /\/images\/articles\/kakoy-gumanoid-vybrat\/hero\.webp/);
+  assert.match(data, /imageAlign: 'right'/);
+  assert.doesNotMatch(data, /product:\s*\{/);
+  assert.doesNotMatch(data, /цена по запросу/);
+  assert.match(data, /рассчитывается индивидуально/);
+  assert.match(page, /рассчитывается индивидуально/);
+  assert.match(data, /number: '06'/);
 });
 
 test('humanoid choice article #2 keeps generic rental keys as compilation bridge, not visible research leakage', () => {
   assert.doesNotMatch(data, /Wordstat/);
+  assert.doesNotMatch(data, /эта статья не повторяет подборку/);
+  assert.doesNotMatch(data, /после первого интереса/);
   assert.doesNotMatch(data, /SERP/);
   assert.doesNotMatch(data, /draft_for_owner_review/);
   assert.doesNotMatch(data, /checked_live/);
