@@ -56,6 +56,13 @@ test('how humanoid works article applies latest gallery and gosha feedback', () 
   assert.match(route, /робособакой/);
   assert.match(data, /Напишите менеджеру КИБЕР ПОРТАЛ/);
   assert.match(data, /гость, который случайно вышел из будущего/);
-  assert.match(component, /humanoid-template__gallery-item img \{ display: block; width: 100%; height: 100%; max-width: none; object-fit: cover/);
-  assert.doesNotMatch(component, /humanoid-template__gallery-item img \{[^}]*object-fit: contain/);
+  assert.match(component, /humanoid-template__gallery-item \{[^}]*width: fit-content;[^}]*height: var\(--humanoid-gallery-height\)[^}]*background: transparent/);
+  assert.match(component, /humanoid-template__gallery-item img \{ display: block; width: auto; height: 100%; max-width: none; border-radius: inherit; object-fit: contain/);
+  assert.doesNotMatch(component, /humanoid-template__gallery-item img \{[^}]*object-fit: cover/);
+});
+
+
+test('how humanoid works article does not duplicate the manager handoff quote', () => {
+  const occurrences = (data.match(/— Вот мой роботский совет/g) ?? []).length;
+  assert.equal(occurrences, 1);
 });
