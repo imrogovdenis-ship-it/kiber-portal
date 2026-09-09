@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "engine": "Yandex",
+  "region": "Moscow (lr=213)",
+  "query": "Unitree G1 или H2 сравнение",
+  "collectedAt": "2026-09-09",
+  "searchUrl": "https://yandex.ru/search/?lr=213&text=Unitree+G1+%D0%B8%D0%BB%D0%B8+H2+%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5",
+  "searchTitle": "Unitree G1 или H2 сравнение — Яндекс: нашлось 8 тыс. результатов",
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "Unitree H2 & G1 Models | Comparison & Technical Analysis",
+      "href": "https://www.robotlar.org/en/unitree-h2-g1-models",
+      "snippet": "Detailed comparison of Unitree H2 and G1 humanoid robots. ... H2 offers full-scale industrial performance, while G1 opens the door to the humanoid ecosystem at a lower budget.",
+      "host": "www.robotlar.org"
+    },
+    {
+      "position": 2,
+      "title": "Всё, что нужно знать перед покупкой человекоподобного...",
+      "href": "https://www.youtube.com/watch?v=4jdaopSGNuc",
+      "snippet": "Сравните модели R1, G1 и H2, чтобы найти лучшего робота для ваших нужд. ... Полное руководство по выбору человекоподобных роботов Unitree в 2026 году.",
+      "host": "www.youtube.com"
+    },
+    {
+      "position": 3,
+      "title": "Unitree G1 vs H2 vs R1: Which Humanoid Robot Platform...",
+      "href": "https://www.usrobotstore.com/blogs/unitree-robotics/unitree-g1-vs-h2-vs-r1-which-humanoid-robot-platform-should-you-choose",
+      "snippet": "Unitree now offers three major humanoid robot platforms: Unitree R1, Unitree G1, and Unitree H2. ... The Unitree G1 humanoid robot is the best all-around choice for most research labs and universities.",
+      "host": "www.usrobotstore.com"
+    },
+    {
+      "position": 4,
+      "title": "Unitree H2 Robot vs Unitree G1 Robot Comparison 2026",
+      "href": "https://toborlife.ai/blog/unitree-g1-vs-unitree-h2-robot-which-humanoid-platform-leads-in-2026/",
+      "snippet": "Compare the unitree h2 and G1 humanoid platforms across payload, mobility, AI performance, and industrial deployment trends in 2026 for commercial robotics.",
+      "host": "toborlife.ai"
+    },
+    {
+      "position": 5,
+      "title": "Робот Unitree G1",
+      "href": "https://robort.ru/product/seriya-g1/robot-unitree-g1/",
+      "snippet": "Наш интернет-магазин предлагает робота Unitree G1 — доступная версия популярного развлекательного и…",
+      "host": "robort.ru"
+    },
+    {
+      "position": 6,
+      "title": "Робот Unitree R1 Edu Pro A купить в Москве - низкая цена",
+      "href": "https://robort.ru/product/seriya-r1/robot-unitree-r1/",
+      "snippet": "Unitree R1 — антропоморфный робот-платформа для изучения искусственного интеллекта и…",
+      "host": "robort.ru"
+    },
+    {
+      "position": 7,
+      "title": "Unitree G1 или Unitree H2: какого гуманоида выбрать...",
+      "href": "https://gumanoids.ru/blog/unitree-g1-vs-h2/",
+      "snippet": "Сравнение Unitree G1 и Unitree H2: цена (2,39 млн против 4,99 млн ₽), рост, динамика, SDK, сценарии использования.",
+      "host": "gumanoids.ru"
+    },
+    {
+      "position": 8,
+      "title": "Гуманоидные роботы Unitree: выбор платформы для...",
+      "href": "https://news161.ru/gumanoidnye-roboty-unitree-platformy-dlya-issledovanij-obucheniya-i-biznesa/",
+      "snippet": "Сайт unitree.ru представляет Unitree — специализированного поставщика промышленных и сервисных роботов, роботизированных комплексов и систем автоматизации для бизнеса.",
+      "host": "news161.ru"
+    },
+    {
+      "position": 9,
+      "title": "Unitree G1 vs Unitree H2: Price, Specs & Verdict",
+      "href": "https://antonrobots.com/unitree-g1-vs-unitree-h2/",
+      "snippet": "Unitree G1 and Unitree H2 target very different buyers despite sharing the same humanoid platform strategy.",
+      "host": "antonrobots.com"
+    },
+    {
+      "position": 10,
+      "title": "Unitree H2 Plus vs H2 vs H1 vs R1 vs G1: Full Comparison...",
+      "href": "https://robottesters.com/article-unitree-humanoid-robots-compared",
+      "snippet": "Unitree's full humanoid lineup compared: the NVIDIA-powered H2 Plus, the H2, H1, R1 and G1 — specs, prices and which one is right for you.",
+      "host": "robottesters.com"
+    }
+  ],
+  "screenshot": null,
+  "notes": [
+    "Visible authenticated Chrome/CDP SERP; ads/product carousels and Yandex internal blocks excluded from organic results."
+  ]
+}

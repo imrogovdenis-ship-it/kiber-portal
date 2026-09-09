@@ -1,0 +1,43 @@
+{
+  "articleNumber": 6,
+  "pageType": "article_detail",
+  "workingTitle": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+  "sourceDocument": {
+    "originalName": "Статья Unitree G1 R1 H2 сравнение.docx",
+    "reviewPath": "docs/review/kiber-article-unitree-g1-r1-h2-20260909/source/original-draft.docx",
+    "sha256": "c4eb12b63307e23820f8b3c7b98717f6d47003083d98be611030a3b17db0f93e",
+    "paragraphCount": 188,
+    "characterCount": 28277,
+    "embeddedMediaCount": 0
+  },
+  "hero": {
+    "status": "received_owner_provided",
+    "actualDescription": "На этом изображении три робота от компании Unitree: R1, G1 и H2, стоят на сцене и приветствуют зрителей, которые смотрят на них. Слева находится робот R1. Он стоит в стойке боевой, демонстрируя, что он готов к поединку. Посередине стоит робот G1. Он приветствует зрителей, поднятой вверх правой рукой. Справа на изображении стоит робот H2. Он вытянул руку немножко в сторону и вперед, как будто бы что-то рассказывает зрителям.",
+    "seoAltStatus": "deferred_until_research_and_asset_received",
+    "sourcePath": "docs/review/kiber-article-unitree-g1-r1-h2-20260909/source/hero-upload.jpg",
+    "runtimePath": "/images/kiber-articles/unitree-g1-r1-h2-comparison-hero.webp",
+    "width": 1280,
+    "height": 720,
+    "sourceSha256": "e310f37ef84c54e7b0ee558c364f0842e211c5869a6103b005ff83f7102c5328",
+    "runtimeSha256": "29c311d52eb3ef54a4e7f903c6470cd7a2cab0379d7ffa54209c1b52ad5dad3b",
+    "seoAlt": "Роботы-гуманоиды Unitree R1, G1 и H2 приветствуют зрителей на сцене мероприятия"
+  },
+  "research": {
+    "wordstatStatus": "blocked_waiting_for_user_tunnel",
+    "serpStatus": "not_started_restart_with_keyword_research",
+    "competitorGapStatus": "not_started",
+    "seoPassportStatus": "not_started"
+  },
+  "implementation": {
+    "existingScaffold": "src/lib/kiber94-article-unitree-g1-r1-h2-data.ts",
+    "existingPreviewRoute": "/preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/",
+    "scaffoldStatus": "not_approved_do_not_publish",
+    "codeChanged": false
+  },
+  "boundaries": {
+    "productionChanged": false,
+    "publicRoutesChanged": false,
+    "sharedComponentsChanged": false,
+    "mergeApproved": false
+  }
+}

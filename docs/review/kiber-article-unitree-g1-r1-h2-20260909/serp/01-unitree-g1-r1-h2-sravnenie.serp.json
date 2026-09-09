@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "engine": "Yandex",
+  "region": "Moscow (lr=213)",
+  "query": "Unitree G1 R1 H2 сравнение",
+  "collectedAt": "2026-09-09",
+  "searchUrl": "https://yandex.ru/search/?lr=213&text=Unitree+G1+R1+H2+%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5",
+  "searchTitle": "Unitree G1 R1 H2 сравнение — Яндекс: нашлось 8 тыс. результатов",
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "Роботы Unitree купить в Москве - низкая цена",
+      "href": "https://robort.ru/product/unitree-2/",
+      "snippet": "Робот Unitree R1 Edu Pro A. ... Программно-аппаратный комплекс (робот-гуманоид) Unitree G1-D General Version A-U1.",
+      "host": "robort.ru"
+    },
+    {
+      "position": 2,
+      "title": "Unitree H2 Plus vs H2 vs H1 vs R1 vs G1: Full Comparison...",
+      "href": "https://robottesters.com/article-unitree-humanoid-robots-compared",
+      "snippet": "Unitree's full humanoid lineup compared: the NVIDIA-powered H2 Plus, the H2, H1, R1 and G1 — specs, prices and which one is right for you.",
+      "host": "robottesters.com"
+    },
+    {
+      "position": 3,
+      "title": "Всё, что нужно знать перед покупкой человекоподобного...",
+      "href": "https://www.youtube.com/watch?v=4jdaopSGNuc",
+      "snippet": "Сравните модели R1, G1 и H2, чтобы найти лучшего робота для ваших нужд. ... Полное руководство по выбору человекоподобных роботов Unitree в 2026 году.",
+      "host": "www.youtube.com"
+    },
+    {
+      "position": 4,
+      "title": "Роботы Unitree G1 и H1: обзор и сравнение гуманоидов",
+      "href": "https://unitree.ru/blog/unitree-g1-i-h1-sravnenie-gumanoidnykh-robotov/",
+      "snippet": "Содержание\nСравнение с конкурентами\nЗаключение: что выбрать Unitree G1 или H1?\nСравнение с конкурентами. Сравнивать G1 и H1 с другими известными...",
+      "host": "unitree.ru"
+    },
+    {
+      "position": 5,
+      "title": "Unitree G1 vs H2 vs R1: Which Humanoid Robot Platform...",
+      "href": "https://www.usrobotstore.com/blogs/unitree-robotics/unitree-g1-vs-h2-vs-r1-which-humanoid-robot-platform-should-you-choose",
+      "snippet": "Unitree now offers three major humanoid robot platforms: Unitree R1, Unitree G1, and Unitree H2. ... The Unitree G1 humanoid robot is the best all-around choice for most research labs and universities.",
+      "host": "www.usrobotstore.com"
+    },
+    {
+      "position": 6,
+      "title": "Робот Unitree R1",
+      "href": "https://tnvst.ru/catalog/roboty-gumanoidy/robot-unitree-r1/",
+      "snippet": "Unitree R1 — доступ к практической гуманоидной робототехнике для учебы, исследований и бизнеса.",
+      "host": "tnvst.ru"
+    },
+    {
+      "position": 7,
+      "title": "Unitree G1 или Unitree H2: какого гуманоида выбрать...",
+      "href": "https://gumanoids.ru/blog/unitree-g1-vs-h2/",
+      "snippet": "Сравнение Unitree G1 и Unitree H2: цена (2,39 млн против 4,99 млн ₽), рост, динамика, SDK, сценарии использования.",
+      "host": "gumanoids.ru"
+    },
+    {
+      "position": 8,
+      "title": "Купить робот Unitree G1 в Москве — цена, характеристики...",
+      "href": "https://3dpt.ru/product/robot-unitree-g1",
+      "snippet": "Характеристики Комплектация Руководство Сравнение Галерея. ... Извлеките Unitree G1 из защитного…",
+      "host": "3dpt.ru"
+    },
+    {
+      "position": 9,
+      "title": "Unitree G1 против H1-2: что реально умеет гуманоид за...",
+      "href": "https://nexum-autonomous.com/ru/blog/g1-h12",
+      "snippet": "Unitree G1 против H1-2: лучшие исследовательские платформы за свои деньги — и худшая покупка, если вы ждёте «робота-сотрудника».",
+      "host": "nexum-autonomous.com"
+    },
+    {
+      "position": 10,
+      "title": "Unitree H2 Robot vs Unitree G1 Robot Comparison 2026",
+      "href": "https://toborlife.ai/blog/unitree-g1-vs-unitree-h2-robot-which-humanoid-platform-leads-in-2026/",
+      "snippet": "Compare the unitree h2 and G1 humanoid platforms across payload, mobility, AI performance, and industrial deployment trends in 2026 for commercial robotics.",
+      "host": "toborlife.ai"
+    }
+  ],
+  "screenshot": null,
+  "notes": [
+    "Visible authenticated Chrome/CDP SERP; ads/product carousels and Yandex internal blocks excluded from organic results."
+  ]
+}

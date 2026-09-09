@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "engine": "Yandex",
+  "region": "Moscow (lr=213)",
+  "collectedAt": "2026-09-09",
+  "queries": [
+    {
+      "file": "01-unitree-g1-r1-h2-sravnenie.serp.json",
+      "query": "Unitree G1 R1 H2 сравнение",
+      "topHosts": [
+        "robort.ru",
+        "robottesters.com",
+        "www.youtube.com",
+        "unitree.ru",
+        "www.usrobotstore.com"
+      ]
+    },
+    {
+      "file": "02-unitree-g1-ili-r1.serp.json",
+      "query": "Unitree G1 или R1 сравнение",
+      "topHosts": [
+        "forumai.io",
+        "unitree.kz",
+        "robotsniper.com",
+        "robort.ru",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "file": "03-unitree-g1-ili-h2.serp.json",
+      "query": "Unitree G1 или H2 сравнение",
+      "topHosts": [
+        "www.robotlar.org",
+        "www.youtube.com",
+        "www.usrobotstore.com",
+        "toborlife.ai",
+        "robort.ru"
+      ]
+    },
+    {
+      "file": "04-unitree-r1-ili-h2.serp.json",
+      "query": "Unitree R1 или H2 сравнение",
+      "topHosts": [
+        "robort.ru",
+        "news161.ru",
+        "www.usrobotstore.com",
+        "robottesters.com",
+        "www.youtube.com"
+      ]
+    },
+    {
+      "file": "05-kakoy-unitree-vybrat-dlya-meropriyatiya.serp.json",
+      "query": "какой робот Unitree выбрать для мероприятия",
+      "topHosts": [
+        "unitree.kz",
+        "unitree.ru",
+        "robort.ru",
+        "rbot100.ru",
+        "robosobaka.ru"
+      ]
+    },
+    {
+      "file": "06-roboty-unitree-dlya-meropriyatiy.serp.json",
+      "query": "роботы Unitree для мероприятий",
+      "topHosts": [
+        "unibot.ru",
+        "unitree.ru",
+        "robort.ru",
+        "rent-robot.ru",
+        "divent.ru"
+      ]
+    }
+  ],
+  "intentFindings": [
+    "Direct comparison results are dominated by shops, purchase guides and English technical comparisons.",
+    "Russian event-rental results mostly cover one model at a time, not a neutral three-model choice.",
+    "Purchase prices and laboratory/R&D criteria dominate competitors but do not answer venue, operator, timing and guest-experience questions."
+  ],
+  "contentGap": "A Russian customer-first comparison of Unitree G1, R1 and H2 specifically for event rental: role on venue, visual effect, space/logistics constraints, operator plan, honest limitations and direct links to all three rental cards."
+}

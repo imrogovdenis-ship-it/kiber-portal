@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "checked_live",
+  "query": "Unitree G1 R1 H2",
+  "region": "all",
+  "device": "all",
+  "view": "table",
+  "source": "live_wordstat_visible_cdp",
+  "collectionDate": "2026-09-09",
+  "period": {
+    "from": "2026-08-08",
+    "to": "2026-09-08",
+    "raw": "за 08.08.2026 – 08.09.2026: 0"
+  },
+  "totalImpressions": 0,
+  "rows": [],
+  "noResults": true,
+  "validation": {
+    "queryInUrl": true,
+    "wordstatTableVisible": true,
+    "explicitNoResultsVisible": true,
+    "genericIntroRejected": true
+  },
+  "screenshot": null,
+  "notes": [
+    "Fresh live collection supersedes the DOCX value of 1 for the older period."
+  ]
+}

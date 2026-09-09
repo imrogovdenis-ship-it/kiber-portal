@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "status": "checked_live",
+  "query": "Unitree R1",
+  "region": "all",
+  "device": "all",
+  "view": "table",
+  "source": "live_wordstat_visible_cdp",
+  "collectionDate": "2026-09-09",
+  "period": {
+    "fromRaw": "09.08.2026",
+    "toRaw": "07.09.2026",
+    "raw": "за 09.08.2026 – 07.09.2026: 492\n"
+  },
+  "totalImpressions": 492,
+  "rawText": "Выйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nUnitree R1\n \nза 09.08.2026 – 07.09.2026: 492\nСкачать\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\nunitree r1\t492\nunitree r1 робот\t141\nunitree r1 edu\t64\nunitree r1 купить\t61\nробот гуманоид unitree r1\t37\nunitree r1 air\t30\nunitree r1 цена\t22\nunitree r1 pro\t20\nробот unitree r1 купить\t18\nunitree g1 r1\t16\nробот unitree r1 edu smart\t10\nробот unitree r1 ultra light weight\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»",
+  "validation": {
+    "queryInUrl": true,
+    "wordstatTableVisible": true,
+    "genericIntroRejected": true,
+    "screenshotPlausible": false,
+    "rowsParsed": true
+  },
+  "screenshot": null,
+  "notes": [
+    "CDP screenshot was a 693-byte placeholder and was deleted; raw Wordstat text is the primary evidence."
+  ],
+  "rows": [
+    {
+      "phrase": "unitree r1",
+      "impressions": 492
+    },
+    {
+      "phrase": "unitree r1 робот",
+      "impressions": 141
+    },
+    {
+      "phrase": "unitree r1 edu",
+      "impressions": 64
+    },
+    {
+      "phrase": "unitree r1 купить",
+      "impressions": 61
+    },
+    {
+      "phrase": "робот гуманоид unitree r1",
+      "impressions": 37
+    },
+    {
+      "phrase": "unitree r1 air",
+      "impressions": 30
+    },
+    {
+      "phrase": "unitree r1 цена",
+      "impressions": 22
+    },
+    {
+      "phrase": "unitree r1 pro",
+      "impressions": 20
+    },
+    {
+      "phrase": "робот unitree r1 купить",
+      "impressions": 18
+    },
+    {
+      "phrase": "unitree g1 r1",
+      "impressions": 16
+    },
+    {
+      "phrase": "робот unitree r1 edu smart",
+      "impressions": 10
+    },
+    {
+      "phrase": "робот unitree r1 ultra light weight",
+      "impressions": 5
+    }
+  ]
+}

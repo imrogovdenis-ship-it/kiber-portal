@@ -3,10 +3,24 @@ import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import ArticleBlocksTemplate from '../../../../../components/templates/ArticleBlocksTemplate.astro';
 import { type ArticleRobotCard } from '../../../../../lib/kiber94-article-template-data';
 import { buildUnitreeG1R1H2Article } from '../../../../../lib/kiber94-article-unitree-g1-r1-h2-data';
-import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../../../lib/seo';
+import { blogPostingJsonLd, breadcrumbJsonLd, faqPageJsonLd } from '../../../../../lib/seo';
 import { getRobotPageBySlug } from '../../../../../lib/robot-pages';
 
-const slugs = ['arenda-unitree-g1', 'arenda-unitree-r1', 'arenda-unitree-h2', 'arenda-unitree-go2'];
+const slugs = ['arenda-unitree-r1', 'arenda-unitree-g1', 'arenda-unitree-h2'];
+const galleryImageBySlug: Record<string, { src: string; alt: string }> = {
+  'arenda-unitree-r1': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp',
+    alt: 'Робот-гуманоид Unitree R1 идёт по выставке перед группой посетителей',
+  },
+  'arenda-unitree-g1': {
+    src: '/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp',
+    alt: 'Робот-гуманоид Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ',
+  },
+  'arenda-unitree-h2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp',
+    alt: 'Робот-гуманоид Unitree H2 представлен зрителям на выставочной площадке',
+  },
+};
 const robotCards: ArticleRobotCard[] = slugs
   .map((slug) => getRobotPageBySlug(slug))
   .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
@@ -14,26 +28,26 @@ const robotCards: ArticleRobotCard[] = slugs
     slug: robot.slug,
     href: robot.route,
     title: robot.identity.name,
-    category: robot.category === 'humanoid' ? 'Робот-гуманоид' : 'Робот для мероприятия',
+    category: 'Робот-гуманоид',
     price: robot.pricing.display,
     price_disclaimer: 'Не является публичной офертой',
     description: robot.seo.description,
-    badge: index === 0 ? 'Рекомендуем начать' : undefined,
     image: robot.media.hero,
+    galleryImage: galleryImageBySlug[robot.slug] ?? robot.media.hero,
     analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
   }));
-
 const template = buildUnitreeG1R1H2Article(robotCards);
+const heroImage = '/images/kiber-articles/unitree-g1-r1-h2-comparison-hero.webp';
 ---
 
 <BaseLayout
-  title={`Preview: ${template.seo.title}`}
+  title={template.seo.title}
   description={template.seo.description}
   canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
   noindex={true}
   breadcrumbs={template.breadcrumbs}
   jsonLd={[
-    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    blogPostingJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical, image: heroImage }),
     breadcrumbJsonLd(template.breadcrumbs),
     faqPageJsonLd({ items: template.faq.items }),
   ]}

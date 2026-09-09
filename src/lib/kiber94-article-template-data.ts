@@ -21,6 +21,7 @@ export type ArticleRobotCard = {
   description: string;
   badge?: string;
   image?: { src: string; alt: string };
+  galleryImage?: { src: string; alt: string };
   analytics: { event: 'robot_card_click'; placement: 'article'; position: number };
 };
 
@@ -59,7 +60,7 @@ export type ArticleBlocksTemplateData = {
   };
   breadcrumbs: Breadcrumb[];
   blockVariants: ArticleBlockVariant[];
-  hero: { eyebrow: string; lead: string; image: { src: string; alt: string } };
+  hero: { eyebrow: string; lead: string; image: { src: string; alt: string; fit?: 'cover' | 'contain' } };
   aiSummary: string;
   gosha: HomeGoshaData;
   finalCta: HomeFinalCtaData;

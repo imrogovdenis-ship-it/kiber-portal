@@ -105,6 +105,22 @@ export function webPageJsonLd(input: { title: string; description: string; url: 
   };
 }
 
+
+export function blogPostingJsonLd(input: { title: string; description: string; url: string; image: string }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: input.title,
+    description: input.description,
+    url: absoluteUrl(input.url),
+    mainEntityOfPage: absoluteUrl(input.url),
+    image: absoluteUrl(input.image),
+    inLanguage: 'ru-RU',
+    author: { '@type': 'Organization', name: 'КИБЕР ПОРТАЛ', url: siteUrl },
+    publisher: { '@type': 'Organization', name: 'КИБЕР ПОРТАЛ', url: siteUrl },
+  };
+}
+
 export function faqPageJsonLd(input: { items: { question: string; answer: string }[] }) {
   return {
     '@context': 'https://schema.org',

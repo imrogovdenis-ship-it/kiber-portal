@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "status": "checked_live_complete",
+  "completed": 19,
+  "planned": 19,
+  "region": "all",
+  "device": "all",
+  "collectionDate": "2026-09-09",
+  "records": [
+    {
+      "file": "01-unitree-g1-r1-h2.wordstat.json",
+      "query": "Unitree G1 R1 H2",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "02-unitree-g1.wordstat.json",
+      "query": "Unitree G1",
+      "totalImpressions": 2819,
+      "rowCount": 74,
+      "period": "за 09.08.2026 – 07.09.2026: 2 819\n"
+    },
+    {
+      "file": "03-unitree-r1.wordstat.json",
+      "query": "Unitree R1",
+      "totalImpressions": 492,
+      "rowCount": 12,
+      "period": "за 09.08.2026 – 07.09.2026: 492\n"
+    },
+    {
+      "file": "04-unitree-h2.wordstat.json",
+      "query": "Unitree H2",
+      "totalImpressions": 297,
+      "rowCount": 10,
+      "period": "за 09.08.2026 – 07.09.2026: 297\n"
+    },
+    {
+      "file": "05-robot-unitree-g1.wordstat.json",
+      "query": "робот Unitree G1",
+      "totalImpressions": 1101,
+      "rowCount": 36,
+      "period": "за 09.08.2026 – 07.09.2026: 1 101\n"
+    },
+    {
+      "file": "06-robot-unitree-r1.wordstat.json",
+      "query": "робот Unitree R1",
+      "totalImpressions": 141,
+      "rowCount": 5,
+      "period": "за 09.08.2026 – 07.09.2026: 141\n"
+    },
+    {
+      "file": "07-robot-unitree-h2.wordstat.json",
+      "query": "робот Unitree H2",
+      "totalImpressions": 75,
+      "rowCount": 4,
+      "period": "за 09.08.2026 – 07.09.2026: 75"
+    },
+    {
+      "file": "08-sravnenie-unitree.wordstat.json",
+      "query": "сравнение Unitree",
+      "totalImpressions": 7,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 7"
+    },
+    {
+      "file": "09-unitree-g1-ili-r1.wordstat.json",
+      "query": "Unitree G1 или R1",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "10-unitree-g1-ili-h2.wordstat.json",
+      "query": "Unitree G1 или H2",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "11-unitree-r1-ili-h2.wordstat.json",
+      "query": "Unitree R1 или H2",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "12-kakoy-robot-unitree-vybrat.wordstat.json",
+      "query": "какой робот Unitree выбрать",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "13-kakogo-gumanoida-unitree-vybrat.wordstat.json",
+      "query": "какого гуманоида Unitree выбрать для мероприятия",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "14-unitree-g1-sravnenie.wordstat.json",
+      "query": "Unitree G1 сравнение",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "15-unitree-r1-sravnenie.wordstat.json",
+      "query": "Unitree R1 сравнение",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "16-unitree-h2-sravnenie.wordstat.json",
+      "query": "Unitree H2 сравнение",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    },
+    {
+      "file": "17-arenda-unitree-g1.wordstat.json",
+      "query": "аренда Unitree G1",
+      "totalImpressions": 15,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 15"
+    },
+    {
+      "file": "18-arenda-unitree-r1.wordstat.json",
+      "query": "аренда Unitree R1",
+      "totalImpressions": 2,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 2"
+    },
+    {
+      "file": "19-arenda-unitree-h2.wordstat.json",
+      "query": "аренда Unitree H2",
+      "totalImpressions": 0,
+      "rowCount": 0,
+      "period": "за 08.08.2026 – 08.09.2026: 0"
+    }
+  ],
+  "keywordDecision": {
+    "primaryIntent": "comparison_decision_guide_by_named_models",
+    "primaryKeyword": "Unitree G1, R1 и H2 сравнение",
+    "primaryVolume": 0,
+    "supportingBrandDemand": {
+      "Unitree G1": 2819,
+      "Unitree R1": 492,
+      "Unitree H2": 297
+    },
+    "commercialBridgeDemand": {
+      "аренда Unitree G1": 15,
+      "аренда Unitree R1": 2,
+      "аренда Unitree H2": 0
+    },
+    "strategy": "Use a low-volume exact three-model comparison as the page intent, supported by branded model entities. Do not target generic humanoid rental terms owned by the compilation page."
+  },
+  "evidenceNotes": [
+    "Raw Wordstat text and parsed rows are stored per query.",
+    "Screenshots were omitted because CDP returned invalid 693-byte placeholders; no placeholder was retained as evidence."
+  ]
+}

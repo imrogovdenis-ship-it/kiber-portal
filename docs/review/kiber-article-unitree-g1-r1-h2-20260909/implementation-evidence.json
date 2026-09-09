@@ -1,0 +1,54 @@
+{
+  "status": "ready_for_draft_pr",
+  "scope": "Article #6 preview only; no merge or production permission",
+  "route": "/preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/",
+  "hero": {
+    "runtime": "/images/kiber-articles/unitree-g1-r1-h2-comparison-hero.webp",
+    "fit": "contain",
+    "ownerDescriptionPreserved": true
+  },
+  "sourceChecks": {
+    "articleSpecificTests": "4/4 PASS",
+    "previewBuild": "67 pages PASS",
+    "fullCi": "PASS",
+    "mediaGitHygieneAfterLfs": "PASS"
+  },
+  "renderedChecks": {
+    "viewports": [
+      "1440x900",
+      "768x1024",
+      "390x844"
+    ],
+    "h1Count": 1,
+    "brokenImages": 0,
+    "pageOverflow": false,
+    "duplicateIds": [],
+    "galleryImages": 3,
+    "galleryEqualHeight": true,
+    "galleryNaturalWidths": true,
+    "galleryObjectFit": "contain",
+    "galleryDragScrollLeft": "0 -> 360",
+    "robotCards": 3,
+    "goshaQuoteCount": 1,
+    "schemas": [
+      "BlogPosting",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "pending": [
+    "Draft PR",
+    "GitHub validate",
+    "protected combined staging",
+    "owner visual/content approval"
+  ],
+  "localResponsiveEvidence": {
+    "generated": true,
+    "viewports": [
+      "1440x900",
+      "768x1024",
+      "390x844"
+    ],
+    "note": "Owner review will use protected staging; local screenshots are secondary and not versioned."
+  }
+}
