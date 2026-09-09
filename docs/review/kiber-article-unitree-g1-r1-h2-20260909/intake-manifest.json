@@ -1,0 +1,36 @@
+{
+  "articleNumber": 6,
+  "pageType": "article_detail",
+  "workingTitle": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+  "sourceDocument": {
+    "originalName": "Статья Unitree G1 R1 H2 сравнение.docx",
+    "reviewPath": "docs/review/kiber-article-unitree-g1-r1-h2-20260909/source/original-draft.docx",
+    "sha256": "c4eb12b63307e23820f8b3c7b98717f6d47003083d98be611030a3b17db0f93e",
+    "paragraphCount": 188,
+    "characterCount": 28277,
+    "embeddedMediaCount": 0
+  },
+  "hero": {
+    "status": "awaiting_user_attachment",
+    "actualDescription": "На изображении три робота Unitree стоят на сцене перед зрителями: слева R1 в боевой стойке, в центре G1 приветствует зрителей поднятой правой рукой, справа H2 вытянул руку немного в сторону и вперёд, как будто обращается к аудитории.",
+    "seoAltStatus": "deferred_until_research_and_asset_received"
+  },
+  "research": {
+    "wordstatStatus": "blocked_waiting_for_user_tunnel",
+    "serpStatus": "not_started_restart_with_keyword_research",
+    "competitorGapStatus": "not_started",
+    "seoPassportStatus": "not_started"
+  },
+  "implementation": {
+    "existingScaffold": "src/lib/kiber94-article-unitree-g1-r1-h2-data.ts",
+    "existingPreviewRoute": "/preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/",
+    "scaffoldStatus": "not_approved_do_not_publish",
+    "codeChanged": false
+  },
+  "boundaries": {
+    "productionChanged": false,
+    "publicRoutesChanged": false,
+    "sharedComponentsChanged": false,
+    "mergeApproved": false
+  }
+}
