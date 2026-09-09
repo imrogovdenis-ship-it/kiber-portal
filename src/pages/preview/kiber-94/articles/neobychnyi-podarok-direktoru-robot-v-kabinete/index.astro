@@ -6,7 +6,26 @@ import { buildRobotGiftDirectorArticle } from '../../../../../lib/kiber94-articl
 import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../../../lib/seo';
 import { getRobotPageBySlug } from '../../../../../lib/robot-pages';
 
-const slugs = ['arenda-unitree-g1', 'arenda-robota-sofiya', 'arenda-promobot-v4', 'arenda-agibot-x2'];
+const slugs = ['arenda-unitree-g1', 'arenda-robota-sofiya', 'arenda-unitree-r1', 'arenda-agibot-x2'];
+const galleryImageBySlug: Record<string, { src: string; alt: string }> = {
+  'arenda-unitree-g1': {
+    src: '/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp',
+    alt: 'Робот-гуманоид Unitree G1 пожимает руку посетителю на деловом мероприятии',
+  },
+  'arenda-robota-sofiya': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3231-3464-4138-b632-653036383765__06.webp',
+    alt: 'Робот София смотрит на гостей и подходит для статусного поздравления',
+  },
+  'arenda-unitree-r1': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-3730-4138-a238-373063623031__01.webp',
+    alt: 'Робот-гуманоид Unitree R1 показывает активное движение для вау-эффекта на событии',
+  },
+  'arenda-agibot-x2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08.webp',
+    alt: 'Робот-гуманоид Agibot X2 стоит в полный рост и показывает жест руками',
+  },
+};
+
 const robotCards: ArticleRobotCard[] = slugs
   .map((slug) => getRobotPageBySlug(slug))
   .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
@@ -20,6 +39,7 @@ const robotCards: ArticleRobotCard[] = slugs
     description: robot.seo.description,
     badge: index === 0 ? 'Для кабинета' : undefined,
     image: robot.media.hero,
+    galleryImage: galleryImageBySlug[robot.slug] ?? robot.media.hero,
     analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
   }));
 

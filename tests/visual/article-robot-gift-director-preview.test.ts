@@ -24,6 +24,7 @@ test('robot gift director article maps owner brief into customer-first blocks', 
   assert.match(data, /Unitree G1 для камерного поздравления в офисе/);
   assert.match(data, /featuredSlug: 'arenda-unitree-g1'/);
   assert.match(data, /робот-гуманоид Unitree G1 поздравляет директора/);
+  assert.match(data, /imageAlign: 'right'/);
 });
 
 test('robot gift director research package is checked and does not leak internal wording into public data', () => {
@@ -31,4 +32,17 @@ test('robot gift director research package is checked and does not leak internal
   assert.match(packageJson, /"serpStatus": "checked"/);
   assert.doesNotMatch(data, /Wordstat|SERP|Tilda|content package|page ownership|каннибализац/i);
   assert.doesNotMatch(data, /как робот роботу/i);
+});
+
+
+test('robot gift director article applies owner feedback', () => {
+  assert.doesNotMatch(route, /arenda-promobot-v4/);
+  assert.doesNotMatch(data, /Promobot V4|Promobot/);
+  assert.match(route, /arenda-unitree-r1/);
+  assert.match(route, /const galleryImageBySlug/);
+  assert.match(route, /kiber-94-preview\/batch/);
+  assert.match(component, /template\.hero\.imageAlign === 'right'/);
+  assert.match(component, /robot\.galleryImage \?\? robot\.image/);
+  assert.match(data, /extraGoshaQuoteAfterNumberedUseCases/);
+  assert.match(data, /кабинетный квест с гуманоидами/);
 });
