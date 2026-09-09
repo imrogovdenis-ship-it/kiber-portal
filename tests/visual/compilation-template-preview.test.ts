@@ -22,7 +22,7 @@ test('KIBER-94 compilation template combines old source block order with approve
   assert.doesNotMatch(component, /humanoid-template h1 \{ font-size: clamp\(2\.85rem|humanoid-template h1 \{ font-size: clamp\(3rem/);
   assert.match(component, /data-block-id="hero"[\s\S]*data-block-id="intro"[\s\S]*data-block-id="introGosha"[\s\S]*data-block-id="gallery"[\s\S]*data-block-id="choiceGuide"[\s\S]*data-block-id="video"[\s\S]*data-block-id="scenarioExplanation"[\s\S]*data-block-id="goshaConclusion"[\s\S]*data-block-id="faq"[\s\S]*data-block-id="cta2"[\s\S]*data-block-id="catalogBlock"[\s\S]*data-block-id="relatedArticles"[\s\S]*data-block-id="otherCompilations"/);
   assert.match(component, /HomeGoshaQuote/);
-  assert.match(component, /<HomeGoshaQuote \{\.\.\.template\.conclusionGosha\} \/>/);
+  assert.match(component, /<HomeGoshaQuote \{\.\.\.template\.conclusionGosha\} sectionId="compilation-gosha-conclusion" \/>/);
   assert.doesNotMatch(component, /humanoid-template__conclusion-card/);
   assert.match(component, /HomeFaqBlock/);
   assert.match(component, /HomeFinalCta/);
@@ -74,4 +74,12 @@ test('KIBER-94 humanoid compilation data includes SEO and AI search layer withou
   assert.match(data, /homeRobotCardFinalCta/);
   assert.match(data, /Фотографии гуманоидных роботов на мероприятиях/);
   assert.match(data, /Как гуманоид выглядит в деле/);
+});
+
+
+test('KIBER-94 compilation gallery preserves source formats at a common height', () => {
+  assert.match(component, /humanoid-template__gallery-item \{[^}]*width: fit-content;[^}]*height: var\(--humanoid-gallery-height\)[^}]*background: transparent/);
+  assert.match(component, /humanoid-template__gallery-item img \{[^}]*width: auto; height: 100%; max-width: none;[^}]*object-fit: contain/);
+  assert.doesNotMatch(component, /humanoid-template__gallery-item \{[^}]*aspect-ratio: 1 \/ 1/);
+  assert.doesNotMatch(component, /humanoid-template__gallery-item img \{[^}]*width: 100%/);
 });

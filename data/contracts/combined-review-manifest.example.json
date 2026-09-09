@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "name": "combined-review-example",
+  "baseRef": "origin/main",
+  "branches": [],
+  "conflictPolicy": "fail_do_not_reconcile",
+  "requireCleanWorktree": true,
+  "requireUniqueBlockIds": true,
+  "postMergeCommands": [
+    "npm ci",
+    "npm run test:approved-contracts",
+    "npm run build:preview",
+    "node scripts/validate-kiber-approved-contracts.mjs --dist dist"
+  ],
+  "reviewRoutes": [],
+  "deploy": false,
+  "note": "Populate branches/routes in a task-specific copy. Never resolve shared-template conflicts with regex or manual concatenation."
+}

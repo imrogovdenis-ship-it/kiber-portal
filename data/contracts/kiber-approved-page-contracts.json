@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "status": "active_owner_approved_guardrail",
+  "updatedAt": "2026-09-09",
+  "purpose": "Single executable source for approved KIBER PORTAL page, media, feedback and review rules.",
+  "pageTypes": {
+    "robot_card": {
+      "canonicalComponent": "src/components/templates/RobotCardTemplate.astro",
+      "canonicalData": "src/lib/kiber94-robot-template-data.ts",
+      "approvalRecord": "data/review/kiber-94-robot-card-design-structure-approval.json",
+      "approvedReferenceRoute": "/preview/kiber-94/robot-card/arenda-unitree-g1/",
+      "protectedRules": [
+        "Hero/catalog image only",
+        "left-aligned Hero copy and actions",
+        "proportional galleries",
+        "capability registry only",
+        "explicit per-slug Gosha quote",
+        "one seoIntent"
+      ]
+    },
+    "article_detail": {
+      "canonicalComponent": "src/components/templates/ArticleBlocksTemplate.astro",
+      "canonicalData": "src/lib/kiber94-article-template-data.ts",
+      "approvalRecord": "data/review/kiber-94-article-template-design-structure-approval.json",
+      "approvedReferenceRoute": "/preview/kiber-94/article-blocks/",
+      "protectedRules": [
+        "approved opening and ending order",
+        "homepage shared lower blocks",
+        "proportional gallery",
+        "article-specific block inclusion",
+        "no duplicated singleton blocks"
+      ]
+    },
+    "compilation": {
+      "canonicalComponent": "src/components/templates/CompilationTemplate.astro",
+      "canonicalData": "src/lib/kiber94-compilation-template-data.ts",
+      "approvalRecord": "data/review/pr8-route-visual-approvals.json",
+      "approvedReferenceRoute": "/preview/kiber-94/compilation/roboty-gumanoidy/",
+      "protectedRules": [
+        "approved CompilationTemplate",
+        "homepage shared lower blocks",
+        "proportional gallery",
+        "responsive contract",
+        "no local lookalikes"
+      ]
+    }
+  },
+  "sharedBlockSources": {
+    "faq": "src/components/blocks/HomeFaqBlock.astro",
+    "finalCta": "src/components/blocks/HomeFinalCta.astro",
+    "catalogCard": "src/components/blocks/RobotCard.astro",
+    "articleCards": "src/components/blocks/HomeImageCards.astro"
+  },
+  "galleryContract": {
+    "alignmentConstraint": "equal_height_width_follows_intrinsic_format",
+    "figure": {
+      "flex": "0 0 auto",
+      "width": "fit-content",
+      "height": "shared variable",
+      "background": "transparent",
+      "overflow": "hidden"
+    },
+    "image": {
+      "width": "auto",
+      "height": "100%",
+      "maxWidth": "none",
+      "objectFit": "contain",
+      "objectPosition": "center"
+    },
+    "forbidden": {
+      "objectFit": "cover",
+      "fixedEqualWidth": true,
+      "squareAspectRatio": true,
+      "whiteLetterboxContainer": true
+    }
+  },
+  "mediaRoles": {
+    "robot_card": {
+      "hero": {
+        "allowedPathPrefixes": [
+          "/images/kiber-45/"
+        ],
+        "blockedRoles": [
+          "legacy_horizontal_hero",
+          "gallery",
+          "robot_in_action",
+          "capability"
+        ]
+      },
+      "gallery": {
+        "allowedRoles": [
+          "gallery",
+          "upper_near_hero",
+          "lower_near_photo_section"
+        ],
+        "blockedPathPrefixes": [
+          "/images/kiber-45/",
+          "/site-export/"
+        ],
+        "blockedRoles": [
+          "legacy_horizontal_hero",
+          "capability",
+          "catalog"
+        ]
+      },
+      "capabilities": {
+        "allowedRegistry": "data/models/robot-capability-images.source.json",
+        "blockedRoles": [
+          "hero",
+          "gallery",
+          "legacy_horizontal_hero"
+        ]
+      }
+    },
+    "article_detail": {
+      "gallery": {
+        "allowedPathPrefixes": [
+          "/images/kiber-94-preview/",
+          "/images/articles/"
+        ],
+        "blockedPathPrefixes": [
+          "/site-export/"
+        ],
+        "preserveCurrentAssetsOnLayoutOnlyFeedback": true
+      }
+    }
+  },
+  "deprecatedSources": [
+    {
+      "path": "src/content/robots.generated.json",
+      "status": "unprepared_preview_only",
+      "blockedFor": [
+        "curated robot_card gallery",
+        "approved batch generation"
+      ]
+    },
+    {
+      "path": "data/review/media-rights-legacy-hero-images.json",
+      "status": "archive_provenance_only",
+      "blockedFor": [
+        "runtime Hero",
+        "runtime gallery"
+      ]
+    },
+    {
+      "path": "site-export/images",
+      "status": "originals_provenance_only",
+      "blockedFor": [
+        "direct runtime references"
+      ]
+    },
+    {
+      "path": "/home/alex/projects/kiber-portal",
+      "status": "obsolete_repository",
+      "blockedFor": [
+        "all KIBER PORTAL implementation"
+      ]
+    }
+  ],
+  "contentRules": {
+    "customerFunnelFirst": true,
+    "internalTermsForbiddenInPublicCopy": [
+      "Wordstat",
+      "SERP",
+      "review_draft",
+      "needs_live_verification",
+      "preview-first"
+    ],
+    "genericGoshaFallbackForbidden": true,
+    "goshaQuoteMustBePageSpecific": true,
+    "optionalBlocksRequireArticleMeaning": true,
+    "massGenerationRequiresApprovedPilot": true
+  },
+  "feedbackWorkflow": {
+    "scopeLockRequired": true,
+    "approvedReferenceRequired": true,
+    "realReviewUrlRequired": true,
+    "unexpectedDiffMustFail": true,
+    "ownerVisibleStagingBeforeDone": true,
+    "doneMeans": [
+      "source verified",
+      "targeted checks passed",
+      "rendered output verified",
+      "real review URL verified"
+    ]
+  },
+  "verificationProfiles": {
+    "narrow": [
+      "scope lock",
+      "approved contract test",
+      "targeted test"
+    ],
+    "sharedTemplate": [
+      "approved contract test",
+      "all template consumers",
+      "preview build",
+      "rendered singleton/media/CSS audit"
+    ],
+    "full": [
+      "npm run ci"
+    ]
+  },
+  "approvalBoundaries": {
+    "merge": false,
+    "production": false,
+    "dns": false,
+    "secrets": false,
+    "analytics": false,
+    "liveLeadRouting": false
+  }
+}

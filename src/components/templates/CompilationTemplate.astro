@@ -35,7 +35,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
   </section>
 
   <section class="humanoid-template__gosha-intro container" data-block-id="introGosha" aria-label="Вводный комментарий Кибер Гоши">
-    <HomeGoshaQuote {...template.gosha} />
+    <HomeGoshaQuote {...template.gosha} sectionId="compilation-gosha-intro" />
   </section>
 
   <section class="humanoid-template__gallery" data-block-id="gallery" aria-labelledby="gallery-title">
@@ -112,7 +112,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
   </section>
 
   <section class="humanoid-template__gosha-intro container" data-block-id="goshaConclusion" aria-label="Финальный комментарий Кибер Гоши">
-    <HomeGoshaQuote {...template.conclusionGosha} />
+    <HomeGoshaQuote {...template.conclusionGosha} sectionId="compilation-gosha-conclusion" />
   </section>
 
   <section class="container" data-block-id="faq" aria-label="FAQ по сборке">
@@ -182,8 +182,8 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
   .humanoid-template__drag-gallery::-webkit-scrollbar { display: none; }
   .humanoid-template__drag-gallery.is-dragging { cursor: grabbing; scroll-snap-type: none; }
   .humanoid-template__gallery-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
-  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: auto; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: var(--kp-reference-white); scroll-snap-align: start; -webkit-user-drag: none; }
-  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: min(52rem, 88vw); object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
+  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: fit-content; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: transparent; scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: none; border-radius: inherit; object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
   .humanoid-template__guide { display: grid; gap: 1.75rem; }
   .humanoid-template__steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .humanoid-template__step { position: relative; isolation: isolate; display: grid; min-height: clamp(13rem, 18vw, 16rem); align-content: center; gap: .8rem; overflow: hidden; border-radius: 1.5rem; padding: clamp(1.45rem, 2.4vw, 2.05rem); background: var(--kp-reference-white); }
@@ -248,9 +248,9 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     }
     .humanoid-template__bottom-compilations { padding-block: 3rem 3.5rem; }
     .humanoid-template__text { padding-block: 2.1rem 2.1rem; }
-    .humanoid-template__gallery-item { flex: 0 0 85%; aspect-ratio: 1 / 1; height: auto; }
+    .humanoid-template__gallery-item { flex: 0 0 auto; width: fit-content; height: clamp(18rem, 78vw, 24rem); }
     .humanoid-template__scenario-card { flex-basis: 76vw; width: 76vw; }
-    .humanoid-template__gallery-item img { width: 100%; height: 100%; max-width: none; }
+    .humanoid-template__gallery-item img { width: auto; height: 100%; max-width: none; object-fit: contain; }
     .humanoid-template__video-frame { min-height: 17rem; }
   }
 </style>

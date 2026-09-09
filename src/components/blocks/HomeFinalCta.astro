@@ -1,12 +1,12 @@
 ---
 import type { HomeFinalCtaData } from '../../data/home-live';
-type Props = HomeFinalCtaData & { variant?: 'default' | 'robot-card-final' };
-const { title, titleNoWrap, description, primaryCta, secondaryCta, image, variant = 'default' } = Astro.props as Props;
+type Props = HomeFinalCtaData & { variant?: 'default' | 'robot-card-final'; sectionId?: string; titleId?: string };
+const { title, titleNoWrap, description, primaryCta, secondaryCta, image, variant = 'default', sectionId = 'social', titleId = 'home-final-cta-title' } = Astro.props as Props;
 const titlePrefix = titleNoWrap && title.endsWith(titleNoWrap) ? title.slice(0, -titleNoWrap.length).trimEnd() : title;
 ---
-<section class:list={['home-final-cta', variant === 'robot-card-final' && 'home-final-cta--robot-card-final']} id="social" data-home-block="final-cta" data-cta-variant={variant} aria-labelledby="home-final-cta-title">
+<section class:list={['home-final-cta', variant === 'robot-card-final' && 'home-final-cta--robot-card-final']} id={sectionId} data-home-block="final-cta" data-cta-variant={variant} aria-labelledby={titleId}>
   <div class="home-final-cta__copy">
-    <h2 id="home-final-cta-title">
+    <h2 id={titleId}>
       {titleNoWrap ? <>{titlePrefix}<br class="home-final-cta__title-break" /><span class="home-final-cta__title-nowrap">{titleNoWrap}</span></> : title}
     </h2>
     <p>{description}</p>
