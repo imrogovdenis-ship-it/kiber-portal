@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "status": "reviewed_for_content_package",
+  "checkedAt": "2026-09-09",
+  "officialSources": {
+    "G1": "https://www.unitree.com/g1/",
+    "R1": "https://www.unitree.com/R1/",
+    "H2": "https://www.unitree.com/H2/"
+  },
+  "models": {
+    "Unitree G1": {
+      "publicFacts": {
+        "height": "около 132 см",
+        "weight": "около 35 кг с батареей",
+        "degreesOfFreedom": "23 в базовой конфигурации; до 43 в зависимости от комплектации",
+        "batteryLife": "около 2 часов по данным производителя",
+        "battery": "быстросъёмная"
+      },
+      "avoid": [
+        "«на весь день» без пояснения о графике выходов",
+        "«единственная версия»",
+        "неактуальная цена $16,000",
+        "гарантия голосового понимания гостей"
+      ]
+    },
+    "Unitree R1": {
+      "publicFacts": {
+        "height": "до 123 см",
+        "weight": "около 29 кг",
+        "degreesOfFreedom": "20–26 в зависимости от комплектации",
+        "batteryLife": "около 1 часа по данным производителя",
+        "battery": "быстросъёмная"
+      },
+      "avoid": [
+        "121 см / 25 кг как текущая официальная цифра",
+        "обещание трюков в тесном помещении",
+        "безусловная пригодность для любой площадки"
+      ]
+    },
+    "Unitree H2": {
+      "publicFacts": {
+        "height": "около 1,8 м (официальная таблица: 1820 мм)",
+        "weight": "около 70 кг",
+        "degreesOfFreedom": "31",
+        "batteryLife": "около 3 часов по данным производителя",
+        "battery": "быстросъёмная",
+        "head": "бионическая голова с чертами лица"
+      },
+      "researchOnly": {
+        "armPayload": "номинально около 7 кг, пиково около 15 кг; не превращать в разрешение вручать предметы гостям"
+      },
+      "avoid": [
+        "27 степеней свободы",
+        "«абсолютно безопасен»",
+        "обещание зарядки за 20 минут",
+        "синхронизация мимики и голоса без подтверждения",
+        "обязательная розетка 220 В как универсальное правило"
+      ]
+    }
+  },
+  "sharedRules": [
+    "Manufacturer battery life is an approximate technical reference, not a promise of continuous event runtime.",
+    "Any dynamic movement depends on venue inspection, safe zone and operator plan.",
+    "Purchase price is omitted from public copy because the page helps choose a rental scenario.",
+    "Rental availability, exact program and final price are confirmed by the manager for the date and venue."
+  ]
+}

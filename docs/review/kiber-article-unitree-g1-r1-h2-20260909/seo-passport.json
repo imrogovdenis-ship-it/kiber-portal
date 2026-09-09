@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "status": "draft_for_owner_review",
+  "pageType": "article_detail",
+  "slug": "sravnenie-unitree-g1-r1-h2",
+  "canonicalPath": "/articles/sravnenie-unitree-g1-r1-h2/",
+  "metaTitle": "Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ",
+  "metaDescription": "Сравниваем Unitree G1, R1 и H2 по размеру, автономности, характеру движения и роли на мероприятии — какую модель выбрать под площадку и сценарий.",
+  "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+  "primaryKeyword": "Unitree G1, R1 и H2 сравнение",
+  "primaryKeywordVolume": 0,
+  "secondaryKeywords": [
+    "Unitree G1",
+    "Unitree R1",
+    "Unitree H2",
+    "сравнение Unitree",
+    "робот Unitree G1",
+    "робот Unitree R1",
+    "робот Unitree H2"
+  ],
+  "longTailKeywords": [
+    "Unitree G1 или R1",
+    "Unitree G1 или H2",
+    "Unitree R1 или H2",
+    "какой робот Unitree выбрать для мероприятия",
+    "сравнение роботов-гуманоидов Unitree для мероприятий"
+  ],
+  "pageIntent": "informational_commercial_named_model_comparison",
+  "keywordOwnership": {
+    "articleOwns": "named-model comparison and complex choice questions",
+    "robotCardsOwn": "exact-model rental transactions",
+    "compilationOwns": "generic humanoid rental/category intent"
+  },
+  "schemaTypes": [
+    "BlogPosting",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "wordstatStatus": "checked_live_complete",
+  "serpStatus": "checked",
+  "heroStatus": "awaiting_user_asset",
+  "decision": "Publish as a low-volume, high-intent decision guide supported by three branded entities; do not optimize it for generic humanoid rental."
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "engine": "Yandex",
+  "region": "Moscow (lr=213)",
+  "query": "Unitree G1 или R1 сравнение",
+  "collectedAt": "2026-09-09",
+  "searchUrl": "https://yandex.ru/search/?lr=213&text=Unitree+G1+%D0%B8%D0%BB%D0%B8+R1+%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5",
+  "searchTitle": "Unitree G1 или R1 сравнение — Яндекс: нашлось 8 тыс. результатов",
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "Unitree R1 и G1: два поколения роботов на одной сцене",
+      "href": "https://forumai.io/threads/crossed-swords-unitree-r1-i-g1-dva-pokoleniya-robotov-na-odnoi-stsene.7687/",
+      "snippet": "И хотя оба принадлежат к одному семейству, сравнение получилось эффектным — словно выбираешь своего бойца перед началом матча. ... R1 — это попытка Unitree сделать гуманоидов более массовыми и доступными.",
+      "host": "forumai.io"
+    },
+    {
+      "position": 2,
+      "title": "G1 или R1 Unitree — гайд выбора. Команда Alashed.",
+      "href": "https://unitree.kz/en/blog/g1-vs-r1-kak-vybrat",
+      "snippet": "Практическое сравнение без цен: сценарии, среда, команда, когда какой класс. ... Команда Alashed помогает выбрать класс решения для Unitree-контура без публичных цен и без гонки характеристик ради таблицы.",
+      "host": "unitree.kz"
+    },
+    {
+      "position": 3,
+      "title": "Unitree G1 vs Unitree R1 — Spec & RAI Comparison",
+      "href": "https://robotsniper.com/compare/unitree-g1-vs-unitree-r1",
+      "snippet": "Unitree G1 vs Unitree R1: side-by-side specs, Robot Autonomy Index (RAI) breakdown, and live retailer prices.",
+      "host": "robotsniper.com"
+    },
+    {
+      "position": 4,
+      "title": "Робот Unitree G1",
+      "href": "https://robort.ru/product/seriya-g1/robot-unitree-g1/",
+      "snippet": "Наш интернет-магазин предлагает робота Unitree G1 — доступная версия популярного развлекательного и…",
+      "host": "robort.ru"
+    },
+    {
+      "position": 5,
+      "title": "Unitree R1 против Unitree G1: различия в функциях...",
+      "href": "https://www.youtube.com/watch?v=FZZxJN2rVn8",
+      "snippet": "Ключевые слова: Unitree R1, Unitree G1, сравнение гуманоидных роботов, доступный гуманоидный робот, робототехнические технологии, R1 против G1, характеристики робота, производительность робота...",
+      "host": "www.youtube.com"
+    },
+    {
+      "position": 6,
+      "title": "Unitree R1 vs. Unitree G1: Key Differences in 2026",
+      "href": "https://toborlife.ai/blog/unitree-r1-vs-g1-which-humanoid-robot-fits-your-ai-vision-in-2026/",
+      "snippet": "Compare the Unitree R1 Robot and G1 humanoid platforms across mobility, hardware, AI capabilities, and robotics use cases in 2026.",
+      "host": "toborlife.ai"
+    },
+    {
+      "position": 7,
+      "title": "Робот Unitree R1 Edu Pro A купить в Москве - низкая цена",
+      "href": "https://robort.ru/product/seriya-r1/robot-unitree-r1/",
+      "snippet": "Unitree R1 — антропоморфный робот-платформа для изучения искусственного интеллекта и…",
+      "host": "robort.ru"
+    },
+    {
+      "position": 8,
+      "title": "Роботы Unitree G1 и H1: обзор и сравнение гуманоидов",
+      "href": "https://unitree.ru/blog/unitree-g1-i-h1-sravnenie-gumanoidnykh-robotov/",
+      "snippet": "Содержание\nСравнение с конкурентами\nЗаключение: что выбрать Unitree G1 или H1?\nСравнение с конкурентами. Сравнивать G1 и H1 с другими известными...",
+      "host": "unitree.ru"
+    },
+    {
+      "position": 9,
+      "title": "Unitree R1 vs G1: Which Humanoid Should You Buy? [2026]",
+      "href": "https://blog.robozaps.com/b/unitree-r1-vs-g1",
+      "snippet": "Unitree G1 humanoid robot walking outdoors - official Unitree image. ... The Unitree R1 costs $5,900 while the G1 costs $13,500 — but the G1 is available now with superior specs including 3D LiDAR, longer battery life, and more degrees of freedom.",
+      "host": "blog.robozaps.com"
+    },
+    {
+      "position": 10,
+      "title": "Unitree G1 vs R1: Which to Rent for Your Event | ZMProbots",
+      "href": "https://www.zmprobots.com/blog/unitree-g1-vs-r1-rental/",
+      "snippet": "Unitree G1 vs R1 for event rentals: walking vs conversation, day rates, ideal use cases, and honest tradeoffs from real deployments.",
+      "host": "www.zmprobots.com"
+    }
+  ],
+  "screenshot": null,
+  "notes": [
+    "Visible authenticated Chrome/CDP SERP; ads/product carousels and Yandex internal blocks excluded from organic results."
+  ]
+}

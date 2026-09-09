@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "collectedAt": "2026-09-09",
+  "sources": [
+    {
+      "file": "01-unitree-g1-official.json",
+      "url": "https://www.unitree.com/g1",
+      "effectiveUrl": "https://www.unitree.com/g1/",
+      "status": "fetched_live",
+      "title": "Humanoid robot G1_Humanoid Robot Functions_Humanoid Robot Price | Unitree Robotics",
+      "textLength": 6685
+    },
+    {
+      "file": "02-unitree-r1-official.json",
+      "url": "https://www.unitree.com/R1",
+      "effectiveUrl": "https://www.unitree.com/R1/",
+      "status": "fetched_live",
+      "title": "Unitree R1 | Unitree Robotics",
+      "textLength": 6524
+    },
+    {
+      "file": "03-unitree-h2-official.json",
+      "url": "https://www.unitree.com/H2",
+      "effectiveUrl": "https://www.unitree.com/H2/",
+      "status": "fetched_live",
+      "title": "Unitree H2 Destiny Awakening | Unitree Robotics",
+      "textLength": 6208
+    },
+    {
+      "file": "04-robottesters-full-comparison.json",
+      "url": "https://robottesters.com/article-unitree-humanoid-robots-compared",
+      "effectiveUrl": "https://robottesters.com/article-unitree-humanoid-robots-compared",
+      "status": "fetched_live",
+      "title": "Unitree H1 vs H2 vs G1 vs R1 vs H2 Plus: Specs, Prices Compared (2026) | RobotTesters",
+      "textLength": 16882
+    },
+    {
+      "file": "05-usrobotstore-comparison.json",
+      "url": "https://www.usrobotstore.com/blogs/unitree-robotics/unitree-g1-vs-h2-vs-r1-which-humanoid-robot-platform-should-you-choose",
+      "effectiveUrl": "https://www.usrobotstore.com/blogs/unitree-robotics/unitree-g1-vs-h2-vs-r1-which-humanoid-robot-platform-should-you-choose",
+      "status": "fetched_live",
+      "title": "Unitree G1 vs H2 vs R1: Which Humanoid Robot Platform Should You Choos",
+      "textLength": 8692
+    },
+    {
+      "file": "06-unitree-kz-g1-r1.json",
+      "url": "https://unitree.kz/en/blog/g1-vs-r1-kak-vybrat",
+      "effectiveUrl": "https://unitree.kz/en/blog/g1-vs-r1-kak-vybrat",
+      "status": "fetched_live",
+      "title": "G1 vs R1: как выбрать для задачи",
+      "textLength": 2724
+    },
+    {
+      "file": "07-gumanoids-g1-h2.json",
+      "url": "https://gumanoids.ru/blog/unitree-g1-vs-h2/",
+      "effectiveUrl": "https://gumanoids.ru/blog/unitree-g1-vs-h2/",
+      "status": "fetched_live",
+      "title": "Unitree G1 или Unitree H2: какого гуманоида выбрать в 2026 году | ГУМАНОИД",
+      "textLength": 3331
+    },
+    {
+      "file": "08-zmprobots-g1-r1-rental.json",
+      "url": "https://www.zmprobots.com/blog/unitree-g1-vs-r1-rental/",
+      "effectiveUrl": "https://www.zmprobots.com/unitree-g1-humanoid-robot/",
+      "status": "fetched_live",
+      "title": "Unitree G1 Humanoid Robot | Rent the Flagship | ZMProbots",
+      "textLength": 10075
+    },
+    {
+      "file": "09-rent-robot-r1.json",
+      "url": "https://rent-robot.ru/unitree-r1",
+      "effectiveUrl": "https://rent-robot.ru/unitree-r1",
+      "status": "fetched_live",
+      "title": "Аренда робота Unitree R1 — человекоподобный гуманоид для мероприятий",
+      "textLength": 2014
+    },
+    {
+      "file": "10-divent-g1.json",
+      "url": "https://divent.ru/uslugi/robot-gumanoid-unitree-g1/",
+      "effectiveUrl": "https://divent.ru/uslugi/robot-gumanoid-unitree-g1/",
+      "status": "fetched_live",
+      "title": "Робот-гуманоид в аренду в Москве - Unitree G1",
+      "textLength": 5182
+    },
+    {
+      "file": "11-h2-rental.json",
+      "url": "https://xn--80acb3cbjrd.xn--p1ai/gumanoid-unitree-h2/",
+      "effectiveUrl": "https://xn--80acb3cbjrd.xn--p1ai/gumanoid-unitree-h2/",
+      "status": "fetched_live",
+      "title": "ВауРобот - Аренда робота гуманоида Unitree H2 на мероприятие",
+      "textLength": 7736
+    },
+    {
+      "file": "12-unitree-kz-business-guide.json",
+      "url": "https://unitree.kz/blog/kak-vybrat-robota-unitree-dlya-biznesa",
+      "effectiveUrl": "https://unitree.kz/blog/kak-vybrat-robota-unitree-dlya-biznesa",
+      "status": "fetched_live",
+      "title": "Как выбрать робота Unitree для бизнеса: гайд 2026",
+      "textLength": 11001
+    }
+  ],
+  "strengths": [
+    "Official Unitree pages provide current model/configuration ranges.",
+    "Several technical comparisons make differences in size, configuration and platform purpose easy to scan.",
+    "Rental pages show that event visitors care about movement, stage presence and visual interaction."
+  ],
+  "weaknesses": [
+    "Most pages optimize for purchase, education or R&D rather than event rental.",
+    "Some rental pages contain conflicting/outdated specs and absolute safety claims.",
+    "Few sources distinguish manufacturer battery estimates from an event show schedule.",
+    "Few explain that R1 acrobatics still require a prepared safety area despite the robot being compact.",
+    "No strong Russian result offers one neutral decision path across G1/R1/H2 for an event organizer."
+  ],
+  "excludedClaims": [
+    "absolute safety",
+    "20-minute H2 recharge",
+    "voice-synchronized facial animation",
+    "R1 25 kg / 121 cm as current official spec",
+    "G1 $16,000 and a single configuration",
+    "manager reply within one hour",
+    "dozens of KIBER deployments without evidence"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "engine": "Yandex",
+  "region": "Moscow (lr=213)",
+  "query": "какой робот Unitree выбрать для мероприятия",
+  "collectedAt": "2026-09-09",
+  "searchUrl": "https://yandex.ru/search/?lr=213&text=%D0%BA%D0%B0%D0%BA%D0%BE%D0%B9+%D1%80%D0%BE%D0%B1%D0%BE%D1%82+Unitree+%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D1%82%D1%8C+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F",
+  "searchTitle": "какой робот Unitree выбрать для мероприятия — Яндекс: нашлось 814 тыс. результатов",
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "Как выбрать робота Unitree для бизнеса: гайд 2026",
+      "href": "https://unitree.kz/blog/kak-vybrat-robota-unitree-dlya-biznesa",
+      "snippet": "Полный гайд по выбору робота Unitree для бизнеса в 2026: сравнение Go2, A2, B2, B2-W, G1, H1, H2, R1, Z1. Decision tree, отрасли, FAQ. Unitree.kz.",
+      "host": "unitree.kz"
+    },
+    {
+      "position": 2,
+      "title": "Как выбрать робота-собаку Unitree: виды...",
+      "href": "https://unitree.ru/blog/kak-vybrat-robosobaku/",
+      "snippet": "Выберите идеальную модель робособаки Unitree для R&D, образования, охраны или использования в промышленности! Сравнение Go1, Go2, B2: характеристики, цены, применение.",
+      "host": "unitree.ru"
+    },
+    {
+      "position": 3,
+      "title": "Роботы для развлечений на мероприятия купить в Москве",
+      "href": "https://robort.ru/product/roboty-dlya-razvlecheniy/",
+      "snippet": "Наш интернет-магазин предлагает роботы для развлечений — увлекательные и технологичные решения для досуга. Действует гарантия. Быстрая доставка по Москве и всей России. Профессиональная поддержка и...",
+      "host": "robort.ru"
+    },
+    {
+      "position": 4,
+      "title": "Как выбрать арендуемого робота в зависимости от...",
+      "href": "https://rbot100.ru/kak-vybrat-arenduemogo-robota-v-zavisimosti-ot-formata-vashego-meropriyatiya/",
+      "snippet": "Выбирайте Unitree Go1 Pro (малые размеры, мягкий корпус) или R. Bot 100 Promo (дружелюбный дизайн, голосовые игры). Избегайте моделей с острыми элементами или высокой скоростью (например, MT1).",
+      "host": "rbot100.ru"
+    },
+    {
+      "position": 5,
+      "title": "Робособака Unitree Go2 или Deep Robotics...",
+      "href": "https://robosobaka.ru/expertise/articles/vidy-robotov-dlia-proizvodstva/go2-lite3/",
+      "snippet": "Статьи. Виды роботов для производства. Какую робособаку выбрать: Unitree Go2 или Deep Robotics Lite3.",
+      "host": "robosobaka.ru"
+    },
+    {
+      "position": 6,
+      "title": "Аренда роботов для мероприятий, выставок...",
+      "href": "https://unibot.ru/rent/",
+      "snippet": "Unitree G1 Edu Pro. Компактный гуманоид с AI управлением и 3D LiDAR. Идеален для исследований и образовательных проектов.",
+      "host": "unibot.ru"
+    },
+    {
+      "position": 7,
+      "title": "Роботы Unitree для бизнеса, образования и исследований",
+      "href": "https://www.xcom.ru/services/roboty-unitree/",
+      "snippet": "Роботы Unitree для обучения, исследований, демонстраций и ИИ-проектов. Поможем подобрать модель, комплектацию и условия поставки.",
+      "host": "www.xcom.ru"
+    },
+    {
+      "position": 8,
+      "title": "Робот ростом 180 см: первый честный тест Unitree H2",
+      "href": "https://www.youtube.com/watch?v=4_3dy5zWrFo",
+      "snippet": "Первый подробный обзор нового полноразмерного робота-гуманоида Unitree H2! Распаковали и протестировали нового человекоподобного робота от Unitree за $60 0...",
+      "host": "www.youtube.com"
+    },
+    {
+      "position": 9,
+      "title": "Аренда роботов для мероприятий в Москве — от 20 000...",
+      "href": "https://www.kiber-portal.ru/",
+      "snippet": "Аренда роботов для мероприятий. Взять робота в аренду «под ключ»: с доставкой, настройкой сценария и оператором на площадке — в Москве и по всей России. ... Unitree G1 или Agibot X2 — что выбрать для мероприятия.",
+      "host": "www.kiber-portal.ru"
+    },
+    {
+      "position": 10,
+      "title": "Мир Роботов | Официальный представитель Unitree...",
+      "href": "https://mir-robotov.com/",
+      "snippet": "Аренда высокотехнологичных роботов Unitree для мероприятий: свадьб, конференций, корпоративов и выставок. ... Выберите робота для вашего мероприятия: свадьбы, конференции, корпоратива или выставки.",
+      "host": "mir-robotov.com"
+    }
+  ],
+  "screenshot": null,
+  "notes": [
+    "Visible authenticated Chrome/CDP SERP; ads/product carousels and Yandex internal blocks excluded from organic results."
+  ]
+}

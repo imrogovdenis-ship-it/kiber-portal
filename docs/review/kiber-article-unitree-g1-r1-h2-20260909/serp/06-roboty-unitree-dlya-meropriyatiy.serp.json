@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "checked",
+  "engine": "Yandex",
+  "region": "Moscow (lr=213)",
+  "query": "роботы Unitree для мероприятий",
+  "collectedAt": "2026-09-09",
+  "searchUrl": "https://yandex.ru/search/?lr=213&text=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D1%8B+Unitree+%D0%B4%D0%BB%D1%8F+%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D0%B9",
+  "searchTitle": "роботы Unitree для мероприятий — Яндекс: нашлось 970 тыс. результатов",
+  "organicResults": [
+    {
+      "position": 1,
+      "title": "Аренда роботов для мероприятий, выставок...",
+      "href": "https://unibot.ru/rent/",
+      "snippet": "Unitree G1 Edu Pro. Компактный гуманоид с AI управлением и 3D LiDAR. Идеален для исследований и образовательных проектов. AI управление 3D LiDAR Гибкие руки.",
+      "host": "unibot.ru"
+    },
+    {
+      "position": 2,
+      "title": "Роботы Unitree Robotics - официальный сайт Юнитри в РФ",
+      "href": "https://unitree.ru/",
+      "snippet": "Официальный представитель Unitree Robotics в России — четвероногие и гуманоидные роботы для исследований, автоматизации и промышленных задач. Роботы-собаки Go2 и B2, гуманоиды G1, H2 и R1...",
+      "host": "unitree.ru"
+    },
+    {
+      "position": 3,
+      "title": "Роботы для развлечений на мероприятия купить в Москве",
+      "href": "https://robort.ru/product/roboty-dlya-razvlecheniy/",
+      "snippet": "Наш интернет-магазин предлагает роботы для развлечений — увлекательные и технологичные решения для досуга. Действует гарантия. Быстрая доставка по Москве и всей России. Профессиональная поддержка и...",
+      "host": "robort.ru"
+    },
+    {
+      "position": 4,
+      "title": "Аренда робота Unitree R1 — человекоподобный гуманоид...",
+      "href": "https://rent-robot.ru/unitree-r1",
+      "snippet": "Unitree R1 гуманоидный робот на выставке, демонстрация технологии. Аренда робота Unitree R1. Заказать. Человекоподобный робот для мероприятий. от 50 000 руб. Робот на мероприятии. Описание робота Unitree R1.",
+      "host": "rent-robot.ru"
+    },
+    {
+      "position": 5,
+      "title": "Гуманоид Unitree G1 в Москве – аренда робота | Divent -",
+      "href": "https://divent.ru/uslugi/robot-gumanoid-unitree-g1/",
+      "snippet": "Аренда робота-гуманоида Unitree с ИИ — это готовое интерактивное решение для мероприятий любого формата. Робот сочетает в себе высокую подвижность, искусственный интеллект и эффектный внешний вид...",
+      "host": "divent.ru"
+    },
+    {
+      "position": 6,
+      "title": "ВауРобот - Аренда робота гуманоида Unitree H2 на...",
+      "href": "https://xn--80acb3cbjrd.xn--p1ai/gumanoid-unitree-h2/",
+      "snippet": "Робот гуманоид Unitree H2. Аренда робота гуманоида Unitree H2 на мероприятие — это шаг в новую эпоху развлечений и технологий.",
+      "host": "xn--80acb3cbjrd.xn--p1ai"
+    },
+    {
+      "position": 7,
+      "title": "Аренда роботов в Москве и МО под ключ",
+      "href": "https://roboagency.ru/",
+      "snippet": "Аренда роботов на мероприятия под ключ в Москве. Шоу-рум на ВДНХ. Эксклюзивные роботы. Заказы без посредников. Гибкая и доступная ценовая политика.",
+      "host": "roboagency.ru"
+    },
+    {
+      "position": 8,
+      "title": "Аренда робота Unitree G1 — гуманоидный робот для...",
+      "href": "https://robot-unitree.ru/",
+      "snippet": "| Unitree G1 — новейший робот-гуманоид, способный двигаться, жестикулировать и взаимодействовать с людьми. Мы предлагаем аренду робота Unitree G1 для мероприятий, выставок, шоу, презентаций...",
+      "host": "robot-unitree.ru"
+    },
+    {
+      "position": 9,
+      "title": "Аренда робота-гуманоида Unitree R1 в Москве на...",
+      "href": "https://izum-teatr.ru/msk/artisty/unitree-r1/",
+      "snippet": "Аренда робота-гуманоида Unitree R1 в Москве для выставок, форумов, презентаций и корпоративных событий. Робот работает с оператором. Забронируйте дату.",
+      "host": "izum-teatr.ru"
+    },
+    {
+      "position": 10,
+      "title": "Робот-гуманоид Unitree G1 с ИИ",
+      "href": "https://rbot100.ru/robot/unitree-g1/",
+      "snippet": "Робот-гуманоид Unitree G1 с ИИ - гиперподвижный человекоподобный робот, который управляется голосом, демонстрирует продукты и участвует в шоу. Аренда и продажа.",
+      "host": "rbot100.ru"
+    }
+  ],
+  "screenshot": null,
+  "notes": [
+    "Visible authenticated Chrome/CDP SERP; ads/product carousels and Yandex internal blocks excluded from organic results."
+  ]
+}

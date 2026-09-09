@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "hero_pending_gallery_ready",
+  "hero": {
+    "src": null,
+    "status": "awaiting_user_attachment",
+    "actualDescription": "На изображении три робота Unitree стоят на сцене перед зрителями: слева R1 в боевой стойке, в центре G1 приветствует зрителей поднятой правой рукой, справа H2 вытянул руку немного в сторону и вперёд, как будто обращается к аудитории.",
+    "seoAlt": "Роботы-гуманоиды Unitree R1, G1 и H2 приветствуют зрителей на сцене мероприятия"
+  },
+  "mediaMoment": {
+    "src": null,
+    "status": "reuse_pending_hero_asset",
+    "actualDescription": "На изображении три робота Unitree стоят на сцене перед зрителями: слева R1 в боевой стойке, в центре G1 приветствует зрителей поднятой правой рукой, справа H2 вытянул руку немного в сторону и вперёд, как будто обращается к аудитории.",
+    "seoAlt": "Сравнение Unitree R1, G1 и H2 на сцене перед зрителями"
+  },
+  "gallery": [
+    {
+      "model": "Unitree R1",
+      "src": "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp",
+      "alt": "Робот-гуманоид Unitree R1 идёт по выставке перед группой посетителей"
+    },
+    {
+      "model": "Unitree G1",
+      "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp",
+      "alt": "Робот-гуманоид Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ"
+    },
+    {
+      "model": "Unitree H2",
+      "src": "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp",
+      "alt": "Робот-гуманоид Unitree H2 представлен зрителям на выставочной площадке"
+    }
+  ],
+  "rules": {
+    "actualDescriptionSeparateFromSeoAlt": true,
+    "galleryUsesOneApprovedPhotoPerModel": true,
+    "heroPlaceholderForbidden": true,
+    "legacyHeroForbidden": true
+  }
+}
