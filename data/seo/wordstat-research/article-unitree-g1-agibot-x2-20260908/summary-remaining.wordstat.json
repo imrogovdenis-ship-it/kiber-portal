@@ -1,0 +1,164 @@
+{
+  "status": "checked_live",
+  "visibleTab": true,
+  "cdpPort": 9225,
+  "collectedAt": "2026-09-08T10:23:13.862Z",
+  "queries": [
+    {
+      "query": "Unitree G1 аренда",
+      "total": 14,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 14
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/07-unitree-g1-аренда.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "аренда Agibot X2",
+      "total": 0,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 0
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/08-аренда-agibot-x2.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "робот гуманоид для мероприятия",
+      "total": 0,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 0
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/09-робот-гуманоид-для-мероприятия.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "аренда роботов на мероприятие",
+      "total": 69,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 69
+        },
+        {
+          "phrase": "+аренда роботов на мероприятие",
+          "monthly_queries": 69
+        },
+        {
+          "phrase": "+аренда роботов на мероприятие спб",
+          "monthly_queries": 5
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/10-аренда-роботов-на-мероприятие.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "робот для мероприятия",
+      "total": 55,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 55
+        },
+        {
+          "phrase": "+робот для мероприятия",
+          "monthly_queries": 55
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/11-робот-для-мероприятия.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "аренда роботов для выставки",
+      "total": 1,
+      "period": "07.08.2026 – 07.09.2026",
+      "noResults": true,
+      "rows": [
+        {
+          "phrase": "за 07.08.2026 – 07.09.2026:",
+          "monthly_queries": 1
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/12-аренда-роботов-для-выставки.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "робот на выставку",
+      "total": 1293,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 1293
+        },
+        {
+          "phrase": "+роботы на выставках",
+          "monthly_queries": 1293
+        },
+        {
+          "phrase": "+выставка роботов на вднх",
+          "monthly_queries": 292
+        },
+        {
+          "phrase": "+девушки роботы на выставке",
+          "monthly_queries": 104
+        },
+        {
+          "phrase": "+билеты на выставку роботов",
+          "monthly_queries": 98
+        },
+        {
+          "phrase": "+роботы на выставке в китае",
+          "monthly_queries": 91
+        },
+        {
+          "phrase": "+выставка роботов нижний новгород на стадионе",
+          "monthly_queries": 49
+        },
+        {
+          "phrase": "+какие на выставке роботов роботы",
+          "monthly_queries": 45
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/13-робот-на-выставку.wordstat.json",
+      "screenshot": null
+    },
+    {
+      "query": "роботы гуманоиды аренда",
+      "total": 80,
+      "period": "08.08.2026 – 06.09.2026",
+      "noResults": false,
+      "rows": [
+        {
+          "phrase": "за 08.08.2026 – 06.09.2026:",
+          "monthly_queries": 80
+        },
+        {
+          "phrase": "+аренда робота гуманоида",
+          "monthly_queries": 80
+        }
+      ],
+      "jsonPath": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/14-роботы-гуманоиды-аренда.wordstat.json",
+      "screenshot": null
+    }
+  ]
+}

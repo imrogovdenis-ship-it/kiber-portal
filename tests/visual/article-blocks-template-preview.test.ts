@@ -49,7 +49,7 @@ test('KIBER-94 article template includes full live-derived block library', () =>
   assert.match(component, /Как это выглядит на практике\?/);
   assert.match(component, /article-blocks__plain-copy/);
   assert.match(data, /h1:\s*'Шаблон статьи: все блоки для Блога Кибер Гоши'/);
-  assert.match(component, /article-blocks h1 \{ max-width: 14ch; font-size: clamp\(2\.5rem, 5vw, 5\.25rem\); line-height: 1; \}/);
+  assert.match(component, /article-blocks h1 \{ max-width: 15ch; font-size: clamp\(2\.25rem, 4\.4vw, 4\.65rem\); line-height: 1; \}/);
   assert.match(component, /article-blocks__hero-inner \{[\s\S]*align-items: start/);
   assert.match(component, /article-blocks__hero-image \{[\s\S]*margin-top: 2\.25rem/);
   assert.match(component, /article-blocks__lead \{ grid-column: 1 \/ -1; max-width: none/);
@@ -59,6 +59,9 @@ test('KIBER-94 article template includes full live-derived block library', () =>
   assert.match(component, /const gallerySliderId = content\?\.gallery\?\.sliderId \?\? 'robot-article-compilation-gallery'/);
   assert.match(component, /data-drag-slider=\{gallerySliderId\}/);
   assert.match(component, /script is:inline src="\/scripts\/robot-card-gallery\.js" defer/);
+  const galleryScript = readFileSync('public/scripts/robot-card-gallery.js', 'utf8');
+  assert.match(galleryScript, /querySelectorAll\('\[data-drag-slider\]'\)\.forEach\(setupSlider\)/);
+  assert.doesNotMatch(galleryScript, /data-drag-slider\^=/);
   assert.match(component, /humanoid-template__drag-gallery humanoid-template__gallery-strip/);
   assert.match(component, /humanoid-template__gallery-item/);
   assert.match(component, /humanoid-template__gallery-strip \{ padding: 0 max\(var\(--kp-reference-page-gutter\), calc\(\(100vw - var\(--kp-reference-container\)\) \/ 2\)\) \.4rem; \}/);
@@ -95,7 +98,7 @@ test('KIBER-94 article template includes full live-derived block library', () =>
   assert.match(component, /@media \(min-width: 60rem\) \{ \.vertical-slice__card-grid \{ grid-template-columns: repeat\(4, minmax\(0, 1fr\)\); \} \}/);
   assert.match(component, /article-blocks__paired-rows h3 \{ font-size: clamp\(1\.05rem, 1\.35vw, 1\.22rem\); line-height: 1\.16; \}/);
   assert.match(component, /id="cta2" class="article-blocks__cta container"/);
-  assert.match(component, /id="hero" class="article-blocks__hero"/);
+  assert.match(component, /id="hero" class:list=\{\["article-blocks__hero"/);
   assert.match(component, /id="productCard" class="article-blocks__product container"/);
   assert.match(data, /id: 'cta2'[\s\S]*title: 'CTA 2'/);
   assert.match(data, /id: 'catalogBlock'[\s\S]*title: 'Каталог роботов'/);

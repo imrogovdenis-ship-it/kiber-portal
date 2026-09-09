@@ -1,0 +1,38 @@
+{
+  "status": "approved",
+  "approvalType": "final_visual_content_owner_review_after_feedback",
+  "approvedAt": "2026-09-09",
+  "ownerApprovalQuote": "Отлично! Фиксируй результат и усвоенные новые навыки. Давай переходить к написанию 4 статьи.",
+  "scope": {
+    "pullRequest": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/81",
+    "previewRoute": "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "articleTitle": "Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия",
+    "approvedContentCommit": "50929f449a9935579b84605984c4500bacf399a4",
+    "stagingHost": "https://alex-kiber-staging.38.180.37.42.sslip.io"
+  },
+  "verificationBeforeApproval": {
+    "localCi": "PASS before final owner approval recording",
+    "githubValidate": "PASS before final owner approval recording",
+    "combinedProtectedStagingSmoke": "PASS for articles #1 #2 #3 before approval recording",
+    "stagingAuth": "protected; credentials redacted",
+    "noindex": "confirmed"
+  },
+  "notApprovedByThisRecord": [
+    "PR merge",
+    "production deploy",
+    "DNS/cutover",
+    "public route replacement/canonical launch",
+    "production secrets/config",
+    "analytics provider scripts/IDs",
+    "live lead routing",
+    "dynamic production /api/leads runtime",
+    "mass generation of remaining articles"
+  ],
+  "safety": {
+    "productionDeployChanged": false,
+    "dnsChanged": false,
+    "secretsChanged": false,
+    "analyticsChanged": false,
+    "liveLeadRoutingChanged": false
+  }
+}

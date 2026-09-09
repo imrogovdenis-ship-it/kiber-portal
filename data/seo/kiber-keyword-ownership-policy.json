@@ -1,0 +1,65 @@
+{
+  "version": "2026-09-08",
+  "status": "owner_clarified_policy",
+  "ownerClarification": "High-frequency broad robot rental keys go to the homepage; middle-frequency generic class/scenario keys go to compilations; exact model+commercial keys go to robot cards; articles own complex long-tail questions/comparisons/scenarios. Generic compilation terms may support articles only as contextual/secondary bridges, not primary keywords.",
+  "pageTypeOwnership": {
+    "home": {
+      "owns": [
+        "аренда роботов",
+        "прокат роботов",
+        "роботы в аренду"
+      ],
+      "intent": "high_frequency_broad_commercial",
+      "notes": "Главная прокачивает самые широкие ВЧ бизнес-запросы по аренде/прокату роботов."
+    },
+    "compilation": {
+      "owns": [
+        "аренда робота гуманоида",
+        "аренда роботов гуманоидов",
+        "аренда робота собаки",
+        "аренда робота для выставки",
+        "аренда робота для мероприятия",
+        "аренда роботов на мероприятие"
+      ],
+      "intent": "middle_frequency_generic_class_or_scenario_selection",
+      "notes": "Если человек не вводит конкретную модель, он ещё выбирает класс/сценарий — вести на подборку с несколькими роботами."
+    },
+    "robot_card": {
+      "owns": [
+        "аренда Unitree G1",
+        "Unitree G1 аренда",
+        "аренда робота гуманоида Unitree G1",
+        "аренда Agibot X2",
+        "Agibot X2 аренда"
+      ],
+      "intent": "low_frequency_exact_model_commercial",
+      "notes": "Карточка прокачивает бренд/модель и коммерческое действие вокруг конкретного робота."
+    },
+    "article_detail": {
+      "owns": [
+        "Unitree G1 или Agibot X2",
+        "какого робота-гуманоида выбрать для мероприятия",
+        "чем Unitree G1 отличается от Agibot X2",
+        "какой робот подойдёт для welcome-зоны на свадьбу",
+        "как выбрать робота-гуманоида для выставочного стенда"
+      ],
+      "intent": "complex_low_frequency_question_comparison_or_scenario",
+      "notes": "Статья отвечает на сложный НЧ вопрос, сравнение или прикладной сценарий; generic подборочные ключи допустимы только как supporting/context/internal link bridge."
+    },
+    "news": {
+      "owns": [
+        "информационные новости и события"
+      ],
+      "intent": "informational_news",
+      "notes": "Новости не должны конкурировать с коммерческими посадочными страницами."
+    }
+  },
+  "articleSeoChecklist": [
+    "Primary keyword is a complex long-tail article intent, not a generic compilation key.",
+    "Meta title/H1 include the comparison/question/scenario angle.",
+    "Meta description can mention rental context, but must not position a compilation key as the main target.",
+    "Secondary keywords separate exact model entities from contextual compilation bridges.",
+    "Internal links route generic class/scenario demand to the relevant compilation page and exact model demand to robot cards.",
+    "SEO passport records keywordOwnership before writing visible copy."
+  ]
+}

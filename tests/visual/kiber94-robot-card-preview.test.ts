@@ -183,7 +183,7 @@ test('KIBER-94 desktop gallery behavior uses a CSP-safe external script based on
 
   assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
   assert.doesNotMatch(componentSource, /document\.querySelectorAll<HTMLElement>\('\[data-drag-slider\^="robot-"\]'\)/);
-  assert.match(scriptSource, /document\.querySelectorAll\('\[data-drag-slider\^="robot-"\]'\)/);
+  assert.match(scriptSource, /document\.querySelectorAll\('\[data-drag-slider\]'\)\.forEach\(setupSlider\)/);
   assert.match(scriptSource, /slider\.addEventListener\('mousedown'/);
   assert.match(scriptSource, /window\.addEventListener\('mousemove'/);
   assert.match(scriptSource, /window\.addEventListener\('mouseup'/);

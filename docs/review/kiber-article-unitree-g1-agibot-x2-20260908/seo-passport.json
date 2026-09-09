@@ -1,0 +1,166 @@
+{
+  "slug": "unitree-g1-ili-agibot-x2-kakogo-robota-vybrat",
+  "route": "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+  "publicRouteProposal": "/articles/unitree-g1-ili-agibot-x2-kakogo-robota-vybrat/",
+  "title": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать для мероприятия",
+  "status": "draft_for_owner_review_not_public_approved",
+  "wordstatStatus": "checked_live",
+  "wordstatEvidence": "data/seo/wordstat-research/article-unitree-g1-agibot-x2-20260908/summary.wordstat.json",
+  "serpStatus": "checked_live_yandex",
+  "serpEvidence": "docs/review/kiber-article-unitree-g1-agibot-x2-20260908/serp/summary.serp.json",
+  "seoIntent": {
+    "primary": "decision_support_commercial_article",
+    "searcherProblem": "Организатор выбирает между двумя роботами-гуманоидами для мероприятия и хочет понять, кого брать под сцену, стенд, встречу гостей или фотозону.",
+    "primaryKeyword": "Unitree G1 или Agibot X2",
+    "commercialPrimaryKeyword": null,
+    "secondaryKeywords": [
+      "Unitree G1",
+      "Agibot X2",
+      "робот Unitree G1",
+      "робот Agibot X2",
+      "чем Unitree G1 отличается от Agibot X2",
+      "какой робот-гуманоид выбрать для мероприятия",
+      "робот-гуманоид для welcome-зоны",
+      "робот-гуманоид для стенда"
+    ],
+    "keywordOwnership": "Статья забирает сложный НЧ intent выбора/сравнения Unitree G1 vs Agibot X2 для мероприятия. Generic class/scenario keys вроде «аренда робота гуманоида», «аренда роботов на мероприятие», «робот на выставку» принадлежат будущим подборкам и в статье используются только как contextual/secondary bridge, не как primary.",
+    "articlePrimaryLongTail": "какого робота-гуманоида выбрать для мероприятия",
+    "compilationBridgeKeywords": [
+      "аренда робота гуманоида",
+      "роботы гуманоиды аренда",
+      "аренда роботов на мероприятие",
+      "робот для мероприятия",
+      "робот на выставку"
+    ],
+    "longTailKeywords": [
+      "Unitree G1 или Agibot X2 для мероприятия",
+      "какого робота-гуманоида выбрать для мероприятия",
+      "чем Unitree G1 отличается от Agibot X2",
+      "робот-гуманоид для welcome-зоны",
+      "какой гуманоид подойдёт для выставочного стенда",
+      "кого выбрать для встречи гостей Unitree G1 или Agibot X2"
+    ]
+  },
+  "wordstatFindings": [
+    {
+      "query": "Unitree G1",
+      "total": 2743
+    },
+    {
+      "query": "робот Unitree G1",
+      "total": 1087
+    },
+    {
+      "query": "Agibot X2",
+      "total": 129
+    },
+    {
+      "query": "робот Agibot X2",
+      "total": 8
+    },
+    {
+      "query": "аренда робота гуманоида",
+      "total": 80
+    },
+    {
+      "query": "аренда роботов на мероприятие",
+      "total": 69
+    },
+    {
+      "query": "робот для мероприятия",
+      "total": 55
+    },
+    {
+      "query": "Unitree G1 аренда",
+      "total": 14
+    },
+    {
+      "query": "аренда Agibot X2",
+      "total": 0
+    }
+  ],
+  "contentGaps": [
+    "Не писать абстрактное “какой круче”: нужен выбор по сценариям мероприятия.",
+    "Развести модельную узнаваемость Unitree G1 и “персонажность”/экранную мимику Agibot X2 без недоказанных обещаний.",
+    "Сразу проговорить ограничения: оператор, ровная площадка, сценарная работа, не автономный “живой интеллект”.",
+    "Дать краткую таблицу выбора: встреча гостей, сцена, стенд, фотозона, дети/семейное мероприятие, деловой формат.",
+    "Вынести commercial CTA к менеджеру: дата и площадка важнее теоретического выбора.",
+    "Избежать повторяющихся generic-блоков из PR #80: каждый блок должен решать отдельный вопрос выбора."
+  ],
+  "mediaMap": {
+    "hero": {
+      "src": "/images/articles/unitree-g1-agibot-x2-hero.webp",
+      "actualDescription": "Два белых робота-гуманоида на сером студийном фоне: один машет рукой, второй держит руки над головой; сверху видны студийные световые приборы.",
+      "seoAlt": "Unitree G1 и Agibot X2 рядом в студии: сравнение роботов-гуманоидов для мероприятия",
+      "reviewStatus": "owner_provided_for_hero"
+    },
+    "comparisonImages": "Внутри статьи использовать catalog/robot-card images из репозитория для Unitree G1 и Agibot X2; не подставлять внешние или generic-заглушки.",
+    "mediaMoment": {
+      "src": "/images/articles/unitree-g1-agibot-x2-hero.webp",
+      "actualDescription": "Два белых робота-гуманоида на сером студийном фоне: один машет рукой, второй держит руки над головой; сверху видны студийные световые приборы.",
+      "seoAlt": "Unitree G1 и Agibot X2 в студии перед сравнением роботов-гуманоидов для мероприятия",
+      "readerCaption": "Слева и справа — два разных сценарных образа: деловой гуманоид для вау-эффекта и робот-персонаж для контакта с гостями.",
+      "reviewStatus": "owner_feedback_rewritten_for_reader"
+    },
+    "gallery": [
+      {
+        "robot": "Unitree G1",
+        "src": "/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-nizhfarm-handshake.webp",
+        "actualDescription": "Unitree G1 стоит на выставочном стенде НИЖФАРМ и пожимает руку посетителю.",
+        "seoAlt": "Unitree G1 пожимает руку посетителю на выставочном стенде НИЖФАРМ"
+      },
+      {
+        "robot": "Agibot X2",
+        "src": "/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-exhibition-visitors.webp",
+        "actualDescription": "Agibot X2 на выставке общается с посетителями.",
+        "seoAlt": "Agibot X2 общается с посетителями выставки рядом со стендом"
+      },
+      {
+        "robot": "Unitree G1",
+        "src": "/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-promo-store.webp",
+        "actualDescription": "Unitree G1 сидит в магазине одежды и держит в руках кроссовок.",
+        "seoAlt": "Unitree G1 в промо-зоне магазина одежды"
+      },
+      {
+        "robot": "Agibot X2",
+        "src": "/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-human-photo.webp",
+        "actualDescription": "Agibot X2 рядом с человеком поднимает руку для совместного кадра.",
+        "seoAlt": "Agibot X2 рядом с человеком для фотомомента"
+      },
+      {
+        "robot": "Unitree G1",
+        "src": "/images/articles/unitree-g1-agibot-x2-gallery/unitree-g1-running.webp",
+        "actualDescription": "Unitree G1 бежит вперёд на нейтральном студийном фоне.",
+        "seoAlt": "Unitree G1 демонстрирует динамичное движение"
+      },
+      {
+        "robot": "Agibot X2",
+        "src": "/images/articles/unitree-g1-agibot-x2-gallery/agibot-x2-dancing.webp",
+        "actualDescription": "Agibot X2 танцует на сером фоне.",
+        "seoAlt": "Agibot X2 танцует во время демонстрации"
+      }
+    ]
+  },
+  "policyEvidence": "data/seo/kiber-keyword-ownership-policy.json",
+  "metaTitle": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
+  "metaDescription": "Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.",
+  "articleSeoChecklistApplied": [
+    "Primary keyword is a complex long-tail article intent, not a generic compilation key.",
+    "Meta title/H1 include the comparison/question/scenario angle.",
+    "Meta description can mention rental context, but must not position a compilation key as the main target.",
+    "Secondary keywords separate exact model entities from contextual compilation bridges.",
+    "Internal links route generic class/scenario demand to the relevant compilation page and exact model demand to robot cards.",
+    "SEO passport records keywordOwnership before writing visible copy."
+  ],
+  "ownerFeedbackApplied": [
+    "Reduced article block vertical padding for this preview.",
+    "Split Gosha quote into bold first paragraph and regular second paragraph.",
+    "Rewrote mediaMoment title/description/caption for readers.",
+    "Added curated alternating gallery from Unitree G1 and Agibot X2 robot-page galleries.",
+    "Rewrote gallery title/description for readers.",
+    "Expanded formats block to six formats in popularity order, including Выставка and Промо-акция.",
+    "Removed pairedEnumeration from this article rendering.",
+    "Product cards show both Unitree G1 and Agibot X2.",
+    "Catalog shows other humanoids only: Unitree R1, Unitree H2, Promobot V4, София."
+  ]
+}

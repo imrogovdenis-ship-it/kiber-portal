@@ -10,16 +10,20 @@ import type { ArticleBlocksTemplateData } from '../../lib/kiber94-article-templa
 const { template } = Astro.props as { template: ArticleBlocksTemplateData };
 const content = template.articleContent;
 const reviewRobotCards = template.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
+const isInventoryMode = content?.showInventory ?? true;
 const [g1] = reviewRobotCards;
-const featuredRobot = content?.product?.featuredSlug ? reviewRobotCards.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
+const productSlugs = content?.product?.featuredSlugs ?? (content?.product?.featuredSlug ? [content.product.featuredSlug] : undefined);
+const productRobots = productSlugs ? reviewRobotCards.filter((robot) => productSlugs.includes(robot.slug)) : (g1 ? [g1] : []);
+const catalogRobots = content?.catalog?.slugs ? reviewRobotCards.filter((robot) => content.catalog?.slugs?.includes(robot.slug)) : reviewRobotCards.slice(0, 4);
 const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
-const articleGalleryImages = reviewRobotCards
+const goshaPosition = content?.goshaPosition ?? 'afterPlainText';
+const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   .filter((robot) => robot.image)
   .map((robot) => ({ src: robot.image!.src, alt: `${robot.title}: фото для галереи шаблона статьи`, title: robot.title.replace(/^Аренда\s+/i, '') }));
 ---
 
 <article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
-  <section id="hero" class="article-blocks__hero" data-block-id="hero" aria-labelledby="page-title">
+  <section id="hero" class:list={["article-blocks__hero", template.hero.imageAlign === 'right' && "article-blocks__hero--image-right"]} data-block-id="hero" aria-labelledby="page-title">
     <div class="container article-blocks__hero-inner">
       <div class="article-blocks__hero-copy">
         <p class="article-blocks__eyebrow">{template.hero.eyebrow}</p>
@@ -30,7 +34,7 @@ const articleGalleryImages = reviewRobotCards
     </div>
   </section>
 
-  {(content?.showInventory ?? true) && (
+  {isInventoryMode && (
   <section class="article-blocks__toc container" data-block-id="blockInventory" aria-labelledby="inventory-title">
     <div class="article-blocks__section-head">
       <p class="article-blocks__eyebrow">Инвентарь блоков</p>
@@ -68,9 +72,11 @@ const articleGalleryImages = reviewRobotCards
     </div>
   </section>
 
-  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuote" aria-label="Кибер Гоша объясняет структуру статьи">
+  {goshaPosition === 'afterPlainText' && (
+  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuote" aria-label="Цитата Кибер Гоши">
     <HomeGoshaQuote {...template.gosha} />
   </section>
+  )}
 
   <section id="mediaMoment" class="article-blocks__media container" data-block-id="mediaMoment" aria-labelledby="media-title">
     <div class="article-blocks__section-head">
@@ -86,6 +92,7 @@ const articleGalleryImages = reviewRobotCards
     </figure>
   </section>
 
+  {(isInventoryMode || content?.gallery) && (
   <section id="robotCardGallery" class="humanoid-template__gallery article-blocks__gallery" data-block-id="robotCardGallery" aria-labelledby="article-gallery-title">
     <div class="container humanoid-template__gallery-head article-blocks__gallery-head">
       <div class="humanoid-template__section-head article-blocks__section-head">
@@ -98,7 +105,7 @@ const articleGalleryImages = reviewRobotCards
         <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next={`[data-drag-slider='${gallerySliderId}']`} aria-label="Следующие фото галереи">›</button>
       </div>
     </div>
-    <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея шаблона статьи: горизонтальный слайдер как на подборке гуманоидов">
+    <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея сравнения Unitree G1 и Agibot X2">
       {articleGalleryImages.map((image, index) => (
         <figure class="humanoid-template__gallery-item">
           <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
@@ -106,6 +113,7 @@ const articleGalleryImages = reviewRobotCards
       ))}
     </div>
   </section>
+  )}
 
   <section id="comparisonBlock" class="article-blocks__comparison container" data-block-id="comparisonBlock" aria-labelledby="comparison-title">
     <div class="article-blocks__section-head">
@@ -160,6 +168,12 @@ const articleGalleryImages = reviewRobotCards
     </div>
   </section>
 
+  {goshaPosition === 'afterNumberedUseCases' && (
+  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuote" aria-label="Цитата Кибер Гоши">
+    <HomeGoshaQuote {...template.gosha} />
+  </section>
+  )}
+
   <section id="checkpointList" class="article-blocks__checklist container" data-block-id="checkpointList" aria-labelledby="checklist-title">
     <div class="article-blocks__section-head article-blocks__section-head--wide">
       <p class="article-blocks__eyebrow">{content?.checklist?.eyebrow ?? 'Чек-лист'}</p>
@@ -176,6 +190,7 @@ const articleGalleryImages = reviewRobotCards
     </div>
   </section>
 
+  {(isInventoryMode || content?.pairedEnumeration) && (
   <section id="pairedEnumeration" class="article-blocks__paired-list container" data-block-id="pairedEnumeration" aria-labelledby="format-alternatives-title">
     <div class="article-blocks__section-head">
       <p class="article-blocks__eyebrow">{content?.pairedEnumeration?.eyebrow ?? 'Перечисление'}</p>
@@ -191,27 +206,32 @@ const articleGalleryImages = reviewRobotCards
       ]).map((item) => <article><h3>{item.title}</h3><p>{item.text}</p></article>)}
     </div>
   </section>
+  )}
 
+  {(isInventoryMode || content?.product) && (
   <section id="productCard" class="article-blocks__product container" data-block-id="productCard" aria-labelledby="product-title">
     <div class="article-blocks__section-head">
       <p class="article-blocks__eyebrow">{content?.product?.eyebrow ?? 'Одна рекомендованная модель'}</p>
       <h2 id="product-title">{content?.product?.title ?? 'Когда статья рекомендует конкретного робота'}</h2>
     </div>
-    {featuredRobot && (
-      <article class="article-blocks__featured-model" aria-labelledby="featured-model-title">
-        <a class="article-blocks__featured-media" href={featuredRobot.href} aria-label={`Перейти на страницу ${featuredRobot.title}`}>
-          {featuredRobot.image && <img src={featuredRobot.image.src} alt={featuredRobot.image.alt} loading="lazy" decoding="async" />}
-        </a>
-        <div class="article-blocks__featured-copy">
-          <h3 id="featured-model-title">{featuredRobot.title.replace(/^Аренда\s+/i, '')}</h3>
-          <p class="article-blocks__featured-category">{featuredRobot.category}</p>
-          <p class="article-blocks__featured-price">{featuredRobot.price}</p>
-          <p class="article-blocks__featured-description">{featuredRobot.description}</p>
-          <a class="article-blocks__featured-button" href={featuredRobot.href}>Перейти на страницу</a>
-        </div>
-      </article>
-    )}
+    <div class="article-blocks__featured-grid">
+      {productRobots.map((robot) => (
+        <article class="article-blocks__featured-model" aria-labelledby={`featured-model-title-${robot.slug}`}>
+          <a class="article-blocks__featured-media" href={robot.href} aria-label={`Перейти на страницу ${robot.title}`}>
+            {robot.image && <img src={robot.image.src} alt={robot.image.alt} loading="lazy" decoding="async" />}
+          </a>
+          <div class="article-blocks__featured-copy">
+            <h3 id={`featured-model-title-${robot.slug}`}>{robot.title.replace(/^Аренда\s+/i, '')}</h3>
+            <p class="article-blocks__featured-category">{robot.category}</p>
+            <p class="article-blocks__featured-price">{robot.price}</p>
+            <p class="article-blocks__featured-description">{robot.description}</p>
+            <a class="article-blocks__featured-button" href={robot.href}>Перейти на страницу</a>
+          </div>
+        </article>
+      ))}
+    </div>
   </section>
+  )}
 
   <section id="faq" class="article-blocks__faq container" data-block-id="faq" aria-label="FAQ статьи">
     <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
@@ -228,7 +248,7 @@ const articleGalleryImages = reviewRobotCards
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {reviewRobotCards.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {catalogRobots.map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} hideBadge={content?.catalog?.hideBadges === true} imageLoading="eager" />)}
     </div>
   </section>
 
@@ -246,18 +266,19 @@ const articleGalleryImages = reviewRobotCards
 <style>
   .article-blocks { display: grid; gap: 0; overflow-x: clip; background: var(--kp-reference-sky); color: var(--kp-reference-ink); }
   .article-blocks section { scroll-margin-top: 6rem; }
-  .article-blocks__hero { padding: clamp(4.75rem, 7vw, 7rem) 0 clamp(3.25rem, 5vw, 5rem); background: var(--kp-ink-dark); color: var(--kp-reference-white); }
+  .article-blocks__hero { padding: clamp(3.6rem, 6vw, 5.75rem) 0 clamp(2.25rem, 4vw, 3.8rem); background: var(--kp-ink-dark); color: var(--kp-reference-white); }
   .article-blocks__hero-inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(20rem, .72fr); column-gap: clamp(2rem, 5vw, 5rem); row-gap: clamp(1.4rem, 3vw, 2.4rem); align-items: start; }
   .article-blocks__hero-copy { display: grid; gap: 1rem; }
   .article-blocks h1, .article-blocks h2, .article-blocks h3, .article-blocks p, .article-blocks span, .article-blocks figure { margin: 0; }
   .article-blocks h1, .article-blocks h2, .article-blocks h3, .article-blocks strong { font-family: var(--kp-font-heading); font-weight: 700; letter-spacing: -.03em; }
-  .article-blocks h1 { max-width: 14ch; font-size: clamp(2.5rem, 5vw, 5.25rem); line-height: 1; }
+  .article-blocks h1 { max-width: 15ch; font-size: clamp(2.25rem, 4.4vw, 4.65rem); line-height: 1; }
   .article-blocks h2 { max-width: 58rem; color: var(--kp-ink); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); letter-spacing: 0; }
   .article-blocks h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.08; }
   .article-blocks__eyebrow { color: var(--kp-reference-blue); font-size: var(--kp-reference-label-size); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
   .article-blocks__lead { grid-column: 1 / -1; max-width: none; color: color-mix(in srgb, white 82%, transparent); font-size: clamp(1.05rem, 1.45vw, 1.3rem); line-height: 1.5; }
   .article-blocks__hero-image { align-self: start; width: 100%; min-height: 25rem; max-height: 34rem; margin-top: 2.25rem; object-fit: cover; border-radius: 1.75rem; }
-  .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__cta { padding-block: clamp(3.25rem, 5.5vw, 5rem); }
+  .article-blocks__hero--image-right .article-blocks__hero-image { object-position: right center; }
+  .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__cta { padding-block: clamp(2.1rem, 3.8vw, 3.4rem); }
   .article-blocks__notice { display: grid; gap: .5rem; margin-top: 2rem; border-radius: 1.35rem; background: var(--kp-reference-white); }
   .article-blocks__notice strong { color: var(--kp-reference-blue); font-size: 1.35rem; }
   .article-blocks__section-head { display: grid; gap: .75rem; max-width: 60rem; }
@@ -334,6 +355,7 @@ const articleGalleryImages = reviewRobotCards
   .article-blocks__catalog { display: grid; gap: 1.5rem; }
   .article-blocks__robot-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .article-blocks__product { display: grid; gap: 1.5rem; }
+  .article-blocks__featured-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1.25rem, 2.4vw, 2rem); }
   .article-blocks__featured-model { display: grid; grid-template-columns: minmax(18rem, .42fr) minmax(0, .58fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: start; }
   .article-blocks__featured-media { position: relative; display: block; min-height: clamp(24rem, 34vw, 32rem); overflow: hidden; border-radius: 1.1rem; background: transparent; text-decoration: none; }
   .article-blocks__featured-media img { display: block; width: 100%; height: 100%; min-height: clamp(24rem, 34vw, 32rem); object-fit: cover; object-position: center; }
@@ -361,7 +383,8 @@ const articleGalleryImages = reviewRobotCards
   .article-blocks__compilations :global(.home-image-cards__card) { min-width: min(25rem, 82vw); }
   @media (min-width: 60rem) { .vertical-slice__card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
   @media (min-width: 40rem) and (max-width: 59.9375rem) { .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 74.9375rem) { .humanoid-template__gallery-head { display: grid; } .humanoid-template__gallery-nav { display: none; } .article-blocks__toc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .article-blocks__robot-grid, .article-blocks__obvious-grid, .article-blocks__numbered-grid, .article-blocks__checks { grid-template-columns: repeat(2, minmax(0, 1fr)); } .article-blocks__hero-inner, .article-blocks__featured-model { grid-template-columns: 1fr; } }
+  @media (max-width: 74.9375rem) { .humanoid-template__gallery-head { display: grid; } .humanoid-template__gallery-nav { display: none; } .article-blocks__toc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .article-blocks__robot-grid, .article-blocks__obvious-grid, .article-blocks__numbered-grid, .article-blocks__checks { grid-template-columns: repeat(2, minmax(0, 1fr)); } .article-blocks__hero-inner { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: clamp(1rem, 2vw, 1.5rem); }
+  .article-blocks__featured-model { grid-template-columns: 1fr; } }
   @media (max-width: 56rem) { .article-blocks__hero-image { margin-top: 0; } .article-blocks__toc-grid, .article-blocks__prose-copy, .article-blocks__comparison-columns, .article-blocks__obvious-grid, .article-blocks__numbered-grid, .article-blocks__paired-rows article, .article-blocks__benefit-grid, .article-blocks__robot-grid, .article-blocks__checks { grid-template-columns: 1fr; } }
   @media (max-width: 39.9375rem) { .humanoid-template__gallery-head .humanoid-template__section-head { margin-left: 0; } .article-blocks__featured-media, .article-blocks__featured-media img { min-height: 20rem; } .article-blocks__featured-copy h3 { font-size: clamp(2.55rem, 13vw, 3.6rem); } .article-blocks__hero { padding-block: 3.5rem 2.75rem; } .article-blocks__hero-image { min-height: 16rem; } .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__catalog, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__compilations, .article-blocks__cta { padding-block: 2.75rem; } .article-blocks__faq { padding-bottom: 1.375rem; } .article-blocks__cta { padding-top: 1.375rem; } .article-blocks__compilations { padding-top: 4rem; padding-bottom: 5rem; } #catalogBlock.container { width: auto; max-width: none; margin-inline: 0; padding-inline: var(--kp-reference-page-gutter); overflow-x: clip; } #catalogBlock .vertical-slice__section-copy, #catalogBlock .vertical-slice__card-grid { width: 100%; max-width: 100%; min-width: 0; margin-left: 0; margin-right: 0; } #catalogBlock .robot-card { min-width: 0; } .vertical-slice__card-grid, .article-blocks__related :global(.home-image-cards__grid) { grid-template-columns: 1fr; } .article-blocks__related :global(.home-image-cards__card) { min-height: 16rem; } .article-blocks__related :global(.home-image-cards__image) { min-height: 10rem; } .article-blocks__related :global(.home-image-cards__head), .article-blocks__compilations :global(.home-image-cards__head), .article-blocks__faq :global(.home-faq__head), .article-blocks__faq :global(.home-faq__list) { margin-left: 0; margin-right: 0; } }
 </style>
