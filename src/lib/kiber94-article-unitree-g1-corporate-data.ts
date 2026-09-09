@@ -54,6 +54,7 @@ export function buildUnitreeG1CorporateArticle(robots: ArticleRobotCard[]): Arti
     },
     articleContent: {
       showInventory: false,
+      goshaPosition: 'afterNumberedUseCases',
       seoIntro: {
         eyebrow: 'Короткий ответ',
         title: 'Unitree G1 лучше раскрывается не в одном номере, а в маршруте по событию',
@@ -123,6 +124,7 @@ export function buildUnitreeG1CorporateArticle(robots: ArticleRobotCard[]): Arti
         title: 'Другие роботы для корпоративов и мероприятий',
         description: 'Если нужен не именно Unitree G1, посмотрите соседние форматы: другой гуманоид, робот-собака, промо-робот или фотозона.',
         slugs: ['arenda-unitree-r1', 'arenda-agibot-x2', 'arenda-promobot-v4', 'arenda-unitree-go2'],
+        hideBadges: true,
       },
       relatedArticles: {
         eyebrow: 'Блог Кибер Гоши',

@@ -49,3 +49,18 @@ test('Unitree G1 corporate article keeps research notes out of visible data', ()
   assert.match(data, /План Б для пауз/);
   assert.equal((data.match(/title: '/g) ?? []).filter(Boolean).length > 0, true);
 });
+
+
+import { readFileSync as readFileSyncLatestOwnerFeedback } from 'node:fs';
+
+test('article #3 latest owner placement and catalog feedback is encoded', () => {
+  const data = readFileSyncLatestOwnerFeedback('src/lib/kiber94-article-unitree-g1-corporate-data.ts', 'utf8');
+  const template = readFileSyncLatestOwnerFeedback('src/components/templates/ArticleBlocksTemplate.astro', 'utf8');
+  const card = readFileSyncLatestOwnerFeedback('src/components/blocks/RobotCard.astro', 'utf8');
+  assert.match(data, /goshaPosition: 'afterNumberedUseCases'/);
+  assert.match(data, /hideBadges: true/);
+  assert.match(template, /goshaPosition === 'afterNumberedUseCases'/);
+  assert.match(template, /hideBadge=\{content\?\.catalog\?\.hideBadges === true\}/);
+  assert.match(card, /hideBadge\?: boolean/);
+  assert.match(card, /badge && !hideBadge/);
+});
