@@ -7,6 +7,25 @@ import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../../../l
 import { getRobotPageBySlug } from '../../../../../lib/robot-pages';
 
 const slugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-unitree-r1', 'arenda-unitree-h2'];
+const galleryImageBySlug: Record<string, { src: string; alt: string }> = {
+  'arenda-unitree-g1': {
+    src: '/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp',
+    alt: 'Робот-гуманоид Unitree G1 пожимает руку посетителю на выставочном стенде',
+  },
+  'arenda-agibot-x2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08.webp',
+    alt: 'Робот-гуманоид Agibot X2 стоит в полный рост и показывает жест руками',
+  },
+  'arenda-unitree-r1': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-6138-4933-b832-633633326535__05.webp',
+    alt: 'Робот-гуманоид Unitree R1 выполняет акробатическое движение на открытой площадке',
+  },
+  'arenda-unitree-h2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6263-3431-4436-b463-366666346362__noroot.webp',
+    alt: 'Робот-гуманоид Unitree H2 показан в полный рост на нейтральном фоне',
+  },
+};
+
 const robotCards: ArticleRobotCard[] = slugs
   .map((slug) => getRobotPageBySlug(slug))
   .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
@@ -20,6 +39,7 @@ const robotCards: ArticleRobotCard[] = slugs
     description: robot.seo.description,
     badge: undefined,
     image: robot.media.hero,
+    galleryImage: galleryImageBySlug[robot.slug] ?? robot.media.hero,
     analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
   }));
 

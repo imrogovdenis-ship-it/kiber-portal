@@ -37,5 +37,14 @@ test('how humanoid works article uses owner hero image and keeps media descripti
 test('how humanoid works article avoids public internal SEO/editorial language', () => {
   assert.doesNotMatch(data, /Wordstat|SERP|каннибал|интент|эта статья не повторяет|Чем статья отличается от карточек роботов/);
   assert.doesNotMatch(data, /как робот роботу/);
-  assert.match(data, /как робот человеку/);
+  assert.doesNotMatch(data, /— Скажу честно, как робот человеку:/);
+});
+
+
+test('how humanoid works article applies owner copy feedback', () => {
+  assert.doesNotMatch(data, /На Hero-кадре/);
+  assert.doesNotMatch(data, /— Скажу честно, как робот человеку: если объяснять совсем просто/);
+  assert.match(data, /На изображении Unitree G1 движется/);
+  assert.match(data, /extraGoshaQuoteAfterNumberedUseCases/);
+  assert.match(data, /не просите гуманоида «просто походить где-нибудь рядом»/);
 });
