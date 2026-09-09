@@ -1,0 +1,181 @@
+{
+  "count": 22,
+  "records": [
+    {
+      "query": "необычный подарок директору",
+      "url": "https://sso.passport.yandex.ru/push?retpath=https%3A%2F%2Fyandex.kz%2F%3Fmrdr%3Dru%26mrkz%3D6254b16cdf786777274e9611a30a6cd8%26nskz%3D1%26source%3Dtabbar&uuid=db5cca44-dffd-4d05-bcb5-be4735947da0",
+      "title": "поиск поиск",
+      "status": 200,
+      "sampleLen": 0,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://xpresent.ru/podarok-nachalniku",
+      "title": "Подарок начальнику в Москве | Xpresent",
+      "status": null,
+      "sampleLen": 0,
+      "error": "ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://elitesouvenir.ru/catalog/elitnye-podarki/podarok-rukovoditelyu/",
+      "title": "Дорогой подарок руководителю от коллектива купить в Москве",
+      "status": 200,
+      "sampleLen": 4000,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://www.ac-studio.ru/catalog/podarki-rukovoditelyu/",
+      "title": "Подарок руководителю - купить оригинальный подарок...",
+      "status": null,
+      "sampleLen": 0,
+      "error": "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='www.ac-studio.ru', port=443): Read timed out.\"))"
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://tri-putnika.ru/podarki-direktoru/",
+      "title": "Подарок директору купить в магазине Три Путника",
+      "status": null,
+      "sampleLen": 0,
+      "error": "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='tri-putnika.ru', port=443): Read timed out.\"))"
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://www.dolina-podarkov.ru/catalog/nachalyniku-38",
+      "title": "Заказать подарок начальнику в интернет-магазине в Москве с памятной гравировкой.",
+      "status": 200,
+      "sampleLen": 3496,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://www.rusvelikaia.ru/rukovoditelyu/",
+      "title": "38.180.37.42 09.09.2026 11:54:02",
+      "status": 200,
+      "sampleLen": 69,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://flowwow.com/moscow/gifts-for-boss/",
+      "title": "Подарок руководителю, купить в Москве - заказать...",
+      "status": 200,
+      "sampleLen": 0,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://vip-zakaz24.ru/collection/podarok-nachalnikudirektoru",
+      "title": "Дорогие подарки начальнику директору",
+      "status": 200,
+      "sampleLen": 4000,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://www.google.com/search?ie=UTF-8&q=%D0%BD%D0%B5%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D0%BA%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83",
+      "title": "Google Search",
+      "status": 200,
+      "sampleLen": 204,
+      "error": null
+    },
+    {
+      "query": "необычный подарок директору",
+      "url": "https://www.bing.com/search?q=%D0%BD%D0%B5%D0%BE%D0%B1%D1%8B%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D0%BA%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D1%83",
+      "title": "необычный подарок директору - Іздеу",
+      "status": 200,
+      "sampleLen": 1586,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://mospodarok.ru/catalog/elitnye-podarki/podarok-rukovoditelyu/",
+      "title": "mospodarok.ru",
+      "status": null,
+      "sampleLen": 0,
+      "error": "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='mospodarok.ru', port=443): Read timed out.\"))"
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://www.ozon.ru/category/podarok-nachalniku-muzhchine/?__rr=1",
+      "title": "ÐÐ¾Ñ Ð¾Ð¶Ðµ, Ð½ÐµÑ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ",
+      "status": 403,
+      "sampleLen": 349,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://sso.passport.yandex.ru/push?uuid=66a5f1e6-3ebe-4699-8d93-f4c4fc674cd0&retpath=https%3A%2F%2Fdzen.ru%2Fa%2FZNOtgsW9GQm4EUJI%3Fis_autologin_ya%3Dtrue",
+      "title": "dzen.ru",
+      "status": 200,
+      "sampleLen": 0,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://www.wildberries.ru/catalog/podarki/muzhchinam/tags/podarok-luczshemu-naczalbniku",
+      "title": "...",
+      "status": 498,
+      "sampleLen": 57,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://www.ozon.ru/category/podarki-nachalniku/?__rr=1",
+      "title": "ÐÐ¾Ñ Ð¾Ð¶Ðµ, Ð½ÐµÑ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ",
+      "status": 403,
+      "sampleLen": 345,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://www.wildberries.ru/catalog/tags/podarki-rukovoditelu-muzhczine",
+      "title": "...",
+      "status": 498,
+      "sampleLen": 57,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://vc.ru/toptekhnika/1887225-50-luchshih-idei-podarkov-dlya-nachalnicy-na-den-rozhdeniya",
+      "title": "50 лучших идей подарков для начальницы на день рождения — ТОП Техника на vc.ru",
+      "status": 200,
+      "sampleLen": 4000,
+      "error": null
+    },
+    {
+      "query": "подарок руководителю",
+      "url": "https://www.ozon.ru/category/podarok-nachalniku-zhenshchine/?__rr=1",
+      "title": "ÐÐ¾Ñ Ð¾Ð¶Ðµ, Ð½ÐµÑ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ",
+      "status": 403,
+      "sampleLen": 345,
+      "error": null
+    },
+    {
+      "query": "робот в подарок",
+      "url": "https://robotekashop.ru/tproduct/772992525162-aibi-pocket-podarochnii-nabor",
+      "title": "AIBI Pocket + подарочный набор",
+      "status": 200,
+      "sampleLen": 817,
+      "error": null
+    },
+    {
+      "query": "робот в подарок",
+      "url": "https://www.detmir.ru/catalog/index/name/roboty/",
+      "title": "ÐÐµÑÑÐºÐ¸Ð¹ Ð¼Ð¸Ñ - ÐÐ¾Ñ Ð¾Ð¶Ðµ, Ð²ÐºÐ»ÑÑÑÐ½ VPN",
+      "status": 418,
+      "sampleLen": 236,
+      "error": null
+    },
+    {
+      "query": "робот в подарок",
+      "url": "https://www.ozon.ru/category/roboty-igrushki-dlya-malchikov/?__rr=1",
+      "title": "ÐÐ¾Ñ Ð¾Ð¶Ðµ, Ð½ÐµÑ ÑÐ¾ÐµÐ´Ð¸Ð½ÐµÐ½Ð¸Ñ",
+      "status": 403,
+      "sampleLen": 345,
+      "error": null
+    }
+  ]
+}

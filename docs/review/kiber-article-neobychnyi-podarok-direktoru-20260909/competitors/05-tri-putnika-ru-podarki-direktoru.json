@@ -1,0 +1,7 @@
+{
+  "query": "необычный подарок директору",
+  "url": "https://tri-putnika.ru/podarki-direktoru/",
+  "serpTitle": "Подарок директору купить в магазине Три Путника",
+  "serpSnippet": "Подарок директору купить в магазине Три Путника",
+  "error": "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='tri-putnika.ru', port=443): Read timed out.\"))"
+}

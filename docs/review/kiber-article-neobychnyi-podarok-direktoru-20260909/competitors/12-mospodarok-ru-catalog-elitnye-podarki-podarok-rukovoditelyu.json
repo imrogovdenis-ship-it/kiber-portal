@@ -1,0 +1,7 @@
+{
+  "query": "подарок руководителю",
+  "url": "https://mospodarok.ru/catalog/elitnye-podarki/podarok-rukovoditelyu/",
+  "serpTitle": "mospodarok.ru",
+  "serpSnippet": "Выбор подарка руководителю — это баланс между уважением, учётом субординации и личных интересов человека. Я подобрала несколько идей, которые помогут сделать правильный выбор. elitesouvenir.ru mospodarok.ru",
+  "error": "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='mospodarok.ru', port=443): Read timed out.\"))"
+}
