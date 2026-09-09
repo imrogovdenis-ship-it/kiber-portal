@@ -1,0 +1,7 @@
+{
+  "query": "необычный подарок директору",
+  "url": "https://www.ac-studio.ru/catalog/podarki-rukovoditelyu/",
+  "serpTitle": "Подарок руководителю - купить оригинальный подарок...",
+  "serpSnippet": "Подарок руководителю - купить оригинальный подарок...",
+  "error": "ConnectionError(ReadTimeoutError(\"HTTPSConnectionPool(host='www.ac-studio.ru', port=443): Read timed out.\"))"
+}

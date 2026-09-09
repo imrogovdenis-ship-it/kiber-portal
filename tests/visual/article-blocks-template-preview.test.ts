@@ -95,7 +95,7 @@ test('KIBER-94 article template includes full live-derived block library', () =>
   assert.match(component, /@media \(min-width: 60rem\) \{ \.vertical-slice__card-grid \{ grid-template-columns: repeat\(4, minmax\(0, 1fr\)\); \} \}/);
   assert.match(component, /article-blocks__paired-rows h3 \{ font-size: clamp\(1\.05rem, 1\.35vw, 1\.22rem\); line-height: 1\.16; \}/);
   assert.match(component, /id="cta2" class="article-blocks__cta container"/);
-  assert.match(component, /id="hero" class="article-blocks__hero"/);
+  assert.match(component, /id="hero" class:list=\{\["article-blocks__hero"/);
   assert.match(component, /id="productCard" class="article-blocks__product container"/);
   assert.match(data, /id: 'cta2'[\s\S]*title: 'CTA 2'/);
   assert.match(data, /id: 'catalogBlock'[\s\S]*title: 'Каталог роботов'/);

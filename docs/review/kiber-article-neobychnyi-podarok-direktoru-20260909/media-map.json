@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "source": "docs/review/kiber-article-neobychnyi-podarok-direktoru-20260909/source/hero-upload.png",
+    "runtime": "/images/kiber-articles/neobychnyi-podarok-direktoru-robot-hero.webp",
+    "actualDescription": "На этом изображении мы видим кабинет директора крупной компании, в котором сам директор сидит на стуле, а рядом стоят подчиненные. Перед директором стоит робот Unitree G1, который кланяется директору и поздравляет его. Директор хлопает в ладоши, а подчиненные снимают всё на видеокамеры своих телефонов.",
+    "seoAlt": "робот-гуманоид Unitree G1 поздравляет директора в офисе как необычный подарок от коллектива",
+    "usage": [
+      "hero",
+      "mediaMoment"
+    ]
+  },
+  "catalogRobotMedia": [
+    "arenda-unitree-g1",
+    "arenda-robota-sofiya",
+    "arenda-unitree-r1",
+    "arenda-agibot-x2"
+  ]
+}

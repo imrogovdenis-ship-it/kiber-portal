@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import ArticleBlocksTemplate from '../../../../../components/templates/ArticleBlocksTemplate.astro';
+import { type ArticleRobotCard } from '../../../../../lib/kiber94-article-template-data';
+import { buildRobotGiftDirectorArticle } from '../../../../../lib/kiber94-article-robot-gift-director-data';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../../../lib/seo';
+import { getRobotPageBySlug } from '../../../../../lib/robot-pages';
+
+const slugs = ['arenda-unitree-g1', 'arenda-robota-sofiya', 'arenda-unitree-r1', 'arenda-agibot-x2'];
+const galleryImageBySlug: Record<string, { src: string; alt: string }> = {
+  'arenda-unitree-g1': {
+    src: '/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp',
+    alt: 'Робот-гуманоид Unitree G1 пожимает руку посетителю на деловом мероприятии',
+  },
+  'arenda-robota-sofiya': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3231-3464-4138-b632-653036383765__06.webp',
+    alt: 'Робот София смотрит на гостей и подходит для статусного поздравления',
+  },
+  'arenda-unitree-r1': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp',
+    alt: 'Робот-гуманоид Unitree R1 идёт по выставке перед группой посетителей',
+  },
+  'arenda-agibot-x2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3730-3866-4365-b461-336133633866__01.webp',
+    alt: 'Робот-гуманоид Agibot X2 стоит рядом с человеком на нейтральном фоне',
+  },
+};
+
+const robotCards: ArticleRobotCard[] = slugs
+  .map((slug) => getRobotPageBySlug(slug))
+  .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+  .map((robot, index) => ({
+    slug: robot.slug,
+    href: robot.route,
+    title: robot.identity.name,
+    category: robot.category === 'humanoid' ? 'Робот-гуманоид' : 'Робот для мероприятия',
+    price: robot.pricing.display,
+    price_disclaimer: 'Не является публичной офертой',
+    description: robot.seo.description,
+    badge: index === 0 ? 'Для кабинета' : undefined,
+    image: robot.media.hero,
+    galleryImage: galleryImageBySlug[robot.slug] ?? robot.media.hero,
+    analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
+  }));
+
+const template = buildRobotGiftDirectorArticle(robotCards);
+---
+
+<BaseLayout
+  title={`Preview: ${template.seo.title}`}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
+  noindex={true}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1">
+    <ArticleBlocksTemplate {template} />
+  </main>
+</BaseLayout>
