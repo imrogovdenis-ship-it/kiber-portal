@@ -115,6 +115,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   </section>
   )}
 
+  {(isInventoryMode || content?.comparison) && (
   <section id="comparisonBlock" class="article-blocks__comparison container" data-block-id="comparisonBlock" aria-labelledby="comparison-title">
     <div class="article-blocks__section-head">
       <p class="article-blocks__eyebrow">{content?.comparison?.eyebrow ?? 'Сравнение'}</p>
@@ -137,6 +138,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       </div>
     )}
   </section>
+  )}
 
   {(isInventoryMode || content?.obviousChoice) && (
   <section id="obviousChoice" class="article-blocks__obvious container" data-block-id="obviousChoice" aria-labelledby="obvious-choice-title">

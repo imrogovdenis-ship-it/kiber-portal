@@ -30,7 +30,7 @@ export type ArticleContent = {
   goshaPosition?: 'afterPlainText' | 'afterNumberedUseCases';
   seoIntro?: { eyebrow?: string; title: string; paragraphs: string[] };
   plainText?: { title: string; paragraphs: string[] };
-  mediaMoment?: { eyebrow?: string; title: string; description: string; image: { src: string; alt: string }; caption?: string };
+  mediaMoment?: { eyebrow?: string; title: string; description: string; image: { src: string; alt: string; actualDescription?: string }; caption?: string };
   gallery?: { eyebrow?: string; title: string; description: string; sliderId?: string; images?: { src: string; alt: string; title?: string }[] };
   comparison?: {
     eyebrow?: string;
