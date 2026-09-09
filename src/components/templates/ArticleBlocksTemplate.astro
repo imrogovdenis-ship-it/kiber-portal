@@ -16,6 +16,7 @@ const productSlugs = content?.product?.featuredSlugs ?? (content?.product?.featu
 const productRobots = productSlugs ? reviewRobotCards.filter((robot) => productSlugs.includes(robot.slug)) : (g1 ? [g1] : []);
 const catalogRobots = content?.catalog?.slugs ? reviewRobotCards.filter((robot) => content.catalog?.slugs?.includes(robot.slug)) : reviewRobotCards.slice(0, 4);
 const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
+const goshaPosition = content?.goshaPosition ?? 'afterPlainText';
 const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   .filter((robot) => robot.image)
   .map((robot) => ({ src: robot.image!.src, alt: `${robot.title}: фото для галереи шаблона статьи`, title: robot.title.replace(/^Аренда\s+/i, '') }));
@@ -71,9 +72,11 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
     </div>
   </section>
 
-  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuote" aria-label="Кибер Гоша объясняет структуру статьи">
+  {goshaPosition === 'afterPlainText' && (
+  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuote" aria-label="Цитата Кибер Гоши">
     <HomeGoshaQuote {...template.gosha} />
   </section>
+  )}
 
   <section id="mediaMoment" class="article-blocks__media container" data-block-id="mediaMoment" aria-labelledby="media-title">
     <div class="article-blocks__section-head">
@@ -165,6 +168,12 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
     </div>
   </section>
 
+  {goshaPosition === 'afterNumberedUseCases' && (
+  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuote" aria-label="Цитата Кибер Гоши">
+    <HomeGoshaQuote {...template.gosha} />
+  </section>
+  )}
+
   <section id="checkpointList" class="article-blocks__checklist container" data-block-id="checkpointList" aria-labelledby="checklist-title">
     <div class="article-blocks__section-head article-blocks__section-head--wide">
       <p class="article-blocks__eyebrow">{content?.checklist?.eyebrow ?? 'Чек-лист'}</p>
@@ -239,7 +248,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {catalogRobots.map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {catalogRobots.map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} hideBadge={content?.catalog?.hideBadges === true} imageLoading="eager" />)}
     </div>
   </section>
 

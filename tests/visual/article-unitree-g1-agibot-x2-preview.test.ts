@@ -49,12 +49,20 @@ test('article #1 is rewritten using customer-first article principles', () => {
   assert.doesNotMatch(data, /как робот роботу/);
   assert.match(data, /imageAlign: 'right'/);
   assert.match(data, /actualDescription: 'На изображении два робота-гуманоида Unitree G1 и Agibot X2/);
-  assert.match(data, /Кого брать в четырёх типичных ситуациях/);
-  assert.match(data, /Нужна заявка без долгого сравнения/);
+  assert.match(data, /Кого брать в трёх типичных ситуациях/);
+  assert.doesNotMatch(data, /Нужна заявка без долгого сравнения/);
   assert.match(data, /Главное действие/);
   assert.doesNotMatch(data, /Расставил по популярности/);
   assert.doesNotMatch(data, /Логистик/);
   assert.doesNotMatch(data, /логистик/);
   assert.doesNotMatch(data, /эта статья не повторяет подборку/);
   assert.match(component, /article-blocks__hero--image-right/);
+});
+
+
+test('article #1 latest block order feedback is encoded', () => {
+  assert.match(data, /goshaPosition: 'afterNumberedUseCases'/);
+  assert.match(data, /Кого брать в трёх типичных ситуациях/);
+  assert.doesNotMatch(data, /Нужна заявка без долгого сравнения/);
+  assert.match(component, /goshaPosition === 'afterNumberedUseCases'/);
 });
