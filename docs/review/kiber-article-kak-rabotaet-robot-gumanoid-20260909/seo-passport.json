@@ -1,0 +1,33 @@
+{
+  "pageType": "article_detail",
+  "slug": "kak-rabotaet-robot-gumanoid-prostymi-slovami",
+  "canonicalPath": "/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+  "previewPath": "/preview/kiber-94/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+  "metaTitle": "Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ",
+  "metaDescription": "Простое объяснение, как робот-гуманоид ходит, держит равновесие, видит людей и реагирует на команды — и что это значит для мероприятия.",
+  "h1": "Как работает робот-гуманоид простыми словами",
+  "primaryKeyword": "как работает робот-гуманоид",
+  "secondaryKeywords": [
+    "робот гуманоид",
+    "робот гуманоид что умеет",
+    "робот Unitree G1",
+    "аренда робота гуманоида",
+    "робот гуманоид для мероприятия"
+  ],
+  "longTailKeywords": [
+    "как работает робот гуманоид",
+    "робот гуманоид как устроен",
+    "как ходит робот гуманоид",
+    "устройство робота гуманоид",
+    "робот гуманоид Unitree G1"
+  ],
+  "keywordDecision": "Direct explanatory queries are low-volume (0–8 impressions), but broad humanoid/model demand is strong: “робот гуманоид” 9,346, “Unitree G1” 2,819, “робот Unitree G1” 1,101, “аренда Unitree G1” 15. Use the article as informational-commercial bridge: explain simple mechanics, then guide to humanoid selection/rental without cannibalizing compilation primary keys.",
+  "schemaTypes": [
+    "WebPage",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "wordstatStatus": "checked_live",
+  "serpStatus": "checked",
+  "ownerReviewRequired": true
+}

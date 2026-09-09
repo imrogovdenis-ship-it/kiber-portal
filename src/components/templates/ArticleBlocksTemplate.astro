@@ -14,8 +14,9 @@ const [g1] = reviewRobotCards;
 const featuredRobot = content?.product?.featuredSlug ? reviewRobotCards.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
 const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
 const articleGalleryImages = reviewRobotCards
-  .filter((robot) => robot.image)
-  .map((robot) => ({ src: robot.image!.src, alt: `${robot.title}: фото для галереи шаблона статьи`, title: robot.title.replace(/^Аренда\s+/i, '') }));
+  .map((robot) => robot.galleryImage ?? robot.image)
+  .filter((image): image is { src: string; alt: string } => Boolean(image))
+  .map((image) => ({ src: image.src, alt: image.alt }));
 ---
 
 <article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
@@ -160,6 +161,14 @@ const articleGalleryImages = reviewRobotCards
     </div>
   </section>
 
+
+
+  {content?.extraGoshaQuoteAfterNumberedUseCases && (
+  <section id="goshaQuoteAfterNumberedUseCases" class="article-blocks__gosha container" data-block-id="goshaQuoteAfterNumberedUseCases" aria-label="Кибер Гоша объясняет следующий шаг">
+    <HomeGoshaQuote {...template.gosha} text={content.extraGoshaQuoteAfterNumberedUseCases.text} />
+  </section>
+  )}
+
   <section id="checkpointList" class="article-blocks__checklist container" data-block-id="checkpointList" aria-labelledby="checklist-title">
     <div class="article-blocks__section-head article-blocks__section-head--wide">
       <p class="article-blocks__eyebrow">{content?.checklist?.eyebrow ?? 'Чек-лист'}</p>
@@ -293,8 +302,8 @@ const articleGalleryImages = reviewRobotCards
   .humanoid-template__drag-gallery::-webkit-scrollbar { display: none; }
   .humanoid-template__drag-gallery.is-dragging { cursor: grabbing; scroll-snap-type: none; }
   .humanoid-template__gallery-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
-  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: auto; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: var(--kp-reference-white); scroll-snap-align: start; -webkit-user-drag: none; }
-  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: min(52rem, 88vw); object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
+  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: fit-content; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: transparent; scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: none; border-radius: inherit; object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
   .article-blocks__comparison { display: grid; gap: clamp(3rem, 6vw, 5rem); }
   .article-blocks__comparison .article-blocks__section-head { max-width: 49rem; }
   .article-blocks__comparison-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.5rem, 7vw, 7rem); }

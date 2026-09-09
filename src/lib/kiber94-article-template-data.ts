@@ -21,6 +21,7 @@ export type ArticleRobotCard = {
   description: string;
   badge?: string;
   image?: { src: string; alt: string };
+  galleryImage?: { src: string; alt: string };
   analytics: { event: 'robot_card_click'; placement: 'article'; position: number };
 };
 
@@ -40,6 +41,7 @@ export type ArticleContent = {
   };
   obviousChoice?: { eyebrow?: string; title: string; cards: { number: string; title: string; text: string }[] };
   numberedUseCases?: { eyebrow?: string; title: string; description: string; items: { number: string; title: string; text: string }[] };
+  extraGoshaQuoteAfterNumberedUseCases?: { text: string };
   checklist?: { eyebrow?: string; title: string; description: string; items: { title: string; text: string }[] };
   pairedEnumeration?: { eyebrow?: string; title: string; description: string; items: { title: string; text: string }[] };
   product?: { eyebrow?: string; title: string; featuredSlug?: string };

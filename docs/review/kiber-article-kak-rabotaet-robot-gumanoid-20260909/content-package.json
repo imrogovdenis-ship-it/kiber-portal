@@ -1,0 +1,108 @@
+{
+  "contentPackageVersion": "2026-09-09.article4.v1",
+  "pageType": "article_detail",
+  "slug": "kak-rabotaet-robot-gumanoid-prostymi-slovami",
+  "sourceDocuments": [
+    "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-article-kak-rabotaet-robot-gumanoid-20260909/source/original-draft.docx",
+    "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-article-kak-rabotaet-robot-gumanoid-20260909/source/original-draft.md",
+    "/home/alex/projects/kiber-portal-pr8/docs/review/kiber-article-kak-rabotaet-robot-gumanoid-20260909/source/hero-upload.png"
+  ],
+  "research": {
+    "wordstatAnalysis": {
+      "status": "checked_live",
+      "artifact": "data/seo/wordstat-research/article-kak-rabotaet-robot-gumanoid-20260909/summary.wordstat.json",
+      "keyFindings": "Direct explanatory queries are low-volume (0–8 impressions), but broad humanoid/model demand is strong: “робот гуманоид” 9,346, “Unitree G1” 2,819, “робот Unitree G1” 1,101, “аренда Unitree G1” 15. Use the article as informational-commercial bridge: explain simple mechanics, then guide to humanoid selection/rental without cannibalizing compilation primary keys."
+    },
+    "serpAnalysis": {
+      "status": "checked",
+      "artifact": "docs/review/kiber-article-kak-rabotaet-robot-gumanoid-20260909/serp/summary.serp.json"
+    },
+    "contentGaps": [
+      "Many SERP pages explain humanoids as technology/news, not as what an event organizer needs to know before booking.",
+      "Commercial pages focus on rental/model features but rarely explain simple mechanics and safety/operator meaning.",
+      "KIBER article should translate sensors, balance, motors, AI and operator support into practical venue/scenario decisions."
+    ]
+  },
+  "seo": {
+    "pageType": "article_detail",
+    "slug": "kak-rabotaet-robot-gumanoid-prostymi-slovami",
+    "canonicalPath": "/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+    "previewPath": "/preview/kiber-94/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+    "metaTitle": "Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ",
+    "metaDescription": "Простое объяснение, как робот-гуманоид ходит, держит равновесие, видит людей и реагирует на команды — и что это значит для мероприятия.",
+    "h1": "Как работает робот-гуманоид простыми словами",
+    "primaryKeyword": "как работает робот-гуманоид",
+    "secondaryKeywords": [
+      "робот гуманоид",
+      "робот гуманоид что умеет",
+      "робот Unitree G1",
+      "аренда робота гуманоида",
+      "робот гуманоид для мероприятия"
+    ],
+    "longTailKeywords": [
+      "как работает робот гуманоид",
+      "робот гуманоид как устроен",
+      "как ходит робот гуманоид",
+      "устройство робота гуманоид",
+      "робот гуманоид Unitree G1"
+    ],
+    "keywordDecision": "Direct explanatory queries are low-volume (0–8 impressions), but broad humanoid/model demand is strong: “робот гуманоид” 9,346, “Unitree G1” 2,819, “робот Unitree G1” 1,101, “аренда Unitree G1” 15. Use the article as informational-commercial bridge: explain simple mechanics, then guide to humanoid selection/rental without cannibalizing compilation primary keys.",
+    "schemaTypes": [
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ],
+    "wordstatStatus": "checked_live",
+    "serpStatus": "checked",
+    "ownerReviewRequired": true
+  },
+  "aiVisibility": {
+    "aiSummary": "Робот-гуманоид работает как связка моторов, датчиков, компьютера управления и оператора: моторы двигают суставы, датчики помогают держать баланс и замечать людей, алгоритмы выбирают безопасное движение, а специалист КИБЕР ПОРТАЛ на площадке запускает сценарий и следит, чтобы робот стал понятным вау-моментом для гостей."
+  },
+  "blocks": [
+    "hero",
+    "seoIntro",
+    "plainText",
+    "goshaQuote",
+    "mediaMoment",
+    "robotCardGallery",
+    "numberedUseCases",
+    "checkpointList",
+    "productCard",
+    "faq",
+    "cta2",
+    "catalogBlock",
+    "relatedArticles",
+    "relatedCompilations"
+  ],
+  "media": {
+    "hero": {
+      "source": "docs/review/kiber-article-kak-rabotaet-robot-gumanoid-20260909/source/hero-upload.png",
+      "runtime": "/images/kiber-articles/kak-rabotaet-robot-gumanoid-hero.webp",
+      "actualDescription": "На этом изображении робот-гуманоид Unitree G1 движется по помещению выставки роботов. Мы видим робота в полный рост, спереди и немножко сбоку.",
+      "seoAlt": "робот-гуманоид Unitree G1 движется по помещению выставки роботов",
+      "usage": [
+        "hero",
+        "mediaMoment"
+      ],
+      "rightsStatus": "owner_provided_for_article_review"
+    },
+    "gallery": {
+      "source": "approved robot catalog media",
+      "items": [
+        "arenda-unitree-g1",
+        "arenda-agibot-x2",
+        "arenda-unitree-r1",
+        "arenda-unitree-h2"
+      ],
+      "actualDescriptionPolicy": "use approved robot-card media descriptions; keep public alt truthful and non-Gosha"
+    }
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "wordstatStatus": "checked",
+    "serpStatus": "checked",
+    "openQuestions": []
+  }
+}

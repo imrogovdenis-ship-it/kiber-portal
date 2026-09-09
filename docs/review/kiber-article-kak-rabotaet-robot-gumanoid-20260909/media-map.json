@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "source": "docs/review/kiber-article-kak-rabotaet-robot-gumanoid-20260909/source/hero-upload.png",
+    "runtime": "/images/kiber-articles/kak-rabotaet-robot-gumanoid-hero.webp",
+    "actualDescription": "На этом изображении робот-гуманоид Unitree G1 движется по помещению выставки роботов. Мы видим робота в полный рост, спереди и немножко сбоку.",
+    "seoAlt": "робот-гуманоид Unitree G1 движется по помещению выставки роботов",
+    "usage": [
+      "hero",
+      "mediaMoment"
+    ],
+    "rightsStatus": "owner_provided_for_article_review"
+  },
+  "gallery": {
+    "source": "approved robot catalog media",
+    "items": [
+      "arenda-unitree-g1",
+      "arenda-agibot-x2",
+      "arenda-unitree-r1",
+      "arenda-unitree-h2"
+    ],
+    "actualDescriptionPolicy": "use approved robot-card media descriptions; keep public alt truthful and non-Gosha"
+  }
+}

@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import ArticleBlocksTemplate from '../../../../../components/templates/ArticleBlocksTemplate.astro';
+import { type ArticleRobotCard } from '../../../../../lib/kiber94-article-template-data';
+import { buildHowHumanoidWorksArticle } from '../../../../../lib/kiber94-article-how-humanoid-works-data';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../../../lib/seo';
+import { getRobotPageBySlug } from '../../../../../lib/robot-pages';
+
+const slugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-unitree-r1', 'arenda-unitree-h2'];
+const galleryImageBySlug: Record<string, { src: string; alt: string }> = {
+  'arenda-unitree-g1': {
+    src: '/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp',
+    alt: 'Робот-гуманоид Unitree G1 пожимает руку посетителю на выставочном стенде',
+  },
+  'arenda-agibot-x2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6238-6339-4439-b061-313961333062__04.webp',
+    alt: 'Робот-гуманоид Agibot X2 стоит рядом с робособакой на выставочной демонстрации технологий',
+  },
+  'arenda-unitree-r1': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6664-6138-4933-b832-633633326535__05.webp',
+    alt: 'Робот-гуманоид Unitree R1 выполняет акробатическое движение на открытой площадке',
+  },
+  'arenda-unitree-h2': {
+    src: '/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6263-3431-4436-b463-366666346362__noroot.webp',
+    alt: 'Робот-гуманоид Unitree H2 показан в полный рост на нейтральном фоне',
+  },
+};
+
+const robotCards: ArticleRobotCard[] = slugs
+  .map((slug) => getRobotPageBySlug(slug))
+  .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+  .map((robot, index) => ({
+    slug: robot.slug,
+    href: robot.route,
+    title: robot.identity.name,
+    category: robot.category === 'humanoid' ? 'Робот-гуманоид' : 'Робот для мероприятия',
+    price: robot.pricing.display,
+    price_disclaimer: 'Не является публичной офертой',
+    description: robot.seo.description,
+    badge: undefined,
+    image: robot.media.hero,
+    galleryImage: galleryImageBySlug[robot.slug] ?? robot.media.hero,
+    analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
+  }));
+
+const template = buildHowHumanoidWorksArticle(robotCards);
+---
+
+<BaseLayout
+  title={`Preview: ${template.seo.title}`}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
+  noindex={true}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1">
+    <ArticleBlocksTemplate {template} />
+  </main>
+</BaseLayout>
