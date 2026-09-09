@@ -42,3 +42,19 @@ test('owner approval record for article #1 is scoped and keeps launch gates clos
   assert.equal(approval.safety.secretsChanged, false);
   assert.equal(approval.safety.liveLeadRoutingChanged, false);
 });
+
+
+test('article #1 is rewritten using customer-first article principles', () => {
+  assert.match(data, /Скажу честно, как робот человеку/);
+  assert.doesNotMatch(data, /как робот роботу/);
+  assert.match(data, /imageAlign: 'right'/);
+  assert.match(data, /actualDescription: 'На изображении два робота-гуманоида Unitree G1 и Agibot X2/);
+  assert.match(data, /Кого брать в четырёх типичных ситуациях/);
+  assert.match(data, /Нужна заявка без долгого сравнения/);
+  assert.match(data, /Главное действие/);
+  assert.doesNotMatch(data, /Расставил по популярности/);
+  assert.doesNotMatch(data, /Логистик/);
+  assert.doesNotMatch(data, /логистик/);
+  assert.doesNotMatch(data, /эта статья не повторяет подборку/);
+  assert.match(component, /article-blocks__hero--image-right/);
+});

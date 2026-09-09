@@ -22,7 +22,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
 ---
 
 <article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
-  <section id="hero" class="article-blocks__hero" data-block-id="hero" aria-labelledby="page-title">
+  <section id="hero" class:list={["article-blocks__hero", template.hero.imageAlign === 'right' && "article-blocks__hero--image-right"]} data-block-id="hero" aria-labelledby="page-title">
     <div class="container article-blocks__hero-inner">
       <div class="article-blocks__hero-copy">
         <p class="article-blocks__eyebrow">{template.hero.eyebrow}</p>
@@ -268,6 +268,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   .article-blocks__eyebrow { color: var(--kp-reference-blue); font-size: var(--kp-reference-label-size); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
   .article-blocks__lead { grid-column: 1 / -1; max-width: none; color: color-mix(in srgb, white 82%, transparent); font-size: clamp(1.05rem, 1.45vw, 1.3rem); line-height: 1.5; }
   .article-blocks__hero-image { align-self: start; width: 100%; min-height: 25rem; max-height: 34rem; margin-top: 2.25rem; object-fit: cover; border-radius: 1.75rem; }
+  .article-blocks__hero--image-right .article-blocks__hero-image { object-position: right center; }
   .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__cta { padding-block: clamp(2.1rem, 3.8vw, 3.4rem); }
   .article-blocks__notice { display: grid; gap: .5rem; margin-top: 2rem; border-radius: 1.35rem; background: var(--kp-reference-white); }
   .article-blocks__notice strong { color: var(--kp-reference-blue); font-size: 1.35rem; }

@@ -59,7 +59,7 @@ export type ArticleBlocksTemplateData = {
   };
   breadcrumbs: Breadcrumb[];
   blockVariants: ArticleBlockVariant[];
-  hero: { eyebrow: string; lead: string; image: { src: string; alt: string } };
+  hero: { eyebrow: string; lead: string; image: { src: string; alt: string; actualDescription?: string }; imageAlign?: 'right' | 'center' };
   aiSummary: string;
   gosha: HomeGoshaData;
   finalCta: HomeFinalCtaData;
