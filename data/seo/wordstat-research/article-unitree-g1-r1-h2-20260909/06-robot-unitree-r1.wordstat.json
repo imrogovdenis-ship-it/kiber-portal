@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "checked_live",
+  "query": "робот Unitree R1",
+  "region": "all",
+  "device": "all",
+  "view": "table",
+  "source": "live_wordstat_visible_cdp",
+  "collectionDate": "2026-09-09",
+  "period": {
+    "fromRaw": "09.08.2026",
+    "toRaw": "07.09.2026",
+    "raw": "за 09.08.2026 – 07.09.2026: 141\n"
+  },
+  "totalImpressions": 141,
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот Unitree R1\n \nза 09.08.2026 – 07.09.2026: 141\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+unitree r1 робот\t141\n+робот гуманоид unitree r1\t37\n+робот unitree r1 купить\t18\n+робот unitree r1 edu smart\t10\n+робот unitree r1 ultra light weight\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»",
+  "validation": {
+    "queryInUrl": true,
+    "wordstatTableVisible": true,
+    "genericIntroRejected": true,
+    "screenshotPlausible": false,
+    "rowsParsed": true
+  },
+  "screenshot": null,
+  "notes": [
+    "CDP screenshot was a 693-byte placeholder and was deleted; raw Wordstat text is the primary evidence."
+  ],
+  "rows": [
+    {
+      "phrase": "unitree r1 робот",
+      "impressions": 141
+    },
+    {
+      "phrase": "робот гуманоид unitree r1",
+      "impressions": 37
+    },
+    {
+      "phrase": "робот unitree r1 купить",
+      "impressions": 18
+    },
+    {
+      "phrase": "робот unitree r1 edu smart",
+      "impressions": 10
+    },
+    {
+      "phrase": "робот unitree r1 ultra light weight",
+      "impressions": 5
+    }
+  ]
+}

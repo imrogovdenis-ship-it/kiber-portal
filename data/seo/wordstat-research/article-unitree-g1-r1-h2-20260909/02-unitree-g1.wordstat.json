@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "status": "checked_live",
+  "query": "Unitree G1",
+  "region": "all",
+  "device": "all",
+  "view": "table",
+  "source": "live_wordstat_visible_cdp",
+  "collectionDate": "2026-09-09",
+  "period": {
+    "fromRaw": "09.08.2026",
+    "toRaw": "07.09.2026",
+    "raw": "за 09.08.2026 – 07.09.2026: 2 819\n"
+  },
+  "totalImpressions": 2819,
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nUnitree G1\n \nза 09.08.2026 – 07.09.2026: 2 819\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+unitree g1\t2 819\n+робот unitree g1\t1 101\n+unitree g1 basic\t708\n+гуманоид unitree g1\t361\n+робот гуманоид unitree g1\t345\n+робот unitree g1 basic\t327\n+unitree g1 купить\t278\n+unitree g1 edu\t237\n+unitree g1 basic робот гуманоид\t125\n+гуманоидный робот unitree g1\t119\n+робот unitree g1 купить\t106\n+робот unitree g1 edu\t102\n+unitree g1 ultimate\t79\n+unitree g1 цена\t76\n+unitree g1 умеет\t70\n+unitree robotics g1\t68\n+модель g1 unitree\t56\n+unitree g1 d\t54\n+бионический робот гуманоид unitree g1\t54\n+бионический робот гуманоид unitree g1 basic\t53\n+гуманоидный робот unitree g1 basic\t51\n+robot unitree g1\t48\n+программируемый робот unitree g1\t47\n+unitree g1 basic купить\t41\n+робот unitree g1 цена\t41\n+unitree g1 сколько стоит\t39\n+робот unitree g1 что умеет\t33\n+робот гуманоид unitree g1 edu\t33\n+unitree g1 edu plus\t27\n+unitree g1 видео\t26\n+unitree g1 d flagship\t26\n+unitree g1 edu flagship d\t26\n+китайский робот unitree g1\t26\n+робот unitree g1 версии edu ultimate\t25\n+unitree g1 обзор\t25\n+unitree g1 edu ultimate b\t24\n+unitree g1 edu ultimate d\t23\n+человекоподобный робот unitree g1\t20\n+бионический гуманоидный робот unitree g1\t19\n+робот unitree g1 видео\t19\n+unitree g1 edu flagship d робот\t18\n+unitree g1 руки\t18\n+robot unitree g1 что умеет\t17\n+робот unitree g1 обзор\t17\n+unitree g1 r1\t16\n+китайский человекоподобный робот купить unitree g1\t15\n+unitree g1 edu купить\t15\n+робот unitree g1 edu plus\t15\n+робот гуманоид unitree g1 версия edu standard\t14\n+unitree g1 характеристики\t14\n+робот гуманоид unitree g1 с ии\t14\n+обувь woodgenio для робота unitree g1\t14\n+unitree g1 edu flagship d робот гуманоид\t12\n+unitree g1 basic что умеет\t12\n+unitree g1 управление пультом\t10\n+китайский гуманоидный робот unitree g1\t9\n+гуманоидный робот unitree g1 basic цена\t9\n+unitree g1 humanoid robot\t9\n+unitree robotics g1 купить\t8\n+робот unitree g1 edu ultimate d\t8\n+mocap unitree g1\t7\n+unitree g1 на озоне\t7\n+unitree g1 версия basic\t7\n+робот гуманоид unitree g1 кукояки\t7\n+unitree g1 basic робот гуманоид сколько стоит\t6\n+робот гуманоид unitree g1 купить самый дешевый\t6\n+unitree g1 basic edu цена\t6\n+робот гуманоид unitree g1 с ии купить\t6\n+робот unitree g1 версии edu ultimate c\t5\n+где можно купить самого дешевого unitree g1\t5\n+робот unitree g1 basic для квартиры\t5\n+unitree g1 comp\t5\n+unitree g1 basi может ли разговаривать\t5\n+unitree g1 детали купить\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»",
+  "validation": {
+    "queryInUrl": true,
+    "wordstatTableVisible": true,
+    "genericIntroRejected": true,
+    "screenshotPlausible": false,
+    "rowsParsed": true
+  },
+  "screenshot": null,
+  "notes": [
+    "CDP screenshot was a 693-byte placeholder and was deleted; raw Wordstat text is the primary evidence."
+  ],
+  "rows": [
+    {
+      "phrase": "unitree g1",
+      "impressions": 2819
+    },
+    {
+      "phrase": "робот unitree g1",
+      "impressions": 1101
+    },
+    {
+      "phrase": "unitree g1 basic",
+      "impressions": 708
+    },
+    {
+      "phrase": "гуманоид unitree g1",
+      "impressions": 361
+    },
+    {
+      "phrase": "робот гуманоид unitree g1",
+      "impressions": 345
+    },
+    {
+      "phrase": "робот unitree g1 basic",
+      "impressions": 327
+    },
+    {
+      "phrase": "unitree g1 купить",
+      "impressions": 278
+    },
+    {
+      "phrase": "unitree g1 edu",
+      "impressions": 237
+    },
+    {
+      "phrase": "unitree g1 basic робот гуманоид",
+      "impressions": 125
+    },
+    {
+      "phrase": "гуманоидный робот unitree g1",
+      "impressions": 119
+    },
+    {
+      "phrase": "робот unitree g1 купить",
+      "impressions": 106
+    },
+    {
+      "phrase": "робот unitree g1 edu",
+      "impressions": 102
+    },
+    {
+      "phrase": "unitree g1 ultimate",
+      "impressions": 79
+    },
+    {
+      "phrase": "unitree g1 цена",
+      "impressions": 76
+    },
+    {
+      "phrase": "unitree g1 умеет",
+      "impressions": 70
+    },
+    {
+      "phrase": "unitree robotics g1",
+      "impressions": 68
+    },
+    {
+      "phrase": "модель g1 unitree",
+      "impressions": 56
+    },
+    {
+      "phrase": "unitree g1 d",
+      "impressions": 54
+    },
+    {
+      "phrase": "бионический робот гуманоид unitree g1",
+      "impressions": 54
+    },
+    {
+      "phrase": "бионический робот гуманоид unitree g1 basic",
+      "impressions": 53
+    },
+    {
+      "phrase": "гуманоидный робот unitree g1 basic",
+      "impressions": 51
+    },
+    {
+      "phrase": "robot unitree g1",
+      "impressions": 48
+    },
+    {
+      "phrase": "программируемый робот unitree g1",
+      "impressions": 47
+    },
+    {
+      "phrase": "unitree g1 basic купить",
+      "impressions": 41
+    },
+    {
+      "phrase": "робот unitree g1 цена",
+      "impressions": 41
+    },
+    {
+      "phrase": "unitree g1 сколько стоит",
+      "impressions": 39
+    },
+    {
+      "phrase": "робот unitree g1 что умеет",
+      "impressions": 33
+    },
+    {
+      "phrase": "робот гуманоид unitree g1 edu",
+      "impressions": 33
+    },
+    {
+      "phrase": "unitree g1 edu plus",
+      "impressions": 27
+    },
+    {
+      "phrase": "unitree g1 видео",
+      "impressions": 26
+    },
+    {
+      "phrase": "unitree g1 d flagship",
+      "impressions": 26
+    },
+    {
+      "phrase": "unitree g1 edu flagship d",
+      "impressions": 26
+    },
+    {
+      "phrase": "китайский робот unitree g1",
+      "impressions": 26
+    },
+    {
+      "phrase": "робот unitree g1 версии edu ultimate",
+      "impressions": 25
+    },
+    {
+      "phrase": "unitree g1 обзор",
+      "impressions": 25
+    },
+    {
+      "phrase": "unitree g1 edu ultimate b",
+      "impressions": 24
+    },
+    {
+      "phrase": "unitree g1 edu ultimate d",
+      "impressions": 23
+    },
+    {
+      "phrase": "человекоподобный робот unitree g1",
+      "impressions": 20
+    },
+    {
+      "phrase": "бионический гуманоидный робот unitree g1",
+      "impressions": 19
+    },
+    {
+      "phrase": "робот unitree g1 видео",
+      "impressions": 19
+    },
+    {
+      "phrase": "unitree g1 edu flagship d робот",
+      "impressions": 18
+    },
+    {
+      "phrase": "unitree g1 руки",
+      "impressions": 18
+    },
+    {
+      "phrase": "robot unitree g1 что умеет",
+      "impressions": 17
+    },
+    {
+      "phrase": "робот unitree g1 обзор",
+      "impressions": 17
+    },
+    {
+      "phrase": "unitree g1 r1",
+      "impressions": 16
+    },
+    {
+      "phrase": "китайский человекоподобный робот купить unitree g1",
+      "impressions": 15
+    },
+    {
+      "phrase": "unitree g1 edu купить",
+      "impressions": 15
+    },
+    {
+      "phrase": "робот unitree g1 edu plus",
+      "impressions": 15
+    },
+    {
+      "phrase": "робот гуманоид unitree g1 версия edu standard",
+      "impressions": 14
+    },
+    {
+      "phrase": "unitree g1 характеристики",
+      "impressions": 14
+    },
+    {
+      "phrase": "робот гуманоид unitree g1 с ии",
+      "impressions": 14
+    },
+    {
+      "phrase": "обувь woodgenio для робота unitree g1",
+      "impressions": 14
+    },
+    {
+      "phrase": "unitree g1 edu flagship d робот гуманоид",
+      "impressions": 12
+    },
+    {
+      "phrase": "unitree g1 basic что умеет",
+      "impressions": 12
+    },
+    {
+      "phrase": "unitree g1 управление пультом",
+      "impressions": 10
+    },
+    {
+      "phrase": "китайский гуманоидный робот unitree g1",
+      "impressions": 9
+    },
+    {
+      "phrase": "гуманоидный робот unitree g1 basic цена",
+      "impressions": 9
+    },
+    {
+      "phrase": "unitree g1 humanoid robot",
+      "impressions": 9
+    },
+    {
+      "phrase": "unitree robotics g1 купить",
+      "impressions": 8
+    },
+    {
+      "phrase": "робот unitree g1 edu ultimate d",
+      "impressions": 8
+    },
+    {
+      "phrase": "mocap unitree g1",
+      "impressions": 7
+    },
+    {
+      "phrase": "unitree g1 на озоне",
+      "impressions": 7
+    },
+    {
+      "phrase": "unitree g1 версия basic",
+      "impressions": 7
+    },
+    {
+      "phrase": "робот гуманоид unitree g1 кукояки",
+      "impressions": 7
+    },
+    {
+      "phrase": "unitree g1 basic робот гуманоид сколько стоит",
+      "impressions": 6
+    },
+    {
+      "phrase": "робот гуманоид unitree g1 купить самый дешевый",
+      "impressions": 6
+    },
+    {
+      "phrase": "unitree g1 basic edu цена",
+      "impressions": 6
+    },
+    {
+      "phrase": "робот гуманоид unitree g1 с ии купить",
+      "impressions": 6
+    },
+    {
+      "phrase": "робот unitree g1 версии edu ultimate c",
+      "impressions": 5
+    },
+    {
+      "phrase": "где можно купить самого дешевого unitree g1",
+      "impressions": 5
+    },
+    {
+      "phrase": "робот unitree g1 basic для квартиры",
+      "impressions": 5
+    },
+    {
+      "phrase": "unitree g1 comp",
+      "impressions": 5
+    },
+    {
+      "phrase": "unitree g1 basi может ли разговаривать",
+      "impressions": 5
+    },
+    {
+      "phrase": "unitree g1 детали купить",
+      "impressions": 5
+    }
+  ]
+}
