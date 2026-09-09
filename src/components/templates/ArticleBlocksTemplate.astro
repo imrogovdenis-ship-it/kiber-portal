@@ -22,7 +22,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
 ---
 
 <article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
-  <section id="hero" class="article-blocks__hero" data-block-id="hero" aria-labelledby="page-title">
+  <section id="hero" class:list={["article-blocks__hero", template.hero.imageAlign === 'right' && "article-blocks__hero--image-right"]} data-block-id="hero" aria-labelledby="page-title">
     <div class="container article-blocks__hero-inner">
       <div class="article-blocks__hero-copy">
         <p class="article-blocks__eyebrow">{template.hero.eyebrow}</p>
@@ -112,6 +112,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   </section>
   )}
 
+  {(isInventoryMode || content?.comparison) && (
   <section id="comparisonBlock" class="article-blocks__comparison container" data-block-id="comparisonBlock" aria-labelledby="comparison-title">
     <div class="article-blocks__section-head">
       <p class="article-blocks__eyebrow">{content?.comparison?.eyebrow ?? 'Сравнение'}</p>
@@ -134,7 +135,9 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       </div>
     )}
   </section>
+  )}
 
+  {(isInventoryMode || content?.obviousChoice) && (
   <section id="obviousChoice" class="article-blocks__obvious container" data-block-id="obviousChoice" aria-labelledby="obvious-choice-title">
     <div class="article-blocks__section-head">
       <p class="article-blocks__eyebrow">{content?.obviousChoice?.eyebrow ?? 'Выбор'}</p>
@@ -148,6 +151,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       ]).map((card) => <article><span>{card.number}</span><h3>{card.title}</h3><p>{card.text}</p></article>)}
     </div>
   </section>
+  )}
 
   <section id="numberedUseCases" class="article-blocks__numbered container" data-block-id="numberedUseCases" aria-labelledby="scenario-fit-title">
     <div class="article-blocks__section-head">
@@ -377,4 +381,9 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   .article-blocks__featured-model { grid-template-columns: 1fr; } }
   @media (max-width: 56rem) { .article-blocks__hero-image { margin-top: 0; } .article-blocks__toc-grid, .article-blocks__prose-copy, .article-blocks__comparison-columns, .article-blocks__obvious-grid, .article-blocks__numbered-grid, .article-blocks__paired-rows article, .article-blocks__benefit-grid, .article-blocks__robot-grid, .article-blocks__checks { grid-template-columns: 1fr; } }
   @media (max-width: 39.9375rem) { .humanoid-template__gallery-head .humanoid-template__section-head { margin-left: 0; } .article-blocks__featured-media, .article-blocks__featured-media img { min-height: 20rem; } .article-blocks__featured-copy h3 { font-size: clamp(2.55rem, 13vw, 3.6rem); } .article-blocks__hero { padding-block: 3.5rem 2.75rem; } .article-blocks__hero-image { min-height: 16rem; } .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__catalog, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__compilations, .article-blocks__cta { padding-block: 2.75rem; } .article-blocks__faq { padding-bottom: 1.375rem; } .article-blocks__cta { padding-top: 1.375rem; } .article-blocks__compilations { padding-top: 4rem; padding-bottom: 5rem; } #catalogBlock.container { width: auto; max-width: none; margin-inline: 0; padding-inline: var(--kp-reference-page-gutter); overflow-x: clip; } #catalogBlock .vertical-slice__section-copy, #catalogBlock .vertical-slice__card-grid { width: 100%; max-width: 100%; min-width: 0; margin-left: 0; margin-right: 0; } #catalogBlock .robot-card { min-width: 0; } .vertical-slice__card-grid, .article-blocks__related :global(.home-image-cards__grid) { grid-template-columns: 1fr; } .article-blocks__related :global(.home-image-cards__card) { min-height: 16rem; } .article-blocks__related :global(.home-image-cards__image) { min-height: 10rem; } .article-blocks__related :global(.home-image-cards__head), .article-blocks__compilations :global(.home-image-cards__head), .article-blocks__faq :global(.home-faq__head), .article-blocks__faq :global(.home-faq__list) { margin-left: 0; margin-right: 0; } }
+
+  .article-blocks__hero--image-right .article-blocks__hero-image {
+    object-position: right center;
+  }
+
 </style>
