@@ -1,0 +1,44 @@
+{
+  "pageType": "article_detail",
+  "status": "draft_for_owner_review",
+  "title": "Unitree G1 на корпоративе — разбор сценария",
+  "slug": "unitree-g1-na-korporative",
+  "canonicalPath": "/articles/unitree-g1-na-korporative/",
+  "previewRoute": "/preview/kiber-94/articles/unitree-g1-na-korporative/",
+  "metaTitle": "Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ",
+  "metaDescription": "Как робот-гуманоид Unitree G1 встраивается в корпоратив: встреча гостей, выход на сцену, фотозона, фуршет и финальное фото с оператором.",
+  "h1": "Unitree G1 на корпоративе — разбор сценария",
+  "primaryKeyword": "Unitree G1 на корпоративе",
+  "primaryKeywordDecision": "Direct corporate queries are near zero in Wordstat, but the phrase is a precise long-tail article intent tied to exact model + scenario. Commercial exact-model rental keys remain robot-card support, not the article primary.",
+  "secondaryKeywords": [
+    "робот Unitree G1 на корпоратив",
+    "Unitree G1 корпоратив",
+    "робот на корпоратив",
+    "робот для корпоратива",
+    "робот на корпоративное мероприятие",
+    "сценарий с роботом на корпоративе"
+  ],
+  "bridgeKeywords": [
+    "Unitree G1 аренда",
+    "аренда Unitree G1",
+    "аренда роботов на мероприятие",
+    "робот для мероприятия"
+  ],
+  "schemaTypes": [
+    "BlogPosting",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "wordstat": {
+    "status": "checked_live",
+    "summaryPath": "docs/review/kiber-article-unitree-g1-korporativ-20260908/wordstat-summary.md"
+  },
+  "serp": {
+    "status": "checked",
+    "summaryPath": "docs/review/kiber-article-unitree-g1-korporativ-20260908/serp/summary.serp.json"
+  },
+  "pricingDecision": "Visible article uses current structured robot-card public price wording; DOCX operational tariff table is kept as source material but not copied verbatim into public article.",
+  "indexing": "preview_noindex_until_public_launch_approval",
+  "approvalRequired": true,
+  "productionApproved": false
+}
