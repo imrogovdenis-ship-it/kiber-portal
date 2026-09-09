@@ -14,8 +14,8 @@ const [g1] = reviewRobotCards;
 const featuredRobot = content?.product?.featuredSlug ? reviewRobotCards.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
 const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
 const articleGalleryImages = reviewRobotCards
-  .filter((robot) => robot.image)
-  .map((robot) => ({ src: robot.image!.src, alt: `${robot.title}: фото для галереи шаблона статьи`, title: robot.title.replace(/^Аренда\s+/i, '') }));
+  .map((robot) => robot.galleryImage ?? robot.image)
+  .filter((image): image is { src: string; alt: string } => Boolean(image));
 ---
 
 <article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
@@ -25,7 +25,7 @@ const articleGalleryImages = reviewRobotCards
         <p class="article-blocks__eyebrow">{template.hero.eyebrow}</p>
         <h1 id="page-title">{template.seo.h1}</h1>
       </div>
-      <img class="article-blocks__hero-image" src={template.hero.image.src} alt={template.hero.image.alt} loading="eager" decoding="async" />
+      <img class:list={['article-blocks__hero-image', template.hero.image.fit === 'contain' && 'article-blocks__hero-image--contain']} src={template.hero.image.src} alt={template.hero.image.alt} loading="eager" decoding="async" />
       <p class="article-blocks__lead">{template.hero.lead}</p>
     </div>
   </section>
@@ -213,7 +213,7 @@ const articleGalleryImages = reviewRobotCards
     )}
   </section>
 
-  <section id="faq" class="article-blocks__faq container" data-block-id="faq" aria-label="FAQ статьи">
+  <section id="articleFaq" class="article-blocks__faq container" data-block-id="faq" aria-label="FAQ статьи">
     <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
   </section>
 
@@ -257,6 +257,7 @@ const articleGalleryImages = reviewRobotCards
   .article-blocks__eyebrow { color: var(--kp-reference-blue); font-size: var(--kp-reference-label-size); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
   .article-blocks__lead { grid-column: 1 / -1; max-width: none; color: color-mix(in srgb, white 82%, transparent); font-size: clamp(1.05rem, 1.45vw, 1.3rem); line-height: 1.5; }
   .article-blocks__hero-image { align-self: start; width: 100%; min-height: 25rem; max-height: 34rem; margin-top: 2.25rem; object-fit: cover; border-radius: 1.75rem; }
+  .article-blocks__hero-image--contain { object-fit: contain; background: transparent; }
   .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__cta { padding-block: clamp(3.25rem, 5.5vw, 5rem); }
   .article-blocks__notice { display: grid; gap: .5rem; margin-top: 2rem; border-radius: 1.35rem; background: var(--kp-reference-white); }
   .article-blocks__notice strong { color: var(--kp-reference-blue); font-size: 1.35rem; }
@@ -293,8 +294,8 @@ const articleGalleryImages = reviewRobotCards
   .humanoid-template__drag-gallery::-webkit-scrollbar { display: none; }
   .humanoid-template__drag-gallery.is-dragging { cursor: grabbing; scroll-snap-type: none; }
   .humanoid-template__gallery-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
-  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: auto; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: var(--kp-reference-white); scroll-snap-align: start; -webkit-user-drag: none; }
-  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: min(52rem, 88vw); object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
+  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: fit-content; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: transparent; scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: none; object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
   .article-blocks__comparison { display: grid; gap: clamp(3rem, 6vw, 5rem); }
   .article-blocks__comparison .article-blocks__section-head { max-width: 49rem; }
   .article-blocks__comparison-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.5rem, 7vw, 7rem); }

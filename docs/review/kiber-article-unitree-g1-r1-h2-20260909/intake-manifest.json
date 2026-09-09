@@ -11,9 +11,16 @@
     "embeddedMediaCount": 0
   },
   "hero": {
-    "status": "awaiting_user_attachment",
-    "actualDescription": "На изображении три робота Unitree стоят на сцене перед зрителями: слева R1 в боевой стойке, в центре G1 приветствует зрителей поднятой правой рукой, справа H2 вытянул руку немного в сторону и вперёд, как будто обращается к аудитории.",
-    "seoAltStatus": "deferred_until_research_and_asset_received"
+    "status": "received_owner_provided",
+    "actualDescription": "На этом изображении три робота от компании Unitree: R1, G1 и H2, стоят на сцене и приветствуют зрителей, которые смотрят на них. Слева находится робот R1. Он стоит в стойке боевой, демонстрируя, что он готов к поединку. Посередине стоит робот G1. Он приветствует зрителей, поднятой вверх правой рукой. Справа на изображении стоит робот H2. Он вытянул руку немножко в сторону и вперед, как будто бы что-то рассказывает зрителям.",
+    "seoAltStatus": "deferred_until_research_and_asset_received",
+    "sourcePath": "docs/review/kiber-article-unitree-g1-r1-h2-20260909/source/hero-upload.jpg",
+    "runtimePath": "/images/kiber-articles/unitree-g1-r1-h2-comparison-hero.webp",
+    "width": 1280,
+    "height": 720,
+    "sourceSha256": "e310f37ef84c54e7b0ee558c364f0842e211c5869a6103b005ff83f7102c5328",
+    "runtimeSha256": "29c311d52eb3ef54a4e7f903c6470cd7a2cab0379d7ffa54209c1b52ad5dad3b",
+    "seoAlt": "Роботы-гуманоиды Unitree R1, G1 и H2 приветствуют зрителей на сцене мероприятия"
   },
   "research": {
     "wordstatStatus": "blocked_waiting_for_user_tunnel",

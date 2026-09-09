@@ -38,6 +38,6 @@
   ],
   "wordstatStatus": "checked_live_complete",
   "serpStatus": "checked",
-  "heroStatus": "awaiting_user_asset",
+  "heroStatus": "received_owner_provided",
   "decision": "Publish as a low-volume, high-intent decision guide supported by three branded entities; do not optimize it for generic humanoid rental."
 }
