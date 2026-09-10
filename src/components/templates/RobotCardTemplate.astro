@@ -420,7 +420,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
       <span>{robotCatalogDescription}</span>
     </div>
     <div class="template-related-catalog__grid">
-      {relatedRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {relatedRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="lazy" />)}
     </div>
   </section>
 </article>

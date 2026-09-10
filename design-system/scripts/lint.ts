@@ -20,6 +20,8 @@ const ignored = new Set([
   // currentColor breaks <img>-rendered logos in browsers.
   'public/images/brand/kp_logo_full.svg',
   'public/images/brand/kp_logo_full_color.svg',
+  // Approved standalone power illustration rendered via <img>, not UI styling.
+  'public/images/robot-capabilities/power-connection.svg',
 ]);
 
 async function files(directory: string): Promise<string[]> {
