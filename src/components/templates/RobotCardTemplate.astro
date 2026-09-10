@@ -341,7 +341,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
         <article>
-          {capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}
+          {isHumanoidPair ? <div class="humanoid-capability-media">{capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}</div> : capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}
           <h3>{item.title ?? item.text}</h3>
           <p>{item.text}</p>
         </article>
@@ -1124,5 +1124,21 @@ const robotCatalogDescription = 'Похожие форматы помогают 
     aspect-ratio: 16 / 9;
     object-fit: contain;
     object-position: center;
+  }
+  .page-template--robot[data-content-pilot="true"] .humanoid-capability-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  .page-template--robot[data-content-pilot="true"] .humanoid-capability-media img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    aspect-ratio: auto;
+    background: transparent;
+    object-fit: contain;
   }
 </style>
