@@ -14,3 +14,7 @@ upload
 *.zip
 .hermes
 Dockerfile.*
+
+# Never embed local runtime outputs or environment secrets
+build
+**/.env*
