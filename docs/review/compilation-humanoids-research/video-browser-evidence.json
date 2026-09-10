@@ -1,0 +1,98 @@
+[
+  {
+    "width": 1440,
+    "overflow": false,
+    "hero": true,
+    "players": 8,
+    "articles": 6,
+    "compilations": true,
+    "noThirdPartyBeforeClick": true,
+    "cspErrors": [],
+    "played": [
+      {
+        "width": 1280,
+        "height": 720,
+        "time": 0.201753
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.314715
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.31585
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.248868
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.157714
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.259382
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.474796
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.274408
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "hero": true,
+    "players": 8,
+    "articles": 6,
+    "compilations": true,
+    "noThirdPartyBeforeClick": true,
+    "cspErrors": [],
+    "played": [
+      {
+        "width": 1280,
+        "height": 720,
+        "time": 0.539777
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.322759
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "hero": true,
+    "players": 8,
+    "articles": 6,
+    "compilations": true,
+    "noThirdPartyBeforeClick": true,
+    "cspErrors": [],
+    "played": [
+      {
+        "width": 1280,
+        "height": 720,
+        "time": 0.164246
+      },
+      {
+        "width": 1080,
+        "height": 1920,
+        "time": 0.352858
+      }
+    ]
+  }
+]
