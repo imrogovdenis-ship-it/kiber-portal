@@ -1,6 +1,6 @@
 # API runtime — тестовый кандидат поверх PR #88
 
-Production NO_GO. Новый runtime находится в Dockerfile.api-runtime: source-built web (Nginx) + bundled Node API. Старый Dockerfile остаётся статическим и не предназначен для финальной отправки заявок.
+Production NO_GO. Новый runtime находится в целях api/web единственного Dockerfile: source-built web (Nginx) + bundled Node API. Цель runtime по умолчанию остаётся статической и не предназначен для финальной отправки заявок.
 
 ## Безопасный тест
 `BUILD_SHA=$(git rev-parse HEAD) docker compose -f compose.api-preview.yml build`

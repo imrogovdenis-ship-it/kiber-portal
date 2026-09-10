@@ -5,7 +5,7 @@ services:
     image: alex-kiber-runtime-qa-api:${BUILD_SHA:?BUILD_SHA required}
     build:
       context: .
-      dockerfile: Dockerfile.api-runtime
+      dockerfile: Dockerfile
       target: api
       args:
         BUILD_SHA: ${BUILD_SHA:?BUILD_SHA required}
@@ -21,7 +21,7 @@ services:
     image: alex-kiber-runtime-qa-web:${BUILD_SHA:?BUILD_SHA required}
     build:
       context: .
-      dockerfile: Dockerfile.api-runtime
+      dockerfile: Dockerfile
       target: web
       args:
         BUILD_SHA: ${BUILD_SHA:?BUILD_SHA required}

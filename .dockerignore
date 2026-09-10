@@ -18,3 +18,5 @@ Dockerfile.*
 # Never embed local runtime outputs or environment secrets
 build
 **/.env*
+# Public placeholder schema is needed by source-contract tests
+!.env.example
