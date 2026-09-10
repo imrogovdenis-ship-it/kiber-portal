@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "slug": "arenda-roboshashki",
+  "pageType": "robot_card",
+  "canonicalPath": "/robots/arenda-roboshashki/",
+  "status": "research_and_block_contract_started",
+  "frozenBlocks": [
+    "hero",
+    "gallery",
+    "robotInAction"
+  ],
+  "sourcePassport": "data/seo/robot-card-passports/arenda-roboshashki.robot-card-seo-passport.json",
+  "wordstat": {
+    "status": "checked_live",
+    "cluster": "../wordstat-24/clusters/arenda-roboshashki.json"
+  },
+  "serp": {
+    "status": "initial_queries_and_competitors_inspected",
+    "evidence": [
+      "serp-0.json"
+    ],
+    "scope": "Google hl=ru, current browser region; results include Ekaterinburg. Not claimed fixed Moscow or nationwide rank verification."
+  },
+  "seo": {
+    "primaryCandidate": "аренда робошашки",
+    "canonicalPath": "/robots/arenda-roboshashki/",
+    "h1": "preserve existing Hero H1; no Hero edit authorised",
+    "metaTitleAndDescription": "pending verified facts and final passport"
+  },
+  "blocks": {
+    "aiSummary": {
+      "task": "Explain robot, physical interaction and event buying decision; remove page-about-page wording",
+      "before": "Робошашки — игровая роботизированная зона для коротких партий и демонстраций. Страница помогает оценить темп игры, требования к столу, оператору и очереди гостей."
+    },
+    "capabilities": {
+      "task": "Map each real illustration to supported function; replace logistics filler; six aligned objects, factual alt",
+      "before": [
+        {
+          "title": "Игра в шашки",
+          "text": "Робот работает с доской и помогает провести короткую партию или демонстрацию."
+        },
+        {
+          "title": "Зрелищный манипулятор",
+          "text": "Движение руки видно зрителям и добавляет технологичный эффект обычной игре."
+        },
+        {
+          "title": "Формат турнира",
+          "text": "Можно подготовить сетку, очередь и короткие правила для гостей."
+        },
+        {
+          "title": "Интерактив для детей",
+          "text": "Подходит для семейных и образовательных событий при операторе и ведущем."
+        },
+        {
+          "title": "Настольная зона",
+          "text": "Нужен устойчивый стол, питание и место для игрока."
+        },
+        {
+          "title": "Контроль безопасности",
+          "text": "Оператор следит, чтобы гости не вмешивались в работу механики."
+        }
+      ]
+    },
+    "scenarios": {
+      "task": "Six distinct event uses explaining guest action and organiser benefit, not generic adjectives",
+      "before": [
+        {
+          "title": "Семейный день",
+          "text": "Гости играют короткие партии и смотрят на работу манипулятора."
+        },
+        {
+          "title": "Образовательная зона",
+          "text": "Можно объяснить алгоритмы, робототехнику и правила игры."
+        },
+        {
+          "title": "Выставочный стенд",
+          "text": "Шашки дают повод остановиться и задержаться у стенда."
+        },
+        {
+          "title": "Корпоратив",
+          "text": "Подходит как спокойный интеллектуальный интерактив."
+        },
+        {
+          "title": "Турнирная зона",
+          "text": "Можно организовать мини-соревнование с ведущим."
+        },
+        {
+          "title": "Зона ожидания",
+          "text": "Гости получают занятие, пока ждут основную программу."
+        }
+      ]
+    },
+    "faq": {
+      "task": "Eight useful, distinct model questions; no keyword repetition or invented numbers",
+      "topics": [
+        "игра с физической доской и действия манипулятора",
+        "поддерживаемые правила и режимы: подтвердить комплектацию",
+        "уровень соперника и начало партии для новичка",
+        "смена игроков и мини-турнир",
+        "оператор, стол, электропитание, зона руки",
+        "цена аренды и состав услуги"
+      ],
+      "before": [
+        {
+          "q": "Для каких мероприятий подходят Робошашки?",
+          "a": "Робошашки подходят для выставок, семейных дней, образовательных событий, корпоративов и зон ожидания, где гости могут сыграть короткую партию с роботом."
+        },
+        {
+          "q": "Что делает робот для шашек?",
+          "a": "Роботизированный манипулятор работает с игровой доской и помогает провести партию или демонстрацию. Сценарий зависит от выбранного режима и времени на гостя."
+        },
+        {
+          "q": "Это подходит детям?",
+          "a": "Да, при участии оператора и ведущего. Важно заранее объяснить правила, ограничить очередь и не допускать хаотичного контакта с манипулятором."
+        },
+        {
+          "q": "Нужен ли оператор?",
+          "a": "Да. Оператор запускает режим, следит за доской, помогает гостям и отвечает за безопасную дистанцию рядом с механикой."
+        },
+        {
+          "q": "Какая площадка нужна?",
+          "a": "Нужен устойчивый стол или зона установки, питание, место для игрока и зрителей, а также пространство для небольшой очереди."
+        },
+        {
+          "q": "Можно ли сделать турнир?",
+          "a": "Можно, если заранее согласовать регламент: длительность партий, число участников, роль ведущего и призовую механику. Для плотного потока лучше короткие партии."
+        },
+        {
+          "q": "Какие ограничения важно учесть?",
+          "a": "Манипулятор не должен работать в толпе без контроля. Также нужно учитывать темп партии: это интерактив на вовлечение, а не аттракцион с мгновенной выдачей."
+        },
+        {
+          "q": "Сколько стоит аренда Робошашек?",
+          "a": "Публичный вход — от 11 500 ₽ / час. Смета зависит от длительности, логистики, оператора, формата турнира и требований площадки."
+        }
+      ]
+    },
+    "goshaCta": {
+      "task": "Retain model-specific voice, humour bold + separate plain manager handoff; avoid repetition and insulting guests"
+    },
+    "includedService": {
+      "task": "Match stationary board-game service; no walking routes or generic battery promises"
+    },
+    "orderFlow": {
+      "task": "Confirm rules, audience, expected guest flow and setup before quote"
+    },
+    "relatedCatalog": {
+      "task": "Preserve meaningful cross-link between checkers and chess; verify other alternatives, no self-link"
+    },
+    "articles": {
+      "task": "Only approved article registry; no legacy cards or index links disguised as article links. Do not call humanoid-only material a guide to checkers/chess."
+    }
+  },
+  "review": {
+    "publicCopyWritten": false,
+    "siteChanged": false,
+    "ownerReviewRequired": true,
+    "claimAudit": "claim-audit.json"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "arenda-glambot",
+  "query": "glambot",
+  "id": "arenda-glambot-1",
+  "status": "checked_live",
+  "source": "https://wordstat.yandex.ru/",
+  "accessMethod": "user_dedicated_visible_chrome_cdp",
+  "collectedAt": "2026-09-10T16:43:09.142Z",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=glambot",
+  "region": "all",
+  "devices": "default (capture UI for verification)",
+  "period": {
+    "start": "10.08.2026",
+    "end": "08.09.2026"
+  },
+  "total": 77,
+  "rows": [
+    {
+      "phrase": "glambot",
+      "count": 77
+    },
+    {
+      "phrase": "glambot купить",
+      "count": 8
+    }
+  ],
+  "tableState": "rows_visible",
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nglambot\n \nза 10.08.2026 – 08.09.2026: 77\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+glambot\t77\n+glambot купить\t8\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "attribution": "Яндекс Wordstat — https://wordstat.yandex.ru/",
+  "screenshot": "arenda-glambot-1.png"
+}

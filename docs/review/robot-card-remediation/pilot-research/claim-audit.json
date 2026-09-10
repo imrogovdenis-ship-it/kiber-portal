@@ -1,0 +1,73 @@
+{
+  "status": "pilot_fact_check_started_not_publication_approval",
+  "claims": [
+    {
+      "id": "chess-power",
+      "model": "arenda-senserobot",
+      "claim": "must remain plugged in during use; use standard adapter, not USB",
+      "source": "https://www.senserobotchess.com/pages/chess-faq",
+      "evidence": "manufacturer-faq-full.txt",
+      "quote": "Additionally, the product must remain plugged in during use. Please use a standard two-prong power adapter instead of USB.",
+      "decision": "Reject old universal 8h battery claim; confirm rental-unit version before quantitative specs"
+    },
+    {
+      "id": "chess-levels",
+      "model": "arenda-senserobot",
+      "claim": "Challenge AI has 25 levels; Apex Duel is separate ELO 3200 mode",
+      "source": "https://www.senserobotchess.com/pages/chess-faq",
+      "evidence": "manufacturer-faq-full.txt",
+      "quote": "There are 25 levels in total.",
+      "decision": "Do not describe a universal flat 26-level mode; confirm software/rental configuration"
+    },
+    {
+      "id": "chess-offline",
+      "model": "arenda-senserobot",
+      "claim": "offline use limited to unlocked local levels, no upload of game progress",
+      "source": "https://www.senserobotchess.com/pages/chess-faq",
+      "evidence": "manufacturer-faq-full.txt",
+      "quote": "without saving or uploading your game progress",
+      "decision": "Explain difference between prepared local play and network features, not unconditional no-internet guarantee"
+    },
+    {
+      "id": "chess-guest",
+      "model": "arenda-senserobot",
+      "claim": "Guest Mode is available; game records not saved",
+      "source": "https://www.senserobotchess.com/pages/chess-faq",
+      "evidence": "manufacturer-faq-full.txt",
+      "quote": "you can use the product in Guest Mode",
+      "decision": "Useful FAQ for visitors: no requirement to create a personal account for every guest; verify selected unit/menu"
+    },
+    {
+      "id": "checkers-game",
+      "model": "arenda-roboshashki",
+      "claim": "physical checkers game against manipulator is advertised by multiple rental vendors",
+      "sources": [
+        "https://divent.ru/ekb/uslugi/roboshashki/",
+        "https://rent-robot.ru/roboshashki",
+        "https://roboagency.ru/roboshashki-v-arendu"
+      ],
+      "evidence": [
+        "source-0.json",
+        "source-1.json",
+        "source-2.json"
+      ],
+      "decision": "Use to describe class and competitor gap; not proof of exact owned hardware numbers"
+    },
+    {
+      "id": "checkers-safety",
+      "model": "arenda-roboshashki",
+      "claim": "competitor says absolutely safe / without operator, but another section requires operator and even includes cooking boilerplate",
+      "evidence": [
+        "source-1.json",
+        "source-2.json"
+      ],
+      "decision": "Reject copying these claims; operator/interaction boundaries are essential; no absolute safety language"
+    }
+  ],
+  "openQuestions": [
+    "Exact rental SenseRobot version/firmware and preconfigured modes",
+    "Exact RoboShashki hardware, checkers rule variant and available difficulty settings",
+    "Verified scope of rental, table/stand and power requirements from business source",
+    "Capability illustration truthfulness/correct ordering; frozen Hero and galleries remain unchanged"
+  ]
+}

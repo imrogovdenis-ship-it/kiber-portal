@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "slug": "arenda-senserobot",
+  "pageType": "robot_card",
+  "canonicalPath": "/robots/arenda-senserobot/",
+  "status": "research_and_block_contract_started",
+  "frozenBlocks": [
+    "hero",
+    "gallery",
+    "robotInAction"
+  ],
+  "sourcePassport": "data/seo/robot-card-passports/arenda-senserobot.robot-card-seo-passport.json",
+  "wordstat": {
+    "status": "checked_live",
+    "cluster": "../wordstat-24/clusters/arenda-senserobot.json"
+  },
+  "serp": {
+    "status": "initial_queries_and_competitors_inspected",
+    "evidence": [
+      "serp-1.json"
+    ],
+    "scope": "Google hl=ru, current browser region; results include Ekaterinburg. Not claimed fixed Moscow or nationwide rank verification."
+  },
+  "seo": {
+    "primaryCandidate": "аренда SenseRobot",
+    "canonicalPath": "/robots/arenda-senserobot/",
+    "h1": "preserve existing Hero H1; no Hero edit authorised",
+    "metaTitleAndDescription": "pending verified facts and final passport"
+  },
+  "blocks": {
+    "aiSummary": {
+      "task": "Explain robot, physical interaction and event buying decision; remove page-about-page wording",
+      "before": "SenseRobot — робот-шахматист для интеллектуальной игровой зоны. Он подходит для шахматных, образовательных и корпоративных событий, где важен спокойный вовлекающий интерактив."
+    },
+    "capabilities": {
+      "task": "Map each real illustration to supported function; replace logistics filler; six aligned objects, factual alt",
+      "before": [
+        {
+          "title": "Шахматная партия",
+          "text": "Робот помогает провести игру с гостем в выбранном режиме."
+        },
+        {
+          "title": "Распознавание доски",
+          "text": "Система работает с шахматной позицией и движением фигур."
+        },
+        {
+          "title": "Манипулятор для ходов",
+          "text": "Роборука физически передвигает фигуры, поэтому процесс виден зрителям."
+        },
+        {
+          "title": "Интеллектуальный интерактив",
+          "text": "Формат хорошо смотрится на образовательных и технологичных площадках."
+        },
+        {
+          "title": "Регламент очереди",
+          "text": "Для потока гостей заранее задают длительность партии и правила завершения."
+        },
+        {
+          "title": "Оператор на зоне",
+          "text": "Оператор следит за настройками, фигурками, очередью и безопасностью."
+        }
+      ]
+    },
+    "scenarios": {
+      "task": "Six distinct event uses explaining guest action and organiser benefit, not generic adjectives",
+      "before": [
+        {
+          "title": "Шахматный клуб",
+          "text": "Робот становится центральным объектом показательной партии."
+        },
+        {
+          "title": "Образовательное событие",
+          "text": "Можно связать игру с темой ИИ, алгоритмов и робототехники."
+        },
+        {
+          "title": "Выставка технологий",
+          "text": "Манипулятор и доска дают понятный визуальный интерактив."
+        },
+        {
+          "title": "Корпоратив",
+          "text": "Подходит для спокойной зоны общения и мини-турнира."
+        },
+        {
+          "title": "Семейный день",
+          "text": "Гости разных возрастов могут наблюдать или играть короткими партиями."
+        },
+        {
+          "title": "Зона ожидания",
+          "text": "Шахматы удерживают внимание без громкого шоу."
+        }
+      ]
+    },
+    "faq": {
+      "task": "Eight useful, distinct model questions; no keyword repetition or invented numbers",
+      "topics": [
+        "какая версия SenseRobot предлагается в аренду",
+        "реальная партия и перемещение фигур",
+        "уровни сложности без неподтверждённых ELO/чисел",
+        "новички/дети и помощь оператора",
+        "полная партия или короткий демонстрационный формат",
+        "электропитание, размещение, комплектация и стоимость"
+      ],
+      "before": [
+        {
+          "q": "Для каких мероприятий подходит SenseRobot?",
+          "a": "SenseRobot подходит для шахматных клубов, образовательных событий, выставок, семейных дней, корпоративных зон и интеллектуальных промо-активаций."
+        },
+        {
+          "q": "Что делает робот-шахматист?",
+          "a": "SenseRobot распознаёт шахматную доску и передвигает фигуры манипулятором. Формат партии, уровень сложности и время на гостя нужно согласовать заранее."
+        },
+        {
+          "q": "Можно ли играть с гостями по очереди?",
+          "a": "Да, но нужен регламент: длительность партии, очередь, помощь ведущего и понятный сценарий завершения, чтобы зона не застряла на одной игре."
+        },
+        {
+          "q": "Нужен ли оператор?",
+          "a": "Да. Оператор следит за доской, настройками, очередью и безопасной зоной вокруг манипулятора."
+        },
+        {
+          "q": "Какая площадка нужна?",
+          "a": "Нужен устойчивый стол, питание, нормальное освещение доски, место для игрока и небольшая зона ожидания для зрителей."
+        },
+        {
+          "q": "Подходит ли SenseRobot для детей?",
+          "a": "Подходит, если есть ведущий и понятный уровень сложности. Для детского события лучше делать короткие партии или демонстрационный режим."
+        },
+        {
+          "q": "Можно ли брендировать зону?",
+          "a": "Можно оформить стол, таблички, турнирную сетку, призы и сценарий ведущего. Саму механику робота нужно оставлять в проверенном режиме."
+        },
+        {
+          "q": "Сколько стоит аренда SenseRobot?",
+          "a": "Публичный вход — от 10 000 ₽ / час. Итог зависит от длительности, логистики, оператора, формата турнира и подготовки зоны."
+        }
+      ]
+    },
+    "goshaCta": {
+      "task": "Retain model-specific voice, humour bold + separate plain manager handoff; avoid repetition and insulting guests"
+    },
+    "includedService": {
+      "task": "Match stationary board-game service; no walking routes or generic battery promises"
+    },
+    "orderFlow": {
+      "task": "Confirm rules, audience, expected guest flow and setup before quote"
+    },
+    "relatedCatalog": {
+      "task": "Preserve meaningful cross-link between checkers and chess; verify other alternatives, no self-link"
+    },
+    "articles": {
+      "task": "Only approved article registry; no legacy cards or index links disguised as article links. Do not call humanoid-only material a guide to checkers/chess."
+    }
+  },
+  "review": {
+    "publicCopyWritten": false,
+    "siteChanged": false,
+    "ownerReviewRequired": true,
+    "claimAudit": "claim-audit.json"
+  }
+}

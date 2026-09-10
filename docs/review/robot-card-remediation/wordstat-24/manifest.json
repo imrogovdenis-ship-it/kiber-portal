@@ -1,0 +1,29 @@
+{
+  "status": "wordstat_collection_complete",
+  "models": 24,
+  "queries": 121,
+  "screenshots": 121,
+  "visibleRowObservations": 450,
+  "periods": [
+    [
+      "09.08.2026",
+      "09.09.2026"
+    ],
+    [
+      "10.08.2026",
+      "08.09.2026"
+    ]
+  ],
+  "filters": {
+    "region": "all",
+    "devices": [
+      "desktop",
+      "smartphone",
+      "tablet"
+    ],
+    "verification": "All three device checkboxes inspected as checked; fixed all-region URL; screenshots retain UI"
+  },
+  "completedAt": "2026-09-10T16:55:58.229267+00:00",
+  "remaining": "SERP/facts/passports/copy not implied complete",
+  "attribution": "Яндекс Wordstat: https://wordstat.yandex.ru/"
+}

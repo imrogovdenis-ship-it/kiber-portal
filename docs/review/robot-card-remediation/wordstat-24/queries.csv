@@ -1,0 +1,122 @@
+﻿slug,query,total,period_start,period_end,region,devices,visible_rows,evidence
+arenda-agibot-x2,Agibot X2,138,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,3,raw/arenda-agibot-x2-1.wordstat.json
+arenda-agibot-x2,аренда Agibot X2,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-agibot-x2-2.wordstat.json
+arenda-agibot-x2,Agibot X2 робот,8,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-agibot-x2-3.wordstat.json
+arenda-agibot-x2,Agibot X2 характеристики,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-agibot-x2-4.wordstat.json
+arenda-bellabot,BellaBot,282,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,13,raw/arenda-bellabot-1.wordstat.json
+arenda-bellabot,аренда BellaBot,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-bellabot-2.wordstat.json
+arenda-bellabot,Беллабот,12,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-bellabot-3.wordstat.json
+arenda-bellabot,BellaBot характеристики,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-bellabot-4.wordstat.json
+arenda-glambot,glambot,77,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-glambot-1.wordstat.json
+arenda-glambot,глэмбот,174,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-glambot-2.wordstat.json
+arenda-glambot,аренда глэмбота,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-glambot-3.wordstat.json
+arenda-glambot,гламбот,38,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-glambot-4.wordstat.json
+arenda-inchbot-l1-w-edu,Inchbot L1-W EDU,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-1.wordstat.json
+arenda-inchbot-l1-w-edu,аренда Inchbot L1-W EDU,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-2.wordstat.json
+arenda-inchbot-l1-w-edu,робота-собаки Inchbot L1-W EDU,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-3.wordstat.json
+arenda-inchbot-l1-w-edu,Inchbot L1-W EDU характеристики,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-4.wordstat.json
+arenda-kettybot,KettyBot,38,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,3,raw/arenda-kettybot-1.wordstat.json
+arenda-kettybot,аренда KettyBot,2,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-kettybot-2.wordstat.json
+arenda-kettybot,Кеттибот,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-kettybot-3.wordstat.json
+arenda-kettybot,KettyBot характеристики,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-kettybot-4.wordstat.json
+arenda-klipmeiker,робот клипмейкер,2,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-klipmeiker-1.wordstat.json
+arenda-klipmeiker,аренда клипмейкера,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-klipmeiker-2.wordstat.json
+arenda-klipmeiker,робот видеооператор,7,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-klipmeiker-3.wordstat.json
+arenda-klipmeiker,робот камера аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-klipmeiker-4.wordstat.json
+arenda-mini-robo-kofeyni,мини робо кофейня,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-mini-robo-kofeyni-1.wordstat.json
+arenda-mini-robo-kofeyni,мини робокофейня аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-mini-robo-kofeyni-2.wordstat.json
+arenda-mini-robo-kofeyni,робо кофейня мороженое,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-mini-robo-kofeyni-3.wordstat.json
+arenda-mini-robo-kofeyni,робот кофейня аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-mini-robo-kofeyni-4.wordstat.json
+arenda-noetix-bumi,Noetix Bumi,106,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,8,raw/arenda-noetix-bumi-1.wordstat.json
+arenda-noetix-bumi,аренда Noetix Bumi,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-noetix-bumi-2.wordstat.json
+arenda-noetix-bumi,Noetix Bumi робот,38,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,3,raw/arenda-noetix-bumi-3.wordstat.json
+arenda-noetix-bumi,Noetix Bumi характеристики,3,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-noetix-bumi-4.wordstat.json
+arenda-promobot-v4,Promobot V4,24,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-promobot-v4-1.wordstat.json
+arenda-promobot-v4,аренда Promobot V4,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-promobot-v4-2.wordstat.json
+arenda-promobot-v4,Промобот V4,17,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-promobot-v4-3.wordstat.json
+arenda-promobot-v4,Promobot V4 характеристики,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-promobot-v4-4.wordstat.json
+arenda-robo-kofeyni,робо кофейня,19,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robo-kofeyni-1.wordstat.json
+arenda-robo-kofeyni,робокофейня,20,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robo-kofeyni-2.wordstat.json
+arenda-robo-kofeyni,аренда робо кофейни,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robo-kofeyni-3.wordstat.json
+arenda-robo-kofeyni,робот кофе,924,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,22,raw/arenda-robo-kofeyni-4.wordstat.json
+arenda-roboshashki,робошашки,11,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-roboshashki-1.wordstat.json
+arenda-roboshashki,робот шашки,78,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-roboshashki-2.wordstat.json
+arenda-roboshashki,аренда робота для игры в шашки,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-roboshashki-3.wordstat.json
+arenda-roboshashki,робот шашист,4,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-roboshashki-4.wordstat.json
+arenda-robot-barmen,робобар,20,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robot-barmen-1.wordstat.json
+arenda-robot-barmen,робот бармен,368,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,10,raw/arenda-robot-barmen-2.wordstat.json
+arenda-robot-barmen,аренда робота бармена,2,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robot-barmen-3.wordstat.json
+arenda-robot-barmen,робобар аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robot-barmen-4.wordstat.json
+arenda-robota-ardi,робот арди,146,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,3,raw/arenda-robota-ardi-1.wordstat.json
+arenda-robota-ardi,арди робот аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-ardi-2.wordstat.json
+arenda-robota-ardi,аренда робота арди,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-ardi-3.wordstat.json
+arenda-robota-ardi,робот арди возможности,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-ardi-4.wordstat.json
+arenda-robota-hudozhnika-a4,робот художник а4,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-hudozhnika-a4-1.wordstat.json
+arenda-robota-hudozhnika-a4,робот художник аренда,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-hudozhnika-a4-2.wordstat.json
+arenda-robota-hudozhnika-a4,робот портретист,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-hudozhnika-a4-3.wordstat.json
+arenda-robota-hudozhnika-a4,робот рисует портреты,175,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robota-hudozhnika-a4-4.wordstat.json
+arenda-robota-sofiya,робот софия,743,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,14,raw/arenda-robota-sofiya-1.wordstat.json
+arenda-robota-sofiya,аренда робота софии,3,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-sofiya-2.wordstat.json
+arenda-robota-sofiya,sophia robot,32,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robota-sofiya-3.wordstat.json
+arenda-robota-sofiya,робот софия возможности,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-sofiya-4.wordstat.json
+arenda-robota-tron,tron робот,84,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robota-tron-1.wordstat.json
+arenda-robota-tron,limx tron,8,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-robota-tron-2.wordstat.json
+arenda-robota-tron,аренда робота tron,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-robota-tron-3.wordstat.json
+arenda-robota-tron,трон робот,271,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,4,raw/arenda-robota-tron-4.wordstat.json
+arenda-senserobot,senserobot,38,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-senserobot-1.wordstat.json
+arenda-senserobot,sense robot,42,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-senserobot-2.wordstat.json
+arenda-senserobot,робот шахматист,170,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,7,raw/arenda-senserobot-3.wordstat.json
+arenda-senserobot,аренда робота шахматиста,8,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-senserobot-4.wordstat.json
+arenda-sketchbot,sketchbot,8,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-sketchbot-1.wordstat.json
+arenda-sketchbot,скетчбот,80,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,3,raw/arenda-sketchbot-2.wordstat.json
+arenda-sketchbot,аренда скетчбота,3,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-sketchbot-3.wordstat.json
+arenda-sketchbot,скетч бот,56,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-sketchbot-4.wordstat.json
+arenda-unitree-g1,Unitree G1,2867,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,74,raw/arenda-unitree-g1-1.wordstat.json
+arenda-unitree-g1,аренда Unitree G1,15,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-g1-2.wordstat.json
+arenda-unitree-g1,робот Unitree G1,1127,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,37,raw/arenda-unitree-g1-3.wordstat.json
+arenda-unitree-g1,Unitree G1 характеристики,8,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-unitree-g1-4.wordstat.json
+arenda-unitree-go2,Unitree Go2,1769,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,51,raw/arenda-unitree-go2-1.wordstat.json
+arenda-unitree-go2,аренда Unitree Go2,7,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-go2-2.wordstat.json
+arenda-unitree-go2,робот Unitree Go2,759,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,22,raw/arenda-unitree-go2-3.wordstat.json
+arenda-unitree-go2,Unitree Go2 характеристики,4,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-go2-4.wordstat.json
+arenda-unitree-h2,Unitree H2,306,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,11,raw/arenda-unitree-h2-1.wordstat.json
+arenda-unitree-h2,аренда Unitree H2,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-h2-2.wordstat.json
+arenda-unitree-h2,Юнитри H2,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-h2-3.wordstat.json
+arenda-unitree-h2,Unitree H2 характеристики,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-h2-4.wordstat.json
+arenda-unitree-r1,Unitree R1,531,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,12,raw/arenda-unitree-r1-1.wordstat.json
+arenda-unitree-r1,аренда Unitree R1,3,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-r1-2.wordstat.json
+arenda-unitree-r1,Юнитри R1,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-r1-3.wordstat.json
+arenda-unitree-r1,Unitree R1 характеристики,7,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-r1-4.wordstat.json
+arenda-uv-box,uv box,115,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-uv-box-1.wordstat.json
+arenda-uv-box,интерактивная витрина,161,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,3,raw/arenda-uv-box-2.wordstat.json
+arenda-uv-box,аренда интерактивной витрины,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-uv-box-3.wordstat.json
+arenda-uv-box,сенсорная витрина,73,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-uv-box-4.wordstat.json
+arenda-xiaomi-cyberdog-2,Xiaomi CyberDog 2,177,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,4,raw/arenda-xiaomi-cyberdog-2-1.wordstat.json
+arenda-xiaomi-cyberdog-2,аренда Xiaomi CyberDog 2,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-xiaomi-cyberdog-2-2.wordstat.json
+arenda-xiaomi-cyberdog-2,робот Xiaomi CyberDog 2,8,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-xiaomi-cyberdog-2-3.wordstat.json
+arenda-xiaomi-cyberdog-2,Xiaomi CyberDog 2 характеристики,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-xiaomi-cyberdog-2-4.wordstat.json
+arenda-agibot-x2,агибот x2,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-agibot-x2-extra-1.wordstat.json
+arenda-agibot-x2,agibot,1342,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,34,raw/arenda-agibot-x2-extra-2.wordstat.json
+arenda-inchbot-l1-w-edu,inchbot,9,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-extra-1.wordstat.json
+arenda-inchbot-l1-w-edu,инчбот,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-extra-2.wordstat.json
+arenda-inchbot-l1-w-edu,аренда inchbot,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-inchbot-l1-w-edu-extra-3.wordstat.json
+arenda-noetix-bumi,буми робот,22,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-noetix-bumi-extra-1.wordstat.json
+arenda-noetix-bumi,bumi,869,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,40,raw/arenda-noetix-bumi-extra-2.wordstat.json
+arenda-unitree-g1,юнитри g1,9,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-g1-extra-1.wordstat.json
+arenda-unitree-g1,юнитри джи 1,12,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,1,raw/arenda-unitree-g1-extra-2.wordstat.json
+arenda-unitree-go2,юнитри go2,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-unitree-go2-extra-1.wordstat.json
+arenda-glambot,glambot аренда,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-glambot-extra-1.wordstat.json
+arenda-glambot,аренда гламбота,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-glambot-extra-2.wordstat.json
+arenda-mini-robo-kofeyni,мини кофейня робот,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-mini-robo-kofeyni-extra-1.wordstat.json
+arenda-robo-kofeyni,робот бариста,603,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,9,raw/arenda-robo-kofeyni-extra-1.wordstat.json
+arenda-robo-kofeyni,кофейный робот,87,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,2,raw/arenda-robo-kofeyni-extra-2.wordstat.json
+arenda-robota-hudozhnika-a4,робот художник,1082,10.08.2026,08.09.2026,all,desktop+smartphone+tablet,25,raw/arenda-robota-hudozhnika-a4-extra-1.wordstat.json
+arenda-senserobot,сенсеробот,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-senserobot-extra-1.wordstat.json
+arenda-senserobot,sense robot аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-senserobot-extra-2.wordstat.json
+arenda-senserobot,робот шахматист сложность,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-senserobot-extra-3.wordstat.json
+arenda-roboshashki,робошашки аренда,1,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-roboshashki-extra-1.wordstat.json
+arenda-roboshashki,робот шашки сложность,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-roboshashki-extra-2.wordstat.json
+arenda-sketchbot,sketchbot аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-sketchbot-extra-1.wordstat.json
+arenda-promobot-v4,промобот аренда,3,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-promobot-v4-extra-1.wordstat.json
+arenda-xiaomi-cyberdog-2,сайбердог 2,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-xiaomi-cyberdog-2-extra-1.wordstat.json
+arenda-xiaomi-cyberdog-2,cyberdog 2 аренда,0,09.08.2026,09.09.2026,all,desktop+smartphone+tablet,0,raw/arenda-xiaomi-cyberdog-2-extra-2.wordstat.json

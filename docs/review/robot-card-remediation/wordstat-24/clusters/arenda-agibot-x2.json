@@ -1,0 +1,517 @@
+{
+  "slug": "arenda-agibot-x2",
+  "model": "Agibot X2",
+  "canonicalPath": "/robots/arenda-agibot-x2/",
+  "wordstatStatus": "checked_live",
+  "queryCount": 6,
+  "primaryCandidate": "аренда Agibot X2",
+  "primaryStatus": "existing_model_intent_candidate_pending_SERP_not_a_final_rewritten_passport",
+  "keywordEvidence": [
+    {
+      "phrase": "Agibot X2",
+      "count": 138,
+      "countKind": "queried_total",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot x2",
+      "count": 138,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot x2 ultra",
+      "count": 105,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-1.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "гуманоид agibot x2 ultra",
+      "count": 28,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-1.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "аренда Agibot X2",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-2.wordstat.json",
+      "classification": "rental_intent_check_exact_entity"
+    },
+    {
+      "phrase": "Agibot X2 робот",
+      "count": 8,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-3.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "Agibot X2 характеристики",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-4.wordstat.json",
+      "classification": "informational_support_check_facts"
+    },
+    {
+      "phrase": "агибот x2",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot",
+      "count": 1342,
+      "countKind": "queried_total",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot",
+      "count": 1342,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот agibot",
+      "count": 250,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot x2",
+      "count": 138,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot a3",
+      "count": 135,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot c5",
+      "count": 134,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot x2 ultra",
+      "count": 105,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "agibot a2",
+      "count": 100,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot купить",
+      "count": 87,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "робот agibot a2",
+      "count": 64,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot d1",
+      "count": 49,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot компания",
+      "count": 41,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot robotics",
+      "count": 35,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot акции",
+      "count": 29,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "гуманоид agibot x2 ultra",
+      "count": 28,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "робот agibot c5",
+      "count": 27,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "роботы гуманоиды agibot",
+      "count": 23,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot d1 pro",
+      "count": 22,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot a3 купить",
+      "count": 21,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "робот уборщик agibot c5",
+      "count": 20,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot expedition a3",
+      "count": 17,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot с5",
+      "count": 16,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot c2",
+      "count": 16,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot g2",
+      "count": 16,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot a1",
+      "count": 14,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "купить agibot c5",
+      "count": 11,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "agibot казахстан",
+      "count": 11,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "agibot lingxi",
+      "count": 10,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "сервисный робот уборщик agibot c5",
+      "count": 10,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "робот agibot a2 ultra",
+      "count": 10,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "робот гуманоид a3 agibot",
+      "count": 8,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot a3 ultra",
+      "count": 7,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    },
+    {
+      "phrase": "agibot a2 как купить в россии",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "agibot новости про роботов",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот agibot a2 на русском языке модель",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-agibot-x2-extra-2.wordstat.json",
+      "classification": "exclude_other_model"
+    }
+  ],
+  "directlyQueriedRentals": [
+    {
+      "query": "аренда Agibot X2",
+      "count": 0,
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      }
+    }
+  ],
+  "faqResearchTopics": [
+    "X2 или X2 Ultra: какая комплектация сдаётся",
+    "какие движения и взаимодействия входят в демонстрацию",
+    "подготовка реплик/музыки и отличие от автономного диалога",
+    "состав услуги и факторы стоимости аренды именно этой модели"
+  ],
+  "faqTopicStatus": "editorial_customer_questions_not_claimed_measured_queries",
+  "blockMapping": {
+    "aiSummary": "модель/услуга, понятный формат взаимодействия, клиентская задача",
+    "capabilities": "подтверждённые функции, соответствующие изображению и заголовку",
+    "scenarios": "применимые к модели ситуации и результат для заказчика",
+    "faq": "не закрытые основным текстом вопросы выбора/заказа; без повторов",
+    "seoIntent": "точная сущность, модельные варианты, публичный canonical",
+    "media": "actualDescription без SEO; truthful seoAlt без служебных хвостов"
+  },
+  "exclusionPolicy": "General class/scenario demand is context for compilations; no copying purchase, other models/configurations or unrelated entities into this model rental copy. Counts overlap: never sum totals/rows or variants. Different periods are recorded verbatim.",
+  "remainingGates": [
+    "SERP and competitor gaps",
+    "manufacturer/business fact check",
+    "final model passport",
+    "copy and rendered audit",
+    "owner review"
+  ]
+}

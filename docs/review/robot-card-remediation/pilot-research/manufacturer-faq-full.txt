@@ -1,0 +1,1677 @@
+
+
+  #shopify-section-template--23883995316500__image_with_text_overlay_tTELRj {--section-outer-spacing-block: 0;--content-over-media-overlay: 0 0 0 / 0.1;}
+
+
+
+        SenseRobot Chess FAQView our detailed FAQs
+
+
+
+
+  #shopify-section-template--23883995316500__faq_8BMkCJ {
+    --section-background-hash: 0;
+  }
+
+  #shopify-section-template--23883995316500__faq_8BMkCJ + * {
+    --previous-section-background-hash: 0;
+  }
+  #shopify-section-template--23883995316500__faq_8BMkCJ {
+    --section-stack-intro: 60%;
+    --section-stack-main: 60%;
+  }
+
+
+
+
+        Business strategy
+
+
+  SenseRobot Product Introduction
+
+
+
+
+
+  SenseRobot is an AI-powered chess robot developed by SenseTime, blending cutting-edge artificial intelligence technology with the rich culture of chess. It offers interactive, real-world chessboard play, providing users with a highly immersive experience as a practice partner.SenseRobot features various difficulty levels, including multiple "Chess Power Challenge" modes and the "Peak Showdown" mode that exceeds human skill levels. Whether you're a beginner or a high-level professional, SenseRobot offers suitable difficulty levels for everyone. The robot also includes a "Puzzle Practice" mode with 2000+ handpicked puzzles designed to enhance your calculation abilities in a deeply immersive way.Leveraging SenseTime's advanced AI vision technology and robotic arm technology, SenseRobot can accurately detect chess piece positions and control its robotic arm to perform piece picking and placing with precision. This enables a truly "hands-on" chess experience. SenseTime aims to combine AI with the game of chess to better preserve and develop chess culture.
+
+  How many AI practice questions are available?
+
+
+
+
+
+  There are 2,000 questions in total. 1,200 questions were launched on September 25, and additional questions will be gradually added until the full 2,000 are available.
+
+
+
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+          "@type": "Question",
+          "name": "SenseRobot Product Introduction",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eSenseRobot is an AI-powered chess robot developed by SenseTime, blending cutting-edge artificial intelligence technology with the rich culture of chess. It offers interactive, real-world chessboard play, providing users with a highly immersive experience as a practice partner.\u003c\/p\u003e\u003cp\u003eSenseRobot features various difficulty levels, including multiple \"Chess Power Challenge\" modes and the \"Peak Showdown\" mode that exceeds human skill levels. Whether you're a beginner or a high-level professional, SenseRobot offers suitable difficulty levels for everyone. The robot also includes a \"Puzzle Practice\" mode with 2000+ handpicked puzzles designed to enhance your calculation abilities in a deeply immersive way.\u003c\/p\u003e\u003cp\u003eLeveraging SenseTime's advanced AI vision technology and robotic arm technology, SenseRobot can accurately detect chess piece positions and control its robotic arm to perform piece picking and placing with precision. This enables a truly \"hands-on\" chess experience. SenseTime aims to combine AI with the game of chess to better preserve and develop chess culture.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How many AI practice questions are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThere are 2,000 questions in total. 1,200 questions were launched on September 25, and additional questions will be gradually added until the full 2,000 are available.\u003c\/p\u003e"
+          }
+        }
+]
+  }
+
+
+
+
+  #shopify-section-template--23883995316500__faq_jymNKT {
+    --section-background-hash: 0;
+  }
+
+  #shopify-section-template--23883995316500__faq_jymNKT + * {
+    --previous-section-background-hash: 0;
+  }
+  #shopify-section-template--23883995316500__faq_jymNKT {
+    --section-stack-intro: 60%;
+    --section-stack-main: 60%;
+  }
+
+
+
+
+        Mobile APP
+
+
+  How to Download the SenseRobot Mobile App
+
+
+
+
+
+  SenseRobot is only available through the app. Please download the app before use:For newly manufactured robots, after powering on, a QR code will pop up with the prompt "Please scan the QR code to download the app and connect to the network." Scan the code to download the "SenseRobot" mobile app.You can also download it directly from the app store. For iPhones, go to the App Store. For Android phones, it will be available for download from the Android app store soon.Friendly reminder:App download link: https://jupiter.shyuhuankj.com/robot-public/m/download
+
+  What to Do If "Face ID Already Exists" Error Appears When Adding a Player?
+
+
+
+
+
+  This error occurs when the same face has already been registered. You can either use a different face or replace the previously registered Face ID to proceed.
+
+  How to Review a Game (Replay the Game)
+
+
+
+
+
+  Open the SenseRobot AI Chess App on your phone.Switch to the corresponding chess player account.On the homepage, you will see all your game records listed.Click on the game record you wish to review, and you can replay the game from that point.This allows you to go through your past matches and analyze your moves.
+
+  How to Unbind a Device
+
+
+
+
+
+  Open the SenseRobot AI Chess App on your phone.Go to Settings.Tap on Device Management.Select the target device you want to unbind.Scroll to the bottom and click on the Unbind button.This will unlink the device from your account.
+
+  How to Add a Chess Player
+
+
+
+
+
+  Open the SenseRobot AI Chess App on your phone.Go to Settings.Tap on Player Management.Add a new member by following the prompts.This will allow you to add a new player to your account.
+
+  How to Reflow Chessboard Data
+
+
+
+
+
+  Open the SenseRobot AI Chess App on your phone.Go to Settings.Tap on Device Management.Select the target device.Turn on the "Join User Experience Improvement Program" switch.This will enable the reflow of chessboard data to improve the overall user experience.
+
+  How to Switch Device Network
+
+
+
+
+
+  Open the SenseRobot AI Chess App.Go to Settings.Tap on Device Management.Select the target device.Click on "Switch Network".Choose the network and generate a QR code.On the robot, go to System Settings.Tap on Switch Network.Scan the QR code from the app to connect the robot to the new network.
+
+  How to delete your account on the SenseRobot AI Chess App?
+
+
+
+
+
+  Open the SenseRobot AI Chess App.Go to Settings.Tap on About.Scroll to the bottom and select "Delete Account".Note: Deleting your account will erase all data associated with that account. Even if you rebind the account later, the data cannot be restored.
+
+  Can the game data be shared?
+
+
+
+
+
+  Yes, it can. After opening the game record, click the menu in the top-right corner. Options like "Share with Friends," "Share to Moments," and "Game Info" will appear. You can choose the desired sharing option to complete the sharing process.
+
+
+
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+          "@type": "Question",
+          "name": "How to Download the SenseRobot Mobile App",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eSenseRobot is only available through the app. Please download the app before use:\u003c\/p\u003e\u003col\u003e\u003cli\u003eFor newly manufactured robots, after powering on, a QR code will pop up with the prompt \"Please scan the QR code to download the app and connect to the network.\" Scan the code to download the \"SenseRobot\" mobile app.\u003c\/li\u003e\u003cli\u003eYou can also download it directly from the app store. For iPhones, go to the App Store. For Android phones, it will be available for download from the Android app store soon.\u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003eFriendly reminder:\u003cbr\/\u003eApp download link: \u003ca href=\"https:\/\/jupiter.shyuhuankj.com\/robot-public\/m\/download\"\u003ehttps:\/\/jupiter.shyuhuankj.com\/robot-public\/m\/download\u003c\/a\u003e\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to Do If \"Face ID Already Exists\" Error Appears When Adding a Player?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThis error occurs when the same face has already been registered. You can either use a different face or replace the previously registered Face ID to proceed.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Review a Game (Replay the Game)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eOpen the SenseRobot AI Chess App on your phone.\u003c\/li\u003e\u003cli\u003eSwitch to the corresponding chess player account.\u003c\/li\u003e\u003cli\u003eOn the homepage, you will see all your game records listed.\u003c\/li\u003e\u003cli\u003eClick on the game record you wish to review, and you can replay the game from that point.\u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003eThis allows you to go through your past matches and analyze your moves.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Unbind a Device",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eOpen the SenseRobot AI Chess App on your phone.\u003c\/li\u003e\u003cli\u003eGo to Settings.\u003c\/li\u003e\u003cli\u003eTap on Device Management.\u003c\/li\u003e\u003cli\u003eSelect the target device you want to unbind.\u003c\/li\u003e\u003cli\u003eScroll to the bottom and click on the Unbind button.\u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003eThis will unlink the device from your account.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Add a Chess Player",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eOpen the SenseRobot AI Chess App on your phone.\u003c\/li\u003e\u003cli\u003eGo to Settings.\u003c\/li\u003e\u003cli\u003eTap on Player Management.\u003c\/li\u003e\u003cli\u003eAdd a new member by following the prompts.\u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003eThis will allow you to add a new player to your account.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Reflow Chessboard Data",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eOpen the SenseRobot AI Chess App on your phone.\u003c\/li\u003e\u003cli\u003eGo to Settings.\u003c\/li\u003e\u003cli\u003eTap on Device Management.\u003c\/li\u003e\u003cli\u003eSelect the target device.\u003c\/li\u003e\u003cli\u003eTurn on the \"Join User Experience Improvement Program\" switch.\u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003eThis will enable the reflow of chessboard data to improve the overall user experience.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Switch Device Network",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eOpen the SenseRobot AI Chess App.\u003c\/li\u003e\u003cli\u003eGo to Settings.\u003c\/li\u003e\u003cli\u003eTap on Device Management.\u003c\/li\u003e\u003cli\u003eSelect the target device.\u003c\/li\u003e\u003cli\u003eClick on \"Switch Network\".\u003c\/li\u003e\u003cli\u003eChoose the network and generate a QR code.\u003c\/li\u003e\u003cli\u003eOn the robot, go to System Settings.\u003c\/li\u003e\u003cli\u003eTap on Switch Network.\u003c\/li\u003e\u003cli\u003eScan the QR code from the app to connect the robot to the new network.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to delete your account on the SenseRobot AI Chess App?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eOpen the SenseRobot AI Chess App.\u003c\/li\u003e\u003cli\u003eGo to Settings.\u003c\/li\u003e\u003cli\u003eTap on About.\u003c\/li\u003e\u003cli\u003eScroll to the bottom and select \"Delete Account\".\u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003eNote: Deleting your account will erase all data associated with that account. Even if you rebind the account later, the data cannot be restored.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Can the game data be shared?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eYes, it can. After opening the game record, click the menu in the top-right corner. Options like \"Share with Friends,\" \"Share to Moments,\" and \"Game Info\" will appear. You can choose the desired sharing option to complete the sharing process.\u003c\/p\u003e"
+          }
+        }
+]
+  }
+
+
+
+
+  #shopify-section-template--23883995316500__faq_dBYiey {
+    --section-background-hash: 0;
+  }
+
+  #shopify-section-template--23883995316500__faq_dBYiey + * {
+    --previous-section-background-hash: 0;
+  }
+  #shopify-section-template--23883995316500__faq_dBYiey {
+    --section-stack-intro: 60%;
+    --section-stack-main: 60%;
+  }
+
+
+
+
+        Device usage
+
+
+  What to Do If Network Connection Fails During Initial Setup
+
+
+
+
+
+  Verify that the WiFi SSID and password entered are correct.Place the robot closer to the router. The robot supports both 2.4G and 5G WiFi bands.If the above steps don't resolve the issue, perform a factory reset and try to bind the device again.
+
+  Can the Product Be Used Without Registration?
+
+
+
+
+
+  While it is recommended to register a user profile via the mobile app and bind it to the robot, you can use the product in Guest Mode. However, note that in Guest Mode, chess game records will not be saved.Additionally, the product must remain plugged in during use. Please use a standard two-prong power adapter instead of USB.
+
+  Why Can't I Start a Chess Game?
+
+
+
+
+
+  Check if the chessboard is properly aligned and firmly attached.Ensure the USB cable between the chessboard and the robot is securely connected.
+
+  How to Update the Robot
+
+
+
+
+
+  The robot will notify you when a new update is available. Follow these steps:Regular Updates:When an update is available, a notification will appear on the main menu. Confirm the update to start downloading. Once the download is complete, the robot will automatically restart and display an upgrade progress bar. The entire process takes approximately 6 minutes.Manual Updates:If no update notification appears, go to System Settings > Check for Updates to manually initiate the process.
+
+  How to Register and Log in as a Player
+
+
+
+
+
+  Registration: After connecting the robot to WiFi, register a player account via the app. To enable face login, record your face in the app.Manual Login: Navigate to Settings > Player Switch List, select the desired player, and press "OK" to log in.Face Login: In Guest Mode, scan your face to log in Important Notes:After editing a player nickname, the robot will update the name on the main interface but will only announce the new name during the next login.The first-time login with a new nickname may experience a 5-second delay in greeting announcements. Subsequent logins will be immediate.
+
+  How Does the Robot Use Face Recognition?
+
+
+
+
+
+  Each player account has a unique learning and game record.The robot can automatically recognize players via face scanning during startup or when the "HOME" button is pressed for 2 seconds.
+
+  How to Switch Between Players
+
+
+
+
+
+  Use the robot’s menu: System Settings > Switch Player, and select the desired player.For players with Face IDs, press and hold the "HOME" button for 3 seconds in the main menu and scan the face to switch players quickly.
+
+  Is There a Professional Coach Available During Games?
+
+
+
+
+
+  No, the robot guides players automatically. If a rule is violated, it will notify you with the error and the reason.
+
+  How many levels are there in Challenge AI?
+
+
+
+
+
+  There are 25 levels in total. Levels 1-25 are based on local AI strength. Once you pass a level, it will be unlocked for offline use, but game records cannot be uploaded unless you're connected to the internet. You must remain online to save and upload your game data to the app.Beginner Levels:Levels 1-6 (ELO 200, 250, 300, 350, 400, 450)Intermediate Levels:Levels 7-10 (ELO 500, 550, 600, 700)Advanced Levels:Levels 11-15 (ELO 800, 900, 1000, 1100, 1200)Expert Levels:Levels 16-19 (ELO 1300, 1400, 1500, 1700)Master Levels:Levels 20-22 (ELO 1900, 2100, 2300)Grandmaster Levels:Levels 23-25 (ELO 2500, 2700, 2900)You can freely choose any level to challenge in the Beginner and Intermediate stages. Starting from the Intermediate levels, you must win three times at each level to unlock the next level.
+
+  How many levels are there in Apex Duel?
+
+
+
+
+
+  There are no levels in the Peak Showdown mode. It is a one-on-one battle against the highest AI strength with an ELO rating of 3200.
+
+  Offline Play: What is the Maximum Level Supported?
+
+
+
+
+
+  When offline, the highest level you can access is Levels 1-25.When connected to the internet, Levels 1-10 (Beginner and Intermediate) are unlocked by default.Starting from Level 11, you need to complete the previous levels to unlock the next ones.So, without internet, you'll be limited to the 1-25 levels that are already unlocked, but without saving or uploading your game progress.
+
+  Endgame Challenge: How Many Levels Are There?
+
+
+
+
+
+  The Endgame Challenge mode initially includes 145 preset endgame scenarios, divided as follows:Checkmate : 30 scenariosPawns : 30 scenariosMinor Pieces : 25 scenariosRooks : 15 scenariosQueens : 20 scenariosUneven Forces : 25 scenariosThese scenarios cover a variety of endgame situations to help improve strategic thinking and problem-solving skills.
+
+  How Many AI Game Records Are There?
+
+
+
+
+
+  There are 100 AI game records in total. These records feature a variety of classic and instructive games, and are valuable for studying different aspects of chess, including tactics, strategies, and openings.
+
+  How to Access Planet League Lichess?
+
+
+
+
+
+  Through the SenseRobot app:Open the app and switch to the desired player.Go to "Play" -> "Planet League" -> "My Account" -> Login. If you don't have an account, you can register. After successful registration, you can log in and link your Lichess account to your SenseRobot player.Through the SenseRobot device:On the robot, go to "Planet League" -> "Lichess".The robot will automatically match you for a game on Lichess.
+
+  Why Does the Opponent's Move Time Count Toward the User's Time in Lichess?
+
+
+
+
+
+  The Lichess platform does not have a time compensation or pause mechanism for the SenseRobot's mechanical arm and physical chessboard. As a result, when your opponent moves their pieces, the time spent on their move is counted as part of your time.If you are running low on time, you can take over the game on your mobile or PC to continue playing and manage your time more effectively.
+
+  Why Does Lichess Show a Mismatch in Color When Matching?
+
+
+
+
+
+  This is mainly because the SenseRobot chessboard's piece color (e.g., if you place black pieces, you are playing as black; if you place white pieces, you're playing as white) does not match the color assigned by the Lichess server.If the color mismatch occurs repeatedly, it may be due to restrictions set by the Lichess server. It's recommended to change the piece color on the SenseRobot chessboard to match the expected color. Be careful not to repeatedly try different colors, as this could risk getting your account flagged or banned.
+
+  Why Does the Robot Return the Piece to Its Original Position After a Move?
+
+
+
+
+
+  When making a move, the player must wait for the robot to complete its confirmation check before the move can be executed. If using the "no takebacks" mode, the player must remove their hand from the board after placing the piece. In move confirmation mode, the "Move Confirm" button must light up in blue before the move is made. If these conditions aren't met, the robot will revert the piece to the position before the blue light was activated.If the player violates the move rules, the robot will automatically return the piece to its original position.In no takebacks mode, if the board is obstructed (for example, by the player's hand), the robot may also return the piece.
+
+  How to Talk to the Robot
+
+
+
+
+
+  To communicate with the robot, press and hold the "OK" button on the chessboard. Once the robot shows a facial expression prompt, you can start talking to it. After you finish speaking, release the "OK" button. If you wish to interrupt the response, press the "Return" button. The robot can understand and respond to content related to Go
+
+  How to Check the Robot's Version and SN Number
+
+
+
+
+
+  To Check the SN:You can find the SN number on the robot's bottom nameplate.Alternatively, go to the "System Settings" menu on the robot, select "About This Device", then click Next Page to find the 18-character device code.To Check the Version:Go to the "System Settings" menu on the robot, select "About This Device", and you'll find the version information there.
+
+  How to Use the Voice Interaction Feature
+
+
+
+
+
+  To use voice interaction, press and hold the "OK" button on the chessboard. This will activate the robot's voice response system. The screen will display the question you're asking and the response from the AI model. You can release the "OK" button when you're done speaking, or press the "Return" button to interrupt the response.Important Notes:If the network is stable, you should receive a response within 2 seconds. If the network is poor and no response is received after 5 seconds, it will time out and show a message: "Service not responding, please try again later."The maximum duration for a voice request is 30 seconds. If you hold the "OK" button for more than 30 seconds, the robot will automatically stop listening and provide a response at the 30-second mark.This feature requires a network connection to work. It is recommended to use the voice interaction in a location with a stable network.Voice interaction is only available in the main menu. It is not supported in tutorials, evaluations, startup guide videos, QR code scanning screens, or AI sales modes.
+
+  When Can the Player Start Making Moves?
+
+
+
+
+
+  There are two types of move modes that can be switched in the System Settings -> Game Settings. The default mode is Move Confirmation.Move Confirmation Mode: After the robot makes a move, the Move Confirm button on the chessboard will light up in blue. The player must press the "Move Confirm" button to make their move.No Regret Mode: In this mode, the player does not need to press a confirmation button. Simply place the piece and move your hand away from the board to confirm the move.
+
+  How to Undo a Move?
+
+
+
+
+
+  During a game, press the Back button to open the menu. From there, you can select Undo Move. You can undo a move up to 3 times in a single game.
+
+  How Long Does It Take for the Robot to Set Up the Chessboard?
+
+
+
+
+
+  The robot supports both automatic chessboard setup and interactive setup with the player. Before a game starts, the robot will automatically set up the chess pieces. The time it takes to set up depends on the arrangement of the pieces on the board.The robot typically takes about 3 to 5 minutes to complete the setup.Players can also set up the pieces alongside the robot, but it’s recommended not to place pieces of the same color or place the same piece at the same time as the robot.In general, the robot will fully set up the board within this time frame.
+
+  Power Usage Duration and Potential for Natural Damage
+
+
+
+
+
+  The likelihood of natural damage to the power supply is low. However, if the adapter shows no visible damage but the robot fails to power on, it is recommended to send the entire unit for inspection and testing.This will ensure any underlying issues with the power supply or internal components are properly addressed.
+
+
+
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+          "@type": "Question",
+          "name": "What to Do If Network Connection Fails During Initial Setup",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eVerify that the WiFi SSID and password entered are correct.\u003c\/li\u003e\u003cli\u003ePlace the robot closer to the router. The robot supports both 2.4G and 5G WiFi bands.\u003c\/li\u003e\u003cli\u003eIf the above steps don't resolve the issue, perform a factory reset and try to bind the device again.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Can the Product Be Used Without Registration?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eWhile it is recommended to register a user profile via the mobile app and bind it to the robot, you can use the product in Guest Mode. However, note that in Guest Mode, chess game records will not be saved.\u003c\/p\u003e\u003cp\u003eAdditionally, the product must remain plugged in during use. Please use a standard two-prong power adapter instead of USB.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Why Can't I Start a Chess Game?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eCheck if the chessboard is properly aligned and firmly attached.\u003c\/li\u003e\u003cli\u003eEnsure the USB cable between the chessboard and the robot is securely connected.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Update the Robot",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThe robot will notify you when a new update is available. Follow these steps:\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eRegular Updates:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eWhen an update is available, a notification will appear on the main menu. Confirm the update to start downloading. Once the download is complete, the robot will automatically restart and display an upgrade progress bar. The entire process takes approximately 6 minutes.\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003e\u003cstrong\u003eManual Updates:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eIf no update notification appears, go to \u003cstrong\u003eSystem Settings \u0026gt; Check for Updates\u003c\/strong\u003e to manually initiate the process.\u003c\/li\u003e\u003c\/ul\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Register and Log in as a Player",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eRegistration: After connecting the robot to WiFi, register a player account via the app. To enable face login, record your face in the app.\u003c\/li\u003e\u003cli\u003eManual Login: Navigate to Settings \u0026gt; Player Switch List, select the desired player, and press \"OK\" to log in.\u003c\/li\u003e\u003cli\u003eFace Login: In Guest Mode, scan your face to log in \u003c\/li\u003e\u003c\/ol\u003e\u003cp\u003e\u003cstrong\u003eImportant Notes:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eAfter editing a player nickname, the robot will update the name on the main interface but will only announce the new name during the next login.\u003c\/li\u003e\u003cli\u003eThe first-time login with a new nickname may experience a 5-second delay in greeting announcements. Subsequent logins will be immediate.\u003c\/li\u003e\u003c\/ul\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How Does the Robot Use Face Recognition?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eEach player account has a unique learning and game record.\u003c\/li\u003e\u003cli\u003eThe robot can automatically recognize players via face scanning during startup or when the \"HOME\" button is pressed for 2 seconds.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Switch Between Players",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eUse the robot’s menu: \u003cstrong\u003eSystem Settings \u0026gt; Switch Player\u003c\/strong\u003e, and select the desired player.\u003c\/li\u003e\u003cli\u003eFor players with Face IDs, press and hold the \"HOME\" button for 3 seconds in the main menu and scan the face to switch players quickly.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Is There a Professional Coach Available During Games?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eNo, the robot guides players automatically. If a rule is violated, it will notify you with the error and the reason.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How many levels are there in Challenge AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThere are 25 levels in total. Levels 1-25 are based on local AI strength. Once you pass a level, it will be unlocked for offline use, but game records cannot be uploaded unless you're connected to the internet. You must remain online to save and upload your game data to the app.\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eBeginner Levels:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eLevels 1-6 (ELO 200, 250, 300, 350, 400, 450)\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003e\u003cstrong\u003eIntermediate Levels:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eLevels 7-10 (ELO 500, 550, 600, 700)\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003e\u003cstrong\u003eAdvanced Levels:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eLevels 11-15 (ELO 800, 900, 1000, 1100, 1200)\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003e\u003cstrong\u003eExpert Levels:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eLevels 16-19 (ELO 1300, 1400, 1500, 1700)\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003e\u003cstrong\u003eMaster Levels:\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003eLevels 20-22 (ELO 1900, 2100, 2300)\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eGrandmaster Levels:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eLevels 23-25 (ELO 2500, 2700, 2900)\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003eYou can freely choose any level to challenge in the Beginner and Intermediate stages. Starting from the Intermediate levels, you must win three times at each level to unlock the next level.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How many levels are there in Apex Duel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThere are no levels in the \u003cstrong\u003ePeak Showdown\u003c\/strong\u003e mode. It is a one-on-one battle against the highest AI strength with an \u003cstrong\u003eELO rating of 3200\u003c\/strong\u003e.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Offline Play: What is the Maximum Level Supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eWhen offline, the highest level you can access is \u003cstrong\u003eLevels 1-25\u003c\/strong\u003e.\u003c\/p\u003e\u003cul\u003e\u003cli\u003eWhen connected to the internet, Levels 1-10 (Beginner and Intermediate) are unlocked by default.\u003c\/li\u003e\u003cli\u003eStarting from Level 11, you need to complete the previous levels to unlock the next ones.\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003eSo, without internet, you'll be limited to the 1-25 levels that are already unlocked, but without saving or uploading your game progress.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Endgame Challenge: How Many Levels Are There?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThe Endgame Challenge mode initially includes 145 preset endgame scenarios, divided as follows:\u003c\/p\u003e\u003cul\u003e\u003cli\u003e\u003cstrong\u003eCheckmate \u003c\/strong\u003e: 30 scenarios\u003c\/li\u003e\u003cli\u003e\u003cstrong\u003ePawns \u003c\/strong\u003e: 30 scenarios\u003c\/li\u003e\u003cli\u003e\u003cstrong\u003eMinor Pieces \u003c\/strong\u003e: 25 scenarios\u003c\/li\u003e\u003cli\u003e\u003cstrong\u003eRooks \u003c\/strong\u003e: 15 scenarios\u003c\/li\u003e\u003cli\u003e\u003cstrong\u003eQueens \u003c\/strong\u003e: 20 scenarios\u003c\/li\u003e\u003cli\u003e\u003cstrong\u003eUneven Forces \u003c\/strong\u003e: 25 scenarios\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003eThese scenarios cover a variety of endgame situations to help improve strategic thinking and problem-solving skills.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How Many AI Game Records Are There?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThere are 100 AI game records in total. These records feature a variety of classic and instructive games, and are valuable for studying different aspects of chess, including tactics, strategies, and openings.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Access Planet League Lichess?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003e\u003cstrong\u003eThrough the SenseRobot app:\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003eOpen the app and switch to the desired player.\u003c\/p\u003e\u003cp\u003eGo to \"Play\" -\u0026gt; \"Planet League\" -\u0026gt; \"My Account\" -\u0026gt; Login. If you don't have an account, you can register. After successful registration, you can log in and link your Lichess account to your SenseRobot player.\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eThrough the SenseRobot device:\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003eOn the robot, go to \"Planet League\" -\u0026gt; \"Lichess\".\u003c\/p\u003e\u003cp\u003eThe robot will automatically match you for a game on Lichess.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Why Does the Opponent's Move Time Count Toward the User's Time in Lichess?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eThe Lichess platform does not have a time compensation or pause mechanism for the SenseRobot's mechanical arm and physical chessboard. As a result, when your opponent moves their pieces, the time spent on their move is counted as part of your time.\u003c\/li\u003e\u003cli\u003eIf you are running low on time, you can take over the game on your mobile or PC to continue playing and manage your time more effectively.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Why Does Lichess Show a Mismatch in Color When Matching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eThis is mainly because the SenseRobot chessboard's piece color (e.g., if you place black pieces, you are playing as black; if you place white pieces, you're playing as white) does not match the color assigned by the Lichess server.\u003c\/li\u003e\u003cli\u003eIf the color mismatch occurs repeatedly, it may be due to restrictions set by the Lichess server. It's recommended to change the piece color on the SenseRobot chessboard to match the expected color. Be careful not to repeatedly try different colors, as this could risk getting your account flagged or banned.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Why Does the Robot Return the Piece to Its Original Position After a Move?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eWhen making a move, the player must wait for the robot to complete its confirmation check before the move can be executed. If using the \"no takebacks\" mode, the player must remove their hand from the board after placing the piece. In move confirmation mode, the \"Move Confirm\" button must light up in blue before the move is made. If these conditions aren't met, the robot will revert the piece to the position before the blue light was activated.\u003c\/li\u003e\u003cli\u003eIf the player violates the move rules, the robot will automatically return the piece to its original position.\u003c\/li\u003e\u003cli\u003eIn no takebacks mode, if the board is obstructed (for example, by the player's hand), the robot may also return the piece.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Talk to the Robot",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eTo communicate with the robot, press and hold the \"OK\" button on the chessboard. Once the robot shows a facial expression prompt, you can start talking to it. After you finish speaking, release the \"OK\" button. If you wish to interrupt the response, press the \"Return\" button. The robot can understand and respond to content related to Go\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Check the Robot's Version and SN Number",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003e\u003cstrong\u003eTo Check the SN:\u003c\/strong\u003e\u003c\/p\u003e\u003cul\u003e\u003cli\u003eYou can find the SN number on the robot's bottom nameplate.\u003c\/li\u003e\u003cli\u003eAlternatively, go to the \"System Settings\" menu on the robot, select \"About This Device\", then click Next Page to find the 18-character device code.\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003e\u003cstrong\u003eTo Check the Version:\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003eGo to the \u003cstrong\u003e\"System Settings\"\u003c\/strong\u003e menu on the robot, select \u003cstrong\u003e\"About This Device\"\u003c\/strong\u003e, and you'll find the \u003cstrong\u003eversion information\u003c\/strong\u003e there.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Use the Voice Interaction Feature",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003e\u003cstrong\u003eTo use voice interaction\u003c\/strong\u003e, press and hold the \u003cstrong\u003e\"OK\" button\u003c\/strong\u003e on the chessboard. This will activate the robot's voice response system. The screen will display the question you're asking and the response from the AI model. You can release the \u003cstrong\u003e\"OK\" button\u003c\/strong\u003e when you're done speaking, or press the \u003cstrong\u003e\"Return\"\u003c\/strong\u003e button to interrupt the response.\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eImportant Notes:\u003c\/strong\u003e\u003c\/p\u003e\u003col\u003e\u003cli\u003eIf the network is stable, you should receive a response within 2 seconds. If the network is poor and no response is received after 5 seconds, it will time out and show a message: \"Service not responding, please try again later.\"\u003c\/li\u003e\u003cli\u003eThe maximum duration for a voice request is 30 seconds. If you hold the \"OK\" button for more than 30 seconds, the robot will automatically stop listening and provide a response at the 30-second mark.\u003c\/li\u003e\u003cli\u003eThis feature requires a network connection to work. It is recommended to use the voice interaction in a location with a stable network.\u003c\/li\u003e\u003cli\u003eVoice interaction is only available in the main menu. It is not supported in tutorials, evaluations, startup guide videos, QR code scanning screens, or AI sales modes.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "When Can the Player Start Making Moves?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThere are two types of move modes that can be switched in the \u003cstrong\u003eSystem Settings -\u0026gt; Game Settings\u003c\/strong\u003e. The default mode is \u003cstrong\u003eMove Confirmation\u003c\/strong\u003e.\u003c\/p\u003e\u003col\u003e\u003cli\u003e\u003cstrong\u003eMove Confirmation Mode\u003c\/strong\u003e: After the robot makes a move, the \u003cstrong\u003eMove Confirm\u003c\/strong\u003e button on the chessboard will light up in blue. The player must press the \u003cstrong\u003e\"Move Confirm\"\u003c\/strong\u003e button to make their move.\u003c\/li\u003e\u003cli\u003e\u003cstrong\u003eNo Regret Mode\u003c\/strong\u003e: In this mode, the player does not need to press a confirmation button. Simply place the piece and move your hand away from the board to confirm the move.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How to Undo a Move?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eDuring a game, press the Back button to open the menu. From there, you can select Undo Move. You can undo a move up to 3 times in a single game.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "How Long Does It Take for the Robot to Set Up the Chessboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThe robot supports both \u003cstrong\u003eautomatic chessboard setup\u003c\/strong\u003e and \u003cstrong\u003einteractive setup\u003c\/strong\u003e with the player. Before a game starts, the robot will automatically set up the chess pieces. The time it takes to set up depends on the arrangement of the pieces on the board.\u003c\/p\u003e\u003cul\u003e\u003cli\u003eThe robot typically takes about \u003cstrong\u003e3 to 5 minutes\u003c\/strong\u003e to complete the setup.\u003c\/li\u003e\u003cli\u003ePlayers can also set up the pieces alongside the robot, but it’s recommended not to place pieces of the same color or place the same piece at the same time as the robot.\u003c\/li\u003e\u003c\/ul\u003e\u003cp\u003eIn general, the robot will fully set up the board within this time frame.\u003c\/p\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "Power Usage Duration and Potential for Natural Damage",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eThe likelihood of natural damage to the power supply is low. However, if the adapter shows no visible damage but the robot fails to power on, it is recommended to \u003cstrong\u003esend the entire unit for inspection and testing\u003c\/strong\u003e.\u003c\/p\u003e\u003cp\u003eThis will ensure any underlying issues with the power supply or internal components are properly addressed.\u003c\/p\u003e"
+          }
+        }
+]
+  }
+
+
+
+
+  #shopify-section-template--23883995316500__faq_rYFBdz {
+    --section-background-hash: 0;
+  }
+
+  #shopify-section-template--23883995316500__faq_rYFBdz + * {
+    --previous-section-background-hash: 0;
+  }
+  #shopify-section-template--23883995316500__faq_rYFBdz {
+    --section-stack-intro: 60%;
+    --section-stack-main: 60%;
+  }
+
+
+
+
+        Device fault diagnosis
+
+
+  How to fix piece placement misalignment or edge pressure?
+
+
+
+
+
+  Check if the chessboard and the machine’s clips are tightly aligned and if the board is placed flat.If the board was moved after powering on, exit the game and restart it.During use, avoid touching the robot’s chessboard camera or the camera rod.
+
+  What to do if the robotic arm fails to pick up a piece (empty grab)?
+
+
+
+
+
+  Check if the chessboard and the machine’s clips are securely attached and ensure the board is level.If the chessboard was moved after powering on, exit the game and restart it.Simultaneously placing pieces by both the user and the robot may cause empty grabs.
+
+  What to do if the robotic arm doesn’t move after placing pieces?
+
+
+
+
+
+  Ensure the chessboard is level and the data cable is properly connected.On the robot's main menu screen, move the robotic arm. If the robot responds with “Please don’t touch my little arm; if it breaks, I won’t be able to play with you anymore,” this indicates the arm and camera are functioning normally.If the robot gets stuck on the startup screen after a power cycle and does not proceed to the main menu, the chessboard camera may be broken and needs to be returned for inspection.If the chessboard camera’s calibration parameters are missing, it will require a factory recalibration.
+
+  What to do if the robot reports “There is an obstruction on the chessboard”?
+
+
+
+
+
+  Check if there are any obstructions on the chessboard grid area. If so, remove the obstruction, and the issue should resolve automatically.If there are no obstructions but the robot continues to report an obstruction, try restarting the machine to resolve the issue. Alternatively, you may need to enable data flow for analysis (turn on the “User Experience Improvement Plan” in the mobile app and provide the robot’s SN).
+
+  What to do if there is a misjudgment of the piece's position in "No Undo" mode?
+
+
+
+
+
+  In the "No Undo" mode, as long as there are no obstructions, the robot will assume a move has been made once the piece is placed. To avoid misjudgments:Ensure your hand remains on the chessboard until the piece is in its final position, and only remove your hand after the move is confirmed.Special caution is needed if you briefly hold the piece near the edge of the board. The robot may mistakenly detect the piece and think it has been moved, even if it hasn’t been placed yet.In case of such a misjudgment, you can press the “Return” button to undo the move and correct the position.
+
+  What to do if the "Move Confirm" button light on the chessboard turns off?
+
+
+
+
+
+  First, check if the "No Undo" feature is enabled. Go to "System Settings" → "Game Settings" and confirm whether the "No Undo" function is turned on. If enabled, the light will turn off; if disabled, the light will be on.Check the Type-C connection cable on the chessboard to ensure it is properly connected. Try unplugging and reconnecting it to confirm a good connection.
+
+  What to do if the chessboard is mistakenly reported as blocked during the game?
+
+
+
+
+
+  Check if there are any objects obstructing the chessboard. After making a move, ensure your hand is completely removed from the board.In "No Undo" mode, the system expects the move to be completed within 10 seconds. If not, it may incorrectly report a blockage.
+
+  What to do if the robot's claw bumps or touches other pieces during a game?
+
+
+
+
+
+  The robot's mechanical arm needs to open the claw to pick up pieces. If two pieces are placed too close together, the claw may accidentally touch other nearby pieces, especially flat-topped pieces like the "rook" or "queen."To avoid this issue, it's recommended to manually move the pieces apart or place them in their correct positions. Avoid clustering pieces together to make it easier for the robot to pick them up.
+
+  What to do if the robot's forearm doesn't lift during the piece setup process?
+
+
+
+
+
+  When the robot is powered on for the first time, the forearm should automatically lift. If it doesn't, try turning the power off and on again to reset the system.After the forearm has been lifted, users should avoid manually pressing down on it. Pressing down could affect the robot's ability to pick up and place pieces correctly.
+
+  What to do if some buttons on the robot are not working (e.g., only the down or right button works, but up, left, or return buttons don't)?
+
+
+
+
+
+  Unplug and replug the USB connection between the chessboard and the robot.If the issue persists, try reversing the direction of the USB cable connection. This should restore normal button functionality.
+
+
+
+
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+          "@type": "Question",
+          "name": "How to fix piece placement misalignment or edge pressure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eCheck if the chessboard and the machine’s clips are tightly aligned and if the board is placed flat.\u003c\/li\u003e\u003cli\u003eIf the board was moved after powering on, exit the game and restart it.\u003c\/li\u003e\u003cli\u003eDuring use, avoid touching the robot’s chessboard camera or the camera rod.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the robotic arm fails to pick up a piece (empty grab)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eCheck if the chessboard and the machine’s clips are securely attached and ensure the board is level.\u003c\/li\u003e\u003cli\u003eIf the chessboard was moved after powering on, exit the game and restart it.\u003c\/li\u003e\u003cli\u003eSimultaneously placing pieces by both the user and the robot may cause empty grabs.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the robotic arm doesn’t move after placing pieces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eEnsure the chessboard is level and the data cable is properly connected.\u003c\/li\u003e\u003cli\u003eOn the robot's main menu screen, move the robotic arm. If the robot responds with “Please don’t touch my little arm; if it breaks, I won’t be able to play with you anymore,” this indicates the arm and camera are functioning normally.\u003c\/li\u003e\u003cli\u003eIf the robot gets stuck on the startup screen after a power cycle and does not proceed to the main menu, the chessboard camera may be broken and needs to be returned for inspection.\u003c\/li\u003e\u003cli\u003eIf the chessboard camera’s calibration parameters are missing, it will require a factory recalibration.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the robot reports “There is an obstruction on the chessboard”?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eCheck if there are any obstructions on the chessboard grid area. If so, remove the obstruction, and the issue should resolve automatically.\u003c\/li\u003e\u003cli\u003eIf there are no obstructions but the robot continues to report an obstruction, try restarting the machine to resolve the issue. Alternatively, you may need to enable data flow for analysis (turn on the “User Experience Improvement Plan” in the mobile app and provide the robot’s SN).\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if there is a misjudgment of the piece's position in \"No Undo\" mode?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003cp\u003eIn the \"No Undo\" mode, as long as there are no obstructions, the robot will assume a move has been made once the piece is placed. To avoid misjudgments:\u003c\/p\u003e\u003col\u003e\u003cli\u003eEnsure your hand remains on the chessboard until the piece is in its final position, and only remove your hand after the move is confirmed.\u003c\/li\u003e\u003cli\u003eSpecial caution is needed if you briefly hold the piece near the edge of the board. The robot may mistakenly detect the piece and think it has been moved, even if it hasn’t been placed yet.\u003c\/li\u003e\u003cli\u003eIn case of such a misjudgment, you can press the “Return” button to undo the move and correct the position.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the \"Move Confirm\" button light on the chessboard turns off?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eFirst, check if the \"No Undo\" feature is enabled. Go to \"System Settings\" → \"Game Settings\" and confirm whether the \"No Undo\" function is turned on. If enabled, the light will turn off; if disabled, the light will be on.\u003c\/li\u003e\u003cli\u003eCheck the Type-C connection cable on the chessboard to ensure it is properly connected. Try unplugging and reconnecting it to confirm a good connection.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the chessboard is mistakenly reported as blocked during the game?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eCheck if there are any objects obstructing the chessboard. After making a move, ensure your hand is completely removed from the board.\u003c\/li\u003e\u003cli\u003eIn \"No Undo\" mode, the system expects the move to be completed within 10 seconds. If not, it may incorrectly report a blockage.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the robot's claw bumps or touches other pieces during a game?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eThe robot's mechanical arm needs to open the claw to pick up pieces. If two pieces are placed too close together, the claw may accidentally touch other nearby pieces, especially flat-topped pieces like the \"rook\" or \"queen.\"\u003c\/li\u003e\u003cli\u003eTo avoid this issue, it's recommended to manually move the pieces apart or place them in their correct positions. Avoid clustering pieces together to make it easier for the robot to pick them up.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if the robot's forearm doesn't lift during the piece setup process?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eWhen the robot is powered on for the first time, the forearm should automatically lift. If it doesn't, try turning the power off and on again to reset the system.\u003c\/li\u003e\u003cli\u003eAfter the forearm has been lifted, users should avoid manually pressing down on it. Pressing down could affect the robot's ability to pick up and place pieces correctly.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        },
+{
+          "@type": "Question",
+          "name": "What to do if some buttons on the robot are not working (e.g., only the down or right button works, but up, left, or return buttons don't)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\u003col\u003e\u003cli\u003eUnplug and replug the USB connection between the chessboard and the robot.\u003c\/li\u003e\u003cli\u003eIf the issue persists, try reversing the direction of the USB cable connection. This should restore normal button functionality.\u003c\/li\u003e\u003c\/ol\u003e"
+          }
+        }
+]
+  }
+
+
+
+
+  #shopify-section-template--23883995316500__contact_tp6EAF {
+    --section-background-hash: 0;
+  }
+
+  #shopify-section-template--23883995316500__contact_tp6EAF + * {
+    --previous-section-background-hash: 0;
+  }
+  #shopify-section-template--23883995316500__contact_tp6EAF {
+    --section-stack-intro: 66.6667%;
+    --section-stack-main: 58.3334%;
+  }
+
+
+
+        Do you have any question?If you have any further questions or need support, feel free to contact us via email
+
+      NameE-mailMessage
+
+
+Send message
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1000px) {
+    #shopify-section-sections--23761989370132__footer {--footer-block-list-gap: var(--spacing-10);--footer-block-list-justify-content: space-between;
+    }
+  }
+
+
+    Explore & Support
+                          Shop
+
+                          Contact Us
+
+                          Help Center
+
+                          Order Tracker
+
+                          About Us
+
+                          News & Blogs
+
+                          SenseRobot App
+
+                          PSTI Statement of Compliance
+
+                  Policies
+                          Privacy Policy
+
+                          Refund Policy
+
+                          Shipping Policy
+
+                          Warranty Policy
+
+                          Terms Of Service
+
+                          Security Policy
+
+                  Partnership
+                          Become a Reseller
+
+                          Affiliate Program
+
+                  Where to Buy
+                          Amazon
+
+                          Costco
+
+                          Official Distributor
+
+                  Sign up for new stories and personal offersStay updated with the latest stories and exclusive deals just for you！E-mail
+
+          Subscribe
+
+
+      Customer Service: service@senserobotchess.com
+                     Business Inquiries: marketing@senserobotchess.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        USD $
+
+
+
+
+
+        Country
+
+                Afghanistan (USD $)
+
+
+                Åland Islands (USD $)
+
+
+                Albania (USD $)
+
+
+                Algeria (USD $)
+
+
+                Andorra (USD $)
+
+
+                Angola (USD $)
+
+
+                Anguilla (USD $)
+
+
+                Antigua & Barbuda (USD $)
+
+
+                Argentina (USD $)
+
+
+                Armenia (USD $)
+
+
+                Aruba (USD $)
+
+
+                Ascension Island (USD $)
+
+
+                Australia (USD $)
+
+
+                Austria (USD $)
+
+
+                Azerbaijan (USD $)
+
+
+                Bahamas (USD $)
+
+
+                Bahrain (USD $)
+
+
+                Bangladesh (USD $)
+
+
+                Barbados (USD $)
+
+
+                Belarus (USD $)
+
+
+                Belgium (USD $)
+
+
+                Belize (USD $)
+
+
+                Benin (USD $)
+
+
+                Bermuda (USD $)
+
+
+                Bhutan (USD $)
+
+
+                Bolivia (USD $)
+
+
+                Bosnia & Herzegovina (USD $)
+
+
+                Botswana (USD $)
+
+
+                Brazil (USD $)
+
+
+                British Indian Ocean Territory (USD $)
+
+
+                British Virgin Islands (USD $)
+
+
+                Brunei (USD $)
+
+
+                Bulgaria (USD $)
+
+
+                Burkina Faso (USD $)
+
+
+                Burundi (USD $)
+
+
+                Cambodia (USD $)
+
+
+                Cameroon (USD $)
+
+
+                Canada (USD $)
+
+
+                Cape Verde (USD $)
+
+
+                Caribbean Netherlands (USD $)
+
+
+                Cayman Islands (USD $)
+
+
+                Central African Republic (USD $)
+
+
+                Chad (USD $)
+
+
+                Chile (USD $)
+
+
+                Christmas Island (USD $)
+
+
+                Cocos (Keeling) Islands (USD $)
+
+
+                Colombia (USD $)
+
+
+                Comoros (USD $)
+
+
+                Congo - Brazzaville (USD $)
+
+
+                Congo - Kinshasa (USD $)
+
+
+                Cook Islands (USD $)
+
+
+                Costa Rica (USD $)
+
+
+                Côte d’Ivoire (USD $)
+
+
+                Croatia (USD $)
+
+
+                Curaçao (USD $)
+
+
+                Cyprus (USD $)
+
+
+                Czechia (USD $)
+
+
+                Denmark (USD $)
+
+
+                Djibouti (USD $)
+
+
+                Dominica (USD $)
+
+
+                Dominican Republic (USD $)
+
+
+                Ecuador (USD $)
+
+
+                Egypt (USD $)
+
+
+                El Salvador (USD $)
+
+
+                Equatorial Guinea (USD $)
+
+
+                Eritrea (USD $)
+
+
+                Estonia (USD $)
+
+
+                Eswatini (USD $)
+
+
+                Ethiopia (USD $)
+
+
+                Falkland Islands (USD $)
+
+
+                Faroe Islands (USD $)
+
+
+                Fiji (USD $)
+
+
+                Finland (USD $)
+
+
+                France (USD $)
+
+
+                French Guiana (USD $)
+
+
+                French Polynesia (USD $)
+
+
+                French Southern Territories (USD $)
+
+
+                Gabon (USD $)
+
+
+                Gambia (USD $)
+
+
+                Georgia (USD $)
+
+
+                Germany (USD $)
+
+
+                Ghana (USD $)
+
+
+                Gibraltar (USD $)
+
+
+                Greece (USD $)
+
+
+                Greenland (USD $)
+
+
+                Grenada (USD $)
+
+
+                Guadeloupe (USD $)
+
+
+                Guatemala (USD $)
+
+
+                Guernsey (USD $)
+
+
+                Guinea (USD $)
+
+
+                Guinea-Bissau (USD $)
+
+
+                Guyana (USD $)
+
+
+                Haiti (USD $)
+
+
+                Honduras (USD $)
+
+
+                Hong Kong SAR (USD $)
+
+
+                Hungary (USD $)
+
+
+                Iceland (USD $)
+
+
+                India (USD $)
+
+
+                Indonesia (USD $)
+
+
+                Iraq (USD $)
+
+
+                Ireland (USD $)
+
+
+                Isle of Man (USD $)
+
+
+                Israel (USD $)
+
+
+                Italy (USD $)
+
+
+                Jamaica (USD $)
+
+
+                Japan (USD $)
+
+
+                Jersey (USD $)
+
+
+                Jordan (USD $)
+
+
+                Kazakhstan (USD $)
+
+
+                Kenya (USD $)
+
+
+                Kiribati (USD $)
+
+
+                Kosovo (USD $)
+
+
+                Kuwait (USD $)
+
+
+                Kyrgyzstan (USD $)
+
+
+                Laos (USD $)
+
+
+                Latvia (USD $)
+
+
+                Lebanon (USD $)
+
+
+                Lesotho (USD $)
+
+
+                Liberia (USD $)
+
+
+                Libya (USD $)
+
+
+                Liechtenstein (USD $)
+
+
+                Lithuania (USD $)
+
+
+                Luxembourg (USD $)
+
+
+                Macao SAR (USD $)
+
+
+                Madagascar (USD $)
+
+
+                Malawi (USD $)
+
+
+                Malaysia (USD $)
+
+
+                Maldives (USD $)
+
+
+                Mali (USD $)
+
+
+                Malta (USD $)
+
+
+                Martinique (USD $)
+
+
+                Mauritania (USD $)
+
+
+                Mauritius (USD $)
+
+
+                Mayotte (USD $)
+
+
+                Mexico (USD $)
+
+
+                Moldova (USD $)
+
+
+                Monaco (USD $)
+
+
+                Mongolia (USD $)
+
+
+                Montenegro (USD $)
+
+
+                Montserrat (USD $)
+
+
+                Morocco (USD $)
+
+
+                Mozambique (USD $)
+
+
+                Myanmar (Burma) (USD $)
+
+
+                Namibia (USD $)
+
+
+                Nauru (USD $)
+
+
+                Nepal (USD $)
+
+
+                Netherlands (USD $)
+
+
+                New Caledonia (USD $)
+
+
+                New Zealand (USD $)
+
+
+                Nicaragua (USD $)
+
+
+                Niger (USD $)
+
+
+                Nigeria (USD $)
+
+
+                Niue (USD $)
+
+
+                Norfolk Island (USD $)
+
+
+                North Macedonia (USD $)
+
+
+                Norway (USD $)
+
+
+                Oman (USD $)
+
+
+                Pakistan (USD $)
+
+
+                Palestinian Territories (USD $)
+
+
+                Panama (USD $)
+
+
+                Papua New Guinea (USD $)
+
+
+                Paraguay (USD $)
+
+
+                Peru (USD $)
+
+
+                Philippines (USD $)
+
+
+                Pitcairn Islands (USD $)
+
+
+                Poland (USD $)
+
+
+                Portugal (USD $)
+
+
+                Qatar (USD $)
+
+
+                Réunion (USD $)
+
+
+                Romania (USD $)
+
+
+                Rwanda (USD $)
+
+
+                Samoa (USD $)
+
+
+                San Marino (USD $)
+
+
+                São Tomé & Príncipe (USD $)
+
+
+                Saudi Arabia (USD $)
+
+
+                Senegal (USD $)
+
+
+                Serbia (USD $)
+
+
+                Seychelles (USD $)
+
+
+                Sierra Leone (USD $)
+
+
+                Singapore (USD $)
+
+
+                Sint Maarten (USD $)
+
+
+                Slovakia (USD $)
+
+
+                Slovenia (USD $)
+
+
+                Solomon Islands (USD $)
+
+
+                Somalia (USD $)
+
+
+                South Africa (USD $)
+
+
+                South Georgia & South Sandwich Islands (USD $)
+
+
+                South Korea (USD $)
+
+
+                South Sudan (USD $)
+
+
+                Spain (USD $)
+
+
+                Sri Lanka (USD $)
+
+
+                St. Barthélemy (USD $)
+
+
+                St. Helena (USD $)
+
+
+                St. Kitts & Nevis (USD $)
+
+
+                St. Lucia (USD $)
+
+
+                St. Martin (USD $)
+
+
+                St. Pierre & Miquelon (USD $)
+
+
+                St. Vincent & Grenadines (USD $)
+
+
+                Sudan (USD $)
+
+
+                Suriname (USD $)
+
+
+                Svalbard & Jan Mayen (USD $)
+
+
+                Sweden (USD $)
+
+
+                Switzerland (USD $)
+
+
+                Taiwan (USD $)
+
+
+                Tajikistan (USD $)
+
+
+                Tanzania (USD $)
+
+
+                Thailand (USD $)
+
+
+                Timor-Leste (USD $)
+
+
+                Togo (USD $)
+
+
+                Tokelau (USD $)
+
+
+                Tonga (USD $)
+
+
+                Trinidad & Tobago (USD $)
+
+
+                Tristan da Cunha (USD $)
+
+
+                Tunisia (USD $)
+
+
+                Turkmenistan (USD $)
+
+
+                Turks & Caicos Islands (USD $)
+
+
+                Tuvalu (USD $)
+
+
+                U.S. Outlying Islands (USD $)
+
+
+                Uganda (USD $)
+
+
+                Ukraine (USD $)
+
+
+                United Arab Emirates (USD $)
+
+
+                United Kingdom (USD $)
+
+
+                United States (USD $)
+
+
+                Uruguay (USD $)
+
+
+                Uzbekistan (USD $)
+
+
+                Vanuatu (USD $)
+
+
+                Vatican City (USD $)
+
+
+                Venezuela (USD $)
+
+
+                Vietnam (USD $)
+
+
+                Wallis & Futuna (USD $)
+
+
+                Western Sahara (USD $)
+
+
+                Yemen (USD $)
+
+
+                Zambia (USD $)
+
+
+                Zimbabwe (USD $)
+
+
+
+        English
+
+
+
+
+        LanguageEnglish简体中文FrançaisDeutsch
+    American Express
+Apple Pay
+Google Pay
+Mastercard
+PayPalShop Pay
+Union PayVisa
+
+            © 2026, SenseRobot (Hong Kong) Technology Limited. Powered by Shopify

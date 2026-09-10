@@ -1,0 +1,693 @@
+{
+  "slug": "arenda-noetix-bumi",
+  "model": "Noetix Bumi",
+  "canonicalPath": "/robots/arenda-noetix-bumi/",
+  "wordstatStatus": "checked_live",
+  "queryCount": 6,
+  "primaryCandidate": "аренда Noetix Bumi",
+  "primaryStatus": "existing_model_intent_candidate_pending_SERP_not_a_final_rewritten_passport",
+  "keywordEvidence": [
+    {
+      "phrase": "Noetix Bumi",
+      "count": 106,
+      "countKind": "queried_total",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix bumi",
+      "count": 106,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот noetix bumi",
+      "count": 38,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix robotics bumi",
+      "count": 31,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот гуманоид noetix bumi",
+      "count": 29,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix bumi купить",
+      "count": 27,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "робот гуманоид noetix robotics bumi",
+      "count": 18,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix bumi lite",
+      "count": 8,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix robotics bumi купить",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-1.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "аренда Noetix Bumi",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-2.wordstat.json",
+      "classification": "rental_intent_check_exact_entity"
+    },
+    {
+      "phrase": "Noetix Bumi робот",
+      "count": 38,
+      "countKind": "queried_total",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-3.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот noetix bumi",
+      "count": 38,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-3.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот гуманоид noetix bumi",
+      "count": 29,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-3.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот гуманоид noetix robotics bumi",
+      "count": 18,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-3.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "Noetix Bumi характеристики",
+      "count": 3,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-4.wordstat.json",
+      "classification": "informational_support_check_facts"
+    },
+    {
+      "phrase": "буми робот",
+      "count": 22,
+      "countKind": "queried_total",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот буми",
+      "count": 22,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "купить робота буми",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-1.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "bumi",
+      "count": 869,
+      "countKind": "queried_total",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi",
+      "count": 869,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix bumi",
+      "count": 106,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот bumi",
+      "count": 75,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bersama bumi",
+      "count": 69,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "tumbuh bersama bumi",
+      "count": 65,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "bumi128 link sang penjaga bumi",
+      "count": 44,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот noetix bumi",
+      "count": 38,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "tumbuh bersama bumi скачать",
+      "count": 32,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "bumi купить",
+      "count": 32,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "песня tumbuh bersama bumi",
+      "count": 32,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "noetix robotics bumi",
+      "count": 31,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот гуманоид bumi",
+      "count": 30,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "скачать песню tumbuh bersama bumi",
+      "count": 29,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "робот гуманоид noetix bumi",
+      "count": 29,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi armada",
+      "count": 27,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "noetix bumi купить",
+      "count": 27,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "kisa belakang toph bumi menghancurja",
+      "count": 23,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот гуманоид noetix robotics bumi",
+      "count": 18,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi ул ватутина 28",
+      "count": 18,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi cosplays",
+      "count": 17,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "ремонт роботов bumi",
+      "count": 16,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi langit",
+      "count": 16,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi парикмахерская",
+      "count": 15,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi игра",
+      "count": 13,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi armada berhad",
+      "count": 12,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "aku lah ikan terseram di bumi",
+      "count": 12,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "рубашка bumi",
+      "count": 9,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix bumi lite",
+      "count": 8,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi robot",
+      "count": 7,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "thalita sang bumi",
+      "count": 7,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "adaro или bumi",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "comparison_article_bridge"
+    },
+    {
+      "phrase": "bumi cosplays слив",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "noetix robotics bumi купить",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_purchase_parts_investment"
+    },
+    {
+      "phrase": "bumi 128",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "барбершоп bumi",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "bumi armada caspian",
+      "count": 6,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "tumbuh bersama bumi meet ceeper",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "exclude_non_rental_or_other_entity"
+    },
+    {
+      "phrase": "meraba vagina terbesar di bumi",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот bumi от songyan power",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот bumi lite",
+      "count": 5,
+      "countKind": "visible_table_row",
+      "period": {
+        "start": "10.08.2026",
+        "end": "08.09.2026"
+      },
+      "evidence": "raw/arenda-noetix-bumi-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    }
+  ],
+  "directlyQueriedRentals": [
+    {
+      "query": "аренда Noetix Bumi",
+      "count": 0,
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      }
+    }
+  ],
+  "faqResearchTopics": [
+    "какие показы доступны у конкретного Bumi",
+    "формат взаимодействия с детьми и оператором",
+    "язык/приложение/режим управления и ограничения",
+    "состав услуги и факторы стоимости аренды именно этой модели"
+  ],
+  "faqTopicStatus": "editorial_customer_questions_not_claimed_measured_queries",
+  "blockMapping": {
+    "aiSummary": "модель/услуга, понятный формат взаимодействия, клиентская задача",
+    "capabilities": "подтверждённые функции, соответствующие изображению и заголовку",
+    "scenarios": "применимые к модели ситуации и результат для заказчика",
+    "faq": "не закрытые основным текстом вопросы выбора/заказа; без повторов",
+    "seoIntent": "точная сущность, модельные варианты, публичный canonical",
+    "media": "actualDescription без SEO; truthful seoAlt без служебных хвостов"
+  },
+  "exclusionPolicy": "General class/scenario demand is context for compilations; no copying purchase, other models/configurations or unrelated entities into this model rental copy. Counts overlap: never sum totals/rows or variants. Different periods are recorded verbatim.",
+  "remainingGates": [
+    "SERP and competitor gaps",
+    "manufacturer/business fact check",
+    "final model passport",
+    "copy and rendered audit",
+    "owner review"
+  ]
+}

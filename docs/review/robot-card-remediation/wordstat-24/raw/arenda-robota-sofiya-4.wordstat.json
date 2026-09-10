@@ -1,0 +1,22 @@
+{
+  "slug": "arenda-robota-sofiya",
+  "query": "робот софия возможности",
+  "id": "arenda-robota-sofiya-4",
+  "status": "checked_live",
+  "source": "https://wordstat.yandex.ru/",
+  "accessMethod": "user_dedicated_visible_chrome_cdp",
+  "collectedAt": "2026-09-10T16:49:02.920Z",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D1%80%D0%BE%D0%B1%D0%BE%D1%82%20%D1%81%D0%BE%D1%84%D0%B8%D1%8F%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8",
+  "region": "all",
+  "devices": "default (capture UI for verification)",
+  "period": {
+    "start": "09.08.2026",
+    "end": "09.09.2026"
+  },
+  "total": 0,
+  "rows": [],
+  "tableState": "no_suitable_rows_visible",
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nробот софия возможности\n \nза 09.08.2026 – 09.09.2026: 0\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "attribution": "Яндекс Wordstat — https://wordstat.yandex.ru/",
+  "screenshot": "arenda-robota-sofiya-4.png"
+}
