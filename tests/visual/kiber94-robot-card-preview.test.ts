@@ -97,7 +97,7 @@ test('KIBER-94 Unitree G1 included service matches owner reference block placeme
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
-  const includedLeadMatch = componentSource.match(/const includedServiceLead = '([^']+)'/);
+  const includedLeadMatch = componentSource.match(/const includedServiceLead = (?:isContentPilot \? '[^']+' : )?'([^']+)'/);
   assert.ok(includedLeadMatch, 'included service lead must be a named owner-copy constant');
   const includedLeadLength = [...includedLeadMatch[1]].length;
   assert.ok(includedLeadLength >= 300 && includedLeadLength <= 350, `included service lead length must be 300-350 chars, got ${includedLeadLength}`);
@@ -131,7 +131,7 @@ test('KIBER-94 Unitree G1 order flow matches owner reference with long lead and 
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
-  const orderFlowLeadMatch = componentSource.match(/const orderFlowLead = '([^']+)'/);
+  const orderFlowLeadMatch = componentSource.match(/const orderFlowLead = (?:isContentPilot \? '[^']+' : )?'([^']+)'/);
   assert.ok(orderFlowLeadMatch, 'order flow lead must be a named owner-copy constant');
   const orderFlowLeadLength = [...orderFlowLeadMatch[1]].length;
   assert.ok(orderFlowLeadLength >= 300 && orderFlowLeadLength <= 350, `order flow lead length must be 300-350 chars, got ${orderFlowLeadLength}`);
@@ -237,7 +237,7 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   assert.match(componentSource, /const quickCtaNoWrap = template\.robot\.priceDisplay/);
   assert.match(componentSource, /titleNoWrap: quickCtaNoWrap/);
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp'/);
-  assert.match(componentSource, /alt: 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
+  assert.match(componentSource, /alt: (?:isContentPilot \? '[^']+' : )?'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
   assert.match(componentSource, /const robotFinalCta = \{[\s\S]*\.\.\.homeRobotCardFinalCta/);
   assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);

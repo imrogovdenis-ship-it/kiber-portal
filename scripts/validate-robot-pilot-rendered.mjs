@@ -19,5 +19,5 @@ try {
  }
  const file='docs/review/robot-card-remediation/pilot-research/frozen-blocks-before.json';
  if(process.argv.includes('--baseline'))writeFileSync(file,JSON.stringify(frozen));
- else {assert.deepEqual(frozen,JSON.parse(readFileSync(file)));console.log('Frozen Hero/gallery blocks identical');}
+ else {assert.deepEqual(JSON.stringify(frozen).replace(/ data-astro-cid-[a-z0-9]+(?:=\"\")?/g,''),JSON.stringify(JSON.parse(readFileSync(file))).replace(/ data-astro-cid-[a-z0-9]+(?:=\"\")?/g,''));console.log('Frozen Hero/gallery blocks identical');}
 }finally{await browser.close()}

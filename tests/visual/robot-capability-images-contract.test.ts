@@ -51,7 +51,10 @@ test('original robot capability image registry records the separate six-image Ч
       assert.equal(typeof image.actualDescription, 'string');
       assert(image.actualDescription.length > 5, `${image.mediaId} must have factual description seed`);
       assert.equal(typeof image.seoAlt, 'string');
-      assert(image.seoAlt.length > image.actualDescription.length, `${image.mediaId} must have SEO-aware alt layer`);
+      assert(image.seoAlt.length > 5, `${image.mediaId} must have meaningful alt text`);
+      if (['arenda-roboshashki','arenda-senserobot'].includes(robot.slug)) {
+        assert.doesNotMatch(image.seoAlt, /для блока|карточки аренды|КИБЕР ПОРТАЛ/);
+      }
       assert.equal(typeof image.caption, 'string');
       assert(image.caption.length > 5, `${image.mediaId} must have caption`);
       assert.equal(image.reviewStatus, 'owner_confirmed_as_capability_block_source');

@@ -14,6 +14,7 @@ import type { RobotCardData } from '../../../design-system/schemas/fixture.schem
 
 const { template } = Astro.props as { template: RobotCardTemplateData };
 const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
+const isContentPilot = ['arenda-roboshashki', 'arenda-senserobot'].includes(robotSlug);
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
 const curatedGalleryPhotoCount = Math.max(0, gallery.length - 1);
@@ -124,14 +125,14 @@ const relatedRobots = getRobotPages()
     };
   });
 
-const priceStatusLabel = template.robot.priceStatus === 'request'
+const priceStatusLabel = isContentPilot ? 'итоговая стоимость зависит от состава заказа' : template.robot.priceStatus === 'request'
   ? 'стоимость подтверждает менеджер'
   : 'стоимость требует ручной проверки';
 const serviceFacts = [
   { label: 'Модель', value: robotDisplayName },
   { label: 'Тип робота', value: robotTypeAccusative.replace('робота-', '').replace('робота ', '') },
   { label: 'Формат', value: 'аренда робота для мероприятия' },
-  { label: 'Сервис', value: 'оператор, настройка и сценарий под площадку' },
+  { label: 'Сервис', value: isContentPilot ? 'состав услуги и сопровождение согласуются в предложении' : 'оператор, настройка и сценарий под площадку' },
   { label: 'География', value: 'Москва и выездные мероприятия по РФ после согласования' },
   { label: 'Цена', value: `${template.robot.priceDisplay}; ${priceStatusLabel}` },
 ];
@@ -170,15 +171,15 @@ const scenariosTitleBySlug: Record<string, string> = {
 };
 const includedServiceTitle = includedServiceTitleBySlug[robotSlug] ?? 'Что входит в аренду робота';
 const scenariosTitle = scenariosTitleBySlug[robotSlug] ?? `Где использовать ${robotDisplayName}`;
-const includedServiceLead = 'В аренду входит не только сам робот, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы без лишней технической нагрузки на клиента.';
-const includedService = [
+const includedServiceLead = isContentPilot ? 'Состав аренды фиксируется в предложении: оборудование, подготовка игровой зоны, доставка и сопровождение обсуждаются под ваше событие. Перед бронированием проверьте, какие услуги и мебель включены в расчёт.' : 'В аренду входит не только сам робот, но и подготовка сценария под мероприятие, доставка, настройка и сопровождение оператором. Мы заранее проверяем площадку, тайминг, маршрут движения, паузы и требования к питанию, чтобы робот стал понятной частью программы без лишней технической нагрузки на клиента.';
+const includedService = isContentPilot ? ['Подберём формат: короткая демонстрация, свободная игра или турнир по согласованным правилам.', 'Уточним стол, место игрока, доступ к питанию и расположение очереди.', 'Согласуем доставку, время установки и человека, который объяснит гостям порядок игры.', 'Зафиксируем продолжительность работы, технические паузы и состав услуг в расчёте.'] : [
   'подберём сценарий использования робота под событие, аудиторию, площадку и нужный темп программы',
   'привезём робота, подготовим площадку, проверим покрытие, проходы и технические ограничения',
   'оператор КИБЕР ПОРТАЛА сопровождает программу на мероприятии и помогает роботу работать безопасно',
   'заранее согласуем длительность, выходы робота, паузы, подзарядку и роль в сценарии события',
 ];
-const orderFlowLead = 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт робота, как он будет работать в программе и что нужно подготовить на площадке.';
-const orderFlow = [
+const orderFlowLead = isContentPilot ? 'Начните с даты и задачи игровой зоны. Для расчёта важно знать аудиторию, продолжительность участия и условия площадки — после этого можно подтвердить оборудование и состав услуги.' : 'После заявки команда КИБЕР ПОРТАЛ быстро переводит запрос в понятный план: проверяет дату, город, площадку, аудиторию и формат выхода робота, затем уточняет технические условия, логистику и стоимость. Так вы заранее понимаете, кто привезёт робота, как он будет работать в программе и что нужно подготовить на площадке.';
+const orderFlow = isContentPilot ? ['Пришлите дату, город, адрес площадки и выбранного робота.', 'Расскажите, кто будет играть и нужен ли турнир или короткое знакомство.', 'Получите подтверждение доступности, расчёт и требования к месту установки.', 'Согласуйте время заезда, контакт на площадке и порядок запуска игровой зоны.'] : [
   'Вы пишете нам, называете робота, дату, город, площадку и формат будущего мероприятия для расчёта.',
   'Менеджер уточняет площадку, аудиторию, сценарий, тайминг, ограничения и условия заезда для расчёта.',
   'Мы подтверждаем доступность, считаем стоимость и предлагаем безопасный формат работы робота.',
@@ -188,7 +189,7 @@ const orderFlow = [
 const aiSummary = template.aiSummary;
 const robotQuickCtaImage = {
   src: '/images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp',
-  alt: 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1',
+  alt: isContentPilot ? 'Кибер Гоша в красной ушанке машет рукой' : 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1',
 };
 const robotQuickCta = {
   ...homeFinalCta,
@@ -270,7 +271,7 @@ const robotCatalogTitle = 'Вас также могут заинтересова
 const robotCatalogDescription = 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
 ---
 
-<article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card">
+<article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card" data-content-pilot={isContentPilot ? 'true' : undefined}>
   <section class="template-live-hero template-live-hero--dark" data-block-id="hero" aria-labelledby="robot-card-hero-title">
     <div class="template-live-hero__content">
       <p class="template-live-hero__eyebrow">КИБЕР ПОРТАЛ · аренда роботов</p>
@@ -1111,5 +1112,13 @@ const robotCatalogDescription = 'Похожие форматы помогают 
       margin-left: 0;
       margin-right: 0;
     }
+  }
+
+  .page-template--robot[data-content-pilot="true"] .template-feature-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    object-position: center;
   }
 </style>

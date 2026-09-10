@@ -13,15 +13,14 @@
     "visualContractTests": {
       "passed": 254,
       "failed": 0
-    }
+    },
+    "mediaResponsiveChecks": "6 passed; final WebP encoding verified in staged check",
+    "targetedUpdatedTests": "26 passed"
   },
   "pending": [
-    "individual capability image review and factual alt",
-    "capability geometry correction",
-    "remaining lower blocks, related articles and recommendations",
-    "responsive browser QA",
-    "protected staging update and owner review"
+    "protected staging verification and owner review"
   ],
   "stagingUpdated": false,
-  "productionUpdated": false
+  "productionUpdated": false,
+  "articleDecision": "No directly relevant approved chess/checkers articles: omit rather than relabel humanoid articles"
 }
