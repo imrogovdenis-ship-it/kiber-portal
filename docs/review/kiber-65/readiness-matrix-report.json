@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-65",
   "status": "passed_with_production_blockers",
-  "generatedAt": "2026-09-06T13:52:51.452Z",
+  "generatedAt": "2026-09-10T13:21:40.522Z",
   "areas": {
     "forms": "green_preview_safe",
     "analytics": "green_provider_neutral_deferred",
@@ -9,9 +9,9 @@
     "sitemap": "green",
     "redirects": "green"
   },
-  "routesChecked": 37,
+  "routesChecked": 43,
   "robotRoutesChecked": 24,
-  "sitemapUrls": 31,
+  "sitemapUrls": 35,
   "redirectsChecked": 2,
   "leadRoutingEnabled": false,
   "leadDestinations": 0,

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
@@ -10,6 +11,8 @@ const registry = json('data/review/media-rights-registry.json');
 const cards = json('data/review/media-rights-robot-cards.json');
 const homepageAssets = json('data/review/homepage-owner-media-assets.json');
 const robots = json('src/content/robots.generated.json').robots;
+const mappedHeroJson = execFileSync(process.execPath, ['--import','tsx','--input-type=module','-e', "import {getRobotPages} from './src/lib/robot-pages.ts'; import {toRobotCardTemplateData} from './src/lib/kiber94-robot-template-data.ts'; console.log(JSON.stringify(Object.fromEntries(getRobotPages().map(r=>[r.slug,toRobotCardTemplateData(r).robot.gallery[0]]))));"], {cwd:root,encoding:'utf8'});
+const approvedRenderedHeroes = JSON.parse(mappedHeroJson);
 const reportPath = resolve(root, 'docs/review/media-rights/approved-media-rendering-report.json');
 
 const failures = [];
@@ -73,15 +76,15 @@ for (const robot of robots) {
     continue;
   }
   const html = read(htmlPath);
-  if (!html.includes('robot-page__media')) failures.push(`${robot.slug}: rendered page missing robot-page__media`);
-  const tag = firstImageInside(html, 'robot-page__media');
+  if (!html.includes('template-live-hero__media')) failures.push(`${robot.slug}: rendered page missing template-live-hero__media`);
+  const tag = firstImageInside(html, 'template-live-hero__media');
   const tags = tag ? [tag] : [];
   if (tags.length !== 1) failures.push(`${robot.slug}: expected exactly one robot-page hero image, got ${tags.length}`);
   for (const tag of tags) {
     const src = decodeAttr(attr(tag, 'src'));
     const alt = decodeAttr(attr(tag, 'alt'));
     if (src !== robot.media.hero.src) failures.push(`${robot.slug}: rendered hero src ${src} does not match generated hero ${robot.media.hero.src}`);
-    if (alt !== robot.media.hero.alt) failures.push(`${robot.slug}: rendered hero alt drifted from generated media alt`);
+    if (alt !== approvedRenderedHeroes[robot.slug].alt) failures.push(`${robot.slug}: rendered hero alt drifted from approved renderer media alt`);
     if (!approvedBySrc.has(src)) failures.push(`${robot.slug}: rendered hero src ${src} is not present in approved media-rights-robot-cards.json`);
     if (!alt || alt.length < 20) failures.push(`${robot.slug}: rendered hero alt is missing or too short`);
   }

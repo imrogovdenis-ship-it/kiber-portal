@@ -723,23 +723,11 @@
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
         "evidenceRequired": true,
         "approvedAt": null
-      }
-    },
-    {
-      "id": "page:/roboty-sobaki/",
-      "type": "launch_page",
-      "route": "/roboty-sobaki/",
-      "template": "category",
-      "structuralStatus": "accepted_structurally",
-      "finalApprovalStatus": "needs_human_review",
-      "reviewFlags": [
-        "needs_human_final_content_approval",
-        "owner_structural_approval_not_final_business_legal"
-      ],
-      "approval": {
-        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
-        "evidenceRequired": true,
-        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
       }
     },
     {
@@ -779,24 +767,6 @@
       }
     },
     {
-      "id": "page:/news/",
-      "type": "launch_page",
-      "route": "/news/",
-      "template": "news-index",
-      "structuralStatus": "accepted_structurally",
-      "finalApprovalStatus": "needs_human_review",
-      "reviewFlags": [
-        "needs_editorial_content_review",
-        "needs_human_final_content_approval",
-        "owner_structural_approval_not_final_business_legal"
-      ],
-      "approval": {
-        "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
-        "evidenceRequired": true,
-        "approvedAt": null
-      }
-    },
-    {
       "id": "page:/contacts/",
       "type": "launch_page",
       "route": "/contacts/",
@@ -812,6 +782,132 @@
         "ownerRequired": "КИБЕР ПОРТАЛ human content/legal reviewer",
         "evidenceRequired": true,
         "approvedAt": null
+      }
+    },
+    {
+      "id": "page:/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "type": "launch_page",
+      "route": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "final_release_runtime_and_publication_permission_pending"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
+      }
+    },
+    {
+      "id": "page:/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "type": "launch_page",
+      "route": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "final_release_runtime_and_publication_permission_pending"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
+      }
+    },
+    {
+      "id": "page:/articles/unitree-g1-na-korporative/",
+      "type": "launch_page",
+      "route": "/articles/unitree-g1-na-korporative/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "final_release_runtime_and_publication_permission_pending"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
+      }
+    },
+    {
+      "id": "page:/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "type": "launch_page",
+      "route": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "final_release_runtime_and_publication_permission_pending"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
+      }
+    },
+    {
+      "id": "page:/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "type": "launch_page",
+      "route": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "final_release_runtime_and_publication_permission_pending"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
+      }
+    },
+    {
+      "id": "page:/articles/sravnenie-unitree-g1-r1-h2/",
+      "type": "launch_page",
+      "route": "/articles/sravnenie-unitree-g1-r1-h2/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "final_release_runtime_and_publication_permission_pending"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_and_visual_not_production",
+        "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
       }
     }
   ],

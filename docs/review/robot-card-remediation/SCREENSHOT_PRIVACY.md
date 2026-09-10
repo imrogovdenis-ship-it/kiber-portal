@@ -1,0 +1,1 @@
+Research screenshot copies in this public repository have the top-right account/header area masked (260 × 120 pixels). Local original captures are retained privately. Query tables/text data are unchanged. This privacy mask is not part of the original source page.

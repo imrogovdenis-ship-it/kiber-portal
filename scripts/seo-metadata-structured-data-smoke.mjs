@@ -106,6 +106,10 @@ for (const route of launchRoutes) {
   } else if (route.template === 'robot-detail') {
     assert.ok(types.includes('Service'), `${route.path}: Service JSON-LD required`);
     assert.ok(types.includes('BreadcrumbList'), `${route.path}: BreadcrumbList JSON-LD required`);
+  } else if (route.template === 'article-detail') {
+    assert.ok(types.includes('BlogPosting'), `${route.path}: BlogPosting JSON-LD required`);
+    assert.ok(types.includes('BreadcrumbList'), `${route.path}: BreadcrumbList JSON-LD required`);
+    assert.ok(types.includes('FAQPage'), `${route.path}: FAQPage JSON-LD required`);
   } else if (route.path === '/contacts/') {
     assert.ok(types.includes('ContactPage'), `${route.path}: ContactPage JSON-LD required`);
   } else {

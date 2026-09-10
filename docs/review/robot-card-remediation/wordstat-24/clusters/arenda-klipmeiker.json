@@ -1,0 +1,96 @@
+{
+  "slug": "arenda-klipmeiker",
+  "model": "Клипмейкер",
+  "canonicalPath": "/robots/arenda-klipmeiker/",
+  "wordstatStatus": "checked_live",
+  "queryCount": 4,
+  "primaryCandidate": "аренда Клипмейкер",
+  "primaryStatus": "existing_model_intent_candidate_pending_SERP_not_a_final_rewritten_passport",
+  "keywordEvidence": [
+    {
+      "phrase": "робот клипмейкер",
+      "count": 2,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-klipmeiker-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "аренда клипмейкера",
+      "count": 1,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-klipmeiker-2.wordstat.json",
+      "classification": "rental_intent_check_exact_entity"
+    },
+    {
+      "phrase": "робот видеооператор",
+      "count": 7,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-klipmeiker-3.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "робот камера аренда",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-klipmeiker-4.wordstat.json",
+      "classification": "rental_intent_check_exact_entity"
+    }
+  ],
+  "directlyQueriedRentals": [
+    {
+      "query": "аренда клипмейкера",
+      "count": 1,
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      }
+    },
+    {
+      "query": "робот камера аренда",
+      "count": 0,
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      }
+    }
+  ],
+  "faqResearchTopics": [
+    "отличие Клипмейкера от GlamBot",
+    "сценарий движения камеры и итоговый формат ролика",
+    "выдача видео, брендирование и время обработки",
+    "состав услуги и факторы стоимости аренды именно этой модели"
+  ],
+  "faqTopicStatus": "editorial_customer_questions_not_claimed_measured_queries",
+  "blockMapping": {
+    "aiSummary": "модель/услуга, понятный формат взаимодействия, клиентская задача",
+    "capabilities": "подтверждённые функции, соответствующие изображению и заголовку",
+    "scenarios": "применимые к модели ситуации и результат для заказчика",
+    "faq": "не закрытые основным текстом вопросы выбора/заказа; без повторов",
+    "seoIntent": "точная сущность, модельные варианты, публичный canonical",
+    "media": "actualDescription без SEO; truthful seoAlt без служебных хвостов"
+  },
+  "exclusionPolicy": "General class/scenario demand is context for compilations; no copying purchase, other models/configurations or unrelated entities into this model rental copy. Counts overlap: never sum totals/rows or variants. Different periods are recorded verbatim.",
+  "remainingGates": [
+    "SERP and competitor gaps",
+    "manufacturer/business fact check",
+    "final model passport",
+    "copy and rendered audit",
+    "owner review"
+  ]
+}

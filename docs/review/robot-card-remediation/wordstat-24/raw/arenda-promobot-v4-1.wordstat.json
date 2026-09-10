@@ -1,0 +1,31 @@
+{
+  "slug": "arenda-promobot-v4",
+  "query": "Promobot V4",
+  "id": "arenda-promobot-v4-1",
+  "status": "checked_live",
+  "source": "https://wordstat.yandex.ru/",
+  "accessMethod": "user_dedicated_visible_chrome_cdp",
+  "collectedAt": "2026-09-10T16:45:51.239Z",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=Promobot%20V4",
+  "region": "all",
+  "devices": "default (capture UI for verification)",
+  "period": {
+    "start": "10.08.2026",
+    "end": "08.09.2026"
+  },
+  "total": 24,
+  "rows": [
+    {
+      "phrase": "promobot v4",
+      "count": 24
+    },
+    {
+      "phrase": "купить аккумулятор на promobot v4",
+      "count": 6
+    }
+  ],
+  "tableState": "rows_visible",
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nPromobot V4\n \nза 10.08.2026 – 08.09.2026: 24\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+promobot v4\t24\n+купить аккумулятор на promobot v4\t6\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "attribution": "Яндекс Wordstat — https://wordstat.yandex.ru/",
+  "screenshot": "arenda-promobot-v4-1.png"
+}

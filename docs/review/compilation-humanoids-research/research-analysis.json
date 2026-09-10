@@ -1,0 +1,149 @@
+{
+  "status": "research_complete_for_content_draft",
+  "wordstat": [
+    {
+      "query": "аренда робота гуманоида",
+      "period": {
+        "from": "10.08.2026",
+        "to": "08.09.2026"
+      },
+      "total": 78,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "аренда гуманоида",
+      "period": {
+        "from": "10.08.2026",
+        "to": "08.09.2026"
+      },
+      "total": 95,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "аренда роботов гуманоидов",
+      "period": {
+        "from": "10.08.2026",
+        "to": "08.09.2026"
+      },
+      "total": 78,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "прокат робота гуманоида",
+      "period": {
+        "from": "09.08.2026",
+        "to": "09.09.2026"
+      },
+      "total": 2,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "человекоподобный робот аренда",
+      "period": {
+        "from": "09.08.2026",
+        "to": "09.09.2026"
+      },
+      "total": 7,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "робот андроид аренда",
+      "period": {
+        "from": "09.08.2026",
+        "to": "09.09.2026"
+      },
+      "total": 2,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "робот гуманоид на мероприятие",
+      "period": {
+        "from": "09.08.2026",
+        "to": "09.09.2026"
+      },
+      "total": 4,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "заказать робота гуманоида",
+      "period": {
+        "from": "10.08.2026",
+        "to": "08.09.2026"
+      },
+      "total": 42,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "аренда робота гуманоида москва",
+      "period": {
+        "from": "09.08.2026",
+        "to": "09.09.2026"
+      },
+      "total": 2,
+      "source": "yandex_wordstat_visible_cdp"
+    },
+    {
+      "query": "робот гуманоид",
+      "period": {
+        "from": "10.08.2026",
+        "to": "08.09.2026"
+      },
+      "total": 9421,
+      "source": "yandex_wordstat_visible_cdp"
+    }
+  ],
+  "wordstatCaveats": [
+    "unquoted phrase frequencies overlap; do not sum",
+    "periods differ by query; preserve raw period",
+    "broad robot humanoid and order query are not pure rental intent"
+  ],
+  "serp": {
+    "queries": 3,
+    "region": "as returned by authenticated browser; Moscow intent via explicit query, no forced location filter",
+    "adHandling": "Yandex ad redirect links excluded from organic shortlist",
+    "competitorPagesRead": [
+      "https://gumanoids.ru/arenda/",
+      "https://qubot.ru/arenda",
+      "https://robort.ru/lease/unitree-g1/",
+      "https://arendarobota.com/androidy"
+    ]
+  },
+  "competitorFindings": [
+    {
+      "url": "https://gumanoids.ru/arenda/",
+      "strength": "Clear category rental offer, four relevant models, explicit inclusions and booking lead time",
+      "gap": "Retrieved page is short; no detailed model-selection guide or venue checklist",
+      "avoidCopying": "charge for entire event and fixed booking time are competitor promises, not KIBER facts"
+    },
+    {
+      "url": "https://qubot.ru/arenda",
+      "strength": "Visible prices, model configurations, six scenarios and concrete event examples",
+      "gap": "Mixes humanoids, dogs and promoters; not a focused comparison of seven humanoids",
+      "avoidCopying": "any scenario without limits; unverified case and fleet claims"
+    },
+    {
+      "url": "https://robort.ru/lease/unitree-g1/",
+      "strength": "G1 configuration differences, removable battery, gallery, commercial request path",
+      "gap": "Single model rather than category-selection guide; rental and purchase contexts mixed",
+      "avoidCopying": "competitor prices and model specifications without primary-source check"
+    },
+    {
+      "url": "https://arendarobota.com/androidy",
+      "strength": "Large catalog with prices and several anthropomorphic formats",
+      "gap": "Category combines full humanoids, torsos, wheeled promoters and props; customer needs explicit distinctions"
+    }
+  ],
+  "contentStrategy": [
+    "Seven explicit model choices with honest distinction between walking robots and communication androids",
+    "Match venue role, movement and interaction to model; no universal capability claims",
+    "Use approved KIBER pricing and specify billing unit; no cross-site price comparisons",
+    "Approved local event media and direct links to existing model pages",
+    "Relevant links to approved six articles for deeper questions; keep compilation commercially useful",
+    "No placeholder video, internal editorial notes, unready article recommendations"
+  ],
+  "openQuestions": [
+    "Video is optional for MVP; no real clip provided",
+    "Confirm pricing/configuration from canonical robot data before content; no invented service inclusions"
+  ],
+  "nextStage": "fact/media mapping and compilation content package; approved template only"
+}

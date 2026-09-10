@@ -1,0 +1,75 @@
+{
+  "slug": "arenda-bellabot",
+  "query": "BellaBot",
+  "id": "arenda-bellabot-1",
+  "status": "checked_live",
+  "source": "https://wordstat.yandex.ru/",
+  "accessMethod": "user_dedicated_visible_chrome_cdp",
+  "collectedAt": "2026-09-10T16:42:49.827Z",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=BellaBot",
+  "region": "all",
+  "devices": "default (capture UI for verification)",
+  "period": {
+    "start": "10.08.2026",
+    "end": "08.09.2026"
+  },
+  "total": 282,
+  "rows": [
+    {
+      "phrase": "bellabot",
+      "count": 282
+    },
+    {
+      "phrase": "bellabot pro",
+      "count": 95
+    },
+    {
+      "phrase": "робот bellabot",
+      "count": 92
+    },
+    {
+      "phrase": "pudu bellabot",
+      "count": 87
+    },
+    {
+      "phrase": "bellabot робот официант",
+      "count": 45
+    },
+    {
+      "phrase": "pudu bellabot pro",
+      "count": 38
+    },
+    {
+      "phrase": "bellabot цена",
+      "count": 34
+    },
+    {
+      "phrase": "робот pudu bellabot",
+      "count": 32
+    },
+    {
+      "phrase": "bellabot робот официант цена",
+      "count": 20
+    },
+    {
+      "phrase": "робот pudu bellabot pro",
+      "count": 14
+    },
+    {
+      "phrase": "pudu bellabot pro сертификат соответствия",
+      "count": 7
+    },
+    {
+      "phrase": "bellabot pro б у купить",
+      "count": 6
+    },
+    {
+      "phrase": "как разозлить bellabot",
+      "count": 5
+    }
+  ],
+  "tableState": "rows_visible",
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nBellaBot\n \nза 10.08.2026 – 08.09.2026: 282\nСкачать\nДобавить все\nЗапросы со\nсловами\n\t\nЧисло\nзапросов\n\n+bellabot\t282\n+bellabot pro\t95\n+робот bellabot\t92\n+pudu bellabot\t87\n+bellabot робот официант\t45\n+pudu bellabot pro\t38\n+bellabot цена\t34\n+робот pudu bellabot\t32\n+bellabot робот официант цена\t20\n+робот pudu bellabot pro\t14\n+pudu bellabot pro сертификат соответствия\t7\n+bellabot pro б у купить\t6\n+как разозлить bellabot\t5\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "attribution": "Яндекс Wordstat — https://wordstat.yandex.ru/",
+  "screenshot": "arenda-bellabot-1.png"
+}

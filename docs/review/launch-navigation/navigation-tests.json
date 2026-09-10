@@ -1,0 +1,37 @@
+[
+  {
+    "route": "/",
+    "h1": 1,
+    "robotCards": 24,
+    "articleTargets": [
+      "/preview/kiber-94/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "/preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "/preview/kiber-94/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "/preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/",
+      "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "/preview/kiber-94/articles/unitree-g1-na-korporative/"
+    ],
+    "disabledCards": 3
+  },
+  {
+    "route": "/articles/",
+    "h1": 1,
+    "robotCards": 0,
+    "articleTargets": [
+      "/preview/kiber-94/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "/preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "/preview/kiber-94/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "/preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/",
+      "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "/preview/kiber-94/articles/unitree-g1-na-korporative/"
+    ],
+    "disabledCards": 0
+  },
+  {
+    "route": "/compilations/",
+    "h1": 1,
+    "robotCards": 0,
+    "articleTargets": [],
+    "disabledCards": 3
+  }
+]

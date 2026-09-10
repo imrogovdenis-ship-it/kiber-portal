@@ -1,0 +1,22 @@
+{
+  "slug": "arenda-unitree-g1",
+  "query": "аренда Unitree G1",
+  "id": "arenda-unitree-g1-2",
+  "status": "checked_live",
+  "source": "https://wordstat.yandex.ru/",
+  "accessMethod": "user_dedicated_visible_chrome_cdp",
+  "collectedAt": "2026-09-10T16:50:06.302Z",
+  "url": "https://wordstat.yandex.ru/?region=all&view=table&words=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Unitree%20G1",
+  "region": "all",
+  "devices": "default (capture UI for verification)",
+  "period": {
+    "start": "09.08.2026",
+    "end": "09.09.2026"
+  },
+  "total": 15,
+  "rows": [],
+  "tableState": "no_suitable_rows_visible",
+  "rawText": "YWA 1.9.4\n    \n...\n...\n-20% новым клиентам на два месяца работ по SEO, SMM или Performance marketing\n« Свернуть\nВыйти\nТопы запросов\nДинамика\nРегионы\nСайты по запросу\nПопулярные\nПохожие\nВсе регионы\nДесктопы\nCмартфоны\nПланшеты\nОбщее число запросов\n \n \nаренда Unitree G1\n \nза 09.08.2026 – 09.09.2026: 15\nНет подходящих запросов. Попробуйте изменить формулировку.\nПри использовании материалов с этой страницы обязательна ссылка на Яндекс\nПомощь\nПользовательское соглашение\nТур по интерфейсу\nAPI\n© 2009–2026  ООО «Яндекс»\nНужна помощь?",
+  "attribution": "Яндекс Wordstat — https://wordstat.yandex.ru/",
+  "screenshot": "arenda-unitree-g1-2.png"
+}

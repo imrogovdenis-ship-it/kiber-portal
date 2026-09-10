@@ -9,9 +9,10 @@ interface Props {
   };
   caption?: string;
   aspectRatio?: string;
+  clickToLoad?: boolean;
 }
 
-const { title, embedLink, playLink, poster, caption, aspectRatio = '16 / 9' } = Astro.props;
+const { title, embedLink, playLink, poster, caption, aspectRatio = '16 / 9', clickToLoad = false } = Astro.props;
 const isAllowedKinescopeEmbed = /^https:\/\/kinescope\.(io|com)\/embed\//.test(embedLink);
 
 if (!isAllowedKinescopeEmbed) {
@@ -19,22 +20,31 @@ if (!isAllowedKinescopeEmbed) {
 }
 ---
 
-<figure class="kp-kinescope-video" style={`--kp-video-aspect-ratio: ${aspectRatio};`}>
+<figure class:list={["kp-kinescope-video", clickToLoad && "kp-kinescope-video--click"]} style={`--kp-video-aspect-ratio: ${aspectRatio};`}>
   <div class="kp-kinescope-video__frame">
     {poster?.src ? <img class="kp-kinescope-video__poster" src={poster.src} alt={poster.alt} loading="lazy" /> : null}
     <iframe
-      src={embedLink}
+      src={clickToLoad ? undefined : embedLink}
+      data-kinescope-src={clickToLoad ? embedLink : undefined}
+      hidden={clickToLoad}
       title={title}
       loading="lazy"
       allow="autoplay; fullscreen; picture-in-picture; encrypted-media;"
       allowfullscreen
     ></iframe>
+    {clickToLoad && <button class="kp-kinescope-video__play" type="button" data-kinescope-load="" aria-label={`Загрузить видео: ${title}`}>▶ Смотреть видео</button>}
   </div>
   {caption ? <figcaption>{caption}</figcaption> : null}
   {playLink ? <a class="kp-kinescope-video__fallback" href={playLink} target="_blank" rel="noopener">Смотреть видео</a> : null}
 </figure>
 
+<script is:inline src="/scripts/kinescope-video.js" defer></script>
 <style>
+  .kp-kinescope-video--click .kp-kinescope-video__poster { opacity: 1; }
+  .kp-kinescope-video__play { position: absolute; inset: auto 1rem 1rem; z-index: 1; padding: .85rem 1rem; border: 0; border-radius: .75rem; background: var(--kp-blue); color: white; font: inherit; font-weight: 700; cursor: pointer; }
+  .kp-kinescope-video__play:focus-visible { outline: .2rem solid white; outline-offset: .2rem; }
+  .kp-kinescope-video__frame iframe[hidden] { display: none; }
+
   .kp-kinescope-video {
     display: grid;
     gap: 0.75rem;

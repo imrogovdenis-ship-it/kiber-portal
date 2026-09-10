@@ -1,0 +1,10 @@
+{
+  "query": "аренда Agibot X2",
+  "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fhl%3Dru%26q%3D%25D0%25B0%25D1%2580%25D0%25B5%25D0%25BD%25D0%25B4%25D0%25B0%2520Agibot%2520X2%26sei%3DRvSiap3REsqmwPAPr9SLwQY&hl=ru&q=EgQmtCUqGMboi9UGIjDSlFKT64Uu2zSQl1xO1aksU9vY60g_jAg7VBpsSY3nAsVm1CHzdLl9CVcBE4UPedAyAVJaAUM",
+  "checkedAt": "2026-09-10T18:17:45.754Z",
+  "method": "local_browser_not_user_cdp",
+  "challenge": true,
+  "links": [],
+  "text": "\n\nОб этой странице\n\nМы зарегистрировали подозрительный трафик, исходящий из вашей сети. С помощью этой страницы мы сможем определить, что запросы отправляете именно вы, а не робот. Почему это могло произойти?\n\n\n\nIP-адрес: 38.180.37.42\nВремя: 2026-09-10T18:17:43Z\nURL: https://www.google.com/search?hl=ru&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Agibot%20X2&sei=RvSiap3REsqmwPAPr9SLwQY\n",
+  "usable": false
+}

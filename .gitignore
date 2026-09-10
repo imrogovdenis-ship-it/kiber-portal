@@ -27,3 +27,6 @@ upload/
 *.tiff
 *.heic
 *.raw
+
+# Reproducible API build output
+/build/api-runtime/

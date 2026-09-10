@@ -13,12 +13,12 @@ test('production go/no-go package records exact launch map and stays NO-GO', () 
   assert.equal(pack.productionDecision.productionDeployAllowed, false);
   assert.equal(pack.productionDecision.dnsChangeAllowed, false);
   assert.equal(pack.productionDecision.secretsChangeAllowed, false);
-  assert(['hermes/kiber-full-site-visual-qa-20260901', 'main'].includes(pack.currentBase.branch));
+  assert(['hermes/kiber-full-site-visual-qa-20260901', 'main', 'feat/canonical-approved-release'].includes(pack.currentBase.branch));
   assert.match(pack.currentBase.head, /^[0-9a-f]{12}$/);
   if (pack.currentBase.branch === 'main') {
     assert.match(pack.currentBase.headTitle, /KIBER-91/);
   }
-  assert.equal(pack.readiness.routesChecked, 37);
+  assert.equal(pack.readiness.routesChecked, json('data/seo/launch-routes.json').routes.length);
   assert.equal(pack.readiness.robotRoutesChecked, 24);
   assert.deepEqual(pack.readiness.legalRoutesPresent, ['/privacy-policy/', '/consent/', '/cookie-policy/', '/terms/']);
 });

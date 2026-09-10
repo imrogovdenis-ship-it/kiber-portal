@@ -4,10 +4,10 @@ Status: **owner_approved_complete**
 
 KIBER-93 infrastructure is complete when audits, passports, AI visibility, llms.txt, robots policy and remediation backlog are in CI. Remaining warnings become follow-up implementation/review tasks, not hidden debt.
 
-Routes checked: **37**  
-Technical failures: **0**  
-Warning checks preserved: **198**  
-Routes with warnings: **37**  
+Routes checked: **43**
+Technical failures: **0**
+Warning checks preserved: **203**
+Routes with warnings: **43**
 
 
 ## Owner approval
@@ -38,8 +38,8 @@ Routes with warnings: **37**
 - Status: `ready_for_next_issue`
 - Owner/workflow: agent_can_prepare_pr_then_owner_reviews_copy_and_visuals
 - Warning keys: `primaryKeywordInTitle`, `primaryKeywordInH1`, `primaryKeywordInFirstBlock`, `secondaryKeywords`, `h1MatchesPassport`, `cta`
-- Routes: 37
-- Route preview: `/`, `/articles/`, `/compilations/`, `/consent/`, `/contacts/`, `/cookie-policy/`, `/lead/request/`, `/lead/thanks/`, `/news/`, `/privacy-policy/`, `/robots/arenda-agibot-x2/`, `/robots/arenda-bellabot/` …
+- Routes: 43
+- Route preview: `/`, `/articles/`, `/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/`, `/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/`, `/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/`, `/articles/sravnenie-unitree-g1-r1-h2/`, `/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/`, `/articles/unitree-g1-na-korporative/`, `/compilations/`, `/consent/`, `/contacts/`, `/cookie-policy/` …
 - Next work:
   - Align SEO passports with approved visible H1/title where visual copy is intentionally different.
   - Add visible short-answer/AI summary blocks only after design review.
@@ -50,8 +50,8 @@ Routes with warnings: **37**
 - Status: `requires_design_review`
 - Owner/workflow: agent_can_prepare_patterns_owner_approves_visible_blocks
 - Warning keys: `faqQuestions`, `breadcrumbs`, `requiredSchemaTypes`
-- Routes: 6
-- Route preview: `/articles/`, `/compilations/`, `/contacts/`, `/news/`, `/roboty-gumanoidy/`, `/roboty-sobaki/`
+- Routes: 5
+- Route preview: `/articles/`, `/compilations/`, `/contacts/`, `/news/`, `/roboty-gumanoidy/`
 - Next work:
   - Prepare approved visual pattern for visible breadcrumbs on category/contact/index pages.
   - Add FAQ questions to collection/category AI passports and decide which are visible.
@@ -61,7 +61,7 @@ Routes with warnings: **37**
 - Status: `requires_owner_content_review`
 - Owner/workflow: agent_can_generate_review_only_first_owner_approves_public_policy
 - Warning keys: `markdownAlternateOrLlmsEntry`, `aiSummary`, `structuredFacts`, `questionAnswerBlocks`
-- Routes: 31
+- Routes: 37
 - Route preview: `/`, `/robots/arenda-agibot-x2/`, `/robots/arenda-bellabot/`, `/robots/arenda-glambot/`, `/robots/arenda-inchbot-l1-w-edu/`, `/robots/arenda-kettybot/`, `/robots/arenda-klipmeiker/`, `/robots/arenda-mini-robo-kofeyni/`, `/robots/arenda-noetix-bumi/`, `/robots/arenda-promobot-v4/`, `/robots/arenda-robo-kofeyni/`, `/robots/arenda-roboshashki/` …
 - Next work:
   - Generate review-only Markdown from canonical source-of-truth, not from scraped rendered HTML.

@@ -1,0 +1,137 @@
+{
+  "profile": {
+    "initialBytes": 1500000,
+    "fullBytes": 1800000,
+    "cls": 0.1,
+    "viewports": [
+      1440,
+      390
+    ],
+    "transport": "cold uncached uncompressed localhost",
+    "networkTimingIsFieldCWV": false
+  },
+  "results": [
+    {
+      "route": "/",
+      "width": 1440,
+      "initial": {
+        "bytes": 1294305,
+        "requests": 43,
+        "cls": 0.0082596875
+      },
+      "full": {
+        "bytes": 1425650,
+        "requests": 52,
+        "cls": 0.0082596875
+      },
+      "errors": []
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "width": 1440,
+      "initial": {
+        "bytes": 1117937,
+        "requests": 36,
+        "cls": 0.00023883928463782792
+      },
+      "full": {
+        "bytes": 1555378,
+        "requests": 43,
+        "cls": 0.00023883928463782792
+      },
+      "errors": []
+    },
+    {
+      "route": "/lead/request/",
+      "width": 1440,
+      "initial": {
+        "bytes": 313484,
+        "requests": 11,
+        "cls": 0.0022475098108362267
+      },
+      "full": {
+        "bytes": 313484,
+        "requests": 11,
+        "cls": 0.0022475098108362267
+      },
+      "errors": []
+    },
+    {
+      "route": "/lead/thanks/",
+      "width": 1440,
+      "initial": {
+        "bytes": 248813,
+        "requests": 10,
+        "cls": 0.000730186149691358
+      },
+      "full": {
+        "bytes": 248813,
+        "requests": 10,
+        "cls": 0.000730186149691358
+      },
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "initial": {
+        "bytes": 1237499,
+        "requests": 39,
+        "cls": 0
+      },
+      "full": {
+        "bytes": 1425650,
+        "requests": 52,
+        "cls": 0
+      },
+      "errors": []
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "width": 390,
+      "initial": {
+        "bytes": 1003733,
+        "requests": 31,
+        "cls": 0.0000016923076923076922
+      },
+      "full": {
+        "bytes": 1555378,
+        "requests": 43,
+        "cls": 0.0000016923076923076922
+      },
+      "errors": []
+    },
+    {
+      "route": "/lead/request/",
+      "width": 390,
+      "initial": {
+        "bytes": 313484,
+        "requests": 11,
+        "cls": 0
+      },
+      "full": {
+        "bytes": 313484,
+        "requests": 11,
+        "cls": 0
+      },
+      "errors": []
+    },
+    {
+      "route": "/lead/thanks/",
+      "width": 390,
+      "initial": {
+        "bytes": 248813,
+        "requests": 10,
+        "cls": 0.0068052
+      },
+      "full": {
+        "bytes": 248813,
+        "requests": 10,
+        "cls": 0.0068052
+      },
+      "errors": []
+    }
+  ],
+  "failures": [],
+  "status": "passed"
+}

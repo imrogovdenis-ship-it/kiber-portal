@@ -44,7 +44,7 @@
     }, true);
   };
 
-  document.querySelectorAll('[data-drag-slider^="robot-"]').forEach(setupSlider);
+  document.querySelectorAll('[data-drag-slider]').forEach(setupSlider);
 
   document.querySelectorAll('[data-slider-prev]').forEach((button) => {
     button.addEventListener('click', () => {

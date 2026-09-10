@@ -1,9 +1,9 @@
 {
   "issue": "KIBER-43",
-  "generatedAt": "2026-09-06T13:52:34.061Z",
+  "generatedAt": "2026-09-10T13:21:21.814Z",
   "site": "https://www.kiber-portal.ru",
-  "routesChecked": 37,
-  "sitemapUrls": 31,
+  "routesChecked": 43,
+  "sitemapUrls": 35,
   "sitemapLocs": [
     "https://www.kiber-portal.ru/",
     "https://www.kiber-portal.ru/robots/arenda-agibot-x2/",
@@ -31,11 +31,15 @@
     "https://www.kiber-portal.ru/robots/arenda-uv-box/",
     "https://www.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/",
     "https://www.kiber-portal.ru/roboty-gumanoidy/",
-    "https://www.kiber-portal.ru/roboty-sobaki/",
     "https://www.kiber-portal.ru/compilations/",
     "https://www.kiber-portal.ru/articles/",
-    "https://www.kiber-portal.ru/news/",
-    "https://www.kiber-portal.ru/contacts/"
+    "https://www.kiber-portal.ru/contacts/",
+    "https://www.kiber-portal.ru/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "https://www.kiber-portal.ru/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+    "https://www.kiber-portal.ru/articles/unitree-g1-na-korporative/",
+    "https://www.kiber-portal.ru/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+    "https://www.kiber-portal.ru/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+    "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/"
   ],
   "redirectsChecked": 2,
   "status": "passed",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "provider": "kinescope",
   "contract": "data/media/kinescope-video-contract.json",
-  "status": "empty_until_owner_provides_api_access_and_video_files",
+  "status": "assigned_to_humanoid_compilation_preview",
   "pendingInbox": {
     "policy": "owner_attaches_video_then_agent_uploads_to_kinescope_with_api_token",
     "defaultFolder": "KIBER PORTAL/raw-inbox",
@@ -30,7 +30,240 @@
       "usage": "optional robot-card video sections, separate from image galleries"
     }
   ],
-  "videos": [],
+  "videos": [
+    {
+      "videoId": "5d24aa01-cde8-450e-98fb-f028b517e885",
+      "provider": "kinescope",
+      "kinescopeId": "5d24aa01-cde8-450e-98fb-f028b517e885",
+      "title": "Как гуманоид выглядит в деле?",
+      "description": "На видео робот гуманоид Unitree G1 в своем фирменном образе \"Кибер Гоша\" работает на разных мероприятиях (выставки, праздники, корпоративы, форумы, рекламные акции). Взаимодействует и общается с людьми, двигается, танцует и обнимается.",
+      "actualDescription": "На видео робот гуманоид Unitree G1 в своем фирменном образе \"Кибер Гоша\" работает на разных мероприятиях (выставки, праздники, корпоративы, форумы, рекламные акции). Взаимодействует и общается с людьми, двигается, танцует и обнимается.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/cv6MWzA99vY7qjssdy8RNv",
+      "embedLink": "https://kinescope.io/embed/cv6MWzA99vY7qjssdy8RNv",
+      "durationSeconds": 49.966667,
+      "uploadedAt": "2026-08-22T07:20:17.96126Z",
+      "width": 1280,
+      "height": 720,
+      "aspectRatio": "16 / 9",
+      "poster": {
+        "src": "/images/video-posters/5d24aa01-cde8-450e-98fb-f028b517e885.webp",
+        "alt": "Кадр видео: Как гуманоид выглядит в деле?"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "video"
+        }
+      ]
+    },
+    {
+      "videoId": "a52a9cf1-feae-4722-9032-48adb6ce37a7",
+      "provider": "kinescope",
+      "kinescopeId": "a52a9cf1-feae-4722-9032-48adb6ce37a7",
+      "title": "Agibot X2",
+      "description": "Робот гуманоид AGIBOT X2 демонстрирует свои возможности: танцует и делает движения из карате.",
+      "actualDescription": "Робот гуманоид AGIBOT X2 демонстрирует свои возможности: танцует и делает движения из карате.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/moWjE9zHJZmL4ejHrta7AB",
+      "embedLink": "https://kinescope.io/embed/moWjE9zHJZmL4ejHrta7AB",
+      "durationSeconds": 11.75,
+      "uploadedAt": "2026-08-22T08:04:04.871125Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/a52a9cf1-feae-4722-9032-48adb6ce37a7.webp",
+        "alt": "Кадр видео: Agibot X2"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    },
+    {
+      "videoId": "e9ed1c85-d5f0-4940-9b29-693671fa3ba3",
+      "provider": "kinescope",
+      "kinescopeId": "e9ed1c85-d5f0-4940-9b29-693671fa3ba3",
+      "title": "Noetix Bumi",
+      "description": "Робот гуманоид Noetix Bumi демонстрирует свои возможности: ходит, танцует и делает другие сложные акробатические движения.",
+      "actualDescription": "Робот гуманоид Noetix Bumi демонстрирует свои возможности: ходит, танцует и делает другие сложные акробатические движения.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/uTpcwdhV24HA6MqasguFpz",
+      "embedLink": "https://kinescope.io/embed/uTpcwdhV24HA6MqasguFpz",
+      "durationSeconds": 41.92,
+      "uploadedAt": "2026-08-22T08:02:38.277604Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/e9ed1c85-d5f0-4940-9b29-693671fa3ba3.webp",
+        "alt": "Кадр видео: Noetix Bumi"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    },
+    {
+      "videoId": "4a57d675-fbf9-4b0b-8e5d-ff353714a286",
+      "provider": "kinescope",
+      "kinescopeId": "4a57d675-fbf9-4b0b-8e5d-ff353714a286",
+      "title": "Unitree G1",
+      "description": "На этом видео робот гуманоид Unitree G1 в своем фирменном образе \"Кибер Гоша\" танцует популярный вирусный танец вместе с ведущим на свадебном торжестве.",
+      "actualDescription": "На этом видео робот гуманоид Unitree G1 в своем фирменном образе \"Кибер Гоша\" танцует популярный вирусный танец вместе с ведущим на свадебном торжестве.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/absd9jvYjLDMhuR3ocWRAf",
+      "embedLink": "https://kinescope.io/embed/absd9jvYjLDMhuR3ocWRAf",
+      "durationSeconds": 24.546938,
+      "uploadedAt": "2026-09-09T08:53:56.306702Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/4a57d675-fbf9-4b0b-8e5d-ff353714a286.webp",
+        "alt": "Кадр видео: Unitree G1"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    },
+    {
+      "videoId": "cf7c2eeb-8e97-43e8-a8b6-42af543778bc",
+      "provider": "kinescope",
+      "kinescopeId": "cf7c2eeb-8e97-43e8-a8b6-42af543778bc",
+      "title": "Unitree H2",
+      "description": "Робот гуманоид демонстрирует свои возможности в боевых единоборствах.",
+      "actualDescription": "Робот гуманоид демонстрирует свои возможности в боевых единоборствах.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/rC2wyUK5XFbiqkEL8W2uYU",
+      "embedLink": "https://kinescope.io/embed/rC2wyUK5XFbiqkEL8W2uYU",
+      "durationSeconds": 8.16,
+      "uploadedAt": "2026-09-09T09:40:04.154725Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/cf7c2eeb-8e97-43e8-a8b6-42af543778bc.webp",
+        "alt": "Кадр видео: Unitree H2"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    },
+    {
+      "videoId": "cb7e9a6e-a300-4dde-a891-ec102404bbfc",
+      "provider": "kinescope",
+      "kinescopeId": "cb7e9a6e-a300-4dde-a891-ec102404bbfc",
+      "title": "Unitree R1",
+      "description": "Робот гуманоид Unitree R1 демонстрирует свои возможности в боевых единоборствах.",
+      "actualDescription": "Робот гуманоид Unitree R1 демонстрирует свои возможности в боевых единоборствах.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/r8rRgWudj8N5EPPDJLrByG",
+      "embedLink": "https://kinescope.io/embed/r8rRgWudj8N5EPPDJLrByG",
+      "durationSeconds": 8.466667,
+      "uploadedAt": "2026-08-22T08:02:38.735672Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/cb7e9a6e-a300-4dde-a891-ec102404bbfc.webp",
+        "alt": "Кадр видео: Unitree R1"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    },
+    {
+      "videoId": "efbff366-c51f-422b-910c-515e6e6370f1",
+      "provider": "kinescope",
+      "kinescopeId": "efbff366-c51f-422b-910c-515e6e6370f1",
+      "title": "Арди",
+      "description": "Робот гуманоид Арди выступает на мероприятии и поет песню про Ёлочку, при этом сопровождая выступление движениями руками.",
+      "actualDescription": "Робот гуманоид Арди выступает на мероприятии и поет песню про Ёлочку, при этом сопровождая выступление движениями руками.",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/vB7jQ5WUJ6Lho9xWzw17qH",
+      "embedLink": "https://kinescope.io/embed/vB7jQ5WUJ6Lho9xWzw17qH",
+      "durationSeconds": 16.733383,
+      "uploadedAt": "2026-08-22T08:03:05.710832Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/efbff366-c51f-422b-910c-515e6e6370f1.webp",
+        "alt": "Кадр видео: Арди"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    },
+    {
+      "videoId": "a2899060-ac12-4d42-be2b-72feeb2b83f8",
+      "provider": "kinescope",
+      "kinescopeId": "a2899060-ac12-4d42-be2b-72feeb2b83f8",
+      "title": "София",
+      "description": "Робот София дает интервью на тему \"Может ли робот захватить мир\" и \"Как будет выглядеть совместное будущее роботов и человека\".",
+      "actualDescription": "Робот София дает интервью на тему \"Может ли робот захватить мир\" и \"Как будет выглядеть совместное будущее роботов и человека\".",
+      "descriptionSource": "owner-authored Kinescope metadata",
+      "playLink": "https://kinescope.io/m57c7t6ZBen4QesGPV3izs",
+      "embedLink": "https://kinescope.io/embed/m57c7t6ZBen4QesGPV3izs",
+      "durationSeconds": 57.8,
+      "uploadedAt": "2026-08-22T08:04:11.947812Z",
+      "width": 1080,
+      "height": 1920,
+      "aspectRatio": "9 / 16",
+      "poster": {
+        "src": "/images/video-posters/a2899060-ac12-4d42-be2b-72feeb2b83f8.webp",
+        "alt": "Кадр видео: София"
+      },
+      "publicationStatus": "assigned",
+      "rightsStatus": "owner_requested_preview_use; production review separate",
+      "usage": [
+        {
+          "pageType": "compilation",
+          "slug": "roboty-gumanoidy",
+          "blockId": "scenarioExplanation"
+        }
+      ]
+    }
+  ],
   "exampleRecordShape": {
     "videoId": "compilation__roboty-dlya-vystavki__unitree-g1-demo",
     "provider": "kinescope",

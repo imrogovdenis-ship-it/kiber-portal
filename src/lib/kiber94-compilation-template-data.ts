@@ -15,6 +15,8 @@ export type CompilationRobotCard = {
 };
 
 export type CompilationPageTemplateData = {
+  explanation?: { title: string; paragraphs: string[] };
+  scenarioVideoIds?: string[];
   seo: {
     title: string;
     description: string;
@@ -40,7 +42,7 @@ export type CompilationPageTemplateData = {
     steps: { title: string; text: string }[];
   };
   gallery: { title: string; lead: string; images: { src: string; alt: string }[] };
-  video: { title: string; lead: string; embedHint: string };
+  video: { enabled?: boolean; videoId?: string; title: string; lead: string; embedHint: string };
   scenarios: {
     title: string;
     lead: string;
@@ -64,6 +66,7 @@ export type CompilationPageTemplateData = {
   gosha: HomeGoshaData;
   conclusionGosha: HomeGoshaData;
   finalCta: HomeFinalCtaData;
+  showOtherCompilations?: boolean;
   otherCompilations: { title: string; text: string; href: string }[];
 };
 

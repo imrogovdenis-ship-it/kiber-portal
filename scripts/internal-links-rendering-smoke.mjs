@@ -88,8 +88,10 @@ for (const [sourceRoute, links] of approvedBySource) {
   const html = readFileSync(htmlPath, 'utf8');
   const renderedIds = getRenderedLinkIds(html);
   for (const link of links) {
-    assert.ok(renderedIds.includes(link.id), `${link.id}: approved internal link did not render on ${sourceRoute}`);
-    assert.ok(html.includes(`href="${link.href}"`), `${link.id}: approved href did not render`);
+    if (link.rendering !== 'approved_component') assert.ok(renderedIds.includes(link.id), `${link.id}: approved internal link did not render on ${sourceRoute}`);
+    const expected = new URL(link.href, 'https://www.kiber-portal.ru');
+    const hrefs = [...html.matchAll(/<a\b[^>]*href="([^"]+)"/g)].map(m => new URL(m[1].replace(/&amp;/g, '&'), 'https://www.kiber-portal.ru'));
+    assert.ok(hrefs.some(actual => actual.origin === expected.origin && normalizeRoute(actual.pathname) === normalizeRoute(expected.pathname) && [...expected.searchParams].every(([k,v]) => actual.searchParams.get(k) === v)), `${link.id}: approved href did not render`);
   }
   for (const id of renderedIds) {
     assert.ok(approvedIds.has(id), `${sourceRoute}: rendered unknown/non-approved internal-link id ${id}`);

@@ -1614,9 +1614,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-roboshashki/01-tild3435-3936-4661-a539-373030326136___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-roboshashki/01-tild3435-3936-4661-a539-373030326136___.webp",
           "sourceAlt": "камеры робота-шашиста при аренде робошашки в москве",
-          "actualDescription": "камеры робота-шашиста при аренде робошашки в москве",
-          "seoAlt": "камеры робота-шашиста при аренде робошашки в москве — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Камеры робота-шашиста при аренде робошашки в москве",
+          "actualDescription": "Камеры игрового робота для шашек",
+          "seoAlt": "Камеры игрового робота для шашек",
+          "caption": "Камеры игрового робота для шашек",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -1626,7 +1626,9 @@
           },
           "format": "WEBP",
           "sha256": "9d5facba3b740e1f6c074234ac170ff77414f2e1ed0c3fc90013ce070e48e17b",
-          "bytes": 34246
+          "bytes": 34246,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 2,
@@ -1638,9 +1640,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-roboshashki/02-tild3731-6664-4863-a366-336661633563__photo.webp",
           "projectPath": "public/images/robot-capabilities/arenda-roboshashki/02-tild3731-6664-4863-a366-336661633563__photo.webp",
           "sourceAlt": "манипулятора робота для игры в шашки в прокат на мероприятии",
-          "actualDescription": "манипулятора робота для игры в шашки в прокат на мероприятии",
-          "seoAlt": "манипулятора робота для игры в шашки в прокат на мероприятии — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Манипулятора робота для игры в шашки в прокат на мероприятии",
+          "actualDescription": "Манипулятор робота для игры в шашки",
+          "seoAlt": "Манипулятор робота для игры в шашки",
+          "caption": "Манипулятор робота для игры в шашки",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -1650,7 +1652,9 @@
           },
           "format": "WEBP",
           "sha256": "5fae6161c546f3cc5147bfd95d6f09545700f19707f41a4972d59fe4a16c9abb",
-          "bytes": 22046
+          "bytes": 22046,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 3,
@@ -1662,9 +1666,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-roboshashki/03-tild3734-6665-4936-b731-333438346566___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-roboshashki/03-tild3734-6665-4936-b731-333438346566___.webp",
           "sourceAlt": "как регулировать сложность если заказать робота для шашек на мероприятие",
-          "actualDescription": "как регулировать сложность если заказать робота для шашек на мероприятие",
-          "seoAlt": "как регулировать сложность если заказать робота для шашек на мероприятие — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Как регулировать сложность если заказать робота для шашек на мероприятие",
+          "actualDescription": "Иллюстрация выбора сложности игры в шашки",
+          "seoAlt": "Иллюстрация выбора сложности игры в шашки",
+          "caption": "Иллюстрация выбора сложности игры в шашки",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -1674,7 +1678,9 @@
           },
           "format": "WEBP",
           "sha256": "1a00acfb148990c144f886793f3dfbce00b0bcda6bff13ca973d21dad305f53d",
-          "bytes": 105496
+          "bytes": 105496,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 4,
@@ -1686,9 +1692,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-roboshashki/04-tild3265-3065-4430-b030-616437323931___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-roboshashki/04-tild3265-3065-4430-b030-616437323931___.webp",
           "sourceAlt": "робот шашки с большой доской в аренда на соревнования",
-          "actualDescription": "робот шашки с большой доской в аренда на соревнования",
-          "seoAlt": "робот шашки с большой доской в аренда на соревнования — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Робот шашки с большой доской в аренда на соревнования",
+          "actualDescription": "Игровая доска с шашками",
+          "seoAlt": "Игровая доска с шашками",
+          "caption": "Игровая доска с шашками",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -1698,7 +1704,9 @@
           },
           "format": "WEBP",
           "sha256": "61df37823a6a670de6944c3108ab3680ae8334bf531c4326bc03207ec790866d",
-          "bytes": 38146
+          "bytes": 38146,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 5,
@@ -1710,9 +1718,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-roboshashki/05-tild3233-3639-4030-b836-366361396438___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-roboshashki/05-tild3233-3639-4030-b836-366361396438___.webp",
           "sourceAlt": "размер квадратного метра для робошашки для аренды робота для игры в шашки",
-          "actualDescription": "размер квадратного метра для робошашки для аренды робота для игры в шашки",
-          "seoAlt": "размер квадратного метра для робошашки для аренды робота для игры в шашки — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Размер квадратного метра для робошашки для аренды робота для игры в шашки",
+          "actualDescription": "Иллюстрация размещения игровой зоны",
+          "seoAlt": "Иллюстрация размещения игровой зоны",
+          "caption": "Иллюстрация размещения игровой зоны",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -1722,7 +1730,9 @@
           },
           "format": "WEBP",
           "sha256": "2a285ea4093aaf0457cb1133f7d2267a2ef57b0af5376cc14927acda92e1e8de",
-          "bytes": 37396
+          "bytes": 37396,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 6,
@@ -1731,22 +1741,28 @@
           "targetBlockId": "capabilities",
           "originalSrc": "images/tild3362-3535-4263-b863-316338643633___.png",
           "originalProjectPath": "site-export/images/tild3362-3535-4263-b863-316338643633___.png",
-          "publicSrc": "/images/robot-capabilities/arenda-roboshashki/06-tild3362-3535-4263-b863-316338643633___.webp",
-          "projectPath": "public/images/robot-capabilities/arenda-roboshashki/06-tild3362-3535-4263-b863-316338643633___.webp",
+          "publicSrc": "/images/robot-capabilities/arenda-roboshashki/06-power-connection.webp",
+          "projectPath": "public/images/robot-capabilities/arenda-roboshashki/06-power-connection.webp",
           "sourceAlt": "времени работы робошашек при заказе на мероприятие",
-          "actualDescription": "времени работы робошашек при заказе на мероприятие",
-          "seoAlt": "времени работы робошашек при заказе на мероприятие — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Времени работы робошашек при заказе на мероприятие",
+          "actualDescription": "Условная схема электрической розетки и вилки",
+          "seoAlt": "Условная схема электрической розетки и вилки",
+          "caption": "Условная схема электрической розетки и вилки",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
           "dimensions": {
-            "width": 700,
-            "height": 393
+            "width": 1600,
+            "height": 900
           },
           "format": "WEBP",
-          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
-          "bytes": 15694
+          "sha256": "a1468886867f86f0f4417bc87f5a4b5013568b70286a252ae3bd7c02962f5344",
+          "bytes": 8534,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain",
+          "supersededPublicSrc": "/images/robot-capabilities/arenda-roboshashki/06-tild3362-3535-4263-b863-316338643633___.webp",
+          "replacementReason": "Battery imagery removed; no unverified autonomy implication",
+          "replacementProvenance": "Project-authored generic schematic, not a photograph of model hardware",
+          "replacementSourceProjectPath": "public/images/robot-capabilities/power-connection.svg"
         }
       ]
     },
@@ -2556,9 +2572,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-senserobot/01-tild3935-3536-4835-b562-633238666535___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-senserobot/01-tild3935-3536-4835-b562-633238666535___.webp",
           "sourceAlt": "чип с искусственным интеллектом робота-шахматиста SenseRobot в аренду",
-          "actualDescription": "чип с искусственным интеллектом робота-шахматиста SenseRobot в аренду",
-          "seoAlt": "чип с искусственным интеллектом робота-шахматиста SenseRobot в аренду — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Чип с искусственным интеллектом робота-шахматиста SenseRobot в аренду",
+          "actualDescription": "Иллюстрация вычислительного чипа",
+          "seoAlt": "Иллюстрация вычислительного чипа",
+          "caption": "Иллюстрация вычислительного чипа",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -2568,7 +2584,9 @@
           },
           "format": "WEBP",
           "sha256": "61bd3419d178309b58859c8cb286c1a9fbfa1440d8a8cfa790ce1c89dad3c5c4",
-          "bytes": 33302
+          "bytes": 33302,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 2,
@@ -2580,9 +2598,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-senserobot/02-tild6561-6234-4138-a266-646433326336____.webp",
           "projectPath": "public/images/robot-capabilities/arenda-senserobot/02-tild6561-6234-4138-a266-646433326336____.webp",
           "sourceAlt": "сканера шахматной доски при заказе робота-шахматиста на мероприятие",
-          "actualDescription": "сканера шахматной доски при заказе робота-шахматиста на мероприятие",
-          "seoAlt": "сканера шахматной доски при заказе робота-шахматиста на мероприятие — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Сканера шахматной доски при заказе робота-шахматиста на мероприятие",
+          "actualDescription": "Иллюстрация распознавания позиции на шахматной доске",
+          "seoAlt": "Иллюстрация распознавания позиции на шахматной доске",
+          "caption": "Иллюстрация распознавания позиции на шахматной доске",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -2592,7 +2610,9 @@
           },
           "format": "WEBP",
           "sha256": "f3d7efba746d084b5b1190232b8e13d6c3a748e7ac4ecc5e402c1f3e77c94ac8",
-          "bytes": 34258
+          "bytes": 34258,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 3,
@@ -2604,9 +2624,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-senserobot/03-tild3162-6337-4832-b134-393566613136___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-senserobot/03-tild3162-6337-4832-b134-393566613136___.webp",
           "sourceAlt": "манипулятора робота-шахматиста SenseRobot в прокат",
-          "actualDescription": "манипулятора робота-шахматиста SenseRobot в прокат",
-          "seoAlt": "манипулятора робота-шахматиста SenseRobot в прокат — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Манипулятора робота-шахматиста SenseRobot в прокат",
+          "actualDescription": "Манипулятор робота-шахматиста SenseRobot",
+          "seoAlt": "Манипулятор робота-шахматиста SenseRobot",
+          "caption": "Манипулятор робота-шахматиста SenseRobot",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -2616,7 +2636,9 @@
           },
           "format": "WEBP",
           "sha256": "3f55f6092e48dc20253fa17018e0d25249062de32b4d96971344ea8b90d3fd41",
-          "bytes": 30080
+          "bytes": 30080,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 4,
@@ -2628,9 +2650,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-senserobot/04-tild3133-6136-4265-b864-323432393163_____.webp",
           "projectPath": "public/images/robot-capabilities/arenda-senserobot/04-tild3133-6136-4265-b864-323432393163_____.webp",
           "sourceAlt": "схема магнитной доски робота-шахматиста SenseRobot для проката в Москве",
-          "actualDescription": "схема магнитной доски робота-шахматиста SenseRobot для проката в Москве",
-          "seoAlt": "схема магнитной доски робота-шахматиста SenseRobot для проката в Москве — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Схема магнитной доски робота-шахматиста SenseRobot для проката в Москве",
+          "actualDescription": "Схема шахматной доски",
+          "seoAlt": "Схема шахматной доски",
+          "caption": "Схема шахматной доски",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -2640,7 +2662,9 @@
           },
           "format": "WEBP",
           "sha256": "e6d329ecc230e20309e7959df13296309e78de44d928e64dc6467e019c155659",
-          "bytes": 36688
+          "bytes": 36688,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         },
         {
           "index": 5,
@@ -2649,22 +2673,28 @@
           "targetBlockId": "capabilities",
           "originalSrc": "images/tild3362-3535-4263-b863-316338643633___.png",
           "originalProjectPath": "site-export/images/tild3362-3535-4263-b863-316338643633___.png",
-          "publicSrc": "/images/robot-capabilities/arenda-senserobot/05-tild3362-3535-4263-b863-316338643633___.webp",
-          "projectPath": "public/images/robot-capabilities/arenda-senserobot/05-tild3362-3535-4263-b863-316338643633___.webp",
+          "publicSrc": "/images/robot-capabilities/arenda-senserobot/05-power-connection.webp",
+          "projectPath": "public/images/robot-capabilities/arenda-senserobot/05-power-connection.webp",
           "sourceAlt": "батарея робота-шахматиста SenseRobot при заказе на мероприятие",
-          "actualDescription": "батарея робота-шахматиста SenseRobot при заказе на мероприятие",
-          "seoAlt": "батарея робота-шахматиста SenseRobot при заказе на мероприятие — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Батарея робота-шахматиста SenseRobot при заказе на мероприятие",
+          "actualDescription": "Условная схема электрической розетки и вилки",
+          "seoAlt": "Условная схема электрической розетки и вилки",
+          "caption": "Условная схема электрической розетки и вилки",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
           "dimensions": {
-            "width": 700,
-            "height": 393
+            "width": 1600,
+            "height": 900
           },
           "format": "WEBP",
-          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
-          "bytes": 15694
+          "sha256": "a1468886867f86f0f4417bc87f5a4b5013568b70286a252ae3bd7c02962f5344",
+          "bytes": 8534,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain",
+          "supersededPublicSrc": "/images/robot-capabilities/arenda-senserobot/05-tild3362-3535-4263-b863-316338643633___.webp",
+          "replacementReason": "Battery imagery removed; no unverified autonomy implication",
+          "replacementProvenance": "Project-authored generic schematic, not a photograph of model hardware",
+          "replacementSourceProjectPath": "public/images/robot-capabilities/power-connection.svg"
         },
         {
           "index": 6,
@@ -2676,9 +2706,9 @@
           "publicSrc": "/images/robot-capabilities/arenda-senserobot/06-tild3136-6232-4534-a363-343930363332___.webp",
           "projectPath": "public/images/robot-capabilities/arenda-senserobot/06-tild3136-6232-4534-a363-343930363332___.webp",
           "sourceAlt": "настройки робота-шахматиста SenseRobot на выставке",
-          "actualDescription": "настройки робота-шахматиста SenseRobot на выставке",
-          "seoAlt": "настройки робота-шахматиста SenseRobot на выставке — изображение для блока возможностей карточки аренды на КИБЕР ПОРТАЛ",
-          "caption": "Настройки робота-шахматиста SenseRobot на выставке",
+          "actualDescription": "Иллюстрация управления игровым роботом",
+          "seoAlt": "Иллюстрация управления игровым роботом",
+          "caption": "Иллюстрация управления игровым роботом",
           "reviewStatus": "owner_confirmed_as_capability_block_source",
           "rightsStatus": "source_mapping_confirmed_production_use_not_approved_here",
           "productionApproved": false,
@@ -2688,7 +2718,9 @@
           },
           "format": "WEBP",
           "sha256": "3eb7104fb2aabe683e65c7007fe2e7a143340ec80f904874a0cdf4c246474305",
-          "bytes": 29582
+          "bytes": 29582,
+          "textReviewStatus": "draft_for_pilot_review",
+          "fit": "contain"
         }
       ]
     },

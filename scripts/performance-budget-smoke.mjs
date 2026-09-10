@@ -78,6 +78,9 @@ for (const route of budget.routes) {
   const js = sumFiles(scriptFiles);
   const images = sumFiles(imageFiles);
   const totalPageBytes = htmlBytes + css.bytes + js.bytes + images.bytes;
+  const initialImageFiles = [...html.matchAll(/<img\b[^>]*>/gi)].map(m => tagAttrs(m[0])).filter(a => a.loading !== 'lazy').map(a => distFileForAsset(a.src));
+  const initialImages = sumFiles(initialImageFiles);
+  const initialPageBytes = htmlBytes + css.bytes + js.bytes + initialImages.bytes;
 
   const imageTags = [...html.matchAll(/<img\b[^>]*>/gi)].map((match) => match[0]);
   const layoutShiftRiskImages = [];
@@ -101,6 +104,8 @@ for (const route of budget.routes) {
     cssBytes: css.bytes,
     jsBytes: js.bytes,
     imageBytes: images.bytes,
+    initialImageBytes: initialImages.bytes,
+    initialPageBytes,
     totalPageBytes,
     cssFiles: css.files,
     jsFiles: js.files,
@@ -119,8 +124,10 @@ for (const route of budget.routes) {
   if (htmlBytes > budget.staticBudgets.htmlBytes) failures.push(`${route}: HTML ${htmlBytes} > ${budget.staticBudgets.htmlBytes}`);
   if (css.bytes > budget.staticBudgets.cssBytes) failures.push(`${route}: CSS ${css.bytes} > ${budget.staticBudgets.cssBytes}`);
   if (js.bytes > budget.staticBudgets.jsBytes) failures.push(`${route}: JS ${js.bytes} > ${budget.staticBudgets.jsBytes}`);
-  if (images.bytes > budget.staticBudgets.imageBytes) failures.push(`${route}: images ${images.bytes} > ${budget.staticBudgets.imageBytes}`);
-  if (totalPageBytes > budget.staticBudgets.totalPageBytes) failures.push(`${route}: total page bytes ${totalPageBytes} > ${budget.staticBudgets.totalPageBytes}`);
+  if (initialImages.bytes > budget.staticBudgets.imageBytes) failures.push(`${route}: initial images ${initialImages.bytes} > ${budget.staticBudgets.imageBytes}`);
+  if (images.bytes > budget.staticBudgets.allImageBytes) failures.push(`${route}: full images ${images.bytes} > ${budget.staticBudgets.allImageBytes}`);
+  if (initialPageBytes > budget.staticBudgets.totalPageBytes) failures.push(`${route}: initial page bytes ${initialPageBytes} > ${budget.staticBudgets.totalPageBytes}`);
+  if (totalPageBytes > budget.staticBudgets.allPageBytes) failures.push(`${route}: full page bytes ${totalPageBytes} > ${budget.staticBudgets.allPageBytes}`);
   if (layoutShiftRiskImages.length) failures.push(`${route}: layout-shift image risks: ${layoutShiftRiskImages.join('; ')}`);
   if (inlineLayoutMutationHandlers.length) failures.push(`${route}: inline handlers can hurt INP/CLS: ${inlineLayoutMutationHandlers.join(', ')}`);
 }

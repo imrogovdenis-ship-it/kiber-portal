@@ -34,7 +34,10 @@ if (contract.publicationGates?.leadRoutingChangedByThisContract !== false) fail(
 
 if (registry.provider !== 'kinescope') fail('registry provider must be kinescope');
 if (registry.contract !== contractPath) fail('registry must point back to contract');
-if (!Array.isArray(registry.videos) || registry.videos.length !== 0) fail('registry must start empty until concrete owner videos are uploaded');
+if (!Array.isArray(registry.videos)) fail('videos must be an array');
+for (const video of registry.videos) {
+ if (!video.kinescopeId || !video.poster?.src || !video.durationSeconds || !/^https:\/\/kinescope\.io\/embed\//.test(video.embedLink)) fail('invalid API-backed video record');
+}
 if (!Array.isArray(registry.folderPlan) || registry.folderPlan.length < 4) fail('folder plan is required');
 
 if (!/loading="lazy"/.test(component)) fail('KinescopeVideo.astro must lazy-load iframe');

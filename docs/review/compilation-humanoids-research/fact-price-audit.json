@@ -1,0 +1,40 @@
+{
+  "prices": [
+    {
+      "slug": "arenda-unitree-g1",
+      "display": "от 12 500 ₽ / час"
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "display": "от 12 500 ₽ / час"
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "display": "цена по запросу"
+    },
+    {
+      "slug": "arenda-agibot-x2",
+      "display": "от 25 000 ₽ / час"
+    },
+    {
+      "slug": "arenda-noetix-bumi",
+      "display": "от 10 000 ₽ / час"
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "display": "от 32 000 ₽ / час"
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "display": "цена по запросу"
+    }
+  ],
+  "unverifiedClaimsExcluded": [
+    "H2 facial expressions",
+    "calculation within one hour",
+    "works continuously all day",
+    "universal free conversation",
+    "universally safe for children"
+  ],
+  "mediaSource": "approved gallery registry; no new capabilities inferred from photographs"
+}

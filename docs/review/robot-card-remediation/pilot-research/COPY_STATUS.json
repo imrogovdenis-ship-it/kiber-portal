@@ -1,0 +1,26 @@
+{
+  "status": "text_pilot_rendered_not_full_card_approval",
+  "models": [
+    "arenda-roboshashki",
+    "arenda-senserobot"
+  ],
+  "checks": {
+    "copyValidator": "PASS",
+    "renderedNewIntroAndAllFaq": "PASS",
+    "frozenHeroGalleryRobotInAction": "identical_to_baseline",
+    "previewBuild": "PASS",
+    "astroCheck": "0 errors; 15 hints",
+    "visualContractTests": {
+      "passed": 254,
+      "failed": 0
+    },
+    "mediaResponsiveChecks": "6 passed; final WebP encoding verified in staged check",
+    "targetedUpdatedTests": "26 passed"
+  },
+  "pending": [
+    "protected staging verification and owner review"
+  ],
+  "stagingUpdated": false,
+  "productionUpdated": false,
+  "articleDecision": "No directly relevant approved chess/checkers articles: omit rather than relabel humanoid articles"
+}

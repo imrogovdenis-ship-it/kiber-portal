@@ -4,11 +4,12 @@
   "generatedAt": "2026-09-06T15:36:30.915889Z",
   "currentBase": {
     "repo": "imrogovdenis-ship-it/kiber-portal",
-    "branch": "main",
-    "head": "12ef3d6dd54f",
+    "branch": "feat/canonical-approved-release",
+    "head": "e402286fa1b1",
     "updatedAt": "2026-09-06T16:15:00Z",
     "fullHead": "12ef3d6dd54f1fc5c6ef780eb14e126cd0d51ea3",
-    "headTitle": "KIBER-91: full-site visual QA package (#70)"
+    "headTitle": "Canonical approved source integration; CI reconciliation candidate, not deployed",
+    "worktree": "kiber-canonical-release"
   },
   "productionDecision": {
     "status": "NO_GO",
@@ -20,7 +21,7 @@
     "analyticsProviderCookiesAllowed": false
   },
   "readiness": {
-    "routesChecked": 37,
+    "routesChecked": 43,
     "robotRoutesChecked": 24,
     "legalRoutesPresent": [
       "/privacy-policy/",

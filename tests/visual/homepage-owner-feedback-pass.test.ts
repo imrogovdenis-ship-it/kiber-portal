@@ -50,13 +50,13 @@ test('homepage catalog renders a four-card desktop grid with larger real robot i
   const card = await read('src/components/blocks/RobotCard.astro');
   const reference = await read('src/styles/reference-layer.css');
 
-  assert.match(page, /homeRobots\s*=\s*getFeaturedHomeRobots\(4\)/);
+  assert.match(page, /homeRobots\s*=\s*getFeaturedHomeRobots\(24\)/);
   assert.match(page, /grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\)/);
   assert.match(reference, /--kp-reference-container:\s*86rem;/);
   assert.match(reference, /--kp-reference-page-gutter:\s*4rem;/);
   assert.match(reference, /\.container\s*\{[^}]*width:\s*min\(100% - \(2 \* var\(--kp-reference-page-gutter\)\),\s*var\(--kp-reference-container\)\)/s);
   assert.match(reference, /\.vertical-slice__section\s*\{\s*padding:\s*0;\s*\}/s);
-  assert.match(page, /<RobotCard[^>]*hideDisclaimer=\{true\}[^>]*hideLink=\{true\}[^>]*imageLoading="eager"/s);
+  assert.match(page, /<RobotCard[^>]*hideDisclaimer=\{true\}[^>]*hideLink=\{true\}[^>]*imageLoading="lazy"/s);
   assert.doesNotMatch(page, /Не является публичной офертой/);
   assert.match(card, /<a\s+class:list=\{\['robot-card'/s);
   assert.match(card, /aria-label=\{`Открыть карточку робота/);
@@ -130,7 +130,7 @@ test('current page-level CTA2 users share approved tablet HomeFinalCta design', 
   assert.match(home, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
   assert.match(compilations, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
   assert.match(articles, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
-  assert.match(robotTemplate, /<HomeFinalCta \{\.\.\.robotFinalCta\} \/>/);
+  assert.match(robotTemplate, /<HomeFinalCta \{\.\.\.robotFinalCta\} id="social-final" \/>/);
   assert.match(finalCta, /@media \(min-width: 40rem\) and \(max-width: 59\.9375rem\) \{[\s\S]*place-items:\s*center end;[\s\S]*height:\s*clamp\(14\.25rem, 27vw, 16\.5rem\);[\s\S]*transform:\s*translate\(-\.35rem, 0\)/s);
 });
 

@@ -1,0 +1,15 @@
+import {build} from 'esbuild';
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+const out='build/api-runtime';mkdirSync(out,{recursive:true});
+await build({entryPoints:['src/server/lead-runtime-main.ts'],outfile:out+'/server.mjs',bundle:true,platform:'node',format:'esm',target:'node22',sourcemap:false});
+const base=readFileSync('nginx.conf','utf8');
+const original=base.match(/  location = \/api\/leads\/status \{[\s\S]*?\n  \}/)?.[0];
+if(!original)throw Error('Expected exact API status block; refuse unverified config rewrite');
+const proxied=original.replace(/    return 200 [^\n]+;/,`    client_max_body_size 64k;
+    proxy_read_timeout 60s;
+    proxy_connect_timeout 3s;
+    proxy_set_header X-Forwarded-For $remote_addr;
+    proxy_set_header Host $host;
+    proxy_pass http://api:8081;`);
+writeFileSync(out+'/nginx.conf',base.replace(original,[proxied,proxied.replace('/api/leads/status','/api/leads'),proxied.replace('/api/leads/status','/api/leads/')].join('\n\n')));
+console.log('Built Node API bundle and canonical Nginx proxy config');

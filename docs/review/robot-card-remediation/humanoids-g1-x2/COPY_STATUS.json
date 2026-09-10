@@ -1,0 +1,13 @@
+{
+  "status": "draft_for_owner_review",
+  "build": "passed",
+  "sourceTests": 254,
+  "responsiveChecks": 6,
+  "frozenHeroAndGalleries": "unchanged",
+  "publicationApproved": false,
+  "notes": [
+    "Owned-unit editions and custom repertoire are not inferred from competitor claims.",
+    "Capability image assets are preserved, frames are contain 16:9.",
+    "Staging promotion is tracked separately."
+  ]
+}

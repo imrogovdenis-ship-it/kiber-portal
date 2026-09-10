@@ -3,9 +3,9 @@
   "issue": "KIBER-93",
   "status": "warning",
   "summary": {
-    "routesChecked": 37,
+    "routesChecked": 43,
     "passed": 0,
-    "warnings": 37,
+    "warnings": 43,
     "failed": 0
   },
   "routes": [
@@ -64,7 +64,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "15539 visible chars; target 300"
+          "message": "18894 visible chars; target 300"
         },
         "primaryKeywordInTitle": {
           "status": "pass",
@@ -116,7 +116,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "33 internal hrefs"
+          "message": "50 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -172,7 +172,7 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "1 AI related pages; 33 rendered internal links"
+          "message": "1 AI related pages; 50 rendered internal links"
         }
       },
       "missing": [],
@@ -191,7 +191,7 @@
           "Organization",
           "WebSite"
         ],
-        "visibleTextChars": 15539
+        "visibleTextChars": 18894
       }
     },
     {
@@ -221,27 +221,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Agibot X2 — робот-гуманоид для выставки и презентации | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Agibot X2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Agibot X2 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Agibot X2 — робот-гуманоид для выставки и презентации | КИБЕР ПОРТАЛ'; passport='Agibot X2 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "147 chars"
+          "message": "141 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Agibot X2 для мероприятий']"
+          "message": "1 H1: ['Аренда робота-гуманоида Agibot X2']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Agibot X2 для мероприятий'; passport='Аренда Agibot X2'"
+          "message": "rendered='Аренда робота-гуманоида Agibot X2'; passport='Аренда Agibot X2'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -249,10 +249,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12890 visible chars; target 500"
+          "message": "20091 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Agibot X2'"
         },
         "primaryKeywordInH1": {
@@ -260,12 +260,12 @@
           "message": "primary='аренда Agibot X2'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Agibot X2'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Agibot X2, Agibot X2 на мероприятие, робот Agibot X2 для выставки, заказать Agibot X2"
+          "message": "missing: Agibot X2 на мероприятие, робот Agibot X2 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -293,7 +293,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -301,7 +301,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -357,27 +357,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Agibot X2 для мероприятий'; passport='Аренда Agibot X2'",
-        "primaryKeywordInTitle: primary='аренда Agibot X2'",
+        "titleMatchesPassport: rendered='Аренда Agibot X2 — робот-гуманоид для выставки и презентации | КИБЕР ПОРТАЛ'; passport='Agibot X2 для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида Agibot X2'; passport='Аренда Agibot X2'",
         "primaryKeywordInH1: primary='аренда Agibot X2'",
-        "primaryKeywordInFirstBlock: primary='аренда Agibot X2'",
-        "secondaryKeywords: missing: прокат Agibot X2, Agibot X2 на мероприятие, робот Agibot X2 для выставки, заказать Agibot X2"
+        "secondaryKeywords: missing: Agibot X2 на мероприятие, робот Agibot X2 для выставки"
       ],
       "rendered": {
-        "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат робота-гуманоида Agibot X2 с оператором и доставкой по Москве и России. Танцы, интерактив, автономная навигация. Расчёт стоимости за 1 день.",
-        "h1": "Agibot X2 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Agibot X2 — робот-гуманоид для выставки и презентации | КИБЕР ПОРТАЛ",
+        "description": "Аренда Agibot X2 для выставки, презентации или интерактивной зоны: сценарий выхода, подготовка площадки и сопровождение команды КИБЕР ПОРТАЛ.",
+        "h1": "Аренда робота-гуманоида Agibot X2",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12890
+        "visibleTextChars": 20091
       }
     },
     {
@@ -407,27 +407,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда BellaBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда BellaBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ'; passport='робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "156 chars"
+          "message": "130 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота-официанта BellaBot для мероприятий']"
+          "message": "1 H1: ['Аренда робота-официанта BellaBot']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота-официанта BellaBot для мероприятий'; passport='Аренда робота-официанта BellaBot'"
+          "status": "pass",
+          "message": "rendered='Аренда робота-официанта BellaBot'; passport='Аренда робота-официанта BellaBot'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -435,18 +435,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "13088 visible chars; target 500"
+          "message": "19546 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда робота-официанта BellaBot'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-официанта BellaBot'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-официанта BellaBot'"
         },
         "secondaryKeywords": {
@@ -479,7 +479,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -487,7 +487,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -543,27 +543,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота-официанта BellaBot для мероприятий'; passport='Аренда робота-официанта BellaBot'",
+        "titleMatchesPassport: rendered='Аренда BellaBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ'; passport='робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда робота-официанта BellaBot'",
-        "primaryKeywordInH1: primary='аренда робота-официанта BellaBot'",
-        "primaryKeywordInFirstBlock: primary='аренда робота-официанта BellaBot'",
         "secondaryKeywords: missing: робота-официанта BellaBot на мероприятие, робот робота-официанта BellaBot для выставки, заказать робота-официанта BellaBot"
       ],
       "rendered": {
-        "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат робота-официанта BellaBot с доставкой и настройкой в Москве и по России. Развозит блюда и напитки в паре с персоналом. Рассчитаем стоимость за 1 час.",
-        "h1": "робота-официанта BellaBot для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда BellaBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ",
+        "description": "Аренда BellaBot для ресторана, банкета, отеля или выставки HoReCa: доставка блюд, вау-эффект, настройка маршрутов и сопровождение.",
+        "h1": "Аренда робота-официанта BellaBot",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 13088
+        "visibleTextChars": 19546
       }
     },
     {
@@ -593,11 +592,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда GlamBot для фото- и видеозон | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота GlamBot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота GlamBot для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда GlamBot для фото- и видеозон | КИБЕР ПОРТАЛ'; passport='робота GlamBot для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -605,15 +604,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота GlamBot для мероприятий']"
+          "message": "1 H1: ['Аренда GlamBot']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='робота GlamBot для мероприятий'; passport='Аренда робота GlamBot'"
+          "message": "rendered='Аренда GlamBot'; passport='Аренда робота GlamBot'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -621,7 +620,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12634 visible chars; target 500"
+          "message": "17563 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -665,7 +664,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -673,7 +672,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -729,27 +728,29 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота GlamBot для мероприятий'; passport='Аренда робота GlamBot'",
+        "titleMatchesPassport: rendered='Аренда GlamBot для фото- и видеозон | КИБЕР ПОРТАЛ'; passport='робота GlamBot для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда GlamBot'; passport='Аренда робота GlamBot'",
         "primaryKeywordInTitle: primary='аренда робота GlamBot'",
         "primaryKeywordInH1: primary='аренда робота GlamBot'",
         "primaryKeywordInFirstBlock: primary='аренда робота GlamBot'",
         "secondaryKeywords: missing: прокат робота GlamBot, робота GlamBot на мероприятие, робот робота GlamBot для выставки, заказать робота GlamBot"
       ],
       "rendered": {
-        "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
+        "title": "Аренда GlamBot для фото- и видеозон | КИБЕР ПОРТАЛ",
         "description": "GlamBot — робот-камера для slow-motion съёмки в стиле красной дорожки. Прокат для премий, показов и открытий по Москве и всей России.",
-        "h1": "робота GlamBot для мероприятий",
-        "h2Count": 9,
+        "h1": "Аренда GlamBot",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12634
+        "visibleTextChars": 17563
       }
     },
     {
@@ -779,27 +780,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Inchbot L1-W EDU — робот-собака для STEM и промо | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ'; passport='Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Inchbot L1-W EDU — робот-собака для STEM и промо | КИБЕР ПОРТАЛ'; passport='Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "152 chars"
+          "message": "146 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Inchbot L1-W EDU для мероприятий']"
+          "message": "1 H1: ['Аренда робота-собаки Inchbot L1-W EDU']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Inchbot L1-W EDU для мероприятий'; passport='Аренда Inchbot L1-W EDU'"
+          "message": "rendered='Аренда робота-собаки Inchbot L1-W EDU'; passport='Аренда Inchbot L1-W EDU'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -807,10 +808,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "13136 visible chars; target 500"
+          "message": "17448 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Inchbot L1-W EDU'"
         },
         "primaryKeywordInH1": {
@@ -818,12 +819,12 @@
           "message": "primary='аренда Inchbot L1-W EDU'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Inchbot L1-W EDU'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки, заказать Inchbot L1-W EDU"
+          "message": "missing: Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -851,7 +852,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -859,7 +860,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -915,27 +916,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Inchbot L1-W EDU для мероприятий'; passport='Аренда Inchbot L1-W EDU'",
-        "primaryKeywordInTitle: primary='аренда Inchbot L1-W EDU'",
+        "titleMatchesPassport: rendered='Аренда Inchbot L1-W EDU — робот-собака для STEM и промо | КИБЕР ПОРТАЛ'; passport='Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-собаки Inchbot L1-W EDU'; passport='Аренда Inchbot L1-W EDU'",
         "primaryKeywordInH1: primary='аренда Inchbot L1-W EDU'",
-        "primaryKeywordInFirstBlock: primary='аренда Inchbot L1-W EDU'",
-        "secondaryKeywords: missing: прокат Inchbot L1-W EDU, Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки, заказать Inchbot L1-W EDU"
+        "secondaryKeywords: missing: Inchbot L1-W EDU на мероприятие, робот Inchbot L1-W EDU для выставки"
       ],
       "rendered": {
-        "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат образовательного робота-квадропеда Inchbot L1-W EDU: занятия по робототехнике, демо на выставках, доставка по Москве и регионам. Оставьте заявку.",
-        "h1": "Inchbot L1-W EDU для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Inchbot L1-W EDU — робот-собака для STEM и промо | КИБЕР ПОРТАЛ",
+        "description": "Аренда Inchbot L1-W EDU: робот-собака для образовательной зоны, промо, детского события или технологичного стенда. Доставка, настройка и оператор.",
+        "h1": "Аренда робота-собаки Inchbot L1-W EDU",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 13136
+        "visibleTextChars": 17448
       }
     },
     {
@@ -965,27 +966,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда KettyBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда KettyBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ'; passport='робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "142 chars"
+          "message": "136 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота-официанта KettyBot для мероприятий']"
+          "message": "1 H1: ['Аренда робота-официанта KettyBot']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота-официанта KettyBot для мероприятий'; passport='Аренда робота-официанта KettyBot'"
+          "status": "pass",
+          "message": "rendered='Аренда робота-официанта KettyBot'; passport='Аренда робота-официанта KettyBot'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -993,23 +994,23 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12758 visible chars; target 500"
+          "message": "20375 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда робота-официанта KettyBot'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-официанта KettyBot'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-официанта KettyBot'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot"
+          "message": "missing: прокат робота-официанта KettyBot, робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -1037,7 +1038,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -1045,7 +1046,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -1101,27 +1102,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота-официанта KettyBot для мероприятий'; passport='Аренда робота-официанта KettyBot'",
+        "titleMatchesPassport: rendered='Аренда KettyBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ'; passport='робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда робота-официанта KettyBot'",
-        "primaryKeywordInH1: primary='аренда робота-официанта KettyBot'",
-        "primaryKeywordInFirstBlock: primary='аренда робота-официанта KettyBot'",
-        "secondaryKeywords: missing: робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot"
+        "secondaryKeywords: missing: прокат робота-официанта KettyBot, робота-официанта KettyBot на мероприятие, робот робота-официанта KettyBot для выставки, заказать робота-официанта KettyBot"
       ],
       "rendered": {
-        "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат робота-официанта KettyBot для ресторанов, кафе и отелей: доставка блюд, встреча гостей, рекламный экран. Расчёт стоимости за один день.",
-        "h1": "робота-официанта KettyBot для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда KettyBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ",
+        "description": "Аренда KettyBot с доставкой, настройкой маршрутов, рекламным экраном и сопровождением для ресторана, банкета, отеля или выставки HoReCa.",
+        "h1": "Аренда робота-официанта KettyBot",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12758
+        "visibleTextChars": 20375
       }
     },
     {
@@ -1151,27 +1151,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Клипмейкера — роботизированная камера для event-видео | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ'; passport='робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Клипмейкера — роботизированная камера для event-видео | КИБЕР ПОРТАЛ'; passport='робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "144 chars"
+          "message": "140 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота Клипмейкер для мероприятий']"
+          "message": "1 H1: ['Аренда робота Клипмейкер']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота Клипмейкер для мероприятий'; passport='Аренда робота Клипмейкер'"
+          "status": "pass",
+          "message": "rendered='Аренда робота Клипмейкер'; passport='Аренда робота Клипмейкер'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -1179,18 +1179,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12487 visible chars; target 500"
+          "message": "17013 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда робота Клипмейкер'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота Клипмейкер'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота Клипмейкер'"
         },
         "secondaryKeywords": {
@@ -1223,7 +1223,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -1231,7 +1231,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -1287,27 +1287,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота Клипмейкер для мероприятий'; passport='Аренда робота Клипмейкер'",
+        "titleMatchesPassport: rendered='Аренда Клипмейкера — роботизированная камера для event-видео | КИБЕР ПОРТАЛ'; passport='робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда робота Клипмейкер'",
-        "primaryKeywordInH1: primary='аренда робота Клипмейкер'",
-        "primaryKeywordInFirstBlock: primary='аренда робота Клипмейкер'",
         "secondaryKeywords: missing: прокат робота Клипмейкер, робота Клипмейкер на мероприятие, робот робота Клипмейкер для выставки, заказать робота Клипмейкер"
       ],
       "rendered": {
-        "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Клипмейкер — роборука с камерой, которая сама снимает динамичное моушн-видео гостей. Прокат для мероприятий и контента в соцсети по всей России.",
-        "h1": "робота Клипмейкер для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Клипмейкера — роботизированная камера для event-видео | КИБЕР ПОРТАЛ",
+        "description": "Аренда Клипмейкера для мероприятия: роботизированная камера снимает динамичные ролики гостей, бренд-зоны и промо. Сценарий, свет и оператор.",
+        "h1": "Аренда робота Клипмейкер",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12487
+        "visibleTextChars": 17013
       }
     },
     {
@@ -1337,11 +1336,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда мини Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ'; passport='мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда мини Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ'; passport='мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -1349,15 +1348,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['мини робо-кофейни для мероприятий']"
+          "message": "1 H1: ['Аренда мини Robo-Кофейни']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='мини робо-кофейни для мероприятий'; passport='Аренда мини робо-кофейни'"
+          "message": "rendered='Аренда мини Robo-Кофейни'; passport='Аренда мини робо-кофейни'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -1365,7 +1364,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12839 visible chars; target 500"
+          "message": "18092 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -1381,7 +1380,7 @@
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат мини робо-кофейни, мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни"
+          "message": "missing: мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -1409,7 +1408,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -1417,7 +1416,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -1473,27 +1472,29 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='мини робо-кофейни для мероприятий'; passport='Аренда мини робо-кофейни'",
+        "titleMatchesPassport: rendered='Аренда мини Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ'; passport='мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда мини Robo-Кофейни'; passport='Аренда мини робо-кофейни'",
         "primaryKeywordInTitle: primary='аренда мини робо-кофейни'",
         "primaryKeywordInH1: primary='аренда мини робо-кофейни'",
         "primaryKeywordInFirstBlock: primary='аренда мини робо-кофейни'",
-        "secondaryKeywords: missing: прокат мини робо-кофейни, мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни"
+        "secondaryKeywords: missing: мини робо-кофейни на мероприятие, робот мини робо-кофейни для выставки, заказать мини робо-кофейни"
       ],
       "rendered": {
-        "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+        "title": "Аренда мини Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ",
         "description": "Мини робо-кофейня готовит 7 видов кофе и мороженое в компактном модуле 120×140 см. Аренда «под ключ» для мероприятий по всей России.",
-        "h1": "мини робо-кофейни для мероприятий",
-        "h2Count": 9,
+        "h1": "Аренда мини Robo-Кофейни",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12839
+        "visibleTextChars": 18092
       }
     },
     {
@@ -1523,27 +1524,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Noetix Bumi — компактный робот-гуманоид для интерактива | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ'; passport='Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Noetix Bumi — компактный робот-гуманоид для интерактива | КИБЕР ПОРТАЛ'; passport='Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "147 chars"
+          "message": "151 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Noetix Bumi для мероприятий']"
+          "message": "1 H1: ['Аренда робота-гуманоида Noetix Bumi']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Noetix Bumi для мероприятий'; passport='Аренда Noetix Bumi'"
+          "message": "rendered='Аренда робота-гуманоида Noetix Bumi'; passport='Аренда Noetix Bumi'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -1551,10 +1552,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "11212 visible chars; target 500"
+          "message": "20157 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Noetix Bumi'"
         },
         "primaryKeywordInH1": {
@@ -1562,12 +1563,12 @@
           "message": "primary='аренда Noetix Bumi'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Noetix Bumi'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Noetix Bumi, Noetix Bumi на мероприятие, робот Noetix Bumi для выставки, заказать Noetix Bumi"
+          "message": "missing: Noetix Bumi на мероприятие, робот Noetix Bumi для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -1595,7 +1596,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -1603,7 +1604,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -1659,27 +1660,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Noetix Bumi для мероприятий'; passport='Аренда Noetix Bumi'",
-        "primaryKeywordInTitle: primary='аренда Noetix Bumi'",
+        "titleMatchesPassport: rendered='Аренда Noetix Bumi — компактный робот-гуманоид для интерактива | КИБЕР ПОРТАЛ'; passport='Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида Noetix Bumi'; passport='Аренда Noetix Bumi'",
         "primaryKeywordInH1: primary='аренда Noetix Bumi'",
-        "primaryKeywordInFirstBlock: primary='аренда Noetix Bumi'",
-        "secondaryKeywords: missing: прокат Noetix Bumi, Noetix Bumi на мероприятие, робот Noetix Bumi для выставки, заказать Noetix Bumi"
+        "secondaryKeywords: missing: Noetix Bumi на мероприятие, робот Noetix Bumi для выставки"
       ],
       "rendered": {
-        "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат нового робота-гуманоида Noetix Bumi для мероприятий в Москве и по всей России. Доставка, настройка, оператор. Рассчитаем стоимость за 1 час.",
-        "h1": "Noetix Bumi для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Noetix Bumi — компактный робот-гуманоид для интерактива | КИБЕР ПОРТАЛ",
+        "description": "Аренда Noetix Bumi для интерактивной зоны, образовательного показа или промо: подготовка сценария, настройка демонстрации и сопровождение КИБЕР ПОРТАЛ.",
+        "h1": "Аренда робота-гуманоида Noetix Bumi",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 11212
+        "visibleTextChars": 20157
       }
     },
     {
@@ -1709,27 +1710,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Promobot V4 — промо-робот для выставки и события | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Promobot V4 для мероприятий — КИБЕР ПОРТАЛ'; passport='Promobot V4 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Promobot V4 — промо-робот для выставки и события | КИБЕР ПОРТАЛ'; passport='Promobot V4 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "137 chars"
+          "message": "140 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Promobot V4 для мероприятий']"
+          "message": "1 H1: ['Аренда Promobot V4']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='Promobot V4 для мероприятий'; passport='Аренда Promobot V4'"
+          "status": "pass",
+          "message": "rendered='Аренда Promobot V4'; passport='Аренда Promobot V4'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -1737,23 +1738,23 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12691 visible chars; target 500"
+          "message": "19104 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Promobot V4'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Promobot V4'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Promobot V4'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Promobot V4, Promobot V4 на мероприятие, робот Promobot V4 для выставки, заказать Promobot V4"
+          "message": "missing: Promobot V4 на мероприятие, робот Promobot V4 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -1781,7 +1782,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -1789,7 +1790,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -1845,27 +1846,25 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Promobot V4 для мероприятий'; passport='Аренда Promobot V4'",
-        "primaryKeywordInTitle: primary='аренда Promobot V4'",
-        "primaryKeywordInH1: primary='аренда Promobot V4'",
-        "primaryKeywordInFirstBlock: primary='аренда Promobot V4'",
-        "secondaryKeywords: missing: прокат Promobot V4, Promobot V4 на мероприятие, робот Promobot V4 для выставки, заказать Promobot V4"
+        "titleMatchesPassport: rendered='Аренда Promobot V4 — промо-робот для выставки и события | КИБЕР ПОРТАЛ'; passport='Promobot V4 для мероприятий — КИБЕР ПОРТАЛ'",
+        "secondaryKeywords: missing: Promobot V4 на мероприятие, робот Promobot V4 для выставки"
       ],
       "rendered": {
-        "title": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Promobot V4 — автономный робот-промоутер с распознаванием лиц и речью на 7 языках. Прокат для выставок и корпоративов по Москве и России.",
-        "h1": "Promobot V4 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Promobot V4 — промо-робот для выставки и события | КИБЕР ПОРТАЛ",
+        "description": "Аренда Promobot V4 для выставочного стенда, открытия, форума или корпоративного события: общение с гостями, экран, сценарий и сопровождение.",
+        "h1": "Аренда Promobot V4",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12691
+        "visibleTextChars": 19104
       }
     },
     {
@@ -1895,11 +1894,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота-кофейни для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-кофейни для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ'; passport='робота-кофейни для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -1907,15 +1906,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота-кофейни для мероприятий']"
+          "message": "1 H1: ['Аренда Robo-Кофейни']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='робота-кофейни для мероприятий'; passport='Аренда робота-кофейни'"
+          "message": "rendered='Аренда Robo-Кофейни'; passport='Аренда робота-кофейни'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -1923,7 +1922,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12868 visible chars; target 500"
+          "message": "17979 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -1939,7 +1938,7 @@
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат робота-кофейни, робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни"
+          "message": "missing: робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -1967,7 +1966,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -1975,7 +1974,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -2031,27 +2030,29 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота-кофейни для мероприятий'; passport='Аренда робота-кофейни'",
+        "titleMatchesPassport: rendered='Аренда Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ'; passport='робота-кофейни для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда Robo-Кофейни'; passport='Аренда робота-кофейни'",
         "primaryKeywordInTitle: primary='аренда робота-кофейни'",
         "primaryKeywordInH1: primary='аренда робота-кофейни'",
         "primaryKeywordInFirstBlock: primary='аренда робота-кофейни'",
-        "secondaryKeywords: missing: прокат робота-кофейни, робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни"
+        "secondaryKeywords: missing: робота-кофейни на мероприятие, робот робота-кофейни для выставки, заказать робота-кофейни"
       ],
       "rendered": {
-        "title": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
+        "title": "Аренда Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ",
         "description": "Робо-кофейня варит 6 видов кофе роборукой без бариста и без подключения к воде. Прокат для выставок и форумов по Москве и России.",
-        "h1": "робота-кофейни для мероприятий",
-        "h2Count": 9,
+        "h1": "Аренда Robo-Кофейни",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12868
+        "visibleTextChars": 17979
       }
     },
     {
@@ -2081,27 +2082,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Робошашек — игровой робот для стенда и интерактива | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ'; passport='робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Робошашек — игровой робот для стенда и интерактива | КИБЕР ПОРТАЛ'; passport='робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "131 chars"
+          "message": "142 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота для игры в шашки для мероприятий']"
+          "message": "1 H1: ['Аренда робота для игры в шашки']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота для игры в шашки для мероприятий'; passport='Аренда робота для игры в шашки'"
+          "status": "pass",
+          "message": "rendered='Аренда робота для игры в шашки'; passport='Аренда робота для игры в шашки'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -2109,18 +2110,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12658 visible chars; target 500"
+          "message": "16888 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда робота для игры в шашки'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота для игры в шашки'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота для игры в шашки'"
         },
         "secondaryKeywords": {
@@ -2153,7 +2154,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -2161,7 +2162,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -2217,27 +2218,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота для игры в шашки для мероприятий'; passport='Аренда робота для игры в шашки'",
+        "titleMatchesPassport: rendered='Аренда Робошашек — игровой робот для стенда и интерактива | КИБЕР ПОРТАЛ'; passport='робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда робота для игры в шашки'",
-        "primaryKeywordInH1: primary='аренда робота для игры в шашки'",
-        "primaryKeywordInFirstBlock: primary='аренда робота для игры в шашки'",
         "secondaryKeywords: missing: прокат робота для игры в шашки, робота для игры в шашки на мероприятие, робот робота для игры в шашки для выставки, заказать робота для игры в шашки"
       ],
       "rendered": {
-        "title": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Робошашки распознают доску камерой и сами делают ход роборукой. Прокат простого и понятного всем гостям аттракциона по всей России.",
-        "h1": "робота для игры в шашки для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Робошашек — игровой робот для стенда и интерактива | КИБЕР ПОРТАЛ",
+        "description": "Аренда Робошашек: роботизированная игровая зона с шашками для выставки, семейного дня, корпоративного события или промо. Оператор и настройка.",
+        "h1": "Аренда робота для игры в шашки",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12658
+        "visibleTextChars": 16888
       }
     },
     {
@@ -2267,11 +2267,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда робота-бармена «Робобар» для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда робота-бармена «Робобар» для мероприятий | КИБЕР ПОРТАЛ'; passport='робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -2279,15 +2279,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота-бармена «Робобар» для мероприятий']"
+          "message": "1 H1: ['Аренда робот-бармен «Робобар»']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='робота-бармена «Робобар» для мероприятий'; passport='Аренда робота-бармена «Робобар»'"
+          "message": "rendered='Аренда робот-бармен «Робобар»'; passport='Аренда робота-бармена «Робобар»'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -2295,10 +2295,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12777 visible chars; target 500"
+          "message": "18528 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-бармена «Робобар»'"
         },
         "primaryKeywordInH1": {
@@ -2306,12 +2306,12 @@
           "message": "primary='аренда робота-бармена «Робобар»'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-бармена «Робобар»'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: робота-бармена «Робобар» на мероприятие, робот робота-бармена «Робобар» для выставки, заказать робота-бармена «Робобар»"
+          "message": "missing: робот робота-бармена «Робобар» для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -2339,7 +2339,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -2347,7 +2347,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -2403,27 +2403,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота-бармена «Робобар» для мероприятий'; passport='Аренда робота-бармена «Робобар»'",
-        "primaryKeywordInTitle: primary='аренда робота-бармена «Робобар»'",
+        "titleMatchesPassport: rendered='Аренда робота-бармена «Робобар» для мероприятий | КИБЕР ПОРТАЛ'; passport='робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робот-бармен «Робобар»'; passport='Аренда робота-бармена «Робобар»'",
         "primaryKeywordInH1: primary='аренда робота-бармена «Робобар»'",
-        "primaryKeywordInFirstBlock: primary='аренда робота-бармена «Робобар»'",
-        "secondaryKeywords: missing: робота-бармена «Робобар» на мероприятие, робот робота-бармена «Робобар» для выставки, заказать робота-бармена «Робобар»"
+        "secondaryKeywords: missing: робот робота-бармена «Робобар» для выставки"
       ],
       "rendered": {
-        "title": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
+        "title": "Аренда робота-бармена «Робобар» для мероприятий | КИБЕР ПОРТАЛ",
         "description": "Прокат робота-бармена «Робобар»: алко- и безалкогольные коктейли за минуту, заказ через планшет, оператор на площадке. Москва и регионы.",
-        "h1": "робота-бармена «Робобар» для мероприятий",
-        "h2Count": 9,
+        "h1": "Аренда робот-бармен «Робобар»",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12777
+        "visibleTextChars": 18528
       }
     },
     {
@@ -2453,27 +2453,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота Арди для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда робота Арди — интерактивный робот для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота Арди для мероприятий — КИБЕР ПОРТАЛ'; passport='робота Арди для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда робота Арди — интерактивный робот для мероприятий | КИБЕР ПОРТАЛ'; passport='робота Арди для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "145 chars"
+          "message": "153 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота Арди для мероприятий']"
+          "message": "1 H1: ['Аренда робота Арди']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота Арди для мероприятий'; passport='Аренда робота Арди'"
+          "status": "pass",
+          "message": "rendered='Аренда робота Арди'; passport='Аренда робота Арди'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -2481,18 +2481,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12807 visible chars; target 500"
+          "message": "20025 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота Арди'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота Арди'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота Арди'"
         },
         "secondaryKeywords": {
@@ -2525,7 +2525,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -2533,7 +2533,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -2589,27 +2589,25 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота Арди для мероприятий'; passport='Аренда робота Арди'",
-        "primaryKeywordInTitle: primary='аренда робота Арди'",
-        "primaryKeywordInH1: primary='аренда робота Арди'",
-        "primaryKeywordInFirstBlock: primary='аренда робота Арди'",
+        "titleMatchesPassport: rendered='Аренда робота Арди — интерактивный робот для мероприятий | КИБЕР ПОРТАЛ'; passport='робота Арди для мероприятий — КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: прокат робота Арди, робота Арди на мероприятие, робот робота Арди для выставки, заказать робота Арди"
       ],
       "rendered": {
-        "title": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Робот Арди — реалистичный андроид Promobot с 600+ микровыражениями лица и ИИ-диалогом. Эксклюзивный прокат для премиальных мероприятий по России.",
-        "h1": "робота Арди для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда робота Арди — интерактивный робот для мероприятий | КИБЕР ПОРТАЛ",
+        "description": "Аренда робота Арди для промо-зоны, выставки, открытия или корпоративного события: сценарий взаимодействия, подготовка площадки и сопровождение оператора.",
+        "h1": "Аренда робота Арди",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12807
+        "visibleTextChars": 20025
       }
     },
     {
@@ -2639,27 +2637,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "большого формата для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда робота-художника A4 для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='большого формата для мероприятий — КИБЕР ПОРТАЛ'; passport='большого формата для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда робота-художника A4 для мероприятий | КИБЕР ПОРТАЛ'; passport='большого формата для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "136 chars"
+          "message": "138 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['большого формата для мероприятий']"
+          "message": "1 H1: ['Аренда робота-художника A4']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='большого формата для мероприятий'; passport='Аренда большого формата'"
+          "message": "rendered='Аренда робота-художника A4'; passport='Аренда большого формата'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -2667,7 +2665,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12748 visible chars; target 500"
+          "message": "17934 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -2711,7 +2709,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -2719,7 +2717,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -2775,27 +2773,29 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='большого формата для мероприятий'; passport='Аренда большого формата'",
+        "titleMatchesPassport: rendered='Аренда робота-художника A4 для мероприятий | КИБЕР ПОРТАЛ'; passport='большого формата для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-художника A4'; passport='Аренда большого формата'",
         "primaryKeywordInTitle: primary='аренда большого формата'",
         "primaryKeywordInH1: primary='аренда большого формата'",
         "primaryKeywordInFirstBlock: primary='аренда большого формата'",
         "secondaryKeywords: missing: прокат большого формата, большого формата на мероприятие, робот большого формата для выставки, заказать большого формата"
       ],
       "rendered": {
-        "title": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
-        "h1": "большого формата для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда робота-художника A4 для мероприятий | КИБЕР ПОРТАЛ",
+        "description": "Робот-художник A4 рисует портреты гостей на бумаге: творческая зона для свадеб, премий, корпоративов и стендов. Расчёт аренды под событие.",
+        "h1": "Аренда робота-художника A4",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12748
+        "visibleTextChars": 17934
       }
     },
     {
@@ -2825,27 +2825,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота София для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда робота София — гуманоид для презентации и события | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота София для мероприятий — КИБЕР ПОРТАЛ'; passport='робота София для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда робота София — гуманоид для презентации и события | КИБЕР ПОРТАЛ'; passport='робота София для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "131 chars"
+          "message": "154 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота София для мероприятий']"
+          "message": "1 H1: ['Аренда робота София']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота София для мероприятий'; passport='Аренда робота София'"
+          "status": "pass",
+          "message": "rendered='Аренда робота София'; passport='Аренда робота София'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -2853,18 +2853,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12953 visible chars; target 500"
+          "message": "20101 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота София'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота София'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота София'"
         },
         "secondaryKeywords": {
@@ -2897,7 +2897,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -2905,7 +2905,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -2961,27 +2961,25 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота София для мероприятий'; passport='Аренда робота София'",
-        "primaryKeywordInTitle: primary='аренда робота София'",
-        "primaryKeywordInH1: primary='аренда робота София'",
-        "primaryKeywordInFirstBlock: primary='аренда робота София'",
+        "titleMatchesPassport: rendered='Аренда робота София — гуманоид для презентации и события | КИБЕР ПОРТАЛ'; passport='робота София для мероприятий — КИБЕР ПОРТАЛ'",
         "secondaryKeywords: missing: прокат робота София, робота София на мероприятие, робот робота София для выставки, заказать робота София"
       ],
       "rendered": {
-        "title": "робота София для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "София Hanson Robotics — самый узнаваемый гуманоид в мире. Прокат робота-андроида на конференцию, форум или премиальное мероприятие.",
-        "h1": "робота София для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда робота София — гуманоид для презентации и события | КИБЕР ПОРТАЛ",
+        "description": "Аренда робота София для презентации, пресс-подхода или технологичного события: сценарий общения, подготовка вопросов и сопровождение команды КИБЕР ПОРТАЛ.",
+        "h1": "Аренда робота София",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12953
+        "visibleTextChars": 20101
       }
     },
     {
@@ -3011,27 +3009,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Tron — модульный робот для мероприятия и шоу | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ'; passport='модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Tron — модульный робот для мероприятия и шоу | КИБЕР ПОРТАЛ'; passport='модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "129 chars"
+          "message": "147 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['модульного робота Tron для мероприятий']"
+          "message": "1 H1: ['Аренда робота Tron']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='модульного робота Tron для мероприятий'; passport='Аренда модульного робота Tron'"
+          "message": "rendered='Аренда робота Tron'; passport='Аренда модульного робота Tron'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -3039,7 +3037,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12638 visible chars; target 500"
+          "message": "20135 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -3083,7 +3081,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -3091,7 +3089,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -3147,27 +3145,29 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='модульного робота Tron для мероприятий'; passport='Аренда модульного робота Tron'",
+        "titleMatchesPassport: rendered='Аренда Tron — модульный робот для мероприятия и шоу | КИБЕР ПОРТАЛ'; passport='модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота Tron'; passport='Аренда модульного робота Tron'",
         "primaryKeywordInTitle: primary='аренда модульного робота Tron'",
         "primaryKeywordInH1: primary='аренда модульного робота Tron'",
         "primaryKeywordInFirstBlock: primary='аренда модульного робота Tron'",
         "secondaryKeywords: missing: прокат модульного робота Tron, модульного робота Tron на мероприятие, робот модульного робота Tron для выставки, заказать модульного робота Tron"
       ],
       "rendered": {
-        "title": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Робот Tron меняет стопы между шагающим, опорным и колёсным режимом. Прокат для tech-выставок и научных фестивалей по всей России.",
-        "h1": "модульного робота Tron для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Tron — модульный робот для мероприятия и шоу | КИБЕР ПОРТАЛ",
+        "description": "Аренда робота Tron для шоу, промо-зоны или технологичной демонстрации: подготовка сценария, проверка площадки и сопровождение команды КИБЕР ПОРТАЛ.",
+        "h1": "Аренда робота Tron",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12638
+        "visibleTextChars": 20135
       }
     },
     {
@@ -3197,11 +3197,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда SenseRobot — робот-шахматист для мероприятия | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ'; passport='робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда SenseRobot — робот-шахматист для мероприятия | КИБЕР ПОРТАЛ'; passport='робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -3209,15 +3209,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['робота-шахматиста SenseRobot для мероприятий']"
+          "message": "1 H1: ['Аренда робота-шахматиста SenseRobot']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='робота-шахматиста SenseRobot для мероприятий'; passport='Аренда робота-шахматиста SenseRobot'"
+          "status": "pass",
+          "message": "rendered='Аренда робота-шахматиста SenseRobot'; passport='Аренда робота-шахматиста SenseRobot'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -3225,18 +3225,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12855 visible chars; target 500"
+          "message": "16848 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда робота-шахматиста SenseRobot'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-шахматиста SenseRobot'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда робота-шахматиста SenseRobot'"
         },
         "secondaryKeywords": {
@@ -3269,7 +3269,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -3277,7 +3277,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -3333,27 +3333,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='робота-шахматиста SenseRobot для мероприятий'; passport='Аренда робота-шахматиста SenseRobot'",
+        "titleMatchesPassport: rendered='Аренда SenseRobot — робот-шахматист для мероприятия | КИБЕР ПОРТАЛ'; passport='робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда робота-шахматиста SenseRobot'",
-        "primaryKeywordInH1: primary='аренда робота-шахматиста SenseRobot'",
-        "primaryKeywordInFirstBlock: primary='аренда робота-шахматиста SenseRobot'",
         "secondaryKeywords: missing: прокат робота-шахматиста SenseRobot, робота-шахматиста SenseRobot на мероприятие, робот робота-шахматиста SenseRobot для выставки, заказать робота-шахматиста SenseRobot"
       ],
       "rendered": {
-        "title": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Робот-шахматист SenseRobot с ИИ до уровня гроссмейстера сам делает ходы механической рукой. Прокат для выставок и корпоративов по всей России.",
-        "h1": "робота-шахматиста SenseRobot для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда SenseRobot — робот-шахматист для мероприятия | КИБЕР ПОРТАЛ",
+        "description": "Аренда SenseRobot: робот-шахматист для интеллектуальной игровой зоны, выставки, клуба, школы или корпоративного события. Настройка и оператор.",
+        "h1": "Аренда робота-шахматиста SenseRobot",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12855
+        "visibleTextChars": 16848
       }
     },
     {
@@ -3383,11 +3382,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда робота-художника Sketchbot для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Sketchbot для мероприятий — КИБЕР ПОРТАЛ'; passport='Sketchbot для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда робота-художника Sketchbot для мероприятий | КИБЕР ПОРТАЛ'; passport='Sketchbot для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -3395,15 +3394,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Sketchbot для мероприятий']"
+          "message": "1 H1: ['Аренда Sketchbot']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='Sketchbot для мероприятий'; passport='Аренда Sketchbot'"
+          "status": "pass",
+          "message": "rendered='Аренда Sketchbot'; passport='Аренда Sketchbot'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -3411,23 +3410,23 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "13068 visible chars; target 500"
+          "message": "17593 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда Sketchbot'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Sketchbot'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Sketchbot'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Sketchbot, Sketchbot на мероприятие, робот Sketchbot для выставки, заказать Sketchbot"
+          "message": "missing: робот Sketchbot для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -3455,7 +3454,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -3463,7 +3462,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -3519,27 +3518,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Sketchbot для мероприятий'; passport='Аренда Sketchbot'",
+        "titleMatchesPassport: rendered='Аренда робота-художника Sketchbot для мероприятий | КИБЕР ПОРТАЛ'; passport='Sketchbot для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда Sketchbot'",
-        "primaryKeywordInH1: primary='аренда Sketchbot'",
-        "primaryKeywordInFirstBlock: primary='аренда Sketchbot'",
-        "secondaryKeywords: missing: прокат Sketchbot, Sketchbot на мероприятие, робот Sketchbot для выставки, заказать Sketchbot"
+        "secondaryKeywords: missing: робот Sketchbot для выставки"
       ],
       "rendered": {
-        "title": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
+        "title": "Аренда робота-художника Sketchbot для мероприятий | КИБЕР ПОРТАЛ",
         "description": "Прокат робота-художника Sketchbot: ИИ-портреты гостей за минуту, брендирование логотипом, доставка и оператор по Москве и регионам. Расчёт за час.",
-        "h1": "Sketchbot для мероприятий",
-        "h2Count": 9,
+        "h1": "Аренда Sketchbot",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 13068
+        "visibleTextChars": 17593
       }
     },
     {
@@ -3569,27 +3567,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Unitree G1 — робот-гуманоид для мероприятия | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Unitree G1 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree G1 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Unitree G1 — робот-гуманоид для мероприятия | КИБЕР ПОРТАЛ'; passport='Unitree G1 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "143 chars"
+          "message": "144 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Unitree G1 для мероприятий']"
+          "message": "1 H1: ['Аренда робота-гуманоида Unitree G1']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Unitree G1 для мероприятий'; passport='Аренда Unitree G1'"
+          "message": "rendered='Аренда робота-гуманоида Unitree G1'; passport='Аренда Unitree G1'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -3597,10 +3595,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12806 visible chars; target 500"
+          "message": "20239 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree G1'"
         },
         "primaryKeywordInH1": {
@@ -3608,12 +3606,12 @@
           "message": "primary='аренда Unitree G1'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree G1'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Unitree G1, Unitree G1 на мероприятие, робот Unitree G1 для выставки, заказать Unitree G1"
+          "message": "missing: Unitree G1 на мероприятие, робот Unitree G1 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -3641,7 +3639,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -3649,7 +3647,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "20 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -3705,27 +3703,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 20 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Unitree G1 для мероприятий'; passport='Аренда Unitree G1'",
-        "primaryKeywordInTitle: primary='аренда Unitree G1'",
+        "titleMatchesPassport: rendered='Аренда Unitree G1 — робот-гуманоид для мероприятия | КИБЕР ПОРТАЛ'; passport='Unitree G1 для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида Unitree G1'; passport='Аренда Unitree G1'",
         "primaryKeywordInH1: primary='аренда Unitree G1'",
-        "primaryKeywordInFirstBlock: primary='аренда Unitree G1'",
-        "secondaryKeywords: missing: прокат Unitree G1, Unitree G1 на мероприятие, робот Unitree G1 для выставки, заказать Unitree G1"
+        "secondaryKeywords: missing: Unitree G1 на мероприятие, робот Unitree G1 для выставки"
       ],
       "rendered": {
-        "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Гуманоид Unitree G1 на прокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
-        "h1": "Unitree G1 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Unitree G1 — робот-гуманоид для мероприятия | КИБЕР ПОРТАЛ",
+        "description": "Аренда Unitree G1 для выставки, презентации, фотозоны или технологичного шоу: сценарий выхода, подготовка площадки и операторское сопровождение.",
+        "h1": "Аренда робота-гуманоида Unitree G1",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12806
+        "visibleTextChars": 20239
       }
     },
     {
@@ -3755,11 +3753,11 @@
         },
         "title": {
           "status": "pass",
-          "message": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Unitree Go2 — робот-собака для мероприятия | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Unitree Go2 — робот-собака для мероприятия | КИБЕР ПОРТАЛ'; passport='Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
@@ -3767,15 +3765,15 @@
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Unitree Go2 для мероприятий']"
+          "message": "1 H1: ['Аренда робота-собаки Unitree Go2']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Unitree Go2 для мероприятий'; passport='Аренда Unitree Go2'"
+          "message": "rendered='Аренда робота-собаки Unitree Go2'; passport='Аренда Unitree Go2'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -3783,10 +3781,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12897 visible chars; target 500"
+          "message": "19189 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree Go2'"
         },
         "primaryKeywordInH1": {
@@ -3794,12 +3792,12 @@
           "message": "primary='аренда Unitree Go2'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree Go2'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Unitree Go2, Unitree Go2 на мероприятие, робот Unitree Go2 для выставки, заказать Unitree Go2"
+          "message": "missing: Unitree Go2 на мероприятие, робот Unitree Go2 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -3827,7 +3825,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -3835,7 +3833,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -3891,27 +3889,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Unitree Go2 для мероприятий'; passport='Аренда Unitree Go2'",
-        "primaryKeywordInTitle: primary='аренда Unitree Go2'",
+        "titleMatchesPassport: rendered='Аренда Unitree Go2 — робот-собака для мероприятия | КИБЕР ПОРТАЛ'; passport='Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-собаки Unitree Go2'; passport='Аренда Unitree Go2'",
         "primaryKeywordInH1: primary='аренда Unitree Go2'",
-        "primaryKeywordInFirstBlock: primary='аренда Unitree Go2'",
-        "secondaryKeywords: missing: прокат Unitree Go2, Unitree Go2 на мероприятие, робот Unitree Go2 для выставки, заказать Unitree Go2"
+        "secondaryKeywords: missing: Unitree Go2 на мероприятие, робот Unitree Go2 для выставки"
       ],
       "rendered": {
-        "title": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Робот-собака Unitree Go2 напрокат с оператором: шоу, фотозона, вау-эффект для гостей. Доставка по Москве и регионам. Рассчитаем стоимость за 1 час.",
-        "h1": "Unitree Go2 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Unitree Go2 — робот-собака для мероприятия | КИБЕР ПОРТАЛ",
+        "description": "Аренда Unitree Go2 для выставки, фотозоны, детского праздника или корпоративного события: трюки, интерактив с гостями и операторское сопровождение.",
+        "h1": "Аренда робота-собаки Unitree Go2",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12897
+        "visibleTextChars": 19189
       }
     },
     {
@@ -3941,27 +3939,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Unitree H2 — человекоподобный робот для шоу и презентации | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Unitree H2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree H2 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Unitree H2 — человекоподобный робот для шоу и презентации | КИБЕР ПОРТАЛ'; passport='Unitree H2 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "152 chars"
+          "message": "147 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Unitree H2 для мероприятий']"
+          "message": "1 H1: ['Аренда робота-гуманоида Unitree H2']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Unitree H2 для мероприятий'; passport='Аренда Unitree H2'"
+          "message": "rendered='Аренда робота-гуманоида Unitree H2'; passport='Аренда Unitree H2'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -3969,10 +3967,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12829 visible chars; target 500"
+          "message": "20108 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree H2'"
         },
         "primaryKeywordInH1": {
@@ -3980,12 +3978,12 @@
           "message": "primary='аренда Unitree H2'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree H2'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Unitree H2, Unitree H2 на мероприятие, робот Unitree H2 для выставки, заказать Unitree H2"
+          "message": "missing: Unitree H2 на мероприятие, робот Unitree H2 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -4013,7 +4011,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -4021,7 +4019,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -4077,27 +4075,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Unitree H2 для мероприятий'; passport='Аренда Unitree H2'",
-        "primaryKeywordInTitle: primary='аренда Unitree H2'",
+        "titleMatchesPassport: rendered='Аренда Unitree H2 — человекоподобный робот для шоу и презентации | КИБЕР ПОРТАЛ'; passport='Unitree H2 для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида Unitree H2'; passport='Аренда Unitree H2'",
         "primaryKeywordInH1: primary='аренда Unitree H2'",
-        "primaryKeywordInFirstBlock: primary='аренда Unitree H2'",
-        "secondaryKeywords: missing: прокат Unitree H2, Unitree H2 на мероприятие, робот Unitree H2 для выставки, заказать Unitree H2"
+        "secondaryKeywords: missing: Unitree H2 на мероприятие, робот Unitree H2 для выставки"
       ],
       "rendered": {
-        "title": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат робота-гуманоида Unitree H2 с оператором и доставкой по Москве и регионам. Новейшая модель Unitree с мимикой и ИИ. Рассчитаем стоимость за 1 час.",
-        "h1": "Unitree H2 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Unitree H2 — человекоподобный робот для шоу и презентации | КИБЕР ПОРТАЛ",
+        "description": "Аренда Unitree H2 для технологичных мероприятий: подготовка выхода, демонстрационного сценария, безопасной зоны движения и сопровождение оператора.",
+        "h1": "Аренда робота-гуманоида Unitree H2",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12829
+        "visibleTextChars": 20108
       }
     },
     {
@@ -4127,27 +4125,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Unitree R1 — робот-гуманоид для мероприятия и стенда | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Unitree R1 для мероприятий — КИБЕР ПОРТАЛ'; passport='Unitree R1 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Unitree R1 — робот-гуманоид для мероприятия и стенда | КИБЕР ПОРТАЛ'; passport='Unitree R1 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "156 chars"
+          "message": "149 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Unitree R1 для мероприятий']"
+          "message": "1 H1: ['Аренда робота-гуманоида Unitree R1']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Unitree R1 для мероприятий'; passport='Аренда Unitree R1'"
+          "message": "rendered='Аренда робота-гуманоида Unitree R1'; passport='Аренда Unitree R1'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -4155,10 +4153,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12939 visible chars; target 500"
+          "message": "20108 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree R1'"
         },
         "primaryKeywordInH1": {
@@ -4166,12 +4164,12 @@
           "message": "primary='аренда Unitree R1'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Unitree R1'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Unitree R1, Unitree R1 на мероприятие, робот Unitree R1 для выставки, заказать Unitree R1"
+          "message": "missing: Unitree R1 на мероприятие, робот Unitree R1 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -4199,7 +4197,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -4207,7 +4205,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -4263,27 +4261,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Unitree R1 для мероприятий'; passport='Аренда Unitree R1'",
-        "primaryKeywordInTitle: primary='аренда Unitree R1'",
+        "titleMatchesPassport: rendered='Аренда Unitree R1 — робот-гуманоид для мероприятия и стенда | КИБЕР ПОРТАЛ'; passport='Unitree R1 для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида Unitree R1'; passport='Аренда Unitree R1'",
         "primaryKeywordInH1: primary='аренда Unitree R1'",
-        "primaryKeywordInFirstBlock: primary='аренда Unitree R1'",
-        "secondaryKeywords: missing: прокат Unitree R1, Unitree R1 на мероприятие, робот Unitree R1 для выставки, заказать Unitree R1"
+        "secondaryKeywords: missing: Unitree R1 на мероприятие, робот Unitree R1 для выставки"
       ],
       "rendered": {
-        "title": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Прокат робота-гуманоида Unitree R1 с оператором: акробатика, доставка, настройка. Компактный андроид для выставок в Москве и регионах. Рассчитаем стоимость.",
-        "h1": "Unitree R1 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Unitree R1 — робот-гуманоид для мероприятия и стенда | КИБЕР ПОРТАЛ",
+        "description": "Аренда Unitree R1 для выставки, презентации, шоурума или корпоративного события: сценарий демонстрации, безопасная зона и операторское сопровождение.",
+        "h1": "Аренда робота-гуманоида Unitree R1",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12939
+        "visibleTextChars": 20108
       }
     },
     {
@@ -4313,27 +4311,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда UV-BOX — интерактивная витрина для презентации продукта | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ'; passport='интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда UV-BOX — интерактивная витрина для презентации продукта | КИБЕР ПОРТАЛ'; passport='интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "132 chars"
+          "message": "121 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['интерактивной витрины UV-BOX для мероприятий']"
+          "message": "1 H1: ['Аренда интерактивной витрины UV-BOX']"
         },
         "h1MatchesPassport": {
-          "status": "warning",
-          "message": "rendered='интерактивной витрины UV-BOX для мероприятий'; passport='Аренда интерактивной витрины UV-BOX'"
+          "status": "pass",
+          "message": "rendered='Аренда интерактивной витрины UV-BOX'; passport='Аренда интерактивной витрины UV-BOX'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "13 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -4341,18 +4339,18 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "12515 visible chars; target 500"
+          "message": "17120 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
           "message": "primary='аренда интерактивной витрины UV-BOX'"
         },
         "primaryKeywordInH1": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда интерактивной витрины UV-BOX'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда интерактивной витрины UV-BOX'"
         },
         "secondaryKeywords": {
@@ -4385,7 +4383,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -4393,7 +4391,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "26 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -4449,27 +4447,26 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 26 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='интерактивной витрины UV-BOX для мероприятий'; passport='Аренда интерактивной витрины UV-BOX'",
+        "titleMatchesPassport: rendered='Аренда UV-BOX — интерактивная витрина для презентации продукта | КИБЕР ПОРТАЛ'; passport='интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ'",
         "primaryKeywordInTitle: primary='аренда интерактивной витрины UV-BOX'",
-        "primaryKeywordInH1: primary='аренда интерактивной витрины UV-BOX'",
-        "primaryKeywordInFirstBlock: primary='аренда интерактивной витрины UV-BOX'",
         "secondaryKeywords: missing: прокат интерактивной витрины UV-BOX, интерактивной витрины UV-BOX на мероприятие, робот интерактивной витрины UV-BOX для выставки, заказать интерактивной витрины UV-BOX"
       ],
       "rendered": {
-        "title": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "UV-BOX — сенсорная витрина, где 3D-товар парит прямо в воздухе. Прокат интерактивной витрины на выставку, стенд или открытие бутика.",
-        "h1": "интерактивной витрины UV-BOX для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда UV-BOX — интерактивная витрина для презентации продукта | КИБЕР ПОРТАЛ",
+        "description": "Аренда UV-BOX: интерактивная сенсорная витрина с 3D-эффектом для выставки, шоурума, презентации продукта или retail-зоны.",
+        "h1": "Аренда интерактивной витрины UV-BOX",
+        "h2Count": 13,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 12515
+        "visibleTextChars": 17120
       }
     },
     {
@@ -4499,27 +4496,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ"
+          "message": "Аренда Xiaomi CyberDog 2 — робот-собака для шоу и промо | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
-          "status": "pass",
-          "message": "rendered='Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ'; passport='Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ'"
+          "status": "warning",
+          "message": "rendered='Аренда Xiaomi CyberDog 2 — робот-собака для шоу и промо | КИБЕР ПОРТАЛ'; passport='Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "144 chars"
+          "message": "130 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Xiaomi Cyberdog 2 для мероприятий']"
+          "message": "1 H1: ['Аренда робота-собаки Xiaomi CyberDog 2']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Xiaomi Cyberdog 2 для мероприятий'; passport='Аренда Xiaomi Cyberdog 2'"
+          "message": "rendered='Аренда робота-собаки Xiaomi CyberDog 2'; passport='Аренда Xiaomi Cyberdog 2'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "9 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -4527,10 +4524,10 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "13164 visible chars; target 500"
+          "message": "19422 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Xiaomi Cyberdog 2'"
         },
         "primaryKeywordInH1": {
@@ -4538,12 +4535,12 @@
           "message": "primary='аренда Xiaomi Cyberdog 2'"
         },
         "primaryKeywordInFirstBlock": {
-          "status": "warning",
+          "status": "pass",
           "message": "primary='аренда Xiaomi Cyberdog 2'"
         },
         "secondaryKeywords": {
           "status": "warning",
-          "message": "missing: прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки, заказать Xiaomi Cyberdog 2"
+          "message": "missing: Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки"
         },
         "meaningfulImageAlts": {
           "status": "pass",
@@ -4571,7 +4568,7 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: BreadcrumbList, Service"
+          "message": "present: BreadcrumbList, FAQPage, Service"
         },
         "breadcrumbs": {
           "status": "pass",
@@ -4579,7 +4576,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "18 internal hrefs"
+          "message": "32 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -4635,27 +4632,27 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "3 AI related pages; 18 rendered internal links"
+          "message": "3 AI related pages; 32 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "h1MatchesPassport: rendered='Xiaomi Cyberdog 2 для мероприятий'; passport='Аренда Xiaomi Cyberdog 2'",
-        "primaryKeywordInTitle: primary='аренда Xiaomi Cyberdog 2'",
+        "titleMatchesPassport: rendered='Аренда Xiaomi CyberDog 2 — робот-собака для шоу и промо | КИБЕР ПОРТАЛ'; passport='Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-собаки Xiaomi CyberDog 2'; passport='Аренда Xiaomi Cyberdog 2'",
         "primaryKeywordInH1: primary='аренда Xiaomi Cyberdog 2'",
-        "primaryKeywordInFirstBlock: primary='аренда Xiaomi Cyberdog 2'",
-        "secondaryKeywords: missing: прокат Xiaomi Cyberdog 2, Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки, заказать Xiaomi Cyberdog 2"
+        "secondaryKeywords: missing: Xiaomi Cyberdog 2 на мероприятие, робот Xiaomi Cyberdog 2 для выставки"
       ],
       "rendered": {
-        "title": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
-        "description": "Аренда робота-собаки Xiaomi Cyberdog 2 с оператором: голосовые команды, сальто, фотозона для гостей. Доставка по Москве и другим городам России.",
-        "h1": "Xiaomi Cyberdog 2 для мероприятий",
-        "h2Count": 9,
+        "title": "Аренда Xiaomi CyberDog 2 — робот-собака для шоу и промо | КИБЕР ПОРТАЛ",
+        "description": "Аренда Xiaomi CyberDog 2 для технологичной выставки, промо-акции, фотозоны или съёмки контента: трюки, интерактив и сопровождение.",
+        "h1": "Аренда робота-собаки Xiaomi CyberDog 2",
+        "h2Count": 14,
         "schemaTypes": [
           "BreadcrumbList",
+          "FAQPage",
           "Service"
         ],
-        "visibleTextChars": 13164
+        "visibleTextChars": 19422
       }
     },
     {
@@ -4685,27 +4682,27 @@
         },
         "title": {
           "status": "pass",
-          "message": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ"
+          "message": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ"
         },
         "titleMatchesPassport": {
           "status": "warning",
-          "message": "rendered='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'"
+          "message": "rendered='Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'"
         },
         "description": {
           "status": "pass",
-          "message": "117 chars"
+          "message": "154 chars"
         },
         "h1Count": {
           "status": "pass",
-          "message": "1 H1: ['Роботы-гуманоиды, которые держат внимание']"
+          "message": "1 H1: ['Аренда робота-гуманоида для мероприятий']"
         },
         "h1MatchesPassport": {
           "status": "warning",
-          "message": "rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'"
+          "message": "rendered='Аренда робота-гуманоида для мероприятий'; passport='Гуманоидные роботы для мероприятий'"
         },
         "h2Present": {
           "status": "pass",
-          "message": "8 H2"
+          "message": "14 H2"
         },
         "headingHierarchy": {
           "status": "pass",
@@ -4713,7 +4710,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "8503 visible chars; target 500"
+          "message": "24127 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -4757,15 +4754,15 @@
         },
         "requiredSchemaTypes": {
           "status": "pass",
-          "message": "present: CollectionPage"
+          "message": "present: BreadcrumbList, CollectionPage, FAQPage, ItemList, VideoObject"
         },
         "breadcrumbs": {
-          "status": "warning",
-          "message": "visible breadcrumbs missing"
+          "status": "pass",
+          "message": "present or not required"
         },
         "internalLinks": {
           "status": "pass",
-          "message": "24 internal hrefs"
+          "message": "38 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -4821,29 +4818,32 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "1 AI related pages; 24 rendered internal links"
+          "message": "1 AI related pages; 38 rendered internal links"
         }
       },
       "missing": [],
       "warnings": [
-        "titleMatchesPassport: rendered='Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'",
-        "h1MatchesPassport: rendered='Роботы-гуманоиды, которые держат внимание'; passport='Гуманоидные роботы для мероприятий'",
+        "titleMatchesPassport: rendered='Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ'; passport='Аренда гуманоидных роботов | КИБЕР ПОРТАЛ'",
+        "h1MatchesPassport: rendered='Аренда робота-гуманоида для мероприятий'; passport='Гуманоидные роботы для мероприятий'",
         "primaryKeywordInTitle: primary='аренда роботов для мероприятий'",
         "primaryKeywordInH1: primary='аренда роботов для мероприятий'",
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
         "secondaryKeywords: missing: подборка роботов, роботы для выставки, роботы для презентации, роботы для события",
-        "breadcrumbs: visible breadcrumbs missing",
         "faqQuestions: 0 FAQ questions"
       ],
       "rendered": {
-        "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
-        "description": "Подборка гуманоидных роботов для мероприятий, выставочных стендов, презентаций, встреч гостей и интерактивного промо.",
-        "h1": "Роботы-гуманоиды, которые держат внимание",
-        "h2Count": 8,
+        "title": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+        "description": "Выберите робота-гуманоида для выставки, корпоратива или презентации: модели Unitree, Agibot X2, Noetix Bumi, Арди и София. Сценарии, фото и расчёт аренды.",
+        "h1": "Аренда робота-гуманоида для мероприятий",
+        "h2Count": 14,
         "schemaTypes": [
-          "CollectionPage"
+          "BreadcrumbList",
+          "CollectionPage",
+          "FAQPage",
+          "ItemList",
+          "VideoObject"
         ],
-        "visibleTextChars": 8503
+        "visibleTextChars": 24127
       }
     },
     {
@@ -4861,7 +4861,7 @@
         },
         "robotsMeta": {
           "status": "pass",
-          "message": "expected index, follow, got index, follow"
+          "message": "expected noindex, nofollow, got noindex, nofollow"
         },
         "canonical": {
           "status": "pass",
@@ -4869,7 +4869,7 @@
         },
         "sitemapInclusion": {
           "status": "pass",
-          "message": "in sitemap=True, indexable=True"
+          "message": "in sitemap=False, indexable=False"
         },
         "title": {
           "status": "pass",
@@ -4948,8 +4948,8 @@
           "message": "present: CollectionPage"
         },
         "breadcrumbs": {
-          "status": "warning",
-          "message": "visible breadcrumbs missing"
+          "status": "pass",
+          "message": "present or not required"
         },
         "internalLinks": {
           "status": "pass",
@@ -4988,7 +4988,7 @@
           "message": "structured fact labels present"
         },
         "faqQuestions": {
-          "status": "warning",
+          "status": "pass",
           "message": "0 FAQ questions"
         },
         "llmsTxtCoverage": {
@@ -5019,9 +5019,7 @@
         "primaryKeywordInTitle: primary='аренда роботов для мероприятий'",
         "primaryKeywordInH1: primary='аренда роботов для мероприятий'",
         "primaryKeywordInFirstBlock: primary='аренда роботов для мероприятий'",
-        "secondaryKeywords: missing: роботы для выставки, роботы для презентации, роботы для события",
-        "breadcrumbs: visible breadcrumbs missing",
-        "faqQuestions: 0 FAQ questions"
+        "secondaryKeywords: missing: роботы для выставки, роботы для презентации, роботы для события"
       ],
       "rendered": {
         "title": "Роботы-собаки в аренду — КИБЕР ПОРТАЛ",
@@ -5089,7 +5087,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "3729 visible chars; target 500"
+          "message": "2855 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -5141,7 +5139,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "21 internal hrefs"
+          "message": "17 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -5197,7 +5195,7 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "1 AI related pages; 21 rendered internal links"
+          "message": "1 AI related pages; 17 rendered internal links"
         }
       },
       "missing": [],
@@ -5218,7 +5216,7 @@
         "schemaTypes": [
           "CollectionPage"
         ],
-        "visibleTextChars": 3729
+        "visibleTextChars": 2855
       }
     },
     {
@@ -5276,7 +5274,7 @@
         },
         "usefulText": {
           "status": "pass",
-          "message": "8140 visible chars; target 500"
+          "message": "6836 visible chars; target 500"
         },
         "primaryKeywordInTitle": {
           "status": "warning",
@@ -5328,7 +5326,7 @@
         },
         "internalLinks": {
           "status": "pass",
-          "message": "23 internal hrefs"
+          "message": "22 internal hrefs"
         },
         "cta": {
           "status": "pass",
@@ -5384,7 +5382,7 @@
         },
         "internalEntityLinks": {
           "status": "pass",
-          "message": "1 AI related pages; 23 rendered internal links"
+          "message": "1 AI related pages; 22 rendered internal links"
         }
       },
       "missing": [],
@@ -5404,7 +5402,7 @@
         "schemaTypes": [
           "CollectionPage"
         ],
-        "visibleTextChars": 8140
+        "visibleTextChars": 6836
       }
     },
     {
@@ -5422,7 +5420,7 @@
         },
         "robotsMeta": {
           "status": "pass",
-          "message": "expected index, follow, got index, follow"
+          "message": "expected noindex, nofollow, got noindex, nofollow"
         },
         "canonical": {
           "status": "pass",
@@ -5430,7 +5428,7 @@
         },
         "sitemapInclusion": {
           "status": "pass",
-          "message": "in sitemap=True, indexable=True"
+          "message": "in sitemap=False, indexable=False"
         },
         "title": {
           "status": "pass",
@@ -6893,6 +6891,1133 @@
           "WebPage"
         ],
         "visibleTextChars": 2319
+      }
+    },
+    {
+      "slug": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/, got https://www.kiber-portal.ru/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ'; passport='Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "130 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия'; passport='Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "17 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "21437 visible chars; target 300"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='Unitree G1 или Agibot X2'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='Unitree G1 или Agibot X2'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='Unitree G1 или Agibot X2'"
+        },
+        "secondaryKeywords": {
+          "status": "warning",
+          "message": "missing: робот Unitree G1, робот Agibot X2, чем Unitree G1 отличается от Agibot X2, какой робот-гуманоид выбрать для мероприятия, робот-гуманоид для welcome-зоны"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "pass",
+          "message": "present: BlogPosting, BreadcrumbList, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "37 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "421 chars"
+        },
+        "entityClarity": {
+          "status": "warning",
+          "message": "entities: КИБЕР ПОРТАЛ"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "6 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "warning",
+          "message": "1 claims; bad sources: ['approved_article_content']"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "6 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 37 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "secondaryKeywords: missing: робот Unitree G1, робот Agibot X2, чем Unitree G1 отличается от Agibot X2, какой робот-гуманоид выбрать для мероприятия, робот-гуманоид для welcome-зоны",
+        "entityClarity: entities: КИБЕР ПОРТАЛ",
+        "reviewSourceForClaims: 1 claims; bad sources: ['approved_article_content']",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
+        "description": "Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.",
+        "h1": "Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия",
+        "h2Count": 17,
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "visibleTextChars": 21437
+      }
+    },
+    {
+      "slug": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/, got https://www.kiber-portal.ru/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ'; passport='Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "154 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Какого робота-гуманоида выбрать для мероприятия: сравнение моделей']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Какого робота-гуманоида выбрать для мероприятия: сравнение моделей'; passport='Какого робота-гуманоида выбрать для мероприятия: сравнение моделей'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "14 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "19603 visible chars; target 300"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='какого робота-гуманоида выбрать для мероприятия'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='какого робота-гуманоида выбрать для мероприятия'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='какого робота-гуманоида выбрать для мероприятия'"
+        },
+        "secondaryKeywords": {
+          "status": "warning",
+          "message": "missing: какой робот-гуманоид выбрать, сравнение роботов-гуманоидов, выбор гуманоида на мероприятие, робот София"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "pass",
+          "message": "present: BlogPosting, BreadcrumbList, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "36 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "443 chars"
+        },
+        "entityClarity": {
+          "status": "warning",
+          "message": "entities: КИБЕР ПОРТАЛ"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "warning",
+          "message": "1 claims; bad sources: ['approved_article_content']"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 36 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "secondaryKeywords: missing: какой робот-гуманоид выбрать, сравнение роботов-гуманоидов, выбор гуманоида на мероприятие, робот София",
+        "entityClarity: entities: КИБЕР ПОРТАЛ",
+        "reviewSourceForClaims: 1 claims; bad sources: ['approved_article_content']",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ",
+        "description": "Помогаем выбрать робота-гуманоида для мероприятия: Noetix Bumi, Unitree R1, Unitree G1, Agibot X2, Unitree H2, Арди и София по бюджету, задаче и сценарию.",
+        "h1": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей",
+        "h2Count": 14,
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "visibleTextChars": 19603
+      }
+    },
+    {
+      "slug": "/articles/unitree-g1-na-korporative/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/unitree-g1-na-korporative/, got https://www.kiber-portal.ru/articles/unitree-g1-na-korporative/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ'; passport='Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "136 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Unitree G1 на корпоративе — разбор сценария']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1 на корпоративе — разбор сценария'; passport='Unitree G1 на корпоративе — разбор сценария'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "15 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "17144 visible chars; target 300"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='Unitree G1 на корпоративе'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='Unitree G1 на корпоративе'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='Unitree G1 на корпоративе'"
+        },
+        "secondaryKeywords": {
+          "status": "warning",
+          "message": "missing: робот Unitree G1 на корпоратив, Unitree G1 корпоратив, робот для корпоратива, сценарий с роботом на корпоративе"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "pass",
+          "message": "present: BlogPosting, BreadcrumbList, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "35 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "320 chars"
+        },
+        "entityClarity": {
+          "status": "warning",
+          "message": "entities: КИБЕР ПОРТАЛ"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "6 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "warning",
+          "message": "1 claims; bad sources: ['approved_article_content']"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "6 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 35 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "secondaryKeywords: missing: робот Unitree G1 на корпоратив, Unitree G1 корпоратив, робот для корпоратива, сценарий с роботом на корпоративе",
+        "entityClarity: entities: КИБЕР ПОРТАЛ",
+        "reviewSourceForClaims: 1 claims; bad sources: ['approved_article_content']",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ",
+        "description": "Как робот-гуманоид Unitree G1 встраивается в корпоратив: встреча гостей, выход на сцену, фотозона, фуршет и финальное фото с оператором.",
+        "h1": "Unitree G1 на корпоративе — разбор сценария",
+        "h2Count": 15,
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "visibleTextChars": 17144
+      }
+    },
+    {
+      "slug": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/, got https://www.kiber-portal.ru/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Preview: Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "warning",
+          "message": "rendered='Preview: Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ'; passport='Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "135 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Как работает робот-гуманоид простыми словами']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Как работает робот-гуманоид простыми словами'; passport='Как работает робот-гуманоид простыми словами'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "15 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "18556 visible chars; target 300"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='как работает робот-гуманоид'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='как работает робот-гуманоид'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='как работает робот-гуманоид'"
+        },
+        "secondaryKeywords": {
+          "status": "warning",
+          "message": "missing: робот гуманоид, робот гуманоид что умеет, робот Unitree G1, аренда робота гуманоида, робот гуманоид для мероприятия"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "pass",
+          "message": "present: BlogPosting, BreadcrumbList, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "35 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "320 chars"
+        },
+        "entityClarity": {
+          "status": "warning",
+          "message": "entities: КИБЕР ПОРТАЛ"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "5 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "warning",
+          "message": "1 claims; bad sources: ['approved_article_content']"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "5 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 35 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "titleMatchesPassport: rendered='Preview: Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ'; passport='Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ'",
+        "secondaryKeywords: missing: робот гуманоид, робот гуманоид что умеет, робот Unitree G1, аренда робота гуманоида, робот гуманоид для мероприятия",
+        "entityClarity: entities: КИБЕР ПОРТАЛ",
+        "reviewSourceForClaims: 1 claims; bad sources: ['approved_article_content']",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Preview: Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ",
+        "description": "Простое объяснение, как робот-гуманоид ходит, держит равновесие, видит людей и реагирует на команды — и что это значит для мероприятия.",
+        "h1": "Как работает робот-гуманоид простыми словами",
+        "h2Count": 15,
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "visibleTextChars": 18556
+      }
+    },
+    {
+      "slug": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/, got https://www.kiber-portal.ru/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Preview: Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "warning",
+          "message": "rendered='Preview: Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ'; passport='Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "137 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Необычный подарок директору — робот в кабинете вместо галстука']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Необычный подарок директору — робот в кабинете вместо галстука'; passport='Необычный подарок директору — робот в кабинете вместо галстука'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "18 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "21373 visible chars; target 300"
+        },
+        "primaryKeywordInTitle": {
+          "status": "pass",
+          "message": "primary='необычный подарок директору'"
+        },
+        "primaryKeywordInH1": {
+          "status": "pass",
+          "message": "primary='необычный подарок директору'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "pass",
+          "message": "primary='необычный подарок директору'"
+        },
+        "secondaryKeywords": {
+          "status": "warning",
+          "message": "missing: оригинальный подарок директору, что подарить директору, робот в подарок, робот на день рождения"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "pass",
+          "message": "present: BlogPosting, BreadcrumbList, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "35 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "295 chars"
+        },
+        "entityClarity": {
+          "status": "warning",
+          "message": "entities: КИБЕР ПОРТАЛ"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "6 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "warning",
+          "message": "1 claims; bad sources: ['approved_article_content']"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "6 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 35 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "titleMatchesPassport: rendered='Preview: Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ'; passport='Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ'",
+        "secondaryKeywords: missing: оригинальный подарок директору, что подарить директору, робот в подарок, робот на день рождения",
+        "entityClarity: entities: КИБЕР ПОРТАЛ",
+        "reviewSourceForClaims: 1 claims; bad sources: ['approved_article_content']",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Preview: Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ",
+        "description": "Как поздравить директора роботом-гуманоидом в кабинете или офисе: сценарий, подготовка, ограничения площадки и что обсудить с менеджером.",
+        "h1": "Необычный подарок директору — робот в кабинете вместо галстука",
+        "h2Count": 18,
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "visibleTextChars": 21373
+      }
+    },
+    {
+      "slug": "/articles/sravnenie-unitree-g1-r1-h2/",
+      "pageType": "article",
+      "status": "warning",
+      "checks": {
+        "httpStatusStatic": {
+          "status": "pass",
+          "message": "rendered HTML exists"
+        },
+        "urlHumanReadable": {
+          "status": "pass",
+          "message": "latin lowercase slug without random ids"
+        },
+        "robotsMeta": {
+          "status": "pass",
+          "message": "expected index, follow, got index, follow"
+        },
+        "canonical": {
+          "status": "pass",
+          "message": "expected https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/, got https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/"
+        },
+        "sitemapInclusion": {
+          "status": "pass",
+          "message": "in sitemap=True, indexable=True"
+        },
+        "title": {
+          "status": "pass",
+          "message": "Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ"
+        },
+        "titleMatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ'; passport='Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ'"
+        },
+        "description": {
+          "status": "pass",
+          "message": "145 chars"
+        },
+        "h1Count": {
+          "status": "pass",
+          "message": "1 H1: ['Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий']"
+        },
+        "h1MatchesPassport": {
+          "status": "pass",
+          "message": "rendered='Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий'; passport='Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий'"
+        },
+        "h2Present": {
+          "status": "pass",
+          "message": "17 H2"
+        },
+        "headingHierarchy": {
+          "status": "pass",
+          "message": "no heading level jumps"
+        },
+        "usefulText": {
+          "status": "pass",
+          "message": "20824 visible chars; target 300"
+        },
+        "primaryKeywordInTitle": {
+          "status": "warning",
+          "message": "primary='Unitree G1, R1 и H2 сравнение'"
+        },
+        "primaryKeywordInH1": {
+          "status": "warning",
+          "message": "primary='Unitree G1, R1 и H2 сравнение'"
+        },
+        "primaryKeywordInFirstBlock": {
+          "status": "warning",
+          "message": "primary='Unitree G1, R1 и H2 сравнение'"
+        },
+        "secondaryKeywords": {
+          "status": "warning",
+          "message": "missing: робот Unitree G1, робот Unitree R1, робот Unitree H2"
+        },
+        "meaningfulImageAlts": {
+          "status": "pass",
+          "message": "missing alt count 0"
+        },
+        "ogTitle": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogDescription": {
+          "status": "pass",
+          "message": "present"
+        },
+        "ogImage": {
+          "status": "pass",
+          "message": "present"
+        },
+        "twitterCard": {
+          "status": "pass",
+          "message": "present"
+        },
+        "jsonLdValid": {
+          "status": "pass",
+          "message": "invalid scripts=0"
+        },
+        "requiredSchemaTypes": {
+          "status": "pass",
+          "message": "present: BlogPosting, BreadcrumbList, FAQPage"
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "message": "present or not required"
+        },
+        "internalLinks": {
+          "status": "pass",
+          "message": "39 internal hrefs"
+        },
+        "cta": {
+          "status": "pass",
+          "message": "conversion/contact path present"
+        },
+        "viewport": {
+          "status": "pass",
+          "message": "width=device-width, initial-scale=1"
+        },
+        "robotsTxt": {
+          "status": "pass",
+          "message": "robots.txt allows crawl and declares sitemap"
+        },
+        "aiSummary": {
+          "status": "pass",
+          "message": "293 chars"
+        },
+        "entityClarity": {
+          "status": "warning",
+          "message": "entities: КИБЕР ПОРТАЛ"
+        },
+        "questionAnswerBlocks": {
+          "status": "pass",
+          "message": "6 questions; target 3"
+        },
+        "reviewSourceForClaims": {
+          "status": "warning",
+          "message": "1 claims; bad sources: ['approved_article_content']"
+        },
+        "structuredFacts": {
+          "status": "pass",
+          "message": "structured fact labels present"
+        },
+        "faqQuestions": {
+          "status": "pass",
+          "message": "6 FAQ questions"
+        },
+        "llmsTxtCoverage": {
+          "status": "warning",
+          "message": "route not listed in public/llms.txt"
+        },
+        "markdownAlternateOrLlmsEntry": {
+          "status": "warning",
+          "message": "no markdown alternate and no llms.txt entry"
+        },
+        "aiCrawlerRobotsPolicy": {
+          "status": "pass",
+          "message": "no separate AI crawler decision required"
+        },
+        "contentNotHiddenInImagesOrClientJs": {
+          "status": "pass",
+          "message": "critical facts visible in HTML text"
+        },
+        "internalEntityLinks": {
+          "status": "pass",
+          "message": "2 AI related pages; 39 rendered internal links"
+        }
+      },
+      "missing": [],
+      "warnings": [
+        "primaryKeywordInTitle: primary='Unitree G1, R1 и H2 сравнение'",
+        "primaryKeywordInH1: primary='Unitree G1, R1 и H2 сравнение'",
+        "primaryKeywordInFirstBlock: primary='Unitree G1, R1 и H2 сравнение'",
+        "secondaryKeywords: missing: робот Unitree G1, робот Unitree R1, робот Unitree H2",
+        "entityClarity: entities: КИБЕР ПОРТАЛ",
+        "reviewSourceForClaims: 1 claims; bad sources: ['approved_article_content']",
+        "llmsTxtCoverage: route not listed in public/llms.txt",
+        "markdownAlternateOrLlmsEntry: no markdown alternate and no llms.txt entry"
+      ],
+      "rendered": {
+        "title": "Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ",
+        "description": "Сравниваем Unitree G1, R1 и H2 по размеру, автономности, характеру движения и роли на мероприятии — какую модель выбрать под площадку и сценарий.",
+        "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+        "h2Count": 17,
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "visibleTextChars": 20824
       }
     }
   ],

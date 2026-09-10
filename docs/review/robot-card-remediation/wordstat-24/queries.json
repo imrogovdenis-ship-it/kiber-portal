@@ -1,0 +1,607 @@
+[
+  {
+    "slug": "arenda-agibot-x2",
+    "query": "Agibot X2",
+    "id": "arenda-agibot-x2-1"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "query": "аренда Agibot X2",
+    "id": "arenda-agibot-x2-2"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "query": "Agibot X2 робот",
+    "id": "arenda-agibot-x2-3"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "query": "Agibot X2 характеристики",
+    "id": "arenda-agibot-x2-4"
+  },
+  {
+    "slug": "arenda-bellabot",
+    "query": "BellaBot",
+    "id": "arenda-bellabot-1"
+  },
+  {
+    "slug": "arenda-bellabot",
+    "query": "аренда BellaBot",
+    "id": "arenda-bellabot-2"
+  },
+  {
+    "slug": "arenda-bellabot",
+    "query": "Беллабот",
+    "id": "arenda-bellabot-3"
+  },
+  {
+    "slug": "arenda-bellabot",
+    "query": "BellaBot характеристики",
+    "id": "arenda-bellabot-4"
+  },
+  {
+    "slug": "arenda-glambot",
+    "query": "glambot",
+    "id": "arenda-glambot-1"
+  },
+  {
+    "slug": "arenda-glambot",
+    "query": "глэмбот",
+    "id": "arenda-glambot-2"
+  },
+  {
+    "slug": "arenda-glambot",
+    "query": "аренда глэмбота",
+    "id": "arenda-glambot-3"
+  },
+  {
+    "slug": "arenda-glambot",
+    "query": "гламбот",
+    "id": "arenda-glambot-4"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "Inchbot L1-W EDU",
+    "id": "arenda-inchbot-l1-w-edu-1"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "аренда Inchbot L1-W EDU",
+    "id": "arenda-inchbot-l1-w-edu-2"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "робота-собаки Inchbot L1-W EDU",
+    "id": "arenda-inchbot-l1-w-edu-3"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "Inchbot L1-W EDU характеристики",
+    "id": "arenda-inchbot-l1-w-edu-4"
+  },
+  {
+    "slug": "arenda-kettybot",
+    "query": "KettyBot",
+    "id": "arenda-kettybot-1"
+  },
+  {
+    "slug": "arenda-kettybot",
+    "query": "аренда KettyBot",
+    "id": "arenda-kettybot-2"
+  },
+  {
+    "slug": "arenda-kettybot",
+    "query": "Кеттибот",
+    "id": "arenda-kettybot-3"
+  },
+  {
+    "slug": "arenda-kettybot",
+    "query": "KettyBot характеристики",
+    "id": "arenda-kettybot-4"
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "query": "робот клипмейкер",
+    "id": "arenda-klipmeiker-1"
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "query": "аренда клипмейкера",
+    "id": "arenda-klipmeiker-2"
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "query": "робот видеооператор",
+    "id": "arenda-klipmeiker-3"
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "query": "робот камера аренда",
+    "id": "arenda-klipmeiker-4"
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "query": "мини робо кофейня",
+    "id": "arenda-mini-robo-kofeyni-1"
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "query": "мини робокофейня аренда",
+    "id": "arenda-mini-robo-kofeyni-2"
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "query": "робо кофейня мороженое",
+    "id": "arenda-mini-robo-kofeyni-3"
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "query": "робот кофейня аренда",
+    "id": "arenda-mini-robo-kofeyni-4"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "query": "Noetix Bumi",
+    "id": "arenda-noetix-bumi-1"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "query": "аренда Noetix Bumi",
+    "id": "arenda-noetix-bumi-2"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "query": "Noetix Bumi робот",
+    "id": "arenda-noetix-bumi-3"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "query": "Noetix Bumi характеристики",
+    "id": "arenda-noetix-bumi-4"
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "query": "Promobot V4",
+    "id": "arenda-promobot-v4-1"
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "query": "аренда Promobot V4",
+    "id": "arenda-promobot-v4-2"
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "query": "Промобот V4",
+    "id": "arenda-promobot-v4-3"
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "query": "Promobot V4 характеристики",
+    "id": "arenda-promobot-v4-4"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "query": "робо кофейня",
+    "id": "arenda-robo-kofeyni-1"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "query": "робокофейня",
+    "id": "arenda-robo-kofeyni-2"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "query": "аренда робо кофейни",
+    "id": "arenda-robo-kofeyni-3"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "query": "робот кофе",
+    "id": "arenda-robo-kofeyni-4"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "query": "робошашки",
+    "id": "arenda-roboshashki-1"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "query": "робот шашки",
+    "id": "arenda-roboshashki-2"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "query": "аренда робота для игры в шашки",
+    "id": "arenda-roboshashki-3"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "query": "робот шашист",
+    "id": "arenda-roboshashki-4"
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "query": "робобар",
+    "id": "arenda-robot-barmen-1"
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "query": "робот бармен",
+    "id": "arenda-robot-barmen-2"
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "query": "аренда робота бармена",
+    "id": "arenda-robot-barmen-3"
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "query": "робобар аренда",
+    "id": "arenda-robot-barmen-4"
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "query": "робот арди",
+    "id": "arenda-robota-ardi-1"
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "query": "арди робот аренда",
+    "id": "arenda-robota-ardi-2"
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "query": "аренда робота арди",
+    "id": "arenda-robota-ardi-3"
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "query": "робот арди возможности",
+    "id": "arenda-robota-ardi-4"
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "query": "робот художник а4",
+    "id": "arenda-robota-hudozhnika-a4-1"
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "query": "робот художник аренда",
+    "id": "arenda-robota-hudozhnika-a4-2"
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "query": "робот портретист",
+    "id": "arenda-robota-hudozhnika-a4-3"
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "query": "робот рисует портреты",
+    "id": "arenda-robota-hudozhnika-a4-4"
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "query": "робот софия",
+    "id": "arenda-robota-sofiya-1"
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "query": "аренда робота софии",
+    "id": "arenda-robota-sofiya-2"
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "query": "sophia robot",
+    "id": "arenda-robota-sofiya-3"
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "query": "робот софия возможности",
+    "id": "arenda-robota-sofiya-4"
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "query": "tron робот",
+    "id": "arenda-robota-tron-1"
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "query": "limx tron",
+    "id": "arenda-robota-tron-2"
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "query": "аренда робота tron",
+    "id": "arenda-robota-tron-3"
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "query": "трон робот",
+    "id": "arenda-robota-tron-4"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "senserobot",
+    "id": "arenda-senserobot-1"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "sense robot",
+    "id": "arenda-senserobot-2"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "робот шахматист",
+    "id": "arenda-senserobot-3"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "аренда робота шахматиста",
+    "id": "arenda-senserobot-4"
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "query": "sketchbot",
+    "id": "arenda-sketchbot-1"
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "query": "скетчбот",
+    "id": "arenda-sketchbot-2"
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "query": "аренда скетчбота",
+    "id": "arenda-sketchbot-3"
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "query": "скетч бот",
+    "id": "arenda-sketchbot-4"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "query": "Unitree G1",
+    "id": "arenda-unitree-g1-1"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "query": "аренда Unitree G1",
+    "id": "arenda-unitree-g1-2"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "query": "робот Unitree G1",
+    "id": "arenda-unitree-g1-3"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "query": "Unitree G1 характеристики",
+    "id": "arenda-unitree-g1-4"
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "query": "Unitree Go2",
+    "id": "arenda-unitree-go2-1"
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "query": "аренда Unitree Go2",
+    "id": "arenda-unitree-go2-2"
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "query": "робот Unitree Go2",
+    "id": "arenda-unitree-go2-3"
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "query": "Unitree Go2 характеристики",
+    "id": "arenda-unitree-go2-4"
+  },
+  {
+    "slug": "arenda-unitree-h2",
+    "query": "Unitree H2",
+    "id": "arenda-unitree-h2-1"
+  },
+  {
+    "slug": "arenda-unitree-h2",
+    "query": "аренда Unitree H2",
+    "id": "arenda-unitree-h2-2"
+  },
+  {
+    "slug": "arenda-unitree-h2",
+    "query": "Юнитри H2",
+    "id": "arenda-unitree-h2-3"
+  },
+  {
+    "slug": "arenda-unitree-h2",
+    "query": "Unitree H2 характеристики",
+    "id": "arenda-unitree-h2-4"
+  },
+  {
+    "slug": "arenda-unitree-r1",
+    "query": "Unitree R1",
+    "id": "arenda-unitree-r1-1"
+  },
+  {
+    "slug": "arenda-unitree-r1",
+    "query": "аренда Unitree R1",
+    "id": "arenda-unitree-r1-2"
+  },
+  {
+    "slug": "arenda-unitree-r1",
+    "query": "Юнитри R1",
+    "id": "arenda-unitree-r1-3"
+  },
+  {
+    "slug": "arenda-unitree-r1",
+    "query": "Unitree R1 характеристики",
+    "id": "arenda-unitree-r1-4"
+  },
+  {
+    "slug": "arenda-uv-box",
+    "query": "uv box",
+    "id": "arenda-uv-box-1"
+  },
+  {
+    "slug": "arenda-uv-box",
+    "query": "интерактивная витрина",
+    "id": "arenda-uv-box-2"
+  },
+  {
+    "slug": "arenda-uv-box",
+    "query": "аренда интерактивной витрины",
+    "id": "arenda-uv-box-3"
+  },
+  {
+    "slug": "arenda-uv-box",
+    "query": "сенсорная витрина",
+    "id": "arenda-uv-box-4"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "query": "Xiaomi CyberDog 2",
+    "id": "arenda-xiaomi-cyberdog-2-1"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "query": "аренда Xiaomi CyberDog 2",
+    "id": "arenda-xiaomi-cyberdog-2-2"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "query": "робот Xiaomi CyberDog 2",
+    "id": "arenda-xiaomi-cyberdog-2-3"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "query": "Xiaomi CyberDog 2 характеристики",
+    "id": "arenda-xiaomi-cyberdog-2-4"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "query": "агибот x2",
+    "id": "arenda-agibot-x2-extra-1"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "query": "agibot",
+    "id": "arenda-agibot-x2-extra-2"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "inchbot",
+    "id": "arenda-inchbot-l1-w-edu-extra-1"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "инчбот",
+    "id": "arenda-inchbot-l1-w-edu-extra-2"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "query": "аренда inchbot",
+    "id": "arenda-inchbot-l1-w-edu-extra-3"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "query": "буми робот",
+    "id": "arenda-noetix-bumi-extra-1"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "query": "bumi",
+    "id": "arenda-noetix-bumi-extra-2"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "query": "юнитри g1",
+    "id": "arenda-unitree-g1-extra-1"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "query": "юнитри джи 1",
+    "id": "arenda-unitree-g1-extra-2"
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "query": "юнитри go2",
+    "id": "arenda-unitree-go2-extra-1"
+  },
+  {
+    "slug": "arenda-glambot",
+    "query": "glambot аренда",
+    "id": "arenda-glambot-extra-1"
+  },
+  {
+    "slug": "arenda-glambot",
+    "query": "аренда гламбота",
+    "id": "arenda-glambot-extra-2"
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "query": "мини кофейня робот",
+    "id": "arenda-mini-robo-kofeyni-extra-1"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "query": "робот бариста",
+    "id": "arenda-robo-kofeyni-extra-1"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "query": "кофейный робот",
+    "id": "arenda-robo-kofeyni-extra-2"
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "query": "робот художник",
+    "id": "arenda-robota-hudozhnika-a4-extra-1"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "сенсеробот",
+    "id": "arenda-senserobot-extra-1"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "sense robot аренда",
+    "id": "arenda-senserobot-extra-2"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "query": "робот шахматист сложность",
+    "id": "arenda-senserobot-extra-3"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "query": "робошашки аренда",
+    "id": "arenda-roboshashki-extra-1"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "query": "робот шашки сложность",
+    "id": "arenda-roboshashki-extra-2"
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "query": "sketchbot аренда",
+    "id": "arenda-sketchbot-extra-1"
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "query": "промобот аренда",
+    "id": "arenda-promobot-v4-extra-1"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "query": "сайбердог 2",
+    "id": "arenda-xiaomi-cyberdog-2-extra-1"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "query": "cyberdog 2 аренда",
+    "id": "arenda-xiaomi-cyberdog-2-extra-2"
+  }
+]

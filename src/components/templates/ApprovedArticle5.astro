@@ -1,0 +1,385 @@
+---
+import { reviewRobotPreviewHref } from '../../lib/review-links';
+import HomeFinalCta from '../blocks/HomeFinalCta.astro';
+import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
+import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
+import HomeImageCards from '../blocks/HomeImageCards.astro';
+import RobotCard from '../blocks/RobotCard.astro';
+import type { ArticleBlocksTemplateData } from '../../lib/approved-article-5-types';
+
+const { template } = Astro.props as { template: ArticleBlocksTemplateData };
+const content = template.articleContent;
+const reviewRobotCards = template.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
+const [g1] = reviewRobotCards;
+const featuredRobot = content?.product?.featuredSlug ? reviewRobotCards.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
+const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
+const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
+  .map((robot) => robot.galleryImage ?? robot.image)
+  .filter((image): image is { src: string; alt: string } => Boolean(image))
+  .map((image) => ({ src: image.src, alt: image.alt }));
+---
+
+<article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
+  <section id="hero" class:list={["article-blocks__hero", template.hero.imageAlign === 'right' && "article-blocks__hero--image-right"]} data-block-id="hero" aria-labelledby="page-title">
+    <div class="container article-blocks__hero-inner">
+      <div class="article-blocks__hero-copy">
+        <p class="article-blocks__eyebrow">{template.hero.eyebrow}</p>
+        <h1 id="page-title">{template.seo.h1}</h1>
+      </div>
+      <img class="article-blocks__hero-image" src={template.hero.image.src} alt={template.hero.image.alt} loading="eager" decoding="async" />
+      <p class="article-blocks__lead">{template.hero.lead}</p>
+    </div>
+  </section>
+
+  {(content?.showInventory ?? true) && (
+  <section class="article-blocks__toc container" data-block-id="blockInventory" aria-labelledby="inventory-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">Инвентарь блоков</p>
+      <h2 id="inventory-title">Все варианты блоков, которые можно использовать в статьях</h2>
+    </div>
+    <div class="article-blocks__toc-grid">
+      {template.blockVariants.map((block) => (
+        <a href={`#${block.id}`} class={`article-blocks__toc-card article-blocks__toc-card--${block.required}`}>
+          <span class="article-blocks__toc-label">{block.label}</span>
+          <strong>{block.title}</strong>
+          <b>{block.required === 'mandatory' ? 'Обязательный блок' : 'Опциональный блок'}</b>
+          <em>{block.purpose}</em>
+          {block.comment && <small>{block.comment}</small>}
+        </a>
+      ))}
+    </div>
+  </section>
+  )}
+
+  <section id="seoIntro" class="article-blocks__prose container" data-block-id="seoIntro" aria-labelledby="lead-title">
+    <p class="article-blocks__eyebrow">{content?.seoIntro?.eyebrow ?? 'SEO / AI intro'}</p>
+    <h2 id="lead-title">{content?.seoIntro?.title ?? 'Затравка статьи без ощущения SEO-простыни'}</h2>
+    <div class="article-blocks__prose-copy">
+      {(content?.seoIntro?.paragraphs ?? [template.aiSummary]).map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </section>
+
+  <section id="plainText" class="article-blocks__plain-text container" data-block-id="plainText" aria-labelledby="plain-text-title">
+    <h2 id="plain-text-title">{content?.plainText?.title ?? 'Как это выглядит на практике?'}</h2>
+    <div class="article-blocks__plain-copy">
+      {(content?.plainText?.paragraphs ?? [
+        'Специалист КИБЕР ПОРТАЛ привозит робота-гуманоида в офис или на площадку праздника, настраивает программу под сценарий — короткое приветствие, поклон, вручение подарка или диплома от лица коллектива — и управляет роботом на протяжении всего выступления. Самостоятельно программировать ничего не нужно: от идеи до выхода робота на сцену обычно достаточно одного брифа с менеджером.',
+        'Скажу честно, как и полагается роботу: это не подарок «из коробки», который вручают без подготовки. Гуманоиду нужна ровная площадка без высоких порогов и лестниц, розетка поблизости и присутствие оператора — самостоятельно, без специалиста КИБЕР ПОРТАЛ, робота не арендуют. А ещё на одном заряде он работает около двух часов: для короткого поздравления в начале мероприятия этого хватит с запасом, а для программы на весь день лучше сразу обсудить с менеджером запасной аккумулятор.',
+      ]).map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </section>
+
+  <section id="goshaQuote" class="article-blocks__gosha container" data-block-id="goshaQuoteAfterNumberedUseCases" aria-label="Кибер Гоша объясняет структуру статьи">
+    <HomeGoshaQuote {...template.gosha} />
+  </section>
+
+  <section id="mediaMoment" class="article-blocks__media container" data-block-id="mediaMoment" aria-labelledby="media-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">{content?.mediaMoment?.eyebrow ?? 'Фото / видео момент'}</p>
+      <h2 id="media-title">{content?.mediaMoment?.title ?? 'Вот как выглядит сам момент'}</h2>
+      <span>{content?.mediaMoment?.description ?? 'Блок из сценарных статей: один сильный кадр или видео после объяснения, чтобы читатель увидел событие, а не только прочитал описание.'}</span>
+    </div>
+    <figure>
+      <div class="article-blocks__media-frame">
+        <img src={content?.mediaMoment?.image.src ?? 'https://static.tildacdn.com/tild3065-3664-4363-b561-616435326462/____.jpg'} alt={content?.mediaMoment?.image.alt ?? 'робот-гуманоид выходит поздравлять директора на мероприятии'} loading="lazy" decoding="async" />
+      </div>
+      <figcaption>{content?.mediaMoment?.caption ?? 'Гуманоид спокойно выходит к человеку, останавливается, кланяется и запускает тот самый момент, ради которого гости достают телефоны.'}</figcaption>
+    </figure>
+  </section>
+
+  <section id="robotCardGallery" class="humanoid-template__gallery article-blocks__gallery" data-block-id="robotCardGallery" aria-labelledby="article-gallery-title">
+    <div class="container humanoid-template__gallery-head article-blocks__gallery-head">
+      <div class="humanoid-template__section-head article-blocks__section-head">
+        <p class="humanoid-template__eyebrow article-blocks__eyebrow">{content?.gallery?.eyebrow ?? 'Галерея'}</p>
+        <h2 id="article-gallery-title">{content?.gallery?.title ?? 'Галерея для статьи: показать робота до длинного текста'}</h2>
+        <span>{content?.gallery?.description ?? 'Блок целиком взят со страницы «Подборка / роботы-гуманоиды»: здесь меняются только фотографии под конкретную статью.'}</span>
+      </div>
+      <div class="humanoid-template__gallery-nav" aria-label="Навигация по галерее статьи">
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev={`[data-drag-slider='${gallerySliderId}']`} aria-label="Предыдущие фото галереи">‹</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next={`[data-drag-slider='${gallerySliderId}']`} aria-label="Следующие фото галереи">›</button>
+      </div>
+    </div>
+    <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея шаблона статьи: горизонтальный слайдер как на подборке гуманоидов">
+      {articleGalleryImages.map((image, index) => (
+        <figure class="humanoid-template__gallery-item">
+          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section id="comparisonBlock" class="article-blocks__comparison container" data-block-id="comparisonBlock" aria-labelledby="comparison-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">{content?.comparison?.eyebrow ?? 'Сравнение'}</p>
+      <h2 id="comparison-title">{content?.comparison?.title ?? 'Кому подходит Unitree G1, а кому — Agibot X2'}</h2>
+      <span>{content?.comparison?.description ?? 'Разложили по сценариям, чтобы выбор между Unitree G1 и Agibot X2 занял пару минут, а не пару дней. Слева — типичная ситуация на мероприятии, справа — какой робот обычно закрывает её лучше: без универсальных рецептов, только конкретные комбинации задачи и решения.'}</span>
+    </div>
+    <div class="article-blocks__comparison-columns">
+      {(content?.comparison?.columns ?? [
+        { title: 'Выбирайте Unitree G1, если...', paragraphs: ['Вам нужен короткий, эффектный выход на сцену или узнаваемый «технологичный» гость на выставочном стенде — где-то на 15–30 минут внимания, а не на весь день диалогов. G1 хорошо смотрится в статичной демонстрации, на пресс-подходе, при открытии мероприятия или в качестве фотозоны рядом со стендом технологичного бренда.', 'Формат подходит B2B-презентациям, техническим конференциям и открытиям бизнес-центров, где важно произвести впечатление инженерной точностью, а не долгим разговором с каждым гостем.'] },
+        { title: 'Выбирайте Agibot X2, если...', paragraphs: ['Вам важно, чтобы гости не просто сфотографировались, а пообщались с роботом: задали вопрос, получили ответ, увидели «эмоцию» на экране. X2 хорошо работает на детских и образовательных мероприятиях, в интерактивной фотозоне и на затяжных форматах вроде целого дня выставки.', 'Формат подходит семейным праздникам, научным шоу и стендам, где нужен не статичный экспонат, а «живой» персонаж, который вовлекает поток посетителей самостоятельно, пока команда бренда занята общением.'] },
+      ]).map((column) => <article><h3>{column.title}</h3>{column.paragraphs.map((paragraph) => <p>{paragraph}</p>)}</article>)}
+    </div>
+    {content?.comparison?.table && (
+      <div class="article-blocks__comparison-table" role="region" aria-label="Таблица сравнения характеристик">
+        <table>
+          <thead><tr>{content.comparison.table.headers.map((header) => <th>{header}</th>)}</tr></thead>
+          <tbody>{content.comparison.table.rows.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody>
+        </table>
+        {content.comparison.table.note && <p>{content.comparison.table.note}</p>}
+      </div>
+    )}
+  </section>
+
+  <section id="obviousChoice" class="article-blocks__obvious container" data-block-id="obviousChoice" aria-labelledby="obvious-choice-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">{content?.obviousChoice?.eyebrow ?? 'Выбор'}</p>
+      <h2 id="obvious-choice-title">{content?.obviousChoice?.title ?? 'Три сценария, где выбор очевиден'}</h2>
+    </div>
+    <div class="article-blocks__obvious-grid">
+      {(content?.obviousChoice?.cards ?? [
+        { number: '1', title: 'Выставочный стенд технологичного бренда', text: 'Здесь выигрывает Unitree G1: чёткая демонстрация и узнаваемый силуэт держат поток посетителей у стенда без долгих разговоров с каждым гостем выставки.' },
+        { number: '2', title: 'Детский или образовательный праздник', text: 'Здесь выигрывает Agibot X2: диалог, мимика на дисплее и реакция на прикосновение вовлекают даже самых маленьких гостей мероприятия и их родителей.' },
+        { number: '3', title: 'Корпоратив на весь день', text: 'Часто нужны оба формата сразу — короткий эффектный выход Unitree G1 утром и долгий интерактив Agibot X2 в течение всего дня программы.' },
+      ]).map((card) => <article><span>{card.number}</span><h3>{card.title}</h3><p>{card.text}</p></article>)}
+    </div>
+  </section>
+
+  <section id="numberedUseCases" class="article-blocks__numbered container" data-block-id="numberedUseCases" aria-labelledby="scenario-fit-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">{content?.numberedUseCases?.eyebrow ?? 'Форматы'}</p>
+      <h2 id="scenario-fit-title">{content?.numberedUseCases?.title ?? 'Где робот раскрывается лучше всего'}</h2>
+      <span>{content?.numberedUseCases?.description ?? 'Формат мероприятия почти не ограничивает робота — важнее задача, которую он закрывает. Вот четыре формата, где он работает особенно хорошо.'}</span>
+    </div>
+    <div class="article-blocks__numbered-grid">
+      {(content?.numberedUseCases?.items ?? [
+        { number: '1', title: 'Свадьба', text: 'Развозит напитки и канапе между гостями, попадает в кадр гостевых сторис и снимает часть нагрузки с официантов на банкете.' },
+        { number: '2', title: 'Конференция и деловое мероприятие', text: 'Разносит кофе и воду на кофе-брейках, а рекламным экраном на корпусе параллельно продвигает бренд события.' },
+        { number: '3', title: 'Фестиваль и городское событие', text: 'Работает на открытых фуд-кортах и в зонах отдыха, где нужно быстро обслужить поток гостей без очередей.' },
+        { number: '4', title: 'Корпоратив', text: 'Развозит напитки и закуски по залу, оставляя официантам время на общение с гостями и VIP-зоной.' },
+      ]).map((item) => <article><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}
+    </div>
+  </section>
+
+
+  {content?.extraGoshaQuoteAfterNumberedUseCases && (
+  <section id="goshaQuoteAfterNumberedUseCases" class="article-blocks__gosha container" data-block-id="goshaQuoteAfterNumberedUseCases" aria-label="Кибер Гоша направляет к менеджеру">
+    <HomeGoshaQuote {...template.gosha} id="kiber-gosha-conclusion" text={content.extraGoshaQuoteAfterNumberedUseCases.text} />
+  </section>
+  )}
+
+  <section id="checkpointList" class="article-blocks__checklist container" data-block-id="checkpointList" aria-labelledby="checklist-title">
+    <div class="article-blocks__section-head article-blocks__section-head--wide">
+      <p class="article-blocks__eyebrow">{content?.checklist?.eyebrow ?? 'Чек-лист'}</p>
+      <h2 id="checklist-title">{content?.checklist?.title ?? 'Чтобы не гадать между двумя классными коллегами, я собрал короткий чек-лист:'}</h2>
+      <span>{content?.checklist?.description ?? 'Пройдитесь по нему перед тем, как бронировать робота-гуманоида для своего мероприятия.'}</span>
+    </div>
+    <div class="article-blocks__checks">
+      {(content?.checklist?.items ?? [
+        { title: 'Формат внимания', text: 'Нужен короткий эффектный выход на сцену или долгий диалог с гостями весь день мероприятия?' },
+        { title: 'Тип аудитории', text: 'Взрослая B2B-аудитория на деловой конференции или семейная публика с детьми на празднике?' },
+        { title: 'Длительность программы', text: 'Разовый выход на 20–30 минут или присутствие робота-гуманоида на площадке несколько часов подряд?' },
+        { title: 'Площадка', text: 'Ровный пол без порогов, свободное место для движения и розетка 220 В рядом — обязательны для обеих моделей.' },
+      ]).map((item) => <article><span aria-hidden="true">✓</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}
+    </div>
+  </section>
+
+  <section id="pairedEnumeration" class="article-blocks__paired-list container" data-block-id="pairedEnumeration" aria-labelledby="format-alternatives-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">{content?.pairedEnumeration?.eyebrow ?? 'Перечисление'}</p>
+      <h2 id="format-alternatives-title">{content?.pairedEnumeration?.title ?? 'Что обычно делают в велком-зоне'}</h2>
+      <span>{content?.pairedEnumeration?.description ?? 'Идея с роботом — не замена привычным форматам, а ещё один вариант в ряду уже знакомых.'}</span>
+    </div>
+    <div class="article-blocks__paired-rows">
+      {(content?.pairedEnumeration?.items ?? [
+        { title: 'Фотобудка', text: 'Гости фотографируются сами, часто с реквизитом и рамками с именами молодожёнов.' },
+        { title: 'Книга или альбом пожеланий', text: 'Гости пишут поздравления, которые молодожёны читают уже после свадьбы.' },
+        { title: 'Авторские коктейли и кэнди-бар', text: 'Именной напиток или сладкий стол, который запоминается вкусом, а не действием.' },
+        { title: 'Игровое зонирование', text: 'Например, поиск своего стола по игровому принципу вместо обычной рассадки.' },
+      ]).map((item) => <article><h3>{item.title}</h3><p>{item.text}</p></article>)}
+    </div>
+  </section>
+
+  <section id="productCard" class="article-blocks__product container" data-block-id="productCard" aria-labelledby="product-title">
+    <div class="article-blocks__section-head">
+      <p class="article-blocks__eyebrow">{content?.product?.eyebrow ?? 'Одна рекомендованная модель'}</p>
+      <h2 id="product-title">{content?.product?.title ?? 'Когда статья рекомендует конкретного робота'}</h2>
+    </div>
+    {featuredRobot && (
+      <article class="article-blocks__featured-model" aria-labelledby="featured-model-title">
+        <a class="article-blocks__featured-media" href={featuredRobot.href} aria-label={`Перейти на страницу ${featuredRobot.title}`}>
+          {featuredRobot.image && <img src={featuredRobot.image.src} alt={featuredRobot.image.alt} loading="lazy" decoding="async" />}
+        </a>
+        <div class="article-blocks__featured-copy">
+          <h3 id="featured-model-title">{featuredRobot.title.replace(/^Аренда\s+/i, '')}</h3>
+          <p class="article-blocks__featured-category">{featuredRobot.category}</p>
+          <p class="article-blocks__featured-price">{featuredRobot.price}</p>
+          <p class="article-blocks__featured-description">{featuredRobot.description}</p>
+          <a class="article-blocks__featured-button" href={featuredRobot.href}>Перейти на страницу</a>
+        </div>
+      </article>
+    )}
+  </section>
+
+  <section id="articleFaq" class="article-blocks__faq container" data-block-id="faq" aria-label="FAQ статьи">
+    <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
+  </section>
+
+  <section id="cta2" class="article-blocks__cta container" data-block-id="cta2" aria-label="Связаться с КИБЕР ПОРТАЛ">
+    <HomeFinalCta {...template.finalCta} variant="robot-card-final" />
+  </section>
+
+  <section id="catalogBlock" class="vertical-slice__section vertical-slice__section--catalog container" data-block-id="catalogBlock" aria-labelledby="catalog-title">
+    <div class="vertical-slice__section-copy">
+      <p>{content?.catalog?.eyebrow ?? 'Каталог роботов'}</p>
+      <h2 id="catalog-title">{content?.catalog?.title ?? 'Роботы, которые подходят к теме статьи'}</h2>
+      <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
+    </div>
+    <div class="vertical-slice__card-grid">
+      {reviewRobotCards.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+    </div>
+  </section>
+
+  <section id="relatedArticles" class="article-blocks__related container" data-block-id="relatedArticles" aria-label="Тематические статьи">
+    <HomeImageCards id="article-template-related" eyebrow={content?.relatedArticles?.eyebrow ?? "Блог Кибер Гоши"} title={content?.relatedArticles?.title ?? "Тематические статьи по аренде роботов"} description={content?.relatedArticles?.description ?? "Блок перелинковки между уже подготовленными и будущими статьями Блога Кибер Гоши."} cards={template.relatedArticles.cards} variant="article" />
+  </section>
+
+  <section id="relatedCompilations" class="article-blocks__compilations container" data-block-id="relatedCompilations" aria-label="Подборки по теме статьи">
+    <HomeImageCards id="article-template-compilations" eyebrow={content?.relatedCompilations?.eyebrow ?? "Подборки"} title={content?.relatedCompilations?.title ?? "Тематические подборки роботов для аренды"} description={content?.relatedCompilations?.description ?? "Переходы в подборки добавляются там, где они действительно помогают выбрать класс робота или сценарий мероприятия."} cards={template.relatedCompilations.cards} />
+  </section>
+</article>
+
+<script is:inline src="/scripts/robot-card-gallery.js" defer></script>
+
+<style>
+  .article-blocks { display: grid; gap: 0; overflow-x: clip; background: var(--kp-reference-sky); color: var(--kp-reference-ink); }
+  .article-blocks section { scroll-margin-top: 6rem; }
+  .article-blocks__hero { padding: clamp(3.6rem, 6vw, 5.75rem) 0 clamp(2.25rem, 4vw, 3.8rem); background: var(--kp-ink-dark); color: var(--kp-reference-white); }
+  .article-blocks__hero-inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(20rem, .72fr); column-gap: clamp(2rem, 5vw, 5rem); row-gap: clamp(1.4rem, 3vw, 2.4rem); align-items: start; }
+  .article-blocks__hero-copy { display: grid; gap: 1rem; }
+  .article-blocks h1, .article-blocks h2, .article-blocks h3, .article-blocks p, .article-blocks span, .article-blocks figure { margin: 0; }
+  .article-blocks h1, .article-blocks h2, .article-blocks h3, .article-blocks strong { font-family: var(--kp-font-heading); font-weight: 700; letter-spacing: -.03em; }
+  .article-blocks h1 { max-width: 15ch; font-size: clamp(2.25rem, 4.4vw, 4.65rem); line-height: 1; }
+  .article-blocks h2 { max-width: 58rem; color: var(--kp-ink); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); letter-spacing: 0; }
+  .article-blocks h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.08; }
+  .article-blocks__eyebrow { color: var(--kp-reference-blue); font-size: var(--kp-reference-label-size); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .article-blocks__lead { grid-column: 1 / -1; max-width: none; color: color-mix(in srgb, white 82%, transparent); font-size: clamp(1.05rem, 1.45vw, 1.3rem); line-height: 1.5; }
+  .article-blocks__hero--image-right .article-blocks__hero-copy { grid-column: 1; }
+  .article-blocks__hero--image-right .article-blocks__hero-image { grid-area: 1 / 2 / span 2; }
+  .article-blocks__hero--image-right .article-blocks__lead { grid-column: 1; }
+  .article-blocks__hero-image { align-self: start; width: 100%; min-height: 25rem; max-height: 34rem; margin-top: 2.25rem; object-fit: cover; border-radius: 1.75rem; }
+  .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__cta { padding-block: clamp(2.1rem, 3.8vw, 3.4rem); }
+  .article-blocks__notice { display: grid; gap: .5rem; margin-top: 2rem; border-radius: 1.35rem; background: var(--kp-reference-white); }
+  .article-blocks__notice strong { color: var(--kp-reference-blue); font-size: 1.35rem; }
+  .article-blocks__section-head { display: grid; gap: .75rem; max-width: 60rem; }
+  .article-blocks__section-head > span, .article-blocks p, .article-blocks li, .article-blocks td { color: var(--kp-reference-muted); font-size: clamp(.98rem, 1.1vw, 1.08rem); line-height: 1.58; }
+  .article-blocks__toc-grid, .article-blocks__verdict, .article-blocks__steps, .article-blocks__benefit-grid, .article-blocks__robot-grid { display: grid; gap: clamp(1rem, 2vw, 1.5rem); }
+  .article-blocks__source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1.5rem; }
+  .article-blocks__toc-grid a, .article-blocks__verdict article, .article-blocks__split article, .article-blocks__benefit-grid article { display: grid; gap: .75rem; border-radius: 1.35rem; padding: clamp(1.25rem, 2vw, 1.65rem); background: var(--kp-reference-white); text-decoration: none; }
+  .article-blocks__source-grid article > p { color: var(--kp-reference-blue); font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  .article-blocks__source-grid ul { display: grid; gap: .45rem; margin: 0; padding-left: 1.2rem; }
+  .article-blocks__toc-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 1.5rem; }
+  .article-blocks__toc-grid a { color: var(--kp-reference-ink); }
+  .article-blocks__toc-grid a > span { color: var(--kp-reference-blue); font-family: var(--kp-font-heading); font-weight: 700; }
+  .article-blocks__toc-grid em { color: var(--kp-reference-muted); font-size: .86rem; font-style: normal; line-height: 1.4; }
+  .article-blocks__toc-card b { width: fit-content; border-radius: 999rem; padding: .28rem .58rem; background: color-mix(in srgb, var(--kp-reference-muted) 12%, transparent); color: var(--kp-reference-muted); font-family: var(--kp-font-heading); font-size: .72rem; font-weight: 800; letter-spacing: .06em; line-height: 1; text-transform: uppercase; }
+  .article-blocks__toc-card--mandatory b { background: color-mix(in srgb, var(--kp-reference-blue) 14%, transparent); color: var(--kp-reference-blue); }
+  .article-blocks__toc-card small { color: var(--kp-reference-muted); font-size: .82rem; line-height: 1.4; }
+  .article-blocks__prose { display: grid; gap: 1.35rem; }
+  .article-blocks__prose-copy { display: grid; gap: .95rem; max-width: 72rem; }
+  .article-blocks__plain-text { display: grid; gap: clamp(1rem, 2vw, 1.5rem); }
+  .article-blocks__plain-copy { display: grid; gap: 1.35rem; max-width: 72rem; }
+  .article-blocks__media figure { display: grid; gap: .8rem; margin-top: 1.5rem; }
+  .article-blocks__media-frame { aspect-ratio: 16 / 9; overflow: hidden; border-radius: 1.6rem; }
+  .article-blocks__media img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .article-blocks__media figcaption { max-width: 50rem; color: var(--kp-reference-muted); font-size: .94rem; line-height: 1.45; }
+  .humanoid-template__gallery { --humanoid-gallery-height: clamp(29.12rem, 47.6vw, 35.49rem); display: grid; gap: 1.5rem; padding-block: clamp(2.5rem, 5vw, 4.5rem); background: var(--kp-reference-white); overflow: hidden; }
+  .humanoid-template__section-head { display: grid; gap: .8rem; max-width: 58rem; }
+  .humanoid-template__gallery-head .humanoid-template__section-head { margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .humanoid-template__gallery-head { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; }
+  .humanoid-template__gallery-nav { display: inline-flex; gap: .5rem; align-items: center; }
+  .humanoid-template__gallery-nav-button { display: inline-flex; width: 2.65rem; height: 2.65rem; align-items: center; justify-content: center; border: 0; border-radius: 999rem; background: var(--kp-reference-blue); color: white; font-family: var(--kp-font-heading); font-size: 1.7rem; font-weight: 700; line-height: 1; cursor: pointer; }
+  .humanoid-template__gallery-nav-button:focus-visible { outline: .1875rem solid var(--kp-reference-ink); outline-offset: .2rem; }
+  .humanoid-template__drag-gallery { display: flex; gap: clamp(.85rem, 1.5vw, 1.15rem); overflow-x: auto; overscroll-behavior-inline: contain; -webkit-overflow-scrolling: touch; scroll-snap-type: none; cursor: grab; user-select: none; touch-action: pan-y; scrollbar-width: none; }
+  .humanoid-template__drag-gallery::-webkit-scrollbar { display: none; }
+  .humanoid-template__drag-gallery.is-dragging { cursor: grabbing; scroll-snap-type: none; }
+  .humanoid-template__gallery-strip { padding: 0 max(var(--kp-reference-page-gutter), calc((100vw - var(--kp-reference-container)) / 2)) .4rem; }
+  .humanoid-template__gallery-item { position: relative; flex: 0 0 auto; width: fit-content; min-width: 0; height: var(--humanoid-gallery-height); overflow: hidden; border-radius: 1.35rem; background: transparent; scroll-snap-align: start; -webkit-user-drag: none; }
+  .humanoid-template__gallery-item img { display: block; width: auto; height: 100%; max-width: none; border-radius: inherit; object-fit: contain; object-position: center; -webkit-user-drag: none; user-select: none; }
+  .article-blocks__comparison { display: grid; gap: clamp(3rem, 6vw, 5rem); }
+  .article-blocks__comparison .article-blocks__section-head { max-width: 49rem; }
+  .article-blocks__comparison-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.5rem, 7vw, 7rem); }
+  .article-blocks__comparison-columns article { display: grid; align-content: start; gap: 1rem; }
+  .article-blocks__comparison-columns h3 { font-size: clamp(1.45rem, 2.2vw, 2rem); line-height: 1.08; }
+  .article-blocks__comparison-columns p { font-size: clamp(.98rem, 1.1vw, 1.08rem); line-height: 1.58; }
+  .article-blocks__comparison-table { overflow-x: auto; border-radius: 1.35rem; background: var(--kp-reference-white); }
+  .article-blocks__comparison-table table { width: 100%; min-width: 58rem; border-collapse: collapse; }
+  .article-blocks__comparison-table th, .article-blocks__comparison-table td { padding: 1rem; border-bottom: .0625rem solid color-mix(in srgb, var(--kp-reference-muted) 18%, transparent); text-align: left; vertical-align: top; }
+  .article-blocks__comparison-table th { color: var(--kp-reference-ink); font-family: var(--kp-font-heading); font-weight: 700; }
+  .article-blocks__comparison-table p { padding: 1rem; }
+  .article-blocks__obvious { display: grid; gap: clamp(2.25rem, 4.5vw, 3.5rem); }
+  .article-blocks__obvious-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 1.8vw, 1.5rem); }
+  .article-blocks__obvious article { position: relative; isolation: isolate; display: grid; min-height: clamp(13rem, 18vw, 16rem); align-content: center; gap: .8rem; overflow: hidden; border-radius: 1.5rem; padding: clamp(1.45rem, 2.4vw, 2.05rem); background: var(--kp-reference-white); }
+  .article-blocks__obvious article > span { position: absolute; inset: 50% auto auto 50%; z-index: -1; transform: translate(-50%, -50%); color: color-mix(in srgb, var(--kp-reference-blue) 9%, transparent); font-family: var(--kp-font-heading); font-size: clamp(8rem, 15vw, 13.5rem); font-weight: 800; line-height: .75; letter-spacing: -.08em; pointer-events: none; user-select: none; }
+  .article-blocks__obvious h3, .article-blocks__obvious p { position: relative; z-index: 1; }
+  .article-blocks__obvious h3 { color: var(--kp-reference-ink); font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.05; }
+  .article-blocks__numbered { display: grid; gap: clamp(2rem, 4vw, 3rem); }
+  .article-blocks__numbered .article-blocks__section-head { max-width: 45rem; }
+  .article-blocks__numbered-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 3.5rem) clamp(3rem, 7vw, 7rem); }
+  .article-blocks__numbered-grid article { display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 1.35rem; align-items: start; }
+  .article-blocks__numbered-grid article > span { display: grid; width: 2.9rem; aspect-ratio: 1; place-items: center; border-radius: 50%; background: var(--kp-reference-blue); color: var(--kp-reference-white); font-family: var(--kp-font-heading); font-weight: 700; }
+  .article-blocks__numbered-grid h3 { font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.1; }
+  .article-blocks__numbered-grid div { display: grid; gap: .65rem; }
+  .article-blocks__checklist { display: grid; gap: clamp(2.75rem, 5vw, 4.5rem); }
+  .article-blocks__section-head--wide { max-width: 60rem; }
+  .article-blocks__checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.25rem, 5vw, 4rem) clamp(3rem, 7vw, 7rem); }
+  .article-blocks__checks article { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: 1.25rem; align-items: start; }
+  .article-blocks__checks article > span { display: grid; width: 2.9rem; aspect-ratio: 1; place-items: center; border-radius: 50%; background: var(--kp-reference-blue); color: white; font-size: 1.8rem; font-weight: 700; line-height: 1; }
+  .article-blocks__checks div { display: grid; gap: .65rem; }
+  .article-blocks__checks h3 { font-size: clamp(1.2rem, 1.65vw, 1.5rem); line-height: 1.1; }
+  .article-blocks__paired-list { display: grid; gap: clamp(2.25rem, 5vw, 4rem); }
+  .article-blocks__paired-list .article-blocks__section-head { max-width: 45rem; }
+  .article-blocks__paired-rows { display: grid; gap: clamp(1.9rem, 4vw, 3rem); }
+  .article-blocks__paired-rows article { display: grid; grid-template-columns: minmax(10rem, .32fr) minmax(0, .68fr); gap: clamp(2rem, 6vw, 7rem); align-items: baseline; }
+  .article-blocks__paired-rows h3 { font-size: clamp(1.05rem, 1.35vw, 1.22rem); line-height: 1.16; }
+  .article-blocks__catalog { display: grid; gap: 1.5rem; }
+  .article-blocks__robot-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .article-blocks__product { display: grid; gap: 1.5rem; }
+  .article-blocks__featured-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1.25rem, 2.4vw, 2rem); }
+  .article-blocks__featured-model { display: grid; grid-template-columns: minmax(18rem, .42fr) minmax(0, .58fr); gap: clamp(2rem, 4vw, 3.5rem); align-items: start; }
+  .article-blocks__featured-media { position: relative; display: block; min-height: clamp(24rem, 34vw, 32rem); overflow: hidden; border-radius: 1.1rem; background: transparent; text-decoration: none; }
+  .article-blocks__featured-media img { display: block; width: 100%; height: 100%; min-height: clamp(24rem, 34vw, 32rem); object-fit: cover; object-position: center; }
+  .article-blocks__featured-copy { display: grid; gap: .95rem; padding-top: .45rem; }
+  .article-blocks__featured-copy h3 { color: var(--kp-reference-ink); font-size: clamp(3rem, 5.5vw, 5rem); line-height: .95; }
+  .article-blocks__featured-category { color: var(--kp-reference-muted); font-size: .95rem; line-height: 1.35; }
+  .article-blocks__featured-price { color: var(--kp-reference-muted); font-family: var(--kp-font-heading); font-size: clamp(1.05rem, 1.5vw, 1.22rem); font-weight: 700; line-height: 1.2; }
+  .article-blocks__featured-description { max-width: 48rem; color: var(--kp-reference-muted); font-size: clamp(.98rem, 1.1vw, 1.08rem); line-height: 1.58; }
+  .article-blocks__featured-button { display: inline-flex; width: fit-content; min-height: 3.1rem; align-items: center; justify-content: center; border-radius: var(--kp-reference-button-radius); padding: .95rem 1.75rem; background: var(--kp-reference-blue); color: var(--kp-reference-white); font-family: var(--kp-font-heading); font-weight: 700; line-height: 1; text-decoration: none; }
+  .vertical-slice__section { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+  .vertical-slice__section--catalog { margin-top: clamp(2rem, 4vw, 3.5rem); }
+  .vertical-slice__section-copy { display: grid; gap: .55rem; max-width: 48rem; margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  .vertical-slice__section-copy p, .vertical-slice__section-copy h2 { margin: 0; }
+  .vertical-slice__section-copy > p:first-child { color: var(--kp-blue); font-size: var(--kp-label-size); font-weight: var(--kp-label-weight); letter-spacing: var(--kp-label-letter-spacing); line-height: var(--kp-label-line-height); text-transform: uppercase; }
+  .vertical-slice__section-copy h2 { color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: var(--kp-heading-size); font-weight: var(--kp-heading-weight); line-height: var(--kp-heading-line-height); }
+  .vertical-slice__section-copy p:last-child { color: var(--kp-muted); line-height: var(--kp-body-line-height); }
+  @media (max-width: 39.9375rem) { .vertical-slice__section-copy { margin-left: 0; } }
+  .vertical-slice__card-grid { display: grid; gap: clamp(1rem, 1.8vw, 1.5rem); width: 100%; }
+  .article-blocks__related :global(.home-image-cards__head), .article-blocks__compilations :global(.home-image-cards__head), .article-blocks__faq :global(.home-faq__head), .article-blocks__faq :global(.home-faq__list) { margin-left: var(--kp-home-large-offset, clamp(1.5rem, 7vw, 8rem)); }
+  @media (min-width: 60rem) { .article-blocks__related :global(.home-image-cards__grid) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .article-blocks__faq { padding-bottom: clamp(1.625rem, 2.75vw, 2.5rem); }
+  .article-blocks__cta { padding-top: clamp(1.625rem, 2.75vw, 2.5rem); }
+  .article-blocks__compilations { padding-top: clamp(4.5rem, 8vw, 7rem); padding-bottom: clamp(5rem, 9vw, 8rem); }
+  .article-blocks__compilations :global(.home-image-cards__grid) { display: flex; }
+  .article-blocks__compilations :global(.home-image-cards__card) { min-width: min(25rem, 82vw); }
+  @media (min-width: 60rem) { .vertical-slice__card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (min-width: 40rem) and (max-width: 59.9375rem) { .vertical-slice__card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 74.9375rem) { .humanoid-template__gallery-head { display: grid; } .humanoid-template__gallery-nav { display: none; } .article-blocks__toc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .article-blocks__robot-grid, .article-blocks__obvious-grid, .article-blocks__numbered-grid, .article-blocks__checks { grid-template-columns: repeat(2, minmax(0, 1fr)); } .article-blocks__hero-inner { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: clamp(1rem, 2vw, 1.5rem); }
+  .article-blocks__featured-model { grid-template-columns: 1fr; } }
+  @media (max-width: 56rem) { .article-blocks__hero-image { margin-top: 0; } .article-blocks__toc-grid, .article-blocks__prose-copy, .article-blocks__comparison-columns, .article-blocks__obvious-grid, .article-blocks__numbered-grid, .article-blocks__paired-rows article, .article-blocks__benefit-grid, .article-blocks__robot-grid, .article-blocks__checks { grid-template-columns: 1fr; } }
+  @media (max-width: 39.9375rem) { .humanoid-template__gallery-head .humanoid-template__section-head { margin-left: 0; } .article-blocks__featured-media, .article-blocks__featured-media img { min-height: 20rem; } .article-blocks__featured-copy h3 { font-size: clamp(2.55rem, 13vw, 3.6rem); } .article-blocks__hero { padding-block: 3.5rem 2.75rem; } .article-blocks__hero-image { min-height: 16rem; } .article-blocks__toc, .article-blocks__prose, .article-blocks__plain-text, .article-blocks__gosha, .article-blocks__media, .article-blocks__comparison, .article-blocks__obvious, .article-blocks__numbered, .article-blocks__checklist, .article-blocks__paired-list, .article-blocks__benefits, .article-blocks__catalog, .article-blocks__product, .article-blocks__faq, .article-blocks__related, .article-blocks__compilations, .article-blocks__cta { padding-block: 2.75rem; } .article-blocks__faq { padding-bottom: 1.375rem; } .article-blocks__cta { padding-top: 1.375rem; } .article-blocks__compilations { padding-top: 4rem; padding-bottom: 5rem; } #catalogBlock.container { width: auto; max-width: none; margin-inline: 0; padding-inline: var(--kp-reference-page-gutter); overflow-x: clip; } #catalogBlock .vertical-slice__section-copy, #catalogBlock .vertical-slice__card-grid { width: 100%; max-width: 100%; min-width: 0; margin-left: 0; margin-right: 0; } #catalogBlock .robot-card { min-width: 0; } .vertical-slice__card-grid, .article-blocks__related :global(.home-image-cards__grid) { grid-template-columns: 1fr; } .article-blocks__related :global(.home-image-cards__card) { min-height: 16rem; } .article-blocks__related :global(.home-image-cards__image) { min-height: 10rem; } .article-blocks__related :global(.home-image-cards__head), .article-blocks__compilations :global(.home-image-cards__head), .article-blocks__faq :global(.home-faq__head), .article-blocks__faq :global(.home-faq__list) { margin-left: 0; margin-right: 0; } }
+
+  .article-blocks__hero--image-right .article-blocks__hero-image {
+    object-position: right center;
+  }
+
+</style>

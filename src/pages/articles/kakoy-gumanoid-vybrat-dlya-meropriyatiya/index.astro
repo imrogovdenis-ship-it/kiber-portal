@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleBlocksTemplate from '../../../components/templates/ApprovedArticle2.astro';
+import { type ArticleRobotCard } from '../../../lib/approved-article-2-types';
+import { buildHumanoidChoiceArticle, humanoidChoiceArticleSlugs } from '../../../lib/kiber94-article-humanoid-choice-data';
+import { breadcrumbJsonLd, faqPageJsonLd, blogPostingJsonLd } from '../../../lib/seo';
+import { getRobotPageBySlug } from '../../../lib/robot-pages';
+
+const robotCards: ArticleRobotCard[] = humanoidChoiceArticleSlugs
+  .map((slug) => getRobotPageBySlug(slug))
+  .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+  .map((robot, index) => ({
+    slug: robot.slug,
+    href: robot.route,
+    title: robot.slug === 'arenda-robota-sofiya' ? 'София' : robot.slug === 'arenda-robota-ardi' ? 'Арди' : robot.identity.name,
+    category: 'Робот-гуманоид',
+    price: robot.pricing.display === 'цена по запросу' ? 'рассчитывается индивидуально' : robot.pricing.display,
+    price_disclaimer: 'Не является публичной офертой',
+    description: robot.seo.description,
+    badge: index === 0 ? 'Доступный вход' : robot.slug === 'arenda-unitree-r1' ? 'Для шоу-номера' : robot.slug === 'arenda-unitree-g1' ? 'Универсальный выбор' : robot.slug === 'arenda-agibot-x2' ? 'Для диалога' : robot.slug === 'arenda-unitree-h2' ? 'По запросу' : 'Премиум',
+    image: robot.media.hero,
+    analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
+  }));
+
+const template = buildHumanoidChoiceArticle(robotCards);
+---
+
+<BaseLayout
+  title={template.seo.title}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
+  noindex={false}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    blogPostingJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical, image: template.hero.image.src }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1">
+    <ArticleBlocksTemplate {template} />
+  </main>
+</BaseLayout>

@@ -46,17 +46,6 @@
       "reason": "Главная связывает коммерческий интент с launch-категорией гуманоидных роботов."
     },
     {
-      "id": "approved-home-to-dogs",
-      "status": "approved",
-      "publicRender": true,
-      "sourceRoute": "/",
-      "targetRoute": "/roboty-sobaki/",
-      "href": "/roboty-sobaki/",
-      "anchor": "Роботы-собаки",
-      "intent": "category-discovery",
-      "reason": "Главная связывает коммерческий интент с launch-категорией роботов-собак."
-    },
-    {
       "id": "approved-unitree-g1-to-request",
       "status": "approved",
       "publicRender": true,
@@ -65,7 +54,8 @@
       "href": "/lead/request/?robot=arenda-unitree-g1",
       "anchor": "Запросить обратный звонок по Unitree G1",
       "intent": "conversion-cta",
-      "reason": "Карточка робота должна вести к CTA-заявке; сама интеграция лидов остаётся отдельно gated."
+      "reason": "Карточка робота должна вести к CTA-заявке; сама интеграция лидов остаётся отдельно gated.",
+      "rendering": "approved_component"
     },
     {
       "id": "approved-unitree-g1-to-scenarios",
@@ -76,7 +66,8 @@
       "href": "/compilations/",
       "anchor": "подборки роботов по сценариям",
       "intent": "proof-content",
-      "reason": "Карточка робота ведёт к сценарному proof-content без публикации AI-generated предложений."
+      "reason": "Карточка робота ведёт к сценарному proof-content без публикации AI-generated предложений.",
+      "rendering": "approved_component"
     },
     {
       "id": "approved-humanoids-to-unitree-g1-card",
@@ -87,7 +78,8 @@
       "href": "/robots/arenda-unitree-g1/",
       "anchor": "Unitree G1 для мероприятий",
       "intent": "proof-content",
-      "reason": "Категория гуманоидов ведёт к текущей проверенной карточке Unitree G1."
+      "reason": "Категория гуманоидов ведёт к текущей проверенной карточке Unitree G1.",
+      "rendering": "approved_component"
     },
     {
       "id": "approved-dogs-to-contacts",
@@ -105,11 +97,12 @@
       "status": "approved",
       "publicRender": true,
       "sourceRoute": "/compilations/",
-      "targetRoute": "/robots/arenda-unitree-g1/",
-      "href": "/robots/arenda-unitree-g1/",
-      "anchor": "проверенный сценарий с Unitree G1",
+      "targetRoute": "/roboty-gumanoidy/",
+      "href": "/roboty-gumanoidy/",
+      "anchor": "Совсем как люди, только с батарейкой",
       "intent": "proof-content",
-      "reason": "Подборки уводят к доступной карточке MVP вместо пустой автогенерации страниц."
+      "reason": "Owner-approved single launch compilation",
+      "rendering": "approved_component"
     },
     {
       "id": "approved-blog-to-scenarios",
@@ -120,7 +113,8 @@
       "href": "/compilations/",
       "anchor": "подборки роботов по сценариям",
       "intent": "proof-content",
-      "reason": "Блог ведёт к evergreen-сценариям, не публикуя AI-generated ссылки напрямую."
+      "reason": "Блог ведёт к evergreen-сценариям, не публикуя AI-generated ссылки напрямую.",
+      "rendering": "approved_component"
     },
     {
       "id": "approved-news-to-blog",
@@ -143,6 +137,19 @@
       "anchor": "посмотреть Unitree G1",
       "intent": "proof-content",
       "reason": "Контакты дают обратный путь к проверенной коммерческой карточке."
+    }
+  ],
+  "disabledLinks": [
+    {
+      "id": "approved-home-to-dogs",
+      "status": "disabled",
+      "publicRender": false,
+      "sourceRoute": "/",
+      "targetRoute": "/roboty-sobaki/",
+      "href": "/roboty-sobaki/",
+      "anchor": "Роботы-собаки",
+      "intent": "category-discovery",
+      "reason": "Owner launch scope: dogs compilation is a nonclickable upcoming card on homepage"
     }
   ]
 }

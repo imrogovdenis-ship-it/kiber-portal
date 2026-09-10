@@ -1,0 +1,129 @@
+{
+  "slug": "arenda-inchbot-l1-w-edu",
+  "model": "Inchbot L1-W EDU",
+  "canonicalPath": "/robots/arenda-inchbot-l1-w-edu/",
+  "wordstatStatus": "checked_live",
+  "queryCount": 7,
+  "primaryCandidate": "аренда Inchbot L1-W EDU",
+  "primaryStatus": "existing_model_intent_candidate_pending_SERP_not_a_final_rewritten_passport",
+  "keywordEvidence": [
+    {
+      "phrase": "Inchbot L1-W EDU",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-1.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "аренда Inchbot L1-W EDU",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-2.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "робота-собаки Inchbot L1-W EDU",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-3.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "Inchbot L1-W EDU характеристики",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-4.wordstat.json",
+      "classification": "configuration_verification_required"
+    },
+    {
+      "phrase": "inchbot",
+      "count": 9,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-extra-1.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "инчбот",
+      "count": 1,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-extra-2.wordstat.json",
+      "classification": "entity_or_class_context_serp_required"
+    },
+    {
+      "phrase": "аренда inchbot",
+      "count": 0,
+      "countKind": "queried_total",
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      },
+      "evidence": "raw/arenda-inchbot-l1-w-edu-extra-3.wordstat.json",
+      "classification": "rental_intent_check_exact_entity"
+    }
+  ],
+  "directlyQueriedRentals": [
+    {
+      "query": "аренда Inchbot L1-W EDU",
+      "count": 0,
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      }
+    },
+    {
+      "query": "аренда inchbot",
+      "count": 0,
+      "period": {
+        "start": "09.08.2026",
+        "end": "09.09.2026"
+      }
+    }
+  ],
+  "faqResearchTopics": [
+    "доступная EDU-комплектация и формат образовательного показа",
+    "кто управляет и может ли участвовать посетитель",
+    "покрытие, препятствия и ограничения демонстрации",
+    "состав услуги и факторы стоимости аренды именно этой модели"
+  ],
+  "faqTopicStatus": "editorial_customer_questions_not_claimed_measured_queries",
+  "blockMapping": {
+    "aiSummary": "модель/услуга, понятный формат взаимодействия, клиентская задача",
+    "capabilities": "подтверждённые функции, соответствующие изображению и заголовку",
+    "scenarios": "применимые к модели ситуации и результат для заказчика",
+    "faq": "не закрытые основным текстом вопросы выбора/заказа; без повторов",
+    "seoIntent": "точная сущность, модельные варианты, публичный canonical",
+    "media": "actualDescription без SEO; truthful seoAlt без служебных хвостов"
+  },
+  "exclusionPolicy": "General class/scenario demand is context for compilations; no copying purchase, other models/configurations or unrelated entities into this model rental copy. Counts overlap: never sum totals/rows or variants. Different periods are recorded verbatim.",
+  "remainingGates": [
+    "SERP and competitor gaps",
+    "manufacturer/business fact check",
+    "final model passport",
+    "copy and rendered audit",
+    "owner review"
+  ]
+}

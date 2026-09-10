@@ -1,0 +1,38 @@
+{
+  "decision": "NO_GO",
+  "phase": "canonical_source_candidate",
+  "sourceBuild": "PASS",
+  "astroTypecheck": "PASS, 0 errors",
+  "contentParity": {
+    "pages": 31,
+    "texts": "31/31 equal to approved staging",
+    "images": "31/31 same sources"
+  },
+  "articleGeometry": {
+    "viewports": [
+      1440,
+      390
+    ],
+    "pages": 6,
+    "differencesOver2px": 0
+  },
+  "canonicalGate": "PASS",
+  "fullCI": {
+    "status": "local_pass",
+    "exitCode": 0,
+    "sourceTests": {
+      "passed": 251,
+      "failed": 0
+    },
+    "browserPerformance": "8 cold Chromium runs passed; initial/full budgets and CLS",
+    "hostedCI": "not_started"
+  },
+  "productionDeployAllowed": false,
+  "mergeAllowed": false,
+  "stagingChanged": false,
+  "remaining": [
+    "Draft PR and hosted CI",
+    "Final live lead runtime E2E and immutable merged-main candidate",
+    "Backup/rollback and explicit merge/production permissions"
+  ]
+}

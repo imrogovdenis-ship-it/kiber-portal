@@ -45,7 +45,13 @@ test('Kinescope video workflow is fixed as a safe source-of-truth contract', () 
   const registry = json(registryPath);
   assert.equal(registry.schemaVersion, 1);
   assert.equal(registry.provider, 'kinescope');
-  assert.equal(registry.videos.length, 0, 'registry starts empty until owner uploads concrete videos');
+  assert.equal(registry.videos.length, 8, 'eight owner-supplied processed videos');
+  for (const video of registry.videos) {
+    assert.match(video.embedLink, /^https:\/\/kinescope\.io\/embed\//);
+    assert.ok(video.durationSeconds > 0);
+    assert.ok(video.poster.src.startsWith('/images/video-posters/'));
+    assert.equal(video.publicationStatus, 'assigned');
+  }
   assert.equal(registry.pendingInbox.policy, 'owner_attaches_video_then_agent_uploads_to_kinescope_with_api_token');
   assert.equal(registry.folderPlan.length >= 4, true);
 

@@ -473,6 +473,101 @@
       "intent": "transactional",
       "pageCluster": "conversion",
       "priority": "low"
+    },
+    "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/": {
+      "pageType": "article",
+      "primaryKeyword": "Unitree G1 или Agibot X2",
+      "secondaryKeywords": [
+        "Unitree G1",
+        "Agibot X2",
+        "робот Unitree G1",
+        "робот Agibot X2",
+        "чем Unitree G1 отличается от Agibot X2",
+        "какой робот-гуманоид выбрать для мероприятия",
+        "робот-гуманоид для welcome-зоны",
+        "робот-гуманоид для стенда"
+      ],
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "intent": "informational"
+    },
+    "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/": {
+      "pageType": "article",
+      "primaryKeyword": "какого робота-гуманоида выбрать для мероприятия",
+      "secondaryKeywords": [
+        "какой робот-гуманоид выбрать",
+        "сравнение роботов-гуманоидов",
+        "выбор гуманоида на мероприятие",
+        "Unitree G1",
+        "Unitree R1",
+        "Unitree H2",
+        "Agibot X2",
+        "Noetix Bumi",
+        "робот Арди",
+        "робот София"
+      ],
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "intent": "informational"
+    },
+    "/articles/unitree-g1-na-korporative/": {
+      "pageType": "article",
+      "primaryKeyword": "Unitree G1 на корпоративе",
+      "secondaryKeywords": [
+        "робот Unitree G1 на корпоратив",
+        "Unitree G1 корпоратив",
+        "робот на корпоратив",
+        "робот для корпоратива",
+        "сценарий с роботом на корпоративе"
+      ],
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "intent": "informational"
+    },
+    "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/": {
+      "pageType": "article",
+      "primaryKeyword": "как работает робот-гуманоид",
+      "secondaryKeywords": [
+        "робот гуманоид",
+        "робот гуманоид что умеет",
+        "робот Unitree G1",
+        "аренда робота гуманоида",
+        "робот гуманоид для мероприятия"
+      ],
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "intent": "informational"
+    },
+    "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/": {
+      "pageType": "article",
+      "primaryKeyword": "необычный подарок директору",
+      "secondaryKeywords": [
+        "подарок директору",
+        "оригинальный подарок директору",
+        "что подарить директору",
+        "подарок руководителю",
+        "робот в подарок",
+        "робот на день рождения"
+      ],
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "intent": "informational"
+    },
+    "/articles/sravnenie-unitree-g1-r1-h2/": {
+      "pageType": "article",
+      "primaryKeyword": "Unitree G1, R1 и H2 сравнение",
+      "secondaryKeywords": [
+        "Unitree G1",
+        "Unitree R1",
+        "Unitree H2",
+        "сравнение Unitree",
+        "робот Unitree G1",
+        "робот Unitree R1",
+        "робот Unitree H2"
+      ],
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "intent": "informational"
     }
   }
 }

@@ -74,7 +74,8 @@ test('KIBER-88 home hero and robot page expose reference-compatible structure', 
   assert.match(index, /vertical-slice__card-grid/);
 
   const robotPage = text(robotPagePath);
-  assert.match(robotPage, /RobotPageHero/);
+  assert.match(robotPage, /RobotCardTemplate/);
+  assert.match(robotPage, /toRobotCardTemplateData/);
 
   const robotHero = text(robotHeroPath);
   assert.match(robotHero, /robot-page__price/);
@@ -89,7 +90,7 @@ test('KIBER-88 exposes rendered reference visual layer smoke as CI gate', () => 
   const smoke = text(smokePath);
   assert.match(smoke, /reference-layer/);
   assert.match(smoke, /home-hero__card/);
-  assert.match(smoke, /robot-page__hero/);
+  assert.match(smoke, /template-live-hero/);
   assert.match(smoke, /productionDeployChanged/);
 
   const pkg = json(resolve(root, 'package.json'));

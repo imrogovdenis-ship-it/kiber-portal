@@ -1,0 +1,36 @@
+/* Owner-scoped: six article previews + article-blocks only. No content/layout/card changes. */
+.article-blocks.article-blocks {
+  --article-review-section-space: clamp(2.1rem, 3.8vw, 3.4rem);
+  --article-review-heading-gap: .55rem;
+}
+.article-blocks.article-blocks > section {
+  padding-block: var(--article-review-section-space);
+  margin-block: 0;
+}
+.article-blocks.article-blocks > section.article-blocks__hero {
+  padding-block: clamp(4rem, 6vw, 5.5rem) clamp(2.75rem, 4vw, 3.75rem);
+}
+.article-blocks.article-blocks > section.article-blocks__faq { padding-bottom: calc(var(--article-review-section-space) / 2); }
+.article-blocks.article-blocks > section.article-blocks__cta { padding-top: calc(var(--article-review-section-space) / 2); }
+.article-blocks.article-blocks .home-faq { margin-top: 0; }
+.article-blocks.article-blocks > .article-blocks__gosha > .home-gosha { padding-block: 0; }
+.article-blocks.article-blocks :is(.article-blocks__section-head, .humanoid-template__section-head, .home-faq__head, .home-image-cards__head, .vertical-slice__section-copy) {
+  gap: var(--article-review-heading-gap);
+}
+.article-blocks.article-blocks :is(p.article-blocks__eyebrow, .humanoid-template__eyebrow, .home-faq__head > p:first-child, .home-image-cards__head > p:first-child, .vertical-slice__section-copy > p:first-child) {
+  color: var(--kp-blue);
+  font-family: var(--kp-font-body);
+  font-size: var(--kp-label-size);
+  font-weight: var(--kp-label-weight);
+  letter-spacing: var(--kp-label-letter-spacing);
+  line-height: var(--kp-label-line-height);
+  text-transform: uppercase;
+  margin: 0;
+}
+.article-blocks.article-blocks > .article-blocks__prose > p.article-blocks__eyebrow {
+  margin-bottom: var(--article-review-heading-gap);
+}
+@media (max-width: 39.9375rem) {
+  .article-blocks.article-blocks { --article-review-section-space: 2.75rem; }
+  .article-blocks.article-blocks > section.article-blocks__hero { padding-block: 3.5rem 2.75rem; }
+}
