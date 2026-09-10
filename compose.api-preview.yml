@@ -1,0 +1,36 @@
+name: alex-kiber-runtime-qa
+services:
+  api:
+    container_name: alex-kiber-runtime-qa-api
+    image: alex-kiber-runtime-qa-api:${BUILD_SHA:?BUILD_SHA required}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: api
+      args:
+        BUILD_SHA: ${BUILD_SHA:?BUILD_SHA required}
+    environment:
+      DEPLOY_ENV: preview
+      LEAD_ROUTING_ENABLED: "true"
+      LEAD_ROUTING_MODE: dry-run
+    networks: [isolated]
+    mem_limit: 256m
+    cpus: 0.5
+  web:
+    container_name: alex-kiber-runtime-qa-web
+    image: alex-kiber-runtime-qa-web:${BUILD_SHA:?BUILD_SHA required}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web
+      args:
+        BUILD_SHA: ${BUILD_SHA:?BUILD_SHA required}
+    depends_on:
+      api:
+        condition: service_healthy
+    networks: [isolated]
+    mem_limit: 256m
+    cpus: 0.5
+networks:
+  isolated:
+    internal: true
