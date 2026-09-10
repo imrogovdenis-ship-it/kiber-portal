@@ -1,0 +1,31 @@
+{
+  "status": "draft_after_live_research",
+  "pageType": "compilation",
+  "canonicalPath": "/roboty-gumanoidy/",
+  "primaryKeyword": "аренда робота гуманоида",
+  "secondaryKeywords": [
+    "аренда гуманоида",
+    "аренда роботов гуманоидов",
+    "прокат робота гуманоида",
+    "человекоподобный робот аренда",
+    "робот андроид аренда",
+    "робот гуманоид на мероприятие"
+  ],
+  "h1": "Аренда робота-гуманоида для мероприятий",
+  "metaTitle": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+  "metaDescription": "Выберите робота-гуманоида для выставки, корпоратива или презентации: модели Unitree, Agibot X2, Noetix Bumi, Арди и София. Сценарии, фото и расчёт аренды.",
+  "pageIntent": "commercial_category_robot_rental",
+  "schema": [
+    "CollectionPage",
+    "ItemList",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "exclusions": [
+    "broad robot-gumanoid informational primary",
+    "model-specific rental primary",
+    "unverified starting price or SLA"
+  ],
+  "researchFile": "research-analysis.json",
+  "ownerReviewRequired": true
+}
