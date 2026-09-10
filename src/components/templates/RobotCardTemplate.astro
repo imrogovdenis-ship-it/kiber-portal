@@ -8,12 +8,14 @@ import HomeImageCards from '../blocks/HomeImageCards.astro';
 import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import { getRobotPages } from '../../lib/robot-pages';
+import approvedHumanoidArticles from '../../../data/content/launch-articles.json';
 import { homeArticles, homeFinalCta, homeGosha, homeRobotCardFinalCta } from '../../data/home-live';
 import capabilityImageRegistry from '../../../data/models/robot-capability-images.source.json';
 import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
 
 const { template } = Astro.props as { template: RobotCardTemplateData };
 const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
+const isHumanoidPair = ['arenda-unitree-g1', 'arenda-agibot-x2'].includes(robotSlug);
 const isContentPilot = ['arenda-roboshashki', 'arenda-senserobot'].includes(robotSlug);
 const gallery = template.robot.gallery.length > 0 ? template.robot.gallery : [];
 const heroImage = gallery[0];
@@ -70,6 +72,8 @@ const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
 const relatedSlugsByRobotSlug: Record<string, string[]> = {
+  'arenda-unitree-g1': ['arenda-agibot-x2', 'arenda-unitree-r1', 'arenda-unitree-h2', 'arenda-promobot-v4'],
+  'arenda-agibot-x2': ['arenda-unitree-g1', 'arenda-unitree-r1', 'arenda-unitree-h2', 'arenda-promobot-v4'],
   'arenda-robot-barmen': ['arenda-robo-kofeyni', 'arenda-mini-robo-kofeyni', 'arenda-kettybot', 'arenda-promobot-v4'],
   'arenda-robo-kofeyni': ['arenda-mini-robo-kofeyni', 'arenda-robot-barmen', 'arenda-kettybot', 'arenda-promobot-v4'],
   'arenda-mini-robo-kofeyni': ['arenda-robo-kofeyni', 'arenda-robot-barmen', 'arenda-kettybot', 'arenda-promobot-v4'],
@@ -189,7 +193,7 @@ const orderFlow = isContentPilot ? ['Пришлите дату, город, ад
 const aiSummary = template.aiSummary;
 const robotQuickCtaImage = {
   src: '/images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp',
-  alt: isContentPilot ? 'Кибер Гоша в красной ушанке машет рукой' : 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1',
+  alt: (isContentPilot || isHumanoidPair) ? 'Кибер Гоша в красной ушанке машет рукой' : 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1',
 };
 const robotQuickCta = {
   ...homeFinalCta,
@@ -265,13 +269,13 @@ const robotArticles = {
   ...homeArticles,
   title: ownerArticleBlock?.title ?? `Материалы по аренде ${robotDisplayName}`,
   description: ownerArticleBlock?.description ?? `Подбираем материалы о сценариях аренды, подготовке площадки и работе ${robotDisplayName} на мероприятии.`,
-  cards: articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
+  cards: isHumanoidPair ? approvedHumanoidArticles.filter((_, i) => (robotSlug === 'arenda-unitree-g1' ? [0, 2, 5] : [0, 1, 3]).includes(i)).map(card => ({ ...card, href: card.canonicalHref })) : articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
 };
 const robotCatalogTitle = 'Вас также могут заинтересовать';
 const robotCatalogDescription = 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
 ---
 
-<article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card" data-content-pilot={isContentPilot ? 'true' : undefined}>
+<article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card" data-content-pilot={(isContentPilot || isHumanoidPair) ? 'true' : undefined}>
   <section class="template-live-hero template-live-hero--dark" data-block-id="hero" aria-labelledby="robot-card-hero-title">
     <div class="template-live-hero__content">
       <p class="template-live-hero__eyebrow">КИБЕР ПОРТАЛ · аренда роботов</p>
