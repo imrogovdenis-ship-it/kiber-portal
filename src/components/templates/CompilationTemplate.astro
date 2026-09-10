@@ -76,7 +76,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       <h2 id="video-title">{template.video.title}</h2>
       <p>{template.video.lead}</p>
     </div>
-    {overviewVideo ? <KinescopeVideo {...overviewVideo} aspectRatio={overviewVideo.aspectRatio} clickToLoad={true} /> : <div class="humanoid-template__video-frame" role="img" aria-label={template.video.embedHint}><span>{template.video.embedHint}</span></div>}
+    {overviewVideo ? <KinescopeVideo {...overviewVideo} aspectRatio={overviewVideo.aspectRatio} clickToLoad={false} playLink={undefined} /> : <div class="humanoid-template__video-frame" role="img" aria-label={template.video.embedHint}><span>{template.video.embedHint}</span></div>}
   </section>
 
   )}
@@ -113,7 +113,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     <div class="humanoid-template__scenario-strip humanoid-template__drag-gallery" data-drag-slider="robot-humanoid-scenarios-slider" aria-label="Сценарии аренды робота-гуманоида: горизонтальный слайдер">
       {scenarioVideos.length > 0 ? scenarioVideos.map(video => video && (
         <article class="humanoid-template__scenario-card">
-          <KinescopeVideo {...video} aspectRatio="9 / 16" clickToLoad={true} />
+          <KinescopeVideo {...video} aspectRatio="9 / 16" clickToLoad={false} playLink={undefined} />
           <div class="humanoid-template__scenario-caption"><h3>{video.title}</h3><p>{video.description}</p></div>
         </article>
       )) : template.scenarios.items.map((item) => (
@@ -166,6 +166,24 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
 <script is:inline src="/scripts/robot-card-gallery.js" defer></script>
 
 <style>
+  /* Owner feedback: only this compilation Hero and three lower-block wrappers. */
+  .humanoid-template > [data-block-id="catalogBlock"],
+  .humanoid-template > [data-block-id="relatedArticles"],
+  .humanoid-template > [data-block-id="otherCompilations"] {
+    padding-block: clamp(2.1rem, 3.8vw, 3.4rem);
+    margin-block: 0;
+  }
+  @media (min-width: 56rem) {
+    .humanoid-template .humanoid-template__hero-inner { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; }
+    .humanoid-template .humanoid-template__hero-copy { min-width: 0; max-width: none; }
+    .humanoid-template .humanoid-template__hero-image { width: 100%; max-width: 28rem; justify-self: end; align-self: center; }
+  }
+  @media (max-width: 39.9375rem) {
+    .humanoid-template > [data-block-id="catalogBlock"],
+    .humanoid-template > [data-block-id="relatedArticles"],
+    .humanoid-template > [data-block-id="otherCompilations"] { padding-block: 2.75rem; }
+  }
+
   .humanoid-template__hero-image { display: block; width: 100%; height: auto; border-radius: 1.5rem; object-fit: contain; }
   .humanoid-template { display: grid; max-width: 100vw; overflow-x: clip; gap: 0; background: var(--kp-reference-sky); color: var(--kp-reference-ink); }
   .humanoid-template section { scroll-margin-top: 6rem; }
