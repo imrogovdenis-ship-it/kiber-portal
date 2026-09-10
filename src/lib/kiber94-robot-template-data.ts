@@ -1,3 +1,6 @@
+import roboshashkiPilot from '../../data/content/robot-card-pilot/arenda-roboshashki.json';
+import senseRobotPilot from '../../data/content/robot-card-pilot/arenda-senserobot.json';
+const pilotCopyBySlug: Record<string, typeof roboshashkiPilot | undefined> = { 'arenda-roboshashki': roboshashkiPilot, 'arenda-senserobot': senseRobotPilot };
 import type { RobotPageRecord } from './robot-pages';
 import type { RobotCardTemplateData } from './page-type-templates';
 
@@ -1513,10 +1516,11 @@ const ownerGoshaQuoteBySlug: Record<string, string> = {
 
 export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTemplateData {
   const priceStatus = robot.pricing.mode === 'calculated' ? 'request' : 'needs_review';
-  const ownerCopy = ownerRobotCardCopyBySlug[robot.slug];
-  const ownerSeo = ownerSeoBySlug[robot.slug];
-  const ownerSeoIntent = ownerSeoIntentBySlug[robot.slug];
-  const ownerFaq = ownerFaqBySlug[robot.slug];
+  const pilot = pilotCopyBySlug[robot.slug];
+  const ownerCopy = pilot?.blocks ?? ownerRobotCardCopyBySlug[robot.slug];
+  const ownerSeo = pilot ? { ...ownerSeoBySlug[robot.slug], title: pilot.seo.title, description: pilot.seo.description, primaryKeyword: pilot.seo.primaryKeyword, secondaryKeywords: pilot.seo.secondaryKeywords } : ownerSeoBySlug[robot.slug];
+  const ownerSeoIntent = pilot ? { ...ownerSeoIntentBySlug[robot.slug], ...pilot.seoIntent, pageType: 'robot_card' as const, isCrawlerOnlyText: false as const } : ownerSeoIntentBySlug[robot.slug];
+  const ownerFaq = pilot?.blocks.faq ?? ownerFaqBySlug[robot.slug];
   const scenarioBlocks = robot.service.scenarios.map((scenario, index) => ({
     id: `scenario-${index + 1}`,
     title: scenario,
@@ -1559,7 +1563,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
         const previewSrc = toPreviewAsset(image.src);
         return previewSrc ? { src: previewSrc, alt: image.alt, sourceStatus: 'page_content' as const } : undefined;
       }).filter((image): image is { src: string; alt: string; sourceStatus: 'page_content' } => Boolean(image)).slice(0, 8));
-  const preparedGoshaQuote = ownerGoshaQuoteBySlug[robot.slug] ?? fallbackGoshaQuoteForUnpreparedRobot(robot);
+  const preparedGoshaQuote = pilot?.blocks.goshaQuote ?? ownerGoshaQuoteBySlug[robot.slug] ?? fallbackGoshaQuoteForUnpreparedRobot(robot);
   assertCuratedRobotCardData(robot, preparedGallery, preparedGoshaQuote);
 
   return {
@@ -1574,7 +1578,7 @@ export function toRobotCardTemplateData(robot: RobotPageRecord): RobotCardTempla
       secondaryKeywords: ownerSeo?.secondaryKeywords ?? [`прокат ${robot.identity.name}`, `${robot.identity.name} на мероприятие`],
     },
     seoIntent: ownerSeoIntent,
-    aiSummary: ownerAiSummaryBySlug[robot.slug] ?? `${robot.identity.name} — робот из каталога КИБЕР ПОРТАЛ для мероприятий. Preview-шаблон показывает реальные данные карточки: описание услуги, сценарии, медиа, цену в утверждённом статусе и заявку без публикации на production.`,
+    aiSummary: pilot?.blocks.aiSummary ?? ownerAiSummaryBySlug[robot.slug] ?? `${robot.identity.name} — робот из каталога КИБЕР ПОРТАЛ для мероприятий. Preview-шаблон показывает реальные данные карточки: описание услуги, сценарии, медиа, цену в утверждённом статусе и заявку без публикации на production.`,
     goshaQuote: preparedGoshaQuote,
     hero: {
       id: 'hero',

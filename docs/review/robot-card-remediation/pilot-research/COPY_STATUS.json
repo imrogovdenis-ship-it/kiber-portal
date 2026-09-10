@@ -1,0 +1,27 @@
+{
+  "status": "text_pilot_rendered_not_full_card_approval",
+  "models": [
+    "arenda-roboshashki",
+    "arenda-senserobot"
+  ],
+  "checks": {
+    "copyValidator": "PASS",
+    "renderedNewIntroAndAllFaq": "PASS",
+    "frozenHeroGalleryRobotInAction": "identical_to_baseline",
+    "previewBuild": "PASS",
+    "astroCheck": "0 errors; 15 hints",
+    "visualContractTests": {
+      "passed": 254,
+      "failed": 0
+    }
+  },
+  "pending": [
+    "individual capability image review and factual alt",
+    "capability geometry correction",
+    "remaining lower blocks, related articles and recommendations",
+    "responsive browser QA",
+    "protected staging update and owner review"
+  ],
+  "stagingUpdated": false,
+  "productionUpdated": false
+}
