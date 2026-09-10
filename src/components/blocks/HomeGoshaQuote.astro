@@ -1,10 +1,10 @@
 ---
 import type { HomeGoshaData } from '../../data/home-live';
-const { title, subtitle, text, image } = Astro.props as HomeGoshaData;
+const { title, subtitle, text, image, id = 'kiber-gosha' } = Astro.props as HomeGoshaData & { id?: string };
 const paragraphs = text.split('\n\n');
 const [leadQuote, ...bodyParagraphs] = paragraphs;
 ---
-<section class="home-gosha" id="kiber-gosha" data-home-block="kiber-gosha" aria-label={title}>
+<section class="home-gosha" id={id} data-home-block="kiber-gosha" aria-label={title}>
   <div class="home-gosha__avatar">
     <img src={image.src} alt={image.alt} width="240" height="240" loading="lazy" decoding="async" />
   </div>

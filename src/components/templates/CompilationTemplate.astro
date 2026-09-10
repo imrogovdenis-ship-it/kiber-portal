@@ -76,6 +76,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     </div>
   </section>
 
+  {template.video.enabled !== false && (
   <section class="humanoid-template__video container" data-block-id="video" aria-labelledby="video-title">
     <div>
       <p class="humanoid-template__eyebrow humanoid-template__eyebrow--video">Видео</p>
@@ -86,6 +87,8 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       <span>{template.video.embedHint}</span>
     </div>
   </section>
+
+  )}
 
   <section class="humanoid-template__scenarios" data-block-id="scenarioExplanation" aria-labelledby="scenarios-title">
     <div class="container humanoid-template__section-head humanoid-template__section-head--scenarios-left">
@@ -112,7 +115,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
   </section>
 
   <section class="humanoid-template__gosha-intro container" data-block-id="goshaConclusion" aria-label="Финальный комментарий Кибер Гоши">
-    <HomeGoshaQuote {...template.conclusionGosha} />
+    <HomeGoshaQuote {...template.conclusionGosha} id="kiber-gosha-conclusion" />
   </section>
 
   <section class="container" data-block-id="faq" aria-label="FAQ по сборке">
@@ -140,9 +143,11 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     <HomeImageCards id="compilation-related-articles" eyebrow="Блог Кибер Гоши" title={template.relatedArticles.title} description={template.relatedArticles.lead} cards={template.relatedArticles.cards} variant="article" />
   </section>
 
+  {template.showOtherCompilations !== false && (
   <section class="humanoid-template__bottom-compilations container" data-block-id="otherCompilations" aria-label="Подборки">
     <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
   </section>
+  )}
 </article>
 
 <script is:inline src="/scripts/robot-card-gallery.js" defer></script>
