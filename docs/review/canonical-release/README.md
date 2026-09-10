@@ -4,7 +4,7 @@
 
 Production build and Astro typecheck PASS. Text/media parity31/31; article geometry at1440/390 matches. Unique IDs repaired without copy change. Canonical route gate PASS: H1/canonical/IDs/images/sitemap, no preview href/output. Deferred news/dogs are noindex and excluded from sitemap. Two article canonical metadata mismatches corrected to match chosen /articles/<slug>/ routes; no public redirect/cutover performed.
 
-Source/typecheck tests: 251/251 PASS, content tests 2/2 PASS, compilation post-build tests 3/3 PASS. Post-build chain: 35/36 PASS. Only legacy total-image/per-page byte budget remains red; limits NOT raised and approved media NOT recompressed. Exact status: RELEASE_STATUS.json, postbuild-gates-current.json and performance-budget-report.json. Width/height attributes added from verified raster files to remove layout-shift guard failures. Article schemas corrected to BlogPosting. Metadata titles keep brand; visible approved body text/images still31/31 identical.
+Full local `npm run ci` PASS (exit0): 251/251 visual/source tests, production build and all post-build gates including 8 cold Chromium performance checks. Owner approved separate initial/full budgets while preserving image quality. Static initial limits and HTML/CSS/JS/CLS protections retained; browser initial1.5MB/full1.8MB measured without compression or cache. Not field CWV. Hosted CI pending Draft PR. Production remains NO_GO until runtime and separate authorization gates.
 
 No staging changes, merge, production, DNS, secrets, analytics or lead routing. Existing staging remains approved review surface. Canonical candidate is not ready to deploy until full CI and final runtime checks pass.
 

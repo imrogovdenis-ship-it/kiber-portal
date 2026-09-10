@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-39",
-  "generatedAt": "2026-09-10T13:21:21.432Z",
+  "generatedAt": "2026-09-10T13:34:50.564Z",
   "coreWebVitalsTargets": {
     "lcpMs": 2500,
     "inpMs": 200,
@@ -11,7 +11,9 @@
     "cssBytes": 140000,
     "jsBytes": 25000,
     "imageBytes": 120000,
-    "totalPageBytes": 250000
+    "totalPageBytes": 250000,
+    "allImageBytes": 1000000,
+    "allPageBytes": 1500000
   },
   "routes": [
     {
@@ -20,6 +22,8 @@
       "cssBytes": 52896,
       "jsBytes": 6837,
       "imageBytes": 385100,
+      "initialImageBytes": 34753,
+      "initialPageBytes": 176125,
       "totalPageBytes": 526472,
       "cssFiles": 4,
       "jsFiles": 4,
@@ -36,6 +40,8 @@
       "cssBytes": 66313,
       "jsBytes": 8939,
       "imageBytes": 826194,
+      "initialImageBytes": 94469,
+      "initialPageBytes": 242833,
       "totalPageBytes": 974558,
       "cssFiles": 4,
       "jsFiles": 5,
@@ -52,6 +58,8 @@
       "cssBytes": 37980,
       "jsBytes": 5070,
       "imageBytes": 16026,
+      "initialImageBytes": 5129,
+      "initialPageBytes": 67356,
       "totalPageBytes": 78253,
       "cssFiles": 2,
       "jsFiles": 3,
@@ -68,6 +76,8 @@
       "cssBytes": 36583,
       "jsBytes": 5070,
       "imageBytes": 16026,
+      "initialImageBytes": 5129,
+      "initialPageBytes": 64117,
       "totalPageBytes": 75014,
       "cssFiles": 2,
       "jsFiles": 3,
@@ -79,11 +89,6 @@
       }
     }
   ],
-  "status": "failed",
-  "failures": [
-    "/: images 385100 > 120000",
-    "/: total page bytes 526472 > 250000",
-    "/robots/arenda-unitree-g1/: images 826194 > 120000",
-    "/robots/arenda-unitree-g1/: total page bytes 974558 > 250000"
-  ]
+  "status": "passed",
+  "failures": []
 }

@@ -18,24 +18,21 @@
   },
   "canonicalGate": "PASS",
   "fullCI": {
-    "status": "blocked_by_unchanged_performance_budget",
+    "status": "local_pass",
+    "exitCode": 0,
     "sourceTests": {
       "passed": 251,
       "failed": 0
     },
-    "postbuildGates": {
-      "passed": 35,
-      "failed": [
-        "npm run test:performance"
-      ]
-    }
+    "browserPerformance": "8 cold Chromium runs passed; initial/full budgets and CLS",
+    "hostedCI": "not_started"
   },
   "productionDeployAllowed": false,
   "mergeAllowed": false,
   "stagingChanged": false,
   "remaining": [
-    "Owner decision: retain legacy total-image budget and optimize to it, or approve separately bounded initial/deferred media budgets with browser measurement",
-    "Full CI green and PR review",
-    "Final live lead runtime E2E, backup/rollback, explicit merge/production permissions"
+    "Draft PR and hosted CI",
+    "Final live lead runtime E2E and immutable merged-main candidate",
+    "Backup/rollback and explicit merge/production permissions"
   ]
 }

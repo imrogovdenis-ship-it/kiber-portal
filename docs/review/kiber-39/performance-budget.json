@@ -3,7 +3,7 @@
   "scope": "CI static performance smoke for controlled rebuild key templates",
   "measurementProfile": {
     "type": "static-production-build-proxy",
-    "note": "Targets mirror Core Web Vitals acceptance envelope, while CI enforces deterministic static proxies. Field RUM/Lighthouse on an agreed device/network profile must be run before final production approval."
+    "note": "Separate initial static proxy and full-page lazy media; cold Chromium measures complete local resource bodies incl. fonts/CSS backgrounds. No claim of field CWV."
   },
   "coreWebVitalsTargets": {
     "lcpMs": 2500,
@@ -21,11 +21,29 @@
     "cssBytes": 140000,
     "jsBytes": 25000,
     "imageBytes": 120000,
-    "totalPageBytes": 250000
+    "totalPageBytes": 250000,
+    "allImageBytes": 1000000,
+    "allPageBytes": 1500000
   },
   "layoutShiftGuards": {
     "imagesRequireDimensions": true,
     "forbidLazyFirstContentImage": true,
     "forbidInlineLayoutMutationHandlers": true
+  },
+  "budgetDecision": {
+    "ownerChoice": "Сохранить качество: отдельные бюджеты начальной загрузки и полной страницы, с проверкой в браузере",
+    "originalInitialLimitsPreserved": true,
+    "imagesRecompressed": false
+  },
+  "browserBudgets": {
+    "initialBytes": 1500000,
+    "fullBytes": 1800000,
+    "cls": 0.1,
+    "viewports": [
+      1440,
+      390
+    ],
+    "transport": "cold uncached uncompressed localhost",
+    "networkTimingIsFieldCWV": false
   }
 }
