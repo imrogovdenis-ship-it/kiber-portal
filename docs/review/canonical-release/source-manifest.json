@@ -1,0 +1,38 @@
+[
+  {
+    "article": 1,
+    "sourceCommit": "1786843063e38e9ca0aa79fade4e57807fbcb4ce",
+    "renderer": "src/components/templates/ApprovedArticle1.astro",
+    "integration": "isolated approved source snapshot, parity checked; no rendered HTML imported"
+  },
+  {
+    "article": 2,
+    "sourceCommit": "f4214ea57ae1589c63590d2172beee300be7ebd1",
+    "renderer": "src/components/templates/ApprovedArticle2.astro",
+    "integration": "isolated approved source snapshot, parity checked; no rendered HTML imported"
+  },
+  {
+    "article": 3,
+    "sourceCommit": "cd40d75e98ff9befa234808c66cb2aeab8185c3d",
+    "renderer": "src/components/templates/ApprovedArticle3.astro",
+    "integration": "isolated approved source snapshot, parity checked; no rendered HTML imported"
+  },
+  {
+    "article": 4,
+    "sourceCommit": "7c66c7b2592e3c909ff32f42fe1124e75a17e77a",
+    "renderer": "src/components/templates/ApprovedArticle4.astro",
+    "integration": "isolated approved source snapshot, parity checked; no rendered HTML imported"
+  },
+  {
+    "article": 5,
+    "sourceCommit": "5587d520d7b771d756c323a07041407bbc631c94",
+    "renderer": "src/components/templates/ApprovedArticle5.astro",
+    "integration": "isolated approved source snapshot, parity checked; no rendered HTML imported"
+  },
+  {
+    "article": 6,
+    "sourceCommit": "2a67afe67619ff9310dad8ab51b5f3cfaa461594",
+    "renderer": "src/components/templates/ApprovedArticle6.astro",
+    "integration": "isolated approved source snapshot, parity checked; no rendered HTML imported"
+  }
+]

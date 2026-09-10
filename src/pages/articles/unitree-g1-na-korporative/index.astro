@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleBlocksTemplate from '../../../components/templates/ApprovedArticle3.astro';
+import { type ArticleRobotCard } from '../../../lib/approved-article-3-types';
+import { buildUnitreeG1CorporateArticle } from '../../../lib/kiber94-article-unitree-g1-corporate-data';
+import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../lib/seo';
+import { getRobotPageBySlug } from '../../../lib/robot-pages';
+
+const slugs = ['arenda-unitree-g1', 'arenda-unitree-r1', 'arenda-agibot-x2', 'arenda-promobot-v4', 'arenda-unitree-go2'];
+const robotCards: ArticleRobotCard[] = slugs
+  .map((slug) => getRobotPageBySlug(slug))
+  .filter((robot): robot is NonNullable<typeof robot> => Boolean(robot))
+  .map((robot, index) => ({
+    slug: robot.slug,
+    href: robot.route,
+    title: robot.identity.name,
+    category: robot.slug === 'arenda-unitree-go2' ? 'Робот-собака' : robot.slug === 'arenda-promobot-v4' ? 'Промо-робот' : 'Робот-гуманоид',
+    price: robot.pricing.display,
+    price_disclaimer: 'Не является публичной офертой',
+    description: robot.seo.description,
+    badge: robot.slug === 'arenda-unitree-g1' ? 'Герой сценария' : 'Альтернатива',
+    image: robot.media.hero,
+    analytics: { event: 'robot_card_click', placement: 'article', position: index + 1 },
+  }));
+
+const template = buildUnitreeG1CorporateArticle(robotCards);
+---
+
+<BaseLayout
+  title={template.seo.title}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
+  noindex={false}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1">
+    <ArticleBlocksTemplate {template} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,58 @@
+{
+  "decision": "NO_GO",
+  "phase": "canonical_source_candidate",
+  "sourceBuild": "PASS",
+  "astroTypecheck": "PASS, 0 errors",
+  "contentParity": {
+    "pages": 31,
+    "texts": "31/31 equal to approved staging",
+    "images": "31/31 same sources"
+  },
+  "articleGeometry": {
+    "viewports": [
+      1440,
+      390
+    ],
+    "pages": 6,
+    "differencesOver2px": 0
+  },
+  "canonicalGate": "PASS",
+  "fullCI": {
+    "passed": 229,
+    "failed": 22,
+    "failedTests": [
+      "KIBER-36 robot page documents empty and ready states without hiding them from assistive tech",
+      "Unitree G1/R1/H2 article preview uses approved article template and preview safeguards",
+      "Unitree G1/R1/H2 article content maps owner doc into approved block families",
+      "Unitree G1/R1/H2 article keeps mandatory approved closing sequence",
+      "KIBER-91 articles index is filled from approved homepage article data",
+      "KIBER-91 articles index has intro block, article feed and bottom CTA in order",
+      "KIBER-91 articles keeps internal-link contract hidden and records filter as future task",
+      "KIBER-94 compilation preview route is preview-only and uses reusable template",
+      "KIBER-94 compilation template combines old source block order with approved PR8 blocks",
+      "KIBER-91 compilations index is not a placeholder page",
+      "visual pass 3B removes public-facing technical review labels from pass 3 pages",
+      "category pages expose reference-style hero shell, stats and CTA strip",
+      "KIBER-55 defines a content acceptance registry for robots and launch pages",
+      "homepage catalog renders a four-card desktop grid with larger real robot images and card-wide links",
+      "current page-level CTA2 users share approved tablet HomeFinalCta design",
+      "KIBER-52 exposes curated internal links through a reusable renderer and CI gate",
+      "KIBER-94 desktop gallery behavior uses a CSP-safe external script based on desktop reference",
+      "Kinescope video workflow is fixed as a safe source-of-truth contract",
+      "SEO passports cover controlled routes with required machine-checkable fields",
+      "KIBER-88 home hero and robot page expose reference-compatible structure",
+      "KIBER-45 keeps one unified RobotPage template and exposes rendered validation as CI gate",
+      "KIBER-33 source exposes Main → Unitree G1 card → lead request → confirmation route"
+    ]
+  },
+  "productionDeployAllowed": false,
+  "mergeAllowed": false,
+  "stagingChanged": false,
+  "remaining": [
+    "Update legacy test expectations to approved renderers without weakening assertions",
+    "Update SEO-passport/content-acceptance registries for six article canonical routes",
+    "Full CI green and PR review",
+    "Final dynamic API E2E, immutable image, backup/rollback",
+    "Separate merge/production authorization"
+  ]
+}

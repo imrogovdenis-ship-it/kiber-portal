@@ -261,11 +261,12 @@
     },
     {
       "path": "/roboty-sobaki/",
-      "status": "launch",
-      "sitemap": true,
+      "status": "deferred",
+      "sitemap": false,
       "priority": 0.8,
       "changefreq": "weekly",
-      "template": "category"
+      "template": "category",
+      "noindex": true
     },
     {
       "path": "/compilations/",
@@ -285,11 +286,12 @@
     },
     {
       "path": "/news/",
-      "status": "launch",
-      "sitemap": true,
+      "status": "deferred",
+      "sitemap": false,
       "priority": 0.6,
       "changefreq": "weekly",
-      "template": "news-index"
+      "template": "news-index",
+      "noindex": true
     },
     {
       "path": "/contacts/",
@@ -346,6 +348,60 @@
       "status": "available-not-sitemap",
       "sitemap": false,
       "reason": "Thank-you/conversion confirmation page must not be advertised in sitemap."
+    },
+    {
+      "path": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/unitree-g1-na-korporative/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/sravnenie-unitree-g1-r1-h2/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
     }
   ]
 }
