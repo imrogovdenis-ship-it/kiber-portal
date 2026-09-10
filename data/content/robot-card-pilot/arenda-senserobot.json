@@ -7,13 +7,14 @@
     "claimAudit": "docs/review/robot-card-remediation/pilot-research/claim-audit.json"
   },
   "review": {
-    "status": "draft_for_owner_review",
-    "ownerReviewRequired": true,
+    "status": "owner_approved",
+    "ownerReviewRequired": false,
     "publicationApproved": false,
-    "mediaReviewPending": true,
+    "mediaReviewPending": false,
     "openQuestions": [
       "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
-    ]
+    ],
+    "approvalEvidence": "docs/review/robot-card-remediation/pilot-research/OWNER_APPROVAL.md"
   },
   "slug": "arenda-senserobot",
   "seo": {
