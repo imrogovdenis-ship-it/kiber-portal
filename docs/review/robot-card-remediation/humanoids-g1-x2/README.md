@@ -1,3 +1,7 @@
+## Update: research-browser recovery
+
+The SSH tunnel is restored. Fresh remote SERP and competitor page evidence is now saved. The earlier access failures below are historical, not current blockers. See COMPETITOR_GAPS.md for the completed comparative analysis and explicit limits.
+
 # Unitree G1 / Agibot X2: current source check
 
 Status: research in progress, NOT a completed fresh SERP/competitor pass. Existing all-24 Wordstat evidence is reused. Remote CDP unavailable during this pass.

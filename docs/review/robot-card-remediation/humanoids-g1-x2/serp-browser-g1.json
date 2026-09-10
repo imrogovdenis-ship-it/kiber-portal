@@ -1,0 +1,10 @@
+{
+  "query": "аренда Unitree G1",
+  "url": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fhl%3Dru%26q%3D%25D0%25B0%25D1%2580%25D0%25B5%25D0%25BD%25D0%25B4%25D0%25B0%2520Unitree%2520G1%26sei%3DQvSiavDDPK6X1fIP6e65kQc&hl=ru&q=EgQmtCUqGMPoi9UGIjCo4AcqgWccMqZrLHdCHhTGJ8MujL8wkS9T9ta7jQkVQnhCRw-6y3GAisV_L-4mhKgyAVJaAUM",
+  "checkedAt": "2026-09-10T18:17:42.241Z",
+  "method": "local_browser_not_user_cdp",
+  "challenge": true,
+  "links": [],
+  "text": "\n\nОб этой странице\n\nМы зарегистрировали подозрительный трафик, исходящий из вашей сети. С помощью этой страницы мы сможем определить, что запросы отправляете именно вы, а не робот. Почему это могло произойти?\n\n\n\nIP-адрес: 38.180.37.42\nВремя: 2026-09-10T18:17:39Z\nURL: https://www.google.com/search?hl=ru&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0%20Unitree%20G1&sei=QvSiavDDPK6X1fIP6e65kQc\n",
+  "usable": false
+}
