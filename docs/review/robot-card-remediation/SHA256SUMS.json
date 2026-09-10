@@ -275,11 +275,14 @@
   "pilot-research/serp-2.json": "248bb304def4dff412af2954626924daecc28b2f596ee93b5bc75867cf248e51",
   "pilot-research/arenda-roboshashki.block-contract.json": "46685e667ef1681009357db646cd56b1a05a30991c32346ee16146ef31e839e4",
   "pilot-research/manufacturer-faq-full.txt": "f2bc777b9c56f3318202e6770a973aaa74709910aa95cdc21eeb81b56a850a1e",
+  "pilot-research/competitor-arendarobota-chess.json": "315c27fb519989f337da736c314d7abdd099aa67734f83fe80909d0d1bf20cc6",
+  "pilot-research/competitor-divent-chess.json": "6a23744b492c3be3a9754919134e2202a784d04feeb7665c03d9b9bd3844b5c4",
   "pilot-research/README.md": "71b66e0ae03cfcd14c138a83590d60ea7bfaf70eab443d9adf2ba898bafd1888",
   "pilot-research/source-0.json": "bab15fa56073ea7b63ca0a43bbdc59a30d5930ad2532cb79d6057a58d870eaaf",
   "pilot-research/arenda-senserobot.block-contract.json": "f36967c05fbc8dfa0857c7bfaea437503905256d44e16dc99bb413863ba3b81b",
   "pilot-research/serp-0.json": "6b1bd3332c7fb7ec081e64cbcd77f628a65390e3dcca7ebd9fabe14c55dfb8ba",
   "pilot-research/source-2.json": "8d237280653f8fcf335a012a090b3081ef62a28af8f1173656f31b488b1607aa",
+  "pilot-research/COMPETITOR_GAPS.md": "5d2ff13991b07daa2066098fa49b8a164f6d4161cd89d71d1708b0c4737c2302",
   "pilot-research/serp-2.png": "2e5545e71a66f3ab36573c4a9be6ca9f301a2e47d2969f53ded71af9766a9e93",
   "pilot-research/claim-audit.json": "7af38852cafc3eafd8b47ae78841e209790c48a9b2e55dd9da0ccc8512109164",
   "pilot-research/serp-1.png": "32e775a47e8da0ca821a792676d16d123ad79daddbad81e4394ea3c1f658f1e4",
@@ -287,6 +290,7 @@
   "pilot-research/source-3.json": "5a9578c3e7dd87cf24a9e5c37cffa35eafb0d78bbebf24a80cec3b263474deaa",
   "pilot-research/source-1.json": "927ffe9c90aba9808dec8bdfa0002c5b2768b89ad46e27bd0600c0e0e950d3dc",
   "pilot-research/source-4.json": "486a122a7bf7983de282585d9e4800e59318155e21a2513d1f08b05239066134",
+  "pilot-research/competitor-rent-robot-chess.json": "715b02c39ad61f6f38691c19d8edb57ca8263f0908c824f790d81242d2832ca6",
   "pilot-research/serp-0.png": "68da05aa1fd592f6c2f10f0c9e70d5fd60c640e5fc68326178711fccacc74670",
   "pilot-research/source-5.json": "986ae117632347810fae2737f75818db248bfbdf1b26080932f020ee7888a13b"
 }
