@@ -1,4 +1,5 @@
 ---
+import { launchArticles, launchCompilations } from '../lib/launch-navigation';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
@@ -6,9 +7,9 @@ import { homeArticles, homeRobotCardFinalCta } from '../data/home-live';
 import { reviewHref, reviewLinksAreEnabled } from '../lib/review-links';
 import { collectionPageJsonLd } from '../lib/seo';
 
-const articleCards = homeArticles.cards;
+const articleCards = launchArticles.cards;
 const articlesPageDescription = homeArticles.description;
-const articleIntro = 'В блоге Кибер Гоши собираем практические материалы о том, как выбрать робота под формат мероприятия, чем отличаются гуманоиды, роботы-собаки и сервисные модели, и какие детали важно обсудить до аренды. Этот блок позже адаптируем под SEO: добавим точные запросы, перелинковку и фильтры по сценариям.';
+const articleIntro = 'В блоге Кибер Гоши собираем практические материалы о том, как выбрать робота под формат мероприятия, чем отличаются гуманоиды, роботы-собаки и сервисные модели, и какие детали важно обсудить до аренды.';
 ---
 
 <BaseLayout
@@ -49,7 +50,7 @@ const articleIntro = 'В блоге Кибер Гоши собираем пра�
     </section>
 
     <div class="articles-page__links-hidden" aria-hidden="true">
-      <InternalLinks route="/articles/" label="Внутренняя навигация" />
+
     </div>
   </main>
 </BaseLayout>

@@ -3,7 +3,7 @@ import source from '../../data/design/home-live-blocks.json';
 export type HomeImage = { src: string; alt: string };
 export type HomeLink = { label: string; href: string };
 export type HomeGoshaData = { title: string; subtitle: string; text: string; image: HomeImage };
-export type HomeCard = { title: string; description: string; href: string; originalHref?: string; cta?: string; image: HomeImage };
+export type HomeCard = { disabled?: boolean; title: string; description: string; href: string; originalHref?: string; cta?: string; image: HomeImage };
 export type HomeCardsBlock = { title: string; description: string; cards: HomeCard[] };
 export type HomeFaqData = { title: string; items: { question: string; answer: string }[] };
 export type HomeFinalCtaData = {

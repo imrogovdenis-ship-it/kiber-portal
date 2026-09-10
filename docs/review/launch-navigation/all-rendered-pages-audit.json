@@ -1,0 +1,465 @@
+{
+  "pages": [
+    {
+      "file": "index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "404.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "50x.html",
+      "h1": 1,
+      "robotsMeta": null,
+      "missingInternalTargets": []
+    },
+    {
+      "file": "roboty-gumanoidy/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "articles/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "lead/request/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "lead/thanks/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "consent/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "roboty-sobaki/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "compilations/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "contacts/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "terms/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-glambot/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-xiaomi-cyberdog-2/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-robota-ardi/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-robota-tron/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-robota-hudozhnika-a4/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-senserobot/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-noetix-bumi/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-inchbot-l1-w-edu/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-klipmeiker/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-uv-box/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-unitree-g1/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-agibot-x2/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-mini-robo-kofeyni/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-robota-sofiya/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-unitree-r1/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-kettybot/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-promobot-v4/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-robot-barmen/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-bellabot/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-unitree-go2/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-sketchbot/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-robo-kofeyni/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-unitree-h2/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "robots/arenda-roboshashki/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "news/index.html",
+      "h1": 1,
+      "robotsMeta": "index, follow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "privacy-policy/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "cookie-policy/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/design-review/index.html",
+      "h1": 6,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": [
+        "/robots/",
+        "/robots/compact-robot/",
+        "/robots/humanoid-long-name/",
+        "/robots/mobile-robot/",
+        "/robots/robot-without-media/"
+      ]
+    },
+    {
+      "file": "preview/review-approved/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/articles/unitree-g1-na-korporative/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/article-blocks/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-glambot/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-xiaomi-cyberdog-2/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-robota-ardi/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-robota-tron/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-robota-hudozhnika-a4/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-senserobot/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-noetix-bumi/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-inchbot-l1-w-edu/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-klipmeiker/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-uv-box/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-unitree-g1/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-agibot-x2/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-mini-robo-kofeyni/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-robota-sofiya/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-unitree-r1/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-kettybot/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-promobot-v4/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-robot-barmen/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-bellabot/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-unitree-go2/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-sketchbot/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-robo-kofeyni/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-unitree-h2/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/robot-card/arenda-roboshashki/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    },
+    {
+      "file": "preview/kiber-94/compilation/roboty-gumanoidy/index.html",
+      "h1": 1,
+      "robotsMeta": "noindex, nofollow",
+      "missingInternalTargets": []
+    }
+  ],
+  "missingTargets": {
+    "/robots/": [
+      "preview/design-review/index.html"
+    ],
+    "/robots/humanoid-long-name/": [
+      "preview/design-review/index.html"
+    ],
+    "/robots/mobile-robot/": [
+      "preview/design-review/index.html"
+    ],
+    "/robots/robot-without-media/": [
+      "preview/design-review/index.html"
+    ],
+    "/robots/compact-robot/": [
+      "preview/design-review/index.html"
+    ]
+  }
+}

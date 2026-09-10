@@ -1,4 +1,5 @@
 ---
+import { launchArticles, launchCompilations } from '../lib/launch-navigation';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHero from '../components/blocks/HomeHero.astro';
 import RobotCard from '../components/blocks/RobotCard.astro';
@@ -25,7 +26,7 @@ function getFeaturedHomeRobots(limit: number) {
   const robots = getRobotPages();
   const bySlug = new Map(robots.map((robot) => [robot.slug, robot]));
 
-  return featuredSlugs
+  return [...featuredSlugs, ...robots.map(r => r.slug).filter(slug => !featuredSlugs.includes(slug))]
     .map((slug, index) => {
       const robot = bySlug.get(slug);
       if (!robot) return null;
@@ -46,7 +47,7 @@ function getFeaturedHomeRobots(limit: number) {
     .slice(0, limit);
 }
 
-const homeRobots = getFeaturedHomeRobots(4);
+const homeRobots = getFeaturedHomeRobots(24);
 
 const hero = {
   eyebrow: 'Роботы для мероприятий',
@@ -69,7 +70,7 @@ const hero = {
   <main class="vertical-slice container" id="main-content" tabindex="-1" data-kiber-task="KIBER-33" data-home-parity-pass="full-homepage-lower-blocks">
     <HomeHero {...hero} />
     <HomeGoshaQuote {...homeGosha} />
-    <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
+    <HomeImageCards id="compilations" eyebrow="Подборки" {...launchCompilations} />
 
     <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog" aria-labelledby="pilot-robot-title" data-vertical-step="home-to-robot" data-primary-route="/preview/kiber-94/robot-card/arenda-unitree-g1/" data-canonical-route="/robots/arenda-unitree-g1/">
       <div class="vertical-slice__section-copy">
@@ -78,11 +79,11 @@ const hero = {
         <p>Карточка полностью кликабельна: фото, название и описание ведут на страницу робота.</p>
       </div>
       <div class="vertical-slice__card-grid">
-        {homeRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" internalLinkId={robot.slug === 'arenda-unitree-g1' ? 'approved-home-to-unitree-g1-card' : undefined} />)}
+        {homeRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="lazy" internalLinkId={robot.slug === 'arenda-unitree-g1' ? 'approved-home-to-unitree-g1-card' : undefined} />)}
       </div>
     </section>
 
-    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...homeArticles} />
+    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...launchArticles} />
     <HomeFaqBlock {...homeFaq} />
     <HomeFinalCta {...homeRobotCardFinalCta} variant="robot-card-final" />
   </main>

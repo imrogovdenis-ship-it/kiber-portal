@@ -1,4 +1,5 @@
 ---
+import { launchArticles, launchCompilations } from '../lib/launch-navigation';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeFinalCta from '../components/blocks/HomeFinalCta.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
@@ -7,7 +8,7 @@ import { reviewHref, reviewLinksAreEnabled } from '../lib/review-links';
 import { collectionPageJsonLd } from '../lib/seo';
 
 const cardAnchors = ['roboty-gumanoidy', 'roboty-dlya-vystavok', 'roboty-sobaki', 'unitree'];
-const compilationCards = homeCompilations.cards.slice(0, 4).map((card, index) => ({
+const compilationCards = launchCompilations.cards.slice(0, 4).map((card, index) => ({
   ...card,
   id: cardAnchors[index],
   href:
@@ -59,11 +60,12 @@ const textSections = [
         <h2 id="compilations-cards-title">Выберите подборку под событие</h2>
       </div>
       <div class="compilations-page__grid">
-        {compilationCards.map((card, index) => (
-          <a
+        {compilationCards.map((card, index) => { const CardTag = card.disabled ? 'div' : 'a'; return (
+          <CardTag
             id={card.id}
             class="compilations-page__card"
-            href={(reviewLinksAreEnabled ? reviewHref(card.originalHref ?? card.href) : card.href)}
+            aria-disabled={card.disabled ? "true" : undefined}
+            href={card.disabled ? undefined : (reviewLinksAreEnabled ? reviewHref(card.originalHref ?? card.href) : card.href)}
             style={`--compilation-card-image: url('${card.image.src}')`}
             data-analytics-event="robot_card_click"
             data-analytics-block-id="compilations-index"
@@ -74,8 +76,8 @@ const textSections = [
             <span class="compilations-page__card-title">{card.title}</span>
             <span class="compilations-page__card-description">{card.description}</span>
             <span class="compilations-page__card-cta">{card.cta ?? 'Подробнее'}</span>
-          </a>
-        ))}
+          </CardTag>
+        ); })}
       </div>
     </section>
 
@@ -84,7 +86,7 @@ const textSections = [
     </section>
 
     <div class="compilations-page__links-hidden" aria-hidden="true">
-      <InternalLinks route="/compilations/" label="Внутренняя навигация" />
+
     </div>
 
   </main>
