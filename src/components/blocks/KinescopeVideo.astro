@@ -32,6 +32,7 @@ if (!isAllowedKinescopeEmbed) {
       allow="autoplay; fullscreen; picture-in-picture; encrypted-media;"
       allowfullscreen
     ></iframe>
+    {clickToLoad && <button class="kp-kinescope-video__play" type="button" data-kinescope-load="" aria-label={`Загрузить видео: ${title}`}>▶ Смотреть видео</button>}
   </div>
   {caption ? <figcaption>{caption}</figcaption> : null}
   {playLink ? <a class="kp-kinescope-video__fallback" href={playLink} target="_blank" rel="noopener">Смотреть видео</a> : null}
