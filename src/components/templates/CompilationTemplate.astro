@@ -7,7 +7,7 @@ import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
 import HomeImageCards from '../blocks/HomeImageCards.astro';
 import RobotCard from '../blocks/RobotCard.astro';
-import { homeCompilations } from '../../data/home-live';
+import { launchCompilations } from '../../lib/launch-navigation';
 import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-template-data';
 
 const { template } = Astro.props as { template: CompilationPageTemplateData };
@@ -158,7 +158,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
 
   {template.showOtherCompilations !== false && (
   <section class="humanoid-template__bottom-compilations container" data-block-id="otherCompilations" aria-label="Подборки">
-    <HomeImageCards id="compilations" eyebrow="Подборки" {...homeCompilations} />
+    <HomeImageCards id="compilations" eyebrow="Подборки" {...launchCompilations} />
   </section>
   )}
 </article>

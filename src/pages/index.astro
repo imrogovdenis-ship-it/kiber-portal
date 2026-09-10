@@ -1,4 +1,5 @@
 ---
+import homeCatalogTitles from '../../data/content/home-catalog-titles.json';
 import { launchArticles, launchCompilations } from '../lib/launch-navigation';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHero from '../components/blocks/HomeHero.astro';
@@ -33,7 +34,7 @@ function getFeaturedHomeRobots(limit: number) {
       return {
         slug: robot.slug,
         href: reviewRobotPreviewHref(robot.slug, robot.route),
-        title: robot.identity.name,
+        title: homeCatalogTitles[robot.slug as keyof typeof homeCatalogTitles],
         category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
         price: robot.pricing.display,
         price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],

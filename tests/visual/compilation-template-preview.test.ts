@@ -29,8 +29,8 @@ test('KIBER-94 compilation template combines old source block order with approve
   assert.match(component, /HomeFaqBlock/);
   assert.match(component, /HomeFinalCta/);
   assert.match(component, /HomeImageCards/);
-  assert.match(component, /import \{ homeCompilations \} from '\.\.\/\.\.\/data\/home-live'/);
-  assert.match(component, /<HomeImageCards id="compilations" eyebrow="Подборки" \{\.\.\.homeCompilations\} \/>/);
+  assert.match(component, /import \{ launchCompilations \} from '\.\.\/\.\.\/lib\/launch-navigation'/);
+  assert.match(component, /<HomeImageCards id="compilations" eyebrow="Подборки" \{\.\.\.launchCompilations\} \/>/);
   assert.match(component, /humanoid-template__bottom-compilations \{ padding-block: clamp\(3\.5rem, 6vw, 5\.25rem\) clamp\(4rem, 7vw, 6rem\); \}/);
   assert.doesNotMatch(component, /humanoid-template__other|humanoid-template__other-grid|humanoid-template__other-card/);
   assert.match(component, /RobotCard/);
