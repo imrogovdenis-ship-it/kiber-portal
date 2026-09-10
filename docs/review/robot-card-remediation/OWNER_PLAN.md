@@ -8,7 +8,7 @@
 5. After publication, finish remaining categories as robot cards + relevant compilation + articles. Robot dogs are the proposed next category.
 
 ## Decision before launch
-How to expose remaining unaudited/unremediated detail pages and existing incoming links? Do not silently hide existing production URLs or leave broken recommendations. Owner choice required; writing the pilot is not blocked.
+Owner decision: keep remaining robot pages available with their existing content, fixing critical errors before launch. Preserve existing URLs and working incoming links. Complete their full editorial remediation after publication; do not label them as having passed the new content review. This decision does not authorise deleting or disabling those pages.
 
 ## Scope
 Approval to push this research package is explicit. No merge/deploy/DNS/live test is performed by this documentation update. The previous full-24 remediation release gate is superseded by this staged content scope, not by removal of technical release safeguards.
