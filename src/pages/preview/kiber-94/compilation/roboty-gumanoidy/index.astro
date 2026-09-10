@@ -1,4 +1,5 @@
 ---
+import videoRegistry from '../../../../../../data/media/kinescope-video-library.json';
 import BaseLayout from '../../../../../layouts/BaseLayout.astro';
 import CompilationTemplate from '../../../../../components/templates/CompilationTemplate.astro';
 import contentPackage from '../../../../../../data/content/compilation-humanoids.json';
@@ -15,6 +16,7 @@ const pageUrl = '/preview/kiber-94/compilation/roboty-gumanoidy/';
   noindex={true}
   breadcrumbs={template.breadcrumbs}
   jsonLd={[
+    ...videoRegistry.videos.filter(v => v.usage.some(u => u.slug === 'roboty-gumanoidy')).map(v => ({ '@context': 'https://schema.org', '@type': 'VideoObject', name: v.title, description: v.description, thumbnailUrl: `https://www.kiber-portal.ru${v.poster.src}`, uploadDate: v.uploadedAt, duration: `PT${Math.round(v.durationSeconds)}S`, embedUrl: v.embedLink })),
     collectionPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
     breadcrumbJsonLd(template.breadcrumbs),
     faqPageJsonLd({ items: template.faq.items }),

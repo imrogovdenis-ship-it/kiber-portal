@@ -1,5 +1,7 @@
 ---
 import { reviewRobotPreviewHref } from '../../lib/review-links';
+import KinescopeVideo from '../blocks/KinescopeVideo.astro';
+import videoRegistry from '../../../data/media/kinescope-video-library.json';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
@@ -9,6 +11,8 @@ import { homeCompilations } from '../../data/home-live';
 import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-template-data';
 
 const { template } = Astro.props as { template: CompilationPageTemplateData };
+const overviewVideo = videoRegistry.videos.find(v => v.videoId === template.video.videoId);
+const scenarioVideos = (template.scenarioVideoIds ?? []).map(id => videoRegistry.videos.find(v => v.videoId === id)).filter(Boolean);
 const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
 ---
 
@@ -24,6 +28,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
           <a class="humanoid-template__button" href="#catalog">Смотреть модели</a>
         </div>
       </div>
+      {template.hero.image && <img class="humanoid-template__hero-image" src={template.hero.image.src} alt={template.hero.image.alt} width="1280" height="720" loading="eager" decoding="async" />}
     </div>
   </section>
 
@@ -59,6 +64,23 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     </div>
   </section>
 
+  {template.explanation && <section class="humanoid-template__text container" data-block-id="explanation" aria-labelledby="explanation-title">
+    <h2 id="explanation-title">{template.explanation.title}</h2>
+    <div class="humanoid-template__prose">{template.explanation.paragraphs.map(text => <p>{text}</p>)}</div>
+  </section>}
+
+  {template.video.enabled !== false && (
+  <section class="humanoid-template__video container" data-block-id="video" aria-labelledby="video-title">
+    <div>
+      <p class="humanoid-template__eyebrow humanoid-template__eyebrow--video">Видео</p>
+      <h2 id="video-title">{template.video.title}</h2>
+      <p>{template.video.lead}</p>
+    </div>
+    {overviewVideo ? <KinescopeVideo {...overviewVideo} aspectRatio={overviewVideo.aspectRatio} clickToLoad={true} /> : <div class="humanoid-template__video-frame" role="img" aria-label={template.video.embedHint}><span>{template.video.embedHint}</span></div>}
+  </section>
+
+  )}
+
   <section class="humanoid-template__guide container" data-block-id="choiceGuide" aria-labelledby="guide-title">
     <div class="humanoid-template__section-head">
       <p class="humanoid-template__eyebrow">Гид по выбору</p>
@@ -76,20 +98,6 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     </div>
   </section>
 
-  {template.video.enabled !== false && (
-  <section class="humanoid-template__video container" data-block-id="video" aria-labelledby="video-title">
-    <div>
-      <p class="humanoid-template__eyebrow humanoid-template__eyebrow--video">Видео</p>
-      <h2 id="video-title">{template.video.title}</h2>
-      <p>{template.video.lead}</p>
-    </div>
-    <div class="humanoid-template__video-frame" role="img" aria-label={template.video.embedHint}>
-      <span>{template.video.embedHint}</span>
-    </div>
-  </section>
-
-  )}
-
   <section class="humanoid-template__scenarios" data-block-id="scenarioExplanation" aria-labelledby="scenarios-title">
     <div class="container humanoid-template__section-head humanoid-template__section-head--scenarios-left">
       <p class="humanoid-template__eyebrow">Сценарии</p>
@@ -103,7 +111,12 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       </div>
     </div>
     <div class="humanoid-template__scenario-strip humanoid-template__drag-gallery" data-drag-slider="robot-humanoid-scenarios-slider" aria-label="Сценарии аренды робота-гуманоида: горизонтальный слайдер">
-      {template.scenarios.items.map((item) => (
+      {scenarioVideos.length > 0 ? scenarioVideos.map(video => video && (
+        <article class="humanoid-template__scenario-card">
+          <KinescopeVideo {...video} aspectRatio="9 / 16" clickToLoad={true} />
+          <div class="humanoid-template__scenario-caption"><h3>{video.title}</h3><p>{video.description}</p></div>
+        </article>
+      )) : template.scenarios.items.map((item) => (
         <article class="humanoid-template__scenario-card">
           <div class="humanoid-template__scenario-video" role="img" aria-label={item.image.alt}>
             <img src={item.image.src} alt={item.image.alt} loading="lazy" decoding="async" />
@@ -153,6 +166,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
 <script is:inline src="/scripts/robot-card-gallery.js" defer></script>
 
 <style>
+  .humanoid-template__hero-image { display: block; width: 100%; height: auto; border-radius: 1.5rem; object-fit: contain; }
   .humanoid-template { display: grid; max-width: 100vw; overflow-x: clip; gap: 0; background: var(--kp-reference-sky); color: var(--kp-reference-ink); }
   .humanoid-template section { scroll-margin-top: 6rem; }
   .humanoid-template__hero { padding: clamp(2.25rem, 3.5vw, 3.25rem) 0 clamp(3.5rem, 6vw, 5.5rem); background: var(--kp-ink-dark); color: var(--kp-reference-white); }
