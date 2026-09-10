@@ -68,9 +68,11 @@ for (const robot of generated.robots) {
   assert.equal(html.includes('KIBER-45 import source status'), false, `${robot.slug}: review note leaked`);
   assert.equal(html.includes('KIBER-50-REVIEW-ONLY-SENTINEL'), false, `${robot.slug}: KIBER-50 sentinel leaked`);
 
-  assert.match(html, new RegExp(`data-kiber-task="KIBER-45"[^>]+data-robot-slug="${robot.slug}"|data-robot-slug="${robot.slug}"[^>]+data-kiber-task="KIBER-45"`), `${robot.slug}: unified RobotPage marker missing`);
-  assert.match(html, /data-vertical-step="robot-to-lead"/, `${robot.slug}: CTA path missing`);
-  assert.match(html, /Не является публичной офертой/, `${robot.slug}: pricing disclaimer missing`);
+  assert.match(html, new RegExp(`data-kiber-task="KIBER-94"[^>]+data-robot-slug="${robot.slug}"|data-robot-slug="${robot.slug}"[^>]+data-kiber-task="KIBER-94"`), `${robot.slug}: unified RobotPage marker missing`);
+  assert.ok(html.includes(`/lead/request/?robot=${robot.slug}`), `${robot.slug}: CTA path missing`);
+  assert.equal(robot.pricing.public_offer, false, `${robot.slug}: source non-offer pricing policy missing`);
+  assert.match(html, /href="\/terms\/"/, `${robot.slug}: visible terms link missing`);
+  assert.equal(robot.pricing.disclaimer, 'Не является публичной офертой', `${robot.slug}: pricing disclaimer missing in approved source`);
 
   const title = getAll(html, /<title>([^<]+)<\/title>/g)[0] || '';
   const h1 = getAll(html, /<h1[^>]*>([\s\S]*?)<\/h1>/gi).map((text) => text.replace(/<[^>]+>/g, '').trim());

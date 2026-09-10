@@ -22,7 +22,7 @@ const breadcrumbs = [
 ---
 
 <BaseLayout
-  title={template.seo.title}
+  title={template.seo.title.includes('КИБЕР ПОРТАЛ') ? template.seo.title : `${template.seo.title} | КИБЕР ПОРТАЛ`}
   description={template.seo.description}
   canonical={Astro.site ? new URL(previewPath, Astro.site).toString() : previewPath}
   image={robot.media.hero.src}

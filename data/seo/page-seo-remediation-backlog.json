@@ -4,10 +4,10 @@
   "status": "owner_approved_complete",
   "sourceAudit": "data/seo/page-seo-audit.json",
   "summary": {
-    "routesChecked": 37,
+    "routesChecked": 43,
     "technicalFailures": 0,
-    "warningCount": 198,
-    "routesWithWarnings": 37,
+    "warningCount": 203,
+    "routesWithWarnings": 43,
     "closedPolicyWarnings": [
       "aiCrawlerRobotsPolicy"
     ]
@@ -77,6 +77,12 @@
       "routes": [
         "/",
         "/articles/",
+        "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+        "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+        "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+        "/articles/sravnenie-unitree-g1-r1-h2/",
+        "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+        "/articles/unitree-g1-na-korporative/",
         "/compilations/",
         "/consent/",
         "/contacts/",
@@ -143,8 +149,7 @@
         "/compilations/",
         "/contacts/",
         "/news/",
-        "/roboty-gumanoidy/",
-        "/roboty-sobaki/"
+        "/roboty-gumanoidy/"
       ],
       "recommendedNextWork": [
         "Prepare approved visual pattern for visible breadcrumbs on category/contact/index pages.",
@@ -202,7 +207,13 @@
         "/compilations/",
         "/articles/",
         "/news/",
-        "/contacts/"
+        "/contacts/",
+        "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+        "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+        "/articles/unitree-g1-na-korporative/",
+        "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+        "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+        "/articles/sravnenie-unitree-g1-r1-h2/"
       ],
       "recommendedNextWork": [
         "Generate review-only Markdown from canonical source-of-truth, not from scraped rendered HTML.",

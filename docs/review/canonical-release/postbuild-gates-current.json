@@ -1,0 +1,182 @@
+[
+  {
+    "command": "npm run test:visual-regression",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:visual-regression\n> node scripts/visual-regression-smoke.mjs\n\nKIBER-34 visual regression smoke passed: 10 approved references verified.\n"
+  },
+  {
+    "command": "npm run build:production",
+    "exit": 0,
+    "evidence": "ci-final-pass.log"
+  },
+  {
+    "command": "npm run test:compilation-rendered",
+    "exit": 0,
+    "tail": "und Kinescope links or intermediate controls\n  ---\n  duration_ms: 0.294347\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 574.062827\n"
+  },
+  {
+    "command": "npm run test:performance",
+    "exit": 1,
+    "tail": "\n> kiber-portal@0.1.0 test:performance\n> node scripts/performance-budget-smoke.mjs\n\nKIBER-39 performance budget smoke failed:\n- /: images 385100 > 120000\n- /: total page bytes 526472 > 250000\n- /robots/arenda-unitree-g1/: images 826194 > 120000\n- /robots/arenda-unitree-g1/: total page bytes 974558 > 250000\n"
+  },
+  {
+    "command": "npm run test:routes",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:routes\n> node scripts/route-sitemap-smoke.mjs\n\nKIBER-43 route/sitemap smoke passed: 43 launch routes, 35 sitemap URLs, 2 redirects checked.\n"
+  },
+  {
+    "command": "npm run test:analytics-events",
+    "exit": 0,
+    "tail": "> kiber-portal@0.1.0 test:analytics-events\n> node scripts/analytics-event-contract-smoke.mjs\n\nKIBER-71 analytics event contract smoke passed: 799 DOM events checked against 8 provider-neutral events.\n"
+  },
+  {
+    "command": "npm run test:semantic-core",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:semantic-core\n> node scripts/semantic-core-lifecycle-smoke.mjs\n\nKIBER-53 semantic-core lifecycle smoke passed: 7 clusters, 3 lifecycle states, region RU.\n"
+  },
+  {
+    "command": "npm run test:review-notes",
+    "exit": 0,
+    "tail": "tal@0.1.0 test:review-notes\n> node scripts/review-notes-isolation-smoke.mjs\n\nKIBER-50 review-notes isolation smoke passed: 44 HTML files checked; review-only sentinel stayed out of production render.\n"
+  },
+  {
+    "command": "npm run test:internal-links",
+    "exit": 0,
+    "tail": "0.1.0 test:internal-links\n> node scripts/internal-link-proposals-smoke.mjs\n\nKIBER-79 internal-link proposal smoke passed: 7 proposals checked; generated links stayed review-only across 44 HTML files.\n"
+  },
+  {
+    "command": "npm run test:seo-metadata",
+    "exit": 0,
+    "tail": "tal@0.1.0 test:seo-metadata\n> node scripts/seo-metadata-structured-data-smoke.mjs\n\nKIBER-51 SEO metadata smoke passed: 35 launch routes checked for canonical, unique H1/title, OG/Twitter and JSON-LD.\n"
+  },
+  {
+    "command": "npm run test:page-seo-components",
+    "exit": 0,
+    "tail": "ponents\n> python3 scripts/audit_page_seo_components.py\n\nKIBER-93 page SEO component audit: 43 routes, 0 failed, 43 warnings. Reports written to data/seo/page-seo-audit.json and docs/page-seo-audit.md\n"
+  },
+  {
+    "command": "npm run test:page-type-intent-contract",
+    "exit": 0,
+    "tail": "ing content templates as typed block systems\n  ---\n  duration_ms: 1.426038\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 524.541221\n"
+  },
+  {
+    "command": "npm run test:kiber94-page-templates",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:kiber94-page-templates\n> node scripts/kiber94-page-template-contract-smoke.mjs\n\nKIBER-94 page template contract smoke passed: 3 reusable templates checked.\n"
+  },
+  {
+    "command": "npm run test:internal-link-rendering",
+    "exit": 0,
+    "tail": "ernal-link-rendering\n> node scripts/internal-links-rendering-smoke.mjs\n\nKIBER-52 internal-link rendering smoke passed: 10 curated links across 8 source routes; generated proposals stayed review-only.\n"
+  },
+  {
+    "command": "npm run test:robotpage-24",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:robotpage-24\n> node scripts/robotpage-24-smoke.mjs\n\nKIBER-45 RobotPage smoke passed: 24 robot pages rendered through one /robots/[slug]/ template.\n"
+  },
+  {
+    "command": "npm run test:content-acceptance",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:content-acceptance\n> node scripts/content-acceptance-smoke.mjs\n\nKIBER-55 content acceptance smoke passed: 35 public routes checked; 31 items remain human-review gated.\n"
+  },
+  {
+    "command": "npm run test:responsive-visual-qa",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:responsive-visual-qa\n> node scripts/responsive-visual-qa-smoke.mjs\n\nKIBER-63 responsive visual QA smoke passed: 24 screenshots, 11 contact sheets, 0 blocking defects.\n"
+  },
+  {
+    "command": "npm run test:reference-visual-layer",
+    "exit": 0,
+    "tail": "ed\": false,\n    \"secretsChanged\": false,\n    \"analyticsProviderChanged\": false,\n    \"leadRoutingChanged\": false\n  },\n  \"rawHtmlCopiedIntoRuntime\": false,\n  \"generatedAt\": \"2026-09-10T13:21:27.581Z\"\n}\n"
+  },
+  {
+    "command": "npm run test:lead-capability",
+    "exit": 0,
+    "tail": "kiber-portal@0.1.0 test:lead-capability\n> node scripts/lead-capability-contract-smoke.mjs\n\nKIBER-54 lead capability contract smoke passed: routing remains capability-only with zero live destinations.\n"
+  },
+  {
+    "command": "npm run test:api-leads",
+    "exit": 0,
+    "tail": "N route without env-backed configuration\n  ---\n  duration_ms: 0.468709\n  type: 'test'\n  ...\n1..18\n# tests 18\n# suites 0\n# pass 18\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 8597.359463\n"
+  },
+  {
+    "command": "npm run test:media-rights",
+    "exit": 0,
+    "tail": ":media-rights\n> node scripts/media-rights-registry-smoke.mjs\n\nKIBER media rights registry smoke passed: 24 robot media records have owner media approval; production deploy remains separately blocked.\n"
+  },
+  {
+    "command": "npm run test:media-rights-review-package",
+    "exit": 0,
+    "tail": "ia-rights-review-package-smoke.mjs\n\nKIBER media rights review package smoke passed: 24 robots, 191 assets including legacy heroes, productionApproved=24; production deploy remains separately blocked.\n"
+  },
+  {
+    "command": "npm run test:approved-media-rendering",
+    "exit": 0,
+    "tail": "pproved-media-rendering\n> node scripts/approved-media-rendering-smoke.mjs\n\nKIBER approved media rendering smoke passed: 24 robot pages and homepage card media checked against approved media registry.\n"
+  },
+  {
+    "command": "npm run test:media-git-hygiene",
+    "exit": 0,
+    "tail": "l@0.1.0 test:media-git-hygiene\n> node scripts/media-git-hygiene-smoke.mjs\n\nKIBER-49 media Git hygiene smoke passed: 423 runtime images / 15109.9 KiB; 510/510 review originals tracked through Git LFS.\n"
+  },
+  {
+    "command": "npm run test:media-storage-policy",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:media-storage-policy\n> node scripts/media-storage-policy-smoke.mjs\n\nKIBER-12 media storage policy smoke passed: 510/510 review originals in LFS; disk reserve 9.8 GiB.\n"
+  },
+  {
+    "command": "npm run test:content-package-workflow",
+    "exit": 0,
+    "tail": "low\n> node scripts/content-package-workflow-smoke.mjs\n\nKIBER content package workflow smoke passed: media rights section approved; remaining content/legal/lead sections keep production publish gated.\n"
+  },
+  {
+    "command": "npm run test:production-approval-gates",
+    "exit": 0,
+    "tail": "duction-approval-gates\n> node scripts/production-approval-gates-smoke.mjs\n\nKIBER production approval gates smoke passed: media rights approved; remaining production gates stay explicitly human-gated.\n"
+  },
+  {
+    "command": "npm run test:readiness-crawl",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:readiness-crawl\n> node scripts/launch-readiness-crawl-smoke.mjs\n\nKIBER launch readiness crawl passed: 43 routes, 24 robots; go/no-go remains blocked by 4 owner decisions.\n"
+  },
+  {
+    "command": "npm run test:kiber-65-readiness",
+    "exit": 0,
+    "tail": "5-readiness\n> node scripts/kiber-65-readiness-matrix-smoke.mjs\n\nKIBER-65 readiness matrix smoke passed: forms/analytics/robots/sitemap/redirects green; production remains blocked by 4 approval gates.\n"
+  },
+  {
+    "command": "npm run test:contact-lead-visual",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:contact-lead-visual\n> node scripts/contact-lead-visual-smoke.mjs\n\nKIBER contact/lead visual smoke passed: approved contacts render and lead routing remains disabled.\n"
+  },
+  {
+    "command": "npm run test:contact-lead-visual-pass3",
+    "exit": 0,
+    "tail": "portal@0.1.0 test:contact-lead-visual-pass3\n> node scripts/contact-lead-visual-pass3-smoke.mjs\n\nKIBER contact/lead visual pass 3 smoke passed: 12 screenshots, 3 contact sheets, live routing disabled.\n"
+  },
+  {
+    "command": "npm run test:production-go-no-go",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 test:production-go-no-go\n> node scripts/production-go-no-go-smoke.mjs\n\nKIBER production go/no-go smoke passed: NO_GO; 43 routes, 24 robots, 4 blockers.\n"
+  },
+  {
+    "command": "npm run test:launch-scope-manifest",
+    "exit": 0,
+    "tail": "rtifacts and deferred production activations\n  ---\n  duration_ms: 0.308261\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 466.058818\n"
+  },
+  {
+    "command": "npm run ci:baseline",
+    "exit": 0,
+    "tail": "\n> kiber-portal@0.1.0 ci:baseline\n> node scripts/ci-baseline-smoke.mjs\n\nKIBER-20 CI baseline smoke passed: 44 HTML pages link-checked, dist/404.html verified, 2509 tracked files secret-scanned.\n"
+  },
+  {
+    "command": "npm run test:full-site-visual-qa",
+    "exit": 0,
+    "tail": "-portal@0.1.0 test:full-site-visual-qa\n> node scripts/full-site-visual-qa-smoke.mjs\n\nKIBER-91 full-site visual QA smoke passed: 45 screenshots, 3 contact sheets, 3 findings, production remains gated.\n"
+  },
+  {
+    "command": "npm run test:kinescope-video-contract",
+    "exit": 0,
+    "tail": "ideo-contract\n> node scripts/kinescope-video-contract-smoke.mjs\n\nKinescope video contract smoke passed: API/1Password workflow, source registry, lazy embed component, SEO and approval gates recorded.\n"
+  }
+]

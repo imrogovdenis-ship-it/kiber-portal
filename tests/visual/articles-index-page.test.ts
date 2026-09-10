@@ -28,7 +28,7 @@ const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8
 test('KIBER-91 articles index is filled from approved homepage article data', () => {
   assert.doesNotMatch(page, /Здесь будут практические статьи/);
   assert.match(page, /import \{ homeArticles, homeRobotCardFinalCta \}/);
-  assert.match(page, /const articleCards = homeArticles\.cards/);
+  assert.match(page, /const articleCards = launchArticles\.cards/);
   assert.match(page, /<h1 id="page-title">Блог Кибер Гоши<\/h1>/);
   assert.doesNotMatch(page, /<h1 id="page-title">\{homeArticles\.title\}<\/h1>/);
   assert.doesNotMatch(page, /<section class="articles-page__hero container"[\s\S]*\{articlesPageDescription\}[\s\S]*<\/section>/);
@@ -42,7 +42,7 @@ test('KIBER-91 articles index is filled from approved homepage article data', ()
 test('KIBER-91 articles index has intro block, article feed and bottom CTA in order', () => {
   assert.match(page, /class="articles-page__intro container"/);
   assert.match(page, /Все практические статьи о роботах в одном месте/);
-  assert.match(page, /который позже нужно будет адаптировать по SEO|позже адаптируем под SEO/);
+  assert.doesNotMatch(page, /позже адаптируем под SEO|служебный текст/);
   const introCss = cssBlock('.articles-page__intro-copy');
   assert.doesNotMatch(introCss, /background:\s*var\(--kp-white\)/);
   assert.doesNotMatch(introCss, /box-shadow:/);
@@ -70,7 +70,8 @@ test('KIBER-91 articles cards reuse homepage article visual contract without vis
 
 test('KIBER-91 articles keeps internal-link contract hidden and records filter as future task', () => {
   assert.match(page, /class="articles-page__links-hidden"/);
-  assert.match(page, /<InternalLinks route="\/articles\/" label="Внутренняя навигация" \/>/);
+  assert.match(page, /articleCards = launchArticles\.cards/);
+  assert.doesNotMatch(page, /<InternalLinks/);
   const high = qa.visualFindings.find((finding) => finding.id === 'FSVQA-01');
   assert.ok(high);
   assert.deepEqual(high?.routes, ['/news/']);

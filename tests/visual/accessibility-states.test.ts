@@ -20,10 +20,12 @@ test('KIBER-36 lead request exposes accessible working contact links while the f
 
 test('KIBER-36 robot page documents empty and ready states without hiding them from assistive tech', async () => {
   const page = await readFile(resolve(root, 'src/pages/robots/[slug].astro'), 'utf8');
-  assert.match(page, /data-state="ready"/);
-  assert.match(page, /data-state="empty"/);
-  assert.match(page, /aria-live="polite"/);
-  assert.match(page, /Факты и ограничения/i);
+  assert.match(page, /id="main-content" tabindex="-1"/);
+  assert.match(page, /<RobotCardTemplate \{template\} \/>/);
+  const template = await readFile(resolve(root, 'src/components/templates/RobotCardTemplate.astro'), 'utf8');
+  assert.match(template, /aria-labelledby="robot-card-hero-title"/);
+  assert.match(template, /data-block-id="includedService"/);
+  assert.match(template, /data-block-id="faq"/);
 });
 
 test('KIBER-36 keeps a global keyboard focus-visible style', async () => {

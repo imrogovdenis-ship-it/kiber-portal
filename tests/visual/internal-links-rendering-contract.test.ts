@@ -56,6 +56,10 @@ test('KIBER-52 exposes curated internal links through a reusable renderer and CI
 
   for (const page of ['src/pages/articles.astro', 'src/pages/news.astro', 'src/pages/compilations.astro', 'src/pages/roboty-gumanoidy.astro', 'src/pages/roboty-sobaki.astro', 'src/pages/contacts.astro', 'src/pages/robots/[slug].astro']) {
     const source = await read(page);
-    assert.match(source, /InternalLinks/, `${page}: should render curated internal links`);
+    if (page === 'src/pages/robots/[slug].astro') assert.match(source, /RobotCardTemplate/, 'approved template renders related model/article cards');
+    else if (page === 'src/pages/roboty-gumanoidy.astro') assert.match(source, /CompilationTemplate/, 'approved compilation renders curated cards');
+    else if (page === 'src/pages/articles.astro' || page === 'src/pages/compilations.astro') {
+      assert.match(source,/launchArticles|launchCompilations/);assert.doesNotMatch(source,/<InternalLinks/,'do not restore hidden obsolete links alongside approved navigation');
+    } else assert.match(source, /InternalLinks/, `${page}: should render curated internal links`);
   }
 });

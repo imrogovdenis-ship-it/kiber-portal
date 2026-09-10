@@ -3486,8 +3486,8 @@
     {
       "slug": "/roboty-sobaki/",
       "pageType": "collection",
-      "indexable": true,
-      "robotsStatus": "index",
+      "indexable": false,
+      "robotsStatus": "noindex",
       "canonical": "https://www.kiber-portal.ru/roboty-sobaki/",
       "primaryKeyword": "аренда роботов для мероприятий",
       "secondaryKeywords": [
@@ -3546,7 +3546,7 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch",
+      "sourceRouteStatus": "deferred",
       "aiVisibility": {
         "aiSummary": "Страница «Роботы-собаки для мероприятий» помогает выбрать подходящих роботов для сценария или категории. Она должна объяснять, кому подходит подборка, какие модели выбрать, как сравнить варианты и как обратиться за подбором.",
         "entityType": "collection",
@@ -3817,8 +3817,8 @@
     {
       "slug": "/news/",
       "pageType": "news",
-      "indexable": true,
-      "robotsStatus": "index",
+      "indexable": false,
+      "robotsStatus": "noindex",
       "canonical": "https://www.kiber-portal.ru/news/",
       "primaryKeyword": "новости робототехники",
       "secondaryKeywords": [
@@ -3874,7 +3874,7 @@
         }
       ],
       "reviewStatus": "needs_review",
-      "sourceRouteStatus": "launch",
+      "sourceRouteStatus": "deferred",
       "aiVisibility": {
         "aiSummary": "Новости КИБЕР ПОРТАЛА и робототехники должны давать проверяемый контекст о событиях, технологиях и роботах для мероприятий без выдуманных фактов. Для AI-поиска важны даты, источники, сущности и связанные услуги.",
         "entityType": "article",
@@ -4561,6 +4561,709 @@
         "faqQuestions": [],
         "comparisonTargets": [],
         "relatedPages": []
+      }
+    },
+    {
+      "slug": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "primaryKeyword": "Unitree G1 или Agibot X2",
+      "secondaryKeywords": [
+        "Unitree G1",
+        "Agibot X2",
+        "робот Unitree G1",
+        "робот Agibot X2",
+        "чем Unitree G1 отличается от Agibot X2",
+        "какой робот-гуманоид выбрать для мероприятия",
+        "робот-гуманоид для welcome-зоны",
+        "робот-гуманоид для стенда"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "title": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
+      "description": "Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.",
+      "h1": "Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия",
+      "h2Required": [
+        "Напишите нам в любом удобном мессенджере",
+        "Оставьте заявку",
+        "Выбирайте робота под момент, который должен запомнить гость"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
+      "ogDescription": "Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.",
+      "ogImage": "https://www.kiber-portal.ru/images/articles/unitree-g1-agibot-x2-hero.webp",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "name": "Главная",
+          "url": "/"
+        },
+        {
+          "name": "Блог Кибер Гоши",
+          "url": "/articles/"
+        },
+        {
+          "name": "Unitree G1 или Agibot X2",
+          "url": "/preview/kiber-94/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/articles/",
+          "anchorIntent": "связанные статьи"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "sourceEvidence": "approved source snapshot + owner six-article approval; docs/review/canonical-release/source-manifest.json",
+      "aiVisibility": {
+        "aiSummary": "Unitree G1 лучше подходит, когда нужен строгий технологичный образ: выставка, деловая презентация, стенд, фотозона рядом с продуктом. Agibot X2 уместнее, если роботу нужна роль персонажа: приветствие гостей, мягкий интерактив, мимика на экране, семейное событие или шоу-выход. Если сомневаетесь, соберите дату, площадку, роль робота и желаемый момент для фото — менеджер предложит безопасный сценарий и подходящую модель.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Unitree G1 или Agibot X2 — кто лучше для выставки?",
+          "Кого выбрать для сцены или открытия мероприятия?",
+          "Можно ли арендовать Unitree G1 или Agibot X2 без оператора?",
+          "Почему нельзя выбрать только по характеристикам?",
+          "Что делать, если оба робота нравятся?",
+          "Сколько стоит аренда Unitree G1 или Agibot X2?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Unitree G1 или Agibot X2 для мероприятия: сравнение роботов-гуманоидов по сценариям, ограничениям, сцене, стенду и встрече гостей.",
+            "source": "approved_article_content"
+          }
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ],
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Unitree G1 или Agibot X2 — кто лучше для выставки?",
+          "Кого выбрать для сцены или открытия мероприятия?",
+          "Можно ли арендовать Unitree G1 или Agibot X2 без оператора?",
+          "Почему нельзя выбрать только по характеристикам?",
+          "Что делать, если оба робота нравятся?",
+          "Сколько стоит аренда Unitree G1 или Agibot X2?"
+        ],
+        "comparisonTargets": [],
+        "llmMarkdownPath": null
+      }
+    },
+    {
+      "slug": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "primaryKeyword": "какого робота-гуманоида выбрать для мероприятия",
+      "secondaryKeywords": [
+        "какой робот-гуманоид выбрать",
+        "сравнение роботов-гуманоидов",
+        "выбор гуманоида на мероприятие",
+        "Unitree G1",
+        "Unitree R1",
+        "Unitree H2",
+        "Agibot X2",
+        "Noetix Bumi",
+        "робот Арди",
+        "робот София"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "title": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ",
+      "description": "Помогаем выбрать робота-гуманоида для мероприятия: Noetix Bumi, Unitree R1, Unitree G1, Agibot X2, Unitree H2, Арди и София по бюджету, задаче и сценарию.",
+      "h1": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей",
+      "h2Required": [
+        "Напишите нам в любом удобном мессенджере",
+        "Оставьте заявку",
+        "Сначала выберите роль робота на площадке"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ",
+      "ogDescription": "Помогаем выбрать робота-гуманоида для мероприятия: Noetix Bumi, Unitree R1, Unitree G1, Agibot X2, Unitree H2, Арди и София по бюджету, задаче и сценарию.",
+      "ogImage": "https://www.kiber-portal.ru/images/articles/kakoy-gumanoid-vybrat/hero.webp",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "name": "Главная",
+          "url": "/"
+        },
+        {
+          "name": "Блог Кибер Гоши",
+          "url": "/articles/"
+        },
+        {
+          "name": "Какого робота-гуманоида выбрать",
+          "url": "/preview/kiber-94/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/articles/",
+          "anchorIntent": "связанные статьи"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "sourceEvidence": "approved source snapshot + owner six-article approval; docs/review/canonical-release/source-manifest.json",
+      "aiVisibility": {
+        "aiSummary": "Если нужен самый спокойный и доступный вход в формат — начните с Noetix Bumi. Для короткого динамичного шоу подойдёт Unitree R1. Для делового события, стенда, welcome-зоны и фотозоны чаще смотрят Unitree G1. Если важны диалог, мимика и ощущение персонажа — сравните Agibot X2 и Unitree H2. Для статусных событий, форумов и PR-поводов уместны Арди и София. Если сомневаетесь — отправьте менеджеру формат площадки, бюджет и желаемую роль робота.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какого робота-гуманоида выбрать, если бюджет ограничен?",
+          "Какой гуманоид лучше для выставки или стенда?",
+          "Когда выбирать премиального гуманоида?",
+          "Можно ли выбрать модель без консультации?",
+          "Что делать, если не понимаю, какой робот нужен?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Помогаем выбрать робота-гуманоида для мероприятия: Noetix Bumi, Unitree R1, Unitree G1, Agibot X2, Unitree H2, Арди и София по бюджету, задаче и сценарию.",
+            "source": "approved_article_content"
+          }
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ],
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Какого робота-гуманоида выбрать, если бюджет ограничен?",
+          "Какой гуманоид лучше для выставки или стенда?",
+          "Когда выбирать премиального гуманоида?",
+          "Можно ли выбрать модель без консультации?",
+          "Что делать, если не понимаю, какой робот нужен?"
+        ],
+        "comparisonTargets": [],
+        "llmMarkdownPath": null
+      }
+    },
+    {
+      "slug": "/articles/unitree-g1-na-korporative/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/unitree-g1-na-korporative/",
+      "primaryKeyword": "Unitree G1 на корпоративе",
+      "secondaryKeywords": [
+        "робот Unitree G1 на корпоратив",
+        "Unitree G1 корпоратив",
+        "робот на корпоратив",
+        "робот для корпоратива",
+        "сценарий с роботом на корпоративе"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "title": "Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ",
+      "description": "Как робот-гуманоид Unitree G1 встраивается в корпоратив: встреча гостей, выход на сцену, фотозона, фуршет и финальное фото с оператором.",
+      "h1": "Unitree G1 на корпоративе — разбор сценария",
+      "h2Required": [
+        "Напишите нам в любом удобном мессенджере",
+        "Оставьте заявку",
+        "Unitree G1 лучше раскрывается не в одном номере, а в маршруте по событию"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ",
+      "ogDescription": "Как робот-гуманоид Unitree G1 встраивается в корпоратив: встреча гостей, выход на сцену, фотозона, фуршет и финальное фото с оператором.",
+      "ogImage": "https://www.kiber-portal.ru/images/articles/unitree-g1-korporativ/hero.webp",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "name": "Главная",
+          "url": "/"
+        },
+        {
+          "name": "Блог Кибер Гоши",
+          "url": "/articles/"
+        },
+        {
+          "name": "Unitree G1 на корпоративе",
+          "url": "/preview/kiber-94/articles/unitree-g1-na-korporative/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/articles/",
+          "anchorIntent": "связанные статьи"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "sourceEvidence": "approved source snapshot + owner six-article approval; docs/review/canonical-release/source-manifest.json",
+      "aiVisibility": {
+        "aiSummary": "Unitree G1 на корпоративе стоит планировать не как один десятиминутный трюк, а как сценарий с несколькими появлениями. Робот может встретить гостей, выйти к сцене или трибуне, стать точкой притяжения на фуршете и попасть в финальный кадр. Важны ровная площадка, оператор, тайминг и заранее согласованные точки появления.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Сколько раз за мероприятие может появиться Unitree G1?",
+          "Может ли Unitree G1 заменить ведущего?",
+          "Нужна ли отдельная сцена для выхода робота?",
+          "Что если корпоратив идёт дольше активного времени робота?",
+          "Можно ли арендовать Unitree G1 без оператора?",
+          "Сколько стоит Unitree G1 на корпоратив?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Как робот-гуманоид Unitree G1 встраивается в корпоратив: встреча гостей, выход на сцену, фотозона, фуршет и финальное фото с оператором.",
+            "source": "approved_article_content"
+          }
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ],
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Сколько раз за мероприятие может появиться Unitree G1?",
+          "Может ли Unitree G1 заменить ведущего?",
+          "Нужна ли отдельная сцена для выхода робота?",
+          "Что если корпоратив идёт дольше активного времени робота?",
+          "Можно ли арендовать Unitree G1 без оператора?",
+          "Сколько стоит Unitree G1 на корпоратив?"
+        ],
+        "comparisonTargets": [],
+        "llmMarkdownPath": null
+      }
+    },
+    {
+      "slug": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "primaryKeyword": "как работает робот-гуманоид",
+      "secondaryKeywords": [
+        "робот гуманоид",
+        "робот гуманоид что умеет",
+        "робот Unitree G1",
+        "аренда робота гуманоида",
+        "робот гуманоид для мероприятия"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "title": "Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ",
+      "description": "Простое объяснение, как робот-гуманоид ходит, держит равновесие, видит людей и реагирует на команды — и что это значит для мероприятия.",
+      "h1": "Как работает робот-гуманоид простыми словами",
+      "h2Required": [
+        "Напишите нам в любом удобном мессенджере",
+        "Оставьте заявку",
+        "Что происходит внутри, когда гуманоид идёт к гостям"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ",
+      "ogDescription": "Простое объяснение, как робот-гуманоид ходит, держит равновесие, видит людей и реагирует на команды — и что это значит для мероприятия.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-articles/kak-rabotaet-robot-gumanoid-hero.webp",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "name": "Главная",
+          "url": "/"
+        },
+        {
+          "name": "Блог Кибер Гоши",
+          "url": "/articles/"
+        },
+        {
+          "name": "Как работает робот-гуманоид",
+          "url": "/preview/kiber-94/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/articles/",
+          "anchorIntent": "связанные статьи"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "sourceEvidence": "approved source snapshot + owner six-article approval; docs/review/canonical-release/source-manifest.json",
+      "aiVisibility": {
+        "aiSummary": "Робот-гуманоид работает как связка моторов, датчиков, компьютера управления и оператора: моторы двигают суставы, датчики помогают держать баланс и замечать людей, алгоритмы выбирают безопасное движение, а специалист КИБЕР ПОРТАЛ на площадке запускает сценарий и следит, чтобы робот стал понятным вау-моментом для гостей.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Робот-гуманоид сам ходит или им управляет оператор?",
+          "Почему роботу-гуманоиду нужен ровный пол?",
+          "Робот-гуманоид понимает речь гостей?",
+          "Чем гуманоид отличается от робота на колёсах?",
+          "Как выбрать робота-гуманоида для мероприятия?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Простое объяснение, как робот-гуманоид ходит, держит равновесие, видит людей и реагирует на команды — и что это значит для мероприятия.",
+            "source": "approved_article_content"
+          }
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ],
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Робот-гуманоид сам ходит или им управляет оператор?",
+          "Почему роботу-гуманоиду нужен ровный пол?",
+          "Робот-гуманоид понимает речь гостей?",
+          "Чем гуманоид отличается от робота на колёсах?",
+          "Как выбрать робота-гуманоида для мероприятия?"
+        ],
+        "comparisonTargets": [],
+        "llmMarkdownPath": null
+      }
+    },
+    {
+      "slug": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "primaryKeyword": "необычный подарок директору",
+      "secondaryKeywords": [
+        "подарок директору",
+        "оригинальный подарок директору",
+        "что подарить директору",
+        "подарок руководителю",
+        "робот в подарок",
+        "робот на день рождения"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "title": "Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ",
+      "description": "Как поздравить директора роботом-гуманоидом в кабинете или офисе: сценарий, подготовка, ограничения площадки и что обсудить с менеджером.",
+      "h1": "Необычный подарок директору — робот в кабинете вместо галстука",
+      "h2Required": [
+        "Напишите нам в любом удобном мессенджере",
+        "Оставьте заявку",
+        "Когда робот лучше галстука, набора ручек и сертификата"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ",
+      "ogDescription": "Как поздравить директора роботом-гуманоидом в кабинете или офисе: сценарий, подготовка, ограничения площадки и что обсудить с менеджером.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-articles/neobychnyi-podarok-direktoru-robot-hero.webp",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "name": "Главная",
+          "url": "/"
+        },
+        {
+          "name": "Блог Кибер Гоши",
+          "url": "/articles/"
+        },
+        {
+          "name": "Подарок директору — робот",
+          "url": "/preview/kiber-94/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/articles/",
+          "anchorIntent": "связанные статьи"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "sourceEvidence": "approved source snapshot + owner six-article approval; docs/review/canonical-release/source-manifest.json",
+      "aiVisibility": {
+        "aiSummary": "Робот в кабинете — это необычный подарок директору от коллектива, если нужен не сувенир на полку, а короткий постановочный вау-момент: поздравление, поклон, вручение подарка и видео для общего чата. Главное — заранее согласовать сценарий, ровную площадку, время выхода и сопровождение оператора.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли подарить директору робота-гуманоида прямо в кабинете?",
+          "Робота покупают или арендуют для такого подарка?",
+          "Что может сделать робот во время поздравления?",
+          "Сколько времени занимает поздравление директору роботом?",
+          "Можно ли сделать поздравление сюрпризом?",
+          "Какой робот подойдёт для подарка директору?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Как поздравить директора роботом-гуманоидом в кабинете или офисе: сценарий, подготовка, ограничения площадки и что обсудить с менеджером.",
+            "source": "approved_article_content"
+          }
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ],
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Можно ли подарить директору робота-гуманоида прямо в кабинете?",
+          "Робота покупают или арендуют для такого подарка?",
+          "Что может сделать робот во время поздравления?",
+          "Сколько времени занимает поздравление директору роботом?",
+          "Можно ли сделать поздравление сюрпризом?",
+          "Какой робот подойдёт для подарка директору?"
+        ],
+        "comparisonTargets": [],
+        "llmMarkdownPath": null
+      }
+    },
+    {
+      "slug": "/articles/sravnenie-unitree-g1-r1-h2/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/",
+      "primaryKeyword": "Unitree G1, R1 и H2 сравнение",
+      "secondaryKeywords": [
+        "Unitree G1",
+        "Unitree R1",
+        "Unitree H2",
+        "сравнение Unitree",
+        "робот Unitree G1",
+        "робот Unitree R1",
+        "робот Unitree H2"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "humanoid-articles",
+      "priority": "high",
+      "title": "Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ",
+      "description": "Сравниваем Unitree G1, R1 и H2 по размеру, автономности, характеру движения и роли на мероприятии — какую модель выбрать под площадку и сценарий.",
+      "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+      "h2Required": [
+        "Напишите нам в любом удобном мессенджере",
+        "Оставьте заявку",
+        "R1 — для динамики, G1 — для универсального сценария, H2 — для масштаба"
+      ],
+      "minUsefulTextChars": 300,
+      "ogTitle": "Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ",
+      "ogDescription": "Сравниваем Unitree G1, R1 и H2 по размеру, автономности, характеру движения и роли на мероприятии — какую модель выбрать под площадку и сценарий.",
+      "ogImage": "https://www.kiber-portal.ru/images/kiber-articles/unitree-g1-r1-h2-comparison-hero.webp",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "name": "Главная",
+          "url": "/"
+        },
+        {
+          "name": "Блог Кибер Гоши",
+          "url": "/articles/"
+        },
+        {
+          "name": "Unitree G1, R1 и H2",
+          "url": "/preview/kiber-94/articles/sravnenie-unitree-g1-r1-h2/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/articles/",
+          "anchorIntent": "связанные статьи"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "sourceEvidence": "approved source snapshot + owner six-article approval; docs/review/canonical-release/source-manifest.json",
+      "aiVisibility": {
+        "aiSummary": "Unitree R1 подходит для короткого динамичного выхода при наличии безопасной зоны; Unitree G1 — для универсального сценария с приветствием, жестами и фотозоной; Unitree H2 — для крупной сцены и полноразмерного визуального образа. Окончательный выбор зависит от площадки, тайминга и роли робота.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Чем Unitree R1 отличается от G1 и H2?",
+          "Какой Unitree выбрать для выставки?",
+          "Можно ли использовать H2 в небольшом помещении?",
+          "Сколько работают G1, R1 и H2 без подзарядки?",
+          "Нужен ли оператор для всех трёх моделей?",
+          "Можно ли арендовать сразу R1, G1 и H2?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Сравниваем Unitree G1, R1 и H2 по размеру, автономности, характеру движения и роли на мероприятии — какую модель выбрать под площадку и сценарий.",
+            "source": "approved_article_content"
+          }
+        ],
+        "relatedPages": [
+          "/roboty-gumanoidy/",
+          "/articles/"
+        ],
+        "schemaTypes": [
+          "BlogPosting",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "faqQuestions": [
+          "Чем Unitree R1 отличается от G1 и H2?",
+          "Какой Unitree выбрать для выставки?",
+          "Можно ли использовать H2 в небольшом помещении?",
+          "Сколько работают G1, R1 и H2 без подзарядки?",
+          "Нужен ли оператор для всех трёх моделей?",
+          "Можно ли арендовать сразу R1, G1 и H2?"
+        ],
+        "comparisonTargets": [],
+        "llmMarkdownPath": null
       }
     }
   ]

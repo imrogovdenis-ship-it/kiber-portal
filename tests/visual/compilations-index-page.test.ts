@@ -10,7 +10,7 @@ const qa = JSON.parse(readFileSync('data/review/full-site-visual-qa.json', 'utf8
 test('KIBER-91 compilations index is not a placeholder page', () => {
   assert.doesNotMatch(page, /Здесь будут сценарные подборки/);
   assert.match(page, /homeCompilations/);
-  assert.match(page, /compilationCards = homeCompilations\.cards\.slice\(0, 4\)/);
+  assert.match(page, /compilationCards = launchCompilations\.cards\.slice\(0, 4\)/);
   assert.match(page, /cardAnchors = \['roboty-gumanoidy', 'roboty-dlya-vystavok', 'roboty-sobaki', 'unitree'\]/);
   assert.match(page, /id=\{card\.id\}/);
   assert.match(page, /<section class="compilations-page__hero container"[\s\S]*<h1 id="page-title">Подборки роботов для аренды<\/h1>[\s\S]*<\/section>/);
@@ -24,7 +24,9 @@ test('KIBER-91 compilations index is not a placeholder page', () => {
   assert.match(page, /homeRobotCardFinalCta/);
   assert.match(page, /<HomeFinalCta \{\.\.\.homeRobotCardFinalCta\} variant="robot-card-final" \/>/);
   assert.match(page, /class="compilations-page__links-hidden"/);
-  assert.match(page, /<InternalLinks route="\/compilations\/" label="Внутренняя навигация" \/>/);
+  assert.doesNotMatch(page, /<InternalLinks/);
+  assert.match(page, /card\.disabled \? undefined/);
+  assert.match(page, /aria-disabled/);
   assert.doesNotMatch(page, /Следующие шаги/);
   assert.match(page, /compilations-page__hero[\s\S]*compilations-page__text[\s\S]*compilations-page__cards[\s\S]*compilations-page__cta/);
 });

@@ -1,7 +1,7 @@
 {
   "issue": "KIBER-51",
-  "generatedAt": "2026-09-06T13:52:35.681Z",
-  "launchRoutesChecked": 31,
+  "generatedAt": "2026-09-10T13:21:23.670Z",
+  "launchRoutesChecked": 35,
   "site": "https://www.kiber-portal.ru",
   "checks": [
     "canonical",
@@ -26,234 +26,286 @@
     },
     {
       "path": "/robots/arenda-agibot-x2/",
-      "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Agibot X2 для мероприятий",
+      "title": "Аренда Agibot X2 — робот-гуманоид для выставки и презентации | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Agibot X2",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-bellabot/",
-      "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-официанта BellaBot для мероприятий",
+      "title": "Аренда BellaBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-официанта BellaBot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-glambot/",
-      "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота GlamBot для мероприятий",
+      "title": "Аренда GlamBot для фото- и видеозон | КИБЕР ПОРТАЛ",
+      "h1": "Аренда GlamBot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-inchbot-l1-w-edu/",
-      "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Inchbot L1-W EDU для мероприятий",
+      "title": "Аренда Inchbot L1-W EDU — робот-собака для STEM и промо | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-собаки Inchbot L1-W EDU",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-kettybot/",
-      "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-официанта KettyBot для мероприятий",
+      "title": "Аренда KettyBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-официанта KettyBot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-klipmeiker/",
-      "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота Клипмейкер для мероприятий",
+      "title": "Аренда Клипмейкера — роботизированная камера для event-видео | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота Клипмейкер",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-mini-robo-kofeyni/",
-      "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "мини робо-кофейни для мероприятий",
+      "title": "Аренда мини Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда мини Robo-Кофейни",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-noetix-bumi/",
-      "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Noetix Bumi для мероприятий",
+      "title": "Аренда Noetix Bumi — компактный робот-гуманоид для интерактива | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Noetix Bumi",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-promobot-v4/",
-      "title": "Promobot V4 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Promobot V4 для мероприятий",
+      "title": "Аренда Promobot V4 — промо-робот для выставки и события | КИБЕР ПОРТАЛ",
+      "h1": "Аренда Promobot V4",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-robo-kofeyni/",
-      "title": "робота-кофейни для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-кофейни для мероприятий",
+      "title": "Аренда Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда Robo-Кофейни",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-roboshashki/",
-      "title": "робота для игры в шашки для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота для игры в шашки для мероприятий",
+      "title": "Аренда Робошашек — игровой робот для стенда и интерактива | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота для игры в шашки",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-robot-barmen/",
-      "title": "робота-бармена «Робобар» для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-бармена «Робобар» для мероприятий",
+      "title": "Аренда робота-бармена «Робобар» для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робот-бармен «Робобар»",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-robota-ardi/",
-      "title": "робота Арди для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота Арди для мероприятий",
+      "title": "Аренда робота Арди — интерактивный робот для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота Арди",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-robota-hudozhnika-a4/",
-      "title": "большого формата для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "большого формата для мероприятий",
+      "title": "Аренда робота-художника A4 для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-художника A4",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-robota-sofiya/",
-      "title": "робота София для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота София для мероприятий",
+      "title": "Аренда робота София — гуманоид для презентации и события | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота София",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-robota-tron/",
-      "title": "модульного робота Tron для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "модульного робота Tron для мероприятий",
+      "title": "Аренда Tron — модульный робот для мероприятия и шоу | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота Tron",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-senserobot/",
-      "title": "робота-шахматиста SenseRobot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-шахматиста SenseRobot для мероприятий",
+      "title": "Аренда SenseRobot — робот-шахматист для мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-шахматиста SenseRobot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-sketchbot/",
-      "title": "Sketchbot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Sketchbot для мероприятий",
+      "title": "Аренда робота-художника Sketchbot для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда Sketchbot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-unitree-g1/",
-      "title": "Unitree G1 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Unitree G1 для мероприятий",
+      "title": "Аренда Unitree G1 — робот-гуманоид для мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Unitree G1",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-unitree-go2/",
-      "title": "Unitree Go2 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Unitree Go2 для мероприятий",
+      "title": "Аренда Unitree Go2 — робот-собака для мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-собаки Unitree Go2",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-unitree-h2/",
-      "title": "Unitree H2 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Unitree H2 для мероприятий",
+      "title": "Аренда Unitree H2 — человекоподобный робот для шоу и презентации | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Unitree H2",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-unitree-r1/",
-      "title": "Unitree R1 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Unitree R1 для мероприятий",
+      "title": "Аренда Unitree R1 — робот-гуманоид для мероприятия и стенда | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Unitree R1",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-uv-box/",
-      "title": "интерактивной витрины UV-BOX для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "интерактивной витрины UV-BOX для мероприятий",
+      "title": "Аренда UV-BOX — интерактивная витрина для презентации продукта | КИБЕР ПОРТАЛ",
+      "h1": "Аренда интерактивной витрины UV-BOX",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/robots/arenda-xiaomi-cyberdog-2/",
-      "title": "Xiaomi Cyberdog 2 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Xiaomi Cyberdog 2 для мероприятий",
+      "title": "Аренда Xiaomi CyberDog 2 — робот-собака для шоу и промо | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-собаки Xiaomi CyberDog 2",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "path": "/roboty-gumanoidy/",
-      "title": "Роботы-гуманоиды в аренду — КИБЕР ПОРТАЛ",
-      "h1": "Роботы-гуманоиды, которые держат внимание",
+      "title": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида для мероприятий",
       "jsonLdTypes": [
-        "CollectionPage"
-      ]
-    },
-    {
-      "path": "/roboty-sobaki/",
-      "title": "Роботы-собаки в аренду — КИБЕР ПОРТАЛ",
-      "h1": "Роботы-собаки для событий и промо",
-      "jsonLdTypes": [
-        "CollectionPage"
+        "VideoObject",
+        "VideoObject",
+        "VideoObject",
+        "VideoObject",
+        "VideoObject",
+        "VideoObject",
+        "VideoObject",
+        "VideoObject",
+        "CollectionPage",
+        "BreadcrumbList",
+        "FAQPage",
+        "ItemList",
+        "BreadcrumbList"
       ]
     },
     {
@@ -273,19 +325,77 @@
       ]
     },
     {
-      "path": "/news/",
-      "title": "Новости робототехники — КИБЕР ПОРТАЛ",
-      "h1": "Новости",
-      "jsonLdTypes": [
-        "CollectionPage"
-      ]
-    },
-    {
       "path": "/contacts/",
       "title": "Контакты — КИБЕР ПОРТАЛ",
       "h1": "Контакты и заявка на робота",
       "jsonLdTypes": [
         "ContactPage"
+      ]
+    },
+    {
+      "path": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "title": "Unitree G1 или Agibot X2 — какого робота-гуманоида выбрать | КИБЕР ПОРТАЛ",
+      "h1": "Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+      "title": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей | КИБЕР ПОРТАЛ",
+      "h1": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/unitree-g1-na-korporative/",
+      "title": "Unitree G1 на корпоративе — разбор сценария | КИБЕР ПОРТАЛ",
+      "h1": "Unitree G1 на корпоративе — разбор сценария",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+      "title": "Preview: Как работает робот-гуманоид простыми словами | КИБЕР ПОРТАЛ",
+      "h1": "Как работает робот-гуманоид простыми словами",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+      "title": "Preview: Необычный подарок директору: робот вместо галстука | КИБЕР ПОРТАЛ",
+      "h1": "Необычный подарок директору — робот в кабинете вместо галстука",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
+      ]
+    },
+    {
+      "path": "/articles/sravnenie-unitree-g1-r1-h2/",
+      "title": "Unitree G1, R1 и H2: сравнение для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+      "jsonLdTypes": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage",
+        "BreadcrumbList"
       ]
     }
   ],

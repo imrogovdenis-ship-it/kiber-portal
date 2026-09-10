@@ -19,7 +19,7 @@ const approvedHomeLinkIdByHref: Record<string, string> = {
   </div>
   <div class="home-image-cards__grid" data-drag-slider={variant === 'overlay' ? 'true' : undefined} aria-label={variant === 'overlay' ? `${title}: горизонтальный слайдер` : undefined}>
     {cards.map((card) => { const CardTag = card.disabled ? 'div' : 'a'; return (
-      <CardTag class="home-image-cards__card" aria-disabled={card.disabled ? "true" : undefined} href={card.disabled ? undefined : (reviewLinksAreEnabled ? reviewHref(card.originalHref ?? card.href) : card.href)} aria-label={`${variant === 'article' ? 'Открыть' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
+      <CardTag class="home-image-cards__card" aria-disabled={card.disabled ? "true" : undefined} href={card.disabled ? undefined : (reviewLinksAreEnabled ? reviewHref(card.originalHref ?? card.href) : card.href)} aria-label={`${variant === 'article' ? 'Открыть' : (card.cta ?? 'Подробнее')}: ${card.title}`} data-internal-link-id={id === 'compilations' && Astro.url.pathname === '/' ? approvedHomeLinkIdByHref[card.href] : undefined} style={`--home-card-image: url('${card.image.src}')`} draggable={variant === 'overlay' ? 'false' : undefined}>
         <span class="home-image-cards__body">
           <strong>{card.title}</strong>
           <span>{card.description}</span>

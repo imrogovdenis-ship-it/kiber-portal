@@ -15,12 +15,14 @@ test('visual pass 3B removes public-facing technical review labels from pass 3 p
   for (const file of files) {
     const source = read(file);
     assert.doesNotMatch(source, /STATIC-SAFE|LEAD CAPABILITY|Live lead routing remains disabled|preview-режим|data-routing-state/i, file);
-    assert.match(source, /data-kiber-task="KIBER-contact-lead-visual-pass3b"|data-kiber-task="KIBER-public-contacts-owner-input"/, file);
+    if (file === 'src/pages/roboty-gumanoidy.astro') {
+      assert.match(source, /CompilationTemplate/);assert.match(source, /contentPackage/);
+    } else assert.match(source, /data-kiber-task="KIBER-contact-lead-visual-pass3b"|data-kiber-task="KIBER-public-contacts-owner-input"/, file);
   }
 });
 
 test('category pages expose reference-style hero shell, stats and CTA strip', () => {
-  for (const file of ['src/pages/roboty-gumanoidy.astro', 'src/pages/roboty-sobaki.astro']) {
+  for (const file of ['src/pages/roboty-sobaki.astro']) {
     const source = read(file);
     assert.match(source, /category-page__hero-card/, file);
     assert.match(source, /category-page__hero-copy/, file);

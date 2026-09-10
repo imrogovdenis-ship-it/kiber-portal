@@ -60,11 +60,13 @@ const cssBundle = builtCssBundle();
 assertIncludes(cssBundle, '--kp-reference-blue:', 'built CSS');
 
 const robot = read(resolve(distRoot, 'robots/arenda-unitree-g1/index.html'));
-assertIncludes(robot, 'robot-page__hero', 'robot page');
-assertIncludes(robot, 'data-rv="11"', 'robot page');
-assertIncludes(robot, 'robot-page__price', 'robot page');
-assertIncludes(robot, 'robot-page__media', 'robot page');
-assertIncludes(robot, 'Не является публичной офертой', 'robot page prior pricing guard');
+assertIncludes(robot, 'template-live-hero', 'robot page');
+assertIncludes(robot, 'data-block-id="hero"', 'robot page');
+assertIncludes(robot, 'template-live-hero__price-actions', 'robot page');
+assertIncludes(robot, 'template-live-hero__media', 'robot page');
+assertIncludes(robot, 'href="/terms/"', 'robot page approved legal link');
+const robotRecord = JSON.parse(read(resolve(root, 'src/content/robots.generated.json'))).robots.find(r => r.slug === 'arenda-unitree-g1');
+assert.equal(robotRecord.pricing.public_offer, false, 'approved pricing stays non-offer');
 
 for (const route of ['contacts/index.html', 'lead/request/index.html']) {
   const html = read(resolve(distRoot, route));

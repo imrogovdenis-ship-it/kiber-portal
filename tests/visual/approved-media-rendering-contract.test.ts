@@ -18,6 +18,6 @@ test('approved media rendering smoke checks rendered robot pages against owner-a
   assert.match(script, /media-rights-robot-cards\.json/);
   assert.match(script, /dist\/robots/);
   assert.match(script, /approved_for_production/);
-  assert.match(script, /robot-page__media/);
+  assert.match(script, /template-live-hero__media/);
   assert.match(script, /robot-card__image/);
 });

@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ArticleBlocksTemplate from '../../../components/templates/ApprovedArticle2.astro';
 import { type ArticleRobotCard } from '../../../lib/approved-article-2-types';
 import { buildHumanoidChoiceArticle, humanoidChoiceArticleSlugs } from '../../../lib/kiber94-article-humanoid-choice-data';
-import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../lib/seo';
+import { breadcrumbJsonLd, faqPageJsonLd, blogPostingJsonLd } from '../../../lib/seo';
 import { getRobotPageBySlug } from '../../../lib/robot-pages';
 
 const robotCards: ArticleRobotCard[] = humanoidChoiceArticleSlugs
@@ -32,7 +32,7 @@ const template = buildHumanoidChoiceArticle(robotCards);
   noindex={false}
   breadcrumbs={template.breadcrumbs}
   jsonLd={[
-    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    blogPostingJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical, image: template.hero.image.src }),
     breadcrumbJsonLd(template.breadcrumbs),
     faqPageJsonLd({ items: template.faq.items }),
   ]}

@@ -1,6 +1,6 @@
 {
   "issue": "KIBER-45",
-  "generatedAt": "2026-09-06T13:52:38.115Z",
+  "generatedAt": "2026-09-10T13:21:26.719Z",
   "sourceRobots": 24,
   "generatedRobots": 24,
   "renderedRobotPages": 24,
@@ -12,80 +12,96 @@
     {
       "slug": "arenda-agibot-x2",
       "route": "/robots/arenda-agibot-x2/",
-      "title": "Agibot X2 для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Agibot X2 для мероприятий",
+      "title": "Аренда Agibot X2 — робот-гуманоид для выставки и презентации | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Agibot X2",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-bellabot",
       "route": "/robots/arenda-bellabot/",
-      "title": "робота-официанта BellaBot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-официанта BellaBot для мероприятий",
+      "title": "Аренда BellaBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-официанта BellaBot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-glambot",
       "route": "/robots/arenda-glambot/",
-      "title": "робота GlamBot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота GlamBot для мероприятий",
+      "title": "Аренда GlamBot для фото- и видеозон | КИБЕР ПОРТАЛ",
+      "h1": "Аренда GlamBot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-inchbot-l1-w-edu",
       "route": "/robots/arenda-inchbot-l1-w-edu/",
-      "title": "Inchbot L1-W EDU для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Inchbot L1-W EDU для мероприятий",
+      "title": "Аренда Inchbot L1-W EDU — робот-собака для STEM и промо | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-собаки Inchbot L1-W EDU",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-kettybot",
       "route": "/robots/arenda-kettybot/",
-      "title": "робота-официанта KettyBot для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота-официанта KettyBot для мероприятий",
+      "title": "Аренда KettyBot — робот-официант для ресторана и мероприятия | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-официанта KettyBot",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-klipmeiker",
       "route": "/robots/arenda-klipmeiker/",
-      "title": "робота Клипмейкер для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "робота Клипмейкер для мероприятий",
+      "title": "Аренда Клипмейкера — роботизированная камера для event-видео | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота Клипмейкер",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-mini-robo-kofeyni",
       "route": "/robots/arenda-mini-robo-kofeyni/",
-      "title": "мини робо-кофейни для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "мини робо-кофейни для мероприятий",
+      "title": "Аренда мини Robo-Кофейни для мероприятий | КИБЕР ПОРТАЛ",
+      "h1": "Аренда мини Robo-Кофейни",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     },
     {
       "slug": "arenda-noetix-bumi",
       "route": "/robots/arenda-noetix-bumi/",
-      "title": "Noetix Bumi для мероприятий — КИБЕР ПОРТАЛ",
-      "h1": "Noetix Bumi для мероприятий",
+      "title": "Аренда Noetix Bumi — компактный робот-гуманоид для интерактива | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-гуманоида Noetix Bumi",
       "jsonLdTypes": [
         "Service",
+        "BreadcrumbList",
+        "FAQPage",
         "BreadcrumbList"
       ]
     }

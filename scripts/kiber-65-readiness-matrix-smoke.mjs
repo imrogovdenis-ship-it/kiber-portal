@@ -75,9 +75,11 @@ const routes = launch.routes || [];
 const robotRoutes = routes.filter((route) => route.path?.startsWith('/robots/'));
 const sitemapRoutes = routes.filter((route) => route.sitemap === true);
 const sitemap = read('dist/sitemap.xml');
-if (routes.length !== 37) failures.push(`expected 37 launch routes, got ${routes.length}`);
+const expectedRoutes = json('docs/review/canonical-release/route-pairs.json');
+for (const [canonical] of expectedRoutes) if (!routes.some(r => r.path === canonical)) failures.push(`approved launch detail route missing: ${canonical}`);
 if (robotRoutes.length !== 24) failures.push(`expected 24 robot routes, got ${robotRoutes.length}`);
-if ((sitemap.match(/<loc>/g) || []).length !== 31) failures.push('expected 31 sitemap <loc> entries');
+if ((sitemap.match(/<loc>/g) || []).length !== sitemapRoutes.length) failures.push('sitemap count differs from controlled registry');
+if (routes.filter(r => r.template === 'article-detail' && r.sitemap).length !== 6) failures.push('six approved article routes required');
 for (const route of sitemapRoutes) {
   const loc = `${launch.site.replace(/\/$/, '')}${route.path}`;
   if (!sitemap.includes(`<loc>${loc}</loc>`)) failures.push(`sitemap missing ${loc}`);

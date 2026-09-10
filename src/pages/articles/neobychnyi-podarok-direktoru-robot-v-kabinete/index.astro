@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ArticleBlocksTemplate from '../../../components/templates/ApprovedArticle5.astro';
 import { type ArticleRobotCard } from '../../../lib/approved-article-5-types';
 import { buildRobotGiftDirectorArticle } from '../../../lib/kiber94-article-robot-gift-director-data';
-import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../lib/seo';
+import { breadcrumbJsonLd, faqPageJsonLd, blogPostingJsonLd } from '../../../lib/seo';
 import { getRobotPageBySlug } from '../../../lib/robot-pages';
 
 const slugs = ['arenda-unitree-g1', 'arenda-robota-sofiya', 'arenda-unitree-r1', 'arenda-agibot-x2'];
@@ -53,7 +53,7 @@ const template = buildRobotGiftDirectorArticle(robotCards);
   noindex={false}
   breadcrumbs={template.breadcrumbs}
   jsonLd={[
-    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    blogPostingJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical, image: template.hero.image.src }),
     breadcrumbJsonLd(template.breadcrumbs),
     faqPageJsonLd({ items: template.faq.items }),
   ]}

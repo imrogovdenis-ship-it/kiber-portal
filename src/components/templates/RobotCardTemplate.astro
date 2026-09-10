@@ -1,4 +1,5 @@
 ---
+import { robotImageDimensions } from '../../lib/robot-image-dimensions';
 import { reviewRobotPreviewHref } from '../../lib/review-links';
 import type { RobotCardTemplateData } from '../../lib/page-type-templates';
 import RobotCard from '../blocks/RobotCard.astro';
@@ -286,7 +287,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
     </div>
     {heroImage && (
       <figure class="template-live-hero__media">
-        <img src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" />
+        <img {...robotImageDimensions(heroImage.src)} src={heroImage.src} alt={heroImage.alt} loading="eager" decoding="async" />
       </figure>
     )}
   </section>
@@ -311,7 +312,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
     <div class="template-drag-gallery template-live-gallery__strip" data-drag-slider="robot-gallery" aria-label={`Галерея ${robotDisplayName}: горизонтальный слайдер`}>
       {primaryGallery.map((image, index) => (
         <figure class="template-live-gallery__item">
-          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+          <img {...robotImageDimensions(image.src)} src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
         </figure>
       ))}
     </div>
@@ -335,7 +336,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
         <article>
-          {capabilityImages[index] && <img src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}
+          {capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}
           <h3>{item.title ?? item.text}</h3>
           <p>{item.text}</p>
         </article>
@@ -370,7 +371,7 @@ const robotCatalogDescription = 'Похожие форматы помогают 
     <div class="template-drag-gallery template-action-gallery__strip" data-drag-slider="robot-action-gallery" aria-label={`${robotDisplayName} в действии: горизонтальный слайдер`}>
       {actionGallery.map((image) => (
         <figure>
-          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
+          <img {...robotImageDimensions(image.src)} src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
         </figure>
       ))}
     </div>

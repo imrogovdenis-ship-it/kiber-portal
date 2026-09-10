@@ -3,7 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ArticleBlocksTemplate from '../../../components/templates/ApprovedArticle4.astro';
 import { type ArticleRobotCard } from '../../../lib/approved-article-4-types';
 import { buildHowHumanoidWorksArticle } from '../../../lib/kiber94-article-how-humanoid-works-data';
-import { breadcrumbJsonLd, faqPageJsonLd, webPageJsonLd } from '../../../lib/seo';
+import { breadcrumbJsonLd, faqPageJsonLd, blogPostingJsonLd } from '../../../lib/seo';
 import { getRobotPageBySlug } from '../../../lib/robot-pages';
 
 const slugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-unitree-r1', 'arenda-unitree-h2'];
@@ -53,7 +53,7 @@ const template = buildHowHumanoidWorksArticle(robotCards);
   noindex={false}
   breadcrumbs={template.breadcrumbs}
   jsonLd={[
-    webPageJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical }),
+    blogPostingJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical, image: template.hero.image.src }),
     breadcrumbJsonLd(template.breadcrumbs),
     faqPageJsonLd({ items: template.faq.items }),
   ]}

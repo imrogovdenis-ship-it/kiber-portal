@@ -9,8 +9,10 @@ const data = readFileSync('src/lib/kiber94-compilation-template-data.ts', 'utf8'
 test('KIBER-94 compilation preview route is preview-only and uses reusable template', () => {
   assert.match(route, /noindex=\{true\}/);
   assert.match(route, /<CompilationTemplate \{template\} \/>/);
-  assert.match(route, /buildHumanoidCompilationTemplate/);
-  assert.match(route, /getRobotPages\(\)\.filter\(\(robot\) => robot\.category === 'humanoid'\)/);
+  assert.match(route, /contentPackage/);
+  assert.match(route, /compilation-humanoids\.json/);
+  const content = JSON.parse(readFileSync('data/content/compilation-humanoids.json','utf8'));
+  assert.equal(content.blocks.catalog.robots.length,7);
   assert.match(route, /collectionPageJsonLd/);
   assert.match(route, /faqPageJsonLd/);
 });
@@ -20,9 +22,9 @@ test('KIBER-94 compilation template combines old source block order with approve
   assert.match(component, /data-template-status="draft_for_owner_review"/);
   assert.match(component, /humanoid-template h1 \{ max-width: 14ch; font-size: clamp\(2\.5rem, 5vw, 5\.25rem\); line-height: 1; \}/);
   assert.doesNotMatch(component, /humanoid-template h1 \{ font-size: clamp\(2\.85rem|humanoid-template h1 \{ font-size: clamp\(3rem/);
-  assert.match(component, /data-block-id="hero"[\s\S]*data-block-id="intro"[\s\S]*data-block-id="introGosha"[\s\S]*data-block-id="gallery"[\s\S]*data-block-id="choiceGuide"[\s\S]*data-block-id="video"[\s\S]*data-block-id="scenarioExplanation"[\s\S]*data-block-id="goshaConclusion"[\s\S]*data-block-id="faq"[\s\S]*data-block-id="cta2"[\s\S]*data-block-id="catalogBlock"[\s\S]*data-block-id="relatedArticles"[\s\S]*data-block-id="otherCompilations"/);
+  assert.match(component, /data-block-id="hero"[\s\S]*data-block-id="intro"[\s\S]*data-block-id="introGosha"[\s\S]*data-block-id="gallery"[\s\S]*data-block-id="explanation"[\s\S]*data-block-id="video"[\s\S]*data-block-id="choiceGuide"[\s\S]*data-block-id="scenarioExplanation"[\s\S]*data-block-id="goshaConclusion"[\s\S]*data-block-id="faq"[\s\S]*data-block-id="cta2"[\s\S]*data-block-id="catalogBlock"[\s\S]*data-block-id="relatedArticles"[\s\S]*data-block-id="otherCompilations"/);
   assert.match(component, /HomeGoshaQuote/);
-  assert.match(component, /<HomeGoshaQuote \{\.\.\.template\.conclusionGosha\} \/>/);
+  assert.match(component, /<HomeGoshaQuote \{\.\.\.template\.conclusionGosha\} id="kiber-gosha-conclusion" \/>/);
   assert.doesNotMatch(component, /humanoid-template__conclusion-card/);
   assert.match(component, /HomeFaqBlock/);
   assert.match(component, /HomeFinalCta/);
@@ -59,19 +61,13 @@ test('KIBER-94 compilation template combines old source block order with approve
   assert.match(component, /humanoid-template__gallery-strip \{ padding: 0 max\(var\(--kp-reference-page-gutter\), calc\(\(100vw - var\(--kp-reference-container\)\) \/ 2\)\) \.4rem; \}/);
 });
 
-test('KIBER-94 humanoid compilation data includes SEO and AI search layer without replacing robot cards', () => {
-  assert.doesNotMatch(data, /humanoid-compilation-hero-group\.webp/);
-  assert.match(data, /галерея должна сразу показать масштаб, пластику, мимику и сценическое присутствие гуманоидов/);
-  assert.doesNotMatch(data, /5 моделей в подборке|ориентир за час|1 оператор/);
-  assert.match(data, /Подборка \/ роботы-гуманоиды/);
-  assert.match(data, /Каталог роботов/);
-  assert.match(data, /conclusionGosha:/);
-  assert.match(data, /primaryKeyword:\s*'аренда робота-гуманоида'/);
-  assert.match(data, /secondaryKeywords:[\s\S]*прокат робота-гуманоида[\s\S]*робот-гуманоид на мероприятие[\s\S]*аренда человекоподобного робота/s);
-  assert.match(data, /Эта сборка нужна как SEO-хаб и как понятная витрина выбора/);
-  assert.match(data, /Сборка не заменяет карточку робота/);
-  assert.match(data, /Кибер Гоша/);
-  assert.match(data, /homeRobotCardFinalCta/);
-  assert.match(data, /Фотографии гуманоидных роботов на мероприятиях/);
-  assert.match(data, /Как гуманоид выглядит в деле/);
+test('approved compilation package has category SEO, local media and native players',()=>{
+ const p=JSON.parse(readFileSync('data/content/compilation-humanoids.json','utf8'));
+ assert.equal(p.blocks.seo.canonical,'/roboty-gumanoidy/');
+ assert.equal(p.blocks.catalog.robots.length,7);assert.equal(p.blocks.scenarioVideoIds.length,7);
+ assert.equal(p.blocks.relatedArticles.cards.length,6);assert.equal(p.blocks.showOtherCompilations,true);
+ assert.ok(p.blocks.explanation.title.includes('Что такое робот-гуманоид'));
+ assert.match(component,/clickToLoad=\{false\} playLink=\{undefined\}/);
+ assert.match(component,/aspect-ratio: 4 \/ 3/);
+ assert.doesNotMatch(JSON.stringify(p.blocks),/Сборка не заменяет|SEO-хаб|Как на live/);
 });

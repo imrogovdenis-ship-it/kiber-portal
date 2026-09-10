@@ -46,7 +46,8 @@ test('KIBER-45 keeps one unified RobotPage template and exposes rendered validat
   const robotPage = readFileSync(robotPagePath, 'utf8');
   assert.match(robotPage, /getRobotPages\(/, 'RobotPage should consume normalized generated robot records');
   assert.doesNotMatch(robotPage, /isUnitree/, 'template must not special-case Unitree G1');
-  assert.match(robotPage, /data-kiber-task="KIBER-45"/);
+  assert.match(robotPage, /<RobotCardTemplate \{template\} \/>/);
+  assert.match(robotPage, /toRobotCardTemplateData\(robot\)/);
   assert.match(robotPage, /data-robot-slug=\{robot\.slug\}/);
 
   const pkg = readJson(resolve(root, 'package.json'));

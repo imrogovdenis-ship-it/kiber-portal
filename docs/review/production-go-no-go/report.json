@@ -2,10 +2,10 @@
   "issue": "KIBER-production-go-no-go",
   "status": "passed_with_no_go_blockers",
   "decision": "NO_GO",
-  "branch": "hermes/kiber-full-site-visual-qa-20260901",
-  "head": "17c57f65943f",
+  "branch": "feat/canonical-approved-release",
+  "head": "e402286fa1b1",
   "blockers": 4,
-  "routesChecked": 37,
+  "routesChecked": 43,
   "robotRoutesChecked": 24,
   "openPullRequests": [
     14,
@@ -14,5 +14,5 @@
     10,
     8
   ],
-  "generatedAt": "2026-09-06T13:52:52.319Z"
+  "generatedAt": "2026-09-10T13:21:41.376Z"
 }
