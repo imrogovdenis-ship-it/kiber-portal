@@ -2,6 +2,8 @@
   const pageX = (event, fallback) => ('touches' in event ? (event.touches[0]?.pageX ?? fallback) : event.pageX);
 
   document.querySelectorAll('[data-drag-slider="true"]').forEach((slider) => {
+    if (slider.dataset.dragReady) return;
+    slider.dataset.dragReady = 'true';
     let isDown = false;
     let startX = 0;
     let startScroll = 0;
@@ -36,12 +38,10 @@
       slider.classList.remove('is-dragging');
     };
 
+    slider.addEventListener('touchstart', () => { moved = 0; }, { passive: true });
     slider.addEventListener('mousedown', start);
     window.addEventListener('mousemove', move, { passive: false });
     window.addEventListener('mouseup', stop);
-    slider.addEventListener('touchstart', start, { passive: false });
-    window.addEventListener('touchmove', move, { passive: false });
-    window.addEventListener('touchend', stop);
     slider.addEventListener('contextmenu', (event) => event.preventDefault());
     slider.addEventListener('click', (event) => {
       if (moved > 5) {

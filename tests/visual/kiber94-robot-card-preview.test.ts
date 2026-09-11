@@ -181,7 +181,7 @@ test('KIBER-94 desktop gallery behavior uses a CSP-safe external script based on
   assert.match(desktopReference, /slider\.scrollLeft=startScroll-dx/);
   assert.match(desktopReference, /document\.querySelectorAll\('\[data-slider-next\]'\)/);
 
-  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
+  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js\?v=mobile-shared-1" defer><\/script>/);
   assert.doesNotMatch(componentSource, /document\.querySelectorAll<HTMLElement>\('\[data-drag-slider\^="robot-"\]'\)/);
   assert.match(scriptSource, /document\.querySelectorAll\('\[data-drag-slider\]'\)/);
   assert.match(scriptSource, /slider\.addEventListener\('mousedown'/);
@@ -233,7 +233,7 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
-  assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
+  assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{robotSlug === 'arenda-robota-ardi' \? 'Арди' : template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
   assert.match(componentSource, /const quickCtaNoWrap = template\.robot\.priceDisplay/);
   assert.match(componentSource, /titleNoWrap: quickCtaNoWrap/);
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp'/);
@@ -463,7 +463,7 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /\.template-live-gallery__item,[\s\S]*background:\s*transparent/);
   assert.match(componentSource, /flex:\s*0 0 auto/);
   const robotGalleryScript = readFileSync(robotGalleryScriptPath, 'utf8');
-  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
+  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js\?v=mobile-shared-1" defer><\/script>/);
   assert.match(robotGalleryScript, /mousedown/);
   assert.match(robotGalleryScript, /window\.addEventListener\('mousemove'/);
   assert.match(robotGalleryScript, /window\.addEventListener\('mouseup'/);

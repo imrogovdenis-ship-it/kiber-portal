@@ -1,0 +1,31 @@
+{
+  "status": "preview candidate; owner acceptance pending",
+  "preview": "https://jino-preview.kiber-portal.ru/",
+  "check": "0 errors, 0 warnings, 16 hints",
+  "targeted_tests": 40,
+  "live_geometry": {
+    "cases": 35,
+    "failures": []
+  },
+  "live_touch": {
+    "cases": 8,
+    "failures": []
+  },
+  "predeploy_all_robot_templates": {
+    "models": 24,
+    "failures": []
+  },
+  "predeploy_desktop_mouse_and_arrows": {
+    "cases": 2,
+    "failures": []
+  },
+  "tablet_desktop_geometry_parity": {
+    "cases": 12,
+    "failures": []
+  },
+  "deployed_bytes_verified": 46,
+  "html_scope": 43,
+  "hosted_ci": "not yet checked",
+  "new_ci_gate": "PASS: geometry 35, touch 8, all robot templates 24, desktop controls 2",
+  "stylesheet_cache_version": "mobile-shared-2"
+}

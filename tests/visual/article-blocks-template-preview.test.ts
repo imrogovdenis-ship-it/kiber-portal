@@ -58,7 +58,7 @@ test('KIBER-94 article template includes full live-derived block library', () =>
   assert.doesNotMatch(component, /article-blocks h2 \{[^{]*font-size: clamp\(2\.35rem/);
   assert.match(component, /const gallerySliderId = content\?\.gallery\?\.sliderId \?\? 'robot-article-compilation-gallery'/);
   assert.match(component, /data-drag-slider=\{gallerySliderId\}/);
-  assert.match(component, /script is:inline src="\/scripts\/robot-card-gallery\.js" defer/);
+  assert.match(component, /script is:inline src="\/scripts\/robot-card-gallery\.js\?v=mobile-shared-1" defer/);
   assert.match(component, /humanoid-template__drag-gallery humanoid-template__gallery-strip/);
   assert.match(component, /humanoid-template__gallery-item/);
   assert.match(component, /humanoid-template__gallery-strip \{ padding: 0 max\(var\(--kp-reference-page-gutter\), calc\(\(100vw - var\(--kp-reference-container\)\) \/ 2\)\) \.4rem; \}/);

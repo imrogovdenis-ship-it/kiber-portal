@@ -38,6 +38,7 @@ const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
     {jsonLdItems.map((item) => <script type="application/ld+json" is:inline set:html={JSON.stringify(item)} />)}
     <slot name="head" />
     {["/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/", "/articles/unitree-g1-na-korporative/", "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/", "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/", "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/", "/articles/sravnenie-unitree-g1-r1-h2/"].includes(Astro.url.pathname) && <link rel="stylesheet" href="/styles/article-review-rhythm-v1.css" />}
+    <link rel="stylesheet" href="/styles/mobile-shared-contract-v1.css?v=mobile-shared-2" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">К основному содержимому</a>
