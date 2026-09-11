@@ -1,0 +1,545 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "slug": "arenda-unitree-r1",
+      "data": [
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 348.59375,
+          "headingY": 568.09375,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 840.8125,
+          "headingY": 1060.3125,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 1359.421875,
+          "headingY": 1578.921875,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 1851.640625,
+          "headingY": 2071.140625,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 2343.859375,
+          "headingY": 2563.359375,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 2809.6875,
+          "headingY": 3029.1875,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "slug": "arenda-unitree-h2",
+      "data": [
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 348.34375,
+          "headingY": 567.84375,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 840.5625,
+          "headingY": 1060.0625,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 1359.171875,
+          "headingY": 1578.671875,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 1825,
+          "headingY": 2044.5,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 2343.609375,
+          "headingY": 2563.109375,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 2835.828125,
+          "headingY": 3055.328125,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "slug": "arenda-unitree-g1",
+      "data": [
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 347.953125,
+          "headingY": 567.453125,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 813.78125,
+          "headingY": 1033.28125,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 1306,
+          "headingY": 1525.5,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 1771.828125,
+          "headingY": 1991.328125,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 2237.65625,
+          "headingY": 2457.15625,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 361.78125,
+          "h": 203.5,
+          "y": 2756.265625,
+          "headingY": 2975.765625,
+          "cardWidth": 361.78125,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "slug": "arenda-unitree-r1",
+      "data": [
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 349.75,
+          "headingY": 566,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 349.75,
+          "headingY": 566,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 865.109375,
+          "headingY": 1081.359375,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 865.109375,
+          "headingY": 1081.359375,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 1354.078125,
+          "headingY": 1570.328125,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 1354.078125,
+          "headingY": 1570.328125,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "slug": "arenda-unitree-h2",
+      "data": [
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 349.75,
+          "headingY": 566,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 349.75,
+          "headingY": 566,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 865.109375,
+          "headingY": 1081.359375,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 865.109375,
+          "headingY": 1081.359375,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 1380.46875,
+          "headingY": 1596.71875,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 1380.46875,
+          "headingY": 1596.71875,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "slug": "arenda-unitree-g1",
+      "data": [
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 349.75,
+          "headingY": 566,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 349.75,
+          "headingY": 566,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 838.71875,
+          "headingY": 1054.96875,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 838.71875,
+          "headingY": 1054.96875,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 1301.296875,
+          "headingY": 1517.546875,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 356,
+          "h": 200.25,
+          "y": 1301.296875,
+          "headingY": 1517.546875,
+          "cardWidth": 356,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "slug": "arenda-unitree-r1",
+      "data": [
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 334.234375,
+          "headingY": 582.71875,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 334.234375,
+          "headingY": 582.71875,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.34375,
+          "h": 232.5,
+          "y": 334.234375,
+          "headingY": 582.734375,
+          "cardWidth": 413.34375,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 847.453125,
+          "headingY": 1095.9375,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 847.453125,
+          "headingY": 1095.9375,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.34375,
+          "h": 232.5,
+          "y": 847.453125,
+          "headingY": 1095.953125,
+          "cardWidth": 413.34375,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "slug": "arenda-unitree-h2",
+      "data": [
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 333.625,
+          "headingY": 582.109375,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 333.625,
+          "headingY": 582.109375,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.34375,
+          "h": 232.5,
+          "y": 333.625,
+          "headingY": 582.125,
+          "cardWidth": 413.34375,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 873.21875,
+          "headingY": 1121.703125,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 873.21875,
+          "headingY": 1121.703125,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.34375,
+          "h": 232.5,
+          "y": 873.21875,
+          "headingY": 1121.71875,
+          "cardWidth": 413.34375,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "slug": "arenda-unitree-g1",
+      "data": [
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 334.234375,
+          "headingY": 582.71875,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 334.234375,
+          "headingY": 582.71875,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.34375,
+          "h": 232.5,
+          "y": 334.234375,
+          "headingY": 582.734375,
+          "cardWidth": 413.34375,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 847.4375,
+          "headingY": 1095.921875,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.328125,
+          "h": 232.484375,
+          "y": 847.4375,
+          "headingY": 1095.921875,
+          "cardWidth": 413.328125,
+          "fit": "cover",
+          "position": "50% 50%"
+        },
+        {
+          "w": 413.34375,
+          "h": 232.5,
+          "y": 847.4375,
+          "headingY": 1095.9375,
+          "cardWidth": 413.34375,
+          "fit": "cover",
+          "position": "50% 50%"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

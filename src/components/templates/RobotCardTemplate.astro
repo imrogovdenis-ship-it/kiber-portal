@@ -347,7 +347,7 @@ const robotCatalogDescription = robotSlug === 'arenda-unitree-h2' ? h2Editorial.
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
         <article>
-          {isHumanoidPair ? <div class="humanoid-capability-media">{capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}</div> : capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}
+          {isHumanoidPair ? <div class="humanoid-capability-media">{capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}</div> : capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} style={["arenda-unitree-r1", "arenda-unitree-h2"].includes(robotSlug) ? "height:auto;object-position:center" : undefined} loading="lazy" decoding="async" />}
           <h3>{item.title ?? item.text}</h3>
           <p>{item.text}</p>
         </article>
