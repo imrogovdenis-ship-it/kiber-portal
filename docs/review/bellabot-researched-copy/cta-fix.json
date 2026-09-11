@@ -1,0 +1,7 @@
+{
+  "ownerCorrection": "Repeated робота-официанта in blue pricing CTA",
+  "fix": "Shared CTA adds category only if model name does not already include it",
+  "regression": "RED observed on duplicate; GREEN 3 tests and build",
+  "live": "Only one phrase replaced; identical remaining HTML; QA 390/768/1440 passed",
+  "productionChanged": false
+}
