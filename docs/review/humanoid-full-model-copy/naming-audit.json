@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "arenda-unitree-g1",
+    "before": {
+      "full": 1,
+      "bare": 19
+    },
+    "after": {
+      "full": 19,
+      "bare": 1
+    },
+    "scope": "blocks only; not a keyword-density target"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "before": {
+      "full": 1,
+      "bare": 16
+    },
+    "after": {
+      "full": 20,
+      "bare": 2
+    },
+    "scope": "blocks only; not a keyword-density target"
+  }
+]
