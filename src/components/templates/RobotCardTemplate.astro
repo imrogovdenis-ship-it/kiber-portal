@@ -16,6 +16,7 @@ import type { RobotCardData } from '../../../design-system/schemas/fixture.schem
 import r1Editorial from '../../../data/content/robot-card-pilot/arenda-unitree-r1.json';
 import h2Editorial from '../../../data/content/robot-card-pilot/arenda-unitree-h2.json';
 import bumiEditorial from '../../../data/content/robot-card-pilot/arenda-noetix-bumi.json';
+import tronEditorial from '../../../data/content/robot-card-pilot/arenda-robota-tron.json';
 import sofiaEditorial from '../../../data/content/robot-card-pilot/arenda-robota-sofiya.json';
 import catalogTitles from '../../../data/content/home-catalog-titles.json';
 import ardiEditorial from '../../../data/content/robot-card-pilot/arenda-robota-ardi.json';
@@ -52,6 +53,7 @@ const robotTypeAccusativeByCategory: Record<string, string> = {
 };
 const robotTypeAccusative = robotTypeAccusativeByCategory[template.robot.category ?? ''] ?? 'робота';
 const ownerDisplayNameBySlug: Record<string, string> = {
+  'arenda-robota-tron': 'Tron',
   'arenda-robota-sofiya': 'София',
   'arenda-robota-ardi': 'Арди',
   'arenda-kettybot': 'KettyBot',
@@ -63,6 +65,7 @@ const ownerDisplayNameBySlug: Record<string, string> = {
   'arenda-robota-hudozhnika-a4': 'робот-художник A4',
 };
 const ownerQuickCtaTitleBySlug: Record<string, string> = {
+  'arenda-robota-tron': `Арендуйте модульного робота Tron для мероприятия ${template.robot.priceDisplay}`,
   'arenda-robota-sofiya': `Арендуйте робота Софию для мероприятия ${template.robot.priceDisplay}`,
   'arenda-kettybot': `Арендуйте робота-официанта KettyBot для мероприятия ${template.robot.priceDisplay}`,
   'arenda-robot-barmen': `Арендуйте робота-бармена «Робобар» для мероприятия ${template.robot.priceDisplay}`,
@@ -82,6 +85,7 @@ const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
 const relatedSlugsByRobotSlug: Record<string, string[]> = {
+  'arenda-robota-tron': tronEditorial.related.robotSlugs,
   'arenda-robota-sofiya': sofiaEditorial.related.robotSlugs,
   'arenda-robota-ardi': ardiEditorial.related.robotSlugs,
   'arenda-noetix-bumi': bumiEditorial.related.robotSlugs,
@@ -133,11 +137,11 @@ const relatedRobots = getRobotPages()
     return {
       slug: robot.slug,
       href: reviewRobotPreviewHref(robot.slug, robot.route),
-      title: robotSlug === 'arenda-robota-sofiya' ? catalogTitles[robot.slug as keyof typeof catalogTitles] : robotSlug === 'arenda-robota-ardi' && robot.slug === 'arenda-robota-sofiya' ? 'Робот София' : relatedName,
+      title: ['arenda-robota-tron', 'arenda-robota-sofiya'].includes(robotSlug) ? catalogTitles[robot.slug as keyof typeof catalogTitles] : robotSlug === 'arenda-robota-ardi' && robot.slug === 'arenda-robota-sofiya' ? 'Робот София' : relatedName,
       category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
       price: robot.pricing.display,
       price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
-      description: (robotSlug === 'arenda-robota-sofiya' ? (sofiaEditorial.related.robotDescriptions as Record<string,string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-robota-ardi' ? (ardiEditorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-noetix-bumi' ? (bumiEditorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-unitree-h2' ? (h2Editorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-unitree-r1' ? (r1Editorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? relatedRobotDescriptionBySlug[robot.slug] ?? robot.seo.description.slice(0, 132),
+      description: (robotSlug === 'arenda-robota-tron' ? (tronEditorial.related.robotDescriptions as Record<string,string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-robota-sofiya' ? (sofiaEditorial.related.robotDescriptions as Record<string,string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-robota-ardi' ? (ardiEditorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-noetix-bumi' ? (bumiEditorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-unitree-h2' ? (h2Editorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? (robotSlug === 'arenda-unitree-r1' ? (r1Editorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? relatedRobotDescriptionBySlug[robot.slug] ?? robot.seo.description.slice(0, 132),
       badge: relatedName === robotDisplayName ? 'Сейчас смотрим' : (index === 0 ? 'Похожий формат' : undefined),
       image: robot.media.hero,
       analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
@@ -240,6 +244,7 @@ const robotFaq = {
   items: template.faq.map(({ question, answer }) => ({ question, answer })),
 };
 const ownerArticleBlockBySlug: Record<string, { title: string; description: string }> = {
+  'arenda-robota-tron': { title: 'Разобраться в движении и выборе роботов', description: 'Как устроены гуманоиды и чем отличаются форматы демонстрации на мероприятии.' },
   'arenda-robota-sofiya': { title: 'Как подготовить встречу с роботом', description: 'Устройство гуманоидов, выбор формата и идеи участия в событии.' },
   'arenda-robota-ardi': { title: 'Как выбрать робота и подготовить программу', description: 'Разберитесь в устройстве гуманоидов, вариантах участия и подготовке поздравления.' },
   'arenda-noetix-bumi': { title: 'Как выбрать гуманоидного робота для события', description: 'Статьи помогут разобраться в устройстве гуманоидов и сравнить варианты для вашей программы.' },
@@ -288,10 +293,10 @@ const robotArticles = {
   ...homeArticles,
   title: ownerArticleBlock?.title ?? `Материалы по аренде ${robotDisplayName}`,
   description: ownerArticleBlock?.description ?? `Подбираем материалы о сценариях аренды, подготовке площадки и работе ${robotDisplayName} на мероприятии.`,
-  cards: robotSlug === 'arenda-robota-sofiya' ? sofiaEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-robota-ardi' ? ardiEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-noetix-bumi' ? bumiEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-unitree-h2' ? h2Editorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-unitree-r1' ? r1Editorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : isHumanoidPair ? approvedHumanoidArticles.filter((_, i) => (robotSlug === 'arenda-unitree-g1' ? [0, 2, 5] : [0, 1, 3]).includes(i)).map(card => ({ ...card, href: card.canonicalHref })) : articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
+  cards: robotSlug === 'arenda-robota-tron' ? tronEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-robota-sofiya' ? sofiaEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-robota-ardi' ? ardiEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-noetix-bumi' ? bumiEditorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-unitree-h2' ? h2Editorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : robotSlug === 'arenda-unitree-r1' ? r1Editorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : isHumanoidPair ? approvedHumanoidArticles.filter((_, i) => (robotSlug === 'arenda-unitree-g1' ? [0, 2, 5] : [0, 1, 3]).includes(i)).map(card => ({ ...card, href: card.canonicalHref })) : articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
 };
 const robotCatalogTitle = 'Вас также могут заинтересовать';
-const robotCatalogDescription = robotSlug === 'arenda-robota-sofiya' ? sofiaEditorial.related.description : robotSlug === 'arenda-robota-ardi' ? ardiEditorial.related.description : robotSlug === 'arenda-noetix-bumi' ? bumiEditorial.related.description : robotSlug === 'arenda-unitree-h2' ? h2Editorial.related.description : robotSlug === 'arenda-unitree-r1' ? r1Editorial.related.description : 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
+const robotCatalogDescription = robotSlug === 'arenda-robota-tron' ? tronEditorial.related.description : robotSlug === 'arenda-robota-sofiya' ? sofiaEditorial.related.description : robotSlug === 'arenda-robota-ardi' ? ardiEditorial.related.description : robotSlug === 'arenda-noetix-bumi' ? bumiEditorial.related.description : robotSlug === 'arenda-unitree-h2' ? h2Editorial.related.description : robotSlug === 'arenda-unitree-r1' ? r1Editorial.related.description : 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
 ---
 
 <article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card" data-content-pilot={(isContentPilot || isHumanoidPair) ? 'true' : undefined}>
@@ -360,7 +365,7 @@ const robotCatalogDescription = robotSlug === 'arenda-robota-sofiya' ? sofiaEdit
     <div class="template-feature-grid">
       {capabilityItems.map((item, index) => (
         <article>
-          {isHumanoidPair ? <div class="humanoid-capability-media">{capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}</div> : capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} style={["arenda-unitree-r1", "arenda-unitree-h2", "arenda-noetix-bumi", "arenda-robota-ardi", "arenda-robota-sofiya"].includes(robotSlug) ? "height:auto;object-position:center" : undefined} loading="lazy" decoding="async" />}
+          {isHumanoidPair ? <div class="humanoid-capability-media">{capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} loading="lazy" decoding="async" />}</div> : capabilityImages[index] && <img {...robotImageDimensions(capabilityImages[index].publicSrc)} src={capabilityImages[index].publicSrc} alt={capabilityImages[index].seoAlt} style={["arenda-unitree-r1", "arenda-unitree-h2", "arenda-noetix-bumi", "arenda-robota-ardi", "arenda-robota-sofiya", "arenda-robota-tron"].includes(robotSlug) ? "height:auto;object-position:center" : undefined} loading="lazy" decoding="async" />}
           <h3>{item.title ?? item.text}</h3>
           <p>{item.text}</p>
         </article>
