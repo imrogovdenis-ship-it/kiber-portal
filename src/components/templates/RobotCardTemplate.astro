@@ -101,17 +101,8 @@ const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
 const relatedSlugsByRobotSlug: Record<string, string[]> = {
-  'arenda-uv-box': uvboxEditorial.related.robotSlugs,
-  'arenda-klipmeiker': clipmakerEditorial.related.robotSlugs,
-  'arenda-glambot': glambotEditorial.related.robotSlugs,
-  'arenda-robota-hudozhnika-a4': a4Editorial.related.robotSlugs,
-  'arenda-sketchbot': sketchbotEditorial.related.robotSlugs,
-  'arenda-mini-robo-kofeyni': miniCoffeeEditorial.related.robotSlugs,
-  'arenda-robo-kofeyni': coffeeEditorial.related.robotSlugs,
-  'arenda-robot-barmen': robobarEditorial.related.robotSlugs,
   'arenda-kettybot': kettybotEditorial.related.robotSlugs,
   'arenda-bellabot': bellabotEditorial.related.robotSlugs,
-  'arenda-inchbot-l1-w-edu': inchbotEditorial.related.robotSlugs,
   'arenda-xiaomi-cyberdog-2': cyberdogEditorial.related.robotSlugs,
   'arenda-unitree-go2': go2Editorial.related.robotSlugs,
   'arenda-promobot-v4': promobotEditorial.related.robotSlugs,

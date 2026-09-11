@@ -1,0 +1,20 @@
+[
+  {
+    "width": 390,
+    "status": 202,
+    "mode": "dry-run",
+    "thanks": "https://jino-preview.kiber-portal.ru/lead/thanks/?request=preview",
+    "browserPosts": [
+      "https://jino-preview.kiber-portal.ru/api/leads"
+    ]
+  },
+  {
+    "width": 1440,
+    "status": 202,
+    "mode": "dry-run",
+    "thanks": "https://jino-preview.kiber-portal.ru/lead/thanks/?request=preview",
+    "browserPosts": [
+      "https://jino-preview.kiber-portal.ru/api/leads"
+    ]
+  }
+]

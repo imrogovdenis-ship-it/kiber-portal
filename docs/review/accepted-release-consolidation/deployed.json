@@ -1,0 +1,217 @@
+[
+  {
+    "path": "index.html",
+    "status": 200,
+    "sha256": "3bc34b4b7a19dda9feef84cf4ba96be3ea4b117c464ef842eac65b9ee6eecbdf"
+  },
+  {
+    "path": "roboty-gumanoidy/index.html",
+    "status": 200,
+    "sha256": "d956179b3f5b1eabcfda114d547e7ca5d3580ab263b3c003fa2c4df80e3834ac"
+  },
+  {
+    "path": "articles/index.html",
+    "status": 200,
+    "sha256": "9cd7e5ef9ecbb52b083eba53a2002a9da27820310bd7e57647c63c5b35413a75"
+  },
+  {
+    "path": "articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/index.html",
+    "status": 200,
+    "sha256": "4efe55a9844d27270c915aa3651dd989340a9cdde367ff2e1d1ebee9a7e1e276"
+  },
+  {
+    "path": "articles/unitree-g1-na-korporative/index.html",
+    "status": 200,
+    "sha256": "70129e33f7b1a8712ea67088711838025e0306005ed50efccd5bd617ce3e994a"
+  },
+  {
+    "path": "articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/index.html",
+    "status": 200,
+    "sha256": "db3b605bee1e3707a913b8eb37f5f75827a55ca08b28e3aec13f8b99980b5d0b"
+  },
+  {
+    "path": "articles/neobychnyi-podarok-direktoru-robot-v-kabinete/index.html",
+    "status": 200,
+    "sha256": "cc1e836984402588f0bb5f3b8569923d3cb994ce8b26ece69869ecc36b53c88f"
+  },
+  {
+    "path": "articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/index.html",
+    "status": 200,
+    "sha256": "7676a298e53fbaf7dfc73b82d700f1dd765c2daabc56a1751555def31115eb42"
+  },
+  {
+    "path": "articles/sravnenie-unitree-g1-r1-h2/index.html",
+    "status": 200,
+    "sha256": "7c9e872ccafc7c2a7181af47533b9d71b5e822e7f1fa2f6287cbc7156ac2f0c5"
+  },
+  {
+    "path": "lead/request/index.html",
+    "status": 200,
+    "sha256": "766790999ffe6736fdded72b97811eb15a42d46995442d5c22c83815763fd326"
+  },
+  {
+    "path": "lead/thanks/index.html",
+    "status": 200,
+    "sha256": "1fac4bd86c65eba1cd0a1b192097ea4229feb9026fe85eb92d8e8d1cc2367c93"
+  },
+  {
+    "path": "consent/index.html",
+    "status": 200,
+    "sha256": "557f039b33b88570669b4492c035ac22b939aeaa7097632cef95d5fa2d63e264"
+  },
+  {
+    "path": "roboty-sobaki/index.html",
+    "status": 200,
+    "sha256": "bb7a5618261127e276a8b49b2c5d68186fff09230c77480285fbc30cc7893f86"
+  },
+  {
+    "path": "compilations/index.html",
+    "status": 200,
+    "sha256": "54a237173a8ced9e47027e8375f347c0208d57dd60983d99ef3327506a12123e"
+  },
+  {
+    "path": "contacts/index.html",
+    "status": 200,
+    "sha256": "ff39d6fdf08455a2f47889f415ab8b605022671526fca926761a5258834d4913"
+  },
+  {
+    "path": "terms/index.html",
+    "status": 200,
+    "sha256": "7f6941f0ff7d745562f48eca02677127dbed6f576008a586f301df4ab6d2fe5d"
+  },
+  {
+    "path": "robots/arenda-glambot/index.html",
+    "status": 200,
+    "sha256": "9a0837c25eaa881edde0988ad1d88a171162047beeebaa0f90c18dc97a2ed54f"
+  },
+  {
+    "path": "robots/arenda-xiaomi-cyberdog-2/index.html",
+    "status": 200,
+    "sha256": "9b471c7415a76e5a66c23b600df1be93ae3e7b959b4fefda0868c899052cf808"
+  },
+  {
+    "path": "robots/arenda-robota-ardi/index.html",
+    "status": 200,
+    "sha256": "d049d14aa3724d0e83edfcdf1f89aaf71e9d7f724604fecf61b66b200fedfbda"
+  },
+  {
+    "path": "robots/arenda-robota-tron/index.html",
+    "status": 200,
+    "sha256": "56ed6fb13e45b7d5f38bdafe48a13e72bb6146e94f586db5f087298ad8b8b50b"
+  },
+  {
+    "path": "robots/arenda-robota-hudozhnika-a4/index.html",
+    "status": 200,
+    "sha256": "099bf7b3c58a588c4d49e2fc0710ef7f62a0e17f6b7cb7f95058f727f3de68de"
+  },
+  {
+    "path": "robots/arenda-senserobot/index.html",
+    "status": 200,
+    "sha256": "4fbb5352dd58ec776aa97c209702e29091c39cd713c19cc9f6c060de921c25ec"
+  },
+  {
+    "path": "robots/arenda-noetix-bumi/index.html",
+    "status": 200,
+    "sha256": "ba3940a7227366a35bf92ed5dcd4af339d6e070765eb17ea5dea4ae5ea40af13"
+  },
+  {
+    "path": "robots/arenda-inchbot-l1-w-edu/index.html",
+    "status": 200,
+    "sha256": "90320a5d8032f00ddd1705129baa46c3e0314601b1e328f265f12fce05f3b12b"
+  },
+  {
+    "path": "robots/arenda-klipmeiker/index.html",
+    "status": 200,
+    "sha256": "8d3c81a3643963b23c3cebf7b74e7fb7d8b41761935e80094fa026b8c87b781d"
+  },
+  {
+    "path": "robots/arenda-uv-box/index.html",
+    "status": 200,
+    "sha256": "a4e425262d1ef8de1f502354fa8c261a8b5dfed923eeed61cb43ceaad71e71fc"
+  },
+  {
+    "path": "robots/arenda-unitree-g1/index.html",
+    "status": 200,
+    "sha256": "e91be9d62836f2e6f31a36561e3d8cfdb84f1e885f69cd9c9049549cd382732e"
+  },
+  {
+    "path": "robots/arenda-agibot-x2/index.html",
+    "status": 200,
+    "sha256": "58ff8742201b338f0c5e2ad13893962808ff42fb6d663aa20caf3e0338e21fda"
+  },
+  {
+    "path": "robots/arenda-mini-robo-kofeyni/index.html",
+    "status": 200,
+    "sha256": "709eeef580da13b1271a768c757fb937b217a310ae81aa4bb1fd8c73194ac5f8"
+  },
+  {
+    "path": "robots/arenda-robota-sofiya/index.html",
+    "status": 200,
+    "sha256": "fbebfb97634dcd27f1eb37aaf196721fcb53c771d9c016bf5732dd8eaa77f0ce"
+  },
+  {
+    "path": "robots/arenda-unitree-r1/index.html",
+    "status": 200,
+    "sha256": "a752f2b26942cc7c678d97cdc4d6fd54351d5ff50a6dd9de6559f5bd4bc9baad"
+  },
+  {
+    "path": "robots/arenda-kettybot/index.html",
+    "status": 200,
+    "sha256": "32faed7a6470e736ad713fad729fe3ee28a8db031bcef5fe566d63526d39a5e2"
+  },
+  {
+    "path": "robots/arenda-promobot-v4/index.html",
+    "status": 200,
+    "sha256": "65d93374623e133754cfe324c10f57bab068458b0c6075d1d1cf1fd808505f3d"
+  },
+  {
+    "path": "robots/arenda-robot-barmen/index.html",
+    "status": 200,
+    "sha256": "236b8c230de4c676b7e32c385a6c9eb5c2e68134cacb14bbf55742d3cc01c942"
+  },
+  {
+    "path": "robots/arenda-bellabot/index.html",
+    "status": 200,
+    "sha256": "b7990caf06490fa778258548712d371c3efe8fc99d4f18cf5d96fff86638d8e7"
+  },
+  {
+    "path": "robots/arenda-unitree-go2/index.html",
+    "status": 200,
+    "sha256": "3a35bf6ccc60a7aba25ad74b76ac33f8c68752ec6ddad81146a6e00d0c15331e"
+  },
+  {
+    "path": "robots/arenda-sketchbot/index.html",
+    "status": 200,
+    "sha256": "9f55bcc2b1548114316df1cc04641189cbf7319d40b6fbb93234a9ada6ba171b"
+  },
+  {
+    "path": "robots/arenda-robo-kofeyni/index.html",
+    "status": 200,
+    "sha256": "e321bf0f1ed42f0660458117269d00fabc8d130a6cc17282182683b54225b13a"
+  },
+  {
+    "path": "robots/arenda-unitree-h2/index.html",
+    "status": 200,
+    "sha256": "46585d134ebd48ee47741cbeb995d3578f2ae890ff01033b19312798855fa88f"
+  },
+  {
+    "path": "robots/arenda-roboshashki/index.html",
+    "status": 200,
+    "sha256": "dd1c281b692a3c7f17d71d70e28e6e008b1eb26505df08358057f882633684f3"
+  },
+  {
+    "path": "news/index.html",
+    "status": 200,
+    "sha256": "33eb41a656f9c5ca0dd1aae2c8b6637e5b29726e7ef70fe2aff7de66c022c864"
+  },
+  {
+    "path": "privacy-policy/index.html",
+    "status": 200,
+    "sha256": "2551d3beab60a4b860de91a46274cb15d09329fee0836297753bbdf7853e47ae"
+  },
+  {
+    "path": "cookie-policy/index.html",
+    "status": 200,
+    "sha256": "ae3bdaa44f38ee3173bd27f8aedcff87caa852ac2943d70dc805700c7141629a"
+  }
+]

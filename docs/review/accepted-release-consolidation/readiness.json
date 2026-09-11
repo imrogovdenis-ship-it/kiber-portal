@@ -1,0 +1,41 @@
+{
+  "decision": "NO_GO",
+  "base": "810fff5fb5e84cb3d7d8997f0e3dbe510c48ee43",
+  "sourceBranch": "fix/accepted-release-consolidation",
+  "integratedSources": [
+    "PR120 complete robot lineage",
+    "PR95 article navigation",
+    "PR94 Jino API preparation"
+  ],
+  "preview": "https://jino-preview.kiber-portal.ru/",
+  "previewHtmlPages": 43,
+  "acceptedRobotCards": 24,
+  "articles": 6,
+  "parity": "PASS with owner-approved artist naming and duplicate CTA corrections only",
+  "hostedCI": "pending; consult exact head checks",
+  "productionDeployAllowed": false,
+  "mergeAllowed": false,
+  "dnsChangesAllowed": false,
+  "secretsChangesAllowed": false,
+  "liveLeadRoutingAllowed": false,
+  "analyticsAllowed": false,
+  "blockers": [
+    "exact-head hosted CI",
+    "separate merge authorization",
+    "merged-main immutable candidate rebuild",
+    "separate production and any DNS/live-runtime authorization"
+  ],
+  "rollback": {
+    "scope": "preview HTML only; no server configuration changed",
+    "snapshot": "/home/alex/.hermes/state/kiber-release-consolidation/approved-baseline",
+    "commandFile": "/home/alex/.hermes/state/kiber-release-consolidation/rollback.sftp"
+  },
+  "verification": {
+    "visualContractTests": "302 passed before PR94 runtime integration",
+    "browserBudgets": "8 cold checks passed without budget relaxation",
+    "mobile": "35 geometry, 8 touch, 24 robots plus desktop, 24 template coverage cases passed before final integration",
+    "currentGatewayDryRun": "status, JSON POST and HTML redirect passed; channels skipped",
+    "deployedHtml": "43/43 byte-identical to unified preview artifact; noindex verified"
+  },
+  "createdAt": "2026-09-11T19:49:45.614830+00:00"
+}

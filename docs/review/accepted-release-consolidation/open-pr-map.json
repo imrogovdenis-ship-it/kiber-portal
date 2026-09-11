@@ -1,0 +1,282 @@
+[
+  {
+    "baseRefName": "feat/clipmaker-researched-copy",
+    "headRefName": "feat/uvbox-researched-copy",
+    "headRefOid": "810fff5fb5e84cb3d7d8997f0e3dbe510c48ee43",
+    "number": 120,
+    "title": "feat: researched UV-BOX interactive display card"
+  },
+  {
+    "baseRefName": "feat/glambot-researched-copy",
+    "headRefName": "feat/clipmaker-researched-copy",
+    "headRefOid": "a43a10fbf1e12698baf0f45cf9173024e838deda",
+    "number": 119,
+    "title": "feat: researched Clipmaker rental card"
+  },
+  {
+    "baseRefName": "feat/a4-researched-copy",
+    "headRefName": "feat/glambot-researched-copy",
+    "headRefOid": "a880bfcc65b25e0abd51d87fd8decdb562b5879e",
+    "number": 118,
+    "title": "feat: researched GlamBot rental card"
+  },
+  {
+    "baseRefName": "feat/sketchbot-researched-copy",
+    "headRefName": "feat/a4-researched-copy",
+    "headRefOid": "d15abf421dae568b62610896c5ec1c3024fb84e2",
+    "number": 117,
+    "title": "feat: researched A4 robot artist rental card"
+  },
+  {
+    "baseRefName": "feat/mini-coffee-researched-copy",
+    "headRefName": "feat/sketchbot-researched-copy",
+    "headRefOid": "308930f033b26a59323d845bb3043db6f5e8add5",
+    "number": 116,
+    "title": "feat: researched Sketchbot rental card"
+  },
+  {
+    "baseRefName": "feat/coffee-researched-copy",
+    "headRefName": "feat/mini-coffee-researched-copy",
+    "headRefOid": "0b3b0f8ba1f78af1e7df1d63f216331caebd96ca",
+    "number": 115,
+    "title": "feat: researched Mini Robo Coffee rental card"
+  },
+  {
+    "baseRefName": "feat/robobar-researched-copy",
+    "headRefName": "feat/coffee-researched-copy",
+    "headRefOid": "829d69111c5f38c5667b4588b4ef65693f5dc999",
+    "number": 114,
+    "title": "feat: researched Robo Coffee rental card"
+  },
+  {
+    "baseRefName": "feat/kettybot-researched-copy",
+    "headRefName": "feat/robobar-researched-copy",
+    "headRefOid": "981e2622cfc61dcd34369d8a631ea18eb71894eb",
+    "number": 113,
+    "title": "feat: researched Robobar rental card"
+  },
+  {
+    "baseRefName": "feat/bellabot-researched-copy",
+    "headRefName": "feat/kettybot-researched-copy",
+    "headRefOid": "3ef033f25503105fc719092504da368d21e72730",
+    "number": 112,
+    "title": "feat: researched KettyBot rental card"
+  },
+  {
+    "baseRefName": "feat/inchbot-researched-copy",
+    "headRefName": "feat/bellabot-researched-copy",
+    "headRefOid": "66ef9ee338c551daacea0c348a831311931d6493",
+    "number": 111,
+    "title": "feat: researched BellaBot rental card"
+  },
+  {
+    "baseRefName": "feat/cyberdog-researched-copy",
+    "headRefName": "feat/inchbot-researched-copy",
+    "headRefOid": "b5d9d30a2e5f1eac2268b63cb61952b0438f064a",
+    "number": 110,
+    "title": "feat: researched Inchbot L1-W EDU rental card"
+  },
+  {
+    "baseRefName": "feat/go2-researched-copy",
+    "headRefName": "feat/cyberdog-researched-copy",
+    "headRefOid": "046af08d1a5798f5147144f40c7505e056169704",
+    "number": 109,
+    "title": "feat: researched Xiaomi CyberDog 2 rental card"
+  },
+  {
+    "baseRefName": "feat/promobot-researched-copy",
+    "headRefName": "feat/go2-researched-copy",
+    "headRefOid": "1573c19c96112bda53d2b683eec3d2b6dd6e740b",
+    "number": 108,
+    "title": "feat: researched Unitree Go2 rental card"
+  },
+  {
+    "baseRefName": "feat/tron-researched-copy",
+    "headRefName": "feat/promobot-researched-copy",
+    "headRefOid": "3e59ea825763e78911cd0fa4744d35664804c0a6",
+    "number": 107,
+    "title": "feat: researched Promobot V4 rental card"
+  },
+  {
+    "baseRefName": "feat/sofia-researched-copy",
+    "headRefName": "feat/tron-researched-copy",
+    "headRefOid": "f59f17ae264b75fc68f2b75b119a4d19b9118e63",
+    "number": 106,
+    "title": "feat: researched modular Tron rental card"
+  },
+  {
+    "baseRefName": "fix/robot-breadcrumb-names",
+    "headRefName": "feat/sofia-researched-copy",
+    "headRefOid": "b74e08cda6aceeac7d6ac6c32bb6885a1a847bba",
+    "number": 105,
+    "title": "feat: researched Sophia robot rental copy"
+  },
+  {
+    "baseRefName": "fix/mobile-home-hero",
+    "headRefName": "fix/robot-breadcrumb-names",
+    "headRefOid": "96135aeaff55942196ec65cfc73e8a1579370058",
+    "number": 104,
+    "title": "fix: nominative names in robot breadcrumbs"
+  },
+  {
+    "baseRefName": "feat/ardi-researched-copy",
+    "headRefName": "fix/mobile-home-hero",
+    "headRefOid": "c7f04217ad77211b8d6cfb0759311c3c7213db84",
+    "number": 103,
+    "title": "fix: shared mobile layouts and touch galleries across the site"
+  },
+  {
+    "baseRefName": "feat/noetix-bumi-researched-copy",
+    "headRefName": "feat/ardi-researched-copy",
+    "headRefOid": "01e11698da53f17814cfca9771b11628c6cd042a",
+    "number": 102,
+    "title": "Арди: подготовленное общение, мимика и единые 16:9"
+  },
+  {
+    "baseRefName": "research/catalog-source-library",
+    "headRefName": "feat/noetix-bumi-researched-copy",
+    "headRefOid": "65fc8815acac63acca85e332a11ae529eb8bcbc6",
+    "number": 101,
+    "title": "Noetix Bumi: single-card copy from cached research"
+  },
+  {
+    "baseRefName": "fix/r1-h2-capability-size",
+    "headRefName": "research/catalog-source-library",
+    "headRefOid": "25d685a453ba2bc75d6c7668c0f74ff55fd97ed0",
+    "number": 100,
+    "title": "Offline research library: 24 dossiers, 70 sources, explicit owner gates"
+  },
+  {
+    "baseRefName": "feat/unitree-h2-researched-copy",
+    "headRefName": "fix/r1-h2-capability-size",
+    "headRefOid": "8de9f0dcc4b1928a35e2bd3f02cbe4d74a45bffe",
+    "number": 99,
+    "title": "Fix only R1/H2 capability image geometry"
+  },
+  {
+    "baseRefName": "feat/unitree-r1-researched-copy",
+    "headRefName": "feat/unitree-h2-researched-copy",
+    "headRefOid": "fde464a90519a59e0e7751b98e940ca88ccd35d8",
+    "number": 98,
+    "title": "Unitree H2: researched single-card copy and navigation"
+  },
+  {
+    "baseRefName": "fix/humanoid-full-model-copy",
+    "headRefName": "feat/unitree-r1-researched-copy",
+    "headRefOid": "a7c8a79784b66e2212c79d74339bf2e96612a467",
+    "number": 97,
+    "title": "Unitree R1: researched single-card copy and relevant navigation"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/humanoid-full-model-copy",
+    "headRefOid": "6a4c24368a51e72d867e7a80b491487920469a55",
+    "number": 96,
+    "title": "Rewrite G1/X2 card copy: full model names and natural semantic variants"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/article-related-current-blocks",
+    "headRefOid": "48e0aed891b901df889bb250d309324bc03fd9b4",
+    "number": 95,
+    "title": "Fix only Blog and Compilations cards in six articles"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/jino-hosting-preparation",
+    "headRefOid": "5daf1d0a8b0f532104a886a230a1dee999a08a56",
+    "number": 94,
+    "title": "Jino preview + independent API ready; one live test passed, publication held"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "docs/domain-publication-evidence",
+    "headRefOid": "20eb416fbea81f87ffb6b2f06ed9419f0f61fde9",
+    "number": 93,
+    "title": "docs: production publication evidence and reproducible compose"
+  },
+  {
+    "baseRefName": "fix/staging-owner-card-feedback",
+    "headRefName": "fix/humanoid-video-csp",
+    "headRefOid": "6d82f11724ae579988b3b888ec0a49167b63a859",
+    "number": 91,
+    "title": "fix(video): retain Kinescope CSP on humanoid compilation"
+  },
+  {
+    "baseRefName": "feat/canonical-api-runtime",
+    "headRefName": "fix/staging-owner-card-feedback",
+    "headRefOid": "8dd7b1d3aec2bdd2fbbcbc5274d821094d963095",
+    "number": 90,
+    "title": "fix: homepage robot names and unfinished compilation links"
+  },
+  {
+    "baseRefName": "feat/canonical-approved-release",
+    "headRefName": "feat/canonical-api-runtime",
+    "headRefOid": "2fa8c1dde9dc86c9eb8b5e547f8ec8873a75dc7f",
+    "number": 89,
+    "title": "feat(runtime): connect canonical site to a fail-closed lead API"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/kiber-article-unitree-g1-r1-h2-20260909",
+    "headRefOid": "49512457cfce9509598e70a5f71bb1aee26821a4",
+    "number": 87,
+    "title": "feat: статья о сравнении Unitree G1, R1 и H2"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "chore/kiber-approved-contract-guardrails-20260909",
+    "headRefOid": "142244d8246bf0468c08c8924e18245163788a81",
+    "number": 86,
+    "title": "Guard approved KIBER page contracts and review workflow"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/kiber-article-robot-gift-director-20260909",
+    "headRefOid": "5587d520d7b771d756c323a07041407bbc631c94",
+    "number": 85,
+    "title": "Article: robot gift director"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/kiber-article-how-humanoid-works-20260909",
+    "headRefOid": "7c66c7b2592e3c909ff32f42fe1124e75a17e77a",
+    "number": 84,
+    "title": "feat: add how humanoid works article preview"
+  },
+  {
+    "baseRefName": "feat/kiber-article-humanoid-choice-20260908",
+    "headRefName": "feat/kiber-article-unitree-g1-corporate-20260908",
+    "headRefOid": "cd40d75e98ff9befa234808c66cb2aeab8185c3d",
+    "number": 83,
+    "title": "feat: add Unitree G1 corporate scenario article"
+  },
+  {
+    "baseRefName": "feat/kiber-article-unitree-g1-agibot-x2-20260908",
+    "headRefName": "feat/kiber-article-humanoid-choice-20260908",
+    "headRefOid": "102389e20aa646776fe4cc47474c90bbfb4cdf04",
+    "number": 82,
+    "title": "feat: add humanoid choice article draft"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/kiber-article-unitree-g1-agibot-x2-20260908",
+    "headRefOid": "1786843063e38e9ca0aa79fade4e57807fbcb4ce",
+    "number": 81,
+    "title": "Draft: article Unitree G1 vs Agibot X2"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feat/kiber-fast-launch-humanoids-articles-20260908",
+    "headRefOid": "4e229a2740803ad7ee7bd0f24b4c0b62e1f65ab9",
+    "number": 80,
+    "title": "feat: add fast launch humanoid scope"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "hermes/kiber-70-release-candidate-20260901",
+    "headRefOid": "01f2dde5daf3be87dc338b9ede43b7bef13bb53b",
+    "number": 69,
+    "title": "KIBER-70: release candidate package"
+  }
+]

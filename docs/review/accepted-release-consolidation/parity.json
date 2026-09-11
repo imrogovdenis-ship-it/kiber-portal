@@ -1,0 +1,332 @@
+{
+  "pages": [
+    {
+      "path": "index.html",
+      "exactText": false,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "roboty-gumanoidy/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/unitree-g1-na-korporative/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/neobychnyi-podarok-direktoru-robot-v-kabinete/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "articles/sravnenie-unitree-g1-r1-h2/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "lead/request/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "lead/thanks/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "consent/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "roboty-sobaki/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "compilations/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "contacts/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "terms/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-glambot/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-xiaomi-cyberdog-2/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-robota-ardi/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-robota-tron/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-robota-hudozhnika-a4/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-senserobot/index.html",
+      "exactText": false,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-noetix-bumi/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-inchbot-l1-w-edu/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-klipmeiker/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-uv-box/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-unitree-g1/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-agibot-x2/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-mini-robo-kofeyni/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-robota-sofiya/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-unitree-r1/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-kettybot/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-promobot-v4/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-robot-barmen/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-bellabot/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-unitree-go2/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-sketchbot/index.html",
+      "exactText": false,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-robo-kofeyni/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-unitree-h2/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "robots/arenda-roboshashki/index.html",
+      "exactText": false,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "news/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "privacy-policy/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    },
+    {
+      "path": "cookie-policy/index.html",
+      "exactText": true,
+      "approvedNamingAndCtaOnly": true,
+      "media": true,
+      "links": true
+    }
+  ],
+  "unchangedHostedCssJs": [
+    "/_astro/HomeHero.CS3LM4co.css",
+    "/_astro/HomeImageCards._wKzKG3A.css",
+    "/scripts/contact-lead-form-popup.js",
+    "/scripts/contact-messenger-popup.js",
+    "/_astro/home-live.DFU3xVXg.css",
+    "/_astro/compilation-humanoids.CE3KflT9.css",
+    "/styles/mobile-shared-contract-v1.css",
+    "/scripts/robot-card-gallery.js",
+    "/_astro/index.9cxpUa77.css",
+    "/_astro/index.BMlTBUd1.css",
+    "/_astro/index.BpY38sz1.css",
+    "/_astro/thanks.D1UcmCAm.css",
+    "/styles/article-review-rhythm-v1.css",
+    "/_astro/index.Cqdim4E0.css",
+    "/_astro/kiber94-robot-template-data.DdqcShj6.css",
+    "/_astro/request.B_nyoOpV.css",
+    "/scripts/home-image-cards-slider.js",
+    "/_astro/index.2Kanch-k.css",
+    "/_astro/roboty-sobaki.Axb9b7n1.css",
+    "/_astro/contacts.DzG99RoT.css",
+    "/_astro/index.B4ldbnLK.css",
+    "/_astro/BaseLayout.DX-Kktwn.css",
+    "/scripts/kinescope-video.js",
+    "/_astro/compilations.CQM4enRZ.css",
+    "/scripts/site-header.js"
+  ]
+}

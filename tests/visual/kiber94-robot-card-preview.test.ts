@@ -1,3 +1,4 @@
+import {runInNewContext} from 'node:vm';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -233,7 +234,8 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
-  assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{robotSlug === 'arenda-robota-ardi' \? 'Арди' : template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
+  const ctaCode = componentSource.split('\n').filter(l => /^const quickCta(Name|Title) =/.test(l)).join('\n');
+  assert.equal(runInNewContext(ctaCode + ';quickCtaTitle', {robotSlug:'arenda-unitree-g1',robotTypeAccusative:'робота-гуманоида',template:{robot:{name:'Unitree G1',priceDisplay:'от 9 500 ₽ / час'}}}), 'Арендуйте робота-гуманоида Unitree G1 для мероприятия от 9 500 ₽ / час');
   assert.match(componentSource, /const quickCtaNoWrap = template\.robot\.priceDisplay/);
   assert.match(componentSource, /titleNoWrap: quickCtaNoWrap/);
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp'/);
