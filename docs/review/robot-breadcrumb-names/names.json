@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "arenda-glambot",
+    "before": "GlamBot",
+    "after": "Робот GlamBot",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "before": "робота-собаки Xiaomi CyberDog 2",
+    "after": "Робот-собака Xiaomi CyberDog 2",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "before": "Робот Арди",
+    "after": "Робот Арди",
+    "changed": false,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "before": "робота Tron",
+    "after": "Модульный робот Tron",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "before": "робота-художника A4",
+    "after": "Робот-художник A4",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-senserobot",
+    "before": "робота-шахматиста SenseRobot",
+    "after": "Робот-шахматист SenseRobot",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-noetix-bumi",
+    "before": "робота-гуманоида Noetix Bumi",
+    "after": "Робот-гуманоид Noetix Bumi",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "before": "робота-собаки Inchbot L1-W EDU",
+    "after": "Робот-собака Inchbot L1-W EDU",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "before": "робота Клипмейкер",
+    "after": "Робот Клипмейкер",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-uv-box",
+    "before": "интерактивной витрины UV-BOX",
+    "after": "Интерактивная витрина UV-BOX",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "before": "робота-гуманоида Unitree G1",
+    "after": "Робот-гуманоид Unitree G1",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-agibot-x2",
+    "before": "робота-гуманоида Agibot X2",
+    "after": "Робот-гуманоид Agibot X2",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "before": "мини Robo-Кофейни",
+    "after": "Мини-робо-кофейня",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "before": "робота София",
+    "after": "Робот София",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-unitree-r1",
+    "before": "робота-гуманоида Unitree R1",
+    "after": "Робот-гуманоид Unitree R1",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-kettybot",
+    "before": "робота-официанта KettyBot",
+    "after": "Робот-официант KettyBot",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "before": "Promobot V4",
+    "after": "Робот Promobot V4",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "before": "робот-бармен «Робобар»",
+    "after": "Робот-бармен «Робобар»",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-bellabot",
+    "before": "робота-официанта BellaBot",
+    "after": "Робот-официант BellaBot",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "before": "робота-собаки Unitree Go2",
+    "after": "Робот-собака Unitree Go2",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "before": "Sketchbot",
+    "after": "Робот Sketchbot",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "before": "Robo-Кофейни",
+    "after": "Робо-кофейня",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-unitree-h2",
+    "before": "робота-гуманоида Unitree H2",
+    "after": "Робот-гуманоид Unitree H2",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "before": "робота для игры в шашки",
+    "after": "Робот для игры в шашки",
+    "changed": true,
+    "outside_breadcrumbs": "byte-identical"
+  }
+]
