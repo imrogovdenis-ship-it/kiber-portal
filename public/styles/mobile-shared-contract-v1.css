@@ -59,3 +59,23 @@
 :root body .vertical-slice .home-hero__button { min-height: 2.75rem; font-size: .8125rem; line-height: 1.15; white-space: normal; }
 }
 @media (max-width:39.9375rem) and (max-height:38.75rem) { :root body .vertical-slice .home-hero__content {padding:1rem;gap:.5rem;grid-template-rows:auto auto auto minmax(.5rem,1fr) auto;} :root body .vertical-slice .home-hero__title {font-size:1.75rem;} }
+
+/* Owner review round 2: correct article grid placement and layout-specific sizing. */
+@media (max-width:39.9375rem) {
+ :root body #main-content .article-blocks__hero-inner { grid-template-columns:minmax(0,1fr); gap:1rem; }
+ :root body #main-content .article-blocks__hero-inner > * { grid-area:auto; min-width:0; }
+ :root body #main-content .article-blocks__hero-copy,
+ :root body #main-content .article-blocks__hero-inner .article-blocks__lead { width:100%; max-width:none; }
+ :root body #main-content .article-blocks__hero h1 { width:100%; max-width:none; font-size:clamp(1.75rem,7.2vw,2rem); line-height:1.15; }
+ :root body #main-content .article-blocks__hero-image { position:static; width:100%; height:auto; min-height:0; max-height:none; margin:0; object-fit:contain; }
+ :root body #main-content .article-blocks__hero { padding-block:1.75rem 2rem; }
+ :root body .vertical-slice .home-hero__actions { grid-template-columns:minmax(0,1fr); gap:.625rem; }
+ :root body .vertical-slice .home-hero__button { min-height:3rem; font-size:.875rem; white-space:nowrap; }
+ :root body #main-content .robot-card { container-type:inline-size; container-name:robot-tile; }
+ @container robot-tile (max-width:13rem) {
+  :root body #main-content .robot-card__title { font-size:1.0625rem !important; }
+  :root body #main-content .robot-card__description { font-size:.8125rem !important; line-height:1.4 !important; }
+ }
+ :root body #main-content .template-live-hero__media { width:100%; height:auto; aspect-ratio:1; justify-self:stretch; }
+ :root body #main-content #robot-card-pricing .home-final-cta__image img { translate:clamp(1rem,5vw,1.5rem) 0; }
+}
