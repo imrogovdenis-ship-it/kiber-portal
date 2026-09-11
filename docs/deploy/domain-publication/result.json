@@ -1,0 +1,18 @@
+{
+  "release": {
+    "sha": "a3c428506c27f87490faeb0bd71a9702816cc24c",
+    "worktree": "/home/alex/projects/kiber-domain-release",
+    "pr": 92,
+    "productionIP": "38.180.37.42"
+  },
+  "routes": 35,
+  "robotRoutes": 24,
+  "browserChecks": 8,
+  "httpsVerified": true,
+  "apiMode": "live",
+  "invalidPost": 400,
+  "newLeadSent": false,
+  "existingContainersPreserved": true,
+  "sitemapDiscovery": "301 /sitemap-index.xml -> 200 /sitemap.xml",
+  "dnsCachePropagation": "some resolvers may retain old target until TTL expiration"
+}

@@ -1,0 +1,85 @@
+{
+  "name": "alex-kiber-production",
+  "services": {
+    "api": {
+      "restart": "unless-stopped",
+      "logging": {
+        "driver": "json-file",
+        "options": {
+          "max-size": "10m",
+          "max-file": "3"
+        }
+      },
+      "networks": [
+        "production"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "image": "alex-kiber-production-api:a3c428506c27f87490faeb0bd71a9702816cc24c",
+      "container_name": "alex-kiber-production-api",
+      "env_file": [
+        ".env"
+      ],
+      "mem_limit": "256m",
+      "cpus": 0.5
+    },
+    "web": {
+      "restart": "unless-stopped",
+      "logging": {
+        "driver": "json-file",
+        "options": {
+          "max-size": "10m",
+          "max-file": "3"
+        }
+      },
+      "networks": [
+        "production",
+        "ingress"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "image": "alex-kiber-production-web:a3c428506c27f87490faeb0bd71a9702816cc24c",
+      "container_name": "alex-kiber-production-web",
+      "mem_limit": "256m",
+      "cpus": 0.5,
+      "depends_on": [
+        "api"
+      ],
+      "labels": {
+        "traefik.enable": "true",
+        "traefik.docker.network": "coolify",
+        "traefik.http.routers.alex-kiber-production-http.rule": "Host(`kiber-portal.ru`) || Host(`www.kiber-portal.ru`)",
+        "traefik.http.routers.alex-kiber-production-http.entrypoints": "http",
+        "traefik.http.routers.alex-kiber-production-http.middlewares": "alex-kiber-production-https",
+        "traefik.http.routers.alex-kiber-production-http.service": "alex-kiber-production",
+        "traefik.http.middlewares.alex-kiber-production-https.redirectscheme.scheme": "https",
+        "traefik.http.middlewares.alex-kiber-production-https.redirectscheme.permanent": "true",
+        "traefik.http.routers.alex-kiber-production.rule": "Host(`kiber-portal.ru`) || Host(`www.kiber-portal.ru`)",
+        "traefik.http.routers.alex-kiber-production.entrypoints": "https",
+        "traefik.http.routers.alex-kiber-production.tls": "true",
+        "traefik.http.routers.alex-kiber-production.tls.certresolver": "letsencrypt",
+        "traefik.http.routers.alex-kiber-production.service": "alex-kiber-production",
+        "traefik.http.routers.alex-kiber-production.middlewares": "alex-kiber-production-www,alex-kiber-production-sitemap",
+        "traefik.http.middlewares.alex-kiber-production-www.redirectregex.regex": "^https?://kiber-portal\\.ru/(.*)",
+        "traefik.http.middlewares.alex-kiber-production-www.redirectregex.replacement": "https://www.kiber-portal.ru/$${1}",
+        "traefik.http.middlewares.alex-kiber-production-www.redirectregex.permanent": "true",
+        "traefik.http.services.alex-kiber-production.loadbalancer.server.port": "8080",
+        "traefik.http.middlewares.alex-kiber-production-sitemap.redirectregex.regex": "^https://www\\.kiber-portal\\.ru/sitemap-index\\.xml$",
+        "traefik.http.middlewares.alex-kiber-production-sitemap.redirectregex.replacement": "https://www.kiber-portal.ru/sitemap.xml",
+        "traefik.http.middlewares.alex-kiber-production-sitemap.redirectregex.permanent": "true"
+      }
+    }
+  },
+  "networks": {
+    "production": {
+      "external": true,
+      "name": "alex-kiber-production"
+    },
+    "ingress": {
+      "external": true,
+      "name": "coolify"
+    }
+  }
+}
