@@ -1,9 +1,10 @@
+import h2Remediation from '../../data/content/robot-card-pilot/arenda-unitree-h2.json';
 import r1Remediation from '../../data/content/robot-card-pilot/arenda-unitree-r1.json';
 import g1Remediation from '../../data/content/robot-card-pilot/arenda-unitree-g1.json';
 import x2Remediation from '../../data/content/robot-card-pilot/arenda-agibot-x2.json';
 import roboshashkiPilot from '../../data/content/robot-card-pilot/arenda-roboshashki.json';
 import senseRobotPilot from '../../data/content/robot-card-pilot/arenda-senserobot.json';
-const pilotCopyBySlug: Record<string, typeof roboshashkiPilot | undefined> = { 'arenda-unitree-r1': r1Remediation, 'arenda-roboshashki': roboshashkiPilot, 'arenda-senserobot': senseRobotPilot, 'arenda-unitree-g1': g1Remediation, 'arenda-agibot-x2': x2Remediation };
+const pilotCopyBySlug: Record<string, typeof roboshashkiPilot | undefined> = { 'arenda-unitree-h2': h2Remediation, 'arenda-unitree-r1': r1Remediation, 'arenda-roboshashki': roboshashkiPilot, 'arenda-senserobot': senseRobotPilot, 'arenda-unitree-g1': g1Remediation, 'arenda-agibot-x2': x2Remediation };
 import type { RobotPageRecord } from './robot-pages';
 import type { RobotCardTemplateData } from './page-type-templates';
 

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://roboagency.ru/unitree-h2-robot-gumanoid-arenda",
+      "title": "",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Пропорции почти как у человека: рост примерно 182 см, вес около 70 кг (с аккумулятором). Благодаря этому он органично вписывается в привычные пространства — коридоры, выставочные залы, учебные лаборатории — и может выполнять действия на высоте человеческого роста без дополнительных подставок и адаптаций.",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://shop.unitree.com/products/unitree-h2",
+      "title": "",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "31 degrees of freedom, 360N.m joint torque, and precise dynamic movement replication. Algorithms evolve continuously via OTA.",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://mir-robotov.com",
+      "title": "",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "35 000 ₽/час",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://xn--80acb3cbjrd.xn--p1ai/gumanoid-unitree-h2",
+      "title": "",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Рост 160 см и пропорции взрослого человека. Он не игрушечный, а по-настоящему внушительный. Гости воспринимают",
+          "added": "2026-09-11"
+        }
+      ]
+    }
+  ]
+}
