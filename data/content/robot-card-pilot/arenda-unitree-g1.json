@@ -15,7 +15,8 @@
     "openQuestions": [
       "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
     ],
-    "approvalEvidence": ""
+    "approvalEvidence": "docs/review/humanoid-full-model-copy/owner-approval.json",
+    "ownerCopyApproved": true
   },
   "slug": "arenda-unitree-g1",
   "seo": {
