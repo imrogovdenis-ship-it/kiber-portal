@@ -1,0 +1,21 @@
+{
+  "sourceCommit": "a3c428506c27f87490faeb0bd71a9702816cc24c",
+  "previewUrl": "https://jino-preview.kiber-portal.ru/",
+  "productionDomainSwitched": false,
+  "previewReady": true,
+  "productionCutoverAllowed": false,
+  "mode": "dry-run",
+  "sourceRuntimeImage": "alex-kiber-production-api:a3c428506c27f87490faeb0bd71a9702816cc24c",
+  "bridgeSha256": "7f157e3c09fd7a01f6037623c1e29d7d857acbfcf9bf95b45a353563deb2d15a",
+  "routes": 35,
+  "browserViewportChecks": 8,
+  "browserFormChecks": 2,
+  "secretsInRepository": false,
+  "remainingGates": [
+    "Stable API origin hostname and independent TLS renewal before main-domain DNS cutover",
+    "Production bridge configuration and explicit live activation approval",
+    "Approved real delivery check before cutover",
+    "Main-domain Jino binding/TLS and explicit DNS cutover approval",
+    "Per-client rate limiting/client-IP propagation and delivery monitoring review"
+  ]
+}

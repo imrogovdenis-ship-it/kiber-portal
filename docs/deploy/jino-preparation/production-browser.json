@@ -1,0 +1,180 @@
+[
+  {
+    "width": 390,
+    "path": "/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [],
+    "lazyNotRequested": []
+  },
+  {
+    "width": 390,
+    "path": "/robots/arenda-unitree-g1/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      }
+    ],
+    "lazyNotRequested": []
+  },
+  {
+    "width": 390,
+    "path": "/robots/arenda-agibot-x2/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7777948402948403,
+        "fit": "cover"
+      }
+    ],
+    "lazyNotRequested": []
+  },
+  {
+    "width": 390,
+    "path": "/roboty-gumanoidy/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [],
+    "lazyNotRequested": [
+      "/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp",
+      "/images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6664-3537-4635-a266-633164383463__05.webp",
+      "/images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6631-3463-4837-b233-303232393430__08.webp",
+      "/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6631-3064-4130-b065-386464393630__06.webp",
+      "/images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3165-6261-4366-b538-336262343464__04.webp",
+      "/images/video-posters/cf7c2eeb-8e97-43e8-a8b6-42af543778bc.webp",
+      "/images/video-posters/a52a9cf1-feae-4722-9032-48adb6ce37a7.webp",
+      "/images/video-posters/e9ed1c85-d5f0-4940-9b29-693671fa3ba3.webp",
+      "/images/video-posters/efbff366-c51f-422b-910c-515e6e6370f1.webp",
+      "/images/video-posters/a2899060-ac12-4d42-be2b-72feeb2b83f8.webp"
+    ]
+  },
+  {
+    "width": 1440,
+    "path": "/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [],
+    "lazyNotRequested": []
+  },
+  {
+    "width": 1440,
+    "path": "/robots/arenda-unitree-g1/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778225806451613,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778225806451613,
+        "fit": "cover"
+      }
+    ],
+    "lazyNotRequested": []
+  },
+  {
+    "width": 1440,
+    "path": "/robots/arenda-agibot-x2/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778225806451613,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778748571812621,
+        "fit": "cover"
+      },
+      {
+        "ratio": 1.7778225806451613,
+        "fit": "cover"
+      }
+    ],
+    "lazyNotRequested": []
+  },
+  {
+    "width": 1440,
+    "path": "/roboty-gumanoidy/",
+    "status": 200,
+    "overflow": false,
+    "capabilities": [],
+    "lazyNotRequested": [
+      "/images/video-posters/efbff366-c51f-422b-910c-515e6e6370f1.webp",
+      "/images/video-posters/a2899060-ac12-4d42-be2b-72feeb2b83f8.webp"
+    ]
+  }
+]
