@@ -1,3 +1,4 @@
+import promobotRemediation from '../../data/content/robot-card-pilot/arenda-promobot-v4.json';
 import tronRemediation from '../../data/content/robot-card-pilot/arenda-robota-tron.json';
 import sofiaRemediation from '../../data/content/robot-card-pilot/arenda-robota-sofiya.json';
 import ardiRemediation from '../../data/content/robot-card-pilot/arenda-robota-ardi.json';
@@ -8,7 +9,7 @@ import g1Remediation from '../../data/content/robot-card-pilot/arenda-unitree-g1
 import x2Remediation from '../../data/content/robot-card-pilot/arenda-agibot-x2.json';
 import roboshashkiPilot from '../../data/content/robot-card-pilot/arenda-roboshashki.json';
 import senseRobotPilot from '../../data/content/robot-card-pilot/arenda-senserobot.json';
-const pilotCopyBySlug: Record<string, typeof roboshashkiPilot | undefined> = { 'arenda-robota-tron': tronRemediation, 'arenda-robota-sofiya': sofiaRemediation, 'arenda-robota-ardi': ardiRemediation, 'arenda-noetix-bumi': bumiRemediation, 'arenda-unitree-h2': h2Remediation, 'arenda-unitree-r1': r1Remediation, 'arenda-roboshashki': roboshashkiPilot, 'arenda-senserobot': senseRobotPilot, 'arenda-unitree-g1': g1Remediation, 'arenda-agibot-x2': x2Remediation };
+const pilotCopyBySlug: Record<string, typeof roboshashkiPilot | undefined> = { 'arenda-promobot-v4': promobotRemediation, 'arenda-robota-tron': tronRemediation, 'arenda-robota-sofiya': sofiaRemediation, 'arenda-robota-ardi': ardiRemediation, 'arenda-noetix-bumi': bumiRemediation, 'arenda-unitree-h2': h2Remediation, 'arenda-unitree-r1': r1Remediation, 'arenda-roboshashki': roboshashkiPilot, 'arenda-senserobot': senseRobotPilot, 'arenda-unitree-g1': g1Remediation, 'arenda-agibot-x2': x2Remediation };
 import type { RobotPageRecord } from './robot-pages';
 import type { RobotCardTemplateData } from './page-type-templates';
 
