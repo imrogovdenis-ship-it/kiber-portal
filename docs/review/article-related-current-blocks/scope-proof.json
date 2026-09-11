@@ -1,0 +1,32 @@
+[
+  {
+    "route": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "outsideBlocksIdentical": true,
+    "outsideSha256": "e429940e9a8cebd7a82c8595112f8e4ed7b17beb1dfcb7a057b2fe1deedc1aae"
+  },
+  {
+    "route": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+    "outsideBlocksIdentical": true,
+    "outsideSha256": "3c9bed9d6484de6c4c2e07f2ddc2ce66beb220e78d30adfcd9874cc384c0feb1"
+  },
+  {
+    "route": "/articles/unitree-g1-na-korporative/",
+    "outsideBlocksIdentical": true,
+    "outsideSha256": "3c230c17a48d7ccf7ae39e5f1e1eb38b612bfa6c1f7c0e5cf1e2ba2591896895"
+  },
+  {
+    "route": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+    "outsideBlocksIdentical": true,
+    "outsideSha256": "c68f6f80f52115c148089bd6bbd1fddc3f57056bc3537989953a06ca62b8e470"
+  },
+  {
+    "route": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+    "outsideBlocksIdentical": true,
+    "outsideSha256": "651ae29b8a0211a213bf928cb23acf1526be40cf878cfdee654dde6535cbd12b"
+  },
+  {
+    "route": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "outsideBlocksIdentical": true,
+    "outsideSha256": "85fbdd343d38059218880e3a6083f535d43bfe85c69a023439ce0acc038567d9"
+  }
+]
