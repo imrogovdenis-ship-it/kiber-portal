@@ -237,7 +237,7 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   assert.match(componentSource, /const quickCtaNoWrap = template\.robot\.priceDisplay/);
   assert.match(componentSource, /titleNoWrap: quickCtaNoWrap/);
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp'/);
-  assert.match(componentSource, /alt: (?:(?:isContentPilot|\(isContentPilot \|\| isHumanoidPair\)) \? '[^']+' : )?'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
+  assert.match(componentSource, /alt: (?:(?:isContentPilot|\(isContentPilot \|\| isHumanoidPair(?: \|\| robotSlug === 'arenda-unitree-r1')?\)) \? '[^']+' : )?'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
   assert.match(componentSource, /const robotFinalCta = \{[\s\S]*\.\.\.homeRobotCardFinalCta/);
   assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);

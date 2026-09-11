@@ -13,6 +13,8 @@ import { homeArticles, homeFinalCta, homeGosha, homeRobotCardFinalCta } from '..
 import capabilityImageRegistry from '../../../data/models/robot-capability-images.source.json';
 import type { RobotCardData } from '../../../design-system/schemas/fixture.schema';
 
+import r1Editorial from '../../../data/content/robot-card-pilot/arenda-unitree-r1.json';
+
 const { template } = Astro.props as { template: RobotCardTemplateData };
 const robotSlug = template.seo.canonical.split('/').filter(Boolean).at(-1) ?? template.robot.name;
 const isHumanoidPair = ['arenda-unitree-g1', 'arenda-agibot-x2'].includes(robotSlug);
@@ -72,6 +74,7 @@ const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
 const capabilityImages = capabilityImageRegistry.robots.find((robot) => robot.slug === robotSlug)?.images ?? [];
 
 const relatedSlugsByRobotSlug: Record<string, string[]> = {
+  'arenda-unitree-r1': r1Editorial.related.robotSlugs,
   'arenda-unitree-g1': ['arenda-agibot-x2', 'arenda-unitree-r1', 'arenda-unitree-h2', 'arenda-promobot-v4'],
   'arenda-agibot-x2': ['arenda-unitree-g1', 'arenda-unitree-r1', 'arenda-unitree-h2', 'arenda-promobot-v4'],
   'arenda-robot-barmen': ['arenda-robo-kofeyni', 'arenda-mini-robo-kofeyni', 'arenda-kettybot', 'arenda-promobot-v4'],
@@ -122,7 +125,7 @@ const relatedRobots = getRobotPages()
       category: categoryLabels[robot.category] ?? 'Робот для мероприятий',
       price: robot.pricing.display,
       price_disclaimer: robot.pricing.disclaimer as RobotCardData['price_disclaimer'],
-      description: relatedRobotDescriptionBySlug[robot.slug] ?? robot.seo.description.slice(0, 132),
+      description: (robotSlug === 'arenda-unitree-r1' ? (r1Editorial.related.robotDescriptions as Record<string, string>)[robot.slug] : undefined) ?? relatedRobotDescriptionBySlug[robot.slug] ?? robot.seo.description.slice(0, 132),
       badge: relatedName === robotDisplayName ? 'Сейчас смотрим' : (index === 0 ? 'Похожий формат' : undefined),
       image: robot.media.hero,
       analytics: { event: 'robot_card_click' as const, placement: 'catalog' as const, position: index + 1 },
@@ -193,7 +196,7 @@ const orderFlow = isContentPilot ? ['Пришлите дату, город, ад
 const aiSummary = template.aiSummary;
 const robotQuickCtaImage = {
   src: '/images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp',
-  alt: (isContentPilot || isHumanoidPair) ? 'Кибер Гоша в красной ушанке машет рукой' : 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1',
+  alt: (isContentPilot || isHumanoidPair || robotSlug === 'arenda-unitree-r1') ? 'Кибер Гоша в красной ушанке машет рукой' : 'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1',
 };
 const robotQuickCta = {
   ...homeFinalCta,
@@ -269,10 +272,10 @@ const robotArticles = {
   ...homeArticles,
   title: ownerArticleBlock?.title ?? `Материалы по аренде ${robotDisplayName}`,
   description: ownerArticleBlock?.description ?? `Подбираем материалы о сценариях аренды, подготовке площадки и работе ${robotDisplayName} на мероприятии.`,
-  cards: isHumanoidPair ? approvedHumanoidArticles.filter((_, i) => (robotSlug === 'arenda-unitree-g1' ? [0, 2, 5] : [0, 1, 3]).includes(i)).map(card => ({ ...card, href: card.canonicalHref })) : articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
+  cards: robotSlug === 'arenda-unitree-r1' ? r1Editorial.related.articleRoutes.map(href => approvedHumanoidArticles.find(card => card.canonicalHref === href)).filter((card): card is (typeof approvedHumanoidArticles)[number] => Boolean(card)).map(card => ({ ...card, href: card.canonicalHref })) : isHumanoidPair ? approvedHumanoidArticles.filter((_, i) => (robotSlug === 'arenda-unitree-g1' ? [0, 2, 5] : [0, 1, 3]).includes(i)).map(card => ({ ...card, href: card.canonicalHref })) : articleHrefs ? homeArticles.cards.filter((card) => articleHrefs.includes(card.href)) : homeArticles.cards.slice(0, homeArticles.cards.length >= 6 ? 6 : 3),
 };
 const robotCatalogTitle = 'Вас также могут заинтересовать';
-const robotCatalogDescription = 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
+const robotCatalogDescription = robotSlug === 'arenda-unitree-r1' ? r1Editorial.related.description : 'Похожие форматы помогают закрыть соседние задачи: сервисную зону, промо-интерактив, фото- или портретную активность. Подборка остаётся предварительной: менеджер сверит площадку, поток гостей и сценарий события.';
 ---
 
 <article class="page-template page-template--robot" data-kiber-task="KIBER-94" data-page-type="robot_card" data-content-pilot={(isContentPilot || isHumanoidPair) ? 'true' : undefined}>
