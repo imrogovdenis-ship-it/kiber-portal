@@ -5,17 +5,28 @@
   "previewReady": true,
   "productionCutoverAllowed": false,
   "mode": "dry-run",
-  "sourceRuntimeImage": "alex-kiber-production-api:a3c428506c27f87490faeb0bd71a9702816cc24c",
-  "bridgeSha256": "7f157e3c09fd7a01f6037623c1e29d7d857acbfcf9bf95b45a353563deb2d15a",
+  "sourceRuntimeImage": "alex-kiber-jino-api:681289e3019fe28fc9013f2020215285ad4ad5e8",
+  "bridgeSha256": "0bae6ad68047cf7b708ad94973670c2d347f41dc527b07029c2ef77c7ce72f65",
   "routes": 35,
   "browserViewportChecks": 8,
   "browserFormChecks": 2,
   "secretsInRepository": false,
   "remainingGates": [
-    "Stable API origin hostname and independent TLS renewal before main-domain DNS cutover",
-    "Production bridge configuration and explicit live activation approval",
-    "Approved real delivery check before cutover",
-    "Main-domain Jino binding/TLS and explicit DNS cutover approval",
-    "Per-client rate limiting/client-IP propagation and delivery monitoring review"
-  ]
+    "Owner text corrections and remaining robot cards",
+    "Explicit main-domain publication approval",
+    "Main-domain Jino binding/TLS and controlled DNS cutover only after approval"
+  ],
+  "apiTechnicalReady": true,
+  "apiOrigin": "https://api-origin.kiber-portal.ru",
+  "apiSourceCommit": "681289e3019fe28fc9013f2020215285ad4ad5e8",
+  "ownerPublicationHold": true,
+  "ownerPublicationHoldReason": "Сначала исправить ошибки в текстах и доделать карточки роботов",
+  "liveTestApproved": true,
+  "liveTestCompleted": true,
+  "articlesCorrectionPR": 95,
+  "articlesCorrectionSourceCommit": "48e0aed891b901df889bb250d309324bc03fd9b4",
+  "monitoring": {
+    "redactedDeliveryLog": true,
+    "externalAlertSchedule": false
+  }
 }

@@ -1,41 +1,47 @@
-# Подготовка КИБЕР ПОРТАЛ к Джино — без переключения production
+# КИБЕР ПОРТАЛ: Джино и API подготовлены, публикация отложена
 
-## Рабочий предпросмотр
-https://jino-preview.kiber-portal.ru/
+## Актуальное решение владельца
+Владелец подтвердил работу полного preview с VPN и без. Затем разрешил постоянный API и **один помеченный live-тест**, но запретил перенос основного домена до исправления текстов и доработки карточек. В статьях разрешены только два нижних блока; они исправлены отдельным PR #95 и опубликованы только на preview.
 
-Отдельный сайт в существующем контейнере хостинга qodmg: `/domains/jino-preview.kiber-portal.ru`. PHP **8.4** выбран только для него; SSL выпущен Джино для поддомена. При добавлении привязки Джино автоматически создал DNS-зону поддомена; apex/www КИБЕР не переключались и сохраняют прежний IP.
+## Действующий предпросмотр
+https://jino-preview.kiber-portal.ru/ — отдельный сайт/document root `/domains/jino-preview.kiber-portal.ru` на существующем Джино-хостинге qodmg. PHP 8.4 настроен только для него. SSL выпущен для preview. При его привязке Джино автоматически создал отдельную DNS-зону; это не переключение apex/www.
 
-Полная статика извлечена из production web image указанного source commit. Медиа, CSS и JS сохранены; только в HTML добавлены noindex и заметная полоса dry-run. Используется preview.htaccess из infra/jino-preview, а не production recipe.
+24 карточки, шесть статей, подборка и остальные launch routes доступны. В HTML добавлены только noindex и явная полоса dry-run. Публичные формы остаются dry-run. Статика — исходный release плюс ровно две изменённые секции в шести статьях из PR #95; styles/assets вне этого scope не менялись.
 
-## Серверный мост
-Браузер → same-origin PHP bridge на Джино → защищённый HTTPS маршрут на отдельный `alex-kiber-jino-prep-api`. API использует штатный source-built image, DEPLOY_ENV=preview, LEAD_ROUTING_ENABLED=true, LEAD_ROUTING_MODE=dry-run, origin только preview. CRM/Telegram credentials в тестовый контейнер не переданы. Публичных host ports нет. Только новый API подключён к существующему proxy network; общие сервисы и production контейнеры не пересоздавались.
+## Независимый API origin
+https://api-origin.kiber-portal.ru/ указывает отдельной A-записью на API-сервер, имеет независимый TLS-сертификат/ACME route. Основной домен и www сохраняют 38.180.37.42.
 
-Служебная авторизация, route/IP и конфиг находятся вне Git и вне document roots, mode 600. В PHP фиксированы upstream URL и TLS verification; CURLOPT_RESOLVE предотвращает циклическое обращение после будущего переезда основного домена. Это временный путь подготовки: независимое hostname/TLS renewal API — обязательный gate перед cutover, а не решённая этим PR задача.
+- `/dry-run/api/leads` → `alex-kiber-jino-prep-api`, без provider credentials.
+- `/live/api/leads` → `alex-kiber-jino-live-api`, live configuration, production approval flag, provider credentials из закрытого project .env.
+- Оба маршрута защищены отдельной служебной Basic Auth. Browser никогда не получает служебные credentials и обращается только на Джино.
+- Runtime image/source commit приведены в readiness.json; image собран штатным Dockerfile target api, не из staging overlay.
+- Нет host ports; ограничены память/CPU и размер журналов. Общий Traefik, прежние production контейнеры и VR-сайт не заменялись.
 
-Мост ограничивает методы/пути/Origin, тела до 64 KiB, типы содержимого; не поддерживает файлы. PHP разбирает multipart автоматически, поэтому $_POST конвертируется в urlencoded для исходного Node handler; бизнес-логика не дублируется. JSON/HTML результаты и ошибки relay сохраняются; успешный режим строго dry-run, неожиданный live/missing mode fail-closed. При недоступности upstream возвращается 503, не ложная благодарность.
+## PHP-мост
+`infra/jino-preview/bridge.php` и preview.htaccess реально развёрнуты на Джино. Default config — вне document roots в ACCOUNT_HOME/.kiber-jino-prep/config.php, mode 600; шаблон без credentials находится в config.example.php.
 
-## Реальная проверка
-- 35 маршрутов: 200 и noindex.
-- 8 browser viewport checks: главная, G1, X2, подборка; assets decoded, overflow отсутствует, capabilities 16:9.
-- Два реальных browser FormData POST: 202 + dry-run header + same-origin /lead/thanks/.
-- Отдельный multipart HTTP POST подтвердил channels.amoCRM/telegram.skipped=dry-run.
-- Status, JSON POST, unsupported media, HTML fallback tests прошли.
-- 8 negative security checks: 400/403/413/405/404.
-- Реально остановлен только credential-free prep API: мост вернул 503, после старта восстановился 200/dry-run.
-- ZIP и одноразовый распаковщик удалены; PHP probe удалён.
+Upstream URL/hostname, TLS verification и origin фиксированы private config. CURLOPT_RESOLVE предотвращает DNS loop, но теперь использует именно независимый api-origin hostname. Пути/методы/типы содержимого ограничены; body до 64 KiB, файлы/массивы форм не принимаются. Multipart разбирается PHP в $_POST, затем передаётся urlencoded с корректным Content-Type. Клиентский IP берётся из REMOTE_ADDR, а не из присланного клиентом заголовка. API принимает этот отдельный заголовок только при явном LEAD_TRUSTED_CLIENT_IP_HEADER на защищённом gateway-контуре; публичный старый API не менялся.
 
-## Повторить проверки
+`expected_mode` задаётся только private config, по умолчанию dry-run; неожиданный режим/upstream failure возвращает 503. HTML form fallback и JSON redirects остаются same-origin. POST timeout учитывает bounded retries API.
+
+## Разрешённый live-тест
+Один защищённый одноразовый вход вызвал тот же мост с private live config. Он был защищён токеном и атомарным маркером попытки. Получены HTTP 200/live и подтверждения amoCRM/Telegram, по одной попытке; запись amoCRM дополнительно прочитана по возвращённому UID. См. authorized-live-test.json. Это подтверждение provider API, не утверждение о прочтении уведомления владельцем.
+
+Одноразовый web entry удалён (404), токен удалён локально. Обычный `/api/leads/status` после теста снова проверен: 200/dry-run; он не переключался в live для остальных посетителей.
+
+## Мониторинг и проверки
+Runtime пишет redacted `lead.delivery.completed` events с trace/request id и результатами каналов, без имени/контакта. LEAD_STRUCTURED_LOGGING включён на новых API контейнерах. Активное расписание внешних алертов этим PR не объявляется настроенным.
+
+Проверены 35 routes, 8 responsive checks, два browser FormData dry-run POST → thanks; отдельно получено тело multipart ответа с skipped=dry-run для обоих каналов. Восемь негативных checks, реальный fail-closed 503 при остановке только prep API и восстановление 200/dry-run. Десять runtime tests включают RED→GREEN для per-client rate limiting и redacted log sink.
+
 ```sh
 export KIBER_JINO_PREVIEW_URL=https://jino-preview.kiber-portal.ru
 for f in infra/jino-preview/test-jino-bridge*.py; do python3 "$f" || exit; done
+node --import tsx --test tests/runtime/*.test.ts
 ```
-Тесты обращаются к реальному dry-run preview, не являются заявлением о покрытии PHP в стандартном npm CI. Browser/security evidence относится к опубликованному preview.
+Эти HTTP tests только dry-run. **Не повторять live POST без нового разрешения владельца.**
 
-## Осторожно с изоляцией
-Первоначальная рабочая подпапка внутри технического VR-домена исчезла во время подготовки. Причина/инициатор не установлены. Не восстанавливать её и не складывать КИБЕР в чужой обновляемый document root. Копия вынесена в отдельный домен/каталог.
+## Изоляция и откат
+Первая рабочая подпапка внутри технического VR-домена исчезла во время подготовки; инициатор не установлен. Она не восстанавливалась. КИБЕР вынесен в отдельный сайт/каталог. Архив, extractor, probes и live web entry удалены.
 
-## Откат подготовки
-После решения об откате удалить только новый preview binding/catalog, `alex-kiber-jino-prep-api` и выделенный private config. Сначала проверить, что ресурс никем не используется; не удалять весь hosting container или другие domains. Основной DNS не изменён — откат production для этой подготовки не требуется.
-
-## До публикации
-См. readiness.json: previewReady=true, productionCutoverAllowed=false. Нужны отдельный устойчивый API origin/TLS, проверка клиентского rate limiting и мониторинга, production/live конфиг и разрешённая доставка, main-domain binding/TLS на Джино и отдельное согласование DNS. Диагностическая готовность не означает, что эти шаги уже выполнены.
+После решения об откате удалять только новые KIBER ресурсы; сначала проверить использование. Не удалять hosting container, VR domains или общие AI Class сервисы. Перед переключением основного домена получить новое явное разрешение; бизнес/content hold остаётся активным.

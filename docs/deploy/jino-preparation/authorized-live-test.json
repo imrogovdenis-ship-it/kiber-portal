@@ -1,0 +1,25 @@
+{
+  "requestId": "jino-live-ef52e177876e44ea94282dcc66fe9d67",
+  "marker": "ТЕСТ ДЖИНО — НЕ КЛИЕНТ",
+  "httpStatus": 200,
+  "mode": "live",
+  "ok": true,
+  "attempts": 1,
+  "channels": {
+    "amoCRM": {
+      "ok": true,
+      "unsortedUid": "9b281c7aae1426cbe4f477bdc3f5b2af8c26b57727098ecc1278df0134ab",
+      "attempts": 1
+    },
+    "telegram": {
+      "ok": true,
+      "messageId": 16,
+      "attempts": 1
+    }
+  },
+  "amoCrmReadbackVerified": true,
+  "ownerReceiptConfirmation": false,
+  "oneShotEntryRemoved": true,
+  "publicPreviewModeAfterTest": "dry-run",
+  "mainDomainSwitched": false
+}

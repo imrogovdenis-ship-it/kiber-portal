@@ -3,7 +3,8 @@
 return [
  'prefix' => '',
  'origin' => 'https://jino-preview.kiber-portal.ru',
- 'url' => 'https://UPSTREAM_HOST/PROTECTED_ROUTE',
- 'resolve' => 'UPSTREAM_HOST:443:UPSTREAM_IP',
+ 'url' => 'https://api-origin.kiber-portal.ru/dry-run',
+ 'resolve' => 'api-origin.kiber-portal.ru:443:38.180.37.42',
+ 'expected_mode' => 'dry-run',
  'auth' => 'REPLACE_WITH_PRIVATE_SERVICE_CREDENTIAL',
 ];
