@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "arenda-unitree-r1",
+    "onlySixImageStyleAttributesChanged": true,
+    "allOtherHtmlByteIdentical": true,
+    "cssByteIdentical": true
+  },
+  {
+    "slug": "arenda-unitree-h2",
+    "onlySixImageStyleAttributesChanged": true,
+    "allOtherHtmlByteIdentical": true,
+    "cssByteIdentical": true
+  },
+  {
+    "slug": "arenda-unitree-g1",
+    "onlySixImageStyleAttributesChanged": false,
+    "allOtherHtmlByteIdentical": true,
+    "cssByteIdentical": true
+  }
+]
