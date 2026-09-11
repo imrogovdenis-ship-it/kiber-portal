@@ -122,13 +122,13 @@ test('homepage owner feedback pass matches requested cards FAQ and CTA behavior'
 
   assert.match(imageCards, /data-drag-slider=\{variant === 'overlay' \? 'true' : undefined\}/);
   assert.match(imageCards, /flex:\s*0 0 23rem; width:\s*23rem; height:\s*23rem; min-height:\s*23rem/);
-  assert.match(imageCards, /<script is:inline src="\/scripts\/home-image-cards-slider\.js" defer><\/script>/);
+  assert.match(imageCards, /<script is:inline src="\/scripts\/home-image-cards-slider\.js\?v=mobile-shared-1" defer><\/script>/);
   assert.match(imageCardsScript, /const dx = pageX\(event, startX\) - startX/);
   assert.match(imageCardsScript, /slider\.scrollLeft = startScroll - dx/);
   assert.match(imageCardsScript, /addEventListener\('mousedown', start\)/);
   assert.match(imageCardsScript, /window\.addEventListener\('mousemove', move, \{ passive: false \}\)/);
-  assert.match(imageCardsScript, /addEventListener\('touchstart', start, \{ passive: false \}\)/);
-  assert.match(imageCardsScript, /window\.addEventListener\('touchmove', move, \{ passive: false \}\)/);
+  assert.ok(imageCardsScript.includes("slider.addEventListener('touchstart', () => { moved = 0; }, { passive: true });"));
+  assert.ok(!imageCardsScript.includes("addEventListener('touchmove'"), 'native touch must preserve vertical scrolling; browser touch regression covers swipe');
   assert.match(imageCardsScript, /event\.preventDefault\(\);\n\s*\};\n\n\s*const move/s);
   assert.match(imageCards, /scrollbar-width:\s*none/);
   assert.match(imageCards, /::-webkit-scrollbar\s*\{\s*display:\s*none/);

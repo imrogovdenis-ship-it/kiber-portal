@@ -71,7 +71,7 @@ const ownerQuickCtaTitleBySlug: Record<string, string> = {
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
 const robotDisplayName = ownerDisplayNameBySlug[robotSlug] ?? template.robot.name;
 const displayHeroTitle = template.seo.h1;
-const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
+const quickCtaTitle = `Арендуйте ${robotTypeAccusative} ${robotSlug === 'arenda-robota-ardi' ? 'Арди' : template.robot.name} для мероприятия ${template.robot.priceDisplay}`;
 const displayQuickCtaTitle = ownerQuickCtaTitleBySlug[robotSlug] ?? quickCtaTitle;
 const quickCtaNoWrap = template.robot.priceDisplay;
 const leadHref = `/lead/request/?robot=${robotSlug}&source=kiber94-preview`;
@@ -438,7 +438,7 @@ const robotCatalogDescription = robotSlug === 'arenda-robota-ardi' ? ardiEditori
   </section>
 </article>
 
-<script is:inline src="/scripts/robot-card-gallery.js" defer></script>
+<script is:inline src="/scripts/robot-card-gallery.js?v=mobile-shared-1" defer></script>
 
 <style>
   .page-template--robot {
