@@ -1,0 +1,15 @@
+{
+  "key": "c82f3d0b8fe643ca",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:47.732616+00:00",
+  "textChars": 99,
+  "challenge": false,
+  "originalUrl": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
+  "sourceTextSha256": "d5e38859f3e32900741991c89352420c36ee54ca6923a2be8c760e642438ac06",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

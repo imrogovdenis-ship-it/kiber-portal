@@ -1,0 +1,17 @@
+{
+  "key": "a802d25e77643114",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/robot-ardi",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:21.056823+00:00",
+  "textChars": 1859,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/robot-ardi",
+  "sourceTextSha256": "63724190155ff17e5036f8701587dc4b2469df942172c9ca9f998c95834e833a",
+  "evidenceExcerpts": [
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота АРДИ"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

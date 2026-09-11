@@ -1,0 +1,33 @@
+{
+  "key": "0645b9f3671a31a6",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://robodocs.3logic.ru/docs/Pudu/KettyBot/kettybot_technical_characteristics.html",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:45.161957+00:00",
+  "textChars": 3457,
+  "challenge": false,
+  "originalUrl": "https://robodocs.3logic.ru/docs/Pudu/KettyBot/kettybot_technical_characteristics.html",
+  "sourceTextSha256": "6c222fbb0281c8467ad5697401b19631d3d1f01321c67c48943aeabccb30af58",
+  "evidenceExcerpts": [
+    "Технические характеристики | База знаний отдела робототехники 3Logic Group Skip to main content",
+    "Технические характеристики Bunker Быстрый Старт",
+    "Технические характеристики Быстрый старт",
+    "Технические характеристики Технические характеристики",
+    "Технические характеристики Параметр",
+    "Физические характеристики Размеры",
+    "38 кг Максимальная скорость передвижения",
+    "Максимальная скорость передвижения 4.3 км/ч",
+    "30 кг Класс защиты от внешнего воздействия",
+    "Время работы 8 ~ 24 ч",
+    "Разрешенная нагрузка на поднос 10 кг",
+    "10 кг Максимальная нагрузка на поднос",
+    "Максимальная нагрузка на поднос 10 кг",
+    "10 кг Ширина подносов",
+    "Электрические характеристики Емкость аккумулятора",
+    "Wi-Fi V",
+    "Простейший функционал Режим поздравления, танец, режим сопровождения в точку, воспроизведение аудио, генерация речи из текста"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

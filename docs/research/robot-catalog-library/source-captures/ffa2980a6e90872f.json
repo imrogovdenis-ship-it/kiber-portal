@@ -1,0 +1,19 @@
+{
+  "key": "ffa2980a6e90872f",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/robot-artist",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:59.631839+00:00",
+  "textChars": 1817,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/robot-artist",
+  "sourceTextSha256": "15463d11ecef36ced5ef9612fee0e446017f6b4cbf983fa5364708644d8aff6a",
+  "evidenceExcerpts": [
+    "12,6 кг Автономное принятие решений",
+    "4 кг максимальная нагрузка В стоимость аренды робота входит: аренда + доставка + обучение",
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота художника"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

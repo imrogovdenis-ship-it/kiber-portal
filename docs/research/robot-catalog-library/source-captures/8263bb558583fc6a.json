@@ -1,0 +1,15 @@
+{
+  "key": "8263bb558583fc6a",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:41.646750+00:00",
+  "textChars": 56,
+  "challenge": false,
+  "originalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
+  "sourceTextSha256": "1a54f9aad1cdb25fa4324ab518f206e4566aa0b67635865ec5c033f6db98c9ac",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

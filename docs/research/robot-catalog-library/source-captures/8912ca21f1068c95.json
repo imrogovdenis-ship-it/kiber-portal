@@ -1,0 +1,15 @@
+{
+  "key": "8912ca21f1068c95",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://www.art-active24.ru/robosobaka-xiaomi/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:32.947251+00:00",
+  "textChars": 314,
+  "challenge": false,
+  "originalUrl": "https://www.art-active24.ru/robosobaka-xiaomi/",
+  "sourceTextSha256": "9ad29f2fcae25a3275cb3d6c47d28386eb02741fef9ecc42e3bd754fc0fb46df",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

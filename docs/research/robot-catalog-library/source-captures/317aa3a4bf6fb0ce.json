@@ -1,0 +1,19 @@
+{
+  "key": "317aa3a4bf6fb0ce",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://roboticsband.ru/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:58.442441+00:00",
+  "textChars": 4620,
+  "challenge": false,
+  "originalUrl": "https://roboticsband.ru/",
+  "sourceTextSha256": "9cce3fbb20d5f7cc5f818b97364011886f90b45644b12fe95fd65728a56472d9",
+  "evidenceExcerpts": [
+    "В эту стоимость входит: 6 часов работы робобара на мероприятии в пределах третьего кольца Москвы",
+    "3 кг сухого льда Робобар необходимо обеспечить напитками. Мы предоставляем список и объем необходимых напитков и ингредиентов согласно выбранному вами меню. Некоторые напитки и ингредиенты могут быть включены поставлены вместе с роботом. Полный вариант опций приведен в нашем прайс-листе.",
+    "Арендовать робобар очень просто! 01"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

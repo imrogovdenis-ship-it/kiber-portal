@@ -1,0 +1,15 @@
+{
+  "key": "68222030656cb738",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://new.c.mi.com/ru/post/347555",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:20.199290+00:00",
+  "textChars": 16,
+  "challenge": false,
+  "originalUrl": "https://new.c.mi.com/ru/post/347555",
+  "sourceTextSha256": "af4ad58fda033bd574b220e87d095a3f37f3b97ec44d33c6977ee80fbf2f01e6",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

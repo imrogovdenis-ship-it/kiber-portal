@@ -1,0 +1,15 @@
+{
+  "key": "8e372ee4a008ac51",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:56.446147+00:00",
+  "textChars": 67,
+  "challenge": false,
+  "originalUrl": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
+  "sourceTextSha256": "4f42d7f056d1e8e70d393dffd28d358f9303419b118f834ac8d1881df2e6adf6",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

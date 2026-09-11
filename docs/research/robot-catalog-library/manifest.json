@@ -1,0 +1,886 @@
+{
+  "scope": "all 24 catalog cards; research only, no page edits",
+  "createdAt": "2026-09-11T09:48:12.747146+00:00",
+  "policy": {
+    "reuseWordstat": true,
+    "writeCardsOneAtATime": true,
+    "checkpointAfterEachQueryAndPage": true,
+    "noBrowserSecretsSaved": true,
+    "publicProseSnapshots": "short evidence excerpts plus original summaries; full captures private on agent host",
+    "stopOnCaptcha": true
+  },
+  "models": [
+    {
+      "slug": "arenda-noetix-bumi",
+      "name": "Noetix Bumi",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-noetix-bumi.json",
+      "rentalQuery": "аренда Noetix Bumi",
+      "factQuery": "Noetix Bumi производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Noetix Bumi",
+          "resultCount": 9,
+          "file": "models/arenda-noetix-bumi/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Noetix Bumi производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-noetix-bumi/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "facts",
+          "url": "https://kupirobot.ru/product/robohuman/noetix/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "facts",
+          "url": "https://gumanoids.ru/robot/noetix-bumi/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "context",
+          "url": "https://gumanoids.ru/blog/obzor-noetix-bumi/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robota-ardi",
+      "name": "Робот Арди",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-ardi.json",
+      "rentalQuery": "аренда робота Арди",
+      "factQuery": "робот Арди производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда робота Арди",
+          "resultCount": 9,
+          "file": "models/arenda-robota-ardi/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "робот Арди производитель характеристики",
+          "resultCount": 8,
+          "file": "models/arenda-robota-ardi/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/robot-ardi",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "http://nanojam.ru/products/robot-ardi-s-ii",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://xn--80acb3cbjrd.xn--p1ai/robot-ardi/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "facts",
+          "url": "https://w-expo.tech/ardi",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "facts",
+          "url": "https://rbot100.ru/robot/ardi/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robota-sofiya",
+      "name": "Робот София",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-sofiya.json",
+      "rentalQuery": "аренда робота София",
+      "factQuery": "робот София производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда робота София",
+          "resultCount": 9,
+          "file": "models/arenda-robota-sofiya/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "робот София производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-robota-sofiya/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "identity_candidate",
+          "url": "https://3dpt.ru/product/robot-sophia",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "identity_candidate",
+          "url": "https://unibot.ru/catalog/humanoid/sophia/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robota-tron",
+      "name": "Модульный робот Tron",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-tron.json",
+      "rentalQuery": "аренда робота Tron",
+      "factQuery": "робот Tron производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда робота Tron",
+          "resultCount": 9,
+          "file": "models/arenda-robota-tron/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "робот Tron производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-robota-tron/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/tron",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "facts",
+          "url": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "facts",
+          "url": "https://unibot.ru/catalog/dogs/limx-dynamics-tron-1/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-agibot-x2",
+      "name": "Agibot X2",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-agibot-x2.json",
+      "rentalQuery": "аренда Agibot X2",
+      "factQuery": "Agibot X2 производитель характеристики",
+      "reuseResearch": "docs/review/robot-card-remediation/humanoids-g1-x2/COMPETITOR_GAPS.md",
+      "captureStatus": "reuse_audit_pending",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false
+    },
+    {
+      "slug": "arenda-bellabot",
+      "name": "Робот-официант BellaBot",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-bellabot.json",
+      "rentalQuery": "аренда BellaBot",
+      "factQuery": "BellaBot производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда BellaBot",
+          "resultCount": 9,
+          "file": "models/arenda-bellabot/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "BellaBot производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-bellabot/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental_adjacent_pro",
+          "url": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot-pro/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "manufacturer",
+          "url": "https://www.pudurobotics.com/ru/product/detail/bellabot",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "technical_docs",
+          "url": "https://robodocs.3logic.ru/docs/Pudu/BellaBot/bellabot_technical_characteristics.html",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-glambot",
+      "name": "Робот GlamBot",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-glambot.json",
+      "rentalQuery": "аренда GlamBot",
+      "factQuery": "GlamBot производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда GlamBot",
+          "resultCount": 9,
+          "file": "models/arenda-glambot/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "GlamBot производитель характеристики",
+          "resultCount": 8,
+          "file": "models/arenda-glambot/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://glambot.ru/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://photofabrika.ru/glambot/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/glambot",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-inchbot-l1-w-edu",
+      "name": "Inchbot L1-W EDU",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-inchbot-l1-w-edu.json",
+      "rentalQuery": "аренда Inchbot L1-W EDU",
+      "factQuery": "Inchbot L1-W EDU производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Inchbot L1-W EDU",
+          "resultCount": 9,
+          "file": "models/arenda-inchbot-l1-w-edu/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Inchbot L1-W EDU производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-inchbot-l1-w-edu/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "mixed_offer",
+          "url": "https://qubot.ru/catalog/roboty-sobaki/inchbot-l1-w",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental_catalog",
+          "url": "https://qubot.ru/arenda3",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "facts_adjacent",
+          "url": "https://robowin.ru/roboty-sobaki/inchbot-l1-robot-sobaka/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "identity_candidate",
+          "url": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
+          "captureStatus": "needs_browser"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-kettybot",
+      "name": "Робот-официант KettyBot",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-kettybot.json",
+      "rentalQuery": "аренда KettyBot",
+      "factQuery": "KettyBot производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда KettyBot",
+          "resultCount": 9,
+          "file": "models/arenda-kettybot/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "KettyBot производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-kettybot/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/ketty-bot",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://xn--80acb3cbjrd.xn--p1ai/bellabot-kettybot/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental_adjacent_pro",
+          "url": "https://robob2b.ru/rent/8822/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "manufacturer",
+          "url": "https://www.pudurobotics.com/ru/product/detail/kettybot",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "technical_docs",
+          "url": "https://robodocs.3logic.ru/docs/Pudu/KettyBot/kettybot_technical_characteristics.html",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-klipmeiker",
+      "name": "Робот Клипмейкер",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-klipmeiker.json",
+      "rentalQuery": "аренда Клипмейкер",
+      "factQuery": "Клипмейкер производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Клипмейкер",
+          "resultCount": 9,
+          "file": "models/arenda-klipmeiker/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Клипмейкер производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-klipmeiker/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/klipmeiker",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-mini-robo-kofeyni",
+      "name": "Мини-робо-кофейня",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-mini-robo-kofeyni.json",
+      "rentalQuery": "аренда мини робо-кофейни",
+      "factQuery": "мини Robo-Кофейня производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда мини робо-кофейни",
+          "resultCount": 9,
+          "file": "models/arenda-mini-robo-kofeyni/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "мини Robo-Кофейня производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-mini-robo-kofeyni/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/mini-coffee",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "category_rental",
+          "url": "https://divent.ru/ekb/uslugi/robot-barista/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "different_configuration",
+          "url": "https://www.annorobots.ru/coffee-machine-robot-vending-machine/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "different_configuration",
+          "url": "https://kupirobot.ru/product/robo-kioski/stay-kioski/monty-kiosk/",
+          "captureStatus": "needs_browser"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-promobot-v4",
+      "name": "Promobot V4",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-promobot-v4.json",
+      "rentalQuery": "аренда Promobot V4",
+      "factQuery": "Promobot V4 производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Promobot V4",
+          "resultCount": 9,
+          "file": "models/arenda-promobot-v4/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Promobot V4 производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-promobot-v4/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://arendarobota.com/robot-promobot-v4",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/promobot-v4",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://itis-time.ru/robot/robot-promobotv4/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "manufacturer",
+          "url": "https://promo-bot.ru/production/promobot-v4/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robo-kofeyni",
+      "name": "Робо-кофейня",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robo-kofeyni.json",
+      "rentalQuery": "аренда робо-кофейни",
+      "factQuery": "Robo-Кофейня производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда робо-кофейни",
+          "resultCount": 9,
+          "file": "models/arenda-robo-kofeyni/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Robo-Кофейня производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-robo-kofeyni/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/robotcoffee",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "category_rental",
+          "url": "https://divent.ru/ekb/uslugi/robot-barista/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "category_rental",
+          "url": "https://itis-time.ru/robot/robot-barista/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "different_configuration",
+          "url": "https://prorobotov.org/marketplace_robotov/roboty_dlya_kafe_i_restoranov/1127/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-roboshashki",
+      "name": "Робот для игры в шашки",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-roboshashki.json",
+      "rentalQuery": "аренда робошашки",
+      "factQuery": "Робошашки производитель характеристики",
+      "reuseResearch": "docs/review/robot-card-remediation/pilot-research/COMPETITOR_GAPS.md",
+      "captureStatus": "reuse_audit_pending",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false
+    },
+    {
+      "slug": "arenda-robot-barmen",
+      "name": "Робот-бармен «Робобар»",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robot-barmen.json",
+      "rentalQuery": "аренда робота-бармена Робобар",
+      "factQuery": "робот-бармен «Робобар» производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда робота-бармена Робобар",
+          "resultCount": 9,
+          "file": "models/arenda-robot-barmen/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "робот-бармен «Робобар» производитель характеристики",
+          "resultCount": 8,
+          "file": "models/arenda-robot-barmen/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://divent.ru/ekb/uslugi/robobar/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/robobar",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://xn--80acb3cbjrd.xn--p1ai/robot-barmen/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "different_configuration",
+          "url": "https://roboticsband.ru/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-robota-hudozhnika-a4",
+      "name": "Робот-художник A4",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-hudozhnika-a4.json",
+      "rentalQuery": "аренда робота-художника A4",
+      "factQuery": "робот-художник A4 производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда робота-художника A4",
+          "resultCount": 9,
+          "file": "models/arenda-robota-hudozhnika-a4/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "робот-художник A4 производитель характеристики",
+          "resultCount": 8,
+          "file": "models/arenda-robota-hudozhnika-a4/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/robot-artist",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "category_rental",
+          "url": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "category_rental",
+          "url": "https://itis-time.ru/robot/robohudiznik/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-senserobot",
+      "name": "Робот-шахматист SenseRobot",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-senserobot.json",
+      "rentalQuery": "аренда SenseRobot",
+      "factQuery": "SenseRobot производитель характеристики",
+      "reuseResearch": "docs/review/robot-card-remediation/pilot-research/COMPETITOR_GAPS.md",
+      "captureStatus": "reuse_audit_pending",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false
+    },
+    {
+      "slug": "arenda-sketchbot",
+      "name": "Sketchbot",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-sketchbot.json",
+      "rentalQuery": "аренда Sketchbot",
+      "factQuery": "Sketchbot производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Sketchbot",
+          "resultCount": 9,
+          "file": "models/arenda-sketchbot/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Sketchbot производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-sketchbot/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://divent.ru/ekb/uslugi/sketch-bot/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://sketchbot.ru/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/scetchbot",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "platform_candidate",
+          "url": "https://www.picturemosaics.com/ru/event/sketch/",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-unitree-g1",
+      "name": "Unitree G1",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-unitree-g1.json",
+      "rentalQuery": "аренда Unitree G1",
+      "factQuery": "Unitree G1 производитель характеристики",
+      "reuseResearch": "docs/review/robot-card-remediation/humanoids-g1-x2/COMPETITOR_GAPS.md",
+      "captureStatus": "reuse_audit_pending",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false
+    },
+    {
+      "slug": "arenda-unitree-go2",
+      "name": "Unitree Go2",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-unitree-go2.json",
+      "rentalQuery": "аренда Unitree Go2",
+      "factQuery": "Unitree Go2 производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Unitree Go2",
+          "resultCount": 9,
+          "file": "models/arenda-unitree-go2/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Unitree Go2 производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-unitree-go2/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/unitree-go2",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental_pro",
+          "url": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental_pro",
+          "url": "https://robort.ru/lease/arenda-unitree-go2-pro/",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "manufacturer",
+          "url": "https://shop.unitree.com/products/unitree-go2",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-unitree-h2",
+      "name": "Unitree H2",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-unitree-h2.json",
+      "rentalQuery": "аренда Unitree H2",
+      "factQuery": "Unitree H2 производитель характеристики",
+      "reuseResearch": "docs/review/unitree-h2-copy/RESEARCH.md",
+      "captureStatus": "reuse_audit_pending",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false
+    },
+    {
+      "slug": "arenda-unitree-r1",
+      "name": "Unitree R1",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-unitree-r1.json",
+      "rentalQuery": "аренда Unitree R1",
+      "factQuery": "Unitree R1 производитель характеристики",
+      "reuseResearch": "docs/review/unitree-r1-copy/RESEARCH.md",
+      "captureStatus": "reuse_audit_pending",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false
+    },
+    {
+      "slug": "arenda-uv-box",
+      "name": "Интерактивная витрина UV-BOX",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-uv-box.json",
+      "rentalQuery": "аренда UV-BOX",
+      "factQuery": "UV-BOX производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда UV-BOX",
+          "resultCount": 9,
+          "file": "models/arenda-uv-box/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "UV-BOX производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-uv-box/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "platform_candidate",
+          "url": "https://uv-land.ru/",
+          "captureStatus": "needs_browser"
+        }
+      ]
+    },
+    {
+      "slug": "arenda-xiaomi-cyberdog-2",
+      "name": "Xiaomi Cyberdog 2",
+      "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-xiaomi-cyberdog-2.json",
+      "rentalQuery": "аренда Xiaomi CyberDog 2",
+      "factQuery": "Xiaomi CyberDog 2 производитель характеристики",
+      "reuseResearch": null,
+      "captureStatus": "serp_captured",
+      "sourceReviewStatus": "pending",
+      "readyForWriting": false,
+      "queries": {
+        "rental": {
+          "status": "captured",
+          "query": "аренда Xiaomi CyberDog 2",
+          "resultCount": 9,
+          "file": "models/arenda-xiaomi-cyberdog-2/rental-serp.json"
+        },
+        "facts": {
+          "status": "captured",
+          "query": "Xiaomi CyberDog 2 производитель характеристики",
+          "resultCount": 9,
+          "file": "models/arenda-xiaomi-cyberdog-2/facts-serp.json"
+        }
+      },
+      "selectedSources": [
+        {
+          "roleCandidate": "rental",
+          "url": "https://rent-robot.ru/xiaomi-robot-dog",
+          "captureStatus": "captured_unreviewed"
+        },
+        {
+          "roleCandidate": "rental",
+          "url": "https://robob2b.ru/rent/8827/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "rental_adjacent",
+          "url": "https://www.art-active24.ru/robosobaka-xiaomi/",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "community_source",
+          "url": "https://new.c.mi.com/ru/post/347555",
+          "captureStatus": "needs_browser"
+        },
+        {
+          "roleCandidate": "facts_reseller",
+          "url": "https://djirussia.ru/CyberDog_2",
+          "captureStatus": "captured_unreviewed"
+        }
+      ]
+    }
+  ]
+}

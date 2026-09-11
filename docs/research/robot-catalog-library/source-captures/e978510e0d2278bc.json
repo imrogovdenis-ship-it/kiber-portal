@@ -1,0 +1,15 @@
+{
+  "key": "e978510e0d2278bc",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://uv-land.ru/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:25.995625+00:00",
+  "textChars": 66,
+  "challenge": false,
+  "originalUrl": "https://uv-land.ru/",
+  "sourceTextSha256": "ee4d192da2b9f026c365b650db5b5dd4e02f18d991f0eafebcdfbc2619935346",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

@@ -1,0 +1,15 @@
+{
+  "key": "49d8e316c246946b",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://robowin.ru/roboty-sobaki/inchbot-l1-robot-sobaka/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:54.788236+00:00",
+  "textChars": 62,
+  "challenge": false,
+  "originalUrl": "https://robowin.ru/roboty-sobaki/inchbot-l1-robot-sobaka/",
+  "sourceTextSha256": "73dfa459466251b110be5d4190c0878ebe25758840fdee2b5a686b2e1e10e79e",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

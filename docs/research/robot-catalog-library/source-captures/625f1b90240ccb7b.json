@@ -1,0 +1,19 @@
+{
+  "key": "625f1b90240ccb7b",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/ketty-bot",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:39.698473+00:00",
+  "textChars": 2234,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/ketty-bot",
+  "sourceTextSha256": "f947b4499e075f590fcb630ab0575a408a2a97ecb9ec8d32a4ce2e80dc538841",
+  "evidenceExcerpts": [
+    "Открытие магазина в торговом центре, промо-акция, распространение листовок - любое мероприятие станет гораздо ярче с использованием новых технологий. На выставке Робот-промоутер транслирует Вашу рекламу на большом экране, рассказывает о продукции и провожает посетителей к Вашему стенду. Может выполнять роль консультанта, распространять POS материалы или проводить дегустации.",
+    "Может выполнять роль консультанта, распространять POS материалы или проводить дегустации. Заказать",
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Ketty Bot"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

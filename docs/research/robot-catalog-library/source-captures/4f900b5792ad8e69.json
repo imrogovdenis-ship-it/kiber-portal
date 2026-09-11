@@ -1,0 +1,15 @@
+{
+  "key": "4f900b5792ad8e69",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://xn--80acb3cbjrd.xn--p1ai/robot-barmen/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:00.807319+00:00",
+  "textChars": 3120,
+  "challenge": false,
+  "originalUrl": "https://xn--80acb3cbjrd.xn--p1ai/robot-barmen/",
+  "sourceTextSha256": "f574a703ae739e14014f4de3ac17c3f8f0b5949ecf8546979a5bfa5f8522baf4",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

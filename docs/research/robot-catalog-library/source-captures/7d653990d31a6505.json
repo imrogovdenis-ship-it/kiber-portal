@@ -1,0 +1,15 @@
+{
+  "key": "7d653990d31a6505",
+  "status": "needs_browser",
+  "http": "000",
+  "finalUrl": "https://robob2b.ru/rent/8827/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:27.198624+00:00",
+  "textChars": 0,
+  "challenge": false,
+  "originalUrl": "https://robob2b.ru/rent/8827/",
+  "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

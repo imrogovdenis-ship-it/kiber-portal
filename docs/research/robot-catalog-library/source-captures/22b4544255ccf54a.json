@@ -1,0 +1,18 @@
+{
+  "key": "22b4544255ccf54a",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/robotcoffee",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:54.940887+00:00",
+  "textChars": 2543,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/robotcoffee",
+  "sourceTextSha256": "33ba508abb3582399ecab54a7bdabd1feac8de667c181a7858b5675614a12610",
+  "evidenceExcerpts": [
+    "В стоимость аренды робо-кофейни входит: Аренда",
+    "Оператор Настройка"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

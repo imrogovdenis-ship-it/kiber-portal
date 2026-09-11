@@ -1,0 +1,15 @@
+{
+  "key": "3f9d8b3ee9cd0488",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "http://nanojam.ru/products/robot-ardi-s-ii",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:38.177127+00:00",
+  "textChars": 44,
+  "challenge": false,
+  "originalUrl": "http://nanojam.ru/products/robot-ardi-s-ii",
+  "sourceTextSha256": "1809242867b7b9b3533ce6fc79f671440f8de8dd2c917e1e8c73cbd5742a363e",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

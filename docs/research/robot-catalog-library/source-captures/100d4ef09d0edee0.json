@@ -1,0 +1,19 @@
+{
+  "key": "100d4ef09d0edee0",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/klipmeiker",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:45.905559+00:00",
+  "textChars": 1721,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/klipmeiker",
+  "sourceTextSha256": "eaa53917dc44cf9af0c195f471492acb157512d0d8fe8394cd5e5e73e9639883",
+  "evidenceExcerpts": [
+    "12,6 кг Автономное принятие решений",
+    "4 кг максимальная нагрузка В стоимость аренды робота входит: аренда + доставка + обучение",
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Клипмейкера"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

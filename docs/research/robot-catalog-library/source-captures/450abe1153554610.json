@@ -1,0 +1,18 @@
+{
+  "key": "450abe1153554610",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://www.pudurobotics.com/ru/product/detail/bellabot",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:27.561951+00:00",
+  "textChars": 4433,
+  "challenge": false,
+  "originalUrl": "https://www.pudurobotics.com/ru/product/detail/bellabot",
+  "sourceTextSha256": "d6a2f85c85ad532b93034b8ebe461b959bfa925b45dc6ea2e658f24476c9e531",
+  "evidenceExcerpts": [
+    "Мяу~~~ Простите~ Сегодня счастливый день, пожалуйста, проходите ~",
+    "Для ускоренной замены аккумулятора сценарии зарядки и использования разбиты на категории. Круглосуточная работа: проще простого для BellaBot. RGBD"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

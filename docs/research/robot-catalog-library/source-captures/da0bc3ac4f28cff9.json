@@ -1,0 +1,18 @@
+{
+  "key": "da0bc3ac4f28cff9",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://www.pudurobotics.com/ru/product/detail/kettybot",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:44.189915+00:00",
+  "textChars": 2905,
+  "challenge": false,
+  "originalUrl": "https://www.pudurobotics.com/ru/product/detail/kettybot",
+  "sourceTextSha256": "22b82a5ceb997737b7515142b00c8c86e4e8a4b454081850cedf0c4df19b0afb",
+  "evidenceExcerpts": [
+    "KettyBKettyBot продолжает традицию минималистских конструкций компании Pudu Technology. Небольшие габариты и наклоненный вперед С-образный корпус позволяют роботу проходить в промежутках шириной всего 55 см, что делает его идеальным помощником в местах со сложной многолюдной средой. Подвижный робот эксперт по маркетингу",
+    "робота KettyBot отличается минималистской обтекаемой формой, которая делает его еще более компактным. Робот, оснащенный функцией автономного планирования маршрута, может проводить клиентов к их столикам кратчайшим   путем, повышая качество обслуживания клиентов и уменьшая нагрузку на официантов. Мгновенное переключение между съемными лотками и задней панелью"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

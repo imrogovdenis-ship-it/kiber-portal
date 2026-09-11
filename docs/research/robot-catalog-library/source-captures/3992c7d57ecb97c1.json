@@ -1,0 +1,15 @@
+{
+  "key": "3992c7d57ecb97c1",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://divent.ru/ekb/uslugi/sketch-bot/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:19.059943+00:00",
+  "textChars": 68,
+  "challenge": false,
+  "originalUrl": "https://divent.ru/ekb/uslugi/sketch-bot/",
+  "sourceTextSha256": "23e17693cb7bfdc86b7c5fa781ef5bde398ce3024663507799ff2008e18234df",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

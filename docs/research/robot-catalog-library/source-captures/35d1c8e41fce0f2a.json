@@ -1,0 +1,15 @@
+{
+  "key": "35d1c8e41fce0f2a",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:17.915999+00:00",
+  "textChars": 54,
+  "challenge": false,
+  "originalUrl": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
+  "sourceTextSha256": "d4dc14e5132a4de4aa8f6f3045b6f4213518f79954bf6930483b6660169feff5",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

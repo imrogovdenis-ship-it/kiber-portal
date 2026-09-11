@@ -1,0 +1,15 @@
+{
+  "key": "afd20c88e5d3fe6b",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-barista/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:04.794901+00:00",
+  "textChars": 55,
+  "challenge": false,
+  "originalUrl": "https://divent.ru/ekb/uslugi/robot-barista/",
+  "sourceTextSha256": "ad23907f6a035c9d29af3f538cfa7357580d63199e01b048d4a82a3d41363915",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

@@ -1,0 +1,19 @@
+{
+  "key": "eae548143d8baa45",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/robobar",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:57.428196+00:00",
+  "textChars": 1806,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/robobar",
+  "sourceTextSha256": "9598d21e3c489cd295fc53bc1d932751d38c0877fe88d200a37902f7d5d43356",
+  "evidenceExcerpts": [
+    "5кг максимальная нагрузка 2 часа на монтаж",
+    "В стоимость аренды робота Робобар входит: Аренда",
+    "Оператор Настройка"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

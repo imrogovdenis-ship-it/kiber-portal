@@ -1,0 +1,15 @@
+{
+  "key": "8d3029bd64a194e3",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:38.292386+00:00",
+  "textChars": 39,
+  "challenge": false,
+  "originalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
+  "sourceTextSha256": "ecf2c9131e9fe30276f8c716192c3acf09ee2777592d2e7f6c6139c29eb4533a",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

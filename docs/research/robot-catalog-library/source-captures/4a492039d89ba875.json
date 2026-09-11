@@ -1,0 +1,15 @@
+{
+  "key": "4a492039d89ba875",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://shop.unitree.com/products/unitree-go2",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:07.835081+00:00",
+  "textChars": 15073,
+  "challenge": false,
+  "originalUrl": "https://shop.unitree.com/products/unitree-go2",
+  "sourceTextSha256": "32eaf62fe2320711f880e6e276e8a8cdf5f875f4afe20902998946a66998a2a9",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

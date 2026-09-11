@@ -1,0 +1,17 @@
+{
+  "key": "0fd311febb838c8d",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://www.annorobots.ru/coffee-machine-robot-vending-machine/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:48.821050+00:00",
+  "textChars": 8486,
+  "challenge": false,
+  "originalUrl": "https://www.annorobots.ru/coffee-machine-robot-vending-machine/",
+  "sourceTextSha256": "73b515833ad272da0ec6861e65fbc07de065562574bbe9aa69245b8d94c65eae",
+  "evidenceExcerpts": [
+    "Программное обеспечение может управляться удаленно, а услуги по обновлению программного обеспечения позволяют своевременно выявлять проблемы и недостатки в его использовании, обеспечивая одновременное обновление оборудования и гарантируя наличие у него новейших функций и наилучшей производительности. 01"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

@@ -1,0 +1,15 @@
+{
+  "key": "72eecaaf3f2b224c",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://kupirobot.ru/product/robo-kioski/stay-kioski/monty-kiosk/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:06.115064+00:00",
+  "textChars": 55,
+  "challenge": false,
+  "originalUrl": "https://kupirobot.ru/product/robo-kioski/stay-kioski/monty-kiosk/",
+  "sourceTextSha256": "1dc1c5a10bd41bd8876c743d579e29dfa5431f382aa4fd9cb05e24b8380dc3e8",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

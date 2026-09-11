@@ -1,0 +1,18 @@
+{
+  "key": "bbfd36ee21911d57",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://xn--80acb3cbjrd.xn--p1ai/bellabot-kettybot/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:44.848548+00:00",
+  "textChars": 3209,
+  "challenge": false,
+  "originalUrl": "https://xn--80acb3cbjrd.xn--p1ai/bellabot-kettybot/",
+  "sourceTextSha256": "2e95fb19737b79be46cb958db4e87405cab51845da6823720e910dd45b02fca5",
+  "evidenceExcerpts": [
+    "Снизьте нагрузку на персонал, ускорьте обслуживание и добавьте «вау-эффект» для посетителей. Роботы интегрируются в ежедневную работу, а их милое мяуканье сделает атмосферу заведения неповторимой. ОСТАВИТЬ ЗАЯВКУ",
+    "Общая нагрузка на все полки, не должна превышать 30 кг. ВАЖНО!"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

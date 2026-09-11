@@ -1,0 +1,17 @@
+{
+  "key": "7a4661e03ab29e06",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://unibot.ru/catalog/humanoid/sophia/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:23.349557+00:00",
+  "textChars": 4435,
+  "challenge": false,
+  "originalUrl": "https://unibot.ru/catalog/humanoid/sophia/",
+  "sourceTextSha256": "d28d84dd0e60449e5fc3eb3a25f5761df5008ec38dbc57a166fbf194adbbd417",
+  "evidenceExcerpts": [
+    "Характеристики Бренд"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

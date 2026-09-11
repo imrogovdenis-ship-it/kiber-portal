@@ -1,0 +1,18 @@
+{
+  "key": "490365e39c5e7fcb",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://rent-robot.ru/unitree-go2",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:05.713720+00:00",
+  "textChars": 1780,
+  "challenge": false,
+  "originalUrl": "https://rent-robot.ru/unitree-go2",
+  "sourceTextSha256": "6d4022f7c553e327b42704ad5176c56362e192d1257fe524c5c382252c0e9e4b",
+  "evidenceExcerpts": [
+    "Четвероногая роботизированная собака Unitree Robotics Go2 Air по своим габаритам не отличается от обыкновенного среднестатистического пса. Она может без устали бегать 1,5 часа со скоростью до 12 км/ч и переносить грузы весом до 5 кг. Умеет распознавать лицо хозяина и выполнять различные команды жестами. При помощи алгоритмов искусственного интеллекта обходит препятствия и безопасна в использовании даже на детском празднике.",
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда Робособаки Unitree Go2"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

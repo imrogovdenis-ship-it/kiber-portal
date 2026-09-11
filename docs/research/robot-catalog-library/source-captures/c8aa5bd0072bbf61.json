@@ -1,0 +1,15 @@
+{
+  "key": "c8aa5bd0072bbf61",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://promo-bot.ru/production/promobot-v4/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:53.818830+00:00",
+  "textChars": 16766,
+  "challenge": false,
+  "originalUrl": "https://promo-bot.ru/production/promobot-v4/",
+  "sourceTextSha256": "bcc3af2a669df79a526ee02b9f021fbf67388ec8920193c05143e9285153f2ad",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

@@ -1,0 +1,33 @@
+{
+  "key": "20da5b1d634ef97e",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://robodocs.3logic.ru/docs/Pudu/BellaBot/bellabot_technical_characteristics.html",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:29.210779+00:00",
+  "textChars": 3357,
+  "challenge": false,
+  "originalUrl": "https://robodocs.3logic.ru/docs/Pudu/BellaBot/bellabot_technical_characteristics.html",
+  "sourceTextSha256": "287b3e676e10f7a7c7b20b619e50d57c257629789f132bc513c387265e6b0c7a",
+  "evidenceExcerpts": [
+    "Технические характеристики | База знаний отдела робототехники 3Logic Group Skip to main content",
+    "Технические характеристики Bunker Быстрый Старт",
+    "Технические характеристики Быстрый старт",
+    "Технические характеристики Технические характеристики",
+    "Технические характеристики Параметр",
+    "Физические характеристики Размеры",
+    "57 кг Максимальная скорость передвижения",
+    "Максимальная скорость передвижения 4.3 км/ч",
+    "40 кг Класс защиты от внешнего воздействия",
+    "Время работы 13 ~ 24 ч",
+    "Разрешенная нагрузка на поднос 10 кг",
+    "10 кг Максимальная нагрузка на поднос",
+    "Максимальная нагрузка на поднос 10 кг",
+    "10 кг Ширина подносов",
+    "Электрические характеристики Емкость аккумулятора",
+    "Wi-Fi V",
+    "Простейший функционал Реакция на прикосновение, воспроизведение аудио"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

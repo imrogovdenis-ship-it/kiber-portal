@@ -1,0 +1,15 @@
+{
+  "key": "5518b5f424bd5129",
+  "status": "needs_browser",
+  "http": "200",
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:10:23.057344+00:00",
+  "textChars": 60,
+  "challenge": false,
+  "originalUrl": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
+  "sourceTextSha256": "a2ed7216460978711c62cc4c79ccd6c0530e80176c4f676d196e06ec34b35ffe",
+  "evidenceExcerpts": [],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}

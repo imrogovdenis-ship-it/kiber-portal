@@ -1,0 +1,23 @@
+{
+  "key": "67013b92f0782c61",
+  "status": "captured_unreviewed",
+  "http": "200",
+  "finalUrl": "https://3dpt.ru/product/robot-sophia",
+  "method": "direct_server_http",
+  "capturedAt": "2026-09-11T10:09:22.628545+00:00",
+  "textChars": 10095,
+  "challenge": false,
+  "originalUrl": "https://3dpt.ru/product/robot-sophia",
+  "sourceTextSha256": "3dead5cfd2a614bf8313dfb60eb0133168a0ed433b655659896d31f7d8c842b0",
+  "evidenceExcerpts": [
+    "Характеристики Видео",
+    "Характеристики Тип робота",
+    "Страна производитель Китай",
+    "ОС Ubuntu Linux, Ethernet, Wi-Fi Год разработки",
+    "Масса 20 кг",
+    "20 кг Датчики",
+    "Время работы: Пн-Пт 09:00-19:00"
+  ],
+  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
+  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+}
