@@ -1,0 +1,16 @@
+{
+  "sourceId": 40,
+  "originalUrl": "https://rent-robot.ru/robotcoffee",
+  "finalUrl": "https://rent-robot.ru/robotcoffee",
+  "title": "Аренда robocoffee",
+  "capturedAt": "2026-09-11T10:09:54.940887+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "33ba508abb3582399ecab54a7bdabd1feac8de667c181a7858b5675614a12610",
+  "evidenceExcerpts": [
+    "В стоимость аренды робо-кофейни входит: Аренда Доставка",
+    "Оператор Настройка Брендирование"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

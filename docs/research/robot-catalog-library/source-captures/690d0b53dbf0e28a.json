@@ -1,0 +1,16 @@
+{
+  "sourceId": 11,
+  "originalUrl": "https://rent-robot.ru/tron",
+  "finalUrl": "https://rent-robot.ru/tron",
+  "title": "Аренда робота TRON — двуногий модульный робот для мероприятий",
+  "capturedAt": "2026-09-11T10:09:23.335509+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "b0b265fa81239283ee84d7a54f5383c91b99caf72fb9a77bb3d37d15a877f352",
+  "evidenceExcerpts": [
+    "сенсоры (например, лидар + depth-камера), голосовое управление (модуль NVIDIA NX + микрофонный массив) и комплект для установки манипулятора. Заказать Модульный робот Tron",
+    "Быстрая замена АКБ: поддерживается Мощность батареи: до 1000 Вт В стоимость аренды робота входит: аренда + доставка + обучение"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

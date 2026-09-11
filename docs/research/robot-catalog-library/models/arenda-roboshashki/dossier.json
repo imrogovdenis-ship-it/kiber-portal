@@ -1,0 +1,44 @@
+{
+  "slug": "arenda-roboshashki",
+  "name": "Робот для игры в шашки",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-roboshashki.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Камеры игрового робота для шашек",
+    "Манипулятор робота для игры в шашки",
+    "Иллюстрация выбора сложности игры в шашки",
+    "Игровая доска с шашками",
+    "Иллюстрация размещения игровой зоны",
+    "Условная схема электрической розетки и вилки"
+  ],
+  "researchStatus": "reuse_existing_reviewed_research",
+  "readyForWriting": true,
+  "allowedDraftScope": "Existing researched content and its existing factual limits; no new quantitative promises.",
+  "existingResearch": "docs/review/robot-card-remediation/pilot-research/COMPETITOR_GAPS.md",
+  "guardrails": [
+    "Правила конкретного шашечного комплекса, формат партии, очередь и питание; не переносить шахматные режимы и чужие часы работы."
+  ],
+  "ownerQuestions": [
+    "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
+  ],
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робошашки",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

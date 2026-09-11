@@ -1,0 +1,15 @@
+{
+  "sourceId": 29,
+  "originalUrl": "https://www.pudurobotics.com/ru/product/detail/kettybot",
+  "finalUrl": "https://www.pudurobotics.com/ru/product/detail/kettybot",
+  "title": "Интеллектуальный робот-доставщик – Pudu Robotics",
+  "capturedAt": "2026-09-11T10:09:44.189915+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "22b82a5ceb997737b7515142b00c8c86e4e8a4b454081850cedf0c4df19b0afb",
+  "evidenceExcerpts": [
+    "робота KettyBot отличается минималистской обтекаемой формой, которая делает его еще более компактным. Робот, оснащенный функцией автономного планирования маршрута, может проводить клиентов к их столикам кратчайшим путем, повышая качество обслуживания клиентов и уменьшая нагрузку на официантов. Мгновенное переключение между съемными лотками"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

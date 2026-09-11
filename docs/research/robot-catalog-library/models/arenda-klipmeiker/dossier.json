@@ -1,0 +1,85 @@
+{
+  "slug": "arenda-klipmeiker",
+  "name": "Робот Клипмейкер",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-klipmeiker.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Работа автономной камеры робота-видеооператора Клипмейкер в аренду в Москве",
+    "Роборука для моушн видео робота Клипмейкер в прокат на праздник",
+    "Демонстрация скорости съёмки робота для видеосъёмки Клипмейкер на мероприятие",
+    "Возможность заказать робота Клипмейкер с безопасным манипулятором на мероприятие",
+    "Размещение робота-видеооператора Клипмейкер на выставке",
+    "Длительное время работы Клипмейкера для видеосъёмки на мероприятии"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Компактная роботизированная съёмка, не услуги человека-клипмейкера.",
+  "findings": [
+    {
+      "text": "Rent Robot описывает настольный манипулятор и видео; на странице есть подпись про художника и характеристики, совпадающие с их художником. Числа не считать независимым паспортом камеры.",
+      "sourceIds": [
+        31
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Краткая карточка Робоагентства прямо описывает Motion Control, эффекты и готовый клип. Это короткое, но пригодное описание предложения, не ошибка загрузки.",
+      "sourceIds": [
+        67
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 31,
+      "role": "rental",
+      "url": "https://rent-robot.ru/klipmeiker",
+      "captureFile": "source-captures/100d4ef09d0edee0.json"
+    },
+    {
+      "sourceId": 67,
+      "role": "rental",
+      "url": "https://roboagency.ru/roboruki-roboty-manipulyatory/tproduct/1526126191-328048353212-robot-klipmeiker",
+      "captureFile": "source-captures/3349a7f73562dfff.json"
+    }
+  ],
+  "guardrails": [
+    "Первоначальная выдача про профессию/обычную видеосъёмку исключена.",
+    "Не переносить аппаратные параметры художника только из совпадающих шаблонных блоков.",
+    "Не обещать абсолютную безопасность без рабочей зоны и сопровождения."
+  ],
+  "ownerQuestions": [
+    "Какой манипулятор/камера и программный комплекс скрываются под названием «Клипмейкер» у КИБЕР?"
+  ],
+  "suggestedFaqTopics": [
+    "вид готового клипа",
+    "сценарий движения камеры",
+    "отличие от Glambot",
+    "установка",
+    "очередь",
+    "выдача и брендирование"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робота Клипмейкер",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

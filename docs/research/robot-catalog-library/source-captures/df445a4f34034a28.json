@@ -1,0 +1,16 @@
+{
+  "sourceId": 23,
+  "originalUrl": "https://qubot.ru/arenda3",
+  "finalUrl": "https://qubot.ru/arenda3",
+  "title": "Аренда роботов на мероприятие в Москве от компании Qubot",
+  "capturedAt": "2026-09-11T10:09:36.494366+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "ec5b7567d9ec4ea4e65364b82401a239df65a47f55e9a536562371195f52dd58",
+  "evidenceExcerpts": [
+    "Самая новая и продвинутая модель от Unitree. Робот H2 обладает человеческим ростом, лучшей бионикой на рынке и максимально плавными движениями. 150 000 руб/час 300 000 руб/день",
+    "Qubot помогает подобрать робота под конкретную задачу: для привлечения внимания на стенде, интерактива с гостями, работы в ресторане, съемок, презентаций или корпоративного события. Мы предлагаем гибкие условия аренды, техническую поддержку и сопровождение на всех этапах проекта. Оставьте заявку, чтобы подобрать"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

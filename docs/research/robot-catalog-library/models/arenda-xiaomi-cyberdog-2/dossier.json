@@ -1,0 +1,106 @@
+{
+  "slug": "arenda-xiaomi-cyberdog-2",
+  "name": "Xiaomi Cyberdog 2",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-xiaomi-cyberdog-2.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Батареи робота-собаки Xiaomi Cyberdog 2",
+    "Танцующий робот Xiaomi Cyberdog 2 в прокат на празднике",
+    "Брендирование корпуса робота-собаки Cyberdog 2 на детском празднике",
+    "Скорости робота-собаки CyberDog 2 в аренду на мероприятие",
+    "Датчика-«глаза» робота-собаки Xiaomi Cyberdog 2",
+    "Звуковые волны у робота-собаки Xiaomi Cyberdog 2"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Подготовленная демонстрация CyberDog 2, без смешения поколений и фантазий о сознании животного.",
+  "findings": [
+    {
+      "text": "Rent Robot и RoboB2B дают предложения CyberDog 2; Art Active называет CyberDog без гарантированного совпадения поколения.",
+      "sourceIds": [
+        59,
+        60,
+        61
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Xiaomi Community ссылается на стороннюю публикацию: это не техническая гарантия производителя. Данные магазина DJI Russia также остаются вторичным источником.",
+      "sourceIds": [
+        62,
+        63
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 59,
+      "role": "rental",
+      "url": "https://rent-robot.ru/xiaomi-robot-dog",
+      "captureFile": "source-captures/3c60a02095f85631.json"
+    },
+    {
+      "sourceId": 60,
+      "role": "rental",
+      "url": "https://robob2b.ru/rent/8827/",
+      "captureFile": "source-captures/7d653990d31a6505.json"
+    },
+    {
+      "sourceId": 61,
+      "role": "rental_adjacent",
+      "url": "https://www.art-active24.ru/robosobaka-xiaomi/",
+      "captureFile": "source-captures/8912ca21f1068c95.json"
+    },
+    {
+      "sourceId": 62,
+      "role": "community_source",
+      "url": "https://new.c.mi.com/ru/post/347555",
+      "captureFile": "source-captures/68222030656cb738.json"
+    },
+    {
+      "sourceId": 63,
+      "role": "facts_reseller",
+      "url": "https://djirussia.ru/CyberDog_2",
+      "captureFile": "source-captures/74ebacf0a079200f.json"
+    }
+  ],
+  "guardrails": [
+    "Не переносить камеру, массу, батарею и функции первого CyberDog на второе поколение.",
+    "Не обещать понимание эмоций, самостоятельное обучение на событии или абсолютную безопасность.",
+    "Репертуар и русскоязычный голосовой сценарий проверяются отдельно."
+  ],
+  "ownerQuestions": [
+    "Подтвердить второе поколение, прошивку, доступные команды, режимы и батареи."
+  ],
+  "suggestedFaqTopics": [
+    "поколение",
+    "команды и язык",
+    "подготовленные движения",
+    "площадка",
+    "дети и дистанция",
+    "питание"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Xiaomi CyberDog 2",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

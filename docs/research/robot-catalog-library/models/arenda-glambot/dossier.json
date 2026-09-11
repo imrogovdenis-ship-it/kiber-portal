@@ -1,0 +1,105 @@
+{
+  "slug": "arenda-glambot",
+  "name": "Робот GlamBot",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-glambot.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Камера GlamBot для эффектной видеосъёмки",
+    "Дуга движения камеры GlamBot",
+    "Свет и фон для slow-motion съёмки",
+    "Брендированный экран ролика GlamBot",
+    "Очередь гостей у видеозоны GlamBot",
+    "Оператор управляет съёмкой GlamBot"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Роботизированная видеозона: движение камеры, помощь гостю, обработка и выдача ролика.",
+  "findings": [
+    {
+      "text": "Divent раскрывает свет, камеру, операторов и этапы обработки; Glambot.ru выделяет камеру, сопровождение и выдачу. Это полезная структура услуги.",
+      "sourceIds": [
+        18,
+        19
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "PhotoFabrika указывает разные интервалы для этапов выдачи и монтажа. Эти значения не становятся единым обещанием скорости КИБЕР.",
+      "sourceIds": [
+        20
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Rent Robot описывает motion-control и slow-motion как результат работы комплекса, не одной роборуки.",
+      "sourceIds": [
+        21
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 18,
+      "role": "rental",
+      "url": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
+      "captureFile": "source-captures/c82f3d0b8fe643ca.json"
+    },
+    {
+      "sourceId": 19,
+      "role": "rental",
+      "url": "https://glambot.ru/",
+      "captureFile": "source-captures/6bf0e5bf9f534519.json"
+    },
+    {
+      "sourceId": 20,
+      "role": "rental",
+      "url": "https://photofabrika.ru/glambot/",
+      "captureFile": "source-captures/dc981083a51960bb.json"
+    },
+    {
+      "sourceId": 21,
+      "role": "rental",
+      "url": "https://rent-robot.ru/glambot",
+      "captureFile": "source-captures/f76aaf40846053bf.json"
+    }
+  ],
+  "guardrails": [
+    "Glambot — формат/комплекс, не достаточная идентификация производителя манипулятора.",
+    "Не переносить FPS, секунды обработки, число операторов или чужую цену.",
+    "Не гарантировать вирусность или пригодность для любой площадки."
+  ],
+  "ownerQuestions": [
+    "Какие камера, манипулятор, свет, ПО и способ выдачи входят в комплект КИБЕР?"
+  ],
+  "suggestedFaqTopics": [
+    "готовый ролик",
+    "позирование",
+    "свет и место",
+    "очередь",
+    "брендирование",
+    "цифровая выдача"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда GlamBot",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

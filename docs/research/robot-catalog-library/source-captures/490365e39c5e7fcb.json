@@ -1,0 +1,15 @@
+{
+  "sourceId": 54,
+  "originalUrl": "https://rent-robot.ru/unitree-go2",
+  "finalUrl": "https://rent-robot.ru/unitree-go2",
+  "title": "Аренда робота собаки Unitree Go2",
+  "capturedAt": "2026-09-11T10:10:05.713720+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "6d4022f7c553e327b42704ad5176c56362e192d1257fe524c5c382252c0e9e4b",
+  "evidenceExcerpts": [
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда Робособаки Unitree Go2 от 30 000 руб./день"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

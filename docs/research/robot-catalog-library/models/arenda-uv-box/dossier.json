@@ -1,0 +1,85 @@
+{
+  "slug": "arenda-uv-box",
+  "name": "Интерактивная витрина UV-BOX",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-uv-box.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Потрясающий 3D-эффект интерактивной витрины в аренду в Москве",
+    "Возможность сенсорного управления голографической витрины в прокат для мероприятия",
+    "Множество механик интерактива phygital-витрины в аренду",
+    "Возможности QR-конверсии 3D витрины с сенсорным экраном",
+    "Способы аналитики интерактивной витрины UV-BOX при аренде на мероприятие",
+    "Создание контента любого формата для аренды 3D витрины с сенсорным экраном"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Интерактивная сенсорная медиа-стойка; не робот и не ультрафиолетовый прибор.",
+  "findings": [
+    {
+      "text": "UV-Land прямо определяет UV-BOX как сенсорную медиа-стойку и отдельно предлагает прозрачную OLED-панель. Эти исполнения нельзя объединять.",
+      "sourceIds": [
+        58
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "VISUAL BOX у Vinchi — смежный проект витрины с видеоконтентом, не паспорт UV-BOX.",
+      "sourceIds": [
+        69
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 58,
+      "role": "platform_candidate",
+      "url": "https://uv-land.ru/",
+      "captureFile": "source-captures/e978510e0d2278bc.json"
+    },
+    {
+      "sourceId": 69,
+      "role": "adjacent_product",
+      "url": "https://vinchi-interactive.ru/portfolio/project/interaktivnaja-vitrina-visual-box/",
+      "captureFile": "source-captures/f87beebe354ba94d.json"
+    }
+  ],
+  "guardrails": [
+    "Исходная выдача с УФ-камерами, стерилизаторами и лабораторными тестерами исключена.",
+    "Проценты роста конверсии/вовлечённости UV-Land не обещать клиентам без доказательств.",
+    "Не включать аналитику, сбор данных или QR-интеграции автоматически."
+  ],
+  "ownerQuestions": [
+    "Подтвердить сенсорную стойку или прозрачную панель, размер, контент, интерактив и разрешённые интеграции."
+  ],
+  "suggestedFaqTopics": [
+    "тип экрана",
+    "подготовка контента",
+    "касания и сценарий",
+    "площадка",
+    "QR/аналитика",
+    "подключение и сопровождение"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда интерактивной витрины UV-BOX",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

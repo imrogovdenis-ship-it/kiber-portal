@@ -1,0 +1,16 @@
+{
+  "sourceId": 16,
+  "originalUrl": "https://www.pudurobotics.com/ru/product/detail/bellabot",
+  "finalUrl": "https://www.pudurobotics.com/ru/product/detail/bellabot",
+  "title": "Интеллектуальный робот-доставщик – Pudu Robotics",
+  "capturedAt": "2026-09-11T10:09:27.561951+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "d6a2f85c85ad532b93034b8ebe461b959bfa925b45dc6ea2e658f24476c9e531",
+  "evidenceExcerpts": [
+    "BellaBot, новейшая разработанная компанией Pudu модель робота-доставщика, унаследовала выдающиеся характеристики предыдущего поколения и обладает превосходными возможностями взаимодействия человек – робот. Робот BellaBot, отличающийся инновационным бионическим дизайном, привлекательным стилем, снабженный голосовыми функциями на базе ИИ, мультимодальным взаимодействием и многими другими функциями,",
+    "Новый модуль ИИ-голоса поддерживает сотни единственных в своём роде контекстуальных диалогов, превращая BellaBot в более интересное устройство. Взаимодействие при помощи света На различных этапах задания используются соответствующие световые сигналы; это делает индикацию состояния более понятной."
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

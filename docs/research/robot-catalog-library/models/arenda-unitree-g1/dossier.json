@@ -1,0 +1,44 @@
+{
+  "slug": "arenda-unitree-g1",
+  "name": "Unitree G1",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-unitree-g1.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Габариты робота-гуманоида",
+    "Суставы человекоподобного робота Unitree G1 в аренду",
+    "Батарея робота-гуманоида Unitree G1 в аренду",
+    "Высокая скорость передвижения робота-гуманоида Unitree G1 на мероприятие",
+    "Микрофон робота-гуманоида Unitree G1",
+    "Складывание робота-гуманоида Unitree G1 напрокат"
+  ],
+  "researchStatus": "reuse_existing_reviewed_research",
+  "readyForWriting": true,
+  "allowedDraftScope": "Existing researched content and its existing factual limits; no new quantitative promises.",
+  "existingResearch": "docs/review/robot-card-remediation/humanoids-g1-x2/COMPETITOR_GAPS.md",
+  "guardrails": [
+    "G1 и EDU различаются; согласованный репертуар не равен всем роликам производителя."
+  ],
+  "ownerQuestions": [
+    "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
+  ],
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Unitree G1",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

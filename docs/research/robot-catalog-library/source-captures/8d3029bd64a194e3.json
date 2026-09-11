@@ -1,0 +1,16 @@
+{
+  "sourceId": 1,
+  "originalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
+  "finalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
+  "title": "Noetix",
+  "capturedAt": "2026-09-11T10:43:17.889Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "e3c3364836ad8e895de48d22e713f687299cb2015c9ba80de424586b1f3300ae",
+  "evidenceExcerpts": [
+    "NOETIX N2 Edu — гуманоидный робот нового поколения для образования, исследований, выставок и прикладной разработки. Робот оснащён 18 степенями свободы, системой 3D-зрения, голосовым взаимодействием, поддержкой Linux, Python/C++ и мощной вычислительной платформой для тестирования ИИ-алгоритмов. Благодаря реалистичной пластике движений, автономной работе",
+    "NOETIX E1 — компактный гуманоидный робот для обучения, исследований и разработки AI-решений. Модель оснащается NVIDIA Jetson Orin Nano Super, 8-ядерным процессором, depth-камерой, IMU, поддерживает Wi-Fi 6, Bluetooth 5.2, открытый SDK и имеет модульную кинематику с диапазоном 21–27 степеней свободы в"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

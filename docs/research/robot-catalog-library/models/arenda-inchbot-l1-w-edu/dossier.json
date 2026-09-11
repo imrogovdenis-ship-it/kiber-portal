@@ -1,0 +1,112 @@
+{
+  "slug": "arenda-inchbot-l1-w-edu",
+  "name": "Inchbot L1-W EDU",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-inchbot-l1-w-edu.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Скорость движения робота-собаки Inchbot L1-W EDU на мероприятие",
+    "Батарея образовательного робота Inchbot L1-W EDU в аренду",
+    "Полезная нагрузка робота-собаки Inchbot L1-W EDU",
+    "Защиты от пыли и влаги образовательного робота Inchbot",
+    "Препятствия и лестницы не проблема для робота-собаки Inchbot L1-W EDU",
+    "Разъёмы SDK робота Inchbot L1-W EDU для программирования"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Колёсно-ногая платформа: подготовленный показ движения и отдельно оговорённая образовательная задача.",
+  "findings": [
+    {
+      "text": "Qubot различает L1-W и L1-W EDU и показывает EDU в арендном каталоге. Покупка платформы и готовая программа аренды — разные предложения.",
+      "sourceIds": [
+        22,
+        23
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Inchrobot описывает L1-W как колёсно-ногого робота и даёт параметры базовой платформы.",
+      "sourceIds": [
+        65
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Robowin показывает отдельно L1 и GENISOM L1W EDU с дополнительным оснащением. Автоматически считать их тем же комплектом КИБЕР нельзя.",
+      "sourceIds": [
+        24,
+        25
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 22,
+      "role": "mixed_offer",
+      "url": "https://qubot.ru/catalog/roboty-sobaki/inchbot-l1-w",
+      "captureFile": "source-captures/9e670fc4e184a3c0.json"
+    },
+    {
+      "sourceId": 23,
+      "role": "rental_catalog",
+      "url": "https://qubot.ru/arenda3",
+      "captureFile": "source-captures/df445a4f34034a28.json"
+    },
+    {
+      "sourceId": 24,
+      "role": "facts_adjacent",
+      "url": "https://robowin.ru/roboty-sobaki/inchbot-l1-robot-sobaka/",
+      "captureFile": "source-captures/49d8e316c246946b.json"
+    },
+    {
+      "sourceId": 25,
+      "role": "identity_candidate",
+      "url": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
+      "captureFile": "source-captures/8e372ee4a008ac51.json"
+    },
+    {
+      "sourceId": 65,
+      "role": "manufacturer_candidate",
+      "url": "https://www.inchrobot.com/robot-dog-inchbot-l1-w/",
+      "captureFile": "source-captures/520bbeb9833ef2cb.json"
+    }
+  ],
+  "guardrails": [
+    "Не смешивать L1, L1-W, EDU и GENISOM без доказательства идентичности.",
+    "Опциональные Jetson/лидар/RTK/5G не считать базовой поставкой.",
+    "Техническая проходимость не разрешает движение среди гостей без подготовки."
+  ],
+  "ownerQuestions": [
+    "Подтвердить производителя/артикул L1-W EDU и установленные вычислительные/сенсорные модули."
+  ],
+  "suggestedFaqTopics": [
+    "колёса и ноги",
+    "EDU и программирование",
+    "оператор",
+    "площадка",
+    "дополнительные датчики",
+    "питание"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Inchbot L1-W EDU",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

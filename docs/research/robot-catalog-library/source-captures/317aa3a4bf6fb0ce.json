@@ -1,0 +1,16 @@
+{
+  "sourceId": 46,
+  "originalUrl": "https://roboticsband.ru/",
+  "finalUrl": "https://roboticsband.ru/",
+  "title": "Робот-бармен на вашем мероприятии {RoBand}",
+  "capturedAt": "2026-09-11T10:09:58.442441+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "9cce3fbb20d5f7cc5f818b97364011886f90b45644b12fe95fd65728a56472d9",
+  "evidenceExcerpts": [
+    "В эту стоимость входит: 6 часов работы робобара на мероприятии в пределах третьего кольца Москвы 2 часа на монтаж и настройку робобара",
+    "предоставляют информационную поддержку и поддерживают наши мероприятия Вопросы и ответы Можно ли арендовать робобар на 4 часа?"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

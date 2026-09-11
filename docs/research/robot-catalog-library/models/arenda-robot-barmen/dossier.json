@@ -1,0 +1,99 @@
+{
+  "slug": "arenda-robot-barmen",
+  "name": "Робот-бармен «Робобар»",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robot-barmen.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Планшет для выбора коктейля у робота-бармена Робобар",
+    "Иллюстрация скорости приготовления напитка Робобаром",
+    "Роботизированная рука наливает напиток в бокал",
+    "Коктейльная зона с барными ингредиентами",
+    "Брендированная барная стойка для мероприятия",
+    "Оператор контролирует работу роботизированного бара"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Подготовленное коктейльное меню и зрелищная подача с организацией барной зоны.",
+  "findings": [
+    {
+      "text": "Divent отдельно обозначает расходники, Rent Robot описывает заказ через планшет и включает оператора. «Замена бармена» не означает отсутствие обслуживания.",
+      "sourceIds": [
+        43,
+        44
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "ВауРобот требует техническое место; Ro.band описывает свой комплекс и пакет. Это не паспорт всех установок с названием Робобар.",
+      "sourceIds": [
+        45,
+        46
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 43,
+      "role": "rental",
+      "url": "https://divent.ru/ekb/uslugi/robobar/",
+      "captureFile": "source-captures/3c7760c6733c9873.json"
+    },
+    {
+      "sourceId": 44,
+      "role": "rental",
+      "url": "https://rent-robot.ru/robobar",
+      "captureFile": "source-captures/eae548143d8baa45.json"
+    },
+    {
+      "sourceId": 45,
+      "role": "rental",
+      "url": "https://xn--80acb3cbjrd.xn--p1ai/robot-barmen/",
+      "captureFile": "source-captures/4f900b5792ad8e69.json"
+    },
+    {
+      "sourceId": 46,
+      "role": "different_configuration",
+      "url": "https://roboticsband.ru/",
+      "captureFile": "source-captures/317aa3a4bf6fb0ce.json"
+    }
+  ],
+  "guardrails": [
+    "Не переносить скорость коктейля, состав ингредиентов или часы чужого пакета.",
+    "Не обещать приготовление любого напитка и полностью безлюдную работу.",
+    "Не менять юридические/возрастные условия подачи алкоголя в рамках копирайтинга."
+  ],
+  "ownerQuestions": [
+    "Какой Робобар, меню, ингредиенты, посуда, обслуживание и требования к зоне?"
+  ],
+  "suggestedFaqTopics": [
+    "меню",
+    "заказ напитка",
+    "ингредиенты",
+    "очередь",
+    "площадка",
+    "персонал и брендирование"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робота-бармена Робобар",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

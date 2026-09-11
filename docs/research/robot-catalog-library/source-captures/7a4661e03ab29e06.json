@@ -1,0 +1,15 @@
+{
+  "sourceId": 10,
+  "originalUrl": "https://unibot.ru/catalog/humanoid/sophia/",
+  "finalUrl": "https://unibot.ru/catalog/humanoid/sophia/",
+  "title": "Sophia - робот гуманоидного типа",
+  "capturedAt": "2026-09-11T10:09:23.349557+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "d28d84dd0e60449e5fc3eb3a25f5761df5008ec38dbc57a166fbf194adbbd417",
+  "evidenceExcerpts": [
+    "Характеристики Бренд Hanson Robotics"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

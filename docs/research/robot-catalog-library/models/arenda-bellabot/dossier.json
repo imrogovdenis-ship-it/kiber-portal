@@ -1,0 +1,99 @@
+{
+  "slug": "arenda-bellabot",
+  "name": "Робот-официант BellaBot",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-bellabot.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Подносы с едой у робота-доставщика BellaBot при аренде на мероприяте",
+    "Аккумулятор робота-официанта BellaBot",
+    "Датчика навигации на корпусе робота Pudu BellaBot в аренду",
+    "Датчик обнаружения препятствий робота-официанта BellaBot в прокат",
+    "Сенсорный экран с мордочкой кота робота BellaBot",
+    "Несколько роботов BellaBot работаю рядом в аренде для мероприятии"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Подвоз напитков/блюд по подготовленному маршруту с понятной ролью персонала.",
+  "findings": [
+    {
+      "text": "Divent отдельно предлагает BellaBot и BellaBot Pro: брендирование/подготовка/оператор относятся к их услугам, а не ко всем комплектам производителя.",
+      "sourceIds": [
+        14,
+        15
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Pudu описывает доставку, взаимодействие и варианты навигации; 3Logic даёт таблицу базового BellaBot. Pro не подменяет базовую модель.",
+      "sourceIds": [
+        16,
+        17
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 14,
+      "role": "rental",
+      "url": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
+      "captureFile": "source-captures/8263bb558583fc6a.json"
+    },
+    {
+      "sourceId": 15,
+      "role": "rental_adjacent_pro",
+      "url": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot-pro/",
+      "captureFile": "source-captures/18c0bde8782aab35.json"
+    },
+    {
+      "sourceId": 16,
+      "role": "manufacturer",
+      "url": "https://www.pudurobotics.com/ru/product/detail/bellabot",
+      "captureFile": "source-captures/450abe1153554610.json"
+    },
+    {
+      "sourceId": 17,
+      "role": "technical_docs",
+      "url": "https://robodocs.3logic.ru/docs/Pudu/BellaBot/bellabot_technical_characteristics.html",
+      "captureFile": "source-captures/20da5b1d634ef97e.json"
+    }
+  ],
+  "guardrails": [
+    "Не обещать самостоятельную загрузку/снятие посуды: доставка и манипуляция — разные задачи.",
+    "Общая нагрузка и ограничение каждого подноса не взаимозаменяемы.",
+    "Голосовые реакции не означают беседу без ограничений."
+  ],
+  "ownerQuestions": [
+    "Подтвердить базовый BellaBot или Pro, комплект подносов, станцию зарядки и схему навигации."
+  ],
+  "suggestedFaqTopics": [
+    "маршрут",
+    "кто ставит и забирает посуду",
+    "проходы и пол",
+    "нагрузка",
+    "зарядка",
+    "брендирование"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда BellaBot",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}
