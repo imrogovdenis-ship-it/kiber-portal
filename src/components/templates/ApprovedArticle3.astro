@@ -7,6 +7,8 @@ import HomeImageCards from '../blocks/HomeImageCards.astro';
 import RobotCard from '../blocks/RobotCard.astro';
 import type { ArticleBlocksTemplateData } from '../../lib/approved-article-3-types';
 
+import { launchArticles, launchCompilations } from '../../lib/launch-navigation';
+
 const { template } = Astro.props as { template: ArticleBlocksTemplateData };
 const content = template.articleContent;
 const reviewRobotCards = template.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
@@ -257,11 +259,11 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
   </section>
 
   <section id="relatedArticles" class="article-blocks__related container" data-block-id="relatedArticles" aria-label="Тематические статьи">
-    <HomeImageCards id="article-template-related" eyebrow={content?.relatedArticles?.eyebrow ?? "Блог Кибер Гоши"} title={content?.relatedArticles?.title ?? "Тематические статьи по аренде роботов"} description={content?.relatedArticles?.description ?? "Блок перелинковки между уже подготовленными и будущими статьями Блога Кибер Гоши."} cards={template.relatedArticles.cards} variant="article" />
+    <HomeImageCards id="article-template-related" eyebrow={content?.relatedArticles?.eyebrow ?? "Блог Кибер Гоши"} title={content?.relatedArticles?.title ?? "Тематические статьи по аренде роботов"} description={content?.relatedArticles?.description ?? "Блок перелинковки между уже подготовленными и будущими статьями Блога Кибер Гоши."} cards={launchArticles.cards} variant="article" />
   </section>
 
   <section id="relatedCompilations" class="article-blocks__compilations container" data-block-id="relatedCompilations" aria-label="Подборки по теме статьи">
-    <HomeImageCards id="article-template-compilations" eyebrow={content?.relatedCompilations?.eyebrow ?? "Подборки"} title={content?.relatedCompilations?.title ?? "Тематические подборки роботов для аренды"} description={content?.relatedCompilations?.description ?? "Переходы в подборки добавляются там, где они действительно помогают выбрать класс робота или сценарий мероприятия."} cards={template.relatedCompilations.cards} />
+    <HomeImageCards id="article-template-compilations" eyebrow={content?.relatedCompilations?.eyebrow ?? "Подборки"} title={content?.relatedCompilations?.title ?? "Тематические подборки роботов для аренды"} description={content?.relatedCompilations?.description ?? "Переходы в подборки добавляются там, где они действительно помогают выбрать класс робота или сценарий мероприятия."} cards={launchCompilations.cards} />
   </section>
 </article>
 
