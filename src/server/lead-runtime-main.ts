@@ -1,5 +1,5 @@
 import {createLeadServer} from './http-lead-server';
-const server=createLeadServer(process.env);
+const server=createLeadServer(process.env,process.env.LEAD_STRUCTURED_LOGGING==='true'?{logSink:event=>console.log(JSON.stringify(event))}:{});
 server.requestTimeout=15000;
 server.headersTimeout=10000;
 server.keepAliveTimeout=5000;
