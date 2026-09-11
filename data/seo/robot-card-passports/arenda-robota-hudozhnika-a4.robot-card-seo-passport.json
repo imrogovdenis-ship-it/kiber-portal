@@ -6,9 +6,9 @@
   "previewPath": "/preview/kiber-94/robot-card/arenda-robota-hudozhnika-a4/",
   "approvedBatchWorkflow": "kiber-robot-card-approved-batch-workflow",
   "robotEntity": {
-    "name": "робот-художник A4",
+    "name": "робот-художник",
     "sourceName": "робота-художника большого формата",
-    "modelName": "робот-художник A4",
+    "modelName": "робот-художник",
     "brand": "робот-художник",
     "category": {
       "primary": "drawing_robot",
@@ -91,8 +91,8 @@
   "seo": {
     "metaTitle": "Аренда робота-художника большого формата для мероприятий",
     "metaDescription": "Робот-художник рисует детализированный портрет карандашом на листе А4 за 5–20 минут. Прокат для свадеб, премий и стендов по всей России.",
-    "h1": "Аренда робот-художник A4",
-    "primaryKeyword": "аренда робота-художника A4",
+    "h1": "Аренда робот-художник",
+    "primaryKeyword": "аренда робота-художника",
     "secondaryKeywords": [
       "прокат большого формата",
       "заказать большого формата на мероприятие",
@@ -105,7 +105,7 @@
   "seoIntent": {
     "pageType": "robot_card",
     "pageIntent": "commercial_robot_rental",
-    "primaryKeyword": "аренда робота-художника A4",
+    "primaryKeyword": "аренда робота-художника",
     "secondaryKeywords": [
       "прокат большого формата",
       "заказать большого формата на мероприятие",
@@ -115,7 +115,7 @@
       "робот для творческой зоны"
     ],
     "modelNameVariants": [
-      "робот-художник A4",
+      "робот-художник",
       "робота-художника большого формата"
     ],
     "entitySynonyms": [

@@ -73,7 +73,7 @@ const ownerDisplayNameBySlug: Record<string, string> = {
   'arenda-mini-robo-kofeyni': 'мини Robo-Кофейня',
   'arenda-glambot': 'GlamBot',
   'arenda-sketchbot': 'Sketchbot',
-  'arenda-robota-hudozhnika-a4': 'робот-художник A4',
+  'arenda-robota-hudozhnika-a4': 'робот-художник',
 };
 const ownerQuickCtaTitleBySlug: Record<string, string> = {
   'arenda-robota-tron': `Арендуйте модульного робота Tron для мероприятия ${template.robot.priceDisplay}`,
@@ -84,7 +84,7 @@ const ownerQuickCtaTitleBySlug: Record<string, string> = {
   'arenda-mini-robo-kofeyni': `Арендуйте мини Robo-Кофейню для мероприятия ${template.robot.priceDisplay}`,
   'arenda-glambot': `Арендуйте GlamBot для мероприятия ${template.robot.priceDisplay}`,
   'arenda-sketchbot': `Арендуйте Sketchbot для мероприятия ${template.robot.priceDisplay}`,
-  'arenda-robota-hudozhnika-a4': `Арендуйте робота-художника A4 для мероприятия ${template.robot.priceDisplay}`,
+  'arenda-robota-hudozhnika-a4': `Арендуйте робота-художника для мероприятия ${template.robot.priceDisplay}`,
 };
 const heroTitle = `Аренда ${robotTypeAccusative} ${template.robot.name}`;
 const robotDisplayName = ownerDisplayNameBySlug[robotSlug] ?? template.robot.name;
@@ -205,7 +205,7 @@ const includedServiceTitleBySlug: Record<string, string> = {
   'arenda-mini-robo-kofeyni': 'Что входит в аренду мини Robo-Кофейни',
   'arenda-glambot': 'Что входит в аренду GlamBot',
   'arenda-sketchbot': 'Что входит в аренду Sketchbot',
-  'arenda-robota-hudozhnika-a4': 'Что входит в аренду робота-художника A4',
+  'arenda-robota-hudozhnika-a4': 'Что входит в аренду робота-художника',
 };
 const scenariosTitleBySlug: Record<string, string> = {
   'arenda-robot-barmen': 'Где Робобар уместен на мероприятии',
@@ -213,7 +213,7 @@ const scenariosTitleBySlug: Record<string, string> = {
   'arenda-mini-robo-kofeyni': 'Где мини Robo-Кофейня закрывает задачу без большой зоны',
   'arenda-glambot': 'Где GlamBot даёт сильный видеоконтент',
   'arenda-sketchbot': 'Где Sketchbot собирает очередь за портретами',
-  'arenda-robota-hudozhnika-a4': 'Где робот-художник A4 подходит по темпу и формату',
+  'arenda-robota-hudozhnika-a4': 'Где робот-художник подходит по темпу и формату',
 };
 const includedServiceTitle = includedServiceTitleBySlug[robotSlug] ?? 'Что входит в аренду робота';
 const scenariosTitle = scenariosTitleBySlug[robotSlug] ?? `Где использовать ${robotDisplayName}`;
@@ -293,7 +293,7 @@ const ownerArticleBlockBySlug: Record<string, { title: string; description: stri
     description: 'Материалы о роботизированных портретах: как выбрать стиль рисунка, организовать очередь, брендировать листы и сделать так, чтобы гости уносили не буклет, а личный сувенир.',
   },
   'arenda-robota-hudozhnika-a4': {
-    title: 'Как организовать зону с роботом-художником A4',
+    title: 'Как организовать зону с роботом-художником',
     description: 'Разбираем портреты на бумаге A4: детализацию, время ожидания, качество фотографии, расходники, брендинг листа и организацию спокойной творческой зоны на мероприятии.',
   },
 };

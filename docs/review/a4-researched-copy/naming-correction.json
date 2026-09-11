@@ -1,0 +1,15 @@
+{
+  "ownerCorrection": "Name is робот-художник, not robot artist A4",
+  "preview": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/",
+  "sourceTests": 7,
+  "build": "PASS",
+  "liveWidths": [
+    390,
+    768,
+    1440
+  ],
+  "liveCopyGeometryNaming": "PASS",
+  "imageSourcesAndGeometry": "unchanged",
+  "scope": "one preview page; shared naming sources updated for inheritance; URL unchanged",
+  "acceptance": "pending"
+}
