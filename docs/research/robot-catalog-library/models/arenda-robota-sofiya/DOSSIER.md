@@ -1,6 +1,6 @@
 # Робот София
 
-**Статус:** blocked_on_owner_identity
+**Статус:** ready_for_guarded_draft
 
 Сначала установить, какой именно робот называется Софией в каталоге КИБЕР.
 
@@ -36,3 +36,6 @@
 [9] https://3dpt.ru/product/robot-sophia — Робот Sophia в Москве - магазин «Техно 3D»
 [10] https://unibot.ru/catalog/humanoid/sophia — Sophia - робот гуманоидного типа
 [66] https://www.hansonrobotics.com/robots — Hanson Robotics — Relatable Robots
+
+## Подтверждение владельца
+Владелец подтвердил: «Да, София от Hanson Robotics». Блокер идентичности снят; комплектация и программа остаются отдельными вопросами. Это не разрешение публикации или обещание всех возможностей из сторонних карточек.

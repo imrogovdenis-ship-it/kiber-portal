@@ -4,7 +4,7 @@
 
 - [Noetix Bumi](models/arenda-noetix-bumi/DOSSIER.md) — ready_for_guarded_draft
 - [Робот Арди](models/arenda-robota-ardi/DOSSIER.md) — ready_for_guarded_draft
-- [Робот София](models/arenda-robota-sofiya/DOSSIER.md) — blocked_on_owner_identity
+- [Робот София](models/arenda-robota-sofiya/DOSSIER.md) — ready_for_guarded_draft
 - [Модульный робот Tron](models/arenda-robota-tron/DOSSIER.md) — ready_for_guarded_draft
 - [Agibot X2](models/arenda-agibot-x2/DOSSIER.md) — reuse_existing_reviewed_research
 - [Робот-официант BellaBot](models/arenda-bellabot/DOSSIER.md) — ready_for_guarded_draft
@@ -26,3 +26,5 @@
 - [Unitree R1](models/arenda-unitree-r1/DOSSIER.md) — reuse_existing_reviewed_research
 - [Интерактивная витрина UV-BOX](models/arenda-uv-box/DOSSIER.md) — ready_for_guarded_draft
 - [Xiaomi Cyberdog 2](models/arenda-xiaomi-cyberdog-2/DOSSIER.md) — ready_for_guarded_draft
+
+**Обновление:** София идентифицирована владельцем как Sophia от Hanson Robotics; блокирующего вопроса по производителю больше нет. Старое описание неопределённости выше относится к состоянию до этого ответа. Количественные характеристики/программа конкретного экземпляра отдельно не подтверждены.

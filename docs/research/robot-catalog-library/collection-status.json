@@ -9,10 +9,8 @@
   "unresolvedFetches": 0,
   "dossiers": 24,
   "reusedResearchModels": 6,
-  "readyForGuardedDrafts": 23,
-  "blockedOnOwnerIdentity": [
-    "arenda-robota-sofiya"
-  ],
+  "readyForGuardedDrafts": 24,
+  "blockedOnOwnerIdentity": [],
   "allCardsUnconditionallyReady": false,
   "siteChanged": false,
   "rawCapturesStoredPrivately": true

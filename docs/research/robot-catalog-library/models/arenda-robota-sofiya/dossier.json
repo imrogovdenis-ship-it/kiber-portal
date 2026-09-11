@@ -13,10 +13,10 @@
     "Заказать робота Софию для мероприятия",
     "Стационарной установки робота Софии на выстаке"
   ],
-  "researchStatus": "blocked_on_owner_identity",
-  "readyForWriting": false,
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
   "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
-  "editorialAngle": "Сначала установить, какой именно робот называется Софией в каталоге КИБЕР.",
+  "editorialAngle": "Sophia от Hanson Robotics; готовить описание согласованного участия в мероприятии, без неподтверждённых функций конкретной комплектации.",
   "findings": [
     {
       "text": "3DPT и Unibot описывают Sophia/Hanson Robotics, но это не доказывает идентичность экземпляра КИБЕР.",
@@ -55,12 +55,12 @@
     }
   ],
   "guardrails": [
-    "Начальная выдача с Sociobot и общими каталогами не относится автоматически к Софии.",
-    "В generated-данных производителя записано «робота»: это не производитель.",
-    "До идентификации не писать технические возможности на основе Hanson."
+    "Sophia и Little Sophia не смешиваются.",
+    "Сохранённые сведения Hanson теперь относятся к подтверждённой семье модели; комплектацию, язык, режим общения и программу проверять отдельно.",
+    "Ошибочное поле производителя в generated-слое исправлять в отдельном проходе карточки Софии."
   ],
   "ownerQuestions": [
-    "София у КИБЕР — Sophia от Hanson Robotics или другой робот/персонаж? Нужны производитель и модель либо фото/паспорт."
+    "При подготовке точных обещаний уточнить исполнение Sophia и доступную программу общения/сопровождения."
   ],
   "suggestedFaqTopics": [
     "идентичность модели",
@@ -88,5 +88,11 @@
     "pageChangesAllowedNow": false,
     "oneCardAtATime": true,
     "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  },
+  "ownerConfirmedIdentity": {
+    "manufacturer": "Hanson Robotics",
+    "model": "Sophia",
+    "quote": "Да, София от Hanson Robotics.",
+    "recordedAt": "2026-09-11T12:08:47.255657+00:00"
   }
 }

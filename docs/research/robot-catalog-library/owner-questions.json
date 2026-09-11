@@ -15,10 +15,11 @@
   },
   {
     "slug": "arenda-robota-sofiya",
-    "blocking": true,
+    "blocking": false,
     "questions": [
-      "София у КИБЕР — Sophia от Hanson Robotics или другой робот/персонаж? Нужны производитель и модель либо фото/паспорт."
-    ]
+      "При подготовке точных обещаний уточнить исполнение Sophia и доступную программу общения/сопровождения."
+    ],
+    "identityResolvedByOwner": true
   },
   {
     "slug": "arenda-robota-tron",

@@ -142,8 +142,8 @@
       "factQuery": "робот София производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "blocked_on_owner_identity",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
