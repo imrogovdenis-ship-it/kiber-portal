@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-09-11T09:26:24.026000+00:00",
+  "ownerQuote": "Вроде все в порядке. Фиксируй результат",
+  "status": "owner_accepted_image_geometry_correction",
+  "reviewedSourceCommit": "4bf4fdeaa4d369834e2091be4a34f843a3f6421e",
+  "scope": {
+    "pages": [
+      "/robots/arenda-unitree-r1/",
+      "/robots/arenda-unitree-h2/"
+    ],
+    "block": "capabilities / Что умеет",
+    "change": "six equal full-width 16:9 images and aligned headings",
+    "reference": "Unitree G1"
+  },
+  "evidence": [
+    "scope-proof.json",
+    "rendered-geometry.json"
+  ],
+  "unchanged": [
+    "copy",
+    "links",
+    "prices",
+    "original image files",
+    "Hero",
+    "galleries",
+    "CSS",
+    "other pages",
+    "API",
+    "DNS"
+  ],
+  "mergeApproved": false,
+  "mainDomainPublicationApproved": false
+}
