@@ -1,29 +1,15 @@
 {
-  "key": "7d1b8718a6a0b00f",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:23.879790+00:00",
-  "textChars": 6787,
-  "challenge": false,
+  "sourceId": 12,
   "originalUrl": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
+  "finalUrl": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
+  "title": "Tron 1 - Робот гуманоид – Купить с доставкой до дома / QUBOT",
+  "capturedAt": "2026-09-11T10:09:23.879790+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "97243f96112b1a3fe4fb393d771ee18563bc4566a47d173e3b29ca1241a377f9",
   "evidenceExcerpts": [
-    "Характеристики Отзывы",
-    "Простое программирование : Интуитивно понятная среда разработки с визуальным интерфейсом для начинающих",
-    "Простое звуковое взаимодействие : Распознавание базовых звуковых команд и воспроизведение простых звуков",
-    ": Распознавание базовых звуковых команд и воспроизведение простых звуков Базовая артикуляция",
-    ": Легкие материалы и простые механизмы для доступного входа в мир робототехники Начальная модульность",
-    ": Возможность базовых модификаций и добавления простых компонентов Базовые учебные материалы",
-    "До 15 кг полезной нагрузки",
-    "полезной нагрузки До 2 часов",
-    "Около 20 кг общая масса",
-    "общая масса Сферы применения:",
-    "Tron 1 - Робот гуманоид – Характеристики Тип:",
-    "Общая масса: 20 кг",
-    "20 кг Компания:"
+    "12 степенями свободы, включая подвижные руки с простыми захватами для демонстрации базовых манипуляций, и устойчивую нижнюю часть тела для демонстрации основных принципов баланса и перемещения. Tron 1 оборудован базовой сенсорной системой, включающей простую камеру для отслеживания объектов и линий, микрофон"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

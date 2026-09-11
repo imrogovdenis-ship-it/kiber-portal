@@ -1,15 +1,16 @@
 {
-  "key": "7d653990d31a6505",
-  "status": "needs_browser",
-  "http": "000",
-  "finalUrl": "https://robob2b.ru/rent/8827/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:27.198624+00:00",
-  "textChars": 0,
-  "challenge": false,
+  "sourceId": 60,
   "originalUrl": "https://robob2b.ru/rent/8827/",
-  "sourceTextSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://robob2b.ru/rent/8827/",
+  "title": "Робот-собака Xiaomi CyberDog 2 в аренду по цене 40000 ₽ от Mindrobots — арендовать робота на RoboB2B",
+  "capturedAt": "2026-09-11T10:46:35.442Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "58a3e38cd5ccf00c0462a7f54f25bc2c366648703a80b94ce407e9241389e5c5",
+  "evidenceExcerpts": [
+    "В стоимость аренды входит Аренда Доставка",
+    "Господдержка и субсидии О платформе Заказчикам"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

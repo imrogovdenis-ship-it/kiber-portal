@@ -1,15 +1,15 @@
 {
-  "key": "91d94f21b670f274",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://www.picturemosaics.com/ru/event/sketch/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:04.706835+00:00",
-  "textChars": 2931,
-  "challenge": false,
+  "sourceId": 53,
   "originalUrl": "https://www.picturemosaics.com/ru/event/sketch/",
+  "finalUrl": "https://www.picturemosaics.com/ru/event/sketch/",
+  "title": "Picture Mosaics - SketchBots - The Orignal Ai Robotic Sketch Artist",
+  "capturedAt": "2026-09-11T10:10:04.706835+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "ab90c1281b9d77c410dd6da56b68897090c6084127339cfb1f10eb21ede4305d",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidenceExcerpts": [
+    "Picture Mosaics - SketchBots - The Orignal Ai Robotic Sketch Artist Start Your Photo Mosaic Free Photo Mosaic Tool How to Guide Prints & Digtial Files Source Image Guide User Gallery Video Mosaics"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

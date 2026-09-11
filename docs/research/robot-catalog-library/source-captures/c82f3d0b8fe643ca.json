@@ -1,15 +1,16 @@
 {
-  "key": "c82f3d0b8fe643ca",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:47.732616+00:00",
-  "textChars": 99,
-  "challenge": false,
+  "sourceId": 18,
   "originalUrl": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
-  "sourceTextSha256": "d5e38859f3e32900741991c89352420c36ee54ca6923a2be8c760e642438ac06",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
+  "title": "Аренда Glambot в Екатеринбурге – роботизированная камера на мероприятие для эффектного слоумо-видео",
+  "capturedAt": "2026-09-11T10:45:19.689Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "4a93aa9d954e6c8f98bd6e2837f11ce1019d9bada8ac37a9c7603b324fbb6ff5",
+  "evidenceExcerpts": [
+    "Робот-оператор Робот-оператор ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ",
+    "Робот-оператор ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ Брендирование основания робота"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

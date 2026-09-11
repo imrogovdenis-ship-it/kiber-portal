@@ -1,15 +1,16 @@
 {
-  "key": "8d3029bd64a194e3",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:38.292386+00:00",
-  "textChars": 39,
-  "challenge": false,
+  "sourceId": 1,
   "originalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
-  "sourceTextSha256": "ecf2c9131e9fe30276f8c716192c3acf09ee2777592d2e7f6c6139c29eb4533a",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://kupirobot.ru/product/robohuman/noetix/",
+  "title": "Noetix",
+  "capturedAt": "2026-09-11T10:43:17.889Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "e3c3364836ad8e895de48d22e713f687299cb2015c9ba80de424586b1f3300ae",
+  "evidenceExcerpts": [
+    "NOETIX N2 Edu — гуманоидный робот нового поколения для образования, исследований, выставок и прикладной разработки. Робот оснащён 18 степенями свободы, системой 3D-зрения, голосовым взаимодействием, поддержкой Linux, Python/C++ и мощной вычислительной платформой для тестирования ИИ-алгоритмов. Благодаря реалистичной пластике движений, автономной работе",
+    "NOETIX E1 — компактный гуманоидный робот для обучения, исследований и разработки AI-решений. Модель оснащается NVIDIA Jetson Orin Nano Super, 8-ядерным процессором, depth-камерой, IMU, поддерживает Wi-Fi 6, Bluetooth 5.2, открытый SDK и имеет модульную кинематику с диапазоном 21–27 степеней свободы в"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

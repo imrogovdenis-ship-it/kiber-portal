@@ -1,15 +1,15 @@
 {
-  "key": "8912ca21f1068c95",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://www.art-active24.ru/robosobaka-xiaomi/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:32.947251+00:00",
-  "textChars": 314,
-  "challenge": false,
+  "sourceId": 61,
   "originalUrl": "https://www.art-active24.ru/robosobaka-xiaomi/",
-  "sourceTextSha256": "9ad29f2fcae25a3275cb3d6c47d28386eb02741fef9ecc42e3bd754fc0fb46df",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://www.art-active24.ru/robosobaka-xiaomi/",
+  "title": "Аренда робособаки Xiaomi CyberDog: робот на мероприятие, фотосессию и праздник",
+  "capturedAt": "2026-09-11T10:46:36.272Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "5bf6ccf7218cadd6efa71480803256f4a42eadecfdc4dcf8dd7b5c2fc3b61f8d",
+  "evidenceExcerpts": [
+    "Комплекты Артикул: E64 Короткая аренда"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

@@ -1,17 +1,15 @@
 {
-  "key": "a802d25e77643114",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/robot-ardi",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:21.056823+00:00",
-  "textChars": 1859,
-  "challenge": false,
+  "sourceId": 4,
   "originalUrl": "https://rent-robot.ru/robot-ardi",
+  "finalUrl": "https://rent-robot.ru/robot-ardi",
+  "title": "Аренда робота Арди",
+  "capturedAt": "2026-09-11T10:09:21.056823+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "63724190155ff17e5036f8701587dc4b2469df942172c9ca9f998c95834e833a",
   "evidenceExcerpts": [
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота АРДИ"
+    "13 степеней свободы в подвижных руках-манипуляторах Подвижные торс и плечи разработаны"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

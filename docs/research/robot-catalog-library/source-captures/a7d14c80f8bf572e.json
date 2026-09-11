@@ -1,17 +1,15 @@
 {
-  "key": "a7d14c80f8bf572e",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/mini-coffee",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:46.444912+00:00",
-  "textChars": 1814,
-  "challenge": false,
+  "sourceId": 32,
   "originalUrl": "https://rent-robot.ru/mini-coffee",
+  "finalUrl": "https://rent-robot.ru/mini-coffee",
+  "title": "Аренда мини-кофейни — робот-бариста для мероприятий",
+  "capturedAt": "2026-09-11T10:09:46.444912+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "48249bd522f5f1fbd8d648ac0fd1c29d8833da21c1287ea11c150817d91faca5",
   "evidenceExcerpts": [
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда Мини-кофейни"
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда Мини-кофейни от 120 000 руб."
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

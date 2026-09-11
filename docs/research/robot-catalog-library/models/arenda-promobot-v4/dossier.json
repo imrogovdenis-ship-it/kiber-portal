@@ -1,0 +1,99 @@
+{
+  "slug": "arenda-promobot-v4",
+  "name": "Promobot V4",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-promobot-v4.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Датчики движения робота-промоутера Promobot V4",
+    "Диалоговое облако Promobot V4 при заказе на мероприятие",
+    "Сканирования лица человека роботом Промобот V4 при аренде",
+    "Экрана робота-промоутера Promobot V4 в аренду",
+    "Батарея АКБ робота Promobot V4",
+    "Принтер Promobot V4 в прокат в Москве"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Экран и подготовленная база общения под конкретный стенд/стойку, с согласованным сопровождением.",
+  "findings": [
+    {
+      "text": "ArendaRobota не практикует оператора, Rent Robot включает его в пакет. Это различие услуг, а не повод копировать одну схему в КИБЕР.",
+      "sourceIds": [
+        36,
+        37
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Время Роботов описывает требования к полу и варианты использования; производитель — платформу, SDK и оборудование. Возможность интеграции не означает готовность любой интеграции.",
+      "sourceIds": [
+        38,
+        39
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 36,
+      "role": "rental",
+      "url": "https://arendarobota.com/robot-promobot-v4",
+      "captureFile": "source-captures/b0fbb339d5d1436a.json"
+    },
+    {
+      "sourceId": 37,
+      "role": "rental",
+      "url": "https://rent-robot.ru/promobot-v4",
+      "captureFile": "source-captures/8b4e6b94eaea6397.json"
+    },
+    {
+      "sourceId": 38,
+      "role": "rental",
+      "url": "https://itis-time.ru/robot/robot-promobotv4/",
+      "captureFile": "source-captures/416e9c62f8883802.json"
+    },
+    {
+      "sourceId": 39,
+      "role": "manufacturer",
+      "url": "https://promo-bot.ru/production/promobot-v4/",
+      "captureFile": "source-captures/c8aa5bd0072bbf61.json"
+    }
+  ],
+  "guardrails": [
+    "Не смешивать V4 с Robo-C/Арди.",
+    "Не обещать диалог обо всём и интеграцию с любой системой без настройки.",
+    "Диспенсер/принтер/диагностика — проверить наличие конкретных модулей."
+  ],
+  "ownerQuestions": [
+    "Какие модули V4, база знаний, язык и формат сопровождения входят в предложение?"
+  ],
+  "suggestedFaqTopics": [
+    "подготовка базы знаний",
+    "экран",
+    "языки",
+    "перемещение",
+    "опциональные модули",
+    "оператор и связь"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Promobot V4",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

@@ -1,20 +1,15 @@
 {
-  "key": "3c60a02095f85631",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/xiaomi-robot-dog",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:08.896260+00:00",
-  "textChars": 2022,
-  "challenge": false,
+  "sourceId": 59,
   "originalUrl": "https://rent-robot.ru/xiaomi-robot-dog",
+  "finalUrl": "https://rent-robot.ru/xiaomi-robot-dog",
+  "title": "Xiaomi robot dog 2",
+  "capturedAt": "2026-09-11T10:10:08.896260+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "d7998f0dd480b579b4801b343ae327f3bf4103a587da639b3f7c6034363d578e",
   "evidenceExcerpts": [
-    "8,9 кг Самостоятельное обучение",
-    "Способен развивать скорость до 15 км/ч Пульт дистанционного управления UWB Bluetooth",
-    "Пульт дистанционного управления UWB Bluetooth Голосовое управление",
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Xiaomi robot dog 2"
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Xiaomi robot dog 2 от 40 000 руб./день"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

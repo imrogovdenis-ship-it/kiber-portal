@@ -1,17 +1,16 @@
 {
-  "key": "cfad3a56f823684e",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://robob2b.ru/rent/8822/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:59.913961+00:00",
-  "textChars": 274,
-  "challenge": false,
+  "sourceId": 28,
   "originalUrl": "https://robob2b.ru/rent/8822/",
-  "sourceTextSha256": "9daa4360b7fb6e2f542be4092cd142432c623739f4cdff655091286e8f171841",
+  "finalUrl": "https://robob2b.ru/rent/8822/",
+  "title": "Робот-промоутер и официант KettyBot Pro в аренду по цене 40000 ₽ от Mindrobots — арендовать робота на RoboB2B",
+  "capturedAt": "2026-09-11T10:45:24.797Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "71768dbb7f7e2624300124155f3f03ee3b04a548b8ebf50ced9d3ea795f1c7dd",
   "evidenceExcerpts": [
-    "Производителям Вакансии компаний"
+    "KettyBot предназначен для активного привлечения трафика и информирования посетителей. Главная особенность модели — фронтальный экран для трансляции видеорекламы, который находится на уровне глаз человека. Робот поддерживает голосовое взаимодействие на базе ИИ, что позволяет ему отвечать на типовые вопросы, проводить интерактивные",
+    "В стоимость аренды входит Аренда Доставка"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

@@ -1,15 +1,16 @@
 {
-  "key": "afd20c88e5d3fe6b",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://divent.ru/ekb/uslugi/robot-barista/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:04.794901+00:00",
-  "textChars": 55,
-  "challenge": false,
+  "sourceId": 33,
   "originalUrl": "https://divent.ru/ekb/uslugi/robot-barista/",
-  "sourceTextSha256": "ad23907f6a035c9d29af3f538cfa7357580d63199e01b048d4a82a3d41363915",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-barista/",
+  "title": "Робот-бариста в Екатеринбурге – аренда кофейного робота",
+  "capturedAt": "2026-09-11T10:45:30.472Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "689de461da793fdb5c30404664c5ed9401aa7a029f9d3b24ae762881f7b7520e",
+  "evidenceExcerpts": [
+    "Автоматизацию кофейной зоны без нагрузки на персонал Единый стандарт качества напитков Комплектация",
+    "Комплектация Техническая информация 3D модель"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

@@ -1,0 +1,40 @@
+{
+  "query": "аренда робот художник А4 портрет манипулятор",
+  "source": "live_remote_browser_existing_tab",
+  "capturedAt": "2026-09-11T10:49:17.472Z",
+  "requestedUrl": "https://www.google.com/search?hl=ru&q=%D0%B0%D1%80%D0%B5%D0%BD%D0%B4%D0%B0+%D1%80%D0%BE%D0%B1%D0%BE%D1%82+%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA+%D0%904+%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82+%D0%BC%D0%B0%D0%BD%D0%B8%D0%BF%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80",
+  "results": [
+    {
+      "title": "Аренда Робота Художника на мероприятие в ...",
+      "url": "https://divent.ru/ekb/uslugi/robot-hudozhnik/"
+    },
+    {
+      "title": "Интерактивы с нейросетью, аренда в Екатеринбурге",
+      "url": "https://divent.ru/ekb/uslugi/nejroseti/"
+    },
+    {
+      "title": "SketchBot. СкетчБот. ИИ рисует портреты гостей. ВАУ!",
+      "url": "https://www.selfiebox96.ru/sketchbot"
+    },
+    {
+      "title": "Интерактивы на выпускной в Екатеринбурге",
+      "url": "https://divent.ru/ekb/uslugi/na-vipusknoy/"
+    },
+    {
+      "title": "Скетч – бот для создания портретов на мероприятии",
+      "url": "https://mosfotobudka.ru/ai-scetchbot"
+    },
+    {
+      "title": "Аренда роботов на мероприятия в Екатеринбурге",
+      "url": "https://divent.ru/ekb/uslugi/roboty/"
+    },
+    {
+      "title": "Цены «Вау! Робот» в Екатеринбурге",
+      "url": "https://yandex.ru/maps/org/vau_robot/196147774286/prices/"
+    },
+    {
+      "title": "Скетчбот - робот художник. Scetchbot нарисует ваш ...",
+      "url": "https://smiletogo.ru/scetchbot"
+    }
+  ]
+}

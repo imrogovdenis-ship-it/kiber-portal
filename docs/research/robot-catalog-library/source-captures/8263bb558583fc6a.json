@@ -1,15 +1,16 @@
 {
-  "key": "8263bb558583fc6a",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:41.646750+00:00",
-  "textChars": 56,
-  "challenge": false,
+  "sourceId": 14,
   "originalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
-  "sourceTextSha256": "1a54f9aad1cdb25fa4324ab518f206e4566aa0b67635865ec5c033f6db98c9ac",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
+  "title": "Робот-официант BellaBot в Екатеринбурге – аренда сервиса",
+  "capturedAt": "2026-09-11T10:45:14.246Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "e2696607e058cf0fd0c72b509f6e2513517e3b73d020d769ec1f38bf1102ad3b",
+  "evidenceExcerpts": [
+    "Оптимизацию работы персонала и снижение нагрузки Безупречный сервис без человеческого фактора Увеличение скорости обслуживания",
+    "Готовое решение с технической поддержкой Комплектация Техническая информация"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

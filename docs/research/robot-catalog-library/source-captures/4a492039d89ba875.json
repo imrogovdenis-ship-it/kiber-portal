@@ -1,15 +1,16 @@
 {
-  "key": "4a492039d89ba875",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://shop.unitree.com/products/unitree-go2",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:07.835081+00:00",
-  "textChars": 15073,
-  "challenge": false,
+  "sourceId": 57,
   "originalUrl": "https://shop.unitree.com/products/unitree-go2",
+  "finalUrl": "https://shop.unitree.com/products/unitree-go2",
+  "title": "Unitree Go2 – UnitreeRobotics",
+  "capturedAt": "2026-09-11T10:10:07.835081+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "32eaf62fe2320711f880e6e276e8a8cdf5f875f4afe20902998946a66998a2a9",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidenceExcerpts": [
+    "Go2 Battery From $500.00 USD",
+    "R1 Battery $500.00 USD Left"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

@@ -1,15 +1,21 @@
 {
-  "key": "8e372ee4a008ac51",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:56.446147+00:00",
-  "textChars": 67,
-  "challenge": false,
+  "sourceId": 25,
   "originalUrl": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
-  "sourceTextSha256": "4f42d7f056d1e8e70d393dffd28d358f9303419b118f834ac8d1881df2e6adf6",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
+  "title": "GENISOM L1W EDU - Робот-собака — купить в интернет-магазине Robowin",
+  "capturedAt": "2026-09-11T10:45:24.464Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "5d0981c702969ccc92e45e0cd64de4c82f285bd3df4846571462405a97320662",
+  "evidenceExcerpts": [
+    "Genisom L1W EDU (ZSL-1W EDU Edition) — это специализированная образовательная и исследовательская версия ультракомпактного промышленного колесно-ногого робота Genisom L1W. На базе проверенной промышленной платформы L1W добавлена мощная вычислительная система Jetson Orin NX 16G с производительностью 100 TOPS, а также полный",
+    "Благодаря этим дополнениям робот получает расширенные возможности в области экологического восприятия, локализации, автономной навигации и SLAM-картографирования в реальном времени. В комплект входит готовый программный пакет ZhiHang RoamerX Lite, который позволяет студентам, аспирантам и исследователям за считанные часы запустить полноценные DEMO-проекты"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here",
+  "technicalTableTextFromSource": [
+    "Параметр\nЗначение\n\n\n\n\nМодель\nGenisom L1W EDU (ZSL-1W EDU Edition)\n\n\nТип конструкции\nКолесно-ногий (wheel-legged) quadruped\n\n\nСтепени свободы\n12 DoF (в суставах ног) + независимый привод 4 колёс\n\n\nРазмеры в стоячем положении\n≈ 630 × 440 × 455 мм\n\n\nРазмеры в лежачем положении\n≈ 690 × 580 × 145 мм\n\n\nОбщий вес\n20 кг\n\n\nМаксимальная скорость\n5,5 м/с\n\n\nМаксимальная полезная нагрузка\n≈ 10 кг (предельная 12 кг)\n\n\nВремя автономной работы\n1–2 часа\n\n\nМаксимальный перепад высот\n60 см\n\n\nМаксимальная высота ступени\n16 см\n\n\nМаксимальный угол подъёма\n40°\n\n\nПиковый крутящий момент\n48 Н·м\n\n\nВычислительная мощность\nJetson Orin NX 16G — 100 TOPS\n\n\nСенсоры восприятия\nMid 360 LiDAR + Realsense depth camera + GNSS + RTK-антенна\n\n\nСвязь\n5G-модуль + Gigabit Ethernet\n\n\nИнтерфейсы\nGigabit Ethernet, Power, SBUS+RS485, USB 3.0 (Orin NX), USB 3.0 (3588)\n\n\nПрограммное обеспечение\nZhiHang RoamerX Lite (готовые DEMO для mapping, localization, navigation)\n\n\nРабочая температура\n0 °C ~ 40 °C\n\n\nСтепень защиты\nIP54\n\n\nПоддержка разработки\nПолностью открытый SDK + протоколы коммуникации",
+    "Сфера применения\nОсновные задачи и преимущества\n\n\n\n\nВысшее образование и STEM-программы\nУниверситетские лаборатории, курсы робототехники, автономной навигации, SLAM и reinforcement learning\n\n\nНаучные исследования\nЭксперименты с embodied AI, 3D-картографированием в реальном времени, многомашинным взаимодействием\n\n\nИнновационные образовательные проекты\nДемонстрационные стенды, хакатоны, разработка приложений для автономных систем\n\n\nВторичная разработка\nСоздание кастомных алгоритмов, интеграция собственных модулей и нейросетей\n\n\nПилотные промышленные исследования\nТестирование систем инспекции и мониторинга перед коммерческим внедрением"
+  ],
+  "tableCaution": "Configuration-specific source data; not automatically KIBER specifications."
 }

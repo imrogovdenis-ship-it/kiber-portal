@@ -1,19 +1,52 @@
 {
-  "key": "a52043e927088168",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://gumanoids.ru/robot/noetix-bumi/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:20.937793+00:00",
-  "textChars": 4991,
-  "challenge": false,
+  "sourceId": 2,
   "originalUrl": "https://gumanoids.ru/robot/noetix-bumi/",
+  "finalUrl": "https://gumanoids.ru/robot/noetix-bumi/",
+  "title": "Noetix Bumi купить — цена от 350 000 ₽ | ГУМАНОИД",
+  "capturedAt": "2026-09-11T10:09:20.937793+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "7d1d8264135963dd44e424e0263620f9cf8aa56196a6e751040c51c214b1f5bf",
   "evidenceExcerpts": [
-    "· Производитель: Noetix · Наличие: под заказ · Доставка по России · Гарантия 1 год Noetix Bumi — вирусный хит и самый дешёвый серийный гуманоидный робот планеты. Версия EDU-Pro для школ и кружков робототехники: рост 94 см, вес 12 кг, 21 степень свободы, ходьба, бег, танцы, голосовые команды, камера с распознаванием лиц и открытые интерфейсы программирования. Батарея 48 В на 1–2 часа работы. Цена в России — от 350 000 ₽ с доставкой, гарантией 1 год и обучением.",
-    "Noetix Bumi — вирусный хит и самый дешёвый серийный гуманоидный робот планеты. Версия EDU-Pro для школ и кружков робототехники: рост 94 см, вес 12 кг, 21 степень свободы, ходьба, бег, танцы, голосовые команды, камера с распознаванием лиц и открытые интерфейсы программирования. Батарея 48 В на 1–2 часа работы. Цена в России — от 350 000 ₽ с доставкой, гарантией 1 год и обучением. На странице: интерактивный 360°-обзор (24 кадра), 8 фотографий, полные характеристики и заказ онлайн.",
-    "Характеристики Noetix Bumi EDU-Pro Рост"
+    "рост 94 см, вес 12 кг, 21 степень свободы, ходьба, бег, танцы, голосовые команды, камера с распознаванием лиц и открытые интерфейсы программирования. Батарея 48 В на 1–2 часа работы. Цена в России — от 350 000 ₽ с доставкой, гарантией"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here",
+  "technicalTablesFromSource": [
+    [
+      [
+        "Рост",
+        "0,94 м"
+      ],
+      [
+        "Вес",
+        "12 кг"
+      ],
+      [
+        "Степени свободы",
+        "21 сустав"
+      ],
+      [
+        "Батарея",
+        "48 В · 1–2 часа работы"
+      ],
+      [
+        "Умеет",
+        "ходить, бегать, танцевать, жесты"
+      ],
+      [
+        "Сенсоры",
+        "камера, микрофонный массив, тач"
+      ],
+      [
+        "Программирование",
+        "открытые API · учебные курсы"
+      ],
+      [
+        "Гарантия",
+        "1 год · сервис в РФ"
+      ]
+    ]
+  ],
+  "tableCaution": "Configuration-specific source data; not automatically KIBER specifications."
 }

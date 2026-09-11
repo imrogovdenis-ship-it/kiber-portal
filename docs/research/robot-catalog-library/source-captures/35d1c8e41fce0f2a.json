@@ -1,15 +1,16 @@
 {
-  "key": "35d1c8e41fce0f2a",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:17.915999+00:00",
-  "textChars": 54,
-  "challenge": false,
+  "sourceId": 48,
   "originalUrl": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
-  "sourceTextSha256": "d4dc14e5132a4de4aa8f6f3045b6f4213518f79954bf6930483b6660169feff5",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
+  "title": "Аренда Робота Художника на мероприятие в Екатеринбурге",
+  "capturedAt": "2026-09-11T10:46:25.150Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "a23b6c0af9b9f0a54a38956f464c99f095ec7684fd17fd7366f2d6506bc273df",
+  "evidenceExcerpts": [
+    "Комплектация Техническая информация 3D модель",
+    "3D модель Доставка Что входит и сколько стоит?"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

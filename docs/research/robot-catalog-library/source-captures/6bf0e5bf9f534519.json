@@ -1,24 +1,16 @@
 {
-  "key": "6bf0e5bf9f534519",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://glambot.ru/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:30.853378+00:00",
-  "textChars": 5706,
-  "challenge": false,
+  "sourceId": 19,
   "originalUrl": "https://glambot.ru/",
+  "finalUrl": "https://glambot.ru/",
+  "title": "Аренда Глэмбот (Glambot) — Роборука для съёмки WOW-видео на мероприятии",
+  "capturedAt": "2026-09-11T10:09:30.853378+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "47f08608db784ed88ba3e0f4795ae0a3b95f6219d5bc92a7842b95a0d241a448",
   "evidenceExcerpts": [
-    "Скорость съёмки 3x3 м",
-    "От момента съёмки до готового ролика — три простых шага. 01",
-    "Что входит в аренду",
-    "Опытный оператор управляет роботом, помогает гостям с позированием и следит за процессом съёмки. 03",
-    "Арендовать глэмбот на мероприятие можно в городах: Воронеж, Екатеринбург, Казань, Краснодар, Москва, Нижний Новгород, Ростов-на-Дону, Санкт-Петербург, Сочи. Готовы удивить гостей",
-    "Длительность Выберите длительность",
-    "Выберите длительность 2 часа",
-    "Ростов-на-Дону Санкт-Петербург"
+    "Что входит в аренду Полный комплект для проведения видеозоны на вашем мероприятии.",
+    "Полный комплект для проведения видеозоны на вашем мероприятии. 01 Робот и камера"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

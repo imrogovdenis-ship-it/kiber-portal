@@ -1,18 +1,15 @@
 {
-  "key": "ecf8f870b12572b6",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/scetchbot",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:03.160316+00:00",
-  "textChars": 1875,
-  "challenge": false,
+  "sourceId": 52,
   "originalUrl": "https://rent-robot.ru/scetchbot",
+  "finalUrl": "https://rent-robot.ru/scetchbot",
+  "title": "Аренда робота Sketchbot",
+  "capturedAt": "2026-09-11T10:10:03.160316+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "24034107dd1810ff9be6c14cf5d7aab479e7185e0e2e32413bb96e7fff55527c",
   "evidenceExcerpts": [
-    "Процесс простой: гость делает снимок у фотостойки, изображение обрабатывает ИИ, после чего робот-манипулятор точно выводит портрет пером/маркером. Решение компактное, быстро разворачивается и стабильно удерживает внимание аудитории на выставках, презентациях и корпоративах. Заказать",
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Scetchbot"
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Scetchbot от 50 000 руб."
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

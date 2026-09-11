@@ -1,15 +1,16 @@
 {
-  "key": "18c0bde8782aab35",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot-pro/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:42.212414+00:00",
-  "textChars": 52,
-  "challenge": false,
+  "sourceId": 15,
   "originalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot-pro/",
-  "sourceTextSha256": "bbc75fb03c627a233997f9775936073289a680b7d3182a54670fd6eb989d5f27",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot-pro/",
+  "title": "Робот-официант BellaBot Pro в Екатеринбурге – аренда",
+  "capturedAt": "2026-09-11T10:45:14.128Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "e2e89ea5d1636ca2262aa56fdee766fb07da950e626f7da434be848a5d99d65c",
+  "evidenceExcerpts": [
+    "Робот-официант в аренду с 4 вместительными полками — это готовое сервисное решение для мероприятий, фуршетов, лаунж-зон и VIP-приёмов. Он обеспечивает стабильную подачу напитков и закусок, поддерживает высокий стандарт обслуживания и подчёркивает инновационный формат события. Аренда робота-официанта в Екатеринбурге позволяет организаторам",
+    "Аренда робота-официанта в Екатеринбурге позволяет организаторам усилить эффект от мероприятия, снизить нагрузку на персонал и создать запоминающийся опыт для гостей без сложной интеграции и технических рисков. Необходимо от 3 часов на монтаже для калибровки робота Что получают гости?"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

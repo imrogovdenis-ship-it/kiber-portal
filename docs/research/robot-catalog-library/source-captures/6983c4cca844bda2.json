@@ -1,19 +1,15 @@
 {
-  "key": "6983c4cca844bda2",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://xn--80acb3cbjrd.xn--p1ai/robot-ardi/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:29.309464+00:00",
-  "textChars": 3840,
-  "challenge": false,
+  "sourceId": 6,
   "originalUrl": "https://xn--80acb3cbjrd.xn--p1ai/robot-ardi/",
+  "finalUrl": "https://xn--80acb3cbjrd.xn--p1ai/robot-ardi/",
+  "title": "ВауРобот - Аренда робота Арди на мероприятия",
+  "capturedAt": "2026-09-11T10:09:29.309464+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "cba4a1d3020ce7594183371ef69192b3dea0bbe3324be35f8983af08d68e9a34",
   "evidenceExcerpts": [
-    "Робот-гуманоид Арди — это не просто технология будущего, а ваш уникальный инструмент для создания незабываемых впечатлений. Привлеките внимание к стенду, продукту или бренду! Арди общается с гостями, отвечает на вопросы,                                 поет песни. Работает 24/7 без усталости — идеален для длительных мероприятий. Запоминает имена, шутит и даже танцует! Результат: стенд соберет много посетителей, а Ваш бренд запомнится надолго.",
-    "На площадке требуется устойчивый выделенный интернет, со скоростью не ниже 10 мб/секунду. Поверхность для установки, где планируется использовать робота, должна быть ровной, сухой и чистой.",
-    "Соблюдая эти простые правила, знакомство с Арди гарантированно принесёт положительные эмоции гостей/посетителей. ВАЖНО!"
+    "ВауРобот - Аренда робота Арди на мероприятия Перейти к содержимому Наши роботы Promobot V4 Роботы-официанты для event на выставку для рекламных компаний"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

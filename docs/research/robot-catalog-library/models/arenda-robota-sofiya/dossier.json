@@ -1,0 +1,92 @@
+{
+  "slug": "arenda-robota-sofiya",
+  "name": "Робот София",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-sofiya.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Мимики робота Софии — более 60 выражений",
+    "Диалога робота София Hanson Robotics в аренду",
+    "Аренда человекоподобного робота София на мероприятие",
+    "Жестикуляции робота-андроида София",
+    "Заказать робота Софию для мероприятия",
+    "Стационарной установки робота Софии на выстаке"
+  ],
+  "researchStatus": "blocked_on_owner_identity",
+  "readyForWriting": false,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Сначала установить, какой именно робот называется Софией в каталоге КИБЕР.",
+  "findings": [
+    {
+      "text": "3DPT и Unibot описывают Sophia/Hanson Robotics, но это не доказывает идентичность экземпляра КИБЕР.",
+      "sourceIds": [
+        9,
+        10
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Hanson разделяет Sophia и Little Sophia и другие персонажи. Нельзя переносить характеристики между ними.",
+      "sourceIds": [
+        66
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 9,
+      "role": "identity_candidate",
+      "url": "https://3dpt.ru/product/robot-sophia",
+      "captureFile": "source-captures/67013b92f0782c61.json"
+    },
+    {
+      "sourceId": 10,
+      "role": "identity_candidate",
+      "url": "https://unibot.ru/catalog/humanoid/sophia/",
+      "captureFile": "source-captures/7a4661e03ab29e06.json"
+    },
+    {
+      "sourceId": 66,
+      "role": "identity_candidate",
+      "url": "https://www.hansonrobotics.com/robots",
+      "captureFile": "source-captures/e76ac26c3fe7fb20.json"
+    }
+  ],
+  "guardrails": [
+    "Начальная выдача с Sociobot и общими каталогами не относится автоматически к Софии.",
+    "В generated-данных производителя записано «робота»: это не производитель.",
+    "До идентификации не писать технические возможности на основе Hanson."
+  ],
+  "ownerQuestions": [
+    "София у КИБЕР — Sophia от Hanson Robotics или другой робот/персонаж? Нужны производитель и модель либо фото/паспорт."
+  ],
+  "suggestedFaqTopics": [
+    "идентичность модели",
+    "формат присутствия",
+    "голос и сценарий",
+    "мимика",
+    "сопровождение",
+    "технические условия"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робота София",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

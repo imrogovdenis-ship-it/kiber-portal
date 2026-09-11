@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "models": 24,
+  "queries": 47,
+  "sources": 70,
+  "readyForGuardedDrafts": 23,
+  "blocked": [
+    "arenda-robota-sofiya"
+  ],
+  "privateHashesAndQuotesChecked": true
+}

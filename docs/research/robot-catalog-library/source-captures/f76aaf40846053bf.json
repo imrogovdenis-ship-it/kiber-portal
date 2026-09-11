@@ -1,22 +1,16 @@
 {
-  "key": "f76aaf40846053bf",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/glambot",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:33.453613+00:00",
-  "textChars": 2149,
-  "challenge": false,
+  "sourceId": 21,
   "originalUrl": "https://rent-robot.ru/glambot",
+  "finalUrl": "https://rent-robot.ru/glambot",
+  "title": "Аренда GlamBot — робот-камера для slow-motion на мероприятие",
+  "capturedAt": "2026-09-11T10:09:33.453613+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "6ef3a49dbc66675515326c4e409fb5461404f7175be514de1c868060f893f33e",
   "evidenceExcerpts": [
-    "— это роборука с профессиональной камерой и системой motion-control. Гость встаёт в зону, режиссёр подсказывает простое действие, а робот снимает короткий клип в замедленном движении с динамичными ракурсами. Далее ролик автоматически собирается, при желании дополняется брендингом (рамка/оверлей/логотип) и готов к быстрому распространению — на экраны зоны, по QR-коду или для публикации в соцсетях.",
-    "Далее ролик автоматически собирается, при желании дополняется брендингом (рамка/оверлей/логотип) и готов к быстрому распространению — на экраны зоны, по QR-коду или для публикации в соцсетях. Инсталляция создаёт «вау-эффект», очередь у стенда и удобный бренд-контент.",
-    "Масса : роборука",
-    "~35–60 кг , кейс",
-    "~35 кг В стоимость аренды робота входит: аренда + доставка + обучение",
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Glambot"
+    "Масса : роборука ~35–60 кг",
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Glambot от 100 000 руб."
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

@@ -1,23 +1,77 @@
 {
-  "key": "67013b92f0782c61",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://3dpt.ru/product/robot-sophia",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:22.628545+00:00",
-  "textChars": 10095,
-  "challenge": false,
+  "sourceId": 9,
   "originalUrl": "https://3dpt.ru/product/robot-sophia",
+  "finalUrl": "https://3dpt.ru/product/robot-sophia",
+  "title": "Робот Sophia в Москве - магазин «Техно 3D»",
+  "capturedAt": "2026-09-11T10:09:22.628545+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "3dead5cfd2a614bf8313dfb60eb0133168a0ed433b655659896d31f7d8c842b0",
   "evidenceExcerpts": [
-    "Характеристики Видео",
-    "Характеристики Тип робота",
-    "Страна производитель Китай",
-    "ОС Ubuntu Linux, Ethernet, Wi-Fi Год разработки",
-    "Масса 20 кг",
-    "20 кг Датчики",
-    "Время работы: Пн-Пт 09:00-19:00"
+    "Запчасти и комплектующие Для подготовки к печати Пластик для 3D-ручек",
+    "Характеристики Видео Описание"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here",
+  "technicalTablesFromSource": [
+    [
+      [
+        "Тип робота",
+        "Гуманоиды, Развлечения, Исследования"
+      ],
+      [
+        "Бренд",
+        "Hanson Robotics"
+      ],
+      [
+        "Страна производитель",
+        "Китай"
+      ],
+      [
+        "Мощность",
+        "Источник питания 110/220 В или литий-полимерный аккумулятор 24 В"
+      ],
+      [
+        "Программное обеспечение",
+        "ОС Ubuntu Linux, Ethernet, Wi-Fi"
+      ],
+      [
+        "Год разработки",
+        "2016"
+      ],
+      [
+        "Высота",
+        "167 см"
+      ],
+      [
+        "Масса",
+        "20 кг"
+      ],
+      [
+        "Датчики",
+        "Специальная широкоугольная нагрудная камера 1080p. Камера Intel RealSense. Две пользовательские камеры HD 720p (по одной на каждый глаз). Внешний USB-микрофон. Датчики угла сустава и датчики силы в суставах рук. Датчики касания в пальцах. Массив локализации аудио. Инерциальный измерительный блок (ИИУ)."
+      ],
+      [
+        "Приводы",
+        "Голова и лицо: пять сервоприводов Dynamixel XM430 и 23 сервопривода Xpert. Глаза: Два сервопривода Hitec HS-65MG. Гриф: три сервопривода Dynamixel XM430. Руки и кисти: два сервопривода Dynamixel MX64, один сервопривод Dynamixel MX106, четыре сервопривода Dynamixel XM430, шесть сервоприводов Xpert и два сервопривода MKS (на руку / руку)."
+      ],
+      [
+        "Вычисление",
+        "Intel i7 с тактовой частотой 3 ГГц, ОЗУ 32 ГБ, встроенный графический процессор"
+      ],
+      [
+        "Степени свободы (DOF)",
+        "83 (Голова и шея: 36 степеней свободы; рука и кисть: 15 степеней свободы x 2; туловище: 3 степени свободы; мобильная база: 14 степеней свободы)"
+      ],
+      [
+        "Материалы",
+        "Frubber (активированная кожа), углеродное волокно, алюминий с ЧПУ, сталь, волокно Spectra, термопласт Delrin, акрил, поликарбонат, детали, напечатанные на 3D-принтере, и другая смешанная техника."
+      ],
+      [
+        "Ширина",
+        "41 см"
+      ]
+    ]
+  ],
+  "tableCaution": "Configuration-specific source data; not automatically KIBER specifications."
 }

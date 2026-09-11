@@ -1,19 +1,16 @@
 {
-  "key": "8b4e6b94eaea6397",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/promobot-v4",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:51.628084+00:00",
-  "textChars": 2470,
-  "challenge": false,
+  "sourceId": 37,
   "originalUrl": "https://rent-robot.ru/promobot-v4",
+  "finalUrl": "https://rent-robot.ru/promobot-v4",
+  "title": "Аренда робота Промобот V.4",
+  "capturedAt": "2026-09-11T10:09:51.628084+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "56d465f7f8507471f51420fc7c6fb04293cad627cd0f54c6d822ece7cc49595f",
   "evidenceExcerpts": [
-    "Рост 146-156 см",
-    "В стоимость аренды робота Promobot v4 входит: Аренда",
-    "Оператор Настройка"
+    "Робот отвечает на вопросы о продуктах компании и выполняет специфические бизнес-задачи, а также поддерживает интеграцию с внешними устройствами и системами. Заказать Любая роль для Promobot v4",
+    "В стоимость аренды робота Promobot v4 входит: Аренда Доставка"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

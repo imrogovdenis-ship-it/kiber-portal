@@ -1,19 +1,16 @@
 {
-  "key": "100d4ef09d0edee0",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/klipmeiker",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:45.905559+00:00",
-  "textChars": 1721,
-  "challenge": false,
+  "sourceId": 31,
   "originalUrl": "https://rent-robot.ru/klipmeiker",
+  "finalUrl": "https://rent-robot.ru/klipmeiker",
+  "title": "Аренда робота Клипмейкер",
+  "capturedAt": "2026-09-11T10:09:45.905559+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "eaa53917dc44cf9af0c195f471492acb157512d0d8fe8394cd5e5e73e9639883",
   "evidenceExcerpts": [
-    "12,6 кг Автономное принятие решений",
-    "4 кг максимальная нагрузка В стоимость аренды робота входит: аренда + доставка + обучение",
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Клипмейкера"
+    "Стол идет в комплекте с роботом 6 степеней свободы 1 человека сопровождения",
+    "4 кг максимальная нагрузка В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Клипмейкера"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

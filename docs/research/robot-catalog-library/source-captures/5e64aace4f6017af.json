@@ -1,22 +1,16 @@
 {
-  "key": "5e64aace4f6017af",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://sketchbot.ru/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:01.843685+00:00",
-  "textChars": 5236,
-  "challenge": false,
+  "sourceId": 51,
   "originalUrl": "https://sketchbot.ru/",
+  "finalUrl": "https://sketchbot.ru/",
+  "title": "Скетчбот — Робот-художник для мероприятий | Аренда в 14 городах",
+  "capturedAt": "2026-09-11T10:10:01.843685+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "9bc486da9b2ef04d3d15c673e5488846950dfa9b79564b6e57f3460009abb3e8",
   "evidenceExcerpts": [
-    "Три простых шага от фотографии до готового портрета. 01",
-    "Что входит в аренду Полный комплект для проведения мероприятия — вам не нужно думать о деталях.",
-    "Оператор Специалист управляет процессом и помогает гостям на площадке.",
-    "Площадь от 1 м², розетка 220В, WiFi (опционально, для лучшего качества скетчей). Вопросы",
-    "Длительность Выберите длительность",
-    "Выберите длительность 2 часа"
+    "Что входит в аренду Полный комплект для проведения мероприятия — вам не нужно думать о деталях. 01",
+    "Полный комплект для проведения мероприятия — вам не нужно думать о деталях. 01 Скетчбот и оборудование"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

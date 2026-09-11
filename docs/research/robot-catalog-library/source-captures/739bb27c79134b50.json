@@ -1,22 +1,15 @@
 {
-  "key": "739bb27c79134b50",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://prorobotov.org/marketplace_robotov/roboty_dlya_kafe_i_restoranov/1127/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:56.605303+00:00",
-  "textChars": 9015,
-  "challenge": false,
+  "sourceId": 42,
   "originalUrl": "https://prorobotov.org/marketplace_robotov/roboty_dlya_kafe_i_restoranov/1127/",
+  "finalUrl": "https://prorobotov.org/marketplace_robotov/roboty_dlya_kafe_i_restoranov/1127/",
+  "title": "Роботизированная кофейня Rozum Café - PRO РОБОТОВ",
+  "capturedAt": "2026-09-11T10:09:56.605303+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "7c8a16064719e14a78a731774417f99ef1e3d4af4fabe0699d3d5bb21cc2d17d",
   "evidenceExcerpts": [
-    "Производители роботов Интеграторы робототехники",
-    "Технические характеристики: Производительность: 450+ напитков в сутки",
-    "Производительность: 450+ напитков в сутки 250+ напитков: автономная работа при полной загрузке ингредиентами на одном сервисном обслуживании",
-    "Размер: 2.5х2х2 м. Кофейне требуется 1 метр свободного пространства с каждой стороны, кроме задней, для технического доступа. Заднюю часть можно ставить вплотную к стене Вес: 900 кг",
-    "Вес: 900 кг Rozum Café — это не вендинговый кофейный автомат, а настоящий робот-бариста, который варит кофе традиционным способом на профессиональной кофейной машине и не пропускает ни один шаг. Ваши гости будут наслаждаться быстро приготовленным напитком высшего качества.",
-    "В производстве продукта мы базируемся на 3 принципах: безопасность, скорость и качество. Кофейня Rozum Café изготовлена из материалов, одобренных для использования в пищевой промышленности. Мы используем только всемирно известные компоненты и оборудование такие как: Nuova Simonelli, Markibar, Puqpress, Liebherr. Отзывы"
+    "Технические характеристики: Производительность: 450+ напитков в сутки 250+ напитков: автономная работа при полной загрузке ингредиентами на одном сервисном обслуживании"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

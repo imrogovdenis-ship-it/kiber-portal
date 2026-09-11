@@ -1,19 +1,16 @@
 {
-  "key": "ffa2980a6e90872f",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://rent-robot.ru/robot-artist",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:59.631839+00:00",
-  "textChars": 1817,
-  "challenge": false,
+  "sourceId": 47,
   "originalUrl": "https://rent-robot.ru/robot-artist",
+  "finalUrl": "https://rent-robot.ru/robot-artist",
+  "title": "Аренда робота художника",
+  "capturedAt": "2026-09-11T10:09:59.631839+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "15463d11ecef36ced5ef9612fee0e446017f6b4cbf983fa5364708644d8aff6a",
   "evidenceExcerpts": [
-    "12,6 кг Автономное принятие решений",
-    "4 кг максимальная нагрузка В стоимость аренды робота входит: аренда + доставка + обучение",
-    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота художника"
+    "Стол идет в комплекте с роботом 6 степеней свободы 1 человека сопровождения",
+    "4 кг максимальная нагрузка В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота художника"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

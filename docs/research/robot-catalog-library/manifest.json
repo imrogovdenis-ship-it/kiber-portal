@@ -18,8 +18,8 @@
       "factQuery": "Noetix Bumi производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -32,25 +32,48 @@
           "query": "Noetix Bumi производитель характеристики",
           "resultCount": 9,
           "file": "models/arenda-noetix-bumi/facts-serp.json"
+        },
+        "facts-refined": {
+          "status": "captured",
+          "query": "Noetix Robotics Bumi official",
+          "resultCount": 9,
+          "file": "models/arenda-noetix-bumi/facts-refined-serp.json"
+        },
+        "rental-refined": {
+          "status": "captured",
+          "query": "\"Noetix Bumi\" аренда робот",
+          "resultCount": 9,
+          "file": "models/arenda-noetix-bumi/rental-refined-serp.json"
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "facts",
+          "sourceId": 1,
+          "role": "excluded_other_models_N2_E1",
           "url": "https://kupirobot.ru/product/robohuman/noetix/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/8d3029bd64a194e3.json"
         },
         {
-          "roleCandidate": "facts",
+          "sourceId": 2,
+          "role": "facts",
           "url": "https://gumanoids.ru/robot/noetix-bumi/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/a52043e927088168.json"
         },
         {
-          "roleCandidate": "context",
+          "sourceId": 3,
+          "role": "context",
           "url": "https://gumanoids.ru/blog/obzor-noetix-bumi/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/fab2e26214e7d982.json"
+        },
+        {
+          "sourceId": 70,
+          "role": "technical_reseller_pro",
+          "url": "https://rbtx.igus.cn/en-GB/components/humanoid/noetix-bumi-humanoid-robot-21-dof",
+          "captureFile": "source-captures/dc8ed7f2fa6a6314.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-noetix-bumi/dossier.json",
+      "dossierMarkdown": "models/arenda-noetix-bumi/DOSSIER.md"
     },
     {
       "slug": "arenda-robota-ardi",
@@ -60,8 +83,8 @@
       "factQuery": "робот Арди производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -78,31 +101,38 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 4,
+          "role": "rental",
           "url": "https://rent-robot.ru/robot-ardi",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/a802d25e77643114.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 5,
+          "role": "rental",
           "url": "http://nanojam.ru/products/robot-ardi-s-ii",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/3f9d8b3ee9cd0488.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 6,
+          "role": "rental",
           "url": "https://xn--80acb3cbjrd.xn--p1ai/robot-ardi/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/6983c4cca844bda2.json"
         },
         {
-          "roleCandidate": "facts",
+          "sourceId": 7,
+          "role": "facts",
           "url": "https://w-expo.tech/ardi",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/7d7e182bda5e6ca1.json"
         },
         {
-          "roleCandidate": "facts",
+          "sourceId": 8,
+          "role": "facts",
           "url": "https://rbot100.ru/robot/ardi/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/315694d6b94a2115.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-robota-ardi/dossier.json",
+      "dossierMarkdown": "models/arenda-robota-ardi/DOSSIER.md"
     },
     {
       "slug": "arenda-robota-sofiya",
@@ -112,34 +142,58 @@
       "factQuery": "робот София производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
+      "sourceReviewStatus": "blocked_on_owner_identity",
       "readyForWriting": false,
       "queries": {
         "rental": {
           "status": "captured",
           "query": "аренда робота София",
           "resultCount": 9,
-          "file": "models/arenda-robota-sofiya/rental-serp.json"
+          "file": "models/arenda-robota-sofiya/rental-serp.json",
+          "relevanceCaution": "Initial ambiguous query; use refined query and dossier, not unrelated results."
         },
         "facts": {
           "status": "captured",
           "query": "робот София производитель характеристики",
           "resultCount": 9,
-          "file": "models/arenda-robota-sofiya/facts-serp.json"
+          "file": "models/arenda-robota-sofiya/facts-serp.json",
+          "relevanceCaution": "Initial ambiguous query; use refined query and dossier, not unrelated results."
+        },
+        "rental-refined": {
+          "status": "captured",
+          "query": "\"робот София\" аренда",
+          "resultCount": 9,
+          "file": "models/arenda-robota-sofiya/rental-refined-serp.json"
+        },
+        "facts-refined": {
+          "status": "captured",
+          "query": "Sophia Hanson Robotics official",
+          "resultCount": 8,
+          "file": "models/arenda-robota-sofiya/facts-refined-serp.json"
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "identity_candidate",
+          "sourceId": 9,
+          "role": "identity_candidate",
           "url": "https://3dpt.ru/product/robot-sophia",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/67013b92f0782c61.json"
         },
         {
-          "roleCandidate": "identity_candidate",
+          "sourceId": 10,
+          "role": "identity_candidate",
           "url": "https://unibot.ru/catalog/humanoid/sophia/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/7a4661e03ab29e06.json"
+        },
+        {
+          "sourceId": 66,
+          "role": "identity_candidate",
+          "url": "https://www.hansonrobotics.com/robots",
+          "captureFile": "source-captures/e76ac26c3fe7fb20.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-robota-sofiya/dossier.json",
+      "dossierMarkdown": "models/arenda-robota-sofiya/DOSSIER.md"
     },
     {
       "slug": "arenda-robota-tron",
@@ -149,8 +203,8 @@
       "factQuery": "робот Tron производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -163,25 +217,48 @@
           "query": "робот Tron производитель характеристики",
           "resultCount": 9,
           "file": "models/arenda-robota-tron/facts-serp.json"
+        },
+        "facts-refined": {
+          "status": "captured",
+          "query": "LimX TRON1 official",
+          "resultCount": 8,
+          "file": "models/arenda-robota-tron/facts-refined-serp.json"
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 11,
+          "role": "rental",
           "url": "https://rent-robot.ru/tron",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/690d0b53dbf0e28a.json"
         },
         {
-          "roleCandidate": "facts",
+          "sourceId": 12,
+          "role": "facts",
           "url": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/7d1b8718a6a0b00f.json"
         },
         {
-          "roleCandidate": "facts",
+          "sourceId": 13,
+          "role": "facts",
           "url": "https://unibot.ru/catalog/dogs/limx-dynamics-tron-1/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/04251bccf1a895e6.json"
+        },
+        {
+          "sourceId": 64,
+          "role": "manufacturer_candidate",
+          "url": "https://www.limxdynamics.com/en/products/tron1",
+          "captureFile": "source-captures/b3799016e5d7cf81.json"
+        },
+        {
+          "sourceId": 68,
+          "role": "manufacturer_candidate",
+          "url": "https://shop.limxdynamics.com/pages/tron-1",
+          "captureFile": "source-captures/cb72367694afba88.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-robota-tron/dossier.json",
+      "dossierMarkdown": "models/arenda-robota-tron/DOSSIER.md"
     },
     {
       "slug": "arenda-agibot-x2",
@@ -190,9 +267,11 @@
       "rentalQuery": "аренда Agibot X2",
       "factQuery": "Agibot X2 производитель характеристики",
       "reuseResearch": "docs/review/robot-card-remediation/humanoids-g1-x2/COMPETITOR_GAPS.md",
-      "captureStatus": "reuse_audit_pending",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false
+      "captureStatus": "reused",
+      "sourceReviewStatus": "existing_research_reused",
+      "readyForWriting": true,
+      "dossier": "models/arenda-agibot-x2/dossier.json",
+      "dossierMarkdown": "models/arenda-agibot-x2/DOSSIER.md"
     },
     {
       "slug": "arenda-bellabot",
@@ -202,8 +281,8 @@
       "factQuery": "BellaBot производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -220,26 +299,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 14,
+          "role": "rental",
           "url": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/8263bb558583fc6a.json"
         },
         {
-          "roleCandidate": "rental_adjacent_pro",
+          "sourceId": 15,
+          "role": "rental_adjacent_pro",
           "url": "https://divent.ru/ekb/uslugi/robot-oficziant-bellabot-pro/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/18c0bde8782aab35.json"
         },
         {
-          "roleCandidate": "manufacturer",
+          "sourceId": 16,
+          "role": "manufacturer",
           "url": "https://www.pudurobotics.com/ru/product/detail/bellabot",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/450abe1153554610.json"
         },
         {
-          "roleCandidate": "technical_docs",
+          "sourceId": 17,
+          "role": "technical_docs",
           "url": "https://robodocs.3logic.ru/docs/Pudu/BellaBot/bellabot_technical_characteristics.html",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/20da5b1d634ef97e.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-bellabot/dossier.json",
+      "dossierMarkdown": "models/arenda-bellabot/DOSSIER.md"
     },
     {
       "slug": "arenda-glambot",
@@ -249,8 +334,8 @@
       "factQuery": "GlamBot производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -267,26 +352,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 18,
+          "role": "rental",
           "url": "https://divent.ru/ekb/uslugi/robot-operator-glambot/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/c82f3d0b8fe643ca.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 19,
+          "role": "rental",
           "url": "https://glambot.ru/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/6bf0e5bf9f534519.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 20,
+          "role": "rental",
           "url": "https://photofabrika.ru/glambot/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/dc981083a51960bb.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 21,
+          "role": "rental",
           "url": "https://rent-robot.ru/glambot",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/f76aaf40846053bf.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-glambot/dossier.json",
+      "dossierMarkdown": "models/arenda-glambot/DOSSIER.md"
     },
     {
       "slug": "arenda-inchbot-l1-w-edu",
@@ -296,8 +387,8 @@
       "factQuery": "Inchbot L1-W EDU производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -310,30 +401,48 @@
           "query": "Inchbot L1-W EDU производитель характеристики",
           "resultCount": 9,
           "file": "models/arenda-inchbot-l1-w-edu/facts-serp.json"
+        },
+        "facts-refined": {
+          "status": "captured",
+          "query": "Inchbot L1 W robot official manufacturer",
+          "resultCount": 9,
+          "file": "models/arenda-inchbot-l1-w-edu/facts-refined-serp.json"
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "mixed_offer",
+          "sourceId": 22,
+          "role": "mixed_offer",
           "url": "https://qubot.ru/catalog/roboty-sobaki/inchbot-l1-w",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/9e670fc4e184a3c0.json"
         },
         {
-          "roleCandidate": "rental_catalog",
+          "sourceId": 23,
+          "role": "rental_catalog",
           "url": "https://qubot.ru/arenda3",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/df445a4f34034a28.json"
         },
         {
-          "roleCandidate": "facts_adjacent",
+          "sourceId": 24,
+          "role": "facts_adjacent",
           "url": "https://robowin.ru/roboty-sobaki/inchbot-l1-robot-sobaka/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/49d8e316c246946b.json"
         },
         {
-          "roleCandidate": "identity_candidate",
+          "sourceId": 25,
+          "role": "identity_candidate",
           "url": "https://robowin.ru/roboty-sobaki/genisom-l1w-edu-robot-sobaka/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/8e372ee4a008ac51.json"
+        },
+        {
+          "sourceId": 65,
+          "role": "manufacturer_candidate",
+          "url": "https://www.inchrobot.com/robot-dog-inchbot-l1-w/",
+          "captureFile": "source-captures/520bbeb9833ef2cb.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-inchbot-l1-w-edu/dossier.json",
+      "dossierMarkdown": "models/arenda-inchbot-l1-w-edu/DOSSIER.md"
     },
     {
       "slug": "arenda-kettybot",
@@ -343,8 +452,8 @@
       "factQuery": "KettyBot производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -361,31 +470,38 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 26,
+          "role": "rental",
           "url": "https://rent-robot.ru/ketty-bot",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/625f1b90240ccb7b.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 27,
+          "role": "rental",
           "url": "https://xn--80acb3cbjrd.xn--p1ai/bellabot-kettybot/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/bbfd36ee21911d57.json"
         },
         {
-          "roleCandidate": "rental_adjacent_pro",
+          "sourceId": 28,
+          "role": "rental_adjacent_pro",
           "url": "https://robob2b.ru/rent/8822/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/cfad3a56f823684e.json"
         },
         {
-          "roleCandidate": "manufacturer",
+          "sourceId": 29,
+          "role": "manufacturer",
           "url": "https://www.pudurobotics.com/ru/product/detail/kettybot",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/da0bc3ac4f28cff9.json"
         },
         {
-          "roleCandidate": "technical_docs",
+          "sourceId": 30,
+          "role": "technical_docs",
           "url": "https://robodocs.3logic.ru/docs/Pudu/KettyBot/kettybot_technical_characteristics.html",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/0645b9f3671a31a6.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-kettybot/dossier.json",
+      "dossierMarkdown": "models/arenda-kettybot/DOSSIER.md"
     },
     {
       "slug": "arenda-klipmeiker",
@@ -395,29 +511,52 @@
       "factQuery": "Клипмейкер производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
           "query": "аренда Клипмейкер",
           "resultCount": 9,
-          "file": "models/arenda-klipmeiker/rental-serp.json"
+          "file": "models/arenda-klipmeiker/rental-serp.json",
+          "relevanceCaution": "Initial ambiguous query; use refined query and dossier, not unrelated results."
         },
         "facts": {
           "status": "captured",
           "query": "Клипмейкер производитель характеристики",
           "resultCount": 9,
-          "file": "models/arenda-klipmeiker/facts-serp.json"
+          "file": "models/arenda-klipmeiker/facts-serp.json",
+          "relevanceCaution": "Initial ambiguous query; use refined query and dossier, not unrelated results."
+        },
+        "rental-refined": {
+          "status": "captured",
+          "query": "аренда робота Клипмейкер",
+          "resultCount": 9,
+          "file": "models/arenda-klipmeiker/rental-refined-serp.json"
+        },
+        "facts-refined": {
+          "status": "captured",
+          "query": "робот Клипмейкер характеристики видеосъемка",
+          "resultCount": 9,
+          "file": "models/arenda-klipmeiker/facts-refined-serp.json"
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 31,
+          "role": "rental",
           "url": "https://rent-robot.ru/klipmeiker",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/100d4ef09d0edee0.json"
+        },
+        {
+          "sourceId": 67,
+          "role": "rental",
+          "url": "https://roboagency.ru/roboruki-roboty-manipulyatory/tproduct/1526126191-328048353212-robot-klipmeiker",
+          "captureFile": "source-captures/3349a7f73562dfff.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-klipmeiker/dossier.json",
+      "dossierMarkdown": "models/arenda-klipmeiker/DOSSIER.md"
     },
     {
       "slug": "arenda-mini-robo-kofeyni",
@@ -427,8 +566,8 @@
       "factQuery": "мини Robo-Кофейня производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -445,26 +584,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 32,
+          "role": "rental",
           "url": "https://rent-robot.ru/mini-coffee",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/a7d14c80f8bf572e.json"
         },
         {
-          "roleCandidate": "category_rental",
+          "sourceId": 33,
+          "role": "category_rental",
           "url": "https://divent.ru/ekb/uslugi/robot-barista/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/afd20c88e5d3fe6b.json"
         },
         {
-          "roleCandidate": "different_configuration",
+          "sourceId": 34,
+          "role": "background_only_content_quality_warning",
           "url": "https://www.annorobots.ru/coffee-machine-robot-vending-machine/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/0fd311febb838c8d.json"
         },
         {
-          "roleCandidate": "different_configuration",
+          "sourceId": 35,
+          "role": "different_configuration",
           "url": "https://kupirobot.ru/product/robo-kioski/stay-kioski/monty-kiosk/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/72eecaaf3f2b224c.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-mini-robo-kofeyni/dossier.json",
+      "dossierMarkdown": "models/arenda-mini-robo-kofeyni/DOSSIER.md"
     },
     {
       "slug": "arenda-promobot-v4",
@@ -474,8 +619,8 @@
       "factQuery": "Promobot V4 производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -492,26 +637,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 36,
+          "role": "rental",
           "url": "https://arendarobota.com/robot-promobot-v4",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/b0fbb339d5d1436a.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 37,
+          "role": "rental",
           "url": "https://rent-robot.ru/promobot-v4",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/8b4e6b94eaea6397.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 38,
+          "role": "rental",
           "url": "https://itis-time.ru/robot/robot-promobotv4/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/416e9c62f8883802.json"
         },
         {
-          "roleCandidate": "manufacturer",
+          "sourceId": 39,
+          "role": "manufacturer",
           "url": "https://promo-bot.ru/production/promobot-v4/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/c8aa5bd0072bbf61.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-promobot-v4/dossier.json",
+      "dossierMarkdown": "models/arenda-promobot-v4/DOSSIER.md"
     },
     {
       "slug": "arenda-robo-kofeyni",
@@ -521,8 +672,8 @@
       "factQuery": "Robo-Кофейня производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -539,26 +690,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 40,
+          "role": "rental",
           "url": "https://rent-robot.ru/robotcoffee",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/22b4544255ccf54a.json"
         },
         {
-          "roleCandidate": "category_rental",
+          "sourceId": 33,
+          "role": "category_rental",
           "url": "https://divent.ru/ekb/uslugi/robot-barista/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/afd20c88e5d3fe6b.json"
         },
         {
-          "roleCandidate": "category_rental",
+          "sourceId": 41,
+          "role": "category_rental",
           "url": "https://itis-time.ru/robot/robot-barista/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/c266c3b89817b578.json"
         },
         {
-          "roleCandidate": "different_configuration",
+          "sourceId": 42,
+          "role": "different_configuration",
           "url": "https://prorobotov.org/marketplace_robotov/roboty_dlya_kafe_i_restoranov/1127/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/739bb27c79134b50.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-robo-kofeyni/dossier.json",
+      "dossierMarkdown": "models/arenda-robo-kofeyni/DOSSIER.md"
     },
     {
       "slug": "arenda-roboshashki",
@@ -567,9 +724,11 @@
       "rentalQuery": "аренда робошашки",
       "factQuery": "Робошашки производитель характеристики",
       "reuseResearch": "docs/review/robot-card-remediation/pilot-research/COMPETITOR_GAPS.md",
-      "captureStatus": "reuse_audit_pending",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false
+      "captureStatus": "reused",
+      "sourceReviewStatus": "existing_research_reused",
+      "readyForWriting": true,
+      "dossier": "models/arenda-roboshashki/dossier.json",
+      "dossierMarkdown": "models/arenda-roboshashki/DOSSIER.md"
     },
     {
       "slug": "arenda-robot-barmen",
@@ -579,8 +738,8 @@
       "factQuery": "робот-бармен «Робобар» производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -597,26 +756,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 43,
+          "role": "rental",
           "url": "https://divent.ru/ekb/uslugi/robobar/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/3c7760c6733c9873.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 44,
+          "role": "rental",
           "url": "https://rent-robot.ru/robobar",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/eae548143d8baa45.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 45,
+          "role": "rental",
           "url": "https://xn--80acb3cbjrd.xn--p1ai/robot-barmen/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/4f900b5792ad8e69.json"
         },
         {
-          "roleCandidate": "different_configuration",
+          "sourceId": 46,
+          "role": "different_configuration",
           "url": "https://roboticsband.ru/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/317aa3a4bf6fb0ce.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-robot-barmen/dossier.json",
+      "dossierMarkdown": "models/arenda-robot-barmen/DOSSIER.md"
     },
     {
       "slug": "arenda-robota-hudozhnika-a4",
@@ -626,8 +791,8 @@
       "factQuery": "робот-художник A4 производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -640,25 +805,36 @@
           "query": "робот-художник A4 производитель характеристики",
           "resultCount": 8,
           "file": "models/arenda-robota-hudozhnika-a4/facts-serp.json"
+        },
+        "rental-refined": {
+          "status": "captured",
+          "query": "аренда робот художник А4 портрет манипулятор",
+          "file": "models/arenda-robota-hudozhnika-a4/rental-refined-serp.json",
+          "resultCount": 8
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 47,
+          "role": "rental",
           "url": "https://rent-robot.ru/robot-artist",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/ffa2980a6e90872f.json"
         },
         {
-          "roleCandidate": "category_rental",
+          "sourceId": 48,
+          "role": "category_rental",
           "url": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/35d1c8e41fce0f2a.json"
         },
         {
-          "roleCandidate": "category_rental",
+          "sourceId": 49,
+          "role": "category_rental",
           "url": "https://itis-time.ru/robot/robohudiznik/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/263ede64c7e1b53d.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-robota-hudozhnika-a4/dossier.json",
+      "dossierMarkdown": "models/arenda-robota-hudozhnika-a4/DOSSIER.md"
     },
     {
       "slug": "arenda-senserobot",
@@ -667,9 +843,11 @@
       "rentalQuery": "аренда SenseRobot",
       "factQuery": "SenseRobot производитель характеристики",
       "reuseResearch": "docs/review/robot-card-remediation/pilot-research/COMPETITOR_GAPS.md",
-      "captureStatus": "reuse_audit_pending",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false
+      "captureStatus": "reused",
+      "sourceReviewStatus": "existing_research_reused",
+      "readyForWriting": true,
+      "dossier": "models/arenda-senserobot/dossier.json",
+      "dossierMarkdown": "models/arenda-senserobot/DOSSIER.md"
     },
     {
       "slug": "arenda-sketchbot",
@@ -679,8 +857,8 @@
       "factQuery": "Sketchbot производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -697,26 +875,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 50,
+          "role": "rental",
           "url": "https://divent.ru/ekb/uslugi/sketch-bot/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/3992c7d57ecb97c1.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 51,
+          "role": "rental",
           "url": "https://sketchbot.ru/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/5e64aace4f6017af.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 52,
+          "role": "rental",
           "url": "https://rent-robot.ru/scetchbot",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/ecf8f870b12572b6.json"
         },
         {
-          "roleCandidate": "platform_candidate",
+          "sourceId": 53,
+          "role": "platform_candidate",
           "url": "https://www.picturemosaics.com/ru/event/sketch/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/91d94f21b670f274.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-sketchbot/dossier.json",
+      "dossierMarkdown": "models/arenda-sketchbot/DOSSIER.md"
     },
     {
       "slug": "arenda-unitree-g1",
@@ -725,9 +909,11 @@
       "rentalQuery": "аренда Unitree G1",
       "factQuery": "Unitree G1 производитель характеристики",
       "reuseResearch": "docs/review/robot-card-remediation/humanoids-g1-x2/COMPETITOR_GAPS.md",
-      "captureStatus": "reuse_audit_pending",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false
+      "captureStatus": "reused",
+      "sourceReviewStatus": "existing_research_reused",
+      "readyForWriting": true,
+      "dossier": "models/arenda-unitree-g1/dossier.json",
+      "dossierMarkdown": "models/arenda-unitree-g1/DOSSIER.md"
     },
     {
       "slug": "arenda-unitree-go2",
@@ -737,8 +923,8 @@
       "factQuery": "Unitree Go2 производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -755,26 +941,32 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 54,
+          "role": "rental",
           "url": "https://rent-robot.ru/unitree-go2",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/490365e39c5e7fcb.json"
         },
         {
-          "roleCandidate": "rental_pro",
+          "sourceId": 55,
+          "role": "rental_pro",
           "url": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/5518b5f424bd5129.json"
         },
         {
-          "roleCandidate": "rental_pro",
+          "sourceId": 56,
+          "role": "rental_pro",
           "url": "https://robort.ru/lease/arenda-unitree-go2-pro/",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/610c3e8e30d19f0f.json"
         },
         {
-          "roleCandidate": "manufacturer",
+          "sourceId": 57,
+          "role": "manufacturer",
           "url": "https://shop.unitree.com/products/unitree-go2",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/4a492039d89ba875.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-unitree-go2/dossier.json",
+      "dossierMarkdown": "models/arenda-unitree-go2/DOSSIER.md"
     },
     {
       "slug": "arenda-unitree-h2",
@@ -783,9 +975,11 @@
       "rentalQuery": "аренда Unitree H2",
       "factQuery": "Unitree H2 производитель характеристики",
       "reuseResearch": "docs/review/unitree-h2-copy/RESEARCH.md",
-      "captureStatus": "reuse_audit_pending",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false
+      "captureStatus": "reused",
+      "sourceReviewStatus": "existing_research_reused",
+      "readyForWriting": true,
+      "dossier": "models/arenda-unitree-h2/dossier.json",
+      "dossierMarkdown": "models/arenda-unitree-h2/DOSSIER.md"
     },
     {
       "slug": "arenda-unitree-r1",
@@ -794,9 +988,11 @@
       "rentalQuery": "аренда Unitree R1",
       "factQuery": "Unitree R1 производитель характеристики",
       "reuseResearch": "docs/review/unitree-r1-copy/RESEARCH.md",
-      "captureStatus": "reuse_audit_pending",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false
+      "captureStatus": "reused",
+      "sourceReviewStatus": "existing_research_reused",
+      "readyForWriting": true,
+      "dossier": "models/arenda-unitree-r1/dossier.json",
+      "dossierMarkdown": "models/arenda-unitree-r1/DOSSIER.md"
     },
     {
       "slug": "arenda-uv-box",
@@ -806,29 +1002,52 @@
       "factQuery": "UV-BOX производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
           "query": "аренда UV-BOX",
           "resultCount": 9,
-          "file": "models/arenda-uv-box/rental-serp.json"
+          "file": "models/arenda-uv-box/rental-serp.json",
+          "relevanceCaution": "Initial ambiguous query; use refined query and dossier, not unrelated results."
         },
         "facts": {
           "status": "captured",
           "query": "UV-BOX производитель характеристики",
           "resultCount": 9,
-          "file": "models/arenda-uv-box/facts-serp.json"
+          "file": "models/arenda-uv-box/facts-serp.json",
+          "relevanceCaution": "Initial ambiguous query; use refined query and dossier, not unrelated results."
+        },
+        "rental-refined": {
+          "status": "captured",
+          "query": "интерактивная витрина UV-BOX аренда",
+          "resultCount": 9,
+          "file": "models/arenda-uv-box/rental-refined-serp.json"
+        },
+        "facts-refined": {
+          "status": "captured",
+          "query": "интерактивная витрина UV-BOX UV Land",
+          "resultCount": 9,
+          "file": "models/arenda-uv-box/facts-refined-serp.json"
         }
       },
       "selectedSources": [
         {
-          "roleCandidate": "platform_candidate",
+          "sourceId": 58,
+          "role": "platform_candidate",
           "url": "https://uv-land.ru/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/e978510e0d2278bc.json"
+        },
+        {
+          "sourceId": 69,
+          "role": "adjacent_product",
+          "url": "https://vinchi-interactive.ru/portfolio/project/interaktivnaja-vitrina-visual-box/",
+          "captureFile": "source-captures/f87beebe354ba94d.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-uv-box/dossier.json",
+      "dossierMarkdown": "models/arenda-uv-box/DOSSIER.md"
     },
     {
       "slug": "arenda-xiaomi-cyberdog-2",
@@ -838,8 +1057,8 @@
       "factQuery": "Xiaomi CyberDog 2 производитель характеристики",
       "reuseResearch": null,
       "captureStatus": "serp_captured",
-      "sourceReviewStatus": "pending",
-      "readyForWriting": false,
+      "sourceReviewStatus": "ready_for_guarded_draft",
+      "readyForWriting": true,
       "queries": {
         "rental": {
           "status": "captured",
@@ -856,31 +1075,39 @@
       },
       "selectedSources": [
         {
-          "roleCandidate": "rental",
+          "sourceId": 59,
+          "role": "rental",
           "url": "https://rent-robot.ru/xiaomi-robot-dog",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/3c60a02095f85631.json"
         },
         {
-          "roleCandidate": "rental",
+          "sourceId": 60,
+          "role": "rental",
           "url": "https://robob2b.ru/rent/8827/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/7d653990d31a6505.json"
         },
         {
-          "roleCandidate": "rental_adjacent",
+          "sourceId": 61,
+          "role": "rental_adjacent",
           "url": "https://www.art-active24.ru/robosobaka-xiaomi/",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/8912ca21f1068c95.json"
         },
         {
-          "roleCandidate": "community_source",
+          "sourceId": 62,
+          "role": "community_source",
           "url": "https://new.c.mi.com/ru/post/347555",
-          "captureStatus": "needs_browser"
+          "captureFile": "source-captures/68222030656cb738.json"
         },
         {
-          "roleCandidate": "facts_reseller",
+          "sourceId": 63,
+          "role": "facts_reseller",
           "url": "https://djirussia.ru/CyberDog_2",
-          "captureStatus": "captured_unreviewed"
+          "captureFile": "source-captures/74ebacf0a079200f.json"
         }
-      ]
+      ],
+      "dossier": "models/arenda-xiaomi-cyberdog-2/dossier.json",
+      "dossierMarkdown": "models/arenda-xiaomi-cyberdog-2/DOSSIER.md"
     }
-  ]
+  ],
+  "researchLibraryStatus": "offline_dossiers_prepared_with_explicit_owner_gates"
 }

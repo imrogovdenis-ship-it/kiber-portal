@@ -1,15 +1,16 @@
 {
-  "key": "5518b5f424bd5129",
-  "status": "needs_browser",
-  "http": "200",
-  "finalUrl": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:10:23.057344+00:00",
-  "textChars": 60,
-  "challenge": false,
+  "sourceId": 55,
   "originalUrl": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
-  "sourceTextSha256": "a2ed7216460978711c62cc4c79ccd6c0530e80176c4f676d196e06ec34b35ffe",
-  "evidenceExcerpts": [],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "finalUrl": "https://divent.ru/ekb/uslugi/robot-sobaka-go2-pro/",
+  "title": "Робот-собака Go2 Pro в Екатеринбурге – аренда робота для шоу",
+  "capturedAt": "2026-09-11T10:46:30.665Z",
+  "method": "live_remote_browser",
+  "captureComplete": true,
+  "sourceTextSha256": "d4ee0bdff625217e0a83fbe6b6286f26ef526514080c62bcdd5e59cb203dedb0",
+  "evidenceExcerpts": [
+    "Корзинка на спине (нагрузка до 3 кг) По запросу Крепеж на спине для раздаточных материалов",
+    "Комплектация Техническая информация 3D модель"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }

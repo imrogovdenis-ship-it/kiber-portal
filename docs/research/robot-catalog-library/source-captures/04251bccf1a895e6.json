@@ -1,24 +1,16 @@
 {
-  "key": "04251bccf1a895e6",
-  "status": "captured_unreviewed",
-  "http": "200",
-  "finalUrl": "https://unibot.ru/catalog/dogs/limx-dynamics-tron-1/",
-  "method": "direct_server_http",
-  "capturedAt": "2026-09-11T10:09:24.917368+00:00",
-  "textChars": 5927,
-  "challenge": false,
+  "sourceId": 13,
   "originalUrl": "https://unibot.ru/catalog/dogs/limx-dynamics-tron-1/",
+  "finalUrl": "https://unibot.ru/catalog/dogs/limx-dynamics-tron-1/",
+  "title": "LimX Dynamics Tron 1 купить роботы-собаки по лучшей цене | Unibot",
+  "capturedAt": "2026-09-11T10:09:24.917368+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
   "sourceTextSha256": "bc729ab630a2f47fd13e917106f5404ecba18d9b716eec82666558f2539ccb0a",
   "evidenceExcerpts": [
-    "Простая установка обеспечивается механизмом быстрой сборки-разборки Tron 1 — легко меняйте типы ступней для максимальной гибкости, а автоматическое обнаружение аппаратуры и настройка ПО обеспечивают бесперебойную производительность. Открытая архитектура для творчества",
-    "Характеристики Бренд",
-    "20 кг Макс. нагрузка",
-    "Макс. нагрузка 15 кг",
-    "15 кг Скорость передвижения (Точечная нога)",
-    "Скорость передвижения (Точечная нога) 1 м/с",
-    "Скорость передвижения (Ступня) 1 м/с",
-    "Скорость передвижения (Колёсная конфигурация) ≥5 м/с"
+    "поддерживает создание сложных алгоритмов, изучение автономной навигации и исследования взаимодействия человека и робота. Соревнования по робототехнике: служит надежной основой для участников соревнований, демонстрируя новаторские решения.",
+    "Характеристики Бренд LimX Dynamics"
   ],
-  "evidenceStatus": "unreviewed; not verified claims about KIBER equipment",
-  "fullCaptureStorage": "agent-private-cache; not browser-dependent"
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
 }
