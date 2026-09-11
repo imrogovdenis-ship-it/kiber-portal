@@ -17,7 +17,7 @@ const previewPath = `/robots/${robot.slug}/`;
 const breadcrumbs = [
   { name: 'Главная', url: '/' },
   { name: 'Каталог', url: '/#catalog' },
-  { name: template.seo.h1.replace(/^Аренда\s+/u, ''), url: previewPath },
+  { name: robot.slug === 'arenda-robota-ardi' ? 'Робот Арди' : template.seo.h1.replace(/^Аренда\s+/u, ''), url: previewPath },
 ];
 ---
 
