@@ -1,0 +1,11 @@
+# Sophia — single-card copy candidate
+
+Identity: Sophia / Hanson Robotics, confirmed by owner; not Little Sophia. Uses accepted shared mobile/breadcrumb source (PRs 103–104), not an older main branch. Owner content acceptance remains pending; no publication or merge approval.
+
+Cached research: models/arenda-robota-sofiya dossier; source captures 9 (3DPT), 10 (Unibot), 66 (Hanson robots). Full cached pages read, no new search. Wordstat snapshot: rental phrase «аренда робота софии» 3 (09.08–09.09.2026); entity phrase «робот софия» 743 (10.08–08.09.2026). Different queries/periods, not summed. Exact-model rental intent chosen; generic humanoid demand stays with compilations.
+
+Gap/claim decision: 3DPT is a sales/technical listing, Unibot mostly promotional biography; neither establishes KIBER programme or independent rental-market corroboration. Hanson confirms human-like Sophia with language processing, facial expressions and computer vision, and distinguishes Little Sophia. Copy answers event questions instead: interview plan, language, specialist, placement, contact, quote scope. No citizenship/celebrity claims, consciousness claims, exact expression count, DOF/dimensions, guaranteed recognition, autonomous walking or supplier prices. Arms/gesture options are configuration-qualified. Six capability topics follow existing media roles; no pictures replaced.
+
+Runtime package: data/content/robot-card-pilot/arenda-robota-sofiya.json. Model-specific manufacturer corrected in template data using owner-confirmed identity. H1, hero photo, gallery assets, price and shared mobile styles are frozen; name grammar in model labels/CTA may be corrected. Targeted build/render/geometry/scope checks required before preview. Only this HTML may be delivered to Jino, preserving deployed chrome and other unmerged pages.
+
+Executed results: checks.json. Only Sofia HTML delivered; deployed header/footer/dry-run setup preserved. Name grammar corrected in text headings/CTA; no CSS or media-file change. Parent CI investigation isolated font swap in breadcrumbs (actual weight 500); existing Medium font preload is inherited without changing final appearance. Hosted result remains separate from passed live card checks.
