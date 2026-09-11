@@ -20,10 +20,10 @@ try{
   const context=await browser.newContext({viewport:{width,height:1000}});
   const page=await context.newPage();const errors=[];
   await page.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());
-  await page.addInitScript(()=>{window.__measuredCLS=0;new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput)window.__measuredCLS+=e.value;}).observe({type:'layout-shift',buffered:true});});
+  await page.addInitScript(()=>{window.__measuredCLS=0;window.__clsSources=[];new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput){window.__measuredCLS+=e.value;if(window.__clsSources.length<20)window.__clsSources.push({value:e.value,time:e.startTime,sources:e.sources?.map(s=>({tag:s.node?.tagName,className:s.node?.className,previous:s.previousRect,current:s.currentRect}))});}}).observe({type:'layout-shift',buffered:true});});
   page.on('response',r=>{if(r.status()>=400)errors.push({url:r.url(),status:r.status()});});
   const response=await page.goto(`http://127.0.0.1:${server.address().port}${route}`,{waitUntil:'networkidle'});assert.equal(response.status(),200);
-  const measure=()=>page.evaluate(()=>{const entries=[performance.getEntriesByType('navigation')[0],...performance.getEntriesByType('resource')];return {bytes:entries.reduce((sum,e)=>sum+e.encodedBodySize,0),requests:entries.length,cls:window.__measuredCLS};});
+  const measure=()=>page.evaluate(()=>{const entries=[performance.getEntriesByType('navigation')[0],...performance.getEntriesByType('resource')];return {bytes:entries.reduce((sum,e)=>sum+e.encodedBodySize,0),requests:entries.length,cls:window.__measuredCLS,clsSources:window.__clsSources};});
   const initial=await measure();
   await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=500){scrollTo(0,y);await new Promise(r=>setTimeout(r,50));}for(const s of document.querySelectorAll('[data-drag-slider]'))for(let x=0;x<s.scrollWidth;x+=500){s.scrollLeft=x;await new Promise(r=>setTimeout(r,50));}});
   await page.waitForTimeout(1000);await page.waitForLoadState('networkidle');const full=await measure();
@@ -35,5 +35,6 @@ try{
  }
 }finally{if(browser)await browser.close();server.close();}
 mkdirSync('docs/review/kiber-39',{recursive:true});writeFileSync('docs/review/kiber-39/browser-performance-report.json',JSON.stringify({profile:limits,results,failures,status:failures.length?'failed':'passed'},null,2)+'\n');
+if(failures.length)console.error('CLS source diagnostics:',JSON.stringify(results.filter(r=>r.full.cls>limits.cls).map(r=>({route:r.route,width:r.width,initial:r.initial.cls,full:r.full.cls,sources:r.full.clsSources}))));
 assert.deepEqual(failures,[]);
 console.log(`PASS ${results.length} cold Chromium checks: initial/full bytes, CLS and resource availability; not field CWV`);
