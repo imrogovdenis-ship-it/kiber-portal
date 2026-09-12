@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !^https$ [NC,OR]
+RewriteCond %{HTTP_HOST} !^www\.kiber-portal\.ru$ [NC]
+RewriteRule ^ https://www.kiber-portal.ru%{REQUEST_URI} [R=301,END]
+RewriteRule ^api/leads(?:/status|/)?$ bridge.php [END]
+RewriteRule ^sitemap-index\.xml$ sitemap.xml [END]
+RewriteRule ^test-blok/?$ / [R=301,END]
+RewriteRule ^ - [END]
+Options -Indexes
+ErrorDocument 404 /404.html
+<FilesMatch "(?i)(^\.|\.(zip|bak|log)$)">
+Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+Header always set Content-Security-Policy "default-src 'self'; frame-src https://kinescope.io https://mc.yandex.ru https://mc.yandex.com blob:; img-src 'self' data: https://mc.yandex.ru https://mc.yandex.com; style-src 'self' 'unsafe-inline'; script-src 'self' https://mc.yandex.ru https://mc.yandex.com https://yastatic.net; font-src 'self'; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com wss://mc.yandex.ru wss://mc.yandex.com https://mc.webvisor.com https://mc.webvisor.org wss://mc.webvisor.com wss://mc.webvisor.org; worker-src 'self' blob:; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
+</IfModule>
