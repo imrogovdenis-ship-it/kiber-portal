@@ -1,0 +1,90 @@
+[
+  {
+    "id": "5d24aa01-cde8-450e-98fb-f028b517e885",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "video"
+      }
+    ]
+  },
+  {
+    "id": "a52a9cf1-feae-4722-9032-48adb6ce37a7",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  },
+  {
+    "id": "e9ed1c85-d5f0-4940-9b29-693671fa3ba3",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  },
+  {
+    "id": "4a57d675-fbf9-4b0b-8e5d-ff353714a286",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  },
+  {
+    "id": "cf7c2eeb-8e97-43e8-a8b6-42af543778bc",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  },
+  {
+    "id": "cb7e9a6e-a300-4dde-a891-ec102404bbfc",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  },
+  {
+    "id": "efbff366-c51f-422b-910c-515e6e6370f1",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  },
+  {
+    "id": "a2899060-ac12-4d42-be2b-72feeb2b83f8",
+    "status": "done",
+    "usage": [
+      {
+        "pageType": "compilation",
+        "slug": "roboty-gumanoidy",
+        "blockId": "scenarioExplanation"
+      }
+    ]
+  }
+]
