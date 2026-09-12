@@ -60,6 +60,7 @@ const descriptionLines = description.split('\n');
 
       <nav class="site-footer__legal" aria-label="Юридические документы">
         {legal_links.map((link) => <a href={link.href}>{link.label.split('\n').map((line) => <span>{line}</span>)}</a>)}
+        <button type="button" data-cookie-settings hidden>Настройки cookie</button>
       </nav>
 
       <p class="site-footer__requisites" aria-label="Реквизиты">

@@ -1,0 +1,24 @@
+.site-header__panel { display: contents; }
+.site-header__menu-top, .site-header__call-label { display: none; }
+.site-header .site-header__link { font-size: 1rem; font-weight: 600; color: var(--kp-ink); }
+@media (max-width: 59.9375rem) {
+ .site-header, .site-header.is-open { height: 4.25rem; }
+ .site-header.is-open .site-header__container { height: 100%; flex-wrap: nowrap; }
+ .site-header__logo { flex-shrink: 0; }
+ .site-header__burger { flex-shrink: 0; min-width: 2.75rem; min-height: 2.75rem; align-items: center; justify-content: center; cursor: pointer; }
+ .site-header__panel { display: none; }
+ .site-header.is-open .site-header__panel { display: flex; position: absolute; inset: 4.25rem 0 auto; flex-direction: column; padding: 1rem var(--kp-reference-page-gutter) calc(1.25rem + env(safe-area-inset-bottom)); max-height: calc(100dvh - 4.25rem); overflow-y: auto; background: var(--kp-white); border-top: .0625rem solid var(--kp-line); box-shadow: 0 .75rem 1.5rem color-mix(in srgb, var(--kp-ink) 12%, transparent); }
+ .site-header .site-header__menu-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-size: 1rem; font-weight: 600; }
+ .site-header [data-menu-close] { display: inline-flex; gap: .5rem; align-items: center; justify-content: center; min-height: 2.75rem; padding: .5rem .75rem; background: var(--kp-white); color: var(--kp-ink); border: .0625rem solid var(--kp-line); border-radius: .625rem; font: inherit; cursor: pointer; }
+ .site-header [data-menu-close] span { font-size: 1.5rem; line-height: 1; }
+ .site-header.is-open .site-header__nav, .site-header.is-open .site-header__actions { display: flex; position: static; inset: auto; width: 100%; margin: 0; padding: .75rem 0 0; flex-direction: column; align-items: stretch; gap: .5rem; background: transparent; }
+ .site-header .site-header__link { display: flex; align-items: center; min-height: 2.75rem; }
+ .site-header.is-open .site-header__actions { border-top: .0625rem solid var(--kp-line); margin-top: .75rem; padding-top: 1rem; }
+ .site-header__phone { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .25rem; min-height: 3.5rem; padding: .625rem 1rem; border-radius: var(--kp-reference-button-radius); background: var(--kp-blue-deep); color: var(--kp-white); font-size: 1rem; font-weight: 600; }
+ .site-header__phone:hover { color: var(--kp-white); }
+ .site-header__call-label { display: inline; font-size: .875rem; }
+ .site-header__cta { min-height: 2.75rem; }
+ .site-header.is-open .site-header__burger span:nth-child(1) { transform: translateY(.4375rem) rotate(45deg); }
+ .site-header.is-open .site-header__burger span:nth-child(2) { opacity: 0; }
+ .site-header.is-open .site-header__burger span:nth-child(3) { transform: translateY(-.4375rem) rotate(-45deg); }
+}
