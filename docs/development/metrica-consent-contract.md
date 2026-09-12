@@ -14,4 +14,7 @@ Owner approved counter 112523930 and production release. Old counter 112081122 m
 ## Checks
 npm run verify; npm run build:production; npm run test:metrica-consent.
 Default browser test stubs vendor responses and never sends visits. REAL_METRICA=1 is an owner-authorized real synthetic visit, not a fixture; do not run it in CI. CDP_URL optionally uses isolated context in server browser.
-Before publication: real provider delivery and replay privacy review, full green CI, backup, preserve .htaccess/API/DNS, bounded production smoke. No real lead submission.
+Before publication: real provider delivery and replay privacy review, full green CI, backup, preserve API/DNS and non-CSP .htaccess directives, bounded production smoke. No real lead submission.
+
+## Production CSP gate
+Production originally blocked mc.yandex.ru. The versioned infra/jino-production/production.htaccess changes only CSP allowlists. Browser simulation must use that exact header; an attempted script request is not delivery. Real mode requires HTTP-200 watch acknowledgement, provider forms=0, and Webvisor websocket/HTTP acknowledgement. Modern recorder uses wss://mc.yandex.ru/solid.ws; HTTP-only logs miss it. Keep form-action, frame-ancestors and routing restrictions. No unsafe-inline/eval script grants. Verify remote header and bound post-revoke websocket traffic.
