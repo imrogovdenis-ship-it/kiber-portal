@@ -13,3 +13,11 @@ test('linked cookie policy discloses providers, consent renewal and limits on re
  const text=registry.documents.find((d:any)=>d.slug==='cookie-policy').paragraphs.join(' ');
  for(const phrase of ['Яндекс.Метрика','Вебвизор','содержимое полей','повторно','ранее переданных']) assert.ok(text.includes(phrase),phrase);
 });
+
+test('split policy names independent basic collection without implied blanket consent',()=>{
+ const docs=JSON.parse(readFileSync('data/legal/legal-documents.json','utf8')).documents;
+ const cookie=docs.find((d:any)=>d.slug==='cookie-policy').paragraphs.join(' ');
+ const privacy=docs.find((d:any)=>d.slug==='privacy-policy').paragraphs.join(' ');
+ assert(cookie.includes('пункт 7 части 1 статьи 6'));assert(cookie.includes('независимо от выбора'));assert(cookie.includes('со следующей'));
+ assert(!privacy.includes('Использование Сайта означает согласие'));assert(!privacy.includes('аналитика посещаемости в обезличенном виде'));
+});

@@ -71,7 +71,7 @@
     "test:cookie-consent": "node scripts/cookie-consent-browser.mjs",
     "test:header-menu": "node scripts/header-menu-browser.mjs",
     "ci:browser-setup": "playwright install --with-deps chromium",
-    "test:metrica-consent": "node scripts/metrica-consent-browser.mjs"
+    "test:metrica-consent": "node scripts/metrica-split-browser.mjs"
   },
   "dependencies": {
     "astro": "7.2.7",

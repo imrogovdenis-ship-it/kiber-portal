@@ -1,20 +1,19 @@
-# Metrica/Webvisor privacy and release contract
+# Basic Metrica / optional Webvisor contract — v3 candidate
 
-Owner approved counter 112523930 and production release. Old counter 112081122 must not be deleted.
+Owner requested the split model, using try-vr.ru only as an architectural reference. This branch is not production activation or a legal certification.
 
-- Shared BaseLayout loads only the first-party adapter; provider requires production build, exact apex/www hostname, and consent v2.
-- No provider on /lead/* or /api/*, including request and success pages. Preview must never send production visits.
-- Consent v1 is invalidated; rejection, expiration and cross-tab revocation are fail-closed. Revocation destructs the SDK, clears queued init and first-party _ym_ cookies, and reloads to terminate listeners and late downloads. Historical server records are not automatically deleted.
-- Counter-side Write all fields OFF, automatic goals OFF, ecommerce OFF, publisher OFF, tag manager OFF. Webvisor ON. Verified through counter settings readback before release.
-- All form trees carry ym-hide-content in source. Before init and on inserted DOM, forms and editable fields are marked ym-hide-content/ym-disable-keys. Never introduce ym-record-keys/ym-show-content in a form. Every new form must follow this contract.
-- No raw form values or automatic link tracking; URL/referrer query and fragment are stripped. Consequently UTM-specific attribution is not implemented by this first privacy-scoped adapter; do not claim end-to-end CRM attribution or custom goals.
-- No unconditional noscript beacon.
-- Banner loses only the obsolete disabled-counter sentence, with no added provider names. Details are in linked cookie policy.
+- Counter 112523930; no new counter and no deletion of 112081122.
+- BaseLayout loads analytics-provider-v3.js. Cookie controller cookie-consent-v3.js emits the initial state during page load without waiting for a click. Basic mode starts at that event; only production apex/www hosts. /lead/* and /api/* remain excluded.
+- v3 accepted at page load enables webvisor/clickmap; absent/rejected/old v2 state keeps both false. A new acceptance takes effect on the next page, avoiding reinit/double pageview.
+- Withdrawal from recording: destruct or discard queued init, erase only _ym_visorc, reload into basic mode. _ym_uid is retained. Short-lived same-path sessionStorage marker sets defer:true on this automatic reload; it is consumed once. If sessionStorage is blocked, reload still stops recording; duplicate-hit suppression is best effort in that degraded case.
+- Old v2 assets are retained for cached old HTML. Do not reuse an old script URL for a new consent contract.
+- Preserve ym-hide-content form trees, editable-field protections and counter-side field recording OFF. No ClientID in forms. Do not add marketing tracking or CRM attribution in this change.
+- No raw query/hash/referrer query in adapter, no automatic link tracking, ecommerce:false and disableYtm:true. Existing neutral robot-card event bus remains optional.
+- Banner buttons/design unchanged; text discloses base collection regardless of choice and links to policy. Policies describe operator-selected legitimate interest, not anonymity or implied consent. Form consent remains separate.
 
-## Checks
+## Verification
 npm run verify; npm run build:production; npm run test:metrica-consent.
-Default browser test stubs vendor responses and never sends visits. REAL_METRICA=1 is an owner-authorized real synthetic visit, not a fixture; do not run it in CI. CDP_URL optionally uses isolated context in server browser.
-Before publication: real provider delivery and replay privacy review, full green CI, backup, preserve API/DNS and non-CSP .htaccess directives, bounded production smoke. No real lead submission.
+Default split browser test uses stubs and exact production CSP. REAL_METRICA=1 is an explicit synthetic QA visit and must not be used in CI. Verify real acknowledged pageviews, recorder init flags, no duplicate on accept/revoke, old consent invalidation, masking and rejected-state transition. A WebSocket alone is not evidence of recording (basic mode uses it too).
 
-## Production CSP gate
-Production originally blocked mc.yandex.ru. The versioned infra/jino-production/production.htaccess changes only CSP allowlists. Browser simulation must use that exact header; an attempted script request is not delivery. Real mode requires HTTP-200 watch acknowledgement, provider forms=0, and Webvisor websocket/HTTP acknowledgement. Modern recorder uses wss://mc.yandex.ru/solid.ws; HTTP-only logs miss it. Keep form-action, frame-ancestors and routing restrictions. No unsafe-inline/eval script grants. Verify remote header and bound post-revoke websocket traffic.
+## Publication gate
+Separate owner publication approval remains required. Record actual recipients/retention and assess the legitimate-interest basis with legal support; do not declare it proven merely because another site uses it. No DNS/API/CSP modifications in this candidate.
