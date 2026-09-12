@@ -1,5 +1,7 @@
 (() => {
   const setupSlider = (slider) => {
+    if (slider.dataset.dragReady) return;
+    slider.dataset.dragReady = 'true';
     let isDown = false;
     let startX = 0;
     let startScroll = 0;
@@ -10,6 +12,7 @@
       item.addEventListener('dragstart', (event) => event.preventDefault());
     });
 
+    slider.addEventListener('touchstart', () => { moved = 0; }, { passive: true });
     slider.addEventListener('mousedown', (event) => {
       if (event.button !== 0 && event.button !== 2) return;
       isDown = true;

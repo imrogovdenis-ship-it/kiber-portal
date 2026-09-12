@@ -1,0 +1,44 @@
+{
+  "slug": "arenda-agibot-x2",
+  "name": "Agibot X2",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-agibot-x2.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Гибкая талия робота-гуманоида Agibot X2 на мероприятие",
+    "Скорости ходьбы робота Agibot X2 на празднике",
+    "Батарея робота-гуманоида Agibot X2",
+    "Микрофон и динамики робота-гуманоида Agibot X2 на конференции",
+    "RGB-камеры и сенсора касания при аренде робота Agibot X2",
+    "Руки робота Agibot X2, держащей предмет на стенде выставки"
+  ],
+  "researchStatus": "reuse_existing_reviewed_research",
+  "readyForWriting": true,
+  "allowedDraftScope": "Existing researched content and its existing factual limits; no new quantitative promises.",
+  "existingResearch": "docs/review/robot-card-remediation/humanoids-g1-x2/COMPETITOR_GAPS.md",
+  "guardrails": [
+    "X2 и Ultra не объединяются; не обещать неподтверждённые сенсоры, эмоции или свободный диалог."
+  ],
+  "ownerQuestions": [
+    "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
+  ],
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Agibot X2",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

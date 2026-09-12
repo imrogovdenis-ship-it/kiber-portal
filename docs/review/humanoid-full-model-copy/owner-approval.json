@@ -1,0 +1,14 @@
+{
+  "ownerQuote": "Отлично! Фиксируй сам результат, а также подход к его созданию в навыках и файлах проекта. Затем переходи к написанию следующей карточки. Давай делать по одной за раз.",
+  "approvedSourceCommit": "32372f2b8e89b4a17c83a51eccf12ed4e9e37282",
+  "scope": [
+    "arenda-unitree-g1",
+    "arenda-agibot-x2"
+  ],
+  "approval": "copy and reviewed preview accepted",
+  "mainDomainPublicationApproved": false,
+  "mergeApproved": false,
+  "workflow": "one card at a time, owner review before next card",
+  "nextCard": "arenda-unitree-r1",
+  "recordedAt": "2026-09-11T07:14:54.225281+00:00"
+}

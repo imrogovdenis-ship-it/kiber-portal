@@ -1,0 +1,15 @@
+{
+  "sourceId": 7,
+  "originalUrl": "https://w-expo.tech/ardi",
+  "finalUrl": "https://w-expo.tech/ardi",
+  "title": "Робот Арди",
+  "capturedAt": "2026-09-11T10:09:21.805082+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "a2051b44a8af851526bf1a93fec01dbc5b6c98a1d94b4b5dda5269782df7f1c0",
+  "evidenceExcerpts": [
+    "15 степеней свободы в подвижных руках-манипуляторах Подвижные торс и плечи"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

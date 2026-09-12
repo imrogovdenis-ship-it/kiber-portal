@@ -1,0 +1,16 @@
+{
+  "sourceId": 39,
+  "originalUrl": "https://promo-bot.ru/production/promobot-v4/",
+  "finalUrl": "https://promo-bot.ru/production/promobot-v4/",
+  "title": "Promobot V.4 | PROMOBOT",
+  "capturedAt": "2026-09-11T10:09:53.818830+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "bcc3af2a669df79a526ee02b9f021fbf67388ec8920193c05143e9285153f2ad",
+  "evidenceExcerpts": [
+    "Продукт разработан при поддержке Фонда содействия инновациям Заказать",
+    "Почта технической поддержки действующих клиентов MAX Чат-бот"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

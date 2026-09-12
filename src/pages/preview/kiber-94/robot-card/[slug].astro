@@ -1,4 +1,5 @@
 ---
+import { robotBreadcrumbName } from '../../../../lib/robot-breadcrumb-name';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import RobotCardTemplate from '../../../../components/templates/RobotCardTemplate.astro';
 import { getRobotPages, type RobotPageRecord } from '../../../../lib/robot-pages';
@@ -20,7 +21,7 @@ const previewPath = `/preview/kiber-94/robot-card/${robot.slug}/`;
 const breadcrumbs = [
   { name: 'Главная', url: '/' },
   { name: 'Каталог', url: '/#catalog' },
-  { name: template.seo.h1.replace(/^Аренда\s+/u, ''), url: previewPath },
+  { name: robotBreadcrumbName(robot.slug), url: previewPath },
 ];
 ---
 

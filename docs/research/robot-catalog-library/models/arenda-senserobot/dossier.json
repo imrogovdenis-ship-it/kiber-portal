@@ -1,0 +1,44 @@
+{
+  "slug": "arenda-senserobot",
+  "name": "Робот-шахматист SenseRobot",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-senserobot.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Иллюстрация вычислительного чипа",
+    "Иллюстрация распознавания позиции на шахматной доске",
+    "Манипулятор робота-шахматиста SenseRobot",
+    "Схема шахматной доски",
+    "Условная схема электрической розетки и вилки",
+    "Иллюстрация управления игровым роботом"
+  ],
+  "researchStatus": "reuse_existing_reviewed_research",
+  "readyForWriting": true,
+  "allowedDraftScope": "Existing researched content and its existing factual limits; no new quantitative promises.",
+  "existingResearch": "docs/review/robot-card-remediation/pilot-research/COMPETITOR_GAPS.md",
+  "guardrails": [
+    "Использовать согласованное сетевое питание; не возвращать неподтверждённую батарею или сеанс одновременной игры."
+  ],
+  "ownerQuestions": [
+    "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
+  ],
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда SenseRobot",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

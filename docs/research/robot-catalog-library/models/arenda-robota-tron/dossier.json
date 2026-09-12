@@ -1,0 +1,113 @@
+{
+  "slug": "arenda-robota-tron",
+  "name": "Модульный робот Tron",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-tron.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Смены модуля стопы робота с колёсно-шаговой платформой Tron",
+    "Препятствия для двуногого робота Tron в аренду на выставку",
+    "Датчика баланса робота TRON 1 LimX Dynamics",
+    "Схема процессора модульного робота Tron в прокат",
+    "Параметры габаритов робота Tron в аренду на мероприятие",
+    "АКБ батарея двуногого робота Tron на выставку"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Модульная двуногая платформа для демонстрации движения и инженерного интерактива, не человекоподобный собеседник по умолчанию.",
+  "findings": [
+    {
+      "text": "Rent Robot и LimX описывают три варианта окончаний ног. Это поддерживает идентификацию с TRON1, но комплект КИБЕР надо подтвердить.",
+      "sourceIds": [
+        11,
+        64,
+        68
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "На странице Qubot встречается описание рук и 12 степеней свободы; LimX выносит манипулятор в отдельный Arm Expansion Kit. Базовую платформу и опции нельзя смешивать.",
+      "sourceIds": [
+        12,
+        64
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "У LimX отдельно описаны голосовой и сенсорный наборы; их наличие не следует из названия TRON1.",
+      "sourceIds": [
+        64
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 11,
+      "role": "rental",
+      "url": "https://rent-robot.ru/tron",
+      "captureFile": "source-captures/690d0b53dbf0e28a.json"
+    },
+    {
+      "sourceId": 12,
+      "role": "facts",
+      "url": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
+      "captureFile": "source-captures/7d1b8718a6a0b00f.json"
+    },
+    {
+      "sourceId": 13,
+      "role": "facts",
+      "url": "https://unibot.ru/catalog/dogs/limx-dynamics-tron-1/",
+      "captureFile": "source-captures/04251bccf1a895e6.json"
+    },
+    {
+      "sourceId": 64,
+      "role": "manufacturer_candidate",
+      "url": "https://www.limxdynamics.com/en/products/tron1",
+      "captureFile": "source-captures/b3799016e5d7cf81.json"
+    },
+    {
+      "sourceId": 68,
+      "role": "manufacturer_candidate",
+      "url": "https://shop.limxdynamics.com/pages/tron-1",
+      "captureFile": "source-captures/cb72367694afba88.json"
+    }
+  ],
+  "guardrails": [
+    "TRON1, TRON2 и криптовалютный TRON не смешиваются.",
+    "Не приравнивать 1000 W максимальной мощности к ёмкости батареи в Wh.",
+    "Не обещать лидар, голос, манипулятор и конкретную автономность для любого комплекта."
+  ],
+  "ownerQuestions": [
+    "Это LimX TRON1? Какие окончания ног и расширения входят в предлагаемый комплект?"
+  ],
+  "suggestedFaqTopics": [
+    "режимы ног",
+    "управляемый показ",
+    "дополнительные модули",
+    "покрытие",
+    "питание",
+    "исследования и мероприятие"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робота Tron",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

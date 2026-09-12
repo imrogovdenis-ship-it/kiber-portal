@@ -1,0 +1,28 @@
+{
+  "preview": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-tron/",
+  "status": "owner_review_pending",
+  "research": "docs/research/robot-catalog-library/models/arenda-robota-tron/dossier.json",
+  "sourceTests": 7,
+  "build": "passed",
+  "liveChecks": {
+    "widths": [
+      390,
+      768,
+      1440
+    ],
+    "copyFaqImagesLinksNoindexOverflow": "passed",
+    "sixEqualFullWidth16by9Frames": "passed",
+    "deployedHtmlEqualsCandidate": true
+  },
+  "frozenScope": {
+    "hero_media": "unchanged",
+    "hero": "byte-identical",
+    "gallery_media": "unchanged",
+    "robotInAction_media": "unchanged",
+    "capabilities_media": "unchanged",
+    "component_css": "byte-identical"
+  },
+  "deployScope": "one Tron HTML only; existing chrome/noindex/dry-run preserved",
+  "hostedCi": "not yet completed; not a preview handoff blocker",
+  "productionMergeDnsAnalyticsLiveLeadsChanged": false
+}

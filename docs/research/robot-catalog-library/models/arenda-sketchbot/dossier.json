@@ -1,0 +1,99 @@
+{
+  "slug": "arenda-sketchbot",
+  "name": "Sketchbot",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-sketchbot.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Таймер портретной зоны Sketchbot",
+    "Роборука Sketchbot рисует портрет карандашом",
+    "Лист с портретом гостя для Sketchbot",
+    "Брендированный бланк для рисунка Sketchbot",
+    "Гости наблюдают за работой Sketchbot",
+    "Оператор помогает гостю в портретной зоне Sketchbot"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Быстрый рисованный сувенир по фотографии с управлением очередью и согласованным стилем.",
+  "findings": [
+    {
+      "text": "Divent и Sketchbot.ru раскрывают фотостойку, оператора и выдачу; скорости зависят от режима и состава станции.",
+      "sourceIds": [
+        50,
+        51
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Rent Robot описывает обработку снимка и рисование. Picture Mosaics показывает собственные SketchBots и формат мозаики — это отдельный продукт, не автоматически оборудование КИБЕР.",
+      "sourceIds": [
+        52,
+        53
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 50,
+      "role": "rental",
+      "url": "https://divent.ru/ekb/uslugi/sketch-bot/",
+      "captureFile": "source-captures/3992c7d57ecb97c1.json"
+    },
+    {
+      "sourceId": 51,
+      "role": "rental",
+      "url": "https://sketchbot.ru/",
+      "captureFile": "source-captures/5e64aace4f6017af.json"
+    },
+    {
+      "sourceId": 52,
+      "role": "rental",
+      "url": "https://rent-robot.ru/scetchbot",
+      "captureFile": "source-captures/ecf8f870b12572b6.json"
+    },
+    {
+      "sourceId": 53,
+      "role": "platform_candidate",
+      "url": "https://www.picturemosaics.com/ru/event/sketch/",
+      "captureFile": "source-captures/91d94f21b670f274.json"
+    }
+  ],
+  "guardrails": [
+    "Не обещать конкретное время портрета и гостей в час по чужой станции.",
+    "Мозаика, парные портреты и цифровое видео не входят автоматически.",
+    "Не смешивать A4-художника и скетч-станцию."
+  ],
+  "ownerQuestions": [
+    "Сколько манипуляторов, какой формат бумаги/рисунка, цифровая выдача и порядок работы с фото?"
+  ],
+  "suggestedFaqTopics": [
+    "как получить портрет",
+    "стили",
+    "очередь",
+    "число роботов",
+    "брендирование",
+    "цифровая копия и фото"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Sketchbot",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

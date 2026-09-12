@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://rent-robot.ru/unitree-r1",
+      "title": "rentrobot",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Кол-во степеней свободы - 26",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": "https://roboagency.ru/unitree-r1-gumanoidnyj-robot-arenda",
+      "title": "roboagency",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Движение R1 строится на согласованной работе 24 отдельных моторов — по ним распределены степени свободы: 5 на каждую руку, 6 на каждую ногу, 2 на торс. Такая конфигурация дает достаточную гибкость для естественных перемещений и простых манипуляций без избыточной сложности.",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": "https://roboagency.ru/unitree-r1-edu-gumanoidnaya-platforma-arenda",
+      "title": "roboagency-edu",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Python, ROS2, открытый SDK, готовые примеры сценариев — можно быстро стартовать, не собирая все с нуля.",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": "https://shop.unitree.com/products/unitree-r1",
+      "title": "Unitree official R1 product",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Please Note: Only the EDU version supports secondary development. This Edu version is the Edu Standard Edition. If you require any additional optional accessories, please contact our sales team(sales_global@unitree.cc).",
+          "added": "2026-09-11"
+        },
+        {
+          "text": "The head is equipped with two degrees of freedom (DOF)  to enhance environmental perception; the whole body is equipped with a total of 20 to 26 degrees of freedom (DOF) to enable natural motion in complex scenarios.",
+          "added": "2026-09-11"
+        },
+        {
+          "text": "Weighing just~29 kg and standing 123 cm tall, the unit is ready to use right out of the box, requiring no tedious calibration.Portable design keeps you focused on innovation, not setup.",
+          "added": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": "https://divent.ru/ekb/uslugi/robot-gumanoid-unitree-r1",
+      "title": "Divent Unitree R1 rental, Ekaterinburg",
+      "accessed": "2026-09-11",
+      "quotes": [
+        {
+          "text": "Мы предоставляем Unitree R1 в аренду в Екатеринбурге с полным техническим сопровождением: доставка, настройка, оператор на площадке и контроль работы робота. Вы получаете полностью готовое решение, которое усиливает впечатление от мероприятия и работает на имидж вашего бренда.",
+          "added": "2026-09-11"
+        }
+      ]
+    }
+  ]
+}

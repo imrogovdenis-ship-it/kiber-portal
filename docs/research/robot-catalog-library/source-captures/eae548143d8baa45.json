@@ -1,0 +1,16 @@
+{
+  "sourceId": 44,
+  "originalUrl": "https://rent-robot.ru/robobar",
+  "finalUrl": "https://rent-robot.ru/robobar",
+  "title": "Аренда робота Робобар",
+  "capturedAt": "2026-09-11T10:09:57.428196+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "9598d21e3c489cd295fc53bc1d932751d38c0877fe88d200a37902f7d5d43356",
+  "evidenceExcerpts": [
+    "5кг максимальная нагрузка 2 часа на монтаж 2 человека сопровождения",
+    "В стоимость аренды робота Робобар входит: Аренда Доставка"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

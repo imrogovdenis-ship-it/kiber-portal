@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "arenda-klipmeiker",
+    "field": "identity.manufacturer",
+    "value": "робота",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "field": "identity.manufacturer",
+    "value": "мини",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "field": "identity.manufacturer",
+    "value": "робота-кофейни",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-roboshashki",
+    "field": "identity.manufacturer",
+    "value": "робота",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "field": "identity.manufacturer",
+    "value": "робота-бармена",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "field": "identity.manufacturer",
+    "value": "робота",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "field": "identity.manufacturer",
+    "value": "робота",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "field": "identity.manufacturer",
+    "value": "модульного",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  },
+  {
+    "slug": "arenda-uv-box",
+    "field": "identity.manufacturer",
+    "value": "интерактивной",
+    "issue": "Part of a display name, not verified manufacturer information",
+    "action": "Do not use as a factual manufacturer; fix separately after identification."
+  }
+]

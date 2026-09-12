@@ -1,0 +1,16 @@
+{
+  "sourceId": 21,
+  "originalUrl": "https://rent-robot.ru/glambot",
+  "finalUrl": "https://rent-robot.ru/glambot",
+  "title": "Аренда GlamBot — робот-камера для slow-motion на мероприятие",
+  "capturedAt": "2026-09-11T10:09:33.453613+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "6ef3a49dbc66675515326c4e409fb5461404f7175be514de1c868060f893f33e",
+  "evidenceExcerpts": [
+    "Масса : роборука ~35–60 кг",
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Glambot от 100 000 руб."
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

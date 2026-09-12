@@ -1,0 +1,92 @@
+{
+  "slug": "arenda-robota-hudozhnika-a4",
+  "name": "Робот-художник A4",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-hudozhnika-a4.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Таймер портретной зоны робота-художника A4",
+    "Роборука рисует портрет карандашом на бумаге",
+    "Лист A4 для портрета робота-художника",
+    "Брендированный бланк для портрета A4",
+    "Зона ожидания и выдачи готовых портретов",
+    "Оператор контролирует работу робота-художника A4"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Портрет на бумаге A4 и процесс работы манипулятора как отдельный интерактив.",
+  "findings": [
+    {
+      "text": "Rent Robot указывает портрет за 10–15 минут; Divent — A4 от пяти минут и отдельный комплект станции. Это разные условия, не универсальная скорость.",
+      "sourceIds": [
+        47,
+        48
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Время Роботов называет Ufactory xArm 6 и форматы A5/A4. Нельзя считать оборудование КИБЕР тем же без подтверждения.",
+      "sourceIds": [
+        49
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 47,
+      "role": "rental",
+      "url": "https://rent-robot.ru/robot-artist",
+      "captureFile": "source-captures/ffa2980a6e90872f.json"
+    },
+    {
+      "sourceId": 48,
+      "role": "category_rental",
+      "url": "https://divent.ru/ekb/uslugi/robot-hudozhnik/",
+      "captureFile": "source-captures/35d1c8e41fce0f2a.json"
+    },
+    {
+      "sourceId": 49,
+      "role": "category_rental",
+      "url": "https://itis-time.ru/robot/robohudiznik/",
+      "captureFile": "source-captures/263ede64c7e1b53d.json"
+    }
+  ],
+  "guardrails": [
+    "DIY-плоттеры, настенные принтеры и ручное рисование исключены из модельных источников.",
+    "Не смешивать скорость Sketchbot с детализированным A4-портретом.",
+    "Фотографии гостей и архив/цифровая выдача требуют согласованного процесса."
+  ],
+  "ownerQuestions": [
+    "Подтвердить манипулятор, формат бумаги, ПО, детализацию, расходники и выдачу."
+  ],
+  "suggestedFaqTopics": [
+    "съёмка гостя",
+    "стиль портрета",
+    "формат A4",
+    "время и очередь",
+    "бумага и рамки",
+    "хранение фотографий"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робота-художника A4",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

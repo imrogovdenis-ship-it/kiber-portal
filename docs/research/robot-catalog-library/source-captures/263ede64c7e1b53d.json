@@ -1,0 +1,16 @@
+{
+  "sourceId": 49,
+  "originalUrl": "https://itis-time.ru/robot/robohudiznik/",
+  "finalUrl": "https://itis-time.ru/robot/robohudiznik/",
+  "title": "Робот-художник",
+  "capturedAt": "2026-09-11T10:10:00.919901+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "3b53e580f06720e26cb01431556647183455a5d500de06d93dd8fd9f7d0f83a9",
+  "evidenceExcerpts": [
+    "**Наличие, сроки поставки и точную стоимость комплектаций уточняйте у специалистов компании Калькулятор Робот-художник: ваш аналоговый портрет глазами ИИ",
+    "Наша компания предоставляет робота-художника в аренду с полным сопровождением. На площадку его доставляет профессиональный оператор, который выполняет монтаж и демонтаж устройства, а также следит за его исправной работой на протяжении всего мероприятия. Цена аренды робота-художника зависит от продолжительности мероприятия, города"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

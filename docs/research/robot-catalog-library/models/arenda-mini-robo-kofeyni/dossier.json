@@ -1,0 +1,99 @@
+{
+  "slug": "arenda-mini-robo-kofeyni",
+  "name": "Мини-робо-кофейня",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-mini-robo-kofeyni.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Компактная кофейная зона с чашкой кофе",
+    "Мини-модуль робо-кофейни для мероприятия",
+    "Экран выбора напитка в мини Robo-Кофейне",
+    "Стаканы и расходники для компактной кофейной точки",
+    "Брендированная зона выдачи кофе",
+    "Оператор обслуживает мини Robo-Кофейню"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Компактная кофейная зона как согласованный комплект оборудования, меню и обслуживания.",
+  "findings": [
+    {
+      "text": "Rent Robot описывает мини-модуль с кофе и мороженым; Divent — другой кофейный формат. Меню и мощность одной установки не описывают другую.",
+      "sourceIds": [
+        32,
+        33
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Monty и Anno — отдельные конфигурации. У Anno обнаруживается посторонний текст о текстильной отрасли; не использовать эту страницу как паспорт КИБЕР.",
+      "sourceIds": [
+        34,
+        35
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 32,
+      "role": "rental",
+      "url": "https://rent-robot.ru/mini-coffee",
+      "captureFile": "source-captures/a7d14c80f8bf572e.json"
+    },
+    {
+      "sourceId": 33,
+      "role": "category_rental",
+      "url": "https://divent.ru/ekb/uslugi/robot-barista/",
+      "captureFile": "source-captures/afd20c88e5d3fe6b.json"
+    },
+    {
+      "sourceId": 34,
+      "role": "background_only_content_quality_warning",
+      "url": "https://www.annorobots.ru/coffee-machine-robot-vending-machine/",
+      "captureFile": "source-captures/0fd311febb838c8d.json"
+    },
+    {
+      "sourceId": 35,
+      "role": "different_configuration",
+      "url": "https://kupirobot.ru/product/robo-kioski/stay-kioski/monty-kiosk/",
+      "captureFile": "source-captures/72eecaaf3f2b224c.json"
+    }
+  ],
+  "guardrails": [
+    "Мини-кофейня не равна любому кофейному киоску.",
+    "Не обещать мороженое, холодное меню, мощность или отсутствие водопровода без состава модуля.",
+    "Сырьё и расходники не считать автоматически включёнными."
+  ],
+  "ownerQuestions": [
+    "Нужны модель/состав мини-модуля, меню, вода, мощность, расходники и обслуживание."
+  ],
+  "suggestedFaqTopics": [
+    "меню",
+    "размещение",
+    "вода и электропитание",
+    "расходники",
+    "очередь",
+    "брендирование"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда мини робо-кофейни",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "owner review pending",
+  "preview": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/",
+  "sourceTests": 5,
+  "astroCheck": "0 errors / 0 warnings / 16 hints",
+  "build": "passed",
+  "liveBrowserWidths": [
+    390,
+    768,
+    1440
+  ],
+  "liveCopyFaqImagesLinksNoindexOverflow": "passed",
+  "sixFullWidth16by9Frames": "passed at all three widths",
+  "hero": "byte-identical",
+  "galleryAndCapabilitySrcAltDimensions": "identical",
+  "sharedComponentCss": "identical",
+  "deployedScope": "only Sophia HTML; copy/SEO and a nonvisual preload for existing Montserrat Medium",
+  "sharedCI": "awaiting hosted verification of 500-weight font preload"
+}

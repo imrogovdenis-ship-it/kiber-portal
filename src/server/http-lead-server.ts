@@ -1,6 +1,7 @@
+import {isIP} from 'node:net';
 import {createServer} from 'node:http';
-import {handleLeadRequest,type EnvLike} from './lead-routing/api-leads';
-export function createLeadServer(env:EnvLike){
+import {handleLeadRequest,type EnvLike,type LeadRequestOptions} from './lead-routing/api-leads';
+export function createLeadServer(env:EnvLike,options:LeadRequestOptions={}){
  return createServer(async(req,res)=>{
   try{
    const path=new URL(req.url||'/', 'http://api.internal').pathname;
@@ -17,8 +18,11 @@ export function createLeadServer(env:EnvLike){
    const parts:Buffer[]=[];let bytes=0;
    for await(const chunk of req){bytes+=chunk.length;if(bytes>65536){res.writeHead(413,{'content-type':'application/json','connection':'close'});res.end('{"ok":false,"error":"payload too large"}');return;}parts.push(Buffer.from(chunk));}
    const headers=new Headers();for(const [key,value] of Object.entries(req.headers))if(value)headers.set(key,Array.isArray(value)?value.join(','):value);
+   const trustedHeader=env.LEAD_TRUSTED_CLIENT_IP_HEADER?.toLowerCase();
+   const clientIp=trustedHeader?req.headers[trustedHeader]:undefined;
+   if(typeof clientIp==='string'&&isIP(clientIp))headers.set('x-forwarded-for',clientIp);
    const request=new Request('http://api.internal'+req.url,{method:req.method,headers,...(req.method==='POST'?{body:Buffer.concat(parts)}:{})});
-   const response=await handleLeadRequest(request,env);res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());
+   const response=await handleLeadRequest(request,env,fetch,options);res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());
   }catch{res.writeHead(500,{'content-type':'application/json'});res.end('{"ok":false,"error":"internal error"}');}
  });
 }

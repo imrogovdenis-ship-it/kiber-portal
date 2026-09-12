@@ -1,0 +1,8 @@
+{
+  "accepted": true,
+  "sourceCommit": "1cba4107a426828c30c1aa099c9372cdc4527ddf",
+  "previewSha256": "1fc2ad863aee2097e1294b4f6ff505e8d63d8dd398814b7e18229777858241af",
+  "ownerMessage": "Карточка было бот принята фиксируя результат делай следующую карточку",
+  "includes": "CTA duplicate fix",
+  "scope": "visual/content only; no merge/production/DNS"
+}

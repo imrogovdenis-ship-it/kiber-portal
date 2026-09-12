@@ -1,0 +1,16 @@
+{
+  "sourceId": 38,
+  "originalUrl": "https://itis-time.ru/robot/robot-promobotv4/",
+  "finalUrl": "https://itis-time.ru/robot/robot-promobotv4/",
+  "title": "Promobot V.4, аренда - Время Роботов",
+  "capturedAt": "2026-09-11T10:09:52.739620+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "95ff646bb14bac902bd89afcc56ced14404df4c085a4c301497ef2fc321934e0",
+  "evidenceExcerpts": [
+    "**Наличие, сроки поставки и точную стоимость комплектаций уточняйте у специалистов компании Калькулятор Promobot V.4 –",
+    "При нагрузке средней интенсивности промобот будет работать примерно 8 часов. Когда он поймёт, что устал, он самостоятельно отыщет зарядную станцию и стыкуется с ней. Кем может работать Promobot V.4? Список профессий этого робота весьма внушителен! Вот лишь первое, что приходит"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

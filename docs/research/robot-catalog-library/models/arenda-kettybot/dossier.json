@@ -1,0 +1,106 @@
+{
+  "slug": "arenda-kettybot",
+  "name": "Робот-официант KettyBot",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-kettybot.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Подноса с блюдами робота-доставщика KettyBot на мероприятие",
+    "Батарея АКБ робота-официанта KettyBot",
+    "Скорости движения робота KettyBot в ресторане в прокат",
+    "Зарядная станция робота KettyBot в комплекте для аренды",
+    "Экран 18,5 дюймов робота-официанта KettyBot в аренду",
+    "Датчики объезда препятствий робота-официанта KettyBot"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Доставка и экранная промо-коммуникация как два конкретных режима использования.",
+  "findings": [
+    {
+      "text": "Rent Robot и ВауРобот описывают доставку и подготовку маршрута. Предложение RoboB2B относится к KettyBot Pro.",
+      "sourceIds": [
+        26,
+        27,
+        28
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Pudu описывает экран, доставку, сопровождение и голосовые функции. В документации 3Logic поддержка диалога отмечена отдельно знаком «-». Не приравнивать речь к свободному разговору.",
+      "sourceIds": [
+        29,
+        30
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 26,
+      "role": "rental",
+      "url": "https://rent-robot.ru/ketty-bot",
+      "captureFile": "source-captures/625f1b90240ccb7b.json"
+    },
+    {
+      "sourceId": 27,
+      "role": "rental",
+      "url": "https://xn--80acb3cbjrd.xn--p1ai/bellabot-kettybot/",
+      "captureFile": "source-captures/bbfd36ee21911d57.json"
+    },
+    {
+      "sourceId": 28,
+      "role": "rental_adjacent_pro",
+      "url": "https://robob2b.ru/rent/8822/",
+      "captureFile": "source-captures/cfad3a56f823684e.json"
+    },
+    {
+      "sourceId": 29,
+      "role": "manufacturer",
+      "url": "https://www.pudurobotics.com/ru/product/detail/kettybot",
+      "captureFile": "source-captures/da0bc3ac4f28cff9.json"
+    },
+    {
+      "sourceId": 30,
+      "role": "technical_docs",
+      "url": "https://robodocs.3logic.ru/docs/Pudu/KettyBot/kettybot_technical_characteristics.html",
+      "captureFile": "source-captures/0645b9f3671a31a6.json"
+    }
+  ],
+  "guardrails": [
+    "Базовый KettyBot и Pro различаются; таблицы не объединять.",
+    "Ограничение подноса не заменяет общую грузоподъёмность.",
+    "Заявление про проход определённой ширины не отменяет проверки фактической зоны."
+  ],
+  "ownerQuestions": [
+    "Какой KettyBot и какие рекламные/голосовые функции настроены в арендном комплекте?"
+  ],
+  "suggestedFaqTopics": [
+    "доставка и реклама",
+    "контент экрана",
+    "роль персонала",
+    "проходы",
+    "подносы",
+    "зарядка"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда KettyBot",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

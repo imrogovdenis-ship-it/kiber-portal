@@ -1,0 +1,15 @@
+{
+  "sourceId": 12,
+  "originalUrl": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
+  "finalUrl": "https://qubot.ru/catalog/roboty-gumanoidy/tron1",
+  "title": "Tron 1 - Робот гуманоид – Купить с доставкой до дома / QUBOT",
+  "capturedAt": "2026-09-11T10:09:23.879790+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "97243f96112b1a3fe4fb393d771ee18563bc4566a47d173e3b29ca1241a377f9",
+  "evidenceExcerpts": [
+    "12 степенями свободы, включая подвижные руки с простыми захватами для демонстрации базовых манипуляций, и устойчивую нижнюю часть тела для демонстрации основных принципов баланса и перемещения. Tron 1 оборудован базовой сенсорной системой, включающей простую камеру для отслеживания объектов и линий, микрофон"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

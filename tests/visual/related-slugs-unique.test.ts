@@ -1,0 +1,2 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+test('related robot registry has unique keys',()=>{const s=readFileSync('src/components/templates/RobotCardTemplate.astro','utf8').split('const relatedSlugsByRobotSlug:')[1].split('};')[0];const keys=[...s.matchAll(/^  '([^']+)':/gm)].map(m=>m[1]);assert.equal(new Set(keys).size,keys.length);});

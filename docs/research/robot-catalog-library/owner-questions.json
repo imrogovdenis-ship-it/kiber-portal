@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "arenda-noetix-bumi",
+    "blocking": false,
+    "questions": [
+      "Какая версия Bumi предлагается: Standard/Lite/Pro/EDU Pro? Нужен артикул или паспорт комплектации."
+    ]
+  },
+  {
+    "slug": "arenda-robota-ardi",
+    "blocking": false,
+    "questions": [
+      "Какое поколение/исполнение Арди, как он размещается и управляется? Какое голосовое решение входит в показ?"
+    ]
+  },
+  {
+    "slug": "arenda-robota-sofiya",
+    "blocking": false,
+    "questions": [
+      "При подготовке точных обещаний уточнить исполнение Sophia и доступную программу общения/сопровождения."
+    ],
+    "identityResolvedByOwner": true
+  },
+  {
+    "slug": "arenda-robota-tron",
+    "blocking": false,
+    "questions": [
+      "Это LimX TRON1? Какие окончания ног и расширения входят в предлагаемый комплект?"
+    ]
+  },
+  {
+    "slug": "arenda-bellabot",
+    "blocking": false,
+    "questions": [
+      "Подтвердить базовый BellaBot или Pro, комплект подносов, станцию зарядки и схему навигации."
+    ]
+  },
+  {
+    "slug": "arenda-glambot",
+    "blocking": false,
+    "questions": [
+      "Какие камера, манипулятор, свет, ПО и способ выдачи входят в комплект КИБЕР?"
+    ]
+  },
+  {
+    "slug": "arenda-inchbot-l1-w-edu",
+    "blocking": false,
+    "questions": [
+      "Подтвердить производителя/артикул L1-W EDU и установленные вычислительные/сенсорные модули."
+    ]
+  },
+  {
+    "slug": "arenda-kettybot",
+    "blocking": false,
+    "questions": [
+      "Какой KettyBot и какие рекламные/голосовые функции настроены в арендном комплекте?"
+    ]
+  },
+  {
+    "slug": "arenda-klipmeiker",
+    "blocking": false,
+    "questions": [
+      "Какой манипулятор/камера и программный комплекс скрываются под названием «Клипмейкер» у КИБЕР?"
+    ]
+  },
+  {
+    "slug": "arenda-mini-robo-kofeyni",
+    "blocking": false,
+    "questions": [
+      "Нужны модель/состав мини-модуля, меню, вода, мощность, расходники и обслуживание."
+    ]
+  },
+  {
+    "slug": "arenda-promobot-v4",
+    "blocking": false,
+    "questions": [
+      "Какие модули V4, база знаний, язык и формат сопровождения входят в предложение?"
+    ]
+  },
+  {
+    "slug": "arenda-robo-kofeyni",
+    "blocking": false,
+    "questions": [
+      "Уточнить состав станции, меню, водоснабжение, мощность, запасы и персонал."
+    ]
+  },
+  {
+    "slug": "arenda-robot-barmen",
+    "blocking": false,
+    "questions": [
+      "Какой Робобар, меню, ингредиенты, посуда, обслуживание и требования к зоне?"
+    ]
+  },
+  {
+    "slug": "arenda-robota-hudozhnika-a4",
+    "blocking": false,
+    "questions": [
+      "Подтвердить манипулятор, формат бумаги, ПО, детализацию, расходники и выдачу."
+    ]
+  },
+  {
+    "slug": "arenda-sketchbot",
+    "blocking": false,
+    "questions": [
+      "Сколько манипуляторов, какой формат бумаги/рисунка, цифровая выдача и порядок работы с фото?"
+    ]
+  },
+  {
+    "slug": "arenda-unitree-go2",
+    "blocking": false,
+    "questions": [
+      "Какая версия Go2, контроллер, батареи и готовый репертуар предлагаются?"
+    ]
+  },
+  {
+    "slug": "arenda-uv-box",
+    "blocking": false,
+    "questions": [
+      "Подтвердить сенсорную стойку или прозрачную панель, размер, контент, интерактив и разрешённые интеграции."
+    ]
+  },
+  {
+    "slug": "arenda-xiaomi-cyberdog-2",
+    "blocking": false,
+    "questions": [
+      "Подтвердить второе поколение, прошивку, доступные команды, режимы и батареи."
+    ]
+  }
+]

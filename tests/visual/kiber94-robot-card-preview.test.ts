@@ -1,3 +1,4 @@
+import {runInNewContext} from 'node:vm';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -181,7 +182,7 @@ test('KIBER-94 desktop gallery behavior uses a CSP-safe external script based on
   assert.match(desktopReference, /slider\.scrollLeft=startScroll-dx/);
   assert.match(desktopReference, /document\.querySelectorAll\('\[data-slider-next\]'\)/);
 
-  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
+  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js\?v=mobile-shared-1" defer><\/script>/);
   assert.doesNotMatch(componentSource, /document\.querySelectorAll<HTMLElement>\('\[data-drag-slider\^="robot-"\]'\)/);
   assert.match(scriptSource, /document\.querySelectorAll\('\[data-drag-slider\]'\)/);
   assert.match(scriptSource, /slider\.addEventListener\('mousedown'/);
@@ -233,11 +234,12 @@ test('KIBER-94 Unitree G1 quote-to-CTA owner feedback uses compact CTA #1 with l
   const componentSource = readFileSync(componentPath, 'utf8');
   const smoke = readFileSync(smokePath, 'utf8');
 
-  assert.match(componentSource, /quickCtaTitle = `Арендуйте \$\{robotTypeAccusative\} \$\{template\.robot\.name\} для мероприятия \$\{template\.robot\.priceDisplay\}`/);
+  const ctaCode = componentSource.split('\n').filter(l => /^const quickCta(Name|Title) =/.test(l)).join('\n');
+  assert.equal(runInNewContext(ctaCode + ';quickCtaTitle', {robotSlug:'arenda-unitree-g1',robotTypeAccusative:'робота-гуманоида',template:{robot:{name:'Unitree G1',priceDisplay:'от 9 500 ₽ / час'}}}), 'Арендуйте робота-гуманоида Unitree G1 для мероприятия от 9 500 ₽ / час');
   assert.match(componentSource, /const quickCtaNoWrap = template\.robot\.priceDisplay/);
   assert.match(componentSource, /titleNoWrap: quickCtaNoWrap/);
   assert.match(componentSource, /const robotQuickCtaImage = \{[\s\S]*src: '\/images\/kiber-94-preview\/gosha-ushanka-cta1-smiling-wave\.webp'/);
-  assert.match(componentSource, /alt: (?:(?:isContentPilot|\(isContentPilot \|\| isHumanoidPair\)) \? '[^']+' : )?'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
+  assert.match(componentSource, /alt: (?:(?:isContentPilot|\(isContentPilot \|\| isHumanoidPair(?: \|\| robotSlug === 'arenda-unitree-r1')?\)) \? '[^']+' : )?'Кибер Гоша в красной ушанке машет и приглашает арендовать Unitree G1'/);
   assert.match(componentSource, /const robotQuickCta = \{[\s\S]*image: robotQuickCtaImage/);
   assert.match(componentSource, /const robotFinalCta = \{[\s\S]*\.\.\.homeRobotCardFinalCta/);
   assert.match(componentSource, /<section class="template-reused-block template-reused-block--gosha-quote" data-block-id="goshaCta">/);
@@ -463,7 +465,7 @@ test('KIBER-94 robot_card design-block refinement follows owner visual contract'
   assert.match(componentSource, /\.template-live-gallery__item,[\s\S]*background:\s*transparent/);
   assert.match(componentSource, /flex:\s*0 0 auto/);
   const robotGalleryScript = readFileSync(robotGalleryScriptPath, 'utf8');
-  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js" defer><\/script>/);
+  assert.match(componentSource, /<script is:inline src="\/scripts\/robot-card-gallery\.js\?v=mobile-shared-1" defer><\/script>/);
   assert.match(robotGalleryScript, /mousedown/);
   assert.match(robotGalleryScript, /window\.addEventListener\('mousemove'/);
   assert.match(robotGalleryScript, /window\.addEventListener\('mouseup'/);

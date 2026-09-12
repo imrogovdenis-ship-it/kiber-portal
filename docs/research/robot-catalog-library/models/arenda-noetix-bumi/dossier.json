@@ -1,0 +1,105 @@
+{
+  "slug": "arenda-noetix-bumi",
+  "name": "Noetix Bumi",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-noetix-bumi.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Роста робота-гуманоида Noetix Bumi рядом с детьми на празднике",
+    "Батарея робота-гуманоида Bumi в аренду на мероприятие",
+    "Прочный корпус робота Noetix Bumi при работе на празднике",
+    "Робот-гуманоида Noetix Bumi танцует на мероприятие",
+    "Камеры и микрофон робота-гуманоида Noetix Bumi работают на выставке",
+    "Приложения для управления роботом Noetix Bumi в аренду на стенде компании"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Компактный гуманоид для подготовленной демонстрации и знакомства с робототехникой; не продавать обещание любых трюков.",
+  "findings": [
+    {
+      "text": "Каталог KupiRobot показывает N2/E1: это не паспорт Bumi.",
+      "sourceIds": [
+        1
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "Gumanoids описывает EDU-Pro с 94 см и 12 кг; RBTX — Pro/EDU Pro с 98 см и 17 кг. Обе страницы называют 21 степень свободы. Числа нельзя объединять в одну комплектацию.",
+      "sourceIds": [
+        2,
+        70
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "RBTX отдельно выделяет вычислительный модуль EDU Pro. Возможности разработки не переносятся автоматически на все Bumi.",
+      "sourceIds": [
+        70
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 1,
+      "role": "excluded_other_models_N2_E1",
+      "url": "https://kupirobot.ru/product/robohuman/noetix/",
+      "captureFile": "source-captures/8d3029bd64a194e3.json"
+    },
+    {
+      "sourceId": 2,
+      "role": "facts",
+      "url": "https://gumanoids.ru/robot/noetix-bumi/",
+      "captureFile": "source-captures/a52043e927088168.json"
+    },
+    {
+      "sourceId": 3,
+      "role": "context",
+      "url": "https://gumanoids.ru/blog/obzor-noetix-bumi/",
+      "captureFile": "source-captures/fab2e26214e7d982.json"
+    },
+    {
+      "sourceId": 70,
+      "role": "technical_reseller_pro",
+      "url": "https://rbtx.igus.cn/en-GB/components/humanoid/noetix-bumi-humanoid-robot-21-dof",
+      "captureFile": "source-captures/dc8ed7f2fa6a6314.json"
+    }
+  ],
+  "guardrails": [
+    "Прямые независимые модельные условия аренды в выбранной выдаче подтверждены слабо; продавцы не считаются арендными конкурентами автоматически.",
+    "Не переносить из N2/E1 камеры, размеры, SDK и время работы.",
+    "Не обещать голосовой диалог, конкретные трюки или запас батарей без подтверждения версии."
+  ],
+  "ownerQuestions": [
+    "Какая версия Bumi предлагается: Standard/Lite/Pro/EDU Pro? Нужен артикул или паспорт комплектации."
+  ],
+  "suggestedFaqTopics": [
+    "версия робота",
+    "подготовленные движения",
+    "управление и оператор",
+    "голосовой сценарий",
+    "площадка и дети",
+    "питание и паузы"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда Noetix Bumi",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "preview": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/",
+  "status": "owner_review_pending",
+  "research": "docs/research/robot-catalog-library/models/arenda-robota-hudozhnika-a4/dossier.json",
+  "sourceTests": 8,
+  "build": "passed",
+  "liveChecks": {
+    "widths": [
+      390,
+      768,
+      1440
+    ],
+    "copyFaqImagesLinksNoindexOverflow": "passed",
+    "sixEqualFullWidth16by9Frames": "passed",
+    "deployedHtmlEqualsCandidate": true,
+    "pricingCtaCorrect": true,
+    "dirtyNameAbsent": true
+  },
+  "frozenScope": {
+    "hero_media": "unchanged",
+    "hero": "byte-identical",
+    "gallery_media": "unchanged",
+    "robotInAction_media": "unchanged",
+    "capabilities_media": "unchanged",
+    "component_css": "byte-identical"
+  },
+  "deployScope": "one A4 HTML only; deployed chrome/noindex/dry-run preserved",
+  "hostedCi": "not yet verified",
+  "productionMergeDnsAnalyticsLiveLeadsChanged": false
+}

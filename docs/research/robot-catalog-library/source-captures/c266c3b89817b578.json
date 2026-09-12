@@ -1,0 +1,16 @@
+{
+  "sourceId": 41,
+  "originalUrl": "https://itis-time.ru/robot/robot-barista/",
+  "finalUrl": "https://itis-time.ru/robot/robot-barista/",
+  "title": "Робот бариста, аренда - Время Роботов",
+  "capturedAt": "2026-09-11T10:09:56.364476+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "4fc0cd6bb39e01263c4bf2c3054d75523d9e59492607841684482e604c7f7421",
+  "evidenceExcerpts": [
+    "**Наличие, сроки поставки и точную стоимость комплектаций уточняйте у специалистов компании Калькулятор Робот бариста: «Але-оп! Ваш кофе готов!»",
+    "В базовый состав робокафе входит: тумба со столешницей, на которой установлена «рука»-манипулятор в футуристичном дизайне и белом цвете (впишется в любой интерьер) кофемашина"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

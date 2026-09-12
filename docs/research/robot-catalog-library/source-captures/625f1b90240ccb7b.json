@@ -1,0 +1,15 @@
+{
+  "sourceId": 26,
+  "originalUrl": "https://rent-robot.ru/ketty-bot",
+  "finalUrl": "https://rent-robot.ru/ketty-bot",
+  "title": "Аренда Ketty Bot",
+  "capturedAt": "2026-09-11T10:09:39.698473+00:00",
+  "method": "direct_server_http",
+  "captureComplete": true,
+  "sourceTextSha256": "f947b4499e075f590fcb630ab0575a408a2a97ecb9ec8d32a4ce2e80dc538841",
+  "evidenceExcerpts": [
+    "В стоимость аренды робота входит: аренда + доставка + обучение Аренда робота Ketty Bot от 40 000 руб./день"
+  ],
+  "evidencePolicy": "Statements of the source, not automatic facts about KIBER equipment; see model dossiers.",
+  "fullTextStorage": "private agent cache; quoted evidence and conclusions are versioned here"
+}

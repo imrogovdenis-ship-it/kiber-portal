@@ -1,0 +1,111 @@
+{
+  "slug": "arenda-robota-ardi",
+  "name": "Робот Арди",
+  "wordstatFile": "docs/review/robot-card-remediation/wordstat-24/clusters/arenda-robota-ardi.json",
+  "snapshotPolicy": "Use this corpus for the current card cycle; do not routinely recollect. New facts/edition changes require an explicit refresh or owner clarification.",
+  "publicationAllowed": false,
+  "rawMediaTopicsAreNotCapabilityProof": true,
+  "existingCapabilityMediaTopics": [
+    "Лицо с мимикой робота-андроида Арди на мероприятии",
+    "Общение робота Арди с помощью ИИ на выставке",
+    "Руки-манипуляторы человекоподобного робота Арди при работе на стенде",
+    "Подвижный торса робота Арди на празднике",
+    "Динамики и микрофон робота Арди с ИИ модулем",
+    "Подключение к розетке робота Арди при заказе на мероприятие"
+  ],
+  "researchStatus": "ready_for_guarded_draft",
+  "readyForWriting": true,
+  "allowedDraftScope": "Use supported model/category facts and prepared-service framing. Exclude unresolved versions, numeric limits, optional modules, supplier tariffs and unconfirmed programmes.",
+  "editorialAngle": "Антропоморфный персонаж для подготовленного общения, мимики и сценического эпизода; не копировать сценарии ходьбы двуногих платформ.",
+  "findings": [
+    {
+      "text": "Rent Robot и W-Expo описывают мимику и Motion Capture, но число степеней свободы рук расходится: 13 и 15. Точное исполнение нужно установить.",
+      "sourceIds": [
+        4,
+        7
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "NanoJam подробно продаёт впечатление от общения; это не подтверждение свободного разговора на любые темы или всех языков.",
+      "sourceIds": [
+        5
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    },
+    {
+      "text": "ВауРобот отдельно указывает условия слышимости рядом с роботом. В карточке нужны понятные требования к звуковой зоне.",
+      "sourceIds": [
+        6
+      ],
+      "claimScope": "Observed source content / editorial comparison, not automatic KIBER capability"
+    }
+  ],
+  "sourceRecords": [
+    {
+      "sourceId": 4,
+      "role": "rental",
+      "url": "https://rent-robot.ru/robot-ardi",
+      "captureFile": "source-captures/a802d25e77643114.json"
+    },
+    {
+      "sourceId": 5,
+      "role": "rental",
+      "url": "http://nanojam.ru/products/robot-ardi-s-ii",
+      "captureFile": "source-captures/3f9d8b3ee9cd0488.json"
+    },
+    {
+      "sourceId": 6,
+      "role": "rental",
+      "url": "https://xn--80acb3cbjrd.xn--p1ai/robot-ardi/",
+      "captureFile": "source-captures/6983c4cca844bda2.json"
+    },
+    {
+      "sourceId": 7,
+      "role": "facts",
+      "url": "https://w-expo.tech/ardi",
+      "captureFile": "source-captures/7d7e182bda5e6ca1.json"
+    },
+    {
+      "sourceId": 8,
+      "role": "facts",
+      "url": "https://rbot100.ru/robot/ardi/",
+      "captureFile": "source-captures/315694d6b94a2115.json"
+    }
+  ],
+  "guardrails": [
+    "Не смешивать Арди с Promobot V4 или любым Robo-C только по сходству внешности.",
+    "Не обещать самостоятельную ходьбу, понимание эмоций или замену персонала.",
+    "Число выражений лица и механических степеней свободы — разные показатели."
+  ],
+  "ownerQuestions": [
+    "Какое поколение/исполнение Арди, как он размещается и управляется? Какое голосовое решение входит в показ?"
+  ],
+  "suggestedFaqTopics": [
+    "подготовка реплик",
+    "языки и шум",
+    "мимика и управление",
+    "положение и подвижность",
+    "сопровождение",
+    "брендовый сценарий"
+  ],
+  "operatorCountNotInferredFromNumberOfDomains": true,
+  "seoIntentGuidance": {
+    "pageIntent": "commercial_robot_rental_or_named_catalog_service",
+    "primaryCandidate": "аренда робота Арди",
+    "wordstatIsExistingSnapshot": true,
+    "newVolumeClaims": false,
+    "rule": "Model-specific intent; class/scenario primaries belong to compilations. Final wording is selected when drafting."
+  },
+  "writingContract": {
+    "fullModelNamesPredominate": true,
+    "capabilityCount": 6,
+    "scenarioCount": 6,
+    "faqCount": 8,
+    "galleryAndHeroFrozen": true,
+    "capabilityFrames": "equal 16:9 at full card width; verify rendered geometry",
+    "pageChangesAllowedNow": false,
+    "oneCardAtATime": true,
+    "unknownValues": "omit or ask owner; never fill from another edition/supplier"
+  }
+}

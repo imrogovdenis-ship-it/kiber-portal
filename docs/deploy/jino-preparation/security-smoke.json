@@ -1,0 +1,49 @@
+{
+  "cases": [
+    {
+      "case": "missing-fields",
+      "status": 400,
+      "expected": 400
+    },
+    {
+      "case": "bad-json",
+      "status": 400,
+      "expected": 400
+    },
+    {
+      "case": "foreign-origin",
+      "status": 403,
+      "expected": 403
+    },
+    {
+      "case": "oversize",
+      "status": 413,
+      "expected": 413
+    },
+    {
+      "case": "wrong-method",
+      "status": 405,
+      "expected": 405
+    },
+    {
+      "case": "unknown-route",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "case": "private-config",
+      "status": 404,
+      "expected": 404
+    },
+    {
+      "case": "installer-removed",
+      "status": 404,
+      "expected": 404
+    }
+  ],
+  "failClosed": 503,
+  "restored": {
+    "ok": true,
+    "mode": "dry-run"
+  }
+}
