@@ -35,7 +35,7 @@ const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 <!doctype html>
 <html lang="ru">
   <head>
-    <script is:inline src="/scripts/analytics-provider.js" data-production={import.meta.env.DEPLOY_ENV === 'production' ? 'true' : 'false'} defer></script>
+    <script is:inline src="/scripts/analytics-provider-v3.js" data-production={import.meta.env.DEPLOY_ENV === 'production' ? 'true' : 'false'} defer></script>
     <SeoHead {title} {description} canonical={canonicalUrl} noindex={noindex || ['/roboty-sobaki/', '/news/'].includes(Astro.url.pathname)} {image} />
     {jsonLdItems.map((item) => <script type="application/ld+json" is:inline set:html={JSON.stringify(item)} />)}
     <slot name="head" />
