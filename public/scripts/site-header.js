@@ -3,10 +3,11 @@
   const toggle = header?.querySelector('.site-header__burger');
   if (!header || !toggle) return;
 
-  const closeMenu = () => {
+  const closeMenu = (restoreFocus = false) => {
     header.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Открыть меню');
+    if (restoreFocus === true) toggle.focus({preventScroll: true});
   };
 
   toggle.addEventListener('click', () => {
@@ -16,8 +17,11 @@
     toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
   });
 
-  header.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  header.querySelector('[data-menu-close]')?.addEventListener('click', () => closeMenu(true));
+  header.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => closeMenu()));
+  document.addEventListener('click', event => { if (!header.contains(event.target)) closeMenu(); });
+  window.matchMedia('(min-width: 960px)').addEventListener('change', () => closeMenu());
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeMenu();
+    if (event.key === 'Escape' && header.classList.contains('is-open')) closeMenu(true);
   });
 })();

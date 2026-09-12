@@ -14,7 +14,9 @@ test('layout foundation exposes accessible navigation and SEO contracts', async 
 
   assert.match(layout, /class="skip-link"/);
   assert.match(header, /aria-expanded="false"/);
-  assert.match(header, /aria-controls="primary-navigation"/);
+  assert.match(header, /aria-controls="header-menu-panel"/);
+  assert.match(header, /class="site-header__panel" id="header-menu-panel"/);
+  assert.match(header, /<nav[^>]+id="primary-navigation"[^>]+aria-label="Основная навигация"/);
   assert.match(breadcrumbs, /aria-current="page"/);
   assert.match(breadcrumbs, /application\/ld\+json/);
   assert.match(seo, /property="og:title"/);
