@@ -1,0 +1,60 @@
+[
+  {
+    "url": "https://kiber-portal.ru/",
+    "finalUrl": "https://www.kiber-portal.ru/",
+    "status": 200,
+    "server": "nginx/1.31.5",
+    "noindex": null,
+    "bytes": 81569,
+    "matchesRelease": false
+  },
+  {
+    "url": "https://www.kiber-portal.ru/",
+    "finalUrl": "https://www.kiber-portal.ru/",
+    "status": 200,
+    "server": "nginx/1.31.5",
+    "noindex": null,
+    "bytes": 81569,
+    "matchesRelease": false
+  },
+  {
+    "url": "https://www.kiber-portal.ru/api/leads/status",
+    "finalUrl": "https://www.kiber-portal.ru/api/leads/status",
+    "status": 200,
+    "server": "Apache",
+    "noindex": "noindex, nofollow",
+    "bytes": 25,
+    "body": {
+      "ok": true,
+      "mode": "live"
+    }
+  },
+  {
+    "url": "https://www.kiber-portal.ru/robots.txt",
+    "finalUrl": "https://www.kiber-portal.ru/robots.txt",
+    "status": 200,
+    "server": "Apache",
+    "noindex": null,
+    "bytes": 179
+  },
+  {
+    "url": "https://www.kiber-portal.ru/sitemap-index.xml",
+    "finalUrl": "https://www.kiber-portal.ru/sitemap.xml",
+    "status": 200,
+    "server": "Apache",
+    "noindex": null,
+    "bytes": 5486
+  },
+  {
+    "url": "https://jino-preview.kiber-portal.ru/api/leads/status",
+    "finalUrl": "https://jino-preview.kiber-portal.ru/api/leads/status",
+    "status": 200,
+    "server": "Apache",
+    "noindex": "noindex, nofollow",
+    "bytes": 28,
+    "body": {
+      "ok": true,
+      "mode": "dry-run"
+    }
+  }
+]

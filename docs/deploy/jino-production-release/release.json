@@ -1,0 +1,30 @@
+{
+  "releasedAt": "2026-09-12T06:20:11.599514+00:00",
+  "sourceCommit": "6a684a52d33d8f5803aa181c2471c66fcb51ead8",
+  "url": "https://www.kiber-portal.ru/",
+  "canonicalRedirect": "apex and HTTP -> HTTPS www",
+  "hosting": "Jino",
+  "ip": "81.177.140.201",
+  "documentRoot": "/domains/kiber-portal.ru",
+  "dnsChanges": [
+    "apex A: 38.180.37.42 -> 81.177.140.201",
+    "www A: 38.180.37.42 -> 81.177.140.201"
+  ],
+  "otherDnsRecordsPreserved": true,
+  "authoritativeNs": "ns1/ns2/ns3/ns4.jino.ru all return new IP",
+  "previousTtlSeconds": 10800,
+  "resolverPropagation": "mixed observed; old server retained",
+  "tls": "strictly verified apex/www, issued by Lets Encrypt",
+  "publicFilesByteVerified": 901,
+  "browserCasesPassed": 12,
+  "apiMode": "live",
+  "apiDeliveryNewTest": false,
+  "apiInvalidPost": 400,
+  "previewMode": "dry-run unchanged",
+  "analyticsChanged": false,
+  "containersChanged": false,
+  "ownerAuthorization": "Alexander explicitly approved publication, Jino DNS/HTTPS/live API scope and confirmed Denis approval",
+  "temporaryExtractorAndArchiveRemoved": true,
+  "rollback": "restore exactly two A records to 38.180.37.42; retain both origins/TLS through cached TTL; see runbook",
+  "packaging": "infra/jino-production/package.py reproduced deployed bundle byte-for-byte"
+}
