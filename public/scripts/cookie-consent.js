@@ -3,7 +3,7 @@
   if (!banner || banner.dataset.initialized) return;
   banner.dataset.initialized = 'true';
   const key = 'kp-cookie-consent';
-  const version = 1;
+  const version = 2;
   const lifetime = 180 * 24 * 60 * 60 * 1000;
   let returnFocus = null;
   let memoryOnly = false;
