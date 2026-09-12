@@ -2,7 +2,7 @@
   <div class="cookie-consent__inner">
     <div class="cookie-consent__copy">
       <p id="cookie-consent-title" class="cookie-consent__title">Настройки cookie</p>
-      <p>Мы используем cookie и похожие технологии для сохранения ваших настроек. Необязательные cookie для статистики и рекламы — только с вашего согласия. Сейчас счётчики и рекламные пиксели отключены. <a href="/cookie-policy/">Политика cookie</a></p>
+      <p>Мы используем cookie и похожие технологии для сохранения ваших настроек. Необязательные cookie для статистики и рекламы — только с вашего согласия. <a href="/cookie-policy/">Политика cookie</a></p>
     </div>
     <div class="cookie-consent__actions">
       <button type="button" data-cookie-choice="rejected">Отклонить</button>
@@ -10,7 +10,7 @@
     </div>
   </div>
 </section>
-<script is:inline src="/scripts/cookie-consent.js" defer></script>
+<script is:inline src="/scripts/cookie-consent.js?v=2" defer></script>
 <style>
   .cookie-consent[hidden] { display: none; }
   .cookie-consent { position: fixed; inset: auto 0 0; z-index: 90; background: var(--kp-white); color: var(--kp-ink-dark); border-top: 0.0625rem solid var(--kp-line); box-shadow: 0 -0.25rem 1.5rem color-mix(in srgb, var(--kp-ink-dark) 8%, transparent); max-height: 60dvh; overflow: auto; padding-bottom: env(safe-area-inset-bottom); }

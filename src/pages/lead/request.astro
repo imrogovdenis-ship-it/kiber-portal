@@ -62,7 +62,7 @@ const contactChannels = [
         <section class="lead-request__pending-form" aria-labelledby="lead-form-title" data-state="feature-flagged" data-vertical-step="lead-form-consent">
           <h2 id="lead-form-title">Расскажите о мероприятии</h2>
           <p id="lead-form-help" class="lead-request__note">Форма отправляет только после обязательного согласия с обработкой персональных данных. Live routing включается отдельным approval.</p>
-          <form method="post" action={leadFormAction} aria-describedby="lead-form-help lead-form-consent-help">
+          <form class="ym-hide-content" method="post" action={leadFormAction} aria-describedby="lead-form-help lead-form-consent-help">
             <input type="hidden" name="robot" value={robot} />
             <label>
               <span>Имя *</span>

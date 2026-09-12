@@ -8,7 +8,7 @@ const { title, text, fields, submit, disabled_reason, analytics } = Astro.props 
     <h2>{title}</h2>
     <p>{text}</p>
   </div>
-  <form class="lead-form__form" aria-describedby="lead-form-status">
+  <form class="ym-hide-content lead-form__form" aria-describedby="lead-form-status">
     {fields.map((field) => (
       <label>
         <span>{field.label}{field.required ? ' *' : ''}</span>
