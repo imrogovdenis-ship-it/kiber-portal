@@ -1,0 +1,82 @@
+[
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN SOA",
+    "value": "ns1.jino.ru hostmaster@jino.ru (2026040303 16384 2048 1048576 25600)"
+  },
+  {
+    "domain": "*.kiber-portal.ru",
+    "type": "IN A",
+    "value": "81.177.140.201"
+  },
+  {
+    "domain": "api-origin.kiber-portal.ru",
+    "type": "IN A",
+    "value": "38.180.37.42"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN A",
+    "value": "38.180.37.42"
+  },
+  {
+    "domain": "mail.kiber-portal.ru",
+    "type": "IN A",
+    "value": "195.161.41.91"
+  },
+  {
+    "domain": "www.kiber-portal.ru",
+    "type": "IN A",
+    "value": "38.180.37.42"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN CAA",
+    "value": "0 issue letsencrypt.org"
+  },
+  {
+    "domain": "autoconfig.kiber-portal.ru",
+    "type": "IN CNAME",
+    "value": "autoconfig.jino.ru"
+  },
+  {
+    "domain": "smtp.kiber-portal.ru",
+    "type": "IN CNAME",
+    "value": "smtp.jino.ru"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN MX",
+    "value": "5 mail.kiber-portal.ru"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN NS",
+    "value": "ns2.jino.ru"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN NS",
+    "value": "ns3.jino.ru"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN NS",
+    "value": "ns4.jino.ru"
+  },
+  {
+    "domain": "kiber-portal.ru",
+    "type": "IN NS",
+    "value": "ns1.jino.ru"
+  },
+  {
+    "domain": "_autodiscover._tcp.kiber-portal.ru",
+    "type": "IN SRV",
+    "value": "0 0 443 mail.jino.ru"
+  },
+  {
+    "domain": "dkim._domainkey.kiber-portal.ru",
+    "type": "IN TXT",
+    "value": "v=DKIM1; t=s; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl09Cf4F0f/4dG/IirzJGe6xM7NvLibxmPrCOZx3USqJg/AM4VPM1oHr+8VQypQmYucFQmFzKI9kFH48k5uanOeH4t8VkVYoGefKyYDOPCMrSQPndcSY/F6wvMaHHAjgI8VW5TLeMkc9Dl9Gt+ATNI6m97z36RuugWJ16iQUYdSjHd7j6XTXTJHKES+/krkAOhFaRLKG1aRRfdp2ps7hRYIenu9GEDqwi1S69Xo7N4YiwUkGb4JyBg92utHl7u32Jhi5qNBY35cqRVM4hlsU0NhoJjyMlyhQNpTFKG9UOw9J+lYR0Rc1+VOo78sPtG1Vpn1iLfkYBoQQvejmfHtT/pwIDAQAB;"
+  }
+]

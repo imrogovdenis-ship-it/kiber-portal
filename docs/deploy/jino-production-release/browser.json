@@ -1,0 +1,122 @@
+[
+  {
+    "route": "/",
+    "width": 390,
+    "h1": "Аренда роботов, которые держат внимание",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/",
+    "errors": []
+  },
+  {
+    "route": "/robots/arenda-robota-hudozhnika-a4/",
+    "width": 390,
+    "h1": "Аренда робота-художника",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/",
+    "errors": []
+  },
+  {
+    "route": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "width": 390,
+    "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/",
+    "errors": []
+  },
+  {
+    "route": "/roboty-gumanoidy/",
+    "width": 390,
+    "h1": "Аренда робота-гуманоида для мероприятий",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy/",
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "h1": "Аренда роботов, которые держат внимание",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/",
+    "errors": []
+  },
+  {
+    "route": "/robots/arenda-robota-hudozhnika-a4/",
+    "width": 768,
+    "h1": "Аренда робота-художника",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/",
+    "errors": []
+  },
+  {
+    "route": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "width": 768,
+    "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/",
+    "errors": []
+  },
+  {
+    "route": "/roboty-gumanoidy/",
+    "width": 768,
+    "h1": "Аренда робота-гуманоида для мероприятий",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy/",
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "h1": "Аренда роботов, которые держат внимание",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/",
+    "errors": []
+  },
+  {
+    "route": "/robots/arenda-robota-hudozhnika-a4/",
+    "width": 1440,
+    "h1": "Аренда робота-художника",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/robots/arenda-robota-hudozhnika-a4/",
+    "errors": []
+  },
+  {
+    "route": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "width": 1440,
+    "h1": "Unitree G1, R1 и H2 — сравнение роботов-гуманоидов для мероприятий",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/",
+    "errors": []
+  },
+  {
+    "route": "/roboty-gumanoidy/",
+    "width": 1440,
+    "h1": "Аренда робота-гуманоида для мероприятий",
+    "overflow": false,
+    "noindex": false,
+    "dryRun": false,
+    "canonical": "https://www.kiber-portal.ru/roboty-gumanoidy/",
+    "errors": []
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "path": "/",
+    "id": "2zdEWRwvOdfbkirr5000217W6",
+    "city": "Moscow",
+    "country": "RU",
+    "status": "finished",
+    "address": "81.177.140.201",
+    "statusCode": 200,
+    "tlsAuthorized": true,
+    "failureSource": null
+  },
+  {
+    "path": "/",
+    "id": "2zdEWRwvOdfbkirr5000217W6",
+    "city": "Moscow",
+    "country": "RU",
+    "status": "finished",
+    "address": "81.177.140.201",
+    "statusCode": 200,
+    "tlsAuthorized": true,
+    "failureSource": null
+  },
+  {
+    "path": "/_astro/BaseLayout.DX-Kktwn.css",
+    "id": "22tQkTb9n4bzv8mel000217W6",
+    "city": "Moscow",
+    "country": "RU",
+    "status": "finished",
+    "address": "81.177.140.201",
+    "statusCode": 200,
+    "tlsAuthorized": true,
+    "failureSource": null
+  },
+  {
+    "path": "/_astro/BaseLayout.DX-Kktwn.css",
+    "id": "22tQkTb9n4bzv8mel000217W6",
+    "city": "Moscow",
+    "country": "RU",
+    "status": "finished",
+    "address": "38.180.37.42",
+    "statusCode": 200,
+    "tlsAuthorized": true,
+    "failureSource": null
+  },
+  {
+    "path": "/images/brand/kp_logo_full_color.svg",
+    "id": "2bpS1vUsLZWV3Bc3f000217W6",
+    "city": "Moscow",
+    "country": "RU",
+    "status": "finished",
+    "address": "81.177.140.201",
+    "statusCode": 200,
+    "tlsAuthorized": true,
+    "failureSource": null
+  },
+  {
+    "path": "/images/brand/kp_logo_full_color.svg",
+    "id": "2bpS1vUsLZWV3Bc3f000217W6",
+    "city": "Moscow",
+    "country": "RU",
+    "status": "finished",
+    "address": "81.177.140.201",
+    "statusCode": 200,
+    "tlsAuthorized": true,
+    "failureSource": null
+  }
+]
