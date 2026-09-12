@@ -1,0 +1,14 @@
+{
+  "release.zip": {
+    "files": 904,
+    "sha256": "df9191063b9a2b0b138f96825aa815a9b0da7a5af9265e38f534c181cf674efb",
+    "elapsedSeconds": 0.599,
+    "manifestMismatches": []
+  },
+  "rollback.zip": {
+    "files": 900,
+    "sha256": "2675bd86acccbf1f27c66f0751b86f9538d73dcfd46f7c6ffbd147a780f64248",
+    "elapsedSeconds": 0.55,
+    "previousHomepageMatches": true
+  }
+}
