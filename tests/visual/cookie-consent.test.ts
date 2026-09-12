@@ -27,3 +27,5 @@ test('analytics dispatch actually stops on absent/rejected/revoked consent',asyn
  document.documentElement.dataset.cookieConsent='accepted';context.analytics.track(event);assert.equal(sent.length,1);
  document.documentElement.dataset.cookieConsent='rejected';context.analytics.track(event);assert.equal(sent.length,1);
 });
+
+test('cookie buttons put reject on the left and accept on the right in DOM order',()=>{const c=readFileSync('src/components/layout/CookieConsent.astro','utf8');assert.ok(c.indexOf('data-cookie-choice="rejected"')<c.indexOf('data-cookie-choice="accepted"'));});
