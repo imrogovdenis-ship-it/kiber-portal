@@ -119,8 +119,8 @@ test('KIBER Batch 3 rendered preview keeps approved robot-card CTA, media and Go
       assert.doesNotMatch(html, /"value":"большого формата"/i);
       assert.doesNotMatch(capabilities, /Что умеет большого формата/i);
       assert.doesNotMatch(scenarios, /Где большого формата/i);
-      assert.match(capabilities, /Что умеет робот-художник A4/i);
-      assert.match(scenarios, /Где робот-художник A4/i);
+      assert.match(capabilities, /<h2[^>]*>Что умеет робот-художник<\/h2>/i);
+      assert.match(scenarios, /<h2[^>]*>Где робот-художник подходит по темпу и формату<\/h2>/i);
     }
   }
 });

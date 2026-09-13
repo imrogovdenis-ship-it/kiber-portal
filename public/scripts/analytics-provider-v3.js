@@ -39,7 +39,23 @@
     try { sessionStorage.setItem(markerKey, JSON.stringify({path: location.pathname, at: Date.now()})); } catch {}
     location.reload();
   };
+  // Compatibility only: legacy v3 still uses its original consent semantics,
+  // but newly served bytes honor an explicit v4 full refusal.
+  const v4Off = event => {
+    if (event?.detail?.version === 4 && event.detail.mode === 'off') return true;
+    try { const saved = JSON.parse(localStorage.getItem('kp-cookie-consent') || 'null'); return saved?.version === 4 && saved.mode === 'off'; } catch { return false; }
+  };
+  const stopV4Off = () => {
+    const wasRunning = mode !== null;
+    mode = null;
+    try { if (loaded && typeof window.ym === 'function') window.ym(id, 'destruct'); else if (window.ym?.a) window.ym.a.length = 0; } catch {}
+    script?.remove();
+    const names = document.cookie.split(';').map(c => c.trim().split('=')[0]).filter(n => n.startsWith('_ym_'));
+    for (const name of names) for (const domain of ['', location.hostname, '.kiber-portal.ru']) document.cookie = name + '=; Max-Age=0; path=/; SameSite=Lax' + (domain ? '; domain=' + domain : '');
+    if (wasRunning) location.reload();
+  };
   const apply = (event) => {
+    if (v4Off(event)) { stopV4Off(); return; }
     const optional = event?.detail?.version === 3 && document.documentElement.dataset.cookieConsent === 'accepted';
     if (mode !== null) {
       if (mode && !optional) { mode = false; revoke(); }
@@ -59,9 +75,10 @@
     script = document.createElement('script');
     script.async = true;
     script.src = 'https://mc.yandex.ru/metrika/tag.js?id=' + id;
-    script.onload = () => { loaded = true; };
+    script.onload = () => { loaded = true; if (v4Off()) stopV4Off(); };
     document.head.appendChild(script);
   };
   // The shared consent controller emits immediately during page load, even without a user choice.
   window.addEventListener('kp:cookie-consent', apply);
+  window.addEventListener('storage', event => { if ((event.key === 'kp-cookie-consent' || event.key === null) && v4Off()) stopV4Off(); });
 })();

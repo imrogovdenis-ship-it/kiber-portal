@@ -1,5 +1,6 @@
 ---
 import legal from '../../../data/legal/legal-documents.json';
+import AnalyticsSettings from './AnalyticsSettings.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { webPageJsonLd } from '../../lib/seo';
 
@@ -42,6 +43,7 @@ const relatedLinks = (Object.keys(labels) as LegalSlug[])
     <article class="legal-page__body">
       {document.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
     </article>
+    {slug === 'cookie-policy' && <AnalyticsSettings />}
     <nav class="legal-page__links" aria-label="Связанные юридические документы">
       {relatedLinks.map((link) => <a href={link.href}>{link.label}</a>)}
     </nav>
