@@ -225,21 +225,21 @@
     },
     "gallery": {
       "title": "Фотографии робособак",
-      "lead": "Реальные кадры из галерей Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU: общение с людьми, промо и движение платформы.",
+      "lead": "Рассмотрите робособак с разных ракурсов: как устроен их корпус, как они выглядят рядом с человеком и чем отличаются друг от друга.",
       "images": [
         {
-          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-6261-4733-b832-343462316432__4.webp",
-          "alt": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
-          "actualDescription": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
-          "sourceMediaId": "arenda-unitree-go2__11",
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3233-3033-4335-b638-343335666637__5.webp",
+          "alt": "Unitree Go2 снят крупным планом на фоне синей и фиолетовой неоновой подсветки. Робот смотрит в сторону камеры, задние лапы немного согнуты.",
+          "actualDescription": "Unitree Go2 снят крупным планом на фоне синей и фиолетовой неоновой подсветки. Робот смотрит в сторону камеры, задние лапы немного согнуты.",
+          "sourceMediaId": "arenda-unitree-go2__15",
           "sourceRegistry": "data/review/media-rights-robot-cards.json",
           "sourceRobot": "arenda-unitree-go2"
         },
         {
-          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3034-3431-4664-b364-613830393864__1.webp",
-          "alt": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
-          "actualDescription": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
-          "sourceMediaId": "arenda-unitree-go2__13",
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3334-6166-4337-a661-373732343830__3.webp",
+          "alt": "Unitree Go2 сидит в новогоднем костюме рядом с наряженной ёлкой и красным мешком с подарками. Робот показан спереди с небольшим поворотом.",
+          "actualDescription": "Unitree Go2 сидит в новогоднем костюме рядом с наряженной ёлкой и красным мешком с подарками. Робот показан спереди с небольшим поворотом.",
+          "sourceMediaId": "arenda-unitree-go2__12",
           "sourceRegistry": "data/review/media-rights-robot-cards.json",
           "sourceRobot": "arenda-unitree-go2"
         },
@@ -252,18 +252,18 @@
           "sourceRobot": "arenda-xiaomi-cyberdog-2"
         },
         {
-          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3834-3231-4836-b737-366637613031__08.webp",
-          "alt": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
-          "actualDescription": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
-          "sourceMediaId": "arenda-xiaomi-cyberdog-2__11",
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3239-3230-4630-a339-353163353432__noroot.webp",
+          "alt": "Крупный план робособаки Xiaomi CyberDog 2 на сером фоне, вид сбоку.",
+          "actualDescription": "Крупный план робособаки Xiaomi CyberDog 2 на сером фоне, вид сбоку.",
+          "sourceMediaId": "arenda-xiaomi-cyberdog-2__06",
           "sourceRegistry": "data/review/media-rights-robot-cards.json",
           "sourceRobot": "arenda-xiaomi-cyberdog-2"
         },
         {
-          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__05-tild3165-6138-4635-b538-623931653530__noroot.webp",
-          "alt": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
-          "actualDescription": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
-          "sourceMediaId": "arenda-inchbot-l1-w-edu__11",
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__06-tild3237-3030-4131-b965-346163333661__noroot.webp",
+          "alt": "Inchbot L1-W EDU на колёсной базе поднимается вверх по широкой каменной лестнице, вид сзади.",
+          "actualDescription": "Inchbot L1-W EDU на колёсной базе поднимается вверх по широкой каменной лестнице, вид сзади.",
+          "sourceMediaId": "arenda-inchbot-l1-w-edu__12",
           "sourceRegistry": "data/review/media-rights-robot-cards.json",
           "sourceRobot": "arenda-inchbot-l1-w-edu"
         },

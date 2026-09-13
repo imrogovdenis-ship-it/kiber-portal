@@ -56,3 +56,10 @@ test('scenario photos reserve real intrinsic dimensions before lazy loading', ()
  const c = getRobotDogsPreviewCompilation();
  for (const s of c.scenarios.items) { assert.ok((s.image.width ?? 0) > 0); assert.ok((s.image.height ?? 0) > 0); }
 });
+
+test('upper photo gallery does not repeat approved scenario photos', () => {
+ const c = getRobotDogsPreviewCompilation();
+ const scenarios = new Set(c.scenarios.items.map(s => s.image.src));
+ assert.equal(c.gallery.images.length, 6);
+ for (const image of c.gallery.images) assert.ok(!scenarios.has(image.src));
+});
