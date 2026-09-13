@@ -51,3 +51,8 @@ test('school headings identify the educational question and Go2 catalog includes
 test('dog scenarios opt into photo-gallery presentation without changing video collections',()=>{
  assert.equal(getRobotDogsPreviewCompilation().scenarios.presentation,'photo-gallery');
 });
+
+test('scenario photos reserve real intrinsic dimensions before lazy loading', () => {
+ const c = getRobotDogsPreviewCompilation();
+ for (const s of c.scenarios.items) { assert.ok(s.image.width > 0); assert.ok(s.image.height > 0); }
+});

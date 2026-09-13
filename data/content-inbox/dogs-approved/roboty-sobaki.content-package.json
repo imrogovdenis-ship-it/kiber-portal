@@ -312,7 +312,9 @@
             "actualDescription": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
             "sourceMediaId": "arenda-unitree-go2__11",
             "sourceRegistry": "data/review/media-rights-robot-cards.json",
-            "sourceRobot": "arenda-unitree-go2"
+            "sourceRobot": "arenda-unitree-go2",
+            "width": 800,
+            "height": 800
           }
         },
         {
@@ -324,7 +326,9 @@
             "actualDescription": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
             "sourceMediaId": "arenda-unitree-go2__13",
             "sourceRegistry": "data/review/media-rights-robot-cards.json",
-            "sourceRobot": "arenda-unitree-go2"
+            "sourceRobot": "arenda-unitree-go2",
+            "width": 401,
+            "height": 600
           }
         },
         {
@@ -336,7 +340,9 @@
             "actualDescription": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
             "sourceMediaId": "arenda-xiaomi-cyberdog-2__11",
             "sourceRegistry": "data/review/media-rights-robot-cards.json",
-            "sourceRobot": "arenda-xiaomi-cyberdog-2"
+            "sourceRobot": "arenda-xiaomi-cyberdog-2",
+            "width": 670,
+            "height": 600
           }
         },
         {
@@ -348,7 +354,9 @@
             "actualDescription": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
             "sourceMediaId": "arenda-inchbot-l1-w-edu__11",
             "sourceRegistry": "data/review/media-rights-robot-cards.json",
-            "sourceRobot": "arenda-inchbot-l1-w-edu"
+            "sourceRobot": "arenda-inchbot-l1-w-edu",
+            "width": 882,
+            "height": 600
           }
         }
       ]

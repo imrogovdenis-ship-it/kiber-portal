@@ -13,3 +13,6 @@ Scope: six new articles and robot-dog compilation only. Owner closed feedback in
 Validation: astro check0errors; content14PASS; visual336PASS; package/rendered checks PASS; independent scoped review PASS. Jino Chromium390/1440 across7 pages PASS; no tracker requests/JS errors/horizontal document overflow; all gallery slides loaded; 1.5MB initial/1.8MB full budgets unchanged. Server parity962 static files, local rollback941 files fully hash-verified; protected .htaccess/bridge/API remain untouched. Production homepage hash unchanged.
 
 Owner review: https://jino-preview.kiber-portal.ru/preview/robot-dogs/
+
+## Cold-loading correction
+A separate images-blocked browser test reproduced collapsed auto-width scenario cards (RED). Real WebP dimensions now pass through source/adapter/type into a page-scoped aspect-ratio and reserved card width. Captions retain full width before image download; native image proportions and the old gallery/video styles are preserved. Fresh independent review PASS; Jino390/1440 cold-layout test PASS. Content tests now15PASS.

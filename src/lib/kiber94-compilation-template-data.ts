@@ -47,7 +47,7 @@ export type CompilationPageTemplateData = {
     presentation?: 'photo-gallery';
     title: string;
     lead: string;
-    items: { title: string; text: string; image: { src: string; alt: string } }[];
+    items: { title: string; text: string; image: { src: string; alt: string; width?: number; height?: number } }[];
   };
   catalog: {
     eyebrow: string;

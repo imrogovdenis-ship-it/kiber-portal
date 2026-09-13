@@ -44,7 +44,7 @@ function breadcrumbs(pkg: ApprovedPackage) {
 }
 
 function runtimeImage(pkg: ApprovedPackage, image?: PackageBlock) {
-  if (image?.src?.startsWith('/images/kiber-94-preview/')) return {src: image.src, alt: image.alt, actualDescription: image.actualDescription, seoAlt: image.seoAlt};
+  if (image?.src?.startsWith('/images/kiber-94-preview/')) return {src: image.src, alt: image.alt, width: image.width, height: image.height, actualDescription: image.actualDescription, seoAlt: image.seoAlt};
   const mediaId = image?.mediaId ?? pkg.media[0]?.mediaId;
   const media = pkg.media.find((item) => item.mediaId === mediaId) ?? pkg.media[0];
   const provenance = provenanceItems.find((item) => item.slug === pkg.slug && item.mediaId === media?.mediaId);
