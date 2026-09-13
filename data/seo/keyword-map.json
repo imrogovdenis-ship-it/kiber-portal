@@ -344,16 +344,15 @@
     },
     "/roboty-sobaki/": {
       "pageType": "collection",
-      "primaryKeyword": "аренда роботов для мероприятий",
+      "primaryKeyword": "аренда робота-собаки",
       "secondaryKeywords": [
-        "подборка роботов",
-        "роботы для выставки",
-        "роботы для презентации",
-        "роботы для события"
+        "робот-собака на мероприятие",
+        "робот собака в аренду",
+        "прокат робособаки",
+        "робопёс для выставки"
       ],
       "intent": "commercial",
-      "pageCluster": "category",
-      "priority": "high"
+      "cluster": "robot-dogs"
     },
     "/compilations/": {
       "pageType": "collection",
@@ -568,6 +567,75 @@
       "pageCluster": "humanoid-articles",
       "priority": "high",
       "intent": "informational"
+    },
+    "/articles/robot-dlya-nauchnogo-shou-i-shkoly/": {
+      "pageType": "article",
+      "primaryKeyword": "как выбрать робота для научного шоу в школе",
+      "secondaryKeywords": [
+        "робот для школы",
+        "образовательный робот для мероприятия",
+        "робот для кружка робототехники"
+      ],
+      "intent": "informational",
+      "cluster": "robot-dogs"
+    },
+    "/articles/robot-stendist-dlya-vystavki/": {
+      "pageType": "article",
+      "primaryKeyword": "какого робота выбрать для выставочного стенда",
+      "secondaryKeywords": [
+        "роботы для выставочного стенда",
+        "робот-промоутер на стенд",
+        "робопёс на выставку",
+        "робот для привлечения посетителей"
+      ],
+      "intent": "informational",
+      "cluster": "robot-dogs"
+    },
+    "/articles/roboty-unitree-obzor-kompanii/": {
+      "pageType": "article",
+      "primaryKeyword": "роботы Unitree обзор",
+      "secondaryKeywords": [
+        "Unitree Robotics",
+        "робот-собака Unitree",
+        "робот-гуманоид Unitree",
+        "Unitree Go2 G1 R1 H2"
+      ],
+      "intent": "informational",
+      "cluster": "robot-dogs"
+    },
+    "/articles/sravnenie-robosobak-dlya-meropriyatiy/": {
+      "pageType": "article",
+      "primaryKeyword": "сравнение робо-собак для мероприятий",
+      "secondaryKeywords": [
+        "Unitree Go2 или Xiaomi CyberDog 2",
+        "Inchbot L1-W EDU для школы",
+        "робот-собака для промо",
+        "какую робо-собаку выбрать"
+      ],
+      "intent": "informational",
+      "cluster": "robot-dogs"
+    },
+    "/articles/unitree-go2-na-meropriyatii/": {
+      "pageType": "article",
+      "primaryKeyword": "Unitree Go2 на мероприятии",
+      "secondaryKeywords": [
+        "робот-собака Unitree Go2 для события",
+        "робопёс Unitree Go2 на выставке",
+        "Unitree Go2 для фотозоны"
+      ],
+      "intent": "informational",
+      "cluster": "robot-dogs"
+    },
+    "/articles/xiaomi-cyberdog-2-v-promo-akciyah/": {
+      "pageType": "article",
+      "primaryKeyword": "Xiaomi CyberDog 2 промо-акция",
+      "secondaryKeywords": [
+        "робот-собака для промо-акции",
+        "Xiaomi CyberDog 2 аренда",
+        "робот-пёс для открытия магазина"
+      ],
+      "intent": "informational",
+      "cluster": "robot-dogs"
     }
   }
 }

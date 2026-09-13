@@ -261,12 +261,12 @@
     },
     {
       "path": "/roboty-sobaki/",
-      "status": "deferred",
-      "sitemap": false,
+      "status": "launch",
+      "sitemap": true,
       "priority": 0.8,
       "changefreq": "weekly",
       "template": "category",
-      "noindex": true
+      "sourceStatus": "owner_approved"
     },
     {
       "path": "/compilations/",
@@ -396,6 +396,60 @@
     },
     {
       "path": "/articles/sravnenie-unitree-g1-r1-h2/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/robot-stendist-dlya-vystavki/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/roboty-unitree-obzor-kompanii/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/unitree-go2-na-meropriyatii/",
+      "status": "launch",
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "template": "article-detail",
+      "sourceStatus": "owner_approved"
+    },
+    {
+      "path": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
       "status": "launch",
       "sitemap": true,
       "priority": 0.7,

@@ -58,5 +58,65 @@
       "alt": "Роботы-гуманоиды Unitree R1, G1 и H2 приветствуют зрителей на сцене мероприятия"
     },
     "canonicalHref": "/articles/sravnenie-unitree-g1-r1-h2/"
+  },
+  {
+    "title": "Робот для научного шоу и школы: как увлечь детей робототехникой",
+    "description": "Как выбрать робота для школы, кружка, Дня науки или научного шоу: зрелищность, объяснение технологии, площадка, аудитория и расчёт по запросу.",
+    "href": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+    "image": {
+      "src": "/images/robot-dogs-preview/robot-dlya-nauchnogo-shou-i-shkoly-img_11ff22ab94a4.webp",
+      "alt": "Иллюстрация к статье о роботе для научного шоу и школы"
+    },
+    "canonicalHref": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/"
+  },
+  {
+    "title": "Робот-стендист для выставки: как выбрать роль у стенда",
+    "description": "Unitree G1 привлекает людей к стенду, Promobot V4 поддерживает диалог, Unitree Go2 работает мобильным промоутером с бегущей строкой и раздаткой А6.",
+    "href": "/articles/robot-stendist-dlya-vystavki/",
+    "image": {
+      "src": "/images/robot-dogs-preview/robot-stendist-dlya-vystavki-img_ba6c08f3ae69.webp",
+      "alt": "Гуманоидный промо-робот и робопёс у выставочного стенда"
+    },
+    "canonicalHref": "/articles/robot-stendist-dlya-vystavki/"
+  },
+  {
+    "title": "Роботы Unitree: обзор компании, робопсов и гуманоидов",
+    "description": "История Unitree Robotics: от XDog и роботов-собак до гуманоидов. Основные направления, Go2, G1, R1 и H2, различия моделей и выбор для мероприятия.",
+    "href": "/articles/roboty-unitree-obzor-kompanii/",
+    "image": {
+      "src": "/images/robot-dogs-preview/roboty-unitree-obzor-kompanii-img_b422193eff74.webp",
+      "alt": "Гуманоиды и робопёс на сцене с подсветкой"
+    },
+    "canonicalHref": "/articles/roboty-unitree-obzor-kompanii/"
+  },
+  {
+    "title": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot",
+    "description": "Сравниваем Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU: общение с гостями, промо, съёмки, технические демонстрации, батареи и перерывы.",
+    "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "image": {
+      "src": "/images/robot-dogs-preview/sravnenie-robosobak-dlya-meropriyatiy-img_9184598ad842.webp",
+      "alt": "Три робота-собаки в разных событийных зонах"
+    },
+    "canonicalHref": "/articles/sravnenie-robosobak-dlya-meropriyatiy/"
+  },
+  {
+    "title": "Unitree Go2 на мероприятии: как встроить робопса в программу",
+    "description": "Unitree Go2 среди гостей и у выставочного стенда: общение, бегущая строка, материалы А6 и сменные аккумуляторы. Как подготовиться к мероприятию.",
+    "href": "/articles/unitree-go2-na-meropriyatii/",
+    "image": {
+      "src": "/images/robot-dogs-preview/unitree-go2-na-meropriyatii-img_1006041cae68.webp",
+      "alt": "Unitree Go2 на мероприятии: робопёс для выхода и фотомомента"
+    },
+    "canonicalHref": "/articles/unitree-go2-na-meropriyatii/"
+  },
+  {
+    "title": "Xiaomi CyberDog 2 в промо-акциях: как связать показ с брендом",
+    "description": "Xiaomi CyberDog 2 в промо: живоподобный образ, общение с гостями, съёмки и презентации. Как связать робопса с брендом и учесть время зарядки.",
+    "href": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+    "image": {
+      "src": "/images/robot-dogs-preview/xiaomi-cyberdog-2-v-promo-akciyah-img_f5e815e757e4.webp",
+      "alt": "Иллюстрация к статье о Xiaomi CyberDog 2 в промо-акции"
+    },
+    "canonicalHref": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/"
   }
 ]

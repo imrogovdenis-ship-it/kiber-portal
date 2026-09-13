@@ -3486,33 +3486,37 @@
     {
       "slug": "/roboty-sobaki/",
       "pageType": "collection",
-      "indexable": false,
-      "robotsStatus": "noindex",
+      "indexable": true,
+      "robotsStatus": "index",
       "canonical": "https://www.kiber-portal.ru/roboty-sobaki/",
-      "primaryKeyword": "аренда роботов для мероприятий",
+      "primaryKeyword": "аренда робота-собаки",
       "secondaryKeywords": [
-        "подборка роботов",
-        "роботы для выставки",
-        "роботы для презентации",
-        "роботы для события"
+        "робот-собака на мероприятие",
+        "робот собака в аренду",
+        "прокат робособаки",
+        "робопёс для выставки"
       ],
       "searchIntent": "commercial",
-      "pageCluster": "category",
+      "pageCluster": "robot-dogs",
       "priority": "high",
-      "title": "Аренда роботов-собак | КИБЕР ПОРТАЛ",
-      "description": "Роботы-собаки для выставок, промо, фотоконтента и демонстраций технологий. Подбор модели и сценария под событие.",
-      "h1": "Роботы-собаки для мероприятий",
+      "title": "Аренда робота-собаки для мероприятия | КИБЕР ПОРТАЛ",
+      "description": "Выберите робота-собаку для шоу, промо, выставки или образовательной демонстрации: Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU.",
+      "h1": "Аренда робота-собаки для мероприятий",
       "h2Required": [
-        "Гид по выбору",
-        "Сценарии",
-        "Подходящие роботы"
+        "Как выбрать робота-собаку под событие",
+        "Фотографии робособак",
+        "Робособаки для разных задач",
+        "Сценарии для робота-собаки",
+        "Вопросы про аренду робота-собаки",
+        "Остались вопросы?"
       ],
-      "minUsefulTextChars": 500,
-      "ogTitle": "Аренда роботов-собак | КИБЕР ПОРТАЛ",
-      "ogDescription": "Роботы-собаки для выставок, промо, фотоконтента и демонстраций технологий. Подбор модели и сценария под событие.",
+      "minUsefulTextChars": 800,
+      "ogTitle": "Аренда робота-собаки для мероприятия | КИБЕР ПОРТАЛ",
+      "ogDescription": "Выберите робота-собаку для шоу, промо, выставки или образовательной демонстрации: Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU.",
       "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
       "schemaTypesRequired": [
-        "CollectionPage"
+        "CollectionPage",
+        "BreadcrumbList"
       ],
       "breadcrumbsRequired": [
         {
@@ -3520,7 +3524,11 @@
           "href": "/"
         },
         {
-          "label": "Роботы-собаки для мероприятий",
+          "label": "Подборки",
+          "href": "/compilations"
+        },
+        {
+          "label": "Роботы-собаки",
           "href": "/roboty-sobaki/"
         }
       ],
@@ -3532,7 +3540,7 @@
       ],
       "imagesRequired": [
         {
-          "role": "card",
+          "role": "hero",
           "meaningful": true,
           "requiresActualDescription": false,
           "requiresSeoAlt": true
@@ -3542,13 +3550,13 @@
         {
           "labelIntent": "заявка или контакт",
           "targetType": "page_link",
-          "target": "/contacts/"
+          "target": "/lead/request/"
         }
       ],
-      "reviewStatus": "needs_review",
-      "sourceRouteStatus": "deferred",
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
       "aiVisibility": {
-        "aiSummary": "Страница «Роботы-собаки для мероприятий» помогает выбрать подходящих роботов для сценария или категории. Она должна объяснять, кому подходит подборка, какие модели выбрать, как сравнить варианты и как обратиться за подбором.",
+        "aiSummary": "Unitree Go2 — для общения с гостями и продолжительной промоработы, Xiaomi CyberDog 2 — для живоподобного образа, съёмок и коротких программ, Inchbot L1-W EDU — для научно-технических демонстраций. Сравниваем роли и режим работы роботов КИБЕР ПОРТАЛ.",
         "entityType": "collection",
         "entities": [
           {
@@ -3556,41 +3564,39 @@
             "type": "brand"
           },
           {
-            "name": "аренда роботов для мероприятий",
-            "type": "service"
-          },
-          {
-            "name": "подборка роботов",
-            "type": "service"
-          },
-          {
-            "name": "роботы для выставки",
-            "type": "scenario"
+            "name": "аренда робота-собаки",
+            "type": "service_or_topic"
           }
         ],
         "userQuestionsAnswered": [
-          "Какого робота выбрать для мероприятия?",
-          "Какие роботы подходят для этого сценария?",
-          "Как заказать подбор робота?"
+          "Сколько стоит аренда робота-собаки?",
+          "Можно ли использовать робопса среди детей?",
+          "CyberDog 2 можно брендировать под компанию?",
+          "Inchbot L1-W EDU подходит для урока?",
+          "Какую модель выбрать для выставки?",
+          "Что отправить менеджеру для подбора робопса?"
         ],
         "factualClaims": [
           {
-            "claim": "Роботы-собаки для выставок, промо, фотоконтента и демонстраций технологий. Подбор модели и сценария под событие.",
-            "source": "page_content"
-          },
-          {
-            "claim": "КИБЕР ПОРТАЛ предоставляет услуги аренды роботов для мероприятий.",
-            "source": "owner_approved"
+            "claim": "Выберите робота-собаку для шоу, промо, выставки или образовательной демонстрации: Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU.",
+            "source": "owner_approved_content_package"
           }
         ],
         "llmMarkdownPath": null,
         "schemaTypes": [
           "CollectionPage"
         ],
-        "faqQuestions": [],
+        "faqQuestions": [
+          "Сколько стоит аренда робота-собаки?",
+          "Можно ли использовать робопса среди детей?",
+          "CyberDog 2 можно брендировать под компанию?",
+          "Inchbot L1-W EDU подходит для урока?",
+          "Какую модель выбрать для выставки?",
+          "Что отправить менеджеру для подбора робопса?"
+        ],
         "comparisonTargets": [],
         "relatedPages": [
-          "/contacts/"
+          "/articles/"
         ]
       }
     },
@@ -5264,6 +5270,687 @@
         ],
         "comparisonTargets": [],
         "llmMarkdownPath": null
+      }
+    },
+    {
+      "slug": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+      "primaryKeyword": "как выбрать робота для научного шоу в школе",
+      "secondaryKeywords": [
+        "робот для школы",
+        "образовательный робот для мероприятия",
+        "робот для кружка робототехники"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "robot-dogs",
+      "priority": "medium",
+      "title": "Робот для научного шоу и школы | КИБЕР ПОРТАЛ",
+      "description": "Как выбрать робота для школы, кружка, Дня науки или научного шоу: зрелищность, объяснение технологии, площадка, аудитория и расчёт по запросу.",
+      "h1": "Робот для научного шоу и школы: как увлечь детей робототехникой",
+      "h2Required": [
+        "Зачем приглашать робота в школу или на научное шоу",
+        "Научное шоу с роботом или занятие по робототехнике?",
+        "Как выбрать робота с учётом возраста детей",
+        "Сценарии для урока, кружка и фестиваля науки",
+        "Как подготовить площадку для показа в школе",
+        "От чего зависит стоимость научной программы с роботом"
+      ],
+      "minUsefulTextChars": 800,
+      "ogTitle": "Робот для научного шоу и школы | КИБЕР ПОРТАЛ",
+      "ogDescription": "Как выбрать робота для школы, кружка, Дня науки или научного шоу: зрелищность, объяснение технологии, площадка, аудитория и расчёт по запросу.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Робот для научного шоу",
+          "href": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Для школы различают развлечение с робопсом, научно-техническую демонстрацию и отдельный практикум. Go2 и CyberDog 2 подходят для общения с детьми; Inchbot L1-W EDU — для инженерного знакомства и кружка робототехники.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "как выбрать робота для научного шоу в школе",
+            "type": "service_or_topic"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Подходит ли робот для младших классов?",
+          "Можно ли провести занятие по программированию?",
+          "Сколько стоит робот для научного шоу?",
+          "Что выбрать: робота-собаку, шахматиста или робота-художника?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Как выбрать робота для школы, кружка, Дня науки или научного шоу: зрелищность, объяснение технологии, площадка, аудитория и расчёт по запросу.",
+            "source": "owner_approved_content_package"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [
+          "Подходит ли робот для младших классов?",
+          "Можно ли провести занятие по программированию?",
+          "Сколько стоит робот для научного шоу?",
+          "Что выбрать: робота-собаку, шахматиста или робота-художника?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/roboty-sobaki/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/robot-stendist-dlya-vystavki/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/robot-stendist-dlya-vystavki/",
+      "primaryKeyword": "какого робота выбрать для выставочного стенда",
+      "secondaryKeywords": [
+        "роботы для выставочного стенда",
+        "робот-промоутер на стенд",
+        "робопёс на выставку",
+        "робот для привлечения посетителей"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "robot-dogs",
+      "priority": "medium",
+      "title": "Робот-стендист для выставки: как выбрать формат | КИБЕР ПОРТАЛ",
+      "description": "Unitree G1 привлекает людей к стенду, Promobot V4 поддерживает диалог, Unitree Go2 работает мобильным промоутером с бегущей строкой и раздаткой А6.",
+      "h1": "Робот-стендист для выставки: как выбрать роль у стенда",
+      "h2Required": [
+        "Сначала определите задачу стенда",
+        "Три роли робота у выставочного стенда",
+        "Какого робота выбрать для B2C- и деловой выставки",
+        "Что обсудить перед арендой робота на стенд",
+        "Как объединить роли роботов в программе стенда",
+        "Ошибки при выборе выставочного робота"
+      ],
+      "minUsefulTextChars": 800,
+      "ogTitle": "Робот-стендист для выставки: как выбрать формат | КИБЕР ПОРТАЛ",
+      "ogDescription": "Unitree G1 привлекает людей к стенду, Promobot V4 поддерживает диалог, Unitree Go2 работает мобильным промоутером с бегущей строкой и раздаткой А6.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Робот-стендист",
+          "href": "/articles/robot-stendist-dlya-vystavki/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Три роли у выставочного стенда: Unitree G1 привлекает людей как робот-гуманоид, Promobot V4 поддерживает подготовленный диалог, Unitree Go2 подходит к посетителям с бегущей строкой и раздаткой А6.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "какого робота выбрать для выставочного стенда",
+            "type": "service_or_topic"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Один робот справится со всем стендом?",
+          "Можно ли брендировать робота под выставку?",
+          "Сколько стоит робот-стендист для выставки?",
+          "Что отправить менеджеру для подбора?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Unitree G1 привлекает людей к стенду, Promobot V4 поддерживает диалог, Unitree Go2 работает мобильным промоутером с бегущей строкой и раздаткой А6.",
+            "source": "owner_approved_content_package"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [
+          "Один робот справится со всем стендом?",
+          "Можно ли брендировать робота под выставку?",
+          "Сколько стоит робот-стендист для выставки?",
+          "Что отправить менеджеру для подбора?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/roboty-sobaki/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/roboty-unitree-obzor-kompanii/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/roboty-unitree-obzor-kompanii/",
+      "primaryKeyword": "роботы Unitree обзор",
+      "secondaryKeywords": [
+        "Unitree Robotics",
+        "робот-собака Unitree",
+        "робот-гуманоид Unitree",
+        "Unitree Go2 G1 R1 H2"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "robot-dogs",
+      "priority": "medium",
+      "title": "Роботы Unitree: обзор бренда и форматов | КИБЕР ПОРТАЛ",
+      "description": "История Unitree Robotics: от XDog и роботов-собак до гуманоидов. Основные направления, Go2, G1, R1 и H2, различия моделей и выбор для мероприятия.",
+      "h1": "Роботы Unitree: обзор компании, робопсов и гуманоидов",
+      "h2Required": [
+        "От роботов-собак к гуманоидам",
+        "Как появилась компания Unitree",
+        "Робот-собака Unitree Go2",
+        "Гуманоиды Unitree: G1, R1 и H2",
+        "Как выбрать формат Unitree под мероприятие",
+        "Возможности Unitree в демороликах и в реальной программе"
+      ],
+      "minUsefulTextChars": 800,
+      "ogTitle": "Роботы Unitree: обзор бренда и форматов | КИБЕР ПОРТАЛ",
+      "ogDescription": "История Unitree Robotics: от XDog и роботов-собак до гуманоидов. Основные направления, Go2, G1, R1 и H2, различия моделей и выбор для мероприятия.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Роботы Unitree",
+          "href": "/articles/roboty-unitree-obzor-kompanii/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Обзор истории Unitree, собственных компонентов и направлений: роботы-собаки, промышленные платформы и гуманоиды. Go2, G1, R1 и H2 показаны как разные форматы; возможности производителя отделены от программы конкретного арендного робота.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "роботы Unitree обзор",
+            "type": "service_or_topic"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какие роботы выпускает Unitree?",
+          "Если робот Unitree умеет что-то в видео, это входит в аренду?",
+          "Что выбрать: Unitree Go2 или гуманоида Unitree?",
+          "Сколько стоит аренда робота Unitree?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "История Unitree Robotics: от XDog и роботов-собак до гуманоидов. Основные направления, Go2, G1, R1 и H2, различия моделей и выбор для мероприятия.",
+            "source": "owner_approved_content_package"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [
+          "Какие роботы выпускает Unitree?",
+          "Если робот Unitree умеет что-то в видео, это входит в аренду?",
+          "Что выбрать: Unitree Go2 или гуманоида Unitree?",
+          "Сколько стоит аренда робота Unitree?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/roboty-sobaki/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "primaryKeyword": "сравнение робо-собак для мероприятий",
+      "secondaryKeywords": [
+        "Unitree Go2 или Xiaomi CyberDog 2",
+        "Inchbot L1-W EDU для школы",
+        "робот-собака для промо",
+        "какую робо-собаку выбрать"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "robot-dogs",
+      "priority": "medium",
+      "title": "Сравнение робо-собак для мероприятий | КИБЕР ПОРТАЛ",
+      "description": "Сравниваем Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU: общение с гостями, промо, съёмки, технические демонстрации, батареи и перерывы.",
+      "h1": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot",
+      "h2Required": [
+        "Чем отличаются робособаки на мероприятии",
+        "Unitree Go2: общение, развлечения и проморабота",
+        "Xiaomi CyberDog 2: когда важен технологичный образ",
+        "Inchbot L1-W EDU: технические демонстрации и робототехника",
+        "Сравнение ролей, аккумуляторов и оснащения",
+        "Какую робособаку выбрать для разных мероприятий"
+      ],
+      "minUsefulTextChars": 800,
+      "ogTitle": "Сравнение робо-собак для мероприятий | КИБЕР ПОРТАЛ",
+      "ogDescription": "Сравниваем Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU: общение с гостями, промо, съёмки, технические демонстрации, батареи и перерывы.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Сравнение робо-собак",
+          "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Сравнение Go2, CyberDog 2 и Inchbot L1-W EDU по роли на мероприятии, режиму работы и оснащению КИБЕР ПОРТАЛ. У Go2 сменные батареи и промо-комплект; CyberDog 2 требует долгой зарядки; Inchbot выбирают для технической аудитории.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "сравнение робо-собак для мероприятий",
+            "type": "service_or_topic"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Какая робо-собака лучше для детского мероприятия?",
+          "Нужно ли сравнивать робопсов по характеристикам?",
+          "Могут ли робо-собаки работать без оператора?",
+          "Как узнать стоимость аренды робо-собаки?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Сравниваем Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU: общение с гостями, промо, съёмки, технические демонстрации, батареи и перерывы.",
+            "source": "owner_approved_content_package"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [
+          "Какая робо-собака лучше для детского мероприятия?",
+          "Нужно ли сравнивать робопсов по характеристикам?",
+          "Могут ли робо-собаки работать без оператора?",
+          "Как узнать стоимость аренды робо-собаки?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/roboty-sobaki/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/unitree-go2-na-meropriyatii/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/unitree-go2-na-meropriyatii/",
+      "primaryKeyword": "Unitree Go2 на мероприятии",
+      "secondaryKeywords": [
+        "робот-собака Unitree Go2 для события",
+        "робопёс Unitree Go2 на выставке",
+        "Unitree Go2 для фотозоны"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "robot-dogs",
+      "priority": "medium",
+      "title": "Unitree Go2 на мероприятии: общение и промо | КИБЕР ПОРТАЛ",
+      "description": "Unitree Go2 среди гостей и у выставочного стенда: общение, бегущая строка, материалы А6 и сменные аккумуляторы. Как подготовиться к мероприятию.",
+      "h1": "Unitree Go2 на мероприятии: как встроить робопса в программу",
+      "h2Required": [
+        "Робопёс, с которым хочется познакомиться",
+        "Unitree Go2 на корпоративе, презентации и выставке",
+        "Время работы Go2 и замена аккумулятора",
+        "Как подготовить программу с робопсом",
+        "Что сказать менеджеру КИБЕР ПОРТАЛ",
+        "Фотомомент с Unitree Go2"
+      ],
+      "minUsefulTextChars": 800,
+      "ogTitle": "Unitree Go2 на мероприятии: общение и промо | КИБЕР ПОРТАЛ",
+      "ogDescription": "Unitree Go2 среди гостей и у выставочного стенда: общение, бегущая строка, материалы А6 и сменные аккумуляторы. Как подготовиться к мероприятию.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "Unitree Go2 на мероприятии",
+          "href": "/articles/unitree-go2-na-meropriyatii/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Unitree Go2 общается среди гостей, развлекает детей и помогает у стенда. В КИБЕР ПОРТАЛ есть бегущая строка и лоток А6; сменные аккумуляторы позволяют продолжать мероприятие после замены. Сценарий подготовки не требует постановки каждого знакомства.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Unitree Go2 на мероприятии",
+            "type": "service_or_topic"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли взять Unitree Go2 без оператора?",
+          "Сколько стоит Unitree Go2 на мероприятие?",
+          "Робопёс сам выдаёт листовку?",
+          "Какая площадка подойдёт для показа?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Unitree Go2 среди гостей и у выставочного стенда: общение, бегущая строка, материалы А6 и сменные аккумуляторы. Как подготовиться к мероприятию.",
+            "source": "owner_approved_content_package"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [
+          "Можно ли взять Unitree Go2 без оператора?",
+          "Сколько стоит Unitree Go2 на мероприятие?",
+          "Робопёс сам выдаёт листовку?",
+          "Какая площадка подойдёт для показа?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/roboty-sobaki/"
+        ]
+      }
+    },
+    {
+      "slug": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+      "pageType": "article",
+      "indexable": true,
+      "robotsStatus": "index",
+      "canonical": "https://www.kiber-portal.ru/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+      "primaryKeyword": "Xiaomi CyberDog 2 промо-акция",
+      "secondaryKeywords": [
+        "робот-собака для промо-акции",
+        "Xiaomi CyberDog 2 аренда",
+        "робот-пёс для открытия магазина"
+      ],
+      "searchIntent": "informational",
+      "pageCluster": "robot-dogs",
+      "priority": "medium",
+      "title": "Xiaomi CyberDog 2 в промо-акциях | КИБЕР ПОРТАЛ",
+      "description": "Xiaomi CyberDog 2 в промо: живоподобный образ, общение с гостями, съёмки и презентации. Как связать робопса с брендом и учесть время зарядки.",
+      "h1": "Xiaomi CyberDog 2 в промо-акциях: как связать показ с брендом",
+      "h2Required": [
+        "Когда CyberDog 2 уместен в промо",
+        "Роль робота: не фокус, а повод для разговора",
+        "Как связать CyberDog 2 с брендом без переделки корпуса",
+        "Сценарии промо с CyberDog 2 и время на зарядку",
+        "Как подготовить промоакцию с робопсом",
+        "Что отправить менеджеру для расчёта"
+      ],
+      "minUsefulTextChars": 800,
+      "ogTitle": "Xiaomi CyberDog 2 в промо-акциях | КИБЕР ПОРТАЛ",
+      "ogDescription": "Xiaomi CyberDog 2 в промо: живоподобный образ, общение с гостями, съёмки и презентации. Как связать робопса с брендом и учесть время зарядки.",
+      "ogImage": "https://www.kiber-portal.ru/assets/placeholders/robot-card.svg",
+      "schemaTypesRequired": [
+        "BlogPosting",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "breadcrumbsRequired": [
+        {
+          "label": "Главная",
+          "href": "/"
+        },
+        {
+          "label": "Блог Кибер Гоши",
+          "href": "/articles/"
+        },
+        {
+          "label": "CyberDog 2 в промо",
+          "href": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/"
+        }
+      ],
+      "internalLinksRequired": [
+        {
+          "href": "/contacts/",
+          "anchorIntent": "заявка или консультация"
+        }
+      ],
+      "imagesRequired": [
+        {
+          "role": "hero",
+          "meaningful": true,
+          "requiresActualDescription": false,
+          "requiresSeoAlt": true
+        }
+      ],
+      "ctaRequired": [
+        {
+          "labelIntent": "заявка или контакт",
+          "targetType": "page_link",
+          "target": "/lead/request/"
+        }
+      ],
+      "reviewStatus": "approved",
+      "sourceRouteStatus": "launch",
+      "aiVisibility": {
+        "aiSummary": "Xiaomi CyberDog 2 помогает привлечь внимание к продукту живоподобным образом и общением с гостями. Подходит для съёмок, презентаций и коротких программ; в парке КИБЕР ПОРТАЛ планируют около часа работы и около двух часов зарядки.",
+        "entityType": "article",
+        "entities": [
+          {
+            "name": "КИБЕР ПОРТАЛ",
+            "type": "brand"
+          },
+          {
+            "name": "Xiaomi CyberDog 2 промо-акция",
+            "type": "service_or_topic"
+          }
+        ],
+        "userQuestionsAnswered": [
+          "Можно ли оформить Xiaomi CyberDog 2 в цветах бренда?",
+          "Подойдёт ли робот для открытия магазина?",
+          "Сколько стоит такой промо-формат?",
+          "Подойдёт ли CyberDog 2 для выставки на весь день?"
+        ],
+        "factualClaims": [
+          {
+            "claim": "Xiaomi CyberDog 2 в промо: живоподобный образ, общение с гостями, съёмки и презентации. Как связать робопса с брендом и учесть время зарядки.",
+            "source": "owner_approved_content_package"
+          }
+        ],
+        "llmMarkdownPath": null,
+        "schemaTypes": [
+          "BlogPosting"
+        ],
+        "faqQuestions": [
+          "Можно ли оформить Xiaomi CyberDog 2 в цветах бренда?",
+          "Подойдёт ли робот для открытия магазина?",
+          "Сколько стоит такой промо-формат?",
+          "Подойдёт ли CyberDog 2 для выставки на весь день?"
+        ],
+        "comparisonTargets": [],
+        "relatedPages": [
+          "/roboty-sobaki/"
+        ]
       }
     }
   ]

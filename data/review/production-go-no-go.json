@@ -21,7 +21,7 @@
     "analyticsProviderCookiesAllowed": false
   },
   "readiness": {
-    "routesChecked": 43,
+    "routesChecked": 49,
     "robotRoutesChecked": 24,
     "legalRoutesPresent": [
       "/privacy-policy/",

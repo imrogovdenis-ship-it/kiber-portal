@@ -1,9 +1,9 @@
 {
   "issue": "KIBER-43",
-  "generatedAt": "2026-09-10T13:21:21.814Z",
+  "generatedAt": "2026-09-13T15:11:56.605Z",
   "site": "https://www.kiber-portal.ru",
-  "routesChecked": 43,
-  "sitemapUrls": 35,
+  "routesChecked": 49,
+  "sitemapUrls": 42,
   "sitemapLocs": [
     "https://www.kiber-portal.ru/",
     "https://www.kiber-portal.ru/robots/arenda-agibot-x2/",
@@ -31,6 +31,7 @@
     "https://www.kiber-portal.ru/robots/arenda-uv-box/",
     "https://www.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/",
     "https://www.kiber-portal.ru/roboty-gumanoidy/",
+    "https://www.kiber-portal.ru/roboty-sobaki/",
     "https://www.kiber-portal.ru/compilations/",
     "https://www.kiber-portal.ru/articles/",
     "https://www.kiber-portal.ru/contacts/",
@@ -39,7 +40,13 @@
     "https://www.kiber-portal.ru/articles/unitree-g1-na-korporative/",
     "https://www.kiber-portal.ru/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
     "https://www.kiber-portal.ru/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
-    "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/"
+    "https://www.kiber-portal.ru/articles/sravnenie-unitree-g1-r1-h2/",
+    "https://www.kiber-portal.ru/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+    "https://www.kiber-portal.ru/articles/robot-stendist-dlya-vystavki/",
+    "https://www.kiber-portal.ru/articles/roboty-unitree-obzor-kompanii/",
+    "https://www.kiber-portal.ru/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "https://www.kiber-portal.ru/articles/unitree-go2-na-meropriyatii/",
+    "https://www.kiber-portal.ru/articles/xiaomi-cyberdog-2-v-promo-akciyah/"
   ],
   "redirectsChecked": 2,
   "status": "passed",

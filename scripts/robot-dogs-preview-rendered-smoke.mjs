@@ -5,6 +5,10 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = join(root, 'dist');
+const deployEnv = process.env.DEPLOY_ENV ?? 'preview';
+const isProduction = deployEnv === 'production';
+const site = 'https://www.kiber-portal.ru';
+
 const packages = [
   'robot-dlya-nauchnogo-shou-i-shkoly',
   'robot-stendist-dlya-vystavki',
@@ -41,15 +45,23 @@ function routeExists(href) {
   return existsSync(join(dist, path.replace(/^\//, ''), 'index.html')) || existsSync(join(dist, path.replace(/^\//, '')));
 }
 
-const hub = htmlFor('/preview/robot-dogs/');
-assert.match(hub, /data-preview-only="true"/);
+if (!isProduction) {
+  const hub = htmlFor('/preview/robot-dogs/');
+  assert.match(hub, /data-preview-only="true"/);
+}
 
 for (const slug of packages) {
   const pkg = JSON.parse(readFileSync(join(root, `data/content-inbox/dogs-approved/${slug}.content-package.json`), 'utf8'));
   const html = htmlFor(`/articles/${slug}/`);
   const text = textOf(html);
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `${slug} must have one H1`);
-  assert.match(html, /<meta name="robots" content="noindex, nofollow">/, `${slug} must be noindex`);
+  if (isProduction) {
+    assert.doesNotMatch(html, /<meta name="robots" content="noindex, nofollow">/, `${slug} must be indexable in production`);
+    assert.doesNotMatch(html, /data-preview-only="true"/, `${slug} must not expose preview-only marker in production`);
+    assert.match(html, new RegExp(`<link rel=\"canonical\" href=\"${site}${pkg.seo.canonicalPath}\"`), `${slug} must use production canonical`);
+  } else {
+    assert.match(html, /<meta name="robots" content="noindex, nofollow">/, `${slug} must be noindex in preview`);
+  }
   assert.ok(text.includes(pkg.seo.h1), `${slug} H1 text missing`);
   for (const block of Object.values(pkg.blocks)) {
     if (block?.paragraphs) for (const paragraph of block.paragraphs) assert.ok(text.includes(paragraph), `${slug} paragraph missing: ${paragraph.slice(0, 80)}`);
@@ -77,7 +89,13 @@ for (const slug of packages) {
 
 const compilation = htmlFor('/roboty-sobaki/');
 assert.equal((compilation.match(/<h1\b/g) || []).length, 1, 'roboty-sobaki must have one H1');
-assert.match(compilation, /<meta name="robots" content="noindex, nofollow">/);
+if (isProduction) {
+  assert.doesNotMatch(compilation, /<meta name="robots" content="noindex, nofollow">/);
+  assert.doesNotMatch(compilation, /data-preview-only="true"/);
+  assert.match(compilation, new RegExp(`<link rel=\"canonical\" href=\"${site}/roboty-sobaki/\"`));
+} else {
+  assert.match(compilation, /<meta name="robots" content="noindex, nofollow">/);
+}
 for (const slug of ['arenda-unitree-go2', 'arenda-xiaomi-cyberdog-2', 'arenda-inchbot-l1-w-edu']) assert.match(compilation, new RegExp(`/robots/${slug}/`));
 
 const exhibition = htmlFor('/articles/robot-stendist-dlya-vystavki/');
@@ -88,4 +106,4 @@ assert.doesNotMatch(exhibition, /\/robots\/arenda-(xiaomi-cyberdog-2|inchbot-l1-
 const go2 = textOf(htmlFor('/articles/unitree-go2-na-meropriyatii/'));
 assert.ok(go2.includes('На выставке Unitree Go2 лучше работает не как бесконечно движущийся объект, а как магнит у стенда. Робот появляется по расписанию, делает небольшой проход, останавливает поток посетителей и даёт менеджеру повод начать разговор. Если стенд тесный, сценарий делают спокойнее: меньше маршрута, больше пауз и пояснений.'), 'Go2 approved magnet paragraph missing');
 
-console.log(JSON.stringify({ routesChecked: 8, articlesChecked: packages.length, status: 'ok' }));
+console.log(JSON.stringify({ deployEnv, routesChecked: 7, articlesChecked: packages.length, status: 'ok' }));

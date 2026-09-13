@@ -46,6 +46,15 @@
 - [Аренда интерактивной витрины UV-BOX](https://www.kiber-portal.ru/robots/arenda-uv-box/): интерактивной витрины UV-BOX — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.
 - [Аренда Xiaomi Cyberdog 2](https://www.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/): Xiaomi Cyberdog 2 — робот, которого можно арендовать через КИБЕР ПОРТАЛ для мероприятий. Страница должна кратко объяснять, что это за робот, для каких сценариев он подходит, что входит в услугу, как формируется стоимость и как отправить заявку.
 
+## Статьи о роботах-собаках
+
+- [Робот для научного шоу и школы](https://www.kiber-portal.ru/articles/robot-dlya-nauchnogo-shou-i-shkoly/): как увлечь детей робототехникой и встроить робота в учебное событие.
+- [Робот-стендист для выставки](https://www.kiber-portal.ru/articles/robot-stendist-dlya-vystavki/): как выбрать роль робота у стенда и не мешать работе менеджеров.
+- [Роботы Unitree](https://www.kiber-portal.ru/articles/roboty-unitree-obzor-kompanii/): обзор компании, робопсов и гуманоидов для мероприятий.
+- [Сравнение робо-собак для мероприятий](https://www.kiber-portal.ru/articles/sravnenie-robosobak-dlya-meropriyatiy/): различия Go2, CyberDog 2 и Inchbot для событий.
+- [Unitree Go2 на мероприятии](https://www.kiber-portal.ru/articles/unitree-go2-na-meropriyatii/): как встроить робопса в программу мероприятия.
+- [Xiaomi CyberDog 2 в промо-акциях](https://www.kiber-portal.ru/articles/xiaomi-cyberdog-2-v-promo-akciyah/): как связать показ робота-собаки с брендом.
+
 ## LLM notes
 
 - Основной источник фактов для агентов — публичные HTML-страницы и SEO/AI-паспорта проекта.
