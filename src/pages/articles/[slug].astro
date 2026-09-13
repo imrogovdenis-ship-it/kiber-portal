@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleBlocksTemplate from '../../components/templates/ApprovedArticle5.astro';
+import { breadcrumbJsonLd, blogPostingJsonLd, faqPageJsonLd } from '../../lib/seo';
+import { getRobotDogsPreviewArticle, getRobotDogsPreviewArticles } from '../../lib/robot-dogs-preview-adapter';
+
+export function getStaticPaths() {
+  return getRobotDogsPreviewArticles().map((article) => ({ params: { slug: article.slug } }));
+}
+
+const isPreview = import.meta.env.DEPLOY_ENV === 'preview';
+
+const { slug } = Astro.params;
+const template = slug ? getRobotDogsPreviewArticle(slug) : undefined;
+if (!template) throw new Error(`Unknown robot dogs preview article: ${slug}`);
+---
+
+<BaseLayout
+  title={template.seo.title}
+  description={template.seo.description}
+  canonical={`https://www.kiber-portal.ru${template.seo.canonical}`}
+  noindex={isPreview}
+  breadcrumbs={template.breadcrumbs}
+  jsonLd={[
+    blogPostingJsonLd({ title: template.seo.title, description: template.seo.description, url: template.seo.canonical, image: template.hero.image.src }),
+    breadcrumbJsonLd(template.breadcrumbs),
+    faqPageJsonLd({ items: template.faq.items }),
+  ]}
+>
+  <main id="main-content" tabindex="-1" data-kiber-task="robot-dogs-preview" data-preview-only={isPreview ? 'true' : undefined}>
+    <ArticleBlocksTemplate {template} />
+  </main>
+</BaseLayout>

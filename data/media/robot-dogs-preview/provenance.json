@@ -1,0 +1,166 @@
+{
+  "generatedFrom": "data/content-inbox/dogs-approved/*.content-package.json",
+  "items": [
+    {
+      "slug": "robot-dlya-nauchnogo-shou-i-shkoly",
+      "mediaId": "img_11ff22ab94a4",
+      "sourcePath": "data/media/robot-dogs-preview/originals/robot-dlya-nauchnogo-shou-i-shkoly-img_11ff22ab94a4.png",
+      "sourceSha256": "6932e633a0c037420f9f9aa39c43bffcf7230ade937f0fc9bd4c5ab3fadcc286",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/robot-dlya-nauchnogo-shou-i-shkoly-img_11ff22ab94a4.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 96596,
+      "alt": "Иллюстрация к статье о роботе для научного шоу и школы",
+      "actualDescription": "Роботизированная платформа находится в учебном классе рядом с детьми и ноутбуком.",
+      "seoAlt": "Робот для научного шоу и школы в учебной демонстрационной зоне",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    },
+    {
+      "slug": "robot-stendist-dlya-vystavki",
+      "mediaId": "img_ba6c08f3ae69",
+      "sourcePath": "data/media/robot-dogs-preview/originals/robot-stendist-dlya-vystavki-img_ba6c08f3ae69.png",
+      "sourceSha256": "12f6dc56c3950a01f547e8f5c33b92725abe86286addaabac1af9c7e81f5fdad",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/robot-stendist-dlya-vystavki-img_ba6c08f3ae69.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 96010,
+      "alt": "Гуманоидный промо-робот и робопёс у выставочного стенда",
+      "actualDescription": "Гуманоидный промо-робот и четвероногий робот находятся рядом с выставочным стендом и баннерами.",
+      "seoAlt": "Робот-стендист и робопёс для выставочного стенда",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    },
+    {
+      "slug": "roboty-sobaki",
+      "mediaId": "img_7912e5ab6826",
+      "sourcePath": "data/media/robot-dogs-preview/originals/roboty-sobaki-img_7912e5ab6826.png",
+      "sourceSha256": "744198657a599a3f7f23d3baca47a52eba3b9c5806d27d1c4985400f63e939e7",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/roboty-sobaki-img_7912e5ab6826.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 67758,
+      "alt": "Роботы-собаки для мероприятий, промо и образовательных демонстраций",
+      "actualDescription": "На иллюстрации три робота-собаки показаны в разных условных сценах: у сцены, в промо-зоне и рядом с учебной аудиторией.",
+      "seoAlt": "Аренда робота-собаки для мероприятия: выбор робопса под шоу, промо или образовательную демонстрацию",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    },
+    {
+      "slug": "roboty-unitree-obzor-kompanii",
+      "mediaId": "img_b422193eff74",
+      "sourcePath": "data/media/robot-dogs-preview/originals/roboty-unitree-obzor-kompanii-img_b422193eff74.png",
+      "sourceSha256": "ee34d73b6fbb2ab2a212291dc18754e2c63463add57cad86a68b13f6f087df50",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/roboty-unitree-obzor-kompanii-img_b422193eff74.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 107342,
+      "alt": "Гуманоиды и робопёс на сцене с подсветкой",
+      "actualDescription": "Несколько роботов, включая гуманоидов и четвероногого робота, показаны на сцене с подсветкой.",
+      "seoAlt": "Роботы Unitree: робопёс и гуманоиды для мероприятий",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    },
+    {
+      "slug": "sravnenie-robosobak-dlya-meropriyatiy",
+      "mediaId": "img_9184598ad842",
+      "sourcePath": "data/media/robot-dogs-preview/originals/sravnenie-robosobak-dlya-meropriyatiy-img_9184598ad842.png",
+      "sourceSha256": "ae346eefe0fc6dcf33162ec58e92ecfa56162ed6eeb11f03a35f4931c5dca878",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/sravnenie-robosobak-dlya-meropriyatiy-img_9184598ad842.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 95970,
+      "alt": "Три робота-собаки в разных событийных зонах",
+      "actualDescription": "Три четвероногих робота показаны на фоне сценической, промо- и образовательной зон.",
+      "seoAlt": "Сравнение роботов-собак для мероприятий",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    },
+    {
+      "slug": "unitree-go2-na-meropriyatii",
+      "mediaId": "img_1006041cae68",
+      "sourcePath": "data/media/robot-dogs-preview/originals/unitree-go2-na-meropriyatii-img_1006041cae68.png",
+      "sourceSha256": "33f0adbdd54cbaa6482850ce5a89f8f3106ac75c0485ddac45ee6863b95a6597",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/unitree-go2-na-meropriyatii-img_1006041cae68.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 74440,
+      "alt": "Unitree Go2 на мероприятии: робопёс для выхода и фотомомента",
+      "actualDescription": "На иллюстрации четвероногий робот-собака показан рядом с людьми на площадке мероприятия.",
+      "seoAlt": "Unitree Go2 на мероприятии: робот-собака для управляемого выхода и фото с гостями",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    },
+    {
+      "slug": "xiaomi-cyberdog-2-v-promo-akciyah",
+      "mediaId": "img_f5e815e757e4",
+      "sourcePath": "data/media/robot-dogs-preview/originals/xiaomi-cyberdog-2-v-promo-akciyah-img_f5e815e757e4.png",
+      "sourceSha256": "000fda23f1e2614b78e30a0d1a0f2a3da636831c7a51c5f8a9fc26ee0e9c9a4e",
+      "sourceDimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "runtimePath": "/images/robot-dogs-preview/xiaomi-cyberdog-2-v-promo-akciyah-img_f5e815e757e4.webp",
+      "runtimeDimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "runtimeBytes": 70382,
+      "alt": "Иллюстрация к статье о Xiaomi CyberDog 2 в промо-акции",
+      "actualDescription": "Робот-собака с яркими панелями корпуса стоит рядом с промо-стендом.",
+      "seoAlt": "Xiaomi CyberDog 2 для промо-акции: робот-собака рядом с бренд-зоной",
+      "previewAllowed": true,
+      "productionAllowed": false,
+      "rightsStatus": "needs_rights_review",
+      "sourceStatus": "owner_provided"
+    }
+  ]
+}

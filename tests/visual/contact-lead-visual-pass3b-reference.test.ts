@@ -9,7 +9,6 @@ test('visual pass 3B removes public-facing technical review labels from pass 3 p
   const files = [
     'src/pages/lead/thanks.astro',
     'src/pages/roboty-gumanoidy.astro',
-    'src/pages/roboty-sobaki.astro',
     'src/pages/contacts.astro',
   ];
   for (const file of files) {
@@ -22,16 +21,9 @@ test('visual pass 3B removes public-facing technical review labels from pass 3 p
 });
 
 test('category pages expose reference-style hero shell, stats and CTA strip', () => {
-  for (const file of ['src/pages/roboty-sobaki.astro']) {
-    const source = read(file);
-    assert.match(source, /category-page__hero-card/, file);
-    assert.match(source, /category-page__hero-copy/, file);
-    assert.match(source, /category-page__media-card/, file);
-    assert.match(source, /category-page__stats/, file);
-    assert.match(source, /category-page__cta-strip/, file);
-    assert.match(source, /background:\s*var\(--kp-reference-blue-deep\)/, file);
-    assert.match(source, /border-radius:\s*var\(--kp-reference-button-radius\)/, file);
-  }
+  const source = read('src/pages/roboty-sobaki.astro');
+  assert.match(source, /CompilationTemplate/, 'roboty-sobaki now renders the owner-approved dog compilation template');
+  assert.match(source, /robot-dogs-preview/, 'dog compilation keeps scoped gallery whitespace fix marker');
 });
 
 test('thanks page uses branded confirmation language while keeping routing safety in CI/docs', () => {

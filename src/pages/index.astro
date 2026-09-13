@@ -84,7 +84,7 @@ const hero = {
       </div>
     </section>
 
-    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...launchArticles} />
+    <HomeImageCards id="articles" eyebrow="Блог Кибер Гоши" variant="article" {...launchArticles} cards={launchArticles.cards.slice(0, 6)} />
     <HomeFaqBlock {...homeFaq} />
     <HomeFinalCta {...homeRobotCardFinalCta} variant="robot-card-final" />
   </main>

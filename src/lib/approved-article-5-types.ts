@@ -26,7 +26,15 @@ export type ArticleRobotCard = {
 };
 
 
+export type OrderedPackageArticleBlock =
+  | { type: 'plainText'; id: string; title: string; paragraphs: string[] }
+  | { type: 'goshaQuote'; id: string; gosha: HomeGoshaData }
+  | { type: 'mediaMoment'; id: string; eyebrow?: string; title: string; description: string; image: { src: string; alt: string; actualDescription?: string }; caption?: string }
+  | { type: 'checkpointList'; id: string; eyebrow?: string; title: string; items: ({ title: string; text: string } | string)[] }
+  | { type: 'comparisonBlock'; id: string; eyebrow?: string; title: string; description: string; table?: { headers: string[]; rows: string[][]; note?: string } };
+
 export type ArticleContent = {
+  orderedPackageBlocks?: OrderedPackageArticleBlock[];
   showInventory?: boolean;
   seoIntro?: { eyebrow?: string; title: string; paragraphs: string[] };
   plainText?: { title: string; paragraphs: string[] };

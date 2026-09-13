@@ -5,13 +5,13 @@ import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
 import HomeGoshaQuote from '../blocks/HomeGoshaQuote.astro';
 import HomeImageCards from '../blocks/HomeImageCards.astro';
 import RobotCard from '../blocks/RobotCard.astro';
-import type { ArticleBlocksTemplateData } from '../../lib/approved-article-5-types';
-
 import { launchArticles, launchCompilations } from '../../lib/launch-navigation';
+import type { ArticleBlocksTemplateData } from '../../lib/approved-article-5-types';
 
 const { template } = Astro.props as { template: ArticleBlocksTemplateData };
 const content = template.articleContent;
-const reviewRobotCards = template.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
+const isPackageArticle = Boolean(content?.orderedPackageBlocks?.length);
+const reviewRobotCards = isPackageArticle ? template.robots : template.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
 const [g1] = reviewRobotCards;
 const featuredRobot = content?.product?.featuredSlug ? reviewRobotCards.find((robot) => robot.slug === content.product?.featuredSlug) ?? g1 : g1;
 const gallerySliderId = content?.gallery?.sliderId ?? 'robot-article-compilation-gallery';
@@ -60,6 +60,81 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       {(content?.seoIntro?.paragraphs ?? [template.aiSummary]).map((paragraph) => <p>{paragraph}</p>)}
     </div>
   </section>
+
+  {content?.orderedPackageBlocks?.map((block) => (
+    block.type === 'plainText' ? (
+      <section id={block.id} class="article-blocks__plain-text container" data-block-id={block.id} aria-labelledby={`${block.id}-title`}>
+        <h2 id={`${block.id}-title`}>{block.title}</h2>
+        <div class="article-blocks__plain-copy">{block.paragraphs.map((paragraph) => <p>{paragraph}</p>)}</div>
+      </section>
+    ) : block.type === 'goshaQuote' ? (
+      <section id={block.id} class="article-blocks__gosha container" data-block-id={block.id} aria-label="Кибер Гоша комментирует статью">
+        <HomeGoshaQuote {...block.gosha} id={`kiber-gosha-${block.id}`} />
+      </section>
+    ) : block.type === 'mediaMoment' ? (
+      <section id={block.id} class="article-blocks__media container" data-block-id={block.id} aria-labelledby={`${block.id}-title`}>
+        <div class="article-blocks__section-head">
+          <p class="article-blocks__eyebrow">{block.eyebrow}</p>
+          <h2 id={`${block.id}-title`}>{block.title}</h2>
+          <span>{block.description}</span>
+        </div>
+        <figure>
+          <div class="article-blocks__media-frame"><img src={block.image.src} alt={block.image.alt} loading="lazy" decoding="async" /></div>
+          {block.caption && <figcaption>{block.caption}</figcaption>}
+        </figure>
+      </section>
+    ) : block.type === 'checkpointList' ? (
+      <section id={block.id} class="article-blocks__checklist container" data-block-id={block.id} aria-labelledby={`${block.id}-title`}>
+        <div class="article-blocks__section-head article-blocks__section-head--wide">
+          <p class="article-blocks__eyebrow">{block.eyebrow}</p>
+          <h2 id={`${block.id}-title`}>{block.title}</h2>
+        </div>
+        <div class="article-blocks__checks">{block.items.map((item) => <article><span aria-hidden="true">✓</span><div>{typeof item === 'string' ? <p>{item}</p> : <><h3>{item.title}</h3><p>{item.text}</p></>}</div></article>)}</div>
+      </section>
+    ) : block.type === 'comparisonBlock' ? (
+      <section id={block.id} class="article-blocks__comparison container" data-block-id={block.id} aria-labelledby={`${block.id}-title`}>
+        <div class="article-blocks__section-head">
+          <p class="article-blocks__eyebrow">{block.eyebrow}</p>
+          <h2 id={`${block.id}-title`}>{block.title}</h2>
+          <span>{block.description}</span>
+        </div>
+        {block.table && (
+          <div class="article-blocks__comparison-table" role="region" aria-label="Таблица сравнения характеристик">
+            <table>
+              <thead><tr>{block.table.headers.map((header) => <th>{header}</th>)}</tr></thead>
+              <tbody>{block.table.rows.map((row) => <tr>{row.map((cell) => <td>{cell}</td>)}</tr>)}</tbody>
+            </table>
+            {block.table.note && <p>{block.table.note}</p>}
+          </div>
+        )}
+      </section>
+    ) : null
+  ))}
+
+  {isPackageArticle && content?.gallery && (
+  <section id="robotCardGallery" class="humanoid-template__gallery article-blocks__gallery" data-block-id="robotCardGallery" aria-labelledby="article-gallery-title">
+    <div class="container humanoid-template__gallery-head article-blocks__gallery-head">
+      <div class="humanoid-template__section-head article-blocks__section-head">
+        <p class="humanoid-template__eyebrow article-blocks__eyebrow">{content?.gallery?.eyebrow ?? 'Галерея'}</p>
+        <h2 id="article-gallery-title">{content?.gallery?.title ?? 'Галерея для статьи: показать робота до длинного текста'}</h2>
+        <span>{content?.gallery?.description ?? 'Блок целиком взят со страницы «Подборка / роботы-гуманоиды»: здесь меняются только фотографии под конкретную статью.'}</span>
+      </div>
+      <div class="humanoid-template__gallery-nav" aria-label="Навигация по галерее статьи">
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev={`[data-drag-slider='${gallerySliderId}']`} aria-label="Предыдущие фото галереи">‹</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next={`[data-drag-slider='${gallerySliderId}']`} aria-label="Следующие фото галереи">›</button>
+      </div>
+    </div>
+    <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Фотографии роботов: горизонтальный слайдер">
+      {articleGalleryImages.map((image, index) => (
+        <figure class="humanoid-template__gallery-item">
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
+        </figure>
+      ))}
+    </div>
+  </section>
+  )}
+
+  {!content?.orderedPackageBlocks && (<>
 
   <section id="plainText" class="article-blocks__plain-text container" data-block-id="plainText" aria-labelledby="plain-text-title">
     <h2 id="plain-text-title">{content?.plainText?.title ?? 'Как это выглядит на практике?'}</h2>
@@ -223,6 +298,8 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
     )}
   </section>
 
+  </>)}
+
   <section id="articleFaq" class="article-blocks__faq container" data-block-id="faq" aria-label="FAQ статьи">
     <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
   </section>
@@ -238,16 +315,16 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {reviewRobotCards.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {(isPackageArticle ? reviewRobotCards : reviewRobotCards.slice(0, 4)).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
   </section>
 
   <section id="relatedArticles" class="article-blocks__related container" data-block-id="relatedArticles" aria-label="Тематические статьи">
-    <HomeImageCards id="article-template-related" eyebrow={content?.relatedArticles?.eyebrow ?? "Блог Кибер Гоши"} title={content?.relatedArticles?.title ?? "Тематические статьи по аренде роботов"} description={content?.relatedArticles?.description ?? "Блок перелинковки между уже подготовленными и будущими статьями Блога Кибер Гоши."} cards={launchArticles.cards} variant="article" />
+    <HomeImageCards id="article-template-related" eyebrow={content?.relatedArticles?.eyebrow ?? "Блог Кибер Гоши"} title={content?.relatedArticles?.title ?? "Тематические статьи по аренде роботов"} description={content?.relatedArticles?.description ?? "Блок перелинковки между уже подготовленными и будущими статьями Блога Кибер Гоши."} cards={isPackageArticle ? template.relatedArticles.cards : launchArticles.cards} variant="article" />
   </section>
 
   <section id="relatedCompilations" class="article-blocks__compilations container" data-block-id="relatedCompilations" aria-label="Подборки по теме статьи">
-    <HomeImageCards id="article-template-compilations" eyebrow={content?.relatedCompilations?.eyebrow ?? "Подборки"} title={content?.relatedCompilations?.title ?? "Тематические подборки роботов для аренды"} description={content?.relatedCompilations?.description ?? "Переходы в подборки добавляются там, где они действительно помогают выбрать класс робота или сценарий мероприятия."} cards={launchCompilations.cards} />
+    <HomeImageCards id="article-template-compilations" eyebrow={content?.relatedCompilations?.eyebrow ?? "Подборки"} title={content?.relatedCompilations?.title ?? "Тематические подборки роботов для аренды"} description={content?.relatedCompilations?.description ?? "Переходы в подборки добавляются там, где они действительно помогают выбрать класс робота или сценарий мероприятия."} cards={isPackageArticle ? template.relatedCompilations.cards : launchCompilations.cards} />
   </section>
 </article>
 

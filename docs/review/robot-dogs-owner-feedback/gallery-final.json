@@ -1,0 +1,20 @@
+{
+  "scope": "Only roboty-sobaki upper gallery lead and four repeated photos",
+  "ownerApproval": {
+    "articles": "All six accepted as-is; frozen",
+    "scenarios": "Photos, captions and design accepted as-is; frozen",
+    "otherCompilationBlocks": "Frozen"
+  },
+  "baseline": "b5a1188",
+  "galleryCount": 6,
+  "scenarioCount": 4,
+  "sharedPhotoHashes": 0,
+  "outsideGalleryHTML": "byte-identical",
+  "otherBuiltHTML": "unchanged",
+  "cssAndTemplates": "unchanged",
+  "deployment": "Jino roboty-sobaki/index.html only",
+  "httpAndImageHashes": "PASS",
+  "rollback": "single previous HTML downloaded and verified locally",
+  "productionChanged": false,
+  "mergeAuthorized": false
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [],
+  "summary": "No concrete blockers found in the final reviewed state. The preview-only article routes and hub are gated from production, the roboty-sobaki production path no longer statically imports the preview adapter, old production behavior is preserved by the non-preview branch, noindex/preview-only markers are present for preview pages, exhibition model filtering matches the stated G1/Promobot V4/Go2 scope, shared CTA behavior is covered, and the added tests directly cover adapter contracts, CTA distinctions, summaries, old navigation fallback, rendered content presence, route/media checks, and exclusion constraints."
+}

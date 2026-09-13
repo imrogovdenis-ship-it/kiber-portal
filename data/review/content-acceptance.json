@@ -909,6 +909,153 @@
         "scope": "content_and_visual_not_production",
         "evidence": "docs/review/canonical-release/source-manifest.json and recorded owner approvals"
       }
+    },
+    {
+      "id": "page:/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+      "type": "launch_page",
+      "route": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
+    },
+    {
+      "id": "page:/articles/robot-stendist-dlya-vystavki/",
+      "type": "launch_page",
+      "route": "/articles/robot-stendist-dlya-vystavki/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
+    },
+    {
+      "id": "page:/roboty-sobaki/",
+      "type": "launch_page",
+      "route": "/roboty-sobaki/",
+      "template": "category",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
+    },
+    {
+      "id": "page:/articles/roboty-unitree-obzor-kompanii/",
+      "type": "launch_page",
+      "route": "/articles/roboty-unitree-obzor-kompanii/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
+    },
+    {
+      "id": "page:/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "type": "launch_page",
+      "route": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
+    },
+    {
+      "id": "page:/articles/unitree-go2-na-meropriyatii/",
+      "type": "launch_page",
+      "route": "/articles/unitree-go2-na-meropriyatii/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
+    },
+    {
+      "id": "page:/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+      "type": "launch_page",
+      "route": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+      "template": "article-detail",
+      "structuralStatus": "accepted_structurally",
+      "finalApprovalStatus": "needs_human_review",
+      "reviewFlags": [
+        "source_promotion_approved_no_deploy_or_live_routing_side_effects"
+      ],
+      "approval": {
+        "ownerRequired": "КИБЕР ПОРТАЛ release owner",
+        "evidenceRequired": true,
+        "approvedAt": null
+      },
+      "contentApproval": {
+        "approved": true,
+        "scope": "content_visual_and_source_publication_promotion",
+        "evidence": "docs/review/robot-dogs-production-promotion/OWNER_APPROVAL.md"
+      }
     }
   ],
   "summary": {

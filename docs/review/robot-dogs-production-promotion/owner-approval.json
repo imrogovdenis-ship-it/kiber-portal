@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "ownerQuote": "Все, публикуй все на основной домен.",
+  "scope": "source_promotion_only_existing_pr129_branch",
+  "approvedRoutes": [
+    "/roboty-sobaki/",
+    "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+    "/articles/robot-stendist-dlya-vystavki/",
+    "/articles/roboty-unitree-obzor-kompanii/",
+    "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "/articles/unitree-go2-na-meropriyatii/",
+    "/articles/xiaomi-cyberdog-2-v-promo-akciyah/"
+  ],
+  "boundaries": {
+    "deploy": false,
+    "merge": false,
+    "dns": false,
+    "secrets": false,
+    "analytics": false,
+    "api": false,
+    "liveLeadRouting": false
+  }
+}
