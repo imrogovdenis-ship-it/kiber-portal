@@ -60,3 +60,9 @@ test('homepage/index compilation inventory exposes dog compilation without repla
 test('approved package adapter still exposes the same six article canonical paths', () => {
   assert.deepEqual(getRobotDogsPreviewArticles().map((article) => article.seo.canonical).sort(), [...approvedArticleRoutes].sort());
 });
+
+test('homepage preserves approved six article cards while blog keeps full published inventory', () => {
+ const home = readFileSync('src/pages/index.astro', 'utf8');
+ assert.match(home, /cards=\{launchArticles\.cards\.slice\(0, 6\)\}/);
+ assert.equal(launchArticles.length, 12);
+});
