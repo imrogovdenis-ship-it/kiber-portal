@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "robot-dlya-nauchnogo-shou-i-shkoly",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 816832,
+    "fullBytes": 827729,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "robot-stendist-dlya-vystavki",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 636152,
+    "fullBytes": 647049,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "roboty-sobaki",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 787920,
+    "fullBytes": 798817,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "roboty-unitree-obzor-kompanii",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 810436,
+    "fullBytes": 821333,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "sravnenie-robosobak-dlya-meropriyatiy",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 761774,
+    "fullBytes": 772671,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "unitree-go2-na-meropriyatii",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 797374,
+    "fullBytes": 808271,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "xiaomi-cyberdog-2-v-promo-akciyah",
+    "width": 390,
+    "status": "PASS",
+    "initialBytes": 762206,
+    "fullBytes": 773103,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "robot-dlya-nauchnogo-shou-i-shkoly",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 816832,
+    "fullBytes": 827729,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "robot-stendist-dlya-vystavki",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 636152,
+    "fullBytes": 647049,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "roboty-sobaki",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 787920,
+    "fullBytes": 798817,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "roboty-unitree-obzor-kompanii",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 810436,
+    "fullBytes": 821333,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "sravnenie-robosobak-dlya-meropriyatiy",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 761774,
+    "fullBytes": 772671,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "unitree-go2-na-meropriyatii",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 797374,
+    "fullBytes": 808271,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  },
+  {
+    "slug": "xiaomi-cyberdog-2-v-promo-akciyah",
+    "width": 1440,
+    "status": "PASS",
+    "initialBytes": 762206,
+    "fullBytes": 773103,
+    "budgetPass": true,
+    "errors": [],
+    "trackerRequests": 0
+  }
+]

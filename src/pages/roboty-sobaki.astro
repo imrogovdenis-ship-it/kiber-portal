@@ -2,7 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import RobotCard from '../components/blocks/RobotCard.astro';
 import InternalLinks from '../components/content/InternalLinks.astro';
-import { collectionPageJsonLd } from '../lib/seo';
+import { breadcrumbJsonLd, collectionPageJsonLd, faqPageJsonLd } from '../lib/seo';
+import CompilationTemplate from '../components/templates/CompilationTemplate.astro';
 import { getRobotPages } from '../lib/robot-pages';
 
 const robots = getRobotPages().filter((robot) => robot.category === 'robot_dog');
@@ -20,15 +21,28 @@ const cards = robots.map((robot, index) => ({
   analytics: { event: 'robot_card_click' as const, placement: 'collection' as const, position: index + 1 },
 }));
 const heroImage = featured?.media.hero;
+const isRobotDogsPreview = import.meta.env.DEPLOY_ENV === 'preview';
+const previewTemplate = isRobotDogsPreview ? (await import('../lib/robot-dogs-preview-adapter')).getRobotDogsPreviewCompilation() : undefined;
 ---
 
 <BaseLayout
-  title="Роботы-собаки в аренду — КИБЕР ПОРТАЛ"
-  description="Подборка роботов-собак для событий, промо, демонстраций, выставок и технологичных презентаций."
-  canonical="https://www.kiber-portal.ru/roboty-sobaki/"
-  noindex={false}
-  jsonLd={collectionPageJsonLd({ title: 'Роботы-собаки в аренду — КИБЕР ПОРТАЛ', description: 'Подборка роботов-собак для событий и промо.', url: '/roboty-sobaki/' })}
+  title={previewTemplate ? previewTemplate.seo.title : "Роботы-собаки в аренду — КИБЕР ПОРТАЛ"}
+  description={previewTemplate ? previewTemplate.seo.description : "Подборка роботов-собак для событий, промо, демонстраций, выставок и технологичных презентаций."}
+  canonical={`https://www.kiber-portal.ru${previewTemplate ? previewTemplate.seo.canonical : '/roboty-sobaki/'}`}
+  noindex={previewTemplate ? true : false}
+  breadcrumbs={previewTemplate ? previewTemplate.breadcrumbs : []}
+  jsonLd={previewTemplate ? [
+    collectionPageJsonLd({ title: previewTemplate.seo.title, description: previewTemplate.seo.description, url: previewTemplate.seo.canonical }),
+    breadcrumbJsonLd(previewTemplate.breadcrumbs),
+    faqPageJsonLd({ items: previewTemplate.faq.items }),
+    { '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: previewTemplate.catalog.robots.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: r.title, url: `https://www.kiber-portal.ru${r.href}` })) },
+  ] : collectionPageJsonLd({ title: 'Роботы-собаки в аренду — КИБЕР ПОРТАЛ', description: 'Подборка роботов-собак для событий и промо.', url: '/roboty-sobaki/' })}
 >
+  {previewTemplate ? (
+    <main id="main-content" tabindex="-1" data-kiber-task="robot-dogs-preview" data-preview-only="true">
+      <CompilationTemplate template={previewTemplate} />
+    </main>
+  ) : (
   <main class="category-page" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3b" data-category="robot_dog">
     <section class="category-page__hero-card container" aria-labelledby="page-title">
       <div class="category-page__hero-copy">
@@ -78,6 +92,7 @@ const heroImage = featured?.media.hero;
       <InternalLinks route="/roboty-sobaki/" label="Следующие шаги" />
     </div>
   </main>
+  )}
 </BaseLayout>
 
 <style>

@@ -1,0 +1,402 @@
+{
+  "contentPackageVersion": "1.0",
+  "pageType": "article_detail",
+  "slug": "unitree-go2-na-meropriyatii",
+  "sourceDocuments": [
+    {
+      "path": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/documents/doc_975753c2d13c_Статья Unitree Go2 на мероприятии.txt",
+      "status": "source_document_report_unverified"
+    },
+    {
+      "path": "/home/alex/.hermes/state/kiber-robot-dogs-content/text-workspace/TASK.md",
+      "status": "brief"
+    },
+    {
+      "path": "/home/alex/.hermes/state/kiber-robot-dogs-content/supervisor-rejected-first-draft.json",
+      "status": "rejection_brief"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/data/content-contracts/kiber-claude-page-block-contracts.json",
+      "status": "content_contract_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/docs/content-contracts/kiber-claude-page-block-contracts.md",
+      "status": "content_contract_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-portal/docs/cyber-gosha-style-guide.md",
+      "status": "style_guide_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-unitree-go2.json",
+      "status": "approved_site_snapshot_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/DOSSIER.md",
+      "status": "research_dossier_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/dossier.json",
+      "status": "research_dossier_readonly"
+    }
+  ],
+  "research": {
+    "inventory": {
+      "sourceDocumentsRead": [
+        "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/documents/doc_975753c2d13c_Статья Unitree Go2 на мероприятии.txt",
+        "/home/alex/.hermes/state/kiber-robot-dogs-content/text-workspace/TASK.md",
+        "/home/alex/.hermes/state/kiber-robot-dogs-content/supervisor-rejected-first-draft.json",
+        "/home/alex/projects/kiber-analytics-v4-production/data/content-contracts/kiber-claude-page-block-contracts.json",
+        "/home/alex/projects/kiber-analytics-v4-production/docs/content-contracts/kiber-claude-page-block-contracts.md",
+        "/home/alex/projects/kiber-portal/docs/cyber-gosha-style-guide.md",
+        "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-unitree-go2.json",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/DOSSIER.md",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/dossier.json"
+      ],
+      "modelDossiersRead": [
+        "arenda-unitree-go2"
+      ],
+      "contractRead": true,
+      "styleGuideRead": true
+    },
+    "wordstatAnalysis": {
+      "status": "checked_live_topic_query",
+      "evidence": "/home/alex/.hermes/state/kiber-robot-dogs-content/wordstat-live/1.wordstat.json",
+      "query": "Unitree Go2 на мероприятии",
+      "total": 0,
+      "period": {
+        "from": "12.08.2026",
+        "to": "12.09.2026"
+      },
+      "region": "Все регионы",
+      "devices": "desktop, smartphone, tablet — all checked",
+      "noDetailedRows": true,
+      "interpretation": "Frequency belongs only to this measured query with displayed filters; proposed long-tail variants are not separately measured."
+    },
+    "serpAnalysis": {
+      "status": "partial_existing_snapshots",
+      "evidence": "Used saved Unitree Go2 dossier, source captures and site snapshot; no fresh SERP collection was performed.",
+      "freshAttemptStatus": "Direct fresh SERP requests unusable; existing project snapshots reused and dated separately."
+    },
+    "contentGaps": [
+      "Organizers need to understand where Go2 fits into an event program, not read a repeated model-card tariff or a table of maximum specs.",
+      "The article should explain staging, timing, guest interaction and manager briefing while sending exact rental intent to the existing robot card."
+    ],
+    "factualCorrections": [
+      "No unsupported speed, obstacle, battery, salto, voice, following or autonomous-work claims are used as rental facts.",
+      "Air/Pro/EDU/Go2-W variants are not merged into one capability set.",
+      "Pricing is request-only in public copy."
+    ],
+    "competitiveRevisionV2": {
+      "slug": "unitree-go2-na-meropriyatii",
+      "sourceIds": [
+        "C1",
+        "C3",
+        "C12",
+        "C14"
+      ],
+      "strengths": "Есть реальные предложения Air и Pro, трюки, автономность, сменная батарея у C3, примеры взаимодействия и райдер.",
+      "observedGapsAndRisks": "C1/C3 преимущественно перечисляют способности; C1 заявляет безопасность на детском празднике без оговорок. Среди этих карточек нет объяснения именно подтверждённого комплекта КИБЕР со строкой и А6.",
+      "editingDecision": "Сохранить одобренный абзац дословно; дополнить его рекламным модулем; основа — общение среди гостей, не обязательное объявление ведущим. Батареи и состав работы — по владельцу.",
+      "evidence": "competitive-v2/competitive-analysis.json",
+      "serpStatus": "partial; actual source pages reviewed, not seven fresh SERPs",
+      "ownerFacts": "Telegram owner corrections: equipment, battery handling, natural interaction, limited scenario repetition, approved paragraph"
+    }
+  },
+  "seo": {
+    "metaTitle": "Unitree Go2 на мероприятии: общение и промо | КИБЕР ПОРТАЛ",
+    "metaDescription": "Unitree Go2 среди гостей и у выставочного стенда: общение, бегущая строка, материалы А6 и сменные аккумуляторы. Как подготовиться к мероприятию.",
+    "canonicalPath": "/articles/unitree-go2-na-meropriyatii/",
+    "primaryKeyword": "Unitree Go2 на мероприятии",
+    "secondaryKeywords": [
+      "робот-собака Unitree Go2 для события",
+      "робопёс Unitree Go2 на выставке",
+      "Unitree Go2 для фотозоны"
+    ],
+    "longTailKeywords": [
+      "как встроить Unitree Go2 в программу мероприятия",
+      "что спросить перед арендой Unitree Go2",
+      "сценарий выхода робота-собаки Unitree Go2"
+    ],
+    "h1": "Unitree Go2 на мероприятии: как встроить робопса в программу",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Блог Кибер Гоши",
+        "href": "/articles/"
+      },
+      {
+        "label": "Unitree Go2 на мероприятии",
+        "href": "/articles/unitree-go2-na-meropriyatii/"
+      }
+    ],
+    "requiredSchemaTypes": [
+      "BlogPosting",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "informational_scenario_article",
+    "primaryKeyword": "Unitree Go2 на мероприятии",
+    "secondaryKeywords": [
+      "робот-собака Unitree Go2 для события",
+      "Unitree Go2 для фотозоны",
+      "робопёс Unitree Go2 на выставке"
+    ],
+    "modelNameVariants": [
+      "Unitree Go2",
+      "робот-собака Unitree Go2",
+      "робопёс Go2"
+    ],
+    "aiAgentHints": [
+      "Article explains event usage and briefing; exact rental conversion should link to /robots/arenda-unitree-go2/."
+    ]
+  },
+  "aiVisibility": {
+    "aiSummary": "Unitree Go2 общается среди гостей, развлекает детей и помогает у стенда. В КИБЕР ПОРТАЛ есть бегущая строка и лоток А6; сменные аккумуляторы позволяют продолжать мероприятие после замены. Сценарий подготовки не требует постановки каждого знакомства."
+  },
+  "blocks": {
+    "hero": {
+      "eyebrow": "Блог Кибер Гоши",
+      "h1": "Unitree Go2 на мероприятии: как встроить робопса в программу",
+      "lead": "Разбираем, где Unitree Go2 уместен на событии: проморабота с бегущей строкой и раздаткой, выставочный стенд, встреча гостей, детская программа или фотомомент.",
+      "heroImage": {
+        "mediaId": "img_1006041cae68",
+        "role": "hero",
+        "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_1006041cae68.png",
+        "alt": "Unitree Go2 на мероприятии: робопёс для выхода и фотомомента",
+        "actualDescription": "На иллюстрации четвероногий робот-собака показан рядом с людьми на площадке мероприятия.",
+        "seoAlt": "Unitree Go2 на мероприятии: робот-собака для управляемого выхода и фото с гостями",
+        "caption": "Иллюстрация.",
+        "sourceStatus": "owner_provided",
+        "rightsStatus": "needs_rights_review"
+      }
+    },
+    "seoIntro": {
+      "eyebrow": "Коротко",
+      "title": "Робопёс, с которым хочется познакомиться",
+      "paragraphs": [
+        "Unitree Go2 на мероприятии не обязательно нужен отдельный выход со сцены. Робопёс ходит между гостями, останавливается рядом, даёт лапу и отвечает движением на внимание человека. Люди присаживаются, гладят его и снимают видео — знакомство складывается естественно, без объяснения каждой команды.",
+        "На выставке такой контакт помогает начать разговор о компании, на корпоративе — оживить общение, на детском празднике — подарить встречу с необычным героем. А бегущая строка и раздатка превращают Go2 ещё и в помощника промо-команды."
+      ]
+    },
+    "goshaQuote": {
+      "quote": "**Робопса легко позвать на праздник, сложнее — объяснить ему, где не наступать на кабель.**",
+      "text": "Менеджер поможет выбрать формат участия Go2: общение с гостями, работу у стенда, рекламный комплект или детскую программу."
+    },
+    "plainText": {
+      "blockType": "plainText",
+      "title": "Где Unitree Go2 раскрывается лучше",
+      "paragraphs": [
+        "В welcome-зоне робопёс знакомится с приходящими гостями; на корпоративе становится общим поводом для улыбки и фото. Он может работать среди людей, а не только в отдельной фотозоне. Для презентации или сцены тоже найдётся роль — например, появиться вместе с новым продуктом, — но это один из вариантов, а не обязательное условие.",
+        "На выставке Unitree Go2 лучше работает не как бесконечно движущийся объект, а как магнит у стенда. Робот появляется по расписанию, делает небольшой проход, останавливает поток посетителей и даёт менеджеру повод начать разговор. Если стенд тесный, сценарий делают спокойнее: меньше маршрута, больше пауз и пояснений.",
+        "На выставке Unitree Go2 может работать как мобильный промоутер возле стенда или на согласованном маршруте. В КИБЕР ПОРТАЛ для него есть бегущая строка на спине: она показывает рекламный текст, информацию или схематичный логотип компании. Рядом с ней, со стороны головы, устанавливается лоток для раздатки формата А6. Робопёс подходит к человеку, присаживается, даёт лапу или выполняет движение, приглашая взять материал. Посетитель забирает его сам — это не раздача листовок механической рукой."
+      ]
+    },
+    "plainText2": {
+      "blockType": "plainText",
+      "title": "Как Go2 работает в течение мероприятия",
+      "paragraphs": [
+        "Короткий выход — лишь один из форматов, а не предел возможностей Go2. Робопёс КИБЕР ПОРТАЛ работает примерно 1,5–2 часа на одном аккумуляторе; затем батарею меняют, и программа продолжается. Это позволяет планировать длительную работу промоутером или серию развлечений для детей и взрослых. Замену аккумулятора и технические паузы учитывают в расписании, не обещая непрерывную работу без остановок.",
+        "Живое взаимодействие обеспечивает управление оператором: робопёс подходит к гостю, присаживается, протягивает лапу, меняет позу. Со стороны это воспринимается как ответ на внимание человека. Для общения не нужно останавливать всё мероприятие; отдельное пространство требуется прежде всего для активных трюков."
+      ]
+    },
+    "plainText3": {
+      "blockType": "plainText",
+      "title": "Что продумать при подготовке",
+      "paragraphs": [
+        "Сценарий важен, но не обязан расписывать каждое знакомство по секундам. Достаточно определить, где робопёс общается с гостями, когда помогает у стенда, нужен ли отдельный выход и кто отвечает на вопросы о продукте. Для рекламного комплекта заранее готовят короткий текст бегущей строки и материалы А6.",
+        "Фото площадки помогут учесть проходы, пороги, кабели и покрытие. Отдельно обсудите плотные участки потока и место для замены аккумулятора. Работа среди гостей и акробатический номер требуют разного пространства.",
+        "В детской программе Go2 может подойти, присесть и дать лапу. Дети знакомятся с ним, гладят и наблюдают за движениями; взрослые помогают соблюдать простые правила общения с техникой. Ведущий полезен для игр или общего номера, но не обязателен для каждого знакомства."
+      ]
+    },
+    "plainText4": {
+      "blockType": "plainText",
+      "title": "Что сказать менеджеру КИБЕР ПОРТАЛ",
+      "paragraphs": [
+        "Перед расчётом отправьте дату, город, формат события, длительность нужного присутствия, количество гостей, фото площадки и план маршрута. Отдельно отметьте, будут ли дети, тесные проходы, сцена, ступени, громкая музыка, съёмка для рекламы или требования бренда. Эти детали влияют на программу сильнее, чем список красивых возможностей из видео.",
+        "Цена по запросу: менеджер считает её после уточнения модели, сопровождения, логистики, числа выходов и подготовки. Если цель — именно аренда Unitree Go2, откройте карточку модели; если пока выбираете класс роботов, начните с подборки роботов-собак."
+      ]
+    },
+    "mediaMoment": {
+      "eyebrow": "Визуальный ориентир",
+      "title": "Фотомомент с Unitree Go2",
+      "lead": "Кто-то присаживается рядом с робопсом, кто-то протягивает руку, а друзья ловят момент на телефон. Такие фотографии появляются прямо во время общения, не только после отдельного выступления.",
+      "image": {
+        "mediaId": "img_1006041cae68",
+        "role": "hero",
+        "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_1006041cae68.png",
+        "alt": "Unitree Go2 на мероприятии: робопёс для выхода и фотомомента",
+        "actualDescription": "На иллюстрации четвероногий робот-собака показан рядом с людьми на площадке мероприятия.",
+        "seoAlt": "Unitree Go2 на мероприятии: робот-собака для управляемого выхода и фото с гостями",
+        "caption": "Иллюстрация.",
+        "sourceStatus": "owner_provided",
+        "rightsStatus": "needs_rights_review"
+      },
+      "caption": "Иллюстрация."
+    },
+    "checkpointList": {
+      "eyebrow": "Перед заявкой",
+      "title": "Проверьте до бронирования",
+      "items": [
+        "роль робота: выход, фотозона, стенд, презентация или образовательная демонстрация",
+        "маршрут, покрытие, плотность гостей, ступени, кабели и место для остановки",
+        "репертуар движений, число выходов, технические паузы и сопровождение",
+        "права на съёмку, брендовые требования и возраст аудитории"
+      ]
+    },
+    "faq": {
+      "title": "Вопросы и ответы",
+      "items": [
+        {
+          "question": "Можно ли взять Unitree Go2 без оператора?",
+          "answer": "На мероприятии робопсом управляет оператор: он реагирует на действия гостей и обстановку вокруг. Отдельный ведущий для обычного знакомства с Go2 не требуется."
+        },
+        {
+          "question": "Сколько стоит Unitree Go2 на мероприятие?",
+          "answer": "Цена по запросу. Менеджер рассчитывает её по дате, городу, длительности, логистике, числу выходов и подготовке программы. Если нужны дополнительные требования к съёмке или бренду, их лучше назвать сразу."
+        },
+        {
+          "question": "Робопёс сам выдаёт листовку?",
+          "answer": "Гость сам берёт материал А6 из лотка возле головы робопса. Go2 подходит, присаживается, даёт лапу или движением привлекает внимание к раздатке. Это подача материалов на лотке, а не захват листовки лапой."
+        },
+        {
+          "question": "Какая площадка подойдёт для показа?",
+          "answer": "Лучше заранее прислать фото и план. Команда проверит покрытие, проходы, ступени, кабели, плотность гостей и место для пауз. Если площадка сложная, сценарий адаптируют или предложат другой формат."
+        }
+      ]
+    },
+    "cta2": {
+      "title": "Остались вопросы?",
+      "description": "Нужен Go2 для общения с гостями или промоработы? Расскажите менеджеру о событии и желаемой длительности — он предложит подходящий комплект.",
+      "buttons": [
+        {
+          "label": "Оставить заявку",
+          "href": "/lead/request/",
+          "status": "existing"
+        }
+      ]
+    },
+    "catalogBlock": {
+      "eyebrow": "Каталог роботов",
+      "title": "Unitree Go2 и другие роботы-собаки",
+      "description": "Откройте карточку модели или сравните робопсов по задачам события.",
+      "robotSlugs": [
+        "arenda-unitree-go2",
+        "arenda-xiaomi-cyberdog-2",
+        "arenda-inchbot-l1-w-edu"
+      ]
+    },
+    "relatedArticles": {
+      "eyebrow": "Блог Кибер Гоши",
+      "title": "Читайте также",
+      "description": "Материалы из этой серии помогают выбрать сценарий и модель.",
+      "cards": [
+        {
+          "title": "Сравнение робо-собак для мероприятий",
+          "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Роботы Unitree: обзор компании и моделей",
+          "href": "/articles/roboty-unitree-obzor-kompanii/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Робот-стендист для выставки",
+          "href": "/articles/robot-stendist-dlya-vystavki/",
+          "status": "planned_in_this_batch"
+        }
+      ]
+    },
+    "relatedCompilations": {
+      "eyebrow": "Подборки",
+      "title": "Подборки роботов",
+      "description": "Если вы ещё выбираете класс роботов, начните с обзорных страниц.",
+      "cards": [
+        {
+          "title": "Роботы-собаки",
+          "href": "/roboty-sobaki/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Роботы-гуманоиды",
+          "href": "/roboty-gumanoidy/",
+          "status": "existing"
+        }
+      ]
+    }
+  },
+  "media": [
+    {
+      "mediaId": "img_1006041cae68",
+      "role": "hero",
+      "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_1006041cae68.png",
+      "alt": "Unitree Go2 на мероприятии: робопёс для выхода и фотомомента",
+      "actualDescription": "На иллюстрации четвероногий робот-собака показан рядом с людьми на площадке мероприятия.",
+      "seoAlt": "Unitree Go2 на мероприятии: робот-собака для управляемого выхода и фото с гостями",
+      "caption": "Иллюстрация.",
+      "sourceStatus": "owner_provided",
+      "rightsStatus": "needs_rights_review"
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/robots/arenda-unitree-go2/",
+      "anchor": "аренда Unitree Go2",
+      "reason": "existing exact model commercial card",
+      "status": "existing"
+    },
+    {
+      "href": "/roboty-sobaki/",
+      "anchor": "роботы-собаки",
+      "reason": "planned compilation for generic robot-dog choice",
+      "status": "planned"
+    },
+    {
+      "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "anchor": "сравнение робо-собак",
+      "reason": "planned comparison article from this batch",
+      "status": "planned"
+    },
+    {
+      "href": "/articles/roboty-unitree-obzor-kompanii/",
+      "anchor": "роботы Unitree",
+      "reason": "planned brand/model overview from this batch",
+      "status": "planned"
+    },
+    {
+      "href": "/lead/request/",
+      "anchor": "оставить заявку",
+      "reason": "existing lead request route for manager handoff",
+      "status": "existing"
+    }
+  ],
+  "schema": {
+    "types": [
+      "BlogPosting",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "wordstatStatus": "needs_wordstat_verification",
+    "serpStatus": "partial",
+    "openQuestions": [
+      "Для конкретного заказа согласовать дату, состав услуги и требуемые движения. Сменные батареи, ориентир времени работы, бегущая строка и лоток А6 подтверждены владельцем."
+    ],
+    "notes": [
+      "Public prose rewritten from scratch for the assigned file only.",
+      "Existing model-card Wordstat is recorded separately from this article long-tail intent.",
+      "DOCX reports were treated as unverified source documents; numeric/spec capability claims were not carried into public copy."
+    ],
+    "productionAllowed": false,
+    "competitorAnalysisStatus": "completed_for_inspected_source_scope"
+  }
+}

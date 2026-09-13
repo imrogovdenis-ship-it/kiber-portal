@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { robotDogsPreviewRoutes } from '../../../lib/robot-dogs-preview-adapter';
+
+export function getStaticPaths() {
+  if (process.env.DEPLOY_ENV !== 'preview') return [];
+  return [{ params: { path: undefined } }];
+}
+---
+
+<BaseLayout
+  title="Preview: роботы-собаки и статьи — КИБЕР ПОРТАЛ"
+  description="Owner-review hub for seven approved robot-dogs content packages. Preview-only, noindex."
+  canonical="https://www.kiber-portal.ru/preview/robot-dogs/"
+  noindex={true}
+>
+  <main id="main-content" tabindex="-1" class="robot-dogs-hub container" data-kiber-task="robot-dogs-preview-hub" data-preview-only="true">
+    <p class="robot-dogs-hub__eyebrow">Owner review / preview only</p>
+    <h1>Роботы-собаки: семь approved preview-страниц</h1>
+    <p>Этот хаб не добавлен в публичные индексы и нужен только для проверки пакета в preview-сборке.</p>
+    <div class="robot-dogs-hub__grid">
+      {robotDogsPreviewRoutes.map((route) => (
+        <a href={route.href} class="robot-dogs-hub__card">
+          <span>{route.type}</span>
+          <strong>{route.title}</strong>
+          <em>{route.href}</em>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .robot-dogs-hub { display: grid; gap: 1.5rem; padding-block: 8rem 5rem; }
+  .robot-dogs-hub__eyebrow { margin: 0; color: var(--kp-reference-blue); font-size: var(--kp-reference-label-size); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .robot-dogs-hub h1 { max-width: 54rem; margin: 0; color: var(--kp-ink); font-family: var(--kp-font-heading); font-size: clamp(2.6rem, 6vw, 5rem); line-height: .96; }
+  .robot-dogs-hub > p:not(.robot-dogs-hub__eyebrow) { max-width: 48rem; margin: 0; color: var(--kp-muted); font-size: 1.1rem; line-height: 1.55; }
+  .robot-dogs-hub__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+  .robot-dogs-hub__card { display: grid; gap: .7rem; border-radius: 1.25rem; padding: 1.25rem; background: var(--kp-white); color: var(--kp-ink); text-decoration: none; box-shadow: 0 .75rem 1.75rem color-mix(in srgb, var(--kp-ink) 8%, transparent); }
+  .robot-dogs-hub__card span { color: var(--kp-blue); font-weight: 800; text-transform: uppercase; }
+  .robot-dogs-hub__card strong { font-family: var(--kp-font-heading); font-size: 1.25rem; line-height: 1.1; }
+  .robot-dogs-hub__card em { color: var(--kp-muted); font-style: normal; overflow-wrap: anywhere; }
+</style>

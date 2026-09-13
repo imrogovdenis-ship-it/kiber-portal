@@ -38,7 +38,7 @@
     "test:contact-lead-visual": "node scripts/contact-lead-visual-smoke.mjs",
     "test:production-go-no-go": "node scripts/production-go-no-go-smoke.mjs",
     "build": "npm run ds:generate && ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "verify": "npm run check && npm test && npm run test:visual",
+    "verify": "npm run check && npm test && npm run test:visual && npm run test:robot-dogs-contracts",
     "build:production": "DEPLOY_ENV=production DESIGN_REVIEW_ENABLED=false npm run build",
     "build:preview": "DEPLOY_ENV=preview DESIGN_REVIEW_ENABLED=true npm run build",
     "docker:build:versioned": "bash scripts/docker-versioned-build.sh",
@@ -72,7 +72,9 @@
     "test:header-menu": "node scripts/header-menu-browser.mjs",
     "ci:browser-setup": "playwright install --with-deps chromium",
     "test:metrica-consent": "node scripts/analytics-three-modes-browser.mjs",
-    "test:font-loading": "node scripts/font-loading-browser.mjs"
+    "test:font-loading": "node scripts/font-loading-browser.mjs",
+    "test:robot-dogs-preview": "node scripts/robot-dogs-preview-rendered-smoke.mjs",
+    "test:robot-dogs-contracts": "tsx --test tests/content/robot-dogs-*.test.ts"
   },
   "dependencies": {
     "astro": "7.2.7",

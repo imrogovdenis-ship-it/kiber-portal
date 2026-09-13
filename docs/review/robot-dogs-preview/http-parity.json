@@ -1,0 +1,42 @@
+[
+  {
+    "path": "preview/robot-dogs/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "roboty-sobaki/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "articles/xiaomi-cyberdog-2-v-promo-akciyah/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "articles/roboty-unitree-obzor-kompanii/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "articles/unitree-go2-na-meropriyatii/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "articles/robot-dlya-nauchnogo-shou-i-shkoly/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "articles/sravnenie-robosobak-dlya-meropriyatiy/index.html",
+    "status": 200,
+    "byteParity": true
+  },
+  {
+    "path": "articles/robot-stendist-dlya-vystavki/index.html",
+    "status": 200,
+    "byteParity": true
+  }
+]

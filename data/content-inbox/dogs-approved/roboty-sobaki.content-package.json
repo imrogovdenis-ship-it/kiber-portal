@@ -1,0 +1,446 @@
+{
+  "contentPackageVersion": "1.0",
+  "pageType": "compilation",
+  "slug": "roboty-sobaki",
+  "sourceDocuments": [
+    {
+      "path": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/documents/doc_e8ed3f6152b0_Сборка Роботы-собаки.txt",
+      "status": "source_document_report_unverified"
+    },
+    {
+      "path": "/home/alex/.hermes/state/kiber-robot-dogs-content/text-workspace/TASK.md",
+      "status": "brief"
+    },
+    {
+      "path": "/home/alex/.hermes/state/kiber-robot-dogs-content/supervisor-rejected-first-draft.json",
+      "status": "rejection_brief"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/data/content-contracts/kiber-claude-page-block-contracts.json",
+      "status": "content_contract_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/docs/content-contracts/kiber-claude-page-block-contracts.md",
+      "status": "content_contract_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-portal/docs/cyber-gosha-style-guide.md",
+      "status": "style_guide_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-unitree-go2.json",
+      "status": "approved_site_snapshot_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/DOSSIER.md",
+      "status": "research_dossier_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/dossier.json",
+      "status": "research_dossier_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-xiaomi-cyberdog-2.json",
+      "status": "approved_site_snapshot_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-xiaomi-cyberdog-2/DOSSIER.md",
+      "status": "research_dossier_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-xiaomi-cyberdog-2/dossier.json",
+      "status": "research_dossier_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-inchbot-l1-w-edu.json",
+      "status": "approved_site_snapshot_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-inchbot-l1-w-edu/DOSSIER.md",
+      "status": "research_dossier_readonly"
+    },
+    {
+      "path": "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-inchbot-l1-w-edu/dossier.json",
+      "status": "research_dossier_readonly"
+    }
+  ],
+  "research": {
+    "inventory": {
+      "sourceDocumentsRead": [
+        "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/documents/doc_e8ed3f6152b0_Сборка Роботы-собаки.txt",
+        "/home/alex/.hermes/state/kiber-robot-dogs-content/text-workspace/TASK.md",
+        "/home/alex/.hermes/state/kiber-robot-dogs-content/supervisor-rejected-first-draft.json",
+        "/home/alex/projects/kiber-analytics-v4-production/data/content-contracts/kiber-claude-page-block-contracts.json",
+        "/home/alex/projects/kiber-analytics-v4-production/docs/content-contracts/kiber-claude-page-block-contracts.md",
+        "/home/alex/projects/kiber-portal/docs/cyber-gosha-style-guide.md",
+        "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-unitree-go2.json",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/DOSSIER.md",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-unitree-go2/dossier.json",
+        "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-xiaomi-cyberdog-2.json",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-xiaomi-cyberdog-2/DOSSIER.md",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-xiaomi-cyberdog-2/dossier.json",
+        "/home/alex/projects/kiber-analytics-v4-production/data/content/robot-card-pilot/arenda-inchbot-l1-w-edu.json",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-inchbot-l1-w-edu/DOSSIER.md",
+        "/home/alex/projects/kiber-catalog-research-library/docs/research/robot-catalog-library/models/arenda-inchbot-l1-w-edu/dossier.json"
+      ],
+      "modelDossiersRead": [
+        "arenda-unitree-go2",
+        "arenda-xiaomi-cyberdog-2",
+        "arenda-inchbot-l1-w-edu"
+      ],
+      "sourceCaptureStatus": "source-captures referenced by dossiers were read from the shared robot-catalog-library/source-captures directory where available",
+      "contractRead": true,
+      "styleGuideRead": true
+    },
+    "wordstatAnalysis": {
+      "status": "checked_live_topic_query",
+      "evidence": "/home/alex/.hermes/state/kiber-robot-dogs-content/wordstat-live/0.wordstat.json",
+      "query": "аренда робота собаки",
+      "total": 59,
+      "period": {
+        "from": "12.08.2026",
+        "to": "10.09.2026"
+      },
+      "region": "Все регионы",
+      "devices": "desktop, smartphone, tablet — all checked",
+      "noDetailedRows": false,
+      "interpretation": "Frequency belongs only to this measured query with displayed filters; proposed long-tail variants are not separately measured."
+    },
+    "serpAnalysis": {
+      "status": "partial_existing_snapshots",
+      "evidence": "Used saved dossiers and captured competitor/manufacturer sources; no fresh SERP collection was performed for this rewrite.",
+      "freshAttemptStatus": "Direct fresh SERP requests unusable; existing project snapshots reused and dated separately."
+    },
+    "contentGaps": [
+      "Visitors need a scenario-led choice among robot dogs, not a table of unverified speeds, temperatures, batteries and tricks.",
+      "The compilation should route generic class demand to /roboty-sobaki/ and then pass exact model decisions to existing robot cards.",
+      "Branding, educational content and repertoire require manager confirmation instead of automatic promises."
+    ],
+    "factualCorrections": [
+      "Go2 versions, voice/following/salto and maximum movement figures are not treated as rental facts.",
+      "CyberDog 2 branding is framed as a pre-event discussion, not guaranteed recoloring or panel replacement.",
+      "Inchbot L1-W EDU is described as a platform for a demonstration; EDU/SDK is not presented as a ready course."
+    ],
+    "competitiveRevisionV2": {
+      "slug": "roboty-sobaki",
+      "sourceIds": [
+        "C1",
+        "C7",
+        "C12",
+        "C13",
+        "C14"
+      ],
+      "strengths": "У конкурентов есть перечень применений, фотографии/видео, состав аренды и местами конкретный райдер.",
+      "observedGapsAndRisks": "Название робособаки не всегда раскрывает модель; цена за час и день не означает одинаковую услугу. В C12 карточка и FAQ называют разные ставки; в C7 география и минимальная длительность расходятся с остальной страницей.",
+      "editingDecision": "Сохранить понятный выбор трёх моделей; показать взаимодействие среди гостей, Go2 с А6 и строкой, различие батарей; добавить пояснение о составе сметы без заимствования чужих условий.",
+      "evidence": "competitive-v2/competitive-analysis.json",
+      "serpStatus": "partial; actual source pages reviewed, not seven fresh SERPs",
+      "ownerFacts": "Telegram owner corrections: equipment, battery handling, natural interaction, limited scenario repetition, approved paragraph"
+    }
+  },
+  "seo": {
+    "metaTitle": "Аренда робота-собаки для мероприятия | КИБЕР ПОРТАЛ",
+    "metaDescription": "Выберите робота-собаку для шоу, промо, выставки или образовательной демонстрации: Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU.",
+    "canonicalPath": "/roboty-sobaki/",
+    "primaryKeyword": "аренда робота-собаки",
+    "secondaryKeywords": [
+      "робот-собака на мероприятие",
+      "робот собака в аренду",
+      "прокат робособаки",
+      "робопёс для выставки"
+    ],
+    "longTailKeywords": [
+      "какую робот-собаку выбрать для мероприятия",
+      "робот-собака для промо-акции",
+      "робот-собака для образовательной демонстрации"
+    ],
+    "h1": "Аренда робота-собаки для мероприятий",
+    "breadcrumbs": [
+      {
+        "label": "Главная",
+        "href": "/"
+      },
+      {
+        "label": "Подборки",
+        "href": "/compilations"
+      },
+      {
+        "label": "Роботы-собаки",
+        "href": "/roboty-sobaki/"
+      }
+    ],
+    "requiredSchemaTypes": [
+      "CollectionPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "seoIntent": {
+    "pageIntent": "commercial_compilation_robot_dogs",
+    "primaryKeyword": "аренда робота-собаки",
+    "secondaryKeywords": [
+      "робот-собака на мероприятие",
+      "робот собака в аренду",
+      "прокат робособаки"
+    ],
+    "entitySynonyms": [
+      "робопёс",
+      "четвероногий робот",
+      "робот-собака"
+    ],
+    "aiAgentHints": [
+      "Generic robot-dog rental intent belongs to this compilation; exact model rental intent belongs to robot cards."
+    ]
+  },
+  "aiVisibility": {
+    "aiSummary": "Unitree Go2 — для общения с гостями и продолжительной промоработы, Xiaomi CyberDog 2 — для живоподобного образа, съёмок и коротких программ, Inchbot L1-W EDU — для научно-технических демонстраций. Сравниваем роли и режим работы роботов КИБЕР ПОРТАЛ."
+  },
+  "blocks": {
+    "hero": {
+      "eyebrow": "Подборка",
+      "h1": "Аренда робота-собаки для мероприятий",
+      "lead": "Робопёс среди гостей, мобильный промоутер у стенда или платформа для знакомства с робототехникой — выберите модель под своё мероприятие.",
+      "heroImage": {
+        "mediaId": "img_7912e5ab6826",
+        "role": "hero",
+        "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_7912e5ab6826.png",
+        "alt": "Роботы-собаки для мероприятий, промо и образовательных демонстраций",
+        "actualDescription": "На иллюстрации три робота-собаки показаны в разных условных сценах: у сцены, в промо-зоне и рядом с учебной аудиторией.",
+        "seoAlt": "Аренда робота-собаки для мероприятия: выбор робопса под шоу, промо или образовательную демонстрацию",
+        "caption": "Иллюстрация.",
+        "sourceStatus": "owner_provided",
+        "rightsStatus": "needs_rights_review"
+      }
+    },
+    "intro": {
+      "title": "Как выбрать робота-собаку под событие",
+      "paragraphs": [
+        "Робот-собака быстро собирает вокруг себя людей: кто-то присаживается рядом, кто-то протягивает руку для «дай лапу», гладит робопса или снимает видео. Для знакомства не нужны ни сцена, ни длинное представление ведущего. Аренда робота-собаки помогает оживить встречу гостей, привлечь внимание к стенду, развлечь детей или сделать технологию предметом живого разговора.",
+        "В подборке КИБЕР ПОРТАЛ три разных роли. Unitree Go2 подходит для продолжительной промоработы, встречи гостей, детских развлечений и фото. Xiaomi CyberDog 2 выбирают за сходство с настоящей собакой и технологичный образ — для съёмок, презентаций и коротких развлекательных программ. Inchbot L1-W EDU ближе к технической демонстрации: его интересно показывать там, где аудитории нужно объяснить конструкцию, управление и логику движения."
+      ]
+    },
+    "introGosha": {
+      "quote": "**Робопёс не обязан быть звездой всего вечера: иногда ему достаточно пройти три метра — и люди уже достают телефоны.**",
+      "text": "Если выбираете между общением с гостями, промоработой и технической демонстрацией, менеджер поможет найти подходящего робопса."
+    },
+    "gallery": {
+      "title": "Визуальный ориентир",
+      "lead": "Изображение помогает представить разные роли роботов-собак на событии.",
+      "images": [
+        {
+          "mediaId": "img_7912e5ab6826",
+          "role": "hero",
+          "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_7912e5ab6826.png",
+          "alt": "Роботы-собаки для мероприятий, промо и образовательных демонстраций",
+          "actualDescription": "На иллюстрации три робота-собаки показаны в разных условных сценах: у сцены, в промо-зоне и рядом с учебной аудиторией.",
+          "seoAlt": "Аренда робота-собаки для мероприятия: выбор робопса под шоу, промо или образовательную демонстрацию",
+          "caption": "Иллюстрация.",
+          "sourceStatus": "owner_provided",
+          "rightsStatus": "needs_rights_review"
+        }
+      ]
+    },
+    "choiceGuide": {
+      "title": "Быстрый выбор",
+      "lead": "Выбирайте не по ролику производителя, а по задаче площадки.",
+      "steps": [
+        {
+          "title": "Для общения и продолжительной промоработы",
+          "text": "Unitree Go2 — для промоработы у стенда, встречи гостей и развлечений. В КИБЕР ПОРТАЛ для него есть бегущая строка с рекламным текстом или схематичным логотипом и лоток для материалов А6. Робопёс подходит к гостям, присаживается или даёт лапу, приглашая взять раздатку. Сменные аккумуляторы позволяют продолжать программу после замены батареи."
+        },
+        {
+          "title": "Для живоподобного образа и съёмок",
+          "text": "Xiaomi CyberDog 2 — для эффектного появления, видеосъёмки, презентации или короткой программы с детьми. Его силуэт и движения напоминают настоящую собаку. Планируйте до часа работы: аккумулятор несменный, затем требуется около двух часов на зарядку. Интенсивность движений влияет на длительность показа."
+        },
+        {
+          "title": "Для научно-технического знакомства",
+          "text": "Inchbot L1-W EDU — для научно-технической демонстрации, инженерного стенда и кружка робототехники. Его колёсно-ногая конструкция даёт повод обсудить движение и управление. Это не основной выбор для промо и детского развлекательного шоу; задания, оборудование и работа специалиста согласуются отдельно."
+        },
+        {
+          "title": "Если мероприятие длится несколько часов",
+          "text": "Сопоставьте программу с режимом работы: Go2 работает примерно 1,5–2 часа на одном аккумуляторе и продолжает после его замены. У Inchbot L1-W EDU тоже сменный аккумулятор: после замены можно продолжать работу, как у Go2. Для CyberDog 2 нужен отдельный перерыв на зарядку. Короткие выходы могут быть частью сценария, но не единственным форматом работы робопса."
+        }
+      ]
+    },
+    "scenarioExplanation": {
+      "title": "Сценарии для робота-собаки",
+      "lead": "Одна и та же категория может работать по-разному — от шоу до спокойной демонстрации.",
+      "items": [
+        {
+          "title": "Встреча гостей и общение",
+          "text": "Робопёс ходит между людьми, останавливается рядом и даёт лапу. Гости гладят его, фотографируются и знакомятся друг с другом — без обязательного объявления со сцены. При желании его появление можно связать с открытием вечера."
+        },
+        {
+          "title": "Промо и раздатка",
+          "text": "Go2 с бегущей строкой показывает сообщение бренда и подвозит материалы А6. Гость берёт листовку из лотка, а представитель компании отвечает на возникший вопрос. Для CyberDog 2 подойдут знакомство с продуктом и съёмка в бренд-зоне."
+        },
+        {
+          "title": "Выставка",
+          "text": "У стенда полезен повторяемый цикл: движение привлекает проходящих людей, остановка даёт время рассмотреть робота, представитель компании приглашает к демонстрации продукта. Рабочая зона не должна перекрывать проход."
+        },
+        {
+          "title": "Школа и научное шоу",
+          "text": "Для общения и развлечения детей подойдут Go2 и CyberDog 2. Для кружка робототехники и инженерной демонстрации — Inchbot L1-W EDU: здесь интерес вызывает уже не только поведение робота, но и устройство платформы."
+        }
+      ]
+    },
+    "goshaConclusion": {
+      "quote": "**Если робот нужен только “чтобы было вау”, я бы всё равно спросил: где он повернётся и кто его встретит?**",
+      "text": "Подготовка сценария нужна даже для свободного общения: заранее определите задачу, время работы и особенности площадки. Менеджер поможет учесть это без превращения встречи с робопсом в постановочный спектакль."
+    },
+    "faq": {
+      "title": "Вопросы про аренду робота-собаки",
+      "items": [
+        {
+          "question": "Сколько стоит аренда робота-собаки?",
+          "answer": "Цена по запросу. На расчёт влияют модель, дата, город, длительность, число выходов, подготовка программы, логистика и сопровождение. Менеджер уточнит вводные и предложит формат, который соответствует площадке и задаче события. При сравнении предложений уточните, за какое время указана сумма и включены ли доставка, сопровождение и дополнительное оснащение. Час присутствия на площадке и отдельный короткий выход — не одно и то же."
+        },
+        {
+          "question": "Можно ли использовать робопса среди детей?",
+          "answer": "Да. Go2 и CyberDog 2 могут знакомиться с детьми и развлекать их движениями. Возраст гостей и формат общения учитывают при подготовке; для трюков нужна отдельная свободная зона. Для научно-технического разбора лучше рассмотреть Inchbot L1-W EDU."
+        },
+        {
+          "question": "CyberDog 2 можно брендировать под компанию?",
+          "answer": "Визуальную интеграцию обсуждают заранее: что можно разместить, какие макеты нужны, как это влияет на сроки и внешний вид. Допустимые изменения корпуса и сроки подготовки зависят от выбранного комплекта."
+        },
+        {
+          "question": "Inchbot L1-W EDU подходит для урока?",
+          "answer": "Он подходит для технической или образовательной демонстрации, если заранее согласовать программу. Само обозначение EDU не означает, что в услугу входит курс, преподаватель или полный набор модулей."
+        },
+        {
+          "question": "Какую модель выбрать для выставки?",
+          "answer": "Для продолжительной промоработы у стенда рассмотрите Unitree Go2 с бегущей строкой и лотком А6. Для эффектного появления или съёмки — Xiaomi CyberDog 2 с учётом перерыва на зарядку. Для инженерной экспозиции — Inchbot L1-W EDU с техническим объяснением."
+        },
+        {
+          "question": "Что отправить менеджеру для подбора робопса?",
+          "answer": "Дату, город, формат события, возраст гостей и желаемую роль робота. Фото или план площадки помогут обсудить маршрут, покрытие и место для фото. Для школы добавьте тему занятия, для стенда — продукт и ожидаемый поток, для сцены — программу и участие ведущего."
+        }
+      ]
+    },
+    "cta2": {
+      "title": "Остались вопросы?",
+      "description": "Опишите событие, площадку и желаемую роль робота-собаки — менеджер подберёт модель и формат показа.",
+      "buttons": [
+        {
+          "label": "Оставить заявку",
+          "href": "/lead/request/",
+          "status": "existing"
+        }
+      ]
+    },
+    "catalogBlock": {
+      "eyebrow": "Каталог роботов",
+      "title": "Роботы-собаки",
+      "description": "Модели для шоу, промо, выставок и образовательных демонстраций.",
+      "robotSlugs": [
+        "arenda-unitree-go2",
+        "arenda-xiaomi-cyberdog-2",
+        "arenda-inchbot-l1-w-edu"
+      ]
+    },
+    "relatedArticles": {
+      "title": "Блог Кибер Гоши",
+      "lead": "Сценарии и сравнения, которые помогают выбрать робопса без спешки.",
+      "cards": [
+        {
+          "title": "Unitree Go2 на мероприятии",
+          "href": "/articles/unitree-go2-na-meropriyatii/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Xiaomi CyberDog 2 в промо-акциях",
+          "href": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Сравнение робо-собак для мероприятий",
+          "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+          "status": "planned_in_this_batch"
+        }
+      ]
+    },
+    "otherCompilations": {
+      "title": "Другие подборки",
+      "description": "Если нужен не робопёс, а другой класс роботов для события.",
+      "cards": [
+        {
+          "title": "Роботы-гуманоиды",
+          "href": "/roboty-gumanoidy/",
+          "status": "existing"
+        },
+        {
+          "title": "Роботы на мероприятие",
+          "href": "/arenda-robotov-na-meropriyatie/",
+          "status": "existing"
+        }
+      ]
+    }
+  },
+  "media": [
+    {
+      "mediaId": "img_7912e5ab6826",
+      "role": "hero",
+      "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_7912e5ab6826.png",
+      "alt": "Роботы-собаки для мероприятий, промо и образовательных демонстраций",
+      "actualDescription": "На иллюстрации три робота-собаки показаны в разных условных сценах: у сцены, в промо-зоне и рядом с учебной аудиторией.",
+      "seoAlt": "Аренда робота-собаки для мероприятия: выбор робопса под шоу, промо или образовательную демонстрацию",
+      "caption": "Иллюстрация.",
+      "sourceStatus": "owner_provided",
+      "rightsStatus": "needs_rights_review"
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/robots/arenda-unitree-go2/",
+      "anchor": "Unitree Go2",
+      "reason": "exact model card for dynamic robot-dog scenarios",
+      "status": "existing"
+    },
+    {
+      "href": "/robots/arenda-xiaomi-cyberdog-2/",
+      "anchor": "Xiaomi CyberDog 2",
+      "reason": "exact model card for promo robot-dog scenarios",
+      "status": "existing"
+    },
+    {
+      "href": "/robots/arenda-inchbot-l1-w-edu/",
+      "anchor": "Inchbot L1-W EDU",
+      "reason": "exact model card for educational/technical demonstrations",
+      "status": "existing"
+    },
+    {
+      "href": "/articles/unitree-go2-na-meropriyatii/",
+      "anchor": "Unitree Go2 на мероприятии",
+      "reason": "planned scenario article from this batch",
+      "status": "planned"
+    },
+    {
+      "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+      "anchor": "сравнение робо-собак",
+      "reason": "planned comparison article from this batch",
+      "status": "planned"
+    }
+  ],
+  "schema": {
+    "types": [
+      "CollectionPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  "review": {
+    "status": "draft_for_owner_review",
+    "ownerReviewRequired": true,
+    "wordstatStatus": "needs_wordstat_verification",
+    "serpStatus": "partial",
+    "openQuestions": [
+      "Подтвердить публичные тарифы, состав услуги и доступный репертуар по каждой модели."
+    ],
+    "notes": [
+      "Public prose rewritten from scratch for the assigned file only.",
+      "DOCX reports were treated as unverified source documents; numeric/spec capability claims were not carried into public copy."
+    ],
+    "productionAllowed": false,
+    "competitorAnalysisStatus": "completed_for_inspected_source_scope"
+  }
+}
