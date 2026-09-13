@@ -35,6 +35,7 @@ test('exhibition stand package keeps approved model set and excludes unrelated d
     'arenda-unitree-g1',
     'arenda-promobot-v4',
     'arenda-unitree-go2',
+    'arenda-agibot-x2', // Owner: fourth related model; the three narrative roles stay unchanged.
   ]);
   const renderedText = JSON.stringify(article);
   assert.doesNotMatch(renderedText, /Xiaomi|CyberDog|Inchbot/i);

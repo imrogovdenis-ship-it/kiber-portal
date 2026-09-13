@@ -224,24 +224,61 @@
       "text": "Если выбираете между общением с гостями, промоработой и технической демонстрацией, менеджер поможет найти подходящего робопса."
     },
     "gallery": {
-      "title": "Визуальный ориентир",
-      "lead": "Изображение помогает представить разные роли роботов-собак на событии.",
+      "title": "Фотографии робособак",
+      "lead": "Реальные кадры из галерей Unitree Go2, Xiaomi CyberDog 2 и Inchbot L1-W EDU: общение с людьми, промо и движение платформы.",
       "images": [
         {
-          "mediaId": "img_7912e5ab6826",
-          "role": "hero",
-          "src": "/home/alex/.hermes/state/kiber-robot-dogs-content/intake-originals/images/img_7912e5ab6826.png",
-          "alt": "Роботы-собаки для мероприятий, промо и образовательных демонстраций",
-          "actualDescription": "На иллюстрации три робота-собаки показаны в разных условных сценах: у сцены, в промо-зоне и рядом с учебной аудиторией.",
-          "seoAlt": "Аренда робота-собаки для мероприятия: выбор робопса под шоу, промо или образовательную демонстрацию",
-          "caption": "Иллюстрация.",
-          "sourceStatus": "owner_provided",
-          "rightsStatus": "needs_rights_review"
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-6261-4733-b832-343462316432__4.webp",
+          "alt": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
+          "actualDescription": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
+          "sourceMediaId": "arenda-unitree-go2__11",
+          "sourceRegistry": "data/review/media-rights-robot-cards.json",
+          "sourceRobot": "arenda-unitree-go2"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3034-3431-4664-b364-613830393864__1.webp",
+          "alt": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
+          "actualDescription": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
+          "sourceMediaId": "arenda-unitree-go2__13",
+          "sourceRegistry": "data/review/media-rights-robot-cards.json",
+          "sourceRobot": "arenda-unitree-go2"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild6138-6135-4862-a132-626663393638__07.webp",
+          "alt": "Вид сбоку: робособака Xiaomi CyberDog 2 и ребёнок в светлой рубашке и светлой кепке. Робособака тянет лапу, словно здоровается, ребёнок тянет руку в ответ и берёт собаку за лапу.",
+          "actualDescription": "Вид сбоку: робособака Xiaomi CyberDog 2 и ребёнок в светлой рубашке и светлой кепке. Робособака тянет лапу, словно здоровается, ребёнок тянет руку в ответ и берёт собаку за лапу.",
+          "sourceMediaId": "arenda-xiaomi-cyberdog-2__12",
+          "sourceRegistry": "data/review/media-rights-robot-cards.json",
+          "sourceRobot": "arenda-xiaomi-cyberdog-2"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3834-3231-4836-b737-366637613031__08.webp",
+          "alt": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
+          "actualDescription": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
+          "sourceMediaId": "arenda-xiaomi-cyberdog-2__11",
+          "sourceRegistry": "data/review/media-rights-robot-cards.json",
+          "sourceRobot": "arenda-xiaomi-cyberdog-2"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__05-tild3165-6138-4635-b538-623931653530__noroot.webp",
+          "alt": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
+          "actualDescription": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
+          "sourceMediaId": "arenda-inchbot-l1-w-edu__11",
+          "sourceRegistry": "data/review/media-rights-robot-cards.json",
+          "sourceRobot": "arenda-inchbot-l1-w-edu"
+        },
+        {
+          "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__04-tild6164-3661-4835-b039-303964323837__noroot.webp",
+          "alt": "Inchbot L1-W EDU едет между кустарниками по земле, вид спереди, демонстрация проходимости.",
+          "actualDescription": "Inchbot L1-W EDU едет между кустарниками по земле, вид спереди, демонстрация проходимости.",
+          "sourceMediaId": "arenda-inchbot-l1-w-edu__10",
+          "sourceRegistry": "data/review/media-rights-robot-cards.json",
+          "sourceRobot": "arenda-inchbot-l1-w-edu"
         }
       ]
     },
     "choiceGuide": {
-      "title": "Быстрый выбор",
+      "title": "Робособаки для разных задач",
       "lead": "Выбирайте не по ролику производителя, а по задаче площадки.",
       "steps": [
         {
@@ -268,19 +305,51 @@
       "items": [
         {
           "title": "Встреча гостей и общение",
-          "text": "Робопёс ходит между людьми, останавливается рядом и даёт лапу. Гости гладят его, фотографируются и знакомятся друг с другом — без обязательного объявления со сцены. При желании его появление можно связать с открытием вечера."
+          "text": "Робопёс ходит между людьми, останавливается рядом и даёт лапу. Гости гладят его, фотографируются и знакомятся друг с другом — без обязательного объявления со сцены. При желании его появление можно связать с открытием вечера.",
+          "image": {
+            "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-6261-4733-b832-343462316432__4.webp",
+            "alt": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
+            "actualDescription": "Unitree Go2 находится в декоративной фотозоне с дымом и шторой. Рядом стоят мужчина и женщина в белой одежде; женщина наклоняется и гладит робота по голове.",
+            "sourceMediaId": "arenda-unitree-go2__11",
+            "sourceRegistry": "data/review/media-rights-robot-cards.json",
+            "sourceRobot": "arenda-unitree-go2"
+          }
         },
         {
           "title": "Промо и раздатка",
-          "text": "Go2 с бегущей строкой показывает сообщение бренда и подвозит материалы А6. Гость берёт листовку из лотка, а представитель компании отвечает на возникший вопрос. Для CyberDog 2 подойдут знакомство с продуктом и съёмка в бренд-зоне."
+          "text": "Go2 с бегущей строкой показывает сообщение бренда и подвозит материалы А6. Гость берёт листовку из лотка, а представитель компании отвечает на возникший вопрос. Для CyberDog 2 подойдут знакомство с продуктом и съёмка в бренд-зоне.",
+          "image": {
+            "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3034-3431-4664-b364-613830393864__1.webp",
+            "alt": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
+            "actualDescription": "Unitree Go2 стоит на красной дорожке фестиваля ИГРАПРОМ перед бренд-воллом. На корпусе робота закреплена LED-панель с бегущей рекламной строкой.",
+            "sourceMediaId": "arenda-unitree-go2__13",
+            "sourceRegistry": "data/review/media-rights-robot-cards.json",
+            "sourceRobot": "arenda-unitree-go2"
+          }
         },
         {
           "title": "Выставка",
-          "text": "У стенда полезен повторяемый цикл: движение привлекает проходящих людей, остановка даёт время рассмотреть робота, представитель компании приглашает к демонстрации продукта. Рабочая зона не должна перекрывать проход."
+          "text": "У стенда полезен повторяемый цикл: движение привлекает проходящих людей, остановка даёт время рассмотреть робота, представитель компании приглашает к демонстрации продукта. Рабочая зона не должна перекрывать проход.",
+          "image": {
+            "src": "/images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3834-3231-4836-b737-366637613031__08.webp",
+            "alt": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
+            "actualDescription": "Xiaomi CyberDog 2 позирует перед зрителями на выставке в положении сидя: передняя часть тела поднята, передние лапы подняты. Вид сбоку, на заднем фоне много людей снимают его на видео, один человек показывает пальцем на робособаку.",
+            "sourceMediaId": "arenda-xiaomi-cyberdog-2__11",
+            "sourceRegistry": "data/review/media-rights-robot-cards.json",
+            "sourceRobot": "arenda-xiaomi-cyberdog-2"
+          }
         },
         {
           "title": "Школа и научное шоу",
-          "text": "Для общения и развлечения детей подойдут Go2 и CyberDog 2. Для кружка робототехники и инженерной демонстрации — Inchbot L1-W EDU: здесь интерес вызывает уже не только поведение робота, но и устройство платформы."
+          "text": "Для общения и развлечения детей подойдут Go2 и CyberDog 2. Для кружка робототехники и инженерной демонстрации — Inchbot L1-W EDU: здесь интерес вызывает уже не только поведение робота, но и устройство платформы.",
+          "image": {
+            "src": "/images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__05-tild3165-6138-4635-b538-623931653530__noroot.webp",
+            "alt": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
+            "actualDescription": "Inchbot L1-W EDU на мероприятии на колёсной базе едет между столов, вид сбоку.",
+            "sourceMediaId": "arenda-inchbot-l1-w-edu__11",
+            "sourceRegistry": "data/review/media-rights-robot-cards.json",
+            "sourceRobot": "arenda-inchbot-l1-w-edu"
+          }
         }
       ]
     },
@@ -343,18 +412,33 @@
       "lead": "Сценарии и сравнения, которые помогают выбрать робопса без спешки.",
       "cards": [
         {
-          "title": "Unitree Go2 на мероприятии",
+          "title": "Unitree Go2 на мероприятии: как встроить робопса в программу",
           "href": "/articles/unitree-go2-na-meropriyatii/",
           "status": "planned_in_this_batch"
         },
         {
-          "title": "Xiaomi CyberDog 2 в промо-акциях",
+          "title": "Xiaomi CyberDog 2 в промо-акциях: как связать показ с брендом",
           "href": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
           "status": "planned_in_this_batch"
         },
         {
-          "title": "Сравнение робо-собак для мероприятий",
+          "title": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot",
           "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Робот для научного шоу и школы: как увлечь детей робототехникой",
+          "href": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Робот-стендист для выставки: как выбрать роль у стенда",
+          "href": "/articles/robot-stendist-dlya-vystavki/",
+          "status": "planned_in_this_batch"
+        },
+        {
+          "title": "Роботы Unitree: обзор компании, робопсов и гуманоидов",
+          "href": "/articles/roboty-unitree-obzor-kompanii/",
           "status": "planned_in_this_batch"
         }
       ]

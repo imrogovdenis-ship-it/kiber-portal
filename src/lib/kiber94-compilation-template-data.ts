@@ -44,6 +44,7 @@ export type CompilationPageTemplateData = {
   gallery: { title: string; lead: string; images: { src: string; alt: string }[] };
   video: { enabled?: boolean; videoId?: string; title: string; lead: string; embedHint: string };
   scenarios: {
+    presentation?: 'photo-gallery';
     title: string;
     lead: string;
     items: { title: string; text: string; image: { src: string; alt: string } }[];

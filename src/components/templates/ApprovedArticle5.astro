@@ -111,6 +111,29 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
     ) : null
   ))}
 
+  {isPackageArticle && content?.gallery && (
+  <section id="robotCardGallery" class="humanoid-template__gallery article-blocks__gallery" data-block-id="robotCardGallery" aria-labelledby="article-gallery-title">
+    <div class="container humanoid-template__gallery-head article-blocks__gallery-head">
+      <div class="humanoid-template__section-head article-blocks__section-head">
+        <p class="humanoid-template__eyebrow article-blocks__eyebrow">{content?.gallery?.eyebrow ?? 'Галерея'}</p>
+        <h2 id="article-gallery-title">{content?.gallery?.title ?? 'Галерея для статьи: показать робота до длинного текста'}</h2>
+        <span>{content?.gallery?.description ?? 'Блок целиком взят со страницы «Подборка / роботы-гуманоиды»: здесь меняются только фотографии под конкретную статью.'}</span>
+      </div>
+      <div class="humanoid-template__gallery-nav" aria-label="Навигация по галерее статьи">
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev={`[data-drag-slider='${gallerySliderId}']`} aria-label="Предыдущие фото галереи">‹</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next={`[data-drag-slider='${gallerySliderId}']`} aria-label="Следующие фото галереи">›</button>
+      </div>
+    </div>
+    <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Фотографии роботов: горизонтальный слайдер">
+      {articleGalleryImages.map((image, index) => (
+        <figure class="humanoid-template__gallery-item">
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
+        </figure>
+      ))}
+    </div>
+  </section>
+  )}
+
   {!content?.orderedPackageBlocks && (<>
 
   <section id="plainText" class="article-blocks__plain-text container" data-block-id="plainText" aria-labelledby="plain-text-title">

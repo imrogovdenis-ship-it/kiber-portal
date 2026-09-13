@@ -12,7 +12,9 @@ import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-
 
 const { template } = Astro.props as { template: CompilationPageTemplateData };
 const overviewVideo = videoRegistry.videos.find(v => v.videoId === template.video.videoId);
-const scenarioVideos = (template.scenarioVideoIds ?? []).map(id => videoRegistry.videos.find(v => v.videoId === id)).filter(Boolean);
+const scenarioVideos = template.scenarios.presentation === 'photo-gallery'
+  ? []
+  : (template.scenarioVideoIds ?? []).map(id => videoRegistry.videos.find(v => v.videoId === id)).filter(Boolean);
 const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, href: reviewRobotPreviewHref(robot.slug, robot.href) }));
 ---
 
@@ -51,8 +53,8 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
         <span>{template.gallery.lead}</span>
       </div>
       <div class="humanoid-template__gallery-nav" aria-label="Навигация по галерее">
-        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev="[data-drag-slider='robot-humanoid-compilation-gallery']" aria-label="Предыдущие фотографии гуманоидов">‹</button>
-        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next="[data-drag-slider='robot-humanoid-compilation-gallery']" aria-label="Следующие фотографии гуманоидов">›</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-prev="[data-drag-slider='robot-humanoid-compilation-gallery']" aria-label="Предыдущие фотографии роботов">‹</button>
+        <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next="[data-drag-slider='robot-humanoid-compilation-gallery']" aria-label="Следующие фотографии роботов">›</button>
       </div>
     </div>
     <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider="robot-humanoid-compilation-gallery" aria-label="Фотографии гуманоидных роботов: горизонтальный слайдер как на карточке робота">
@@ -110,15 +112,15 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
         <button class="humanoid-template__gallery-nav-button" type="button" data-slider-next="[data-drag-slider='robot-humanoid-scenarios-slider']" aria-label="Следующий сценарий">›</button>
       </div>
     </div>
-    <div class="humanoid-template__scenario-strip humanoid-template__drag-gallery" data-drag-slider="robot-humanoid-scenarios-slider" aria-label="Сценарии аренды робота-гуманоида: горизонтальный слайдер">
+    <div class="humanoid-template__scenario-strip humanoid-template__drag-gallery" data-drag-slider="robot-humanoid-scenarios-slider" aria-label="Сценарии участия роботов: горизонтальный слайдер">
       {scenarioVideos.length > 0 ? scenarioVideos.map(video => video && (
         <article class="humanoid-template__scenario-card">
           <KinescopeVideo {...video} aspectRatio="9 / 16" clickToLoad={false} playLink={undefined} />
           <div class="humanoid-template__scenario-caption"><h3>{video.title}</h3><p>{video.description}</p></div>
         </article>
       )) : template.scenarios.items.map((item) => (
-        <article class="humanoid-template__scenario-card">
-          <div class="humanoid-template__scenario-video" role="img" aria-label={item.image.alt}>
+        <article class:list={["humanoid-template__scenario-card", template.scenarios.presentation === "photo-gallery" && "humanoid-template__scenario-photo-card"]}>
+          <div class:list={["humanoid-template__scenario-video", template.scenarios.presentation === "photo-gallery" && "humanoid-template__scenario-photo"]}>
             <img src={item.image.src} alt={item.image.alt} loading="lazy" decoding="async" />
           </div>
           <div class="humanoid-template__scenario-caption"><h3>{item.title}</h3><p>{item.text}</p></div>
@@ -166,6 +168,11 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
 <script is:inline src="/scripts/robot-card-gallery.js?v=mobile-shared-1" defer></script>
 
 <style>
+  .humanoid-template__scenario-card.humanoid-template__scenario-photo-card { flex: 0 0 auto; width: auto; }
+  .humanoid-template__scenario-card .humanoid-template__scenario-photo { aspect-ratio: auto; height: clamp(29.12rem, 47.6vw, 35.49rem); width: auto; overflow: hidden; border-radius: 1.35rem; }
+  .humanoid-template__scenario-card .humanoid-template__scenario-photo img { display: block; width: auto; height: 100%; max-width: min(52rem, 88vw); object-fit: contain; }
+  .humanoid-template__scenario-photo-card .humanoid-template__scenario-caption { width: 0; min-width: 100%; }
+
   /* Owner feedback: only this compilation Hero and three lower-block wrappers. */
   .humanoid-template > [data-block-id="catalogBlock"],
   .humanoid-template > [data-block-id="relatedArticles"],

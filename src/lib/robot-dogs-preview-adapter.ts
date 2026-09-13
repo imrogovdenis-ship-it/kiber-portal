@@ -1,4 +1,5 @@
-import { homeGosha, homeRobotCardFinalCta, type HomeCardsBlock } from '../data/home-live';
+import approvedArticles from '../../data/content/launch-articles.json';
+import { homeGosha, homeCompilations, homeRobotCardFinalCta, type HomeCardsBlock } from '../data/home-live';
 import type { ArticleBlocksTemplateData, ArticleRobotCard } from './approved-article-5-types';
 import type { CompilationPageTemplateData, CompilationRobotCard } from './kiber94-compilation-template-data';
 import { getRobotPageBySlug } from './robot-pages';
@@ -43,6 +44,7 @@ function breadcrumbs(pkg: ApprovedPackage) {
 }
 
 function runtimeImage(pkg: ApprovedPackage, image?: PackageBlock) {
+  if (image?.src?.startsWith('/images/kiber-94-preview/')) return {src: image.src, alt: image.alt, actualDescription: image.actualDescription, seoAlt: image.seoAlt};
   const mediaId = image?.mediaId ?? pkg.media[0]?.mediaId;
   const media = pkg.media.find((item) => item.mediaId === mediaId) ?? pkg.media[0];
   const provenance = provenanceItems.find((item) => item.slug === pkg.slug && item.mediaId === media?.mediaId);
@@ -104,13 +106,14 @@ function normalizeHref(href: string) {
 function textCard(card: PackageCard) {
   const slug = card.href.split('/').filter(Boolean).pop();
   const relatedPackage = [...articlePackages, compilationPackage].find((pkg) => pkg.slug === slug || pkg.seo.canonicalPath === card.href);
+  const existingArticle = approvedArticles.find((item) => item.canonicalHref === card.href);
   return {
     title: card.title,
-    description: card.description ?? relatedPackage?.seo.metaDescription ?? 'Материал КИБЕР ПОРТАЛ по выбору робота для мероприятия.',
+    description: card.description ?? relatedPackage?.seo.metaDescription ?? existingArticle?.description ?? 'Материал КИБЕР ПОРТАЛ по выбору робота для мероприятия.',
     href: normalizeHref(card.href),
     originalHref: card.href,
     cta: 'Читать',
-    image: relatedPackage ? runtimeImage(relatedPackage, relatedPackage.blocks.hero?.heroImage) : fallbackImage,
+    image: relatedPackage ? runtimeImage(relatedPackage, relatedPackage.blocks.hero?.heroImage) : existingArticle?.image ?? fallbackImage,
   };
 }
 
@@ -125,6 +128,16 @@ function relatedCards(block: PackageBlock | undefined, fallbackTitle: string, ow
     description: block?.description ?? block?.lead ?? 'Подборка внутренних материалов по теме.',
     cards,
   };
+}
+
+function compilationCards(block: PackageBlock): HomeCardsBlock {
+  const cards = (block.cardOrder as number[]).map((index) => {
+    const card = homeCompilations.cards[index];
+    if (!card) throw new Error(`Unknown homepage compilation card: ${index}`);
+    const ready = index === 0 || index === 2 || index === 4;
+    return { ...card, originalHref: undefined, href: ready ? card.href : '', disabled: !ready, cta: ready ? card.cta : 'Скоро' };
+  });
+  return {title: block.title, description: block.description ?? '', cards};
 }
 
 function plainTextBlock(id: string, block: PackageBlock) {
@@ -167,11 +180,12 @@ export function buildRobotDogsPreviewArticle(pkg: ApprovedPackage): ArticleBlock
     gosha: packageGosha(pkg.blocks.goshaQuote),
     finalCta: cta(pkg.blocks.cta2),
     relatedArticles: relatedCards(pkg.blocks.relatedArticles, 'Блог Кибер Гоши', pkg.slug),
-    relatedCompilations: relatedCards(pkg.blocks.relatedCompilations, 'Подборки', pkg.slug),
+    relatedCompilations: compilationCards(pkg.blocks.relatedCompilations),
     robots: robotCards(catalog?.robotSlugs ?? [], 'article') as ArticleRobotCard[],
     faq: { title: pkg.blocks.faq?.title ?? 'Вопросы и ответы', items: pkg.blocks.faq?.items ?? [] },
     articleContent: {
       showInventory: false,
+      gallery: pkg.blocks.gallery ? { title: pkg.blocks.gallery.title, description: pkg.blocks.gallery.description, images: pkg.blocks.gallery.images.map((image: PackageBlock) => runtimeImage(pkg, image)) } : undefined,
       seoIntro: { eyebrow: seoIntro?.eyebrow ?? 'Коротко о главном', title: seoIntro?.title, paragraphs: seoIntro?.paragraphs ?? [] },
       mediaMoment: pkg.blocks.mediaMoment ? { eyebrow: pkg.blocks.mediaMoment.eyebrow, title: pkg.blocks.mediaMoment.title, description: pkg.blocks.mediaMoment.lead, image: runtimeImage(pkg, pkg.blocks.mediaMoment.image), caption: pkg.blocks.mediaMoment.caption } : undefined,
       checklist: pkg.blocks.checkpointList ? { eyebrow: pkg.blocks.checkpointList.eyebrow, title: pkg.blocks.checkpointList.title, description: '', items: pkg.blocks.checkpointList.items ?? [] } : undefined,
@@ -204,7 +218,7 @@ export function getRobotDogsPreviewCompilation(): CompilationPageTemplateData {
     gallery: { title: blocks.gallery?.title, lead: blocks.gallery?.lead, images: (blocks.gallery?.images ?? [hero?.heroImage]).filter(Boolean).map((image: PackageBlock) => runtimeImage(pkg, image)) },
     guide: { title: blocks.choiceGuide?.title, lead: blocks.choiceGuide?.lead, steps: blocks.choiceGuide?.steps ?? [] },
     video: { enabled: false, title: 'Видео не используется в этом preview', lead: 'Kinescope и существующие видео остаются без изменений.', embedHint: 'Видео отключено для пакета роботов-собак' },
-    scenarios: { title: blocks.scenarioExplanation?.title, lead: blocks.scenarioExplanation?.lead, items: (blocks.scenarioExplanation?.items ?? []).map((item: PackageBlock, index: number) => ({ title: item.title, text: item.text, image: runtimeImage(pkg, blocks.gallery?.images?.[index] ?? hero?.heroImage) })) },
+    scenarios: { presentation: 'photo-gallery', title: blocks.scenarioExplanation?.title, lead: blocks.scenarioExplanation?.lead, items: (blocks.scenarioExplanation?.items ?? []).map((item: PackageBlock, index: number) => ({ title: item.title, text: item.text, image: runtimeImage(pkg, item.image ?? blocks.gallery?.images?.[index] ?? hero?.heroImage) })) },
     catalog: { eyebrow: blocks.catalogBlock?.eyebrow, title: blocks.catalogBlock?.title, lead: blocks.catalogBlock?.description, robots: robotCards(blocks.catalogBlock?.robotSlugs ?? [], 'collection') as CompilationRobotCard[] },
     relatedArticles: { title: blocks.relatedArticles?.title, lead: blocks.relatedArticles?.lead ?? blocks.relatedArticles?.description, cards: (blocks.relatedArticles?.cards ?? []).map(textCard) },
     faq: { title: blocks.faq?.title, items: blocks.faq?.items ?? [] },

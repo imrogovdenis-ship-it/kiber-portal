@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "security_concerns": [],
+  "logic_errors": [],
+  "suggestions": [
+    "In CompilationTemplate.astro the gallery strip aria-label still says \"Фотографии гуманоидных роботов\" even though the visible button labels were generalized to \"роботов\"; this is minor copy/accessibility consistency, not a blocking regression.",
+    "In buildRobotDogsPreviewArticle, articleContent.gallery does not pass through gallery.eyebrow, so package article galleries always use the template default \"Галерея\" even if content later provides a custom eyebrow; harmless unless owner expects per-article gallery eyebrow text.",
+    "compilationCards assumes relatedCompilations.cardOrder is always present on the six new packages. That matches the reviewed package-driven scope, but a defensive fallback or explicit error message would make future content mistakes easier to diagnose."
+  ],
+  "summary": "Fresh re-review passes for the provided diff and complete template context. No new security or logic regressions found. The previous runtime type/syntax issue is absent, photo-gallery explicitly suppresses scenarioVideos, the article package gallery is gated to package articles, old non-package article rendering remains behind the existing fallback branch, and the adapter-related block now supports the intended homepage-style compilation cards while leaving the pre-existing launchCompilations bottom block unchanged."
+}
