@@ -355,3 +355,20 @@ const previewTemplate = isRobotDogsPreview ? (await import('../lib/robot-dogs-pr
     }
   }
 </style>
+
+<!-- Natural-ratio photos: scoped to this preview gallery, never scenario cards. -->
+<style is:global>
+  #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__gallery-item {
+    flex: 0 0 auto;
+    width: fit-content;
+    height: min(var(--humanoid-gallery-height), 85vw);
+    aspect-ratio: auto;
+    background: transparent;
+  }
+  #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__gallery-item img {
+    width: auto;
+    height: 100%;
+    max-width: none;
+    object-fit: contain;
+  }
+</style>
