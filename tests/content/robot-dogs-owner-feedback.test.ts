@@ -54,5 +54,5 @@ test('dog scenarios opt into photo-gallery presentation without changing video c
 
 test('scenario photos reserve real intrinsic dimensions before lazy loading', () => {
  const c = getRobotDogsPreviewCompilation();
- for (const s of c.scenarios.items) { assert.ok(s.image.width > 0); assert.ok(s.image.height > 0); }
+ for (const s of c.scenarios.items) { assert.ok((s.image.width ?? 0) > 0); assert.ok((s.image.height ?? 0) > 0); }
 });
