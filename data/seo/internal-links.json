@@ -82,15 +82,16 @@
       "rendering": "approved_component"
     },
     {
-      "id": "approved-dogs-to-contacts",
+      "id": "approved-dogs-to-request",
       "status": "approved",
       "publicRender": true,
       "sourceRoute": "/roboty-sobaki/",
-      "targetRoute": "/contacts/",
-      "href": "/contacts/",
-      "anchor": "обсудить робота-собаку для события",
+      "targetRoute": "/lead/request/",
+      "href": "/lead/request/",
+      "anchor": "Обсудить аренду робота-собаки",
       "intent": "conversion-cta",
-      "reason": "До расширения каталога роботов-собак категория ведёт к безопасной контактной странице."
+      "reason": "Утверждённая полноценная подборка использует общий CTA заявки вместо ссылки прежней заглушки.",
+      "rendering": "approved_component"
     },
     {
       "id": "approved-scenarios-to-unitree-g1-card",
@@ -137,6 +138,18 @@
       "anchor": "посмотреть Unitree G1",
       "intent": "proof-content",
       "reason": "Контакты дают обратный путь к проверенной коммерческой карточке."
+    },
+    {
+      "id": "approved-home-to-dogs",
+      "status": "approved",
+      "publicRender": true,
+      "sourceRoute": "/",
+      "targetRoute": "/roboty-sobaki/",
+      "href": "/roboty-sobaki/",
+      "anchor": "Роботы-собаки вместо цветов",
+      "intent": "category-discovery",
+      "reason": "Публикация принятой подборки робособак одобрена владельцем; включена существующая каноническая карточка главной.",
+      "rendering": "approved_component"
     }
   ],
   "disabledLinks": [
