@@ -1,4 +1,5 @@
 ---
+import humanoidsOwner from '../../../data/content/humanoids-owner-composition.json';
 import EditorialHero from '../blocks/EditorialHero.astro';
 import { reviewRobotPreviewHref } from '../../lib/review-links';
 import KinescopeVideo from '../blocks/KinescopeVideo.astro';
@@ -11,7 +12,8 @@ import RobotCard from '../blocks/RobotCard.astro';
 import { launchCompilations } from '../../lib/launch-navigation';
 import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-template-data';
 
-const { template, dogsOwnerComposition = false } = Astro.props as { template: CompilationPageTemplateData; dogsOwnerComposition?: boolean };
+const { template, dogsOwnerComposition = false, humanoidsOwnerComposition = false } = Astro.props as { template: CompilationPageTemplateData; dogsOwnerComposition?: boolean; humanoidsOwnerComposition?: boolean };
+const blockOrder = humanoidsOwnerComposition ? humanoidsOwner.blockOrder : ['intro', 'featuredProducts', 'introGosha', 'gallery', 'explanation', 'video', 'choiceGuide', 'scenarioExplanation', 'goshaConclusion', ...(dogsOwnerComposition ? ['catalogBlock'] : []), 'faq', 'cta2', ...(!dogsOwnerComposition ? ['catalogBlock'] : []), 'relatedArticles', 'otherCompilations'];
 const overviewVideo = videoRegistry.videos.find(v => v.videoId === template.video.videoId);
 const scenarioVideos = template.scenarios.presentation === 'photo-gallery'
   ? []
@@ -22,20 +24,26 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
 <article class="humanoid-template" data-kiber-task="KIBER-94" data-page-type="compilation" data-template-status="draft_for_owner_review">
   <EditorialHero data-block-id="hero" title={template.seo.h1} lead={template.hero.lead} image={template.hero.image} requestHref={template.finalCta.secondaryCta.href} modelsHref={dogsOwnerComposition ? "#featured-dogs" : "#catalog"} />
 
-  <section class="humanoid-template__text container" data-block-id="intro" aria-labelledby="intro-title">
+  {blockOrder.map((block) => (
+    <Fragment>
+      {block === "intro" && (<Fragment>
+<section class="humanoid-template__text container" data-block-id="intro" aria-labelledby="intro-title">
     <h2 id="intro-title">{template.intro.title}</h2>
     <div class="humanoid-template__prose">
       {template.intro.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
     </div>
   </section>
-
-  <slot name="featuredProducts" />
-
-  <section class="humanoid-template__gosha-intro container" data-block-id="introGosha" aria-label="Вводный комментарий Кибер Гоши">
+      </Fragment>)}
+      {block === "featuredProducts" && (<Fragment>
+<slot name="featuredProducts" />
+      </Fragment>)}
+      {block === "introGosha" && (<Fragment>
+<section class="humanoid-template__gosha-intro container" data-block-id="introGosha" aria-label="Вводный комментарий Кибер Гоши">
     <HomeGoshaQuote {...template.gosha} />
   </section>
-
-  {!dogsOwnerComposition && (
+      </Fragment>)}
+      {block === "gallery" && (<Fragment>
+{!dogsOwnerComposition && (
   <section class="humanoid-template__gallery" data-block-id="gallery" aria-labelledby="gallery-title">
     <div class="container humanoid-template__gallery-head">
       <div class="humanoid-template__section-head">
@@ -57,13 +65,15 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     </div>
   </section>
   )}
-
-  {template.explanation && <section class="humanoid-template__text container" data-block-id="explanation" aria-labelledby="explanation-title">
+      </Fragment>)}
+      {block === "explanation" && (<Fragment>
+{template.explanation && <section class="humanoid-template__text container" data-block-id="explanation" aria-labelledby="explanation-title">
     <h2 id="explanation-title">{template.explanation.title}</h2>
     <div class="humanoid-template__prose">{template.explanation.paragraphs.map(text => <p>{text}</p>)}</div>
   </section>}
-
-  {template.video.enabled !== false && (
+      </Fragment>)}
+      {block === "video" && (<Fragment>
+{template.video.enabled !== false && (
   <section class="humanoid-template__video container" data-block-id="video" aria-labelledby="video-title">
     <div>
       <p class="humanoid-template__eyebrow humanoid-template__eyebrow--video">Видео</p>
@@ -74,8 +84,9 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
   </section>
 
   )}
-
-  <section class="humanoid-template__guide container" data-block-id="choiceGuide" aria-labelledby="guide-title">
+      </Fragment>)}
+      {block === "choiceGuide" && (<Fragment>
+<section class="humanoid-template__guide container" data-block-id="choiceGuide" aria-labelledby="guide-title">
     <div class="humanoid-template__section-head">
       <p class="humanoid-template__eyebrow">Гид по выбору</p>
       <h2 id="guide-title">{template.guide.title}</h2>
@@ -91,8 +102,9 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       ))}
     </div>
   </section>
-
-  <section class="humanoid-template__scenarios" data-block-id="scenarioExplanation" aria-labelledby="scenarios-title">
+      </Fragment>)}
+      {block === "scenarioExplanation" && (<Fragment>
+<section class="humanoid-template__scenarios" data-block-id="scenarioExplanation" aria-labelledby="scenarios-title">
     <div class="container humanoid-template__section-head humanoid-template__section-head--scenarios-left">
       <p class="humanoid-template__eyebrow">Сценарии</p>
       <h2 id="scenarios-title">{template.scenarios.title}</h2>
@@ -120,56 +132,50 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       ))}
     </div>
   </section>
-
-  <section class="humanoid-template__gosha-intro container" data-block-id="goshaConclusion" aria-label="Финальный комментарий Кибер Гоши">
+      </Fragment>)}
+      {block === "goshaConclusion" && (<Fragment>
+<section class="humanoid-template__gosha-intro container" data-block-id="goshaConclusion" aria-label="Финальный комментарий Кибер Гоши">
     <HomeGoshaQuote {...template.conclusionGosha} id="kiber-gosha-conclusion" />
   </section>
-
-  {dogsOwnerComposition && (
-  <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog container" data-block-id="catalogBlock" aria-labelledby="catalog-title">
-    <div class="vertical-slice__section-copy">
-      <p>{template.catalog.eyebrow}</p>
-      <h2 id="catalog-title">{template.catalog.title}</h2>
-      <p>{template.catalog.lead}</p>
-    </div>
-    <div class="vertical-slice__card-grid">
-      {reviewCatalogRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
-    </div>
-  </section>
-  )}
-
-  <section class="container" data-block-id="faq" aria-label="FAQ по сборке">
+      </Fragment>)}
+      {block === "faq" && (<Fragment>
+<section class="container" data-block-id="faq" aria-label="FAQ по сборке">
     <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
   </section>
-
-  <section class="humanoid-template__cta container" data-block-id="cta2" aria-label="Связаться с КИБЕР ПОРТАЛ">
+      </Fragment>)}
+      {block === "cta2" && (<Fragment>
+<section class="humanoid-template__cta container" data-block-id="cta2" aria-label="Связаться с КИБЕР ПОРТАЛ">
     <div data-block-id="goshaCta">
       <HomeFinalCta {...template.finalCta} variant="robot-card-final" />
     </div>
   </section>
-
-  {!dogsOwnerComposition && (
-  <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog container" data-block-id="catalogBlock" aria-labelledby="catalog-title">
+      </Fragment>)}
+      {block === "relatedArticles" && (<Fragment>
+<section class="container" data-block-id="relatedArticles" aria-label="Статьи по теме">
+    <HomeImageCards id="compilation-related-articles" eyebrow="Блог Кибер Гоши" title={template.relatedArticles.title} description={template.relatedArticles.lead} cards={template.relatedArticles.cards} variant="article" />
+  </section>
+      </Fragment>)}
+      {block === "otherCompilations" && (<Fragment>
+{template.showOtherCompilations !== false && (
+  <section class="humanoid-template__bottom-compilations container" data-block-id="otherCompilations" aria-label="Подборки">
+    <HomeImageCards id="compilations" eyebrow="Подборки" {...launchCompilations} />
+  </section>
+  )}
+      </Fragment>)}
+      {["catalogBlock", "featuredCatalog"].includes(block) && (<Fragment>
+<section id={block === "featuredCatalog" ? "featured-humanoids" : "catalog"} class="vertical-slice__section vertical-slice__section--catalog container" data-block-id={block} aria-labelledby={block === "featuredCatalog" ? "featured-humanoids-title" : "catalog-title"}>
     <div class="vertical-slice__section-copy">
       <p>{template.catalog.eyebrow}</p>
-      <h2 id="catalog-title">{template.catalog.title}</h2>
-      <p>{template.catalog.lead}</p>
+      <h2 id={block === "featuredCatalog" ? "featured-humanoids-title" : "catalog-title"}>{block === "featuredCatalog" ? humanoidsOwner.featuredCatalog.title : template.catalog.title}</h2>
+      <p>{block === "featuredCatalog" ? humanoidsOwner.featuredCatalog.lead : template.catalog.lead}</p>
     </div>
     <div class="vertical-slice__card-grid">
       {reviewCatalogRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
   </section>
-  )}
-
-  <section class="container" data-block-id="relatedArticles" aria-label="Статьи по теме">
-    <HomeImageCards id="compilation-related-articles" eyebrow="Блог Кибер Гоши" title={template.relatedArticles.title} description={template.relatedArticles.lead} cards={template.relatedArticles.cards} variant="article" />
-  </section>
-
-  {template.showOtherCompilations !== false && (
-  <section class="humanoid-template__bottom-compilations container" data-block-id="otherCompilations" aria-label="Подборки">
-    <HomeImageCards id="compilations" eyebrow="Подборки" {...launchCompilations} />
-  </section>
-  )}
+      </Fragment>)}
+    </Fragment>
+  ))}
 </article>
 
 <script is:inline src="/scripts/robot-card-gallery.js?v=mobile-shared-1" defer></script>
@@ -181,6 +187,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
   .humanoid-template__scenario-photo-card .humanoid-template__scenario-caption { width: auto; min-width: 0; }
 
   /* Owner feedback: only this compilation Hero and three lower-block wrappers. */
+  .humanoid-template > [data-block-id="featuredCatalog"],
   .humanoid-template > [data-block-id="catalogBlock"],
   .humanoid-template > [data-block-id="relatedArticles"],
   .humanoid-template > [data-block-id="otherCompilations"] {
@@ -193,7 +200,8 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     .humanoid-template .humanoid-template__hero-image { width: 100%; max-width: none; aspect-ratio: 4 / 3; height: auto; object-fit: cover; object-position: center; justify-self: center; align-self: center; }
   }
   @media (max-width: 39.9375rem) {
-    .humanoid-template > [data-block-id="catalogBlock"],
+    .humanoid-template > [data-block-id="featuredCatalog"],
+  .humanoid-template > [data-block-id="catalogBlock"],
     .humanoid-template > [data-block-id="relatedArticles"],
     .humanoid-template > [data-block-id="otherCompilations"] { padding-block: 2.75rem; }
   }
@@ -278,15 +286,15 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     .humanoid-template__section-head--scenarios-left { padding-left: 0; }
     .humanoid-template__button { width: 100%; }
     .humanoid-template__text, .humanoid-template__guide, .humanoid-template__video, .humanoid-template__cta { padding-block: 3rem; }
-    #catalog.vertical-slice__section {
+    :is(#catalog, #featured-humanoids).vertical-slice__section {
       box-sizing: border-box;
       width: auto;
       max-width: none;
       margin-inline: var(--kp-reference-page-gutter);
       padding-inline: 0;
     }
-    #catalog .vertical-slice__section-copy,
-    #catalog .vertical-slice__card-grid {
+    :is(#catalog, #featured-humanoids) .vertical-slice__section-copy,
+    :is(#catalog, #featured-humanoids) .vertical-slice__card-grid {
       box-sizing: border-box;
       width: 100%;
       min-width: 0;
@@ -294,7 +302,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       margin-left: 0;
       margin-right: 0;
     }
-    #catalog :global(.robot-card) {
+    :is(#catalog, #featured-humanoids) :global(.robot-card) {
       max-width: 100%;
     }
     .humanoid-template__bottom-compilations { padding-block: 3rem 3.5rem; }
