@@ -1,0 +1,5 @@
+# Принятая подборка робособак
+Владелец одобрил r2 на Джино и явно разрешил заменить старую /roboty-sobaki/ на основном домене. Визуальная версия: https://jino-preview.kiber-portal.ru/preview/dogs-owner-composition/?v=2 . Никаких новых дизайн-изменений, других подборок или инфраструктуры.
+Производственная реализация: CompilationTemplate с явным dogsOwnerComposition (default false), извлечённый FeaturedRobotProducts из готового one-product ArticleBlocksTemplate, принятые описания отдельно от коротких каталожных. Общие HomeGoshaQuote/HomeFaqBlock/HomeFinalCta/HomeImageCards/RobotCard сохранены. #catalog остаётся у нижнего каталога для штатных mobile gutters.
+Порядок: Hero → intro →3 products → quote1 → guide → scenarios4 → quote2 →catalog3 →FAQ →CTA2 →blog →compilations. Галереи нет. Действующий BaseLayout/SEO/forms/analytics/consent сохранён, prototype modal/noindex/preview URLs не переносятся.
+Релиз только HTML roboty-sobaki/index.html и необходимые новые content-hashed assets. Остальные серверные страницы/API/.htaccess/DNS/analytics config не меняются. Backup до замены, rollback и live QA обязательны.

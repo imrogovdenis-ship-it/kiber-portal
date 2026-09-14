@@ -10,7 +10,7 @@ import RobotCard from '../blocks/RobotCard.astro';
 import { launchCompilations } from '../../lib/launch-navigation';
 import type { CompilationPageTemplateData } from '../../lib/kiber94-compilation-template-data';
 
-const { template } = Astro.props as { template: CompilationPageTemplateData };
+const { template, dogsOwnerComposition = false } = Astro.props as { template: CompilationPageTemplateData; dogsOwnerComposition?: boolean };
 const overviewVideo = videoRegistry.videos.find(v => v.videoId === template.video.videoId);
 const scenarioVideos = template.scenarios.presentation === 'photo-gallery'
   ? []
@@ -27,7 +27,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
         <p class="humanoid-template__lead">{template.hero.lead}</p>
         <div class="humanoid-template__actions">
           <a class="humanoid-template__button humanoid-template__button--primary" href={template.finalCta.secondaryCta.href}>Оставить заявку</a>
-          <a class="humanoid-template__button" href="#catalog">Смотреть модели</a>
+          <a class="humanoid-template__button" href={dogsOwnerComposition ? "#featured-dogs" : "#catalog"}>Смотреть модели</a>
         </div>
       </div>
       {template.hero.image && <img class="humanoid-template__hero-image" src={template.hero.image.src} alt={template.hero.image.alt} width="1280" height="720" loading="eager" decoding="async" />}
@@ -41,10 +41,13 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     </div>
   </section>
 
+  <slot name="featuredProducts" />
+
   <section class="humanoid-template__gosha-intro container" data-block-id="introGosha" aria-label="Вводный комментарий Кибер Гоши">
     <HomeGoshaQuote {...template.gosha} />
   </section>
 
+  {!dogsOwnerComposition && (
   <section class="humanoid-template__gallery" data-block-id="gallery" aria-labelledby="gallery-title">
     <div class="container humanoid-template__gallery-head">
       <div class="humanoid-template__section-head">
@@ -65,6 +68,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       ))}
     </div>
   </section>
+  )}
 
   {template.explanation && <section class="humanoid-template__text container" data-block-id="explanation" aria-labelledby="explanation-title">
     <h2 id="explanation-title">{template.explanation.title}</h2>
@@ -121,7 +125,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       )) : template.scenarios.items.map((item) => (
         <article class:list={["humanoid-template__scenario-card", template.scenarios.presentation === "photo-gallery" && "humanoid-template__scenario-photo-card"]} style={template.scenarios.presentation === 'photo-gallery' ? {'--scenario-photo-ratio': String((item.image.width ?? 4) / (item.image.height ?? 3))} : undefined}>
           <div class:list={["humanoid-template__scenario-video", template.scenarios.presentation === "photo-gallery" && "humanoid-template__scenario-photo"]}>
-            <img src={item.image.src} alt={item.image.alt} loading="lazy" decoding="async" />
+            <img src={item.image.src} alt={item.image.alt} width={dogsOwnerComposition ? item.image.width : undefined} height={dogsOwnerComposition ? item.image.height : undefined} loading="lazy" decoding="async" />
           </div>
           <div class="humanoid-template__scenario-caption"><h3>{item.title}</h3><p>{item.text}</p></div>
         </article>
@@ -133,16 +137,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
     <HomeGoshaQuote {...template.conclusionGosha} id="kiber-gosha-conclusion" />
   </section>
 
-  <section class="container" data-block-id="faq" aria-label="FAQ по сборке">
-    <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
-  </section>
-
-  <section class="humanoid-template__cta container" data-block-id="cta2" aria-label="Связаться с КИБЕР ПОРТАЛ">
-    <div data-block-id="goshaCta">
-      <HomeFinalCta {...template.finalCta} variant="robot-card-final" />
-    </div>
-  </section>
-
+  {dogsOwnerComposition && (
   <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog container" data-block-id="catalogBlock" aria-labelledby="catalog-title">
     <div class="vertical-slice__section-copy">
       <p>{template.catalog.eyebrow}</p>
@@ -153,6 +148,30 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       {reviewCatalogRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
     </div>
   </section>
+  )}
+
+  <section class="container" data-block-id="faq" aria-label="FAQ по сборке">
+    <HomeFaqBlock title={template.faq.title} items={template.faq.items} />
+  </section>
+
+  <section class="humanoid-template__cta container" data-block-id="cta2" aria-label="Связаться с КИБЕР ПОРТАЛ">
+    <div data-block-id="goshaCta">
+      <HomeFinalCta {...template.finalCta} variant="robot-card-final" />
+    </div>
+  </section>
+
+  {!dogsOwnerComposition && (
+  <section id="catalog" class="vertical-slice__section vertical-slice__section--catalog container" data-block-id="catalogBlock" aria-labelledby="catalog-title">
+    <div class="vertical-slice__section-copy">
+      <p>{template.catalog.eyebrow}</p>
+      <h2 id="catalog-title">{template.catalog.title}</h2>
+      <p>{template.catalog.lead}</p>
+    </div>
+    <div class="vertical-slice__card-grid">
+      {reviewCatalogRobots.map((robot) => <RobotCard {...robot} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+    </div>
+  </section>
+  )}
 
   <section class="container" data-block-id="relatedArticles" aria-label="Статьи по теме">
     <HomeImageCards id="compilation-related-articles" eyebrow="Блог Кибер Гоши" title={template.relatedArticles.title} description={template.relatedArticles.lead} cards={template.relatedArticles.cards} variant="article" />

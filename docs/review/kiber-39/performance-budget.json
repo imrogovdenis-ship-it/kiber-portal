@@ -45,5 +45,12 @@
     ],
     "transport": "cold uncached uncompressed localhost",
     "networkTimingIsFieldCWV": false
-  }
+  },
+  "browserRoutes": [
+    "/",
+    "/robots/arenda-unitree-g1/",
+    "/lead/request/",
+    "/lead/thanks/",
+    "/roboty-sobaki/"
+  ]
 }

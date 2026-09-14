@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { breadcrumbJsonLd, collectionPageJsonLd, faqPageJsonLd } from '../lib/seo';
+import FeaturedRobotProducts from '../components/blocks/FeaturedRobotProducts.astro';
+import descriptions from '../../data/content/dogs-featured-descriptions.json';
 import CompilationTemplate from '../components/templates/CompilationTemplate.astro';
 import { getRobotDogsPreviewCompilation } from '../lib/robot-dogs-preview-adapter';
 
@@ -22,7 +24,9 @@ const previewTemplate = getRobotDogsPreviewCompilation();
   ]}
 >
   <main id="main-content" tabindex="-1" data-kiber-task="robot-dogs-preview" data-preview-only={isRobotDogsPreview ? 'true' : undefined}>
-    <CompilationTemplate template={previewTemplate} />
+    <CompilationTemplate template={previewTemplate} dogsOwnerComposition>
+      <FeaturedRobotProducts slot="featuredProducts" robots={previewTemplate.catalog.robots} descriptions={descriptions} />
+    </CompilationTemplate>
   </main>
 </BaseLayout>
 
