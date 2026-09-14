@@ -1,0 +1,3 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const paths=[...fs.readFileSync('dist/sitemap.xml','utf8').matchAll(/<loc>https:\/\/www.kiber-portal.ru([^<]+)<\/loc>/g)].map(x=>x[1]).filter(x=>/^\/articles\/[^/]+\/$/.test(x)||['/roboty-gumanoidy/','/roboty-sobaki/'].includes(x));
+assert.equal(paths.length,14);let missing=[];for(const p of paths){const h=fs.readFileSync('dist'+p+'index.html','utf8');if(!/class="editorial-hero"/.test(h))missing.push(p);}assert.deepEqual(missing,[],'Approved Hero missing on actual production routes');console.log('PASS: all14 real editorial details render approved Hero');

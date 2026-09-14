@@ -1,0 +1,22 @@
+{
+  "blockOrder": [
+    "intro",
+    "featuredCatalog",
+    "introGosha",
+    "explanation",
+    "gallery",
+    "choiceGuide",
+    "video",
+    "scenarioExplanation",
+    "goshaConclusion",
+    "catalogBlock",
+    "faq",
+    "cta2",
+    "relatedArticles",
+    "otherCompilations"
+  ],
+  "featuredCatalog": {
+    "title": "Какой гуманоид подойдёт вашему мероприятию",
+    "lead": "Здесь собраны все гуманоиды из подборки. Откройте карточку модели, чтобы посмотреть фотографии, возможности и условия аренды, а затем обсудите подходящую программу с менеджером."
+  }
+}

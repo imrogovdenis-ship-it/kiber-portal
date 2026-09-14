@@ -1,0 +1,51 @@
+{
+  "pages": 50,
+  "covers": {
+    "Впечатляющие роботы для выставок": 16,
+    "Роботы-собаки вместо цветов": 16
+  },
+  "humanoidOrder": [
+    "hero",
+    "intro",
+    "featuredCatalog",
+    "introGosha",
+    "explanation",
+    "gallery",
+    "choiceGuide",
+    "video",
+    "scenarioExplanation",
+    "goshaConclusion",
+    "catalogBlock",
+    "faq",
+    "cta2",
+    "otherCompilations",
+    "relatedArticles"
+  ],
+  "homeOrder": [
+    "arenda-unitree-g1",
+    "arenda-agibot-x2",
+    "arenda-noetix-bumi",
+    "arenda-robota-ardi",
+    "arenda-robota-sofiya",
+    "arenda-unitree-h2",
+    "arenda-unitree-r1",
+    "arenda-promobot-v4",
+    "arenda-xiaomi-cyberdog-2",
+    "arenda-inchbot-l1-w-edu",
+    "arenda-unitree-go2",
+    "arenda-bellabot",
+    "arenda-kettybot",
+    "arenda-glambot",
+    "arenda-klipmeiker",
+    "arenda-roboshashki",
+    "arenda-robot-barmen",
+    "arenda-robota-hudozhnika-a4",
+    "arenda-robota-tron",
+    "arenda-senserobot",
+    "arenda-sketchbot",
+    "arenda-mini-robo-kofeyni",
+    "arenda-robo-kofeyni",
+    "arenda-uv-box"
+  ],
+  "preservation": "all existing main DOM after scoped allowances and Astro scope normalization"
+}

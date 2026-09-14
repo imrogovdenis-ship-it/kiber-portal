@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/",
+    "w": 390,
+    "pass": true
+  },
+  {
+    "path": "/roboty-gumanoidy/",
+    "w": 390,
+    "pass": true
+  },
+  {
+    "path": "/roboty-sobaki/",
+    "w": 390,
+    "pass": true
+  },
+  {
+    "path": "/compilations/",
+    "w": 390,
+    "pass": true
+  },
+  {
+    "path": "/",
+    "w": 768,
+    "pass": true
+  },
+  {
+    "path": "/roboty-gumanoidy/",
+    "w": 768,
+    "pass": true
+  },
+  {
+    "path": "/roboty-sobaki/",
+    "w": 768,
+    "pass": true
+  },
+  {
+    "path": "/compilations/",
+    "w": 768,
+    "pass": true
+  },
+  {
+    "path": "/",
+    "w": 1280,
+    "pass": true
+  },
+  {
+    "path": "/roboty-gumanoidy/",
+    "w": 1280,
+    "pass": true
+  },
+  {
+    "path": "/roboty-sobaki/",
+    "w": 1280,
+    "pass": true
+  },
+  {
+    "path": "/compilations/",
+    "w": 1280,
+    "pass": true
+  }
+]

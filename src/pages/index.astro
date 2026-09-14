@@ -1,4 +1,5 @@
 ---
+import homeCatalogOrder from '../../data/content/home-catalog-order.json';
 import homeCatalogTitles from '../../data/content/home-catalog-titles.json';
 import { launchArticles, launchCompilations } from '../lib/launch-navigation';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -14,7 +15,6 @@ import { homeArticles, homeCompilations, homeFaq, homeGosha, homeRobotCardFinalC
 import type { RobotCardData } from '../../design-system/schemas/fixture.schema';
 import { reviewRobotPreviewHref } from '../lib/review-links';
 
-const featuredSlugs = ['arenda-unitree-g1', 'arenda-agibot-x2', 'arenda-xiaomi-cyberdog-2', 'arenda-bellabot'];
 const categoryLabels: Record<string, string> = {
   humanoid: 'Робот-гуманоид',
   robot_dog: 'Робот-собака',
@@ -27,8 +27,7 @@ function getFeaturedHomeRobots(limit: number) {
   const robots = getRobotPages();
   const bySlug = new Map(robots.map((robot) => [robot.slug, robot]));
 
-  return [...featuredSlugs, ...robots.map(r => r.slug).filter(slug => !featuredSlugs.includes(slug))]
-    .map((slug, index) => {
+  return homeCatalogOrder.map((slug, index) => {
       const robot = bySlug.get(slug);
       if (!robot) return null;
       return {

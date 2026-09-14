@@ -1,4 +1,5 @@
 ---
+import EditorialHero from '../blocks/EditorialHero.astro';
 import { reviewRobotPreviewHref } from '../../lib/review-links';
 import HomeFinalCta from '../blocks/HomeFinalCta.astro';
 import HomeFaqBlock from '../blocks/HomeFaqBlock.astro';
@@ -22,16 +23,7 @@ const articleGalleryImages = reviewRobotCards
 ---
 
 <article class="article-blocks" data-kiber-task="KIBER-94" data-page-type="article_detail" data-template-status="owner_design_structure_meaning_approved">
-  <section id="hero" class="article-blocks__hero" data-block-id="hero" aria-labelledby="page-title">
-    <div class="container article-blocks__hero-inner">
-      <div class="article-blocks__hero-copy">
-        <p class="article-blocks__eyebrow">{template.hero.eyebrow}</p>
-        <h1 id="page-title">{template.seo.h1}</h1>
-      </div>
-      <img class="article-blocks__hero-image" src={template.hero.image.src} alt={template.hero.image.alt} loading="eager" decoding="async" />
-      <p class="article-blocks__lead">{template.hero.lead}</p>
-    </div>
-  </section>
+  <EditorialHero data-block-id="hero" title={template.seo.h1} lead={template.hero.lead} image={template.hero.image} requestHref="/lead/request/" modelsHref="#catalogBlock" />
 
   {(content?.showInventory ?? true) && (
   <section class="article-blocks__toc container" data-block-id="blockInventory" aria-labelledby="inventory-title">

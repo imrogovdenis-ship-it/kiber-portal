@@ -1,0 +1,5 @@
+
+> kiber-portal@0.1.0 test:editorial-hero-rendered
+> node scripts/editorial-hero-rendered-smoke.mjs
+
+PASS: all14 real editorial details render approved Hero
