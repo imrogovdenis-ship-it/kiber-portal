@@ -1,0 +1,302 @@
+[
+  {
+    "path": "/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/roboty-gumanoidy/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/roboty-unitree-obzor-kompanii/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/unitree-g1-na-korporative/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/unitree-go2-na-meropriyatii/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/robot-stendist-dlya-vystavki/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/lead/request/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/lead/thanks/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/consent/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/roboty-sobaki/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/compilations/",
+    "target": true,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": false
+  },
+  {
+    "path": "/contacts/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/terms/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-glambot/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-xiaomi-cyberdog-2/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-robota-ardi/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-robota-tron/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-robota-hudozhnika-a4/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-senserobot/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-noetix-bumi/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-inchbot-l1-w-edu/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-klipmeiker/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-uv-box/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-unitree-g1/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-agibot-x2/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-mini-robo-kofeyni/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-robota-sofiya/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-unitree-r1/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-kettybot/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-promobot-v4/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-robot-barmen/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-bellabot/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-unitree-go2/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-sketchbot/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-robo-kofeyni/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-unitree-h2/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/robots/arenda-roboshashki/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/news/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/privacy-policy/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/cookie-policy/",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  },
+  {
+    "path": "/404.html",
+    "target": false,
+    "mainCopyUnchangedOutsideHero": true,
+    "protectedMainDomUnchanged": true
+  }
+]

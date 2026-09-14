@@ -1,4 +1,5 @@
 ---
+import EditorialHero from '../blocks/EditorialHero.astro';
 import { reviewRobotPreviewHref } from '../../lib/review-links';
 import KinescopeVideo from '../blocks/KinescopeVideo.astro';
 import videoRegistry from '../../../data/media/kinescope-video-library.json';
@@ -19,20 +20,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
 ---
 
 <article class="humanoid-template" data-kiber-task="KIBER-94" data-page-type="compilation" data-template-status="draft_for_owner_review">
-  <section class="humanoid-template__hero" data-block-id="hero" aria-labelledby="page-title">
-    <div class="container humanoid-template__hero-inner">
-      <div class="humanoid-template__hero-copy">
-        <p class="humanoid-template__eyebrow">{template.hero.eyebrow}</p>
-        <h1 id="page-title">{template.seo.h1}</h1>
-        <p class="humanoid-template__lead">{template.hero.lead}</p>
-        <div class="humanoid-template__actions">
-          <a class="humanoid-template__button humanoid-template__button--primary" href={template.finalCta.secondaryCta.href}>Оставить заявку</a>
-          <a class="humanoid-template__button" href={dogsOwnerComposition ? "#featured-dogs" : "#catalog"}>Смотреть модели</a>
-        </div>
-      </div>
-      {template.hero.image && <img class="humanoid-template__hero-image" src={template.hero.image.src} alt={template.hero.image.alt} width="1280" height="720" loading="eager" decoding="async" />}
-    </div>
-  </section>
+  <EditorialHero data-block-id="hero" title={template.seo.h1} lead={template.hero.lead} image={template.hero.image} requestHref={template.finalCta.secondaryCta.href} modelsHref={dogsOwnerComposition ? "#featured-dogs" : "#catalog"} />
 
   <section class="humanoid-template__text container" data-block-id="intro" aria-labelledby="intro-title">
     <h2 id="intro-title">{template.intro.title}</h2>

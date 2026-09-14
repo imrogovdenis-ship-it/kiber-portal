@@ -1,0 +1,47 @@
+---
+interface Props { "data-block-id"?: "hero"; title:string; lead:string; image?:{src:string;alt:string}; requestHref:string; modelsHref:string; }
+const {title,lead,image,requestHref,modelsHref}=Astro.props;
+---
+<section id="hero" class="editorial-hero" data-block-id={Astro.props["data-block-id"] ?? "hero"} aria-labelledby="page-title">
+  {image && <img class="editorial-hero__image" src={image.src} alt={image.alt} width="1600" height="900" loading="eager" decoding="async" />}
+  <div class="editorial-hero__inner"><div class="editorial-hero__copy">
+    <h1 id="page-title">{title}</h1>
+    <p class="editorial-hero__lead">{lead}</p>
+    <div class="editorial-hero__actions">
+      <a class="editorial-hero__button editorial-hero__button--primary" href={requestHref}>Оставить заявку</a>
+      <a class="editorial-hero__button editorial-hero__button--models" href={modelsHref}>Смотреть модели</a>
+    </div>
+  </div></div>
+</section>
+<style>
+/* Isolated R3: background-cover intentionally permitted by owner for this variant. */
+.editorial-hero{position:relative;isolation:isolate;display:grid;min-height:42.5rem;width:100%;background:var(--kp-ink-dark);overflow:hidden}
+.editorial-hero__image{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;z-index:-2;display:block;border-radius:0;transform:none}
+.editorial-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,color-mix(in srgb,var(--kp-editorial-overlay) 90%,transparent) 0%,color-mix(in srgb,var(--kp-editorial-overlay) 79%,transparent) 48%,color-mix(in srgb,var(--kp-editorial-overlay) 22%,transparent) 100%),linear-gradient(180deg,color-mix(in srgb,var(--kp-editorial-overlay) 20%,transparent),transparent 50%,color-mix(in srgb,var(--kp-editorial-overlay) 18%,transparent));pointer-events:none}
+.editorial-hero__inner{box-sizing:border-box;max-width:80rem;width:100%;margin:auto;padding:4.5rem 2rem}
+.editorial-hero__copy{max-width:51.25rem;display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem}
+.editorial-hero__copy h1{color:var(--kp-white)!important;margin:0;max-width:none;text-shadow:0 0.125rem 1rem color-mix(in srgb,var(--kp-footer-background) 20%,transparent)}
+.editorial-hero__copy>p{margin:0;position:static;grid-area:auto;max-width:46.25rem}
+
+
+
+@media(max-width:53.125rem){.editorial-hero{min-height:38.75rem}.editorial-hero__inner{padding:3.5rem 1.5rem}.editorial-hero__copy{max-width:43.75rem}.editorial-hero:before{background:linear-gradient(90deg,color-mix(in srgb,var(--kp-editorial-overlay) 88%,transparent),color-mix(in srgb,var(--kp-editorial-overlay) 64%,transparent))}}
+@media(max-width:37.5rem){.editorial-hero{min-height:38.75rem}.editorial-hero__inner{padding:2.75rem 1rem}.editorial-hero__copy{gap:1.375rem}.editorial-hero:before{background:linear-gradient(180deg,color-mix(in srgb,var(--kp-editorial-overlay) 85%,transparent),color-mix(in srgb,var(--kp-editorial-overlay) 78%,transparent) 65%,color-mix(in srgb,var(--kp-editorial-overlay) 65%,transparent))}.editorial-hero__image{object-position:50% center}}
+
+/* R4: desktop/tablet cover and H1 retained. Phone: full image then original dark copy panel. */
+@media(max-width:37.5rem){
+.editorial-hero{display:flex;flex-direction:column;min-height:0;overflow:visible;background:var(--kp-ink-dark)}
+.editorial-hero__image{position:static;inset:auto;z-index:auto;display:block;width:100%;height:auto;max-width:100%;object-fit:contain;object-position:center;border-radius:0;order:0}
+.editorial-hero:before{display:none}
+.editorial-hero__inner{order:1;margin:0;padding:1.75rem 1rem 2.25rem;background:var(--kp-ink-dark)}
+.editorial-hero__copy .editorial-hero__actions{width:100%}
+}
+
+.editorial-hero__lead{max-width:48rem;color:color-mix(in srgb,var(--kp-reference-white) 82%,transparent);font-size:clamp(1.08rem,1.5vw,1.35rem);line-height:1.48}
+.editorial-hero__actions{flex-wrap:wrap;gap:.85rem;margin-top:.4rem;display:flex}
+.editorial-hero__button{border:.0625rem solid color-mix(in srgb,var(--kp-reference-white) 28%,transparent);border-radius:var(--kp-reference-button-radius);min-height:3rem;color:var(--kp-reference-white);font-family:var(--kp-font-heading);justify-content:center;align-items:center;padding:.95rem 1.55rem;font-weight:700;text-decoration:none;display:inline-flex}
+.editorial-hero__button--primary{border-color:var(--kp-reference-blue);background:var(--kp-reference-blue)}
+.editorial-hero__button--models{background:var(--kp-white);border-color:var(--kp-white);color:var(--kp-footer-background)}
+@media(max-width:37.5rem){.editorial-hero__actions{display:grid;grid-template-columns:1fr;width:100%}.editorial-hero__button{width:100%}}
+
+</style>

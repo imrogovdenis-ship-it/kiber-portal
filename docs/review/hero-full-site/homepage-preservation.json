@@ -1,0 +1,7 @@
+{
+  "mainHeaderFooterDOM": "exact production equality",
+  "headingsA": "absent",
+  "newHero": "absent",
+  "existingGlobalTokens": "unchanged",
+  "newToken": "unused on homepage"
+}

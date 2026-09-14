@@ -1,0 +1,4 @@
+layer: semantic
+namespace: editorial
+tokens:
+  editorial.overlay: { type: color, value: "{neutral.editorial.overlay}", css: "--kp-editorial-overlay" }

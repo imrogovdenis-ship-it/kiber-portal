@@ -14,3 +14,4 @@ tokens:
   neutral.black: { type: color, value: "#000000" }
   messenger.telegram: { type: color, value: "#229ed9" }
   messenger.whatsapp: { type: color, value: "#25d366" }
+  neutral.editorial.overlay: { type: color, value: "#0c1019" }
