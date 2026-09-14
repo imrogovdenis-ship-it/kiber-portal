@@ -1,0 +1,16 @@
+{
+  "accepted": "Desktop/tablet image-background treatment and heading from R3",
+  "changes": [
+    "Restore original lead typography/color on both pages and all breakpoints",
+    "Reuse original compilation action markup/scoped CSS, including blue primary",
+    "Phones <=600px: natural full-width image, then dark original background with H1/lead/buttons"
+  ],
+  "preserve": [
+    "heading-only typography A",
+    "all other content/blocks",
+    "main domain",
+    "homepage"
+  ],
+  "previewApproval": "R4 awaiting owner review",
+  "productionAuthorized": false
+}

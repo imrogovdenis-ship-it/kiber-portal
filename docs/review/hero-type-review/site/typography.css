@@ -1,0 +1,13 @@
+/* PREVIEW ONLY. No production import. Colors/layout/media intentionally inherited. */
+body[data-rv-type]{--rv-h1:52px;--rv-h2:34px;--rv-h3:22px;--rv-body:18px;--rv-lead:20px;--rv-card:16px;--rv-line:1.6;--rv-head-line:1.16}
+body[data-rv-type=b]{--rv-h1:48px;--rv-h2:32px;--rv-body:19px;--rv-lead:21px;--rv-line:1.75;--rv-head-line:1.2}
+html:root body[data-rv-type] #main-content[data-rv-content] h1{font-size:var(--rv-h1)!important;line-height:var(--rv-head-line)!important;font-weight:700!important;letter-spacing:-.025em!important;font-family:Montserrat,Arial,sans-serif!important}
+html:root body[data-rv-type] #main-content[data-rv-content] h2{font-size:var(--rv-h2)!important;line-height:1.22!important;font-weight:700!important;letter-spacing:-.015em!important;font-family:Montserrat,Arial,sans-serif!important}
+html:root body[data-rv-type] #main-content[data-rv-content] h3,html:root body[data-rv-type] #main-content[data-rv-content] [data-rv-role=card-title]{font-size:var(--rv-h3)!important;line-height:1.3!important;font-weight:700!important;letter-spacing:-.01em!important;font-family:Montserrat,Arial,sans-serif!important}
+html:root body[data-rv-type] #main-content[data-rv-content] [data-rv-role=body]{font-size:var(--rv-body)!important;line-height:var(--rv-line)!important}
+html:root body[data-rv-type] #main-content[data-rv-content] [data-rv-role=lead]{font-size:var(--rv-lead)!important;line-height:1.55!important}
+html:root body[data-rv-type] #main-content[data-rv-content] .robot-card__description,html:root body[data-rv-type] #main-content[data-rv-content] [class*="__card"] [data-rv-role=body]{font-size:var(--rv-card)!important;line-height:1.55!important}
+html:root body[data-rv-type] #main-content[data-rv-content] summary{font-size:var(--rv-h3)!important;line-height:1.35!important}
+html:root body[data-rv-type] #main-content[data-rv-content] h1,html:root body[data-rv-type] #main-content[data-rv-content] h2,html:root body[data-rv-type] #main-content[data-rv-content] h3{overflow-wrap:break-word}
+@media(max-width:850px){body[data-rv-type]{--rv-h1:38px;--rv-h2:30px}body[data-rv-type=b]{--rv-h1:36px;--rv-h2:28px}}
+@media(max-width:600px){body[data-rv-type]{--rv-h1:32px;--rv-h2:26px;--rv-h3:20px;--rv-body:16px;--rv-lead:18px;--rv-card:15px}body[data-rv-type=b]{--rv-h1:30px;--rv-h2:25px;--rv-body:17px;--rv-lead:19px}}
