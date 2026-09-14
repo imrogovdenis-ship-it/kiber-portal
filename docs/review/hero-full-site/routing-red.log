@@ -1,0 +1,49 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Approved Hero missing on actual production routes
++ actual - expected
+
++ [
++   '/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/',
++   '/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/',
++   '/articles/unitree-g1-na-korporative/',
++   '/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/',
++   '/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/',
++   '/articles/sravnenie-unitree-g1-r1-h2/',
++   '/articles/robot-dlya-nauchnogo-shou-i-shkoly/',
++   '/articles/robot-stendist-dlya-vystavki/',
++   '/articles/roboty-unitree-obzor-kompanii/',
++   '/articles/sravnenie-robosobak-dlya-meropriyatiy/',
++   '/articles/unitree-go2-na-meropriyatii/',
++   '/articles/xiaomi-cyberdog-2-v-promo-akciyah/'
++ ]
+- []
+
+    at file:///home/alex/projects/kiber-hero-full-preview/scripts/editorial-hero-rendered-smoke.mjs:3:183
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    '/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/',
+    '/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/',
+    '/articles/unitree-g1-na-korporative/',
+    '/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/',
+    '/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/',
+    '/articles/sravnenie-unitree-g1-r1-h2/',
+    '/articles/robot-dlya-nauchnogo-shou-i-shkoly/',
+    '/articles/robot-stendist-dlya-vystavki/',
+    '/articles/roboty-unitree-obzor-kompanii/',
+    '/articles/sravnenie-robosobak-dlya-meropriyatiy/',
+    '/articles/unitree-go2-na-meropriyatii/',
+    '/articles/xiaomi-cyberdog-2-v-promo-akciyah/'
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

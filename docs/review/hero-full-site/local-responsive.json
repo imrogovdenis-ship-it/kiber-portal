@@ -66,7 +66,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 784.265625,
+        "bottom": 938.25
+      },
+      "image": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 373.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 373.359375,
+        "w": 390,
+        "h": 564.890625,
+        "bottom": 938.25
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/roboty-gumanoidy/",
@@ -175,7 +204,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 206.125,
+        "w": 1280,
+        "h": 550.921875,
+        "bottom": 757.046875
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/roboty-unitree-obzor-kompanii/",
@@ -213,92 +271,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
-  },
-  {
-    "path": "/articles/roboty-unitree-obzor-kompanii/",
-    "w": 1280,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "headings": "a",
-    "h1": [
-      "52px"
-    ],
-    "h2": [
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px"
-    ],
-    "h3": [
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px"
-    ],
-    "hero": null
-  },
-  {
-    "path": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
-    "w": 390,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "headings": "a",
-    "h1": [
-      "32px"
-    ],
-    "h2": [
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px"
-    ],
-    "h3": [
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px"
-    ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 733.140625,
+        "bottom": 887.125
+      },
+      "image": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 373.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 373.359375,
+        "w": 390,
+        "h": 513.765625,
+        "bottom": 887.125
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/roboty-gumanoidy/",
@@ -373,6 +375,149 @@
     }
   },
   {
+    "path": "/articles/roboty-unitree-obzor-kompanii/",
+    "w": 1280,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "headings": "a",
+    "h1": [
+      "52px"
+    ],
+    "h2": [
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px"
+    ],
+    "h3": [
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px"
+    ],
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 220.328125,
+        "w": 1280,
+        "h": 522.515625,
+        "bottom": 742.84375
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "path": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
+    "w": 390,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "headings": "a",
+    "h1": [
+      "32px"
+    ],
+    "h2": [
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px"
+    ],
+    "h3": [
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px"
+    ],
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 974.515625,
+        "bottom": 1128.5
+      },
+      "image": {
+        "x": 0,
+        "y": 197.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 417.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 417.359375,
+        "w": 390,
+        "h": 667.140625,
+        "bottom": 1084.5
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
+  },
+  {
     "path": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/",
     "w": 1280,
     "overflow": false,
@@ -417,7 +562,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 704.984375,
+        "bottom": 846.578125
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 704.984375,
+        "bottom": 846.578125
+      },
+      "copy": {
+        "x": 0,
+        "y": 190.21875,
+        "w": 1280,
+        "h": 607.734375,
+        "bottom": 797.953125
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/unitree-g1-na-korporative/",
@@ -459,7 +633,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 809.59375,
+        "bottom": 963.578125
+      },
+      "image": {
+        "x": 0,
+        "y": 197.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 417.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 417.359375,
+        "w": 390,
+        "h": 502.21875,
+        "bottom": 919.578125
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/unitree-g1-na-korporative/",
@@ -501,49 +704,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
-  },
-  {
-    "path": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
-    "w": 1280,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "headings": "a",
-    "h1": [
-      "52px"
-    ],
-    "h2": [
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px"
-    ],
-    "h3": [
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px"
-    ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 250.484375,
+        "w": 1280,
+        "h": 462.203125,
+        "bottom": 712.6875
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
@@ -585,7 +775,107 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 809.71875,
+        "bottom": 963.703125
+      },
+      "image": {
+        "x": 0,
+        "y": 197.984375,
+        "w": 390,
+        "h": 219.5,
+        "bottom": 417.484375
+      },
+      "copy": {
+        "x": 0,
+        "y": 417.484375,
+        "w": 390,
+        "h": 502.21875,
+        "bottom": 919.703125
+      },
+      "natural": 1400,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "path": "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/",
+    "w": 1280,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "headings": "a",
+    "h1": [
+      "52px"
+    ],
+    "h2": [
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px"
+    ],
+    "h3": [
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px"
+    ],
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 250.484375,
+        "w": 1280,
+        "h": 462.203125,
+        "bottom": 712.6875
+      },
+      "natural": 1400,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/unitree-go2-na-meropriyatii/",
@@ -620,7 +910,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 733.140625,
+        "bottom": 887.125
+      },
+      "image": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 373.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 373.359375,
+        "w": 390,
+        "h": 513.765625,
+        "bottom": 887.125
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/unitree-go2-na-meropriyatii/",
@@ -655,7 +974,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 220.328125,
+        "w": 1280,
+        "h": 522.515625,
+        "bottom": 742.84375
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
@@ -692,7 +1040,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 860.953125,
+        "bottom": 1014.9375
+      },
+      "image": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 373.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 373.359375,
+        "w": 390,
+        "h": 641.578125,
+        "bottom": 1014.9375
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/robot-dlya-nauchnogo-shou-i-shkoly/",
@@ -729,81 +1106,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
-  },
-  {
-    "path": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
-    "w": 390,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "headings": "a",
-    "h1": [
-      "32px"
-    ],
-    "h2": [
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px"
-    ],
-    "h3": [
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px"
-    ],
-    "hero": null
-  },
-  {
-    "path": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
-    "w": 1280,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "headings": "a",
-    "h1": [
-      "52px"
-    ],
-    "h2": [
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px"
-    ],
-    "h3": [
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px"
-    ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 191.921875,
+        "w": 1280,
+        "h": 579.328125,
+        "bottom": 771.25
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
@@ -857,7 +1189,168 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 846.703125,
+        "bottom": 1000.6875
+      },
+      "image": {
+        "x": 0,
+        "y": 197.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 417.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 417.359375,
+        "w": 390,
+        "h": 539.328125,
+        "bottom": 956.6875
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "path": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "w": 390,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "headings": "a",
+    "h1": [
+      "32px"
+    ],
+    "h2": [
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px"
+    ],
+    "h3": [
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px"
+    ],
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 733.140625,
+        "bottom": 887.125
+      },
+      "image": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 373.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 373.359375,
+        "w": 390,
+        "h": 513.765625,
+        "bottom": 887.125
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "path": "/articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "w": 1280,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "headings": "a",
+    "h1": [
+      "52px"
+    ],
+    "h2": [
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px"
+    ],
+    "h3": [
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px"
+    ],
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 220.328125,
+        "w": 1280,
+        "h": 522.515625,
+        "bottom": 742.84375
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
@@ -911,7 +1404,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 220.328125,
+        "w": 1280,
+        "h": 522.515625,
+        "bottom": 742.84375
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
@@ -963,7 +1485,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 898.6875,
+        "bottom": 1052.671875
+      },
+      "image": {
+        "x": 0,
+        "y": 197.984375,
+        "w": 390,
+        "h": 220.234375,
+        "bottom": 418.21875
+      },
+      "copy": {
+        "x": 0,
+        "y": 418.21875,
+        "w": 390,
+        "h": 590.453125,
+        "bottom": 1008.671875
+      },
+      "natural": 2720,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
@@ -1015,45 +1566,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
-  },
-  {
-    "path": "/articles/robot-stendist-dlya-vystavki/",
-    "w": 390,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "headings": "a",
-    "h1": [
-      "32px"
-    ],
-    "h2": [
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px",
-      "26px"
-    ],
-    "h3": [
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px",
-      "20px"
-    ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 191.921875,
+        "w": 1280,
+        "h": 579.328125,
+        "bottom": 771.25
+      },
+      "natural": 2720,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/robot-stendist-dlya-vystavki/",
@@ -1091,7 +1633,103 @@
       "22px",
       "22px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 680,
+        "bottom": 821.59375
+      },
+      "copy": {
+        "x": 0,
+        "y": 220.328125,
+        "w": 1280,
+        "h": 522.515625,
+        "bottom": 742.84375
+      },
+      "natural": 1600,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
+  },
+  {
+    "path": "/articles/robot-stendist-dlya-vystavki/",
+    "w": 390,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "headings": "a",
+    "h1": [
+      "32px"
+    ],
+    "h2": [
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px",
+      "26px"
+    ],
+    "h3": [
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px",
+      "20px"
+    ],
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 758.703125,
+        "bottom": 912.6875
+      },
+      "image": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 373.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 373.359375,
+        "w": 390,
+        "h": 539.328125,
+        "bottom": 912.6875
+      },
+      "natural": 1600,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/sravnenie-unitree-g1-r1-h2/",
@@ -1144,7 +1782,36 @@
       "20px",
       "20px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 153.984375,
+        "w": 390,
+        "h": 897.828125,
+        "bottom": 1051.8125
+      },
+      "image": {
+        "x": 0,
+        "y": 197.984375,
+        "w": 390,
+        "h": 219.375,
+        "bottom": 417.359375
+      },
+      "copy": {
+        "x": 0,
+        "y": 417.359375,
+        "w": 390,
+        "h": 590.453125,
+        "bottom": 1007.8125
+      },
+      "natural": 1280,
+      "fit": "contain",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "17.28px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/articles/sravnenie-unitree-g1-r1-h2/",
@@ -1197,7 +1864,36 @@
       "22px",
       "22px"
     ],
-    "hero": null
+    "hero": {
+      "box": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 736.890625,
+        "bottom": 878.484375
+      },
+      "image": {
+        "x": 0,
+        "y": 141.59375,
+        "w": 1280,
+        "h": 736.890625,
+        "bottom": 878.484375
+      },
+      "copy": {
+        "x": 0,
+        "y": 190.21875,
+        "w": 1280,
+        "h": 639.640625,
+        "bottom": 829.859375
+      },
+      "natural": 1280,
+      "fit": "cover",
+      "leadColor": "color(srgb 1 1 1 / 0.82)",
+      "leadSize": "19.2px",
+      "primary": "rgb(0, 136, 255)",
+      "secondary": "rgb(255, 255, 255)",
+      "secondaryText": "rgb(0, 0, 0)"
+    }
   },
   {
     "path": "/compilations/",
@@ -1373,49 +2069,6 @@
   },
   {
     "path": "/",
-    "w": 1280,
-    "overflow": false,
-    "noindex": "noindex, nofollow",
-    "h1": [
-      "64px"
-    ],
-    "h2": [
-      "34px",
-      "34px",
-      "34px",
-      "34px",
-      "34px"
-    ],
-    "h3": [
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px",
-      "22px"
-    ],
-    "hero": null
-  },
-  {
-    "path": "/",
     "w": 390,
     "overflow": false,
     "noindex": "noindex, nofollow",
@@ -1454,6 +2107,49 @@
       "17px",
       "17px",
       "17px"
+    ],
+    "hero": null
+  },
+  {
+    "path": "/",
+    "w": 1280,
+    "overflow": false,
+    "noindex": "noindex, nofollow",
+    "h1": [
+      "64px"
+    ],
+    "h2": [
+      "34px",
+      "34px",
+      "34px",
+      "34px",
+      "34px"
+    ],
+    "h3": [
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px",
+      "22px"
     ],
     "hero": null
   },
