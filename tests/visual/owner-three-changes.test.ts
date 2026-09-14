@@ -4,3 +4,5 @@ test('owner swaps both collection cover assets at canonical source',()=>{const c
 test('home catalog consumes explicit owner group order',()=>{const src=fs.readFileSync('src/pages/index.astro','utf8');assert.match(src,/homeCatalogOrder/);assert.match(src,/homeCatalogOrder\.map/);assert.doesNotMatch(src,/featuredSlugs/)});
 
 test('humanoid route opts into its owner composition, not dogs/global order',()=>{const r=fs.readFileSync('src/pages/roboty-gumanoidy.astro','utf8');assert.match(r,/<CompilationTemplate[^>]*humanoidsOwnerComposition/);assert.doesNotMatch(fs.readFileSync('src/pages/roboty-sobaki.astro','utf8'),/humanoidsOwnerComposition/)});
+
+test('accepted humanoid ending: blog before final compilations',()=>{const c=JSON.parse(fs.readFileSync('data/content/humanoids-owner-composition.json','utf8'));assert.deepEqual(c.blockOrder.slice(-2),['relatedArticles','otherCompilations']);});
