@@ -1,0 +1,18 @@
+{
+  "decision": "Typography A: H1/H2/H3 only",
+  "preserve": [
+    "body text styles",
+    "blue section labels",
+    "captions",
+    "body font sizes and line heights",
+    "homepage"
+  ],
+  "heroR3": "new comparison: cover image + dark overlay + white title/description/buttons",
+  "notApproved": [
+    "full typography A body changes",
+    "Hero R3 visual acceptance",
+    "merge",
+    "production",
+    "sitewide propagation"
+  ]
+}

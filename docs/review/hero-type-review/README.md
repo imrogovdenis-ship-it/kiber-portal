@@ -36,3 +36,11 @@ Current Hero comparison: `compilation-photo-first.html` and `article-photo-first
 Typography overview now opens two complete real page types (article and blog) in A/B; compact font specimens removed. Four full-page switchers simplified. Previous Hero variants and other typography examples retained.
 
 Reproduce R2: `python3 generate.py && python3 refine-r2.py` (run refinement once after base generation). Local30 + live30 page/viewports PASS at320/390/768/1280/1440. White H1 contrast and geometry verified;7 protected pages unchanged;4 typography page texts unchanged and non-Hero content of2 new examples unchanged. Nine deployed files match HTTPS hashes; originals backed up privately. Owner choice remains pending; no merge/production approval.
+
+## R3: owner heading decision and image-overlay experiment
+
+Owner selected **A headings only** (H1/H2/H3). The full A body/lead/card-text/summary rules are NOT approved. `headings-a-only-r3.css` implements the narrow scope. Original paragraphs, labels, captions, table text and FAQ summaries remain unchanged. Their computed font-size, line-height, weight, color and tracking are compared with the original-style baseline at320/390/768/1280/1440.
+
+New comparison pages: `compilation-overlay.html`, `article-overlay.html`. Image covers full Hero; responsive dark gradient, white H1 and lead; solid white/dark-text buttons. Cover cropping is explicitly requested for this experiment, not a change to previous uncropped variants. Both pages include model anchor and gated request CTA. Original lead sizing is inherited, only its color changes as requested. Headings outside Hero retain original colors.
+
+`python3 refine-r3.py` builds R3 from existing A examples, removing the full typography override and keeping only headings. Local10/live10 page-viewports PASS, body/label computed equality PASS, controls PASS;4 additive deployed hashes PASS;10 protected pages unchanged. Old previews untouched. Rollback is removal of only the4 files in release-r3.json. Main site unchanged; Hero approval pending.
