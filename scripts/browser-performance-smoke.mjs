@@ -16,7 +16,7 @@ await new Promise(r=>server.listen(0,'127.0.0.1',r));
 let browser;const results=[];const failures=[];
 try{
  browser=await chromium.launch();
- for(const width of limits.viewports)for(const route of budget.routes){
+ for(const width of limits.viewports)for(const route of (budget.browserRoutes ?? budget.routes)){
   const context=await browser.newContext({viewport:{width,height:1000}});
   const page=await context.newPage();const errors=[];
   await page.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());

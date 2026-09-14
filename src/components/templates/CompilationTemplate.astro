@@ -125,7 +125,7 @@ const reviewCatalogRobots = template.catalog.robots.map((robot) => ({ ...robot, 
       )) : template.scenarios.items.map((item) => (
         <article class:list={["humanoid-template__scenario-card", template.scenarios.presentation === "photo-gallery" && "humanoid-template__scenario-photo-card"]} style={template.scenarios.presentation === 'photo-gallery' ? {'--scenario-photo-ratio': String((item.image.width ?? 4) / (item.image.height ?? 3))} : undefined}>
           <div class:list={["humanoid-template__scenario-video", template.scenarios.presentation === "photo-gallery" && "humanoid-template__scenario-photo"]}>
-            <img src={item.image.src} alt={item.image.alt} loading="lazy" decoding="async" />
+            <img src={item.image.src} alt={item.image.alt} width={dogsOwnerComposition ? item.image.width : undefined} height={dogsOwnerComposition ? item.image.height : undefined} loading="lazy" decoding="async" />
           </div>
           <div class="humanoid-template__scenario-caption"><h3>{item.title}</h3><p>{item.text}</p></div>
         </article>

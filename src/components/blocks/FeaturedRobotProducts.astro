@@ -9,7 +9,7 @@ for (const robot of robots) if (!descriptions[robot.title]) throw new Error(`Mis
   {robots.map((robot, index) => (
     <article class="article-blocks__featured-model" aria-labelledby={`featured-dog-${index}`}>
       <a class="article-blocks__featured-media" href={robot.href} aria-label={`Перейти на страницу ${robot.title}`}>
-        {robot.image && <img src={robot.image.src} alt={robot.image.alt} loading="lazy" decoding="async" />}
+        {robot.image && <img src={robot.image.src} alt={robot.image.alt} width="720" height="720" loading="lazy" decoding="async" />}
       </a>
       <div class="article-blocks__featured-copy">
         <h3 id={`featured-dog-${index}`}>{robot.title}</h3>

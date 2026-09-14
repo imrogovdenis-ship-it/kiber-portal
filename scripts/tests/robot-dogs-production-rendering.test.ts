@@ -48,3 +48,14 @@ test('owner-approved dogs composition replaces the old gallery without preview i
  assert.doesNotMatch(html,/preview-inquiry|jino-preview\.kiber-portal|dogs-owner-composition\/preview/);
  assert.match(html,/analytics-provider-v4/);
 });
+
+
+test('all dog composition images reserve dimensions; browser coverage keeps existing limits',()=>{
+ const html=readFileSync(htmlFile('/roboty-sobaki/'),'utf8');
+ for(const [tag] of html.matchAll(/<img\b[^>]*>/g)){assert.match(tag,/width="[1-9][0-9]*"/);assert.match(tag,/height="[1-9][0-9]*"/);}
+ const budget=JSON.parse(readFileSync('docs/review/kiber-39/performance-budget.json','utf8'));
+ assert.ok(budget.browserRoutes.includes('/roboty-sobaki/'));
+ for(const route of budget.routes)assert.ok(budget.browserRoutes.includes(route));
+ assert.equal(budget.browserBudgets.initialBytes,1500000);assert.equal(budget.browserBudgets.fullBytes,1800000);assert.equal(budget.browserBudgets.cls,.1);
+ assert.equal(budget.staticBudgets.totalPageBytes,250000);
+});
