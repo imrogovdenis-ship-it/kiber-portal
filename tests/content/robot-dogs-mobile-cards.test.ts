@@ -16,6 +16,10 @@ test('approved dog scenarios use full-width stacked cards only on mobile',()=>{
   assert.ok(rule[1].includes('#main-content[data-kiber-task="robot-dogs-preview"]'),rule[1]);
  }
 });
-test('dog route content outside styles is unchanged',()=>{
- assert.equal(createHash('sha256').update(source.split('<style is:global>')[0]).digest('hex'),'2ce50de3f9a5b97a0e77207fa4061297d5de3231d165a878a4303b848a38728f');
+test('dog route baseline is unchanged outside explicitly approved composition wiring',()=>{
+ const baseline=source
+  .replace("import FeaturedRobotProducts from '../components/blocks/FeaturedRobotProducts.astro';\n",'')
+  .replace("import descriptions from '../../data/content/dogs-featured-descriptions.json';\n",'')
+  .replace('<CompilationTemplate template={previewTemplate} dogsOwnerComposition>\n      <FeaturedRobotProducts slot="featuredProducts" robots={previewTemplate.catalog.robots} descriptions={descriptions} />\n    </CompilationTemplate>','<CompilationTemplate template={previewTemplate} />');
+ assert.equal(createHash('sha256').update(baseline.split('<style is:global>')[0]).digest('hex'),'2ce50de3f9a5b97a0e77207fa4061297d5de3231d165a878a4303b848a38728f');
 });

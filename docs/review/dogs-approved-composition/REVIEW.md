@@ -1,0 +1,1 @@
+Independent read-only reviewer: PASS; no concrete blockers in scoped template/page diff, extracted product renderer and approved copy. Default collections unchanged; canonical data; BaseLayout retained; exactly one catalog branch. Full hosted CI and rendered parity required before release.
