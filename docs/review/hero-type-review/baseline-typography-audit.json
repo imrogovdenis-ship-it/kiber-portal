@@ -1,0 +1,856 @@
+[
+  {
+    "slug": "",
+    "w": 390,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Аренда роботов, которые держат внимание",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "35.1px",
+          "line": "37.908px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "H2",
+          "text": "Тематические подборки роботов для аренды",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Популярные модели для мероприятий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Unitree G1",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Agibot X2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Xiaomi Cyberdog 2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Робот-официант BellaBot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Робот GlamBot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Inchbot L1-W EDU",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Робот-официант KettyBot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "17px",
+          "line": "20.4px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        }
+      ],
+      "hero": [],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "roboty-sobaki/",
+    "w": 390,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Аренда робота-собаки для мероприятий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "40px",
+          "line": "40px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "H2",
+          "text": "Как выбрать робота-собаку под событие",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "30.42px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Unitree Go2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "50.7px",
+          "line": "48.165px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Xiaomi Cyberdog 2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "50.7px",
+          "line": "48.165px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Inchbot L1-W EDU",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "50.7px",
+          "line": "48.165px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Робособаки для разных задач",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "30.42px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Для общения и продолжительной промоработы",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "21px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Для живоподобного образа и съёмок",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "21px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Для научно-технического знакомства",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "21px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Если мероприятие длится несколько часов",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "21px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        }
+      ],
+      "hero": [
+        {
+          "src": "https://www.kiber-portal.ru/images/robot-dogs-preview/roboty-sobaki-img_7912e5ab6826.webp",
+          "natural": [
+            1600,
+            900
+          ],
+          "box": [
+            358,
+            201
+          ],
+          "fit": "contain"
+        }
+      ],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "w": 390,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "28.08px",
+          "line": "32.292px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "H2",
+          "text": "Чем отличаются робособаки на мероприятии",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Unitree Go2: общение, развлечения и проморабота",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Xiaomi CyberDog 2: когда важен технологичный образ",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Inchbot L1-W EDU: технические демонстрации и робототехника",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Сравнение ролей, аккумуляторов и оснащения",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Какую робособаку выбрать для разных мероприятий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Как сравнивать комплектации и условия аренды",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Итог: короткая логика выбора",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Три модели — разные сценарии",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "20px",
+          "line": "20px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        }
+      ],
+      "hero": [
+        {
+          "src": "https://www.kiber-portal.ru/images/robot-dogs-preview/sravnenie-robosobak-dlya-meropriyatiy-img_9184598ad842.webp",
+          "natural": [
+            1600,
+            900
+          ],
+          "box": [
+            358,
+            201
+          ],
+          "fit": "contain"
+        }
+      ],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "articles/",
+    "w": 390,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Блог Кибер Гоши",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "31.2px",
+          "line": "34.944px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Все практические статьи о роботах в одном месте",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "30.42px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Остались вопросы?",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "29.1525px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "hero": [],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "compilations/",
+    "w": 390,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Подборки роботов для аренды",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "31.2px",
+          "line": "34.944px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Подборка — это не список роботов, а готовый сценарий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "30.42px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Как пользоваться подборками",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "21.6px",
+          "line": "23.328px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Подбор под событие",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "21.6px",
+          "line": "23.328px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Выберите подборку под событие",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "30.42px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Остались вопросы?",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.35px",
+          "line": "29.1525px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "hero": [],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "",
+    "w": 1280,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Аренда роботов, которые держат внимание",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "64px",
+          "line": "64px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "H2",
+          "text": "Тематические подборки роботов для аренды",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Популярные модели для мероприятий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Unitree G1",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Agibot X2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Xiaomi Cyberdog 2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Робот-официант BellaBot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Робот GlamBot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Inchbot L1-W EDU",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Робот-официант KettyBot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "22px",
+          "line": "29.7px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        }
+      ],
+      "hero": [],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "roboty-sobaki/",
+    "w": 1280,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Аренда робота-собаки для мероприятий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "64px",
+          "line": "64px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "H2",
+          "text": "Как выбрать робота-собаку под событие",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "41px",
+          "line": "41px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Unitree Go2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "70.4px",
+          "line": "66.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Xiaomi Cyberdog 2",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "70.4px",
+          "line": "66.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Inchbot L1-W EDU",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "70.4px",
+          "line": "66.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Робособаки для разных задач",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "41px",
+          "line": "41px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Для общения и продолжительной промоработы",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.6px",
+          "line": "26.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Для живоподобного образа и съёмок",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.6px",
+          "line": "26.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Для научно-технического знакомства",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.6px",
+          "line": "26.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Если мероприятие длится несколько часов",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "25.6px",
+          "line": "26.88px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        }
+      ],
+      "hero": [
+        {
+          "src": "https://www.kiber-portal.ru/images/robot-dogs-preview/roboty-sobaki-img_7912e5ab6826.webp",
+          "natural": [
+            1600,
+            900
+          ],
+          "box": [
+            440,
+            330
+          ],
+          "fit": "cover"
+        }
+      ],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "articles/sravnenie-robosobak-dlya-meropriyatiy/",
+    "w": 1280,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "56.32px",
+          "line": "56.32px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        },
+        {
+          "tag": "H2",
+          "text": "Чем отличаются робособаки на мероприятии",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Unitree Go2: общение, развлечения и проморабота",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Xiaomi CyberDog 2: когда важен технологичный образ",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Inchbot L1-W EDU: технические демонстрации и робототехника",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Сравнение ролей, аккумуляторов и оснащения",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Какую робособаку выбрать для разных мероприятий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Как сравнивать комплектации и условия аренды",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Итог: короткая логика выбора",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Три модели — разные сценарии",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        }
+      ],
+      "hero": [
+        {
+          "src": "https://www.kiber-portal.ru/images/robot-dogs-preview/sravnenie-robosobak-dlya-meropriyatiy-img_9184598ad842.webp",
+          "natural": [
+            1600,
+            900
+          ],
+          "box": [
+            484,
+            400
+          ],
+          "fit": "cover"
+        }
+      ],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "articles/",
+    "w": 1280,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Блог Кибер Гоши",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "72px",
+          "line": "70.56px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Все практические статьи о роботах в одном месте",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "41px",
+          "line": "41px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Остались вопросы?",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "hero": [],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  },
+  {
+    "slug": "compilations/",
+    "w": 1280,
+    "data": {
+      "h": [
+        {
+          "tag": "H1",
+          "text": "Подборки роботов для аренды",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "72px",
+          "line": "70.56px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Подборка — это не список роботов, а готовый сценарий",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "41px",
+          "line": "41px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Как пользоваться подборками",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "29.6px",
+          "line": "31.968px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H3",
+          "text": "Подбор под событие",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "29.6px",
+          "line": "31.968px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Выберите подборку под событие",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "41px",
+          "line": "41px",
+          "weight": "700",
+          "color": "rgb(54, 50, 62)"
+        },
+        {
+          "tag": "H2",
+          "text": "Остались вопросы?",
+          "font": "Montserrat, Arial, sans-serif",
+          "size": "34px",
+          "line": "34px",
+          "weight": "700",
+          "color": "rgb(255, 255, 255)"
+        }
+      ],
+      "hero": [],
+      "body": "Montserrat, Arial, sans-serif"
+    }
+  }
+]
