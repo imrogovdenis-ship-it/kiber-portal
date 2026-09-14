@@ -28,3 +28,11 @@ Only /preview/hero-type-review/ was added. Remove exactly the paths in release-m
 
 ## Next approval
 Select Hero A/B/C and typography A/B independently. Then author one component-level correction/specification sheet and a shared Astro implementation, preserving the homepage. No full-site propagation before that choice.
+
+## R2 — owner-directed refinement
+
+Current Hero comparison: `compilation-photo-first.html` and `article-photo-first.html`. Full-width dark section; natural full image first, white H1 second, description third on every breakpoint. Existing collection actions retained below. No typography A/B applied to the rest of these new Hero examples.
+
+Typography overview now opens two complete real page types (article and blog) in A/B; compact font specimens removed. Four full-page switchers simplified. Previous Hero variants and other typography examples retained.
+
+Reproduce R2: `python3 generate.py && python3 refine-r2.py` (run refinement once after base generation). Local30 + live30 page/viewports PASS at320/390/768/1280/1440. White H1 contrast and geometry verified;7 protected pages unchanged;4 typography page texts unchanged and non-Hero content of2 new examples unchanged. Nine deployed files match HTTPS hashes; originals backed up privately. Owner choice remains pending; no merge/production approval.
