@@ -2,7 +2,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 ROOT=Path(__file__).parent
 BASE='/preview/scenario-mobile/'
-for variant in ['a','b','c']:
+for variant in ['a','b','c','d']:
  soup=BeautifulSoup((ROOT/'baseline.html').read_text(),'html.parser')
  main=soup.find('main');article=main.select_one('article.humanoid-template')
  for node in list(article.find_all(recursive=False)):
@@ -13,9 +13,9 @@ for variant in ['a','b','c']:
  for node in soup.select('link[rel=canonical],script[type="application/ld+json"]'):node.decompose()
  for node in soup.select('meta[name=robots]'):node['content']='noindex, nofollow'
  for node in soup.select('script[src*="analytics-provider"]'):node['data-production']='false'
- css=soup.new_tag('link',rel='stylesheet',href=BASE+'variants.css?v=2');soup.head.append(css)
+ css=soup.new_tag('link',rel='stylesheet',href=BASE+'variants.css?v=3');soup.head.append(css)
  section=soup.select_one('.humanoid-template__scenarios');section['id']='scenario-preview'
- nav=BeautifulSoup('<nav class="proposal-tabs container" aria-label="Варианты мобильного слайдера">'+''.join('<a href="'+BASE+x+'/#scenario-preview"'+(' aria-current="page"' if x==variant else '')+'>'+x.upper()+'</a>' for x in ['a','b','c'])+'<span>Только тест · вариант '+variant.upper()+'</span></nav>','html.parser');section.insert(0,nav)
+ nav=BeautifulSoup('<nav class="proposal-tabs container" aria-label="Варианты мобильного слайдера">'+''.join('<a href="'+BASE+x+'/#scenario-preview"'+(' aria-current="page"' if x==variant else '')+'>'+x.upper()+'</a>' for x in ['a','b','c','d'])+'<span>Только тест · вариант '+variant.upper()+'</span></nav>','html.parser');section.insert(0,nav)
  strip=section.select_one('.humanoid-template__scenario-strip')
  for img in strip.select('img'):img['loading']='eager'
  if variant=='b':

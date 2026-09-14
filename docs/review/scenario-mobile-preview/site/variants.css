@@ -20,3 +20,14 @@ body[data-scenario-proposal=c] #main-content .humanoid-template__scenario-captio
 body[data-scenario-proposal=c] #main-content .humanoid-template__scenario-head-row{display:flex;justify-content:flex-end;margin-block:1rem}
 body[data-scenario-proposal=c] #main-content .humanoid-template__gallery-nav{display:flex}
 }
+
+@media(max-width:639px){
+.proposal-tabs{flex-wrap:wrap}.proposal-tabs span{flex-basis:100%;margin-left:0}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-strip{display:flex;flex-direction:column;gap:2.25rem;overflow:visible;scroll-snap-type:none;touch-action:pan-y pinch-zoom;padding:0 1rem;width:100%;box-sizing:border-box}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-photo-card{width:100%;max-width:100%;min-width:0;flex:0 0 auto;scroll-snap-align:none}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-photo{height:auto;min-height:0;width:100%;max-width:100%;aspect-ratio:auto}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-photo img{width:100%;height:auto;max-width:100%;aspect-ratio:auto;touch-action:pan-y pinch-zoom}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-caption{padding-top:1rem}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-caption h3{font-size:1.25rem;line-height:1.25}
+body[data-scenario-proposal=d] #main-content .humanoid-template__scenario-caption p{font-size:1rem;line-height:1.55}
+}
