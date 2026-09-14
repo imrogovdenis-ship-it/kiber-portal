@@ -14,7 +14,8 @@
     "/",
     "/robots/arenda-unitree-g1/",
     "/lead/request/",
-    "/lead/thanks/"
+    "/lead/thanks/",
+    "/roboty-sobaki/"
   ],
   "staticBudgets": {
     "htmlBytes": 100000,
