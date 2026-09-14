@@ -41,4 +41,37 @@ const previewTemplate = getRobotDogsPreviewCompilation();
     max-width: none;
     object-fit: contain;
   }
+
+  /* Owner-approved D: only this collection's mobile scenario cards. */
+  @media (max-width: 39.9375rem) {
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-strip {
+      display: flex; flex-direction: column; gap: 2.25rem;
+      overflow: visible; scroll-snap-type: none; touch-action: pan-y pinch-zoom;
+      padding: 0 1rem; width: 100%; box-sizing: border-box;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-photo-card {
+      width: 100%; max-width: 100%; min-width: 0; flex: 0 0 auto;
+      scroll-snap-align: none; overflow: visible; background: transparent;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-photo {
+      height: auto; min-height: 0; width: 100%; max-width: 100%;
+      aspect-ratio: auto; background: transparent; overflow: hidden; border-radius: 1rem;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-photo img {
+      display: block; width: 100%; height: auto; max-width: 100%;
+      aspect-ratio: auto; object-fit: contain; touch-action: pan-y pinch-zoom;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-caption {
+      width: 100%; max-width: none; padding: 1rem 0 0;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-caption h3 {
+      font-size: 1.25rem; line-height: 1.25; margin: 0 0 .6rem;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-caption p {
+      font-size: 1rem; line-height: 1.55; margin: 0; max-height: none; overflow: visible;
+    }
+    #main-content[data-kiber-task="robot-dogs-preview"] .humanoid-template__scenario-head-row {
+      display: none;
+    }
+  }
 </style>
