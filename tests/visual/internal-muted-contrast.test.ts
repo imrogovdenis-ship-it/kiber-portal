@@ -10,3 +10,10 @@ test('approved muted contrast is an internal-only two-token override',()=>{
  assert.ok(layout.includes("{Astro.url.pathname !== '/' && <link rel=\"stylesheet\" href=\"/styles/internal-muted-contrast-v1.css\" />}"));
  assert.match(readFileSync('src/styles/tokens.css','utf8'),/--kp-muted: #797a91;/);
 });
+
+test('internal palette is generated from its semantic token without changing home tokens',()=>{
+ const css=readFileSync('public/styles/internal-muted-contrast-v1.css','utf8');
+ assert.ok(css.startsWith('/* GENERATED FILE'));
+ assert.match(readFileSync('src/generated/design-tokens.ts','utf8'),/"color\.text\.muted\.internal": "#6e6f84"/);
+ assert.ok(!readFileSync('src/styles/tokens.css','utf8').includes('#6e6f84'));
+});

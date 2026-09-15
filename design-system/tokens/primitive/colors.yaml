@@ -15,3 +15,4 @@ tokens:
   messenger.telegram: { type: color, value: "#229ed9" }
   messenger.whatsapp: { type: color, value: "#25d366" }
   neutral.editorial.overlay: { type: color, value: "#0c1019" }
+  neutral.grey.600: { type: color, value: "#6e6f84" }

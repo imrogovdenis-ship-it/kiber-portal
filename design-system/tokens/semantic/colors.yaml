@@ -15,3 +15,4 @@ tokens:
   color.badge: { type: color, value: "{brand.orange.500}", css: "--kp-orange" }
   color.telegram: { type: color, value: "{messenger.telegram}", css: "--kp-telegram" }
   color.whatsapp: { type: color, value: "{messenger.whatsapp}", css: "--kp-whatsapp" }
+  color.text.muted.internal: { type: color, value: "{neutral.grey.600}", emit: false }
