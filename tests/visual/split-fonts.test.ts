@@ -11,3 +11,5 @@ import {createHash}from'node:crypto';
 test('Unicode partition is complete and fallback originals are unchanged',()=>{const rows=JSON.parse(readFileSync('data/design/font-subsets.json','utf8'));for(const r of rows){const all=[...r.commonCodepoints,...r.fallbackCodepoints].sort((a,b)=>a-b);assert.deepEqual(all,r.allCodepoints);assert.equal(new Set(all).size,all.length);assert.ok(r.commonBytes<r.sourceBytes);for(const [file,hash]of [[r.source,r.sourceSha256],[r.common,r.commonSha256]])assert.equal(createHash('sha256').update(readFileSync('public/fonts/montserrat/'+file)).digest('hex'),hash);}});
 
 test('charset and viewport metadata precede inline font CSS',()=>{const x=readFileSync('src/layouts/BaseLayout.astro','utf8');assert.ok(x.indexOf('<SeoHead')<x.indexOf('<style is:inline'),'Keep charset/viewport ahead of large inline CSS');});
+
+test('full original input face includes implicit text inputs without a type attribute',()=>{assert.ok(readFileSync('src/styles/fonts-split.css','utf8').includes('input,textarea{font-family:'));});

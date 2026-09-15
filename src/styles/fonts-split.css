@@ -11,5 +11,5 @@
 @font-face{font-family:"Montserrat Input Full";src:url("/fonts/montserrat/Montserrat-Medium.woff2") format("woff2");font-style:normal;font-weight:500;font-display:swap;}
 @font-face{font-family:"Montserrat Input Full";src:url("/fonts/montserrat/Montserrat-SemiBold.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap;}
 @font-face{font-family:"Montserrat Input Full";src:url("/fonts/montserrat/Montserrat-Bold.woff2") format("woff2");font-style:normal;font-weight:700;font-display:swap;}
-input[type="text"],input[type="tel"],input[type="email"],textarea{font-family:"Montserrat Input Full","Montserrat",sans-serif!important;}
+input,textarea{font-family:"Montserrat Input Full","Montserrat",sans-serif!important;}
 @font-face{font-family:"Montserrat Breadcrumb Fallback";src:local("Arial"),local("Liberation Sans");size-adjust:114%;}
