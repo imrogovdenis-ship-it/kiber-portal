@@ -1,5 +1,6 @@
 ---
 const formAction = '/api/leads';
+const liveEnabled = import.meta.env.DEPLOY_ENV === 'production';
 ---
 
 <div class="contact-lead-popup ym-hide-content" id="lead-form" data-lead-form-popup hidden>
@@ -18,7 +19,7 @@ const formAction = '/api/leads';
       <p id="contact-lead-popup-description">Наш менеджер свяжется с вами, уточнит задачу и предложит подходящего робота для мероприятия.</p>
     </div>
 
-    <form class="ym-hide-content contact-lead-popup__form" method="post" action={formAction} data-lead-form-popup-form>
+    <form class="ym-hide-content contact-lead-popup__form" method="post" action={formAction} data-lead-form-popup-form data-lead-form-live={liveEnabled ? 'true' : 'false'}>
       <input type="hidden" name="source_page" value="/" data-lead-form-source-page />
       <input type="hidden" name="robot" value="general" data-lead-form-robot />
       <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" class="contact-lead-popup__honeypot" />

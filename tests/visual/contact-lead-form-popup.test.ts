@@ -36,5 +36,5 @@ test('lead form popup uses approved minimal fields and legal consent links', () 
 
   assert.match(script, /fetch\(form\.action/);
   assert.match(script, /FormData\(form\)/);
-  assert.match(script, /\/lead\/thanks\/\?request=preview/);
+  assert.match(script, /window.location.href = '\/lead\/thanks\/'/);
 });

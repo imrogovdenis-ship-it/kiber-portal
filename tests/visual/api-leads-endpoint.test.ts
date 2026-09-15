@@ -451,18 +451,14 @@ test('lead endpoint stays preview-safe while disabled lead page exposes only wor
 
   assert.equal(existsSync(routePath), true, 'source route for /api/leads remains available behind explicit integration work');
   assert.match(readFileSync(routePath, 'utf8'), /POST/);
-  assert.match(leadPage, /const leadFormAction = '\/api\/leads'/);
-  assert.match(leadPage, /<form[\s\S]*method="post"[\s\S]*action=\{leadFormAction\}[\s\S]*>/);
-  assert.match(leadPage, /data-state="feature-flagged"/);
-  assert.match(leadPage, /PUBLIC_LEAD_FORM_ENABLED/);
-  assert.match(leadPage, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
+  assert.match(readFileSync(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /<form[\s\S]*method="post"[\s\S]*action=\{formAction\}[\s\S]*>/);
   assert.match(leadPage, /siteConfig\.telegram/);
   assert.match(leadPage, /siteConfig\.whatsapp/);
   assert.match(leadPage, /siteConfig\.max/);
-  assert.match(leadPage, /name="privacy_consent"/);
-  assert.match(leadPage, /required/);
-  assert.match(leadPage, /\/privacy-policy\//);
-  assert.match(leadPage, /\/consent\//);
+  assert.match(readFileSync(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /name="privacy_consent"/);
+  assert.match(readFileSync(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /required/);
+  assert.match(readFileSync(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /\/privacy-policy\//);
+  assert.match(readFileSync(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /\/consent\//);
   assert.match(astroConfig, /output:\s*'static'/);
   assert.equal(contract.routing.enabled, false);
   assert.deepEqual(contract.routing.destinations, []);
@@ -508,4 +504,11 @@ test('nginx serves /api/leads/status as an exact minimal JSON route without env-
   assert.match(nginx, /Cache-Control "no-store"/);
   assert.match(nginx, /return 200 '\{"ok":true,"service":"api-leads","status":"available"\}\\n'/);
   assert.doesNotMatch(nginx, /location = \/api\/leads\/status[\s\S]*?(process\.env|AMOCRM|TELEGRAM|LEAD_ROUTING|credential|token|destination|routing)/i);
+});
+
+test('audit shared form stays preview-safe at runtime', () => {
+  const read = (path: string) => readFileSync(resolve(root,path), 'utf8');
+  assert.match(read('src/pages/lead/request.astro'), /data-lead-form-popup-trigger/);
+  assert.match(read('public/scripts/contact-lead-form-popup.js'), /form.dataset.leadFormLive !== 'true'/);
+  assert.match(read('public/scripts/contact-lead-form-popup.js'), /window.location.hostname/);
 });

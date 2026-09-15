@@ -3,9 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { siteConfig } from '../../config/site';
 import { webPageJsonLd } from '../../lib/seo';
 
-const robot = Astro.url.searchParams.get('robot') ?? 'unitree-g1';
-const leadFormEnabled = import.meta.env.PUBLIC_LEAD_FORM_ENABLED === 'true';
-const leadFormAction = '/api/leads';
+const robot = 'general';
 const contactChannels = [
   {
     title: 'Написать в Telegram',
@@ -23,7 +21,7 @@ const contactChannels = [
   },
   {
     title: 'Написать в MAX',
-    text: 'Дополнительный публичный канал без ожидания подключения формы.',
+    text: 'Дополнительный способ обсудить мероприятие с менеджером.',
     href: siteConfig.max,
     cta: 'Открыть MAX',
     event: 'messenger_click',
@@ -48,46 +46,20 @@ const contactChannels = [
     tabindex="-1"
     data-kiber-task="contact-lead-visual-pass2"
     data-rv="31"
-    data-lead-capability="disabled"
-    data-lead-form-state={leadFormEnabled ? 'enabled' : 'disabled'}
   >
     <section class="lead-request__intro" aria-labelledby="lead-request-title">
       <p>Подбор робота</p>
       <h1 id="lead-request-title">Заявка на подбор робота</h1>
-      <p>Форма заявки появится только после отдельного подключения маршрута заявок. Сейчас используйте рабочие публичные каналы связи — Telegram, WhatsApp или MAX.</p>
+      <p>Оставьте заявку или напишите нам напрямую. Укажите город, дату, площадку и задачу — это поможет подобрать робота.</p>
     </section>
 
     <div class="lead-request__panel">
-      {leadFormEnabled && (
-        <section class="lead-request__pending-form" aria-labelledby="lead-form-title" data-state="feature-flagged" data-vertical-step="lead-form-consent">
-          <h2 id="lead-form-title">Расскажите о мероприятии</h2>
-          <p id="lead-form-help" class="lead-request__note">Форма отправляет только после обязательного согласия с обработкой персональных данных. Live routing включается отдельным approval.</p>
-          <form class="ym-hide-content" method="post" action={leadFormAction} aria-describedby="lead-form-help lead-form-consent-help">
-            <input type="hidden" name="robot" value={robot} />
-            <label>
-              <span>Имя *</span>
-              <input name="name" autocomplete="name" required />
-            </label>
-            <label>
-              <span>Телефон или мессенджер *</span>
-              <input name="contact" autocomplete="tel" required />
-            </label>
-            <label>
-              <span>Email</span>
-              <input name="email" autocomplete="email" type="email" />
-            </label>
-            <label>
-              <span>Событие</span>
-              <textarea name="event" rows="4" placeholder="Город, дата, площадка, сценарий и желаемая модель"></textarea>
-            </label>
-            <label class="lead-request__approval">
-              <input name="privacy_consent" type="checkbox" value="on" required />
-              <span id="lead-form-consent-help">Согласен на обработку персональных данных по <a href="/privacy-policy/">Политике обработки персональных данных</a> и <a href="/consent/">Согласию на обработку персональных данных</a>.</span>
-            </label>
-            <button type="submit" data-analytics-event="form_submit_intent" data-analytics-source="lead_request" data-analytics-placement="lead_form" data-analytics-slug={robot} data-analytics-form-state="enabled">Отправить заявку</button>
-          </form>
-        </section>
-      )}
+      <section class="lead-request__pending-form" aria-labelledby="lead-form-title">
+        <h2 id="lead-form-title">Расскажите о мероприятии</h2>
+        <p>В форме можно оставить имя и телефон для обратной связи.</p>
+        <a href="#lead-form" data-lead-form-popup-trigger>Оставить заявку</a>
+        <noscript><p>Для открытия формы нужен JavaScript. Вы можете связаться с нами напрямую по контактам ниже.</p></noscript>
+      </section>
 
       <section class="lead-request__contacts" aria-labelledby="lead-working-contacts-title" data-vertical-step="lead-to-contacts">
         <p class="lead-request__eyebrow">Рабочие контакты</p>
@@ -102,7 +74,6 @@ const contactChannels = [
               data-analytics-source="lead_request"
               data-analytics-placement="working_contact_channel"
               data-analytics-slug={robot}
-              data-analytics-form-state="disabled"
             >
               <strong>{channel.title}</strong>
               <span>{channel.text}</span>
@@ -110,17 +81,17 @@ const contactChannels = [
             </a>
           ))}
         </div>
-        <p id="lead-request-status" class="lead-request__note" aria-live="polite">Пользователь всегда видит только работающий канал связи; автоматическая форма скрыта до подключения live routing.</p>
+        <p id="lead-request-status" class="lead-request__note" aria-live="polite">Если не получается открыть форму, воспользуйтесь удобным каналом связи выше.</p>
       </section>
 
-      <aside class="lead-request__sidebar" aria-label="Статус обработки заявки">
-        <p>Capability-only</p>
-        <h2>Routing remains disabled</h2>
-        <p>Эта страница не отправляет данные в CRM, Telegram bot, email-отправку или другие live destinations.</p>
+      <aside class="lead-request__sidebar" aria-label="Подготовка заявки">
+        <p>Подбор под задачу</p>
+        <h2>Что сообщить менеджеру</h2>
+        <p>Достаточно первых вводных — подробности обсудим вместе.</p>
         <ul>
-          <li>публичные контакты утверждены для preview/PR;</li>
-          <li>lead destinations array stays empty;</li>
-          <li>live routing requires separate owner approval.</li>
+          <li>город и дата мероприятия;</li>
+          <li>площадка и желаемый формат участия робота;</li>
+          <li>интересующая модель, если уже выбрали.</li>
         </ul>
       </aside>
     </div>

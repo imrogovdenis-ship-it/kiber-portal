@@ -19,7 +19,7 @@
 .site-header__cta { padding: .5625rem 1.125rem; border-radius: 62.4375rem; background: var(--kp-blue); color: var(--kp-white); font-weight: 600; text-decoration: none; }
 .site-header__burger { display: none; flex-direction: column; gap: .3125rem; padding: .625rem; border: 0; background: none; }
 .site-header__burger span { width: 1.5rem; height: .125rem; background: var(--kp-ink); }
-.breadcrumbs { padding: 1.5rem var(--kp-content-padding); background: var(--kp-sky); }
+.breadcrumbs { font-family: Montserrat, "Montserrat Breadcrumb Fallback", Arial, sans-serif; padding: 1.5rem var(--kp-content-padding); background: var(--kp-sky); }
 .breadcrumbs__list { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
 .breadcrumbs__item { display: flex; align-items: center; gap: .75rem; }
 .breadcrumbs__item:not(:last-child)::after { content: '/'; color: var(--kp-muted-soft); }

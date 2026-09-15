@@ -26,13 +26,15 @@ for (const forbidden of ['webhook', 'telegram_token', 'email:', 'mailto:', 'crm'
 }
 
 const requestPage = readFileSync(requestPagePath, 'utf8');
-if (!requestPage.includes('PUBLIC_LEAD_FORM_ENABLED')) failures.push('lead request page must declare the lead-form feature flag');
-if (!requestPage.includes("data-lead-form-state={leadFormEnabled ? 'enabled' : 'disabled'}")) failures.push('lead request page must disclose enabled/disabled lead form state');
-if (/<form[\s\S]*method="post"[\s\S]*action="\/api\/leads"[\s\S]*>/.test(requestPage)) failures.push('disabled lead request page must not render an unavailable /api/leads submission form');
+const popup = readFileSync(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8');
+const client = readFileSync(resolve(root, 'public/scripts/contact-lead-form-popup.js'), 'utf8');
+if (!requestPage.includes('data-lead-form-popup-trigger')) failures.push('standalone request must open the shared form');
+if (!popup.includes("DEPLOY_ENV === 'production'")) failures.push('shared form must gate production explicitly');
+if (!client.includes("form.dataset.leadFormLive !== 'true'") || !client.includes('window.location.hostname')) failures.push('preview submissions must fail closed');
 for (const requiredContact of ['siteConfig.telegram', 'siteConfig.whatsapp', 'siteConfig.max']) {
   if (!requestPage.includes(requiredContact)) failures.push(`lead request page must expose working contact channel: ${requiredContact}`);
 }
-if (!requestPage.includes('data-analytics-form-state="disabled"')) failures.push('lead request contact links must mark the form state as disabled');
+if (!readFileSync(resolve(root, "public/scripts/analytics-provider-v4.js"), "utf8").includes("(?:lead|api|thank-you|success)")) failures.push("lead pages must remain excluded from analytics");
 
 const contactsPage = readFileSync(contactsPagePath, 'utf8');
 if (!contactsPage.includes('lead-routing')) failures.push('contacts page must disclose lead-routing approval blocker');

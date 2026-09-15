@@ -30,7 +30,9 @@ interface Props {
 const { title, description, canonical, noindex = false, image, breadcrumbs = [], jsonLd, chrome = true } = Astro.props;
 const editorialHeadings = /^\/articles(?:\/|$)/.test(Astro.url.pathname) || ['/compilations/', '/compilations', '/roboty-gumanoidy/', '/roboty-gumanoidy', '/roboty-sobaki/', '/roboty-sobaki'].includes(Astro.url.pathname);
 const canonicalUrl = canonical ?? (Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined);
-const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+// Visible Breadcrumbs owns its JSON-LD; ignore duplicate page-level lists.
+const jsonLdItems = (jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])
+  .filter((item) => breadcrumbs.length < 2 || item['@type'] !== 'BreadcrumbList');
 ---
 
 <!doctype html>

@@ -164,7 +164,7 @@ const articleGalleryImages = reviewRobotCards
         { title: 'Тип аудитории', text: 'Взрослая B2B-аудитория на деловой конференции или семейная публика с детьми на празднике?' },
         { title: 'Длительность программы', text: 'Разовый выход на 20–30 минут или присутствие робота-гуманоида на площадке несколько часов подряд?' },
         { title: 'Площадка', text: 'Ровный пол без порогов, свободное место для движения и розетка 220 В рядом — обязательны для обеих моделей.' },
-      ]).map((item) => <article><span aria-hidden="true">✓</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}
+      ]).map((item) => <article><span aria-hidden="true">✓</span><div>{item.title?.trim() && <h3>{item.title}</h3>}<p>{item.text}</p></div></article>)}
     </div>
   </section>
 

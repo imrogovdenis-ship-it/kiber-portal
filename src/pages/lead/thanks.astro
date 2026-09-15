@@ -2,41 +2,34 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { webPageJsonLd } from '../../lib/seo';
 
-const robot = Astro.url.searchParams.get('robot') ?? 'arenda-unitree-g1';
-const robotLabel = robot
-  .replace(/^arenda-/, '')
-  .split('-')
-  .filter(Boolean)
-  .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-  .join(' ');
 ---
 
 <BaseLayout
-  title="Заявка принята — КИБЕР ПОРТАЛ"
+  title="Ваша заявка — КИБЕР ПОРТАЛ"
   description="Подтверждение заявки на подбор робота для мероприятия."
   canonical="https://www.kiber-portal.ru/lead/thanks/"
   noindex
   breadcrumbs={[
     { name: 'Главная', url: '/' },
-    { name: 'Заявка принята', url: '/lead/thanks/' },
+    { name: 'Ваша заявка', url: '/lead/thanks/' },
   ]}
-  jsonLd={webPageJsonLd({ title: 'Заявка принята', description: 'Подтверждение заявки на подбор робота для мероприятия.', url: '/lead/thanks/' })}
+  jsonLd={webPageJsonLd({ title: 'Ваша заявка', description: 'Подтверждение заявки на подбор робота для мероприятия.', url: '/lead/thanks/' })}
 >
   <main class="lead-thanks" id="main-content" tabindex="-1" data-kiber-task="KIBER-contact-lead-visual-pass3b" data-vertical-step="confirmation">
     <section class="lead-thanks__hero-card container" aria-labelledby="lead-thanks-title">
       <div class="lead-thanks__copy">
         <p class="lead-thanks__eyebrow">КИБЕР ПОРТАЛ</p>
-        <h1 id="lead-thanks-title">Спасибо, бриф принят</h1>
-        <p class="lead-thanks__lead">Мы сохранили запрос по модели <strong>{robotLabel}</strong> и подготовим следующий шаг: сценарий, площадку, тайминг и состав сопровождения.</p>
+        <h1 id="lead-thanks-title" data-lead-thanks-title>Ваша заявка</h1>
+        <p class="lead-thanks__lead" data-lead-thanks-message>Эта страница сама по себе не отправляет заявку. Если вы ещё не обращались к нам, оставьте заявку или выберите удобный канал связи.</p>
         <div class="lead-thanks__actions" aria-label="Навигация после заявки">
-          <a class="lead-thanks__button lead-thanks__button--primary" href={`/robots/${robot}/`}>Вернуться к роботу</a>
+          <a class="lead-thanks__button lead-thanks__button--primary" href="/#catalog">Вернуться в каталог</a>
           <a class="lead-thanks__button" href="/contacts">Контакты</a>
         </div>
       </div>
 
       <div class="lead-thanks__signal" aria-label="Что будет дальше">
-        <div class="lead-thanks__mark" aria-hidden="true">✓</div>
-        <p>Менеджер свяжется после подключения утверждённых каналов связи.</p>
+        <div class="lead-thanks__mark" aria-hidden="true" data-lead-thanks-mark>?</div>
+        <p>С менеджером можно обсудить сценарий, площадку, тайминг и сопровождение.</p>
       </div>
     </section>
 
@@ -58,6 +51,7 @@ const robotLabel = robot
       </article>
     </section>
   </main>
+  <script is:inline src="/scripts/lead-thanks.js" defer></script>
 </BaseLayout>
 
 <style>
