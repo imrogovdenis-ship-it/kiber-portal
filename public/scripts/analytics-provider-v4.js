@@ -1,8 +1,9 @@
 /* Three explicit analytics modes. No provider is loaded before preference resolution. */
 (() => {
+  const thanksPage = /^\/lead\/thanks\/?$/.test(location.pathname);
   if (document.currentScript?.dataset.production !== 'true'
     || !['kiber-portal.ru', 'www.kiber-portal.ru'].includes(location.hostname)
-    || /^\/(?:lead|api|thank-you|success)(?:\/|$)/.test(location.pathname)
+    || (!thanksPage && /^\/(?:lead|api|thank-you|success)(?:\/|$)/.test(location.pathname))
     || window.kpMetricaInstalled) return;
   window.kpMetricaInstalled = true;
   const id = 112523930;
@@ -55,7 +56,7 @@
     new MutationObserver(protect).observe(document.documentElement, {childList: true, subtree: true});
     window.ym = window.ym || function () { (window.ym.a = window.ym.a || []).push(arguments); };
     window.ym.l = Date.now();
-    const optional = next === 'extended';
+    const optional = next === 'extended' && !thanksPage;
     window.ym(id, 'init', {
       webvisor: optional, clickmap: optional, trackLinks: false, accurateTrackBounce: true,
       defer: nohit, ecommerce: false, disableYtm: true,

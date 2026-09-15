@@ -34,7 +34,7 @@ if (!client.includes("form.dataset.leadFormLive !== 'true'") || !client.includes
 for (const requiredContact of ['siteConfig.telegram', 'siteConfig.whatsapp', 'siteConfig.max']) {
   if (!requestPage.includes(requiredContact)) failures.push(`lead request page must expose working contact channel: ${requiredContact}`);
 }
-if (!readFileSync(resolve(root, "public/scripts/analytics-provider-v4.js"), "utf8").includes("(?:lead|api|thank-you|success)")) failures.push("lead pages must remain excluded from analytics");
+if (!readFileSync(resolve(root, "public/scripts/analytics-provider-v4.js"), "utf8").includes("(?:lead|api|thank-you|success)")) failures.push("request/API routes must remain excluded; exact thanks exception is owner-approved");
 
 const contactsPage = readFileSync(contactsPagePath, 'utf8');
 if (!contactsPage.includes('lead-routing')) failures.push('contacts page must disclose lead-routing approval blocker');
