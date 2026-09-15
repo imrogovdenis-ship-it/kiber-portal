@@ -1,7 +1,9 @@
+import h2Approved from '../../data/content/robot-card-pilot/arenda-unitree-h2.json';
 import { homeArticles, homeCompilations, homeGosha, homeRobotCardFinalCta } from '../data/home-live';
 import type { ArticleBlocksTemplateData, ArticleRobotCard } from './approved-article-6-types';
 
 export function buildUnitreeG1R1H2Article(robots: ArticleRobotCard[], otherRobots: ArticleRobotCard[] = []): ArticleBlocksTemplateData {
+  robots = robots.map(robot => robot.slug === 'arenda-unitree-h2' ? { ...robot, description: h2Approved.seo.description } : robot);
   const relatedArticles = { ...homeArticles, title: "Продолжить сравнение гуманоидов", description: "Материалы про выбор модели, работу гуманоида и сценарии Unitree на мероприятии." };
   const relatedCompilations = { ...homeCompilations, title: "Подборки роботов для мероприятий", description: "Если выбор не ограничивается моделями Unitree, посмотрите другие классы и сценарии аренды." };
   const finalCta = { ...homeRobotCardFinalCta, title: "Не уверены, какой Unitree подойдёт?", description: "Опишите площадку и момент, который должны увидеть гости. Команда КИБЕР ПОРТАЛ сравнит R1, G1 и H2 уже применительно к вашему событию." };
@@ -69,7 +71,7 @@ export function buildUnitreeG1R1H2Article(robots: ArticleRobotCard[], otherRobot
   "plainText": {
     "title": "Чем три модели отличаются в цифрах",
     "paragraphs": [
-      "По официальным данным Unitree, G1 имеет рост около 132 см, весит около 35 кг и работает около двух часов. Базовая конфигурация использует 23 степени свободы, а расширенные комплектации — до 43. R1 ниже и легче: до 123 см, около 29 кг, 20–26 степеней свободы и примерно час работы.",
+      "По официальным данным Unitree, G1 имеет рост около 132 см, весит около 35 кг и работает около двух часов. R1 ниже и легче: до 123 см, около 29 кг, примерно час работы.",
       "H2 — полноразмерная модель: около 1,8 метра, примерно 70 кг, 31 степень свободы и ориентировочно три часа работы. Эти значения помогают сравнить класс роботов, но не являются обещанием непрерывного выступления: на мероприятии оператор планирует выходы, паузы и замену быстросъёмной батареи под конкретную программу."
     ]
   },
@@ -114,12 +116,6 @@ export function buildUnitreeG1R1H2Article(robots: ArticleRobotCard[], otherRobot
           "около 70 кг"
         ],
         [
-          "Степени свободы",
-          "20–26",
-          "23–43 в зависимости от комплектации",
-          "31"
-        ],
-        [
           "Автономность производителя",
           "около 1 часа",
           "около 2 часов",
@@ -144,7 +140,7 @@ export function buildUnitreeG1R1H2Article(robots: ArticleRobotCard[], otherRobot
           "проходы, сцену и логистику"
         ]
       ],
-      "note": "Характеристики зависят от комплектации и условий работы. Финальную программу, доступность модели и требования к площадке подтверждает менеджер."
+      "note": "Время работы зависит от нагрузки и программы показа. Финальную программу, доступность модели и требования к площадке подтверждает менеджер."
     }
   },
   "obviousChoice": {
