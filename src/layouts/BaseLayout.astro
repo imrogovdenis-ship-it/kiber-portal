@@ -1,4 +1,5 @@
 ---
+import { usesDeferredCardImages } from '../lib/deferred-card-routes';
 import '../styles/fonts.css';
 import '../styles/tokens.css';
 import '../styles/base.css';
@@ -46,6 +47,10 @@ const jsonLdItems = (jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])
     <link rel="stylesheet" href="/styles/mobile-shared-contract-v1.css?v=mobile-shared-3" />
     {editorialHeadings && <link rel="stylesheet" href="/styles/editorial-headings-a.css" />}
     {Astro.url.pathname !== '/' && <link rel="stylesheet" href="/styles/internal-muted-contrast-v1.css" />}
+    {usesDeferredCardImages(Astro.url.pathname) && <>
+      <link rel="stylesheet" href="/styles/deferred-card-images-v1.css" />
+      <script is:inline src="/scripts/internal-cards-v1.js"></script>
+    </>}
   </head>
   <body data-editorial-headings={editorialHeadings ? "a" : undefined}>
     <a class="skip-link" href="#main-content">К основному содержимому</a>

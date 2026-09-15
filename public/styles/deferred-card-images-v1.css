@@ -1,0 +1,2 @@
+/* Default is eager: JS must opt in successfully before any background is deferred. */
+html.defer-card-images .home-image-cards__card:not([data-card-image-ready])::before { background-image: none; }
