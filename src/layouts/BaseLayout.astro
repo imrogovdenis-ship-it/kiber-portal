@@ -45,6 +45,7 @@ const jsonLdItems = (jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])
     {["/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/", "/articles/unitree-g1-na-korporative/", "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/", "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/", "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/", "/articles/sravnenie-unitree-g1-r1-h2/"].includes(Astro.url.pathname) && <link rel="stylesheet" href="/styles/article-review-rhythm-v1.css" />}
     <link rel="stylesheet" href="/styles/mobile-shared-contract-v1.css?v=mobile-shared-3" />
     {editorialHeadings && <link rel="stylesheet" href="/styles/editorial-headings-a.css" />}
+    {Astro.url.pathname !== '/' && <link rel="stylesheet" href="/styles/internal-muted-contrast-v1.css" />}
   </head>
   <body data-editorial-headings={editorialHeadings ? "a" : undefined}>
     <a class="skip-link" href="#main-content">К основному содержимому</a>

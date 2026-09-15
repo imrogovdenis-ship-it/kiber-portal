@@ -1,0 +1,5 @@
+/* Owner-approved gray contrast. Loaded on internal pages only; home palette is unchanged. */
+html:root {
+  --kp-muted: #6e6f84;
+  --kp-robot-card-description-color: #6e6f84;
+}
