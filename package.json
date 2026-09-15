@@ -72,7 +72,7 @@
     "test:header-menu": "node scripts/header-menu-browser.mjs",
     "ci:browser-setup": "playwright install --with-deps chromium",
     "test:metrica-consent": "node scripts/analytics-three-modes-browser.mjs",
-    "test:font-loading": "node scripts/font-loading-browser.mjs",
+    "test:font-loading": "python3 scripts/check-font-coverage.py && node scripts/font-loading-browser.mjs",
     "test:robot-dogs-preview": "node scripts/robot-dogs-preview-rendered-smoke.mjs",
     "test:robot-dogs-contracts": "tsx --test tests/content/robot-dogs-*.test.ts",
     "test:robot-dogs-production": "DEPLOY_ENV=production node scripts/robot-dogs-preview-rendered-smoke.mjs && node --import tsx --test scripts/tests/robot-dogs-production-rendering.test.ts",
