@@ -93,7 +93,7 @@ const articleGalleryImages = reviewRobotCards
     <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея шаблона статьи: горизонтальный слайдер как на подборке гуманоидов">
       {articleGalleryImages.map((image, index) => (
         <figure class="humanoid-template__gallery-item">
-          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
         </figure>
       ))}
     </div>

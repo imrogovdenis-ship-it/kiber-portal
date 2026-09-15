@@ -62,3 +62,11 @@ test('F10 breadcrumb fallback reserves Montserrat-like width before font load', 
  assert.match(read('src/styles/layout.css'), /Montserrat Breadcrumb Fallback/);
  assert.match(read('src/styles/fonts.css'), /size-adjust:\s*114%/);
 });
+
+test('F10 below-fold article galleries do not compete with the hero on initial load', () => {
+ for(const file of ['ApprovedArticle5.astro','ArticleBlocksTemplate.astro']) {
+  const template=read('src/components/templates/'+file);
+  assert.doesNotMatch(template, /<img src=\{image.src\} alt=\{image.alt\} loading=\{index === 0 \? 'eager' : 'lazy'\}/);
+  assert.match(template, /<img src=\{image.src\} alt=\{image.alt\} loading="lazy"/);
+ }
+});

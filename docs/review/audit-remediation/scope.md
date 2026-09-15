@@ -24,6 +24,6 @@ Owner authorized autonomous fixes, full Jino rebuild and testing BEFORE separate
 - Production/merge/DNS/secrets/live API unchanged. Jino only with noindex, analytics off and real POST blocked.
 
 ## Evidence honesty
-Standalone Codex and Claude failed auth; no independent agent PASS claimed.
+Standalone Codex and Claude failed auth. Independent Hermes static review subsequently passed (see independent-review.json).
 Legacy pre-launch tests that required disabled-routing customer copy are migrated to the shared-form safety contract, not suppressed.
 Browser response fixtures intercept every request; never claim fixture results as live CRM delivery.

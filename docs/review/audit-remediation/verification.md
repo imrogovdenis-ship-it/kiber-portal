@@ -17,6 +17,6 @@ Scope: full audited 50-route website. Production publication and merge remain ow
 - F05 exact redirects prepared, not applied to hosting. Existing .htaccess unchanged.
 - F06 color contrast remediation needs approval of visible color changes; homepage design protected.
 - F09 only previously confirmed Go2/Inchbot/CyberDog2 power facts updated. Other manufacturer/operational claims, prices, geography, SLAs and examples need evidence/owner decisions.
-- F10 fix addresses measured breadcrumb font-swap CLS and editorial hero priority; it does not claim all mobile LCP/field CWV are solved.
+- F10 fix addresses measured breadcrumb font-swap CLS and editorial hero priority and below-fold gallery lazy loading; it does not claim all mobile LCP/field CWV are solved.
 
 Deployment evidence and full screenshots/backup live outside web root in the private audit-remediation state. Preview must be noindex, analytics disabled, real submissions disabled. Production is untouched.
