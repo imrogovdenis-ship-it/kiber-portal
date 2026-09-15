@@ -46,10 +46,11 @@ test('battery card text stays synchronized with the approved registry', () => {
 test('F05 redirect proposal is exact and has existing destinations', () => {
  const rules=read('infra/jino-production/audit-legacy-redirects.conf').split('\n').filter(l=>l.startsWith('RewriteRule'));
  assert.equal(rules.length,2);
- for(const rule of rules){const [,pattern,to,flags]=rule.split(' ');assert.equal(flags,'[R=301,L]');assert.ok(pattern.startsWith('^')&&pattern.endsWith('$'));assert.ok(to.startsWith('/robots/'));
- const old=to.replace('/robots/','/').replace(/\/$/,'');const re=new RegExp(pattern);
- assert.ok(re.test(old.slice(1)));assert.ok(re.test(old.slice(1)+'/'));assert.ok(!re.test(to.slice(1)));assert.ok(!re.test(old.slice(1)+'-other'));
- assert.ok(JSON.parse(read('data/content/robot-card-pilot/'+to.split('/')[2]+'.json')).slug);
+ for(const rule of rules){const [,pattern,to,flags]=rule.split(' ');assert.equal(flags,'[R=301,L]');assert.ok(pattern.startsWith('^')&&pattern.endsWith('$'));assert.ok(to.startsWith('https://www.kiber-portal.ru/robots/'));
+ const target=new URL(to).pathname;
+ const old=target.replace('/robots/','/').replace(/\/$/,'');const re=new RegExp(pattern);
+ assert.ok(re.test(old.slice(1)));assert.ok(re.test(old.slice(1)+'/'));assert.ok(!re.test(target.slice(1)));assert.ok(!re.test(old.slice(1)+'-other'));
+ assert.ok(JSON.parse(read('data/content/robot-card-pilot/'+target.split('/')[2]+'.json')).slug);
  }
 });
 
