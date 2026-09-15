@@ -15,6 +15,8 @@ const roots = [
 const textExtensions = new Set(['.astro', '.css', '.ts', '.yaml', '.yml', '.json', '.svg', '.txt']);
 const ignored = new Set([
   'src/styles/tokens.css',
+  // Generated from the semantic internal-page palette, like tokens.css above.
+  'public/styles/internal-muted-contrast-v1.css',
   // Brand SVGs intentionally preserve owner-provided vector fill colors.
   // They are source assets, not component styling tokens; converting them to
   // currentColor breaks <img>-rendered logos in browsers.

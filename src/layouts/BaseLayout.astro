@@ -1,5 +1,7 @@
 ---
-import '../styles/fonts.css';
+import { usesDeferredCardImages } from '../lib/deferred-card-routes';
+import originalFonts from '../styles/fonts.css?inline';
+import splitFonts from '../styles/fonts-split.css?inline';
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/typography.css';
@@ -30,7 +32,9 @@ interface Props {
 const { title, description, canonical, noindex = false, image, breadcrumbs = [], jsonLd, chrome = true } = Astro.props;
 const editorialHeadings = /^\/articles(?:\/|$)/.test(Astro.url.pathname) || ['/compilations/', '/compilations', '/roboty-gumanoidy/', '/roboty-gumanoidy', '/roboty-sobaki/', '/roboty-sobaki'].includes(Astro.url.pathname);
 const canonicalUrl = canonical ?? (Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : undefined);
-const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+// Visible Breadcrumbs owns its JSON-LD; ignore duplicate page-level lists.
+const jsonLdItems = (jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [])
+  .filter((item) => breadcrumbs.length < 2 || item['@type'] !== 'BreadcrumbList');
 ---
 
 <!doctype html>
@@ -38,11 +42,17 @@ const jsonLdItems = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
   <head>
     <script is:inline src="/scripts/analytics-provider-v4.js" data-production={import.meta.env.DEPLOY_ENV === 'production' ? 'true' : 'false'} defer></script>
     <SeoHead {title} {description} canonical={canonicalUrl} noindex={noindex || ['/news/'].includes(Astro.url.pathname)} {image} />
+    <style is:inline set:html={Astro.url.pathname === '/' ? originalFonts : splitFonts} />
     {jsonLdItems.map((item) => <script type="application/ld+json" is:inline set:html={JSON.stringify(item)} />)}
     <slot name="head" />
     {["/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/", "/articles/unitree-g1-na-korporative/", "/articles/kak-rabotaet-robot-gumanoid-prostymi-slovami/", "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/", "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/", "/articles/sravnenie-unitree-g1-r1-h2/"].includes(Astro.url.pathname) && <link rel="stylesheet" href="/styles/article-review-rhythm-v1.css" />}
     <link rel="stylesheet" href="/styles/mobile-shared-contract-v1.css?v=mobile-shared-3" />
     {editorialHeadings && <link rel="stylesheet" href="/styles/editorial-headings-a.css" />}
+    {Astro.url.pathname !== '/' && <link rel="stylesheet" href="/styles/internal-muted-contrast-v1.css" />}
+    {usesDeferredCardImages(Astro.url.pathname) && <>
+      <link rel="stylesheet" href="/styles/deferred-card-images-v1.css" />
+      <script is:inline src="/scripts/internal-cards-v1.js"></script>
+    </>}
   </head>
   <body data-editorial-headings={editorialHeadings ? "a" : undefined}>
     <a class="skip-link" href="#main-content">К основному содержимому</a>

@@ -79,3 +79,10 @@ await mkdir(resolve(root, 'src/styles'), { recursive: true });
 await mkdir(resolve(root, 'src/generated'), { recursive: true });
 await writeFile(resolve(root, 'src/styles/tokens.css'), css);
 await writeFile(resolve(root, 'src/generated/design-tokens.ts'), typescript);
+
+// The approved internal-page palette must not alter the homepage's global CSS.
+const internalMuted = resolveToken('color.text.muted.internal');
+if (typeof internalMuted !== 'string') throw new Error('Internal muted token must be a color string');
+await mkdir(resolve(root, 'public/styles'), { recursive: true });
+await writeFile(resolve(root, 'public/styles/internal-muted-contrast-v1.css'),
+  `${header}\nhtml:root {\n  --kp-muted: ${internalMuted};\n  --kp-robot-card-description-color: ${internalMuted};\n}\n`);

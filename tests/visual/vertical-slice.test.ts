@@ -24,26 +24,29 @@ test('KIBER-33 source exposes Main → Unitree G1 card → lead request → conf
   assert.match(robotHero, /href=\{leadHref\}/);
 
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(requestPage, /PUBLIC_LEAD_FORM_ENABLED/);
-  assert.match(requestPage, /data-lead-form-state=\{leadFormEnabled \? 'enabled' : 'disabled'\}/);
-  assert.match(requestPage, /name="robot"/);
-  assert.match(requestPage, /data-vertical-step="lead-form-consent"/);
+  assert.match(await readFile(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /name="robot"/);
   assert.match(requestPage, /data-vertical-step="lead-to-contacts"/);
 
   const thanksPage = await readFile(resolve(root, 'src/pages/lead/thanks.astro'), 'utf8');
   assert.match(thanksPage, /data-vertical-step="confirmation"/);
-  assert.match(thanksPage, /заявка принята/i);
+  assert.match(thanksPage, /data-lead-thanks-message/);
 });
 
 test('KIBER-33/KIBER-38 lead request source stays preview-safe and exposes working contacts while routing is disabled', async () => {
   const requestPage = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
-  assert.match(requestPage, /const leadFormEnabled = import\.meta\.env\.PUBLIC_LEAD_FORM_ENABLED === 'true'/);
-  assert.match(requestPage, /const leadFormAction = '\/api\/leads'/);
-  assert.match(requestPage, /<form[\s\S]*method="post"[\s\S]*action=\{leadFormAction\}[\s\S]*>/);
-  assert.match(requestPage, /name="privacy_consent"/);
-  assert.match(requestPage, /\/privacy-policy\//);
-  assert.match(requestPage, /\/consent\//);
+  assert.match(await readFile(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /<form[\s\S]*method="post"[\s\S]*action=\{formAction\}[\s\S]*>/);
+  assert.match(await readFile(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /name="privacy_consent"/);
+  assert.match(await readFile(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /\/privacy-policy\//);
+  assert.match(await readFile(resolve(root, 'src/components/layout/ContactLeadFormPopup.astro'), 'utf8'), /\/consent\//);
   assert.match(requestPage, /siteConfig\.telegram/);
   assert.match(requestPage, /siteConfig\.whatsapp/);
   assert.match(requestPage, /siteConfig\.max/);
+});
+
+test('audit shared form stays preview-safe at runtime', async () => {
+  const page = await readFile(resolve(root, 'src/pages/lead/request.astro'), 'utf8');
+  const script = await readFile(resolve(root, 'public/scripts/contact-lead-form-popup.js'), 'utf8');
+  assert.match(page, /data-lead-form-popup-trigger/);
+  assert.match(script, /form.dataset.leadFormLive !== 'true'/);
+  assert.match(script, /window.location.hostname/);
 });

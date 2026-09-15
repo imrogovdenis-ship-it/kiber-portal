@@ -28,10 +28,10 @@ test('category pages expose reference-style hero shell, stats and CTA strip', ()
 
 test('thanks page uses branded confirmation language while keeping routing safety in CI/docs', () => {
   const source = read('src/pages/lead/thanks.astro');
-  assert.match(source, /Спасибо, бриф принят/);
+  assert.match(source, /data-lead-thanks-title/);
   assert.match(source, /lead-thanks__hero-card/);
   assert.match(source, /lead-thanks__signal/);
-  assert.match(source, /Менеджер свяжется после подключения утверждённых каналов связи/);
+  assert.match(source, /Эта страница сама по себе не отправляет заявку/);
   assert.match(source, /background:\s*var\(--kp-reference-blue-deep\)/);
   assert.doesNotMatch(source, /approval|webhook|CRM|Telegram bot|disabled/i);
 });

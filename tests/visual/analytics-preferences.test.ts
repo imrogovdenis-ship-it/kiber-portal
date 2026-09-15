@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import {readFileSync, existsSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 const file='public/scripts/analytics-provider-v4.js';
-function boot(mode='off', session=new Map<string,string>(), adapter=file, savedOff=false) {
+function boot(mode='off', session=new Map<string,string>(), adapter=file, savedOff=false, options:{path?:string,host?:string,production?:boolean}={}) {
  assert.ok(existsSync(file),'v4 adapter exists');
  const listeners:Record<string,Function>={};const scripts:any[]=[];const cookies:string[]=[];let reloads=0;
- const doc:any={currentScript:{dataset:{production:'true'}},documentElement:{dataset:{}},referrer:'https://example.org/?private=yes',querySelectorAll:()=>[],get cookie(){return '_ym_uid=a; _ym_visorc=b; other=keep'},set cookie(v:string){cookies.push(v)},createElement:()=>({remove(){}}),head:{appendChild:(e:any)=>scripts.push(e)}};
- const location={hostname:'www.kiber-portal.ru',origin:'https://www.kiber-portal.ru',pathname:'/',reload:()=>reloads++};
+ const doc:any={currentScript:{dataset:{production:options.production===false?'false':'true'}},documentElement:{dataset:{}},referrer:'https://example.org/?private=yes',querySelectorAll:()=>[],get cookie(){return '_ym_uid=a; _ym_visorc=b; other=keep'},set cookie(v:string){cookies.push(v)},createElement:()=>({remove(){}}),head:{appendChild:(e:any)=>scripts.push(e)}};
+ const location={hostname:options.host||'www.kiber-portal.ru',origin:'https://'+(options.host||'www.kiber-portal.ru'),pathname:options.path||'/',reload:()=>reloads++};
  const win:any={addEventListener:(n:string,f:Function)=>listeners[n]=f};
  const storage={getItem:(k:string)=>session.get(k)||null,setItem:(k:string,v:string)=>session.set(k,v),removeItem:(k:string)=>session.delete(k)};
  runInNewContext(readFileSync(adapter,'utf8'),{window:win,document:doc,location,localStorage:{getItem:()=>savedOff?JSON.stringify({version:4,mode:'off'}):null},sessionStorage:storage,URL,Date,MutationObserver:class{observe(){}}});
@@ -65,3 +65,17 @@ test('active tab schedules bounded expiry and rechecks stored permission',()=>{c
 
 test('combined write/destruct failure reloads only with verified session refusal',()=>{const h=boot('extended');h.scripts[0].onload();h.win.ym=()=>{throw Error('teardown failed')};h.session.set('kp-analytics-session-denied','1');h.change('off','settings',false);assert.equal(h.reloads(),1)});
 test('without safe persistence, failed teardown is explicitly unconfirmed',()=>{const h=boot('extended');h.scripts[0].onload();h.win.ym=()=>{throw Error('teardown failed')};h.change('off','settings',false);assert.equal(h.reloads(),0);assert.equal(h.doc.documentElement.dataset.analyticsStopFailed,'true')});
+
+test('owner-approved thanks URL has a clean pageview without replay',()=>{
+ for(const path of ['/lead/thanks/','/lead/thanks'])for(const mode of ['basic','extended']){
+  const h=boot(mode,new Map(),file,false,{path});assert.equal(h.scripts.length,1);
+  const o=h.win.ym.a[0][2];assert.equal(o.url,'https://www.kiber-portal.ru'+path);
+  assert.equal(o.webvisor,false);assert.equal(o.clickmap,false);assert.equal(o.defer,false);
+ }
+});
+test('thanks exception preserves off, preview and other protected routes',()=>{
+ assert.equal(boot('off',new Map(),file,false,{path:'/lead/thanks/'}).scripts.length,0);
+ for(const path of ['/lead/request/','/lead/thanks/extra','/api/leads/','/success/','/thank-you/'])assert.equal(boot('basic',new Map(),file,false,{path}).scripts.length,0,path);
+ assert.equal(boot('basic',new Map(),file,false,{path:'/lead/thanks/',host:'jino-preview.kiber-portal.ru'}).scripts.length,0);
+ assert.equal(boot('basic',new Map(),file,false,{path:'/lead/thanks/',production:false}).scripts.length,0);
+});

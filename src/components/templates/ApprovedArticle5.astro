@@ -81,7 +81,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
           <p class="article-blocks__eyebrow">{block.eyebrow}</p>
           <h2 id={`${block.id}-title`}>{block.title}</h2>
         </div>
-        <div class="article-blocks__checks">{block.items.map((item) => <article><span aria-hidden="true">✓</span><div>{typeof item === 'string' ? <p>{item}</p> : <><h3>{item.title}</h3><p>{item.text}</p></>}</div></article>)}</div>
+        <div class="article-blocks__checks">{block.items.map((item) => <article><span aria-hidden="true">✓</span><div>{typeof item === 'string' ? <p>{item}</p> : <>{item.title?.trim() && <h3>{item.title}</h3>}<p>{item.text}</p></>}</div></article>)}</div>
       </section>
     ) : block.type === 'comparisonBlock' ? (
       <section id={block.id} class="article-blocks__comparison container" data-block-id={block.id} aria-labelledby={`${block.id}-title`}>
@@ -171,7 +171,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
     <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея шаблона статьи: горизонтальный слайдер как на подборке гуманоидов">
       {articleGalleryImages.map((image, index) => (
         <figure class="humanoid-template__gallery-item">
-          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
         </figure>
       ))}
     </div>
@@ -249,7 +249,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
         { title: 'Тип аудитории', text: 'Взрослая B2B-аудитория на деловой конференции или семейная публика с детьми на празднике?' },
         { title: 'Длительность программы', text: 'Разовый выход на 20–30 минут или присутствие робота-гуманоида на площадке несколько часов подряд?' },
         { title: 'Площадка', text: 'Ровный пол без порогов, свободное место для движения и розетка 220 В рядом — обязательны для обеих моделей.' },
-      ]).map((item) => <article><span aria-hidden="true">✓</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}
+      ]).map((item) => <article><span aria-hidden="true">✓</span><div>{item.title?.trim() && <h3>{item.title}</h3>}<p>{item.text}</p></div></article>)}
     </div>
   </section>
 
@@ -307,7 +307,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {(isPackageArticle ? reviewRobotCards : reviewRobotCards.slice(0, 4)).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {(isPackageArticle ? reviewRobotCards : reviewRobotCards.slice(0, 4)).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="lazy" />)}
     </div>
   </section>
 
