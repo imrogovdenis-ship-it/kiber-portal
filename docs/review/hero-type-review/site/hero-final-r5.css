@@ -1,0 +1,2 @@
+/* R5 owner refinement: secondary Hero action only. Primary blue button untouched. */
+#main-content .rv-overlay-hero .humanoid-template__button:not(.humanoid-template__button--primary){background:#fff;border-color:#fff;color:#000!important}

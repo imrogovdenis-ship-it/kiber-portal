@@ -1,0 +1,7 @@
+/* Owner-approved A HEADINGS ONLY. No paragraph, lead, eyebrow, label, summary or card-copy rules. */
+body[data-rv-headings=a]{--rv-h1:52px;--rv-h2:34px;--rv-h3:22px}
+html:root body[data-rv-headings=a] #main-content[id=main-content] h1{font:700 var(--rv-h1)/1.16 Montserrat,Arial,sans-serif!important;letter-spacing:-.025em!important}
+html:root body[data-rv-headings=a] #main-content[id=main-content] h2{font:700 var(--rv-h2)/1.22 Montserrat,Arial,sans-serif!important;letter-spacing:-.015em!important}
+html:root body[data-rv-headings=a] #main-content[id=main-content] h3{font:700 var(--rv-h3)/1.3 Montserrat,Arial,sans-serif!important;letter-spacing:-.01em!important}
+@media(max-width:850px){body[data-rv-headings=a]{--rv-h1:38px;--rv-h2:30px}}
+@media(max-width:600px){body[data-rv-headings=a]{--rv-h1:32px;--rv-h2:26px;--rv-h3:20px}}
