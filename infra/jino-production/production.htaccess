@@ -1,5 +1,7 @@
 RewriteEngine On
 # Short technical package: only confirmed legacy destinations and built slash aliases.
+RewriteRule ^arenda-sketchbot/?$ https://www.kiber-portal.ru/robots/arenda-sketchbot/ [R=301,L]
+RewriteRule ^arenda-uv-box/?$ https://www.kiber-portal.ru/robots/arenda-uv-box/ [R=301,L]
 RewriteRule ^arenda-agibot-x2/?$ https://www.kiber-portal.ru/robots/arenda-agibot-x2/ [R=301,L]
 RewriteRule ^arenda-bellabot/?$ https://www.kiber-portal.ru/robots/arenda-bellabot/ [R=301,L]
 RewriteRule ^arenda-glambot/?$ https://www.kiber-portal.ru/robots/arenda-glambot/ [R=301,L]
@@ -32,7 +34,7 @@ RewriteCond %{HTTP_HOST} !^www\.kiber-portal\.ru$ [NC]
 RewriteRule ^ https://www.kiber-portal.ru%{REQUEST_URI} [R=301,END]
 RewriteRule ^api/leads(?:/status|/)?$ bridge.php [END]
 RewriteRule ^sitemap-index\.xml$ sitemap.xml [END]
-RewriteRule ^test-blok/?$ / [R=301,END]
+RewriteRule ^test-blok/?$ https://www.kiber-portal.ru/ [R=301,END]
 RewriteRule ^ - [END]
 Options -Indexes
 ErrorDocument 404 /404.html
