@@ -93,7 +93,7 @@ const articleGalleryImages = reviewRobotCards
     <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея шаблона статьи: горизонтальный слайдер как на подборке гуманоидов">
       {articleGalleryImages.map((image, index) => (
         <figure class="humanoid-template__gallery-item">
-          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
         </figure>
       ))}
     </div>
@@ -164,7 +164,7 @@ const articleGalleryImages = reviewRobotCards
         { title: 'Тип аудитории', text: 'Взрослая B2B-аудитория на деловой конференции или семейная публика с детьми на празднике?' },
         { title: 'Длительность программы', text: 'Разовый выход на 20–30 минут или присутствие робота-гуманоида на площадке несколько часов подряд?' },
         { title: 'Площадка', text: 'Ровный пол без порогов, свободное место для движения и розетка 220 В рядом — обязательны для обеих моделей.' },
-      ]).map((item) => <article><span aria-hidden="true">✓</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}
+      ]).map((item) => <article><span aria-hidden="true">✓</span><div>{item.title?.trim() && <h3>{item.title}</h3>}<p>{item.text}</p></div></article>)}
     </div>
   </section>
 
@@ -220,7 +220,7 @@ const articleGalleryImages = reviewRobotCards
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {reviewRobotCards.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="eager" />)}
+      {reviewRobotCards.slice(0, 4).map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} imageLoading="lazy" />)}
     </div>
   </section>
 

@@ -1,0 +1,152 @@
+[
+  {
+    "from": "/arenda-agibot-x2",
+    "to": "/robots/arenda-agibot-x2/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-bellabot",
+    "to": "/robots/arenda-bellabot/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-glambot",
+    "to": "/robots/arenda-glambot/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-inchbot-l1-w-edu",
+    "to": "/robots/arenda-inchbot-l1-w-edu/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-kettybot",
+    "to": "/robots/arenda-kettybot/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-klipmeiker",
+    "to": "/robots/arenda-klipmeiker/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-mini-robo-kofeyni",
+    "to": "/robots/arenda-mini-robo-kofeyni/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-noetix-bumi",
+    "to": "/robots/arenda-noetix-bumi/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-promobot-v4",
+    "to": "/robots/arenda-promobot-v4/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-robo-kofeyni",
+    "to": "/robots/arenda-robo-kofeyni/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-roboshashki",
+    "to": "/robots/arenda-roboshashki/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-robot-barmen",
+    "to": "/robots/arenda-robot-barmen/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-robota-ardi",
+    "to": "/robots/arenda-robota-ardi/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-robota-hudozhnika-a4",
+    "to": "/robots/arenda-robota-hudozhnika-a4/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-robota-sofiya",
+    "to": "/robots/arenda-robota-sofiya/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-robota-tron",
+    "to": "/robots/arenda-robota-tron/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-senserobot",
+    "to": "/robots/arenda-senserobot/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-unitree-g1",
+    "to": "/robots/arenda-unitree-g1/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-unitree-go2",
+    "to": "/robots/arenda-unitree-go2/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-unitree-h2",
+    "to": "/robots/arenda-unitree-h2/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-unitree-r1",
+    "to": "/robots/arenda-unitree-r1/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/arenda-xiaomi-cyberdog-2",
+    "to": "/robots/arenda-xiaomi-cyberdog-2/",
+    "status": 301,
+    "source": "data/seo/route-inventory.json; live preview 404; exact model slug"
+  },
+  {
+    "from": "/neobychnyi-podarok-direktoru-robot",
+    "to": "/articles/neobychnyi-podarok-direktoru-robot-v-kabinete/",
+    "status": 301,
+    "source": "historical URL registry; corresponding published article subject"
+  },
+  {
+    "from": "/sravnenie-unitree-g1-r1-h2",
+    "to": "/articles/sravnenie-unitree-g1-r1-h2/",
+    "status": 301,
+    "source": "historical URL registry; corresponding published article subject"
+  },
+  {
+    "from": "/unitree-g1-ili-agibot-x2",
+    "to": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+    "status": 301,
+    "source": "historical URL registry; corresponding published article subject"
+  }
+]

@@ -37,9 +37,10 @@ assert.match(footerHtml, /ОГРНИП\s*326774600084499/);
 assert.doesNotMatch(contactsHtml, /\+7 000 000-00-00|hello@kiber-portal\.ru|wa\.me\/70000000000|t\.me\/kiber_portal/);
 
 assert.match(leadMain, /data-rv="31"/);
-assert.match(leadMain, /data-lead-capability="disabled"/);
+assert.match(leadMain, /data-lead-form-popup-trigger/);
 assert.match(leadMain, /lead-request__panel/);
-assert.match(leadMain, /Routing remains disabled/);
+assert.match(leadHtml, /data-lead-form-live="(?:true|false)"/);
+assert.match(leadHtml, /contact-lead-form-popup\.js/);
 assert.doesNotMatch(leadMain, /PUBLIC_LEAD_FORM_ENDPOINT|amoCRM|Telegram bot token/i);
 
 const report = {

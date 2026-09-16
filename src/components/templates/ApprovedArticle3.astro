@@ -102,7 +102,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
     <div class="humanoid-template__drag-gallery humanoid-template__gallery-strip" data-drag-slider={gallerySliderId} aria-label="Галерея сравнения Unitree G1 и Agibot X2">
       {articleGalleryImages.map((image, index) => (
         <figure class="humanoid-template__gallery-item">
-          <img src={image.src} alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" draggable="false" />
+          <img src={image.src} alt={image.alt} loading="lazy" decoding="async" draggable="false" />
         </figure>
       ))}
     </div>
@@ -246,7 +246,7 @@ const articleGalleryImages = content?.gallery?.images ?? reviewRobotCards
       <p>{content?.catalog?.description ?? 'Карточки ведут на модели, которые логично продолжить смотреть после разбора: гуманоиды для сцены, интерактива и вау-эффекта на мероприятии.'}</p>
     </div>
     <div class="vertical-slice__card-grid">
-      {catalogRobots.map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} hideBadge={true} imageLoading="eager" />)}
+      {catalogRobots.map((robot) => <RobotCard {...{ ...robot, analytics: { ...robot.analytics, placement: 'related' as const } }} hideDisclaimer={true} hideLink={true} hideBadge={true} imageLoading="lazy" />)}
     </div>
   </section>
 

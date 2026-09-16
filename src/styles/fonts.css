@@ -30,3 +30,11 @@
   font-display: swap;
 }
 
+
+/* Match the wider approved font before it loads; applies to breadcrumbs only.
+   Final typography stays Montserrat. Arial/Liberation Sans cover desktop QA. */
+@font-face {
+  font-family: "Montserrat Breadcrumb Fallback";
+  src: local("Arial"), local("Liberation Sans");
+  size-adjust: 114%;
+}

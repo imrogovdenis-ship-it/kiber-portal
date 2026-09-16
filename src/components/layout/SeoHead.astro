@@ -18,10 +18,10 @@ const twitterCard = image ? 'summary_large_image' : 'summary';
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- Preload existing above-fold weights to avoid fallback swaps in headings and the cookie banner. -->
-<link rel="preload" href="/fonts/montserrat/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/montserrat/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/montserrat/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/fonts/montserrat/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={Astro.url.pathname === '/' ? "/fonts/montserrat/Montserrat-Regular.woff2" : "/fonts/montserrat/Montserrat-Regular.common.woff2"} as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={Astro.url.pathname === '/' ? "/fonts/montserrat/Montserrat-SemiBold.woff2" : "/fonts/montserrat/Montserrat-SemiBold.common.woff2"} as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={Astro.url.pathname === '/' ? "/fonts/montserrat/Montserrat-Bold.woff2" : "/fonts/montserrat/Montserrat-Bold.common.woff2"} as="font" type="font/woff2" crossorigin />
+<link rel="preload" href={Astro.url.pathname === '/' ? "/fonts/montserrat/Montserrat-Medium.woff2" : "/fonts/montserrat/Montserrat-Medium.common.woff2"} as="font" type="font/woff2" crossorigin />
 <meta name="description" content={description} />
 <meta name="robots" content={robots} />
 <meta property="og:locale" content="ru_RU" />
