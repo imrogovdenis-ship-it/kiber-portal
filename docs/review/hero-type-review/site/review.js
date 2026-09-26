@@ -1,0 +1,4 @@
+// Design review only: no analytics, no form submission, no external lead routing.
+document.addEventListener('submit',e=>e.preventDefault(),true);
+const demo=()=>{let d=document.querySelector('.rv-demo');if(!d){d=document.createElement('dialog');d.className='rv-demo';d.innerHTML='<h2>Это дизайн-превью</h2><p>Заявки и сообщения здесь не отправляются. Сейчас выбираем оформление; действующий сайт работает отдельно.</p><button type="button">Понятно</button>';d.querySelector('button').onclick=()=>d.close();document.body.append(d)}d.showModal()};
+document.addEventListener('click',e=>{const a=e.target.closest('a');if(a&&(/\/lead\/|contact-messengers|lead-form|^tel:|wa.me|t.me|whatsapp|mailto:/.test(a.getAttribute('href')||'')||a.hasAttribute('data-lead-form-popup-trigger')||a.hasAttribute('data-contact-messenger-trigger'))){e.preventDefault();e.stopImmediatePropagation();demo()}},true);

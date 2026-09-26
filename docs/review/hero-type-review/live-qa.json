@@ -1,0 +1,3230 @@
+[
+  {
+    "file": "hero.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [
+      {
+        "id": "compilation-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 326,
+        "overflow": false
+      },
+      {
+        "id": "article-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 326,
+        "overflow": false
+      },
+      {
+        "id": "compilation-b",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 326,
+        "overflow": false
+      },
+      {
+        "id": "article-b",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 326,
+        "overflow": false
+      },
+      {
+        "id": "compilation-c",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 326,
+        "overflow": false
+      },
+      {
+        "id": "article-c",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 326,
+        "overflow": false
+      }
+    ],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "typography.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-a.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-b.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "30px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-a.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-b.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "30px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-a.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-b.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-a.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "26px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-b.html",
+    "w": 390,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "20px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "25px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "hero.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [
+      {
+        "id": "compilation-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 640,
+        "overflow": false
+      },
+      {
+        "id": "article-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 640,
+        "overflow": false
+      },
+      {
+        "id": "compilation-b",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 640,
+        "overflow": false
+      },
+      {
+        "id": "article-b",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 640,
+        "overflow": false
+      },
+      {
+        "id": "compilation-c",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 640,
+        "overflow": false
+      },
+      {
+        "id": "article-c",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 640,
+        "overflow": false
+      }
+    ],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "typography.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-a.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "38px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-b.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "36px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-a.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "38px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-b.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "36px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-a.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "38px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-b.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "36px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-a.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "38px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "30px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-b.html",
+    "w": 768,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "36px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "28px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "hero.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [
+      {
+        "id": "compilation-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 1152,
+        "overflow": false
+      },
+      {
+        "id": "article-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 1152,
+        "overflow": false
+      },
+      {
+        "id": "compilation-b",
+        "fit": "contain",
+        "ratio": 1.7778018267607463,
+        "natural": 1.7777777777777777,
+        "width": 641.703125,
+        "overflow": false
+      },
+      {
+        "id": "article-b",
+        "fit": "contain",
+        "ratio": 1.7778018267607463,
+        "natural": 1.7777777777777777,
+        "width": 641.703125,
+        "overflow": false
+      },
+      {
+        "id": "compilation-c",
+        "fit": "contain",
+        "ratio": 1.7778217038940503,
+        "natural": 1.7777777777777777,
+        "width": 702.65625,
+        "overflow": false
+      },
+      {
+        "id": "article-c",
+        "fit": "contain",
+        "ratio": 1.7778217038940503,
+        "natural": 1.7777777777777777,
+        "width": 702.65625,
+        "overflow": false
+      }
+    ],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "typography.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-a.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-b.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-a.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-b.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-a.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-b.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-a.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-b.html",
+    "w": 1280,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "hero.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [
+      {
+        "id": "compilation-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 1152,
+        "overflow": false
+      },
+      {
+        "id": "article-a",
+        "fit": "contain",
+        "ratio": 1.7777777777777777,
+        "natural": 1.7777777777777777,
+        "width": 1152,
+        "overflow": false
+      },
+      {
+        "id": "compilation-b",
+        "fit": "contain",
+        "ratio": 1.7778018267607463,
+        "natural": 1.7777777777777777,
+        "width": 641.703125,
+        "overflow": false
+      },
+      {
+        "id": "article-b",
+        "fit": "contain",
+        "ratio": 1.7778018267607463,
+        "natural": 1.7777777777777777,
+        "width": 641.703125,
+        "overflow": false
+      },
+      {
+        "id": "compilation-c",
+        "fit": "contain",
+        "ratio": 1.7778217038940503,
+        "natural": 1.7777777777777777,
+        "width": 702.65625,
+        "overflow": false
+      },
+      {
+        "id": "article-c",
+        "fit": "contain",
+        "ratio": 1.7778217038940503,
+        "natural": 1.7777777777777777,
+        "width": 702.65625,
+        "overflow": false
+      }
+    ],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "typography.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-a.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "article-b.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Чем отличаются робособаки на мероприятии"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2: общение, развлечения и проморабота"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi CyberDog 2: когда важен технологичный образ"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU: технические демонстрации и робототехника"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сравнение ролей, аккумуляторов и оснащения"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Какую робособаку выбрать для разных мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как сравнивать комплектации и условия аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Итог: короткая логика выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Три модели — разные сценарии"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Что уточнить по каждой модели"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": ""
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы о выборе и сравнении робособак"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робо-собаки из сравнения"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Материалы для уточнения выбора"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов по теме"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-a.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "compilation-b.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Аренда робота-собаки для мероприятий"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как выбрать робота-собаку под событие"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Робособаки для разных задач"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для общения и продолжительной промоработы"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для живоподобного образа и съёмок"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Для научно-технического знакомства"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Если мероприятие длится несколько часов"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Сценарии для робота-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Встреча гостей и общение"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Промо и раздатка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выставка"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Школа и научное шоу"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Роботы-собаки"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Unitree Go2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Xiaomi Cyberdog 2"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Inchbot L1-W EDU"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Вопросы про аренду робота-собаки"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Тематические подборки роботов для аренды"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-a.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "blog-b.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Блог Кибер Гоши"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Все практические статьи о роботах в одном месте"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-a.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "52px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "34px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  },
+  {
+    "file": "collections-b.html",
+    "w": 1440,
+    "overflow": false,
+    "images": [],
+    "headings": [
+      {
+        "tag": "H1",
+        "size": "48px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборки роботов для аренды"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подборка — это не список роботов, а готовый сценарий"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Как пользоваться подборками"
+      },
+      {
+        "tag": "H3",
+        "size": "22px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Подбор под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(54, 50, 62)",
+        "text": "Выберите подборку под событие"
+      },
+      {
+        "tag": "H2",
+        "size": "32px",
+        "color": "rgb(255, 255, 255)",
+        "text": "Остались вопросы?"
+      }
+    ],
+    "heroes": [],
+    "noindex": "noindex,nofollow"
+  }
+]
