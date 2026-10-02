@@ -1,0 +1,156 @@
+{
+  "kind": "kiber_owner_approval",
+  "page": "compilation",
+  "route": "/roboty-promoutery/",
+  "title": "Роботы-промоутеры для мероприятий",
+  "approvedAt": "2026-09-22T18:57:49+03:00",
+  "approvedBy": "Александр Маркин",
+  "source": "Telegram owner message 2026-09-22: “Да это тот навык так отлично получилось всё фиксирую ... как готовую ... проверь всё ли готово к публикации новой версии сайта”",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-promoutery/?v=hero-photoreal-1",
+  "status": "owner_approved_on_jino_preview",
+  "productionApproved": false,
+  "mergeApproved": false,
+  "scope": {
+    "approved": "Подборка /roboty-promoutery/ принята владельцем после замены Hero на фотореалистичную gpt-image-2-high иллюстрацию по референсам роботов.",
+    "keptOnPreview": true,
+    "productionDeploy": "not approved",
+    "nextWork": "проверка готовности полной новой версии сайта к production-публикации; production/merge/DNS/secrets/analytics/live routing остаются gated до отдельного финального действия"
+  },
+  "finalVisibleState": {
+    "h1": "Роботы-промоутеры для мероприятий",
+    "seoTitle": "Роботы-промоутеры для мероприятий | КИБЕР ПОРТАЛ",
+    "primaryKeyword": "робот-промоутер",
+    "route": "/roboty-promoutery/",
+    "blockOrder": [
+      "Hero",
+      "заголовок + 2 абзаца",
+      "Каталог роботов",
+      "Цитата Гоши",
+      "заголовок + 3 абзаца",
+      "Галерея",
+      "Гид по выбору",
+      "Сценарии",
+      "Цитата Гоши-шутка",
+      "повтор каталога",
+      "FAQ",
+      "CTA2",
+      "Блог Кибер Гоши — 6 статей",
+      "Подборки — 5 карточек"
+    ],
+    "mediaAcceptance": "Галерея/сценарии ранее приняты; Hero принят владельцем после перехода на openai-codex/gpt-image-2-high с reference images.",
+    "heroImage": "Фотореалистичная 16:9 Hero-иллюстрация по референсам Promobot V4, Unitree G1, Unitree Go2, Agibot X2, KettyBot; файл /images/compilations/roboty-promoutery/hero/roboty-promoutery-hero-20260922.webp"
+  },
+  "sourceFiles": [
+    "data/content/compilation-promoters.json",
+    "src/pages/roboty-promoutery.astro",
+    "src/components/templates/CompilationTemplate.astro",
+    "public/images/compilations/roboty-promoutery/gallery/*",
+    "public/images/compilations/roboty-promoutery/hero/roboty-promoutery-hero-20260922.webp"
+  ],
+  "evidence": [
+    "docs/review/compilation-roboty-promoutery/owner-approval-2026-09-22/readiness-summary-approved.json",
+    "docs/review/compilation-roboty-promoutery/owner-feedback-4-2026-09-22/image-swap-gallery-scenarios.md",
+    "docs/review/compilation-roboty-promoutery/owner-feedback-3-2026-09-22/defect-owner-fixes-3.md",
+    "docs/review/compilation-roboty-promoutery/owner-feedback-2-2026-09-22/defect-owner-fixes-2.md",
+    "docs/review/compilation-roboty-promoutery/plan-approval-2026-09-22/plan-before-writing.md",
+    "docs/review/compilation-roboty-promoutery/hero-illustration-2026-09-22/prompt-photorealistic-hero.md",
+    "docs/review/compilation-roboty-promoutery/hero-illustration-2026-09-22/build-test-results.json",
+    "docs/review/compilation-roboty-promoutery/hero-illustration-2026-09-22/jino-http-check-photoreal-hero.json"
+  ],
+  "verification": {
+    "npmRunBuild": "PASS after photoreal Hero insertion",
+    "jinoRenderedQa": "PASS",
+    "robots": "noindex,nofollow on preview",
+    "browserConsole": "0 JS errors / no failed resources in final browser audit",
+    "brokenImages": 0,
+    "missingAlt": 0,
+    "duplicateGalleryScenarioSrc": "owner-approved final swap; G1/Go2 intentionally moved between blocks, no same-src duplicate for these pairs",
+    "productionTouched": false,
+    "localJinoHtmlSha256": "9c5347a1e501a2e3c89eb7790fd569cedd3a0f0f6742175e56116eccbe5eeb40",
+    "routeSmoke": "PASS after photoreal Hero insertion",
+    "approvedPreviewVersion": "hero-photoreal-1",
+    "heroAssetSha256": "61f35825bf58d85ec65c3263dcda082774a992331af6f6cfcbe060acbdc101da"
+  },
+  "robots": [
+    {
+      "route": "/robots/arenda-promobot-v4/",
+      "title": "Promobot V4",
+      "role": "core",
+      "status": "approved/current source"
+    },
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "title": "Unitree G1",
+      "role": "core",
+      "status": "approved/current source"
+    },
+    {
+      "route": "/robots/arenda-agibot-x2/",
+      "title": "Agibot X2",
+      "role": "core",
+      "status": "approved/current source"
+    },
+    {
+      "route": "/robots/arenda-unitree-go2/",
+      "title": "Unitree Go2",
+      "role": "core",
+      "status": "approved/current source"
+    },
+    {
+      "route": "/robots/arenda-robota-ardi/",
+      "title": "Робот Арди",
+      "role": "core",
+      "status": "approved/current source"
+    },
+    {
+      "route": "/robots/arenda-uv-box/",
+      "title": "Интерактивная витрина UV-BOX",
+      "role": "core",
+      "status": "approved/current source"
+    },
+    {
+      "route": "/robots/arenda-kettybot/",
+      "title": "Робот-официант KettyBot",
+      "role": "core",
+      "status": "approved/current source"
+    }
+  ],
+  "relatedArticles": [
+    {
+      "route": "/articles/robot-stendist-dlya-vystavki/",
+      "title": "Робот-стендист для выставки: как выбрать роль у стенда",
+      "status": "current/release-safe related article",
+      "role": "support"
+    },
+    {
+      "route": "/articles/prezentaciya-produkta-idei-s-robotami/",
+      "title": "Робот на презентацию продукта или идеи",
+      "status": "current/release-safe related article",
+      "role": "support"
+    },
+    {
+      "route": "/articles/unitree-g1-agibot-x2-kakogo-robota-vybrat/",
+      "title": "Unitree G1 или Agibot X2: какого робота-гуманоида выбрать для мероприятия",
+      "status": "current/release-safe related article",
+      "role": "support"
+    },
+    {
+      "route": "/articles/unitree-go2-na-meropriyatii/",
+      "title": "Unitree Go2 на мероприятии: как встроить робопса в программу",
+      "status": "current/release-safe related article",
+      "role": "support"
+    },
+    {
+      "route": "/articles/xiaomi-cyberdog-2-v-promo-akciyah/",
+      "title": "Xiaomi CyberDog 2 в промо-акциях: как связать показ с брендом",
+      "status": "current/release-safe related article",
+      "role": "support"
+    },
+    {
+      "route": "/articles/robot-dlya-registracii-gostey-i-bedzhey-na-konferencii/",
+      "title": "Робот для регистрации гостей и бейджей на конференции",
+      "status": "current/release-safe related article",
+      "role": "support"
+    }
+  ]
+}

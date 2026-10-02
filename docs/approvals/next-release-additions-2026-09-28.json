@@ -1,0 +1,15 @@
+{
+  "kind": "next_release_scope_approval",
+  "at": "2026-09-28T09:06:08.265431+00:00",
+  "owner": "Александр Маркин",
+  "ownerApprovalQuote": "Утвердил новые страницы: подборку /roboty-unitree/ и статью /robot-shahmatist-senserobot-na-meropriyatie/ , включи их в новую публикацию.",
+  "routes": [
+    "/roboty-unitree/",
+    "/robot-shahmatist-senserobot-na-meropriyatie/"
+  ],
+  "includeInNextPublication": true,
+  "productionPublished": false,
+  "technicalReleaseVerification": "pending",
+  "description": "Роботы в аренду для выставок, форумов и корпоративов в Москве и по России. Подберём модель и сценарий, организуем доставку, настройку и работу оператора.",
+  "internalLinkChanges": "analysis_only_pending_owner_decision"
+}

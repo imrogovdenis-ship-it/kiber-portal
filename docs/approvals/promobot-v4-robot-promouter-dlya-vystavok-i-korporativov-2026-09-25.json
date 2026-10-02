@@ -1,0 +1,53 @@
+{
+  "kind": "kiber_owner_approval",
+  "id": "promobot-v4-robot-promouter-dlya-vystavok-i-korporativov-2026-09-25",
+  "route": "/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/",
+  "title": "Promobot V4 робот-промоутер",
+  "approvedAt": "2026-09-25T09:23:45.529623+00:00",
+  "approvedBy": "Александр Маркин",
+  "ownerApprovalQuote": "Фиксируй статью как принятую готовую то есть она уже Может у нас публиковаться на основной домен Когда мы будем публиковать новую версию сайта дальше Изучи последние ошибки которые у тебя были и внеси все эти корректировки свои навыки Чтобы в следующий раз уже Ты их не повторял ну и внеси данные все куда необходимо там все карту другие файлы то есть файлы репозитория о том что статья принято готово её статус и так далее",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/",
+  "status": "owner_approved_on_jino_preview",
+  "acceptedPreview": true,
+  "readyForProduction": true,
+  "readyForNextSiteRelease": true,
+  "productionReadinessApproval": "explicit_owner_approval_for_next_site_release",
+  "productionApproved": true,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "mergeApproved": false,
+  "dnsApproved": false,
+  "secretsApproved": false,
+  "analyticsApproved": false,
+  "liveRoutingApproved": false,
+  "productionApprovedMeaning": "Content eligibility for the next site release only; not an immediate deployment authorization or publication record.",
+  "interpretation": "Принята текущая страница целиком, включая Hero №1. Готова к публикации в следующей версии сайта. Сейчас production deploy не разрешён и не выполнялся.",
+  "acceptedHtmlSha256": "3c3f3dfcb7b43b12f345cac879157446baefa1f53706e6ef90b5a5984b6a81a9",
+  "finalVisibleState": {
+    "h1": "Promobot V4 робот-промоутер",
+    "seoTitle": "Promobot V4 на выставке: от знакомства к разговору о продукте | КИБЕР ПОРТАЛ",
+    "primaryKeyword": "Promobot V4",
+    "price": "от 10 000 ₽ / час",
+    "featuredModel": "large featured Promobot V4 card",
+    "heroStatus": "accepted_as_part_of_current_page",
+    "heroSha256": "a3b069a6b602e478b99144fbcb1c48d2c1b67f6f29e29bf1724fac69dcb6e1f8",
+    "gosha": "unchanged accepted current copy",
+    "faqCount": 8,
+    "checklist": "one six-item checklist"
+  },
+  "evidence": [
+    "docs/review/article-promobot-v4/owner-hourly-price-2026-09-25/integrity.json",
+    "docs/review/article-promobot-v4/owner-hourly-price-2026-09-25/browser.json",
+    "docs/review/article-promobot-v4/seo-and-featured-model-2026-09-25/qa-public/results.json"
+  ],
+  "limitations": [
+    "Google user_export: collection date, region and device unknown; no new live research claimed."
+  ],
+  "supersedes": "Historical temporary-Hero/pending-owner-review statuses; previous crop warnings retained as history, not current blockers.",
+  "sourceHashes": {
+    "src/lib/kiber-article-promobot-v4-data.ts": "2aed6f28a9e4f5d9b249c84d40fe8b51a428ffca6ba798427cb2877623e2c5dd",
+    "src/pages/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/index.astro": "e4801cc5cc52f69e509cfa88f99e7a69fbd0e0d71a7643579a1b17b38de796b3",
+    "src/components/templates/ApprovedArticle5.astro": "318ba4e9b9cd1e2b44e5e97bad8420c76682322e921a784ab10297aa2ffbc0ac",
+    "public/images/articles/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/hero-preview-first.webp": "a3b069a6b602e478b99144fbcb1c48d2c1b67f6f29e29bf1724fac69dcb6e1f8"
+  }
+}

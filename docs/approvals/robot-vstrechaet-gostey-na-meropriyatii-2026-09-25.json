@@ -1,0 +1,55 @@
+{
+  "kind": "kiber_owner_approval",
+  "id": "robot-vstrechaet-gostey-na-meropriyatii-2026-09-25",
+  "route": "/robot-vstrechaet-gostey-na-meropriyatii/",
+  "title": "Робот встречает гостей на мероприятии",
+  "approvedAt": "2026-09-25T12:17:00.817361+00:00",
+  "approvedBy": "Александр Маркин",
+  "ownerApprovalQuote": "Утверждай статью как принятую и готовую к публикации на основной домен - https://jino-preview.kiber-portal.ru/robot-vstrechaet-gostey-na-meropriyatii/",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robot-vstrechaet-gostey-na-meropriyatii/",
+  "status": "owner_approved_on_jino_preview",
+  "acceptedPreview": true,
+  "readyForProduction": true,
+  "readyForNextSiteRelease": true,
+  "productionApproved": true,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "mergeApproved": false,
+  "dnsApproved": false,
+  "secretsApproved": false,
+  "analyticsApproved": false,
+  "liveRoutingApproved": false,
+  "productionReadinessApproval": "explicit_owner_approval_for_main_domain_publication",
+  "productionApprovedMeaning": "Content eligibility for main-domain release; no immediate deploy authorized.",
+  "interpretation": "Принята текущая версия, готовность к публикации на основном домене утверждена. Сам deploy отдельно; сейчас не выполняется.",
+  "acceptedHtmlSha256": "82c2281d5f70aba1ef8174131baae8a6c9d7e8c706f4913292306dfea18d9b86",
+  "finalVisibleState": {
+    "galleryPhotos": 4,
+    "blockOrder": "Перед заявкой → Каталог роботов → FAQ",
+    "faqCount": 7,
+    "prices": [
+      "от 10 000 ₽ / час",
+      "от 12 500 ₽ / час"
+    ],
+    "heroStatus": "accepted_as_part_of_current_page",
+    "heroSha256": "56949b83d207b1e4ca6c0aa14d5124d45f08319401dabaef539e20987c890982"
+  },
+  "evidence": [
+    "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/FINAL-REPORT.md",
+    "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/public-audit.json",
+    "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/final-proof.json",
+    "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/media-provenance.json"
+  ],
+  "limitations": [
+    "Google user_export: дата/регион/устройство неизвестны; live SERP не заявлен."
+  ],
+  "sourceHashes": {
+    "src/lib/kiber-article-robot-vstrechaet-gostey-data.ts": "750539aef8eb6ce5bead347159fc8dab9c60a5605cc3037d823956e65b931ec1",
+    "src/pages/robot-vstrechaet-gostey-na-meropriyatii/index.astro": "06fdd94565b64ae75654c89237f3a846747044936f9780dbe41b2296e7414cb7",
+    "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/hero.webp": "56949b83d207b1e4ca6c0aa14d5124d45f08319401dabaef539e20987c890982",
+    "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/promobot.webp": "93a145cff6f49dbb83f2843a183094004b1d936dcd121fdf6ad7ddfa7765df51",
+    "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/promobot-reception.webp": "add3c462300566d3333003a2271cbb35984ec320443db355968e96819556e2d0",
+    "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/g1-go2-exhibition.webp": "60a7e75214ccbcb516ef691b4c60d8bdd9bfc252015d6bc382541d069fbedda3",
+    "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/g1.webp": "88bb6f9bb6c762006b47ce84fbbb4c38faf05bda1d39bb927bca250467612f8c"
+  }
+}

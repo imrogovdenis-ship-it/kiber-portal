@@ -1,0 +1,106 @@
+{
+  "id": "arenda-robota-sofiya-docx-2026-09-30",
+  "route": "/robots/arenda-robota-sofiya/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Принято. Фиксируй.",
+  "acceptedAt": "2026-09-30T09:47:35.168722+00:00",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/",
+  "acceptedHtmlSha256": "cf9fcae9e65d708c763f47635a80ee8362124b5978d3593be8ce12281a74ac6f",
+  "title": "Аренда робота София — андроид Hanson Robotics | КИБЕР ПОРТАЛ",
+  "scope": "Current complete DOCX revision and six manifest WebP accepted on Jino only. No new production readiness or deployment. Prior approvals and integration evidence preserved as history.",
+  "acceptedPreview": true,
+  "readyForProduction": false,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "productionApproved": false,
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "secretsAuthorized": false,
+  "analyticsAuthorized": false,
+  "liveRoutingAuthorized": false,
+  "visibleState": {
+    "docxLines": 363,
+    "blocks": 13,
+    "faq": 8,
+    "facts": 14,
+    "hiddenJson": 2,
+    "newIllustrations": 6,
+    "galleries": [
+      5,
+      6
+    ],
+    "widthsPassed": [
+      390,
+      768,
+      1280,
+      1920
+    ],
+    "touchPassed": true
+  },
+  "evidence": [
+    "docs/review/sofiya-docx/integration/FINAL-REPORT.md",
+    "docs/review/sofiya-docx/integration/final-proof.json"
+  ],
+  "mediaLocks": [
+    {
+      "src": "/images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/01-expressions.webp",
+      "sha256": "03b75b53f72e7c8568d98c2b8e35c1f3d979e512842aca9eba9e0b82493f364a",
+      "width": 1672,
+      "height": 941,
+      "alt": "Лицо робота-андроида София с живой мимикой крупным планом"
+    },
+    {
+      "src": "/images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/02-dialog.webp",
+      "sha256": "8f62bc3edfa983128194916018f9622d5bf7d70087d3a31a89bb7ad9cc6439fd",
+      "width": 1672,
+      "height": 941,
+      "alt": "Робот София отвечает на вопрос собеседника"
+    },
+    {
+      "src": "/images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/03-vision.webp",
+      "sha256": "7b574594d7ad8c06fd4f34f73258843f9e71b467819655cbe48d0ba33d195bbd",
+      "width": 1672,
+      "height": 941,
+      "alt": "Робот-андроид София смотрит на собеседника"
+    },
+    {
+      "src": "/images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/04-forum.webp",
+      "sha256": "0a450e47db2d3a1867c5f1ff9f406f7d611bf89d2d2488109e409780355eb93c",
+      "width": 1672,
+      "height": 941,
+      "alt": "Робот София выступает на международном форуме"
+    },
+    {
+      "src": "/images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/05-gesture.webp",
+      "sha256": "485e790fa44958e3bc0e8542333d432840349ec9a6ed5832526f836c7cad2408",
+      "width": 1672,
+      "height": 941,
+      "alt": "Робот-андроид София жестикулирует во время выступления"
+    },
+    {
+      "src": "/images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/06-stationary-zone.webp",
+      "sha256": "7f618bdaa0eaa5fa5d22e48bc29f1946a9ba610d04f999c8d88a60559e46c747",
+      "width": 1672,
+      "height": 941,
+      "alt": "Робот София на сцене в выделенной зоне для выступления"
+    }
+  ],
+  "mediaScope": "Six editorial synthetic illustrations, not documentary photographs; Hero and original eleven gallery photos unchanged. Acceptance does not assert exact anatomical/technical fidelity.",
+  "seoIntent": "аренда робота София; existing keyword redistribution unchanged",
+  "h1": "Аренда робота-андроида София",
+  "blockOrder": [
+    "hero",
+    "aiSummary",
+    "gallery",
+    "includedService",
+    "capabilities",
+    "scenarios",
+    "pricing",
+    "robotInAction",
+    "goshaCta",
+    "orderFlow",
+    "faq",
+    "finalQuestionsCta",
+    "relatedCatalog"
+  ]
+}

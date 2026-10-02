@@ -1,0 +1,116 @@
+{
+  "id": "arenda-xiaomi-cyberdog-2-2026-10-01",
+  "route": "/robots/arenda-xiaomi-cyberdog-2/",
+  "title": "Аренда робота-собаки Xiaomi CyberDog 2",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Принято. Фиксируй.",
+  "approvedAt": "2026-10-01T12:20:12.118484+00:00",
+  "approvalBasis": "Direct owner acceptance of completed 375-paragraph CyberDog 2 DOCX revision; new Inchbot DOCX does not cancel this approval.",
+  "previewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/",
+  "acceptedHtmlSha256": "9e369f3dc3beff645c0ffbdf3337fc4728c3206a6c7706ee69b9ad37a8aa45c4",
+  "acceptedPreview": true,
+  "scope": {
+    "blocks": 13,
+    "faq": 8,
+    "facts": 23,
+    "gallery": [
+      5,
+      5
+    ],
+    "newAssets": [
+      {
+        "id": "02-leash",
+        "path": "public/images/robot-capabilities/arenda-xiaomi-cyberdog-2/docx-2026-10-01/02-leash.webp",
+        "src": "/images/robot-capabilities/arenda-xiaomi-cyberdog-2/docx-2026-10-01/02-leash.webp",
+        "width": 1672,
+        "height": 941,
+        "format": "WebP",
+        "bytes": 154912,
+        "sha256": "4a8999645cb703dd08b337436cef505109869c810c390f36a980ecfe7212d3b1",
+        "alt": "Робот-собака Xiaomi CyberDog 2 гуляет на поводке",
+        "seoAlt": "Робот-собака Xiaomi CyberDog 2 гуляет на поводке",
+        "sourceRaw": "docs/review/cyberdog2-docx/media/raw/02-leash.png",
+        "rawSha256": "766e18e075415d7699313a715af3502fa7b9b942ff0ad2709c3e78bc2262ea68",
+        "provider": "openai-codex",
+        "model": "gpt-image-2-high",
+        "role": "capability_illustration",
+        "origin": "reference-guided generated editorial illustration, not documentary photo",
+        "encoding": "Direct RGB to WebP quality 94 method 6; no resize, stretch, crop or compositing",
+        "providerResult": "docs/review/cyberdog2-docx/media/providerprovenance/02-leash-result.json",
+        "visualQA": {
+          "status": "pass",
+          "reviewedEncodedWebP": true,
+          "notes": "PASS: reference-consistent Doberman head, pointed ears, slender legs; four complete feet in calm step. Slightly taut attached leash held by single natural hand/minimal wrist at frame edge, no face or body. Cyan trailing motion and dark floor reflection. Robot clear of all edges."
+        }
+      },
+      {
+        "id": "05-sensors",
+        "path": "public/images/robot-capabilities/arenda-xiaomi-cyberdog-2/docx-2026-10-01/05-sensors.webp",
+        "src": "/images/robot-capabilities/arenda-xiaomi-cyberdog-2/docx-2026-10-01/05-sensors.webp",
+        "width": 1672,
+        "height": 941,
+        "format": "WebP",
+        "bytes": 97004,
+        "sha256": "a5ccdb070db67e59e42540de63239002a5b243e7d9b6dd1868c3e0b40377c33a",
+        "alt": "Голова робота-собаки Xiaomi CyberDog 2 со светящимися датчиками",
+        "seoAlt": "Голова робота-собаки Xiaomi CyberDog 2 со светящимися датчиками",
+        "sourceRaw": "docs/review/cyberdog2-docx/media/raw/05-sensors.png",
+        "rawSha256": "e0df518f75e705eb1b87ef3ffb4a7142059f74705bef773ca586bdab4ffd2f13",
+        "provider": "openai-codex",
+        "model": "gpt-image-2-high",
+        "role": "capability_illustration",
+        "origin": "reference-guided generated editorial illustration, not documentary photo",
+        "encoding": "Direct RGB to WebP quality 94 method 6; no resize, stretch, crop or compositing",
+        "providerResult": "docs/review/cyberdog2-docx/media/providerprovenance/05-sensors-result.json",
+        "visualQA": {
+          "status": "pass",
+          "reviewedEncodedWebP": true,
+          "notes": "PASS: intentional 3/4 head/neck closeup; both ears complete, small cyan sensor lights and three fine scan rays; no text, labels or callout panels. Shoulders deliberately exit lower frame; full feet not applicable."
+        }
+      },
+      {
+        "id": "06-sticker",
+        "path": "public/images/robot-capabilities/arenda-xiaomi-cyberdog-2/docx-2026-10-01/06-sticker.webp",
+        "src": "/images/robot-capabilities/arenda-xiaomi-cyberdog-2/docx-2026-10-01/06-sticker.webp",
+        "width": 1672,
+        "height": 941,
+        "format": "WebP",
+        "bytes": 138772,
+        "sha256": "35c473580c963ad663c199e2f3da6efe1096017a522a780fe655d0d71fb78756",
+        "alt": "Робот-собака Xiaomi CyberDog 2 с фирменной наклейкой на корпусе",
+        "seoAlt": "Робот-собака Xiaomi CyberDog 2 с фирменной наклейкой на корпусе",
+        "sourceRaw": "docs/review/cyberdog2-docx/media/raw/06-sticker-refined.png",
+        "rawSha256": "9d3c83b0e2586b2ff52fbecb1c47cae0b93e21c89a19c906aaac622f56b0d8cf",
+        "provider": "openai-codex",
+        "model": "gpt-image-2-high",
+        "role": "capability_illustration",
+        "origin": "reference-guided generated editorial illustration, not documentary photo",
+        "encoding": "Direct RGB to WebP quality 94 method 6; no resize, stretch, crop or compositing",
+        "providerResult": "docs/review/cyberdog2-docx/media/providerprovenance/06-sticker-refine-result.json",
+        "visualQA": {
+          "status": "pass",
+          "reviewedEncodedWebP": true,
+          "notes": "PASS after two whole-backend refinements: reference-consistent CyberDog2 full body and four feet; white horizontal rectangular flush sticker with abstract cyan wave, no letters or detached panels. Blank ear plates, soft backlight and reflection, safe top and bottom breathing room."
+        }
+      }
+    ]
+  },
+  "evidence": [
+    "docs/review/cyberdog2-docx/integration/FINAL-REPORT.md",
+    "docs/review/cyberdog2-docx/integration/final-proof.json",
+    "docs/review/cyberdog2-docx/acceptance/remote-before.json"
+  ],
+  "readyForProduction": false,
+  "readyForNextSiteRelease": false,
+  "productionApproved": false,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "analyticsAuthorized": false,
+  "liveRoutingAuthorized": false,
+  "caveats": [
+    "Editorial generated illustrations, not documentary evidence or independent product research.",
+    "Prior failed QA/check logs remain historical; global quality not declared green."
+  ]
+}

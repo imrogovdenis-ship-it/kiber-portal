@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "id": "compilation-block-rules-2026-09-23",
+  "type": "cross_site_block_contract",
+  "status": "owner_approved",
+  "approvedAt": "2026-09-23T10:05:00+03:00",
+  "owner": "Александр Маркин",
+  "scope": "КИБЕР ПОРТАЛ shared «Подборки» block across homepage, articles, compilation pages, /compilations/ index, and robot-card exclusion.",
+  "claim": "Current implementation and contract for the «Подборки» block is approved as the project-wide rule to follow going forward.",
+  "productionApproved": false,
+  "previewEvidence": {
+    "marker": "compilation-canonical-1",
+    "urls": [
+      "https://jino-preview.kiber-portal.ru/?v=compilation-canonical-1",
+      "https://jino-preview.kiber-portal.ru/compilations/?v=compilation-canonical-1",
+      "https://jino-preview.kiber-portal.ru/articles/novogodniy-korporativ-5-idey/?v=compilation-canonical-1",
+      "https://jino-preview.kiber-portal.ru/roboty-sobaki/?v=compilation-canonical-1"
+    ],
+    "evidenceDir": "docs/review/compilation-block-canonical-cards-2026-09-23/"
+  },
+  "rules": [
+    "Reusable «Подборки» block uses exactly 5 cards: 4 topical canonical compilation cards + final «Все наши подборки».",
+    "Homepage keeps approved placement after Gosha quote; normal content pages place the block last before footer.",
+    "Robot-card pages do not use the shared «Подборки» block.",
+    "/compilations/ is the visual exception: it lists all ready/planned compilation cards and uses the page-specific larger card style.",
+    "All reused cards must be canonical cards from /compilations/: same title, description, image, href and ready/planned status.",
+    "Do not invent page-local compilation names/descriptions. If no close match exists, reuse one of the ready canonical cards.",
+    "Card CTA is only «Подробнее» or «Скоро».",
+    "Not-ready/planned cards use «Скоро».",
+    "Run npm run test:compilation-blocks before readiness/publication handoff."
+  ],
+  "sourceFiles": [
+    "docs/contracts/kiber-related-compilations-block-contract.md",
+    "data/design/home-live-blocks.json",
+    "src/data/home-live.ts",
+    "src/lib/launch-navigation.ts",
+    "src/lib/kiber-release-related-compilations.ts",
+    "src/components/templates/ApprovedArticle5.astro",
+    "src/components/templates/CompilationTemplate.astro",
+    "scripts/compilation-block-contract-smoke.mjs"
+  ]
+}

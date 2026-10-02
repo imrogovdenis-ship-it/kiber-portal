@@ -1,0 +1,27 @@
+{
+  "id": "blog-gosha-block-rules-2026-09-23",
+  "status": "owner_rule_recorded",
+  "approvedAt": "2026-09-23T10:34:03.059385+03:00",
+  "scope": "Shared «Блог Кибер Гоши» block rules for homepage, articles and compilation pages",
+  "productionApproved": false,
+  "previewMarker": null,
+  "contract": "docs/contracts/kiber-blog-gosha-block-contract.md",
+  "runtimeFiles": [
+    "src/lib/kiber-related-article-cards.ts",
+    "src/lib/launch-navigation.ts",
+    "src/pages/index.astro",
+    "src/components/templates/ApprovedArticle5.astro",
+    "src/components/templates/CompilationTemplate.astro",
+    "src/components/templates/RobotCardTemplate.astro"
+  ],
+  "rules": [
+    "Block is used only on homepage, article detail pages, and compilation pages.",
+    "Robot cards and other page types do not render the block.",
+    "Exactly 6 cards: 5 real existing articles + final «Все статьи Блога Кибер Гоши» linking to /articles/.",
+    "Article cards use canonical article-card data tied to article registry/runtime source; never invent non-existing/page-local article cards.",
+    "Homepage block is final content block before footer; article and compilation pages place Blog Gosha immediately before closing «Подборки».",
+    "Current HomeImageCards variant=article styling is the visual standard; do not redesign without owner instruction.",
+    "Run npm run test:blog-gosha-blocks before publication/readiness handoff."
+  ],
+  "notes": "Homepage first-five article selection requires owner choice; candidate sets stored in docs/review/blog-gosha-block-contract-2026-09-23/homepage-article-selection-options.md."
+}

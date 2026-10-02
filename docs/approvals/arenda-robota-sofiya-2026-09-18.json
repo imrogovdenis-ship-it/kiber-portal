@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "id": "robot-card-arenda-robota-sofiya-preview-approval",
+  "type": "robot_card_preview_approval",
+  "slug": "arenda-robota-sofiya",
+  "route": "/robots/arenda-robota-sofiya/",
+  "status": "owner_approved_on_jino_preview",
+  "owner": "Александр Маркин",
+  "approved_at": "2026-09-18T19:30:00+00:00",
+  "preview_url": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/?v=humanoids-ai-summary-human-1",
+  "productionApproved": false,
+  "productionScope": "not_approved",
+  "publicationApproved": false,
+  "claim": "робот София card is accepted on Jino preview with approved human-first AI summary block; production remains gated.",
+  "approval_basis": "Telegram request on 2026-09-18: approved corrected AI/SEO summary blocks for all agreed humanoids and Tron; fix in files and SEO map.",
+  "evidence": [
+    "docs/review/robot-card-readiness/arenda-robota-sofiya-2026-09-18.md",
+    "docs/review/robot-card-readiness/sofiya-final-2026-09-18/jino-render-audit.json",
+    "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/?v=sofiya-full-cycle-1",
+    "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json",
+    "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/?v=humanoids-ai-summary-human-1"
+  ],
+  "forbidden_without_new_approval": [
+    "production deploy",
+    "merge as production launch",
+    "DNS changes",
+    "secrets/runtime changes",
+    "analytics/live lead routing changes"
+  ],
+  "aiSummaryRuleApproved": true
+}

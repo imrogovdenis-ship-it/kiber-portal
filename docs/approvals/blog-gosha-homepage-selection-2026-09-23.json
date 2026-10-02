@@ -1,0 +1,44 @@
+{
+  "id": "blog-gosha-homepage-selection-2026-09-23",
+  "status": "owner_selected_on_chat_and_applied_to_jino_preview",
+  "timestamp": "2026-09-23T11:59:25.180729+03:00",
+  "scope": "Homepage «Блог Кибер Гоши» card selection only",
+  "productionApproved": false,
+  "previewUrl": "https://jino-preview.kiber-portal.ru/?v=home-blog-selection-1",
+  "selection": [
+    {
+      "title": "Новогодний корпоратив: 5 идей с роботами",
+      "href": "/articles/novogodniy-korporativ-5-idey/"
+    },
+    {
+      "title": "Какого робота-гуманоида выбрать для мероприятия: сравнение моделей",
+      "href": "/articles/kakoy-gumanoid-vybrat-dlya-meropriyatiya/"
+    },
+    {
+      "title": "Робот-стендист для выставки: как выбрать роль у стенда",
+      "href": "/articles/robot-stendist-dlya-vystavki/"
+    },
+    {
+      "title": "Сравнение робо-собак для мероприятий: Go2, CyberDog 2 и Inchbot",
+      "href": "/articles/sravnenie-robosobak-dlya-meropriyatiy/"
+    },
+    {
+      "title": "Робот на презентацию продукта или идеи",
+      "href": "/articles/prezentaciya-produkta-idei-s-robotami/"
+    },
+    {
+      "title": "Все статьи Блога Кибер Гоши",
+      "href": "/articles/"
+    }
+  ],
+  "rule": "Homepage Blog Gosha block contains these five article cards in this order, followed by final all-articles card according to contract.",
+  "verification": [
+    "npm run build:production PASS",
+    "npm run test:routes PASS",
+    "npm run test:blog-gosha-blocks PASS",
+    "npm run test:compilation-blocks PASS",
+    "live curl homepage card-order assertion PASS",
+    "browser console card-order assertion PASS"
+  ],
+  "touchedProduction": false
+}

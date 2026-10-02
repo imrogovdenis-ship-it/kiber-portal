@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-09-28T11:27:41.092160+00:00",
+  "ownerQuote": "Принято. Предложи Заголовки для остальных подборок.",
+  "status": "visual_approved",
+  "scope": {
+    "previewRoutes": [
+      "/",
+      "/compilations/"
+    ],
+    "card": "/roboty-gumanoidy/",
+    "heading": "Аренда робота-гуманоида",
+    "order": [
+      "semantic heading styled as RobotCard category",
+      "existing large slogan",
+      "existing description",
+      "existing CTA"
+    ],
+    "preserve": "category typography and increased gap to description"
+  },
+  "otherCards": "headings proposed only; rollout not yet authorized",
+  "productionPublishedByThisApproval": false
+}

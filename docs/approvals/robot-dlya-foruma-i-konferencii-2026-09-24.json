@@ -1,0 +1,62 @@
+{
+  "kind": "kiber_owner_approval",
+  "id": "robot-dlya-foruma-i-konferencii-2026-09-24",
+  "route": "/robot-dlya-foruma-i-konferencii/",
+  "title": "Роботы для конференции и форума",
+  "approvedAt": "2026-09-24T09:13:47.743635+00:00",
+  "approvedBy": "Александр Маркин",
+  "ownerApprovalQuote": "Супер! Отличный результат. Фиксируй подборку как принятую. Не забудь отразить в статических документах по SEO/",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robot-dlya-foruma-i-konferencii/?v=owner-fixes-20260924",
+  "acceptedPreview": true,
+  "status": "owner_approved_on_jino_preview",
+  "readyForProduction": false,
+  "productionReadinessApproval": "not_granted",
+  "productionApproved": false,
+  "productionDeployAuthorized": false,
+  "mergeApproved": false,
+  "dnsApproved": false,
+  "secretsApproved": false,
+  "analyticsApproved": false,
+  "liveRoutingApproved": false,
+  "interpretation": "Принята только указанная редакция Jino preview. Владелец не предоставил отдельного утверждения готовности к основному домену или разрешения на production deploy.",
+  "acceptedHtmlSha256": "0eb09803dd17b55a58ce3d08dc78b9d1781091f39bc211ee3908c2f52ebc6184",
+  "finalVisibleState": {
+    "h1": "Роботы для конференции и форума",
+    "seoTitle": "Робот для форума и конференции в аренду | КИБЕР ПОРТАЛ",
+    "primaryKeyword": "робот для форума и конференции",
+    "blockOrder": [
+      "intro",
+      "catalogBlock",
+      "introGosha",
+      "explanation",
+      "gallery",
+      "choiceGuide",
+      "scenarioExplanation",
+      "goshaConclusion",
+      "catalogRepeat",
+      "faq",
+      "cta2",
+      "relatedArticles",
+      "otherCompilations"
+    ],
+    "ownerCorrections": [
+      "G1 Hero +20%",
+      "Цитата №1: второй абзац",
+      "Удалён пункт «Площадка и интервалы работы»; осталось 6",
+      "Фото KettyBot выбрано владельцем"
+    ]
+  },
+  "evidence": [
+    "docs/review/compilation-forum-conference/owner-corrections-2026-09-24/REPORT.md",
+    "docs/review/compilation-forum-conference/owner-corrections-2026-09-24/served-verification.json",
+    "docs/review/compilation-forum-conference/owner-corrections-2026-09-24/qa-public/results.json"
+  ],
+  "nonBlockingFollowups": [
+    "Research extension: 10 Wordstat + 2 SERP + 2 competitors; organic full-list visual partial, not full research PASS."
+  ],
+  "sourceHashes": {
+    "data/content/compilation-forum-conference.json": "113b4272e2bfc8ca2dfd28d36e36f33dc5bf43e125ee309b8ccbb973e8d3047b",
+    "src/pages/robot-dlya-foruma-i-konferencii.astro": "f49d1161e1f5d687a63f3c0a045887321ab46e49ed89193a8a6617071e9a47b0",
+    "src/components/templates/CompilationTemplate.astro": "61c8375105c22792ccc29e559bf75462778c30f2aef8b8df483b4ce11b93dcca"
+  }
+}

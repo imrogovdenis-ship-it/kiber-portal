@@ -1,0 +1,31 @@
+{
+  "id": "arenda-unitree-g1-docx-2026-09-28",
+  "type": "scoped_content_price_exception",
+  "route": "/robots/arenda-unitree-g1/",
+  "status": "owner_approved_content_facts_prices_not_visual_acceptance",
+  "source": "/home/alex/.hermes/profiles/kiber-copywriter/cache/documents/doc_c51a45f886db_Робот гуманоид Unitree G1.docx",
+  "basis": "Explicit owner approval of all DOCX company facts/commitments and G1 package prices; request to create and insert three illustrations. See content/owner-permission.md.",
+  "ownerCopyApproved": true,
+  "ownerCompanyFactsApproved": true,
+  "ownerG1PackagePricesApproved": true,
+  "pricing": {
+    "scope": "arenda-unitree-g1_card_only",
+    "heroDisplay": "от 50 000 ₽ за мероприятие",
+    "bannerDisplay": "от 12 500 ₽ / час",
+    "minimumDurationHours": 2,
+    "permissionEvidence": "docs/review/g1-docx-2026-09-28/content/owner-permission.md"
+  },
+  "tiersRUB": {
+    "2h": 50000,
+    "upTo4h": 75000,
+    "dayUpTo8h": 100000,
+    "2days": 180000,
+    "3days": 240000
+  },
+  "scope": "G1 card only; global tariff/catalog rates unchanged",
+  "visualAcceptance": false,
+  "productionApproved": false,
+  "productionDeployAuthorized": false,
+  "research": "user_supplied_DOCX_not_fresh_SERP_or_Wordstat",
+  "evidence": "docs/review/g1-docx-2026-09-28/content/owner-permission.md"
+}

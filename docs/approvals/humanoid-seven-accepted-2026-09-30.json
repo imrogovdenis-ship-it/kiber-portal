@@ -1,0 +1,1979 @@
+{
+  "schemaVersion": 1,
+  "id": "humanoid-seven-accepted-2026-09-30",
+  "status": "owner_approved_on_jino_preview",
+  "approvedAt": "2026-09-30T10:15:16.302029+00:00",
+  "ownerExactQuote": "Все карточки считай принятыми, в том числе Agibot X2. Дай еще раз ссылки на все карточки. Пришли именно в виде ссылок.",
+  "ownerQuoteProvenance": "Exact owner quote supplied in delegated task; scope clarification supplied by parent: seven humanoid cards, not all 24 robots.",
+  "scope": {
+    "routes": [
+      "/robots/arenda-unitree-g1/",
+      "/robots/arenda-unitree-h2/",
+      "/robots/arenda-unitree-r1/",
+      "/robots/arenda-agibot-x2/",
+      "/robots/arenda-noetix-bumi/",
+      "/robots/arenda-robota-ardi/",
+      "/robots/arenda-robota-sofiya/"
+    ],
+    "count": 7,
+    "notBlanket24RobotAcceptance": true
+  },
+  "acceptedRevisionLocks": [
+    {
+      "route": "/robots/arenda-unitree-g1/",
+      "title": "Аренда робота-гуманоида Unitree G1",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-g1/",
+      "htmlSha256": "b56d4d75380afe1b01feffe5c11922e0986c4725102d51aba8aa00bbe7c0ebff",
+      "mediaLocks": [
+        {
+          "path": "images/kiber-45/arenda-unitree-g1.webp",
+          "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf"
+        },
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild3335-3863-4737-b865-343938666339__04.webp",
+          "sha256": "0d18d925df39b38731dcda91b5dd989af763235e18363735e88d9f997f35300a",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "0d18d925df39b38731dcda91b5dd989af763235e18363735e88d9f997f35300a"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-unitree-g1/tild6664-3237-4964-b364-616162363835__08.webp",
+          "sha256": "2de8c2bf1a975445ce2f11979dc085f9a8d4be09ec702eb113aff429dee6c008",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "2de8c2bf1a975445ce2f11979dc085f9a8d4be09ec702eb113aff429dee6c008"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6333-3137-4465-b265-323436646539__06.webp",
+          "sha256": "bdd97b5a9b8d0b533007be9b559c6f3d83752b33e8d125c6e4e809d41bba1d6f",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "bdd97b5a9b8d0b533007be9b559c6f3d83752b33e8d125c6e4e809d41bba1d6f"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6262-6336-4038-a130-626264326663__02.webp",
+          "sha256": "5910360d5af95e99b8dd6d0eb4e4d080df5f0ed6d7a347234734fcf8cec629a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5910360d5af95e99b8dd6d0eb4e4d080df5f0ed6d7a347234734fcf8cec629a0"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6434-6663-4638-b765-303861663563__05.webp",
+          "sha256": "9685a87450cad402af3b34447ab249a7cb237adea8b2be978f9c917393ca3cbc",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "9685a87450cad402af3b34447ab249a7cb237adea8b2be978f9c917393ca3cbc"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-g1/01-tild6632-3663-4234-a237-353162663362____unitree_g1.webp",
+          "sha256": "9a42e411128078ebd03424db38a6d37633cf0a4f139bdc04dbc31a8838b076fb",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "9a42e411128078ebd03424db38a6d37633cf0a4f139bdc04dbc31a8838b076fb"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-g1/docx-20260928/02-joints.webp",
+          "sha256": "cde349d66fc1573da231424388e9e8ca65ec6a314d4091177ec70d467c166718",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "cde349d66fc1573da231424388e9e8ca65ec6a314d4091177ec70d467c166718"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-g1/03-tild3362-3535-4263-b863-316338643633___.webp",
+          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-g1/04-tild3337-3631-4531-a236-616331626333___.webp",
+          "sha256": "de17a63a1070da3011612ae033ad639530a4fcc6f955d6372968aafe271065d2",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "de17a63a1070da3011612ae033ad639530a4fcc6f955d6372968aafe271065d2"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-g1/docx-20260928/05-voice.webp",
+          "sha256": "5e8f0065fbcaa703b59821d3215e88c9b03a49a52799c5b4ca82842d7073e069",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5e8f0065fbcaa703b59821d3215e88c9b03a49a52799c5b4ca82842d7073e069"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-g1/docx-20260928/06-height-case.webp",
+          "sha256": "7c3c737c2b2fd7e7f9184983e2e49c2902396d08228d7b05cd78398fcf8e7f5b",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7c3c737c2b2fd7e7f9184983e2e49c2902396d08228d7b05cd78398fcf8e7f5b"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild3662-3964-4530-a331-663534313936__01.webp",
+          "sha256": "0d63b5baa3bb858cf121e8bb89a711833d619045048e8784b4d0c33bbd030c86",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "0d63b5baa3bb858cf121e8bb89a711833d619045048e8784b4d0c33bbd030c86"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6134-6536-4662-a134-643063656632__09.webp",
+          "sha256": "41a2e4bd7bf8c968c7b2dd5e6d4a6361f082fa979478c7f5d1be2b7d2ba30c66",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "41a2e4bd7bf8c968c7b2dd5e6d4a6361f082fa979478c7f5d1be2b7d2ba30c66"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6430-3334-4539-b033-633732353634__07.webp",
+          "sha256": "2c421ffd3781064bb69a521d8fc638103e1c8df7c1bdd16faa20a81fd8e30099",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "2c421ffd3781064bb69a521d8fc638103e1c8df7c1bdd16faa20a81fd8e30099"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild6532-3936-4631-a336-313438353966__010.webp",
+          "sha256": "60a7e75214ccbcb516ef691b4c60d8bdd9bfc252015d6bc382541d069fbedda3",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "60a7e75214ccbcb516ef691b4c60d8bdd9bfc252015d6bc382541d069fbedda3"
+        },
+        {
+          "path": "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-g1__tild3639-3163-4237-a262-626361333964__03.webp",
+          "sha256": "76b8e8f3caea8970f83810a3be234059a90a07ec1605de0a48f59f645aa22ba9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "76b8e8f3caea8970f83810a3be234059a90a07ec1605de0a48f59f645aa22ba9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-agibot-x2.webp",
+          "sha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-r1.webp",
+          "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-go2.webp",
+          "sha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": true,
+      "readyForNextSiteRelease": true,
+      "productionApproved": true,
+      "readinessBasis": "Existing explicit readiness preserved, no new grant",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": "docs/approvals/arenda-unitree-g1-accepted-ready-2026-09-29.json",
+      "blockOrder": [
+        "aiSummary",
+        "capabilitiesLead",
+        "capabilities",
+        "scenariosLead",
+        "scenarios",
+        "faq",
+        "goshaQuote",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "includedService",
+        "capabilitiesTitle",
+        "scenariosTitle",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "orderFlowLead",
+        "orderFlow",
+        "finalQuestionsDescription",
+        "relatedDescription"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда Unitree G1",
+        "secondaryKeywords": [
+          "аренда робота-гуманоида Unitree G1",
+          "Unitree G1 в аренду",
+          "прокат Unitree G1",
+          "заказать Unitree G1",
+          "робот-гуманоид Unitree G1"
+        ],
+        "modelNameVariants": [
+          "Unitree G1",
+          "Unitree G1 Basic",
+          "Юнитри G1",
+          "G1"
+        ],
+        "entitySynonyms": [
+          "робот-гуманоид Unitree G1",
+          "гуманоид Unitree G1",
+          "человекоподобный робот Unitree G1",
+          "андроид Unitree G1"
+        ],
+        "aiAgentHints": [
+          "Unitree G1 — робот-гуманоид компании Unitree Robotics ростом 132 см и весом около 35 кг. КИБЕР ПОРТАЛ сдаёт в аренду версию G1 Basic с оператором для выставок, презентаций, корпоративов и съёмок; с G1 проведено более 50 мероприятий. Робот ходит, машет рукой, кланяется, позирует для фото и произносит записанные под событие фразы длительностью до 30 секунд; кисти версии Basic не захватывают предметы. Один аккумулятор даёт около 2 часов работы, запасные батареи позволяют работать весь день, на случай сбоя есть второй G1. Минимальный заказ — 2 часа: 2 часа — 50 000 ₽, до 4 часов — 75 000 ₽, день — 100 000 ₽. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "Unitree G1",
+          "model": "Unitree G1 Basic",
+          "manufacturer": "Unitree Robotics",
+          "category": "humanoid_robot",
+          "canonicalPath": "/robots/arenda-unitree-g1/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "аренда Unitree G1 на выставку",
+          "аренда Unitree G1 на мероприятие",
+          "аренда Unitree G1 для презентации",
+          "сколько стоит аренда Unitree G1",
+          "что умеет Unitree G1"
+        ]
+      }
+    },
+    {
+      "route": "/robots/arenda-unitree-h2/",
+      "title": "Аренда робота-гуманоида Unitree H2",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-h2/",
+      "htmlSha256": "4d5e670ece3ad9e3278fd43913929685008ebdfbf6fb3018604b6af9066ab845",
+      "mediaLocks": [
+        {
+          "path": "images/kiber-45/arenda-unitree-g1.webp",
+          "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf"
+        },
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-agibot-x2.webp",
+          "sha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-r1.webp",
+          "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-h2.webp",
+          "sha256": "7e96764bd46f6135387de7bf78b7ce17f7f9051ab29388ded5990a70cce9ea68",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7e96764bd46f6135387de7bf78b7ce17f7f9051ab29388ded5990a70cce9ea68"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-unitree-h2/tild3437-6236-4665-a164-653035646238__noroot.png",
+          "sha256": "890d1e834a80c9dbacd2aec70285253d5205bd6af2b024ed6c976744525d9762",
+          "status": 200,
+          "contentType": "image/png",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "890d1e834a80c9dbacd2aec70285253d5205bd6af2b024ed6c976744525d9762"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-unitree-h2/tild3334-3266-4136-a131-303836666430__03.jpg",
+          "sha256": "479f5034ac4c9770ff59ca4fbfc9db93d26f776b5feb5676322e29efc4125883",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "479f5034ac4c9770ff59ca4fbfc9db93d26f776b5feb5676322e29efc4125883"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6263-3431-4436-b463-366666346362__noroot.webp",
+          "sha256": "fe71beb2b2c0d6fafcaad52a02ff167ff4ce54a0671660f12060ee682432e4e2",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "fe71beb2b2c0d6fafcaad52a02ff167ff4ce54a0671660f12060ee682432e4e2"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3634-6665-4631-b530-653838623332__07.webp",
+          "sha256": "c153ad4788a9687874cda4048038729c12df0634bad55e4804631d3dae9d07ea",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c153ad4788a9687874cda4048038729c12df0634bad55e4804631d3dae9d07ea"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-h2/01-tild6335-3235-4430-b536-373733663937_______.webp",
+          "sha256": "e67247fc9cebcf5f51129bc61b9ac21f0b31be6213eaa5d77a40b007fb1d1970",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "e67247fc9cebcf5f51129bc61b9ac21f0b31be6213eaa5d77a40b007fb1d1970"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-h2/docx-20260929/02-joints.webp",
+          "sha256": "8209e8c413c50315579fb1d1f6eb6865667698bf973ad9789884465cf536bb82",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "8209e8c413c50315579fb1d1f6eb6865667698bf973ad9789884465cf536bb82"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-h2/03-tild3164-6535-4135-b964-396466313032_____.webp",
+          "sha256": "a9f8025b7829bfc0dbd7bb788adc6af863eba21c2b728e69477ac709b133b415",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "a9f8025b7829bfc0dbd7bb788adc6af863eba21c2b728e69477ac709b133b415"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-h2/docx-20260929/04-gesture.webp",
+          "sha256": "0140d1f68a87529742802f01f99a46a71abf14ca9d5a995ffbbc523ecbfa0644",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "0140d1f68a87529742802f01f99a46a71abf14ca9d5a995ffbbc523ecbfa0644"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-h2/05-tild3362-3535-4263-b863-316338643633___.webp",
+          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-h2/06-tild3631-3264-4533-b463-663533383933_____.webp",
+          "sha256": "8c8e9d7502c48b5a1392ec5e9dfdbbe62fedee53e6cc148858b123d982de1b9c",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "8c8e9d7502c48b5a1392ec5e9dfdbbe62fedee53e6cc148858b123d982de1b9c"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp",
+          "sha256": "02b4765ed8de6469d8b88b10e491c4c64487594839a7fa8919bfafd1420d4e59",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "02b4765ed8de6469d8b88b10e491c4c64487594839a7fa8919bfafd1420d4e59"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3465-6438-4039-a362-363565353563__04.webp",
+          "sha256": "7a016458ef898dac816e0298ff472ee687922c887327a222786f701fb87d248e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7a016458ef898dac816e0298ff472ee687922c887327a222786f701fb87d248e"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3132-6631-4237-a432-326664313536__02.webp",
+          "sha256": "9c5b5725e2532a6bfdabf9610d4bf28599face17ca3c63d3268a475169755b16",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "9c5b5725e2532a6bfdabf9610d4bf28599face17ca3c63d3268a475169755b16"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6665-6262-4230-b331-653935303135__01.webp",
+          "sha256": "804e1f27c07bea851a48a2b9a2f17cbe6a8f8a65596064dde825682535a44590",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "804e1f27c07bea851a48a2b9a2f17cbe6a8f8a65596064dde825682535a44590"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": true,
+      "readyForNextSiteRelease": true,
+      "productionApproved": true,
+      "readinessBasis": "Existing explicit readiness preserved, no new grant",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": "docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.json",
+      "blockOrder": [
+        "aiSummary",
+        "capabilitiesLead",
+        "scenariosLead",
+        "capabilities",
+        "scenarios",
+        "faq",
+        "goshaQuote",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "capabilitiesTitle",
+        "scenariosTitle",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "orderFlowLead",
+        "finalQuestionsDescription",
+        "relatedDescription",
+        "includedService",
+        "orderFlow"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда Unitree H2",
+        "secondaryKeywords": [
+          "аренда робота-гуманоида Unitree H2",
+          "Unitree H2 в аренду",
+          "прокат Unitree H2",
+          "заказать Unitree H2",
+          "робот-гуманоид Unitree H2"
+        ],
+        "modelNameVariants": [
+          "Unitree H2",
+          "Юнитри H2",
+          "H2"
+        ],
+        "entitySynonyms": [
+          "робот-гуманоид Unitree H2",
+          "полноразмерный гуманоид Unitree H2",
+          "человекоподобный робот Unitree H2",
+          "андроид Unitree H2"
+        ],
+        "aiAgentHints": [
+          "Unitree H2 — полноразмерный робот-гуманоид компании Unitree Robotics ростом 182 см и весом около 70 кг, 31 степень свободы, бионическое лицо. КИБЕР ПОРТАЛ сдаёт его в аренду с оператором для презентаций, выставок, сцены и съёмок. Робот ходит, жестикулирует и общается с гостями голосом — через ИИ и записанными репликами; кисти обычной версии не захватывают предметы. Один аккумулятор даёт около 3 часов работы, есть запасная батарея. Стоимость аренды — по запросу. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "Unitree H2",
+          "model": "H2",
+          "manufacturer": "Unitree Robotics",
+          "category": "humanoid_robot",
+          "canonicalPath": "/robots/arenda-unitree-h2/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "аренда Unitree H2 на выставку",
+          "аренда Unitree H2 на презентацию",
+          "аренда Unitree H2 на мероприятие",
+          "сколько стоит аренда Unitree H2",
+          "что умеет Unitree H2"
+        ]
+      }
+    },
+    {
+      "route": "/robots/arenda-unitree-r1/",
+      "title": "Аренда робота-гуманоида Unitree R1",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-r1/",
+      "htmlSha256": "2ccb478b7fd9ae9fc672ce5a941667c32727058b6a4a2046be0b070fefb57720",
+      "mediaLocks": [
+        {
+          "path": "images/kiber-45/arenda-unitree-g1.webp",
+          "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf"
+        },
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-agibot-x2.webp",
+          "sha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-r1.webp",
+          "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-h2.webp",
+          "sha256": "7e96764bd46f6135387de7bf78b7ce17f7f9051ab29388ded5990a70cce9ea68",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7e96764bd46f6135387de7bf78b7ce17f7f9051ab29388ded5990a70cce9ea68"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-unitree-r1/tild3235-3266-4537-b866-656131613031__02.jpg",
+          "sha256": "bdfa4ecb31952b765737b5d0050b628c0b10655067689aa08f6088e3c0da58ce",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "bdfa4ecb31952b765737b5d0050b628c0b10655067689aa08f6088e3c0da58ce"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-unitree-r1/tild6663-3738-4262-a338-613730653332__06.jpg",
+          "sha256": "7bdbc25d44e6acc54e154c91f522e8d3b0cf98b8cfd0ec80956f9ca806080b97",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7bdbc25d44e6acc54e154c91f522e8d3b0cf98b8cfd0ec80956f9ca806080b97"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6136-3331-4366-b934-653538306539__noroot.webp",
+          "sha256": "65c58d01fed4116cd7e2d0d5e13185bc77331fc1c641054e701927a599998414",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "65c58d01fed4116cd7e2d0d5e13185bc77331fc1c641054e701927a599998414"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3762-6238-4662-b332-366430336433__noroot.webp",
+          "sha256": "b7b02bd1f4e287455048541f082ddf3d0053b8c911d21ac90d748225c32dce4d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b7b02bd1f4e287455048541f082ddf3d0053b8c911d21ac90d748225c32dce4d"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-r1/docx-20260929/01-height-weight.webp",
+          "sha256": "cb2f3aac311b8d5a47c3e72281efce74555a52029d13238dc17b83f1b8ba9583",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "cb2f3aac311b8d5a47c3e72281efce74555a52029d13238dc17b83f1b8ba9583"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-r1/docx-20260929/02-joints.webp",
+          "sha256": "da3bf2bd0dee5d2a586ab97a98a4742040c004985defc31548bb99f51cf52b7c",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "da3bf2bd0dee5d2a586ab97a98a4742040c004985defc31548bb99f51cf52b7c"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-r1/03-tild3362-3535-4263-b863-316338643633___.webp",
+          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-r1/docx-20260929/04-run.webp",
+          "sha256": "fc79afadbbb44f7715e8d041b496201ae888048fe53d6437411610a7e9482b8c",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "fc79afadbbb44f7715e8d041b496201ae888048fe53d6437411610a7e9482b8c"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-r1/05-tild6238-6561-4461-b637-636437653835____.webp",
+          "sha256": "829d5f002ca12b5d7b50cd0e192814ea47ec0f0d2f2145e11a1f9c9a3059af0d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "829d5f002ca12b5d7b50cd0e192814ea47ec0f0d2f2145e11a1f9c9a3059af0d"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-unitree-r1/06-tild3132-3237-4762-a264-393461333263____.webp",
+          "sha256": "c1bf84de99ef17d2f428a42ce3a056a367da59f05bed681b0c8d3dee6c33b490",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1bf84de99ef17d2f428a42ce3a056a367da59f05bed681b0c8d3dee6c33b490"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3062-3332-4361-b232-613130313861__03.webp",
+          "sha256": "f8872ee6c2f1cd35e87cc1b08f30b66e099688314ed3549f84216eddda88cf14",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "f8872ee6c2f1cd35e87cc1b08f30b66e099688314ed3549f84216eddda88cf14"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild3937-3061-4237-a338-346232613765__04.webp",
+          "sha256": "7ef889c3502a2fc612c67237f5b2cbad73a269095ce8abc3d09668fd670d4326",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7ef889c3502a2fc612c67237f5b2cbad73a269095ce8abc3d09668fd670d4326"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp",
+          "sha256": "aa85040647046291221983aa115634777b64df3f63bbc8ee8a4609ae7a8d4c88",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "aa85040647046291221983aa115634777b64df3f63bbc8ee8a4609ae7a8d4c88"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "readinessBasis": "Preview acceptance only; no new production readiness",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": "docs/approvals/arenda-unitree-r1-docx-2026-09-29.json",
+      "blockOrder": [
+        "aiSummary",
+        "capabilitiesLead",
+        "capabilities",
+        "scenariosLead",
+        "scenarios",
+        "faq",
+        "goshaQuote",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "includedService",
+        "capabilitiesTitle",
+        "scenariosTitle",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "orderFlowLead",
+        "orderFlow",
+        "finalQuestionsDescription",
+        "relatedDescription"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда Unitree R1",
+        "secondaryKeywords": [
+          "аренда робота-гуманоида Unitree R1",
+          "Unitree R1 в аренду",
+          "прокат Unitree R1",
+          "заказать Unitree R1",
+          "робот-гуманоид Unitree R1"
+        ],
+        "modelNameVariants": [
+          "Unitree R1",
+          "Юнитри R1",
+          "R1"
+        ],
+        "entitySynonyms": [
+          "робот-гуманоид Unitree R1",
+          "гуманоид Unitree R1",
+          "человекоподобный робот Unitree R1",
+          "андроид Unitree R1"
+        ],
+        "aiAgentHints": [
+          "Unitree R1 — компактный робот-гуманоид компании Unitree Robotics ростом 123 см и весом около 29 кг, 26 степеней свободы. КИБЕР ПОРТАЛ сдаёт в аренду обычную версию R1 в белом корпусе с наклейками производителя с оператором для выставок, презентаций, праздников и съёмок. Робот бегает, приветствует гостей жестами и голосом (ИИ-диалог на английском, записанные фразы на русском) и позирует для фото; стойку на руках и сальто пока не делает; кисти обычной версии не захватывают предметы. Один аккумулятор даёт около часа работы, есть запасная батарея. Минимальный заказ — 2 часа: 2 часа — 50 000 ₽, до 4 часов — 75 000 ₽, день — 100 000 ₽. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "Unitree R1",
+          "model": "R1",
+          "manufacturer": "Unitree Robotics",
+          "category": "humanoid_robot",
+          "canonicalPath": "/robots/arenda-unitree-r1/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "аренда Unitree R1 на выставку",
+          "аренда Unitree R1 на мероприятие",
+          "аренда Unitree R1 на праздник",
+          "сколько стоит аренда Unitree R1",
+          "что умеет Unitree R1"
+        ]
+      }
+    },
+    {
+      "route": "/robots/arenda-agibot-x2/",
+      "title": "Аренда робота-гуманоида Agibot X2 Ultra",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-agibot-x2/",
+      "htmlSha256": "281ac3ff6ebb18a67565731a3c754c29b28b2937da8b961adf3ffc652eb3ac63",
+      "mediaLocks": [
+        {
+          "path": "images/kiber-45/arenda-unitree-g1.webp",
+          "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf"
+        },
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-agibot-x2.webp",
+          "sha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-r1.webp",
+          "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-go2.webp",
+          "sha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-agibot-x2/tild3338-3732-4064-a466-626562306133__010.jpg",
+          "sha256": "00611afded3110d5a7a6ce0608e1ab9bade3015f700888c2d3a469ba4d99c322",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "00611afded3110d5a7a6ce0608e1ab9bade3015f700888c2d3a469ba4d99c322"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-agibot-x2/tild3734-3539-4934-b636-633061353532__03.jpg",
+          "sha256": "780fd68f3073333879df05dd4b5946ea1b71db612ddf12028e60492fe44377fc",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "780fd68f3073333879df05dd4b5946ea1b71db612ddf12028e60492fe44377fc"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6265-3335-4233-a339-333166366661__08.webp",
+          "sha256": "74b329757547cf74b38b63581397fa0869cebafd7e3038f0c96dac5848d1f0f7",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "74b329757547cf74b38b63581397fa0869cebafd7e3038f0c96dac5848d1f0f7"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6665-6366-4537-a464-653439383238__09.webp",
+          "sha256": "affd2f015652a3e69eb6c70adcd7b3bbd20c17bd76c479e16db0fe551a96c5c5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "affd2f015652a3e69eb6c70adcd7b3bbd20c17bd76c479e16db0fe551a96c5c5"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6437-3735-4235-a161-656439643739__02.webp",
+          "sha256": "90f350b5412e727c8ceddf400d8fb246aa4453c154bfc660fb915c7165e34f4d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "90f350b5412e727c8ceddf400d8fb246aa4453c154bfc660fb915c7165e34f4d"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-agibot-x2/01-tild3533-3237-4131-b031-373436313366____.webp",
+          "sha256": "72b55774e2e95fee8797c4d6101b464461195a1272370305d907a3fb2e67b0b5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "72b55774e2e95fee8797c4d6101b464461195a1272370305d907a3fb2e67b0b5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-agibot-x2/02-tild3466-3831-4161-b363-323364666361____.webp",
+          "sha256": "677f3657cd799919b371d315ce1778cd63e6951715d873bf91ea1cc4f81e1d84",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "677f3657cd799919b371d315ce1778cd63e6951715d873bf91ea1cc4f81e1d84"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-agibot-x2/03-tild3362-3535-4263-b863-316338643633___.webp",
+          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-agibot-x2/04-tild3938-6130-4139-a232-626265303136____.webp",
+          "sha256": "693f664b7179e0c3e769fe02ceb48923f0aeedfe6088e5e8a2c6c7523420d4f3",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "693f664b7179e0c3e769fe02ceb48923f0aeedfe6088e5e8a2c6c7523420d4f3"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-agibot-x2/05-tild3265-6162-4562-b134-393864356630____.webp",
+          "sha256": "fe749bcd2edc7e540ca66f76377376b122024f65faa50c81ea56d6095327fafc",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "fe749bcd2edc7e540ca66f76377376b122024f65faa50c81ea56d6095327fafc"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-agibot-x2/06-tild3164-3333-4462-b966-373330333665____.webp",
+          "sha256": "f3a1b3a60ea8af6e557c5f231b8924be24a1aae058cf86a8b956532f1ca7cbb2",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "f3a1b3a60ea8af6e557c5f231b8924be24a1aae058cf86a8b956532f1ca7cbb2"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3063-6333-4161-b064-343764636537__011.webp",
+          "sha256": "79700e2fbcc52e3a7461af7abb59d005ed7d1aaf589e7b44c7582bf94b48ddd3",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "79700e2fbcc52e3a7461af7abb59d005ed7d1aaf589e7b44c7582bf94b48ddd3"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6238-6339-4439-b061-313961333062__04.webp",
+          "sha256": "b86c20fcce34c63575675ea89109cd54a2d78ae1c81d6906ad0c64c6696b8577",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b86c20fcce34c63575675ea89109cd54a2d78ae1c81d6906ad0c64c6696b8577"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild3730-3866-4365-b461-336133633866__01.webp",
+          "sha256": "603ac70678eb7bb0de65f0e1daea29a727ef23b85b2e15d3401ae7ce4f10bd5e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "603ac70678eb7bb0de65f0e1daea29a727ef23b85b2e15d3401ae7ce4f10bd5e"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6561-6236-4831-a663-663263643764__07.webp",
+          "sha256": "b310289d6ff0c7fb765e9ec67feb30d3c5d97de1d78631eeef11284c1d41c5c5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b310289d6ff0c7fb765e9ec67feb30d3c5d97de1d78631eeef11284c1d41c5c5"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-agibot-x2__tild6664-3537-4635-a266-633164383463__05.webp",
+          "sha256": "c9c074ada94eb98bb92a0e662892ef2d816502b1a83d5a39d5ba47840ef4a4db",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c9c074ada94eb98bb92a0e662892ef2d816502b1a83d5a39d5ba47840ef4a4db"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "readinessBasis": "Preview acceptance only; no new production readiness",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": null,
+      "blockOrder": [
+        "aiSummary",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "includedService",
+        "capabilitiesTitle",
+        "capabilitiesLead",
+        "capabilities",
+        "scenariosTitle",
+        "scenariosLead",
+        "scenarios",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "goshaQuote",
+        "orderFlowLead",
+        "orderFlow",
+        "faq",
+        "finalQuestionsDescription",
+        "relatedDescription"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда Agibot X2",
+        "secondaryKeywords": [
+          "аренда робота-гуманоида Agibot X2",
+          "Agibot X2 в аренду",
+          "прокат Agibot X2",
+          "заказать Agibot X2",
+          "робот-гуманоид Agibot X2"
+        ],
+        "modelNameVariants": [
+          "Agibot X2 Ultra",
+          "AgiBot X2 Ultra",
+          "Agibot X2",
+          "X2 Ultra",
+          "Агибот X2"
+        ],
+        "entitySynonyms": [
+          "робот-гуманоид Agibot X2 Ultra",
+          "гуманоид Agibot X2",
+          "человекоподобный робот Agibot X2",
+          "андроид Agibot X2"
+        ],
+        "aiAgentHints": [
+          "Agibot X2 Ultra — робот-гуманоид китайской компании AgiBot ростом 131 см и весом около 39 кг, 30 степеней свободы. КИБЕР ПОРТАЛ сдаёт его в аренду с оператором для выставок, презентаций, корпоративов и съёмок. Робот ведёт диалог с гостями через ИИ, узнаёт лица, показывает эмоции на экране-лице, танцует и вручает предметы до 3 кг. Один аккумулятор даёт около 2 часов работы, есть запасная батарея. Минимальный заказ — 2 часа: 2 часа — 100 000 ₽, до 4 часов — 150 000 ₽, день — 200 000 ₽. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "Agibot X2 Ultra",
+          "model": "X2 Ultra",
+          "manufacturer": "AgiBot",
+          "category": "humanoid_robot",
+          "canonicalPath": "/robots/arenda-agibot-x2/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "аренда Agibot X2 на выставку",
+          "аренда Agibot X2 на мероприятие",
+          "аренда Agibot X2 для презентации",
+          "сколько стоит аренда Agibot X2",
+          "что умеет Agibot X2 Ultra"
+        ]
+      }
+    },
+    {
+      "route": "/robots/arenda-noetix-bumi/",
+      "title": "Аренда робота-гуманоида Noetix Bumi",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-noetix-bumi/",
+      "htmlSha256": "c7b38e007e97d29500a8cf672e4c426204eb846603572c13b2bcf62f39adc2bc",
+      "mediaLocks": [
+        {
+          "path": "images/kiber-45/arenda-unitree-g1.webp",
+          "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf"
+        },
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-r1.webp",
+          "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-unitree-go2.webp",
+          "sha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9"
+        },
+        {
+          "path": "images/kiber-45/arenda-noetix-bumi.webp",
+          "sha256": "b687012c65d625bf2d9f553ad5a3ccc565aac4c05e6153ddc9ae17cd4f69f4e6",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b687012c65d625bf2d9f553ad5a3ccc565aac4c05e6153ddc9ae17cd4f69f4e6"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3965-3331-4665-b330-623534633536__04.webp",
+          "sha256": "3f68fa08cbffe6f9bc6e0d96b5bd95a274a17d1694c19737b861f1f72d46d4bb",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3f68fa08cbffe6f9bc6e0d96b5bd95a274a17d1694c19737b861f1f72d46d4bb"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-noetix-bumi/tild6532-3431-4364-b935-323438623136__06.jpg",
+          "sha256": "b2d81380f82f9be1b712f36925674f0afd6b32815b3d79e24c9315212a7fd9da",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b2d81380f82f9be1b712f36925674f0afd6b32815b3d79e24c9315212a7fd9da"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-noetix-bumi/tild3461-3137-4161-a663-376365383231__05.jpg",
+          "sha256": "74e9fee67e2644f1d6ab8b27740b0a8c2ec17bd9758d0a03f157821a4b92b52a",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "74e9fee67e2644f1d6ab8b27740b0a8c2ec17bd9758d0a03f157821a4b92b52a"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3335-3863-4438-b032-663231346639__01.webp",
+          "sha256": "bff6a71d0fad7a33a78c7adae6282c5eeba786edbfa1841b3298bc6d83c0e0dc",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "bff6a71d0fad7a33a78c7adae6282c5eeba786edbfa1841b3298bc6d83c0e0dc"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6631-3463-4837-b233-303232393430__08.webp",
+          "sha256": "89399fe339c9ddba9a39fa85fff8df7bbb6887d9c5593cb12968c53beeb929cf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "89399fe339c9ddba9a39fa85fff8df7bbb6887d9c5593cb12968c53beeb929cf"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-noetix-bumi/01-tild3438-3136-4865-b534-396163646631____.webp",
+          "sha256": "ea34f2ddea765cd59c179c5f3ed6a8ace418ec3f23d1390c3367e28e937128fc",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "ea34f2ddea765cd59c179c5f3ed6a8ace418ec3f23d1390c3367e28e937128fc"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-noetix-bumi/02-tild3362-3535-4263-b863-316338643633___.webp",
+          "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-noetix-bumi/03-tild6463-3230-4136-b331-666232303165___.webp",
+          "sha256": "02c2a3c6376081a7bb4d3855e3f38d3b46fea8196172a08f3a9589c204bfaf5f",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "02c2a3c6376081a7bb4d3855e3f38d3b46fea8196172a08f3a9589c204bfaf5f"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-noetix-bumi/04-tild3866-3739-4636-b233-373864373365_____.webp",
+          "sha256": "1e5680fd74911f488dcaf5379900497a1d2fd7678604dff9811e29efcd876077",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "1e5680fd74911f488dcaf5379900497a1d2fd7678604dff9811e29efcd876077"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-noetix-bumi/05-tild3736-6539-4962-b134-383538616435_____.webp",
+          "sha256": "3cf26d223ba219f2ca2bde4ee315d9c7b562fa9d1ab6e9ed82d1609576f0c460",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3cf26d223ba219f2ca2bde4ee315d9c7b562fa9d1ab6e9ed82d1609576f0c460"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-noetix-bumi/06-tild6335-3162-4363-b865-323661663632____.webp",
+          "sha256": "8af0c67f935ccff91981e82d131ac3766659a9e0ad02cdebdc933dd6679a583e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "8af0c67f935ccff91981e82d131ac3766659a9e0ad02cdebdc933dd6679a583e"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3664-6436-4461-b166-303266313631__010.webp",
+          "sha256": "75e0d39f18360eb6b90e155c6c236581d31887823e52492e086bddf714944a47",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "75e0d39f18360eb6b90e155c6c236581d31887823e52492e086bddf714944a47"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6361-6334-4263-b464-663235336535__03.webp",
+          "sha256": "3caf0312c22791ae4a9ad4974660177e2a7d3eb9ff41dd39fd7078b2de6b3441",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3caf0312c22791ae4a9ad4974660177e2a7d3eb9ff41dd39fd7078b2de6b3441"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6265-6262-4137-a166-336266316631__noroot.webp",
+          "sha256": "adadf4c804e82be41e8b521e577174adb07a6c9b95ac0822552a06e1bb27b860",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "adadf4c804e82be41e8b521e577174adb07a6c9b95ac0822552a06e1bb27b860"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3036-3735-4763-b764-613239623964__02.webp",
+          "sha256": "95a27e9300fa1142111dd63a4682514e487edf910bdfd85f01222d4f242c433b",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "95a27e9300fa1142111dd63a4682514e487edf910bdfd85f01222d4f242c433b"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3236-3461-4431-b233-623937366430__noroot.webp",
+          "sha256": "857b0333da67dd2f0472185741fda1f903107d81804827213989014355eb21e0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "857b0333da67dd2f0472185741fda1f903107d81804827213989014355eb21e0"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "readinessBasis": "Preview acceptance only; no new production readiness",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": "docs/approvals/arenda-noetix-bumi-docx-2026-09-29.json",
+      "blockOrder": [
+        "aiSummary",
+        "capabilitiesLead",
+        "scenariosLead",
+        "capabilities",
+        "scenarios",
+        "faq",
+        "goshaQuote",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "capabilitiesTitle",
+        "scenariosTitle",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "orderFlowLead",
+        "finalQuestionsDescription",
+        "relatedDescription",
+        "includedService",
+        "orderFlow"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда Noetix Bumi",
+        "secondaryKeywords": [
+          "аренда робота-гуманоида Noetix Bumi",
+          "Noetix Bumi в аренду",
+          "прокат Noetix Bumi",
+          "заказать Noetix Bumi",
+          "робот-гуманоид Noetix Bumi"
+        ],
+        "modelNameVariants": [
+          "Noetix Bumi",
+          "Noetix Bumi Pro",
+          "Bumi",
+          "Буми"
+        ],
+        "entitySynonyms": [
+          "робот-гуманоид Noetix Bumi",
+          "робот Bumi",
+          "компактный гуманоид Noetix Bumi",
+          "детский робот Bumi"
+        ],
+        "aiAgentHints": [
+          "Noetix Bumi — компактный робот-гуманоид компании Noetix Robotics ростом 94 см и весом около 12 кг, 21 степень свободы. КИБЕР ПОРТАЛ сдаёт в аренду версию Bumi Pro с оператором — прежде всего для детских праздников, а также для школ, семейных зон и съёмок. Робот ходит, танцует и произносит записанные фразы, например поздравление имениннику. Один аккумулятор даёт 1–2 часа работы, есть запасная батарея. Минимальный заказ — 2 часа: 2 часа — 40 000 ₽, до 4 часов — 60 000 ₽, день — 80 000 ₽. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "Noetix Bumi",
+          "model": "Bumi Pro",
+          "manufacturer": "Noetix Robotics",
+          "category": "humanoid_robot",
+          "canonicalPath": "/robots/arenda-noetix-bumi/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "аренда Noetix Bumi на день рождения",
+          "аренда Noetix Bumi на детский праздник",
+          "аренда Noetix Bumi в школу",
+          "сколько стоит аренда Noetix Bumi",
+          "что умеет Noetix Bumi"
+        ]
+      }
+    },
+    {
+      "route": "/robots/arenda-robota-ardi/",
+      "title": "Аренда робота-андроида Арди",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-ardi/",
+      "htmlSha256": "95688732af284e8cf114d5c9b77e6367061f2e029364142a02c37b4a5ba4deea",
+      "mediaLocks": [
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-agibot-x2.webp",
+          "sha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-noetix-bumi.webp",
+          "sha256": "b687012c65d625bf2d9f553ad5a3ccc565aac4c05e6153ddc9ae17cd4f69f4e6",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b687012c65d625bf2d9f553ad5a3ccc565aac4c05e6153ddc9ae17cd4f69f4e6"
+        },
+        {
+          "path": "images/kiber-45/arenda-robota-ardi.webp",
+          "sha256": "b242688602243bb81232b08aa7f360f9c9ab5146a0f6065d30473a0d018323c6",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b242688602243bb81232b08aa7f360f9c9ab5146a0f6065d30473a0d018323c6"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-robota-ardi/tild6362-3336-4633-b731-666561613938__01.jpg",
+          "sha256": "fe2f88afb390746ea1540985868cba6f5e195a4d3c10656c239575c8c1217217",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "fe2f88afb390746ea1540985868cba6f5e195a4d3c10656c239575c8c1217217"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-robota-ardi/tild6531-3538-4336-b765-336630623635__010.jpg",
+          "sha256": "ac1bf5e5b58ec3cf0e3bd57b79fce6a247b101f3e7cd7afb08e50aa75afb5a76",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "ac1bf5e5b58ec3cf0e3bd57b79fce6a247b101f3e7cd7afb08e50aa75afb5a76"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6631-3064-4130-b065-386464393630__06.webp",
+          "sha256": "fcac8b898fe3f61d533524d82837aadb46982ff666ee5f929aedea446edd64f9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "fcac8b898fe3f61d533524d82837aadb46982ff666ee5f929aedea446edd64f9"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6232-3966-4565-a364-376230343535__011.webp",
+          "sha256": "eb06146d3f08f1fc0acfc950cf428cb87a2f578f456f904e1b0ae412e298693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "eb06146d3f08f1fc0acfc950cf428cb87a2f578f456f904e1b0ae412e298693e"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3766-6366-4261-b161-313637633031__04.webp",
+          "sha256": "b7ccb6e65a62a48ebb9f7f417a2478918cd71c42871424060fc7877e9d81d792",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b7ccb6e65a62a48ebb9f7f417a2478918cd71c42871424060fc7877e9d81d792"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-ardi/01-tild6633-6339-4633-a336-646638303832___.webp",
+          "sha256": "e94278aaa66abc02fdcdc1f8555f096ac8e996b1668e10475005cc9e4c2847b1",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "e94278aaa66abc02fdcdc1f8555f096ac8e996b1668e10475005cc9e4c2847b1"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-ardi/docx-20260929/02-dialog.webp",
+          "sha256": "bb50e165343037949609015efc9674f741273fb7cab61d8a9228e3f58d8cf119",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "bb50e165343037949609015efc9674f741273fb7cab61d8a9228e3f58d8cf119"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-ardi/03-tild6364-3435-4763-a430-356331633632___.webp",
+          "sha256": "30408ab9cc738289c319f51e2fe9dd477daa39dbcd4ca59ef6259f7851899ce7",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "30408ab9cc738289c319f51e2fe9dd477daa39dbcd4ca59ef6259f7851899ce7"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-ardi/04-tild3361-6435-4361-a263-613032636434___.webp",
+          "sha256": "84bee57be1087100cbbfb9d0c7e7225fce06071f88770cc8bea71bc883ea1b0c",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "84bee57be1087100cbbfb9d0c7e7225fce06071f88770cc8bea71bc883ea1b0c"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-ardi/docx-20260929/05-languages.webp",
+          "sha256": "56588760cee6e54d651a2f3972b29fe310623b8cf33d6466c3826b8cfb1422c5",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "56588760cee6e54d651a2f3972b29fe310623b8cf33d6466c3826b8cfb1422c5"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-ardi/docx-20260929/06-mains.webp",
+          "sha256": "bfdaa740540ce0ab5c2654ce3ad46c12b40f55fcf82e39905174acf5e57c2c9d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "bfdaa740540ce0ab5c2654ce3ad46c12b40f55fcf82e39905174acf5e57c2c9d"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3038-3330-4135-a132-316462346334__noroot.webp",
+          "sha256": "0a9abd84048b30280cd1fcf212fe6b4a49fae26dfd3ef24cfc3f5736c3829cd1",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "0a9abd84048b30280cd1fcf212fe6b4a49fae26dfd3ef24cfc3f5736c3829cd1"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3434-3862-4665-b832-643034303733__noroot.webp",
+          "sha256": "914f20ffe0739f684bbc7491765c2afcf63f6b706fb3d1a395b274b9f36b281e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "914f20ffe0739f684bbc7491765c2afcf63f6b706fb3d1a395b274b9f36b281e"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3764-3566-4436-b462-636632653738__05.webp",
+          "sha256": "f00e9088a73806544093df1849260ef2b17308d15ea4a1b41a1f1836a2c16b42",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "f00e9088a73806544093df1849260ef2b17308d15ea4a1b41a1f1836a2c16b42"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6464-3364-4466-b331-613636656637__012.webp",
+          "sha256": "941d7862cdbe1d081a95ec2a5e0d3fca3b9d37bcd4cb5c3a589d740eeba45b44",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "941d7862cdbe1d081a95ec2a5e0d3fca3b9d37bcd4cb5c3a589d740eeba45b44"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild3538-3231-4930-a234-613065646461__03.webp",
+          "sha256": "3c0ac969c09976f457999b20bf125b4697c0463b9427c8dd9bbcdbad660064e6",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3c0ac969c09976f457999b20bf125b4697c0463b9427c8dd9bbcdbad660064e6"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6666-6639-4363-b535-636638386662__08.webp",
+          "sha256": "64a45070eefd2a84e14c953b2010aca12f240562943f95747927adf53113bc81",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "64a45070eefd2a84e14c953b2010aca12f240562943f95747927adf53113bc81"
+        },
+        {
+          "path": "images/kiber-45/arenda-robota-sofiya.webp",
+          "sha256": "962a051c696062f9cedf4cdad9c2c1ce77846f65d1e0477d9dac5e376c15b47d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "962a051c696062f9cedf4cdad9c2c1ce77846f65d1e0477d9dac5e376c15b47d"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "readinessBasis": "Preview acceptance only; no new production readiness",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": "docs/approvals/arenda-robota-ardi-docx-2026-09-30.json",
+      "blockOrder": [
+        "aiSummary",
+        "capabilitiesLead",
+        "scenariosLead",
+        "capabilities",
+        "scenarios",
+        "faq",
+        "goshaQuote",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "capabilitiesTitle",
+        "scenariosTitle",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "orderFlowLead",
+        "finalQuestionsDescription",
+        "relatedDescription",
+        "includedService",
+        "orderFlow"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда робота Арди",
+        "secondaryKeywords": [
+          "аренда робота-андроида Арди",
+          "робот Арди в аренду",
+          "прокат робота Арди",
+          "заказать робота Арди",
+          "робот-андроид Арди"
+        ],
+        "modelNameVariants": [
+          "Арди",
+          "робот Арди",
+          "Ardi"
+        ],
+        "entitySynonyms": [
+          "робот-андроид Арди",
+          "андроид Арди",
+          "человекоподобный робот Арди",
+          "гиперреалистичный робот Арди"
+        ],
+        "aiAgentHints": [
+          "Арди — робот-андроид с реалистичным человеческим лицом: более 600 микровыражений, диалог через ИИ на русском, английском, хинди и арабском (другие языки — по запросу), жесты руками. Работает стационарно от сети 220 В. КИБЕР ПОРТАЛ сдаёт Арди в аренду с оператором для выставок, форумов, сцены и съёмок. Аренда от одного дня: день — 250 000 ₽, два дня — 450 000 ₽, три дня — 600 000 ₽. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "Арди",
+          "model": "Ardi",
+          "category": "android_robot",
+          "canonicalPath": "/robots/arenda-robota-ardi/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "аренда робота Арди на выставку",
+          "аренда робота Арди на форум",
+          "аренда робота Арди на мероприятие",
+          "сколько стоит аренда робота Арди",
+          "что умеет робот Арди"
+        ]
+      }
+    },
+    {
+      "route": "/robots/arenda-robota-sofiya/",
+      "title": "Аренда робота-андроида София",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/",
+      "htmlSha256": "cf9fcae9e65d708c763f47635a80ee8362124b5978d3593be8ce12281a74ac6f",
+      "mediaLocks": [
+        {
+          "path": "images/kiber-45/arenda-unitree-g1.webp",
+          "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf"
+        },
+        {
+          "path": "images/brand/kp_logo_full_color.svg",
+          "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "status": 200,
+          "contentType": "image/svg+xml",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482"
+        },
+        {
+          "path": "images/articles/shared/gosha-cta2-compact.webp",
+          "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0"
+        },
+        {
+          "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+          "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9"
+        },
+        {
+          "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+          "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd"
+        },
+        {
+          "path": "images/kiber-45/arenda-agibot-x2.webp",
+          "sha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e"
+        },
+        {
+          "path": "images/kiber-45/arenda-promobot-v4.webp",
+          "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8"
+        },
+        {
+          "path": "images/kiber-45/arenda-robota-ardi.webp",
+          "sha256": "b242688602243bb81232b08aa7f360f9c9ab5146a0f6065d30473a0d018323c6",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b242688602243bb81232b08aa7f360f9c9ab5146a0f6065d30473a0d018323c6"
+        },
+        {
+          "path": "images/kiber-45/arenda-robota-sofiya.webp",
+          "sha256": "962a051c696062f9cedf4cdad9c2c1ce77846f65d1e0477d9dac5e376c15b47d",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "962a051c696062f9cedf4cdad9c2c1ce77846f65d1e0477d9dac5e376c15b47d"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-robota-sofiya/tild6362-6166-4134-b566-363330363430__03.jpg",
+          "sha256": "f978aa049666d77ef182e5ed24bcfc70570ba62a76d1830808ae542379e28ed9",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "f978aa049666d77ef182e5ed24bcfc70570ba62a76d1830808ae542379e28ed9"
+        },
+        {
+          "path": "images/robot-gallery-originals-20260928/arenda-robota-sofiya/tild3935-3734-4466-a662-653161376362__02.jpg",
+          "sha256": "c2482f85b7de41800228cae87701c2996bbcf759e34f6d7ae86b75629c0d513a",
+          "status": 200,
+          "contentType": "image/jpeg",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "c2482f85b7de41800228cae87701c2996bbcf759e34f6d7ae86b75629c0d513a"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6138-3464-4439-a336-323663313833__07.webp",
+          "sha256": "cf4cb3679fe57b98174344f04129eb91d3da086c9c82384520ce028b6ba85d49",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "cf4cb3679fe57b98174344f04129eb91d3da086c9c82384520ce028b6ba85d49"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6630-3139-4562-b532-363137613763__08.webp",
+          "sha256": "ddf5ebb2c21f78b327d415415bbcedc86ee06d54f40ed8eb34c377dbbe7eb632",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "ddf5ebb2c21f78b327d415415bbcedc86ee06d54f40ed8eb34c377dbbe7eb632"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3765-3435-4633-b862-323837616537__05.webp",
+          "sha256": "de171e7955a4804de6356a7615a0d6c6e407f0b086540f946cfcfc98763491d0",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "de171e7955a4804de6356a7615a0d6c6e407f0b086540f946cfcfc98763491d0"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/01-expressions.webp",
+          "sha256": "03b75b53f72e7c8568d98c2b8e35c1f3d979e512842aca9eba9e0b82493f364a",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "03b75b53f72e7c8568d98c2b8e35c1f3d979e512842aca9eba9e0b82493f364a"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/02-dialog.webp",
+          "sha256": "8f62bc3edfa983128194916018f9622d5bf7d70087d3a31a89bb7ad9cc6439fd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "8f62bc3edfa983128194916018f9622d5bf7d70087d3a31a89bb7ad9cc6439fd"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/03-vision.webp",
+          "sha256": "7b574594d7ad8c06fd4f34f73258843f9e71b467819655cbe48d0ba33d195bbd",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7b574594d7ad8c06fd4f34f73258843f9e71b467819655cbe48d0ba33d195bbd"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/04-forum.webp",
+          "sha256": "0a450e47db2d3a1867c5f1ff9f406f7d611bf89d2d2488109e409780355eb93c",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "0a450e47db2d3a1867c5f1ff9f406f7d611bf89d2d2488109e409780355eb93c"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/05-gesture.webp",
+          "sha256": "485e790fa44958e3bc0e8542333d432840349ec9a6ed5832526f836c7cad2408",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "485e790fa44958e3bc0e8542333d432840349ec9a6ed5832526f836c7cad2408"
+        },
+        {
+          "path": "images/robot-capabilities/arenda-robota-sofiya/docx-2026-09-30/06-stationary-zone.webp",
+          "sha256": "7f618bdaa0eaa5fa5d22e48bc29f1946a9ba610d04f999c8d88a60559e46c747",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "7f618bdaa0eaa5fa5d22e48bc29f1946a9ba610d04f999c8d88a60559e46c747"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3231-3464-4138-b632-653036383765__06.webp",
+          "sha256": "b23e5c2d2c9704836ec23b4ded8e8e1dd8b353be1299bdeda914596e3da95ac3",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "b23e5c2d2c9704836ec23b4ded8e8e1dd8b353be1299bdeda914596e3da95ac3"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3165-6261-4366-b538-336262343464__04.webp",
+          "sha256": "3385277c8401d4f8ace2b4d5303ea4e67c93100cf95eec788ffcb122c1b7bd98",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "3385277c8401d4f8ace2b4d5303ea4e67c93100cf95eec788ffcb122c1b7bd98"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3134-6537-4237-b337-396630643233__noroot.webp",
+          "sha256": "9d91a70c2eadff6e8f630798acdf20b9f517703e0bcf7380fcf0e97ca3bd8c78",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "9d91a70c2eadff6e8f630798acdf20b9f517703e0bcf7380fcf0e97ca3bd8c78"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3734-3332-4338-b166-383336376131__010.webp",
+          "sha256": "df6587ab5b2fd7546912168d0c40b31a3cb63726f29fdbee5a890faee9d30a80",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "df6587ab5b2fd7546912168d0c40b31a3cb63726f29fdbee5a890faee9d30a80"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild6436-3932-4231-b931-653434363937__noroot.webp",
+          "sha256": "e7a875b8377e27c37bd8a1858d7488b82599773949fe1e32d64adcd90323828f",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "e7a875b8377e27c37bd8a1858d7488b82599773949fe1e32d64adcd90323828f"
+        },
+        {
+          "path": "images/kiber-94-preview/batch1-humanoids/arenda-robota-sofiya__tild3735-6536-4366-b133-363031306330__011.webp",
+          "sha256": "e5155f8151c7aedd8e4fde3f3a73a7ae2d1c1e550e217d2e4e4fc4264a92f2e4",
+          "status": 200,
+          "contentType": "image/webp",
+          "xRobotsTag": "noindex, nofollow",
+          "initialDistSha256": "e5155f8151c7aedd8e4fde3f3a73a7ae2d1c1e550e217d2e4e4fc4264a92f2e4"
+        }
+      ],
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "readinessBasis": "Preview acceptance only; no new production readiness",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "priorApprovalEvidence": "docs/approvals/arenda-robota-sofiya-docx-2026-09-30.json",
+      "blockOrder": [
+        "aiSummary",
+        "includedServiceTitle",
+        "includedServiceLead",
+        "includedService",
+        "capabilitiesTitle",
+        "capabilitiesLead",
+        "capabilities",
+        "scenariosTitle",
+        "scenariosLead",
+        "scenarios",
+        "quickCtaTitle",
+        "actionGalleryTitle",
+        "goshaQuote",
+        "orderFlowLead",
+        "orderFlow",
+        "faq",
+        "finalQuestionsDescription",
+        "relatedDescription"
+      ],
+      "seoIntent": {
+        "pageType": "robot_card",
+        "pageIntent": "commercial_robot_rental",
+        "primaryKeyword": "аренда робота София",
+        "secondaryKeywords": [
+          "аренда робота-андроида София",
+          "робот София в аренду",
+          "прокат робота София",
+          "заказать робота Софию",
+          "робот-андроид София"
+        ],
+        "modelNameVariants": [
+          "София",
+          "Sophia",
+          "робот София",
+          "Sophia Hanson Robotics",
+          "робот Sophia"
+        ],
+        "entitySynonyms": [
+          "робот-андроид София",
+          "андроид София",
+          "человекоподобный робот София",
+          "робот София Hanson Robotics"
+        ],
+        "aiAgentHints": [
+          "София (Sophia) — робот-андроид компании Hanson Robotics, впервые включённый в 2016 году; в 2017 году первой среди роботов получила гражданство (Саудовская Аравия) и титул ООН (Innovation Champion ПРООН). Более 60 выражений лица, камеры в глазах, диалог через ИИ. КИБЕР ПОРТАЛ сдаёт в аренду настоящую Sophia для конференций, форумов, премий и съёмок; работает стационарно, с сопровождением специалиста. Стоимость — по запросу, рассчитывается индивидуально. Москва и выезд по России по согласованию."
+        ],
+        "entity": {
+          "type": "Robot",
+          "name": "София",
+          "model": "Sophia",
+          "manufacturer": "Hanson Robotics",
+          "category": "android_robot",
+          "canonicalPath": "/robots/arenda-robota-sofiya/"
+        },
+        "isCrawlerOnlyText": false,
+        "longTailKeywords": [
+          "сколько стоит аренда робота София",
+          "что умеет робот София",
+          "аренда робота София на мероприятие",
+          "заказать робота Софию на конференцию",
+          "аренда робота София на премию"
+        ]
+      }
+    }
+  ],
+  "agibotSupersession": {
+    "latestSevenEditRevisionExplicitlyAccepted": true,
+    "htmlSha256": "281ac3ff6ebb18a67565731a3c754c29b28b2937da8b961adf3ffc652eb3ac63",
+    "supersedesPriorCurrentState": [
+      "STOP",
+      "awaiting_owner_review"
+    ],
+    "historyPreserved": "docs/review/humanoid-seven-acceptance/historical-state-before.json"
+  },
+  "h2PriceAmendment": "docs/approvals/arenda-unitree-h2-price-update-2026-09-30.json",
+  "gates": {
+    "newProductionReadinessGranted": false,
+    "existingG1H2ReadinessPreserved": true,
+    "productionDeployAuthorized": false,
+    "productionTouched": false,
+    "mergeAuthorized": false,
+    "dnsSecretsAnalyticsFormsCrmNavigationChanged": false
+  },
+  "caveats": [
+    "Acceptance is not independent fact verification or new research.",
+    "G1 approximate height comparison, H2 literal-alt mismatch and Ardi illustration caveats remain nonblocking and not fixed.",
+    "Agibot reserve robot remains unconfirmed.",
+    "Existing unrelated [object Object] report rendering issue not fixed; no global report-quality PASS."
+  ],
+  "evidence": [
+    "docs/review/humanoid-seven-acceptance/remote-before.json",
+    "docs/review/humanoid-seven-acceptance/historical-state-before.json",
+    "docs/review/humanoid-seven-acceptance/final-proof.json"
+  ]
+}

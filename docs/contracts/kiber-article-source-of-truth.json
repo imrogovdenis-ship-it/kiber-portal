@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "status": "owner_approved",
+  "purpose": "Repository-owned source-of-truth index for KIBER article production rules.",
+  "authority_order": [
+    "docs/contracts and docs/approvals files",
+    "current repo implementation",
+    "production rendering as verification only",
+    "owner source files as raw material",
+    "Wordstat/SERP evidence",
+    "Jino preview as acceptance surface",
+    "chat/session/memory/Linear as discovery only"
+  ],
+  "contracts": {
+    "source_of_truth": "docs/contracts/kiber-article-source-of-truth.md",
+    "block_contract": "docs/contracts/kiber-article-block-contract.md",
+    "style_contract": "docs/contracts/kiber-article-style-contract.md",
+    "media_contract": "docs/contracts/kiber-article-media-contract.md",
+    "seo_contract": "docs/contracts/kiber-article-seo-contract.md",
+    "approvals_registry": "docs/approvals/owner-approvals.json"
+  },
+  "canonical_sources": {
+    "article_template": "src/components/templates/ApprovedArticle5.astro",
+    "article_data_contract": "src/lib/approved-article-5-types.ts",
+    "home_shared_data": "src/data/home-live.ts",
+    "robot_facts": [
+      "data/models/robots.source-of-truth.json",
+      "src/lib/robot-pages.ts"
+    ],
+    "launch_articles": "data/content/launch-articles.json (planning registry only)",
+    "launch_routes": "data/seo/launch-routes.json",
+    "related_articles": "src/lib/kiber-release-related-articles.ts",
+    "related_compilations": "src/lib/kiber-release-related-compilations.ts",
+    "published_articles": "data/content/published-articles.json",
+    "article_assets": "public/images/articles/<slug>/...",
+    "article_data_modules": "src/lib/kiber-article-*-data.ts"
+  },
+  "approval_policy": {
+    "chat": "discovery_only_until_recorded_in_repo",
+    "memory": "navigation_only_not_proof",
+    "linear": "task_direction_only_not_truth",
+    "jino_preview": "acceptance_surface_only",
+    "production": "live_state_verification_not_standalone_approval",
+    "owner_approved_requires": "explicit owner review recorded in docs/approvals/owner-approvals.json"
+  },
+  "owner_approval_note": "Александр утвердил текущий пакет контрактов как рабочий source of truth; дальнейшие правки вносятся в эти файлы по ходу работы.",
+  "media_alt_policy": {
+    "updated_at": "2026-09-18",
+    "rule": "Public alt is derived from actualDescription/checked seoAlt, not blindly from sourceAlt.",
+    "forbidden_public_alt_fragments": [
+      "специальная иллюстрация блока",
+      "карточка аренды ... на сайте",
+      "для блока Что умеет робот",
+      "source / tilda / imported / generated block"
+    ],
+    "distribution": "roughly every second meaningful image may carry natural commercial/long-tail SEO context when visually truthful; do not optimize every image",
+    "seo_map_policy": "main SEO map may show compact media-alt status/evidence fields, while full alt inventories stay in media source files or media review pages"
+  }
+}
