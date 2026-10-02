@@ -31,3 +31,5 @@ Remote main содержит проверенный актуальный наб�
 
 ## Трекер
 [KIBER-114: задача консолидации](https://linear.app/ai-class/issue/KIBER-114/konsolidaciya-github-odna-aktualnaya-main-sohranenie-istochnikov-i).
+
+Draft PR: [подготовка консолидации](https://github.com/imrogovdenis-ship-it/kiber-portal/pull/140). Это пока документационный/preparation checkpoint, не готовый source candidate.

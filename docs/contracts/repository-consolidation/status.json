@@ -12,7 +12,7 @@
   "baseCommit": "f13efdc7ac00c50bcb975bcec9504a63af936cba",
   "branch": "chore/repository-consolidation-plan",
   "phase": "preparation",
-  "planPublished": false,
+  "planPublished": true,
   "sourceConsolidationComplete": false,
   "allowed": [
     "document_plan",
@@ -49,5 +49,5 @@
     "gitBundleVerified": true,
     "limitations": "Selected dirty tracked files, 618 pre-audited candidates still present and currently untracked public/images; not entire workspace, ignored data, all review originals, or off-host backup; Git bundle excludes LFS payloads."
   },
-  "prUrl": null
+  "prUrl": "https://github.com/imrogovdenis-ship-it/kiber-portal/pull/140"
 }
