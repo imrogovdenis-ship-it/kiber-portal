@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "linear": {
+    "id": "fcac13cc-bd9c-4f58-901c-5fffdc97c8b5",
+    "identifier": "KIBER-114",
+    "url": "https://linear.app/ai-class/issue/KIBER-114/konsolidaciya-github-odna-aktualnaya-main-sohranenie-istochnikov-i",
+    "title": "Консолидация GitHub: одна актуальная main, сохранение источников и безопасная очистка диска",
+    "state": {
+      "name": "In Progress"
+    }
+  },
+  "baseCommit": "f13efdc7ac00c50bcb975bcec9504a63af936cba",
+  "branch": "chore/repository-consolidation-plan",
+  "phase": "preparation",
+  "planPublished": false,
+  "sourceConsolidationComplete": false,
+  "allowed": [
+    "document_plan",
+    "create_linear_issue",
+    "prepare_draft_pr",
+    "private_local_preservation"
+  ],
+  "gated": [
+    "merge",
+    "close_old_prs",
+    "delete_branches",
+    "delete_files",
+    "production",
+    "dns",
+    "secrets",
+    "analytics",
+    "live_routing",
+    "change_repo_visibility"
+  ],
+  "checkpoints": {
+    "auditCaptured": true,
+    "linearCreated": true,
+    "selectedLocalSourceSnapshotVerified": true,
+    "eightLocalHeadsBundleVerified": true,
+    "sourceAllowlistPrivacyReviewed": false,
+    "sourceCandidateCommitted": false,
+    "cleanBuildTests": false,
+    "independentOffHostRestore": false
+  },
+  "privatePreservation": {
+    "selectedFiles": 1004,
+    "gitBranchHeads": 8,
+    "archivePayloadHashesVerified": true,
+    "gitBundleVerified": true,
+    "limitations": "Selected dirty tracked files, 618 pre-audited candidates still present and currently untracked public/images; not entire workspace, ignored data, all review originals, or off-host backup; Git bundle excludes LFS payloads."
+  },
+  "prUrl": null
+}

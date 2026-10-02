@@ -1,0 +1,86 @@
+[
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "backup/pr73-before-main-reconcile-20260907-a0a6313",
+    "sha": "a0a631332534385fecb270e88417935c2367a120",
+    "commitInRemoteHistory": true
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "feat/compilation-humanoids-researched",
+    "sha": "deedab9277859ec56589820bbcc85cb108be5f5f",
+    "commitInRemoteHistory": true
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "feat/launch-navigation",
+    "sha": "b45a33496125a8e3b23f030aa0e9cd3c923d21f5",
+    "commitInRemoteHistory": true
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "fix/article-style-unification",
+    "sha": "2affad0953c556b957ae6385143e6adb302dc0a5",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "fix/article2-gosha-feedback",
+    "sha": "f4214ea57ae1589c63590d2172beee300be7ebd1",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "fix/article6-owner-feedback",
+    "sha": "2a67afe67619ff9310dad8ab51b5f3cfaa461594",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "hermes/kiber-55-robot-content-approval",
+    "sha": "9af0cfc9897da0d59da87686061aa247c4dc3da1",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "hermes/kiber-88-reference-visual-layer-pass1",
+    "sha": "c9fe6a0a80fadb9a6a54d3c68b670ff263ff8fe2",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "hermes/kiber-89-business-approvals-content-pack",
+    "sha": "351b3f269fb6d3a3b9c7f6de19d1007ea1c3f689",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "hermes/kiber-robot-cards-launch-ready-20260906",
+    "sha": "821e8a2cb9b1904682f8dba25e4c37f549da416d",
+    "commitInRemoteHistory": true
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "hermes/select-next-safe-task",
+    "sha": "d7cebdf24ca3e1656c9684cde27de639a8cf59a0",
+    "commitInRemoteHistory": true
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "staging/kiber-articles-1-2-3-review-20260909",
+    "sha": "05e6a5063f500f85474994e0cce8fca4def78093",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal-pr8/.git",
+    "branch": "staging/kiber-articles-2-3-review-20260909",
+    "sha": "7ffd142c4fab121e9a68f6814107b5ca70c07c90",
+    "commitInRemoteHistory": false
+  },
+  {
+    "store": "$PROJECTS/kiber-portal/.git",
+    "branch": "pr-8-tmp",
+    "sha": "a4031c2161699745b4861a79f8994afe9a19e0bb",
+    "commitInRemoteHistory": true
+  }
+]
