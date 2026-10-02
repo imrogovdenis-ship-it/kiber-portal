@@ -1,0 +1,43 @@
+# G1 accepted and production-content ready
+
+> А я посмотрел страницу с телефона она мне в целом нравится давай утвердим страницу сейчас как готовую к продакшн Вот но после этого я ещё перепроверю с компьютера если что внизу изменения Вот и сделай одну ещё одну вещь вторую после того как утвердил страницу Поверь её ещё раз Сравни с файлом который тебе доставил по которому ты вносил изменения прямо используя этот файл как чек-лист и проверь всё ли ты изменил все видимые блоки перепроверь все невидимые блоки Да которые мы не показываем Мета description title все параметры описание картинок то есть использовались как в вордовские документы как чек-лист и провели дополнительную перепроверку поэтому
+
+Accepted current Jino revision. Desktop follow-up does not block. Ready for release, not published; immediate production deploy NOT authorized.
+
+{
+  "id": "arenda-unitree-g1-accepted-ready-2026-09-29",
+  "route": "/robots/arenda-unitree-g1/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerQuote": "А я посмотрел страницу с телефона она мне в целом нравится давай утвердим страницу сейчас как готовую к продакшн Вот но после этого я ещё перепроверю с компьютера если что внизу изменения Вот и сделай одну ещё одну вещь вторую после того как утвердил страницу Поверь её ещё раз Сравни с файлом который тебе доставил по которому ты вносил изменения прямо используя этот файл как чек-лист и проверь всё ли ты изменил все видимые блоки перепроверь все невидимые блоки Да которые мы не показываем Мета description title все параметры описание картинок то есть использовались как в вордовские документы как чек-лист и провели дополнительную перепроверку поэтому",
+  "recordedAt": "2026-09-29T05:10:32.153892+00:00",
+  "acceptedPreview": true,
+  "visualAcceptance": true,
+  "readyForProduction": true,
+  "readyForNextSiteRelease": true,
+  "productionApproved": true,
+  "productionApprovedMeaning": "content release readiness, NOT deployment authorization",
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "publicationApproved": false,
+  "desktopOwnerCheck": "optional later follow-up; not blocking acceptance",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-g1/",
+  "htmlSha256": "0fb71071c46f0dff15a1808032a80ed3dcc6c331e6a3c0aa5f6b21f5f1bace93",
+  "assetFreeze": "docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/freeze.json",
+  "revision": {
+    "visibleBlocks": 13,
+    "faq": 8,
+    "facts": 25,
+    "generatedIllustrations": 3,
+    "galleries": [
+      5,
+      5
+    ]
+  },
+  "priorFactsPricesApproval": "docs/approvals/arenda-unitree-g1-docx-2026-09-28.json",
+  "priorEvidence": "docs/review/g1-docx-2026-09-28/final-proof.json",
+  "supersedes": "awaiting-owner-review current-state markers only; history retained",
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "analyticsAuthorized": false,
+  "leadRoutingAuthorized": false
+}

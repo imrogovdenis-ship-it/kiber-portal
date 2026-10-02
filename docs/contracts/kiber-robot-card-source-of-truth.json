@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "status": "working_source_of_truth_pending_owner_review",
+  "updated_at": "2026-09-18T11:43:56.435179",
+  "purpose": "Repository-owned source-of-truth index for KIBER robot-card production rules.",
+  "authority_order": [
+    "docs/contracts and docs/approvals files",
+    "current repo implementation",
+    "robot source-of-truth and pilot packages",
+    "SEO working key map",
+    "Wordstat/SERP evidence",
+    "Jino preview as acceptance surface",
+    "chat/session/memory as discovery only"
+  ],
+  "contracts": {
+    "source_of_truth": "docs/contracts/kiber-robot-card-source-of-truth.md",
+    "block_contract": "docs/contracts/kiber-robot-card-block-contract.md",
+    "style_contract": "docs/contracts/kiber-robot-card-style-contract.md",
+    "media_contract": "docs/contracts/kiber-robot-card-media-contract.md",
+    "seo_contract": "docs/contracts/kiber-robot-card-seo-contract.md",
+    "readiness_checklist": "docs/contracts/kiber-robot-card-readiness-checklist.md",
+    "approvals_registry": "docs/approvals/owner-approvals.json",
+    "source_of_truth_json": "docs/contracts/kiber-robot-card-source-of-truth.json"
+  },
+  "canonical_sources": {
+    "robot_route": "src/pages/robots/[slug].astro",
+    "robot_template": "src/components/templates/RobotCardTemplate.astro",
+    "template_converter": "src/lib/kiber94-robot-template-data.ts",
+    "template_schema": "src/lib/page-type-templates.ts",
+    "runtime_robot_data": "src/content/robots.generated.json",
+    "pilot_packages": "data/content/robot-card-pilot/<slug>.json",
+    "source_of_truth": "data/models/robots.source-of-truth.json",
+    "tariffs": "data/models/robot-tariffs.json",
+    "catalog_images": "data/models/robot-catalog-card-images.live.json",
+    "capability_images": "data/models/robot-capability-images.source.json",
+    "display_titles": "data/content/home-catalog-titles.json",
+    "short_descriptions": "data/content/catalog-short-descriptions.json",
+    "seo_working_map": "data/seo/working-key-map/seo-key-map.table.json"
+  },
+  "block_order": [
+    "hero",
+    "seoIntent",
+    "aiSummary",
+    "gallery",
+    "includedService",
+    "capabilities",
+    "scenarios",
+    "pricing",
+    "robotInAction",
+    "goshaCta",
+    "hiddenMachineFacts",
+    "orderFlow",
+    "faq",
+    "finalQuestionsCta",
+    "articles",
+    "relatedCatalog"
+  ],
+  "workflow": "one_card_at_a_time",
+  "owner_working_rules": {
+    "unitree_g1_visual_review_2026_09_18": {
+      "status": "recorded_working_rule",
+      "applies_to": "robot-card rewrite workflow unless later testing changes it",
+      "summary": [
+        "Hero and top gallery stay as-is for now",
+        "AI summary keeps approximate length but renders as two paragraphs",
+        "Shared service/order blocks must be checked against robot-specific use",
+        "Capabilities need real 2–3 line lead, shorter descriptions, and full useful image presentation without ugly cropping",
+        "Scenarios may use SEO-enriched headings only if natural and visually manageable; descriptions can be shortened 20–30%",
+        "Robot-in-action heading must be individual to the robot/gallery, not fixed generic copy",
+        "Gosha pattern stays as-is unless specifically requested",
+        "FAQ range is 5–8 items",
+        "Blog block uses 3 relevant article cards",
+        "Related catalog uses 4 relevant robots with useful variety when possible"
+      ]
+    }
+  },
+  "media_alt_policy": {
+    "updated_at": "2026-09-18",
+    "rule": "Public alt is derived from actualDescription/checked seoAlt, not blindly from sourceAlt.",
+    "forbidden_public_alt_fragments": [
+      "специальная иллюстрация блока",
+      "карточка аренды ... на сайте",
+      "для блока Что умеет робот",
+      "source / tilda / imported / generated block"
+    ],
+    "distribution": "roughly every second meaningful image may carry natural commercial/long-tail SEO context when visually truthful; do not optimize every image",
+    "seo_map_policy": "main SEO map may show compact media-alt status/evidence fields, while full alt inventories stay in media source files or media review pages"
+  }
+}

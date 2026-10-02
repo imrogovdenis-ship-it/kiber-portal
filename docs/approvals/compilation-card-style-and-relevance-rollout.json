@@ -1,0 +1,11 @@
+{
+  "ownerAccepted": "New headings and card style on homepage and /compilations/",
+  "ownerAuthorized": "Record contracts/skills and choose four relevant cards per existing related block across preview",
+  "styleApproved": true,
+  "selectionRollout": "preview_verified; owner review of compositions pending",
+  "scope": "Existing canonical preview blocks only; all-index retains six; four topical plus hub elsewhere",
+  "productionAuthorized": false,
+  "sourceContract": "docs/contracts/kiber-related-compilations-block-contract.md",
+  "liveEvidence": "docs/review/compilation-relevance-rollout/live-browser.json",
+  "matrix": "data/content/related-compilation-selections.json"
+}

@@ -1,0 +1,66 @@
+{
+  "kind": "kiber_owner_approval",
+  "page": "compilation",
+  "route": "/roboty-dlya-vystavki/",
+  "title": "Аренда робота для выставки",
+  "approvedAt": "2026-09-21T19:40:00+03:00",
+  "approvedBy": "Александр Маркин",
+  "source": "Telegram owner message 2026-09-21: “Фиксирую результат по подборке ... считаем что она готова ... утверждён ... пока просто зафиксируй”",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-dlya-vystavki/?v=owner-feedback-6-gallery-ratio",
+  "status": "owner_approved_on_jino_preview",
+  "productionApproved": false,
+  "mergeApproved": false,
+  "scope": {
+    "approved": "Подборка /roboty-dlya-vystavki/ после owner feedback 6: финальная Jino-preview версия страницы «Аренда робота для выставки».",
+    "keptOnPreview": true,
+    "productionDeploy": "not approved",
+    "nextWork": "после фиксации — анализ всего сделанного и формирование навыка"
+  },
+  "finalVisibleState": {
+    "h1": "Роботы для выставки",
+    "seoH1": "Аренда робота для выставки",
+    "route": "/roboty-dlya-vystavki/",
+    "blockOrder": [
+      "Hero",
+      "заголовок + 2 абзаца",
+      "Каталог роботов",
+      "Цитата Гоши",
+      "заголовок + 2 абзаца",
+      "Галерея",
+      "Гид по выбору",
+      "Сценарии",
+      "Цитата Гоши-шутка",
+      "повтор каталога",
+      "FAQ",
+      "CTA2",
+      "Блог Кибер Гоши — 6 статей",
+      "Подборки — 5 карточек"
+    ],
+    "mediaAcceptance": "Галерея: одинаковая высота, ширина по пропорции, без crop; Галерея и Сценарии используют разные изображения; подпись Гоши: Кибер Гоша / Ваш цифровой помощник."
+  },
+  "sourceFiles": [
+    "data/content/compilation-exhibition.json",
+    "src/components/templates/CompilationTemplate.astro",
+    "src/components/blocks/EditorialHero.astro",
+    "src/components/blocks/RobotCard.astro",
+    "src/lib/kiber94-compilation-template-data.ts"
+  ],
+  "evidence": [
+    "docs/review/compilation-roboty-dlya-vystavki/owner-feedback-6-2026-09-21/readiness-summary-feedback6.json",
+    "docs/review/compilation-roboty-dlya-vystavki/owner-feedback-6-2026-09-21/jino-rendered-qa.json",
+    "docs/review/compilation-roboty-dlya-vystavki/owner-feedback-6-2026-09-21/local-rendered-qa.json",
+    "docs/review/compilation-roboty-dlya-vystavki/fresh-full-cycle-2026-09-21/04-seo-passport-fresh.json",
+    "docs/review/compilation-roboty-dlya-vystavki/plan-approval-2026-09-21/plan-before-writing-owner-corrections.txt"
+  ],
+  "verification": {
+    "npmRunCheck": "PASS",
+    "npmRunBuildPreview": "PASS",
+    "jinoRenderedQa": "PASS",
+    "robots": "noindex,nofollow on preview",
+    "browserConsole": "0 JS errors",
+    "brokenImages": 0,
+    "missingAlt": 0,
+    "duplicateGalleryScenarioSrc": 0,
+    "productionTouched": false
+  }
+}

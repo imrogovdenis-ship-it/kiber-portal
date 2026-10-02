@@ -1,0 +1,78 @@
+{
+  "kind": "kiber_owner_approval",
+  "id": "roboty-gumanoidy-2026-09-24",
+  "route": "/roboty-gumanoidy/",
+  "title": "Аренда робота-гуманоида для мероприятий",
+  "approvedAt": "2026-09-24T06:19:54.299900+00:00",
+  "approvedBy": "Александр Маркин",
+  "ownerApprovalQuote": "Принимаю. Фиксируй результат.",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-gumanoidy/?v=resume-20260924",
+  "acceptedPreview": true,
+  "status": "owner_approved_on_jino_preview",
+  "readyForProduction": false,
+  "productionReadinessApproval": "not_granted",
+  "productionApproved": false,
+  "productionDeployAuthorized": false,
+  "mergeApproved": false,
+  "dnsApproved": false,
+  "secretsApproved": false,
+  "analyticsApproved": false,
+  "liveRoutingApproved": false,
+  "interpretation": "Принята только указанная редакция Jino preview. Владелец не предоставил отдельного утверждения готовности к основному домену или разрешения на production deploy.",
+  "acceptedHtmlSha256": "a76f9b3095906b6738232e7adb8b7dd5d63157b04978a648abe767e3329ae294",
+  "productionBeforeSha256": "acd60fcbc38e4f4ba256ffffd09e83f35b4ef94ad2eda2ed0abc8ec2ceba8ea7",
+  "finalVisibleState": {
+    "h1": "Аренда робота-гуманоида для мероприятий",
+    "seoTitle": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+    "primaryKeyword": "аренда робота-гуманоида",
+    "faqCount": 6,
+    "robotCount": 7,
+    "blogCards": "5 articles + all articles",
+    "compilationCards": "4 compilations + all compilations",
+    "blockOrder": [
+      "Hero",
+      "Intro",
+      "Catalog (7 models)",
+      "Gosha quote",
+      "Explanation",
+      "Gallery",
+      "Choice guide",
+      "Video",
+      "Scenarios (7 model videos)",
+      "Gosha conclusion",
+      "Catalog repeat",
+      "FAQ",
+      "CTA2",
+      "Blog Gosha",
+      "Related compilations"
+    ],
+    "models": [
+      "Unitree G1",
+      "Unitree R1",
+      "Unitree H2",
+      "Agibot X2",
+      "Noetix Bumi",
+      "Арди",
+      "София"
+    ]
+  },
+  "evidence": [
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/FINAL-HANDOFF.md",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/research/closure.md",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/parent-verification.json",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/final.json",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/playback.json",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/media-retry-parent.json",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/final-linked-routes.json",
+    "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/visible-text.diff"
+  ],
+  "nonBlockingFollowups": [
+    "Bumi/София cluster articles remain separate backlog.",
+    "Research closure supersedes earlier partial research-summary.md; recorded network/low-volume limitations remain."
+  ],
+  "sourceHashes": {
+    "src/pages/roboty-gumanoidy.astro": "d187a81d619ac758c498223002c08ce25cd2ea7d9d7353f121e3c1643f1f1067",
+    "src/components/templates/CompilationTemplate.astro": "61c8375105c22792ccc29e559bf75462778c30f2aef8b8df483b4ce11b93dcca"
+  },
+  "acceptedBlocksSha256": "c6856bf35e1beb008f272c89643bacb75e93174d193bd549a74ef5169fbae2f9"
+}

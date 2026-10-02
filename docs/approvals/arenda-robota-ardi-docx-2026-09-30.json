@@ -1,0 +1,95 @@
+{
+  "id": "arenda-robota-ardi-docx-2026-09-30",
+  "route": "/robots/arenda-robota-ardi/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Принято. Фиксируй.",
+  "acceptedAt": "2026-09-30T07:08:23.565746+00:00",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-ardi/",
+  "acceptedHtmlSha256": "95688732af284e8cf114d5c9b77e6367061f2e029364142a02c37b4a5ba4deea",
+  "title": "Аренда робота Арди — андроид с ИИ-диалогом | КИБЕР ПОРТАЛ",
+  "h1": "Аренда робота-андроида Арди",
+  "seoIntent": "аренда робота Арди",
+  "scope": "Current completed literal DOCX Jino revision accepted. Acceptance only: no new production readiness, release authorization or deployment. Prior approval remains historical.",
+  "acceptedPreview": true,
+  "readyForProduction": false,
+  "readyForNextSiteRelease": false,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "productionApproved": false,
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "secretsAuthorized": false,
+  "analyticsAuthorized": false,
+  "liveRoutingAuthorized": false,
+  "navigationAuthorized": false,
+  "visibleState": {
+    "blocks": 13,
+    "faq": 8,
+    "facts": 19,
+    "docxLines": 365,
+    "galleries": [
+      5,
+      6
+    ],
+    "heroPrice": "от 250 000 ₽ за день",
+    "cta1Price": "от 32 000 ₽ / час — отдельным абзацем",
+    "widthsPassed": [
+      390,
+      768,
+      1280,
+      1920
+    ],
+    "touchPassed": [
+      390,
+      768
+    ]
+  },
+  "evidence": [
+    "docs/review/ardi-docx-2026-09-29/integration/FINAL-REPORT.md",
+    "docs/review/ardi-docx-2026-09-29/integration/final-proof.json"
+  ],
+  "acceptedAssetLocks": [
+    {
+      "url": "/images/robot-capabilities/arenda-robota-ardi/docx-20260929/02-dialog.webp",
+      "sha256": "bb50e165343037949609015efc9674f741273fb7cab61d8a9228e3f58d8cf119",
+      "alt": "Робот-андроид Арди отвечает на вопрос гостя, вокруг головы — звуковые волны"
+    },
+    {
+      "url": "/images/robot-capabilities/arenda-robota-ardi/docx-20260929/05-languages.webp",
+      "sha256": "56588760cee6e54d651a2f3972b29fe310623b8cf33d6466c3826b8cfb1422c5",
+      "alt": "Робот Арди говорит с иностранными гостями на их языке"
+    },
+    {
+      "url": "/images/robot-capabilities/arenda-robota-ardi/docx-20260929/06-mains.webp",
+      "sha256": "bfdaa740540ce0ab5c2654ce3ad46c12b40f55fcf82e39905174acf5e57c2c9d",
+      "alt": "Робот-андроид Арди на стойке, подключённый к сети"
+    }
+  ],
+  "mediaNonblockingNotes": [
+    "Dialog upper-left stretched texture retained; disclosed before owner acceptance.",
+    "Mains approximately 16% clearance retained; disclosed before owner acceptance.",
+    "Simplified editorial support stand retained; disclosed before owner acceptance.",
+    "Nonblocking acceptance notes, not fixed defects; no claim of strict 100% image-brief conformity."
+  ],
+  "compilation": {
+    "route": "/roboty-gumanoidy/",
+    "sha256": "c30c0090f3c8947c1dbdc0bb9e14336c585dd05f6e1458ffc01661d28a0daae5",
+    "scope": "Previously approved scoped «робот Арди» implementation; no content edits or new whole-compilation acceptance"
+  },
+  "broaderNavigationReleaseGate": "Unresolved; docs/review/production-release-navigation-gate.md; not whole-website readiness",
+  "blockOrder": [
+    "hero",
+    "aiSummary",
+    "gallery",
+    "includedService",
+    "capabilities",
+    "scenarios",
+    "pricing",
+    "robotInAction",
+    "goshaCta",
+    "orderFlow",
+    "faq",
+    "finalQuestionsCta",
+    "relatedCatalog"
+  ]
+}

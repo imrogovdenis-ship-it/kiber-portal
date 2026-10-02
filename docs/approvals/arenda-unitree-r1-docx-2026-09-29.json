@@ -1,0 +1,72 @@
+{
+  "id": "arenda-unitree-r1-docx-2026-09-29",
+  "route": "/robots/arenda-unitree-r1/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Так страница R1 принята фиксирую результат",
+  "acceptedAt": "2026-09-29T19:21:52.896838+00:00",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-r1/",
+  "acceptedHtmlSha256": "2ccb478b7fd9ae9fc672ce5a941667c32727058b6a4a2046be0b070fefb57720",
+  "title": "Аренда Unitree R1 — гуманоид с оператором | КИБЕР ПОРТАЛ",
+  "scope": "Current literal DOCX R1 revision including illustrations 1/2/4 accepted on Jino only. Subsequent Ardi task does not revoke acceptance. No new production readiness or deployment permission. Prior approval/integration retained as historical evidence.",
+  "acceptedPreview": true,
+  "readyForProduction": false,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "productionApproved": false,
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "secretsAuthorized": false,
+  "analyticsAuthorized": false,
+  "liveRoutingAuthorized": false,
+  "visibleState": {
+    "blocks": 13,
+    "faq": 8,
+    "facts": 25,
+    "galleryUpper": 4,
+    "galleryLower": 3,
+    "heroPrice": "от 50 000 ₽ за мероприятие; минимум 2 часа",
+    "cta1Price": "от 12 500 ₽ / час отдельным абзацем",
+    "widthsPassed": [
+      390,
+      768,
+      1280,
+      1920
+    ]
+  },
+  "evidence": [
+    "docs/review/unitree-r1-docx-2026-09-29/integration/FINAL-REPORT.md",
+    "docs/review/unitree-r1-docx-2026-09-29/integration/final-proof.json"
+  ],
+  "assetLocks": [
+    {
+      "path": "images/robot-capabilities/arenda-unitree-r1/docx-20260929/01-height-weight.webp",
+      "sha256": "cb2f3aac311b8d5a47c3e72281efce74555a52029d13238dc17b83f1b8ba9583",
+      "status": 200
+    },
+    {
+      "path": "images/robot-capabilities/arenda-unitree-r1/docx-20260929/02-joints.webp",
+      "sha256": "da3bf2bd0dee5d2a586ab97a98a4742040c004985defc31548bb99f51cf52b7c",
+      "status": 200
+    },
+    {
+      "path": "images/robot-capabilities/arenda-unitree-r1/docx-20260929/04-run.webp",
+      "sha256": "fc79afadbbb44f7715e8d041b496201ae888048fe53d6437411610a7e9482b8c",
+      "status": 200
+    }
+  ],
+  "previousPackageReview": {
+    "status": "awaiting_owner_review",
+    "ownerReviewRequired": true,
+    "publicationApproved": false,
+    "productionApproved": false,
+    "productionScope": "not_approved",
+    "mediaReviewPending": false,
+    "ownerCopyApproved": true,
+    "aiSummaryParagraphs": 2,
+    "approvalScope": "Owner approved literal DOCX implementation, not rendered acceptance. Previous preview approval does not approve this revision.",
+    "openQuestions": [
+      "Новая редакция DOCX с заменой иллюстраций 1, 2, 4 требует проверки владельца на Jino; прежняя приёмка не распространяется на неё."
+    ],
+    "evidence": "docs/review/unitree-r1-docx-2026-09-29/integration/FINAL-REPORT.md"
+  }
+}

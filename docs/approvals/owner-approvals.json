@@ -1,0 +1,2718 @@
+{
+  "schema_version": "1.0",
+  "status": "owner_approved",
+  "note": "Александр утвердил текущий пакет контрактов в репозитории как рабочий source of truth; последующие замечания меняют контракты напрямую.",
+  "approval_authority_policy": {
+    "primary": "docs/contracts + docs/approvals in repository",
+    "not_primary": [
+      "chat history",
+      "compressed context",
+      "persistent memory",
+      "Linear/task-manager issues",
+      "Jino preview without recorded approval"
+    ],
+    "production": "verification of live state only unless tied to approval record"
+  },
+  "entries": [
+    {
+      "id": "article-template-approvedarticle5",
+      "type": "template_contract",
+      "status": "owner_approved",
+      "claim": "ApprovedArticle5 is the canonical current article template for /articles pages.",
+      "source_files": [
+        "src/components/templates/ApprovedArticle5.astro",
+        "src/lib/approved-article-5-types.ts"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-source-of-truth.md",
+        "docs/contracts/kiber-article-block-contract.md"
+      ],
+      "allowed_changes": [
+        "article-specific content and data",
+        "block selection by article logic"
+      ],
+      "forbidden_without_new_approval": [
+        "template redesign",
+        "shared layout/style changes",
+        "new production publishing scope"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "shared-homepage-block-styles",
+      "type": "style_contract",
+      "status": "owner_approved",
+      "claim": "FAQ, CTA2, catalog, related articles and compilations reuse approved homepage/shared block styles; content/card selection may vary by article.",
+      "source_files": [
+        "src/data/home-live.ts",
+        "src/components/blocks/HomeFaqBlock.astro",
+        "src/components/blocks/HomeFinalCta.astro",
+        "src/components/blocks/HomeImageCards.astro",
+        "src/components/blocks/RobotCard.astro"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-style-contract.md",
+        "docs/contracts/kiber-article-block-contract.md"
+      ],
+      "allowed_changes": [
+        "article-specific text",
+        "questions/answers",
+        "selected robots/articles/compilations"
+      ],
+      "forbidden_without_new_approval": [
+        "colors",
+        "fonts",
+        "spacing",
+        "layout",
+        "shared component redesign"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "article-seo-gate-order",
+      "type": "workflow_contract",
+      "status": "owner_approved",
+      "claim": "SEO-significant articles must follow Wordstat → SERP → gaps → SEO passport before final article writing/preview acceptance.",
+      "source_files": [],
+      "contract_files": [
+        "docs/contracts/kiber-article-seo-contract.md"
+      ],
+      "allowed_changes": [
+        "mark scaffold/draft when research incomplete"
+      ],
+      "forbidden_without_new_approval": [
+        "presenting unchecked SEO draft as final acceptance candidate"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "kiber-gosha-article-microcontract",
+      "type": "copy_contract",
+      "status": "owner_approved",
+      "claim": "Kiber Gosha quote uses a bold first paragraph for joke/useful take and compact second paragraph manager handoff matching article logic.",
+      "source_files": [
+        "src/components/blocks/HomeGoshaQuote.astro"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-style-contract.md"
+      ],
+      "allowed_changes": [
+        "topic-specific joke/recommendation",
+        "topic-specific compact handoff"
+      ],
+      "forbidden_without_new_approval": [
+        "long checklist as second paragraph",
+        "handoff contradicting article promise",
+        "single collapsed paragraph when two-part structure is needed"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "article-media-role-separation",
+      "type": "media_contract",
+      "status": "owner_approved",
+      "claim": "Hero, gallery, catalog cards, related cards, compilation cards and capability images have separate roles and sources.",
+      "source_files": [
+        "data/models/robot-capability-images.source.json",
+        "public/images/articles/",
+        "public/images/robot-capabilities/"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-media-contract.md"
+      ],
+      "allowed_changes": [
+        "article-owned optimized assets",
+        "owner-approved generated Hero",
+        "relevant gallery selections"
+      ],
+      "forbidden_without_new_approval": [
+        "low-quality generated/local placeholder as final Hero",
+        "gallery filler robots",
+        "capability images reused as article media without approval"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "typography-and-button-constraints",
+      "type": "style_contract",
+      "status": "owner_approved",
+      "claim": "H1/H2/H3 use selected typography direction; body/blue labels remain unchanged; blue button darkening was rejected.",
+      "source_files": [],
+      "contract_files": [
+        "docs/contracts/kiber-article-style-contract.md"
+      ],
+      "allowed_changes": [
+        "article text and headings within approved style"
+      ],
+      "forbidden_without_new_approval": [
+        "body typography redesign",
+        "button blue darkening",
+        "shared label style changes"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "production-gate",
+      "type": "release_contract",
+      "status": "owner_approved",
+      "claim": "Production deploy is separate from preview/design/text approval and requires explicit owner approval for scope.",
+      "source_files": [],
+      "contract_files": [
+        "docs/contracts/kiber-article-source-of-truth.md"
+      ],
+      "allowed_changes": [
+        "local edits",
+        "builds",
+        "Jino preview"
+      ],
+      "forbidden_without_new_approval": [
+        "upload to www.kiber-portal.ru",
+        "production robots/sitemap/htaccess/analytics/form/CRM/DNS/secrets changes"
+      ],
+      "owner_approval_basis": "Initial contract package approved by Alexander as working source of truth; refine by editing contracts during future work."
+    },
+    {
+      "id": "article-hero-new-vs-rewrite-media-rule",
+      "type": "media_contract",
+      "status": "owner_approved",
+      "claim": "New articles require a separate article-specific Hero generated/planned from the article meaning by default; existing article rewrites keep the current Hero unless a new image is explicitly requested or the old image is wrong for the revised scenario.",
+      "source_files": [
+        "public/images/articles/",
+        "src/pages/articles/<slug>/index.astro",
+        "src/lib/kiber-article-*-data.ts"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-media-contract.md",
+        "docs/contracts/kiber-article-block-contract.md"
+      ],
+      "allowed_changes": [
+        "article-owned generated/editorial Hero for a new article",
+        "existing Hero reuse during rewrite when still semantically correct",
+        "new Hero for existing article when explicitly requested or justified by mismatch"
+      ],
+      "forbidden_without_new_approval": [
+        "reusing another article's Hero as final media for a new article",
+        "generating a replacement Hero for an existing rewritten article by default",
+        "using a generic robot image that does not illustrate the article meaning"
+      ],
+      "owner_approval_basis": "Owner correction after product-presentation article: new articles should immediately get their own image generated from the article meaning; rewrites should keep the existing image unless asked otherwise."
+    },
+    {
+      "id": "article-robots-from-scenario-gallery-placement",
+      "type": "block_media_contract",
+      "status": "owner_approved",
+      "claim": "For multi-robot scenario articles, analyze whether the mid-article block ‘Роботы из сценария’ is needed; when multiple mentioned robots should be shown in real use, add it after the Cyber Gosha quote and before the ‘Перед заявкой’ checklist as a gallery/slider with one relevant real photo per robot selected from robot-card galleries.",
+      "source_files": [
+        "src/lib/approved-article-5-types.ts",
+        "src/components/templates/ApprovedArticle5.astro",
+        "public/images/articles/<slug>/gallery/"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-block-contract.md",
+        "docs/contracts/kiber-article-media-contract.md"
+      ],
+      "allowed_changes": [
+        "ordered gallery block after Gosha and before before-request checklist",
+        "article-owned optimized copies of relevant robot-card gallery photos",
+        "buyer-facing title, description and role-specific alt text"
+      ],
+      "forbidden_without_new_approval": [
+        "generated photos for the Robots from scenario gallery",
+        "filler robots not mentioned in the article",
+        "weak catalog-card duplicates when a stronger gallery image exists",
+        "moving the standard block away from after-Gosha/before-checklist without article-specific reason"
+      ],
+      "owner_approval_basis": "Alexander approved the product-presentation article implementation and instructed to закрепить this placement/principle in skills and repository contracts."
+    },
+    {
+      "id": "article-end-to-end-readiness-workflow",
+      "type": "workflow_contract",
+      "status": "owner_approved",
+      "claim": "When Alexander asks to write/create a KIBER article, the default deliverable is the full end-to-end article ready on Jino preview: source/SEO/SERP/rewrite/media/blocks/build/rendered audit/preview, then final checklist verification before handoff; no intermediate progress reports unless requested or blocked.",
+      "source_files": [
+        "docs/contracts/kiber-article-readiness-checklist.md"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-article-source-of-truth.md",
+        "docs/contracts/kiber-article-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "autonomous full article pipeline",
+        "Jino preview update after checks",
+        "concise final owner report"
+      ],
+      "forbidden_without_new_approval": [
+        "stopping at partial draft when tools can complete the pipeline",
+        "asking for next-step approval between standard stages",
+        "production deploy/DNS/secrets/analytics/live form changes"
+      ],
+      "owner_approval_basis": "Alexander requested packaging the full article workflow so future 'write/create article' tasks run from start to ready preview automatically with a repository checklist gate."
+    },
+    {
+      "id": "article-robot-animator-birthday-owner-approved-future-deploy-2026-09-17",
+      "type": "article_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "claim": "Article /articles/robot-animator-na-den-rozhdeniya/ accepted by Alexander on Jino preview after model/Hero/gallery fix; ready for future deploy, production still gated separately.",
+      "preview_url": "https://jino-preview.kiber-portal.ru/articles/robot-animator-na-den-rozhdeniya/?v=robot-animator-models-fix-3",
+      "source_files": [
+        "src/lib/kiber-article-robot-animator-birthday-data.ts",
+        "src/pages/articles/robot-animator-na-den-rozhdeniya/index.astro",
+        "public/images/articles/robot-animator-na-den-rozhdeniya/",
+        "docs/review/article-robot-animator-na-den-rozhdeniya/"
+      ],
+      "route": "/articles/robot-animator-na-den-rozhdeniya/",
+      "production": "not_touched_requires_separate_approval",
+      "owner_approval_basis": "Telegram: 'Статья принята. Приступай к следующей.' after preview robot-animator-models-fix-3"
+    },
+    {
+      "id": "article-robot-halloween-owner-approved-future-deploy-2026-09-17",
+      "type": "article_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "claim": "Article /articles/robot-na-hellouin/ accepted by Alexander on Jino preview; ready for future deploy, production gated separately.",
+      "preview_url": "https://jino-preview.kiber-portal.ru/articles/robot-na-hellouin/?v=wave-a-halloween-readiness-1",
+      "route": "/articles/robot-na-hellouin/",
+      "production": "not_touched_requires_separate_approval",
+      "owner_approval_basis": "Telegram: 'Статья принята. Делай следующую по плану.'"
+    },
+    {
+      "id": "article-robot-na-vypusknoy-owner-approved",
+      "type": "article_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "claim": "Article /articles/robot-na-vypusknoy/ accepted by Alexander for next deploy after Jino preview recheck.",
+      "route": "/articles/robot-na-vypusknoy/",
+      "preview_url": "https://jino-preview.kiber-portal.ru/articles/robot-na-vypusknoy/?v=acceptance-recheck-1",
+      "source_files": [
+        "src/lib/kiber-article-robot-graduation-data.ts",
+        "src/pages/articles/robot-na-vypusknoy/index.astro",
+        "public/images/articles/robot-na-vypusknoy/"
+      ],
+      "review_files": [
+        "docs/review/article-robot-na-vypusknoy/readiness-checklist-2026-09-17.md"
+      ],
+      "owner_approval_basis": "Telegram: Александр: “Утверждаю статью ... фиксирую для следующего деплоя”.",
+      "production_gate": "Production not touched; publish only in separately approved deploy scope."
+    },
+    {
+      "id": "robot-card-arenda-unitree-g1-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "Unitree G1 card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-unitree-g1.json",
+        "docs/approvals/arenda-unitree-g1-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-agibot-x2-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "Agibot X2 card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-agibot-x2.json",
+        "docs/approvals/arenda-agibot-x2-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-noetix-bumi-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "Noetix Bumi card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-noetix-bumi.json",
+        "docs/approvals/arenda-noetix-bumi-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-unitree-r1-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "Unitree R1 card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-unitree-r1.json",
+        "docs/approvals/arenda-unitree-r1-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-unitree-h2-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "Unitree H2 card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-unitree-h2.json",
+        "docs/approvals/arenda-unitree-h2-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-robota-sofiya-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "робот София card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-robota-sofiya.json",
+        "docs/approvals/arenda-robota-sofiya-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-robota-ardi-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "робот Арди card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-robota-ardi.json",
+        "docs/approvals/arenda-robota-ardi-2026-09-18.json",
+        "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "robot-card-arenda-robota-tron-preview-approval",
+      "type": "robot_card_preview_approval",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "робот Tron card is accepted on Jino preview with approved AI/SEO summary block; production remains gated.",
+      "source_files": [
+        "data/content/robot-card-pilot/arenda-robota-tron.json",
+        "docs/approvals/arenda-robota-tron-2026-09-18.json",
+        "docs/review/robot-card-readiness/tron-ai-summary-human-2026-09-18/jino-ai-summary-audit.json"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-robot-card-block-contract.md",
+        "docs/contracts/kiber-robot-card-style-contract.md",
+        "docs/contracts/kiber-robot-card-seo-contract.md",
+        "docs/contracts/kiber-robot-card-readiness-checklist.md"
+      ],
+      "allowed_changes": [
+        "future owner-requested point fixes",
+        "bookkeeping/status surfaces for preview acceptance"
+      ],
+      "forbidden_without_new_approval": [
+        "production deploy",
+        "merge as production launch",
+        "DNS changes",
+        "secrets/runtime changes",
+        "analytics/live lead routing changes"
+      ],
+      "owner_approval_basis": "Telegram approval on 2026-09-18 after AI-summary human-first correction."
+    },
+    {
+      "id": "roboty-dlya-vystavki-owner-approved-2026-09-21",
+      "type": "page_owner_approval",
+      "status": "owner_approved",
+      "claim": "Подборка /roboty-dlya-vystavki/ утверждена владельцем на Jino preview как готовая версия; production remains gated.",
+      "source_files": [
+        "data/content/compilation-exhibition.json",
+        "src/components/templates/CompilationTemplate.astro",
+        "src/components/blocks/EditorialHero.astro",
+        "src/components/blocks/RobotCard.astro",
+        "src/lib/kiber94-compilation-template-data.ts"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-compilation-modular-contract.md",
+        "docs/contracts/compilation-presentation.md"
+      ],
+      "approval_files": [
+        "docs/approvals/roboty-dlya-vystavki-2026-09-21.json",
+        "docs/approvals/roboty-dlya-vystavki-2026-09-21.md"
+      ],
+      "approved_preview_url": "https://jino-preview.kiber-portal.ru/roboty-dlya-vystavki/?v=owner-feedback-6-gallery-ratio",
+      "allowed_changes": [
+        "repo documentation/status synchronization",
+        "future skill/workflow extraction after separate analysis"
+      ],
+      "forbidden_without_new_approval": [
+        "production deployment",
+        "merge as production release",
+        "DNS/secrets/analytics/live lead routing changes",
+        "changing approved visible page composition"
+      ],
+      "owner_approval_basis": "Telegram owner message 2026-09-21: “Фиксирую результат по подборке ... считаем что она готова ... утверждён ... пока просто зафиксируй”"
+    },
+    {
+      "id": "roboty-promoutery-owner-approved-2026-09-22",
+      "type": "compilation_page",
+      "status": "owner_approved_on_jino_preview",
+      "claim": "Подборка «Роботы-промоутеры для мероприятий» принята владельцем на Jino preview, включая фотореалистичный Hero.",
+      "source_files": [
+        "data/content/compilation-promoters.json",
+        "public/images/compilations/roboty-promoutery/hero/roboty-promoutery-hero-20260922.webp"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-compilation-modular-contract.md",
+        "docs/contracts/compilation-presentation.md"
+      ],
+      "approval_files": [
+        "docs/approvals/roboty-promoutery-2026-09-22.json",
+        "docs/approvals/roboty-promoutery-2026-09-22.md"
+      ],
+      "approved_preview_url": "https://jino-preview.kiber-portal.ru/roboty-promoutery/?v=hero-photoreal-1",
+      "allowed_changes": [
+        "repo documentation/status synchronization",
+        "preparation for separately approved publication"
+      ],
+      "forbidden_without_new_approval": [
+        "production deployment",
+        "merge as production release",
+        "DNS/secrets/analytics/live lead routing changes",
+        "changing approved visible page composition"
+      ],
+      "owner_approval_basis": "Telegram 2026-09-22: владелец подтвердил, что после применения правильного image-generation навыка результат отлично получился и страницу нужно зафиксировать как готовую.",
+      "route": "/roboty-promoutery/",
+      "approval_file": "docs/approvals/roboty-promoutery-2026-09-22.json",
+      "production_approval": "not approved by this record",
+      "updatedAt": "2026-09-22T18:57:49+03:00"
+    },
+    {
+      "id": "compilation-block-rules-2026-09-23",
+      "type": "cross_site_block_contract",
+      "status": "owner_approved",
+      "claim": "The current «Подборки» block implementation and contract are the project-wide rule: canonical cards only, CTA Подробнее/Скоро only, 5-card normal blocks, /compilations/ as all-cards exception, and no related compilation block on robot cards.",
+      "source_files": [
+        "docs/contracts/kiber-related-compilations-block-contract.md",
+        "data/design/home-live-blocks.json",
+        "src/data/home-live.ts",
+        "src/lib/launch-navigation.ts",
+        "src/lib/kiber-release-related-compilations.ts",
+        "src/components/templates/ApprovedArticle5.astro",
+        "src/components/templates/CompilationTemplate.astro",
+        "scripts/compilation-block-contract-smoke.mjs"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-related-compilations-block-contract.md"
+      ],
+      "approval_files": [
+        "docs/approvals/compilation-block-rules-2026-09-23.json",
+        "docs/approvals/compilation-block-rules-2026-09-23.md"
+      ],
+      "verification": "npm run test:compilation-blocks",
+      "owner_approval_basis": "Alexander confirmed on 2026-09-23 that the block now looks good on all pages and instructed to fix this approach in project files/contracts/skills and always follow it.",
+      "productionApproved": false
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "roboty-sobaki-2026-09-23",
+      "route": "/roboty-sobaki/",
+      "title": "Аренда робота-собаки для мероприятий",
+      "approvedAt": "2026-09-23T16:52:45.145191+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Фиксируй страницу как принятую. И готовую к публикации на основной домен.",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-sobaki/?v=owner-seo-polish-2026-09-23",
+      "status": "owner_approved_on_jino_preview",
+      "readyForProduction": true,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "interpretation": "Owner accepts this page and publication readiness; this instruction records readiness, not an immediate production deployment.",
+      "acceptedHtmlSha256": "1a2faa678b6c96b13b92152ac7457e5c952ae13150dbab058862d8beb4115d2b",
+      "productionBeforeSha256": "0924ec16ab67d7b10a0557b9f20e0ba77f35e93d1e225ca0172da804f951f88b",
+      "finalVisibleState": {
+        "h1": "Аренда робота-собаки для мероприятий",
+        "seoTitle": "Аренда робота-собаки для мероприятия | КИБЕР ПОРТАЛ",
+        "primaryKeyword": "аренда робота-собаки",
+        "faqCount": 8,
+        "robotCount": 3,
+        "blogCards": "5 articles + all articles",
+        "compilationCards": "4 compilations + all compilations",
+        "blockOrder": [
+          "Hero",
+          "Intro",
+          "3 models",
+          "Gosha quote",
+          "Guide",
+          "Scenarios",
+          "Gosha final quote",
+          "Catalog",
+          "FAQ",
+          "CTA",
+          "Blog",
+          "Compilations",
+          "Footer"
+        ]
+      },
+      "evidence": [
+        "docs/review/compilation-roboty-sobaki/parent-independent-review/final-handoff.md",
+        "docs/review/compilation-roboty-sobaki/parent-independent-review/hidden-seo-verified.json",
+        "docs/review/compilation-roboty-sobaki/baseline-guard-2026-09-23.md"
+      ],
+      "nonBlockingFollowups": [
+        "Exact spelling variants, related self-link and modal heading semantics retained as accepted.",
+        "Missing preview HTTP X-Robots-Tag remains a separate infrastructure approval task; HTML noindex,nofollow is present.",
+        "Future cluster articles are not included in this page acceptance."
+      ],
+      "sourceHashes": {
+        "src/pages/roboty-sobaki.astro": "4700e4fa0117813fe41563f533db91ac6b5ccc0e7a7957c8c97a84f0b5708abb",
+        "src/lib/robot-dogs-preview-adapter.ts": "485ba25bf29cca557b798fd9124ac36885289499f6e9e2160fcd78750b97ba03"
+      }
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "roboty-gumanoidy-2026-09-24",
+      "route": "/roboty-gumanoidy/",
+      "title": "Аренда робота-гуманоида для мероприятий",
+      "approvedAt": "2026-09-24T06:19:54.299900+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Принимаю. Фиксируй результат.",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-gumanoidy/?v=resume-20260924",
+      "acceptedPreview": true,
+      "status": "owner_approved_on_jino_preview",
+      "readyForProduction": false,
+      "productionReadinessApproval": "not_granted",
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "interpretation": "Принята только указанная редакция Jino preview. Владелец не предоставил отдельного утверждения готовности к основному домену или разрешения на production deploy.",
+      "acceptedHtmlSha256": "a76f9b3095906b6738232e7adb8b7dd5d63157b04978a648abe767e3329ae294",
+      "productionBeforeSha256": "acd60fcbc38e4f4ba256ffffd09e83f35b4ef94ad2eda2ed0abc8ec2ceba8ea7",
+      "finalVisibleState": {
+        "h1": "Аренда робота-гуманоида для мероприятий",
+        "seoTitle": "Аренда роботов-гуманоидов для мероприятий | КИБЕР ПОРТАЛ",
+        "primaryKeyword": "аренда робота-гуманоида",
+        "faqCount": 6,
+        "robotCount": 7,
+        "blogCards": "5 articles + all articles",
+        "compilationCards": "4 compilations + all compilations",
+        "blockOrder": [
+          "Hero",
+          "Intro",
+          "Catalog (7 models)",
+          "Gosha quote",
+          "Explanation",
+          "Gallery",
+          "Choice guide",
+          "Video",
+          "Scenarios (7 model videos)",
+          "Gosha conclusion",
+          "Catalog repeat",
+          "FAQ",
+          "CTA2",
+          "Blog Gosha",
+          "Related compilations"
+        ],
+        "models": [
+          "Unitree G1",
+          "Unitree R1",
+          "Unitree H2",
+          "Agibot X2",
+          "Noetix Bumi",
+          "Арди",
+          "София"
+        ]
+      },
+      "evidence": [
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/FINAL-HANDOFF.md",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/research/closure.md",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/parent-verification.json",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/final.json",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/playback.json",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/media-retry-parent.json",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/final-linked-routes.json",
+        "docs/review/compilation-roboty-gumanoidy/resume-2026-09-24/visible-text.diff"
+      ],
+      "nonBlockingFollowups": [
+        "Bumi/София cluster articles remain separate backlog.",
+        "Research closure supersedes earlier partial research-summary.md; recorded network/low-volume limitations remain."
+      ],
+      "sourceHashes": {
+        "src/pages/roboty-gumanoidy.astro": "d187a81d619ac758c498223002c08ce25cd2ea7d9d7353f121e3c1643f1f1067",
+        "src/components/templates/CompilationTemplate.astro": "61c8375105c22792ccc29e559bf75462778c30f2aef8b8df483b4ce11b93dcca"
+      },
+      "acceptedBlocksSha256": "c6856bf35e1beb008f272c89643bacb75e93174d193bd549a74ef5169fbae2f9"
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "robot-dlya-foruma-i-konferencii-2026-09-24",
+      "route": "/robot-dlya-foruma-i-konferencii/",
+      "title": "Роботы для конференции и форума",
+      "approvedAt": "2026-09-24T09:13:47.743635+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Супер! Отличный результат. Фиксируй подборку как принятую. Не забудь отразить в статических документах по SEO/",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robot-dlya-foruma-i-konferencii/?v=owner-fixes-20260924",
+      "acceptedPreview": true,
+      "status": "owner_approved_on_jino_preview",
+      "readyForProduction": false,
+      "productionReadinessApproval": "not_granted",
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "interpretation": "Принята только указанная редакция Jino preview. Владелец не предоставил отдельного утверждения готовности к основному домену или разрешения на production deploy.",
+      "acceptedHtmlSha256": "0eb09803dd17b55a58ce3d08dc78b9d1781091f39bc211ee3908c2f52ebc6184",
+      "finalVisibleState": {
+        "h1": "Роботы для конференции и форума",
+        "seoTitle": "Робот для форума и конференции в аренду | КИБЕР ПОРТАЛ",
+        "primaryKeyword": "робот для форума и конференции",
+        "blockOrder": [
+          "intro",
+          "catalogBlock",
+          "introGosha",
+          "explanation",
+          "gallery",
+          "choiceGuide",
+          "scenarioExplanation",
+          "goshaConclusion",
+          "catalogRepeat",
+          "faq",
+          "cta2",
+          "relatedArticles",
+          "otherCompilations"
+        ],
+        "ownerCorrections": [
+          "G1 Hero +20%",
+          "Цитата №1: второй абзац",
+          "Удалён пункт «Площадка и интервалы работы»; осталось 6",
+          "Фото KettyBot выбрано владельцем"
+        ]
+      },
+      "evidence": [
+        "docs/review/compilation-forum-conference/owner-corrections-2026-09-24/REPORT.md",
+        "docs/review/compilation-forum-conference/owner-corrections-2026-09-24/served-verification.json",
+        "docs/review/compilation-forum-conference/owner-corrections-2026-09-24/qa-public/results.json"
+      ],
+      "nonBlockingFollowups": [
+        "Research extension: 10 Wordstat + 2 SERP + 2 competitors; organic full-list visual partial, not full research PASS."
+      ],
+      "sourceHashes": {
+        "data/content/compilation-forum-conference.json": "113b4272e2bfc8ca2dfd28d36e36f33dc5bf43e125ee309b8ccbb973e8d3047b",
+        "src/pages/robot-dlya-foruma-i-konferencii.astro": "f49d1161e1f5d687a63f3c0a045887321ab46e49ed89193a8a6617071e9a47b0",
+        "src/components/templates/CompilationTemplate.astro": "61c8375105c22792ccc29e559bf75462778c30f2aef8b8df483b4ce11b93dcca"
+      }
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "promobot-v4-robot-promouter-dlya-vystavok-i-korporativov-2026-09-25",
+      "route": "/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/",
+      "title": "Promobot V4 робот-промоутер",
+      "approvedAt": "2026-09-25T09:23:45.529623+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Фиксируй статью как принятую готовую то есть она уже Может у нас публиковаться на основной домен Когда мы будем публиковать новую версию сайта дальше Изучи последние ошибки которые у тебя были и внеси все эти корректировки свои навыки Чтобы в следующий раз уже Ты их не повторял ну и внеси данные все куда необходимо там все карту другие файлы то есть файлы репозитория о том что статья принято готово её статус и так далее",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptedPreview": true,
+      "readyForProduction": true,
+      "readyForNextSiteRelease": true,
+      "productionReadinessApproval": "explicit_owner_approval_for_next_site_release",
+      "productionApproved": true,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionApprovedMeaning": "Content eligibility for the next site release only; not an immediate deployment authorization or publication record.",
+      "interpretation": "Принята текущая страница целиком, включая Hero №1. Готова к публикации в следующей версии сайта. Сейчас production deploy не разрешён и не выполнялся.",
+      "acceptedHtmlSha256": "3c3f3dfcb7b43b12f345cac879157446baefa1f53706e6ef90b5a5984b6a81a9",
+      "finalVisibleState": {
+        "h1": "Promobot V4 робот-промоутер",
+        "seoTitle": "Promobot V4 на выставке: от знакомства к разговору о продукте | КИБЕР ПОРТАЛ",
+        "primaryKeyword": "Promobot V4",
+        "price": "от 10 000 ₽ / час",
+        "featuredModel": "large featured Promobot V4 card",
+        "heroStatus": "accepted_as_part_of_current_page",
+        "heroSha256": "a3b069a6b602e478b99144fbcb1c48d2c1b67f6f29e29bf1724fac69dcb6e1f8",
+        "gosha": "unchanged accepted current copy",
+        "faqCount": 8,
+        "checklist": "one six-item checklist"
+      },
+      "evidence": [
+        "docs/review/article-promobot-v4/owner-hourly-price-2026-09-25/integrity.json",
+        "docs/review/article-promobot-v4/owner-hourly-price-2026-09-25/browser.json",
+        "docs/review/article-promobot-v4/seo-and-featured-model-2026-09-25/qa-public/results.json"
+      ],
+      "limitations": [
+        "Google user_export: collection date, region and device unknown; no new live research claimed."
+      ],
+      "supersedes": "Historical temporary-Hero/pending-owner-review statuses; previous crop warnings retained as history, not current blockers.",
+      "sourceHashes": {
+        "src/lib/kiber-article-promobot-v4-data.ts": "2aed6f28a9e4f5d9b249c84d40fe8b51a428ffca6ba798427cb2877623e2c5dd",
+        "src/pages/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/index.astro": "e4801cc5cc52f69e509cfa88f99e7a69fbd0e0d71a7643579a1b17b38de796b3",
+        "src/components/templates/ApprovedArticle5.astro": "318ba4e9b9cd1e2b44e5e97bad8420c76682322e921a784ab10297aa2ffbc0ac",
+        "public/images/articles/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/hero-preview-first.webp": "a3b069a6b602e478b99144fbcb1c48d2c1b67f6f29e29bf1724fac69dcb6e1f8"
+      }
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "robot-vstrechaet-gostey-na-meropriyatii-2026-09-25",
+      "route": "/robot-vstrechaet-gostey-na-meropriyatii/",
+      "title": "Робот встречает гостей на мероприятии",
+      "approvedAt": "2026-09-25T12:17:00.817361+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Утверждай статью как принятую и готовую к публикации на основной домен - https://jino-preview.kiber-portal.ru/robot-vstrechaet-gostey-na-meropriyatii/",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robot-vstrechaet-gostey-na-meropriyatii/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptedPreview": true,
+      "readyForProduction": true,
+      "readyForNextSiteRelease": true,
+      "productionApproved": true,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "explicit_owner_approval_for_main_domain_publication",
+      "productionApprovedMeaning": "Content eligibility for main-domain release; no immediate deploy authorized.",
+      "interpretation": "Принята текущая версия, готовность к публикации на основном домене утверждена. Сам deploy отдельно; сейчас не выполняется.",
+      "acceptedHtmlSha256": "82c2281d5f70aba1ef8174131baae8a6c9d7e8c706f4913292306dfea18d9b86",
+      "finalVisibleState": {
+        "galleryPhotos": 4,
+        "blockOrder": "Перед заявкой → Каталог роботов → FAQ",
+        "faqCount": 7,
+        "prices": [
+          "от 10 000 ₽ / час",
+          "от 12 500 ₽ / час"
+        ],
+        "heroStatus": "accepted_as_part_of_current_page",
+        "heroSha256": "56949b83d207b1e4ca6c0aa14d5124d45f08319401dabaef539e20987c890982"
+      },
+      "evidence": [
+        "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/FINAL-REPORT.md",
+        "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/public-audit.json",
+        "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/final-proof.json",
+        "docs/review/article-robot-vstrechaet-gostey/2026-09-25/owner-gallery-catalog/media-provenance.json"
+      ],
+      "limitations": [
+        "Google user_export: дата/регион/устройство неизвестны; live SERP не заявлен."
+      ],
+      "sourceHashes": {
+        "src/lib/kiber-article-robot-vstrechaet-gostey-data.ts": "750539aef8eb6ce5bead347159fc8dab9c60a5605cc3037d823956e65b931ec1",
+        "src/pages/robot-vstrechaet-gostey-na-meropriyatii/index.astro": "06fdd94565b64ae75654c89237f3a846747044936f9780dbe41b2296e7414cb7",
+        "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/hero.webp": "56949b83d207b1e4ca6c0aa14d5124d45f08319401dabaef539e20987c890982",
+        "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/promobot.webp": "93a145cff6f49dbb83f2843a183094004b1d936dcd121fdf6ad7ddfa7765df51",
+        "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/promobot-reception.webp": "add3c462300566d3333003a2271cbb35984ec320443db355968e96819556e2d0",
+        "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/g1-go2-exhibition.webp": "60a7e75214ccbcb516ef691b4c60d8bdd9bfc252015d6bc382541d069fbedda3",
+        "public/images/articles/robot-vstrechaet-gostey-na-meropriyatii/gallery/g1.webp": "88bb6f9bb6c762006b47ce84fbbb4c38faf05bda1d39bb927bca250467612f8c"
+      }
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "robot-shahmatist-senserobot-na-meropriyatie-2026-09-28",
+      "route": "/robot-shahmatist-senserobot-na-meropriyatie/",
+      "title": "Робот-шахматист SenseRobot: турнир с ИИ",
+      "h1": "Робот-шахматист SenseRobot: турнир с ИИ",
+      "primaryKeyword": "робот шахматист",
+      "approvedAt": "2026-09-28T08:42:01.265706+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Утверждаю эту статью. Фиксируй.",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robot-shahmatist-senserobot-na-meropriyatie/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": true,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "productionApprovedMeaning": "Owner-approved next-release inclusion; this record does not assert completed technical QA or publication.",
+      "interpretation": "Приёмка сохранена. Последующим сообщением 28.09.2026 владелец включил страницу в новую публикацию; техническая готовность выпуска проверяется отдельно.",
+      "acceptedHtmlSha256": "5fddce03638e4b6aaf4a84a9c31c55d0ae8a712098d6dcb5c70e13582f71056e",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntro",
+          "howGame",
+          "chessMoment",
+          "formatChoice",
+          "tournament",
+          "goshaChessAdvice",
+          "kiber-gosha-goshaChessAdvice",
+          "chessGallery",
+          "exhibition",
+          "beforeRequest",
+          "catalogBlock",
+          "faq",
+          "faq",
+          "cta2",
+          "social",
+          "relatedArticles",
+          "article-template-related",
+          "relatedCompilations",
+          "article-template-compilations",
+          "cookie-consent"
+        ],
+        "howGame": "obviousChoice: three numbered cards 1,2,3",
+        "chessMoment": "mediaMoment reusing unchanged Hero immediately before formatChoice",
+        "faqCount": 8,
+        "heroStatus": "accepted_as_part_of_current_page",
+        "heroSha256": "513e75f003e7b5ae52336040c86432deb62b2c6adecf9f6ad9d52f5181d87560"
+      },
+      "evidence": [
+        "docs/review/article-senserobot/owner-blocks/FINAL-REPORT.md",
+        "docs/review/article-senserobot/owner-blocks/public-proof.json",
+        "docs/review/article-senserobot/owner-blocks/qa.mjs",
+        "docs/review/article-senserobot/owner-blocks/asset-lock.json",
+        "docs/review/article-senserobot/owner-blocks/delivery/manifest.json"
+      ],
+      "limitations": [
+        "Google owner_waived_after_captcha: исключение только для этой задачи, live Google не проверен."
+      ],
+      "sourceHashes": {
+        "src/lib/kiber-article-senserobot-data.ts": "704e1ff39657b691b2fe3a63760580b6bb79151931d2cc724f4b88b825a0827d",
+        "src/pages/robot-shahmatist-senserobot-na-meropriyatie/index.astro": "d6cb915feab81f058a301649b116ff18f81dd52a602188d660b9073587e771f5",
+        "public/images/articles/robot-shahmatist-senserobot-na-meropriyatie/hero.webp": "513e75f003e7b5ae52336040c86432deb62b2c6adecf9f6ad9d52f5181d87560",
+        "public/images/articles/robot-shahmatist-senserobot-na-meropriyatie/gallery/human-interaction.webp": "98cae5cdda6922176d66f6dea3f69bb8ff06ed4699c3a4cfc1e2cf66bd93a845",
+        "public/images/articles/robot-shahmatist-senserobot-na-meropriyatie/gallery/robot-table-scale.webp": "0654fd7266cf45a752e953502af17a85ea203b9780d246df803368a03ad34109",
+        "public/images/articles/robot-shahmatist-senserobot-na-meropriyatie/gallery/arm-and-pieces.webp": "5869942d27d3477e102c50c5d2fe781ec7132cf56a45f549758cbc5950685dd1"
+      },
+      "nextReleaseInclusionApproval": "docs/approvals/next-release-additions-2026-09-28.json"
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "roboty-unitree-2026-09-28",
+      "route": "/roboty-unitree/",
+      "title": "Роботы Unitree",
+      "h1": "Аренда роботов Unitree",
+      "primaryKeyword": "аренда Unitree",
+      "approvedAt": "2026-09-28T08:55:02.864555+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Как закончишь, займись следующей задачей: Утверждаю подборку \"Роботы Unitree\" написанную ранее. Тоже зафиксируй по ней данные. Скоро буду публиковать новую версию сайта.",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-unitree/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": true,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "productionApprovedMeaning": "Owner-approved next-release inclusion; this record does not assert completed technical QA or publication.",
+      "interpretation": "Приёмка сохранена. Последующим сообщением 28.09.2026 владелец включил страницу в новую публикацию; техническая готовность выпуска проверяется отдельно.",
+      "acceptedHtmlSha256": "019180d1104de4c8f8e34fdbd95355a98c6aa02e226b6074ddc4ad128bc6e784",
+      "finalVisibleState": {
+        "blockOrder": [
+          "intro",
+          "catalogBlock",
+          "introGosha",
+          "explanation",
+          "gallery",
+          "choiceGuide",
+          "scenarioExplanation",
+          "goshaConclusion",
+          "catalogRepeat",
+          "faq",
+          "cta2",
+          "relatedArticles",
+          "otherCompilations"
+        ],
+        "hero": {
+          "eyebrow": "Подборка / семейство Unitree",
+          "lead": "Подберите гуманоида или робопса Unitree для выставки, презентации и праздника — с понятной ролью в программе, подготовленными действиями и сопровождением на площадке.",
+          "image": {
+            "src": "/images/compilations/roboty-unitree/hero/unitree-family-hero.webp",
+            "alt": "Unitree G1 и робопёс Go2 рядом с гостями на мероприятии",
+            "actualDescription": "Редакционная иллюстрация G1 и Go2 рядом с гостями мероприятия; reference-guided генерация и две генеративные коррекции масштаба. Не документальное фото. Provenance: docs/review/compilation-roboty-unitree/2026-09-24/hero/scale-correction/provenance.json."
+          }
+        },
+        "media": [
+          {
+            "path": "public/images/articles/shared/gosha-cta2-compact.webp",
+            "status": 200,
+            "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/articles/unitree-g1-agibot-x2-hero.webp",
+            "status": 200,
+            "sha256": "30b94052a563cf732ab7fa70e750b756db360c74a893410a5531f8d224ea7256",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/articles/unitree-g1-korporativ/hero.webp",
+            "status": 200,
+            "sha256": "852d87b438d44890b4db1fff19ef9edd6e2ac210d1518e2b11a6739239bcbc25",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/brand/kp_logo_full_color.svg",
+            "status": 200,
+            "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/compilations/robot-dlya-foruma-i-konferencii/cards/forum-conference-card-20260924.webp",
+            "status": 200,
+            "sha256": "0447a57b8bce8ce9e0dc950b6ac536bfd8d7eb5fd9c9dcdfe28de30ef6052232",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/compilations/roboty-promoutery/cards/promobot-v4-dark-card-20260922.webp",
+            "status": 200,
+            "sha256": "71742e25d22a5d660733248b44a6d562846bde15be83f8c2b37b47e3de8210a8",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/compilations/roboty-unitree/hero/unitree-family-hero.webp",
+            "status": 200,
+            "sha256": "7faaf8ac689c02efe24d1be6c50d303b7cd22bfe725a5fd8fedb3b13ecb6a18d",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+            "status": 200,
+            "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-45/arenda-unitree-g1.webp",
+            "status": 200,
+            "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-45/arenda-unitree-go2.webp",
+            "status": 200,
+            "sha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-45/arenda-unitree-h2.webp",
+            "status": 200,
+            "sha256": "7e96764bd46f6135387de7bf78b7ce17f7f9051ab29388ded5990a70cce9ea68",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-45/arenda-unitree-r1.webp",
+            "status": 200,
+            "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/batch1-humanoids/arenda-robota-ardi__tild6464-3364-4466-b331-613636656637__012.webp",
+            "status": 200,
+            "sha256": "941d7862cdbe1d081a95ec2a5e0d3fca3b9d37bcd4cb5c3a589d740eeba45b44",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild3338-3033-4761-b961-663635646131__06.webp",
+            "status": 200,
+            "sha256": "02b4765ed8de6469d8b88b10e491c4c64487594839a7fa8919bfafd1420d4e59",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/batch1-humanoids/arenda-unitree-h2__tild6665-6262-4230-b331-653935303135__01.webp",
+            "status": 200,
+            "sha256": "804e1f27c07bea851a48a2b9a2f17cbe6a8f8a65596064dde825682535a44590",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/batch1-humanoids/arenda-unitree-r1__tild6432-3865-4237-b665-626633613332__07.webp",
+            "status": 200,
+            "sha256": "aa85040647046291221983aa115634777b64df3f63bbc8ee8a4609ae7a8d4c88",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3034-3431-4664-b364-613830393864__1.webp",
+            "status": 200,
+            "sha256": "2c6746bfc7a926a458100b06df59f09c029a406efc58b73b0498acd730745206",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-6261-4733-b832-343462316432__4.webp",
+            "status": 200,
+            "sha256": "4b1b2fbcdd576df7981334f2c098fa1e146fe28c9ea7243960f1cbaf36a1182c",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/tild6134-6536-4662-a134-643063656632__09.webp",
+            "status": 200,
+            "sha256": "20d1bd44ccdc0ed691b36d5c735f314373b4fcf1a70fba3b86671c65acef4583",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/tild6333-3137-4465-b265-323436646539__06.webp",
+            "status": 200,
+            "sha256": "03f2bd5b85908ca552d13f5ae4935abb016677cd13d7cae9b39a799dc278c82b",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-94-preview/tild6430-3334-4539-b033-633732353634__07.webp",
+            "status": 200,
+            "sha256": "d1f9d99372104535a236674c71e49886313663d9e7f5c4f4a284f966e83a122d",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/kiber-articles/unitree-g1-r1-h2-comparison-hero.webp",
+            "status": 200,
+            "sha256": "29c311d52eb3ef54a4e7f903c6470cd7a2cab0379d7ffa54209c1b52ad5dad3b",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/robot-dogs-preview/roboty-unitree-obzor-kompanii-img_b422193eff74.webp",
+            "status": 200,
+            "sha256": "15a70064b08ed0c5fa64941db9217fc48cc7182eb0ee6635909aac1eb7fd3e80",
+            "sourceDistHttpsEqual": true
+          },
+          {
+            "path": "public/images/robot-dogs-preview/unitree-go2-na-meropriyatii-img_1006041cae68.webp",
+            "status": 200,
+            "sha256": "3ea40c18818da0b1554a77a89c7cf6a2d3004f8198dc7277813a1b51955bc694",
+            "sourceDistHttpsEqual": true
+          }
+        ]
+      },
+      "evidence": [
+        "docs/review/compilation-roboty-unitree/2026-09-24/FINAL-REPORT.md",
+        "docs/review/compilation-roboty-unitree/acceptance-2026-09-28/baseline-public.json",
+        "docs/review/compilation-roboty-unitree/acceptance-2026-09-28/source-locks.json"
+      ],
+      "limitations": [
+        "SERP visual organic coverage partial; competitor Robort cookie-overlay partial",
+        "Пять статей существуют; их редакционный refresh вне этого scope; R1 статья не создана"
+      ],
+      "sourceHashes": {
+        "src/pages/roboty-unitree.astro": "921b4efdd338f9e39ebb17a38be9bb13b015e53ad6a70853cbf32114da0bb104"
+      },
+      "contentWithoutReviewSha256": "6a27ed0034c023cb978325bf742974cd9ffcf91734dd90d89ab2a8f37ec06020",
+      "nextReleaseInclusionApproval": "docs/approvals/next-release-additions-2026-09-28.json"
+    },
+    {
+      "id": "compilation-card-semantic-headings-and-relevance",
+      "type": "style_contract",
+      "status": "owner_approved",
+      "claim": "Small category-style H3 above unchanged slogan; 4 relevant cards + fifth /compilations/; index all six. Explicit full preview rollout authorized; new per-page selections await owner review.",
+      "source_files": [
+        "src/lib/compilation-card-headings.ts",
+        "src/lib/related-compilation-selection.ts",
+        "data/content/related-compilation-selections.json",
+        "public/styles/compilation-card-headings.css"
+      ],
+      "contract_files": [
+        "docs/contracts/kiber-related-compilations-block-contract.md"
+      ],
+      "approval_record": "docs/approvals/compilation-card-style-and-relevance-rollout.json",
+      "production_authorized": false
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "arenda-inchbot-l1-w-edu-2026-09-28",
+      "route": "/robots/arenda-inchbot-l1-w-edu/",
+      "title": "Аренда робота-собаки Inchbot L1-W EDU",
+      "h1": "Аренда робота-собаки Inchbot L1-W EDU",
+      "primaryKeyword": "аренда Inchbot L1-W EDU",
+      "approvedAt": "2026-09-28T13:35:51.282469+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "По иллюстрациям давай пока займем такую позицию: - да, некоторые из них нужно переделывать. - это сейчас не самое важное. - составлю отдельную задачу с основным агентом и вернемся к ней позже. Эти карточки считай принятыми: 1. Inchbot L1-W EDU 2. Promobot V4 6. Xiaomi CyberDog 2 5. Unitree Go2",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-inchbot-l1-w-edu/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptanceQualifier": "owner_deferred_illustrations",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "currentRevisionProductionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "acceptedHtmlSha256": "ac2e2a8ed07318128cf4d8db4047685ca85b4853ec29841bcac4b10f8442c61d",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntent",
+          "aiSummary",
+          "gallery",
+          "includedService",
+          "capabilities",
+          "scenarios",
+          "pricing",
+          "robotInAction",
+          "goshaCta",
+          "hiddenMachineFacts",
+          "orderFlow",
+          "faq",
+          "finalQuestionsCta",
+          "relatedCatalog",
+          "robot-card",
+          "robot-card",
+          "robot-card",
+          "robot-card"
+        ],
+        "media": {
+          "images/articles/shared/gosha-cta2-compact.webp": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "images/brand/kp_logo_full_color.svg": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "images/kiber-45/arenda-inchbot-l1-w-edu.webp": "e6f2d0401c878f9c4e666bebe7eba591123ceafe61bb7fdb477159c39c58a375",
+          "images/kiber-45/arenda-robota-tron.webp": "d6bb45c4e60000e413c7abf8bb2b99dc80fc0dbe670d46c4570c1ec87290b679",
+          "images/kiber-45/arenda-unitree-g1.webp": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "images/kiber-45/arenda-unitree-go2.webp": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+          "images/kiber-45/arenda-xiaomi-cyberdog-2.webp": "4d82ba762f6064d1c4adf7528269fdefc31085f09838cd28f90a5149f04971ca",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__01-tild3039-6438-4864-a336-613831663462__noroot.webp": "a9f948ca7ff8dbe93df87a046065c7de00ea3afbb365f1f99e86fa990c515c35",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__02-tild6263-3565-4132-b736-663530333864__08.webp": "c3d0f9ec7f1c6a0067b3f073deffd697ea58228f5a0261eb15f86b173cfb9752",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__03-tild6637-6536-4064-a663-353132643466__07.webp": "0d5fe13b6565957c2faa50483d612d01c2e9869360eb688fe8936a8018b5cd8c",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__04-tild6164-3661-4835-b039-303964323837__noroot.webp": "f4798aedc1ac4913c4cfe844a355d01790f1ab016eacd471972bf7437c70677a",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__05-tild3165-6138-4635-b538-623931653530__noroot.webp": "eefa87db5550c5ec074d9d6cb6cf53741f0ae6de8af1327e52dbec181b0de788",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-inchbot-l1-w-edu__06-tild3237-3030-4131-b965-346163333661__noroot.webp": "24d1756ce5dfaa8635fe23539dad4e857f6ef888e86a8f0205455056509e49d5",
+          "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "images/robot-capabilities/arenda-inchbot-l1-w-edu/01-tild3030-3632-4336-b537-623938666235____.webp": "6c8b34fadef3aefd9c586993167461900606610cbf251f9d747ca3f2d63c12a7",
+          "images/robot-capabilities/arenda-inchbot-l1-w-edu/02-tild3362-3535-4263-b863-316338643633___.webp": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "images/robot-capabilities/arenda-inchbot-l1-w-edu/03-tild3464-6234-4464-b762-386238303933__photo.webp": "9b019e29eaa02c851f6c01144344d75021a2630cd43a1f2a690b22e7eabd147c",
+          "images/robot-capabilities/arenda-inchbot-l1-w-edu/04-tild3763-3331-4964-b335-303330353239___.webp": "98187432200e31d8ad8c71631b3f64de80b2768647587f1976fd82007bdb0c0c",
+          "images/robot-capabilities/arenda-inchbot-l1-w-edu/05-tild3665-3635-4034-a235-666236393030__photo.webp": "7e7f84f5485628d1d67f5a0063bf7803afaabbf843a75cabebcac0b5a3ace166",
+          "images/robot-capabilities/arenda-inchbot-l1-w-edu/06-tild3938-3331-4536-b536-393963333336_____.webp": "697591125e39573f2b7b10717f88a5977be08c1eea34b908253b87d2af73616b"
+        },
+        "textAndMediaUnchanged": true
+      },
+      "deferredIllustrations": {
+        "status": "owner_deferred_nonblocking",
+        "issue": "Capability-иллюстрации колёсно-ногой платформы показывают другую конструкцию.",
+        "blocksAcceptance": false,
+        "taskCreation": "owner_will_create_separately_with_main_agent",
+        "taskCreated": false,
+        "imagesReplaced": false
+      },
+      "limitations": [],
+      "openPackageQuestions": [
+        "Подтвердить артикул EDU, производителя/интегратора, модули, доступ к SDK, готовые демонстрации и питание."
+      ],
+      "research": "Existing saved corpus only; no new/live Wordstat or SERP claimed.",
+      "evidence": [
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/freeze.json",
+        "docs/review/robot-p1-six-2026-09-28/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/served-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/FINAL-REPORT.md"
+      ],
+      "sourceHashes": {
+        "data/content/robot-card-p1-overrides.json": "67b24bb9295bb3deee1aa4f3c2f9cb80a8e1001ce56af5c9c4ec14171ecf125d",
+        "src/content/robots.generated.json": "05e8328f1820486a94ebb91ad61db0bd19350818571320747095597244fccd33",
+        "data/models/robots.source-of-truth.json": "7be6c36ef29055bf4d23df014164a2a62d148335a4abf9595660a5f6d518b70b",
+        "data/models/robot-tariffs.json": "c468b3a468515bc919c06a0b7607c49fbb0d335837119737c534e0d100b4a442",
+        "data/models/robot-catalog-card-images.live.json": "59d4a14756a8122c333e80c39d27676adc3a11075b00f2a1c0b652c0e3956b1c",
+        "data/models/robot-capability-images.source.json": "e5b9751086d8453347a8398dc1891d68736764c1e8ba133c96376c4d022e7e2a",
+        "src/components/templates/RobotCardTemplate.astro": "aa722cf838cdd581bef82501fdb3e99f932214fb91336209d2e7b90c77982806",
+        "src/lib/kiber94-robot-template-data.ts": "810106a2a838a60bbe1da816bb63419b0a5be59f51bc41bf940f558c3ff38ab1",
+        "src/pages/robots/[slug].astro": "ff6b5084d53bb4de28523c9a6f05c0043c681af970fc2e913f8770e0ffc7cee4",
+        "data/content/robot-card-pilot/arenda-inchbot-l1-w-edu.json": "0add3ce44d8b663c6e125d9b5c865241456258b6f24b66e38bbca7752ae1620c",
+        "data/content/robot-card-pilot/arenda-promobot-v4.json": "c0daaae4d1814f4ab959af4084cc71d2db0ef828568bb69468388ee3b6a4ee1e",
+        "data/content/robot-card-pilot/arenda-xiaomi-cyberdog-2.json": "8463bd2996601c5558e88d6015998c49cc2c735d7f43314e21114e0183fa2ede",
+        "data/content/robot-card-pilot/arenda-unitree-go2.json": "ba108fe304288e7e37863712e02e173bb5883e5a09cdab893fe4ba0cdf7b5156"
+      },
+      "contentWithoutReviewSha256": "637c05f79cf9939298b4012b26f782fb87900ebbf6d485b9078e980ac8177ffc"
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "arenda-promobot-v4-2026-09-28",
+      "route": "/robots/arenda-promobot-v4/",
+      "title": "Аренда Promobot V4",
+      "h1": "Аренда Promobot V4",
+      "primaryKeyword": "аренда Promobot V4",
+      "approvedAt": "2026-09-28T13:35:51.282469+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "По иллюстрациям давай пока займем такую позицию: - да, некоторые из них нужно переделывать. - это сейчас не самое важное. - составлю отдельную задачу с основным агентом и вернемся к ней позже. Эти карточки считай принятыми: 1. Inchbot L1-W EDU 2. Promobot V4 6. Xiaomi CyberDog 2 5. Unitree Go2",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-promobot-v4/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptanceQualifier": "owner_deferred_illustrations",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "currentRevisionProductionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "acceptedHtmlSha256": "416934a8103af2f6cf4ffdcd666aac94a509eeb6081c602b94c8fca6dca4af7d",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntent",
+          "aiSummary",
+          "gallery",
+          "includedService",
+          "capabilities",
+          "scenarios",
+          "pricing",
+          "robotInAction",
+          "goshaCta",
+          "hiddenMachineFacts",
+          "orderFlow",
+          "faq",
+          "finalQuestionsCta",
+          "relatedCatalog",
+          "robot-card",
+          "robot-card",
+          "robot-card",
+          "robot-card"
+        ],
+        "media": {
+          "images/articles/shared/gosha-cta2-compact.webp": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "images/brand/kp_logo_full_color.svg": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "images/kiber-45/arenda-agibot-x2.webp": "5da45ac3ba65a03552f9318fd238f6dc35f3e6abbfc67b2a543c0c7735d8693e",
+          "images/kiber-45/arenda-kettybot.webp": "03a09287c83e58849d51b8ceb776b7c6458f064b002c705e5d430cc5661ed2b5",
+          "images/kiber-45/arenda-promobot-v4.webp": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "images/kiber-45/arenda-robota-ardi.webp": "b242688602243bb81232b08aa7f360f9c9ab5146a0f6065d30473a0d018323c6",
+          "images/kiber-45/arenda-robota-sofiya.webp": "962a051c696062f9cedf4cdad9c2c1ce77846f65d1e0477d9dac5e376c15b47d",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3135-6638-4431-a538-363464393463__07.webp": "f710eb62540f3f60cdbb93e33973496c7cb5fbf88c64f1c18cb8cc9cc8254277",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3534-3933-4962-b462-376361346430__012.webp": "9cbfb6e59b8f850e92d7a55e024c250073a9b5c04142ea3f206bea932db22d95",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3562-6138-4433-b931-646465643163__08.webp": "9138a334df04e438943286fb5b7d0b49d761e734d76041869fb942690537d5a4",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3636-6331-4535-b465-646266393432__03.webp": "2290d5445cca379e7988d6acd326780a2279837afca7c95cf7a14a51e79a999a",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3732-6531-4935-a361-376363323131__04.webp": "ec666991b6ef874066bf2521671d6c3ed3e5b47fb0b823f72c0870e86ff34a66",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3832-3664-4865-b531-663761353435__09.webp": "7fe9ab2d4ac284eed825d62f9cc40999429f29c11c4fc949aa969d0fca64a7b9",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3834-3962-4239-b965-316661316234__01.webp": "4a46271ac8562011a5619dc3f378b9d243fb89c18f63a4991e1e658abe3852d3",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild3835-6365-4632-b863-616638656231__011.webp": "323acf297ae83b9a4f10122bbac27aa2ec96df0e2fe9a361c5b3c575893d6acb",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild6333-3039-4261-b631-313337316333__05.webp": "af3d8fe1eca3e36e08cd1d506c264226b48318f988c0a46d6ec2ed166938c0cf",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild6533-6561-4461-b632-323964643433__noroot.webp": "c9f34c262f8b171c681ba0628f0f312d303b6a28454a578e421323adbe81f509",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-promobot-v4__tild6664-3339-4639-b231-323261366264__010.webp": "add3c462300566d3333003a2271cbb35984ec320443db355968e96819556e2d0",
+          "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "images/robot-capabilities/arenda-promobot-v4/01-tild6433-6332-4530-b035-353738656466___.webp": "c917b0b1a35db19796af72eb62658bfc71b40e9f4628de27d9053d566b3c3781",
+          "images/robot-capabilities/arenda-promobot-v4/02-tild3865-3930-4363-b766-366465333436___.webp": "41f7c1a8f11e9386ce4d05e29021aba52bc70967f9875175df7aa39fbf728855",
+          "images/robot-capabilities/arenda-promobot-v4/03-tild3233-3639-4030-b836-366361396438___.webp": "2a285ea4093aaf0457cb1133f7d2267a2ef57b0af5376cc14927acda92e1e8de",
+          "images/robot-capabilities/arenda-promobot-v4/04-tild3634-3461-4131-a234-643464383538___.webp": "beff31796a79cdd02e38c5795ae66685c3a409d27851928972fc93a41e878250",
+          "images/robot-capabilities/arenda-promobot-v4/05-tild3362-3535-4263-b863-316338643633___.webp": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "images/robot-capabilities/arenda-promobot-v4/06-tild3365-6334-4563-a236-633633656362_____.webp": "69d83efc72e8563dac176c8d2868f8a735e58624531c3fd6ac10c37d598e1ab5"
+        },
+        "textAndMediaUnchanged": true
+      },
+      "deferredIllustrations": {
+        "status": "owner_deferred_nonblocking",
+        "issue": "Иллюстрация микросхемы не показывает распознавание лица.",
+        "blocksAcceptance": false,
+        "taskCreation": "owner_will_create_separately_with_main_agent",
+        "taskCreated": false,
+        "imagesReplaced": false
+      },
+      "limitations": [],
+      "openPackageQuestions": [
+        "Подтвердить модули печати/выдачи карт, языки и базу знаний, формат сопровождения, сеть и допустимые сценарии обработки данных."
+      ],
+      "research": "Existing saved corpus only; no new/live Wordstat or SERP claimed.",
+      "evidence": [
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/freeze.json",
+        "docs/review/robot-p1-six-2026-09-28/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/served-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/FINAL-REPORT.md"
+      ],
+      "sourceHashes": {
+        "data/content/robot-card-p1-overrides.json": "67b24bb9295bb3deee1aa4f3c2f9cb80a8e1001ce56af5c9c4ec14171ecf125d",
+        "src/content/robots.generated.json": "05e8328f1820486a94ebb91ad61db0bd19350818571320747095597244fccd33",
+        "data/models/robots.source-of-truth.json": "7be6c36ef29055bf4d23df014164a2a62d148335a4abf9595660a5f6d518b70b",
+        "data/models/robot-tariffs.json": "c468b3a468515bc919c06a0b7607c49fbb0d335837119737c534e0d100b4a442",
+        "data/models/robot-catalog-card-images.live.json": "59d4a14756a8122c333e80c39d27676adc3a11075b00f2a1c0b652c0e3956b1c",
+        "data/models/robot-capability-images.source.json": "e5b9751086d8453347a8398dc1891d68736764c1e8ba133c96376c4d022e7e2a",
+        "src/components/templates/RobotCardTemplate.astro": "aa722cf838cdd581bef82501fdb3e99f932214fb91336209d2e7b90c77982806",
+        "src/lib/kiber94-robot-template-data.ts": "810106a2a838a60bbe1da816bb63419b0a5be59f51bc41bf940f558c3ff38ab1",
+        "src/pages/robots/[slug].astro": "ff6b5084d53bb4de28523c9a6f05c0043c681af970fc2e913f8770e0ffc7cee4",
+        "data/content/robot-card-pilot/arenda-inchbot-l1-w-edu.json": "0add3ce44d8b663c6e125d9b5c865241456258b6f24b66e38bbca7752ae1620c",
+        "data/content/robot-card-pilot/arenda-promobot-v4.json": "c0daaae4d1814f4ab959af4084cc71d2db0ef828568bb69468388ee3b6a4ee1e",
+        "data/content/robot-card-pilot/arenda-xiaomi-cyberdog-2.json": "8463bd2996601c5558e88d6015998c49cc2c735d7f43314e21114e0183fa2ede",
+        "data/content/robot-card-pilot/arenda-unitree-go2.json": "ba108fe304288e7e37863712e02e173bb5883e5a09cdab893fe4ba0cdf7b5156"
+      },
+      "contentWithoutReviewSha256": "1fc889ac310072eb77c51031dcdbc16191014ac22f66343d9fa8aab6d97ea98b"
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "arenda-xiaomi-cyberdog-2-2026-09-28",
+      "route": "/robots/arenda-xiaomi-cyberdog-2/",
+      "title": "Аренда робота-собаки Xiaomi CyberDog 2",
+      "h1": "Аренда робота-собаки Xiaomi CyberDog 2",
+      "primaryKeyword": "аренда Xiaomi CyberDog 2",
+      "approvedAt": "2026-09-28T13:35:51.282469+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "По иллюстрациям давай пока займем такую позицию: - да, некоторые из них нужно переделывать. - это сейчас не самое важное. - составлю отдельную задачу с основным агентом и вернемся к ней позже. Эти карточки считай принятыми: 1. Inchbot L1-W EDU 2. Promobot V4 6. Xiaomi CyberDog 2 5. Unitree Go2",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-xiaomi-cyberdog-2/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptanceQualifier": "owner_deferred_illustrations",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "currentRevisionProductionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "acceptedHtmlSha256": "59cbe28332b5907334c92cc105e63d290be87896b240d88afae9016a0e5f09c6",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntent",
+          "aiSummary",
+          "gallery",
+          "includedService",
+          "capabilities",
+          "scenarios",
+          "pricing",
+          "robotInAction",
+          "goshaCta",
+          "hiddenMachineFacts",
+          "orderFlow",
+          "faq",
+          "finalQuestionsCta",
+          "relatedCatalog",
+          "robot-card",
+          "robot-card",
+          "robot-card",
+          "robot-card"
+        ],
+        "media": {
+          "images/articles/shared/gosha-cta2-compact.webp": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "images/brand/kp_logo_full_color.svg": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "images/kiber-45/arenda-inchbot-l1-w-edu.webp": "e6f2d0401c878f9c4e666bebe7eba591123ceafe61bb7fdb477159c39c58a375",
+          "images/kiber-45/arenda-noetix-bumi.webp": "b687012c65d625bf2d9f553ad5a3ccc565aac4c05e6153ddc9ae17cd4f69f4e6",
+          "images/kiber-45/arenda-robota-tron.webp": "d6bb45c4e60000e413c7abf8bb2b99dc80fc0dbe670d46c4570c1ec87290b679",
+          "images/kiber-45/arenda-unitree-go2.webp": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+          "images/kiber-45/arenda-xiaomi-cyberdog-2.webp": "4d82ba762f6064d1c4adf7528269fdefc31085f09838cd28f90a5149f04971ca",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3130-6661-4337-b133-613762633164__09.webp": "4934d1342caea5cbb08a2020cc1afa5b130ef3bb7ea372ee17bfb20b4a2113f5",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3236-3835-4331-b539-373139386462__01.webp": "9a8211c4a0d94dfa975594f94d631a682dcf79e83999444b22f94a196cbc46cc",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3239-3230-4630-a339-353163353432__noroot.webp": "a498ef5d774add602729f678fe43f5238aa892a5daa9c94438173e9a378010c8",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3334-6430-4538-a132-313139356263__03.webp": "80e6180354fd7f271070fb92e13009c41359874cb6bf1d1b9a5826655f4f3734",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3536-6239-4431-b434-333763623165__noroot.webp": "986127ab3832ecc7f7fcf8740a1d15efd447438503ef71e25226472a3cb82b97",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3634-6431-4932-a636-653336656338__010.webp": "f9bb24aac7662cd56c0d86b270b2888507450f088a5fcbb36dfbba8b89645a9d",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild3834-3231-4836-b737-366637613031__08.webp": "b7d11334919ba3c7f0c56e9b245aee95e7d5415f7983ec1da6255b7dc07fd109",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild6138-6135-4862-a132-626663393638__07.webp": "cac7c9eed4e507112014c5b3e0aff88a821fa77f3589a20b54357fcfe782faad",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-xiaomi-cyberdog-2__tild6531-3232-4333-b263-373839366131__05.webp": "85bd96a963b82580736e029e8d76ce8bcd4059d65f6f9d5fb20160d3a40d9e2c",
+          "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "images/robot-capabilities/arenda-xiaomi-cyberdog-2/01-tild3362-3535-4263-b863-316338643633___.webp": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "images/robot-capabilities/arenda-xiaomi-cyberdog-2/02-tild3461-6463-4362-a331-303362343163____.webp": "095ab8efbd594b2e0f2da48f152db4da5c7fe2448c259ad7b69e298fc43386a6",
+          "images/robot-capabilities/arenda-xiaomi-cyberdog-2/03-tild3564-3833-4163-a130-346439363730___.webp": "ddf1a96eec8824b1dd34d5dcd6744de80e2f26dc0c028e56ed4f5e9796e0530d",
+          "images/robot-capabilities/arenda-xiaomi-cyberdog-2/04-tild3030-3632-4336-b537-623938666235____.webp": "6c8b34fadef3aefd9c586993167461900606610cbf251f9d747ca3f2d63c12a7",
+          "images/robot-capabilities/arenda-xiaomi-cyberdog-2/05-tild3064-6433-4931-a361-316438613463_____.webp": "711f0aa256b2001f8a719dc614687f64f8d229e267675036db8f331a18846063",
+          "images/robot-capabilities/arenda-xiaomi-cyberdog-2/06-tild3139-3163-4763-a465-333631323833_____.webp": "48a6b21b006d81d589763a0cfee7209bb328283e6bc61d1fbe6f3e86e9f27d18"
+        },
+        "textAndMediaUnchanged": true
+      },
+      "deferredIllustrations": {
+        "status": "owner_deferred_nonblocking",
+        "issue": "Иллюстрации датчиков и панелей условные и не подтверждают конкретную комплектацию.",
+        "blocksAcceptance": false,
+        "taskCreation": "owner_will_create_separately_with_main_agent",
+        "taskCreated": false,
+        "imagesReplaced": false
+      },
+      "limitations": [],
+      "openPackageQuestions": [
+        "Подтвердить поколение, прошивку, доступные движения/команды, язык, батареи и возможность брендирования."
+      ],
+      "research": "Existing saved corpus only; no new/live Wordstat or SERP claimed.",
+      "evidence": [
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/freeze.json",
+        "docs/review/robot-p1-six-2026-09-28/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/served-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/FINAL-REPORT.md"
+      ],
+      "sourceHashes": {
+        "data/content/robot-card-p1-overrides.json": "67b24bb9295bb3deee1aa4f3c2f9cb80a8e1001ce56af5c9c4ec14171ecf125d",
+        "src/content/robots.generated.json": "05e8328f1820486a94ebb91ad61db0bd19350818571320747095597244fccd33",
+        "data/models/robots.source-of-truth.json": "7be6c36ef29055bf4d23df014164a2a62d148335a4abf9595660a5f6d518b70b",
+        "data/models/robot-tariffs.json": "c468b3a468515bc919c06a0b7607c49fbb0d335837119737c534e0d100b4a442",
+        "data/models/robot-catalog-card-images.live.json": "59d4a14756a8122c333e80c39d27676adc3a11075b00f2a1c0b652c0e3956b1c",
+        "data/models/robot-capability-images.source.json": "e5b9751086d8453347a8398dc1891d68736764c1e8ba133c96376c4d022e7e2a",
+        "src/components/templates/RobotCardTemplate.astro": "aa722cf838cdd581bef82501fdb3e99f932214fb91336209d2e7b90c77982806",
+        "src/lib/kiber94-robot-template-data.ts": "810106a2a838a60bbe1da816bb63419b0a5be59f51bc41bf940f558c3ff38ab1",
+        "src/pages/robots/[slug].astro": "ff6b5084d53bb4de28523c9a6f05c0043c681af970fc2e913f8770e0ffc7cee4",
+        "data/content/robot-card-pilot/arenda-inchbot-l1-w-edu.json": "0add3ce44d8b663c6e125d9b5c865241456258b6f24b66e38bbca7752ae1620c",
+        "data/content/robot-card-pilot/arenda-promobot-v4.json": "c0daaae4d1814f4ab959af4084cc71d2db0ef828568bb69468388ee3b6a4ee1e",
+        "data/content/robot-card-pilot/arenda-xiaomi-cyberdog-2.json": "8463bd2996601c5558e88d6015998c49cc2c735d7f43314e21114e0183fa2ede",
+        "data/content/robot-card-pilot/arenda-unitree-go2.json": "ba108fe304288e7e37863712e02e173bb5883e5a09cdab893fe4ba0cdf7b5156"
+      },
+      "contentWithoutReviewSha256": "2d20c36446fa736a662583e2f08010b60912b71784112a896728e45c2ac63bfe"
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "arenda-unitree-go2-2026-09-28",
+      "route": "/robots/arenda-unitree-go2/",
+      "title": "Аренда робота-собаки Unitree Go2",
+      "h1": "Аренда робота-собаки Unitree Go2",
+      "primaryKeyword": "аренда Unitree Go2",
+      "approvedAt": "2026-09-28T13:35:51.282469+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "По иллюстрациям давай пока займем такую позицию: - да, некоторые из них нужно переделывать. - это сейчас не самое важное. - составлю отдельную задачу с основным агентом и вернемся к ней позже. Эти карточки считай принятыми: 1. Inchbot L1-W EDU 2. Promobot V4 6. Xiaomi CyberDog 2 5. Unitree Go2",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-go2/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptanceQualifier": "owner_deferred_illustrations",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "currentRevisionProductionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "acceptedHtmlSha256": "cb4c699e843dfc4d5d2ce9a9174e43a199e598d7d456e5cffd49463a63909b7a",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntent",
+          "aiSummary",
+          "gallery",
+          "includedService",
+          "capabilities",
+          "scenarios",
+          "pricing",
+          "robotInAction",
+          "goshaCta",
+          "hiddenMachineFacts",
+          "orderFlow",
+          "faq",
+          "finalQuestionsCta",
+          "relatedCatalog",
+          "robot-card",
+          "robot-card",
+          "robot-card",
+          "robot-card"
+        ],
+        "media": {
+          "images/articles/shared/gosha-cta2-compact.webp": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "images/brand/kp_logo_full_color.svg": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "images/kiber-45/arenda-inchbot-l1-w-edu.webp": "e6f2d0401c878f9c4e666bebe7eba591123ceafe61bb7fdb477159c39c58a375",
+          "images/kiber-45/arenda-robota-tron.webp": "d6bb45c4e60000e413c7abf8bb2b99dc80fc0dbe670d46c4570c1ec87290b679",
+          "images/kiber-45/arenda-unitree-g1.webp": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+          "images/kiber-45/arenda-unitree-go2.webp": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+          "images/kiber-45/arenda-xiaomi-cyberdog-2.webp": "4d82ba762f6064d1c4adf7528269fdefc31085f09838cd28f90a5149f04971ca",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3034-3431-4664-b364-613830393864__1.webp": "2c6746bfc7a926a458100b06df59f09c029a406efc58b73b0498acd730745206",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3233-3033-4335-b638-343335666637__5.webp": "b5f4518ab11317fef245d1cd8d6b63ea400bdc974382b6aa685b1e918c58dcd9",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3234-6131-4736-b062-623866663537__2.webp": "728d398284b6cae2d3a974198bc58fbb25c8bf65857faaed66dbab5e14829657",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3334-6166-4337-a661-373732343830__3.webp": "81e360bd84466f1ba1600ee770e8890d5adb6e267a34306da17153bc0ab07751",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3736-3066-4163-a539-633336363532__-_unitree_go2______.webp": "effce2dabf05e6198f39891f1c8012fa66cf286415c4351bf7076271c4432726",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild3966-3830-4332-a165-396334616437___-_unitree_go2______.webp": "0d51ae1eee42e634a20ff7c499f58a733aac2a081c912a74b5f27ef21ac6bb6a",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6235-3630-4865-a365-316333613930__-_unitree_go2_____.webp": "d803a2c6840c51f34cb3bac838568eba644de9f0da654fd19535c071839c3f1c",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-3530-4530-b063-393336396631__-_unitree_go2____.webp": "41e49166632b02035488232efa88f8c123b9e340807606d36ed0abe349d8ff1f",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6530-6261-4733-b832-343462316432__4.webp": "4b1b2fbcdd576df7981334f2c098fa1e146fe28c9ea7243960f1cbaf36a1182c",
+          "images/kiber-94-preview/batch2-robot-cards/arenda-unitree-go2__tild6666-3666-4662-a431-636535616562__6.webp": "10ea6d9f63b8788a753021941fc55c255e2b6eea4e4f2d43901c91bf536f40a9",
+          "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "images/robot-capabilities/arenda-unitree-go2/01-tild3362-3535-4263-b863-316338643633___.webp": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+          "images/robot-capabilities/arenda-unitree-go2/02-tild6536-6333-4033-a663-363732353239____.webp": "f652d8ef591c6a6012bf0f306480a97e4641be94850f4bde1dbcb630e66e6da7",
+          "images/robot-capabilities/arenda-unitree-go2/03-tild3030-3632-4336-b537-623938666235____.webp": "6c8b34fadef3aefd9c586993167461900606610cbf251f9d747ca3f2d63c12a7",
+          "images/robot-capabilities/arenda-unitree-go2/04-tild3131-6234-4466-b465-313436326636___.webp": "300a9c276dbf9aece271ec7a4cc239dc4396016e8dceac5f3e94e4656dbe208e",
+          "images/robot-capabilities/arenda-unitree-go2/05-tild6263-6234-4764-a466-373064626137_____.webp": "c567fe3341d5db9839fa498b643ebb6fca4aee536e71f3f1b15c6cc19663211d",
+          "images/robot-capabilities/arenda-unitree-go2/06-tild3761-6262-4862-b364-383063383635_____.webp": "11a994f17c4606e266772fe8334809a66703c970ee892bdc27031a0403d98c79"
+        },
+        "textAndMediaUnchanged": true
+      },
+      "deferredIllustrations": {
+        "status": "owner_deferred_nonblocking",
+        "issue": "Иллюстрация движения показывает обобщённую тёмную робособаку; точность модели требует последующей проверки.",
+        "blocksAcceptance": false,
+        "taskCreation": "owner_will_create_separately_with_main_agent",
+        "taskCreated": false,
+        "imagesReplaced": false
+      },
+      "limitations": [
+        "Автономность Go2 1,5–2 часа остаётся source-unverified: требуется подтверждение парка; приёмка карточки не является фактическим подтверждением владельцем."
+      ],
+      "openPackageQuestions": [
+        "Подтвердить версию Go2, контроллер, батареи, готовые движения и доступность голосовых функций/следования."
+      ],
+      "research": "Existing saved corpus only; no new/live Wordstat or SERP claimed.",
+      "evidence": [
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/freeze.json",
+        "docs/review/robot-p1-six-2026-09-28/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/served-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-four/FINAL-REPORT.md"
+      ],
+      "sourceHashes": {
+        "data/content/robot-card-p1-overrides.json": "67b24bb9295bb3deee1aa4f3c2f9cb80a8e1001ce56af5c9c4ec14171ecf125d",
+        "src/content/robots.generated.json": "05e8328f1820486a94ebb91ad61db0bd19350818571320747095597244fccd33",
+        "data/models/robots.source-of-truth.json": "7be6c36ef29055bf4d23df014164a2a62d148335a4abf9595660a5f6d518b70b",
+        "data/models/robot-tariffs.json": "c468b3a468515bc919c06a0b7607c49fbb0d335837119737c534e0d100b4a442",
+        "data/models/robot-catalog-card-images.live.json": "59d4a14756a8122c333e80c39d27676adc3a11075b00f2a1c0b652c0e3956b1c",
+        "data/models/robot-capability-images.source.json": "e5b9751086d8453347a8398dc1891d68736764c1e8ba133c96376c4d022e7e2a",
+        "src/components/templates/RobotCardTemplate.astro": "aa722cf838cdd581bef82501fdb3e99f932214fb91336209d2e7b90c77982806",
+        "src/lib/kiber94-robot-template-data.ts": "810106a2a838a60bbe1da816bb63419b0a5be59f51bc41bf940f558c3ff38ab1",
+        "src/pages/robots/[slug].astro": "ff6b5084d53bb4de28523c9a6f05c0043c681af970fc2e913f8770e0ffc7cee4",
+        "data/content/robot-card-pilot/arenda-inchbot-l1-w-edu.json": "0add3ce44d8b663c6e125d9b5c865241456258b6f24b66e38bbca7752ae1620c",
+        "data/content/robot-card-pilot/arenda-promobot-v4.json": "c0daaae4d1814f4ab959af4084cc71d2db0ef828568bb69468388ee3b6a4ee1e",
+        "data/content/robot-card-pilot/arenda-xiaomi-cyberdog-2.json": "8463bd2996601c5558e88d6015998c49cc2c735d7f43314e21114e0183fa2ede",
+        "data/content/robot-card-pilot/arenda-unitree-go2.json": "ba108fe304288e7e37863712e02e173bb5883e5a09cdab893fe4ba0cdf7b5156"
+      },
+      "contentWithoutReviewSha256": "d790f908fe7f2abb1ca4e2083a6043ac8065d1253876b03426a0c6f524032208"
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "arenda-robot-barmen-2026-09-28",
+      "route": "/robots/arenda-robot-barmen/",
+      "title": "Аренда робота-бармена «Робобар»",
+      "h1": "Аренда робота-бармена «Робобар»",
+      "primaryKeyword": "аренда робота-бармена Робобар",
+      "approvedAt": "2026-09-28T13:55:57.438099+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Робобар и Робошашки можешь считать принятыми",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robot-barmen/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptanceQualifier": "owner_deferred_illustrations",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "currentRevisionProductionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "acceptedHtmlSha256": "fdad7276e46ba07341d6d76eb292cf12f4c830abf3c81f642accb0fdf695ed4e",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntent",
+          "aiSummary",
+          "gallery",
+          "includedService",
+          "capabilities",
+          "scenarios",
+          "pricing",
+          "robotInAction",
+          "goshaCta",
+          "hiddenMachineFacts",
+          "orderFlow",
+          "faq",
+          "finalQuestionsCta",
+          "relatedCatalog",
+          "robot-card",
+          "robot-card",
+          "robot-card",
+          "robot-card"
+        ],
+        "media": {
+          "images/articles/shared/gosha-cta2-compact.webp": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "images/brand/kp_logo_full_color.svg": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "images/kiber-45/arenda-bellabot.webp": "8bf7b2f5f35eaa2f00cf612349b896b4ce2782938d1f474206c5d09d9e201fa8",
+          "images/kiber-45/arenda-kettybot.webp": "03a09287c83e58849d51b8ceb776b7c6458f064b002c705e5d430cc5661ed2b5",
+          "images/kiber-45/arenda-mini-robo-kofeyni.webp": "7ae44e6cc45ac6bf877ccc381df2778cc54d980e724914517bd99f68f8da4b48",
+          "images/kiber-45/arenda-robo-kofeyni.webp": "819dddf32c842e0102aac6cab6a03b23de60f8757f13b1fc62d18b288226f9e2",
+          "images/kiber-45/arenda-robot-barmen.webp": "03264f1a6c3a134f7a26400ed0600165182d0020b580507e1a5ec444034d5378",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3039-3761-4238-b036-383439386666__01.webp": "6571e5a8c46cb1a294a5cb978327fcdae41b0d33009727b160c7a2c01434a515",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3132-3731-4235-b666-306330316665__noroot.webp": "d5440103b95864634a9a0c9455d4a50982982ed029f9edd57e15f5c324df08f6",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3165-3834-4637-b363-633935616133__06.webp": "ccf62af4dfaf0ea339c47358adb32984efd0287e4d1d24be80683564598112b3",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3465-6639-4631-b436-313332343335__noroot.webp": "4e17dcfc176168fbf10b97e851d186a3731addb7e08fbfeda0ccbedab4fbbb73",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3533-3065-4934-b435-656434356665__05.webp": "c99f62cc042ef8baee6bcf2710621a468fc3439777c6b78f4c1a3a4f273e09d6",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3630-3731-4165-b139-303235633465__noroot.webp": "820329efe777bc22f04c1314982a21c3e32b6fcf33ef4b70b05a4ed5a61dcc09",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild3864-6538-4231-b239-656133613061__noroot.webp": "49b505a8982f90b7f12b036b015001c947e34b97e8979dcc352e9ca20654be7a",
+          "images/kiber-94-preview/batch3-robot-cards/arenda-robot-barmen__tild6337-3061-4562-b138-326565643530__07.webp": "661657cb699c0e9a960992f48aa6caa2c40cde7d706d7b7b2df4278ea8b29f03",
+          "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "images/robot-capabilities/arenda-robot-barmen/01-tild3564-3066-4338-b461-346534613562____.webp": "46b1173370f43eabddb8571ace238d0432761436b0fd1a5e4c5e8b826e1ac5c4",
+          "images/robot-capabilities/arenda-robot-barmen/02-tild3661-6465-4634-b632-616137643334___.webp": "14fb1c3688961fba1e92162fd454ddca8c6f2fae27441bc143466015183cf8f2",
+          "images/robot-capabilities/arenda-robot-barmen/03-tild3534-3665-4762-b061-393831646535____.webp": "552fe4d0c720a29c6c6dfb15c5dd4845b3931ee8183d5e22c63fb350699e6407",
+          "images/robot-capabilities/arenda-robot-barmen/04-tild6439-3335-4739-b235-306465303565___.webp": "31b1f75ceaed83480ea03e53920f7935daa7e7d6f330d3463ce4ef8b0b34246b",
+          "images/robot-capabilities/arenda-robot-barmen/05-tild6663-3336-4535-b936-333932636265___-.webp": "3273f649e2970556fced50fb6f3064ce5d2f01a4fe783f29a92788dae27639b6",
+          "images/robot-capabilities/arenda-robot-barmen/06-tild6234-3137-4634-b161-376539633533_____.webp": "7131b48f2fb9c4228661750c4daf24e5a29deaaf0f5f29849a4e3008b76c272d"
+        },
+        "onlyAuthorizedEdits": [
+          "Robobar capability[2] title/text; existing image retained",
+          "Roboshashki power image src/alt/dimensions only"
+        ]
+      },
+      "deferredIllustrations": {
+        "status": "owner_deferred_nonblocking",
+        "issue": "Иллюстрации с кофе/00:20/78% и отсутствующим оператором отложены владельцем. Опция разлива пива подтверждена владельцем; прежнее замечание о неподтверждённом пиве superseded.",
+        "blocksAcceptance": false,
+        "taskCreation": "owner_will_create_separately_with_main_agent",
+        "taskCreated": false,
+        "imagesReplaced": false
+      },
+      "limitations": [],
+      "openPackageQuestions": [
+        "Подтвердить установку, меню, ингредиенты, посуду, обслуживание, питание и требования к зоне."
+      ],
+      "research": "Existing saved corpus only; no new/live Wordstat or SERP claimed.",
+      "evidence": [
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/freeze.json",
+        "docs/review/robot-p1-six-2026-09-28/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/served-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/FINAL-REPORT.md",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/static-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/reports-qa.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/preservation-proof.json"
+      ],
+      "sourceHashes": {
+        "data/content/robot-card-p1-overrides.json": "67b24bb9295bb3deee1aa4f3c2f9cb80a8e1001ce56af5c9c4ec14171ecf125d",
+        "src/content/robots.generated.json": "05e8328f1820486a94ebb91ad61db0bd19350818571320747095597244fccd33",
+        "data/models/robots.source-of-truth.json": "7be6c36ef29055bf4d23df014164a2a62d148335a4abf9595660a5f6d518b70b",
+        "data/models/robot-tariffs.json": "c468b3a468515bc919c06a0b7607c49fbb0d335837119737c534e0d100b4a442",
+        "data/models/robot-catalog-card-images.live.json": "59d4a14756a8122c333e80c39d27676adc3a11075b00f2a1c0b652c0e3956b1c",
+        "data/models/robot-capability-images.source.json": "002980ab0c8ac04b02dd684b6125fd74c6bdb9b0e4c6d3b1aa24e167a5ffb765",
+        "src/components/templates/RobotCardTemplate.astro": "aa722cf838cdd581bef82501fdb3e99f932214fb91336209d2e7b90c77982806",
+        "src/lib/kiber94-robot-template-data.ts": "810106a2a838a60bbe1da816bb63419b0a5be59f51bc41bf940f558c3ff38ab1",
+        "src/pages/robots/[slug].astro": "ff6b5084d53bb4de28523c9a6f05c0043c681af970fc2e913f8770e0ffc7cee4",
+        "data/content/robot-card-pilot/arenda-robot-barmen.json": "2ed507fa1f4cfe14fc71c15d678441b2e83af463acab019ef9d20a416f0b2d1f",
+        "data/content/robot-card-pilot/arenda-roboshashki.json": "21411423d7cab096bf8619305fb316d17c57b530471991c61d14f021ff4b0921"
+      },
+      "contentWithoutReviewSha256": "b145bfb6ad888210b67a6afe51b8331add0bd363e9b03ef5c3b5f97c97dbbd51",
+      "resolvedOwnerCorrections": {
+        "beerOptionalModule": "owner_confirmed",
+        "powerImage": "not_applicable"
+      }
+    },
+    {
+      "kind": "kiber_owner_approval",
+      "id": "arenda-roboshashki-2026-09-28",
+      "route": "/robots/arenda-roboshashki/",
+      "title": "Аренда Робошашек — робота для игры в шашки",
+      "h1": "Аренда Робошашек — робота для игры в шашки",
+      "primaryKeyword": "аренда Робошашек",
+      "approvedAt": "2026-09-28T13:55:57.438099+00:00",
+      "approvedBy": "Александр Маркин",
+      "ownerApprovalQuote": "Робобар и Робошашки можешь считать принятыми",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-roboshashki/",
+      "status": "owner_approved_on_jino_preview",
+      "acceptanceQualifier": "owner_deferred_illustrations",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "currentRevisionProductionPublished": false,
+      "mergeApproved": false,
+      "dnsApproved": false,
+      "secretsApproved": false,
+      "analyticsApproved": false,
+      "liveRoutingApproved": false,
+      "productionReadinessApproval": "not_granted",
+      "acceptedHtmlSha256": "7bdc055ffe662142eeca86a83d70b6360b86af2617974ee5e57b907e3d2195de",
+      "finalVisibleState": {
+        "blockOrder": [
+          "hero",
+          "seoIntent",
+          "aiSummary",
+          "gallery",
+          "includedService",
+          "capabilities",
+          "scenarios",
+          "pricing",
+          "robotInAction",
+          "goshaCta",
+          "hiddenMachineFacts",
+          "orderFlow",
+          "faq",
+          "finalQuestionsCta",
+          "relatedCatalog",
+          "robot-card",
+          "robot-card",
+          "robot-card",
+          "robot-card"
+        ],
+        "media": {
+          "images/articles/shared/gosha-cta2-compact.webp": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+          "images/brand/kp_logo_full_color.svg": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+          "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+          "images/kiber-45/arenda-promobot-v4.webp": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+          "images/kiber-45/arenda-roboshashki.webp": "27372ec03f6543ad71318b2ccaf6b6fe1b7a07d3251694f355fc2927966fa90b",
+          "images/kiber-45/arenda-robota-hudozhnika-a4.webp": "2cbea441b72110e96b5b8229d77238ad8a2f60382735a4adc15189a897dc8248",
+          "images/kiber-45/arenda-senserobot.webp": "28aecad607412d9242718c0b37d318fdbe6a58a4998c84639532a4f5a6368dfa",
+          "images/kiber-45/arenda-sketchbot.webp": "d836946ca6953f9e5f4e230917404c127e136a32fcf98299ba3f68ba59ba8432",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__01-tild6237-6438-4661-a563-393364353366__01.webp": "1d8125ad1cc69242354508671a0d8532663b991387d30a2f964bc08149f64ff8",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__02-tild3363-3066-4533-a662-373435393838__06.webp": "81affc76fe738d51c7afdd0933cc016e1e35e23fc3e27d8e022048f65cec3f40",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__03-tild6662-3163-4339-b535-393537623661__09.webp": "bb146b055c8f7e80f9460fec8db15d794a5bdf0610ef84e5bb14a9e0defb47fd",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__04-tild3939-6338-4836-b630-333563303035__02.webp": "4670e595977b75c9decd760d43ca2fe2db8cd6df21f02d6a0172dc307b274684",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__05-tild6337-3337-4531-a264-306436333637__07.webp": "97c4f64cd7056f477f63944b0bf520fc89c026b678995c7ab20d8e6854572423",
+          "images/kiber-94-preview/batch4-robot-cards/arenda-roboshashki__06-tild3736-3630-4564-b964-333336653665__04.webp": "3b0e78541eaadddea5f277314d1cee46402248e4c72217c424d8cf5fda6bee70",
+          "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+          "images/robot-capabilities/arenda-roboshashki/01-tild3435-3936-4661-a539-373030326136___.webp": "9d5facba3b740e1f6c074234ac170ff77414f2e1ed0c3fc90013ce070e48e17b",
+          "images/robot-capabilities/arenda-roboshashki/02-tild3731-6664-4863-a366-336661633563__photo.webp": "5fae6161c546f3cc5147bfd95d6f09545700f19707f41a4972d59fe4a16c9abb",
+          "images/robot-capabilities/arenda-roboshashki/03-tild3734-6665-4936-b731-333438346566___.webp": "1a00acfb148990c144f886793f3dfbce00b0bcda6bff13ca973d21dad305f53d",
+          "images/robot-capabilities/arenda-roboshashki/04-tild3265-3065-4430-b030-616437323931___.webp": "61df37823a6a670de6944c3108ab3680ae8334bf531c4326bc03207ec790866d",
+          "images/robot-capabilities/arenda-roboshashki/05-tild3233-3639-4030-b836-366361396438___.webp": "2a285ea4093aaf0457cb1133f7d2267a2ef57b0af5376cc14927acda92e1e8de",
+          "images/robot-capabilities/arenda-roboshashki/06-power-owner-20260928.jpg": "3f2e3aa68c44956786b9865eee3c85785eea1dbf9092ef06488e4cc5b784ffb7"
+        },
+        "onlyAuthorizedEdits": [
+          "Robobar capability[2] title/text; existing image retained",
+          "Roboshashki power image src/alt/dimensions only"
+        ]
+      },
+      "deferredIllustrations": {
+        "status": "owner_deferred_nonblocking",
+        "issue": "Прочие иллюстрации с шахматами и микросхемой отложены владельцем. Выбранная иллюстрация «Питание игровой зоны» заменена файлом владельца; это замечание закрыто.",
+        "blocksAcceptance": false,
+        "taskCreation": "owner_will_create_separately_with_main_agent",
+        "taskCreated": false,
+        "imagesReplaced": false
+      },
+      "limitations": [],
+      "openPackageQuestions": [
+        "Подтвердить конкретную комплектацию и состав услуги; количественные обещания не добавлены."
+      ],
+      "research": "Existing saved corpus only; no new/live Wordstat or SERP claimed.",
+      "evidence": [
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/freeze.json",
+        "docs/review/robot-p1-six-2026-09-28/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/served-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/FINAL-REPORT.md",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/static-proof.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/qa.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/reports-qa.json",
+        "docs/review/robot-p1-six-2026-09-28/acceptance-two/preservation-proof.json"
+      ],
+      "sourceHashes": {
+        "data/content/robot-card-p1-overrides.json": "67b24bb9295bb3deee1aa4f3c2f9cb80a8e1001ce56af5c9c4ec14171ecf125d",
+        "src/content/robots.generated.json": "05e8328f1820486a94ebb91ad61db0bd19350818571320747095597244fccd33",
+        "data/models/robots.source-of-truth.json": "7be6c36ef29055bf4d23df014164a2a62d148335a4abf9595660a5f6d518b70b",
+        "data/models/robot-tariffs.json": "c468b3a468515bc919c06a0b7607c49fbb0d335837119737c534e0d100b4a442",
+        "data/models/robot-catalog-card-images.live.json": "59d4a14756a8122c333e80c39d27676adc3a11075b00f2a1c0b652c0e3956b1c",
+        "data/models/robot-capability-images.source.json": "002980ab0c8ac04b02dd684b6125fd74c6bdb9b0e4c6d3b1aa24e167a5ffb765",
+        "src/components/templates/RobotCardTemplate.astro": "aa722cf838cdd581bef82501fdb3e99f932214fb91336209d2e7b90c77982806",
+        "src/lib/kiber94-robot-template-data.ts": "810106a2a838a60bbe1da816bb63419b0a5be59f51bc41bf940f558c3ff38ab1",
+        "src/pages/robots/[slug].astro": "ff6b5084d53bb4de28523c9a6f05c0043c681af970fc2e913f8770e0ffc7cee4",
+        "data/content/robot-card-pilot/arenda-robot-barmen.json": "2ed507fa1f4cfe14fc71c15d678441b2e83af463acab019ef9d20a416f0b2d1f",
+        "data/content/robot-card-pilot/arenda-roboshashki.json": "21411423d7cab096bf8619305fb316d17c57b530471991c61d14f021ff4b0921"
+      },
+      "contentWithoutReviewSha256": "0b05d14df7e70c8744f455399f2ba409101b019abef92683a2d1dbabb656db16",
+      "resolvedOwnerCorrections": {
+        "beerOptionalModule": "not_applicable",
+        "powerImage": "owner_supplied_replacement_verified"
+      }
+    },
+    {
+      "id": "arenda-unitree-g1-docx-2026-09-28",
+      "type": "scoped_content_price_exception",
+      "route": "/robots/arenda-unitree-g1/",
+      "status": "owner_approved_content_facts_prices_not_visual_acceptance",
+      "source": "/home/alex/.hermes/profiles/kiber-copywriter/cache/documents/doc_c51a45f886db_Робот гуманоид Unitree G1.docx",
+      "basis": "Explicit owner approval of all DOCX company facts/commitments and G1 package prices; request to create and insert three illustrations. See content/owner-permission.md.",
+      "ownerCopyApproved": true,
+      "ownerCompanyFactsApproved": true,
+      "ownerG1PackagePricesApproved": true,
+      "pricing": {
+        "scope": "arenda-unitree-g1_card_only",
+        "heroDisplay": "от 50 000 ₽ за мероприятие",
+        "bannerDisplay": "от 12 500 ₽ / час",
+        "minimumDurationHours": 2,
+        "permissionEvidence": "docs/review/g1-docx-2026-09-28/content/owner-permission.md"
+      },
+      "tiersRUB": {
+        "2h": 50000,
+        "upTo4h": 75000,
+        "dayUpTo8h": 100000,
+        "2days": 180000,
+        "3days": 240000
+      },
+      "scope": "G1 card only; global tariff/catalog rates unchanged",
+      "visualAcceptance": false,
+      "productionApproved": false,
+      "productionDeployAuthorized": false,
+      "research": "user_supplied_DOCX_not_fresh_SERP_or_Wordstat",
+      "evidence": "docs/review/g1-docx-2026-09-28/content/owner-permission.md"
+    },
+    {
+      "id": "arenda-unitree-g1-accepted-ready-2026-09-29",
+      "route": "/robots/arenda-unitree-g1/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerQuote": "А я посмотрел страницу с телефона она мне в целом нравится давай утвердим страницу сейчас как готовую к продакшн Вот но после этого я ещё перепроверю с компьютера если что внизу изменения Вот и сделай одну ещё одну вещь вторую после того как утвердил страницу Поверь её ещё раз Сравни с файлом который тебе доставил по которому ты вносил изменения прямо используя этот файл как чек-лист и проверь всё ли ты изменил все видимые блоки перепроверь все невидимые блоки Да которые мы не показываем Мета description title все параметры описание картинок то есть использовались как в вордовские документы как чек-лист и провели дополнительную перепроверку поэтому",
+      "recordedAt": "2026-09-29T05:10:32.153892+00:00",
+      "acceptedPreview": true,
+      "visualAcceptance": true,
+      "readyForProduction": true,
+      "readyForNextSiteRelease": true,
+      "productionApproved": true,
+      "productionApprovedMeaning": "content release readiness, NOT deployment authorization",
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "publicationApproved": false,
+      "desktopOwnerCheck": "optional later follow-up; not blocking acceptance",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-g1/",
+      "htmlSha256": "0fb71071c46f0dff15a1808032a80ed3dcc6c331e6a3c0aa5f6b21f5f1bace93",
+      "assetFreeze": "docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/freeze.json",
+      "revision": {
+        "visibleBlocks": 13,
+        "faq": 8,
+        "facts": 25,
+        "generatedIllustrations": 3,
+        "galleries": [
+          5,
+          5
+        ]
+      },
+      "priorFactsPricesApproval": "docs/approvals/arenda-unitree-g1-docx-2026-09-28.json",
+      "priorEvidence": "docs/review/g1-docx-2026-09-28/final-proof.json",
+      "supersedes": "awaiting-owner-review current-state markers only; history retained",
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "analyticsAuthorized": false,
+      "leadRoutingAuthorized": false
+    },
+    {
+      "id": "robot-cta1-semantics-2026-09-29",
+      "type": "scoped_component_acceptance",
+      "status": "owner_approved",
+      "ownerExactQuote": "Принято.",
+      "quoteSource": "Exact owner reply conveyed by parent delegation/user task",
+      "acceptanceScope": "CTA1 semantic fix on all 24 robot routes only: H2 contains heading text only; price is adjacent paragraph.",
+      "wholePageAcceptanceChanged": false,
+      "productionReadinessChanged": false,
+      "productionDeployAuthorized": false,
+      "productionTouched": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "agibotScope": "Only CTA1 of the already published hash-locked Agibot version; concurrent unpublished content draft is excluded. Existing individual lifecycle flags are retained, not extended to that draft.",
+      "technicalEvidence": "docs/review/robot-cta1-price-semantics/final-proof.json",
+      "technicalEvidenceSha256": "c4b9e87c4f4ef0c0edbb462b9ba450c271263aad53c54b350210cd95d338ad12",
+      "recordedAt": "2026-09-29T13:33:20.023878+00:00",
+      "approval_file": "docs/approvals/robot-cta1-semantics-2026-09-29.json",
+      "routes": [
+        "/robots/arenda-agibot-x2/",
+        "/robots/arenda-bellabot/",
+        "/robots/arenda-glambot/",
+        "/robots/arenda-inchbot-l1-w-edu/",
+        "/robots/arenda-kettybot/",
+        "/robots/arenda-klipmeiker/",
+        "/robots/arenda-mini-robo-kofeyni/",
+        "/robots/arenda-noetix-bumi/",
+        "/robots/arenda-promobot-v4/",
+        "/robots/arenda-robo-kofeyni/",
+        "/robots/arenda-roboshashki/",
+        "/robots/arenda-robot-barmen/",
+        "/robots/arenda-robota-ardi/",
+        "/robots/arenda-robota-hudozhnika-a4/",
+        "/robots/arenda-robota-sofiya/",
+        "/robots/arenda-robota-tron/",
+        "/robots/arenda-senserobot/",
+        "/robots/arenda-sketchbot/",
+        "/robots/arenda-unitree-g1/",
+        "/robots/arenda-unitree-go2/",
+        "/robots/arenda-unitree-h2/",
+        "/robots/arenda-unitree-r1/",
+        "/robots/arenda-uv-box/",
+        "/robots/arenda-xiaomi-cyberdog-2/"
+      ]
+    },
+    {
+      "id": "arenda-noetix-bumi-docx-2026-09-29",
+      "route": "/robots/arenda-noetix-bumi/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "acceptedAt": "2026-09-29T15:22:22.991960+00:00",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-noetix-bumi/",
+      "acceptedHtmlSha256": "c7b38e007e97d29500a8cf672e4c426204eb846603572c13b2bcf62f39adc2bc",
+      "title": "Аренда Noetix Bumi — детский робот-гуманоид | КИБЕР ПОРТАЛ",
+      "scope": "Current literal DOCX revision only; owner acceptance, not production readiness or deployment. September 18 approval remains historical.",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "evidence": [
+        "docs/review/noetix-bumi-docx-2026-09-29/integration/FINAL-REPORT.md",
+        "docs/review/noetix-bumi-docx-2026-09-29/integration/final-proof.json"
+      ],
+      "file": "docs/approvals/arenda-noetix-bumi-docx-2026-09-29.json"
+    },
+    {
+      "id": "arenda-unitree-h2-accepted-ready-2026-09-29",
+      "route": "/robots/arenda-unitree-h2/",
+      "file": "docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.json",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято Фиксируй как готовую",
+      "acceptedPreview": true,
+      "readyForProduction": true,
+      "readyForNextSiteRelease": true,
+      "productionApproved": true,
+      "productionDeployAuthorized": false,
+      "productionPublished": false
+    },
+    {
+      "id": "arenda-unitree-r1-docx-2026-09-29",
+      "route": "/robots/arenda-unitree-r1/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Так страница R1 принята фиксирую результат",
+      "acceptedAt": "2026-09-29T19:21:52.896838+00:00",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-r1/",
+      "acceptedHtmlSha256": "2ccb478b7fd9ae9fc672ce5a941667c32727058b6a4a2046be0b070fefb57720",
+      "title": "Аренда Unitree R1 — гуманоид с оператором | КИБЕР ПОРТАЛ",
+      "scope": "Current literal DOCX R1 revision including illustrations 1/2/4 accepted on Jino only. Subsequent Ardi task does not revoke acceptance. No new production readiness or deployment permission. Prior approval/integration retained as historical evidence.",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "evidence": [
+        "docs/review/unitree-r1-docx-2026-09-29/integration/FINAL-REPORT.md",
+        "docs/review/unitree-r1-docx-2026-09-29/integration/final-proof.json"
+      ],
+      "file": "docs/approvals/arenda-unitree-r1-docx-2026-09-29.json"
+    },
+    {
+      "id": "arenda-robota-ardi-docx-2026-09-30",
+      "route": "/robots/arenda-robota-ardi/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "acceptedAt": "2026-09-30T07:08:23.565746+00:00",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-ardi/",
+      "acceptedHtmlSha256": "95688732af284e8cf114d5c9b77e6367061f2e029364142a02c37b4a5ba4deea",
+      "title": "Аренда робота Арди — андроид с ИИ-диалогом | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-андроида Арди",
+      "seoIntent": "аренда робота Арди",
+      "scope": "Current completed literal DOCX Jino revision accepted. Acceptance only: no new production readiness, release authorization or deployment. Prior approval remains historical.",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "navigationAuthorized": false,
+      "evidence": [
+        "docs/review/ardi-docx-2026-09-29/integration/FINAL-REPORT.md",
+        "docs/review/ardi-docx-2026-09-29/integration/final-proof.json"
+      ],
+      "acceptedAssetLocks": [
+        {
+          "url": "/images/robot-capabilities/arenda-robota-ardi/docx-20260929/02-dialog.webp",
+          "sha256": "bb50e165343037949609015efc9674f741273fb7cab61d8a9228e3f58d8cf119",
+          "alt": "Робот-андроид Арди отвечает на вопрос гостя, вокруг головы — звуковые волны"
+        },
+        {
+          "url": "/images/robot-capabilities/arenda-robota-ardi/docx-20260929/05-languages.webp",
+          "sha256": "56588760cee6e54d651a2f3972b29fe310623b8cf33d6466c3826b8cfb1422c5",
+          "alt": "Робот Арди говорит с иностранными гостями на их языке"
+        },
+        {
+          "url": "/images/robot-capabilities/arenda-robota-ardi/docx-20260929/06-mains.webp",
+          "sha256": "bfdaa740540ce0ab5c2654ce3ad46c12b40f55fcf82e39905174acf5e57c2c9d",
+          "alt": "Робот-андроид Арди на стойке, подключённый к сети"
+        }
+      ],
+      "mediaNonblockingNotes": [
+        "Dialog upper-left stretched texture retained; disclosed before owner acceptance.",
+        "Mains approximately 16% clearance retained; disclosed before owner acceptance.",
+        "Simplified editorial support stand retained; disclosed before owner acceptance.",
+        "Nonblocking acceptance notes, not fixed defects; no claim of strict 100% image-brief conformity."
+      ],
+      "compilation": {
+        "route": "/roboty-gumanoidy/",
+        "sha256": "c30c0090f3c8947c1dbdc0bb9e14336c585dd05f6e1458ffc01661d28a0daae5",
+        "scope": "Previously approved scoped «робот Арди» implementation; no content edits or new whole-compilation acceptance"
+      },
+      "broaderNavigationReleaseGate": "Unresolved; docs/review/production-release-navigation-gate.md; not whole-website readiness",
+      "file": "docs/approvals/arenda-robota-ardi-docx-2026-09-30.json"
+    },
+    {
+      "id": "arenda-robota-sofiya-docx-2026-09-30",
+      "route": "/robots/arenda-robota-sofiya/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "acceptedAt": "2026-09-30T09:47:35.168722+00:00",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-robota-sofiya/",
+      "acceptedHtmlSha256": "cf9fcae9e65d708c763f47635a80ee8362124b5978d3593be8ce12281a74ac6f",
+      "title": "Аренда робота София — андроид Hanson Robotics | КИБЕР ПОРТАЛ",
+      "scope": "Current complete DOCX revision and six manifest WebP accepted on Jino only. No new production readiness or deployment. Prior approvals and integration evidence preserved as history.",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "evidence": [
+        "docs/review/sofiya-docx/integration/FINAL-REPORT.md",
+        "docs/review/sofiya-docx/integration/final-proof.json"
+      ],
+      "mediaScope": "Six editorial synthetic illustrations, not documentary photographs; Hero and original eleven gallery photos unchanged. Acceptance does not assert exact anatomical/technical fidelity.",
+      "seoIntent": "аренда робота София; existing keyword redistribution unchanged",
+      "file": "docs/approvals/arenda-robota-sofiya-docx-2026-09-30.json"
+    },
+    {
+      "id": "humanoid-seven-accepted-2026-09-30",
+      "date": "2026-09-30",
+      "status": "owner_approved_on_jino_preview",
+      "routes": [
+        "/robots/arenda-unitree-g1/",
+        "/robots/arenda-unitree-h2/",
+        "/robots/arenda-unitree-r1/",
+        "/robots/arenda-agibot-x2/",
+        "/robots/arenda-noetix-bumi/",
+        "/robots/arenda-robota-ardi/",
+        "/robots/arenda-robota-sofiya/"
+      ],
+      "ownerExactQuote": "Все карточки считай принятыми, в том числе Agibot X2. Дай еще раз ссылки на все карточки. Пришли именно в виде ссылок.",
+      "evidence": "docs/approvals/humanoid-seven-accepted-2026-09-30.json",
+      "productionDeployAuthorized": false,
+      "newProductionReadinessGranted": false,
+      "existingG1H2ReadinessPreserved": true
+    },
+    {
+      "id": "arenda-unitree-go2-docx-2026-10-01",
+      "route": "/robots/arenda-unitree-go2/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "approvalBasis": "Owner reply to completed Go2 DOCX revision; subsequent CyberDog document does not cancel this acceptance.",
+      "acceptedAt": "2026-10-01T11:09:10.015487+00:00",
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-go2/",
+      "acceptedHtmlSha256": "cd73141424eeeab6e63f09246ab771ee7adca28bfc88d8973c56356492fb5c11",
+      "title": "Аренда Unitree Go2 — робот-собака с подносом | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-собаки Unitree Go2",
+      "seoIntent": "аренда Unitree Go2; current keyword redistribution preserved",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "visibleState": {
+        "blocks": 13,
+        "faq": 8,
+        "facts": 26,
+        "hiddenJson": 2,
+        "newIllustrations": 2,
+        "galleries": [
+          4,
+          6
+        ],
+        "heroPrice": "от 25 000 ₽ за мероприятие",
+        "cta1Price": "от 6 500 ₽ / час",
+        "widthsPassed": [
+          390,
+          768,
+          1280,
+          1920
+        ]
+      },
+      "evidence": [
+        "docs/review/go2-docx/integration/FINAL-REPORT.md",
+        "docs/review/go2-docx/integration/final-proof.json",
+        "docs/review/go2-docx/media/manifest.json"
+      ],
+      "scope": "Current complete DOCX revision accepted on Jino only; no new release readiness or deployment. Integration pending-review status and earlier approvals are historical, not current.",
+      "mediaQualification": "Generated editorial illustrations are not documentary photographs or independent engineering proof.",
+      "file": "docs/approvals/arenda-unitree-go2-docx-2026-10-01.json"
+    },
+    {
+      "id": "arenda-xiaomi-cyberdog-2-2026-10-01",
+      "route": "/robots/arenda-xiaomi-cyberdog-2/",
+      "status": "owner_approved_on_jino_preview",
+      "file": "docs/approvals/arenda-xiaomi-cyberdog-2-2026-10-01.json",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "timestamp": "2026-10-01T12:20:12.118484+00:00",
+      "acceptedHtmlSha256": "9e369f3dc3beff645c0ffbdf3337fc4728c3206a6c7706ee69b9ad37a8aa45c4",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "productionDeployAuthorized": false
+    },
+    {
+      "id": "arenda-inchbot-l1-w-edu-docx-2026-10-01",
+      "route": "/robots/arenda-inchbot-l1-w-edu/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "approvalBasis": "Owner reply to completed Inchbot L1-W EDU DOCX revision; subsequent Promobot document does not cancel this acceptance.",
+      "acceptedAt": "2026-10-01T22:04:28.657609+00:00",
+      "recordedAt": "2026-10-01T22:04:28.657609+00:00",
+      "timestampSemantics": "Tool UTC fixation time; original owner message timestamp not independently recovered; exact quote supplied by current task",
+      "blockOrder": [
+        "hero",
+        "aiSummary",
+        "gallery",
+        "includedService",
+        "capabilities",
+        "scenarios",
+        "pricing",
+        "robotInAction",
+        "goshaCta",
+        "orderFlow",
+        "faq",
+        "finalQuestionsCta",
+        "relatedCatalog"
+      ],
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-inchbot-l1-w-edu/",
+      "acceptedHtmlSha256": "3fbf55a77391378df3e22bc715128bd872d9ad65e1bdae5e7ca1b62dca561594",
+      "title": "Аренда Inchbot L1-W EDU — робопёс на колёсах | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-собаки Inchbot L1-W EDU",
+      "seoIntent": "аренда Inchbot L1-W EDU",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "visibleState": {
+        "blocks": 13,
+        "faq": 8,
+        "facts": 20,
+        "hiddenJson": 2,
+        "newIllustrations": 5,
+        "galleries": [
+          5,
+          6
+        ],
+        "heroPrice": "от 50 000 ₽ за день",
+        "cta1Price": "от 6 500 ₽ / час",
+        "widthsPassed": [
+          390,
+          768,
+          1280,
+          1920
+        ]
+      },
+      "evidence": [
+        "docs/review/inchbot-docx/integration/FINAL-REPORT.md",
+        "docs/review/inchbot-docx/integration/final-proof.json",
+        "docs/review/inchbot-docx/media/manifest.json"
+      ],
+      "scope": "Current complete DOCX revision accepted on Jino only; no new release readiness or deployment. Integration pending-review status and earlier approvals are historical, not current.",
+      "mediaQualification": "Generated editorial illustrations are not documentary photographs or independent engineering proof.",
+      "hiddenBlocks": [
+        "seoIntent",
+        "hiddenMachineFacts"
+      ],
+      "file": "docs/approvals/arenda-inchbot-l1-w-edu-docx-2026-10-01.json"
+    },
+    {
+      "id": "arenda-promobot-v4-docx-2026-10-02",
+      "route": "/robots/arenda-promobot-v4/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято, Фиксируй.",
+      "approvalBasis": "Exact owner reply after Promobot final closure; acceptance includes explicitly disclosed media qualification. Subsequent UVBOX task does not cancel acceptance.",
+      "recordedAt": "2026-10-02T05:16:59.224580+00:00",
+      "acceptedAt": "2026-10-02T05:16:59.224580+00:00",
+      "timestampSemantics": "Actual UTC fixation timestamp from tool; original owner-message timestamp not independently recovered.",
+      "blockOrder": [
+        "hero",
+        "aiSummary",
+        "gallery",
+        "includedService",
+        "capabilities",
+        "scenarios",
+        "pricing",
+        "robotInAction",
+        "goshaCta",
+        "orderFlow",
+        "faq",
+        "finalQuestionsCta",
+        "relatedCatalog"
+      ],
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-promobot-v4/",
+      "acceptedHtmlSha256": "77fd52baff2dbdba7b51d563bdfb520b212bc3c656f093874f948b6cb9744d5b",
+      "title": "Аренда Promobot V4 — говорящий робот на стенд | КИБЕР ПОРТАЛ",
+      "h1": "Аренда робота-промоутера Promobot V4",
+      "seoIntent": "аренда Promobot V4; existing current and desired keywords preserved",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "visibleState": {
+        "blocks": 13,
+        "faq": 8,
+        "facts": 22,
+        "hiddenJson": 2,
+        "newIllustrations": 3,
+        "galleries": [
+          5,
+          7
+        ],
+        "heroPrice": "от 75 000 ₽ за день",
+        "cta1Price": "от 10 000 ₽ / час"
+      },
+      "evidence": [
+        "docs/review/promobot-v4-docx/integration/FINAL-REPORT.md",
+        "docs/review/promobot-v4-docx/integration/final-proof.json",
+        "docs/review/promobot-v4-docx/media/manifest.json"
+      ],
+      "acceptanceQualifier": "accepted_with_known_nonblocking_media_issues",
+      "mediaQualification": "MEDIA-MARGIN-01-03: dialogue secondary elements 6–9%, face echo shells 7–8% vs target 10–15%; accepted with known issues as nonblocking, NOT fixed. Synthetic editorial illustrations are not documentary photographs or engineering evidence.",
+      "mediaMarginsFixed": false,
+      "allVisualConstraintsPass": false,
+      "scope": "Jino acceptance only, not new production readiness/deploy; integration pending state retained as history.",
+      "file": "docs/approvals/arenda-promobot-v4-docx-2026-10-02.json"
+    },
+    {
+      "id": "arenda-uv-box-docx-2026-10-02",
+      "route": "/robots/arenda-uv-box/",
+      "status": "owner_approved_on_jino_preview",
+      "ownerExactQuote": "Принято. Фиксируй.",
+      "approvalBasis": "Exact owner reply after UVBOX final closure; acceptance includes explicitly disclosed media qualification. Subsequent mini coffee DOCX does not cancel acceptance.",
+      "recordedAt": "2026-10-02T06:25:47.304754+00:00",
+      "acceptedAt": "2026-10-02T06:25:47.304754+00:00",
+      "timestampSemantics": "Actual UTC fixation timestamp from tool; original owner-message timestamp not independently recovered.",
+      "blockOrder": [
+        "hero",
+        "aiSummary",
+        "gallery",
+        "includedService",
+        "capabilities",
+        "scenarios",
+        "pricing",
+        "robotInAction",
+        "goshaCta",
+        "orderFlow",
+        "faq",
+        "finalQuestionsCta",
+        "relatedCatalog"
+      ],
+      "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-uv-box/",
+      "acceptedHtmlSha256": "51d01469b6a0668ebe0475ccacbc64e318a262fe4deec0481b0fea51ebee41dc",
+      "title": "Аренда UV-BOX — интерактивная 3D-витрина | КИБЕР ПОРТАЛ",
+      "h1": "Аренда интерактивной витрины UV-BOX",
+      "seoIntent": "аренда UV-BOX; existing current and desired keywords preserved",
+      "acceptedPreview": true,
+      "readyForProduction": false,
+      "readyForNextSiteRelease": false,
+      "productionDeployAuthorized": false,
+      "productionPublished": false,
+      "productionApproved": false,
+      "mergeAuthorized": false,
+      "dnsAuthorized": false,
+      "secretsAuthorized": false,
+      "analyticsAuthorized": false,
+      "liveRoutingAuthorized": false,
+      "visibleState": {
+        "blocks": 13,
+        "faq": 8,
+        "facts": 16,
+        "hiddenJson": 2,
+        "newIllustrations": 4,
+        "galleries": [
+          4,
+          4
+        ],
+        "heroPrice": "от 200 000 ₽ за день",
+        "cta1Price": "от 25 000 ₽ / час"
+      },
+      "evidence": [
+        "docs/review/uv-box-docx/integration/FINAL-REPORT.md",
+        "docs/review/uv-box-docx/integration/final-proof.json",
+        "docs/review/uv-box-docx/media/manifest.json"
+      ],
+      "acceptanceQualifier": "accepted_with_known_nonblocking_hero_overlap",
+      "mediaQualification": "Pre-existing Hero H1/image overlap at 1280px is accepted as a known nonblocking issue, NOT fixed. Four synthetic illustrations are presentation images, not engineering evidence.",
+      "heroOverlapFixed": false,
+      "allVisualConstraintsPass": false,
+      "scope": "Jino acceptance only, not new production readiness/deploy; integration pending state retained as history.",
+      "file": "docs/approvals/arenda-uv-box-docx-2026-10-02.json"
+    }
+  ],
+  "approval_decisions": [
+    {
+      "id": "contract-package-initial-owner-approval",
+      "status": "owner_approved",
+      "scope": [
+        "article source-of-truth model",
+        "article block contract",
+        "article style contract",
+        "article media contract",
+        "article SEO contract",
+        "approval registry policy"
+      ],
+      "decision": "Use current repository contract package as the single working source of truth for KIBER article work; update contracts during future work when owner corrects rules.",
+      "source": "owner chat instruction in current session"
+    },
+    {
+      "id": "article-index-publication-gate",
+      "status": "owner_approved",
+      "scope": [
+        "articles index",
+        "related article cards",
+        "launch article registry"
+      ],
+      "decision": "Presence in data/content/launch-articles.json is not approval to publish/show an article on production. Production article index and related links must be gated by explicit owner-approved release/publication status.",
+      "source": "owner identified unapproved Wave A articles appearing on production articles index; contract patched immediately."
+    },
+    {
+      "id": "published-articles-registry-created",
+      "status": "owner_approved",
+      "scope": [
+        "data/content/published-articles.json",
+        "src/lib/launch-navigation.ts",
+        "articles index",
+        "public related cards"
+      ],
+      "decision": "Separate launch planning registry from runtime published article registry. Production /articles/ and public related article cards use published-articles.json only.",
+      "source": "owner command: Разделяй."
+    },
+    {
+      "id": "draft-article-route-noindex-gate-robot-na-23-fevralya",
+      "status": "owner_approved",
+      "scope": [
+        "/articles/robot-na-23-fevralya/",
+        "data/seo/launch-routes.json",
+        "src/pages/articles/robot-na-23-fevralya/index.astro"
+      ],
+      "decision": "Unapproved draft article routes must not be in sitemap and must render noindex until owner approves publication.",
+      "source": "Follow-up to registry separation after detecting draft route could still be generated in production build."
+    },
+    {
+      "id": "remove-wave-a-current-articles-from-production-publication",
+      "status": "owner_approved",
+      "scope": [
+        "/articles/novogodniy-korporativ-5-idey/",
+        "/articles/robot-dlya-registracii-gostey-i-bedzhey-na-konferencii/",
+        "/articles/robot-na-23-fevralya/",
+        "/articles/robot-na-8-marta/",
+        "/articles/robot-na-novogodniy-utrennik-v-detskom-sadu-i-shkole/"
+      ],
+      "decision": "Remove current Wave A article pages from production publication surface: public /articles index, sitemap, and old server directories until each article passes the new contract/SEO workflow and owner re-approves publication.",
+      "source": "owner explicit answer: Убираем с production все 4 статьи Волны A — да. Includes current draft 23 February gate as well."
+    },
+    {
+      "id": "article-hero-rule-new-article-generate-rewrite-keep-existing",
+      "status": "owner_approved",
+      "scope": [
+        "new KIBER articles",
+        "rewritten existing KIBER articles",
+        "article Hero images",
+        "image-generation brief workflow"
+      ],
+      "decision": "For a new article, immediately create/generate a separate Hero image from an internal technical brief based on the article meaning. For an existing article rewrite, keep the current Hero by default and generate a new image only by explicit task or clear mismatch.",
+      "source": "owner instruction in Telegram: after reviewing /articles/prezentaciya-produkta-idei-s-robotami/ media issue"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "article-editorial-entry-diversity-20-angles",
+      "status": "owner_approved_working_rule",
+      "date": "2026-09-17",
+      "scope": "KIBER /articles editorial planning",
+      "summary": "New articles must choose a distinct editorial entry angle from the 20-angle contract or define a custom angle when none fits. Multi-robot role logic remains useful but must not become the universal first thesis.",
+      "files": [
+        "docs/contracts/kiber-article-editorial-angles-contract.md",
+        "docs/contracts/kiber-article-style-contract.md",
+        "docs/contracts/kiber-article-source-of-truth.md"
+      ]
+    },
+    {
+      "id": "article-hero-reference-guided-seamless-scene",
+      "type": "media_contract",
+      "status": "owner_approved",
+      "claim": "For KIBER article Hero images with concrete robots, the approved default is a cohesive reference-guided generated event scene, not generic robot generation and not a pasted cut-out collage.",
+      "approved_example": "/articles/tematicheskaya-vecherinka-kiberpank/ Hero correction on 2026-09-17",
+      "contract_files": [
+        "docs/contracts/kiber-article-media-contract.md"
+      ],
+      "allowed_changes": [
+        "article-owned seamless generated Hero using current robot-card references",
+        "card crop derived from the approved Hero",
+        "actualDescription marking generated/editorial provenance"
+      ],
+      "forbidden_without_new_approval": [
+        "rough cut-out collage as final article Hero",
+        "generic sci-fi robots that do not resemble catalog models",
+        "treating gallery/catalog photos as article Hero without a scenario image"
+      ],
+      "owner_approval_basis": "Alexander approved the second cyberpunk Hero redo as excellent and asked to record the method in the skill and repository contracts so future results repeat this quality."
+    },
+    {
+      "id": "article-registration-robot-owner-approved-for-future-deploy",
+      "type": "article_detail_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "article": "/articles/robot-dlya-registracii-gostey-i-bedzhey-na-konferencii/",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/robot-dlya-registracii-gostey-i-bedzhey-na-konferencii/?v=wave-a-registration-readiness-1",
+      "accepted_at": "2026-09-17",
+      "approval_basis": "Alexander reviewed the Jino preview and wrote: 'Статья принята. Фиксируй как готовую для будущего деплоя'.",
+      "production_scope": "Not deployed to production in this step; approved for a future deployment batch.",
+      "evidence_files": [
+        "docs/review/article-registration-robot/wordstat-live-2026-09-17.json",
+        "docs/review/article-registration-robot/serp-notes-2026-09-17.json",
+        "docs/review/article-registration-robot/seo-passport.md",
+        "docs/review/article-registration-robot/readiness-checklist-2026-09-17.md"
+      ]
+    },
+    {
+      "id": "article-new-year-matinee-owner-approved-for-future-deploy",
+      "type": "article_detail_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "article": "/articles/robot-na-novogodniy-utrennik-v-detskom-sadu-i-shkole/",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/robot-na-novogodniy-utrennik-v-detskom-sadu-i-shkole/?v=wave-a-matinee-readiness-1",
+      "accepted_at": "2026-09-17",
+      "approval_basis": "Alexander reviewed the Jino preview and wrote: 'Статья принята. Фиксируй как готовую для будущего деплоя'.",
+      "production_scope": "Not deployed to production in this step; approved for a future deployment batch.",
+      "evidence_files": [
+        "docs/review/article-new-year-matinee/wordstat-live-2026-09-17.json",
+        "docs/review/article-new-year-matinee/serp-notes-2026-09-17.json",
+        "docs/review/article-new-year-matinee/seo-passport.md",
+        "docs/review/article-new-year-matinee/readiness-checklist-2026-09-17.md"
+      ]
+    },
+    {
+      "id": "article-new-year-corporate-owner-approved-for-future-deploy",
+      "type": "article_detail_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "article": "/articles/novogodniy-korporativ-5-idey/",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/novogodniy-korporativ-5-idey/?v=wave-a-corporate-readiness-1",
+      "accepted_at": "2026-09-17",
+      "approval_basis": "Alexander reviewed the Jino preview and wrote: 'Статья принята. Фиксируй как готовую для будущего деплоя'.",
+      "production_scope": "Not deployed to production in this step; approved for a future deployment batch.",
+      "evidence_files": [
+        "docs/review/article-new-year-corporate-ideas/wordstat-live-2026-09-17.json",
+        "docs/review/article-new-year-corporate-ideas/serp-notes-2026-09-17.json",
+        "docs/review/article-new-year-corporate-ideas/seo-passport.md",
+        "docs/review/article-new-year-corporate-ideas/readiness-checklist-2026-09-17.md"
+      ]
+    },
+    {
+      "id": "article-robot-march-8-owner-approved-for-future-deploy",
+      "type": "article_detail_owner_acceptance",
+      "status": "owner_approved_for_future_deploy",
+      "article": "/articles/robot-na-8-marta/",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/robot-na-8-marta/?v=wave-a-march8-readiness-1",
+      "accepted_at": "2026-09-17",
+      "approval_basis": "Alexander reviewed the Jino preview and wrote: 'Статья принята. Фиксируй как готовую для будущего деплоя'.",
+      "production_scope": "Not deployed to production in this step; approved for a future deployment batch.",
+      "evidence_files": [
+        "docs/review/article-robot-march-8/wordstat-live-2026-09-17.json",
+        "docs/review/article-robot-march-8/serp-notes-2026-09-17.json",
+        "docs/review/article-robot-march-8/seo-passport.md",
+        "docs/review/article-robot-march-8/readiness-checklist-2026-09-17.md"
+      ]
+    },
+    {
+      "id": "article-catalog-robot-display-name-case-gate",
+      "date": "2026-09-17",
+      "source": "owner correction after robot-na-23-fevralya card-title defect",
+      "scope": "KIBER article readiness checklist and article catalog robot-card title handling",
+      "status": "approved_workflow_rule",
+      "rule": "Article catalog robot-card H3 titles must use nominative display model names, with explicit source check for generated identity fields and rendered HTML/aria duplicate-case artifacts before preview.",
+      "files": [
+        "docs/contracts/kiber-article-readiness-checklist.md",
+        "docs/contracts/kiber-article-block-contract.md",
+        "docs/contracts/kiber-article-source-of-truth.md",
+        "src/pages/articles/robot-na-23-fevralya/index.astro",
+        "docs/review/article-robot-february-23/defect-robot-card-title-case-2026-09-17.md"
+      ]
+    },
+    {
+      "id": "article-robot-february-23-owner-approved-future-deploy",
+      "date": "2026-09-17",
+      "source": "owner accepted fixed Jino preview after robot-card title-case defect fix",
+      "scope": "/articles/robot-na-23-fevralya/",
+      "status": "ready_for_future_deploy",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/robot-na-23-fevralya/?v=wave-a-feb23-title-fix-1",
+      "notes": "Production not touched. Acceptance after catalog robot display names fixed to SenseRobot, Unitree Go2, Робобар. Route remains noindex/sitemap false until separate production approval."
+    },
+    {
+      "id": "article-product-presentation-owner-approved-future-deploy",
+      "date": "2026-09-17",
+      "source": "owner accepted Jino preview after readiness/evidence pass",
+      "scope": "/articles/prezentaciya-produkta-idei-s-robotami/",
+      "status": "ready_for_future_deploy",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/prezentaciya-produkta-idei-s-robotami/?v=wave-a-product-readiness-1",
+      "notes": "Production not touched. Route remains noindex/sitemap false until separate production approval."
+    },
+    {
+      "id": "article-cyberpunk-party-owner-approved-future-deploy",
+      "date": "2026-09-17",
+      "source": "owner accepted Jino preview after final readiness/display-name pass",
+      "scope": "/articles/tematicheskaya-vecherinka-kiberpank/",
+      "status": "ready_for_future_deploy",
+      "preview": "https://jino-preview.kiber-portal.ru/articles/tematicheskaya-vecherinka-kiberpank/?v=wave-a-cyberpunk-readiness-1",
+      "notes": "Production not touched. Route remains noindex/sitemap false until separate production approval."
+    },
+    {
+      "id": "compilation-roboty-promoutery-owner-approved-future-deploy",
+      "date": "2026-09-22",
+      "source": "owner accepted Jino preview after final Unitree G1/Go2 gallery-scenario image swap",
+      "scope": "/roboty-promoutery/",
+      "status": "ready_for_future_deploy",
+      "preview": "https://jino-preview.kiber-portal.ru/roboty-promoutery/?v=owner-fixes-4-swap",
+      "notes": "Production not touched. Route remains preview/noindex until separate production approval; accepted for repository/status/key-map fixation."
+    },
+    {
+      "id": "blog-gosha-block-rules-2026-09-23",
+      "status": "owner_rule_recorded",
+      "approvedAt": "2026-09-23T10:34:03.059385+03:00",
+      "scope": "Shared «Блог Кибер Гоши» block rules for homepage, articles and compilation pages",
+      "productionApproved": false,
+      "contract": "docs/contracts/kiber-blog-gosha-block-contract.md"
+    },
+    {
+      "id": "blog-gosha-homepage-selection-2026-09-23",
+      "status": "owner_selected_on_chat_and_applied_to_jino_preview",
+      "file": "docs/approvals/blog-gosha-homepage-selection-2026-09-23.json",
+      "previewUrl": "https://jino-preview.kiber-portal.ru/?v=home-blog-selection-1",
+      "productionApproved": false,
+      "timestamp": "2026-09-23T11:59:25.180729+03:00"
+    }
+  ]
+}

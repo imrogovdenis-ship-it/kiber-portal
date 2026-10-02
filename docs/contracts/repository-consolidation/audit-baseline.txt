@@ -1,0 +1,879 @@
+КИБЕР ПОРТАЛ — АУДИТ GITHUB И ЛОКАЛЬНЫХ ФАЙЛОВ
+Срез: 2026-10-02T05:31:15+00:00
+
+РЕЖИМ И ГРАНИЦЫ
+Анализ без слияний, commit/push, закрытия PR, удаления веток или файлов. Созданы только отчёты в $LOCAL_AUDIT/repo-consolidation-audit-2026-10-01.
+Проверены два GitHub-репозитория, соответствующие локальным папкам КИБЕР в /home/alex/projects. Это не аудит всех репозиториев GitHub-аккаунтов и не разрешение на работу с чужими проектами/другими Hermes-профилями.
+GitHub: актуальные API-данные по веткам/PR/приватности; сравнение с доступными локальными commit/tree objects. main повторно сверена с GitHub в конце. Файловый срез не атомарный: другие задачи могут продолжать работать.
+Полноценный secret/PII scan, свежий clone с LFS, CI/сборка и визуальная сверка не выполнялись. Отсутствие нескольких известных форматов секретов НЕ означает разрешение публикации.
+
+ГЛАВНЫЙ ВЫВОД
+Сначала сохранить и проверить актуальную локальную работу, затем разбирать ветки, потом удалять копии. Нельзя сделать git reset/clean или массовый merge старых PR: актуальные контракты, SEO-данные и код ещё не сохранены в GitHub в текущем виде.
+
+1. РЕПОЗИТОРИИ
+imrogovdenis-ship-it/kiber-portal — публичный, canonical по текущему README, main, 99 remote branches, 137 PR всего: 87 merged, 45 open, 5 closed/unmerged. 1 тег, 0 GitHub releases. API показывает main unprotected; текущий доступ push=true, admin=false. Защиту main/изменение видимости необходимо отдельно согласовать с администратором.
+В HEAD main 3364 tracked files: src=118, data=443, docs=1308, public=467, tests=131, scripts=98, design-system=86, incoming=111, site-export=510 и корневые/infra файлы. Размеры git blobs НЕ равны полному объёму LFS-медиа.
+Содержимое: Astro runtime и API, контент/каталог/SEO, дизайн-система, тесты, документы/история миграции, исходные capture/evidence. Корневой README исторически устарел: описывает PR8 до merge и Tilda freeze. Его необходимо привести к подтверждённой текущей структуре, без изменения правил владельца.
+
+professoralex28-sketch/kiber-portal-site — приватный, 1 main, 857 tracked files, нет PR/tags/releases. Source-first миграционный прототип с HTML/media capture, каталогом, CSV/XLSX review, старой реализацией Astro и lead backend.
+По raw Git blobs 500 файлов уже встречаются в истории main-репозитория, 357 — не найдены с тем же blob. Это не 357 гарантированно полезных новых файлов и не доказательство уникальности LFS-медиа. Не сливать старый runtime поверх текущего. Сначала выбрать нужные исходные evidence/документы, затем рассматривать архивацию приватного репозитория, не его безусловное удаление.
+
+2. ЛОКАЛЬНОЕ СОСТОЯНИЕ
+31 Git working directory под /home/alex/projects; 3 независимых common Git directories. Большинство рабочих копий разделяет $PROJECTS/kiber-portal-pr8/.git — это не независимые репозитории и не независимые резервные копии.
+Основная папка kiber-audit-remediation: HEAD main совпал с GitHub, но 119 изменённых tracked файлов и 38569 untracked путей. Число untracked включает tmp-сборки/скриншоты/повторы и НЕ равно числу уникальных полезных файлов.
+Изменения включают шаблоны, компоненты, JSON карточек, SEO, аналитику/формы, server API, тесты, package manifests. Нельзя отделить только contracts, забыв зависимый runtime/данные и медиа.
+5 рабочих папок имеют tracked изменения. Другие могут иметь untracked/ignored данные, даже при чистом tracked status.
+14 локальных имён веток отсутствуют среди текущих remote branches; 8 их HEAD-коммитов не найдены в истории текущих remote heads. Это требует сохранения/разбора, не автоматического слияния.
+
+3. КЛАССЫ УДАЛЁННЫХ ВЕТОК
+main: оставить.
+41 branch: HEAD уже предок main. Повторный merge не нужен. 27 связанных PR остаются open — кандидаты на закрытие как уже включённые/заменённые после финальной сверки. Перед удалением ветки проверить local worktree, уникальные незакоммиченные файлы, автоматизацию и права владельца.
+33 branches: PR имеет merged status, но branch HEAD не предок main. Вероятны squash/rebase; статус merged сам по себе недостаточен. Проверить merge_commit/current diff и отсутствие новых коммитов после merge; затем удалить ссылки на ветки, сохранив необходимую историю.
+18 branches: открытые PR и не предки main. Отделить старые варианты/исследования от нужных missing docs. Не mass-merge.
+6 branches: не предки main, закрытый без merge PR либо нет PR. Ручная содержательная классификация обязательна.
+Дополнительная находка: feat/jino-hosting-preparation не предок main, но все 18 файлов её изменений совпали с main; кандидат на superseded, не обязательный merge.
+Удаление remote branch не удаляет рабочую папку с диска и само по себе почти не освобождает место. Нельзя запускать агрессивный Git GC/LFS prune до сохранения и проверки восстановления.
+
+4. ЧТО ПЕРЕНЕСТИ С ДИСКА
+Выбраны 618 untracked source/document/data кандидатов суммарно 45.84 МБ (не включая всю review-бинарщину и новые изображения). Их raw blobs не найдены в истории текущих remote branches. Это кандидаты для review, а НЕ готовый список git add.
+Приоритет A: docs/contracts и docs/approvals — 26 + 87 файлов. Зафиксировать действующие правила и точные статусы согласований. В robot-card contract явно pending_owner_review, а в article contract owner_approved сосуществует со старой оговоркой про ожидание проверки: нужна согласованная редакция, не повышение статусов без основания.
+Приоритет B: актуальные src/data/tests/scripts/public assets, включая изменённые tracked файлы, новые зависимости и 212 untracked public/images файлов (количество по текущему status, не проверка оригинальности каждого медиа).
+Приоритет C: выбранные data/seo (308 файлов), рабочая SEO-карта, Wordstat/SERP evidence, опубликованные карточки/статьи, факты/цены/реестры изображений.
+Приоритет D: docs/agent-handoffs, нужные DOCX/TXT, финальные acceptance/rollback evidence с манифестами. Из public/docs проверить каждый документ перед публичным размещением: этот каталог попадает в сайт.
+
+НЕ ПУБЛИКОВАТЬ АВТОМАТИЧЕСКИ
+.env/.envrc, токены, браузерные сессии/cookies, логи с credentials, CRM/клиентские выгрузки, операционные отчёты и чувствительные рекламные данные. Нужные эксплуатационные контракты можно сохранить после обезличивания, а приватные исходники — только в отдельно согласованном закрытом хранилище.
+Примеры требующих review областей: docs/contracts/amocrm-operations, scripts/amocrm_kiber_sla_report.py, scripts/avito_monitoring_report.py, data/seo/imports/yandex-direct-export-from-google.xlsx. Наличие слова CRM не доказывает секрет, но требует проверки.
+Не загружать целиком ~/.hermes/state, browser profiles, node_modules, venv, dist, tmp, все скриншоты и повторные ZIP. GitHub — источник воспроизводимого проекта, не свалка временных файлов.
+
+5. ЦЕЛЕВОЙ ПОРЯДОК
+Одна актуальная постоянная ветка main в canonical repo. Временные PR-ветки допустимы только на время работы; после merge удаляются. История релизов — через согласованные immutable tags/небольшие манифесты, не вечные ветки.
+Создать компактный индекс docs/SOURCE-OF-TRUTH.md (предложение, файл ещё не создан), указывающий на:
+- docs/contracts + docs/approvals: правила, scope и approval status;
+- data/models: факты о роботах, тарифы, роли медиа;
+- data/content + src/lib: утверждённый контент и адаптеры;
+- data/seo/working-key-map/seo-key-map.table.json: current/desired и next actions;
+- public/images + media registries: runtime media и проверенные роли;
+- docs/deploy/infra: не секретные инструкции запуска, публикации и отката.
+Не создавать дублирующую 'новую истину' поверх существующих реестров. Данные утверждения не повышать автоматически. Legacy migration evidence явно обозначить как historical, не источник текущего дизайна.
+
+6. ДИСК: ОБЪЁМ НЕ РАВЕН РАЗРЕШЕНИЮ НА УДАЛЕНИЕ
+/home/alex/projects: 19.77 ГБ; основная рабочая папка 6.13 ГБ (вложена в предыдущую сумму).
+В ней docs/review=3.51 ГБ, tmp=1.91 ГБ — непересекающиеся приоритетные области будущей выборочной классификации, но не гарантированно ненужные данные.
+~/.hermes/state=3.97 ГБ: старые task artifacts плюс rollback/private runtime и ранее сохранённые восстановительные копии.
+~/.cache=1.70 ГБ, из них Playwright 1.65 ГБ. Это может быть используемая QA-зависимость; не удалять по одному названию cache.
+Серверные Docker layers/volumes других пользователей, личные файлы, browser profiles и другие проекты не входят в план очистки.
+Активный alex-kiber-pr8-footer-review использует $PROJECTS/kiber-portal-pr8/dist. Этот каталог сохранять до отдельного решения о сервисе.
+После предыдущей очистки 18 ZIP их обозначенные keeper-архивы/каталоги обязательны к сохранению до создания другого проверенного восстановления; список приложен ниже.
+
+7. ПОШАГОВОЕ ИСПОЛНЕНИЕ ПОСЛЕ СОГЛАСОВАНИЯ
+1) Остановить только конкурирующие записи в консолидируемую рабочую папку по согласованию с владельцем/другими агентами. Зафиксировать SHA/status и защищённые пути; не останавливать сервисы по умолчанию.
+2) Сохранить локально уникальную работу всех dirty worktrees и восьми local-only commit heads. Выделить публичные источники и приватные материалы; сделать secret/PII и media-rights review.
+3) Подготовить одну временную consolidation-ветку/PR из правильной актуальной базы. Коммиты отдельными смысловыми группами: governance/approval index, source+data+tests+media, безопасные исследования/документы. Не git add ., не merge всех PR.
+4) Проверить согласованность источников, корректность current/desired SEO, отсутствие возврата старых UI/копирайта; свежая чистая checkout/install/build/tests, LFS integrity. Проверить нужные preview/production различия без публикации. GitHub source commit не является разрешением на production.
+5) После согласованного merge и проверки именно remote main закрыть superseded PR, удалить подтверждённо лишние remote/local branches. Для старой уникальной истории выбрать сохранение источников либо приватный архив/immutable refs; не оставлять второй актуальный runtime.
+6) Из новой main выполнить независимое восстановление всех нужных исходников/медиа. Только после успешной проверки удалять allowlisted worktrees, временные сборки, воспроизводимые зависимости и дубли review. Сохранить рабочий checkout, использующиеся dependencies/runtime, компактные final acceptance/rollback материалы.
+7) Зафиксировать фактические df до/после и проверить сервисы. Защиту main/автоудаление PR-веток согласовать с администратором; текущий токен не admin.
+
+ОГРАНИЧЕНИЯ АУДИТА
+Это достаточная карта для безопасной консолидации, а не утверждение, что каждый из 38569 файлов полностью изучен, каждый старый PR функционально восстановлен или каждый приватный документ разрешён к публикации. Содержательная выборка и CI относятся к этапу исполнения.
+
+ПРИЛОЖЕНИЕ A. ВСЕ УДАЛЁННЫЕ ВЕТКИ
+
+open_unique_or_superseded_review
+- chore/kiber-approved-contract-guardrails-20260909 | 142244d8246bf0468c08c8924e18245163788a81 | PR #86 open merged=False
+- docs/domain-publication-evidence | 20eb416fbea81f87ffb6b2f06ed9419f0f61fde9 | PR #93 open merged=False
+- docs/jino-main-production-release | 021261343da9349b6e15254dbbf07935d7a9d9e5 | PR #122 open merged=False
+- feat/jino-hosting-preparation | 5daf1d0a8b0f532104a886a230a1dee999a08a56 | PR #94 open merged=False
+- feat/kiber-article-how-humanoid-works-20260909 | 7c66c7b2592e3c909ff32f42fe1124e75a17e77a | PR #84 open merged=False
+- feat/kiber-article-humanoid-choice-20260908 | 102389e20aa646776fe4cc47474c90bbfb4cdf04 | PR #82 open merged=False
+- feat/kiber-article-robot-gift-director-20260909 | 5587d520d7b771d756c323a07041407bbc631c94 | PR #85 open merged=False
+- feat/kiber-article-unitree-g1-agibot-x2-20260908 | 1786843063e38e9ca0aa79fade4e57807fbcb4ce | PR #81 open merged=False
+- feat/kiber-article-unitree-g1-corporate-20260908 | cd40d75e98ff9befa234808c66cb2aeab8185c3d | PR #83 open merged=False
+- feat/kiber-article-unitree-g1-r1-h2-20260909 | 49512457cfce9509598e70a5f71bb1aee26821a4 | PR #87 open merged=False
+- feat/kiber-fast-launch-humanoids-articles-20260908 | 4e229a2740803ad7ee7bd0f24b4c0b62e1f65ab9 | PR #80 open merged=False
+- fix/article-related-current-blocks | 48e0aed891b901df889bb250d309324bc03fd9b4 | PR #95 open merged=False
+- hermes/kiber-70-release-candidate-20260901 | 01f2dde5daf3be87dc338b9ede43b7bef13bb53b | PR #69 open merged=False
+- ops/postlaunch-reconciliation | c0f1f1688a3ce2a1eae10091ae7413858c72a23f | PR #124 open merged=False
+- preview/compilation-ux-variants | 7b5e23f92279a632cd2ba2689d530bf184195823 | PR #132 open merged=False
+- preview/dogs-owner-composition | affdf40391a914aee7f5a834b0782c33e9011609 | PR #133 open merged=False
+- preview/hero-type-review | 160c16e9ecb9b740df2b5714481424b14d37ad67 | PR #135 open merged=False
+- preview/scenario-mobile-variants | c7002d247fb088ead3b1bef9f9eae88393541c32 | PR #130 open merged=False
+
+ancestor_candidate
+- codex/kiber-30-machine-readable-design-system | ea089bfa1236fb396611fdf1260a17d27a7bd593 | PR
+- feat/a4-researched-copy | d15abf421dae568b62610896c5ec1c3024fb84e2 | PR #117 open merged=False
+- feat/analytics-three-modes | 1e38480918db9d490dba1d49c1c170348f9bf69c | PR #128 closed merged=True
+- feat/ardi-researched-copy | 01e11698da53f17814cfca9771b11628c6cd042a | PR #102 open merged=False
+- feat/basic-metrica-optional-webvisor | ce2cf48ca4ae5c8d4b2e539191fa2bbf9ab87a92 | PR #127 closed merged=True
+- feat/bellabot-researched-copy | 66ef9ee338c551daacea0c348a831311931d6493 | PR #111 open merged=False
+- feat/canonical-api-runtime | 2fa8c1dde9dc86c9eb8b5e547f8ec8873a75dc7f | PR #89 open merged=False
+- feat/canonical-approved-release | ea5084cc507fb3201f9a03416d34a22735868052 | PR #88 closed merged=True
+- feat/clipmaker-researched-copy | a43a10fbf1e12698baf0f45cf9173024e838deda | PR #119 open merged=False
+- feat/coffee-researched-copy | 829d69111c5f38c5667b4588b4ef65693f5dc999 | PR #114 open merged=False
+- feat/cyberdog-researched-copy | 046af08d1a5798f5147144f40c7505e056169704 | PR #109 open merged=False
+- feat/glambot-researched-copy | a880bfcc65b25e0abd51d87fd8decdb562b5879e | PR #118 open merged=False
+- feat/go2-researched-copy | 1573c19c96112bda53d2b683eec3d2b6dd6e740b | PR #108 open merged=False
+- feat/inchbot-researched-copy | b5d9d30a2e5f1eac2268b63cb61952b0438f064a | PR #110 open merged=False
+- feat/kettybot-researched-copy | 3ef033f25503105fc719092504da368d21e72730 | PR #112 open merged=False
+- feat/metrica-consent-policy | 18020bad3d6228745f4fb461e8d90e19d8c0f5b8 | PR #125 closed merged=True
+- feat/mini-coffee-researched-copy | 0b3b0f8ba1f78af1e7df1d63f216331caebd96ca | PR #115 open merged=False
+- feat/noetix-bumi-researched-copy | 65fc8815acac63acca85e332a11ae529eb8bcbc6 | PR #101 open merged=False
+- feat/promobot-researched-copy | 3e59ea825763e78911cd0fa4744d35664804c0a6 | PR #107 open merged=False
+- feat/robobar-researched-copy | 981e2622cfc61dcd34369d8a631ea18eb71894eb | PR #113 open merged=False
+- feat/shared-cookie-consent | 8dbc474f9b3acdb8c5767d644d7266be52e550c4 | PR #123 closed merged=True
+- feat/sketchbot-researched-copy | 308930f033b26a59323d845bb3043db6f5e8add5 | PR #116 open merged=False
+- feat/sofia-researched-copy | b74e08cda6aceeac7d6ac6c32bb6885a1a847bba | PR #105 open merged=False
+- feat/tron-researched-copy | f59f17ae264b75fc68f2b75b119a4d19b9118e63 | PR #106 open merged=False
+- feat/unitree-h2-researched-copy | fde464a90519a59e0e7751b98e940ca88ccd35d8 | PR #98 open merged=False
+- feat/unitree-r1-researched-copy | a7c8a79784b66e2212c79d74339bf2e96612a467 | PR #97 open merged=False
+- feat/uvbox-researched-copy | 810fff5fb5e84cb3d7d8997f0e3dbe510c48ee43 | PR #120 open merged=False
+- fix/accepted-release-consolidation | ab2c53181582662e7b793f7fe0c0796f2b49593f | PR #121 closed merged=True
+- fix/humanoid-full-model-copy | 6a4c24368a51e72d867e7a80b491487920469a55 | PR #96 closed merged=True
+- fix/humanoid-video-csp | 6d82f11724ae579988b3b888ec0a49167b63a859 | PR #91 open merged=False
+- fix/metrica-production-csp | 2a7422899c0e48f8c728b56e9e5eba00cd094e83 | PR #126 closed merged=True
+- fix/mobile-home-hero | c7f04217ad77211b8d6cfb0759311c3c7213db84 | PR #103 open merged=False
+- fix/r1-h2-capability-size | 8de9f0dcc4b1928a35e2bd3f02cbe4d74a45bffe | PR #99 open merged=False
+- fix/robot-breadcrumb-names | 96135aeaff55942196ec65cfc73e8a1579370058 | PR #104 open merged=False
+- fix/robot-card-content-remediation | 33dbcd2ec9dbd6bf34d13ce7d7f9f6e0b510b9ab | PR #92 closed merged=True
+- fix/robot-card-hero-contact-popup | 2f7a1a597cdcfedea696f8d24b08f15f27219152 | PR #75 closed merged=True
+- fix/staging-owner-card-feedback | 8dd7b1d3aec2bdd2fbbcbc5274d821094d963095 | PR #90 open merged=False
+- hermes/kiber-batch1-robot-card-research-20260907 | 758eafe34cae80358231d8bed2338f1338eebc2f | PR #74 closed merged=True
+- hermes/kiber-full-site-visual-qa-20260901 | 90d3948a27876d1d16247cf7f3024d730f50a666 | PR #73 closed merged=True, #70 closed merged=True
+- hermes/kiber-linear-main-readiness-sync-20260906 | cc1ea07088c11ccfd55c100358e06b7694870b53 | PR #71 closed merged=True
+- research/catalog-source-library | 25d685a453ba2bc75d6c7668c0f74ff55fd97ed0 | PR #100 open merged=False
+
+merged_pr_not_ancestor_needs_diff
+- codex/kiber-31-layout-foundation | 545294fcf3c2bfffde299146718614ab6311ca46 | PR #13 closed merged=True
+- feat/dogs-approved-composition | 78de3aa81c6d49cb082aa7b6137ae8c3bf1630cd | PR #134 closed merged=True
+- feat/kiber-batch4-robot-card-research-20260908 | ec43596c9ca6075b4f6bbfe69d367cbd60ae17a8 | PR #78 closed merged=True
+- feat/robot-dogs-seven-page-preview | e9bf40f10be9097b10fdba5dbb817f4297120279 | PR #129 closed merged=True
+- fix/dogs-mobile-and-card-links | 1e6c2ddb5df31ea3de2fa92e7aa25beb1c02868c | PR #131 closed merged=True
+- hermes/kiber-20-ci-baseline | c9325b68bc5987221b72172ab715813462b87ffd | PR #23 closed merged=True
+- hermes/kiber-21-runtime-headers | 0481c2b55374c830522bbf0a8bd18f25e6d0dc6c | PR #20 closed merged=True
+- hermes/kiber-22-health-readiness-limits | 21e17cd828214c25b8734a4449a6c38e444a3097 | PR #24 closed merged=True
+- hermes/kiber-29-404-redirect-registry | 555c3cbc0fd1290557fb0752909bf7ebf9bde87c | PR #19 closed merged=True
+- hermes/kiber-32-commercial-components-mvp | 4acc72cd8f9ad1b787fc3fff083442d2f60884b5 | PR #15 closed merged=True
+- hermes/kiber-33-vertical-slice | 7a4345b47e3220ff740c15bc3acd7180c0732b78 | PR #16 closed merged=True
+- hermes/kiber-34-visual-regression-smoke | 9d888cd88c342e435492329df622482df0e456b4 | PR #22 closed merged=True
+- hermes/kiber-35-reference-screenshots | 41952025fb2f38db13ba7b82f5760297f2456ccf | PR #21 closed merged=True
+- hermes/kiber-36-accessibility-states | c048dd80f8d5fb85a52286af4736a3d16bdc6e66 | PR #18 closed merged=True
+- hermes/kiber-37-remove-technical-ui-copy | 4e34448015a28e1dcb87de631199852735cbd114 | PR #17 closed merged=True
+- hermes/kiber-39-performance-smoke | 21b6c22cdfc34d71c81bab8c165999671d692c22 | PR #25 closed merged=True
+- hermes/kiber-43-route-sitemap | c9ec8e5b6b7800e717d6e4e4b872e92a9c36005b | PR #26 closed merged=True
+- hermes/kiber-45-robotpage-24-robots | d45aa1ab471ac745545d1565ae74d7e438318c8b | PR #33 closed merged=True
+- hermes/kiber-50-review-notes-isolation | 2b81e224956c605222bea6a0088a45daf69b9940 | PR #29 closed merged=True
+- hermes/kiber-51-seo-metadata-structured-data | ac317d9b825a1f1b17ea21f91655255c940ca422 | PR #31 closed merged=True
+- hermes/kiber-52-safe-internal-links | 1f69936fffa6b9305fc1fba8a46422332b7a4d64 | PR #32 closed merged=True
+- hermes/kiber-53-semantic-core-lifecycle | f6090ba10d458968f5875bfc4cd6ab39001dac5c | PR #28 closed merged=True
+- hermes/kiber-55-content-acceptance | 73a0a8764d50d857e8c3bc2822c9985f0f503d7a | PR #34 closed merged=True
+- hermes/kiber-63-responsive-a11y-visual-qa | d227b01491472d2f4d60fd8bfee2ea19ec25b376 | PR #35 closed merged=True
+- hermes/kiber-71-event-contract | 67150e411eb431ff48f4296d23211aad00ce8f5f | PR #27 closed merged=True
+- hermes/kiber-79-internal-link-proposals | a5ffacf6f802a2c668f0c3ce9abc6a7e756f6aad | PR #30 closed merged=True
+- imrogovdenis/kiber-2-protected-snapshot | 946ac11b3d8fe3a9969c1907420f2a3ea5b69b4f | PR #2 closed merged=True
+- imrogovdenis/kiber-3-canonical-repository | df1d9dfc22e3f098a814dd27793d6b0929a4be8f | PR #1 closed merged=True
+- imrogovdenis/kiber-4-secret-media-audit | 99848cbfc16d5ff9011fa330c82aa9cd2cec48be | PR #3 closed merged=True
+- imrogovdenis/kiber-5-tilda-freeze | 06415425283ff5a0e15cbe050b04fafc5e00796a | PR #4 closed merged=True
+- imrogovdenis/kiber-6-production-drift-monitor | 555ebc33e27e3ac2bf933f3c08ceecff144bfb69 | PR #5 closed merged=True
+- imrogovdenis/kiber-6-runner-rate-limit-fix | 2a9226f96ab35dfd9214e2ada4800192006aa006 | PR #7 closed merged=True
+- preview/hero-full-site | 4a74b3d455245a661064a4b47da58b56a3bbe563 | PR #136 closed merged=True
+
+closed_or_no_pr_unique_review
+- feat/kiber-27-visual-source-hierarchy | 6f40668a719db61faaea61b105650b326495cecb | PR #9 closed merged=False
+- hermes/kiber-38-contact-feature-flag | a3484bbb2f5a047d96a2c8d1f1355a6fa917498d | PR
+- hermes/kiber-40-production-url-registry | 00c73548d235b33fc6d76fdc77e4587ce76b5f34 | PR #10 closed merged=False
+- hermes/kiber-42-44-price-decision-pack | 479f80ba9804149b9fa280e03746ff815d72625b | PR #14 closed merged=False
+- hermes/kiber-42-robot-price-schema | 5a1de7db25ec2c24a405434aa3a5fa401dff6153 | PR #11 closed merged=False
+- hermes/kiber-51-production-seo-audit | e0f173758bb17f9e7a083c266a7f6dc912b14fb0 | PR #12 closed merged=False
+
+retain_main
+- main | f13efdc7ac00c50bcb975bcec9504a63af936cba | PR
+
+ПРИЛОЖЕНИЕ B. ЛОКАЛЬНЫЕ ИМЕНА БЕЗ REMOTE BRANCH
+backup/pr73-before-main-reconcile-20260907-a0a6313 | a0a631332534385fecb270e88417935c2367a120 | commit in remote-head history=True | $PROJECTS/kiber-portal-pr8/.git
+feat/compilation-humanoids-researched | deedab9277859ec56589820bbcc85cb108be5f5f | commit in remote-head history=True | $PROJECTS/kiber-portal-pr8/.git
+feat/launch-navigation | b45a33496125a8e3b23f030aa0e9cd3c923d21f5 | commit in remote-head history=True | $PROJECTS/kiber-portal-pr8/.git
+fix/article-style-unification | 2affad0953c556b957ae6385143e6adb302dc0a5 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+fix/article2-gosha-feedback | f4214ea57ae1589c63590d2172beee300be7ebd1 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+fix/article6-owner-feedback | 2a67afe67619ff9310dad8ab51b5f3cfaa461594 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+hermes/kiber-55-robot-content-approval | 9af0cfc9897da0d59da87686061aa247c4dc3da1 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+hermes/kiber-88-reference-visual-layer-pass1 | c9fe6a0a80fadb9a6a54d3c68b670ff263ff8fe2 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+hermes/kiber-89-business-approvals-content-pack | 351b3f269fb6d3a3b9c7f6de19d1007ea1c3f689 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+hermes/kiber-robot-cards-launch-ready-20260906 | 821e8a2cb9b1904682f8dba25e4c37f549da416d | commit in remote-head history=True | $PROJECTS/kiber-portal-pr8/.git
+hermes/select-next-safe-task | d7cebdf24ca3e1656c9684cde27de639a8cf59a0 | commit in remote-head history=True | $PROJECTS/kiber-portal-pr8/.git
+staging/kiber-articles-1-2-3-review-20260909 | 05e6a5063f500f85474994e0cce8fca4def78093 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+staging/kiber-articles-2-3-review-20260909 | 7ffd142c4fab121e9a68f6814107b5ca70c07c90 | commit in remote-head history=False | $PROJECTS/kiber-portal-pr8/.git
+pr-8-tmp | a4031c2161699745b4861a79f8994afe9a19e0bb | commit in remote-head history=True | $PROJECTS/kiber-portal/.git
+
+ПРИЛОЖЕНИЕ C. ЛОКАЛЬНЫЕ РАБОЧИЕ ПАПКИ
+$PROJECTS/kiber-ui-production | branch=detached | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-dogs-composition-production | branch=detached | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-robot-breadcrumbs | branch=fix/robot-breadcrumb-names | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-audit-remediation | branch=main | changed=119 | untracked=38569 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-release-consolidation | branch=fix/accepted-release-consolidation | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-article-related-fix | branch=fix/article-related-current-blocks | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-hero-type-review | branch=preview/hero-type-review | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-portal-robot-cards-launch-20260906 | branch=hermes/kiber-robot-cards-launch-ready-20260906 | changed=10 | untracked=585 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-launch-navigation | branch=feat/launch-navigation | changed=0 | untracked=5 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-dogs-final-production | branch=fix/dogs-mobile-and-card-links | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-portal-k32 | branch=hermes/kiber-32-commercial-components-mvp | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal/.git
+$PROJECTS/kiber-portal-main-after-pr71-20260906 | branch=detached | changed=1 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-portal-site | branch=main | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-site/.git
+$PROJECTS/kiber-jino-preparation | branch=feat/jino-hosting-preparation | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-compilation-humanoids | branch=feat/compilation-humanoids-researched | changed=0 | untracked=25 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-main-verified-candidate | branch=docs/jino-main-production-release | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-analytics-v4 | branch=feat/analytics-three-modes | changed=0 | untracked=2 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-portal | branch=hermes/kiber-42-44-price-decision-pack | changed=9 | untracked=1266 | common=$PROJECTS/kiber-portal/.git
+$PROJECTS/kiber-api-runtime | branch=fix/humanoid-video-csp | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-dogs-preview | branch=feat/robot-dogs-seven-page-preview | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-article6-feedback | branch=fix/article6-owner-feedback | changed=0 | untracked=4 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-robot-card-remediation | branch=fix/robot-card-content-remediation | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-metrica-consent | branch=feat/basic-metrica-optional-webvisor | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-portal-pr8 | branch=feat/kiber-article-how-humanoid-works-20260909 | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-hero-full-preview | branch=preview/hero-full-site | changed=0 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-analytics-v4-production | branch=detached | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-article-style-unification | branch=fix/article-style-unification | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-metrica-split-production | branch=detached | changed=0 | untracked=0 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-cookie-consent | branch=feat/shared-cookie-consent | changed=30 | untracked=1 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-article2-feedback | branch=fix/article2-gosha-feedback | changed=0 | untracked=5 | common=$PROJECTS/kiber-portal-pr8/.git
+$PROJECTS/kiber-canonical-release | branch=feat/canonical-approved-release | changed=0 | untracked=56 | common=$PROJECTS/kiber-portal-pr8/.git
+
+ПРИЛОЖЕНИЕ D. КАНДИДАТЫ ДЛЯ СОХРАНЕНИЯ (НЕ СПИСОК АВТОПУБЛИКАЦИИ)
+data/content/compilation-exhibition.json | 43002 bytes | raw blob in remote history=False
+data/content/compilation-forum-conference.json | 46859 bytes | raw blob in remote history=False
+data/content/compilation-promoters.json | 38961 bytes | raw blob in remote history=False
+data/content/compilation-unitree.json | 41457 bytes | raw blob in remote history=False
+data/content/published-articles.json | 17799 bytes | raw blob in remote history=False
+data/content/related-compilation-selections.json | 13818 bytes | raw blob in remote history=False
+data/content/robot-card-p1-overrides.json | 23235 bytes | raw blob in remote history=False
+data/media/robot-original-galleries.json | 68916 bytes | raw blob in remote history=False
+data/seo/imports/yandex-direct-export-from-google.xlsx | 27009359 bytes | raw blob in remote history=False
+data/seo/query-research/ad-export-normalized.csv | 49931 bytes | raw blob in remote history=False
+data/seo/query-research/ad-export-normalized.json | 104572 bytes | raw blob in remote history=False
+data/seo/query-research/ad-export-query-bank-classified.csv | 1342442 bytes | raw blob in remote history=False
+data/seo/query-research/ad-export-query-bank-classified.json | 3495722 bytes | raw blob in remote history=False
+data/seo/query-research/ad-export-query-bank-raw.json | 2495568 bytes | raw blob in remote history=False
+data/seo/query-research/ad-export-route-demand-summary.json | 40933 bytes | raw blob in remote history=False
+data/seo/release-events.json | 12562 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/COMBINED-README.md | 14269 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/README.md | 13067 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/bellabot-на-мероприятие-803e67__model_expanded.wordstat.json | 1432 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/clipmaker-робот-4c4238__video_expanded.wordstat.json | 1362 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/glambot-на-мероприятие-a52fb6__video_expanded.wordstat.json | 1441 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/kettybot-на-мероприятие-aa19aa__model_expanded.wordstat.json | 1432 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/promobot-для-выставки-e49661__model_expanded.wordstat.json | 1412 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/promobot-на-мероприятие-8aec86__model_expanded.wordstat.json | 1432 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/sense-robot-на-мероприятие-296628__model_expanded.wordstat.json | 1443 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/sketchbot-на-мероприятие-5243b5__artist_expanded.wordstat.json | 1444 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-g1-для-выставки-ba1193__unitree_expanded.wordstat.json | 1427 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-g1-на-мероприятие-0a53d9__unitree_expanded.wordstat.json | 1447 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-go2-для-детей-22a5c9__unitree_expanded.wordstat.json | 1400 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-go2-на-мероприятие-e87319__unitree_expanded.wordstat.json | 1450 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-r1-шоу-af73ad__unitree_expanded.wordstat.json | 1342 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-для-выставки-16f4d4__unitree_expanded.wordstat.json | 1418 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/unitree-робот-шоу-624a75__unitree_expanded.wordstat.json | 1386 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/uv-box-на-выставку-6c06c5__model_expanded.wordstat.json | 1398 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/андроид-на-мероприятие-3fdcb1__humanoid_expanded.wordstat.json | 1490 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/аренда-робота-на-мероприятие-e44c97__home_broad_expanded.wordstat.json | 1852 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/аренда-роботов-для-выставки-53b003__exhibition_expanded.wordstat.json | 1539 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/аренда-роботов-москва-0052d9__home_broad_expanded.wordstat.json | 1904 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/взять-unitree-в-аренду-668772__unitree_expanded.wordstat.json | 1431 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/взять-робота-гуманоида-в-аренду-87ef7b__humanoid_expanded.wordstat.json | 1568 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/взять-робота-на-мероприятие-687584__home_broad_expanded.wordstat.json | 1518 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/взять-робота-официанта-в-аренду-d85eb7__waiter_expanded.wordstat.json | 1567 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/взять-робота-промоутера-в-аренду-95a92b__promoter_expanded.wordstat.json | 1579 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/взять-робота-собаку-в-аренду-432307__dog_expanded.wordstat.json | 1530 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/выставка-роботов-для-детей-8d61ca__noise_probe_expanded.wordstat.json | 2094 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/глэмбот-на-мероприятие-aee82c__video_expanded.wordstat.json | 1490 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/гуманоидный-робот-на-мероприятие-b4738f__humanoid_expanded.wordstat.json | 1583 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-unitree-348e63__unitree_expanded.wordstat.json | 1381 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-4e5375__home_broad_expanded.wordstat.json | 19865 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-гуманоида-b4e4f4__humanoid_expanded.wordstat.json | 2063 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-на-выставку-745c7d__exhibition_expanded.wordstat.json | 1539 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-официанта-d2e862__waiter_expanded.wordstat.json | 1519 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-промоутера-3be2b4__promoter_expanded.wordstat.json | 1529 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-собаку-4bb653__dog_expanded.wordstat.json | 2210 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/заказать-робота-художника-40641a__artist_expanded.wordstat.json | 1517 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/интерактивное-шоу-роботов-8e7ba2__noise_probe_expanded.wordstat.json | 1526 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/интерактивный-робот-для-выставки-74f994__exhibition_expanded.wordstat.json | 1589 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/интерактивный-робот-на-мероприятие-3f63cd__home_broad_expanded.wordstat.json | 1588 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/промо-робот-на-выставку-8d05f6__promoter_expanded.wordstat.json | 1494 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робо-кофейня-на-мероприятие-87d01a__model_expanded.wordstat.json | 1523 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робопес-заказать-4dd6a0__dog_expanded.wordstat.json | 1425 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робопес-на-мероприятие-3a50a2__dog_expanded.wordstat.json | 1480 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робособака-для-детей-d054a9__dog_expanded.wordstat.json | 2090 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робособака-на-мероприятие-e5ced9__dog_expanded.wordstat.json | 1510 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-ardi-на-мероприятие-bdff28__model_expanded.wordstat.json | 1475 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-tron-на-мероприятие-f10028__model_expanded.wordstat.json | 1475 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-unitree-на-мероприятие-0e2c1d__unitree_expanded.wordstat.json | 1491 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-бамблби-на-праздник-61d97e__noise_probe_expanded.wordstat.json | 1519 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-бармен-на-мероприятие-a50e8c__model_expanded.wordstat.json | 1523 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-в-аренду-на-мероприятие-14df3e__home_broad_expanded.wordstat.json | 1680 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-ведущий-на-мероприятие-b26e42__humanoid_expanded.wordstat.json | 1543 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-встречает-гостей-a6adc2__home_broad_expanded.wordstat.json | 1604 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-гоша-заказать-747e90__humanoid_expanded.wordstat.json | 1458 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-гоша-на-мероприятие-39c7da__humanoid_expanded.wordstat.json | 1513 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-гуманоид-для-выставки-7a1e91__humanoid_expanded.wordstat.json | 1533 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-гуманоид-для-гостей-ffc019__humanoid_expanded.wordstat.json | 1513 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-гуманоид-на-мероприятие-27b1e7__humanoid_expanded.wordstat.json | 1553 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-reels-6111b4__video_expanded.wordstat.json | 1385 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-welcome-зоны-5b9cb4__registration_expanded.wordstat.json | 1485 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-бейджей-d5329b__registration_expanded.wordstat.json | 1491 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-выставочного-стенда-7b194b__exhibition_expanded.wordstat.json | 1559 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-гостей-7f57f8__home_broad_expanded.wordstat.json | 1544 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-детей-085923__noise_probe_expanded.wordstat.json | 19463 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-ивента-4302ef__home_broad_expanded.wordstat.json | 1413 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-контента-84536d__video_expanded.wordstat.json | 1452 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-конференции-76e9d5__exhibition_expanded.wordstat.json | 1486 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-конференции-регистрация-aa6e3e__registration_expanded.wordstat.json | 1644 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-корпоратива-2abc00__home_broad_expanded.wordstat.json | 1463 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-лидогенерации-783c93__promoter_expanded.wordstat.json | 1499 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-мероприятия-79b355__home_broad_expanded.wordstat.json | 1582 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-мытья-окон-видео-c2350a__noise_probe_expanded.wordstat.json | 4522 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-открытия-мероприятия-8a074a__seasonal_expanded.wordstat.json | 1553 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-посетителей-выставки-5d14cb__exhibition_expanded.wordstat.json | 1569 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-праздника-616e66__home_broad_expanded.wordstat.json | 1558 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-презентации-0997c1__exhibition_expanded.wordstat.json | 2512 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-привлечения-внимания-на-выставке-ebcd77__exhibition_expanded.wordstat.json | 1679 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-привлечения-клиентов-5d443b__promoter_expanded.wordstat.json | 1564 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-промо-стенда-3ec95f__exhibition_expanded.wordstat.json | 1489 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-раздачи-рекламы-580e47__promoter_expanded.wordstat.json | 1514 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-рилс-09faca__video_expanded.wordstat.json | 1410 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-рисования-портретов-34f39e__artist_expanded.wordstat.json | 1552 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-съ-мки-видео-1fa435__video_expanded.wordstat.json | 1487 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-тик-ток-eb1a7c__video_expanded.wordstat.json | 1437 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-для-форума-fb8b04__exhibition_expanded.wordstat.json | 2833 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-зазывала-на-мероприятие-5b9ae5__promoter_expanded.wordstat.json | 1554 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-камера-на-мероприятие-5b16bb__video_expanded.wordstat.json | 1535 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-клипмейкер-на-мероприятие-67fa24__video_expanded.wordstat.json | 1575 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-1-сентября-d98e6d__seasonal_expanded.wordstat.json | 1440 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-welcome-зону-0ac851__registration_expanded.wordstat.json | 1475 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-выпускной-в-вузе-5e3ced__seasonal_expanded.wordstat.json | 1498 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-выпускной-в-школе-a37b98__seasonal_expanded.wordstat.json | 1508 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-день-города-fe3cce__seasonal_expanded.wordstat.json | 1455 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-детский-праздник-c993f5__seasonal_expanded.wordstat.json | 1505 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-ивент-6a398b__home_broad_expanded.wordstat.json | 1395 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-новогодний-утренник-609c08__seasonal_expanded.wordstat.json | 1533 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-новый-год-f7dd00__seasonal_expanded.wordstat.json | 3963 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-праздник-63f4b4__home_broad_expanded.wordstat.json | 1880 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-презентацию-продукта-07c0f8__seasonal_expanded.wordstat.json | 1543 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-ресепшн-709d60__registration_expanded.wordstat.json | 1479 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-свадьбу-6bca7d__seasonal_expanded.wordstat.json | 1734 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-стенд-94b934__exhibition_expanded.wordstat.json | 1416 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-форум-470ab0__exhibition_expanded.wordstat.json | 2187 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-школьный-праздник-d1d7d7__seasonal_expanded.wordstat.json | 1513 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-на-юбилей-75ebec__seasonal_expanded.wordstat.json | 1408 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-общается-с-гостями-e17e5b__humanoid_expanded.wordstat.json | 1503 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-bellabot-615d96__waiter_expanded.wordstat.json | 1699 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-kettybot-3bafce__waiter_expanded.wordstat.json | 1441 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-для-банкета-1e8875__waiter_expanded.wordstat.json | 1522 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-для-гостей-6104f5__waiter_expanded.wordstat.json | 1512 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-для-кейтеринга-2a07a4__waiter_expanded.wordstat.json | 1552 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-на-выставку-73637b__waiter_expanded.wordstat.json | 1522 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-на-праздник-962ad5__waiter_expanded.wordstat.json | 1522 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-официант-цена-аренды-aafdc7__waiter_expanded.wordstat.json | 1522 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-печатает-бейджи-e93c12__registration_expanded.wordstat.json | 1529 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-помощник-на-конференции-0b4434__registration_expanded.wordstat.json | 1604 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-портретист-на-мероприятие-0911f9__artist_expanded.wordstat.json | 1572 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-промоутер-для-гостей-4aa951__promoter_expanded.wordstat.json | 1524 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-промоутер-для-стенда-5ddb79__promoter_expanded.wordstat.json | 1524 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-пылесос-для-роликов-900e44__noise_probe_expanded.wordstat.json | 3169 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-рисует-гостей-2904bd__artist_expanded.wordstat.json | 1461 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-рисует-портрет-на-мероприятии-6b0fbc__artist_expanded.wordstat.json | 1607 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-снимает-видео-f97a6c__video_expanded.wordstat.json | 2713 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-собака-unitree-на-мероприятие-f22107__dog_expanded.wordstat.json | 1551 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-собака-для-детей-d382d0__dog_expanded.wordstat.json | 3372 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-собака-для-мероприятия-4a1afa__dog_expanded.wordstat.json | 1535 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-собака-на-выставку-1f4297__dog_expanded.wordstat.json | 1497 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-собака-на-праздник-61e69e__dog_expanded.wordstat.json | 1495 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-собака-танцует-e0e562__dog_expanded.wordstat.json | 1891 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-софия-на-конференцию-8899b7__model_expanded.wordstat.json | 1513 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-софия-на-мероприятие-f43627__model_expanded.wordstat.json | 1513 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-трансформер-на-праздник-37b95f__noise_probe_expanded.wordstat.json | 1559 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-художник-для-гостей-dcb26b__artist_expanded.wordstat.json | 1512 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-художник-на-выставку-63cbd8__artist_expanded.wordstat.json | 1522 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-художник-на-мероприятие-e0f54a__artist_expanded.wordstat.json | 1552 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-шахматист-на-мероприятие-4407d2__model_expanded.wordstat.json | 1553 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робот-шоу-0b0711__noise_probe_expanded.wordstat.json | 14926 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/роботы-в-аренду-d50b1a__home_broad_expanded.wordstat.json | 4922 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/роботы-для-детей-шоу-2f5922__noise_probe_expanded.wordstat.json | 1471 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/роботы-для-мероприятий-fc9335__home_broad_expanded.wordstat.json | 1592 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/робошашки-на-мероприятие-fb91f2__model_expanded.wordstat.json | 1498 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/скетчбот-на-мероприятие-d2f068__artist_expanded.wordstat.json | 1497 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/человекоподобный-робот-на-мероприятие-800040__humanoid_expanded.wordstat.json | 1633 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/шоу-роботов-01edee__noise_probe_expanded.wordstat.json | 14946 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-expanded/шоу-роботов-на-мероприятие-31578b__home_broad_expanded.wordstat.json | 1508 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/аренда-робота-на-праздник-d9fa0f__holiday_compilation.wordstat.json | 1519 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/заказать-робота-на-праздник-64cd59__holiday_compilation.wordstat.json | 1537 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-для-мероприятия-праздник-5edf68__holiday_compilation.wordstat.json | 1567 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-для-праздника-616e66__holiday_compilation.wordstat.json | 1577 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-23-февраля-dff1f5__holiday_compilation.wordstat.json | 1443 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-8-марта-e3a509__holiday_compilation.wordstat.json | 1420 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-выпускной-fd011b__holiday_compilation.wordstat.json | 1454 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-день-рождения-d1c460__holiday_compilation.wordstat.json | 4281 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-корпоратив-5d7870__holiday_compilation.wordstat.json | 1462 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-новый-год-f7dd00__holiday_compilation.wordstat.json | 3977 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-праздник-63f4b4__holiday_compilation.wordstat.json | 1899 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-свадьбу-6bca7d__holiday_compilation.wordstat.json | 1748 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/робот-на-хэллоуин-11e176__holiday_compilation.wordstat.json | 1597 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/роботы-для-детского-праздника-e6c18f__holiday_compilation.wordstat.json | 1557 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/роботы-для-праздника-d7adb1__holiday_compilation.wordstat.json | 1587 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/роботы-на-новый-год-5bd19b__holiday_compilation.wordstat.json | 3987 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/роботы-на-праздник-2c4af8__holiday_compilation.wordstat.json | 1909 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw-holiday-compilation/шоу-роботов-на-праздник-1f6963__holiday_compilation.wordstat.json | 1497 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/bellabot-аренда-96f11d__waiter.wordstat.json | 1385 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/glambot-аренда-d36fb4__video_clip.wordstat.json | 1397 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/kettybot-аренда-88eeb7__waiter.wordstat.json | 1385 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/promobot-аренда-11853b__models.wordstat.json | 1368 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/robot-clipmaker-аренда-abd768__video_clip.wordstat.json | 1423 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/sense-robot-аренда-4a8760__models.wordstat.json | 1379 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/sketchbot-аренда-64b7a0__artist.wordstat.json | 1388 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/unitree-g1-аренда-c76cdc__unitree_family.wordstat.json | 1400 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/unitree-go2-аренда-3dd2fd__robot_dog.wordstat.json | 1403 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/unitree-r1-аренда-1eb3c9__unitree_family.wordstat.json | 1398 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/unitree-робот-аренда-1a86f8__unitree_family.wordstat.json | 1444 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/uv-box-аренда-1537e0__models.wordstat.json | 1364 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/vr-аттракционы-2af3a5__noise_control.wordstat.json | 6671 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/vr-в-аренду-12bab1__home_broad.wordstat.json | 2064 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/андроид-робот-аренда-dc7b75__humanoid.wordstat.json | 1495 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аниматор-робот-b85179__birthday_animator.wordstat.json | 3515 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аниматоры-роботы-ef56c1__birthday_animator.wordstat.json | 3535 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/антропоморфный-робот-аренда-32fa5f__humanoid.wordstat.json | 1565 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-glambot-f07ed2__video_clip.wordstat.json | 1397 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-promobot-4f2c82__models.wordstat.json | 1368 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-unitree-9a4c9d__unitree_family.wordstat.json | 1466 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-unitree-москва-ad80dc__unitree_family.wordstat.json | 1452 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-аттракционов-москва-7a64c2__home_broad.wordstat.json | 1884 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-промо-роботов-52da53__promoter.wordstat.json | 1488 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робопса-765e04__robot_dog.wordstat.json | 1437 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робособаки-d66b00__robot_dog.wordstat.json | 1699 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робособаки-unitree-c52624__robot_dog.wordstat.json | 1494 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-ardi-21e545__models.wordstat.json | 1421 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-b209f8__home_broad.wordstat.json | 9943 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-tron-765da4__models.wordstat.json | 1421 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-unitree-1fa4a9__unitree_family.wordstat.json | 1454 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-гуманоида-b3460d__humanoid.wordstat.json | 1651 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-гуманоида-c6a694__humanoid.wordstat.json | 1649 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-для-выставки-acd261__exhibition.wordstat.json | 1564 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-официанта-4efbbe__waiter.wordstat.json | 1643 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-промоутера-4be3b3__promoter.wordstat.json | 1528 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-собаки-94e75d__robot_dog.wordstat.json | 1607 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-софия-0c3762__models.wordstat.json | 1459 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робота-художника-60dbc4__artist.wordstat.json | 1516 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-роботов-ebe462__home_broad.wordstat.json | 9953 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-роботов-для-мероприятий-e1a627__home_broad.wordstat.json | 1570 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-роботов-на-мероприятие-22e8f7__home_broad.wordstat.json | 1881 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-робошашки-998271__models.wordstat.json | 1434 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/аренда-сервисных-роботов-32ac63__waiter.wordstat.json | 1526 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/взять-робота-в-аренду-59f4e3__home_broad.wordstat.json | 2495 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/видео-робот-на-мероприятие-ecc712__video_clip.wordstat.json | 1558 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-61b90d__exhibition.wordstat.json | 16459 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-благовещенск-38ab19__exhibition.wordstat.json | 1599 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-екатеринбург-2025-2a32a6__exhibition.wordstat.json | 1615 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-екатеринбург-2025-гринвич-896951__exhibition.wordstat.json | 1690 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-на-вднх-9ed043__exhibition.wordstat.json | 2339 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-нижний-новгород-661e9c__exhibition.wordstat.json | 4944 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/выставка-роботов-псков-4d6961__exhibition.wordstat.json | 1513 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/глэмбот-аренда-cc45ab__video_clip.wordstat.json | 1446 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/гуманоид-unitree-москва-аренда-997d90__humanoid.wordstat.json | 1540 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/гуманоидный-робот-аренда-3a3915__humanoid.wordstat.json | 1535 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/заказать-робота-на-день-рождения-272a8b__birthday_animator.wordstat.json | 1778 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/заказать-робота-на-мероприятие-c772f5__home_broad.wordstat.json | 1568 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/заказать-шоу-робота-на-день-рождения-ребенку-a37dbe__birthday_animator.wordstat.json | 1729 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/интерактив-на-выставку-9b3fda__exhibition.wordstat.json | 1655 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/купить-робота-собаку-84c4e9__noise_control.wordstat.json | 13310 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/про-интерактив-30a7ef__noise_control.wordstat.json | 3845 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/прокат-роботов-219069__home_broad.wordstat.json | 2430 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/промо-робот-e6d0fa__promoter.wordstat.json | 1488 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/промо-робот-аренда-aac2ba__promoter.wordstat.json | 1468 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робо-кофейня-аренда-d17d30__models.wordstat.json | 1459 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робопес-аренда-ef8d6e__robot_dog.wordstat.json | 1438 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робособака-68dd96__robot_dog.wordstat.json | 15221 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робособака-unitree-аренда-59703c__robot_dog.wordstat.json | 1494 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робособака-unitree-аренда-мероприятие-752481__robot_dog.wordstat.json | 1608 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робособака-аренда-0f1629__robot_dog.wordstat.json | 1699 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робособака-в-аренду-8a6edf__robot_dog.wordstat.json | 1589 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-аниматор-8263f9__birthday_animator.wordstat.json | 3515 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-бармен-аренда-327150__models.wordstat.json | 1459 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-в-аренду-6d53fe__home_broad.wordstat.json | 4931 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-гоша-аренда-b5b940__humanoid.wordstat.json | 1465 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-гуманоид-аренда-cde08d__humanoid.wordstat.json | 1631 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-гуманоид-в-аренду-0b2ff8__humanoid.wordstat.json | 1644 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-выставки-b5320b__exhibition.wordstat.json | 2186 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-записи-видео-d6f1b6__video_clip.wordstat.json | 1516 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-презентации-продукта-541038__exhibition.wordstat.json | 1603 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-промо-акции-aeb210__promoter.wordstat.json | 1493 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-раздачи-листовок-aa954a__promoter.wordstat.json | 1543 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-регистрации-гостей-a7d311__events_articles.wordstat.json | 1547 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-роликов-daa69e__video_clip.wordstat.json | 3692 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-стенда-4255e9__exhibition.wordstat.json | 1471 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-для-съемки-видео-ccac6f__video_clip.wordstat.json | 1518 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-зазывала-b60608__promoter.wordstat.json | 1433 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-клипмейкер-540263__video_clip.wordstat.json | 1466 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-мойщик-окон-аренда-b697f7__noise_control.wordstat.json | 3561 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-23-февраля-dff1f5__events_articles.wordstat.json | 1443 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-8-марта-e3a509__events_articles.wordstat.json | 1420 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-выпускной-fd011b__events_articles.wordstat.json | 1454 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-выставку-e2b137__exhibition.wordstat.json | 6355 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-день-рождения-d1c460__birthday_animator.wordstat.json | 4318 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-конференцию-959c5e__events_articles.wordstat.json | 1995 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-корпоратив-5d7870__events_articles.wordstat.json | 1462 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-мероприятие-f2584f__home_broad.wordstat.json | 1933 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-новогодний-корпоратив-6f5cf1__events_articles.wordstat.json | 1567 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-презентацию-00edd6__events_articles.wordstat.json | 4811 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-прокат-fc4b02__home_broad.wordstat.json | 1994 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-на-хэллоуин-11e176__events_articles.wordstat.json | 1597 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-официант-аренда-4cc4c6__waiter.wordstat.json | 1623 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-официант-для-ресторана-523c9a__waiter.wordstat.json | 1561 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-официант-на-мероприятие-54d6bc__waiter.wordstat.json | 1571 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-портретист-аренда-22184d__artist.wordstat.json | 1516 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-промоутер-7052c9__promoter.wordstat.json | 1848 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-промоутер-аренда-7b70ab__promoter.wordstat.json | 1508 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-промоутер-на-выставку-a10b04__exhibition.wordstat.json | 1573 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-пылесос-аренда-dde19a__noise_control.wordstat.json | 2658 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-рисует-портрет-e16ed6__artist.wordstat.json | 1688 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-собака-аренда-7daf9f__robot_dog.wordstat.json | 1597 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-собака-в-аренду-4ee858__robot_dog.wordstat.json | 1614 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-собака-на-мероприятие-d1bfaf__robot_dog.wordstat.json | 1558 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-софия-аренда-1ca0d2__models.wordstat.json | 1449 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-художник-аренда-94fe15__artist.wordstat.json | 1496 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/робот-шахматист-аренда-3768cc__models.wordstat.json | 1608 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/роботы-аниматоры-9ed129__birthday_animator.wordstat.json | 3535 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/роботы-для-выставки-288e51__exhibition.wordstat.json | 2196 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/роботы-на-мероприятие-fa60a8__home_broad.wordstat.json | 1943 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/роботы-промоутеры-b5f5f1__promoter.wordstat.json | 1868 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/скетчбот-аренда-47aec7__artist.wordstat.json | 1441 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/человекоподобный-робот-аренда-90eb21__humanoid.wordstat.json | 1585 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/шоу-роботов-на-день-рождения-93368d__birthday_animator.wordstat.json | 1579 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/raw/юнитри-робот-аренда-79fff7__unitree_family.wordstat.json | 1481 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/wordstat-cluster-summary.json | 66533 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/wordstat-combined-summary.json | 149979 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/wordstat-expanded-plan.csv | 18060 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/wordstat-expanded-plan.json | 46657 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/wordstat-plan.csv | 15337 bytes | raw blob in remote history=False
+data/seo/wordstat-research/kiber-demand-map-2026-09-18/wordstat-plan.json | 42313 bytes | raw blob in remote history=False
+data/seo/working-key-map/SOURCE-MAP.md | 5109 bytes | raw blob in remote history=False
+data/seo/working-key-map/seo-key-map.table.csv | 1034614 bytes | raw blob in remote history=False
+data/seo/working-key-map/seo-key-map.table.json | 1411691 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/ARTICLE_WORKFLOW.md | 6424 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/COMPILATION_WORKFLOW.md | 1969 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/CURRENT_PROJECT_STATE.md | 2490 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/GSC_LONG_TAIL_LAYER.md | 7644 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/README.md | 2520 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/REPORT_TEMPLATE.md | 484 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/STATIC_REVIEW_REPORTS.md | 2247 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/TASK_PROTOCOL.md | 5256 bytes | raw blob in remote history=False
+docs/agent-handoffs/kiber-copywriter/TELEGRAM_SETUP.md | 3280 bytes | raw blob in remote history=False
+docs/approvals/README.md | 1226 bytes | raw blob in remote history=False
+docs/approvals/arenda-agibot-x2-2026-09-18.json | 1543 bytes | raw blob in remote history=False
+docs/approvals/arenda-agibot-x2-2026-09-18.md | 770 bytes | raw blob in remote history=False
+docs/approvals/arenda-inchbot-l1-w-edu-2026-09-28.json | 8139 bytes | raw blob in remote history=False
+docs/approvals/arenda-inchbot-l1-w-edu-2026-09-28.md | 1936 bytes | raw blob in remote history=False
+docs/approvals/arenda-inchbot-l1-w-edu-docx-2026-10-01.json | 8162 bytes | raw blob in remote history=False
+docs/approvals/arenda-inchbot-l1-w-edu-docx-2026-10-01.md | 1156 bytes | raw blob in remote history=False
+docs/approvals/arenda-noetix-bumi-2026-09-18.json | 1555 bytes | raw blob in remote history=False
+docs/approvals/arenda-noetix-bumi-2026-09-18.md | 776 bytes | raw blob in remote history=False
+docs/approvals/arenda-noetix-bumi-docx-2026-09-29.json | 13938 bytes | raw blob in remote history=False
+docs/approvals/arenda-noetix-bumi-docx-2026-09-29.md | 863 bytes | raw blob in remote history=False
+docs/approvals/arenda-promobot-v4-2026-09-28.json | 8893 bytes | raw blob in remote history=False
+docs/approvals/arenda-promobot-v4-2026-09-28.md | 1870 bytes | raw blob in remote history=False
+docs/approvals/arenda-promobot-v4-docx-2026-10-02.json | 7561 bytes | raw blob in remote history=False
+docs/approvals/arenda-promobot-v4-docx-2026-10-02.md | 1126 bytes | raw blob in remote history=False
+docs/approvals/arenda-roboshashki-2026-09-28.json | 8109 bytes | raw blob in remote history=False
+docs/approvals/arenda-roboshashki-2026-09-28.md | 1810 bytes | raw blob in remote history=False
+docs/approvals/arenda-robot-barmen-2026-09-28.json | 8486 bytes | raw blob in remote history=False
+docs/approvals/arenda-robot-barmen-2026-09-28.md | 1800 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-ardi-2026-09-18.json | 1553 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-ardi-2026-09-18.md | 784 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-ardi-docx-2026-09-30.json | 3809 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-ardi-docx-2026-09-30.md | 1266 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-sofiya-2026-09-18.json | 1573 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-sofiya-2026-09-18.md | 790 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-sofiya-docx-2026-09-30.json | 4183 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-sofiya-docx-2026-09-30.md | 1301 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-tron-2026-09-18.json | 1534 bytes | raw blob in remote history=False
+docs/approvals/arenda-robota-tron-2026-09-18.md | 765 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-g1-2026-09-18.json | 2130 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-g1-2026-09-18.md | 773 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-g1-accepted-ready-2026-09-29.json | 2617 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-g1-accepted-ready-2026-09-29.md | 3999 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-g1-docx-2026-09-28.json | 1357 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-go2-2026-09-28.json | 9162 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-go2-2026-09-28.md | 2164 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-go2-docx-2026-10-01.json | 4533 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-go2-docx-2026-10-01.md | 1171 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-h2-2026-09-18.json | 1541 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-h2-2026-09-18.md | 773 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.json | 2425 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.md | 1217 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-h2-price-update-2026-09-30.json | 968 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-r1-2026-09-18.json | 1544 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-r1-2026-09-18.md | 773 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-r1-docx-2026-09-29.json | 3137 bytes | raw blob in remote history=False
+docs/approvals/arenda-unitree-r1-docx-2026-09-29.md | 1062 bytes | raw blob in remote history=False
+docs/approvals/arenda-xiaomi-cyberdog-2-2026-09-28.json | 8726 bytes | raw blob in remote history=False
+docs/approvals/arenda-xiaomi-cyberdog-2-2026-09-28.md | 1956 bytes | raw blob in remote history=False
+docs/approvals/arenda-xiaomi-cyberdog-2-2026-10-01.json | 6401 bytes | raw blob in remote history=False
+docs/approvals/arenda-xiaomi-cyberdog-2-2026-10-01.md | 890 bytes | raw blob in remote history=False
+docs/approvals/blog-gosha-block-rules-2026-09-23.json | 1665 bytes | raw blob in remote history=False
+docs/approvals/blog-gosha-block-rules-2026-09-23.md | 831 bytes | raw blob in remote history=False
+docs/approvals/blog-gosha-homepage-selection-2026-09-23.json | 1880 bytes | raw blob in remote history=False
+docs/approvals/blog-gosha-homepage-selection-2026-09-23.md | 1010 bytes | raw blob in remote history=False
+docs/approvals/compilation-block-rules-2026-09-23.json | 2474 bytes | raw blob in remote history=False
+docs/approvals/compilation-block-rules-2026-09-23.md | 1291 bytes | raw blob in remote history=False
+docs/approvals/compilation-card-heading-pilot.json | 726 bytes | raw blob in remote history=False
+docs/approvals/compilation-card-headings-two-page-rollout.json | 1253 bytes | raw blob in remote history=False
+docs/approvals/compilation-card-style-and-relevance-rollout.json | 680 bytes | raw blob in remote history=False
+docs/approvals/homepage-targeted-seo-enrichment-2026-09-18.json | 1938 bytes | raw blob in remote history=False
+docs/approvals/homepage-targeted-seo-enrichment-2026-09-18.md | 1619 bytes | raw blob in remote history=False
+docs/approvals/humanoid-seven-accepted-2026-09-30.json | 99761 bytes | raw blob in remote history=False
+docs/approvals/humanoid-seven-accepted-2026-09-30.md | 2085 bytes | raw blob in remote history=False
+docs/approvals/next-release-additions-2026-09-28.json | 932 bytes | raw blob in remote history=False
+docs/approvals/owner-approvals.json | 157347 bytes | raw blob in remote history=False
+docs/approvals/production-release-2026-09-28.json | 2161 bytes | raw blob in remote history=False
+docs/approvals/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov-2026-09-25.json | 4015 bytes | raw blob in remote history=False
+docs/approvals/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov-2026-09-25.md | 2481 bytes | raw blob in remote history=False
+docs/approvals/robot-cta1-semantics-2026-09-29.json | 15130 bytes | raw blob in remote history=False
+docs/approvals/robot-cta1-semantics-2026-09-29.md | 4172 bytes | raw blob in remote history=False
+docs/approvals/robot-dlya-foruma-i-konferencii-2026-09-24.json | 3150 bytes | raw blob in remote history=False
+docs/approvals/robot-dlya-foruma-i-konferencii-2026-09-24.md | 1862 bytes | raw blob in remote history=False
+docs/approvals/robot-shahmatist-senserobot-na-meropriyatie-2026-09-28.json | 4015 bytes | raw blob in remote history=False
+docs/approvals/robot-shahmatist-senserobot-na-meropriyatie-2026-09-28.md | 1242 bytes | raw blob in remote history=False
+docs/approvals/robot-vstrechaet-gostey-na-meropriyatii-2026-09-25.json | 3656 bytes | raw blob in remote history=False
+docs/approvals/robot-vstrechaet-gostey-na-meropriyatii-2026-09-25.md | 1215 bytes | raw blob in remote history=False
+docs/approvals/roboty-dlya-vystavki-2026-09-21.json | 3279 bytes | raw blob in remote history=False
+docs/approvals/roboty-dlya-vystavki-2026-09-21.md | 2713 bytes | raw blob in remote history=False
+docs/approvals/roboty-gumanoidy-2026-09-24.json | 3562 bytes | raw blob in remote history=False
+docs/approvals/roboty-gumanoidy-2026-09-24.md | 2842 bytes | raw blob in remote history=False
+docs/approvals/roboty-promoutery-2026-09-22.json | 7401 bytes | raw blob in remote history=False
+docs/approvals/roboty-promoutery-2026-09-22.md | 1559 bytes | raw blob in remote history=False
+docs/approvals/roboty-sobaki-2026-09-23.json | 2719 bytes | raw blob in remote history=False
+docs/approvals/roboty-sobaki-2026-09-23.md | 1904 bytes | raw blob in remote history=False
+docs/approvals/roboty-unitree-2026-09-28.json | 10159 bytes | raw blob in remote history=False
+docs/approvals/roboty-unitree-2026-09-28.md | 1256 bytes | raw blob in remote history=False
+docs/contracts/amocrm-operations/README.md | 11806 bytes | raw blob in remote history=False
+docs/contracts/amocrm-operations/kiber-crm-ops-agent-plan.md | 4767 bytes | raw blob in remote history=False
+docs/contracts/amocrm-operations/linear-issue.json | 544 bytes | raw blob in remote history=False
+docs/contracts/amocrm-operations/sla-report-contract.md | 3925 bytes | raw blob in remote history=False
+docs/contracts/kiber-amocrm-manager-workflow.md | 26371 bytes | raw blob in remote history=False
+docs/contracts/kiber-amocrm-manager-workflow.txt | 22420 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-block-contract.md | 12662 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-editorial-angles-contract.md | 5827 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-media-contract.md | 12011 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-readiness-checklist.md | 10088 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-seo-contract.md | 4124 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-source-of-truth.json | 3132 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-source-of-truth.md | 7949 bytes | raw blob in remote history=False
+docs/contracts/kiber-article-style-contract.md | 5901 bytes | raw blob in remote history=False
+docs/contracts/kiber-blog-gosha-block-contract.md | 4298 bytes | raw blob in remote history=False
+docs/contracts/kiber-compilation-modular-contract.md | 24888 bytes | raw blob in remote history=False
+docs/contracts/kiber-related-compilations-block-contract.md | 8620 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-block-contract.md | 9642 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-media-contract.md | 8931 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-readiness-checklist.md | 6401 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-seo-contract.md | 4024 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-source-of-truth.json | 4208 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-source-of-truth.md | 4283 bytes | raw blob in remote history=False
+docs/contracts/kiber-robot-card-style-contract.md | 4423 bytes | raw blob in remote history=False
+docs/contracts/lead-reliability-deferral-2026-09-29.md | 2275 bytes | raw blob in remote history=False
+docs/contracts/yandex-webmaster-reporting.md | 2262 bytes | raw blob in remote history=False
+docs/deploy/production-static-review-reports.md | 1188 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-inchbot-l1-w-edu-2026-09-28.json | 8139 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-inchbot-l1-w-edu-2026-09-28.md | 1936 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-inchbot-l1-w-edu-docx-2026-10-01.json | 8162 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-inchbot-l1-w-edu-docx-2026-10-01.md | 1156 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-promobot-v4-2026-09-28.json | 8893 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-promobot-v4-2026-09-28.md | 1870 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-promobot-v4-docx-2026-10-02.json | 7561 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-promobot-v4-docx-2026-10-02.md | 1126 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-roboshashki-2026-09-28.json | 8109 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-roboshashki-2026-09-28.md | 1810 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-robot-barmen-2026-09-28.json | 8486 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-robot-barmen-2026-09-28.md | 1800 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-robota-ardi-docx-2026-09-30.json | 3809 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-robota-ardi-docx-2026-09-30.md | 1266 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-robota-sofiya-docx-2026-09-30.json | 4183 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-robota-sofiya-docx-2026-09-30.md | 1301 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-g1-accepted-ready-2026-09-29.json | 2617 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-g1-accepted-ready-2026-09-29.md | 3999 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-g1-docx-2026-09-28.json | 1357 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-go2-2026-09-28.json | 9162 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-go2-2026-09-28.md | 2164 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-go2-docx-2026-10-01.json | 4533 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-go2-docx-2026-10-01.md | 1171 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.json | 2425 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.md | 1217 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-h2-price-update-2026-09-30.json | 968 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-r1-docx-2026-09-29.json | 3137 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-unitree-r1-docx-2026-09-29.md | 1062 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-xiaomi-cyberdog-2-2026-09-28.json | 8726 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-xiaomi-cyberdog-2-2026-09-28.md | 1956 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-xiaomi-cyberdog-2-2026-10-01.json | 6401 bytes | raw blob in remote history=False
+public/docs/approvals/arenda-xiaomi-cyberdog-2-2026-10-01.md | 890 bytes | raw blob in remote history=False
+public/docs/approvals/humanoid-seven-accepted-2026-09-30.json | 99761 bytes | raw blob in remote history=False
+public/docs/approvals/humanoid-seven-accepted-2026-09-30.md | 2085 bytes | raw blob in remote history=False
+public/docs/approvals/owner-approvals.json | 157347 bytes | raw blob in remote history=False
+public/docs/review/cyberdog2-docx/revision.json | 1371 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/FINAL-REPORT.md | 5737 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/REPORT.md | 381 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/final-proof.json | 510 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/freeze.json | 3987 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/preservation.json | 66 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/reports-qa.json | 8629 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/acceptance/served-proof.json | 1701 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/audit/CHECKLIST.md | 130034 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/audit/SUMMARY.md | 11073 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/audit/checklist.csv | 125394 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/audit/checklist.json | 208982 bytes | raw blob in remote history=False
+public/docs/review/g1-docx-2026-09-28/acceptance-and-docx-recheck/audit/provenance.json | 612 bytes | raw blob in remote history=False
+public/docs/review/go2-docx/revision.json | 1062 bytes | raw blob in remote history=False
+public/docs/review/inchbot-docx/revision.json | 1105 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/FINAL-REPORT.md | 11735 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/FINAL-REPORT.md | 5799 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/decision.json | 1881 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/delivery-proof.json | 6695 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/final-proof.json | 28356 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/freeze.json | 31485 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/preservation-proof.json | 27675 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-four/reports-qa.json | 28666 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/FINAL-REPORT.md | 4434 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/decision.json | 1312 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/delivery-proof.json | 7641 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/final-build.json | 18129 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/final-proof.json | 36948 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/freeze.json | 17897 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/preservation-proof.json | 36322 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/qa-fourth-network-transient.json | 958877 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/qa-initial-network-transient.json | 931591 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/qa-second-network-transient.json | 946918 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/qa-third-navigation-network-transient.json | 807603 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/qa.json | 931681 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/reports-qa.json | 17356 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/served-proof.json | 16206 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/static-proof.json | 6157 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/acceptance-two/visual-inspection.json | 557 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/final-proof.json | 13821 bytes | raw blob in remote history=False
+public/docs/review/robot-p1-six-2026-09-28/media-blockers.json | 2129 bytes | raw blob in remote history=False
+public/docs/review/unitree-h2-nine-price-edits/continuation/revision.json | 8519 bytes | raw blob in remote history=False
+public/docs/review/unitree-h2-nine-price-edits/continuation/source-preservation.json | 308 bytes | raw blob in remote history=False
+public/docs/review/unitree-h2-nine-price-edits/continuation/strict-html-diff.json | 8242 bytes | raw blob in remote history=False
+public/styles/compilation-card-headings.css | 1380 bytes | raw blob in remote history=False
+public/styles/compilation-heading-pilot.css | 1389 bytes | raw blob in remote history=False
+scripts/amocrm_kiber_sla_report.py | 36631 bytes | raw blob in remote history=False
+scripts/avito_monitoring_report.py | 18400 bytes | raw blob in remote history=False
+scripts/blog-gosha-block-contract-smoke.mjs | 8631 bytes | raw blob in remote history=False
+scripts/compilation-block-contract-smoke.mjs | 3938 bytes | raw blob in remote history=False
+scripts/compilation-relevance-live-qa.mjs | 4136 bytes | raw blob in remote history=False
+scripts/refresh-static-review-reports.mjs | 29163 bytes | raw blob in remote history=False
+scripts/review-reports-smoke.mjs | 1731 bytes | raw blob in remote history=False
+scripts/seo_monitoring_report.py | 26003 bytes | raw blob in remote history=False
+scripts/test_seo_monitoring_yandex.py | 2726 bytes | raw blob in remote history=False
+scripts/tmp-demand-serp-retry.cjs | 1789 bytes | raw blob in remote history=False
+scripts/tmp-demand-serp.cjs | 1427 bytes | raw blob in remote history=False
+scripts/tmp-heading-category-parity.mjs | 1428 bytes | raw blob in remote history=False
+scripts/tmp-heading-pilot-qa.mjs | 1544 bytes | raw blob in remote history=False
+scripts/tmp-production-candidate-contract.mjs | 3979 bytes | raw blob in remote history=False
+scripts/tmp-production-live-cards-qa.mjs | 4708 bytes | raw blob in remote history=False
+scripts/tmp-wordstat-expansion.cjs | 1981 bytes | raw blob in remote history=False
+scripts/typograf-allowlist.json | 2309 bytes | raw blob in remote history=False
+scripts/typograf-content-audit.mjs | 7439 bytes | raw blob in remote history=False
+src/data/preview-page-status.generated.json | 333869 bytes | raw blob in remote history=False
+src/lib/compilation-card-heading-pilot.ts | 1162 bytes | raw blob in remote history=False
+src/lib/compilation-card-headings.ts | 1173 bytes | raw blob in remote history=False
+src/lib/kiber-article-cyberpunk-party-data.ts | 20813 bytes | raw blob in remote history=False
+src/lib/kiber-article-new-year-corporate-ideas-data.ts | 19328 bytes | raw blob in remote history=False
+src/lib/kiber-article-new-year-matinee-data.ts | 20980 bytes | raw blob in remote history=False
+src/lib/kiber-article-product-presentation-data.ts | 25819 bytes | raw blob in remote history=False
+src/lib/kiber-article-promobot-v4-data.ts | 20219 bytes | raw blob in remote history=False
+src/lib/kiber-article-registration-robot-data.ts | 21368 bytes | raw blob in remote history=False
+src/lib/kiber-article-robot-animator-birthday-data.ts | 20989 bytes | raw blob in remote history=False
+src/lib/kiber-article-robot-february-23-data.ts | 20359 bytes | raw blob in remote history=False
+src/lib/kiber-article-robot-graduation-data.ts | 19894 bytes | raw blob in remote history=False
+src/lib/kiber-article-robot-halloween-data.ts | 21052 bytes | raw blob in remote history=False
+src/lib/kiber-article-robot-march-8-data.ts | 19837 bytes | raw blob in remote history=False
+src/lib/kiber-article-robot-vstrechaet-gostey-data.ts | 21839 bytes | raw blob in remote history=False
+src/lib/kiber-article-senserobot-data.ts | 24325 bytes | raw blob in remote history=False
+src/lib/kiber-related-article-cards.ts | 2733 bytes | raw blob in remote history=False
+src/lib/kiber-release-related-articles.ts | 7468 bytes | raw blob in remote history=False
+src/lib/kiber-release-related-compilations.ts | 2791 bytes | raw blob in remote history=False
+src/lib/related-compilation-selection.ts | 1202 bytes | raw blob in remote history=False
+src/lib/robot-docx-editorial.ts | 4018 bytes | raw blob in remote history=False
+src/lib/robot-tile-price.ts | 575 bytes | raw blob in remote history=False
+src/pages/articles/novogodniy-korporativ-5-idey/index.astro | 3236 bytes | raw blob in remote history=False
+src/pages/articles/prezentaciya-produkta-idei-s-robotami/index.astro | 3716 bytes | raw blob in remote history=False
+src/pages/articles/robot-animator-na-den-rozhdeniya/index.astro | 3874 bytes | raw blob in remote history=False
+src/pages/articles/robot-dlya-registracii-gostey-i-bedzhey-na-konferencii/index.astro | 2358 bytes | raw blob in remote history=False
+src/pages/articles/robot-na-23-fevralya/index.astro | 3082 bytes | raw blob in remote history=False
+src/pages/articles/robot-na-8-marta/index.astro | 3049 bytes | raw blob in remote history=False
+src/pages/articles/robot-na-hellouin/index.astro | 3294 bytes | raw blob in remote history=False
+src/pages/articles/robot-na-novogodniy-utrennik-v-detskom-sadu-i-shkole/index.astro | 2823 bytes | raw blob in remote history=False
+src/pages/articles/robot-na-vypusknoy/index.astro | 3161 bytes | raw blob in remote history=False
+src/pages/articles/tematicheskaya-vecherinka-kiberpank/index.astro | 3730 bytes | raw blob in remote history=False
+src/pages/promobot-v4-robot-promouter-dlya-vystavok-i-korporativov/index.astro | 2324 bytes | raw blob in remote history=False
+src/pages/robot-dlya-foruma-i-konferencii.astro | 1372 bytes | raw blob in remote history=False
+src/pages/robot-shahmatist-senserobot-na-meropriyatie/index.astro | 2560 bytes | raw blob in remote history=False
+src/pages/robot-vstrechaet-gostey-na-meropriyatii/index.astro | 2367 bytes | raw blob in remote history=False
+src/pages/roboty-dlya-vystavki.astro | 1305 bytes | raw blob in remote history=False
+src/pages/roboty-promoutery.astro | 1710 bytes | raw blob in remote history=False
+src/pages/roboty-unitree.astro | 2459 bytes | raw blob in remote history=False
+tests/content/agibot-docx-local-browser.test.mjs | 1953 bytes | raw blob in remote history=False
+tests/content/agibot-docx-scoped-runtime.test.mjs | 8739 bytes | raw blob in remote history=False
+tests/content/agibot-docx-source.test.mjs | 5365 bytes | raw blob in remote history=False
+tests/content/agibot-seven-edits-browser.test.mjs | 1758 bytes | raw blob in remote history=False
+tests/content/agibot-seven-edits-rendered.test.mjs | 2541 bytes | raw blob in remote history=False
+tests/content/agibot-seven-edits-source.test.mjs | 2409 bytes | raw blob in remote history=False
+tests/content/ardi-docx-local-browser.test.mjs | 2478 bytes | raw blob in remote history=False
+tests/content/ardi-docx-runtime.test.mjs | 8476 bytes | raw blob in remote history=False
+tests/content/ardi-docx-source.test.py | 5613 bytes | raw blob in remote history=False
+tests/content/article-promobot-v4-featured.test.mjs | 1697 bytes | raw blob in remote history=False
+tests/content/article-promobot-v4-preservation.test.ts | 881 bytes | raw blob in remote history=False
+tests/content/article-promobot-v4-rendered.test.mjs | 1880 bytes | raw blob in remote history=False
+tests/content/article-promobot-v4.test.ts | 4487 bytes | raw blob in remote history=False
+tests/content/article-senserobot-owner-blocks.test.mjs | 1410 bytes | raw blob in remote history=False
+tests/content/article-senserobot.test.mjs | 2402 bytes | raw blob in remote history=False
+tests/content/article-welcome-owner-gallery-catalog.py | 2463 bytes | raw blob in remote history=False
+tests/content/brand-favicon.test.mjs | 1447 bytes | raw blob in remote history=False
+tests/content/compilation-forum-conference-rendered.test.mjs | 6163 bytes | raw blob in remote history=False
+tests/content/compilation-forum-conference.test.mjs | 5060 bytes | raw blob in remote history=False
+tests/content/compilation-humanoids-refinement.test.mjs | 326 bytes | raw blob in remote history=False
+tests/content/compilation-unitree-rendered.test.mjs | 2510 bytes | raw blob in remote history=False
+tests/content/compilation-unitree.test.mjs | 2535 bytes | raw blob in remote history=False
+tests/content/g1-docx-browser.test.mjs | 2327 bytes | raw blob in remote history=False
+tests/content/g1-docx-scoped-runtime.test.mjs | 8219 bytes | raw blob in remote history=False
+tests/content/next-release-approved-routes.test.mjs | 654 bytes | raw blob in remote history=False
+tests/content/noetix-bumi-docx-local-browser.test.mjs | 2469 bytes | raw blob in remote history=False
+tests/content/noetix-bumi-docx-preservation.test.ts | 2675 bytes | raw blob in remote history=False
+tests/content/noetix-bumi-docx-runtime.test.mjs | 7695 bytes | raw blob in remote history=False
+tests/content/noetix-bumi-docx-source.test.mjs | 2920 bytes | raw blob in remote history=False
+tests/content/review-legacy-new-accepted-route.test.mjs | 1325 bytes | raw blob in remote history=False
+tests/content/robot-dogs-owner-audit-20260923.test.ts | 1871 bytes | raw blob in remote history=False
+tests/content/sofiya-docx-local-browser.test.mjs | 2473 bytes | raw blob in remote history=False
+tests/content/sofiya-docx-runtime.test.mjs | 8119 bytes | raw blob in remote history=False
+tests/content/sofiya-docx-source.test.py | 4825 bytes | raw blob in remote history=False
+tests/content/typograf-content-audit.test.mjs | 1928 bytes | raw blob in remote history=False
+tests/content/unitree-h2-docx-local-browser.test.mjs | 2481 bytes | raw blob in remote history=False
+tests/content/unitree-h2-docx-runtime.test.mjs | 7683 bytes | raw blob in remote history=False
+tests/content/unitree-h2-docx-source.test.mjs | 3108 bytes | raw blob in remote history=False
+tests/content/unitree-r1-docx-local-browser.test.mjs | 2481 bytes | raw blob in remote history=False
+tests/content/unitree-r1-docx-runtime.test.mjs | 7570 bytes | raw blob in remote history=False
+tests/content/unitree-r1-docx-source.test.py | 3638 bytes | raw blob in remote history=False
+
+ПРИЛОЖЕНИЕ E. СОХРАНИТЬ — КОПИИ ВОССТАНОВЛЕНИЯ ПОСЛЕ ZIP CLEANUP
+$HERMES_HOME/state/kiber-article-robot-na-8-marta-20260916/site
+$HERMES_HOME/state/kiber-article-workflow-three-articles-20260916/site
+$HERMES_HOME/state/kiber-jino-bottom-links-fix-20260916/site
+$HERMES_HOME/state/kiber-jino-new-year-owner-hero-20260916/site
+$HERMES_HOME/state/kiber-jino-related-articles-fix-20260916/site
+$HERMES_HOME/state/kiber-jino-release-style-source-fix-20260916/site
+$HERMES_HOME/state/kiber-jino-release-style-source-fix2-20260916/site
+$HERMES_HOME/state/kiber-jino-release-wave-a-article2-20260916/site
+$HERMES_HOME/state/kiber-jino-release-wave-a-article2-20260916-fix1/site
+$HERMES_HOME/state/kiber-jino-release-wave-a-article2-20260916-fix2/site
+$HERMES_HOME/state/kiber-registration-article-owner-hero/release-3981fbe28fa52a6a.zip
+$HERMES_HOME/state/kiber-jino-release-with-article1-20260916-r3/site
+$HERMES_HOME/state/kiber-metrica-split-release/rollback.zip
+$HERMES_HOME/state/kiber-v4-release/rollback.zip
+$HERMES_HOME/state/kiber-registration-article-preview-deploy/site
+$HERMES_HOME/state/kiber-registration-article-preview-fix1/site
+$HERMES_HOME/state/kiber-robot-dogs-content/final-preview/release
+$HERMES_HOME/state/kiber-metrica-release/rollback.zip

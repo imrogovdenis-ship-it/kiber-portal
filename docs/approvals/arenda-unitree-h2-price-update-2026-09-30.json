@@ -1,0 +1,17 @@
+{
+  "route": "/robots/arenda-unitree-h2/",
+  "scope": "Owner-authorized exact two visible price update; existing accepted READY retained, no new whole-page acceptance or production permission",
+  "heroDisplay": "от 350 000 ₽ за мероприятие",
+  "bannerDisplay": "от 45 000 ₽ / час",
+  "acceptedPreview": true,
+  "readyForProduction": true,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "priorApproval": "docs/approvals/arenda-unitree-h2-accepted-ready-2026-09-29.json",
+  "tariffAuthority": "data/models/robot-tariffs.json",
+  "sourceEvidence": "docs/review/unitree-h2-price-update/source-evidence.json",
+  "createdAt": "2026-09-30T09:59:34.000422+00:00",
+  "beforeHtmlSha256": "9a346c4df5031de7115bd276e6cab3f7c6e8d551548188ccf7f8595b0be569f6",
+  "authorizedHtmlSha256": "4d5e670ece3ad9e3278fd43913929685008ebdfbf6fb3018604b6af9066ab845",
+  "strictDiff": "docs/review/unitree-h2-price-update/strict-html-diff.json"
+}

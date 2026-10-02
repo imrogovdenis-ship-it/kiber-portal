@@ -1,0 +1,68 @@
+{
+  "id": "arenda-unitree-h2-accepted-ready-2026-09-29",
+  "route": "/robots/arenda-unitree-h2/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Принято Фиксируй как готовую",
+  "approvedAt": "2026-09-29T16:14:30.161686+00:00",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-h2/",
+  "htmlSha256": "9a346c4df5031de7115bd276e6cab3f7c6e8d551548188ccf7f8595b0be569f6",
+  "mediaLocks": [
+    {
+      "path": "images/robot-capabilities/arenda-unitree-h2/docx-20260929/02-joints.webp",
+      "sha256": "8209e8c413c50315579fb1d1f6eb6865667698bf973ad9789884465cf536bb82",
+      "status": 200
+    },
+    {
+      "path": "images/robot-capabilities/arenda-unitree-h2/docx-20260929/04-gesture.webp",
+      "sha256": "0140d1f68a87529742802f01f99a46a71abf14ca9d5a995ffbbc523ecbfa0644",
+      "status": 200
+    }
+  ],
+  "knownIssues": [
+    {
+      "kind": "literal-alt-visual-mismatch",
+      "asset": "tild3132-6631-4237-a432-326664313536__02.webp",
+      "literalAlt": "Полноразмерный робот Unitree H2 идёт по залу",
+      "observation": "Outdoor/covered forecourt martial-arts pose by glazing, not clearly walking in a hall. Original bytes/position and mandated literal alt retained.",
+      "resolved": false,
+      "nonblocking": true,
+      "disclosedBeforeAcceptance": true
+    }
+  ],
+  "visualAltFullyAccurate": false,
+  "scope": "Content readiness for later release, not immediate deployment or sitewide publication approval. Main navigation remains pending.",
+  "schemaSemantics": "productionApproved and readyForProduction encode content readiness only; productionDeployAuthorized is separate.",
+  "evidence": [
+    "docs/review/unitree-h2-docx-2026-09-29/integration/FINAL-REPORT.md",
+    "docs/review/unitree-h2-docx-2026-09-29/integration/final-proof.json"
+  ],
+  "verifiedComposition": {
+    "blocks": 13,
+    "faq": 8,
+    "facts": 16,
+    "galleries": [
+      4,
+      4
+    ],
+    "newIllustrations": 2,
+    "qaWidths": [
+      390,
+      768,
+      1280,
+      1920
+    ]
+  },
+  "gates": {
+    "production": false,
+    "merge": false,
+    "DNS": false,
+    "liveLeads": false,
+    "sitewidePublication": false
+  },
+  "acceptedPreview": true,
+  "readyForProduction": true,
+  "readyForNextSiteRelease": true,
+  "productionApproved": true,
+  "productionDeployAuthorized": false,
+  "productionPublished": false
+}

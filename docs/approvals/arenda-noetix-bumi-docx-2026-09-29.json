@@ -1,0 +1,391 @@
+{
+  "id": "arenda-noetix-bumi-docx-2026-09-29",
+  "route": "/robots/arenda-noetix-bumi/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Принято. Фиксируй.",
+  "acceptedAt": "2026-09-29T15:22:22.991960+00:00",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-noetix-bumi/",
+  "acceptedHtmlSha256": "c7b38e007e97d29500a8cf672e4c426204eb846603572c13b2bcf62f39adc2bc",
+  "title": "Аренда Noetix Bumi — детский робот-гуманоид | КИБЕР ПОРТАЛ",
+  "scope": "Current literal DOCX revision only; owner acceptance, not production readiness or deployment. September 18 approval remains historical.",
+  "acceptedPreview": true,
+  "readyForProduction": false,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "productionApproved": false,
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "secretsAuthorized": false,
+  "analyticsAuthorized": false,
+  "liveRoutingAuthorized": false,
+  "visibleState": {
+    "blocks": 13,
+    "faq": 8,
+    "facts": 21,
+    "bumiAlts": 17,
+    "galleryUpperOrder": [
+      3,
+      1,
+      2,
+      4,
+      5
+    ],
+    "galleryLowerOrder": [
+      4,
+      5,
+      1,
+      2,
+      3
+    ],
+    "heroPrice": "40 000 ₽ за мероприятие",
+    "cta1Price": "10 000 ₽/час отдельным абзацем",
+    "widthsPassed": [
+      390,
+      768,
+      1280,
+      1920
+    ]
+  },
+  "evidence": [
+    "docs/review/noetix-bumi-docx-2026-09-29/integration/FINAL-REPORT.md",
+    "docs/review/noetix-bumi-docx-2026-09-29/integration/final-proof.json"
+  ],
+  "dependencyLocks": [
+    {
+      "path": "_astro/BaseLayout.DY2GBreN.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "cc58ed84b3d0b916e1f9c1a965038901194eca7e9803dc8a5d30575da801c5a1",
+      "uploaded": false
+    },
+    {
+      "path": "_astro/HomeFinalCta.DFU3xVXg.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "379d6a481780de6848f04aab4eda98dc5ed47b3b4f195bec7e85e5226a051c87",
+      "uploaded": false
+    },
+    {
+      "path": "_astro/HomeGoshaQuote.CvN9Nj4G.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "18a2456f8ab47403c9ea1f227dc0ad355b3c06c05a4cf14a2d72804a73fe6030",
+      "uploaded": false
+    },
+    {
+      "path": "_astro/kiber94-robot-template-data.CVe0O2U2.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "97a4756781d7d9b3d1ebd592a0923bb00f9853924d75ddc44555218c4d5b46bf",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-Bold.common.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "9fbe04e7c7c95905271a781a5eddb31d7965f57b9b321d58719f9b0839c3b659",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-Bold.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "7bc7c42272351679c2a0b9b1c0302fac6efbd6e22d8d1135976f89c2f4bdf8f5",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-Medium.common.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "ca637e2a987f800005d4de523bab7eb1f97db5b627502114468538f0eda61c00",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-Medium.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "44227288358c185aa9c06238df93fe3e9e1205627e377af1694ea1ced7768a58",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-Regular.common.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "a8853c53bc6ced555526083bd2d39e0b9e951d699aef15a50fce14dc6fc31e72",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "a5981661ad74c03e0a4aee2aeb3eb37c6b7062e9fbeb0fcf69004b1f92458e7a",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-SemiBold.common.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "d5c43aef0825b9478dd684f057e3c25a54375d337df570e0b26cfd44a9149499",
+      "uploaded": false
+    },
+    {
+      "path": "fonts/montserrat/Montserrat-SemiBold.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "sha256": "6a81d281965e2fa02f923618247e3574ca66f236161e6de7cae48b6d8f9af8c2",
+      "uploaded": false
+    },
+    {
+      "path": "images/articles/shared/gosha-cta2-compact.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "196a94f1ae0b5b66d7b6bfd81b2713d5382bc96e74e530114dfbd47181b758a0",
+      "uploaded": false
+    },
+    {
+      "path": "images/brand/kp_logo_full_color.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "sha256": "dc2406af6b5e178eb20b00e23cc451396f66d54374856b92fa7a7e6bab66c482",
+      "uploaded": false
+    },
+    {
+      "path": "images/home-live/tild3632-3236-4238-b335-623531393036-hi.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "c1533509a0e7ef6969453aaa42de91ac3cf012e3294885f2b3a48ff53c54d5fd",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-45/arenda-noetix-bumi.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "b687012c65d625bf2d9f553ad5a3ccc565aac4c05e6153ddc9ae17cd4f69f4e6",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-45/arenda-promobot-v4.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "3a296bacd157e37984b3e8fca0fa6e1f88346602a0897ba6604f5935d5e2e4d8",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-45/arenda-unitree-g1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "27e29f1704cbad1f551372754b676d1dc1a3fa452e6f05877fc887036789d0bf",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-45/arenda-unitree-go2.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "69d4acb4cb06a34e3cb2c184d115f5d4df2f1d16f9631e729a98b5daf89678b9",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-45/arenda-unitree-r1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "dd7d9a55d54d3beaf73d0af0f36d150b1046d97d57b5b6c318df00278661a45d",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3036-3735-4763-b764-613239623964__02.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "95a27e9300fa1142111dd63a4682514e487edf910bdfd85f01222d4f242c433b",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3236-3461-4431-b233-623937366430__noroot.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "857b0333da67dd2f0472185741fda1f903107d81804827213989014355eb21e0",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3335-3863-4438-b032-663231346639__01.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "bff6a71d0fad7a33a78c7adae6282c5eeba786edbfa1841b3298bc6d83c0e0dc",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3664-6436-4461-b166-303266313631__010.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "75e0d39f18360eb6b90e155c6c236581d31887823e52492e086bddf714944a47",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild3965-3331-4665-b330-623534633536__04.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "3f68fa08cbffe6f9bc6e0d96b5bd95a274a17d1694c19737b861f1f72d46d4bb",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6265-6262-4137-a166-336266316631__noroot.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "adadf4c804e82be41e8b521e577174adb07a6c9b95ac0822552a06e1bb27b860",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6361-6334-4263-b464-663235336535__03.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "3caf0312c22791ae4a9ad4974660177e2a7d3eb9ff41dd39fd7078b2de6b3441",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/batch1-humanoids/arenda-noetix-bumi__tild6631-3463-4837-b233-303232393430__08.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "89399fe339c9ddba9a39fa85fff8df7bbb6887d9c5593cb12968c53beeb929cf",
+      "uploaded": false
+    },
+    {
+      "path": "images/kiber-94-preview/gosha-ushanka-cta1-smiling-wave.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "d2bc9638c05546f41942925cd6a4b6e855e9885d4430f75a4509ea0df010a7e9",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-capabilities/arenda-noetix-bumi/01-tild3438-3136-4865-b534-396163646631____.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "ea34f2ddea765cd59c179c5f3ed6a8ace418ec3f23d1390c3367e28e937128fc",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-capabilities/arenda-noetix-bumi/02-tild3362-3535-4263-b863-316338643633___.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "5c012dd02d4223408876b5340cc17f44fa2a1d5a81319d9eca575a2f53957bd5",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-capabilities/arenda-noetix-bumi/03-tild6463-3230-4136-b331-666232303165___.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "02c2a3c6376081a7bb4d3855e3f38d3b46fea8196172a08f3a9589c204bfaf5f",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-capabilities/arenda-noetix-bumi/04-tild3866-3739-4636-b233-373864373365_____.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "1e5680fd74911f488dcaf5379900497a1d2fd7678604dff9811e29efcd876077",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-capabilities/arenda-noetix-bumi/05-tild3736-6539-4962-b134-383538616435_____.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "3cf26d223ba219f2ca2bde4ee315d9c7b562fa9d1ab6e9ed82d1609576f0c460",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-capabilities/arenda-noetix-bumi/06-tild6335-3162-4363-b865-323661663632____.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "sha256": "8af0c67f935ccff91981e82d131ac3766659a9e0ad02cdebdc933dd6679a583e",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-gallery-originals-20260928/arenda-noetix-bumi/tild3461-3137-4161-a663-376365383231__05.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "sha256": "74e9fee67e2644f1d6ab8b27740b0a8c2ec17bd9758d0a03f157821a4b92b52a",
+      "uploaded": false
+    },
+    {
+      "path": "images/robot-gallery-originals-20260928/arenda-noetix-bumi/tild6532-3431-4364-b935-323438623136__06.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "sha256": "b2d81380f82f9be1b712f36925674f0afd6b32815b3d79e24c9315212a7fd9da",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/analytics-provider-v4.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "f43ed36700c058263e58e47387492768fa4c00f1bf6523ec4ffa6cb266bec0df",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/contact-lead-form-popup.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "cfc6852eac541cf4f9036c55c740e775310c6d49f7441e380d62cd10dafdbdfe",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/contact-messenger-popup.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "d406fc79ade41357335f5c7e695dc088a3256934a4db0781f65f0bff24ba452b",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/cookie-consent-v4.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "15167f9052ca394489a74f9dabfe016f2c8006e8fefdd63fc3e843a5bb2a9c76",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/internal-cards-v1.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "2f16ca9cbfc7c4ce6e0dd444ab4d158633cb45a01fe44a0439124e25834834a8",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/robot-card-gallery.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "9636286761ae78e753a8cf7ad37ac83a57f945ca7120abe0be796f5cec9cb3b7",
+      "uploaded": false
+    },
+    {
+      "path": "scripts/site-header.js",
+      "status": 200,
+      "contentType": "application/javascript",
+      "sha256": "bcb8f08a1b03d1e93b7ab37216036eedc9cc2cef0b63c0a2f70bd23f4dcd0eb6",
+      "uploaded": false
+    },
+    {
+      "path": "styles/deferred-card-images-v1.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "2fa37ad2078b92b38232306adee8994e7a3793f54a91b9a46c4d10c3dc1b0336",
+      "uploaded": false
+    },
+    {
+      "path": "styles/internal-muted-contrast-v1.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "ec9f66a12553e411c9c34dc9cecc10a3df95d0f8f99ca09c03bd78c652987f87",
+      "uploaded": false
+    },
+    {
+      "path": "styles/mobile-shared-contract-v1.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "fc4c54dca034b2ed4f4770a6e3a17d7b19d97b7bc33a3aa760f7b371b1c5a13d",
+      "uploaded": false
+    },
+    {
+      "path": "styles/site-header-menu-v2.css",
+      "status": 200,
+      "contentType": "text/css",
+      "sha256": "33db12d9b07d3e534506545384045e99912f98b487c9d13b2e4fc5991a1e60d0",
+      "uploaded": false
+    }
+  ]
+}

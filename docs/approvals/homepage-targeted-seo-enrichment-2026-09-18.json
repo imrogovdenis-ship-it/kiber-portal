@@ -1,0 +1,41 @@
+{
+  "kind": "kiber_owner_approval",
+  "page": "homepage",
+  "route": "/",
+  "approvedAt": "2026-09-18T16:20:00+03:00",
+  "approvedBy": "Александр Маркин",
+  "source": "Telegram owner message: “Всё Фиксируй ... как согласованную одобренную мной ... в Production не выкладываем”",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/?v=home-owner-fixes-1",
+  "status": "owner_approved_on_jino_preview",
+  "productionApproved": false,
+  "mergeApproved": false,
+  "scope": {
+    "approved": "Главная КИБЕР ПОРТАЛ после targeted SEO enrichment и owner fixes от 2026-09-18",
+    "keptOnPreview": true,
+    "productionDeploy": "not approved",
+    "nextWork": "собирать дальше по блокам"
+  },
+  "finalVisibleState": {
+    "title": "Аренда роботов для мероприятий — КИБЕР ПОРТАЛ",
+    "h1": "Аренда роботов для мероприятий",
+    "heroLead": "Подберём робота в аренду на выставку, презентацию, корпоратив, праздник или в welcome-зону. Берём на себя всю подготовку: сценарий, площадку, тайминг и оператора. Вам останется только встречать гостей.",
+    "blockOrder": [
+      "Hero",
+      "Цитата Гоши",
+      "Подборки",
+      "Каталог роботов",
+      "01 — что входит",
+      "FAQ",
+      "CTA2 / Остались вопросы?",
+      "Блог Кибер Гоши",
+      "Footer"
+    ]
+  },
+  "verification": {
+    "npmRunCheck": "0 errors, 0 warnings, 32 hints",
+    "npmRunBuildPreview": "90 pages built",
+    "jinoPreview": "HTTP/browser smoke passed",
+    "robots": "noindex,nofollow on preview",
+    "browserConsole": "0 JS errors"
+  }
+}

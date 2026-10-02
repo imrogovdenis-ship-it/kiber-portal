@@ -1,0 +1,60 @@
+{
+  "kind": "kiber_owner_approval",
+  "id": "roboty-sobaki-2026-09-23",
+  "route": "/roboty-sobaki/",
+  "title": "Аренда робота-собаки для мероприятий",
+  "approvedAt": "2026-09-23T16:52:45.145191+00:00",
+  "approvedBy": "Александр Маркин",
+  "ownerApprovalQuote": "Фиксируй страницу как принятую. И готовую к публикации на основной домен.",
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/roboty-sobaki/?v=owner-seo-polish-2026-09-23",
+  "status": "owner_approved_on_jino_preview",
+  "readyForProduction": true,
+  "productionApproved": false,
+  "productionDeployAuthorized": false,
+  "mergeApproved": false,
+  "dnsApproved": false,
+  "secretsApproved": false,
+  "analyticsApproved": false,
+  "liveRoutingApproved": false,
+  "interpretation": "Owner accepts this page and publication readiness; this instruction records readiness, not an immediate production deployment.",
+  "acceptedHtmlSha256": "1a2faa678b6c96b13b92152ac7457e5c952ae13150dbab058862d8beb4115d2b",
+  "productionBeforeSha256": "0924ec16ab67d7b10a0557b9f20e0ba77f35e93d1e225ca0172da804f951f88b",
+  "finalVisibleState": {
+    "h1": "Аренда робота-собаки для мероприятий",
+    "seoTitle": "Аренда робота-собаки для мероприятия | КИБЕР ПОРТАЛ",
+    "primaryKeyword": "аренда робота-собаки",
+    "faqCount": 8,
+    "robotCount": 3,
+    "blogCards": "5 articles + all articles",
+    "compilationCards": "4 compilations + all compilations",
+    "blockOrder": [
+      "Hero",
+      "Intro",
+      "3 models",
+      "Gosha quote",
+      "Guide",
+      "Scenarios",
+      "Gosha final quote",
+      "Catalog",
+      "FAQ",
+      "CTA",
+      "Blog",
+      "Compilations",
+      "Footer"
+    ]
+  },
+  "evidence": [
+    "docs/review/compilation-roboty-sobaki/parent-independent-review/final-handoff.md",
+    "docs/review/compilation-roboty-sobaki/parent-independent-review/hidden-seo-verified.json",
+    "docs/review/compilation-roboty-sobaki/baseline-guard-2026-09-23.md"
+  ],
+  "nonBlockingFollowups": [
+    "Exact spelling variants, related self-link and modal heading semantics retained as accepted.",
+    "Missing preview HTTP X-Robots-Tag remains a separate infrastructure approval task; HTML noindex,nofollow is present.",
+    "Future cluster articles are not included in this page acceptance."
+  ],
+  "sourceHashes": {
+    "src/pages/roboty-sobaki.astro": "4700e4fa0117813fe41563f533db91ac6b5ccc0e7a7957c8c97a84f0b5708abb",
+    "src/lib/robot-dogs-preview-adapter.ts": "485ba25bf29cca557b798fd9124ac36885289499f6e9e2160fcd78750b97ba03"
+  }
+}

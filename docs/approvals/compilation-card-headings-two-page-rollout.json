@@ -1,0 +1,43 @@
+{
+  "ownerApproved": true,
+  "scope": [
+    "preview:/",
+    "preview:/compilations/"
+  ],
+  "headings": [
+    [
+      "Совсем как люди, только с батарейкой",
+      "Аренда робота-гуманоида",
+      "/roboty-gumanoidy/"
+    ],
+    [
+      "Впечатляющие роботы для выставок",
+      "Аренда роботов для выставки",
+      "/roboty-dlya-vystavki/"
+    ],
+    [
+      "Очередь к стенду начинается здесь",
+      "Аренда робота-промоутера",
+      "/roboty-promoutery/"
+    ],
+    [
+      "Форум начинается с робота",
+      "Роботы для форумов и конференций",
+      "/robot-dlya-foruma-i-konferencii/"
+    ],
+    [
+      "Роботы-собаки вместо цветов",
+      "Аренда робота-собаки",
+      "/roboty-sobaki/"
+    ],
+    [
+      "На площадку выходит Unitree",
+      "Аренда роботов Unitree",
+      "/roboty-unitree/"
+    ]
+  ],
+  "implemented": true,
+  "otherPagesChanged": false,
+  "productionChanged": false,
+  "evidence": "docs/review/compilation-heading-pilot/all-cards-browser.json"
+}

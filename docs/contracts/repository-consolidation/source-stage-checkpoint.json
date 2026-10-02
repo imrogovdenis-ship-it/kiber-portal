@@ -1,0 +1,36 @@
+{
+  "phase": "governance_published_runtime_blocked",
+  "classifiedFiles": 958,
+  "publishedGovernanceFiles": 107,
+  "localOnlyCandidateFiles": 420,
+  "deferredFiles": 431,
+  "privateArchiveFilesVerified": 527,
+  "offHostRecovery": false,
+  "previewBuild": {
+    "passed": true,
+    "pages": 97
+  },
+  "apiTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "contentTests": {
+    "passed": 26,
+    "failed": 9,
+    "identicalFailureNamesToOriginal": true
+  },
+  "lint": "fails in original and candidate",
+  "independentScopedSecurityReview": "failed; private findings in Linear",
+  "runtimePublished": false,
+  "originalFilesEditedByThisTask": false,
+  "concurrentRuntimeChangesNotOverwritten": [
+    "data/content/robot-card-pilot/arenda-uv-box.json",
+    "data/seo/working-key-map/seo-key-map.table.csv",
+    "data/seo/working-key-map/seo-key-map.table.json",
+    "src/data/preview-page-status.generated.json"
+  ],
+  "governanceRefresh": "Included newer UV BOX approval and refreshed registry without editing approval fields.",
+  "mergeOrDeletionOrProduction": false,
+  "inheritedMarkdownWhitespaceWarnings": 51,
+  "governanceJsonAndHashChecks": "passed"
+}

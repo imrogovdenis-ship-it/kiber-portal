@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "id": "robot-card-arenda-unitree-r1-preview-approval",
+  "type": "robot_card_preview_approval",
+  "slug": "arenda-unitree-r1",
+  "route": "/robots/arenda-unitree-r1/",
+  "status": "owner_approved_on_jino_preview",
+  "owner": "Александр Маркин",
+  "approved_at": "2026-09-18T19:30:00+00:00",
+  "preview_url": "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-r1/?v=humanoids-ai-summary-human-1",
+  "productionApproved": false,
+  "productionScope": "not_approved",
+  "publicationApproved": false,
+  "claim": "Unitree R1 card is accepted on Jino preview with approved human-first AI summary block; production remains gated.",
+  "approval_basis": "Telegram request on 2026-09-18: approved corrected AI/SEO summary blocks for all agreed humanoids and Tron; fix in files and SEO map.",
+  "evidence": [
+    "docs/review/robot-card-readiness/arenda-unitree-r1-2026-09-18.md",
+    "docs/review/robot-card-readiness/unitree-r1-final-2026-09-18/jino-render-audit-v3.json",
+    "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-r1/?v=r1-full-cycle-3",
+    "docs/review/robot-card-readiness/humanoids-ai-summary-human-2026-09-18/jino-ai-summary-audit.json",
+    "https://jino-preview.kiber-portal.ru/robots/arenda-unitree-r1/?v=humanoids-ai-summary-human-1"
+  ],
+  "forbidden_without_new_approval": [
+    "production deploy",
+    "merge as production launch",
+    "DNS changes",
+    "secrets/runtime changes",
+    "analytics/live lead routing changes"
+  ],
+  "aiSummaryRuleApproved": true
+}

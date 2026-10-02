@@ -1,0 +1,214 @@
+{
+  "id": "arenda-uv-box-docx-2026-10-02",
+  "route": "/robots/arenda-uv-box/",
+  "status": "owner_approved_on_jino_preview",
+  "ownerExactQuote": "Принято. Фиксируй.",
+  "approvalBasis": "Exact owner reply after UVBOX final closure; acceptance includes explicitly disclosed media qualification. Subsequent mini coffee DOCX does not cancel acceptance.",
+  "recordedAt": "2026-10-02T06:25:47.304754+00:00",
+  "acceptedAt": "2026-10-02T06:25:47.304754+00:00",
+  "timestampSemantics": "Actual UTC fixation timestamp from tool; original owner-message timestamp not independently recovered.",
+  "blockOrder": [
+    "hero",
+    "aiSummary",
+    "gallery",
+    "includedService",
+    "capabilities",
+    "scenarios",
+    "pricing",
+    "robotInAction",
+    "goshaCta",
+    "orderFlow",
+    "faq",
+    "finalQuestionsCta",
+    "relatedCatalog"
+  ],
+  "approvedPreviewUrl": "https://jino-preview.kiber-portal.ru/robots/arenda-uv-box/",
+  "acceptedHtmlSha256": "51d01469b6a0668ebe0475ccacbc64e318a262fe4deec0481b0fea51ebee41dc",
+  "title": "Аренда UV-BOX — интерактивная 3D-витрина | КИБЕР ПОРТАЛ",
+  "h1": "Аренда интерактивной витрины UV-BOX",
+  "seoIntent": "аренда UV-BOX; existing current and desired keywords preserved",
+  "acceptedPreview": true,
+  "readyForProduction": false,
+  "readyForNextSiteRelease": false,
+  "productionDeployAuthorized": false,
+  "productionPublished": false,
+  "productionApproved": false,
+  "mergeAuthorized": false,
+  "dnsAuthorized": false,
+  "secretsAuthorized": false,
+  "analyticsAuthorized": false,
+  "liveRoutingAuthorized": false,
+  "visibleState": {
+    "blocks": 13,
+    "faq": 8,
+    "facts": 16,
+    "hiddenJson": 2,
+    "newIllustrations": 4,
+    "galleries": [
+      4,
+      4
+    ],
+    "heroPrice": "от 200 000 ₽ за день",
+    "cta1Price": "от 25 000 ₽ / час"
+  },
+  "evidence": [
+    "docs/review/uv-box-docx/integration/FINAL-REPORT.md",
+    "docs/review/uv-box-docx/integration/final-proof.json",
+    "docs/review/uv-box-docx/media/manifest.json"
+  ],
+  "mediaLocks": [
+    {
+      "id": "01-3d",
+      "index": 1,
+      "projectPath": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/01-3d.webp",
+      "publicSrc": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/01-3d.webp",
+      "alt": "3D-изображение на прозрачном экране интерактивной витрины UV-BOX",
+      "seoAlt": "3D-изображение на прозрачном экране интерактивной витрины UV-BOX",
+      "role": "capability_illustration",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "format": "WEBP",
+      "bytes": 105754,
+      "sha256": "7a098acd5c613026f693fdcdf6e7fbfae83a950e87768e99841867a450ea7334",
+      "raw": "docs/review/uv-box-docx/media/raw/01-3d-refined1.png",
+      "rawSha256": "9fe99a68c1359d98d7c47c075cb961a2089aa4b565324330754a9c4e02b2e697",
+      "prompt": "docs/review/uv-box-docx/media/prompts/01-3d-refine1.txt",
+      "providerResult": "docs/review/uv-box-docx/media/provenance/01-3d-refine1-result.json",
+      "visualCheckedFinalEncodedWebP": true,
+      "visualNotes": "Tall white rounded cabinet, full-height transparent front, correct three-quarter view and real rolling casters; floating volumetric sneaker with cyan underglow. Whole cabinet including top and bottom intact, natural perspective. No visible text or watermark.",
+      "importantSubjectsApproxBoundsPx": [
+        645,
+        145,
+        1008,
+        757
+      ],
+      "approxClearancePercent": {
+        "left": 38.6,
+        "top": 15.4,
+        "right": 39.7,
+        "bottom": 19.6
+      },
+      "productionApproved": false,
+      "path": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/01-3d.webp",
+      "src": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/01-3d.webp"
+    },
+    {
+      "id": "03-interaction",
+      "index": 3,
+      "projectPath": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/03-interaction.webp",
+      "publicSrc": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/03-interaction.webp",
+      "alt": "Интерактивная механика на экране витрины UV-BOX",
+      "seoAlt": "Интерактивная механика на экране витрины UV-BOX",
+      "role": "capability_illustration",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "format": "WEBP",
+      "bytes": 133238,
+      "sha256": "1cc1c6c09a924819b87dd1a92881799b12ff0c27ad39ebdb7a9e66d6db22a823",
+      "raw": "docs/review/uv-box-docx/media/raw/03-interaction-refined3.png",
+      "rawSha256": "170ed73e86456d96e11e1dac7fcbed6d62ca34de29a4913f0927d9eed43215b9",
+      "prompt": "docs/review/uv-box-docx/media/prompts/03-interaction-refine3.txt",
+      "providerResult": "docs/review/uv-box-docx/media/provenance/03-interaction-refine3-result.json",
+      "visualCheckedFinalEncodedWebP": true,
+      "visualNotes": "Tall white cabinet with rolling casters, full back-view visitor without facial features, anatomically plausible touch gesture; exactly three option cards: highlighted forward gift box, star, plain blue bottle. Entire human and cabinet intact; no text, bottle labels or watermark.",
+      "importantSubjectsApproxBoundsPx": [
+        630,
+        187,
+        1050,
+        738
+      ],
+      "approxClearancePercent": {
+        "left": 37.7,
+        "top": 19.9,
+        "right": 37.2,
+        "bottom": 21.6
+      },
+      "productionApproved": false,
+      "path": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/03-interaction.webp",
+      "src": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/03-interaction.webp"
+    },
+    {
+      "id": "05-analytics",
+      "index": 5,
+      "projectPath": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/05-analytics.webp",
+      "publicSrc": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/05-analytics.webp",
+      "alt": "Аналитика касаний интерактивной витрины UV-BOX",
+      "seoAlt": "Аналитика касаний интерактивной витрины UV-BOX",
+      "role": "capability_illustration",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "format": "WEBP",
+      "bytes": 111834,
+      "sha256": "ecb60750047a925148de0ee85a9863b73769a12e870ec41f11596b16446720e7",
+      "raw": "docs/review/uv-box-docx/media/raw/05-analytics-refined1.png",
+      "rawSha256": "f2ebe83be496ecf13f960f7378e3cd9f751bf7dab1c3039d1f843383c4409dd2",
+      "prompt": "docs/review/uv-box-docx/media/prompts/05-analytics-refine1.txt",
+      "providerResult": "docs/review/uv-box-docx/media/provenance/05-analytics-refine1-result.json",
+      "visualCheckedFinalEncodedWebP": true,
+      "visualNotes": "Tall white cabinet in side three-quarter view; cyan touchpoints rise/flow from transparent front into five-bar graph and separate blue heatmap, both entirely inside safe area. Full caster-supported cabinet, no labels/digits or text.",
+      "importantSubjectsApproxBoundsPx": [
+        438,
+        167,
+        1330,
+        758
+      ],
+      "approxClearancePercent": {
+        "left": 26.2,
+        "top": 17.7,
+        "right": 20.5,
+        "bottom": 19.4
+      },
+      "productionApproved": false,
+      "path": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/05-analytics.webp",
+      "src": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/05-analytics.webp"
+    },
+    {
+      "id": "06-content",
+      "index": 6,
+      "projectPath": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/06-content.webp",
+      "publicSrc": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/06-content.webp",
+      "alt": "Разработка 3D-контента для интерактивной витрины UV-BOX",
+      "seoAlt": "Разработка 3D-контента для интерактивной витрины UV-BOX",
+      "role": "capability_illustration",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "format": "WEBP",
+      "bytes": 163562,
+      "sha256": "4585989cb192a71378a1b364f1e947aa966aaad16ec7e6e0b88c0e6f974e2bc6",
+      "raw": "docs/review/uv-box-docx/media/raw/06-content-refined2.png",
+      "rawSha256": "9345845f798e3a474f124fed8f18ccd28cb1cb3235720c04add7ac3c49705296",
+      "prompt": "docs/review/uv-box-docx/media/prompts/06-content-refine2.txt",
+      "providerResult": "docs/review/uv-box-docx/media/provenance/06-content-refine2-result.json",
+      "visualCheckedFinalEncodedWebP": true,
+      "visualNotes": "Landscape monitor and complete worktable on left, full taller white rounded UVBOX with caster wheels on right. Same cylindrical-cap rectangular perfume bottle shown wireframe on monitor and amber glass colour floating on transparent display. One thin blue connection line. No UI text. Complete table legs and cabinet safely inset.",
+      "importantSubjectsApproxBoundsPx": [
+        315,
+        151,
+        1270,
+        741
+      ],
+      "approxClearancePercent": {
+        "left": 18.8,
+        "top": 16.0,
+        "right": 24.0,
+        "bottom": 21.3
+      },
+      "productionApproved": false,
+      "path": "public/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/06-content.webp",
+      "src": "/images/robot-capabilities/arenda-uv-box/docx-2026-10-02/06-content.webp"
+    }
+  ],
+  "acceptanceQualifier": "accepted_with_known_nonblocking_hero_overlap",
+  "mediaQualification": "Pre-existing Hero H1/image overlap at 1280px is accepted as a known nonblocking issue, NOT fixed. Four synthetic illustrations are presentation images, not engineering evidence.",
+  "heroOverlapFixed": false,
+  "allVisualConstraintsPass": false,
+  "scope": "Jino acceptance only, not new production readiness/deploy; integration pending state retained as history."
+}
