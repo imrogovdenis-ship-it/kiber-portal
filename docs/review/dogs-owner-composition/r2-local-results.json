@@ -1,0 +1,312 @@
+[
+  {
+    "w": 320,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 288,
+        "h": 806.40625,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 288,
+        "h": 821.125,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 288,
+        "h": 821.125,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 5772.890625,
+        "bottom": 6366.84375
+      },
+      {
+        "top": 6402.84375,
+        "bottom": 7114.71875
+      },
+      {
+        "top": 7150.71875,
+        "bottom": 7664.78125
+      },
+      {
+        "top": 7700.78125,
+        "bottom": 8152.84375
+      }
+    ],
+    "catalogImages": [
+      {
+        "left": 16,
+        "right": 16,
+        "width": 288
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 288
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 288
+      }
+    ],
+    "anchorTop": 95.6875
+  },
+  {
+    "w": 390,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 358,
+        "h": 778.71875,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 358,
+        "h": 851.65625,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 358,
+        "h": 826.875,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 5302.890625,
+        "bottom": 5892.25
+      },
+      {
+        "top": 5928.25,
+        "bottom": 6695.265625
+      },
+      {
+        "top": 6731.265625,
+        "bottom": 7283.21875
+      },
+      {
+        "top": 7319.21875,
+        "bottom": 7794.109375
+      }
+    ],
+    "catalogImages": [
+      {
+        "left": 16,
+        "right": 16,
+        "width": 358
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 358
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 358
+      }
+    ],
+    "anchorTop": 96.21875
+  },
+  {
+    "w": 430,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 398,
+        "h": 798.890625,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 398,
+        "h": 876.78125,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 398,
+        "h": 852,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 5238,
+        "bottom": 5867.359375
+      },
+      {
+        "top": 5903.359375,
+        "bottom": 6730.21875
+      },
+      {
+        "top": 6766.21875,
+        "bottom": 7329.1875
+      },
+      {
+        "top": 7365.1875,
+        "bottom": 7842.484375
+      }
+    ],
+    "catalogImages": [
+      {
+        "left": 16,
+        "right": 16,
+        "width": 398
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 398
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 398
+      }
+    ],
+    "anchorTop": 95.84375
+  },
+  {
+    "w": 768,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 736,
+        "h": 1079.8125,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 736,
+        "h": 1079.8125,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 736,
+        "h": 1079.8125,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 5184.546875,
+        "bottom": 5839.515625
+      },
+      {
+        "top": 5184.546875,
+        "bottom": 5839.515625
+      },
+      {
+        "top": 5184.546875,
+        "bottom": 5839.515625
+      },
+      {
+        "top": 5184.546875,
+        "bottom": 5839.515625
+      }
+    ],
+    "catalogImages": [
+      {
+        "left": 16,
+        "right": 16,
+        "width": 736
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 736
+      },
+      {
+        "left": 16,
+        "right": 16,
+        "width": 736
+      }
+    ],
+    "anchorTop": 96.21875
+  },
+  {
+    "w": 1440,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 1312,
+        "h": 527.515625,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 1312,
+        "h": 527.515625,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 1312,
+        "h": 527.515625,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      },
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      },
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      },
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      }
+    ],
+    "catalogImages": [
+      {
+        "left": 64,
+        "right": 1066,
+        "width": 310
+      },
+      {
+        "left": 398,
+        "right": 732,
+        "width": 310
+      },
+      {
+        "left": 732,
+        "right": 398,
+        "width": 310
+      }
+    ],
+    "anchorTop": 96.203125
+  }
+]

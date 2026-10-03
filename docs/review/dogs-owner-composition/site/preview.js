@@ -1,0 +1,1 @@
+document.addEventListener('click',e=>{const a=e.target.closest('a[href="#preview-inquiry"]');if(a){e.preventDefault();document.getElementById('preview-inquiry').showModal()}});document.querySelector('[data-preview-close]')?.addEventListener('click',()=>document.getElementById('preview-inquiry').close());

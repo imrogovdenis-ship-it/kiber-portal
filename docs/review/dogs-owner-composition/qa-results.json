@@ -1,0 +1,137 @@
+[
+  {
+    "w": 390,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 358,
+        "h": 654.8125,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 358,
+        "h": 702.96875,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 358,
+        "h": 702.96875,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 4906.390625,
+        "bottom": 5495.75
+      },
+      {
+        "top": 5531.75,
+        "bottom": 6298.765625
+      },
+      {
+        "top": 6334.765625,
+        "bottom": 6886.71875
+      },
+      {
+        "top": 6922.71875,
+        "bottom": 7397.609375
+      }
+    ],
+    "anchorTop": 96.21875
+  },
+  {
+    "w": 768,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 736,
+        "h": 1005.46875,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 736,
+        "h": 1005.46875,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 736,
+        "h": 1005.46875,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 4961.515625,
+        "bottom": 5616.484375
+      },
+      {
+        "top": 4961.515625,
+        "bottom": 5616.484375
+      },
+      {
+        "top": 4961.515625,
+        "bottom": 5616.484375
+      },
+      {
+        "top": 4961.515625,
+        "bottom": 5616.484375
+      }
+    ],
+    "anchorTop": 96.21875
+  },
+  {
+    "w": 1440,
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 1312,
+        "h": 527.515625,
+        "title": "Unitree Go2",
+        "overflow": false
+      },
+      {
+        "w": 1312,
+        "h": 527.515625,
+        "title": "Xiaomi Cyberdog 2",
+        "overflow": false
+      },
+      {
+        "w": 1312,
+        "h": 527.515625,
+        "title": "Inchbot L1-W EDU",
+        "overflow": false
+      }
+    ],
+    "scenarioDisplay": "flex",
+    "scenarioRects": [
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      },
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      },
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      },
+      {
+        "top": 3719.421875,
+        "bottom": 4458.53125
+      }
+    ],
+    "anchorTop": 96.203125
+  }
+]
